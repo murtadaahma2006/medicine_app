@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+     stroke-linejoin="round">
+  <!-- مسار التعلم: طريق متفرع، والتقاطع الرئيسي موجة ECG -->
+  <circle cx="6" cy="5.5" r="1.6"/>
+  <path d="M6 7.1v3.2"/>
+  <path d="M6 10.3c0 2.2 1.6 3.4 3.4 4.1 2 .8 4.2 1.6 4.2 4"/>
+  <path d="M8.8 16.2 9.6 18"/>
+  <path d="M4.4 16.2 5.2 18"/>
+  <!-- نقطة الوصول (المستشفى/الهدف) -->
+  <path d="M15.8 19.5h4.4v-4.2h-4.4z"/>
+  <path d="M18 15.3v2.2"/>
+  <path d="M16.9 16.4h2.2"/>
+  <!-- موجة النبض على الطريق -->
+  <path d="M2.5 12.2h2.2l1-2 1.6 4 1.2-2h2.3"/>
+</svg>

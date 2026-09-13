@@ -1,0 +1,35 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft Glow Background -->
+  <rect width="400" height="280" rx="32" fill="url(#bg_onboarding)"/>
+  
+  <!-- Glowing Compass & Growth Stars -->
+  <circle cx="200" cy="120" r="80" stroke="#F59E0B" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.4"/>
+  <circle cx="200" cy="120" r="64" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.5"/>
+  
+  <!-- Open Book Silhouette -->
+  <path d="M120 180 Q 200 200 280 180 V 130 Q 200 150 120 130 Z" fill="#1E293B" stroke="#D4AF37" stroke-width="2"/>
+  <path d="M200 142 V 192" stroke="#D4AF37" stroke-width="3"/>
+
+  <!-- Forward Chevrons Rising from Book -->
+  <path d="M160 110 L200 70 L240 110 H215 L200 95 L185 110 H160 Z" fill="url(#blue_pulse)"/>
+  <path d="M175 80 L200 55 L225 80 H210 L200 70 L190 80 H175 Z" fill="url(#gold_pulse)"/>
+
+  <!-- Emerald Pulse Spark -->
+  <circle cx="200" cy="45" r="10" fill="#10B981"/>
+  <circle cx="200" cy="45" r="5" fill="#FFFFFF"/>
+
+  <defs>
+    <linearGradient id="bg_onboarding" x1="0" y1="0" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="blue_pulse" x1="160" y1="70" x2="240" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="gold_pulse" x1="175" y1="55" x2="225" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#FDE047"/>
+    </linearGradient>
+  </defs>
+</svg>

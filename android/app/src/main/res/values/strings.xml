@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ويدجت الشاشة الرئيسية -->
+    <string name="widget_title">منصة الطب الباطني</string>
+    <string name="widget_due_label">بطاقة مستحقة اليوم</string>
+    <string name="widget_progress_placeholder">إنجاز اليوم: 0%</string>
+    <string name="widget_tip_placeholder">افتح التطبيق لبدء المراجعة اليومية</string>
+</resources>

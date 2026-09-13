@@ -1,0 +1,25 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="280" rx="32" fill="url(#bg_error_ill)"/>
+
+  <!-- Warning Shield with Emerald Retry Spark -->
+  <polygon points="200,60 290,110 290,200 200,240 110,200 110,110" fill="#1E293B" stroke="url(#error_crimson)" stroke-width="4"/>
+
+  <!-- Exclamation Mark Point -->
+  <rect x="192" y="100" width="16" height="64" rx="8" fill="#EF4444"/>
+  <circle cx="200" cy="188" r="10" fill="#EF4444"/>
+
+  <!-- Retry Orbit Arc -->
+  <path d="M140 140 A 70 70 0 0 1 260 140" fill="none" stroke="#F59E0B" stroke-width="4" stroke-dasharray="8 8"/>
+
+  <defs>
+    <linearGradient id="bg_error_ill" x1="0" y1="0" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A0808"/>
+      <stop offset="1" stop-color="#140404"/>
+    </linearGradient>
+    <linearGradient id="error_crimson" x1="110" y1="60" x2="290" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EF4444"/>
+      <stop offset="1" stop-color="#991B1B"/>
+    </linearGradient>
+  </defs>
+</svg>

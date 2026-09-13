@@ -1,0 +1,28 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="280" rx="32" fill="url(#bg_quiz_done)"/>
+
+  <!-- Graduation Cap / Excellence Shield Motif -->
+  <path d="M200 60 L310 110 L200 160 L90 110 Z" fill="url(#cap_gold)"/>
+  <rect x="150" y="145" width="100" height="45" rx="8" fill="#1E293B" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Hanging Tassel with Emerald Node -->
+  <path d="M300 115 V170" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="175" r="8" fill="#10B981"/>
+
+  <!-- Certified Ribbon Base -->
+  <circle cx="200" cy="205" r="30" fill="#F59E0B"/>
+  <path d="M185 228 L175 260 L200 248 L225 260 L215 228" fill="#D4AF37"/>
+  <path d="M192 195 L198 212 L212 212 L200 220 L204 235 L192 225 L180 235 L184 220 L172 212 L186 212 Z" fill="#FFFFFF"/>
+
+  <defs>
+    <linearGradient id="bg_quiz_done" x1="0" y1="0" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E1B4B"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="cap_gold" x1="90" y1="60" x2="310" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE047"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+</svg>

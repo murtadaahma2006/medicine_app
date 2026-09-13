@@ -1,0 +1,32 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="280" rx="32" fill="url(#bg_success)"/>
+
+  <!-- Golden Trophy Cup Silhouette -->
+  <path d="M140 80 H260 V140 C260 175 230 200 200 200 C170 200 140 175 140 140 V80 Z" fill="url(#trophy_gold)"/>
+  <path d="M190 200 H210 V230 H190 Z" fill="#D4AF37"/>
+  <rect x="160" y="230" width="80" height="20" rx="6" fill="#F59E0B"/>
+
+  <!-- Handles -->
+  <path d="M140 95 H115 C105 95 100 105 100 115 V125 C100 135 105 145 115 145 H140" stroke="#FDE047" stroke-width="6" fill="none"/>
+  <path d="M260 95 H285 C295 95 300 105 300 115 V125 C300 135 295 145 285 145 H260" stroke="#FDE047" stroke-width="6" fill="none"/>
+
+  <!-- Emerald Star Badge in Cup Center -->
+  <polygon points="200,105 206,120 222,122 210,132 214,148 200,139 186,148 190,132 178,122 194,120" fill="#10B981"/>
+
+  <!-- Confetti Chevrons -->
+  <path d="M80 60 L95 80 L80 100" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M320 60 L305 80 L320 100" stroke="#10B981" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <defs>
+    <linearGradient id="bg_success" x1="0" y1="0" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#064E3B"/>
+      <stop offset="1" stop-color="#022C22"/>
+    </linearGradient>
+    <linearGradient id="trophy_gold" x1="140" y1="80" x2="260" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE047"/>
+      <stop offset="0.5" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+</svg>

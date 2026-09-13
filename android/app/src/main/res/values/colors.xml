@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#1B3B6F</color>
+
+    <!-- ── ويدجت الشاشة الرئيسية — الوضع الفاتح ── -->
+    <color name="widget_surface">#FFFFFF</color>
+    <color name="widget_border">#E3E9F0</color>
+    <color name="widget_text_primary">#17202E</color>
+    <color name="widget_text_secondary">#5B6879</color>
+    <!-- رقم المستحق: كحلي عادي، أحمر عند التراكم. -->
+    <color name="widget_due_normal">#1B3C6E</color>
+    <color name="widget_due_high">#D64545</color>
+    <color name="widget_accent">#1B3C6E</color>
+    <color name="widget_track">#EEF2F7</color>
+</resources>

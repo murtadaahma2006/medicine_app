@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark Obsidian Shield Background -->
+  <rect width="512" height="512" rx="120" fill="url(#bg_obsidian)"/>
+  
+  <!-- Outer Gold Laurel Geometry -->
+  <circle cx="256" cy="256" r="196" stroke="url(#gold_foil)" stroke-width="4" stroke-opacity="0.6"/>
+
+  <!-- Modern Geometric Eagle Wing & Letter D Blend -->
+  <!-- Left Spine -->
+  <rect x="150" y="120" width="36" height="272" rx="18" fill="url(#gold_foil)"/>
+  
+  <!-- Stylized Eagle Wing Arching Right to Form "D" -->
+  <path d="M168 120 C 310 120, 376 180, 376 256 C 376 332, 310 392, 168 392 V 330 C 270 330, 316 285, 316 256 C 316 227, 270 182, 168 182 V 120 Z" fill="url(#gold_foil)"/>
+  
+  <!-- Central Eagle Head Cutout Polygon -->
+  <path d="M210 210 L256 160 L302 210 L256 200 Z" fill="#10B981"/>
+
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="bg_obsidian" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0E17"/>
+      <stop offset="0.5" stop-color="#121929"/>
+      <stop offset="1" stop-color="#1A2336"/>
+    </linearGradient>
+
+    <linearGradient id="gold_foil" x1="150" y1="120" x2="376" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3C65E"/>
+      <stop offset="0.5" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#AA7C11"/>
+    </linearGradient>
+  </defs>
+</svg>

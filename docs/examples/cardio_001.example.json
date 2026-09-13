@@ -1,0 +1,192 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "cardio-001",
+    "title": "Heart Failure",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "heart_failure_lecture.pdf",
+      "page_count": 48
+    },
+    "tags": ["heart failure", "HFrEF", "HFpEF", "NYHA"],
+    "order_index": 3
+  },
+  "concepts": [
+    {
+      "id": "cardio-001-c1",
+      "lecture_id": "cardio-001",
+      "title": "Pathophysiology of Heart Failure: From Reduced Output to the Vicious Cycle",
+      "summary_ar": "كيف يتحول الانخفاض الأولي في قوة الانقباض إلى حلقة مفرغة من التعويض العصبي الهرموني.",
+      "sections": [
+        {
+          "heading": "The Neurohormonal Vicious Cycle",
+          "body_text": "When contractile power declines, two axes are co-activated: short-term rescue, long-term destruction. The sympathetic axis (norepinephrine) delivers tachycardia and vasoconstriction that preserves perfusion pressure for minutes, yet raises afterload and myocardial oxygen demand on a muscle already drowning in congestion. The renin-angiotensin-aldosterone system (RAAS) retains sodium and water to expand circulating volume, which raises filling pressures and worsens pulmonary congestion. The end result is ventricular remodeling — fiber elongation and thinning — that reduces ejection fraction further and re-triggers the cycle more violently. **The key therapeutic insight:** guideline-directed therapy (beta-blockers, ACEi/SARB, MRA, SGLT2i) does not primarily boost contractility; it **breaks this cycle** and reverses remodeling.",
+          "key_points": [
+            "Sympathetic + RAAS activation: helpful in minutes, destructive in months",
+            "Ventricular remodeling is the real therapeutic target",
+            "The four pillars break the cycle rather than simply increasing output"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ejection Fraction (EF)",
+          "definition_ar": "نسبة حجم الدم المُقذوف من البطين في كل انقباض إلى الحجم النهاية الانبساطي (طبيعي 50–70%)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "cardio-001-f1",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "card_type": "basic",
+      "front_text": "What is the fundamental physiological difference between HFrEF and HFpEF, and why does their pharmacotherapy diverge?",
+      "back_text": "HFrEF: a systolic problem — the ventricle empties poorly (EF < 40%) and the quadruple therapy (beta-blockers + ACEi/SARB + MRA + SGLT2i) breaks the compensation cycle and reduces mortality. HFpEF: a filling problem — a stiff, non-relaxing ventricle with EF >= 50% and congestion; no uniformly mortality-proven regimen exists except SGLT2i, so therapy targets comorbidities (hypertension, diabetes, obesity, atrial fibrillation).",
+      "mnemonic_ar": "انقباضي = «فرّغ أقل» — امتلائي = «املأ أصعب»",
+      "explanation_ar": "الفرق الجوهري: العلة الانقباضية تعالج بكسر الحلقة العصبية الهرمونية، بينما العلة الامتلائية تعالج بمعالجة الأمراض المصاحبة.",
+      "tags": ["HFrEF", "HFpEF"]
+    },
+    {
+      "id": "cardio-001-f2",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "card_type": "basic",
+      "front_text": "Why is RAAS activation 'rescue in minutes, ruin in months' in heart failure?",
+      "back_text": "Within minutes: angiotensin II vasoconstricts and retains sodium/water, preserving perfusion pressure to brain and kidneys. Over months: chronic vasoconstriction and volume retention raise afterload and filling pressures while aldosterone drives myocardial and vascular fibrosis (remodeling), so failure self-accelerates — which is exactly why ACEi/SARB break the cycle and reduce mortality.",
+      "tags": ["RAAS"]
+    },
+    {
+      "id": "cardio-001-f3",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "card_type": "basic",
+      "front_text": "State the four NYHA functional classes and their practical meaning when reading a patient.",
+      "back_text": "NYHA I: no limitation of ordinary activity. NYHA II: comfortable at rest; ordinary activity (e.g. one flight of stairs) causes symptoms. NYHA III: symptoms with less-than-ordinary activity (light daily tasks). NYHA IV: symptoms at rest. Practical meaning: a dynamic symptom scale used for follow-up and prognosis — not a diagnostic test in itself.",
+      "tags": ["NYHA"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "cardio-001-q1",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "question_stem": "A 68-year-old woman presents with exertional dyspnea and ankle edema. ECG is normal; echo shows EF 58% with LVH and E/e' of 16, and NT-proBNP is elevated. What is the most likely diagnosis?",
+      "options": [
+        "Heart failure with reduced ejection fraction (HFrEF)",
+        "Heart failure with preserved ejection fraction (HFpEF)",
+        "Silent ischemic heart disease",
+        "Constrictive pericarditis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "أعراض احتقانية مع EF ≥ 50% وتسمك بطين واضطراب امتلاء (E/e′ > 14) ومرجعية natriuretic مرتفعة = HFpEF. خيار HFrEF خطأ لأن EF منخفضة هناك (< 40%)، والاحتقان مع صدى طبيعي الإقفار لا يدعم داء قلبي إقفاري صامت، والتهاب التامور المضيّق كان سيُظهر علامات انسداد امتلاء أشد.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "cardio-001-q2",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "question_stem": "Which drug reduces mortality in HFrEF by blunting chronic neurohormonal compensation rather than by direct positive inotropy?",
+      "options": [
+        "Digoxin",
+        "Furosemide",
+        "Carvedilol",
+        "Aminophylline"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "حاصرات بيتا (كارفيديلول) تكسر التفعيل الودي المزمن وتعكس إعادة التشكيل — خفض وفيات مثبت. ديجوكسين يحسن الأعراض والعيادات دون خفض الوفيات، فوروسيميد يخفف الاحتقان فقط، وأمينوفيللين مقبض يزيد الحمل — إشارة خاطئة.",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "cardio-001-q3",
+      "lecture_id": "cardio-001",
+      "concept_id": "cardio-001-c1",
+      "question_stem": "A 60-year-old man with chronic HFrEF on full quadruple therapy presents with acute dyspnea at rest, SpO2 88%, and bilateral crackles. What is the first step?",
+      "options": [
+        "Up-titrate his beta-blocker to control tachycardia",
+        "IV furosemide + oxygen and circulatory assessment",
+        "Start digoxin immediately",
+        "Discharge home with weekly follow-up"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التفاقم الاحتقاني الحاد يستوجب إدراجاً وعلاجاً مدراً وريدياً مع أكسجين — تحسين سريع للتنفس والدوران. زيادة بيتا بلوك في الاختلاط الحاد قد تنهار المريض، ديجوكسين ليس دواء تفاقم حاد، والمتابعة المنزلية إهمال لاختلاط مهدد.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "cardio-001-case1",
+      "lecture_id": "cardio-001",
+      "title": "3 AM Emergency: Sudden Dyspnea in a 55-Year-Old Smoker",
+      "scenario": "A 55-year-old man, smoker with type 2 diabetes, is brought to the emergency department at 3 AM with sudden-onset breathlessness that terrified his wife. Your task: lead the clinical decisions step by step.",
+      "vignette": {
+        "age": 55,
+        "sex": "male",
+        "chief_complaint": "Sudden dyspnea at rest with drenching sweats",
+        "history": "Type 2 diabetes for 10 years, 30 pack-year smoking, poorly compliant hypertension treatment, no documented cardiac history.",
+        "vitals": {
+          "bp": "95/60",
+          "hr": "118",
+          "rr": "28",
+          "temp": "36.9",
+          "spo2": "89% on room air"
+        },
+        "exam": "Diaphoretic, cold grayish skin, wet bilateral basal crackles, muffled heart sounds with S3, delayed capillary refill.",
+        "labs": [
+          { "name": "Troponin I", "value": "3.2 ng/mL", "flag": "critical" },
+          { "name": "Creatinine", "value": "1.6 mg/dL", "flag": "high" },
+          { "name": "Glucose", "value": "240 mg/dL", "flag": "high" }
+        ],
+        "imaging": "ECG: sinus tachycardia with ST elevation in II, III, aVF and reciprocal depression. CXR: acute pulmonary congestion."
+      },
+      "steps": [
+        {
+          "id": "cardio-001-case1-s1",
+          "prompt": "First minutes in the ED: which single workup must not wait a minute in this presentation?",
+          "options": [
+            "ECG within 10 minutes",
+            "Immediate chest X-ray",
+            "Full bedside echocardiogram"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ضيق نفس حاد + تعريق + سكري مدخن = احتمال احتشاء حتى يثبت العكس. ECG خلال 10 دقائق يفرّق STEMI (تفعيل قسطرة) عن بقية الأسباب. الصدو والمسار اللاحق قد يحتاجهما لكن ليس قبل معرفة الإقفار.",
+          "xp": 5
+        },
+        {
+          "id": "cardio-001-case1-s2",
+          "prompt": "The ECG shows ST elevation in II, III, aVF with reciprocal ST depression — an inferior STEMI. BP is 95/60. What is the decisive management?",
+          "options": [
+            "IV nitroglycerin infusion to unload congestion",
+            "Primary PCI activation",
+            "High-dose IV diuretic"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "STEMI سفلي مع علامات صدمة قلبية مبكرة: الباب الوحيد لإنقاذ العضلة هو إعادة التروية العاجلة — Primary PCI خلال 90 دقيقة (أو تحلل فيبريني إذا لا قسطرة). النيترو والمدرات يحسنان الأعراض لكن لا يعالان العلة وقد ينهاران ضغط مريض إشراك البطين الأيمن.",
+          "xp": 10
+        },
+        {
+          "id": "cardio-001-case1-s3",
+          "prompt": "PCI succeeded with a stent in the RCA. Two days later urine output is 300 mL/24h and creatinine is 2.1. What is the most accurate interpretation?",
+          "options": [
+            "Contrast-induced nephropathy following catheterization",
+            "Advanced chronic kidney disease that was latent",
+            "Irreversible neurogenic urinary retention"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ارتفاع كرياتينين حاد خلال 24–72 ساعة بعد قسطرة مع صبيب مقيّد عادة = اعتلال كلية بالتحسين المقطعي (CIN) — عكسي في أغلب الحالات بالإماهة ومراقبة. لا يوجد ما يدعم المزمن المتقدم أو الانحلال في المعطيات.",
+          "xp": 5
+        }
+      ],
+      "debriefing_ar": "الحالة احتشاء سفلي (RCA) مقنّعاً بضغط منخفض يبدو «هادئاً» — العبرة الأولى: ضيق نفس حاد مع عوامل خطر يستوجب ECG فورياً، والعبرة الثانية: في STEMI السفلي قد لا تظهر ارتفاعات واضحة إلا مع نزول في التوصيلات المعاكسة، والعبرة الثالثة: تدهور كلوي مبكر بعد القسطرة هو غالباً CIN عكوس — الإسراع بالإماهة والمراقبة قبل التشاؤم.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

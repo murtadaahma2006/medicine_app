@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ألوان الويدجت في الوضع الداكن — يبدّلها النظام تلقائياً. -->
+<resources>
+    <color name="widget_surface">#1A2332</color>
+    <color name="widget_border">#2C3A50</color>
+    <color name="widget_text_primary">#EAF0F8</color>
+    <color name="widget_text_secondary">#9AA7B8</color>
+    <color name="widget_due_normal">#81B4FA</color>
+    <color name="widget_due_high">#E46B6B</color>
+    <color name="widget_accent">#3E6DB5</color>
+    <color name="widget_track">#232E42</color>
+</resources>

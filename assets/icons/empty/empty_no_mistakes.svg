@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- تميمة «دماغ فخور»: لا أخطاء متبقية — يرفع صدره بزهو -->
+  <defs>
+    <linearGradient id="bgSoft4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4CC17E" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#4CC17E" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="46" fill="url(#bgSoft4)"/>
+
+  <!-- الدماغ الفخور — قامة معتدلة، عينان واثقتان نصف مغمضتين -->
+  <path d="M52 34c-2-3-5.5-4.7-9-4.2-2.8.4-5 2.2-6 4.6-3.6.3-6.4 3.4-6.3 7 .1 1.5.5 2.9 1.3 4.1-1.9 1.6-2.9 4-2.4 6.5.5 2.9 2.8 5.1 5.6 5.7.3 3.6 3.4 6.4 7 6.4 1.3 0 2.5-.3 3.6-.9"
+        stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+        fill="#EAF7EF"/>
+  <path d="M68 34c2-3 5.5-4.7 9-4.2 2.8.4 5 2.2 6 4.6 3.6.3 6.4 3.4 6.3 7-.1 1.5-.5 2.9-1.3 4.1 1.9 1.6 2.9 4 2.4 6.5-.5 2.9-2.8 5.1-5.6 5.7-.3 3.6-3.4 6.4-7 6.4-1.3 0-2.5-.3-3.6-.9"
+        stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+        fill="#EAF7EF"/>
+  <path d="M60 34v27" stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- عينان واثقتان نصف مغمضتين -->
+  <path d="M45.5 49.5c1.7 1.4 4.1 1.4 5.8 0M69 49.5c1.7 1.4 4.1 1.4 5.8 0"
+        stroke="#1B3C6E" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="44" cy="55.5" r="3" fill="#4CC17E" opacity="0.4"/>
+  <circle cx="76" cy="55.5" r="3" fill="#4CC17E" opacity="0.4"/>
+
+  <!-- ابتسامة فخورة مائلة -->
+  <path d="M56 57.5c2.8 2.2 7 1.8 9.5-.8" stroke="#1B3C6E" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- علامة صح كبيرة خلفه بشريط -->
+  <path d="M20 40l10 11 18-20" stroke="#4CC17E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+
+  <!-- شرارات خضراء صاعدة -->
+  <path d="M97 42l.9 2 2.2.3-1.7 1.5.4 2.2-1.8-1-1.8 1 .4-2.2-1.7-1.5 2.2-.3z" fill="#4CC17E" opacity="0.7"/>
+  <circle cx="103" cy="56" r="2" fill="#4CC17E" opacity="0.5"/>
+  <circle cx="16" cy="60" r="2.4" fill="#4CC17E" opacity="0.4"/>
+</svg>

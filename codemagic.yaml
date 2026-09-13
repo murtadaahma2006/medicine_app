@@ -1,0 +1,48 @@
+# Codemagic CI — بناء IPA لمنصة الطب الباطني (توقيع لاحق عبر AltStore/Sideloadly)
+#
+# سير العمل: رفع المشروع إلى GitHub → ربطه في codemagic.io → Start build
+# → تحميل medicine_app.ipa غير الموقّع → توقيعه محلياً بـ Apple ID عبر
+# AltStore (AltServer) أو Sideloadly وتثبيته على الـ iPad.
+#
+# ملاحظة: البناء بلا توقيع (CODE_SIGNING_ALLOWED=NO) — التوقيع المجاني
+# يتم على جهازك، لأن Apple ID المجاني لا يمكن استخدامه على CI.
+definitions:
+  scripts:
+    # 1) تثبيت توابع Dart.
+    - &setup
+      name: Flutter pub get
+      script: flutter pub get
+    # 2) تحليل ثابت — يفشل البناء إن وُجد خطأ حقيقي.
+    - &analyze
+      name: Flutter analyze
+      script: flutter analyze
+    # 3) الاختبارات الكاملة (105) على FFI — لا محاكي مطلوب.
+    - &test
+      name: Flutter test
+      script: flutter test
+
+workflows:
+  ios-ipa:
+    name: iOS IPA (unsigned — for AltStore/Sideloadly)
+    max_build_duration: 60
+    environment:
+      # مطابق لبيئة التطوير المحلية (pubspec.lock يطلب Flutter >= 3.29).
+      flutter: 3.29.0
+      xcode: latest
+    scripts:
+      - *setup
+      - *analyze
+      - *test
+      - name: Build unsigned IPA
+        script: |
+          # بناء iOS بلا توقيع — التوقيع يتم لاحقاً على جهاز المستخدم.
+          flutter build ipa --release \
+            --no-codesign \
+            --export-options-plist=ios/codemagic/ExportOptions.plist
+    artifacts:
+      # الحزم الجاهزة للتحميل من لوحة Codemagic.
+      - build/ios/ipa/*.ipa
+      - build/ios/archive/*.xcarchive
+    publishing:
+      # تعطيل النشر — الاستخدام شخصي عبر التحميل اليدوي.
+      email: {}

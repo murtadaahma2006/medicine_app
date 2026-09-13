@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- تميمة «دماغ متخبط»: فوق كومة أوراق حائرة — حالة لا نتائج بحث -->
+  <defs>
+    <linearGradient id="bgSoft3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9AA7B8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#9AA7B8" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="46" fill="url(#bgSoft3)"/>
+
+  <!-- كومة أوراق مبعثرة أسفل -->
+  <rect x="34" y="76" width="30" height="22" rx="3" transform="rotate(-8 49 87)"
+        fill="#FFFFFF" stroke="#9AA7B8" stroke-width="2"/>
+  <rect x="56" y="78" width="30" height="22" rx="3" transform="rotate(7 71 89)"
+        fill="#E9F0FA" stroke="#9AA7B8" stroke-width="2"/>
+  <rect x="45" y="72" width="30" height="22" rx="3" transform="rotate(-2 60 83)"
+        fill="#FFFFFF" stroke="#1B3C6E" stroke-width="2"/>
+
+  <!-- الدماغ المتخبط — يميل رأسه، عينان كبيرتان حائرتان -->
+  <g transform="rotate(-8 60 50)">
+    <path d="M52 30c-2-3-5.5-4.7-9-4.2-2.8.4-5 2.2-6 4.6-3.6.3-6.4 3.4-6.3 7 .1 1.5.5 2.9 1.3 4.1-1.9 1.6-2.9 4-2.4 6.5.5 2.9 2.8 5.1 5.6 5.7.3 3.6 3.4 6.4 7 6.4 1.3 0 2.5-.3 3.6-.9"
+          stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="#E9F0FA"/>
+    <path d="M68 30c2-3 5.5-4.7 9-4.2 2.8.4 5 2.2 6 4.6 3.6.3 6.4 3.4 6.3 7-.1 1.5-.5 2.9-1.3 4.1 1.9 1.6 2.9 4 2.4 6.5-.5 2.9-2.8 5.1-5.6 5.7-.3 3.6-3.4 6.4-7 6.4-1.3 0-2.5-.3-3.6-.9"
+          stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="#E9F0FA"/>
+    <path d="M60 30v27" stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- عينان حائرتان كبيرتان + حاجبان مرفوعان -->
+    <circle cx="48.5" cy="47" r="3" fill="#1B3C6E"/>
+    <circle cx="71.5" cy="47" r="3" fill="#1B3C6E"/>
+    <path d="M44.5 42c1.2-1 3.2-1 4.5-.3M67 41.7c1.3-.7 3.3-.7 4.5.3"
+          stroke="#1B3C6E" stroke-width="2" stroke-linecap="round"/>
+    <!-- فم متموج صغير (همم...) -->
+    <path d="M56.5 55.5c1.2 1.2 2.5 1.2 3.5 0s2.3-1.2 3.5 0"
+          stroke="#1B3C6E" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- علامة استفهام صغيرة فوق الرأس -->
+  <path d="M92 26c0-3-2.5-5-5.5-5s-5.5 2-5.5 5c0 2 1.2 3.2 2.5 4.2 1 .8 1.5 1.5 1.5 2.8"
+        stroke="#9AA7B8" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="85" cy="38" r="1.8" fill="#9AA7B8"/>
+
+  <!-- عدسة مكبرة ملقاة جانباً -->
+  <circle cx="30" cy="72" r="7" stroke="#1B3C6E" stroke-width="2.4"/>
+  <path d="m35 77 5 5" stroke="#1B3C6E" stroke-width="3" stroke-linecap="round"/>
+</svg>

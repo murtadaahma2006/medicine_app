@@ -1,0 +1,27 @@
+<svg width="400" height="280" viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="280" rx="32" fill="url(#bg_empty)"/>
+  
+  <!-- Empty Tray Silhouette -->
+  <path d="M120 180 H 280 L 300 220 H 100 L 120 180 Z" fill="#1E293B" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Magnifying Glass with Emerald Pulse -->
+  <circle cx="190" cy="120" r="45" fill="none" stroke="url(#gold_pulse_empty)" stroke-width="6"/>
+  <line x1="225" y1="155" x2="260" y2="190" stroke="url(#gold_pulse_empty)" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Sparkling Dots -->
+  <circle cx="190" cy="120" r="8" fill="#10B981"/>
+  <circle cx="140" cy="90" r="4" fill="#38BDF8"/>
+  <circle cx="250" cy="90" r="5" fill="#F59E0B"/>
+
+  <defs>
+    <linearGradient id="bg_empty" x1="0" y1="0" x2="400" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B132B"/>
+      <stop offset="1" stop-color="#1C2541"/>
+    </linearGradient>
+    <linearGradient id="gold_pulse_empty" x1="145" y1="75" x2="260" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+</svg>

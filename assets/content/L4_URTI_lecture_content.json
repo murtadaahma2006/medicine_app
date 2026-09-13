@@ -1,0 +1,1363 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L4_URTI",
+    "title": "Upper Respiratory Tract Infection (URTI)",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L4 URTI.pdf",
+      "page_count": 28
+    },
+    "tags": [
+      "URTI",
+      "common cold",
+      "coryza",
+      "rhinosinusitis",
+      "pharyngitis",
+      "croup",
+      "epiglottitis",
+      "tracheobronchitis",
+      "pediatric airway",
+      "respiratory infections"
+    ],
+    "order_index": 3
+  },
+  "concepts": [
+    {
+      "id": "urti_overview",
+      "lecture_id": "L4_URTI",
+      "title": "Upper Respiratory Tract Infections: Scope and Clinical Importance",
+      "summary_ar": "مقدمة المحاضرة: التهابات الجهاز التنفسي العلوي والسفلي سبب رئيسي للمراضة والوفيات خاصة عند أطراف العمر وأصحاب أمراض الرئة المزمنة وكبت المناعة، وأكثرها شيوعاً هي الزكام والتهاب البلعوم والتهاب القصبات، ومعظمها فيروسي وقصير الأمد ونادراً ما يكون خطيراً عند البالغين.",
+      "sections": [
+        {
+          "heading": "Why Respiratory Tract Infections Matter",
+          "body_text": "Infections of the upper and lower respiratory tract constitute a major cause of morbidity and mortality in clinical practice. Their impact is not uniform across all patients: certain groups bear a disproportionate burden of severe disease and complications. The lecture highlights three particularly vulnerable populations. First, patients at the extremes of age, meaning both very young children with immature immune systems and elderly adults with reduced physiological reserve. Second, individuals with pre-existing lung disease, in whom a seemingly trivial upper respiratory infection can precipitate acute decompensation. Third, patients with immune suppression, who may develop severe or atypical presentations.",
+          "key_points": [
+            "Upper and lower respiratory tract infections are a major cause of morbidity and mortality",
+            "Highest-risk groups: extremes of age, pre-existing lung disease, immune suppression"
+          ]
+        },
+        {
+          "heading": "The Most Common URTI Syndromes",
+          "body_text": "Three syndromes dominate the clinical picture of upper respiratory tract infection: coryza (the common cold), acute pharyngitis, and acute tracheobronchitis. These are the most common respiratory infections encountered in everyday practice, and they are among the most frequent reasons for seeking medical care worldwide. Although each syndrome has its own characteristic etiologic spectrum and clinical features, they overlap considerably, and a single viral illness may produce several of them simultaneously as the infection spreads along the respiratory mucosa from nose to pharynx to larynx, trachea, and bronchi.",
+          "key_points": [
+            "Most common URTIs: coryza (common cold), acute pharyngitis, acute tracheobronchitis",
+            "One viral illness may involve multiple contiguous sites (nose, pharynx, larynx, trachea, bronchi)"
+          ]
+        },
+        {
+          "heading": "Viral Predominance and Course in Adults",
+          "body_text": "The vast majority of upper respiratory tract infections are caused by viruses. In adults, these infections are usually short-lived and rarely serious: most patients recover fully within days with supportive care alone. This benign natural history in immunocompetent adults has two practical consequences. First, it explains why specific microbiological investigation is rarely needed. Second, it defines the therapeutic philosophy for most URTIs: symptomatic relief rather than empiric antimicrobial therapy. The situation is different in the high-risk groups described earlier, where the same viruses can cause severe, prolonged, or complicated disease.",
+          "key_points": [
+            "The vast majority of URTIs are viral in origin",
+            "In adults they are usually short-lived and rarely serious",
+            "Management is therefore predominantly symptomatic"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "URTI",
+          "definition_ar": "التهاب الجهاز التنفسي العلوي: التهاب فيروسي غالباً يصيب الأنف والجيوب والبلعوم والحنجرة والقصبة الهوائية."
+        },
+        {
+          "term": "Morbidity",
+          "definition_ar": "المراضة: نسبة الإصابة بالمرض وشدته ضمن مجموعة سكانية معينة."
+        },
+        {
+          "term": "Extremes of age",
+          "definition_ar": "أطراف العمر: صغار السن جداً وكبار السن، وهم الفئتان الأكثر عرضة لمضاعفات العدوى التنفسية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "coryza",
+      "lecture_id": "L4_URTI",
+      "title": "Coryza (The Common Cold)",
+      "summary_ar": "الزكام هو أكثر التهابات الجهاز التنفسي العلوي شيوعاً وسببه فيروس الأنف غالباً. يشمل التوعك والرشح والعطاس والسعال، والتهاب البلعوم يسبب ألم الحلق والحنجرة بحة الصوت. المضاعفات تشمل التهاب القصبات والرغامى (أزيز شبيه بالربو) والتهاب الجيوب والأذن الوسطى البكتيري. العلاج عرضي والمضادات الحيوية غير مطلوبة إلا للمضاعفات البكتيرية.",
+      "sections": [
+        {
+          "heading": "Etiology and Clinical Features",
+          "body_text": "Coryza, the common cold, is the most common upper respiratory tract infection. It is usually caused by rhinovirus infection. The usual symptoms are general malaise, nasal discharge, sneezing, and cough. The clinical picture depends on which part of the respiratory mucosa is involved: involvement of the pharynx causes a sore throat, and involvement of the larynx produces a hoarse or 'lost' voice (laryngitis). This anatomical progression explains why a single cold can simultaneously produce nasal, pharyngeal, and laryngeal complaints in the same patient over the course of a few days.",
+          "key_points": [
+            "Coryza is the most common URTI",
+            "Usually caused by rhinovirus",
+            "Core symptoms: malaise, nasal discharge, sneezing, cough",
+            "Pharyngeal involvement gives sore throat; laryngeal involvement gives hoarse or lost voice"
+          ]
+        },
+        {
+          "heading": "Complications and Bacterial Superinfection",
+          "body_text": "Although usually benign, coryza can extend beyond the upper airway. If complicated by tracheitis or bronchitis, the patient develops chest tightness and wheeze typical of asthma. Bacterial infection of the paranasal sinuses (acute bacterial rhinosinusitis) and of the middle ear (otitis media) are recognized complications. These bacterial complications are the situations in which a patient with a common cold may ultimately require more than symptomatic therapy. Clinicians should therefore remain alert for signs of focal bacterial disease when cold symptoms persist or worsen instead of following the expected self-limited course.",
+          "key_points": [
+            "Tracheitis or bronchitis causes chest tightness and wheeze typical of asthma",
+            "Bacterial complications: paranasal sinus infection and otitis media"
+          ]
+        },
+        {
+          "heading": "Diagnosis and Symptomatic Treatment",
+          "body_text": "Specific investigation is rarely warranted in coryza: the diagnosis is clinical, and testing adds little in an otherwise healthy adult. Treatment is symptomatic, using a non-sedating antihistamine, a decongestant, intranasal ipratropium, and an intranasal steroid. Symptoms usually resolve quickly with this supportive approach. Antibiotics have no role in uncomplicated viral coryza.",
+          "key_points": [
+            "Specific investigation is rarely warranted",
+            "Symptomatic therapy: non-sedating antihistamine, decongestant, intranasal ipratropium, intranasal steroid"
+          ]
+        },
+        {
+          "heading": "When to Suspect Asthma Behind Recurrent 'Colds'",
+          "body_text": "Symptoms of coryza usually resolve quickly, but if repeated URTIs keep 'going to the chest', a more formal diagnosis of asthma ought to be considered rather than attributing every episode to simple infection. Furthermore, a variety of the viruses that cause URTI may also trigger exacerbations of asthma or COPD and aggravate other underlying lung diseases. Recurrent wheeze or chest symptoms during minor viral illnesses is therefore a diagnostic red flag that should prompt formal airway disease evaluation.",
+          "key_points": [
+            "Repeated URTIs that 'go to the chest' should prompt consideration of a formal asthma diagnosis",
+            "URTI viruses can trigger exacerbations of both asthma and COPD",
+            "URTI viruses can aggravate other pre-existing lung diseases"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Coryza",
+          "definition_ar": "الزكام: نزلة برد شائعة فيروسية المنشأ غالباً بسبب فيروس الأنف (Rhinovirus)."
+        },
+        {
+          "term": "Rhinovirus",
+          "definition_ar": "فيروس الأنف: الفيروس الأكثر شيوعاً كسبب للزكام، وينتمي للفيروسات الأنفية (Picornaviridae)."
+        },
+        {
+          "term": "Otitis media",
+          "definition_ar": "التهاب الأذن الوسطى: مضاعفة بكتيرية محتملة للزكام عند الأطفال خاصة."
+        },
+        {
+          "term": "Non-sedating antihistamine",
+          "definition_ar": "مضاد هيستامين غير مسبب للنعاس: مثل اللوراتادين، يستخدم للعلاج العرضي للزكام."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "rhinosinusitis",
+      "lecture_id": "L4_URTI",
+      "title": "Rhinosinusitis: Presentation and Management",
+      "summary_ar": "التهاب الأنف والجيوب يظهر باحتقان أنفي وإفرازات مع ألم أو ضغط بالوجه أو فقدان حاسة الشم. الفحص يُظهر غشاءاً مخاطياً محتقناً ومنتفخاً مع صديد محتمل، مع البحث عن السلائل الأنفية واستبعاد عدوى الأسنان. العلاج: كورتيكوستيرويد موضعي ومزيلات احتقان وغسل الأنف المنتظم، والمضادات الحيوية فقط إذا استمرت الأعراض أكثر من 5 أيام، والإحالة لأخصائي أنف وأذن وحنجرة عند التكرار.",
+      "sections": [
+        {
+          "heading": "Clinical Manifestations and Examination",
+          "body_text": "Rhinosinusitis typically manifests as a combination of nasal congestion, blockage, or discharge, and may be accompanied by facial pain, facial pressure, or loss of smell. Examination usually confirms erythematous, swollen nasal mucosa, and pus may be evident within the nasal cavity. Two important clinical tasks must be completed during assessment: nasal polyps should be actively sought, since their presence changes management and suggests chronic inflammatory disease, and dental infection should be excluded as a source of maxillary sinus contamination, because odontogenic sinusitis requires treatment of the dental source in addition to standard therapy.",
+          "key_points": [
+            "Typical presentation: nasal congestion/blockage/discharge plus facial pain or pressure or loss of smell",
+            "Examination: erythematous swollen nasal mucosa, pus may be evident",
+            "Always seek nasal polyps and exclude dental infection"
+          ]
+        },
+        {
+          "heading": "Treatment Strategy and the Role of Antibiotics",
+          "body_text": "Treatment with topical glucocorticoids, nasal decongestants, and regular nasal douching is usually sufficient for rhinosinusitis. Although bacterial infection is often present, antibiotics are indicated only if symptoms persist for more than 5 days. This deliberately conservative antibiotic policy distinguishes uncomplicated viral or early bacterial rhinosinusitis, which resolves with topical therapy, from true persistent bacterial disease. Persistent symptoms or recurrent episodes should prompt referral to an ear, nose and throat specialist for further evaluation, including consideration of anatomic factors, chronic disease, or resistant organisms.",
+          "key_points": [
+            "First-line therapy: topical glucocorticoids, nasal decongestants, regular nasal douching",
+            "Antibiotics only if symptoms persist more than 5 days",
+            "Persistent or recurrent symptoms warrant ENT referral"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Rhinosinusitis",
+          "definition_ar": "التهاب الأنف والجيوب الأنفية: التهاب الغشاء المخاطي للأنف والجيوب المجاورة."
+        },
+        {
+          "term": "Nasal douching",
+          "definition_ar": "غسل الأنف بالمحلول الملحي: إجراء علاجي منزلي منتظم يساعد على تنظيف الأنف وتقليل الالتهاب."
+        },
+        {
+          "term": "Nasal polyps",
+          "definition_ar": "سلائل أنفية: نموات مخاطية حميدة داخل الأنف يجب البحث عنها أثناء فحص المريض المصاب بالتهاب الأنف والجيوب."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "pharyngitis_laryngitis",
+      "lecture_id": "L4_URTI",
+      "title": "Laryngitis and Pharyngitis: Sorting Out the Sore Throat",
+      "summary_ar": "متلازمة التهاب الحنجرة والبلعوم تخص المرضى الذين يشكون أساساً من ألم الحلق. الحالات المصحوبة بأعراض أنفية فيروسية غالباً (فيروس الأنف)، وتشمل حمى البلعوم والملتحمة (الفيروس الغدي) والإنفلونزا وفيروس الحلأ البسيط وحمى الغدد. أما الحالات بلا أعراض أنفية فلها طيف أوسع يشمل المكورات العقدية والمتدثرة والميكوبلازما. علامات العدوى العقدية: تضخم اللوزتين، الإيلام الشديد، تضخم العقد اللمفية، الطفح القوبائي، وغياب الزكام.",
+      "sections": [
+        {
+          "heading": "Definition and Diagnostic Framework",
+          "body_text": "The syndrome of laryngitis and pharyngitis refers to individuals who present with the primary complaint of sore throat. The central diagnostic task is to separate viral from bacterial etiology, because management differs fundamentally between the two. The lecture provides a simple and powerful dividing line: whether or not the sore throat is accompanied by nasal symptoms. This single feature reshapes the probability of the likely causative organism and guides the clinician toward or away from specific antimicrobial therapy.",
+          "key_points": [
+            "Syndrome defined by the primary complaint of sore throat",
+            "Key divider: presence or absence of accompanying nasal symptoms"
+          ]
+        },
+        {
+          "heading": "Sore Throat WITH Nasal Symptoms: Predominantly Viral",
+          "body_text": "Cases with nasal symptoms accompanying pharyngitis are predominantly viral in nature, such as rhinovirus. These viral infections are frequently associated with pharyngitis. A specific syndrome, pharyngoconjunctival fever, consisting of fever, pharyngitis, and bilateral conjunctivitis, is associated with adenovirus. Other viral causes include influenza, which classically produces fever, myalgia, and malaise, herpes simplex virus (HSV), and infectious mononucleosis. Recognizing these viral patterns prevents unnecessary antibiotic prescription and directs attention to appropriate symptomatic or antiviral therapy where indicated.",
+          "key_points": [
+            "Nasal symptoms with pharyngitis indicate predominantly viral etiology (e.g. rhinovirus)",
+            "Pharyngoconjunctival fever (fever + pharyngitis + bilateral conjunctivitis) = adenovirus",
+            "Other viral causes: influenza (fever, myalgia, malaise), HSV, infectious mononucleosis"
+          ]
+        },
+        {
+          "heading": "Sore Throat WITHOUT Nasal Symptoms: A Broader Differential",
+          "body_text": "Cases without nasal symptoms have a somewhat more diverse spectrum of etiologic considerations, including streptococci, Chlamydia, and Mycoplasma. The absence of coryza removes the strongest viral clue, so the clinician must rely on other features to judge the likelihood of bacterial disease, particularly group A streptococcal pharyngitis, which carries potential suppurative and non-suppurative consequences and requires specific antimicrobial therapy. Chlamydial and mycoplasmal pharyngitis, while less common, also belong in the differential of the 'dry' sore throat without nasal involvement.",
+          "key_points": [
+            "No nasal symptoms = broader etiologic spectrum: streptococci, Chlamydia, Mycoplasma",
+            "Group A Streptococcus is the key treatable bacterial cause to identify"
+          ]
+        },
+        {
+          "heading": "Clinical Clues to Streptococcal Pharyngitis",
+          "body_text": "Features suggestive of streptococcal pharyngitis include tonsillar swelling, moderate to severe tenderness on palpation, enlargement of lymph nodes, presence of a scarlatiniform rash, and absence of coryza. The scarlatiniform rash is a diffuse, fine, erythematous, maculopapular ('sandpaper-like') exanthem that is most prominent on the neck and upper chest, as illustrated in the lecture slide. Conversely, the presence of nasal symptoms or of conjunctivitis favors a viral etiology. These simple bedside discriminators allow a rational estimate of streptococcal probability before any laboratory test is ordered.",
+          "key_points": [
+            "Streptococcal clues: tonsillar swelling, moderate-to-severe tenderness, lymph node enlargement, scarlatiniform rash, absence of coryza",
+            "Scarlatiniform rash = diffuse erythematous sandpaper-like rash prominent on neck and upper chest",
+            "Nasal symptoms or conjunctivitis favor a viral etiology"
+          ]
+        },
+        {
+          "heading": "Treatment by Etiology",
+          "body_text": "The treatment of most cases of viral pharyngitis is symptomatic, as noted for the common cold. Patients suspected of having influenza pharyngitis who are seen within the first 2 days of illness can be treated with antiviral therapy, which is most effective when started early. In immunosuppressed patients with chronic herpetic pharyngitis, or in normal hosts with primary gingivostomatitis, acyclovir therapy is recommended. Treatment of group A streptococcal infections requires antimicrobial therapy. Matching the drug to the etiology is the essence of rational sore throat management.",
+          "key_points": [
+            "Viral pharyngitis: symptomatic treatment as for the common cold",
+            "Influenza pharyngitis: antiviral therapy if seen within the first 2 days of illness",
+            "Chronic herpetic pharyngitis in immunosuppressed, or primary gingivostomatitis in normal hosts: acyclovir",
+            "Group A streptococcal pharyngitis: antimicrobial therapy"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Pharyngoconjunctival fever",
+          "definition_ar": "حمى البلعوم والملتحمة: متلازمة حمى والتهاب بلعوم والتهاب ملتحمة ثنائي الجانب تسببها الفيروسات الغدية."
+        },
+        {
+          "term": "Scarlatiniform rash",
+          "definition_ar": "الطفح القوبائي: طفح حمامي حطاطي منتشر ناعم الملمس كورق الزجاج، يظهر في حمى القرمز الناتجة عن العقدية المجموعة A."
+        },
+        {
+          "term": "Gingivostomatitis",
+          "definition_ar": "التهاب اللثة والفم: عدوى أولية بفيروس الحلأ البسيط، ويُعالج بالأسيكلوفير."
+        },
+        {
+          "term": "Infectious mononucleosis",
+          "definition_ar": "حمى الغدد المعديّة: عدوى بفيروس إبشتاين-بار تسبب التهاب بلعوم وتضخم العقد اللمفية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "croup",
+      "lecture_id": "L4_URTI",
+      "title": "Croup (Viral Laryngotracheobronchitis)",
+      "summary_ar": "الخانوق هو التهاب حنجرة ورغامى وقصبات فيروسي يصيب الأطفال دون 3 سنوات، بداية بأعراض زكام ثم يتعمق السعال بعد 2-3 أيام ليصبح نباحياً كنباح الفقمة مع حمى 38-40 وصرير شهيقي. سببه الأشيع فيروسات نظير الإنفلونزا 1 و2 (75%). مساره متذبذب ومدته 3-4 أيام. علامات الشدة: تسرع التنفس، انسحاب جدار الصدر، صرير بالراحة، نقص الأكسجة. شعاعياً علامة العمود (Steeple sign). العلاج الحاسم: الكورتيكوستيرويدات (ديكساميثازون/بريدنيزولون)، والأدرينالين المذاب بالرذاذ للحالات الشديدة.",
+      "sections": [
+        {
+          "heading": "Definition, Epidemiology and Virology",
+          "body_text": "Croup, or viral laryngotracheobronchitis, predominantly affects children under the age of 3 years. Parainfluenza viruses type 1 and 2 are the most common viruses responsible for croup, accounting for about 75% of cases. Less common causes include respiratory syncytial virus (RSV) and influenza A or B viruses. This viral etiologic profile explains the characteristic epidemiology of croup, which clusters in autumn and winter parainfluenza seasons, and it stands in sharp contrast to epiglottitis, which is a bacterial disease requiring a fundamentally different approach to diagnosis and management.",
+          "key_points": [
+            "Croup = viral laryngotracheobronchitis, predominantly under 3 years of age",
+            "Parainfluenza types 1 and 2 cause about 75% of cases",
+            "Less common causes: respiratory syncytial virus, influenza A or B"
+          ]
+        },
+        {
+          "heading": "Clinical Course and Characteristic Findings",
+          "body_text": "The illness typically begins with upper respiratory tract symptoms of rhinorrhea and sore throat, often with a mild cough. After 2 or 3 days, the cough deepens and develops a characteristic brassy, barking quality, which is similar to a seal's bark. Fever between 38 and 40 degrees Celsius is common, although those with croup due to respiratory syncytial virus may have normal temperatures. The characteristic physical finding of croup is inspiratory stridor. A fluctuating course is typical for viral croup, and the child may appear to worsen or improve within an hour; this variability is a key point that clinicians must anticipate when counseling families. The typical duration of croup is 3 to 4 days.",
+          "key_points": [
+            "Begins with rhinorrhea, sore throat, and mild cough",
+            "After 2-3 days cough becomes brassy and barking, like a seal's bark",
+            "Fever commonly 38-40 C; RSV croup may have normal temperature",
+            "Characteristic finding: inspiratory stridor",
+            "KEY POINT: fluctuating course — the child may worsen or improve within an hour",
+            "Typical duration: 3-4 days"
+          ]
+        },
+        {
+          "heading": "Features of Severe (At-Risk) Croup",
+          "body_text": "Certain findings identify children with severe croup who are at risk and require escalated care. Tachypnea is a warning sign and contrasts with bronchiolitis, in which respiratory rate may be less prominently elevated at comparable levels of distress. Chest wall retractions, particularly in the supraclavicular and suprasternal areas, may be observed, indicating increased work of breathing. Stridor at rest is an important severity marker: children with this finding on presentation have a higher risk of hospitalization or of requiring ventilatory support. Hypoxemia may occur in the most severe cases and marks impending respiratory failure.",
+          "key_points": [
+            "Severe croup markers: tachypnea, chest wall retractions (supraclavicular/suprasternal), stridor at rest, hypoxemia",
+            "Tachypnea in croup contrasts with bronchiolitis",
+            "Stridor at rest predicts higher risk of hospitalization or ventilatory support"
+          ]
+        },
+        {
+          "heading": "Radiology: The Steeple Sign and Its Limitations",
+          "body_text": "Children with croup characteristically exhibit subglottic narrowing of the tracheal air shadow on PA films of the neck, producing the 'steeple' sign, so named because the tapering of the air column resembles a church steeple. This finding may be useful in differentiating croup from epiglottitis, in which the lateral neck film instead shows the thumb sign. However, radiographs are limited in accuracy. When the diagnosis is uncertain, radiologic examination and pharyngeal examination should be avoided because of the risk of cardiorespiratory arrest in acute epiglottitis; in that situation emergency assessment by an otolaryngologist or an anesthesiologist is indicated. Chest X-rays may reveal parenchymal infiltrates, which are part of the characteristic involvement of the lower respiratory tract in this syndrome.",
+          "key_points": [
+            "PA neck film: subglottic narrowing = 'steeple' sign",
+            "Steeple sign helps differentiate croup from epiglottitis (thumb sign)",
+            "Radiographs are limited in accuracy",
+            "If diagnosis uncertain: avoid radiographs and pharyngeal examination — risk of cardiorespiratory arrest in acute epiglottitis",
+            "Emergency assessment by otolaryngologist or anesthesiologist when uncertain",
+            "Chest X-ray may show parenchymal infiltrates reflecting lower respiratory tract involvement"
+          ]
+        },
+        {
+          "heading": "Treatment: Steroids Are the Definitive Therapy",
+          "body_text": "Steroids, specifically dexamethasone or prednisolone, have been shown to confer significant benefits in the management of mild, moderate, and severe croup, including more rapid improvement in symptoms, reduced length of hospital stay, and reduced rates of intubation. This makes corticosteroids the most definitive therapy for croup across the severity spectrum. Administration of nebulized racemic epinephrine generally gives rapid symptomatic relief in severe croup. The onset of action is rapid, often within minutes, but the duration of relief is also limited, lasting 2 hours or less; children who receive racemic epinephrine therefore require continued observation for rebound obstruction after the drug wears off.",
+          "key_points": [
+            "Most definitive therapy: steroids (dexamethasone or prednisolone) for mild, moderate, and severe croup",
+            "Benefits: faster symptom improvement, shorter hospital stay, fewer intubations",
+            "Nebulized racemic epinephrine for severe croup: onset within minutes, duration 2 hours or less"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Croup",
+          "definition_ar": "الخانوق: التهاب فيروسي حاد للحنجرة والرغامى والقصبات عند الأطفال الصغار، يسبب سعالاً نباحياً وصريراً شهيقياً."
+        },
+        {
+          "term": "Stridor",
+          "definition_ar": "الصرير: صوت تنفسي حاد عالي النبرة يظهر أثناء الشهيق نتيجة انسداد مجرى الهواء العلوي."
+        },
+        {
+          "term": "Steeple sign",
+          "definition_ar": "علامة العمود: تضيق تحت المزمار يظهر كشكل برج الكنيسة في صورة العنق الأمامية الخلفية، علامة شعاعية للخانوق."
+        },
+        {
+          "term": "Racemic epinephrine",
+          "definition_ar": "الأدرينالين الراسمي المذاب بالرذاذ: علاج سريع المفعول للخانوق الشديد، أثره يدوم ساعتين أو أقل."
+        },
+        {
+          "term": "Parainfluenza virus",
+          "definition_ar": "فيروس نظير الإنفلونزا: النمطان 1 و2 مسؤولان عن نحو 75% من حالات الخانوق."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "epiglottitis",
+      "lecture_id": "L4_URTI",
+      "title": "Epiglottitis: A True Airway Emergency",
+      "summary_ar": "التهاب لسان المزمار عدوى بكتيرية إسعافية للحنجرة يسبب تورماً سريعاً لسان المزمار وضائقة تنفسية متزايدة. أصبح نادراً في الدول المتقدمة بفضل لقاح المستدمية النزلية النمط b. أشيع مسبب الآن المستدمية النزلية غير المحفظة ثم العقدية الرئوية، ويصيب الأطفال 2-5 سنوات ببداية مفاجئة من حمى وألم حلق وسيلان لعاب وصرير، يجلس الطفل بوضعية الثلاثي مع مد الذقن. يمنع منعاً باتاً استخدام معصرة اللسان. لسان المزمار الكرزية الحمراء بالتنظير الحنجري تشخيصية، والعلاج تأمين المجرى الهوائي مع مضادات حيوية مضادة للمكورات العنقودية وسيفترياكسون/سيفوتاكسيم، مع فانكومايسين عند انتشار MRSA.",
+      "sections": [
+        {
+          "heading": "Definition and Changing Epidemiology",
+          "body_text": "Epiglottitis is an infection of the larynx with rapid swelling of the epiglottis and increasing respiratory distress. It is now rare in developed countries because of the widespread use of the Haemophilus influenzae type b (Hib) vaccine, which dramatically reduced the incidence of classical Hib disease in young children. Despite this success, epiglottitis has not disappeared: the disease now more often involves non-vaccinated or partially protected children, and causative organisms have shifted accordingly. Epiglottitis typically affects children between 2 and 5 years of age.",
+          "key_points": [
+            "Epiglottitis = infection of the larynx with rapid swelling of the epiglottis and increasing respiratory distress",
+            "Now rare in developed countries thanks to widespread Haemophilus influenzae type b (Hib) vaccination",
+            "Typically affects children between 2 and 5 years of age"
+          ]
+        },
+        {
+          "heading": "Microbiology",
+          "body_text": "In the post-vaccine era, Haemophilus influenzae (nontypeable, i.e. non-encapsulated strains) is the most common cause of epiglottitis, followed by Streptococcus pneumoniae. Most affected children are bacteremic, meaning the organism is present in the bloodstream, which explains the toxic appearance of these patients and justifies prompt systemic antibiotic therapy in addition to airway management. Awareness of local resistance patterns, including methicillin-resistant Staphylococcus aureus (MRSA) carriage in the community, further shapes empiric antibiotic selection.",
+          "key_points": [
+            "Most common cause now: nontypeable (non-encapsulated) Haemophilus influenzae",
+            "Second most common: Streptococcus pneumoniae",
+            "Most of these children are bacteremic"
+          ]
+        },
+        {
+          "heading": "Clinical Presentation and Diagnosis",
+          "body_text": "Patients present with abrupt onset of fever, sore throat, drooling, and stridor. Frequently, the child is very ill-appearing and apprehensive, sitting forward in a tripod position with the chin extended; this posture maximizes the diameter of the narrowed supraglottic airway, and any attempt to lay the child flat may precipitate complete obstruction. The finding of a cherry-red, swollen epiglottis on laryngoscopy is diagnostic. On lateral neck radiography, the enlarged epiglottis produces the classic 'thumb sign', which contrasts with the steeple sign of croup on the PA view. Because the airway can obstruct with minimal provocation, however, examination and imaging must never take priority over securing the airway.",
+          "key_points": [
+            "Abrupt onset: fever, sore throat, drooling, stridor",
+            "Child very ill-appearing and apprehensive, sitting forward in tripod position with chin extended",
+            "Cherry-red epiglottis on laryngoscopy is diagnostic",
+            "Lateral neck X-ray: 'thumb sign' (swollen epiglottis)"
+          ]
+        },
+        {
+          "heading": "Management: Airway First, Then Antibiotics",
+          "body_text": "Never use a tongue depressor on a symptomatic child; it can provoke airway spasm and catastrophic obstruction. Provide oxygen when necessary, and stay calm and keep the child calm if respiratory failure is not imminent. The best next step is to seek the immediate help of an experienced pediatric anesthesiologist or otolaryngologist, who can secure the airway under controlled conditions. Besides airway management, treatment must include prompt antibiotic therapy, which typically includes an antistaphylococcal drug such as oxacillin, cefazolin, or clindamycin, and either ceftriaxone or cefotaxime. When MRSA (methicillin-resistant Staphylococcus aureus) carriage is high in the community, many clinicians use vancomycin as the antistaphylococcal agent. Admit patients with epiglottitis to a closely monitored hospital unit.",
+          "key_points": [
+            "NEVER use a tongue depressor on a symptomatic child — risk of airway spasm",
+            "Provide oxygen when necessary; keep the child (and yourself) calm",
+            "Best next step: immediate experienced pediatric anesthesiologist or otolaryngologist for airway management",
+            "Antibiotics: antistaphylococcal drug (oxacillin, cefazolin, or clindamycin) PLUS ceftriaxone or cefotaxime",
+            "Vancomycin when community MRSA carriage is high",
+            "Admit to a closely monitored hospital unit"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Epiglottitis",
+          "definition_ar": "التهاب لسان المزمار: عدوى بكتيرية إسعافية للحنجرة تسبب تورماً سريعاً يهدد مجرى الهواء."
+        },
+        {
+          "term": "Hib vaccine",
+          "definition_ar": "لقاح المستدمية النزلية النمط b: أدى استخدامه الواسع إلى ندرة التهاب لسان المزمار الكلاسيكي في الدول المتقدمة."
+        },
+        {
+          "term": "Tripod position",
+          "definition_ar": "وضعية الثلاثي: جلوس الطفل منحنياً للأمام مع مد الذقن لتوسيع مجرى الهواء فوق المزماري، علامة مميزة لالتهاب لسان المزمار."
+        },
+        {
+          "term": "Thumb sign",
+          "definition_ar": "علامة الإبهام: تورم لسان المزمار في صورة الرقبة الجانبية يشبه شكل الإبهام، علامة شعاعية لالتهاب لسان المزمار."
+        },
+        {
+          "term": "Drooling",
+          "definition_ar": "سيلان اللعاب: علامة خطيرة تدل على عدم القدرة على البلع بسبب انسداد البلعوم في التهاب لسان المزمار."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 5
+    },
+    {
+      "id": "croup_vs_epiglottitis",
+      "lecture_id": "L4_URTI",
+      "title": "Croup versus Epiglottitis: The Classic Comparison Table",
+      "summary_ar": "جدول المقارنة المحوري بين الخانوق والتهاب لسان المزمار عبر 10 محاور: السبب فيروسي مقابل بكتيري، العمر أقل من 3 سنوات مقابل 2-5 سنوات، البداية تدريجية مقابل سريعة، الموقع تحت المزمار مقابل فوقه، الحمى أقل درجة مقابل عالية، السعال نباحي مقابل ضئيل، ضيق النفس غائب لخفيف مقابل شديد، القدرة على البلع مقابل سيلان اللعاب، علامة العمود مقابل علامة الإبهام، وبدون مضادات حيوية مقابل مع مضادات حيوية.",
+      "sections": [
+        {
+          "heading": "Side-by-Side Comparison",
+          "body_text": "The lecture provides a systematic comparison of croup and epiglottitis across ten clinical axes, which is reproduced faithfully here in tabular form:\n\n| Feature | Croup | Epiglottitis |\n|---|---|---|\n| Cause | Viral | Bacterial |\n| Age | 3 years and less | 2 - 5 years |\n| Onset | Gradual | Rapid |\n| Site | Subglottic | Supraglottic |\n| Temperature | Less than high grade | High grade fever |\n| Cough | Barking cough | Minimal cough |\n| Shortness of breath | Absent to mild | Severe SOB |\n| Secretions | Able to swallow | Drooling |\n| Radiology | Steeple sign | Thumb sign |\n| Treatment | No antibiotics (ABX) | Antibiotics (ABX) |\n\nThis table encodes the entire diagnostic logic of the pediatric acute upper airway obstruction evaluation in a compact, high-yield format suitable for rapid bedside recall.",
+          "key_points": [
+            "Cause: viral (croup) vs bacterial (epiglottitis)",
+            "Age: 3 years and less (croup) vs 2-5 years (epiglottitis)",
+            "Onset: gradual (croup) vs rapid (epiglottitis)",
+            "Site: subglottic (croup) vs supraglottic (epiglottitis)",
+            "Cough: barking (croup) vs minimal (epiglottitis)",
+            "Secretions: able to swallow (croup) vs drooling (epiglottitis)",
+            "Radiology: steeple sign (croup) vs thumb sign (epiglottitis)",
+            "Treatment: no antibiotics (croup) vs antibiotics (epiglottitis)"
+          ]
+        },
+        {
+          "heading": "Clinical Implications of the Table",
+          "body_text": "Each row of the comparison maps directly onto a bedside decision. A child under 3 with a gradual prodrome of coryza, a barking cough, preserved swallowing, and low-grade fever has croup and needs steroids, not antibiotics. A child between 2 and 5 years with abrupt high fever, minimal cough, severe respiratory distress, drooling, and a tripod posture has epiglottitis until proven otherwise, needs immediate airway expertise rather than throat examination, and requires parenteral antibiotics because most are bacteremic. The radiologic row translates into imaging strategy: steeple sign on the PA neck film supports croup, while the thumb sign on the lateral film supports epiglottitis; but when the diagnosis is uncertain, imaging and pharyngeal examination are avoided entirely because provoking the epiglottitic airway can end in cardiorespiratory arrest.",
+          "key_points": [
+            "Barking cough + able to swallow + gradual onset = croup = steroids, no antibiotics",
+            "Drooling + severe SOB + abrupt high fever = epiglottitis = airway expertise + antibiotics",
+            "When uncertain, do NOT examine the throat or delay for imaging — call the airway specialist"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Subglottic",
+          "definition_ar": "تحت المزمار: الموقع التشريحي للانسداد في الخانوق (تضيق تحت المزمار)."
+        },
+        {
+          "term": "Supraglottic",
+          "definition_ar": "فوق المزمار: الموقع التشريحي للانسداد في التهاب لسان المزمار."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    },
+    {
+      "id": "tracheobronchitis",
+      "lecture_id": "L4_URTI",
+      "title": "Acute Tracheobronchitis in Adults",
+      "summary_ar": "التهاب الرغامى والقصبات تسببه عادة فيروسات الإنفلونزا A أو B. عند البالغين يتميز التهاب الرغامى بإيلام الرغامى بالجس اللطيف أسفل الغضروف الحلقي مباشرة، وعدم ارتياح خلف القص عند الشهيق، وسعال إنتاجي متقطع. العلاج: الراحة، الأسبرين للصداع والحمى، استنشاق بخار الماء البارد، وشراب السعال (غايفينيزين مع ديكستروميثورفان)، ولا فائدة من المضادات البكتيرية للسعال المطول بغياب علامات ذات الرئة.",
+      "sections": [
+        {
+          "heading": "Etiology and Clinical Features in Adults",
+          "body_text": "Tracheobronchitis is most typically caused by influenza A or B virus. In adults, tracheitis is characterized by tracheal tenderness, which can be elicited by gentle pressure on the anterior trachea just below the cricoid cartilage. This physical sign is subtle, frequently overlooked, and virtually diagnostic of influenza-related tracheal inflammation when present during the appropriate season. Supporting features include substernal discomfort on inhalation and a nonproductive paroxysmal cough, which may persist for weeks after the acute viral illness has resolved and is a frequent cause of inappropriate antibiotic prescription.",
+          "key_points": [
+            "Most typical cause: influenza A or B virus",
+            "Tracheal tenderness elicited by gentle pressure on the anterior trachea just below the cricoid cartilage",
+            "Substernal discomfort on inhalation",
+            "Nonproductive paroxysmal cough"
+          ]
+        },
+        {
+          "heading": "Management",
+          "body_text": "Treatment in adults is best effected by prescribing rest, aspirin for headache and fever, cold water vapor inhalation, and a cough syrup such as guaifenesin with dextromethorphan. In the absence of signs of pneumonia, treatment of prolonged cough with antibacterial agents is of no benefit and is not recommended. This explicit statement against antibiotic use for post-viral prolonged cough is one of the practical take-home messages of the lecture, since lingering cough after influenza is extremely common and frequently generates unnecessary antimicrobial prescriptions, contributing to resistance and adverse drug effects without any clinical gain.",
+          "key_points": [
+            "Therapy: rest, aspirin for headache and fever, cold water vapor inhalation, cough syrup (guaifenesin with dextromethorphan)",
+            "WITHOUT signs of pneumonia: antibiotics for prolonged cough = no benefit, not recommended"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Tracheal tenderness",
+          "definition_ar": "إيلام الرغامى: علامة سريرية التهاب الرغامى تُستثار بالضغط اللطيف على الوجه الأمامي للرغامى أسفل الغضروف الحلقي مباشرة."
+        },
+        {
+          "term": "Guaifenesin",
+          "definition_ar": "غايفينيزين: مقشع (مذيب للبلغم) يدخل في تركيب شرابات السعال."
+        },
+        {
+          "term": "Dextromethorphan",
+          "definition_ar": "ديكستروميثورفان: مضاد للسعال يُستخدم في شرابات السعال المشتركة مع المقشعات."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 7
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "fc_urti_risk_01",
+      "lecture_id": "L4_URTI",
+      "concept_id": "urti_overview",
+      "card_type": "basic",
+      "front_text": "Which three patient groups are at particular risk of severe morbidity and mortality from respiratory tract infections?",
+      "back_text": "1) Patients at the extremes of age (very young and very old); 2) patients with pre-existing lung disease; 3) patients with immune suppression. Infections of the upper and lower respiratory tract are a major cause of morbidity and mortality, particularly in these groups, whereas in healthy adults they are usually short-lived and rarely serious.",
+      "explanation_ar": "هذه الفئات الثلاث هي محور السؤال عن الخطورة: أطراف العمر، أمراض الرئة الموجودة مسبقاً، وكبت المناعة — لأن احتياطيهم الفسيولوجي والمناعي أقل فيتحول الالتهاب الفيروسي البسيط إلى مرض خطير.",
+      "tags": [
+        "epidemiology",
+        "risk factors"
+      ]
+    },
+    {
+      "id": "fc_urti_common_02",
+      "lecture_id": "L4_URTI",
+      "concept_id": "urti_overview",
+      "card_type": "basic",
+      "front_text": "Name the three most common upper respiratory tract infections and state their typical causative category.",
+      "back_text": "Coryza (the common cold), acute pharyngitis, and acute tracheobronchitis are the most common. The vast majority of such infections are caused by viruses, in adults are usually short-lived and rarely serious.",
+      "explanation_ar": "احفظ الثلاثي: الزكام، التهاب البلعوم الحاد، التهاب الرغامى والقصبات الحاد — ومعظمها فيروسي المنشأ، وهذا ما يفسر العلاج العرضي في الغالب.",
+      "tags": [
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "fc_coryza_virus_03",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "card_type": "basic",
+      "front_text": "What is the most common URTI, and which virus usually causes it?",
+      "back_text": "Coryza (the common cold) is the most common upper respiratory tract infection, and it is usually caused by rhinovirus infection.",
+      "explanation_ar": "الزكام = أشيع التهابات الجهاز التنفسي العلوي، والسبب المعتاد هو فيروس الأنف (Rhinovirus).",
+      "mnemonic_ar": "تذكير: الرينو (الأنف) يصيب الأنف — Rhinovirus → Rhino (أنف).",
+      "tags": [
+        "coryza",
+        "virology"
+      ]
+    },
+    {
+      "id": "fc_coryza_symptoms_04",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "card_type": "basic",
+      "front_text": "What are the usual symptoms of coryza, and what do pharyngeal and laryngeal involvement add?",
+      "back_text": "The usual symptoms are general malaise, nasal discharge, sneezing, and cough. Involvement of the pharynx causes a sore throat, and involvement of the larynx causes a hoarse or 'lost' voice.",
+      "explanation_ar": "الأعراض الأساسية: توعك، رشح أنفي، عطاس، سعال. إصابة البلعوم = ألم حلق؛ إصابة الحنجرة = بحة أو فقدان الصوت.",
+      "tags": [
+        "coryza",
+        "clinical features"
+      ]
+    },
+    {
+      "id": "fc_coryza_complications_05",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "card_type": "basic",
+      "front_text": "What happens when coryza is complicated by tracheitis, bronchitis, or bacterial superinfection?",
+      "back_text": "If complicated by tracheitis or bronchitis, chest tightness and wheeze typical of asthma occur. Bacterial infection of the paranasal sinuses (sinusitis) and of the middle ear (otitis media) are also recognized complications.",
+      "explanation_ar": "التهاب الرغامى/القصبات يضيف ضيقاً وأزيزاً نموذجياً عن الربو، أما الانتقال البكتيري فيصيب الجيوب الأنفية والأذن الوسطى.",
+      "tags": [
+        "coryza",
+        "complications"
+      ]
+    },
+    {
+      "id": "fc_coryza_treatment_06",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "card_type": "basic",
+      "front_text": "List the four symptomatic treatment options for coryza mentioned in the lecture.",
+      "back_text": "Treatment is symptomatic: a non-sedating antihistamine, a decongestant, intranasal ipratropium, and an intranasal steroid. Specific investigation is rarely warranted.",
+      "explanation_ar": "العلاج عرضي بأربعة خيارات: مضاد هيستامين غير مسبب للنعاس، مزيل احتقان، إبراتروبيوم داخل الأنف، وستيرويد أنفي موضعي. والتحري المخبري نادراً ما يكون مبرراً.",
+      "tags": [
+        "coryza",
+        "treatment"
+      ]
+    },
+    {
+      "id": "fc_coryza_asthma_07",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "card_type": "basic",
+      "front_text": "When should a clinician consider a formal diagnosis of asthma in a patient with repeated colds?",
+      "back_text": "If repeated URTIs 'go to the chest' (recurrent chest tightness and wheeze with minor colds), a more formal diagnosis of asthma ought to be considered. Also remember: viruses causing URTI may trigger exacerbations of asthma or COPD and aggravate other lung diseases.",
+      "explanation_ar": "النقطة المفصلية: تكرار نزلات البرد التي «تنزل إلى الصدر» يجب أن يثير الشك بالربو ويستدعي تقييماً رسمياً، مع تذكر أن فيروسات URTI تزيد نوبات الربو والانسداد الرئوي المزمن وتفاقم أمراض الرئة الأخرى.",
+      "tags": [
+        "coryza",
+        "asthma",
+        "COPD"
+      ]
+    },
+    {
+      "id": "fc_rs_features_08",
+      "lecture_id": "L4_URTI",
+      "concept_id": "rhinosinusitis",
+      "card_type": "basic",
+      "front_text": "How does rhinosinusitis typically manifest, and what does examination usually show?",
+      "back_text": "Rhinosinusitis typically manifests as a combination of nasal congestion, blockage, or discharge, which may be accompanied by facial pain, pressure, or loss of smell. Examination usually confirms erythematous, swollen nasal mucosa, and pus may be evident.",
+      "explanation_ar": "المظاهر: احتقان/انسداد/إفرازات أنفية مع ألم أو ضغط بالوجه أو فقدان الشم. الفحص: غشاء مخاطي محتقن منتفخ مع احتمال رؤية صديد.",
+      "tags": [
+        "rhinosinusitis",
+        "clinical features"
+      ]
+    },
+    {
+      "id": "fc_rs_lookfor_09",
+      "lecture_id": "L4_URTI",
+      "concept_id": "rhinosinusitis",
+      "card_type": "basic",
+      "front_text": "What two things must be actively sought or excluded when assessing a patient with rhinosinusitis?",
+      "back_text": "Nasal polyps should be sought, and dental infection should be excluded. Polyps point toward chronic inflammatory disease and change management, while an odontogenic source requires treatment of the dental infection itself.",
+      "explanation_ar": "دائماً ابحث عن السلائل الأنفية واستبعد عدوى الأسنان كمصدر لالتهاب الجيوب الفكي.",
+      "tags": [
+        "rhinosinusitis",
+        "examination"
+      ]
+    },
+    {
+      "id": "fc_rs_abx_10",
+      "lecture_id": "L4_URTI",
+      "concept_id": "rhinosinusitis",
+      "card_type": "basic",
+      "front_text": "When are antibiotics indicated in rhinosinusitis, and when should the patient be referred to an ENT specialist?",
+      "back_text": "Although bacterial infection is often present, antibiotics are indicated only if symptoms persist for more than 5 days. First-line therapy is topical glucocorticoids, nasal decongestants, and regular nasal douching. Persistent symptoms or recurrent episodes should prompt referral to an ear, nose and throat specialist.",
+      "explanation_ar": "المضاد الحيوي فقط عند استمرار الأعراض أكثر من 5 أيام، رغم أن العدوى البكتيرية غالباً موجودة. العلاج الأساسي: ستيرويد موضعي ومزيل احتقان وغسل أنف منتظم. الالتزام أو التكرار = إحالة أنف وأذن وحنجرة.",
+      "mnemonic_ar": "قاعدة الخمسة: أقل من 5 أيام = علاج موضعي؛ أكثر من 5 أيام = مضاد حيوي.",
+      "tags": [
+        "rhinosinusitis",
+        "treatment",
+        "antibiotics"
+      ]
+    },
+    {
+      "id": "fc_pc_fever_11",
+      "lecture_id": "L4_URTI",
+      "concept_id": "pharyngitis_laryngitis",
+      "card_type": "basic",
+      "front_text": "Which virus causes pharyngoconjunctival fever, and what is the triad?",
+      "back_text": "Adenovirus causes pharyngoconjunctival fever, consisting of fever, pharyngitis, and bilateral conjunctivitis. Other viral causes of pharyngitis with nasal symptoms include rhinovirus, influenza (fever, myalgia, malaise), HSV, and infectious mononucleosis.",
+      "explanation_ar": "الفيروس الغدي يسبب متلازمة حمى البلعوم والملتحمة: حمى + التهاب بلعوم + التهاب ملتحمة ثنائي الجانب.",
+      "tags": [
+        "pharyngitis",
+        "adenovirus"
+      ]
+    },
+    {
+      "id": "fc_strep_features_12",
+      "lecture_id": "L4_URTI",
+      "concept_id": "pharyngitis_laryngitis",
+      "card_type": "basic",
+      "front_text": "List the five features suggestive of streptococcal pharyngitis.",
+      "back_text": "1) Tonsillar swelling; 2) moderate to severe tenderness on palpation; 3) enlargement of lymph nodes; 4) presence of a scarlatiniform rash; 5) absence of coryza. Conversely, the presence of nasal symptoms or conjunctivitis favors a viral etiology.",
+      "explanation_ar": "خمس علامات تدل على العقدية: تضخم اللوزتين، إيلام شديد بالجس، تضخم العقد اللمفية، طفح قوبائي، وغياب الزكام. ووجود الأعراض الأنفية أو الملتحمة يرجح السبب الفيروسي.",
+      "mnemonic_ar": "تذكر: «البلعوم العقيدي = حلق متضخم + عقد + طفح - زكام».",
+      "tags": [
+        "pharyngitis",
+        "streptococcus"
+      ]
+    },
+    {
+      "id": "fc_pharynx_tx_13",
+      "lecture_id": "L4_URTI",
+      "concept_id": "pharyngitis_laryngitis",
+      "card_type": "basic",
+      "front_text": "Summarize the etiology-directed treatment of pharyngitis.",
+      "back_text": "Viral pharyngitis: symptomatic treatment as for common colds. Suspected influenza pharyngitis within the first 2 days: antiviral therapy. Immunosuppressed patients with chronic herpetic pharyngitis, or normal hosts with primary gingivostomatitis: acyclovir. Group A streptococcal infections: antimicrobial therapy.",
+      "explanation_ar": "الفيروسي = علاج عرضي؛ الإنفلونزا خلال أول يومين = مضاد فيروسي؛ الحلأ المزمن عند مكتومي المناعة أو التهاب اللثة والفم الأولي = أسيكلوفير؛ العقدية A = مضاد حيوي.",
+      "tags": [
+        "pharyngitis",
+        "treatment"
+      ]
+    },
+    {
+      "id": "fc_croup_epi_14",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "Which age group does croup predominantly affect, and which viruses cause it?",
+      "back_text": "Croup predominantly affects children under the age of 3. Parainfluenza viruses type 1 and 2 are the most common cause, accounting for about 75% of cases. Less common causes include respiratory syncytial virus and influenza A or B viruses.",
+      "explanation_ar": "الخانوق يصيب الأطفال دون 3 سنوات، وفيروسات نظير الإنفلونزا 1 و2 مسؤولة عن 75% من الحالات، ثم الفيروس المخلوي التنفسي وإنفلونزا A/B.",
+      "mnemonic_ar": "«نظير الإنفلونزا يخنق» — Parainfluenza 1&2 = 75% من الخانوق.",
+      "tags": [
+        "croup",
+        "virology"
+      ]
+    },
+    {
+      "id": "fc_croup_course_15",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "Describe the evolution of the cough in croup and the characteristic physical finding.",
+      "back_text": "The illness begins with rhinorrhea, sore throat, and a mild cough. After 2 or 3 days the cough deepens and develops a characteristic brassy, barking quality, similar to a seal's bark. The characteristic physical finding is inspiratory stridor. Fever between 38 and 40 C is common, although RSV croup may have normal temperatures.",
+      "explanation_ar": "بداية بأعراض زكام، وبعد 2-3 أيام يتحول السعال إلى نباحي جاسي كنباح الفقمة، والعلامة المميزة هي الصرير الشهيقي. الحمى 38-40 شائعة، وقد تكون طبيعية في الخانوق الفيروسي المخلوي.",
+      "tags": [
+        "croup",
+        "clinical features"
+      ]
+    },
+    {
+      "id": "fc_croup_fluctuating_16",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "What is the key point about the clinical course of viral croup, and what is its typical duration?",
+      "back_text": "A fluctuating course is typical for viral croup, and the child may appear to worsen or improve within an hour. This is a KEY POINT of the lecture. The typical duration of croup is 3 to 4 days.",
+      "explanation_ar": "نقطة محورية: مسار الخانوق متذبذب — قد يسوء الطفل أو يتحسن خلال ساعة واحدة، لذا لا تفاجأ بالتغيرات السريعة. والمدة المعتادة 3-4 أيام.",
+      "tags": [
+        "croup",
+        "course"
+      ]
+    },
+    {
+      "id": "fc_croup_severe_17",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "Which four findings mark severe (at-risk) croup, and which infection is tachypnea contrasted with?",
+      "back_text": "1) Tachypnea (which contrasts with bronchiolitis); 2) chest wall retractions, particularly supraclavicular and suprasternal; 3) stridor at rest (predicts higher risk of hospitalization or ventilatory support); 4) hypoxemia.",
+      "explanation_ar": "علامات الشدة: تسرع التنفس (على عكس الالتهاب القصبي الرئوي)، انسحاب جدار الصدر فوق الترقوة وفوق القص، صرير بالراحة (يخطئ لدخول المشفى والدعم التنفسي)، ونقص الأكسجة.",
+      "tags": [
+        "croup",
+        "severity"
+      ]
+    },
+    {
+      "id": "fc_steeple_sign_18",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "What is the steeple sign, on which radiographic view does it appear, and what does it differentiate?",
+      "back_text": "The steeple sign is subglottic narrowing of the tracheal air shadow seen on PA films of the neck in croup. It may be useful in differentiating croup from epiglottitis. However, radiographs are limited in accuracy, and when the diagnosis is uncertain, radiologic and pharyngeal examination should be avoided because of the risk of cardiorespiratory arrest in acute epiglottitis.",
+      "explanation_ar": "علامة العمود = تضيق تحت المزمار في عمود هواء الرغامى على صورة العنق الأمامية الخلفية في الخانوق، وتفيد في تمييزه عن التهاب لسان المزمار، لكن دقتها محدودة، وعند الشك يجب تجنب التصوير والفحص البلعومي خوفاً من السكتة القلبية التنفسية.",
+      "tags": [
+        "croup",
+        "radiology",
+        "steeple sign"
+      ]
+    },
+    {
+      "id": "fc_croup_tx_19",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "card_type": "basic",
+      "front_text": "What is the most definitive therapy for croup, and what are the pharmacokinetics of nebulized racemic epinephrine?",
+      "back_text": "Steroids (dexamethasone or prednisolone) are the most definitive therapy, conferring benefits in mild, moderate, and severe croup: more rapid symptom improvement, reduced length of hospital stay, and reduced rates of intubation. Nebulized racemic epinephrine gives rapid symptomatic relief in severe croup, with onset often within minutes but duration of only 2 hours or less.",
+      "explanation_ar": "العلاج الحاسم: الستيرويدات (ديكساميثازون أو بريدنيزولون) لجميع درجات الشدة. الأدرينالين الراسمي بالرذاذ للحالات الشديدة: يبدأ خلال دقائق لكن مدته ساعتان أو أقل فقط، لذا تُلزم المراقبة المستمرة بعد إعطائه.",
+      "tags": [
+        "croup",
+        "treatment",
+        "steroids"
+      ]
+    },
+    {
+      "id": "fc_epiglottitis_epi_20",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "card_type": "basic",
+      "front_text": "What are the most common causative organisms of epiglottitis, and why has the disease become rare in developed countries?",
+      "back_text": "Haemophilus influenzae (nontypeable) is the most common cause of epiglottitis, followed by Streptococcus pneumoniae. Epiglottitis is now rare in developed countries because of the widespread use of the Haemophilus influenzae type b (Hib) vaccine. It typically affects children between 2 and 5 years of age.",
+      "explanation_ar": "السبب الأول حالياً: المستدمية النزلية غير المحفظة (غير النمطية)، يليها العقدية الرئوية. ندرة المرض في الدول المتقدمة سببها لقاح Hib. العمر النموذجي: 2-5 سنوات.",
+      "tags": [
+        "epiglottitis",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "fc_epiglottitis_presentation_21",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "card_type": "basic",
+      "front_text": "Describe the classic presentation of epiglottitis in a child.",
+      "back_text": "Patients present with abrupt onset of fever, sore throat, drooling, and stridor. Frequently the child is very ill-appearing and apprehensive, sitting forward in a tripod position with the chin extended. The finding of a cherry-red epiglottis on laryngoscopy is diagnostic, and the lateral neck film shows the thumb sign.",
+      "explanation_ar": "بداية مفاجئة: حمى، ألم حلق، سيلان لعاب، صرير. الطفل يبدو مريضاً جداً وقلقاً، جالساً للأمام بوضعية الثلاثي مع مد الذقن. لسان المزمار الكرزية الحمراء بالتنظير تشخيصية، وصورة الرقبة الجانبية تظهر علامة الإبهام.",
+      "mnemonic_ar": "«الأربع المفاجئة»: حمى + حلق + لعاب + صرير = التهاب لسان المزمار.",
+      "tags": [
+        "epiglottitis",
+        "clinical features"
+      ]
+    },
+    {
+      "id": "fc_epiglottitis_mgmt_22",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "card_type": "basic",
+      "front_text": "What is absolutely contraindicated in a symptomatic child with suspected epiglottitis, and what is the best next step?",
+      "back_text": "Never use a tongue depressor on a symptomatic child; it can provoke airway spasm. Provide oxygen when necessary, stay calm and keep the child calm. The best next step is to seek the immediate help of an experienced pediatric anesthesiologist or otolaryngologist. The cherry-red epiglottis on laryngoscopy is diagnostic.",
+      "explanation_ar": "يُمنع منعاً باتاً استخدام معصرة اللسان لأنها قد تسبب تشنج المجرى الهوائي. أعطِ الأكسجين عند الحاجة وابقَ هادئاً وهدّئ الطفل، والخطوة التالية الأفضل طلب مساعدة طبيب تخدير أطفال أو أخصائي أنف وأذن وحنجرة فوراً.",
+      "tags": [
+        "epiglottitis",
+        "management",
+        "airway"
+      ]
+    },
+    {
+      "id": "fc_epiglottitis_abx_23",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "card_type": "basic",
+      "front_text": "What is the antibiotic strategy for epiglottitis?",
+      "back_text": "Treatment must include prompt antibiotic therapy, which typically includes an antistaphylococcal drug (oxacillin, cefazolin, or clindamycin) plus either ceftriaxone or cefotaxime. When MRSA carriage is high in the community, many use vancomycin as the antistaphylococcal agent. Most of these children are bacteremic; admit to a closely monitored hospital unit.",
+      "explanation_ar": "المضادات الحيوية الفورية: دواء مضاد للعنقوديات (أوكساسيلين أو سيفازولين أو كليندامايسين) + سيفترياكسون أو سيفوتاكسيم. وعند انتشار MRSA في المجتمع يستخدم كثيرون الفانكومايسين. معظم الأطفال لديهم تجرثم دم، ويتطلب الإدخال لوحدة مراقبة دقيقة.",
+      "tags": [
+        "epiglottitis",
+        "antibiotics"
+      ]
+    },
+    {
+      "id": "fc_tb_features_24",
+      "lecture_id": "L4_URTI",
+      "concept_id": "tracheobronchitis",
+      "card_type": "basic",
+      "front_text": "Which viruses most typically cause tracheobronchitis, and how is tracheitis recognized in adults?",
+      "back_text": "Tracheobronchitis is most typically caused by influenza A or B virus. In adults, tracheitis is characterized by tracheal tenderness elicited by gentle pressure on the anterior trachea just below the cricoid cartilage, substernal discomfort on inhalation, and a nonproductive paroxysmal cough.",
+      "explanation_ar": "السبب النموذجي: فيروس الإنفلونزا A أو B. علامة التهاب الرغامى: إيلام الرغامى عند الضغط اللطيف أمامها أسفل الغضروف الحلقي، مع عدم ارتياح خلف القص عند الشهيق وسعال متقطع جاف.",
+      "tags": [
+        "tracheobronchitis",
+        "clinical features"
+      ]
+    },
+    {
+      "id": "fc_tb_tx_25",
+      "lecture_id": "L4_URTI",
+      "concept_id": "tracheobronchitis",
+      "card_type": "basic",
+      "front_text": "How is acute tracheobronchitis treated in adults, and what is explicitly not recommended?",
+      "back_text": "Treatment is best effected by prescribing rest, aspirin for headache and fever, cold water vapor inhalation, and a cough syrup such as guaifenesin with dextromethorphan. In the absence of signs of pneumonia, treatment of prolonged cough with antibacterial agents is of no benefit and is not recommended.",
+      "explanation_ar": "العلاج: راحة، أسبرين للصداع والحمى، استنشاق بخار ماء بارد، وشراب سعال (غايفينيزين مع ديكستروميثورفان). وبغياب علامات ذات الرئة لا فائدة من المضادات البكتيرية للسعال المطول إطلاقاً.",
+      "tags": [
+        "tracheobronchitis",
+        "treatment"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "mcq_coryza_01",
+      "lecture_id": "L4_URTI",
+      "concept_id": "coryza",
+      "question_stem": "All of the following are true regarding acute coryza, except:",
+      "options": [
+        "It is caused by rhinovirus",
+        "Treatment is always symptomatic",
+        "It can lead to asthma exacerbation but not COPD exacerbation",
+        "Specific investigation is rarely done",
+        "Otitis media is a complication"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الإجابة الصحيحة هي الخيار الثالث لأنه الخاطئ: صحيح أن فيروسات URTI تسبب نوبات الربو، لكن المحاضرة تنص صراحة على أنها تسبب كذلك تفاقمات COPD (الانسداد الرئوي المزمن) وتزيد أمراض الرئة الأخرى سوءاً، فقول «الربو دون COPD» خطأ. الخيارات الأخرى كلها صحيحة: الزكام يسببه فيروس الأنف غالباً، وعلاجه عرضي، والتحري نادراً ما يلزم، والتهاب الأذن الوسطى مضاعفة معروفة.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "mcq_rhinosinusitis_02",
+      "lecture_id": "L4_URTI",
+      "concept_id": "rhinosinusitis",
+      "question_stem": "All of the following are true regarding rhinosinusitis, except:",
+      "options": [
+        "Nasal congestion and facial pain are the leading complaints",
+        "Intranasal steroid can be used",
+        "Antibiotics are used only with persistent symptoms",
+        "Bacterial infection never complicates rhinosinusitis"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "الإجابة الصحيحة هي الخيار الرابع لأنه الخاطئ: العدوى البكتيرية كثيراً ما ترافق التهاب الأنف والجيوب، لكن المضادات الحيوية لا تُعطى إلا إذا استمرت الأعراض أكثر من 5 أيام. أما بقية الخيارات فصحيحة: الاحتقان الأنفي وألم الوجه هما الشكوى الرئيسية، والستيرويد الأنفي الموضعي جزء من العلاج الأساسي، والمضادات الحيوية مقصورة على الأعراض المستمرة.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "mcq_pharyngitis_03",
+      "lecture_id": "L4_URTI",
+      "concept_id": "pharyngitis_laryngitis",
+      "question_stem": "A 7-year-old child presents with fever, pharyngitis, and bilateral conjunctivitis without exudate. Which viral syndrome does this describe, and what is its causative agent?",
+      "options": [
+        "Pharyngoconjunctival fever caused by adenovirus",
+        "Herpetic gingivostomatitis caused by herpes simplex virus",
+        "Infectious mononucleosis caused by Epstein-Barr virus",
+        "Influenza pharyngitis caused by influenza A virus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الإجابة الصحيحة: حمى البلعوم والملتحمة (Pharyngoconjunctival fever) الناتجة عن الفيروس الغدي، وهي متلازمة تُعرَّف في المحاضرة بالثلاثي: حمى + التهاب بلعوم + التهاب ملتحمة ثنائي الجانب. لا يشمل الحلأ البسيط التهاب الملتحمة عادة، وحمى الغدد تسبب تضخماً عاماً للعقد مع إنهاك شديد، والإنفلونزا تتميز بالحمى والألم العضلي والتوعك دون التهاب ملتحمة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_strep_04",
+      "lecture_id": "L4_URTI",
+      "concept_id": "pharyngitis_laryngitis",
+      "question_stem": "A 19-year-old man presents with a 2-day history of severe sore throat, fever, and painful swallowing. He has no nasal discharge and no cough. Examination shows tonsillar swelling, tender enlarged cervical lymph nodes, and a fine sandpaper-like erythematous rash over the neck and upper chest. Which of the following features was most helpful in pointing to a streptococcal rather than viral etiology?",
+      "options": [
+        "The presence of conjunctivitis",
+        "The presence of nasal symptoms",
+        "The presence of a scarlatiniform rash and absence of coryza",
+        "The presence of myalgia and malaise"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الإجابة الصحيحة: وجود الطفح القوبائي مع غياب الزكام. المحاضرة تسرد سمات التهاب البلعوم العقيدي: تضخم اللوزتين، الإيلام المتوسط إلى الشديد بالجس، تضخم العقد اللمفية، الطفح القوبائي، وغياب الزكام. أما وجود الأعراض الأنفية أو الملتحمة فيرجّحان السبب الفيروسي، والألم العضلي والتوعك سمتان للإنفلونزا الفيروسية.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_croup_dx_05",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "question_stem": "A 2-year-old boy had 2 days of runny nose and mild cough. Tonight his cough has become barking like a seal's bark, and he has inspiratory stridor when agitated, low-grade fever of 38.2 C, and mild suprasternal retractions. He is able to swallow his saliva and drinks without difficulty. What is the most likely diagnosis?",
+      "options": [
+        "Epiglottitis",
+        "Viral croup (laryngotracheobronchitis)",
+        "Bronchiolitis",
+        "Asthma exacerbation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: الخانوق الفيروسي. الطفل عمره أقل من 3 سنوات، وبدأت الأعراض بأعراض زكام (سيلان أنفي وسعال خفيف) ثم تطور السعال إلى نباحي كنباح الفقمة مع صرير شهيقي، وهي الصورة النموذجية للخانوق. التهاب لسان المزمار يتصف ببداية مفاجئة وحمى عالية وسيلان لعاب وسعال ضئيل ووضعية الثلاثي. الالتهاب القصبي يصيب الرضع مع صفير زفيري لا صرير، والربو يظهر بأزيز لا صرير نباحي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_croup_virus_06",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "question_stem": "Which pair of viruses accounts for approximately 75% of croup cases?",
+      "options": [
+        "Rhinovirus and adenovirus",
+        "Respiratory syncytial virus and influenza B",
+        "Parainfluenza virus types 1 and 2",
+        "Herpes simplex virus and Epstein-Barr virus"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الإجابة الصحيحة: فيروسات نظير الإنفلونزا من النمطين 1 و2، وهي المسؤولة عن نحو 75% من حالات الخانوق وفق المحاضرة. أما الفيروس المخلوي التنفسي وإنفلونزا A/B فهي أسباب أقل شيوعاً، وتذكر أن الخانوق الناتج عن الفيروس المخلوي قد يترافق مع حرارة طبيعية.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "mcq_croup_tx_07",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "question_stem": "A 20-month-old girl presents with moderate croup (barking cough, inspiratory stridor with agitation, mild retractions, SpO2 95% on room air). Which single therapy is considered the most definitive treatment across mild, moderate, and severe croup?",
+      "options": [
+        "Nebulized racemic epinephrine",
+        "Corticosteroids (dexamethasone or prednisolone)",
+        "Antibacterial therapy",
+        "Nebulized bronchodilator"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: الكورتيكوستيرويدات (ديكساميثازون أو بريدنيزولون) فهي العلاج الحاسم لجميع درجات الخانوق خفيفاً كان أم متوسطاً أم شديداً، وتؤدي إلى تحسن أسرع للأعراض وتقصير مدة البقاء في المشفى وانخفاض معدلات التنبيب. الأدرينالين الراسمي مفيد في الحالات الشديدة لكن أثره سريع الزوال (ساعتان أو أقل) فهو علاج مؤقت لا حاسم، والخانوق مرض فيروسي لا يحتاج مضادات بكتيرية، والموسعات القصبية لا تعالج الانسداد تحت المزماري.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_croup_severe_08",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup",
+      "question_stem": "Which of the following findings in a child with croup indicates severe disease and a higher risk of requiring hospitalization or ventilatory support?",
+      "options": [
+        "Barking cough that improves during the day",
+        "Inspiratory stridor present at rest",
+        "Low-grade fever of 38 C",
+        "Fluctuating symptoms over hours"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: الصرير الحاضر أثناء الراحة. المحاضرة تعد علامات الخانوق الشديد: تسرع التنفس، انسحاب جدار الصدر (فوق الترقوة وفوق القص)، الصرير بالراحة — وهو يتنبأ بخطر أعلى للحاجة للتنويم أو الدعم التنفسي — ونقص الأكسجة. أما السعال النباحي والحمى الخفيفة والمسار المتذبذب فسمات معتادة للخانوق ولا تعني شدة بحد ذاتها.",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "mcq_epiglottitis_mgmt_09",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "question_stem": "A 4-year-old unvaccinated boy presents with abrupt high fever, severe sore throat, drooling, muffled breathing, and inspiratory stridor. He sits forward in a tripod position with his chin extended and appears toxic and apprehensive. What is the best immediate next step in management?",
+      "options": [
+        "Perform a thorough oropharyngeal examination with a tongue depressor",
+        "Obtain a lateral neck radiograph to confirm the thumb sign",
+        "Start oral amoxicillin and send the child home",
+        "Call an experienced pediatric anesthesiologist or otolaryngologist for immediate airway assessment"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "الإجابة الصحيحة: طلب مساعدة طبيب تخدير أطفال أو أخصائي أنف وأذن وحنجرة فوراً لتأمين المجرى الهوائي، فهذه هي الخطوة التالية الأفضل وفق المحاضرة. استخدام معصرة اللسان ممنوع لأنه قد يستثير تشنج المجرى الهوائي، والتصوير الشعاعي والفحص البلعومي يجب تجنبهما عند الشك بالتشخيص خوفاً من السكتة القلبية التنفسية، والمضادات الحيوية الفموية والإرسال للمنزل إهمال خطير لطبيئة الحالة الإسعافية.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_epiglottitis_org_10",
+      "lecture_id": "L4_URTI",
+      "concept_id": "epiglottitis",
+      "question_stem": "In the post-Hib-vaccine era, which organism is currently the most common cause of epiglottitis?",
+      "options": [
+        "Haemophilus influenzae type b",
+        "Nontypeable (non-encapsulated) Haemophilus influenzae",
+        "Streptococcus pyogenes",
+        "Mycoplasma pneumoniae"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: المستدمية النزلية غير المحفظة (غير النمطية) فهي السبب الأشيع حالياً لالتهاب لسان المزمار، تليها العقدية الرئوية، بينما انخفضت بشدة حالات النمط b بفضل اللقاح الواسع. العقدية القيحية والميكوبلازما ليسا من مسببات هذا المرض.",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "mcq_tb_abx_11",
+      "lecture_id": "L4_URTI",
+      "concept_id": "tracheobronchitis",
+      "question_stem": "A 34-year-old woman recovers from influenza A infection but continues to have a dry, paroxysmal, nonproductive cough for 3 weeks. Chest examination and chest X-ray show no signs of pneumonia. What is the most appropriate approach to her prolonged cough?",
+      "options": [
+        "Prescribe a course of antibacterial agents",
+        "Prescribe rest, aspirin for headache and fever, cold water vapor inhalation, and a cough syrup such as guaifenesin with dextromethorphan",
+        "Prescribe acyclovir therapy",
+        "Refer for urgent bronchoscopy"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: العلاج الداعم فقط — راحة وأسبرين وبخار ماء بارد وشراب سعال (غايفينيزين مع ديكستروميثورفان). تنص المحاضرة صراحة على أنه في غياب علامات ذات الرئة فإن علاج السعال المطول بالمضادات البكتيرية لا فائدة منه وغير موصى به. الأسيكلوفير يخص الحلأ (التهاب البلعوم الحلأي عند مكتومي المناعة أو التهاب اللثة والفم الأولي)، والتنظير القصبي غير مطلوب لسعال ما بعد الفيروسي الطبيعي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "mcq_radiology_signs_12",
+      "lecture_id": "L4_URTI",
+      "concept_id": "croup_vs_epiglottitis",
+      "question_stem": "A PA neck radiograph of a child with respiratory distress shows tapering of the subglottic tracheal air column, while a lateral neck radiograph of another child with abrupt fever and drooling shows a swollen epiglottis. Which pair of signs and diagnoses matches these findings?",
+      "options": [
+        "Steeple sign for croup; thumb sign for epiglottitis",
+        "Thumb sign for croup; steeple sign for epiglottitis",
+        "Steeple sign for both conditions",
+        "Thumb sign for both conditions"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الإجابة الصحيحة: علامة العمود (Steeple sign) للخانوق وعلامة الإبهام (Thumb sign) لالتهاب لسان المزمار. علامة العمود تظهر في صورة العنق الأمامية الخلفية كتضيق تدريجي تحت المزماري لعمود هواء الرغامى يحاكي برج الكنيسة، بينما علامة الإبهام تظهر في المنظور الجانبي كلسان مزمار متورم يشبه شكل الإبهام. وتذكر دائماً أن دقة التصوير محدودة وأن الأولوية عند الشك هي تأمين المجرى الهوائي لا التصوير.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "case_croup_01",
+      "lecture_id": "L4_URTI",
+      "title": "The Barking Cough at Midnight",
+      "scenario": "A 2-year-old boy is brought to the emergency department at midnight by his anxious parents. He had a runny nose and mild cough for the past 2 days, but tonight his cough changed character and became harsh and barking, and his breathing became noisy whenever he cries. His parents report that he seemed to get much worse an hour ago, then slightly better on the drive to hospital, which confused them. It is a cold winter week during the parainfluenza season.",
+      "vignette": {
+        "age": 2,
+        "sex": "male",
+        "chief_complaint": "Barking cough and noisy breathing that woke the child at night",
+        "history": "Two days of rhinorrhea, mild cough, and low-grade fever, treated with paracetamol at home. Tonight the cough became brassy and seal-like, worse with agitation. He is drinking fluids and swallowing his saliva normally. No drooling. Immunizations up to date. No prior wheezing episodes or atopy.",
+        "vitals": {
+          "bp": "92/58 mmHg",
+          "hr": "138 bpm",
+          "rr": "34 /min",
+          "temp": "38.2 C",
+          "spo2": "95% on room air"
+        },
+        "exam": "Alert but mildly anxious child. Inspiratory stridor audible when agitated, improving when calm. Mild suprasternal retractions. Harsh barking cough elicited on examination. No drooling, able to swallow. Chest auscultation otherwise unremarkable; no wheeze. No tripod positioning.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "9.2 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "52%",
+            "flag": "normal"
+          },
+          {
+            "name": "CRP",
+            "value": "6 mg/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Nasal PCR panel",
+            "value": "Parainfluenza virus type 1 positive",
+            "flag": "high"
+          }
+        ],
+        "imaging": "PA neck radiograph (obtained because diagnosis was initially uncertain): subglottic tapering of the tracheal air column consistent with the steeple sign. Lung fields clear."
+      },
+      "steps": [
+        {
+          "id": "step_1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Viral croup (laryngotracheobronchitis)",
+            "Acute epiglottitis",
+            "Bronchiolitis",
+            "Foreign body aspiration"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العمر دون 3 سنوات، والبداية بأعراض زكام (سيلان أنفي وسعال خفيف) لمدة يومين ثم تحول السعال إلى نباحي مع صرير شهيقي وحمى خفيفة 38.2 — هذه هي الصورة الكلاسيكية للخانوق. استمرار القدرة على البلع وغياب السيلان اللعابي يستبعدان التهاب لسان المزمار الذي يتصف ببداية مفاجئة وسمومية شديدة. الالتهاب القصبي يصيب الرضع بصفير زفيري، والجسم الأجنبي يحدث فجأة دون سباق زكامي.",
+          "xp": 10
+        },
+        {
+          "id": "step_2",
+          "prompt": "The parents are alarmed because the child seemed to deteriorate at home and improve again in the car. Which feature of croup does this variability illustrate?",
+          "options": [
+            "It indicates a secondary bacterial infection requiring antibiotics",
+            "A fluctuating course is typical for viral croup — the child may worsen or improve within an hour",
+            "It means the diagnosis is wrong and intubation is needed",
+            "It is a sign of impending respiratory failure"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "هذه نقطة محورية (Key Point) في المحاضرة: مسار الخانوق الفيروسي متذبذب بطبيعته، وقد يبدو الطفل أسوأ أو أفضل خلال ساعة واحدة، وهذا لا يعني عدوى بكتيرية ثانوية ولا خطأ تشخيصياً ولا فشلاً تنفسياً وشيكاً بالضرورة. معرفة ذلك تطمئن الأسرة وتمنع الطلبات غير المبررة للمضادات الحيوية.",
+          "xp": 8
+        },
+        {
+          "id": "step_3",
+          "prompt": "What is the most definitive therapy for this child's condition, effective across mild, moderate, and severe disease?",
+          "options": [
+            "Nebulized racemic epinephrine only",
+            "Antibacterial therapy covering Haemophilus influenzae",
+            "Corticosteroids (dexamethasone or prednisolone)",
+            "Humidified oxygen alone"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "الستيرويدات (ديكساميثازون أو بريدنيزولون) هي العلاج الحاسم للخانوق بجميع درجاته — خفيفاً ومتوسطاً وشديداً — وتحقق تحسناً أسرع للأعراض وتقصير مدة الإقامة في المشفى وانخفاض معدلات التنبيب. الأدرينالين الراسمي يبقى للحالات الشديدة كعلاج مؤقت سريع (يبدأ خلال دقائق ويدوم ساعتين أو أقل)، والخانوق مرض فيروسي لا يستدعي مضادات بكتيرية.",
+          "xp": 10
+        },
+        {
+          "id": "step_4",
+          "prompt": "One hour later the child develops stridor at rest with marked supraclavicular and suprasternal retractions, respiratory rate of 48/min, and SpO2 of 91% on room air. What is the next best step?",
+          "options": [
+            "Immediate intubation by the emergency physician without preparation",
+            "Nebulized racemic epinephrine with oxygen and continued close monitoring",
+            "Discharge home with advice to return if worse",
+            "Start intravenous antibiotics immediately"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "ظهور الصرير بالراحة مع الانسحابات ونقص الأكسجة يعني خانوقاً شديداً يستدعي الأدرينالين الراسمي المذاب بالرذاذ الذي يعطي ارتياحاً سريعاً خلال دقائق مع الأكسجين والمراقبة اللصيقة، مع تذكر أن مدة تأثيره ساعتان أو أقل فيلزم مراقبة الطفل بعد زوال أثره. التنبيب ليس الخطوة الأولى وإنما يُحتفظ به للحالات المتدهورة رغم العلاج، والإرسال للمنزل غير مقبول، والمضادات البكتيرية لا مكان لها في مرض فيروسي.",
+          "xp": 12
+        },
+        {
+          "id": "step_5",
+          "prompt": "Before discharge after 24 hours of observation, the parents ask whether their child needs antibiotics for the remaining cough. What is the correct counseling?",
+          "options": [
+            "A 7-day course of amoxicillin is needed to prevent pneumonia",
+            "Antibiotics are required because the fever reached 38.2 C",
+            "No antibiotics are indicated: croup is a viral, self-limiting illness typically lasting 3-4 days",
+            "Antiviral therapy against parainfluenza must be started"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "الخانوق مرض فيروسي محدود ذاتياً مدته المعتادة 3-4 أيام، والمضادات البكتيرية لا تفيد فيه ولا تمنع المضاعفات، والحالة لا تستدعي مضادات فيروسية ضد نظير الإنفلونزا وفق المحاضرة. التعليم الأسري يشمل توقع المسار المتذبذب ومراجعة المستشفى عند ظهور صرير بالراحة أو نقص الأكسجة أو علامات الشدة.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: خانوق فيروسي (التهاب حنجرة ورغامى وقصبات) بسبب فيروس نظير الإنفلونزا النمط 1. الدروس المستفادة: (1) الخانوق يصيب الأطفال دون 3 سنوات ويبدأ بأعراض زكام يتلوها سعال نباحي وصرير شهيقي؛ (2) المسار المتذبذب سمته المميزة ولا يدل على سوء إنذار؛ (3) القدرة على البلع وغياب السيلان اللعابي هما الفارق السريري الحاسم عن التهاب لسان المزمار؛ (4) الستيرويدات هي العلاج الحاسم بجميع الدرجات بينما الأدرينالين الراسمي للحالات الشديدة بأثر مؤقت؛ (5) لا مكان للمضادات البكتيرية في مرض فيروسي محدود ذاتياً مدته 3-4 أيام.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "case_epiglottitis_01",
+      "lecture_id": "L4_URTI",
+      "title": "The Child Who Refuses to Lie Down",
+      "scenario": "A 4-year-old boy is rushed to the emergency department in the early morning. His parents report that he was completely well yesterday, but 8 hours ago he developed abrupt high fever and severe throat pain, and since then he has progressively stopped swallowing his saliva, is drooling constantly, and his breathing has become increasingly distressed. He insists on sitting upright, leaning forward on his arms, with his chin pushed forward, and becomes alarmed whenever anyone tries to make him lie down or look in his mouth. His vaccination card shows he missed several doses of childhood vaccines.",
+      "vignette": {
+        "age": 4,
+        "sex": "male",
+        "chief_complaint": "Abrupt fever, severe sore throat, drooling, and difficulty breathing",
+        "history": "Sudden onset 8 hours ago with high fever and severe odynophagia; he has stopped drinking and is unable to swallow his own saliva. No runny nose and no prior prodrome. Incomplete childhood immunization schedule (no Hib vaccine). Four-year-old brother had a mild cold last week.",
+        "vitals": {
+          "bp": "98/60 mmHg",
+          "hr": "156 bpm",
+          "rr": "36 /min",
+          "temp": "39.6 C",
+          "spo2": "92% on room air"
+        },
+        "exam": "Ill-appearing, toxic, and apprehensive child sitting forward in a tripod position with chin extended. Constant drooling with pooled secretions. Inspiratory stridor at rest. Minimal cough. Voice muffled. Marked distress when approached; examination of the mouth is not attempted.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "19.5 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "84%",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "96 mg/L",
+            "flag": "critical"
+          },
+          {
+            "name": "Blood culture (later)",
+            "value": "Haemophilus influenzae (nontypeable) growth",
+            "flag": "critical"
+          },
+          {
+            "name": "Lactate",
+            "value": "3.4 mmol/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "No radiograph was taken in the emergency department: with this classic presentation, imaging and pharyngeal examination were deliberately avoided, and the airway team was called immediately. (A lateral neck film obtained later in the operating theatre showed an enlarged epiglottis consistent with the thumb sign.)"
+      },
+      "steps": [
+        {
+          "id": "step_1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Viral croup",
+            "Acute epiglottitis",
+            "Peritonsillar abscess",
+            "Retropharyngeal abscess"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الطفل عمره 4 سنوات (ضمن المدى 2-5) مع بداية مفاجئة سريعة خلال ساعات وحمى عالية 39.6 وسيلان لعاب وصرير شديد وسعال ضئيل ووضعية الثلاثي مع مد الذقن — هذه هي الصورة النموذجية لالتهاب لسان المزمار، وهو ما يفسر أيضاً عدم تلقيه لقاح Hib. الخانوق يبدأ تدريجياً بأعراض زكام مع سعال نباحي وقدرة على البلع، والخراجات تعطي علامات موضعية مختلفة وأبطأ تطوراً.",
+          "xp": 10
+        },
+        {
+          "id": "step_2",
+          "prompt": "What is the best immediate next step in the management of this child?",
+          "options": [
+            "Examine the oropharynx with a tongue depressor to visualize the epiglottis",
+            "Obtain an urgent lateral neck radiograph in the radiology department",
+            "Call an experienced pediatric anesthesiologist or otolaryngologist immediately for airway assessment",
+            "Obtain a throat swab for culture before starting any treatment"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "الخطوة التالية الأفضل وفق المحاضرة هي طلب المساعدة الفورية لطبيب تخدير أطفال أو أخصائي أنف وأذن وحنجرة لتأمين المجرى الهوائي في بيئة مضبوطة. الفحص بمعصرة اللسان ممنوع منعاً باتاً لأنه قد يستثير تشنج المجرى الهوائي والسكتة القلبية التنفسية، والتصوير والفحص البلعومي يجب تجنبهما عند الشك بالتشخيص، ومسحة الحلق تأخير خطير وغير ضروري.",
+          "xp": 15
+        },
+        {
+          "id": "step_3",
+          "prompt": "During airway assessment in the operating theatre, which laryngoscopic finding would be diagnostic?",
+          "options": [
+            "A cherry-red, swollen epiglottis",
+            "Subglottic edema with normal epiglottis",
+            "Vocal cord paralysis",
+            "Bilateral tonsillar exudates"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "رؤية لسان المزمار الكرزية الحمراء المتورمة عبر التنظير الحنجري هي العلامة التشخيصية لالتهاب لسان المزمار وفق المحاضرة. أما الوذمة تحت المزمارية مع لسان مزمار طبيعي فتصادف في الخانوق، وشلل الحبل الصوتي وخراج اللوزتين ليسا من سمات هذه الحالة.",
+          "xp": 10
+        },
+        {
+          "id": "step_4",
+          "prompt": "After the airway is secured, which empirical antibiotic strategy matches the lecture recommendations?",
+          "options": [
+            "Oral amoxicillin alone for 10 days",
+            "An antistaphylococcal drug (oxacillin, cefazolin, or clindamycin) PLUS ceftriaxone or cefotaxime",
+            "Acyclovir monotherapy",
+            "Oseltamivir monotherapy"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "بعد تأمين المجرى الهوائي يجب العلاج الفوري بمضاد حيوي مضاد للعنقوديات (أوكساسيلين أو سيفازولين أو كليندامايسين) مع سيفترياكسون أو سيفوتاكسيم، لأن معظم هؤلاء الأطفال مصابون بتجرثم دم. وعند ارتفاع انتشار MRSA في المجتمع يستخدم كثيرون الفانكومايسين كخيار مضاد للعنقوديات. الأسيكلوفير يخص الحلأ والأوسلتاميفير يخص الإنفلونزا، وكليهما غير مناسب هنا.",
+          "xp": 12
+        },
+        {
+          "id": "step_5",
+          "prompt": "The child stabilizes after intubation and antibiotics. Where should he be admitted?",
+          "options": [
+            "General pediatric ward with routine observation",
+            "Day-care unit for planned discharge in the morning",
+            "A closely monitored hospital unit (e.g. ICU)",
+            "Home on oral antibiotics with follow-up in one week"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "المحاضرة تنص على إدخال مرضى التهاب لسان المزمار إلى وحدة مراقبة دقيقة ومشددة، لأن المجرى الهوائي يظل مهدداً بالانسداد حتى مع بدء العلاج، ولأن معظم الأطفال لديهم تجرثم دم يستدعي مراقبة هيموديناميكية وثيقة. القسم العادي أو الإرسال للمنزل لا يوفران مستوى الأمان المطلوب في هذه العدوى المهددة للحياة.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب لسان المزمار الحاد بسبب المستدمية النزلية غير المحفظة (غير النمطية) مع تجرثم دم. الدروس المستفادة: (1) المريض بين 2-5 سنوات غير الملقح الذي يهب فجأة بحمى عالية وألم حلق وسيلان لعاب وصرير هو حالة إسعافية؛ (2) وضعية الثلاثي مع مد الذقن علامة تشخيصية دالة؛ (3) يمنع منعاً باتاً استخدام معصرة اللسان أو الفحص البلعومي أو إطالة التصوير قبل تأمين المجرى الهوائي خوفاً من السكتة القلبية التنفسية؛ (4) لسان المزمار الكرزية الحمراء بالتنظير تشخيصية؛ (5) العلاج = تأمين المجرى الهوائي أولاً ثم مضاد عنقوديات + سيفترياكسون/سيفوتاكسيم (وفانكومايسين عند انتشار MRSA)؛ (6) الإدخال إلى وحدة مراقبة مشددة إلزامي. وتذكر أن نجاح لقاح Hib هو ما جعل هذا المرض نادراً في الدول المتقدمة.",
+      "difficulty": "advanced",
+      "order_index": 1
+    },
+    {
+      "id": "case_strep_pharyngitis_01",
+      "lecture_id": "L4_URTI",
+      "title": "The College Student with a Raw Throat and a Rash",
+      "scenario": "A 19-year-old male university student presents to the campus clinic in late autumn with a 2-day history of severe sore throat and fever. He describes the worst sore throat of his life, with painful swallowing and generalized malaise. Importantly, he denies any runny nose, nasal congestion, sneezing, or conjunctival irritation, and has no cough. His roommate had a similar sore throat last month. This morning he noticed a rough, sandpaper-like red rash appearing on his neck and upper chest.",
+      "vignette": {
+        "age": 19,
+        "sex": "male",
+        "chief_complaint": "Severe sore throat, fever, and a new rough rash on the neck and chest",
+        "history": "Two days of progressively worsening odynophagia, fever up to 38.6 C at home, malaise, and mild abdominal discomfort. No nasal symptoms and no cough. No prior history of asthma or lung disease. Roommate recently treated for a sore throat.",
+        "vitals": {
+          "bp": "118/74 mmHg",
+          "hr": "102 bpm",
+          "rr": "16 /min",
+          "temp": "38.6 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Bilateral tonsillar swelling with marked tenderness on palpation of the pharynx. Enlarged, tender anterior cervical lymph nodes. Diffuse fine erythematous, sandpaper-textured (scarlatiniform) rash over the anterior neck and upper chest, most prominent centrally and fading peripherally. No conjunctivitis. No coryza.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "13.8 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "78%",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "48 mg/L",
+            "flag": "high"
+          },
+          {
+            "name": "Rapid streptococcal antigen test",
+            "value": "Positive for group A Streptococcus",
+            "flag": "high"
+          },
+          {
+            "name": "Monospot (heterophile antibody)",
+            "value": "Negative",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Not indicated: no clinical suspicion of deep neck infection or parenchymal lung disease; chest examination unremarkable."
+      },
+      "steps": [
+        {
+          "id": "step_1",
+          "prompt": "Based on the clinical picture, which etiologic group is most likely?",
+          "options": [
+            "Viral pharyngitis (rhinovirus or adenovirus)",
+            "Group A Streptococcus",
+            "Infectious mononucleosis (Epstein-Barr virus)",
+            "Mycoplasma pneumoniae"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الحالة تجمع سمات العدوى العقدية المذكورة في المحاضرة: تضخم اللوزتين، الإيلام المتوسط إلى الشديد، تضخم العقد اللمفية، الطفح القوبائي، وغياب الزكام، مع اختبار المستضد السريع الموجب. وفق قاعدة المحاضرة: التهاب البلعوم المصحوب بأعراض أنفية فيروسي غالباً، بينما غياب الأعراض الأنفية يفتح احتمال العقدية والمتدثرة والميكوبلازما.",
+          "xp": 10
+        },
+        {
+          "id": "step_2",
+          "prompt": "Which single feature in this patient most strongly argues AGAINST a purely viral etiology?",
+          "options": [
+            "The presence of malaise and low-grade fever",
+            "The scarlatiniform rash with absence of coryza",
+            "The history of a sick roommate",
+            "The age of 19 years"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الطفح القوبائي وغياب الزكام هما أقوى الدلائل على العدوى العقدية، إذ تسرد المحاضرة غياب الزكام ضمن سمات البلعوم العقيدي، وتؤكد أن وجود الأعراض الأنفية أو الملتحمة يرجّح السبب الفيروسي. التوعك والحمى يصادفان في كلتيهما، وسوء صحة رفيق السكن لا يحدد العامل الممرض، والعمر وحده غير مميز.",
+          "xp": 8
+        },
+        {
+          "id": "step_3",
+          "prompt": "Had this patient instead presented with fever, pharyngitis, and bilateral conjunctivitis plus nasal congestion, which agent would be most likely?",
+          "options": [
+            "Adenovirus (pharyngoconjunctival fever)",
+            "Group A Streptococcus",
+            "Herpes simplex virus",
+            "Chlamydia trachomatis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ثلاثي حمى البلعوم والملتحمة — حمى مع التهاب بلعوم مع التهاب ملتحمة ثنائي الجانب — هو التعريف الكلاسيكي لمتلازمة حمى البلعوم والملتحمة الناتجة عن الفيروس الغدي، خاصة مع وجود الأعراض الأنفية المرافقة التي ترجح المسبب الفيروسي عموماً.",
+          "xp": 8
+        },
+        {
+          "id": "step_4",
+          "prompt": "What is the appropriate treatment for this patient's confirmed group A streptococcal pharyngitis?",
+          "options": [
+            "Symptomatic treatment alone, as for the common cold",
+            "Acyclovir therapy",
+            "Antiviral therapy for influenza",
+            "Antimicrobial therapy against group A Streptococcus (e.g. penicillin)"
+          ],
+          "correct_index": 3,
+          "explanation_ar": "تنص المحاضرة على أن علاج عدوى العقدية المجموعة A يتطلب مضاداً حيوياً (مثل البنسلين)، بخلاف الالتهابات الفيروسية التي تعالج عرضياً. الأسيكلوفير يخص البلعوم الحلأي المزمن عند مكتومي المناعة أو التهاب اللثة والفم الأولي، ومضادات الإنفلونزا تخص البلعوم الإنفلونزي المُشخَّص خلال أول يومين من المرض.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب بلعوم عقيدي بالمكورات العقدية من المجموعة A مع طفح قوبائي (حمى القرمز). الدروس المستفادة: (1) أول خطوة في تقويم ألم الحلق هي السؤال عن الأعراض الأنفية — وجودها يرجّح الأسباب الفيروسية (فيروس الأنف، الفيروس الغدي بحمى البلعوم والملتحمة، الإنفلونزا، الحلأ، حمى الغدد) وغيابها يوسع التشخيص التفريقي ليشمل العقدية والمتدثرة والميكوبلازما؛ (2) سمات البلعوم العقيدي: تضخم اللوزتين، الإيلام الشديد، تضخم العقد، الطفح القوبائي، غياب الزكام؛ (3) العلاج يجب أن يكون موجهاً بالمسبب: عرضي للفيروسي، ومضاد حيوي (بنسلين) للعقيدي؛ (4) عدم إعطاء مضادات حيوية لمجرد ألم حلق فيروسي يحفظ سياسات المضادات الحيوية ويمنع مقاومتها.",
+      "difficulty": "core",
+      "order_index": 2
+    }
+  ]
+}

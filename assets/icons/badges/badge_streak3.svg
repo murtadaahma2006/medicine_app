@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- شارة شرارة الثلاثة: لهب بألسنة ثلاث — فضي -->
+  <defs>
+    <linearGradient id="silver3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6ECF2"/>
+      <stop offset="1" stop-color="#A8B6C4"/>
+    </linearGradient>
+  </defs>
+  <path d="M18 6h12l-2.5 7h-7z" fill="#A8B6C4" stroke="#7C8A98" stroke-width="1.2"/>
+  <path d="M24 14.5 34 19v9.5c0 7-4.3 12.5-10 15.5-5.7-3-10-8.5-10-15.5V19z"
+        fill="url(#silver3)" stroke="#7C8A98" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- اللهب بثلاث ألسنة -->
+  <path d="M24 18.5c-1.5 2.5-4 4-4 8 0 3.6 1.8 6 4 6s4-2.4 4-6c0-2.6-1.2-4.3-2.5-6"
+        stroke="#6E7B88" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 27.5c-.8 1.2-1.5 2-1.5 3.5 0 1.6.7 2.5 1.5 2.5s1.5-.9 1.5-2.5c0-1.5-.7-2.3-1.5-3.5"
+        stroke="#8A5232" stroke-width="1.4" stroke-linecap="round" fill="#E8A33D" fill-opacity="0.5"/>
+</svg>

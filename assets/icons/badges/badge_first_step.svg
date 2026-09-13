@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- شارة الخطوة الأولى: قدم تصعد درجة — برونزي -->
+  <defs>
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8B070"/>
+      <stop offset="1" stop-color="#B5744A"/>
+    </linearGradient>
+  </defs>
+  <!-- شريط الرباط العلوي -->
+  <path d="M18 6h12l-2.5 7h-7z" fill="#B5744A" stroke="#8A5232" stroke-width="1.2"/>
+  <!-- الدرع السداسي بحواف دائرية -->
+  <path d="M24 14.5 34 19v9.5c0 7-4.3 12.5-10 15.5-5.7-3-10-8.5-10-15.5V19z"
+        fill="url(#bronze)" stroke="#8A5232" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- الرمز: قدم تصعد درجة -->
+  <path d="M20 30h9m-7-4.5v4.5h4.5v-6" stroke="#5C3018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="20.5" cy="20.5" r="1.4" fill="#5C3018"/>
+</svg>

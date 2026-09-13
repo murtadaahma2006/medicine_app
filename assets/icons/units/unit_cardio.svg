@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- القلبية: قلب تشريحي، جذر الأورطى يتحول لموجة ECG أفقية -->
+  <path d="M24 12.5c-2-3.5-6-5-9.5-3.6C10 10.6 8 15 9.6 19.4c1.6 4.5 6.2 8.2 10.9 11.5 1.2.9 2.8.9 4 0 4.7-3.3 9.3-7 10.9-11.5 1.6-4.4-.4-8.8-4.9-10.5C28 9.4 26 9 24 12.5Z"
+        fill="#1B3C6E" fill-opacity="0.14" stroke="#1B3C6E" stroke-width="1.8"/>
+  <!-- شريا الأورطى يصعد ويلتوي ثم ينزل كموجة -->
+  <path d="M21.5 11.5c1-2.8 3.6-4.3 6.3-3.6 2.5.7 3.8 3 3.4 5.4"
+        stroke="#1B3C6E" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- موجة ECG تخترق القلب أفقياً — بلون التخصص -->
+  <path d="M8 24.5h6.5l2.5-4.5 3.5 8 2.5-4.5h4l2-3 3 6 2-3h6"
+        stroke="#E14B4B" stroke-width="2.2" stroke-linecap="round"
+        stroke-linejoin="round" fill="none"/>
+</svg>

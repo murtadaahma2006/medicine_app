@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- تميمة «العقل المرتاح»: دماغ ودود نائم يحتضن بطاقاته كوسادة -->
+  <defs>
+    <linearGradient id="bgSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B3C6E" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#1B3C6E" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="62" r="46" fill="url(#bgSoft)"/>
+
+  <!-- بطاقات SRS كوسادة تحت الدماغ -->
+  <rect x="34" y="72" width="52" height="30" rx="6" fill="#FFFFFF"
+        stroke="#1B3C6E" stroke-width="2" opacity="0.9"/>
+  <rect x="38" y="67" width="52" height="30" rx="6" fill="#E9F0FA"
+        stroke="#1B3C6E" stroke-width="2"/>
+  <path d="M46 76h24M46 82h16" stroke="#9AA7B8" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- الدماغ النائم — نصفي دماغ بعينين مغمضتين مبتسمتين -->
+  <path d="M52 38c-2-3-5.5-4.7-9-4.2-2.8.4-5 2.2-6 4.6-3.6.3-6.4 3.4-6.3 7 .1 1.5.5 2.9 1.3 4.1-1.9 1.6-2.9 4-2.4 6.5.5 2.9 2.8 5.1 5.6 5.7.3 3.6 3.4 6.4 7 6.4 1.3 0 2.5-.3 3.6-.9"
+        stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+        fill="#E9F0FA"/>
+  <path d="M68 38c2-3 5.5-4.7 9-4.2 2.8.4 5 2.2 6 4.6 3.6.3 6.4 3.4 6.3 7-.1 1.5-.5 2.9-1.3 4.1 1.9 1.6 2.9 4 2.4 6.5-.5 2.9-2.8 5.1-5.6 5.7-.3 3.6-3.4 6.4-7 6.4-1.3 0-2.5-.3-3.6-.9"
+        stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"
+        fill="#E9F0FA"/>
+  <path d="M60 38v27" stroke="#1B3C6E" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- عينان مغمضتان سعيدتان + وجنتان -->
+  <path d="M47 50c1.5 1.8 4 1.8 5.5 0M67.5 50c1.5 1.8 4 1.8 5.5 0"
+        stroke="#1B3C6E" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="45" cy="57" r="3" fill="#E8A33D" opacity="0.45"/>
+  <circle cx="75" cy="57" r="3" fill="#E8A33D" opacity="0.45"/>
+
+  <!-- ابتسامة راضية صغيرة -->
+  <path d="M57.5 58.5c1.6 1.4 3.4 1.4 5 0" stroke="#1B3C6E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Zzz — جزيئات النوم الطائرة -->
+  <path d="M92 30h7l-7 7h7" stroke="#9AA7B8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 18h5l-5 5h5" stroke="#9AA7B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <path d="M89 16h4l-4 4h4" stroke="#9AA7B8" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+
+  <!-- نجمة صغيرة تلمع فوق (حلم النقاط) -->
+  <path d="M27 32l1 2.3 2.5.3-1.9 1.7.5 2.5-2.1-1.2-2.1 1.2.5-2.5-1.9-1.7 2.5-.3z"
+        fill="#E8A33D" opacity="0.85"/>
+</svg>
