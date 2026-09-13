@@ -43,6 +43,3 @@ workflows:
       # الحزم الجاهزة للتحميل من لوحة Codemagic.
       - build/ios/ipa/*.ipa
       - build/ios/archive/*.xcarchive
-    publishing:
-      # تعطيل النشر — الاستخدام شخصي عبر التحميل اليدوي.
-      email: {}
