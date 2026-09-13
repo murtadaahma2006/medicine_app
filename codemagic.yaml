@@ -35,11 +35,18 @@ workflows:
       - *test
       - name: Build unsigned IPA
         script: |
-          # بناء iOS بلا توقيع — التوقيع يتم لاحقاً على جهاز المستخدم.
-          flutter build ipa --release \
-            --no-codesign \
-            --export-options-plist=ios/codemagic/ExportOptions.plist
+          # بناء iOS بلا توقيع
+          flutter build ios --release --no-codesign
+          
+          # إنشاء مجلد Payload المطلوب لتحويل التطبيق إلى صيغة ipa
+          mkdir -p build/ios/ipa/Payload
+          
+          # نقل التطبيق إلى مجلد Payload
+          mv build/ios/iphoneos/Runner.app build/ios/ipa/Payload/
+          
+          # الدخول للمجلد وضغطه بصيغة ipa
+          cd build/ios/ipa
+          zip -r medicine_app.ipa Payload
     artifacts:
       # الحزم الجاهزة للتحميل من لوحة Codemagic.
       - build/ios/ipa/*.ipa
-      - build/ios/archive/*.xcarchive
