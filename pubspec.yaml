@@ -48,7 +48,6 @@ flutter:
     - assets/icons/units/
     - assets/icons/badges/
     - assets/icons/empty/
-    - assets/illustrations/units/
     - assets/illustrations/onboarding/
     - assets/illustrations/empty/
     - assets/illustrations/badges/
