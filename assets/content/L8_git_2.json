@@ -1,0 +1,1604 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L8_git_2",
+    "specialty": "internal_medicine",
+    "title": "The Liver: Bilirubin Metabolism, Liver Function Tests and Types of Jaundice",
+    "module": "gastroenterology",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L8 Medicine _GIT_ 2.pdf",
+      "page_count": 33
+    },
+    "tags": [
+      "liver",
+      "bilirubin metabolism",
+      "jaundice",
+      "hyperbilirubinemia",
+      "liver function tests",
+      "Gilbert syndrome",
+      "Crigler-Najjar syndrome",
+      "cholestasis",
+      "obstructive jaundice",
+      "hemolysis"
+    ],
+    "order_index": 7,
+    "golden_tip": [
+      "EXAM TRAP: unconjugated bilirubin is albumin-bound and never appears in the urine. Dark tea-coloured urine = CONJUGATED bilirubin; mild lemon-yellow jaundice with completely normal urine and stool = pre-hepatic (haemolytic or Gilbert) jaundice.",
+      "ALT >1000 U/L with acute jaundice points to a viral (hepatitis A or B), drug (paracetamol) or hepatic ischaemic cause - NOT biliary obstruction, which raises ALP and GGT instead.",
+      "Painless progressive jaundice with a palpable non-tender gallbladder in an elderly patient = malignant obstruction BELOW the cystic duct (usually pancreatic head carcinoma). Jaundice plus a palpable gallbladder without pain is not stones."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L8_git_2_c1",
+      "lecture_id": "L8_git_2",
+      "title": "Lecture Map and the Three Opening Clinical Questions",
+      "summary_ar": "تفتتح محاضرة الكبد الثانية (أيض البيليروبين وأنواع اليرقان) بثلاثة أسئلة سريرية تمثل خريطة التعلم: يرقان متكرر ذاتي الشفاء عند شاب سليم (متلازمة جيلبرت)، ويرقان انحلالي حاد بعد دواء TMP-SMX عند شاب مع فقر دم وشبكيات مرتفعة، وشاب يرقان حاد بعد بادئة حموية معوية نميز فيه التهاب الكبد الفيروسي A عن اليرقان الركودي سريرياً ومخبرياً.",
+      "sections": [
+        {
+          "heading": "Lecture Title, Presenter and Roadmap",
+          "body_text": "The lecture is titled **THE LIVER - Bilirubin metabolism, types of jaundice**, delivered by Dr. Muntadher Abdulkareem Abdullah (M.B.Ch.B, CABM, FIBMS, FIBMS in Gastroenterology and Hepatology).\n\nThe lecture is organised in the following logical sequence:\n- **Functional anatomy and physiology of the liver** - gross anatomy, segments, lobule/acinus microanatomy, blood supply and dual perfusion.\n- **Functions of the liver** - digestive, metabolic, synthetic, storage and reticuloendothelial functions.\n- **Bilirubin metabolism and bile** - production, conjugation, excretion and enterohepatic circulation.\n- **Investigations for liver disease** - the liver function tests (LFTs), fibrosis assessment, imaging and biopsy.\n- **Jaundice** - definition, thresholds, and the three types: **pre-hepatic, hepatocellular (hepatic) and obstructive (cholestatic/post-hepatic)**, including the congenital hyperbilirubinaemias.\n- **Key history points in the jaundiced patient** - the practical clinical approach.\n\nThe lecture deliberately opens with three patient scenarios (next sections). These questions are answered progressively by the lecture content, and revisiting them at the end of study is the best self-test of mastery.",
+          "key_points": [
+            "Lecture = the liver: bilirubin metabolism, investigations of liver disease, and types of jaundice.",
+            "Three opening clinical questions: Gilbert-type recurrent jaundice, drug-induced haemolytic jaundice, and acute viral hepatitis A vs cholestatic jaundice.",
+            "Master framework of jaundice: pre-hepatic | hepatocellular | obstructive (post-hepatic)."
+          ]
+        },
+        {
+          "heading": "Question 1 - Recurrent Self-Resolving Jaundice Since Childhood (22-Year-Old Male)",
+          "body_text": "**Stem:** A 22-year-old male patient with a history of **recurrent self-resolving jaundice since childhood** presents with jaundice **at the end of a heavy-duty day**; otherwise the patient is healthy with non-significant other findings.\n\n**Investigations:** **TSB = 2.9 mg/dL**, **direct bilirubin = 0.4 mg/dL**, other investigations normal.\n\n**Answer analysis (unlocked by pages 20-23 of this lecture):**\n- **Type of jaundice:** predominantly **UNCONJUGATED (indirect) hyperbilirubinaemia** - indirect fraction = 2.9 - 0.4 = **2.5 mg/dL (about 86% of total)**; an isolated raised bilirubin with normal other LFTs = **pre-hepatic pattern**.\n- **Most likely etiology:** **Gilbert's syndrome** - recurrent, mild, self-resolving jaundice since childhood in an otherwise healthy adult, precipitated at the end of a heavy-duty day (fasting, dehydration, exhaustion). Gilbert's is due to reduction in transcription of the UGT1A1 gene (decreased UDP-glucuronyl transferase activity); bilirubin rises 2- to 3-fold with fasting or dehydration but generally stays **below 4 mg/dL**.\n- **How to prevent other episodes:** avoid the precipitants - **avoid prolonged fasting and dehydration** (maintain hydration and regular meals during hard working days).",
+          "key_points": [
+            "TSB 2.9 mg/dL with direct 0.4 mg/dL = isolated predominantly unconjugated hyperbilirubinaemia.",
+            "Recurrent self-resolving jaundice since childhood + healthy adult + trigger (fasting/dehydration/exhaustion) = Gilbert's syndrome.",
+            "Prevention of further episodes = avoid fasting and dehydration; bilirubin in Gilbert's generally stays below 4 mg/dL."
+          ],
+          "check": {
+            "prompt": "In Question 1, what does TSB 2.9 mg/dL with direct bilirubin 0.4 mg/dL represent?",
+            "options": [
+              "Predominantly unconjugated (indirect) hyperbilirubinaemia",
+              "Predominantly conjugated (direct) hyperbilirubinaemia",
+              "Mixed hepatocellular pattern with high transaminases",
+              "Normal bilirubin fractionation",
+              "Bilirubinuria with absent stool stercobilinogen"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "غير المقترن = الكلي 2.9 ناقص المباشر 0.4 = 2.5 ملغ/دل أي حوالي 86% من البيليروبين، فهو يرقان غير مقترن معزول مع فحوص أخرى طبيعية وهذا نمط ما قبل الكبد (جيلبرت أو انحلال)."
+          }
+        },
+        {
+          "heading": "Question 2 - Yellow Sclera After Trimethoprim-Sulfamethoxazole (20-Year-Old Male)",
+          "body_text": "**Stem:** A 20-year-old male with a history of **UTI treated with trimethoprim-sulfamethoxazole**; during the last two days he noticed that his **sclera turned yellow**.\n\n**Investigations:** **TSB = 6 mg/dL**, **direct bilirubin = 0.6 mg/dL**; CBC shows **Hb = 6 g/dL**, **corrected reticulocyte count = 6%**.\n\n**Answer analysis (unlocked by page 20 of this lecture):**\n- **Type of jaundice:** again predominantly **unconjugated** (indirect = 6 - 0.6 = **5.4 mg/dL**), but here it is NOT isolated: there is severe anaemia (Hb 6 g/dL) with a **corrected reticulocyte count of 6%** (high; normal roughly 0.5-2.5%), i.e. a regenerative anaemia. This is **pre-hepatic HAEMOLYTIC jaundice**.\n- **Etiology of the jaundice:** **drug-induced haemolysis** caused by the oxidant sulfa drug trimethoprim-sulfamethoxazole (classically in G6PD-deficient patients) - destruction of red cells (and/or their marrow precursors) floods the system with increased bilirubin production.\n- **Expected bedside picture:** mild jaundice with lemon-yellow tinge, pallor, fatigue, tachycardia; **urine colour normal and stool colour normal** (unconjugated bilirubin does not pass into the urine).",
+          "key_points": [
+            "Direct 0.6 of TSB 6 mg/dL = predominantly unconjugated hyperbilirubinaemia.",
+            "Hb 6 g/dL + corrected reticulocytes 6% = regenerative anaemia = haemolysis.",
+            "TMP-SMX (oxidant sulfa drug) is the culprit - drug-induced haemolytic (pre-hepatic) jaundice, classically in G6PD deficiency."
+          ]
+        },
+        {
+          "heading": "Question 3 - Acute Viral Hepatitis A vs Cholestatic Jaundice (18-Year-Old Male)",
+          "body_text": "**Stem:** An 18-year-old male presents with a **one-day history of jaundice preceded by fever, nausea and repeated vomiting**.\n\n**If the cause of the jaundice is acute viral hepatitis A (hepatocellular pattern):**\n- **Other signs and symptoms the patient may have:** the prodrome of fever, nausea, repeated vomiting, anorexia, malaise and fatigue; then overt jaundice with scleral icterus, **dark/tea-coloured urine**, right-upper-quadrant discomfort with **tender hepatomegaly**.\n- **The LFTs most likely:** markedly elevated **transaminases (AST, ALT)** - the ALT commonly **above 1000 U/L** in infectious hepatitis - with a raised bilirubin of mixed (conjugated + unconjugated) type and only mild elevation of the cholestatic enzymes (ALP, GGT). Urine is dark (conjugated fraction) while **stool keeps its normal colour**.\n\n**If the patient instead has the cholestatic type of jaundice:**\n- **Signs and symptoms:** prominent **pruritus** (itching, may precede the jaundice), deep jaundice, **dark urine with PALE stools**; fever with rigors would suggest superimposed **cholangitis** if a duct is obstructed.\n- **LFTs:** cholestatic enzymes dominate - **high ALP and GGT** - with conjugated hyperbilirubinaemia and transaminases only modestly raised (far below the 1000 U/L league).\n\nThis single comparison - transaminase-dominant vs cholestatic-enzyme-dominant - is the high-yield discriminator between hepatocellular and cholestatic jaundice.",
+          "key_points": [
+            "Acute viral hepatitis A: prodrome (fever, nausea, vomiting) + tender hepatomegaly + tea urine + normal stool colour.",
+            "Hepatitis A LFTs: AST/ALT very high (often ALT >1000 U/L), mixed bilirubin fractions, mild ALP/GGT.",
+            "Cholestatic jaundice: pruritus + dark urine + pale stools + ALP/GGT-dominant LFTs with modest transaminases."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Jaundice",
+          "definition_ar": "اليرقان: اصفرار الجلد والملتحمة والأغشية المخاطية بسبب الترسب النسيجي الواسع للبيليروبين."
+        },
+        {
+          "term": "TSB (total serum bilirubin)",
+          "definition_ar": "بيليروبين المصل الكلي: مجموع المقترن وغير المقترن، والمستوى الطبيعي أقل من 1 إلى 1.5 ملغ/دل."
+        },
+        {
+          "term": "Direct bilirubin",
+          "definition_ar": "البيليروبين المباشر (المقترن): ذوّاب في الماء ويرتفع في أمراض الكبد والركود الصفراوي ويظهر في البول."
+        },
+        {
+          "term": "Corrected reticulocyte count",
+          "definition_ar": "العدلة الشبكية المصححة: مؤشر تجدد كريات الدم الحمراء، ترتفع في الانحلال (الطبيعي التقريبي 0.5-2.5%)."
+        },
+        {
+          "term": "Prodrome",
+          "definition_ar": "المرحلة البادرية: أعراض عامة (حمى، غثيان، إقياء) تسبق ظهور اليرقان في التهاب الكبد الحاد."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L8_git_2_c2",
+      "lecture_id": "L8_git_2",
+      "title": "Functional Anatomy and Physiology of the Liver",
+      "summary_ar": "يزن الكبد 1.2-1.5 كغ ويقسم تقليدياً إلى فصين أيمن وأيسر بالرباط المنجلي، أما التقسيم الوظيفي فإلى نصفي كبد حسب التروية الدموية، وينقسم كل نصف إلى ثمانية قطاعات حسب تقسيمات الأوردة الكبدية والبابية، ولكل قطاع فرع شرياني كعبي وقناة صفراوية خاصة. الوحدة البنيوية هي الفصيص الكبدي (وريد مركزي، جيوبانيات مشعة، صفائح كبدية أحادية الخلية، ساحات بابية محيطية) بينما الوحدة الوظيفية هي الكينوس الكبدي بمناطقه الثلاثة. التروية مزدوجة: أغلبها من الوريد البابي (دم مغذٍ من المعي عبر الدوران الحشوي) وأقلها من الشريان الكبدي، والتصريف عبر الأوردة الكبدية إلى الأجوف السفلي.",
+      "sections": [
+        {
+          "heading": "Gross Anatomy - Weight, Lobes and the Eight Functional Segments",
+          "body_text": "- The liver **weighs 1.2-1.5 kg**.\n- **Classical division:** into **left and right lobes** by the **falciform ligament**.\n- **The useful functional division:** into the **right and left hemilivers**, based on **blood supply**.\n- These are further divided into **eight segments** according to subdivisions of the **hepatic and portal veins** (the Couinaud segmentation shown in the lecture diagram, which maps segments I-VIII against the inferior vena cava; red line = portal vein, blue line = hepatic vein).\n- **Each segment has its own branch of the hepatic artery and its own branch of the biliary tree** - each segment is anatomically autonomous (the basis of modern segmental liver resection).\n\n**Summary line:** falciform ligament divides LOBES (anatomical) | blood supply defines HEMILIVERS (functional) | hepatic + portal vein subdivisions define the 8 SEGMENTS.",
+          "key_points": [
+            "Liver weight 1.2-1.5 kg.",
+            "Anatomical lobes (falciform ligament) vs functional hemilivers (blood supply).",
+            "Eight segments by hepatic/portal vein subdivisions; each has its own arterial branch and biliary branch."
+          ]
+        },
+        {
+          "heading": "The Biliary Tree - From the Hepatic Ducts to the Papilla of Vater",
+          "body_text": "From the lecture anatomy diagram:\n- **Right hepatic duct** and **left hepatic duct** drain the two hemilivers.\n- Their union forms the **common hepatic duct**.\n- The **cystic duct** connects the **gallbladder** to the biliary tree.\n- Union of the **common hepatic duct + cystic duct** forms the **common bile duct (CBD)**.\n- The CBD runs alongside the **pancreas**, is joined by the **pancreatic duct**, and empties into the **duodenum** through the **sphincter of Oddi**.\n\n**Bile therefore flows:** hepatocyte **bile canaliculi** → interlobular bile ducts (in the portal tracts) → right/left hepatic ducts → common hepatic duct → (± gallbladder via the cystic duct) → common bile duct → **duodenum**.\n\n**Clinical link:** obstruction of this extrahepatic route anywhere **between the porta hepatis and the papilla of Vater** produces post-hepatic (obstructive/cholestatic) jaundice - one of the three mechanisms listed under cholestatic jaundice in this lecture.",
+          "key_points": [
+            "Right + left hepatic ducts → common hepatic duct; + cystic duct (from gallbladder) → common bile duct.",
+            "CBD + pancreatic duct empty into the duodenum through the sphincter of Oddi.",
+            "Obstruction between porta hepatis and papilla of Vater = post-hepatic cholestatic jaundice."
+          ]
+        },
+        {
+          "heading": "Microanatomy - The Hepatic Lobule, Portal Tract and Sinusoids",
+          "body_text": "- A liver **segment** is made up of multiple smaller units known as **lobules**.\n- Each **lobule** comprises: a **central vein**, **radiating sinusoids** separated from each other by **single liver-cell (hepatocyte) plates**, and **peripheral portal tracts**.\n- The **portal triad** at the corners of the hexagonal lobule contains: **portal vein + hepatic artery + bile duct**.\n- The histology diagram of the lecture labels: **bile duct, bile canal (canaliculi), Kupffer cells** (specialized macrophages within the sinusoids), **hepatic cells (hepatocytes), branch of the hepatic portal vein, branch of the hepatic artery, hepatic sinusoids**, and the **central canal/central vein** (blood flow out of the lobule).\n- **Blood enters at the portal tracts, percolates through the sinusoids, and drains to the central vein; bile flows in the OPPOSITE direction** - from hepatocytes into the canaliculi, then to the bile ducts in the portal tracts.\n- **The functional unit of the liver is the hepatic acinus** (not the lobule).",
+          "key_points": [
+            "Lobule = central vein + radiating sinusoids + single hepatocyte plates + peripheral portal tracts.",
+            "Portal triad = portal vein + hepatic artery + bile duct; Kupffer cells line the sinusoids.",
+            "The FUNCTIONAL unit of the liver is the hepatic acinus."
+          ]
+        },
+        {
+          "heading": "The Hepatic Acinus and Metabolic Zonation (Rappaport)",
+          "body_text": "Structural components of the acinus shown in the diagram: **portal vein, hepatic artery, bile duct, cholangiole, central vein**.\n\n- **Blood flow:** from the terminal portal branches (periportal end) **toward the central vein**.\n- **Bile flow:** in the **opposite direction** (hepatocytes → cholangiole → bile duct).\n\n**Metabolic zones of the acinus (as labelled in the lecture diagram):**\n- **Zone 1 - periportal (best O2 supply): gluconeogenesis; bile salt formation.**\n- **Zone 2 - intermediate zone: mono-oxygenation; glycolysis; lipolysis; glucuronidation.**\n- **Zone 3 - pericentral (around the central vein): the zone farthest from the oxygen supply.**\n\nZone numbering runs from the portal end (zone 1) to the central end (zone 3) of the acinus - relevant because bilirubin glucuronidation (zone 2 activity) and the zonal oxygen gradient explain the metabolic diversity of hepatocytes.",
+          "key_points": [
+            "Acinus components: portal vein, hepatic artery, bile duct, cholangiole, central vein.",
+            "Blood: portal → central; bile: central → portal (opposite directions).",
+            "Zone 1 (periportal, best O2): gluconeogenesis + bile salt formation; Zone 2: mono-oxygenation, glycolysis, lipolysis, glucuronidation; Zone 3: pericentral."
+          ]
+        },
+        {
+          "heading": "Blood Supply and Dual Perfusion",
+          "body_text": "- **Blood flow pathway (lecture text):** on entering the **porta hepatis**, the **portal vein and the hepatic artery** give **interlobular branches (in the portal canals)** → **the sinusoids** → **the central vein** → **the hepatic veins** → **the inferior vena cava**.\n- **Dual perfusion:**\n  - **A majority of the supply is via the PORTAL VEIN**, which drains blood from the gut via the **splanchnic circulation** and is the **principal route for nutrient trafficking to the liver**.\n  - **A minority comes from the HEPATIC ARTERY** (oxygen-rich blood from the systemic circulation).\n- **Venous drainage:** by the **hepatic veins** into the **inferior vena cava**.\n- The lecture overview diagram summarises: **hepatic artery = oxygen-rich blood from the body to the liver | hepatic portal vein = nutrient-rich blood from the gastrointestinal tract to the liver | hepatic vein = oxygen-poor blood from the liver back to the body | bile duct = bile from the liver to the duodenum**.",
+          "key_points": [
+            "Porta hepatis → interlobular branches → sinusoids → central vein → hepatic veins → IVC.",
+            "Majority of hepatic blood flow = portal vein (nutrient-rich, splanchnic); minority = hepatic artery.",
+            "Venous drainage via hepatic veins into the IVC."
+          ],
+          "check": {
+            "prompt": "Starting at the porta hepatis, what is the correct order of hepatic blood flow?",
+            "options": [
+              "Portal vein and hepatic artery → interlobular branches (portal canals) → sinusoids → central vein → hepatic veins → IVC",
+              "Sinusoids → portal vein → central vein → hepatic artery",
+              "Central vein → sinusoids → portal vein → IVC",
+              "Hepatic artery → hepatic veins → sinusoids → central vein",
+              "Portal vein → hepatic veins → sinusoids → central vein"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "هذا هو مسار الدم الكبدي الصحيح: بعد سرة الكبد تتفرع الوريد البابي والشريان الكبدي إلى فروع بين فصيصية في القنوات البابية ثم الجيوبانيات ثم الوريد المركزي فالأوردة الكبدية فالأجوف السفلي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Falciform ligament",
+          "definition_ar": "الرباط المنجلي: يفصل الفص الكبدي الأيمن عن الأيسر تقليدياً."
+        },
+        {
+          "term": "Hemiliver",
+          "definition_ar": "نصف الكبد: تقسيم وظيفي يميني ويساري حسب التروية الدموية."
+        },
+        {
+          "term": "Hepatic segment (Couinaud)",
+          "definition_ar": "القطاع الكبدي: واحد من ثمانية قطاعات حسب تقسيمات الأوردة الكبدية والبابية، له فرع شرياني وقناة صفراوية خاصة."
+        },
+        {
+          "term": "Hepatic lobule",
+          "definition_ar": "الفصيص الكبدي: وحدة بنيوية تضم وريداً مركزياً وجيوبانيات مشعة وصفائح خلايا كبدية أحادية وساحات بابية محيطية."
+        },
+        {
+          "term": "Portal triad",
+          "definition_ar": "الثلاثي البابي: الوريد البابي والشريان الكبدي والقناة الصفراوية في الساحة البابية."
+        },
+        {
+          "term": "Hepatic acinus",
+          "definition_ar": "الكينوس الكبدي: الوحدة الوظيفية للكبد بين فرع بابي طرفي ووريد مركزي."
+        },
+        {
+          "term": "Kupffer cells",
+          "definition_ar": "خلايا كوبفر: بلعميات متخصصة في الجيوبانيات تزيل الكريات الحمراء العجوزة."
+        },
+        {
+          "term": "Porta hepatis",
+          "definition_ar": "سرة الكبد: مدخل الأوعية والقنوات إلى الكبد."
+        },
+        {
+          "term": "Sphincter of Oddi",
+          "definition_ar": "معصرة أودي: معصرة عند مصب القناة الجامعة والقناة البنكرياسية في العفج."
+        },
+        {
+          "term": "Splanchnic circulation",
+          "definition_ar": "الدوران الحشوي: دوران دم أعضاء الجهاز الهضمي الذي يصب في الوريد البابي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L8_git_2_c3",
+      "lecture_id": "L8_git_2",
+      "title": "Functions of the Liver",
+      "summary_ar": "وظائف الكبد كما في المحاضرة: إنتاج الصفراء وهي وظيفته الهضمية الرئيسية (مادة معقدة تلزم للمحاكاة والتحلل المائي وامتصاص الدهون في العفج)، واجهة رئيسية بين الجهاز الهضمي والدم حيث تتم معالجة المغذيات الممتصة، تصنيع وإفراز البروتينات البلازمية الكبرى (الألبومين والفيبرينوجين وصابورات البروتين الشحمي والترانسفيرين)، استحداث السكر من الحموض الأمينية، إزالة السمية واقتران السموم والأدوية، نزع أمين الحموض الأمينية وإنتاج اليوريا الذي تطرحه الكلى، تخزين الغلوكوز كغليكوجين والشحوم الثلاثية كقطيرات دهنية، تخزين فيتامين A في الخلايا النجمية الكبدية، إزالة الكريات الحمراء العجوزة بخلايا كوبفر، وتخزين الحديد مرتبطاً بالفيريتين.",
+      "sections": [
+        {
+          "heading": "Digestive, Metabolic, Synthetic and Detoxifying Functions",
+          "body_text": "- **Production of bile:** this is the **main digestive function of the liver**. Bile is a **complex substance required for the emulsification, hydrolysis and uptake of fats in the duodenum**.\n- **Interface between digestion and blood:** the liver is the major interface between the digestive system and the blood - the organ in which **nutrients absorbed in the small intestine are processed before distribution throughout the body**.\n- **Synthesis and endocrine secretion into the blood of the major plasma proteins:** **albumins, fibrinogen, apolipoproteins, transferrin and many others**.\n- **Conversion of amino acids into glucose (gluconeogenesis).**\n- **Breakdown (detoxification) and conjugation of ingested toxins, including many drugs.**\n- **Amino acid deamination**, producing **urea**, which is removed from the blood in the **kidneys**.\n\nThese functions are exactly what the LFTs probe in the Investigations concept: the synthetic tests (albumin, prothrombin time) test the protein-synthetic machinery listed here.",
+          "key_points": [
+            "Bile production = the main digestive function of the liver (emulsification/hydrolysis/uptake of fats in the duodenum).",
+            "Plasma proteins synthesised by the liver: albumins, fibrinogen, apolipoproteins, transferrin and many others.",
+            "Gluconeogenesis from amino acids; deamination → urea (excreted by kidneys); detoxification/conjugation of toxins and drugs."
+          ]
+        },
+        {
+          "heading": "Storage Functions and the Reticuloendothelial Role",
+          "body_text": "- **Storage of glucose** in **glycogen granules**, and of **triglycerides** in small **lipid droplets**.\n- **Storage of vitamin A (in hepatic stellate cells)** and of the **other fat-soluble vitamins**.\n- **Removal of effete (aged) erythrocytes** by specialized macrophages - the **Kupffer cells**.\n- **Storage of iron** in complexes with the protein **ferritin**.\n\n**Exam-ready function map:**\n- Digestive: bile production\n- Metabolic: gluconeogenesis, deamination → urea, detoxification + conjugation of drugs\n- Synthetic: albumin, fibrinogen, apolipoproteins, transferrin (and all clotting factors except VIII)\n- Storage: glycogen, triglycerides, vitamin A + fat-soluble vitamins, iron (ferritin)\n- Reticuloendothelial: Kupffer-cell clearance of effete red cells",
+          "key_points": [
+            "Glycogen granules store glucose; triglycerides stored in small lipid droplets.",
+            "Vitamin A is stored in hepatic STELLATE cells; iron is stored complexed with ferritin.",
+            "Kupffer cells (specialized macrophages) remove effete erythrocytes."
+          ],
+          "check": {
+            "prompt": "In which liver cell type is vitamin A stored?",
+            "options": [
+              "Hepatic stellate cells",
+              "Kupffer cells",
+              "Hepatocytes",
+              "Sinusoidal endothelial cells",
+              "Cholangiocytes"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يخزن الكبد فيتامين A في الخلايا النجمية الكبدية Hepatic stellate cells، بينما خلايا كوبفر هي بلعميات تزيل الكريات الحمراء العجوزة، لذا الجواب الصحيح هو الخلايا النجمية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Bile",
+          "definition_ar": "الصفراء: مادة معقدة ينتجها الكبد تلزم لمحاكاة الدهون وتحللها المائي وامتصاصها في العفج."
+        },
+        {
+          "term": "Gluconeogenesis",
+          "definition_ar": "استحداث السكر: تصنيع الغلوكوز من الحموض الأمينية في الكبد."
+        },
+        {
+          "term": "Amino acid deamination",
+          "definition_ar": "نزع أمين الحموض الأمينية: عملية كبدية تنتج اليوريا التي تطرحها الكلى."
+        },
+        {
+          "term": "Hepatic stellate cell",
+          "definition_ar": "الخلية النجمية الكبدية: خلية خازنة لفيتامين A في الكبد."
+        },
+        {
+          "term": "Kupffer cell",
+          "definition_ar": "خلية كوبفر: بلعم متخصص في الجيوبانيات الكبدية يزيل الكريات الحمراء العجوزة."
+        },
+        {
+          "term": "Ferritin",
+          "definition_ar": "الفيريتين: بروتين يرتبط به الحديد ويخزن في الكبد."
+        },
+        {
+          "term": "Transferrin",
+          "definition_ar": "الترانسفيرين: بروتين بلازمي ناقل للحديد يصنعه الكبد."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L8_git_2_c4",
+      "lecture_id": "L8_git_2",
+      "title": "Bilirubin Metabolism and Bile",
+      "summary_ar": "البيليروبين ناتج تفكك الهيم (فيروبروتوبورفيرين IX): ينتج نحو 4 ملغ/كغ يومياً، 80% تقريباً من تفكك خضاب الدم في الكريات الحمراء الهرمة والسلف المنتهية في نقي العظم والباقي من دوران البروتينات الهيمية كالميوغلوبين والسيتوكرومات. تبدأ الخطوات في الجهاز الشبكي البطاني وخاصة الطحال: الهيم ← بيليفيردين بخميرة الهيم أوكسيجيناز ثم ← بيليروبين بخميرة البيليفيردين ريدكتاز. في الدم يكون شبه كله غير مقترن مرتبطاً بالألبومين فلا يمر في البول؛ يلتقطه الكبد ويقترنه في الشبكة الهيولية بخميرة UDP-غلوكورونيل ترانسفيراس إلى مونو وثنائي الغلوكورونيد الذوّاب الذي يفرز بقنوات ناقلة إلى القنيات الصفراوية، وتحوله جراثيم القولون إلى يوروبيلينوجين وستركوبيلينوجين (100-200 ملغ/يوم لكل منهما حسب المخطط) يطرح مع البراج ملوناً إياه بالبني، ويعاد امتصاص 4 ملغ/يوم تطرح في البول كيوروبيلينوجين ثم يوروبيلين. يفرز الكبد 1-2 ليتر صفراء يومياً فيها أملاح صفراوية مشتقة من الكولسترول وفوسفولبيدات وبيليروبين وكولسترول، وقد ترتبط طفرات بروتينات النقل الصفراوية بأمراض صفراوية داخل كبدية ولادية وركود كبد الحمل وتشكل الحصيات.",
+      "sections": [
+        {
+          "heading": "Bilirubin Production - From Heme to Bilirubin",
+          "body_text": "- **Bilirubin is a breakdown product of heme (ferroprotoporphyrin IX).**\n- About **4 mg/kg body weight of bilirubin is produced each day**.\n- **Nearly 80%** comes from the breakdown of **haemoglobin** in **senescent red blood cells** and in **prematurely destroyed erythroid cells in the bone marrow**.\n- The **remainder** comes from the turnover of **haemoproteins such as myoglobin and cytochromes** distributed throughout the body.\n- The **initial steps of bilirubin metabolism occur in reticuloendothelial cells, predominantly in the spleen**.\n- **Enzymatic cascade:**\n  - **Heme → biliverdin** by the **microsomal enzyme heme oxygenase**.\n  - **Biliverdin → bilirubin** by the **cytosolic enzyme biliverdin reductase**.\n\n**One-line pathway:** Heme (from aged RBCs + marrow precursors + haemoproteins) → (spleen/reticuloendothelial) heme oxygenase → biliverdin → biliverdin reductase → UNCONJUGATED bilirubin.",
+          "key_points": [
+            "Bilirubin = breakdown product of heme (ferroprotoporphyrin IX); about 4 mg/kg/day is produced.",
+            "~80% from haemoglobin of senescent RBCs + prematurely destroyed marrow erythroid cells; remainder from myoglobin/cytochrome turnover.",
+            "Heme oxygenase (microsomal): heme → biliverdin; biliverdin reductase (cytosolic): biliverdin → bilirubin; site = reticuloendothelial cells, predominantly spleen."
+          ]
+        },
+        {
+          "heading": "Blood Transport, Hepatic Uptake and Conjugation",
+          "body_text": "- The liver plays a **central role in the metabolism of bilirubin** and is responsible for the production of bile.\n- **In the blood, bilirubin is normally almost all UNCONJUGATED and, because it is not water-soluble, is bound to albumin and does not pass into the urine.**\n- **Unconjugated bilirubin is taken up by hepatocytes at the sinusoidal membrane.**\n- It is then **conjugated in the endoplasmic reticulum by UDP-glucuronyl transferase**, producing **bilirubin mono- and diglucuronide** (conjugated bilirubin).\n- **Impaired conjugation by this enzyme is a cause of the inherited hyperbilirubinaemias** - the biochemical basis of Gilbert's syndrome and Crigler-Najjar syndrome (see the pre-hepatic jaundice concept).",
+          "key_points": [
+            "Unconjugated bilirubin circulates ALBUMIN-BOUND and does not pass into the urine.",
+            "Hepatocyte uptake occurs at the sinusoidal membrane; conjugation occurs in the endoplasmic reticulum.",
+            "UDP-glucuronyl transferase produces bilirubin mono- and diglucuronide; its impairment causes inherited hyperbilirubinaemias."
+          ],
+          "check": {
+            "prompt": "Why can unconjugated bilirubin not pass into the urine?",
+            "options": [
+              "It is tightly albumin-bound and not water-soluble",
+              "It is freely filtered but fully reabsorbed by the tubules",
+              "It is converted to urobilinogen inside plasma",
+              "It is stored inside red blood cells",
+              "It is excreted only in sweat"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "البيليروبين غير المقترن شحيح الذوبان في الماء ومرتبط بالألبومين لذلك لا يرشح في الكبيبة ولا يظهر في البول، بينما المقترن ذوّاب فيُطرح بولياً عند ارتفاعه."
+          }
+        },
+        {
+          "heading": "Canalicular Excretion and the Enterohepatic Circulation - Master Pathway Diagram",
+          "body_text": "- The bilirubin conjugates are **water-soluble** and are **exported into the bile canaliculi by specific carriers on the hepatocyte membranes**.\n- The conjugated bilirubin is **excreted in the bile** and passes into the **duodenal lumen**.\n- Once in the intestine, conjugated bilirubin is **metabolized by colonic bacteria to form stercobilinogen**, which may be **further oxidized to stercobilin**. Both stercobilinogen and stercobilin are then **excreted in the stool, contributing to its brown colour**.\n- **Biliary obstruction results in reduced stercobilinogen in the stool, and the stools become PALE.**\n- A small amount of stercobilinogen (**4 mg/day**) is **absorbed from the bowel**, passes through the liver and is **excreted in the urine, where it is known as urobilinogen or, following further oxidation, urobilin**.\n\n**The lecture pathway diagram converted to text:**\n**Unconjugated bilirubin** (albumin-bound, from heme turnover) → **LIVER** (uptake at sinusoidal membrane + conjugation by UDP-glucuronyl transferase) → **Bilirubin mono- or diglucuronide (conjugated)** → exported via canalicular carriers into **Bile** → **Large intestine** → **colonic bacteria** → splits into two arms:\n- **Urobilinogen (100-200 mg/day; enterohepatic circulation):** reabsorbed into **blood** → part returns to the **liver** (recycled into bile) and part reaches the **kidney** → **urinary urobilinogen (4 mg/day)** → oxidized to **urobilin** (urine pigment).\n- **Stercobilinogen (100-200 mg/day):** oxidized to **stercobilin** → excreted in **stool** (brown pigment).",
+          "key_points": [
+            "Conjugated bilirubin is exported into canaliculi by specific membrane carriers → bile → duodenum.",
+            "Colonic bacteria convert conjugated bilirubin to stercobilinogen (→ stercobilin) - the stool's brown pigment; obstruction = pale stools.",
+            "4 mg/day is reabsorbed and excreted in urine as urobilinogen (→ urobilin); intestinal production of urobilinogen/stercobilinogen is 100-200 mg/day each (diagram values)."
+          ]
+        },
+        {
+          "heading": "Bile - Daily Volume, Composition and Transporter Genetics",
+          "body_text": "- The liver secretes **1-2 L of bile daily**.\n- **Bile contains: bile acids (formed from cholesterol), phospholipids, bilirubin and cholesterol.**\n- Several **biliary transporter proteins** have been identified.\n- **Mutations in genes encoding these proteins** have been identified in:\n  - **Inherited intrahepatic biliary diseases presenting in childhood.**\n  - **Adult-onset disease such as intrahepatic cholestasis of pregnancy and gallstone formation.**\n\nThis links transporter genetics to clinical medicine: a cholestatic picture in pregnancy or a predisposition to gallstones may reflect an inherited transporter defect.",
+          "key_points": [
+            "Bile secretion = 1-2 L/day.",
+            "Bile = bile acids (from cholesterol) + phospholipids + bilirubin + cholesterol.",
+            "Transporter gene mutations → childhood intrahepatic biliary disease, intrahepatic cholestasis of pregnancy, gallstone formation."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Heme oxygenase",
+          "definition_ar": "الهيم أوكسيجيناز: خميرة ميكروسومية تحول الهيم إلى بيليفيردين."
+        },
+        {
+          "term": "Biliverdin reductase",
+          "definition_ar": "البيليفيردين ريدكتاز: خميرة هيولية تحول البيليفيردين إلى بيليروبين."
+        },
+        {
+          "term": "UDP-glucuronyl transferase (UGT1A1)",
+          "definition_ar": "خميرة الاقتران في الشبكة الهيولية للخلايا الكبدية، تحول البيليروبين إلى مونو وثنائي الغلوكورونيد؛ خللها أساس فرط بيليروبين الدم الولادي."
+        },
+        {
+          "term": "Unconjugated (indirect) bilirubin",
+          "definition_ar": "البيليروبين غير المقترن (غير المباشر): شحيح الذوبان مرتبط بالألبومين ولا يظهر في البول."
+        },
+        {
+          "term": "Conjugated (direct) bilirubin",
+          "definition_ar": "البيليروبين المقترن (المباشر): ذوّاب في الماء يفرز في الصفراء ويظهر في البول عند ارتفاعه."
+        },
+        {
+          "term": "Stercobilinogen / stercobilin",
+          "definition_ar": "الستركوبيلينوجين وستركوبيلين: نواتج جراثيم القولون من البيليروبين تطرح في البراز وتكسبه لونه البني."
+        },
+        {
+          "term": "Urobilinogen / urobilin",
+          "definition_ar": "اليوروبيلينوجين واليوروبيلين: الجزء المعاد امتصاصه (4 ملغ/يوم) ويطرح في البول."
+        },
+        {
+          "term": "Enterohepatic circulation",
+          "definition_ar": "الدوران المعوي الكبدي: إعادة امتصاص اليوروبيلينوجين من المعي وعودته إلى الكبد والدم."
+        },
+        {
+          "term": "Bile canaliculus",
+          "definition_ar": "القنية الصفراوية: قناة دقيقة بين الخلايا الكبدية تنقل الصفراء إلى القنوات الصفراوية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L8_git_2_c5",
+      "lecture_id": "L8_git_2",
+      "title": "Investigations for Liver Disease - The Liver Function Tests",
+      "summary_ar": "تحريات أمراض الكبد: تجزئة البيليروبين المصلية؛ الأمينوترانسفيرازات ALT وAST أدق مؤشرات الأذية الخلوية الكبدية الحادة (ALT كانت تدعى SGPT وAST تدعى SGOT)؛ الفوسفاتاز القلوي يرتفع في المرض الكبدي الصفراوي عبر تحفيز تصنيعه وتسربه بوساطة الأملاح الصفراوية ويرتفع أساساً في الركود الانسدادي، ويُستخدم GGT ونوكليوتيداز 5 لتحديد مصدر ارتفاع ALP المعزول لأنهما لا يرتفعان في مرض العظم؛ اختبارات الوظيفة التركيبية: الألبومين (نصف عمره أسبوعان وينخفض في المزمن) وزمن البروثرومبين (كل عوامل التخثر كبدية عدا العامل الثامن من الخلايا البطانية الوعائية)؛ اختبارات التليف: الهيالورونان وFibroTest وFibroScan؛ التصوير: الإيكو والطبقي المحوري والرنين مع MRCP؛ ثم الخزعة الكبدية.",
+      "sections": [
+        {
+          "heading": "Serum Bilirubin Fractionation and the Aminotransferases (ALT, AST)",
+          "body_text": "The investigations for liver diseases listed in the lecture:\n\n- **Serum bilirubin:** with **fractionation of serum bilirubin** into its conjugated (direct) and unconjugated (indirect) fractions - the key test for classifying jaundice into pre-hepatic, hepatocellular and cholestatic patterns.\n- **AMINOTRANSFERASES - the most sensitive markers of acute hepatocellular injury:**\n  - **ALT** (formerly serum glutamic pyruvic transaminase, **SGPT**).\n  - **AST** (formerly serum glutamic oxaloacetic transaminase, **SGOT**).\n\n**Interpretation:** a rise of AST/ALT signals **hepatocellular (parenchymal) injury**; the magnitude matters - an **ALT above 1000 U/L** in acute jaundice points to infectious, drug-induced or ischaemic hepatocellular disease (see the hepatocellular jaundice concept).",
+          "key_points": [
+            "Serum bilirubin with fractionation = the classification tool for jaundice.",
+            "Aminotransferases (ALT/SGPT and AST/SGOT) are the most sensitive markers of acute hepatocellular injury.",
+            "High transaminases = hepatocellular pattern (contrast with cholestatic ALP/GGT pattern)."
+          ]
+        },
+        {
+          "heading": "Alkaline Phosphatase, Gamma-GT and 5'-Nucleotidase",
+          "body_text": "- **ALKALINE PHOSPHATASE (ALP):** hepatobiliary disease leads to **increased serum ALP levels through induced synthesis of the enzyme and leakage into the serum, a process mediated by bile acids**.\n- The ALP increase occurs **mainly in obstructive cholestatic liver diseases**.\n- **5'-nucleotidase and gamma-GT:** the **primary use of these enzyme levels is to identify the source of an isolated elevation in the serum ALP level, as they are NOT elevated in bone disease**.\n\n**Interpretation mini-table:**\n- Isolated raised ALP **+ raised GGT/5'-nucleotidase** → **hepatobiliary (cholestatic) source**.\n- Isolated raised ALP **+ normal GGT/5'-nucleotidase** → **bone source** (the lecture point: these two enzymes stay normal in bone disease, so they localise the ALP to the liver).",
+          "key_points": [
+            "ALP rises in hepatobiliary disease via bile-acid-mediated induced synthesis + leakage; mainly in obstructive cholestatic disease.",
+            "GGT and 5'-nucleotidase identify the hepatic source of an isolated ALP elevation.",
+            "GGT and 5'-nucleotidase are NOT elevated in bone disease."
+          ],
+          "check": {
+            "prompt": "An asymptomatic patient has an isolated raised serum ALP. Which enzyme pair confirms that the ALP is of hepatobiliary origin?",
+            "options": [
+              "Gamma-GT and 5'-nucleotidase",
+              "ALT and AST",
+              "Hyaluronan and ferritin",
+              "Albumin and prothrombin",
+              "Creatine kinase"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "GGT ونوكليوتيداز 5 يرتفعان في المرض الكبدي الصفراوي ولا يرتفعان في مرض العظم، لذا يؤكدان أن الفوسفاتاز القلوي المرتفع مصدره الكبد والطرق الصفراوية وليس العظم."
+          }
+        },
+        {
+          "heading": "Tests of Hepatic Synthetic Function - Albumin and Prothrombin Time",
+          "body_text": "- **Albumin:** **low in chronic liver disease**; its **half-life = 2 weeks**. Because of this long half-life, albumin falls only in established/chronic disease and is not a marker of acute injury - a persistently low albumin implies chronic synthetic failure.\n- **Prothrombin time (PT):** reflects the **clotting factors, all of which are produced in the liver EXCEPT factor VIII, which is produced by vascular endothelial cells**.\n  - A prolonged PT therefore signals impaired hepatic synthesis of clotting factors (a synthetic function test).\n  - Exam pearl: because factor VIII is endothelial, it is the one clotting factor that does not fall in liver failure - remember it when interpreting clotting profiles in cirrhosis versus disseminated intravascular coagulation.",
+          "key_points": [
+            "Albumin: low in chronic liver disease; half-life = 2 weeks (too slow to track acute injury).",
+            "PT tests hepatic synthesis of clotting factors.",
+            "ALL clotting factors are made in the liver EXCEPT factor VIII (vascular endothelial cells)."
+          ]
+        },
+        {
+          "heading": "Tests to Detect Hepatic Fibrosis, Imaging and Liver Biopsy",
+          "body_text": "**TESTS TO DETECT HEPATIC FIBROSIS:**\n- **Single serum biochemical markers:** e.g. **hyaluronan**.\n- **Multiparameter blood tests:** **FibroTest** (marketed as **FibroSure** in the United States).\n- **FIBROSCAN** (transient elastography - non-invasive measurement of liver stiffness).\n\n**IMAGING OF THE LIVER:**\n- **Ultrasound (US)**\n- **CT scan**\n- **MRI**\n- **MRI + MRCP** (magnetic resonance cholangiopancreatography - the non-invasive technique that outlines the biliary tree; the choice for defining the level of biliary obstruction)\n\n**LIVER BIOPSY:**\n- Remains the definitive tissue test; it has an important role in defining **the aetiology and the extent of liver injury** (especially in hepatocellular jaundice).",
+          "key_points": [
+            "Fibrosis markers: hyaluronan (single), FibroTest/FibroSure (multiparameter), FibroScan (elastography).",
+            "Imaging ladder: US → CT → MRI → MRI + MRCP.",
+            "Liver biopsy defines aetiology and extent of liver injury."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Fractionation of serum bilirubin",
+          "definition_ar": "تجزئة البيليروبين: تفريق المقترن (المباشر) عن غير المقترن (غير المباشر) في المصل."
+        },
+        {
+          "term": "ALT (SGPT)",
+          "definition_ar": "الألانين أمينوترانسفيراز (سابقاً SGPT): أدق مؤشرات الأذية الخلوية الكبدية الحادة."
+        },
+        {
+          "term": "AST (SGOT)",
+          "definition_ar": "الأسبارتات أمينوترانسفيراز (سابقاً SGOT): إنزيم أذية الخلايا الكبدية."
+        },
+        {
+          "term": "Alkaline phosphatase (ALP)",
+          "definition_ar": "الفوسفاتاز القلوي: يرتفع أساساً في الركود الصفراوي الانسدادي ومرض العظم."
+        },
+        {
+          "term": "Gamma-GT (GGT)",
+          "definition_ar": "الغاما غلوتاميل ترانسفيراز: يحدد المصدر الكبدي لارتفاع الفوسفاتاز القلوي ولا يرتفع في مرض العظم."
+        },
+        {
+          "term": "5'-nucleotidase",
+          "definition_ar": "نوكليوتيداز 5: إنزيم كبدي صفراوي يستخدم مع GGT لتحديد مصدر ALP المعزول."
+        },
+        {
+          "term": "Prothrombin time (PT)",
+          "definition_ar": "زمن البروثرومبين: اختبار وظيفة الكبد التركيبية لعوامل التخثر."
+        },
+        {
+          "term": "Hyaluronan",
+          "definition_ar": "الهيالورونان: واسم مصلي مفرد للتليف الكبدي."
+        },
+        {
+          "term": "FibroTest / FibroSure",
+          "definition_ar": "اختبار دموي متعدد المعاملات لتقييم تليف الكبد."
+        },
+        {
+          "term": "FibroScan",
+          "definition_ar": "الفيبروسكان: قياس صلابة الكبد بالموجات فوق الصوتية (مرنيات عابرة)."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير البنكرياس والقنوات الصفراوية بالرنين المغناطيسي: يحدد مستوى الانسداد الصفراوي بلا تداخل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L8_git_2_c6",
+      "lecture_id": "L8_git_2",
+      "title": "Jaundice - Definition, Detection Threshold and the Three-Way Classification",
+      "summary_ar": "اليرقان اصفرار الجلد والملتحمة والأغشية المخاطية نتيجة الترسب النسيجي الواسع للبيليروبين. المستوى الطبيعي للبيليروبين عند البالغين أقل من 1 إلى 1.5 ملغ/دل، ويصبح اليرقان قابلاً للكشف سريرياً عندما يتجاوز بلازما البيليروبين 40 ميكرومول/ل (نحو 2.5 ملغ/دل). يجب تفريقه عن اصفرار الجلد بفرط الكاروتين حيث تسلم الملتحمة، ثم يصنف سبب اليرقان إلى ما قبل كبدي وكبدي وما بعد كبدي.",
+      "sections": [
+        {
+          "heading": "Definition and the Numbers That Matter",
+          "body_text": "- **Jaundice** is **yellow discoloration of the skin, conjunctivae and mucous membranes**, resulting from **widespread tissue deposition of the pigmented metabolite bilirubin**.\n- **In adults, the normal bilirubin concentration is lower than 1 to 1.5 mg/dL.**\n- **Jaundice is usually detectable clinically when the plasma bilirubin exceeds 40 µmol/L (~2.5 mg/dL).**\n- Between the upper limit of normal and this clinical threshold there is **subclinical hyperbilirubinaemia** - a biochemically raised bilirubin without visible jaundice. This is exactly the typical situation of **incidentally detected Gilbert's syndrome on routine multiphasic biochemical screening** (see the next concept).\n\n**Numbers to memorise:** normal < 1-1.5 mg/dL | clinical detection > 40 µmol/L (~2.5 mg/dL) | Gilbert's generally < 4 mg/dL.",
+          "key_points": [
+            "Jaundice = yellow discoloration of skin, conjunctivae and mucous membranes by deposited bilirubin.",
+            "Normal bilirubin < 1 to 1.5 mg/dL.",
+            "Clinically detectable jaundice when plasma bilirubin > 40 µmol/L (~2.5 mg/dL)."
+          ]
+        },
+        {
+          "heading": "Jaundice vs Hypercarotenemia - the Clinical Discriminator",
+          "body_text": "- **Yellowish discoloration of the skin can ALSO result from excessive deposition of CAROTENE in hypercarotenemia** (excess dietary carotene - carrots and other carotene-rich foods).\n- The lecture asks how this differs clinically from hyperbilirubinaemia. The answer: **in hypercarotenemia the yellow SPARES the sclerae/conjunctivae** - carotene deposits in the skin but not in the conjunctival tissue, whereas bilirubin stains the conjunctivae (scleral icterus is the earliest and most reliable sign of true jaundice); bilirubin levels are normal in carotenemia.\n- **Bedside rule:** yellow skin + YELLOW sclera = jaundice | yellow skin + WHITE sclera = carotenemia.\n\nThis is a classic short-case and written-exam discriminator.",
+          "key_points": [
+            "Hypercarotenemia also yellows the skin.",
+            "Discriminator: scleral sparing - conjunctivae are icteric only in true hyperbilirubinaemia.",
+            "Yellow skin + white sclerae + normal bilirubin = carotenemia."
+          ],
+          "check": {
+            "prompt": "A patient has yellow palms and face but the conjunctivae are white and serum bilirubin is 0.7 mg/dL. What is the diagnosis?",
+            "options": [
+              "Hypercarotenemia",
+              "Gilbert's syndrome",
+              "Haemolytic jaundice",
+              "Cholestatic jaundice",
+              "Crigler-Najjar syndrome type II"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "اصفرار الجلد مع سالم الملتحمة وبيليروبين طبيعي هو فرط الكاروتين من الإكثار من الأغذية الغنية بالكاروتين، فالكاروتين يترسب في الجلد ولا يصبغ الملتحمة بعكس البيليروبين."
+          }
+        },
+        {
+          "heading": "The Three-Category Framework - Pre-hepatic, Hepatic, Post-hepatic",
+          "body_text": "**In a patient with jaundice it is useful to consider whether the cause might be PRE-HEPATIC, HEPATIC or POST-HEPATIC.**\n\n**Framework of the lecture:**\n- **PRE-HEPATIC** - the problem is BEFORE the liver: increased bilirubin PRODUCTION (haemolysis) or a congenital unconjugated hyperbilirubinaemia → isolated **unconjugated** bilirubin rise, normal urine and stool.\n- **HEPATIC (hepatocellular)** - the problem is WITHIN the liver: parenchymal disease impairs transport of bilirubin into bile → **both fractions rise**, tea-coloured urine, normal-coloured stool, transaminases elevated.\n- **POST-HEPATIC (obstructive/cholestatic)** - the problem is AFTER the liver: failure of bile formation or duct obstruction between the porta hepatis and the papilla of Vater → **conjugated** hyperbilirubinaemia, dark urine + pale stools + pruritus, ALP/GGT elevated.\n\nEach of these three types is detailed in the following concepts (pre-hepatic with its congenital hyperbilirubinaemias; hepatocellular; obstructive with its causes, features and the cause-prediction table), and the lecture ends with the key history points that tie the classification together at the bedside.",
+          "key_points": [
+            "Always classify jaundice: pre-hepatic | hepatic | post-hepatic.",
+            "Pre-hepatic = unconjugated, isolated, normal urine/stool; hepatic = both fractions, tea urine, normal stool; post-hepatic = conjugated, dark urine, pale stools."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Jaundice (icterus)",
+          "definition_ar": "اليرقان: اصفرار الجلد والملتحمة والأغشية المخاطية بترسب البيليروبين."
+        },
+        {
+          "term": "Scleral icterus",
+          "definition_ar": "اصفرار الصلبة (الملتحمة): أول وأدق علامة سريرية لفرط بيليروبين الدم."
+        },
+        {
+          "term": "Hypercarotenemia",
+          "definition_ar": "فرط الكاروتين: اصفرار جلد بترسب الكاروتين مع سالم الملتحمة وبيليروبين طبيعي."
+        },
+        {
+          "term": "Subclinical hyperbilirubinaemia",
+          "definition_ar": "فرط بيليروبين الدم تحت السريري: ارتفاع مخبري دون يرقان مرئي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L8_git_2_c7",
+      "lecture_id": "L8_git_2",
+      "title": "Pre-hepatic Jaundice and the Congenital Hyperbilirubinaemias",
+      "summary_ar": "يرقان ما قبل الكبد سببه الانحلال أو فرط بيليروبين الدم الولادي ويتميز بارتفاع بيليروبين معزول مع بقية وظائف الكبد طبيعية، وهو عادة خفيف بلون ليموني مع بول وبراز طبيعيين؛ يبقى خفيفاً لأن الكبد السليم قادر على طرح حمل بيليروبين يعادل ستة أضعاف الطبيعي (لا ينطبق ذلك على الوليد ذي الطاقة الاستقلابية الأقل). أشيع فرط بيليروبين دم غير انحلالي متلازمة جيلبرت (نحو 10% من البيض، نقص نسخ UGT1A1، يرتفع 2-3 أضعاف بالصوم أو التجفاف ويبقى عموماً تحت 4 ملغ/دل، اكتشاف عرضي بالفرز، خطورة حصى وسمية إيرينوتيكان، وحماية قلبية وعائية بمضادات الأكسدة). متلازمتا كريغلر-نجار I وII بطفرات في المنطقة المشفرة لUGT1A1: النمط I غياب كامل لخميرة B-UGT ويرقان غير مقترن شديد بعد الولادة مباشرة، والنمط II طفل سليم وليدياً وقد لا يشخص قبل الطفولة المبكرة ويعالج معظمه بنجاح بالفينوباربيتال. أما دوبين-جونسون (ضعف الطرح القنيوي للمقترن مع صباغ خشن في الخلايا الكبدية المركزية الفصيصية) وروتر (ضعف طرح مع خزعة كبد طبيعية) ففرط بيليروبين مقترن أو مختلط وراثي جسمي.",
+      "sections": [
+        {
+          "heading": "Pre-hepatic (Haemolytic) Jaundice - Mechanism and Bedside Features",
+          "body_text": "- Pre-hepatic jaundice is caused **either by HAEMOLYSIS or by congenital hyperbilirubinaemia**, and is characterised by an **ISOLATED raised bilirubin level** (all other liver function tests normal).\n- It is **usually mild**, with a **lemon colour** of the patient, and **normal urine and normal stool**.\n- **Mechanism in haemolysis:** destruction of red blood cells (or their marrow precursors) causes **increased bilirubin production**.\n- **Why the jaundice stays mild:** a healthy liver can excrete a bilirubin load **six times greater than normal** before unconjugated bilirubin accumulates in the plasma.\n- **This does NOT apply to newborns**, who have **less capacity to metabolise bilirubin** - haemolysis in the neonate can therefore cause severe unconjugated hyperbilirubinaemia.\n- **The most common form of non-haemolytic hyperbilirubinaemia is GILBERT'S SYNDROME** (detailed below).\n\n**Bedside signature of pre-hepatic jaundice:** lemon-yellow, mild jaundice | unconjugated-predominant isolated bilirubin | urine normal | stool normal | anaemia ± reticulocytosis if haemolytic.",
+          "key_points": [
+            "Pre-hepatic jaundice = haemolysis OR congenital hyperbilirubinaemia; isolated raised bilirubin.",
+            "Usually mild, lemon colour, normal urine and stool.",
+            "A healthy liver excretes a bilirubin load 6x normal before unconjugated bilirubin accumulates; newborns lack this capacity.",
+            "Most common non-haemolytic hyperbilirubinaemia = Gilbert's syndrome."
+          ]
+        },
+        {
+          "heading": "Congenital Unconjugated Hyperbilirubinaemia - the Short List",
+          "body_text": "The congenital causes of **unconjugated** hyperbilirubinaemia listed by the lecture:\n- **Gilbert's syndrome**\n- **Crigler-Najjar syndrome type I**\n- **Crigler-Najjar syndrome type II**\n\nAll three are disorders of bilirubin **CONJUGATION** by UDP-glucuronyl transferase - a direct echo of the metabolism concept: **impaired conjugation by this enzyme is a cause of inherited hyperbilirubinaemias**. Gilbert's = reduced TRANSCRIPTION of the UGT1A1 gene; Crigler-Najjar = mutations in the CODING region of the same gene.\n\nIn addition, two autosomal inherited disorders cause **conjugated or MIXED hyperbilirubinaemia** by impaired canalicular export of conjugated bilirubin: **Dubin-Johnson syndrome** and **Rotor's syndrome** (last section of this concept).",
+          "key_points": [
+            "Unconjugated congenital list: Gilbert's syndrome + Crigler-Najjar types I and II.",
+            "Gilbert's = reduced transcription of UGT1A1; Crigler-Najjar = coding-region mutations of UGT1A1.",
+            "Conjugated/mixed congenital list: Dubin-Johnson and Rotor syndromes (impaired canalicular export)."
+          ]
+        },
+        {
+          "heading": "Gilbert's Syndrome - Genetics, Clinical Course and Associations",
+          "body_text": "- **Prevalence: approximately 10% in white populations.**\n- **Typical presentation:** patients present when **isolated hyperbilirubinaemia is detected as an incidental finding on routine multiphasic biochemical screening**; **clinical jaundice is uncommon**.\n- **Biochemistry:** serum bilirubin levels may rise **2- to 3-fold with fasting or dehydration** but are **generally below 4 mg/dL** (unconjugated fraction).\n- **Molecular defect: reduction in transcription of the beta-glucuronyl (UDP-glucuronyl) transferase gene UGT1A1** (i.e. **decreased transferase activity**, not an absent enzyme).\n- **Clinical significance of Gilbert's syndrome:**\n  - Although generally thought to be an **entirely benign condition**, affected persons may be at **INCREASED risk for GALLSTONES**.\n  - Increased risk of **toxicity of selected drugs such as IRINOTECAN**, which **require glucuronidation for metabolic disposal**.\n  - Conversely, patients with Gilbert's syndrome may be at **DECREASED risk for cardiovascular disease**, because **unconjugated bilirubin has antioxidant properties** that are thought to **retard atherosclerosis**.\n\n**Management (linking back to Question 1):** reassurance + **avoid the precipitants of the bilirubin rise - fasting and dehydration** (regular meals and good hydration on heavy-duty days prevent the recurrent episodes).",
+          "key_points": [
+            "Gilbert's: ~10% of white populations; incidental isolated unconjugated hyperbilirubinaemia; clinical jaundice uncommon.",
+            "Bilirubin rises 2-3x with fasting/dehydration but stays below 4 mg/dL; defect = reduced UGT1A1 transcription (reduced enzyme activity).",
+            "Increased risk: gallstones, irinotecan toxicity (needs glucuronidation). Decreased risk: cardiovascular disease (antioxidant bilirubin retards atherosclerosis)."
+          ]
+        },
+        {
+          "heading": "Crigler-Najjar Syndrome - Type I vs Type II",
+          "body_text": "- **Mutations in the CODING REGION of UGT1A1** appear to be responsible for **Crigler-Najjar syndrome** (contrast Gilbert's syndrome: reduced transcription of the same gene).\n- **Type I Crigler-Najjar syndrome:** **beta-UGT activity is ABSENT**, and **marked unconjugated hyperbilirubinaemia is evident shortly after birth** - a neonatal emergency.\n- **Type II Crigler-Najjar syndrome:** patients are **not ill during the neonatal period** and **may not be diagnosed until early childhood** (residual enzyme activity persists).\n- **Treatment:** **most patients with type II Crigler-Najjar syndrome can be treated successfully with PHENOBARBITAL** (an enzyme inducer that raises the residual glucuronyl transferase activity).\n\n**Type I vs II quick table:**\n- Enzyme activity: type I = ABSENT | type II = reduced/residual\n- Onset: type I = marked hyperbilirubinaemia shortly after birth | type II = well in the neonatal period, diagnosis may wait until early childhood\n- Treatment: type I = (not specified in this lecture) | type II = phenobarbital",
+          "key_points": [
+            "Crigler-Najjar = coding-region mutations of UGT1A1.",
+            "Type I: B-UGT activity absent + marked unconjugated hyperbilirubinaemia shortly after birth.",
+            "Type II: not ill neonatally, diagnosed later (early childhood); most treated successfully with phenobarbital."
+          ]
+        },
+        {
+          "heading": "Conjugated or Mixed Hyperbilirubinaemia - Dubin-Johnson vs Rotor",
+          "body_text": "Two **autosomal inherited** disorders are associated with **conjugated or mixed hyperbilirubinaemia** (i.e. an increase in serum concentrations of **both conjugated and unconjugated bilirubin**):\n\n- **Dubin-Johnson syndrome:**\n  - **Impaired canalicular export of conjugated bilirubin.**\n  - **Coarse pigment in centrilobular hepatocytes on liver biopsy** (the classic BLACK liver).\n- **Rotor's syndrome:**\n  - Also associated with conjugated or mixed hyperbilirubinaemia.\n  - **Impaired canalicular export of conjugated bilirubin.**\n  - **NORMAL liver biopsy.**\n\n**Comparison pseudo-table of the congenital hyperbilirubinaemias:**\n\nFeature | Gilbert | Crigler-Najjar I | Crigler-Najjar II | Dubin-Johnson | Rotor\nBilirubin fraction | Unconjugated | Unconjugated (marked) | Unconjugated | Conjugated or mixed | Conjugated or mixed\nDefect | Reduced UGT1A1 transcription (decreased activity) | Absent B-UGT activity (coding mutation) | Coding-region mutation, residual activity | Impaired canalicular export of conjugated bilirubin | Impaired canalicular export of conjugated bilirubin\nRecognition | Incidental screening finding; jaundice uncommon; <4 mg/dL, rises 2-3x with fasting/dehydration | Marked hyperbilirubinaemia shortly after birth | Not ill neonatally; may be diagnosed in early childhood | - | -\nLiver biopsy | - | - | - | Coarse pigment in centrilobular hepatocytes (black liver) | Normal\nTreatment | Avoid fasting/dehydration; reassurance | - | Phenobarbital | - | -",
+          "key_points": [
+            "Dubin-Johnson and Rotor = conjugated/mixed hyperbilirubinaemia with impaired canalicular export of conjugated bilirubin.",
+            "Liver biopsy discriminator: Dubin-Johnson = coarse pigment in centrilobular hepatocytes; Rotor = normal biopsy.",
+            "Clinical pearl: isolated unconjugated = Gilbert/Crigler-Najjar; conjugated or mixed congenital = Dubin-Johnson/Rotor."
+          ],
+          "check": {
+            "prompt": "A young patient with intermittent conjugated/mixed hyperbilirubinaemia undergoes liver biopsy, which shows coarse pigment in centrilobular hepatocytes. Which syndrome is this?",
+            "options": [
+              "Dubin-Johnson syndrome",
+              "Rotor's syndrome",
+              "Gilbert's syndrome",
+              "Crigler-Najjar syndrome type II",
+              "Crigler-Najjar syndrome type I"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الصباغ الخشن في الخلايا الكبدية المركزية الفصيصية (الكبد الأسود) مميز لمتلازمة دوبين-جونسون، بينما خزعة الكبد طبيعية تماماً في متلازمة روتور، وجيلبرت وكريغلر-نجار اضطرابا اقتران يرفعان غير المقترن لا المقترن."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Haemolysis",
+          "definition_ar": "انحلال الدم: تفكك الكريات الحمراء أو سلفها النقوية مسبباً زيادة إنتاج البيليروبين."
+        },
+        {
+          "term": "Gilbert's syndrome",
+          "definition_ar": "متلازمة جيلبرت: نقص نسخ جين UGT1A1، أشيع فرط بيليروبين دم غير انحلالي، يرقان معزول غير مقترن تحت 4 ملغ/دل يزيد بالصوم والتجفاف."
+        },
+        {
+          "term": "UGT1A1",
+          "definition_ar": "جين خميرة UDP-غلوكورونيل ترانسفيراس؛ نقص نسخه جيلبرت وطفراته المشفرة كريغلر-نجار."
+        },
+        {
+          "term": "Crigler-Najjar syndrome",
+          "definition_ar": "متلازمة كريغلر-نجار: طفرة مشفرة في UGT1A1؛ النمط I غياب الخميرة ويرقان شديد بعد الولادة، والنمط II أخف ويستجيب للفينوباربيتال."
+        },
+        {
+          "term": "Phenobarbital",
+          "definition_ar": "الفينوباربيتال: محرض إنزيمي يعالج بنجاح معظم مرضى كريغلر-نجار النمط II."
+        },
+        {
+          "term": "Dubin-Johnson syndrome",
+          "definition_ar": "متلازمة دوبين-جونسون: ضعف الطرح القنيوي للمقترن مع صباغ خشن بالخلايا المركزية الفصيصية."
+        },
+        {
+          "term": "Rotor's syndrome",
+          "definition_ar": "متلازمة روتور: فرط بيليروبين مقترن أو مختلط بخزعة كبد طبيعية."
+        },
+        {
+          "term": "Irinotecan",
+          "definition_ar": "إيرينوتيكان: دواء كيميائي يحتاج إلى الاقتران بالغلوكورونيك (الغلوكورونيدَة) لطرحه من الجسم، لذا تزداد سميته في متلازمة جيلبرت."
+        },
+        {
+          "term": "Lemon-yellow tinge",
+          "definition_ar": "الصبغة الليمونية: لون يرقان ما قبل الكبد الخفيف."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    },
+    {
+      "id": "L8_git_2_c8",
+      "lecture_id": "L8_git_2",
+      "title": "Hepatocellular (Hepatic) Jaundice",
+      "summary_ar": "يرقان الخلايا الكبدية ينشأ عن عجز الكبد عن نقل البيليروبين إلى الصفراء نتيجة مرض البرانشيم، فيرتفع البيليروبين غير المقترن والمقترن معاً مع بول بلون الشاي وبراز طبيعي اللون. يتسم يرقان مرض البرانشيم بارتفاع الترانس أمينازات AST وALT، وقد ترتفع إنزيمات ركودية أخرى (GGT وALP) موحية بأسباب خاصة، واليرقان الحاد مع ALT فوق 1000 وحدة/ل يرجح سبباً انتانياً (التهاب كبد A أو B) أو دوائياً (باراسيتامول) أو نقص تروية كبدية. التصوير أساسي لإظهار التليف وسريان الأوعية الكبدية وفرط ضغط الباب، وللخزعة الكبدية دور مهم في تحديد السبب ومدى الأذية.",
+      "sections": [
+        {
+          "heading": "Mechanism, Bilirubin Fractions, Urine and Stool",
+          "body_text": "- **Hepatocellular jaundice results from an INABILITY of the liver to transport bilirubin into the bile**, occurring as a consequence of **parenchymal (liver cell) disease**.\n- **The concentrations of BOTH unconjugated AND conjugated bilirubin in the blood increase** (sick hepatocytes fail at uptake, conjugation AND excretion simultaneously).\n- **Urine: TEA-COLOURED** - the conjugated, water-soluble fraction regurgitates into the blood and is excreted by the kidney.\n- **Stool: NORMAL colour** - some bile still reaches the gut and stercobilinogen production continues.\n\n**Picture to remember:** parenchymal disease (e.g. acute viral hepatitis) → both fractions up + tea urine + normal stool + tender hepatomegaly + prodrome (as in Question 3).",
+          "key_points": [
+            "Hepatocellular jaundice = failure to transport bilirubin into bile due to parenchymal disease.",
+            "Both unconjugated AND conjugated bilirubin rise in the blood.",
+            "Tea-coloured urine with normal-coloured stool."
+          ]
+        },
+        {
+          "heading": "Enzyme Pattern and the ALT >1000 U/L Rule",
+          "body_text": "- Characteristically, jaundice due to **parenchymal liver disease is associated with increases in TRANSAMINASES (AST, ALT)** - the hepatocellular signature.\n- **Increases in other LFTs, including the cholestatic enzymes (GGT, ALP), may occur and suggest specific aetiologies.**\n- **KEY RULE: acute jaundice in the presence of an ALT of >1000 U/L is highly suggestive of:**\n  - An **infectious** cause (e.g. **hepatitis A or B**), OR\n  - **Drugs** (e.g. **paracetamol**), OR\n  - **Hepatic ischaemia.**\n  - (By contrast, biliary obstruction is characterised by ALP/GGT elevation with transaminases far below this level.)\n\n**Pattern contrast for the exam:**\n- Hepatocellular: AST/ALT dominant (may exceed 1000) ± mild ALP/GGT.\n- Cholestatic/obstructive: ALP/GGT dominant, transaminases modest.",
+          "key_points": [
+            "Parenchymal liver disease → transaminases (AST, ALT) characteristically rise.",
+            "ALT >1000 U/L in acute jaundice = hepatitis A/B, drugs (paracetamol) or hepatic ischaemia.",
+            "Cholestatic enzymes (GGT, ALP) may also rise and suggest specific aetiologies."
+          ],
+          "check": {
+            "prompt": "Acute jaundice with an ALT of 1400 U/L is highly suggestive of which group of causes?",
+            "options": [
+              "Infectious (hepatitis A or B), drugs (paracetamol) or hepatic ischaemia",
+              "Choledocholithiasis and biliary obstruction",
+              "Gilbert's syndrome",
+              "Haemolysis",
+              "Dubin-Johnson syndrome"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قاعدة المحاضرة: اليرقان الحاد مع ALT أكبر من 1000 وحدة/ل يرجح سبباً انتانياً كالتهاب الكبد A أو B أو دوائياً كالباراسيتامول أو نقص تروية كبدية، أما الانسداد الصفراوي فيرفع ALP وGGT بترانس أمينازات معتدلة، والانحلال وجيلبرت يرفعان غير المقترن دون ارتفاع الإنزيمات."
+          }
+        },
+        {
+          "heading": "Imaging and Liver Biopsy in Hepatocellular Jaundice",
+          "body_text": "- **Imaging is essential** in hepatocellular jaundice, in particular to:\n  - Identify features suggestive of **cirrhosis**.\n  - Define the **patency of the hepatic vasculature**.\n  - Obtain evidence of **portal hypertension**.\n- **Liver biopsy has an important role** in defining **the aetiology of hepatocellular jaundice and the extent of liver injury**.\n\n**Tying Question 3 together:** the 18-year-old with fever, nausea and repeated vomiting (a hepatitis A prodrome) would be expected to show very high transaminases (often ALT >1000 U/L) with a mixed bilirubin rise, tea-coloured urine and a normal-coloured stool - clearly separable from a cholestatic picture (prominent pruritus, pale stools, ALP/GGT-dominant enzymes).",
+          "key_points": [
+            "Imaging in hepatocellular jaundice: look for cirrhosis, vascular patency and portal hypertension.",
+            "Liver biopsy defines aetiology and extent of injury.",
+            "Question 3 answered: hepatitis A = transaminase-dominant illness; cholestasis = ALP/GGT-dominant with pruritus and pale stools."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hepatocellular jaundice",
+          "definition_ar": "يرقان الخلايا الكبدية: عجز الكبد عن نقل البيليروبين إلى الصفراء بمرض البرانشيم."
+        },
+        {
+          "term": "Transaminases",
+          "definition_ar": "الترانس أمينازات: AST وALT، إنزيمات الأذية الخلوية الكبدية."
+        },
+        {
+          "term": "Parenchymal liver disease",
+          "definition_ar": "مرض برانشيم الكبد: إصابة الخلايا الكبدية نفسها كالالتهاب الفيروسي."
+        },
+        {
+          "term": "Hepatic ischaemia",
+          "definition_ar": "نقص تروية الكبد: أحد أسباب اليرقان الحاد مع ALT فوق 1000 وحدة/ل."
+        },
+        {
+          "term": "Portal hypertension",
+          "definition_ar": "فرط ضغط الوريد البابي: يُبحث عنه بالتصوير في يرقان الخلايا الكبدية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 7
+    },
+    {
+      "id": "L8_git_2_c9",
+      "lecture_id": "L8_git_2",
+      "title": "Obstructive (Cholestatic) Jaundice - Causes, Features and Cause Prediction",
+      "summary_ar": "قد ينجم اليرقان الركودي عن فشل الخلايا الكبدية في بدء جريان الصفراء أو انسداد القنوات الصفراوية أو الساحات البابية أو انسداد جريان الصفراء في القنوات خارج الكبدية بين سرة الكبد وحليمة فاتر. مظاهره المبكرة: يرقان وبول داكن وبراز شاحب وحكة؛ ومتأخرة: سوء امتصاص الفيتامينات الذوابة A وD وE وK (نقص وزن وإسهال دهني وتلين عظام ونزف) وزانثيلازما وزانثومات وكلانجيت مع حمى ونافض. جدول 22.19 يوجه للسبب: يرقان ثابت أو متزايد (خباثة أو تليف صفراوي بدئي أو تصلب صفراوي بدئي)، يرقان متذبذب (حصاة القناة الجامعة أو تضيق أو التهاب بنكرياس أو كيسة القناة الجامعة أو تصلب صفراوي)، ألم بطني (حصاة أو بنكرياس أو كيسة)، كلانجيت (حجر أو تضيق أو كيسة)، ندبة بطنية (حجر أو تضيق)، ضخامة كبد غير منتظمة (سرطان كبدي)، مرارة مجسوسة (خباثة تحت القناة الكيسية وعادة بنكرياس)، كتلة بطنية (خباثة أو كيسة بنكرياتية أو كيسة قناة جامعة)، ودم خفي بالبراز (ورم حليمة فاتر).",
+      "sections": [
+        {
+          "heading": "Causes - the Three Levels of Bile-Flow Failure",
+          "body_text": "**Cholestatic jaundice may be caused by:**\n- **Failure of hepatocytes to initiate bile flow** (a functional/intrahepatic failure of bile formation).\n- **Obstruction of the bile ducts or portal tracts** (intrahepatic duct obstruction).\n- **Obstruction of bile flow in the EXTRAHEPATIC bile ducts between the porta hepatis and the papilla of Vater** (e.g. stones, strictures, tumours of the duct, pancreas or ampulla).\n\nRemember the biliary road map from the anatomy concept: canaliculi → interlobular ducts (portal tracts) → right/left hepatic ducts → common hepatic duct → (+ cystic duct/gallbladder) → common bile duct → duodenum at the sphincter of Oddi. Obstruction of the extrahepatic portion (porta hepatis → papilla of Vater) produces the classic post-hepatic picture: conjugated hyperbilirubinaemia, dark urine, pale stools and pruritus.",
+          "key_points": [
+            "Cholestatic jaundice = hepatocytic failure of bile flow OR intrahepatic duct/portal tract obstruction OR extrahepatic obstruction.",
+            "Extrahepatic obstruction = between the porta hepatis and the papilla of Vater.",
+            "Result: conjugated hyperbilirubinaemia, dark urine, pale stools, pruritus."
+          ]
+        },
+        {
+          "heading": "Early and Late Clinical Features and Complications",
+          "body_text": "**Cholestasis - EARLY features:**\n- **Jaundice**\n- **Dark urine**\n- **Pale stools**\n- **Pruritus** (itching - may PRECEDE the jaundice; a key history point)\n\n**Cholestasis - LATE features (complications):**\n- **Malabsorption of the fat-soluble vitamins A, D, E and K:**\n  - **Weight loss**\n  - **Steatorrhoea** (fatty, pale, bulky, floating stools)\n  - **Osteomalacia** (vitamin D deficiency - bone pain, soft bones, fractures)\n  - **Bleeding tendency** (vitamin K deficiency - impaired coagulation)\n- **Xanthelasma and xanthomas** (cutaneous lipid deposits of chronic cholestasis)\n- **Cholangitis** (acute infection of an obstructed biliary tree):\n  - **Fever**\n  - **Rigors**\n  - (Fever + rigors in a jaundiced, obstructed patient = cholangitis until proven otherwise - and the cause-prediction table below links cholangitis to stone, stricture or choledochal cyst.)",
+          "key_points": [
+            "Early cholestasis: jaundice, dark urine, pale stools, pruritus.",
+            "Late cholestasis: fat-soluble vitamin (A, D, E, K) malabsorption - weight loss, steatorrhoea, osteomalacia, bleeding tendency.",
+            "Late cholestasis also: xanthelasma/xanthomas, cholangitis with fever and rigors."
+          ]
+        },
+        {
+          "heading": "Clinical Features Suggesting the Underlying Cause (Table 22.19)",
+          "body_text": "The lecture converts bedside findings into the most likely underlying cause of cholestatic jaundice:\n\n**Clinical feature | Most likely cause(s)**\n**Jaundice - static or increasing** | Carcinoma | Primary biliary cholangitis | Primary sclerosing cholangitis\n**Jaundice - fluctuating** | Choledocholithiasis | Stricture | Pancreatitis | Choledochal cyst | Primary sclerosing cholangitis\n**Abdominal pain** | Choledocholithiasis | Pancreatitis | Choledochal cyst\n**Cholangitis** | Stone | Stricture | Choledochal cyst\n**Abdominal scar** | Stone | Stricture\n**Irregular hepatomegaly** | Hepatic carcinoma\n**Palpable gallbladder** | Carcinoma below the cystic duct (usually pancreas)\n**Abdominal mass** | Carcinoma | Pancreatitis (cyst) | Choledochal cyst\n**Occult blood in stools** | Ampullary tumour\n\n**Lecture footnote:** each of these diseases can give rise to almost any of the clinical features shown, but the table indicates the **MOST LIKELY cause** of each listed feature.\n\n**High-yield exam logic:**\n- **Painless, static/progressive jaundice** → carcinoma, primary biliary cholangitis or primary sclerosing cholangitis.\n- **Fluctuating jaundice ± abdominal pain** → stones (choledocholithiasis), stricture, pancreatitis, choledochal cyst (or PSC).\n- **Palpable non-tender gallbladder with jaundice** → carcinoma below the cystic duct, usually pancreatic head (Courvoisier's sign).\n- **Occult blood in stool with obstructive jaundice** → ampullary tumour (a tumour that both obstructs the duct and bleeds into the gut).\n- **Previous abdominal scar** → post-surgical stone or stricture.\n- **Irregular hepatomegaly** → hepatic carcinoma.",
+          "key_points": [
+            "Static/increasing jaundice = carcinoma, PBC, PSC; fluctuating = stones, stricture, pancreatitis, choledochal cyst, PSC.",
+            "Palpable gallbladder = carcinoma below the cystic duct (usually pancreas).",
+            "Occult blood in stools = ampullary tumour; irregular hepatomegaly = hepatic carcinoma; abdominal scar = stone/stricture.",
+            "Cholangitis points to stone, stricture or choledochal cyst; abdominal pain to choledocholithiasis, pancreatitis or choledochal cyst."
+          ],
+          "check": {
+            "prompt": "In a jaundiced patient, fluctuating jaundice with abdominal pain most strongly suggests which cause from Table 22.19?",
+            "options": [
+              "Choledocholithiasis (stones in the common bile duct)",
+              "Pancreatic head carcinoma",
+              "Primary biliary cholangitis",
+              "Hepatic carcinoma",
+              "Gilbert's syndrome"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "اليرقان المتذبذب مع الألم البطني يوجه نحو حصاة القناة الجامعة (أو التضيق أو البنكرياس أو كيسة القناة الجامعة)، بينما اليرقان الثابت المتزايد اللاألمي يوحي بالخباثة أو التليف الصفراوي البدئي أو التصلب الصفراوي البدئي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cholestasis",
+          "definition_ar": "الركود الصفراوي: توقف أو نقص جريان الصفراء داخل الكبد أو انسداداً خارج كبدية."
+        },
+        {
+          "term": "Pruritus",
+          "definition_ar": "الحكة: علامة مبكرة للركود قد تسبق اليرقان."
+        },
+        {
+          "term": "Steatorrhoea",
+          "definition_ar": "الإسهال الدهني: براز شاحب دهني كثير الحجم لغياب الأملاح الصفراوية."
+        },
+        {
+          "term": "Osteomalacia",
+          "definition_ar": "تلين العظام: مضاعفة نقص فيتامين D في الركود المزمن."
+        },
+        {
+          "term": "Xanthelasma / xanthoma",
+          "definition_ar": "الزانثيلازما والزانثوما: ترسبات شحمية جلدية في الركود المزمن."
+        },
+        {
+          "term": "Cholangitis",
+          "definition_ar": "الكلانجيت: التهاب الطرق الصفراوية المنتفخة بحمى ونافض."
+        },
+        {
+          "term": "Choledocholithiasis",
+          "definition_ar": "حصاة القناة الجامعة: سبب يرقان متذبذب مع ألم وكلانجيت."
+        },
+        {
+          "term": "Choledochal cyst",
+          "definition_ar": "كيسة القناة الجامعة: توسع ولادي يسبب يرقاناً متذبذباً وكلانجيت."
+        },
+        {
+          "term": "Primary biliary cholangitis",
+          "definition_ar": "التليف الصفراوي البدئي: مرض مناعي ركودي مزمن يسبب يرقاناً ثابتاً."
+        },
+        {
+          "term": "Primary sclerosing cholangitis",
+          "definition_ar": "التصلب الصفراوي البدئي: مرض ركودي يرتبط بالتهاب الأمعاء الالتهابي ويرقان ثابت أو متذبذب."
+        },
+        {
+          "term": "Ampullary tumour",
+          "definition_ar": "ورم حليمة فاتر: يسبب انسداداً مع دم خفي في البراز."
+        },
+        {
+          "term": "Papilla of Vater",
+          "definition_ar": "حليمة فاتر: مصب القناة الجامعة في العفج، الحد الأسفل للانسداد بعد الكبدي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 8
+    },
+    {
+      "id": "L8_git_2_c10",
+      "lecture_id": "L8_git_2",
+      "title": "Approach to the Jaundiced Patient - Key History Points and Lecture Synthesis",
+      "summary_ar": "نقاط القصة المرضية المفتاحية عند اليرقان: الأعراض، الحكة السابقة لليرقان، ألم بطني (يوحي بالحصيات)، نقص الوزن (مرض كبدي مزمن وخباثة)، بول داكن وبراز شاحب، حمى مع نافض، جفاف عين وفم، التعب، القصة الدوائية الحديثة، التعرض للمخدرات الوريدية أو النقل الدموي، قصة السفر وبلد الولادة، المتلازمة الاستقلابية (مؤشر كتلة مرتفع مع سكري نمط 2 أو ارتفاع ضغط)، قصة أمراض مناعية ذاتية، قصة الكحول، داء معوي التهابي، والقصة العائلية لأمراض الكبد أو المناعة الذاتية أو المتلازمة الاستقلابية. وتختم المحاضرة بدمج هذه النقاط مع التصنيف الثلاثي لليرقان.",
+      "sections": [
+        {
+          "heading": "Key History Points in the Patient with Jaundice - the Full Checklist",
+          "body_text": "**Symptoms and clinical clues to ask about:**\n- **Itching preceding jaundice** (points to cholestasis)\n- **Abdominal pain (suggests stones)**\n- **Weight loss (chronic liver disease and malignancy)**\n- **Dark urine and pale stools**\n- **Fever ± rigors** (cholangitis)\n- **Dry eyes/dry mouth** (sicca symptoms)\n- **Fatigue**\n- **Recent drug history** (drug-induced liver injury and drug-induced haemolysis - e.g. the TMP-SMX patient of Question 2)\n\n**Other risk-factor history:**\n- **Exposure to intravenous drug use or blood transfusions** (blood-borne viral hepatitis risk)\n- **Travel history and country of birth** (enterically/transmitted hepatitis and endemic diseases)\n- **Metabolic syndrome (increased body mass index ± type 2 diabetes/hypertension)** (fatty liver disease risk)\n- **Autoimmune disease history**\n- **Alcohol history**\n- **Inflammatory bowel disease** (association with primary sclerosing cholangitis)\n- **Family history of liver disease, autoimmune disease or the metabolic syndrome** (including inherited hyperbilirubinaemias such as Gilbert's syndrome - Question 1)\n\nThis checklist is the bedside half of the jaundice workup; the laboratory half is the bilirubin fractionation + enzyme pattern described in the Investigations concept.",
+          "key_points": [
+            "Abdominal pain suggests stones; weight loss suggests chronic liver disease or malignancy.",
+            "Itching preceding jaundice, dark urine and pale stools point to cholestasis; fever ± rigors to cholangitis.",
+            "Always take: recent drug history, IV drug/transfusion exposure, travel and country of birth, metabolic syndrome, autoimmune history, alcohol history, IBD and family history."
+          ],
+          "check": {
+            "prompt": "Itching that precedes the appearance of jaundice most strongly suggests which type?",
+            "options": [
+              "Cholestatic (obstructive) jaundice",
+              "Haemolytic (pre-hepatic) jaundice",
+              "Gilbert's syndrome",
+              "Crigler-Najjar syndrome type I",
+              "Isolated unconjugated hyperbilirubinaemia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحكة المبكرة قد تسبق اليرقان في الركود الصفراوي لتراكم الأملاح الصفراوية في الجلد، وهي من مظاهر الركود المبكرة مع البول الداكن والبراز الشاحب، ولا تحدث في يرقان ما قبل الكبد غير المقترن."
+          }
+        },
+        {
+          "heading": "Synthesis - Mapping the History onto the Three Types (Lecture Close)",
+          "body_text": "The lecture closes with a thanks slide after the history-points page; putting everything together, the three types map onto history, urine/stool and biochemistry as follows:\n\n**PRE-HEPATIC picture:** lemon-yellow mild jaundice | normal urine and stool | isolated unconjugated bilirubin | ask about haemolysis risk (recent drugs, family history) and Gilbert triggers (fasting, dehydration, heavy-duty days).\n\n**HEPATOCELLULAR picture:** prodrome (fever, nausea, vomiting) ± tender hepatomegaly | tea-coloured urine with normal stool | both bilirubin fractions raised | AST/ALT dominate (ALT >1000 U/L = viral/drug/ischaemic) | ask about IV drugs, transfusions, travel, alcohol and metabolic syndrome.\n\n**POST-HEPATIC (cholestatic) picture:** pruritus (may precede jaundice) | dark urine + PALE stools | conjugated hyperbilirubinaemia | ALP/GGT dominate | ask about pain (stones), weight loss (malignancy), previous abdominal scar (stone/stricture), fever/rigors (cholangitis), IBD (PSC), and examine for palpable gallbladder (carcinoma below the cystic duct), irregular hepatomegaly (hepatic carcinoma) and occult blood in stool (ampullary tumour).\n\n**This three-line bedside algorithm + bilirubin fractionation answers every question built from this lecture - including its three opening questions (Gilbert's syndrome; TMP-SMX-induced haemolysis; hepatitis A vs cholestasis).**",
+          "key_points": [
+            "Pre-hepatic: normal urine/stool, unconjugated; hepatic: tea urine, normal stool, transaminases; post-hepatic: dark urine + pale stools, ALP/GGT.",
+            "The history checklist localises the type of jaundice before any lab test.",
+            "The lecture's three opening questions are answered by its own final framework."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Drug history",
+          "definition_ar": "القصة الدوائية: نقطة مفتاحية إذ تسبب الأدوية يرقاناً انحلالياً أو كبدياً."
+        },
+        {
+          "term": "Travel history",
+          "definition_ar": "قصة السفر وبلد الولادة: توجيه لأسباب اليرقان الانتانية والاستقلابية."
+        },
+        {
+          "term": "Metabolic syndrome",
+          "definition_ar": "المتلازمة الاستقلابية: بدانة مع سكري نمط 2 و/أو ارتفاع ضغط، خطر مرض كبد دهني."
+        },
+        {
+          "term": "Inflammatory bowel disease",
+          "definition_ar": "الداء المعوي الالتهابي: يرتبط بالتصلب الصفراوي البدئي."
+        },
+        {
+          "term": "Sicca symptoms",
+          "definition_ar": "أعراض جفاف العين والفم: تُسأل في قصة يرقان لأسباب مناعية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 9
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L8_git_2_f1",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c6",
+      "card_type": "basic",
+      "front_text": "At what plasma bilirubin level does jaundice become clinically detectable, and what is the normal adult level?",
+      "back_text": "Normal total bilirubin is lower than 1 to 1.5 mg/dL. Jaundice is usually detectable clinically when plasma bilirubin exceeds 40 µmol/L (about 2.5 mg/dL).",
+      "explanation_ar": "بين الحد الطبيعي وعتبة الكشف السريري يوجد فرط بيليروبين دم تحت سريري، وهو نمط جيلبرت المكتشف عرضياً بالفرز."
+    },
+    {
+      "id": "L8_git_2_f2",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "How much bilirubin is produced daily, and from which sources?",
+      "back_text": "About 4 mg/kg body weight per day: nearly 80% from haemoglobin breakdown in senescent red cells and prematurely destroyed marrow erythroid cells; the remainder from turnover of haemoproteins such as myoglobin and cytochromes.",
+      "explanation_ar": "احفظ الرقمين: 4 ملغ/كغ يومياً و80% من الخضاب، فسؤال الورقة يحب هذه الأرقام."
+    },
+    {
+      "id": "L8_git_2_f3",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "Which two enzymes convert heme into bilirubin, and where does this occur?",
+      "back_text": "Heme oxygenase (microsomal) converts heme to biliverdin; biliverdin reductase (cytosolic) converts biliverdin to bilirubin. The initial steps occur in reticuloendothelial cells, predominantly in the spleen.",
+      "explanation_ar": "الهيم أوكسيجيناز ثم البيليفيردين ريدكتاز داخل الجهاز الشبكي البطاني وخاصة الطحال."
+    },
+    {
+      "id": "L8_git_2_f4",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "Where and by which enzyme is bilirubin conjugated?",
+      "back_text": "In hepatocytes: uptake at the sinusoidal membrane, then conjugation in the endoplasmic reticulum by UDP-glucuronyl transferase (gene UGT1A1), producing water-soluble bilirubin mono- and diglucuronide.",
+      "explanation_ar": "الاقتران في الشبكة الهيولية بخميرة UDP-غلوكورونيل ترانسفيراس، وخللها يسبب فرط بيليروبين الدم الوراثي."
+    },
+    {
+      "id": "L8_git_2_f5",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "Why does unconjugated bilirubin never appear in the urine?",
+      "back_text": "Because it is not water-soluble and is tightly bound to albumin, it cannot be filtered or excreted by the kidney. Only conjugated (water-soluble) bilirubin enters the urine - dark urine therefore means conjugated hyperbilirubinaemia.",
+      "explanation_ar": "قاعدة ذهبية: البول الداكن = بيليروبين مقترن، أما غير المقترن فبوله طبيعي دائماً."
+    },
+    {
+      "id": "L8_git_2_f6",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "How much urobilinogen is excreted daily in the urine, and what does the lecture diagram show for intestinal urobilinogen/stercobilinogen?",
+      "back_text": "A small amount (4 mg/day) is absorbed from the bowel and excreted in the urine as urobilinogen (then oxidized to urobilin). The diagram shows colonic production of urobilinogen and stercobilinogen of about 100-200 mg/day each, with stercobilin excreted in stool giving its brown colour.",
+      "explanation_ar": "4 ملغ/يوم في البول و100-200 ملغ/يوم لكل من اليوروبيلينوجين والستركوبيلينوجين في المعي حسب مخطط المحاضرة."
+    },
+    {
+      "id": "L8_git_2_f7",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "card_type": "basic",
+      "front_text": "How much bile does the liver secrete daily and what are its four contents listed in the lecture?",
+      "back_text": "1-2 L of bile daily, containing bile acids (formed from cholesterol), phospholipids, bilirubin and cholesterol.",
+      "explanation_ar": "1-2 ليتر يومياً: أملاح صفراوية من الكولسترول + فوسفولبيدات + بيليروبين + كولسترول."
+    },
+    {
+      "id": "L8_git_2_f8",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "card_type": "basic",
+      "front_text": "Which enzymes are the most sensitive markers of acute hepatocellular injury, and what were their old names?",
+      "back_text": "The aminotransferases: ALT (formerly SGPT) and AST (formerly SGOT).",
+      "explanation_ar": "الأمينوترانسفيرازات ALT (SGPT سابقاً) وAST (SGOT سابقاً) أدق مؤشرات الأذية الخلوية الكبدية الحادة."
+    },
+    {
+      "id": "L8_git_2_f9",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "card_type": "basic",
+      "front_text": "Acute jaundice with ALT above 1000 U/L - which three cause categories are highly suggested?",
+      "back_text": "1) Infectious - hepatitis A or B; 2) Drugs - e.g. paracetamol; 3) Hepatic ischaemia. Not biliary obstruction.",
+      "explanation_ar": "فوق الألف: انتان (A أو B) أو دواء (باراسيتامول) أو نقص تروية كبدية - وليس انسداداً صفراوياً.",
+      "mnemonic_ar": "فوق الألف: انتان + دواء + إقفار (A/B - باراسيتامول - نقص تروية)"
+    },
+    {
+      "id": "L8_git_2_f10",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "card_type": "basic",
+      "front_text": "An asymptomatic patient has an isolated raised ALP. Which two enzymes confirm a hepatobiliary source, and why?",
+      "back_text": "Gamma-GT (GGT) and 5'-nucleotidase: they rise in hepatobiliary disease but are NOT elevated in bone disease, so they localise the ALP rise to the liver and biliary tree.",
+      "explanation_ar": "GGT ونوكليوتيداز 5 لا يرتفعان في مرض العظم، لذا هما حكما المصدر الكبدي لارتفاع ALP المعزول."
+    },
+    {
+      "id": "L8_git_2_f11",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "card_type": "basic",
+      "front_text": "Which clotting factor is NOT produced by the liver, and where is it made?",
+      "back_text": "Factor VIII - it is produced by vascular endothelial cells. All other clotting factors are synthesised by the liver, which is why prothrombin time is a test of hepatic synthetic function.",
+      "explanation_ar": "العامل الثامن وحده من الخلايا البطانية الوعائية وليس من الكبد - فخ امتحاني شهير."
+    },
+    {
+      "id": "L8_git_2_f12",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "card_type": "basic",
+      "front_text": "What is the half-life of albumin and what does a low serum albumin indicate?",
+      "back_text": "About 2 weeks. A low albumin indicates chronic liver disease - it falls too slowly to be a reliable marker of acute injury.",
+      "explanation_ar": "نصف عمر الألبومين أسبوعان؛ انخفاضه علامة مرض كبدي مزمن لا حاد."
+    },
+    {
+      "id": "L8_git_2_f13",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c2",
+      "card_type": "basic",
+      "front_text": "Describe the dual perfusion and venous drainage of the liver.",
+      "back_text": "The majority of the supply comes via the portal vein (nutrient-rich blood from the gut through the splanchnic circulation - the principal route of nutrient trafficking to the liver); a minority comes from the hepatic artery. Venous drainage is via the hepatic veins into the inferior vena cava.",
+      "explanation_ar": "الأغلب وريد بابي (مغذيات) والأقل شريان كبدي، والتصريف أوردة كبدية إلى الأجوف السفلي."
+    },
+    {
+      "id": "L8_git_2_f14",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c2",
+      "card_type": "basic",
+      "front_text": "What is the functional unit of the liver, and what are the components of the hepatic lobule?",
+      "back_text": "The functional unit is the hepatic acinus. The lobule comprises a central vein, radiating sinusoids separated by single hepatocyte plates, and peripheral portal tracts (portal triad: portal vein, hepatic artery, bile duct).",
+      "explanation_ar": "الوحدة الوظيفية هي الكينوس، أما الفصيص فمكون من وريد مركزي وجيوبانيات مشعة وصفائح خلوية أحادية وساحات بابية."
+    },
+    {
+      "id": "L8_git_2_f15",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "card_type": "basic",
+      "front_text": "Gilbert's syndrome - prevalence, molecular defect and bilirubin behaviour?",
+      "back_text": "Prevalence about 10% of white populations; reduced transcription of the UGT1A1 gene (decreased UDP-glucuronyl transferase activity). Isolated unconjugated hyperbilirubinaemia, usually an incidental screening finding (clinical jaundice uncommon), rises 2-3-fold with fasting or dehydration but generally below 4 mg/dL.",
+      "explanation_ar": "جيلبرت: 10% من البيض، نقص نسخ UGT1A1، يكتشف عرضياً، يزداد 2-3 أضعاف بالصوم والتجفاف ويبقى تحت 4 ملغ/دل."
+    },
+    {
+      "id": "L8_git_2_f16",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "card_type": "basic",
+      "front_text": "Crigler-Najjar syndrome type I vs type II - enzyme activity, onset and treatment?",
+      "back_text": "Both from mutations in the coding region of UGT1A1. Type I: beta-UGT activity ABSENT, marked unconjugated hyperbilirubinaemia evident shortly after birth. Type II: patients not ill in the neonatal period, may not be diagnosed until early childhood; most can be treated successfully with phenobarbital.",
+      "explanation_ar": "النمط الأول غياب الخميرة ويرقان شديد وليدي، والنمط الثاني أخف ويعالج بالفينوباربيتال."
+    },
+    {
+      "id": "L8_git_2_f17",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "card_type": "basic",
+      "front_text": "Dubin-Johnson vs Rotor syndrome - what is the biopsy difference?",
+      "back_text": "Both are autosomal disorders of conjugated/mixed hyperbilirubinaemia from impaired canalicular export of conjugated bilirubin. Dubin-Johnson: coarse pigment in centrilobular hepatocytes on biopsy (black liver). Rotor: completely NORMAL liver biopsy.",
+      "explanation_ar": "دوبين-جونسون: صباغ خشن بالخلايا المركزية الفصيصية (كبد أسود). روتور: خزعة طبيعية تماماً."
+    },
+    {
+      "id": "L8_git_2_f18",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "card_type": "basic",
+      "front_text": "Why is haemolytic jaundice usually mild, and what is the exception?",
+      "back_text": "Because a healthy liver can excrete a bilirubin load six times greater than normal before unconjugated bilirubin accumulates in the plasma. The exception is newborns, who have less capacity to metabolise bilirubin.",
+      "explanation_ar": "الكبد السليم يطرح 6 أضعاف الحمل الطبيعي؛ الوليد استثناء لضعف طاقته الاستقلابية."
+    },
+    {
+      "id": "L8_git_2_f19",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c8",
+      "card_type": "basic",
+      "front_text": "Urine and stool colour in hepatocellular jaundice, and which bilirubin fractions rise?",
+      "back_text": "Tea-coloured (dark) urine because conjugated bilirubin is excreted renally, with NORMAL-coloured stool. Both conjugated and unconjugated bilirubin fractions rise in the blood.",
+      "explanation_ar": "بول بلون الشاي وبراز طبيعي مع ارتفاع الكسرين معاً في الدم."
+    },
+    {
+      "id": "L8_git_2_f20",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c9",
+      "card_type": "basic",
+      "front_text": "Early vs late clinical features of cholestatic jaundice?",
+      "back_text": "Early: jaundice, dark urine, pale stools, pruritus. Late: malabsorption of fat-soluble vitamins A, D, E, K (weight loss, steatorrhoea, osteomalacia, bleeding tendency); xanthelasma and xanthomas; cholangitis with fever and rigors.",
+      "explanation_ar": "المبكرة: يرقان وبول داكن وبراز شاحب وحكة. المتأخرة: سوء امتصاص A D E K (نقص وزن، إسهال دهني، تلين عظام، نزف) وزانثيلازما وكلانجيت بحمى ونافض.",
+      "mnemonic_ar": "المبكر: يرقان-بول-براز-حكة | المتأخر: فيتامينات أربع (ADEK) + زانثوما + كلانجيت"
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L8_git_2_q1",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "question_stem": "A 22-year-old man has a history of recurrent episodes of self-resolving mild jaundice since childhood. He noticed yellow eyes at the end of an exhausting heavy-duty day during which he barely ate or drank. He is otherwise completely healthy and takes no drugs. Investigations: TSB 2.9 mg/dL, direct bilirubin 0.4 mg/dL, AST 25 U/L, ALT 22 U/L, ALP 88 U/L, and a normal full blood count. What is the most likely diagnosis?",
+      "options": [
+        "Gilbert's syndrome",
+        "Crigler-Najjar syndrome type II",
+        "Dubin-Johnson syndrome",
+        "Drug-induced haemolytic anaemia",
+        "Acute viral hepatitis A"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النمط الصحيح: يرقان معزول غير مقترن (غير المقترن = 2.9 ناقص 0.4 = 2.5 ملغ/دل أي الحصة الكبرى) مع إنزيمات كبد ونقي طبيعية تماماً، وشاب سليم يرقان متكرر ذاتي الشفاء منذ الطفولة أثاره نهار شاق (صوم وتجفاف). هذه متلازمة جيلبرت النمطية: نقص نسخ جين UGT1A1 فيرتفع البيليروبين 2-3 أضعاف مع الصوم أو التجفاف ويبقى عادة تحت 4 ملغ/دل. استبعادات: كريغلر-نجار النمط الثاني طفرة مشفرة مع إنزيم متبقٍ وقد لا يشخص قبل الطفولة لكنه ليس يرقاناً متقطعاً معزولاً بشاب سليم منذ الطفولة بهذا النمط الهادئ؛ دوبين-جونسون فرط بيليروبين مقترن أو مختلط مع صباغ خشن بالخزعة وليس غير مقترن؛ الانحلال الدوائي يستلزم فقر دم وارتفاع شبكيات ودواء مؤكسد؛ والتهاب الكبد A الحاد يرفع الترانس أمينازات بشدة مع بادئة حموية معوية. الوقاية: تجنب الصوم المطول والتجفاف.",
+      "hints": [
+        "Calculate the unconjugated fraction and note that all other tests are normal.",
+        "The jaundice has recurred since childhood and worsens with fasting and dehydration.",
+        "The genetic defect here is reduced transcription of UGT1A1, not complete absence of the enzyme."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q2",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "question_stem": "A 20-year-old man on trimethoprim-sulfamethoxazole for a urinary tract infection noticed that his sclera turned yellow over the last two days. Investigations: TSB 6 mg/dL, direct bilirubin 0.6 mg/dL, Hb 6 g/dL, corrected reticulocyte count 6%, transaminases normal. What is the mechanism of his jaundice?",
+      "options": [
+        "Increased bilirubin production from haemolysis overwhelming normal hepatic conjugation",
+        "Impaired conjugation from absent UDP-glucuronyl transferase activity",
+        "Impaired canalicular export of conjugated bilirubin",
+        "Obstruction of the extrahepatic bile ducts",
+        "Massive hepatocellular necrosis with ALT above 1000 U/L"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذا هو سؤال المحاضرة الثاني: Hb 6 غ/دل مع عدلة شبكية مصححة 6% تعني فقر دم متجدد انحلالي، والبيليروبين غير المقترن سائد (6 ناقص 0.6 = 5.4). الدواء المؤكسد TMP-SMX يحرض انحلال الدم (كلاسيكياً عند ناقصي G6PD) فيرتفع إنتاج البيليروبين فوق قدرة الاقتران الكبدي فيرتفع غير المقترن معزولاً مع إنزيمات طبيعية. استبعادات: غياب خميرة الاقتران (كريغلر-نجار الأول) يعطي يرقاناً شديداً وليدياً وليس فقر دم انحلالياً؛ ضعف الطرح القنيوي (دوبين-جونسون وروتر) يرفع المقترن أو المختلط؛ انسداد القنوات يرفع المباشر مع ALP وGGT وبول داكن وبراز شاحب؛ والنخر الخلوي الكبدي الشديد يرفع ALT فوق 1000 وهو ليس الحالة هنا لكون الترانس أمينازات طبيعية.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q3",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c8",
+      "question_stem": "A 25-year-old woman presents with one week of malaise, anorexia, nausea and now visible jaundice. Investigations: TSB 8.2 mg/dL, AST 1650 U/L, ALT 1820 U/L, ALP 140 U/L, GGT 90 U/L. Which group of causes should be suspected first?",
+      "options": [
+        "Viral hepatitis (A or B), drug injury (e.g. paracetamol) or hepatic ischaemia",
+        "Choledocholithiasis with extrahepatic obstruction",
+        "Gilbert's syndrome unmasked by fasting",
+        "Chronic autoimmune cholestatic disease",
+        "Occult gastrointestinal malignancy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قاعدة المحاضرة: اليرقان الحاد مع ALT أكبر من 1000 وحدة/ل يرجح بقوة سبباً انتانياً (التهاب كبد A أو B) أو دوائياً (باراسيتامول) أو نقص تروية كبدية، وهذا ما تنطبق معالمه هنا (بادئة تعب وفقدان شهية وغثيان مع ترانس أمينازات هائلة وALP شبه طبيعية). استبعادات: حصاة القناة الجامعة تعطي يرقاناً ركودياً بغلبة ALP وGGT وألم بطني وبراز شاحب مع ترانس أمينازات معتدلة؛ جيلبرت يرقان معزول غير مقترن دون ارتفاع إنزيمات؛ المرض المناعي الركودي المزمن (كالتليف الصفراوي البدئي) يصيب عادة امرأة متوسطة العمار بحكة مزمنة وALP مرتفع لا ارتفاع ترانس أميناز هائل حاد؛ والخباثة الهضمية الخفية تعطي يرقاناً لاألمياً ركودياً لا نمطاً خلوياً حاداً.",
+      "hints": [
+        "Compare the magnitude of transaminase elevation against alkaline phosphatase.",
+        "There is a threshold number in the lecture that marks severe acute hepatocellular injury."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q4",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c5",
+      "question_stem": "A 58-year-old asymptomatic man is found on routine screening to have an isolated ALP of 340 U/L; his bilirubin, ALT and AST are normal. Which test best confirms that the ALP is of hepatobiliary origin?",
+      "options": [
+        "Serum gamma-GT (with 5'-nucleotidase)",
+        "Repeat bilirubin fractionation",
+        "Liver biopsy",
+        "FibroScan",
+        "Serum hyaluronan"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الاستخدام الأول لإنزيمي GGT ونوكليوتيداز 5 حسب المحاضرة هو تحديد مصدر ارتفاع ALP المعزول، لأنهما لا يرتفعان في مرض العظم: ارتفاعهما مع ALP يؤكد المصدر الكبدي الصفراوي، واعتدالهما يوجه نحو العظم. استبعادات: إعادة تجزئة البيليروبين لا تخبر عن مصدر ALP لأنه طبيعي أصلاً؛ الخزعة الكبدية اختبار اجتياحي وليست خطوة أولى لارتفاع ALP معزول؛ الفيبروسكان يقدر التليف لا مصدر الإنزيم؛ والهيالورونان واسم تليف مفرد وليس اختبار توطين مصدر ALP.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q5",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c9",
+      "question_stem": "A 68-year-old man presents with three weeks of painless progressively deepening jaundice, 8 kg weight loss, dark urine, pale stools and pruritus. He is afebrile. Examination reveals a palpable, non-tender gallbladder. Which is the most likely underlying cause?",
+      "options": [
+        "Carcinoma below the cystic duct (usually pancreatic head)",
+        "Choledocholithiasis",
+        "Haemolytic jaundice",
+        "Gilbert's syndrome",
+        "Primary biliary cholangitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بحسب جدول المحاضرة (22.19): المرارة المجسوسة مع اليرقان تعني خباثة تحت القناة الكيسية وعادة في البنكرياس (رأس البنكرياس)، ويدعم ذلك اليرقان اللاألمي الثابت المتزايد مع نقص الوزن. استبعادات: حصاة القناة الجامعة تعطي يرقاناً متذبذباً مع ألم بطني وكلانجيت والمرارة بالحصيات المزمنة متليفة متقلصة لا تتجس؛ الانحلال ويرقان ما قبل الكبد يرفعان غير المقترن مع بول وبراز طبيعيين وبدن ليموني خفيف؛ جيلبرت يرقان معزول غير مقترن تحت 4 ملغ/دل دون حكة أو بول داكن؛ والتليف الصفراوي البدئي مرض ركودي مزمن عند امرأة متوسطة العمر بحكة مستمرة ويرقان ثابت دون مرارة مجسوسة أو نقص وزن الخباثة.",
+      "hints": [
+        "This jaundice is painless and progressive with weight loss.",
+        "What does a palpable, non-tender gallbladder mean in Table 22.19?"
+      ],
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q6",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c9",
+      "question_stem": "In a jaundiced patient, which clinical pattern most strongly points to choledocholithiasis rather than malignancy?",
+      "options": [
+        "Fluctuating jaundice with abdominal pain",
+        "Static, progressively increasing painless jaundice",
+        "Painless jaundice with a palpable gallbladder",
+        "Occult blood in the stools",
+        "Irregular hepatomegaly"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "حسب الجدول: اليرقان المتذبذب يعزى للحصاة القنوية أو التضيق أو التهاب البنكرياس أو كيسة القناة الجامعة أو التصلب الصفراوي البدئي، والألم البطني يوحي بالحصيات (أو البنكرياس أو كيسة القناة الجامعة) - فتضاف الحصاة القنوية الجامعة. استبعادات: اليرقان الثابت المتزايد اللاألمي يوحي بالخباثة والتليف الصفراوي البدئي والتصلب الصفراوي البدئي؛ المرارة المجسوسة تعني خباثة تحت القناة الكيسية (غالباً بنكرياس)؛ الدم الخفي بالبراز يعني ورم حليمة فاتر؛ وضخامة الكبد غير المنتظمة تعني سرطاناً كبدياً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q7",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c9",
+      "question_stem": "A patient with longstanding cholestatic jaundice develops a bleeding tendency with easy bruising. What is the mechanism of the coagulopathy?",
+      "options": [
+        "Malabsorption of vitamin K due to absence of bile salts in the gut",
+        "Failure of hepatic synthesis of factor VIII",
+        "Bone marrow suppression by bilirubin",
+        "Vitamin C deficiency",
+        "Excess urinary loss of clotting factors"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "من مضاعفات الركود المتأخرة سوء امتصاص الفيتامينات الذوابة A وD وE وK، ونقص فيتامين K يضعف عوامل التخثر المعتمدة عليه فيظهر ميل للنزف وكثرة الكدمات. استبعادات: العامل الثامن يصنع في الخلايا البطانية الوعائية وليس في الكبد أصلاً فلا يعوز نقصه في الركود؛ البيليروبين لا يكبت نقي العظم؛ نقص فيتامين C يسبب كساحاً وعائياً لا يذكر في المحاضرة ضمن ركود الصفراء؛ ولا تطرح عوامل التخثر في البول.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q8",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "question_stem": "A 2-year-old child is confirmed to have Crigler-Najjar syndrome type II after evaluation of persistent unconjugated hyperbilirubinaemia. According to the lecture, which therapy treats most of these patients successfully?",
+      "options": [
+        "Phenobarbital",
+        "Fresh frozen plasma",
+        "Vitamin K",
+        "Cholestyramine",
+        "Albumin infusion"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تنص المحاضرة صراحة: معظم مرضى كريغلر-نجار النمط الثاني يعالجون بنجاح بالفينوباربيتال، وهو محرض إنزيمي يرفع فعالية الخميرة المتبقية (UGT). استبعادات: البلازما الطازجة وفيتامين K يعالجان اضطراب التخثر وليسا علاجاً لفرط بيليروبين الدم غير المقترن؛ الكوليستيرامين يخفف حكة الركود المقترن؛ وضخ الألبومين يرتبط بالبيليروبين غير المقترن مؤقتاً ولا يصحح عوز الخميرة ولا يمنع نوبات اليرقان، وليس علاج المحاضرة المذكور.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q9",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c7",
+      "question_stem": "A 24-year-old woman has intermittent mild jaundice. Labs show a conjugated and mixed hyperbilirubinaemia with normal liver enzymes. Liver biopsy reveals coarse pigment within centrilobular hepatocytes. What is the diagnosis?",
+      "options": [
+        "Dubin-Johnson syndrome",
+        "Rotor's syndrome",
+        "Gilbert's syndrome",
+        "Crigler-Najjar syndrome type II",
+        "Haemolytic anaemia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الصباغ الخشن في الخلايا الكبدية المركزية الفصيصية (الكبد الأسود) هو العلامة النسيجية المميزة لدوبين-جونسون، وهو اضطراب جسمي بضعف الطرح القنيوي للبيليروبين المقترن يعطي فرط بيليروبين مقترن أو مختلطاً. استبعادات: روتور ضعف طرح مشابه لكن خزعته طبيعية تماماً؛ جيلبرت وكريغلر-نجار الثاني اضطرابا اقتران يرفعان غير المقترن فقط؛ والانحلال يرفع غير المقترن مع فقر دم وشبكيات مرتفعة. هذا السؤال يحفظ بجدول المقارنة في مفهوم يرقان ما قبل الكبد.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q10",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c4",
+      "question_stem": "A 60-year-old man with complete obstruction of the distal common bile duct notices that his urine has turned dark brown. What is the mechanism of the dark urine?",
+      "options": [
+        "Water-soluble conjugated bilirubin regurgitates into the blood and is excreted by the kidney",
+        "Unconjugated bilirubin is freely filtered at the glomerulus",
+        "Excess urobilinogen produced in the gut is absorbed and stains the urine",
+        "Myoglobinuria from muscle breakdown",
+        "Deposition of carotene in the renal tubules"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في الانسداد يرتد البيليروبين المقترن (الذواب في الماء) إلى الدم فيطرحه الكلى فيلون البول باللون الداكن، ويرافق ذلك غياب الصفراء عن المعي فيفتقد البراز لونه البني (براز شاحب) لنقص الستركوبيلينوجين. استبعادات: غير المقترن مرتبط بالألبومين لا يرشح أبداً؛ اليوروبيلينوجين يمتص في الوضع الطبيعي بكمية 4 ملغ/يوم لكن في الانسداد يقل لأن الصفراء لا تصل للمعي أصلاً فلا يفسر البول الداكن بل على العكس ينخفض؛ الميوغلوبين يخص انحلال العضلات؛ والكاروتين لا يترسب في الأنابيب الكلوية وإنما في الجلد مع سالم الملتحمة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_git_2_q11",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c3",
+      "question_stem": "Which of the following is NOT a function of the liver as described in this lecture?",
+      "options": [
+        "Production of bile required for emulsification of fats in the duodenum",
+        "Gluconeogenesis from amino acids",
+        "Storage of vitamin A in hepatic stellate cells",
+        "Removal of effete erythrocytes by Kupffer cells",
+        "Synthesis of clotting factor VIII"
+      ],
+      "correct_index": 4,
+      "explanation_ar": "كل عوامل التخثر تنتج في الكبد ما عدا العامل الثامن الذي تنتجه الخلايا البطانية الوعائية، فتصنيعه ليس وظيفة كبدية - وهذا فخ امتحاني متكرر. أما بقية الخيارات فجمعها وظائف كبدية صريحة في المحاضرة: إنتاج الصفراء للوظيفة الهضمية (المحاكاة في العفج)، استحداث السكر من الحموض الأمينية، تخزين فيتامين A في الخلايا النجمية الكبدية، وإزالة الكريات العجوزة بخلايا كوبفر البلعمية.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L8_git_2_q12",
+      "lecture_id": "L8_git_2",
+      "concept_id": "L8_git_2_c6",
+      "question_stem": "A 30-year-old woman has noticed yellow palms and face for two months. Her conjunctivae are white, serum bilirubin is 0.7 mg/dL and all LFTs are normal. She eats large amounts of carrots and pumpkin daily. What is the diagnosis?",
+      "options": [
+        "Hypercarotenemia",
+        "Gilbert's syndrome",
+        "Haemolytic jaundice",
+        "Cholestatic jaundice",
+        "Crigler-Najjar syndrome type II"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اصفرار الجلد مع سالم الملتحمة وبيليروبين طبيعي هو فرط الكاروتين من الإكثار من الأغذية الغنية به، فالكاروتين يترسب في الجلد ولا يصبغ الملتحمة بعكس البيليروبين - وهذا هو الفارق السريري الذي تسأل عنه المحاضرة. استبعادات: جيلبرت وكريغلر-نجار الثاني يرفعان البيليروبين الفعلي غير المقترن؛ الانحلال يعطي فقر دم وشبكيات مع بيليروبين مرتفع؛ والركود يعطي بيليروبين مباشر مرتفعاً مع بول داكن وبراز شاحب وحكة - وكلها تنفي هنا القيم الطبيعية والصلبة البيضاء.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L8_git_2_case1",
+      "lecture_id": "L8_git_2",
+      "title": "Painless Jaundice in an Elderly Man - the Obstructive Pattern",
+      "scenario": "A 68-year-old man is referred to the gastroenterology clinic with three weeks of painless, progressively deepening yellowing of his eyes and skin, generalized itching, dark urine and pale, bulky floating stools. He has lost 8 kg over the last two months. He drinks no alcohol and takes no regular medications.",
+      "vignette": {
+        "age": 68,
+        "sex": "male",
+        "chief_complaint": "Painless progressive jaundice with pruritus, dark urine and pale stools for 3 weeks",
+        "history": "8 kg unintentional weight loss over 2 months; dark urine and pale stools; no abdominal pain; no fever or rigors; no alcohol, no intravenous drug use, no blood transfusions; no recent drug intake; 30 pack-year smoker; no family history of liver disease.",
+        "vitals": {
+          "bp": "132/84 mmHg",
+          "hr": "84/min regular",
+          "rr": "16/min",
+          "temp": "36.7 C",
+          "spo2": "98% on room air"
+        },
+        "exam": "Deep scleral icterus and jaundiced skin with excoriations from scratching. Abdomen: soft, non-tender, with a palpable, non-tender, distended gallbladder below the right costal margin; liver span 12 cm with regular edges; no splenomegaly; no ascites. Digital rectal exam normal (no occult blood).",
+        "labs": [
+          {
+            "name": "Total serum bilirubin (TSB)",
+            "value": "18.5 mg/dL (0.2-1.2)",
+            "flag": "critical"
+          },
+          {
+            "name": "Direct (conjugated) bilirubin",
+            "value": "14.8 mg/dL (0-0.3)",
+            "flag": "critical"
+          },
+          {
+            "name": "AST",
+            "value": "96 U/L (5-40)",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "88 U/L (7-41)",
+            "flag": "high"
+          },
+          {
+            "name": "Alkaline phosphatase (ALP)",
+            "value": "760 U/L (40-129)",
+            "flag": "high"
+          },
+          {
+            "name": "Gamma-GT",
+            "value": "610 U/L (10-71)",
+            "flag": "high"
+          },
+          {
+            "name": "Albumin",
+            "value": "3.3 g/dL (3.5-5.0)",
+            "flag": "low"
+          },
+          {
+            "name": "Prothrombin time",
+            "value": "16.5 s, INR 1.5 (11-13.5 s)",
+            "flag": "high"
+          },
+          {
+            "name": "Hb",
+            "value": "11.6 g/dL (13.5-17.5)",
+            "flag": "low"
+          },
+          {
+            "name": "WBC",
+            "value": "7.8 x10^9/L (4-11)",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "240 x10^9/L (150-400)",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: dilated intrahepatic and extrahepatic bile ducts; distended gallbladder; no gallstones seen; a 3 cm solid mass in the pancreatic head. MRI + MRCP confirms a pancreatic-head mass compressing the distal common bile duct; patent hepatic vasculature; no evidence of cirrhosis or portal hypertension."
+      },
+      "steps": [
+        {
+          "id": "L8_git_2_case1_s1",
+          "prompt": "From the biochemistry, what is the type of this patient's jaundice?",
+          "options": [
+            "Predominantly conjugated (direct) cholestatic - obstructive pattern",
+            "Predominantly unconjugated haemolytic pattern",
+            "Isolated unconjugated hyperbilirubinaemia of Gilbert's syndrome",
+            "Acute hepatocellular pattern with ALT above 1000 U/L",
+            "Subclinical carotenemia"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البيليروبين المباشر 14.8 من أصل 18.5 ملغ/دل أي سائد المقترن، مع ALP وGGT مرتفعين بشدة وترانس أمينازات معتدلة فقط (88-96) - هذا النمط الركودي الانسدادي وليس انحلالياً ولا خلوياً حاداً ولا جيلبرت (الذي يعطي يرقاناً معزولاً غير مقترن تحت 4 ملغ/دل) ولا كاروتين (بيليروبينه طبيعي أصلاً).",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case1_s2",
+          "prompt": "Which investigation from the lecture's imaging list best defines the level and cause of the biliary obstruction?",
+          "options": [
+            "MRI with MRCP (magnetic resonance cholangiopancreatography)",
+            "Liver biopsy",
+            "FibroScan",
+            "Plain abdominal X-ray",
+            "Repeat LFTs after 3 months of observation"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "سلم تصوير المحاضرة: إيكو ثم طبقي محوري ثم رنين ثم رنين مع MRCP، والأخير هو الأدق في تحديد مستوى الانسداد وسببه دون تداخل. استبعادات: الخزعة ليست لتشخيص الانسداد بل لتحديد سبب يرقان الخلايا الكبدية؛ الفيبروسكان لتقييم التليف؛ الشعاع البسيط لا يرى القنوات الصفراوية؛ والانتظار 3 أشهر في يرقان انسدادي خبيث مشتبه إهمال خطير.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case1_s3",
+          "prompt": "The painless progressive jaundice with a palpable non-tender gallbladder most strongly indicates which cause (lecture Table 22.19)?",
+          "options": [
+            "Carcinoma below the cystic duct (usually pancreas)",
+            "Choledocholithiasis",
+            "Pancreatitis with pseudocyst",
+            "Choledochal cyst",
+            "Primary biliary cholangitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "جدول المحاضرة حرفياً: المرارة المجسوسة = خباثة تحت القناة الكيسية (وعادة بنكرياسية)، ويدعمها اليرقان الثابت المتزايد اللاألمي مع نقص الوزن. استبعادات: الحصاة تعطي يرقاناً متذبذباً مؤلماً مع كلانجيت محتمل؛ التهاب البنكرياس وكيسة القناة الجامعة من أسباب اليرقان المتذبذب والكتلة البطنية لكن ليست المرارة المجسوسة؛ والتليف الصفراوي البدئي يرقان ركودي مزمن ثابت دون مرارة مجسوسة.",
+          "xp": 15
+        },
+        {
+          "id": "L8_git_2_case1_s4",
+          "prompt": "His prothrombin time is prolonged (INR 1.5). What is the most likely mechanism in this clinical setting?",
+          "options": [
+            "Malabsorption of vitamin K from lack of bile salts in the gut",
+            "Failure of hepatic factor VIII synthesis",
+            "Bone marrow suppression",
+            "Vitamin C deficiency",
+            "Autoimmune clotting factor destruction"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "من مضاعفات الركود المتأخرة سوء امتصاص فيتامينات A وD وE وK لغياب الأملاح الصفراوية عن المعي، ونقص فيتامين K يطيل زمن البروثرومبين (والمعاودة الأنبوبية توضح أنه ليس خللاً تركيبياً كبدياً صرفاً). استبعادات: العامل الثامن بطاني المنشأ لا يصنع في الكبد أصلاً؛ وكبت النقي ونقص فيتامين C والمناعة الذاتية ليست آليات مذكورة في ركود الصفراء.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case1_s5",
+          "prompt": "Which complication of cholestatic jaundice must this patient be monitored for, characterised by fever and rigors?",
+          "options": [
+            "Cholangitis",
+            "Hepatic encephalopathy",
+            "Spontaneous bacterial peritonitis",
+            "Hepatorenal syndrome",
+            "Variceal bleeding"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الكلانجيت من مضاعفات الركود المدروسة في المحاضرة ويتظاهر بحمى ونافض، ويرتبط حسب الجدول بالحجر والتضيق وكيسة القناة الجامعة، وقد يحدث مع أي انسداد قنيوي لا سيما بعد تداخلات على القنوات. استبعادات: الاعتلال الدماغي الكبدي والتخرج البكتيري التلقائي والمتلازمة الكبدية الكلوية ونزف الدوالي مضاعفات تليف وفرط ضغط بابي متقدم، ولا يوجد هنا دليل على تشمع أو فرط ضغط بابي في التصوير.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: سرطان رأس البنكرياس مسبباً يرقاناً ركودياً انسدادياً لاألمياً. الدروس المستفادة: 1) اليرقان اللاألمي الثابت المتزايد مع نقص الوزن يوحي بخباثة، والمرارة المجسوسة غير المتوجعة تعني انسداداً خبيثاً تحت القناة الكيسية (غالباً رأس البنكرياس) حسب جدول 22.19. 2) النمط المخبري: سوية بيليروبين مباشر مع ALP وGGT مرتفعين بشدة وترانس أمينازات معتدلة - على عكس اليرقان الخلوي الحاد حيث ALT يتجاوز 1000 وحدة/ل (انتان A أو B أو باراسيتامول أو نقص تروية). 3) البول الداكن والبراز الشاحب: المقترن الذوّاب يرتد للدم ويطرح بالبول، وتغيب الصفراء عن المعي فيفتقد البراز الستركوبيلين. 4) طول زمن البروثرومبين هنا نقص فيتامين K بسوء الامتصاص الدهني وليس فشلاً تركيبياً. 5) راقب الحمى والنافض كعلامة كلانجيت. الرسالة الختامية: يرقان + مرارة مجسوسة بلا ألم عند مسن = خباثة حتى يثبت العكس.",
+      "difficulty": "advanced",
+      "order_index": 0
+    },
+    {
+      "id": "L8_git_2_case2",
+      "lecture_id": "L8_git_2",
+      "title": "Acute Lemon-Yellow Jaundice in a Young Man - the Haemolytic (Pre-hepatic) Pattern",
+      "scenario": "A 20-year-old man presents to the emergency department because his friends noticed that his eyes turned yellow two days ago. He is being treated for a urinary tract infection with trimethoprim-sulfamethoxazole started five days ago. He reports fatigue but no abdominal pain; his urine has a normal colour and his stool is brown.",
+      "vignette": {
+        "age": 20,
+        "sex": "male",
+        "chief_complaint": "Yellow sclera for 2 days with fatigue",
+        "history": "Urinary tract infection treated with trimethoprim-sulfamethoxazole for the last 5 days; no previous jaundice episodes; no alcohol, no transfusions, no intravenous drug use, no travel; family history unremarkable.",
+        "vitals": {
+          "bp": "112/70 mmHg",
+          "hr": "104/min",
+          "rr": "18/min",
+          "temp": "37.0 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Pale conjunctivae with a lemon-yellow tinge of the sclerae and skin. Tachycardia 104/min. Abdomen soft, non-tender, no hepatosplenomegaly; no lymphadenopathy. Urine colour normal; stool brown.",
+        "labs": [
+          {
+            "name": "Total serum bilirubin (TSB)",
+            "value": "6.0 mg/dL (0.2-1.2)",
+            "flag": "high"
+          },
+          {
+            "name": "Direct (conjugated) bilirubin",
+            "value": "0.6 mg/dL (0-0.3)",
+            "flag": "high"
+          },
+          {
+            "name": "Hb",
+            "value": "6.0 g/dL (13.5-17.5)",
+            "flag": "critical"
+          },
+          {
+            "name": "Corrected reticulocyte count",
+            "value": "6% (0.5-2.5%)",
+            "flag": "high"
+          },
+          {
+            "name": "AST",
+            "value": "36 U/L (5-40)",
+            "flag": "normal"
+          },
+          {
+            "name": "ALT",
+            "value": "33 U/L (7-41)",
+            "flag": "normal"
+          },
+          {
+            "name": "ALP",
+            "value": "92 U/L (40-129)",
+            "flag": "normal"
+          },
+          {
+            "name": "LDH",
+            "value": "980 U/L (120-246)",
+            "flag": "high"
+          },
+          {
+            "name": "Haptoglobin",
+            "value": "8 mg/dL (30-200)",
+            "flag": "low"
+          },
+          {
+            "name": "Urine dipstick",
+            "value": "Bilirubin negative; urobilinogen increased",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: normal liver, spleen and biliary tree; no gallstones; no duct dilatation."
+      },
+      "steps": [
+        {
+          "id": "L8_git_2_case2_s1",
+          "prompt": "What is the type of this patient's jaundice?",
+          "options": [
+            "Pre-hepatic (haemolytic) predominantly unconjugated jaundice",
+            "Hepatocellular jaundice",
+            "Post-hepatic (obstructive) cholestatic jaundice",
+            "Congenital isolated hyperbilirubinaemia (Gilbert)",
+            "Carotenemia"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البيليروبين غير المقترن سائد (6 ناقص 0.6 = 5.4 ملغ/دل) مع إنزيمات كبد طبيعية تماماً وبول طبيعي اللون وبراز بني، مع فقر دم حاد وشبكيات مرتفعة = يرقان ما قبل كبدي انحلالي. استبعادات: اليرقان الخلوي يرفع الترانس أمينازات مع بول شاي؛ الانسدادي يرفع المباشر مع ALP وGGT وبول داكن وبراز شاحب؛ جيلبرت يرقان معزول دون فقر دم؛ والكاروتين بيليروبينه طبيعي.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case2_s2",
+          "prompt": "Which laboratory finding best confirms haemolysis as the mechanism?",
+          "options": [
+            "Corrected reticulocyte count of 6% with low haptoglobin and high LDH",
+            "ALT of 33 U/L",
+            "Direct bilirubin of 0.6 mg/dL",
+            "Normal ALP",
+            "Normal abdominal ultrasound"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الشبكيات المصححة المرتفعة (6% والطبيعي نحو 0.5-2.5%) تعني نخاعاً متجددناً يعوض انحلالاً نشطاً، ويعززها ارتفاع LDH وانخفاض الهابتوغلوبولين. استبعادات: ALT الطبيعي وALP الطبيعي والبيليروبين المباشر المنخفض كلها تدعم سلامة الكبد والقنوات لكنها لا تثبت الانحلال بذاتها؛ والإيكو الطبيعي ينفي الانسداد ولا يثبت الآلية الانحلالية.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case2_s3",
+          "prompt": "Why is his urine colour normal with no bilirubinuria?",
+          "options": [
+            "Unconjugated bilirubin is albumin-bound and not water-soluble, so it cannot pass into the urine",
+            "His kidneys are failing to filter any solute",
+            "He is drinking excessive amounts of water",
+            "Conjugated bilirubin is being stored in muscle",
+            "Urobilinogen is completely absent in haemolysis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "غير المقترن شحيح الذوبان ومرتبط بالألبومين فلا يرشح في الكبيبة ولا يظهر في البول أبداً، لذلك بول الانحلال طبيعي اللون (وقد يزداد اليوروبيلينوجين البولي لزيادة الإنتاج المعوي). استبعادات: الوظيفة الكلوية سليمة هنا؛ وشرب الماء لا يمنع البيليروبينبوريا؛ والمقترن لا يخزن بالعضلات؛ واليوروبيلينوجين يزداد في الانحلال ولا يغيب.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case2_s4",
+          "prompt": "What is the most likely etiology of the haemolysis?",
+          "options": [
+            "Drug-induced haemolysis caused by the oxidant sulfa drug (classically in G6PD deficiency)",
+            "Autoimmune haemolysis triggered by the urinary infection",
+            "Hereditary spherocytosis",
+            "Mechanical destruction by a prosthetic heart valve",
+            "Hypersplenism from portal hypertension"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "السؤال الثاني في المحاضرة نفسها: شاب على TMP-SMX (سلفا مؤكسدة) اصفرت صلبته مع Hb 6 وشبكيات 6% - انحلال دوائي، وكلاسيكياً عند ناقصي G6PD حيث يعجز الكريات عن تحمل الإجهاد التأكسدي. استبعادات: لا يوجد دليل مناعي (لا أدوية أخرى ولا مرض نسيجي)؛ لا قصة كريات كروية ولادية؛ ولا صمام قلبي صناعي؛ ولا تشمع أو ضخامة طحال في الفحص والإيكو.",
+          "xp": 10
+        },
+        {
+          "id": "L8_git_2_case2_s5",
+          "prompt": "What is the key management step to prevent recurrence of such episodes?",
+          "options": [
+            "Stop the culprit drug and avoid oxidant drugs in the future",
+            "Lifelong phenobarbital therapy",
+            "Elective cholecystectomy",
+            "Regular phlebotomy",
+            "Gluten-free diet"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "إيقاف الدواء المتهم فوراً وتجنب الأدوية المؤكسدة مستقبلاً (مع استقصاء G6PD) هو حجر الأساس، ويشمل الدعم نقل الدم حسب شدة الفقر ومراقبة الوظيفة الكلوية. استبعادات: الفينوباربيتال علاج كريغلر-نجار الثاني بتحريض الخميرة وليس للانحلال الدوائي؛ ولا حاجة لاستئصال المرارة إذ لا حصيات؛ والفصد الدموي علاج داء ترسب الأصبغة الدموية؛ والحمية الخالية من الغلوتين لسوء الامتصاص المعوي - وكلها خارج هذه الصورة.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: يرقان ما قبل كبدي انحلالي ناجم عن انحلال دم دوائي بدواء TMP-SMX عند شاب. الدروس المستفادة: 1) البيليروبين غير المقترن السائد مع إنزيمات كبد طبيعية تماماً = نمط ما قبل الكبد. 2) Hb 6 مع شبكيات مصححة 6% وLDH مرتفع وهابتوغلوبولين منخفض تؤكد الانحلال المتجدد. 3) البول طبيعي اللون والبراز بني لأن غير المقترن مرتبط بالألبومين لا يطرح بولياً - أسرع مميز سريري بين اليرقان المقترن وغير المقترن. 4) اليرقان الانحلالي خفيف عادة لأن الكبد السليم يطرح حمل بيليروبين يعادل ستة أضعاف الطبيعي. 5) الإيقاف الفوري للدواء المؤكسد وتجنبه لاحقاً (مع التفكير بنقص G6PD) هو الوقاية والعلاج. الرسالة الختامية: يرقان معزول غير مقترن + فقر دم متجدد = انحلال قبل أن تفكر بالكبد.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

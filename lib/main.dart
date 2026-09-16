@@ -37,9 +37,17 @@ Future<void> main() async {
   // (يفتح «المراجعة اليومية») + تحديث البيانات عند الإقلاع.
   unawaited(() async {
     try {
-      // عند نقرة الويدجت → انتقل للمراجعة اليومية عبر الراوتر العالمي.
+      // قبل كل شيء: معالج النقرة — قد تصل نقرة الإقلاع البارد في
+      // أي لحظة بعد هذا السطر. إن سبقت بناء الـ navigator تُسجَّل
+      // نيةً تستهلكها شاشة البداية (لا توجيه إلى فراغ).
       HomeWidgetService.setClickHandler(() {
-        rootNavigatorKey.currentState?.context.go(RoutePaths.dailyReview);
+        final NavigatorState? navigator = rootNavigatorKey.currentState;
+        if (navigator != null && navigator.context.mounted) {
+          navigator.context.go(RoutePaths.dailyReview);
+        } else {
+          // الراوتر لم يُبنَ بعد — نية تستهلكها شاشة البداية.
+          HomeWidgetService.setPendingDailyReview();
+        }
       });
       await HomeWidgetService.registerBackgroundTask();
       await HomeWidgetService.initClickRouting();

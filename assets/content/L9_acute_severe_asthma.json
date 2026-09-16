@@ -1,0 +1,896 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L9_acute_severe_asthma",
+    "specialty": "internal_medicine",
+    "title": "Acute Severe Asthma",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L9 acute severe asthma.pdf",
+      "page_count": 27
+    },
+    "tags": [
+      "acute-asthma",
+      "status-asthmaticus",
+      "life-threatening",
+      "pef",
+      "abg",
+      "nebuliser",
+      "magnesium"
+    ],
+    "order_index": 8,
+    "golden_tip": [
+      "SILENT CHEST, bradycardia, normal/raised PaCO2, SpO2 < 92%, exhaustion, coma — these are LIFE-THREATENING (status asthmaticus) features: the quiet asthmatic is the dying asthmatic. Near-fatal = raised PaCO2 and/or need for mechanical ventilation.",
+      "In acute severe asthma give oxygen targeting SaO2 94–98%. A high PaCO2 is NOT a reason to reduce oxygen (the opposite of COPD rules) — it is a WARNING SIGN of a life-threatening attack and an indication to escalate to ICU.",
+      "Doubling the ICS dose does NOT prevent an impending exacerbation — rescue PREDNISOLONE 40–50 mg/day for at least 5 days is what regains control; taper only if given > 3 weeks."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L9_c1",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Exacerbations of Asthma: Definition, Precipitants and Time of Onset",
+      "summary_ar": "تعريف التدهور الربوي ومحرضاته الفيروسية والبيئية (لماذا لا مضادات حيوية؟)، وتوقيت البدء والربو الهش واضطراب الإدراك.",
+      "sections": [
+        {
+          "heading": "What Defines an Exacerbation",
+          "body_text": "The course of asthma may be complicated by **exacerbations**, characterized by the triad: **(1) increased symptoms — shortness of breath, wheeze, cough; (2) worsening lung function — FEV1, FVC and FEV1/FVC all decline; (3) an increase in airway inflammation (reflected in sputum changes)**. This triple definition (symptoms + physiology + inflammation) is important because it explains why management combines bronchodilators (symptom/function) with systemic glucocorticoids (inflammation) — treating only one arm of the triad invites relapse.",
+          "key_points": [
+            "Exacerbation = increased symptoms (SOB, wheeze, cough) + worsening lung function (FEV1, FVC, FEV1/FVC) + increased airway inflammation (sputum)",
+            "Explains dual therapy: bronchodilators + systemic steroids"
+          ]
+        },
+        {
+          "heading": "Precipitants — and Why Antibiotics Are Usually NOT Needed",
+          "body_text": "**Exacerbations are most commonly precipitated by VIRAL infections**, but **moulds, pollens (particularly following thunderstorms) and air pollution are also implicated.** Because the dominant triggers are viral and allergic — not bacterial — routine antibiotics are NOT part of exacerbation management (the lecture's pointed question 'NEED TO ABX?'). Antibiotics are reserved for true bacterial evidence (fever with purulent sputum, consolidation, elevated inflammatory markers). The thunderstorm–pollen link (thunderstorm asthma) is a famous exam curiosity: storms fragment pollen grains into respirable allergenic particles triggering epidemics of exacerbations.",
+          "key_points": [
+            "Most common precipitant: VIRAL infections",
+            "Also implicated: moulds, pollens (especially after thunderstorms), air pollution",
+            "Antibiotics NOT routine — triggers are viral/allergic, not bacterial"
+          ]
+        },
+        {
+          "heading": "Time of Onset, Brittle Asthma and Blunted Perception",
+          "body_text": "Most exacerbations show **a gradual worsening over several hours to days, but some appear to occur with little or no warning — so-called BRITTLE ASTHMA.** Additionally, **an important minority of patients appear to have a blunted perception of airway narrowing and fail to appreciate the early signs of deterioration** — presenting late with severe attacks, and explaining why some patients die 'suddenly' from asthma they never felt worsening. Practical consequences: home PEF monitoring for poor perceivers, and written action plans that trigger rescue steroids on objective deterioration, not just symptoms.",
+          "key_points": [
+            "Gradual onset over hours-days is typical",
+            "Brittle asthma: little or no warning — abrupt severe attacks",
+            "Blunted perception of airway narrowing → missed early deterioration → late presentation"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Brittle asthma",
+          "definition_ar": "ربو هش: نوبات شديدة مفاجئة بلا إنذار مسبق."
+        },
+        {
+          "term": "Thunderstorm asthma",
+          "definition_ar": "وبيات تفاقم ربو بعد العواصف التي تفتت حبوب الطلع لجزيئات قابلة للاستنشاق."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L9_c2",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Management of Mild-to-Moderate Exacerbations and Rescue Courses",
+      "summary_ar": "علاج التدهور الخفيف-المتوسط: مضاعفة ICS لا تمنع النوبة، كورس الإنقاذ بالبريدنيزولون، ومؤشرات البدء الخمسة.",
+      "sections": [
+        {
+          "heading": "The Rescue Steroid Rule",
+          "body_text": "**Doubling the dose of inhaled glucocorticoids does NOT prevent an impending exacerbation** — a counterintuitive, exam-favorite fact. Instead, **short courses of at least 5 days of 'rescue' glucocorticoids (prednisolone 40–50 mg/day) are therefore often required to regain control.** **Tapering of the glucocorticoid dose to withdraw treatment is NOT necessary, unless it has been given for more than 3 weeks** (beyond 3 weeks, the adrenal axis warrants a taper). This is the practical backbone of every asthma action plan: detect deterioration early → start prednisolone 40–50 mg for ≥ 5 days → stop abruptly (no taper) if < 3 weeks.",
+          "key_points": [
+            "Doubling ICS dose does NOT prevent an impending exacerbation",
+            "Rescue course: prednisolone 40–50 mg/day for AT LEAST 5 days",
+            "No tapering needed unless given > 3 weeks"
+          ],
+          "check": {
+            "prompt": "A patient feels her asthma deteriorating over 2 days and doubles her budesonide dose. What is missing from her plan?",
+            "options": [
+              "Nothing — doubling ICS prevents exacerbations",
+              "A rescue course of oral prednisolone 40–50 mg/day for at least 5 days (doubling ICS does not prevent the exacerbation)",
+              "Antibiotics for 7 days",
+              "Immediate intubation"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "مضاعفة ICS لا تمنع النوبة الوشيكة — المطلوب كورس إنقاذ ببريدنيزولون 40-50 ملغ يومياً لخمسة أيام على الأقل، دون تدرج ما لم تُعطَ أكثر من 3 أسابيع."
+          }
+        },
+        {
+          "heading": "Indications for 'Rescue' Courses",
+          "body_text": "The five indications for starting a rescue course (memorize as a checklist): **(1) symptoms and PEF progressively worsening day by day, with a fall of PEF below 75% (and above 50%) of the patient's personal best recording; (2) onset or worsening of sleep disturbance by asthma; (3) persistence of morning symptoms until midday; (4) progressively diminishing response to an inhaled bronchodilator; (5) symptoms sufficiently severe to require treatment with nebulized bronchodilators.** These criteria convert subjective 'feeling worse' into an objective trigger for action — the essence of the self-management plan.",
+          "key_points": [
+            "PEF falling day by day below 75% (above 50%) of personal best",
+            "New or worsening sleep disturbance by asthma",
+            "Morning symptoms persisting until midday",
+            "Progressively diminishing bronchodilator response",
+            "Symptoms severe enough to need nebulized bronchodilators"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L9_c3",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Acute Severe Asthma: Differential Diagnosis and Investigations",
+      "summary_ar": "التشخيص التفريقي للربو الحاد الشديد والتحقيقات الإلزامية: PEF وABG والصورة الشعاعية المتحددة.",
+      "sections": [
+        {
+          "heading": "Differential Diagnosis of an Acute Severe Attack",
+          "body_text": "Before labeling a severe attack, exclude its mimics. **The DDx of acute severe asthma: (1) pneumothorax; (2) lung collapse (mucus plug); (3) others.** The lecture's imaging reinforces this: a PA film with arrows marking **patchy airspace opacification** of the right upper/mid zone (could be pneumonia, mucoid impaction or focal atelectasis masquerading as 'asthma'), and HRCT images demonstrating **extensive mucoid impaction within dilated bronchi — the 'finger-in-glove' pattern — with mosaic attenuation from small-airway obstruction**, the classical picture of severe asthma or allergic bronchopulmonary aspergillosis (ABPA). A tension pneumothorax or a plugged lobe can turn 'asthma' into a fatal non-response — hence the CXR when pneumothorax is suspected.",
+          "key_points": [
+            "DDx: pneumothorax; lung collapse (mucus plug); others",
+            "Imaging clues: patchy opacification; mucus plugging with 'finger-in-glove' and mosaic attenuation (severe asthma/ABPA)"
+          ]
+        },
+        {
+          "heading": "Investigations — What Is Mandatory and What Is Not",
+          "body_text": "**Measurement of PEF is MANDATORY in every acute severe attack, unless the patient is too ill to cooperate** (and in that case the patient belongs in the resuscitation room with senior help). **Arterial blood gas (ABG) analysis is ESSENTIAL for patients with life-threatening or near-fatal asthma** — it detects the ominously 'normal' or rising PaCO2. **Chest X-ray is NOT immediately necessary, unless pneumothorax is suspected** (or the patient fails to respond, deteriorates, requires ventilation, or has focal signs — the practical additions). From the algorithm: on admission, obtain IV access, chest X-ray, plasma theophylline level (if on theophylline) and plasma potassium. This parsimony is deliberate: no test should delay the first nebuliser.",
+          "key_points": [
+            "PEF measurement: MANDATORY unless too ill to cooperate",
+            "ABG: ESSENTIAL for life-threatening or near-fatal attacks",
+            "CXR: not immediately necessary UNLESS pneumothorax suspected (or failure to respond/deterioration/focal signs)",
+            "Admission bloods: IV access, theophylline level, plasma K+"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Mucus plug",
+          "definition_ar": "سدادة مخاطية تسد قصبة رئيسية فتسبب انخماصاً فصياً محاكياً لنوبة ربو معاندة."
+        },
+        {
+          "term": "Finger-in-glove",
+          "definition_ar": "علامة أصابع القفاز: انطباعات مخاطية متفرعة داخل قصبات متوسعة (ربو شديد/ABPA)."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "L9_c4",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Severity Classification: Acute Severe, Life-Threatening and Near-Fatal",
+      "summary_ar": "التصنيف الثلاثي للشدة بالأرقام: الحاد الشديد، المهدد للحياة (الخصائص الاثنتا عشرة)، والقريب من الموت.",
+      "sections": [
+        {
+          "heading": "Acute Severe Asthma — The First Tier",
+          "body_text": "**Acute severe asthma** is defined by any of: **PEF 33%–50% of predicted (or < 200 L/min); heart rate ≥ 110 beats/min; respiratory rate ≥ 25 breaths/min; and inability to complete sentences in one breath.** This 'can't finish a sentence' sign is the fastest bedside severity gauge available and pairs with the physiological numbers. Patients at this tier need immediate treatment (oxygen, nebulised bronchodilators, systemic steroids) and reassessment — the single sentence test, repeated over time, tracks response as objectively as any monitor.",
+          "key_points": [
+            "PEF 33–50% predicted (< 200 L/min)",
+            "HR ≥ 110 beats/min",
+            "RR ≥ 25 breaths/min",
+            "Inability to complete sentences in 1 breath"
+          ]
+        },
+        {
+          "heading": "Life-Threatening Features (Status Asthmaticus)",
+          "body_text": "**Life-threatening features (status asthmaticus)** — any ONE of these reclassifies the attack: **PEF < 33% predicted (< 100 L/min); SpO2 < 92% OR PaO2 < 8 kPa (60 mmHg), especially if the patient is already being treated with oxygen; NORMAL or RAISED PaCO2 (a rising CO2 in a tiring asthmatic is pre-arrest); SILENT CHEST (no wheeze because no air is moving); CYANOSIS; feeble respiratory effort; bradycardia or arrhythmias; hypotension; exhaustion; delirium; coma.** The two great paradoxes to internalize: the silent chest and the slowing pulse are signs of IMPENDING ARREST, not improvement, and a 'normal' PaCO2 in a distressed hyperventilating asthmatic signals fatigue, not safety.",
+          "key_points": [
+            "PEF < 33% (< 100 L/min)",
+            "SpO2 < 92% or PaO2 < 8 kPa (60 mmHg) despite oxygen",
+            "Normal or raised PaCO2 (pre-arrest in a tiring asthmatic)",
+            "Silent chest; cyanosis; feeble respiratory effort",
+            "Bradycardia or arrhythmias; hypotension",
+            "Exhaustion; delirium; coma"
+          ],
+          "check": {
+            "prompt": "During an attack, the wheeze disappears and the pulse slows to 50/min with SpO2 88%. Interpretation?",
+            "options": [
+              "The patient is improving — wheeze resolved",
+              "LIFE-THREATENING features — silent chest and bradycardia signal impending respiratory arrest; call for ICU and prepare for ventilation",
+              "Anaphylaxis",
+              "Simple exhaustion; allow sleep"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الصدر الصامت والبطء القلبي من خصائص المهدد للحياة: اختفاء الأزيز يعني انعدام مرور الهواء لا الشفاء، والنبض المتباطئ علامة ما قبل التوقف — استدعِ العناية وجهّز للتهوية."
+          }
+        },
+        {
+          "heading": "Near-Fatal Asthma",
+          "body_text": "**Near-fatal asthma is defined by: a RAISED PaCO2 and/or the need for mechanical ventilation with raised inflation pressures.** This is the physiological endpoint of the escalating ladder (acute severe → life-threatening → near-fatal): the exhausted patient can no longer maintain alveolar ventilation, CO2 climbs, and mechanical ventilation with high airway pressures (against severe bronchoconstriction) becomes necessary. Patients reaching this tier need ICU-level care, and every survivor deserves a structured follow-up plan afterward — including assessment of triggers, adherence, inhaler technique and consideration of biologics — because a near-fatal attack is the strongest predictor of a future fatal one.",
+          "key_points": [
+            "Raised PaCO2 and/or mechanical ventilation with raised inflation pressures",
+            "The endpoint of the severity ladder; strongest predictor of future fatal asthma",
+            "Every survivor needs structured specialist follow-up"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Status asthmaticus",
+          "definition_ar": "نوبة ربو مهددة للحياة لا تستجيب للعلاج القياسي؛ يظهر فيها الصدر الصاتب وارتفاع CO2."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L9_c5",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Management of Acute Severe Asthma: The Full Protocol",
+      "summary_ar": "البروتوكول الكامل: الأكسجين 94-98% وقاعدة PaCO2، النيبولايزر بالجرعات، الستيرويد الجهازي، وخوارزمية الاستشفاء من الأدوية الوريدية.",
+      "sections": [
+        {
+          "heading": "Oxygen — Target and the Anti-COPD Rule",
+          "body_text": "**Controlled supplemental oxygen should be administered to maintain SaO2 94%–98%.** **The presence of a high PaCO2 should NOT be taken as an indication to reduce the oxygen concentration — it is a WARNING SIGN of a severe or life-threatening attack** (this rule is explicitly 'against COPD', where hypoxemia-driven oxygen titration applies). Rationale: in severe asthma the hypoxic drive is not the dominant issue; under-oxygenation of a struggling myocardium is. From the algorithm: high-flow oxygen at 60% is used during the initial nebuliser phase.",
+          "key_points": [
+            "Target SaO2 94–98% with controlled supplemental oxygen",
+            "High PaCO2 is NOT an indication to reduce O2 — it is a warning of severity (opposite of COPD)",
+            "Initial phase: high-flow oxygen 60%"
+          ]
+        },
+        {
+          "heading": "Inhaled Bronchodilators — Doses and Devices",
+          "body_text": "**High doses of inhaled bronchodilators: short-acting beta-2 agonists are the agents of choice.** They can be given **either via multiple doses of a metered-dose inhaler through a spacer device, or via a nebuliser driven by OXYGEN** (never air, in a hypoxemic patient). **Ipratropium bromide provides further bronchodilation and should be ADDED if there is failure to respond to salbutamol, or in life-threatening attacks.** From the algorithm: **nebulised salbutamol 5 mg OR terbutaline 2.5 mg, repeated 6–12 times daily or as required**; for admitted patients: **repeat salbutamol 5 mg PLUS ipratropium 500 micrograms by oxygen-driven nebuliser, and consider CONTINUOUS salbutamol nebulisation at 5–10 mg/hour** in refractory cases. The lecture also showed the delivery hardware: spacer with facemask (children), nebuliser compressor, and the combination inhalers (fluticasone/salmeterol Diskus; budesonide/formoterol Turbuhaler) used once the acute phase resolves.",
+          "key_points": [
+            "SABA = agent of choice; MDI + multiple doses via spacer OR oxygen-driven nebuliser",
+            "Nebulised salbutamol 5 mg or terbutaline 2.5 mg, 6–12 times daily or as required",
+            "Add ipratropium 500 mcg if poor response to salbutamol or life-threatening attack",
+            "Admitted patients: salbutamol 5 mg + ipratropium 500 mcg; consider continuous salbutamol 5–10 mg/h"
+          ]
+        },
+        {
+          "heading": "Systemic Glucocorticoids",
+          "body_text": "**Systemic glucocorticoids reduce the inflammatory response, reduce mortality, subsequent hospital admission and requirement for bronchodilators. They should be administered to ALL patients with an acute severe attack.** **They can usually be given ORALLY as prednisolone, but IV hydrocortisone may be used in patients who are vomiting or unable to swallow.** From the algorithm: **prednisolone 40 mg orally OR hydrocortisone 200 mg IV** in the initial phase. Steroids take hours to work — so they are given immediately, in parallel with bronchodilators, never sequentially after 'waiting to see' whether bronchodilators alone suffice.",
+          "key_points": [
+            "All acute severe attacks: systemic glucocorticoids (reduce mortality, admissions, bronchodilator need)",
+            "Prednisolone 40 mg PO; hydrocortisone 200 mg IV if vomiting/unable to swallow",
+            "Given immediately alongside bronchodilators (delayed onset of action)"
+          ]
+        },
+        {
+          "heading": "The Admission/Second-Line Algorithm (From the Lecture Flowchart)",
+          "body_text": "After the initial therapy, **wait 30 minutes and measure PEF.** **If PEF < 60% predicted → ADMIT**: obtain **IV access, chest X-ray, plasma theophylline level, and plasma K+** (beta-agonists drive potassium into cells → hypokalaemia). Inpatient intensification: **repeat salbutamol 5 mg + ipratropium 500 mcg by oxygen-driven nebuliser; consider CONTINUOUS salbutamol 5–10 mg/hour; consider IV magnesium sulphate 1.2–2.0 g over 20 minutes; OR aminophylline 5 mg/kg loading dose over 20 minutes followed by infusion at 1 mg/kg/hour; and correct fluids and electrolytes (especially potassium).** **If PEF > 60% predicted → the discharge pathway** (continue treatment and plan follow-up). This flowchart — initial package → 30-minute reassessment → PEF 60% gate → admission package — is the skeleton on which the whole emergency protocol hangs.",
+          "key_points": [
+            "After initial therapy: wait 30 min, measure PEF",
+            "PEF < 60% → admit: IV access, CXR, theophylline level, plasma K+",
+            "Salbutamol 5 mg + ipratropium 500 mcg nebulisers; continuous salbutamol 5–10 mg/h if needed",
+            "IV magnesium sulphate 1.2–2.0 g over 20 min; OR aminophylline 5 mg/kg load then 1 mg/kg/h",
+            "Correct fluid and electrolytes — especially K+ (SABA-induced hypokalaemia)",
+            "PEF > 60% → discharge pathway"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Oxygen-driven nebuliser",
+          "definition_ar": "جهاز رذاذ يعمل بالأكسجين لا بالهواء لتفادي تفاقم نقص الأكسجة أثناء النوبة."
+        },
+        {
+          "term": "Aminophylline",
+          "definition_ar": "ثيوفيلين وريدي: جرعة تحميل 5 ملغ/كغ ثم تسريب 1 ملغ/كغ/ساعة؛ خيار ثانٍ في النوبة المعاندة (راقب مستواه والبوتاسيوم)."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "L9_c6",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Indications for Assisted Ventilation and the Clinical Approach Flow",
+      "summary_ar": "مؤشرات التهوية الميكانيكية والنهاية القاتلة للسلم العلاجي، وخريطة المقاربة السريرية من الشكوى حتى العناية.",
+      "sections": [
+        {
+          "heading": "Indications for Assisted Ventilation",
+          "body_text": "**Indications for assisted ventilation in acute severe asthma: (1) COMA; (2) RESPIRATORY ARREST; (3) worsening of arterial blood gas tensions DESPITE optimal therapy — PaO2 < 8 kPa (60 mmHg) and falling; PaCO2 > 6 kPa (45 mmHg) and rising; pH low and falling (H+ high and rising); (4) exhaustion, delirium, drowsiness.** The ABG numbers define the physiologic no-return line: a falling PaO2 despite oxygen and a rising PaCO2 with acidosis mean the patient is losing the battle — intubation (with raised inflation pressures expected) must be undertaken ELECTIVELY, before the arrest, by experienced staff.",
+          "key_points": [
+            "Coma; respiratory arrest",
+            "PaO2 < 8 kPa (60 mmHg) AND falling despite therapy",
+            "PaCO2 > 6 kPa (45 mmHg) AND rising",
+            "pH low and falling (H+ high and rising)",
+            "Exhaustion, delirium, drowsiness"
+          ]
+        },
+        {
+          "heading": "The Clinical Approach Flow (Lecture Summary Slide)",
+          "body_text": "The lecture closes with a decision flow that organizes the entire encounter: **'Severe SOB in the background of asthma'** → first question: **acute asthma or chronic unstable asthma (stepping up)?** → for acute asthma: **exclude other causes** (pneumothorax, collapse, others) → then **stratify severity: mild-to-moderate versus severe or life-threatening** → severe/life-threatening and refractory cases go to **ICU**. This flow prevents the two classic errors: treating a 'brittle' deterioration as chronic instability and missing an asthma-mimic, or under-triaging a life-threatening attack to a general ward.",
+          "key_points": [
+            "Severe SOB in known asthmatic → acute vs chronic unstable",
+            "Acute → exclude mimics (pneumothorax, collapse)",
+            "Stratify: mild-moderate vs severe/life-threatening",
+            "Refractory severe → ICU"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L9_f1",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "What defines an asthma exacerbation?",
+      "back_text": "Exacerbations feature: (1) increased symptoms — SOB, wheeze, cough; (2) worsening lung function — FEV1, FVC, FEV1/FVC; (3) increased airway inflammation (sputum). This triad explains the combined use of bronchodilators and systemic steroids.",
+      "explanation_ar": "أعراض + وظائف + التهاب = تدهور.",
+      "is_vivid": false,
+      "tags": [
+        "definition",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f2",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "What precipitates asthma exacerbations, and are antibiotics needed?",
+      "back_text": "Most commonly precipitated by VIRAL infections; moulds, pollens (particularly following thunderstorms) and air pollution are also implicated. Antibiotics are NOT routinely needed because triggers are viral/allergic, not bacterial — reserve them for true bacterial evidence.",
+      "explanation_ar": "فيروسي أساساً — لا مضادات حيوية روتينية.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f3",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "What is brittle asthma and what is blunted perception?",
+      "back_text": "Brittle asthma: exacerbations that appear with little or no warning (rather than the typical gradual worsening over hours to days). An important minority of patients have blunted perception of airway narrowing and fail to appreciate early signs of deterioration — presenting late with severe attacks. Home PEF monitoring and written action plans protect these patients.",
+      "explanation_ar": "هش = بلا إنذار؛ مُدرِك باهت = يتأخر بالطلب.",
+      "is_vivid": false,
+      "tags": [
+        "definition"
+      ]
+    },
+    {
+      "id": "L9_f4",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "How are mild-to-moderate exacerbations managed?",
+      "back_text": "Doubling the dose of inhaled glucocorticoids does NOT prevent an impending exacerbation. Short courses of at least 5 days of 'rescue' glucocorticoids (prednisolone 40–50 mg/day) are required to regain control. Tapering is NOT necessary unless given for more than 3 weeks.",
+      "explanation_ar": "بريدنيزولون 40-50 ملغ ≥5 أيام؛ لا مضاعفة ICS؛ لا تدرج قبل 3 أسابيع.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f5",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "List the five indications for 'rescue' courses of steroids.",
+      "back_text": "1) Symptoms and PEF progressively worsening day by day — fall of PEF below 75% (above 50%) of personal best; 2) onset or worsening of sleep disturbance by asthma; 3) persistence of morning symptoms until midday; 4) progressively diminishing response to inhaled bronchodilator; 5) symptoms severe enough to require nebulized bronchodilators.",
+      "explanation_ar": "خمسة محددات لبدء كورس الإنقاذ.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f6",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c3",
+      "card_type": "basic",
+      "front_text": "What is the DDx of acute severe asthma and which investigations are mandatory?",
+      "back_text": "DDx: pneumothorax; lung collapse (mucus plug); others. Investigations: PEF measurement is MANDATORY unless the patient is too ill to cooperate; arterial blood gas analysis is ESSENTIAL for life-threatening or near-fatal asthma; chest X-ray is NOT immediately necessary unless pneumothorax is suspected. On admission: IV access, CXR, plasma theophylline level, plasma K+.",
+      "explanation_ar": "PEF إلزامي؛ ABG للمهدد للحياة؛ الصورة عند شك الاسترواح.",
+      "is_vivid": false,
+      "tags": [
+        "investigations",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f7",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "State the criteria for ACUTE SEVERE asthma.",
+      "back_text": "Any of: PEF 33–50% predicted (< 200 L/min); heart rate ≥ 110 beats/min; respiratory rate ≥ 25 breaths/min; inability to complete sentences in 1 breath.",
+      "mnemonic_ar": "110-25-جملة واحدة-33-50%: أرقام الشدة الأولى.",
+      "is_vivid": false,
+      "tags": [
+        "severity",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f8",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "List the life-threatening (status asthmaticus) features.",
+      "back_text": "PEF < 33% (< 100 L/min); SpO2 < 92% or PaO2 < 8 kPa (60 mmHg) despite oxygen; NORMAL or RAISED PaCO2; silent chest; cyanosis; feeble respiratory effort; bradycardia or arrhythmias; hypotension; exhaustion; delirium; coma.",
+      "explanation_ar": "12 خاصية؛ أخطرها: صدر صامت، CO2 طبيعي/مرتفع، بطء قلبي.",
+      "is_vivid": false,
+      "tags": [
+        "severity",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f9",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "Define near-fatal asthma.",
+      "back_text": "Raised PaCO2 and/or requiring mechanical ventilation with raised inflation pressures. It is the endpoint of the severity ladder and the strongest predictor of future fatal asthma — every survivor needs structured specialist follow-up.",
+      "explanation_ar": "CO2 مرتفع و/أو تهوية ميكانيكية بضغوط عالية.",
+      "is_vivid": false,
+      "tags": [
+        "severity",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f10",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "What is the oxygen rule in acute severe asthma (and how does it differ from COPD)?",
+      "back_text": "Controlled supplemental oxygen to maintain SaO2 94–98%. A high PaCO2 should NOT be taken as an indication to reduce the oxygen concentration — it is a WARNING SIGN of a severe or life-threatening attack. This is explicitly AGAINST the COPD practice of titrating oxygen down for hypercapnia.",
+      "explanation_ar": "عكس الـCOPD: لا تخفّض الأكسجين لأن CO2 عالٍ — بل استنجد.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f11",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "Detail the bronchodilator regimen in acute severe asthma.",
+      "back_text": "Short-acting beta-2 agonists are the agents of choice: multiple doses of MDI via spacer, or nebuliser driven by OXYGEN — nebulised salbutamol 5 mg OR terbutaline 2.5 mg (6–12 times daily or as required). Ipratropium bromide 500 mcg is added if failure to respond to salbutamol or in life-threatening attacks. Admitted patients: salbutamol 5 mg + ipratropium 500 mcg; consider continuous salbutamol 5–10 mg/hour.",
+      "explanation_ar": "سلبتامول 5 ملغ نيبولايزر بالأكسجين + إبراتروبيوم 500 مكغ عند الفشل/الخطورة.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f12",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "What systemic steroid is given in acute severe asthma and to whom?",
+      "back_text": "Systemic glucocorticoids reduce inflammation, mortality, hospital admission and bronchodilator requirement — give to ALL patients with an acute severe attack. Usually oral prednisolone 40 mg; IV hydrocortisone 200 mg if vomiting or unable to swallow.",
+      "explanation_ar": "بريدنيزولون 40 فموياً أو هيدروكورتيزون 200 وريدياً عند القيء.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f13",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "What are the second-line IV agents for refractory acute severe asthma, with doses?",
+      "back_text": "IV magnesium sulphate 1.2–2.0 g over 20 minutes; OR aminophylline 5 mg/kg loading dose over 20 minutes followed by continuous infusion at 1 mg/kg/hour. Also: continuous nebulised salbutamol 5–10 mg/h, and correction of fluids/electrolytes — especially potassium (SABA-induced hypokalaemia).",
+      "explanation_ar": "مغنيزيوم 1.2-2غ/20د أو أمينوفيلين 5ملغ/كغ ثم 1ملغ/كغ/س؛ وصحّح البوتاسيوم.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f14",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "After initial treatment of acute severe asthma, what is the reassessment plan and the 60% gate?",
+      "back_text": "Wait 30 minutes, then measure PEF. If PEF < 60% predicted → ADMIT (IV access, CXR, theophylline level, plasma K+; escalate nebulisers ± IV magnesium/aminophylline). If PEF > 60% predicted → the discharge pathway (continue treatment, plan follow-up).",
+      "explanation_ar": "30 دقيقة ثم PEF: <60% استشفاء، >60% مسار خروج.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f15",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c6",
+      "card_type": "basic",
+      "front_text": "List the indications for assisted ventilation in acute severe asthma.",
+      "back_text": "Coma; respiratory arrest; worsening blood gases despite optimal therapy — PaO2 < 8 kPa (60 mmHg) and falling, PaCO2 > 6 kPa (45 mmHg) and rising, pH low and falling (H+ high and rising); exhaustion, delirium, drowsiness.",
+      "explanation_ar": "غيبوبة/توقف + غازات تسوء + إنهاك = تهوية مبكرة منتقاة.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L9_f16",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c6",
+      "card_type": "basic",
+      "front_text": "Reproduce the clinical approach flow for severe SOB in an asthmatic.",
+      "back_text": "Severe SOB in background of asthma → acute asthma or chronic unstable asthma (stepping up)? → for acute: exclude other causes (pneumothorax, mucus-plug collapse, others) → stratify severity (mild-moderate vs severe/life-threatening) → severe/refractory to ICU.",
+      "explanation_ar": "حاد أم مزمن غير مستقر؟ استبعد المقلّدات. صنّف. عالج. عناية عند الحاجة.",
+      "is_vivid": false,
+      "tags": [
+        "approach"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L9_q1",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c2",
+      "question_stem": "Which of the following statements about the management of mild to moderate asthma exacerbations is true?",
+      "options": [
+        "Maintain the dose of inhaled glucocorticoids without adding systemic steroids",
+        "Intravenous glucocorticoid is always considered",
+        "Hospital admission is the treatment of choice",
+        "Short courses of 'rescue' glucocorticoids (e.g., prednisolone 40 mg/day for at least 5 days)",
+        "Nebulized antibacterial therapy"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "سؤال المحاضرة الأصلي: كورس الإنقاذ ببريدنيزولون 40 ملغ يومياً لخمسة أيام على الأقل يستعيد التحكم (مضاعفة ICS لا تمنع النوبة؛ الوريدي ليس دائماً؛ الدخول ليس خيار العلاج الأساسي؛ والمضادات البكتيرية الرذاذية لا مكان لها).",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L9_q2",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c1",
+      "question_stem": "The most common precipitant of asthma exacerbations is:",
+      "options": [
+        "Bacterial infection",
+        "Viral infection",
+        "Cold weather alone",
+        "Exercise alone"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "العدوى الفيروسية هي المحرض الأشيع؛ يليها العفن وحبوب الطلع (خاصة بعد العواصف الرعدية) والتلوث الهوائي — ولهذا لا تعطى المضادات الحيوية روتينياً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L9_q3",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "question_stem": "A 26-year-old in the emergency department with acute asthma cannot complete sentences, has PEF 40% of predicted, HR 118, RR 28. What severity tier is this?",
+      "options": [
+        "Mild exacerbation",
+        "Moderate exacerbation",
+        "Acute severe asthma",
+        "Near-fatal asthma"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "معايير الربو الحاد الشديد: PEF 33-50% (<200)، نبض ≥110، تنفس ≥25، عجز عن إكمال الجملة — كلها متحققة هنا. القريب من الموت يتطلب CO2 مرتفعاً أو تهوية ميكانيكية، ولم يصل إليها بعد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "طبّق أرقام الشريحة الأولى",
+        "هل يوجد CO2 مرتفع أو غيبوبة؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L9_q4",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "question_stem": "Which of the following is a LIFE-THREATENING feature of acute asthma?",
+      "options": [
+        "PEF 45% of predicted",
+        "Inability to complete sentences",
+        "Silent chest with SpO2 88% on oxygen",
+        "PEF 55% predicted"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الصدر الصامت مع تشبع 88% رغم الأكسجين من خصائص المهدد للحياة (كذلك CO2 طبيعي/مرتفع، إزرقاق، تباطؤ قلبي، هبوط ضغط، إنهاك، هذيان، غيبوبة، PEF <33%). أما عجز إكمال الجملة وPEF 45-55% فمن معايير الحاد الشديد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي العلامات تعني انعدام مرور الهواء؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L9_q5",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "question_stem": "During treatment of acute severe asthma, the ABG shows PaCO2 rising to 55 mmHg. The nursing team reduces the oxygen flow. What is the correct teaching?",
+      "options": [
+        "Correct — hypercapnia mandates oxygen reduction as in COPD",
+        "Wrong — a high PaCO2 is NOT an indication to reduce oxygen; it is a WARNING SIGN of a life-threatening attack requiring escalation (maintain SaO2 94–98% and call for ICU assessment)",
+        "Stop all treatment",
+        "Switch to oral steroids only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "قاعدة المحاضرة الصريحة (ضد الـCOPD): حافظ على SaO2 94-98% ولا تعامل ارتفاع CO2 كمانعاً للأكسجين بل كإنذار خطورة يستوجب التصعيد؛ هنا أيضاً معايير التهوية الميكانيكية (PaCO2 >45 وارتفاعاً).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "قارن قاعدة الأكسجين بين الربو الحاد وCOPD",
+        "ماذا يعني CO2 يرتفع في ربو متعب؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L9_q6",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "question_stem": "Which bronchodilator strategy matches the lecture protocol for acute severe asthma?",
+      "options": [
+        "Nebulised salbutamol 5 mg (or terbutaline 2.5 mg) driven by OXYGEN, adding ipratropium 500 mcg if poor response or life-threatening features",
+        "Oral salbutamol tablets once daily",
+        "IV salbutamol as first line in every case",
+        "Salmeterol nebulisation"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحزمة: سلبتامول 5 ملغ أو تربوتالين 2.5 ملغ نيبولايزر بالأكسجين (أو MDI بواسطة فاصل بجرعات متعددة)، وتُضاف إبراتروبيوم 500 مكغ عند سوء الاستجابة أو الخطورة، مع إمكان تسريب سلبتامول مستمر 5-10 ملغ/س.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "بأي غاز يُشغّل النيبولايزر؟",
+        "متى يضاف الإبراتروبيوم؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L9_q7",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c5",
+      "question_stem": "A patient with refractory acute severe asthma is hypokalaemic and not improving despite nebulisers and steroids. What second-line IV options does the lecture recommend?",
+      "options": [
+        "IV magnesium sulphate 1.2–2.0 g over 20 minutes (or aminophylline 5 mg/kg then 1 mg/kg/h), plus potassium correction",
+        "IV antibiotics",
+        "IV hydroxyzine",
+        "Nebulised colistin"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الخيارات الوريدية الثانية: مغنيزيوم 1.2-2غ خلال 20 دقيقة أو أمينوفيلين 5 ملغ/كغ تحميلاً ثم 1 ملغ/كغ/ساعة، مع تصحيح السوائل والشوارد وبخاصة البوتاسيوم (ناهضات بيتا-2 تخفضه).",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ماذا يفعل السلبتامول بالبوتاسيوم؟",
+        "ما الدواء الوريدي البديل للمغنيزيوم؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L9_q8",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c6",
+      "question_stem": "All of the following are indications for assisted ventilation in acute severe asthma EXCEPT:",
+      "options": [
+        "Coma",
+        "PaCO2 > 6 kPa (45 mmHg) and rising despite optimal therapy",
+        "Exhaustion with drowsiness",
+        "PEF improving from 35% to 65% after initial treatment"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "تحسن PEF من 35% إلى 65% بعد العلاج علامة استجابة لا مؤشر تهوية؛ مؤشرات التهوية: غيبوبة، توقف تنفسي، غازات تسوء رغم العلاج الأمثل (PaO2 <60 ويهبط، PaCO2 >45 ويرتفع، pH هابط)، وإنهاك/هذيان/نعاس.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي خيار يدل على تحسن؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L9_q9",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c3",
+      "question_stem": "Which statement about investigations in acute severe asthma is correct?",
+      "options": [
+        "PEF measurement is mandatory unless the patient is too ill; ABG is essential for life-threatening/near-fatal attacks; CXR only if pneumothorax suspected",
+        "CXR is mandatory in every case before treatment",
+        "ABG is never needed",
+        "Spirometry with reversibility should be performed during the attack"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قاعدة المحاضرة: PEF إلزامي إلا لمن يعجز عن التعاون؛ ABG ضروري للمهدد/القريب من الموت؛ الصورة ليست فورية إلا عند شك الاسترواح أو الفشل العلاجي — ولا مجال لسبيرومترية كاملة خلال النوبة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي فحص يؤجل إن لم يُشك باسترواح؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L9_q10",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c2",
+      "question_stem": "A patient's action plan triggers a rescue course when: PEF falls day-by-day to 70% of her best, night waking returns, and morning symptoms last until midday. How many of the lecture's rescue indications does she meet?",
+      "options": [
+        "One",
+        "Two",
+        "Three (progressive PEF fall below 75%, sleep disturbance, morning symptoms persisting to midday)",
+        "None — nebuliser requirement is the only trigger"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "ثلاثة من المؤشرات الخمسة متحققة: تدهور PEF اليومي دون 75% مع بقائه فوق 50%، اضطراب النوم، واستمرار الأعراض الصباحية حتى منتصف النهار (والخمسة تشمل أيضاً تناقص استجابة الموسع والحاجة للنيبولايزر).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "راجع قائمة المؤشرات الخمسة"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L9_q11",
+      "lecture_id": "L9_acute_severe_asthma",
+      "concept_id": "L9_c4",
+      "question_stem": "Near-fatal asthma is defined by:",
+      "options": [
+        "PEF 30% predicted with good response to treatment",
+        "Raised PaCO2 and/or need for mechanical ventilation with raised inflation pressures",
+        "SpO2 of 90% on room air",
+        "Inability to speak in sentences"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تعريف القريب من الموت: PaCO2 مرتفع و/أو حاجة لتهوية ميكانيكية بضغوط نفخ مرتفعة — نهاية سلم الشدة، وأقوى منبئ بنوبة قاتلة لاحقة مما يستوجب متابعة اختصاصية لكل ناجٍ.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما المقياس الغازي المميز للطبقة الأخيرة؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L9_case1",
+      "lecture_id": "L9_acute_severe_asthma",
+      "title": "Midnight Emergency — The Silent Chest That Wasn't Improvement",
+      "scenario": "A 29-year-old woman with known asthma is brought by ambulance to the emergency department at 2 a.m. Her attack began 6 hours ago after a viral cold, failed to respond to repeated salbutamol puffs at home, and has 'quietened down' over the last 30 minutes — which her relieved family mistook for improvement. This case drills the severity ladder, the silent-chest paradox, the anti-COPD oxygen rule, the full drug protocol, and the ventilation decision.",
+      "vignette": {
+        "age": 29,
+        "sex": "female",
+        "chief_complaint": "Severe breathlessness and wheeze for 6 hours, now 'quiet'",
+        "history": "Asthma for 15 years; normally on budesonide/formoterol (MART); 2 previous admissions, one ICU admission last year. Currently 3 days into a viral URTI. Used salbutamol MDI > 10 times tonight without relief; slept poorly for 2 nights; morning symptoms persisted to midday yesterday (missed rescue signals). Not on theophylline. Smoker 5 cigarettes/day.",
+        "vitals": {
+          "bp": "100/62 mmHg",
+          "hr": "58 beats/min",
+          "rr": "34 breaths/min",
+          "temp": "37.0 C",
+          "spo2": "88% on 15 L reservoir mask"
+        },
+        "exam": "Exhausted, drowsy but rousable, unable to speak — no sentences at all. Chest almost silent on both sides with feeble respiratory effort; trace central cyanosis. Accessory muscles and intercostal recession. PEF unrecordable (attempts < 80 L/min). No tracheal shift; no unilateral findings.",
+        "labs": [
+          {
+            "name": "Arterial blood gas (on high-flow O2)",
+            "value": "pH 7.28, PaO2 54 mmHg, PaCO2 62 mmHg, HCO3 24",
+            "flag": "critical"
+          },
+          {
+            "name": "Serum potassium",
+            "value": "2.9 mmol/L (3.5-5.0)",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "13.4 x10^9/L (4-11)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "18 mg/L (<10)",
+            "flag": "high"
+          },
+          {
+            "name": "Plasma theophylline level",
+            "value": "Not on theophylline",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Portable CXR (after stabilisation of airway team): hyperinflated lungs, no pneumothorax, no collapse, no consolidation."
+      },
+      "steps": [
+        {
+          "id": "L9_case1_s1",
+          "prompt": "The family is relieved that the wheeze has 'gone quiet'. Classify the severity of this attack.",
+          "options": [
+            "Mild-moderate exacerbation — improving",
+            "Acute severe asthma",
+            "NEAR-FATAL asthma — silent chest, feeble effort, bradycardia (58), SpO2 88% on oxygen, and rising PaCO2 (62 mmHg) with acidosis",
+            "Chronic unstable asthma needing step-up only"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "هذه نوبة قريبة من الموت: صدر صامت، جهد تنفسي ضعيف، تباطؤ قلبي (58)، تشبع 88% رغم الأكسجين، وCO2 مرتفع (62) مع حماض — أي أنها تجاوزت طبقة 'المهدد للحياة' إلى 'القريب من الموت' المعرّف بارتفاع CO2 و/أو الحاجة للتهوية. الهدوء هنا خداع: لا هواء يتحرك، لا تحسن.",
+          "xp": 15,
+          "hints": [
+            "الصدر الصامت: أين ذهب الأزيز؟",
+            "ماذا يعني CO2 = 62 مع pH 7.28؟"
+          ]
+        },
+        {
+          "id": "L9_case1_s2",
+          "prompt": "Oxygen is running at 15 L/min. A colleague suggests reducing it because PaCO2 is high. What is the correct action?",
+          "options": [
+            "Reduce oxygen to 28% as in COPD",
+            "Maintain oxygen targeting SaO2 94–98% — a high PaCO2 is NOT a reason to reduce oxygen in acute severe asthma; it is a warning sign of a life-threatening attack",
+            "Stop oxygen completely",
+            "Switch to helium only"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "قاعدة المحاضرة (ضد COPD): حافظ على SaO2 94-98%؛ فرط CO2 ليس مانعاً لخفض الأكسجين بل إنذار شدة يستوجب التصعيد — عكس ممارسة COPD تماماً.",
+          "xp": 15,
+          "hints": [
+            "قارن قاعدة الأكسجين بين الربو الحاد وCOPD"
+          ]
+        },
+        {
+          "id": "L9_case1_s3",
+          "prompt": "Select the complete immediate drug package.",
+          "options": [
+            "Oxygen-driven nebulised salbutamol 5 mg + ipratropium 500 mcg, PLUS systemic steroid (IV hydrocortisone 200 mg as she cannot swallow safely), PLUS IV magnesium sulphate 1.2–2.0 g over 20 minutes, with potassium correction",
+            "Oral prednisolone 40 mg alone",
+            "Antibiotics only, since the trigger was infective",
+            "Inhaled salmeterol as the reliever"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحزمة الكاملة: نيبولايزر بالأكسجين (سلبتامول 5 ملغ + إبراتروبيوم 500 مكغ لأنها حالة مهددة للحياة)، ستيرويد جهازي لكل نوبة حادة شديدة (هيدروكورتيزون 200 وريدياً لعدم القدرة على البلع)، مغنيزيوم وريدي 1.2-2غ/20د للحالة المعاندة، مع تصحيح البوتاسيوم (2.9 — ناهضات بيتا-2 تسببت بخفضه). لا مضادات حيوية لمحرض فيروسي، والسالميتيرول بطيء لا يصلح منقذاً.",
+          "xp": 15,
+          "hints": [
+            "المهدد للحياة = أضف الإبراتروبيوم فوراً",
+            "قائمة أو تعذر بلع → أي ستيرويد؟",
+            "بوتاسيوم 2.9 ماذا يفعل؟"
+          ]
+        },
+        {
+          "id": "L9_case1_s4",
+          "prompt": "Despite optimal therapy for 30 minutes, she becomes drowsier, PaO2 falls to 48 mmHg and PaCO2 rises to 70 mmHg. What now?",
+          "options": [
+            "Wait another hour and repeat ABG",
+            "Intubation and mechanical ventilation — coma-impending exhaustion with PaO2 < 60 and falling, PaCO2 > 45 and rising, pH falling despite optimal therapy",
+            "Discharge home on MART",
+            "Chest physiotherapy only"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "مؤشرات التهوية المساعدة محققة حرفياً: إنهاك ونعاس متزايد مع PaO2 <60 ويهبط وPaCO2 >45 ويرتفع وpH هابط رغم العلاج الأمثل. التنبيب المنتقى بيد خبيرة قبل التوقف هو القرار — والضغوط المرتفعة متوقعة أثناء التهوية (تعريف القريب من الموت يشمل ذلك).",
+          "xp": 15,
+          "hints": [
+            "ما القيم الغازية الحدية للتهوية؟",
+            "هل الانتظار خيار مع تراجع الوعي؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: ربو حاد شديد القريب من الموت (status asthmaticus) محرَّض بعدوى فيروسية، مع فرط تنفص متأخر وحماض تنفسي ونقص بوتاسيوم. الدروس المستفادة: (1) الصدر الصامت والنبض المتباطئ علامتا ما قبل التوقف — الهدوء في الربو الحاد خداع قاتل وليس تحسناً. (2) سلم الشدة بالأرقام: الحاد الشديد (PEF 33-50%، نبض ≥110، تنفس ≥25، عجز عن الجملة) → المهدد للحياة (PEF <33%، تشبع <92%، CO2 طبيعي/مرتفع، صدر صامت، إزرقاق، تباطؤ، هبوط ضغط، إنهاك، هذيان، غيبوبة) → القريب من الموت (CO2 مرتفع و/أو تهوية بضغوط عالية). (3) قاعدة الأكسجين عكس COPD: هدف 94-98% وارتفاع CO2 إنذار لا سبب لتقليل الأكسجين. (4) الحزمة: نيبولايزر بالأكسجين (سلبتامول 5 ملغ + إبراتروبيوم 500 مكغ) + ستيرويد جهازي (هيدروكورتيزون 200 وريدي عند تعذر البلع) + مغنيزيوم 1.2-2غ/20د أو أمينوفيلين + تصحيح البوتاسيوم. (5) التهوية عند: غيبوبة/توقف/غازات تسوء (PaO2 <60 هابطاً، PaCO2 >45 صاعداً، pH هابطاً)/إنهاك. (6) وقائياً: خطة عمل مكتوبة ومتابعة PEF كانا سيمانعان هذه النوبة — إشارات الإنقاذ (تدهور PEF دون 75%، اضطراب النوم، أعراض صباحية حتى الظهر) كانت موجودة أمس وتجاهلتها المريضة.",
+      "difficulty": "advanced",
+      "order_index": 0
+    }
+  ]
+}

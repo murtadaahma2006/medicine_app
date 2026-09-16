@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
 
+import '../core/utils/responsive_layout.dart';
 import '../features/curriculum/presentation/pages/curriculum_page.dart';
-import '../features/curriculum/presentation/pages/library_page.dart';
 import '../features/curriculum/presentation/pages/today_page.dart';
+import '../features/history/presentation/pages/patient_records_screen.dart';
+import '../features/library/presentation/pages/library_page.dart';
 import '../features/profile/presentation/pages/profile_page.dart';
 import '../shared/widgets/widgets.dart';
 import '../theme/tokens.dart';
+import 'app.dart' show LearnerTheme;
 
-/// الشاشة الجذرية — شريط تنقل سفلي بأربعة ألسنة (IndexedStack).
+/// الشاشة الجذرية — أربعة ألسنة (IndexedStack).
+///
+/// **نطاق التخصص السريري (v20)**: تخصص واحد نشط لكل التطبيق يُنشر
+/// من هنا عبر [SpecialtyScope] — شاشتا المسار والمكتبة تقرآه
+/// وتفلتران محتواهما به. الحالة تُحفظ في [LearnerProfile] فتثبت
+/// بين الجلسات، والتبديل يعيد بناء اللسانَين فوراً (IndexedStack
+/// يعيد بناء العناصر المرئية فقط عند تغير النطاق).
+///
+/// **تجاوب الملاحة**:
+/// - موبايل/تابلت طولي (< 840): BottomNavigationBar النابض الحالي
+///   كما هو حرفياً — صفر تغيير.
+/// - تابلت عرضي (≥ 840): NavigationRail على يمين الشاشة (RTL:
+///   أول مكان تقطعه العين) — يعظّم مساحة القراءة الرأسية.
 ///
 /// الهوية البصرية: طقم أيقونات مملوك بهوية ECG (نبضة قلب تخترق
 /// كل أيقونة) — لا أيقونات مكتبات مستعارة.
@@ -29,12 +44,38 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
+  // ── التخصص السريري النشط (v20) ──
+  //
+  // مصدر الحقيقة هو جذر التطبيق (_MedicalLearningAppState) — هو من
+  // يبني الثيم بلون التخصص. هنا نقرأه من LearnerTheme (InheritedWidget
+  // فوق MaterialApp) ونمرره لأسفل عبر SpecialtyScope، والتغيير يصعد
+  // للجذر عبر LearnerTheme.notifier فيُعاد بناء الثيم فوراً.
+
+  /// مفتاح وصول لجذر الاستضافة (SpecialtyRootHost) — يستقبله
+  /// اللسانان بقائمة التخصصات الموجودة (قد يظهر شريط التبديل
+  /// عند استيراد محاضرة من تخصص جديد).
+  final GlobalKey<SpecialtyRootHostState> _specialtyHostKey =
+      GlobalKey<SpecialtyRootHostState>();
+
+  /// التخصص الحالي — يُقرأ من LearnerTheme عند كل بناء (حي):
+  /// مصدر الحقيقة جذر التطبيق (يبني الثيم بلونه) ونحن نمرره
+  /// لأسفل عبر SpecialtyScope فقط.
+  String _specialtyOf(BuildContext context) =>
+      LearnerTheme.of(context)?.specialty ?? 'internal_medicine';
+
+  /// رفع تغيير التخصص لجذر التطبيق عبر قناة LearnerTheme: حفظ
+  /// دائم + ثيم جديد بلون التخصص + إعادة بناء الشاشتين فوراً.
+  void _onSpecialtyChanged(String specialty) {
+    LearnerTheme.of(context)?.onSpecialtyChanged(specialty);
+  }
+
   /// الشاشات الأربع — تُبنى مرة واحدة فلا تُعاد عند التبديل.
   final List<Widget> _screens = const <Widget>[
     TodayPage(),
     CurriculumPage(),
     LibraryPage(),
     ProfilePage(),
+    PatientRecordsScreen(),
   ];
 
   /// عناوين الألسنة العربية (للـAppBar أعلى كل شاشة).
@@ -43,52 +84,126 @@ class _MainScreenState extends State<MainScreen> {
     'المسار',
     'المكتبة',
     'ملفّي',
+    'الردهات',
   ];
+
+  static const List<_NavItem> _navItems = <_NavItem>[
+    _NavItem(
+      svg: 'nav/nav_today',
+      fallbackIcon: Icons.wb_sunny_rounded,
+      label: 'اليوم',
+    ),
+    _NavItem(
+      svg: 'nav/nav_path',
+      fallbackIcon: Icons.route_rounded,
+      label: 'المسار',
+    ),
+    _NavItem(
+      svg: 'nav/nav_library',
+      fallbackIcon: Icons.local_library_rounded,
+      label: 'المكتبة',
+    ),
+    _NavItem(
+      svg: 'nav/nav_profile',
+      fallbackIcon: Icons.person_rounded,
+      label: 'ملفّي',
+    ),
+    _NavItem(
+      svg: 'nav/nav_history', // using a generic name, fallback will be used if svg doesn't exist
+      fallbackIcon: Icons.assignment_rounded,
+      label: 'الردهات',
+    ),
+  ];
+
+  void _onTap(int index) {
+    if (index == _currentIndex) return;
+    setState(() => _currentIndex = index);
+  }
+
+  Widget _buildBody() {
+    return SpecialtyRootHost(
+      key: _specialtyHostKey,
+      child: Builder(
+        builder: (BuildContext context) {
+          // التخصص الحالي حياً من LearnerTheme — أي تغيير من الشريط
+          // يرتفع للجذر فيُعاد بناء كل شيء هنا تلقائياً.
+          final String specialty = _specialtyOf(context);
+          return SpecialtyScope(
+            specialty: specialty,
+            // القائمة الفعلية يديرها SpecialtyRootHost (يحدّثها اللسانان
+            // من القاعدة) — نقرأها عبر مرجع البناء هنا في كل rebuild.
+            specialties:
+                _specialtyHostKey.currentState?.specialties ??
+                const <String>['internal_medicine'],
+            onChanged: _onSpecialtyChanged,
+            child: IndexedStack(
+              index: _currentIndex,
+              children: <Widget>[
+                // TickerMode يوقف حلقات اللسان غير المرئي (نبض السلسلة 🔥
+                // مثلاً) — لا حركة تعمل على شاشة غير معروضة.
+                for (int i = 0; i < _screens.length; i++)
+                  TickerMode(enabled: i == _currentIndex, child: _screens[i]),
+              ],
+            ),
+          );
+        },
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.sizeOf(context).width;
+
+    // ── تابلت عرضي/شاشة واسعة: NavigationRail جانبي ──
+    if (ResponsiveLayout.of(width) == WindowSizeClass.expanded) {
+      final ColorScheme scheme = Theme.of(context).colorScheme;
+
+      return Scaffold(
+        appBar: AppBar(title: Text(_titles[_currentIndex])),
+        body: Row(
+          textDirection: TextDirection.rtl,
+          children: <Widget>[
+            NavigationRail(
+              selectedIndex: _currentIndex,
+              onDestinationSelected: _onTap,
+              labelType: NavigationRailLabelType.all,
+              backgroundColor: scheme.surface,
+              minWidth: 84,
+              destinations: <NavigationRailDestination>[
+                for (final _NavItem item in _navItems)
+                  NavigationRailDestination(
+                    icon: AppSvgIcon(
+                      item.svg,
+                      size: 26,
+                      color: scheme.onSurfaceVariant,
+                      fallback: item.fallbackIcon,
+                    ),
+                    selectedIcon: AppSvgIcon(
+                      item.svg,
+                      size: 26,
+                      color: scheme.primary,
+                      fallback: item.fallbackIcon,
+                    ),
+                    label: Text(item.label),
+                  ),
+              ],
+            ),
+            VerticalDivider(width: 1, thickness: 1, color: scheme.outline),
+            Expanded(child: _buildBody()),
+          ],
+        ),
+      );
+    }
+
+    // ── موبايل/تابلت طولي: الشريط السفلي النابض كما هو ──
     return Scaffold(
       appBar: AppBar(title: Text(_titles[_currentIndex])),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: <Widget>[
-          // TickerMode يوقف حلقات اللسان غير المرئي (نبض السلسلة 🔥
-          // مثلاً) — لا حركة تعمل على شاشة غير معروضة.
-          for (int i = 0; i < _screens.length; i++)
-            TickerMode(
-              enabled: i == _currentIndex,
-              child: _screens[i],
-            ),
-        ],
-      ),
+      body: _buildBody(),
       bottomNavigationBar: _PulsingNavBar(
         currentIndex: _currentIndex,
-        onTap: (int index) {
-          if (index == _currentIndex) return;
-          setState(() => _currentIndex = index);
-        },
-        items: const <_NavItem>[
-          _NavItem(
-            svg: 'nav/nav_today',
-            fallbackIcon: Icons.wb_sunny_rounded,
-            label: 'اليوم',
-          ),
-          _NavItem(
-            svg: 'nav/nav_path',
-            fallbackIcon: Icons.route_rounded,
-            label: 'المسار',
-          ),
-          _NavItem(
-            svg: 'nav/nav_library',
-            fallbackIcon: Icons.local_library_rounded,
-            label: 'المكتبة',
-          ),
-          _NavItem(
-            svg: 'nav/nav_profile',
-            fallbackIcon: Icons.person_rounded,
-            label: 'ملفّي',
-          ),
-        ],
+        onTap: _onTap,
+        items: _navItems,
       ),
     );
   }
@@ -192,8 +307,7 @@ class _PulsingTab extends StatelessWidget {
     final Duration dur =
         animate ? const Duration(milliseconds: 140) : Duration.zero;
 
-    final Color color =
-        selected ? selectedColor : unselectedColor;
+    final Color color = selected ? selectedColor : unselectedColor;
 
     return Semantics(
       button: true,
@@ -204,6 +318,11 @@ class _PulsingTab extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           customBorder: const StadiumBorder(),
+          // إزالة splash/ripple الدائري الرمادي من التنقل —
+          // يبقى انتقال الكبسولة (pill) فقط.
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          splashFactory: NoSplash.splashFactory,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: AppSpacing.xs + 1),
             child: TweenAnimationBuilder<double>(
@@ -231,8 +350,7 @@ class _PulsingTab extends StatelessWidget {
                               indicatorColor,
                               t,
                             ),
-                            borderRadius:
-                                BorderRadius.circular(AppRadius.pill),
+                            borderRadius: BorderRadius.circular(AppRadius.pill),
                           ),
                           child: AppSvgIcon(
                             item.svg,

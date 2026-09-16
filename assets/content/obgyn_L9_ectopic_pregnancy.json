@@ -1,0 +1,1392 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L9_ectopic_pregnancy",
+    "specialty": "obgyn",
+    "title": "Ectopic Pregnancy",
+    "module": "obstetrics",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L9 Ectopic pregnancy and H.mole.pdf",
+      "page_count": 34
+    },
+    "tags": [
+      "ectopic pregnancy",
+      "tubal pregnancy",
+      "hematosalpinx",
+      "tubal rupture",
+      "shoulder tip pain",
+      "Cullen sign",
+      "culdocentesis",
+      "methotrexate",
+      "salpingectomy",
+      "salpingotomy",
+      "heterotopic pregnancy"
+    ],
+    "order_index": 8,
+    "golden_tip": [
+      "Ectopic pregnancy is usually found at 5–10 weeks and rarely remains asymptomatic beyond 8 weeks — any woman with abdominal pain or vaginal bleeding and a positive pregnancy test needs combined serum hCG + ultrasound.",
+      "Ruptured ectopic = hypotension + tachycardia >100 bpm + acute abdomen → surgical emergency (usually laparotomy); salpingectomy is the principal operation, especially for tubal rupture.",
+      "Rising hCG after ectopic removal suggests persistent trophoblast or a viable heterotopic intrauterine pregnancy; recurrence ~10%; infertility 10–15%."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c1",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Definition, Sites, and Risk Factors of Ectopic Pregnancy",
+      "summary_ar": "الحمل خارج الرحم هو انغراس البويضة المخصبة خارج تجويف الرحم بدل بطانته، وأشيع مواضعه قناة فالوب، ويُكتشف عادةً بين الأسبوع الخامس والعاشر. ترتبط معظم عوامل الخطر باختلال الوظيفة الطبيعية لقناة الرحم في نقل البويضة المخصبة.",
+      "sections": [
+        {
+          "heading": "Definition and Typical Timing",
+          "body_text": "An **ectopic pregnancy** is a pregnancy that develops outside a woman's uterus (womb). It happens when the fertilized egg from the ovary does not implant itself normally in the uterus; instead, the fertilized egg develops somewhere else in the abdomen. The products of this conception are abnormal and cannot develop into fetuses.\n\n- Ectopic pregnancy is usually found in the **first 5–10 weeks** of pregnancy.\n- It very rarely remains asymptomatic beyond **8 weeks** of gestation.\n- Title-slide **image** (diagram: a side-by-side **comparison** of normal and ectopic implantation — an **anatomical** illustration of the female reproductive system: uterus, fallopian tubes and ovaries): in a **normal pregnancy** the embryo — a small circular structure located inside the uterine cavity — is correctly implanted within the endometrial lining of the **uterus**; in an **ectopic (tubal) pregnancy** the embryo — a small circular structure located outside the uterus — is abnormally implanted within the lumen of the **fallopian tube** rather than in the uterine cavity. **Key finding:** the uterine cavity appears **empty**.",
+          "key_points": [
+            "Ectopic pregnancy = a pregnancy that develops outside the uterus (womb).",
+            "The fertilized egg develops somewhere else in the abdomen instead of implanting normally in the uterus.",
+            "The products of conception are abnormal and cannot develop into fetuses.",
+            "Usually found in the first 5–10 weeks of pregnancy; very rarely asymptomatic beyond 8 weeks."
+          ]
+        },
+        {
+          "heading": "Sites of Ectopic Pregnancy",
+          "body_text": "The **most common place** that ectopic pregnancy occurs is in **one of the fallopian tubes** (a tubal pregnancy). Ectopic pregnancies can also be found:\n\n- On the **outside of the uterus**\n- On the **ovaries** — ovarian ectopic pregnancy (rare)\n- In the **cervix**\n- Attached to the **bowel** in the abdomen\n\nAny alteration of the normal function of the uterine tube in **transporting gametes** contributes to the risk of ectopic pregnancy — a single mechanism that unifies all of the risk factors listed in the next section.",
+          "key_points": [
+            "Most common site: one of the fallopian tubes.",
+            "Other sites: outside of the uterus, on the ovaries, in the cervix, or attached to the bowel in the abdomen.",
+            "Any alteration of the tube's gamete-transport function raises the ectopic risk."
+          ]
+        },
+        {
+          "heading": "Risk Factors",
+          "body_text": "Any alteration of the normal function of the uterine tube in transporting gametes contributes to the risk of ectopic pregnancy, such as:\n\n1. **Previous ectopic pregnancy**\n2. **Previous surgery on the uterine tube**, and pelvic or abdominal surgery which may cause adhesions\n3. **Congenital abnormalities of the tube**\n4. **Endometriosis**\n5. **Previous infection**, including chlamydia, gonorrhoea and pelvic inflammatory disease\n6. **Use of intrauterine contraceptive devices (IUCD)**\n7. **Assisted reproductive technology (ART)**\n8. **Delayed childbearing** (> 35 years)\n\nThese eight factors are the classical list to quote in an exam answer; the operative teaching photograph of a tubal ectopic even shows a woman with a **previous tubal ligation** — the stump of the left tube — proving that pregnancy (including ectopic) can still occur after tubal sterilization.",
+          "key_points": [
+            "Previous ectopic pregnancy is the most classical risk factor.",
+            "Tubal, pelvic or abdominal surgery → adhesions → impaired gamete transport.",
+            "Infections: chlamydia, gonorrhoea and pelvic inflammatory disease damage the tube.",
+            "IUCD use, assisted reproductive technology and delayed childbearing (>35 years) all increase risk.",
+            "Pregnancy can still occur after tubal ligation — seen as a tubal stump on the ectopic laparoscopy photographs."
+          ],
+          "check": {
+            "prompt": "Which of the following is NOT a recognized risk factor for ectopic pregnancy?",
+            "options": [
+              "Previous ectopic pregnancy",
+              "Endometriosis",
+              "Previous chlamydia infection",
+              "Intrauterine contraceptive device",
+              "Previous normal vaginal delivery"
+            ],
+            "correct_index": 4,
+            "explanation_ar": "سوابق الحمل خارج الرحم وبطانة الرحم الهاجرة والعدوى بالكلاميديا واللولب الرحمي كلها عوامل خطر راسخة تختل بوظيفة القناة في نقل البويضة، أما الولادات المهبلية الطبيعية السابقة فليست عامل خطر."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ectopic pregnancy",
+          "definition_ar": "حمل ينغرس خارج تجويف الرحم، وأشيع مواضعه قناة فالوب."
+        },
+        {
+          "term": "Intrauterine contraceptive device (IUCD)",
+          "definition_ar": "اللولب الرحمي؛ استخدامه من عوامل خطر الحمل خارج الرحم."
+        },
+        {
+          "term": "Assisted reproductive technology (ART)",
+          "definition_ar": "تقنيات الإنجاب المساعدة كأطفال الأنابيب؛ ترفع خطر الحمل خارج الرحم."
+        },
+        {
+          "term": "Delayed childbearing",
+          "definition_ar": "تأجيل الإنجاب إلى ما بعد سن 35 عامًا؛ عامل خطر للحمل خارج الرحم."
+        },
+        {
+          "term": "Adhesions",
+          "definition_ar": "التصاقات ليفية بعد جراحة الأنابيب أو الحوض أو البطن تعيق نقل البويضة."
+        },
+        {
+          "term": "Pelvic inflammatory disease",
+          "definition_ar": "التهاب حوضي — غالبًا بالمكورات البنية أو الكلاميديا — يسبب تلفًا بالأنابيب."
+        },
+        {
+          "term": "Tubal ligation",
+          "definition_ar": "ربط أو قطع قناة فالوب للتعقيم؛ لا يمنع الحمل خارج الرحم منعًا مطلقًا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c2",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Pathophysiology: Tubal Implantation, Hematosalpinx, Abortion and Rupture",
+      "summary_ar": "ينغرس الجنين في بطانة قناة فالوب ويحفر فيها نشطًا حتى يغزو الأوعية الدموية فيحدث نزف داخل القناة يسمى تدمية البوق (hematosalpinx)، وقد ينتهي هذا النزف بإجهاض أنبوبي أو بتمزق القناة. لا يوجد التهاب في القناة في الحمل خارج الرحم، والألم ناتج عن البروستاغلاندينات المفرزة في موضع الانغراس وعن الدم الحر داخل البريتونيوم بوصفه مهيجًا موضعيًا.",
+      "sections": [
+        {
+          "heading": "From Tubal Implantation to Hematosalpinx",
+          "body_text": "In a typical ectopic pregnancy, the embryo does not reach the uterus; instead it **adheres to the lining of the fallopian tube**. The implanted embryo **burrows actively** into the tubal lining.\n\n- Most commonly this invasion **invades vessels** and causes bleeding.\n- This intratubal bleeding is called **hematosalpinx** (blood within the fallopian tube).\n- **Gross pathology of the opened tube (lecture specimen)** — image description: the slide displays a gross pathology photograph of a surgical specimen, a fallopian tube ectopic pregnancy. A bisected fallopian tube is held open by two metal surgical retractors to reveal the internal lumen. Located centrally within the lumen is a distinct, pale yellowish-white, ovoid structure. It represents the human embryo and measures **approximately 1 cm** in its greatest dimension, with a small reddish area on its surface, likely representing the developing heart or vascular structures of the embryo. The embryo is surrounded by dark red-to-black **clotted blood** and hemorrhagic material — an appearance **consistent with hematosalpinx** — and the tubal wall appears **thickened and congested**. A centimeter ruler with markings 1–5 cm provides the measurement scale, with a handwritten specimen number and date on the ruler at the top of the image.",
+          "key_points": [
+            "The embryo adheres to the tubal lining and burrows actively into it.",
+            "Invasion of vessels → intratubal bleeding = hematosalpinx.",
+            "Opened-tube specimen: ~1 cm pale embryo with a reddish cardiac area inside clotted dark blood; thickened, congested tubal wall."
+          ]
+        },
+        {
+          "heading": "Tubal Abortion and Tubal Rupture",
+          "body_text": "The intratubal bleeding of a hematosalpinx may **expel the implantation out of the tubal end** — a **tubal abortion** — or sometimes end with **rupture of the tube**.\n\n- Some women who think they are having a **miscarriage** are actually having a **tubal abortion** — the vaginal bleeding and pain of the two conditions overlap, which is why ectopic must be considered in any woman with pain or bleeding and a positive pregnancy test.\n- Tubal rupture produces sudden intraperitoneal hemorrhage — the life-threatening event of ectopic pregnancy.\n- The products of an ectopic conception are abnormal and **cannot develop into fetuses**: the lecture's illustration of the human embryo/fetus of the **first trimester (approximately 8–10 weeks)** shows it curled in the fetal position — a C-shaped posture characteristic of early development — with a disproportionately large head, developing facial features — forehead, nasal area and early eye — limbs bent at the elbow and knee, smooth translucent skin, and a prominent umbilical cord base (physiological umbilical hernia), the whole image rendered in warm tones. The embryo is surrounded by tissue resembling the uterine wall and frond-like **chorionic villi** — its supporting environment. Growth of this kind cannot be sustained at an ectopic site, so the gestation ends in tubal abortion or rupture long before fetal development.",
+          "key_points": [
+            "Hematosalpinx expels the implantation out of the tubal end = tubal abortion.",
+            "Hematosalpinx may instead end with rupture of the tube.",
+            "A woman 'having a miscarriage' may actually be having a tubal abortion.",
+            "Products of an ectopic conception are abnormal and cannot develop into fetuses."
+          ],
+          "check": {
+            "prompt": "Intratubal bleeding (hematosalpinx) in a tubal ectopic has two classical outcomes. What are they?",
+            "options": [
+              "Tubal abortion or tubal rupture",
+              "Chronic salpingitis or pyosalpinx",
+              "Migration back into the uterus or twin intrauterine pregnancy",
+              "Complete resolution or hydrosalpinx"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "نزف تدمية البوق يطرد نسيج الانغراس من طرف القناة فيحدث الإجهاض الأنبوبي، أو يتراكم حتى يتمزق جدار القناة؛ ولا التهاب مزمن ولا عودة الجنين إلى الرحم جزءًا من المسار المرضي."
+          }
+        },
+        {
+          "heading": "Pain Mechanism — No Inflammation of the Tube",
+          "body_text": "There is **no inflammation of the tube** in ectopic pregnancy.\n\nThe pain is caused by:\n- **Prostaglandins released at the implantation site**\n- **Free blood in the peritoneal cavity**, which is a local irritant\n\nFree blood tracking under the diaphragm also explains referred **shoulder-tip pain**, and blood irritating the parietal peritoneum explains the acute abdomen once the tube ruptures.",
+          "key_points": [
+            "There is NO inflammation of the tube in ectopic pregnancy.",
+            "Pain = prostaglandins at the implantation site + free peritoneal blood as a local irritant.",
+            "Diaphragmatic irritation by blood explains referred shoulder-tip pain."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hematosalpinx",
+          "definition_ar": "تجمّع الدم داخل قناة فالوب نتيجة غزو الأوعية بنسيج المشيمة المنغرس."
+        },
+        {
+          "term": "Tubal abortion",
+          "definition_ar": "طرد نسيج الحمل خارج طرف قناة فالوب بفعل النزف داخل القناة."
+        },
+        {
+          "term": "Tubal rupture",
+          "definition_ar": "تمزق جدار القناة الممتلئ بالدم مسببًا نزفًا داخل البريتونيوم وصدمة."
+        },
+        {
+          "term": "Prostaglandins",
+          "definition_ar": "وسائط كيميائية تُفرز في موضع الانغراس وتسبب ألم الحمل خارج الرحم غير المتمزق."
+        },
+        {
+          "term": "Chorionic villi",
+          "definition_ar": "الزغابات المشيمية المحيطة بالجنين؛ نسيج مشيمي لا يستطيع النمو في موضع خارج الرحم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c3",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Clinical Presentation: Symptoms and Signs",
+      "summary_ar": "تتألف الصورة النموذجية من ألم موضعي بالبطن وانقطاع طمث قصير ونزف أو تنقيط مهبلي خفيف، وقد تظهر أعراض لا نمطية كألم الكتف والانتفاخ والغثيان والإقياء والدوخة والإغماء. أما الحمل المتمزق فحالة إسعافية حقيقية بشحوب وتعرق وتسرع قلب يتجاوز 100 نبضة في الدقيقة وألم يمنع الوقوف.",
+      "sections": [
+        {
+          "heading": "Typical and Atypical Symptoms",
+          "body_text": "In the ectopic pregnancy clinical presentation symptoms and signs appear early: an ectopic pregnancy **very rarely remains asymptomatic beyond 8 weeks** of gestation.\n\n**Typical symptoms:**\n- Localized/abdominal pain\n- Amenorrhea (usually a short period of amenorrhea)\n- Vaginal bleeding or spotting (mild)\n\n**Atypical symptoms:**\n- Shoulder pain\n- Abdominal distension\n- Nausea, vomiting\n- Dizziness, fainting\n\nSymptoms of an ectopic pregnancy are often **confused with those of a miscarriage or pelvic inflammatory disease**. The most common presenting symptoms are **abdominal and pelvic pain and mild vaginal bleeding**.",
+          "key_points": [
+            "Rarely asymptomatic beyond 8 weeks of gestation.",
+            "Typical: localized/abdominal pain + short amenorrhea + mild vaginal bleeding or spotting.",
+            "Atypical: shoulder pain, abdominal distension, nausea, vomiting, dizziness, fainting.",
+            "Most common symptoms overall: abdominal and pelvic pain with mild vaginal bleeding.",
+            "Often confused with miscarriage or pelvic inflammatory disease."
+          ],
+          "check": {
+            "prompt": "A woman with an UNRUPTURED tubal ectopic asks why she has pain although the tube has not ruptured. What causes this pain?",
+            "options": [
+              "Acute inflammation of the tubal wall",
+              "Prostaglandins released at the implantation site plus free peritoneal blood acting as a local irritant",
+              "Uterine contractions expelling the products",
+              "Compression of the pelvic veins"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "لا يوجد التهاب في القناة في الحمل خارج الرحم؛ فالألم ينتج عن البروستاغلاندينات المفرزة في موضع الانغراس وعن الدم الحر في التجويف البريتوني بوصفه مهيجًا موضعيًا."
+          }
+        },
+        {
+          "heading": "Ruptured Ectopic — a True Medical Emergency",
+          "body_text": "A **ruptured ectopic pregnancy is a true medical emergency**. Common symptoms of a ruptured ectopic pregnancy (acute presentation) include:\n\n- **Dizziness**\n- **Pale complexion**\n- **Sweaty** skin\n- **Fast heart rate (over 100 beats per minute)**\n- **Abdominal or pelvic pain so severe that the patient cannot even stand up**\n\nThis is the picture of acute hemoperitoneum with hypovolemia: blood pouring into the peritoneal cavity produces hypotension with reflex tachycardia, pallor and sweating, while cerebral hypoperfusion explains the dizziness, fainting and collapse.",
+          "key_points": [
+            "Ruptured ectopic = a true medical emergency.",
+            "Dizziness, pale complexion, sweaty skin.",
+            "Fast heart rate over 100 beats per minute.",
+            "Pain so severe the patient cannot even stand up."
+          ]
+        },
+        {
+          "heading": "Clinical Signs on Examination of Rupture",
+          "body_text": "On examination of a ruptured ectopic pregnancy (clinical signs):\n\n**General examination:**\n- Level of consciousness — drowsiness\n- Pallor\n- Tachycardia\n- Hypotension\n\n**Abdominal examination:**\n- Acute abdomen\n- Lower abdominal tenderness\n- Rebound tenderness positive\n\nThe woman may appear pale, complain of nausea, and collapse; these general signs accompany the acute abdomen and reflect ongoing internal bleeding.",
+          "key_points": [
+            "General exam: consciousness level, drowsiness, pallor, tachycardia, hypotension.",
+            "Abdominal exam: acute abdomen with lower abdominal tenderness and positive rebound tenderness.",
+            "Pallor, nausea and collapse may accompany the acute abdomen."
+          ],
+          "check": {
+            "prompt": "In a ruptured ectopic pregnancy, the fast heart rate typically exceeds:",
+            "options": [
+              "60 beats per minute",
+              "80 beats per minute",
+              "100 beats per minute",
+              "140 beats per minute before it becomes significant"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "تسرع القلب فوق 100 نبضة في الدقيقة مع الشحوب والتعرق والدوخة علامات نزف داخلي وصدمة نقص حجم الدم في الحمل خارج الرحم المتمزق، وهو حالة إسعافية جراحية حقيقية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Amenorrhea",
+          "definition_ar": "انقطاع الطمث؛ في الحمل خارج الرحم يكون عادةً قصير المدى."
+        },
+        {
+          "term": "Shoulder-tip pain",
+          "definition_ar": "ألم قمة الكتف؛ ألم راجع عن تهيج الحجاب الحاجز بالدم داخل البريتونيوم."
+        },
+        {
+          "term": "Acute abdomen",
+          "definition_ar": "بطن حاد بألم بطني سفلي وعلامة ارتداد إيجابية نتيجة تهيج البريتونيوم."
+        },
+        {
+          "term": "Rebound tenderness",
+          "definition_ar": "ألم يزداد عند رفع يد الفاحص عن البطن؛ علامة تهيج بريتوني."
+        },
+        {
+          "term": "Hemoperitoneum",
+          "definition_ar": "دم حر داخل التجويف البريتونيوم من تمزق قناة الحمل خارج الرحم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c4",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Diagnosis of Ectopic Pregnancy",
+      "summary_ar": "يجب الاشتباه بالحمل خارج الرحم في أي امرأة تشكو ألمًا بطنيًا أو نزفًا مهبليًا مع اختبار حمل إيجابي. يُشخَّص حاليًا بدمج مستوى hCG المصل مع الأمواج فوق الصوتية، وتسانده انخفاض البروجسترون وهبوط hCG ووجود كتلة ملحقية مع غياب الحمل داخل الرحم، إضافة إلى البزل خلف الرحم وعلامة كولين حول السرة.",
+      "sections": [
+        {
+          "heading": "When to Suspect and How to Confirm",
+          "body_text": "Ectopic pregnancy diagnosis starts with suspicion: an ectopic pregnancy should be considered in **any woman with abdominal pain or vaginal bleeding** who has:\n\n1. A **positive pregnancy test**\n2. An **ultrasound showing a gestational sac with fetal heart in the fallopian tube** (an adnexal mass) — this is **clear evidence of ectopic pregnancy**\n3. An **abnormal rise in blood β-hCG levels** (quantitative measurement)\n\nCurrently, the occurrence of an extra-uterine pregnancy is diagnosed with a **combination of serum hCG levels and ultrasound scan** — neither test alone is sufficient, and serial quantitative β-hCG values are interpreted together with the sonographic findings.",
+          "key_points": [
+            "Consider ectopic in ANY woman with abdominal pain or vaginal bleeding and a positive pregnancy test.",
+            "Ultrasound showing a gestational sac with fetal heart in the fallopian tube = clear evidence of ectopic pregnancy.",
+            "An abnormal rise in blood β-hCG (quantitative measurement) may also indicate an ectopic pregnancy.",
+            "Modern diagnosis = combination of serum hCG levels + ultrasound scan."
+          ]
+        },
+        {
+          "heading": "Clinical and Pelvic Findings",
+          "body_text": "The woman will usually give a **history of early pregnancy signs and symptoms**. Findings that support the diagnosis include:\n\n- The **uterus enlarges and feels soft**\n- **Abdominal pain** may occur as the tube distends, and uterine bleeding may be present\n- The abdomen may be **tender and distended**\n- **Shoulder-tip pain** due to referred pain\n- The woman may appear **pale**, complain of **nausea** and **collapse**\n- **Severe pain felt during the pelvic exam.** Tender adnexa or **cervical excitation positive**\n- A **mass may be felt on one side of the uterus** (adnexal mass)\n- **Hormonal assay** will find **progesterone levels low and hCG levels falling**\n- **USS** may show **fluid and/or a mass in the pelvic cavity** and **absence of intrauterine pregnancy**",
+          "key_points": [
+            "Uterus: enlarged and soft; abdomen tender and distended as the tube distends.",
+            "Pelvic exam: severe pain, tender adnexa, cervical excitation positive, unilateral mass.",
+            "Hormonal assay: low progesterone with falling hCG.",
+            "USS: fluid and/or mass in the pelvic cavity with absence of an intrauterine pregnancy.",
+            "Shoulder-tip pain, pallor, nausea and collapse point to intraperitoneal bleeding."
+          ]
+        },
+        {
+          "heading": "Culdocentesis and Cullen's Sign",
+          "body_text": "**Culdocentesis** is a less commonly performed test that may be used to look for internal bleeding. In this test, a needle is inserted into the space at the **very top of the vagina, behind the uterus and in front of the rectum** (the recto-uterine pouch). Any **blood or fluid found there likely comes from a ruptured ectopic pregnancy**.\n\n**Cullen's sign** can indicate a ruptured ectopic pregnancy. Cullen's sign is **blue-black bruising of the area around the umbilicus**:\n\n- **Image type — clinical photograph**: the subject of the image is the patient's abdominal wall (periumbilical region); the umbilicus (navel) is visible as a raised, rounded structure in the upper central portion, with normal skin texture and visible hair follicles. The patient is in a supine or semi-recumbent position, partially covered by a blue and white patterned hospital gown. A well-demarcated area of ecchymosis (bruising) lies inferior and slightly lateral to the navel: an irregularly shaped, somewhat circular or oval patch of cutaneous hemorrhage with a variegated **color** pattern — a darker purple to deep reddish-brown center fading into lighter **shades** of red and yellowish-brown at the periphery (the stages of blood breakdown, heme degradation). The presence of the hospital gown indicates the acute clinical setting of the Cullen's sign slide.\n- Definition: superficial edema and bruising in the subcutaneous fatty tissue around the umbilicus.\n- Pathophysiology: retroperitoneal blood (hematoma) tracks from the site of hemorrhage along the fascial planes — specifically along the falciform ligament — to the subcutaneous tissue of the umbilicus.\n- Differential causes: **acute pancreatitis** (the most common cause), **ruptured ectopic pregnancy** (the critical Obstetrics & Gynecology differential), abdominal trauma (splenic/hepatic laceration), and ruptured abdominal aortic aneurysm\n- **Grey Turner's sign**: similar bruising located in the **flanks** (lateral abdominal walls), also indicative of retroperitoneal bleeding\n- Prognostic value: historically associated with high mortality (up to 37–40%) because of the severity of the underlying internal bleeding",
+          "key_points": [
+            "Culdocentesis: needle at the very top of the vagina, behind the uterus and in front of the rectum; blood/fluid there likely comes from a ruptured ectopic.",
+            "Cullen's sign = blue-black periumbilical bruising; can indicate a ruptured ectopic pregnancy.",
+            "Blood reaches the umbilicus by tracking along the falciform ligament/fascial planes.",
+            "Most common cause overall: acute pancreatitis; also trauma and ruptured AAA.",
+            "Grey Turner's sign = the same bruising in the flanks."
+          ],
+          "check": {
+            "prompt": "A needle is inserted into the space at the very top of the vagina, behind the uterus and in front of the rectum, to aspirate fluid. What is this test called?",
+            "options": [
+              "Culdocentesis",
+              "Cullen's sign",
+              "Laparoscopy",
+              "Salpingotomy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "البزل خلف الرحم (culdocentesis) يُدخل فيه الإبرة في الفراغ أعلى المهبل خلف الرحم وأمام المستقيم بحثًا عن دم النزف الداخلي؛ أما علامة كولين ازرقاق حول السرة، والاستئصال البوقي إجراء جراحي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Culdocentesis",
+          "definition_ar": "بزل خلف الرحم عبر أعلى المهبل (خلف الرحم وأمام المستقيم) بحثًا عن دم النزف الداخلي."
+        },
+        {
+          "term": "Cullen's sign",
+          "definition_ar": "ازرقاق مزرق-مسود حول السرة يدل على نزف داخلي وقد يشير إلى تمزق حمل خارج الرحم."
+        },
+        {
+          "term": "Grey Turner's sign",
+          "definition_ar": "ازرقاق الخاصرة (الجدار البطني الوحشي) يدل على نزف خلف الصفاق."
+        },
+        {
+          "term": "Cervical excitation",
+          "definition_ar": "ألم شديد عند تحريك عنق الرحم بالفحص المهبلي؛ علامة مساندة للحمل خارج الرحم."
+        },
+        {
+          "term": "β-hCG (quantitative)",
+          "definition_ar": "القياس الكمي لهرمون الحمل في الدم؛ الارتفاع غير الطبيعي يرجح الحمل خارج الرحم."
+        },
+        {
+          "term": "Adnexal mass",
+          "definition_ar": "كتلة في الملحقات (البوق/المبيض) تُجس أو تُرى بجانب الرحم."
+        },
+        {
+          "term": "Falciform ligament",
+          "definition_ar": "الرباط المنجلي؛ تسلك فيه الدماء متجهةً إلى ما حول السرة مكونةً علامة كولين."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c5",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Treatment: Expectant, Medical, and Surgical Management",
+      "summary_ar": "العلاج ليس جراحيًا في كل حالة: فالتدبير الترقبي يناسب المستقرات ديناميكيًا بلا نزف أو ألم أو صدمة مع متابعة hCG كل 2–7 أيام حتى يعتدل (نجاح 90% في المنتقيات)، والميثوتريكسات حقنًا للحمل غير المتمزق حين يكون hCG دون حد معين، والجراحة هي الأساس عند التمزق أو التهديد به وأشهرها الاستئصال البوقي.",
+      "sections": [
+        {
+          "heading": "Treatment Strategy Overview",
+          "body_text": "The common perception is that **everyone with an ectopic needs an operation** to deal with it; however, a number of treatment options are available:\n\n- **Expectant management** — if there is **no bleeding, pain, or shock** (the patient is hemodynamically stable)\n- **Immediate treatment** — essential if there is evidence of pain and bleeding **producing shock**, as this is a **life-threatening condition**\n\nA ruptured ectopic with shock is a **surgical emergency**, and in most cases a **laparotomy** is performed.",
+          "key_points": [
+            "Not every ectopic needs an operation — expectant, medical and surgical options exist.",
+            "Expectant management: only if no bleeding, pain or shock (hemodynamically stable).",
+            "Pain + bleeding producing shock = life-threatening; immediate treatment is essential.",
+            "Ruptured ectopic with shock = surgical emergency; most cases undergo laparotomy."
+          ]
+        },
+        {
+          "heading": "Expectant Management",
+          "body_text": "Expectant management is used when **pain is less** and the indicators are that the ectopic is a **small one** or it is **not bleeding too much**:\n\n- Requires a hemodynamically stable patient with no bleeding, pain or shock\n- The expectant approach involves **close follow-up with hCG tests every 2–7 days** until levels have returned to normal\n- It is **successful in 90% of selected patients**",
+          "key_points": [
+            "Indications: minimal pain, small ectopic, not bleeding too much, stable patient.",
+            "Follow-up: hCG tests every 2–7 days until levels return to normal.",
+            "Success rate: 90% of selected patients."
+          ]
+        },
+        {
+          "heading": "Medical Management with Methotrexate",
+          "body_text": "If the **hCG level is below a certain limit** and there is **no risk of imminent rupture**, the doctor may prescribe a drug called **methotrexate** to treat the ectopic pregnancy:\n\n- Methotrexate is a drug that **destroys actively growing tissues** such as the placental tissues that support the pregnancy\n- It is also used in **chemotherapy** and works to **stop rapidly growing cells from multiplying**\n- The drug is administered as an **injection** in selected cases **to avoid surgery — only in a non-ruptured ectopic**\n\n**Side effects include:**\n- **Abdominal pain for 3–7 days in 50% of cases**\n- Mild symptoms of **nausea, mouth dryness and soreness, and diarrhea**",
+          "key_points": [
+            "Methotrexate: for a non-ruptured ectopic with hCG below a certain limit and no imminent rupture risk.",
+            "Mechanism: destroys actively growing placental tissue; stops rapidly growing cells from multiplying (also used in chemotherapy).",
+            "Route: injection — used in selected cases to avoid surgery.",
+            "Side effects: abdominal pain for 3–7 days in 50% of cases; nausea, mouth dryness/soreness, diarrhea."
+          ],
+          "check": {
+            "prompt": "A woman with an unruptured ectopic pregnancy is given a methotrexate injection. Which symptom pattern should she be told to expect as a known side effect?",
+            "options": [
+              "Abdominal pain for 3–7 days in 50% of cases with mild nausea, mouth dryness and diarrhea",
+              "Severe epistaxis for two weeks",
+              "Progressive weight gain and hirsutism",
+              "No side effects at all"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "من آثار الميثوتريكسات الجانبية ألم بطني لمدة 3–7 أيام في 50% من الحالات مع أعراض خفيفة كالغثيان وجفاف وتقرح الفم والإسهال؛ فهي آثار متوقعة للدواء المدمر للأنسجة سريعة النمو."
+          }
+        },
+        {
+          "heading": "Surgical Treatment — Procedures and Indications",
+          "body_text": "Surgery is the **final possibility** in the treatment of an ectopic pregnancy. If the ectopic pregnancy is continuing to develop and is posing a **threat of rupture**, or if it has **already ruptured**, surgical treatment is the **default and unavoidable**.\n\nIn surgical treatment of an ectopic pregnancy, the doctor operates to **remove the pregnancy tissue from the fallopian tube**. The surgery may involve laparoscopy. Sometimes there is **no way to repair the damage to the fallopian tube** and the doctor must remove the affected tube.\n\n**Types of procedures:**\n- **Salpingotomy** — making an incision on the tube and removing the pregnancy; this **conservative surgical management** may be employed when the ectopic has **not ruptured** and where the tube appears **normal**\n- **Salpingectomy** (tubal removal) — the **principle treatment**, especially where there is **tubal rupture**\n- **Segmental resection** — cutting out the affected portion of the tube\n- **Fimbrial expression** — 'milking' the pregnancy out of the end of the tube",
+          "key_points": [
+            "Surgery is default and unavoidable when rupture threatens or has already happened.",
+            "The surgeon removes pregnancy tissue from the tube; the tube is removed when it cannot be repaired.",
+            "Salpingotomy (incision + evacuation) = conservative, for unruptured ectopic with a normal-looking tube.",
+            "Salpingectomy = the principle treatment, especially in tubal rupture.",
+            "Also: segmental resection (cut out the affected segment) and fimbrial expression ('milking').",
+            "Laparoscopy is the usual approach; laparotomy in most emergency cases."
+          ]
+        },
+        {
+          "heading": "Laparoscopy — What the Surgeon Sees",
+          "body_text": "Laparoscopy provides the direct visual diagnosis of a tubal ectopic and guides the choice of procedure. The lecture's intraoperative laparoscopic images (shown as side-by-side pairs) display:\n\n- **The swollen tube of a tubal ectopic (left panel)**: a close-up laparoscopic view of an elongated, tubular, smooth, glistening, pinkish-red, distended anatomical structure covered by fine branching superficial blood vessels — surface details consistent with a hematosalpinx (or hydrosalpinx when fluid-filled); yellowish, lobulated adipose tissue (omentum) is visible in the upper left background\n- **The adjacent pelvic organs (right panel)**: a wider laparoscopic view of the pelvic anatomy. A prominent dark red, convoluted (tortuous), highly vascular central structure is the fallopian tube containing the ectopic; inferior to it lies the large, rounded, smooth, pink **ovary** with several visible surface vessels, while a pale, smooth, glistening surface could possibly be the contralateral ovary, the uterus or the peritoneal lining; a shiny metallic reflection from a surgical instrument (grasper or probe) crosses the field, and the moist tissues reflect the laparoscopic light source\n- **Right tubal ectopic (caption: 'Photo of a right tubal ectopic pregnancy at laparoscopy surgery')**: the swollen right tube containing the ectopic pregnancy is shown on the right at **E**, while the **stump of the left tube is seen at L** — this woman had a **previous tubal ligation**\n- **Close-up view of the same ectopic pregnancy**: visual findings — the structures visible are labeled in green text — the **uterus** (smooth reddish-pink muscular organ), the **tubal pregnancy** (markedly distended, bulbous, congested, dark red/purple and vascular, positioned centrally at the top) and the **ovary** (pale, whitish, irregular, at the bottom center); a metallic laparoscopic grasper or probe touches the swollen tube at the top right\n- **After laparoscopic resection of the tube (caption: 'After laparoscopic resection of the tube, the tubal stump is seen at S')**: the label **S** pointing to the **tubal stump** — the shortened, congested/edematous remaining proximal portion of the tube attached to the uterine cornua — with the uterus in the upper left/center, bowel loops or omental tissue in the lower left foreground, residual blood or serosanguinous fluid in the surgical field, and a laparoscopic instrument visible at the edge of the frame\n- **Operative salpingotomy/salpingectomy views**: the affected tube is distended and erythematous with vascular congestion and whitish fibrinous material or scarring on its surface; the companion view shows the fallopian tube with a defect or opening — the result of the incision (salpingotomy) or the resection site (salpingectomy) — revealing the internal muscularis layer or the lumen. Whitish, irregular material beside the tube could represent clots or products of conception, and the surrounding tissues show typical post-manipulation edema and hyperemia\n\n**Clinical context:** one further intraoperative photograph (a graphic surgical view placed between the SURGERY text slides) illustrates the same operative management — its substantive teaching content is fully covered by the text content of those slides: surgery is the default and unavoidable once rupture threatens or has occurred, the pregnancy tissue is removed from the tube by laparoscopy, and the tube is resected when it cannot be repaired. In the unstable, shocked patient an emergency **laparotomy** is performed instead.",
+          "key_points": [
+            "Tubal ectopic at laparoscopy = swollen, congested, highly vascular tube (hematosalpinx) beside a pink ovary.",
+            "Teaching photos: swollen right tube at E; left tubal ligation stump at L — ectopic can follow failed sterilization.",
+            "Close view labels: uterus, bulbous dark-red tubal pregnancy, pale whitish ovary.",
+            "After resection: the tubal stump (S) remains at the uterine cornua.",
+            "Laparoscopy is the routine approach; laparotomy for the emergency/ruptured case."
+          ],
+          "check": {
+            "prompt": "A woman with a RUPTURED ectopic and shock reaches the operating theater. Which is the principal surgical treatment?",
+            "options": [
+              "Methotrexate injection",
+              "Salpingectomy (tubal removal)",
+              "Expectant management",
+              "Fimbrial expression"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الاستئصال البوقي هو العلاج الأساسي عند تمزق القناة؛ أما شق القناة وإزالة الحمل فيُحتفظ به للحمل غير المتمزق عندما تبدو القناة طبيعية، والميثوتريكسات للحمل غير المتمزق فقط، والتدبير الترقبي للمستقرات بلا نزف أو ألم أو صدمة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Salpingotomy",
+          "definition_ar": "شق قناة فالوب وإزالة الحمل مع إبقاء القناة؛ علاج تحفظي للحمل غير المتمزق والقناة طبيعية."
+        },
+        {
+          "term": "Salpingectomy",
+          "definition_ar": "استئصال قناة فالوب؛ العلاج الأساسي خاصةً عند تمزق القناة."
+        },
+        {
+          "term": "Salpingostomy",
+          "definition_ar": "فتح القناة وإصلاحها بعد إزالة الحمل؛ يقلل احتمال تكرار الحمل خارج الرحم مقارنةً بالاستئصال."
+        },
+        {
+          "term": "Segmental resection",
+          "definition_ar": "قطع واستئصال الجزء المصاب من قناة فالوب."
+        },
+        {
+          "term": "Fimbrial expression",
+          "definition_ar": "'حلب' نسيج الحمل خارج نهاية القناة (الصوار)."
+        },
+        {
+          "term": "Methotrexate",
+          "definition_ar": "دواء كيميائي يوقف تكاثر الخلايا سريعة النمو كنسيج المشيمة؛ يُعطى حقنًا في الحمل غير المتمزق."
+        },
+        {
+          "term": "Laparotomy",
+          "definition_ar": "فتح البطن الجراحي؛ يُجرى في أغلب حالات الطوارئ (التمزق مع الصدمة)."
+        },
+        {
+          "term": "Laparoscopy",
+          "definition_ar": "الجراحة بالمنظار البطني لتشخيص وعلاج الحمل خارج الرحم غير المتمزق غالبًا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c6",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Complications and Chances of Future Pregnancy",
+      "summary_ar": "أشيع اختلاط هو التمزق مع نزف داخلي يقود إلى الصدمة، والوفاة نادرة مع توفر المرافق الطبية الحديثة. يصيب العقم 10–15% من النساء بعد حمل خارج الرحم، ويقارب احتمال تكراره 10% متوقفًا على حالة الملحقات المتبقية وعلى إصلاح القناة أو استئصالها.",
+      "sections": [
+        {
+          "heading": "Complications",
+          "body_text": "The complications of ectopic pregnancy follow from tubal rupture and intraperitoneal hemorrhage:\n\n- The **most common complication is rupture with internal bleeding** that leads to **shock**\n- **Death from rupture is rare** in women who have access to modern medical facilities\n- **Infertility occurs in 10–15% of women** who have had an ectopic pregnancy\n\nBecause rupture can occur suddenly with massive hemoperitoneum and hypovolemic shock, any woman with a suspected ectopic pregnancy (pain or bleeding with a positive pregnancy test) must be assessed urgently — this is what makes ectopic pregnancy a true medical emergency.",
+          "key_points": [
+            "Most common complication: rupture with internal bleeding leading to shock.",
+            "Death from rupture is rare where modern medical facilities are accessible.",
+            "Infertility affects 10–15% of women after an ectopic pregnancy."
+          ],
+          "check": {
+            "prompt": "After one ectopic pregnancy, what is the approximate risk of recurrent ectopic pregnancy?",
+            "options": [
+              "About 1%",
+              "About 10%",
+              "About 25%",
+              "About 50%"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "احتمال تكرار الحمل خارج الرحم يقارب 10% بعد حمل سابق خارج الرحم، ويعتمد على حالة الملحقات المتبقية وعلى إصلاح القناة أو استئصالها، في حين يصيب العقم 10–15% من النساء."
+          }
+        },
+        {
+          "heading": "Chances of Future Pregnancy",
+          "body_text": "The chance of future pregnancy depends on the **status of the adnexa left behind**:\n\n- The chance of **recurrent ectopic pregnancy is about 10%**\n- This risk depends on whether the affected tube was **repaired (salpingostomy)** or **removed (salpingectomy)**\n- With a healthy remaining tube and adnexa, a future intrauterine pregnancy is achievable; women who conceive again should be offered **early ultrasound** to confirm intrauterine implantation",
+          "key_points": [
+            "Future fertility depends on the status of the adnexa left behind.",
+            "Recurrent ectopic pregnancy: about 10%.",
+            "Recurrence risk depends on repair (salpingostomy) vs removal (salpingectomy) of the tube."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Internal bleeding",
+          "definition_ar": "نزف داخلي في التجويف البريتوني نتيجة تمزق قناة الحمل خارج الرحم."
+        },
+        {
+          "term": "Shock",
+          "definition_ar": "صدمة نقص حجم الدم من النزف الداخلي؛ أخطر اختلاط للحمل خارج الرحم."
+        },
+        {
+          "term": "Recurrent ectopic pregnancy",
+          "definition_ar": "تكرار الحمل خارج الرحم؛ احتماله التقريبي 10% بعد حمل خارج رحم سابق."
+        },
+        {
+          "term": "Infertility",
+          "definition_ar": "العقم؛ يصيب 10–15% من النساء اللواتي أصبن بحمل خارج الرحم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_c7",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Ovarian Ectopic and Heterotopic Pregnancy",
+      "summary_ar": "الحمل المبيضي نادر، وتُظهر صورته الجراحية مبيضًا أبيض بزرع الحمل على سطحه محاطًا بدم متخثر. أما الحمل المغاير فهو وجود بويضتين مخصبتين إحداهما خارج الرحم والأخرى داخله، وكثيرًا ما يُكتشف الحمل داخل الرحم لاحقًا عن طريق ارتفاع hCG المستمر بعد إزالة الحمل خارج الرحم.",
+      "sections": [
+        {
+          "heading": "Ovarian Ectopic Pregnancy",
+          "body_text": "**Ovarian ectopic pregnancies are rare.** The lecture's operative photograph demonstrates:\n\n- The **ovary is the white structure in the middle** of the field\n- The **pregnancy implanted on the far right side of the ovary at the 'X'**\n- **Clotted blood is seen around the ovary**\n\nOvarian implantation is one of the non-tubal sites of ectopic pregnancy, alongside the outside of the uterus, the cervix and the bowel — remember that the fallopian tube remains by far the most common site.",
+          "key_points": [
+            "Ovarian ectopic pregnancy is rare.",
+            "Operative photo: white ovary in the middle, pregnancy implanted at the 'X' on its far right side, clotted blood around the ovary.",
+            "Other rare sites: outside of uterus, cervix, bowel."
+          ]
+        },
+        {
+          "heading": "Heterotopic Pregnancy",
+          "body_text": "In rare cases of ectopic pregnancy, there may be **two fertilized eggs — one outside the uterus and the other inside**. This is called a **heterotopic pregnancy**.\n\n- Often the **intrauterine pregnancy is discovered later** than the ectopic, mainly because of the **painful emergency nature** of ectopic pregnancies\n- Since ectopic pregnancies are normally **discovered and removed very early** in the pregnancy, an ultrasound may **not find the additional pregnancy inside the uterus** at that time\n- When **hCG levels continue to rise after the removal of the ectopic pregnancy**, there is the chance that a **pregnancy inside the uterus is still viable**\n- This is normally **discovered through an ultrasound**\n\nClinical rule: after ectopic removal, follow-up hCG measurement is essential — a rising titer should prompt ultrasound evaluation for residual/persistent trophoblast at the ectopic site or for a viable intrauterine gestation in a heterotopic pregnancy.\n\n(The lecture itself closes with a decorative 'ARE THERE ANY QUESTIONS?' slide — a blue gradient background with a floral arrangement of gray-white leaves and thin diagonal lines — carrying no further slide content.)",
+          "key_points": [
+            "Heterotopic pregnancy = two fertilized eggs: one outside the uterus, one inside.",
+            "The intrauterine pregnancy is often discovered later than the ectopic (ectopic is a painful emergency).",
+            "Early removal of the ectopic means ultrasound may miss the intrauterine co-twin at that time.",
+            "Rising hCG after ectopic removal → the intrauterine pregnancy may still be viable — confirm by ultrasound."
+          ],
+          "check": {
+            "prompt": "Three weeks after removal of a tubal ectopic pregnancy, hCG levels continue to rise and ultrasound shows a gestational sac with a fetal heart INSIDE the uterus. What explains this?",
+            "options": [
+              "A heterotopic pregnancy — a second fertilized egg implanted inside the uterus",
+              "Normal persistence of hCG after salpingectomy",
+              "hCG production by the corpus luteum for months",
+              "A laboratory error, the usual cause of rising hCG"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحمل المغاير يعني بويضتين مخصبتين: إحداهما خارج الرحم والأخرى داخله؛ وكثيرًا ما يُكتشف الحمل داخل الرحم متأخرًا، فارتفاع hCG بعد إزالة الحمل خارج الرحم ينبئ باحتمال بقاء حمل داخل الرحم حيًا ويؤكد بالموجات فوق الصوتية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ovarian ectopic pregnancy",
+          "definition_ar": "انغراس الحمل في المبيض؛ نادر، ويُرى جراحيًا كدم متخثر حول مبيض أبيض."
+        },
+        {
+          "term": "Heterotopic pregnancy",
+          "definition_ar": "بويضتان مخصبتان: حمل خارج الرحم وحمل داخل الرحم في الوقت نفسه."
+        },
+        {
+          "term": "Persistent trophoblast",
+          "definition_ar": "بقايا نسيج مشيمي نشط بعد علاج الحمل خارج الرحم ترفع hCG ويجب متابعته."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f01",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "Define an ectopic pregnancy.",
+      "back_text": "A pregnancy that develops outside a woman's uterus (womb): the fertilized egg from the ovary does not implant normally in the uterus and instead develops somewhere else in the abdomen. The products of conception are abnormal and cannot develop into fetuses. It is usually found in the first 5–10 weeks.",
+      "tags": [
+        "ectopic pregnancy",
+        "definition"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f02",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What is the most common site of ectopic pregnancy, and what are the other sites?",
+      "back_text": "Most common: one of the fallopian tubes. Other sites: on the outside of the uterus, on the ovaries, in the cervix, or attached to the bowel in the abdomen.",
+      "tags": [
+        "sites",
+        "ectopic pregnancy"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f03",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "List the eight risk factors for ectopic pregnancy.",
+      "back_text": "1) Previous ectopic pregnancy; 2) previous surgery on the uterine tube, or pelvic/abdominal surgery causing adhesions; 3) congenital abnormalities of the tube; 4) endometriosis; 5) previous infection — chlamydia, gonorrhoea, pelvic inflammatory disease; 6) use of intrauterine contraceptive devices; 7) assisted reproductive technology; 8) delayed childbearing (> 35 years).",
+      "mnemonic_ar": "تذكير بالعوامل الثمانية: سابقة حمل خارج الرحم – جراحة أنابيب أو حوض – عيب خلقي بالقناة – بطانة رحم هاجرة – عدوى (كلاميديا/سيلان/التهاب حوض) – لولب رحمي – أطفال أنابيب – سن فوق 35.",
+      "tags": [
+        "risk factors"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f04",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "What is hematosalpinx and how does it arise?",
+      "back_text": "Intratubal bleeding — blood within the fallopian tube. It arises when the implanted ectopic embryo burrows actively into the tubal lining and invades vessels; the hematosalpinx may expel the implantation out of the tubal end (tubal abortion) or end with rupture of the tube.",
+      "explanation_ar": "كلمة hematosalpinx تعني حرفيًا دم في قناة فالوب: نزف داخل القناة يغزو فيه نسيج المشيمة الأوعية الدموية، وينتهي إما بإجهاض أنبوبي أو بتمزق القناة.",
+      "tags": [
+        "hematosalpinx",
+        "pathophysiology"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f05",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "What is a tubal abortion, and with which condition is it commonly confused?",
+      "back_text": "Expulsion of the tubal implantation out of the tubal end, caused by the intratubal bleeding of hematosalpinx. Some women who think they are having a miscarriage are actually having a tubal abortion.",
+      "is_vivid": true,
+      "tags": [
+        "tubal abortion",
+        "differential diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f06",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Is there inflammation of the tube in ectopic pregnancy? What actually causes the pain?",
+      "back_text": "No — there is NO inflammation of the tube in ectopic pregnancy. The pain is caused by prostaglandins released at the implantation site and by free blood in the peritoneal cavity, which is a local irritant.",
+      "mnemonic_ar": "لا التهاب في القناة إطلاقًا — الألم: بروستاغلاندينات في موضع الانغراس + دم حر مهيج للبريتونيوم.",
+      "tags": [
+        "pain mechanism",
+        "pathophysiology"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f07",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "What does the opened gross specimen of a tubal ectopic pregnancy show?",
+      "back_text": "A bisected tube held open by surgical retractors containing a pale yellowish-white ovoid embryo of about 1 cm with a small reddish area (developing heart/vascular structures), surrounded by dark red-to-black clotted blood (hematosalpinx); the tubal wall is thickened and congested. A centimeter ruler (1–5 cm) provides scale.",
+      "tags": [
+        "gross pathology",
+        "hematosalpinx"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f08",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "What are the typical symptoms of ectopic pregnancy?",
+      "back_text": "Localized/abdominal pain; amenorrhea (usually a short period); vaginal bleeding or spotting (mild). The most common symptoms overall are abdominal and pelvic pain with mild vaginal bleeding. Rarely asymptomatic beyond 8 weeks of gestation.",
+      "tags": [
+        "symptoms",
+        "clinical presentation"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f09",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "What are the atypical symptoms of ectopic pregnancy?",
+      "back_text": "Shoulder pain, abdominal distension, nausea, vomiting, dizziness and fainting — often confused with miscarriage or pelvic inflammatory disease.",
+      "tags": [
+        "atypical symptoms"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f10",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "What are the symptoms of an acutely RUPTURED ectopic pregnancy?",
+      "back_text": "Dizziness, pale complexion, sweaty skin, fast heart rate over 100 beats per minute, and abdominal or pelvic pain so severe that the patient cannot even stand up. A ruptured ectopic is a true medical emergency.",
+      "explanation_ar": "صورة التمزق الحادة: دوخة وشحوب وتعرق وتسرع قلب فوق 100/دقيقة وألم يمنع الوقوف — نزف داخلي وصدمة نقص حجم دم تستوجب تدخلًا جراحيًا فوريًا.",
+      "tags": [
+        "rupture",
+        "emergency"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f11",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "What examination findings characterize a ruptured ectopic pregnancy?",
+      "back_text": "General exam: altered level of consciousness/drowsiness, pallor, tachycardia, hypotension. Abdominal exam: acute abdomen with lower abdominal tenderness and positive rebound tenderness.",
+      "tags": [
+        "examination",
+        "rupture"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f12",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "How is an extra-uterine pregnancy currently diagnosed?",
+      "back_text": "With a combination of serum hCG levels and ultrasound scan. Clear evidence: an ultrasound showing a gestational sac with fetal heart in the fallopian tube (adnexal mass) in a woman with a positive pregnancy test. An abnormal rise in quantitative blood β-hCG also indicates ectopic pregnancy.",
+      "tags": [
+        "diagnosis",
+        "hCG",
+        "ultrasound"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f13",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "What hormonal assay pattern supports ectopic pregnancy?",
+      "back_text": "Progesterone levels LOW and hCG levels FALLING — combined with an abnormal (subnormal) rise on serial quantitative β-hCG measurement.",
+      "tags": [
+        "progesterone",
+        "hCG",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f14",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "What is culdocentesis and where exactly is the needle inserted?",
+      "back_text": "A less commonly performed test looking for internal bleeding: a needle is inserted into the space at the very top of the vagina, behind the uterus and in front of the rectum. Any blood or fluid found there likely comes from a ruptured ectopic pregnancy.",
+      "explanation_ar": "البزل خلف الرحم يفحص النزف الداخلي بإبرة في أعلى المهبل خلف الرحم وأمام المستقيم؛ والدم أو السائل المسحوب من هناك يرجح أنه من حمل خارج رحم متمزق.",
+      "tags": [
+        "culdocentesis",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f15",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Define Cullen's sign and state its significance in ectopic pregnancy.",
+      "back_text": "Blue-black bruising of the area around the umbilicus (periumbilical ecchymosis from blood tracking along the falciform ligament/fascial planes). It can indicate a ruptured ectopic pregnancy; the most common cause overall is acute pancreatitis. Grey Turner's sign = similar bruising in the flanks.",
+      "mnemonic_ar": "كولين = 'حول السُّرّة' ازرقاق مزرق-مسود ينبئ بتمزق حمل خارج الرحم (وأشيع أسبابه عمومًا التهاب البنكرياس)؛ أما ازرقاق الخاصرة فيسمى علامة تيرنر الرمادية.",
+      "is_vivid": true,
+      "tags": [
+        "Cullen sign",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f16",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "What ultrasound findings suggest ectopic pregnancy?",
+      "back_text": "Fluid and/or a mass in the pelvic cavity with absence of an intrauterine pregnancy; the definitive sonographic finding is a gestational sac with fetal heart in the fallopian tube (adnexal mass).",
+      "tags": [
+        "ultrasound",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f17",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "What are the selection criteria, follow-up and success rate of expectant management of ectopic pregnancy?",
+      "back_text": "Used when pain is less and the ectopic is small or not bleeding too much, in a hemodynamically stable patient with no bleeding, pain or shock: close follow-up with hCG tests every 2–7 days until levels return to normal; successful in 90% of selected patients.",
+      "tags": [
+        "expectant management"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f18",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "How does methotrexate treat ectopic pregnancy, and which patients qualify?",
+      "back_text": "Methotrexate destroys actively growing tissues such as the placental tissue supporting the pregnancy; it is used in chemotherapy to stop rapidly growing cells from multiplying. Given as an injection, in selected cases to avoid surgery — only in a NON-ruptured ectopic when hCG is below a certain limit and there is no risk of imminent rupture.",
+      "explanation_ar": "الميثوتريكسات يوقف تكاثر الخلايا سريعة النمو (كنسيج المشيمة) ويُعطى حقنًا للحمل غير المتمزق حين يكون hCG دون حد معين ولا خطر تمزق وشيك.",
+      "tags": [
+        "methotrexate",
+        "medical management"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f19",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "What are the side effects of methotrexate used for ectopic pregnancy?",
+      "back_text": "Abdominal pain for 3–7 days in 50% of cases, plus mild symptoms of nausea, mouth dryness and soreness, and diarrhea.",
+      "tags": [
+        "methotrexate",
+        "side effects"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f20",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Salpingotomy vs salpingectomy — when is each used?",
+      "back_text": "Salpingotomy: an incision on the tube with removal of the pregnancy — conservative management when the ectopic has NOT ruptured and the tube appears normal. Salpingectomy (tubal removal): the principle treatment, especially where there is tubal rupture. Other options: segmental resection and fimbrial expression ('milking' the pregnancy out of the end of the tube).",
+      "mnemonic_ar": "شقّ القناة (salpingotomy) = تحفظي للحمل غير المتمزق بقناة طبيعية؛ استئصال القناة (salpingectomy) = العلاج الأساسي عند التمزق.",
+      "tags": [
+        "surgery",
+        "salpingectomy",
+        "salpingotomy"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f21",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "When is surgery unavoidable in ectopic pregnancy, and what does it involve?",
+      "back_text": "When the ectopic is continuing to develop and poses a threat of rupture, or has already ruptured — surgery is the default and unavoidable. The surgeon removes the pregnancy tissue from the tube; surgery may involve laparoscopy, and the tube is removed when it cannot be repaired. In most emergency cases (rupture with shock) a laparotomy is performed.",
+      "tags": [
+        "surgery",
+        "indications"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f22",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c6",
+      "card_type": "basic",
+      "front_text": "What are the complications of ectopic pregnancy and their frequencies?",
+      "back_text": "Most common: rupture with internal bleeding leading to shock. Death from rupture is rare in women with access to modern medical facilities. Infertility occurs in 10–15% of women who have had an ectopic pregnancy.",
+      "tags": [
+        "complications",
+        "infertility"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f23",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c6",
+      "card_type": "basic",
+      "front_text": "What determines the chance of future pregnancy after an ectopic, and what is the recurrence risk?",
+      "back_text": "The chance of future pregnancy depends on the status of the adnexa left behind. The chance of recurrent ectopic pregnancy is about 10% and depends on whether the affected tube was repaired (salpingostomy) or removed (salpingectomy).",
+      "tags": [
+        "recurrence",
+        "future pregnancy"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f24",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c7",
+      "card_type": "basic",
+      "front_text": "What is a heterotopic pregnancy and how is it recognized after ectopic removal?",
+      "back_text": "A rare situation with two fertilized eggs — one outside the uterus and one inside it. The intrauterine pregnancy is often discovered later because the ectopic is a painful emergency treated very early. When hCG levels continue to rise after removal of the ectopic, an intrauterine pregnancy may still be viable — normally discovered through an ultrasound.",
+      "explanation_ar": "ارتفاع hCG بعد إزالة الحمل خارج الرحم + كيس حملي داخل الرحم = حمل مغاير؛ إذ يُكتشف الحمل داخل الرحم متأخرًا غالبًا لاستباق الحمل الخارجي بالتشخيص والعلاج.",
+      "tags": [
+        "heterotopic pregnancy"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_f25",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c7",
+      "card_type": "basic",
+      "front_text": "Describe the operative appearance of an ovarian ectopic pregnancy.",
+      "back_text": "Ovarian pregnancies are rare. The operative photograph shows the ovary as the white structure in the middle, the pregnancy implanted on the far right side of the ovary at the 'X', and clotted blood seen around the ovary.",
+      "is_vivid": true,
+      "tags": [
+        "ovarian ectopic"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m01",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "question_stem": "A 26-year-old G2P1 woman at 7 weeks by last menstrual period presents with mild vaginal spotting and localized right lower quadrant pain for two days. She was treated for chlamydial pelvic inflammatory disease three years ago. Urine pregnancy test is positive and vital signs are stable. Which diagnosis must be considered first?",
+      "options": [
+        "Ectopic pregnancy",
+        "Threatened miscarriage",
+        "Acute pelvic inflammatory disease",
+        "Ovarian torsion",
+        "Acute appendicitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ألم بطني/حوضي موضعي مع نزف مهبلي خفيف واختبار حمل إيجابي لدى مريضة لها التهاب حوضي سابق يجعل الحمل خارج الرحم هو التشخيص الواجب استبعاده أولًا؛ فالإجهاض المهدد نزفه أوسط وعادةً دون ألم موضعي بجانب واحد، والتهاب الحوض الحاد يعطي اختبار حمل سلبيًا، والتواء المبيض ألم مفاجئ شديد دون انقطاع طمث أو نزف، والزائدة الدودية لا تقطع الطمث ولا تسبب نزفًا مهبليًا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Positive pregnancy test + pain/bleeding — apply the lecture rule.",
+        "Which diagnosis is confused with miscarriage and PID?"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m02",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c1",
+      "question_stem": "A 37-year-old woman who conceived by in-vitro fertilization after more than 10 years of delayed childbearing asks why she was flagged as high risk at her booking visit. Which combination of her characteristics explains the increased risk of ectopic pregnancy?",
+      "options": [
+        "Assisted reproductive technology and delayed childbearing (>35 years)",
+        "Grand multiparity and anemia",
+        "Oral contraceptive use and migraine",
+        "Previous cesarean deliveries only",
+        "Family history of twin pregnancy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تقنيات الإنجاب المساعدة وتأخير الإنجاب بعد سن 35 عامًا كلاهما من عوامل خطر الحمل خارج الرحم المعروفة، ويضاف إليهما اللولب الرحمي وسوابق الالتهاب الحوضي والجراحة على الأنابيب؛ أما تعدد الولادات وحبوب منع الحمل والولادات القيصرية والتوأمية العائلية فليست من عوامل الخطر المذكورة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m03",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "question_stem": "A woman with an unruptured tubal ectopic pregnancy has no fever and asks why she has pain although the tube has not ruptured. What explains the pain of an unruptured ectopic pregnancy?",
+      "options": [
+        "Acute inflammation of the tubal wall",
+        "Prostaglandins released at the implantation site and free blood in the peritoneal cavity acting as a local irritant",
+        "Uterine contractions against a closed cervix",
+        "Torsion of the adnexa around the ovarian ligament"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "لا يوجد التهاب في قناة فالوب في الحمل خارج الرحم؛ فالألم ينتج عن البروستاغلاندينات المطلقة في موضع الانغراس وعن الدم الحر داخل التجويف البريتوني باعتباره مهيجًا موضعيًا، لا عن التهاب الجدار أو تقلصات رحمية أو التواء ملحقات.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m04",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c2",
+      "question_stem": "The implanted embryo of a tubal ectopic burrows into the tubal lining and invades vessels, producing intratubal bleeding (hematosalpinx). What are the two classical outcomes of this intratubal bleeding?",
+      "options": [
+        "Expulsion of the implantation out of the tubal end (tubal abortion) or rupture of the tube",
+        "Chronic salpingitis or pyosalpinx",
+        "Migration of the embryo back into the uterus or a twin intrauterine pregnancy",
+        "Complete spontaneous resolution or hydrosalpinx"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نزف تدمية البوق يطرد نسيج الانغراس من طرف القناة فيحدث الإجهاض الأنبوبي، أو يشتد حتى يتمزق جدار القناة؛ ولا التهاب مزمن ولا عودة الجنين إلى الرحم جزءًا من المسار المرضي للحمل الأنبوبي.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m05",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c3",
+      "question_stem": "A 29-year-old woman at 8 weeks' amenorrhea with a positive pregnancy test develops sudden lower abdominal pain and, while lying flat, aching pain in the tip of the right shoulder. Where does shoulder-tip pain originate in ectopic pregnancy?",
+      "options": [
+        "Referred pain from diaphragmatic irritation by free intraperitoneal blood",
+        "Referred pain from uterine contractions",
+        "Compression of the brachial plexus",
+        "Gastric distension from swallowed air"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ألم قمة الكتف ألم راجع ناتج عن تهيج الحجاب الحاجز بالدم الحر داخل التجويف البريتوني بعد نزف الحمل خارج الرحم؛ فهو ليس من أصل عصبي موضعي في الكتف ولا من تقلصات رحمية أو انضغاط ضفيرة عضدية أو انتفاخ معدة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m06",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "question_stem": "A 31-year-old G3P2 woman at 6 weeks' amenorrhea arrives pale and sweaty after sudden severe lower abdominal pain; she cannot stand up. Blood pressure 82/48 mmHg, heart rate 118 beats per minute, abdomen rigid with rebound tenderness; urine pregnancy test positive. What is the immediate management?",
+      "options": [
+        "Immediate surgery — a surgical emergency (laparotomy in most cases)",
+        "Intramuscular methotrexate",
+        "Expectant management with hCG tests every 2–7 days",
+        "Repeat ultrasound in 48 hours before deciding",
+        "Culdocentesis to confirm hemoperitoneum first"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هبوط الضغط مع تسرع القلب 118/دقيقة وبطن حاد واختبار حمل إيجابي يعني حملًا خارج رحم متمزقًا بصدمة؛ وهذا حالة إسعافية جراحية تستوجب الجراحة الفورية ويُفتح البطن في أغلب الحالات. فالميثوتريكسات للحمل غير المتمزق فقط، والتدبير الترقبي يفترض استقرارًا ديناميكيًا بلا نزف أو ألم أو صدمة، وتأجيل التصوير أو البزل التأكيدي يضيع وقتًا خطيرًا على مريضة تنزف.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Assess hemodynamic status before anything else.",
+        "Rupture with shock decides the pathway.",
+        "Drugs and waiting are for stable, unruptured patients only."
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m07",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "question_stem": "A woman at 7 weeks' gestation with mild pain and spotting undergoes transvaginal ultrasound. Which sonographic finding is clear evidence of ectopic pregnancy?",
+      "options": [
+        "A gestational sac with fetal heart inside the fallopian tube (adnexal mass)",
+        "An intrauterine gestational sac",
+        "A thickened endometrium only",
+        "A simple ovarian cyst",
+        "Free fluid limited to the pleural space"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "رؤية كيس حملي مع نبضة جنينية داخل قناة فالوب (كتلة ملحقية) دليل قاطع على الحمل خارج الرحم؛ فالكيس داخل الرحم ينفيه، وثخانة بطانة الرحم وحدها والكيس المبيضي البسيط والسائل الحر منفردًا كلها موجات غير نوعية لا تثبت التشخيص.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m08",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "question_stem": "A 28-year-old woman at 6 weeks' amenorrhea has a quantitative serum β-hCG of 1200 IU/L; a repeat level 48 hours later is 1420 IU/L — an abnormal, subnormal rise. Ultrasound shows an empty uterus. How is this abnormal β-hCG rise interpreted?",
+      "options": [
+        "It may indicate an ectopic pregnancy — combine with ultrasound",
+        "It confirms a normal intrauterine pregnancy",
+        "It rules out pregnancy completely",
+        "It proves the pregnancy has already resolved fully"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الارتفاع غير الطبيعي في مستوى β-hCG الكمي قد يدل على حمل خارج الرحم أو حمل غير قابل للاستمرار، ويجب دمجه دائمًا مع الأمواج فوق الصوتية؛ فالاختبار إيجابي أصلًا فلا يمكن نفي الحمل، والرقم المنفرد لا يشخص حملًا داخل الرحم سليمًا ولا يعني انتهاء الحمل.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "A single number never stands alone — what is the current diagnostic combination?"
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m09",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "question_stem": "During culdocentesis for suspected internal bleeding, where exactly is the needle inserted?",
+      "options": [
+        "Into the space at the very top of the vagina, behind the uterus and in front of the rectum",
+        "Through the umbilicus along the falciform ligament",
+        "Into the uterine cavity through the cervix",
+        "Through the flank into the retroperitoneum"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في البزل خلف الرحم تُدخل الإبرة في الفراغ أعلى المهبل خلف الرحم وأمام المستقيم؛ فأي دم أو سائل يُسحب من هناك يرجح أنه من حمل خارج رحم متمزق. أما علامة كولين فازرقاق حول السرة، والإبرة لا تدخل الرحم ولا الخاصرة.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m10",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c4",
+      "question_stem": "A 27-year-old woman at 7 weeks' amenorrhea collapses in the emergency department; examination reveals blue-black bruising of the skin around the umbilicus and a positive pregnancy test. What does this sign indicate?",
+      "options": [
+        "A ruptured ectopic pregnancy with internal bleeding — Cullen's sign",
+        "A normal skin change of early pregnancy",
+        "Acute appendicitis with localized peritonitis",
+        "Cervical infection with spotting"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "علامة كولين ازرقاق مزرق-مسود حول السرة نتيجة مسار الدم على الرباط المنجلي والصفاقات إلى ما حول السرة، وقد تشير إلى تمزق حمل خارج الرحم — وهو الأرجح مع انقطاع الطمث واختبار الحمل الإيجابي والانهيار. أما أشد أسبابها شيوعًا عمومًا فالتهاب البنكرياس الحاد، ولا علاقة لها بتغيرات جلد الحمل الطبيعية أو التهاب الزائدة أو الالتهاب العنقي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m11",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "question_stem": "A 30-year-old woman at 6 weeks' gestation is hemodynamically stable with minimal one-sided pain, no significant vaginal bleeding, a small unruptured ectopic on ultrasound and a falling quantitative β-hCG. Which management and follow-up protocol applies?",
+      "options": [
+        "Expectant management with hCG tests every 2–7 days until levels return to normal",
+        "Expectant management with weekly clinical review only",
+        "Immediate methotrexate injection with no follow-up",
+        "Emergency laparotomy",
+        "Immediate salpingectomy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التدبير الترقبي مخصص للمستقرات ديناميكيًا بلا نزف أو ألم أو صدمة مع حمل صغير قليل النزف: متابعة hCG كل 2–7 أيام حتى يعود طبيعيًا، وينجح في 90% من المريضات المنتقيات. فالمراجعة السريرية وحدها لا تكفي لمتابعة الانطفاء، والميثوتريكسات يُتبع أيضًا بمراقبة hCG وليس بلا متابعة، والجراحة ليست الخيار الأول لمريضة مستقرة بحمل صغير يخفت هرمونها.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m12",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "question_stem": "A woman treated with a single methotrexate injection for an unruptured ectopic pregnancy phones the early pregnancy unit on day 4 reporting mild abdominal pain, nausea, a dry sore mouth and loose stools. What should she be told about these effects?",
+      "options": [
+        "Abdominal pain lasting 3–7 days occurs in 50% of cases, with mild nausea, mouth dryness and soreness, and diarrhea",
+        "Abdominal pain after methotrexate always means tubal rupture",
+        "These symptoms indicate a drug allergy requiring desensitization",
+        "Methotrexate has no recognized side effects"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "من الآثار الجانبية المعروفة للميثوتريكسات ألم بطني لمدة 3–7 أيام في 50% من الحالات مع أعراض خفيفة: غثيان وجفاف وتقرح الفم وإسهال؛ فهي آثار متوقعة للدواء المدمر للأنسجة سريعة النمو وليست تحسسًا دوائيًا ولا دليلًا حتميًا على التمزق.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Recall the exact percentage and duration quoted for post-injection pain."
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m13",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c5",
+      "question_stem": "A 34-year-old woman with a small, unruptured ectopic pregnancy desires future fertility. At laparoscopy the affected tube appears normal. Which surgical procedure fits best?",
+      "options": [
+        "Salpingotomy — an incision on the tube and removal of the pregnancy (conservative management)",
+        "Salpingectomy — removal of the whole tube",
+        "Segmental resection — cutting out the affected portion",
+        "Emergency laparotomy with uterine curettage"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "شق القناة وإزالة الحمل (salpingotomy) هو التدبير الجراحي التحفظي عندما يكون الحمل غير متمزق وتبدو القناة طبيعية — وهو الأنسب لرغبتها في الإنجاب مستقبلًا؛ أما الاستئصال البوقي فهو العلاج الأساسي خاصةً عند التمزق، والقطع الجزئي خيار آخر أقل شيوعًا، وفتح البطن مع الكحت لا مكان له هنا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Rupture decides the choice of operation.",
+        "Conservative surgery needs a healthy-looking, unruptured tube."
+      ]
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m14",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c6",
+      "question_stem": "Which pair of long-term outcome rates after ectopic pregnancy is correct?",
+      "options": [
+        "Infertility 10–15%; recurrent ectopic pregnancy about 10%",
+        "Infertility 1–2%; recurrent ectopic pregnancy about 1%",
+        "Infertility 30–40%; recurrent ectopic pregnancy about 50%",
+        "Infertility 10–15%; recurrent ectopic pregnancy about 50%"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يصيب العقم 10–15% من النساء بعد حمل خارج الرحم، ويقارب احتمال تكرار الحمل خارج الرحم 10% حسب حالة الملحقات المتبقية وعلاج القناة (إصلاحها أو استئصالها)؛ فالبقية نسب مبالغ فيها أو متدنية لا تطابق أرقام المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_m15",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "concept_id": "obgyn_L9_ectopic_pregnancy_c7",
+      "question_stem": "Three weeks after laparoscopic removal of a tubal ectopic pregnancy, a woman's serial serum hCG levels continue to rise. Ultrasound now shows an intrauterine gestational sac with a fetal heart. What explains this pattern?",
+      "options": [
+        "A heterotopic pregnancy — two fertilized eggs, one outside the uterus and one inside",
+        "Persistent trophoblastic disease arising from the ectopic site",
+        "Normal hCG persistence for three months after salpingectomy",
+        "A laboratory error, the most common cause of rising hCG"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحمل المغاير هو وجود بويضتين مخصبتين: إحداهما خارج الرحم والأخرى داخله؛ وكثيرًا ما يُكتشف الحمل داخل الرحم متأخرًا لأن الحمل الخارجي حالة إسعافية مؤلمة تُكتشف وتُزال مبكرًا فلا تراه الأمواج فوق الصوتية حينها. فارتفاع hCG المستمر بعد إزالة الحمل الخارجي مع كيس ذي نبضة داخل الرحم يعني بقاء حمل داخل الرحم حيًا — وليس خطأ مخبريًا ولا إنتاجًا طبيعيًا من الجسم الأصفر.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "What should hCG do after COMPLETE removal of the only pregnancy?",
+        "Two fertilized eggs can coexist at two sites."
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_case1",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Ruptured Tubal Ectopic Pregnancy — a Surgical Emergency",
+      "scenario": "A 32-year-old woman is rushed to the emergency department by her husband after collapsing at home with sudden severe lower abdominal pain and near-syncope. She had seven weeks of amenorrhea and mild spotting for three days. This case walks through recognition of a ruptured ectopic, its immediate management and the operation of choice.",
+      "vignette": {
+        "age": 32,
+        "sex": "female",
+        "chief_complaint": "Sudden severe lower abdominal pain with dizziness and near-collapse",
+        "history": "G2P1. Last menstrual period 7 weeks ago (a short period of amenorrhea). Mild vaginal spotting for 3 days. Treated for pelvic inflammatory disease (chlamydia) 4 years ago. No antenatal care this pregnancy.",
+        "vitals": {
+          "bp": "85/50 mmHg",
+          "hr": "122 beats per minute",
+          "rr": "24/min",
+          "temp": "36.8 °C",
+          "spo2": "97%"
+        },
+        "exam": "Pale, sweaty, drowsy but rousable. Abdomen: acute abdomen with marked lower abdominal tenderness and positive rebound tenderness. Pelvic examination: severe pain during the exam with tender right adnexa and cervical excitation positive; a mass is felt to the right of the uterus. Blue-black bruising is noted around the umbilicus (Cullen's sign).",
+        "labs": [
+          {
+            "name": "Urine pregnancy test",
+            "value": "Positive",
+            "flag": "critical"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "9.8 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "Quantitative serum β-hCG",
+            "value": "4200 IU/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Transvaginal ultrasound: no intrauterine gestational sac; a complex right adnexal mass; moderate free fluid (and mass) in the pelvic cavity."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Ruptured right tubal ectopic pregnancy with intraperitoneal bleeding",
+            "Hemorrhagic ovarian cyst",
+            "Septic miscarriage",
+            "Acute appendicitis",
+            "Pelvic inflammatory disease with tubo-ovarian abscess"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "انقطاع طمث 7 أسابيع مع نزف مهبلي خفيف وألم مفاجئ شديد وانهيار وشحوب وتسرع قلب وهبوط ضغط، مع علامة كولين واختبار حمل إيجابي وغياب كيس داخل الرحم وكتلة ملحقية وسائل حرة = حمل خارج رحم أنبوبي أيمن متمزق. فالكيس المبيضي النازف لا يفسر اختبار الحمل الإيجابي، والإجهاض الانتاني يترافق مع حرارة وإفرازات قيحية، والزائدة الدودية لا تقطع الطمث ولا تظهر كتلة ملحقية، والتهاب الحوض يعطي اختبار حمل سلبيًا.",
+          "xp": 10,
+          "hints": [
+            "Positive test + pain + bleeding + collapse — apply the ectopic rule."
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case1_s2",
+          "prompt": "What is the immediate management?",
+          "options": [
+            "Immediate surgery — a surgical emergency (laparotomy in most cases)",
+            "Intramuscular methotrexate",
+            "Expectant management with hCG tests every 2–7 days",
+            "Blood transfusion alone with observation",
+            "Repeat ultrasound in 24 hours before deciding"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "وجود صدمة (85/50 وتسرع 122/دقيقة) مع بطن حاد يجعل الجراحة الفورية هي الخطوة التالية؛ فالحمل المتمزق حالة مهددة للحياة يُجرى فيها فتح البطن في أغلب الحالات. فالميثوتريكسات للحمل غير المتمزق فقط، والتدبير الترقبي يفترض استقرارًا بلا نزف أو ألم أو صدمة، والاكتفاء بنقل الدم والمراقبة أو تأجيل التصوير يؤخر إنقاذ حياتها.",
+          "xp": 15,
+          "hints": [
+            "Shock + acute abdomen — no drugs, no waiting."
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case1_s3",
+          "prompt": "At surgery the right tube is ruptured with active bleeding. Which is the principal procedure?",
+          "options": [
+            "Salpingectomy (removal of the affected tube)",
+            "Salpingotomy (incision on the tube and removal of the pregnancy)",
+            "Fimbrial expression ('milking') of the pregnancy",
+            "Segmental resection alone of the tube",
+            "Uterine curettage only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الاستئصال البوقي هو العلاج الأساسي خاصةً عند تمزق القناة؛ فشق القناة وإزالة الحمل تدبير تحفظي للحمل غير المتمزق حين تبدو القناة طبيعية، وحلب الحمل من صوار القناة لا يناسب أنبوبًا متمزقًا نازفًا، والقطع الجزئي ليس العلاج الأصيل هنا، والكحت الرحمي لا يعالج الحمل خارج الرحم.",
+          "xp": 15,
+          "hints": [
+            "Rupture makes the tube unsalvageable — what is the principle treatment?"
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case1_s4",
+          "prompt": "After recovery, what should she be told about future fertility and recurrence?",
+          "options": [
+            "Future pregnancy depends on the remaining adnexa; recurrence is about 10% and infertility affects 10–15%",
+            "She can never conceive again after one salpingectomy",
+            "Recurrence risk exceeds 50%",
+            "Ectopic pregnancy never recurs after salpingectomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "احتمال الحمل مستقبلًا يتوقف على حالة الملحقات المتبقية، وتكرار الحمل خارج الرحم يقارب 10% بحسب إصلاح القناة أو استئصالها، ويصيب العقم 10–15% من النساء بعد حمل خارج الرحم؛ فالقول باستحالة الإنجاب مطلقًا أو بنكس يتجاوز 50% أو بعدم التكرار إطلاقًا معلومات خاطئة.",
+          "xp": 10,
+          "hints": [
+            "Two numbers to quote: recurrence and infertility rates."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: حمل خارج رحم أنبوبي أيمن متمزق مع نزف داخل البريتونيوم وصدمة نقص حجم الدم. الدروس المستفادة: أي امرأة في سن الإنجاب تشكو ألمًا بطنيًا أو نزفًا مهبليًا مع اختبار حمل إيجابي يجب أن يُشتبه لديها بالحمل خارج الرحم، وإن ظهرت علامة كولين (ازرقاق حول السرة) أو ألم قمة الكتف فهي تنبه للنزف الداخلي. والحمل المتمزق حالة إسعافية جراحية حقيقية يُفتح فيها البطن غالبًا، والاستئصال البوقي هو العلاج الأساسي عند التمزق. بعدها تُتابع مستويات hCG حتى تعتدل، مع تنبيه المريضة إلى احتمال تكرار الحمل خارج الرحم بنحو 10% وإلى العقم بنسبة 10–15%.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L9_ectopic_pregnancy_case2",
+      "lecture_id": "obgyn_L9_ectopic_pregnancy",
+      "title": "Unruptured Ectopic Pregnancy — Methotrexate and Follow-up",
+      "scenario": "A 29-year-old primigravida attends the early pregnancy unit with two days of mild right-sided pelvic pain and light vaginal spotting. She is stable and keen to avoid surgery. This case covers the modern diagnostic combination, selection for methotrexate, its expected side effects and future-fertility counseling.",
+      "vignette": {
+        "age": 29,
+        "sex": "female",
+        "chief_complaint": "Mild unilateral pelvic pain and light vaginal spotting for 2 days",
+        "history": "G1P0 at 6 weeks by last menstrual period. Conceived naturally after two years of trying. No previous surgery, no pelvic inflammatory disease, no intrauterine contraceptive device.",
+        "vitals": {
+          "bp": "112/70 mmHg",
+          "hr": "84 beats per minute",
+          "rr": "16/min",
+          "temp": "36.6 °C",
+          "spo2": "99%"
+        },
+        "exam": "Comfortable, no pallor. Mild right adnexal tenderness on pelvic examination; no cervical excitation; no rebound tenderness; no mass palpated.",
+        "labs": [
+          {
+            "name": "Urine pregnancy test",
+            "value": "Positive",
+            "flag": "high"
+          },
+          {
+            "name": "Quantitative serum β-hCG",
+            "value": "1450 → 1720 IU/L over 48 h (abnormal slow rise)",
+            "flag": "high"
+          },
+          {
+            "name": "Serum progesterone",
+            "value": "12 nmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.4 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Transvaginal ultrasound: empty uterine cavity; a small right adnexal mass of about 1 cm with no fetal heart; no significant free pelvic fluid."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case2_s1",
+          "prompt": "How is the diagnosis of an extra-uterine pregnancy currently established?",
+          "options": [
+            "A combination of serum hCG levels and ultrasound scan",
+            "Culdocentesis alone",
+            "Clinical pelvic examination alone",
+            "Laparoscopy in every case",
+            "Serial progesterone measurements alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "يُشخَّص الحمل خارج الرحم حاليًا بدمج مستوى hCG في المصل مع التصوير بالأمواج فوق الصوتية؛ فالبزل خلف الرحم اختبار أقل شيوعًا لا يُكتفى به، والفحص السريري وحده لا يقرر، والمنظار ليس لكل حالة، والبروجسترون وحده (منخفض هنا) علامة مساندة لا تشخيصًا قائمًا بذاته.",
+          "xp": 10,
+          "hints": [
+            "Two tests together — a hormone level and an imaging modality."
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case2_s2",
+          "prompt": "She is stable with a small unruptured ectopic and no imminent rupture risk. Which treatment avoids surgery here?",
+          "options": [
+            "Methotrexate injection — destroys the growing placental tissue of a non-ruptured ectopic",
+            "Expectant management — she has both mild pain and spotting",
+            "Immediate salpingectomy",
+            "Emergency laparotomy",
+            "Ovarian cystectomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الميثوتريكسات حقنة تدمر النسيج المشيمي سريع النمو وهي خيار للحمل غير المتمزق حين يكون hCG دون حد معين ولا خطر تمزق وشيك — فتجنب المريضة الجراحة. أما التدبير الترقبي فيشترط غياب النزف والألم معًا وهي تشكو منهما، والاستئصال البوقي الفوري مبالغة لحالة مستقرة صغيرة، وفتح البطن للطوارئ فقط، واستئصال كيس مبيضي تشخيص خاطئ للجموع الملحقية.",
+          "xp": 15,
+          "hints": [
+            "Stable + unruptured + low-risk — which modality was designed to avoid an operation?"
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case2_s3",
+          "prompt": "What should she be told to expect after the methotrexate injection?",
+          "options": [
+            "Abdominal pain for 3–7 days in 50% of cases, with mild nausea, mouth dryness and soreness, and diarrhea",
+            "No side effects at all",
+            "Alopecia and stomatitis requiring hospitalization",
+            "Permanent infertility after one injection"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "يجب تنبيهها إلى ألم بطني لمدة 3–7 أيام في 50% من الحالات بعد الحقن مع أعراض خفيفة: غثيان وجفاف وتقرح الفم وإسهال؛ فهذه آثار جانبية متوقعة للدواء المدمر للأنسجة سريعة النمو وليست مضاعفات نادرة ولا عقماً دائماً.",
+          "xp": 10,
+          "hints": [
+            "Recall the exact percentage and the 3–7 day window."
+          ]
+        },
+        {
+          "id": "obgyn_L9_ectopic_pregnancy_case2_s4",
+          "prompt": "Treatment succeeds and hCG normalizes. What do you counsel her about the next pregnancy?",
+          "options": [
+            "Future pregnancy depends on the remaining adnexa; recurrence of ectopic is about 10% — arrange early ultrasound next time",
+            "She must avoid pregnancy permanently",
+            "Recurrence risk is negligible (<1%)",
+            "Future pregnancy will always be intrauterine after treatment"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخصوبة المستقبلية تتوقف على حالة الملحقات المتبقية، واحتمال تكرار الحمل خارج الرحم نحو 10% بحسب إصلاح القناة (شقها) أو استئصالها، ويصيب العقم 10–15%؛ لذا يُنصح بتصوير مبكر بالموجات فوق الصوتية في الحمل التالي لتأكيد الانغراس داخل الرحم.",
+          "xp": 10,
+          "hints": [
+            "Quote the recurrence figure and the follow-up plan."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: حمل خارج رحم أنبوبي أيمن غير متمزق دُووي بنجاح بالميثوتريكسات. الدروس المستفادة: يُشخص الحمل خارج الرحم حاليًا بدمج hCG المصل مع الأمواج فوق الصوتية، ويسانده انخفاض البروجسترون؛ والميثوتريكسات حقنة تدمر النسيج المشيمي سريع النمو وهي خيار للحمل غير المتمزق دون خطر تمزق وشيك. ومن المتوقع ألم بطني 3–7 أيام في 50% من الحالات مع غثيان وجفاف الفم والإسهال. تُتابع المريضة حتى يعتدل hCG، ويُشاور مستقبل الخصوبة: احتمال الحمل القادم يتوقف على حالة الملحقات المتبقية مع تكرار بنحو 10% وعقم بنسبة 10–15%.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

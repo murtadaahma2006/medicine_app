@@ -1,0 +1,1338 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L6_nvp",
+    "specialty": "obgyn",
+    "title": "Nausea and Vomiting in Pregnancy and Hyperemesis Gravidarum",
+    "module": "obstetrics",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L6 NVP (2).pdf",
+      "page_count": 20
+    },
+    "tags": [
+      "nausea and vomiting of pregnancy",
+      "morning sickness",
+      "hyperemesis gravidarum",
+      "hCG",
+      "pyridoxine",
+      "doxylamine",
+      "rehydration",
+      "Wernicke encephalopathy",
+      "termination indications"
+    ],
+    "order_index": 5,
+    "golden_tip": [
+      "hCG peaks at 8–12 weeks — exactly when NVP peaks; severe or atypical NVP should make you think of multiple pregnancy or hydatidiform mole, and of increased hCG sensitivity in the primigravida.",
+      "HG affects 0.5 – 2 % of pregnancies and is the commonest indication for hospitalization in the first trimester; give IV thiamine (B1) before glucose-containing fluids to prevent Wernicke encephalopathy.",
+      "Termination of pregnancy in HG is reserved for exactly two indications: hepatic fatty degeneration and hepatorenal encephalopathy — never for dehydration, ketosis or weight loss alone."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L6_nvp_c1",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Nausea and Vomiting in Pregnancy: Definitions, Incidence, and Types",
+      "summary_ar": "يقدم هذا المفهوم الغثيان والإقياء أثناء الحمل: يصيب الغثيان 50–80% من الحوامل ويحدث الإقياء لدى 25% منهن، وتبدأ الأعراض عادة بين الأسبوع الرابع والسادس من الحمل. وينقسم إلى نوع فيزيولوجي (غثيان الصباح) ذاتي الشفاء يكفي فيه الطمأنة، ونوع مرضي (الإقياء المفرط الحملي)، مع التأكيد على أن الاكتشاف المبكر والتدبير المبكر يمنعان تطور الحالة إلى الشكل المرضي.",
+      "sections": [
+        {
+          "heading": "Lecture Overview and Objectives",
+          "body_text": "This Obstetrics and Gynecology lecture on nausea and vomiting in pregnancy (NVP) is delivered by Prof. Maysoon Sharief. Its stated learning objectives are:\n- **Definition** of NVP and its two clinical types\n- **Incidence** of NVP and of hyperemesis gravidarum\n- **Etiological factors** (genetic, hormonal, immunological, infectious, nutritional, psychological)\n- **Clinical presentation** and its sequelae\n- **Management** (non-pharmacological, pharmacological, and hospital-based care)\n- **Complications**, including the rare indications for termination of pregnancy\n\nThe lecture follows the clinical sequence encountered on the wards: a pregnant woman reports nausea and vomiting in early pregnancy; the clinician separates ordinary, self-limiting morning sickness from hyperemesis gravidarum, excludes the differential diagnoses, and then escalates treatment stepwise — from reassurance and dietary advice, through antiemetic drugs and IV rehydration with thiamine, up to enteral tube feeding and, in the rarest cases, termination of pregnancy.",
+          "key_points": [
+            "Objectives: definition, incidence, etiological factors, clinical presentation, management, complications.",
+            "Clinical sequence: recognize NVP → separate morning sickness from HG → exclude differentials → escalate treatment stepwise."
+          ]
+        },
+        {
+          "heading": "Definition and Incidence of NVP",
+          "body_text": "**Nausea and vomiting in pregnancy (NVP)** is a symptom complex of early pregnancy with well-quoted figures:\n- **50–80% of pregnant women experience nausea**, and **25% of them have vomiting** (one quarter of the nauseated women actually vomit).\n- Symptoms **usually begin between the 4th and 6th weeks of pregnancy**.\n\n**Types of NVP:**\n1. **Physiological type — \"morning sickness\"**: mild nausea with or without a single attack of vomiting.\n2. **Pathological type — hyperemesis gravidarum (HG)**: severe, intractable vomiting of early pregnancy.\n\nThe word hyperemesis gravidarum comes from **Greek: hyper = excessive, gravidarum = pregnant woman** — literally, \"excessive vomiting of the pregnant woman\". Although popularly called \"morning sickness\", physiological NVP is not strictly confined to the morning, which is why the neutral umbrella term NVP is preferred.",
+          "key_points": [
+            "50–80% of pregnant women experience nausea; 25% of them have vomiting.",
+            "Symptoms usually begin between the 4th and 6th weeks of pregnancy.",
+            "Two types: physiological (morning sickness) and pathological (hyperemesis gravidarum).",
+            "Etymology: Greek word — hyper = excessive, gravidarum = pregnant woman."
+          ],
+          "check": {
+            "prompt": "At booking you are asked how common nausea is in pregnancy. Which figures will you quote?",
+            "options": [
+              "Nausea in 50–80% of pregnant women; vomiting in 25% of them",
+              "Nausea in 5–10% of pregnant women; vomiting in 1%",
+              "Nausea in 100% of pregnant women; vomiting in 50%",
+              "Nausea in 20% of pregnant women; vomiting in 20%"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الغثيان يصيب 50 إلى 80% من الحوامل، ويحدث الإقياء عند 25% من هؤلاء المصابات بالغثيان فقط؛ لذا فإن النسب الأخرى تبالغ في التقدير أو تقلل منه، مع العلم أن الأعراض تبدأ عادة بين الأسبوع الرابع والسادس من الحمل."
+          }
+        },
+        {
+          "heading": "Morning Sickness: The Physiological Type",
+          "body_text": "The nausea of the physiological type (morning sickness) ranges from **mild nausea with or without one attack of vomiting that does not interfere with the patient's daily work**. Its management is deliberately minimal:\n- Morning sickness **needs no treatment** — only **reassurance**.\n- It is **self-limiting**: it resolves as pregnancy advances, without drugs, investigations, or hospital admission.\n\nEven so, NVP deserves clinical respect:\n- NVP **negatively impacts family relationships** and the woman's daily functioning, so symptoms should never be dismissed.\n- **Early recognition and management of NVP prevent progression to HG** — untreated persistent vomiting can escalate into dehydration, ketosis and frank hyperemesis gravidarum requiring admission.\n\nA practical counseling point carried forward to the management concept: because hunger and an empty stomach aggravate nausea, early morning nausea may be helped by eating a biscuit **before getting out of bed**.",
+          "key_points": [
+            "Morning sickness: mild nausea with or without one vomiting attack, not interfering with daily work.",
+            "Treatment of morning sickness: reassurance only — it is self-limiting.",
+            "NVP negatively impacts family relationships.",
+            "Early recognition and management of NVP prevent progression to HG."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Nausea and vomiting of pregnancy (NVP)",
+          "definition_ar": "الغثيان والإقياء أثناء الحمل: عرض شائع في النصف الأول من الحمل يبدأ عادة بين الأسبوع الرابع والسادس، وينقسم إلى شكل فيزيولوجي وآخر مرضي."
+        },
+        {
+          "term": "Morning sickness",
+          "definition_ar": "غثيان الصباح: الشكل الفيزيولوجي الخفيف من الغثيان والإقياء الحملي؛ ذاتي الشفاء ولا يحتاج أكثر من الطمأنة والنصائح الغذائية."
+        },
+        {
+          "term": "Hyperemesis gravidarum (HG)",
+          "definition_ar": "الإقياء المفرط الحملي: الشكل المرضي الشديد، ويُعرَّف بأنه إقياء في بداية الحمل شديد بما يكفي لتبرير دخول المستشفى."
+        },
+        {
+          "term": "Reassurance",
+          "definition_ar": "الطمأنة: التدبير الأساسي لغثيان الصباح عبر شرح الطبيعة الحميدة والذاتية الشفاء للأعراض ودعم الأم نفسياً."
+        },
+        {
+          "term": "Self-limiting",
+          "definition_ar": "ذاتي الشفاء: وصف الحالة التي تتحسن تلقائياً دون تدخل دوائي، كما في غثيان الصباح."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L6_nvp_c2",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Hyperemesis Gravidarum: Definition, Incidence, and Etiology",
+      "summary_ar": "يتناول هذا المفهوم تعريف الإقياء المفرط الحملي بأنه إقياء مبكر شديد بما يكفي لتبرير القبول في المستشفى، وشيوعه 0.5–2% من حالات الحمل (ووفق البوابة الوطنية للصحة 0.3–3% وهو أشيع سبب للقبول المشفوي في الثلث الأول)، ثم أسبابه: وراثية، وهرمونية (ذروة hCG بين الأسبوع 8 و12 مع الحمل المتعدد والعنقودي وحساسية البكر، والإستروجين والبروجسترون، وهرمون الغدة الدرقية)، ومناعية (عامل نخر الورم ألفا والإنترلوكين 6 من الخلايا المساعدة النمط الأول)، ونفسية اجتماعية، وخمجية (الملوية البوابية)، وسوء تغذية (فيتامين ك والثيامين والزنك).",
+      "sections": [
+        {
+          "heading": "Definition and Incidence",
+          "body_text": "**Definition**: hyperemesis gravidarum (HG) is defined as **vomiting in early pregnancy sufficient to warrant hospital admission**. It is not simply \"severe morning sickness\" — it is vomiting that produces dehydration, ketosis and weight loss and cannot be managed with outpatient measures alone.\n\n**Incidence:**\n- **0.5 – 2 % of pregnancies** are affected by HG (the figure quoted in this lecture).\n- The **National Health Portal** quotes a wider range of **0.3%–3% of pregnant women** suffering from hyperemesis gravidarum — a challenging medical condition to treat.\n- HG is the **commonest indication for hospitalization in the first trimester of pregnancy**.\n\n**Etymology**: the word comes from Greek — **hyper = excessive, gravidarum = pregnant woman**.\n\nClinical bottom line: any woman admitted primarily for vomiting in early pregnancy is, statistically, most likely carrying the diagnosis of hyperemesis gravidarum.",
+          "key_points": [
+            "HG = vomiting in early pregnancy sufficient to warrant hospital admission.",
+            "Incidence: 0.5 – 2 % of pregnancies (National Health Portal: 0.3%–3% of pregnant women).",
+            "HG is the commonest indication for hospitalization in the first trimester of pregnancy."
+          ],
+          "check": {
+            "prompt": "Which statement is the lecture's definition of hyperemesis gravidarum?",
+            "options": [
+              "Vomiting in early pregnancy sufficient to warrant hospital admission",
+              "Any nausea that occurs in the morning during pregnancy",
+              "Vomiting that starts only in the third trimester",
+              "Mild nausea that slightly reduces daily activities"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تعريف الإقياء المفرط الحملي هو إقياء في بداية الحمل شديد بما يكفي لتبرير القبول في المستشفى، مع ما يرافقه من جفاف وكيتوز وفقدان وزن؛ أما غثيان الصباح فيعني شكلاً فيزيولوجياً خفيفاً، والإقياء في الثلث الثالث ليس من تعريفه، والأعراض التي تعطل النشاط اليومي قليلاً تظل ضمن الشكل الفيزيولوجي."
+          }
+        },
+        {
+          "heading": "Etiology I: Genetic Factor and hCG-Mediated Hormonal Causes",
+          "body_text": "**The exact cause of hyperemesis gravidarum is unknown** — it is regarded as multifactorial. The causes of HG listed in the lecture begin with genetics and hormones:\n\n- **Genetic factor** — a genetic/familial predisposition is recognized.\n- **Hormonal causes:**\n  1. **hCG (human chorionic gonadotropin)** — the pivotal hormone:\n     - The **peak of hCG is between 8 and 12 weeks**, which is the **same time as NVP** — this temporal coincidence is the strongest argument for a causal link.\n     - HG may be due to an **increased level of hCG**, as in **multiple pregnancy** and **hydatidiform mole** (both generate very high hCG).\n     - Or to **increased sensitivity to hCG**, which explains HG in the **primigravida**.\n  2. **High levels of estrogen and progesterone.**\n\nExam pearl: unusually severe early-pregnancy vomiting should prompt an obstetric ultrasound — twin pregnancy and molar pregnancy both drive hCG (and vomiting) upward.",
+          "key_points": [
+            "The exact cause of HG is unknown — multifactorial etiology.",
+            "hCG peaks at 8–12 weeks = the same time as NVP symptoms.",
+            "Increased hCG level: multiple pregnancy and hydatidiform mole.",
+            "Increased sensitivity to hCG: primigravida.",
+            "Other hormonal causes: high levels of estrogen and progesterone."
+          ],
+          "check": {
+            "prompt": "Severe vomiting at 10 weeks in a hydatidiform mole is explained by which mechanism?",
+            "options": [
+              "Markedly increased hCG level",
+              "Reduced placental progesterone",
+              "Excess fetal cortisol secretion",
+              "Maternal hypercalcemia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يُفسَّر الإقياء المفرط في الحمل العنقودي (وكذلك الحمل المتعدد) بارتفاع شديد في مستوى الغونادوتروبين المشيمي hCG الذي تبلغ ذروته بين الأسبوع 8 و12، وهو نفس توقيت الغثيان والإقياء الحملي؛ أما نقص البروجسترون أو فرط الكورتيزول الجنيني أو فرط كالسيوم الأم فليست من آلياته."
+          }
+        },
+        {
+          "heading": "Etiology II: Thyroid, Immunological, Psychological, Infectious, and Nutritional Causes",
+          "body_text": "The remaining causes of HG listed in the lecture (items 3–7):\n\n- **3. Thyroid hormone** — thyroid hormone disturbance is listed among the hormonal causes; note that **thyrotoxicosis** also appears in the differential diagnosis, and **TSH** is part of the routine laboratory workup of HG.\n- **4. Immunological factors — increased cytokines:**\n  - **Tumor necrosis factor alpha (TNF-α) protein** and **interleukin 6 (IL-6)**.\n  - Both are **released from T helper cell type 1 (Th1)** cells.\n- **5. Psychological and socio-cultural factors** — psychological stress and socio-cultural influences contribute (contributing factors — HG is not an imagined or purely psychiatric illness).\n- **6. Gastrointestinal infection with Helicobacter pylori** — an identifiable, potentially treatable infectious cause.\n- **7. Nutritional deficiencies** — deficiency of **vitamin K, thiamine (vitamin B1), and zinc**.\n\nThese causes map onto management: thiamine is replaced in every severe case (preventing Wernicke-type neurological complications), H. pylori can be sought in refractory cases, and psychological support is part of first-line care.",
+          "key_points": [
+            "Thyroid hormone is a listed hormonal cause; check TSH (thyrotoxicosis is also a differential).",
+            "Cytokines implicated: TNF-α protein and IL-6, released from T helper cell type 1 (Th1) cells.",
+            "Psychological and socio-cultural factors contribute to HG.",
+            "H. pylori gastrointestinal infection is an infectious cause.",
+            "Nutritional deficiencies implicated: vitamin K, thiamine (B1), zinc."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "hCG",
+          "definition_ar": "الغونادوتروبين المشيمي البشري: هرمون الحمل الأساسي المرتبط بالغثيان والإقياء الحملي، وتبلغ ذروته بين الأسبوع 8 و12، ويرتفع كثيراً في الحمل المتعدد والحمل العنقودي."
+        },
+        {
+          "term": "Hydatidiform mole",
+          "definition_ar": "الحمل العنقودي: حمل شاذ تتصاعد فيه قيم hCG بشدة وقد يسبب إقياءً مفرطاً حملياً عنيفاً."
+        },
+        {
+          "term": "Multiple pregnancy",
+          "definition_ar": "الحمل المتعدد: حمل بتوأم أو أكثر يرفع مستوى hCG ويزيد شدة الغثيان والإقياء الحملي."
+        },
+        {
+          "term": "Primagravida",
+          "definition_ar": "البكر: المرأة الحامل لأول مرة؛ يُعزى إقياؤها المفرط أحياناً إلى حساسية مرتفعة تجاه hCG."
+        },
+        {
+          "term": "Helicobacter pylori",
+          "definition_ar": "الملوية البوابية: جرثومة معدية معوية مذكورة كسبب خمجي للإقياء المفرط الحملي."
+        },
+        {
+          "term": "Cytokines",
+          "definition_ar": "السيتوكينات: وسائط مناعية تشمل عامل نخر الورم ألفا والإنترلوكين 6، وتتحرر من الخلايا التائية المساعدة من النمط الأول، ويرتبط ارتفاعها بالإقياء المفرط الحملي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L6_nvp_c3",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Clinical Features and Laboratory Evaluation of HG",
+      "summary_ar": "يستعرض المظاهر السريرية للإقياء المفرط الحملي وهي غير نوعية وتنتج عن نتائج الإقياء الشديد: جفاف وكيتوز وفقدان 5% من وزن الجسم واضطرابات غذائية بنقص فيتامينات ب1 وب6 وب12 واختلال استقلابي قد يبلغ الحماض الكيتوني، مع عوامل مؤهجة هي الجوع وتناول الحديد وفرط حاسة الشم. أما مخبرياً فلا يوجد تحليل نوعي للتشخيص، وتشمل الطلبات صورة الدم الكاملة مع الكريات البيض، والبولة الدموية، والتحليل العام للبول، ووظائف الكبد، وTSH، مع تحاليل نوعية لتشخيص السبب الكامن عند الشك به.",
+      "sections": [
+        {
+          "heading": "Clinical Features, Sequelae, and Aggravating Factors",
+          "body_text": "Clinical features of hyperemesis gravidarum are **usually non-specific** — they **result from the serious sequelae following vomiting**, like:\n- **Dehydration** — dry mucous membranes, tachycardia, reduced urine output.\n- **Ketosis** — ketone bodies in the urine.\n- **Lost weight** — the classic threshold is **loss of 5% of body weight**.\n- **Nutritional disorders** — vitamin **B1 (thiamine), B6, and B12 deficiency**.\n- **Metabolic imbalance** — electrolyte depletion (the Na, K, Cl later replaced IV) up to frank **ketoacidosis**.\n\n**Aggravating factors** — the symptoms are aggravated by:\n- **Hunger** (an empty stomach).\n- **Iron intake** (oral iron preparations worsen nausea).\n- **Smell — hyperolfaction** (a heightened sense of smell; odors such as hot food trigger nausea).\n\nThese three aggravators translate directly into the dietary and lifestyle advice used in management: never leave the stomach empty (biscuit before getting out of bed), review iron intake during the acute phase, and avoid cooking and hot-food odors.",
+          "key_points": [
+            "Features are non-specific results of vomiting sequelae: dehydration, ketosis, lost weight (5% of body weight).",
+            "Nutritional disorders: B1, B6, B12 deficiency; metabolic imbalance up to ketoacidosis.",
+            "Aggravated by hunger, iron intake, and smell (hyperolfaction)."
+          ],
+          "check": {
+            "prompt": "Which trio of factors aggravates nausea and vomiting in pregnancy?",
+            "options": [
+              "Hunger, iron intake, smell (hyperolfaction)",
+              "Rest, fluids, small meals",
+              "Cold weather, exercise, loud noise",
+              "Sleep, protein, vitamins"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "العوامل المؤهجة المذكورة في المحاضرة هي الجوع (المعدة الفارغة) وتناول مستحضرات الحديد وفرط حاسة الشم تجاه الروائح؛ أما الراحة والسوائل والوجبات الصغيرة فهي من التدبير، والطقس والضجيج والرياضة ليست من العوامل المذكورة."
+          }
+        },
+        {
+          "heading": "Laboratory Evaluation",
+          "body_text": "**There are no specific laboratory tests for the diagnosis of NVP** — the diagnosis is clinical. Laboratory evaluation serves to grade the severity of dehydration and to detect complications or an underlying cause. Apart from assessing dehydration, the tests include:\n- **CBP (complete blood picture)** with **WBC** count — hemoconcentration and leukocytosis.\n- **Blood urea** — prerenal impairment from volume depletion.\n- **GUE (general urine examination)** — ketonuria and urine concentration.\n- **LFT (liver function tests)** — hepatic involvement (e.g., fatty liver) elevates transaminases.\n- **TSH** — thyroid hormone cause / thyrotoxicosis differential.\n\n**Specific investigations are directed at diagnosing the underlying cause** when the history suggests one — for example obstetric ultrasound for **multiple pregnancy or hydatidiform mole** in abnormally severe NVP, or H. pylori testing in refractory cases.\n\nExam note: \"No specific lab test exists for NVP\" is itself a favorite examination statement — labs quantify severity; they do not make the diagnosis.",
+          "key_points": [
+            "No specific lab test diagnoses NVP — the diagnosis is clinical.",
+            "Routine panel: CBP, WBC, blood urea, GUE (urine ketones), LFT, TSH.",
+            "Add specific investigations to diagnose the suspected underlying cause."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ketosis",
+          "definition_ar": "الكيتوز: تراكم الأجسام الكيتونية نتيجة الصيام والإقياء المطول، يُكشف في التحليل العام للبول ويدل على شدة الحالة."
+        },
+        {
+          "term": "Dehydration",
+          "definition_ar": "الجفاف: نقص سوائل الجسم الناجم عن الإقياء المستمر؛ يُقيَّم سريرياً ومخبرياً عبر الهيموتركريت والبولة الدموية."
+        },
+        {
+          "term": "CBP (complete blood picture)",
+          "definition_ar": "صورة الدم الكاملة: تحليل أساسي في تقييم الإقياء المفرط الحملي (التركيز الدموي وعدد الكريات البيض)."
+        },
+        {
+          "term": "GUE (general urine examination)",
+          "definition_ar": "التحليل العام للبول: يُظهر الكيتونات ودرجة تركيز البول، وهو جزء من تقييم شدة الإقياء المفرط الحملي."
+        },
+        {
+          "term": "Hyperolfaction",
+          "definition_ar": "فرط حاسة الشم: ازدياد حساسية الشم أثناء الحمل فتهيج الروائح كرائحة الطعام الساخن نوبات الغثيان."
+        },
+        {
+          "term": "Ketoacidosis",
+          "definition_ar": "الحماض الكيتوني: اضطراب استقلابي شديد بتراكم الكيتونات؛ ذُكر كأقصى درجات الاختلال الاستقلابي في الإقياء المفرط الحملي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L6_nvp_c4",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Differential Diagnosis of Hyperemesis Gravidarum",
+      "summary_ar": "قبل تشخيص الإقياء المفرط الحملي يجب استبعاد محاكياته المصنفة في أربع مجموعات: خمجية (خمج المسالك البولية، التهاب الكبد، التهاب السحايا، نزلة معدية معوية)، واضطرابات هضمية (التهاب الزائدة، التهاب المرارة، الكبد الدهني، التهاب المعدة، انسداد الأمعاء)، واستقلابية (التسمم الدرقي والحماض الكيتوني السكري)، ودوائية (المضادات الحيوية وعلاج الحديد)، مع سؤال المحاضرة الذاتي: الخمج الصدري هو الحالة التي لا تؤدي إلى صورة الإقياء المفرط الحملي.",
+      "sections": [
+        {
+          "heading": "Differential Diagnosis by Category",
+          "body_text": "Severe early-pregnancy vomiting is labeled hyperemesis gravidarum only after other causes of nausea and vomiting have been excluded. The differential diagnosis is grouped into four categories:\n\n**1. Infection:**\n- **UTI** (urinary tract infection)\n- **Hepatitis**\n- **Meningitis**\n- **GE** (gastroenteritis)\n\n**2. Gastrointestinal disorders:**\n- **Appendicitis**\n- **Cholecystitis**\n- **Fatty liver**\n- **Gastritis**\n- **Bowel obstruction**\n\n**3. Metabolic:**\n- **Thyrotoxicosis**\n- **DM ketoacidosis** (diabetic ketoacidosis)\n\n**4. Drugs:**\n- **Antibiotics**\n- **Iron therapy**\n\nEach category carries practical weight: appendicitis and bowel obstruction are surgical emergencies that must not hide behind an \"HG\" label; hepatitis and fatty liver explain deranged LFTs; thyrotoxicosis and diabetic ketoacidosis are metabolic emergencies detected through TSH and glucose/ketone testing; and drug-induced vomiting (antibiotics, iron therapy) resolves by reviewing the offending medication.",
+          "key_points": [
+            "Infection: UTI, hepatitis, meningitis, gastroenteritis (GE).",
+            "GI disorders: appendicitis, cholecystitis, fatty liver, gastritis, bowel obstruction.",
+            "Metabolic: thyrotoxicosis, DM ketoacidosis.",
+            "Drugs: antibiotics, iron therapy.",
+            "Never miss the surgical causes (appendicitis, bowel obstruction) behind an HG label."
+          ]
+        },
+        {
+          "heading": "Applying the Differential: The Lecture's Self-Assessment Question",
+          "body_text": "The lecture closes with a self-assessment question that drills exactly this differential:\n\n**\"Which one of the following conditions does NOT lead to hyperemesis gravidarum?\"**\n1. Viral hepatitis\n2. Gastric ulcer\n3. Chest infection\n4. Pyelonephritis\n\n**Answer: chest infection (option 3).** In examination language, the question asks which condition is NOT a recognized cause/mimic of severe vomiting in early pregnancy:\n- **Viral hepatitis** — an infection causing nausea, vomiting and deranged LFTs.\n- **Gastric ulcer** — an upper gastrointestinal cause of vomiting.\n- **Pyelonephritis** — urinary tract infection reaching the kidney; nausea, vomiting and fever.\n- **Chest infection** — a respiratory condition; it does not produce the intractable early-pregnancy vomiting picture of HG.\n\nRule of thumb: when a \"severe HG\" case deteriorates atypically (fever, abdominal pain, jaundice, diarrhea), re-open the differential diagnosis rather than simply escalating antiemetics.",
+          "key_points": [
+            "Self-assessment answer: chest infection does NOT lead to (mimic) HG.",
+            "Viral hepatitis, gastric ulcer and pyelonephritis are classic vomiting mimics; chest infection is respiratory.",
+            "Atypical deterioration (fever, pain, jaundice) → re-open the differential."
+          ],
+          "check": {
+            "prompt": "Which condition does NOT lead to (mimic) hyperemesis gravidarum?",
+            "options": [
+              "Viral hepatitis",
+              "Chest infection",
+              "Gastric ulcer",
+              "Pyelonephritis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التهاب الكبد الفيروسي وقرحة المعدة والتهاب الحويضة والكلية كلها أسباب معروفة للإقياء الشديد في بداية الحمل وتدخل في التشخيص التفريقي للإقياء المفرط الحملي، بينما الخمج الصدري حالة تنفسية لا تترافق عادةً بإقياء مفرط مستمر، فهو الحالة التي لا تؤدي إلى صورة الإقياء المفرط الحملي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Appendicitis",
+          "definition_ar": "التهاب الزائدة الدودية: إسعاف جراحي يدخل في التشخيص التفريقي للإقياء المفرط الحملي ولا يجوز إغفاله خلف تشخيص الغثيان والإقياء."
+        },
+        {
+          "term": "Cholecystitis",
+          "definition_ar": "التهاب المرارة: اضطراب هضمي من التشخيص التفريقي للإقياء المفرط الحملي."
+        },
+        {
+          "term": "Bowel obstruction",
+          "definition_ar": "انسداد الأمعاء: سبب جراحي للإقياء يستدعي تدخلاً عاجلاً ويجب استبعاده قبل تثبيت تشخيص الإقياء المفرط الحملي."
+        },
+        {
+          "term": "Thyrotoxicosis",
+          "definition_ar": "التسمم الدرقي: فرط نشاط الغدة الدرقية؛ ضمن التشخيص التفريقي الاستقلابي للإقياء المفرط الحملي، ويُقيَّم عبر TSH ضمن التحاليل."
+        },
+        {
+          "term": "Gastroenteritis (GE)",
+          "definition_ar": "التهاب المعدة والأمعاء: سبب خمجي شائع للغثيان والإقياء يدخل في التشخيص التفريقي للإقياء المفرط الحملي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L6_nvp_c5",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Management of NVP and Hyperemesis Gravidarum",
+      "summary_ar": "يشرح التدبير الكامل: الهدفان هما إعادة الإماهة وتقليل الأخطار على الأم والجنين. يبدأ العلاج غير الدوائي بالنصائح الغذائية (رشفات صغيرة، عصائر فاكهة مخففة، وجبات صغيرة متكررة، بسكويت قبل النهوض من السرير، تجنب الدسم والتوابل) ونصائح نمط الحياة (استغلال أفضل أوقات اليوم، طعام بارد بدل الساخن، تجنب الطبخ وطلب المساعدة من العائلة، الاستلقاء عند الغثيان، تجنب التوتر) مع الدعم النفسي والزنجبيل 1 غرام يومياً. ثم الدوائي: بيريدوكسين 25 ملغ كل 8 ساعات، أو توليفة بيريدوكسين 10 ملغ مع دوكسيلامين 25 ملغ، ثم ميتوكلوبراميد (مضاد دوبامين)، والكورتيكوستيرويدات (بريدنيزولون فموياً 3 مرات يومياً) للحالات المهددة للحياة. وفي المشفى: إماهة فموية أولاً ثم وريدية 4–6 لترات يومياً بمحاليل رينغر اللاكتات أو الماء بالغلوكوز أو المحلول الملحي مع الثيامين أو مركب ب الوريدي.",
+      "sections": [
+        {
+          "heading": "Aims of Management and Non-Pharmacological Treatment",
+          "body_text": "**Aims of management:**\n1. **Rehydration** — restoring fluid and electrolyte balance.\n2. **Minimizing risks to the mother and the fetus** — preventing progression to dehydration, ketosis, ketoacidosis, weight loss and vitamin deficiency.\n\n**Types of treatment** (in escalation order):\n1. **Non-pharmacological treatment**\n2. **Pharmacological treatment**\n3. **Parenteral (hospital) treatment** — IV rehydration and nutritional support\n4. **Enteral tube feeding** in severe cases (see the next concept)\n\n**Non-pharmacological treatment consists of:**\n- **Dietary and lifestyle recommendations** (detailed in the next two sections).\n- **Emotional support** — NVP impacts family relationships; acknowledgment and reassurance are therapeutic.\n- **Use of herbal remedies — ginger, 1g per day** — the one herbal remedy with a quoted dose in this lecture.",
+          "key_points": [
+            "Aims of management: rehydration, and minimizing risks to the mother and fetus.",
+            "Non-pharmacological: dietary and lifestyle recommendations, emotional support, ginger 1g per day."
+          ]
+        },
+        {
+          "heading": "Common Dietary Advice",
+          "body_text": "The dietary advice given to women with NVP, item by item:\n- **Drink small amounts** — frequent small sips rather than large volumes at once.\n- **Fluids better than water — diluted fruit juice** — diluted juice is tolerated better than plain water.\n- **Small amounts of food more often than large meals** — small, frequent feeds replace three large meals.\n- **Avoid having an empty stomach** — early morning nausea may be helped by eating **a biscuit before getting out of bed**.\n- **Avoid fatty, rich or spicy foods.**\n\nRationale: each measure counteracts a known aggravating factor — the empty stomach (hunger), gastric over-distension by large meals, and fat/odor-triggered nausea through hyperolfaction.",
+          "key_points": [
+            "Drink small amounts; diluted fruit juice is better than plain water.",
+            "Small frequent meals; never leave the stomach empty.",
+            "Biscuit before getting out of bed for early morning nausea.",
+            "Avoid fatty, rich or spicy foods."
+          ]
+        },
+        {
+          "heading": "Common Lifestyle Advice",
+          "body_text": "The lifestyle advice that accompanies the dietary measures:\n- **Make the most of your best time of day** — eat well when you feel best, or whenever you feel hungry.\n- **If the smell of hot food makes you feel ill, try having cold food instead** — cold dishes release fewer odors.\n- **Avoid cooking — ask for help from family** — removing the woman from the kitchen directly attacks the hyperolfaction trigger.\n- **Lie down when nauseated.**\n- **Avoid stress** — psychological stress is both a contributory cause and an aggravating factor.\n\nCombined with emotional support, these measures constitute the first-line care of morning sickness and remain valuable throughout the treatment of hyperemesis gravidarum.",
+          "key_points": [
+            "Eat at your best time of day / whenever you feel hungry.",
+            "Cold food instead of hot if odors trigger nausea; avoid cooking and ask family for help.",
+            "Lie down when nauseated; avoid stress."
+          ]
+        },
+        {
+          "heading": "Pharmacological Treatment",
+          "body_text": "When non-pharmacological measures are insufficient, antiemetic drug therapy is escalated as follows (all doses exactly as quoted in the lecture):\n\n- **Pyridoxine (vitamin B6)** — given in a dose of **25mg every 8 hours (25mg/8hrs)**; the first-line pharmacological agent for NVP.\n- **Combination of pyridoxine (10mg) + doxylamine 25mg** — doxylamine is an **antihistamine**; this combination is the classic antiemetic regimen of pregnancy.\n- **Dopamine antagonists** — inhibit gastric motility by **blocking dopamine receptors**, like **metoclopramide**.\n- **Corticosteroids in severe, life-threatening cases** — **prednisolone orally 3 times daily**; reserved for the most refractory, life-threatening presentations.\n\nSequencing for exams: pyridoxine (with or without doxylamine) first → dopamine antagonist (metoclopramide) next → corticosteroid (prednisolone) last, only in life-threatening severity.",
+          "key_points": [
+            "Pyridoxine (vitamin B6) 25mg every 8 hours — first-line antiemetic.",
+            "Pyridoxine 10mg + doxylamine 25mg (antihistamine) — classic combination regimen.",
+            "Metoclopramide: dopamine antagonist blocking dopamine receptors, inhibits gastric motility.",
+            "Prednisolone orally 3 times daily — corticosteroid reserved for severe, life-threatening cases."
+          ],
+          "check": {
+            "prompt": "What is the first-line pharmacological dose of pyridoxine (vitamin B6) in NVP?",
+            "options": [
+              "25mg every 8 hours",
+              "10mg every 8 hours",
+              "100mg twice daily",
+              "50mg once weekly"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الجرعة الأولى للبيريدوكسين هي 25 ملغ كل 8 ساعات؛ أما جرعة 10 ملغ فتُستخدم فقط ضمن التوليفة مع دوكسيلامين 25 ملغ، ولا أساس للجرعات الكبيرة أو الأسبوعية في تدبير الغثيان والإقياء الحملي."
+          }
+        },
+        {
+          "heading": "Hospital Management: Rehydration and Nutritional Support",
+          "body_text": "**1. First line: oral rehydration by oral fluid** — mild cases are managed as outpatients with oral fluids plus dietary/lifestyle measures and antiemetics.\n\n**2. Parenteral rehydration and nutritional support** — for admitted patients:\n\n**A. IV fluids** that supply:\n- **Energy (glucose)**\n- **Electrolytes (Na, K, Cl)**\n\nTypes of fluid used:\n- **Ringer lactate** — contains Na, K, Cl, sugar (lactate) and Ca.\n- **Glucose water (dextrose solution)**.\n- **Normal saline**.\n\n**Amount of fluid**: depends on the **daily requirement, which is about 4–6 liters per day** in severe HG.\n\n**B. IV thiamine or B complex in infusion** — given alongside rehydration. Replace **thiamine (vitamin B1) before or with glucose-containing infusions** to prevent **Wernicke encephalopathy**, the neurological catastrophe of B1 deficiency (thiamine deficiency is listed both as an etiological factor and as a complication of HG).",
+          "key_points": [
+            "First line: oral rehydration by oral fluids.",
+            "IV fluids: Ringer lactate, glucose water, normal saline — supplying glucose and Na, K, Cl.",
+            "Daily fluid requirement in severe HG: about 4–6 liters per day.",
+            "IV thiamine or B complex in infusion — give thiamine before glucose to prevent Wernicke encephalopathy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Pyridoxine",
+          "definition_ar": "البيريدوكسين (فيتامين ب6): المضاد للإقياء الأول في الحمل بجرعة 25 ملغ كل 8 ساعات، أو 10 ملغ ضمن التوليفة مع الدوكسيلامين."
+        },
+        {
+          "term": "Doxylamine",
+          "definition_ar": "الدوكسيلامين: مضاد هيستامين يشارك البيريدوكسين (10 ملغ مع 25 ملغ) في توليفة مضادة للإقياء تعتبر قياسية في الحمل."
+        },
+        {
+          "term": "Metoclopramide",
+          "definition_ar": "الميتوكلوبراميد: مضاد دوبامين يثبط حركية المعدة بحجب مستقبلات الدوبامين ويُستخدم لعلاج الغثيان والإقياء الحملي."
+        },
+        {
+          "term": "Prednisolone",
+          "definition_ar": "البريدنيزولون: كورتيكوستيرويد يُعطى فموياً ثلاث مرات يومياً في الحالات الشديدة المهددة للحياة من الإقياء المفرط الحملي."
+        },
+        {
+          "term": "Ringer lactate",
+          "definition_ar": "محلول رينغر اللاكتات: محلول وريدي يحوي الصوديوم والبوتاسيوم والكلور واللاكتات (السكر) والكالسيوم، ويُستخدم في إعادة إماهة الإقياء المفرط الحملي."
+        },
+        {
+          "term": "Ginger",
+          "definition_ar": "الزنجبيل: علاج عشري للغثيان والإقياء الحملي بجرعة 1 غرام يومياً ضمن التدبير غير الدوائي."
+        },
+        {
+          "term": "Wernicke encephalopathy",
+          "definition_ar": "اعتلال فيرنيكي الدماغي: مضاعفة عصبية لنقص الثيامين (ب1)؛ يُمنع بإعطاء الثيامين الوريدي قبل محاليل الغلوكوز."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L6_nvp_c6",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Severe and Refractory HG: Enteral Feeding, Complications, and Termination",
+      "summary_ar": "يختتم هذا المفهوم تدبير الحالات الشديدة المقاوعة: التغذية بالأنبوب المعوي عند فشل الإماهة الوريدية والأدوية، ثم المضاعفات المجتمعة من الجفاف والكيتوز والحماض الكيتوني وفقدان 5% من الوزن ونقص فيتامينات ب1 وب6 وب12 إلى التنكس الدهني الكبدي والاعتلال الدماغي الكبدي الكلوي، ومؤشري إنهاء الحمل الوحيدين: التنكس الدهني الكبدي والتلف الكبدي الكلوي (الاعتلال الدماغي الكبدي الكلوي).",
+      "sections": [
+        {
+          "heading": "Enteral Tube Feeding in Severe Cases and the Escalation Ladder",
+          "body_text": "**Enteral tube feeding is used in severe cases** — when vomiting persists despite oral measures, antiemetic drugs and IV rehydration, nutrition is delivered directly to the gut through a feeding tube to preserve maternal nutrition and fetal growth while the bowel continues to function.\n\nThe full escalation ladder of HG management, assembled from the whole lecture:\n1. **Reassurance + dietary and lifestyle advice** (morning sickness, mild NVP), with emotional support and **ginger 1g per day**.\n2. **Pyridoxine 25mg/8h → pyridoxine 10mg + doxylamine 25mg → metoclopramide** (pharmacological escalation).\n3. **Oral rehydration** (first line).\n4. **IV rehydration and nutritional support**: Ringer lactate / glucose water / normal saline, **4–6 liters per day**, with **IV thiamine or B complex in infusion**.\n5. **Corticosteroids** (prednisolone orally 3 times daily) in severe, life-threatening cases.\n6. **Enteral tube feeding** in severe refractory cases.\n7. **Termination of pregnancy** — only for the two indications below.",
+          "key_points": [
+            "Enteral tube feeding: reserved for severe cases refractory to oral and IV management.",
+            "Full ladder: reassurance → antiemetics → oral rehydration → IV fluids + thiamine → corticosteroids (life-threatening) → enteral tube feeding → (rarely) termination."
+          ]
+        },
+        {
+          "heading": "Complications of HG and the Indications for Termination",
+          "body_text": "**Complications of hyperemesis gravidarum** (consolidating the lecture's complications objective):\n- **Dehydration** with prerenal impairment (raised blood urea).\n- **Ketosis progressing to ketoacidosis** (metabolic imbalance).\n- **Loss of 5% of body weight or more.**\n- **Nutritional/vitamin deficiency: B1, B6, B12** — B1 (thiamine) deficiency risks **Wernicke encephalopathy**, prevented by IV thiamine during rehydration.\n- **Electrolyte depletion (Na, K, Cl)** requiring IV replacement.\n- **Hepatic fatty degeneration** of the liver.\n- **Hepatorenal encephalopathy** (combined liver–kidney damage).\n- Psychosocial toll — NVP/HG negatively impacts family relationships.\n\n**Indications for termination of pregnancy** (exactly two are listed — memorize them):\n1. **Hepatic fatty degeneration**\n2. **Hepatorenal encephalopathy** (hepatorenal damage)\n\nTermination is NOT indicated for dehydration, ketosis or weight loss alone — these are treated with rehydration, antiemetics, thiamine and enteral feeding. The pregnancy is ended only when HG threatens the mother with irreversible hepatic fatty degeneration or combined hepatorenal damage.",
+          "key_points": [
+            "Complications: dehydration, ketosis/ketoacidosis, loss of 5% of body weight, B1/B6/B12 deficiency, electrolyte depletion, hepatic fatty degeneration, hepatorenal encephalopathy.",
+            "Termination indications (only two): hepatic fatty degeneration and hepatorenal encephalopathy.",
+            "Dehydration, ketosis and weight loss are treated — never indications for termination."
+          ],
+          "check": {
+            "prompt": "A woman with refractory HG develops hepatic fatty degeneration with hepatorenal damage despite maximal therapy. Which management is indicated?",
+            "options": [
+              "Termination of pregnancy",
+              "Enteral tube feeding alone",
+              "Continue IV rehydration indefinitely",
+              "Discharge with ginger 1g per day"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التنكس الدهني الكبدي والاعتلال الدماغي الكبدي الكلوي (التلف الكبدي الكلوي) هما مؤشرا إنهاء الحمل الوحيدين المذكوران في المحاضرة؛ فاستمرار الحمل عند هذه المرحلة يهدد حياة الأم بشكل لا رجعة فيه، بينما التغذية الأنبوبية والإماهة تدابير أسبق لا تكفي عند بلوغ هذه المضاعفة، والزنجبيل علاج مساعد للحالات الخفيفة فقط."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Enteral tube feeding",
+          "definition_ar": "التغذية بالأنبوب المعوي: إيصال الغذاء إلى الأمعاء عبر أنبوب تغذية في الحالات الشديدة من الإقياء المفرط الحملي المقاومة للعلاج."
+        },
+        {
+          "term": "Hepatic fatty degeneration",
+          "definition_ar": "التنكس الدهني الكبدي: مضاعفة كبدية شديدة للإقياء المفرط الحملي وأحد مؤشري إنهاء الحمل."
+        },
+        {
+          "term": "Hepatorenal encephalopathy",
+          "definition_ar": "الاعتلال الدماغي الكبدي الكلوي: قصور مشترك في الكبد والكليتين مع اضطراب الوعي؛ المؤشر الثاني لإنهاء الحمل في الإقياء المفرط الحملي."
+        },
+        {
+          "term": "Termination of pregnancy",
+          "definition_ar": "إنهاء الحمل: الحل الأخير في الإقياء المفرط الحملي، ويُستطب فقط عند التنكس الدهني الكبدي أو التلف الكبدي الكلوي لحماية حياة الأم."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L6_nvp_f01",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "card_type": "basic",
+      "front_text": "How common are nausea and vomiting in pregnancy, and when do symptoms begin?",
+      "back_text": "50–80% of pregnant women experience nausea, and 25% of them have vomiting. Symptoms usually begin between the 4th and 6th weeks of pregnancy.",
+      "explanation_ar": "الغثيان والإقياء الحملي يبدأ عادة بين الأسبوع الرابع والسادس، ويصيب الغثيان نصف إلى أربعة أخماس الحوامل مع إقياء عند ربعهن فقط.",
+      "tags": [
+        "epidemiology",
+        "NVP"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f02",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "card_type": "basic",
+      "front_text": "Name the two types of nausea and vomiting in pregnancy (NVP).",
+      "back_text": "1) Physiological type — morning sickness (mild, self-limiting). 2) Pathological type — hyperemesis gravidarum (HG): severe vomiting sufficient to warrant hospital admission.",
+      "mnemonic_ar": "فيزيولوجي = غثيان الصباح، مرضي = الإقياء المفرط الحملي.",
+      "tags": [
+        "classification",
+        "NVP"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f03",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "card_type": "basic",
+      "front_text": "What does the word 'hyperemesis gravidarum' literally mean (Greek etymology)?",
+      "back_text": "From Greek: hyper = excessive, gravidarum = pregnant woman — i.e., 'excessive vomiting of the pregnant woman'.",
+      "tags": [
+        "definition",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f04",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "card_type": "basic",
+      "front_text": "A woman at 7 weeks has mild nausea with one vomit per day and continues working. Diagnosis and management?",
+      "back_text": "Morning sickness (physiological NVP): mild nausea with or without one attack of vomiting that does not interfere with daily work. Management: reassurance only — it is self-limiting.",
+      "tags": [
+        "morning sickness",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f05",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "card_type": "basic",
+      "front_text": "Why should mild NVP never be dismissed as trivial?",
+      "back_text": "NVP negatively impacts family relationships, and early recognition and management of NVP prevent progression to hyperemesis gravidarum (HG).",
+      "is_vivid": true,
+      "tags": [
+        "counseling",
+        "NVP"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f06",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "Give the lecture's definition of hyperemesis gravidarum (HG).",
+      "back_text": "HG is vomiting in early pregnancy sufficient to warrant hospital admission.",
+      "tags": [
+        "definition",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f07",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "What is the incidence of HG, and what is its claim to fame in the first trimester?",
+      "back_text": "Incidence 0.5 – 2 % of pregnancies (National Health Portal: 0.3%–3% of pregnant women). HG is the commonest indication for hospitalization in the first trimester of pregnancy.",
+      "explanation_ar": "الإقياء المفرط الحملي يصيب 0.5–2% من حالات الحمل، وهو أشيع سبب للقبول المشفوي في الثلث الأول من الحمل.",
+      "is_vivid": true,
+      "tags": [
+        "incidence",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f08",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "When does hCG peak, and why does that matter in NVP?",
+      "back_text": "hCG peaks between 8 and 12 weeks — the same time as NVP symptoms — supporting a causal hormonal link between hCG and nausea/vomiting of pregnancy.",
+      "tags": [
+        "hCG",
+        "etiology"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f09",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "Which two pregnancies raise hCG markedly and worsen NVP — and which patient group has increased hCG sensitivity?",
+      "back_text": "Multiple pregnancy and hydatidiform mole (increased hCG levels); the primigravida (increased sensitivity to hCG).",
+      "mnemonic_ar": "التوأم والعنقودي = ارتفاع hCG؛ البكر = حساسية زائدة.",
+      "tags": [
+        "hCG",
+        "etiology",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f10",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "Which cytokines are implicated in HG, and from which cells are they released?",
+      "back_text": "Tumor necrosis factor alpha (TNF-α) protein and interleukin 6 (IL-6) — both released from T helper cell type 1 (Th1) cells.",
+      "tags": [
+        "etiology",
+        "immunology"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f11",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "Which gastric bacterium is listed as a gastrointestinal infectious cause of HG?",
+      "back_text": "Helicobacter pylori — gastrointestinal infection with H. pylori is an etiological factor of hyperemesis gravidarum.",
+      "tags": [
+        "etiology",
+        "infection"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f12",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "card_type": "basic",
+      "front_text": "Which nutritional deficiencies are listed as etiological factors of HG?",
+      "back_text": "Vitamin K, thiamine (vitamin B1), and zinc deficiency.",
+      "tags": [
+        "etiology",
+        "nutrition"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f13",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c3",
+      "card_type": "basic",
+      "front_text": "Which three factors aggravate nausea and vomiting in pregnancy?",
+      "back_text": "Hunger (an empty stomach), iron intake, and smell (hyperolfaction — heightened sense of smell).",
+      "mnemonic_ar": "جوع + حديد + رائحة = مثلث التهييج.",
+      "tags": [
+        "clinical features",
+        "NVP"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f14",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c3",
+      "card_type": "basic",
+      "front_text": "What weight-loss threshold is quoted for HG, and which vitamin deficiencies follow?",
+      "back_text": "Loss of 5% of body weight; nutritional disorders include B1, B6 and B12 deficiency, with metabolic imbalance up to ketoacidosis.",
+      "tags": [
+        "clinical features",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f15",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c3",
+      "card_type": "basic",
+      "front_text": "There is no specific lab test for NVP — so which tests make up the routine workup?",
+      "back_text": "CBP (complete blood picture) with WBC, blood urea, GUE (general urine examination — ketones), LFT, and TSH; plus specific investigations aimed at the suspected underlying cause.",
+      "tags": [
+        "investigations",
+        "HG"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f16",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c4",
+      "card_type": "basic",
+      "front_text": "List the four categories of the differential diagnosis of HG with their members.",
+      "back_text": "Infection: UTI, hepatitis, meningitis, gastroenteritis (GE). GI disorders: appendicitis, cholecystitis, fatty liver, gastritis, bowel obstruction. Metabolic: thyrotoxicosis, DM ketoacidosis. Drugs: antibiotics, iron therapy.",
+      "explanation_ar": "التشخيص التفريقي للإقياء المفرط الحملي أربع مجموعات: خماج، اضطرابات هضمية، استقلابية، ودوائية.",
+      "tags": [
+        "differential diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f17",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c4",
+      "card_type": "basic",
+      "front_text": "Lecture self-assessment: which condition does NOT lead to (mimic) hyperemesis gravidarum?",
+      "back_text": "Chest infection. Viral hepatitis, gastric ulcer and pyelonephritis are recognized vomiting mimics/differentials of HG — a chest infection is respiratory and does not produce intractable early-pregnancy vomiting.",
+      "is_vivid": true,
+      "tags": [
+        "differential diagnosis",
+        "self-assessment"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f18",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "Which herbal remedy has a quoted dose in NVP, and what is that dose?",
+      "back_text": "Ginger — 1g per day (as part of non-pharmacological treatment alongside dietary and lifestyle advice and emotional support).",
+      "tags": [
+        "management",
+        "non-pharmacological"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f19",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "What is the first-line antiemetic of pregnancy and its dose?",
+      "back_text": "Pyridoxine (vitamin B6) — 25mg every 8 hours (25mg/8hrs).",
+      "tags": [
+        "pharmacology",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f20",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "What is the classic combination antiemetic regimen of pregnancy (drugs and doses)?",
+      "back_text": "Pyridoxine 10mg combined with doxylamine 25mg (doxylamine is an antihistamine).",
+      "mnemonic_ar": "10 بيريدوكسين + 25 دوكسيلامين.",
+      "tags": [
+        "pharmacology",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f21",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "Which antiemetic class inhibits gastric motility by blocking dopamine receptors? Name the example drug.",
+      "back_text": "Dopamine antagonists — example: metoclopramide.",
+      "tags": [
+        "pharmacology",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f22",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "When are corticosteroids used in HG, and which drug and schedule?",
+      "back_text": "In severe, life-threatening cases — prednisolone orally 3 times daily (last-resort therapy).",
+      "tags": [
+        "pharmacology",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f23",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "Which IV fluids (and what daily volume) are used for parenteral rehydration in severe HG?",
+      "back_text": "IV fluids supplying glucose and electrolytes (Na, K, Cl): Ringer lactate (Na, K, Cl, sugar/lactate, Ca), glucose water, or normal saline — about 4–6 liters per day (the daily requirement).",
+      "tags": [
+        "management",
+        "rehydration"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f24",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "card_type": "basic",
+      "front_text": "Why is IV thiamine (or B complex) infused alongside glucose-containing IV fluids in HG?",
+      "back_text": "To prevent Wernicke encephalopathy caused by thiamine (B1) deficiency — give thiamine before or with glucose-containing infusions.",
+      "explanation_ar": "نقص الثيامين (ب1) في الإقياء المفرط الحملي قد يسبب اعتلالاً دماغياً (فيرنيكي)؛ لذلك يُعطى الثيامين أو مركب ب الوريدي مع/قبل محاليل الغلوكوز للوقاية منه.",
+      "is_vivid": true,
+      "tags": [
+        "management",
+        "thiamine",
+        "Wernicke"
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_f25",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c6",
+      "card_type": "basic",
+      "front_text": "What is the escalation step after failed oral and IV therapy in severe HG, and when is termination indicated?",
+      "back_text": "Enteral tube feeding in severe cases. Termination of pregnancy is reserved for exactly two indications: 1) hepatic fatty degeneration, 2) hepatorenal encephalopathy (hepatorenal damage).",
+      "mnemonic_ar": "أنبوب معوي للتغذية، وإنهاء الحمل فقط للكبد الدهني أو التلف الكبدي الكلوي.",
+      "tags": [
+        "management",
+        "termination"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L6_nvp_m01",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c1",
+      "clinical_vignette": true,
+      "question_stem": "A 24-year-old primigravida at 7 weeks' gestation reports nausea every morning with one episode of vomiting daily. She has lost no weight, her urine dipstick shows no ketones, and she continues to work full time. What is the most appropriate management?",
+      "options": [
+        "Reassurance that morning sickness is self-limiting",
+        "Immediate hospital admission for IV rehydration",
+        "Commence prednisolone orally three times daily",
+        "Urgent ultrasound to exclude hydatidiform mole"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أعراضها نموذجية لغثيان الصباح الفيزيولوجي: غثيان خفيف مع نوبة إقياء واحدة لا تعطل عملها اليومي، وهو ذاتي الشفاء ولا يحتاج أكثر من الطمأنة، لذا فالإجابة الصحيحة هي الطمأنة. القبول المشفوي والإماهة الوريدية يُحفظان للإقياء المفرط الحملي (جفاف وكيتوز وفقدان وزن)، والبريدنيزولون يُستخدم فقط في الحالات الشديدة المهددة للحياة، ولا داعي لموجات صوتية عاجلة لأن الحمل وحيد سريرياً وبدون علامات إنذار.",
+      "difficulty": "core",
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m02",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "clinical_vignette": true,
+      "question_stem": "A 28-year-old woman at 9 weeks' gestation with a twin pregnancy presents with severe intractable vomiting and loss of 5% of her body weight. Which hormonal mechanism best explains the severity of her symptoms?",
+      "options": [
+        "Markedly increased hCG level",
+        "Fallen progesterone level",
+        "Excess fetal cortisol secretion",
+        "Maternal insulin deficiency"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحمل التوأمي يرفع مستوى الغونادوتروبين المشيمي hCG بشكل كبير، وذروة الهرمون بين الأسبوع 8 و12 تتزامن مع ذروة الغثيان والإقياء الحملي، ولهذا تشتد الأعراض في الحمل المتعدد (والحمل العنقودي) وقد تبلغ درجة الإقياء المفرط الحملي. هبوط البروجسترون لا يفسر الإقياء بل يهدد باستمرار الحمل، وفرط الكورتيزول الجنيني ونقص الأنسولين الأمومي ليسا من آليات الغثيان والإقياء الحملي.",
+      "difficulty": "core",
+      "hints": [
+        "Think about which hormone peaks at 8–12 weeks.",
+        "Which pregnancies produce the highest hCG concentrations?"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m03",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c2",
+      "clinical_vignette": false,
+      "question_stem": "The peak of hCG in normal pregnancy occurs at which gestational window, and why is this relevant to nausea and vomiting of pregnancy (NVP)?",
+      "options": [
+        "8–12 weeks, coinciding with the time of NVP",
+        "20–24 weeks, coinciding with quickening",
+        "16–18 weeks, coinciding with fundal height growth",
+        "28–32 weeks, coinciding with third-trimester weight gain"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تبلغ ذروة hCG بين الأسبوع 8 و12 من الحمل، وهو نفس التوقيت الذي تبدأ وتشتد فيه أعراض الغثيان والإقياء الحملي، وهذا التزامن الزمني هو أقوى دليل على العلاقة السببية بين الهرمون والعرض. باقي الفترات (16–18 و20–24 و28–32 أسبوعاً) لا تتزامن مع ذروة الأعراض ولا مع ذروة الهرمون.",
+      "difficulty": "core",
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m04",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c3",
+      "clinical_vignette": true,
+      "question_stem": "A 22-year-old primigravida at 10 weeks' gestation has persistent vomiting. On examination she is clinically dry, and urine dipstick shows large ketones. Which set of laboratory tests should be requested?",
+      "options": [
+        "CBP, WBC, blood urea, GUE, LFT, TSH",
+        "Serum hCG titers alone",
+        "Coagulation profile and D-dimer",
+        "Tumor markers (CA-125 and CEA)"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "لا يوجد تحليل مخبري نوعي لتشخيص الغثيان والإقياء الحملي؛ تُطلب صورة الدم الكاملة مع الكريات البيض، والبولة الدموية، والتحليل العام للبول بحثاً عن الكيتونات، ووظائف الكبد، وTSH لتقييم درجة الجفاف والمضاعفات واستبعاد الأسباب الكامنة. قياس hCG وحده لا يشخص الحالة ولا يقدّر شدتها، وتحاليل التخثر والدالة الرابطة الورمية لا علاقة لها بالتقييم الروتيني للإقياء المفرط الحملي.",
+      "difficulty": "core",
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m05",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c3",
+      "clinical_vignette": true,
+      "question_stem": "A 26-year-old woman at 11 weeks' gestation with hyperemesis gravidarum has lost 5% of her body weight and has been vomiting for three weeks. Which vitamin deficiency classically threatens such patients and should be replaced IV before glucose infusions?",
+      "options": [
+        "Thiamine (vitamin B1) deficiency",
+        "Vitamin C deficiency",
+        "Vitamin D deficiency",
+        "Vitamin B2 (riboflavin) deficiency"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الإقياء المطول وسوء التغذية في الإقياء المفرط الحملي يسبب نقص فيتامينات ب وخاصة الثيامين (ب1) المسؤول عن اعتلال فيرنيكي الدماغي، لذا يُعطى الثيامين الوريدي ضمن التسريب قبل محاليل الغلوكوز للوقاية منه. نقص فيتامين ج أو د أو ب2 ليست من النواقص المذكورة في المحاضرة؛ فالنواقص المذكورة كاضطرابات غذائية هي ب1 وب6 وب12، وكأسباب فهي فيتامين ك والثيامين والزنك.",
+      "difficulty": "advanced",
+      "hints": [
+        "Which B vitamin protects the brain in prolonged vomiting?",
+        "Think of the infusion given before glucose in HG protocols."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m06",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c4",
+      "clinical_vignette": true,
+      "question_stem": "A 25-year-old woman at 9 weeks' gestation presents with vomiting, right iliac fossa pain, anorexia and low-grade fever. Which differential diagnosis must be excluded before attributing the vomiting to hyperemesis gravidarum?",
+      "options": [
+        "Appendicitis",
+        "Meningitis",
+        "Iron therapy",
+        "Thyrotoxicosis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ألم الحفرة الحرقفية اليمنى مع فقدان الشهية وحمى خفيفة عند حامل تشكو إقياءً يوجب استبعاد التهاب الزائدة الدودية أولاً، وهو من الاضطرابات الهضمية في التشخيص التفريقي للإقياء المفرط الحملي، لأن إغفاله ينتهي بالانثقاب وحالة بطن جراحية. التهاب السحايا يصاحبه صداع وصلابة رقبة، والتسمم الدرقي يظهر مع تسرع قلب ورجفان، وعلاج الحديد يسبب غثياناً دون ألم حرقفي أو حمى.",
+      "difficulty": "core",
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m07",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c4",
+      "clinical_vignette": false,
+      "question_stem": "The lecture's self-assessment: which one of the following conditions does NOT lead to hyperemesis gravidarum (i.e., is not a recognized cause/mimic of severe early-pregnancy vomiting)?",
+      "options": [
+        "Viral hepatitis",
+        "Chest infection",
+        "Gastric ulcer",
+        "Pyelonephritis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التهاب الكبد الفيروسي وقرحة المعدة والتهاب الحويضة والكلية كلها حالات تسبب إقياءً وتدخل في التشخيص التفريقي للإقياء المفرط الحملي: التهاب الكبد خمج مع اضطراب وظائف الكبد، وقرحة المعدة سبب هضمي، والتهاب الحويضة والكلية خمج بولي صاعد مع غثيان وإقياء وحمى. أما الخمج الصدري فمرض تنفسي لا يترافق عادة بإقياء مفرط مستمر مبكر في الحمل، ولذلك فهو الجواب الصحيح (الحالة التي لا تؤدي إلى صورة الإقياء المفرط الحملي).",
+      "difficulty": "core",
+      "hints": [
+        "Which organ system does the odd one out affect?",
+        "Hepatitis, gastric ulcer and pyelonephritis all cause vomiting."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m08",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "clinical_vignette": true,
+      "question_stem": "A 27-year-old woman at 8 weeks' gestation has moderate nausea and vomiting that is not relieved by dietary measures and emotional support. What is the first-line pharmacological treatment?",
+      "options": [
+        "Pyridoxine (vitamin B6) 25mg every 8 hours",
+        "Prednisolone orally 3 times daily",
+        "Metoclopramide IV every 6 hours",
+        "Doxylamine 25mg alone at night"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "البيريدوكسين (فيتامين ب6) بجرعة 25 ملغ كل 8 ساعات هو الخط الدوائي الأول للغثيان والإقياء الحملي بعد الإجراءات غير الدوائية. البريدنيزولون (كورتيكوستيرويد فموي 3 مرات يومياً) يُحتفظ به للحالات الشديدة المهددة للحياة فقط، والميتوكلوبراميد (مضاد دوبامين) خط لاحق، والدوكسيلامين لا يُعطى منفرداً بل ضمن التوليفة القياسية: بيريدوكسين 10 ملغ + دوكسيلامين 25 ملغ.",
+      "difficulty": "core",
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m09",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "clinical_vignette": true,
+      "question_stem": "A 30-year-old woman admitted with hyperemesis gravidarum continues to vomit despite oral pyridoxine and the pyridoxine–doxylamine combination. Which drug class inhibits gastric motility by blocking dopamine receptors and is the appropriate next antiemetic?",
+      "options": [
+        "Dopamine antagonists such as metoclopramide",
+        "Antihistamines such as doxylamine",
+        "Corticosteroids such as prednisolone",
+        "Herbal ginger 1g per day"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "مضادات الدوبامين مثل الميتوكلوبراميد تثبط حركية المعدة عبر حجب مستقبلات الدوبامين، ولهذا تُستخدم كخط تالٍ لعلاج الغثيان والإقياء الحملي عند فشل البيريدوكسين وتوليفته. الدوكسيلامين مضاد هيستامين ضمن التوليفة الأولى وقد فشل لدى المريضة، والبريدنيزولون للحالات المهددة للحياة فقط، والزنجبيل (1 غرام يومياً) علاج عشري مساعد لا يملك آلية الدوبامين هذه.",
+      "difficulty": "core",
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m10",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "clinical_vignette": true,
+      "question_stem": "A woman with severe hyperemesis gravidarum is admitted with dehydration and ketosis. Which IV fluid regimen matches the lecture's recommendation for daily requirement?",
+      "options": [
+        "Ringer lactate, glucose water or normal saline supplying glucose and Na, K, Cl at about 4–6 liters per day",
+        "Normal saline 500 mL as a single bolus",
+        "Glucose water 20 liters per day",
+        "No IV fluid; oral rehydration only"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "العلاج الوالدي يشمل إعادة إماهة وريدية وتغذية داعمة: محاليل وريدية تمد الجسم بالطاقة (الغلوكوز) والشوارد (صوديوم وبوتاسيوم وكلور)، مثل رينغر اللاكتات (ويحوي أيضاً السكر/اللاكتات والكالسيوم) والماء بالغلوكوز والمحلول الملحي الطبيعي، بمقدار يعادل الحاجة اليومية نحو 4–6 لترات يومياً. أما 500 مل فغير كافية للجفاف المعتدل، و20 لتراً خطورة إفراط مائي، والإماهة الفموية وحدها غير ممكنة مع الإقياء المستمر.",
+      "difficulty": "core",
+      "focus_sections": [
+        4
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m11",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c6",
+      "clinical_vignette": true,
+      "question_stem": "A 31-year-old multigravida at 12 weeks' gestation has refractory hyperemesis gravidarum. Despite IV rehydration, antiemetics and IV thiamine she cannot maintain any oral intake and continues to lose weight. What is the next step in nutritional management?",
+      "options": [
+        "Enteral tube feeding",
+        "Immediate termination of pregnancy",
+        "Increase oral iron supplementation",
+        "Discharge home on ginger 1g per day"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التغذية بالأنبوب المعوي هي الخطوة التالية في الحالات الشديدة المقاوعة للإماهة الوريدية والأدوية، إذ تُوصل التغذية مباشرة إلى الأمعاء للحفاظ على تغذية الأم والجنين. إنهاء الحمل لا يستطب هنا لأن وظائف الكبد سليمة ولا يوجد تنكس دهني كبدي ولا تلف كبدي كلوي (وهما المؤشران الوحيدان)، ومستحضرات الحديد تزيد الغثيان سوءاً بوصفه عامل مهيج، والزنجبيل وحده لا يكفي في هذه المرحلة المتقدمة.",
+      "difficulty": "advanced",
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m12",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c6",
+      "clinical_vignette": true,
+      "question_stem": "A woman with prolonged severe hyperemesis gravidarum develops deranged LFTs with hepatic fatty degeneration and hepatorenal damage that persist despite maximal therapy. What is the indicated management?",
+      "options": [
+        "Termination of pregnancy",
+        "Enteral tube feeding alone",
+        "Prednisolone dose escalation only",
+        "Reassurance and review in 2 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التنكس الدهني الكبدي مع التلف الكبدي الكلوي (الاعتلال الدماغي الكبدي الكلوي) غير المستجيب للعلاج الأقصى هو أحد مؤشري إنهاء الحمل الوحيدين في الإقياء المفرط الحملي، لأن استمرار الحمل عندها يهدد حياة الأم بشكل لا رجعة فيه. التغذية الأنبوبية وحدها أو تكبير جرعة البريدنيزولون لا يعالجان تدهور الكبد والكلى، والطمأنة والمتابعة المتأخرة إهمال خطير لحياة الأم.",
+      "difficulty": "advanced",
+      "hints": [
+        "Which two maternal organ systems are failing?",
+        "The lecture lists exactly two termination indications."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m13",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "clinical_vignette": false,
+      "question_stem": "Which non-pharmacological measure is the one with a specifically quoted dose in the management of nausea and vomiting of pregnancy?",
+      "options": [
+        "Ginger 1g per day",
+        "Doxylamine 25mg daily",
+        "Biscuit after getting out of bed",
+        "Pyridoxine 25mg per day"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الزنجبيل هو العلاج العشري الوحيد المذكور بجرعة محددة في المحاضرة: 1 غرام يومياً، ضمن التدبير غير الدوائي إلى جانب النصائح الغذائية ونمط الحياة والدعم النفسي. الدوكسيلامين 25 ملغ والبيريدوكسين 25 ملغ أدوية صيدلانية لا أعشاب، والبسكويت يُؤكل قبل النهوض من السرير (لا بعده) ضمن نصائح تجنب المعدة الفارغة.",
+      "difficulty": "core",
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L6_nvp_m14",
+      "lecture_id": "obgyn_L6_nvp",
+      "concept_id": "obgyn_L6_nvp_c5",
+      "clinical_vignette": true,
+      "question_stem": "A woman with morning sickness asks how to reduce her early-morning nausea. According to the lecture's dietary advice, what should she do?",
+      "options": [
+        "Eat a biscuit before getting out of bed",
+        "Take her iron tablets first thing on waking",
+        "Drink a large glass of water quickly",
+        "Eat one large fatty breakfast"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النصيحة الغذائية الصحيحة هي تناول بسكويت قبل النهوض من السرير لتفادي المعدة الفارغة، فالجوع من العوامل المؤهجة للغثيان. حبوب الحديد تزيد الغثيان سوءاً (الحديد عامل مهيج)، وشرب كمية كبيرة من الماء دفعة واحدة صعب التحمل (النصيحة شرب كميات صغيرة)، والفطور الدسم الغني بالدهون من الأطعمة الواجب تجنبها (تجنب الدسم والغني والتوابل).",
+      "difficulty": "core",
+      "focus_sections": [
+        1
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L6_nvp_case1",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "First Admission for Hyperemesis Gravidarum in a Primigravida",
+      "scenario": "A 23-year-old primigravida is referred to the emergency obstetrics unit at 9 weeks' gestation with five days of intractable vomiting, inability to keep any food or fluids down, reduced urine output and 6% weight loss. This case walks through the recognition of hyperemesis gravidarum, exclusion of mimics, and the first cycle of hospital management — from laboratory workup to IV rehydration, thiamine protection and antiemetic escalation.",
+      "vignette": {
+        "age": 23,
+        "sex": "female",
+        "chief_complaint": "Intractable vomiting for 5 days with reduced urine output",
+        "history": "Primigravida, 9 weeks by certain LMP. Nausea began at 5 weeks and escalated over the last 5 days; she vomits 8–10 times daily and cannot tolerate oral intake. No fever, no diarrhea, no abdominal pain, no vaginal bleeding, no headache or neck stiffness. Not on any medications or iron supplements. No significant past medical or family history.",
+        "vitals": {
+          "bp": "100/65 mmHg",
+          "hr": "112 bpm",
+          "rr": "18/min",
+          "temp": "36.7 °C",
+          "spo2": "99%"
+        },
+        "exam": "Dry mucous membranes and reduced skin turgor; tachycardic but hemodynamically stable. Abdomen soft, non-tender, no peritonism; uterus approximately 8-week size. No pallor, jaundice or goiter.",
+        "labs": [
+          {
+            "name": "Urine ketones (GUE)",
+            "value": "large",
+            "flag": "critical"
+          },
+          {
+            "name": "Blood urea",
+            "value": "58 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin (CBP)",
+            "value": "14.8 g/dL",
+            "flag": "high"
+          },
+          {
+            "name": "WBC",
+            "value": "12.4 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Potassium (K)",
+            "value": "3.1 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "Sodium (Na)",
+            "value": "134 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "LFT (ALT)",
+            "value": "38 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "TSH",
+            "value": "1.2 mIU/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Obstetric ultrasound: single intrauterine gestational sac with a fetal pole and cardiac activity consistent with 9 weeks; no twin pregnancy, no molar changes."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L6_nvp_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Hyperemesis gravidarum",
+            "Morning sickness (physiological NVP)",
+            "Gastroenteritis",
+            "Thyrotoxicosis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الإقياء المستمر مع الجفاف والكيتوز وفقدان أكثر من 5% من وزن الجسم في بداية الحمل يشير إلى الإقياء المفرط الحملي الذي يُعرَّف بأنه إقياء شديد بما يكفي لتبرير القبول في المستشفى. غثيان الصباح خفيف لا يعطل الحياة اليومية ولا يسبب كيتوزاً، ولا توجد أعراض إسهال أو حمى تنذر بنزلة معدية معوية، وTSH طبيعي يستبعد التسمم الدرقي.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L6_nvp_case1_s2",
+          "prompt": "Which laboratory panel is appropriate at admission?",
+          "options": [
+            "CBP, WBC, blood urea, GUE, LFT, TSH",
+            "Serum hCG and progesterone only",
+            "Coagulation screen and blood cultures",
+            "CA-125 and CEA tumor markers"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "لا يوجد تحليل مخبري نوعي لتشخيص الغثيان والإقياء الحملي؛ تُطلب صورة الدم الكاملة مع الكريات البيض، والبولة الدموية، والتحليل العام للبول بحثاً عن الكيتونات، ووظائف الكبد، وTSH لتقييم درجة الجفاف والمضاعفات واستبعاد السبب الكامن، مع تحاليل نوعية عند الشك بمرض مسبب محدد. قياس hCG والبروجسترون وحده لا يقدّر الجفاف، وتحاليل التخثر وزرع الدم والدلالات الورمية ليست من التقييم الروتيني.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L6_nvp_case1_s3",
+          "prompt": "Which IV regimen matches the daily fluid requirement for her severity?",
+          "options": [
+            "Ringer lactate / glucose water / normal saline supplying glucose and Na, K, Cl at about 4–6 liters per day",
+            "Normal saline 500 mL once daily",
+            "Glucose water 20 liters per day",
+            "No IV fluid; oral rehydration only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخط الأول هو الإماهة الفموية، لكن عند القبول نحتاج إعادة إماهة وريدية وتغذية داعمة: محاليل تمد الجسم بالطاقة (الغلوكوز) والشوارد (صوديوم وبوتاسيوم وكلور) مثل رينغر اللاكتات (ويحوي أيضاً السكر والكالسيوم) والماء بالغلوكوز والمحلول الملحي الطبيعي، بمقدار يعادل الحاجة اليومية نحو 4–6 لترات يومياً. 500 مل غير كافية لجفافها، و20 لتراً إفراط خطير، والإماهة الفموية وحدها غير ممكنة مع الإقياء المستمر.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L6_nvp_case1_s4",
+          "prompt": "Before starting the glucose-containing IV fluids, which vitamin must be infused and why?",
+          "options": [
+            "IV thiamine (or B complex) to prevent Wernicke encephalopathy from B1 deficiency",
+            "Vitamin K to prevent bleeding",
+            "Vitamin B12 for megaloblastic anemia",
+            "Vitamin C to prevent scurvy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "نقص الثيامين (ب1) الناتج عن الإقياء المطول وسوء التغذية قد يؤدي إلى اعتلال فيرنيكي الدماغي، لذا يُعطى الثيامين أو مركب ب وريدياً ضمن التسريب قبل/مع محاليل الغلوكوز. فيتامين ك يُعالج النزف ونقصه مذكور كسبب للإقياء المفرط الحملي لا كوقاية عصبية، وب12 يخص فقر الدم الجزئ الكبير، وفيتامين ج ليس من نواقص هذه الحالة المذكورة.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L6_nvp_case1_s5",
+          "prompt": "After successful rehydration she tolerates oral intake. Which antiemetic and discharge advice package fits the lecture?",
+          "options": [
+            "Pyridoxine 25mg every 8 hours (or pyridoxine 10mg + doxylamine 25mg), with small frequent meals, biscuit before getting out of bed, diluted fruit juice, avoiding fatty/spicy foods and ginger 1g per day",
+            "Prednisolone orally 3 times daily with three large meals",
+            "Metoclopramide IV indefinitely at home",
+            "Stop all food and fluids until symptoms disappear"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخط الدوائي الأول هو البيريدوكسين 25 ملغ كل 8 ساعات أو التوليفة بيريدوكسين 10 ملغ مع دوكسيلامين 25 ملغ، مع نصائح الخروج: شرب كميات صغيرة، سوائل أفضل من الماء كعصير الفاكهة المخفف، وجبات صغيرة متكررة، تجنب المعدة الفارغة (بسكويت قبل النهوض من السرير)، تجنب الأطعمة الدسمة والتوابل، والزنجبيل 1 غرام يومياً مع الدعم النفسي. البريدنيزولون للحالات المهددة للحياة فقط، والميتوكلوبراميد الوريدي لا يستخدم منزلياً إلى أجل غير مسمى، والصيام التام يزيد الأعراض سوءاً.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: إقياء مفرط حملي (HG) عند بكر في الأسبوع التاسع مع جفاف وكيتوز ونقص شوارد وفقدان 6% من وزن الجسم، والحمل وحيد سليم. الدروس المستفادة: الإقياء المفرط الحملي هو أشيع سبب للقبول المشفوي في الثلث الأول؛ لا يوجد تحليل نوعي لتشخيصه بل يُقيَّم الجفاف والمضاعفات بصورة الدم الكاملة والكريات البيض والبولة والتحليل العام للبول ووظائف الكبد وTSH؛ والتدبير هو إعادة إماهة وريدية 4–6 لترات يومياً بمحاليل رينغر اللاكتات أو الماء بالغلوكوز أو المحلول الملحي مع الثيامين الوريدي قبل الغلوكوز للوقاية من اعتلال فيرنيكي، ثم مضادات الإقياء (بيريدوكسين أو توليفته مع الدوكسيلامين) ونصائح غذائية عند الخروج. الخلاصة: التشخيص سريري، والعلاج متدرج، والاعتراف المبكر يمنع التدهور.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L6_nvp_case2",
+      "lecture_id": "obgyn_L6_nvp",
+      "title": "Severe NVP in a Twin Pregnancy — Escalation up to Enteral Feeding",
+      "scenario": "A 28-year-old G2P1 at 10 weeks' gestation presents with worsening nausea and vomiting unresponsive to outpatient dietary measures and oral pyridoxine. She has lost 5% of her body weight and has large ketonuria. Ultrasound reveals a twin intrauterine pregnancy — the clue that explains the severity of her symptoms and frames the escalation of care, from IV rehydration and antiemetic escalation to enteral tube feeding and the rare circumstances that would justify termination.",
+      "vignette": {
+        "age": 28,
+        "sex": "female",
+        "chief_complaint": "Severe vomiting for 2 weeks despite dietary measures and pyridoxine",
+        "history": "Background: G2P1, now 10 weeks by LMP. Nausea began at 5 weeks and escalated; she was started on pyridoxine 25mg every 8 hours at a clinic with only limited relief, and has stopped her prenatal iron because it worsens the vomiting. No bleeding, no fever, no diarrhea, no abdominal pain. Her first pregnancy was complicated only by mild morning sickness.",
+        "vitals": {
+          "bp": "105/70 mmHg",
+          "hr": "104 bpm",
+          "rr": "18/min",
+          "temp": "36.9 °C",
+          "spo2": "98%"
+        },
+        "exam": "Moderately dry mucous membranes; soft non-tender abdomen with uterus larger than expected for dates; no goiter, no pallor or jaundice.",
+        "labs": [
+          {
+            "name": "Urine ketones (GUE)",
+            "value": "large",
+            "flag": "critical"
+          },
+          {
+            "name": "Blood urea",
+            "value": "52 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin (CBP)",
+            "value": "14.1 g/dL",
+            "flag": "high"
+          },
+          {
+            "name": "WBC",
+            "value": "11.8 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Potassium (K)",
+            "value": "3.3 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "LFT (ALT)",
+            "value": "29 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "TSH",
+            "value": "0.9 mIU/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Obstetric ultrasound: dichorionic diamniotic twin intrauterine pregnancy, both fetuses viable at 10 weeks; no molar changes — the uterus larger than dates is explained by twinning."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L6_nvp_case2_s1",
+          "prompt": "Why are her vomiting symptoms this severe at 10 weeks?",
+          "options": [
+            "Twin pregnancy causes markedly increased hCG levels",
+            "Twin pregnancy halves hCG production",
+            "The symptoms indicate a chest infection",
+            "The symptoms are purely psychological"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ذروة hCG بين الأسبوع 8 و12 تتزامن مع ذروة الغثيان والإقياء الحملي، ويرتفع hCG بشكل أكبر في الحمل المتعدد (وكذلك الحمل العنقودي) فيفسر ذلك شدة الأعراض مقارنة بحملها الأول الذي تظاهر بغثيان صباح خفيف. لا ينقص التوائم إنتاج hCG بل يضاعفه، ولا توجد علامات خمج صدري، والعوامل النفسية مساهمة فقط وليست تفسيراً كاملاً.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L6_nvp_case2_s2",
+          "prompt": "She is admitted. What is the priority in management alongside antiemetics?",
+          "options": [
+            "IV rehydration about 4–6 liters per day with glucose and electrolytes plus IV thiamine/B complex",
+            "Immediate termination of pregnancy",
+            "Oral iron and antibiotics",
+            "Corticosteroids as first-line therapy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أهداف التدبير هي إعادة الإماهة وتقليل الأخطار عن الأم والجنين؛ يبدأ العلاج بالإماهة الفموية ثم الوريدية بمحاليل توفر الغلوكوز والشوارد (رينغر اللاكتات، الماء بالغلوكوز، المحلول الملحي) بواقع 4–6 لترات يومياً مع الثيامين أو مركب ب الوريدي. لا يستطب إنهاء الحمل إطلاقاً في هذه المرحلة (وظائف كبد طبيعية)، والحديد يزيد الإقياء سوءاً، والكورتيكوستيرويدات ليست الخط الأول بل الأخير للحالات المهددة للحياة.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L6_nvp_case2_s3",
+          "prompt": "Vomiting persists on IV fluids. Which antiemetic combination is the standard next step after pyridoxine alone failed?",
+          "options": [
+            "Pyridoxine 10mg + doxylamine 25mg (antihistamine)",
+            "Prednisolone orally 3 times daily",
+            "Stopping all antiemetics",
+            "Ginger 10g per day"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التوليفة القياسية هي بيريدوكسين 10 ملغ مع دوكسيلامين 25 ملغ (مضاد هيستامين)؛ وإن لزم لاحقاً يُضاف مضاد دوبامين مثل الميتوكلوبراميد الذي يثبط حركية المعدة بحجب مستقبلات الدوبامين. البريدنيزولون يُحتفظ به للحالات الشديدة المهددة للحياة فقط، وإيقاف كل الأدوية تراجع غير مبرر، وجرعة الزنجبيل هي 1 غرام يومياً لا 10 غرامات.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L6_nvp_case2_s4",
+          "prompt": "Ten days on: despite IV fluids, thiamine, and stepped antiemetics she still cannot maintain oral intake and keeps losing weight. What is the next nutritional step?",
+          "options": [
+            "Enteral tube feeding",
+            "Immediate termination of pregnancy",
+            "Discharge with iron supplementation",
+            "Increase ginger to 5g per day"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التغذية بالأنبوب المعوي هي الخطوة التالية في الحالات الشديدة المقاوعة للإماهة الوريدية والأدوية، للحفاظ على تغذية الأم والجنينين. لا يُلجأ إلى إنهاء الحمل لأن مؤشريه الوحيدين (التنكس الدهني الكبدي والاعتلال الدماغي الكبدي الكلوي) غير موجودين لديها ووظائف الكبد طبيعية؛ ومستحضرات الحديد تهيج الغثيان، ورفع جرعة الزنجبيل إلى 5 غرامات ليس من التوصيات.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L6_nvp_case2_s5",
+          "prompt": "During follow-up, which two findings would constitute an indication for termination of pregnancy?",
+          "options": [
+            "Hepatic fatty degeneration and hepatorenal encephalopathy (hepatorenal damage)",
+            "Ketosis and loss of 5% of body weight",
+            "Mild anemia and fatigue",
+            "Positive Helicobacter pylori testing"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مؤشرا إنهاء الحمل الوحيدان المذكوران في المحاضرة هما التنكس الدهني الكبدي والاعتلال الدماغي الكبدي الكلوي (التلف الكبدي الكلوي)؛ أما الكيتوز وفقدان 5% من الوزن وفقر الدم الخفيف فتُعالج بالإماهة والمضادات والدعم الغذائي، وإيجابية الملوية البوابية سبب قابل للعلاج لا يستوجب إنهاء الحمل.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: إقياء مفرط حملي شديد عند امرأة حامل بتوأم ثنائي المشيمة في الأسبوع العاشر؛ ارتفاع hCG في الحمل المتعدد (وذروته بين الأسبوع 8 و12) يفسر شدة الأعراض مقارنة بحملها السابق. الدروس المستفادة: الحمل المتعدد والحمل العنقودي من أهم أسباب شدة الغثيان والإقياء الحملي؛ والتدبير متدرج: نصائح غذائية ودعم نفسي وزنجبيل 1 غرام يومياً، ثم بيريدوكسين 25 ملغ كل 8 ساعات أو توليفته مع الدوكسيلامين 25 ملغ، ثم ميتوكلوبراميد، ثم إماهة وريدية 4–6 لترات يومياً مع ثيامين وريدي، ثم تغذية أنبوبية معوية للحالات المقاوعة، وإنهاء الحمل فقط عند التنكس الدهني الكبدي أو الاعتلال الدماغي الكبدي الكلوي. الخلاصة: اربط شدة الأعراض بمستوى hCG، وتدرّج في العلاج قبل التفكير بالحلول الأخيرة.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

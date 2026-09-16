@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- المفهوم 3: صليب طبي + كوكبة التخصصات العشرة -->
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3C6E"/>
+      <stop offset="1" stop-color="#142C53"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg3)"/>
+  <!-- حلقات مدارية خفيفة -->
+  <circle cx="256" cy="256" r="176" stroke="#E9F0FA" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="256" cy="256" r="146" stroke="#E9F0FA" stroke-opacity="0.14" stroke-width="2"/>
+  <!-- صليب طبي دائري -->
+  <path d="M226 136 H286 V226 H376 V286 H286 V376 H226 V286 H136 V226 H226 Z"
+        fill="#E9F0FA" fill-opacity="0.95"/>
+  <!-- كوكبة التخصصات — ألوان tokens الفعلية للـ 10 تخصصات -->
+  <g>
+    <circle cx="256" cy="80"  r="14" fill="#E14B4B"/>
+    <circle cx="343" cy="116" r="14" fill="#1E96C8"/>
+    <circle cx="404" cy="188" r="14" fill="#C77F1E"/>
+    <circle cx="426" cy="274" r="14" fill="#5F9E3E"/>
+    <circle cx="404" cy="360" r="14" fill="#8B5CC9"/>
+    <circle cx="343" cy="432" r="14" fill="#B33939"/>
+    <circle cx="256" cy="468" r="14" fill="#F28436"/>
+    <circle cx="169" cy="432" r="14" fill="#1FA8A0"/>
+    <circle cx="108" cy="360" r="14" fill="#4A67C4"/>
+    <circle cx="86"  cy="274" r="14" fill="#D4568D"/>
+  </g>
+  <!-- نقطة ذهبية في مركز الصليب -->
+  <circle cx="256" cy="256" r="26" fill="#E8A33D"/>
+  <circle cx="256" cy="256" r="12" fill="#3D2A08"/>
+</svg>

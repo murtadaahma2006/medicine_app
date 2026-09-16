@@ -9,4 +9,6 @@
     <color name="widget_due_high">#E46B6B</color>
     <color name="widget_accent">#3E6DB5</color>
     <color name="widget_track">#232E42</color>
+    <!-- خلفية «لؤلؤة اليوم» — كهرماني داكن مكيف. -->
+    <color name="widget_pearl_bg">#33291A</color>
 </resources>

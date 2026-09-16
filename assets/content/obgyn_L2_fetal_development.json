@@ -1,0 +1,1336 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L2_fetal_development",
+    "specialty": "obgyn",
+    "title": "Fetal Development: From Fertilization to Fetal Circulation",
+    "module": "maternal_fetal_medicine",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L2 Fetal Development (2).pdf",
+      "page_count": 24
+    },
+    "tags": [
+      "fertilization",
+      "pre-embryonic development",
+      "embryonic period",
+      "organogenesis",
+      "implantation",
+      "fetal circulation",
+      "foramen ovale",
+      "ductus arteriosus",
+      "ductus venosus",
+      "teratogenesis"
+    ],
+    "order_index": 1,
+    "golden_tip": [
+      "Exam trap: weeks 3–8 are the embryonic period (organogenesis) — the window of MAXIMUM teratogenic vulnerability. Drugs and infections that cross the placenta, such as rubella virus, act in this window and cause fetal abnormalities.",
+      "Fetal hemoglobin is chemically slightly different, present at a concentration about 50 % greater, and carries 20–30% more O2 than maternal hemoglobin at the same oxygen partial pressure — memorize all three numbers.",
+      "At birth, cessation of placental flow drops right atrial pressure and closes the foramen ovale; the ductus arteriosus closes almost immediately. Patent ductus arteriosus or foramen ovale (each ~8% of congenital heart defects) mixes oxygen-rich with oxygen-poor blood → cyanosis."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L2_fetal_development_c1",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "Overview of Prenatal Development and Fertilization",
+      "summary_ar": "يقدّم هذا المفهوم أهداف محاضرة تطور الجنين وتصنيف مراحل التطور قبل الولادة: المرحلة الجرثومية (ما قبل الجنينية) من الأسبوع 0 إلى 2 وتمتد من الإخصاب حتى الانغراس، والمرحلة الجنينية المبكرة من الأسبوع 3 إلى 8 التي تتشكل فيها الأجهزة العصبية والدورانية والتنفسية، ثم المرحلة الجنينية المتأخرة من الأسبوع 9 حتى الولادة حيث تُصقل الأعضاء والأجهزة. كما يعرّف الإخصاب الذي يحدث في الجزء الأمبولي من قناة فالوب وينتهي بتكوين الزيجوت الذي ينقسم بدوره ليشكّل التوتية المكوّنة من 16 خلية.",
+      "sections": [
+        {
+          "heading": "Lecture Objectives and the Three Stages of Prenatal Development",
+          "body_text": "This lecture, prepared by **Dr. Zaineb Al-Yasin**, sets three learning objectives: at the end of the lecture students will be able to **(1) define fertilization**, **(2) classify the stages of fetal development**, and **(3) demonstrate fetal circulation**. Among the deck's opening visual elements, the title slide displays the lecture title — Fetal Development — in large red font, centered, with the author's name below; the recurring logo graphic (a vertical black line beside a grid of colored dots in dark blue, teal, green, yellow and light purple/white) decorates the top right corner of the slides.\n\nDevelopment before birth — the stages of prenatal or fetal development — is classified into **three chronological stages**, and the boundaries between them are classic examination material:\n\n- **Germinal period (pre-embryonic stage): 0–2 weeks** — it extends from fertilization through the second week of development, i.e. from the **zygote until implantation**.\n- **Embryonic period: 3–8 weeks** — during this window the **nervous, circulatory, and respiratory systems are formed** (this is the organogenesis stage, detailed in a later concept).\n- **Fetal period: 9 weeks – birth** — the **organs and systems are refined** and progressively mature until delivery.\n\nA quick memory anchor: the first two weeks build and implant the conceptus (zygote → morula → blastocyst → implantation), weeks 3–8 build the organs (the period of maximum vulnerability to teratogens such as drugs and rubella virus), and from week 9 onward the fetus grows and refines what has already been built.",
+          "key_points": [
+            "Germinal (pre-embryonic) stage = 0–2 weeks: fertilization → zygote → implantation.",
+            "Embryonic period = weeks 3–8: the nervous, circulatory, and respiratory systems are formed.",
+            "Fetal period = 9 weeks to birth: the organs and systems are refined.",
+            "Lecture objectives: define fertilization, classify the stages of fetal development, demonstrate fetal circulation."
+          ],
+          "check": {
+            "prompt": "A conceptus at 6 weeks of development is in which stage of prenatal development?",
+            "options": [
+              "Germinal (pre-embryonic) stage, 0–2 weeks",
+              "Embryonic period, weeks 3–8",
+              "Fetal period, 9 weeks to birth",
+              "Blastocyst stage"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الإجابة الصحيحة: الأسبوع السادس يقع ضمن المرحلة الجنينية المبكرة (3–8 أسابيع) التي تتشكل خلالها الأجهزة العصبية والدورانية والتنفسية؛ فالمرحلة الجرثومية تنتهي بنهاية الأسبوع الثاني بعد اكتمال الانغراس، وتبدأ المرحلة الجنينية المتأخرة من الأسبوع التاسع حتى الولادة."
+          }
+        },
+        {
+          "heading": "Fertilization: Definition, Site, and Formation of the Zygote and Morula",
+          "body_text": "**Fertilization occurs in the ampulla part of the fallopian tube.** It is defined as the procession of events that:\n\n- **Begins** when a **spermatozoon makes contact with a secondary oocyte**; and\n- **Ends** with the **intermingling of maternal and paternal chromosomes at metaphase of the first mitotic division**.\n\nThe result is a **single cell called a zygote** — the starting point of the new organism. The zygote immediately starts to divide (cleavage) and forms the **morula, a ball of 16 cells**; the morula divides into **cells that form the fetal structures**. On the lecture diagrams the morula is drawn as a **solid ball of cells (16–32 cells)** traveling from the fallopian tube toward the uterus, whereas the later blastocyst is drawn as a **hollow ball of cells**.",
+          "key_points": [
+            "Site of fertilization: the ampulla of the fallopian tube.",
+            "Fertilization begins at sperm–secondary oocyte contact and ends with intermingling of maternal and paternal chromosomes at metaphase of the first mitotic division.",
+            "The end-product of fertilization is a single cell: the zygote.",
+            "Morula = a ball of 16 cells that divides into cells forming the fetal structures."
+          ]
+        },
+        {
+          "heading": "The Journey from Ovary to Uterus: Reading the Fertilization–Implantation Diagrams",
+          "body_text": "The lecture diagrams follow the female reproductive tract and early embryonic development from ovulation to implantation. Anatomical structures labeled on the schematic: the **ovary** (shown at the bottom right of the diagram) containing **multiple follicles at various stages of development**, the **fallopian tube** ending in its **fimbriated (fringed) opening** that captures the shed ovum, and the **uterus** with its thick muscular wall (**myometrium**), inner lining (**endometrium**) and uterine cavity. Blue arrows indicate the direction of movement from the ovary, through the fallopian tube, and into the uterine cavity.\n\nA magnified inset shows the moment of **fertilization**: the **secondary oocyte** is surrounded by the **zona pellucida** and the **corona radiata**; **multiple sperm cells are shown approaching and penetrating the outer layers of the egg.** One sperm is depicted entering the egg's cytoplasm, and the oocyte contains a visible nucleus (germinal vesicle).\n\nThe developmental sequence shown on the fertilization-to-implantation diagram, in strict order (an arrow points upward and forward between consecutive stages):\n\n- **Ovum shed from the ovary** — an arrow points from the ovary to the fallopian tube indicating the release of the egg.\n- **Sperm fertilising ovum** (fertilization) — an arrow points upward from this stage.\n- **Zygote dividing by mitosis** — a circular cell containing four smaller cells (blastomeres). Location: within the fallopian tube.\n- **Morula** — a solid ball of 16–32 cells. Location: moving from the fallopian tube toward the uterus.\n- **Blastocyst** — a hollow ball of cells with an outer layer of cells (trophoblast), an inner cell mass clustered on one side, and a fluid-filled cavity (blastocele). Location: within the uterine cavity.\n- **Blastocyst implanted in the wall of the uterus** — embedded within the thick lining of the uterine wall.",
+          "key_points": [
+            "Ovum → ampulla (fertilization) → zygote dividing by mitosis → morula (solid ball, 16–32 cells) → blastocyst (hollow ball) in the uterus → implantation.",
+            "The oocyte is surrounded by the zona pellucida and corona radiata; one sperm enters the cytoplasm.",
+            "The uterus shows a myometrium (muscular wall) and endometrium (inner lining)."
+          ],
+          "check": {
+            "prompt": "How many cells make up the morula?",
+            "options": [
+              "About 8 cells",
+              "A ball of 16 cells",
+              "About 64 cells",
+              "About 200 cells"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التوتية كتلة صلبة مكوّنة من 16 خلية ناتجة عن انقسامات الزيجوت، وقد تُرسم في المخططات ككرة صلبة من 16–32 خلية أثناء انتقالها من قناة فالوب باتجاه الرحم حيث تتحول لاحقًا إلى الكيس الأريمي المجوّف."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Fertilization",
+          "definition_ar": "الإخصاب: سلسلة الأحداث التي تبدأ بملامسة الحيوان المنوي للبويضة الثانوية وتنتهي باختلاط الكروموسومات الأمومية والأبوية في الطور الاستوائي للانقسام الخلوي الأول، وينتج عنها خلية واحدة هي الزيجوت."
+        },
+        {
+          "term": "Ampulla",
+          "definition_ar": "الأمبولة: الجزء الواسع من قناة فالوب القريب من المبيض، وهي الموقع الطبيعي للإخصاب."
+        },
+        {
+          "term": "Zygote",
+          "definition_ar": "الزيجوت: الخلية الوحيدة الناتجة عن الإخصاب، وتبدأ بالانقسام لتكوين التوتية."
+        },
+        {
+          "term": "Morula",
+          "definition_ar": "التوتية: كتلة صلبة من 16 خلية ناتجة عن انقسام الزيجوت، وتنقسم إلى خلايا تشكّل البنى الجنينية."
+        },
+        {
+          "term": "Secondary oocyte",
+          "definition_ar": "البويضة الثانوية: البويضة المنطلقة من المبيض عند الإباضة والتي يتم الإخصاب أثناءها."
+        },
+        {
+          "term": "Zona pellucida",
+          "definition_ar": "المنطقة الشفافة: الغلاف البروتيني السكري المحيط بالبويضة والذي يخترقه الحيوان المنوي، ثم يترقق ويختفي عند فقس الكيس الأريمي قبل الانغراس."
+        },
+        {
+          "term": "Corona radiata",
+          "definition_ar": "التاج الشعاعي: طبقة الخلايا الحبيبية المحيطة بالبويضة والتي يخترقها الحيوان المنوي للوصول إلى المنطقة الشفافة."
+        },
+        {
+          "term": "Blastomere",
+          "definition_ar": "الخلية البوغية: إحدى الخلايا الناتجة عن الانقسامات المبكرة للزيجوت، ويتراكم السائل بينها لاحقًا لتشكّل الكيس الأريمي."
+        },
+        {
+          "term": "Myometrium",
+          "definition_ar": "العضلية الرحمية: الطبقة العضلية السميكة في جدار الرحم الظاهرة في مخططات المحاضرة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L2_fetal_development_c2",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "Blastocyst Formation and Implantation",
+      "summary_ar": "يشرح هذا المفهوم تشكّل الكيس الأريمي: بعد دخول التوتية إلى الرحم يتراكم السائل بين الخلايا البوغية فتتشكل تجويف مميز للكيس، وتتمدد المنطقة الشفافة حتى يفقس منها الكيس الناضج. تتمايز خلاياه إلى الأرومة الغاذية المنبسطة الخارجية التي تشكل مساهمة الجنين في المشيمة، والكتلة الخلوية الداخلية (الجنينية) التي تكوّن جسم المولود. ثم يفصّل الانغراس في بطانة الرحم خلال الطور الإفرازي حوالي اليوم السادس، وتمايز الأرومة الغاذية إلى طبقتين تنتج الخارجية منهما هرمون hCG كأول دليل هرموني على الانغراس، مع بدء الدوران الرحمي المشيمي البدائي بنهاية الأسبوع الثاني.",
+      "sections": [
+        {
+          "heading": "Formation of the Blastocyst: Trophoblast and Inner Cell Mass",
+          "body_text": "When the morula enters the uterus, **fluid starts to accumulate between its blastomeres**. The fluid-filled spaces run together, forming a relatively large **fluid filled cavity**. At the point when this cavity becomes recognizable, the organism is called a **blastocyst**. Two populations of cells then define it:\n\n- **Trophoblast** — the outer cells of the blastocyst, especially those around the blastocyst cavity, assume a flattened shape. These flattened cells of the exterior blastocyst become **the embryo's contribution to the placenta and other supporting structures**.\n- **Inner cell mass (embryoblast)** — a group of cells on one side of the blastocyst that **project inside into the blastocyst cavity**; the progeny of the embryoblast **form the body of the new offspring**.\n\nThe slide displays a three-part diagram (**Formation of the Blastocyst**, labeled A, B, and C) illustrating the sequential stages of blastocyst formation:\n\n- **Figure A — early blastocyst.** Structure: a spherical cellular structure. Labels: the **zona pellucida** (the outer protective layer surrounding the whole structure), the **inner cell mass** as a dense cluster of cells located at one pole (the top), and a **small blastocoele** (fluid-filled cavity) beginning to form at the opposite pole. Visual details: the blastocoele is relatively small compared to the overall cell volume. The cells appear tightly packed around the cavity.\n- **Figure B — expanding blastocyst.** An enlarged spherical structure compared to Figure A; the **blastocoele grows dramatically** and occupies the majority of the internal volume; the zona pellucida appears thinner than in Figure A due to the expansion of the internal contents. The inner cell mass remains a distinct cluster at its pole, still appearing as a separate group of cells.\n- **Figure C — hatched (mature) blastocyst.** The blastocyst structure is a large, thin-walled sphere; the **zona pellucida is absent**, indicating the **hatching** process; the **trophoblast** forms a very thin, single layer of flattened cells as the outer wall; the **thickened inner cell mass** is attached to the inner surface of the trophoblast wall around the large central **blastocoele**; the inner cell mass is clearly differentiated from the trophoblast, appearing as a clump of larger, rounder cells.\n\nSummary of the components identified in the diagram: the zona pellucida is present in A and B and absent in C; the inner cell mass is present in all three stages and becomes more defined; the blastocoele increases dramatically in size from A to C; the trophoblast forms the outer wall — explicitly labeled in stage C, though implied as the outer cell layer in A and B as well.",
+          "key_points": [
+            "Blastocyst = the conceptus once the fluid-filled cavity becomes recognizable (fluid accumulating between blastomeres after the morula enters the uterus).",
+            "Trophoblast (flattened outer cells) → the embryo's contribution to the placenta and other supporting structures.",
+            "Inner cell mass / embryoblast → forms the body of the new offspring.",
+            "Zona pellucida: present in the early and expanding blastocyst, absent after hatching.",
+            "Diagram A→B→C: blastocoele enlarges, zona pellucida thins, then hatching occurs."
+          ]
+        },
+        {
+          "heading": "Implantation: Timing, Site, and Trophoblast Differentiation",
+          "body_text": "**The uterus at the time of implantation is in the secretory phase**, and the blastocyst **implants in the endometrium along the anterior or posterior wall about the sixth day** — the lecture brackets implantation between the **7th and 10th day**.\n\nThe image displays a blastocyst in the process of implanting — a cross-sectional view of the **uterine wall** during the process of implantation, in which the blastocyst shown is in **close apposition to the endometrial epithelium**, the initial stage of implantation (**apposition and adhesion**). On the overview diagram, the implantation inset likewise shows a blastocyst embedding into the endometrial lining. Its inner cell mass (which will become the embryo) and its outer layer of cells (trophoblast) interact with the maternal endometrium to establish pregnancy. Each label is marked on the slide by a **red dot with a leader line** — the labels identify the endometrium, the inner cell mass (embryoblast), the trophoblast, and the blastocyst cavity (blastocoele). In the upper right corner of the figure, a small grid of colored dots (dark blue, teal, green-yellow, light grey) acts as a color palette/legend for the diagram's components. Key spatial relationships:\n\n- The **endometrium** is drawn as a layer of **yellow, columnar epithelial cells** with distinct black nuclei. Above it, the uterine lumen contains pale secretions with secretory vesicles or glandular openings (pink borders, red contents).\n- The **inner cell mass (embryoblast)** is a cluster of cells (drawn green) positioned internally against one side of the blastocyst wall — the **embryonic pole** — and is **oriented toward the endometrium**.\n- The **trophoblast** is the **outer single layer of cells surrounding the entire structure** and **forms the interface between the blastocyst and the maternal tissue**.\n- The **blastocyst cavity (blastocoele)** is the large fluid-filled internal space.\n\nAs implantation proceeds, **the trophoblast differentiates into two layers**:\n\n- **Cytotrophoblast** — the **inner, actively proliferating layer**.\n- **Syncytiotrophoblast** — the **outer layer, which erodes maternal tissues**.",
+          "key_points": [
+            "Implantation occurs in a secretory-phase endometrium, along the anterior or posterior wall, about the 6th day (between the 7th and 10th day).",
+            "Cytotrophoblast = inner, actively proliferating trophoblast layer.",
+            "Syncytiotrophoblast = outer layer that erodes maternal tissues.",
+            "At implantation the embryonic pole (inner cell mass) faces the endometrium; apposition and adhesion come first."
+          ],
+          "check": {
+            "prompt": "Which trophoblast layer erodes maternal tissues and produces hCG?",
+            "options": [
+              "Cytotrophoblast — the inner layer",
+              "Syncytiotrophoblast — the outer layer",
+              "Inner cell mass (embryoblast)",
+              "Blastocoele lining cells"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الأرومة الغاذية المندمجة هي الطبقة الخارجية التي تُذيب الأنسجة الأمومية وتفرز هرمون الغونادوتروبين المشيمائي البشري hCG، بينما الأرومة الغاذية الخلوية طبقة داخلية نشطة الانقسام، والكتلة الخلوية الداخلية تكوّن جسم الجنين لا المشيمة."
+          }
+        },
+        {
+          "heading": "hCG: First Hormonal Evidence of Implantation, and Early Placental Circulation",
+          "body_text": "**The syncytiotrophoblast produces human chorionic gonadotropin (hCG)** — the hormone detected by every pregnancy test. The **first hormonal evidence of implantation (the appearance of hCG) occurred on 8, 9, or 10 days after ovulation**; the **earliest appearance was 6 days and the latest 12 days** after ovulation.\n\nThe following steps build the early circulation:\n\n- **By day 9, lacunae develop in the syncytiotrophoblast.**\n- Subsequently, **maternal sinusoids are eroded by the syncytiotrophoblast**, and **maternal blood enters the lacunar network**.\n- **By the end of the second week, a primitive uteroplacental circulation begins.**\n- Consequently, **the placenta is formed in the second week after ovulation**.",
+          "key_points": [
+            "hCG is produced by the syncytiotrophoblast.",
+            "First hormonal evidence of implantation (hCG appearance): 8, 9, or 10 days after ovulation (earliest 6 days, latest 12 days).",
+            "Day 9: lacunae develop in the syncytiotrophoblast; maternal sinusoids are then eroded and maternal blood enters the lacunar network.",
+            "By the end of the second week a primitive uteroplacental circulation begins; the placenta is formed in the second week after ovulation."
+          ],
+          "check": {
+            "prompt": "When does the first hormonal evidence of implantation (appearance of hCG) occur after ovulation?",
+            "options": [
+              "On 8, 9, or 10 days after ovulation (earliest 6, latest 12)",
+              "On days 2–3 after ovulation",
+              "Only after 6 completed weeks",
+              "At the moment of fertilization"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "أول دليل هرموني على الانغراس هو ظهور hCG الذي سُجّل في اليوم الثامن أو التاسع أو العاشر بعد الإباضة، مع أقرب ظهور في اليوم السادس وأحدث في اليوم الثاني عشر؛ فالانغراس نفسه يبدأ حوالي اليوم السادس إلى العاشر ولا يمكن كشف الهرمون قبله."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Blastocyst",
+          "definition_ar": "الكيس الأريمي: الكتلة الخلوية بعد دخولها الرحم وتراكم السائل بين خلاياها فيتشكل تجويف مميز؛ يتألف من الأرومة الغاذية والكتلة الخلوية الداخلية."
+        },
+        {
+          "term": "Trophoblast",
+          "definition_ar": "الأرومة الغاذية: طبقة الخلايا الخارجية المنبسطة في الكيس الأريمي، وتشكّل مساهمة الجنين في المشيمة والبنى الداعمة الأخرى."
+        },
+        {
+          "term": "Inner cell mass (embryoblast)",
+          "definition_ar": "الكتلة الخلوية الداخلية (الجنينية): مجموعة الخلايا الناتئة داخل تجويف الكيس الأريمي عند القطب الجنيني، وذريتها تكوّن جسم المولود."
+        },
+        {
+          "term": "Cytotrophoblast",
+          "definition_ar": "الأرومة الغاذية الخلوية: الطبقة الداخلية من الأرومة الغاذية، وهي طبقة نشطة الانقسام والتكاثر."
+        },
+        {
+          "term": "Syncytiotrophoblast",
+          "definition_ar": "الأرومة الغاذية المندمجة: الطبقة الخارجية التي تُذيب الأنسجة الأمومية وتفرز هرمون الغونادوتروبين المشيمائي البشري hCG."
+        },
+        {
+          "term": "hCG",
+          "definition_ar": "الغونادوتروبين المشيمائي البشري: هرمون تفرزه الأرومة الغاذية المندمجة، وأول دليل هرموني على الانغراس يظهر بعد 8–10 أيام من الإباضة."
+        },
+        {
+          "term": "Implantation",
+          "definition_ar": "الانغراس: تعشيش الكيس الأريمي في بطانة الرحم (الطور الإفرازي) على الجدار الأمامي أو الخلفي حوالي اليوم السادس إلى العاشر."
+        },
+        {
+          "term": "Lacunae",
+          "definition_ar": "الفراغات المشيمية: تجاويف تتشكل في الأرومة الغاذية المندمجة بحلول اليوم التاسع، ويدخلها دم الأم بعد تآكل الجيوب الأمومية."
+        },
+        {
+          "term": "Blastocoele",
+          "definition_ar": "التجويف الأريمي: التجويف المملوء بالسائل داخل الكيس الأريمي، ويتسع تدريجيًا من المرحلة المبكرة حتى الفقس."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L2_fetal_development_c3",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "The Embryonic Period (Weeks 3–8): Gastrulation, Organogenesis, and Teratogenic Vulnerability",
+      "summary_ar": "يغطي هذا المفهوم أحداث الأسبوع الثالث حتى الثامن: تشكّل القرص الجنيني ثنائي الصفائح من الكتلة الخلوية الداخلية، ثم المعيدة (Gastrulation) بوصفها الحدث الأبرز في الأسبوع الثالث والتي تؤسس الطبقات الجرثومية الثلاث، وتشكّل الكيس المحّي المسؤول عن تبادل المستقلبات قبل وجود المشيمة. ثم يعرض بداية تكوّن الأعضاء في الأسبوع الرابع حيث يظهر القلب البدائي أولًا مع نشاطه القلبي في اليوم 22، ويؤكد أن هذه الفترة هي فترة أقصى حساسية للمشوهات كالأدوية وفيروس الحصبة الألمانية العابرة للمشيمة.",
+      "sections": [
+        {
+          "heading": "Week 3: The Bilaminar Germ Disk, Gastrulation, and the Yolk Sac",
+          "body_text": "During the **third week** of gestation, two events define the embryo:\n\n- **The inner cell mass (embryoblast) forms the bilaminar germ disk.**\n- **Gastrulation** — the **most characteristic event occurring during the third week of gestation** — is the process that **establishes all three germ layers (ectoderm, mesoderm, and endoderm) in the embryo**.\n\nThe **yolk sac** also forms in the third week. It is **important for the exchange of metabolites between the mother and the embryo at a time when there is no placenta** yet. Its **life span is short**: the yolk sac reaches **full development at 32 days** and **starts degeneration by the end of the 16th week**.",
+          "key_points": [
+            "Week 3 hallmark: gastrulation — establishes all three germ layers (ectoderm, mesoderm, endoderm).",
+            "The embryoblast forms the bilaminar germ disk.",
+            "Yolk sac: exchanges metabolites between mother and embryo before the placenta exists.",
+            "Yolk sac full development at 32 days; degeneration begins by the end of the 16th week."
+          ]
+        },
+        {
+          "heading": "Week 4: Organogenesis Begins — the Primitive Heart Beats at Day 22",
+          "body_text": "The **fourth week** launches **organogenesis**:\n\n1. **At this stage organogenesis starts.**\n2. **The first organ to appear is the primitive heart**, and **cardiac activity is present at 22 days** — long before many women know they are pregnant, which is why embryonic cardiac activity is demonstrable on early ultrasound.\n3. **Development of the nervous system** proceeds.\n4. **The respiratory system appears as segmentation of the foregut**, and the **lung buds are evident at the end of the 4th week**.",
+          "key_points": [
+            "Organogenesis starts in week 4.",
+            "First organ to appear: the primitive heart; cardiac activity at 22 days (day 22).",
+            "The respiratory system appears as segmentation of the foregut.",
+            "Lung buds are evident at the end of the 4th week."
+          ],
+          "check": {
+            "prompt": "What is the first organ to appear during organogenesis, and when is its cardiac activity detectable?",
+            "options": [
+              "The primitive heart — cardiac activity at 22 days",
+              "The lung buds — at 22 days",
+              "The primitive heart — only at 12 weeks",
+              "The neural system — before the heart"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "القلب البدائي هو أول عضو يظهر مع بدء تكوّن الأعضاء في الأسبوع الرابع، ويظهر نشاطه القلبي في اليوم 22، بينما تظهر براعم الرئتين بنهاية الأسبوع الرابع كنتيجة لتقسّم المعي الأمامي، أما الجهاز العصبي فيتطور خلال الأسبوع نفسه لكنه ليس أول عضو."
+          }
+        },
+        {
+          "heading": "Week 5 Onward: Human Form, Sex Differentiation, and Teratogenic Vulnerability",
+          "body_text": "By the **fifth week** the embryo **begins to look more like a human**:\n\n- **Genital ridges may be seen** by this time.\n- There is **complete formation of the urinary system**.\n- **Paired limb buds are evident**.\n- **Sex differentiation usually occurs between 8 and 12 weeks.**\n\n**The key clinical message of the embryonic period:** during this important period (**weeks 3–8**), **drugs and infections that can cross the placenta — such as rubella virus — can have an effect on fetal development and lead to fetal abnormalities**. Knowing which week of organogenesis the embryo has reached is therefore the backbone of teratogenic risk counseling in early antenatal care.",
+          "key_points": [
+            "Week 5: the embryo looks more human; genital ridges appear, urinary system completes, paired limb buds are evident.",
+            "Sex differentiation usually occurs between 8 and 12 weeks.",
+            "During the embryonic period (weeks 3–8), placenta-crossing drugs and infections (e.g. rubella virus) can cause fetal abnormalities.",
+            "The embryonic period is the window of maximum teratogenic vulnerability."
+          ],
+          "check": {
+            "prompt": "Why is rubella exposure at 7 weeks of development regarded as high risk for the embryo?",
+            "options": [
+              "Weeks 3–8 are the embryonic period of organogenesis — maximum vulnerability to placenta-crossing teratogens",
+              "Rubella cannot cross the placenta",
+              "The germinal period is the most vulnerable stage",
+              "The yolk sac fully blocks maternal infections"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "لأن الأسبوع السابع يقع في المرحلة الجنينية المبكرة (3–8 أسابيع) وهي فترة تكوّن الأعضاء وأقصى فترة حساسية للمواد المشوهة؛ فالأدوية والعدوى القادرة على عبور المشيمة مثل فيروس الحصبة الألمانية تؤثر على تطور الجنين وتسبب التشوهات."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gastrulation",
+          "definition_ar": "المعيدة: الحدث الأبرز في الأسبوع الثالث، وهي العملية التي تؤسس الطبقات الجرثومية الثلاث في الجنين."
+        },
+        {
+          "term": "Ectoderm",
+          "definition_ar": "الأديم الخارجي: الطبقة الجرثومية الخارجية من الطبقات الثلاث التي تُنشئها المعيدة في الأسبوع الثالث."
+        },
+        {
+          "term": "Mesoderm",
+          "definition_ar": "الأديم الوسطى: الطبقة الجرثومية الوسطى من الطبقات الثلاث التي تُنشئها المعيدة."
+        },
+        {
+          "term": "Endoderm",
+          "definition_ar": "الأديم الداخلي: الطبقة الجرثومية الداخلية من الطبقات الثلاث التي تُنشئها المعيدة."
+        },
+        {
+          "term": "Yolk sac",
+          "definition_ar": "الكيس المحّي: بنية تتشكل في الأسبوع الثالث لتبادل المستقلبات بين الأم والجنين قبل تكون المشيمة، ويكتمل نموه في اليوم 32 ويبدأ تنكسه بنهاية الأسبوع السادس عشر."
+        },
+        {
+          "term": "Organogenesis",
+          "definition_ar": "تكوّن الأعضاء: العملية التي تبدأ في الأسبوع الرابع وأول عضو يظهر فيها هو القلب البدائي."
+        },
+        {
+          "term": "Bilaminar germ disk",
+          "definition_ar": "القرص الجنيني ثنائي الصفائح: بنية تتشكل من الكتلة الخلوية الداخلية في الأسبوع الثالث قبل حدوث المعيدة."
+        },
+        {
+          "term": "Teratogen",
+          "definition_ar": "المادة المشوهة: دواء أو عدوى قادرة على عبور المشيمة (كفيروس الحصبة الألمانية) فتؤثر على تطور الجنين وتسبب التشوهات خلال المرحلة الجنينية المبكرة."
+        },
+        {
+          "term": "Primitive heart",
+          "definition_ar": "القلب البدائي: أول عضو يظهر خلال الأسبوع الرابع من التطور، ويظهر نشاطه القلبي في اليوم 22."
+        },
+        {
+          "term": "Genital ridges",
+          "definition_ar": "الحبال التناسلية: بنى يمكن رؤيتها في الأسبوع الخامس، بينما يحدث التمايز الجنسي عادة بين الأسبوعين 8 و12."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L2_fetal_development_c4",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "Fetal Circulation: Placental Exchange, Umbilical Vessels, and the Three Shunts",
+      "summary_ar": "يوضح هذا المفهوم دوران الجنين: يزوّد دم الأم الجنين بالأكسجين والغذاء ويحمل فضلاته عبر الانتشار عبر غشاء المشيمة وأوعية الحبل السري. يتميز خضاب الجنين بتركيز أعلى بنحو 50 % وألفة أكبر للأكسجين فيحمل 20-30% أكسجينًا أكثر من خضاب الأم عند نفس الضغط الجزئي. يتفرع الحبل السري إلى شريانين سريين ووريد سري واحد، ويمر الدم المؤكسج عبر القناة الوريدية متجاوزًا الكبد ثم الثقبة البيضوية متجاوزًا الرئتين غير الوظيفيتين ثم القناة الشريانية، ليعود أخيرًا عبر الشريانين السريين إلى المشيمة لإعادة أكسجته.",
+      "sections": [
+        {
+          "heading": "Placental Exchange and the Fetal Hemoglobin Advantage",
+          "body_text": "Throughout the fetal stage of development, the **maternal blood supplies the fetus with O2 and nutrients and carries away its wastes**. These substances **diffuse between the maternal and fetal blood through the placental membrane**, and they are **carried to and from the fetal body by the umbilical blood vessels**.\n\nThe fetus enjoys a dedicated oxygen-transport advantage:\n\n- The **concentration of hemoglobin in fetal blood is about 50 % greater than in maternal blood**.\n- **Fetal hemoglobin is slightly different chemically** and **has a greater affinity for O2 than maternal hemoglobin**.\n- Therefore, **at a particular oxygen partial pressure, fetal hemoglobin can carry 20–30% more O2 than maternal hemoglobin**.\n\nThese three features together explain how the fetus extracts oxygen efficiently from maternal blood at the placental interface.",
+          "key_points": [
+            "Maternal blood supplies O2 and nutrients and carries away fetal wastes; exchange is by diffusion through the placental membrane.",
+            "Umbilical blood vessels carry substances to and from the fetal body.",
+            "Fetal hemoglobin concentration is about 50 % greater than maternal.",
+            "Fetal hemoglobin is chemically slightly different, with greater O2 affinity.",
+            "At a given oxygen partial pressure, fetal hemoglobin carries 20–30% more O2 than maternal hemoglobin."
+          ]
+        },
+        {
+          "heading": "The Umbilical Cord: Two Arteries and One Vein",
+          "body_text": "The umbilical cord contains the umbilical vessels in a constant pattern — **2 umbilical arteries and 1 umbilical vein**:\n\n- **The 2 umbilical arteries** return **deoxygenated blood, fetal waste products and CO2** to the placenta.\n- **The 1 umbilical vein** brings **oxygenated blood and nutrients** to the fetus.\n\nOn the cross-section specimen photograph of the cord (held in a gloved hand against green surgical draping), the **paired umbilical arteries appear as two circular vessels, with the single umbilical vein appearing as one larger circular vessel** — the vein typically exceeding the paired arteries in diameter. This 2-arteries/1-vein configuration is the classic anatomy question about the cord.",
+          "key_points": [
+            "Umbilical cord = 2 umbilical arteries + 1 umbilical vein.",
+            "Umbilical arteries: return deoxygenated blood, fetal waste and CO2 to the placenta.",
+            "Umbilical vein: brings oxygenated blood and nutrients to the fetus.",
+            "On cross-section, the vein is larger in diameter than the paired arteries."
+          ]
+        },
+        {
+          "heading": "The Fetal Circulatory Pathway and Its Three Shunts",
+          "body_text": "Because the fetal lungs are nonfunctional, the circulation is built around **three shunts that bypass, in turn, the liver and the lungs**.\n\n**From placenta to heart — the ductus venosus (liver bypass):**\n\n- The **umbilical vein transports blood rich in O2 and nutrients from the placenta to the fetus**. It **enters the body through the umbilical ring** and **travels along the anterior abdominal wall to the liver**.\n- **About 1/2 (half) of the blood it carries passes into the liver** itself.\n- **The other 1/2 of the blood enters a vessel called the ductus venosus, which bypasses the liver.** The ductus venosus travels a short distance and **joins the inferior vena cava**.\n- There, the **oxygenated blood from the placenta is mixed with the deoxygenated blood from the lower parts of the body**, and this mixture continues through the vena cava to the **right atrium**.\n- In the adult heart, blood flows from the right atrium to the right ventricle and then through the pulmonary arteries to the lungs; **in the fetus, however, the lungs are nonfunctional and the blood largely bypasses them**.\n\n**Inside the heart — the foramen ovale (lung bypass at atrial level):**\n\n- As the blood from the inferior vena cava enters the right atrium, **a large proportion of it is shunted directly into the left atrium through an opening called the foramen ovale**.\n- **Only a small volume of blood enters the pulmonary circuit**, because **the lungs are collapsed and their blood vessels have a high resistance to flow** — yet **enough blood reaches the lung tissue to sustain them**.\n\n**From the right ventricle — the ductus arteriosus (lung bypass at arterial level):**\n\n- **Most of the blood in the pulmonary trunk bypasses the lungs by entering a fetal vessel called the ductus arteriosus**, which **connects the pulmonary trunk to the descending portion of the aortic arch**.\n\n**Back to the placenta:**\n\n- The blood carried by the **descending aorta is partially oxygenated and partially deoxygenated**. **Some of it is carried into the branches of the aorta that lead to various parts of the lower regions of the body**.\n- **The rest passes into the umbilical arteries, which branch from the internal iliac arteries and lead to the placenta, where the blood is reoxygenated.**\n\nOn the labeled schematic of fetal circulation, the heart is drawn with its four chambers (**RA, LA, RV, LV**); the **superior vena cava enters the top of the right atrium**; the **common iliac artery branches from the distal aorta** into the internal iliac and the external iliac. The umbilical arteries then arise from the internal iliac arteries and carry deoxygenated blood back to the placenta. The figure's numbered legend identifies: **1 = ductus arteriosus, 2 = foramen ovale, 3 = pulmonary trunk, 4 = ductus venosus**. Color coding is a useful memory aid: **red = umbilical vein (highly oxygenated), blue/dark blue = superior vena cava and parts of the inferior vena cava (less oxygenated systemic return), purple/magenta = mixed arterial blood, brown = the liver, pink = the heart muscle**; a dashed line represents the path **to the lungs in the adult**, which the fetal shunts largely bypass, and arrows indicate the direction of blood flow through the whole circuit.",
+          "key_points": [
+            "Umbilical vein → umbilical ring → anterior abdominal wall → liver; half the blood perfuses the liver, half bypasses it via the ductus venosus into the inferior vena cava.",
+            "Foramen ovale: shunts a large proportion of inferior vena cava blood from the right atrium directly into the left atrium.",
+            "Only a small blood volume enters the pulmonary circuit — the lungs are collapsed with high vascular resistance, but enough blood sustains the lung tissue.",
+            "Ductus arteriosus: connects the pulmonary trunk to the descending portion of the aortic arch.",
+            "Descending aortic blood is partially oxygenated; umbilical arteries branch from the internal iliac arteries and return blood to the placenta for reoxygenation.",
+            "Legend of the schematic: 1 ductus arteriosus, 2 foramen ovale, 3 pulmonary trunk, 4 ductus venosus."
+          ],
+          "check": {
+            "prompt": "What fraction of the blood carried by the umbilical vein bypasses the liver through the ductus venosus?",
+            "options": [
+              "All of the blood bypasses the liver",
+              "About one half (1/2)",
+              "About one quarter",
+              "None — all of it perfuses the liver"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "يمرّ نحو نصف الدم الذي يحمله الوريد السري عبر القناة الوريدية متجاوزًا الكبد لينضم إلى الوريد الأجوف السفلي حيث يختلط بالدم غير المؤكسج العائد من الجزء السفلي من الجسم، بينما يدخل النصف الآخر إلى الكبد ذاته."
+          }
+        },
+        {
+          "heading": "Conclusion: The Complete Fetal Pathway in Order",
+          "body_text": "The conclusion slides restate the whole circuit as two sequential lists — a favorite short-answer examination format.\n\n**First (oxygenated) limb — from the placenta to the brain:**\n\n- Oxygenated blood enters the **umbilical vein** from the placenta.\n- Enters the **ductus venosus**.\n- Passes through the **inferior vena cava**.\n- Enters the **right atrium**.\n- Enters the **foramen ovale**.\n- Goes to the **left atrium**.\n- Passes through the **left ventricle**.\n- Flows to the **ascending aorta** to **supply nourishment to the brain and upper extremities**.\n\n**Second (mixed) limb — systemic venous return back to the placenta:**\n\n- Enters the **superior vena cava**.\n- Goes to the **right atrium**.\n- Enters the **right ventricle**.\n- Enters the **pulmonary artery**, with **some blood going to the lungs to supply oxygen and nourishment** (the small volume that sustains the lung tissue).\n- Flows to the **ductus arteriosus**.\n- Enters the **descending aorta**, with **some blood going to the lower extremities**.\n- Enters the **hypogastric arteries** (the name used here for the **internal iliac arteries**, from which the umbilical arteries branch).\n- Goes back to the **placenta**, where the blood is reoxygenated — and the cycle begins again.\n\nThese two lists close the lecture deck: a blue gradient header bar spans the top of the slide. The footer of this final page simply reads End.",
+          "key_points": [
+            "Oxygenated limb: placenta → umbilical vein → ductus venosus → inferior vena cava → right atrium → foramen ovale → left atrium → left ventricle → ascending aorta → brain and upper extremities.",
+            "Mixed limb: superior vena cava → right atrium → right ventricle → pulmonary artery (some blood to lungs) → ductus arteriosus → descending aorta (some to lower extremities) → hypogastric arteries → placenta.",
+            "'Hypogastric arteries' in the conclusion = internal iliac arteries, the origin of the umbilical arteries."
+          ],
+          "check": {
+            "prompt": "After blood is shunted through the foramen ovale into the left atrium, which vessel delivers it to the brain and upper extremities?",
+            "options": [
+              "The descending aorta",
+              "The ascending aorta, from the left ventricle",
+              "The pulmonary trunk",
+              "The ductus arteriosus"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "يعبر الدم من الأذين الأيسر إلى البطين الأيسر ثم إلى الأبهر الصاعد الذي يزوّد الدماغ والأطراف العلوية بالغذاء والأكسجين؛ أما القناة الشريانية فتنقل دم الجذع الرئوي إلى الجزء النازل من قوس الأبهر."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Placental membrane",
+          "definition_ar": "غشاء المشيمة: الحاجز الذي ينتشر عبره الأكسجين والغذاء والفضلات بين دم الأم ودم الجنين."
+        },
+        {
+          "term": "Fetal hemoglobin",
+          "definition_ar": "خضاب الجنين: يختلف كيميائيًا قليلًا عن خضاب الأم وتركيزه أعلى بنحو 50 % وله ألفة أعلى للأكسجين فيحمل 20-30% أكسجينًا أكثر عند نفس الضغط الجزئي."
+        },
+        {
+          "term": "Umbilical vein",
+          "definition_ar": "الوريد السري: ينقل الدم الغني بالأكسجين والغذاء من المشيمة إلى الجنين، ويدخل عبر الحلقة السرية ويصعد على جدار البطن الأمامي إلى الكبد."
+        },
+        {
+          "term": "Umbilical arteries",
+          "definition_ar": "الشريانان السريان: ينشعبان من الشريانين الحرقفيين الداخليين ويعيدان الدم غير المؤكسج والفضلات وثاني أكسيد الكربون إلى المشيمة."
+        },
+        {
+          "term": "Ductus venosus",
+          "definition_ar": "القناة الوريدية: تحويلة تتجاوز الكبد، تمر عبرها نحو نصف كمية الدم القادمة من الوريد السري لتصب في الوريد الأجوف السفلي."
+        },
+        {
+          "term": "Foramen ovale",
+          "definition_ar": "الثقبة البيضوية: فتحة بين الأذينين توجّه نسبة كبيرة من دم الوريد الأجوف السفلي مباشرة إلى الأذين الأيسر متجاوزةً الدوران الرئوي."
+        },
+        {
+          "term": "Ductus arteriosus",
+          "definition_ar": "القناة الشريانية: وعاء جنيني يصل الجذع الرئوي بالجزء النازل من قوس الأبهر فيتجاوز به معظم الدم الرئتين المنطبقتين."
+        },
+        {
+          "term": "Umbilical ring",
+          "definition_ar": "الحلقة السرية: الفتحة التي يدخل منها الوريد السري إلى جسم الجنين على جدار البطن الأمامي."
+        },
+        {
+          "term": "Hypogastric arteries",
+          "definition_ar": "الشرايين تحت المعوية (الحرقفية الداخلية): الشرايين التي ينشعب منها الشريانان السريان عائدين بالدم إلى المشيمة."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L2_fetal_development_c5",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "Circulatory Changes at Birth and Persistent Fetal Shunts",
+      "summary_ar": "يشرح هذا المفهوم التحولات الدورانية عند الولادة: يتوقف جريان دم المشيمة ويبدأ التنفس الرئوي، فيهبط الضغط في الأذين الأيمن فجأة فتُغلق الثقبة البيضوية، وتبدأ القناة الشريانية بالإغلاق فورًا تقريبًا، وتُمحى بقية الأوعية الجنينية ببطء لتترك بقايا ليفية فقط عند البالغ. أما استمرار القناة الشريانية أو الثقبة البيضوية السالكة (نحو 8% من عيوب القلب الخلقية لكل منهما) فيسبب خلط الدم المؤكسج بغير المؤكسج وزراقًا، والتصحيح الجراحي متاح ويفضل إتمامه حوالي عمر السنتين.",
+      "sections": [
+        {
+          "heading": "Circulatory Changes at Birth (Normal Transition)",
+          "body_text": "**At birth, placental blood flow ceases and lung respiration begins.** Two events therefore flip the circulation from fetal to neonatal mode, and the consequences follow immediately:\n\n- **The sudden drop in right atrial pressure closes the foramen ovale.**\n- **The ductus arteriosus begins to close almost immediately.**\n- **Other embryonic circulatory vessels are slowly obliterated and remain in the adult only as fibrous remnants** — the adult traces of the ductus venosus, the umbilical vessels and the sealed foramen ovale.\n\nIn one sentence: the neonate switches from a placenta-based circuit with three shunts to an independent lung-based circuit, and every fetal shunt must close on schedule.",
+          "key_points": [
+            "At birth: placental blood flow ceases and lung respiration begins.",
+            "The sudden drop in right atrial pressure closes the foramen ovale.",
+            "The ductus arteriosus begins to close almost immediately.",
+            "Other embryonic circulatory vessels are slowly obliterated, persisting in the adult only as fibrous remnants."
+          ],
+          "check": {
+            "prompt": "Which mechanism closes the foramen ovale at birth?",
+            "options": [
+              "The sudden drop in right atrial pressure as placental blood flow ceases and lung respiration begins",
+              "A sudden rise in right atrial pressure with the first breath",
+              "Closure of the umbilical arteries only",
+              "Delayed closure that normally takes weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند الولادة يتوقف جريان دم المشيمة ويبدأ التنفس الرئوي، فيهبط الضغط في الأذين الأيمن فجأة فتُغلق الثقبة البيضوية، وتبدأ القناة الشريانية بالإغلاق فورًا تقريبًا، أما بقية الأوعية الجنينية فتُمحى ببطء وتبقى بقايا ليفية فقط."
+          }
+        },
+        {
+          "heading": "Problems with Persistence of Fetal Circulation: Patent Ductus Arteriosus and Patent Foramen Ovale",
+          "body_text": "If the fetal shunts fail to close after birth, oxygen delivery is compromised — the classic problem with persistence of fetal circulation:\n\n- **Patent (open) ductus arteriosus and patent foramen ovale each characterize about 8% of congenital heart defects.**\n- **Both cause a mixing of oxygen-rich and oxygen-poor blood**, so that **blood reaching the tissues is not fully oxygenated** — a state that **can cause cyanosis**.\n- **Surgical correction is now available, ideally completed around age two.**\n- **Many of these defects go undetected until the child is at least school age** — a subtle murmur or exertional blueness may be the first clue years after birth.\n\nTying the whole lecture together: the same vessels that serve the fetus so efficiently (ductus arteriosus, foramen ovale) become sources of disease when they persist after the neonatal transition should have closed them.",
+          "key_points": [
+            "Patent ductus arteriosus and patent foramen ovale each account for about 8% of congenital heart defects.",
+            "Both defects mix oxygen-rich with oxygen-poor blood → tissues receive blood that is not fully oxygenated → cyanosis can result.",
+            "Surgical correction is available, ideally completed around age two.",
+            "Many of these defects go undetected until the child is at least school age."
+          ],
+          "check": {
+            "prompt": "Patent ductus arteriosus and patent foramen ovale each account for approximately what share of congenital heart defects?",
+            "options": [
+              "About 8% each",
+              "About 1% each",
+              "About 40% each",
+              "About 80% each"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تشكّل القناة الشريانية السالكة والثقبة البيضوية السالكة نحو 8% لكل منهما من عيوب القلب الخلقية، وكلاهما يخلط الدم المؤكسج بغير المؤكسج فيصل إلى الأنسجة دم غير مؤكسج تمامًا ما قد يسبب الزراق."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Patent ductus arteriosus",
+          "definition_ar": "القناة الشريانية السالكة: استمرار انفتاح القناة الشريانية بعد الولادة، وتمثل نحو 8% من عيوب القلب الخلقية وتسبب خلط الدم المؤكسج بغير المؤكسج وقد تسبب الزراق."
+        },
+        {
+          "term": "Patent foramen ovale",
+          "definition_ar": "الثقبة البيضوية السالكة: استمرار انفتاح الثقبة البيضوية بين الأذينين، وتمثل أيضًا نحو 8% من عيوب القلب الخلقية."
+        },
+        {
+          "term": "Cyanosis",
+          "definition_ar": "الزراق: ازرقاق الجلد والأغشية المخاطية بسبب وصول دم غير مؤكسج تمامًا إلى الأنسجة نتيجة خلط الدم المؤكسج بغير المؤكسج."
+        },
+        {
+          "term": "Fibrous remnants",
+          "definition_ar": "البقايا الليفية: ما يتبقى عند البالغ من الأوعية الدورانية الجنينية بعد إمحائها التدريجي بعد الولادة."
+        },
+        {
+          "term": "Neonatal circulatory transition",
+          "definition_ar": "التحول الدوراني الوليدي: توقف جريان دم المشيمة وبدء التنفس الرئوي عند الولادة، مما يخفض ضغط الأذين الأيمن ويغلق الثقبة البيضوية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L2_fetal_development_f01",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "card_type": "basic",
+      "front_text": "What are the three stages of prenatal (fetal) development and their exact time windows?",
+      "back_text": "1) Germinal period / pre-embryonic stage: 0–2 weeks (fertilization through the second week; zygote until implantation). 2) Embryonic period: weeks 3–8 (nervous, circulatory, and respiratory systems formed). 3) Fetal period: 9 weeks – birth (organs and systems refined).",
+      "tags": [
+        "stages",
+        "prenatal development"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f02",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "Which stage of prenatal development carries the maximum teratogenic risk, and why?",
+      "back_text": "The embryonic period (weeks 3–8): organogenesis is underway (nervous, circulatory, and respiratory systems forming), so drugs and infections that can cross the placenta — e.g. rubella virus — can affect fetal development and lead to fetal abnormalities.",
+      "tags": [
+        "teratogens",
+        "embryonic period"
+      ],
+      "mnemonic_ar": "تذكّر: 3–8 = بناء الأعضاء = أخطر فترة للمشوهات؛ قبلها (0–2 أسبوع) لا أعضاء بعد، وبعدها (من 9 أسابيع) صقل ونمو."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f03",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "card_type": "basic",
+      "front_text": "In which part of the fallopian tube does fertilization normally occur?",
+      "back_text": "The ampulla — the widened part of the tube. The ovum is shed from the ovary, captured by the fimbriated end, and fertilized in the ampulla by a single spermatozoon.",
+      "tags": [
+        "fertilization",
+        "fallopian tube"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f04",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "card_type": "basic",
+      "front_text": "How does the lecture define fertilization (its start point and end point)?",
+      "back_text": "It begins when a spermatozoon makes contact with a secondary oocyte, and ends with the intermingling of maternal and paternal chromosomes at metaphase of the first mitotic division — resulting in a single cell, the zygote.",
+      "tags": [
+        "fertilization",
+        "definitions"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f05",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "card_type": "basic",
+      "front_text": "What is the morula and how many cells does it contain?",
+      "back_text": "The morula is a ball of 16 cells formed as the zygote starts to divide; on the diagrams it is drawn as a solid ball of 16–32 cells moving from the tube toward the uterus, and it divides into cells that form the fetal structures.",
+      "tags": [
+        "morula",
+        "cleavage"
+      ],
+      "mnemonic_ar": "التوتية تشبه ثمرة التوت: كرة صلبة من 16 خلية متراصة ناتجة عن انقسام الزيجوت."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f06",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "Give the fates of the two cell populations of the blastocyst.",
+      "back_text": "Trophoblast (the flattened outer cells) becomes the embryo's contribution to the placenta and other supporting structures; the inner cell mass (embryoblast), projecting into the blastocyst cavity, forms the body of the new offspring.",
+      "tags": [
+        "blastocyst",
+        "trophoblast"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f07",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "At what point is the conceptus first called a blastocyst?",
+      "back_text": "When the morula (after entering the uterus) develops a recognizable fluid-filled cavity: fluid accumulates between the blastomeres, the fluid-filled spaces run together into one relatively large cavity, and the organism is then termed a blastocyst.",
+      "tags": [
+        "blastocyst",
+        "blastocoele"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f08",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "What distinguishes the hatched (mature) blastocyst from the earlier stages?",
+      "back_text": "The zona pellucida is absent (it thinned as the blastocoele expanded, and the blastocyst hatches out); the trophoblast is a single flattened layer forming the outer wall; the inner cell mass is a thickened cluster attached to the inner trophoblast surface; the blastocoele is large and central.",
+      "tags": [
+        "blastocyst",
+        "hatching"
+      ],
+      "mnemonic_ar": "المنطقة الشفافة كقشرة البيضة: تترقّق مع توسّع التجويف ثم «يفقس» الكيس الأريمي منها قبل الانغراس."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f09",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "When and where does implantation occur, and in which phase is the endometrium?",
+      "back_text": "The uterus is in the secretory phase; the blastocyst implants in the endometrium along the anterior or posterior wall about the sixth day — bracketed between the 7th and 10th day.",
+      "tags": [
+        "implantation",
+        "timing"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f10",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "Name the two trophoblast layers formed during implantation and their functions.",
+      "back_text": "Cytotrophoblast — the inner, actively proliferating layer; syncytiotrophoblast — the outer layer, which erodes maternal tissues and produces human chorionic gonadotropin (hCG).",
+      "tags": [
+        "trophoblast",
+        "hcg"
+      ],
+      "mnemonic_ar": "المندمجة الخارجية = تُذيب وتُفرز hCG، والخلوية الداخلية = نشطة الانقسام."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f11",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "Which layer produces hCG, and when is hCG first detectable after ovulation?",
+      "back_text": "The syncytiotrophoblast. The first hormonal evidence of implantation (appearance of hCG) occurred on 8, 9, or 10 days after ovulation — earliest 6 days, latest 12 days.",
+      "tags": [
+        "hcg",
+        "implantation"
+      ],
+      "explanation_ar": "ظهور hCG هو أول دليل هرموني على الانغراس؛ يكون في اليوم 8 أو 9 أو 10 بعد الإباضة عادةً، وقد يتراوح بين اليوم 6 واليوم 12، وهو أساس اختبارات الحمل المبكرة."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f12",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "card_type": "basic",
+      "front_text": "Summarize day 9 and the end of the second week in early placentation.",
+      "back_text": "By day 9, lacunae develop in the syncytiotrophoblast; subsequently maternal sinusoids are eroded and maternal blood enters the lacunar network; by the end of the second week a primitive uteroplacental circulation begins — the placenta is formed in the second week after ovulation.",
+      "tags": [
+        "placenta",
+        "uteroplacental circulation"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f13",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "What is gastrulation and why is it the hallmark of week 3?",
+      "back_text": "Gastrulation — the most characteristic event of the third week of gestation — establishes all three germ layers (ectoderm, mesoderm, endoderm) in the embryo; before it, the inner cell mass (embryoblast) forms the bilaminar germ disk.",
+      "tags": [
+        "gastrulation",
+        "germ layers"
+      ],
+      "mnemonic_ar": "المعيدة في الأسبوع الثالث تصنع «ثلاثية الطبقات»: خارجية – وسطى – داخلية."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f14",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "What is the function and lifespan of the yolk sac?",
+      "back_text": "Function: exchange of metabolites between mother and embryo while there is no placenta yet. Full development is reached at 32 days; degeneration starts by the end of the 16th week — a short life span.",
+      "tags": [
+        "yolk sac",
+        "week 3"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f15",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "What is the first organ to appear in development, and when does its activity begin?",
+      "back_text": "The primitive heart — the first organ of organogenesis in week 4; cardiac activity is present at 22 days (day 22), long before many women know they are pregnant.",
+      "tags": [
+        "primitive heart",
+        "organogenesis"
+      ],
+      "explanation_ar": "قلب الجنين ينبض في اليوم 22، أي قبل أن تعرف كثير من النساء بحملهن — ولهذا يُرى النشاط القلبي مبكرًا على الموجات فوق الصوتية المهبلية.",
+      "is_vivid": true
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f16",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "How does the respiratory system first appear, and when are the lung buds evident?",
+      "back_text": "The respiratory system appears as segmentation of the foregut during week 4, and the lung buds are evident at the end of the 4th week.",
+      "tags": [
+        "lung buds",
+        "week 4"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f17",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "card_type": "basic",
+      "front_text": "When does sex differentiation usually occur?",
+      "back_text": "Usually between 8 and 12 weeks (the genital ridges are already visible by week 5, when the urinary system is also completely formed and the paired limb buds are evident).",
+      "tags": [
+        "sex differentiation",
+        "week 5"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f18",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "List the three fetal hemoglobin advantages over maternal hemoglobin.",
+      "back_text": "1) The concentration of hemoglobin in fetal blood is about 50 % greater than in maternal blood; 2) fetal hemoglobin is slightly different chemically and has a greater affinity for O2; 3) at a particular oxygen partial pressure it carries 20–30% more O2 than maternal hemoglobin.",
+      "tags": [
+        "fetal hemoglobin",
+        "oxygen"
+      ],
+      "mnemonic_ar": "خضاب الجنين: أكثر (50 %)، وألفة أقوى، فيحمل أكسجينًا أكثر (20-30%)."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f19",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "Describe the vessel pattern of the umbilical cord and the direction of flow.",
+      "back_text": "2 umbilical arteries: return deoxygenated blood, fetal waste products, and CO2 to the placenta. 1 umbilical vein: brings oxygenated blood and nutrients to the fetus. On cross-section, the single vein is larger in diameter than the paired arteries.",
+      "tags": [
+        "umbilical cord",
+        "umbilical vessels"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f20",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "What fraction of umbilical venous blood bypasses the liver, and through which vessel?",
+      "back_text": "About half (1/2): it enters the ductus venosus, which bypasses the liver and joins the inferior vena cava; the other half passes into the liver itself.",
+      "tags": [
+        "ductus venosus",
+        "liver"
+      ],
+      "explanation_ar": "الوريد السري يصل الكبد عبر جدار البطن الأمامي؛ نصف دمه يدخل الكبد ونصفه الآخر يعبر القناة الوريدية إلى الوريد الأجوف السفلي حيث يختلط بالدم غير المؤكسج العائد من أسفل الجسم."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f21",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "What does the foramen ovale do in the fetus?",
+      "back_text": "It shunts a large proportion of the blood arriving from the inferior vena cava directly from the right atrium into the left atrium, bypassing the nonfunctional lungs (only a small volume enters the pulmonary circuit).",
+      "tags": [
+        "foramen ovale",
+        "shunts"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f22",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "Which two structures does the ductus arteriosus connect?",
+      "back_text": "It connects the pulmonary trunk to the descending portion of the aortic arch, allowing most pulmonary trunk blood to bypass the collapsed lungs.",
+      "tags": [
+        "ductus arteriosus",
+        "shunts"
+      ],
+      "explanation_ar": "لأن رئتي الجنين منطبقة وأوعيتها عالية المقاومة، تنقل القناة الشريانية معظم دم الجذع الرئوي إلى الأبهر النازل بدل الرئتين، مع بقاء حجم صغير كافٍ لإبقاء نسيج الرئتين حيًّا."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f23",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "card_type": "basic",
+      "front_text": "Why does only a small volume of blood enter the fetal pulmonary circuit?",
+      "back_text": "Because the fetal lungs are collapsed and their blood vessels have a high resistance to flow — nevertheless enough blood reaches the lung tissue to sustain it.",
+      "tags": [
+        "lungs",
+        "pulmonary circuit"
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f24",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c5",
+      "card_type": "basic",
+      "front_text": "What happens to the foramen ovale and ductus arteriosus at birth?",
+      "back_text": "Placental blood flow ceases and lung respiration begins: the sudden drop in right atrial pressure closes the foramen ovale, and the ductus arteriosus begins to close almost immediately; other embryonic circulatory vessels are slowly obliterated and remain only as fibrous remnants in the adult.",
+      "tags": [
+        "birth transition",
+        "shunt closure"
+      ],
+      "mnemonic_ar": "عند الولادة: يتوقف المشيمي، يبدأ الرئوي، يهبط ضغط الأذين الأيمن فتُغلق الثقبة وتنغلق القناة فورًا."
+    },
+    {
+      "id": "obgyn_L2_fetal_development_f25",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c5",
+      "card_type": "basic",
+      "front_text": "What problems can persistence of fetal circulation (patent ductus arteriosus / patent foramen ovale) cause?",
+      "back_text": "Each accounts for about 8% of congenital heart defects; both cause mixing of oxygen-rich and oxygen-poor blood, so blood reaching the tissues is not fully oxygenated — which can cause cyanosis. Surgical correction is available, ideally completed around age two; many cases go undetected until at least school age.",
+      "tags": [
+        "patent ductus arteriosus",
+        "cyanosis"
+      ],
+      "mnemonic_ar": "ثلاثية PDA: ثمانية بالمئة – خلط دم – زراق؛ والعلاج جراحي ويفضل قبل عمر السنتين.",
+      "is_vivid": true
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L2_fetal_development_m01",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "question_stem": "A 26-year-old primigravida at 7 weeks of gestation by certain last menstrual period attends her first antenatal visit. Transvaginal ultrasound shows a single live intrauterine embryo with cardiac activity. In which stage of prenatal development is this conceptus?",
+      "options": [
+        "Germinal (pre-embryonic) stage, 0–2 weeks",
+        "Embryonic period, weeks 3–8",
+        "Fetal period, 9 weeks until birth",
+        "Ovular period, 10–20 weeks"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عمر 7 أسابيع يقع بين الأسبوعين الثالث والثامن، أي في المرحلة الجنينية المبكرة التي تتشكل فيها الأجهزة العصبية والدورانية والتنفسية وتبدأ فيها عملية تكوّن الأعضاء. المرحلة الجرثومية (ما قبل الجنينية) تمتد من الإخصاب حتى نهاية الأسبوع الثاني (من الزيجوت حتى الانغراس) وقد انتهت، والمرحلة الجنينية المتأخرة تبدأ من الأسبوع التاسع حتى الولادة لم تصل بعد، ولا وجود لمصطلح المرحلة البيضوية 10–20 أسبوعًا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m02",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "question_stem": "A 24-year-old woman attending an infertility counseling session asks where her oocyte would be fertilized if conception occurred naturally this cycle. According to the lecture, fertilization normally occurs in which part of the female reproductive tract?",
+      "options": [
+        "The fimbriated end of the fallopian tube",
+        "The ampulla part of the fallopian tube",
+        "The isthmus of the fallopian tube",
+        "The uterine cavity",
+        "The ovary itself"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "يحدث الإخصاب في الجزء الأمبولي من قناة فالوب؛ فالبويضة تُطرح من المبيض وتلتقطها النهاية المهدبة لتصل إلى الأمبولة حيث يلامس الحيوان المنوي البويضة الثانوية. الطرف المهدب هو موقع التقاط البويضة لا الإخصاب، والبرزخ (الجزء القريب من الرحم) ممر لا موقع للإخصاب، والرحم موقع الانغراس، والمبيض موقع الإباضة وتطور الجريبات.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m03",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c1",
+      "question_stem": "Which option best completes the lecture definition of fertilization? It is the procession of events that begins when a spermatozoon makes contact with a secondary oocyte and ends with…",
+      "options": [
+        "Penetration of the zona pellucida by the sperm",
+        "The intermingling of maternal and paternal chromosomes at metaphase of the first mitotic division",
+        "Completion of meiosis in the oocyte",
+        "Formation of the blastocyst cavity"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ينتهي الإخصاب باختلاط (تمازج) الكروموسومات الأمومية والأبوية في الطور الاستوائي للانقسام الخلوي الأول، وتكون النتيجة خلية واحدة هي الزيجوت. اختراق المنطقة الشفافة خطوة مبكرة داخل المسار وليست نهايته، ويظهر تجويف الكيس الأريمي بعد أيام بعد دخول التوتية إلى الرحم.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m04",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "question_stem": "A 28-year-old woman in a fertility clinic had follicular rupture confirmed on day 14 of her cycle. If conception occurs this cycle, on which days after ovulation did the first hormonal evidence of implantation (appearance of hCG) classically occur?",
+      "options": [
+        "On 8, 9, or 10 days after ovulation (earliest 6 days, latest 12 days)",
+        "On days 2–3 after ovulation",
+        "On days 20–25 after ovulation",
+        "At the exact moment of fertilization"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أول دليل هرموني على الانغراس هو ظهور hCG الذي تفرزه الأرومة الغاذية المندمجة، وقد سُجّل في اليوم 8 أو 9 أو 10 بعد الإباضة، مع أقرب ظهور في اليوم 6 وأحدث في اليوم 12. لا يمكن الظهور في اليومين 2–3 لأن الانغراس نفسه يبدأ حوالي اليوم 6 إلى 10، والانتظار حتى اليوم 20–25 متأخر جدًا، واللحظة الأولى للإخصاب تسبق الانغراس بأيام.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "When does the blastocyst implant relative to ovulation?",
+        "hCG comes from the syncytiotrophoblast of the implanting blastocyst."
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m05",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c2",
+      "question_stem": "A 30-year-old G2P1 at 4 weeks of gestation has a rising serum beta-hCG confirming early pregnancy. Which embryonic layer secretes this hCG?",
+      "options": [
+        "Cytotrophoblast",
+        "Syncytiotrophoblast",
+        "Inner cell mass (embryoblast)",
+        "Blastocoele lining cells",
+        "Endometrial stroma"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تفرز الأرومة الغاذية المندمجة (الطبقة الخارجية) هرمون hCG وهي نفسها التي تُذيب الأنسجة الأمومية أثناء الانغراس. الأرومة الغاذية الخلوية هي الطبقة الداخلية النشطة الانقسام ولا تفرز الهرمون، والكتلة الخلوية الداخلية (الجنينية) تكوّن جسم المولود، وبطانة الرحم نسيج أمومي لا مصل لهذا الهرمون في بداية الحمل.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m06",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "question_stem": "A 22-year-old G1P0 at 6 weeks of gestation, non-immune, is exposed to a child with rubella at her workplace nursery. Why is this exposure regarded as particularly dangerous for her embryo at this gestational age?",
+      "options": [
+        "The embryo is in the germinal period, when all cells are already differentiated",
+        "Weeks 3–8 constitute the embryonic period of organogenesis, when placenta-crossing drugs and infections (e.g. rubella virus) can cause fetal abnormalities",
+        "The fetal period, which begins at 6 weeks, is the most infection-sensitive stage",
+        "The placenta is not yet formed, so no infection can reach the embryo"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الأسبوع السادس يقع في المرحلة الجنينية المبكرة (3–8 أسابيع) وهي فترة تكوّن الأعضاء وأقصى فترات الحساسية للمواد المشوهة؛ فالأدوية والعدوى القادرة على عبور المشيمة مثل فيروس الحصبة الألمانية تؤثر على تطور الجنين وتسبب التشوهات. المرحلة الجرثومية تنتهي بنهاية الأسبوع الثاني وليست فترة تمايز كامل، والمرحلة الجنينية المتأخرة تبدأ من الأسبوع التاسع، والمشيمة تتشكل في الأسبوع الثاني بعد الإباضة ويمكن للعدوى عبورها.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Count the weeks: where do weeks 3–8 fall?",
+        "Which systems are being formed during that window?",
+        "Can rubella virus cross the placenta?"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m07",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "question_stem": "A 27-year-old G1P0 at 8 weeks of gestation has a transvaginal ultrasound demonstrating normal embryonic cardiac activity. According to the lecture, what was the first organ to appear during development, and on which day did its cardiac activity begin?",
+      "options": [
+        "The primitive heart — cardiac activity at 22 days",
+        "The lung buds — cardiac activity at 22 days",
+        "The primitive heart — cardiac activity at day 9",
+        "The nervous system — before the heart"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القلب البدائي هو أول عضو يظهر مع بدء تكوّن الأعضاء في الأسبوع الرابع، ويظهر نشاطه القلبي في اليوم 22. براعم الرئتين تظهر بنهاية الأسبوع الرابع كنتيجة تقسّم المعي الأمامي ولا تملك نشاطًا قلبيًا، واليوم 9 هو وقت تشكل الفراغات في الأرومة الغاذية المندمجة، والجهاز العصبي يتطور في الأسبوع الرابع لكن القلب يسبقه كأول عضو.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m08",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "question_stem": "A medical student explains to a colleague why the fetus extracts oxygen from maternal blood so efficiently. At a particular oxygen partial pressure, fetal hemoglobin can carry how much more O2 than maternal hemoglobin?",
+      "options": [
+        "20–30% more O2",
+        "50–60% less O2",
+        "Exactly the same amount of O2",
+        "Two to three times more O2"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يحمل خضاب الجنين 20-30% أكسجينًا أكثر من خضاب الأم عند نفس الضغط الجزئي؛ لأنه يختلف كيميائيًا قليلًا وله ألفة أعلى للأكسجين، إضافة إلى أن تركيزه في دم الجنين أعلى بنحو 50 %. أما خيار أقل بـ 50-60% فيناقض الألفة الأعلى، وخيار الكمية نفسه خطأ لاختلاف الخواص الكيميائية، وخيار 2-3 أضعاف مبالغة غير واردة في المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Compare fetal and maternal hemoglobin affinity first.",
+        "Recall the fetal hemoglobin concentration difference (about 50 % greater)."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m09",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "question_stem": "During a teaching session on fetal physiology, the instructor traces oxygenated blood returning from the placenta. What proportion of the blood carried by the umbilical vein passes through the ductus venosus, bypassing the liver?",
+      "options": [
+        "All of the blood bypasses the liver",
+        "About one half (1/2)",
+        "About one quarter",
+        "None — the ductus venosus is a postnatal structure"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عند وصول الوريد السري إلى الكبد يمر نحو نصف الدم الذي يحمله إلى الكبد ذاته، بينما يدخل النصف الآخر القناة الوريدية التي تتجاوز الكبد وتصب في الوريد الأجوف السفلي حيث يختلط الدم المؤكسج القادم من المشيمة بالدم غير المؤكسج العائد من الجزء السفلي من الجسم. القناة الوريدية وعاء جنيني يُمحى بعد الولادة وليس بنية وليدية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m10",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "question_stem": "A fetus at 30 weeks of gestation undergoes Doppler assessment of the pulmonary circuit. Why does only a small volume of blood enter the fetal pulmonary circulation?",
+      "options": [
+        "The fetal lungs are collapsed and their blood vessels have a high resistance to flow — although enough blood reaches them to sustain the lung tissue",
+        "The foramen ovale directs all right atrial blood into the pulmonary trunk",
+        "The ductus venosus blocks venous return to the heart",
+        "The fetal lungs receive no blood at all"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الرئتان الجنينيتان منطبقتان وأوعيتهما عالية المقاومة، لذا يدخل الدورة الرئوية حجم صغير فقط من الدم، لكنه حجم كافٍ للحفاظ على نسيج الرئتين حيًّا؛ ومعظم دم الجذع الرئوي يتجاوز الرئتين عبر القناة الشريانية نحو الأبهر النازل. الثقبة البيضوية تحوّل الدم من الأذين الأيمن إلى الأيسر لا إلى الجذع الرئوي، والقناة الوريدية جزء من المسار الوريدي الكبدي، والقول إن الرئتين لا تستقبلان دمًا مطلقًا خطأ.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m11",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "question_stem": "In a diagram-labeling examination on fetal circulation, the candidate is asked which two structures the ductus arteriosus connects. The correct answer is:",
+      "options": [
+        "The pulmonary trunk to the descending portion of the aortic arch",
+        "The pulmonary trunk to the superior vena cava",
+        "The umbilical vein to the inferior vena cava",
+        "The right atrium to the left atrium",
+        "The left ventricle to the umbilical arteries"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تصل القناة الشريانية الجذع الرئوي بالجزء النازل من قوس الأبهر فتتخطى بذلك الرئتين المنطبقتين. الوريد السري تصله القناة الوريدية بالوريد الأجوف السفلي، والأذينان يصلهما الثقبة البيضوية، والشريانان السريان ينشعبان من الحرقفيين الداخليين لا من البطين الأيسر، ولا يوجد وصلة بين الجذع الرئوي والوريد الأجوف العلوي.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m12",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c5",
+      "question_stem": "A healthy term newborn cries vigorously immediately after delivery; the cord is clamped and the neonate pinks up over the following minutes. Which mechanism closed this neonate's foramen ovale?",
+      "options": [
+        "The sudden drop in right atrial pressure as placental blood flow ceased and lung respiration began",
+        "A sudden rise in right atrial pressure with the first breath",
+        "Cessation of umbilical artery flow alone, with no change in atrial pressure",
+        "Delayed closure that normally takes several weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "عند الولادة يتوقف جريان دم المشيمة ويبدأ التنفس الرئوي؛ فيهبط الضغط في الأذين الأيمن فجأة وتُغلق الثقبة البيضوية، وتبدأ القناة الشريانية بالإغلاق فورًا تقريبًا، وتُمحى بقية الأوعية الجنينية ببطء لتترك بقايا ليفية فقط. لا يحدث ارتفاع في ضغط الأذين الأيمن، وتوقف الشرايين السرية وحده لا يفسر الإغلاق، والإغلاق الفوري هو القاعدة لا استثناء يمتد أسابيع.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Two events flip the circulation at birth — what are they?",
+        "Which atrial pressure change favors closure?"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m13",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c5",
+      "question_stem": "A 6-year-old girl is found to have a patent ductus arteriosus after her school teacher noticed bluish lips during exercise. Which mechanism explains the cyanosis seen with such defects?",
+      "options": [
+        "Mixing of oxygen-rich and oxygen-poor blood, so blood reaching the tissues is not fully oxygenated",
+        "Complete obstruction of the descending aorta",
+        "Failure of fetal hemoglobin to release oxygen",
+        "Excess fetal hemoglobin persisting after birth"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يسبب انفتاح القناة الشريانية (أو الثقبة البيضوية) خلط الدم الغني بالأكسجين بالدم الفقير به، فيصل إلى الأنسجة دم غير مؤكسج تمامًا وهو ما قد يسبب الزراق؛ وكل منهما يمثل نحو 8% من عيوب القلب الخلقية. لا يوجد انسداد كامل للأبهر النازل، وخضاب الجنين لا علاقة له بآلية الزراق هنا، والتصحيح الجراحي متاح ويفضل إتمامه حول عمر السنتين مع أن كثيرًا من الحالات لا تُكتشف قبل سن المدرسة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m14",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c3",
+      "question_stem": "According to the lecture, the yolk sac reaches its full development and begins its degeneration, respectively, at:",
+      "options": [
+        "Day 32 — by the end of the 16th week",
+        "Week 3 — by the end of week 4",
+        "Day 9 — by the end of week 2",
+        "Week 12 — at birth"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يكتمل نمو الكيس المحّي في اليوم 32 ويبدأ تنكسه بنهاية الأسبوع السادس عشر؛ ودوره تبادل المستقلبات بين الأم والجنين في الفترة التي لا توجد فيها مشيمة وظيفية بعد. اليوم 9 هو وقت ظهور الفراغات في الأرومة الغاذية المندمجة، والأسبوع 3 هو وقت المعيدة وتشكل الكيس نفسه، وليس للكيس المحّي علاقة بالولادة.",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "obgyn_L2_fetal_development_m15",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "concept_id": "obgyn_L2_fetal_development_c4",
+      "question_stem": "In a practical session on fetal circulation, the instructor asks from which vessels the umbilical arteries branch before returning blood to the placenta. The correct answer is:",
+      "options": [
+        "The internal iliac (hypogastric) arteries",
+        "The external iliac arteries",
+        "The descending aorta directly",
+        "The femoral arteries",
+        "The umbilical vein"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ينشعب الشريانان السريان من الشريانين الحرقفيين الداخليين (تحت المعديين) ويعيدان الدم غير المؤكسج والفضلات إلى المشيمة حيث يُعاد أكسجته. الحرقفيان الخارجيان يغذيان الأطراف السفلية، والأبهر النازل يوزع الدم المختلط على أسفل الجسم قبل أن يصل الدم إلى الشريانين السريين، والشريان الفخذي وعاء طرفي بعيد، والوريد السري وعاء وريد وارد لا صادر.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L2_fetal_development_case1",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "Rubella Exposure at Seven Weeks",
+      "scenario": "A 24-year-old daycare worker in early pregnancy contacts the antenatal clinic in a panic: a child in her nursery developed a rubella rash yesterday, and she was documented as non-immune at booking. She wants to know what this could mean for her developing baby.",
+      "vignette": {
+        "age": 24,
+        "sex": "female",
+        "chief_complaint": "Rubella exposure in early pregnancy — worried about the baby",
+        "history": "G1P0, now 7 weeks of gestation by certain LMP (regular 28-day cycles). Works in a daycare nursery. Booking serology 2 weeks ago: rubella IgG negative (non-immune). Yesterday a child in her room developed a rubella rash; today she reports low-grade fever and sore throat. No bleeding or abdominal pain.",
+        "vitals": {
+          "bp": "110/70 mmHg",
+          "hr": "88/min",
+          "rr": "18/min",
+          "temp": "37.4 C",
+          "spo2": "99%"
+        },
+        "exam": "Mild pharyngeal erythema; no rash yet; no lymphadenopathy. Uterus consistent with a 7-week pregnancy; no cervical motion tenderness or bleeding.",
+        "labs": [
+          {
+            "name": "Rubella IgM",
+            "value": "Positive",
+            "flag": "high"
+          },
+          {
+            "name": "beta-hCG",
+            "value": "Appropriately rising for 7 weeks",
+            "flag": "normal"
+          },
+          {
+            "name": "White blood cell count",
+            "value": "6.2 x10^9/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Transvaginal ultrasound: single intrauterine gestational sac with a 7-week embryo and normal cardiac activity."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L2_fetal_development_case1_s1",
+          "prompt": "At 7 weeks of gestation, the conceptus is in which stage of prenatal development, and what does this imply?",
+          "options": [
+            "Germinal (pre-embryonic) stage, 0–2 weeks — before organ formation",
+            "Embryonic period, weeks 3–8 — organogenesis with maximum vulnerability to teratogens",
+            "Fetal period, 9 weeks to birth — organs only being refined",
+            "A stage with no placenta and no risk of transplacental infection"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الأسبوع السابع يقع في المرحلة الجنينية المبكرة (3–8 أسابيع) وهي فترة تكوّن الأعضاء وأخطر فترة لتأثير الأدوية والعدوى العابرة للمشيمة على تطور الجنين. المرحلة الجرثومية انتهت بنهاية الأسبوع الثاني بعد الانغراس، والمرحلة الجنينية المتأخرة تبدأ من الأسبوع التاسع، والمشيمة قد تكونت في الأسبوع الثاني بعد الإباضة فصار عبور العدوى ممكنًا.",
+          "xp": 10,
+          "hints": [
+            "Count the developmental weeks: where do weeks 3–8 fall?",
+            "What is happening to the organs in that window?"
+          ]
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case1_s2",
+          "prompt": "What property of rubella virus makes it dangerous to this embryo?",
+          "options": [
+            "It can cross the placenta and reach the embryo",
+            "It causes maternal anemia that starves the embryo",
+            "It blocks tubal transport only",
+            "It remains restricted to maternal skin and throat"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "فيروس الحصبة الألمانية من العداوى القادرة على عبور المشيمة؛ وخلال المرحلة الجنينية المبكرة تؤثر الأدوية والعدوى العابرة للمشيمة على تطور الجنين وقد تسبب تشوهات خلقية. لا علاقة للآلية بفقر دم الأم أو بانحصار الفيروس في الجلد والحنجرة، والبوق لا دور له بعد أن اكتمل الانغراس داخل الرحم.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case1_s3",
+          "prompt": "Which organ systems are actively being formed during the embryonic period, making them potential targets at this stage?",
+          "options": [
+            "The nervous, circulatory, and respiratory systems",
+            "Only skeletal muscle",
+            "Only the placenta",
+            "No systems form until the third trimester"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "خلال المرحلة الجنينية المبكرة (3–8 أسابيع) تتشكل الأجهزة العصبية والدورانية والتنفسية؛ فالقلب البدائي يظهر أولًا في الأسبوع الرابع مع نشاط قلبي في اليوم 22، ويبدأ الجهاز العصبي بالتطور، ويظهر الجهاز التنفسي كنتيجة لتقسّم المعي الأمامي وتتضح براعم الرئتين بنهاية الأسبوع الرابع. الخيارات الأخرى تتجاهل هذه الأجهزة المتشكلة فعليًا.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case1_s4",
+          "prompt": "Which cardiac milestone has this embryo already passed, explaining the ultrasound finding of cardiac activity?",
+          "options": [
+            "The primitive heart formed and cardiac activity began at 22 days",
+            "Cardiac activity only begins at 12 weeks",
+            "The heart is the last organ to form in the embryo",
+            "Lung buds must appear before any cardiac activity"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "القلب البدائي هو أول عضو يظهر مع بدء تكوّن الأعضاء في الأسبوع الرابع، ويظهر نشاطه القلبي في اليوم 22؛ ولهذا يُرى النشاط القلبي بوضوح في الأسبوع السابع. القول إن النشاط يبدأ في الأسبوع 12 خطأ، والقلب أول الأعضاء لا آخرها، وبراعم الرئتين تظهر بنهاية الأسبوع الرابع أي بعد بدء النشاط القلبي.",
+          "xp": 12
+        }
+      ],
+      "debriefing_ar": "الخلاصة: حامل في الأسبوع السابع (المرحلة الجنينية المبكرة 3–8 أسابيع = فترة تكوّن الأعضاء) تعرضت لعدوى الحصبة الألمانية القادرة على عبور المشيمة، وهذه أخطر فترة لتأثير الأدوية والعدوى على تطور الجنين وإحداث التشوهات، خاصة الأجهزة العصبية والدورانية والتنفسية المتشكلة آنذاك. يظهر النشاط القلبي منذ اليوم 22 ولهذا رُصد على التصوير المبكر. الدرس المستخلص: حدّد المرحلة التطورية بدقة قبل تقدير خطورة أي تعرض دوائي أو عدوى في بداية الحمل.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L2_fetal_development_case2",
+      "lecture_id": "obgyn_L2_fetal_development",
+      "title": "The School-Age Child with an Undetected Patent Ductus Arteriosus",
+      "scenario": "A 6-year-old girl is referred to the pediatric cardiology clinic after her school teacher noticed bluish lips during a sports day. She was born at term with an uncomplicated delivery; her mother recalls occasional blueness when crying as an infant, but no cardiac evaluation was ever performed. Echocardiography now shows a patent (open) ductus arteriosus.",
+      "vignette": {
+        "age": 6,
+        "sex": "female",
+        "chief_complaint": "Bluish lips during exercise noticed at school",
+        "history": "Term vaginal delivery, birth weight appropriate for dates. Recurrent bluish lips when crying during infancy, never evaluated. Normal growth and development otherwise; no hospital admissions. Teacher noticed lip blueness during a school sports day this week.",
+        "vitals": {
+          "bp": "100/60 mmHg",
+          "hr": "102/min",
+          "rr": "22/min",
+          "temp": "36.8 C",
+          "spo2": "92% on room air"
+        },
+        "exam": "Mild central cyanosis of the lips after exertion; no respiratory distress at rest; a cardiac murmur is audible on precordial auscultation; peripheral pulses palpable.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "13.2 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Echocardiography: patent (open) ductus arteriosus with mixing of oxygen-rich and oxygen-poor blood."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L2_fetal_development_case2_s1",
+          "prompt": "Why can this child's patent ductus arteriosus cause cyanosis?",
+          "options": [
+            "It mixes oxygen-rich and oxygen-poor blood, so blood reaching the tissues is not fully oxygenated",
+            "It completely obstructs the descending aorta",
+            "It prevents the lungs from expanding",
+            "It causes fetal hemoglobin to persist after birth"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "القناة الشريانية السالكة تخلط الدم الغني بالأكسجين بالدم الفقير به، فيصل إلى الأنسجة دم غير مؤكسج تمامًا وهو ما يسبب الزراق. لا يوجد انسداد كامل للأبهر النازن، ولا علاقة للقناة بتوسع الرئتين أو بخضاب الجنين.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case2_s2",
+          "prompt": "What normally happens to the ductus arteriosus and the foramen ovale at birth?",
+          "options": [
+            "Placental blood flow ceases and lung respiration begins; the sudden drop in right atrial pressure closes the foramen ovale and the ductus arteriosus begins to close almost immediately",
+            "Both structures enlarge after birth to increase pulmonary blood flow",
+            "The ductus arteriosus converts into the foramen ovale",
+            "Both close only after several years, which is why they may still be open at school age"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند الولادة يتوقف جريان دم المشيمة ويبدأ التنفس الرئوي؛ فيهبط الضغط في الأذين الأيمن فجأة فتُغلق الثقبة البيضوية، وتبدأ القناة الشريانية بالإغلاق فورًا تقريبًا، وتُمحى بقية الأوعية الجنينية ببطء فتبقى بقايا ليفية فقط عند البالغ. لا تتوسع هذه البنى بعد الولادة، ولا تتحول القناة إلى ثقبة، والإغلاق الفسيولوجي فوري لا يمتد سنوات.",
+          "xp": 12,
+          "hints": [
+            "Recall the two events that flip the circulation at birth.",
+            "Which atrial chamber's pressure falls?"
+          ]
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case2_s3",
+          "prompt": "Patent ductus arteriosus and patent foramen ovale each account for approximately what share of congenital heart defects?",
+          "options": [
+            "About 8% each",
+            "About 1% each",
+            "About 40% each",
+            "About 80% each"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "تشكّل القناة الشريانية السالكة نحو 8% من عيوب القلب الخلقية، وتمثل الثقبة البيضوية السالكة النسبة نفسها تقريبًا (8% لكل منهما). النسب 1% و40% و80% لا تطابق أرقام المحاضرة إطلاقًا.",
+          "xp": 8
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case2_s4",
+          "prompt": "Why was this defect not detected earlier, as the lecture warns?",
+          "options": [
+            "Many of these defects go undetected until the child is at least school age",
+            "The defect was invisible to echocardiography",
+            "Cyanosis is impossible before the age of 5",
+            "The ductus arteriosus only opens at school age"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "كثير من هذه العيوب لا يُكتشف قبل بلوغ الطفل سن المدرسة على الأقل، كما حدث لهذه الطفلة التي لوحظ زراقها عند الجهد في المدرسة رغم مؤشرات مبكرة في مرحلة الرضاعة. التصوير بالصدى قادر على كشف القناة، والزراق ممكن في أي عمر، والقناة لا تنفتح في سن المدرسة بل بقيت سالكة منذ الولادة.",
+          "xp": 8
+        },
+        {
+          "id": "obgyn_L2_fetal_development_case2_s5",
+          "prompt": "What is the recommended timing for surgical correction of this defect?",
+          "options": [
+            "Surgical correction is available and ideally completed around age two",
+            "Only after the age of 18",
+            "Surgery is never indicated for patent ductus arteriosus",
+            "Immediately at birth in every case"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التصحيح الجراحي متاح الآن ويفضل إتمامه حوالي عمر السنتين؛ وهذه الحالة كُشفت متأخرة في سن المدرسة، وهو ما يبرز أهمية تقييم أي زراق مجهول مبكرًا. تأجيل الجراحة حتى البلوغ أو نفي الحاجة إليها إطلاقًا خياران خاطئان، والإجراء الفوري عند الولادة ليس قاعدة عامة لكل الحالات.",
+          "xp": 12
+        }
+      ],
+      "debriefing_ar": "الخلاصة: طفلة بعمر 6 سنوات (سن المدرسة) بقناة شريانية سالكة خلطت الدم المؤكسج بغير المؤكسج فوصلت الأنسجة دم غير مؤكسج تمامًا وظهر الزراق عند الجهد. الطبيعي عند الولادة أن يتوقف جريان المشيمة ويبدأ التنفس الرئوي فيهبط ضغط الأذين الأيمن وتُغلق الثقبة البيضوية، وتغلق القناة الشريانية فورًا تقريبًا، وتتحول بقية الأوعية الجنينية إلى بقايا ليفية. القناة السالكة والثقبة السالكة تمثلان نحو 8% لكل منهما من عيوب القلب الخلقية، وكثير منها لا يُكتشف قبل سن المدرسة، والتصحيح الجراحي متاح ويفضل إتمامه حول عمر السنتين.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

@@ -1,0 +1,1432 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L1_reproductive_physiology",
+    "specialty": "obgyn",
+    "title": "Physiology of Female Reproduction",
+    "module": "reproductive_endocrinology",
+    "system": "endocrine",
+    "source": {
+      "file_name": "L1 reproductive physiology1.pdf",
+      "page_count": 25
+    },
+    "tags": [
+      "reproductive physiology",
+      "hypothalamic-pituitary-ovarian axis",
+      "menstrual cycle",
+      "folliculogenesis",
+      "ovulation",
+      "corpus luteum",
+      "endometrium",
+      "sex steroids"
+    ],
+    "order_index": 0,
+    "golden_tip": [
+      "Exam trap: ovulation occurs ~36 hours after the ONSET of the LH surge — not at its peak and not days later.",
+      "The luteal phase is constant at ~14 days; cycle-length variation comes from the follicular phase, so ovulation day = cycle length − 14.",
+      "Meiosis is arrested twice: prophase I from birth until puberty, and metaphase II from ovulation until fertilization.",
+      "Most germ cells are lost to atresia: ~7 million at 5 months' gestation → 1–2 million at birth → <400,000 at puberty → <500 ovulated."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L1_reproductive_physiology_c1",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Reproductive Organs and the Hypothalamic–Pituitary–Ovarian (HPO) Axis",
+      "summary_ar": "يشرح هذا المفهوم الأعضاء التناسلية الأولية (الغدد التناسلية) ووظيفتها المزدوجتين في إنتاج الأمشاج والهرمونات الجنسية، ثم ينتقل إلى محور الوطاء–النخامى–المبيض: هرمون GnRH النبضي المكون من عشرة أحماض أمينية، والغونادوتروبينات FSH وLH، والستيرويدات الجنسية المبيضية، مع حلقات التغذية الراجعة (الإنهيبين والستيرويدات) التي تنظّم المحور بأكمله.",
+      "sections": [
+        {
+          "heading": "The Gonads: Primary Reproductive Organs and Their Dual Function",
+          "body_text": "The gonads are the **primary reproductive organs**: the **testis in the male** and the **ovaries in the female**. The gonads perform two essential functions:\n\n- **Gametogenesis** — production of the gametes: **ova in the female** and **sperm in the male**.\n- **Secretion of sex hormones** — **TESTOSTERONE in the male**, and **estrogen (oestrogen) and progesterone in the female**.\n\nThese two functions — generating haploid gametes and secreting the sex steroids that govern the reproductive tract — are the defining properties of the gonads as primary reproductive organs; every other component of the reproductive system subserves them.",
+          "key_points": [
+            "The gonads are the primary reproductive organs: testis (male) and ovaries (female).",
+            "Gonadal function 1 — gametogenesis: ova in the female, sperm in the male.",
+            "Gonadal function 2 — secretion of sex hormones: testosterone in the male; estrogen and progesterone in the female."
+          ]
+        },
+        {
+          "heading": "Reproductive Hormones: GnRH, Gonadotropins, and Ovarian Steroids",
+          "body_text": "**Gonadotrophic releasing hormone (GnRH)** is a **10-amino-acid peptide** released from the **hypothalamus** in a **pulsatile fashion** into the **hypophysial portal circulation**. There it stimulates the release of the gonadotropins — **FSH** and **LH** — from the **anterior pituitary gland**, which act on the **ovaries** to produce the **sex steroids**: **estrogens from granulosa cells** and **progesterone from thecal cells**.\n\n- **LH stimulates the corpus luteum (CL) to produce progesterone.**\n- The ovaries also produce **gonadal peptides (activin, inhibin, and follistatin)** and **growth factors**.\n- Among their other functions, these ovarian-derived factors **feed back to the hypothalamus and pituitary gland to inhibit** — or, **at the midcycle surge, to augment** — **GnRH and gonadotropin secretion**.\n- The **ovarian steroids are also critical for preparing the endometrium for placental implantation if pregnancy ensues**.\n\nThis cascade — hypothalamic GnRH → pituitary FSH/LH → ovarian steroids and peptides — is the backbone of the menstrual cycle.",
+          "key_points": [
+            "GnRH is a 10-amino-acid peptide secreted in a pulsatile fashion into the hypophysial portal circulation.",
+            "GnRH → FSH and LH from the anterior pituitary → sex steroids from the ovary (estrogens from granulosa cells, progesterone from thecal cells).",
+            "LH stimulates the corpus luteum to produce progesterone.",
+            "Ovarian peptides — activin, inhibin, follistatin — and growth factors feed back on the hypothalamus and pituitary, inhibiting (or augmenting at the midcycle surge) GnRH and gonadotropin secretion.",
+            "Ovarian steroids prepare the endometrium for placental implantation if pregnancy ensues."
+          ]
+        },
+        {
+          "heading": "The HPO Axis Diagram: Signal Flow and Feedback Loops",
+          "body_text": "The female reproductive axis is classically drawn as a **hypothalamic–pituitary–ovarian (HPO) axis diagram** in which arrows run downward from brain to gonad and back up as feedback:\n\n- **Hypothalamus → pituitary:** the hypothalamus releases **GnRH**, which reaches the pituitary through the portal circulation.\n- **Pituitary → ovary (positive stimulation, marked '+'):** **LH and FSH** act on the ovary (a cross-section showing follicles at various stages of development) to drive **follicular maturation**.\n- **Ovary → uterus and systemic circulation:** the ovary releases **estrogen, progesterone, and testosterone** into the systemic circulation; these hormones act on the **uterus** (shown anatomically with fallopian tubes and ovaries).\n- **Steroid feedback (– or +):** **estrogen, progesterone, and testosterone** feed back on the **hypothalamus and pituitary gland** with a negative — or, near midcycle, positive — effect.\n- **Inhibin feedback (–):** **inhibin** released by the ovary exerts **negative feedback on the pituitary** (drawn as a red inhibitory arrow in the diagram).\n\nBecause the loop is closed, the hypothalamus and pituitary continuously monitor ovarian steroid and peptide output and adjust GnRH/gonadotropin secretion accordingly — this is the operating principle of the whole menstrual cycle.",
+          "key_points": [
+            "HPO axis flow: GnRH (hypothalamus) → FSH/LH (pituitary, '+' stimulation) → follicular maturation and steroid output (ovary) → uterus.",
+            "Ovarian steroids (estrogen, progesterone, testosterone) feedback on hypothalamus and pituitary (negative, or positive at midcycle).",
+            "Inhibin selectively inhibits the pituitary (negative feedback)."
+          ],
+          "check": {
+            "prompt": "In the HPO axis diagram, which ovarian hormone selectively exerts negative feedback on the pituitary gland (drawn as the red inhibitory arrow)?",
+            "options": [
+              "Inhibin",
+              "Activin",
+              "Estradiol",
+              "Progesterone",
+              "GnRH"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الإنهيبين هو الهرمون المبيضي الذي يثبّط النخامى الأمامية مباشرة (سهم التغذية الراجعة السلبية الأحمر في المخطط). أما الإستروجين والبروجستيرون والتستوستيرون فتمارس تغذيتها الراجعة على الوطاء والنخامى معاً (سلبية أو إيجابية عند منتصف الدورة)، والأكتيفين ببتيد مبيضي آخر لا يمثل المسار المثبط الرئيسي هنا، بينما GnRH هرمون وطائي لا مبيضي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "GnRH",
+          "definition_ar": "الهرمون المُطلق لمُوجهات الغدد التناسلية: ببتيد مكوّن من 10 أحماض أمينية يُفرز من الوطاء (تحت المهاد) بشكل نبضي عبر الدورة البابية النخامية ليحفّز إفراز FSH وLH من النخامى الأمامية."
+        },
+        {
+          "term": "Gonadotropins (FSH and LH)",
+          "definition_ar": "الغونادوتروبينات: هرمونا FSH وLH اللذان تفرزهما النخامى الأمامية استجابةً لـ GnRH، ويعملان على المبيضين لتنظيم نمو الجريبات وإفراز الستيرويدات الجنسية."
+        },
+        {
+          "term": "Hypophysial portal circulation",
+          "definition_ar": "الدورة الدموية البابية النخامية: شبكة أوعية تربط الوطاء بالنخامى الأمامية وتنقل GnRH إليها مباشرة دون المرور بالدورة العامة."
+        },
+        {
+          "term": "Inhibin",
+          "definition_ar": "الإنهيبين: ببتيد مبيضي يثبّط إفراز FSH من النخامى بتغذية راجعة سلبية؛ ويشمل الإنهيبين أ الذي يفرزه الجسم الأصفر بكميات كبيرة في الطور الأصفري."
+        },
+        {
+          "term": "Activin",
+          "definition_ar": "الأكتيفين: ببتيد مبيضي يُنتَج مع الإنهيبين والفوليستاتين، ويشارك في تنظيم إفراز الغونادوتروبينات وتكوّن الجريبات."
+        },
+        {
+          "term": "Follistatin",
+          "definition_ar": "الفوليستاتين: بروتين مبيضي يرتبط بالأكتيفين ويعدّل نشاطه ضمن تنظيم محور الوطاء–النخامى–المبيض."
+        },
+        {
+          "term": "HPO axis",
+          "definition_ar": "محور الوطاء–النخامى–المبيض: منظومة عصبية هرمونية مغلقة تربط GnRH بالغونادوتروبينات ثم بستيرويدات المبيض وبتغذيتها الراجعة على الدماغ."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c2",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Effects of the Female Sex Steroids: Estrogen and Progesterone",
+      "summary_ar": "يرتّب هذا المفهوم تأثيرات الإستروجين والبروجستيرون على الجهاز التناسلي وبقية الأنسجة: فالإستروجين يحفّز نمو الجريبات المبيضية وانقباضات الرحم والأنابيب ونمو قنوات الثدي والعظام (مع انغلاق المشاش بجرعات عالية)، ويسبب نقصه الهبّات الساخنة، ويحفّز الاحتفاظ بالسوائل ويحمي من تصلّب الشرايين؛ أما البروجستيرون فيحوّل البطانة إلى الطور الإفرازي، ويثخّن مخاط العنق، ويُرخي العضلات الملساء، ويحفّز غدد الثدي، ويرفع حرارة الجسم القاعدية.",
+      "sections": [
+        {
+          "heading": "Effects of Estrogens",
+          "body_text": "**Estrogens** act on the ovaries and on many extragenital tissues. The effects listed in the lecture are:\n\n- **Ovary:** stimulates **growth of the ovarian follicles**.\n- **Myometrium and fallopian tubes:** increases **myometrial and tubal contraction**.\n- **Breast:** stimulates **breast growth — ducts and fat** (the ductal system and the fatty stroma).\n- **Bone:** stimulates **bone growth**; at **high doses, estrogens promote epiphyseal closure via a direct action on proliferating chondrocytes**, and thereby **stop further growth** (linear growth ends once the epiphyses fuse).\n- **Vascular:** **deficiency produces hot flushes** — the classic vasomotor symptom of estrogen lack.\n- **Fluid balance:** stimulates **fluid retention**.\n- **Arteries:** **protects against atherosclerosis**.\n\nNote the exam favourite: estrogen is growth-promoting in bone, but at high doses it fuses the growth plate — the same hormone that builds the skeleton in youth terminates linear growth at puberty.",
+          "key_points": [
+            "Estrogen stimulates growth of the ovarian follicles.",
+            "Estrogen increases myometrial and tubal contractions.",
+            "Estrogen stimulates breast growth of the ducts and fat.",
+            "High-dose estrogen promotes epiphyseal closure via direct action on proliferating chondrocytes, stopping further growth.",
+            "Estrogen deficiency (vascular effect) produces hot flushes.",
+            "Estrogen stimulates fluid retention and protects against atherosclerosis."
+          ]
+        },
+        {
+          "heading": "Effects of Progesterone",
+          "body_text": "**Progesterone**, the hormone of the luteal phase and of pregnancy, has the following effects:\n\n- **Endometrium:** **converts the estrogen-primed endometrium to the secretory phase**.\n- **Cervix:** induces **thick, sticky cervical mucus**.\n- **Smooth muscle:** **decreases contractions of smooth muscle** (uterine and tubal quiescence).\n- **Breast:** stimulates **breast growth — glands** (the glandular elements, complementing estrogen's ductal and fat growth).\n- **Hypothalamus:** has **feedback effects on the hypothalamus**.\n- **Thermogenesis:** **increases basal body temperature** — the physiological basis of the biphasic temperature chart used in fertility awareness.\n\nA convenient contrast for revision: **estrogen is proliferative and contracts smooth muscle, whereas progesterone is secretory and relaxes it**; estrogen grows the ducts and fat of the breast, progesterone grows the glands.",
+          "key_points": [
+            "Progesterone converts the estrogen-primed endometrium to the secretory phase.",
+            "Progesterone induces thick, sticky cervical mucus.",
+            "Progesterone decreases smooth-muscle contractions (myometrium and tubes).",
+            "Progesterone stimulates breast glandular growth.",
+            "Progesterone exerts feedback effects on the hypothalamus and increases basal body temperature."
+          ],
+          "check": {
+            "prompt": "A woman charting her basal body temperature notices a sustained rise that begins after ovulation and persists until menses. Which hormone produces this thermogenic effect, and which ovarian structure secretes it?",
+            "options": [
+              "Estradiol from the dominant follicle",
+              "Progesterone from the corpus luteum",
+              "FSH from the anterior pituitary",
+              "Inhibin A from the theca cells",
+              "Testosterone from the ovary"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "البروجستيرون يرفع حرارة الجسم القاعدية، وهو يُفرز من الجسم الأصفر في الطور الأصفري، لذلك يرتفع منحنى الحرارة بعد الإباضة ويبقى مرتفعاً حتى يتراجع الجسم الأصفر قبيل الطمث. الخيارات الأخرى خاطئة: الإستراديول يكاثر البطانة ولا يرفع الحرارة، وFSH هرمون نخامي لا حراري، والإنهيبين أ مثبّت لـFSH، والتستوستيرون ليس سبب ارتفاع الحرارة القاعدية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Estrogen (oestrogen)",
+          "definition_ar": "الإستروجين: الستيرويد الجنسي الأنثوي الرئيسي (يُكتب oestrogen بالاصطلاح البريطاني)، يحفّز نمو الجريبات والبطانة التكاثرية وقنوات الثدي، ويحمي العظام والشرايين، ونقصه يسبب الهبّات الساخنة."
+        },
+        {
+          "term": "Progesterone",
+          "definition_ar": "البروجستيرون: هرمون الجسم الأصفر الذي يحوّل البطانة المُهيّأة بالإستروجين إلى طور إفرازي، ويثخّن مخاط العنق، ويُرخي العضلات الملساء، ويرفع حرارة الجسم القاعدية."
+        },
+        {
+          "term": "Basal body temperature",
+          "definition_ar": "حرارة الجسم القاعدية: ترتفع في الطور الأصفري بفعل البروجستيرون بعد الإباضة، وتُستخدم في متابعة الخصوبة مؤشراً على حدوث الإباضة."
+        },
+        {
+          "term": "Hot flushes",
+          "definition_ar": "الهبّات الساخنة: نوبات حسّ حرارة مفاجئة تصيب النساء عند نقص الإستروجين (بعد سنّ اليأس عادة)؛ وهي التأثير الوعائي المذكور لنقص الإستروجين."
+        },
+        {
+          "term": "Epiphyseal closure",
+          "definition_ar": "انغلاق المشاش (الصفائح النموئية): يعزّزه الإستروجين بجرعات عالية عبر تأثيره المباشر على الخلايا الغضروفية المتكاثرة، فيوقف النمو الطولي نهائياً."
+        },
+        {
+          "term": "Cervical mucus",
+          "definition_ar": "مخاط عنق الرحم: يصبح سميكاً لزجاً تحت تأثير البروجستيرون بعد الإباضة، وهو أحد التأثيرات الستة المعروفة للبروجستيرون."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c3",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Oogenesis, Meiotic Arrest, and the Ovarian Reserve",
+      "summary_ar": "يتناول هذا المفهوم تكوّن البويضات (Oogenesis) واحتياطي المبيض: نحو سبعة ملايين أوغونيا في الشهر الخامس من الحمل، ومليون إلى مليونين عند الولادة، وأقل من 400,000 عند بدء البلوغ، وأقل من 500 بويضة تُباض خلال العمر كله، بينما يضيع الأغلب الساحق بالضمور الجريبي. كما يشرح توقّف الانقسام الاختزالي في الطور التمهيدي الأول من الولادة حتى البلوغ، ثم في الطور الاستوائي الثاني من الإباضة حتى الإخصاب.",
+      "sections": [
+        {
+          "heading": "The Ovarian Reserve: Numbers Across a Lifetime",
+          "body_text": "Female germ-cell numbers follow a relentless downward trajectory:\n\n- At about **5 months' gestation**, the ovaries contain approximately **seven million oogonia**, which **initiate meiosis**.\n- The oogonia produce **primary oocytes** that are **arrested in prophase I of meiosis from the time of birth until puberty**.\n- Each primary oocyte is **surrounded by a single layer of flattened granulosa cells**, creating a **primordial follicle**.\n- Approximately **1–2 million oogonia are present at birth**.\n- **Fewer than 400,000 are present at the initiation of puberty**.\n- Of these, **fewer than 500 are destined to ovulate**.\n- Therefore, **most germ cells are lost through atresia** — degeneration of oocytes and their follicles.\n\nIn other words, more than 99% of the lifetime endowment of germ cells never ovulates: **atresia, not ovulation, is the fate of almost every oocyte**.",
+          "key_points": [
+            "~7 million oogonia at about 5 months' gestation; they initiate meiosis.",
+            "Primary oocytes are arrested in prophase I of meiosis from birth until puberty.",
+            "A primary oocyte + single layer of flattened granulosa cells = primordial follicle.",
+            "1–2 million oogonia at birth; <400,000 at initiation of puberty; <500 ovulate in a lifetime.",
+            "Most germ cells are lost through atresia."
+          ]
+        },
+        {
+          "heading": "Meiosis in the Oocyte: Two Arrests, Polar Bodies, and the Zygote",
+          "body_text": "**After puberty, during each menstrual cycle, several oocytes resume meiosis** and undergo their **first meiotic division during ovulation**. This division results in the production of a **secondary oocyte** and **one polar body**. The meiotic division is then **arrested in metaphase II**. **Fertilization triggers completion of the second meiotic division**, and the result is **one ovum** and an **additional (second) polar body**.\n\nThe oogenesis / follicle-development timeline with chromosome numbers (from the dual-column diagram):\n\n- **Fetal period:** **oogonium (46 chromosomes, diploid)** → **mitosis** → **primary oocyte (46)** with **meiosis I arrested in prophase**, housed in a **primordial follicle**.\n- **Childhood:** the **primary oocyte (46)** remains arrested in **prophase I**, now within a **primary follicle**.\n- **Reproductive years:** the **selected oocyte in a given cycle completes meiosis I** → **secondary oocyte (23 chromosomes, haploid)** plus **first polar body (23)**; **meiosis II begins and arrests in metaphase**; the follicle advances through the **secondary** and **tertiary/Graafian** stages.\n- **Ovulation:** releases the **ovulated secondary oocyte**.\n- **Fertilization:** **meiosis II is completed following fertilization** → **second polar body (23)** extruded → **zygote** with **23 maternal + 23 paternal chromosomes = 46 total**.",
+          "key_points": [
+            "After puberty, several oocytes resume meiosis each cycle; meiosis I is completed during ovulation.",
+            "Meiosis I completion yields a secondary oocyte + first polar body; the division then arrests in metaphase II.",
+            "Fertilization triggers completion of meiosis II → one ovum + an additional (second) polar body.",
+            "Oogonium/primary oocyte = 46 chromosomes (diploid); secondary oocyte and polar bodies = 23 (haploid); zygote = 23 + 23 = 46."
+          ],
+          "check": {
+            "prompt": "At the moment of ovulation, what is released from the ruptured Graafian follicle, and at what meiotic stage is it arrested?",
+            "options": [
+              "A primary oocyte arrested in prophase I",
+              "A secondary oocyte arrested in metaphase II",
+              "A mature ovum that has completed meiosis II",
+              "A diploid secondary oocyte in anaphase I",
+              "An oogonium undergoing mitosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "عند الإباضة تُطرح البييضة الثانوية (23 كروموسوماً، أحادية الصيغة) وهي متوقفة في الطور الاستوائي الثاني من الانقسام الاختزالي؛ فالانقسام الأول اكتمل أثناء الإباضة وأنتج البييضة الثانوية مع الجسم القطبي الأول. أما التوقف في الطور التمهيدي الأول فيخصّ البييضة الأولية من الولادة حتى البلوغ، واكتمال الانقسام الثاني لا يحدث إلا بعد الإخصاب فتنتج البويضة الناضجة مع الجسم القطبي الثاني."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Oogonia",
+          "definition_ar": "الأوغونيا (الخلايا البيضية الأولية): الخلايا الجنسية الأنثوية قبل بدء الانقسام الاختزالي؛ عددها الأقصى نحو 7 ملايين في الشهر الخامس من الحمل، ويصل عددها 1–2 مليون عند الولادة."
+        },
+        {
+          "term": "Atresia",
+          "definition_ar": "الضمور الجريبي (الأتريزيا): موت وتراجع الجريبات والبييضات؛ وهو المصير الطبيعي للأغلبية الساحقة من الخلايا الجنسية الأنثوية بدلاً من الإباضة."
+        },
+        {
+          "term": "Primary oocyte",
+          "definition_ar": "البييضة الأولية: ناتج انقسام الأوغونيا، ثنائية الصيغة الصبغية (46 كروموسوماً)، متوقفة في الطور التمهيدي الأول للانقسام الاختزالي من الولادة حتى البلوغ."
+        },
+        {
+          "term": "Secondary oocyte",
+          "definition_ar": "البييضة الثانوية: أحادية الصيغة (23 كروموسوماً)، تنتج عن إتمام الانقسام الاختزالي الأول أثناء الإباضة، وتتوقف في الطور الاستوائي الثاني حتى الإخصاب."
+        },
+        {
+          "term": "Polar body",
+          "definition_ar": "الجسم القطبي: خلية صغيرة أحادية الصيغة تُطرح خلال الانقسام الاختزالي (الأول ثم الثاني) حتى تحتفظ البييضة بكامل سيتوبلازمها؛ الجسم الأول يطرح مع إتمام الانقسام الأول، والثاني بعد الإخصاب."
+        },
+        {
+          "term": "Zygote",
+          "definition_ar": "اللاقحة (الزيجوت): ناتج الإخصاب؛ تضم 23 كروموسوماً من الأم و23 من الأب (46 كروموسوماً إجمالاً)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c4",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Folliculogenesis and the Follicular Phase",
+      "summary_ar": "يستعرض هذا المفهوم تكوّن الجريبات المبيضية مرحلةً بمرحلة من الجريب الأولي البدئي إلى جريب غراف الناضج، مع التمييز بين المرحلة ما قبل الجوفية المستقلة عن الهرمونات والمرحلة الجوفية المعتمدة على هرمونات النخامية، ويشرح تجنيد الجريب المسيطر من مجموعة جريبات بدأت نموها قبل دورتين إلى ثلاث دورات (3–11 جريباً لكل مبيض عند الشابات)، إضافة إلى بنية المبيض التشريحية التي تحتضن هذه المراحل.",
+      "sections": [
+        {
+          "heading": "Stages of Follicle Development: Preantral and Antral Phases",
+          "body_text": "**Development of the oocyte is the key event in the follicular phase of the menstrual cycle.** Thousands of **primordial follicles** are in a **continuous state of development from birth**. Folliculogenesis is divided into a **preantral phase** and an **antral phase**:\n\n- **Oogonia** → **follicle formation**.\n- **Primordial follicle** — an oocyte surrounded by a **single layer of flattened (squamous) granulosa cells**.\n- **Primary follicle (follicle activation)** — in the primary-follicle stage **the granulosa cells of developing follicles become cuboidal and increase in number**; a **zona pellucida** becomes visible around the oocyte.\n- **Secondary (preantral) follicle (growth)** — development includes **final oocyte growth** and a further increase in granulosa cell number; the follicle shows **multiple layers (stratified) of granulosa cells** with a **prominent zona pellucida**, and the **stroma around the granulosa cell layer differentiates into the theca interna and the theca externa**.\n- **Tertiary (antral) follicle** — begins the **antral phase**; **follicular fluid collects between the granulosa cells**, ultimately producing a fluid-filled space known as the **antrum**. The antral phase proceeds through **recruitment** (selection of a cohort of follicles for further development), **selection** (narrowing of the follicle pool), and **dominance** (emergence of a single dominant follicle).\n- **Preovulatory (Graafian) follicle** — **further accumulation of antral fluid results in rapid follicular growth**; this mature follicle has a **single, large, fluid-filled antrum**, with the **oocyte pushed to one side**, surrounded by a specialized layer of granulosa cells (the **corona radiata**); the follicle wall consists of multiple layers of **granulosa and theca cells**.\n\nSummary of transitions: **Oogonia → (follicle formation) → primordial → (activation) → primary → (growth) → secondary → (growth) → tertiary → (recruitment/selection/dominance) → preovulatory (Graafian)**.",
+          "key_points": [
+            "Oocyte development is the key event of the follicular phase; primordial follicles develop continuously from birth.",
+            "Primordial: flattened single granulosa layer. Primary: cuboidal granulosa cells + zona pellucida.",
+            "Secondary (preantral): multiple granulosa layers, final oocyte growth, theca interna and theca externa appear.",
+            "Tertiary (antral): follicular fluid forms the antrum; recruitment → selection → dominance.",
+            "Preovulatory (Graafian): large antrum, oocyte eccentric with corona radiata, granulosa + theca wall."
+          ]
+        },
+        {
+          "heading": "Hormonal Dependence and Recruitment of the Ovulatory Follicle",
+          "body_text": "- The **initial stages of follicular development are independent of hormonal stimulation** — follicles advance to the preantral stage without gonadotropin support.\n- **Development beyond the pre-antral stage depends on pituitary hormones** (FSH and LH): antral follicles require gonadotropins to survive and keep growing.\n- The **ovulatory follicle is recruited from a cohort that began development two to three cycles prior** to the current ovulatory cycle.\n- In **young women, 3–11 follicles per ovary** develop in each cycle.\n- **Further accumulation of antral fluid produces rapid follicular growth**, culminating in the **preovulatory (Graafian) follicle**.\n\nThis gonadotropin dependence of the antral phase explains why follicular dynamics — and follicular-phase length — hinge on pituitary FSH/LH drive: the recruited cohort must produce a dominant follicle whose estradiol output can eventually trigger the LH surge.",
+          "key_points": [
+            "Preantral follicle development is hormone-independent.",
+            "Development beyond the preantral stage depends on pituitary hormones (FSH, LH).",
+            "The ovulatory follicle is recruited from a cohort that began development 2–3 cycles earlier.",
+            "3–11 follicles develop per ovary per cycle in young women.",
+            "Antral fluid accumulation drives rapid growth to the Graafian follicle."
+          ],
+          "check": {
+            "prompt": "Development of follicles up to which stage is independent of hormonal (gonadotropin) stimulation?",
+            "options": [
+              "Up to and including the preantral (secondary) follicle",
+              "Only the Graafian follicle is hormone-independent",
+              "From the antral (tertiary) follicle onward",
+              "All stages require FSH and LH",
+              "Only primordial follicles develop without hormones"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المراحل الأولى من تطور الجريبات (حتى مرحلة ما قبل الجوفي/الجريب الثانوي) مستقلة عن التحفيز الهرموني، أما التطور بعد مرحلة ما قبل الجوفية — أي تشكّل الجريبات الجوفية (الثالثة) وصولاً إلى جريب غراف — فيعتمد على هرمونات النخامية FSH وLH. لذلك فإن الخيار الأول هو الصحيح، وبقية الخيارات تخالف هذه القاعدة الفسيولوجية."
+          }
+        },
+        {
+          "heading": "Ovarian Architecture: The Setting for Folliculogenesis",
+          "body_text": "An ovarian cross-section shows the developing follicles embedded in an organized architecture, from outside to inside:\n\n- **Germinal epithelium** — the outermost layer of the ovary.\n- **Tunica albuginea** — the dense connective-tissue layer beneath the germinal epithelium.\n- **Cortex** — the outer functional zone of the ovary containing the follicles.\n- **Medulla** — the inner central region containing blood vessels and nerves; **arteries (red) and veins (blue)** branch throughout the medulla and cortex to supply the developing follicles.\n- **Ovarian ligament** — the structure attaching the ovary to the uterus.\n\nThe same cross-section displays each follicle stage with its oocyte:\n\n- **Primordial follicles** — small, peripheral structures: **primary oocyte surrounded by a single layer of flat follicular cells**.\n- **Primary follicles** — slightly larger, with an enlarged oocyte surrounded by a **single layer of cuboidal granulosa cells**; contains a **primary oocyte**.\n- **Secondary follicle** — **multiple layers of granulosa cells** and formation of the **antrum** (fluid-filled cavity); contains a **primary oocyte**.\n- **Vesicular (Graafian or mature) follicle** — a large, prominent structure with a **large fluid-filled antrum**, a **secondary oocyte arrested in metaphase II**, the **zona pellucida** (clear glycoprotein layer) around the oocyte, which is **pushed to one side** of the follicle.\n- **Ovulation** — rupture of the vesicular follicle with release of the **ovulated secondary oocyte**, still surrounded by the **zona pellucida** and enclosed by the **corona radiata** — the layer of granulosa cells that remains attached to the oocyte after ovulation.\n- **Post-ovulatory structures:** the **developing corpus luteum** (the collapsed follicle after ovulation, filling with blood and transforming into an endocrine structure), the **corpus luteum** itself (a large **yellow** endocrine gland secreting **progesterone and some estrogen**), and the **corpus albicans** — the regressed **white fibrous scar tissue** that remains after the corpus luteum degenerates if pregnancy does not occur.",
+          "key_points": [
+            "Ovarian zones (outside → in): germinal epithelium, tunica albuginea, cortex (follicles), medulla (vessels and nerves); the ovarian ligament attaches ovary to uterus.",
+            "Primordial follicle = primary oocyte + single flat cell layer; primary follicle = cuboidal granulosa; secondary follicle = multiple granulosa layers + antrum.",
+            "Vesicular (Graafian) follicle: large antrum, secondary oocyte in metaphase II arrest, zona pellucida, eccentric oocyte.",
+            "Ovulation releases the secondary oocyte with its zona pellucida and corona radiata.",
+            "Corpus luteum = yellow progesterone-secreting gland; corpus albicans = white fibrous scar after regression."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Primordial follicle",
+          "definition_ar": "الجريب الأولي البدئي: بييضة أولية محاطة بطبقة واحدة من خلايا غرانولوزا مسطّحة (حرشفية)؛ الوحدة الأساسية لاحتياطي المبيض."
+        },
+        {
+          "term": "Primary follicle",
+          "definition_ar": "الجريب الأولي: بييضة محاطة بطبقة واحدة من خلايا غرانولوزا مكعبة مع ظهور المنطقة الشفافة حول البييضة."
+        },
+        {
+          "term": "Secondary (preantral) follicle",
+          "definition_ar": "الجريب الثانوي (ما قبل الجوفي): طبقات متعددة من خلايا غرانولوزا مع نمو البييضة النهائي، وتمايز السدى المحيط إلى التيكا الداخلية والخارجية."
+        },
+        {
+          "term": "Antrum",
+          "definition_ar": "الجوف الجريبي: فراغ مليء بالسائل الجريبي يتجمّع بين خلايا غرانولوزا في الجريب الثالث (الجوفي) ويتمدد ليشكّل جوف جريب غراف."
+        },
+        {
+          "term": "Graafian (preovulatory/vesicular) follicle",
+          "definition_ar": "جريب غراف (الجريب الحويصلي الناضج قبل الإباضة): جريب كبير ذو جوف واحد واسع مليء بالسائل، والبييضة الثانوية مدفوعة إلى أحد جانبيه ومحاطة بالتاج المُشِعّ."
+        },
+        {
+          "term": "Corona radiata",
+          "definition_ar": "التاج المُشِعّ: طبقة من خلايا غرانولوزا تبقى ملتصقة بالبييضة وتحيط بها بعد الإباضة."
+        },
+        {
+          "term": "Zona pellucida",
+          "definition_ar": "المنطقة الشفافة: غلاف غليكوبروتيني شفاف يحيط بالبييضة ويبقى معها عند طرحها خلال الإباضة."
+        },
+        {
+          "term": "Theca interna",
+          "definition_ar": "التيكا الداخلية: الطبقة الداخلية المتمايزة من السدى حول خلايا غرانولوزا في الجريب الثانوي؛ موضع عمل LH في إنتاج الأندروجينات."
+        },
+        {
+          "term": "Theca externa",
+          "definition_ar": "التيكا الخارجية: الطبقة الخارجية الليفية من غلاف الجريب، تمايزت من السدى المحيط بخلايا غرانولوزا."
+        },
+        {
+          "term": "Recruitment",
+          "definition_ar": "التجنيد: اختيار مجموعة من الجريبات الجوفية للنمو في كل دورة (3–11 جريباً لكل مبيض عند الشابات)، وتبدأ مجموعة الجريب المُباض نموها قبل دورتين إلى ثلاث دورات."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c5",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Ovarian Steroidogenesis: The Two-Cell, Two-Gonadotropin Theory",
+      "summary_ar": "يشرح هذا المفهوم نظرية الخليتين والغونادوتروبينين في تصنيع الإستروجين داخل الجريب المبيضي: خلايا التيكا تحت تأثير LH تحوّل الكوليسترول إلى أندروجينات (أندروستينيديون) تعبر الغشاء القاعدي بالانتشار إلى خلايا غرانولوزا، حيث يحفّز FSH إنزيم الأروماتاز (P450AROM) لتحويلها إلى إسترون ثم إستراديول. كما يُفصّل المسار الإنزيمي كاملاً من الكوليسترول إلى الإستراديول مع الإنزيمات P450scc وP450C17 و3β-HSD وإيزوميراز Δ5–Δ4 و17β-HSD.",
+      "sections": [
+        {
+          "heading": "Division of Labor Between Theca and Granulosa Cells",
+          "body_text": "**Steroidogenesis** within the ovarian follicle involves **two cell types**:\n\n1. **Granulosa cells**\n2. **Theca cells**\n\n- **FSH is responsible for proliferation of the granulosa cells.**\n- **Within the theca cells, LH stimulates the production of androgens from cholesterol.**\n- **FSH stimulates the production of the thecally derived androgens to estrogens (aromatization).**\n\n**The two-stage model of estrogen synthesis** holds that **androgen precursors are synthesized in the outer layer (theca cells) of the ovarian follicle and diffuse to the inner layer (granulosa cells) for conversion to estrogens; LH drives the former, FSH the latter**. In the schematic, LH and FSH (orange boxes) point downward with arrows into the theca-cell and granulosa-cell boxes respectively, and a horizontal diffusion arrow carries the androgen precursor from the theca box across to the granulosa box.\n\n**Compartmentalization** explains why both cells are needed:\n\n- The **theca cell possesses the enzymes to produce androgens (androstenedione) but lacks significant aromatase activity**.\n- The **granulosa cell lacks the enzymes to produce androgens from cholesterol but expresses high levels of aromatase**.\n- The **synthesis of estradiol therefore requires both cell types working in concert across the basement membrane**.",
+          "key_points": [
+            "Two cell types make follicular steroids: granulosa cells and theca cells.",
+            "FSH proliferates granulosa cells; LH drives thecal androgen production from cholesterol.",
+            "FSH-stimulated aromatization converts thecally derived androgens to estrogens.",
+            "Two-stage model: androgens made in the outer theca layer diffuse to the inner granulosa layer for conversion to estrogens (LH drives the former, FSH the latter).",
+            "Theca cells have androgen-synthesizing enzymes but no aromatase; granulosa cells cannot make androgens from cholesterol but are aromatase-rich."
+          ]
+        },
+        {
+          "heading": "The Enzymatic Pathway from Cholesterol to Estradiol",
+          "body_text": "**Synthesis of oestrogen** (Fig. 60-3: biosynthesis of androstenedione and estradiol in the follicle) proceeds through the **two-cell, two-gonadotropin pathway**:\n\n**Theca cell (LH-stimulated steps, each marked '+'):**\n\n- **Cholesterol** enters the theca cell from the plasma membrane.\n- In the **mitochondrion**: **cholesterol → pregnenolone** via **P450scc** (LH-stimulated).\n- In the **smooth endoplasmic reticulum**: **pregnenolone → dehydroepiandrosterone (DHEA)** via **P450C17** (LH-stimulated); then **DHEA → androstenedione** via **3β-HSD and Δ5–Δ4 isomerase** (LH-stimulated).\n- **Androstenedione crosses the basement membrane** into the granulosa cell.\n\n**Granulosa cell (FSH-stimulated):**\n\n- In the **smooth endoplasmic reticulum**: **androstenedione → estrone** via **P450AROM (aromatase)** — the FSH-stimulated step; then **estrone → estradiol** via **17β-HSD (17β-hydroxysteroid dehydrogenase)**.\n- **Estradiol is secreted** out of the granulosa cell into the follicular fluid and circulation.\n\nChained together: **cholesterol → pregnenolone → DHEA → androstenedione → (diffusion across the basement membrane) → estrone → estradiol**, with **LH driving the thecal steps and FSH driving aromatization** in the granulosa cell.",
+          "key_points": [
+            "Theca cell (LH): cholesterol → pregnenolone (P450scc) → DHEA (P450C17) → androstenedione (3β-HSD + Δ5–Δ4 isomerase).",
+            "Androstenedione diffuses across the basement membrane to the granulosa cell.",
+            "Granulosa cell (FSH): androstenedione → estrone (P450AROM aromatase) → estradiol (17β-HSD).",
+            "Estradiol is the final secreted product of the two-cell, two-gonadotropin pathway."
+          ],
+          "check": {
+            "prompt": "In the two-cell, two-gonadotropin model, which product synthesized in the theca cell crosses the basement membrane to the granulosa cell?",
+            "options": [
+              "Cholesterol",
+              "Pregnenolone",
+              "Androstenedione",
+              "Estradiol",
+              "Inhibin"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الأندروستينيديون هو الأندروجين الذي تصنعه خلايا التيكا من الكوليسترول تحت تأثير LH، ثم يعبر الغشاء القاعدي بالانتشار إلى خلايا غرانولوزا حيث يحوّله إنزيم الأروماتاز P450AROM (المحفَّز بـ FSH) إلى إسترون ثم إلى إستراديول بواسطة 17β-HSD. أما الكوليسترول والبريغنينولون فركائز تيكية مبكرة لا تعبر، والإستراديول هو المنتج النهائي الغرانولوزي، والإنهيبين ببتيد وليس ستيرويداً وسيطاً."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Two-cell, two-gonadotropin theory",
+          "definition_ar": "نظرية الخليتين والغونادوتروبينين: تصنيع الإستراديول يتطلب تعاون خلايا التيكا (إنتاج الأندروجينات تحت تأثير LH) وخلايا غرانولوزا (الأرومتة تحت تأثير FSH) عبر الغشاء القاعدي."
+        },
+        {
+          "term": "Theca cells",
+          "definition_ar": "خلايا التيكا: الطبقة الخارجية من غلاف الجريب؛ تحوّل الكوليسترول إلى أندروجينات (أندروستينيديون) بتحفيز LH، وتفتقر إلى الأروماتاز."
+        },
+        {
+          "term": "Granulosa cells",
+          "definition_ar": "خلايا غرانولوزا: الطبقة الداخلية من خلايا الجريب؛ تتكاثر بتأثير FSH، وتحوّل الأندروجينات القادمة من التيكا إلى إستروجينات عبر الأروماتاز، وتفتقر إلى إنزيمات تصنيع الأندروجين من الكوليسترول."
+        },
+        {
+          "term": "Aromatization",
+          "definition_ar": "الأرومَتة: تحويل الأندروجينات (الأندروستينيديون) إلى إستروجينات (إسترون) بوساطة إنزيم الأروماتاز P450AROM داخل خلايا غرانولوزا؛ خطوة معتمدة على FSH."
+        },
+        {
+          "term": "Androstenedione",
+          "definition_ar": "الأندروستينيديون: الأندروجين الرئيسي المنتَج في خلايا التيكا من الكوليسترول عبر البريغنينولون وDHEA؛ يعبر الغشاء القاعدي ليكون الركيزة الأساسية لتصنيع الإستروجينات."
+        },
+        {
+          "term": "P450scc",
+          "definition_ar": "إنزيم P450scc (إنزيم شقّ السلسلة الجانبية للكوليسترول): يحوّل الكوليسترول إلى بريغنينولون داخل متقدرة خلية التيكا، ويُحفَّز بـ LH."
+        },
+        {
+          "term": "P450C17",
+          "definition_ar": "إنزيم P450C17: يحوّل البريغنينولون إلى DHEA في الشبكة الإندوبلازمية الملساء لخلية التيكا، ويُحفَّز بـ LH."
+        },
+        {
+          "term": "Estradiol",
+          "definition_ar": "الإستراديول: الإستروجين الرئيسي للدورة الشهرية؛ يُصنَّع في خلايا غرانولوزا من الأندروستينيديون عبر إسترون، بأروماتاز FSH-المعتمد وإنزيم 17β-HSD."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c6",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Ovulation, the Luteal Phase, and the Corpus Luteum",
+      "summary_ar": "يغطي هذا المفهوم الإباضة والطور الأصفري: فالارتفاع السريع للإستراديول أواخر الطور الجريبي يبدّل التغذية الراجعة من سلبية إلى إيجابية على مستوى الوطاء والنخامى الأمامية فتتولد دفعة LH، وتحدث الإباضة بعد 36 ساعة من بدء الدفعة. ثم يتشكّل الجسم الأصفر بخلايا غرانولوزا-لوتئينية وأصغر منها تيكا-لوتئينية، ويفرز البروجستيرون (بذروة في منتصف الطور الأصفري) والإنهيبين أ المثبط لـFSH، ويبقى الطور الأصفري ثابتاً نحو 14 يوماً قبل اللوتئوليزيس وتشكّل الجسم الأبيض.",
+      "sections": [
+        {
+          "heading": "The LH Surge and the Timing of Ovulation",
+          "body_text": "**Late in the follicular phase, the rapid estradiol level rise triggers a switch from negative to positive feedback at both the hypothalamus and the anterior pituitary gland.** This feedback change **generates a surge in LH levels**.\n\n- **LH induces reentry of the oocyte into meiosis** (completion of meiosis I → secondary oocyte).\n- **LH induces luteinization of the granulosa cells in the dominant follicle.**\n- **Ovulation occurs 36 hours after the onset of the LH surge** — the single most quoted timing fact of the menstrual cycle and a favourite exam question.\n\nThe positive-feedback switch is the physiological climax of the follicular phase: the dominant follicle signals, through its rapidly rising estradiol output, that it is mature and ready to ovulate.",
+          "key_points": [
+            "Rapid late-follicular estradiol rise switches feedback from negative to positive at the hypothalamus AND anterior pituitary.",
+            "The feedback switch generates the LH surge.",
+            "LH induces oocyte reentry into meiosis and luteinization of granulosa cells in the dominant follicle.",
+            "Ovulation occurs 36 hours after the ONSET of the LH surge."
+          ],
+          "check": {
+            "prompt": "Ovulation occurs how long after the onset of the LH surge?",
+            "options": [
+              "6 hours",
+              "12 hours",
+              "36 hours",
+              "72 hours",
+              "7 days"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "تحدث الإباضة بعد 36 ساعة من بدء دفعة LH. تتولد الدفعة نتيجة تحوّل التغذية الراجعة للإستراديول السريع الارتفاع من سلبية إلى إيجابية على مستوى الوطاء والنخامى الأمامية معاً، ثم يعيد LH البييضة إلى الانقسام الاختزالي ويلوّتن خلايا غرانولوزا في الجريب المسيطر. الأزمنة الأخرى (6 أو 12 أو 72 ساعة أو 7 أيام) لا تمثل التوقيت الفسيولوجي الصحيح."
+          }
+        },
+        {
+          "heading": "Luteinization and Progesterone Production",
+          "body_text": "The **luteal phase is characterized by the production of progesterone**, which **depends on continuous LH secretion**. **Maximal levels of progesterone production are observed in the midluteal phase**.\n\n- **Following ovulation, the remaining granulosa cells plus some of the theca cells differentiate into the corpus luteum.** This process **requires LH stimulation** and includes both **morphologic and functional changes known as luteinization**.\n- During luteinization, **the granulosa and theca cells proliferate and undergo hypertrophy** to form **granulosa-lutein cells** and **smaller theca-lutein cells**, respectively.\n- The **corpus luteum also produces large quantities of inhibin A**. This **coincides with a drop in circulating FSH levels in the luteal phase**.\n- **If inhibin A levels decline at the end of the luteal phase, FSH levels rise once more** to begin **selection of an oocyte cohort for the next menstrual cycle**.\n\nThus the luteal phase simultaneously suppresses (inhibin A, progesterone) and prepares (the late-luteal FSH rise) the next cycle.",
+          "key_points": [
+            "Luteal-phase progesterone production depends on continuous LH secretion; it peaks in the midluteal phase.",
+            "Corpus luteum = remaining granulosa cells + some theca cells; formation requires LH (luteinization = morphologic + functional changes).",
+            "Granulosa cells → granulosa-lutein cells; theca cells → smaller theca-lutein cells.",
+            "Corpus luteum inhibin A drops circulating FSH during the luteal phase.",
+            "Late-luteal decline of inhibin A releases FSH to select the next oocyte cohort."
+          ]
+        },
+        {
+          "heading": "Luteolysis and the Corpus Albicans",
+          "body_text": "- The **duration of the luteal phase is fairly constant, being around 14 days** — irrespective of overall cycle length (cycle-length variability resides almost entirely in the follicular phase).\n- **If pregnancy does not occur (no hCG), the corpus luteum regresses through a process called luteolysis.**\n- **Following luteolysis**: the **blood supply to the corpus luteum diminishes**; **progesterone and estrogen secretion drop precipitously**; and the **luteal cells undergo apoptosis and become fibrotic**.\n- This fibrotic remnant **creates the corpus albicans ('white body')** — the white fibrous scar left in the ovary.\n- Conversely, if fertilization **does** occur, **placental tissue produces hCG**, which maintains the corpus luteum so progesterone production continues in early pregnancy.",
+          "key_points": [
+            "The luteal phase is fairly constant at ~14 days.",
+            "No hCG → luteolysis (regression of the corpus luteum).",
+            "Luteolysis sequence: blood supply diminishes → progesterone and estrogen drop precipitously → apoptosis and fibrosis.",
+            "The fibrotic scar remnant is the corpus albicans (white body).",
+            "In pregnancy, placental hCG maintains the corpus luteum and its progesterone output."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "LH surge",
+          "definition_ar": "دفعة LH: إفراز غزير مفاجئ لهرمون الملوتن أواخر الطور الجريبي نتيجة تحوّل التغذية الراجعة للإستراديول من سلبية إلى إيجابية؛ تتبعها الإباضة بعد 36 ساعة من بدئها."
+        },
+        {
+          "term": "Luteinization",
+          "definition_ar": "التلوّتن: التحول الشكلي والوظيفي لخلايا غرانولوزا والتيقا المتبقية بعد الإباضة إلى خلايا أصفيرية مفرزة للبروجستيرون؛ عملية تتطلب تحفيز LH."
+        },
+        {
+          "term": "Corpus luteum",
+          "definition_ar": "الجسم الأصفر: غدة صماء صفراء تتشكل من بقايا الجريب بعد الإباضة (خلايا غرانولوزا-لوتئينية وتيكا-لوتئينية)، تفرز البروجستيرون وبعض الإستروجين والإنهيبين أ."
+        },
+        {
+          "term": "Granulosa-lutein cells",
+          "definition_ar": "خلايا غرانولوزا-اللوتئينية: الخلايا الكبيرة الناتجة عن تكاثر وتضخّم خلايا غرانولوزا داخل الجسم الأصفر."
+        },
+        {
+          "term": "Theca-lutein cells",
+          "definition_ar": "خلايا التيكا-اللوتئينية: الخلايا الأصغر حجماً في الجسم الأصفر، الناتجة عن خلايا التيقا."
+        },
+        {
+          "term": "Luteolysis",
+          "definition_ar": "اللوتئوليزيس: تراجع الجسم الأصفر وتحلّله عند غياب hCG، مع نقص الإرواء الدموي وهبوط حاد للبروجستيرون والإستروجين وموت الخلايا المبرمج وتليّفها."
+        },
+        {
+          "term": "Corpus albicans",
+          "definition_ar": "الجسم الأبيض: الندفة الليفية البيضاء التي يخلّفها تحلل الجسم الأصفر في المبيض عند عدم حدوث حمل."
+        },
+        {
+          "term": "Inhibin A",
+          "definition_ar": "الإنهيبين أ: يفرزه الجسم الأصفر بكميات كبيرة في الطور الأصفري ويثبّط FSH؛ وهبوطه أواخر الطور يسمح بارتفاع FSH لتجنيد مجموعة بييضات الدورة التالية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_c7",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "The Uterine (Menstrual) Cycle and Integrated Cycle Timing",
+      "summary_ar": "يجمع هذا المفهوم الدورة الرحمية مع التوقيت المتكامل للدورة الشهرية: فبطانة الرحم بطبقتين — قاعدية ثابتة تعمل احتياطياً للتجدد، ووظيفية تتكاثر تحت تأثير الإستروجين حتى سماكة نحو 12 ملم عند دفعة LH ثم تُفرز بذروة بعد 7 أيام من الإباضة، وتُطرح مع الطمث عند انقباض الشرايين الحلزونية بعد سحب البروجستيرون مع دور بروستاغلاندين F2α. كما يربط المفهوم منحنيات GnRH وFSH وLH والإستروجين والبروجستيرون والإنهيبين بأيام الدورة المرجعية 28 يوماً.",
+      "sections": [
+        {
+          "heading": "Overview: Ovarian and Uterine Cycle Phases",
+          "body_text": "The **ovarian cycle** has two phases:\n\n1. **The follicular phase**\n2. **The luteal phase**\n\nThe **uterine cycle** has two matching phases:\n\n1. **Proliferative phase**\n2. **Secretory phase**\n\nIn the standard **28-day reference cycle** of the integrated cycle graph:\n\n- **Follicular phase (ovarian) = days 1–14**\n- **Ovulation = day 14, triggered by the LH surge**\n- **Luteal phase (ovarian) = days 14–28**\n- **Menses (uterine) = days 0–6**\n- **Proliferative phase (uterine) = days 7–13**\n- **Secretory phase (uterine) = days 14–28**\n- **Peak of progesterone and estrogen (mid-luteal) ≈ day 21**\n- **Corpus albicans forms if no fertilization occurs, by day 28**\n\nKeep the pairings straight: the ovarian follicular phase runs with the uterine proliferative phase, and the ovarian luteal phase runs with the uterine secretory phase.",
+          "key_points": [
+            "Ovarian cycle: follicular phase + luteal phase; uterine cycle: proliferative phase + secretory phase.",
+            "Follicular/proliferative ≈ days 1–14; ovulation day 14 (LH surge-triggered); luteal/secretary ≈ days 14–28.",
+            "Menses days 0–6; proliferative repair days 7–13; secretory days 14–28.",
+            "Mid-luteal progesterone/estrogen peak ≈ day 21; corpus albicans by day 28 if no fertilization."
+          ]
+        },
+        {
+          "heading": "Endometrial Layers and the Proliferative Phase",
+          "body_text": "**The endometrium consists of two layers:**\n\n- The **basalis layer**, which **lies against the myometrium**.\n- The **functionalis layer**, which is **apposed to the uterine lumen**.\n- The **basalis layer does not change significantly across the menstrual cycle** and **serves as the reserve for endometrium regeneration following menstrual sloughing**.\n\n**Proliferative (follicular) phase:**\n\n- **Under the influence of estrogen, the glandular and stromal cells of the functionalis layer proliferate rapidly following menses**, causing an **increased thickness of the endometrium**, and the **glands become more coiled**.\n- **Endometrial thickness approximates 12 mm at the time of the LH surge.**\n- On the integrated cycle graph this is the phase of **repair and regeneration of the functional zone**: the glands are **straight and narrow** early in the repair phase and the stroma is compacting.",
+          "key_points": [
+            "Endometrium = basalis (against myometrium; unchanged; regeneration reserve) + functionalis (against the lumen; cycles and sheds).",
+            "Estrogen drives rapid post-menstrual proliferation of functionalis glands and stroma; glands become more coiled.",
+            "Endometrial thickness ≈ 12 mm at the time of the LH surge."
+          ],
+          "check": {
+            "prompt": "Endometrial thickness at the time of the LH surge normally approximates which measurement?",
+            "options": [
+              "3 mm",
+              "7 mm",
+              "12 mm",
+              "20 mm",
+              "28 mm"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "تبلغ سماكة بطانة الرحم نحو 12 ملم وقت دفعة LH نتيجة التكاثر السريع للخلايا الغدية والسدية في الطبقة الوظيفية تحت تأثير الإستروجين خلال الطور التكاثري. القياسات الأخرى أقل أو أعلى بكثير من القيمة الفسيولوجية المتوقعة في ذلك التوقيت."
+          }
+        },
+        {
+          "heading": "The Secretory Phase and the Mechanism of Menstruation",
+          "body_text": "**Secretory / luteal phase:**\n\n- **Following ovulation, the endometrium transforms into a secretory tissue.**\n- **Secretions rich in glycogen and glycoprotein can be observed in the lumen of the glands.**\n- **Peak secretory activity is reached 7 days after ovulation**; the glands become **more tortuous** (highly coiled, saw-tooth or corkscrew appearance) and the **stroma becomes more edematous** and vascular — the tissue is prepared for potential implantation.\n\n**If fertilization does not occur:**\n\n- The **placental tissue does not produce hCG**, and the **corpus luteum degenerates**.\n- The **uterine lining does not receive the progesterone**, causing the **spiral arteries to constrict** and the **endometrial tissue to become ischemic**, leading to **shedding of the endometrium** — menses, the **destruction of the functional zone**.\n- **Prostaglandins, particularly prostaglandin F2α, are present in the endometrium and likely contribute to arteriolar vasospasm.**",
+          "key_points": [
+            "After ovulation the endometrium becomes secretory; gland lumens fill with glycogen- and glycoprotein-rich secretions.",
+            "Peak secretory activity occurs 7 days after ovulation; glands become tortuous and stroma edematous.",
+            "No fertilization → no hCG → corpus luteum degenerates → progesterone loss → spiral artery constriction → ischemia → shedding of functionalis.",
+            "Prostaglandin F2α in the endometrium likely contributes to arteriolar vasospasm."
+          ]
+        },
+        {
+          "heading": "Integrated Hormonal Profiles Across the 28-Day Cycle",
+          "body_text": "The integrated ovarian and uterine cycle graph plots five panels against cycle day:\n\n- **Panel (a) — GnRH pulse frequency (pulses/day, y-axis 0–50):** starts at about **15 pulses/day**, rises gradually through the follicular phase to a peak of about **48 pulses/day just before day 14**, **drops sharply after ovulation to a nadir of ~8 pulses/day during the early luteal phase**, then **rises slightly toward the end of the cycle**.\n- **Panel (b) — gonadotropic hormone levels (IU/L):** **FSH** starts at ~15 IU/L, shows a small peak (~18 IU/L) around day 7, dips to ~10 IU/L, then rises to a **secondary peak (~22 IU/L) coincident with the LH surge (day 14)**, and falls to low levels (~8–10 IU/L) for the remainder of the luteal phase. **LH** maintains a baseline of ~12–15 IU/L during the early follicular phase, then shows the **massive, sharp surge peaking at ~50 IU/L on day 14**, returning to baseline (~10 IU/L) immediately after the surge and remaining low through the luteal phase.\n- **Panel (c) — follicular stages during the ovarian cycle:** progressive follicle growth (three progressively larger follicles); **ovulation on day 14** (oocyte released from the ruptured follicle); **corpus luteum formation** from the collapsed follicle; the **mature corpus luteum peaks around day 21**; the **corpus albicans** — regressed white fibrous scar tissue — remains at the end of the cycle (**day 28**).\n- **Panel (d) — ovarian hormone levels:** **estrogens** show a steady follicular rise to a **first peak just before the LH surge (days 13–14)**, a brief drop post-ovulation, then a **second, broader peak during the mid-luteal phase (around days 19–21)**, declining toward day 28. **Progesterone** remains **very low (<5) throughout the follicular phase**, **rises sharply immediately after ovulation**, **peaks in the mid-luteal phase (days 19–21) as the highest value among the hormones shown**, and **declines rapidly in the late luteal phase if pregnancy does not occur**. **Inhibin** remains low initially, rises steadily with follicular development, **peaks sharply at ovulation (day 14)**, and shows a **second rise during the luteal phase** mirroring progesterone at lower magnitude.\n- **Panel (e) — endometrial changes:** **menses (days 0–6) = destruction of the functional zone**; **proliferative phase (days 7–13) = repair and regeneration of the functional zone** (straight, narrow glands; compacting stroma); **secretory phase (days 14–28) = secretion of uterine glands** (highly coiled saw-tooth/corkscrew glands; edematous, vascular stroma; preparation for potential implantation).\n\nReading the graph as one story: **the estrogen peak precedes and triggers the LH surge; the LH surge is followed by ovulation within 36 hours; progesterone dominates the luteal phase; and the late-luteal fall in progesterone, estrogen and inhibin A releases FSH to recruit the next cohort — restarting the cycle**.",
+          "key_points": [
+            "GnRH pulses: ~15/day early → ~48/day just before ovulation → nadir ~8/day early-luteal → slight late-cycle rise.",
+            "FSH: ~15 IU/L start, small day-7 peak (~18), secondary peak ~22 with the LH surge, then ~8–10 IU/L in the luteal phase.",
+            "LH: baseline ~12–15 IU/L, surge peak ~50 IU/L on day 14, back to ~10 IU/L after.",
+            "Estrogens: first peak just before the LH surge (days 13–14), second broader mid-luteal peak (days 19–21).",
+            "Progesterone: low (<5) in the follicular phase; highest of all hormones at its mid-luteal peak (days 19–21); rapid late-luteal decline without pregnancy.",
+            "Inhibin: peaks at ovulation, second luteal rise mirroring progesterone.",
+            "Endometrium: menses = destruction; proliferative = repair (straight glands); secretory = coiled, secreting glands in edematous stroma."
+          ],
+          "check": {
+            "prompt": "In the integrated cycle graph of a 28-day cycle, progesterone reaches its peak at approximately which time?",
+            "options": [
+              "Day 7, before ovulation",
+              "Day 14, at the LH surge",
+              "Around day 19–21 (mid-luteal), as the highest value among the hormones shown",
+              "Day 28, at the onset of menses",
+              "It remains low throughout the cycle"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "يبقى البروجستيرون منخفضاً جداً خلال الطور الجريبي، ثم يرتفع حاداً بعد الإباضة مباشرة ليبلغ ذروته في منتصف الطور الأصفري (حوالي اليوم 19–21) بوصفه أعلى قيمة بين الهرمونات في المخطط، ثم يهبط سريعاً أواخر الطور الأصفري إذا لم يحدث حمل. الخيارات الأخرى تخالف مسار البروجستيرون المعروف في المنحنى."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Basalis layer",
+          "definition_ar": "الطبقة القاعدية من بطانة الرحم: الملاصقة للعضل الرحمي، لا تتغير جوهرياً عبر الدورة، وتشكّل احتياطي تجدّد البطانة بعد انسلاخ الطمث."
+        },
+        {
+          "term": "Functionalis layer",
+          "definition_ar": "الطبقة الوظيفية من بطانة الرحم: الملاصقة لجوف الرحم؛ تتكاثر تحت تأثير الإستروجين وتتحول إفرازياً بتأثير البروجستيرون ثم تنسلاخ مع الطمث."
+        },
+        {
+          "term": "Spiral arteries",
+          "definition_ar": "الشرايين الحلزونية: شرايين الطبقة الوظيفية التي تنقبض عند فقدان دعم البروجستيرون فتُحدث نقص تروية البطانة وانسلاخها مع الطمث."
+        },
+        {
+          "term": "Prostaglandin F2α",
+          "definition_ar": "بروستاغلاندين F2α: موجود في البطانة ويسهم على الأرجح في التشنج الوعائي (تقبّض الشرينات) المرافق لانسلاخ البطانة أثناء الطمث."
+        },
+        {
+          "term": "Menses",
+          "definition_ar": "الطمث: انسلاخ الطبقة الوظيفية من البطانة مع النزيف نتيجة نقص التروية بعد تراجع الجسم الأصفر وسحب البروجستيرون."
+        },
+        {
+          "term": "Proliferative phase",
+          "definition_ar": "الطور التكاثري من الدورة الرحمية: الموازي للطور الجريبي المبيضي؛ يتكاثر فيه الغدد والسدى في الطبقة الوظيفية تحت تأثير الإستروجين حتى سماكة نحو 12 ملم عند دفعة LH."
+        },
+        {
+          "term": "Secretory phase",
+          "definition_ar": "الطور الإفرازي من الدورة الرحمية: الموازي للطور الأصفري؛ تتحول فيه البطانة إلى نسيج مُفرِز غني بالغليكوجين والغليكوبروتين بفعل البروجستيرون، بذروة بعد 7 أيام من الإباضة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L1_reproductive_physiology_f01",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c1",
+      "card_type": "basic",
+      "front_text": "What is GnRH, how many amino acids does it contain, and how does it reach the anterior pituitary?",
+      "back_text": "GnRH (gonadotrophic releasing hormone) is a 10-amino-acid peptide released from the hypothalamus in a pulsatile fashion into the hypophysial portal circulation, where it stimulates the release of the gonadotropins FSH and LH from the anterior pituitary gland.",
+      "explanation_ar": "لبّ المعلومة أن GnRH ببتيد صغير (10 أحماض أمينية) يُفرز نبضياً لا باستمرار، وأن وصوله للنخامى يتم عبر الدورة البابية النخامية وليس بالدورة العامة؛ النبضية نفسها شرط لفعاليته.",
+      "tags": [
+        "HPO axis",
+        "GnRH"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f02",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c1",
+      "card_type": "basic",
+      "front_text": "Name the gonadal peptides produced by the ovary and their feedback role on the hypothalamus and pituitary.",
+      "back_text": "Activin, inhibin, and follistatin (plus growth factors). Among other functions, these ovarian-derived factors feed back to the hypothalamus and pituitary to inhibit — or, at the midcycle surge, to augment — GnRH and gonadotropin secretion.",
+      "tags": [
+        "HPO axis",
+        "inhibin"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f03",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c1",
+      "card_type": "basic",
+      "front_text": "In the HPO axis diagram, which hormones feed back on the hypothalamus and pituitary, and which one selectively inhibits the pituitary?",
+      "back_text": "Estrogen, progesterone, and testosterone feed back on the hypothalamus and pituitary with negative or positive (– or +) effects; inhibin selectively exerts negative feedback on the pituitary (the red inhibitory arrow in the diagram).",
+      "tags": [
+        "HPO axis",
+        "feedback"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f04",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "card_type": "basic",
+      "front_text": "List the key effects of estrogens (7 items).",
+      "back_text": "- Stimulates growth of the ovarian follicles\n- Increases myometrial and tubal contraction\n- Stimulates breast growth (ducts and fat)\n- Stimulates bone growth; at high doses promotes epiphyseal closure via direct action on proliferating chondrocytes, stopping further growth\n- Vascular: deficiency produces hot flushes\n- Stimulates fluid retention\n- Protects against atherosclerosis",
+      "mnemonic_ar": "تذكّر أن الإستروجين «هرمون النمو والتجديد»: جريبات تنمو، رحم وأنابيب تنقبض، ثدي (قنوات ودهن)، عظام تنمو ثم تُغلق مشاشها، أوعية (نقصه = هبّات ساخنة)، سوائل تُحتجز، وشرايين محمية من التصلّب.",
+      "tags": [
+        "estrogen",
+        "sex steroids"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f05",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "card_type": "basic",
+      "front_text": "List the key effects of progesterone (6 items).",
+      "back_text": "- Converts the estrogen-primed endometrium to the secretory phase\n- Induces thick, sticky cervical mucus\n- Decreases contractions of smooth muscle\n- Stimulates breast growth (glands)\n- Has feedback effects on the hypothalamus\n- Increases basal body temperature",
+      "mnemonic_ar": "البروجستيرون «حافظ الحمل»: يهيّئ البطانة للإفراز، يُغلّق العنق بمخاط سميك لزج، يُرخي العضلات الملساء، يبني غدد الثدي، يتغذى راجعاً على الوطاء، ويرفع حرارة الجسم القاعدية.",
+      "tags": [
+        "progesterone",
+        "sex steroids"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f06",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "card_type": "basic",
+      "front_text": "A menopausal woman develops hot flushes. Which hormone deficiency explains them, and through which effect category?",
+      "back_text": "Estrogen deficiency — hot flushes are the vascular effect of estrogen lack ('Vascular — deficiency produces hot flushes' is one of the listed estrogen effects).",
+      "explanation_ar": "الهبّات الساخنة ليست تأثيراً مباشراً للإستروجين بل لعلام على نقصه؛ وهي تأثير وعائي، لذا تُعالج باستعادة الإستروجين.",
+      "is_vivid": true,
+      "tags": [
+        "estrogen",
+        "menopause"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f07",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "card_type": "basic",
+      "front_text": "State the ovarian reserve numbers: oogonia at 5 months' gestation, at birth, at puberty onset, and the number ovulated in a lifetime.",
+      "back_text": "≈7 million at about 5 months' gestation; 1–2 million at birth; fewer than 400,000 at the initiation of puberty; fewer than 500 ovulated in a lifetime — all the rest are lost through atresia.",
+      "mnemonic_ar": "رتّبها بالملايين: 7 في الحمل ← 1–2 عند الولادة ← أقل من 0.4 عند البلوغ ← وأقل من 500 فقط تُباض مدى العمر؛ الفاقد كله ضمور (أتريزيا).",
+      "tags": [
+        "oogenesis",
+        "ovarian reserve"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f08",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "card_type": "basic",
+      "front_text": "Where is meiosis arrested between birth and puberty, and where between ovulation and fertilization?",
+      "back_text": "Primary oocytes are arrested in prophase I of meiosis from birth until puberty; the secondary oocyte is arrested in metaphase II from ovulation until fertilization (fertilization completes meiosis II).",
+      "mnemonic_ar": "توقّفان مزدوجان: «تمهيدي أول» من الولادة حتى البلوغ، و«استوائي ثانٍ» من الإباضة حتى الإخصاب.",
+      "tags": [
+        "oogenesis",
+        "meiosis"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f09",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "card_type": "basic",
+      "front_text": "What does fertilization trigger in the oocyte, and what is produced?",
+      "back_text": "Fertilization triggers completion of the second meiotic division, producing one ovum and an additional (second) polar body; the first meiotic division had been completed during ovulation, producing the secondary oocyte and the first polar body.",
+      "explanation_ar": "الانقسام الاختزالي في الأنثى يتوقف مرتين؛ الإخصاب هو الذي يكسر التوقف الثاني فيولّد البويضة الناضجة مع الجسم القطبي الثاني.",
+      "tags": [
+        "oogenesis",
+        "fertilization"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f10",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "card_type": "basic",
+      "front_text": "What is the chromosome constitution of the zygote, and of the secondary oocyte?",
+      "back_text": "The zygote contains 23 maternal + 23 paternal chromosomes = 46 total; the secondary oocyte (and each polar body) is haploid with 23 chromosomes, while oogonia and primary oocytes are diploid (46).",
+      "tags": [
+        "oogenesis",
+        "chromosomes"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f11",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c4",
+      "card_type": "basic",
+      "front_text": "List the stages of folliculogenesis in order, from oogonia to the preovulatory follicle.",
+      "back_text": "Oogonia → (follicle formation) → primordial follicle → (activation) → primary follicle → (growth) → secondary/preantral follicle → (growth) → tertiary/antral follicle → (recruitment, selection, dominance) → preovulatory (Graafian) follicle.",
+      "mnemonic_ar": "رتّبها هكذا: أوغونيا ← أولي بدئي ← أولي ← ثانوي (ما قبل الجوفي) ← ثالث (جوفي) ← غراف. «كل مرحلة تضيف شيئاً: طبقة، ثم تيكا، ثم جوفاً، ثم تاجاً».",
+      "tags": [
+        "folliculogenesis"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f12",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c4",
+      "card_type": "basic",
+      "front_text": "Which stages of follicular development are hormone-independent, and where does pituitary dependence begin?",
+      "back_text": "The initial stages of follicular development (up to the preantral/secondary follicle) are independent of hormonal stimulation; development beyond the preantral stage — the antral (tertiary) follicle onward — depends on pituitary hormones (FSH and LH).",
+      "tags": [
+        "folliculogenesis",
+        "gonadotropins"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f13",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c4",
+      "card_type": "basic",
+      "front_text": "What defines the primary follicle histologically?",
+      "back_text": "The granulosa cells become cuboidal (instead of flattened) and increase in number, around an enlarging oocyte; a zona pellucida becomes visible around the oocyte.",
+      "tags": [
+        "folliculogenesis",
+        "histology"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f14",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c4",
+      "card_type": "basic",
+      "front_text": "From when is the ovulatory follicle recruited, and how many follicles develop per ovary in young women?",
+      "back_text": "The ovulatory follicle is recruited from a cohort that began development two to three cycles prior to the current ovulatory cycle; 3–11 follicles develop per ovary in young women.",
+      "tags": [
+        "folliculogenesis",
+        "recruitment"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f15",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c5",
+      "card_type": "basic",
+      "front_text": "In the two-cell, two-gonadotropin theory, what does each cell type do and under which gonadotropin?",
+      "back_text": "Theca cells (outer layer): under LH, synthesize androgens (androstenedione) from cholesterol, which diffuse across the basement membrane. Granulosa cells (inner layer): under FSH, convert those androgens to estrogens (aromatization).",
+      "mnemonic_ar": "«الخارج يصنع المادة الخام والداخل يُنهي المنتج»: التيكا تحب LH وتصنع الأندروجين، وغرانولوزا تحب FSH وتؤرومِت.",
+      "tags": [
+        "steroidogenesis",
+        "two-cell theory"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f16",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c5",
+      "card_type": "basic",
+      "front_text": "Trace the enzymatic pathway of estradiol synthesis from cholesterol (two-cell, two-gonadotropin model).",
+      "back_text": "Theca cell (LH-driven): cholesterol → pregnenolone (P450scc) → DHEA (P450C17) → androstenedione (3β-HSD + Δ5–Δ4 isomerase) → crosses the basement membrane → Granulosa cell (FSH-driven): androstenedione → estrone (P450AROM aromatase) → estradiol (17β-HSD).",
+      "mnemonic_ar": "احفظ السلسلة: «كوليسترول ← بريغنينولون ← DHEA ← أندروستينيديون ← إسترون ← إستراديول»، وتذكّر أن كل الخطوات التيكية بـLH ما عدا الأرومتة فهي بـFSH.",
+      "tags": [
+        "steroidogenesis",
+        "enzymes"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f17",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "card_type": "basic",
+      "front_text": "How long after the onset of the LH surge does ovulation occur?",
+      "back_text": "Ovulation occurs 36 hours after the onset of the LH surge (not after its peak).",
+      "explanation_ar": "سؤال امتحاني كلاسيكي: العبرة ببدء الدفعة لا بذروتها؛ 36 ساعة من بدء دفعة LH حتى انفجار الجريب وطرح البييضة الثانوية.",
+      "tags": [
+        "ovulation",
+        "LH surge"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f18",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "card_type": "basic",
+      "front_text": "What generates the LH surge late in the follicular phase?",
+      "back_text": "The rapid estradiol level rise triggers a switch from negative to positive feedback at both the hypothalamus and the anterior pituitary; this feedback change generates the LH surge, after which LH induces reentry of the oocyte into meiosis and luteinization of granulosa cells in the dominant follicle.",
+      "tags": [
+        "LH surge",
+        "feedback"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f19",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "card_type": "basic",
+      "front_text": "Which cells form the corpus luteum, and what do they become during luteinization?",
+      "back_text": "The remaining granulosa cells plus some of the theca cells differentiate into the corpus luteum (a process requiring LH). They proliferate and undergo hypertrophy to form granulosa-lutein cells and smaller theca-lutein cells, respectively.",
+      "tags": [
+        "corpus luteum",
+        "luteinization"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f20",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "card_type": "basic",
+      "front_text": "What happens to the corpus luteum if pregnancy does not occur?",
+      "back_text": "With no hCG, the corpus luteum regresses through luteolysis: its blood supply diminishes, progesterone and estrogen secretion drop precipitously, and the luteal cells undergo apoptosis and become fibrotic, creating the corpus albicans (white body). The luteal phase lasts a fairly constant ~14 days.",
+      "explanation_ar": "غياب hCG يعني غياب الإنقاذ؛ فيتراجع الجسم الأصفر خلال نحو 14 يوماً ثابتة، ويهبط البروجستيرون والإستروجين هبوطاً حاداً، فتموت الخلايا بالاستماتة وتتليّف مكوّنة الجسم الأبيض.",
+      "is_vivid": true,
+      "tags": [
+        "corpus luteum",
+        "luteolysis"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f21",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "card_type": "basic",
+      "front_text": "Name the two endometrial layers and their respective roles across the cycle.",
+      "back_text": "Basalis — lies against the myometrium, does not change significantly across the cycle, and serves as the reserve for endometrial regeneration after menstrual sloughing. Functionalis — apposed to the uterine lumen; it proliferates, secretes, and is shed with menses.",
+      "mnemonic_ar": "«القاعدية احتياطي لا يُطرح، والوظيفية ضحية تُطرح ثم تتجدد من القاعدية».",
+      "tags": [
+        "endometrium",
+        "uterine cycle"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f22",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "card_type": "basic",
+      "front_text": "What endometrial thickness is expected at the time of the LH surge?",
+      "back_text": "Approximately 12 mm, reflecting estrogen-driven rapid proliferation of the functionalis (glands and stroma) after menses, with the glands becoming more coiled.",
+      "tags": [
+        "endometrium",
+        "proliferative phase"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f23",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "card_type": "basic",
+      "front_text": "When does endometrial secretory activity peak relative to ovulation, and what fills the glands?",
+      "back_text": "Peak secretory activity is reached 7 days after ovulation; the gland lumens contain secretions rich in glycogen and glycoprotein, the glands are more tortuous, and the stroma is more edematous.",
+      "mnemonic_ar": "«سبعة أيام بعد الإباضة = ذروة الإفراز» — وهو التوقيت الذي يُؤرَّخ به لخزعة البطانة في دورة 28 يوماً (اليوم 21).",
+      "tags": [
+        "secretory phase",
+        "endometrium"
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_f24",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "card_type": "basic",
+      "front_text": "Describe the sequence that produces menstruation when fertilization does not occur.",
+      "back_text": "No hCG → the corpus luteum degenerates (luteolysis) → the uterine lining loses progesterone support → the spiral arteries constrict → the endometrial tissue becomes ischemic → the functionalis is shed (menses). Prostaglandins, particularly PGF2α, in the endometrium likely contribute to arteriolar vasospasm.",
+      "explanation_ar": "سلسلة الطمث: لا إخصاب ← لا hCG ← لوتئوليزيس ← سحب البروجستيرون ← تقبّض الشرايين الحلزونية ← نقص تروية ← انسلاخ، مع دور واضح لبروستاغلاندين F2α في التشنج الوعائي.",
+      "tags": [
+        "menstruation",
+        "spiral arteries"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L1_reproductive_physiology_m01",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "question_stem": "A 30-year-old G2P2 woman with regular 28-day menstrual cycles is using a home urinary LH ovulation predictor kit while trying to conceive. This morning, for the first time this cycle, the kit shows a positive LH surge. She asks exactly when ovulation will occur. When should you tell her to expect ovulation?",
+      "options": [
+        "Within approximately 6 hours of the LH surge peak",
+        "Approximately 36 hours after the onset of the LH surge",
+        "Approximately 7 days after the LH surge",
+        "Only after her basal body temperature falls",
+        "At the next menses, since the surge precedes bleeding"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإجابة الصحيحة: تحدث الإباضة بعد 36 ساعة من بدء دفعة LH، وهي معلومة جوهرية لتوقيت الجماع/الإخصاب. الخيارات الأخرى خاطئة: الإباضة لا تقاس من ذروة الدفعة ولا تحدث خلال 6 ساعات فقط، ولا تتأخر 7 أيام (فذلك يوافق منتصف الطور الأصفري)؛ وحرارة الجسم القاعدية ترتفع بعد الإباضة بفعل البروجستيرون ولا تنخفض؛ والطمث يحدث بعد نحو 14 يوماً من الإباضة وليس هو الإباضة نفسها.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Count from the ONSET (start) of the surge, not its peak.",
+        "The interval is measured in hours, not days.",
+        "The classic number taught in reproductive physiology is 36 hours."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m02",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "question_stem": "A 26-year-old woman with highly regular 35-day menstrual cycles wishes to conceive and understands that ovulation timing varies. Using the principle that the luteal phase is constant, on which cycle day did ovulation most likely occur?",
+      "options": [
+        "Day 10",
+        "Day 14",
+        "Day 21",
+        "Day 28",
+        "Day 35"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الطور الأصفري ثابت المدة تقريباً (نحو 14 يوماً)، لذا يُحسب يوم الإباضة بطرح 14 من طول الدورة: 35 − 14 = اليوم 21. الخيارات الأخرى خاطئة: اليوم 14 هو موعد الإباضة في الدورة النموذجية 28 يوماً فقط؛ واليوم 10 قصير جداً؛ واليوم 28 يقع داخل الطور الأصفري؛ واليوم 35 هو موعد الطمث التالي. تباين أطوال الدورات ينشأ أساساً من الطور الجريبي لا الأصفري.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m03",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "question_stem": "A 51-year-old woman whose menstrual cycles stopped 8 months ago presents with recurrent episodes of sudden warmth over the face and upper chest with sweating, day and night. Which hormonal change and listed effect best explains her symptoms?",
+      "options": [
+        "Progesterone excess causing thermogenesis",
+        "Estrogen deficiency producing the vascular effect of hot flushes",
+        "FSH deficiency causing cutaneous vasodilation",
+        "Inhibin A excess constricting cutaneous vessels",
+        "Testosterone deficiency causing sweating"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الهبّات الساخنة هي التأثير الوعائي المذكور لنقص الإستروجين («وعائياً: النقص يسبب الهبّات الساخنة»)، وهي عرض نقص الإستروجين الكلاسيكي بعد توقف المبيضين. الخيارات الأخرى خاطئة: البروجستيرون يرفع الحرارة القاعدية تدريجياً ولا يسبب هبّات وعائية مفاجئة؛ وFSH يرتفع (ولا ينخفض) عند فشل المبيضين؛ والإنهيبين أ والتستوستيرون ليسا المسؤولين عن هذه الأعراض الوعائية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m04",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "question_stem": "A 28-year-old woman practicing fertility awareness charts her basal body temperature (BBT) daily. She notices a clear sustained temperature elevation beginning 2 days after her urinary LH surge and persisting until menstruation. Which hormone is responsible for this thermogenic shift, and from which structure does it come?",
+      "options": [
+        "Estradiol from the dominant follicle",
+        "Progesterone from the corpus luteum",
+        "LH from the anterior pituitary",
+        "Inhibin from the granulosa cells",
+        "GnRH from the hypothalamus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "البروجستيرون المفرَز من الجسم الأصفر بعد الإباضة يرفع حرارة الجسم القاعدية، فيصعد منحنى الحرارة في الطور الأصفري ويبقى مرتفعاً حتى يتراجع الجسم الأصفر قبيل الطمث. الخيارات الأخرى خاطئة: الإستراديول يحفّز تكاثر البطانة ولا يرفع الحرارة؛ وLH هرمون نخامي يهبط بعد الدفعة؛ والإنهيبين يثبّط FSH؛ وGnRH ببتيد وطائي نبضي لا دور حرارياً له.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m05",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "question_stem": "A 27-year-old G1P1 woman undergoes endometrial biopsy during an infertility workup. Ovulation was documented by a urinary LH kit 7 days earlier. The pathology report describes coiled, tortuous glands distended by glycogen- and glycoprotein-rich secretions within an edematous stroma. Which interpretation is correct?",
+      "options": [
+        "Proliferative endometrium — abnormal this late in the cycle",
+        "Peak secretory (luteal) activity — expected exactly 7 days after ovulation",
+        "Menstrual endometrium — expected at this point of the cycle",
+        "Atrophic endometrium — expected with estrogen deficiency",
+        "Immediate post-ovulatory endometrium — expected within hours of ovulation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تبلغ ذروة النشاط الإفرازي للبطانة بعد 7 أيام من الإباضة: غدد أكثر التواءً وسدى أكثر وذمة، مع إفرازات غنية بالغليكوجين والغليكوبروتين في تجويف الغدد — وهو ما وصفه التقرير تماماً. الخيارات الأخرى خاطئة: البطانة التكاثرية (غدد أكثر استقامة) تسبق الإباضة؛ والبطانة الطمثية تنسلاخ أواخر الدورة بعد سحب البروجستيرون؛ والضمورية لا تنسجم مع دورات منتظمة مُباضة؛ أما خلال ساعات من الإباضة فلم تبلغ البطانة ذروة الإفراز بعد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m06",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c5",
+      "question_stem": "A reproductive endocrinology researcher cultures intact ovarian follicles to study estradiol synthesis and adds an antibody that blocks the FSH receptor on granulosa cells. According to the two-cell, two-gonadotropin model, which enzymatic step is most directly impaired?",
+      "options": [
+        "Cholesterol to pregnenolone in the theca-cell mitochondrion (P450scc)",
+        "Pregnenolone to DHEA in the theca cell (P450C17)",
+        "DHEA to androstenedione in the theca cell (3β-HSD + Δ5–Δ4 isomerase)",
+        "Androstenedione to estrone in the granulosa cell (P450AROM aromatase)",
+        "Diffusion of androstenedione across the basement membrane"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "الأروماتاز (P450AROM) في خلايا غرانولوزا هو الخطوة المعتمدة على FSH؛ فبإغلاق مستقبل FSH يتوقف تحويل الأندروستينيديون إلى إسترون (ثم إستراديول بواسطة 17β-HSD). الخيارات الأخرى خاطئة: تحويلات الكوليسترول ← بريغنينولون (P450scc) وبريغنينولون ← DHEA (P450C17) وDHEA ← أندروستينيديون (3β-HSD + إيزوميراز Δ5–Δ4) كلها خطوات تيكية يحفّزها LH؛ وعبور الأندروستينيديون عبر الغشاء القاعدي يتم بالانتشار السلبي ولا يتطلب FSH.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Which gonadotropin acts on which cell type in the two-cell model?",
+        "FSH acts on granulosa cells — find the granulosa-cell enzyme.",
+        "Aromatase (P450AROM) is the FSH-dependent step."
+      ],
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m07",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c5",
+      "question_stem": "In the two-cell, two-gonadotropin model of ovarian steroidogenesis, which cell type converts cholesterol to androgens under LH stimulation, with the product then diffusing across the basement membrane?",
+      "options": [
+        "Granulosa cells",
+        "Theca cells",
+        "Corona radiata cells",
+        "Granulosa-lutein cells",
+        "Germinal epithelium of the ovary"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "خلايا التيكا (الطبقة الخارجية للجريب) تحوّل الكوليسترول إلى أندروجينات (أندروستينيديون) تحت تحفيز LH، ثم ينتقل الأندروستينيديون بالانتشار عبر الغشاء القاعدي إلى خلايا غرانولوزا ليؤرمَت إلى إستروجينات بتأثير FSH. الخيارات الأخرى خاطئة: خلايا غرانولوزا تفتقر إلى إنزيمات تصنيع الأندروجين من الكوليسترول لكنها غنية بالأروماتاز؛ والتاج المُشِعّ طبقة غرانولوزا تلتصق بالبييضة عند الإباضة؛ وخلايا غرانولوزا-اللوتئينية مكوّن للجسم الأصفر بعد الإباضة؛ والظهارة الجرثومية تغلف سطح المبيض ولا تصنع الستيرويدات.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m08",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "question_stem": "A 24-year-old woman attending a health-education session asks how many oocytes she had at birth. According to the physiology of oogenesis, approximately how many oogonia/oocytes are present at birth?",
+      "options": [
+        "About 7 million",
+        "1–2 million",
+        "Fewer than 400,000",
+        "Fewer than 500",
+        "About 400"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "يُولد الإنسان وعنده نحو 1–2 مليون بييضة، بعد أن كان العدد نحو 7 ملايين في الشهر الخامس من الحمل، ثم يهبط إلى أقل من 400,000 عند بدء البلوغ، ولا يُباض أقل من 500 خلال العمر كله؛ فالفاقد الأعظم يضيع بالضمور الجريبي. الخيارات الأخرى تمثل محطات زمنية أخرى من المسار (الحمل والبلوغ والعمر) وليست الولادة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m09",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "question_stem": "An oocyte is collected during an assisted-reproduction procedure shortly after natural ovulation. What is its meiotic and chromosomal status at the moment of collection?",
+      "options": [
+        "Diploid primary oocyte arrested in prophase I",
+        "Haploid secondary oocyte arrested in metaphase II",
+        "Haploid mature ovum that has already completed meiosis II",
+        "Diploid secondary oocyte in anaphase I",
+        "Haploid oogonium undergoing mitosis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عند الإباضة تكون البييضة الثانوية (23 كروموسوماً، أحادية الصيغة) متوقفة في الطور الاستوائي الثاني؛ فقد اكتمل الانقسام الاختزالي الأول أثناء الإباضة منتِجاً البييضة الثانوية والجسم القطبي الأول. الخيارات الأخرى خاطئة: البييضة الأولية المتوقفة في الطور التمهيدي الأول هي حالتها من الولادة حتى البلوغ؛ واكتمال الانقسام الثاني لا يحدث إلا بعد الإخصاب (فينتج البويضة الناضجة والجسم القطبي الثاني)؛ والبييضة الثانوية أحادية لا ثنائية الصيغة؛ والأوغونيا تتكاثر بالانقسام المتساوي في الحياة الجنينية.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m10",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c3",
+      "question_stem": "During a tutorial, a student asks when the primary oocyte's arrest in prophase I of meiosis is released. According to female reproductive physiology, this arrest persists from birth until which point?",
+      "options": [
+        "Fertilization",
+        "Puberty",
+        "The mid-luteal phase",
+        "Menopause",
+        "Implantation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تبقى البييضة الأولية متوقفة في الطور التمهيدي الأول للانقسام الاختزالي من الولادة حتى البلوغ؛ وبعد البلوغ تستأنف عدة بييضات الانقسام في كل دورة شهرية ويكتمل الانقسام الأول أثناء الإباضة. الخيارات الأخرى خاطئة: الإخصاب هو الذي يكمل الانقسام الثاني (المتوقف في الطور الاستوائي الثاني) لا الأول؛ والطور الأصفري وسن اليأس والغرس ليست مواضع استئناف الانقسام.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m11",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c6",
+      "question_stem": "A 25-year-old volunteer with documented regular ovulatory cycles participates in a research protocol. During the luteal phase her circulating FSH is low. Which corpus luteum product accounts for this FSH suppression at this stage of the cycle?",
+      "options": [
+        "Progesterone alone",
+        "Inhibin A produced in large quantities by the corpus luteum",
+        "Estradiol from the theca cells",
+        "Activin from the dominant follicle",
+        "hCG from the corpus luteum"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ينتج الجسم الأصفر كميات كبيرة من الإنهيبين أ، ويتزامن ذلك مع هبوط FSH المتداول في الطور الأصفري؛ وعند هبوط الإنهيبين أ أواخر الطور يرتفع FSH من جديد ليبدأ تجنيد مجموعة بييضات الدورة التالية. الخيارات الأخرى خاطئة: للبروجستيرون والإستراديول تغذية راجعة لكن المثبّت الانتقائي المذكور لـFSH هنا هو الإنهيبين أ؛ والأكتيفين لا يثبّط FSH؛ وhCG يُنتج من أنسجة المشيمة عند حدوث الحمل لإنقاذ الجسم الأصفر وليس في دورة عادية غير حامل.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m12",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c7",
+      "question_stem": "A 29-year-old woman with regular cycles asks why menstruation occurs every month if the endometrium has just been built up. If fertilization does not occur in a given cycle, which sequence best explains the onset of her menses?",
+      "options": [
+        "Continued estrogen rise overgrows and destroys the functionalis",
+        "No hCG → corpus luteum luteolysis → progesterone loss → spiral artery constriction → ischemic shedding of the functionalis",
+        "A primary FSH surge directly destroys the glandular epithelium",
+        "Rising inhibin A induces stromal apoptosis",
+        "GnRH pulses at ~48/day lyse the endometrial lining"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عند غياب الإخصاب لا تُنتج أنسجة المشيمة hCG فيتراجع الجسم الأصفر (لوتئوليزيس)، فتُحرم البطانة من البروجستيرون، فتنقبض الشرايين الحلزونية وتصبح أنسجة البطانة ناقصة التروية فيحدث انسلاخ الطبقة الوظيفية (الطمث)؛ ويُسهم بروستاغلاندين F2α الموجود في البطانة على الأرجح في تشنج الشرينات. الخيارات الأخرى خاطئة: الإستروجين يبني البطانة ولا يدمّرها؛ وFSH هرمون نخامي لا يخرب الغدد؛ والإنهيبين أ يثبّط FSH ولا يقتل السدى؛ وتواتر نبضات GnRH العالي (نحو 48/يوم) يرافق ما قبل الإباضة لا الطمث.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m13",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "question_stem": "A woman using a fertility-awareness method monitors her cervical mucus throughout the cycle. Which mucus change is characteristic of progesterone dominance during the luteal phase?",
+      "options": [
+        "Thin, watery, stretchy mucus",
+        "Thick, sticky cervical mucus",
+        "Complete cessation of mucus production",
+        "Blood-tinged mucus",
+        "Mucus rich in glycogen from endometrial glands"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "يُحدث البروجستيرون مخاطاً عنيقياً سميكاً لزجاً بعد الإباضة، وهو أحد تأثيراته الستة المذكورة في المحاضرة. الخيارات الأخرى خاطئة: القوام الرقيق الممدود ليس من تأثيرات البروجستيرون المذكورة؛ وتوقف الإنتاج أو المخاط الدموي ليسا من تأثيراته؛ والغليكوجين يخصّ إفراز غدد بطانة الرحم في الطور الإفرازي لا مخاط العنق.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m14",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c2",
+      "question_stem": "A very tall 13-year-old girl whose predicted adult height is far above target is referred to a pediatric endocrinologist, who considers high-dose estrogen therapy to arrest further linear growth. By which mechanism does high-dose estrogen stop longitudinal growth?",
+      "options": [
+        "Direct toxicity to osteoblasts",
+        "Promoting epiphyseal closure via direct action on proliferating chondrocytes",
+        "Completely suppressing growth hormone secretion",
+        "Inducing calcification of the medullary cavity",
+        "Stimulating parathyroid hormone release"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الإستروجين بجرعات عالية يعزّز انغلاق المشاش عبر تأثيره المباشر على الخلايا الغضروفية المتكاثرة في صفيحة النمو، وبذلك يتوقف النمو الطولي نهائياً — وهي نقطة امتحانية محببة. الخيارات الأخرى لا تمثل الآلية المذكورة: لا سمية مباشرة لبانيات العظم، ولا كبت كامل لإفراز هرمون النمو، ولا تكلّس للنخاع، ولا تحفيز لإفراز الهرمون الجار درقي.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_m15",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "concept_id": "obgyn_L1_reproductive_physiology_c4",
+      "question_stem": "A 22-year-old woman undergoes transvaginal ultrasound on day 6 of a spontaneous cycle, which shows several small antral follicles (3–11) in each ovary. What does this finding reflect in normal folliculogenesis?",
+      "options": [
+        "A normal cohort, recruited from follicles that began development 2–3 cycles earlier",
+        "Imminent ovulation within the next 12 hours",
+        "A persistent corpus luteum from the previous cycle",
+        "Complete exhaustion of the ovarian reserve",
+        "Suspension of follicle development until the LH surge"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يُجنَّد الجريب المُباض من مجموعة جريبات بدأت نموها قبل دورتين إلى ثلاث دورات من الدورة الحالية، ويظهر لدى الشابات 3–11 جريباً لكل مبيض في كل دورة؛ فالمنظر الموصوف طبيعي للطور الجريبي. الخيارات الأخرى خاطئة: الإباضة تتطلب دفعة LH وليست مجرد وجود جريبات جوفية مبكرة؛ والجسم الأصفر بنية ما بعد الإباضة؛ ووجود الجريبات ينفي استنفاد الاحتياطي؛ ولا يتوقف نمو الجريبات انتظاراً للدفعة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L1_reproductive_physiology_case1",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Timing Conception Around the LH Surge in a Woman with 32-Day Cycles",
+      "scenario": "A 29-year-old schoolteacher (G0P0) and her husband attend a preconception clinic. She has regular 32-day cycles, no medical problems, and no gynecological history. She charts her basal body temperature (BBT) every morning and began using a home urinary LH ovulation predictor kit this cycle. This morning (cycle day 17) the kit turned strongly positive for the LH surge, while her BBT chart remains low. She wants to know exactly when ovulation will happen and how to interpret the temperature shift she expects next.",
+      "vignette": {
+        "age": 29,
+        "sex": "female",
+        "chief_complaint": "Positive home urinary LH test this morning; wants to know when ovulation will occur.",
+        "history": "G0P0, regular 32-day menstrual cycles since menarche at age 12; no dysmenorrhea, no intermenstrual bleeding; no chronic illness, no medications; nonsmoker; attempting conception for 4 months; husband healthy with normal semen analysis.",
+        "vitals": {
+          "bp": "112/74 mmHg",
+          "hr": "72/min",
+          "rr": "14/min",
+          "temp": "36.6 °C",
+          "spo2": "99%"
+        },
+        "exam": "Well-appearing, BMI 22 kg/m²; no thyroid enlargement; no galactorrhea; normal abdominal examination; external genitalia and speculum examination normal.",
+        "labs": [
+          {
+            "name": "Urinary LH kit (cycle day 17)",
+            "value": "Positive — LH surge detected",
+            "flag": "high"
+          }
+        ],
+        "imaging": "None performed at this visit."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L1_reproductive_physiology_case1_s1",
+          "prompt": "Her urinary LH kit just turned positive. When should ovulation be expected?",
+          "options": [
+            "Within ~6 hours of the surge peak",
+            "~36 hours after the onset of the LH surge",
+            "~7 days after the surge",
+            "~14 days after the surge",
+            "Only if her basal body temperature falls first"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تحدث الإباضة بعد 36 ساعة من بدء دفعة LH، لذا يُنصح بتوقيت الجماع في نافذة ما حول هذه النافذة الزمنية. الخيارات الأخرى خاطئة زمنياً: لا تحدث الإباضة خلال 6 ساعات من الذروة، ولا بعد 7 أيام (منتصف الطور الأصفري)، ولا بعد 14 يوماً (نهاية الطور الأصفري)؛ وحرارة الجسم القاعدية ترتفع بعد الإباضة بفعل البروجستيرون ولا تنخفض.",
+          "xp": 10,
+          "hints": [
+            "Relate the positive kit to the onset (not the peak) of the surge.",
+            "The taught interval is a specific number of hours.",
+            "36 hours after surge onset is the classic figure."
+          ]
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case1_s2",
+          "prompt": "Which endocrine mechanism generated her LH surge this morning?",
+          "options": [
+            "A rapid estradiol rise switching feedback from negative to positive at the hypothalamus and anterior pituitary",
+            "Progesterone from the corpus luteum acting on the pituitary",
+            "Falling inhibin A from a regressing corpus luteum",
+            "A drop in GnRH pulse frequency to ~8 pulses/day",
+            "FSH acting directly on the pituitary to release LH"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أواخر الطور الجريبي يحفّز الارتفاع السريع للإستراديول تحوّل التغذية الراجعة من سلبية إلى إيجابية على مستوى الوطاء والنخامى الأمامية معاً، فتتولد دفعة LH. الخيارات الأخرى خاطئة: الجسم الأصفر ينشأ بعد الإباضة لا قبلها؛ وهبوط الإنهيبين أ يحدث أواخر الطور الأصفري ليتيح ارتفاع FSH للدورة التالية؛ وتواتر نبضات GnRH يبلغ ذروته (نحو 48 نبضة/يوم) قرب الإباضة ثم يهبط إلى نحو 8/يوم بعدها؛ وFSH لا يولّد دفعة LH.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case1_s3",
+          "prompt": "Two days later her BBT rises and stays elevated until menses. Which hormone is responsible for this sustained rise?",
+          "options": [
+            "Estradiol from the dominant follicle",
+            "Progesterone from the corpus luteum",
+            "Inhibin A from the ovary",
+            "LH from the anterior pituitary",
+            "hCG"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "البروجستيرون المفرَز من الجسم الأصفر يرفع حرارة الجسم القاعدية، ولذلك يبقى المنحنى مرتفعاً طوال الطور الأصفري حتى يتراجع الجسم الأصفر قبيل الطمث. الخيارات الأخرى خاطئة: الإستراديول لا يرفع الحرارة القاعدية؛ والإنهيبين أ يثبّط FSH؛ وLH يهبط إلى حدوده القاعدية بعد الدفعة؛ وhCG لا يظهر إلا في الحمل.",
+          "xp": 8
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case1_s4",
+          "prompt": "Her cycles are regularly 32 days. On which cycle day did she most likely ovulate this cycle?",
+          "options": [
+            "Day 10",
+            "Day 14",
+            "Day 18",
+            "Day 25",
+            "Day 32"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "الطور الأصفري ثابت تقريباً بنحو 14 يوماً، بينما يتفاوت الطور الجريبي؛ لذا تكون الإباضة في دورة منتظمة طولها 32 يوماً في اليوم 18 تقريباً (32 − 14 = 18). الخيارات الأخرى خاطئة: اليوم 14 موعد الإباضة في الدورة النموذجية 28 يوماً فقط؛ واليوم 10 قصير جداً؛ واليوم 25 داخل الطور الأصفري؛ واليوم 32 موعد الطمث التالي.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "الخلاصة: امرأة سليمة تستخدم وسائل الوعي بالإباضة. المعلومة المحورية أن الإباضة تحدث بعد 36 ساعة من بدء دفعة LH التي يولّدها تحوّل التغذية الراجعة للإستراديول من سلبية إلى إيجابية على الوطاء والنخامى الأمامية، وأن الحرارة القاعدية ترتفع بعد الإباضة بفعل البروجستيرون المفرَز من الجسم الأصفر، وأن الطور الأصفري ثابت (نحو 14 يوماً) فيُحسب يوم الإباضة بطرح 14 من طول الدورة (32 − 14 = 18). الدرس المستفاد: نافذة الإخصاب المثلى تقع حول الإباضة مباشرة، وفهم ثبات الطور الأصفري يفسّر معظم تباين أطوال الدورات.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L1_reproductive_physiology_case2",
+      "lecture_id": "obgyn_L1_reproductive_physiology",
+      "title": "Endometrial Dating in the Workup of Secondary Infertility",
+      "scenario": "A 27-year-old woman (G1P1) is evaluated for 12 months of secondary infertility. Her cycles are regular at 28 days. She monitored this cycle carefully: a home urinary LH kit detected the surge on cycle day 14, and a transvaginal ultrasound performed the same day measured the endometrium at 12 mm. An endometrial biopsy is performed on cycle day 21, exactly 7 days after the documented LH surge.",
+      "vignette": {
+        "age": 27,
+        "sex": "female",
+        "chief_complaint": "Inability to conceive for 12 months despite regular ovulatory cycles.",
+        "history": "G1P1 (spontaneous vaginal delivery 3 years ago), regular 28-day cycles since menarche; no pelvic infections, no chronic illness, no medications; partner's semen analysis normal.",
+        "vitals": {
+          "bp": "118/76 mmHg",
+          "hr": "76/min",
+          "rr": "14/min",
+          "temp": "36.7 °C",
+          "spo2": "99%"
+        },
+        "exam": "BMI 23 kg/m²; normal abdominal and pelvic examination; no cervical discharge; uterus normal size and mobile, no adnexal masses.",
+        "labs": [
+          {
+            "name": "Urinary LH kit (cycle day 14)",
+            "value": "Positive — LH surge detected",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Transvaginal ultrasound on the day of the LH surge: uterus normal in size; endometrium 12 mm with proliferative (triple-line) appearance; no masses."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L1_reproductive_physiology_case2_s1",
+          "prompt": "The 12 mm endometrial measurement on the day of the LH surge is best interpreted as:",
+          "options": [
+            "Abnormally thin for the late follicular phase",
+            "Normal — endometrial thickness approximates 12 mm at the time of the LH surge",
+            "Suggestive of endometrial hyperplasia",
+            "Typical of atrophic endometrium",
+            "Characteristic of the early proliferative phase"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تبلغ سماكة البطانة نحو 12 ملم وقت دفعة LH نتيجة تكاثر الخلايا الغدية والسدية في الطبقة الوظيفية تحت تأثير الإستروجين بعد الطمث، وهو قياس طبيعي متوقع. الخيارات الأخرى خاطئة: القياس ليس نحيفاً ولا يدل بذاته على فرط التصنع أو الضمور، والطور التكاثري المبكر يكون أرقّ من ذلك قبل اكتمال التكاثر.",
+          "xp": 10,
+          "hints": [
+            "Estrogen drives the proliferative phase after menses.",
+            "Recall the endometrial thickness quoted at the time of the LH surge.",
+            "12 mm is the expected value."
+          ]
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case2_s2",
+          "prompt": "Her day-21 biopsy shows tortuous, coiled glands distended with glycogen- and glycoprotein-rich secretions and an edematous stroma. What does this represent?",
+          "options": [
+            "Proliferative endometrium, expected before ovulation",
+            "Peak secretory activity, expected exactly 7 days after ovulation",
+            "Menstrual endometrium, expected on day 21",
+            "Atrophic endometrium from estrogen deficiency",
+            "Sloughing of the basalis layer"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "بعد الإباضة يتحول جهاز البطانة إلى نسيج مُفرِز تحت تأثير البروجستيرون على البطانة المُهيّأة بالإستروجين، وتُلاحظ في تجاويف الغدد إفرازات غنية بالغليكوجين والغليكوبروتين، وتبلغ ذروة النشاط الإفرازي بعد 7 أيام من الإباضة — وهو موعد الخزعة تماماً (اليوم 21 في دورة 28 يوماً) — مع غدد أكثر التواءً وسدى أكثر وذمة. الخيارات الأخرى خاطئة: البطانة التكاثرية ذات غدد أكثر استقامة وتسبق الإباضة؛ والبطانة الطمثية تنسلاخ أواخر الدورة؛ والضمورية لا تنسجم مع دورات منتظمة؛ والطبقة القاعدية لا تنسلاخ أصلاً.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case2_s3",
+          "prompt": "If fertilization does not occur this cycle, which sequence will lead to her next menses?",
+          "options": [
+            "Sustained estrogen → continued painless proliferation",
+            "No hCG → corpus luteum luteolysis → progesterone loss → spiral artery constriction → ischemic shedding of the functionalis",
+            "A primary FSH surge → direct glandular necrosis",
+            "Rising inhibin A → stromal apoptosis",
+            "GnRH pulses rising to ~48/day → endometrial breakdown"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "عند غياب الإخصاب لا تُنتج أنسجة المشيمة hCG فيتراجع الجسم الأصفر، فتُحرم البطانة من البروجستيرون، فتنقبض الشرايين الحلزونية وتصبح الأنسجة ناقصة التروية فيحدث الانسلاخ (الطمث)؛ ويُرجَّح أن بروستاغلاندين F2α في البطانة يسهم في تشنج الشرينات. الخيارات الأخرى خاطئة: الإستروجين يدعم النمو لا الانسلاخ؛ وFSH هرمون نخامي لا يخرب الغدد؛ والإنهيبين أ يثبّط FSH ولا يقتل السدى؛ وتواتر GnRH العالي (نحو 48/يوم) يرافق ما قبل الإباضة لا الطمث.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L1_reproductive_physiology_case2_s4",
+          "prompt": "Which endometrial layer is shed with menses, and which layer rebuilds the lining afterwards?",
+          "options": [
+            "The basalis is shed and the functionalis rebuilds it",
+            "The functionalis is shed and the basalis serves as the reserve for regeneration",
+            "Both layers are shed each cycle",
+            "Neither layer sheds; only blood is lost",
+            "The myometrium sheds its lining"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الطبقة الوظيفية (الملاصقة لجوف الرحم) هي التي تنسلاخ مع الطمث، بينما الطبقة القاعدية (الملاصقة للعضل الرحمي) لا تتغير جوهرياً عبر الدورة وتعمل احتياطياً لتجديد البطانة بعد الانسلاخ؛ لذلك لا تُفقد البطانة بالكامل أبداً. الخيارات الأخرى تخالف هذا التقسيم.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "الخلاصة: خزعة بطانة بتاريخ مثالي في امرأة مُباضة. السماكة المتوقعة عند دفعة LH نحو 12 ملم (أثر الإستروجين في الطور التكاثري)، وذروة النشاط الإفرازي تقع بعد 7 أيام من الإباضة: غدد ملتفة مليئة بإفرازات غنية بالغليكوجين والغليكوبروتين وسدى وذمي. عند غياب الإخصاب يتراجع الجسم الأصفر لغياب hCG، فيهبط البروجستيرون فتنقبض الشرايين الحلزونية وتنسلاخ الطبقة الوظيفية، بينما تبقى الطبقة القاعدية مصدر التجدد. الدرس المستفاد: قراءة تاريخ البطانة تعكس مباشرة توازن الإستروجين والبروجستيرون عبر الدورة، وثبات الطور الأصفري (نحو 14 يوماً) يجعل اليوم 21 يوافق 7 أيام بعد الإباضة في دورة 28 يوماً.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

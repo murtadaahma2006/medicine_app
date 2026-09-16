@@ -1,0 +1,989 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L4_peptic_ulcer",
+    "title": "Peptic Ulcer Disease",
+    "module": "gastroenterology",
+    "system": "gastrointestinal",
+    "specialty": "internal_medicine",
+    "source": {
+      "file_name": "L4 peptic ulcer pdf.pdf",
+      "page_count": 32
+    },
+    "order_index": 3,
+    "tags": ["peptic ulcer disease", "duodenal ulcer", "gastric ulcer", "Helicobacter pylori", "NSAIDs", "acid suppression", "PPI", "H. pylori eradication", "upper GI endoscopy", "dyspepsia"],
+    "golden_tip": [
+      "EXAM TRAP: Every gastric ulcer is MALIGNANT until proven otherwise - at least 10 targeted biopsies are required before accepting it as benign; anti-ulcer therapy can heal the ulceration of a cancer without curing the cancer. Chronic DU is NOT associated with malignancy.",
+      "KEY DISCRIMINATOR: Duodenal ulcer pain starts 2-3 h after eating and at midnight and is relieved by eating (good appetite, no weight loss); gastric ulcer pain starts immediately after eating (afraid to eat, weight loss).",
+      "H. pylori is Gram-negative, S-shaped, flagellated and urease-positive: urease converts urea to ammonia, creating the alkaline shield that allows survival in gastric acid. Fecal-oral transmission; most common cause of PUD; 2005 Nobel Prize - Warren and Marshall."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L4_peptic_ulcer_c1",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Peptic Ulcer Disease - Definition, Sites and Lecture Objectives",
+      "summary_ar": "القرحة الهضمية انقطاع في السطح المخاطي أكبر من 5 مم يمتد حتى الطبقة تحت المخاطية في أي جزء من الجهاز الهضمي معرض لفعل حمض الببسين، وقد تكون حادة أو مزمنة وكلاهما قد يخترق العضلية المخاطية. التوزع: قرحة الاثني عشر (الجزء الأول) 80%، والقرحة المعدية (الانحناء الأصغر) 19%، وقرحة الفموة الجراحية 1%، مع إمكانية إصابة المريء والمخاطية المعدية المنتبذة في رتج ميكل.",
+      "sections": [
+        {
+          "heading": "Lecture Scope and Learning Objectives (Slides 1-2)",
+          "body_text": "The lecture opens (slide 1) with an endoscopic photograph of the gastric antrum/pyloric region showing mucosal erythema, edema, irregularity and a visible area of mucosal disruption/ulceration - the typical endoscopic landscape of peptic ulcer disease. The stated **learning objectives** of the lecture are:\n- **LO1: Definition of peptic ulcer**\n- **LO2: Pathophysiology of each type of peptic ulcer**\n- **LO3: Etiology of each type of peptic ulcer**\n- **LO4: Clinical presentation of gastric and duodenal ulcers**\n- **LO5: Management**\nThe lecture therefore flows logically: definition -> sites -> defensive/aggressive balance -> etiology -> *H. pylori* microbiology -> DU vs GU clinical comparison tables -> diagnostic evaluation -> gastric ulcer and malignancy -> treatment (acid suppression, *H. pylori* eradication, mucosal protection).",
+          "key_points": [
+            "Five learning objectives: definition, pathophysiology, etiology, clinical presentation of gastric and duodenal ulcers, management",
+            "Peptic ulcer disease (PUD) = ulceration wherever acid-pepsin meets GI mucosa"
+          ]
+        },
+        {
+          "heading": "Definition of Peptic Ulcer (Slide 3)",
+          "body_text": "A **peptic ulcer** is defined by four elements:\n- **Breaks in the mucosal surface** of the gastrointestinal tract\n- **Size >5 mm** (by convention, superficial defects of 5 mm or less are called **erosions**)\n- **Depth reaching down to the submucosa**\n- **Location: any part of the GI tract exposed to the aggressive action of acid-pepsin juices** (hence 'peptic')\nTwo further defining points from the slide:\n- Peptic ulcers may be **acute or chronic**\n- **Both acute and chronic ulcers can penetrate the muscularis mucosa**\nThis definition separates a true ulcer (deep, >5 mm, reaching submucosa) from a superficial erosion, and explains why peptic ulcers appear wherever acid meets mucosa: duodenum, stomach, oesophagus, surgical stoma and ectopic gastric mucosa.",
+          "key_points": [
+            "Peptic ulcer = mucosal break >5 mm with depth to the submucosa in acid-pepsin exposed GI tract",
+            "May be acute or chronic; both can penetrate the muscularis mucosa",
+            "An erosion is the smaller, more superficial lesion (5 mm or less)"
+          ],
+          "check": {
+            "prompt": "During endoscopy a 3 mm mucosal defect confined to the mucosa is seen in the duodenal bulb. Per the lecture definition this is best called:",
+            "options": ["A peptic ulcer", "An erosion", "A stomal ulcer", "An ulcerated cancer", "Oesophagitis"],
+            "correct_index": 1,
+            "explanation_ar": "حسب تعريف المحاضرة: القرحة الهضمية أكبر من 5 مم وتمتد حتى الطبقة تحت المخاطية وقد تخترق العضلية المخاطية، أما العيب السطحي الأصغر فهو تآكل erosion وليس قرحة."
+          }
+        },
+        {
+          "heading": "Sites and Relative Frequency (Slide 4)",
+          "body_text": "The slide poses the classic question **'Pepsin or HCl acid?'** - which component of the aggressive gastric juice digests the mucosa - then gives the distribution of peptic ulcer disease:\n- **Duodenal ulcer (DU): first part of the duodenum - 80%** (the single commonest site)\n- **Gastric ulcer (GU): lesser curve of the stomach - 19%**\n- **Oesophagitis** (peptic injury of the oesophageal mucosa)\n- **Stomal ulcer: 1%** (ulcer at a surgical gastroenterostomy stoma)\n- **Ectopic gastric mucosa in Meckel's diverticulum** (acid secreted by heterotopic gastric mucosa can ulcerate the adjacent ileal mucosa)\nThe accompanying endoscopic images on the slide show: a large pale irregular ulcerated lesion with a necrotic base on erythematous gastric mucosa; antrum/pylorus inflammation with scattered whitish punctate erosions; and multiple white-based ulcers labeled 'Gastric ulcers in pyloric antrum' with the endoscope entering the stomach.",
+          "key_points": [
+            "DU of the first part of the duodenum = 80% of PUD; GU of the lesser curve = 19%; stomal ulcer = 1%",
+            "Meckel's diverticulum with ectopic gastric mucosa is the classic extra-gastroduodenal site of peptic ulceration",
+            "The lecture question 'pepsin or HCl acid?' frames acid-pepsin juice as the aggressive agent"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Peptic ulcer", "definition_ar": "قرحة هضمية: انقطاع في السطح المخاطي أكبر من 5 ملم يمتد حتى الطبقة تحت المخاطية في أي جزء من الجهاز الهضمي معرض لفعل عصارة الحمض والببسين"},
+        {"term": "Erosion", "definition_ar": "تآكل: عيب مخاطي سطحي صغير (5 ملم أو أقل) لا يصل إلى الطبقة تحت المخاطية"},
+        {"term": "Muscularis mucosa", "definition_ar": "العضلية المخاطية: طبقة عضلية رقيقة داخل جدار المعدة والأمعاء؛ اختراقها يميز القرحة الحقيقية العميقة"},
+        {"term": "Stomal ulcer", "definition_ar": "قرحة الفموة الجراحية: قرحة تتشكل عند فتحة الوصل المعدى المعوي بعد جراحة المعدة"},
+        {"term": "Meckel's diverticulum", "definition_ar": "رتج ميكل: رتج خلقي في اللفائفي قد يحوي مخاطية معدية منتبذة مفرزة للحمض تسبب قرحة في اللفائفي المجاور"},
+        {"term": "Duodenal bulb", "definition_ar": "لمبة الاثني عشر: الجزء الأول من الاثني عشر وهو الموقع الأشيع للقرحة الهضمية (80%)"}
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L4_peptic_ulcer_c2",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Pathophysiology - Balance of Defensive and Aggressive Factors",
+      "summary_ar": "تنشأ القرحة الهضمية من اختلال التوازن بين عوامل الدفاع (البيكربونات وطبقة المخاط والبروستاغلاندينات وتدفق الدم المخاطي وتجدد الظهارة) والعوامل الهجومية (الملوية البوابية ومضادات الالتهاب غير الستيروئيدية والببسين والأحماض الصفراوية والتدخين والكحول)، فينتج تلف المخاطية وتآكلات ثم قرحات.",
+      "sections": [
+        {
+          "heading": "The Balance Model (Slide 5)",
+          "body_text": "Peptic ulceration is the end-result of an **imbalance between mucosal defense and luminal aggression**, drawn in the lecture as opposing lists:\n- **Defensive factors are DECREASED** (weak mucosal protection)\n- **Aggressive factors are INCREASED** (excess attack)\n- The net result is **mucosal damage -> erosions & ulcerations**\nThis simple model integrates every cause of PUD in the lecture: *H. pylori* sits on the aggressive side while simultaneously damaging the defensive mucus layer, and NSAIDs act mainly by abolishing the prostaglandin-dependent defense. Treatment mirrors the model in both directions: **acid suppression reduces aggression** (antacids, H2RAs, PPIs, P-CABs), while **cytoprotective drugs reinforce defense** (prostaglandin analogues, sucralfate, bismuth).",
+          "key_points": [
+            "PUD = decreased defense + increased aggression -> mucosal damage -> erosions -> ulcerations",
+            "Treatment either reduces aggression (acid suppression) or strengthens defense (cytoprotective agents)"
+          ]
+        },
+        {
+          "heading": "Defensive (Cytoprotective) Factors - the Five Shields",
+          "body_text": "The lecture lists **five defensive factors**; loss of any of them weakens the mucosal barrier:\n- **Bicarbonate** - the alkaline secretion trapped in the mucus that neutralizes acid at the epithelial surface\n- **Mucus layer** - the physical gel barrier covering the epithelial cells (and the niche where *H. pylori* lives)\n- **Prostaglandins** - maintain mucus and bicarbonate secretion and mucosal blood flow; NSAIDs abolish this defense\n- **Mucosal blood flow** - delivers nutrients and clears back-diffused acid\n- **Epithelial renewal** - continuous restitution and repair of the surface epithelium\nMemorize these five - they are the mirror image of the cytoprotective drugs taught later (misoprostol replaces prostaglandins; sucralfate coats the mucosa; bismuth protects and attacks *H. pylori*).",
+          "key_points": [
+            "Defense: bicarbonate | mucus layer | prostaglandins | mucosal blood flow | epithelial renewal",
+            "NSAIDs injure mainly by removing the prostaglandin-dependent defense"
+          ],
+          "check": {
+            "prompt": "Which of the following is a DEFENSIVE factor in the mucosal balance taught in this lecture?",
+            "options": ["Pepsin", "Bicarbonate secretion", "Bile acids", "H. pylori", "NSAIDs"],
+            "correct_index": 1,
+            "explanation_ar": "البيكربونات عامل دفاعي يعادل الحمض عند سطح الظهارة، بينما الببسين والأحماض الصفراوية والملوية البوابية ومضادات الالتهاب كلها عوامل هجومية تزيد تلف المخاطية."
+          }
+        },
+        {
+          "heading": "Aggressive Factors - the Five Attacks",
+          "body_text": "The lecture lists **five aggressive factors**; excess of any of them promotes mucosal injury:\n- ***Helicobacter pylori*** - the most important aggressive factor and the most common cause of peptic ulcer disease\n- **NSAIDs** - topical mucosal injury plus systemic loss of prostaglandin-mediated defense\n- **Pepsins** - the digestive protease that acts with acid on exposed mucosa\n- **Bile acids** - duodenogastric reflux of bile disrupts the mucus barrier\n- **Smoking and alcohol** - impair mucosal defense and healing while increasing acid aggression\nNote how *H. pylori* and NSAIDs dominate this list - exactly the two etiologic stars of the next slide (etiology).",
+          "key_points": [
+            "Aggression: H. pylori | NSAIDs | pepsins | bile acids | smoking and alcohol",
+            "H. pylori is the most common cause of PUD; NSAIDs are the main drug cause"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Cytoprotective (defensive) factors", "definition_ar": "عوامل حماية المخاطية: البيكربونات وطبقة المخاط والبروستاغلاندينات وتدفق الدم المخاطي وتجدد الخلايا الظهارية"},
+        {"term": "Prostaglandins", "definition_ar": "بروستاغلاندينات: وسائط تحمي مخاطية المعدة بتحفيز المخاط والبيكربونات وتدفق الدم، وتثبيطها بمضادات الالتهاب غير الستيروئيدية يفقد المخاطية دفاعها"},
+        {"term": "Bile acids (reflux)", "definition_ar": "أحماض صفراوية: ترتد من الاثني عشر إلى المعدة فتكسر حاجز المخاط وتزيد العوامل الهجومية"},
+        {"term": "Epithelial renewal", "definition_ar": "تجدد الظهارة: استمرار ترميم واستبدال الخلايا السطحية المتضررة للمخاطية"},
+        {"term": "Mucosal blood flow", "definition_ar": "تدفق الدم المخاطي: تروية المخاطية التي تمددها بالأكسجين والعناصر المغذية وتزيل الحمض المنتشر نحوها"}
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L4_peptic_ulcer_c3",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Etiology of Peptic Ulcer Disease",
+      "summary_ar": "أسباب القرحة الهضمية: الملوية البوابية (السبب الأشيع)، والأدوية (مضادات الالتهاب غير الستيروئيدية والكورتيكوستيروئيدات)، وفرط الحموضة، والتدخين والكحول، والشدة الجهازية، والتفريغ المعدي السريع، والشخصية والضغط النفسي. ولا دور للوراثة أو الأطعمة الحارة في إحداث القرحة.",
+      "sections": [
+        {
+          "heading": "Etiologic Factors (Slide 6)",
+          "body_text": "The lecture lists the **causes of peptic ulcer** as:\n- ***H. pylori*** - the leading cause worldwide\n- **Drugs: NSAIDs and corticosteroids**\n- **Hyperacidity** (excess gastric acid secretion)\n- **Smoking and alcohol**\n- **Systemic stress** (major systemic illness, surgery, burns, ICU stay)\n- **Rapid gastric emptying** - acid-containing chyme is delivered to the duodenum faster than it can be buffered\n- **Personality and stress** (stress-prone personality)\nNotice how this list maps onto the defensive/aggressive balance of the previous slide: *H. pylori*, NSAIDs, hyperacidity, smoking and alcohol all shift the balance toward aggression, while stress factors and rapid emptying prolong the exposure of mucosa to acid.",
+          "key_points": [
+            "Etiology: H. pylori | drugs (NSAIDs, corticosteroids) | hyperacidity | smoking and alcohol | systemic stress | rapid gastric emptying | personality and stress",
+            "H. pylori is the single most common cause; NSAIDs are the most important drug cause"
+          ]
+        },
+        {
+          "heading": "Factors with NO Effect (Slide 6, bottom)",
+          "body_text": "The slide ends with an explicit negative statement: **'No effect of genetics and spicy foods.'** In other words, per this lecture:\n- **Genetics does NOT cause peptic ulcer**\n- **Spicy foods do NOT cause peptic ulcer**\nThis is a favorite exam discriminator: patients (and older textbooks) frequently blame family history and chili/spices, but the taught etiology is *H. pylori*, NSAIDs and corticosteroids, hyperacidity, smoking and alcohol, systemic stress, rapid gastric emptying and personality/stress - not heredity and not spicy diet.",
+          "key_points": [
+            "NO effect on ulcer causation: genetics and spicy foods",
+            "Classic exam trap - 'spicy food causes ulcers' is FALSE in this lecture"
+          ],
+          "check": {
+            "prompt": "According to this lecture, which two factors have NO role in causing peptic ulcer disease?",
+            "options": ["H. pylori and NSAIDs", "Genetics and spicy foods", "Smoking and alcohol", "Systemic stress and personality", "Hyperacidity and rapid gastric emptying"],
+            "correct_index": 1,
+            "explanation_ar": "المحاضرة تنص صراحة: لا تأثير للوراثة ولا للأطعمة الحارة في إحداث القرحة، بينما كل الخيارات الأخرى مذكورة ضمن أسباب القرحة."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Hyperacidity", "definition_ar": "فرط الحموضة: زيادة إفراز الحمض المعدي كأحد العوامل الهجومية المسببة للقرحة"},
+        {"term": "Rapid gastric emptying", "definition_ar": "التفريغ المعدي السريع: إسراع إفراغ المحتوى الحمضي إلى الاثني عشر قبل تعادله فيؤذي مخاطيته"},
+        {"term": "Systemic stress", "definition_ar": "الشدة الجهازية: الأمراض الحادة الكبرى والحروق والعمليات كعامل مهيئ لتشكل القرحة"},
+        {"term": "Corticosteroids", "definition_ar": "الكورتيكوستيروئيدات: أدوية تذكرها المحاضرة مع مضادات الالتهاب غير الستيروئيدية ضمن الأدوية المسببة للقرحة"}
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L4_peptic_ulcer_c4",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Helicobacter pylori - Discovery, Microbiology and Histology",
+      "summary_ar": "الملوية البوابية عصوية سالبة الغرام بشكل حرف S متأسوطة، تنتقل عن طريق البراز-الفم، وتفرز إنزيم اليوريز الذي يحول اليوريا إلى أمونيا فيخلق وسطاً قلوياً يسمح لها بالبقاء في حمض المعدة؛ وهي السبب الأشيع للقرحة الهضمية. اكتشف دورها الطبيبان الأستراليان وارن ومارشال ونالا جائزة نوبل 2005، ويمكن رؤيتها نسيجياً بصبغة الفضة أو الجيمزا أو الهيماتوكسيلين-إيوسين.",
+      "sections": [
+        {
+          "heading": "Discovery - the 2005 Nobel Prize (Slide 7)",
+          "body_text": "**Two Australian physicians, Robin Warren and Barry Marshall, won the 2005 Nobel Prize in Medicine or Physiology** for showing - at least partly by accident - that **many ulcers are the result of a bacterial infection**. Their pioneering work on ulcers transformed peptic ulcer disease from a chronic acid-and-stress disease treated with lifelong acid suppression and surgery into a **curable infectious disease** treatable with antimicrobial eradication. (The slide quotes the BBC NEWS story of 2005/10/04: 'Robin Warren and Barry Marshall's work on ulcers was pioneering.')",
+          "key_points": [
+            "Warren and Marshall - two Australian physicians - 2005 Nobel Prize in Medicine or Physiology",
+            "Their discovery: many ulcers are the result of a bacterial infection (H. pylori)",
+            "PUD became a curable infectious disease thanks to eradication therapy"
+          ]
+        },
+        {
+          "heading": "Microbiology and the Urease Trick (Slide 8)",
+          "body_text": "The microbiology of *H. pylori* as lectured:\n- **Gram-negative** organism\n- **S-shaped (curved/spiral) and flagellate** - flagella drive it through the mucus layer to the epithelial surface\n- ***H. pylori* is the MOST COMMON CAUSE of peptic ulcer disease**\n- **Transmission route: fecal-oral**\n- **Secretes urease, which converts urea to ammonia**\n- The ammonia **produces an alkaline environment enabling survival in the stomach**\nThe slide diagram shows the flagellated S-shaped bacterium with the reaction: substrate **urea** in -> enzyme **urease** -> products **NH3 and CO2** out. Clinical corollary: this same urease is exactly what the **urea breath test** and the **rapid urease test** measure to detect the organism.",
+          "key_points": [
+            "H. pylori: Gram-negative, S-shaped, flagellate, urease-secreting, fecal-oral transmission",
+            "Urease converts urea to ammonia (NH3 + CO2) -> alkaline microenvironment -> survival in gastric acid",
+            "Most common cause of PUD"
+          ],
+          "check": {
+            "prompt": "Why can H. pylori survive in the acidic gastric lumen?",
+            "options": ["It secretes urease which converts urea to ammonia, creating an alkaline microenvironment", "Its Gram-negative wall is impermeable to hydrochloric acid", "It lives inside parietal cells away from the acid", "It secretes its own thick protective mucus coat", "Its S-shape physically shields it from acid"],
+            "correct_index": 0,
+            "explanation_ar": "المفتاح هو إنزيم اليوريز: يحول اليوريا إلى أمونيا قلوية تحيط بالجرثوم فتقيه من حمض المعدة. أما الشكل الحرفي S والأسواط فوظيفتها الحركة داخل طبقة المخاط، والجرثوم يعيش على سطح الظهارة داخل المخاط لا داخل الخلايا الجدارية."
+          }
+        },
+        {
+          "heading": "Histological Identification - Three Stains (Slides 9-11)",
+          "body_text": "*H. pylori* can be visualized directly in gastric biopsy histology; the lecture demonstrates three stains (each a full slide with micrographs):\n- **Silver stain (slide 9)** - dark, curved/rod-shaped organisms on the luminal surface of gastric pit epithelium and within the mucus layer; higher magnification shows dense clusters of small black-stained spiral bacteria\n- **Giemsa stain (slide 10)** - organisms stain blue/purple, seen as small curved or spiral rods on the epithelial surface and clustered inside gastric gland lumens\n- **H and E stain (slide 11)** - small curved/spiral bacilli visible within the gastric pits against the usual pink-purple background (lower contrast than silver or Giemsa)\nThese correspond to the **invasive detection method 'histology'** listed in the diagnostic work-up; biopsy histology simultaneously excludes malignancy in gastric ulcers.",
+          "key_points": [
+            "H. pylori on histology: silver stain (black curved organisms), Giemsa (blue/purple rods), H and E (visible but lower contrast)",
+            "Histology is one of the three invasive detection tests"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Urease", "definition_ar": "يوريز: إنزيم تفرزه الملوية البوابية يحول اليوريا إلى أمونيا وثاني أكسيد الكربون فيخلق وسطاً قلوياً يحميها من الحمض، وهو أساس اختبار النفس باليوريا واختبار اليوريز السريع"},
+        {"term": "Fecal-oral transmission", "definition_ar": "الانتقال برازي-فموي: طريق عدوى الملوية البوابية عبر الطعام والماء واليدوين الملوثين"},
+        {"term": "Silver stain", "definition_ar": "صبغة الفضة: صبغة نسيجية تُظهر الملوية البوابية كعصيات داكنة منحنية على سطح المخاطية وداخل الحفر المعدية"},
+        {"term": "Giemsa stain", "definition_ar": "صبغة الجيمزا: تظهر الملوية البوابية كعصيات منحنية حلزونية زرقاء/بنفسجية على سطح الظهارة"},
+        {"term": "Robin Warren and Barry Marshall", "definition_ar": "الطبيبان الأستراليان وارن ومارشال: مكتشفا الدور الممرض للملوية البوابية في القرحة الهضمية وحاصلا جائزة نوبل في الطب 2005"}
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L4_peptic_ulcer_c5",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Clinical Presentation - Duodenal vs Gastric Ulcer",
+      "summary_ar": "الألم الاثنا عشري: شرسوفي يبدأ بعد الأكل بساعتين إلى ثلاث ساعات وعند منتصف الليل، تزيده الجوع ويريحه الأكل فيبقى الشهية والوزن جيدين، وهو أشيع عند الرجال (5:1) وفي الثلاثينات ومع المهن الضاغطة. أما القرحة المعدية فألمها يبدأ فور الأكل وقد يشع إلى الظهر، يزيده الأكل ويريحه الاستلقاء أو الإقياء، فيخاف المريض من الأكل ويفقد الوزن، وعمرها النموذجي 50-60. النزف: الإقياء الدموي 60% في المعدية مقابل 40% في الاثنا عشرية، والميلينا 60% في الاثنا عشرية مقابل 40% في المعدية، والعلامات الفيزيائية محدودة القيمة (حساسية ونوعية نحو 50% فقط).",
+      "sections": [
+        {
+          "heading": "Symptom Comparison Table - Part 1 (Slides 12-13)",
+          "body_text": "Slide 12 is the section title 'Clinical Presentation'. The heart of this part is a **two-slide side-by-side comparison of duodenal ulcer (DU) and gastric ulcer (GU)**. Part 1 (slide 13):\n- **Age | DU: any age, especially 30-40 | GU: middle age 50-60**\n- **Sex | DU: males more, ratio 5:1 | GU: males more, ratio 2:1**\n- **Occupation | DU: stress jobs, e.g. manager | GU: same**\n- **Pain | DU: epigastric discomfort | GU: epigastric, can radiate to the back**\n- **Onset of pain | DU: 2-3 hours after eating AND at midnight | GU: immediately after eating**\n- **Aggravated by | DU: hunger | GU: eating**\nThe pattern to memorize: **DU pain is hunger-like, late-postprandial and nocturnal, and is relieved by food; GU pain is immediate-postprandial and provoked by food.** DU also favors younger patients (30-40) with a strong male predominance (5:1) and stressful occupations (the classic 'manager ulcer').",
+          "key_points": [
+            "DU: age any (esp. 30-40), M:F 5:1, stress occupations; pain epigastric, 2-3 h postprandial and midnight, aggravated by hunger",
+            "GU: age 50-60, M:F 2:1; pain epigastric radiating to back, immediate postprandial, aggravated by eating"
+          ],
+          "check": {
+            "prompt": "A 35-year-old manager wakes at midnight with epigastric pain that began 3 hours after dinner; eating biscuits relieves it. Which ulcer does this pattern typify?",
+            "options": ["Gastric ulcer", "Duodenal ulcer", "Either equally", "Stomal ulcer", "Oesophageal ulcer"],
+            "correct_index": 1,
+            "explanation_ar": "هذا النمط الكلاسيكي للقرحة الاثنا عشرية: ألم بعد الأكل بساعتين إلى ثلاث ساعات وعند منتصف الليل، تزيده الجوع ويريحه الأكل. أما القرحة المعدية فيبدأ ألمها فور الأكل ويزيده الأكل."
+          }
+        },
+        {
+          "heading": "Symptom Comparison Table - Part 2 (Slide 14)",
+          "body_text": "Part 2 of the comparison table (slide 14):\n- **Relieved by | DU: eating | GU: lying down or vomiting**\n- **Duration | DU: 1-2 months | GU: few weeks**\n- **Vomiting | DU: uncommon | GU: common (to relieve the pain)**\n- **Appetite | DU: good | GU: patient is afraid to eat**\n- **Diet | DU: good - eats to relieve the pain | GU: avoids fried food**\n- **Weight | DU: no weight loss | GU: weight loss**\n- **Hematemesis | DU: 40% | GU: 60%**\n- **Melena | DU: 60% | GU: 40%**\nTwo high-yield pearls: (1) the DU patient **eats to kill the pain** and therefore keeps a good appetite and weight, whereas the GU patient **fears food, avoids fried food, vomits for relief, and loses weight**; (2) **hematemesis predominates in GU (60%) while melena predominates in DU (60%)** - a classic numbers question.",
+          "key_points": [
+            "DU relieved by eating; GU relieved by lying down or vomiting",
+            "DU: good appetite, no weight loss; GU: afraid to eat, avoids fried food, weight loss",
+            "Bleeding: hematemesis 60% / melena 40% in GU; hematemesis 40% / melena 60% in DU"
+          ]
+        },
+        {
+          "heading": "Physical Signs (Slide 15)",
+          "body_text": "**Physical examination is of LIMITED VALUE in patients with uncomplicated ulcer.**\n- For **epigastric tenderness on deep palpation**, the **sensitivity and specificity are each approximately 50% or less**\n- Furthermore, **many patients with non-ulcer diseases also have epigastric tenderness** on physical examination\nThe practical message: you can neither diagnose nor exclude a peptic ulcer from physical signs alone - an uncomplicated ulcer may coexist with a completely unremarkable abdomen, and epigastric tenderness is shared with many non-ulcer causes of dyspepsia. Objective diagnosis requires the investigations of the next section (endoscopy, barium).",
+          "key_points": [
+            "Epigastric tenderness on deep palpation: sensitivity and specificity about 50% or less",
+            "Many non-ulcer diseases also cause epigastric tenderness",
+            "Physical exam cannot confirm or exclude an uncomplicated ulcer"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Hematemesis", "definition_ar": "تقيؤ دموي: تقيؤ دم أحمر أو بلون القهوة، أشيع في القرحة المعدية (60%) مقارنة بالاثنا عشرية (40%)"},
+        {"term": "Melena", "definition_ar": "ميلينا: براز أسود قطراني كريه الرائحة ناتج عن هضم الدم في الجهاز الهضمي، أشيع في القرحة الاثنا عشرية (60%)"},
+        {"term": "Nocturnal (midnight) pain", "definition_ar": "الألم الليلي: ألم شرسوفي يوقظ المريض منتصف الليل، سمة مميزة للقرحة الاثنا عشرية"},
+        {"term": "Food fear", "definition_ar": "رهاب الطعام: خوف مريض القرحة المعدية من الأكل لأنه يستثير الألم فيتجنبه ويفقد الوزن"}
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L4_peptic_ulcer_c6",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Diagnostic Evaluation of Peptic Ulcer",
+      "summary_ar": "تقييم القرحة يشمل دراسة الباريوم للجهاز الهضمي العلوي والتنظير (الفحص الحاسم مع إمكانية الخزعة) واختبارات كشف الملوية البوابية، وأحياناً غاسترين المصل وتحليل حموضة المعدة مع الفحص عن استخدام مضادات الالتهاب. اختبارات الملوية غير الباضعة: الأمصال والنفس باليوريا وذيفان البراز؛ والباضعة: اليوريز السريع والنسيج والزرع. الباريوم يظهر حفرة (niche) في لمبة الاثني عشر أو تشوه اللمبة بالتندب، والتنظير يظهر القرحة المعدية بقاعدة نظيفة وطيات مشعة.",
+      "sections": [
+        {
+          "heading": "Diagnostic Modalities (Slides 16-17)",
+          "body_text": "Slide 16 is the section title 'Diagnostic Evaluation'. The work-up of a suspected peptic ulcer (slide 17) includes:\n- **Barium studies of the proximal GI tract** (barium meal / upper GI series)\n- **Endoscopy** (upper GI endoscopy - the definitive investigation: direct visualization plus biopsy capability)\n- **Tests for detection of *H. pylori*** (detailed in the next section)\n- **Occasionally: serum gastrin level and gastric acid analysis** - reserved for suspected acid hypersecretion states\n- **Screen for NSAIDs** - a careful drug history for NSAID/aspirin exposure is part of the evaluation\nKeep this list in mind as the framework: imaging (barium), endoscopy, infection testing, acid-marker tests, and a drug history.",
+          "key_points": [
+            "Diagnostic tools: barium studies of proximal GI | endoscopy | H. pylori tests | occasionally serum gastrin and gastric acid analysis | screen for NSAIDs",
+            "Endoscopy is the definitive test because it visualizes the ulcer and allows biopsy"
+          ]
+        },
+        {
+          "heading": "Tests for Detection of H. pylori (Slide 18)",
+          "body_text": "**Non-invasive tests (no endoscopy needed):**\n- **Serology** (antibodies against *H. pylori*)\n- **Urea breath test**\n- **Stool antigen** test\n**Invasive tests (require endoscopic biopsy):**\n- **Rapid urease** test (biopsy placed in a urea-containing medium; a color change indicates urease activity of living organisms)\n- **Histology** (silver / Giemsa / H and E staining of the biopsy)\n- **Culture** (growth of the organism; allows susceptibility testing)\nRemember the split: **3 non-invasive tests (serology, breath, stool)** vs **3 invasive tests (rapid urease, histology, culture)** - a very common matching exam question.",
+          "key_points": [
+            "Non-invasive: serology | urea breath test | stool antigen",
+            "Invasive (biopsy-based): rapid urease | histology | culture",
+            "Rapid urease is the fastest biopsy-based test; culture allows susceptibility testing"
+          ],
+          "check": {
+            "prompt": "Which group contains ONLY non-invasive tests for H. pylori?",
+            "options": ["Serology, urea breath test, stool antigen", "Rapid urease, histology, culture", "Serology, culture, urea breath test", "Stool antigen, histology, serology", "Culture, urea breath test, stool antigen"],
+            "correct_index": 0,
+            "explanation_ar": "الاختبارات غير الباضعة هي الأمصال والنفس باليوريا وذيفان البراز، أما اليوريز السريع والنسيج والزرع فكلها اختبارات باضعة تتطلب خزعات تنظيرية."
+          }
+        },
+        {
+          "heading": "Barium and Endoscopic Appearance of Duodenal Ulcer (Slide 19)",
+          "body_text": "Slide 19 shows the objective findings of both ulcer types side by side:\n**Duodenal ulcer - barium meal X-ray (upper GI series):**\n- A **'niche' - a crater-like filling defect in the duodenal bulb** (the ulcer crater filled with contrast material, indicated by arrows)\n- **Deformity of the duodenal bulb** with irregular contours and **scarring** (the scarred, deformed bulb of chronic ulceration)\n**Gastric ulcer - complementary images on the same slide:**\n- **Endoscopy:** a central gastric ulcer with a **clean base** surrounded by **radiating mucosal folds converging toward the lesion**\n- **Histopathology (H and E):** a **mucosal defect (ulceration) with necrotic debris at the base**, underlying inflammation, and disruption of the normal glandular architecture",
+          "key_points": [
+            "Barium signs of DU: niche (crater) in the duodenal bulb + bulb deformity from scarring",
+            "Endoscopic GU: clean-based ulcer with radiating folds converging to it",
+            "Histology of an ulcer: mucosal defect with necrotic debris at the base"
+          ]
+        },
+        {
+          "heading": "Gastric Ulcer - Endoscopic Appearance Gallery (Slide 20)",
+          "body_text": "Six endoscopic photographs illustrate the spectrum of gastric ulcer appearance:\n- **Superficial/early ulcer** - whitish fibrinous base on erythematous, edematous mucosa with visible rugal folds\n- **Actively bleeding ulcer** - crater containing dark altered blood (hematin) or active hemorrhage, with intensely hyperemic surrounding mucosa\n- **Antral/pyloric ulcer** - pale whitish lesion adjacent to the pyloric opening\n- **Two separate lesions** - a shallow ulcer with whitish necrotic base plus a dark punched-out defect\n- **Clean-based ulcer** - white fibrinous exudate (slough) in the crater, sharply defined margins, inflamed surrounding mucosa\n- **Ulcer with white raised border** and central pallor on a gastric fold\nThe gallery trains pattern recognition, but remember the golden rule of the next concept: **any gastric ulcer, however benign it looks, must be biopsied**.",
+          "key_points": [
+            "GUs range from superficial white-based ulcers to actively bleeding craters with hematin",
+            "A clean-based ulcer has a white fibrinous slough with sharply defined margins",
+            "Endoscopic appearance never replaces biopsy in gastric ulcer"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Barium meal study", "definition_ar": "دراسة الباريوم: تصوير بالأشعة للجهاز الهضمي العلوي يُظهر القرحة كحفرة (niche) أو تشوهاً في لمبة الاثني عشر"},
+        {"term": "Urea breath test", "definition_ar": "اختبار النفس باليوريا: اختبار غير باضع يكشف عدوى نشطة بقياس فعالية إنزيم اليوريز للجرثوم الحي"},
+        {"term": "Rapid urease test", "definition_ar": "اختبار اليوريز السريع: اختبار باضع على خزعة تنظيرية يكشف الملوية خلال دقائق عبر تغير لون الوسط الحاوي على اليوريا"},
+        {"term": "Stool antigen test", "definition_ar": "اختبار ذيفان البراز: اختبار غير باضع يكشف مستضد الملوية البوابية في عينة البراز"},
+        {"term": "Serum gastrin", "definition_ar": "غاسترين المصل: هرمون يقاس أحياناً عند الشك بحالات فرط إفراز الحمض"},
+        {"term": "Duodenal bulb niche/deformity", "definition_ar": "حفرة أو تشوه لمبة الاثني عشر: منظر الباريوم الكلاسيكي للقرحة الاثنا عشرية الحادة والمزمنة المتندبة"}
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L4_peptic_ulcer_c7",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Gastric Ulcer and Malignancy",
+      "summary_ar": "القرحة الاثنا عشرية المزمنة غير مرتبطة بالخباثة، أما القرحة المعدية المزمنة فمرتبطة بها، إما بتحول قرحة حميدة إلى خبيثة أو لأن سرطاناً متقرحاً يحاكي القرحة الحميدة. لذلك تعتبر كل قرحة معدية خبيثة مهما بدت سليمة، ولا تُقبل كحميدة إلا بعد 10 خزعات موجّهة على الأقل، لأن العلاج المضاد للقرحة يشفي تقرح الخباثة لكنه لا يعالج الخباثة ذاتها. القرحة الحميدة منظورة كحفرة بيضاوية نظيفة بحواف منتظمة، والخبيثة غير منتظمة بحواف مرتفعة خشنة.",
+      "sections": [
+        {
+          "heading": "Malignant Potential - DU vs GU (Slide 21)",
+          "body_text": "The slide states two contrasting facts:\n- **Chronic DU: NOT associated with malignancy**\n- **Chronic GU: ASSOCIATED with malignancy**\nIt then poses the exam question **'Which from which?'** - how does malignancy actually enter a gastric ulcer? Two mechanisms are offered:\n- A **benign GU that undergoes malignant transformation**, OR\n- A **GU assessed by scope as benign but whose biopsy reveals malignancy - an 'ulcerated cancer'** (a cancer that has ulcerated and mimics a benign ulcer)\nWhichever mechanism dominates, the clinical consequence is identical: **every gastric ulcer must be biopsied**, whereas chronic duodenal ulcer carries no such malignant risk.",
+          "key_points": [
+            "Chronic DU is NOT associated with malignancy; chronic GU IS",
+            "Two mechanisms: malignant transformation of a benign GU, or an ulcerated cancer mimicking a benign GU",
+            "Consequence: biopsy every gastric ulcer"
+          ]
+        },
+        {
+          "heading": "The 10-Biopsy Rule (Slide 22)",
+          "body_text": "Three management rules for gastric ulcer from slide 22:\n- **Any GU should be regarded as being malignant NO MATTER how classically it appears like benign**\n- **Multiple biopsies - at least 10 well-targeted biopsies - are required before the ulcer is accepted as being benign**\n- **Anti-ulcer treatment can heal the ulceration associated with malignancy, but it does NOT treat the malignancy**\nThe last rule is the deadliest trap: symptomatic and even endoscopic 'healing' of a GU under acid suppression does NOT prove it was benign - an ulcerated cancer can re-epithelialize while viable tumor persists beneath the healed surface.",
+          "key_points": [
+            "Every GU is malignant until proven benign - regardless of classic benign appearance",
+            "At least 10 well-targeted biopsies before accepting a GU as benign",
+            "Anti-ulcer therapy heals the ulceration of a cancer but not the cancer itself"
+          ],
+          "check": {
+            "prompt": "An endoscopically benign-appearing 2 cm gastric ulcer is found. How many well-targeted biopsies are required before it can be accepted as benign?",
+            "options": ["None - the classic appearance is enough", "Two biopsies", "Four biopsies", "At least 10 biopsies", "Biopsies are only needed for duodenal ulcers"],
+            "correct_index": 3,
+            "explanation_ar": "قاعدة المحاضرة: كل قرحة معدية خبيثة حتى تثبت البراءة، ولا تُقبل كحميدة إلا بعد 10 خزعات موجّهة على الأقل. والخزعة ليست إجراء للاستثناء في القرحة الاثنا عشرية لأنها غير مرتبطة بالخباثة، بل في المعدية."
+          }
+        },
+        {
+          "heading": "Benign vs Malignant Endoscopic Appearance (Slide 22 illustrations)",
+          "body_text": "The slide contrasts two schematic stomachs:\n- **Malignant gastric ulcer** - an **irregular, crater-like lesion with heaped-up, irregular margins** located in the gastric body\n- **Benign gastric ulcer** - a clean, round/oval **'punch-out'** lesion with **smooth, regular margins**\nEven with this visual framework (irregular heaped-up edges = suspect; smooth punched-out edges = reassuring), appearance alone NEVER replaces the **10 well-targeted biopsies** - a classically benign-looking ulcer can still harbor an ulcerated cancer, and only histology settles the question.",
+          "key_points": [
+            "Malignant GU: irregular crater with heaped-up irregular margins",
+            "Benign GU: clean round/oval punch-out with smooth regular margins",
+            "Appearance alone never replaces the 10-biopsy rule"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Ulcerated cancer", "definition_ar": "سرطان متقرح: ورم خبيث تقحّم فحاكى القرحة الحميدة، تكتشفه الخزعة رغم المنظر المنظاري الحميد"},
+        {"term": "Malignant transformation", "definition_ar": "التحول الخبيث: تحول القرحة المعدية الحميدة إلى خباثة، وهو أحد تفسيرات ارتباط القرحة المعدية المزمنة بالسرطان"},
+        {"term": "Ten-biopsy rule", "definition_ar": "قاعدة الخزعات العشر: لا تُقبل القرحة المعدية كحميدة إلا بعد أخذ 10 خزعات موجّهة على الأقل"}
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    },
+    {
+      "id": "L4_peptic_ulcer_c8",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Treatment I - Acid-Suppressing Drugs",
+      "summary_ar": "مثبطات الحموضة تشمل: مضادات الحموضة (هيدروكسيد المغنيزيوم والألمنيوم وبيكربونات الصوديوم وكربونات الكالسيوم بجرعة 100-150 ملي مكافئ/لتر بعد الأكل بساعة وثلاث ساعات)، وحاصرات H2 (سيميتيدين 400 ملغ مرتين يومياً، رانيتيدين 300 ملغ، فاموتيدين 40 ملغ، ني زاتيدين 300 ملغ)، ومثبطات مضخة البروتون مرة يومياً (أوميبرازول 20، لانسوبرازول 30، رابيبرازول 20، بانتوبرازول 40، إيزوميبرازول 20 ملغ)، والجيل الجديد حاصرات الحمض التنافسية مع البوتاسيوم P-CAB مثل فونوبرازان.",
+      "sections": [
+        {
+          "heading": "Treatment Overview (Slide 23)",
+          "body_text": "Slide 23 opens the treatment section with a patient asking **'What kind of treatment can I be given?'** surrounded by the care team (nursing care, education or training for work, social or living skills, drugs and medicines, taking therapy). The taught pharmacologic arms of PUD treatment are:\n- **Acid-suppressing drugs:** antacids, H2-receptor antagonists, proton-pump inhibitors, and the new potassium-competitive acid blockers (P-CAB)\n- ***H. pylori* eradication** with triple-therapy regimens (indications and regimens in the next concept)\n- **Mucosal protective agents:** sucralfate, misoprostol, bismuth compounds\nThe lecture closes the treatment section with unresolved questions (quadruple/sequential therapy, complications, NSAID injury, surgery) covered in the final concept.",
+          "key_points": [
+            "Three treatment arms: acid suppression, H. pylori eradication, mucosal protection",
+            "Acid suppressors in historical order: antacids -> H2RAs -> PPIs -> P-CABs"
+          ]
+        },
+        {
+          "heading": "Antacids (Slide 24)",
+          "body_text": "**Antacids** chemically neutralize already-secreted gastric acid. The four agents listed:\n- **Magnesium hydroxide**\n- **Aluminum hydroxide**\n- **Sodium bicarbonate**\n- **Calcium carbonate**\n- **Dose as lectured: 100-150 meq/l taken 1 and 3 hours after the meal**\nThe postprandial timing (1 and 3 hours after food) covers the acid secretory peak that follows a meal. Standard pharmacology notes: magnesium salts tend to cause diarrhea while aluminum salts cause constipation - the two are often combined to balance these effects.",
+          "key_points": [
+            "Antacids: magnesium hydroxide, aluminum hydroxide, sodium bicarbonate, calcium carbonate",
+            "Dose 100-150 meq/l at 1 and 3 hours after the meal",
+            "Mg salts cause diarrhea; Al salts cause constipation"
+          ]
+        },
+        {
+          "heading": "H2-Receptor Antagonists (Slide 25)",
+          "body_text": "**H2 receptor antagonists** block the histamine H2 receptor on the parietal cell, suppressing histamine-stimulated acid secretion. The lecture's drugs and doses (exactly as written on the slide):\n- **Cimetidine 400 mg bid**\n- **Ranitidine 300 mg**\n- **Famotidine 40 mg**\n- **Nizatidine 300 mg**\nH2RAs suppress a portion (not all) of acid secretion - they were the mainstay of ulcer therapy before PPIs and still appear in regimens such as ranitidine bismuth citrate in the eradication section.",
+          "key_points": [
+            "H2RAs: cimetidine 400 mg bid, ranitidine 300 mg, famotidine 40 mg, nizatidine 300 mg",
+            "They block histamine-stimulated acid secretion at the parietal-cell H2 receptor"
+          ]
+        },
+        {
+          "heading": "Proton-Pump Inhibitors (Slide 26)",
+          "body_text": "**Proton-pump inhibitors (PPIs)** block the parietal-cell H+/K+-ATPase - the final common pathway of acid secretion - and are dosed **once daily** in this lecture:\n- **Omeprazole 20 mg/day**\n- **Lansoprazole 30 mg/day**\n- **Rabeprazole 20 mg/day** (spelled 'Rabiprazole' on the slide)\n- **Pantoprazole 40 mg/day**\n- **Esomeprazole 20 mg/day**\nBecause they act at the final common pathway, PPIs are the most powerful acid suppressors and form the backbone of both ulcer-healing therapy and the PPI-based *H. pylori* eradication regimen (omeprazole 20 mg bid in Regimen 3).",
+          "key_points": [
+            "PPIs once daily: omeprazole 20, lansoprazole 30, rabeprazole 20, pantoprazole 40, esomeprazole 20 (mg)",
+            "PPIs block the H+/K+-ATPase, the final common pathway of acid secretion",
+            "Omeprazole 20 mg bid appears in the eradication regimen"
+          ],
+          "check": {
+            "prompt": "Which of the following PPI doses is correct as lectured?",
+            "options": ["Omeprazole 20 mg/day", "Lansoprazole 20 mg/day", "Pantoprazole 20 mg/day", "Esomeprazole 40 mg/day", "Omeprazole 40 mg twice daily"],
+            "correct_index": 0,
+            "explanation_ar": "الجرعات المحاضَرة مرة يومياً: أوميبرازول 20، لانسوبرازول 30، رابيبرازول 20، بانتوبرازول 40، إيزوميبرازول 20 ملغ. فالجرعات الأخرى لا تطابق جدول المحاضرة."
+          }
+        },
+        {
+          "heading": "New Treatment - Potassium-Competitive Acid Blockers, P-CAB (Slide 27)",
+          "body_text": "The newest class presented: **potassium-competitive acid blockers (P-CABs), used in the treatment of acid-related disorders.**\n- Mechanism: they block the same H+/K+-ATPase as PPIs but by **competing with potassium at the pump** (reversible inhibition), achieving **faster onset and longer-lasting acid suppression** (standard pharmacology note)\n- Agents listed: **Vonoprazan | Fexuprazan | Keverprazan | Revaprazan | Tegoprazan**\nRecognizing the class name (P-CAB) and at least one example (vonoprazan) is a modern exam point on acid-related disorders.",
+          "key_points": [
+            "P-CAB = potassium-competitive acid blocker, for acid-related disorders",
+            "Examples: vonoprazan, fexuprazan, keverprazan, revaprazan, tegoprazan",
+            "They inhibit the H+/K+-ATPase by competing with potassium (reversible)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Antacid", "definition_ar": "مضاد الحموضة: دواء يعادل الحمض المتشكل فعلياً في المعدة مثل هيدروكسيد المغنيزيوم والألمنيوم وبيكربونات الصوديوم وكربونات الكالسيوم"},
+        {"term": "H2 receptor antagonist", "definition_ar": "حاصر مستقبلات H2: يثبط إفراز الحمض المحفز بالهيستامين على الخلية الجدارية (سيميتيدين، رانيتيدين، فاموتيدين، ني زاتيدين)"},
+        {"term": "Proton pump inhibitor (PPI)", "definition_ar": "مثبط مضخة البروتون: يثبط مضخة H+/K+-ATPase في الخلية الجدارية وهي الطريق النهائي المشترك لإفراز الحمض"},
+        {"term": "P-CAB (potassium-competitive acid blocker)", "definition_ar": "حاصر الحمض التنافسي مع البوتاسيوم: جيل جديد من مثبطات الحمض ينافس البوتاسيوم على المضخة مثل فونوبرازان"}
+      ],
+      "difficulty": "core",
+      "order_index": 7
+    },
+    {
+      "id": "L4_peptic_ulcer_c9",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Treatment II - H. pylori Eradication: Indications and Regimens",
+      "summary_ar": "دواعي استئصال الملوية البوابية الأكيدة: القرحة الهضمية، ولمفوما MALT من النوع الحدي خارج العقد، وقصة عائلية لسرطان المعدة، والقطع السابق لسرطان المعدة، وسوء الهضم الإيجابي للملوية، والاستخدام المطول لمضادات الالتهاب أو الأسبرين بجرعة منخفضة، والمعالجة بمثبطات المضخة لأكثر من سنة، واضطرابات خارج المعدة (نقص فيتامين ب12 غير مفسر، فرفرية نقص الصفيحات مجهولة السبب، فقر الدم بعوز الحديد). لا يُستطب الاستئصال في القلس المعدي المريئي ولا عند الأصحاء بلا عوامل خطورة. البروتوكولات الثلاثية: نظاما البزموت، والنظام القائم على مثبط المضخة (أوميبرازول + كلاريثرومايسين + أموكسيسيلين أو ميترونيدازول).",
+      "sections": [
+        {
+          "heading": "Indications for H. pylori Eradication (Slide 28)",
+          "body_text": "**DEFINITE indications** for *H. pylori* eradication:\n- **Peptic ulcer**\n- **Extranodal marginal-zone lymphomas of MALT type**\n- **Family history of gastric cancer**\n- **Previous resection for gastric cancer**\n- ***H. pylori*-positive dyspepsia**\n- **Long-term NSAID or low-dose aspirin users**\n- **Chronic (> 1 year) PPI users**\n- **Extragastric disorders:**\n  - Unexplained vitamin B12 deficiency*\n  - Idiopathic thrombocytopenic purpura*\n  - Iron deficiency anemia\n**NOT indicated:**\n- **Gastro-esophageal reflux disease**\n- **Asymptomatic people without gastric cancer risk factors**\n(*If *H. pylori*-positive on testing.)\nLearn both columns - 'not indicated' (GERD, asymptomatic without risk) is as examinable as the definite list, and the extragastric trio (B12 deficiency, ITP, iron deficiency anemia) is a favorite.",
+          "key_points": [
+            "Definite indications: peptic ulcer, MALT lymphoma, family history of gastric cancer, previous gastric cancer resection, H. pylori-positive dyspepsia, long-term NSAID/low-dose aspirin users, chronic (>1 y) PPI users",
+            "Extragastric indications: unexplained B12 deficiency, idiopathic thrombocytopenic purpura, iron deficiency anemia (if H. pylori-positive)",
+            "NOT indicated: GERD, asymptomatic people without gastric cancer risk factors"
+          ]
+        },
+        {
+          "heading": "Bismuth-Based Triple Therapy - Regimens 1 and 2 (Slide 29)",
+          "body_text": "The lecture gives **three 'triple therapy' regimens** for *H. pylori* eradication; slide 29 contains the two bismuth-containing ones:\n**Regimen 1 - classic bismuth triple therapy (all qid):**\n- **Bismuth subsalicylate - 2 tablets qid**\n- **plus Metronidazole - 250 mg qid**\n- **plus Tetracycline - 500 mg qid**\n**Regimen 2 - ranitidine bismuth citrate triple therapy (all bid):**\n- **Ranitidine bismuth citrate - 400 mg bid**\n- **plus Tetracycline - 500 mg bid**\n- **plus Clarithromycin / Metronidazole - 500 mg bid**\nNote the architecture: a bismuth compound + one or two antibiotics, with the acid suppressor built into the bismuth compound in regimen 2.",
+          "key_points": [
+            "Regimen 1 (qid): bismuth subsalicylate 2 tabs + metronidazole 250 mg + tetracycline 500 mg",
+            "Regimen 2 (bid): ranitidine bismuth citrate 400 mg + tetracycline 500 mg + clarithromycin or metronidazole 500 mg"
+          ]
+        },
+        {
+          "heading": "PPI-Based Triple Therapy - Regimen 3 (Slide 30)",
+          "body_text": "**Regimen 3 - the PPI-based (standard) triple therapy:**\n- **Omeprazole - 20 mg bid**\n- **plus Clarithromycin - 250/500 mg bid** (spelled 'Claithromycin' on the slide)\n- **plus Metronidazole - 500 mg bid OR Amoxicillin - 1 g bid**\nThis 'acid suppression + two antibiotics' architecture is the template of modern eradication: the PPI raises intragastric pH so the antibiotics work, while clarithromycin plus amoxicillin (or metronidazole) clears the organism. Learn the exact drugs, doses and frequencies as lectured - they are classic exam material, and they are the regimen tested in the clinical cases of this lecture.",
+          "key_points": [
+            "Regimen 3 (bid): omeprazole 20 mg + clarithromycin 250/500 mg + amoxicillin 1 g (or metronidazole 500 mg)",
+            "PPI + two antibiotics is the standard triple-therapy template"
+          ],
+          "check": {
+            "prompt": "Which of the following is the lecture's Regimen 3 (PPI-based triple therapy)?",
+            "options": ["Omeprazole 20 mg bid + clarithromycin 250/500 mg bid + amoxicillin 1 g bid (or metronidazole 500 mg bid)", "Bismuth subsalicylate 2 tablets qid + metronidazole 250 mg qid + tetracycline 500 mg qid", "Ranitidine bismuth citrate 400 mg bid + tetracycline 500 mg bid + clarithromycin 500 mg bid", "Omeprazole 20 mg once daily alone", "Amoxicillin 1 g bid + metronidazole 500 mg bid without acid suppression"],
+            "correct_index": 0,
+            "explanation_ar": "النظام الثالث المحاضَر قائم على مثبط المضخة مرتين يومياً مع كلاريثرومايسين مرتين يومياً مع أموكسيسيلين 1 غم أو ميترونيدازول 500 ملغ مرتين يومياً. الخياران الثاني والثالث هما نظاما البزموت (1 و2) وهما صحيحان بذاتهما لكن ليسا النظام المطلوب، ومثبط المضخة وحده لا يستأصل الملوية، والمضادات الحيوية دون تثبيط الحمض أقل فعالية."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Triple therapy", "definition_ar": "العلاج الثلاثي: مثبط حمضي مع مضادين حيويين (أو مركب بزموتي مع مضادات حيوية) لاستئصال الملوية البوابية"},
+        {"term": "MALT lymphoma", "definition_ar": "لمفوما MALT: لمفوما النسج اللمفاوي المرتبط بالمخاطية من النوع الحدي خارج العقد، ترتبط بالملوية البوابية واستئصالها دواء أكيد"},
+        {"term": "Bismuth subsalicylate", "definition_ar": "ساليسيلات البزموت: ملح بزموتي ضمن العلاج الثلاثي البزموتي بجرعة قرصين أربع مرات يومياً"},
+        {"term": "Ranitidine bismuth citrate", "definition_ar": "سيترات الرانيتيدين البزموتية: مركب يجمع حاصر H2 والبزموت بجرعة 400 ملغ مرتين يومياً ضمن النظام الثاني"},
+        {"term": "H. pylori-positive dyspepsia", "definition_ar": "سوء الهضم الإيجابي للملوية البوابية: داعٍ أكيد للاستئصال عند غياب قرحة منظارية"}
+      ],
+      "difficulty": "core",
+      "order_index": 8
+    },
+    {
+      "id": "L4_peptic_ulcer_c10",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Treatment III - Mucosal Protective Agents and Open Questions",
+      "summary_ar": "الواقيات المخاطية: سكرالفات 1 غم أربع مرات يومياً، ونظير البروستاغلاندين ميزوبروستول 200 ميكروغرام أربع مرات يومياً، ومركبات البزموت؛ وهي تعزز الجانب الدفاعي من التوازن المخاطي. وتنتهي المحاضرة بأسئلة مفتوحة: المعالجة الرباعية، والمعالجة التتابعية، وعلاج المضاعفات، وعلاج أذية مضادات الالتهاب، والعلاج الجراحي.",
+      "sections": [
+        {
+          "heading": "Mucosal Protective Agents (Slide 31)",
+          "body_text": "The third arm of treatment - agents that strengthen the **defensive side** of the mucosal balance:\n- **Sucralfate - 1 g qid** (a sucrose-aluminum complex that binds to the ulcer base and forms a protective coat over it)\n- **Prostaglandin analogue: Misoprostol - 200 ug qid** (replaces the prostaglandin defense destroyed by NSAIDs; standard caution: uterotonic - avoid in pregnancy)\n- **Bismuth-containing compounds** (mucosal protection plus anti-*H. pylori* activity - the bridge to the bismuth eradication regimens)\nThese agents neither neutralize acid like antacids nor block its secretion like H2RAs/PPIs - they shield and heal the mucosa itself, which is why misoprostol is the classic add-on for patients who must continue NSAIDs.",
+          "key_points": [
+            "Sucralfate 1 g qid; misoprostol 200 ug qid; bismuth-containing compounds",
+            "Misoprostol is the prostaglandin analogue for NSAID-induced mucosal injury (avoid in pregnancy)",
+            "These agents reinforce the defensive factors rather than suppress acid"
+          ]
+        },
+        {
+          "heading": "Open Questions at the End of the Lecture (Slide 32)",
+          "body_text": "The lecture deliberately ends with unresolved questions, posed over a cartoon of a doctor reassuring a skeleton patient ('Don't worry. We still have a few more treatment options available.'):\n- **Quadruple therapy?** - adding a fourth drug (e.g. PPI + bismuth + two antibiotics) for resistant infection\n- **Sequential therapy?** - staged antibiotic sequences as an alternative eradication strategy\n- **Treatment of complications?** - bleeding, perforation, penetration, gastric outlet obstruction\n- **Therapy for NSAID injury?** - prevention and treatment of NSAID-induced ulcers\n- **Surgical therapy?** - the remaining role of surgery in the eradication era\nThese five headings mark the frontier beyond first-line triple therapy - know that rescue/alternative regimens, complication management and surgery exist beyond this lecture's core content.",
+          "key_points": [
+            "Beyond triple therapy: quadruple therapy, sequential therapy",
+            "Complications of peptic ulcer (bleeding, perforation, penetration, obstruction) need specific treatment",
+            "NSAID injury therapy and surgical therapy remain relevant questions"
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Sucralfate", "definition_ar": "سكرالفات: واقٍ مخاطي (مركب سكروز-ألمنيوم) يلتصق بقاعدة القرحة ويحميها بجرعة 1 غم أربع مرات يومياً"},
+        {"term": "Misoprostol", "definition_ar": "ميزوبروستول: نظير البروستاغلاندين الواقي للمخاطية (200 ميكروغرام أربع مرات يومياً)، يُتجنب في الحمل لأنه مقبض للرحم"},
+        {"term": "Bismuth compounds", "definition_ar": "مركبات البزموت: واقيات مخاطية ذات فعل مضاد للملوية البوابية تدخل في العلاجات البزموتية"},
+        {"term": "Quadruple therapy", "definition_ar": "العلاج الرباعي: إضافة دواء رابع (مثبط حمضي + بزموت + مضادان حيويان) لحالات فشل الاستئصال"},
+        {"term": "Sequential therapy", "definition_ar": "العلاج التتابعي: تتابع المضادات الحيوية على مراحل لرفع نسبة استئصال الملوية البوابية"}
+      ],
+      "difficulty": "advanced",
+      "order_index": 9
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L4_peptic_ulcer_f1",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c1",
+      "card_type": "basic",
+      "front_text": "What is the definition of a peptic ulcer?",
+      "back_text": "A break in the mucosal surface, >5 mm in size, with depth reaching the submucosa, occurring in any part of the GI tract exposed to the aggressive action of acid-pepsin juices; it can be acute or chronic, and both types can penetrate the muscularis mucosa.",
+      "explanation_ar": "القرحة الهضمية: انقطاع مخاطي أكبر من 5 مم يصل حتى تحت المخاطية في المناطق المعرضة للحمض والببسين، حادة أو مزمنة، وقد تخترق العضلية المخاطية."
+    },
+    {
+      "id": "L4_peptic_ulcer_f2",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c1",
+      "card_type": "basic",
+      "front_text": "List the sites of peptic ulcer disease with their relative frequencies.",
+      "back_text": "Duodenal ulcer - first part of duodenum 80% | Gastric ulcer - lesser curve 19% | Oesophagitis | Stomal ulcer 1% | Ectopic gastric mucosa in Meckel's diverticulum.",
+      "explanation_ar": "الاثنا عشر (الجزء الأول) 80% ثم الانحناء الأصغر للمعدة 19% ثم قرحة الفموة الجراحية 1%، مع إمكانية إصابة المريء والمخاطية المعدية المنتبذة في رتج ميكل."
+    },
+    {
+      "id": "L4_peptic_ulcer_f3",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c2",
+      "card_type": "basic",
+      "front_text": "Name the five defensive (cytoprotective) factors of the gastroduodenal mucosa.",
+      "back_text": "1. Bicarbonate | 2. Mucus layer | 3. Prostaglandins | 4. Mucosal blood flow | 5. Epithelial renewal. Their decrease leads to mucosal damage, erosions and ulcerations.",
+      "mnemonic_ar": "دفاعات المخاطية الخمسة: بيكربونات - مخاط - بروستاغلاندين - دم - تجدد."
+    },
+    {
+      "id": "L4_peptic_ulcer_f4",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c2",
+      "card_type": "basic",
+      "front_text": "Name the five aggressive factors in peptic ulcer disease.",
+      "back_text": "1. Helicobacter pylori | 2. NSAIDs | 3. Pepsins | 4. Bile acids | 5. Smoking and alcohol. Their increase leads to mucosal damage, erosions and ulcerations.",
+      "mnemonic_ar": "هجوم: ملوية - مضادات التهاب - ببسين - صفراء - دخان وكحول."
+    },
+    {
+      "id": "L4_peptic_ulcer_f5",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c3",
+      "card_type": "basic",
+      "front_text": "What causes peptic ulcer, and which two factors have NO effect?",
+      "back_text": "Causes: H. pylori; drugs (NSAIDs and corticosteroids); hyperacidity; smoking and alcohol; systemic stress; rapid gastric emptying; personality and stress. NO effect: genetics and spicy foods.",
+      "explanation_ar": "لا تنسَ نقطة الامتحان المفضلة: لا دور للوراثة أو الأطعمة الحارة في إحداث القرحة الهضمية."
+    },
+    {
+      "id": "L4_peptic_ulcer_f6",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c4",
+      "card_type": "basic",
+      "front_text": "Describe the microbiology, transmission and discovery of H. pylori.",
+      "back_text": "Gram-negative, S-shaped, flagellated organism; the most common cause of PUD; transmitted by the fecal-oral route; discovered by the two Australian physicians Robin Warren and Barry Marshall, who won the 2005 Nobel Prize in Medicine or Physiology for showing that many ulcers result from a bacterial infection.",
+      "explanation_ar": "سالب غرام بشكل حرف S متأسوطة، تنتقل برازياً-فموياً، هي السبب الأشيع للقرحة، واكتشف دورها وارن ومارشال ونالا جائزة نوبل 2005."
+    },
+    {
+      "id": "L4_peptic_ulcer_f7",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c4",
+      "card_type": "basic",
+      "front_text": "How does H. pylori survive in gastric acid, and which tests exploit this?",
+      "back_text": "It secretes urease, which converts urea to ammonia (NH3 + CO2); the ammonia produces an alkaline microenvironment enabling survival in the stomach. The same urease activity is the basis of the urea breath test and the rapid urease test.",
+      "explanation_ar": "اليوريز يحول اليوريا إلى أمونيا قلوية تحيط بالجرثوم فتحميه من الحمض، وهو نفسه أساس اختبار النفس باليوريا واختبار اليوريز السريع."
+    },
+    {
+      "id": "L4_peptic_ulcer_f8",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "card_type": "basic",
+      "front_text": "Describe the classic pain pattern of duodenal ulcer.",
+      "back_text": "Epigastric discomfort starting 2-3 hours after eating AND at midnight; aggravated by hunger; relieved by eating - so appetite and diet remain good and there is NO weight loss. Typical patient: any age (especially 30-40), male-to-female 5:1, stress occupation (e.g. manager); symptom duration 1-2 months.",
+      "explanation_ar": "ألم متأخر بعد الأكل بساعتين إلى ثلاث ساعات وعند منتصف الليل، تزيده الجوع ويريحه الأكل: شهية جيدة وبلا فقد وزن."
+    },
+    {
+      "id": "L4_peptic_ulcer_f9",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "card_type": "basic",
+      "front_text": "Describe the classic pain pattern of gastric ulcer.",
+      "back_text": "Epigastric pain starting IMMEDIATELY after eating, may radiate to the back; aggravated by eating; relieved by lying down or vomiting - so the patient is afraid to eat, avoids fried food, vomits to relieve pain, and LOSES weight. Typical patient: middle age 50-60, male-to-female 2:1; symptoms last a few weeks.",
+      "explanation_ar": "ألم فور الأكل وقد يشع إلى الظهر، يزيده الأكل ويريحه الاستلقاء أو الإقياء: خوف من الأكل وتجنب المقليات وفقد وزن."
+    },
+    {
+      "id": "L4_peptic_ulcer_f10",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "card_type": "basic",
+      "front_text": "Compare hematemesis and melena frequencies in gastric vs duodenal ulcer.",
+      "back_text": "Duodenal ulcer: hematemesis 40% and melena 60%. Gastric ulcer: hematemesis 60% and melena 40%.",
+      "explanation_ar": "الميلينا أشيع في القرحة الاثنا عشرية (60%) بينما الإقياء الدموي أشيع في المعدية (60%)."
+    },
+    {
+      "id": "L4_peptic_ulcer_f11",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "card_type": "basic",
+      "front_text": "How valuable are physical signs in uncomplicated peptic ulcer?",
+      "back_text": "Of limited value: epigastric tenderness on deep palpation has sensitivity and specificity of only about 50% or less, and many patients with non-ulcer diseases also have epigastric tenderness.",
+      "explanation_ar": "العلامات الفيزيائية محدودة القيمة: حساسية ونوعية جس الشرسوف نحو 50% فقط، وكثير من الأمراض غير القرحية تسبب نفس الإيلام."
+    },
+    {
+      "id": "L4_peptic_ulcer_f12",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c6",
+      "card_type": "basic",
+      "front_text": "List the non-invasive tests for H. pylori detection.",
+      "back_text": "1. Serology | 2. Urea breath test | 3. Stool antigen test.",
+      "explanation_ar": "الاختبارات غير الباضعة: الأمصال، والنفس باليوريا، وذيفان البراز."
+    },
+    {
+      "id": "L4_peptic_ulcer_f13",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c6",
+      "card_type": "basic",
+      "front_text": "List the invasive tests for H. pylori detection.",
+      "back_text": "1. Rapid urease test | 2. Histology (silver / Giemsa / H and E staining) | 3. Culture - all performed on endoscopic gastric biopsy.",
+      "explanation_ar": "الاختبارات الباضعة تحتاج خزعة تنظيرية: اليوريز السريع، والنسيج، والزرع."
+    },
+    {
+      "id": "L4_peptic_ulcer_f14",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c7",
+      "card_type": "basic",
+      "front_text": "What is the rule regarding gastric ulcer and malignancy?",
+      "back_text": "Any gastric ulcer must be regarded as malignant no matter how benign it appears; at least 10 well-targeted biopsies are needed before accepting it as benign; anti-ulcer therapy can heal the ulceration of a malignancy without curing the malignancy. Chronic duodenal ulcer is NOT associated with malignancy.",
+      "explanation_ar": "كل قرحة معدية خبيثة حتى إثبات العكس: 10 خزعات موجّهة على الأقل، والعلاج يشفي التقرح لا الورم، والقرحة الاثنا عشرية المزمنة ليست مرتبطة بالخباثة."
+    },
+    {
+      "id": "L4_peptic_ulcer_f15",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c8",
+      "card_type": "basic",
+      "front_text": "Which antacids treat PUD and at what dose? Which H2-blockers and doses?",
+      "back_text": "Antacids: magnesium hydroxide, aluminum hydroxide, sodium bicarbonate, calcium carbonate - 100-150 meq/l at 1 and 3 hours after the meal. H2 blockers: cimetidine 400 mg bid, ranitidine 300 mg, famotidine 40 mg, nizatidine 300 mg.",
+      "explanation_ar": "مضادات الحموضة بجرعة 100-150 ملي مكافئ/لتر بعد الأكل بساعة وثلاث ساعات؛ والحاصرات: سيميتيدين 400 ملغ مرتين، رانيتيدين 300، فاموتيدين 40، ني زاتيدين 300 ملغ."
+    },
+    {
+      "id": "L4_peptic_ulcer_f16",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c8",
+      "card_type": "basic",
+      "front_text": "Give the five PPIs with their doses, and name the new P-CAB class with examples.",
+      "back_text": "PPIs once daily: omeprazole 20 mg, lansoprazole 30 mg, rabeprazole 20 mg, pantoprazole 40 mg, esomeprazole 20 mg. P-CABs (potassium-competitive acid blockers): vonoprazan, fexuprazan, keverprazan, revaprazan, tegoprazan.",
+      "explanation_ar": "مثبطات المضخة مرة يومياً: أوميبرازول 20، لانسوبرازول 30، رابيبرازول 20، بانتوبرازول 40، إيزوميبرازول 20 ملغ؛ والجيل الجديد P-CAB مثل فونوبرازان."
+    },
+    {
+      "id": "L4_peptic_ulcer_f17",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c9",
+      "card_type": "basic",
+      "front_text": "When is H. pylori eradication indicated and when is it NOT?",
+      "back_text": "Definite: peptic ulcer; MALT-type extranodal marginal-zone lymphoma; family history of gastric cancer; previous resection for gastric cancer; H. pylori-positive dyspepsia; long-term NSAID or low-dose aspirin users; chronic (>1 year) PPI users; extragastric disorders (unexplained vitamin B12 deficiency*, idiopathic thrombocytopenic purpura*, iron deficiency anemia). NOT indicated: GERD; asymptomatic people without gastric cancer risk factors. (*if H. pylori-positive on testing)",
+      "explanation_ar": "دواعٍ أكيدة عديدة أبرزها القرحة الهضمية ولمفوما MALT والقصة العائلية لسرطان المعدة؛ وغير مستطب في القلس المعدي المريئي وعند الأصحاء بلا عوامل خطورة."
+    },
+    {
+      "id": "L4_peptic_ulcer_f18",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c9",
+      "card_type": "basic",
+      "front_text": "State the two bismuth-based triple-therapy regimens with full doses.",
+      "back_text": "Regimen 1: bismuth subsalicylate 2 tablets qid + metronidazole 250 mg qid + tetracycline 500 mg qid. Regimen 2: ranitidine bismuth citrate 400 mg bid + tetracycline 500 mg bid + clarithromycin or metronidazole 500 mg bid.",
+      "explanation_ar": "نظاما البزموت: بزموت ساليسيلات + ميترونيدازول + تتراسيكلين ربع يومياً؛ أو سيترات رانيتيدين البزموتية + تتراسيكلين + كلاريثرومايسين أو ميترونيدازول نصف يومياً."
+    },
+    {
+      "id": "L4_peptic_ulcer_f19",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c9",
+      "card_type": "basic",
+      "front_text": "State the PPI-based triple-therapy regimen for H. pylori with full doses.",
+      "back_text": "Omeprazole 20 mg bid + clarithromycin 250/500 mg bid + metronidazole 500 mg bid or amoxicillin 1 g bid.",
+      "explanation_ar": "أوميبرازول 20 ملغ مرتين يومياً + كلاريثرومايسين 250/500 ملغ مرتين يومياً + ميترونيدازول 500 ملغ مرتين يومياً أو أموكسيسيلين 1 غم مرتين يومياً."
+    },
+    {
+      "id": "L4_peptic_ulcer_f20",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c10",
+      "card_type": "basic",
+      "front_text": "Which mucosal protective agents are used, with their doses?",
+      "back_text": "Sucralfate 1 g qid; misoprostol (prostaglandin analogue) 200 ug qid; bismuth-containing compounds.",
+      "explanation_ar": "سكرالفات 1 غم أربع مرات يومياً، وميزوبروستول 200 ميكروغرام أربع مرات يومياً، ومركبات البزموت."
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L4_peptic_ulcer_q1",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "question_stem": "A 34-year-old male shipping-company manager presents with a 6-week history of epigastric discomfort that appears 2-3 hours after lunch, wakes him at midnight, is aggravated by hunger, and is completely relieved by eating a snack. His appetite is good and he has not lost weight. He smokes 15 cigarettes/day. What is the most likely diagnosis?",
+      "options": ["Duodenal ulcer", "Gastric ulcer", "Gastro-esophageal reflux disease", "Chronic pancreatitis", "Biliary colic"],
+      "correct_index": 0,
+      "explanation_ar": "هذا هو النمط الكلاسيكي للقرحة الاثنا عشرية: ألم شرسوفي بعد الأكل بساعتين إلى ثلاث ساعات وعند منتصف الليل، تزيده الجوع ويريحه الأكل، فيبقى الشهية جيدة ولا يفقد المريض الوزن؛ وهي أشيع عند الرجال (5:1) وفي الثلاثينات ومع المهن الضاغطة كالمديرين. القرحة المعدية يبدأ ألمها فور الأكل ويخاف صاحبها من الطعام ويفقد وزنه فالخيار الثاني خطأ. القلس المريئي يسبب حرقة خلف القص مع قلس وليس ألماً جوعياً ليلياً يريحه الأكل. التهاب البنكرياس المزمن ألم مستمر يشع للظهر مع عسر هضم دهني ولا يرتبط بالجوع. القولنج الصفراوي ألم في الربع العلوي الأيمن بعد وجبة دسمة وليس ألماً شرسوفياً ليلياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["The timing of pain relative to meals and its relief by food is the key.", "Hunger-aggravated, food-relieved, midnight pain is the classic pattern of duodenal ulcer."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q2",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "question_stem": "A 56-year-old woman reports epigastric pain that begins immediately after every meal and sometimes radiates to her back. The pain is eased by lying down and by vomiting; she has become afraid to eat, avoids fried food, and has lost 5 kg over a few weeks. What is the most likely diagnosis?",
+      "options": ["Gastric ulcer", "Duodenal ulcer", "Functional (non-ulcer) dyspepsia", "Gastro-esophageal reflux disease", "Irritable bowel syndrome"],
+      "correct_index": 0,
+      "explanation_ar": "القرحة المعدية تقدم بهذا الشكل: ألم شرسوفي يبدأ فور الأكل وقد يشع إلى الظهر، يريحه الاستلقاء أو الإقياء، فيخاف المريض من الأكل ويتجنب المقليات ويفقد الوزن، والعمر النموذجي 50-60 سنة. القرحة الاثنا عشرية عكس ذلك تماماً: ألم بعد الأكل بساعتين إلى ثلاث وعند منتصف الليل يزيده الجوع ويريحه الأكل مع شهية جيدة وثبات الوزن. عسر الهضم الوظيفي لا يترافق مع فقد وزن منهجي. القلس يسبب حرقة خلف القص وقلساً لا ألماً فورياً بعد الأكل مع رهاب طعام. متلازمة الأمعاء المتهيجة ألم بطني مرتبط بالتغوط واضطراب عادات التبرز لا بالأكل الفوري.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["Immediate postprandial pain with food fear and weight loss points to gastric ulcer.", "GU pain is aggravated by eating and relieved by lying down or vomiting."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q3",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c4",
+      "question_stem": "Gastric biopsy from a 40-year-old man with duodenal ulcer grows a Gram-negative, S-shaped, flagellated bacterium that survives the acidic gastric lumen. Which enzymatic property enables this survival?",
+      "options": ["Urease, which converts urea to ammonia", "Catalase, which neutralizes hydrochloric acid directly", "Mucinase, which thickens the mucus layer", "Flagellar proton pump, which expels acid from the cell", "Beta-lactamase, which resists gastric acid"],
+      "correct_index": 0,
+      "explanation_ar": "المفتاح هو إنزيم اليوريز: يحول اليوريا إلى أمونيا وثاني أكسيد الكربون، والأمونيا قلوية فتخلق وسطاً قلوياً دقيقاً حول الجرثوم يحميه من حمض المعدة ويسمح له بالبقاء والاستيطان. لا يوجد إنزيم يحيد حمض الهيدروكلوريك مباشرة ولا مضخة بروتونات سوطية، ووظيفة الأسواط هي الحركة داخل طبقة المخاط، والببتيداز المخاطي يهضم المخاط ولا يثخنه. ولهذا نفس الإنزيم يُستغل في اختبار النفس باليوريا واختبار اليوريز السريع للكشف عن الجرثوم.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["The enzyme's product is alkaline and wraps the organism in a protective cloud.", "The same enzyme is measured by the urea breath test."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q4",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c7",
+      "question_stem": "A 60-year-old man undergoes upper GI endoscopy for weight loss and epigastric pain; a 2.5 cm gastric ulcer is seen on the lesser curve with smooth, regular margins and a clean base - 'a textbook benign appearance'. What is the correct next step?",
+      "options": ["Start a PPI and reassure the patient - the appearance is classically benign", "Take at least 10 well-targeted biopsies before accepting the ulcer as benign", "Order a barium meal to confirm the endoscopic impression", "Measure serum gastrin and gastric acid output", "Prescribe antacids and review in 3 months"],
+      "correct_index": 1,
+      "explanation_ar": "القاعدة الذهبية من المحاضرة: أي قرحة معدية يجب اعتبارها خبيثة مهما بدت حميدة منظورياً، ولا تُقبل كحميدة إلا بعد أخذ 10 خزعات موجّهة على الأقل. بدء مثبط المضخة دون خزعة خطأ قد يؤخر تشخيص سرطان متقرح لأن العلاج المضاد للقرحة يشفي تقرح الخباثة دون شفاء الخباثة نفسها. الباريوم لا يعطي نسيجاً ولا يغني عن التنظير. غاسترين المصل وتحليل الحموضة فحوص لفرط الإفراز الحمضي وليست لتقييم الخباثة. والانتظار ثلاثة أشهر قد يكلف تأخير التشخيص.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["No matter how benign a gastric ulcer looks, the lecture demands a fixed minimum number of biopsies.", "The number taught is 10."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q5",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c6",
+      "question_stem": "A 45-year-old patient completed H. pylori eradication therapy 4 weeks ago for a duodenal ulcer and asks how cure will be confirmed without another endoscopy. Which test detects ACTIVE infection non-invasively?",
+      "options": ["H. pylori IgG serology", "Urea breath test", "Rapid urease test", "Histology of gastric biopsy", "Culture of gastric biopsy"],
+      "correct_index": 1,
+      "explanation_ar": "اختبار النفس باليوريا غير باضع ويكشف العدوى النشطة لأنه يقيس فعالية يوريز الجرثوم الحي. الأمصال تبقى إيجابية لفترة طويلة بعد الشفاء فلا تفرق بين عدوى حالية وأخرى سابقة ولا تصلح لتأكيد الاستئصال. أما اليوريز السريع والنسيج والزرع فهي اختبارات باضعة تحتاج خزعة تنظيرية وليست غير باضعة أصلاً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": ["Serology cannot distinguish active from past infection.", "Which non-invasive test measures urease activity of living organisms?"]
+    },
+    {
+      "id": "L4_peptic_ulcer_q6",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c9",
+      "question_stem": "A 50-year-old man with an endoscopically proven duodenal ulcer has a positive rapid urease test. Which of the following is the lecture's PPI-based triple-therapy eradication regimen?",
+      "options": ["Omeprazole 20 mg bid + clarithromycin 250/500 mg bid + amoxicillin 1 g bid (or metronidazole 500 mg bid)", "Omeprazole 20 mg once daily + amoxicillin 500 mg once daily + metronidazole 250 mg once daily", "Bismuth subsalicylate 2 tablets qid + metronidazole 250 mg qid + tetracycline 500 mg qid", "Ranitidine 300 mg daily alone for 8 weeks", "Sucralfate 1 g qid + misoprostol 200 ug qid"],
+      "correct_index": 0,
+      "explanation_ar": "النظام المحاضَر القائم على مثبط المضخة: أوميبرازول 20 ملغ مرتين يومياً مع كلاريثرومايسين 250/500 ملغ مرتين يومياً مع أموكسيسيلين 1 غم مرتين يومياً أو ميترونيدازول 500 ملغ مرتين يومياً. الخيار الثاني جرعات ناقصة خاطئة. الخيار الثالث هو نظام البزموت الثلاثي (النظام 1) الصحيح بذاته لكنه ليس النظام المطلوب القائم على مثبط المضخة. الرانيتيدين وحده لا يستأصل الملوية. والسكرالفات مع الميزوبروستول واقيات مخاطية لا تملك فعالية استئصالية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["The PPI regimen is bid, not once daily.", "Two antibiotics accompany the acid suppressant in triple therapy."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q7",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c10",
+      "question_stem": "A 58-year-old woman with rheumatoid arthritis has been taking naproxen daily for 2 years. Her physician wants to add a mucosal protective agent to prevent NSAID-induced ulcer. Which agent and dose does the lecture recommend?",
+      "options": ["Misoprostol 200 ug qid", "Sucralfate 1 g once daily", "Misoprostol 100 ug once daily", "Bismuth subsalicylate 2 tablets once daily", "Cimetidine 400 mg once daily"],
+      "correct_index": 0,
+      "explanation_ar": "الميزوبروستول نظير البروستاغلاندين يعوض الدفاع المخاطي المفقود من تثبيط البروستاغلاندين بمضادات الالتهاب، وجرعته المحاضَرة 200 ميكروغرام أربع مرات يومياً. السكرالفات جرعته الصحيحة 1 غم أربع مرات يومياً وليست مرة واحدة. وجرعة الميزوبروستول 100 ميكروغرام مرة واحدة خاطئة وغير كافية. والبزموت والسيميتيدين بجرعة مرة واحدة يومياً لا يطابقان الجرعات المحاضَرة، والسيميتيدين حاصر H2 وليس واقياً مخاطياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["Which drug replaces the prostaglandin defense lost to NSAIDs?", "Its lecture dose is four times daily."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q8",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c9",
+      "question_stem": "In a busy GI clinic, several patients test positive for H. pylori. In which of these patients is eradication NOT indicated according to the lecture?",
+      "options": ["A patient with a duodenal ulcer", "A patient with MALT-type extranodal marginal-zone lymphoma", "A patient with GERD and no other gastric cancer risk factors", "A patient whose father died of gastric cancer", "A patient with unexplained iron deficiency anemia"],
+      "correct_index": 2,
+      "explanation_ar": "القلس المعدي المريئي مذكور صراحة في عمود (غير مستطب) للاستئصال حسب المحاضرة، فعلاجه قائم على تثبيط الحمض. أما القرحة الهضمية فهي أقدم داعٍ أكيد للاستئصال، ولمفوما MALT من النوع الحدي داعٍ أكيد وقد تتراجع بالاستئصال، والقصة العائلية لسرطان المعدة داعٍ أكيد لارتفاع خطورة السرطان، وفقر الدم بعوز الحديد من الاضطرابات خارج المعدية الداعية للاستئصال. فالخيارات الأخرى كلها دواعٍ أكيدة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": ["GERD is explicitly listed under 'not indicated'.", "Extragastric disorders (B12 deficiency, ITP, iron deficiency anemia) ARE indications."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q9",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c2",
+      "question_stem": "A 65-year-old man who has taken ibuprofen for months for knee osteoarthritis develops a gastric ulcer. According to the defensive-aggressive balance taught in this lecture, what is the main mechanism by which NSAIDs promote ulceration?",
+      "options": ["Inhibition of prostaglandin synthesis, abolishing the bicarbonate, mucus and mucosal blood flow defense", "Direct stimulation of parietal-cell acid secretion", "Increased pepsinogen activation in the stomach", "Induction of duodenogastric bile reflux", "Direct colonization of the mucus layer"],
+      "correct_index": 0,
+      "explanation_ar": "مضادات الالتهاب غير الستيروئيدية تثبط تصنيع البروستاغلاندينات، والبروستاغلاندينات عمود الدفاع المخاطي لأنها تدفع إفراز المخاط والبيكربونات وتحافظ على تدفق الدم المخاطي، فينهار الجانب الدفاعي من التوازن وتتشكل القرحة. هي لا تحفز إفراز الحمض من الخلايا الجدارية مباشرة ولا تزيد تفعيل الببسينوجين، والقلس الصفراوي آلية منفصلة تصنف ضمن الأحماض الصفراوية كعامل هجومي، أما استيطان طبقة المخاط فهو فعل الملوية البوابية لا مضادات الالتهاب.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["NSAIDs strike the defensive arm of the balance.", "Which defensive factor do NSAIDs eliminate?"]
+    },
+    {
+      "id": "L4_peptic_ulcer_q10",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c8",
+      "question_stem": "A pharmacology seminar discusses a new class of acid suppressors for acid-related disorders that competitively blocks the potassium site of the parietal-cell proton pump. Per this lecture, which of the following belongs to that class (P-CAB)?",
+      "options": ["Vonoprazan", "Famotidine", "Cimetidine", "Calcium carbonate", "Tetracycline"],
+      "correct_index": 0,
+      "explanation_ar": "فونوبرازان من حاصرات الحمض التنافسية مع البوتاسيوم P-CAB وهي الجيل الجديد من مثبطات الحمض للاضطرابات الحمضية، ومعه في المحاضرة: فكسوبرازان وكيفربرازان وريفابرازان وتيغوبرازان. أما الفاموتيدين والسيميتيدين فحاصرات H2، وكربونات الكالسيوم مضاد حموضة يعادل الحمض المتشكل، والتتراسيكلين مضاد حيوي يدخل في علاج استئصال الملوية البوابية لا في تثبيط الحمض.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": ["P-CAB = potassium-competitive acid blocker.", "The five examples all end in -prazan."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q11",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c6",
+      "question_stem": "A 41-year-old man with chronic episodic epigastric pain undergoes a barium meal study. The report describes a niche (crater-like collection of contrast) in the duodenal bulb plus deformity and scarring of the bulb. What is the most likely diagnosis?",
+      "options": ["Chronic duodenal ulcer", "Benign gastric ulcer of the lesser curve", "Stomal ulcer", "Gastro-esophageal reflux disease", "Extrinsic compression of the duodenum"],
+      "correct_index": 0,
+      "explanation_ar": "الحفرة (niche) في لمبة الاثني عشر مع تشوه اللمبة والتندب هو المنظر الباريوني الكلاسيكي للقرحة الاثنا عشرية المزمنة كما في شريحة المحاضرة: القرحة تمتلئ بالباريوم فتظهر حفرة، والتندب المزمن يشوه اللمبة. القرحة المعدية الحميدة تعطي عيباً على الانحناء الأصغر للمعدة لا في اللمبة. قرحة الفموة تتلو جراحة المعدة ولا توجد قصة جراحية هنا. القلس المريئي لا يظهر كحفرة في لمبة الاثني عشر. والضغط الخارجي ليس قرحة أصلاً ولا يظهر كحفرة مملوءة بالباريوم.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": ["A niche in the duodenal bulb = an ulcer crater filled with contrast.", "Scarring and deformity of the bulb indicate chronicity."]
+    },
+    {
+      "id": "L4_peptic_ulcer_q12",
+      "lecture_id": "L4_peptic_ulcer",
+      "concept_id": "L4_peptic_ulcer_c5",
+      "question_stem": "A patient with a long-standing duodenal ulcer presents with black tarry stools but no vomiting of blood. According to the lecture percentages, which bleeding manifestation is the more typical presentation of duodenal ulcer?",
+      "options": ["Melena 60%", "Hematemesis 60%", "Hematemesis and melena equally at 50%", "Melena 40%", "Hematochezia 60%"],
+      "correct_index": 0,
+      "explanation_ar": "في القرحة الاثنا عشرية: الميلينا (البراز الأسود القطراني) 60% والإقياء الدموي 40%، بينما في القرحة المعدية العكس: إقياء دموي 60% وميلينا 40%. الخيار الرابع (ميلينا 40%) هو نسبة الميلينا في القرحة المعدية لا الاثنا عشرية. ولا تتساوى النسب أبداً كما يوحي الخيار الثالث. والهيماتوكيزيا (دم أحمر لامع عبر الشرج) توحي بنزف مصدره القولون أو نزف علوي غزير سريع وليست سمة معتادة للقرحة الاثنا عشرية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": ["Rule of thumb: GU vomits (hematemesis 60%), DU passes (melena 60%)."]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L4_peptic_ulcer_case1",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "The Manager with Midnight Pain and Black Stools - Bleeding Duodenal Ulcer",
+      "scenario": "A 42-year-old shipping-company manager is brought to the emergency department after vomiting a small amount of blood and passing black tarry stools for two days; he has had 'hunger pains' waking him at midnight for two months and now feels dizzy on standing.",
+      "vignette": {
+        "age": 42,
+        "sex": "male",
+        "chief_complaint": "Epigastric pain for 2 months with black tarry stools and one episode of vomiting blood",
+        "history": "High-stress manager with epigastric discomfort occurring 2-3 hours after meals and waking him at midnight for 2 months; the pain is relieved by eating and his appetite has remained good with no weight loss. He smokes 20 cigarettes/day, drinks alcohol at weekends, and takes ibuprofen 400 mg several times a week for low back pain. This morning he vomited a small amount of blood once and has noticed black tarry stools; he feels dizzy when standing.",
+        "vitals": {
+          "bp": "100/65 mmHg",
+          "hr": "112/min",
+          "rr": "20/min",
+          "temp": "37.0 C",
+          "spo2": "98% on room air"
+        },
+        "exam": "Conjunctival pallor; mild epigastric tenderness on deep palpation without guarding or rebound; normal bowel sounds; no hepatosplenomegaly; digital rectal examination shows black tarry stool on the glove.",
+        "labs": [
+          {"name": "Hemoglobin", "value": "9.4 g/dL (13.5-17.5)", "flag": "low"},
+          {"name": "Hematocrit", "value": "28% (41-53)", "flag": "low"},
+          {"name": "MCV", "value": "88 fL (80-100)", "flag": "normal"},
+          {"name": "WBC", "value": "11.8 x10^9/L (4.0-11.0)", "flag": "high"},
+          {"name": "Platelets", "value": "310 x10^9/L (150-400)", "flag": "normal"},
+          {"name": "Blood urea", "value": "62 mg/dL (7-20)", "flag": "high"},
+          {"name": "Creatinine", "value": "1.0 mg/dL (0.7-1.3)", "flag": "normal"},
+          {"name": "Serum sodium", "value": "139 mmol/L (135-145)", "flag": "normal"},
+          {"name": "Serum potassium", "value": "3.8 mmol/L (3.5-5.0)", "flag": "normal"}
+        ],
+        "imaging": "Urgent upper GI endoscopy: a 10 mm ulcer in the first part of the duodenal bulb with a clean base and a visible vessel; adrenaline injection and hemoclips achieve hemostasis. Antral biopsies are taken."
+      },
+      "steps": [
+        {
+          "id": "L4_peptic_ulcer_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": ["Bleeding duodenal ulcer", "Bleeding gastric ulcer", "Esophageal variceal bleeding", "Mallory-Weiss tear", "Acute pancreatitis"],
+          "correct_index": 0,
+          "explanation_ar": "النمط نموذجي لقرحة اثنا عشرية نازفة: ألم شرسوفي متأخر بعد الأكل بساعتين إلى ثلاث ساعات وعند منتصف الليل يزيده الجوع ويريحه الأكل مع شهية جيدة، في رجل يعمل في مهنة ضاغطة (مدير) في العقد الرابع مع تدخين وكحول وتناول مضاد التهاب غير ستيروئيدي، والآن ميلينا مع إقياء دموي وفقر دم وارتفاع اليوريا وتسرع قلب. القرحة المعدية النازفة يبدأ ألمها فور الأكل مع فقد وزن ويغلب عليها الإقياء الدموي (60%). دوالي المريء تنزف فجأة وبغزارة عند مرضى كبد مزمن ولا قصة كبدية هنا. شق مالوري-فايس يتبع إقياءات متكررة عنيفة قبل ظهور الدم ولا يترافق بألم قرحي مزمن. والتهاب البنكرياس الحاد ألم شديد مستمر يلتف كالحزام مع إقياء وارتفاع إنزيمات ولا يسبب ميلينا.",
+          "xp": 10
+        },
+        {
+          "id": "L4_peptic_ulcer_case1_s2",
+          "prompt": "After starting IV crystalloid resuscitation, what is the best next step for both diagnosis and hemostatic treatment?",
+          "options": ["Urgent upper GI endoscopy", "Barium meal study", "Serum gastrin level", "Abdominal ultrasound", "H. pylori serology alone"],
+          "correct_index": 0,
+          "explanation_ar": "التنظير الهضمي العلوي هو الفحص والأداة العلاجية الأولى بعد الإنعاش: يشخص مصدر النزف مباشرة (قرحة في لمبة الاثني عشر) ويسمح بالإيقاف الموضعي للنزف (حقن الأدرينالين والمشابك) وبأخذ خزعات للملوية البوابية. الباريوم لا دور له في النزف النشط ولا يوفر علاجاً. غاسترين المصل ليس فحصاً للنزف. الإيكو لا يرى القرحة ولا يوقف النزف. والأمصال وحدها لا تحدد مصدر النزف ولا تقدم تدخلاً علاجياً.",
+          "xp": 10
+        },
+        {
+          "id": "L4_peptic_ulcer_case1_s3",
+          "prompt": "During endoscopy, antral biopsies are taken. Which test gives the fastest detection of H. pylori from these biopsies?",
+          "options": ["Rapid urease test", "Histology with silver stain", "Culture", "Urea breath test", "Serology"],
+          "correct_index": 0,
+          "explanation_ar": "اختبار اليوريز السريع هو الأسرع: توضع الخزعة في وسط حاوٍ على اليوريا فتتغير المشعرات خلال دقائق إلى ساعات إذا كان الجرثوم حياً يفرز اليوريز. النسيج بصبغة الفضة دقيق لكنه يحتاج معالجة نسيجية ووقتاً أطول، والزرع الأبطأ رغم فائدته في اختبار الحساسية الدوائية. اختبار النفس باليوريا غير باضع يجرى على هواء المريض لا على الخزعات. والأمصال ليست اختباراً للخزعات أصلاً.",
+          "xp": 10
+        },
+        {
+          "id": "L4_peptic_ulcer_case1_s4",
+          "prompt": "The rapid urease test is positive. Which eradication regimen from the lecture is the PPI-based triple therapy?",
+          "options": ["Omeprazole 20 mg bid + clarithromycin 250/500 mg bid + amoxicillin 1 g bid (or metronidazole 500 mg bid)", "Bismuth subsalicylate 2 tablets qid + metronidazole 250 mg qid + tetracycline 500 mg qid", "Ranitidine 300 mg alone for 6 weeks", "Sucralfate 1 g qid + misoprostol 200 ug qid", "Amoxicillin 1 g once daily for 3 days"],
+          "correct_index": 0,
+          "explanation_ar": "النظام الثالث المحاضَر القائم على مثبط المضخة: أوميبرازول 20 ملغ مرتين يومياً + كلاريثرومايسين 250/500 ملغ مرتين يومياً + أموكسيسيلين 1 غم مرتين يومياً أو ميترونيدازول 500 ملغ مرتين يومياً. نظام البزموت في الخيار الثاني نظام محاضَر صحيح لكنه البزموتي لا المثبطي المطلوب في السؤال. الرانيتيدين وحده لا يستأصل الملوية. والواقيات المخاطية ليست علاجاً استئصالياً. والجرعة الأخيرة ناقصة جداً ولا تشكل نظاماً ثلاثياً.",
+          "xp": 15,
+          "hints": ["Two antibiotics plus an acid suppressant, all twice daily.", "Regimen 3 in the lecture."]
+        },
+        {
+          "id": "L4_peptic_ulcer_case1_s5",
+          "prompt": "Four weeks after finishing eradication therapy, how should cure be confirmed?",
+          "options": ["Repeat H. pylori IgG serology", "Urea breath test or stool antigen test", "Gastric acid analysis", "No confirmation needed once the pain is gone", "Lifetime monthly endoscopies"],
+          "correct_index": 1,
+          "explanation_ar": "تأكيد الاستئصال يكون باختبار غير باضع يكشف العدوى النشطة: اختبار النفس باليوريا أو ذيفان البراز. الأمصال تبقى إيجابية طويلاً بعد الشفاء فلا تصلح لتوثيق الاستئصال. تحليل حموضة المعدة ليس اختباراً للملوية. وزوال الأعراض لا يعني بالضرورة الاستئصال الجرثومي. والتنظير الشهري الدائم غير منطقي ولا ضروري.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: قرحة اثنا عشرية نازفة في لمبة الاثني عشر مع عدوى الملوية البوابية (يوريز سريع إيجابي) على أرضية تدخين وكحول وتناول مضادات التهاب غير ستيروئيدية. الدروس: (1) الألم الجوعي الليلي الذي يريحه الأكل مع شهية جيدة وثبات الوزن هو بصمة القرحة الاثنا عشرية؛ (2) الميلينا مع ارتفاع اليوريا الدموي وفقر الدم وتسرع القلب يشير إلى نزف هضمي علوي؛ (3) التنظير هو الخطوة التشخيصية والعلاجية الأولى بعد الإنعاش؛ (4) القرحة الهضمية داعٍ أكيد لاستئصال الملوية البوابية؛ (5) يوثق الاستئصال باختبار النفس باليوريا أو ذيفان البراز لا بالأمصال؛ (6) يجب إيقاف مضاد الالتهاب وتجنب التدخين والكحول.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L4_peptic_ulcer_case2",
+      "lecture_id": "L4_peptic_ulcer",
+      "title": "Fear of Food and Weight Loss - Gastric Ulcer, Malignant Until Proven Benign",
+      "scenario": "A 58-year-old woman is referred to the gastroenterology clinic with a few weeks of epigastric pain that starts immediately after meals, fear of eating, and 6 kg of unintentional weight loss; she reports one episode of black stool.",
+      "vignette": {
+        "age": 58,
+        "sex": "female",
+        "chief_complaint": "Epigastric pain immediately after meals for a few weeks with weight loss",
+        "history": "Middle-aged woman with epigastric pain starting immediately after eating and radiating to the back for a few weeks; the pain is relieved by lying down and by vomiting. She has become afraid to eat, avoids fried food, and has lost 6 kg in 2 months. One episode of black tarry stool. No NSAID use, no smoking, no alcohol.",
+        "vitals": {
+          "bp": "122/76 mmHg",
+          "hr": "88/min",
+          "rr": "16/min",
+          "temp": "36.8 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Mild epigastric tenderness on deep palpation only; no palpable mass, no hepatomegaly, no lymphadenopathy; conjunctivae mildly pale; digital rectal exam: black stool on the glove.",
+        "labs": [
+          {"name": "Hemoglobin", "value": "10.6 g/dL (12.0-15.5)", "flag": "low"},
+          {"name": "MCV", "value": "75 fL (80-100)", "flag": "low"},
+          {"name": "Serum iron", "value": "32 ug/dL (60-160)", "flag": "low"},
+          {"name": "Ferritin", "value": "9 ng/mL (15-150)", "flag": "low"},
+          {"name": "TIBC", "value": "470 ug/dL (240-450)", "flag": "high"},
+          {"name": "WBC", "value": "7.2 x10^9/L (4.0-11.0)", "flag": "normal"},
+          {"name": "Platelets", "value": "360 x10^9/L (150-400)", "flag": "normal"},
+          {"name": "Albumin", "value": "3.3 g/dL (3.5-5.2)", "flag": "low"},
+          {"name": "Blood urea", "value": "38 mg/dL (7-20)", "flag": "high"},
+          {"name": "Creatinine", "value": "0.9 mg/dL (0.6-1.1)", "flag": "normal"}
+        ],
+        "imaging": "Upper GI endoscopy: a 2.5 cm ulcer on the lesser curve of the stomach with smooth, regular margins and a clean base; radiating mucosal folds converge toward the ulcer."
+      },
+      "steps": [
+        {
+          "id": "L4_peptic_ulcer_case2_s1",
+          "prompt": "What is the most likely clinical diagnosis?",
+          "options": ["Gastric ulcer", "Duodenal ulcer", "Gastro-esophageal reflux disease", "Non-ulcer (functional) dyspepsia", "Biliary colic"],
+          "correct_index": 0,
+          "explanation_ar": "القرحة المعدية: ألم شرسوفي يبدأ فور الأكل ويشع إلى الظهر، يريحه الاستلقاء والإقياء، مع خوف من الأكل وتجنب المقليات وفقد 6 كغم خلال شهرين، في امرأة بعمر 58 (العمر النموذجي 50-60). القرحة الاثنا عشرية ألمها متأخر جوعي يريحه الأكل مع شهية جيدة وثبات الوزن. القلس يسبب حرقة خلف القص مع قلس. وعسر الهضم الوظيفي لا يترافق مع فقد وزن منهجي. والقولنج الصفراوي ألم في الربع العلوي الأيمن بعد وجبات دسمة.",
+          "xp": 10
+        },
+        {
+          "id": "L4_peptic_ulcer_case2_s2",
+          "prompt": "Endoscopy shows a classical benign-appearing lesser-curve ulcer. What is the correct next step?",
+          "options": ["Accept it as benign and start a PPI only", "Take at least 10 well-targeted biopsies before accepting it as benign", "Confirm with a barium meal", "Measure serum gastrin", "Prescribe antacids and review in 3 months"],
+          "correct_index": 1,
+          "explanation_ar": "قاعدة المحاضرة: كل قرحة معدية تعتبر خبيثة مهما بدت حميدة، ولا تُقبل كحميدة إلا بعد 10 خزعات موجّهة على الأقل، لأن سرطاناً متقرحاً قد يحاكي القرحة الحميدة تماماً، والعلاج المضاد للقرحة قد يشفي تقرح الخباثة دون علاج الورم نفسه. الباريوم لا يعطي نسيجاً، وغاسترين المصل ليس فحصاً للخباثة، والتأجيل بلا خزعة قد يؤخر تشخيص سرطان المعدة.",
+          "xp": 15,
+          "hints": ["However benign it looks, the lecture demands a minimum number of targeted biopsies.", "That number is 10."]
+        },
+        {
+          "id": "L4_peptic_ulcer_case2_s3",
+          "prompt": "Ten targeted biopsies show a benign gastric ulcer (no malignancy) and the rapid urease test is positive. Which of the following is the lecture's bismuth-based triple therapy (Regimen 1)?",
+          "options": ["Bismuth subsalicylate 2 tablets qid + metronidazole 250 mg qid + tetracycline 500 mg qid", "Bismuth subsalicylate 2 tablets once daily + metronidazole 250 mg once daily", "Ranitidine bismuth citrate 400 mg bid + tetracycline 500 mg bid + clarithromycin 500 mg bid", "Omeprazole 20 mg bid + clarithromycin 250/500 mg bid + amoxicillin 1 g bid", "Sucralfate 1 g qid alone"],
+          "correct_index": 0,
+          "explanation_ar": "النظام البزموتي الأول المحاضَر: ساليسيلات البزموت قرصان أربع مرات يومياً + ميترونيدازول 250 ملغ أربع مرات يومياً + تتراسيكلين 500 ملغ أربع مرات يومياً. الخيار الثالث هو النظام الثاني المحاضَر (سيترات الرانيتيدين البزموتية) وهو صحيح بذاته لكنه ليس النظام الأول المطلوب في السؤال. والخيار الرابع هو النظام الثالث القائم على مثبط المضخة. أما الجرعات مرة واحدة يومياً والسكرالفات وحده فخاطئة ولا تحقق استئصالاً.",
+          "xp": 10
+        },
+        {
+          "id": "L4_peptic_ulcer_case2_s4",
+          "prompt": "On therapy the pain disappears and a follow-up endoscopy shows the ulcer 'healing'. What must the clinician remember about gastric ulcers and malignancy?",
+          "options": ["Symptomatic healing proves the ulcer was benign", "Anti-ulcer therapy can heal the ulceration associated with malignancy without curing the malignancy - follow-up endoscopy with repeat biopsies until complete healing is required", "Gastric ulcers, like duodenal ulcers, carry no malignancy risk", "Only ulcers larger than 5 cm can be malignant", "A single benign biopsy permanently excludes malignancy"],
+          "correct_index": 1,
+          "explanation_ar": "القاعدة الثالثة من شريحة المحاضرة: العلاج المضاد للقرحة يشفي التقرح المصاحب للخباثة لكنه لا يعالج الخباثة ذاتها؛ لذلك لا يكفي زوال الأعراض أو الشفاء المنظوري، بل تلزم المتابعة بالتنظير مع الخزعات حتى الشفاء الكامل والتوثيق النسيجي. الشفاء العرضي لا يثبت الحميدة، والقرحة المعدية بخلاف الاثنا عشرية مرتبطة بالخباثة، ولا يوجد حد حجمي 5 سم للحكم، وخزعة واحدة لا تكفي أصلاً فالمطلوب 10 خزعات موجّهة على الأقل.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: قرحة معدية حميدة على الانحناء الأصغر مع عدوى الملوية البوابية، وفقر دم صغير الكريات بعوز الحديد ناجم عن نزف هضمي خفي (مع هبوط الألبومين بسبب نقص التغذية المرافق لرهاب الطعام). الدروس المحورية: (1) الألم الفوري بعد الأكل مع خوف من الطعام وفقد الوزن هو نمط القرحة المعدية؛ (2) كل قرحة معدية خبيثة حتى تثبت البراءة بـ10 خزعات موجّهة على الأقل؛ (3) القرحة المعدية - وليست الاثنا عشرية - هي المرتبطة بالخباثة؛ (4) العلاج المضاد للقرحة قد يشفي تقرح السرطان دون شفاء السرطان، فتلزم المتابعة بالتنظير والخزعات حتى الشفاء الكامل؛ (5) القرحة الهضمية داعٍ أكيد لاستئصال الملوية البوابية، وفقر دم عوز الحديد اضطراب خارج معدي داعٍ للاستئصال إذا كانت الملوية إيجابية.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/motivation_repository.dart';
 import '../../../../core/motivation/motivation_model.dart';
+import '../../../../core/utils/error_logger.dart';
 import '../../../../routing/app_router.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
@@ -16,8 +17,10 @@ import 'unit_screen.dart';
 ///
 /// البنية:
 /// - ترحيب حسب وقت اليوم + شريحة السلسلة 🔥.
-/// - بطاقة حلقة أهداف اليوم الموحدة (محاضرات مثبتة + بطاقات مستحقة)
-///   — الحلقة والرسالة يُشتقان من `TodayGoalsSnapshot` (checkTodayStatus).
+/// - بطاقة أهداف اليوم (المحاضرات المثبتة **حصرياً**) — الحلقة
+///   نسبة (المكتملة/المثبتة) والرسالة تعكسان المحاضرات وحدها،
+///   مشتقة من `TodayGoalsSnapshot` (checkTodayStatus).
+/// - شريط مراجعات ثانوي منفصل (SRS) — رقم بسيط لا يدخل في الحلقة.
 /// - قائمة محاضرات أهداف اليوم (مثبتة) بحالة الإكمال لكل واحدة.
 /// - بطاقة «تابع من حيث توقفت» — أول محاضرة لم يكتمل تقييمها.
 /// - صف إحصاءات مصغر (XP · سلسلة · شروحات مكتملة · بطاقات).
@@ -58,42 +61,53 @@ class _TodayPageState extends State<TodayPage> {
     try {
       final DatabaseHelper db = DatabaseHelper.instance;
       final UnitRepository repo = UnitRepository();
-      final List<Unit> units = await repo.getAllUnits();
+
+      // القراءات المستقلة بالتوازي (بدل التسلسل) — أما «تابع من حيث
+      // توقفت» فاستعلام واحد: أول محاضرة بترتيب المنهج لم يُكمل
+      // تقييمها (بلا حلقة N+1 فوق كل وحدة).
+      final List<Object> results = await Future.wait<Object>(<Future<Object>>[
+        repo.getAllUnits(),
+        repo.todayGoals(),
+        MotivationRepository.snapshot(),
+        db.rawQueryParameterized(
+          'SELECT u.id FROM ${DatabaseHelper.tableUnits} u '
+          'WHERE NOT EXISTS ('
+          '  SELECT 1 FROM ${DatabaseHelper.tableUserProgress} p '
+          "  WHERE p.item_type = 'drill' AND p.item_id = 'assess-' || u.id "
+          "  AND p.status = 'completed') "
+          'ORDER BY u.order_index ASC, u.id ASC LIMIT 1',
+        ),
+        db.rawCount(
+          'SELECT COUNT(*) FROM ${DatabaseHelper.tableFlashcards}',
+        ),
+      ]);
+
+      final List<Unit> units = results[0] as List<Unit>;
+      final List<Map<String, Object?>> nextRows =
+          results[3] as List<Map<String, Object?>>;
 
       // أول محاضرة لم يُكمل تقييمها — «تابع من حيث توقفت».
-      Unit? next;
-      for (final Unit unit in units) {
-        final List<Map<String, Object?>> rows =
-            await db.rawQueryParameterized(
-          'SELECT status FROM ${DatabaseHelper.tableUserProgress} '
-          "WHERE item_type = 'drill' AND item_id = ? LIMIT 1",
-          <Object?>['assess-${unit.id}'],
-        );
-        if (rows.isEmpty || rows.first['status'] != 'completed') {
-          next = unit;
-          break;
-        }
-      }
-
-      // بقية القراءات.
-      final TodayGoalsSnapshot goals = await repo.todayGoals();
-      final MotivationSnapshot motivation =
-          await MotivationRepository.snapshot();
-      final int flashcards = await db.rawCount(
-        'SELECT COUNT(*) FROM ${DatabaseHelper.tableFlashcards}',
-      );
+      final Unit? next = nextRows.isEmpty
+          ? null
+          : units.firstWhere(
+              (Unit u) => u.id == nextRows.first['id'],
+              orElse: () => units.first,
+            );
 
       if (!mounted) return;
       setState(() {
         _nextUnit = next;
-        _goals = goals;
+        _goals = results[1] as TodayGoalsSnapshot;
+        final MotivationSnapshot motivation =
+            results[2] as MotivationSnapshot;
         _streak = motivation.currentStreak;
         _xp = motivation.totalXp;
         _completedLessons = motivation.completedLessons;
-        _flashcardCount = flashcards;
+        _flashcardCount = results[4] as int;
         _loading = false;
       });
-    } catch (_) {
+    } catch (error) {
+      AppErrorLogger.instance.record(type: 'TodayPage', error: error);
       if (!mounted) return;
       setState(() {
         _error = 'تعذّر تحميل لوحة اليوم.';
@@ -166,7 +180,7 @@ class _TodayPageState extends State<TodayPage> {
 
           const SizedBox(height: AppSpacing.xxl),
 
-          // ── بطاقة أهداف اليوم الموحدة (محاضرات + بطاقات) ──
+          // ── بطاقة أهداف اليوم (المحاضرات المثبتة حصرياً) ──
           _TodayGoalCard(
             snapshot: _goals!,
             onOpenLecture: _openUnit,
@@ -175,11 +189,36 @@ class _TodayPageState extends State<TodayPage> {
 
           const SizedBox(height: AppSpacing.betweenCards),
 
+          // ── شريط المراجعات الثانوي (SRS) — رقم بسيط منفصل عن الحلقة ──
+          _ReviewStrip(
+            dueCards: _goals!.dueCards,
+            onOpenReviews: () => context.push(RoutePaths.dailyReview),
+          ),
+
+          const SizedBox(height: AppSpacing.betweenCards),
+
           // ── كتل القراءة العميقة (المقترح D) ──
           _ReadingBlocksEntryCard(
-            onTap: () => Navigator.of(context).push(MaterialPageRoute<Widget>(
-              builder: (_) => const ReadingBlocksPage(),
-            )),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<Widget>(
+                  builder: (_) => const ReadingBlocksPage(),
+                ),
+              );
+            },
+          ),
+
+          const SizedBox(height: AppSpacing.betweenCards),
+
+          // ── كتل الفسيولوجيا السريرية ──
+          _PhysiologyBlocksEntryCard(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<Widget>(
+                  builder: (_) => const UnitScreen(unitId: 'l_physiology_clinical'),
+                ),
+              );
+            },
           ),
 
           const SizedBox(height: AppSpacing.betweenCards),
@@ -254,15 +293,19 @@ class _TodayPageState extends State<TodayPage> {
   }
 }
 
-/// بطاقة أهداف اليوم الموحدة — **مقياس الشمال الجديد**: الحلقة
-/// تُحتسب من إكمال المحاضرات المثبتة **مع** البطاقات المستحقة (سهم
-/// واحد لكل محاضرة + سهم لحزمة المراجعة)، فلا «اكتمل يومك» والمحاضرة
-/// المثبتة بانتظارك.
+/// بطاقة أهداف اليوم — الهدف اليومي الحقيقي هو **المحاضرات المثبتة
+/// حصرياً**: الحلقة تحسب (المكتملة / إجمالي المثبتة) ولا تدخل
+/// البطاقات المستحقة في النسبة مهما بلغ عددها.
 ///
-/// الرسائل (checkTodayStatus عبر `TodayGoalsSnapshot.phase`):
+/// الرسائل الرئيسية (checkTodayStatus عبر `TodayGoalsSnapshot.phase`):
+/// - لا محاضرات مثبتة → حلقة فارغة + «لا توجد أهداف، ثبّت محاضرة للبدء»
 /// - محاضرات مثبتة غير مكتملة → «لديك محاضرات بانتظارك اليوم!»
-/// - لا محاضرات (أو اكتملت) + بطاقات مستحقة → «لديك مراجعات مستحقة»
-/// - الاثنان مكتملان → «مهام اليوم مكتملة 🌟»
+/// - كل المثبتات مكتملة → «أنجزت جميع أهدافك اليوم! 🌟» (الاحتفال
+///   مشروط بمثبتات > 0 — إتمام البطاقات وحده لا يحتفل)
+///
+/// **شريط المراجعات (Decoupling)**: البطاقات المستحقة شريط ثانوي
+/// منفصل أسفل الحلقة يعرض رقماً بسيطاً («بطاقات مستحقة للمراجعة: X»
+/// أو «لا توجد مراجعات حالياً») — بلا نسبة ولا اكتمال داخل الحلقة.
 class _TodayGoalCard extends StatefulWidget {
   const _TodayGoalCard({
     required this.snapshot,
@@ -320,33 +363,33 @@ class _TodayGoalCardState extends State<_TodayGoalCard>
     final Brightness b = Theme.of(context).colorScheme.brightness;
     final TodayGoalsSnapshot snapshot = widget.snapshot;
     final TodayPhase phase = snapshot.phase;
-    final bool allDone = phase == TodayPhase.done;
+
+    // الاحتفال (✓ في الحلقة + رسالة الإنجاز) مشروط بمثبتات > 0
+    // وكلها مكتملة — لا احتفال لمجرد خلو البطاقات المستحقة.
+    final bool allDone = phase == TodayPhase.done && snapshot.pinned.isNotEmpty;
 
     final Color accent = allDone
         ? AppColors.success(b)
         : phase == TodayPhase.lectures
             ? Theme.of(context).colorScheme.primary
-            : AppColors.gold(b);
+            : AppColors.textSecondary(b);
 
     final String title = switch (phase) {
+      TodayPhase.none => 'لا توجد أهداف',
       TodayPhase.lectures => 'لديك محاضرات بانتظارك اليوم!',
-      TodayPhase.reviews => 'لديك مراجعات مستحقة',
-      TodayPhase.done => 'مهام اليوم مكتملة 🌟',
+      TodayPhase.done => 'أنجزت جميع أهدافك اليوم! 🌟',
     };
     final String subtitle = switch (phase) {
-      TodayPhase.lectures =>
-        'أكمل محاضراتك المثبتة أولاً — ثم راجع بطاقاتك',
-      TodayPhase.reviews =>
-        'النظام جدولها بناءً على تقدمك — راجعها الآن',
-      TodayPhase.done => 'أحسنت — عد غداً أو ابدأ محاضرة جديدة',
+      TodayPhase.none => 'ثبّت محاضرة من شاشة المسار لتظهر هنا',
+      TodayPhase.lectures => 'أكمل محاضراتك المثبتة لتُنجز يومك',
+      TodayPhase.done => 'أحسنت — عد غداً أو ثبّت محاضرة جديدة',
     };
 
     final Widget card = AppCard(
-      onTap: phase == TodayPhase.reviews
-          ? widget.onOpenReviews
-          : snapshot.pendingPinned.isNotEmpty
-              ? () => widget.onOpenLecture(snapshot.pendingPinned.first)
-              : null,
+      // النقر يفتح أول محاضرة معلقة؛ الاكتمال بلا مثبتات لا وجهة له.
+      onTap: snapshot.pendingPinned.isNotEmpty
+          ? () => widget.onOpenLecture(snapshot.pendingPinned.first)
+          : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -357,18 +400,40 @@ class _TodayGoalCardState extends State<_TodayGoalCard>
                 size: 64,
                 stroke: 6,
                 color: accent,
-                showKnob: !allDone,
-                child: Text(
-                  allDone
-                      ? '✓'
-                      : '${(snapshot.progress * 100).round()}%',
-                  textDirection: TextDirection.ltr,
-                  style: AppType.cardTitle.copyWith(
-                    color: accent,
-                    fontWeight: FontWeight.w800,
-                    fontSize: allDone ? 24 : 14,
-                  ),
-                ),
+                showKnob: phase == TodayPhase.lectures,
+                child: allDone
+                    ? Icon(
+                        Icons.check_rounded,
+                        size: 26,
+                        color: AppColors.success(b),
+                      )
+                    : phase == TodayPhase.none
+                        ? Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 4,
+                            ),
+                            child: FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                'ثبّت محاضرة',
+                                textAlign: TextAlign.center,
+                                style: AppType.caption.copyWith(
+                                  fontSize: 8,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppColors.textSecondary(b),
+                                ),
+                              ),
+                            ),
+                          )
+                        : Text(
+                            '${(snapshot.progress * 100).round()}%',
+                            textDirection: TextDirection.ltr,
+                            style: AppType.cardTitle.copyWith(
+                              color: accent,
+                              fontWeight: FontWeight.w800,
+                              fontSize: 14,
+                            ),
+                          ),
               ),
               const SizedBox(width: AppSpacing.lg),
               Expanded(
@@ -407,15 +472,6 @@ class _TodayGoalCardState extends State<_TodayGoalCard>
                 onTap: () => widget.onOpenLecture(unit),
               ),
           ],
-
-          // ── هدف المراجعة (SRS) ──
-          const SizedBox(height: AppSpacing.sm),
-          _PinnedGoalRow(
-            unit: null,
-            dueCards: snapshot.dueCards,
-            completed: snapshot.dueCards == 0,
-            onTap: widget.onOpenReviews,
-          ),
         ],
       ),
     );
@@ -430,38 +486,80 @@ class _TodayGoalCardState extends State<_TodayGoalCard>
   }
 }
 
-/// صف هدف واحد في بطاقة أهداف اليوم — محاضرة مثبتة (باسمها وحالتها)
-/// أو حزمة مراجعة البطاقات المستحقة (unit == null).
+/// شريط المراجعات الثانوي (Decoupling) — البطاقات المستحقة عرض
+/// منفصل أسفل بطاقة الأهداف: رقم بسيط بلا نسبة ولا تأثير على الحلقة.
+/// صفر → «لا توجد مراجعات حالياً» بلا نقرة. أكثر → نقرة تفتح
+/// جلسة المراجعة اليومية.
+class _ReviewStrip extends StatelessWidget {
+  const _ReviewStrip({
+    required this.dueCards,
+    required this.onOpenReviews,
+  });
+
+  final int dueCards;
+
+  final VoidCallback onOpenReviews;
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final bool hasDue = dueCards > 0;
+    final Color accent = hasDue ? AppColors.gold(b) : AppColors.success(b);
+
+    return AppCard(
+      onTap: hasDue ? onOpenReviews : null,
+      child: Row(
+        children: <Widget>[
+          Icon(
+            hasDue
+                ? Icons.style_rounded
+                : Icons.check_circle_outline_rounded,
+            size: 22,
+            color: accent,
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Text(
+              hasDue
+                  ? 'بطاقات مستحقة للمراجعة: $dueCards'
+                  : 'لا توجد مراجعات حالياً',
+              style: AppType.body.copyWith(
+                fontSize: 13.5,
+                fontWeight: FontWeight.w600,
+                color: hasDue ? AppColors.text(b) : AppColors.textSecondary(b),
+              ),
+            ),
+          ),
+          if (hasDue)
+            Icon(
+              Icons.chevron_left_rounded,
+              size: 18,
+              color: AppColors.textSecondary(b),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+/// صف هدف واحد في بطاقة أهداف اليوم — محاضرة مثبتة باسمها وحالة
+/// إتمامها. (البطاقات المستحقة انتقلت لشريط _ReviewStrip المنفصل.)
 class _PinnedGoalRow extends StatelessWidget {
   const _PinnedGoalRow({
     required this.unit,
     required this.completed,
     required this.onTap,
-    this.dueCards,
   });
 
-  final Unit? unit;
+  final Unit unit;
   final bool completed;
   final VoidCallback onTap;
-
-  /// عدد البطاقات المستحقة (عندما unit == null).
-  final int? dueCards;
 
   @override
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
     final Color done = AppColors.success(b);
     final Color pending = AppColors.gold(b);
-
-    // نص الصف: عنوان المحاضرة المثبتة أو ملخص بطاقات المراجعة.
-    final Unit? pinnedUnit = unit;
-    final String label = pinnedUnit == null
-        ? (dueCards == 0
-            ? 'بطاقات اليوم مكتملة'
-            : 'مراجعة $dueCards بطاقة مستحقة')
-        : pinnedUnit.title;
-    final TextDirection direction =
-        pinnedUnit == null ? TextDirection.rtl : TextDirection.ltr;
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: AppSpacing.xs + 2),
@@ -480,8 +578,8 @@ class _PinnedGoalRow extends StatelessWidget {
             const SizedBox(width: AppSpacing.md),
             Expanded(
               child: Text(
-                label,
-                textDirection: direction,
+                unit.title,
+                textDirection: TextDirection.ltr,
                 textAlign: TextAlign.start,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -546,6 +644,64 @@ class _ReadingBlocksEntryCard extends StatelessWidget {
                 const SizedBox(height: 2),
                 Text(
                   'غوصة شروح متداخلة الأجهزة — قلب جلستك اليومي',
+                  style: AppType.body.copyWith(
+                    fontSize: 12.5,
+                    color: AppColors.textSecondary(b),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_left_rounded,
+              color: AppColors.textSecondary(b)),
+        ],
+      ),
+    );
+  }
+}
+
+/// بطاقة «كتل القراءة العميقة» الخاصة بالفسيولوجيا السريرية.
+class _PhysiologyBlocksEntryCard extends StatelessWidget {
+  const _PhysiologyBlocksEntryCard({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final Color accent = Theme.of(context).colorScheme.secondary;
+
+    return AppCard(
+      onTap: onTap,
+      accent: accent,
+      child: Row(
+        children: <Widget>[
+          Container(
+            width: 48,
+            height: 48,
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: <Color>[Color(0xFF009688), Color(0xFF00796B)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(AppRadius.chip),
+            ),
+            child: const Center(
+              child: Text('🧬', style: TextStyle(fontSize: 24)),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('الفسيولوجيا السريرية',
+                    style:
+                        AppType.cardTitle.copyWith(fontSize: 16)),
+                const SizedBox(height: 2),
+                Text(
+                  'فهم الأساس الفسيولوجي والربط السريري والدوائي',
                   style: AppType.body.copyWith(
                     fontSize: 12.5,
                     color: AppColors.textSecondary(b),

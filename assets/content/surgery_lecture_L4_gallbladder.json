@@ -1,0 +1,1501 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L4_gallbladder_biliary",
+    "specialty": "surgery",
+    "title": "Gallbladder and Biliary Tree I: Anatomy, Investigations, Congenital Anomalies and Gallstones",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "GB L4.pdf",
+      "page_count": 15
+    },
+    "tags": [
+      "gallbladder",
+      "biliary tree",
+      "gallstones",
+      "cholecystitis",
+      "choledochal cyst",
+      "biliary atresia",
+      "biliary colic",
+      "murphy sign"
+    ],
+    "order_index": 4,
+    "golden_tip": [
+      "Biliary colic = NEGATIVE Murphy's sign, no fever, normal WBC and LFT. Positive Murphy's sign with low-grade fever and leukocytosis means acute cholecystitis: admit, treat with antibiotics and plan cholecystectomy.",
+      "Only 10-20% of gallstones are radio-opaque on plain X-ray, so a normal plain film never excludes stones. Ultrasound is the prime, standard, quick and non-invasive first test.",
+      "Every choledochal cyst is premalignant (cholangiocarcinoma risk). Treatment is complete surgical excision with Roux-en-Y biliary digestive anastomosis, never simple drainage. Todani Type I (fusiform) is the most common.",
+      "A neonate with progressive jaundice since birth, pale meconium and dark urine has extrahepatic biliary atresia until proven otherwise. Operate early with Roux-en-Y anastomosis or transplant; post-op cholangitis occurs in 40% and portal hypertension in 50%.",
+      "Female, Fatty, Fertile, Forty. Mixed/cholesterol stones: 80% in US and Europe; pigment stones: 80% in Asia. Brown pigment stones form in DUCTS from stasis + infected bile (stents, parasites); black stones in the GALLBLADDER from hemolysis (SCA, spherocytosis, cirrhosis)."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L4_gallbladder_biliary_c01",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Surgical Anatomy and Physiology of the Gallbladder and Biliary Tree",
+      "summary_ar": "تشريح المرارة والشجرة الصفراوية: المرارة كمثرية الشكل بطول 7.5-12 سم وسعة تتجاوز 50 مل، بأربعة أجزاء: القاع والجسم والعنق والقمع. تتحد القناة الكيسية (2.5 سم) مع القناة الكبدية المشتركة (2.5 سم) لتشكلا القناة الصفراوية المشتركة (7.5 سم). الشريان الكيسي يتفرع من الكبدي الأيمن مع خطر التفافة الشريان المتعرجة أمام منشأ القناة الكيسية، والتصريف اللمفاوي عبر عقدة لوند ثم العقد البطنية أو مباشرة إلى الكبد. الصفراء 97% ماء ويفرزها الكبد بمقدار 40 مل بالساعة، ووظائف المرارة ثلاث: خزان، وتركيز 5-10 أضعاف، وإفراز 20 مل مخاطين يومياً.",
+      "sections": [
+        {
+          "heading": "Gross Anatomy of the Gallbladder",
+          "body_text": "This first lecture of the gallbladder and biliary tree block (delivered by Dr Noori Hanoon, Consultant General and Gastrointestinal Surgeon, FRCS, FACS, FICMS and PhD (England)) covers the anatomy of the gallbladder and bile ducts, the investigations of the biliary tract, congenital anomalies, the choledochal cyst, and gallstone types, aetiology, effects and complications. The gallbladder itself is a **pear-shaped** hollow organ that lies on the under-surface of the right lobe of the liver, roughly at the tip of the ninth costal cartilage. It measures **7.5 - 12 cm in length** and has a **capacity of more than 50 ml**. Its parts, from distal to proximal, are the **fundus, body, neck and infundibulum**: the fundus is the rounded blind end that contacts the anterior abdominal wall; the body is the main storage sac; the neck is the narrowed tapered end that turns toward the porta hepatis; and the infundibulum is the funnel-shaped dilatation of the neck (Hartmann's pouch in standard descriptions) where gallstones classically impact and obstruct the cystic duct. These measurements are favorite anatomy vignette facts: a normal gallbladder is 7.5 - 12 cm long, holds more than 50 ml, and a stone trapped in the neck or infundibulum is the anatomical basis of biliary colic and mucocele.",
+          "key_points": [
+            "Pear-shaped organ, 7.5 - 12 cm long, capacity more than 50 ml",
+            "Four parts: fundus, body, neck and infundibulum (Hartmann's pouch of the neck)",
+            "Stones impact at the neck/infundibulum, producing biliary colic and mucocele",
+            "The gallbladder lies on the under-surface of the liver at the tip of the ninth costal cartilage"
+          ]
+        },
+        {
+          "heading": "The Duct System: Cystic Duct, Common Hepatic Duct and CBD",
+          "body_text": "The **cystic duct** is about **2.5 cm long** with a lumen of about **0.5 cm**; it runs from the neck of the gallbladder to join the **common hepatic duct, which is itself about 2.5 cm long**, and the union of the two creates the **common bile duct (CBD), about 7.5 cm long**. The CBD descends in the free edge of the lesser omentum, passes behind the first part of the duodenum and through the head of the pancreas, and opens on the ampulla of Vater beside the pancreatic duct. The triangle bounded by the cystic duct, the common hepatic duct and the under-surface of the liver (Calot's triangle, more accurately the hepatocystic triangle) is the crucial dissection plane during cholecystectomy: it contains the cystic artery, the cystic lymph node of Lund and sometimes an accessory hepatic duct. Memorise the three numbers together - cystic duct 2.5 cm, common hepatic duct 2.5 cm, CBD 7.5 cm - because they are classic examination facts and the landmarks of safe duct identification.",
+          "key_points": [
+            "Cystic duct: 2.5 cm long, about 0.5 cm lumen",
+            "Common hepatic duct: about 2.5 cm",
+            "CBD: about 7.5 cm, formed by union of the cystic duct and common hepatic duct",
+            "Calot's (hepatocystic) triangle contains the cystic artery, the node of Lund and possible accessory ducts"
+          ],
+          "check": {
+            "prompt": "During cholecystectomy the surgeon traces a duct 2.5 cm long that joins a common hepatic duct of similar length. What results from this junction and how long is it?",
+            "options": [
+              "The common bile duct, about 7.5 cm long",
+              "The right hepatic duct, about 7.5 cm long",
+              "The common bile duct, about 12 cm long",
+              "The ampulla of Vater, about 2.5 cm long",
+              "An accessory hepatic duct, about 5 cm long"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تتحد القناة الكيسية (2.5 سم) مع القناة الكبدية المشتركة (2.5 سم) لتشكيل القناة الصفراوية المشتركة التي يبلغ طولها حوالي 7.5 سم؛ فالخيار الأول صحيح وبقية الخيارات أطوال أو تراكيب خاطئة."
+          }
+        },
+        {
+          "heading": "Blood Supply and the Caterpillar Turn",
+          "body_text": "The gallbladder is supplied by the **cystic artery**, which arises from the **right hepatic artery** within the hepatocystic triangle and divides into anterior and posterior branches on the gallbladder wall; the vein drains into the portal system through the gallbladder bed. The anatomy is not always this tidy: the **caterpillar turn** is the name given to a **tortuous right hepatic artery that runs in front of the origin of the cystic duct, associated with a short cystic artery**. Like the crawling body of a caterpillar, the looped hepatic artery rises across Calot's triangle, and because the cystic artery arising from its apex is short, a clip or cut applied carelessly can transect or avulse the right hepatic artery itself, producing massive hemorrhage in the middle of a routine cholecystectomy. The lesson is to identify the artery entering the gallbladder wall and achieve the critical view of safety before dividing any structure.",
+          "key_points": [
+            "Cystic artery arises from the right hepatic artery inside Calot's triangle",
+            "Caterpillar turn = tortuous right hepatic artery in front of the cystic duct origin with a short cystic artery",
+            "Danger: mistaking the tortuous right hepatic artery for the cystic artery causes massive bleeding"
+          ],
+          "check": {
+            "prompt": "What exactly is the 'caterpillar turn' encountered during cholecystectomy?",
+            "options": [
+              "A tortuous right hepatic artery passing in front of the origin of the cystic duct with a short cystic artery",
+              "A spiral mucosal fold inside the cystic duct (valve of Heister)",
+              "A twist of the gallbladder around its own mesentery",
+              "A redundant loop of duodenum draped over the CBD",
+              "An enlarged cystic lymph node of Lund"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التفافة الدودة هي شريان كبدي أيمن متعرج يمر أمام منشأ القناة الكيسية مصحوباً بشريان كيسي قصير؛ الخطر هو نزف كبير إذا جرح الشريان الكبدي ظناً أنه الشريان الكيسي، وبقية الخيارات تراكيب أخرى لا علاقة لها بهذا المصطلح."
+          }
+        },
+        {
+          "heading": "Lymphatic Drainage of the Gallbladder",
+          "body_text": "The **lymphatics** of the gallbladder drain by **two ways**: **1) to the cystic lymph node (node of Lund)** at the neck of the gallbladder near the cystic duct, and from there onward to the **coeliac lymph nodes**; **2) directly to the liver** through the gallbladder bed (segments IV and V of the liver). This short, direct hepatic route explains why carcinoma of the gallbladder invades the liver substance so early, long before distant nodes are involved, and why an enlarged hard node of Lund found at laparoscopy should raise suspicion of malignancy rather than simple inflammation. For the surgeon, the node of Lund is also a practical landmark: the cystic artery usually runs just deep to it in the hepatocystic triangle.",
+          "key_points": [
+            "Route 1: cystic node of Lund, then coeliac lymph nodes",
+            "Route 2: directly into the liver through the gallbladder bed",
+            "Direct hepatic spread explains early liver invasion by gallbladder carcinoma",
+            "The node of Lund is a landmark for the cystic artery plane"
+          ]
+        },
+        {
+          "heading": "Bile: Composition, Production and the Three Gallbladder Functions",
+          "body_text": "**Bile is 97% water, 2% bile salts, and 1% bile acids and cholesterol.** The liver produces it continuously at about **40 ml per hour, i.e. about 1000 ml per day**; between meals the sphincter of Oddi stays closed and the bile is diverted through the cystic duct into the gallbladder. The gallbladder performs **three functions**: **1) reservoir and storage** of bile between meals; **2) concentration of bile 5 - 10 times**, by active absorption of sodium, chloride and water across its mucosa, so a small storage sac can hold the equivalent of many hours of hepatic output; and **3) secretion of mucin, about 20 ml per day**, an alkaline protective coat that shields the mucosa from the detergent action of concentrated bile salts. When a fatty meal reaches the duodenum, cholecystokinin (CCK) is released, the gallbladder contracts, the sphincter relaxes, and concentrated bile is delivered for fat digestion - the same apparatus that, when a stone blocks the neck, generates biliary colic.",
+          "key_points": [
+            "Bile: 97% water, 2% bile salts, 1% bile acids and cholesterol",
+            "Production: 40 ml/hour = 1000 ml/day",
+            "Functions: reservoir and storage; concentration 5 - 10 times; mucin secretion about 20 ml/day"
+          ],
+          "check": {
+            "prompt": "Which statement about bile composition and gallbladder function is correct?",
+            "options": [
+              "Bile is 97% water, 2% bile salts and 1% bile acids plus cholesterol, produced at 40 ml/hour (1000 ml/day)",
+              "Bile is 90% water and 10% cholesterol, produced at 100 ml/hour",
+              "The gallbladder concentrates bile 50 times and secretes 200 ml of mucin daily",
+              "Bile production is 400 ml/day and the gallbladder stores it all",
+              "Bile contains no cholesterol because cholesterol is excreted only in urine"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الصفراء 97% ماء و2% أملاح صفراوية و1% أحماض صفراوية وكوليسترول، ويفرزها الكبد بمعدل 40 مل بالساعة أي 1000 مل يومياً؛ والمرارة تكثف الصفراء 5-10 مرات فقط وتفرز 20 مل مخاطين يومياً، فبقية الخيارات تخطئ الأرقام."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gallbladder",
+          "definition_ar": "كيس كمثري الشكل على السطح السفلي للكبد، طوله 7.5-12 سم وسعته أكثر من 50 مل، ويتألف من القاع والجسم والعنق والقمع."
+        },
+        {
+          "term": "Cystic duct",
+          "definition_ar": "قناة تخرج من عنق المرارة، طولها 2.5 سم وقطرها حوالي 0.5 سم، وتنضم إلى القناة الكبدية المشتركة لتشكيل القناة الصفراوية المشتركة."
+        },
+        {
+          "term": "Common bile duct",
+          "definition_ar": "القناة الصفراوية المشتركة؛ تتشكل من التقاء القناة الكيسية بالقناة الكبدية المشتركة، ويبلغ طولها حوالي 7.5 سم وتنتهي في أمبولة فاتر."
+        },
+        {
+          "term": "Cystic artery",
+          "definition_ar": "الشريان المغذي للمرارة، يتفرع من الشريان الكبدي الأيمن داخل مثلث كالو، ويجب ربطه بأمان قرب جدار المرارة أثناء استئصالها."
+        },
+        {
+          "term": "Caterpillar turn",
+          "definition_ar": "تفافة الشريان الكبدي الأيمن المتعرج أمام منشأ القناة الكيسية مع شريان كيسي قصير؛ مصدر خطر نزفي كبير أثناء جراحة المرارة."
+        },
+        {
+          "term": "Node of Lund",
+          "definition_ar": "العقدة اللمفاوية الكيسية عند عنق المرارة؛ تستقبل التصريف اللمفاوي للمرارة ثم تصرفه إلى العقد البطنية، و هي معلم مرشدي للشريان الكيسي."
+        },
+        {
+          "term": "Mucin",
+          "definition_ar": "مخاط تفرزه المرارة بمقدار حوالي 20 مل يومياً لحماية جدارها من فعل الأملاح الصفراوية المركزة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_c02",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Investigations of the Biliary Tract",
+      "summary_ar": "يستعرض هذا المفهوم التحقيقات العشرة للمسالك الصفراوية: صورة البطن البسيطة ودلالاتها الأربع (حصى ظللة 10-20% فقط، مرارة خزفية، صفراء جيرية، غاز في الشجرة الصفراوية)، والدراسات المهجورة تاريخياً، والموجات فوق الصوتية كفحص أول ومعياري، والتنظير الظهاري الارتجاعي مع تنظير الموجات فوق الصوتية والتصوير عبر الجلد عبر الكبد، والرنين المغناطيسي بلا مادة ظليلة، والنظائر المشعة حيث تظهر المرارة خلال 30 دقيقة وتأخرها إلى ساعة يعني التهاب أقنية حاداً أو مرارة متقلصة، والمقطعية لتقييم الكبد والبنكرياس والعقد اللمفاوية، والتصوير والتنظير أثناء الجراحة.",
+      "sections": [
+        {
+          "heading": "Plain X-ray and Historical Contrast Studies",
+          "body_text": "A plain abdominal X-ray contributes little to gallstone diagnosis but can show four classic findings: **1) radio-opaque gallstones in only 10 - 20% of patients** (pure cholesterol stones are radiolucent; only stones with enough calcium, typically pigment stones, cast a shadow); **2) porcelain gallbladder** - a calcified gallbladder wall, itself associated with an increased risk of gallbladder carcinoma; **3) limey bile** - calcium carbonate suspended in the bile (milk of calcium) layering inside the gallbladder; and **4) gas in the biliary tree (pneumobilia)** - evidence of a biliary-enteric communication such as a cholecystoduodenal fistula with gallstone ileus, or of a previous sphincterotomy. **Oral cholecystography and intravenous (IV) cholangiography**, once the mainstay of gallstone imaging, are now **out of use and of historical interest only**, having been replaced by ultrasound and MRCP because they depended on contrast absorption and gave poor, often misleading information.",
+          "key_points": [
+            "Radio-opaque stones: only 10 - 20% on plain film",
+            "Plain film may also show porcelain gallbladder, limey bile and gas in the biliary tree",
+            "Gas in the biliary tree suggests a biliary-enteric fistula (e.g. gallstone ileus)",
+            "Oral cholecystography and IV cholangiography are out of use - historical interest only"
+          ],
+          "check": {
+            "prompt": "What proportion of gallstones are radio-opaque on a plain abdominal X-ray?",
+            "options": [
+              "10 - 20%",
+              "50%",
+              "75%",
+              "90 - 100%",
+              "None; all gallstones are radiolucent"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "فقط 10-20% من حصى المرارة ظللة للأشعة لأن حصى الكوليسترول النقية شفافة؛ لذلك الصورة البسيطة لا تنفي وجود الحصى أبداً، وقد تكشف بدلاً من ذلك مرارة خزفية أو صفراء جيرية أو غازاً في الشجرة الصفراوية."
+          }
+        },
+        {
+          "heading": "Ultrasonography - the Prime and Standard Test",
+          "body_text": "**Ultrasonography is the prime test and the standard test** for the biliary tract: it is **quick, non-invasive**, uses neither radiation nor contrast, and can be repeated at the bedside in the acute patient. It demonstrates stones in the gallbladder or ducts as echogenic foci with acoustic shadowing, measures **gallbladder wall thickening** (more than 3 mm is abnormal in the fasting patient), shows **pericholecystic fluid**, gallbladder **distension**, and the diameter of the common bile duct (a duct above about 6 - 7 mm suggests obstruction, adjusting for age and after cholecystectomy), and simultaneously surveys the liver and pancreas. Its limitations are bowel gas, obesity and the poor view it gives of the distal CBD and ampulla - exactly the blind spots that MRCP and endoscopic ultrasound were designed to cover.",
+          "key_points": [
+            "Prime and standard first-line test: quick and non-invasive",
+            "Shows stones, wall thickening, pericholecystic fluid, distension and duct diameter",
+            "Limited by bowel gas and poor visualization of the distal CBD"
+          ]
+        },
+        {
+          "heading": "ERCP, Endoscopic Ultrasonography and PTC",
+          "body_text": "**ERCP (endoscopic retrograde cholangiopancreatography)** combines endoscopy and contrast radiography: the ampulla of Vater is cannulated, the ducts are outlined, and therapy is delivered in the same session - **sphincterotomy of the sphincter of Oddi, extraction of CBD stones by basket or balloon, and stent insertion** - which is why ERCP is both diagnostic and therapeutic; its price is a real risk of pancreatitis, bleeding and sedation complications, so it is reserved for patients who need its therapy or in whom MRCP is equivocal. **Endoscopic ultrasonography (EUS)** is the most sensitive test for small common duct stones when ultrasound and LFTs disagree, and it stages periampullary tumors. **PTC (percutaneous transhepatic cholangiography)** punctures a dilated intrahepatic duct through the skin under imaging guidance: it defines the level of obstruction, allows culture of bile, and permits external biliary drainage or stenting when ERCP is impossible (for example after Roux-en-Y reconstruction or with an impacted stone the endoscope cannot pass).",
+          "key_points": [
+            "ERCP = diagnostic AND therapeutic (sphincterotomy, stone extraction, stenting)",
+            "EUS: the most sensitive test for small CBD stones when ultrasound is negative",
+            "PTC: percutaneous puncture of dilated intrahepatic ducts; drainage when ERCP fails"
+          ]
+        },
+        {
+          "heading": "MRCP - Standard Duct Imaging Without Contrast",
+          "body_text": "**MRCP (magnetic resonance cholangiopancreatography) is the standard modality for non-invasive imaging of the ducts and requires no contrast**: stationary bile and pancreatic secretions are bright on heavy T2-weighted sequences, so the whole biliary tree and pancreatic duct are displayed in multiple planes as a 'cholangiogram without a needle'. MRCP is the test of choice for mapping duct anatomy before surgery, for classifying choledochal cysts (the Todani type), and for demonstrating strictures, duct stones and the level of obstruction in a jaundiced patient. Its drawbacks are cost, limited availability, claustrophobia and incompatibility with some implants - and it remains purely diagnostic: no biopsy, no drainage, no stone extraction can be performed through it.",
+          "key_points": [
+            "Standard non-invasive duct imaging, no contrast required",
+            "Excellent for choledochal cyst typing, strictures and CBD stones",
+            "Purely diagnostic: no therapeutic option"
+          ]
+        },
+        {
+          "heading": "Radioisotope Scanning (HIDA / IODIDA)",
+          "body_text": "**Radioisotope scanning uses 99mTc-labelled (labeled) HIDA or IODIDA**, injected intravenously; the tracer is taken up by hepatocytes and **excreted in bile**, so sequential gamma-camera images show hepatic uptake followed by duct, gallbladder and bowel activity. **The gall bladder is visualised (visualized) at 30 minutes**; **if visualization is delayed to 1 hour, this suggests acute cholangitis or a contracted gall bladder (chronic disease)**. Because the radiolabel follows the physiology of bile flow rather than anatomy, this is a functional test: it answers questions ultrasound cannot, such as whether the cystic duct is patent (non-visualization of the gallbladder in acute cholecystitis), whether bile is entering the intestine, and it can quantify gallbladder ejection fraction after a fatty meal or CCK stimulation in suspected chronic gallbladder dysmotility.",
+          "key_points": [
+            "99mTc-labelled HIDA or IODIDA, given IV, excreted in bile",
+            "Gallbladder normally visualized at 30 minutes",
+            "Delay to 1 hour suggests acute cholangitis or a contracted gallbladder (chronic)"
+          ],
+          "check": {
+            "prompt": "A 99mTc-HIDA scan shows normal hepatic uptake and duct excretion, but the gallbladder is not seen until more than 1 hour after injection. What does this delay suggest?",
+            "options": [
+              "Acute cholangitis or a contracted gallbladder (chronic disease)",
+              "A normal variant that needs no further test",
+              "Porcelain gallbladder",
+              "Duodenal ulcer with fistula",
+              "Acute appendicitis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "بحسب المحاضرة: تأخر ظهور المرارة في مسح النظائر المشعة إلى ساعة واحدة يرجح التهاب الأقنية الصفراوية الحاد أو مرارة متقلصة بسبب مرض مزمن؛ أما انعدام ظهور المرارة كلياً فيدل على انسداد القناة الكيسية في التهاب المرارة الحاد."
+          }
+        },
+        {
+          "heading": "CT Scan, Per-operative Cholangiography and Choledochoscopy",
+          "body_text": "**CT scan** is not a first-line test for stones but is essential **to detect liver and pancreatic lesions**, to assess **cancer extent and staging**, and to reveal **lymph node enlargement** - the questions that matter once a mass or malignancy is suspected rather than simple stone disease. **Per-operative (on-table) cholangiography** injects contrast into the cystic duct (or via a catheter into the CBD) during cholecystography: it displays the duct anatomy live on fluoroscopy, confirms that the ducts are intact, and excludes or confirms CBD stones before the operation is closed. **Per-operative choledochoscopy** takes duct inspection one step further: a **flexible fibreoptic (fiberoptic) endoscope** is passed into the bile ducts **to localize and extract stones** under direct vision, inspect the mucosa, and verify clearance after extraction - the historical 'gold standard' of operative duct clearance.",
+          "key_points": [
+            "CT: liver and pancreatic lesions, cancer extent and staging, lymph node enlargement",
+            "Per-operative cholangiography: on-table display of duct anatomy and stone check",
+            "Per-operative choledochoscopy: flexible fibreoptic scope to localize and extract duct stones"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Porcelain gallbladder",
+          "definition_ar": "مرارة خزفية؛ تكلّس جدار المرارة الذي يظهر كظل متكلس في الصورة البسيطة، ويرتبط بخطر متزايد لسرطان المرارة."
+        },
+        {
+          "term": "Limey bile",
+          "definition_ar": "صفراء جيرية؛ ترسب كربونات الكالسيوم داخل الصفراء في المرارة ويظهر في صورة البطن البسيطة."
+        },
+        {
+          "term": "Pneumobilia",
+          "definition_ar": "غاز في الشجرة الصفراوية يُرى في الصورة البسيطة، ويوحي بناسور بين المرارة والأمعاء كما في علوص الحصى الصفراوية."
+        },
+        {
+          "term": "HIDA scan",
+          "definition_ar": "تصوير بالنظائر المشعة بمركبات هيدا أو آيوديدا الموسومة بالتكنيشيوم 99م؛ تُعطى وريدياً وتُفرز في الصفراء فتظهر المرارة خلال 30 دقيقة."
+        },
+        {
+          "term": "ERCP",
+          "definition_ar": "تنظير القنوات الصفراوية والبنكرياسية بالمنظار بالطريق الارتجاعي عبر أمبولة فاتر؛ فحص تشخيصي وعلاجي معاً (قطع العاصرة واستخراج الحصى والدعامات)."
+        },
+        {
+          "term": "EUS",
+          "definition_ar": "تنظير بالموجات فوق الصوتية عبر المنظار؛ أدق فحص للحصى الصغيرة في القناة الصفراوية المشتركة عند الشك السريري."
+        },
+        {
+          "term": "PTC",
+          "definition_ar": "تصوير القنوات الصفراوية عبر الجلد والكبد بإبرة موجهة بالأشعة، مع إمكانية تصريف الصفراء خارجياً عند فشل التنظير."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير القنوات الصفراوية والبنكرياس بالرنين المغناطيسي دون مادة ظليلة؛ الفحص المعياري لرسم تشريح القنوات وتحديد نوع الكيسة القناوية."
+        },
+        {
+          "term": "Per-operative choledochoscopy",
+          "definition_ar": "تنظير القناة الصفراوية المشتركة بمنظار ليفي مرن أثناء الجراحة لتحديد موضع الحصى واستخراجها تحت الرؤية المباشرة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_c03",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Congenital Anomalies of the Gallbladder and Extrahepatic Biliary Atresia",
+      "summary_ar": "تشوهات المرارة الخلقية: الغياب، والقبعة الفريجية (2-6%)، والمرارة داخل الكبد، والعائمة المعرضة للالتواء، والمزدوجة، وتشوهات القناة الكيسية (قناة إضافية، منشأ منخفض، قصيرة أو غائبة). ثم انضمور الأقنية الصفراوية خارج الكبد: يصيب 1 من كل 14000 ولادة، بتسلسل التهاب فتخريب فتليف فانسداد، وأنواعه الثلاثة بحسب مستوى الانضمور، ومظاهره السبعة من يرقان متصاعد منذ الولادة وبراز شاحن وبول داكن وإسهال دهني وكساح صفراوي وتنبع الأصابع وارتفاع ضغط الباب وتشوهات مرافقة في 20%، وتشخيصه التفريقي، وعلاجه الجراحة المبكرة بمفاغرة روا-إن-واي أو الزرع الكبدي، مع التهاب الأقنية بعد الجراحة في 40% وارتفاع ضغط الباب في 50%.",
+      "sections": [
+        {
+          "heading": "Congenital Anomalies of the Gallbladder",
+          "body_text": "The lecture lists five congenital abnormalities of the gallbladder: **1) absence of the gallbladder** (agenesis) - a rare finding; a gallbladder that 'cannot be found' at surgery or on imaging must not be assumed to have been removed until agenesis is proven. **2) Phrygian cap (2 - 6% of people)** - the fundus folds back on the body because of a **septum in the gall bladder that may be complete or incomplete**; the name comes from the folded caps worn by the people of **Phrygia (Asia Minor)**, and the anomaly is an incidental ultrasound finding of no clinical consequence in the great majority. **3) Intrahepatic gallbladder** - the organ is buried within the liver parenchyma, which makes cholecystectomy more difficult and an empyema harder to drain. **4) Floating gallbladder** - the gallbladder hangs free on a long mesentery and may undergo **torsion (volvulus)**, presenting dramatically as an acute abdomen with a tender right hypochondrial mass and requiring emergency detorsion or cholecystectomy. **5) Double gallbladder** - two gallbladders, sharing one cystic duct or draining through separate ducts; a duplicated system is prone to stasis and stone formation and is usually discovered at surgery or on imaging done for symptoms.",
+          "key_points": [
+            "Phrygian cap in 2 - 6%: a septum of the fundus, complete or incomplete, named after the caps of Phrygia (Asia Minor)",
+            "Floating gallbladder can twist on its mesentery - torsion presents as an acute abdomen",
+            "Intrahepatic gallbladder complicates cholecystectomy; double gallbladder predisposes to stones",
+            "Absent gallbladder (agenesis) is rare and must be proven before assuming prior excision"
+          ],
+          "check": {
+            "prompt": "Which congenital gallbladder anomaly classically predisposes to torsion (volvulus) of the organ?",
+            "options": [
+              "Floating gallbladder hanging on a mesentery",
+              "Phrygian cap",
+              "Double gallbladder",
+              "Intrahepatic gallbladder",
+              "Absent gallbladder"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المرارة العائمة معلقة بمساري في بطنها فيمكن أن تلتف حوله مسببة التواء المرارة وبطناً حاداً؛ أما القبعة الفريجية فطية في القاع غالباً بلا أعراض، وبقية التشوهات لا تسبب الالتواء."
+          }
+        },
+        {
+          "heading": "Cystic Duct Anomalies",
+          "body_text": "The cystic duct is notoriously variable, and the lecture groups its anomalies (including intrahepatic variants of its course) into three patterns: **an accessory duct** - an accessory hepatic duct draining a segment of liver directly into the cystic duct or the gallbladder neck, the classic cause of a post-cholecystectomy bile leak when it is transected unrecognized; **low insertion** - the cystic duct descends alongside the common bile duct and joins it low, near the ampulla, so a long 'cystic duct' may be mistaken for the CBD and the junction injured; and a **short or absent cystic duct**, in which the gallbladder neck opens almost directly into the common hepatic duct, so the surgeon who clips 'the cystic duct' may in fact clip and divide the hepatic duct itself. All these variants teach the same operative doctrine: no duct is divided until the critical view of safety has been achieved and the structures entering the gallbladder have been isolated beyond doubt.",
+          "key_points": [
+            "Accessory duct: classic cause of post-cholecystectomy bile leak",
+            "Low insertion: cystic duct runs down to join the distal CBD near the ampulla",
+            "Short or absent cystic duct: risk of clipping and dividing the hepatic duct",
+            "Never divide a duct before the critical view of safety is achieved"
+          ]
+        },
+        {
+          "heading": "Extrahepatic Biliary Atresia: Frequency, Pathology and Outcome",
+          "body_text": "**Extrahepatic biliary atresia affects about 1 in 14000 live births.** It is an obliterative process of the **extrahepatic bile ducts over a variable length**: a progressive **inflammation, then destruction, then fibrosis, then obliteration** of the duct wall replaces the ducts with solid fibrous cords, so bile can no longer reach the intestine and instead dams back into the liver. The timing is cruel - the process advances in the weeks around birth - and the outcome of an untreated child is the outcome of progressive cholestasis: **biliary cirrhosis, portal hypertension, deepening jaundice and finally liver failure**. This natural history is the reason the differential diagnosis of prolonged neonatal jaundice is a surgical emergency: every week of delay in operating hardens the liver and halves the chance of native bile drainage.",
+          "key_points": [
+            "1/14000 live births",
+            "Occlusion of a variable length of the extrahepatic ducts",
+            "Sequence: inflammation, destruction, fibrosis, obliteration",
+            "Untreated outcome: biliary cirrhosis, portal hypertension, jaundice, liver failure"
+          ]
+        },
+        {
+          "heading": "Types of Extrahepatic Biliary Atresia (I, II, III)",
+          "body_text": "Atresia is classified by the level of occlusion: **Type I - occlusion of the CBD alone. Type II - occlusion of the CBD plus the common hepatic duct. Type III - occlusion of the CBD plus the common hepatic duct plus the right and left hepatic ducts**, i.e. the entire extrahepatic tree is obliterated up to the porta hepatis. (In standard surgical series Type III is the most common form, roughly 85% of cases, and being highest it demands dissection of biliary remnants at the porta hepatis rather than a simple duct-to-bowel anastomosis, whereas Type I, the lowest, is the variant most amenable to a direct Roux-en-Y duct anastomosis.) The higher the level, the more the operation depends on finding any residual patent biliary channels at the liver hilum - the principle behind the Kasai portoenterostomy described under treatment.",
+          "key_points": [
+            "Type I: occlusion of the CBD",
+            "Type II: CBD + common hepatic duct",
+            "Type III: CBD + common hepatic duct + right and left hepatic ducts (whole extrahepatic tree)",
+            "Standard series: Type III is the most common form"
+          ],
+          "check": {
+            "prompt": "Which type of extrahepatic biliary atresia involves occlusion of the CBD, common hepatic duct AND both right and left hepatic ducts?",
+            "options": [
+              "Type III",
+              "Type I",
+              "Type II",
+              "Todani Type IVb",
+              "Choledochocele"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النوع الثالث يعني انضمور القناة الصفراوية المشتركة والقناة الكبدية المشتركة والقناتين الكبديتين اليمنى واليسرى معاً؛ النوع الأول يقتصر على القناة الصفراوية المشتركة، والثاني يضيف إليها القناة الكبدية المشتركة، أما توداني والفقاعة القناوية فتصنيف آخر للكيسة القناوية لا للانضمور."
+          }
+        },
+        {
+          "heading": "Clinical Features of Extrahepatic Biliary Atresia",
+          "body_text": "The clinical picture is that of a baby trapped behind an obstructed biliary tree: **1) jaundice at birth that is progressive** - conjugated hyperbilirubinaemia that deepens week by week (any jaundice persisting beyond two weeks, or urine that stains the nappy yellow, demands investigation); **2) pale meconium and pale stools** - acholic, because no bile pigment reaches the gut; **3) dark urine** - the conjugated bilirubin is excreted by the kidney instead; **4) steatorrhoea leading to osteomalacia (biliary rickets)** - without bile, fat and fat-soluble vitamin D are not absorbed, and the growing skeleton demineralises into rickets; **5) clubbing of the fingers** - a sign of chronic cholestasis in children; **6) portal hypertension** - splenomegaly, ascites and eventually variceal bleeding as cirrhosis advances; and **7) another anomaly coexists in 20% of cases** (associated anomalies, classically laterality and polysplenia syndromes, and cardiac defects).",
+          "key_points": [
+            "Progressive jaundice from birth, pale meconium and dark urine",
+            "Steatorrhoea causes osteomalacia (biliary rickets)",
+            "Clubbing of the fingers and portal hypertension",
+            "Associated anomalies in 20% of cases"
+          ]
+        },
+        {
+          "heading": "Differential Diagnosis, Treatment and Post-operative Course",
+          "body_text": "Four conditions make up the **differential diagnosis**: **1) neonatal jaundice** (the common physiological and haemolytic causes, which are unconjugated and self-limiting), **2) choledochal cyst** (dilatation rather than obliteration - see the next concept), **3) inspissated bile syndrome** (thick, dehydrated bile or sludge plugging otherwise normal ducts, classically after severe neonatal haemolysis), and **4) neonatal hepatitis** (intrahepatic inflammation with conjugated jaundice but patent ducts). **Treatment is early surgery: a Roux-en-Y biliary digestive anastomosis** - in practice the Kasai hepaticoportojejunostomy, in which a Roux loop is anastomosed to the cut liver surface at the porta hepatis where minute biliary remnants may still drain - **or liver transplantation** when the Kasai fails, when diagnosis has been too late, or when cirrhosis is already established. The post-operative course is guarded: **cholangitis develops in 40% of operated children** (ascending infection of the Roux limb presenting as fever and rising bilirubin) and **portal hypertension persists or develops in 50%**, so these children need lifelong hepatology follow-up, and many still come to transplantation.",
+          "key_points": [
+            "DDx: neonatal jaundice, choledochal cyst, inspissated bile syndrome, neonatal hepatitis",
+            "Rx: early Roux-en-Y biliary digestive anastomosis (Kasai portoenterostomy) or liver transplantation",
+            "Post-operative: cholangitis in 40%, portal hypertension in 50%"
+          ],
+          "check": {
+            "prompt": "After Roux-en-Y biliary digestive anastomosis for extrahepatic biliary atresia, what are the two classic post-operative complication rates quoted in the lecture?",
+            "options": [
+              "Cholangitis in 40% and portal hypertension in 50%",
+              "Cholangitis in 5% and portal hypertension in 10%",
+              "Cholangitis in 90% and portal hypertension in 5%",
+              "Pancreatitis in 40% and cholangitis in 50%",
+              "Wound infection in 40% and diabetes in 50%"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تذكر المحاضرة أن التهاب الأقنية الصفراوية يحدث بعد الجراحة لدى 40% من الأطفال بينما يصاب 50% بارتفاع ضغط الباب؛ لذلك المتابعة بعد مفاغرة روا-إن-واي متأنقة وطويلة الأمد، وبقية النسب مختلقة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Phrygian cap",
+          "definition_ar": "طية خلقية في قاع المرارة ناتجة عن حاجز كامل أو غير كامل، تحدث لدى 2-6% من الناس، وسُميت باسم قبعات أهل فريجيا في آسيا الصغرى."
+        },
+        {
+          "term": "Floating gallbladder",
+          "definition_ar": "مرارة عائمة معلقة بمساري طويل في بطنها وتتعرض لخطر الالتواء الذي يظهر كبطن حاد يستلزم جراحة إسعافية."
+        },
+        {
+          "term": "Extrahepatic biliary atresia",
+          "definition_ar": "انضمور الأقنية الصفراوية خارج الكبد بمعدل 1 من كل 14000 ولادة؛ التهاب فتخريب فتليف فانسداد القنوات، ينتهي بتشمع صفراوي وارتفاع ضغط الباب وقصور كبدي."
+        },
+        {
+          "term": "Inspissated bile syndrome",
+          "definition_ar": "متلازمة الصفراء المكثفة؛ انسداد القنوات برواسب صفراء سميكة عند حديثي الولادة، وتدخل في التشخيص التفريقي لانضمور الأقنية الصفراوية."
+        },
+        {
+          "term": "Biliary rickets",
+          "definition_ar": "الكساح الصفراوي؛ تلين العظام بسبب سوء امتصاص فيتامين د الذواب في الدهن نتيجة غياب الصفراء عن الأمعاء في اليرقان الانسدادي."
+        },
+        {
+          "term": "Kasai portoenterostomy",
+          "definition_ar": "عملية كاساي؛ مفاغرة روا-إن-واي بين سطح الكبد عند الباب والصائم لإعادة جرحان الصفراء في انضمور الأقنية، ويجب إجراؤها مبكراً."
+        },
+        {
+          "term": "Roux-en-Y biliary digestive anastomosis",
+          "definition_ar": "مفاغرة صفراوية هضمية بحلقة صائمية على شكل حرف واي؛ العلاج القياسي لانضمور الأقنية الصفراوية وللكيسة القناوية بعد استئصالها."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_c04",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Choledochal Cyst and the Todani Classification",
+      "summary_ar": "الكيسة القناوية تمدد خلقي كيسي للمسالك الصفراوية وخاصة القناة الصفراوية المشتركة؛ تتظاهر بالثالوث: يرقان، وكتلة كيسية في المراق الأيمن، والتهاب أقنية صفراوية مع بنكرياس حاد. التشخيص بالموجات فوق الصوتية ثم الرنين المغناطيسي لتحديد النوع وفق تصنيف توداني: الأول مغزلي والأشيع، والثاني رتق حقيقي نادر، والثالث فقاعة قناوية داخل الاثني عشر، والرابع أ متعدد داخل وخارج الكبد، والرابع ب متعدد خارج الكبد فقط. الكيسة آفة ما قبل سرطانية تتحول إلى سرطان الأقنية الصفراوية، وعلاجها الاستئصال الجراحي الكامل مع مفاغرة روا-إن-واي.",
+      "sections": [
+        {
+          "heading": "Definition and Clinical Triad",
+          "body_text": "A **choledochal cyst is a congenital cystic dilatation of the biliary tract, particularly the common bile duct**. It presents classically in children (girls more often than boys) with a triad: **1) jaundice**, typically intermittent or fluctuating and deepening during episodes of cholangitis; **2) a right hypochondrial cystic mass** - a palpable, tense, cystic swelling beneath the right costal margin; and **3) cholangitis and pancreatitis** - recurrent attacks of fever with rigors and jaundice from infected stagnant bile, and bouts of acute pancreatitis when the dilated terminal duct or debris obstructs the pancreatic outflow. The complete triad is seen more often in children; adults more often present with complications of long-standing disease (stones, cholangitis, or even cholangiocarcinoma), which is why a choledochal cyst found in an adult is a far more sinister finding than the same cyst in a child.",
+          "key_points": [
+            "Congenital cystic dilatation of the biliary tract, particularly the CBD",
+            "Triad: jaundice + right hypochondrial cystic mass + cholangitis and pancreatitis",
+            "The full triad is more typical of children; adults present with complications"
+          ]
+        },
+        {
+          "heading": "Diagnosis and Premalignant Potential",
+          "body_text": "**Ultrasound is the diagnostic test**: it shows the cystic dilatation of the bile duct as a fluid-filled structure separate from the gallbladder, often with sludge or stones inside. **MRCP** is then performed to map the exact anatomy, define the extent of dilatation, assign the Todani type and plan the resection - it is the standard, contrast-free way to see the whole duct system. A choledochal cyst is **premalignant: it carries a real risk of cholangiocarcinoma**, a risk that rises with the patient's age and increases sharply after internal drainage operations that leave the diseased epithelium in place. This malignant potential, more than the symptoms themselves, dictates the treatment: excision rather than drainage.",
+          "key_points": [
+            "Ultrasound = the diagnostic test; MRCP defines the anatomy and the Todani type",
+            "Premalignant: risk of cholangiocarcinoma, rising with age and after internal drainage",
+            "The malignancy risk is the reason treatment is excision, not drainage"
+          ],
+          "check": {
+            "prompt": "A 6-year-old child has fluctuating jaundice, recurrent cholangitis and a right hypochondrial cystic mass. According to the lecture, which is the diagnostic test for this condition?",
+            "options": [
+              "Abdominal ultrasound",
+              "Plain abdominal X-ray",
+              "Oral cholecystography",
+              "Barium meal",
+              "ECG"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الموجات فوق الصوتية هي الفحص التشخيصي للكيسة القناوية لأنها تُظهر التمدد الكيسي للقناة الصفراوية بوضوح، ثم يُجرى الرنين المغناطيسي للقنوات لتحديد النوع والتخطيط للجراحة؛ والصورة البسيطة والتنظير الفموي والباريوم لا دور لها هنا."
+          }
+        },
+        {
+          "heading": "Treatment",
+          "body_text": "**Treatment is surgical excision of the cyst with a Roux-en-Y biliary digestive anastomosis.** The dilated, diseased duct is resected completely - usually together with the gallbladder, since the cystohepatic junction is abnormal - and bile is redirected through a Roux-en-Y jejunal limb anastomosed to the healthy proximal duct or the hepatic duct confluence. Historically, simple internal drainage (cystoduodenostomy or cystojejunostomy) was performed, but it is now **abandoned**: it leaves the premalignant cyst wall behind, and the retained mucosa complicated by reflux and stasis led to recurrent cholangitis, stone formation and a high late incidence of cholangiocarcinoma. Complete excision removes the diseased epithelium and dramatically lowers - though never erases - the cancer risk, which is why even a perfectly excised patient keeps lifelong hepatobiliary surveillance.",
+          "key_points": [
+            "Complete surgical excision + Roux-en-Y biliary digestive anastomosis",
+            "Simple internal drainage is abandoned: it leaves premalignant mucosa and causes cholangitis and stones",
+            "Even after excision, lifelong surveillance for cholangiocarcinoma continues"
+          ]
+        },
+        {
+          "heading": "Todani Classification of Choledochal Cysts (the Lecture Diagram)",
+          "body_text": "The lecture's diagrammatic classification of choledochal cysts, illustrating five distinct types with anatomical representations of the biliary tree and gallbladder, shows: **Type I - fusiform (the most common)** - a diffuse, fusiform (spindle-shaped) dilation of the extrahepatic common bile duct, with a normal gallbladder and normal intrahepatic ducts. **Type II - true diverticulum (rare)** - the diagram depicts a saccular outpouching protruding from the side of the extrahepatic bile duct while the main ductal lumen keeps a relatively normal caliber. **Type III - choledochocele (confined to the duodenum)** - a cystic dilation localized to the intramural portion of the distal common bile duct within the duodenal wall, so the duodenum is explicitly indicated at the site of the cyst. **Type IVa - multiple (intra/extrahepatic)** - multiple cystic dilations involving both the intrahepatic bile ducts and the extrahepatic biliary tree. **Type IVb - multiple (extrahepatic only)** - multiple, separate cystic dilations confined strictly to the extrahepatic biliary system, with the intrahepatic ducts unaffected. (The complete Todani system in standard references adds **Type V - multiple intrahepatic cysts, Caroli disease** - which was not included in this lecture's five-type diagram.)",
+          "key_points": [
+            "Type I fusiform: diffuse dilation of the extrahepatic CBD - the most common type",
+            "Type II true diverticulum: rare saccular side-pouch with a normal duct lumen",
+            "Type III choledochocele: cystic dilation of the intramural distal CBD confined to the duodenum",
+            "Type IVa: multiple intra- and extrahepatic dilations; Type IVb: multiple extrahepatic only",
+            "Standard references add Type V (Caroli disease, intrahepatic only), not shown in the lecture diagram"
+          ],
+          "check": {
+            "prompt": "In the Todani classification, which type is a choledochocele confined to the duodenum?",
+            "options": [
+              "Type III",
+              "Type I",
+              "Type II",
+              "Type IVa",
+              "Type IVb"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النوع الثالث هو الفقاعة القناوية: تمدد كيسي للجزء داخل جدار الاثني عشر من نهاية القناة الصفراوية المشتركة، أي محصور داخل الاثني عشر؛ النوع الأول مغزلي وهو الأشيع، والثاني رتق حقيقي جانبي نادر، والرابع تمددات متعددة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Choledochal cyst",
+          "definition_ar": "تمدد خلقي كيسي في المسالك الصفراوية وخاصة القناة الصفراوية المشتركة؛ يرقان وكتلة كيسية في المراق الأيمن مع التهاب أقنية وبنكرياس."
+        },
+        {
+          "term": "Todani classification",
+          "definition_ar": "تصنيف توداني للكيسة القناوية: الأول مغزلي والأشيع، الثاني رتق حقيقي نادر، الثالث فقاعة قناوية داخل الاثني عشر، الرابع أ متعدد داخل وخارج الكبد، الرابع ب متعدد خارج الكبد فقط."
+        },
+        {
+          "term": "Choledochocele",
+          "definition_ar": "تمدد كيسي للجزء داخل الجدار من نهاية القناة الصفراوية المشتركة داخل الاثني عشر؛ النوع الثالث في تصنيف توداني."
+        },
+        {
+          "term": "True diverticulum (Type II)",
+          "definition_ar": "نتوء كيسي جانبي من القناة الصفراوية خارج الكبد مع بقاء تجويف القناة بحجم طبيعي تقريباً؛ نوع نادر من الكيسة القناوية."
+        },
+        {
+          "term": "Cholangiocarcinoma",
+          "definition_ar": "سرطان الأقنية الصفراوية؛ الخطر الخبيث الذي يجعل الكيسة القناوية آفة ما قبل سرطانية تستوجب الاستئصال الكامل."
+        },
+        {
+          "term": "Caroli disease",
+          "definition_ar": "تمددات كيسية متعددة داخل الكبد تعرف بالنوع الخامس في تصنيف توداني الكامل؛ لم تُدرج في مخطط المحاضرة."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_c05",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Gallstones: Epidemiology, Types and Aetiology",
+      "summary_ar": "وبائيات حصى المرارة: أنثى، سمينة، خصبة، في الأربعين. الحصى المختلطة والكوليسترولية تمثل 80% من الحصى في أمريكا وأوروبا بينما الصباغية تمثل 80% في آسيا. الجدول الكامل يقارن أربعة أنواع من حيث الموقع والمكونات والملامح العيانية والمسببات والتوزيع الجغرافي: الكوليسترولية كبيرة مفردة بيضاء، والمختلطة الأشيع صغيرة متعددة الأوجه خضراء أو صفراء، والسوداء من الانحلال الدموي المزمن (منجلية، تكور كروي وراثي، تشمع)، والبنية من ركود الصفراء وعدواها مع الدعامات والطفيليات. ثم قائمة المسببات الخمس ومخطط الشكل 67.26 بعوامله الأربعة.",
+      "sections": [
+        {
+          "heading": "Epidemiology: Female, Fatty, Fertile, Forty",
+          "body_text": "The classical risk profile for gallstone disease is remembered as the **four Fs: Female, Fatty, Fertile, Forty**. Female - oestrogen and progesterone make bile more lithogenic and the gallbladder more sluggish; Fatty - obesity increases cholesterol secretion into bile; Fertile - each pregnancy adds progesterone-induced stasis on a supersaturated bile; and Forty - the age around which the cumulative burden declares itself. By geography the stone populations differ sharply: **cholesterol and mixed stones account for about 80% of stones in the US and Europe**, while **pigmented stones account for about 80% of stones in Asia**, a distribution driven by diet and obesity on one side and by haemolysis, cirrhosis and parasitic biliary infestation on the other.",
+          "key_points": [
+            "Female, Fatty, Fertile, Forty - the classical risk profile",
+            "Cholesterol + mixed stones: 80% of stones in the US and Europe",
+            "Pigmented stones: 80% of stones in Asia"
+          ]
+        },
+        {
+          "heading": "Cholesterol and Mixed Stones (Comparison Table, Part 1)",
+          "body_text": "**Cholesterol stone**: Location: **gall bladder**. Components: **hardened cholesterol - almost pure cholesterol**. Gross features: **large, solitary, white**. Common possible aetiology: **the same as for mixed stones**. World distribution: **in the US and Europe, 80% of stones are cholesterol or mixed, and around 10% of these are pure cholesterol stones**. - **Mixed stone**: Location: **gall bladder**. Components: **mostly cholesterol (51 - 99% of the stone contents) plus calcium salts, bile acids, bilirubin pigments and phospholipid**. Gross features: **small, hard, multiple, faceted, green or yellow** - the facets are polished where multiple stones have ground against each other in the gallbladder. Common possible aetiology: **the most common stone; it forms in cases in which cholesterol increases or bile acids decrease in bile - obesity, high caloric diet, contraceptive pills, ileal resection (which steals bile salts from the enterohepatic circulation) and abnormal emptying of the gall bladder (stasis)**. World distribution: **in the US and Europe, 80% of stones are cholesterol or mixed, and around 70% of these are mixed stones**.",
+          "key_points": [
+            "Cholesterol stone: gallbladder; almost pure hardened cholesterol; large, solitary, white",
+            "Cholesterol stones are about 10% of US/Europe stones",
+            "Mixed stone: 51 - 99% cholesterol + calcium salts, bile acids, bilirubin pigments and phospholipid",
+            "Mixed stones: small, hard, multiple, faceted, green or yellow - the most common type (~70% of US/Europe stones)",
+            "Aetiology of both: cholesterol up or bile acids down - obesity, high caloric diet, contraceptive pills, ileal resection, abnormal gallbladder emptying"
+          ]
+        },
+        {
+          "heading": "Black and Brown Pigment Stones (Comparison Table, Part 2)",
+          "body_text": "**Black pigment stone**: Location: **gall bladder**. Components: **mostly bilirubin pigments plus calcium phosphate and calcium carbonate, with up to 30% cholesterol**. Gross features: **small, black, irregular and multiple**. Common possible aetiology: **highly associated with sickle cell anaemia (anemia) (SCA), hereditary spherocytosis and cirrhosis** - chronic hemolysis overloads the bile with bilirubin, which polymerises and precipitates with calcium salts in the gallbladder. World distribution: **in the US and Europe both types of pigment stone together represent around 20% of stones, mostly in immigrant people from Asia and Africa; in Asia, 80% of stones are pigment stones, black more than brown**. - **Brown pigment stone**: Location: **bile duct** - the only stone type that forms primarily inside the ducts rather than the gallbladder. Components: **mainly calcium bilirubinate plus calcium palmitate and calcium stearate, with up to 30% cholesterol**. Gross features: **large, brown and single**. Common possible aetiology: **associated with bile stasis and infected bile due to a foreign body in the bile duct, such as a stent, or parasitic infestations such as Clonorchis sinensis or Ascaris lumbricoides** - bacteria and parasites release beta-glucuronidase, which deconjugates bilirubin so that it combines with calcium and fatty-acid soaps in the stagnant duct. World distribution: **the same pattern - in the US and Europe both pigment types represent around 20% of stones (mostly immigrants from Asia and Africa), and they are common in Asia, where 80% of stones are pigment stones (black more than brown)**.",
+          "key_points": [
+            "Black pigment: gallbladder; bilirubin pigments + calcium phosphate + calcium carbonate + up to 30% cholesterol",
+            "Black pigment gross: small, black, irregular and multiple",
+            "Black pigment aetiology: SCA, hereditary spherocytosis, cirrhosis (chronic hemolysis)",
+            "Brown pigment: bile duct; calcium bilirubinate + calcium palmitate + calcium stearate + up to 30% cholesterol; large, brown, single",
+            "Brown pigment aetiology: bile stasis + infected bile + foreign body/stent + Clonorchis sinensis or Ascaris lumbricoides",
+            "Pigment stones: about 20% of US/Europe stones (mostly Asian and African immigrants); 80% of Asian stones (black more than brown)"
+          ],
+          "check": {
+            "prompt": "Which stone is typically large, brown and single, forms inside the bile ducts, and is associated with bile stasis, infected bile, stents and parasites such as Clonorchis sinensis?",
+            "options": [
+              "Brown pigment stone",
+              "Black pigment stone",
+              "Pure cholesterol stone",
+              "Mixed stone",
+              "Porcelain stone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحصاة البنية تتشكل في القنوات الصفراوية من ركود الصفراء وعدواها بسبب جسم غريب كالدعامة أو الطفيليات مثل كلونوركيس سينينسيس وأسكارس لومبريكويدس؛ وهي كبيرة بنية ومفردة. أما السوداء فصغيرة سوداء متعددة داخل المرارة وترتبط بالانحلال الدموي المزمن."
+          }
+        },
+        {
+          "heading": "Aetiology of Gallstones: the Lecture List",
+          "body_text": "The lecture lists five aetiological groups: **1) metabolic** - supersaturation of bile with cholesterol relative to its bile-salt and phospholipid carriers (the chemistry behind cholesterol and mixed stones); **2) stasis** - biliary stasis from impaired gallbladder emptying lets crystals nucleate and grow; **3) pregnancy** - progesterone relaxes and enlarges the gallbladder while oestrogen enriches the bile with cholesterol, which is why multiparity heads the risk list; **4) infection - including H. pylori** - bacterial and helicobacter products act as cholesterol-nucleating factors and damage the mucosa; and **5) others - sickle cell anaemia (anemia) and hereditary spherocytosis** - the chronic hemolytic states that generate bilirubin pigment stones (with cirrhosis completing the classic black-stone associations). The integrated pathogenesis behind this list is drawn in Figure 67.26, described in the next section.",
+          "key_points": [
+            "Metabolic, stasis, pregnancy, infection (including H. pylori), and others (SCA, hereditary spherocytosis)",
+            "Pigment stone causes: chronic hemolysis; cholesterol stone causes: supersaturated bile + stasis",
+            "See Figure 67.26 for the integrated pathogenesis"
+          ]
+        },
+        {
+          "heading": "Figure 67.26 - Factors Associated with Gallstone Formation (the Aetiology Diagram)",
+          "body_text": "The aetiology diagram (Figure 67.26; its figure caption reads 'Figure 67.26 Factors associated with gallstone formation') illustrates the anatomical relationship of the gallbladder (green) and the duodenum/intestine (pink), with red arrows pointing from four boxes of factors contributing to gallstone formation toward the gallbladder and biliary system: **1) Supersaturated bile**: age, sex, genetics, obesity, diet. **2) Impaired gall bladder function**: emptying, absorption, excretion. **3) Cholesterol nucleating factors**: mucus, glycoprotein, infection (the arrow points upward from this box toward the gallbladder). **4) Absorption/enterohepatic circulation of bile acids**: deoxycholate, bowel transit time, faecal (fecal) enteric flora, ileal resection, cholestyramine. Read the four categories as the mechanism behind the aetiology list: lithogenic (supersaturated) bile plus a gallbladder that fails to empty correctly, plus nucleating factors (mucus, glycoprotein, infection) that crystallise the cholesterol, plus loss of bile acids through a disturbed enterohepatic circulation (ileal resection removes the recycling terminal ileum, and cholestyramine binds bile salts in the gut) - all converge on stone formation inside the gallbladder.",
+          "key_points": [
+            "Box 1 supersaturated bile: age, sex, genetics, obesity, diet",
+            "Box 2 impaired gallbladder function: emptying, absorption, excretion",
+            "Box 3 cholesterol nucleating factors: mucus, glycoprotein, infection",
+            "Box 4 enterohepatic circulation of bile acids: deoxycholate, bowel transit time, faecal enteric flora, ileal resection, cholestyramine"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cholesterol stone",
+          "definition_ar": "حصاة كوليسترولية؛ كبيرة مفردة بيضاء داخل المرارة، مكوّنها كوليسترول متصلب شبه نقي، وتمثل نحو 10% من حصى أمريكا وأوروبا."
+        },
+        {
+          "term": "Mixed stone",
+          "definition_ar": "حصاة مختلطة؛ الأشيع، صغيرة قاسية متعددة الأوجه خضراء أو صفراء، تتكون من كوليسترول بنسبة 51-99% مع أملاح الكالسيوم والأحماض الصفراوية وأصباغ البيليروبين والفوسفولبيد."
+        },
+        {
+          "term": "Black pigment stone",
+          "definition_ar": "حصاة صباغية سوداء؛ صغيرة سوداء غير منتظمة ومتعددة في المرارة، من أصباغ البيليروبين مع فوسفات وكربونات الكالسيوم وما يصل إلى 30% كوليسترول، وترتبط بالانحلال الدموي المزمن كالمنجلية والتكور الكروي الوراثي وتشمع الكبد."
+        },
+        {
+          "term": "Brown pigment stone",
+          "definition_ar": "حصاة صباغية بنية؛ كبيرة بنية ومفردة تتشكل في القنوات الصفراوية من بيليروبينات الكالسيوم مع بالميتات وستيارات الكالسيوم، وترتبط بركود الصفراء وعدواها مع الأجسام الغريبة والطفيليات."
+        },
+        {
+          "term": "Clonorchis sinensis",
+          "definition_ar": "المثقوبة الكبدية الصينية؛ طفيلي يستوطن الأقنية الصفراوية ويرتبط بتكوين الحصى البنية وسرطان الأقنية الصفراوية."
+        },
+        {
+          "term": "Ascaris lumbricoides",
+          "definition_ar": "الدودة الأسطوانية الكبيرة؛ قد تصعد إلى الأقنية الصفراوية مسببة ركود الصفراء وعدواها فتساهم في تكوين الحصى البنية."
+        },
+        {
+          "term": "Supersaturated bile",
+          "definition_ar": "صفراء مفرطة التشبع بالكوليسترول؛ الخطوة الأولى في تكوين الحصى، وتتأثر بالعمر والجنس والوراثة والسمنة والحمية."
+        },
+        {
+          "term": "Cholestyramine",
+          "definition_ar": "دواء رابط لأملاح الصفراء داخل الأمعاء؛ يحرم الجسم من دورتها المعوية الكبدية فيزيد تشبع الصفراء بالكوليسترول."
+        },
+        {
+          "term": "Enterohepatic circulation",
+          "definition_ar": "الدورة المعوية الكبدية لأملاح الصفراء بين الكبد والأمعاء؛ يهيئ اضطرابها بعد استئصال اللفائفي أو استخدام روابط الأملاح لتكوّن الحصى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_c06",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "Effects, Complications and Clinical Presentations of Gallstones",
+      "summary_ar": "آثار الحصى حسب الموقع: في المرارة تسعة أوجه من الصمت والعسر الهضم الانتفاخي والمغص الصفراوي إلى التهاب المرارة الحاد والمزمن فالناسور ومتلازمة ميريتشي (أقل من 0.1%) والموكوسيل والدبيلة والغرغرينا والانثقاب وسرطان المرارة؛ وفي القنوات الصفراوية يرقان والتهاب أقنية حاد والتهاب بنكرياس حاد؛ وفي الأمعاء علوص الحصى الصفراوية. ثم جدول المآب السريري التفصيلي لكل حالة من حيث التاريخ والفحص وعلامة ميرفي والموجات فوق الصوتية والتحاليل، مع المثال العملي للسيدة الأربعينية ذات علامة ميرفي الموجبة وكريات بيضاء 11000.",
+      "sections": [
+        {
+          "heading": "Effects of Stones in the Gallbladder (List I)",
+          "body_text": "Stones trapped in the gallbladder produce nine effects (the lecture titles this list the effects, complications or consequences of stones), in roughly escalating order: **1) silent, asymptomatic stones (the majority)** - most gallstone carriers live and die without knowing they have stones. **2) dyspepsia, flatulence and food (fat) intolerance** - the flatulent dyspepsia complex. **3) biliary colic** - a stone impacts in the neck or infundibulum, the gallbladder contracts against it, and severe pain follows until the stone falls back. **4) cholecystitis, acute and chronic** - the inflamed, then the fibrotic shrunken gallbladder. **5) fistula, leading to Mirizzi syndrome (less than 0.1%)** - a stone impacted at the neck/cystic duct compresses the common hepatic duct from outside or erodes through into it, forming a cholecystohepatic duct fistula and obstructive jaundice; a fistula opening into the duodenum instead is the route of gallstone ileus. **6) mucocele** - chronic obstruction of the neck with **absorption of the bile and secretion of sterile mucin**, leaving a mucus-distended gallbladder. **7) empyema of the gall bladder** - the same obstructed gallbladder filled with **infected mucin (pus)**. **8) gangrene and perforation** - the distended, ischemic wall necroses and leaks. **9) carcinoma of the gall bladder** - the long-term companion of chronic stone disease.",
+          "key_points": [
+            "Most stones are silent - the majority of carriers are asymptomatic",
+            "Flatulent dyspepsia, biliary colic, acute and chronic cholecystitis",
+            "Fistula causing Mirizzi syndrome: less than 0.1%",
+            "Mucocele = bile absorbed + sterile mucin secreted; empyema = infected mucin (pus)",
+            "Gangrene and perforation; carcinoma of the gallbladder completes the list"
+          ]
+        },
+        {
+          "heading": "Effects on the Bile Ducts (List II) and Intestine (List III), and the Natural History",
+          "body_text": "**II. Bile ducts**: **1) jaundice** - obstructive, conjugated, with dark urine and pale stools when stones migrate into and block the common bile duct. **2) acute cholangitis** - infected, stagnant bile behind an obstruction: fever with rigors, jaundice and right hypochondrial pain (Charcot's triad), which can progress to septic shock. **3) acute pancreatitis** - a stone migrating through or impacting at the ampulla obstructs the pancreatic duct or refluxes bile into it, triggering gallstone pancreatitis. **III. Intestine**: **intestinal obstruction - gallstone ileus**: a large stone erodes through a cholecystoenteric (usually duodenal) fistula, travels down the bowel and impacts at the narrowest point (the terminal ileum), producing small bowel obstruction; the plain film may then show dilated loops, gas in the biliary tree and an ectopic stone (Rigler's triad). The lecture's pathophysiology slide summarises the natural sequence of gallstone disease: silent stone, then flatulent dyspepsia, then biliary colic, then chronic cholecystitis, with the numbered complications following impaction and infection - 8 mucocele, 9 empyema, 10 gangrene and perforation.",
+          "key_points": [
+            "Ducts: jaundice, acute cholangitis, acute pancreatitis",
+            "Intestine: gallstone ileus - small bowel obstruction by an ectopic stone",
+            "Gallstone ileus classically: elderly woman with obstruction + pneumobilia + ectopic stone",
+            "Natural sequence: dyspepsia - colic - chronic cholecystitis - mucocele - empyema - gangrene and perforation"
+          ]
+        },
+        {
+          "heading": "Outcome Table (1): Silent Stones, Flatulent Dyspepsia and Biliary Colic",
+          "body_text": "**Silent**: most patients remain asymptomatic; stones are found incidentally. - **Flatulent dyspepsia**: History: dyspepsia; right hypochondrial pain or epigastric pain (more often **dull and constant**) plus **flatulence** and **intolerance of fatty food**. Examination: **negative Murphy's sign and no fever**. Ultrasound: **no signs of acute cholecystitis, but stones are present**. Blood investigations: **normal WBC and LFT**. - **Biliary colic** (affects **10 - 20% of gallstone patients**): History: **several episodes of pain which is severe (minutes-hours) with nausea and vomiting, for a few weeks, then a period of relief for a few months as the stone dis-impacted back into the gall bladder**; when the pain resolves, the patient improves and is able to eat and drink. Examination: **negative Murphy's sign and no fever**. Ultrasound: **no signs of acute cholecystitis but stones present**. Blood investigations: **normal WBC and LFT**. The message of this part of the table: colic and dyspepsia are obstructive/functional phenomena **without inflammation** - no fever, negative Murphy's, normal bloods.",
+          "key_points": [
+            "Silent stones: the majority; asymptomatic incidental findings",
+            "Flatulent dyspepsia: dull constant RUQ/epigastric pain + flatulence + fat intolerance; negative Murphy's, no fever, normal WBC/LFT",
+            "Biliary colic affects 10 - 20% of gallstone patients",
+            "Colic: severe pain (minutes-hours) + nausea and vomiting for weeks, then months of relief as the stone dis-impacts back into the gallbladder",
+            "Colic and dyspepsia: negative Murphy's sign, no fever, normal WBC and LFT; US shows stones without acute cholecystitis"
+          ],
+          "check": {
+            "prompt": "A patient with known gallstones has recurrent severe right hypochondrial pain lasting one to two hours with vomiting, no fever, a negative Murphy's sign, normal WBC and LFT, and an ultrasound showing stones without signs of acute cholecystitis. What is the diagnosis?",
+            "options": [
+              "Biliary colic",
+              "Acute cholecystitis",
+              "Empyema of the gallbladder",
+              "Acute cholangitis",
+              "Chronic cholecystitis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "هذا مغص صفراوي: ألم شديد يزول خلال دقائق إلى ساعات مع غثيان وإقياء ثم فترة راحة لأن الحصاة ترتد إلى المرارة؛ لا حمى ولا علامة ميرفي موجبة ولا علامات التهاب في الموجات فوق الصوتية والتحاليل طبيعية. أما التهاب المرارة الحاد فيثبت بالحمى وميرفي الموجب وكثرة الكريات."
+          }
+        },
+        {
+          "heading": "Outcome Table (2): Acute Cholecystitis and Empyema",
+          "body_text": "**Acute cholecystitis**: History: right hypochondrial and/or epigastric pain, **more severe** than colic and constant rather than self-limiting. Examination: **tenderness + Murphy's sign positive + low-grade fever**. Ultrasound scan **shows signs of acute cholecystitis: distended gall bladder + presence of stones + thickened wall of the gall bladder + pericholecystic fluid collection**. Blood investigations: **leukocytosis + moderate elevation in LFT**. - **Empyema of the gall bladder**: the same picture as acute cholecystitis **plus a history of an acute attack that has not been relieved**, **more pain, more tenderness, more fever and an increase in pulse rate**, and there **might be a palpable mass in the right hypochondrial region (the gall bladder surrounded by omentum)**. Empyema is the suppurative end-point of an obstructed, infected gallbladder: it will not settle with conservative care alone and needs urgent antibiotics plus urgent drainage or cholecystectomy.",
+          "key_points": [
+            "Acute cholecystitis: more severe constant RUQ and/or epigastric pain",
+            "Examination: tenderness, positive Murphy's sign, low-grade fever",
+            "Ultrasound: distended gallbladder + stones + thickened wall + pericholecystic fluid collection",
+            "Blood: leukocytosis + moderate LFT elevation",
+            "Empyema = unremitting attack + more pain, more fever, rising pulse + palpable RUQ mass (gallbladder wrapped in omentum)"
+          ],
+          "check": {
+            "prompt": "Which set of ultrasound findings constitutes the signs of acute cholecystitis in the lecture's outcome table?",
+            "options": [
+              "Distended gall bladder + presence of stones + thickened wall + pericholecystic fluid collection",
+              "Stones alone with a normal wall and no fluid",
+              "Shrunken gall bladder with a stone inside",
+              "Dilated intrahepatic ducts only",
+              "A normal ultrasound with a positive Murphy's sign"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "علامات التهاب المرارة الحاد في الموجات فوق الصوتية أربع: مرارة ممتلئة، ووجود حصى، وتثخن جدار المرارة، وسائل حول المرارة. الحصى وحدها مع جدار طبيعي تعني مغصاً صفراوياً، والمرارة المتقلصة تصادف في التهاب المرارة المزمن."
+          }
+        },
+        {
+          "heading": "Outcome Table (3): Perforation and Chronic Cholecystitis",
+          "body_text": "**Perforation**: the patient shows **signs and symptoms of peritonitis, usually localized** to the right hypochondrium, because the omentum and adjacent viscera wall off the leaking gallbladder - a contained, walled-off catastrophe; but a free perforation spills bile and pus over the whole peritoneum, producing generalized peritonitis and septic shock. - **Chronic cholecystitis**: History: **a history of an acute attack that has already been relieved**, with pain **less in severity and frequency** than the original attacks, and there **might be flatulent dyspepsia plus nausea and vomiting**. Examination: **no fever, no tenderness, and a negative Murphy's sign (a shrunken gall bladder)**. Ultrasound: **shrinkage of the gall bladder + presence of gall stone + no sign of acute cholecystitis**. Blood investigations: **often normal**. Chronic cholecystitis is the burned-out, fibrotic stage between attacks - the gallbladder contracted down on its stones.",
+          "key_points": [
+            "Perforation: peritonitis, usually localized (walled off by omentum); free rupture gives generalized peritonitis",
+            "Chronic cholecystitis: a previously relieved acute attack, then milder, less frequent pain",
+            "May include flatulent dyspepsia, nausea and vomiting",
+            "Examination: no fever, no tenderness, negative Murphy's sign (shrunken gallbladder)",
+            "US: shrunken gallbladder + stones, no acute signs; bloods often normal"
+          ],
+          "check": {
+            "prompt": "Which ultrasound picture differentiates chronic cholecystitis from an acute attack?",
+            "options": [
+              "Shrinkage of the gallbladder with a stone and no signs of acute cholecystitis",
+              "Pericholecystic fluid with a thickened wall",
+              "A distended gallbladder full of stones",
+              "A porcelain gallbladder",
+              "A dilated CBD with duct stones"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "في التهاب المرارة المزمن تتقلص المرارة وتحتوي حصاة دون علامات حادة (لا سائل حول المرارة ولا تثخن جدار)، مع فحص سريري هادئ: لا حمى ولا إيلام وعلامة ميرفي سالبة؛ أما السائل حول المرارة والامتلاء والتثخن فخصائص الهجمة الحادة."
+          }
+        },
+        {
+          "heading": "Worked Clinical Example: the 40-Year-Old Lady with a Positive Murphy's Sign",
+          "body_text": "The lecture's worked example: a **40-year-old lady** - the textbook Female, Fatty, Fertile, Forty patient - presents with right hypochondrial pain, nausea and vomiting. Examination shows **tenderness with a positive Murphy's sign and a low-grade fever**. Bloods: **WBC 11,000 (mild leukocytosis)** with **modestly deranged LFT**. Ultrasound confirms **stones, a thickened gallbladder wall and pericholecystic fluid** on a distended gallbladder. This is **acute cholecystitis**, not biliary colic: colic would have a **negative** Murphy's sign, no fever and normal bloods. Management follows the surgical sequence: admit, nil by mouth, IV fluids, analgesia and broad-spectrum antibiotics; confirm with ultrasound (the prime test); then **early laparoscopic cholecystectomy on the same admission**. If the attack fails to settle - more pain, higher fever, a rising pulse and a palpable right hypochondrial mass - suspect **empyema**, and peritonism signals **perforation**: both demand urgent surgical intervention rather than continued conservatism.",
+          "key_points": [
+            "40-year-old lady + positive Murphy's sign + low-grade fever + WBC 11,000 = acute cholecystitis",
+            "Ultrasound: stones + thickened wall + pericholecystic fluid on a distended gallbladder",
+            "Treat with NPO, IV fluids, analgesia, antibiotics, then early cholecystectomy",
+            "Failure to settle: empyema (RUQ mass, tachycardia) or perforation (peritonitis)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Biliary colic",
+          "definition_ar": "مغص صفراوي؛ ألم شديد متقطع (دقائق إلى ساعات) مع غثيان وإقياء بسبب حصاة محتجزة في عنق المرارة ترتد إليها فيزول الألم، دون علامة ميرفي موجبة أو حمى أو تغيرات دموية."
+        },
+        {
+          "term": "Murphy's sign",
+          "definition_ar": "علامة ميرفي؛ توقف الشهيق أثناء الجس العميق في المراق الأيمن عند ملامسة المرارة الملتهبة؛ موجبة في التهاب المرارة الحاد وسالبة في المغص الصفراوي والعسر الهضم."
+        },
+        {
+          "term": "Flatulent dyspepsia",
+          "definition_ar": "عسر هضم انتفاخي؛ ألم كليل ثابت في المراق الأيمن أو الشرسوف مع انتفاخ وتحمل سيئ للطعام الدسم."
+        },
+        {
+          "term": "Mirizzi syndrome",
+          "definition_ar": "متلازمة ميريتشي؛ حصاة محتجزة في عنق المرارة أو القناة الكيسية تضغط القناة الكبدية المشتركة أو تنخر فيها مكوّنة ناسوراً؛ تحدث في أقل من 0.1% من مرضى الحصى."
+        },
+        {
+          "term": "Mucocele",
+          "definition_ar": "موكوسيل المرارة؛ انسداد مزمن مع امتصاص الصفراء وإفراز مخاطين معقم فتتمدد المرارة بسائل مخاطي عقيم."
+        },
+        {
+          "term": "Empyema of the gallbladder",
+          "definition_ar": "دبيلة المرارة؛ امتلاء المرارة بقيح (مخاطين معدى)؛ كالتهاب المرارة الحاد لكن أشد ألماً وحرارة ونبضاً مع كتلة محسوسة في المراق الأيمن."
+        },
+        {
+          "term": "Gallstone ileus",
+          "definition_ar": "علوص الحصى الصفراوية؛ حصاة كبيرة تخترق ناسوراً بين المرارة والاثني عشر ثم تسد اللفائفي الأخير مسببة انسداداً معوياً مع غاز في الشجرة الصفراوية."
+        },
+        {
+          "term": "Charcot's triad",
+          "definition_ar": "ثالوث شاركو للتهاب الأقنية الصفراوية الحاد: حمى مع رجفة، ويرقان، وألم في المراق الأيمن."
+        },
+        {
+          "term": "Pericholecystic fluid",
+          "definition_ar": "سائل حول المرارة؛ علامة في الموجات فوق الصوتية على التهاب المرارة الحاد مع تثخن الجدار والامتلاء ووجود الحصى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L4_gallbladder_biliary_f01",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "What is the shape, length, capacity and parts of the gallbladder?",
+      "back_text": "Pear-shaped, 7.5 - 12 cm long, capacity more than 50 ml; parts: fundus, body, neck and infundibulum.",
+      "explanation_ar": "هذه أرقام المحاضرة الأساسية للمرارة: كمثرية الشكل، طولها 7.5-12 سم، سعتها أكثر من 50 مل، بأجزائها الأربعة من القاع إلى القمع.",
+      "is_vivid": false,
+      "tags": ["anatomy"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f02",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "Give the exact lengths of the cystic duct, common hepatic duct and CBD.",
+      "back_text": "Cystic duct 2.5 cm long (about 0.5 cm lumen); common hepatic duct about 2.5 cm; their union forms the CBD, about 7.5 cm long.",
+      "mnemonic_ar": "قناة كيسية 2.5 + قناة كبدية مشتركة 2.5 = قناة صفراوية مشتركة 7.5 سم.",
+      "is_vivid": false,
+      "tags": ["anatomy"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f03",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "What is the caterpillar turn and why does it matter in cholecystectomy?",
+      "back_text": "A tortuous right hepatic artery passing in front of the origin of the cystic duct with a short cystic artery - it can be mistaken for the cystic artery, so clipping it injures the right hepatic artery and causes massive bleeding.",
+      "is_vivid": true,
+      "tags": ["anatomy", "operative risk"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f04",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "How does the gallbladder drain its lymph?",
+      "back_text": "Two ways: 1) to the cystic lymph node of Lund, then to the coeliac lymph nodes; 2) directly to the liver through the gallbladder bed.",
+      "is_vivid": false,
+      "tags": ["anatomy"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f05",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "What is the composition and daily production rate of bile?",
+      "back_text": "Bile is 97% water, 2% bile salts, 1% bile acids and cholesterol; produced at 40 ml per hour = about 1000 ml per day.",
+      "mnemonic_ar": "٩٧ ماء، ٢ أملاح، ١ أحماض وكوليسترول؛ و٤٠ مل كل ساعة أي ١٠٠٠ مل كل يوم.",
+      "is_vivid": false,
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f06",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "card_type": "basic",
+      "front_text": "List the three functions of the gallbladder with their figures.",
+      "back_text": "1) Reservoir and storage of bile; 2) concentration of bile 5 - 10 times; 3) secretion of mucin, about 20 ml per day.",
+      "is_vivid": false,
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f07",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c02",
+      "card_type": "basic",
+      "front_text": "What four biliary findings can a plain abdominal X-ray show?",
+      "back_text": "Radio-opaque stones (only 10 - 20% of gallstones), porcelain gallbladder, limey bile, and gas in the biliary tree.",
+      "is_vivid": false,
+      "tags": ["imaging"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f08",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c02",
+      "card_type": "basic",
+      "front_text": "HIDA scan: when is the gallbladder normally visualised and what does a delay to 1 hour mean?",
+      "back_text": "99mTc-labelled HIDA or IODIDA given IV is excreted in bile; the gallbladder is visualized at 30 minutes; delay to 1 hour suggests acute cholangitis or a contracted gallbladder (chronic disease).",
+      "is_vivid": false,
+      "tags": ["imaging"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f09",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c02",
+      "card_type": "basic",
+      "front_text": "Which is the prime and standard first-line investigation of the biliary tract, and why?",
+      "back_text": "Ultrasonography - the prime test and standard test: quick, non-invasive, no radiation or contrast; shows stones, wall thickening, pericholecystic fluid and duct size.",
+      "is_vivid": false,
+      "tags": ["imaging"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f10",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c03",
+      "card_type": "basic",
+      "front_text": "What is the incidence and the pathological sequence of extrahepatic biliary atresia?",
+      "back_text": "1/14000 live births; occlusion of a variable length of the extrahepatic ducts through inflammation, then destruction, then fibrosis, then obliteration; outcome: biliary cirrhosis, portal hypertension, jaundice, liver failure.",
+      "mnemonic_ar": "الالتهاب ثم التخريب ثم التليف ثم الانسداد - تسلسل انضمور الأقنية الصفراوية عند 1 من 14000 ولادة.",
+      "is_vivid": false,
+      "tags": ["pediatric surgery"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f11",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c03",
+      "card_type": "basic",
+      "front_text": "What do Types I, II and III of extrahepatic biliary atresia occlude?",
+      "back_text": "Type I: CBD only. Type II: CBD + common hepatic duct. Type III: CBD + common hepatic duct + right and left hepatic ducts.",
+      "is_vivid": false,
+      "tags": ["pediatric surgery"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f12",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c03",
+      "card_type": "basic",
+      "front_text": "What are the two classic post-operative complication rates after surgery for biliary atresia?",
+      "back_text": "Cholangitis in 40% of children and portal hypertension in 50% after Roux-en-Y biliary digestive anastomosis.",
+      "is_vivid": false,
+      "tags": ["pediatric surgery"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f13",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c04",
+      "card_type": "basic",
+      "front_text": "What is the classic clinical triad of a choledochal cyst?",
+      "back_text": "1) Jaundice; 2) a right hypochondrial cystic mass; 3) cholangitis and pancreatitis.",
+      "is_vivid": true,
+      "tags": ["pediatric surgery"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f14",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c04",
+      "card_type": "basic",
+      "front_text": "Recite the Todani classification of choledochal cysts.",
+      "back_text": "Type I fusiform (most common); Type II true diverticulum (rare); Type III choledochocele confined to the duodenum; Type IVa multiple intra- and extrahepatic; Type IVb multiple extrahepatic only. (Type V = Caroli disease, intrahepatic only.)",
+      "mnemonic_ar": "واحد مغزلي والأشيع، اثنان رتق جانبي نادر، ثلاثة فقاعة داخل الاثني عشر، أربعة (أ) داخل وخارج الكبد، أربعة (ب) خارج الكبد فقط.",
+      "is_vivid": false,
+      "tags": ["classification"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f15",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "card_type": "basic",
+      "front_text": "What are the 'four Fs' of gallstone epidemiology?",
+      "back_text": "Female, Fatty, Fertile, Forty - the classical risk profile for gallstone disease.",
+      "mnemonic_ar": "أنثى، سمينة، خصبة، في الأربعين - عوامل الخطورة لحصى المرارة.",
+      "is_vivid": false,
+      "tags": ["epidemiology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f16",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "card_type": "basic",
+      "front_text": "How are gallstone types distributed around the world?",
+      "back_text": "Cholesterol + mixed stones = 80% in US and Europe (about 70% of these are mixed, 10% pure cholesterol); pigment stones = 80% in Asia; in US/Europe pigment stones are about 20%, mostly in immigrants from Asia and Africa (black more than brown).",
+      "is_vivid": false,
+      "tags": ["epidemiology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f17",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "card_type": "basic",
+      "front_text": "Contrast black versus brown pigment stones (site, appearance, composition, cause).",
+      "back_text": "Black: gallbladder, small black irregular multiple, bilirubin pigments + calcium phosphate + carbonate, from chronic hemolysis (SCA, hereditary spherocytosis, cirrhosis). Brown: bile duct, large brown single, calcium bilirubinate + palmitate + stearate, from stasis + infected bile + foreign body/stent + parasites (Clonorchis sinensis, Ascaris lumbricoides).",
+      "is_vivid": false,
+      "tags": ["pathology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f18",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "card_type": "basic",
+      "front_text": "What are the components and gross appearance of mixed gallstones?",
+      "back_text": "Mostly cholesterol (51 - 99% of stone contents) + calcium salts + bile acids + bilirubin pigments + phospholipid; grossly small, hard, multiple, faceted, green or yellow - the most common type (about 70% of US/Europe stones).",
+      "is_vivid": false,
+      "tags": ["pathology"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f19",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "card_type": "basic",
+      "front_text": "Murphy's sign, fever and bloods: biliary colic versus acute cholecystitis?",
+      "back_text": "Colic/dyspepsia: NEGATIVE Murphy's sign, no fever, normal WBC and LFT. Acute cholecystitis: POSITIVE Murphy's sign, tenderness, low-grade fever, leukocytosis + moderate LFT elevation.",
+      "mnemonic_ar": "ميرفي موجب + حمى + كريات مرتفعة = التهاب مرارة حاد؛ ميرفي سالب + لا حمى + تحاليل طبيعية = مغص صفراوي.",
+      "is_vivid": true,
+      "tags": ["clinical signs"]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_f20",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "card_type": "basic",
+      "front_text": "What is Mirizzi syndrome, and how often does it complicate gallstone disease?",
+      "back_text": "A gallbladder fistula: a stone impacted in the neck/cystic duct compresses or erodes into the common hepatic duct causing obstructive jaundice; it occurs in less than 0.1% of gallstone patients.",
+      "is_vivid": false,
+      "tags": ["complications"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L4_gallbladder_biliary_m01",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "question_stem": "A 40-year-old obese multiparous woman presents with 14 hours of constant right hypochondrial pain with nausea and vomiting that began after a fatty meal. Temperature is 37.9 C, Murphy's sign is positive, WBC is 11,000 with a left shift, and LFTs are moderately elevated. Ultrasound shows gallstones, a thickened gallbladder wall, pericholecystic fluid and a distended gallbladder. What is the most likely diagnosis?",
+      "options": [
+        "Acute cholecystitis",
+        "Biliary colic",
+        "Chronic cholecystitis",
+        "Acute pancreatitis",
+        "Perforated duodenal ulcer"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذه هي صورة التهاب المرارة الحاد في مثال المحاضرة: سيدة أربعينية (أنثى، سمينة، خصبة، أربعين) بألم شديد مستمر في المراق الأيمن مع علامة ميرفي الموجبة وحمى خفيفة وكثرة كريات بيضاء (11000) وارتفاع معتدل في وظائف الكبد، والموجات فوق الصوتية تظهر الحصى وتثخن الجدار والسائل حول المرارة. المغص الصفراوي لا يترافق مع حمى ولا علامة ميرفي ولا تغيرات دموية، والتهاب المرارة المزمن هادئ بلا حمى ولا إيلام، والبنكرياس الحاد يسبب ألماً شرسوفياً مع ارتفاع الأميلاز، وقرحة الاثني عشر المنثقبة تعطي تخشب البطن من البداية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Check Murphy's sign, fever and WBC.",
+        "Count the four ultrasound criteria of acute cholecystitis."
+      ],
+      "focus_sections": [3, 5]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m02",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c04",
+      "question_stem": "In the Todani classification, which choledochal cyst type is a true diverticulum - a rare saccular outpouching protruding from the side of the extrahepatic duct while the main ductal lumen keeps a normal caliber?",
+      "options": [
+        "Type II",
+        "Type I",
+        "Type III",
+        "Type IVa",
+        "Type IVb"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النوع الثاني في تصنيف توداني هو الرتق الحقيقي: نتوء كيسي جانبي من القناة خارج الكبد مع بقاء تجويف القناة بحجم طبيعي تقريباً، وهو نادر. النوع الأول تمدد مغزلي للأشيع، والثالث فقاعة قناوية داخل الاثني عشر، والرابع أ تمددات متعددة داخل وخارج الكبد، والرابع ب متعددة خارج الكبد فقط.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m03",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c03",
+      "question_stem": "A 3-week-old term baby has had progressive jaundice since birth, pale meconium and clay-colored stools, dark urine and an enlarging liver; the INR is prolonged and vitamin K was required. Which diagnosis must be excluded urgently?",
+      "options": [
+        "Extrahepatic biliary atresia",
+        "Physiological neonatal jaundice",
+        "Breast milk jaundice",
+        "Neonatal sepsis",
+        "Biliary colic"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اليرقان التراكبي المتنامي منذ الولادة مع براز شاحن وبول داكن عند حديث الولادة يعني انضمور الأقنية الصفراوية خارج الكبد حتى يثبت العكس؛ والجراحة المبكرة (مفاغرة روا-إن-واي أو الزراعة) ضرورية قبل حدوث التشمع الصفراوي. أما اليرقان الفسيولوجي ويرقان حليب الأم فغير مقترنين ويتلاشيان، والإنتان يعطي تسمماً عاماً مع بقاء البراز ملوناً، والمغص الصفراوي لا يحدث عند حديثي الولادة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Conjugated jaundice with pale stools in a neonate is never physiological.",
+        "Which operation must not be delayed beyond the first weeks of life?"
+      ],
+      "focus_sections": [2, 4, 5]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m04",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "question_stem": "Which statement about bile composition, production and gallbladder function matches the lecture figures?",
+      "options": [
+        "Bile is 97% water, 2% bile salts and 1% bile acids plus cholesterol, produced at 40 ml/hour (1000 ml/day); the gallbladder concentrates it 5 - 10 times and secretes 20 ml mucin/day",
+        "Bile is 85% water and 15% cholesterol, produced at 100 ml/hour",
+        "The gallbladder concentrates bile 50 times and secretes 200 ml mucin/day",
+        "Daily bile production is 400 ml/day and the gallbladder stores all of it",
+        "Bile contains no cholesterol at all"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الصفراء 97% ماء و2% أملاح صفراوية و1% أحماض صفراوية وكوليسترول، ويفرزها الكبد بمعدل 40 مل بالساعة أي 1000 مل يومياً؛ والمرارة تكثفها 5-10 مرات وتفرز 20 مل مخاطين يومياً. فبقية الخيارات تخطئ جميع الأرقام الجوهرية.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m05",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "question_stem": "A 38-year-old woman reports recurrent attacks of severe right hypochondrial pain lasting 2 - 3 hours with nausea over the past few weeks, each followed by months of complete relief; she is afebrile, Murphy's sign is negative, WBC and LFT are normal, and ultrasound shows gallstones only. What is the diagnosis?",
+      "options": [
+        "Biliary colic",
+        "Acute cholecystitis",
+        "Empyema of the gallbladder",
+        "Acute cholangitis",
+        "Chronic cholecystitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نمط الألم المتكرر الشديد (دقائق إلى ساعات) الذي يزول كلياً لأشهر لأن الحصاة ترتد من عنق المرارة هو المغص الصفراوي، ولا حمى فيه ولا علامة ميرفي موجبة والتحاليل طبيعية والموجات تظهر حصى دون علامات التهاب حاد. التهاب المرارة الحاد ألمه مستمر مع حمى وميرفي موجب وكثرة كريات، والدبيلة أشد مع كتلة محسوسة، والتهاب الأقنية يعطي ثالوث شاركو، والمزمن ألم أخف متكرر مع مرارة متقلصة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Pain that completely resolves for months means the stone fell back into the gallbladder."
+      ],
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m06",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "question_stem": "A 55-year-old man from East Asia has had a biliary stent in situ for a year and repeated episodes of cholangitis; at ERCP a large, single, brown stone is extracted from the common bile duct. What is the mechanism of formation of this stone type?",
+      "options": [
+        "Bile stasis with infected bile around a foreign body (stent) or parasitic infestation such as Clonorchis sinensis or Ascaris lumbricoides",
+        "Chronic hemolysis from hereditary spherocytosis",
+        "Supersaturation of bile with cholesterol in obesity",
+        "Cirrhosis with increased unconjugated bilirubin excretion",
+        "Progesterone-induced gallbladder stasis during pregnancy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحصاة البنية تتشكل داخل القنوات نتيجة ركود الصفراء مع صفراء معدية حول جسم غريب كالدعامة أو مع الطفيليات (كلونوركيس سينينسيس وأسكارس لومبريكويدس) فيتحرر البيليروبين المرتبط ويرتبط بالكالسيوم والأحماض الدهنية. أما الانحلال الدموي المزمن والتشمع فيولّدان الحصى السوداء، وفرط تشبع الكوليسترول يولّد الحصى المختلطة والكوليسترولية، وركود الحمل يخص المرارة لا القنوات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m07",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c05",
+      "question_stem": "A 19-year-old man with sickle cell anaemia has recurrent right hypochondrial pain; ultrasound shows multiple small, irregular, black stones within the gallbladder. What are these stones composed of?",
+      "options": [
+        "Mostly bilirubin pigments with calcium phosphate and calcium carbonate (up to 30% cholesterol)",
+        "Almost pure hardened cholesterol",
+        "Calcium bilirubinate with palmitate and stearate from infected duct bile",
+        "51 - 99% cholesterol with calcium salts and phospholipid",
+        "Pure calcium oxalate"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحصى السوداء عند مريض المنجلية تتكون من أصباغ البيليروبين مع فوسفات الكالسيوم وكربونات الكالسيوم وما يصل إلى 30% كوليسترول، وسببها الانحلال الدموي المزمن (ومنه أيضاً التكور الكروي الوراثي والتشمع). الحصى الكوليسترولية شبه نقية، والمختلطة أغلبها كوليسترول، والبنية من بيليروبينات الكالسيوم مع عدوى الصفراء في القنوات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m08",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c02",
+      "question_stem": "Which investigation is the prime and standard first-line test for suspected gallstone disease?",
+      "options": [
+        "Ultrasonography",
+        "Plain abdominal X-ray",
+        "Oral cholecystography",
+        "Intravenous cholangiography",
+        "ERCP"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الموجات فوق الصوتية هي الفحص الأول والمعياري: سريعة وغير باضع وتُظهر الحصى وتثخن الجدار والسائل حول المرارة وقطر القنوات. الصورة البسيطة تظهر 10-20% فقط من الحصى، والتنظير الكولي سيستوغرافي الفموي والوريدي مهجورة تاريخياً، وERCP فحص باضع علاجي يُحفظ للحالات المختارة لا للفحص الأولي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m09",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "question_stem": "A 78-year-old woman with known gallstones presents with abdominal distension, vomiting and colicky central abdominal pain. Plain abdominal film shows dilated small bowel loops, gas in the biliary tree and an ectopic calcified stone in the right iliac fossa. What is the diagnosis?",
+      "options": [
+        "Gallstone ileus",
+        "Acute cholecystitis",
+        "Sigmoid volvulus",
+        "Acute mesenteric ischemia",
+        "Perforated appendicitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذا علوص الحصى الصفراوية (القسم الثالث من آثار الحصى): حصاة كبيرة اخترقت ناسوراً بين المرارة والاثني عشر فنزلت في الأمعاء وسدت اللفائفي الأخير؛ والصورة البسيطة تظهر انسداداً معوياً وغازاً في الشجرة الصفراوية وحصاة في مكان شاذ (ثالوث ريغلر). التهاب المرارة الحاد لا يعطي انسداداً معوياً، والانفتال يخص القولون الشيخي، والإقفار المساريقي ألم حاد وعروق دم وغائط دموي، والزائدة المنثقبة تخشب موضعي في الحفرة اليمنى.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m10",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c01",
+      "question_stem": "During laparoscopic cholecystectomy the surgeon notes a tortuous right hepatic artery running in front of the origin of the cystic duct, with a short cystic artery arising from its apex. What is this configuration called, and what is its danger?",
+      "options": [
+        "Caterpillar turn - the tortuous right hepatic artery may be mistaken for the cystic artery, causing massive hemorrhage",
+        "Valve of Heister - risk of retained stones in the cystic duct",
+        "Node of Lund - risk of tumor dissemination",
+        "Phrygian cap - risk of gallbladder torsion",
+        "Roux-en-Y loop - risk of afferent limb obstruction"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التفافة الدودة (كاتربيلر تيرن) هي شريان كبدي أيمن متعرج يمر أمام منشأ القناة الكيسية مع شريان كيسي قصير؛ والخطر هو القطع أو جرح الشريان الكبدي الأيمن ظناً أنه الشريان الكيسي فيحدث نزف غزير؛ لذا يجب تحديد الشريان وهو يدخل جدار المرارة قبل أي قطع. أما بقية الخيارات فتراكيب أخرى لا صلة لها.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m11",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c04",
+      "question_stem": "A 6-year-old girl has fluctuating jaundice, recurrent fevers with rigors and a palpable cystic mass in the right hypochondrium. Ultrasound shows a 3.5 cm fusiform cystic dilatation of the CBD, and MRCP confirms a Todani Type I choledochal cyst. What is the definitive treatment?",
+      "options": [
+        "Complete surgical excision of the cyst with Roux-en-Y biliary digestive anastomosis",
+        "Simple internal drainage by cystoduodenostomy",
+        "ERCP sphincterotomy alone",
+        "Long-term observation with yearly ultrasound",
+        "Cholecystectomy alone leaving the cyst in place"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "العلاج النهائي للكيسة القناوية هو الاستئصال الجراحي الكامل مع مفاغرة روا-إن-واي صفراوية هضمية، لأنها آفة ما قبل سرطانية وخطر سرطان الأقنية الصفراوية يزداد مع العمر وبعد التصريف البسيط الذي يترك البطانة المرضية. التنظير بالقطع العاصرة علاج مؤقت، والمراقبة أو استئصال المرارة وحده يتركان الخطر الخبيث قائماً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "The cyst is premalignant - what does that demand?",
+        "The operation ends with a Roux loop."
+      ],
+      "focus_sections": [0, 1, 2]
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_m12",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "concept_id": "surg_L4_gallbladder_biliary_c06",
+      "question_stem": "How often does a gallbladder fistula causing Mirizzi syndrome complicate gallstone disease, and what is its mechanism?",
+      "options": [
+        "Less than 0.1%; a stone impacted in the neck/cystic duct compresses or erodes into the common hepatic duct",
+        "About 5%; cholesterol stones migrate into the CBD",
+        "25%; a mucocele ruptures into the duodenum",
+        "50%; gallbladder carcinoma invades the duct",
+        "1 in 14000 births; a congenital duct stricture"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "متلازمة ميريتشي نادرة جداً (أقل من 0.1% من مرضى الحصى): حصاة محتجزة في عنق المرارة أو القناة الكيسية تضغط القناة الكبدية المشتركة من الخارج أو تنخر فيها مكوّنة ناسوراً فتسبب يرقاناً انسدادياً. أما النسب الأخرى فمختلقة لا وجود لها في المحاضرة.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "focus_sections": [0]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L4_gallbladder_biliary_case01",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "The Forty-Year-Old Lady with Right Hypochondrial Pain",
+      "scenario": "A 40-year-old lady, obese and mother of five, is brought to the emergency department at 2 a.m. with 14 hours of constant right upper quadrant pain that began after a heavy family dinner, with nausea and repeated vomiting. This is the lecture's classic scenario of the female, fatty, fertile patient of forty presenting with gallstone disease, and the key clinical task is to separate biliary colic from acute cholecystitis using Murphy's sign, fever and the blood tests.",
+      "vignette": {
+        "age": 40,
+        "sex": "female",
+        "chief_complaint": "Constant right upper quadrant pain for 14 hours with vomiting",
+        "history": "Obese (BMI 34) and mother of five full-term children. Several previous shorter episodes of right hypochondrial pain after fatty meals that resolved spontaneously within an hour. Tonight the pain has not resolved; she has vomited twice and feels feverish. No jaundice, no dark urine, no chest pain and no bowel symptoms.",
+        "vitals": {
+          "bp": "118/76 mmHg",
+          "hr": "102/min",
+          "rr": "18/min",
+          "temp": "37.9 C",
+          "spo2": "98% on room air"
+        },
+        "exam": "Tenderness and voluntary guarding in the right hypochondrium; inspiratory arrest on deep palpation over the gallbladder (positive Murphy's sign). No palpable mass, no peritonism, no jaundice; bowel sounds normal.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "11,000/uL",
+            "flag": "high"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "78%",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "13.2 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "260,000/uL",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "1.3 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "95 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALP",
+            "value": "160 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "70 U/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Abdominal ultrasound (prime test): multiple gallstones, distended gallbladder, wall thickened to 4.5 mm, pericholecystic fluid collection; common bile duct 5 mm, no duct stones."
+      },
+      "steps": [
+        {
+          "id": "surg_L4_gallbladder_biliary_case01_s1",
+          "prompt": "What is the correct initial management in the emergency department?",
+          "options": [
+            "Admit under the surgical team: nil by mouth, IV fluids, IV analgesia and broad-spectrum antibiotics, with regular observation",
+            "Oral analgesia and discharge home with a clinic appointment",
+            "Immediate laparoscopic cholecystectomy before any resuscitation",
+            "Emergency ERCP with sphincterotomy now",
+            "Oral antibiotics and repeat ultrasound in one week"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التهاب المرارة الحاد يبدأ علاجه بالإدخال والامتناع عن الطعام والسوائل الوريدية والمسكنات الوريدية والمضادات الحيوية واسعة الطيف مع المراقبة المنتظمة. التسكين والإخراج يقودان إلى التدهور نحو الدبيلة أو الانثقاب، والجراحة قبل الإنعاش غير آمنة، وERCP ليس علاج التهاب المرارة لأن القناة الصفراوية سليمة، والعلاج الفموي المتأخر غير كافٍ.",
+          "xp": 10,
+          "hints": [
+            "Is this simple colic or established inflammation?",
+            "Start with resuscitation: NPO, IV fluids, analgesia, antibiotics."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case01_s2",
+          "prompt": "Which investigation is the prime/standard test here, and which findings confirm acute cholecystitis rather than simple biliary colic?",
+          "options": [
+            "Ultrasonography: distended gall bladder + stones + thickened wall + pericholecystic fluid collection",
+            "Plain X-ray: radio-opaque stones will be seen in most patients",
+            "Oral cholecystography: failure of gallbladder opacification",
+            "HIDA scan: gallbladder visualized at 30 minutes",
+            "CT scan: lymph node enlargement around the gallbladder"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الموجات فوق الصوتية هي الفحص الأول والمعياري، وعلامات التهاب المرارة الحاد فيها أربع: مرارة ممتلئة، ووجود حصى، وتثخن جدار المرارة، وسائل حول المرارة. الصورة البسيطة تظهر الحصى الظللة في 10-20% فقط، والتنظير الفموي مهجور، وظهور المرارة بالهيدا خلال 30 دقيقة استجابة طبيعية لا تثبت الالتهاب، والمقطعية ليست فحص الدرجة الأولى هنا.",
+          "xp": 10,
+          "hints": [
+            "Which test is quick, non-invasive and standard?",
+            "Count the four ultrasound criteria in the lecture table."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case01_s3",
+          "prompt": "After 24 hours of conservative treatment she is improving. What is the definitive management?",
+          "options": [
+            "Early laparoscopic cholecystectomy during the same admission",
+            "Discharge now and delayed elective cholecystectomy after several months",
+            "Lifelong low-fat diet with no surgery",
+            "Extracorporeal shock wave lithotripsy of the stones",
+            "Ursodeoxycholic acid dissolution therapy alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلاج النهائي هو استئصال المرارة بالمنظار مبكراً خلال الإدخال نفسه بعد التحسن، لأن الهجمة سوف تتكرر وقد تعقبها مضاعفات كالدبيلة والانثقاب. تأجيل الجراحة لأشهر يعرض المريضة لهجمات جديدة، والحمية وحدها لا تزيل المرارة المرضية، وتفتيت الحصى أو إذابتها الدوائية ليست علاجاً نهائياً موثوقاً لالتهاب المرارة الحجري.",
+          "xp": 12,
+          "hints": [
+            "The inflamed gallbladder will attack again.",
+            "Definitive treatment of symptomatic stone disease is removal of the gallbladder."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case01_s4",
+          "prompt": "On day 3 the pain worsens, temperature rises to 39.2 C, pulse to 118/min, and a tender mass is now palpable in the right hypochondrium. What has developed and what is required?",
+          "options": [
+            "Empyema of the gallbladder (infected mucin) - urgent antibiotics plus urgent surgical intervention",
+            "Simple biliary colic recurring - analgesia only",
+            "Chronic cholecystitis - elective surgery later",
+            "Mirizzi syndrome - ERCP and stenting",
+            "Gallstone ileus - nasogastric decompression alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "هذه دبيلة المرارة: هجمة حادة لم تخف مع ألم أشد وإيلام أعلى وحمى أكبر وتسارع في النبض وكتلة محسوسة في المراق الأيمن (مرارة محاطة بالثرب). تلزم مضادات حيوية وريدية عاجلة مع تدخل جراحي عاجل (استئصال أو تصريف). المغص لا يترافق مع حمى ولا كتلة، والمزمن حالة باردة هادئة، وميريتشي يرقان انسدادي، وعلوص الحصى انسداد معوي لا كتلة البطن الحادة.",
+          "xp": 15,
+          "hints": [
+            "Unremitting attack + more pain, more fever, rising pulse + palpable RUQ mass.",
+            "The gallbladder is now full of infected mucin."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: التهاب مرارة حاد حجري في سيدة الأربعين (أنثى، سمينة، خصبة، في الأربعين) بعد وجبة دسمة. الدرس الجوهري: التفريق بين المغص الصفراوي (علامة ميرفي سالبة، لا حمى، تحاليل طبيعية، حصى دون علامات التهاب في الموجات) والتهاب المرارة الحاد (ميرفي موجب، حمى خفيفة، كثرة كريات 11000 وارتفاع معتدل في وظائف الكبد، مع مرارة ممتلئة وتثخن جدار وسائل حولها) - وهو سؤال الامتحان المفضل. العلاج يتبع التسلسل الجراحي: إنعاش (امتناع عن الطعام، سوائل وريدية، تسكين، مضادات حيوية) ثم تأكيد بالموجات فوق الصوتية وهي الفحص الأول، ثم استئصال مرارة مبكر بالمنظار في نفس الإدخال. فخ المتابعة: عدم تحسن الهجمة مع نبض متسارع وكتلة محسوسة يعني دبيلة، وعلامات التهاب الصفاق تعني انثقاباً، وكلاهما يستوجب تدخلاً عاجلاً.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L4_gallbladder_biliary_case02",
+      "lecture_id": "surg_L4_gallbladder_biliary",
+      "title": "The Jaundiced Child with a Right Hypochondrial Cystic Mass (Choledochal Cyst)",
+      "scenario": "A 6-year-old girl is referred for fluctuating yellow eyes, recurrent fevers and a lump under the right costal margin. She has been treated twice for gastroenteritis and once for mild pancreatitis. The surgical team recognizes the classic triad of a choledochal cyst and must confirm the diagnosis, classify it, and plan definitive treatment before its premalignant potential declares itself.",
+      "vignette": {
+        "age": 6,
+        "sex": "female",
+        "chief_complaint": "Fluctuating jaundice with fever and a right upper quadrant mass",
+        "history": "Three episodes of fever with rigors and deepening jaundice over the past year, treated as cholangitis; one episode of acute pancreatitis six months ago (serum amylase 480 U/L) that settled conservatively. Appetite and growth mildly affected. No neonatal jaundice and no previous surgery.",
+        "vitals": {
+          "bp": "100/65 mmHg",
+          "hr": "104/min",
+          "rr": "22/min",
+          "temp": "38.2 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Mildly jaundiced. A smooth, tense, cystic mass about 5 cm is palpable in the right hypochondrium, mildly tender; liver span normal for age; no splenomegaly; no ascites.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "14,200/uL",
+            "flag": "high"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "80%",
+            "flag": "high"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "4.2 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Direct bilirubin",
+            "value": "3.1 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "ALP",
+            "value": "520 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "GGT",
+            "value": "310 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "110 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "160 U/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: 3.8 cm fusiform cystic dilatation of the common bile duct, separate from a normal gallbladder. MRCP (no contrast): fusiform dilation of the extrahepatic CBD with normal-caliber intrahepatic ducts - Todani Type I choledochal cyst; no intraductal stones."
+      },
+      "steps": [
+        {
+          "id": "surg_L4_gallbladder_biliary_case02_s1",
+          "prompt": "What is the first management priority on admission?",
+          "options": [
+            "Resuscitation: IV fluids, analgesia, and empirical broad-spectrum antibiotics for cholangitis with close monitoring",
+            "Immediate operative excision of the cyst before any resuscitation",
+            "Discharge home on oral antibiotics",
+            "Blood transfusion for chronic disease anemia",
+            "Corticosteroids for suspected autoimmune hepatitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الطفلة تعاني التهاب أقنية صفراوية (حمى ويرقان وألم مع كتلة كيسية) ضمن ثالوث الكيسة القناوية؛ فالأولوية هي الإنعاش بالسوائل الوريدية والمسكنات والمضادات الحيوية الواسعة مع المراقبة الدقيقة قبل أي قرار نهائي. الجراحة قبل الإنعاش غير آمنة، والإخراج خطر، وليس ثمّة فقر دم شديد يستوجب نقلاً، ولا شبهة التهاب كبد مناعي.",
+          "xp": 10,
+          "hints": [
+            "Fever + jaundice + a tender cyst means an infected biliary system.",
+            "Treat the infection first, then plan the operation."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case02_s2",
+          "prompt": "Which investigations confirm the diagnosis and classify the cyst?",
+          "options": [
+            "Ultrasound as the diagnostic test, then MRCP (standard, no contrast) to define the anatomy and Todani type",
+            "Plain abdominal X-ray looking for a radio-opaque cyst wall",
+            "Oral cholecystography to opacify the cyst",
+            "HIDA scan showing gallbladder visualization at 30 minutes",
+            "Barium swallow and follow-through"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الموجات فوق الصوتية هي الفحص التشخيصي للكيسة القناوية لأنها تُظهر التمدد الكيسي للقناة الصفراوية بسهولة، ثم يُحدد الرنين المغناطيسي للقنوات (بدون مادة ظليلة) التشريح الكامل والنوع حسب توداني ويكشف الحصى داخل القنوات. الصورة البسيطة والتنظير الفموي ومسح النظائر والباريوم لا تقدم أي فائدة تشخيصية هنا.",
+          "xp": 12,
+          "hints": [
+            "Which two tests does the lecture list for choledochal cyst?",
+            "One is the diagnostic test, the other types the cyst."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case02_s3",
+          "prompt": "What is the definitive management of this Todani Type I choledochal cyst?",
+          "options": [
+            "Complete surgical excision of the cyst with Roux-en-Y biliary digestive anastomosis",
+            "Simple internal drainage by cystoduodenostomy",
+            "ERCP sphincterotomy with a stent and yearly surveillance",
+            "Observation until adulthood",
+            "Cholecystectomy alone leaving the cyst in place"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلاج النهائي هو الاستئصال الجراحي الكامل للكيسة مع مفاغرة روا-إن-واي صفراوية هضمية. التصريف البسيط يترك البطانة المرضية فيمهد لالتهاب الأقنية المتكرر والحصى ثم السرطان؛ والكيسة آفة ما قبل سرطانية فلا يجوز تركها للمراقبة، واستئصال المرارة وحده يترك الخطر قائماً، وتنظير القناة بالقطع العاصرة علاج مؤقت غير نهائي.",
+          "xp": 15,
+          "hints": [
+            "Why is this cyst dangerous even when symptoms are mild?",
+            "The operation ends with a Roux loop."
+          ]
+        },
+        {
+          "id": "surg_L4_gallbladder_biliary_case02_s4",
+          "prompt": "Why must the cyst be excised rather than simply drained, and what follow-up does the child need?",
+          "options": [
+            "Choledochal cysts are premalignant (risk of cholangiocarcinoma), so complete excision plus lifelong surveillance is required",
+            "The cyst is already malignant at diagnosis in all children",
+            "Cancer risk disappears completely after excision, so no follow-up is needed",
+            "Malignant transformation only occurs after the age of 60",
+            "The cyst regresses spontaneously after puberty"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الكيسة القناوية آفة ما قبل سرطانية: خطر سرطان الأقنية الصفراوية يزداد مع العمر وبعد التصريف البسيط الذي يترك البطانة؛ لذلك يُستأصل النسيج المرضي كاملاً وتستمر المراقبة مدى الحياة لأن الخطر ينخفض كثيراً ولا ينتفي تماماً. الخيارات الأخرى تبالغ في الخطر أو تنكره أو تدّعي تراجعاً تلقائياً لا يحدث.",
+          "xp": 12,
+          "hints": [
+            "Premalignant potential is the whole reason for excision.",
+            "The risk is reduced, not erased, after complete resection."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: كيسة قناوية من النوع الأول (المغزلي، وهو الأشيع) في طفلة قدمت بالثالوث الكلاسيكي: يرقان، وكتلة كيسية في المراق الأيمن، والتهاب أقنية صفراوية مع هجمة بنكرياس سابقة. الدروس: الموجات فوق الصوتية هي الفحص التشخيصي، والرنين المغناطيسي للقنوات يحدد النوع (الأول مغزلي والأشيع، والثاني رتق حقيقي نادر، والثالث فقاعة داخل الاثني عشر، والرابع أ متعدد داخل وخارج الكبد، والرابع ب خارج الكبد فقط). فخ الامتحان: الكيسة آفة ما قبل سرطانية تتحول إلى سرطان الأقنية الصفراوية، والعلاج هو الاستئصال الكامل مع مفاغرة روا-إن-واي وليس التصريف البسيط، مع مراقبة مدى الحياة لأن الخطر يبقى منخفضاً لا معدوماً.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

@@ -1,0 +1,1496 @@
+{
+ "schema_version": "2.0.0",
+ "lecture": {
+  "id": "L2_stomach",
+  "title": "The Stomach and Duodenum: Anatomy, Histology, Physiology and Investigations",
+  "module": "gastroenterology",
+  "system": "gastrointestinal",
+  "specialty": "internal_medicine",
+  "source": {
+   "file_name": "L2 stomach.pdf",
+   "page_count": 31
+  },
+  "order_index": 1,
+  "tags": [
+   "stomach",
+   "duodenum",
+   "gastric anatomy",
+   "gastric secretion",
+   "cephalic phase",
+   "gastric phase",
+   "intestinal phase",
+   "OGD",
+   "endoscopic ultrasound",
+   "H. pylori",
+   "gastric cancer staging"
+  ],
+  "golden_tip": [
+   "EXAM TRAP: ALL arteries of the stomach arise from ONE trunk — the celiac axis (Lt & Rt gastric, Lt & Rt gastroepiploic, short gastrics), and ALL gastric veins drain to the portal vein — that is why gastric cancer and infection seed the liver.",
+   "CLINICAL PEARL: the parietal cell secretes BOTH HCl and intrinsic factor — destroy it (atrophic gastritis, gastrectomy) and you get achlorhydria PLUS B12-deficiency pernicious anemia.",
+   "EXAM TRAP: the intestinal phase is INHIBITORY — duodenal chyme at pH<2 or with lipids switches gastric secretion OFF via 3 routes: vagal (medulla), local reflexes, and the hormones secretin, GIP and CCK."
+  ]
+ },
+ "concepts": [
+  {
+   "id": "L2_stomach_c0",
+   "lecture_id": "L2_stomach",
+   "title": "Lecture Overview and Learning Objectives",
+   "summary_ar": "محاضرة المعدة والاثني عشر تغطي أربعة محاور: تشريح المعدة (التروية الدموية والتعصيب والتصريف اللمفاوي)، والنسيج (أنواع الخلايا وإفرازاتها)، وفيزيولوجيا الإفراز المعدي ومراحله الثلاث (الرأسية والمعدية والمعوية)، ثم الفحوصات التشخيصية المناسبة.",
+   "sections": [
+    {
+     "heading": "Scope of the Lecture and Learning Outcomes",
+     "body_text": "This lecture — **Stomach and Duodenum** (GIT module, internal medicine) — builds the anatomical and physiological foundation required before studying gastric diseases, then reviews the appropriate investigations. The title slide shows a 3D anatomical illustration of the human torso with the gastrointestinal tract highlighted in red: the **stomach** is a prominent J-shaped organ in the upper left abdomen, and the **duodenum** is the initial C-shaped segment of small intestine that connects the stomach to the rest of the bowel.\n\n**Learning objectives (LO) of the lecture:**\n- **LO1:** the anatomy of the stomach regarding **blood supply, nerve supply and lymphatic supply**.\n- **LO2:** **histology** — the type of cells and their secretions.\n- **LO3:** the **physiology** of the stomach — how secretion starts, and the **phases of digestion**.\n- **LO4:** the most appropriate **investigations**.\n\nThe lecture follows exactly this order: gross anatomy (parts, layers, blood supply, venous drainage, lymphatics, nerve supply) → histology of the gastric and duodenal mucosa → the three phases of gastric secretion (**cephalic → gastric → intestinal**) → gastric motor function → a nine-item investigation list (**OGD | radiology (plain & contrast) | ultrasound (conventional, endoscopic, laparoscopic) | CT & MRI | PET | laparoscopy | gastric emptying study | angiography | H. pylori tests**). The reference textbook is Davidson's Principles and Practice of Medicine, 23rd Edition.",
+     "key_points": [
+      "LO1 — anatomy: blood supply, nerve supply and lymphatic supply of the stomach.",
+      "LO2 — histology: cell types of the stomach and duodenum and their secretions.",
+      "LO3 — physiology: how gastric secretion starts and the phases of digestion (cephalic, gastric, intestinal).",
+      "LO4 — the most appropriate investigations of the upper GIT (9 modalities).",
+      "The lecture is image-heavy: labeled diagrams carry the anatomy (vessels, lymph nodes, vagus nerves) and flowcharts carry the physiology."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Stomach",
+     "definition_ar": "المعدة: عضو عضلي على شكل حرف J في أعلى البطن جهة اليسار، يعمل كخزان للطعام ويقوم بتفتيته ميكانيكياً وهضمه الحمضي."
+    },
+    {
+     "term": "Duodenum",
+     "definition_ar": "الاثنا عشر: أول جزء من الأمعاء الدقيقة على شكل حرف C، يستقبل الكيموس من البواب وتفرز فيه هرمونات السيكريتن وCCK."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 0
+  },
+  {
+   "id": "L2_stomach_c1",
+   "lecture_id": "L2_stomach",
+   "title": "Gross Anatomy of the Stomach: Parts, Layers and Functions",
+   "summary_ar": "وظائف المعدة: خزان للطعام وتفتيته ميكانيكياً. أجزاؤها من الأعلى للأسفل: الفؤادة والقاع والجسم والبواب، مع انحناء صغير (إنسي) وآخر كبير (وحشي)، وجدار عضلي من ثلاث طبقات: طولية ودائرية ومائلة (خاصة بالمعدة).",
+   "sections": [
+    {
+     "heading": "Functions of the Stomach",
+     "body_text": "The lecture lists two functions for the stomach:\n- **Food reservoir** — stores a large ingested meal and releases it gradually into the duodenum.\n- **Mechanical breakdown of food** — mixing and grinding of the bolus with secretions until it becomes liquid chyme.\nThe stomach lining (mucosa) is folded into **rugae**, which flatten out as the organ distends, allowing reservoir expansion. The simplified anatomy diagram on the slide also marks the supporting inlet and outlet structures: **esophagus → lower esophageal sphincter (LES) at the diaphragm → stomach (stomach lining) → pyloric sphincter → duodenum**.",
+     "key_points": [
+      "Two functions: food reservoir + mechanical breakdown of food.",
+      "Rugae are mucosal folds that allow the stomach to expand.",
+      "The diaphragm surrounds the esophageal hiatus; LES and pyloric sphincter guard the inlet and outlet."
+     ]
+    },
+    {
+     "heading": "Parts of the Stomach (Anatomical Diagram Labels)",
+     "body_text": "From proximal to distal, the labeled parts of the stomach on the slide diagram are:\n- **Esophagus** — enters the stomach at the **cardia**, passing through the diaphragm.\n- **Fundus** — the dome-shaped upper part above the gastro-esophageal junction (gas-filled on imaging).\n- **Body** — the main central compartment and largest reservoir area.\n- **Pylorus** — the distal outflow segment containing the **pyloric sphincter**, which opens into the **duodenum**.\n- Curvatures: **lesser curvature (medial surface)** and **greater curvature (lateral surface)**; the stomach also has a defined **anterior surface**.\n- **Rugae** — the mucosal folds visible in the empty stomach.\n- The **left gastroepiploic vessels** are shown running along the greater curvature.\n\nPseudo-table (proximal → distal): **Cardia | Fundus | Body | Pylorus (pyloric sphincter) | Duodenum**.",
+     "key_points": [
+      "Parts in order: cardia, fundus, body, pylorus (with pyloric sphincter) → duodenum.",
+      "Lesser curvature = medial surface; greater curvature = lateral surface.",
+      "Left gastroepiploic vessels run along the greater curvature."
+     ]
+    },
+    {
+     "heading": "Layers of the Gastric Wall",
+     "body_text": "The slide diagram labels three muscular layers of the gastric wall, from external to internal:\n- **Longitudinal muscle layer** (outer).\n- **Circular muscle layer** (middle).\n- **Oblique muscle layer** overlying the mucosa (innermost).\nThe **oblique layer** is the extra layer characteristic of the stomach (not found in the rest of the GIT tube); it is responsible for the grinding/churning movements. Deep to the muscle lies the mucosa lined by mucus-producing epithelium (see the histology concept), thrown into rugae when empty. The whole organ is fixed between the **diaphragm** above (esophageal hiatus) and the **duodenum** below, with the **lower esophageal sphincter** and **pyloric sphincter** acting as the inlet and outlet valves respectively.",
+     "key_points": [
+      "Three muscle layers: longitudinal (outer), circular (middle), oblique (innermost, unique to stomach).",
+      "The oblique layer overlying the mucosa serves grinding/churning.",
+      "LES and pyloric sphincter are the functional inlet and outlet valves."
+     ],
+     "check": {
+      "prompt": "Which gastric muscle layer lies innermost, overlying the mucosa, and is unique to the stomach?",
+      "options": [
+       "Oblique muscle layer",
+       "Circular muscle layer",
+       "Longitudinal muscle layer",
+       "Muscularis mucosae"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الطبقة المائلة هي أعمق طبقات العضل وتغطي المخاطية، وهي خاصة بالمعدة وتساعد على الطحن. الطبقتان الطولية والدائرية موجودتان في كل الأنبوب الهضمي، والعضلية المخاطية طبقة رقيقة داخل المخاطية نفسها وليست من طبقات جدار المعدة العضلية."
+     }
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Fundus",
+     "definition_ar": "قاع المعدة: الجزء العلوي المتسع فوق فتحة المريء، يمتلئ بالغازيّاً في الصور الشعاعية."
+    },
+    {
+     "term": "Cardia",
+     "definition_ar": "الفؤادة: منطقة اتصال المريء بالمعدة حول فتحة الدخول."
+    },
+    {
+     "term": "Pylorus",
+     "definition_ar": "البواب: الجزء الأخير من المعدة، يحوي العضلة العاصرة البوابية التي تنظم مرور الكيموس إلى الاثني عشر."
+    },
+    {
+     "term": "Rugae",
+     "definition_ar": "طيات مخاطية في بطانة المعدة تختفي عند امتلائها فتسمح بالتمدد كخزان."
+    },
+    {
+     "term": "Oblique muscle layer",
+     "definition_ar": "الطبقة العضلية المائلة: أعمق طبقات عضل المعدة، خاصة بها، وتساعد على الطحن والخلط."
+    },
+    {
+     "term": "Greater curvature",
+     "definition_ar": "الانحناء الكبير: الحافة الوحشية (اليسرى) للمعدة، تمتد عليه الشرايين الثربية المعدية."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 1
+  },
+  {
+   "id": "L2_stomach_c2",
+   "lecture_id": "L2_stomach",
+   "title": "Blood Supply and Venous Drainage of the Stomach",
+   "summary_ar": "كل شرايين المعدة تنشأ من الجذع البطني (Celiac axis): المعدي الأيمن والأيسر على الانحناء الصغير، والثربيّان المعدّيان الأيمن والأيسر على الانحناء الكبير، والشرايين القصيرة للقاع. وكل الأوردة تصب في الوريد البابي الكبدي.",
+   "sections": [
+    {
+     "heading": "Arterial Supply — All Branches from the Celiac Axis",
+     "body_text": "**Blood supply is from the celiac axis** (the first anterior branch of the abdominal aorta). The five named gastric arteries listed in the lecture:\n- **Lt (left) gastric artery** — runs along the **lesser curvature**.\n- **Rt (right) gastric artery** — along the **lesser curvature** (lower part).\n- **Rt (right) gastroepiploic artery** — along the **greater curvature** (inferior aspect).\n- **Lt (left) gastroepiploic artery** — along the **greater curvature** (superior aspect, patient's left).\n- **Short gastric arteries (vasa brevia)** — supply the **fundus**.\n\nAdditional vessels labeled on the slide diagram: the **aorta** giving the celiac axis; the **splenic artery** (source of the short gastrics and left gastroepiploic); the **gastroduodenal artery**, which descends **behind the first part of the duodenum**; and the **right gastroepiploic artery** running along the inferior greater curvature. Small **lymph nodes** are depicted clustered along the curvatures following these same arteries — arteries, veins and lymphatics of the stomach travel together.\n\nPseudo-table (artery | course/territory): **Lt gastric | lesser curvature** | **Rt gastric | lesser curvature** | **Rt gastroepiploic | greater curvature (inferior)** | **Lt gastroepiploic | greater curvature (superior)** | **Short gastrics (vasa brevia) | fundus**.",
+     "key_points": [
+      "ALL gastric arteries arise from the celiac axis.",
+      "Lesser curvature: Lt + Rt gastric arteries; greater curvature: Lt + Rt gastroepiploic; fundus: short gastrics (vasa brevia).",
+      "Gastroduodenal artery descends behind the first part of the duodenum; splenic artery gives the short gastrics and left gastroepiploic."
+     ],
+     "check": {
+      "prompt": "A surgeon asks: from which single arterial trunk does the ENTIRE stomach receive its blood supply?",
+      "options": [
+       "Celiac axis",
+       "Superior mesenteric artery",
+       "Inferior mesenteric artery",
+       "Proper hepatic artery"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجذع البطني هو المصدر الوحيد لشرايين المعدة الخمسة (المعديّان والثربيّان والقصيرة). الشريان المساريقي العلوي يروي الأمعاء من الاثني عشر البعيد، والمساريقي السفلي يروي القولون البعيد، والشريان الكبدي الأصيص فرع للجذع البطني وليس مصدر شرايين المعدة."
+     }
+    },
+    {
+     "heading": "Venous Drainage — Everything to the Portal Vein",
+     "body_text": "**Venous drainage: to the portal vein.** All gastric veins are tributaries of the portal venous system and accompany the arteries. The veins labeled on the slide diagram:\n- **Left gastric vein & oesophageal branches** (lesser curvature — the classic porto-systemic anastomosis with oesophageal veins at the gastro-esophageal junction).\n- **Right gastric vein**.\n- **Short gastrics** and **left gastro-epiploic veins** — drain toward the **splenic vein**.\n- **Right gastro-epiploic vein** — draining with the **superior pancreatico-duodenal** and **superior mesenteric** territory.\n- **Pre-pyloric vein of Mayo** (*first described by Latarjet*) — crosses anterior to the pylorus, an important surgical landmark.\n\nClinical relevance: because all drainage is portally-directed, gastric cancer and infection can reach the liver via the portal vein, and in portal hypertension the gastric/oesophageal veins become engorged (varices).",
+     "key_points": [
+      "ALL gastric veins drain into the portal vein.",
+      "Left gastric vein connects with oesophageal veins — the porto-systemic anastomosis site.",
+      "Short gastrics + left gastro-epiploic → splenic vein; right-sided veins join the superior mesenteric/pancreatico-duodenal territory.",
+      "Pre-pyloric vein of Mayo (described first by Latarjet) crosses the anterior pylorus."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Celiac axis",
+     "definition_ar": "الجذع البطني: شريان ينشأ من البطن الأمامي للأورطي البطني ويغذي المعدة والكبد والطحال والاثني عشر والبنكرياس."
+    },
+    {
+     "term": "Short gastric arteries (vasa brevia)",
+     "definition_ar": "الشرايين المعدية القصيرة: فروع من الشريان الطحالي تروي قاع المعدة."
+    },
+    {
+     "term": "Gastroepiploic arteries",
+     "definition_ar": "الشرايين الثربية المعدية: أيمن وأيسر، تمتد على الانحناء الكبير للمعدة."
+    },
+    {
+     "term": "Portal vein",
+     "definition_ar": "الوريد البابي الكبدي: يجمع دم الجهاز الهضمي إلى الكبد، وفيه تصب كل أوردة المعدة."
+    },
+    {
+     "term": "Pre-pyloric vein of Mayo",
+     "definition_ar": "وريد مايو أمام البواب: يعبر البواب أماماً كعلامة جراحية، وصفه لاتارجيه أولاً."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 2
+  },
+  {
+   "id": "L2_stomach_c3",
+   "lecture_id": "L2_stomach",
+   "title": "Lymphatic Drainage of the Stomach",
+   "summary_ar": "التصريف اللمفاوي للمعدة مهم في سرطان المعدة لأن الورم ينتشر لمفاوياً بعيداً عن جدار المعدة. المجموعات الأربع: المعوية العلوية (الانحناء الصغير/الفؤادة)، فوق البوابية، البنكرياسية الطحالية (الانحناء الكبير)، والمعوية السفلية تحت البوابية.",
+   "sections": [
+    {
+     "heading": "Lymph Node Groups — Important in Cancer",
+     "body_text": "**Lymphatic drainage is important in cancer** — gastric carcinoma spreads primarily through the lymphatic routes of the stomach, and these routes follow the arteries along both curvatures. The slide diagram shows green lymphatic vessels with black arrows indicating the **centrifugal direction of lymph flow away from the stomach wall** toward the node groups; dashed lines divide the stomach into drainage territories.\n\n**The four labeled node groups:**\n- **Superior gastric group of nodes** — along the lesser curvature near the gastro-esophageal junction/cardia.\n- **Suprapyloric group of nodes** — above the pylorus, along the lesser curvature near the gastric antrum.\n- **Pancreaticolienal (pancreaticosplenic) group of nodes** — along the greater curvature, draining toward the spleen and pancreas.\n- **Inferior gastric (subpyloric) group of nodes** — along the greater curvature inferiorly, below the pylorus.\nAdditional omental/retroperitoneal node clusters are indicated near the distal stomach and pyloric region.\n\nPseudo-table (node group | territory): **Superior gastric | upper lesser curvature (cardia/GEJ)** | **Suprapyloric | antrum/pylorus above** | **Pancreaticolienal | fundus + greater curvature toward spleen/pancreas** | **Inferior gastric subpyloric | lower greater curvature, below pylorus**.",
+     "key_points": [
+      "Lymphatic spread is the dominant route of gastric cancer — hence 'important in cancer'.",
+      "Four groups: superior gastric, suprapyloric, pancreaticolienal, inferior gastric (subpyloric).",
+      "Lymph flows centrifugally away from the stomach wall, following the arteries along both curvatures."
+     ],
+     "check": {
+      "prompt": "Gastric cancer involves the greater curvature near the fundus, spreading toward the spleen and pancreas. Which node group drains this territory?",
+      "options": [
+       "Pancreaticolienal nodes",
+       "Superior gastric nodes",
+       "Suprapyloric nodes",
+       "Inferior gastric (subpyloric) nodes"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المجموعة البنكرياسية الطحالية تستقبل لمفاويات الانحناء الكبير باتجاه الطحال والبنكرياس. المعوية العلوية على الانحناء الصغير قرب الفؤادة، وفوق البوابية حول البواب من الأعلى، وتحت البوابية أسفل البواب على الانحناء الكبير السفلي."
+     }
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Superior gastric nodes",
+     "definition_ar": "العقد المعوية العلوية: على الانحناء الصغير قرب الوصلة المريئية المعدية والفؤادة."
+    },
+    {
+     "term": "Suprapyloric nodes",
+     "definition_ar": "العقد فوق البوابية: فوق البواب قرب الغار المعدي على الانحناء الصغير."
+    },
+    {
+     "term": "Pancreaticolienal nodes",
+     "definition_ar": "العقد البنكرياسية الطحالية: على الانحناء الكبير، تصرف لمفاويات باتجاه الطحال والبنكرياس."
+    },
+    {
+     "term": "Subpyloric nodes",
+     "definition_ar": "العقد تحت البوابية (المعوية السفلية): أسفل البواب على الانحناء الكبير."
+    }
+   ],
+   "difficulty": "advanced",
+   "order_index": 3
+  },
+  {
+   "id": "L2_stomach_c4",
+   "lecture_id": "L2_stomach",
+   "title": "Nerve Supply of the Stomach",
+   "summary_ar": "التعصيب الداخلي: ضفيرة أورباخ العضلية (الحركة) وضفيرة مايسنر تحت المخاطية (الإفراز). والتعصيب الخارجي نظير ودّي عبر العصب الحائر الأمامي والخلفي، مع الفروع الكبدية والبنكرياسية وعصب لاتارجيه، وخطوط قطع المبهم الجذعي والانتقائي.",
+   "sections": [
+    {
+     "heading": "Intrinsic (Enteric) Nerves",
+     "body_text": "The stomach possesses its own intrinsic nervous system — the **enteric plexuses**:\n- **Myenteric plexus (Auerbach)** — located between the muscle layers; controls **motility** (peristalsis, mixing and grinding contractions).\n- **Submucosal plexus (Meissner)** — located in the **submucosa**; controls **secretion** and local blood flow.\nThese plexuses can mediate **local reflexes** entirely within the gastric wall (used in the gastric and intestinal phases of secretion) even without extrinsic input.",
+     "key_points": [
+      "Auerbach (myenteric) plexus = between muscle layers = motility.",
+      "Meissner (submucosal) plexus = in submucosa = secretion.",
+      "Enteric plexuses mediate local reflexes independent of the brain."
+     ]
+    },
+    {
+     "heading": "Extrinsic Nerves — the Vagus and Vagotomy Anatomy",
+     "body_text": "**Extrinsic supply is parasympathetic via the vagus nerves:**\n- **Anterior vagus** (from the left vagus trunk) on the anterior gastric surface.\n- **Posterior vagus** (from the right vagus trunk) on the posterior surface.\n\nLabels on the slide diagram: **right vagus nerve** | **left vagus nerve** | **anterior nerve of Latarjet** (running on the lesser curvature toward the antrum) | **hepatic branch of the left (anterior) vagus** | **celiac branch of the right (posterior) vagus** | **pyloric branch of the left vagus**.\n\n**Surgical anatomy of vagotomy (dashed lines on the diagram):**\n- **Line of division for truncal vagotomy** — across the esophagus ABOVE the gastric branches: divides the whole trunk including the hepatic and celiac branches.\n- **Line of division for selective vagotomy** — lower line that spares/isolates the hepatic and celiac branches, dividing only the gastric branches.\n\nVagal (parasympathetic) stimulation INCREASES gastric secretion and motility — the physiological basis of the cephalic phase, and the reason vagotomy was historically used for acid-related disease.",
+     "key_points": [
+      "Extrinsic supply: anterior vagus (left trunk) + posterior vagus (right trunk).",
+      "Anterior nerve of Latarjet runs on the lesser curvature to the antrum; hepatic branch (left vagus) and celiac branch (right vagus) must be preserved in selective vagotomy.",
+      "Truncal vagotomy divides above the gastric branches (whole trunk); selective vagotomy divides only gastric branches, sparing hepatic and celiac branches.",
+      "Vagus = secretomotor to the stomach (parasympathetic)."
+     ],
+     "check": {
+      "prompt": "Which intrinsic plexus lies in the submucosa and regulates gastric secretion?",
+      "options": [
+       "Submucosal plexus (Meissner)",
+       "Myenteric plexus (Auerbach)",
+       "Celiac plexus",
+       "Anterior nerve of Latarjet"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ضفيرة مايسنر تقع تحت المخاطية وتنظم الإفراز وجريان الدم الموضعي، بينما ضفيرة أورباخ بين طبقات العضلات وتنظم الحركة. والضفيرة البطنية تعصيب ودّي، وعصب لاتارجيه فرع حائري خارجي وليس ضفيرة داخلية."
+     }
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Myenteric (Auerbach) plexus",
+     "definition_ar": "ضفيرة أورباخ العضلية: بين طبقات العضلات، تنظّم حركة المعدة والتمعج."
+    },
+    {
+     "term": "Submucosal (Meissner) plexus",
+     "definition_ar": "ضفيرة مايسنر تحت المخاطية: تنظّم الإفراز وجريان الدم الموضعي."
+    },
+    {
+     "term": "Nerve of Latarjet",
+     "definition_ar": "عصب لاتارجيه الأمامي: فرع من الحائر الأمامي يمتد على الانحناء الصغير نحو الغار المعدي."
+    },
+    {
+     "term": "Truncal vagotomy",
+     "definition_ar": "قطع المبهم الجذعي: خط قطع عبر المريء فوق الفروع المعدية فيشمل الفروع الكبدية والبنكرياسية."
+    },
+    {
+     "term": "Selective vagotomy",
+     "definition_ar": "قطع المبهم الانتقائي: يقطع الفروع المعدية فقط مع الحفاظ على الفرعين الكبدي والبنكرياسي."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 4
+  },
+  {
+   "id": "L2_stomach_c5",
+   "lecture_id": "L2_stomach",
+   "title": "Histology: Cell Types and Secretions of the Stomach and Duodenum",
+   "summary_ar": "خلايا المعدة: الظهارية المخاطية (مخاط لزج)، الجدارية (HCl والعامل الداخلي)، الرئيسية (ببسينوجين)، G (غاسترين)، D (سوماتوستاتين)، وECL (هستامين). وفي الاثني عشر غدد برونر المخاطية وخلايا صماء تفرز CCK والسيكريتن. حمض HCl يحول الببسينوجين إلى ببسين.",
+   "sections": [
+    {
+     "heading": "Gastric and Duodenal Cell Types — the Master Table",
+     "body_text": "**Cell | Secretion (exactly as listed in the lecture):**\n- 1. **Gastric epithelium — mucus-producing cells**: **mucous (viscid mucopolysaccharide)** — the protective surface layer.\n- 2. **Parietal cells**: **HCl** (hydrochloric acid) AND **IF (intrinsic factor)** — the only source of intrinsic factor, essential for vitamin B12 absorption in the terminal ileum.\n- 3. **Chief cells**: **pepsinogen** — the inactive precursor of pepsin.\n- 4. **Endocrine cells**: **G cells → gastrin** (stimulates acid secretion); **D cells → somatostatin** (inhibitory brake on the G-cell/parietal axis).\n- 5. **Enterochromaffin-like (ECL) cells**: **histamine** — the local paracrine amplifier that stimulates parietal cells.\n- 6. **Duodenum — Brunner's glands**: **mucous** (alkaline mucus that neutralizes gastric acid entering the duodenum).\n- 7. **Endocrine cells (duodenum)**: **CCK (cholecystokinin)** and **secretin**.\n\nFunctional integration: **gastrin (G cell) → ECL-cell histamine → parietal-cell HCl**; **somatostatin (D cell) switches the loop OFF**. CCK and secretin act in the intestinal phase (inhibition of gastric secretion).",
+     "key_points": [
+      "Parietal cell = HCl + intrinsic factor (both!).",
+      "Chief cell = pepsinogen; G cell = gastrin; D cell = somatostatin; ECL cell = histamine.",
+      "Surface mucous cells secrete viscid mucopolysaccharide mucus.",
+      "Duodenum: Brunner's glands (mucous) + endocrine cells (CCK, secretin)."
+     ],
+     "check": {
+      "prompt": "A patient with autoimmune atrophic gastritis loses which cell type, producing BOTH achlorhydria and vitamin B12 malabsorption?",
+      "options": [
+       "Parietal cells",
+       "Chief cells",
+       "G cells",
+       "Enterochromaffin-like cells"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الخلايا الجدارية وحدها تفرز HCl والعامل الداخلي معاً، فتدمارها يسبب نقص الحموضة ونقص امتصاص B12 (فقر الدم الوبيل). الرئيسية تفرز الببسينوجين، وG الغاسترين، وECL الهستامين — ولا علاقة لأي منها بـB12."
+     }
+    },
+    {
+     "heading": "Architecture of the Gastric Gland (Histology Diagram)",
+     "body_text": "The histology slide shows the gastric mucosa organized into **gastric pits** (indentations of the **surface epithelium**) leading down into the **glandular region (gastric gland)**. From the pit neck to the gland base:\n- **Mucous neck cells** — in the neck region of the gland.\n- **Parietal cells** — large rounded/pyramidal cells scattered in the neck and body of the gland, packed with **mitochondria** (high metabolic activity needed to pump acid).\n- **Chief cells** — more numerous, concentrated mainly at the **base** of the gland.\n- **Enteroendocrine cells** — at the very base of the gland.\n\n**Secretion chemistry shown on the diagram:** **pepsinogen → pepsin** — the conversion occurs in the gland lumen and is driven by **HCl from the parietal cells**; the activated pepsin then digests dietary protein.",
+     "key_points": [
+      "Gastric pits open from the surface epithelium into the glandular region.",
+      "Layout from neck to base: mucous neck cells → parietal cells → chief cells → enteroendocrine cells.",
+      "Parietal cells are mitochondria-rich (energy for acid pumping).",
+      "HCl activates pepsinogen to pepsin."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Parietal cell",
+     "definition_ar": "الخلية الجدارية: تفرز حمض الهيدروكلوريك HCl والعامل الداخلي اللازم لامتصاص فيتامين B12."
+    },
+    {
+     "term": "Chief cell",
+     "definition_ar": "الخلية الرئيسية: تفرز الببسينوجين (الشكل غير النشط من الببسين)."
+    },
+    {
+     "term": "G cell",
+     "definition_ar": "خلايا G الصماء: تفرز الغاسترين الذي يحفز الخلايا الجدارية مباشرة وعبر تحفيز خلايا ECL."
+    },
+    {
+     "term": "D cell",
+     "definition_ar": "خلايا D: تفرز السوماتوستاتين المثبط لإفراز الحمض والغاسترين."
+    },
+    {
+     "term": "ECL cell",
+     "definition_ar": "الخلايا شبيهة الكروم المعوية: تفرز الهستامين الذي ينبه الخلايا الجدارية موضعياً."
+    },
+    {
+     "term": "Intrinsic factor",
+     "definition_ar": "العامل الداخلي: بروتين تفرزه الخلايا الجدارية يرتبط بـB12 ليمتص في اللفائفي."
+    },
+    {
+     "term": "Pepsinogen",
+     "definition_ar": "الببسينوجين: طليعة إنزيمية غير نشطة تتحول إلى ببسين بفعل حمض HCl."
+    },
+    {
+     "term": "Brunner's glands",
+     "definition_ar": "غدد برونر: غدد في الاثني عشر تفرز مخاطاً قاعدياً يحمي جداره من حموضة الكيموس."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 5
+  },
+  {
+   "id": "L2_stomach_c6",
+   "lecture_id": "L2_stomach",
+   "title": "Physiology of Gastric Secretion — the Cephalic Phase",
+   "summary_ar": "المرحلة الرأسية تسبق وصول الطعام للمعدة: التفكير أو الشم أو التذوق أو الإحساس الفموي ينبه النخاع المستطيل، فتنتقل السيالات نظيرة الودية عبر العصبين الحائرين إلى الضفائر المعوية، فتُنبَّه الخلايا الجدارية والرئيسية مباشرة، وتحفز خلايا G لإفراز الغاسترين الذي يعود بالدم ليعزز الإفراز.",
+   "sections": [
+    {
+     "heading": "The Cephalic Phase Pathway (Step by Step)",
+     "body_text": "The cephalic phase is the **reflex stimulation of gastric secretion that occurs BEFORE food enters the stomach**, driven by the brain. The lecture flowcharts (slides 9-13) break it into steps:\n- **Stimulus:** **taste or smell of food**, **tactile sensations of food in the mouth**, or even **thoughts of food**.\n- These stimuli **stimulate the medulla oblongata** (green arrow in the flowchart).\n- **Parasympathetic action potentials are carried by the vagus nerves to the stomach** (pink arrow).\n- **Preganglionic parasympathetic vagal fibers stimulate postganglionic neurons in the enteric plexus** of the stomach.\n- **Postganglionic neurons then:** (a) **stimulate secretion by parietal and chief cells** directly, and (b) **stimulate gastrin secretion by endocrine (G) cells**.\n- **Gastrin is carried through the circulation back to the stomach** (purple arrow), where it further **stimulates secretion by parietal and chief cells** — an endocrine amplification loop.\n\n**Flow summary:** thought/taste/smell/tactile → medulla oblongata → vagus nerves → enteric plexus → parietal + chief cells (direct neural) AND G cells → gastrin → blood → parietal + chief cells (hormonal).",
+     "key_points": [
+      "Cephalic = pre-prandial (before food reaches the stomach); triggers are taste, smell, tactile sensation in the mouth, or even thoughts of food.",
+      "Center: medulla oblongata; efferent limb: vagus nerves (parasympathetic).",
+      "Postganglionic enteric neurons stimulate parietal + chief cells AND gastrin release from G cells.",
+      "Gastrin returns via the circulation to amplify parietal and chief cell secretion."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Cephalic phase",
+     "definition_ar": "المرحلة الرأسية: إفراز معدّي عصبي المنشأ يحدث قبل وصول الطعام للمعدة بوساطة العصب الحائر."
+    },
+    {
+     "term": "Medulla oblongata",
+     "definition_ar": "النخاع المستطيل: مركز الانعكاس العصبي الذي يستقبل مثيرات الطعام ويرسل السيالات الحائرية للمعدة."
+    },
+    {
+     "term": "Gastrin",
+     "definition_ar": "الغاسترين: هرمون من خلايا G يصل بالدم إلى الخلايا الجدارية والرئيسية فيحفز إفرازها."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 6
+  },
+  {
+   "id": "L2_stomach_c7",
+   "lecture_id": "L2_stomach",
+   "title": "Physiology of Gastric Secretion — the Gastric Phase",
+   "summary_ar": "المرحلة المعدية تبدأ بوصول الطعام إلى المعدة: تمدد المعدة يطلق منعكساً حائرياً (سيالات حسية إلى النخاع المستطيل ثم حركية عائدة عبر الحائر) وتنشط المنعكسات الموضعية داخل جدار المعدة، فتزداد الإفرازات المعدية.",
+   "sections": [
+    {
+     "heading": "The Gastric Phase — Distention-Driven Secretion",
+     "body_text": "Once food **enters the stomach**, the gastric phase maintains and amplifies secretion. The lecture flowchart numbers three linked events:\n- **(1) Vagovagal reflex:** **distention** of the stomach sends sensory (afferent) action potentials through the **vagus nerves** up to the **medulla oblongata**, which returns motor (efferent) vagal action potentials to the stomach.\n- **(2) Secretions stimulated:** the efferent vagal output drives secretion by the parietal, chief and endocrine cells (same effectors as the cephalic phase).\n- **(3) Local reflexes:** stomach **distention also stimulates local reflexes within the gastric wall itself** (enteric plexuses — Auerbach/Meissner), so secretion can be sustained even without the brain.\n\n**Flow summary:** food → distention → vagal afferents → medulla oblongata → vagal efferents → secretions stimulated, PLUS distention → local enteric reflexes → secretions stimulated.",
+     "key_points": [
+      "Gastric phase starts when food enters/distends the stomach.",
+      "Distention triggers a vagovagal reflex through the medulla oblongata (afferent AND efferent limbs in the vagus).",
+      "Local (enteric) reflexes stimulated by distention provide a brain-independent secretory drive."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Vagovagal reflex",
+     "definition_ar": "المنعكس الحائري: ألياف حاسية من المعدة إلى النخاع المستطيل ثم ألياف حركية عائدة عبر العصب الحائر لتحفز الإفراز."
+    },
+    {
+     "term": "Local reflex",
+     "definition_ar": "المنعكس الموضعي: انعكاس تُنجزه ضفائر جدار المعدة نفسها (أورباخ/مايسنر) دون تدخل الدماغ."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 7
+  },
+  {
+   "id": "L2_stomach_c8",
+   "lecture_id": "L2_stomach",
+   "title": "The Intestinal Phase — Inhibitory Control of Gastric Secretion",
+   "summary_ar": "المرحلة المعوية كابحة: وصول الكيموس الحمضي (درجة حموضة أقل من 2) أو المحتوي على نواتج هضم الدهون إلى الاثني عشر يثبط إفراز المعدة بثلاث آليات: عصبية عبر الحائر والنخاع المستطيل، ومنعكسات موضعية، وهرمونية عبر السيكريتن والببتيد المثبط للمعدة GIP والكوليسيستوكينين CCK.",
+   "sections": [
+    {
+     "heading": "The Inhibitory Trigger of the Intestinal Phase",
+     "body_text": "Gastric secretion is not only switched ON — the duodenum can switch it OFF. **Chyme in the duodenum with a pH less than 2, or containing fat digestion products (lipids), inhibits gastric secretions by THREE mechanisms.** This negative feedback protects the duodenal mucosa from excessive acid and matches the delivery of chyme to the digestive capacity of the small intestine.",
+     "key_points": [
+      "Trigger: duodenal chyme with pH<2 OR fat digestion products (lipids).",
+      "Effect: inhibition (decrease) of gastric secretions — an enterogastric negative feedback.",
+      "Three mechanisms: neural (vagal), local reflexes, hormonal."
+     ]
+    },
+    {
+     "heading": "The Three Inhibitory Mechanisms",
+     "body_text": "- **Mechanism One (neural — vagal/medullary):** **sensory vagal action potentials travel to the medulla oblongata** (green arrow) and **inhibit the motor action potentials from the medulla oblongata** (pink arrow) that would otherwise travel down the vagus to the stomach → **decreased gastric secretions**.\n- **Mechanism Two (local reflexes):** **local reflexes inhibit gastric secretion** (orange arrows) — reflex arcs within the gastric/duodenal wall itself, a brain-independent enteric mechanism (this slide is shown twice in the lecture, emphasizing its importance).\n- **Mechanism Three (hormonal — via circulation):** the duodenum produces **secretin, gastric inhibitory peptide (GIP), and cholecystokinin (CCK)**, which enter the **circulation** (brown arrows) and reach the stomach through the blood to **inhibit gastric secretions**.\n\nPseudo-table: **Stimulus (pH<2 or lipids in duodenum) → Mechanism | Pathway | Effect:** 1 | vagal afferents → medulla → ↓ vagal efferents | decreased gastric secretions | 2 | local reflex arcs in the wall | decreased gastric secretions | 3 | secretin + GIP + CCK via blood | decreased gastric secretions.",
+     "key_points": [
+      "Mechanism 1: sensory vagal input to the medulla inhibits vagal motor output to the stomach.",
+      "Mechanism 2: local reflexes in the gastric/duodenal wall inhibit secretion.",
+      "Mechanism 3: hormones secretin, GIP and CCK released by the duodenum into the circulation inhibit gastric secretion."
+     ],
+     "check": {
+      "prompt": "Which trio of duodenal hormones mediates the hormonal inhibition of gastric secretion in the intestinal phase?",
+      "options": [
+       "Secretin, gastric inhibitory peptide and cholecystokinin",
+       "Gastrin, histamine and somatostatin",
+       "Insulin, glucagon and motilin",
+       "Pepsin, HCl and mucus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "حسب المحاضرة: الهرمونات المثبطة المنتجة من الاثني عشر والتي تصل المعدة عبر الدم هي السيكريتن والببتيد المثبط للمعدة GIP والكوليسيستوكينين CCK. أما الغاسترين والهستامين فمحفزان، والسوماتوستاتين مثبط موضعي من خلايا D داخل المعدة، والأنسولين والغلوكاغون والموتيلين هرمونات أخرى، والببسين إنزيم لا هرمون."
+     }
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Chyme",
+     "definition_ar": "الكيموس: خليط نصف سائل من الطعام المهضوم جزئياً وإفرازات المعدة يمر إلى الاثني عشر."
+    },
+    {
+     "term": "Secretin",
+     "definition_ar": "السيكريتن: هرمون من الاثني عشر يثبط الإفراز المعدي ويحفز إفراز البيكربونات البنكرياسية."
+    },
+    {
+     "term": "Gastric inhibitory peptide (GIP)",
+     "definition_ar": "الببتيد المثبط للمعدة: هرمون معوي يثبط إفراز المعدة."
+    },
+    {
+     "term": "Cholecystokinin (CCK)",
+     "definition_ar": "الكوليسيستوكينين: هرمون من الاثني عشر يثبط المعدة ويحفز تقلص المرارة وإفراز إنزيمات البنكرياس."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 8
+  },
+  {
+   "id": "L2_stomach_c9",
+   "lecture_id": "L2_stomach",
+   "title": "Gastric Motor Function",
+   "summary_ar": "مرور اللقمة إلى المعدة يتطلب: انفتاح العاصرة المريئية السفلية، ثم الارتخاء الاستقبالي للمعدة لاستقبال الطعام دون ارتفاع الضغط، ثم الخلط والطحن حتى يصبح الطعام كيموساً. والطريق التشريحي: عاصرة مريئية علوية ثم مريء خلف الرغامى عبر الحجاب ثم العاصرة السفلية إلى المعدة.",
+   "sections": [
+    {
+     "heading": "From Bolus to Chyme — the Motor Events",
+     "body_text": "**Peristalsis of the bolus to the stomach** involves three coordinated steps (lecture list):\n- **Opening of the LES (lower esophageal sphincter)** — lets the swallowed bolus pass from the esophagus into the stomach.\n- **Receptive relaxation in the stomach** — the proximal stomach relaxes in anticipation of the arriving bolus, so the stomach fills and acts as a reservoir WITHOUT a significant rise in intragastric pressure.\n- **Mixing and grinding** — peristaltic churns (using the longitudinal, circular and oblique muscle layers) mix the food with secretions and grind it down until it becomes liquid chyme ready for delivery to the duodenum in controlled aliquots.\n\nThe supporting diagram labels the pathway of the bolus from above downward: **upper esophageal sphincter → esophagus (descending behind the trachea, through the thorax) → diaphragm → lower esophageal sphincter → stomach**.",
+     "key_points": [
+      "Three steps: opening of LES → receptive relaxation → mixing and grinding.",
+      "Receptive relaxation lets the stomach fill as a reservoir without a pressure rise.",
+      "Bolus path: UES → esophagus (behind trachea) → through diaphragm → LES → stomach."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Receptive relaxation",
+     "definition_ar": "الارتخاء الاستقبالي: ارتخاء قاع وجسم المعدة قبل وصول اللقمة لاستقبال الطعام دون ارتفاع الضغط داخل المعدة."
+    },
+    {
+     "term": "Lower esophageal sphincter (LES)",
+     "definition_ar": "العضلة العاصرة السفلية للمريء: تسمح بمرور اللقمة إلى المعدة ثم تمنع القلس."
+    },
+    {
+     "term": "Upper esophageal sphincter (UES)",
+     "definition_ar": "العضلة العاصرة العلوية للمريء: مدخل البلع من البلعوم إلى المريء."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 9
+  },
+  {
+   "id": "L2_stomach_c10",
+   "lecture_id": "L2_stomach",
+   "title": "Investigations I — OGD and Radiology",
+   "summary_ar": "التنظير الهضمي العلوي (OGD) هو فحص الخط الأول: تشخيص وعلاج معاً، آمن (مضاعفات ووفيات = صفر عند الإتقان)، بشرط الخبرة والتخدير وتوفر معدات الإنعاش، ويتيح الخزعة البصرية. والأشعة (عادية وباريوم) تظهر سرطان المعدة كعيب امتلاء غير منتظم والهواء الحر تحت الحجاب في الانثقاب.",
+   "sections": [
+    {
+     "heading": "Investigation No. 1 — Oesophago-Gastro-Duodenoscopy (OGD)",
+     "body_text": "**1- OGD (oesophago-gastro-duodenoscopy)** is the first-line investigation of the upper GIT:\n- **Use: Dx & Rx (diagnosis AND treatment)** — direct visualization of esophagus, stomach and duodenum, with biopsy and endoscopic therapy (for example hemostasis of a bleeding lesion).\n- **Safe: morbidity, mortality = 0** (per the lecture) — when correctly performed.\n- **Requirements:** **experience** of the endoscopist | **sedation** of the patient | **resuscitation equipment** must be available.\n- **Optical biopsy (optical Bx)** — advanced optical endoscopic imaging characterizes the tissue (and confirms) optically.\n\nThe slide shows the procedure (endoscopist with assistants performing scope insertion on a sedated patient) and an endoscopic view of a focal mucosal lesion: a central dark, necrotic-looking core surrounded by a white irregular border with surrounding erythema — the typical endoscopic appearance of an ulcerated, potentially malignant lesion that must be biopsied.",
+     "key_points": [
+      "OGD = diagnosis AND treatment (Dx & Rx) of esophagus, stomach and duodenum.",
+      "Safe: morbidity and mortality = 0 when performed with experience, sedation and resuscitation equipment available.",
+      "Optical biopsy allows optical tissue characterization during the procedure."
+     ],
+     "check": {
+      "prompt": "Besides operator experience, what does the lecture list as requirements for performing safe sedated OGD?",
+      "options": [
+       "Sedation and resuscitation equipment",
+       "General anesthesia in all cases",
+       "Pre-operative barium study",
+       "Laparoscopic backup"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "شروط الأمان في التنظير حسب المحاضرة: الخبرة، والتخدير (الترخوّي الوريدي عادة)، وتوفر معدات الإنعاش. لا يلزم تخدير عام ولا دراسة باريوم مسبقة ولا وجود جراح تنظير بطني احتياطي."
+     }
+    },
+    {
+     "heading": "Investigation No. 2 — Radiology: Plain and Contrast",
+     "body_text": "**2- Radiology: plain & contrast.**\n- **Barium contrast study:** the slide example shows **gastric cancer** as an **irregular, narrowed and ulcerated area in the gastric antrum/pyloric region** producing a **filling defect** with an irregular mucosal pattern and mucosal destruction, partially obstructing the flow of barium into the duodenum.\n- **Endoscopic companion image:** a large, deep, irregularly ulcerated lesion with **raised, rolled-out edges** and a **necrotic base** on erythematous mucosa — an appearance highly suggestive of a **malignant gastric ulcer (Borrmann type II or III)**.\n- **Plain X-ray (erect chest/abdomen):** may demonstrate **free air under the diaphragm (pneumoperitoneum)** indicating perforation of a hollow viscus (e.g., a perforated peptic ulcer), or marked gaseous distension.\n\nPseudo-table (finding | significance): **filling defect with irregular mucosa | infiltrative gastric cancer** | **rolled-out raised ulcer edges | malignant ulcer (Borrmann II-III)** | **free air under the diaphragm | pneumoperitoneum (perforation)**.",
+     "key_points": [
+      "Plain films: look for free air under the diaphragm (pneumoperitoneum = perforation).",
+      "Barium: gastric cancer appears as irregular narrowing with filling defect and mucosal destruction.",
+      "Malignant ulcer endoscopic signature: large, deep, irregular ulcer with raised rolled-out edges and necrotic base."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "OGD",
+     "definition_ar": "تنظير المريء والمعدة والاثني عشر: فحص بالمنظار يتيح التشخيص المباشر وأخذ الخزعات والعلاج (مثل إيقاف النزف)."
+    },
+    {
+     "term": "Optical biopsy",
+     "definition_ar": "الخزعة البصرية: توصيف النسيج أثناء التنظير بتقنيات تصوير متقدمة دون أخذ عينة في بعض الحالات."
+    },
+    {
+     "term": "Filling defect",
+     "definition_ar": "عيب الامتلاء: منطقة فراغ داخل عمود الباريوم تشير إلى آزة تشغل اللمعة كالورم."
+    },
+    {
+     "term": "Pneumoperitoneum",
+     "definition_ar": "هواء حر في التجويف البريتوني (تحت الحجاب) علامة شعاعية على انثقاب عضو مجوف."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 10
+  },
+  {
+   "id": "L2_stomach_c11",
+   "lecture_id": "L2_stomach",
+   "title": "Investigations II — Ultrasound (Conventional, EUS, Laparoscopic), CT, MRI and PET",
+   "summary_ar": "الموجات فوق الصوتية ثلاثة أنواع: التقليدية عبر البطن، والتنظيرية EUS وهي أدق وسيلة لتصنيف عمق الورم T بدقة 90% والعقد اللمفية N بدقة 80% وتكشف الثانويات الكبدية، والجراحية التنظيرية. والأشعة المقطعية والرنين تظهران الورم والهواء الحر، وPET بمتبع FDG يكشف العقد النقيلية والانتشار.",
+   "sections": [
+    {
+     "heading": "Investigation No. 3 — Ultrasound: Conventional, Endoscopic (EUS) and Laparoscopic",
+     "body_text": "**3- Ultrasound** has three forms in gastric disease:\n- **1- Conventional USS** — the ordinary transabdominal scan.\n- **2- Endoscopic ultrasound (EUS)** — the key locoregional **staging** tool for gastric cancer:\n  - **T (tumor depth): 90% accuracy.**\n  - **N (regional lymph nodes): 80% accuracy.**\n  - Can demonstrate **hepatic secondaries** (liver metastases).\n  - The EUS image resolves the gastric wall from the transducer outward into concentric layers: **M = mucosa (with muscularis mucosa) | SM = submucosa | MP = muscularis propria | S = serosa** — T-stage is judged by the deepest layer the tumor breaches.\n- **3- Laparoscopic US** — intraoperative ultrasound during laparoscopy (small liver and peritoneal deposits).\n\nPseudo-table (layer | EUS abbreviation): **mucosa | M** | **submucosa | SM** | **muscularis propria | MP** | **serosa | S**.",
+     "key_points": [
+      "EUS staging accuracy: T = 90%, N = 80%.",
+      "EUS can also demonstrate hepatic secondaries.",
+      "Wall layers on EUS: M (mucosa), SM (submucosa), MP (muscularis propria), S (serosa).",
+      "Three ultrasound forms: conventional, endoscopic (EUS), laparoscopic."
+     ],
+     "check": {
+      "prompt": "For locoregional staging of gastric cancer, which investigation gives T-stage accuracy of about 90% and N-stage accuracy of about 80%?",
+      "options": [
+       "Endoscopic ultrasound (EUS)",
+       "Plain abdominal X-ray",
+       "Barium meal",
+       "Conventional transabdominal ultrasound"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التنظير بالموجات فوق الصوتية EUS هو الأدق لتحديد عمق غزو الورم (90%) وتقييم العقد اللمفية الجهادية (80%). الأشعة العادية والباريوم لا تظهران طبقات الجدار، والموجات التقليدية عبر البطن محدودة بدقة الطبقات."
+     }
+    },
+    {
+     "heading": "Investigations No. 4 and 5 — CT, MRI and PET Scan",
+     "body_text": "**4- CT scan & MRI:**\n- CT detects **free air (pneumoperitoneum)** in the upper abdomen/peritoneal cavity.\n- CT demonstrates **gastric cancer** as an **irregular thickened wall or mass lesion** within the stomach, and defines the **liver** and other adjacent organs for staging.\n\n**5- CT/PET scan (Positron Emission Tomography):**\n- Uses **fluorodeoxyglucose (FDG) as tracer** — metabolically active cancer cells take up the glucose analogue and appear as bright foci.\n- Slide example 1 (coronal PET): **advanced gastric cancer with lymph node spread** — bright tracer uptake in the **stomach cancer** plus a hot spot of **lymph node mets** below it (normal heart, liver, kidneys and lungs are also outlined).\n- Slide example 2 (axial CT vs PET): nodes that are equivocal on **CT** show clear **focal uptake on PET** — 'cancer in nodes on PET' — confirming metastatic involvement.\n- PET therefore adds **functional/metabolic confirmation** of nodal and distant spread to the anatomical information of CT.",
+     "key_points": [
+      "CT/MRI: pneumoperitoneum, wall thickening/mass of gastric cancer, liver and organ assessment.",
+      "PET tracer = fluorodeoxyglucose (FDG); bright uptake = metabolically active cancer.",
+      "PET confirms lymph-node metastases when CT is equivocal (CT/PET combination)."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Endoscopic ultrasound (EUS)",
+     "definition_ar": "التنظير بالموجات فوق الصوتية: منظار مزود بمسبار فوق صوتي يصور طبقات جدار المعدة والعقد المجاورة لتصنيف الورم."
+    },
+    {
+     "term": "T staging",
+     "definition_ar": "تصنيف T: عمق غزو الورم في طبقات الجدار (مخاطية، تحت المخاطية، عضلية، مصلية) — دقته 90% بالتنظير الصدوي."
+    },
+    {
+     "term": "N staging",
+     "definition_ar": "تصنيف N: إصابة العقد اللمفية الجهادية — دقة التنظير الصدوي فيه 80%."
+    },
+    {
+     "term": "FDG (fluorodeoxyglucose)",
+     "definition_ar": "الفلورو دي أوكسي غلوكوز: مادة مشعة مُتبِّعة في فحص PET تتراكم في الخلايا السرطانية نشطة الاستقلاب."
+    },
+    {
+     "term": "PET scan",
+     "definition_ar": "التصوير بالانبعاث البوزيتروني: يكشف المواقع نشطة الاستقلاب كالأورام والعقد النقيلية."
+    }
+   ],
+   "difficulty": "advanced",
+   "order_index": 11
+  },
+  {
+   "id": "L2_stomach_c12",
+   "lecture_id": "L2_stomach",
+   "title": "Investigations III — Laparoscopy, Gastric Emptying Study and Angiography",
+   "summary_ar": "التنظير البطني: كاميرا تدخل عبر قطع صغير بجدار البطن مع نفخ التجويف بالهواء لكشف الانتشار البريتوني قبل جراحة السرطان. ودراسة إفراغ المعدة: تصوير ومضاني لوجبة مشعة لقياس سرعة الإفراغ. والأنجيوغرافي: قسطرة علاجية تُنشر فيها ملفات انصمامية تحفز التخثر أو جيل فوم لتسد الشريان النازف في القرحة النازفة.",
+   "sections": [
+    {
+     "heading": "Investigations No. 6 and 7 — Laparoscopy and Gastric Emptying Study",
+     "body_text": "**6- Laparoscopy:** a **laparoscopic camera for diagnosis of abdominal metastases** enters the abdomen through a small **incision in the abdominal wall**; the **abdominal cavity is expanded with air** (pneumoperitoneum) and the **abdominal organs** are inspected directly through the **scope view** (a laparoscopic instrument is seen in the field). It detects small peritoneal and liver-surface deposits that imaging can miss, and is often combined with **laparoscopic ultrasound** before definitive surgery for gastric cancer.\n\n**7- Gastric emptying study:** a **nuclear medicine scintigraphy** test — the patient eats a **radioactive-labeled meal**, and serial images show the radiotracer within the stomach over time (the slide scintigram shows a distinct high-intensity red/orange uptake area in the gastric region, with the vertebral column in the background). It quantifies **how fast the stomach empties its contents into the small intestine**.",
+     "key_points": [
+      "Laparoscopy diagnoses abdominal (peritoneal) metastases directly; abdomen is expanded with air; scope view of organs.",
+      "Gastric emptying study = scintigraphy of a radioactive-labeled meal, measuring the rate of gastric emptying."
+     ]
+    },
+    {
+     "heading": "Investigation No. 8 — Angiography and Embolization of Bleeding",
+     "body_text": "**8- Angiography:** catheter-based contrast study of the gastric arteries via the **aorta**. Its therapeutic application in a **bleeding ulcer**:\n- A **catheter is inserted into the artery** (from the aorta) and guided to the bleeding vessel supplying the **ulcer**.\n- **Embolization coils are inserted/deployed into the artery** — the coils **promote thrombosis** of the bleeding vessel; the angiographic image shows the **coils** as dense radiopaque clusters, and cross-sectional images show the **artery with coils in place and blood flow obstructed**.\n- **Gelfoam®** — an alternative embolic material: the slide shows the artery **filled with Gelfoam, with blood flow obstructed**.\n\nAngiographic embolization is used when endoscopic hemostasis fails in a bleeding gastric/duodenal ulcer — an alternative to surgery in high-risk patients.",
+     "key_points": [
+      "Angiography = catheter study of gastric arteries via the aorta.",
+      "Embolization coils promote thrombosis (blood flow obstructed) of the bleeding artery.",
+      "Gelfoam is an alternative embolic agent plugging the artery.",
+      "Indication: bleeding ulcer refractory to endoscopic therapy."
+     ],
+     "check": {
+      "prompt": "A patient with a bleeding gastric ulcer fails endoscopic therapy. Which intervention stops the bleeding by promoting thrombosis of the feeding artery?",
+      "options": [
+       "Angiographic embolization with coils",
+       "Barium meal study",
+       "PET scan",
+       "Gastric emptying study"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الأنجيوغرافي العلاجي: إدخال قثطرة إلى الشريان المغذي للقرحة النازفة ونشر ملفات معدنية تحفز التخثر وتسد الجريان (أو حشوة جيل فوم). الباريوم وPET ودراسة الإفراغ فحوصات تشخيصية لا توقف النزف."
+     }
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Laparoscopy",
+     "definition_ar": "التنظير البطني: إدخال كاميرا عبر جدار البطن مع نفخ التجويف بالهواء لفحص الأعضاء وكشف الانتشار."
+    },
+    {
+     "term": "Scintigraphy",
+     "definition_ar": "التصوير الومضاني: تصوير بالنظائر المشعة، وهو أساس دراسة إفراغ المعدة بوجبة مشعة."
+    },
+    {
+     "term": "Embolization coils",
+     "definition_ar": "الملفات الانصمامية: ملفات معدنية توضع داخل الشريان النازف فتُحدث تخثراً وتسد الجريان."
+    },
+    {
+     "term": "Gelfoam",
+     "definition_ar": "جل فوم: مادة انصمامية ماصّة تُحشى بها لمعة الشريان لإيقاف النزف."
+    }
+   ],
+   "difficulty": "advanced",
+   "order_index": 12
+  },
+  {
+   "id": "L2_stomach_c13",
+   "lecture_id": "L2_stomach",
+   "title": "Tests for H. pylori Detection and the Lecture Reference",
+   "summary_ar": "اختبارات كشف جرثومة المعدة (الملوية البوابية) ستة: الأضداد المصلية IgG، واختبار اليورياز السريع على الخزعة، واختبار التنفس باليوريا، والفحص النسيجي للخزعات، ومستضد البراز، والزرع. الجرثومة حلزونية الشكل تعيش في طبقة المخاط فوق الظهارة المعدية وتفرز عوامل ممرضة. والمرجع: كتاب ديفيدسون الطبعة 23.",
+   "sections": [
+    {
+     "heading": "Investigation No. 9 — Tests for H. pylori Detection",
+     "body_text": "**9- Tests for H. pylori detection** — the six methods listed in the lecture:\n- **Serology IgG** — serum antibodies against H. pylori (indicates exposure; cannot by itself distinguish active from past infection).\n- **Rapid urease test** — a bedside test performed on gastric biopsy, using the urease enzyme of the organism (color change within minutes).\n- **Urea breath test** — the patient drinks labeled urea; bacterial urease splits it and labeled CO2 appears in the breath (non-invasive test of active infection).\n- **Histology** — microscopic examination of gastric biopsies (also shows gastritis).\n- **Stool antigen** — antigen detection in a stool sample (active infection).\n- **Culture** — microbiological growth of the organism (definitive but technically demanding; allows susceptibility testing).\n\n**The organism (from the slide diagram):** H. pylori is a **spiral-shaped (curved rod) bacterium** that lives **within the mucus layer** adjacent to the **gastric epithelium**, protected there from gastric acid; it secretes **released factors** (toxins/enzymes) that damage the mucosa. Scanning electron microscopy shows its curved morphology lying on the mucosal surface.",
+     "key_points": [
+      "Six tests: serology IgG, rapid urease test, urea breath test, histology, stool antigen, culture.",
+      "Rapid urease test and histology are biopsy-based (during OGD); urea breath test and stool antigen are non-invasive; culture is the most demanding.",
+      "H. pylori lives in the mucus layer over the gastric epithelium and releases damaging factors."
+     ],
+     "check": {
+      "prompt": "Which H. pylori test is performed on a gastric biopsy at the bedside, relying on the organism's urease enzyme?",
+      "options": [
+       "Rapid urease test",
+       "Serology IgG",
+       "Urea breath test",
+       "Stool antigen"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اختبار اليورياز السريع يُجرى على خزعة معدية توضع في وسط يحتوي اليوريا: إنزيم اليورياز الجرثومي يفككها فيتغير لون الوسط بسرعة. الأضداد على مصل الدم، واختبار النفس على هواء الزفير، ومستضد البراز على عينة البراز — ولا تحتاج خزعة."
+     }
+    },
+    {
+     "heading": "Reference and End of the Lecture",
+     "body_text": "**Reference:** the lecture is based on **Davidson's Principles and Practice of Medicine, 23rd Edition** — the standard internal medicine textbook of the module.\nThe final slide is an 'end slide area' marker with no additional academic content.\n\n**Exam-oriented synthesis of the whole lecture (revision map):**\n- **Anatomy:** parts (cardia-fundus-body-pylorus), three muscle layers, five arteries from the celiac axis, all veins to the portal vein, four lymph node groups (superior gastric, suprapyloric, pancreaticolienal, inferior gastric subpyloric), intrinsic (Auerbach/Meissner) and extrinsic (anterior/posterior vagus) nerves.\n- **Histology:** mucous (viscid mucopolysaccharide), parietal (HCl + IF), chief (pepsinogen), G (gastrin), D (somatostatin), ECL (histamine); duodenal Brunner's glands (mucous) and endocrine cells (CCK, secretin).\n- **Physiology:** cephalic (thought/taste/smell → medulla → vagus → enteric plexus + gastrin), gastric (distention → vagovagal + local reflexes), intestinal (pH<2 or lipids → 3 inhibitory mechanisms), motor (LES opening → receptive relaxation → mixing and grinding).\n- **Investigations (9):** OGD | plain & contrast radiology | USS (conventional, EUS, laparoscopic) | CT & MRI | PET with FDG | laparoscopy | gastric emptying study | angiography/embolization | H. pylori tests.",
+     "key_points": [
+      "Source textbook: Davidson's Principles and Practice of Medicine, 23th Edition.",
+      "Use the 4-block revision map: anatomy, histology, physiology, investigations."
+     ]
+    }
+   ],
+   "key_terms": [
+    {
+     "term": "Helicobacter pylori",
+     "definition_ar": "الملوية البوابية: جرثومة حلزونية تعيش في طبقة المخاط فوق الظهارة المعدية وتفرز عوامل ممرضة تؤذي المخاطية."
+    },
+    {
+     "term": "Rapid urease test",
+     "definition_ar": "اختبار اليورياز السريع: خزعة معدية توضع في وسط يحوي يوريا؛ يورياز الجرثومة يفككها فيتغير اللون خلال دقائق."
+    },
+    {
+     "term": "Urea breath test",
+     "definition_ar": "اختبار التنفس باليوريا: شرب يوريا مميّزة وقياس ثاني أكسيد الكربون المميز في النَفَس بفعل يورياز الجرثومة."
+    },
+    {
+     "term": "Stool antigen test",
+     "definition_ar": "اختبار مستضد البراز: كشف مستضدات الجرثومة في البراز ودليل على إصابة نشطة."
+    },
+    {
+     "term": "Serology IgG",
+     "definition_ar": "الأضداد المصلية IgG: تدل على التعرض للجرثومة ولا تفرق وحدها بين إصابة حالية وقديمة."
+    }
+   ],
+   "difficulty": "core",
+   "order_index": 13
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "L2_stomach_f1",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c2",
+   "card_type": "basic",
+   "front_text": "Which five arteries supply the stomach, and from which single trunk do they all arise?",
+   "back_text": "Lt gastric, Rt gastric, Rt gastroepiploic, Lt gastroepiploic and short gastric arteries (vasa brevia) — ALL arise from the celiac axis.",
+   "explanation_ar": "الانحناء الصغير: المعدّي الأيمن والأيسر؛ الانحناء الكبير: الثربيّان المعدّيان؛ القاع: الشرايين القصيرة. وكلها من الجذع البطني.",
+   "mnemonic_ar": "اثنان معدّيان للانحناء الصغير + اثنان ثربيّان للانحناء الكبير + قصيرة للقاع — كلها من الجذع البطني."
+  },
+  {
+   "id": "L2_stomach_f2",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c2",
+   "card_type": "basic",
+   "front_text": "Where does ALL the venous blood of the stomach drain?",
+   "back_text": "Into the portal vein — via the left gastric (with oesophageal branches), right gastric, short gastrics, left gastro-epiploic (→ splenic) and right gastro-epiploic (with superior pancreatico-duodenal/superior mesenteric) routes; the pre-pyloric vein of Mayo crosses the pylorus.",
+   "explanation_ar": "كل أوردة المعدة بوابية المنشأ، ولذلك تصل خلايا سرطان المعدة إلى الكبد بسرعة عبر الوريد البابي، ويتوسع أوردة المعدة والمريء في فرط ضغط الباب."
+  },
+  {
+   "id": "L2_stomach_f3",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c3",
+   "card_type": "basic",
+   "front_text": "Name the four lymph node groups that drain the stomach, and why are they clinically important?",
+   "back_text": "Superior gastric nodes (upper lesser curvature/cardia), suprapyloric nodes (above pylorus), pancreaticolienal nodes (greater curvature toward spleen/pancreas) and inferior gastric (subpyloric) nodes (below pylorus). They matter because gastric cancer spreads primarily via lymphatics.",
+   "explanation_ar": "التصريف اللمفاوي مهم في السرطان: اللمف يتدفق مبتعداً عن جدار المعدة على طول الانحناءين متبعاً الشرايين."
+  },
+  {
+   "id": "L2_stomach_f4",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c4",
+   "card_type": "basic",
+   "front_text": "What are the two intrinsic nerve plexuses of the stomach, their locations and functions?",
+   "back_text": "Myenteric plexus (Auerbach) — between the muscle layers, controls motility; submucosal plexus (Meissner) — in the submucosa, controls secretion and local blood flow.",
+   "explanation_ar": "أورباخ للحركة، ومايسنر للإفراز — قاعدة امتحانية متكررة."
+  },
+  {
+   "id": "L2_stomach_f5",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c4",
+   "card_type": "basic",
+   "front_text": "What is the extrinsic nerve supply of the stomach?",
+   "back_text": "Parasympathetic via the vagus nerves: anterior vagus (from the left trunk) and posterior vagus (from the right trunk). Named branches: anterior nerve of Latarjet, hepatic branch (left vagus), celiac branch (right vagus), pyloric branch (left vagus).",
+   "explanation_ar": "الحائر الأمامي والخلفي هما المصدر الخارجي الوحيد للتعصيب نظير الودي، وتحفيزهما يزيد الإفراز والحركة (أساس المرحلة الرأسية)."
+  },
+  {
+   "id": "L2_stomach_f6",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c5",
+   "card_type": "basic",
+   "front_text": "What does the parietal (oxyntic) cell secrete?",
+   "back_text": "Hydrochloric acid (HCl) AND intrinsic factor (IF) — the only source of intrinsic factor required for vitamin B12 absorption in the terminal ileum.",
+   "explanation_ar": "تذكر الازدواج: حمض + عامل داخلي؛ فتدمار الخلايا الجدارية يعني لا-كلورية الدم وفقر دم وبيل معاً."
+  },
+  {
+   "id": "L2_stomach_f7",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c5",
+   "card_type": "basic",
+   "front_text": "What do chief cells, G cells and D cells secrete?",
+   "back_text": "Chief cells → pepsinogen; G cells (endocrine) → gastrin; D cells → somatostatin (inhibitory).",
+   "explanation_ar": "الرئيسية للببسينوجين، وG للغاسترين المحفز، وD للسوماتوستاتين المثبط."
+  },
+  {
+   "id": "L2_stomach_f8",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c5",
+   "card_type": "basic",
+   "front_text": "Which cell secretes gastric histamine, and what do Brunner's glands and duodenal endocrine cells secrete?",
+   "back_text": "Enterochromaffin-like (ECL) cells secrete histamine (stimulates parietal cells). Duodenum: Brunner's glands secrete mucous; duodenal endocrine cells secrete CCK and secretin.",
+   "explanation_ar": "ECL-هستامين محفز موضعي للخلايا الجدارية؛ وغدد برونر تفرز مخاطاً قاعدياً؛ وخلايا الاثني عشر الصماء تفرز CCK والسيكريتن."
+  },
+  {
+   "id": "L2_stomach_f9",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c5",
+   "card_type": "basic",
+   "front_text": "What converts pepsinogen to pepsin, and where does this occur?",
+   "back_text": "HCl secreted by parietal cells activates pepsinogen to pepsin in the gastric gland lumen/duct system; pepsin then digests dietary protein.",
+   "explanation_ar": "الوسط الحمضي شرط التنشيط: لا ببسين فعّالاً بلا HCl — لذلك يتأثر هضم البروتين في نقص الحموضة."
+  },
+  {
+   "id": "L2_stomach_f10",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c6",
+   "card_type": "basic",
+   "front_text": "What triggers the cephalic phase of gastric secretion, and through which center and nerve does it act?",
+   "back_text": "Taste or smell of food, tactile sensation in the mouth, or even thoughts of food → medulla oblongata → vagus nerves (parasympathetic) → enteric plexus → parietal/chief cells + G cells (gastrin amplifies via the circulation).",
+   "explanation_ar": "المرحلة الرأسية عصبية بحتة قبل وصول الطعام، والغاسترين يعود بالدم ليعزز تحفيز الخلايا الجدارية والرئيسية."
+  },
+  {
+   "id": "L2_stomach_f11",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c7",
+   "card_type": "basic",
+   "front_text": "List the three linked events of the gastric phase of secretion.",
+   "back_text": "(1) Distention → vagal afferents → medulla oblongata → vagal efferents (vagovagal reflex); (2) secretions stimulated by the vagal efferents; (3) local reflexes stimulated by stomach distention (enteric, brain-independent).",
+   "explanation_ar": "التمدد يطلق مسارين معاً: منعكس حائري عبر النخاع المستطيل ومنعكسات موضعية داخل الجدار."
+  },
+  {
+   "id": "L2_stomach_f12",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c8",
+   "card_type": "basic",
+   "front_text": "What triggers the inhibitory intestinal phase of gastric secretion?",
+   "back_text": "Chyme in the duodenum with pH < 2, or containing fat digestion products (lipids) — it inhibits gastric secretions.",
+   "explanation_ar": "الحموضة الشديدة أو الدهون في الاثني عشر تعني أن المعدة تعمل بسرعة أكبر من قدرة الأمعاء — فيُكسر الإفراز."
+  },
+  {
+   "id": "L2_stomach_f13",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c8",
+   "card_type": "basic",
+   "front_text": "Name the three mechanisms — and the three hormones — of the intestinal phase inhibition of gastric secretion.",
+   "back_text": "Mechanisms: (1) vagal afferents to the medulla inhibit vagal efferents; (2) local reflexes; (3) hormonal. Hormones: secretin, gastric inhibitory peptide (GIP) and cholecystokinin (CCK) from the duodenum, carried by the circulation.",
+   "explanation_ar": "ثلاث آليات: عصبية وموضعية وهرمونية؛ والهرمونات الثلاثة: سيكريتن، GIP، وCCK.",
+   "mnemonic_ar": "S-G-C: سيكريتن وGIP وCCK تُطفئ إفراز المعدة عندما يصل الحمض أو الدهون للاثني عشر."
+  },
+  {
+   "id": "L2_stomach_f14",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c9",
+   "card_type": "basic",
+   "front_text": "Sequence the three motor events of receiving a bolus into the stomach.",
+   "back_text": "1) Opening of the lower esophageal sphincter (LES); 2) receptive relaxation of the stomach (fills as reservoir without pressure rise); 3) mixing and grinding of the food into chyme.",
+   "explanation_ar": "انفتاح العاصرة ← ارتخاء استقبالي ← خلط وطحن — بهذا الترتيب في كل بلعة."
+  },
+  {
+   "id": "L2_stomach_f15",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c10",
+   "card_type": "basic",
+   "front_text": "State the key facts about OGD: use, safety and requirements.",
+   "back_text": "OGD is used for diagnosis AND treatment (Dx & Rx); safe with morbidity and mortality = 0 when performed properly; requires experience, sedation and available resuscitation equipment; allows optical biopsy.",
+   "explanation_ar": "الفحص الأول في أمراض المريء والمعدة والاثني عشر: يشخص ويعالج في الجلسة نفسها."
+  },
+  {
+   "id": "L2_stomach_f16",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c11",
+   "card_type": "basic",
+   "front_text": "What are the staging accuracies of endoscopic ultrasound (EUS) in gastric cancer?",
+   "back_text": "T staging (tumor depth): 90% accuracy; N staging (regional lymph nodes): 80% accuracy. EUS can also demonstrate hepatic secondaries. Wall layers seen: M (mucosa), SM (submucosa), MP (muscularis propria), S (serosa).",
+   "explanation_ar": "أرقام امتحانية: T=90% وN=80% — والتنظير الصدوي هو الأفضل للتصنيف الموضعي قبل الجراحة."
+  },
+  {
+   "id": "L2_stomach_f17",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c11",
+   "card_type": "basic",
+   "front_text": "Which tracer is used in PET scanning and what is it used for in gastric disease?",
+   "back_text": "Fluorodeoxyglucose (FDG) — a glucose analogue taken up by metabolically active cancer cells; PET (usually combined with CT) confirms lymph-node metastases and distant spread of gastric cancer when CT is equivocal.",
+   "explanation_ar": "الخلايا السرطانية شرهة للغلوكوز، فتلتقط FDG المُشعّ وتضيء في صورة PET."
+  },
+  {
+   "id": "L2_stomach_f18",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c12",
+   "card_type": "basic",
+   "front_text": "Which investigation directly diagnoses abdominal (peritoneal) metastases of gastric cancer?",
+   "back_text": "Laparoscopy — a laparoscopic camera enters through a small abdominal-wall incision, the abdominal cavity is expanded with air, and the organs are inspected through the scope view (often combined with laparoscopic ultrasound).",
+   "explanation_ar": "التنظير البطني يرى الزرعات البريتونية الصغيرة التي لا تظهر في CT، ويُجرى قبل الجراحة الجذرية."
+  },
+  {
+   "id": "L2_stomach_f19",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c12",
+   "card_type": "basic",
+   "front_text": "How does angiography stop bleeding from a gastric ulcer?",
+   "back_text": "A catheter is guided from the aorta into the feeding artery of the bleeding ulcer; embolization coils are deployed which promote thrombosis (blood flow obstructed), or Gelfoam plugs the artery — used when endoscopic hemostasis fails.",
+   "explanation_ar": "الملفات تحفز التخثر وتسد الشريان، وجيل فوم بديل يسد اللمعة — خيار علاجي بعد فشل التنظير."
+  },
+  {
+   "id": "L2_stomach_f20",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c13",
+   "card_type": "basic",
+   "front_text": "List the six tests for H. pylori detection.",
+   "back_text": "1) Serology IgG, 2) rapid urease test, 3) urea breath test, 4) histology, 5) stool antigen, 6) culture.",
+   "explanation_ar": "على الخزعة: اليورياز السريع والنسيج والزرع؛ وبدون تنظير: الأضداد والنفس ومستضد البراز.",
+   "mnemonic_ar": "ثلاثة على الخزعة (يورياز سريع، نسيج، زرع) وثلاثة بدون منظار (دم، نَفَس، براز)."
+  }
+ ],
+ "mcqs": [
+  {
+   "id": "L2_stomach_q1",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c2",
+   "question_stem": "A 66-year-old man is found to have a gastric ulcer on the lesser curvature. During the angiography review, the radiologist remarks that every artery supplying the stomach arises from one arterial trunk. Which trunk supplies the ENTIRE stomach?",
+   "options": [
+    "Celiac axis",
+    "Superior mesenteric artery",
+    "Inferior mesenteric artery",
+    "Proper hepatic artery",
+    "Descending thoracic aorta"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "الجذع البطني (Celiac axis) هو المصدر الوحيد لشرايين المعدة الخمسة: المعدي الأيمن والأيسر على الانحناء الصغير، والثربي المعدّي الأيمن والأيسر على الانحناء الكبير، والقصيرة (vasa brevia) للقاع. الشريان المساريقي العلوي يروي الأمعاء من الاثني عشر البعيد إلى القولون المستعرض فلا يغذي المعدة، والمساريقي السفلي يروي القولون البعيد، والكبدي الأصيّ فرع من الجذع البطني يغذي الكبد وليس شرايين المعدة، والأورطي الصدري النازل لا يعطي فروعاً معدية.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "All five gastric arteries come from one trunk.",
+    "It is the first anterior branch of the abdominal aorta."
+   ]
+  },
+  {
+   "id": "L2_stomach_q2",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c2",
+   "question_stem": "A 54-year-old man with cirrhosis and portal hypertension develops engorged veins at the gastro-esophageal junction. Into which venous system does gastric venous blood normally drain?",
+   "options": [
+    "Portal vein",
+    "Inferior vena cava",
+    "Superior vena cava",
+    "Left renal vein",
+    "Azygos vein"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "كل أوردة المعدة تصب في الوريد البابي: المعدي الأيسر مع فروعه المريئية، والمعدي الأيمن، والقصيرة والثربي الأيسر نحو الوريد الطحالي، والثربي الأيمن مع البنكرياسية الاثني عشرية العلوية والمساريقية العلوية؛ لذلك يرتفع ضغطها في فرط ضغط الباب فتتوسع وتشكل دوالي، وهذا يفسر أيضاً وصول سرطان المعدة إلى الكبد. الوريد الأجوف السفلي والأعلى والوريد الكلوي الأيسر والأزيجوس ليست مسار التصريف الطبيعي، وإنما تتصل بالمجموعة البوابية عبر مفاغرات عند المريء (ومن هنا تنشأ الدوالي).",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": [
+    "One word — the liver's incoming vein.",
+    "Gastric cancer reaches the liver through this route."
+   ]
+  },
+  {
+   "id": "L2_stomach_q3",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c3",
+   "question_stem": "A 60-year-old woman has gastric cancer involving the greater curvature near the fundus, with spread toward the spleen and pancreas. Which lymph node group drains this territory?",
+   "options": [
+    "Pancreaticolienal nodes",
+    "Superior gastric nodes",
+    "Suprapyloric nodes",
+    "Inferior gastric (subpyloric) nodes",
+    "Celiac nodes only"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "المجموعة البنكرياسية الطحالية (Pancreaticolienal) تستقبل لمفاويات الانحناء الكبير باتجاه الطحال والبنكرياس حسب مخطط المحاضرة. المعوية العلوية على الانحناء الصغير قرب الوصلة المريئية والفؤادة، وفوق البوابية فوق البواب قرب الغار، وتحت البوابية أسفل البواب على الانحناء الكبير السفلي؛ أما عقد الجذع البطني فهي محطة نهائية للتصريف وليست المجموعة الإقليمية لهذه المنطقة.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": [
+    "Follow the greater curvature toward the spleen.",
+    "The group is named after two organs: pancreas + spleen."
+   ]
+  },
+  {
+   "id": "L2_stomach_q4",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c4",
+   "question_stem": "A surgeon plans to reduce gastric acid secretion by dividing the vagal branches to the stomach while PRESERVING the hepatic and celiac branches of the vagus nerves. According to the lecture diagram, which procedure is described?",
+   "options": [
+    "Selective vagotomy",
+    "Truncal vagotomy",
+    "Pyloroplasty",
+    "Gastric resection",
+    "Celiac ganglion block"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "حسب مخطط المحاضرة: خط قطع المبهم الجذعي يمر عبر المريء فوق الفروع المعدية فيقطع الجذع كاملاً بما فيه الفرعان الكبدي والبنكرياسي، بينما خط القطع الانتقائي أخفض ويعزل الفرعين الكبدي والبنكرياسي أي يحفظهما ويقطع الفروع المعدية فقط — وهذا وصف الحالة. توسيع البواب ليس قطعاً للأعصاب بل إجراء تصريف، وقطع المعدة استئصال جراحي للعضو، وحصار العقدة البطنية إجراء تخديري للألم المزمن وليس علاجاً للحموضة.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": [
+    "Look for the lower dashed line on the vagotomy diagram.",
+    "The trunk is spared; only gastric branches are cut."
+   ]
+  },
+  {
+   "id": "L2_stomach_q5",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c5",
+   "question_stem": "A 71-year-old woman presents with fatigue, glossitis and paraesthesia. Investigations: Hb 9.0 g/dL, MCV 118 fL, low serum vitamin B12 and positive anti-intrinsic-factor antibodies. Destruction of which gastric cell type explains BOTH her achlorhydria and B12 malabsorption?",
+   "options": [
+    "Parietal cells",
+    "Chief cells",
+    "G cells",
+    "Enterochromaffin-like cells",
+    "Mucous neck cells"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "الخلية الجدارية وحدها تفرز HCl والعامل الداخلي معاً؛ ففي الالتهاب المعدي الضموري المناعي تتدمر هذه الخلايا فتحدث لا-كلورية الدم ونقص امتصاص B12 (فقر الدم الوبيل بكريات حمراء كبيرة). الخلايا الرئيسية تفرز الببسينوجين فدمارها يُضعف هضم البروتين لا امتصاص B12، وG تفرز الغاسترين فاختلالها يقلل تحفيز الحمض، وECL تفرز الهستامين الموجه للخلايا الجدارية، والخلايا الرقبية المخاطية تفرز المخاط — لا علاقة لأي منها بالعامل الداخلي.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "Which cell secretes TWO products — acid and a B12-binding protein?",
+    "MCV 118 points to B12 deficiency."
+   ]
+  },
+  {
+   "id": "L2_stomach_q6",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c6",
+   "question_stem": "A hungry medical student watching a cooking show develops increased gastric acid secretion before eating anything. Which sequence best explains this response?",
+   "options": [
+    "Thought/smell of food → medulla oblongata → vagus nerves → enteric plexus → parietal and chief cells + gastrin from G cells",
+    "Gastric distention → local reflexes within the gastric wall only",
+    "Duodenal chyme at pH<2 → secretin release → parietal cell inhibition",
+    "Sympathetic activation → decreased mucus secretion",
+    "Direct chemical action of food particles on parietal cells"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "هذه هي المرحلة الرأسية: الأفكار أو رائحة أو طعم الطعام أو الإحساس الفموي تنبه النخاع المستطيل، فتسير السيالات نظيرة الودية عبر العصبين الحائرين إلى الضفائر المعوية، فتنبه الخلايا بعد العقدة للخلايا الجدارية والرئيسية مباشرة وتحفز خلايا G لإفراز الغاسترين الذي يعود بالدوران الدموي ليعزز الإفراز. تمدد المعدة ومنعكساته الموضعية مرحلة معدية تالية لوصول الطعام، والسيكريتن هرمون مثبط يُطلق من الاثني عشر في المرحلة المعوية، والجهاز الودي مثبط وليس محفزاً، والطعام لم يصل بعد ليلامس الخلايا الجدارية.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "The food has not reached the stomach yet.",
+    "Which cranial nerve carries parasympathetic fibers to the gut?"
+   ]
+  },
+  {
+   "id": "L2_stomach_q7",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c7",
+   "question_stem": "Fifteen minutes after a large meal, a healthy student's gastric secretion increases markedly. Distention of the stomach wall contributes to this response through which mechanisms?",
+   "options": [
+    "A vagovagal reflex through the medulla oblongata PLUS local enteric reflexes in the gastric wall",
+    "Thoughts about the taste of the meal",
+    "Secretin and CCK release from the duodenum",
+    "Opening of the lower esophageal sphincter alone",
+    "Embolization of the short gastric arteries"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "هذه المرحلة المعدية: تمدد المعدة يرسل سيالات حسية عبر الحائر إلى النخاع المستطيل الذي يعيد سيالات حركية محفزة (منعكس حائري)، ويثير أيضاً منعكسات موضعية داخل جدار المعدة عبر الضفائر المعوية دون حاجة للدماغ. التفكير بالطعام مرحلة رأسية تسبق الأكل، والسيكريتن وCCK هرمونان مثبطان يُطلقان من الاثني عشر في المرحلة المعوية، وانفتاح العاصرة السفلية حدث بلع لا إفراز، والانصمام العلاجي إجراء للأوعية النازفة لا علاقة له بالإفراز الفسيولوجي.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "Two mechanisms — one through the brain, one within the wall.",
+    "Afferent and efferent limbs travel in the same nerve."
+   ]
+  },
+  {
+   "id": "L2_stomach_q8",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c8",
+   "question_stem": "After a very fatty meal, a patient's gastric secretion and emptying slow when lipid-rich chyme reaches the duodenum. Which hormonal trio mediates this intestinal phase inhibition of gastric secretion?",
+   "options": [
+    "Secretin, gastric inhibitory peptide and cholecystokinin",
+    "Gastrin, histamine and somatostatin",
+    "Insulin, glucagon and motilin",
+    "Pepsin, HCl and mucus",
+    "Cholecystokinin, amylase and lipase"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "حسب المحاضرة: الكيموس في الاثني عشر بدرجة حموضة أقل من 2 أو المحتوي على نواتج هضم الدهون يثبط إفراز المعدة بثلاث آليات؛ الآلية الهرمونية تتم عبر السيكريتن والببتيد المثبط للمعدة GIP والكوليسيستوكينين CCK المنتجة من الاثني عشر والتي تصل المعدة عبر الدوران. الغاسترين والهستامين محفزان للإفراز لا مثبطات، والسوماتوستاتين مثبط لكنه هرمون موضعي من خلايا D داخل المعدة وليس هرمون المرحلة المعوية، والأنسولين والغلوكاغون والموتيلين هرمونات استقلابية وحركية أخرى، والببسين إنزيم هاضم لا هرمون، والأميليز والليباز إنزيمات هضمية إفرازية لا تنظم إفراز المعدة.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": [
+    "All three are released by the duodenum.",
+    "One of them also contracts the gallbladder."
+   ]
+  },
+  {
+   "id": "L2_stomach_q9",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c9",
+   "question_stem": "During swallowing of a food bolus, the proximal stomach accommodates the incoming food without a significant rise in intragastric pressure. What is this motor event called?",
+   "options": [
+    "Receptive relaxation",
+    "Peristaltic rush",
+    "Mass movement",
+    "Retrograde peristalsis",
+    "Pyloric contraction"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "حسب المحاضرة: مرور اللقمة إلى المعدة يتم بـ: انفتاح العاصرة المريئية السفلية، ثم الارتخاء الاستقبالي في المعدة (تسترخي لتستقبل الطعام كخزان دون ارتفاع الضغط الداخلي)، ثم الخلط والطحن. الدفع التمعجي السريع والحرركة الكتلية حركات معوية بعيدة عن المعدة، والتمعج الرجعي يحدث في القيء، وتقلص البواب يمنع التفريغ وهو عكس الاستقبال.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "The stomach 'opens its arms' before the food arrives.",
+    "It is the second of the three steps listed for bolus reception."
+   ]
+  },
+  {
+   "id": "L2_stomach_q10",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c10",
+   "question_stem": "A 58-year-old man presents with dyspepsia, weight loss and melena. Which investigation is the most appropriate FIRST test because it provides both diagnosis and treatment, with morbidity and mortality = 0 when properly performed?",
+   "options": [
+    "Oesophago-gastro-duodenoscopy (OGD)",
+    "Barium meal study",
+    "CT abdomen with contrast",
+    "PET scan",
+    "Serology IgG for H. pylori"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "التنظير الهضمي العلوي هو فحص الخط الأول: تشخيص وعلاج معاً (خزعة وإيقاف نزف)، وآمن (مضاعفات ووفيات = صفر وفق المحاضرة) بشرط الخبرة والتخدير وتوفر معدات الإنعاش، ويتيح الخزعة البصرية. الباريوم يظهر عيوب الامتلاء لكنه لا يأخذ خزعة ولا يعالج، والصوري فحص تصنيفي لاحق للتقدير البعيد، وPET لتأكيد الانتشار بعد تشخيص الأورم، وأضداد الجرثومة تفحص سبباً محتملاً ولا تفحص الآفة نفسها ولا تعالجها.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "Which single test can visualize, biopsy AND treat the lesion?",
+    "Think of the first item in the investigation list."
+   ]
+  },
+  {
+   "id": "L2_stomach_q11",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c11",
+   "question_stem": "A 62-year-old man has a biopsy-proven gastric adenocarcinoma. Before surgery, the team needs accurate local staging of tumor depth and regional lymph nodes. Which investigation provides T-staging accuracy of 90% and N-staging accuracy of 80%?",
+   "options": [
+    "Endoscopic ultrasound (EUS)",
+    "Plain abdominal radiograph",
+    "Conventional transabdominal ultrasound",
+    "Gastric emptying scintigraphy",
+    "Barium swallow"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "التنظير بالموجات فوق الصوتية EUS هو الأدق للتصنيف الموضعي: يحلل طبقات الجدار (مخاطية M، تحت المخاطية SM، عضلية MP، مصلية S) فيحدد عمق الغزو بدقة 90% ويقيّم العقد الجهادية بدقة 80%، كما يكشف الثانويات الكبدية. الأشعة العادية لا تظهر طبقات الجدار، والموجات التقليدية عبر البطن محدودة بالغازات وسماكة الجدار، ودراسة الإفراغ فحص وظيفي لسرعة التفريغ، والباريوم يصور لمعة العضو لا عمق الورم في الجدار.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": [
+    "T = 90%, N = 80% — which modality resolves the five wall layers?",
+    "It combines an endoscope with an ultrasound probe."
+   ]
+  },
+  {
+   "id": "L2_stomach_q12",
+   "lecture_id": "L2_stomach",
+   "concept_id": "L2_stomach_c13",
+   "question_stem": "A 44-year-old woman with dyspepsia undergoes OGD with antral biopsies. The endoscopist places one biopsy sample into a medium containing urea and a pH indicator, and a color change appears within minutes. Which H. pylori test is being performed?",
+   "options": [
+    "Rapid urease test",
+    "Urea breath test",
+    "Serology IgG",
+    "Stool antigen test",
+    "Culture"
+   ],
+   "correct_index": 0,
+   "explanation_ar": "الاختبار اليوريازي السريع يُجرى على خزعة معدية توضع في وسط يحتوي اليوريا؛ إنزيم اليورياز الخاص بجرثومة المعدة يفكك اليوريا فيتغير لون الوسط بسرعة خلال دقائق. اختبار النفس باليوريا يعتمد على إنزيم الجرثومة نفسه لكنه يُجرى بشرب يوريا مميزة وقياس CO2 في هواء الزفير لا على خزعة، والأضداد IgG على مصل الدم ولا تفرق بين إصابة نشطة وقديمة، ومستضد البراز على عينة براز، والزرع ينمّي الجرثومة مخبرياً وهو الأبطأ والأصعب لكنه يتيح اختبار الحساسية للمضادات الحيوية.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": [
+    "It is performed directly on the biopsy at the bedside.",
+    "It exploits the bacterium's urease enzyme."
+   ]
+  }
+ ],
+ "clinical_cases": [
+  {
+   "id": "L2_stomach_case1",
+   "lecture_id": "L2_stomach",
+   "title": "Staging Workup of Gastric Adenocarcinoma",
+   "scenario": "A 64-year-old man is referred to the gastroenterology clinic with three months of progressive early satiety, 8 kg of unintentional weight loss and intermittent melena. He is a chronic smoker with poor appetite. The team works through the appropriate investigation pathway for a suspected gastric malignancy, exactly in the order taught in the lecture.",
+   "vignette": {
+    "age": 64,
+    "sex": "male",
+    "chief_complaint": "Early satiety, weight loss and intermittent black stools for 3 months.",
+    "history": "Chronic smoker (30 pack-years); anorexia and post-prandial fullness; no NSAID use; no previous gastrointestinal disease; father died of gastric cancer.",
+    "vitals": {
+     "bp": "112/74 mmHg",
+     "hr": "96/min regular",
+     "rr": "16/min",
+     "temp": "36.9 °C",
+     "spo2": "98% on room air"
+    },
+    "exam": "Pallor of the conjunctivae; mild epigastric tenderness without peritonism; a slightly firm, poorly defined epigastric mass; no supraclavicular lymphadenopathy; digital rectal exam shows black tarry stool.",
+    "labs": [
+     {
+      "name": "Hemoglobin (Hb)",
+      "value": "9.8 g/dL (13.5-17.5)",
+      "flag": "low"
+     },
+     {
+      "name": "MCV",
+      "value": "86 fL (80-100)",
+      "flag": "normal"
+     },
+     {
+      "name": "WBC",
+      "value": "7.4 x10^9/L (4-11)",
+      "flag": "normal"
+     },
+     {
+      "name": "Platelets",
+      "value": "365 x10^9/L (150-400)",
+      "flag": "normal"
+     },
+     {
+      "name": "Albumin",
+      "value": "30 g/L (35-50)",
+      "flag": "low"
+     },
+     {
+      "name": "ALT",
+      "value": "28 U/L (10-40)",
+      "flag": "normal"
+     },
+     {
+      "name": "AST",
+      "value": "33 U/L (10-40)",
+      "flag": "normal"
+     },
+     {
+      "name": "ALP",
+      "value": "98 U/L (40-130)",
+      "flag": "normal"
+     }
+    ]
+   },
+   "steps": [
+    {
+     "id": "L2_stomach_case1_s1",
+     "prompt": "What is the most appropriate FIRST investigation for this patient's presentation?",
+     "options": [
+      "Oesophago-gastro-duodenoscopy (OGD) with biopsy",
+      "Barium meal study",
+      "CT abdomen with contrast",
+      "PET-CT scan",
+      "Diagnostic laparoscopy"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "التنظير الهضمي العلوي هو فحص الخط الأول: تشخيص وعلاج معاً، وآمن (مضاعفات ووفيات = 0 حسب المحاضرة) بشرط الخبرة والتخدير وتوفر معدات الإنعاش، ويتيح رؤية الآفة مباشرة وأخذ الخزعات (والخزعة البصرية). الباريوم يظهر عيب امتلاء لكنه لا يأخذ خزعة ولا يعالج، والصوري وPET خطوات تصنيف لاحقة بعد التشخيص النسيجي، والتنظير البطني لتقييم الانتشار البريتوني قبل الجراحة وليس أول خطوة.",
+     "xp": 10,
+     "hints": [
+      "Which test can visualize AND biopsy the lesion at the same session?",
+      "It is item number 1 in the lecture's investigation list."
+     ]
+    },
+    {
+     "id": "L2_stomach_case1_s2",
+     "prompt": "OGD shows an irregular, deeply ulcerated antral mass with raised, rolled-out edges and a necrotic base; biopsies confirm adenocarcinoma. Which investigation best assesses the DEPTH of wall invasion (T) and the regional lymph nodes (N)?",
+     "options": [
+      "Endoscopic ultrasound (EUS)",
+      "Plain abdominal radiograph",
+      "Conventional transabdominal ultrasound",
+      "Gastric emptying study",
+      "Angiography with coil embolization"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "التنظير بالموجات فوق الصوتية EUS يصور طبقات الجدار (مخاطية M، تحت المخاطية SM، عضلية MP، مصلية S) فيحدد عمق الغزو بدقة 90% ويقيّم العقد الجهادية بدقة 80%، كما يمكنه إظهار الثانويات الكبدية. الأشعة العادية لا تحلل الطبقات، والموجات التقليدية عبر البطن محدودة، ودراسة الإفراغ فحص وظيفي للتفريغ، والأنجيوغرافي إجراء وعائي علاجي للنزف لا للتصنيف.",
+     "xp": 10,
+     "hints": [
+      "T = 90%, N = 80%.",
+      "It resolves the individual wall layers from inside the lumen."
+     ]
+    },
+    {
+     "id": "L2_stomach_case1_s3",
+     "prompt": "The staging CT is equivocal about enlarged nodes near the celiac axis. Which study can confirm metabolically active nodal metastases, and with which tracer?",
+     "options": [
+      "PET(-CT) scan using fluorodeoxyglucose (FDG) as tracer",
+      "Repeat barium meal study",
+      "Urea breath test",
+      "H. pylori stool antigen test",
+      "Gastric emptying scintigraphy"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "الفحص بالانبعاث البوزيتروني PET (غالباً مدمج مع CT) يستخدم الفلورو دي أوكسي غلوكوز FDG كمتبع: الخلايا السرطانية النشطة استقلابياً تلتقطه فتضيء، فيؤكد إصابة العقد اللمفية والانتشار البعيد كما في مثال المحاضرة (سرطان متقدم مع عقد لمفية مضيئة). الباريوم يصور اللمعة لا النشاط الاستقلابي، واختبارا النفس ومستضد البراز لكشف جرثومة المعدة لا علاقة لهما بالتصنيف، ودراسة الإفراغ تقيس سرعة التفريغ.",
+     "xp": 10,
+     "hints": [
+      "Cancer cells are glucose-hungry.",
+      "The tracer is a radio-labeled glucose analogue."
+     ]
+    },
+    {
+     "id": "L2_stomach_case1_s4",
+     "prompt": "Imaging shows no distant metastases, but the surgeons want to exclude tiny peritoneal and liver-surface deposits before committing to curative surgery. What is the most direct next step?",
+     "options": [
+      "Diagnostic laparoscopy (with laparoscopic ultrasound)",
+      "Repeat OGD with more biopsies",
+      "Serology IgG for H. pylori",
+      "Gastric emptying scintigraphy",
+      "Watchful waiting for 3 months"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "التنظير البطني: كاميرا تدخل عبر قطع صغير في جدار البطن مع نفخ التجويف بالهواء، فيرى الجراح الأعضاء مباشرة عبر منظار البطن — وهو الأدق لكشف الزرعات البريتونية والسطحية الصغيرة على الكبد التي تفوت على CT، ويمكن دمجه بالموجات فوق الصوتية الجراحية. إعادة التنظير لا ترى البريتون، واختبارات الجرثومة ودراسة الإفراغ خارج الموضوع، والانتظار 3 أشهر تأخير غير مقبول لورم قابل للجراحة.",
+     "xp": 15,
+     "hints": [
+      "Which method directly SEES the peritoneal surface?",
+      "The abdominal cavity is expanded with air for this procedure."
+     ]
+    }
+   ],
+   "debriefing_ar": "التشخيص النهائي: سرطان غدي في الغار المعدي مصحوب بفقر دم بعوز الحديد ونقص ألبومين الدم. الدروس المستفادة: 1) التنظير الهضمي العلوي أولاً لأنه تشخيص وعلاج معاً وآمن بشروطه (الخبرة والتخدير ومعدات الإنعاش). 2) التنظير الصدوي EUS لتصنيف T بدقة 90% وN بدقة 80% وكشف الثانويات الكبدية. 3) PET بالفلورو دي أوكسي غلوكوز لتأكيد العقد النقيلية عند غموض CT. 4) التنظير البطني قبل الجراحة لاستبعاد الزرعات البريتونية. تذكر أن انتشار الورم يسير مع التصريف اللمفاوي (المجموعات الأربع على الانحناءين) وأن كل الدم الوريدي يصب في الوريد البابي فتكون الكبد أول موقع للانتشار الدموي.",
+   "difficulty": "advanced",
+   "order_index": 0
+  },
+  {
+   "id": "L2_stomach_case2",
+   "lecture_id": "L2_stomach",
+   "title": "Upper GI Bleeding from a Gastric Ulcer",
+   "scenario": "A 52-year-old man is brought to the emergency department after vomiting coffee-ground material twice and passing black tarry stools. He has been taking high-dose ibuprofen for chronic back pain. The team resuscitates him and follows the lecture's investigation pathway for upper gastrointestinal bleeding.",
+   "vignette": {
+    "age": 52,
+    "sex": "male",
+    "chief_complaint": "Coffee-ground hematemesis and melena with dizziness.",
+    "history": "Chronic NSAID (ibuprofen) use for low back pain; one week of burning epigastric pain; no alcohol; no anticoagulants; no prior ulcers.",
+    "vitals": {
+     "bp": "98/62 mmHg",
+     "hr": "118/min",
+     "rr": "20/min",
+     "temp": "36.6 °C",
+     "spo2": "97% on room air"
+    },
+    "exam": "Pale and mildly sweaty; mild epigastric tenderness without guarding; melena on digital rectal examination; no stigmata of chronic liver disease.",
+    "labs": [
+     {
+      "name": "Hemoglobin (Hb)",
+      "value": "8.6 g/dL (13.5-17.5)",
+      "flag": "low"
+     },
+     {
+      "name": "MCV",
+      "value": "87 fL (80-100)",
+      "flag": "normal"
+     },
+     {
+      "name": "WBC",
+      "value": "11.8 x10^9/L (4-11)",
+      "flag": "high"
+     },
+     {
+      "name": "Platelets",
+      "value": "240 x10^9/L (150-400)",
+      "flag": "normal"
+     },
+     {
+      "name": "Urea",
+      "value": "34 mg/dL (7-20)",
+      "flag": "high"
+     },
+     {
+      "name": "Creatinine",
+      "value": "1.0 mg/dL (0.7-1.3)",
+      "flag": "normal"
+     },
+     {
+      "name": "INR",
+      "value": "1.1 (0.8-1.2)",
+      "flag": "normal"
+     },
+     {
+      "name": "Sodium",
+      "value": "139 mmol/L (135-145)",
+      "flag": "normal"
+     }
+    ],
+    "imaging": "Erect chest X-ray: no free air under the diaphragm (no evidence of perforation)."
+   },
+   "steps": [
+    {
+     "id": "L2_stomach_case2_s1",
+     "prompt": "After resuscitation is started, which single investigation provides BOTH diagnosis and immediate treatment for this upper GI bleed?",
+     "options": [
+      "Urgent oesophago-gastro-duodenoscopy (OGD)",
+      "Immediate angiography with embolization",
+      "Barium meal study",
+      "CT abdomen with contrast",
+      "H. pylori serology IgG"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "التنظير العلوي هو الفحص العلاجي-التشخيصي: يحدد مصدر النزف ويوقفه في الجلسة نفسها، وهو آمن (مضاعفات ووفيات = 0 حسب المحاضرة) بشرط الخبرة والتخدير وتوفر معدات الإنعاش. الأنجيوغرافيا تحفظ لحالات فشل التوقف التنظيري، والباريوم لا دور له في النزف النشط (يفسد رؤية التنظير اللاحق)، والصوري لا يحدد المصدر الدقيق ولا يعالج، وأضداد الجرثومة تفحص سبباً مرافقاً وليست فحصاً لنزف نشط.",
+     "xp": 10,
+     "hints": [
+      "Dx & Rx in one session.",
+      "Item number 1 of the investigation list."
+     ]
+    },
+    {
+     "id": "L2_stomach_case2_s2",
+     "prompt": "OGD reveals a bleeding gastric ulcer with a visible vessel. Despite endoscopic hemostasis, the patient rebleeds hemodynamically. What is the next best intervention to stop the bleeding?",
+     "options": [
+      "Angiography with embolization (coils or Gelfoam)",
+      "Urea breath test",
+      "PET scan",
+      "Diagnostic laparoscopy",
+      "Gastric emptying study"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "عند فشل التوقف التنظيري يُلجأ إلى القسطرة العلاجية عبر الأنجيوغرافيا: تُدخل قثطرة من الأورطي إلى الشريان المغذي للقرحة النازفة وتُنشر ملفات انصمامية تحفز التخثر وتسد الشريان، أو يُستخدم جيل فوم الذي يسد لمعة الشريان ويوقف الجريان — كما في مثال المحاضرة. اختبار النفس وPET ودراسة الإفراغ فحوصات تشخيصية لا توقف النزف، والتنظير البطني للتقييم قبل جراحة السرطان وليس خطوة أولى في نزف مستمر.",
+     "xp": 10,
+     "hints": [
+      "Catheter-based therapy of the bleeding artery.",
+      "Coils promote thrombosis."
+     ]
+    },
+    {
+     "id": "L2_stomach_case2_s3",
+     "prompt": "During the embolization procedure, what is the MECHANISM by which the coils stop the hemorrhage?",
+     "options": [
+      "They promote thrombosis of the bleeding artery, obstructing blood flow",
+      "They deliver local chemotherapy to the ulcer",
+      "They neutralize gastric acid at the ulcer base",
+      "They stimulate mucosal regeneration",
+      "They cause reflex vasoconstriction of the celiac axis"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "الملفات الانصمامية أجسام معدنية تُوضع داخل لمعة الشريان النازف فتحفز تشكل خثرة تسد الجريان وتوقف النزف، وجيل فوم يسد اللمعة ميكانيكياً بوصفه مادة ماصّة. لا توجد أي آلية كيميائية علاجية أو تجددية أو انعكاسية ودّية في عمل هذه المواد — وظيفتها ميكانيكية بحتة: إغلاق الشريان.",
+     "xp": 10,
+     "hints": [
+      "Think mechanically — what happens inside the vessel lumen?",
+      "Clot formation inside the coil mass."
+     ]
+    },
+    {
+     "id": "L2_stomach_case2_s4",
+     "prompt": "After hemostasis is achieved, antral biopsies taken during the OGD are tested and H. pylori infection is confirmed as a co-factor of the ulcer. Which one of the listed H. pylori tests is performed directly on gastric biopsy tissue at the bedside?",
+     "options": [
+      "Rapid urease test",
+      "Serology IgG",
+      "Urea breath test",
+      "Stool antigen test",
+      "Culture"
+     ],
+     "correct_index": 0,
+     "explanation_ar": "الاختبار اليوريازي السريع يُجرى مباشرة على خزعة معدية توضع في وسط يحتوي اليوريا: إنزيم يورياز الجرثومة يفككها فيتغير لون الوسط خلال دقائق — لذلك هو اختبار الخزعة السريري المباشر. الأضداد IgG على مصل الدم، واختبار النفس على هواء الزفير بعد شرب يوريا مميزة، ومستضد البراز على عينة براز، أما الزرع فيُجرى على الخزعة أيضاً لكنه مخبري ويستغرق أياماً وليس اختباراً سريرياً فورياً بالسرير.",
+     "xp": 10,
+     "hints": [
+      "Color change within minutes at the bedside.",
+      "It uses urea-containing medium and the bacterial urease enzyme."
+     ]
+    }
+   ],
+   "debriefing_ar": "التشخيص النهائي: قرحة معدية نازفة ثانوية لمضادات الالتهاب غير الستيرويدية مع إصابة مرافقة بجرثومة المعدة. الدروس المستفادة: 1) التنظير الهضمي العلوي علاج وتشخيص معاً وآمن بشروطه الثلاثة (الخبرة والتخدير ومعدات الإنعاش). 2) عند فشل التوقف التنظيري: أنجيوغرافيا علاجية بملفات تعزز التخثر أو جيل فوم يسد الشريان. 3) تؤخذ خزعات أثناء التنظير لكشف جرثومة المعدة، وأسرع اختبار على الخزعة هو اليورياز السريع (والبقية: الأضداد، النفس، النسيج، مستضد البراز، الزرع). 4) ارتفاع اليوريا الدموي مع تصريف الكرياتينين الطبيعي في نزف الجهاز الهضمي العلوي علامة على هضم الدم في الأمعاء، وغياب الهواء الحر تحت الحجاب ينفي الانثقاب.",
+   "difficulty": "core",
+   "order_index": 1
+  }
+ ]
+}

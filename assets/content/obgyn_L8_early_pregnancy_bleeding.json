@@ -1,0 +1,1512 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L8_early_pregnancy_bleeding",
+    "specialty": "obgyn",
+    "title": "Bleeding in Early Pregnancy: Spontaneous Abortion and Its Clinical Varieties",
+    "module": "obstetrics",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L8 BLEEDING IN EARLY PREGNANCY 25 2.pdf",
+      "page_count": 34
+    },
+    "tags": [
+      "early pregnancy bleeding",
+      "spontaneous abortion",
+      "threatened miscarriage",
+      "inevitable miscarriage",
+      "incomplete miscarriage",
+      "complete miscarriage",
+      "missed miscarriage",
+      "septic abortion",
+      "recurrent miscarriage",
+      "cervical incompetence",
+      "cerclage",
+      "antiphospholipid syndrome"
+    ],
+    "order_index": 7,
+    "golden_tip": [
+      "Exam trap: the cervical os is the decisive divider — CLOSED os in threatened, complete and missed miscarriage; OPEN os in inevitable, incomplete and septic miscarriage. Pain and bleeding overlap; the os tells the variety apart.",
+      "Recurrent miscarriage = 3 or more successive losses; think by trimester: repeated 1st-trimester losses point to chromosomal translocation, while painless 2nd-trimester losses point to APS, uterine anomalies or cervical incompetence (cerclage: McDonald/Shirodkar/abdominal).",
+      "Evacuation follows uterine size: 12 weeks & below = dilatation & curettage; above 12 weeks = prostaglandins (vaginal/extra-amniotic), extra-amniotic saline or Foley's catheter then oxytocin. Septic abortion: swab + cultures, antibiotics BEFORE surgery."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c1",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Early Pregnancy Bleeding: Differential Types and Definition of Abortion",
+      "summary_ar": "يصنّف هذا المحاضرة أسباب النزف المهبلي في النصف الأول من الحمل إلى خمسة أنواع: الإجهاض التلقائي (بأصنافه السريرية)، ونزف الانغراس، والنزف العارض الموضعي (تآكل عنق الرحم أو سليلة عنقية أو التهاب مهبلي/عنقي أو سرطان عنق الرحم)، والحمل خارج الرحم، والحمل العناقي والورم المشيمائي. ويُعرَّف الإجهاض بأنه طرد أو إزالة نواتج الحمل (الجنين والمشيمة والأغشية) قبل قابلية الجنين للحياة، أي بوزن جنيني 500 غرام أو أقل أو بعمر حملي أقل من 24 أسبوعاً، ويُقدَّر أن 15% من حالات الإخصاب تنتهي بالإجهاض وأغلبها في الثلث الأول.",
+      "sections": [
+        {
+          "heading": "Differential Types of Bleeding in Early Pregnancy",
+          "body_text": "**About this deck.** The lecture (34 slides; title slide 'BLEEDING IN EARLY PREGNANCY' by Assistant Prof Weaam Mahfooth — the title-slide credit reads 'ASSISSTANT PROF.WEAAM AL MAHFOOTH') is devoted to bleeding before fetal viability. The title slide carries the course title in bold white uppercase text on a gradient blue background with diagonal light streaks. Its central graphic is a large, faint, semi-transparent medical symbol — the caduceus — positioned in the center of the slide behind the text. A running header 'EARLYPREGNANCYBLEEDING' appears on the content slides, and the deck closes with an 'ARE THERE ANY QUESTIONS' slide decorated with light blue outlined butterfly illustrations scattered at the top left and right and around the middle and edges.\n\n**Types of bleeding in early pregnancy (opening classification slide):**\n- 1- **Spontaneous abortion** — represented on the types list by its two early varieties: **threatened miscarriage** and **inevitable miscarriage** (the remaining varieties — incomplete, complete, missed and septic — are developed later in the deck as the clinical spectrum of spontaneous abortion).\n- 2- **Implantation bleeding.**\n- 3- **Incidental bleeding** — **cervical erosion**, **cervical polyp**, and **infection**, e.g. **vaginitis; cervicitis; cervical cancer**.\n- 4- **Ectopic pregnancy.**\n- 5- **Hydatidiform mole & choriocarcinoma.**\n\nEvery woman who bleeds in early pregnancy must therefore be run through this five-way differential: a miscarriage of one of the spontaneous varieties, implantation bleeding, a local incidental cervical or vaginal lesion, an ectopic pregnancy, or molar disease.",
+          "key_points": [
+            "Five types of early pregnancy bleeding: spontaneous abortion (threatened/inevitable…), implantation bleeding, incidental bleeding (cervical erosion, cervical polyp, infection — vaginitis, cervicitis, cervical cancer), ectopic pregnancy, hydatidiform mole & choriocarcinoma.",
+            "Incidental causes are local: cervical erosion, cervical polyp, vaginitis, cervicitis, cervical cancer.",
+            "Ectopic pregnancy and molar disease must always be excluded before labelling any early bleeding as a miscarriage.",
+            "Lecture: 'BLEEDING IN EARLY PREGNANCY' — Assistant Prof.Weaam Al Mahfooth (34 slides)."
+          ]
+        },
+        {
+          "heading": "Abortion (Miscarriage): Definition and Classification",
+          "body_text": "**Definition (abortion / miscarriage).** The **expulsion or removal of the products of conception (foetus, placenta, membranes) before foetal viability**, where viability is defined as a **foetal weight of 500gm or less** or a **gestational age of less than 24 weeks**.\n\n**Classification of abortion:**\n- **Spontaneous abortion**\n  - Threatened miscarriage\n  - Inevitable miscarriage\n- **Induced abortion**\n  - **Medical**\n  - **Criminal**\n\n**Spontaneous abortion** is further defined as the **involuntary loss of the products of conception prior to 24 weeks gestation**. It is thought that **15% of conceptions result in miscarriage**, and the **majority occur within the first trimester** — so most pregnancy losses are early, first-trimester events.",
+          "key_points": [
+            "Abortion = expulsion or removal of the products of conception (foetus, placenta, membranes) before foetal viability.",
+            "Viability thresholds in this definition: foetal weight 500gm or less, or gestational age less than 24 weeks.",
+            "Classification: spontaneous (threatened, inevitable) vs induced (medical, criminal).",
+            "Spontaneous abortion = involuntary loss prior to 24 weeks gestation.",
+            "15% of conceptions miscarry; the majority within the first trimester."
+          ],
+          "check": {
+            "prompt": "Which pair of thresholds defines foetal viability in the lecture's definition of abortion (miscarriage)?",
+            "options": [
+              "Foetal weight 500gm or less OR gestational age less than 24 weeks",
+              "Foetal weight 1000gm or less OR gestational age less than 28 weeks",
+              "Foetal weight 250gm or less OR gestational age less than 20 weeks",
+              "Foetal weight 1500gm or less OR gestational age less than 37 weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التعريف المعتمد في المحاضرة: الإجهاض هو طرد أو إزالة نواتج الحمل قبل قابلية الجنين للحياة، وتُحدَّد القابلية بوزن جنيني 500 غرام أو أقل أو بعمر حملي أقل من 24 أسبوعاً؛ أما الوزن 1000 غرام و28 أسبوعاً فحدود متأخرة لا تنطبق، و250 غراماً و20 أسبوعاً حدود أصغر من التعريف."
+          }
+        },
+        {
+          "heading": "Classification Flowchart of Spontaneous Abortion",
+          "body_text": "The deck's flowchart ('CLASSIFICATION OF SPOTANEOUS ABORTION') maps how the clinical varieties relate to each other and to the fate of the pregnancy:\n\n- **Spontaneous abortion** divides into two entry states: **Threatened** and **Inevitable**.\n- The **threatened branch** has two possible outcomes:\n  - **Pregnancy progresses → birth of a viable infant** (the threatened features settle and the pregnancy continues to a live birth), or\n  - progression to a **Missed** miscarriage or to a **carneous mole** (spelled 'Carcenous Mole' on the slide — the retained, degenerate gestational sac of a missed loss).\n- The **inevitable branch** runs sequentially through the varieties: **Inevitable → Incomplete → Septic → Complete** — the pregnancy is being expelled (incompletely or completely), and infection may complicate the process before it ends.\n\nThis flow is the mental map for the whole lecture: threatened is the only variety that can still end in a viable infant; everything downstream of 'inevitable' has already been lost.",
+          "key_points": [
+            "Flowchart: spontaneous abortion → threatened or inevitable.",
+            "Threatened → either 'pregnancy progresses → birth of a viable infant', or missed miscarriage / carneous ('Carcenous') mole.",
+            "Inevitable → incomplete → septic → complete (the expulsion pathway).",
+            "Threatened miscarriage is the only variety with a route to a live birth."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Spontaneous abortion",
+          "definition_ar": "فقدان نواتج الحمل بشكل تلقائي (غير مُحدث) قبل 24 أسبوعاً من الحمل."
+        },
+        {
+          "term": "Induced abortion",
+          "definition_ar": "إنهاء الحمل عمداً، إما طبياً (medical) أو جراحياً غير قانوني (criminal)."
+        },
+        {
+          "term": "Implantation bleeding",
+          "definition_ar": "نزف مهبلي خفيف يرافق انغراس البويضة الملقّحة في بطانة الرحم في بداية الحمل."
+        },
+        {
+          "term": "Incidental bleeding",
+          "definition_ar": "نزف موضعي من عنق الرحم أو المهبل (تآكل، سليلة، التهاب، أو سرطان) لا علاقة له بالحمل نفسه."
+        },
+        {
+          "term": "Foetal viability",
+          "definition_ar": "قابلية الجنين للحياة خارج الرحم؛ تُعرَّف هنا بوزن 500 غرام أو أقل أو عمر حملي أقل من 24 أسبوعاً."
+        },
+        {
+          "term": "Carneous (Carcenous) mole",
+          "definition_ar": "كيس حملي متحلّل ومحتبس داخل الرحم بعد موت الجنين، وهو من عواقب الإجهاض الفائت."
+        },
+        {
+          "term": "Hydatidiform mole",
+          "definition_ar": "حمل عناقي تنكّس فيه الزغابات المشيمية إلى حويصلات، من أسباب النزف في بداية الحمل (مع الورم المشيمائي)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Etiology of Spontaneous Abortion: The Fifteen Causes",
+      "summary_ar": "تعرض المحاضرة خمسة عشر سبباً للإجهاض التلقائي، أشهرها سوء تكوّن البيضة الملقّحة حيث تشكّل الشذوذات الكروموسومية 70% من الحملات المعيبة (وحادي، ثلاثي، انقلاب كروموسومي)، إضافة إلى عيب الانغراس والورم الليفي والالتهابات الأمومية عبر المشيمة والتهابات الجهاز التناسلي والأمراض العامة والاضطرابات الهرمونية وتشوهات الرحم (15% من فقدان الحمل المبكر) وضعف عنق الرحم والعوامل البيئية وعمر الأم والتوتر والقلق والعوامل الأبوية والعوامل المناعية. ومع ذلك يبقى أغلب حالات الإجهاض التلقائي دون سبب واضح رغم الفحوص التفصيلية.",
+      "sections": [
+        {
+          "heading": "Causes 1-4: Maldevelopment of the Conceptus, Implantation, Fibroids and Maternal Infection",
+          "body_text": "The deck numbers **fifteen causes of spontaneous abortion** (note: the slide numbering jumps from cause 4 to cause 6, so fourteen causes are named under fifteen numbered headings). The first four:\n\n- **1- Maldevelopment of the conceptus** — the **most common cause** of spontaneous abortion. **Chromosomal abnormalities account for 70% of defective conceptions**, e.g. **monosomy, trisomy, chromosomal translocation**.\n- **2- Defective implantation.**\n- **3- Fibroids.**\n- **4- Maternal infection:**\n  - **Due to high temperature**, relating to the general metabolic effect of fever; or\n  - as a **result of transplacental passage of viruses or bacteria**, e.g. **influenza, rubella, pneumonia, toxoplasmosis, cytomegalovirus, listeriosis, syphilis, brucellosis**.\n\nSo an early miscarriage is most often a rejected, abnormal conceptus — a chromosomally defective pregnancy — rather than the fault of the uterus or the mother.",
+          "key_points": [
+            "Most common cause = maldevelopment of the conceptus; chromosomal abnormalities account for 70% of defective conceptions.",
+            "Chromosomal examples: monosomy, trisomy, chromosomal translocation.",
+            "Other early causes: defective implantation, fibroids.",
+            "Maternal infection acts via high fever (general metabolic effect) or transplacental passage of viruses/bacteria: influenza, rubella, pneumonia, toxoplasmosis, cytomegalovirus, listeriosis, syphilis, brucellosis."
+          ],
+          "check": {
+            "prompt": "What percentage of defective conceptions are due to chromosomal abnormalities in spontaneous abortion?",
+            "options": [
+              "70%",
+              "50%",
+              "15%",
+              "30%"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تشكّل الشذوذات الكروموسومية 70% من الحملات المعيبة (مثل الوحادي والثلاثي والانقلاب الكروموسومي)، وهي الجزء الأكبر من سوء تكوّن البيضة الملقّحة، السبب الأشيع للإجهاض التلقائي؛ أما 15% فهي نسبة تشوهات الرحم البنيوية من فقدان الحمل المبكر."
+          }
+        },
+        {
+          "heading": "Causes 6-10: Genital Tract Infections, Medical Disorders, Endocrine, Uterine Abnormalities and Cervical Incompetence",
+          "body_text": "- **6- Genital tract infections:**\n  - Bacterial vaginosis\n  - Vaginal mycoplasma infection\n- **7- Medical disorders:**\n  - Diabetes\n  - Thyroid disease\n  - Hypertensive disorders\n  - Renal disease\n- **8- Endocrine abnormalities:**\n  - Poor development of the corpus luteum\n  - Inadequate secretory endometrium\n  - Low serum progesterone levels\n  - Thyroid disorder\n- **9- Uterine abnormalities:** **structural abnormalities are implicated in 15% of early pregnancy losses**, e.g.\n  - Double uterus\n  - Unicornuate, bicornuate, septate or subseptate uterus\n  - Failure of the uterus to develop to adult size, remaining infantile\n- **10- Cervical weakness (incompetence):**\n  - Usually causes **2nd trimester abortion**.\n  - **Congenital or acquired** — caused by **laceration of the cervix or undue stretching of the internal os** as a result of **previous medical abortion or childbirth**.\n  - The **membranes bulge through the cervical canal and rupture**.\n  - Characterized by **recurrent late pregnancy losses**.",
+          "key_points": [
+            "Genital tract infections: bacterial vaginosis, vaginal mycoplasma infection.",
+            "Medical disorders: diabetes, thyroid disease, hypertensive disorders, renal disease.",
+            "Endocrine abnormalities: poor corpus luteum development, inadequate secretory endometrium, low serum progesterone, thyroid disorder.",
+            "Uterine abnormalities = 15% of early pregnancy losses: double, unicornuate, bicornuate, septate or subseptate uterus, infantile uterus.",
+            "Cervical incompetence: 2nd-trimester losses; congenital or acquired (laceration/stretching of the internal os after previous medical abortion or childbirth); membranes bulge through the canal and rupture; recurrent late losses."
+          ]
+        },
+        {
+          "heading": "Causes 11-15 and the Unexplained Majority",
+          "body_text": "- **11- Environmental factors:**\n  - Environmental teratogens such as **lead and radiation**\n  - Ingested teratogenetic substances such as **drugs (namely cocaine) and alcohol**\n  - **Smoking**\n- **12- Maternal age:** women in the **late 30's and older** are at higher risk, **irrespective of previous obstetric history**.\n- **13- Stress and anxiety:** severe emotional upset may disrupt **hypothalamic and pituitary functions**.\n- **14- Paternal factors:**\n  - **Poor sperm quality**\n  - A **source of chromosomal abnormalities**\n- **15- Immunological factors:**\n  - **Maternal lymphocytes with natural killer cell activity** may affect **trophoblast development**\n  - **Autoimmune diseases such as antiphospholipid syndrome**\n\n**The highlighted statement slide:** *'Despite detailed investigations, no cause can be found for the majority of cases of spontaneous abortion.'* — most sporadic losses remain unexplained even after a full workup, which is why exhaustive testing of every single miscarriage is not routinely performed.",
+          "key_points": [
+            "Environmental: lead, radiation, drugs (namely cocaine), alcohol, smoking.",
+            "Maternal age: late 30's and older at higher risk irrespective of previous obstetric history.",
+            "Stress/anxiety: severe emotional upset may disrupt hypothalamic and pituitary function.",
+            "Paternal factors: poor sperm quality — a source of chromosomal abnormalities.",
+            "Immunological: maternal NK-cell lymphocytes against trophoblast; autoimmune disease (antiphospholipid syndrome).",
+            "Despite detailed investigations, no cause is found for the majority of spontaneous abortions."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Maldevelopment of the conceptus",
+          "definition_ar": "سوء تكوّن البيضة الملقّحة، السبب الأشيع للإجهاض التلقائي، وتشكّل الشذوذات الكروموسومية 70% منه."
+        },
+        {
+          "term": "Transplacental infection",
+          "definition_ar": "انتقال الفيروسات أو الجراثيم من الأم إلى الجنين عبر المشيمة مسبباً فقدان الحمل."
+        },
+        {
+          "term": "Corpus luteum defect",
+          "definition_ar": "ضعف نمو الجسم الأصفر ما يُنقص البروجسترون ودعم بطانة الرحم للحمل المبكر."
+        },
+        {
+          "term": "Secretory endometrium",
+          "definition_ar": "بطانة الرحم الإفرازية الناضجة اللازمة لانغراس الحمل؛ عدم كفايتها سبب للإجهاض."
+        },
+        {
+          "term": "Cervical incompetence",
+          "definition_ar": "ضعف عنق الرحم (خلقي أو مكتسب) يؤدي إلى انفتاح الأنبوب العنقي وانبعاج الأغشية وتمزقها وفقدان متكرر في الثلث الثاني."
+        },
+        {
+          "term": "Teratogen",
+          "definition_ar": "عامل بيئي أو دوائي يُشوّه الجنين ويرفع خطر الإجهاض، كالرصاص والإشعاع والكوكائين والكحول."
+        },
+        {
+          "term": "Natural killer cell activity",
+          "definition_ar": "نشاط الخلايا القاتلة الطبيعية في لمفاويات الأم، وقد يؤثر سلباً على نمو الأرومة الغاذية."
+        },
+        {
+          "term": "Antiphospholipid syndrome",
+          "definition_ar": "متلازمة مناعية ذاتية بأضداد الفوسفوليبيد، من أسباب الإجهاض المتكرر خاصة في الثلث الثاني."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Threatened and Inevitable Miscarriage",
+      "summary_ar": "يبدأ عرض الأصناف السريرية للإجهاض التلقائي بالإجهاض المهدَّد ثم الحتمي. في الإجهاض المهدَّد يبقى عنق الرحم مغلقاً والنزف قليلاً والألم متغيراً (ألم أسفل البطن أو ألم الظهر)، والرحم لين وغير موجع، وتوجد أعراض الحمل، وإذا ازداد النزف فهذا نذير شؤم يسبق الإجهاض الحتمي؛ ولا يجوز الفحص المهبلي لأنه قد يثير تقلصات الرحم، ولا فائدة مثبتة للراحة في الفراش. أما الإجهاض الحتمي فيتسم بألم شديد إيقاعي ونزف غزير مع خثرات وعنق متفتح ورحم أصغر من المتوقع، وقد تنهار المريضة من فقدان الدم، وتحتاج للقبول والمعاينة بالمنظار المهبلي والإفراغ إن كان الإجهاض غير كامل مع دواء قابض للرحم بعد طرد النواتج.",
+      "sections": [
+        {
+          "heading": "Master Comparison Table of the Clinical Varieties",
+          "body_text": "The deck presents each variety as its own slide table headed 'Spontaneous Abortion CLINICALVARIETY Signs and Symptoms' (the middle word is printed on the slide as the single running word CLINICALVARIETY). The complete comparison across the six varieties is reproduced here — memorise the **cervical os** column above all, because it is the decisive discriminator between the closed-os group (threatened, complete, missed) and the open-os group (inevitable, incomplete, septic):\n\n| Variety | Pain | Bleeding | Cervical os | Uterus | Other |\n|---|---|---|---|---|---|\n| **Threatened** | Variable, possibly slight lower abdominal pain or backache | Scant, during first 3 months | Closed, no dilation | If palpable, soft and not tender | — |\n| **Inevitable** | Severe, rhythmical | Heavy, clots | Open with dilation | If palpable, smaller than expected | — |\n| **Incomplete** | Severe | Heavy, profuse | Open with dilation | If palpable, smaller than expected | Tissue present in cervix; shock |\n| **Complete** | Diminishing or absent | Minimal or absent | Closed | If palpable, firm and contracted | — |\n| **Missed** | Absent | Some spotting possible, mostly brown loss | Closed | If palpable, smaller than expected | Symptoms and signs of pregnancy diminish |\n| **Septic** | Severe or variable | Variable, may be offensive | Open | Bulky, tender and painful on examination | — |\n\nAdditional descriptors given in the accompanying slide notes: threatened miscarriage — **symptoms of pregnancy are present**, and heavy or increased bleeding is an ominous sign; inevitable miscarriage — **the woman may collapse from blood loss**; septic miscarriage — **the woman feels acutely ill with fever, tachycardia, headache, nausea and general malaise**.",
+          "key_points": [
+            "Closed os: threatened, complete, missed. Open os: inevitable, incomplete, septic.",
+            "Threatened: variable slight pain/backache, scant bleeding in first 3 months, soft non-tender uterus.",
+            "Inevitable: severe rhythmical pain, heavy bleeding with clots, open os, uterus smaller than expected.",
+            "Incomplete adds: tissue present in cervix and shock.",
+            "Complete: pain/bleeding diminishing or absent, closed os, firm contracted uterus.",
+            "Missed: absent pain, brown spotting, closed os, smaller uterus, pregnancy symptoms diminish.",
+            "Septic: severe/variable pain, offensive bleeding, open os, bulky tender uterus."
+          ]
+        },
+        {
+          "heading": "Threatened Miscarriage: Clinical Picture and Management",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** variable — possibly slight lower abdominal pain or backache.\n- **Bleeding:** scant, during the first 3 months.\n- **Cervical os:** closed, no dilation.\n- **Uterus:** if palpable, soft and not tender.\n- **Symptoms of pregnancy are present.**\n\n**Management rules (slide bullets):**\n- **No vaginal examination or assessment**, as it may provoke uterine activity.\n- **No evidence that bed rest is effective.**\n- The woman **should be referred for medical attention straight away**.\n- **A pregnancy test is carried out and ultrasound performed to assess viability.**\n- **Heavy or increased amount of bleeding is an ominous sign** and may precede inevitable abortion — an escalation of the bleed, not of the pain, is what warns you the miscarriage is becoming unavoidable.",
+          "key_points": [
+            "Threatened miscarriage: closed os, scant bleeding, slight/variable pain, soft non-tender uterus, pregnancy symptoms present.",
+            "Avoid vaginal examination — it may provoke uterine activity.",
+            "Bed rest has no evidence of benefit.",
+            "Refer straight away; do a pregnancy test and ultrasound to assess viability.",
+            "Heavy or increased bleeding is ominous and may precede inevitable abortion."
+          ],
+          "check": {
+            "prompt": "A woman at 8 weeks reports slight lower abdominal pain and scant dark bleeding; the cervical os is closed and the uterus is soft, non-tender and consistent with dates. Which variety is this?",
+            "options": [
+              "Threatened miscarriage",
+              "Inevitable miscarriage",
+              "Incomplete miscarriage",
+              "Complete miscarriage"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النزف القليل مع ألم متغير وعنق رحم مغلق ورحم لين غير موجع هو الإجهاض المهدَّد؛ فالإجهاض الحتمي وغير الكامل يتطلبان عنقاً متفتحاً، والإجهاض الكامل يعني انتهاء الألم والنزف مع رحم صلب متقلص."
+          }
+        },
+        {
+          "heading": "Inevitable Miscarriage: Clinical Picture and Management",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** severe, rhythmical (labour-like contractions of the gravid uterus).\n- **Bleeding:** heavy, with clots.\n- **Cervical os:** open with dilation.\n- **Uterus:** if palpable, smaller than expected.\n\n**Mechanism and management (slide bullets):**\n- As the name indicates, it is an **unavoidable pregnancy loss**.\n- The **gestational sac separates from the uterine wall** and the **uterus contracts to expel the contents of conception**.\n- The woman **may collapse from blood loss** — the heavy, clotting bleed plus the open, dilating os make this the first of the haemodynamically dangerous varieties.\n- **Admission to hospital and speculum examination**, with a **need for evacuation if the miscarriage proves incomplete**.\n- An **oxytocic drug may be given after the products are expelled** (to keep the uterus contracted and limit further bleeding).",
+          "key_points": [
+            "Inevitable miscarriage = unavoidable loss: severe rhythmical pain, heavy bleeding with clots, open dilated os, uterus smaller than expected.",
+            "The gestational sac separates from the uterine wall and the uterus contracts to expel the contents.",
+            "The woman may collapse from blood loss.",
+            "Admit to hospital; speculum examination; evacuate if incomplete.",
+            "An oxytocic drug may be given after the products are expelled."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Threatened miscarriage",
+          "definition_ar": "نزف قليل مع عنق مغلق في الثلث الأول مع بقاء أعراض الحمل؛ قد يستمر الحمل أو يتدهور إلى إجهاض حتمي."
+        },
+        {
+          "term": "Inevitable miscarriage",
+          "definition_ar": "فقدان حملي لا يمكن تجنبه: ألم شديد إيقاعي ونزف غزير مع خثرات وعنق رحم متفتح."
+        },
+        {
+          "term": "Oxytocic drug",
+          "definition_ar": "دواء قابض للرحم (كالأوكسيتوسين) يُعطى بعد طرد نواتج الحمل لتقليل النزف."
+        },
+        {
+          "term": "Speculum examination",
+          "definition_ar": "معاينة عنق الرحم والمهبل بالمنظار المهبلي لتحديد حالة الأنبوب العنقي ومصدر النزف."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Incomplete and Complete Miscarriage",
+      "summary_ar": "في الإجهاض غير الكامل يُطرد كيس الحمل جزئياً مع بقاء النسيج المشيمي عادةً، فيكون الألم شديداً والنزف غزيراً والعنق متفتحاً مع نسيج في العنق واحتمال حدوث صدمة، ويكون العلاج إفراغ نواتج الحمل المحتجزة جراحياً (الكحت) أو طبياً بمحاكيات البروستاغلاندين مثل الميزوبروستول مع نقل الدم عند اللزوم. أما الإجهاض الكامل فيُطرد فيه كيس الحمل كاملاً فيخف الألم والنزف ويغلق العنق ويصبح الرحم صلباً متقلصاً، ويُظهر الإيكو رحماً فارغاً مع هبوط HCG، ولا حاجة عندئذٍ لأي إفراغ.",
+      "sections": [
+        {
+          "heading": "Incomplete Miscarriage: Retained Products, Shock and Evacuation",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** severe.\n- **Bleeding:** heavy, profuse.\n- **Cervical os:** open with dilation.\n- **Uterus:** if palpable, smaller than expected.\n- **Other:** tissue present in cervix; shock.\n\n**Pathology (slide note):** the **gestational sac is incompletely expelled**, with **usually the placental tissue retained** — retained placenta keeps the uterus from retracting properly, which explains the profuse continuing bleed and the risk of shock; visible tissue in the cervix is the bedside clue.\n\n**Treatment (slide list):**\n- **1- Surgical management:** evacuation of retained products of conception from the uterus (**curettage**).\n- **2- Medical management** is possible using **prostaglandin analogues such as misoprostol**.\n- **Transfusion may be given if blood loss is excessive.**",
+          "key_points": [
+            "Incomplete miscarriage: severe pain, heavy profuse bleeding, open os, uterus smaller than expected, tissue present in cervix, shock.",
+            "The gestational sac is incompletely expelled — placental tissue is usually retained.",
+            "Treatment 1: surgical — evacuation of retained products of conception (curettage).",
+            "Treatment 2: medical — prostaglandin analogues such as misoprostol.",
+            "Transfusion may be given if blood loss is excessive."
+          ],
+          "check": {
+            "prompt": "A woman at 10 weeks is bleeding profusely with an open cervical os and tissue seen in the cervix; she is tachycardic and hypotensive. What is the definitive treatment listed for this variety?",
+            "options": [
+              "Evacuation of retained products of conception from the uterus (curettage)",
+              "Cervical cerclage to close the os",
+              "Bed rest and weekly ultrasound follow-up only",
+              "Immediate hysterectomy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "هذا إجهاض غير كامل مع احتباس نسيج مشيمي وصدمة نزفية؛ العلاج الحاسم هو الإفراغ الجراحي لنواتج الحمل المحتجزة بالكحت (أو طبياً بالميزوبروستول في المريضة المستقرة) مع نقل الدم عند غزارة النزف. لا دور للتطويق (لعنق ضعيف وليس متفتحاً بإجهاض) ولا للراحة في الفراش وحدها، والاستئصال الرحمي ليس خط العلاج الأول."
+          }
+        },
+        {
+          "heading": "Complete Miscarriage: Natural Resolution Without Evacuation",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** diminishing or absent.\n- **Bleeding:** minimal or absent.\n- **Cervical os:** closed.\n- **Uterus:** if palpable, firm and contracted.\n\n**Course and confirmation (slide bullets):**\n- The **gestational sac is completely expelled**.\n- There is a **history of abdominal pain, bleeding with passing of clots and tissue** — then the bleeding settles, which is what separates this variety from the incomplete one.\n- **Once the miscarriage is complete, pain and bleeding subside and the cervix closes.**\n- **Ultrasound shows an empty uterus coupled with falling HCG levels.**\n- **No need for evacuation.**",
+          "key_points": [
+            "Complete miscarriage: pain and bleeding diminish or stop; closed os; firm, contracted uterus.",
+            "The gestational sac is completely expelled after a history of pain, bleeding, clots and tissue passing.",
+            "Ultrasound shows an empty uterus with falling HCG levels.",
+            "No need for evacuation once completeness is confirmed."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Incomplete miscarriage",
+          "definition_ar": "طرد جزئي لكيس الحمل مع بقاء نسيج مشيمي عادةً، ينزف بغزارة مع عنق متفتح ونسيج في العنق."
+        },
+        {
+          "term": "Retained products of conception",
+          "definition_ar": "بقايا نواتج الحمل (خاصة النسيج المشيمي) داخل الرحم بعد إجهاض غير كامل؛ تُفرَّغ جراحياً بالكحت أو طبياً بالميزوبروستول."
+        },
+        {
+          "term": "Misoprostol",
+          "definition_ar": "محاكٍ للبروستاغلاندين يُستخدم طبياً لإتمام الإجهاض غير الكامل وإفراغ الرحم."
+        },
+        {
+          "term": "Complete miscarriage",
+          "definition_ar": "طرد كامل لنواتج الحمل؛ يخف النزف والألم ويغلق العنق ويظهر الرحم فارغاً مع هبوط HCG دون حاجة لإفراغ."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Missed Miscarriage and Uterine Evacuation Procedures",
+      "summary_ar": "الإجهاض الفائت (ويسمى أيضاً المتأخر أو الصامت) يتبع عادةً إجهاضاً مهدَّداً؛ يحدث نزف بين جدار الرحم وكيس الحمل فيموت الجنين، مع فقدان أعراض الحمل ونزف بنيّي خفيف وعنق مغلق ورحم أصغر من المتوقع، ويُؤكَّد التشخيص بالإيكو. يكون العلاج إفراغاً جراحياً أو تدبيراً ترقّبياً، ويعتمد اختيار طريقة إنهاء الحمل على حجم الرحم: 12 أسبوعاً فأقل توسيعٌ وكحت، وفوق 12 أسبوعاً بروستاغلاندينات مهبلية أو خارج السلى أو محلول ملحي خارج السلى أو قسطرة فولي وحدها يُتبعها ضخّ الأوكسيتوسين. وتوضّح أشكال المحاضرة الثلاثة إفراغ الرحم: الشفط بالمِصَّة (سبكولوم + مبرد عنقي + قسطرة شفط لجنين بعمر 9 أسابيع)، والكحت الحاد بالملعقة، والملقط الجنيني (ovum forceps) للحجوم الأكبر.",
+      "sections": [
+        {
+          "heading": "Missed Miscarriage: The Silent (Delayed) Loss",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** absent.\n- **Bleeding:** some spotting possible, mostly brown loss.\n- **Cervical os:** closed.\n- **Uterus:** if palpable, smaller than expected.\n- **Other:** symptoms and signs of pregnancy diminish.\n\n**Nature, mechanism and management (slide bullets):**\n- Also known as **delayed or silent abortion**.\n- It **usually follows a threatened abortion** — the threatened bleed evolves into a retained dead pregnancy rather than an expelled one.\n- **Bleeding occurs between the uterine wall and the gestational sac and the embryo dies**; the old blood then leaks out as brown loss while the closed cervix keeps everything else inside.\n- **Confirmed diagnosis by ultrasound** (a sac with no fetal heart activity in a uterus smaller than dates).\n- **Treatment: surgical evacuation or expectant management are possible.**",
+          "key_points": [
+            "Missed miscarriage = delayed / silent abortion; usually follows a threatened abortion.",
+            "Bleeding occurs between the uterine wall and the gestational sac, and the embryo dies.",
+            "Signs: absent pain, brown spotting, closed os, uterus smaller than expected, pregnancy symptoms diminish.",
+            "Diagnosis is confirmed by ultrasound.",
+            "Treatment: surgical evacuation or expectant management."
+          ],
+          "check": {
+            "prompt": "A woman at 11 weeks lost her pregnancy symptoms weeks ago and reports brown vaginal loss with no pain; the os is closed and the uterus is small for dates. What is the diagnosis and its confirmatory test?",
+            "options": [
+              "Missed miscarriage — confirmed by ultrasound",
+              "Threatened miscarriage — confirmed by a pregnancy test alone",
+              "Complete miscarriage — confirmed by speculum only",
+              "Septic miscarriage — confirmed by blood cultures"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "فقدان أعراض الحمل مع نزف بنيّ بلا ألم وعنق مغلق ورحم أصغر من المتوقع هو إجهاض فائت (متأخر/صامت)، ويُؤكَّد بفحص الإيكو الذي يُظهر كيساً بلا نبض جنيني؛ لا يكفي اختبار الحمل للتشخيص، والنزف البنيّ القديم ليس نزفاً غزيراً مهدِّداً."
+          }
+        },
+        {
+          "heading": "Termination of Pregnancy in Missed Miscarriage: Method by Uterine Size",
+          "body_text": "**TERMINATION OF PREGNANCY — the choice depends on the size of the uterus.** The slide prints the rule as '12 weeks & Below = Dilatation & curettage' and 'Above 12weeks = Prostaglandins (Vaginal, or Extra-amniotic), Extra-amniotic saline infusion or Foley's catheter alone followed by Oxytocin infusion':\n- **12 weeks & below → dilatation & curettage (D&C).** The uterus is still small enough for the cervix to be dilated and the cavity emptied instrumentally (sharp curettage / suction).\n- **Above 12 weeks →** the options are:\n  - **Prostaglandins — vaginal, or extra-amniotic**;\n  - **Extra-amniotic saline infusion**; or\n  - **Foley's catheter alone, followed by an oxytocin infusion.**\n\nThe rule is easy to remember because it mirrors the change in the mechanical problem: below 12 weeks the whole cavity can be curetted; above 12 weeks the uterus must be made to contract and expel its contents medically (prostaglandins, oxytocin) or mechanically (extra-amniotic catheter/saline).",
+          "key_points": [
+            "The termination method in missed miscarriage depends on the size of the uterus.",
+            "12 weeks & below: dilatation & curettage.",
+            "Above 12 weeks: prostaglandins (vaginal or extra-amniotic), extra-amniotic saline infusion, or Foley's catheter alone followed by oxytocin infusion."
+          ],
+          "check": {
+            "prompt": "A missed miscarriage is diagnosed in a uterus of about 14 weeks' size. Which termination option fits the lecture's rule?",
+            "options": [
+              "Prostaglandins (vaginal or extra-amniotic), extra-amniotic saline infusion, or Foley's catheter alone followed by oxytocin",
+              "Dilatation & curettage",
+              "Immediate hysterotomy",
+              "Continue expectant management for 12 more weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "القاعدة تعتمد على حجم الرحم: 12 أسبوعاً فأقل توسيع وكحت، أما فوق 12 أسبوعاً (كحالة الرحم بعمر 14 أسبوعاً) فالخيارات بروستاغلاندينات مهبلية أو خارج السلى أو محلول ملحي خارج السلى أو قسطرة فولي وحدها يُتبعها ضخّ الأوكسيتوسين؛ فالكحت لم يعد خياراً آمناً لحجم كهذا."
+          }
+        },
+        {
+          "heading": "The Illustrated Evacuation Procedures: Suction Curettage, Sharp Curettage and Ovum Forceps",
+          "body_text": "Three procedure figures in the deck illustrate how the uterus is actually emptied:\n\n**Figure 1 — suction curettage (vacuum aspiration) of a 9-week pregnancy.** The image depicts a cut-away view of the mother's pelvis: a sagittal section in which the uterus lies in an anteverted position. It contains a **9-week intrauterine pregnancy**. **A speculum is placed in the vagina, a tenaculum is clamped to the lip of the cervix** (the anterior lip, giving traction and stabilisation) **and a cannula is inserted into the uterus** — the tubular instrument passes through the cervical canal into the uterine cavity. Blue bidirectional arrows on the figure suggest suction or movement. The anatomical structures and instrument labels, each shown with a leader line pointing to its structure, are: the **amnion** (the inner membrane surrounding the fetus), the **uterus** (the muscular organ containing the gestational sac), the **placenta** (the vascular organ attached to the uterine wall), the **tenaculum** clamped to the anterior lip of the cervix, the **cannula** with its bidirectional suction arrows, the **speculum** in the vagina, and the **9-week fetus** inside the amniotic sac. This is the classic set-up of vacuum aspiration (suction curettage).\n\n**Figure 2 — sharp uterine curettage.** An anatomical illustration (sagittal or coronal cross-section of the uterus) shows a **metal surgical instrument — the curette — inserted through the cervical canal into the uterine cavity**, its tip positioned adjacent to the gestational sac, which lies in the lower uterine segment near the internal cervical os. The thick muscular uterine wall (myometrium) is rendered in reddish-pink tones with the endometrial lining visible as a wavy, irregular border lining the cavity; the cervix and vaginal canal at the bottom of the illustration form the entry point for the instrument. The figure demonstrates the **mechanical removal (scraping) of tissue from the uterine wall — the definition of curettage**.\n\n**Figure 3 — evacuation with ovum forceps (dilatation & evacuation, D&E).** The slide contains a medical illustration depicting a surgical procedure: a sagittal cross-section of the female pelvis with a well-developed fetus in the curled fetal position — visible facial features, limbs and fingers, development beyond the typical first-trimester stage. **A gloved hand holds a long metallic surgical instrument (ovum forceps or a similar evacuation instrument) inserted through the vaginal canal and cervix into the uterine cavity**, with the tips of the instrument positioned near the fetus and placenta; the bony sacrum and coccyx are visible posterior to the vagina and cervix. The figure illustrates **surgical removal of pregnancy tissue with ovum forceps — the technique of D&E used for a failed pregnancy, incomplete abortion or other indications for uterine evacuation at a more advanced gestation**.\n\nRead together, the three figures map the instrumental repertoire of uterine evacuation — suction cannula, sharp curette and ovum forceps — onto the clinical rule of the previous section: instrumental curettage for the uterus of 12 weeks and below, and forceps/prostaglandin-based evacuation for the larger uterus.",
+          "key_points": [
+            "Suction curettage set-up: speculum in the vagina, tenaculum on the lip of the cervix, cannula inserted into the uterus (through the cervical canal into the cavity).",
+            "The suction figure labels: amnion, uterus, placenta, 9-week fetus; anteverted uterus in a sagittal cut-away of the maternal pelvis.",
+            "Sharp curettage = a curette passed through the cervical canal into the uterine cavity, scraping tissue from the uterine wall.",
+            "Ovum forceps (D&E) = a long metallic forceps passed through vagina and cervix to remove fetus/placenta at more advanced gestations."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Missed miscarriage",
+          "definition_ar": "إجهاض فائت: موت الجنين مع احتباس نواتج الحمل داخل رحم مغلق العنق؛ يسمى أيضاً الإجهاض المتأخر أو الصامت."
+        },
+        {
+          "term": "Dilatation & curettage (D&C)",
+          "definition_ar": "توسيع عنق الرحم وكحت جوفه لإفراغ نواتج الحمل عند حجم رحم 12 أسبوعاً فأقل."
+        },
+        {
+          "term": "Extra-amniotic infusion",
+          "definition_ar": "إعطاء محلول (ملحي) أو بروستاغلاندين بين جدار الرحم والأغشية لإحداث الطرد فوق 12 أسبوعاً."
+        },
+        {
+          "term": "Foley's catheter (termination)",
+          "definition_ar": "قسطرة فولي تُدخل عبر عنق الرحم فوق 12 أسبوعاً لتحفيز الطرد، ويُتبعها ضخ الأوكسيتوسين."
+        },
+        {
+          "term": "Suction curettage",
+          "definition_ar": "الإفراغ بالشفط: مِصَّة (cannula) تدخل الرحم عبر العنق بعد سبكولوم ومبرد عنقي (tenaculum) لشفط نواتج الحمل المبكر."
+        },
+        {
+          "term": "Tenaculum",
+          "definition_ar": "مبرد جراحي يُثبَّت على شفة عنق الرحم للجذب والتثبيت أثناء الإفراغ."
+        },
+        {
+          "term": "Ovum forceps",
+          "definition_ar": "ملقط طويل لإزالة نواتج الحمل من جوف الرحم، يُستخدم في الإفراغ للحجوم الأكبر (D&E)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Recurrent Miscarriage: Etiology and Cause-Directed Treatment",
+      "summary_ar": "يُعرَّف الإجهاض المتكرر بثلاث إجهاضات تلقائية متتالية أو أكثر. تشمل أسبابه الانقلاب الكروموسومي (المتوازن أو الروبرتسوني)، ومتلازمة مضادات الفوسفوليبيد (أضداد الفوسفوليبيد والأضداد المضادة للكارديوليبين) وهي غالباً في الثلث الثاني، والتخثّرية وخاصة طفرة عامل لييدن الخامس، وتشوهات الرحم كالرحم المزدوج أو المقسّوم (الثلث الثاني)، وضعف عنق الرحم (الثلث الثاني)، وعوامل المبيض (ضعف المخزون المبيضي وعيب الطور الأصفري)، والالتهابات مثل STORCH والملاريا والزهري والبروسيلات. ويُوجَّه العلاج حسب السبب: الأسبرين بجرعة منخفضة أو الهيبارين للأضداد المناعية الذاتية، والتصحيح الجراحي لتشوهات الرحم، وتطويق عنق الرحم (tracheloplasty) لضعف العنق بأنواعه: ماكدونالد وشيرودكار والبطني.",
+      "sections": [
+        {
+          "heading": "Definition and Etiology of Recurrent Miscarriage",
+          "body_text": "**Definition.** Recurrent miscarriage is defined as **three or more spontaneous successive miscarriages**.\n\n**Etiology (numbered as in the deck):**\n- **1- Chromosomal translocation** — **balanced translocation or Robertsonian translocation** (typically in the parents' karyotypes).\n- **2- Antiphospholipid syndrome** (**antiphospholipid antibodies, anticardiolipin antibodies**) — **mostly 2nd trimester**.\n- **3- Thrombophilia** — commonly the **factor V Leiden mutation**.\n- **4- Uterine anomalies**, like **double or septate uterus** — **2nd trimester**.\n- **5- Cervical incompetence** — **2nd trimester**.\n- **6- Ovarian factors:**\n  - **Reduced ovarian reserve**\n  - **Luteal phase defect**\n- **7- Infection** — **STORCH, malaria, syphilis and brucellosis** can also cause recurrent abortion.\n\nNote the trimester signature that the deck flags: three of these causes — antiphospholipid syndrome, uterine anomalies and cervical incompetence — are explicitly 2nd-trimester causes, so recurrent *late*, often painless losses should steer the work-up towards them, while repeated first-trimester losses point first to chromosomal translocation.",
+          "key_points": [
+            "Recurrent miscarriage = three or more spontaneous successive miscarriages.",
+            "Chromosomal: balanced or Robertsonian translocation.",
+            "Antiphospholipid syndrome (antiphospholipid + anticardiolipin antibodies) — mostly 2nd trimester.",
+            "Thrombophilia — commonly factor V Leiden mutation.",
+            "Uterine anomalies (double or septate uterus) and cervical incompetence — 2nd trimester.",
+            "Ovarian factors: reduced ovarian reserve, luteal phase defect.",
+            "Infection: STORCH, malaria, syphilis, brucellosis."
+          ],
+          "check": {
+            "prompt": "How many successive spontaneous miscarriages define recurrent miscarriage?",
+            "options": [
+              "Three or more",
+              "Two or more",
+              "Four or more",
+              "Any single 2nd-trimester loss"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التعريف هو ثلاث إجهاضات تلقائية متتالية أو أكثر؛ خسارتان متتاليتان لا تُعدّان إجهاضاً متكرراً بهذا التعريف، وخسارة واحدة في الثلث الثاني لا تكفي أيضاً."
+          }
+        },
+        {
+          "heading": "Treatment Directed to the Possible Cause",
+          "body_text": "**Treatment is directed to the possible cause:**\n- **For the autoimmune antibodies (antiphospholipid syndrome)** → **aspirin in a low dose or heparin** (antithrombotic protection of the placental circulation).\n- **Uterine anomalies** → **correction of the anomalies by surgery** (e.g. excision of a septum / unification procedures for a double uterus).\n- **Cervical incompetence** → **cervical cerclage (tracheloplasty)** — a purse-string suture placed around the cervix to keep the internal os closed. The deck lists three types:\n  1. **McDonald cerclage**\n  2. **Shirodkar cerclage**\n  3. **Abdominal cerclage**\n\nMatch each treatment to its cause and the trimester clue: antibodies → aspirin/heparin; a malformed uterus → surgery; a weak cervix with painless 2nd-trimester losses → cerclage (McDonald, Shirodkar or abdominal).",
+          "key_points": [
+            "Treatment of recurrent miscarriage is directed to the possible cause.",
+            "Autoimmune antibodies → low-dose aspirin or heparin.",
+            "Uterine anomalies → surgical correction.",
+            "Cervical incompetence → cervical cerclage (tracheloplasty): McDonald, Shirodkar, or abdominal cerclage."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Recurrent miscarriage",
+          "definition_ar": "ثلاث إجهاضات تلقائية متتالية أو أكثر، وتُقيَّم بأسباب تختلف بحسب الثلث الحملي."
+        },
+        {
+          "term": "Robertsonian translocation",
+          "definition_ar": "انقلاب كروموسومي بين صبغيات قريبة (قاعدية) عند أحد الأبوين، من أسباب تكرر الإجهاض."
+        },
+        {
+          "term": "Anticardiolipin antibodies",
+          "definition_ar": "أضداد ذاتية ضد الكارديوليبين؛ وجودها المتكرر يدعم تشخيص متلازمة مضادات الفوسفوليبيد المسببة للإجهاض المتكرر في الثلث الثاني."
+        },
+        {
+          "term": "Factor V Leiden mutation",
+          "definition_ar": "أشيع طفرة تخثّرية وراثية تجعل العامل الخامس مقاوماً لبروتين C النشط؛ مرتبطة بالإجهاض المتكرر."
+        },
+        {
+          "term": "Luteal phase defect",
+          "definition_ar": "عيب الطور الأصفري: قصور الجسم الأصفر بعد الإباضة يُنقص البروجسترون ودعم بطانة الرحم."
+        },
+        {
+          "term": "STORCH",
+          "definition_ar": "مجموعة إنتانات خلقية (الزهري، التوكسوبلازما، الحصبة الألمانية، الفيروس المضخم للخلايا، الحلأ) يمكن أن تسبب تكرر الإجهاض مع الملاريا والبروسيلات."
+        },
+        {
+          "term": "Cervical cerclage (tracheloplasty)",
+          "definition_ar": "تطويق عنق الرحم بخياطة دائرية تُبقي الأنبوب العنقي مغلقاً في ضعف العنق؛ أنواعه ماكدونالد وشيرودكار والبطني."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Septic Miscarriage: Organisms, Management and Complications",
+      "summary_ar": "الإجهاض الإنتاني قد يتبع إجهاضاً تلقائياً أو مستحثّاً (خاصة غير القانوني/الجنائي)، وهو أكثر احتمالاً بعد إجهاض غير كامل أو إفراغ غير كافٍ للرحم. تشمل الجراثيم المسببة العنقوديات الذهبية والمطثية الوليشية والإشريكية القولونية والكليبسيلا والسيراتيا والعصيات الشحيحة والمكورات السبحية مجموعة B. تكون المريضة مريضة بشدة بحمى وتسرع قلب وصداع وغثيان وتوعك عام، مع ألم شديد أو متغير ونزف متغير قد يكون كريه الرائحة وعنق متفتح ورحم متضخم موجع مؤلم بالجس. تؤخذ مسحة مهبلية عالية وزرع دم ثم تُعطى المضادات الحيوية قبل أي تدخل جراحي، وتشمل المخاطر تسمم الدم والصدمة الإندوتوكسينية والتخثر المنتشر داخل الأوعية وتلف الكبد والكلية والتهاب البوق والعقم.",
+      "sections": [
+        {
+          "heading": "Origin and Causative Organisms of Septic Miscarriage",
+          "body_text": "**When does it occur?** Septic (infected) miscarriage:\n- May occur **after spontaneous or induced abortion (in criminal)** — the classic context is an unsafe, illegally instrumented termination;\n- Is **more likely after incomplete miscarriage or inadequate evacuation** — retained products are an ideal culture medium for ascending genital-tract organisms.\n\n**Causative organisms include:**\n- **Staphylococcus aureus**\n- **Clostridium welchii** (the gas-forming anaerobe of dirty-instrument abortions)\n- **Escherichia coli**\n- **Klebsiella**\n- **Serratia**\n- **Bacteroides species**\n- **Group B haemolytic streptococci**",
+          "key_points": [
+            "Septic miscarriage may follow spontaneous or induced (criminal) abortion.",
+            "It is more likely after incomplete miscarriage or inadequate evacuation.",
+            "Organisms: Staphylococcus aureus, Clostridium welchii, Escherichia coli, Klebsiella, Serratia, Bacteroides species, group B haemolytic streptococci."
+          ],
+          "check": {
+            "prompt": "Septic miscarriage is classically most likely to develop after which scenario?",
+            "options": [
+              "Incomplete miscarriage or inadequate evacuation",
+              "A complete miscarriage with a closed os",
+              "Threatened miscarriage with scant spotting",
+              "Implantation bleeding"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المنتجات المحتجزة بعد إجهاض غير كامل أو إفراغ غير كافٍ وسط مثالي لتكاثر الجراثيم الصاعدة، ولذلك يُخشى الإنتان هنا أكثر من غيره؛ أما الإجهاض الكامل فالعنق يُغلق والنواتج تُطرد كاملة، والإجهاض المهدَّد ونزف الانغراس لا يتركان نسيجاً متاحاً للإنتان."
+          }
+        },
+        {
+          "heading": "Clinical Picture, Management Sequence and Complications",
+          "body_text": "**Clinical variety signs and symptoms (slide table):**\n- **Pain:** severe or variable.\n- **Bleeding:** variable, may be offensive (foul-smelling).\n- **Cervical os:** open.\n- **Uterus:** bulky, tender and painful on examination.\n\n**Systemic picture (slide bullet):** the woman will feel **acutely ill with fever, tachycardia, headache, nausea and general malaise** — fever plus a tender bulky uterus with offensive bleeding after an abortion is septic miscarriage until proven otherwise.\n\n**Management (slide bullets):**\n- **High vaginal swab and blood cultures should be taken.**\n- **Antibiotics before any surgical intervention** — cover the organism list (including anaerobes and Clostridium), stabilise, and only then evacuate the uterus.\n\n**Risks / complications (slide list):**\n- **Septicemia**\n- **Endotoxic shock**\n- **DIC** (disseminated intravascular coagulation)\n- **Liver and renal damage**\n- **Salpingitis**\n- **Infertility**",
+          "key_points": [
+            "Septic miscarriage signs: severe/variable pain, variable bleeding that may be offensive, open os, bulky tender painful uterus.",
+            "Systemic: acutely ill — fever, tachycardia, headache, nausea, general malaise.",
+            "Investigations: high vaginal swab + blood cultures.",
+            "Antibiotics BEFORE any surgical intervention.",
+            "Complications: septicemia, endotoxic shock, DIC, liver and renal damage, salpingitis, infertility."
+          ],
+          "check": {
+            "prompt": "A febrile, toxic woman with an open os, offensive bleeding and a bulky tender uterus after an unsafe abortion needs which management sequence?",
+            "options": [
+              "Take high vaginal swab and blood cultures, start antibiotics, and only then perform any surgical intervention",
+              "Take her immediately to theatre for curettage before any antibiotics",
+              "Delay antibiotics until culture and sensitivity results return in 48-72 hours",
+              "Analgesia and bed rest alone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الترتيب الصحيح: مسحة مهبلية عالية وزرع دم أولاً، ثم المضادات الحيوية قبل أي تدخل جراحي؛ فالجراحة على رحم مصاب دون تغطية مضادات حيوية تزيد انتشار الإنتان، وانتظار نتائج الزرع 48-72 ساعة تأخير خطير في حالة إنتانية حادة، والمسكنات والراحة ليست علاجاً."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Septic miscarriage",
+          "definition_ar": "إجهاض مصاب بالإنتان، غالباً بعد إجهاض غير كامل أو إفراغ غير كافٍ أو إجهاض غير قانوني."
+        },
+        {
+          "term": "Clostridium welchii",
+          "definition_ar": "مطثية لاهوائية منتجة للغاز، من أخطر جراثيم الإجهاض الإنتاني بعد الإجهاض غير الآمن."
+        },
+        {
+          "term": "High vaginal swab",
+          "definition_ar": "مسحة تؤخذ من أعلى المهبل لعزل الجراثيم المسببة قبل بدء المضادات الحيوية في الإجهاض الإنتاني."
+        },
+        {
+          "term": "Endotoxic shock",
+          "definition_ar": "صدمة إندوتوكسينية تُسببها ذيفانات الجراثيم سلبية الغرام، من مضاعفات الإجهاض الإنتاني."
+        },
+        {
+          "term": "Disseminated intravascular coagulation (DIC)",
+          "definition_ar": "تخثّر منتشر داخل الأوعية يستهلك عوامل التخثر ويؤدي إلى نزف خطير؛ من مضاعفات الإنتان الشديد."
+        },
+        {
+          "term": "Salpingitis",
+          "definition_ar": "التهاب أنبوب الرحم (البوق)، من عواقب صعود الإنتان بعد الإجهاض، وقد ينتهي بالعقم."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 7
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f01",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c1",
+      "card_type": "basic",
+      "front_text": "Define abortion (miscarriage) with its two viability thresholds.",
+      "back_text": "Expulsion or removal of the products of conception (foetus, placenta, membranes) before foetal viability — defined as a foetal weight of 500gm or less, or a gestational age of less than 24 weeks.",
+      "tags": [
+        "definition",
+        "abortion"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f02",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c1",
+      "card_type": "basic",
+      "front_text": "What share of conceptions end in miscarriage, and when do most occur?",
+      "back_text": "It is thought that 15% of conceptions result in miscarriage, and the majority occur within the first trimester.",
+      "tags": [
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f03",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c1",
+      "card_type": "basic",
+      "front_text": "List the five types of bleeding in early pregnancy.",
+      "back_text": "1- Spontaneous abortion (threatened, inevitable — then incomplete, complete, missed, septic). 2- Implantation bleeding. 3- Incidental bleeding: cervical erosion, cervical polyp, infection (vaginitis, cervicitis, cervical cancer). 4- Ectopic pregnancy. 5- Hydatidiform mole & choriocarcinoma.",
+      "mnemonic_ar": "تذكّر: 'إجهاض، انغراس، عارض، خارج الرحم، عناقي' — الأنواع الخمسة لأي نزف في بداية الحمل.",
+      "tags": [
+        "differential"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f04",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "What is the most common cause of spontaneous abortion, and what share of defective conceptions are chromosomal?",
+      "back_text": "Maldevelopment of the conceptus — the most common cause; chromosomal abnormalities account for 70% of defective conceptions (monosomy, trisomy, chromosomal translocation).",
+      "tags": [
+        "etiology",
+        "chromosomal"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f05",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "Which maternal infections cause miscarriage (febrile or transplacental)?",
+      "back_text": "High fever itself (general metabolic effect), plus transplacental passage of viruses or bacteria: influenza, rubella, pneumonia, toxoplasmosis, cytomegalovirus, listeriosis, syphilis, brucellosis.",
+      "mnemonic_ar": "للقائمة: 'In Really Pregnant Times, Care Less, Sleep Better' — Influenza, Rubella, Pneumonia, Toxoplasmosis, CMV, Listeriosis, Syphilis, Brucellosis.",
+      "tags": [
+        "infection"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f06",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "Which genital tract infections are listed as causes of spontaneous abortion?",
+      "back_text": "Bacterial vaginosis and vaginal mycoplasma infection.",
+      "tags": [
+        "infection"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f07",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "Which endocrine abnormalities cause spontaneous abortion?",
+      "back_text": "Poor development of the corpus luteum; inadequate secretory endometrium; low serum progesterone levels; thyroid disorder.",
+      "tags": [
+        "endocrine"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f08",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "What share of early pregnancy losses are due to structural uterine abnormalities? Give examples.",
+      "back_text": "Structural abnormalities are implicated in 15% of early pregnancy losses — double uterus; unicornuate, bicornuate, septate or subseptate uterus; failure of the uterus to develop to adult size (infantile uterus).",
+      "tags": [
+        "uterine abnormalities"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f09",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "Cervical incompetence: typical trimester, mechanisms, and hallmark pattern?",
+      "back_text": "Usually causes 2nd-trimester abortion; congenital or acquired (laceration of the cervix or undue stretching of the internal os from previous medical abortion or childbirth); the membranes bulge through the cervical canal and rupture; hallmark = recurrent late pregnancy losses.",
+      "explanation_ar": "اربط الميكانيكية بالقصة: توسيع/شرخ الأنبوب العنقي بعد إجهاض سابق أو ولادة → انبعاج الأغشية وتمزقها → فقدان متكرر بلا ألم في الثلث الثاني.",
+      "tags": [
+        "cervical incompetence"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f10",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "Which immunological factors cause spontaneous abortion?",
+      "back_text": "Maternal lymphocytes with natural killer cell activity may affect trophoblast development; autoimmune diseases such as antiphospholipid syndrome.",
+      "tags": [
+        "immunology"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f11",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "card_type": "basic",
+      "front_text": "How often is no cause found for spontaneous abortion despite a full workup?",
+      "back_text": "The majority: 'despite detailed investigations, no cause can be found for the majority of cases of spontaneous abortion'.",
+      "tags": [
+        "etiology"
+      ],
+      "is_vivid": true
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f12",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "card_type": "basic",
+      "front_text": "Give the full clinical picture of threatened miscarriage (pain, bleeding, os, uterus).",
+      "back_text": "Pain: variable, possibly slight lower abdominal pain or backache. Bleeding: scant, during the first 3 months. Cervical os: closed, no dilation. Uterus: if palpable, soft and not tender. Symptoms of pregnancy are present.",
+      "tags": [
+        "threatened miscarriage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f13",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "card_type": "basic",
+      "front_text": "State the six management rules for threatened miscarriage.",
+      "back_text": "1- No vaginal examination or assessment (may provoke uterine activity). 2- No evidence that bed rest is effective. 3- Refer for medical attention straight away. 4- Pregnancy test + ultrasound to assess viability. 5- Symptoms of pregnancy are present. 6- Heavy or increased bleeding is an ominous sign and may precede inevitable abortion.",
+      "tags": [
+        "management",
+        "threatened miscarriage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f14",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "card_type": "basic",
+      "front_text": "Describe the clinical picture and management of inevitable miscarriage.",
+      "back_text": "Severe rhythmical pain; heavy bleeding with clots; open cervical os with dilation; uterus smaller than expected. The gestational sac separates from the uterine wall and the uterus contracts to expel the contents; the woman may collapse from blood loss. Admit, perform speculum examination, evacuate if incomplete; an oxytocic drug may be given after the products are expelled.",
+      "tags": [
+        "inevitable miscarriage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f15",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "card_type": "basic",
+      "front_text": "Incomplete miscarriage: what is retained, and what are the two treatments plus the rescue therapy?",
+      "back_text": "The gestational sac is incompletely expelled, usually with placental tissue retained (tissue present in cervix; shock risk). Treatment 1- surgical: evacuation of retained products of conception (curettage). Treatment 2- medical: prostaglandin analogues such as misoprostol. Transfusion may be given if blood loss is excessive.",
+      "tags": [
+        "incomplete miscarriage",
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f16",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "card_type": "basic",
+      "front_text": "How is a complete miscarriage confirmed, and is evacuation needed?",
+      "back_text": "The gestational sac is completely expelled (history of pain, bleeding, passing clots and tissue); pain and bleeding subside and the cervix closes; ultrasound shows an empty uterus coupled with falling HCG levels — no need for evacuation.",
+      "tags": [
+        "complete miscarriage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f17",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "card_type": "basic",
+      "front_text": "Missed miscarriage: other names, mechanism, and confirmatory test?",
+      "back_text": "Also called delayed or silent abortion; usually follows a threatened abortion; bleeding occurs between the uterine wall and the gestational sac and the embryo dies — mostly brown loss/spotting, absent pain, closed os, uterus smaller than expected, pregnancy symptoms diminish. Diagnosis confirmed by ultrasound; treatment: surgical evacuation or expectant management.",
+      "mnemonic_ar": "'فائت = صامت متأخر': نزف بنيّ قديم محتبس خلف كيس ميت وعنق مغلق.",
+      "tags": [
+        "missed miscarriage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f18",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "card_type": "basic",
+      "front_text": "How is pregnancy terminated in a missed miscarriage when the uterus is 12 weeks or below?",
+      "back_text": "Dilatation & curettage (D&C) — the method when the uterus is 12 weeks & below.",
+      "tags": [
+        "termination",
+        "D&C"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f19",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "card_type": "basic",
+      "front_text": "How is pregnancy terminated in a missed miscarriage when the uterus is above 12 weeks?",
+      "back_text": "Prostaglandins (vaginal or extra-amniotic), extra-amniotic saline infusion, or a Foley's catheter alone followed by an oxytocin infusion.",
+      "explanation_ar": "فوق 12 أسبوعاً يكبر الرحم فلا يُكحط بأمان؛ نُرغم الرحم على الطرد دوائياً (بروستاغلاندينات/أوكسيتوسين) أو ميكانيكياً (محلول ملحي خارج السلى أو قسطرة فولي).",
+      "tags": [
+        "termination",
+        "prostaglandins"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f20",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "card_type": "basic",
+      "front_text": "In the illustrated suction curettage of a 9-week pregnancy, which three instruments are used and how?",
+      "back_text": "A speculum is placed in the vagina to expose the cervix; a tenaculum is clamped to the lip of the cervix for traction/stabilisation; a cannula is inserted into the uterus (through the cervical canal into the uterine cavity) to apply suction. Figure labels: amnion, uterus, placenta, 9-week fetus.",
+      "tags": [
+        "procedures",
+        "suction curettage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f21",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "card_type": "basic",
+      "front_text": "Define recurrent miscarriage.",
+      "back_text": "Three or more spontaneous successive miscarriages.",
+      "tags": [
+        "recurrent miscarriage",
+        "definition"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f22",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "card_type": "basic",
+      "front_text": "Which recurrent-miscarriage causes are flagged as 2nd-trimester causes, and which thrombophilia is listed?",
+      "back_text": "Antiphospholipid syndrome (antiphospholipid antibodies, anticardiolipin antibodies) — mostly 2nd trimester; uterine anomalies (double or septate uterus) — 2nd trimester; cervical incompetence — 2nd trimester. Thrombophilia: commonly the factor V Leiden mutation. Chromosomal translocation (balanced/Robertsonian) heads the list.",
+      "tags": [
+        "recurrent miscarriage",
+        "etiology"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f23",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "card_type": "basic",
+      "front_text": "Match the treatments to the causes of recurrent miscarriage, including the three cerclage types.",
+      "back_text": "Autoimmune antibodies → aspirin in a low dose or heparin. Uterine anomalies → correction by surgery. Cervical incompetence → cervical cerclage (tracheloplasty): 1- McDonald cerclage, 2- Shirodkar cerclage, 3- abdominal cerclage. Treatment is always directed to the possible cause.",
+      "mnemonic_ar": "أنواع التطويق: 'ماكدونالد، شيرودكار، بطني' — McM-S-A؛ للأضداد: 'أسبرين أو هيبارين'.",
+      "tags": [
+        "recurrent miscarriage",
+        "treatment",
+        "cerclage"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f24",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "card_type": "basic",
+      "front_text": "List the causative organisms of septic miscarriage.",
+      "back_text": "Staphylococcus aureus, Clostridium welchii, Escherichia coli, Klebsiella, Serratia, Bacteroides species, and group B haemolytic streptococci.",
+      "mnemonic_ar": "سبعة جراثيم تسكب الدم: عنقودي ذهبي، مطثية ولشية، إشريكية، كليبسيلا، سيراتيا، عصيات شحيحة، سبحية مجموعة B — تذكّرها بـ 'Some Critical Killers Sever Blood Supply'.",
+      "tags": [
+        "septic abortion",
+        "organisms"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_f25",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "card_type": "basic",
+      "front_text": "Septic miscarriage: management sequence and list of complications.",
+      "back_text": "Take a high vaginal swab and blood cultures; give antibiotics BEFORE any surgical intervention (more likely after incomplete miscarriage or inadequate evacuation). Risks: septicemia, endotoxic shock, DIC, liver and renal damage, salpingitis, infertility.",
+      "tags": [
+        "septic abortion",
+        "management",
+        "complications"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m01",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c1",
+      "question_stem": "In the definition used in this lecture, expulsion or removal of the products of conception counts as abortion (miscarriage) before foetal viability is reached. Which pair of thresholds defines that viability?",
+      "options": [
+        "Foetal weight 500gm or less OR gestational age less than 24 weeks",
+        "Foetal weight 1000gm or less OR gestational age less than 28 weeks",
+        "Foetal weight 250gm or less OR gestational age less than 20 weeks",
+        "Foetal weight 1500gm or less OR gestational age less than 37 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التعريف في المحاضرة: الإجهاض هو طرد أو إزالة نواتج الحمل (الجنين والمشيمة والأغشية) قبل قابلية الجنين للحياة، والقابلية هنا تعني وزناً جنينياً 500 غرام أو أقل أو عمراً حملياً أقل من 24 أسبوعاً. الخيارات الأخرى تستخدم حدوداً متأخرة (1000 غرام و28 أسبوعاً) أو مبكرة (250 غراماً و20 أسبوعاً) لا تنطبق على هذا التعريف.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m02",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "question_stem": "A 26-year-old primigravida at 8 weeks' gestation reports two days of slight lower abdominal pain and backache with scant dark vaginal bleeding. Speculum examination shows a closed cervical os with no dilation; the uterus is soft, non-tender and consistent with dates, and her pregnancy symptoms (nausea, breast tenderness) are still present. Which clinical variety of spontaneous abortion is this?",
+      "options": [
+        "Threatened miscarriage",
+        "Inevitable miscarriage",
+        "Incomplete miscarriage",
+        "Complete miscarriage"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذا هو الإجهاض المهدَّد: نزف قليل في الأشهر الثلاثة الأولى مع ألم متغير (ألم أسفل البطن أو الظهر) وعنق مغلق غير متوسع ورحم لين غير موجع مع بقاء أعراض الحمل. الإجهاض الحتمي وغير الكامل يتطلبان عنقاً متفتحاً مع ألم شديد ونزف غزير، والإجهاض الكامل يعني انتهاء الألم والنزف مع عنق مغلق ورحم صلب متقلص — وليس نزفاً مستمراً مع أعراض حمل قائمة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m03",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "question_stem": "The same patient with a threatened miscarriage returns three days later: the bleeding has become clearly heavier than before, though the os remains closed. According to the lecture, what does a heavy or increased amount of bleeding mean in a threatened miscarriage?",
+      "options": [
+        "It is an ominous sign that may precede inevitable abortion",
+        "It confirms the miscarriage is complete",
+        "It proves the cervical os has closed permanently",
+        "It is typical of implantation bleeding"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ازدياد كمية النزف في الإجهاض المهدَّد علامة نذيرة (ominous) وقد تسبق تطور الحالة إلى إجهاض حتمي، ولذلك تُراقب المريضة وتُحوَّل للرعاية الطبية فوراً مع اختبار حمل وإيكو لتقييم حيوية الحمل. النزف الغزير لا يعني اكتمال الإجهاض (الاكتمال يعني خفوت النزف والألم مع رحم صلب متقلص)، ونزف الانغراس نزف خفيف مبكر جداً لا يزداد تدريجياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m04",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "question_stem": "A 29-year-old G2P1 at 9 weeks' gestation with scant bleeding and a closed os is diagnosed with a threatened miscarriage. Which management plan matches the lecture's rules?",
+      "options": [
+        "Refer for medical attention straight away, do a pregnancy test and ultrasound to assess viability, and avoid vaginal examination",
+        "Prescribe strict bed rest, which is proven to prevent miscarriage",
+        "Perform an immediate vaginal assessment to recheck the os",
+        "Schedule dilatation & curettage the same day"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قواعد تدبير الإجهاض المهدَّد: التحويل للرعاية الطبية فوراً، وإجراء اختبار حمل وإيكو لتقييم حيوية الحمل، مع تجنب الفحص المهبلي لأنه قد يثير نشاط الرحم؛ ولا يوجد دليل على فائدة الراحة في الفراش. أما الكحت فليس له دور في إجهاض مهدَّد بعنق مغلق قد يستمر فيه الحمل حتى ولادة رضيع حي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m05",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c3",
+      "question_stem": "A 31-year-old G3P2 at 11 weeks' gestation has severe rhythmical lower abdominal pain and heavy bleeding with clots. Speculum examination reveals an open cervical os with dilation, and the uterus is smaller than expected for dates. She feels dizzy and looks pale. What is the diagnosis and the immediate plan?",
+      "options": [
+        "Inevitable miscarriage — admit to hospital, perform speculum examination and evacuate if incomplete; an oxytocic drug may be given after the products are expelled",
+        "Threatened miscarriage — reassure and review in two weeks",
+        "Complete miscarriage — reassure, no evacuation needed",
+        "Missed miscarriage — expectant management alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الألم الشديد الإيقاعي مع نزف غزير وخثرات وعنق متفتح ورحم أصغر من المتوقع هو إجهاض حتمي؛ ينفصل كيس الحمل عن جدار الرحم ويتقلص الرحم لطرد نواتج الحمل، وقد تنهار المريضة من فقدان الدم، فالتدبير قبولها في المشفى والمعاينة بالمنظار المهبلي مع الإفراغ إذا كان الإجهاض غير كامل، ويجوز إعطاء دواء قابض للرحم بعد طرد النواتج. لا مكان للطمأنة والمتابعة (خيارات المهدَّد والكامل والفائت) مع هذه الصورة الانطباقية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m06",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "question_stem": "A 27-year-old G2P1 at 10 weeks' gestation passed clots and tissue at home and continues to bleed profusely; she is dizzy with HR 118 bpm and BP 88/54 mmHg. Speculum examination shows an open cervical os with tissue present in the cervix, and the uterus is smaller than expected. What is the most likely diagnosis?",
+      "options": [
+        "Incomplete miscarriage with shock",
+        "Complete miscarriage",
+        "Missed miscarriage",
+        "Threatened miscarriage"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النزف الغزير المستمر مع عنق متفتح ونسيج مرئي في العنق ورحم أصغر من المتوقع مع علامات صدمة هو الإجهاض غير الكامل: كيس الحمل طُرد جزئياً وبقي عادةً النسيج المشيمي محتجزاً فينزف الرحم بغزارة. الإجهاض الكامل يعني خفوت النزف والألم وعنقاً مغلقاً ورحماً صلباً؛ والفائت عنق مغلق مع نزف بنيّ بلا ألم؛ والمهدَّد نزف قليل مع عنق مغلق — كلها تناقض الصورة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m07",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "question_stem": "After resuscitation with IV fluids and cross-matched blood, the patient with an incomplete miscarriage asks about her options. Which pair of treatments — and which rescue therapy — does the lecture list for incomplete miscarriage?",
+      "options": [
+        "Surgical evacuation of retained products of conception (curettage) OR medical management with prostaglandin analogues such as misoprostol — with transfusion if blood loss is excessive",
+        "Cervical cerclage OR low-dose aspirin",
+        "Hysterectomy OR uterine artery embolisation",
+        "Bed rest and a repeat ultrasound in six weeks only"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "علاج الإجهاض غير الكامل: 1- جراحي بإفراغ نواتج الحمل المحتجزة من الرحم (الكحت)، أو 2- طبي بمحاكيات البروستاغلاندين مثل الميزوبروستول، مع إعطاء نقل الدم إذا كان فقدان الدم غزيراً. التطويق علاج ضعف عنق الرحم في الإجهاض المتكرر والأسبرين للأضداد المناعية — لا علاقة لهما هنا؛ والاستئصال الرحمي والمراقبة وحدها تدابير خاطئة لنزف غزير مع نسيج محتجز.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m08",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c4",
+      "question_stem": "A 33-year-old G3P2 at 9 weeks' gestation had two days of cramping and bleeding with passage of clots and tissue; since this morning the pain and bleeding have subsided. Speculum shows a closed cervical os, the uterus is firm and contracted, ultrasound shows an empty uterus, and serial HCG levels are falling. What management is required?",
+      "options": [
+        "No evacuation is needed — this is a complete miscarriage",
+        "Immediate dilatation & curettage for retained products",
+        "Misoprostol to complete the miscarriage",
+        "Emergency laparoscopy to exclude ectopic pregnancy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "طُرد كيس الحمل كاملاً: هبط الألم والنزف وأُغلق العنق وأصبح الرحم صلباً متقلصاً، والإيكو يُظهر رحماً فارغاً مع هبوط HCG — أي إجهاض كامل لا يحتاج إلى أي إفراغ. الكحت أو الميزوبروستول علاج الإجهاض غير الكامل حيث يبقى نسيج محتجز، ولا موجب هنا لتنظير البطن مع إيكو يُظهر رحماً فارغاً وHCG هابطاً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m09",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c5",
+      "question_stem": "A 30-year-old woman has a missed miscarriage confirmed on ultrasound; her uterus is approximately 14 weeks in size. Which termination approach fits the lecture's rule for termination of pregnancy in missed miscarriage?",
+      "options": [
+        "Prostaglandins (vaginal or extra-amniotic), extra-amniotic saline infusion, or a Foley's catheter alone followed by an oxytocin infusion",
+        "Dilatation & curettage",
+        "Immediate hysterotomy",
+        "Expectant management for another 12 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اختيار طريقة إنهاء الحمل في الإجهاض الفائت يعتمد على حجم الرحم: 12 أسبوعاً فأقل = توسيع وكحت؛ وفوق 12 أسبوعاً (كرحم هذه المريضة 14 أسبوعاً) = بروستاغلاندينات مهبلية أو خارج السلى أو محلول ملحي خارج السلى أو قسطرة فولي وحدها يتبعها ضخ الأوكسيتوسين. الكحت لم يعد الخيار لحجم أكبر من 12 أسبوعاً، ولا مكان لشق الرحم أو الترقب الطويل لحمل ميت مؤكد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ],
+      "hints": [
+        "The rule keys off uterine size, not the exact gestational age at diagnosis.",
+        "Which side of the 12-week line is a 14-week uterus on?"
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m10",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "question_stem": "A 32-year-old G4P0 with three successive spontaneous miscarriages — the last two at 17 and 18 weeks — is being evaluated for recurrent miscarriage. Which etiology is explicitly flagged by the lecture as a mostly 2nd-trimester recurrent cause?",
+      "options": [
+        "Antiphospholipid syndrome (antiphospholipid antibodies, anticardiolipin antibodies)",
+        "Paternal poor sperm quality",
+        "Bacterial vaginosis",
+        "Maternal age in the late 30's"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "متلازمة مضادات الفوسفوليبيد (أضداد الفوسفوليبيد والأضداد المضادة للكارديوليبين) مذكورة صراحةً كسبب للإجهاض المتكرر 'غالباً في الثلث الثاني'، وكذلك تشوهات الرحم وضعف عنق الرحم. أما سوء نوعية النطاف فمن عوامل الإجهاض التلقائي العام، والتهاب المهبل الجرثومي من إنتانات السبيل التناسلي، وعمر الأم المتأخر عامل خطر عام — وكلها ليست مُعلَّمة كأسباب متكررة للثلث الثاني.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m11",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c6",
+      "question_stem": "A 31-year-old G4P0 has had three consecutive painless second-trimester losses at 16-19 weeks; each began with membranes bulging through the cervix, rupture, then rapid delivery, with no preceding cramps or bleeding. She previously underwent a dilatation & curettage. Antiphospholipid/anticardiolipin antibodies are negative and pelvic ultrasound shows a normal uterus. What is the most likely cause of her recurrent miscarriage?",
+      "options": [
+        "Cervical incompetence",
+        "Balanced chromosomal translocation",
+        "Antiphospholipid syndrome",
+        "Double (didelphys) uterus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "فقدان متكرر بلا ألم في الثلث الثاني مع انبعاج الأغشية عبر العنق ثم تمزقها هو بصمة ضعف عنق الرحم (مكتسب هنا بعد توسيع وكحت سابق أحدث شرخاً أو تمدداً للأنبوب العنقي الداخلي). الانقلاب الكروموسومي المتوازن يفسر تكرر الفقدان في الثلث الأول عادةً ولا يرتبط بانبعاج الأغشية؛ وأضداد الفوسفوليبيد سلبية هنا؛ والرحم سليم في الإيكو فلا تشوه رحمياً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ],
+      "hints": [
+        "Which structure fails silently before any bleeding or contraction?",
+        "The prior D&C is the acquired injury to the internal os."
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m12",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "question_stem": "A 24-year-old woman presents febrile and toxic five days after an illegal (criminal) termination at about 13 weeks' gestation, with offensive vaginal bleeding, an open cervical os and a bulky, tender uterus. Which list matches the lecture's causative organisms of septic abortion?",
+      "options": [
+        "Staphylococcus aureus, Clostridium welchii, Escherichia coli, Klebsiella, Serratia, Bacteroides species and group B haemolytic streptococci",
+        "Neisseria gonorrhoeae, Treponema pallidum and HIV only",
+        "Candida albicans and Trichomonas vaginalis only",
+        "Mycobacterium tuberculosis only"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "جراثيم الإجهاض الإنتاني وفق المحاضرة: العنقوديات الذهبية، المطثية الوليشية، الإشريكية القولونية، الكليبسيلا، السيراتيا، العصيات الشحيحة (Bacteroides)، والمكورات السبحية مجموعة B — مزيج من هوائيات ولاهوائيات يعلو بعد الإجهاض غير الكامل أو الإفراغ غير الكافٍ أو الإجهاض غير القانوني. القوائم الأخرى (المكورات البنية/اللولبيات/الفيروسات، الفطريات والتريكوموناس، أو العصيات السلية وحدها) ليست قائمة الجراثيم المذكورة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m13",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "question_stem": "The same patient is acutely ill: temperature 38.9 C, HR 124 bpm, offensive bleeding, open os, bulky tender uterus. What is the correct management sequence for suspected septic abortion?",
+      "options": [
+        "Take a high vaginal swab and blood cultures, start antibiotics, and only then proceed with any surgical intervention",
+        "Take her straight to theatre for curettage before any antibiotics",
+        "Delay antibiotics until culture and sensitivity results return in 48-72 hours",
+        "Analgesia, antipyretics and bed rest alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التسلسل الصحيح: أخذ مسحة مهبلية عالية وزرع دم قبل البدء، ثم إعطاء المضادات الحيوية قبل أي تدخل جراحي — فالإفراغ يُنجز بعد تغطية الجراثيم لا قبلها. جراحة فورية بلا مضادات حيوية تنشر الإنتان وتفاقم الصدمة، وانتظار نتائج الزرع 48-72 ساعة تأخير خطر في إنتان حاد، والمسكنات والخافضات والراحة ليست علاجاً للإجهاض الإنتاني.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m14",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c7",
+      "question_stem": "Which set of complications is listed in the lecture as the risks of septic abortion?",
+      "options": [
+        "Septicemia, endotoxic shock, DIC, liver and renal damage, salpingitis and infertility",
+        "Placenta praevia, placental abruption and pre-eclampsia",
+        "Gestational diabetes and polyhydramnios",
+        "Postpartum haemorrhage and Sheehan syndrome"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "مخاطر الإجهاض الإنتاني المذكورة: تسمم الدم، الصدمة الإندوتوكسينية، التخثر المنتشر داخل الأوعية، تلف الكبد والكلية، التهاب البوق، والعقم. أما المشيمة المنزاحة والانفصال والمقدمات الارتعاجية فمضاعفات الحمل المتأخر، والسكري الحملي والاستسقاء الأمنيوسي حالات استقلابية، ونزف ما بعد الولادة ومتلازمة شيهان مضاعفات نفاس — لا علاقة لها بالإجهاض الإنتاني.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_m15",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "concept_id": "obgyn_L8_early_pregnancy_bleeding_c2",
+      "question_stem": "What is the most common cause of spontaneous abortion, and what fraction of defective conceptions does chromosomal abnormality account for?",
+      "options": [
+        "Maldevelopment of the conceptus — chromosomal abnormalities in 70% of defective conceptions",
+        "Uterine abnormalities — 15% of early pregnancy losses",
+        "Cervical incompetence — usually 2nd trimester",
+        "Antiphospholipid syndrome — mostly 2nd trimester"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "السبب الأشيع للإجهاض التلقائي هو سوء تكوّن البيضة الملقّحة، وتشكّل الشذوذات الكروموسومية (الوحادي والثلاثي والانقلاب) 70% من الحملات المعيبة. تشوهات الرحم مسؤولة عن 15% من فقدان الحمل المبكر، وضعف عنق الرحم ومتلازمة مضادات الفوسفوليبيد سببان مهمان لكنهما يتصدران قصة الفقدان في الثلث الثاني لا السبب الأشيع عموماً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_case1",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Incomplete Miscarriage with Haemorrhagic Shock at 10 Weeks",
+      "scenario": "A 27-year-old G2P1 at 10 weeks' gestation by LMP is rushed to the emergency department after passing clots and tissue at home; she has continued profuse bleeding, is dizzy and pale. The case tests recognition of the open-os varieties of spontaneous abortion and their surgical versus medical management.",
+      "vignette": {
+        "age": 27,
+        "sex": "female",
+        "chief_complaint": "Profuse vaginal bleeding and severe lower abdominal pain at 10 weeks' gestation",
+        "history": "G2P1, desired pregnancy; LMP 10 weeks ago, regular cycles before conception. Since this morning she has soaked several pads per hour, passed large clots and whitish tissue, and feels increasingly dizzy. No fever or foul-smelling discharge; no trauma; no prior operations other than one previous normal vaginal delivery.",
+        "vitals": {
+          "bp": "88/54 mmHg",
+          "hr": "118 bpm",
+          "rr": "22/min",
+          "temp": "36.8 C",
+          "spo2": "98%"
+        },
+        "exam": "Pale, anxious, cool peripheries. Speculum: open cervical os with dilation and tissue present in the cervix, moderate active bleeding. Bimanual: uterus smaller than expected for 10 weeks, soft and mildly tender; no adnexal masses or peritoneal signs.",
+        "labs": [
+          {
+            "name": "Haemoglobin",
+            "value": "8.9 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "11.0 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Platelets",
+            "value": "212 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Beta-hCG",
+            "value": "45,000 IU/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Blood group",
+            "value": "O Rh-positive",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Bedside ultrasound: intrauterine gestational sac with retained placental tissue and echogenic debris, no fetal cardiac activity; no free fluid in the pouch of Douglas."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Incomplete miscarriage with shock",
+            "Threatened miscarriage",
+            "Complete miscarriage",
+            "Missed miscarriage"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "النزف الغزير المستمر مع ألم شديد وعنق متفتح ونسيج في العنق ورحم أصغر من المتوقع وعلامات صدمة = إجهاض غير كامل: طُرد كيس الحمل جزئياً وبقي النسيج المشيمي عادةً محتجزاً. المهدَّد نزف قليل مع عنق مغلق، والكامل خفوت للنزف والألم مع رحم صلب متقلص، والفائت نزف بنيّ مع عنق مغلق ورحم صغير — كلها تناقض الصورة.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case1_s2",
+          "prompt": "After resuscitation with IV fluids and cross-matched blood, what is the definitive treatment?",
+          "options": [
+            "Surgical evacuation of retained products of conception from the uterus (curettage)",
+            "Expectant management at home with weekly scans",
+            "Cervical cerclage to close the os",
+            "Immediate hysterectomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلاج الحاسم للإجهاض غير الكامل هو الإفراغ الجراحي لنواتج الحمل المحتجزة بالكحت بعد الإنعاش؛ فالنسيج المحتجز يمنع تقلص الرحم ويستمر النزف. الترقب في المنزل خطر مع صدمة نزفية، والتطويق علاج ضعف عنق الرحم وليس عنقاً متفتحاً بإجهاض، والاستئصال الرحمي ليس خط العلاج الأول لامرأة شابة تريد الحمل مستقبلاً.",
+          "xp": 15,
+          "hints": [
+            "What keeps a post-miscarriage uterus bleeding? Retained placental tissue.",
+            "The lecture's first-listed treatment for this variety is surgical."
+          ]
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case1_s3",
+          "prompt": "Which medical alternative could be chosen in a haemodynamically stable patient, and which rescue therapy is listed if blood loss is excessive?",
+          "options": [
+            "Prostaglandin analogue (misoprostol) — with transfusion if blood loss is excessive",
+            "Methotrexate to dissolve the retained tissue",
+            "Low-dose aspirin to improve placentation",
+            "Oxytocin infusion before any products have been expelled"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلاج الطبي المذكور للإجهاض غير الكامل هو محاكيات البروستاغلاندين مثل الميزوبروستول (يحفز الرحم على طرد النواتج)، مع إمكانية نقل الدم إذا كان النزف غزيراً. الميثوتريكسات دواء الحمل خارج الرحم لا الإفراغ، والأسبرين للأضداد المناعية في الإجهاض المتكرر، والدواء القابض يُعطى بعد طرد النواتج لا قبله.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case1_s4",
+          "prompt": "After uneventful evacuation she stabilises. Which endpoint — borrowed from the criteria of a complete miscarriage — confirms that the uterus is now empty?",
+          "options": [
+            "Ultrasound showing an empty uterus coupled with falling HCG levels, with pain and bleeding subsiding and the cervix closed",
+            "A rising beta-hCG titre",
+            "A repeat speculum examination showing a persistently open os",
+            "Immediate conception in the next cycle"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "معايير اكتمال الإجهاض هي الإيكو الذي يُظهر رحماً فارغاً مع هبوط مستويات HCG، مع خفوت الألم والنزف وإغلاق العنق ورحم صلب متقلص — وهي نفسها نقطة النهاية التي تؤكد نجاح الإفراغ. ارتفاع HCG يدل على نواتج حية متبقية أو حمل خارج رحم، وبقاء العنق متفتحاً يوحي بإجهاض غير مكتمل، والحمل الفوري التالي ليس هدفاً علاجياً في هذه المرحلة.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: إجهاض غير كامل مع صدمة نزفية في الأسبوع العاشر. الدروس: العنق المتفتح مع نسيج مرئي فيه ورحم أصغر من المتوقع يميز غير الكامل عن المهدَّد (عنق مغلق ونزف قليل) والكامل (عنق مغلق ونزف خافت ورحم متقلص) والفائت (عنق مغلق ونزف بنيّ). خط العلاج إنعاش ثم إفراغ نواتج الحمل المحتجزة جراحياً بالكحت أو طبياً بالميزوبروستول في المريضة المستقرة، مع نقل الدم عند غزارة النزف؛ وتُؤكد نهاية العلاج برحم فارغ في الإيكو مع هبوط HCG. الخلاصة الذهبية: حالة العنق (مغلق/متفتح) هي الفاصل بين أصناف الإجهاض، والنسيج المحتجز هو سبب النزف المستمر.",
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_case2",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Fever and Offensive Bleeding After an Unsafe Termination: Septic Abortion",
+      "scenario": "A 24-year-old G1 presents acutely ill five days after an illegal (criminal) termination at about 13 weeks' gestation, with fever, offensive vaginal bleeding and severe pelvic pain. The case tests the microbiology, the swab-and-culture-first rule, antibiotics before surgery, and the complication list of septic miscarriage.",
+      "vignette": {
+        "age": 24,
+        "sex": "female",
+        "chief_complaint": "Fever, offensive vaginal bleeding and pelvic pain after an unsafe termination",
+        "history": "G1 with an unplanned pregnancy of about 13 weeks; a clandestine instrument-based termination was performed five days ago. Since then she has had foul-smelling vaginal bleeding, rigors, headache, nausea and vomiting, and worsening pelvic pain. No antenatal care; no known allergies.",
+        "vitals": {
+          "bp": "100/60 mmHg",
+          "hr": "126 bpm",
+          "rr": "24/min",
+          "temp": "39.2 C",
+          "spo2": "96%"
+        },
+        "exam": "Ill-looking, flushed and drowsy. Speculum: offensive uterine discharge and variable bleeding; open cervical os. Bimanual: uterus bulky, tender and painful on examination; no adnexal mass; no guarding or rebound.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "21.4 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Haemoglobin",
+            "value": "10.5 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "180 mg/L",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "3.4 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "INR",
+            "value": "1.6",
+            "flag": "high"
+          },
+          {
+            "name": "Beta-hCG",
+            "value": "30,000 IU/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Pelvic ultrasound: retained products of conception with intrauterine echogenic debris; no free fluid; no adnexal pathology."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case2_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Septic abortion after an incomplete/unsafe termination",
+            "Threatened miscarriage",
+            "Ectopic pregnancy",
+            "Acute appendicitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "حمى وتسمم عام بعد إجهاض مستحثّ غير قانوني مع نزف كريه الرائحة وعنق متفتح ورحم متضخم موجع = إجهاض إنتاني، وهو أكثر احتمالاً بعد إجهاض غير كامل أو إفراغ غير كافٍ حيث تشكل المنتجات المحتجزة وسطاً جرثومياً. لا صلة للمهدَّد (عنق مغلق ونزف قليل)، والحمل خارج الرحم يظهر بألم منتبذ ونزف خفيف لا نزف كريه من رحم متضخم، والزائدة الدودية ألم بالربع السفلي الأيمن مع علامات نفسية لا إفرازات مهبلية كريهة.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case2_s2",
+          "prompt": "Which specimens must be taken before starting treatment?",
+          "options": [
+            "A high vaginal swab and blood cultures",
+            "No cultures — proceed directly to surgery",
+            "A midstream urine specimen only",
+            "A throat swab only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "يُوجب البروتوكول أخذ مسحة مهبلية عالية وزرع دم لتوجيه المضادات الحيوية حسب الجرثوم المسبب (كالعنقوديات الذهبية أو المطثية الوليشية أو الإشريكية القولونية أو الكليبسيلا أو السيراتيا أو العصيات الشحيحة أو المكورات السبحية مجموعة B). تجاهل الزرع يحرمنا من التوجيه، والبول والبلعوم لا يعكسان جراثيم جوف الرحم المصاب.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case2_s3",
+          "prompt": "What is the correct order of the definitive management?",
+          "options": [
+            "Antibiotics before any surgical intervention, then evacuation of the uterus",
+            "Immediate curettage before any antibiotics",
+            "Wait 48-72 hours for culture results before any treatment",
+            "Hysterectomy as the first step"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "القاعدة: المضادات الحيوية قبل أي تدخل جراحي؛ يُبدأ تغطية الجراثيم (هوائيات ولاهوائيات) بعد أخذ المسحة والزرع، ثم يُفرَّغ الرحم من النواتج المحتجزة بعد الاستقرار. الكحت الفوري بلا تغطية يفاقم بذار الإنتان والصدمة، وانتظار نتائج الزرع تأخير خطر، والاستئصال الرحمي ليس الخطوة الأولى في شابة — يُلجأ إليه فقط عند فشل الإجراءات الأخرى أو الخراج الرحمي غير المستجيب.",
+          "xp": 15,
+          "hints": [
+            "Culture first, antibiotics next, scalpel last.",
+            "What does 'antibiotics before any surgical intervention' mean for the timing of curettage?"
+          ]
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case2_s4",
+          "prompt": "Which complication set must the team actively anticipate during her ICU stay?",
+          "options": [
+            "Septicemia, endotoxic shock, DIC, liver and renal damage, salpingitis and infertility",
+            "Placenta accreta spectrum",
+            "Neural tube defects in a future pregnancy",
+            "Ovarian hyperstimulation syndrome"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مخاطر الإجهاض الإنتاني المذكورة في المحاضرة: تسمم الدم، الصدمة الإندوتوكسينية، التخثر المنتشر داخل الأوعية (لاحظ ارتفاع INR لديها)، وتلف الكبد والكلية، والتهاب البوق الذي قد ينتهي بالعقم — ولذلك تُراقب هذه المريضة بعلامات الحيوية والتخثر ووظائف الأعضاء. أما طيف المشيمة الملتصقة ومضاعفات الحمل التالية وفرط تنبيه المبيض فليست من مضاعفات الإجهاض الإنتاني.",
+          "xp": 12
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: إجهاض إنتاني بعد إنهاء حمل غير قانوني مع نواتج محتجزة. الدروس: الإجهاض الإنتاني أكثر ما يلي إجهاضاً غير كامل أو إفراغاً غير كافٍ أو إجهاضاً جنائياً؛ صورته سريرياً مريضة حادة بحمى وتسرع قلب وصداع وغثيان وتوعك مع نزف كريه وعنق متفتح ورحم متضخم موجع. التسلسل العلاجي: مسحة مهبلية عالية وزرع دم ثم مضادات حيوية قبل أي تدخل جراحي ثم الإفراغ. والمخاطر المهدِّدة للحياة: تسمم الدم والصدمة الإندوتوكسينية والتخثر المنتشر داخل الأوعية وتلف الكبد والكلية والتهاب البوق والعقم. الخلاصة الذهبية: 'زرع ثم مضادات حيوية ثم جراحة' — لا سكيناً قبل التغطية.",
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L8_early_pregnancy_bleeding_case3",
+      "lecture_id": "obgyn_L8_early_pregnancy_bleeding",
+      "title": "Three Successive Painless Late Losses: Recurrent Miscarriage and Cervical Incompetence",
+      "scenario": "A 31-year-old G4P0 is counselled at 12 weeks' gestation after three successive spontaneous losses at 16-19 weeks, each painless with bulging membranes then rapid delivery. The case tests the definition of recurrent miscarriage, the 2nd-trimester cause signature, cerclage types, and the alternative antiphospholipid route.",
+      "vignette": {
+        "age": 31,
+        "sex": "female",
+        "chief_complaint": "Counselling to prevent a fourth consecutive late miscarriage",
+        "history": "G4P0. Three successive spontaneous miscarriages at 16, 18 and 19 weeks; each began painless and without bleeding, with membranes bulging through the cervix, then rupture and delivery of a fetus within hours. Surgical evacuation (D&C) was performed after the second loss. No thrombosis or autoimmune history; no smoking, alcohol or cocaine use; husband's semen analysis normal.",
+        "vitals": {
+          "bp": "110/70 mmHg",
+          "hr": "84 bpm",
+          "rr": "16/min",
+          "temp": "36.6 C",
+          "spo2": "99%"
+        },
+        "exam": "At 12+1 weeks: uterus size appropriate for dates; cervix 2.8 cm long, closed, no bleeding or discharge; no uterine anomaly palpable.",
+        "labs": [
+          {
+            "name": "Anticardiolipin antibodies (IgG/IgM)",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Lupus anticoagulant",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Factor V Leiden mutation",
+            "value": "Absent",
+            "flag": "normal"
+          },
+          {
+            "name": "Parental karyotypes",
+            "value": "Normal (no translocation)",
+            "flag": "normal"
+          },
+          {
+            "name": "Beta-hCG",
+            "value": "Appropriate for 12 weeks",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasound today: viable intrauterine pregnancy 12+1 weeks; cervix 2.8 cm with no funnelling yet; uterine contour normal — no double or septate uterus."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case3_s1",
+          "prompt": "Her history satisfies the definition of recurrent miscarriage. What is that definition?",
+          "options": [
+            "Three or more spontaneous successive miscarriages",
+            "Two or more miscarriages of any pattern",
+            "Three losses including one ectopic pregnancy",
+            "A single 2nd-trimester loss"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الإجهاض المتكرر يُعرَّف بثلاث إجهاضات تلقائية متتالية أو أكثر؛ وقد أحدثت هذه المريضة ثلاثة فقدانات متتالية في الثلث الثاني. خسارتان لا تكفيان للتعريف، وإدراج حمل خارج الرحم ضمن العدد ليس من التعريف (هو فقدان غير إجهاضي)، وخسارة واحدة مهما كان ثلثها لا تشكل إجهاضاً متكرراً.",
+          "xp": 8
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case3_s2",
+          "prompt": "With three painless 2nd-trimester losses marked by bulging membranes, a prior D&C, negative APS/thrombophilia screens and a normal uterus, what is the most likely etiology?",
+          "options": [
+            "Cervical incompetence (acquired — laceration or stretching of the internal os after previous medical abortion or childbirth)",
+            "Balanced or Robertsonian chromosomal translocation",
+            "Antiphospholipid syndrome",
+            "Double or septate uterus"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ضعف عنق الرحم يتصور كفقدان متكرر بلا ألم في الثلث الثاني مع انبعاج الأغشية عبر الأنبوب العنقي وتمزقها ثم طرد سريع — وهو خلفية شرخ/تمدد الأنبوب العنقي الداخلي بعد توسيع وكحت سابق أو ولادة. النووي الكروموسومي للوالدين سليم (لا انقلاب)، وأضداد الفوسفوليبيد/الكارديوليبين سلبية (لا متلازمة مضادات الفوسفوليبيد)، والإيكو يُظهر رحماً سليماً (لا رحم مزدوج أو مقسّوم).",
+          "xp": 15,
+          "hints": [
+            "Which 2nd-trimester cause produces painless bulging membranes?",
+            "Her prior D&C injured the internal os — the classic acquired route."
+          ]
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case3_s3",
+          "prompt": "Which treatment is directed at this cause?",
+          "options": [
+            "Cervical cerclage (tracheloplasty) — McDonald, Shirodkar or abdominal cerclage",
+            "Aspirin in a low dose or heparin",
+            "Surgical correction of a uterine septum",
+            "Expectant management with no intervention"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "علاج ضعف عنق الرحم هو تطويق عنق الرحم (tracheloplasty) بخياطة تبقي الأنبوب العنقي مغلقاً، بأنواعه الثلاثة: ماكدونالد وشيرودكار والبطني. الأسبرين بجرعة منخفضة أو الهيبارين علاج الأضداد المناعية الذاتية (متلازمة مضادات الفوسفوليبين) وهي سلبية هنا، وتصحيح الحاجز الرحمي علاج تشوهات الرحم غير الموجودة لديها، والترقب بلا تدخل يكرر خطر فقدان رابع في الثلث الثاني.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L8_early_pregnancy_bleeding_case3_s4",
+          "prompt": "If instead her anticardiolipin and antiphospholipid antibodies had returned positive with the same 2nd-trimester losses, which directed treatment would the lecture recommend?",
+          "options": [
+            "Aspirin in a low dose or heparin",
+            "Abdominal cerclage",
+            "Misoprostol evacuation",
+            "Foley's catheter termination"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "للأضداد المناعية الذاتية (متلازمة مضادات الفوسفوليبيد) العلاج الموجه هو الأسبرين بجرعة منخفضة أو الهيبارين لحماية الدوران المشيمي من التخثر. أما التطويق البطني فهدفه عنق ضعيف لا أضداد تخثرية، والميزوبروستول وقسطرة فولي أدوات إنهاء حمل فائت وليست علاجاً لسببٍ مناعي متكرر.",
+          "xp": 12
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: إجهاض متكرر (ثلاث فقدانات متتالية) بسبب ضعف عنق رحم مكتسب بعد توسيع وكحت سابق. الدروس: عرّف الإجهاض المتكرر بثلاث خسارات متتالية أو أكثر؛ ثم اقرأ 'بصمة الثلث': فقدان متكرر في الثلث الأول يوجّه نحو الانقلاب الكروموسومي، بينما الفقدان غير المؤلم في الثلث الثاني يوجّه نحو متلازمة مضادات الفوسفوليبيد وتشوهات الرحم وضعف عنق الرحم — ونبض القصة هنا (أغشية منبعجة بلا ألم ولا نزف مع D&C سابق) يرجح ضعف العنق. العلاج الموجه: تطويق عنق الرحم (ماكدونالد أو شيرودكار أو البطني) لضعف العنق، والأسبرين بجرعة منخفضة أو الهيبارين إن كانت الأضداد إيجابية. الخلاصة الذهبية: في الإجهاض المتكرر 'السبب يحدد العلاج'، والثلث الحملي هو البوصلة.",
+      "difficulty": "advanced",
+      "order_index": 3
+    }
+  ]
+}

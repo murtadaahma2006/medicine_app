@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- ويدجت الشاشة الرئيسية -->
+    <!-- ويدجت الشاشة الرئيسية (v19: أهدافي + لؤلؤة اليوم) -->
     <string name="widget_title">منصة الطب الباطني</string>
-    <string name="widget_due_label">بطاقة مستحقة اليوم</string>
-    <string name="widget_progress_placeholder">إنجاز اليوم: 0%</string>
-    <string name="widget_tip_placeholder">افتح التطبيق لبدء المراجعة اليومية</string>
+    <string name="widget_goals_label">أهدافي</string>
+    <string name="widget_goals_empty">لا محاضرات مثبتة — افتح التطبيق وثبّت 📌</string>
+    <string name="widget_pearl_label">لؤلؤة اليوم</string>
+    <string name="widget_pearl_placeholder">افتح التطبيق لتظهر لؤلؤتك الطبية الأولى 💡</string>
+    <string name="widget_goal_more">+ %1$d أخرى</string>
 </resources>

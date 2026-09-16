@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/utils/responsive_layout.dart';
 import '../../theme/tokens.dart';
 import 'app_button.dart';
 import 'app_card.dart';
@@ -156,6 +157,9 @@ class AppSheet extends StatelessWidget {
   final double? maxHeightFactor;
 
   /// يفتح الشيت من أي سياق — موضع واحد لكل شيتات التطبيق.
+  ///
+  /// **تجاوب**: على التابلت يُقيد العرض بـ 400 موسّطاً (ResponsiveSheet)
+  /// — بلا امتداد مشوه بعرض الشاشة. الموبايل: لا يتغير شيء.
   static Future<T?> show<T>(
     BuildContext context, {
     required WidgetBuilder builder,
@@ -167,10 +171,12 @@ class AppSheet extends StatelessWidget {
       backgroundColor: Colors.transparent,
       barrierColor: AppColors.bgDark.withValues(alpha: 0.54),
       isScrollControlled: true,
-      builder: (BuildContext sheetContext) => AppSheet(
-        title: title,
-        maxHeightFactor: maxHeightFactor,
-        child: builder(sheetContext),
+      builder: (BuildContext sheetContext) => ResponsiveSheet(
+        child: AppSheet(
+          title: title,
+          maxHeightFactor: maxHeightFactor,
+          child: builder(sheetContext),
+        ),
       ),
     );
   }

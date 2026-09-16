@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import '../../../../core/database/correction.dart';
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/xp_event.dart';
+import '../../../../core/motivation/celebration_queue.dart';
 import '../../../../core/utils/app_haptics.dart';
+import '../../../../core/utils/error_logger.dart';
+import '../../../../core/utils/responsive_layout.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../widgets/fixation_spans.dart';
@@ -146,23 +149,39 @@ class _ClinicalCasePlayerPageState extends State<ClinicalCasePlayerPage> {
   }
 
   Future<void> _finish() async {
+    // لقطة XP قبل الكتابات الختامية — ل كشف رفع المستوى (Motivator).
+    final int beforeXp = await Motivator.currentXp();
+
+    // كل كتابات الختام في معاملة واحدة (Batching).
     try {
-      await DatabaseHelper.instance.insertCorrections(_corrections);
-      await DatabaseHelper.instance.grantDailyStreakBonus();
-      await DatabaseHelper.instance.unlockEarnedBadges();
-    } catch (_) {
-      // صمت مقصود.
+      final List<String> newBadges =
+          await DatabaseHelper.instance.finalizeSession(
+        corrections: _corrections,
+      );
+      await Motivator.detectLevelUp(beforeXp, newBadgeIds: newBadges);
+    } catch (error) {
+      AppErrorLogger.instance.record(
+        type: 'ClinicalCaseSession',
+        error: error,
+      );
     }
 
     if (!mounted) return;
+
+    // رسنجر الشاشة الأم قبل pop — استخدام context بعد pop = عنصر مهدم.
+    final ScaffoldMessengerState messenger = ScaffoldMessenger.of(context);
+    final int correctSteps = _correctSteps;
+    final int totalSteps = _steps.length;
+    final int earnedXp = _earnedXp;
+
     Navigator.of(context).pop();
 
-    ScaffoldMessenger.of(context).showSnackBar(
+    messenger.showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
         backgroundColor: AppColors.gold(Brightness.light),
         content: Text(
-          'اكتملت الحالة — $_correctSteps من ${_steps.length} قرارات صحيحة (+$_earnedXp XP)',
+          'اكتملت الحالة — $correctSteps من $totalSteps قرارات صحيحة (+$earnedXp XP)',
           textAlign: TextAlign.center,
         ),
       ),
@@ -205,67 +224,71 @@ class _ClinicalCasePlayerPageState extends State<ClinicalCasePlayerPage> {
   Widget _buildCase(Brightness b) {
     final Map<String, Object?> vignette = _parseJsonMap(_caseRow!['vignette_json']);
 
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
-          child: ProgressBar(
-            progress:
-                (_stepIndex + (_selected != null ? 1 : 0)) / _steps.length,
-            height: 6,
-            color: AppColors.error(b),
-          ),
-        ),
-        Expanded(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(AppSpacing.xl),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                // ── بطاقة السيناريو (تظهر في الخطوة الأولى) ──
-                if (_stepIndex == 0) ...<Widget>[
-                  _VignetteCard(vignette: vignette),
-                  const SizedBox(height: AppSpacing.md),
-                  ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 460),
-                    child: Text(
-                      _caseRow!['scenario']! as String,
-                      textDirection: TextDirection.ltr,
-                      textAlign: TextAlign.start,
-                      style: AppType.body.copyWith(
-                          height: 1.65,
-                          fontFamily: AppType.focusFamily,
-                          fontSize: 15,
-                          color: AppColors.focusText(b)),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpacing.lg),
-                ],
-
-                // ── مؤشر الخطوة ──
-                Row(
+    // توافق الآيباد: عمود الحالة لا يتمدد على الشاشات الواسعة —
+    // ResponsiveReadingColumn الموحد (موبايل: بلا أي أثر).
+    return ResponsiveReadingColumn(
+      child: Column(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+              child: ProgressBar(
+                progress:
+                    (_stepIndex + (_selected != null ? 1 : 0)) / _steps.length,
+                height: 6,
+                color: AppColors.error(b),
+              ),
+            ),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(AppSpacing.xl),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Icon(Icons.medical_services_rounded,
-                        size: 16, color: AppColors.error(b)),
-                    const SizedBox(width: AppSpacing.sm),
-                    Text(
-                      'الخطوة ${_stepIndex + 1} من ${_steps.length}',
-                      style: AppType.caption.copyWith(
-                          fontWeight: FontWeight.w800,
-                          color: AppColors.error(b)),
+                    // ── بطاقة السيناريو (تظهر في الخطوة الأولى) ──
+                    if (_stepIndex == 0) ...<Widget>[
+                      _VignetteCard(vignette: vignette),
+                      const SizedBox(height: AppSpacing.md),
+                      ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 460),
+                        child: Text(
+                          _caseRow!['scenario']! as String,
+                          textDirection: TextDirection.ltr,
+                          textAlign: TextAlign.start,
+                          style: AppType.body.copyWith(
+                              height: 1.65,
+                              fontFamily: AppType.focusFamily,
+                              fontSize: 15,
+                              color: AppColors.focusText(b)),
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.lg),
+                    ],
+
+                    // ── مؤشر الخطوة ──
+                    Row(
+                      children: <Widget>[
+                        Icon(Icons.medical_services_rounded,
+                            size: 16, color: AppColors.error(b)),
+                        const SizedBox(width: AppSpacing.sm),
+                        Text(
+                          'الخطوة ${_stepIndex + 1} من ${_steps.length}',
+                          style: AppType.caption.copyWith(
+                              fontWeight: FontWeight.w800,
+                              color: AppColors.error(b)),
+                        ),
+                      ],
                     ),
+                    const SizedBox(height: AppSpacing.md),
+
+                    // ── سؤال القرار ──
+                    ..._buildStep(b),
                   ],
                 ),
-                const SizedBox(height: AppSpacing.md),
-
-                // ── سؤال القرار ──
-                ..._buildStep(b),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
-      ],
-    );
+      );
   }
 
   List<Widget> _buildStep(Brightness b) {

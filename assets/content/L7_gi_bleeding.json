@@ -1,0 +1,1152 @@
+{
+"schema_version": "2.0.0",
+"lecture": {
+"id": "L7_gi_bleeding",
+"title": "Gastrointestinal Bleeding",
+"specialty": "internal_medicine",
+"module": "gastroenterology",
+"system": "gastrointestinal",
+"source": {"file_name": "L7 GI Bleeding (2).pdf", "page_count": 30},
+"tags": ["gastrointestinal_bleeding", "hematemesis", "melena", "hematochezia", "upper_gi_bleeding", "lower_gi_bleeding", "obscure_gi_bleeding", "endoscopic_hemostasis", "variceal_bleeding", "diverticular_bleeding"],
+"order_index": 6,
+"golden_tip": [
+"Hematochezia with shock = a brisk UPPER GI bleed with rapid transit until proven otherwise — resuscitate first, then scope from above before blaming the colon.",
+"Transfusion targets in acute GIB: Hb > 7 g/dL, platelets > 50,000/mm3, PT < 15 s. The initial hematocrit LIES — equilibration takes 24-72 hours.",
+"Suspected variceal bleed -> start empiric IV octreotide (bolus then infusion) BEFORE endoscopy; PPI is given to reduce rebleeding in peptic ulcer disease."
+]
+},
+"concepts": [
+{
+"id": "L7_gi_bleeding_c0",
+"lecture_id": "L7_gi_bleeding",
+"title": "Lecture Objectives & Opening Clinical Scenarios",
+"summary_ar": "مقدمة المحاضرة: أربعة أهداف تعليمية، ثم خمسة سيناريوهات سريرية افتتاحية (نزف علوي، تمزق مالوري-ويس، نزف سفلي مستمر، نزف غامض، وتدبير أولي بالإنعاش) ومعرض صور تنظيرية لآفات النزف وتصنيف Forrest والربط الشريطي.",
+"sections": [
+{
+"heading": "Lecture Objectives (Slide Deck by Dr. Muntadher Abdulkareem Abdullah)",
+"body_text": "This lecture (University of Basrah, College of Medicine; prepared by Dr. Muntadher Abdulkareem Abdullah, M.B.Ch.B, CABM, FIBMS, FIBMS (GE & HEP.)) opens with **four learning objectives**. At the end of the lecture you must be able to:\n- **1. Know the different types of GI bleeding** (anatomical: upper vs lower vs obscure; clinical: overt vs occult; temporal: acute vs chronic; severity: mild, moderate, severe).\n- **2. Differentiate between the different types of GI bleeding** — using history (hematemesis, melena, hematochezia), vital signs, stool appearance and endoscopy.\n- **3. Apply the emergency management of acute GI bleeding** — simultaneous assessment + resuscitation (large-bore IV, normal saline, transfusion targets, airway protection).\n- **4. List the modalities of treatment of GI bleeding** — medical (PPI, octreotide), endoscopic hemostasis, angiographic embolization, and surgery.\nThe lecture then uses **five opening clinical scenarios** as exam-style warm-ups before the systematic core content, followed by endoscopic image galleries.",
+"key_points": [
+"Four objectives: types of GIB, differentiation between them, emergency management, treatment modalities.",
+"Source deck: 'Gastrointestinal Bleeding', 30 pages, gastroenterology module (internal medicine).",
+"The opening MCQ scenarios are themselves high-yield exam questions and are fully explained below."
+]
+},
+{
+"heading": "Opening Scenarios 1-2: Alcohol, Retching and Hematemesis Clues",
+"body_text": "**Scenario 1 (classic exam stem):** A 55-year-old man with a long history of alcohol consumption presents with **dizziness and hematemesis**; he is found **hypotensive and anemic** and is admitted to the **ICU**. What is the most likely cause of the hematemesis?\n- A. Gastric ulcer\n- B. Esophageal varices\n- C. Duodenal ulcer\n- D. Gastric adenocarcinoma\n- E. Arteriovenous malformation\n**Answer: B — Esophageal varices.** Long-standing alcohol use causes chronic liver disease with portal hypertension; hematemesis + hypotension + anemia severe enough for ICU is the classic picture of ruptured esophageal varices. Peptic ulcers (A, C) bleed and can present with hematemesis, but the alcohol-liver constellation makes varices the single most likely cause in this stem. Gastric adenocarcinoma (D) usually bleeds slowly (IDA, coffee-ground) rather than massive hematemesis, and AVMs (E) are rare.\n\n**Scenario 2 (exam truth about hematemesis):** Which statement is TRUE of hematemesis?\n- A. When it occurs after repeated retching, it is suggestive of an oesophageal tear. **(TRUE — Mallory-Weiss tear)**\n- B. When it occurs in patients over 70 years of age who may have arthritis, it usually indicates malignancy. (False — elderly arthritics are on NSAIDs/aspirin; the usual cause is NSAID-induced peptic ulcer/erosions, not malignancy.)\n- C. When it occurs in a patient with alcoholic liver disease, it is always due to esophageal varices. (False — 'always' is wrong; alcoholics also get gastritis, peptic ulcer and Mallory-Weiss tears.)\n- D. When it is caused by duodenal ulcer, a partial gastrectomy is usually necessary. (False — most duodenal ulcer bleeding stops with endoscopic hemostasis + PPI; surgery is a rescue option.)\n- E. It must be associated with melena. (False — hematemesis can occur without melena, and vice versa.)",
+"key_points": [
+"Alcohol + hematemesis + shock in a 55-year-old = esophageal varices until proven otherwise.",
+"Hematemesis after repeated retching = Mallory-Weiss oesophageal tear (a mucosal laceration at the gastro-oesophageal junction).",
+"Elderly 'arthritic' patients bleed from NSAID/aspirin peptic lesions, not usually from cancer.",
+"Never accept absolute words in MCQs: variceal bleeding in alcoholics is the MOST LIKELY, but not the ONLY, cause."
+],
+"check": {
+"prompt": "A 26-year-old man vomits fresh blood after repeated forceful retching following an alcohol binge. What is the most likely lesion?",
+"options": ["Esophageal varices", "Mallory-Weiss tear", "Gastric adenocarcinoma", "Duodenal ulcer"],
+"correct_index": 1,
+"explanation_ar": "التقيؤ المتكرر والعنيف يسبب تمزقاً في الغشاء المخاطي عند الوصل المريئي المعدي (تمزق مالوري-ويس) وهو السبب الأكثر ترجيحاً هنا. الدوالي تحتاج ارتفاع ضغط بابي مزمن (تشمع) وهو غير مذكور، والورم الحميد/الخبيث نادر بهذا العمر، وقرحة الاثني عشر لا ترتبط بالتقيؤ المتكرر عادة."
+}
+},
+{
+"heading": "Opening Scenarios 3-5: Localization and Initial Management Decisions",
+"body_text": "**Scenario 3 (ongoing lower/mid-GI bleeding):** A 58-year-old woman presents with **light-headedness** and several **bloody bowel movements over 24 hours**; she denies abdominal pain. She is **hypotensive and anemic**; resuscitative measures are instituted. **Both upper endoscopy and colonoscopy are nondiagnostic**, but she continues to **pass clots per rectum**; hematocrit 33%. What is the most effective management strategy?\n- A. Capsule endoscopy\n- B. Abdominal CT scan with contrast\n- C. Scintigraphy and angiography **(CORRECT)**\n- D. MRI\n- E. Emergency surgery\n**Teaching point:** active, ongoing bleeding with nondiagnostic standard endoscopy = an **active obscure (small-bowel/mid-gut) bleed**. Radionuclide scintigraphy (red cell scan) detects bleeding as slow as **0.04 mL/min** and helps localize before **angiography**, which detects rates **>=0.5 mL/min** and can **embolize** the culprit vessel. Capsule endoscopy is excellent for obscure bleeding but is slow and not ideal during unstable active bleeding. Surgery is reserved for massive bleeding that cannot be stabilized. (Note: modern protocols in the lecture's brisk-bleeding algorithm also allow CT angiography early.)\n\n**Scenario 4 (discussion stem):** A 57-year-old man with known **chronic hepatitis C** is brought by his wife with **2 hours of hematemesis and melena**. How would you continue with this patient? — Answer: **simultaneous assessment + resuscitation** (two large-bore IVs, normal saline, crossmatch), risk stratification (ICU if unstable), **empiric IV octreotide** because portal-hypertensive/variceal bleeding is suspected in chronic liver disease, IV PPI, then **endoscopy after stabilization** for diagnosis + endoscopic hemostasis (band ligation for varices).\n\n**Scenario 5 (initial management MCQ):** A 60-year-old man presents with 1 day of **hematemesis and melena**. History: osteoarthritis, diabetes mellitus, hypertension, remote hepatitis C treated successfully in the 1990s. Medications: **metformin, glimepiride, aspirin 81 mg, and ibuprofen 400 mg three times daily**. Vitals: T 36 C, **BP 90/55 mmHg, HR 110 bpm**, RR 12. Abdomen soft, nontender. Labs: **Hb 7.5 g/dL, WBC 6000/uL, platelets 290,000/uL, total bilirubin 1.4 mg/dL, creatinine 1.2 mg/dL, INR 1.8**. Which recommendation is correct?\n- A. IV octreotide should be started in the emergency department\n- B. Blood transfusion is indicated to a hemoglobin of at least 9 g/dL\n- C. Endoscopy should be delayed until the INR is corrected to 1\n- D. I.V. 0.9% NS **(CORRECT)**\n**Teaching point:** the patient is hemodynamically UNSTABLE (BP 90/55, HR 110) — the first correct action is **IV crystalloid resuscitation (0.9% normal saline)** through large-bore catheters while crossmatching blood. Octreotide is empiric only when variceal/portal-hypertensive bleeding is SUSPECTED (his hepatitis C was eradicated, platelets and bilirubin normal — no cirrhosis signature; his bleeding is NSAID/aspirin-related). Transfusion is restrictive: keep Hb > 7 g/dL (he is 7.5 — transfuse only if ongoing loss/instability, not automatically to 9). Endoscopy should NOT be delayed until INR is fully corrected; after resuscitation it should proceed (typically within 24 h) with pragmatic correction of coagulopathy.",
+"key_points": [
+"Active obscure bleeding, nondiagnostic EGD + colonoscopy, still passing clots -> scintigraphy then angiography (localize + embolize).",
+"Chronic hepatitis C + hematemesis/melena -> suspect varices: resuscitate + empiric IV octreotide + endoscopy after stabilization.",
+"Unstable UGIB (BP 90/55, HR 110): FIRST move = IV 0.9% normal saline via large-bore cannulas, not octreotide, not transfusion to 9, not delayed endoscopy.",
+"Restrictive transfusion threshold: Hb > 7 g/dL (with individualization for clinical status, comorbidities and rapidity of blood loss).",
+"Ibuprofen 400 mg TID + aspirin = a peptic-bleed pharmacology setup."
+]
+},
+{
+"heading": "Endoscopic Image Gallery: Recognizing the Bleeding Lesion (Pages 5, 6 and 8)",
+"body_text": "The lecture opens with a visual gallery of what bleeding looks like through the endoscope — you must recognize these patterns:\n- **Page 5 (two-panel image):** (A) a focal **raised, erythematous mucosal lesion** highlighted by an arrowhead — an actively bleeding mucosal lesion; (B) a large **pale submucosal mass with central ulceration** (arrow) — a submucosal tumor (e.g., GIST-type lesion) ulcerating and bleeding.\n- **Page 6 ('BLEED TEAM' sequence, images A-D):** (A) active hemorrhage with **fresh blood and clots obscuring the mucosa**; (B) an **endoscopic band ligation device** positioned over a protruding vascular lesion (varix or Dieulafoy-type lesion); (C) successful deployment of the **elastic O-band** capturing the lesion (polypoid ligated tissue, no active spurting); (D) the **post-ligation nodule** appearing pale/ischemic — mechanical hemostasis achieved with residual old blood.\n- **Page 8 (six-panel Forrest gallery):** the endoscopic stigmata of peptic ulcer bleeding: **Ia spurting**, **Ib oozing**, **IIa visible vessel**, **IIb adherent clot**, **IIc flat pigmentation**, **III clean base** (detailed under the Endoscopic Hemostasis concept).\nThese images anchor two practical lessons: endoscopy is both **diagnostic** (identify the bleeding lesion and its risk stigmata) and **therapeutic** (band ligation, clips, injection, thermal probes).",
+"key_points": [
+"Endoscopy = diagnosis + therapy in the same session for most GI bleeding.",
+"Band ligation mechanically strangulates a bleeding varix/lesion; the ligated tissue becomes ischemic and sloughs.",
+"Forrest gallery: Ia spurting, Ib oozing, IIa visible vessel, IIb adherent clot, IIc flat pigment, III clean base."
+]
+}
+],
+"key_terms": [
+{"term": "Hematemesis", "definition_ar": "تقيؤ دم أحمر فاتح أو بلون القهوة، علامة على نزف من الجزء العلوي من الجهاز الهضمي."},
+{"term": "Mallory-Weiss tear", "definition_ar": "تمزق في الغشاء المخاطي للمريء عند الوصل مع المعدة بسبب تقيؤ متكرر وعنيف، يسبب نزفاً علوياً غير ضخم عادة."},
+{"term": "Esophageal varices", "definition_ar": "دوالي مريئية: أوردة متوسعة بسبب ارتفاع الضغط البابي في التشمع الكبدي، تنزف بغزارة وقد تكون مهددة للحياة."},
+{"term": "Scintigraphy", "definition_ar": "تصوير نووي باستخدام خلايا دم حمراء موسومة إشعاعياً لكشف موضع النزف النشط ولو كان بطيئاً جداً (حتى 0.04 مل/دقيقة)."},
+{"term": "Melena", "definition_ar": "براز أسود قطراني كريه الرائحة ناتج عن هضم الدم في الأمعاء، يشير عادة لنزف علوي."},
+{"term": "Hematochezia", "definition_ar": "خروج دم أحمر فاتح أو تخثرات دموية من الشرج، يشير عادة لنزف قولوني أو شرجي مستقيمي."}
+],
+"difficulty": "core",
+"order_index": 0
+},
+{
+"id": "L7_gi_bleeding_c1",
+"lecture_id": "L7_gi_bleeding",
+"title": "Classification & Definitions of GI Bleeding",
+"summary_ar": "تصنيف النزف الهضمي: تشريحياً علوي 50% وسفلي 40% وغامض 10%؛ وسريرياً ظاهر مقابل خفي؛ وحاد مقابل مزمن؛ وخفيف/متوسط/شديد. مع تعريف النزف الهضمي الضخم: صدمة أو هبوط ضغط انتصابي، أو هبوط الهيماتوكريت 6% (أو الهيموغلوبين 2 غ/دل)، أو نقل وحدتي دم على الأقل.",
+"sections": [
+{
+"heading": "Anatomical Classification: Upper, Lower and Obscure",
+"body_text": "By anatomical source, gastrointestinal bleeding (GIB) can be:\n- **Upper GIB** — bleeding from the **esophagus, stomach, and duodenum**: this represents **50% of all GIB**.\n- **Lower GIB** — bleeding from the **colon and anorectum**: this represents **40% of all GIB**.\n- **Obscure bleeding** — bleeding from the **small intestine**: this represents **10% of all GIB**.\n\nPseudo-table: **Type | Source | Share** \n- Upper GIB | esophagus + stomach + duodenum | 50%\n- Lower GIB | colon + anorectum | 40%\n- Obscure GIB | small intestine | 10%\n\n**Obscure GI bleeding is further defined** as bleeding from a site that is **not apparent after routine endoscopic evaluation** with esophagogastroduodenoscopy (EGD / upper endoscopy) **and colonoscopy**, and possibly small bowel radiography (barium small bowel follow-through).",
+"key_points": [
+"Upper GIB (esophagus/stomach/duodenum) = 50% of cases; Lower GIB (colon/anorectum) = 40%; obscure (small intestine) = 10%.",
+"Obscure = diagnosis NOT made by routine EGD + colonoscopy +/- small-bowel radiography.",
+"The anatomic divider used throughout the lecture is the ligament of Treitz."
+]
+},
+{
+"heading": "Overt vs Occult, Acute vs Chronic, and Severity Grades",
+"body_text": "By visibility, GIB can be:\n- **Overt GIB** — implies **visible signs of blood loss** from the GI tract: **hematemesis, coffee-ground vomiting, melena, and hematochezia**.\n- **Occult GIB** — refers to **subacute bleeding that is not clinically visible**, presenting for example as **iron-deficiency anemia (IDA)**.\n\nBy time course, GIB can be either **Acute or Chronic**. By severity, GIB can be **Mild, Moderate or Severe**. These three axes (site, visibility, tempo/severity) combine — e.g., 'acute overt severe UGIB' or 'chronic occult obscure bleeding presenting with IDA'.\n\n**Definition — Obscure GI bleeding:** bleeding from a site that is not apparent after **routine endoscopic evaluation with EGD (upper endoscopy) and colonoscopy, and possibly small bowel radiography**. Obscure bleeding itself splits into:\n- **Overt obscure GIB** — visible acute bleeding (melena, maroon stool, hematochezia) despite nondiagnostic EGD, colonoscopy and small-bowel series.\n- **Occult obscure GIB** — positive fecal occult blood test (FOBT), usually with unexplained iron-deficiency anemia.",
+"key_points": [
+"Overt = visible blood: hematemesis, coffee-ground vomitus, melena, hematochezia.",
+"Occult = invisible: subacute loss detected by FOBT/FIT or presenting as IDA.",
+"GIB axes: anatomical (upper/lower/obscure), visibility (overt/occult), tempo (acute/chronic), severity (mild/moderate/severe)."
+],
+"check": {
+"prompt": "A patient has iron-deficiency anemia and a positive fecal occult blood test with no visible blood in the stool. This is best called:",
+"options": ["Overt GIB", "Occult GIB", "Massive GIB", "Hematochezia"],
+"correct_index": 1,
+"explanation_ar": "النزف الخفي (occult) هو نزف تحت الحاد غير مرئي سريرياً، ويُكتشف عادة بفحص الدم الخفي في البراز أو يظهر بفقر دم بعوز الحديد. النزف الظاهر يعني وجود دم مرئي كتقيؤ الدم أو الميلينا أو التبرز الدموي، والنزف الضخم له معايير شدة محددة (صدمة أو هبوط هيماتوكريت كبير أو نقل دم)."
+}
+},
+{
+"heading": "Massive (Severe) GI Bleeding — the Lecture Definition",
+"body_text": "**Severe (massive) GI bleeding is defined as documented GI bleeding (hematemesis, melena, hematochezia, or positive nasogastric lavage) accompanied by ANY of the following:**\n- **Shock or orthostatic hypotension**, OR\n- **A decrease in the hematocrit value by at least 6%** (or a decrease in the hemoglobin level of **at least 2 g/dL**), OR\n- **Transfusion of at least 2 units of packed red blood cells**.\n\n**Most patients with severe GI bleeding are admitted to the hospital for resuscitation and treatment.** Note that severity here is judged by the *hemodynamic/hematologic consequence* of the bleed, not by the color or volume of what the patient reports — a lesson reinforced by the hematocrit-equilibration pitfall (see Initial Assessment).",
+"key_points": [
+"Massive GIB = documented bleeding + (shock OR orthostatic hypotension OR Hct fall >=6% OR Hb fall >=2 g/dL OR >=2 units PRBC transfused).",
+"Most severe bleeders need hospital admission for resuscitation and treatment.",
+"Severity is a physiologic judgment, not a volumetric one."
+],
+"check": {
+"prompt": "Which patient satisfies the lecture's criteria for massive GI bleeding?",
+"options": [
+"Melena with orthostatic hypotension",
+"Positive FOBT with hemoglobin fall of 0.5 g/dL",
+"Self-limited hematochezia with stable vital signs",
+"Hematemesis with hematocrit fall of 3% and normal vitals"
+],
+"correct_index": 0,
+"explanation_ar": "المعيار يتحقق بوجود نزف موثق مع صدمة أو هبوط ضغط انتصابي، أو هبوط هيماتوكريت 6% على الأقل (أو هيموغلوبين 2 غ/دل)، أو نقل وحدتي دم على الأقل. المريض الأول لديه ميلينا (نزف موثق) مع هبوط ضغط انتصابي فيحقق التعريف، أما البقية فلا يحققون أي معيار من معايير الشدة."
+}
+}
+],
+"key_terms": [
+{"term": "Overt GIB", "definition_ar": "نزف هضمي ظاهر: علامات فقد دم مرئية (تقيؤ دم، تقيؤ قهوائي، ميلينا، تبرز دموي)."},
+{"term": "Occult GIB", "definition_ar": "نزف هضمي خفي: نزف تحت الحاد غير مرئي سريرياً، يظهر كفقر دم بعوز الحديد أو فحص براز إيجابي."},
+{"term": "Obscure GIB", "definition_ar": "نزف غامض: نزف من مصدر غير معروف بعد تنظير علوي وتنظير قولون (وقد يضاف تصوير الأمعاء الدقيقة بالباريوم)."},
+{"term": "Massive GIB", "definition_ar": "نزف ضخم: نزف موثق مع صدمة أو هبوط ضغط انتصابي أو هبوط هيماتوكريت >=6% (هيموغلوبين >=2 غ/دل) أو نقل >=2 وحدة دم مركز."},
+{"term": "Coffee-ground vomiting", "definition_ar": "تقيؤ محتويات بلون تفل القهوة نتيجة تعرض الدم لحمض المعدة، علامة على نزف علوي."},
+{"term": "Nasogastric lavage", "definition_ar": "غسل المعدة عبر أنبوب أنفي معدي لاستخراج محتوياتها وتوصيفها (دم أحمر، تفل قهوة، سائل غير دموي)؛ إيجابيته تدل على مصدر نزف علوي."}
+],
+"difficulty": "core",
+"order_index": 1
+},
+{
+"id": "L7_gi_bleeding_c2",
+"lecture_id": "L7_gi_bleeding",
+"title": "Initial Assessment: History, Physical Examination & Laboratory Studies",
+"summary_ar": "التقييم الأولي للنزف الهضمي الحاد: تاريخ مرضي مركز على عوامل الخطر، فحص سريري منهجي (علامات نقص الحجم، علامات الزمن الكبدي، متلازمات جلدية-معدية معوية)، وفحوص مخبرية قياسية مع تنبيه أن الهيماتوكريت الأولي مضلل لأن الموازنة تستغرق 24-72 ساعة.",
+"sections": [
+{
+"heading": "Focused History",
+"body_text": "Patients should be questioned about **risk factors and historical features that help identify diagnostic possibilities for the bleeding source**. Key lines of questioning include:\n- **Medications:** NSAIDs/aspirin (peptic ulcer/erosions), anticoagulants, antiplatelets, SSRIs, alcohol.\n- **Retching before hematemesis** (Mallory-Weiss tear).\n- **Known liver disease / alcohol history** (varices, portal hypertensive gastropathy).\n- **Prior GI bleeding or known ulcers**, prior surgery.\n- **Weight loss, dysphagia, early satiety** (malignancy).\n- **Change in bowel habit, diarrhea, tenesmus** (colitis, colorectal neoplasm).\n- **Renal failure, hereditary syndromes, radiation exposure** (angioectasia, radiation proctitis).\n- **Painless vs painful bleeding:** painless hematochezia suggests diverticular or vascular lesions; painful bleeding suggests colitis/ischemia (lecture cases 3 and 5 illustrate painless bleeding).\nThe history is gathered **simultaneously with resuscitation**, never as a prerequisite to it.",
+"key_points": [
+"History hunts for the SOURCE: NSAIDs/ASA, alcohol, liver disease, retching, weight loss, prior bleeds.",
+"Triage-relevant history also determines disposition and endoscopy urgency.",
+"Assessment and resuscitation run in parallel from the first minute in the emergency department."
+]
+},
+{
+"heading": "Physical Examination — the Nine-Point Survey",
+"body_text": "On initial evaluation, physical examination should focus on (all nine lecture points):\n- **1. Vital signs**, with attention to signs of **hypovolemia: hypotension, tachycardia, and orthostasis**.\n- **2. The abdomen** — examined for **surgical scars, tenderness, and masses**.\n- **3. Signs of chronic liver disease:** **spider telangiectasias (angiomata), palmar erythema, gynecomastia, ascites, splenomegaly, caput medusae, and Dupuytren's contracture**.\n- **4. Skin, lips, and buccal mucosa** — look for **telangiectasias** suggestive of **hereditary hemorrhagic telangiectasia (HHT), i.e., Osler-Weber-Rendu disease**.\n- **5. Pigmented lip lesions** — may suggest **Peutz-Jeghers syndrome** (hamartomatous polyposis).\n- **6. Purpuric skin lesions** — may suggest **Henoch-Schonlein purpura** (IgA vasculitis with GI involvement).\n- **7. Acanthosis nigricans** — may suggest underlying **malignancy, especially gastric cancer**.\n- **8. The patient's feces** — observed to identify **melena or maroon and red stool**; however, the **subjective description of stool color varies greatly** among patients and physicians.\n- **9. Nasogastric or orogastric tube placement** — to aspirate and visually characterize gastric contents; useful for determining the presence or absence of **large amounts of red blood, coffee-ground material, or nonbloody fluid**.",
+"key_points": [
+"Hypovolemia triad on exam: hypotension, tachycardia, orthostasis.",
+"Chronic liver disease stigmata: spiders, palmar erythema, gynecomastia, ascites, splenomegaly, caput medusae, Dupuytren's.",
+"Skin/lip clues: telangiectasias = HHT (Osler-Weber-Rendu); pigmented lips = Peutz-Jeghers; purpura = Henoch-Schonlein; acanthosis nigricans = gastric malignancy.",
+"NG/OG aspirate: red blood or coffee grounds points to an upper source; nonbloody fluid does not exclude it.",
+"Stool color reports are unreliable — inspect the stool yourself."
+],
+"check": {
+"prompt": "Pigmented lesions on the lips of a patient with recurrent GI bleeding suggest which syndrome?",
+"options": ["Osler-Weber-Rendu disease", "Peutz-Jeghers syndrome", "Henoch-Schonlein purpura", "Dupuytren's contracture"],
+"correct_index": 1,
+"explanation_ar": "البقع المصبغة على الشفاه تشير إلى متلازمة بوتز-جيغرز (بوليبوز هامارتومي وراثي) التي تسبب نزفاً هضمياً متكرراً. أما التوسعات الشعرية على الشفاه والجلد فتشير إلى داء أوسلر-ويبر-ريندي (نزف وعائي وراثي)، والفرفرية تشير إلى فرفرية هنوخ-شونلاين، وعقدة دوبويتران علامة على مرض كبدي مزمن."
+}
+},
+{
+"heading": "Laboratory Studies & the Hematocrit Pitfall",
+"body_text": "Blood from the patient with acute GI bleeding should be sent for:\n- **1. Standard hematology:** including **CBC, PCV (packed cell volume) and MCV**.\n- **2. Standard biochemistry:** including **renal function tests (RFT) and serum electrolytes**.\n- **3. Liver function tests and coagulation profiles** (LFTs, PT/INR, platelet-interaction assessment).\n- **4. Blood for typing and crossmatching for packed red blood cells** — do this EARLY, from the first venipuncture.\n\n**IMPORTANT NOTE (exam favorite):** the **hematocrit value immediately after the onset of bleeding may not reflect blood loss accurately** because it takes **over 24 to 72 hours** for the vascular space to **equilibrate with extravascular fluid**, and **hemodilution results from intravenous administration of saline**. Therefore: a near-normal hematocrit on arrival NEVER excludes major hemorrhage — recheck serially and judge severity by vital signs, not by the first number.",
+"key_points": [
+"First blood draw = CBC/PCV/MCV + RFT/electrolytes + LFT/coagulation + type and crossmatch.",
+"First hematocrit is unreliable for 24-72 hours (transcapillary equilibration + saline hemodilution).",
+"Severity decisions are driven by vital signs and ongoing loss, not the initial Hct."
+]
+}
+],
+"key_terms": [
+{"term": "Orthostasis", "definition_ar": "هبوط الضغط عند الوقوف (فرق انقباضي >20 أو انبساطي >10 ملم زئبق)، علامة على نقص حجم واضح."},
+{"term": "Caput medusae", "definition_ar": "رأس ميدوزا: أوردة متوسعة حول السرة بسبب ارتفاع الضغط البابي وفتح الروابط الجهازية."},
+{"term": "Dupuytren's contracture", "definition_ar": "تقلص دوبويتران: تليف وثني لأوتار راحة اليد، يرتبط بمرض كبدي مزمن وكحولي."},
+{"term": "Hereditary hemorrhagic telangiectasia (HHT / Osler-Weber-Rendu)", "definition_ar": "داء وراثي (عبر جسدي سائد) يسبب توسعات شعرية في الجلد والأغشية المخاطية والأحشاء مع نزف متكرر."},
+{"term": "Peutz-Jeghers syndrome", "definition_ar": "متلازمة وراثية: بقع مصبغة على الشفاه والفم مع بوليبات هامارتومية في الجهاز الهضمي ونزف/فقر دم."},
+{"term": "Henoch-Schonlein purpura", "definition_ar": "فرفرية هنوخ-شونلاين (التهاب أوعية بIgA): فرفرية مطبقة على الساقين مع ألم بطني ونزف هضمي وألم مفصلي وتهاب كبيبات."},
+{"term": "Acanthosis nigricans", "definition_ar": "تسفع جلدي (اسوداد مخملي ثنيات الجلد) قد يرتبط بأورام خبيثة داخلية وخاصة سرطان المعدة."},
+{"term": "PCV (packed cell volume)", "definition_ar": "الهرماتوكريت: نسبة حجم كريات الدم الحمراء من حجم الدم الكلي، ينخفض في النزف لكن بعد 24-72 ساعة من الموازنة."}
+],
+"difficulty": "core",
+"order_index": 2
+},
+{
+"id": "L7_gi_bleeding_c3",
+"lecture_id": "L7_gi_bleeding",
+"title": "Localizing the Bleeding Site, Hospitalization & Risk Scores",
+"summary_ar": "تحديد موقع النزف سريرياً حسب لون الإفرازات (تقيؤ دم=علوي، ميلينا=علوي عادة، تبرز دموي=قولوني إلا مع هبوط الضغط فيكون نزفاً علوياً سريعاً)، وقرارات الاستشفاء (العناية المركزة/المراقبة/التنظير شبيه العاجل خارجياً)، مع نظامي بلاتشفورد وروكال لتقدير الشدة والحاجة للتداخل والإنذار.",
+"sections": [
+{
+"heading": "Clinical Determination of the Bleeding Site (Read the Blood)",
+"body_text": "The presenting 'blood picture' localizes the bleeding source:\n- **Hematemesis, coffee-ground emesis, or NG lavage returning a large amount of blood or coffee-ground material** -> indicates an **UGI source** of bleeding.\n- **Melena** -> **generally indicates a UGI source** but can also be seen with **small intestinal or proximal colonic bleeding** (blood digested along the tract turns black and tarry).\n- **Hematochezia** -> **generally implies a colonic or anorectal source**, UNLESS the patient is **hypotensive**, in which case it could indicate a **severe, brisk UGI bleed with rapid transit** of blood through the GI tract.\n- **Maroon-colored stool** -> can be seen with an **actively bleeding UGI source**, or a **small intestinal or proximal colonic source**.\n\nPseudo-table: **Finding | Most likely source | Caveat** \n- Hematemesis / coffee-ground / bloody NG return | UGI | — \n- Melena | UGI | may also be small bowel / proximal colon \n- Hematochezia | colon or anorectum | if hypotensive suspect brisk UGIB \n- Maroon stool | UGI (active) OR small bowel OR proximal colon | overlaps sources",
+"key_points": [
+"Hematemesis/coffee-ground/bloody NG aspirate = UGI source, full stop.",
+"Melena = usually UGI, but small bowel and proximal colon can also melanize the stool.",
+"Hematochezia + hypotension = brisk UGI bleed with rapid transit until proven otherwise (EXAM TRAP).",
+"Maroon stool straddles UGI, small bowel and proximal colon."
+],
+"check": {
+"prompt": "A 64-year-old man is hypotensive (BP 82/48) and passes copious fresh red blood per rectum. What is the likely bleeding source?",
+"options": ["Internal hemorrhoids", "Brisk upper GI source with rapid transit", "Anal fissure", "Rectal cancer"],
+"correct_index": 1,
+"explanation_ar": "التبرز الدموي الغزير مع هبوط الضغط يشير إلى نزف علوي شديد وسريع عبَر الجهاز الهضمي بسرعة قبل أن يُهضم ويسود. البواسير والشرخ الشرجي وسرطان المستقيم تسبب نزفاً أحمر عادة لكن نزفاً خفيفاً غير مصحوب بصدمة، لذا يجب أولاً الإنعاش ثم تنظير الجهاز الهضمي العلوي."
+}
+},
+{
+"heading": "Hospitalization & Disposition Decisions",
+"body_text": "**Patients with severe GI bleeding require hospitalization.** Triage pathways:\n- **ICU admission:** patients with **unstable vital signs** or with **multiple underlying comorbid conditions** who have **massive GIB** should be admitted to the **intensive care unit**.\n- **Monitored bed (step-down unit) or standard hospital bed:** patients who have had an acute GI bleed but are **hemodynamically stable** — the level depends on their clinical condition.\n- **Semiurgent OUTPATIENT endoscopy (rather than direct admission):** reserved for those with **only mild acute bleeding** (self-limited hematochezia or infrequent melena) who are **hemodynamically stable (not suspected to be volume depleted)**, have **normal blood test results**, and **can be relied on to return to the hospital if symptoms recur**.\n\n**Risk scores:** many available scoring systems can help determine the **severity of associated GIB, the need for intervention, and the prognosis**; of these the lecture names **the Blatchford score and the Rockall score**. (Standard reference note: the Glasgow-Blatchford score is a pre-endoscopy score based on hemoglobin, urea, blood pressure, heart rate, melena, syncope and comorbidity — high values predict need for intervention; the Rockall score combines age, vital signs, comorbidity and endoscopic findings to predict rebleeding and mortality.)",
+"key_points": [
+"Unstable vitals OR massive bleed + significant comorbidities -> ICU.",
+"Stable acute bleed -> monitored step-down bed or standard ward bed per clinical condition.",
+"Mild, self-limited, stable bleeding with normal labs and a reliable patient -> semiurgent outpatient endoscopy.",
+"Blatchford and Rockall scores quantify severity, need for intervention, and prognosis."
+]
+}
+],
+"key_terms": [
+{"term": "Melena", "definition_ar": "براز أسود قطراني ناتج عن هضم الدم؛ يشير عادة لمصدر علوي وقد يكون من الأمعاء الدقيقة أو القولون الأيضي القريب."},
+{"term": "Hematochezia", "definition_ar": "تبرز دم أحمر؛ يشير لمصدر قولوني/شرجي، لكن مع هبوط الضغط يوجب استبعاد نزف علوي سريع."},
+{"term": "Maroon stool", "definition_ar": "براز بلون الكستناء/العنابي: يُرى في النزف العلوي النشط أو نزف الأمعاء الدقيقة أو القولون القريب."},
+{"term": "Glasgow-Blatchford score", "definition_ar": "نقاط قبل التنظير (هيموغلوبين، يوريا، ضغط، نبض، ميلينا، إغماء، أمراض مصاحبة) تتنبأ بالحاجة لتداخل علاجي."},
+{"term": "Rockall score", "definition_ar": "نقاط تضم العمر والعلامات الحيوية والأمراض المصاحبة ونتائج التنظير للتنبؤ بخطر عودة النزف والوفيات."},
+{"term": "Step-down unit", "definition_ar": "سرير مراقبة متوسطة الشدة بين العناية المركزة والسرير العادي، للمريض المستقر نسبياً."}
+],
+"difficulty": "core",
+"order_index": 3
+},
+{
+"id": "L7_gi_bleeding_c4",
+"lecture_id": "L7_gi_bleeding",
+"title": "Resuscitation of Acute GI Bleeding",
+"summary_ar": "بروتوكول الإنعاش: قثاطر وريدية كبيرة 14 أو 16 (قثاتران مع نزف مستمر)، محلول ملحي طبيعي للحفاظ على الضغط الانقباضي فوق 100 والنبض تحت 100، نقل دم/صفائح/بلازما للحفاظ على هيموغلوبين فوق 7 وصفائح فوق 50 ألف وزمن بروثرومبين تحت 15 ثانية، مراقبة كميات البول، وتنبيب رغامي عند التقيؤ الدموي النشط أو اضطراب الوعي.",
+"sections": [
+{
+"heading": "Resuscitation Protocol — the Six Lecture Pillars",
+"body_text": "Resuscitation efforts should be **initiated at the same time as initial assessment in the emergency department** and continue **during the patient's hospitalization**. The protocol includes:\n- **1. IV access:** at least **one large-bore (14- or 16-gauge) catheter** should be placed intravenously — and **two should be placed when the patient has ongoing bleeding**.\n- **2. Fluids:** **normal saline is infused as fast as needed** to keep the patient's **systolic blood pressure higher than 100 mmHg** and **pulse lower than 100/min**.\n- **3. Blood products:** patients should be transfused with **packed red blood cells, platelets, and fresh frozen plasma as necessary** to keep the **hemoglobin level greater than 7 g/dL**, **platelet count higher than 50,000/mm3**, and **prothrombin time less than 15 seconds**, respectively.\n- **4. Individualized transfusion timing:** decisions about the timing of transfusion need to be **individualized** based on the patient's **clinical status and comorbidities** and the **rapidity of blood loss**.\n- **5. Monitoring:** **ongoing vital signs monitoring**, including **urinary catheter insertion with urine output monitoring** for patients with active bleeding.\n- **6. Airway protection:** **endotracheal intubation should be considered** in patients with **active ongoing hematemesis** or with **altered mental status**, to **prevent aspiration pneumonia**.",
+"key_points": [
+"Two 14-16G large-bore IVs when bleeding is ongoing (at least one always).",
+"Normal saline titrated to SBP > 100 mmHg and pulse < 100/min.",
+"Transfusion targets: Hb > 7 g/dL (PRBC), platelets > 50,000/mm3 (platelets), PT < 15 s (FFP).",
+"Transfusion timing individualized: clinical status, comorbidities, speed of loss.",
+"Urinary catheter + hourly urine output for active bleeders.",
+"Intubate for ongoing hematemesis or altered mental status — aspiration prophylaxis."
+]
+},
+{
+"heading": "Resuscitation Priorities — Putting It Together at the Bedside",
+"body_text": "The order of operations in the crashing GI bleeder (as rehearsed in the opening scenarios):\n- **Simultaneously**: two large-bore IVs + normal saline bolus + bloods (CBC, RFT, electrolytes, LFT, coagulation, **type and crossmatch**) + focused history/exam.\n- **Tight crystalloid control**: give saline 'as fast as needed' — the physiologic targets are **SBP > 100 mmHg, HR < 100/min**; avoid both under-resuscitation and reckless dilution of clotting factors.\n- **Restrictive transfusion philosophy**: trigger PRBC at **Hb <= 7 g/dL** and keep just **above 7**; give **platelets** when count **< 50,000/mm3**; give **FFP** when **PT >= 15 s** — exactly the lecture's numeric triad (7 / 50,000 / 15).\n- **Ongoing loss beats the lab number**: a 'stable' initial Hb never overrides active hematemesis + hypotension (24-72 h equilibration lag; hemodilution from saline).\n- **Protect the airway before the scope**: active ongoing hematemesis or depressed consciousness -> consider **endotracheal intubation** to prevent **aspiration pneumonia** before/during endoscopy.",
+"key_points": [
+"Resuscitation runs PARALLEL to assessment, never sequentially after it.",
+"Numeric triad to memorize: 7 (Hb g/dL) — 50,000 (platelets/mm3) — 15 (PT seconds).",
+"Endotracheal intubation for ongoing hematemesis or altered mental status prevents aspiration.",
+"Ongoing urine output monitoring = the best real-time perfusion gauge."
+],
+"check": {
+"prompt": "During resuscitation of active GI bleeding, fresh frozen plasma is given to keep which parameter within target?",
+"options": ["Hemoglobin > 7 g/dL", "Platelets > 50,000/mm3", "Prothrombin time < 15 seconds", "Systolic BP > 100 mmHg"],
+"correct_index": 2,
+"explanation_ar": "البلازما الطازجة المجمدة تُعطى لتصحيح عوامل التخثر بحيث يبقى زمن البروثرومبين أقل من 15 ثانية. أما كريات الدم المركز فهدفها هيموغلوبين فوق 7 غ/دل، والصفائح الدموية هدفها تعداد فوق 50,000، ومحلول الملح هدفه ضغط انقباضي فوق 100 ملم زئبق."
+}
+}
+],
+"key_terms": [
+{"term": "Large-bore IV catheter", "definition_ar": "قثاطر وريدية قصيرة عريضة (14 أو 16 قياس) تسمح بنقل سوائل ودم بسرعة عالية أثناء الإنعاش."},
+{"term": "Packed red blood cells", "definition_ar": "كريات دم حمراء مركزة تُنقل للحفاظ على هيموغلوبين أعلى من 7 غ/دل في النزف الحاد (استراتيجية متحفظة)."},
+{"term": "Fresh frozen plasma", "definition_ar": "بلازما طازجة مجمدة غنية بعوامل التخثر، تُعطى لإبقاء زمن البروثرومبين أقل من 15 ثانية."},
+{"term": "Aspiration pneumonia", "definition_ar": "التهاب رئوي بحدوث استنشاق للدم أو المحتويات المعوية؛ يُمنع بتنبيب الرغامى عند من يتقيؤ دماً بنشاط أو لديه اضطراب وعي."}
+],
+"difficulty": "core",
+"order_index": 4
+},
+{
+"id": "L7_gi_bleeding_c5",
+"lecture_id": "L7_gi_bleeding",
+"title": "Medical, Endoscopic, Angiographic & Surgical Therapy",
+"summary_ar": "العلاج: مثبطات مضخة البروتون تقلل عودة النزف في قرحة المعدة، والأوكتريوتيد الوريدي تجريبياً عند الاشتباه بنزف دوالي، ثم التنظير للتشخيص والعلاج (مسبار حراري، تخثير بلازما الأرغون، حقن أدرينالين 1:10,000-1:20,000، مشابك، رشاص موقف للنزف؛ ربط شريطي وصلب للدوالي مع تصنيف Forrest)، ثم الانصمام الوعائي والجراحة كخط إنقاذي.",
+"sections": [
+{
+"heading": "Initial Medical Therapy — PPI and Empiric Octreotide",
+"body_text": "Two pharmacologic moves are made BEFORE endoscopy in the acute setting:\n- **Proton pump inhibitor (PPI):** administration of a PPI is **useful for reducing rebleeding rates in patients with PUD (peptic ulcer disease)** — so it is started empirically when an ulcer/acid-peptic source is suspected.\n- **Octreotide:** patients with a **strong suspicion of portal hypertension and variceal bleeding** should be started **empirically on intravenous octreotide (bolus followed by infusion)** — do not wait for endoscopic confirmation.\n\nRationale: PPI stabilizes clot on an ulcer crater (raises intragastric pH), while octreotide (a somatostatin analogue) lowers splanchnic portal pressures and flow, bridging the patient safely to endoscopy. Both drugs are adjuncts — **definitive diagnosis and hemostasis come from endoscopy**, which follows once the patient is resuscitated.",
+"key_points": [
+"Empiric IV PPI: reduces REBLEEDING in peptic ulcer disease.",
+"Empiric IV octreotide (bolus + infusion) whenever variceal/portal-hypertensive bleeding is strongly suspected.",
+"Drugs bridge to endoscopy; they do not replace it."
+]
+},
+{
+"heading": "Endoscopy: Principles and the Forrest Classification of Ulcer Bleeding",
+"body_text": "**Principles of endoscopy in GIB:**\n- GI endoscopy will **identify the bleeding site and permit therapeutic hemostasis in most patients** with GI bleeding.\n- Endoscopy should be done **only when it is safe to do so** and when **the information obtained will influence patient care** (i.e., resuscitate/ stabilize first; intubate the airway if hematemesis is ongoing or consciousness is impaired).\n\n**Forrest classification (lecture image gallery, page 8)** — endoscopic stigmata of recent hemorrhage in a peptic ulcer:\n- **Forrest Ia — spurting**: active pulsatile arterial bleeding (jet of bright red blood) from the ulcer crater.\n- **Forrest Ib — oozing**: diffuse oozing/streaming of blood from the ulcer base without a defined spurting vessel.\n- **Forrest IIa — visible vessel**: a protruding vessel/protuberance in the ulcer base, not actively bleeding at the moment of observation (sometimes covered by fibrin clot).\n- **Forrest IIb — adherent clot**: a dark clot firmly attached to the ulcer base, not easily dislodged by irrigation.\n- **Forrest IIc — flat pigmentation**: a flat black/red/dark-brown pigmented spot in the ulcer base (clotted vessel or hemosiderin) without elevation.\n- **Forrest III — clean base**: pale/whitish fibrinous base with no vessel, clot or pigment — a non-bleeding, low-risk base.\n(Standard reference note: Forrest Ia-IIb are the high-risk stigmata that most warrant endoscopic hemostasis; IIc and III carry low rebleeding risk.)",
+"key_points": [
+"Endoscopy = diagnosis + hemostasis in the same session, once the patient is safe to scope.",
+"Forrest: Ia spurting, Ib oozing, IIa visible vessel, IIb adherent clot, IIc flat pigment, III clean base.",
+"Active lesions and visible vessels are the classic targets of endoscopic therapy."
+]
+},
+{
+"heading": "Endoscopic Hemostasis Techniques (Non-Variceal and Variceal)",
+"body_text": "For **non-variceal lesions**, endoscopic hemostasis can include:\n- **1. Thermal contact probe** (e.g., heater probe / bipolar electrocoagulation) applied directly to the bleeding point.\n- **2. Noncontact thermal therapy:** **argon plasma coagulation (APC)** and **laser**.\n- **3. Injection therapy:** most commonly performed with a **sclerotherapy needle** and **submucosal injection of epinephrine, diluted to a concentration of 1:10,000 or 1:20,000**, into or around the **bleeding site or stigma of hemorrhage** (e.g., around the visible vessel).\n- **4. Endoscopic hemoclips (clips)** — mechanical apposition of the vessel/edges (demonstrated in the lecture's images: a metallic clip applied over a bleeding lesion and then closed).\n- **5. Hemostatic spray** — topical hemostatic powder sprayed over the bleeding area.\n\nFor **variceal bleeding lesions**, endoscopic therapy includes:\n- **1. Endoscopic rubber (band) ligation (EVL)** — suctioning the varix into a cap and deploying an elastic O-band (the 'BLEED TEAM' image sequence on page 6 shows band deployment and the post-ligation ischemic nodule).\n- **2. Injection sclerotherapy** — obliteration of the varix with an injected sclerosant.",
+"key_points": [
+"Non-variceal toolkit: contact thermal probe, APC/laser, epinephrine injection 1:10,000-1:20,000, hemoclips, hemostatic spray.",
+"Variceal toolkit: endoscopic rubber band ligation + injection sclerotherapy.",
+"Epinephrine is injected SUBMUCOSALLY into or around the bleeding site/stigma via a sclerotherapy needle.",
+"Combined modalities (e.g., injection + clip or thermal) are common practice after initial control."
+],
+"check": {
+"prompt": "What is the lecture's dilution for submucosal epinephrine injection therapy of a bleeding ulcer?",
+"options": ["1:1,000", "1:10,000 or 1:20,000", "1:100,000", "Undiluted"],
+"correct_index": 1,
+"explanation_ar": "يُحقن الأدرينالين تحت المخاطية بتراكيز مخففة 1:10,000 أو 1:20,000 في موضع النزف أو حول وصمة النزف عبر إبرة التصليب؛ فالتركيز 1:1,000 قوي جداً ومخصص للاستخدام الجلدي/العضلي (مثل الحساسية المفرطة) وليس للحقن التنظيري."
+}
+},
+{
+"heading": "Angiographic Therapy and Indications for Surgery",
+"body_text": "**Angiographic therapy:** performed by **embolization of the bleeding vessel** — the angiographer selectively catheterizes the culprit artery and occludes it with coils/particles. It is both diagnostic (extravasation of contrast) and therapeutic.\n\n**Indications for surgery in GI bleeding:**\n- **1. Failure of endoscopic therapy.**\n- **2. When the source of the bleeding cannot be determined** in a patient with **severe massive bleeding**.\n- **3. Patients who have massive hemorrhage and cannot be stabilized hemodynamically.**\n\nClinical translation: endoscopy is the first therapeutic station; angiographic embolization and surgery are the rescue stations — chosen based on stability, site and whether endoscopy has already failed (for UGIB, after **2 failed endoscopic hemostasis sessions**, angiographic embolization or surgical therapy is considered).",
+"key_points": [
+"Angiography treats by embolizing the bleeding vessel.",
+"Surgery: failed endoscopic therapy; unlocalizable severe massive bleeding; un-stabilizable massive hemorrhage.",
+"UGIB practice point: recurrent bleeding despite 2 sessions of endoscopic hemostasis -> embolization or surgery."
+]
+}
+],
+"key_terms": [
+{"term": "Octreotide", "definition_ar": "نظير السوماتوستاتين يعطى وريدياً (بلعة ثم تسريب) لخفض التدفق والضغط البابي الطحالي في نزف الدوالي."},
+{"term": "Argon plasma coagulation (APC)", "definition_ar": "تخثير حراري غير تلامسي يستخدم غاز الأرغون المتأين لحقن آفات نازفة سطحية واسعة."},
+{"term": "Injection sclerotherapy", "definition_ar": "حقن مادة صلبة (مصلبة) داخل الدالي أو حول الآفة لإحداث تخريب ليفي وإغلاق الوعاء النازف."},
+{"term": "Endoscopic rubber (band) ligation", "definition_ar": "ربط الدالي بحلقة مطاطية عبر التنظير: يُشفط الدالي إلى غطاء ثم تُطلق حلقة تخنقه فيتليف ويتوقف النزف."},
+{"term": "Hemoclip", "definition_ar": "مشبك معدني يوضع عبر المنظار لإغلاق الوعاء النازف ميكانيكياً (خياطة تنظيرية)."},
+{"term": "Forrest classification", "definition_ar": "تصنيف تنظيري لعلامات النزف الحديث في قرحة المعدة من Ia (نزف نافث) إلى III (قاعدة نظيفة) ويحدد خطر عودة النزف."},
+{"term": "Embolization", "definition_ar": "إغلاق الوعاء النازف عبر القسطرة (بملفات أو جسيمات) بأسلوب علاجي تداخلي يشفي النزف دون جراحة مفتوحة."},
+{"term": "Stigma of hemorrhage", "definition_ar": "وصمة النزف: العلامة التنظيرية للوعاء أو الخثرة في قاعدة القرحة (وعاء مرئي، خثرة ملتصقة...)."}
+],
+"difficulty": "core",
+"order_index": 5
+},
+{
+"id": "L7_gi_bleeding_c6",
+"lecture_id": "L7_gi_bleeding",
+"title": "Upper GI Bleeding — Etiology & Diagnostic-Therapeutic Approach",
+"summary_ar": "النزف الهضمي العلوي: فوق رباط ترايتز. الأسباب: القرحة الهضمية 38%، دوالي المعدة والمريء 16%، التهاب المريء 13%، ثم لا سبب موجود، أورام، توسعات وعائية، تمزق مالوري-ويس، تآكلات، آفة ديلافوا. والمنهج: تاريخ وفحص ومخبر + إنعاش مع PPI أو أوكتريوتيد ثم تنظير علاجي، والانصمام أو الجراحة بعد فشل جلستين تنظيريتين.",
+"sections": [
+{
+"heading": "Definition & Etiology of Acute Upper GI Bleeding",
+"body_text": "**UPPER GI BLEEDING (UGIB) is bleeding proximal to the ligament of Treitz** (the suspensory muscle of the duodenum — the classic anatomic divider between upper and lower GI bleeding).\n\n**Etiology of acute UGIB (lecture ranking with percentages):**\n- **1. Peptic ulcer: 38%** (the single most common cause)\n- **2. Gastric or oesophageal varices: 16%**\n- **3. Oesophagitis: 13%**\n- **4. No cause found**\n- **5. UGI tumours**\n- **6. Angioectasia**\n- **7. Mallory-Weiss tear**\n- **8. Erosions**\n- **9. Dieulafoy lesion**\n- **10. Others**\n\n**Endoscopic recognition (lecture image panel, page 20):** a small raised lesion with central umbilication/clot = **Dieulafoy lesion** (a large caliber artery eroding through a tiny mucosal defect); a linear mucosal laceration with radiating folds at the gastro-oesophageal junction = **Mallory-Weiss tear**; prominent tortuous submucosal vessels in the gastric fundus/body = **gastric varices/angioectasia**; panels also show an actively oozing ulcer crater, a deep dark-based ulcer, and a clean-based ulcer — the spectrum of peptic ulcer stigmata (compare Forrest classification).",
+"key_points": [
+"UGIB = bleeding proximal to the ligament of Treitz.",
+"Top three causes: peptic ulcer 38%, varices 16%, oesophagitis 13%.",
+"'No cause found' is itself a common category after endoscopy.",
+"Dieulafoy = tiny mucosal defect over a large artery — high-volume bleeding with a deceptively normal-looking mucosa.",
+"Mallory-Weiss = post-retching mucosal tear at the GE junction."
+]
+},
+{
+"heading": "Diagnostic & Therapeutic Approach to UGIB",
+"body_text": "The lecture's structured approach to the patient with suspected UGIB:\n- **History** (NSAIDs/ASA, alcohol, liver disease, retching, weight loss, prior ulcers/bleeds).\n- **Physical examination** (vital signs and hypovolemia, abdominal exam, stigmata of chronic liver disease, skin/lip syndromes, stool inspection, NG aspirate).\n- **Laboratory testing** (CBC/PCV/MCV, RFT/electrolytes, LFT/coagulation, type and crossmatch).\n- **Risk-factor assessment and risk stratification with medical resuscitation and empirical use of PPI or octreotide** (PPI if peptic source suspected; IV octreotide bolus + infusion if portal hypertension/varices suspected).\n- **Endoscopic evaluation:** for both **diagnostic and therapeutic** purposes, with the use of **endoscopic hemostasis techniques** (thermal probe, APC/laser, epinephrine 1:10,000-1:20,000 injection, hemoclips, hemostatic spray; band ligation or sclerotherapy for varices).\n\n**Angiography and surgery:** patients with **recurrent bleeding despite 2 sessions of endoscopic hemostasis** should be considered for **angiographic embolization or surgical therapy**.",
+"key_points": [
+"Approach sequence: history -> exam -> labs -> risk stratification + resuscitation + empirical PPI/octreotide -> endoscopy (diagnostic + therapeutic).",
+"Endoscopy timing: after resuscitation, once safe; information must influence care.",
+"Two failed endoscopic hemostasis sessions -> embolization or surgery."
+],
+"check": {
+"prompt": "What is the single most common cause of acute upper GI bleeding in this lecture's ranking?",
+"options": ["Oesophageal varices", "Peptic ulcer (38%)", "Oesophagitis", "Mallory-Weiss tear"],
+"correct_index": 1,
+"explanation_ar": "القرحة الهضمية (المعدية أو الاثني عشرية) هي السبب الأول للنزف الهضمي العلوي الحاد وتشكل حوالي 38%، تليها دوالي المعدة والمريء 16% ثم التهاب المريء 13%. أما تمزق مالوري-ويس فهو أقل شيوعاً ويرتبط بالتقيؤ المتكرر."
+}
+}
+],
+"key_terms": [
+{"term": "Ligament of Treitz", "definition_ar": "رباط ترايتز: العضلة المعلقة للاثني عشر عند الوصل الاثني عشري الصائمي؛ هو الحد الفاصل تشريحياً بين النزف الهضمي العلوي والسفلي."},
+{"term": "Dieulafoy lesion", "definition_ar": "آفة ديلافوا: شريان كبير القطر يخترق عيباً مخاطياً صغيراً دون التهاب أو قرحة، يسبب نزفاً علوياً غزيراً ومتكرراً."},
+{"term": "Angioectasia", "definition_ar": "توسعات وعائية (شعيرات متوسعة) في الغشاء المخاطي الهضمي تسبب نزفاً مزمناً أو حاداً خاصة عند المسنين وفي القصور الكلوي."},
+{"term": "Peptic ulcer disease (PUD)", "definition_ar": "قرحة هضمية في المعدة أو الاثني عشر بسبب حمض المعدة وجرثومة المعدة ومضادات الالتهاب؛ السبب الأول للنزف الهضمي العلوي."},
+{"term": "Erosions", "definition_ar": "تآكلات سطحية في المخاطية (معدة/مريء) غالباً بسبب أدوية أو كحول أو شدة مرضية، تسبب نزفاً خفيفاً عادة."}
+],
+"difficulty": "core",
+"order_index": 6
+},
+{
+"id": "L7_gi_bleeding_c7",
+"lecture_id": "L7_gi_bleeding",
+"title": "Lower GI Bleeding — Etiology & Diagnostic-Therapeutic Approach",
+"summary_ar": "النزف الهضمي السفلي تحت رباط ترايتز (قولون ومستقيم وشرج). أسباب التبرز الدموي الشديد: الرتوج 30%، سرطان القولون والبوليبات 18%، التهاب القولون 17% ثم القولون التقرحي وال ischemic وغيرها. المنهج: تنظير شرجي، منظار مرن سيغمي، تنظير قولون، تصوير نووي (0.04 مل/دقيقة)، أنجيوغرافي (>=0.5 مل/دقيقة مع انصمام)، CT، ولا دور للحقنة البارية الإسعافية. معظم الحالات محدودة ذاتياً.",
+"sections": [
+{
+"heading": "Definition & Causes of Severe Hematochezia",
+"body_text": "**LOWER GI BLEEDING (LGIB)** is bleeding **below the ligament of Treitz**; in practice, LGI bleeding generally signifies bleeding **from the colon or anorectum**.\n\n**Causes of severe hematochezia (lecture ranking with percentages):**\n- **1. Diverticulosis: 30%**\n- **2. Colon cancer or polyps: 18%**\n- **3. Colitis: 17%**\n- **4. Ischemic colitis**\n- **5. IBD**\n- **6. Noninfectious colitis**\n- **7. Infectious colitis**\n- **8. Angioectasia**\n- **9. Postpolypectomy (bleeding)**\n- **10. Rectal ulcer**\n- **11. Hemorrhoids**\n- **12. Anorectal source (unspecified)**\n- **13. Radiation colitis**\n- **14. Other**\n- **15. Unknown**\n\n**Endoscopic recognition (lecture images, page 22):** a diverticulum with fresh blood in/outside the pouch and multiple dark diverticular openings pointed by arrows = **diverticulosis/diverticular bleeding**; diffuse erythema, friability and spontaneous ulceration/bleeding = **severe colitis**; a large irregular exophytic hemorrhagic mass = **colon cancer**.",
+"key_points": [
+"LGIB = below the ligament of Treitz; in practice colon + anorectum.",
+"Diverticulosis (30%) is the most common cause of SEVERE hematochezia, then cancer/polyps (18%), then colitis (17%).",
+"Postpolypectomy bleeding and radiation colitis must not be forgotten in the history.",
+"Painless brisk hematochezia in an elderly patient = diverticular bleed until excluded."
+]
+},
+{
+"heading": "Endoscopic Evaluation: Anoscopy, Flexible Sigmoidoscopy, Colonoscopy",
+"body_text": "The diagnostic/therapeutic approach to LGIB begins with **history, physical examination, laboratory testing, and risk-factor assessment with risk stratification and medical resuscitation** — then **endoscopic evaluation**, which includes:\n- **1. Anoscopy:** useful in patients in whom **actively bleeding internal hemorrhoids** or other **anorectal disorders (fissures, fistulas, proctitis)** are suspected; it **allows immediate treatment with rubber band ligation**.\n- **2. Flexible sigmoidoscopy:** evaluates the **rectum and left side of the colon** and can be performed **without a standard colonoscopy bowel preparation**. Urgent flexible sigmoidoscopy is useful when **solitary rectal ulcer, UC, radiation proctitis, ischemic colitis, postpolypectomy bleeding (in the rectosigmoid), or internal hemorrhoids** are suspected — and it **can also be therapeutic**.\n- **3. Colonoscopy:** **requires bowel preparation** and is used for both **diagnosis and treatment of proximal colonic lesions proximal to the splenic flexure** (i.e., lesions beyond the reach of the flexible sigmoidoscope).",
+"key_points": [
+"Anoscopy: bedside, diagnoses bleeding internal hemorrhoids/fissures/fistulas/proctitis, enables immediate rubber band ligation.",
+"Flexible sigmoidoscopy: no full bowel prep needed; covers rectum + left colon; urgent use for solitary rectal ulcer, UC, radiation proctitis, ischemic colitis, rectosigmoid postpolypectomy bleeding, hemorrhoids.",
+"Colonoscopy: full bowel prep; diagnoses and treats lesions proximal to the splenic flexure."
+]
+},
+{
+"heading": "Radionuclide Imaging, Angiography, CT and Barium Enema",
+"body_text": "**4. Radionuclide imaging:** injecting a **radiolabeled substance** into the bloodstream and performing **serial scintigraphy** to detect focal collections of radiolabeled material. Reported to detect bleeding at a rate **as low as 0.04 mL/min**. Helpful in **obscure GI bleeding** or **prior to angiography to help localize a lesion**, particularly if an **early scan (e.g., 30 minutes to 4 hours after injection) is positive for red blood cell extravasation**.\n- **5. Angiography:** invasive, uses contrast media; most likely to detect a bleeding site when **arterial bleeding is at least 0.5 mL/min**. It is **both diagnostic and therapeutic** — by **embolization of the culprit vessel**.\n- **6. CT and CT colonography:** multidetector CT can identify colonic abnormalities that could be a source of bleeding — **diverticulosis, colitis, masses, and varices**; involves contrast medium and carries radiation exposure risk.\n- **7. Barium enema:** **rarely diagnostic** — it **cannot demonstrate vascular lesions** and **may be misleading if only diverticula are seen** (diverticula seen on barium do not prove they are the bleeding source). **Emergency barium enema has NO role in patients with LGI bleeding.**",
+"key_points": [
+"Scintigraphy detects bleeding as slow as 0.04 mL/min (most sensitive for slow/intermittent loss).",
+"Angiography needs >=0.5 mL/min active arterial bleeding but can embolize immediately.",
+"Positive early scan (30 min-4 h) for RBC extravasation helps localize before angiography.",
+"CT/CT colonography: diverticulosis, colitis, masses, varices — but contrast + radiation.",
+"Barium enema: no role in emergency LGIB; cannot show vascular lesions; diverticula on barium are misleading."
+],
+"check": {
+"prompt": "Which imaging modality can detect the slowest rate of GI bleeding according to the lecture?",
+"options": ["Angiography", "Radionuclide imaging (0.04 mL/min)", "Barium enema", "CT colonography"],
+"correct_index": 1,
+"explanation_ar": "التصوير النووي بكريات حمراء موسومة يكشف نزفاً ببطء يصل إلى 0.04 مل/دقيقة وهو الحساس الأعلى للنزف البطيء أو المتقطع. أما الأنجيوغرافيا فتتطلب نزفاً شريانياً نشطاً بمعدل 0.5 مل/دقيقة على الأقل لكنها علاجية بالانصمام. والحقنة البارية لا تُظهر الآفات الوعائية أصلاً ولا دور لها إسعافياً، والتصوير المقطعي يفيد في الآفات البنيوية الكبيرة لا في قياس معدل النزف."
+}
+},
+{
+"heading": "Medical & Endoscopic Treatment and the Role of Surgery in LGIB",
+"body_text": "**Medical treatment:** **most LGIBs are self-limited**; medical support involves **IV fluid and blood transfusion** for resuscitation of patients with significant bleeding.\n\n**Endoscopic hemostasis** (once the source is reached) includes:\n- **Endoscopic banding** (e.g., hemorrhoids)\n- **Thermal endoscopic therapy**\n- **Injection therapy**\n- **Hemostatic clipping of the culprit vessel**\n\n**Role of surgery — main indications:**\n- **Malignancy** (resection is oncologically required)\n- **Diffuse bleeding that fails to cease with medical therapy** (as in **ischemic colitis or UC**)\n- **Recurrent bleeding from a diverticulum**\nSurgery is therefore NOT first-line for LGIB — it is reserved for uncontrolled, recurrent, or malignant sources after endoscopic/angiographic options fail.",
+"key_points": [
+"Most lower GI bleeds stop spontaneously — resuscitate first.",
+"Endoscopic options in LGIB: banding, thermal therapy, injection, hemoclips of the culprit vessel.",
+"Surgery for LGIB: malignancy, diffuse refractory bleeding (ischemic/UC), recurrent diverticular bleeding."
+]
+}
+],
+"key_terms": [
+{"term": "Diverticulosis", "definition_ar": "وجود رتوج (أكياس مخاطية) في جدار القولون؛ أكثر أسباب التبرز الدموي الشديد (30%) وعادة بلا ألم."},
+{"term": "Postpolypectomy bleeding", "definition_ar": "نزف بعد استئصال البوليبات تنظيرياً، قد يكون فورياً أو مؤخراً (بعد ساعات إلى أيام)."},
+{"term": "Radionuclide imaging", "definition_ar": "تصوير نووي متسلسل بكريات حمراء موسومة لتحديد موضع النزف، حساس جداً (0.04 مل/دقيقة)."},
+{"term": "CT colonography", "definition_ar": "تنظير قولوني مقطعي (تصوير مقطعي محوسب للقولون بعد نفخ هوائي) يظهر الرتوج والكتلال والتهابات."},
+{"term": "Anoscopy", "definition_ar": "تنظير القناة الشرجية بأداة قصيرة (منظار شرجي) لفحص البواسير الداخلية والشرخ والناسور والتهاب المستقيم وربطها فوراً."},
+{"term": "Solitary rectal ulcer syndrome", "definition_ar": "متلازمة قرحة المستقيم المنفردة: قرحة في جدار المستقيم غالباً بسبب تدلي أو اضطراب التبرز، تسبب نزفاً وإحساساً بإفراغ ناقص."}
+],
+"difficulty": "core",
+"order_index": 7
+},
+{
+"id": "L7_gi_bleeding_c8",
+"lecture_id": "L7_gi_bleeding",
+"title": "Obscure GI Bleeding (Overt) — Causes & Diagnostic Algorithms",
+"summary_ar": "النزف الغامض: نزف بلا مصدر مشخص بعد تنظير علوي وقولوني وتصوير باريمي للأمعاء الدقيقة؛ ظاهر أو خفي. الأسباب حسب الموقع (كاميرون، ديلافوا، GAVE، توسعات وعائية، ناسور أورطي معوي، رتوج، مكل، أورام). تحت 40 سنة: ورم أمعاء دقيقة/مكل/كرون؛ فوق 40: توسعات وعائية/قرحة NSAID. الخوارزمية: إعادة تنظير ثم كبسولة فيديو ثم تنظير دفعي/عميق/رجعي، وخوارزمية النزف الكتلة: أنعاش ثم مسح كريات أو CT أنجيو ثم أنجيوغرافيا وانصمام.",
+"sections": [
+{
+"heading": "Definition & Subtypes of Obscure GI Bleeding",
+"body_text": "**Obscure GI bleeding** is commonly defined as **GI bleeding of uncertain cause after a nondiagnostic upper endoscopy (EGD), colonoscopy, and barium small bowel follow-through**. It can be either:\n- **Overt obscure GI bleeding:** refers to **visible acute GI bleeding (e.g., melena, maroon stool, hematochezia)** in patients with a **nondiagnostic upper endoscopy, colonoscopy, and small bowel series**.\n- **Occult obscure GI bleeding:** refers to a **positive fecal occult blood test result, usually in association with unexplained iron-deficiency anemia**.\n\nPractically: 'obscure' means standard bidirectional endoscopy (+ small-bowel barium) has already failed to find the source — the next moves are repeat endoscopy, video capsule endoscopy and dedicated small-bowel enteroscopy (see algorithms below).",
+"key_points": [
+"Obscure GIB = uncertain cause after nondiagnostic EGD + colonoscopy + barium small bowel follow-through.",
+"Overt obscure = visible bleeding with nondiagnostic standard studies.",
+"Occult obscure = positive FOBT +/- unexplained IDA with nondiagnostic standard studies."
+]
+},
+{
+"heading": "Causes of Obscure GI Bleeding by Anatomical Location",
+"body_text": "The lecture's anatomical checklist of obscure bleeding sources:\n- **Upper GI tract:** **Cameron's lesions** (erosions/ulcers within large hiatal hernia folds), **Dieulafoy's lesions**, **gastric antral vascular ectasia (GAVE, 'watermelon stomach')**.\n- **Small intestine:** **angioectasia**, **aortoenteric fistula**, **Dieulafoy's lesion**, **diverticulosis**, **Meckel's diverticulum**, **neoplasm**, **pancreatic or biliary disease** (e.g., hemosuccus pancreaticus, hemobilia), **ulceration**.\n- **Colon:** **angioectasia**, **diverticulosis**, **hemorrhoids**, **varices**.\n\nThe same structures can hide in different segments — that is why the diagnostic algorithm hinges on the CAPSULE to decide WHICH enteroscopy route to take.",
+"key_points": [
+"Upper culprits: Cameron's lesions, Dieulafoy's, GAVE.",
+"Small-bowel culprits: angioectasia, aortoenteric fistula, Dieulafoy's, diverticulosis, Meckel's, neoplasm, pancreatic/biliary disease, ulceration.",
+"Colonic culprits: angioectasia, diverticulosis, hemorrhoids, varices."
+]
+},
+{
+"heading": "Age-Based Attribution of Obscure Bleeding",
+"body_text": "According to the patient's age, obscure GI bleeding can be attributed as follows:\n- **Below the age of 40 years** the cause is usually due to: **small bowel tumor, Meckel's diverticulum, or Crohn's disease**.\n- **Above the age of 40 years** the cause is usually due to: **angioectasias or NSAID-induced ulcer**.\n\nThis is a favorite exam discriminator: the young obscure bleeder gets tumors/Meckel's/Crohn's workup (Meckel's scan, small-bowel imaging/capsule), while the older obscure bleeder gets evaluated for vascular ectasias and NSAID mid-gut ulceration (capsule enteroscopy and careful drug history).",
+"key_points": [
+"Age < 40 with obscure GIB: small bowel tumor, Meckel's diverticulum, Crohn's disease.",
+"Age > 40 with obscure GIB: angioectasias, NSAID-induced ulcer.",
+"Always take a meticulous NSAID history in unexplained IDA."
+],
+"check": {
+"prompt": "A 22-year-old man with recurrent melena and iron-deficiency anemia has had a nondiagnostic EGD and colonoscopy. Which cause is MOST likely?",
+"options": ["Angioectasia", "NSAID-induced ulcer", "Meckel's diverticulum", "Diverticulosis"],
+"correct_index": 2,
+"explanation_ar": "عند من هم دون الأربعين، الأسباب المعتادة للنزف الغامض هي ورم الأمعاء الدقيقة أو رتوج مكل أو داء كرون، ورتوج مكل هو الخيار الأنسب هنا. أما التوسعات الوعائية والقرحة بمضادات الالتهاب والرتوج القولونية فأسباب نموذجية لمن هم فوق الأربعين."
+}
+},
+{
+"heading": "Diagnostic Algorithm of Overt Obscure GIB (Lecture Flowchart)",
+"body_text": "The lecture's flowchart for **overt obscure GI bleeding**, converted to structured text:\n- **Start: Overt obscure GIB** (visible bleeding; EGD/colonoscopy nondiagnostic)\n- **Step 1 — Repeat endoscopy if warranted** (directed at the most suspicious segment; lesions are missed on first pass)\n  - **Positive** -> **Treat accordingly**\n  - **Negative** -> **Step 2**\n- **Step 2 — Video capsule endoscopy (VCE)** — performed **after exclusion of possible bowel obstruction**\n  - **If VCE is positive**, the location dictates the therapeutic route:\n    - **1. Lesion in the PROXIMAL JEJUNUM** -> **push enteroscopy**\n    - **2. Lesion in the MID-SMALL INTESTINE** -> **deep enteroscopy or surgery**\n    - **3. Lesion in the TERMINAL ILEUM** -> **retrograde enteroscopy via the colonic route**\n  - **If the video capsule endoscopy is STILL not revealing** -> **intraoperative enteroscopy or surgery** (especially in the significantly symptomatic patient).",
+"key_points": [
+"Repeat endoscopy first — a significant minority of 'obscure' lesions are actually within reach of standard scopes.",
+"Video capsule endoscopy is the gateway to the small bowel — but exclude obstruction first.",
+"Proximal jejunum -> push enteroscopy; mid-small bowel -> deep enteroscopy or surgery; terminal ileum -> retrograde enteroscopy via colon.",
+"Negative capsule in a symptomatic patient -> intraoperative enteroscopy or surgery."
+]
+},
+{
+"heading": "Approach to Brisk / Massive Small Bowel Bleeding (Lecture Algorithm)",
+"body_text": "For the patient with **brisk/massive suspected small bowel bleeding** the lecture's algorithm runs:\n- **1. STABILIZE the patient** (resuscitation as detailed previously).\n  - **If the patient is UNSTABLE** -> proceed **directly to ANGIOGRAPHY** (bypass the slow localization tests).\n- **2. If stable:** **red cell scan (radionuclide scintigraphy) OR CT angiography**\n  - **Negative** -> **specific management: enteroscopy vs surgery and intraoperative enteroscopy**\n  - **Positive** -> **3. Angiography**\n    - **Negative** -> **specific management: enteroscopy vs surgery and intraoperative enteroscopy**\n    - **Positive** -> **EMBOLIZATION** of the culprit vessel.\n\nLogic: unstable patients cannot wait for localization studies — angiography offers both diagnosis and immediate hemostatic embolization; stable patients undergo progressively sensitive localization (red cell scan detects 0.04 mL/min; angiography >=0.5 mL/min), with surgery/intraoperative enteroscopy as the definitive fallback.",
+"key_points": [
+"Unstable brisk small-bowel bleeder -> straight to angiography (diagnose + embolize).",
+"Stable patient -> red cell scan or CT angiography first; positive -> angiography -> embolization.",
+"Negative localization -> enteroscopy vs surgery ± intraoperative enteroscopy.",
+"Embolization is the therapeutic endpoint of a positive angiogram."
+]
+}
+],
+"key_terms": [
+{"term": "Video capsule endoscopy (VCE)", "definition_ar": "كبسولة فيديو تُبلع وتصور الأمعاء الدقيقة بالكامل؛ الطريقة الأساسية لتقييم النزف الغامض بعد استبعاد الانسداد."},
+{"term": "Push enteroscopy", "definition_ar": "تنظير دفعي: إدخال منظار طويل عبر الفم للوصول إلى الصائم القريب (وأحياناً الأعورية الغليظة) للتشخيص والعلاج."},
+{"term": "Deep enteroscopy", "definition_ar": "تنظير عميق للأمعاء الدقيقة (ببالون واحد أو اثنين) يصل لأعماق بعيدة تشخيصاً وعلاجاً."},
+{"term": "Retrograde enteroscopy", "definition_ar": "تنظير رجعي: الوصول إلى الأعورية الغليظة عبر القولون، يستخدم حين تكون الآفة في نهاية الأمعاء الدقيقة."},
+{"term": "Meckel's diverticulum", "definition_ar": "رتج مكل: بقايا الجدار المعوي السري تحتوي أحياناً نسيجاً معدياً مفرز الحمض يسبب تقرحاً ونزفاً عند الشباب (قاعدة الاثنين-2%، ضمن قدمين من الصمام، قبل عمر سنتين)."},
+{"term": "Aortoenteric fistula", "definition_ar": "ناسور بين الأورطى والأمعاء (خصوصاً الاثني عشر) غالباً بعد ترقيع أورطي أو تمدد وعائي؛ يسبب نزفاً كتلياً مهدداً للحياة."},
+{"term": "Cameron's lesions", "definition_ar": "تقرحات/تآكلات خطية داخل طيات فتق الحجاب الحاجز الكبير؛ سبب مهم للنزف الخفي وفقر دم بعوز الحديد."},
+{"term": "Gastric antral vascular ectasia (GAVE)", "definition_ar": "توسع وعائي شعري في البواب (معدة البطيخ): خطوط حمراء خطية تسبب نزفاً مزمناً وفقر دم، تعالج بالأرغون بلازما."},
+{"term": "Intraoperative enteroscopy", "definition_ar": "تنظير الأمعاء الدقيقة أثناء الجراحة (فتح البطن) لتحديد وعلاج آفات نازفة تعذر الوصول إليها تنظيرياً."}
+],
+"difficulty": "advanced",
+"order_index": 8
+},
+{
+"id": "L7_gi_bleeding_c9",
+"lecture_id": "L7_gi_bleeding",
+"title": "Obscure Occult GI Bleeding & Lecture Wrap-Up",
+"summary_ar": "النزف الغامض الخفي: يظهر عادة بفقر دم بعوز الحديد ويُكتشف بفحص الدم الخفي (غواياك أو FIT). المنهج يعتمد على سبب الفحص: مسح سرطان القولون فوق الخمسين -> تنظير قولون؛ إيجابية بلا فقر دم -> تنظير علوي؛ فقر دم بعوز الحديد -> تنظير علوي وقولوني ثم كبسولة فيديو مع تنظير عميق عند اكتشاف آفة. ثم خلاصة المحاضرة ورسائلها الأساسية.",
+"sections": [
+{
+"heading": "Obscure Occult GI Bleeding — Presentation & the FOBT/FIT Pathways",
+"body_text": "**OBSCURE OCCULT GI BLEEDING:**\n- These patients usually present with **iron-deficiency anemia (IDA)**.\n- Occult GI bleeding is usually detected with a routine **guaiac-based fecal occult blood test (FOBT)** or **fecal immunochemical test (FIT)** and occurs (by definition) **with no visible blood in the stool**, with or without iron deficiency.\n\n**The approach to the patient with a positive FOBT result depends on WHY the test was obtained (lecture algorithm):**\n- **Pathway A — FOBT/FIT obtained for colon cancer screening in a patient 50 years of age or older:** perform **colonoscopy** (or OGD as the complementary/alternative upper evaluation).\n- **Pathway B — Positive FOBT WITHOUT iron-deficiency anemia:** perform **OGD (upper endoscopy)**.\n- **Pathway C — FOBT performed for iron-deficiency anemia:** perform **OGD AND colonoscopy**; if **both are negative**, proceed to **video capsule endoscopy (VCE)**, possibly followed by **deep enteroscopy if a lesion is detected on capsule endoscopy**.\n\nThe teaching point: a positive occult-blood test is not a diagnosis — it is a fork in the road determined by the indication for testing and the presence of IDA.",
+"key_points": [
+"Occult obscure GIB typically presents as IDA with positive FOBT/FIT and NO visible blood.",
+"Screening FOBT/FIT in a patient >=50 -> colonoscopy (OGD as complementary pathway).",
+"Positive FOBT without IDA -> OGD.",
+"FOBT done for IDA -> bidirectional endoscopy (OGD + colonoscopy); both negative -> VCE ± deep enteroscopy if a lesion is found.",
+"Guaiac FOBT detects peroxidase activity (diet-sensitive); FIT detects human globin."
+],
+"check": {
+"prompt": "A 61-year-old woman has iron-deficiency anemia and a positive FOBT. EGD and colonoscopy are both nondiagnostic. What is the next step?",
+"options": ["Repeat barium enema", "Video capsule endoscopy", "Barium small bowel follow-through only", "Observation and iron therapy alone"],
+"correct_index": 1,
+"explanation_ar": "في فقر الدم بعوز الحديد مع إيجابية فحص الدم الخفي، نُجري التنظير العلوي والقولوني معاً؛ فإذا كان كلاهما سلبياً فالخطوة التالية هي كبسولة الفيديو للتنظير، وقد يتبعها تنظير عميق إذا اكتُشفت آفة. الحقنة البارية لا تُظهر الآفات الوعائية، والاكتفاء بمتابعة وإعطاء حديد دون تحري يفوّت تشخيصاً مثل توسع وعائي أو ورم."
+}
+},
+{
+"heading": "Lecture Summary & Key Take-Home Messages",
+"body_text": "End-of-lecture synthesis (closing slide 'Thanks'):\n- **Classify** every bleed anatomically (upper 50% / lower 40% / obscure 10%), by visibility (overt vs occult), tempo (acute vs chronic) and severity (mild/moderate/severe; massive GIB = shock/orthostatic hypotension, Hct fall >=6% or Hb fall >=2 g/dL, or >=2 units PRBC).\n- **Localize clinically:** hematemesis/coffee-ground/bloody NG return = UGI; melena = UGI (or small bowel/proximal colon); hematochezia = colonic/anorectal UNLESS hypotensive (brisk UGIB); maroon stool = UGI/small bowel/proximal colon overlap.\n- **Resuscitate in parallel with assessment:** two 14-16G IVs, NS to SBP >100 and HR <100; keep Hb >7 g/dL, platelets >50,000/mm3, PT <15 s; urine output monitoring; intubate if ongoing hematemesis or altered mental status.\n- **Triage:** ICU if unstable/comorbid massive bleed; monitored bed if stable; semiurgent outpatient endoscopy only for mild, stable, reliable patients with normal labs; use **Blatchford/Rockall** scores.\n- **Treat medically while awaiting endoscopy:** PPI for suspected PUD; empiric IV octreotide for suspected varices.\n- **Scope when safe:** Forrest stigmata guide therapy; non-variceal toolkit = thermal probe, APC/laser, epinephrine 1:10,000-1:20,000 injection, clips, hemostatic spray; variceal toolkit = EVL + sclerotherapy.\n- **Escalate when needed:** after 2 failed endoscopic hemostasis sessions (UGIB) -> angiographic embolization or surgery; LGIB surgery for malignancy, diffuse refractory bleeding (ischemic/UC), recurrent diverticular bleeding.\n- **Obscure bleeding:** repeat endoscopy -> VCE -> route-directed enteroscopy (push/deep/retrograde) -> intraoperative enteroscopy/surgery; brisk/massive small-bowel bleeding: stabilize -> red cell scan or CT angiography -> angiography -> embolization (unstable: straight to angiography).",
+"key_points": [
+"Simultaneous assessment + resuscitation is the backbone of emergency GIB care.",
+"Numeric anchors: 50/40/10 (sites), 38/16/13 (UGIB causes), 30/18/17 (severe hematochezia causes), 7-50,000-15 (transfusion triad), 0.04 vs 0.5 mL/min (scintigraphy vs angiography).",
+"Drugs (PPI/octreotide) bridge to endoscopy; endoscopy is the therapeutic centerpiece; angiography and surgery are the rescue tiers."
+]
+}
+],
+"key_terms": [
+{"term": "FOBT (guaiac fecal occult blood test)", "definition_ar": "فحص الدم الخفي في البراز بطريقة الغواياك: يكشف فعالية البيروكسيديز في الهيموغلوبين، حساس للنظام الغذائي."},
+{"term": "FIT (fecal immunochemical test)", "definition_ar": "فحص مناعي كيميائي للبراز يكشف الغلوبين البشري تحديداً ولا يتأثر بالطعام، يستخدم لمسح سرطان القولون."},
+{"term": "Iron-deficiency anemia (IDA)", "definition_ar": "فقر دم بعوز الحديد: قد يكون التعبير الوحيد عن نزف هضمي خفي مزمن (مجهول المصدر) ويستوجب تنظيراً علوياً وقلونياً."}
+],
+"difficulty": "advanced",
+"order_index": 9
+}
+],
+"flashcards": [
+{
+"id": "L7_gi_bleeding_f1",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c1",
+"card_type": "basic",
+"front_text": "What are the three anatomical types of GI bleeding and their relative frequencies?",
+"back_text": "Upper GIB (esophagus, stomach, duodenum) = 50% of cases; Lower GIB (colon and anorectum) = 40%; Obscure bleeding (small intestine) = 10%.",
+"explanation_ar": "توزيع النزف الهضمي حسب الموقع: علوي 50%، سفلي 40%، غامض من الأمعاء الدقيقة 10% — أرقام محاضرة أساسية للامتحان.",
+"mnemonic_ar": "50-40-10: النصف علوي، والأربعين سفلي، والعشرة غامضة في الأمعاء الدقيقة.",
+"tags": ["classification", "epidemiology"]
+},
+{
+"id": "L7_gi_bleeding_f2",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c1",
+"card_type": "basic",
+"front_text": "Define overt vs occult GI bleeding.",
+"back_text": "Overt GIB = visible signs of blood loss (hematemesis, coffee-ground vomiting, melena, hematochezia). Occult GIB = subacute bleeding that is not clinically visible, e.g. presenting as iron-deficiency anemia.",
+"explanation_ar": "الظاهر = دم مرئي بأي شكل؛ والخفي = نزف تحت الحاد غير مرئي يظهر بفقر دم بعوز الحديد أو فحص براز إيجابي.",
+"tags": ["definitions"]
+},
+{
+"id": "L7_gi_bleeding_f3",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c1",
+"card_type": "basic",
+"front_text": "Define obscure GI bleeding.",
+"back_text": "Bleeding from a site that is not apparent after routine endoscopic evaluation with esophagogastroduodenoscopy (upper endoscopy) and colonoscopy, and possibly small bowel radiography.",
+"explanation_ar": "النزف الغامض هو الذي لا يُعرف مصدره بعد تنظير علوي وقلوني روتيني (وقد يضاف تصوير الأمعاء الدقيقة بالباريوم).",
+"tags": ["definitions", "obscure_bleeding"]
+},
+{
+"id": "L7_gi_bleeding_f4",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c1",
+"card_type": "basic",
+"front_text": "State the lecture's definition of massive (severe) GI bleeding.",
+"back_text": "Documented GI bleeding (hematemesis, melena, hematochezia or positive NG lavage) + shock or orthostatic hypotension, OR hematocrit fall >= 6% (Hb fall >= 2 g/dL), OR transfusion of at least 2 units of packed red blood cells.",
+"explanation_ar": "النزف الضخم = نزف موثق مع صدمة/هبوط ضغط انتصابي، أو هبوط هيماتوكريت 6% (هيموغلوبين 2 غ/دل)، أو نقل وحدتي دم مركز على الأقل.",
+"mnemonic_ar": "احفظ الثلاثية: صدمة — 6%/2غ — وحدتا دم.",
+"tags": ["definitions", "severity"]
+},
+{
+"id": "L7_gi_bleeding_f5",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c3",
+"card_type": "basic",
+"front_text": "What bleeding source does melena suggest?",
+"back_text": "Melena generally indicates an upper GI source, but it can also be seen with small intestinal or proximal colonic bleeding.",
+"explanation_ar": "الميلينا تعني عادة نزفاً علوياً، لكنها قد تحدث أيضاً في نزف الأمعاء الدقيقة أو القولون القريب — لا تفترضها دليلاً قاطعاً على المصدر العلوي.",
+"tags": ["localization"]
+},
+{
+"id": "L7_gi_bleeding_f6",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c3",
+"card_type": "basic",
+"front_text": "Hematochezia in a hypotensive patient suggests what?",
+"back_text": "Hematochezia generally implies a colonic or anorectal source, BUT hypotension suggests a severe, brisk UPPER GI bleed with rapid transit of blood through the GI tract.",
+"explanation_ar": "التبرز الدموي مع هبوط الضغط = فكر بنزف علوي شديد وسريع العبور حتى يُثبت العكس — فخ امتحاني كلاسيكي يتطلب إنعاشاً وتنظيراً علوياً.",
+"tags": ["localization", "exam_trap"]
+},
+{
+"id": "L7_gi_bleeding_f7",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c3",
+"card_type": "basic",
+"front_text": "Differential diagnosis of maroon-colored stool?",
+"back_text": "Maroon stool can be seen with an actively bleeding upper GI source, or a small intestinal or proximal colonic source.",
+"explanation_ar": "البراز العنابي يتقاطع بين ثلاثة مصادر: نزف علوي نشط، أو أمعاء دقيقة، أو قولون قريب — لذا لا يكفي وحده لتحديد المصدر.",
+"tags": ["localization"]
+},
+{
+"id": "L7_gi_bleeding_f8",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c3",
+"card_type": "basic",
+"front_text": "Which two scoring systems are named for assessing GI bleeding severity?",
+"back_text": "The Blatchford score (Glasgow-Blatchford, pre-endoscopy) and the Rockall score — they help determine the severity of GIB, the need for intervention, and the prognosis.",
+"explanation_ar": "بلاتشفورد (قبل التنظير) وروكال (قبل وبعد التنظير): يحددان الشدة والحاجة للتداخل والإنذار.",
+"tags": ["risk_scores"]
+},
+{
+"id": "L7_gi_bleeding_f9",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c4",
+"card_type": "basic",
+"front_text": "What IV access is required during resuscitation for acute GI bleeding?",
+"back_text": "At least one large-bore (14- or 16-gauge) IV catheter; place TWO large-bore catheters when the patient has ongoing bleeding.",
+"explanation_ar": "قثاطر واحدة كبيرة (14 أو 16) على الأقل، وقثاتران عند استمرار النزف — لأن سرعة الإنعاش تعتمد على قطر القثطر.",
+"tags": ["resuscitation"]
+},
+{
+"id": "L7_gi_bleeding_f10",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c4",
+"card_type": "basic",
+"front_text": "List the resuscitation targets in acute GI bleeding.",
+"back_text": "Normal saline to keep SBP > 100 mmHg and pulse < 100/min; transfuse to keep Hb > 7 g/dL, platelets > 50,000/mm3, and PT < 15 seconds.",
+"explanation_ar": "أهداف الإنعاش: ضغط انقباضي فوق 100، نبض تحت 100، هيموغلوبين فوق 7 غ/دل، صفائح فوق 50,000، زمن بروثرومبين تحت 15 ثانية.",
+"mnemonic_ar": "ثلاثية النقل: 7 — 50 ألف — 15 ثانية.",
+"tags": ["resuscitation", "numbers"]
+},
+{
+"id": "L7_gi_bleeding_f11",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c2",
+"card_type": "basic",
+"front_text": "Why may the initial hematocrit be misleading after acute GI bleeding?",
+"back_text": "Because it takes over 24 to 72 hours for the vascular space to equilibrate with extravascular fluid, and IV saline causes hemodilution — so early Hct underestimates true blood loss.",
+"explanation_ar": "الموازنة بين الحيز الوعائي والسائل خارج الوعائي تستغرق 24-72 ساعة، ويضاف تخفف الدم بمحلول الملح؛ لذا لا يعكس الهيماتوكريت الأولي حجم الفقد.",
+"tags": ["labs", "pathophysiology"]
+},
+{
+"id": "L7_gi_bleeding_f12",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"card_type": "basic",
+"front_text": "What initial medical therapy is given before endoscopy in acute GI bleeding?",
+"back_text": "A PPI (reduces rebleeding rates in PUD) and, when portal hypertension/variceal bleeding is strongly suspected, empiric IV octreotide as a bolus followed by infusion.",
+"explanation_ar": "PPI عند الاشتباه بقرحة هضمية، وأوكتريوتيد وريدي (بلعة ثم تسريب) تجريبياً عند الاشتباه بقوة بنزف دوالي — قبل التنظير.",
+"tags": ["pharmacology"]
+},
+{
+"id": "L7_gi_bleeding_f13",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"card_type": "basic",
+"front_text": "List the five non-variceal endoscopic hemostasis techniques.",
+"back_text": "1) Thermal contact probe; 2) Noncontact thermal therapy (argon plasma coagulation, laser); 3) Injection therapy (submucosal epinephrine via sclerotherapy needle); 4) Endoscopic hemoclips; 5) Hemostatic spray.",
+"explanation_ar": "مسبار حراري تلامسي؛ أرغون بلازما/ليزر (غير تلامسي)؛ حقن أدرينالين تحت المخاطية؛ مشابك تنظيرية؛ رشاص موقف للنزف.",
+"mnemonic_ar": "تذكر: حراري — ليزري — حقن — مشبك — رشاش.",
+"tags": ["endoscopy"]
+},
+{
+"id": "L7_gi_bleeding_f14",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"card_type": "basic",
+"front_text": "What dilution of epinephrine is used for endoscopic injection therapy?",
+"back_text": "Epinephrine diluted to 1:10,000 or 1:20,000, injected submucosally into or around the bleeding site or stigma of hemorrhage with a sclerotherapy needle.",
+"explanation_ar": "أدرينالين 1:10,000 أو 1:20,000 يُحقن تحت المخاطية في موضع النزف أو حوله — تركيزان فقط يحفظهما الامتحان.",
+"tags": ["endoscopy", "numbers"]
+},
+{
+"id": "L7_gi_bleeding_f15",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"card_type": "basic",
+"front_text": "Which endoscopic therapies are used for variceal bleeding?",
+"back_text": "Endoscopic rubber (band) ligation (EVL) and injection sclerotherapy.",
+"explanation_ar": "الربط الشريطي بالمنظار (EVL) وهو الأشهر، والتصليب بالحقن — وهما خيارا المحاضرة لعلاج الدوالي تنظيرياً.",
+"tags": ["endoscopy", "varices"]
+},
+{
+"id": "L7_gi_bleeding_f16",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"card_type": "basic",
+"front_text": "Recite the Forrest classification of bleeding peptic ulcers.",
+"back_text": "Ia = spurting hemorrhage; Ib = oozing; IIa = visible vessel; IIb = adherent clot; IIc = flat pigmentation; III = clean base.",
+"explanation_ar": "تصنيف فورست: Ia نافث، Ib ناز، IIa وعاء مرئي، IIb خثرة ملتصقة، IIc تصبغ مسطح، III قاعدة نظيفة — يرتب بدرجة خطر عودة النزف.",
+"mnemonic_ar": "رتبهم: نافث ثم ناز ثم وعاء ثم خثرة ثم بقعة ثم نظيف.",
+"tags": ["endoscopy", "classification"]
+},
+{
+"id": "L7_gi_bleeding_f17",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c6",
+"card_type": "basic",
+"front_text": "Top three causes of acute upper GI bleeding with percentages?",
+"back_text": "Peptic ulcer 38%; gastric or oesophageal varices 16%; oesophagitis 13%. (Then: no cause found, UGI tumours, angioectasia, Mallory-Weiss tear, erosions, Dieulafoy lesion, others.)",
+"explanation_ar": "قرحة هضمية 38% ثم دوالي 16% ثم التهاب مريء 13% — الترتيب المئوي سؤال مباشر متكرر.",
+"tags": ["etiology", "numbers"]
+},
+{
+"id": "L7_gi_bleeding_f18",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c7",
+"card_type": "basic",
+"front_text": "Top three causes of severe hematochezia with percentages?",
+"back_text": "Diverticulosis 30%; colon cancer or polyps 18%; colitis 17%. (Then ischemic colitis, IBD, noninfectious/infectious colitis, angioectasia, postpolypectomy, rectal ulcer, hemorrhoids, anorectal source, radiation colitis, other, unknown.)",
+"explanation_ar": "الرتوج 30% ثم سرطان القولون/البوليبات 18% ثم التهاب القولون 17% — أهم أرقام النزف السفلي.",
+"tags": ["etiology", "numbers"]
+},
+{
+"id": "L7_gi_bleeding_f19",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c7",
+"card_type": "basic",
+"front_text": "Compare the bleeding-detection thresholds of radionuclide imaging vs angiography.",
+"back_text": "Radionuclide imaging detects bleeding as slow as 0.04 mL/min; angiography detects arterial bleeding when the rate is at least 0.5 mL/min but allows therapeutic embolization.",
+"explanation_ar": "التصوير النووي أكفأ للنزف البطيء (0.04 مل/دقيقة)، والأنجيوغرافيا تحتاج 0.5 مل/دقيقة لكنها تشخيصية وعلاجية بالانصمام.",
+"mnemonic_ar": "0.04 للنووي (بطيء) مقابل 0.5 للأنجيو (سريع وعلاجي).",
+"tags": ["imaging", "numbers"]
+},
+{
+"id": "L7_gi_bleeding_f20",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c8",
+"card_type": "basic",
+"front_text": "Likely causes of obscure GI bleeding by age (<40 vs >40)?",
+"back_text": "Below 40 years: small bowel tumor, Meckel's diverticulum, or Crohn's disease. Above 40 years: angioectasias or NSAID-induced ulcer.",
+"explanation_ar": "دون الأربعين: ورم أمعاء دقيقة، رتوج مكل، كرون. فوق الأربعين: توسعات وعائية أو قرحة بمضادات الالتهاب.",
+"mnemonic_ar": "الشاب: مكل وكرون وورم؛ والمسن: وعائي ومضاد التهاب.",
+"tags": ["obscure_bleeding", "etiology"]
+}
+],
+"mcqs": [
+{
+"id": "L7_gi_bleeding_q1",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c0",
+"question_stem": "A 55-year-old man with a long history of alcohol consumption presents to the hospital with complaints of dizziness and hematemesis. He is found to be hypotensive and anemic and is admitted to the ICU. What is the most likely cause of the hematemesis?",
+"options": ["Gastric ulcer", "Esophageal varices", "Duodenal ulcer", "Gastric adenocarcinoma", "Arteriovenous malformation"],
+"correct_index": 1,
+"explanation_ar": "الإجابة الصحيحة: دوالي المريء. الكحول المزمن يسبب مرضاً كبدياً مزمناً وارتفاع ضغط بابياً، والنزف الكتلي مع هبوط الضغط والفقر الموجب للعناية هو المشهد الكلاسيكي لتمزق الدوالي. القرحة المعدية والاثني عشرية قد تسبب تقيؤ دم أيضاً لكن غياب قصة أدوية (NSAID) ووجود كحولية مزمنة يجعلان الدوالي الأرجح. سرطان المعدة ينزف عادة ببطء (فقر دم، تفل قهوة) لا نزفاً كتلياً مع صدمة. والتشوه الشرياني الوريدي نادر جداً وغير مرتبط بالكحول.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["What does chronic alcohol do to liver hemodynamics?", "Massive hematemesis + shock in a cirrhotic = which vessel ruptures?"]
+},
+{
+"id": "L7_gi_bleeding_q2",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c0",
+"question_stem": "A 26-year-old man develops hematemesis after a night of repeated forceful retching following an alcohol binge. Which statement about hematemesis is TRUE?",
+"options": [
+"When it occurs after repeated retching, it is suggestive of an oesophageal tear",
+"In patients over 70 with arthritis it usually indicates malignancy",
+"In alcoholic liver disease it is always due to esophageal varices",
+"When caused by duodenal ulcer, a partial gastrectomy is usually necessary",
+"It must be associated with melena"
+],
+"correct_index": 0,
+"explanation_ar": "العبارة الصحيحة: تقيؤ الدم بعد تقيؤ متكرر وعنيف يوحي بتمزق مريئي (مالوري-ويس) — وهذا جوهر السيناريو. أما البقية فخاطئة: مسن يستخدم مسكنات للتهاب المفاصل فسببه الشائع قرحة/تآكلات NSAID لا الورم الخبيث؛ ومريض كحولي ليس كل نزفه دوالي (قد يكون التهاب معد أو قرحة أو مالوري-ويس) فكلمة 'دائماً' خاطئة؛ وقرحة الاثني عشر النازفة تعالج تنظيرياً ودوائياً والاستئصال الجزئي للمعدة نادراً ما يلزم؛ ولا يجب أن يقترن تقيؤ الدم بالميلينا بالضرورة.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q3",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c8",
+"question_stem": "A 58-year-old woman presents with light-headedness and several bloody bowel movements over 24 hours. She denies abdominal pain. She is hypotensive and anemic; resuscitation is instituted. Both upper endoscopy and colonoscopy are nondiagnostic, but she continues to pass clots per rectum (hematocrit 33%). What is the most effective management strategy?",
+"options": ["Capsule endoscopy", "Abdominal CT scan with contrast", "Scintigraphy and angiography", "MRI", "Emergency surgery"],
+"correct_index": 2,
+"explanation_ar": "الإجابة: التصوير الوميضي (مسح كريات حمراء موسومة) مع الأنجيوغرافيا. المريضة تنزف بنشاط مع فشل التنظيرين العلوي والقلوني في التحديد، أي نزف نشط غامض/متوسط الحركة، والتصوير النووي يكشف نزفاً بطيئاً حتى 0.04 مل/دقيقة لتحديد الموضع قبل الأنجيوغرافيا القادرة على كشف النزف >=0.5 مل/دقيقة وانصمام الوعاء المذنب. كبسولة الفيديو ممتازة للنزف الغامض لكنها بطيئة وغير عملية أثناء نزف نشط مع عدم استقرار. والتصوير المقطعي البسيط بالتباين لا يحدد ويعالج الوعاء النازف (وإن كانت أنجيوغرافيا CT تستخدم ضمن خوارزميات حديثة). والرنين المغناطيسي لا دور له هنا. والجراحة الإسعافية خيار إنقاذي أخير لمن لا يمكن تثبيته أو تحديده وليست الخطوة الأكثر فعالية هنا.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Bleeding is ACTIVE and standard endoscopies failed — you need localization PLUS a therapeutic option.", "Which pair combines the most sensitive localization with embolization?"]
+},
+{
+"id": "L7_gi_bleeding_q4",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c4",
+"question_stem": "A 60-year-old man presents with 1 day of hematemesis and melena. History: osteoarthritis, diabetes, hypertension, remote hepatitis C treated successfully in the 1990s. Medications: metformin, glimepiride, aspirin 81 mg, ibuprofen 400 mg TID. Vitals: T 36 C, BP 90/55 mmHg, HR 110 bpm, RR 12. Abdomen soft, nontender. Labs: Hb 7.5 g/dL, WBC 6000/uL, platelets 290,000/uL, total bilirubin 1.4 mg/dL, creatinine 1.2 mg/dL, INR 1.8. Which recommendation is correct?",
+"options": [
+"IV octreotide should be started in the emergency department",
+"Blood transfusion is indicated to a hemoglobin of at least 9 g/dL",
+"Endoscopy should be delayed until the INR is corrected to 1",
+"I.V. 0.9% normal saline"
+],
+"correct_index": 3,
+"explanation_ar": "الإجابة الصحيحة: محلول ملحي 0.9% وريدياً. المريض غير مستقر ديناميكياً (ضغط 90/55 ونبض 110) والأولوية الأولى هي الإنعاش بمحلول ملحي عبر قثاطر كبيرة مع طلب تطابق الدم. الأوكتريوتيد يعطى تجريبياً عند الاشتباه بنزف دوالي/ارتفاع ضغط بابي، والتهاب C هنا معالج قديماً مع صفائح وبيليروبين طبيعيين فلا سمات تشمع، ونزفه الأرجح قرحة NSAID/أسبرين. ونقل الدم متحفظ: الهدف هيموغلوبين فوق 7 فقط وهو 7.5 مع فقد نشط يُقيَّم سريرياً، ولا يوجد ما يبرر الرفع إلى 9. والتنظير لا يُؤجل حتى يصحح INR إلى 1 كلياً؛ يجري بعد الإنعاش مع تصحيح عملي للتخثر.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["BP 90/55 and HR 110 — what is the FIRST action in any unstable GI bleeder?", "Restrictive transfusion threshold in this lecture is Hb 7 g/dL."]
+},
+{
+"id": "L7_gi_bleeding_q5",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c3",
+"question_stem": "A 64-year-old man is brought to the ED with presyncope and copious passage of fresh red blood with clots per rectum over 3 hours. BP 84/48 mmHg, HR 122 bpm. He has no anal pain. After resuscitation is begun, which bleeding source must be suspected FIRST?",
+"options": ["Internal hemorrhoids", "Brisk upper GI source with rapid transit", "Anal fissure", "Sigmoid colon cancer"],
+"correct_index": 1,
+"explanation_ar": "الصحيح: نزف علوي سريع وكثيف مع عبور سريع للدم عبر الأمعاء. التبرز الدموي عادة قولوني/شرجي المصدر، لكن وجود هبوط ضغط ونبض سريع (صدمة نقص حجم) يرفع احتمال نزف علوي غزير عابر بسرعة — فيجب الإنعاش ثم تنظير علوي مبكراً. البواسير الداخلية والشرخ ينزفان أحمر فاتح لكن بكميات صغيرة وبلا صدمة وعادة مع ألم في الشرخ. وسرطان القولون السيني قد يسبب تبرزاً دموياً لكن نزفه غالباً مزمن بكميات أقل مصحوب بتغير عادات التبرز ونقص وزن، لا صدمة حادة.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q6",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c1",
+"question_stem": "Four patients present with GI blood loss. Which one meets THIS lecture's criteria for massive (severe) GI bleeding?",
+"options": [
+"Melena with orthostatic hypotension and Hb fall of 3 g/dL",
+"Positive FOBT with hemoglobin 12.8 g/dL and stable vitals",
+"Self-limited hematochezia with stable vital signs",
+"Coffee-ground emesis with hematocrit fall of 4% and normal vitals"
+],
+"correct_index": 0,
+"explanation_ar": "المريض الأول يحقق معيارين: هبوط ضغط انتصابي (مع نزف موثق بالميلينا) وهبوط هيموغلوبين >= 2 غ/دل، فينطبق تعريف النزف الضخم: نزف موثق مع صدمة أو هبوط انتصابي، أو هبوط هيماتوكريت >= 6% (هيموغلوبين >= 2)، أو نقل وحدتي دم على الأقل. أما إيجابية فحص الدم الخفي مع هيموغلوبين طبيعي فواضح أنها ليست نزفاً كتلياً. والتبرز الدموي المحدود ذاتياً مع استقرار حيوي لا يرقى للتعريف. وهبوط هيماتوكريت 4% مع طبيعية الحيوية أقل من عتبة 6%.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q7",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c4",
+"question_stem": "A 52-year-old man with active hematemesis has Hb 7.2 g/dL, platelet count 44,000/mm3 and prothrombin time 17 seconds despite initial saline. According to the lecture's resuscitation protocol, which combination of products should he receive?",
+"options": [
+"Packed RBCs + platelets + fresh frozen plasma",
+"Packed RBCs only",
+"Fresh frozen plasma only",
+"Platelets only",
+"No blood products; continue saline alone"
+],
+"correct_index": 0,
+"explanation_ar": "الصحيح: كريات حمراء مركزة + صفائح + بلازما طازجة مجمدة، لأن أهداف المحاضرة هي: هيموغلوبين أعلى من 7 (هو 7.2 مع نزف نشط)، وصفائح أعلى من 50,000 (هو 44 ألف)، وزمن بروثرومبين أقل من 15 ثانية (هو 17). إعطاء مكون واحد فقط يترك هدفاً آخر مكسوراً؛ فالكريات وحدها لا تصحح الصفيحات ولا التخثر، والبلازما وحدها لا ترفع الهيموغلوبين، والصفائح وحدها لا تعالج الفقر ولا التخثر. والاستمرار بالملح وحده مع نزف نشط وقيم دون الأهداف مخالف للبروتوكول.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q8",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"question_stem": "A 62-year-old woman with alcohol-related cirrhosis, ascites and splenomegaly presents with hematemesis and shock. Endoscopy is planned once she is stabilized. Which empiric medication should be started NOW?",
+"options": [
+"IV octreotide as a bolus followed by infusion",
+"Oral propranolol",
+"IM vitamin K alone",
+"Oral omeprazole alone"
+],
+"correct_index": 0,
+"explanation_ar": "الصحيح: أوكتريوتيد وريدي بلعة يتبعها تسريب. عند الاشتباه القوي بارتفاع الضغط البابي ونزف الدوالي يبدأ الأوكتريوتيد تجريبياً وقبل التنظير لأنه يخفض التدفق والضغط البابي الطحالي وجسراً آمناً حتى الربط الشريطي. بروبرانولول الفموي دواء وقائي ثانٍ مزمن وليس علاجاً للنزف النشط (وقد يخفض الضغط ويخفي علامات الصدمة). وفيتامين K وحده لا يعالج ارتفاع الضغط البابي ولا يوقف نزف الدوالي. والأوميبرازول الفموي يعالج المصادر الحمضية (قرحة) ولا يجدي مع الدوالي.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q9",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c5",
+"question_stem": "During endoscopy for a bleeding duodenal ulcer with a visible vessel, the endoscopist performs injection therapy. What epinephrine dilution does the lecture specify for submucosal injection into or around the stigma of hemorrhage?",
+"options": ["1:1,000", "1:10,000 or 1:20,000", "1:100,000", "Undiluted epinephrine"],
+"correct_index": 1,
+"explanation_ar": "الصحيح: 1:10,000 أو 1:20,000 — يُحقن الأدرينالين المخفف بهذين التركيزين تحت المخاطية في موضع النزف أو حول وصمته عبر إبرة التصليب فيحدث انقباضاً وعائياً وضغطاً ميكانيكياً بالحجم. أما 1:1,000 فهو تركيز قوي يُستخدم عضلياً/جلدياً في التأق ولا يستخدم تنظيرياً، و1:100,000 أضعف من تركيزات المحاضرة، والأدرينالين غير المخفف خطر قاتل (تصلب شرايين واضطراب نظم).",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["The lecture gives TWO acceptable dilutions for the same purpose.", "Both are far more dilute than the anaphylaxis preparation (1:1,000)."]
+},
+{
+"id": "L7_gi_bleeding_q10",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c7",
+"question_stem": "A 72-year-old man presents with painless passage of a large amount of red blood mixed with clots per rectum. He is hemodynamically stable after fluids. Which is the MOST COMMON cause of severe hematochezia in this lecture?",
+"options": ["Diverticulosis (30%)", "Colon cancer or polyps (18%)", "Colitis (17%)", "Hemorrhoids", "Angioectasia"],
+"correct_index": 0,
+"explanation_ar": "الصحيح: الرتوج القولونية وهي السبب الأول للتبرز الدموي الشديد بنسبة 30% عند المسنين، ونزفها عادة بلا ألم وغالباً ذاتي التوقف. سرطان القولون والبوليبات (18%) سبب مهم لكن نزفه مزمن خفي عادة أو دم مختلط مع تغير عادات التبرز. والتهاب القولون (17%) يترافق عادة بإسهال ودم مع مخاط وتقلصات. والبواسير سبب شائع للنزف الأحمر الخفيف لا للنزف الشديد. والتوسعات الوعائية تسبب فقر دم مزمناً أكثر من تبرز دموي كتلي.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L7_gi_bleeding_q11",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c7",
+"question_stem": "In the work-up of ongoing lower/mid-GI bleeding, which statement about localization modalities is correct?",
+"options": [
+"Radionuclide imaging detects bleeding as slow as 0.04 mL/min, whereas angiography requires a rate of at least 0.5 mL/min",
+"Angiography detects 0.04 mL/min and radionuclide imaging requires 0.5 mL/min",
+"Both modalities detect bleeding only above 1 mL/min",
+"Barium enema is the emergency imaging of choice for LGIB",
+"CT colonography directly visualizes active arterial extravasation better than angiography"
+],
+"correct_index": 0,
+"explanation_ar": "الصحيح: التصوير النووي يكشف نزفاً ببطء 0.04 مل/دقيقة (الأكثر حساسية للنزف البطيء/المتقطع)، بينما تحتاج الأنجيوغرافيا نزفاً شريانياً نشطاً بمعدل 0.5 مل/دقيقة على الأقل لكنها تتيح الانصمام العلاجي فوراً. الخيار الثاني يقلب الرقمين. وحد 1 مل/دقيقة غير وارد في المحاضرة. والحقنة البارية لا دور لها إسعافياً في النزف السفلي لأنها لا تُظهر الآفات الوعائية وقد تضلل بإظهار رتوج غير نازفة. والتصوير المقطعي القولوني يُظهر آفات بنيوية (رتوج، التهاب، كتل، دوالٍ) لكنه ليس أداة قياس النزف النشط الأدق من الأنجيوغرافيا.",
+"difficulty": "advanced",
+"clinical_vignette": false,
+"hints": ["One modality is the most sensitive detector; the other is the therapeutic one.", "Remember: 0.04 (scintigraphy) vs 0.5 (angiography) mL/min."]
+},
+{
+"id": "L7_gi_bleeding_q12",
+"lecture_id": "L7_gi_bleeding",
+"concept_id": "L7_gi_bleeding_c8",
+"question_stem": "A 24-year-old man has recurrent melena and iron-deficiency anemia. EGD, colonoscopy and barium small-bowel follow-through are all nondiagnostic (obscure overt GI bleeding). According to the lecture's age-based attribution, which cause is most likely?",
+"options": ["Angioectasia", "Meckel's diverticulum", "NSAID-induced ulcer", "Diverticulosis", "Colon cancer"],
+"correct_index": 1,
+"explanation_ar": "الصحيح: رتوج مكل. دون سن الأربعين تكون أسباب النزف الغامض المعتادة: ورم الأمعاء الدقيقة، ورتوج مكل (نسيج معدي مفرز للحمض)، وداء كرون. أما فوق الأربعين فالغالب توسعات وعائية أو قرحة ناجمة عن مضادات الالتهاب، لذا فإن التوسعات الوعائية والقرحة الدوائية خياران نمطيان للمسنين وليس للشاب. والرتوج القولونية وسرطان القولون أسباب نادرة جداً بهذا العمر مع نزف غامض.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Age is the key branching variable for obscure GI bleeding.", "Young obscure bleeders: tumor / Meckel's / Crohn's."]
+}
+],
+"clinical_cases": [
+{
+"id": "L7_gi_bleeding_case1",
+"lecture_id": "L7_gi_bleeding",
+"title": "Hematemesis and Shock in a Man with Alcoholic Cirrhosis",
+"scenario": "A 55-year-old man with a long history of heavy alcohol consumption is brought by his family to the emergency department after vomiting bright red blood twice and passing black tarry stools. He feels dizzy and nearly fainted on standing at home. He is known to have alcohol-related cirrhosis with portal hypertension and a previous episode of band-ligated esophageal varices 8 months ago.",
+"vignette": {
+"age": 55,
+"sex": "male",
+"chief_complaint": "Two episodes of vomiting fresh red blood with dizziness for 2 hours",
+"history": "Alcohol dependence for 20 years (currently still drinking). Known alcohol-related cirrhosis with portal hypertension, previous variceal bleed treated by endoscopic band ligation 8 months ago. No NSAID or anticoagulant use. No retching before the bleeding. No previous peptic ulcer disease.",
+"vitals": {
+"bp": "82/50 mmHg",
+"hr": "118 bpm",
+"rr": "22 breaths/min",
+"temp": "36.2 C",
+"spo2": "96% on room air"
+},
+"exam": "Pale and anxious; icteric sclerae; spider telangiectasias over the upper chest; palmar erythema; Dupuytren's contracture of the right palm; splenomegaly and mild ascites; caput medusae; melena on digital rectal examination; abdomen soft and nontender.",
+"labs": [
+{"name": "Hemoglobin", "value": "7.2 g/dL (13.5-17.5)", "flag": "critical"},
+{"name": "Hematocrit", "value": "22% (41-53)", "flag": "low"},
+{"name": "WBC", "value": "11.8 x10^3/uL (4.0-11.0)", "flag": "high"},
+{"name": "Platelet count", "value": "68,000/uL (150,000-400,000)", "flag": "low"},
+{"name": "BUN", "value": "32 mg/dL (7-20)", "flag": "high"},
+{"name": "Creatinine", "value": "1.6 mg/dL (0.7-1.3)", "flag": "high"},
+{"name": "Serum sodium", "value": "133 mEq/L (135-145)", "flag": "low"},
+{"name": "Total bilirubin", "value": "3.1 mg/dL (0.3-1.2)", "flag": "high"},
+{"name": "Albumin", "value": "2.7 g/dL (3.5-5.0)", "flag": "low"},
+{"name": "INR", "value": "1.7 (0.8-1.2)", "flag": "high"},
+{"name": "Prothrombin time", "value": "17 seconds (11-13.5)", "flag": "high"}
+],
+"imaging": "No acute radiologic study; bedside ultrasound showed a coarse echogenic liver, splenomegaly and ascites consistent with known cirrhosis."
+},
+"steps": [
+{
+"id": "L7_gi_bleeding_case1_s1",
+"prompt": "What is the immediate first step in managing this patient in the emergency department?",
+"options": [
+"Take him directly to bedside endoscopy before any resuscitation",
+"Place two large-bore (14-16G) IV catheters and infuse 0.9% normal saline rapidly while sending blood for crossmatch",
+"Start oral omeprazole and observe on a regular ward",
+"Arrange video capsule endoscopy"
+],
+"correct_index": 1,
+"explanation_ar": "المريض في صدمة (ضغط 82/50 ونبض 118) والأولوية المطلقة هي الإنعاش المتوازي مع التقييم: قثاطر وريدية كبيرة (14-16) — اثنتان مع نزف نشط — ومحلول ملحي 0.9% بسرعة كافية للإبقاء على الضغط الانقباضي فوق 100 والنبض تحت 100، مع أخذ عينات مخبرية وتطابق دم. التنظير قبل الإنعاش خطر (عدم استقرار واحتمال الاستنشاق)، والأوميبرازول الفموي لا يعالج نزفاً كتلياً، وكبسولة الفيديو ليست أداة إسعافية.",
+"hints": ["Vitals first: he is in hemorrhagic shock.", "Lecture rule: two large-bore lines when bleeding is ongoing."],
+"xp": 10
+},
+{
+"id": "L7_gi_bleeding_case1_s2",
+"prompt": "His Glasgow-Blatchford score calculates to 19 and his pre-endoscopy Rockall score is 6. What is the correct disposition?",
+"options": [
+"Discharge home with outpatient endoscopy next week",
+"Admission to a standard hospital bed",
+"Admission to the intensive care unit",
+"Semiurgent outpatient endoscopy after discharge"
+],
+"correct_index": 2,
+"explanation_ar": "نزف كتلي مع علامات حيوية غير مستقرة وأمراض مصاحبة (تشمع) = مريض عناية مركزة وفق المحاضرة. نقاط بلاتشفورد 19 وروكال قبل التنظير 6 تؤكدان الخطورة العالية والحاجة للتداخل. السرير العادي أو الخروج للتنظير اللاحق خياران لمن هم مستقرون بلا نزف نشط، والتنظير شبيه العاجل خارج المستشفى يُحجز للحالات الخفيفة المستقرة ذات الفحوص الطبيعية والمريض الموثوق بالعودة.",
+"xp": 10
+},
+{
+"id": "L7_gi_bleeding_case1_s3",
+"prompt": "While resuscitation continues and endoscopy is being arranged, which empiric medication should be started given the strong suspicion of variceal bleeding?",
+"options": [
+"IV octreotide as a bolus followed by continuous infusion (with IV PPI)",
+"Oral propranolol to acutely lower portal pressure",
+"IM vitamin K alone",
+"No medication until endoscopy provides a diagnosis"
+],
+"correct_index": 0,
+"explanation_ar": "عند الاشتباه القوي بارتفاع الضغط البابي ونزف الدوالي يبدأ الأوكتريوتيد الوريدي تجريبياً (بلعة ثم تسريب) قبل التنظير حسب المحاضرة، مع إضافة PPI وريدي. بروبرانولول الفموي دواء وقائي مزمن وليس علاجاً للنزف النشط وقد يخفي علامات الصدمة. وفيتامين K وحده لا يوقف نزف الدوالي. وتأجيل الدواء حتى التنظير يؤخر جسراً علاجياً قد يكون منقذاً للحياة.",
+"xp": 10
+},
+{
+"id": "L7_gi_bleeding_case1_s4",
+"prompt": "After stabilization, urgent endoscopy shows grade III esophageal varices with active spurting. Which endoscopic therapy is chosen?",
+"options": [
+"Endoscopic variceal (rubber band) ligation",
+"Argon plasma coagulation of the varix",
+"Submucosal epinephrine injection alone",
+"Hemostatic powder spray alone"
+],
+"correct_index": 0,
+"explanation_ar": "خيارا المحاضرة لنزف الدوالي هما الربط الشريطي بالمنظار (EVL) والتصليب بالحقن، والربط الشريطي هو العلاج التنظيري المختار هنا لقوته الميكانيكية على الدالي النازف (كما في صور المحاضرة: شفط الدالي ثم إطلاق الحلقة). أما الأرغون بلازما والحقن بالأدرينالين والرشاص فأساليب للآفات غير الدالية (قرحة، توسع وعائي) ولا تصلح كعلاج وحيد للدوالي الكبيرة النازفة.",
+"xp": 15
+},
+{
+"id": "L7_gi_bleeding_case1_s5",
+"prompt": "During ongoing oozing his hemoglobin is 7.2 g/dL, platelets 48,000/mm3 and PT 17 s. What transfusion strategy follows the lecture protocol?",
+"options": [
+"Transfuse packed RBCs to keep Hb above 7 g/dL, platelets to keep count above 50,000/mm3, and FFP to keep PT below 15 seconds",
+"Transfuse packed RBCs to reach a hemoglobin of at least 10 g/dL",
+"Transfuse platelets only",
+"Continue saline only without blood products"
+],
+"correct_index": 0,
+"explanation_ar": "بروتوكول المحاضرة: نقل كريات حمراء مركزة للحفاظ على هيموغلوبين أعلى من 7 غ/دل، وصفائح فوق 50,000، وبلازما طازجة مجمدة لإبقاء زمن البروثرومبين أقل من 15 ثانية، مع تفريد التوقيت حسب الحالة السريرية والأمراض المصاحبة وسرعة النزف. الرفع إلى 10 إستراتيجية ليبرالية مخالفة للتحفظ الموصوف، والصفائح وحدها أو الملح وحده يترك باقي الأهداف مكسورة مع نزف نشط.",
+"xp": 10
+}
+],
+"debriefing_ar": "التشخيص النهائي: نزف دوالي المريء على خلفية تشمع كحولي مع ارتفاع ضغط بابي، وقد كان نزفاً كتلياً (صدمة + هبوط هيموغلوبين > 2 غ/دل). الدروس المستفادة: (1) الإنعاش المتوازي مع التقييم: قثاتران كبيرا قياس + محلول ملحي 0.9% بهدف ضغط انقباضي فوق 100 ونبض تحت 100. (2) الأوكتريوتيد الوريدي تجريبياً عند الاشتباه بالدوالي قبل التنظير. (3) نقاط بلاتشفورد وروكال العالية توجب العناية المركزة. (4) الربط الشريطي هو العلاج التنظيري للدوالي. (5) الإستراتيجية المتحفظة للنقل: هيموغلوبين فوق 7، صفائح فوق 50,000، زمن بروثرومبين أقل من 15 ثانية. (6) فكر بتنبيب الرغامى عند تقيؤ دموي نشط أو اضطراب وعٍ لمنع ذات الرئة الاستنشاقية. (7) تذكر أن الهيماتوكريت الأولي مضلل (الموازنة تحتاج 24-72 ساعة).",
+"difficulty": "core",
+"order_index": 0
+},
+{
+"id": "L7_gi_bleeding_case2",
+"lecture_id": "L7_gi_bleeding",
+"title": "Brisk Hematochezia with Nondiagnostic Upper Endoscopy and Colonoscopy",
+"scenario": "A 58-year-old woman presents to the emergency department with light-headedness and several bloody bowel movements over the past 24 hours. She denies abdominal pain. She is hypotensive and anemic; resuscitative measures are instituted, but both the upper endoscopy and colonoscopy are nondiagnostic, and she continues to pass clots per rectum. Her hematocrit is 33%.",
+"vignette": {
+"age": 58,
+"sex": "female",
+"chief_complaint": "Multiple bloody bowel movements with clots for 24 hours",
+"history": "Light-headedness on standing; no abdominal pain, no weight loss, no change in bowel habit. No NSAID, aspirin or anticoagulant use. No alcohol. Hypertension on amlodipine. No previous GI bleeding or surgery.",
+"vitals": {
+"bp": "92/58 mmHg",
+"hr": "112 bpm",
+"rr": "20 breaths/min",
+"temp": "36.5 C",
+"spo2": "97% on room air"
+},
+"exam": "Pale but alert; abdomen soft, nontender, no masses or surgical scars; no stigmata of chronic liver disease; bright red blood with clots on digital rectal examination.",
+"labs": [
+{"name": "Hemoglobin", "value": "10.8 g/dL (12.0-15.5)", "flag": "low"},
+{"name": "Hematocrit", "value": "33% (36-46)", "flag": "low"},
+{"name": "WBC", "value": "9.2 x10^3/uL (4.0-11.0)", "flag": "normal"},
+{"name": "Platelet count", "value": "310,000/uL (150,000-400,000)", "flag": "normal"},
+{"name": "BUN", "value": "15 mg/dL (7-20)", "flag": "normal"},
+{"name": "Creatinine", "value": "0.9 mg/dL (0.6-1.1)", "flag": "normal"},
+{"name": "INR", "value": "1.0 (0.8-1.2)", "flag": "normal"},
+{"name": "Serum sodium", "value": "138 mEq/L (135-145)", "flag": "normal"},
+{"name": "Serum potassium", "value": "4.1 mEq/L (3.5-5.0)", "flag": "normal"}
+],
+"imaging": "Upper endoscopy: no active bleeding lesion found. Colonoscopy: fresh blood throughout the colon but no identifiable bleeding source; poor preparation limited mucosal views."
+},
+"steps": [
+{
+"id": "L7_gi_bleeding_case2_s1",
+"prompt": "What is the priority at her arrival in the emergency department?",
+"options": [
+"Immediate angiography before any resuscitation",
+"Two large-bore IV catheters with 0.9% normal saline to keep SBP above 100 and pulse below 100, plus crossmatch and transfusion to keep Hb above 7 g/dL",
+"Emergency bowel preparation for repeat colonoscopy",
+"Barium enema to localize the bleeding source"
+],
+"correct_index": 1,
+"explanation_ar": "الأولوية دائماً الإنعاش المتوازي مع التقييم: قثاطر كبيرة + محلول ملحي بهدف ضغط انقباضي فوق 100 ونبض تحت 100، مع تطابق دم ونقل متحفظ للحفاظ على هيموغلوبين فوق 7. الأنجيوغرافيا قبل تثبيت المريضة غير سليمة، وتحضير الأمعاء لتنظير مكرر يؤخر الإنعاش، والحقنة البارية لا دور لها إسعافياً إطلاقاً في نزف الجهاز الهضمي السفلي.",
+"xp": 10
+},
+{
+"id": "L7_gi_bleeding_case2_s2",
+"prompt": "After resuscitation, both upper endoscopy and colonoscopy are nondiagnostic, yet she continues to pass clots per rectum (hematocrit 33%). What is the most effective management strategy?",
+"options": [
+"Capsule endoscopy",
+"Scintigraphy (red cell scan) followed by angiography",
+"MRI of the abdomen",
+"Emergency barium enema",
+"Immediate subtotal colectomy"
+],
+"correct_index": 1,
+"explanation_ar": "نزف نشط مستمر مع فشل التنظيرين في التحديد = نزف غامض نشط؛ والأكفأ هو التصوير الوميضي بكريات حمراء موسومة (يكشف نزفاً حتى 0.04 مل/دقيقة ويساعد في التحديد قبل الأنجيوغرافيا) ثم الأنجيوغرافيا التي تكشف النزف بمعدل 0.5 مل/دقيقة على الأقل وتتيح انصمام الوعاء المذنب. الكبسولة ممتازة للنزف الغامض الهادئ لكنها بطيئة أثناء النزف النشط وغير علاجية، والرنين لا دور له، والباريوم لا يُظهر الآفات الوعائية وقد يضلل، والاستئصال القولوني تحت الكامل إجراء كاسر يُحفظ لمن فشل كل شيء أو لم يستقر.",
+"hints": ["She is STILL bleeding actively — you need the most sensitive detector PLUS a therapeutic modality.", "Lecture thresholds: 0.04 mL/min (scan) vs 0.5 mL/min (angiography)."],
+"xp": 15
+},
+{
+"id": "L7_gi_bleeding_case2_s3",
+"prompt": "Angiography demonstrates active contrast extravasation from a distal ileal branch. What is the next step?",
+"options": [
+"Angiographic embolization of the culprit vessel",
+"Systemic anticoagulation to prevent thrombosis",
+"Observation with serial hematocrit every 6 hours",
+"High-dose oral PPI therapy"
+],
+"correct_index": 0,
+"explanation_ar": "الأنجيوغرافيا فحص تشخيصي وعلاجي معاً: انصمام الوعاء المذنب هو الخطوة التالية المنطقية وقد حققت التحديد المطلوب. التخثير الجهازي في نزف نشط خطأ واضح. والمراقبة التسلسلية وحدها تأخير خطر مع نزف مستمر وموضع معروف قابل للعلاج، ومثبطات المضخة الفموية لا تعالج نزفاً وعائياً معوياً.",
+"xp": 10
+},
+{
+"id": "L7_gi_bleeding_case2_s4",
+"prompt": "Three days later she rebleeds from the same site and cannot be controlled endoscopically or by repeat embolization. According to the lecture's surgical indications, what is the appropriate management?",
+"options": [
+"Surgical management (exploration with segmental resection of the bleeding small-bowel/diverticular segment)",
+"Repeat capsule endoscopy",
+"Barium small bowel follow-through",
+"Discharge home with iron supplementation"
+],
+"correct_index": 0,
+"explanation_ar": "دواعي الجراحة في النزف الهضمي وفق المحاضرة: فشل العلاج التنظيري، وعدم تحديد المصدر في نزف كتلي شديد، والنزف الكتلي غير القابل للتثبيت الدوراني — وهنا أضيف نزف متكرر من نفس الموضع (نزف رتجي متكرر من دواعي جراحة النزف السفلي). الكبسولة والباريوم فحوص تشخيصية لا علاجية وقد أُجريت خطوات التموضع أصلاً، والخروج مع الحديد إهمال لمريض تنزف من مصدر معروف.",
+"xp": 15
+}
+],
+"debriefing_ar": "التشخيص النهائي: نزف معوي دقيق نشط (غامض النمط) — سُيّر كسيناريو المحاضرة الكلاسيكي: نزف نشط، تنظير علوي وقلوني غير مشخصين، استمرار تمرير تخثرات، هيماتوكريت 33%. الدروس: (1) الإنعاش أولاً بأهداف واضحة (ضغط > 100، نبض < 100، هيموغلوبين > 7). (2) في النزف النشط غير المحدد: مسح كريات حمراء موسومة (0.04 مل/دقيقة) ثم أنجيوغرافيا (>= 0.5 مل/دقيقة) وهي تشخيصية وعلاجية بالانصمام. (3) معظم نزوف الجهاز الهضمي السفلي محدودة ذاتياً لكن النزف المستمر أو المتكرر يحتاج تصعيداً: تنظير علاجي ثم انصمام ثم جراحة. (4) لا مكان للحقنة البارية الإسعافية. (5) راجع خوارزمية النزف المعوي الكتلي: تثبيت ثم مسح أو CT أنجيو ثم أنجيوغرافيا وانصمام، وغير المستقر يذهب مباشرة إلى الأنجيوغرافيا.",
+"difficulty": "advanced",
+"order_index": 1
+}
+]
+}

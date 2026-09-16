@@ -1,0 +1,1066 @@
+{
+ "schema_version": "2.0.0",
+ "lecture": {
+  "id": "L6_ibd",
+  "title": "Inflammatory Bowel Disease: Ulcerative Colitis and Crohn's Disease",
+  "specialty": "internal_medicine",
+  "module": "gastroenterology",
+  "system": "gastrointestinal",
+  "source": {
+   "file_name": "L6 IBD.pdf",
+   "page_count": 40
+  },
+  "order_index": 5,
+  "tags": ["inflammatory bowel disease", "ulcerative colitis", "Crohn's disease", "toxic megacolon", "5-ASA agents", "infliximab", "primary sclerosing cholangitis", "fistula", "string sign", "colorectal cancer risk"],
+  "golden_tip": [
+   "Smoking paradox exam trap: UC is common in NON-smokers and ex-smokers, while Crohn's disease is common in SMOKERS — and appendicectomy protects against UC only.",
+   "Infliximab (anti-TNF monoclonal antibody) can reactivate TB and cause infusion reactions and sepsis — TB screening before starting it is the classic exam point.",
+   "In UC the colorectal cancer risk rises steadily 8-10 years after diagnosis; risk factors: duration >=10 years, pancolitis, continuous progressive disease, severe initial onset, associated liver disease (PSC)."
+  ]
+ },
+ "concepts": [
+  {
+   "id": "L6_ibd_c1",
+   "lecture_id": "L6_ibd",
+   "title": "IBD — Introduction, Definitions and Other Forms",
+   "summary_ar": "التهاب الأمعاء الالتهابي (IBD) هو أمراض التهابية مزمنة مجهولة السبب تصيب السبيل الهضمي، وأهم شكلين له: التهاب القولون التقرحي الذي يصيب القولون الكبير فقط، وداء كرون الذي قد يصيب أي جزء من السبيل الهضمي وأشيع مواضعه الثلث الأخير من المعي الدقيق والقولون. وتشمل الأشكال الأخرى التهاب القولون الكولاجيني واللمفاوي والإقفاري ومتلازمة بهجت والتهاب القولون الانتاني والوسطي.",
+   "sections": [
+    {
+     "heading": "Definition, Scope and Learning Outcomes",
+     "body_text": "**Inflammatory bowel disease (IBD)** is the collective term for **chronic inflammatory diseases of the GI tract of unknown etiology**. The term commonly refers to two major entities:\n- **Ulcerative colitis (UC)** — affects **only the large intestine**.\n- **Crohn's disease (CD)** — can affect **any part of the gastrointestinal tract**, but most frequently attacks the **distal third of the small intestine and the colon**.\n\nThe title slide shows a blue-tinted anatomical torso with the **GI tract highlighted in red** as the area of pathology.\n\n**Learning outcomes of this lecture:**\n- LO1: Introduction\n- LO2: Occurrence and Commonness\n- LO3: Pathophysiology\n- LO4: Diagnosis (Symptoms and Signs)\n- LO5: Complications\n- LO6: Treatments (Medical and Surgical)",
+     "key_points": [
+      "IBD = chronic inflammatory diseases of the GI tract of UNKNOWN etiology.",
+      "UC affects ONLY the large intestine; CD can affect ANY part of the GI tract, most frequently the distal third of the small intestine and the colon.",
+      "The lecture is organized into 6 learning outcomes: introduction, occurrence, pathophysiology, diagnosis, complications, treatments (medical and surgical)."
+     ],
+     "check": {
+      "prompt": "Which statement correctly distinguishes UC from Crohn's disease anatomically?",
+      "options": ["UC affects only the large intestine; CD can affect any part of the GI tract", "UC affects any part of the GI tract; CD affects only the colon", "Both affect only the small intestine", "Both affect the whole gut uniformly", "UC affects the stomach; CD affects the oesophagus"],
+      "correct_index": 0,
+      "explanation_ar": "التهاب القولون التقرحي يصيب القولون الكبير فقط، بينما كرون يمكن أن يصيب أي جزء من السبيل الهضمي لكنه يهاجم بشكل أشيع الثلث الأخير من المعي الدقيق والقولون. بقية الخيارات تخالف هذا التعريف الأساسي في المحاضرة."
+     }
+    },
+    {
+     "heading": "Other Forms of IBD",
+     "body_text": "Beyond UC and CD, the lecture lists several **other forms of IBD** that must be kept in mind in a patient presenting with colitic symptoms:\n- **Collagenous colitis** (a microscopic colitis subtype)\n- **Lymphocytic colitis** (a microscopic colitis subtype)\n- **Ischemic colitis**\n- **Behcet's syndrome**\n- **Infective colitis**\n- **Intermediate colitis** (an overlap form with features between UC and CD)\n\nThese entities can mimic classical IBD clinically (chronic diarrhea, abdominal pain) and are separated by the diagnostic work-up: laboratory tests, endoscopy, radiography and biopsy.",
+     "key_points": [
+      "Other forms of IBD listed: collagenous colitis, lymphocytic colitis, ischemic colitis, Behcet's syndrome, infective colitis, intermediate colitis.",
+      "Collagenous and lymphocytic colitis are the microscopic colitides.",
+      "Intermediate colitis is the UC-CD overlap form."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Inflammatory bowel disease (IBD)", "definition_ar": "أمراض التهابية مزمنة مجهولة السبب تصيب السبيل الهضمي، أهمها التهاب القولون التقرحي وداء كرون."},
+    {"term": "Ulcerative colitis (UC)", "definition_ar": "التهاب مزمن يصيب القولون الكبير فقط، يتميز بإسهال مدمى وتنازم وضرورة قضاء الحاجة."},
+    {"term": "Crohn's disease (CD)", "definition_ar": "التهاب مزمن يمكن أن يصيب أي جزء من السبيل الهضمي، وأشيع مواضعه الثلث الأخير من المعي الدقيق والقولون."},
+    {"term": "Intermediate colitis", "definition_ar": "شكل متداخل بين التهاب القولون التقرحي وكرون يصعب فصلهما نسيجياً."},
+    {"term": "Microscopic colitis (collagenous / lymphocytic)", "definition_ar": "التهاب قولون يبدو التنظير فيه طبيعياً تقريباً ويُشخص نسيجياً (كولاجيني أو لمفاوي)، من الأشكال الأخرى للـ IBD."},
+    {"term": "Behcet's syndrome", "definition_ar": "اعتلال وعائي التهابي جهازي بتقرحات فموية وتناسلية يمكن أن يصيب الأمعاء ويحاكي IBD."}
+   ],
+   "difficulty": "core",
+   "order_index": 0
+  },
+  {
+   "id": "L6_ibd_c2",
+   "lecture_id": "L6_ibd",
+   "title": "Etiology and Pathophysiology of IBD",
+   "summary_ar": "ينشأ داء الأمعاء الالتهابي من تفاعل أربع عوامل: مستضدات جرثومية داخل اللمعة، واستعداد وراثي، واستجابة مناعية، ومحرضات بيئية. التدخين مفارقة شهيرة: التهاب القولون التقرحي شائع عند غير المدخنين ومن أقلعوا عنه، بينما كرون شائع عند المدخنين، واستئصال الزائدة يحمي من التهاب القولون التقرحي. ويسير المرض بنوبات اشتعال وهجوع تتوافق فيها الأعراض مع شدة الالتهاب.",
+   "sections": [
+    {
+     "heading": "Multifactorial Etiology — The Four-Factor Venn Model",
+     "body_text": "The pathophysiology slide (Medscape) shows a **four-circle Venn diagram** illustrating the multifactorial etiology of IBD. Four interacting domains converge on a central box labeled **IBD**:\n- **Lumenal microbial antigens and adjuvants** (top circle)\n- **Genetic susceptibility** (left circle)\n- **Immune response** (right circle)\n- **Environmental triggers** (bottom circle)\n\nThe concept: IBD develops when a genetically susceptible host mounts an excessive immune response against lumenal microbial antigens in the presence of environmental triggers. (Diagram source: Nat Clin Pract Gastroenterol Hepatol 2006, Nature Publishing Group.)",
+     "key_points": [
+      "IBD etiology is multifactorial: lumenal microbial antigens + genetic susceptibility + immune response + environmental triggers.",
+      "The four factors converge in the Venn diagram to produce IBD.",
+      "Unknown etiology — no single infectious agent or gene is sufficient alone."
+     ]
+    },
+    {
+     "heading": "Environmental Factors",
+     "body_text": "**Smoking (the classic paradox):**\n- **UC: common in non-smokers and in ex-smokers.**\n- **CD: common in smokers.**\n\n**Surgery:** **Appendicectomy protects against UC.**\n\n**Diet:** IBD is associated with a **low residue and high refined sugar diet**.\n\n**Bacteria:** implicated organisms include **Mycobacterium, Listeria and endogenous bacteria**.\n\n**Virus:** **Measles** has been implicated.",
+     "key_points": [
+      "Smoking has OPPOSITE associations: UC in non-smokers/ex-smokers; CD in smokers.",
+      "Appendicectomy is protective against UC.",
+      "Diet association: low residue, high refined sugar.",
+      "Implicated organisms: Mycobacterium, Listeria, endogenous bacteria; implicated virus: measles."
+     ],
+     "check": {
+      "prompt": "A patient with Crohn's disease asks about smoking. What is the relationship described in the lecture?",
+      "options": ["Crohn's disease is common in smokers", "Crohn's disease occurs only in non-smokers", "Smoking protects against Crohn's disease", "Smoking causes ulcerative colitis", "Smoking is unrelated to Crohn's disease"],
+      "correct_index": 0,
+      "explanation_ar": "داء كرون شائع عند المدخنين، بينما التهاب القولون التقرحي شائع عند غير المدخنين ومن أقلعوا عن التدخين — هذه مفارقة التدخين الشهيرة في IBD. أما استئصال الزائدة فهو وقائي ضد التهاب القولون التقرحي لا ضد كرون."
+     }
+    },
+    {
+     "heading": "Disease Course — Flare-up and Remission",
+     "body_text": "**Both UC and CD have waxing and waning in intensity and severity** (a relapsing-remitting course):\n- In most cases, **symptoms correspond with the degree of inflammation**.\n- When the patient is **actively symptomatic**, significant inflammation is present = **flare-up of IBD**.\n- When the patient is **asymptomatic**, inflammation is absent (or less) = disease **in remission**.\n\nThis symptom-inflammation correlation explains why disease activity is monitored clinically AND with inflammatory markers (CRP, ESR, platelets) and **fecal calprotectin**.",
+     "key_points": [
+      "IBD waxes and wanes: flare-up (symptomatic + significant inflammation) vs remission (asymptomatic, inflammation absent or less).",
+      "Symptoms usually correspond with the degree of inflammation.",
+      "Activity monitoring = symptoms + inflammatory markers + fecal calprotectin."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Flare-up", "definition_ar": "مرحلة اشتعال المرض: المريض عرضي بشكل فعال مع التهاب نسيجي واضح."},
+    {"term": "Remission", "definition_ar": "مرحلة هجوع: لا أعراض، والالتهاب غائب أو قليل."},
+    {"term": "Genetic susceptibility", "definition_ar": "قابلية وراثية تجعل الفرد أكثر عرضة للإصابة بالمرض."},
+    {"term": "Environmental triggers", "definition_ar": "محرضات بيئية مثل التدخين والحمية والانتانات تسهم في إحداث المرض."}
+   ],
+   "difficulty": "core",
+   "order_index": 1
+  },
+  {
+   "id": "L6_ibd_c3",
+   "lecture_id": "L6_ibd",
+   "title": "Ulcerative Colitis — Anatomic Extent and Clinical Features",
+   "summary_ar": "يصنف التهاب القولون التقرحي حسب الامتداد: التهاب المستقيم، التهاب المستقيم والسيني، التهاب القولون الأيسر البعيد، التهاب القولون الكامل، والتهاب اللفائفي الراجع. أعراضه: إسهال مدمى متقطع قد يكون خفيفاً، ونزف مستقيمي (دم طازج أو مخاط مدمى مع براز متشكل)، ومغص بطني، وتنازم وضرورة مع إحساس بالإفراغ الناقص. لاحظ أن التهاب المستقيم والسيني قد يسبب إمساكاً، بينما الداء الشديد يعطي برازاً سائلاً بالدم والقيح.",
+   "sections": [
+    {
+     "heading": "Anatomic Extent of UC (Where the Inflammation Sits)",
+     "body_text": "The lecture illustrates four diagrams of the large intestine showing the classic patterns of colonic involvement in UC:\n- **Proctitis** — involves **only the rectum** (diagram a: inflammation restricted solely to the rectum).\n- **Proctosigmoiditis** — involves the **rectum and sigmoid colon** (diagram b); the sigmoid is the **lower segment of the colon before the rectum**.\n- **Distal colitis** — involves **only the left side of the colon** (diagram c: inflammation extends from the rectum up through the entire left/descending colon).\n- **Pancolitis** — involves the **entire colon** (diagram d: diffuse uniform inflammation from the cecum to the rectum).\n- **Backwash ileitis** — involves the **distal ileum** (reflux of inflammation into the terminal ileum, classically with pancolitis).\n\nThe extent of disease is not just descriptive: it **drives the choice of topical 5-ASA formulation** (suppository, enema, oral) and **predicts malignancy risk** (pancolitis carries the highest cancer risk).",
+     "key_points": [
+      "Proctitis = rectum only; proctosigmoiditis = rectum + sigmoid; distal colitis = left colon; pancolitis = entire colon; backwash ileitis = distal ileum.",
+      "Extent of disease determines the topical 5-ASA formulation chosen.",
+      "Pancolonic involvement increases the malignancy risk."
+     ],
+     "check": {
+      "prompt": "In pancolitis with backwash ileitis, which segment beyond the colon is inflamed?",
+      "options": ["The distal ileum", "The stomach", "The jejunum", "The oesophagus", "The duodenum"],
+      "correct_index": 0,
+      "explanation_ar": "التهاب اللفائفي الراجع يعني إصابة المعي الدقيق الأخير (اللفائفي القاصي) نتيجة ارتداد الالتهاب من القولون الملتهب بكامله. باقي القطع (المعدة والصائم والمريء والاثني عشر) لا تصاب في هذا النمط."
+     }
+    },
+    {
+     "heading": "Symptoms of UC",
+     "body_text": "**Diarrhea:** bloody and intermittent; in mild disease patients may **not seek medical attention**.\n\n**Rectal bleeding:** the patient with **proctitis** passes **fresh blood or blood-stained mucus with formed or semi-formed stool**.\n\n**Crampy abdominal pain.**\n\nPatients also have **tenesmus, urgency and a feeling of incomplete evacuation**.\n\n**Constipation occurs with proctosigmoiditis** (an important counterintuitive point — distal disease can present with constipation rather than diarrhea).\n\n**Severe disease:** **liquid stools with blood, pus and fecal matter**.",
+     "key_points": [
+      "Bloody intermittent diarrhea; mild cases may never seek medical attention.",
+      "Proctitis: fresh blood or blood-stained mucus passed with formed or semi-formed stool.",
+      "Tenesmus + urgency + feeling of incomplete evacuation.",
+      "Proctosigmoiditis can present with CONSTIPATION.",
+      "Severe UC = liquid stools with blood, pus and fecal matter."
+     ]
+    },
+    {
+     "heading": "Physical Signs",
+     "body_text": "**Proctitis** — **tender anal canal** and **blood on rectal examination** (fresh blood on the glove after digital rectal exam).\n\n**Extensive disease** — **tenderness on palpation of the colon** along the course of the colon.\n\n**If perforation occurs** — **signs of peritonitis** (this is the physical-examination red flag indicating a surgical complication of severe colitis).",
+     "key_points": [
+      "Proctitis: tender anal canal + blood on PR exam.",
+      "Extensive disease: colonic tenderness on palpation.",
+      "Peritonitis signs = perforation until proven otherwise."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Tenesmus", "definition_ar": "إحساس مؤلم بالحاجة المستمرة للتبرز مع إفراغ غير كامل للمستقيم."},
+    {"term": "Urgency", "definition_ar": "ضرورة عاجلة لا يمكن كبحها لقضاء الحاجة."},
+    {"term": "Proctitis", "definition_ar": "التهاب محصور بالمستقيم فقط."},
+    {"term": "Proctosigmoiditis", "definition_ar": "التهاب المستقيم والقولون السيني معاً."},
+    {"term": "Pancolitis", "definition_ar": "التهاب يصيب كامل القولون من الأعور حتى المستقيم."},
+    {"term": "Backwash ileitis", "definition_ar": "التهاب المعي الدقيق الأخير نتيجة ارتداد الالتهاب من القولون بكامله."}
+   ],
+   "difficulty": "core",
+   "order_index": 2
+  },
+  {
+   "id": "L6_ibd_c4",
+   "lecture_id": "L6_ibd",
+   "title": "Crohn's Disease — Clinical Features",
+   "summary_ar": "كرون اللفائفي (الثلث الأخير من المعي الدقيق) يسبب ألم بطني وإسهالاً ونقص وزن وسخونة خفيفة، بينما الشكل الصائمي اللفائفي يضيف سوء امتصاص وإسهالاً دهنياً (ستياتوريه). أما كرون القولوني والمرض حول الشرج فيظهران بإسهال مدمى وإفراز مخاطي ووهن وتعب وفقدان شهية ونقص وزن.",
+   "sections": [
+    {
+     "heading": "Ileal and Jejunoileal Crohn's Disease",
+     "body_text": "**Ileal Crohn's disease** (disease of the distal third of the small intestine — the favourite site of CD) presents with the classic tetrad:\n- **Abdominal pain**\n- **Diarrhea**\n- **Weight loss**\n- **Low-grade fever**\n\n**Jejunoileitis** (disease of jejunum and ileum) adds malabsorptive features:\n- **Malabsorption**\n- **Steatorrhea** (bulky, greasy, foul-smelling stools that float, from fat malabsorption)",
+     "key_points": [
+      "Ileal CD tetrad: abdominal pain + diarrhea + weight loss + low-grade fever.",
+      "Jejunoileitis = malabsorption + steatorrhea.",
+      "CD most frequently attacks the distal third of the small intestine and the colon."
+     ]
+    },
+    {
+     "heading": "Crohn's Colitis and Perianal Disease",
+     "body_text": "When Crohn's involves the colon and the perianal region, the picture resembles colitis with prominent systemic features:\n- **Bloody diarrhea**\n- **Passage of mucus**\n- **Lethargy**\n- **Malaise**\n- **Anorexia**\n- **Weight loss**\n\nCrohn's **perianal disease** (fistulas and abscesses — detailed under complications) is a hallmark that strongly favors Crohn's over UC, since fistulas are far more common in CD (although they still occur in 20% of UC).",
+     "key_points": [
+      "Crohn's colitis/perianal disease: bloody diarrhea, mucus passage, lethargy, malaise, anorexia, weight loss.",
+      "Perianal fistulas/abscesses are a hallmark of Crohn's disease."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Steatorrhea", "definition_ar": "إسهال دهني: براز دهني كريه الرائحة يطفو على الماء نتيجة سوء امتصاص الدهون."},
+    {"term": "Jejunoileitis", "definition_ar": "شكل من كرون يصيب الصائم واللفائفي معاً ويسبب سوء الامتصاص."},
+    {"term": "Malabsorption", "definition_ar": "خلل في امتصاص المغذيات يؤدي إلى نقص وزن ونقص فيتامينات."},
+    {"term": "Perianal disease", "definition_ar": "إصابة منطقة الشرج بنواسير وخراجات وتشققات — سمة مميزة لداء كرون."}
+   ],
+   "difficulty": "core",
+   "order_index": 3
+  },
+  {
+   "id": "L6_ibd_c5",
+   "lecture_id": "L6_ibd",
+   "title": "Extraintestinal Manifestations of IBD",
+   "summary_ar": "المظاهر خارج المعوية لـ IBD تشمل: التهاب المفاصل المحيطي الذي يوازي نشاط المرض عادة، وداء الفقار اللاصق مع التهاب العجزية (1-6%)، وآفات عينية (التهاب القزحية/العنبية 0.5-3% والتهاب فوق الصلبة والقرنية)، وجلدية (حمى عقدية حمراء 1-3%، تقيح جلدي 0.6%) وتقرحات فموية. أما التهاب الأقنية الصفراوية المصلب فيصيب 5% من مرضى التهاب القولون التقرحي ويرتبط بنوبات التهاب الأقنية وخطر السرطانة الأقنية وسرطان القولون، وحمض أورسوديوكسيكوليك وقائي كيميائياً ضد سرطان القولون.",
+   "sections": [
+    {
+     "heading": "Joint, Eye, Skin and Oral Manifestations",
+     "body_text": "**Arthritis:**\n- **Peripheral arthritis** — **usually parallels the disease activity** (it flares with the gut and settles when the gut settles).\n- **Ankylosing spondylitis** — occurs in **1-6%** of IBD patients, associated with **sacroiliitis**.\n\n**Ocular lesions:**\n- **Iritis (uveitis)** — **0.5-3%**\n- **Episcleritis**\n- **Keratitis**\n\n**Skin and oral cavity:**\n- **Erythema nodosum** — **1-3%** (the lecture photograph shows multiple discrete raised reddish-brown nodules on the shins)\n- **Pyoderma gangrenosum** — **0.6%** (photograph: a large ulcerative lesion with a granular red base and surrounding erythema on the ankle/lower leg)\n- **Aphthous ulcers, stomatitis** (photograph: a small white raised ulcer on the inner mucosa of the lower lip)\n\nThe lecture's clinical photo montage also shows **conjunctival injection with chemosis** (red, swollen conjunctiva) and **scleral icterus** (yellow sclera) — the latter being a clue to the hepatobiliary manifestation, primary sclerosing cholangitis.",
+     "key_points": [
+      "Peripheral arthritis usually PARALLELS disease activity.",
+      "Ankylosing spondylitis 1-6% (with sacroiliitis); iritis/uveitis 0.5-3%; erythema nodosum 1-3%; pyoderma gangrenosum 0.6%.",
+      "Skin/oral: erythema nodosum (shins), pyoderma gangrenosum (ulcer), aphthous stomatitis.",
+      "Ocular: iritis (uveitis), episcleritis, keratitis.",
+      "Scleral icterus in an IBD patient suggests PSC."
+     ],
+     "check": {
+      "prompt": "Which extraintestinal manifestation of IBD usually parallels the activity of the bowel disease?",
+      "options": ["Peripheral arthritis", "Ankylosing spondylitis", "Primary sclerosing cholangitis", "Colorectal cancer", "Obstructive hydronephrosis"],
+      "correct_index": 0,
+      "explanation_ar": "التهاب المفاصل المحيطي يوازي عادة نشاط المرض المعوي ويهدأ عند ضبط الالتهاب المعوي، أما داء الفقار اللاصق والتهاب الأقنية الصفراوية المصلب فلا يتبعان نشاط الأمعاء عادة. سرطان القولون مضاعفة متأخرة والاستسقاء الكلوي الانسدادي مضاعفة موضعية لكتلة كرون، وليس أي منهما مظهراً يوازي النشاط."
+     }
+    },
+    {
+     "heading": "Primary Sclerosing Cholangitis and Its Malignant Potential",
+     "body_text": "**Primary sclerosing cholangitis (PSC) occurs in 5% of patients with UC** and **may occur in Crohn's disease as well**.\n\nThese patients may develop:\n- **Recurrent episodes of cholangitis**\n- **Malignant transformation to cholangiocarcinoma**\n- **A much higher than normal incidence of colorectal cancer**\n\n**Therapy with ursodeoxycholic acid has been shown to be chemoprotective against colon cancer.**\n\nClinically, scleral icterus with conjunctival injection (as shown in the lecture's clinical photographs) should raise the suspicion of PSC in an IBD patient — and PSC-associated liver disease is itself one of the prognostic factors increasing malignancy risk in UC.",
+     "key_points": [
+      "PSC occurs in 5% of UC patients and may occur in Crohn's disease too.",
+      "PSC risks: recurrent cholangitis, cholangiocarcinoma, and much higher colorectal cancer incidence.",
+      "Ursodeoxycholic acid is chemoprotective against colon cancer.",
+      "Associated liver disease increases the UC malignancy risk."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Erythema nodosum", "definition_ar": "عقد حمراء مؤلمة مرتفعة على الساقين (باحة الساق) تظهر في أمراض متنوعة منها IBD."},
+    {"term": "Pyoderma gangrenosum", "definition_ar": "قرحة جلدية كبيرة بقاعدة حبيبية حمراء ومحيط متوهج — من مظاهر IBD الجلدية."},
+    {"term": "Ankylosing spondylitis", "definition_ar": "التهاب فقاري مؤصلب مع التهاب العجزية يصيب 1-6% من مرضى IBD."},
+    {"term": "Primary sclerosing cholangitis (PSC)", "definition_ar": "التهاب وتليف الأقنية الصفراوية يصيب 5% من مرضى التهاب القولون التقرحي ويرتبط بخطر السرطانة الأقنية وارتفاع حد سرطان القولون."},
+    {"term": "Uveitis (iritis)", "definition_ar": "التهاب العنبية/القزحية (0.5-3% في IBD) يسبب ألم عيني وضياء وتشوش رؤية."},
+    {"term": "Episcleritis", "definition_ar": "التهاب الطبقة فوق الصلبة يسبب احمرار عيني خفيفاً."},
+    {"term": "Aphthous stomatitis", "definition_ar": "تقرحات فموية صغيرة مؤلمة متكررة على المخاطية الشفوية."}
+   ],
+   "difficulty": "advanced",
+   "order_index": 4
+  },
+  {
+   "id": "L6_ibd_c6",
+   "lecture_id": "L6_ibd",
+   "title": "Differential Diagnosis of IBD",
+   "summary_ar": "التشخيص التفريقي للـ IBD واسع ويشمل التهاب الزائدة والداء البطني والتهاب القولون بالمطثية العسيرة والجيارديا وعدم تحمل اللاكتوز وألم الحوض المزمن والرتجال والتهاب القولون الغشائي الكاذب والسالمونيلا ومتلازمة القولون المتهيج. ويعتمد الفصل بينها على الفحوص المخبرية والتنظير والتصوير الشعاعي والخزعة مع دراسة البراز لاستبعاد الأسباب الانتانية.",
+   "sections": [
+    {
+     "heading": "Differential Diagnosis",
+     "body_text": "Because chronic diarrhea, abdominal pain and rectal bleeding are non-specific complaints, the lecture lists a wide differential diagnosis that must be excluded before diagnosing IBD:\n- **Appendicitis**\n- **Celiac sprue**\n- **Clostridium difficile colitis**\n- **Giardiasis**\n- **Lactose intolerance**\n- **Chronic pelvic pain**\n- **Diverticulitis**\n- **Pseudomembranous colitis**\n- **Salmonellosis**\n- **IBS (Irritable Bowel Syndrome)**\n\nThe separation relies on the diagnostic armamentarium of IBD — **laboratory tests (CRP, ESR, fecal calprotectin), endoscopy, radiography and biopsy** — with stool studies excluding the infective mimics (Salmonella, C. difficile, Giardia) and celiac serology excluding sprue. Remember: **IBS never causes inflammation, anemia, weight loss or blood in the stool** — it is a functional disorder.",
+     "key_points": [
+      "DDx list (10 items): appendicitis, celiac sprue, C. difficile colitis, giardiasis, lactose intolerance, chronic pelvic pain, diverticulitis, pseudomembranous colitis, salmonellosis, IBS.",
+      "IBS is functional: no inflammation, no blood, no weight loss — inflammatory markers are normal.",
+      "Infective mimics are excluded with stool studies; sprue with celiac serology."
+     ],
+     "check": {
+      "prompt": "Which one of the following appears in the lecture's differential diagnosis list of IBD?",
+      "options": ["Diverticulitis", "Crohn's disease", "Ulcerative colitis", "Toxic megacolon", "Familial adenomatous polyposis"],
+      "correct_index": 0,
+      "explanation_ar": "التهاب الرتوج (diverticulitis) ضمن قائمة التشخيص التفريقي للـ IBD في المحاضرة، مع الزائدة والداء البطني والكلوستريديوم العسيرة والجيارديا وعدم تحمل اللاكتوز وألم الحوض المزمن والغشائي الكاذب والسالمونيلا والقولون المتهيج. أما التقرحي وكرون فهما المرض قيد الدراسة نفسه، والقولون السام مضاعفة لا تشخيص تفريقي، والبوليبوز الغدي العائلي ليس ضمن القائمة."
+     }
+    }
+   ],
+   "key_terms": [
+    {"term": "Celiac sprue", "definition_ar": "حساسية للغلوتين تسبب سوء امتصاص وإسهالاً دهنياً وفقر دم — ضمن التفريق مع IBD."},
+    {"term": "Pseudomembranous colitis", "definition_ar": "التهاب قولون بالمطثية العسيرة (C. difficile) بعد المضادات الحيوية مع غشاء كاذب على المخاطية."},
+    {"term": "Irritable bowel syndrome (IBS)", "definition_ar": "اضطراب وظيفي قولوني مع ألم وتبدل عادات التبرز دون التهاب أو نزف أو نقص وزن."}
+   ],
+   "difficulty": "core",
+   "order_index": 5
+  },
+  {
+   "id": "L6_ibd_c7",
+   "lecture_id": "L6_ibd",
+   "title": "Diagnosis of Ulcerative Colitis",
+   "summary_ar": "يقوم تشخيص التهاب القولون التقرحي على أربع ركائز: الفحوص المخبرية والتنظير والتصوير الشعاعي والخزعة. مخبرياً: ارتفاع CRP وESR وعدد الصفائح وانخفاض الخضاب، والكالبروتكتين البرازي يرتبط مع الالتهاب النسيجي ويتنبأ بالانتكاسات ويكشف التهاب الجيب. تنظيرياً: القولون مريض دائماً مع فقدان النمط الوعائي والحبيبية والهشاشية والتقرح. وشارعاً: حبيبية مخاطية دقيقة وتقرحات سطحية وتقرحات زر القبة ومنظر الأنبوب بفقدان الحليات وقولون ضيق قصير بمحيط شريطي.",
+   "sections": [
+    {
+     "heading": "Diagnostic Armamentarium and Laboratory Tests",
+     "body_text": "**Diagnosis of UC rests on four pillars: laboratory tests, endoscopy, radiography and biopsy.**\n\n**Hematological / laboratory tests in active UC:**\n- **C-reactive protein is increased**\n- **ESR is increased**\n- **Platelet count is increased**\n- **Hemoglobin is decreased**\n\n**Fecal calprotectin:** levels **correlate with histological inflammation, predict relapses and detect pouchitis** — a non-invasive stool marker that supports organic inflammation (and helps separate IBD from IBS).\n\n(The slide shows a microscope image of red blood cells next to the list of hematological tests.)",
+     "key_points": [
+      "Four diagnostic pillars for UC: laboratory tests, endoscopy, radiography, biopsy.",
+      "Active UC labs: CRP up, ESR up, platelets up, Hb down.",
+      "Fecal calprotectin: correlates with histological inflammation, predicts relapses, detects pouchitis."
+     ]
+    },
+    {
+     "heading": "Barium Enema in UC",
+     "body_text": "Technique: **barium liquid is instilled into the large intestine through the anus**; X-ray images then outline the colonic anatomy — ascending, transverse, descending and sigmoid colon (the slide shows the radiopaque colon filled with barium, with the endoscope/tube and anus labeled on the accompanying ADAM illustration).\n\n**Barium enema findings in UC:**\n- **Fine mucosal granularity**\n- **Superficial ulcers**\n- **Collar button ulcers** (small undermining ulcers that look like collar buttons in profile)\n- **Pipe stem appearance** — **loss of haustrations**\n- **Narrow and short colon** — **ribbon contour colon**\n\n(The lecture radiograph shows a contrast-filled colon with significant luminal narrowing, loss of haustral markings, and a shortened rigid bowel — the classic pipe stem / ribbon appearance of chronic UC.)",
+     "key_points": [
+      "Barium enema UC findings: fine mucosal granularity, superficial ulcers, collar button ulcers, pipe stem colon (loss of haustrations), narrow short ribbon-contour colon.",
+      "Barium is instilled through the anus to outline the colon."
+     ],
+     "check": {
+      "prompt": "The 'pipe stem appearance' on a barium enema in chronic UC results from which change?",
+      "options": ["Loss of haustrations", "Colonic dilatation", "Appendicolith", "String sign of the ileum", "Apple-core filling defect"],
+      "correct_index": 0,
+      "explanation_ar": "منظر الأنبوب/الأنبوب القمعي في التهاب القولون التقرحي المزمن ناتج عن فقدان الحليات مع تضيق القولون وقصره فيعطي محيطاً شريطياً. توسع القولون يوافق القولون السام، وعلامة الخيط لكرون، وقطعة التفاح لسرطان القولون، وحصاة الزائدة لا علاقة لها."
+     }
+    },
+    {
+     "heading": "Sigmoidoscopy and Endoscopic Findings",
+     "body_text": "Flexible sigmoidoscopy passes the instrument through the **anus and rectum into the sigmoid colon** (the diagram labels colon, rectum, anus and sigmoidoscope; the inset shows the procedure with a monitor displaying the endoscopic view).\n\n**In active UC the sigmoidoscopic appearance is ALWAYS abnormal:**\n- **Loss of vascular patterns**\n- **Granularity**\n- **Friability** (the mucosa bleeds with light touch)\n- **Ulceration**\n\n**Endoscopic comparison from the lecture:**\n- **Healthy colon** — smooth, pale pink mucosa with a **clearly visible vascular pattern** and **well-defined haustral folds**; patent open lumen.\n- **Ulcerative colitis colon** — intensely **erythematous, granular and friable** mucosa with **complete loss of the normal vascular pattern** and an irregular surface indicating **active inflammation and ulceration**.",
+     "key_points": [
+      "Sigmoidoscopy in active UC is ALWAYS abnormal.",
+      "Endoscopic signs: loss of vascular pattern, granularity, friability, ulceration.",
+      "Healthy colon: smooth pale pink mucosa, visible vessels, defined haustra."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Fecal calprotectin", "definition_ar": "بروتين برازي مشتق من العدلات يرتبط مع الالتهاب النسيجي ويتنبأ بالانتكاس ويكشف التهاب الجيب."},
+    {"term": "Collar button ulcer", "definition_ar": "تقرح سطحي متعمق يشبه زر القبة على صورة الباريوم في التهاب القولون التقرحي."},
+    {"term": "Pipe stem colon", "definition_ar": "منظر أنبوبي أملس للقولون بفقدان الحليات في التهاب القولون التقرحي المزمن."},
+    {"term": "Friability", "definition_ar": "هشاشية المخاطية: تنزف عند لمسها الخفيف أثناء التنظير."},
+    {"term": "Barium enema", "definition_ar": "حقن مادة الباريوم عبر الشرج لرسم القولون شعاعياً."}
+   ],
+   "difficulty": "core",
+   "order_index": 6
+  },
+  {
+   "id": "L6_ibd_c8",
+   "lecture_id": "L6_ibd",
+   "title": "Diagnosis of Crohn's Disease",
+   "summary_ar": "تشخيص داء كرون يعتمد على المخبريات والتنظير والتصوير الشعاعي والخزعة وإضافة تصوير CT enterography. مخبرياً: ارتفاع CRP وESR وفقر دم وكثرة كريات بيض ونقص ألبومين الدم. وعلامة الخيط على صورة الباريوم تدل على قطعة معوية شديدة التضيق تشبه الخيط الرفيع — سمة كرون، بينما يتيح تنظير القولون رؤية المخاطية مباشرة وأخذ الخزعات.",
+   "sections": [
+    {
+     "heading": "Diagnostic Armamentarium and Laboratory Tests",
+     "body_text": "**Diagnosis of CD uses five tools: laboratory tests, endoscopy, radiography, biopsy — and CT enterography** (the last is specifically added for Crohn's disease, reflecting its small-bowel involvement).\n\n**Laboratory tests in active CD:**\n- **CRP elevated**\n- **ESR elevated**\n- **Anemia**\n- **Leukocytosis**\n- **Hypoalbuminaemia**\n\nNote the pattern: the anemia and hypoalbuminemia reflect the malabsorption, protein-losing enteropathy and chronic inflammation of small-bowel Crohn's, while leukocytosis accompanies active inflammation, abscess or sepsis. Compare with UC, where the platelet count is explicitly listed as increased.",
+     "key_points": [
+      "Five diagnostic tools for CD: lab tests, endoscopy, radiography, biopsy, CT enterography.",
+      "Active CD labs: CRP up, ESR up, anemia, leukocytosis, hypoalbuminemia.",
+      "CT enterography is the added modality for Crohn's disease."
+     ]
+    },
+    {
+     "heading": "Barium Enema — the String Sign — and Colonoscopy",
+     "body_text": "**String sign:** on the barium study a segment of bowel (in the lecture radiograph, in the region of the cecum/ascending colon-ileal area) appears **severely narrowed and irregular**, its lumen resembling a **thin string** — an arrow points to the narrowed segment while the rest of the colon appears dilated and filled with contrast. The string sign reflects **severe narrowing (stricture) in Crohn's disease**.\n\n**Colonoscopy:** the colonoscope is passed through the **anus and rectum into the colon** under direct vision (labeled in the diagram: colon, rectum, colonoscope, anus; the inset shows the patient in lateral decubitus with the endoscopic image on the monitor). It allows inspection of the mucosa (the endoscopic view shows areas of erythema) and **targeted biopsy** — completing the diagnostic pillars.",
+     "key_points": [
+      "String sign = severely narrowed string-like bowel segment on barium = Crohn's stricture.",
+      "Colonoscopy allows direct vision of the mucosa plus biopsy.",
+      "CT enterography evaluates the small bowel in CD."
+     ],
+     "check": {
+      "prompt": "A barium study in a Crohn's patient shows a severely narrowed ileal segment resembling a thin string. What is this sign?",
+      "options": ["String sign", "Collar button ulcer", "Pipe stem colon", "Ribbon contour colon", "Apple-core lesion"],
+      "correct_index": 0,
+      "explanation_ar": "علامة الخيط تعني قطعة معوية شديدة التضيق تشبه خيطاً رفيعاً على دراسة الباريوم، وهي سمة كرون. أما زر القبة والأنبوب والمحيط الشريطي فعلامات التهاب القولون التقرحي، وعلامة قطعة التفاح تخص سرطان القولون."
+     }
+    }
+   ],
+   "key_terms": [
+    {"term": "String sign", "definition_ar": "علامة شعاعية: قطعة معوية شديدة التضيق تشبه الخيط الرفيع — سمة داء كرون."},
+    {"term": "CT enterography", "definition_ar": "تصوير مقطعي محوسب مع تباين فموي لتقييم إصابة الأمعاء الدقيقة في كرون."},
+    {"term": "Hypoalbuminaemia", "definition_ar": "نقص ألبومين الدم يعكس فقد البروتين وسوء الامتصاص والالتهاب المزمن."},
+    {"term": "Leukocytosis", "definition_ar": "ارتفاع عدد الكريات البيض يدل على التهاب فعال أو خراج أو انتان."}
+   ],
+   "difficulty": "core",
+   "order_index": 7
+  },
+  {
+   "id": "L6_ibd_c9",
+   "lecture_id": "L6_ibd",
+   "title": "Complications of IBD and Malignancy Risk",
+   "summary_ar": "مضاعفات IBD الأخطر: القولون السام (ألم بطني وانتفاخ وتوسع القولون يسمح بتسرب الجراثيم إلى الدم ويزيد خطر الانثقاب والتهاب الصفاق، والعلاج استئصال القولون عند عدم التحسن)، والتضيقات المسببة للانسداد، والنواسير والخراجات (أشيع في كرون لكنها تصيب 20% من التهاب القولون التقرحي)، والاستسقاء الكلوي الانسدادي بانضغاط الحالب الأيمن في كرون، والانتان وسوء التغذية. أما خطر الخباثة فيرتفع في كرون بمناطق الإصابة، وفي التهاب القولون التقرحي بعد 8-10 سنوات من التشخيص البدئي.",
+   "sections": [
+    {
+     "heading": "Toxic Megacolon",
+     "body_text": "**Toxic megacolon** is the feared acute complication (classically of severe UC):\n- **Abdominal pain and distention**\n- **Dilated colon** — the dilatation **allows bacteria to leak into the bloodstream** and **increases the risk of perforation and peritonitis**\n- **If there is no improvement (with medical therapy), it is usually treated with colectomy**\n\nThe mental picture: severe colitis + marked colonic dilatation + systemic toxicity = toxic megacolon → rescue medical therapy, and **colectomy when it fails to improve**.",
+     "key_points": [
+      "Toxic megacolon = abdominal pain + distention + dilated colon.",
+      "Dilated colon lets bacteria leak into the bloodstream and raises perforation/peritonitis risk.",
+      "No improvement with medical therapy → usually treated with colectomy."
+     ]
+    },
+    {
+     "heading": "Strictures, Fistulas, Abscesses and Urologic Complications",
+     "body_text": "- **Strictures** — which can lead to **obstruction**.\n- **Fistulas and abscesses** — **more common in CD, but also occur in 20% of UC**.\n- **Fistula types (know the full list):**\n  - **Enterovesical** (bowel to bladder)\n  - **Enteroenteric** (bowel to bowel)\n  - **Enteromesenteric** (bowel to mesentery)\n  - **Enterocutaneous** (bowel to skin)\n  - **Rectovaginal**\n  - **Perianal**\n- In CD, **obstructive hydronephrosis** — the inflammatory mass **compressing the right ureter**.\n- **Sepsis and malnutrition in Crohn's disease.**",
+     "key_points": [
+      "Strictures → obstruction.",
+      "Fistulas/abscesses: more common in CD but also 20% of UC.",
+      "Fistula types: enterovesical, enteroenteric, enteromesenteric, enterocutaneous, rectovaginal, perianal.",
+      "CD can cause obstructive hydronephrosis by compressing the right ureter.",
+      "Sepsis and malnutrition complicate Crohn's disease."
+     ],
+     "check": {
+      "prompt": "According to the lecture, fistulas and abscesses are more common in Crohn's disease — in what percentage of UC patients do they also occur?",
+      "options": ["20%", "0.6%", "5%", "100%", "They never occur in UC"],
+      "correct_index": 0,
+      "explanation_ar": "النواسير والخراجات أشيع في كرون لكنها تصيب أيضاً 20% من مرضى التهاب القولون التقرحي. 0.6% نسبة التقيح الجلدي، و5% نسبة التهاب الأقنية الصفراوية المصلب في التهاب القولون التقرحي."
+     }
+    },
+    {
+     "heading": "Risk of Malignancy in IBD",
+     "body_text": "- **In Crohn's disease:** **increased risk of cancer of the affected areas**.\n- **In ulcerative colitis:** **8-10 years after initial diagnosis, there is a steady, significant increased risk of developing cancer**.\n\n**Prognostic factors increasing malignancy risk in UC:**\n- **Duration of disease 10 years or more**\n- **Pancolonic involvement**\n- **Continuous progressive disease**\n- **Severe initial onset**\n- **Associated liver disease**\n\nThis rising risk is the reason long-standing UC requires surveillance for dysplasia/colorectal cancer after 8-10 years of disease, particularly in pancolitis and PSC-associated disease.",
+     "key_points": [
+      "CD: increased cancer risk in the affected areas.",
+      "UC: cancer risk rises steadily and significantly 8-10 years after initial diagnosis.",
+      "UC malignancy risk factors: duration >=10 years, pancolitis, continuous progressive disease, severe initial onset, associated liver disease."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Toxic megacolon", "definition_ar": "توسع هائل للقولون مع انتان نتيجة التهاب شديد؛ خطر الانثقاب والتهاب الصفاق، والعلاج استئصال القولون عند عدم التحسن."},
+    {"term": "Fistula", "definition_ar": "ناسور: قناة غير طبيعية تصل بين عضوين أو بين عضو والجلد."},
+    {"term": "Enterocutaneous fistula", "definition_ar": "ناسور بين الأمعاء والجلد."},
+    {"term": "Obstructive hydronephrosis", "definition_ar": "توسع الحالب والحوض الكلوي نتيجة انضغاط الحالب الأيمن بكتلة كرون الالتهابية."},
+    {"term": "Colectomy", "definition_ar": "استئصال القولون جراحياً — العلاج النهائي في القولون السام غير المستجيب والداء الصاعق."}
+   ],
+   "difficulty": "advanced",
+   "order_index": 8
+  },
+  {
+   "id": "L6_ibd_c10",
+   "lecture_id": "L6_ibd",
+   "title": "Treatment of IBD — General Measures and 5-ASA Therapy",
+   "summary_ar": "يقوم علاج IBD على أربع ركائز: تغيير الحمية وتغيير نمط الحياة (راحة، لا للتدخين، تقليل التوتر، تمارين) والأدوية والجراحة. أدوية 5-ASA هي الأساس: سلفاسالازين (5-ASA مع سلفابيريدين كناقل)، ميسالازين (Asacol وPentasa)، بالسالازيد (دواء أولي)، وأولسالازين (ثنائي ينشطر في القولون). ويُختار شكل الدواء حسب امتداد الداء: تحاميل تصل للمستقيم العلوي 15-20 سم، وحقن شرجية تصل حتى الثنية الطحالية، ومستحضرات فموية للداء الممتد.",
+   "sections": [
+    {
+     "heading": "The Four Pillars of Treatment and Lifestyle Changes",
+     "body_text": "The treatment slide (illustrated with diet items, a jogger, pills and a surgical team) lists **four arms of IBD treatment**:\n- **Diet change**\n- **Lifestyle changes**\n- **Drugs**\n- **Surgery**\n\n**Lifestyle changes:**\n- **Taking rest**\n- **No smoking**\n- **Stress reduction**\n- **Doing exercise**\n\nTie this back to the smoking paradox: **smoking cessation is particularly critical in Crohn's disease** (CD is common in smokers), while UC behaves as the disease of non-smokers and ex-smokers.",
+     "key_points": [
+      "Four treatment arms: diet change, lifestyle changes, drugs, surgery.",
+      "Lifestyle: rest, no smoking, stress reduction, exercise.",
+      "Smoking cessation is essential especially in Crohn's disease."
+     ]
+    },
+    {
+     "heading": "Drug Classes Overview",
+     "body_text": "The drugs slide (an open prescription bottle with pills) lists **five drug classes used in IBD**:\n- **5-ASA agents**\n- **Glucocorticoids**\n- **Antibiotics**\n- **Immunosuppressants**\n- **Biological therapy**\n\nThe lecture then dedicates slides to 5-ASA agents, antibiotics, immunosuppressants and biological therapy (this handout lists glucocorticoids among the five classes without a separate dosing slide).",
+     "key_points": [
+      "Five drug classes: 5-ASA agents, glucocorticoids, antibiotics, immunosuppressants, biological therapy.",
+      "Detailed slides follow for 5-ASA, antibiotics, immunosuppressants and infliximab."
+     ]
+    },
+    {
+     "heading": "5-ASA Agents",
+     "body_text": "**5-aminosalicylic acid (5-ASA) preparations:**\n- **Sulfasalazine** — **5-aminosalicylic acid plus sulfapyridine as a carrier substance** (the lecture photo shows 500 mg Sulfasalazine tablets USP)\n- **Mesalazine (5-ASA itself)** — e.g. **Asacol, Pentasa** (photo: Asacol mesalamine delayed-release tablets)\n- **Balsalazide** — a **prodrug of 5-ASA**\n- **Olsalazine** — a **5-ASA dimer that cleaves in the colon**\n\nThe principle: deliver the anti-inflammatory 5-ASA molecule topically to the inflamed mucosa with minimal systemic absorption; the sulfapyridine carrier accounts for many sulfasalazine side effects (a standard exam point).",
+     "key_points": [
+      "Sulfasalazine = 5-ASA + sulfapyridine carrier (500 mg tablets).",
+      "Mesalazine = 5-ASA itself (Asacol, Pentasa).",
+      "Balsalazide = prodrug of 5-ASA; olsalazine = 5-ASA dimer cleaved in the colon."
+     ]
+    },
+    {
+     "heading": "Topical Action of 5-ASA — Extent of Disease Impacts Formulation Choice",
+     "body_text": "**Distribution of 5-ASA preparations (anatomic reach):**\n\n- **Oral** — varies by agent: may be released in the **distal/terminal ileum, or the colon** (suited to extensive disease)\n- **Liquid enemas** — may reach the **splenic flexure**; **do not frequently concentrate in the rectum**\n- **Suppositories** — reach the **upper rectum**, **15-20 cm beyond the anal verge** (suited to proctitis)\n\n**Practical matching (exam favourite):**\n- **Proctitis → suppository**\n- **Left-sided/distal colitis → liquid enema** (reaches up to the splenic flexure)\n- **Extensive/pancolitis → oral 5-ASA**\n\n(Slide references: Sandborn WJ et al. Aliment Pharmacol Ther 2003;17:29-42; Regueiro M et al. Inflamm Bowel Dis 2006;12:972-978; Van Bodegraven AA et al. Aliment Pharmacol Ther 1996;10:327-332; Chapman NJ et al. Mayo Clin Proc 1992;62:245-248; Williams CN et al. Dig Dis Sci 1987;32:71S-75S.)",
+     "key_points": [
+      "Oral 5-ASA: released in distal/terminal ileum or colon (varies by agent).",
+      "Liquid enemas: reach the splenic flexure, do NOT frequently concentrate in the rectum.",
+      "Suppositories: reach the upper rectum, 15-20 cm beyond the anal verge.",
+      "Match formulation to extent: proctitis = suppository, left-sided = enema, extensive = oral."
+     ],
+     "check": {
+      "prompt": "A patient with UC limited to the rectum (proctitis) is to receive topical 5-ASA. Which formulation reaches the upper rectum 15-20 cm beyond the anal verge?",
+      "options": ["Suppository", "Liquid enema", "Oral delayed-release tablets", "Intravenous infusion", "Sublingual spray"],
+      "correct_index": 0,
+      "explanation_ar": "التحاميل تصل حتى المستقيم العلوي (15-20 سم بعد حافة الشرج) وهي الأنسب لالتهاب المستقيم. الحقن الشرجية السائلة قد تصل حتى الثنية الطحالية لكنها لا تتركز في المستقيم غالباً، والمستحضرات الفموية تنطلق في المعي الدقيق الأخير أو القولون وهي للداء الممتد."
+     }
+    }
+   ],
+   "key_terms": [
+    {"term": "5-ASA (5-aminosalicylic acid)", "definition_ar": "الجزيء الفعال المضاد للالتهاب في أدوية التهاب القولون التقرحي."},
+    {"term": "Sulfasalazine", "definition_ar": "5-ASA مرتبط بسلفابيريدين كناقل؛ يصل القولون ثم ينفصل فيه."},
+    {"term": "Mesalazine", "definition_ar": "ميسالازين = 5-ASA ذاته (مستحضرات مثل Asacol وPentasa)."},
+    {"term": "Balsalazide", "definition_ar": "دواء أولي (prodrug) يتحرر منه 5-ASA في القولون."},
+    {"term": "Olsalazine", "definition_ar": "ثنائي 5-ASA ينشطر في القولون ليحرر الدواء الفعال."}
+   ],
+   "difficulty": "core",
+   "order_index": 9
+  },
+  {
+   "id": "L6_ibd_c11",
+   "lecture_id": "L6_ibd",
+   "title": "Antibiotics, Immunosuppressants, Biological Therapy and Supportive Medications",
+   "summary_ar": "المضادات الحيوية لا دور لها في التهاب القولون التقرحي الفعال أو الهادئ؛ الميترونيدازول فعال في كرون الالتهابي الفعال والناسوري وحول الشرج، مع سيبروفلوكساسين وريفاكسيمين. مثبطات المناعة: الثيوبورينات (أزاثيوبرين و6-مركابتوبورين) والميثوتريكسات والسيكلوسبورين. الإنفليكسيماب جسم مضاد أحادي النسيلة ضد TNF يرتبط بثلاثيات TNF بألفة عالية، ويستخدم في كرون الناسوري والفعال الشديد والمعند/غير المتحمل للستيرويد أو مثبطات المناعة، وأهم آثاره الجانبية تفاعلات الإدخال والانتان وتفعيل السل وزيادة خطره. الأدوية المساندة: لوبراميد وملينات (سينا، بيساكوديل) واسيتامينوفين وحديد وتغذية (مثل Modulen IBD).",
+   "sections": [
+    {
+     "heading": "Antibiotics",
+     "body_text": "- **No role in active or quiescent UC.**\n- **Metronidazole is effective in active inflammatory, fistulous and perianal CD.**\n- **Ciprofloxacin**\n- **Rifaximin**\n\nSo antibiotics are essentially a **Crohn's tool** (especially for perianal and fistulizing disease), not a UC tool — a favourite one-line exam discriminator.",
+     "key_points": [
+      "Antibiotics have NO role in active or quiescent UC.",
+      "Metronidazole: effective in active inflammatory, fistulous and perianal CD.",
+      "Other antibiotics listed: ciprofloxacin, rifaximin."
+     ]
+    },
+    {
+     "heading": "Immunosuppressants",
+     "body_text": "- **Thiopurines:**\n  - **Azathioprine**\n  - **6-mercaptopurine**\n- **Methotrexate**\n- **Cyclosporine**\n\nThese are used for steroid-dependent or refractory disease and to maintain remission; the lecture positions infliximab for patients **refractory to or intolerant of steroids or immunosuppression**.",
+     "key_points": [
+      "Thiopurines: azathioprine and 6-mercaptopurine.",
+      "Methotrexate and cyclosporine complete the immunosuppressant list.",
+      "Biologics are reserved for refractory/intolerant patients."
+     ]
+    },
+    {
+     "heading": "Biological Therapy — Infliximab",
+     "body_text": "**Infliximab**\n- **Anti-TNF monoclonal antibody**\n- **Binds TNF trimers with high affinity**\n\n**Uses:**\n- **Fistulizing CD**\n- **Severe active CD**\n- **Refractory/intolerant of steroids or immunosuppression**\n\n**Side effects:**\n- **Infusion reactions**\n- **Sepsis**\n- **Reactivation of TB**\n- **Increased risk of TB**\n\n(Screening for latent tuberculosis before starting anti-TNF therapy is the standard practice implied by these side effects.)",
+     "key_points": [
+      "Infliximab = anti-TNF monoclonal antibody binding TNF trimers with high affinity.",
+      "Uses: fistulizing CD, severe active CD, refractory/intolerant of steroids or immunosuppression.",
+      "Side effects: infusion reactions, sepsis, reactivation of TB, increased risk of TB."
+     ],
+     "check": {
+      "prompt": "Which mechanism describes infliximab?",
+      "options": ["Anti-TNF monoclonal antibody that binds TNF trimers with high affinity", "A 5-ASA prodrug cleaved in the colon", "A thiopurine antimetabolite", "A bile acid that is chemoprotective against colon cancer", "An antibiotic active against anaerobes"],
+      "correct_index": 0,
+      "explanation_ar": "الإنفليكسيماب جسم مضاد أحادي النسيلة ضد TNF يرتبط بثلاثيات TNF بألفة عالية ويستخدم في كرون الناسوري والفعال الشديد والمعند. البالسالازيد دواء أولي لـ 5-ASA، والأزاثيوبرين ثيوبورين، وحمض أورسوديوكسيكوليك وقائي كيميائياً في PSC، والميترونيدازول مضاد حيوي."
+     }
+    },
+    {
+     "heading": "Other Medications and Supportive Care",
+     "body_text": "Symptom-directed and supportive medications listed in the lecture:\n- **Anti-diarrheals — loperamide**\n- **Laxatives — senna, bisacodyl**\n- **Pain relievers — acetaminophen**\n- **Iron supplements** (for the anemia of IBD)\n- **Nutrition** — the slide shows a can of **Nestle Modulen IBD** complete nutrition\n\n(Use anti-diarrheals with caution in severe active colitis — reducing motility in a severely inflamed colon can precipitate toxic megacolon; the lecture lists them among the supportive options.)",
+     "key_points": [
+      "Anti-diarrheal: loperamide; laxatives: senna, bisacodyl.",
+      "Analgesia: acetaminophen; iron supplements for anemia.",
+      "Nutritional support (e.g., Modulen IBD) is part of therapy."
+     ]
+    }
+   ],
+   "key_terms": [
+    {"term": "Infliximab", "definition_ar": "جسم مضاد أحادي النسيلة ضد TNF لعلاج كرون الشديد والناسوري؛ خطر تفاعلات الإدخال والانتان وتفعيل السل."},
+    {"term": "Thiopurines", "definition_ar": "مثبطات مناعة تشمل الأزاثيوبرين و6-مركابتوبورين."},
+    {"term": "Azathioprine", "definition_ar": "مثبط مناعة ثيوبوريني يستخدم للحفاظ على الهجوع في IBD."},
+    {"term": "6-Mercaptopurine", "definition_ar": "ثيوبورين من مثبطات المناعة، شقيق الأزاثيوبرين."},
+    {"term": "Methotrexate", "definition_ar": "مثبط مناعة مضاد للحمض الفولي."},
+    {"term": "Cyclosporine", "definition_ar": "مثبط كالسينيورين يستخدم في الحالات الشديدة المعندة."},
+    {"term": "Metronidazole", "definition_ar": "مضاد حيوي فعال ضد اللاهوائيات، فعال في كرون الالتهابي والناسوري وحول الشرج."},
+    {"term": "Rifaximin", "definition_ar": "مضاد حيوي معوي قليل الامتصاص من أدوية كرون المساندة."},
+    {"term": "Ciprofloxacin", "definition_ar": "فلوروكينولون من المضادات الحيوية المساندة في كرون."}
+   ],
+   "difficulty": "advanced",
+   "order_index": 10
+  },
+  {
+   "id": "L6_ibd_c12",
+   "lecture_id": "L6_ibd",
+   "title": "Surgery in IBD — Indications in Ulcerative Colitis",
+   "summary_ar": "دواعي الجراحة (استئصال القولون) في التهاب القولون التقرحي: الداء الصاعق، والداء المزمن مع فقر دم وتبرزات متكررة وضرورة وتنازم، والاعتماد على الستيرويد، وخطر التحول الورمي، والمظاهر خارج المعوية، والنزف الشديد أو التضيق. وتذكر أن القولون السام غير المستجيب للعلاج الطبي يعالج عادة بالاستئصال الجراحي أيضاً.",
+   "sections": [
+    {
+     "heading": "Indications for Surgery in Ulcerative Colitis",
+     "body_text": "**Indications for surgery (colectomy) in ulcerative colitis:**\n- **Fulminating disease** (acute severe disease failing medical therapy — including toxic megacolon that shows no improvement, as stated on the complications slide)\n- **Chronic disease with anemia, frequent stools, urgency and tenesmus**\n- **Steroid-dependent disease**\n- **Risk of neoplastic change** (recall: cancer risk rises 8-10 years after diagnosis; pancolitis, continuous progressive disease, severe initial onset, associated liver disease)\n- **Extraintestinal manifestations**\n- **Severe hemorrhage or stenosis**\n\n(The slide shows a surgical team in the operating theatre; surgery is one of the four pillars of IBD treatment — diet change, lifestyle changes, drugs, surgery.)",
+     "key_points": [
+      "UC surgery indications: fulminating disease; chronic disease with anemia, frequent stools, urgency, tenesmus; steroid dependence; neoplastic change risk; extraintestinal manifestations; severe hemorrhage or stenosis.",
+      "Toxic megacolon not improving with medical therapy is usually treated with colectomy.",
+      "Surgery is one of the four pillars of IBD treatment."
+     ],
+     "check": {
+      "prompt": "Which of the following is an indication for colectomy in ulcerative colitis?",
+      "options": ["Steroid-dependent disease", "A single mild self-limiting flare of proctitis", "Quiescent disease in remission", "Incidental gallstones", "Lactose intolerance"],
+      "correct_index": 0,
+      "explanation_ar": "الاعتماد على الستيرويد من دواعي الجراحة في التهاب القولون التقرحي، مع الداء الصاعق والداء المزمن المعرقل (فقر دم وتبرزات متكررة وضرورة وتنازم) وخطر التحول الورمي والمظاهر خارج المعوية والنزف أو التضيق الشديد. النوبة الخفيفة الوحيدة أو الهجوع أو الحصيات الصفراوية أو عدم تحمل اللاكتوز ليست دواعي جراحية."
+     }
+    }
+   ],
+   "key_terms": [
+    {"term": "Fulminating disease", "definition_ar": "داء صاعق شديد سريع التقدم لا يستجيب للعلاج الدوائي."},
+    {"term": "Steroid-dependent disease", "definition_ar": "عدم القدرة على خفض الستيرويد دون انتكاس — داع للجراحة أو مثبطات المناعة."},
+    {"term": "Colectomy", "definition_ar": "استئصال القولون — العلاج الجراحي النهائي في التهاب القولون التقرحي."}
+   ],
+   "difficulty": "core",
+   "order_index": 11
+  }
+ ],
+ "flashcards": [
+  {
+   "id": "L6_ibd_f1",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c1",
+   "card_type": "basic",
+   "front_text": "What is inflammatory bowel disease (IBD), and which two diseases does the term commonly refer to?",
+   "back_text": "IBD = chronic inflammatory diseases of the GI tract of unknown etiology. It commonly refers to: (1) ulcerative colitis — affects only the large intestine; (2) Crohn's disease — can affect any part of the GI tract but most frequently attacks the distal third of the small intestine and the colon.",
+   "mnemonic_ar": "UC = Ulcerative Colon only؛ CD = Crohn's can affect anywhere Digestive.",
+   "explanation_ar": "احفظ التعريف: أمراض التهابية مزمنة مجهولة السبب؛ التقرحي للقولون الكبير فقط وكرون لأي مكان وأشيعه الثلث الأخير من المعي الدقيق والقولون.",
+   "tags": ["definition", "IBD"]
+  },
+  {
+   "id": "L6_ibd_f2",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c2",
+   "card_type": "basic",
+   "front_text": "How does smoking differ between UC and Crohn's, and which other environmental factors are linked to IBD?",
+   "back_text": "Smoking paradox: UC is common in non-smokers and ex-smokers; CD is common in smokers. Appendicectomy protects against UC. Diet: low residue and high refined sugar. Bacteria: Mycobacterium, Listeria, endogenous bacteria. Virus: measles.",
+   "explanation_ar": "مفارقة التدخين هي أهم نقطة امتحانية بيئية: التدخين خطر في كرون لكنه مرتبط عكسياً بالتقرحي، واستئصال الزائدة وقائي ضد التقرحي فقط.",
+   "tags": ["etiology", "smoking"]
+  },
+  {
+   "id": "L6_ibd_f3",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c3",
+   "card_type": "basic",
+   "front_text": "List the anatomic patterns of ulcerative colitis by extent of involvement.",
+   "back_text": "Proctitis (rectum only) | proctosigmoiditis (rectum + sigmoid colon) | distal colitis (left side of the colon only) | pancolitis (entire colon) | backwash ileitis (distal ileum involved by reflux of inflammation).",
+   "explanation_ar": "الامتداد يحدد العلاج الموضعي (تحميلة/حقنة/فموي) وخطر الخباثة — البانكوليت أعلاها خطراً.",
+   "tags": ["classification", "UC extent"]
+  },
+  {
+   "id": "L6_ibd_f4",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c3",
+   "card_type": "basic",
+   "front_text": "What is the stool pattern in proctosigmoiditis versus severe ulcerative colitis?",
+   "back_text": "Proctosigmoiditis can present with CONSTIPATION (with passage of fresh blood or blood-stained mucus with formed or semi-formed stool). Severe UC produces liquid stools with blood, pus and fecal matter. Mild UC: bloody intermittent diarrhea that patients may not report.",
+   "explanation_ar": "نقطة مضادة للبديهة: مرض مستقيمي قاصي قد يسبب إمساكاً لا إسهالاً — بينما الإسهال السائل بالدم والقيح علامة شدة.",
+   "tags": ["symptoms", "UC"]
+  },
+  {
+   "id": "L6_ibd_f5",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c4",
+   "card_type": "basic",
+   "front_text": "What are the clinical features of ileal Crohn's disease and of jejunoileitis?",
+   "back_text": "Ileal CD: abdominal pain, diarrhea, weight loss, low-grade fever. Jejunoileitis: malabsorption and steatorrhea (bulky greasy floating stools). Crohn's colitis/perianal disease adds bloody diarrhea, mucus passage, lethargy, malaise, anorexia, weight loss.",
+   "explanation_ar": "رابع التهاب اللفائفي: ألم + إسهال + نقص وزن + سخونة خفيفة؛ وإضافة الصائم تعني سوء امتصاص وستياتوريه.",
+   "tags": ["symptoms", "Crohn's"]
+  },
+  {
+   "id": "L6_ibd_f6",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c5",
+   "card_type": "basic",
+   "front_text": "Give the frequencies of the extraintestinal manifestations of IBD listed in the lecture.",
+   "back_text": "Ankylosing spondylitis 1-6% (with sacroiliitis); iritis/uveitis 0.5-3%; erythema nodosum 1-3%; pyoderma gangrenosum 0.6%; primary sclerosing cholangitis 5% of UC patients. Peripheral arthritis (no percentage given) usually parallels disease activity.",
+   "explanation_ar": "اربط الأرقام: الفقار اللاصق 1-6%، العنبية 0.5-3%، العقدية الحمراء 1-3%، التقيح الجلدي 0.6%، وPSC خمسة بالمئة من التقرحي.",
+   "mnemonic_ar": "AS أكثرها (1-6%) ثم العنبية والعقدية (حول 1-3%) ثم التقيح النادر (0.6%).",
+   "tags": ["EIM", "percentages"]
+  },
+  {
+   "id": "L6_ibd_f7",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c5",
+   "card_type": "basic",
+   "front_text": "What are the hepatobiliary risks of primary sclerosing cholangitis in UC?",
+   "back_text": "PSC occurs in 5% of UC patients (may also occur in Crohn's). Risks: recurrent episodes of cholangitis, malignant transformation to cholangiocarcinoma, and a much higher than normal incidence of colorectal cancer. Ursodeoxycholic acid is chemoprotective against colon cancer.",
+   "explanation_ar": "PSC = كولانجيت راجع + خطر سرطانة الأقنية + ارتفاع سرطان القولون؛ وحمض أورسوديوكسيكوليك وقائي كيميائياً — نقطة امتحانية.",
+   "tags": ["PSC", "malignancy"]
+  },
+  {
+   "id": "L6_ibd_f8",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c7",
+   "card_type": "basic",
+   "front_text": "Which laboratory abnormalities are seen in active ulcerative colitis?",
+   "back_text": "CRP increased; ESR increased; platelet count increased; hemoglobin decreased. Fecal calprotectin levels correlate with histological inflammation, predict relapses and detect pouchitis.",
+   "explanation_ar": "ارتفاع CRP وESR والصفائح مع انخفاض الخضاب = النمط المخبري للالتهاب التقرحي الفعال؛ والكالبروتكتين علامة برازية للالتهاب النسيجي.",
+   "tags": ["labs", "UC"]
+  },
+  {
+   "id": "L6_ibd_f9",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c7",
+   "card_type": "basic",
+   "front_text": "List the barium enema findings in ulcerative colitis.",
+   "back_text": "Fine mucosal granularity; superficial ulcers; collar button ulcers; pipe stem appearance (loss of haustrations); narrow and short colon — ribbon contour colon.",
+   "explanation_ar": "خمس علامات: حبيبية دقيقة، تقرحات سطحية، زر القبة، الأنبوب بفقدان الحليات، والمحيط الشريطي لقولون ضيق قصير.",
+   "mnemonic_ar": "تذكر: Granularity - Superficial ulcers - Collar button - Pipe stem - Ribbon (GSCPR).",
+   "tags": ["radiology", "UC"]
+  },
+  {
+   "id": "L6_ibd_f10",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c7",
+   "card_type": "basic",
+   "front_text": "What does sigmoidoscopy show in active ulcerative colitis?",
+   "back_text": "The mucosa is ALWAYS abnormal: loss of vascular patterns, granularity, friability and ulceration. Compare the healthy colon: smooth pale pink mucosa, clearly visible vascular pattern, well-defined haustral folds.",
+   "explanation_ar": "في التهاب القولون التقرحي الفعال التنظير مريض دائماً — فقدان النمط الوعائي والحبيبية والهشاشية والتقرح هي العلامات الأربع.",
+   "tags": ["endoscopy", "UC"]
+  },
+  {
+   "id": "L6_ibd_f11",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c8",
+   "card_type": "basic",
+   "front_text": "What is the string sign, and what are the laboratory findings in active Crohn's disease?",
+   "back_text": "String sign: on barium study a segment of bowel (classically terminal ileum) is severely narrowed and irregular, its lumen resembling a thin string — reflects Crohn's stricture. Active CD labs: CRP elevated, ESR elevated, anemia, leukocytosis, hypoalbuminaemia.",
+   "explanation_ar": "علامة الخيط = تضيق شديد بمنظر خيط رفيع في كرون؛ ومخبرياً كرون: ارتفاع CRP وESR مع فقر دم وكثرة بيض ونقص ألبومين.",
+   "tags": ["radiology", "Crohn's", "labs"]
+  },
+  {
+   "id": "L6_ibd_f12",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c9",
+   "card_type": "basic",
+   "front_text": "Describe toxic megacolon and its treatment.",
+   "back_text": "Abdominal pain and distention with a dilated colon. The dilated colon allows bacteria to leak into the bloodstream and increases the risk of perforation and peritonitis. If there is no improvement with medical therapy, it is usually treated with colectomy.",
+   "explanation_ar": "قولون سام = ألم + انتفاخ + توسع قولوني مع خطر تجرثم الدم والانثقاب والتهاب الصفاق؛ الاستئصال عند عدم التحسن.",
+   "tags": ["complication", "toxic megacolon"]
+  },
+  {
+   "id": "L6_ibd_f13",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c9",
+   "card_type": "basic",
+   "front_text": "List the types of fistula in IBD and state their relative frequency in CD versus UC.",
+   "back_text": "Types: enterovesical, enteroenteric, enteromesenteric, enterocutaneous, rectovaginal and perianal. Fistulas and abscesses are more common in Crohn's disease but also occur in 20% of UC patients.",
+   "explanation_ar": "ستة أنواع نواسير — تتذكرها: مثاني/bowel-to-bowel/مساريقي/جلدي/مهبلي مستقيمي/حول شرجي؛ أشيع في كرون لكن 20% في التقرحي.",
+   "mnemonic_ar": "ناسور IBD: VESICAL - ENTERIC - MESENTERIC - CUTANEOUS - RECTOVAGINAL - PERIANAL.",
+   "tags": ["complication", "fistula"]
+  },
+  {
+   "id": "L6_ibd_f14",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c9",
+   "card_type": "basic",
+   "front_text": "When does colorectal cancer risk rise in UC, and which prognostic factors increase it?",
+   "back_text": "8-10 years after the initial diagnosis there is a steady, significant increased risk of cancer. Prognostic factors: duration of disease 10 years or more; pancolonic involvement; continuous progressive disease; severe initial onset; associated liver disease.",
+   "explanation_ar": "بعد 8-10 سنوات من التشخيص يرتفع الخطر مطرداً؛ والعوامل الخمسة: المدة 10 سنوات أو أكثر، البانكوليت، الداء المتقدم المتصل، البداية الشديدة، وترافق داء كبدي.",
+   "tags": ["malignancy", "UC"]
+  },
+  {
+   "id": "L6_ibd_f15",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c10",
+   "card_type": "basic",
+   "front_text": "Name the 5-ASA agents and describe the chemistry of each.",
+   "back_text": "Sulfasalazine = 5-aminosalicylic acid plus sulfapyridine as a carrier substance (500 mg tablets). Mesalazine = 5-ASA itself (e.g. Asacol, Pentasa). Balsalazide = a prodrug of 5-ASA. Olsalazine = a 5-ASA dimer that cleaves in the colon.",
+   "explanation_ar": "سلفاسالازين يحمل 5-ASA على سلفابيريدين، ميسالازين هو 5-ASA ذاته، بالسالازيد دواء أولي، وأولسالازين ثنائي ينشطر في القولون.",
+   "tags": ["pharmacology", "5-ASA"]
+  },
+  {
+   "id": "L6_ibd_f16",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c10",
+   "card_type": "basic",
+   "front_text": "How far do the topical 5-ASA formulations reach in the colon?",
+   "back_text": "Liquid enemas may reach the splenic flexure but do not frequently concentrate in the rectum. Suppositories reach the upper rectum (15-20 cm beyond the anal verge). Oral formulations vary by agent and may be released in the distal/terminal ileum or the colon.",
+   "explanation_ar": "قاعدة مطابقة الشكل للامتداد: تحميلة للمستقيم، حقنة شرجية حتى الثنية الطحالية، وفموي للداء الممتد.",
+   "tags": ["pharmacology", "topical therapy"]
+  },
+  {
+   "id": "L6_ibd_f17",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c11",
+   "card_type": "basic",
+   "front_text": "What is the role of antibiotics in IBD?",
+   "back_text": "No role in active or quiescent UC. Metronidazole is effective in active inflammatory, fistulous and perianal Crohn's disease. Ciprofloxacin and rifaximin are the other antibiotics listed.",
+   "explanation_ar": "المضادات الحيوية أداة كرونية لا تقرحية: ميترونيدازول في كرون الفعال الالتهابي والناسوري وحول الشرج؛ ولا دور لها إطلاقاً في التهاب القولون التقرحي.",
+   "tags": ["pharmacology", "antibiotics"]
+  },
+  {
+   "id": "L6_ibd_f18",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c11",
+   "card_type": "basic",
+   "front_text": "What are the uses and side effects of infliximab?",
+   "back_text": "Anti-TNF monoclonal antibody that binds TNF trimers with high affinity. Uses: fistulizing CD, severe active CD, and patients refractory to or intolerant of steroids or immunosuppression. Side effects: infusion reactions, sepsis, reactivation of TB, increased risk of TB.",
+   "explanation_ar": "إنفليكسيماب ضد TNF لكرون الناسوري والشديد والمعند؛ حذاري تفعيل السل — نقطة امتحانية ذهبية.",
+   "tags": ["pharmacology", "biologics"]
+  },
+  {
+   "id": "L6_ibd_f19",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c11",
+   "card_type": "basic",
+   "front_text": "Which immunosuppressants are used in IBD?",
+   "back_text": "Thiopurines: azathioprine and 6-mercaptopurine. Methotrexate. Cyclosporine. These serve steroid-dependent/refractory disease and maintenance of remission; biologics are reserved for refractory or intolerant patients.",
+   "explanation_ar": "قائمة مثبطات المناعة: أزاثيوبرين و6-مركابتوبورين (ثيوبورينات) والميثوتريكسات والسيكلوسبورين.",
+   "tags": ["pharmacology", "immunosuppression"]
+  },
+  {
+   "id": "L6_ibd_f20",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c12",
+   "card_type": "basic",
+   "front_text": "List the indications for surgery in ulcerative colitis.",
+   "back_text": "Fulminating disease; chronic disease with anemia, frequent stools, urgency and tenesmus; steroid-dependent disease; risk of neoplastic change; extraintestinal manifestations; severe hemorrhage or stenosis. (Plus toxic megacolon with no improvement on medical therapy.)",
+   "explanation_ar": "ستة دواع: الصاعق، المزمن المعرقل، الاعتماد على الستيرويد، خطر التحول الورمي، المظاهر خارج المعوية، والنزف أو التضيق الشديد.",
+   "tags": ["surgery", "indications"]
+  }
+ ],
+ "mcqs": [
+  {
+   "id": "L6_ibd_q1",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c3",
+   "question_stem": "A 26-year-old female non-smoker presents with a 6-week history of intermittent bloody diarrhea with mucus, urgency, tenesmus and a feeling of incomplete evacuation. She passes fresh blood-stained mucus with semi-formed stool and has crampy lower abdominal pain; digital rectal examination reveals a tender anal canal with blood on the glove. Which is the most likely diagnosis?",
+   "options": ["Ulcerative colitis", "Crohn's disease", "Irritable bowel syndrome", "Celiac sprue", "Acute appendicitis"],
+   "correct_index": 0,
+   "explanation_ar": "شابة غير مدخنة تشكو من إسهال مدمى متقطع مع مخاط وضرورة قضاء الحاجة وتِنازم وإحساس بإفراغ ناقص، مع شرج مؤلم ودم على الفحص المستقيمي — هذا النموذج الكلاسيكي لالتهاب القولون التقرحي الذي يصيب القولون الكبير فقط. داء كرون خطأ لأنه يعطي عادة ألماً بالربع السفلي الأيمن وإسهالاً غير مدمى غالباً مع نقص وزن وسخونة خفيفة ومرض حول شرج، وهو أشيع عند المدخنين. متلازمة القولون المتهيج خطأ لأنها وظيفية ولا تسبب نزفاً دموياً ولا التهاباً. الداء البطني خطأ لأنه يسبب إسهالاً دهنياً وسوء امتصاص لا إسهالاً مدمى. التهاب الزائدة الحاد خطأ لأنه ألم حاد بدأ حول السرة ثم استقر بالربع السفلي الأيمن مع حمى وغثيان وليس إسهالاً مزمناً مدمى.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Note the bloody diarrhea with tenesmus and urgency.", "She is a NON-smoker — recall the smoking paradox.", "The tender anal canal with blood on PR fits proctitis."]
+  },
+  {
+   "id": "L6_ibd_q2",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c4",
+   "question_stem": "A 22-year-old male smoker presents with 4 months of crampy right lower quadrant abdominal pain, non-bloody diarrhea, 7 kg weight loss and low-grade evening fever. Examination reveals a perianal fistula with purulent discharge and aphthous oral ulcers. Which is the most likely diagnosis?",
+   "options": ["Crohn's disease", "Ulcerative colitis", "Irritable bowel syndrome", "Giardiasis", "Salmonellosis"],
+   "correct_index": 0,
+   "explanation_ar": "شاب مدخن مع ألم مزمن بالربع السفلي الأيمن وإسهال غير مدمى ونقص وزن وسخونة خفيفة ومرض حول شرج (ناسور) وتقرحات فموية — النموذج الكلاسيكي لداء كرون الذي يصيب أي جزء من السبيل الهضمي وأشيع مواضعه الثلث الأخير من المعي الدقيق والقولون، وهو شائع عند المدخنين. التهاب القولون التقرحي خطأ لأنه يصيب القولون فقط ويعطي إسهالاً مدمى مع تنازم وشرج مؤلم، وأشيع عند غير المدخنين. القولون المتهيج خطأ لغياب النزف ونقص الوزن والحمى وارتفاع مؤشرات الالتهاب. الجيارديا خطأ فهي إسهال دهني دون مرض حول شرج. السالمونيلا خطأ فهي التهاب معد معوي حاد ذاتي الشفاء لا مرض مزمن بأربع أشهر.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Perianal fistula plus weight loss in a young smoker.", "Think transmural disease of the terminal ileum."]
+  },
+  {
+   "id": "L6_ibd_q3",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c9",
+   "question_stem": "A 31-year-old man with extensive ulcerative colitis is admitted with severe bloody diarrhea. On day 3 he deteriorates: increasing abdominal pain, marked abdominal distention, fever 38.8 C, and an abdominal X-ray showing a dilated transverse colon; bacteria are leaking into his bloodstream. What is the most likely complication, and what is the usual treatment if there is no improvement with medical therapy?",
+   "options": ["Toxic megacolon — colectomy", "Colonic stricture — stricturoplasty", "Enterovesical fistula — fistulectomy", "Ischemic colitis — resection", "Pseudomembranous colitis — metronidazole"],
+   "correct_index": 0,
+   "explanation_ar": "هذه صورة القولون السام: ألم بطني وانتفاخ مع توسع القولون الذي يسمح بتسرب الجراثيم إلى الدورة الدموية ويزيد خطر الانثقاب والتهاب الصفاق؛ وعند عدم التحسن بالعلاج الطبي يكون العلاج المعتاد استئصال القولون. التضيق خطأ لأنه يسبب انسداداً مع قولون متضيق لا متوسعاً هائلاً. الناسور المعوي المثاني خطأ لأنه يظهر بتبول مؤلم وتكرار تبول وهواء في البول. التهاب القولون الإقفاري خطأ لأنه يصيب عادة كبار السن مع ألم بعد الطعام وغائط مدمى دون توسع قولوني هائل. الغشائي الكاذب خطأ لأنه يتبع المضادات الحيوية ويشخص بالسموم في البراز ولا يسبب هذا التوسع الكلاسيكي.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Severe colitis + dilated colon + systemic toxicity.", "What does the lecture say to do when there is no improvement?"]
+  },
+  {
+   "id": "L6_ibd_q4",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c9",
+   "question_stem": "A 39-year-old woman has had ulcerative colitis for 11 years with pancolonic involvement and primary sclerosing cholangitis. According to the lecture, which of the following is NOT a prognostic factor increasing the malignancy risk in UC?",
+   "options": ["Intermittent mild flares with long complete remissions", "Duration of disease 10 years or more", "Pancolonic involvement", "Severe initial onset", "Associated liver disease"],
+   "correct_index": 0,
+   "explanation_ar": "عوامل رفع خطر الخباثة في التهاب القولون التقرحي هي: مدة الداء 10 سنوات أو أكثر، إصابة القولون بكامله، الداء المتقدم المتصل، البداية الشديدة، وترافق داء كبدي (كPSC). النوبات الخفيفة المتقطعة مع هجوع كامل ليست من عوامل الخطر — بل الخطر يرتفع مع الداء المستمر المتقدم، لذا فهي خيار الاستثناء الصحيح. بقية الخيارات الأربعة كلها مذكورة حرفياً في المحاضرة كعوامل سوء إنذار.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": ["Recall the five prognostic factors from the malignancy slide.", "Continuous progressive disease is the risky pattern — not quiet disease."]
+  },
+  {
+   "id": "L6_ibd_q5",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c11",
+   "question_stem": "A 25-year-old man with severe fistulizing Crohn's disease, refractory to steroids and immunosuppression, is scheduled to start infliximab — an anti-TNF monoclonal antibody that binds TNF trimers with high affinity. Which screening/precaution is most critical before starting this drug?",
+   "options": ["Screening for tuberculosis", "Screening for malaria", "Screening for diphtheria", "Colectomy before every infusion", "Appendicectomy before every infusion"],
+   "correct_index": 0,
+   "explanation_ar": "من الآثار الجانبية للإنفليكسيماب: تفاعلات الإدخال والانتان وتفعيل السل الكامن وزيادة خطر السل — لذا فحص السل قبل البدء هو الاحتياط الحاسم. الملاريا والدفتيريا لا علاقة لهما بمضادات TNF. استئصال القولون خطأ فهو بديل جراحي في الحالات المعندة وليس شرطاً قبل الإدخال. استئصال الزائدة خطأ وهو إجراء وقائي ضد التهاب القولون التقرحي لا علاقة له بالإنفليكسيماب.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Which infection is famously reactivated by anti-TNF therapy?", "The lecture lists: infusion reactions, sepsis, reactivation of TB, increased risk of TB."]
+  },
+  {
+   "id": "L6_ibd_q6",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c11",
+   "question_stem": "A 30-year-old woman with active perianal fistulous Crohn's disease is prescribed the antibiotic that the lecture states is effective in active inflammatory, fistulous and perianal Crohn's disease. Which antibiotic is it?",
+   "options": ["Metronidazole", "Vancomycin", "Amoxicillin", "Gentamicin", "Nitrofurantoin"],
+   "correct_index": 0,
+   "explanation_ar": "الميترونيدازول هو المضاد الفعال في كرون الفعال الالتهابي والناسوري وحول الشرج حسب المحاضرة، مع ذكر سيبروفلوكساسين وريفاكسيمين كمضادات أخرى، ولا دور للمضادات الحيوية في التهاب القولون التقرحي الفعال أو الهادئ. فانكومايسين خطأ ويستخدم في التهاب القولون بالمطثية العسيرة. أموكسيسيلين وجنتاميسين ونتروفورانتوين خطأ فليس لها دور مثبت في كرون حول الشرج حسب المحاضرة.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Think of the anti-anaerobic agent used for perianal disease.", "It is also used against C. difficile and anaerobes elsewhere."]
+  },
+  {
+   "id": "L6_ibd_q7",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c5",
+   "question_stem": "A 44-year-old man with a 15-year history of ulcerative colitis develops fatigue, pruritus, scleral icterus and recurrent episodes of cholangitis; ERCP shows beading of the intra- and extrahepatic bile ducts. Which statement about his hepatobiliary condition is correct according to the lecture?",
+   "options": ["It occurs in about 5% of UC patients, carries a risk of cholangiocarcinoma and a much higher incidence of colorectal cancer, and ursodeoxycholic acid is chemoprotective against colon cancer", "It occurs in 50% of UC patients", "It is associated with a decreased risk of colorectal cancer", "It is treated definitively by appendicectomy", "It never occurs in Crohn's disease"],
+   "correct_index": 0,
+   "explanation_ar": "التهاب الأقنية الصفراوية المصلب يصيب 5% من مرضى التهاب القولون التقرحي وقد يصيب داء كرون أيضاً؛ هؤلاء المرضى قد يعانون نوبات راجعة من التهاب الأقنية مع خطر التحول الخبيث إلى السرطانة الأقنية وارتفاع ملحوظ في حدوث سرطان القولون، وقد أظهر حمض أورسوديوكسيكوليك حماية كيميائية من سرطان القولون. الخيار 50% مبالغة خطأ. انخفاض خطر سرطان القولون عكس الصحيح. استئصال الزائدة خطأ فهو وقائي ضد التهاب القولون التقرحي ولا يعالج الكبد. وحدوثه في كرون ممكن لذا خيار (لا يحدث أبداً في كرون) خطأ.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": ["Recall the exact percentage of PSC in UC.", "What did the lecture say about ursodeoxycholic acid?"]
+  },
+  {
+   "id": "L6_ibd_q8",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c10",
+   "question_stem": "A 28-year-old woman with ulcerative colitis limited to the rectum (proctitis) needs topical 5-ASA therapy. According to the lecture's distribution of 5-ASA preparations, which formulation best targets her disease?",
+   "options": ["5-ASA suppository — reaches the upper rectum 15-20 cm beyond the anal verge", "Liquid 5-ASA enema — concentrates selectively in the rectum", "Oral mesalazine — released exclusively in the stomach", "Intravenous mesalazine infusion", "Balsalazide subcutaneous injection"],
+   "correct_index": 0,
+   "explanation_ar": "التحاميل تصل حتى المستقيم العلوي (15-20 سم بعد حافة الشرج) وهي الأنسب لالتهاب المستقيم المعزول. وصف الحقنة الشرجية بأنها تتركز انتقائياً في المستقيم خطأ — الحقن السائلة قد تصل حتى الثنية الطحالية لكنها لا تتركز في المستقيم بشكل متكرر. ميسالازين الفموي لا ينطلق في المعدة بل في المعي الدقيق الأخير أو القولون حسب المستحضر. ميسالازين الوريدي وبالسالازيد تحت الجلد ليست أشكالاً علاجية موجودة في المحاضرة.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Match the formulation to the extent of disease.", "Where exactly does a suppository reach?"]
+  },
+  {
+   "id": "L6_ibd_q9",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c7",
+   "question_stem": "A 33-year-old woman with long-standing ulcerative colitis who underwent proctocolectomy with an ileal pouch presents with diarrhea, urgency and malaise consistent with pouchitis. Which stool test does the lecture say correlates with histological inflammation, predicts relapses and detects pouchitis?",
+   "options": ["Fecal calprotectin", "Fecal occult blood test", "Fecal fat quantification", "Serum CEA level", "Serum amylase"],
+   "correct_index": 0,
+   "explanation_ar": "مستويات الكالبروتكتين البرازي ترتبط مع الالتهاب النسيجي وتتنبأ بالانتكاسات وتكشف التهاب الجيب — وهي العلامة المطلوبة في هذا السؤال. الدم الخفي البرازي غير نوعي ولا يتنبأ بالانتكاس. الدهون البرازية تدل على سوء الامتصاص لا الالتهاب. CEA واسم ورمي لمتابعة الأورام لا لتقييم الالتهاب. والأميلاز يرتفع في أمراض البنكرياس.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": ["It is a neutrophil-derived stool protein.", "It is the non-invasive inflammatory marker highlighted in the lecture."]
+  },
+  {
+   "id": "L6_ibd_q10",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c8",
+   "question_stem": "A 27-year-old man with Crohn's disease undergoes a barium contrast study. The terminal ileum appears severely narrowed and irregular, its lumen resembling a thin string, while the rest of the bowel is dilated and filled with contrast. What is this radiological sign and what does it indicate?",
+   "options": ["String sign — severe narrowing (stricture) of Crohn's disease", "Collar button ulcer — superficial ulceration of UC", "Pipe stem colon — loss of haustrations in chronic UC", "Ribbon contour — narrow short colon of chronic UC", "Apple-core lesion — circumferential colonic carcinoma"],
+   "correct_index": 0,
+   "explanation_ar": "علامة الخيط تعني قطعة معوية شديدة التضيق وغير منتظمة تشبه خيطاً رفيعاً على دراسة الباريوم — وهي سمة داء كرون (تضيق الثلث الأخير من المعي الدقيق). تقرحات زر القبة ومنظر الأنبوب بفقدان الحليات والمحيط الشريطي كلها علامات التهاب القولون التقرحي المزمن على الباريوم وليست لكرون. وعلامة قطعة التفاح تصف سرطان القولون المحيطي.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": ["A narrowed segment that looks like a string...", "Which disease famously strictures the terminal ileum?"]
+  },
+  {
+   "id": "L6_ibd_q11",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c12",
+   "question_stem": "A 35-year-old woman with chronic ulcerative colitis has iron-deficiency anemia, 12 stools daily, urgency and tenesmus despite optimized medical therapy. Which of the following is an accepted indication for surgery (colectomy) in ulcerative colitis according to the lecture?",
+   "options": ["Chronic disease with anemia, frequent stools, urgency and tenesmus", "A single mild flare of distal proctitis responding to suppositories", "Quiescent disease in stable remission on no medication", "Isolated backwash ileitis without colitis", "Lactose intolerance"],
+   "correct_index": 0,
+   "explanation_ar": "دواعي الجراحة في التهاب القولون التقرحي تشمل: الداء الصاعق، والداء المزمن مع فقر دم وتبرزات متكررة وضرورة وتنازم (وهو وصف حالتنا)، والاعتماد على الستيرويد، وخطر التحول الورمي، والمظاهر خارج المعوية، والنزف الشديد أو التضيق. النوبة الخفيفة الوحيدة المستجيبة للتحاميل ليست داعياً جراحياً، والهجوع المستقر كذلك، والتهاب اللفائفي الراجع وحده ليس داعياً، وعدم تحمل اللاكتوز حالة حمية لا علاقة لها بالجراحة.",
+   "difficulty": "core",
+   "clinical_vignette": true,
+   "hints": ["Recall the six surgical indications listed in the lecture.", "Her chronic debilitating symptoms with anemia fit one of them directly."]
+  },
+  {
+   "id": "L6_ibd_q12",
+   "lecture_id": "L6_ibd",
+   "concept_id": "L6_ibd_c5",
+   "question_stem": "During a flare of ulcerative colitis, a 29-year-old woman develops painful swollen knees and ankles; the arthritis completely settles once her bowel disease is brought under control. Which extraintestinal manifestation of IBD behaves this way?",
+   "options": ["Peripheral arthritis — it usually parallels the disease activity", "Ankylosing spondylitis", "Primary sclerosing cholangitis", "Pyoderma gangrenosum", "Keratitis"],
+   "correct_index": 0,
+   "explanation_ar": "التهاب المفاصل المحيطي في IBD يوازي عادة نشاط المرض المعوي فيشتعل مع الاشتعال ويهدأ مع الضبط — وهو ما يحدث لدى المريضة. داء الفقار اللاصق (1-6% مع التهاب العجزية) لا يتبع نشاط الأمعاء عادة ويحتاج علاجاً مستقلاً. التهاب الأقنية الصفراوية المصلب والتقيح الجلدي والتهاب القرنية مظاهر أخرى لكنها لا توازي النشاط المعوي بهذا الشكل الوصفي في المحاضرة.",
+   "difficulty": "advanced",
+   "clinical_vignette": true,
+   "hints": ["Which joint manifestation tracks the gut inflammation?", "The lecture states it 'usually parallels the disease activity'."]
+  }
+ ],
+ "clinical_cases": [
+  {
+   "id": "L6_ibd_case1",
+   "lecture_id": "L6_ibd",
+   "title": "Acute Severe Ulcerative Colitis Complicated by Toxic Megacolon",
+   "scenario": "A 24-year-old female university student is admitted to the emergency department with three weeks of worsening bloody diarrhea, urgency and tenesmus. She was diagnosed with ulcerative colitis (proctosigmoiditis) one year ago and stopped her maintenance 5-ASA two months ago. She now passes about 10 liquid stools per day with blood, pus and fecal matter, wakes at night to defecate, and has lost 4 kg. She is a non-smoker and has taken no antibiotics, no NSAIDs and no recent travel.",
+   "vignette": {
+    "age": 24,
+    "sex": "female",
+    "chief_complaint": "Bloody diarrhea with urgency and tenesmus for 3 weeks",
+    "history": "Known ulcerative colitis (proctosigmoiditis) diagnosed 1 year ago; stopped maintenance 5-ASA 2 months ago. Now ~10 liquid stools/day containing blood, pus and fecal matter, nocturnal diarrhea, crampy lower abdominal pain, 4 kg weight loss, fatigue. No antibiotics, no NSAIDs, no travel, no sick contacts.",
+    "vitals": {
+     "bp": "102/66 mmHg",
+     "hr": "108/min",
+     "rr": "18/min",
+     "temp": "37.9 C",
+     "spo2": "98% room air"
+    },
+    "exam": "Pale and mildly dehydrated. Mild abdominal distension with tenderness on palpation over the descending and sigmoid colon (tender colon). Digital rectal examination: tender anal canal, fresh blood on the glove. No rebound tenderness or guarding at presentation.",
+    "labs": [
+     {"name": "Hemoglobin", "value": "9.2 g/dL (12.0-15.5)", "flag": "low"},
+     {"name": "White blood cell count", "value": "14.8 x10^9/L (4.0-11.0)", "flag": "high"},
+     {"name": "Platelet count", "value": "486 x10^9/L (150-400)", "flag": "high"},
+     {"name": "C-reactive protein", "value": "88 mg/L (<5)", "flag": "critical"},
+     {"name": "ESR", "value": "54 mm/h (<20)", "flag": "high"},
+     {"name": "Serum albumin", "value": "28 g/L (35-50)", "flag": "low"},
+     {"name": "Serum potassium", "value": "3.1 mmol/L (3.5-5.0)", "flag": "low"},
+     {"name": "Stool culture and C. difficile toxin", "value": "Negative", "flag": "normal"}
+    ],
+    "imaging": "Abdominal X-ray: loss of haustral pattern in the descending and sigmoid colon; transverse colon diameter 5.5 cm (no megacolon yet); no free subdiaphragmatic air."
+   },
+   "steps": [
+    {
+     "id": "L6_ibd_case1_s1",
+     "prompt": "What is the most likely working diagnosis at this stage?",
+     "options": ["Acute severe flare of ulcerative colitis", "Irritable bowel syndrome", "Crohn's disease of the terminal ileum", "Acute appendicitis", "Ischemic colitis"],
+     "correct_index": 0,
+     "explanation_ar": "عشرة برازات سائلة مدماة مع ضرورة وتنازم وتبورد ليلي في مريضة معروفة بالتهاب القولون التقرحي بعد إيقاف العلاج الدوائي = هجمة حادة شديدة من التهاب القولون التقرحي. القولون المتهيج لا يسبب نزفاً ولا فقر دم ولا ارتفاع CRP. كرون يعطي عادة ألماً ربعياً أيمن سفلياً وإسهالاً غير مدمى مع مرض حول شرج. الزائدة الحادة ألم حاد حموي لا إسهال مزمن مدمى. والإقفاري يصيب عادة المسنين وذوي عوامل الوعائي.",
+     "xp": 10
+    },
+    {
+     "id": "L6_ibd_case1_s2",
+     "prompt": "Which investigation best confirms the diagnosis and assesses the mucosal inflammation?",
+     "options": ["Flexible sigmoidoscopy with biopsy", "Barium enema", "CT head", "Upper GI endoscopy", "Small bowel follow-through"],
+     "correct_index": 0,
+     "explanation_ar": "التنظير الشرجي المرن (السيغمويدي) مع الخزعة هو ركيزة التشخيص في التهاب القولون التقرحي؛ في المرض الفعال يكون التنظير مريضاً دائماً مع فقدان النمط الوعائي والحبيبية والهشاشية والتقرح. الباريوم فحص تصويري مساعد وليس الخطوة الأولى في الهجمة الشديدة، وبقية الخيارات لا تقيم القولون الملتهب.",
+     "xp": 10
+    },
+    {
+     "id": "L6_ibd_case1_s3",
+     "prompt": "Which non-invasive stool marker correlates with histological inflammation, predicts relapses and detects pouchitis?",
+     "options": ["Fecal calprotectin", "Serum CEA", "Fecal fat estimation", "Anti-tissue transglutaminase antibodies", "Serum amylase"],
+     "correct_index": 0,
+     "explanation_ar": "الكالبروتكتين البرازي يرتبط مع الالتهاب النسيجي ويتنبأ بالانتكاسات ويكشف التهاب الجيب. CEA واسم ورمي للمتابعة، والدهون البرازية تدل على سوء الامتصاص، وأضداد الترانسغلوتاميناز تشخص الداء البطني، والأميلاز علامة بنكرياسية.",
+     "xp": 8
+    },
+    {
+     "id": "L6_ibd_case1_s4",
+     "prompt": "On day 3 the patient deteriorates: temperature 38.8 C, HR 122/min, marked abdominal distention, and X-ray showing a dilated transverse colon of 7.5 cm with bacteria leaking into the bloodstream. If there is no improvement with medical therapy, what is the usual definitive treatment?",
+     "options": ["Colectomy", "5-ASA suppositories alone", "Appendicectomy", "Long-term high-dose loperamide", "Barium enema reduction"],
+     "correct_index": 0,
+     "explanation_ar": "المريضة طورت قولوناً ساماً: ألم وانتفاخ وتوسع القولون الذي يسمح بتسرب الجراثيم إلى الدم ويزيد خطر الانثقاب والتهاب الصفاق؛ وعند عدم التحسن بالعلاج الطبي يكون العلاج المعتاد استئصال القولون. التحاميل 5-ASA وحدها غير كافية في هذا الاضطراب الخطير. استئصال الزائدة إجراء وقائي ضد التهاب القولون التقرحي وليس علاجاً للقولون السام. اللوبراميد خطر لأنه يبطئ الحركة ويزيد التوسع. وحَقن الباريوم ليست علاجاً بل تشخيصية وقد تكون خطرة.",
+     "xp": 15
+    }
+   ],
+   "debriefing_ar": "التشخيص النهائي: هجمة حادة شديدة من التهاب القولون التقرحي اختُصت بقولون سام (توسع القولون فوق 6 سم مع علامات انتان وخطر انثقاب). الدروس المستفادة: (1) الإسهال المدمى مع التنازم والضرورة والإحساس بالإفراغ الناقص في شابة غير مدخنة نموذج التهاب القولون التقرحي، وثنائية (التنظير + الخزعة) هي التأكيد التشخيصي. (2) مؤشرات الشدة المخبرية: فقر دم، ارتفاع CRP وESR وعدد الصفائح، نقص الألبومين والبوتاسيوم. (3) الكالبروتكتين البرازي يعكس الالتهاب النسيجي ويتنبأ بالانتكاس ويكشف التهاب الجيب. (4) توسع القولون مع الانتان = قولون سام؛ عدم التحسن طبياً يعني استئصال القولون — وهو أيضاً خيار في الداء الصاعق والمزمن المعرقل وخطر التحول الورمي.",
+   "difficulty": "core",
+   "order_index": 0
+  },
+  {
+   "id": "L6_ibd_case2",
+   "lecture_id": "L6_ibd",
+   "title": "Fistulizing Perianal Crohn's Disease in a Young Smoker",
+   "scenario": "A 22-year-old male smoker (1 pack/day for 5 years) is referred to the gastroenterology clinic with 4 months of crampy right lower quadrant pain, loose non-bloody stools 5-6 times daily, anorexia and 7 kg weight loss, plus low-grade evening fever. Two months ago he had a perianal abscess drained; the wound still discharges pus. He also reports recurrent painful mouth ulcers. No antibiotics or travel history.",
+   "vignette": {
+    "age": 22,
+    "sex": "male",
+    "chief_complaint": "Crampy right lower quadrant pain, diarrhea, weight loss and perianal discharge for 4 months",
+    "history": "4 months of crampy RLQ pain, 5-6 loose non-bloody stools/day, anorexia, 7 kg weight loss, low-grade evening fever. Perianal abscess drained 2 months ago with persistent purulent discharge (perianal fistula). Recurrent aphthous oral ulcers. Smoker 1 pack/day x5 years. No recent antibiotics, no travel.",
+    "vitals": {
+     "bp": "110/70 mmHg",
+     "hr": "92/min",
+     "rr": "16/min",
+     "temp": "37.6 C",
+     "spo2": "99% room air"
+    },
+    "exam": "Mild pallor. Two aphthous ulcers on the inner lower lip mucosa. Tender palpation in the right lower quadrant without rebound or guarding. External perianal fistulous opening with purulent discharge on gentle pressure. No hepatomegaly, no scleral icterus.",
+    "labs": [
+     {"name": "Hemoglobin", "value": "10.4 g/dL (13.5-17.5)", "flag": "low"},
+     {"name": "White blood cell count", "value": "12.6 x10^9/L (4.0-11.0)", "flag": "high"},
+     {"name": "C-reactive protein", "value": "52 mg/L (<5)", "flag": "high"},
+     {"name": "ESR", "value": "42 mm/h (<15)", "flag": "high"},
+     {"name": "Serum albumin", "value": "30 g/L (35-50)", "flag": "low"},
+     {"name": "Fecal calprotectin", "value": "850 ug/g (<50)", "flag": "high"}
+    ],
+    "imaging": "CT enterography: segmental thickening and narrowing of the terminal ileum with prestenotic dilatation. Barium study: the narrowed ileal segment fills as a thin string (string sign). Colonoscopy: aphthous ulceration of the terminal ileum and right colon with sparing of the rectum; biopsies taken from the affected segments."
+   },
+   "steps": [
+    {
+     "id": "L6_ibd_case2_s1",
+     "prompt": "What is the most likely diagnosis?",
+     "options": ["Crohn's disease", "Ulcerative colitis", "Irritable bowel syndrome", "Salmonellosis", "Lactose intolerance"],
+     "correct_index": 0,
+     "explanation_ar": "شاب مدخن مع ألم مزمن بالربع الأيمن السفلي وإسهال غير مدمى ونقص وزن وحمى خفيفة وناسور حول شرج وتقرحات فموية — النموذج الكلاسيكي لداء كرون. التهاب القولون التقرحي خطأ لأنه يصيب القولون فقط ويعطي إسهالاً مدمى مع تنازم وأشيع عند غير المدخنين ولا يترافق عادة بمرض حول شرج ناسور. القولون المتهيج لا يسبب نقص وزن ولا ناسوراً ولا ارتفاع CRP. السالمونيلا التهاب معد معوي حاد ذاتي الشفاء. وعدم تحمل اللاكتوز انتفاخ وإسهال دون التهاب أو ارتفاع مؤشراته.",
+     "xp": 10
+    },
+    {
+     "id": "L6_ibd_case2_s2",
+     "prompt": "Which imaging modality from the lecture's diagnostic list is specifically used to evaluate Crohn's disease of the small bowel?",
+     "options": ["CT enterography", "CT head", "Barium swallow", "HIDA scan", "Intravenous urography"],
+     "correct_index": 0,
+     "explanation_ar": "تصوير CT enterography هو الوسيلة المضافة في محاضرة كرون (إلى جانب المخبريات والتنظير والتصوير الشعاعي والخزعة) لتقييم إصابة الأمعاء الدقيقة والتضيقات والنواسير، وقد أظهر عند مريضنا تثخناً وتضيقاً قطعياً في اللفائفي القاصي. باقي الخيارات لا تقيم المعي الدقيق في هذا السياق.",
+     "xp": 8
+    },
+    {
+     "id": "L6_ibd_case2_s3",
+     "prompt": "Which antibiotic does the lecture state is effective in active inflammatory, fistulous and perianal Crohn's disease?",
+     "options": ["Metronidazole", "Vancomycin", "Cephalexin", "Nitrofurantoin", "Erythromycin"],
+     "correct_index": 0,
+     "explanation_ar": "الميترونيدازول فعال في كرون الفعال الالتهابي والناسوري وحول الشرج — وهو الأنسب لناسور مريضنا مع الخراج السابق، مع سيبروفلوكساسين وريفاكسيمين كخيارات مساندة أخرى في المحاضرة. فانكومايسين يستهدف المطثية العسيرة، وسيفالكسين ونتروفورانتوين وإريثرومايسين ليست من أدوية كرون المذكورة.",
+     "xp": 10
+    },
+    {
+     "id": "L6_ibd_case2_s4",
+     "prompt": "The fistulizing disease is severe and refractory to steroids and immunosuppression, so an anti-TNF monoclonal antibody that binds TNF trimers with high affinity is planned. Which drug is it, and which side effect must be screened for?",
+     "options": ["Infliximab — reactivation of TB and increased risk of TB", "Metronidazole — disulfiram-like reaction", "Sulfasalazine — sulfapyridine toxicity", "Loperamide — constipation", "Ursodeoxycholic acid — diarrhea"],
+     "correct_index": 0,
+     "explanation_ar": "الإنفليكسيماب جسم مضاد أحادي النسيلة ضد TNF يرتبط بثلاثيات TNF بألفة عالية، ويستخدم في كرون الناسوري والفعال الشديد والمعند أو غير المتحمل للستيرويد أو مثبطات المناعة — ومن آثاره الجانبية تفاعلات الإدخال والانتان وتفعيل السل وزيادة خطر السل فيجب فحص السل قبل البدء. الميترونيدازول مضاد حيوي لا بيولوجي، والسلفاسالازين من 5-ASA، واللوبراميد مضاد إسهال، وحمض أورسوديوكسيكوليك يستخدم في PSC.",
+     "xp": 15
+    },
+    {
+     "id": "L6_ibd_case2_s5",
+     "prompt": "At the follow-up visit, which lifestyle advice is most specifically important for this Crohn's patient?",
+     "options": ["Stop smoking", "Start smoking to calm the gut", "Increase refined sugar intake", "Avoid all exercise and stay in bed permanently", "Take daily NSAIDs for pain control"],
+     "correct_index": 0,
+     "explanation_ar": "داء كرون شائع عند المدخنين لذا الإقلاع عن التدخين توصية نوعية أساسية، ضمن تغييرات نمط الحياة العامة في المحاضرة: الراحة والتمارين وتقليل التوتر. البدء بالتدخين عكس التوصية تماماً، وزيادة السكر المكرر مرتبطة بالداء، والراحة المطلقة الدائمة ليست مطلوبة، ومضادات الالتهاب غير الستيرويدية ليست علاجاً موجهاً لالتهاب الأمعاء.",
+     "xp": 8
+    }
+   ],
+   "debriefing_ar": "التشخيص النهائي: داء كرون ناسوري حول الشرج مع إصابة لفائفية طرفية مضيقة (علامة الخيط على الباريوم وتضيق في CT enterography) في شاب مدخن. الدروس المستفادة: (1) الألم الربع الأيمن السفلي المزمن مع إسهال غير مدمى ونقص وزن وسخونة خفيفة ومرض حول شرج = فكر بكرون فوراً، خصوصاً عند المدخنين — بينما التقرحي قولوني مدمى صرف. (2) النمط المخبري الكروني: ارتفاع CRP وESR مع فقر دم وكثرة بيض ونقص ألبومين، وكالبروتكتين مرتفع جداً. (3) CT enterography وعلامة الخيط يقيّمان المعي الدقيق. (4) الميترونيدازول فعال في كرون الالتهابي والناسوري وحول الشرج، والإنفليكسيماب (ضد TNF يرتبط بثلاثياته) للحالات الشديدة المعندة مع وجوب الحذر من تفعيل السل وتفاعلات الإدخال. (5) الإقلاع عن التدخين ركن علاجي أساسي في كرون.",
+   "difficulty": "core",
+   "order_index": 1
+  }
+ ]
+}

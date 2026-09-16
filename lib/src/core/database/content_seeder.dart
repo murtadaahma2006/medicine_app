@@ -70,11 +70,15 @@ abstract final class ContentSeeder {
       // ── 1) الوحدة ──
       count += await _insertIgnore(txn, 'units', <String, Object?>{
         'id': lecture['id'],
+        // v2.3: التخصص السريري — الباطنية افتراضاً (عقد متوافق رجعياً).
+        'specialty': lecture['specialty'] ?? DatabaseHelper.defaultSpecialty,
         'module': lecture['module'],
         'system': lecture['system'],
         'title': lecture['title'],
         'description_ar': lecture['summary_ar'],
         'order_index': lecture['order_index'],
+        // v2.2: لؤلؤة اليوم — نص أو مصفوفة نصوص تُدمج بفواصل أسطر.
+        'golden_tip': _goldenTipOf(lecture['golden_tip']),
       });
 
       // ── 2) الشروحات ──
@@ -192,4 +196,22 @@ abstract final class ContentSeeder {
 
   static Map<String, Object?> _asMap(Object? raw) =>
       raw is Map ? raw.map((k, v) => MapEntry(k.toString(), v)) : const {};
+
+  /// تطبيع golden_tip (عقد v2.2): نص واحد يمر كما هو، مصفوفة نصوص
+  /// تُدمج بفواصل أسطر (كل لؤلؤة مستقلة قابلة للسحب العشوائي
+  /// لاحقاً عبر سطر الأنابيب). null يبقى null.
+  static String? _goldenTipOf(Object? raw) {
+    if (raw is String) {
+      final String trimmed = raw.trim();
+      return trimmed.isEmpty ? null : trimmed;
+    }
+    if (raw is List) {
+      final List<String> tips = <String>[
+        for (final dynamic t in raw)
+          if (t is String && t.trim().isNotEmpty) t.trim(),
+      ];
+      return tips.isEmpty ? null : tips.join('\n');
+    }
+    return null;
+  }
 }

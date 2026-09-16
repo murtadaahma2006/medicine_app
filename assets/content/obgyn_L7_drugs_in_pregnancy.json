@@ -1,0 +1,1596 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L7_drugs_in_pregnancy",
+    "specialty": "obgyn",
+    "title": "Drugs Used in Pregnancy and Antenatal Care",
+    "module": "obstetrics",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L7 Drugs Used in Pregnancy.pdf",
+      "page_count": 34
+    },
+    "tags": [
+      "teratogen",
+      "drugs in pregnancy",
+      "folic acid",
+      "iron",
+      "antihypertensives",
+      "tocolytics",
+      "oxytocics",
+      "MgSO4",
+      "antenatal care",
+      "tetanus toxoid"
+    ],
+    "order_index": 6,
+    "golden_tip": [
+      "Exam trap: the antihypertensives to AVOID in pregnancy are ACE inhibitors, atenolol, propranolol and minoxidil; the four used are labetalol, nifedipine, methyldopa and hydralazine.",
+      "Before and while giving MgSO4, check patellar (knee) reflexes, urine output and respiratory rate — magnesium causes maternal and fetal respiratory depression.",
+      "Tetracycline in the 2nd trimester causes yellow teeth and enamel hypoplasia; streptomycin damages the 8th cranial nerve; mefenamic acid closes the ductus arteriosus early."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c1",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Principles of Prescribing in Pregnancy and Teratogenesis",
+      "summary_ar": "يضع هذا المفهوم أساس وصف الأدوية في الحمل: فكل الأدوية في الثلث الأول تحمل إمكانية إحداث تشوهات خلقية للجنين، وفي الثلثين الثاني والثالث تؤثر على نمو الجنين وتطوره الوظيفي، كما تُبدّل التغيرات الفسيولوجية للحمل حركية الدواء (الامتصاص والتوزع والاستقلاب). ثم يُعرَّف المُشوِّه (Teratogen) مع العوامل الستة المؤثرة في تأثيره، وتُرسم خريطة الأدوية المستعملة في الحمل وأدوية المخاض.",
+      "sections": [
+        {
+          "heading": "Placental Transfer: Why the Fetus Is Exposed to Every Drug",
+          "body_text": "The lecture opens with the title slide **Drugs Used in Pregnancy**, illustrated with two figures: a fetus in utero and a magnified view of the placental interface — the anatomical reason why prescribing in pregnancy is different.\n- **Left panel (fetus in utero):** a diagram showing a fetus in a longitudinal section of the uterus, with labels pointing to the **placenta** (the organ attached to the uterine wall) and the **umbilical cord** (the cord connecting the fetus to the placenta).\n- **Right panel (magnified cross-section of the placental interface, showing the exchange between maternal and fetal circulations — a pink box highlights this area, connected by an arrow from the main fetal diagram):** shows, from top to bottom, the placenta, the **fetus's blood vessels** running through the placental tissue, the **villi** (finger-like chorionic projections extending into the maternal blood space), the **placental membrane** (the barrier separating fetal and maternal blood), the umbilical cord (the twisted structure containing the vessels leading to and from the fetus), the **intervillous space** (the space surrounding the villi where maternal blood circulates) and the **mother's blood vessels** supplying that space.\n- **Visual relationships of the diagram:** the mother's blood vessels feed the intervillous space, which bathes the villi; nutrients and oxygen cross the placental membrane from the mother's blood into the fetus's blood vessels within the villi; these fetal vessels then converge into the umbilical cord to transport blood to and from the fetus.\nThe same route is open to drugs: any drug given to the mother can reach the fetus across the placental membrane, so the title illustration is itself a prescribing warning.",
+          "key_points": [
+            "Placental drug route: mother's blood vessels → intervillous space → villi → across the placental membrane → fetal blood vessels → umbilical cord → fetus.",
+            "The placental membrane separates fetal and maternal blood but is not an absolute barrier to drugs.",
+            "Nutrients and oxygen cross from mother to fetus; drugs follow the same transfer route."
+          ]
+        },
+        {
+          "heading": "Three Rules the Prescriber Must Remember",
+          "body_text": "When prescribing to pregnant women, the doctor should remember three numbered rules:\n- **1. First trimester:** ALL drugs used in the first trimester have the potential for affecting the fetus, i.e. producing **congenital abnormalities** — this is the period of organ formation, so no drug can be assumed innocent.\n- **2. Second and third trimester:** during this period drugs can affect the **growth and functional development** of the fetus (impaired growth and disturbed function of developing organs).\n- **3. Pharmacokinetics change:** the physiological changes of pregnancy may alter the pharmacokinetics of drugs — i.e. their **absorption, distribution, metabolism** and handling — so maternal efficacy and toxicity can differ from the non-pregnant state.\nPractical consequence: prescribe only when the benefit clearly outweighs the fetal risk, prefer drugs of established pregnancy safety, and remember that late pregnancy exposure is not risk-free.",
+          "key_points": [
+            "All drugs in the first trimester can produce congenital abnormalities.",
+            "In the second and third trimesters drugs affect fetal growth and functional development.",
+            "Pregnancy physiology alters absorption, distribution and metabolism of drugs."
+          ],
+          "check": {
+            "prompt": "A drug is being considered for a woman at 9 weeks' gestation. What is the dominant fetal risk of drug exposure at this stage?",
+            "options": [
+              "Production of congenital abnormalities",
+              "Only altered maternal pharmacokinetics",
+              "Excessive fetal growth",
+              "No fetal risk exists before the second trimester"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "كل الأدوية المستخدمة في الثلث الأول تحمل إمكانية التأثير على الجنين وإحداث تشوهات خلقية لأن الأعضاء تتكوّن في هذه الفترة. تغيّر حركية الدواء يخص الأم وليس الخطر الجنيني الأهم، ولا يوصف تأثير بزيادة نمو الجنين، والقول بعدم وجود خطر قبل الثلث الثاني خطأ شائع في الامتحانات."
+          }
+        },
+        {
+          "heading": "Teratogens and the Six Factors That Shape Their Effect",
+          "body_text": "**Teratogen:** any agent that causes physical or developmental abnormalities. The effect of a teratogen is not fixed; it is influenced by six factors listed in the lecture:\n- **1. Nature and dose** of the agent — what the drug is and how much reaches the fetus.\n- **2. Stage of embryonic development** — the same agent may be harmless, teratogenic or lethal depending on when exposure occurs.\n- **3. Fetal susceptibility** — individual fetal vulnerability differs from one fetus to another.\n- **4. Interaction with environmental factors** — other exposures can add to or modify the teratogenic effect.\n- **5. Maternal metabolism** — how the mother handles the agent determines what reaches the fetus.\n- **6. Genetic factors** — the genetic background of mother and fetus modulates the response.\nThe slide closes with a sobering statement: **few drugs are considered safe** in pregnancy — which is why every prescription in pregnancy must be justified and chosen from the safest available options.",
+          "key_points": [
+            "Teratogen = any agent causing physical or developmental abnormalities.",
+            "Six influencing factors: nature and dose, stage of embryonic development, fetal susceptibility, environmental interaction, maternal metabolism, genetic factors.",
+            "Few drugs are considered safe in pregnancy."
+          ]
+        },
+        {
+          "heading": "The Formulary Map: Drugs Used in Pregnancy vs Drugs Used in Labour",
+          "body_text": "The lecture then maps out two formularies as list slides. **Drugs used in pregnancy** (slide header 'List of drugs used in pregnancy are'; the graphic shows a blue banner with the title, an illustration of a white medicine bottle with a cap accompanied by small blue and white pills/capsules, and a pregnant woman in a red sleeveless dress shown in profile resting her hands on her abdomen):\n- **Folic acid**\n- **Iron**\n- **Calcium**\n- **Anti-hypertensive drugs**\n- **Diuretics**\n**Drugs used in labour** (the second list slide, illustrated with a clinical photograph of a pregnant woman in active labour appearing in pain/distress, attended by two medical professionals in a hospital setting — the context in which these categories are administered):\n- **Oxytocics** — to contract the uterus.\n- **Analgesics** — pain relief during labour.\n- **Anticonvulsants** — to prevent and treat eclampsia.\n- **Anticoagulants** — to manage thromboembolic risk.\nThe remainder of the lecture covers each group in turn (supplements, antihypertensives and diuretics, tocolytics, oxytocics, the antibiotics, oral hypoglycemics and NSAIDs to avoid, and magnesium sulphate), before switching to the second block: **antenatal care**.",
+          "key_points": [
+            "Drugs used in pregnancy: folic acid, iron, calcium, antihypertensive drugs, diuretics.",
+            "Drugs used in labour: oxytocics, analgesics, anticonvulsants, anticoagulants.",
+            "Tocolytics, oxytocics and MgSO4 plus the drugs to avoid complete the pharmacology block; antenatal care is the lecture's second block."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Teratogen",
+          "definition_ar": "عامل مُشوِّه: أي عامل يسبب شذوذات جسدية أو نمائية في الجنين."
+        },
+        {
+          "term": "Placental membrane",
+          "definition_ar": "الغشاء المشيمي: الحاجز الفاصل بين دم الجنين ودم الأم، وهو معبر المغذيات والأكسجين والدواء."
+        },
+        {
+          "term": "Intervillous space",
+          "definition_ar": "الفراغ الزُّغابي: الحيز المحيط بالزغابات المشيمية يدور فيه دم الأم قبل عبور المواد إلى أوعية الجنين."
+        },
+        {
+          "term": "Chorionic villi",
+          "definition_ar": "الزغابات المشيمية: بروزات إصبعية تحمل أوعية الجنين وتُغمر بدم الأم في الفراغ الزغابي."
+        },
+        {
+          "term": "Pharmacokinetics",
+          "definition_ar": "حركية الدواء: مصير الدواء في الجسم من امتصاص وتوزع واستقلاب وإطراح، وتتغير جميعها في الحمل."
+        },
+        {
+          "term": "Fetal susceptibility",
+          "definition_ar": "قابلية الجنين للتأثر: اختلاف حساسية الأجنّة للمُشوِّهات من جنين إلى آخر."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Nutritional Supplements: Folic Acid, Iron and Calcium",
+      "summary_ar": "يغطي هذا المفهوم المكمّلات الثلاثة في الحمل: حمض الفوليك (حقن 10ml وأقراص 0.4mg و0.8mg) لتحريض الإرقاء الطبيعي والوقاية من عيوب الأنبوب العصبي، والحديد (فومارات الحديدوز: 100mg تعطي 33mg حديداً عنصورياً) لبناء الخضاب ودعم الحمل، والكالسيوم (أقراص 211 mg أو 250 mg) للمحافظة على مستواه، مع دواعي الاستعمال ومضادات الاستطباب والتأثيرات الجانبية الكاملة لكل منها.",
+      "sections": [
+        {
+          "heading": "Folic Acid: Preparation, Action, Indications and Cautions",
+          "body_text": "**Folic acid** heads the list of drugs used in pregnancy.\n- **Preparation:** injection 10ml; tablets 0.4mg and 0.8mg.\n- **Action:** stimulates normal erythropoiesis (normal red-cell production).\n- **Indications:** (1) **megaloblastic or macrocytic anemia**; (2) **prevention of fetal neural tube defects** — the classic pregnancy indication.\n- **Contraindication:** **untreated vitamin B12 deficiency** (folate must not be started while B12 deficiency is uncorrected).\n- **Adverse effects:** abdominal pain, diarrhoea, nausea or bloating.\nThe diet slide later in the lecture quantifies the requirement: folic acid rises from **50µg in the non-pregnant state to 400µg in pregnancy**, underscoring why supplementation is routine in early pregnancy.",
+          "key_points": [
+            "Folic acid: injection 10ml; tablets 0.4mg and 0.8mg; stimulates normal erythropoiesis.",
+            "Indications: megaloblastic/macrocytic anemia and prevention of fetal neural tube defects.",
+            "Contraindication: untreated vitamin B12 deficiency.",
+            "Adverse effects: abdominal pain, diarrhoea, nausea or bloating.",
+            "Requirement: 50µg non-pregnant → 400µg pregnant."
+          ],
+          "check": {
+            "prompt": "Folic acid supplementation is prescribed at the booking visit. What is its main fetal indication?",
+            "options": [
+              "Prevention of fetal neural tube defects",
+              "Prevention of neonatal hypoglycemia",
+              "Increasing maternal weight gain",
+              "Prevention of preterm labour"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الداعي الجنيني لحمض الفوليك هو الوقاية من عيوب الأنبوب العصبي للجنين، وهو أيضاً يحرّض الإرقاء الطبيعي ويُعالج فقر الدم الكريّات الضخمة. أما هبوط سكر الوليد فيخص خافضات السكر الفموية، وزيادة الوزن ليست داعياً للاستطباب، والولادة المبكرة ترتبط بسوء التغذية العام لا بنقص الفولات تحديداً."
+          }
+        },
+        {
+          "heading": "Iron (Ferrous Fumarate): The 100:33 Elemental Rule",
+          "body_text": "**Iron (ferrous fumarate)** is the second supplement.\n- **Preparation:** tablets or injection — **100mg provides 33mg of elemental iron** (memorize the 100:33 relationship, because dosing and the antenatal requirement of 3.5 mg elemental iron are calculated on the elemental content).\n- **Action:** essential component in the formation of **hemoglobin (Hb)**.\n- **Indications:** (1) **iron deficiency**; (2) **supplement during pregnancy** — routine prophylaxis, later quantified as 3.5 mg elemental iron daily from mid-pregnancy until 3 months after delivery.\n- **Contraindications:** (1) **primary haemolytic anemia**; (2) **peptic ulcer**; (3) **repeated blood transfusion**.\n- **Side effects:** (1) **metallic taste**; (2) **nausea and vomiting**; (3) **black stool** — a harmless discoloration that should be explained to the patient so she does not mistake it for bleeding.",
+          "key_points": [
+            "Ferrous fumarate: 100mg (tablet or injection) = 33mg elemental iron.",
+            "Iron is an essential component of hemoglobin formation.",
+            "Indications: iron deficiency and routine supplementation during pregnancy.",
+            "Contraindications: primary haemolytic anemia, peptic ulcer, repeated blood transfusion.",
+            "Side effects: metallic taste, nausea and vomiting, black stool."
+          ]
+        },
+        {
+          "heading": "Calcium: Preparation, Action, Contraindications and Side Effects",
+          "body_text": "**Calcium** is the third drug on the pregnancy list (the slide is image-based; the text below is the full transcription of its preparation, action, contraindication and side-effect content, with a figure of calcium supplements).\n- **Preparation:** tablets **211 mg or 250 mg**.\n- **Action:** **maintains the calcium level** (maternal calcium homeostasis; the antenatal diet slide quantifies the requirement as 0.5g in the non-pregnant state rising to 1.5g in pregnancy).\n- **Contraindications:** (1) **bone cancer**; (2) **renal stone**; (3) **hypercalcemia**.\n- **Side effects:** (1) **headache**; (2) **nausea and vomiting**; (3) **irritability**.\nCalcium therefore joins iron and folic acid as the trio of routine supplements, each with its own short list of contraindications that examiners like to test.",
+          "key_points": [
+            "Calcium tablets: 211 mg or 250 mg; action: maintain calcium level.",
+            "Contraindications: bone cancer, renal stone, hypercalcemia.",
+            "Side effects: headache, nausea and vomiting, irritability.",
+            "Calcium requirement: 0.5g non-pregnant → 1.5g pregnant."
+          ],
+          "check": {
+            "prompt": "In which of these patients is calcium supplementation contraindicated?",
+            "options": [
+              "A woman with hypercalcemia",
+              "A woman with iron deficiency anemia",
+              "A woman with mild pregnancy-induced hypertension",
+              "A woman with a family history of neural tube defects"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يُمنع الكالسيوم في فرط كالسيوم الدم وسرطان العظم وحصى الكلى لأنها مضادات استطبابه المذكورة. أما فقر الدم بعوز الحديد وارتفاع ضغط الحمل الخفيف وتاريخ العائلة من عيوب الأنبوب العصبي فليست من مضادات استطباب مكمّلات الكالسيوم."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Folic acid",
+          "definition_ar": "حمض الفوليك: فيتامين يحرّض الإرقاء الطبيعي ويقي من عيوب الأنبوب العصبي؛ أقراصه 0.4mg و0.8mg وحقنه 10ml."
+        },
+        {
+          "term": "Ferrous fumarate",
+          "definition_ar": "فومارات الحديدوز: مستحضر الحديد الذي تعطي أقراصه أو حقنه 100mg ثلاثاً وثلاثين ملغ من الحديد العنصوري."
+        },
+        {
+          "term": "Elemental iron",
+          "definition_ar": "الحديد العنصوري: كمية الحديد الفعّالة داخل المستحضر (33mg من كل 100mg) وعليها تُحسب الجرعة والحاجة اليومية 3.5mg."
+        },
+        {
+          "term": "Megaloblastic anemia",
+          "definition_ar": "فقر الدم الكريّات الضخمة (الضخمة الأرومة): داعي استعمال حمض الفوليك إلى جانب الوقاية من عيوب الأنبوب العصبي."
+        },
+        {
+          "term": "Neural tube defect",
+          "definition_ar": "عيوب الأنبوب العصبي: شذوذات انغلاق الأنبوب العصبي في الجنين، ويقي منها حمض الفوليك في الحمل المبكر."
+        },
+        {
+          "term": "Black stool",
+          "definition_ar": "البراز الأسود: تأثير جانبي حميد لأقراص الحديد يجب تفسيره للمريضة كي لا يُظن نزفاً هضمياً."
+        },
+        {
+          "term": "Hypercalcemia",
+          "definition_ar": "فرط كالسيوم الدم: أحد مضادات استطباب مكمّلات الكالسيوم مع سرطان العظم وحصى الكلى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Antihypertensives and Diuretics in Pregnancy",
+      "summary_ar": "يستعرض هذا المفهوم أدوية ارتفاع الضغط في الحمل: الخيارات الأربعة المسموحة (لابتالول حاصر ألفا وبيتا، نيفيديبين حاصر قنوات الكالسيوم، ميثيل دوبا الفعال مركزياً، وهيدرالازين الموسّع الوعائي)، والأدوية الممنوعة (مثبطات الإنزيم المحول للأنجيوتنسين والأتينولول والبروبرانولول والمينوكسيديل)، مع محضّرات كل دواء وآلية عمله ومضادات استطبابه وتأثيراته الجانبية، ثم دواعي مدر الفوروسيميد الضيقة في الحمل.",
+      "sections": [
+        {
+          "heading": "The Safe Four vs the Avoid List",
+          "body_text": "The antihypertensive slide gives **four agents used in pregnancy**, each with its drug class:\n- **1. Alpha and beta blocker — labetalol** (the combined blocker).\n- **2. Calcium channel blocker — nifedipine**.\n- **3. Alpha blocker — methyl dopa (methyldopa)**.\n- **4. Vasodilator — hydralazine**.\n**Antihypertensives that should be AVOIDED in pregnancy:**\n- **ACE inhibitors** (angiotensin-converting enzyme inhibitors).\n- **Atenolol and propranolol** — beta blockers that are not safe in pregnancy, in contrast to labetalol.\n- **Minoxidil**.\n**Indications for antihypertensive therapy:** (1) **hypertension**; (2) **hypertensive emergency**.\nThis safe-versus-avoid split is one of the most examined facts of the whole lecture: quote all four safe names with their classes, and all the avoided names.",
+          "key_points": [
+            "Safe four: labetalol (alpha+beta blocker), nifedipine (calcium channel blocker), methyldopa (alpha blocker), hydralazine (vasodilator).",
+            "Avoid: ACE inhibitors, atenolol, propranolol, minoxidil.",
+            "Indications: hypertension and hypertensive emergency."
+          ],
+          "check": {
+            "prompt": "A pregnant patient with chronic hypertension is reviewed. Which of the following antihypertensives should be avoided in pregnancy?",
+            "options": [
+              "ACE inhibitors, atenolol, propranolol and minoxidil",
+              "Labetalol, nifedipine, methyldopa and hydralazine",
+              "Calcium channel blockers only",
+              "All beta blockers including labetalol"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مثبطات الإنزيم المحول للأنجيوتنسين والأتينولول والبروبرانولول والمينوكسيديل هي الأدوية الواجب تجنّبها في الحمل، بينما لابتالول ونيفيديبين وميثيل دوبا وهيدرالازين هي الخيارات الأربعة المستخدمة. لا تُتجنب حاصرات قنوات الكالسيوم، واللابتالول حاصر ألفا وبيتا آمن بخلاف الأتينولول والبروبرانول."
+          }
+        },
+        {
+          "heading": "Labetalol: The Combined Alpha-and-Beta Blocker",
+          "body_text": "**Labetalol** is the first of the safe four.\n- **Preparation:** injection **5mg/ml in a 20ml vial**; tablets **100mg and 200mg**.\n- **Action:** **reduces peripheral resistance** (the alpha component blocks vasoconstriction while the beta component controls heart rate).\n- **Indications:** hypertension and hypertensive emergency (the injectable form serves emergencies).\n- **Contraindications:** (1) **hypersensitivity**; (2) **bronchial asthma**; (3) **heart and hepatic failure**; (4) **severe bradycardia**.\n- **Side effects:** (1) **fatigue**; (2) **headache**; (3) **nausea**; (4) **vertigo**.\nClinical application: because bronchial asthma excludes labetalol, an asthmatic pregnant woman who needs an antihypertensive should receive methyldopa, nifedipine or hydralazine instead.",
+          "key_points": [
+            "Labetalol: injection 5mg/ml in 20ml vial; tablets 100mg and 200mg.",
+            "Action: reduces peripheral resistance.",
+            "Contraindications: hypersensitivity, bronchial asthma, heart and hepatic failure, severe bradycardia.",
+            "Side effects: fatigue, headache, nausea, vertigo."
+          ]
+        },
+        {
+          "heading": "Nifedipine and Methyldopa",
+          "body_text": "**Nifedipine — calcium channel blocker**\n- **Preparation:** capsules **10mg and 20mg**.\n- **Action:** **inhibits calcium influx in cardiac and smooth muscle and decreases contractility**, which lowers blood pressure through vasodilatation.\n**Methyldopa (methyl dopa) — alpha blocker acting centrally**\n- **Preparation:** tablets **250 mg**; injection **50mg/ml**.\n- **Action:** **inhibits the central vasomotor center and decreases sympathetic outflow**, lowering blood pressure through the central nervous system.\n- **Side effects:** (1) **sedation**; (2) **headache or depression**; (3) **hepatic disorder**; (4) **bradycardia**.\nThe contrast is examinable: nifedipine acts on calcium channels in the vessels, whereas methyldopa acts on the central vasomotor center — and its central action explains the sedation, depression and hepatic disorder profile.",
+          "key_points": [
+            "Nifedipine: capsules 10mg and 20mg; inhibits calcium influx in cardiac and smooth muscle, decreasing contractility.",
+            "Methyldopa: tablets 250 mg and injection 50mg/ml.",
+            "Methyldopa inhibits the central vasomotor center and decreases sympathetic outflow.",
+            "Methyldopa side effects: sedation, headache or depression, hepatic disorder, bradycardia."
+          ]
+        },
+        {
+          "heading": "Hydralazine and Diuretics (Furosemide)",
+          "body_text": "**Hydralazine — vasodilator**\n- **Preparation:** injection **20mg/ml**; tablets **10mg and 25mg**.\n- **Side effects:** (1) **neutropenia**; (2) **leukopenia**; (3) **thrombocytopenia** — the trio of cytopenias, a favorite exam list; and (4) **orthostatic hypotension**.\n**Diuretics (furosemide)** are NOT routine antihypertensives of pregnancy; their indications are narrow and specific:\n- **PIH (pregnancy-induced hypertension) with pulmonary edema** — the classic situation in which furosemide is used.\n- **Severe anemia prior to blood transfusion** — to prevent circulatory overload when transfusing a severely anemic mother.\nThe teaching point: reserve diuretics in pregnancy for these fluid-overload situations rather than ordinary hypertension control.",
+          "key_points": [
+            "Hydralazine: injection 20mg/ml; tablets 10mg and 25mg.",
+            "Hydralazine side effects: neutropenia, leukopenia, thrombocytopenia, orthostatic hypotension.",
+            "Furosemide indication 1: PIH with pulmonary edema.",
+            "Furosemide indication 2: severe anemia prior to blood transfusion."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Labetalol",
+          "definition_ar": "لابتالول: حاصر مستقبلات ألفا وبيتا يخفض المقاومة المحيطية؛ يُمنع في الربو القصبي وقصور القلب والكبد وبطء القلب الشديد."
+        },
+        {
+          "term": "Nifedipine",
+          "definition_ar": "نيفيديبين: حاصر قنوات الكالسيوم يمنع دخول الكالسيوم إلى العضلة القلبية والملساء فيُنقص التقلصية؛ كبسولات 10mg و20mg."
+        },
+        {
+          "term": "Methyldopa",
+          "definition_ar": "ميثيل دوبا: خافض ضغط مركزي يثبط المركز الوعائي الحركي ويقلل الاندفاع الودي؛ أقراص 250 mg وحقن 50mg/ml."
+        },
+        {
+          "term": "Hydralazine",
+          "definition_ar": "هيدرالازين: موسّع وعائي يسبب نقط الدم الثلاثة (العدلات والكريات البيض والصفيحات) وهبوط الضغط الانتصابي."
+        },
+        {
+          "term": "ACE inhibitors",
+          "definition_ar": "مثبطات الإنزيم المحول للأنجيوتنسين: من أدوية ضغط الدم الممنوعة في الحمل."
+        },
+        {
+          "term": "Minoxidil",
+          "definition_ar": "مينوكسيديل: موسّع وعائي ممنوع في الحمل."
+        },
+        {
+          "term": "Hypertensive emergency",
+          "definition_ar": "طارئ ارتفاع الضغط: أحد دواعي استعمال الخوافض المسموحة في الحمل حقناً."
+        },
+        {
+          "term": "Furosemide",
+          "definition_ar": "الفوروسيميد: مدر البول الذي يُستطب في الحمل فقط عند تسمم الحمل مع الوذمة الرئوية وعند فقر الدم الشديد قبل نقل الدم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Tocolytics and Oxytocics: Drugs Acting on the Uterus",
+      "summary_ar": "يتناول هذا المفهوم مثبطات تقلص الرحم (التوكوليتيات) كالسالبوتامول والريتودرين المستعملة في تقلصات الرحم قبل الأوان والولادة المبكرة مع تأثيراتها الجانبية (هبوط الضغط وفرط سكر الدم وهبوط البوتاسيوم واللانظمية)، ثم المقوّيات الرحمية (الأوكسيتوسيات): الأوكسيتوسين ومشتقات الإرغوت والبروستاغلاندينات، ودواعيها ومضادات استطباب الأوكسيتوسين وتأثيراته الجانبية ومحضّرات الفئات الثلاث بدقة أرقامها.",
+      "sections": [
+        {
+          "heading": "Tocolytics: Inhibiting Uterine Contractions",
+          "body_text": "**Tocolytics are drugs that inhibit uterine contraction.**\n- **Indications:** (1) **PUC (premature/preterm uterine contractions)**; (2) **preterm labour**.\n- **Agents used: salbutamol and ritodrine** (beta-2 sympathomimetics — the drugs of this lecture's tocolytic section).\n- **Preparations:** tablets **5mg and 10mg**; injections **5mg/ml and 10mg/ml**.\n- **Side effects (the classic four):** (1) **hypotension**; (2) **hyperglycemia**; (3) **hypokalemia**; (4) **arrhythmia**.\nBedside consequence: a woman receiving tocolytic therapy needs monitoring of blood pressure, blood glucose, serum potassium and cardiac rhythm, because all four disturbances are expected effects of these uterine relaxants rather than idiosyncratic reactions.",
+          "key_points": [
+            "Tocolytics = drugs that inhibit uterine contraction.",
+            "Indications: PUC (premature uterine contractions) and preterm labour.",
+            "Agents: salbutamol and ritodrine — tablets 5mg/10mg; injections 5mg/ml and 10mg/ml.",
+            "Side effects: hypotension, hyperglycemia, hypokalemia, arrhythmia."
+          ]
+        },
+        {
+          "heading": "Oxytocics: Drugs That Increase Uterine Contraction",
+          "body_text": "The labour-pharmacology block is introduced by the slide **Drugs used in labour** — the list gives **1. Oxytocics, 2. Analgesics, 3. Anticonvulsant, 4. Anticoagulant** — illustrated with a clinical photograph of a pregnant woman in active labour (in pain/distress) attended by two medical professionals in hospital: the setting where oxytocics contract the uterus, analgesics provide pain relief, anticonvulsants prevent/treat eclampsia and anticoagulants manage thromboembolic risk.\n**Oxytocics are drugs that increase uterine contraction.**\n- **Indications:** (1) **induce OR augment labour**; (2) **termination of hydatidiform mole (H.M) and pregnancy**; (3) **treatment of PPH (postpartum hemorrhage) and increasing milk ejection**.\n- **The three oxytocic groups:**\n  - **Oxytocin** — an **octapeptide synthesized in the hypothalamus**.\n  - **Ergot derivatives** — a **direct effect on the myometrium**.\n  - **Prostaglandins** — **synthesized from fatty acid**.\nKnowing which group a drug belongs to explains its use: hypothalamic octapeptide for labour induction/augmentation, direct myometrial ergot for PPH, fatty-acid-derived prostaglandins for cervical preparation and termination.",
+          "key_points": [
+            "Oxytocics increase uterine contraction; labour drugs = oxytocics, analgesics, anticonvulsants, anticoagulants.",
+            "Indications: induce/augment labour; termination of H.M and pregnancy; treatment of PPH and increasing milk ejection.",
+            "Oxytocin = octapeptide synthesized in the hypothalamus; ergot = direct myometrial effect; prostaglandins = synthesized from fatty acid."
+          ]
+        },
+        {
+          "heading": "Oxytocin: Contraindications and Side Effects",
+          "body_text": "**Contraindications to oxytocin (the list of four):**\n- **1. Grandmultipara** — the many-times-parous uterus responds excessively to oxytocics.\n- **2. Contracted pelvis** — laboring a baby through an inadequate pelvis must not be forced with uterine stimulants.\n- **3. History of LSCS (lower segment caesarean section)** — the scarred uterus risks rupture.\n- **4. Malpresentation**.\n**Side effects of oxytocin (the list of five):**\n- **1. Hypertonic uterine contraction**\n- **2. Fetal distress**\n- **3. Uterine rupture**\n- **4. Water intoxication**\n- **5. Hypotension**\nEach contraindication exists precisely to avoid the first three side effects (hypertonic contractions, fetal distress and rupture), while water intoxication relates to excessive infusion with the drug.",
+          "key_points": [
+            "Oxytocin contraindications: grandmultipara, contracted pelvis, history of LSCS, malpresentation.",
+            "Oxytocin side effects: hypertonic uterine contraction, fetal distress, uterine rupture, water intoxication, hypotension.",
+            "Grandmultipara + previous caesarean = the classic scenarios in which augmentation is refused."
+          ],
+          "check": {
+            "prompt": "A G6P5 woman at term with regular contractions is considered for oxytocin augmentation. Why is this contraindicated?",
+            "options": [
+              "Grandmultipara is a contraindication to oxytocin (risk of hypertonic contraction and uterine rupture)",
+              "Oxytocin is contraindicated after 38 weeks",
+              "Oxytocin is only given before labour starts",
+              "Multiparity doubles the oxytocin dose requirement"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "كثرة الولادات (النفاس المتعدد) من مضادات استطباب الأوكسيتوسين خوفاً من الانقباض الرحمي المفرط وتمزق الرحم، ومعها الحوض الضيق وتاريخ القيصرية السابقة وسوء تقديم الجنين. لا يوجد مانع مرتبط بالعمر الحملي بحد ذاته، والأوكسيتوسين يُستعمل فعلاً أثناء المخاض لتعزيزه عند اللواتي لا يمنعهن أي من مضادات الاستطباب."
+          }
+        },
+        {
+          "heading": "Preparations of the Three Oxytocic Groups",
+          "body_text": "The preparation slide details the dose formats of all three groups:\n- **Oxytocin** — an **octapeptide whose synthesis occurs in the hypothalamus**; **preparation: 5-10 units/ml (the slide writes it as 5unit-10unit/ml)**.\n- **Ergot (ergot derivatives)** — direct effect on the myometrium; **preparations: injection 0.25mg and 0.5 mg; tablets 0.5-1mg**.\n- **Prostaglandins** — synthesized from fatty acid; **preparations: gel 0.5mg; injection 125-250mcg; tablets 100-200mcg**.\nLearn drug + route + number as one unit (e.g. 'prostaglandin gel 0.5mg', 'ergot injection 0.5 mg', 'oxytocin 5-10 units/ml'), because the examination frequently asks for the exact preparation rather than only the drug class.",
+          "key_points": [
+            "Oxytocin preparation: 5-10 units/ml.",
+            "Ergot: injection 0.25mg and 0.5 mg; tablets 0.5-1mg.",
+            "Prostaglandin: gel 0.5mg; injection 125-250mcg; tablets 100-200mcg."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Tocolytics",
+          "definition_ar": "التوكوليتيات: أدوية تثبط تقلص الرحم مثل السالبوتامول والريتودرين، وتُستعمل في تقلصات الرحم قبل الأوان والولادة المبكرة."
+        },
+        {
+          "term": "PUC",
+          "definition_ar": "PUC: تقلصات الرحم قبل الأوان، وهي مع الولادة المبكرة داعي استعمال التوكوليتيات."
+        },
+        {
+          "term": "Oxytocics",
+          "definition_ar": "الأوكسيتوسيات: أدوية تزيد تقلص الرحم وتضم الأوكسيتوسين ومشتقات الإرغوت والبروستاغلاندينات."
+        },
+        {
+          "term": "Oxytocin",
+          "definition_ar": "الأوكسيتوسين: ببتيد ثماني (octapeptide) يُصنَّع في الوطاء، ومستحضره 5-10 وحدة/مل."
+        },
+        {
+          "term": "Ergot derivatives",
+          "definition_ar": "مشتقات الإرغوت: تؤثر مباشرة على عضل الرحم؛ حقن 0.25mg و0.5 mg وأقراص 0.5-1mg."
+        },
+        {
+          "term": "Prostaglandins",
+          "definition_ar": "البروستاغلاندينات: تُصنَّع من الحمض الدسم؛ جل 0.5mg وحقن 125-250mcg وأقراص 100-200mcg."
+        },
+        {
+          "term": "Grandmultipara",
+          "definition_ar": "كثرة الولادات (النفاس المتعدد): مضاد استطباب للأوكسيتوسين خوفاً من الانقباض المفرط وتمزق الرحم."
+        },
+        {
+          "term": "Water intoxication",
+          "definition_ar": "التسمم المائي: من تأثيرات الأوكسيتوسين الجانبية عند الإفراط في الإعطاء."
+        },
+        {
+          "term": "PPH",
+          "definition_ar": "نزف ما بعد الولادة: من دواعي استعمال الأوكسيتوسيات مع زيادة إدرار الحليب."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Drugs to Avoid and the Magnesium Sulphate Protocol",
+      "summary_ar": "يركّز هذا المفهوم على الأدوية الخطرة في الحمل: التتراسيكلين (اصفرار الأسنان ونقص تشكّل المينا والعظم في الثلث الثاني)، والستربتومايسين (أذية العصب القحفي الثامن وضعف السمع)، ثم مضادات الاختلاج (كبريتات المغنيسيوم أو الديازيبام 10mg/ml) مع بروتوكول جرعة التحميل العضلية والوريدية ومراقبة منعكسات الرضفة وكمية البول ومعدل التنفس، ثم خافضات السكر الفموية (هبوط سكر الجنين والوليد ومشوّهية حيوانية خاصة السلفونيل يوريا)، وميفيناميك أسيد (الإغلاق المبكر للقناة الشريانية ووفاة الجنين والإجهاض).",
+      "sections": [
+        {
+          "heading": "Antibiotics to Avoid in Pregnancy",
+          "body_text": "With antibiotics, the lecture states that **few have potential harm** — but those few are classic examination material:\n- **Tetracycline:** produces **no anomalies in the first trimester**, but in the **second trimester** it is associated with **yellow (discolored) teeth, hypoplasia of the enamel, and bone** involvement.\n- **Streptomycin:** causes **eighth cranial nerve damage with a hearing defect** (fetal ototoxicity).\nThe timing is the trap: tetracycline is not a first-trimester teratogen — its tooth and bone damage appears with second-trimester exposure, so 'safe first trimester' must not be read as 'safe throughout pregnancy'.",
+          "key_points": [
+            "Few antibiotics have potential harm in pregnancy — the two to memorize are tetracycline and streptomycin.",
+            "Tetracycline: no anomalies in the 1st trimester; in the 2nd trimester → yellow teeth, hypoplasia of enamel and bone.",
+            "Streptomycin: eighth cranial nerve damage with hearing defect."
+          ]
+        },
+        {
+          "heading": "Anticonvulsants: MgSO4 or Diazepam — Loading-Dose Protocol",
+          "body_text": "**Anticonvulsants used in pregnancy: MgSO4 (magnesium sulphate) or diazepam (10mg/ml).**\n**Drug concentration reference: MgSO4 50% solution — 1 ampoule = 2 ml = 1 gm.**\n**1. IM loading dose — for lower-level centres where the IV dose cannot be administered:**\n- **5 ampoules of MgSO4 (10ml)** loaded into a **10ml syringe**, administered **deep IM into the right buttock**;\n- **AND 5 ampoules of MgSO4 (10ml)** loaded into **another 10ml syringe**, administered **deep IM into the left buttock**;\n- **Critical transport instruction (the red banner with yellow text): the patient should be transported to the FRU (First Referral Unit) within 2 hours.**\n**2. IV loading dose — at the FRU:**\n- **4 ampoules of MgSO4 (8ml) plus 12 ml normal saline (NS)**, loaded into a **20ml syringe**;\n- administered **slow IV over 5-10 minutes** — an IV loading dose of **20 ml of a 20% solution, slow IV**.\nThe slide (presented by Judith Noronha) walks through each step with visuals of the amber glass ampoules, the 10ml and 20ml syringes and the IV administration on the patient's arm, with the details of preparation, administration and transport laid out in sequence.",
+          "key_points": [
+            "Anticonvulsants in pregnancy: MgSO4 or diazepam (10mg/ml).",
+            "MgSO4 50%: 1 ampoule = 2 ml = 1 gm.",
+            "IM loading (lower centre): 5 ampoules (10ml) deep IM right buttock AND 5 ampoules (10ml) deep IM left buttock; transport to FRU within 2 hours.",
+            "IV loading (FRU): 4 ampoules (8ml) + 12 ml NS in a 20ml syringe, slow IV over 5-10 minutes (20 ml of 20% solution)."
+          ]
+        },
+        {
+          "heading": "Monitoring MgSO4: Check Before and While Giving",
+          "body_text": "**We should check, before and while giving MgSO4:**\n- **1. Patellar (knee) reflexes** — the tendon reflexes that disappear first as magnesium accumulates.\n- **2. Urine output** — magnesium is excreted renally, so poor output predicts retention and toxicity.\n- **3. Respiratory rate** — the life-threatening endpoint of toxicity.\n**Side effects of MgSO4:**\n- **1. Maternal respiratory depression**\n- **2. Fetal respiratory depression**\nClinical rule to remember: absent patellar reflexes, falling urine output or a falling respiratory rate mean magnesium toxicity — the next dose is withheld until the patient is reassessed.",
+          "key_points": [
+            "Before/while giving MgSO4 check: patellar (knee) reflexes, urine output, respiratory rate.",
+            "MgSO4 side effects: maternal respiratory depression and fetal respiratory depression.",
+            "Absent knee reflexes or slowing respiration = stop and reassess for toxicity."
+          ],
+          "check": {
+            "prompt": "Before each dose of magnesium sulphate in a pre-eclamptic patient, what must be checked?",
+            "options": [
+              "Patellar (knee) reflexes, urine output and respiratory rate",
+              "Blood pressure and temperature only",
+              "Arm reflexes only",
+              "Fetal kick counts and fundal height"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قبل كل جرعة من كبريتات المغنيسيوم وأثناء الإعطاء يجب فحص منعكسات الرضفة (الركبة) وكمية البول ومعدل التنفس، لأن سمية المغنيسيوم تظهر على شكل اكتئاب تنفسي للأم والجنين. ضغط الدم والحرارة فحصان عامان لا يكفيان، ومنعكسات الذراعين وحدها ليست المرجع، ومتابعة حركات الجنين وارتفاع قاع الرحم ليست مراقبة لسمية الدواء."
+          }
+        },
+        {
+          "heading": "Oral Hypoglycemics and NSAIDs (Mefenamic Acid)",
+          "body_text": "**Oral hypoglycemics** are unsafe in pregnancy for two reasons:\n- **1. They induce fetal and neonatal hypoglycemia.**\n- **2. They are teratogenic in animals, especially the sulphonylurea group.**\nBoth reasons drive the avoidance of oral agents for diabetes in pregnancy.\n**NSAIDs — mefenamic acid:**\n- causes **early (premature) closure of the ductus arteriosus**;\n- **fetal demise**;\n- **abortion**.\nThe teaching message: a routine 'safe painkiller' of the non-pregnant patient becomes a fetal-circulation hazard in pregnancy — link mefenamic acid permanently with the ductus arteriosus, fetal demise and abortion.",
+          "key_points": [
+            "Oral hypoglycemics: induce fetal and neonatal hypoglycemia; teratogenic in animals, especially sulphonylureas.",
+            "Mefenamic acid: early closure of the ductus arteriosus, fetal demise, abortion.",
+            "Drug-safety in pregnancy must be re-checked for every agent, including OTC analgesics."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Tetracycline",
+          "definition_ar": "التتراسيكلين: مضاد حيوي لا يسبب شذوذات في الثلث الأول، لكنه يسبب في الثلث الثاني اصفرار الأسنان ونقص تشكّل المينا والعظم."
+        },
+        {
+          "term": "Streptomycin",
+          "definition_ar": "الستربتومايسين: مضاد حيوي يسبب أذية العصب القحفي الثامن مع عيب سمعي لدى الجنين."
+        },
+        {
+          "term": "MgSO4",
+          "definition_ar": "كبريتات المغنيسيوم: مضاد الاختلاج الأساسي في تسمم الحمل؛ محلول 50% بحيث كل أمبولة 2 ml = 1 غم."
+        },
+        {
+          "term": "Diazepam",
+          "definition_ar": "الديازيبام: البديل المضاد للاختلاج في الحمل بتركيز 10mg/ml."
+        },
+        {
+          "term": "Patellar reflexes",
+          "definition_ar": "منعكسات الرضفة (الركبة): تُفحص قبل كل جرعة مغنيسيوم لأن زوالها من أوائل علامات التراكم."
+        },
+        {
+          "term": "Sulphonylurea",
+          "definition_ar": "السلفونيل يوريا: مجموعة خافضات السكر الفموية الأكثر مشوّهية في الحيوانات."
+        },
+        {
+          "term": "Mefenamic acid",
+          "definition_ar": "ميفيناميك أسيد: مضاد التهاب غير ستيرويدي يسبب الإغلاق المبكر للقناة الشريانية ووفاة الجنين والإجهاض."
+        },
+        {
+          "term": "FRU",
+          "definition_ar": "وحدة الإحالة الأولى (First Referral Unit): المركز الذي تُنقل إليه المريضة خلال ساعتين بعد جرعة التحميل العضلية."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c6",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Antenatal Care: Definition, Aims, Visit Schedule and Booking Visit",
+      "summary_ar": "يقدّم هذا المفهوم الرعاية قبل الولادة (Antenatal Care): تعريفها بأنها التقييم السريري للأم والجنين أثناء الحمل للوصول إلى أفضل نتيجة ممكنة لكليهما، وأهدافها السبعة، وجدول الزيارات (أول زيارة مبكرة، ثم كل 4 أسابيع حتى الأسبوع 30، ثم كل أسبوعين حتى 36، ثم أسبوعياً)، ومحتوى زيارة التسجيل من قصة مرضية شاملة وعمر وتاريخ آخر دورة شهرية (قاعدة نيغل) وفحص عام كامل، مع حدود الإصغاء لنبض الجنين (ليس قبل 24 أسبوعاً) والفحص المهبلي والمسحة العنقية وتقييم شكل الحوض.",
+      "sections": [
+        {
+          "heading": "Definition and Aims of Antenatal Care",
+          "body_text": "The lecture's second block is introduced by a simple title slide reading **Antenatal care** (large bold blue text on a white main background with a decorative light beige sidebar of abstract circular/ring shapes) — the visual description carries no extra content, so the substance begins with the definition:\n**Antenatal care is the clinical assessment of the mother and the fetus during pregnancy for the purpose of obtaining the best possible outcome for both.**\n**Aims of antenatal care (the list of seven):**\n- **1. Maternal health checks.**\n- **2. Evaluation of fetal health and development.**\n- **3. Disease screening.**\n- **4. Analysis of the risk of developing complications.**\n- **5. Provide advice and education.**\n- **6. Prenatal diagnosis of fetal anomalies.**\n- **7. Opinion regarding timing and mode of delivery.**\nNotice that the definition itself embeds the paired focus on mother AND fetus, and the aims span health checks, screening, risk analysis, education, prenatal diagnosis and delivery planning.",
+          "key_points": [
+            "Antenatal care = clinical assessment of mother and fetus during pregnancy for the best possible outcome for both.",
+            "Seven aims: maternal health checks; fetal health/development evaluation; disease screening; risk analysis; advice and education; prenatal diagnosis of fetal anomalies; opinion on timing and mode of delivery."
+          ]
+        },
+        {
+          "heading": "The Schedule of Antenatal Visits",
+          "body_text": "The time a woman needs to be seen in the ANC clinic varies, but the standard schedule is:\n- **First visit: arranged as early as possible** in pregnancy (the booking visit).\n- **Every 4 weeks until 30 weeks.**\n- **Fortnightly (every 2 weeks) until 36 weeks.**\n- **Weekly thereafter** until delivery.\n**Not all ANC has to be done in hospital** — care shared between the **practitioner and midwife** works, is **less costly and reduces hospital admission.**\nWorked example: a woman seen at 32 weeks is in the fortnightly phase — she returns in 2 weeks, and her visits become weekly once she passes 36 weeks; a woman at 20 weeks is still on the 4-weekly phase until 30 weeks.",
+          "key_points": [
+            "First visit as early as possible; 4-weekly until 30 weeks; fortnightly until 36 weeks; weekly thereafter.",
+            "Not all ANC must be hospital-based — practitioner and midwife care is cheaper and reduces admissions."
+          ],
+          "check": {
+            "prompt": "A primigravida attends at 32 weeks with no complaints. According to the antenatal visit schedule, when should her next visits be arranged?",
+            "options": [
+              "Fortnightly until 36 weeks, then weekly",
+              "Weekly from now until delivery",
+              "Monthly until delivery",
+              "Every 3 weeks until 40 weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الجدول الصحيح: زيارة أولى مبكرة قدر الإمكان، ثم كل 4 أسابيع حتى الأسبوع 30، ثم كل أسبوعين حتى الأسبوع 36، ثم أسبوعياً حتى الولادة. فالمريضة في الأسبوع 32 تزور كل أسبوعين حتى 36 ثم أسبوعياً، وليس أسبوعياً من الآن ولا شهرياً حتى الولادة."
+          }
+        },
+        {
+          "heading": "The Booking Visit: History and General Examination",
+          "body_text": "The **booking visit** (the first, earliest-possible visit) contains nine numbered elements:\n- **1. History** — **general medical, family, past obstetrical, and present pregnancy** histories.\n- **2. Age.**\n- **3. LMP (last menstrual period)** — with **Naegele's rule** applied to derive the expected date of delivery.\n- **4. Examination of vital signs: BP and pulse.**\n- **5. Weight, height and abnormal gait.**\n- **6. Breast examination.**\n- **7. Heart and lung examination.**\n- **8. Teeth and gum examination.**\n- **9. Legs.**\nThis whole-body baseline (head-to-toe including teeth, gums and legs) is what distinguishes the booking visit from the shorter subsequent visits, which follow only the five safety items.",
+          "key_points": [
+            "Booking history: general medical, family, past obstetrical, present pregnancy.",
+            "LMP is recorded and Naegele's rule gives the expected date of delivery.",
+            "Booking examination: vital signs (BP, pulse), weight, height, abnormal gait, breasts, heart and lungs, teeth and gums, legs."
+          ]
+        },
+        {
+          "heading": "Abdominal, Vaginal and Pelvic Assessment at Booking",
+          "body_text": "Four further points complete the booking assessment:\n- **Abdominal examination and auscultation of the FHR (fetal heart rate) are NOT done before 24 weeks** — before that gestation the fetal heart cannot be reliably auscultated, so attempting it earlier is pointless.\n- **Vaginal examination: not performed in all clinics**; where done, it serves **to assess the size and position of the uterus** and to detect **any extrauterine abnormalities (e.g. a fibroid)**.\n- **Take a cervical (Cx) smear for cytology** as part of booking care.\n- **Gain an idea about the shape of the pelvis** (pelvic assessment at this first visit).\nThese four items round out the baseline record that later visits are compared against.",
+          "key_points": [
+            "Abdominal examination and FHR auscultation: not before 24 weeks.",
+            "Vaginal examination (not in all clinics): assesses uterine size and position and extrauterine abnormalities such as fibroids.",
+            "Cervical (Cx) smear for cytology is taken at booking.",
+            "Assess the shape of the pelvis at the booking visit."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Antenatal care",
+          "definition_ar": "الرعاية قبل الولادة: التقييم السريري للأم والجنين أثناء الحمل للوصول إلى أفضل نتيجة ممكنة لكليهما."
+        },
+        {
+          "term": "Booking visit",
+          "definition_ar": "زيارة التسجيل: أول زيارة تُرتَّب مبكراً قدر الإمكان وتشمل القصة الكاملة والعمر وLMP والفحص العام الشامل."
+        },
+        {
+          "term": "Naegele's rule",
+          "definition_ar": "قاعدة نيغل: طريقة حساب تاريخ الولادة المتوقع من أول يوم لآخر دورة شهرية."
+        },
+        {
+          "term": "LMP",
+          "definition_ar": "تاريخ آخر دورة شهرية؛ يُسجَّل في زيارة التسجيل وتُطبَّق عليه قاعدة نيغل لحساب موعد الولادة."
+        },
+        {
+          "term": "Fortnightly visits",
+          "definition_ar": "الزيارات نصف الشهرية: كل أسبوعين بين الأسبوعين 30 و36 من الحمل."
+        },
+        {
+          "term": "Fibroid",
+          "definition_ar": "الورم الليفي الرحمي: شذوذ خارج رحمي يمكن كشفه بالفحص المهبلي أثناء زيارة التسجيل."
+        },
+        {
+          "term": "Cx smear",
+          "definition_ar": "المسحة العنقية للتحرّي الخلوي: تُؤخذ ضمن فحوص زيارة التسجيل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_c7",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Investigations, Screening, Subsequent Visits, Advice, Diet and Toxoid",
+      "summary_ar": "يستكمل هذا المفهوم الرعاية قبل الولادة: تحاليل التسجيل (الخضاب وزمرة ABO وRh ورحلان الخضاب الكهربائي، والأمصال للروبيلا والزهري والإيدز، والسكر العشوائي، والتصوير بالأمواج فوق الصوتية، وفحص البول)، والتحري الكيميائي عن الشذوذات الكروموسومية (hCG والإستريول وألفا فيتوبروتين) والتحري الجائر (خزعة الزغابات وبزل السلى)، وفحوص كل زيارة لاحقة، والنصائح والحمية (2400 سعرة وبروتين ثلثاه حيواني المنشأ وكالسيوم 1.5g وحديد 3.5mg وفولات 400µg)، والراحة والجماع والعناية بالثديين، وجدول لقاح الكزاز الثلاثي التوقيت.",
+      "sections": [
+        {
+          "heading": "Booking Investigations and Screening Tests",
+          "body_text": "**Investigations at booking (the list of five):**\n- **1. Blood:** **Hb %** (hemoglobin concentration), **ABO and Rh** grouping, and **Hb electrophoresis** (hemoglobinopathy screening).\n- **2. Serological tests for rubella, syphilis and HIV antibodies.**\n- **3. RBS (random blood sugar).**\n- **4. USS (ultrasound scan):** to **confirm pregnancy**, determine **gestational age**, and **exclude abnormality.**\n- **5. Urine:** testing for the **presence of sugar and infection.**\n**Screening for fetal chromosomal abnormalities:**\n- **1. Biochemical screening** — e.g. **hCG, oestriol (written 'osteriol' on the slide) and alpha-fetoprotein.**\n- **2. Invasive screening** — **CVS (chorionic villus sampling) and amniocentesis.**\nBlood group, infection serology, glycemia, urine and imaging at booking combine with biochemical and invasive modalities to complete the fetal and maternal risk assessment.",
+          "key_points": [
+            "Booking bloods: Hb %, ABO & Rh, Hb electrophoresis.",
+            "Serology: rubella, syphilis, HIV antibodies; plus RBS.",
+            "USS: confirm pregnancy, gestational age, exclude abnormality; urine: sugar and infection.",
+            "Biochemical screening: hCG, oestriol, alpha-fetoprotein; invasive: CVS and amniocentesis."
+          ]
+        },
+        {
+          "heading": "Subsequent Visits: The Five Safety Checks",
+          "body_text": "**At each subsequent visit** the following are checked:\n- **BP** (blood pressure).\n- **Urine test for protein** (detecting pre-eclampsia between visits).\n- **Maternal weight** — with the rule that total gain should be **not more than 12 kg throughout the whole pregnancy.**\n- **Hb** (hemoglobin, tracking anemia).\n- **Fundal height** (tracking fetal growth).\nThese five items are the safety net that catches hypertension, pre-eclampsia, excessive weight gain, anemia and growth disturbance — everything else belongs to the booking visit or to specific indications.",
+          "key_points": [
+            "Every subsequent visit: BP, urine protein, maternal weight, Hb, fundal height.",
+            "Total pregnancy weight gain: not more than 12 kg."
+          ],
+          "check": {
+            "prompt": "At each subsequent antenatal visit, five items are checked. What is the upper limit of total maternal weight gain throughout the whole pregnancy?",
+            "options": [
+              "Not more than 12 kg",
+              "Not more than 20 kg",
+              "Not more than 5 kg",
+              "Weight gain is not monitored"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند كل زيارة لاحقة يُفحص ضغط الدم والبول (البروتين) ووزن الأم والخضاب وارتفاع قاع الرحم، ولا يجوز أن تتجاوز زيادة الوزن الكلية 12 كغ في الحمل كله. حد 20 كغ مبالغ فيه ويرتبط بالمضاعفات، و5 كغ غير كافٍ لنمو الجنين، والوزن عنصر أساسي في المتابعة."
+          }
+        },
+        {
+          "heading": "Advice, Education and the Antenatal Diet",
+          "body_text": "**Advice to the patient:**\n- **Attend educational classes.**\n- **Alleviate anxiety about labour.**\n- **Explain the stages of labour.**\n- **Discuss the use of analgesia during labour.**\n**Diet:**\n- Daily requirement **2400 calories** — and a **poor diet is associated with the risk of preterm labour.**\n- **Increase protein, with 2/3 of animal origin** — e.g. **meat, egg, fish** (the remaining 1/3 is of vegetable origin).\n- **Decrease carbohydrates (CHO) to compensate for the increased protein intake.**\n- **In the latter half of pregnancy, increase calcium intake**, and increase **phosphorus and iron** as well.\n- **Calcium: 0.5g non-pregnant → 1.5g pregnant.**\n- **Iron: 3.5 mg of elemental iron** — and the **supplement should be given from mid-pregnancy until 3 months after delivery.**\n- **Folic acid: 50µg non-pregnant → 400µg pregnant.**\nThese numbers (2400 calories, 2/3 animal protein, 1.5g calcium, 3.5 mg iron, 400µg folate) are among the most frequently quoted facts of antenatal care.",
+          "key_points": [
+            "Diet: 2400 calories daily; poor diet risks preterm labour.",
+            "Protein increased, 2/3 of animal origin (meat, egg, fish); CHO decreased to compensate.",
+            "Latter half of pregnancy: increase calcium (0.5g → 1.5g), phosphorus and iron.",
+            "Iron 3.5 mg elemental from mid-pregnancy until 3 months after delivery.",
+            "Folic acid 50µg non-pregnant → 400µg pregnant."
+          ]
+        },
+        {
+          "heading": "Rest, Exercise, Bowels, Coitus and Breast Care",
+          "body_text": "**Rest and exercise:** the woman is **encouraged to continue all ordinary activities**, with **adequate sleep**.\n**Regulation of the bowel:** **constipation is troublesome** in pregnancy — first-line treatment is **diet: fruit, bran and vegetables**; **if that fails, mild senna** (a gentle laxative) is used.\n**Coitus:** **not harmful unless there is a bad obstetrical history.**\n**Breast care:** the **nipples should be examined to see whether they are retracted**, and the four care rules are:\n- **1. The nipples should be pinched to make them protrude.**\n- **2. Ordinary washing is enough** (no harsh antiseptic routines).\n- **3. Dry skin is treated with cream.**\n- **4. The breast should be supported with a well-fitted brassiere.**\nThese lifestyle points close the routine-advice package given at antenatal visits.",
+          "key_points": [
+            "Continue ordinary activities with adequate sleep.",
+            "Constipation: diet first (fruit, bran, vegetables), then mild senna.",
+            "Coitus is not harmful unless bad obstetrical history.",
+            "Breast care: examine for retracted nipples; pinch to protrude, ordinary washing, cream for dry skin, well-fitted brassiere."
+          ]
+        },
+        {
+          "heading": "Tetanus Toxoid Immunization in Pregnancy",
+          "body_text": "**Toxoid (tetanus toxoid) during pregnancy:**\n- **Explain to the patient that it is safe** — reassurance is part of the prescription.\n- **Warn that the injection site becomes swollen, red and painful** (a local reaction that settles).\n- **The schedule of three doses:**\n  - **First dose: at the 4th month of pregnancy.**\n  - **Second dose: 6 weeks after the first.**\n  - **Third dose: one year after the first.**\nThis timetable (4th month → +6 weeks → +1 year) protects the mother across pregnancy and later pregnancies, completing the routine antenatal care program described in this lecture.",
+          "key_points": [
+            "Tetanus toxoid is safe in pregnancy; the site may become swollen, red and painful.",
+            "Dose 1 at the 4th month; dose 2 six weeks later; dose 3 one year after."
+          ],
+          "check": {
+            "prompt": "When is the first dose of tetanus toxoid given during pregnancy, and when are the second and third doses?",
+            "options": [
+              "First at the 4th month, second 6 weeks after, third 1 year after",
+              "First at booking, second at 36 weeks, third after delivery",
+              "Only one dose is needed in each pregnancy",
+              "First in the third trimester only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الجرعة الأولى من لقاح الكزاز في الشهر الرابع من الحمل، والثانية بعد ستة أسابيع من الأولى، والثالثة بعد سنة. اللقاح آمن لكنه يسبب موضعياً تورماً واحمراراً وألماً يُنبَّه عليه المريضة، وبقية التوقيتات المقترحة ليست الجدول الموصوف في المحاضرة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hb electrophoresis",
+          "definition_ar": "رحلان الخضاب الكهربائي: تحليل دم عند التسجيل للتحري عن اضطرابات الهيموغلوبين."
+        },
+        {
+          "term": "RBS",
+          "definition_ar": "سكر الدم العشوائي: تحليل التسجيل للتحري عن اضطراب سكر الدم."
+        },
+        {
+          "term": "Alpha-fetoprotein",
+          "definition_ar": "ألفا فيتوبروتين: علامة كيميائية للتحري عن الشذوذات الكروموسومية مع hCG والإستريول."
+        },
+        {
+          "term": "CVS",
+          "definition_ar": "خزعة الزغابات المشيمية: تحرٍّ جائر عن الشذوذات الكروموسومية للجنين."
+        },
+        {
+          "term": "Amniocentesis",
+          "definition_ar": "بزل السلى: تحرٍّ جائر يأخذ خلايا من السائل الأمنيوسي لدراسة الكروموسومات."
+        },
+        {
+          "term": "Fundal height",
+          "definition_ar": "ارتفاع قاع الرحم: يُقاس في كل زيارة لاحقة لمتابعة نمو الجنين."
+        },
+        {
+          "term": "Senna",
+          "definition_ar": "السنا: ملّين خفيف يُسمح به في الحمل إذا فشلت معالجة الإمساك بالحمية."
+        },
+        {
+          "term": "Tetanus toxoid",
+          "definition_ar": "لقاح الكزاز: آمن في الحمل؛ جرعته الأولى في الشهر الرابع والثانية بعد 6 أسابيع والثالثة بعد سنة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f01",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What is a teratogen?",
+      "back_text": "Any agent that causes physical or developmental abnormalities in the fetus. Its effect depends on nature and dose, stage of embryonic development, fetal susceptibility, environmental interaction, maternal metabolism and genetic factors — and few drugs are considered safe in pregnancy.",
+      "tags": [
+        "teratogen"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f02",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "List the six factors that influence the effect of a teratogen.",
+      "back_text": "1) Nature and dose; 2) Stage of embryonic development; 3) Fetal susceptibility; 4) Interaction with environmental factors; 5) Maternal metabolism; 6) Genetic factors.",
+      "mnemonic_ar": "تذكّر الستة: طبيعة وجرعة، مرحلة الجنين، قابلية الجنين، البيئة، استقلاب الأم، الوراثة.",
+      "tags": [
+        "teratogen"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f03",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Folic acid in pregnancy: preparations, action and indications?",
+      "back_text": "Injection 10ml; tablets 0.4mg and 0.8mg. Action: stimulates normal erythropoiesis. Indications: megaloblastic or macrocytic anemia and prevention of fetal neural tube defects. Contraindicated in untreated vitamin B12 deficiency.",
+      "explanation_ar": "حمض الفوليك يحرّض الإرقاء الطبيعي ويقي من عيوب الأنبوب العصبي للجنين، ولا يُعطى عند نقص فيتامين B12 غير المعالج؛ وتأثيراته الجانبية ألم بطني وإسهال وغثيان أو نفخة.",
+      "tags": [
+        "folic acid",
+        "supplements"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f04",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "How much elemental iron does the ferrous fumarate preparation provide?",
+      "back_text": "Tablets or injection of 100mg provide 33mg of elemental iron (the 100:33 rule). Iron is an essential component in the formation of hemoglobin (Hb).",
+      "tags": [
+        "iron"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f05",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Three contraindications to iron supplementation?",
+      "back_text": "1) Primary haemolytic anemia; 2) Peptic ulcer; 3) Repeated blood transfusion.",
+      "tags": [
+        "iron"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f06",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Classic side effects of oral iron in pregnancy?",
+      "back_text": "Metallic taste, nausea and vomiting, and black stool (harmless discoloration that should be explained to the patient).",
+      "tags": [
+        "iron"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f07",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Calcium supplements in pregnancy: tablet strengths, contraindications and side effects?",
+      "back_text": "Tablets 211 mg or 250 mg; action: maintain calcium level. Contraindications: bone cancer, renal stone, hypercalcemia. Side effects: headache, nausea and vomiting, irritability.",
+      "tags": [
+        "calcium"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f08",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "Name the four antihypertensives used in pregnancy, each with its class.",
+      "back_text": "1) Labetalol — alpha and beta blocker; 2) Nifedipine — calcium channel blocker; 3) Methyldopa (methyl dopa) — alpha blocker; 4) Hydralazine — vasodilator. Indications: hypertension and hypertensive emergency.",
+      "tags": [
+        "antihypertensives"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f09",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "Which antihypertensives should be AVOIDED in pregnancy?",
+      "back_text": "ACE inhibitors; atenolol and propranolol; minoxidil.",
+      "mnemonic_ar": "الممنوعة في الحمل: ACE مع أتينولول وبروبرانولول مع مينوكسيديل.",
+      "tags": [
+        "antihypertensives"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f10",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "Labetalol: preparations, action and contraindications?",
+      "back_text": "Injection 5mg/ml in a 20ml vial; tablets 100mg and 200mg. Action: reduces peripheral resistance. Contraindications: hypersensitivity, bronchial asthma, heart and hepatic failure, severe bradycardia. Side effects: fatigue, headache, nausea, vertigo.",
+      "tags": [
+        "antihypertensives"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f11",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "How does methyldopa lower blood pressure, and what are its side effects?",
+      "back_text": "It inhibits the central vasomotor center and decreases sympathetic outflow (tablets 250 mg; injection 50mg/ml). Side effects: sedation, headache or depression, hepatic disorder, bradycardia.",
+      "tags": [
+        "antihypertensives"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f12",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "Hydralazine side effects — the trio of cytopenias plus what?",
+      "back_text": "Neutropenia, leukopenia, thrombocytopenia, and orthostatic hypotension. Preparations: injection 20mg/ml; tablets 10mg and 25mg.",
+      "tags": [
+        "antihypertensives"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f13",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "When are diuretics (furosemide) indicated in pregnancy?",
+      "back_text": "Only for: 1) PIH (pregnancy-induced hypertension) with pulmonary edema; 2) severe anemia prior to blood transfusion.",
+      "tags": [
+        "diuretics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f14",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Define tocolytics and give their indications and agents.",
+      "back_text": "Drugs that inhibit uterine contraction. Indications: PUC (premature/preterm uterine contractions) and preterm labour. Agents: salbutamol and ritodrine — tablets 5mg and 10mg; injections 5mg/ml and 10mg/ml.",
+      "tags": [
+        "tocolytics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f15",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Four side effects of salbutamol/ritodrine tocolysis?",
+      "back_text": "Hypotension, hyperglycemia, hypokalemia and arrhythmia.",
+      "mnemonic_ar": "توكوليتيات: الضغط ينزل، السكر يرتفع، البوتاسيوم ينزل، والنظم يختلّ.",
+      "tags": [
+        "tocolytics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f16",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Define oxytocics and list their three indications.",
+      "back_text": "Drugs that increase uterine contraction. Indications: 1) induce or augment labour; 2) termination of hydatidiform mole (H.M) and pregnancy; 3) treatment of PPH and increasing milk ejection.",
+      "tags": [
+        "oxytocics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f17",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Four contraindications to oxytocin?",
+      "back_text": "1) Grandmultipara; 2) Contracted pelvis; 3) History of LSCS (lower segment caesarean section); 4) Malpresentation.",
+      "tags": [
+        "oxytocics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f18",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "Five side effects of oxytocin?",
+      "back_text": "1) Hypertonic uterine contraction; 2) Fetal distress; 3) Uterine rupture; 4) Water intoxication; 5) Hypotension.",
+      "mnemonic_ar": "الأوكسيتوسين: انقباض مفرط، إجهاد جنيني، تمزق رحم، تسمم مائي، هبوط ضغط.",
+      "tags": [
+        "oxytocics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f19",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "What does tetracycline cause when given in the second trimester?",
+      "back_text": "Yellow teeth, hypoplasia of enamel and bone — with NO anomalies in the first trimester (a timing trap: first-trimester safety does not extend to the second).",
+      "is_vivid": true,
+      "tags": [
+        "antibiotics"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f20",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "What must be checked before and while giving MgSO4?",
+      "back_text": "1) Patellar (knee) reflexes; 2) Urine output; 3) Respiratory rate. Side effects to fear: maternal and fetal respiratory depression.",
+      "explanation_ar": "زوال منعكس الرضفة أو نقص كمية البول أو تباطؤ معدل التنفس علامات سميّة كبريتات المغنيسيوم قبل الجرعة التالية.",
+      "tags": [
+        "MgSO4"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f21",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "MgSO4 IV loading dose at the FRU (First Referral Unit)?",
+      "back_text": "4 ampoules of MgSO4 (8ml) plus 12 ml normal saline, loaded into a 20ml syringe and given slow IV over 5-10 minutes — i.e. 20 ml of a 20% solution, slow IV. (50% solution reference: 1 ampoule = 2 ml = 1 gm.)",
+      "tags": [
+        "MgSO4"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f22",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Why are oral hypoglycemics and mefenamic acid dangerous in pregnancy?",
+      "back_text": "Oral hypoglycemics: induce fetal and neonatal hypoglycemia, and are teratogenic in animals — especially the sulphonylurea group. Mefenamic acid (NSAID): early closure of the ductus arteriosus, fetal demise and abortion.",
+      "is_vivid": true,
+      "tags": [
+        "drugs to avoid"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f23",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c6",
+      "card_type": "basic",
+      "front_text": "What is the antenatal care visit schedule?",
+      "back_text": "First visit arranged as early as possible; then every 4 weeks until 30 weeks; fortnightly (every 2 weeks) until 36 weeks; weekly thereafter until delivery. Not all ANC needs a hospital — practitioner/midwife care is less costly and reduces admissions.",
+      "explanation_ar": "الأسبوع 30 هو حد التحويل من زيارة كل 4 أسابيع إلى كل أسبوعين، والأسبوع 36 هو حد التحويل إلى الزيارات الأسبوعية.",
+      "tags": [
+        "antenatal care"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f24",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c7",
+      "card_type": "basic",
+      "front_text": "Key antenatal diet numbers?",
+      "back_text": "2400 calories/day; protein increased with 2/3 of animal origin (meat, egg, fish) and carbohydrates reduced to compensate; calcium 0.5g (non-pregnant) rising to 1.5g (pregnant); iron 3.5 mg elemental daily from mid-pregnancy until 3 months after delivery; folic acid 50µg rising to 400µg.",
+      "mnemonic_ar": "احفظ الأرقام: 2400 سعرة، ثلثا البروتين حيواني، كالسيوم 1.5غ، حديد 3.5ملغ من منتصف الحمل حتى 3 أشهر بعد الولادة، فولات 400 ميكروغرام.",
+      "tags": [
+        "diet"
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_f25",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c7",
+      "card_type": "basic",
+      "front_text": "Tetanus toxoid schedule in pregnancy?",
+      "back_text": "First dose at the 4th month of pregnancy; second dose 6 weeks after the first; third dose 1 year after the first. It is safe; the injection site becomes swollen, red and painful.",
+      "tags": [
+        "tetanus toxoid"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m01",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c1",
+      "question_stem": "Which statement about the effect of teratogens in pregnancy is correct?",
+      "options": [
+        "The effect of a teratogen depends only on the dose given",
+        "The effect is influenced by nature and dose, stage of embryonic development, fetal susceptibility, environmental interaction, maternal metabolism and genetic factors",
+        "All drugs are safe after the first trimester",
+        "Teratogens harm the mother but never the fetus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التأثير المشوِّه لا يتحدد بالجرعة وحدها؛ فهو يتأثر بطبيعة العامل وجرعته ومرحلة النمو الجنيني وقابلية الجنين وتفاعله مع عوامل بيئية واستقلاب الأم والعوامل الوراثية، ولهذا قيل إن قلة من الأدوية تعد آمنة في الحمل. أما الاعتماد على الجرعة فقط أو اعتبار كل الأدوية آمنة بعد الثلث الأول فخطأ، إذ تؤثر الأدوية في الثلثين الثاني والثالث على نمو الجنين وتطوره الوظيفي، والمشوِّهات بطبيعتها تصيب الجنين لا الأم فقط.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m02",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "question_stem": "A 24-year-old G1P0 at 10 weeks' gestation is found on booking bloods to have a macrocytic (megaloblastic) anemia. Which supplement is specifically indicated for this type of anemia and for fetal neural tube defect prevention?",
+      "options": [
+        "Folic acid (tablets 0.4mg or 0.8mg)",
+        "Ferrous fumarate 100mg",
+        "Calcium 250 mg tablets",
+        "Mefenamic acid 500mg"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "فقر الدم الكريّات الضخمة (الضخمة الأرومية) هو داعي حمض الفوليك إلى جانب الوقاية من عيوب الأنبوب العصبي للجنين، فهو يحرّض الإرقاء الطبيعي وتأثيراته الجانبية ألم بطني وإسهال وغثيان أو نفخة. الحديد يعالج فقر الدم بعوز الحديد لا الكريّات الضخمة، والكالسيوم يحافظ على مستوى الكالسيوم ولا دور له في الإرقاء، وميفيناميك أسيد مضاد التهاب غير ستيرويدي ممنوع في الحمل لأنه يسبب الإغلاق المبكر للقناة الشريانية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m03",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c2",
+      "question_stem": "A 32-year-old G3P2 at 18 weeks has iron deficiency anemia but also a long-standing peptic ulcer. Which of the following is a listed contraindication to iron supplementation in pregnancy?",
+      "options": [
+        "Peptic ulcer",
+        "Neural tube defect prevention",
+        "Pregnancy-induced hypertension",
+        "Grandmultiparity"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قرحة المعدة والاثني عشر من مضادات استطباب مكمّلات الحديد، وكذلك فقر الدم الانحلالي الأولي ونقل الدم المتكرر. أما الوقاية من عيوب الأنبوب العصبي فهي داعي حمض الفوليك لا مضاد استطباب للحديد، وارتفاع ضغط الحمل وكثرة الولادات ليست من مضادات استطباب الحديد المذكورة في المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m04",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "question_stem": "A 31-year-old G2P1 at 14 weeks' gestation has chronic hypertension that has been controlled with lisinopril (an ACE inhibitor) since before conception. Her blood pressure today is 150/95 mmHg. What is the correct action regarding her antihypertensive?",
+      "options": [
+        "Continue lisinopril — ACE inhibitors are safe in pregnancy",
+        "Stop lisinopril and switch to methyldopa, one of the antihypertensives used in pregnancy",
+        "Switch from lisinopril to atenolol",
+        "Stop all antihypertensives for the rest of the pregnancy",
+        "Add minoxidil for better control"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "مثبطات الإنزيم المحول للأنجيوتنسين من الأدوية الواجب تجنبها في الحمل، لذا يجب استبدالها بأحد الخوافض الأربعة المسموحة: لابتالول أو نيفيديبين أو ميثيل دوبا أو هيدرالازين، وميثيل دوبا خيار ممتاز هنا. أما الاستمرار على الكابتوبريل أو التحويل إلى أتينولول أو إضافة المينوكسيديل فكلها أخطاء لأن هذه الأدوية على قائمة التجنب، ووقف كل العلاج مع ضغط 150/95 غير صحيح لأن ارتفاع الضغط وطوارئه هما داعيا العلاج.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "First sort the drugs into 'used in pregnancy' versus 'should be avoided'.",
+        "The avoid list: ACE inhibitors, atenolol, propranolol, minoxidil."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m05",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "question_stem": "A 27-year-old G1P0 at 26 weeks with pregnancy-induced hypertension also has bronchial asthma. Among the four antihypertensives used in pregnancy, which one is contraindicated in this patient because of her asthma?",
+      "options": [
+        "Labetalol (alpha and beta blocker)",
+        "Nifedipine (calcium channel blocker)",
+        "Methyldopa (central alpha blocker)",
+        "Hydralazine (vasodilator)"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الربو القصبي من مضادات استطباب اللابتالول (بسبب مكوّنه البيتا الحاصر)، فيجب اختيار نيفيديبين أو ميثيل دوبا أو هيدرالازين بدلاً منه؛ ومن مضادات استطباب اللابتالول الأخرى التحاسس وقصور القلب والكبد وبطء القلب الشديد. نيفيديبين وميثيل دوبا وهيدرالازين ليست مضادات استطبابها الربو، مع الانتباه إلى أن ميثيل دوبا يسبب التنعيم والصداع أو الاكتئاب والاضطراب الكبدي وبطء القلب.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m06",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c3",
+      "question_stem": "A 29-year-old G2P1 at 32 weeks develops pregnancy-induced hypertension with pulmonary edema on chest examination. Which drug has a specific listed indication for exactly this situation?",
+      "options": [
+        "Furosemide (diuretic)",
+        "Ferrous fumarate",
+        "Calcium 250 mg tablets",
+        "Salbutamol tablets",
+        "Folic acid 0.8mg"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الفوروسيميد (مدر البول) له استطبابان محددان في الحمل: تسمم الحمل مع الوذمة الرئوية — وهي حالة هذه المريضة — وفقر الدم الشديد قبل نقل الدم لمنع فرط الحجم. ميثيل دوبا واللابتالول خافضا ضغط لا مدرّان، والفولات والكالسيوم مكمّلات غذائية، والسالبوتامول توكوليتي يثبط تقلص الرحم ولا يعالج الوذمة الرئوية المصاحبة لتسمم الحمل.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m07",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "question_stem": "A 39-year-old G6P5 at term is in spontaneous labour with regular contractions; the intern proposes oxytocin augmentation. Which of the following is correct?",
+      "options": [
+        "Proceed — grandmultipara is not a contraindication to oxytocin",
+        "Oxytocin is contraindicated: grandmultipara, contracted pelvis, previous LSCS and malpresentation are its contraindications",
+        "Give oral ergot 0.5-1mg to augment instead",
+        "Oxytocin is the first-line tocolytic in preterm labour"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "كثرة الولادات (النفاس المتعدد) من مضادات استطباب الأوكسيتوسين مع الحوض الضيق وتاريخ القيصرية السابقة وسوء تقديم الجنين، لأن إعطاءه يعرّضها للانقباض الرحمي المفرط وإجهاد الجنين وتمزق الرحم وهبوط الضغط والتسمم المائي. الإرغوت ليس بديلاً للتعزيز الآمن هنا، والأوكسيتوسين مقوٍّ رحمي لا توكوليتي (فالتوكوليتيات هي السالبوتامول والريتودرين).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m08",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c4",
+      "question_stem": "A 30-year-old G1P0 at 31 weeks is admitted in preterm labour and started on intravenous ritodrine (tocolytic). Which electrolyte disturbance is a recognized side effect of salbutamol and ritodrine?",
+      "options": [
+        "Hyperkalemia",
+        "Hypokalemia",
+        "Hypercalcemia",
+        "Hyponatremia"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "السالبوتامول والريتودرين (ناهضا مستقبلات بيتا) يسببان هبوط البوتاسيوم ضمن تأثيراتهما الأربعة: هبوط الضغط وفرط سكر الدم وهبوط البوتاسيوم واللانظمية؛ لذا تُراقب البوتاسيوم والسكر والنظم والضغط عند المريضة تحت التوكوليت. فرط البوتاسيوم عكس ما يحدث، وفرط الكالسيوم وهبوط الصوديوم ليسا من تأثيراتهما الموثقة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m09",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "question_stem": "A 22-year-old woman at 20 weeks' gestation is prescribed tetracycline for a skin infection. What fetal effect is classically associated with tetracycline use in the second trimester?",
+      "options": [
+        "Yellow teeth, hypoplasia of enamel and bone",
+        "Eighth cranial nerve damage",
+        "Neural tube defects",
+        "Neonatal hypoglycemia",
+        "Premature closure of the ductus arteriosus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التتراسيكلين لا يسبب شذوذات في الثلث الأول، لكن استعماله في الثلث الثاني يرتبط باصفرار الأسنان ونقص تشكّل المينا والعظم — وهذا مصيدة التوقيت في الامتحان. أذية العصب القحفي الثامن مع عيب سمعي تخص الستربتومايسين، وعيوب الأنبوب العصبي تُمنع بحمض الفوليك، وهبوط سكر الجنين والوليد يخص خافضات السكر الفموية، والإغلاق المبكر للقناة الشريانية يخص ميفيناميك أسيد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m10",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "question_stem": "A 26-year-old primigravida at 34 weeks with severe pre-eclampsia is receiving magnesium sulphate. What must be checked before and while giving the drug?",
+      "options": [
+        "Patellar (knee) reflexes, urine output and respiratory rate",
+        "Blood pressure and temperature only",
+        "Arm reflexes only",
+        "Fetal kick counts and fundal height"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قبل إعطاء كبريتات المغنيسيوم وأثناءها يجب فحص منعكسات الرضفة (الركبة) وكمية البول ومعدل التنفس، لأن سمية الدواء تظهر اكتئاباً تنفسياً للأم والجنين. الضغط والحرارة فحصان عامان لا يكفيان لمراقبة السمية، ومنعكسات الذراعين وحدها ليست المرجع المتبع، ومتابعة حركات الجنين وارتفاع قاع الرحم من متابعات النمو لا من مراقبة المغنيسيوم.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Think of the three bedside checks that track magnesium toxicity.",
+        "Reflexes, renal excretion and respiration."
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m11",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "question_stem": "A 28-year-old G2P1 at 30 weeks has been taking mefenamic acid regularly for back pain. What fetal risks does this NSAID carry in pregnancy?",
+      "options": [
+        "Early closure of the ductus arteriosus, fetal demise and abortion",
+        "Yellow discoloration of the teeth and enamel hypoplasia",
+        "Eighth cranial nerve damage and hearing defect",
+        "Fetal and neonatal hypoglycemia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ميفيناميك أسيد (مضاد التهاب غير ستيرويدي) يسبب الإغلاق المبكر للقناة الشريانية وقد يؤدي إلى وفاة الجنين والإجهاض، فيجب إيقافه في الحمل. اصفرار الأسنان ونقص تشكل المينا يخصان التتراسيكلين في الثلث الثاني، وأذية العصب القحفي الثامن تخص الستربتومايسين، وهبوط سكر الجنين والوليد يخص خافضات السكر الفموية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m12",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c5",
+      "question_stem": "A 25-year-old with type 2 diabetes at 11 weeks' gestation asks to continue her sulphonylurea tablet. Which statement about oral hypoglycemics in pregnancy is correct?",
+      "options": [
+        "They induce fetal and neonatal hypoglycemia and are teratogenic in animals, especially the sulphonylurea group",
+        "They are completely safe throughout pregnancy",
+        "Their only risk is excessive maternal weight gain",
+        "They cause neonatal hyperglycemia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "خافضات السكر الفموية تسبب هبوط سكر الدم عند الجنين والوليد، وهي مشوّهة في الحيوانات وبخاصة مجموعة السلفونيل يوريا؛ ولذلك لا يُعتمد عليها في علاج سكري الحمل. القول بأمانها التام أو بقصر خطرها على زيادة وزن الأم أو بأنها تسبب فرط سكر الوليد كلها مغايرة لمحتوى المحاضرة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m13",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c6",
+      "question_stem": "A 26-year-old primigravida books at 10 weeks' gestation with no complications. According to the antenatal care visit schedule, how should her visits be arranged?",
+      "options": [
+        "Four-weekly until 30 weeks, fortnightly until 36 weeks, then weekly until delivery",
+        "Weekly from booking until delivery",
+        "Monthly until 40 weeks",
+        "One visit per trimester only"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجدول الصحيح: أول زيارة تُرتَّب مبكراً قدر الإمكان، ثم كل 4 أسابيع حتى الأسبوع 30، ثم كل أسبوعين حتى الأسبوع 36، ثم أسبوعياً حتى الولادة؛ وليس بالضرورة في المستشفى بل يمكن مشاركة الممارس والقابلة وهو أقل كلفة ويقلل دخول المستشفى. الزيارات الأسبوعية من البداية أو الشهرية حتى الأسبوع 40 أو زيارة واحدة كل ثلاثة أشهر كلها تخالف الجدول.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m14",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c7",
+      "question_stem": "A 27-year-old G2P0 at 18 weeks asks for dietary advice at her antenatal visit. Which recommendation matches the antenatal diet guidance?",
+      "options": [
+        "2400 calories daily with increased protein, 2/3 of animal origin (meat, egg, fish), and reduced carbohydrates to compensate",
+        "1800 calories daily with protein restricted to 1/3 of animal origin",
+        "1000 calories daily and no animal protein",
+        "Unlimited carbohydrates with no protein target"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحمية في الحمل تتطلب 2400 سعرة حرارية يومياً مع زيادة البروتين بحيث يكون ثلثاه من منشأ حيواني (لحم وبيض وسمك) وتقليل الكربوهيدرات للتعويض، وزيادة الكالسيوم من 0.5g إلى 1.5g مع الفوسفور والحديد في النصف الثاني من الحمل، والحديد 3.5mg عنصورياً من منتصف الحمل حتى 3 أشهر بعد الولادة والفولات 400µg. الحمية السيئة ترتبط بخطر الولادة المبكرة، والخيارات الأخرى كلها حرمانية أو غير متوازنة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_m15",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "concept_id": "obgyn_L7_drugs_in_pregnancy_c7",
+      "question_stem": "A 25-year-old primigravida is due to receive tetanus toxoid immunization during pregnancy. When is the first dose given, and when are the second and third doses?",
+      "options": [
+        "First at the 4th month, second 6 weeks after the first, third 1 year after the first",
+        "First during labour, second after delivery",
+        "A single dose at 36 weeks is sufficient",
+        "Three doses one week apart in the first trimester"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجرعة الأولى من لقاح الكزاز تُعطى في الشهر الرابع من الحمل، والثانية بعد 6 أسابيع من الأولى، والثالثة بعد سنة من الأولى؛ واللقاح آمن لكن موضع الحقن يتورم ويحمرّ ويؤلم فيجب تطمين المريضة. إعطاؤه في المخاض متأخر جداً، وجرعة واحدة لا تكفي، وثلاث جرعات متتالية أسبوعياً ليست الجدول الموصوف.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        4
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_case1",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Chronic Hypertension at the Booking Visit: Choosing a Safe Antihypertensive",
+      "scenario": "A 34-year-old G3P2 books for antenatal care at 12 weeks' gestation. She has chronic hypertension managed for years with atenolol and reports mild intermittent bronchial asthma. The case tests safe antihypertensive selection in pregnancy, contraindications within the safe list, and the narrow indications of diuretics.",
+      "vignette": {
+        "age": 34,
+        "sex": "female",
+        "chief_complaint": "Booking visit for pregnancy with chronic hypertension",
+        "history": "G3P2, LMP 12 weeks ago with regular 28-day cycles; two previous spontaneous vaginal deliveries. Chronic hypertension for 5 years, currently on atenolol 50 mg daily. Childhood bronchial asthma, currently asymptomatic, no inhaler needed. No diabetes or renal disease.",
+        "vitals": {
+          "bp": "150/95 mmHg",
+          "hr": "84/min",
+          "rr": "16/min",
+          "temp": "36.8 C",
+          "spo2": "99%"
+        },
+        "exam": "Fundal height consistent with 12 weeks; urine dipstick negative for protein and sugar; chest clear with mild prolonged expiratory phase; no leg edema.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "11.2 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Random blood sugar",
+            "value": "92 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Urine protein",
+            "value": "negative",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasound: intrauterine singleton pregnancy, gestational age consistent with dates, no abnormality seen."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case1_s1",
+          "prompt": "Which of the following regarding her current antihypertensive (atenolol) is correct?",
+          "options": [
+            "Atenolol is one of the antihypertensives that should be avoided in pregnancy",
+            "Atenolol is the first-line antihypertensive of pregnancy",
+            "All beta blockers are safe in pregnancy",
+            "Atenolol is safe because she has used it for years"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الأتينولول (مع البروبرانولول) من الأدوية الواجب تجنبها في الحمل حتى لو كان المفعول ضابطاً للضغط قبل الحمل، فالسنوات الطويلة من الاستعمال لا تنقل الدواء إلى قائمة الأمان. اللابتالول هو الحاصر البيتا المسموح لأنه يجمع حاصر ألفا وبيتا، والقول بأمان كل حاصرات بيتا خطأ لأن الأتينولول والبروبرانولول ممنوعان.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case1_s2",
+          "prompt": "Her atenolol is stopped. Considering her bronchial asthma, which of the four antihypertensives used in pregnancy is contraindicated for her?",
+          "options": [
+            "Labetalol (alpha and beta blocker)",
+            "Nifedipine (calcium channel blocker)",
+            "Methyldopa (alpha blocker acting centrally)",
+            "Hydralazine (vasodilator)"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الربو القصبي من مضادات استطباب اللابتالول صريحة، فيُستبعد رغم أنه من الخوافض الأربعة المسموحة عموماً. نيفيديبين وميثيل دوبا وهيدرالازين لا يمنعها الربو، ولذلك سيُختار أحدها لهذه المريضة مع مراقبة تأثيرات كل منها.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case1_s3",
+          "prompt": "She is started on methyldopa 250 mg tablets. Which side effects should she be warned about at counselling?",
+          "options": [
+            "Sedation, headache or depression, hepatic disorder and bradycardia",
+            "Yellow teeth and enamel hypoplasia",
+            "Black stool and metallic taste",
+            "Neutropenia only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "تأثيرات ميثيل دوبا الجانبية هي التنعيم (النعاس) والصداع أو الاكتئاب والاضطراب الكبدي وبطء القلب، لأنه يثبط المركز الوعائي الحركي المركزي ويقلل الاندفاع الودي. اصفرار الأسنان يخص التتراسيكلين في الثلث الثاني، والبراز الأسود والطعم المعدني يخصان أقراص الحديد، ونقط الدم الثلاثة مع هبوط الضغط الانتصابي تخص الهيدرالازين.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case1_s4",
+          "prompt": "At 32 weeks she develops pregnancy-induced hypertension with pulmonary edema. Which drug has a specific listed indication for exactly this situation?",
+          "options": [
+            "Furosemide (diuretic)",
+            "Oral calcium tablets 250 mg",
+            "Tocolytic salbutamol",
+            "Oxytocin infusion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الفوروسيميد له استطبابان فقط في الحمل: تسمم الحمل مع الوذمة الرئوية (حالة المريضة) وفقر الدم الشديد قبل نقل الدم. الكالسيوم مكمّل يحافظ على مستوى الكالسيوم، والسالبوتامول توكوليتي يثبط تقلص الرحم، والأوكسيتوسين يقوي تقلص الرحم لتحريض المخاض أو علاج نزف ما بعد الولادة، ولا يصح أي منها للوذمة الرئوية.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص: ارتفاع ضغط مزمن في حمل مع وصف دواء ممنوع (أتينولول). الدرس المستفاد: أدوية الضغط الممنوعة في الحمل هي مثبطات الإنزيم المحول للأنجيوتنسين والأتينولول والبروبرانولول والمينوكسيديل، أما الخيارات المسموحة فأربعة: لابتالول ونيفيديبين وميثيل دوبا وهيدرالازين. ولأن المريضة مصابة بالربو القصبي استُبعد اللابتالول (من مضادات استطبابه) واختير ميثيل دوبا مع التحذير من تأثيراته (التنعيم والصداع أو الاكتئاب والاضطراب الكبدي وبطء القلب)، وقصر الفوروسيميد على حالتين: تسمم الحمل مع الوذمة الرئوية وفقر الدم الشديد قبل نقل الدم.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_case2",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "Severe Pre-eclampsia at 34 Weeks: The Magnesium Sulphate Protocol",
+      "scenario": "A 26-year-old primigravida at 34 weeks is referred with severe pre-eclampsia and needs magnesium sulphate for seizure prophylaxis. The case walks through the pre-dose safety checks, the IM loading regimen at a lower-level centre, the 2-hour transfer rule, the IV loading dose at the FRU and the recognition of toxicity.",
+      "vignette": {
+        "age": 26,
+        "sex": "female",
+        "chief_complaint": "Severe headache with blurred vision and raised blood pressure",
+        "history": "G1P0 at 34 weeks by dates confirmed by first-trimester ultrasound; booking BP was 110/70 mmHg. No medical history. Progressive headaches, hand swelling and visual blurring over 3 days.",
+        "vitals": {
+          "bp": "172/118 mmHg",
+          "hr": "96/min",
+          "rr": "20/min",
+          "temp": "37.0 C",
+          "spo2": "98%"
+        },
+        "exam": "Marked hyperreflexia with clonus; 2+ pitting edema of hands and face; fundal height 33 cm; fetal heart 140/min; patellar reflexes present.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "12.0 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Urine protein",
+            "value": "3+ on dipstick",
+            "flag": "critical"
+          },
+          {
+            "name": "Random blood sugar",
+            "value": "89 mg/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasound: singleton fetus, appropriate growth for 34 weeks, normal amniotic fluid."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case2_s1",
+          "prompt": "Magnesium sulphate is planned. What must be checked before and while giving it?",
+          "options": [
+            "Patellar (knee) reflexes, urine output and respiratory rate",
+            "Blood pressure and temperature only",
+            "Fetal kick counts only",
+            "Serum calcium and sodium levels daily"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "يجب فحص منعكسات الرضفة (الركبة) وكمية البول ومعدل التنفس قبل كل جرعة وأثناء الإعطاء، لأن سمّية كبريتات المغنيسيوم تظهر اكتئاباً تنفسياً للأم والجنين. بقية الخيارات ليست مراقبة السمية المطلوبة في البروتوكول.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case2_s2",
+          "prompt": "She is at a lower-level centre where the IV dose cannot be administered. What is the IM loading regimen?",
+          "options": [
+            "5 ampoules (10ml) deep IM into the right buttock AND 5 ampoules (10ml) deep IM into the left buttock",
+            "1 ampoule (2 ml) IM into the deltoid",
+            "4 ampoules (8ml) with 12 ml NS IM into one buttock",
+            "10 ampoules given orally"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "جرعة التحميل العضلية في المراكز الأدنى: تُسحب 5 أمبولات (10ml) في حقنة 10ml وتُحقن عميقاً في الألية اليمنى، ومعها 5 أمبولات (10ml) في حقنة 10ml أخرى تُحقن عميقاً في الألية اليسرى (محلول 50%: كل أمبولة 2 ml = 1 غم). الجرعة الوريدية (4 أمبولات مع 12 مل محلول ملحي) تخص وحدة الإحالة الأولى، والحقن في الدالية أو الإعطاء الفموي ليسا من البروتوكول.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case2_s3",
+          "prompt": "After the IM loading dose, what is the critical transport instruction?",
+          "options": [
+            "The patient should be transported to the FRU (First Referral Unit) within 2 hours",
+            "Wait 24 hours before referral",
+            "Refer only after delivery",
+            "No referral is needed after the loading dose"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التعليمة الحرجة المكتوبة على الشريحة الحمراء: يجب نقل المريضة إلى وحدة الإحالة الأولى خلال ساعتين بعد جرعة التحميل العضلية، فالتأخير 24 ساعة أو تأجيل الإحالة حتى الولادة أو الاستغناء عنها كلها تؤخر الرعاية النهائية وتعرّضها للاختلاج.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case2_s4",
+          "prompt": "At the FRU the IV loading dose is prepared. Which statement is correct?",
+          "options": [
+            "4 ampoules of MgSO4 (8ml) plus 12 ml normal saline in a 20ml syringe, given slow IV over 5-10 minutes (20 ml of a 20% solution)",
+            "5 ampoules undiluted as a fast IV bolus",
+            "2 ml deep IM into one buttock",
+            "12 ml normal saline alone as a slow IV push"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "جرعة التحميل الوريدية في وحدة الإحالة الأولى: 4 أمبولات (8ml) مع 12 مل محلول ملحي تُسحب في حقنة 20ml وتُعطى وريدياً ببطء خلال 5-10 دقائق، أي 20 مل من محلول 20% بالحقن البطيء. الدفعة السريعة غير المخففة خطرة، والحقن العضلي جرعة المراكز الأدنى لا المستشفى المرجعي، والمحلول الملحي وحده بلا دواء بلا فائدة.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case2_s5",
+          "prompt": "During continued therapy her respiratory rate falls and her patellar reflexes disappear. Which toxicity explains this?",
+          "options": [
+            "Maternal respiratory depression (with fetal respiratory depression also described)",
+            "Water intoxication from oxytocin",
+            "Neutropenia from hydralazine",
+            "Sedation from methyldopa"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التأثيران الجانبيان لكبريتات المغنيسيوم هما اكتئاب التنفس الأمومي واكتئاب تنفس الجنين؛ وزوال منعكسات الرضفة وتباطؤ معدل التنفس علامات التراكم التي تستوجب إيقاف الدواء وإعادة التقييم. التسمم المائي يخص الأوكسيتوسين، ونقط الدم تخص الهيدرالازين، والتنعيم يخص ميثيل دوبا.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "الخلاصة: مريضة بسمّمة حمل شديدة بدأت كبريتات المغنيسيوم (المضاد للاختلاج الأساسي، والديازيبام 10mg/ml بديله). قبل الإعطاء وأثناءه تُفحص منعكسات الرضفة وكمية البول ومعدل التنفس لأن الدواء يسبب اكتئاباً تنفسياً للأم والجنين. جرعة التحميل العضلية في المراكز الأدنى: 5 أمبولات (10ml) عميقاً في الألية اليمنى و5 أمبولات (10ml) في اليسرى مع النقل إلى وحدة الإحالة الأولى خلال ساعتين؛ ثم التحميل الوريدي هناك: 4 أمبولات (8ml) مع 12 مل محلول ملحي في حقنة 20ml تُعطى ببطء خلال 5-10 دقائق (20 مل من محلول 20%). الدرس: الالتزام بالبروتوكول والمراقبة الدقيقة يمنعان الاختلاج والسمّية.",
+      "difficulty": "advanced",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L7_drugs_in_pregnancy_case3",
+      "lecture_id": "obgyn_L7_drugs_in_pregnancy",
+      "title": "The Booking Visit: Building the Antenatal Care Plan",
+      "scenario": "A 25-year-old primigravida attends her first antenatal (booking) visit at 10 weeks' gestation. The case covers the visit schedule, the booking investigations, the timing limits of fetal heart auscultation, the supplementation plan and tetanus toxoid immunization.",
+      "vignette": {
+        "age": 25,
+        "sex": "female",
+        "chief_complaint": "First antenatal (booking) visit for a wanted pregnancy",
+        "history": "G1P0, LMP 10 weeks ago, regular 28-day cycles; no medical, family or obstetric history of note; no vaginal bleeding or abdominal pain; non-smoker.",
+        "vitals": {
+          "bp": "108/68 mmHg",
+          "hr": "82/min",
+          "rr": "14/min",
+          "temp": "36.6 C",
+          "spo2": "100%"
+        },
+        "exam": "Weight 58 kg, height 162 cm, normal gait; breasts normal, nipples everted and non-retracted; heart and lung sounds normal; teeth and gums healthy; legs normal without edema or varicosities; abdominal examination performed, FHR auscultation not attempted.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "12.4 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Blood group",
+            "value": "O Rh positive",
+            "flag": "normal"
+          },
+          {
+            "name": "Random blood sugar",
+            "value": "88 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Urine dipstick",
+            "value": "no sugar, no infection",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasound: intrauterine singleton, crown-rump length consistent with 10 weeks, no abnormality seen; pregnancy confirmed and dated."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case3_s1",
+          "prompt": "According to the antenatal visit schedule, how will her visits be arranged after today's booking visit?",
+          "options": [
+            "Every 4 weeks until 30 weeks, fortnightly until 36 weeks, then weekly until delivery",
+            "Weekly from now until delivery",
+            "Fortnightly from now until 30 weeks",
+            "Only two more visits before delivery"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أول زيارة تُرتَّب مبكراً قدر الإمكان (وقد تحقق ذلك في الأسبوع 10)، ثم زيارة كل 4 أسابيع حتى الأسبوع 30، ثم كل أسبوعين حتى الأسبوع 36، ثم أسبوعياً حتى الولادة. الزيارات الأسبوعية من الآن أو النصف شهرية قبل الأسبوع 30 أو زيارتان فقط كلها تخالف الجدول، ويمكن مشاركة الممارس والقابلة في الرعاية لتقليل الكلفة ودخول المستشفى.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case3_s2",
+          "prompt": "Which investigations should be arranged at this booking visit?",
+          "options": [
+            "Hb, ABO and Rh grouping, Hb electrophoresis, rubella/syphilis/HIV serology, random blood sugar, ultrasound and urine testing",
+            "CTG monitoring at every visit",
+            "Amniocentesis for all booking patients",
+            "Serum magnesium level every month"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "تحاليل التسجيل هي: الخضاب (Hb %) وزمرة ABO وRh ورحلان الخضاب الكهربائي، والأمصال للروبيلا والزهري وأضداد الإيدز، والسكر العشوائي (RBS)، والسونار لتأكيد الحمل وتحديد العمر الحملي واستبعاد الشذوذات، وفحص البول بحثاً عن السكر والإنتان. مراقبة CTG ليست من فحوص التسجيل، وبزل السلى تحرٍّ جائر لحالات محددة لا للجميع، ومغنيسيوم المصل ليس من التحاليل الروتينية.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case3_s3",
+          "prompt": "The patient asks when she will hear the baby's heartbeat on routine abdominal examination. Why is it not done today?",
+          "options": [
+            "Auscultation of the FHR is not done before 24 weeks",
+            "The fetal heart stops until mid-pregnancy",
+            "A Doppler machine is always required instead",
+            "FHR auscultation is only performed during labour"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الفحص البطني والإصغاء لنبض الجنين لا يجريان قبل الأسبوع 24 لأن نبض الجنين لا يمكن الإصغاء إليه بشكل موثوق قبل ذلك، وليس لأن قلب الجنين متوقف أو أن الجهاز ضروري دائماً أو أن الإصغاء يخص المخاض فقط.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case3_s4",
+          "prompt": "Which supplementation plan fits the antenatal care guidance from this lecture?",
+          "options": [
+            "Folic acid 400µg in pregnancy, and iron 3.5 mg elemental daily from mid-pregnancy until 3 months after delivery",
+            "Iron 3.5 mg from now until 6 weeks postpartum only, folic acid after delivery",
+            "Calcium 1.5g only in the first trimester",
+            "No supplements are needed if the diet is adequate"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الفولات ترتفع حاجته من 50µg إلى 400µg في الحمل، والحديد 3.5 ملغ عنصوري يُعطى من منتصف الحمل حتى 3 أشهر بعد الولادة (وحبة 100mg من فومارات الحديدوز تعطي 33 ملغ حديداً عنصورياً)، والكالسيوم ترتفع حاجته من 0.5g إلى 1.5g لا في الثلث الأول وحده، والحمية تتطلب 2400 سعرة ببروتين ثلثاه حيواني المنشأ.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L7_drugs_in_pregnancy_case3_s5",
+          "prompt": "When should her first tetanus toxoid injection be given, and what is the full schedule?",
+          "options": [
+            "First at the 4th month of pregnancy, second 6 weeks after, third 1 year after",
+            "First at 36 weeks as a single dose",
+            "First after delivery only",
+            "Three doses at every visit in one month"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الجرعة الأولى من لقاح الكزاز في الشهر الرابع من الحمل، والثانية بعد 6 أسابيع، والثالثة بعد سنة، وهو لقاح آمن لكن موضع الحقن يتورم ويحمرّ ويؤلم فيجب تطمين المريضة. بقية التوقيتات ليست الجدول الموصوف في المحاضرة.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "الخلاصة: زيارة تسجيل نموذجية في الأسبوع 10 تشمل قصة مرضية شاملة (طبية وعائلية توليدية سابقة والحمل الحالي) والعمر وLMP مع قاعدة نيغل والفحص العام الكامل (العلامات الحيوية والوزن والطول والمشية والثديين والقلب والرئتين والأسنان واللثة والساقين) مع المسحة العنقية وتقييم شكل الحوض، على أن الإصغاء لنبض الجنين لا يكون قبل 24 أسبوعاً. التحاليل: الخضاب وزمرة ABO وRh ورحلان الخضاب وأمصال الروبيلا والزهري والإيدز والسكر العشوائي والسونار والبول، مع التحري الكيميائي (hCG والإستريول وألفا فيتوبروتين) والتحري الجائر عند الحاجة (خزعة الزغابات وبزل السلى). الخطة: فولات 400µg، وحديد 3.5 ملغ عنصورياً من منتصف الحمل حتى 3 أشهر بعد الولادة، وكالسيوم 1.5غ، ولقاح كزاز بجرعة أولى في الشهر الرابع وثانية بعد 6 أسابيع وثالثة بعد سنة، مع زيارات كل 4 أسابيع حتى 30 ثم كل أسبوعين حتى 36 ثم أسبوعياً.",
+      "difficulty": "core",
+      "order_index": 2
+    }
+  ]
+}

@@ -31,8 +31,10 @@ abstract final class AppColors {
   static const Color bgDark = Color(0xFF0F1520);
   static const Color surfaceLight = Color(0xFFFFFFFF);
   static const Color surfaceDark = Color(0xFF1A2332);
-  static const Color surfaceAltLight = Color(0xFFEEF2F7);
-  static const Color surfaceAltDark = Color(0xFF232E42);
+  // دفء محافظ: السطح البديل (حقول/رؤوس) كريمي دافئ بدل المزرقة الباردة —
+  // يعكس خلفية الرسوم المرساة بدون مما يرفه خلفية الصفحة الأساسية.
+  static const Color surfaceAltLight = Color(0xFFF3EDE4);
+  static const Color surfaceAltDark = Color(0xFF242C36);
 
   /// لون نص القراءة العميقة في الداكن — رمادي فاتح 90% بدل الأبيض
   /// النقي (منع Halation — توهج الحروف الذي يجعلها «تنزف»).
@@ -134,6 +136,70 @@ abstract final class AppColors {
   static const Color coralLight = Color(0xFFFF6B6B);
   static const Color coralDark = Color(0xFFFF8787);
 
+  // ── التخصصات السريرية الكبرى (v20) — ألوان الهوية الأساسية ──
+  //
+  // فلسفة «حدود لا ظلال» نفسها: primary للنص/الأيقونة + container
+  // للخلفية (امتزاج بالسطح) — التمييز بدرجة اللون لا ببريقه.
+  //   باطنية = الكحلي التاريخي للمنصة · جراحة = أخضر العقال ·
+  //   نسائية = أرجواني وردّي.
+
+  /// باطنية — الكحلي الأساسي نفسه (primaryLight/Dark).
+  static Color specialtyPrimary(
+    String specialty,
+    Brightness b,
+  ) => switch (specialty) {
+        'surgery' =>
+          b == Brightness.dark ? surgeryPrimaryDark : surgeryPrimary,
+        'obgyn' => b == Brightness.dark ? obgynPrimaryDark : obgynPrimary,
+        _ => b == Brightness.dark ? primaryDark : primaryLight,
+      };
+
+  /// حاوية التخصص — خلفية تظليل خفيفة للرؤوس والشرائح.
+  static Color specialtyContainer(
+    String specialty,
+    Brightness b,
+  ) => switch (specialty) {
+        'surgery' => b == Brightness.dark
+            ? surgeryContainerDark
+            : surgeryContainer,
+        'obgyn' =>
+          b == Brightness.dark ? obgynContainerDark : obgynContainer,
+        _ => b == Brightness.dark
+            // الدفء المحافظ: كحلي الباطنية يصبغه دفء كريمي خفيف.
+            ? const Color(0xFF232E3F)
+            : const Color(0xFFE9E7DF),
+      };
+
+  /// نص فوق حاوية التخصص — داكن لاجتياز AA فاتحاً وفاتح داكناً
+  /// (نفس عقد onPrimaryContainer في الثيم).
+  static Color specialtyOnContainer(
+    String specialty,
+    Brightness b,
+  ) => switch (specialty) {
+        'surgery' => b == Brightness.dark
+            ? const Color(0xFFCDEBDD)
+            : const Color(0xFF0A3D28),
+        'obgyn' => b == Brightness.dark
+            ? const Color(0xFFEBD5F1)
+            : const Color(0xFF3D1448),
+        _ => b == Brightness.dark
+            ? const Color(0xFFD7E5FA)
+            : const Color(0xFF0A2A55),
+      };
+
+  /// أخضر الجراحة (scrub green) — أنقى من زيتوني الهضمي: هوية غرفة
+  /// العمليات. النسخة الداكنة بنفس سطوح باقي التخصصات (L≈72%).
+  static const Color surgeryPrimary = Color(0xFF1E7A5A);
+  static const Color surgeryPrimaryDark = Color(0xFF66C79E);
+  static const Color surgeryContainer = Color(0xFFE4F3ED);
+  static const Color surgeryContainerDark = Color(0xFF1E382E);
+
+  /// أرجواني النسائية — بنفسجي دافئ بلمسة وردّية.
+  static const Color obgynPrimary = Color(0xFF8E4B9E);
+  static const Color obgynPrimaryDark = Color(0xFFC99BD6);
+  static const Color obgynContainer = Color(0xFFF5ECF8);
+  static const Color obgynContainerDark = Color(0xFF38223F);
+
   // ── شريط التوقيع الثلاثي (رمادي/أحمر/ذهبي) ──
   static const Color signatureGray = Color(0xFF9AA7B8);
   static const Color signatureRed = Color(0xFFD64545);
@@ -156,6 +222,14 @@ abstract final class AppColors {
   /// ذهبي **للنص** حسب السطوع — يجتاز AA على الخلفيتين.
   static Color goldText(Brightness b) =>
       b == Brightness.dark ? goldTextDark : goldTextLight;
+
+  /// تظليل نص الملاحظة المضمّنة (Inline Highlight) — أصفر ذهبي ناعم
+  /// بشفافية منخفضة (≈30%) كي يبقى النص تحته مقروءاً بوضوح (نمط
+  /// Kindle). في الداكن: لمعة كهرمانية خافتة بدل الأصفر الصارخ — منع
+  /// وهج خلفية ساطعة يرتد على القارئ المكيّف مع الظلام.
+  static Color inlineNoteHighlight(Brightness b) => b == Brightness.dark
+      ? const Color(0x3DE0A93E)
+      : const Color(0x4DFFF1A6);
 
   /// خلفية الصفحات.
   static Color background(Brightness b) =>
@@ -203,6 +277,8 @@ abstract final class AppColors {
       b == Brightness.dark ? errorContainerDark : errorContainerLight;
 
   /// لون التخصص الطبي حسب السطوع — cardiology/pulmonology/...
+  /// v21: المواد الجراحية تستعير أخضر الجراحة، والنسائية أرجوانيتها
+  /// (specialtyPrimary) — تمييز بصري فوري لأصل المحاضرة.
   static Color module(String module, Brightness b) {
     final bool dark = b == Brightness.dark;
     switch (module.toLowerCase()) {
@@ -226,6 +302,24 @@ abstract final class AppColors {
         return dark ? moduleNeuroDark : moduleNeuro;
       case 'oncology':
         return dark ? moduleOncoDark : moduleOnco;
+      // ── v21: مواد الجراحة — عائلة الأخضر الجراحي ──
+      case 'general_surgery':
+      case 'orthopedics':
+      case 'neurosurgery':
+      case 'pediatric_surgery':
+      case 'surgical_oncology':
+      case 'trauma':
+        return specialtyPrimary('surgery', b);
+      case 'urology':
+      case 'plastic_surgery':
+        return dark ? moduleNephroDark : moduleNephro;
+      // ── v21: مواد النسائية — عائلة الأرجواني ──
+      case 'obstetrics':
+      case 'gynecology':
+      case 'gynecologic_oncology':
+      case 'reproductive_endocrinology':
+      case 'maternal_fetal_medicine':
+        return specialtyPrimary('obgyn', b);
       default:
         return primary(b);
     }
@@ -303,7 +397,37 @@ abstract final class AppColors {
         'rheumatology' => 'الرثوية',
         'neurology' => 'الأعصاب',
         'oncology' => 'الأورام',
+        // v21: مواد الجراحة.
+        'general_surgery' => 'الجراحة العامة',
+        'orthopedics' => 'العظام',
+        'neurosurgery' => 'جراحة الأعصاب',
+        'urology' => 'المسالك',
+        'plastic_surgery' => 'التجميل',
+        'pediatric_surgery' => 'جراحة الأطفال',
+        'surgical_oncology' => 'جراحة الأورام',
+        'trauma' => 'الرضوض',
+        // v21: مواد النسائية والتوليد.
+        'obstetrics' => 'التوليد',
+        'gynecology' => 'النسائية',
+        'gynecologic_oncology' => 'أورام النسائية',
+        'reproductive_endocrinology' => 'غدد التناسل',
+        'maternal_fetal_medicine' => 'الأم والجنين',
         _ => 'عام',
+      };
+
+  /// اسم عربي للتخصص السريري الكبير (v20) — لشريط التبديل والرؤوس.
+  static String specialtyNameAr(String specialty) =>
+      switch (specialty) {
+        'surgery' => 'الجراحة',
+        'obgyn' => 'النسائية',
+        _ => 'الباطنية',
+      };
+
+  /// أيقونة التخصص السريري الكبير — لشريط التبديل.
+  static IconData specialtyIcon(String specialty) => switch (specialty) {
+        'surgery' => Icons.healing_rounded,
+        'obgyn' => Icons.child_friendly_rounded,
+        _ => Icons.local_hospital_rounded,
       };
 }
 
@@ -402,6 +526,25 @@ abstract final class AppGradients {
   static const List<Color> success = <Color>[
     Color(0xFF4CC17E),
     Color(0xFF1E8E4E),
+  ];
+
+  /// تدرج الهوية الدافئ — ذهبي مرساة الرسوم إلى كهرماني أدكن.
+  /// للرؤوس/البطاقات البارزة (مرساة illustrations/units).
+  static const List<Color> warmGold = <Color>[
+    Color(0xFFE5A055),
+    Color(0xFFC9822A),
+  ];
+
+  /// تدرج نحاسي–مرجاني — لبطاقات الحالات/الإنجازات الحية.
+  static const List<Color> warmCoral = <Color>[
+    Color(0xFFDC715A),
+    Color(0xFFB24E3C),
+  ];
+
+  /// تدرج حكيم هادئ — لبطاقات الشروحات/التعلّم.
+  static const List<Color> warmSage = <Color>[
+    Color(0xFF75A088),
+    Color(0xFF51725F),
   ];
 }
 

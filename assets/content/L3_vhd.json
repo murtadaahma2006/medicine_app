@@ -1,0 +1,1096 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L3_vhd",
+    "specialty": "internal_medicine",
+    "title": "Valvular Heart Disease (VHD)",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L3 VHD.pdf",
+      "page_count": 81
+    },
+    "tags": [
+      "mitral stenosis",
+      "mitral regurgitation",
+      "mitral valve prolapse",
+      "aortic stenosis",
+      "aortic regurgitation",
+      "tricuspid valve disease",
+      "pulmonary valve disease",
+      "prosthetic valves",
+      "TAVI",
+      "valvuloplasty"
+    ],
+    "order_index": 3,
+    "golden_tip": [
+      "EXAM TRAP: In severe aortic stenosis, patients stay asymptomatic for years but once angina, syncope or dyspnoea appear, untreated death occurs within 3-5 years — symptoms = prompt valve replacement. Old age alone is NOT a contraindication (TAVI).",
+      "Mitral stenosis is almost always RHEUMATIC; orifice <2 cm2 before symptoms; a loud S1 with tapping apex and an opening snap that moves CLOSER to S2 as stenosis worsens (but S1/OS vanish if the valve is heavily calcified).",
+      "Austin Flint murmur = soft mid-diastolic murmur in SEVERE AR from the regurgitant jet partially closing the anterior mitral leaflet — do not mistake it for mitral stenosis.",
+      "Asymptomatic severe AR: operate when the end-systolic LV dimension reaches 55 mm or more, even without symptoms.",
+      "In acute severe AR (endocarditis cusp perforation), the classic signs are MASKED: pulse pressure may be normal, the diastolic murmur short or absent, because there has been no time for compensatory LV dilatation."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L3_c1",
+      "lecture_id": "L3_vhd",
+      "title": "Mitral Stenosis",
+      "summary_ar": "التضيق التاجي الروماتيزمي: المرض، الفيزيولوجيا (تدرج الضغط الأذيني والرجفان وفرط الضغط الرئوي)، السريريات والعلامات (S1 العالي، طقة الانفتاح)، التحاليل والإدارة الطبية والجراحية.",
+      "sections": [
+        {
+          "heading": "Aetiology and Pathogenesis",
+          "body_text": "**Mitral stenosis is almost always rheumatic in origin**, although in older people it can be caused by **heavy calcification of the mitral valve**; there is also a **rare congenital form**.\n\nIn rheumatic mitral stenosis the mitral valve orifice is slowly diminished by **progressive fibrosis, calcification of the valve leaflets, and fusion of the cusps and subvalvular apparatus**:\n- Normal orifice: **about 5 cm2 in diastole**.\n- **Severe mitral stenosis: < 1 cm2.**\n- **Patients are usually asymptomatic until the orifice is < 2 cm2.**\n\n**Haemodynamic consequences:**\n- As stenosis progresses, **left ventricular filling becomes more dependent on left atrial contraction**.\n- **Dilatation and hypertrophy of the LA** with a rise in **left atrial pressure -> pulmonary venous congestion and breathlessness**.\n- **Any increase in heart rate shortens diastole** (less filling time through the narrowed valve) and produces a further rise in LA pressure — hence tachyarrhythmias are poorly tolerated.\n- Situations that demand increased cardiac output — **pregnancy and exercise** — increase LA pressure and are **poorly tolerated**.\n- **Atrial fibrillation is very common** due to progressive LA dilatation; its onset often **precipitates pulmonary oedema** (tachycardia + loss of atrial contraction).\n- In the presence or absence of AF, **pulmonary hypertension may occur, which can protect the patient from pulmonary oedema** (by pre-loading the resistance); pulmonary hypertension leads to **RV hypertrophy and dilatation, tricuspid regurgitation and right heart failure**.\n- **Fewer than 20% of patients remain in sinus rhythm**, but many of these have a small fibrotic LA and severe pulmonary hypertension.",
+          "key_points": [
+            "Almost always rheumatic; heavy calcification in the elderly; rare congenital",
+            "Orifice: normal ~5 cm2; asymptomatic until <2 cm2; severe <1 cm2",
+            "LV filling depends on atrial contraction; tachycardia shortens diastole and raises LA pressure",
+            "AF very common; onset may precipitate pulmonary oedema",
+            "Pregnancy/exercise poorly tolerated",
+            "Pulmonary hypertension may protect from pulmonary oedema but causes RV failure/TR",
+            "<20% remain in sinus rhythm"
+          ]
+        },
+        {
+          "heading": "Clinical Features and Physical Signs",
+          "body_text": "**Symptoms:**\n- **Effort-related dyspnoea is usually the dominant symptom**, diminishing very slowly over many years until symptoms occur at rest — patients frequently do not appreciate the extent of their disability until the valve disease is treated.\n- **Acute pulmonary oedema or pulmonary hypertension can lead to haemoptysis.**\n- **Fatigue** is common due to a low cardiac output.\n- **Thromboembolism is a common complication, especially with AF** — before anticoagulation, emboli caused one-quarter of all deaths.\n- The physical signs are often found **before symptoms develop**, and their recognition is **of particular importance in pregnancy**.\n\n**Signs (the auscultatory complex):**\n- The forces that open and close the mitral valve increase as LA pressure rises, so the **first heart sound (S1) is loud and can be palpable (tapping apex beat)**.\n- An **opening snap** may be audible and **moves closer to S2 as the stenosis becomes more severe** and LA pressure rises.\n- **However, S1 and the opening snap may be inaudible if the valve is heavily calcified.**\n- Turbulent flow produces the characteristic **low-pitched mid-diastolic murmur** and sometimes a **thrill**; the murmur is **accentuated by exercise and during atrial systole (pre-systolic accentuation)**. Early in the disease a **pre-systolic murmur may be the only abnormality**; in symptomatic patients the murmur **extends from the opening snap to S1**.\n- **Malar flush ('mitral facies')** — the lecture's clinical photographs show the characteristic rosy-purple flushing over the cheekbones of severe MS.\n- **Coexisting mitral regurgitation** causes a **pansystolic murmur radiating to the axilla**.\n- **Pulmonary hypertension** may cause RV hypertrophy/dilatation with **secondary tricuspid regurgitation — a systolic murmur and giant 'v' waves in the venous pulse**.",
+          "key_points": [
+            "Dominant symptom: effort dyspnoea; haemoptysis; fatigue; thromboembolism in AF",
+            "Loud palpable S1 (tapping apex); opening snap moves closer to S2 as severity increases",
+            "Heavily calcified valve: S1 and opening snap may be inaudible",
+            "Low-pitched mid-diastolic murmur, exercise- and presystole-accentuated",
+            "Mitral facies (malar flush)",
+            "Secondary TR with giant v waves in pulmonary hypertension"
+          ],
+          "check": {
+            "prompt": "As mitral stenosis becomes more severe, what happens to the interval between A2 and the opening snap?",
+            "options": [
+              "It lengthens because the left atrium takes longer to empty",
+              "It shortens — higher LA pressure opens the stenotic valve earlier, moving the snap closer to S2",
+              "It remains constant at all severities",
+              "The snap disappears in all cases once symptoms start"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "كلما ارتفع الضغط الأذيني الأيسر انفتح الصمام المتضيق أبكر بعد S2 فتقترب طقة الانفتاح منها — علامة شدة؛ (وتغيب الطقة والصوت الأول إذا تكلست الوريقات بشدة)."
+          }
+        },
+        {
+          "heading": "Investigations and Management",
+          "body_text": "**Box 16.78 Investigations in mitral stenosis:**\n- **ECG:** right ventricular hypertrophy (tall R waves in V1-V3); **P mitrale or atrial fibrillation**.\n- **Chest X-ray:** enlarged left atrium and appendage; signs of pulmonary venous congestion (the lecture's annotated film shows distended pulmonary veins, enlarged pulmonary trunk, splaying of the carina, LA enlargement and the 'double shadow' of LA enlargement).\n- **Echo:** thickened immobile cusps, reduced valve area, enlarged LA, reduced rate of diastolic filling of LV.\n- **Doppler:** pressure gradient across the mitral valve, pulmonary artery pressure, LV function. **Doppler echocardiography is the investigation of choice.**\n- **Cardiac catheterisation:** coronary artery disease, pulmonary artery pressure, mitral stenosis and regurgitation — required if surgery/valvuloplasty is being considered, to screen for coexisting CAD.\n\n**Management:**\n- **Mild symptoms: medical treatment.** Intervention (balloon valvuloplasty, mitral valvotomy or valve replacement) should be considered if the patient **remains symptomatic despite medical treatment or if pulmonary hypertension develops**.\n- **Medical management consists of: anticoagulation** (to reduce systemic embolism risk), **ventricular rate control with digoxin, beta-blockers or rate-limiting calcium antagonists in AF, and diuretics to control pulmonary congestion. Antibiotic prophylaxis against infective endocarditis is no longer routinely recommended.**\n- **Mitral balloon valvuloplasty is the treatment of choice if specific criteria are fulfilled** (pliable, non-calcified valve without significant MR); surgical closed or open mitral valvotomy is an acceptable alternative.\n- After valvuloplasty/valvotomy, follow up at **1-2-yearly intervals because restenosis may occur** (Doppler echo gives the most accurate assessment).\n- **Valve replacement is indicated if there is substantial mitral regurgitation or if the valve is rigid and calcified.**",
+          "key_points": [
+            "ECG: RVH (tall R V1-V3), P mitrale or AF",
+            "CXR: LA enlargement, double shadow, carinal splaying, pulmonary congestion",
+            "Doppler echo = investigation of choice",
+            "Catheterisation to screen CAD before surgery",
+            "Medical: anticoagulation, rate control, diuretics; IE prophylaxis no longer routine",
+            "Valvuloplasty = choice if criteria met; replacement for substantial MR or rigid calcified valve"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Opening snap",
+          "definition_ar": "طقة انبساطية مبكرة عند انفتاح التاجي المتضيق؛ اقترابها من S2 يدل على الشدة."
+        },
+        {
+          "term": "P mitrale",
+          "definition_ar": "موجة P مشطوبة الرأس في تخطيط القلب تدل على تضخم الأذين الأيسر."
+        },
+        {
+          "term": "Mitral facies",
+          "definition_ar": "تورد خدي أرجواني في التضيق التاجي الشديد نتيجة ن低 cardiac output وفرط الضغط الرئوي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L3_c2",
+      "lecture_id": "L3_vhd",
+      "title": "Mitral Regurgitation and Mitral Valve Prolapse",
+      "summary_ar": "ارتجاع التاجي: أسبابه، الفرق بين المزمن والحاد، سريرياته وفق المبدأ الفيزيولوجي، التحاليل، والإدارة (الإصلاح خيار الشديد)؛ وهبوط الصمام التاجي (MVP) بطقطقته ولغطه المتأخر.",
+      "sections": [
+        {
+          "heading": "Mitral Regurgitation — Causes, Pathogenesis and Features",
+          "body_text": "**Box 16.80 Causes of mitral regurgitation:**\n- **Mitral valve prolapse.**\n- **Dilatation of the LV and mitral valve ring** (e.g., coronary artery disease, cardiomyopathy).\n- **Damage to valve cusps and chordae** (e.g., rheumatic heart disease, endocarditis).\n- **Ischaemia or infarction of the papillary muscle; myocardial infarction.**\n\n**Pathogenesis:**\n- **Chronic MR** causes gradual dilatation of the LA with little increase in pressure (compliant atrium) — therefore relatively few symptoms — but the **LV dilates slowly and LV diastolic and LA pressures gradually increase** from chronic volume overload.\n- **Acute MR** causes a **rapid rise in LA pressure (normal atrial compliance) and marked symptomatic deterioration** — presentation with **acute pulmonary oedema**. **Endocarditis is an important cause of acute MR.**\n\n**Clinical features:**\n- Symptoms/signs depend on the underlying cause and how suddenly the regurgitation develops.\n- **The regurgitant jet causes an apical systolic murmur radiating into the axilla**, sometimes with a **thrill** (pansystolic, heard best at apex and left sternal edge).\n- **Increased forward flow through the mitral valve causes a loud third heart sound and even a short mid-diastolic murmur.**\n- The **apex beat feels active and rocking** (LV volume overload) and is **displaced to the left** (LV dilatation).\n- **Functional MR** arises when LV dilatation distorts the geometry of chordae/papillary muscles (dilated cardiomyopathy, heart failure from CAD).",
+          "key_points": [
+            "Causes: MVP, LV/ring dilatation (CAD, CMP), cusp/chordae damage (rheumatic, endocarditis), papillary muscle ischaemia/infarction",
+            "Chronic MR: gradual LA dilatation, few symptoms, slow LV volume overload",
+            "Acute MR: rapid LA pressure rise, acute pulmonary oedema; endocarditis important cause",
+            "Pansystolic apical murmur radiating to axilla; loud S3 (+/- short mid-diastolic flow murmur)",
+            "Active rocking displaced apex (volume overload)"
+          ]
+        },
+        {
+          "heading": "Mitral Valve Prolapse",
+          "body_text": "**Mitral valve prolapse ('floppy' mitral valve) is a common cause of mild mitral regurgitation.**\n- Some cases are due to a **developmental abnormality of the mitral valve**, others to **degenerative myxomatous change** in a normal valve.\n- Rarely, it occurs in association with **Marfan's syndrome**.\n- **In its mildest forms the valve remains competent but bulges back into the atrium during systole, causing a mid-systolic click but NO murmur.**\n- **With a regurgitant valve, the click is followed by a late systolic murmur, which lengthens as regurgitation becomes more severe.**\n- **A click is not always audible and the physical signs may vary with posture and respiration.**\n- **Progressive elongation of the chordae tendineae leads to increasing MR; if chordal rupture occurs, regurgitation suddenly becomes severe** — rare before the fifth or sixth decade.\n- **Associations: typically benign arrhythmias, atypical chest pain and a very small risk of embolic stroke or TIA; overall long-term prognosis is good.**",
+          "key_points": [
+            "'Floppy' valve; developmental or myxomatous degenerative; Marfan association",
+            "Mid-systolic click alone (competent valve); click + late systolic murmur when regurgitant",
+            "Murmur lengthens as MR worsens; signs vary with posture and respiration",
+            "Chordal rupture -> sudden severe MR (rare before 5th-6th decade)",
+            "Benign arrhythmias, atypical chest pain, small embolic risk; good prognosis"
+          ],
+          "check": {
+            "prompt": "A slim 27-year-old woman has a mid-systolic click followed by a short late systolic murmur at the apex that is louder on standing. What is the diagnosis?",
+            "options": [
+              "Rheumatic mitral stenosis",
+              "Mitral valve prolapse",
+              "Ventricular septal defect",
+              "Aortic stenosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "هبوط الصمام التاجي: طقطة وسط انقباض يتبعها لغط متأخر يطول مع تفاقم الارتجاع ويتغير مع الوضعية والتنفس؛ الشابّة النحيلة والوقوف الذي يزيد الظهور كلاهما نمطي."
+          }
+        },
+        {
+          "heading": "Investigations and Management of MR",
+          "body_text": "**Investigations:**\n- **Echocardiography is pivotal** — severity of regurgitation by **Doppler**, plus information on papillary muscle function and valve prolapse.\n- **ECG**: commonly shows **AF** (consequence of atrial dilatation).\n- **Cardiac catheterisation is indicated when surgery is being considered** — severity assessed by **left ventriculography** and by the size of the **v (systolic) waves in the LA or pulmonary artery wedge pressure trace**.\n\n**Management:**\n- **Moderate MR: medical** — **diuretics and vasodilators; digoxin and anticoagulants if AF is present; treat systemic hypertension with vasodilators (ACE inhibitors or ARBs)** since a high afterload may worsen regurgitation.\n- **All patients reviewed at regular intervals clinically and by echocardiography.**\n- **Worsening symptoms, progressive cardiomegaly or echocardiographic evidence of deteriorating LV function are indications for mitral valve replacement or repair.**\n- **Mitral valve REPAIR is now the treatment of choice for severe MR, even in asymptomatic patients**, because results are excellent and **early repair prevents irreversible LV damage**.\n- MR often accompanies LV failure from CAD: at CABG it is common practice to **repair the valve with an annuloplasty ring** to overcome annular dilatation.\n- **Caution:** if **ventricular dilatation is the underlying cause** of MR, repair/replacement **may actually worsen ventricular function** — the ventricle can no longer empty into the low-pressure LA.",
+          "key_points": [
+            "Echo pivotal (Doppler severity, prolapse, papillary muscle function)",
+            "Catheterisation pre-surgery: ventriculography + v wave size",
+            "Medical: diuretics, vasodilators, rate control + anticoagulation in AF, treat hypertension",
+            "Surgery for worsening symptoms, cardiomegaly, deteriorating LV function",
+            "Repair is choice for severe MR even if asymptomatic — prevents irreversible LV damage",
+            "Annuloplasty ring during CABG; repair may worsen ventricle if MR is purely functional"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Mid-systolic click",
+          "definition_ar": "طقطة منتصف الانقباض عند هبوط الوريقات التاجية إلى الأذين؛ سمة MVP."
+        },
+        {
+          "term": "Annuloplasty ring",
+          "definition_ar": "حلقة جراحية تُركَّب حول حلقة التاجي لتضييقها ولمّ الوريقات (إصلاح الارتجاع الوظيفي)."
+        },
+        {
+          "term": "Functional MR",
+          "definition_ar": "ارتجاع تاجي من توسع البطين الأيسر وتشوه هندسة الحبال والحلمات لا من خلل الوريقات ذاتها."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L3_c3",
+      "lecture_id": "L3_vhd",
+      "title": "Aortic Stenosis",
+      "summary_ar": "تضيق الأبهر: توقيت ظهوره حسب السبب، الفيزيولوجيا الضغطية، الأعراض الثلاثة الكاردينالية، اللغط والنبض، التحاليل، وقرارات الاستبدال (AVR/TAVI).",
+      "sections": [
+        {
+          "heading": "Aetiology, Timing and Pathogenesis",
+          "body_text": "**When does haemodynamically significant aortic stenosis develop (by cause)?**\n- **Rheumatic disease: 30-60 years.**\n- **Bicuspid aortic valve: 50-60 years.**\n- **Calcific tricuspid (degenerative) disease: 70-90 years.**\n\n**Pathogenesis:**\n- Cardiac output is initially maintained **at the cost of a steadily increasing pressure gradient across the aortic valve**.\n- With progression, **the LV becomes increasingly hypertrophied and coronary blood flow may be inadequate** — **angina can develop even without coexisting CAD** (which nonetheless affects **over 50%** of patients).\n- **The fixed outflow obstruction limits the increase in cardiac output required on exercise.**\n- Eventually the LV can no longer overcome the obstruction and **LV failure results, leading to pulmonary oedema**.",
+          "key_points": [
+            "Rheumatic 30-60y; bicuspid 50-60y; calcific 70-90y",
+            "Maintained output at cost of rising gradient; LVH",
+            "Angina possible without CAD (supply-demand of hypertrophied LV); CAD coexists in >50%",
+            "Fixed obstruction limits exercise output; eventual LV failure"
+          ]
+        },
+        {
+          "heading": "Clinical Features, Signs and Course",
+          "body_text": "**Box 16.85 Clinical features of aortic stenosis:**\n- **Symptoms:** mild/moderate stenosis usually asymptomatic; **exertional dyspnoea, angina, exertional syncope, sudden death, episodes of acute pulmonary oedema.**\n  - **Angina** arises from the increased demands of the hypertrophied LV against high-pressure outflow obstruction, or coexisting CAD.\n  - **Exertional breathlessness suggests cardiac decompensation.**\n  - **Syncope usually occurs on exertion when cardiac output fails to rise to meet demand, leading to a fall in BP.**\n  - Severely stenotic but 'asymptomatic' patients may simply have a **sedentary lifestyle** — a careful exercise test may reveal symptoms on modest exertion.\n- **Signs:** **ejection systolic murmur; slow-rising carotid pulse; thrusting apex beat (LV pressure overload); narrow pulse pressure; signs of pulmonary venous congestion.**\n\n**Auscultatory detail (lecture figure):** the murmur is **harsh, ejection systolic, radiating to the neck** with a **soft second heart sound** in calcific valves — **often likened to a saw cutting wood, and may have a musical quality like the 'mew' of a seagull'**; the diagram also shows **post-stenotic dilatation of the aortic arch, LV hypertrophy, and the peak-to-peak systolic gradient with diminished pulse pressure**.\n\n**Pitfalls:**\n- **Severity may be difficult to gauge clinically** — older patients with a non-compliant 'stiff' arterial system may have an apparently **normal carotid upstroke despite severe stenosis**.\n- **Milder stenosis may be difficult to distinguish from aortic sclerosis** (thickened/calcified but non-obstructed valve).\n- Examine carefully for **other valve lesions** — in rheumatic heart disease there is frequently **concomitant mitral valve disease**.\n\n**Natural history (exam favourite):** unlike mitral stenosis (slow progression), aortic stenosis patients **remain asymptomatic for many years but deteriorate rapidly when symptoms develop; if otherwise untreated, they usually die within 3-5 years of presentation**.",
+          "key_points": [
+            "Cardinal symptoms: angina, breathlessness, syncope (+ sudden death, acute pulmonary oedema)",
+            "Slow-rising pulse, thrusting apex, narrow pulse pressure, soft S2",
+            "Murmur: harsh ejection systolic radiating to neck; 'saw cutting wood'/'seagull mew'",
+            "Stiff arteries can mask the carotid sign in the elderly",
+            "Distinguish from aortic sclerosis; look for concomitant mitral disease (rheumatic)",
+            "Death within 3-5 years once symptomatic if untreated"
+          ],
+          "check": {
+            "prompt": "A 76-year-old with critical aortic stenosis refuses surgery, saying he 'feels fine'. What must he be told about prognosis if symptoms develop?",
+            "options": [
+              "Benign course — most survive over 15 years",
+              "Rapid deterioration — untreated symptomatic severe AS usually leads to death within 3-5 years",
+              "Symptoms improve spontaneously in the elderly",
+              "Only syncope carries risk, not dyspnoea"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المتلازمة الكلاسيكية: البقاء بلا أعراض سنوات ثم التدهور السريع بعد ظهورها، والوفاة خلال 3-5 سنوات دون استبدال — وكل الأعراض الثلاثة (ذبحة، زلة، غشي) تنبئية."
+          }
+        },
+        {
+          "heading": "Investigations and Management",
+          "body_text": "**Investigations:**\n- **Echocardiography is pivotal** — restricted valve opening; **Doppler permits calculation of the systolic gradient** and severity assessment.\n- **Low-flow aortic stenosis:** in impaired LV function, velocities are **diminished because of reduced stroke volume** (underestimation).\n- **Marked AR or elevated cardiac output increases velocities** (increased stroke volume) and may **overestimate severity**.\n- **ECG:** pronounced hypertrophy features in advanced cases with **down-sloping ST segments and T inversion ('strain pattern') in lateral leads** (LV fibrosis) — but the ECG **can be normal despite severe stenosis**.\n- **CT and MRI** may help assess **valve calcification** and stenosis where there is uncertainty.\n\n**Management:**\n- **Asymptomatic aortic stenosis: good immediate prognosis — conservative management** with regular review. Development of **angina, syncope, low-output symptoms or heart failure has a poor prognosis and is an indication for prompt surgery.**\n- **Moderate/severe stenosis: Doppler echo surveillance every 1-2 years; more frequent (3-6-monthly) in older patients with heavily calcified valves.**\n- **Symptomatic severe AS: prompt aortic valve replacement (AVR)** — delay exposes the patient to **sudden death or irreversible ventricular deterioration**.\n- **Old age is not a contraindication to valve replacement** — results are very good even in the eighties, **especially with transcatheter aortic valve implantation (TAVI)**.\n- **Aortic balloon valvuloplasty is useful in congenital aortic stenosis but has limited value in older patients with calcific stenosis.**\n- **Anticoagulants only for AF or a mechanical prosthesis.**",
+          "key_points": [
+            "Doppler gradient; low-flow AS underestimates, high-output/AR overestimates severity",
+            "Strain pattern on ECG; ECG may be normal despite severe AS",
+            "Asymptomatic: conservative + surveillance (1-2 years; 3-6 months if elderly/calcified)",
+            "Symptomatic severe AS: prompt AVR",
+            "TAVI for the elderly; valvuloplasty useful in congenital, limited in calcific",
+            "Anticoagulation only if AF or mechanical valve"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "TAVI",
+          "definition_ar": "غرس صمام أبهري عبر القسطرة؛ خيار المسنين عالي الخطورة."
+        },
+        {
+          "term": "Aortic sclerosis",
+          "definition_ar": "تثخن/تكلس الصمام الأبهري دون إعاقة تدفق — يجب تمييزه عن التضيق."
+        },
+        {
+          "term": "Strain pattern",
+          "definition_ar": "انحراف ST هابط وقلب موجة T في التوصيلات الوحشية؛ فرط تضخم بطين أيسر وليفي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L3_c4",
+      "lecture_id": "L3_vhd",
+      "title": "Aortic Regurgitation",
+      "summary_ar": "ارتجاع الأبهر: أسبابه الخلقية والمكتسبة، فيزيولوجيه الحجمي، العلامات المسماة (كوينكه، دوروزيهه، دي موسيه)، لغط أوستن فلينت، الشكل الحاد المقنع، والقرار الجراحي بالبعد الانقباضي 55 ملم.",
+      "sections": [
+        {
+          "heading": "Causes and Pathogenesis",
+          "body_text": "**Box 16.88 Causes of aortic regurgitation:**\n- **Congenital: bicuspid valve or disproportionate cusps.**\n- **Acquired:**\n  - **Rheumatic disease**\n  - **Infective endocarditis**\n  - **Trauma**\n  - **Causes of aortic dilatation: Marfan's syndrome, aneurysm, aortic dissection, syphilis, ankylosing spondylitis.**\n\n**Pathogenesis:** regurgitation through the aortic valve causes the **LV to dilate as cardiac output increases** to maintain circulatory demands; **the stroke volume may eventually be doubled and the major arteries become conspicuously pulsatile**. As disease progresses, **LV failure develops, raising LV end-diastolic pressure and causing pulmonary oedema**.",
+          "key_points": [
+            "Valve causes: bicuspid, rheumatic, endocarditis, trauma",
+            "Root causes: Marfan, aneurysm, dissection, syphilis, ankylosing spondylitis",
+            "Stroke volume may double — conspicuously pulsatile arteries",
+            "Progression to LV failure and pulmonary oedema"
+          ]
+        },
+        {
+          "heading": "Clinical Features (Box 16.89) and the Austin Flint Murmur",
+          "body_text": "**Symptoms:**\n- **Mild-to-moderate AR: often asymptomatic; palpitations.** Until breathlessness begins, the only symptom may be **awareness of the heartbeat, particularly when lying on the left side** (increased stroke volume). **Paroxysmal nocturnal dyspnoea** is sometimes the first symptom; peripheral oedema or angina may occur.\n- **Severe AR: breathlessness, angina.**\n\n**Signs — pulses:**\n- **Large-volume 'collapsing' pulse; low diastolic and increased pulse pressure; bounding peripheral pulses.**\n- **Quincke's sign — capillary pulsation in the nail beds.**\n- **Duroziez's sign — femoral bruit ('pistol shot').**\n- **de Musset's sign — head nodding with the pulse.**\n\n**Murmurs:**\n- **Early diastolic murmur, best heard to the left of the sternum during held expiration** (patient leaning forward) — a thrill is rare.\n- **A systolic murmur due to increased stroke volume is common and does NOT necessarily indicate stenosis.**\n- **Austin Flint murmur: the regurgitant jet causes fluttering of the mitral valve and, if severe, partial closure of the anterior mitral leaflet — functional mitral stenosis with a soft mid-diastolic murmur.**\n\n**Acute severe AR** (e.g., **perforation of an aortic cusp in endocarditis**): there is **no time for compensatory LV hypertrophy and dilatation**; **features of heart failure predominate and the classical signs may be masked** — tachycardia and abrupt rise of LVEDP may keep the **pulse pressure normal or near-normal**, and the **diastolic murmur may be short or even absent**.",
+          "key_points": [
+            "Palpitations (lying on left side); PND may be first symptom",
+            "Collapsing pulse, wide pulse pressure, bounding pulses",
+            "Eponyms: Quincke (nail-bed capillary pulsation), Duroziez (femoral pistol shot), de Musset (head nodding)",
+            "Early diastolic murmur, left sternal edge, held expiration, leaning forward",
+            "Systolic murmur from high stroke volume — not necessarily stenosis",
+            "Austin Flint: soft mid-diastolic from jet-induced partial anterior leaflet closure",
+            "Acute severe AR masks classic signs; HF predominates"
+          ],
+          "check": {
+            "prompt": "In a patient with severe chronic aortic regurgitation, what produces the Austin Flint murmur?",
+            "options": [
+              "A stenotic mitral valve of rheumatic origin",
+              "The aortic regurgitant jet fluttering and partially closing the anterior mitral leaflet (functional mitral stenosis)",
+              "Increased flow through a regurgitant mitral valve",
+              "Aortic valve leaflet prolapse into the LV"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النفث الأبهري المرتد يرجر الوريقة الأمامية التاجية ويغلقها جزئياً فينشأ لغط انبساطي وسطي ناعم (تضيق تاجي وظيفي) — لا علاقة له بتضيق تاجي عضوي."
+          }
+        },
+        {
+          "heading": "Investigations and Management",
+          "body_text": "**Box 16.90 Investigations in aortic regurgitation:**\n- **ECG:** initially normal; later **LV hypertrophy and T-wave inversion**.\n- **Chest X-ray:** **cardiac dilatation, maybe aortic dilatation; features of left heart failure.**\n- **Echo:** **dilated LV, hyperdynamic LV, Doppler detects reflux, fluttering anterior mitral leaflet.**\n- **Cardiac catheterisation (not always required):** dilated LV, aortic regurgitation, dilated aortic root.\n\n**Management:**\n- **Treat underlying conditions** (endocarditis, syphilis).\n- **Aortic valve replacement if AR causes symptoms** — may need to be combined with **aortic root replacement and coronary bypass surgery**.\n- Chronic AR patients can remain **asymptomatic for many years** (compensatory dilatation/hypertrophy) but must **report any breathlessness or angina**.\n- **Asymptomatic patients: annual echocardiographic follow-up** for increasing ventricular size — **if the end-systolic dimension increases to 55 mm or more, aortic valve replacement should be undertaken**.\n- **Systemic hypertension: control systolic BP with vasodilators.** Evidence is conflicting on AVR for asymptomatic severe AR.\n- **When aortic root dilatation is the cause (e.g., Marfan's syndrome), aortic root replacement is usually necessary.**",
+          "key_points": [
+            "Echo: dilated hyperdynamic LV, Doppler reflux, fluttering anterior mitral leaflet",
+            "AVR when symptomatic; combine with root replacement/CABG as needed",
+            "Annual echo surveillance; operate when end-systolic dimension >= 55 mm",
+            "Vasodilators for systolic hypertension",
+            "Marfan/root dilatation: aortic root replacement"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Austin Flint murmur",
+          "definition_ar": "لغط انبساطي وسطي ناعم في AR الشديد من الإغلاق الجزئي الوظيفي للوريقة التاجية الأمامية بالنفث المرتد."
+        },
+        {
+          "term": "Quincke's sign",
+          "definition_ar": "نبض شعرية ظفرية في AR الشديد."
+        },
+        {
+          "term": "de Musset's sign",
+          "definition_ar": "إيماءة الرأس مع النبض في AR الشديد."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "L3_c5",
+      "lecture_id": "L3_vhd",
+      "title": "Tricuspid and Pulmonary Valve Disease",
+      "summary_ar": "أمراض الصمامات اليمنى: تضيق وارتجاف الثلاثي (الت waveform الوداجي، الكبدي النابض، الحلقة البلاستيكية)، وتضيق وارتجاف الرئوي (مورغان غراهام ستيل، الانبساطي الرئوي الترفيهي).",
+      "sections": [
+        {
+          "heading": "Tricuspid Stenosis and Regurgitation",
+          "body_text": "**Tricuspid stenosis:**\n- **Usually rheumatic in origin** and rare in developed countries; **tricuspid disease occurs in fewer than 5% of patients with rheumatic heart disease, nearly always with mitral and aortic valve disease.**\n- **Tricuspid stenosis and regurgitation may also occur in the carcinoid syndrome.**\n- Symptoms: those of mitral/aortic disease predominate, but tricuspid stenosis may cause **right heart failure — hepatic discomfort, peripheral oedema**; right heart failure causes **hepatomegaly with presystolic pulsation (large a wave), ascites and peripheral oedema**.\n- **Main clinical feature: raised JVP with a prominent a wave and a slow y descent** (loss of normal rapid RV filling).\n- **Mid-diastolic murmur best heard at the lower left or right sternal edge — higher-pitched than the MS murmur and INCREASED BY INSPIRATION.**\n- Diagnosis: **Doppler echocardiography** (appearances similar to rheumatic MS).\n- Management: during surgery to other valves, the tricuspid valve can be **replaced or treated with valvotomy**; **balloon valvuloplasty** for rare isolated cases.\n\n**Tricuspid regurgitation:**\n- **Common, and most frequently FUNCTIONAL — RV dilatation from right or biventricular failure.**\n- Symptoms non-specific: **tiredness (reduced cardiac output), oedema and hepatic enlargement (venous congestion)**.\n- **Most prominent sign: a 'giant' v wave in the JVP (a cv wave replaces the normal x descent)**; other features: **pansystolic murmur at the lower left sternal edge and a pulsatile liver**.\n- Echo: RV dilatation; thickened leaflets if rheumatic; vegetations in endocarditis.\n- Management: functional TR **often improves when the cardiac failure is treated**; patients with normal pulmonary artery pressure tolerate isolated TR well; **endocarditis-damaged valves do not usually need replacement**. During mitral valve replacement with TR from **annular dilatation**, patients benefit from **repair with an annuloplasty ring**; rheumatic damage may require tricuspid valve replacement.",
+          "key_points": [
+            "TS: rheumatic (<5% of RHD, with mitral/aortic disease) or carcinoid",
+            "TS signs: raised JVP, prominent a wave, slow y descent; presystolic pulsatile hepatomegaly",
+            "TS murmur: mid-diastolic, lower sternal edges, higher-pitched, louder on inspiration",
+            "TR: mostly functional from RV dilatation; giant v wave (cv wave), pulsatile liver, pansystolic murmur",
+            "TR surgery: annuloplasty ring at mitral surgery; replacement for rheumatic damage"
+          ]
+        },
+        {
+          "heading": "Pulmonary Stenosis and Regurgitation",
+          "body_text": "**Pulmonary stenosis:**\n- Can occur in the **carcinoid syndrome** but is **usually congenital** — isolated or associated with other abnormalities such as **Fallot's tetralogy**.\n- **Principal finding: ejection systolic murmur, loudest at the LEFT UPPER STERNUM, radiating towards the LEFT SHOULDER**; there may be a **thrill, best felt when the patient leans forwards and breathes out**; the murmur is often **preceded by an ejection sound (click)**; **delay in RV ejection may cause wide splitting of S2**.\n- **Severe PS: loud harsh murmur, inaudible pulmonary closure sound (P2), increased RV heave, and prominent a waves in the jugular pulse.**\n- Investigations: **Doppler echocardiography is definitive**; ECG may show RVH; **post-stenotic dilatation of the pulmonary artery may be seen on CXR**.\n- Management: **mild-to-moderate isolated PS is relatively common and does not usually progress or require treatment.** **Severe PS (resting gradient > 50 mmHg with normal cardiac output): percutaneous pulmonary balloon valvuloplasty**, or surgical valvotomy if unavailable — **long-term results are very good; post-operative pulmonary regurgitation is common but benign.**\n\n**Pulmonary regurgitation:**\n- **Rare in isolation; usually associated with pulmonary artery dilatation due to pulmonary hypertension.**\n- **May complicate mitral stenosis**, producing an **early diastolic decrescendo murmur at the left sternal edge that is difficult to distinguish from aortic regurgitation — the GRAHAM STEELL murmur**.\n- The pulmonary hypertension may be **secondary to other left-heart disease, primary pulmonary vascular disease or Eisenmenger's syndrome.**\n- **Trivial pulmonary regurgitation is a frequent finding in normal individuals and has no clinical significance.**",
+          "key_points": [
+            "PS: congenital (isolated or Fallot) or carcinoid",
+            "PS murmur: ejection systolic, left upper sternum to left shoulder; click; wide split S2; thrill leaning forward in expiration",
+            "Severe PS: absent P2, RV heave, prominent a waves",
+            "Severe PS (>50 mmHg gradient): balloon valvuloplasty; post-procedure PR common but benign",
+            "PR: usually with pulmonary hypertension/PA dilatation; Graham Steell murmur in MS",
+            "Trivial PR is normal and insignificant"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Graham Steell murmur",
+          "definition_ar": "لغط انبساطي مبكر متناقص بالحافة القصية اليسرى من ارتجاع رئوي بفرط ضغط رئوي (يصاحب تضيق التاجي)؛ يشبه ارتجاع الأبهر."
+        },
+        {
+          "term": "Carcinoid syndrome",
+          "definition_ar": "متلازمة سرطاوية تسبب تليفاً صمامياً يميناً (تضيق/ارتجاف ثلاثي ورئوي) بفعل السيروتونين."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "L3_c6",
+      "lecture_id": "L3_vhd",
+      "title": "Prosthetic Heart Valves",
+      "summary_ar": "الصمامات الصناعية: مقارنة الحيوي بالميكانيكي، جدول مضادات التخثر (الوارفارين مقابل NOAC)، اختيار الصمام حسب العمر والموقع، وموانع كل نوع.",
+      "sections": [
+        {
+          "heading": "Bioprosthetic vs Mechanical Valves",
+          "body_text": "**The two valve families (lecture comparison):**\n\n| Feature | Biologic (bioprosthetic) | Mechanical |\n|---|---|---|\n| Durability | **Lasts 8-10 years** (degenerates) | **Lasts > 20 years** |\n| Anticoagulation | **No anticoagulation** (beyond standard indications) | **Lifelong anticoagulation required** |\n\n**Anticoagulation considerations (lecture table comparing NOACs/DOACs with warfarin):**\n- **NOAC advantages:** rapid onset and offset; **less intracranial bleeding and haemorrhagic stroke**; **no need for laboratory monitoring**; **fewer drug-drug and food interactions**.\n- **NOAC disadvantages:** higher cost; **more GI bleeding**; **ineffective for mechanical heart valves and moderate-to-severe mitral stenosis** (contraindicated — warfarin remains the agent); **contraindicated in eGFR < 25-30 mL/min**.\n\n**Valve choice by age and position (lecture table):**\n| Position | Favour mechanical | Borderline | Favour bioprosthesis |\n|---|---|---|---|\n| Aortic valve | **< 60 years** | 60-65 years | **> 65 years** |\n| Mitral valve | **< 65 years** | 65-70 years | **> 70 years** |\n\nThe decision also weighs **patient desire** and comorbidity, not age alone.",
+          "key_points": [
+            "Biologic: 8-10 years, no anticoagulation; mechanical: >20 years, lifelong anticoagulation",
+            "NOACs: no monitoring, less ICH, fewer interactions; but costly, more GI bleeding, ineffective in mechanical valves and moderate-severe MS, avoid if eGFR <25-30",
+            "Aortic: mechanical <60y, bioprosthetic >65y; mitral: mechanical <65y, bioprosthetic >70y"
+          ]
+        },
+        {
+          "heading": "When NOT to Use Each Valve Type",
+          "body_text": "**Biological valve — NOT recommended for:**\n- **Young age < 40 years** (rapid degeneration).\n- **Hyperparathyroidism** (accelerated valve degeneration).\n- **High risk for redo surgery**: prior radiotherapy, **porcelain aorta**, more than one valve to replace, ventricular dysfunction.\n- **The patient already has another indication for anticoagulation** — e.g., AF, venous thromboembolism, or another mechanical valve (the anticoagulation 'requirement' already exists, so a mechanical valve adds durability at no extra anticoagulation cost).\n\n**Mechanical valve — NOT recommended for:**\n- **Reproductive-age women contemplating pregnancy** (warfarin teratogenicity).\n- **High bleeding risk**: high-risk occupation, previous major bleeding, poor compliance.\n- **High thrombotic risk**: history of valve thrombosis on adequate anticoagulation, poor compliance/adherence.\n- **Low life expectancy: less than 10 years.**\n\n**Anticoagulation trade-offs** to discuss with the patient: **teratogenicity, bleeding and thrombosis** (the lecture's decision-diagram branches).",
+          "key_points": [
+            "Avoid bioprosthetic: age <40, hyperparathyroidism, high redo-surgery risk, other anticoagulation indication",
+            "Avoid mechanical: pregnancy contemplation, high bleeding risk, high thrombotic risk, life expectancy <10 years",
+            "Shared decision considers patient desire and age"
+          ],
+          "check": {
+            "prompt": "A 33-year-old woman with severe symptomatic aortic stenosis wants a valve replacement but plans to have children within 5 years. Which valve strategy best fits the lecture's rules?",
+            "options": [
+              "Mechanical valve with high-intensity warfarin throughout pregnancy",
+              "Bioprosthetic valve now (accepting possible redo), because mechanical valves are not recommended in reproductive-age women contemplating pregnancy",
+              "No valve replacement at all",
+              "Mechanical valve with DOAC anticoagulation"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الصمام الميكانيكي غير موصى به للنساء في سن الإنجاب الراغبات بالحمل (تَسَمُّمية الوارفارين)؛ والـNOACs لا تصلح للصمامات الميكانيكية أصلاً؛ فالحيوي مع احتمال إعادة جراحة لاحقة هو الخيار العملي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Porcelain aorta",
+          "definition_ar": "أبهر شديد التكلس يُصعب تثبيت الملاقط عليه؛ خطر عالٍ لإعادة الجراحة."
+        },
+        {
+          "term": "TAVI",
+          "definition_ar": "زرع صمام أبهري عبر القسطرة — بديل قسطري للاستبدال الجراحي عند المسنين ومرتفعي الخطورة."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L3_f1",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "What are the mitral valve orifice areas: normal, symptomatic threshold, and severe stenosis?",
+      "back_text": "Normal about 5 cm2 in diastole; patients usually asymptomatic until < 2 cm2; severe mitral stenosis < 1 cm2. MS is almost always rheumatic (heavy calcification in the elderly; rare congenital form).",
+      "explanation_ar": "الفتحة الطبيعية ~5 سم2؛ الأعراض عند <2؛ الشديد <1؛ والسبب الروماتيزم تقريباً دائماً.",
+      "tags": [
+        "MS",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L3_f2",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "Why does the onset of atrial fibrillation often precipitate pulmonary oedema in mitral stenosis?",
+      "back_text": "AF is common from progressive LA dilatation; the accompanying tachycardia shortens diastole (less filling time) and loss of atrial contraction removes the 'booster pump' — together causing marked haemodynamic deterioration and a rapid rise in LA pressure.",
+      "explanation_ar": "الرجفان يسرع القلب فيقصر الانبساط ويُفقد تقلص الأذين الذي يعتمد عليه امتلاء البطين — فيرتفع الضغط الأذيني بسرعة وتحدث الوذمة الرئوية.",
+      "is_vivid": true,
+      "tags": [
+        "MS",
+        "physiology"
+      ]
+    },
+    {
+      "id": "L3_f3",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "Describe the auscultatory findings of mitral stenosis.",
+      "back_text": "Loud S1 (palpable tapping apex beat); opening snap that moves closer to S2 as stenosis worsens; low-pitched mid-diastolic murmur with pre-systolic accentuation (accentuated by exercise and atrial systole). S1 and the snap may be inaudible if the valve is heavily calcified.",
+      "explanation_ar": "S1 عالٍ وطقة انفتاح تقترب من S2 كلما زاد التضيق ولغط انبساطي وسطي منخفض النغمة مع تعزيز قبل-انقباضي؛ وتختفي الطقة والصوت الأول مع التكلس الشديد.",
+      "tags": [
+        "MS",
+        "auscultation"
+      ]
+    },
+    {
+      "id": "L3_f4",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "What is the Box 16.78 investigation profile of mitral stenosis?",
+      "back_text": "ECG: RVH (tall R in V1-V3), P mitrale or AF. CXR: enlarged LA and appendage, pulmonary venous congestion (double shadow, carinal splaying). Echo: thickened immobile cusps, reduced valve area, enlarged LA. Doppler: pressure gradient, pulmonary artery pressure, LV function (investigation of choice). Catheterisation if surgery considered (screen for CAD).",
+      "explanation_ar": "ECG: فرط تضخم أيمن وP تاجية أو رجفان؛ الصورة: تضخم أذين أيسر واحتقان وريدي رئوي؛ الصدى: وريقات مثخنة جامدة ومساحة أصغر؛ والدوبلر هو الفحص المختار.",
+      "tags": [
+        "MS",
+        "investigations"
+      ]
+    },
+    {
+      "id": "L3_f5",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "Summarise the management of mitral stenosis.",
+      "back_text": "Medical (mild symptoms): anticoagulation, rate control (digoxin, beta-blockers, rate-limiting calcium antagonists) in AF, diuretics for congestion; IE prophylaxis no longer routinely recommended. Intervention if symptomatic despite medical therapy or pulmonary hypertension: balloon valvuloplasty (treatment of choice if criteria fulfilled), surgical valvotomy, or valve replacement (substantial MR or rigid calcified valve). Follow-up 1-2-yearly after valvuloplasty for restenosis.",
+      "explanation_ar": "طبياً: مضاد تخثر وضبط معدل ومدرات؛ التدخل عند استمرار الأعراض أو فرط الضغط الرئوي: رأب بالبالون (الخيار عند تحقق المعايير) أو شق الصمام أو الاستبدال (ارتجاع كبير/صمام متكلس صلب).",
+      "tags": [
+        "MS",
+        "management"
+      ]
+    },
+    {
+      "id": "L3_f6",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "List the causes of mitral regurgitation (Box 16.80).",
+      "back_text": "Mitral valve prolapse; dilatation of the LV and mitral valve ring (CAD, cardiomyopathy); damage to valve cusps and chordae (rheumatic disease, endocarditis); ischaemia/infarction of the papillary muscle; myocardial infarction.",
+      "explanation_ar": "هبوط التاجي، توسع البطين والحلقة (إكليلي/اعتلال عضلة)، تخريب الوريقات والحبال (روماتيزم/شغاف)، ونقص تروية أو احتشاء الحلمة العضلية.",
+      "tags": [
+        "MR"
+      ]
+    },
+    {
+      "id": "L3_f7",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "Contrast chronic and acute mitral regurgitation.",
+      "back_text": "Chronic: gradual LA dilatation with little pressure rise — few symptoms — but slow LV dilatation and volume overload with gradually rising LA/LV diastolic pressures. Acute: normal atrial compliance means a rapid rise in LA pressure — marked symptomatic deterioration and acute pulmonary oedema (endocarditis is an important cause).",
+      "explanation_ar": "المزمن: أذين مطواع يتوسع بلا ارتفاع ضغط يذكر وأعراض قليلة لكن توسع بطين بطيء؛ الحاد: ارتفاع ضغط أذيني سريع ووذمة رئوية حادة (الشغاف سبب مهم).",
+      "is_vivid": true,
+      "tags": [
+        "MR",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L3_f8",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "What are the physical signs of established mitral regurgitation?",
+      "back_text": "Pansystolic apical murmur radiating to the axilla (± thrill); loud S3 ± short mid-diastolic flow murmur; active, rocking, left-displaced apex beat (LV volume overload). ECG commonly shows AF.",
+      "explanation_ar": "لغط شامل قمي يذيع للإبط مع S3 عالٍ وقمة نشطة متأرجحة منزاحة يساراً.",
+      "tags": [
+        "MR",
+        "signs"
+      ]
+    },
+    {
+      "id": "L3_f9",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "What is the surgical strategy for severe mitral regurgitation and why act early?",
+      "back_text": "Mitral valve REPAIR is now the treatment of choice for severe MR even in asymptomatic patients — excellent results and early repair prevents irreversible LV damage. Annuloplasty ring repairs annular dilatation (e.g., at CABG). Caution: if ventricular dilatation is the primary cause, repair/replacement may WORSEN ventricular function.",
+      "explanation_ar": "الإصلاح هو خيار الشديد حتى بلا أعراض لنتائجه الممتازة ودرئه الضرر البطيني غير العكوس؛ والحذر إن كان توسع البطين هو السبب فقد يسوء بعد الإصلاح.",
+      "tags": [
+        "MR",
+        "management"
+      ]
+    },
+    {
+      "id": "L3_f10",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "Describe mitral valve prolapse (floppy valve).",
+      "back_text": "Common cause of mild MR; developmental abnormality or degenerative myxomatous change; Marfan association. Mid-systolic click (competent valve); click + late systolic murmur when regurgitant, lengthening with severity, varying with posture/respiration. Chordal rupture (rare before 5th-6th decade) causes sudden severe MR. Benign arrhythmias, atypical chest pain, small embolic risk; good prognosis.",
+      "explanation_ar": "طقطة وسط انقباض ± لغط متأخر يطول مع الشدة ويتغير بالوضعية؛ تمزق الحبال يحدث ارتجاعاً حاداً مفاجئاً؛ نظميات حميدة وألم صدر لانموذجي ومآل جيد.",
+      "tags": [
+        "MVP"
+      ]
+    },
+    {
+      "id": "L3_f11",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "At what ages does significant aortic stenosis present for each cause?",
+      "back_text": "Rheumatic disease: 30-60 years; bicuspid aortic valve: 50-60 years; calcific tricuspid (degenerative) disease: 70-90 years.",
+      "explanation_ar": "روماتيزمي 30-60؛ ثنائي الشرف 50-60؛ تكلسي تنكسي 70-90 سنة.",
+      "mnemonic_ar": "حيلة: الروماتيزمي أبكر، والثنائي بالوسط، والتكلسي بالشيخوخة.",
+      "tags": [
+        "AS",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L3_f12",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "What are the three cardinal symptoms of aortic stenosis and their mechanisms?",
+      "back_text": "Angina (demand of hypertrophied LV against obstruction, or coexisting CAD in >50%); exertional syncope (cardiac output fails to rise on exertion -> fall in BP); exertional dyspnoea (decompensation of the pressure-overloaded LV). Also sudden death and acute pulmonary oedema. Symptomatic untreated severe AS: death within 3-5 years.",
+      "explanation_ar": "الذبحة (طلب البطين المتضخم أو إكليلي مصاحب >50%)، الغشي المجهودي (فشل رفع النتاج)، والزلة (انهيار البطين المثقل بالضغط)؛ وبلا علاج: وفاة خلال 3-5 سنوات بعد ظهور الأعراض.",
+      "is_vivid": true,
+      "tags": [
+        "AS",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L3_f13",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "What physical signs characterize aortic stenosis, and what are the Doppler pitfalls?",
+      "back_text": "Harsh ejection systolic murmur radiating to the neck ('saw cutting wood'/'seagull mew'), soft S2, slow-rising pulse, thrusting apex, narrow pulse pressure. Pitfalls: stiff arteries can mask the carotid sign in the elderly; low-flow AS underestimates gradients; high-output/AR overestimates; ECG can be normal despite severe AS; distinguish from aortic sclerosis.",
+      "explanation_ar": "لغط قذفي خشن يذيع للرقبة، S2 خافت، نبض بطيء الارتفاع، قمة متوهجة وضغط نبضي ضيق؛ ومنهاز: الشرايين المتصلبة تخفي العلامة، وlow-flow يقلل التقدير، وAR/فرط النتاج يرفعه.",
+      "tags": [
+        "AS"
+      ]
+    },
+    {
+      "id": "L3_f14",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "Summarise the management of aortic stenosis.",
+      "back_text": "Asymptomatic: conservative with review — Doppler echo every 1-2 years (3-6-monthly if elderly/heavily calcified). Symptomatic severe AS: prompt aortic valve replacement; delay risks sudden death or irreversible ventricular damage. Old age is NOT a contraindication (excellent results, especially TAVI). Balloon valvuloplasty useful in congenital AS but limited in calcific. Anticoagulation only for AF or mechanical prosthesis.",
+      "explanation_ar": "بلا أعراض: مراقبة بالصدى كل 1-2 سنة؛ الشديد العرضي: استبدال عاجل؛ الشيخوخة ليست مانعاً (TAVI)؛ والبالون للخلقي لا التكلسي.",
+      "tags": [
+        "AS",
+        "management"
+      ]
+    },
+    {
+      "id": "L3_f15",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "List the causes of aortic regurgitation (Box 16.88).",
+      "back_text": "Congenital: bicuspid valve or disproportionate cusps. Acquired: rheumatic disease, infective endocarditis, trauma; causes of aortic dilatation — Marfan's syndrome, aneurysm, aortic dissection, syphilis, ankylosing spondylitis.",
+      "explanation_ar": "خلقي: ثنائي الشرف؛ مكتسب: روماتيزم، شغاف، رض؛ وأسباب توسع الأبهر: مارفان، أم دم، تسلخ، زهري، والتهاب الفقار المقسّط.",
+      "tags": [
+        "AR"
+      ]
+    },
+    {
+      "id": "L3_f16",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "Name the eponymous signs of severe aortic regurgitation.",
+      "back_text": "Quincke's sign (capillary pulsation in nail beds); Duroziez's sign (femoral 'pistol shot' bruit); de Musset's sign (head nodding with pulse); plus collapsing pulse, wide pulse pressure, bounding peripheral pulses. Murmurs: early diastolic (left sternal edge, held expiration, leaning forward) + systolic flow murmur + Austin Flint mid-diastolic murmur.",
+      "explanation_ar": "كوينكه (نبض الشعيرات الظفرية)، دوروزيهه (طلقة مسدس فخذية)، دي موسيه (إيماءة الرأس)؛ مع اللغط الانبساطي المبكر وأوستن فلينت.",
+      "tags": [
+        "AR",
+        "eponyms"
+      ]
+    },
+    {
+      "id": "L3_f17",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "Why are classic signs of aortic regurgitation MASKED in acute severe AR?",
+      "back_text": "In acute severe AR (e.g., cusp perforation in endocarditis) there is no time for compensatory LV hypertrophy/dilatation; heart failure predominates and tachycardia with abrupt rise of LVEDP keeps pulse pressure normal or near-normal — the diastolic murmur may be short or even absent.",
+      "explanation_ar": "لا وقت للتعويض البطيني في AR الحاد فتسود مظاهر القصور ويكون الضغط النبضي طبيعياً تقريباً واللغط قصيراً أو غائباً.",
+      "is_vivid": true,
+      "tags": [
+        "AR",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L3_f18",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "When is aortic valve replacement indicated in ASYMPTOMATIC severe AR?",
+      "back_text": "Annual echo surveillance; aortic valve replacement when the LV end-systolic dimension increases to 55 mm or more (or increasing ventricular size), even without symptoms. Vasodilators control systolic hypertension; aortic root replacement when root dilatation (e.g., Marfan's) is the cause.",
+      "explanation_ar": "مراقبة سنوية بالصدى والاستبدال عند وصول البعد الانقباضي النهائي ≥55 ملم أو تزايد حجم البطين.",
+      "tags": [
+        "AR",
+        "management"
+      ]
+    },
+    {
+      "id": "L3_f19",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "What are the clinical features of tricuspid stenosis and regurgitation?",
+      "back_text": "TS (rheumatic <5% of RHD, or carcinoid): raised JVP with prominent a wave and slow y descent; mid-diastolic murmur at the lower sternal edges, higher-pitched than MS and louder on inspiration; presystolic pulsatile hepatomegaly. TR (mostly functional from RV dilatation): giant v wave (cv wave), pansystolic murmur at the lower left sternal edge, pulsatile liver; improves when heart failure is treated; annuloplasty ring at mitral surgery.",
+      "explanation_ar": "التضيق: a بارزة وهبوط y بطيء ولغط أعلى نغمة يزيد شهيقياً؛ الارتجاع: v عملاقة وكبد نابض ولغط شامل؛ وغالباً وظيفي يتحسن بعلاج القصور.",
+      "tags": [
+        "tricuspid"
+      ]
+    },
+    {
+      "id": "L3_f20",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "Describe pulmonary stenosis and the Graham Steell murmur.",
+      "back_text": "PS: usually congenital (isolated or with Fallot's) or carcinoid; ejection systolic murmur at the left upper sternum radiating to the left shoulder ± click ± thrill (leaning forward, expiration), wide split S2; severe: inaudible P2, RV heave, prominent a waves; treat severe (>50 mmHg gradient) by balloon valvuloplasty (post-procedure PR common but benign). Graham Steell: early diastolic decrescendo murmur of pulmonary regurgitation complicating MS with pulmonary hypertension.",
+      "explanation_ar": "التضيق الرئوي: لغط قذفي أعلى القص يساراً يذيع للكتف الأيسر مع طققة وانشقاق واسع؛ >50 ملم يُعالج بالبالون. ولغط غراهام ستيل: انبساطي مبكر لارتجاع رئوي يصاحب التضيق التاجي بفرط ضغط رئوي.",
+      "tags": [
+        "pulmonary"
+      ]
+    },
+    {
+      "id": "L3_f21",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c6",
+      "card_type": "basic",
+      "front_text": "Compare biologic and mechanical prosthetic valves.",
+      "back_text": "Biologic: lasts 8-10 years, no anticoagulation needed. Mechanical: lasts > 20 years, requires lifelong anticoagulation. NOACs are ineffective for mechanical valves and moderate-severe MS (warfarin remains), give less intracranial bleeding but more GI bleeding, no monitoring, avoid eGFR <25-30.",
+      "explanation_ar": "الحيوي 8-10 سنوات بلا مضاد تخثر؛ الميكانيكي >20 سنة مع مضاد تخثر دائم؛ والـNOAC لا يصلح للميكانيكي ولا للتضيق التاجي المتوسط/الشديد.",
+      "tags": [
+        "prosthetic valves"
+      ]
+    },
+    {
+      "id": "L3_f22",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c6",
+      "card_type": "basic",
+      "front_text": "What are the age cut-offs favouring mechanical vs bioprosthetic valves, and when is each valve NOT recommended?",
+      "back_text": "Aortic: mechanical <60y, borderline 60-65, bioprosthetic >65. Mitral: mechanical <65y, borderline 65-70, bioprosthetic >70. Avoid bioprosthetic: age <40, hyperparathyroidism, high redo-surgery risk (prior radiotherapy, porcelain aorta, >1 valve, ventricular dysfunction), existing anticoagulation indication. Avoid mechanical: reproductive-age woman contemplating pregnancy, high bleeding risk, high thrombotic risk, life expectancy <10 years.",
+      "explanation_ar": "الأبهري: ميكانيكي <60 وحيوي >65؛ التاجي: ميكانيكي <65 وحيوي >70. تجنب الحيوي: <40 سنة، فرط جارات الدرق، خطر إعادة جراحة، واستطباب تخثر قائم؛ وتجنب الميكانيكي: حمل مرتقب، خطر نزف/تخثر، ومدة حياة متوقعة <10 سنوات.",
+      "tags": [
+        "prosthetic valves",
+        "high yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L3_q1",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "question_stem": "A 34-year-old woman with known rheumatic mitral stenosis is 26 weeks pregnant and develops sudden breathlessness with orthopnoea after a wedding party where she danced. What triggered this deterioration?",
+      "options": [
+        "Development of infective endocarditis from the celebration",
+        "Increased heart rate shortening diastole plus increased cardiac output demand, raising left atrial pressure across the stenotic valve",
+        "Anaemia of pregnancy alone",
+        "Spontaneous chordal rupture"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الحمل والجهد يرفعان النتاج ويقصّران الانبساط عبر صمام متضيق، فيرتفع الضغط الأذيني الأيسر وتحدث الوذمة الرئوية — لذا يُقال إن الحمل والرجفان و poorly tolerated في التضيق التاجي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "فكّر فيزيولوجياً: وقت الامتلاء والحمل الحجمي.",
+        "الشهيق/الرقص يسرّع القلب.",
+        "الضغط الأذيني يرتفع عبر الفتحة الضيقة."
+      ]
+    },
+    {
+      "id": "L3_q2",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c1",
+      "question_stem": "A patient with mitral stenosis has a loud first heart sound, an opening snap 0.06 s after A2 and a mid-diastolic murmur with pre-systolic accentuation. Six years later the snap is 0.10 s after A2 and the murmur is shorter. What does this imply?",
+      "options": [
+        "The stenosis has improved",
+        "The valve has become heavily calcified, muffling S1 and delaying/obliterating the opening snap",
+        "New aortic regurgitation has appeared",
+        "The patient has developed mitral regurgitation only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التكلس الشديد يُذهب الصوت الأول وطقة الانفتاح ويقصّر اللغط؛ بينما الأصل أن الطقة تقترب من S2 كلما زادت الشدة عبر ارتفاع الضغط الأذيني — تناقص هذه العلامة مع تقدم المرض يدل على صمام متكلس جامد.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q3",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "question_stem": "A 58-year-old man presents with acute severe pulmonary oedema and a new loud pansystolic apical murmur. He had a myocardial infarction 5 days ago. What is the mechanism?",
+      "options": [
+        "Chronic volume overload of gradual onset",
+        "Acute mitral regurgitation from papillary muscle ischaemia/infarction or chordal rupture after MI",
+        "Mitral stenosis with new atrial fibrillation",
+        "Aortic dissection extending into the mitral annulus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "احتشاء حديث + وذمة رئوية حادة + لغط شامل جديد = ارتجاع تاجي حاد بنقص تروية/احتشاء الحلمة العضلية؛ الأذين المطواع يخفف الأعراض في المزمن بينما الحاد يظهر بوهمة حادة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q4",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c2",
+      "question_stem": "A 26-year-old tall, thin woman with arachnodactyly has a mid-systolic click and late systolic murmur. Which syndrome is associated with this valve lesion?",
+      "options": [
+        "Marfan's syndrome",
+        "Ehlers-Danlos type IV",
+        "Turner's syndrome",
+        "Down syndrome"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هبوط الصمام التاجي (الوريقات المخاطية) يترافق نادراً مع متلازمة مارفان؛ الطقطة واللغط المتأخر هما العلامتان.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q5",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "question_stem": "A 72-year-old man presents with exertional chest tightness, dyspnoea and one syncopal episode while climbing stairs. He has a slow-rising pulse, thrusting apex, narrow pulse pressure and a harsh ejection systolic murmur radiating to the carotids with a soft S2. What is the next appropriate management step?",
+      "options": [
+        "Reassure and review in 5 years",
+        "Prompt aortic valve replacement (symptomatic severe aortic stenosis)",
+        "Balloon aortic valvuloplasty as definitive therapy",
+        "Start digoxin and diuretics only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الأعراض الكاردينالية (ذبحة/زلة/غشي) مع علامات الشدة = تضيق أبهري شديد عرَضي: الاستبدال العاجل؛ التأخير يعرّض للموت المفاجئ وتدهور البطين، والبالون قليل القيمة في التكلسي الشيخوخي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q6",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c3",
+      "question_stem": "Doppler echocardiography reports a peak aortic gradient of 25 mmHg in a patient with impaired LV function and severe aortic stenosis by valve area. Why is the gradient low?",
+      "options": [
+        "The stenosis is truly mild",
+        "Low-flow aortic stenosis — reduced stroke volume diminishes velocities across the valve",
+        "Doppler always underestimates aortic gradients",
+        "Concomitant aortic regurgitation has reduced the gradient"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "في low-flow AS يهبط الحجم الضربة فتنخفض السرعات والمدى المحسوب رغم الشدة؛ والعكس في AR أو فرط النتاج حيث يُبالغ التقدير.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q7",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "question_stem": "A 45-year-old man with chronic severe aortic regurgitation has a soft mid-diastolic rumble at the apex in addition to his early diastolic murmur. What explains the apical mid-diastolic murmur?",
+      "options": [
+        "Concomitant rheumatic mitral stenosis",
+        "Austin Flint murmur — the regurgitant jet flutters and partially closes the anterior mitral leaflet",
+        "A flow murmur of anaemia",
+        "Tricuspid stenosis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "لغط أوستن فلينت: نفث أبهري مرتد يغلق الوريقة الأمامية جزئياً فيحاكي تضيقاً تاجياً وظيفياً؛ لا يعني تضيقاً تاجياً عضوياً.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q8",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c4",
+      "question_stem": "An asymptomatic 50-year-old with severe chronic aortic regurgitation is monitored annually. Which echocardiographic threshold mandates aortic valve replacement even without symptoms?",
+      "options": [
+        "LV end-diastolic dimension of 40 mm",
+        "LV end-systolic dimension increasing to 55 mm or more",
+        "Left atrial diameter of 38 mm",
+        "Aortic root of 40 mm"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "البعد الانقباضي النهائي ≥55 ملم (أو تزايد حجم البطين) في AR الشديد غير العرضي يستوجب الاستبدال لدرء الضرر البطيني غير العكوس.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q9",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c5",
+      "question_stem": "A patient with longstanding mitral stenosis develops a raised JVP with a giant systolic 'v' wave, a pansystolic murmur at the lower left sternal edge and a pulsatile liver. What is the lesion and its usual mechanism?",
+      "options": [
+        "Tricuspid stenosis from rheumatic disease",
+        "Functional tricuspid regurgitation secondary to pulmonary hypertension and RV dilatation",
+        "Isolated pulmonary regurgitation",
+        "Constrictive pericarditis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "فرط الضغط الرئوي من التضيق التاجي يوسّع الأيمن فينشأ ارتجاف ثلاثي وظيفي: v عملاقة ولغط شامل وكبد نابض — أشيع من التضيق الثلاثي العضوي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L3_q10",
+      "lecture_id": "L3_vhd",
+      "concept_id": "L3_c6",
+      "question_stem": "A 41-year-old man with AF and a prior DVT needs a mitral valve replacement. Which additional fact makes a BIOPROSTHETIC valve specifically unsuitable?",
+      "options": [
+        "He is older than 40",
+        "He already has another indication for anticoagulation (AF and venous thromboembolism)",
+        "He has a mechanical aortic valve",
+        "Both B and C"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "وجود استطباب تخثر قائم (رجفان أو خثار وريدي) أو صمام ميكانيكي آخر يجعل الحيوي غير موصى به — لأن ميزته الكبرى (تجنب مضاد التخثر) تضيع، فيُفضَّل الميكانيكي الأطول عمراً. (والعمر هنا فوق 40 فقط لا يمنع الحيوي وحده.)",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L3_case1",
+      "lecture_id": "L3_vhd",
+      "title": "Rheumatic Mitral Stenosis Declaring Itself in Pregnancy",
+      "scenario": "A 29-year-old woman, 24 weeks into her first pregnancy, presents to the maternity assessment unit with 3 days of increasing breathlessness, orthopnoea and a cough pink-tinged sputum. She had rheumatic fever at age 11 in her home country and has not attended cardiac follow-up since. This case takes the classic rheumatic mitral stenosis from pathophysiology through physical signs to management during pregnancy.",
+      "vignette": {
+        "age": 29,
+        "sex": "female",
+        "chief_complaint": "Progressive breathlessness and orthopnoea at 24 weeks gestation",
+        "history": "Rheumatic fever age 11 (Northern Iraq); no cardiac follow-up since migration; previous easy fatigue on stairs attributed to 'unfitness'. Now 24 weeks pregnant. No anticoagulation. No prior echocardiography.",
+        "vitals": {
+          "bp": "104/66 mmHg",
+          "hr": "132 bpm irregular",
+          "rr": "26/min",
+          "temp": "36.8 C",
+          "spo2": "91% room air"
+        },
+        "exam": "Malar flush (mitral facies); tapping apex beat; loud first heart sound; opening snap close to A2; low-pitched mid-diastolic rumble at the apex with pre-systolic accentuation (lost now that she is in AF); bibasal crackles; no peripheral oedema.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "10.6 g/dL (ref 12-16)",
+            "flag": "low"
+          },
+          {
+            "name": "BNP",
+            "value": "890 pg/mL (ref <100 in pregnancy-adjusted)",
+            "flag": "high"
+          },
+          {
+            "name": "TSH",
+            "value": "1.9 mIU/L (ref 0.4-4.0)",
+            "flag": "normal"
+          },
+          {
+            "name": "CRP",
+            "value": "6 mg/L (ref <5)",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "ECG: atrial fibrillation at 132 bpm, no ischemic changes. CXR: enlarged LA (double shadow, splaying of carina), pulmonary venous congestion, small bilateral effusions. Doppler echo: rheumatic mitral stenosis — valve area 1.1 cm2, mean gradient 14 mmHg, severe pulmonary hypertension (PASP 68 mmHg), mobile but thickened leaflets with subvalvular involvement, mild MR; dilated LA."
+      },
+      "steps": [
+        {
+          "id": "L3_case1_s1",
+          "prompt": "Why did pregnancy unmask this patient's mitral stenosis?",
+          "options": [
+            "Pregnancy caused new rheumatic valve damage",
+            "Increased cardiac output and heart rate of pregnancy raise left atrial pressure across the stenotic valve; she had crossed from a compensated to a decompensated state",
+            "The anaemia of pregnancy alone explains everything",
+            "Pregnancy lowered her pulmonary vascular resistance"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "حمل الجهد والحجمي مع تسرّع القلب يقصّران الانبساط ويرفعان الطلب عبر فتحة ضيقة (1.1 سم2) فيرتفع الضغط الأذيني؛ والرجفان الجديد (تسرّع + فقد التقلص الأذيني) أشعل الوذمة. فقر دم الحمل عامل مساعد لا تفسير وحيد.",
+          "xp": 15,
+          "hints": [
+            "أعد قراءة الفيزيولوجيا: ما الذي يرفع الضغط الأذيني؟",
+            "الفقد الرئيسي: تقلص الأذين.",
+            "الفتحة كم؟"
+          ]
+        },
+        {
+          "id": "L3_case1_s2",
+          "prompt": "Interpret her auscultatory findings.",
+          "options": [
+            "Loud S1 + opening snap near A2 + mid-diastolic rumble = mitral stenosis; pre-systolic accentuation is absent because she is in AF",
+            "The mid-diastolic murmur indicates aortic regurgitation",
+            "The tapping apex indicates LV hypertrophy",
+            "A normal finding for pregnancy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المعقد الكامل للتضيق التاجي: S1 عالٍ (قمة ناقرة)، طقة انفتاح قريبة من A2 (شدة)، لغط انبساطي وسطي؛ والتعزيز قبل الانقباضي يغيب في الرجفان لغياب التقلص الأذيني.",
+          "xp": 10,
+          "hints": [
+            "علامة الشدة: موقع الطقة.",
+            "لماذا غاب التعزيز قبل الانقباضي؟"
+          ]
+        },
+        {
+          "id": "L3_case1_s3",
+          "prompt": "What is the appropriate management package at this stage?",
+          "options": [
+            "Immediate valve replacement under cardiopulmonary bypass",
+            "Rate control (digoxin/beta-blocker), diuretics for congestion, anticoagulation for AF, and planning for balloon mitral valvuloplasty (pliable valve, mild MR) if symptoms persist",
+            "Fluid loading to improve cardiac output",
+            "Termination of pregnancy as the only option"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الحزمة: ضبط المعدل ومدرات ومضاد تخثر (الرجفان)؛ ثم تقييم رأب التاجي بالبالون لأن الوريقات متحركة والارتجاع خفيف (معايير الاستطباب متحققة) — الاستبدال الجراحي أثناء الحمل خطير وليس الخطوة الأولى.",
+          "xp": 15,
+          "hints": [
+            "هل الوريقات ملينة أم متكلسة؟",
+            "الوقاية من الخثار في الرجفان.",
+            "البالون أم الجراحة أول؟"
+          ]
+        },
+        {
+          "id": "L3_case1_s4",
+          "prompt": "Why does the echo additionally show severe pulmonary hypertension, and what is its cardiac consequence?",
+          "options": [
+            "It is primary pulmonary arterial hypertension unrelated to the valve",
+            "Chronic LA pressure elevation is transmitted backwards — pulmonary hypertension drives RV hypertrophy/dilatation and secondary (functional) tricuspid regurgitation",
+            "Pulmonary hypertension protects the lungs permanently with no downside",
+            "It results from the anaemia of pregnancy"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "ارتفاع الضغط الأذيني المزمن ينتقل رجعياً فيرتفع الضغط الرئوي ويوسّع الأيمن: فرط تضخم وتوسع بطين أيمن وارتجاع ثلاثي ثانوي وقصور أيمن. (ملاحظة امتحانية: فرط الضغط الرئوي 'يحمي' مؤقتاً من الوذمة لكنه يخرب الأيمن.)",
+          "xp": 10,
+          "hints": [
+            "تتبع الضغط عكسياً من الأذين الأيسر.",
+            "ماذا يحدث للبطين الأيمن؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة التضيق التاجي الروماتيزمي المُعلَن بالحمل: زلة ووهمة رئوية مع رجفان حادث (132/د) عند امرأة بقصة حمى روماتيزمية. المفتاح الفيزيولوجي: الحمل يرفع النتاج ويسرّع القلب فيقصر الانبساط عبر فتحة 1.1 سم2، والرجفان يضيف فقد التقلص الأذيني. العلامات: وجه تاجي، قمة ناقرة، S1 عالٍ، طقة قريبة من A2، لغط انبساطي وسطي (بلا تعزيز قبل انقباضي بسبب الرجفان)، وصورة بصمة الأذين المتضخم (الظل المزدوج وتوسع الزاوية). الإدارة: ضبط معدل + مدرات + مضاد تخثر، ثم رأب بالبالون لوريقات ملينة مع ارتجاع خفيف. الدروس: 1) الحمل والرجفان أخطر محرضات الوذمة في التضيق التاجي؛ 2) غياب التعزيز قبل الانقباضي علامة رجفان لا شذوذ تعليمي؛ 3) فرط الضغط الرئوي يحمي مؤقتاً من الوذمة لكنه يصنع قصوراً أيمن (v عملاقة مستقبلاً)؛ 4) معايير البالون (وريقة ملينة، لا ارتجاع مهم) تحدد التدخل المختار.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L3_case2",
+      "lecture_id": "L3_vhd",
+      "title": "Calcific Aortic Stenosis in the Elderly: Symptoms Trigger Surgery",
+      "scenario": "A 78-year-old retired teacher is referred by his GP with exertional chest tightness and two episodes of presyncope while walking uphill, plus slowing exercise tolerance over 6 months. His GP heard a murmur a year ago and planned yearly review. This case applies the natural-history rule of aortic stenosis — asymptomatic for years, then a 3-5 year window — to the decision for valve replacement, including TAVI in the elderly.",
+      "vignette": {
+        "age": 78,
+        "sex": "male",
+        "chief_complaint": "Exertional chest tightness with presyncopal episodes",
+        "history": "Hypertension, ex-smoker (30 pack-years), hyperlipidaemia. Murmur noted 1 year ago without symptoms. Now CCS II-III angina and two near-faints on a hill. Lives independently; walks daily.",
+        "vitals": {
+          "bp": "148/86 mmHg",
+          "hr": "76 bpm regular",
+          "rr": "18/min",
+          "temp": "36.5 C",
+          "spo2": "97% room air"
+        },
+        "exam": "Slow-rising carotid pulse with delayed peak; thrusting, non-displaced apex; harsh ejection systolic murmur at the right second intercostal space radiating to the carotids and suprasternal notch, with a soft single S2; narrow pulse pressure; no crackles.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "13.4 g/dL (ref 13-17)",
+            "flag": "normal"
+          },
+          {
+            "name": "Creatinine",
+            "value": "118 micromol/L (ref 60-110)",
+            "flag": "high"
+          },
+          {
+            "name": "NT-proBNP",
+            "value": "820 pg/mL (ref <125)",
+            "flag": "high"
+          },
+          {
+            "name": "LDL cholesterol",
+            "value": "3.1 mmol/L (ref <3.0)",
+            "flag": "high"
+          }
+        ],
+        "imaging": "ECG: sinus rhythm, LVH with strain pattern (down-sloping ST depression, T inversion in lateral leads). CXR: mild rounding of the left heart border; calcified aortic valve on lateral projection. Doppler echo: severely calcified tricuspid aortic valve, valve area 0.7 cm2, mean gradient 52 mmHg, severe AS with preserved EF; mild AR; no other valve disease."
+      },
+      "steps": [
+        {
+          "id": "L3_case2_s1",
+          "prompt": "Which symptom combination defines the transition to high-risk, operable disease?",
+          "options": [
+            "Asymptomatic severe stenosis with normal exercise test",
+            "Angina + exertional presyncope + dyspnoea — the cardinal symptoms of severe AS",
+            "Fever with new murmur",
+            "Nocturnal cough alone"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الثلاثية الكاردينالية (ذبحة، زلة، غشي مجهودي) تعلن مرحلة الخطر: بلا علاج يكون متوسط البقاء 3-5 سنوات مع خطر موت مفاجئ — وتستوجب جراحة عاجلة.",
+          "xp": 10,
+          "hints": [
+            "الثلاثية الشهيرة للتضيق الأبهري.",
+            "الأعراض هي نقطة التحول لا الرقم وحده."
+          ]
+        },
+        {
+          "id": "L3_case2_s2",
+          "prompt": "The patient asks whether his age makes surgery futile. What is the evidence-based answer?",
+          "options": [
+            "Age over 75 is an absolute contraindication",
+            "Old age is NOT a contraindication — results are very good even in the eighties, especially with TAVI",
+            "Only medical therapy is appropriate above 70",
+            "Balloon valvuloplasty is the definitive treatment in calcific AS"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الشيخوخة ليست مانعاً؛ النتائج ممتازة حتى الثمانينات خصوصاً مع TAVI؛ بينما البالون محدود الفائدة في التضيق التكلسي (يستعمل مؤقتاً أو في الخلقي).",
+          "xp": 10,
+          "hints": [
+            "حرفياً من المحاضرة: العمر ليس مانعاً.",
+            "أدخل TAVI في التفكير."
+          ]
+        },
+        {
+          "id": "L3_case2_s3",
+          "prompt": "Why does his ECG show a 'strain pattern', and what does the soft single S2 mean?",
+          "options": [
+            "Pericarditis with ST elevation; single S2 is normal at his age",
+            "LVH with fibrosis produces down-sloping ST/T inversion in lateral leads; soft single S2 reflects immobile calcified valve cusps",
+            "Digoxin effect; S2 is always single in the elderly",
+            "Old inferior MI; S2 splitting from RBBB"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "فرط التضخم مع التليف يعطي نمط الإجهاد في الوصلات الوحشية (والتخطيط قد يكون طبيعياً رغم الشدة)؛ و الصوت الثاني الخافت الأحادي يعكس جميد الوريقات المتكلسة — وليس شيئاً فسيولوجياً للعمر.",
+          "xp": 10,
+          "hints": [
+            "وريقات متكلسة = ماذا للصوت الثاني؟",
+            "الإجهاد البطيني يظهر أين؟"
+          ]
+        },
+        {
+          "id": "L3_case2_s4",
+          "prompt": "He undergoes successful TAVI. What follow-up rhythm/therapy issue remains specific to prosthetic choice?",
+          "options": [
+            "Lifelong high-intensity anticoagulation for all TAVI valves",
+            "Anticoagulation only if AF develops (as with this bioprosthetic strategy) — mechanical prostheses are the ones requiring lifelong warfarin",
+            "No follow-up echo ever needed",
+            "Monthly balloon dilatation of the new valve"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "بعد TAVI (نسيج حيوي) يُضاف مضاد التخثر عند وجود AF فقط؛ أما الميكانيكي فيحتاج وارفرين مدى الحياة، والـNOAC لا يصلح للصمامات الميكانيكية أصلاً. والمتابعة بالصدى تبقى ضرورة.",
+          "xp": 10,
+          "hints": [
+            "حيوي أم ميكانيكي؟",
+            "استطباب مضاد التخثر في الصمامات."
+          ]
+        }
+      ],
+      "debriefing_ar": "السير الكلاسيكي للتضيق التكلسي: لغط بلا أعراض سنة، ثم ذبحة وغشي وزلة خلال أشهر — وعبور عتبة (مساحة 0.7 سم2، مدى 52 ملم) يستوجب استبدالاً عاجلاً قبل الموت المفاجئ (3-5 سنوات بلا علاج). الدروس: 1) الأعراض هي المؤشر لا الرقم المعزول؛ 2) العمر ليس مانعاً — TAVI حقق نتائج ممتازة في الثمانينات؛ 3) النبض البطيء والضغط النبضي الضيق وS2 الخافت الأحادي ونمط الإجهاد تُقرأ كمنظومة؛ 4) بعد النسيج الحيوي لا مضاد تخثر إلا باستطباب قائم (AF)؛ 5) البالون قاصر في التكلسي ويُحفظ للخلقي أو الجسر المؤقت.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/utils/app_haptics.dart';
+import '../../../../core/utils/responsive_layout.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 
@@ -62,9 +63,12 @@ class ConceptGateSheet extends StatefulWidget {
       isDismissible: false,
       enableDrag: false,
       backgroundColor: Colors.transparent,
-      builder: (_) => ConceptGateSheet(
-        conceptTitle: conceptTitle,
-        mcq: mcq,
+      // تجاوب: على التابلت يُقيد العرض (موبايل: بلا أثر).
+      builder: (_) => ResponsiveSheet(
+        child: ConceptGateSheet(
+          conceptTitle: conceptTitle,
+          mcq: mcq,
+        ),
       ),
     );
   }

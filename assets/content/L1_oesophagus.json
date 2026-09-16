@@ -1,0 +1,1285 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L1_oesophagus",
+    "title": "Oesophagus: Anatomy, Symptoms, GERD, Barrett's, Motility Disorders and Tumours",
+    "specialty": "internal_medicine",
+    "module": "gastroenterology",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L1 Oesophagus.pdf",
+      "page_count": 29
+    },
+    "order_index": 0,
+    "tags": ["oesophagus", "GERD", "Barrett's oesophagus", "achalasia", "dysphagia", "eosinophilic oesophagitis", "oesophageal carcinoma", "oesophageal motility disorders", "gastroenterology", "internal medicine"],
+    "golden_tip": [
+      "Achalasia predisposes to SQUAMOUS carcinoma, not adenocarcinoma — and always scope first: carcinoma of the cardia can mimic achalasia clinically, radiologically and manometrically (pseudo-achalasia), especially above 60 with rapid dysphagia and weight loss.",
+      "Heartburn does NOT occur in achalasia — the hypertonic, closed LOS prevents reflux. Solid + liquid dysphagia with nocturnal regurgitation of undigested food and NO heartburn = think achalasia, not more PPI.",
+      "Dysphagia to solids only suggests a structural lesion (stricture, tumour, ring); dysphagia to solids AND liquids from the outset suggests a motility disorder (achalasia, scleroderma) — a favourite exam discriminator."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L1_oesophagus_c1",
+      "lecture_id": "L1_oesophagus",
+      "title": "Lecture Orientation, Objectives and Entry Self-Assessment",
+      "summary_ar": "محاضرة المريء من إعداد د. منتظر عبدالكريم عبدالله (جامعة البصرة) تغطي التشريح والوظيفة، أعراض أمراض المريء، الارتجاع المعدي المريئي ومضاعفاته، مريء باريت، التهابات المريء الأخرى، اضطرابات الحركة بما فيها الأكالازيا، والأورام. تبدأ المحاضرة بستة أسئلة تقييمية تُغلف رسائل الامتحان المفتاحية.",
+      "difficulty": "core",
+      "order_index": 0,
+      "sections": [
+        {
+          "heading": "Lecture Overview and Objectives",
+          "body_text": "**Lecture:** 'Oesophagus', a 29-slide GIT lecture prepared by Dr. Muntadher Abdulkareem Abdullah (M.B.Ch.B, CABM, FIBMS, FIBMS Gastroenterology & Hepatology), University of Basrah, College of Medicine. The deck closes with a simple 'THANKS' slide.\n\n**Stated learning objectives** — at the end of this lecture you must know:\n- What GERD is, its complications, and how you diagnose and manage these complications.\n- What Barrett's oesophagus is.\n- The motility disorders of the oesophagus, their diagnosis and management.\n- The tumours of the oesophagus.\n\n**Lecture roadmap:** anatomy/histology/physiology → symptoms of oesophageal disease → GERD (definition, epidemiology, pathophysiology, manifestations, diagnosis, treatment, complications) → Barrett's oesophagus → other oesophagitides (infective, corrosive, drug-induced, eosinophilic) → motility disorders (Zenker's diverticulum, achalasia, secondary dysmotility, pseudo-achalasia) → oesophageal tumours.\n\nThe lecture opens with **6 entry self-assessment MCQs** covering achalasia, refractory reflux, eosinophilic oesophagitis, the initial approach to typical GERD, and Barrett's oesophagus; they are reproduced with full answers below because they encode the lecture's key exam messages.",
+          "key_points": [
+            "Objectives: GERD and its complications, Barrett's oesophagus, motility disorders, oesophageal tumours.",
+            "Author: Dr. Muntadher Abdulkareem Abdullah (CABM, FIBMS GE & Hepatology), University of Basrah."
+          ]
+        },
+        {
+          "heading": "Entry Questions 1-2: Achalasia and the Bird-Beak Oesophagus",
+          "body_text": "**Q1. Achalasia predisposes to which of the following?**\n- A. Adenocarcinoma of lower oesophagus\n- B. Squamous cell carcinoma of upper oesophagus\n- C. Squamous cell carcinoma of lower oesophagus (CORRECT)\n- D. Adenocarcinoma of upper oesophagus\n- E. Adenocarcinoma and squamous cell carcinoma of lower oesophagus\n\n**Answer: C.** Long-standing achalasia predisposes to **squamous cell carcinoma of the oesophagus** — chronic stasis of food and inflammation in the chronically dilated lower oesophagus. It does NOT predispose to adenocarcinoma, which is the Barrett's/GERD pathway.\n\n**Q2. A 70-year-old woman presents with progressive dysphagia to solid and fluid over 6 months with weight loss. Barium swallow demonstrates a dilated oesophagus with a bird-beak appearance. What is the next best step?**\n- A. Refer for endoscopic dilatation\n- B. Oesophageal manometry\n- C. Calcium channel blockers\n- D. OGD with biopsy (CORRECT)\n- E. Refer to surgery\n\n**Answer: D.** The bird-beak appearance suggests achalasia, but the age (>60), short 6-month course and weight loss raise **pseudo-achalasia** — carcinoma of the cardia (or a malignant deposit at the GOJ) mimicking the presentation, radiology and even manometry of achalasia. **Endoscopy with biopsy must always be done first** to exclude this mimic before labelling a patient with idiopathic achalasia or applying destructive therapy (dilatation/surgery).",
+          "key_points": [
+            "Achalasia → squamous carcinoma (stasis-induced), NOT adenocarcinoma.",
+            "Age >60 + rapid dysphagia + weight loss + 'bird-beak' → exclude pseudo-achalasia with OGD and biopsy before treating as idiopathic achalasia."
+          ]
+        },
+        {
+          "heading": "Entry Questions 3-4: Refractory Reflux and Eosinophilic Oesophagitis",
+          "body_text": "**Q3. A 46-year-old man reviewed in clinic with troublesome reflux symptoms occurring at any time of day for 2 years. Gastroscopy six months ago was normal. He had taken omeprazole 40 mg twice daily and metoclopramide 10 mg three times daily for eight months, and previously an H2-receptor antagonist in addition, with no benefit. No lifestyle risk factors for reflux. What is the next most appropriate management step?**\n- A. Ambulatory oesophageal pH and manometry studies (CORRECT)\n- B. Barium swallow\n- C. Fasting gastrin level\n- D. Repeat endoscopy\n- E. Add antacids\n\n**Answer: A.** Symptoms refractory to adequate antisecretory therapy (double-dose PPI), a prokinetic and an H2RA, with a normal endoscopy, require **objective functional testing**: ambulatory oesophageal pH monitoring (± impedance) to prove or disprove pathological reflux, plus **manometry** to unmask a motility disorder masquerading as 'refractory reflux'. Repeating a normal endoscopy or adding antacids adds nothing; fasting gastrin targets Zollinger–Ellison syndrome (severe/recurrent ulcer disease), not this picture.\n\n**Q4. A 42-year-old man has 3 months of dysphagia. OGD shows multiple oesophageal furrows, freckles and rings with no dominant stricture; biopsy histopathology shows 40 eosinophils/hpf. In the setting of the appropriate diagnosis, what is the best next step?**\n- A. Inhaled corticosteroids\n- B. Endoscopic oesophageal dilatation\n- C. Swallowed corticosteroids (CORRECT)\n- D. Immunosuppressant like azathioprine\n- E. Refer to surgery\n\n**Answer: C.** This is **eosinophilic oesophagitis**: furrows + freckles + rings without a dominant stricture, and >15 eosinophils/hpf on biopsy (this patient has 40/hpf). First-line therapy is **swallowed topical corticosteroids (fluticasone or betamethasone)** — the drug must coat the oesophageal lumen, hence 'swallowed' not 'inhaled'. Dilatation is reserved for established refractory strictures; azathioprine and surgery are not standard treatments.",
+          "key_points": [
+            "Refractory reflux symptoms + normal OGD → ambulatory pH monitoring and manometry (objective proof before escalating therapy or surgery).",
+            "Furrows, freckles and rings + >15 eosinophils/hpf = eosinophilic oesophagitis → swallowed (topical) corticosteroids."
+          ]
+        },
+        {
+          "heading": "Entry Questions 5-6: Typical GERD Approach and Barrett's",
+          "body_text": "**Q5. A 34-year-old man presents with substernal discomfort, worse after meals (particularly a heavy evening meal), sometimes associated with hot/sour fluid in the back of the throat and nocturnal awakening. He denies difficulty swallowing, pain on swallowing, or weight loss. Symptoms present for 6 weeks; he has gained 20 kg in the past 2 years. Which is the most appropriate initial approach?**\n- A. Therapeutic trial of PPI (CORRECT)\n- B. Esophagogastroduodenoscopy\n- C. CT scan of the chest\n- D. Coronary angiography\n- E. Oesophageal manometry\n\n**Answer: A.** Classic GERD symptoms (postprandial substernal burning, acid regurgitation to the throat, nocturnal awakening) with **no alarm features** (no dysphagia, no odynophagia, no weight loss — in fact he GAINED 20 kg, an obesity risk factor) are best managed initially with an **empirical therapeutic trial of a PPI**. Endoscopy is reserved for alarm features or failure of therapy; CT/angiography address atypical chest pain, not this classic reflux picture; manometry is for suspected motility disorders.\n\n**Q6. Which of the following is TRUE of Barrett's oesophagus?**\n- A. Columnar epithelium is replaced by squamous epithelium\n- B. It predisposes to adenocarcinoma (CORRECT)\n- C. It appears in an antegrade (top-to-bottom) direction\n- D. It predisposes to squamous cell carcinoma\n- E. It does not predispose to cancer\n\n**Answer: B.** In Barrett's the **squamous** lining is replaced by **columnar** mucosa (the reverse of option A); the metaplastic change starts at the gastro-oesophageal junction and extends proximally (NOT top-to-bottom); and it predisposes specifically to **oesophageal adenocarcinoma** — the rationale for surveillance programmes. Squamous carcinoma is the achalasia/corrosive/smoking-alcohol pathway.",
+          "key_points": [
+            "Typical GERD without alarm features → empirical PPI trial first, no investigation needed if responsive.",
+            "Barrett's: squamous → columnar metaplasia, from the GOJ proximally, predisposes to adenocarcinoma."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "GERD", "definition_ar": "داء الارتجاع المعدي المريئي: ارتجاع محتويات المعدة إلى المريء مسبباً أعراضاً مزعجة أو مضاعفات."},
+        {"term": "Pseudo-achalasia", "definition_ar": "أكالازيا زائفة: سرطانة قلب المعدة أو ارتشاح خبيث للوصلة المعدية المريئية يحاكي الأكالازيا سريرياً وشعاعياً ومانومترياً."},
+        {"term": "Eosinophilic oesophagitis", "definition_ar": "التهاب المريء اليوزيني: التهاب أرجي بالمريء يظهر تنظيرياً بتلميات وحلقات ونمش، ويشخص بوجود أكثر من 15 يوزيني/حقل قوة في الخزعات."},
+        {"term": "Bird-beak appearance", "definition_ar": "منظر منقار الطائر: تضيق أملس متدرج أسفل المريء المتمدد في ابتلاع الباريوم، يشبه الأكالازيا (أو الأكالازيا الزائفة)."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c2",
+      "lecture_id": "L1_oesophagus",
+      "title": "Anatomy, Histology and Physiology of the Oesophagus",
+      "summary_ar": "المريء أنبوب عضلي مجوف متوسط طوله 27 سم يمتد من القواطع العلوية (0 سم) إلى الوصلة المعدية المريئية (نحو 40-45 سم)، مع العاصرة العلوية عند 15 سم والحجاب/الوصلة عند 35-40 سم. جداره: مخاطية حرشفية طبقية غير متقرنة تتحول لعمادية عند الوصلة، وعضلات دائرية داخلية وطولية خارجية (مخططة في الثلث العلوي وملساء في الثلثين السفليين)، ولا يوجد غشاء مصلي، مع ضفيرة أورباخ بين طبقتي العضلات وضفيرة مايسنر تحت المخاطية.",
+      "difficulty": "core",
+      "order_index": 1,
+      "sections": [
+        {
+          "heading": "Gross Anatomy and Endoscopic Landmarks",
+          "body_text": "The oesophagus is a **hollow muscular tube averaging about 27 cm in length**, bounded proximally by the **upper oesophageal sphincter (UOS)** and distally by the **lower oesophageal sphincter (LOS)**. It descends through the neck and chest **behind the trachea and heart**, passes through the diaphragmatic hiatus and joins the stomach.\n\n**Distance landmarks measured from the upper central incisors** (the endoscopist's ruler — memorise this pseudo-table from the lecture diagram):\n- 0 cm — upper central incisors\n- 15 cm — upper oesophageal sphincter | thoracic inlet | cervical oesophagus\n- 20 cm — sternal notch | upper thoracic oesophagus\n- 25 cm — middle thoracic oesophagus\n- 35–40 cm — diaphragm | oesophagogastric junction (OGJ) | lower thoracic oesophagus\n- 40–45 cm — abdominal oesophagus\n\nThese landmarks let you localise lesions seen on OGD or barium swallow (e.g. a lesion at 30 cm lies in the lower thoracic oesophagus; a lesion at 16 cm is upper/cervical) and predict where foreign bodies and food boluses impact.",
+          "key_points": [
+            "Average oesophageal length ≈ 27 cm; UOS at 15 cm from incisors, diaphragm/OGJ at 35–40 cm.",
+            "Segments: cervical (to 15 cm) | upper thoracic (15–20) | middle thoracic (20–25) | lower thoracic (25–35/40) | abdominal (40–45 cm)."
+          ]
+        },
+        {
+          "heading": "Wall Histology and Intrinsic Nerve Plexuses",
+          "body_text": "The wall consists of **mucosa, submucosa and muscularis layers — with absence of a serosal layer** (a key reason oesophageal lesions, perforations and cancers spread so readily into the mediastinum).\n- **Mucosa:** **stratified squamous non-keratinised epithelium** that transitions to **columnar epithelium at the gastro-oesophageal junction** (the squamocolumnar junction — abnormal proximal migration of columnar mucosa = Barrett's oesophagus).\n- **Muscular layer:** **striated muscle in the upper one-third** and **smooth muscle in the lower two-thirds**, arranged as an **inner circular and an outer longitudinal layer**.\n- **Auerbach's (myenteric) plexus** is located **between the circular and longitudinal muscle layers**; **Meissner's plexus** is located **within the submucosa** and innervates the **muscularis mucosae**.\n\nDegeneration of the ganglion cells of these enteric plexuses (with loss of nitric-oxide-mediated inhibition) is the substrate of achalasia and of Chagas' disease, discussed later in the lecture.",
+          "key_points": [
+            "No serosa: mucosa | submucosa | muscularis only.",
+            "Upper 1/3 striated, lower 2/3 smooth muscle; inner circular + outer longitudinal arrangement.",
+            "Auerbach (myenteric) plexus: between muscle layers. Meissner's plexus: submucosa, innervates muscularis mucosae."
+          ],
+          "check": {
+            "prompt": "In which location is Meissner's plexus found?",
+            "options": ["Between the circular and longitudinal muscle layers", "Within the submucosa", "Within the squamous epithelium", "Inside the muscularis mucosae itself", "On the outer adventitia"],
+            "correct_index": 1,
+            "explanation_ar": "ضفيرة مايسنر تقع في الطبقة تحت المخاطية وتعصّب العضلية المخاطية، أما ضفيرة أورباخ (المعوية) فتقع بين طبقتي العضلات الدائرية والطولية."
+          }
+        },
+        {
+          "heading": "Sphincters and Motor Functions",
+          "body_text": "The oesophagus is bounded by an **upper oesophageal sphincter proximally** (cricopharyngeus region) and the **lower oesophageal sphincter distally** (functionally augmented by the crural diaphragm at the hiatus — the 'external sphincter').\n\n**The motor functions of the oesophagus are:**\n- To **transport a food bolus from the oropharynx into the stomach**.\n- Then to **keep food from returning to the oesophagus after it has entered the stomach** (the antireflux role of the LOS).\n\nFailure of the first function produces dysphagia, food impaction and aspiration; failure of the second produces GERD. The anatomical interplay between the LOS and the crural diaphragm also explains why **hiatal hernia** (spatial separation of the two) predisposes to reflux — covered in the GERD pathophysiology concept.",
+          "key_points": [
+            "Two sphincters: UOS (proximal) and LOS (distal) — the LOS works with the crural diaphragm as the antireflux barrier.",
+            "Motor functions: bolus transport into the stomach + prevention of reflux back into the oesophagus."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Auerbach's (myenteric) plexus", "definition_ar": "ضفيرة عصبية بين طبقتي العضلة الدائرية والطولية تتحكم بتقلص جدار المريء."},
+        {"term": "Meissner's plexus", "definition_ar": "ضفيرة عصبية في الطبقة تحت المخاطية تعصّب العضلية المخاطية."},
+        {"term": "Upper oesophageal sphincter (UOS)", "definition_ar": "العاصرة المريئية العلوية عند 15 سم من القواطع، تتكون أساساً من العضلة الحلقية البلعومية."},
+        {"term": "Lower oesophageal sphincter (LOS)", "definition_ar": "العاصرة المريئية السفلية عند الوصلة مع المعدة، يقوّيها الحجاب الحاجز وتمنع ارتجاع محتويات المعدة."},
+        {"term": "Squamocolumnar junction", "definition_ar": "الوصلة بين المخاطية الحرشفية والعمادية عند نهاية المريء؛ صعودها غير الطبيعي يعني مريء باريت."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c3",
+      "lecture_id": "L1_oesophagus",
+      "title": "Clinical Symptoms of Oesophageal Disease",
+      "summary_ar": "الحرقان القصي أشهر عرض (إحساس حرقة خلف القص يجب تمييزه عن الذبحة القلبية). عسرة البلع عرض محوري: للصلبات فقط = آفة بنائية (تضيق/ورم/حلقة)، وللسوائل والصلبات معاً = اضطراب حركي. عسر البلع الفموي البلعومي يترافق بثيل اللعاب وتلعثم وارتجاع أنفي وسعال/استنشاق. ارتجاع الطعام مبكراً أثناء الوجبة يوحي بآفة قريبة، ومتأخراً بضعف حركي كالأكالازيا. انحشار الطعام (متلازمة الستيك هاوس) حالة إسعافية قد تُعرض للسدة الرغامية والاستنشاق.",
+      "difficulty": "core",
+      "order_index": 2,
+      "sections": [
+        {
+          "heading": "Heartburn and Oesophageal Chest Pain",
+          "body_text": "- **Heartburn is the most common symptom of oesophageal disease**, defined as a **sensation of substernal burning**.\n- **Chest pain without typical heartburn** may occur in a variety of oesophageal disorders, including **gastro-oesophageal reflux** and **motor disorders such as achalasia**.\n- **Exam caution:** oesophageal pain and even heartburn can be **indistinguishable from cardiac angina** — care must be taken when a patient **at risk for coronary artery disease complains of heartburn for the first time**; cardiac causes must be considered before blaming reflux.\n\nThis symptom overlap is why the oesophagus is called 'the great imitator' of cardiac chest pain.",
+          "key_points": [
+            "Heartburn = substernal burning sensation — the commonest oesophageal symptom.",
+            "Oesophageal chest pain (reflux, achalasia, spasm) can mimic cardiac angina exactly — first-time heartburn in a CAD-risk patient demands cardiac evaluation."
+          ]
+        },
+        {
+          "heading": "Dysphagia — the Cardinal Symptom and Its Patterns",
+          "body_text": "**Dysphagia** (difficulty swallowing) is another **cardinal symptom of oesophageal disease**.\n- **Dysphagia with only solid food** tends to occur with **structural lesions** that cause oesophageal constriction (stricture, tumour, ring, web).\n- **Dysphagia with both liquids and solids** occurs more often with **motility disorders** (achalasia, diffuse spasm, scleroderma oesophagus).\n\n**Oropharyngeal (transfer) dysphagia:** patients commonly complain of food **'sticking' in the throat** or the **inability to propel the bolus** from the mouth to the pharynx, and may need **multiple swallowing motions** to clear the bolus. Because the cranial nerves that control the initial phases of swallowing also serve other functions, associated symptoms include:\n- **drooling**\n- **dysarthria** (due to tongue dysfunction)\n- **nasal regurgitation** (due to failure to seal off the nasal passage)\n- **coughing and aspiration** (due to failure to elevate and cover the laryngeal vestibule)\n\n**Dysphagia from the body of the oesophagus** may be **referred to the chest or the neck**, so **the location of pain does NOT predict the location of the disease**.\n\n**Behavioural accommodations** patients develop: slow eating, food aversion, avoidance of hard solid food, and drinking large amounts of liquids with solid meals.",
+          "key_points": [
+            "Solids only → structural lesion; solids + liquids → motility disorder.",
+            "Oropharyngeal dysphagia cluster: drooling, dysarthria, nasal regurgitation, cough/aspiration.",
+            "Referred dysphagia: pain location does not localise the oesophageal lesion."
+          ]
+        },
+        {
+          "heading": "Regurgitation and Food Impaction (Steakhouse Syndrome)",
+          "body_text": "**Regurgitation** — the feeling of food coming up into the chest or, more dramatically, into the mouth:\n- **When regurgitation occurs EARLY in the meal → suggests a proximal lesion** (e.g. Zenker's diverticulum filling and emptying immediately).\n- **Regurgitation LATER in the meal → suggests a motility abnormality such as achalasia** (the dilated oesophagus fills gradually before contents return).\n\n**Food impaction is an extreme oesophageal symptom:**\n- When impaction occurs **in the oropharynx**, patients may develop the **'steakhouse' syndrome**, in which an impacted food bolus leads to **tracheal impaction or compression**.\n- With **distal oesophageal lesions**, impaction may occur **any time during the meal** and is **almost always from a mechanical cause** — sudden onset of chest pain and the sensation of food sticking, typically after solids such as **meats, raw vegetables and sticky rice**.\n- With **complete impaction**, patients who **cannot handle their secretions** because of the obstructing bolus are **at risk of aspiration** — an emergency requiring urgent endoscopic removal.",
+          "key_points": [
+            "Early-meal regurgitation → proximal lesion; late-meal regurgitation → motility disorder (achalasia).",
+            "Steakhouse syndrome: oropharyngeal food impaction with tracheal compression; distal impaction is almost always mechanical (meat, raw vegetables, sticky rice).",
+            "Complete impaction + inability to handle secretions = aspiration risk = emergency."
+          ],
+          "check": {
+            "prompt": "A patient reports undigested food returning into his mouth mainly LATE in the meal. What does this timing suggest?",
+            "options": ["A proximal lesion such as Zenker's diverticulum", "A motility abnormality such as achalasia", "Gastric outlet obstruction", "Globus sensation", "Excessive gastric acid secretion"],
+            "correct_index": 1,
+            "explanation_ar": "الارتجاع المتأخر أثناء الوجبة يوحي باضطراب حركي كالأكالازيا حيث يمتلئ المريء المتمدد قبل أن يعيد محتواه، بينما الارتجاع المبكر يوحي بآفة قريبة كرتج زنكر."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Heartburn", "definition_ar": "حرقان: إحساس حرقة خلف عظم القص، أشهر عرض لأمراض المريء."},
+        {"term": "Dysphagia", "definition_ar": "عسر البلع: صعوبة بلع الطعام أو السوائل؛ للصلبات فقط يعني آفة بنائية وللسائل والصلب معاً يعني اضطراباً حركياً."},
+        {"term": "Odynophagia", "definition_ar": "ألم البلع: ألم عند مرور الطعام، يوحي بالتهاب المريء التقرحي أو الخمجي أو الدوائي."},
+        {"term": "Regurgitation", "definition_ar": "الارتجاع: صعود الطعام أو السائل إلى الصدر أو الفم دون غثيان أو تقلصات قيئية."},
+        {"term": "Steakhouse syndrome", "definition_ar": "متلازمة الستيك هاوس: انحشار لقمة طعام (لحم عادة) في المريء مسبباً ألماً صدرياً حاداً وخطر انسداد الرغامى أو الاستنشاق."},
+        {"term": "Oropharyngeal dysphagia", "definition_ar": "عسر البلع الفموي البلعومي: صعوبة نقل اللقمة من الفم إلى البلعوم مع أعراض عصبية مرافقة كالثيل والارتجاع الأنفي والاستنشاق."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c4",
+      "lecture_id": "L1_oesophagus",
+      "title": "GERD — Definition, Epidemiology and Pathophysiology",
+      "summary_ar": "الGERD يحدث عندما يسبب ارتجاع محتويات المعدة أعراضاً مزعجة أو مضاعفات. الانتشار 10-20% غربياً و<5% في آسيا، وترتفع في أمريكا الشمالية عن أوروبا وفي شمال أوروبا عن جنوبها، وعوامل الخطر: السمنة وربما العمر والدور الوراثي. دفاع المريء ثلاثي (حاجز مضاد للارتجاع، تطهير مريئي، عوامل دفاع ظهارية)، والارتجاع الفيزيولوجي يحدث عبر ارتخاء عابر للعاصرة السفلية بمنعكس مبهمي يحفزه تمدد المعدة؛ أما المرضي فيرتبط بارتفاع الضغط داخل البطن والفتق الحجابي والسمنة وتأخر إفراغ المعدة.",
+      "difficulty": "core",
+      "order_index": 3,
+      "sections": [
+        {
+          "heading": "Definition and Epidemiology",
+          "body_text": "**Definition:** gastro-oesophageal reflux disease (GERD) develops when the **reflux of stomach contents into the oesophagus causes troublesome symptoms or complications**.\n\n**Epidemiology:**\n- GERD, defined as **at least weekly heartburn or acid regurgitation**, has a prevalence of **10–20% in the Western world** and **less than 5% in Asia**.\n- The prevalence tends to be **higher in North America than in Europe**, and **higher in northern Europe than in southern Europe**.\n- **Risk factors for developing GERD:** obesity and possibly increasing age; a **genetic component** may also play a role.\n\nThese figures make GERD one of the commonest chronic diseases encountered in GI clinics and explain its enormous economic burden.",
+          "key_points": [
+            "GERD = reflux causing troublesome symptoms and/or complications.",
+            "Prevalence: 10–20% Western world, <5% Asia; North America > Europe, northern Europe > southern Europe.",
+            "Risk factors: obesity, possibly age, genetic component."
+          ]
+        },
+        {
+          "heading": "Antireflux Defences and Physiological Reflux",
+          "body_text": "The oesophagus is protected from the harmful effects of refluxed gastric contents by three lines of defence:\n- The **antireflux barrier at the gastro-oesophageal junction** (LOS plus crural diaphragm).\n- **Oesophageal clearance mechanisms**.\n- **Epithelial defensive factors**.\n\nReflux of gastric contents from the stomach into the oesophagus **occurs even in healthy individuals**, but refluxed material is normally cleared in a **two-step process**:\n- **Volume clearance by peristaltic function** (stripping the refluxate back into the stomach).\n- **Neutralisation of small amounts of residual acid by weakly alkaline swallowed saliva**.\n\nIn normal healthy individuals, **physiological reflux occurs primarily when the lower oesophageal sphincter transiently relaxes in the absence of a swallow**, because of a **vagally mediated reflex that is stimulated by gastric distension** (e.g. after a large meal). Disease appears when reflux overwhelms the three defences: defective clearance, weak epithelial resistance, or a failed barrier.",
+          "key_points": [
+            "Three defences: antireflux barrier (GOJ), oesophageal clearance, epithelial defensive factors.",
+            "Two-step clearance: peristaltic volume clearance + alkaline saliva neutralising residual acid.",
+            "Physiological reflux = transient LOS relaxation without a swallow (vagal reflex from gastric distension)."
+          ]
+        },
+        {
+          "heading": "Mechanisms of Pathological Reflux",
+          "body_text": "In GERD patients, reflux results from failure of the antireflux barrier:\n- **Transient relaxation of the LOS or a low resting LOS pressure** → regurgitation, **especially when intra-abdominal pressure is increased** (pregnancy, obesity, straining, tight garments, bending).\n- **Hiatal hernia:** results in **spatial separation between the augmenting effects of the crural diaphragm and the LOS**, which **widens the opening of the gastro-oesophageal junction and decreases the pressure of the LOS**, predisposing to reflux events.\n- **Obesity:** increases **intragastric pressure**, which increases the **gastro-oesophageal pressure gradient** and the **frequency of transient LOS relaxation**, predisposing gastric contents to migrate into the oesophagus; in addition, obesity enhances the **spatial separation of the crural diaphragm and LOS**, thereby **predisposing obese individuals to hiatal hernia**.",
+          "key_points": [
+            "Pathological reflux: transient LOS relaxation or low resting LOS pressure + raised intra-abdominal pressure.",
+            "Hiatal hernia separates the crural diaphragm from the LOS → wider GOJ opening, lower LOS pressure.",
+            "Obesity: ↑intragastric pressure, ↑GE pressure gradient, ↑transient LOS relaxations, ↑hiatal hernia risk."
+          ],
+          "check": {
+            "prompt": "By which mechanism does a hiatal hernia predispose to gastro-oesophageal reflux?",
+            "options": ["It spatially separates the crural diaphragm from the LOS, widening the GOJ and lowering LOS pressure", "It increases gastric acid secretion directly", "It destroys the oesophageal squamous epithelium", "It abolishes salivary production", "It causes permanent failure of the upper oesophageal sphincter"],
+            "correct_index": 0,
+            "explanation_ar": "الفتق الحجابي يفصل مكانيّاً بين تأثير الحجاب الحاجز الداعم والعاصرة المريئية السفلية، فيوسّع فتحة الوصلة المعدية المريئية ويخفض ضغط العاصرة، مما يهيئ للارتجاع."
+          }
+        },
+        {
+          "heading": "Factors Associated with GERD (Fig. 21.26) and Imaging Correlates",
+          "body_text": "The lecture figure (Fig. 21.26 — 'Factors associated with the development of gastro-oesophageal reflux disease') is converted here into a checklist:\n- **Obesity**\n- **Dietary factors** (illustrated as a beverage glass and a 'choco-bar' packet — fatty foods, chocolate, caffeine-type triggers)\n- **Defective oesophageal clearance** (impaired peristaltic stripping of the refluxate)\n- **Abnormal lower oesophageal sphincter:** reduced tone | inappropriate (transient) relaxation\n- **Hiatus hernia**\n- **Acid–pepsin (bile)** — the aggressive refluxate itself rising from the stomach lumen through the LOS into the oesophagus\n- **Delayed gastric emptying** (prolonged gastric reservoir time)\n- **Increased intra-abdominal pressure** (arrows compressing the stomach externally)\n\n**Imaging correlates on the same slide pair:**\n- A schematic of a **sliding hiatal hernia**: the gastric fundus and GOJ displaced proximally through the diaphragmatic hiatus so they lie ABOVE the diaphragm, with the lower oesophageal sphincter and diaphragm labelled.\n- A **barium swallow showing a dilated, contrast-filled oesophagus proximal to a smooth, tapered distal narrowing ('bird's beak' / 'rat-tail')** — the classic achalasia appearance (oesophageal stasis with a functional obstruction), revisited in detail in the achalasia concept."
+        }
+      ],
+      "key_terms": [
+        {"term": "Transient LOS relaxation", "definition_ar": "ارتخاء عابر للعاصرة المريئية السفلية دون بلعة، أهم آلية للارتجاع الفيزيولوجي والمرضي."},
+        {"term": "Hiatal hernia", "definition_ar": "فتق حجابي: صعود جزء من المعدة والعاصرة عبر فتحة الحجاب إلى الصدر، يفصل العاصرة عن دعم الحجاب ويهيئ للارتجاع."},
+        {"term": "Antireflux barrier", "definition_ar": "الحاجز المضاد للارتجاع عند الوصلة المعدية المريئية: العاصرة السفلية مع الحجاب الحاجز."},
+        {"term": "Refluxate", "definition_ar": "المحتوى المرتجع: حمض المعدة والببسين (وربما الصفراء) الذي يهاجم مخاطية المريء."},
+        {"term": "Oesophageal clearance", "definition_ar": "التطهير المريئي: إعادة المحتوى المرتجع للمعدة بالحركة الدودية وتعديل الحمض المتبقي بلعاب قاعدي."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c5",
+      "lecture_id": "L1_oesophagus",
+      "title": "GERD — Clinical Manifestations, Diagnosis and Treatment",
+      "summary_ar": "الأعراض الكلاسيكية: حرقان وارتجاع حمضي؛ اللانمطية: ألم صدري وعسر بلع وألم بلع؛ وخارج المريء: سعال والتهاب حنجرة وربو وتآكل أسنان (لا تُنسب للارتجاع إلا مع أعراض كلاسيكية)، مع اقترانات غير مثبتة (بلعوم وجيوب وأذن وسطى وتليف رئوي). ثلثا المرضى لا آفات تنظيرية. التشخيص سريري مع تجربة مثبط حمض؛ والتنظير للفشل العلاجي أو علامات الإنذار. العلاج: تعديل نمط الحياة + PPI يومياً (أفضل من H2RA)، والجراحة (طي نيسن بالمنظار) للحالات المنتكسة أو الأعراض الجانبية أو رفض الدواء المزمن أو تصحيح الفتق.",
+      "difficulty": "core",
+      "order_index": 4,
+      "sections": [
+        {
+          "heading": "Clinical Manifestations and Extra-oesophageal Features",
+          "body_text": "- **Classic symptoms of GERD:** heartburn and acid regurgitation.\n- **Atypical symptoms:** chest pain, dysphagia and odynophagia.\n- **Extra-oesophageal manifestations of reflux disease:** **cough, laryngitis, asthma and dental erosions** — but these can be **reliably attributed to reflux only if they are accompanied by classic signs and symptoms of reflux disease**.\n- **Other proposed associations that are NOT clearly established:** pharyngitis, sinusitis, otitis media and idiopathic pulmonary fibrosis.\n- **Mucosal consequences:** when excessive gastric contents overwhelm the mucosal protective factors in the oesophagus, **oesophagitis** may be manifest as **erosions or ulceration**, and may also lead to **fibrosis with stricturing**, **columnar metaplasia (Barrett's oesophagus)** or **oesophageal adenocarcinoma**.\n- However, **approximately two-thirds of individuals with reflux symptoms have NO evidence of oesophageal damage by endoscopy** (non-erosive disease) — a normal OGD does not exclude GERD.",
+          "key_points": [
+            "Classic: heartburn + acid regurgitation. Atypical: chest pain, dysphagia, odynophagia.",
+            "Extra-oesophageal (cough, laryngitis, asthma, dental erosions) count as reflux only with classic accompanying symptoms; pharyngitis, sinusitis, otitis media and IPF are not clearly established.",
+            "~2/3 of reflux patients have a normal endoscopy."
+          ]
+        },
+        {
+          "heading": "Diagnostic Approach",
+          "body_text": "- **When GERD presents with typical signs and symptoms (heartburn, acid regurgitation) that are responsive to antisecretory therapy → NO diagnostic evaluation is warranted.**\n- **Diagnostic endoscopy is warranted** in individuals who **fail to respond to therapy** or have **alarm symptoms or signs**: **dysphagia, weight loss, anaemia, gastrointestinal bleeding, or persistent heartburn**.\n- **Endoscopy permits the detection of erosive oesophagitis and complications** such as a **peptic stricture and Barrett's oesophagus**; **mucosal biopsy is crucial in these settings** and also **excludes conditions that can mimic GERD, such as eosinophilic oesophagitis**.\n- However, **most patients have no mucosal damage seen on endoscopy**, regardless of whether they are on or off antisecretory therapy.\n- **24-hour oesophageal pH monitoring and impedance:** indicated **if the diagnosis is unclear** or **as a preoperative assessment** (before antireflux surgery).",
+          "key_points": [
+            "Typical responsive symptoms → treat empirically, no tests.",
+            "Endoscopy for: failure of therapy OR alarm features (dysphagia, weight loss, anaemia, GI bleeding, persistent heartburn).",
+            "24-h pH monitoring ± impedance: unclear diagnosis or preoperative assessment."
+          ],
+          "check": {
+            "prompt": "Which of the following is an ALARM feature that mandates diagnostic endoscopy in a patient with reflux symptoms?",
+            "options": ["Nocturnal cough alone", "Dysphagia", "Postprandial bloating", "Belching", "Symptoms present for more than 2 years"],
+            "correct_index": 1,
+            "explanation_ar": "علامات الإنذار التي تستوجب التنظير: عسر البلع، فقد الوزن، فقر الدم، النزف الهضمي، والحرقان المستمر (أو الفشل العلاجي). أما السعال الليلي والتجشؤ والانتفاخ فليست علامات إنذار."
+          }
+        },
+        {
+          "heading": "Treatment — Lifestyle Modifications and Pharmacological Therapy",
+          "body_text": "**Lifestyle modifications:**\n- **Avoidance of foods or beverages that may provoke symptoms** — alcohol, coffee, spicy foods and late meals — makes physiologic sense, although data from clinical trials to support these manoeuvres are lacking.\n- **Elevation of the head of the bed** for patients with nocturnal regurgitation or heartburn is also logical.\n- **Weight loss** should be part of any treatment programme for obese patients, given the association of obesity with GERD symptoms.\n\n**Pharmacological treatment:**\n- **Inhibition of gastric acid secretion is the cornerstone of the acute treatment of GERD.**\n- **Proton pump inhibitors (PPIs) are superior to histamine (H2)-receptor antagonists** for both the **healing of oesophagitis** and the **control of symptoms**.\n- However, the **healing of oesophagitis is more predictable than improvement in heartburn symptoms**, even with PPIs.\n- There are **no major differences in treatment efficacy among the various PPIs**, and **once-daily dosing is adequate**.",
+          "key_points": [
+            "Lifestyle: avoid alcohol/coffee/spicy food/late meals; elevate head of bed; weight loss in obesity.",
+            "PPI > H2RA for healing oesophagitis and symptom control; all PPIs equivalent; once daily is enough."
+          ]
+        },
+        {
+          "heading": "Treatment — Surgical Management (Nissen Fundoplication)",
+          "body_text": "**Indications for antireflux surgery:**\n- **Medically refractory disease.**\n- **Patients with side effects of medications.**\n- **Those who do not want to use long-term medication.**\n- **Correction of an associated hiatus hernia.**\n\n**Procedure:** the antireflux surgery is called **Nissen fundoplication** (wrapping the gastric fundus around the distal oesophagus to reinforce the barrier) and it is **usually done laparoscopically nowadays**.\n\nBecause surgery is irreversible, objective confirmation of reflux beforehand (24-hour pH monitoring ± manometry — see diagnosis section) is the standard preoperative assessment.",
+          "key_points": [
+            "Antireflux surgery (Nissen fundoplication, usually laparoscopic) for: refractory disease, drug side effects, refusal of long-term medication, or correction of hiatus hernia.",
+            "Preoperative pH/impedance + manometry assessment is standard when the diagnosis is unclear."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Alarm features", "definition_ar": "علامات إنذار تستوجب التنظير: عسر البلع، فقد الوزن، فقر الدم، النزف الهضمي، والحرقان المستمر."},
+        {"term": "Ambulatory pH monitoring", "definition_ar": "مراقبة درجة حموضة المريء لمدة 24 ساعة: اختبار موضوعي للارتجاع عند غموض التشخيص أو قبل الجراحة."},
+        {"term": "Impedance testing", "definition_ar": "فحص المقاومة: يكشف الارتجاع الحمضي وغير الحمضي (السائل والغازي) بالتنظير الوظيفي."},
+        {"term": "Nissen fundoplication", "definition_ar": "عملية نيسن: لفّ قاع المعدة حول المريء السفلي لتقوية الحاجز المضاد للارتجاع، تُجرى بالمنظار عادة."},
+        {"term": "Non-erosive reflux disease", "definition_ar": "داء ارتجاعي غير تآكلي: أعراض ارتجاع دون آفات مخاطية تنظيرية (ثلثا المرضى تقريباً)."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c6",
+      "lecture_id": "L1_oesophagus",
+      "title": "GERD Complications — Oesophagitis, Anaemia and Benign Stricture",
+      "summary_ar": "مضاعفات الGERD خمسة: التهاب المريء، مريء باريت، فقر الدم، التضيق الحميد، والأدينوكارسينوما. التهاب المريء الارتجاعي يتراوح من احمرار خفيف إلى تقرح نازف شديد مع تضيق، وقد يكون المنظر تنظيرياً طبيعياً تماماً، مع ضعف الترابط بين الأعراض والمنظر. فقر الدم بعوز الحديد قد ينتج عن نزف خفي من التهاب مزمن أو تقرحات كاميرون في عنق كيس الفتق الحجابي الكبير، مع وجوب استبعاد أسباب أخرى - وخاصة سرطان القولون والمستقيم.",
+      "difficulty": "core",
+      "order_index": 5,
+      "sections": [
+        {
+          "heading": "The Five Complications of GERD",
+          "body_text": "**GERD complications — memorise the list:**\n- **1. Oesophagitis**\n- **2. Barrett's oesophagus**\n- **3. Anaemia**\n- **4. Benign oesophageal stricture**\n- **5. Oesophageal adenocarcinoma**\n\nThese represent one continuum of reflux injury: refluxate overwhelms mucosal defences → **oesophagitis** (erosions/ulceration) → healing by **fibrosis with stricture** (benign stricture) or by **columnar metaplasia** (Barrett's) → **adenocarcinoma**; separately, chronic **occult blood loss** from the inflamed mucosa produces **iron-deficiency anaemia**. Each complication is detailed in this concept and in the Barrett's concept.",
+          "key_points": [
+            "The 5 complications: oesophagitis | Barrett's | anaemia | benign stricture | adenocarcinoma.",
+            "They form a reflux-injury continuum: inflammation → fibrosis/stricture or metaplasia → cancer."
+          ]
+        },
+        {
+          "heading": "Reflux Oesophagitis",
+          "body_text": "- A **range of endoscopic findings is recognised** — from **mild redness** to **severe bleeding ulceration with stricture formation** — although **appearances may be completely normal**.\n- There is a **poor correlation between symptoms and histological and endoscopic findings**: symptom severity does not predict the degree of mucosal injury, and severe oesophagitis may be found in mildly symptomatic patients (and vice versa).\n- **Lecture endoscopic image (Fig. 21.28, 'Severe reflux oesophagitis'):** endoscopic view of the oesophageal lumen showing **near-circumferential superficial ulceration and inflammation extending up the gullet**, with visible erythema and mucosal breaks.",
+          "key_points": [
+            "Endoscopic spectrum: mild redness → severe bleeding ulceration with stricture; may be normal.",
+            "Symptoms correlate poorly with histology and endoscopy."
+          ]
+        },
+        {
+          "heading": "Anaemia and the Cameron Ulcer",
+          "body_text": "**Anaemia as a GERD complication:**\n- **Iron-deficiency anaemia can occur as a consequence of occult blood loss from long-standing oesophagitis.**\n- **Cameron ulcer (erosion):** in a **large hiatus hernia**, bleeding can stem from **subtle erosions in the neck of the (hernial) sac** — an easily overlooked source of chronic blood loss in the sliding hernia where the stomach neck rides through the diaphragm.\n- Always consider **other causes unrelated to GERD, especially colorectal cancer**, before attributing iron-deficiency anaemia to reflux disease — the anaemia may be a coincidental colon cancer presenting in a patient who also happens to have reflux.",
+          "key_points": [
+            "IDA ← occult blood loss from long-standing oesophagitis.",
+            "Cameron ulcer: erosions in the neck of a large hiatus hernia sac cause occult bleeding.",
+            "Exclude unrelated causes of IDA — especially colorectal cancer."
+          ]
+        },
+        {
+          "heading": "Benign (Peptic) Oesophageal Stricture",
+          "body_text": "- Benign oesophageal stricture is one of the **five listed GERD complications**; it results from **fibrosis with stricturing** as severe ulcerative oesophagitis heals — the lecture describes 'severe bleeding ulceration **with stricture formation**' at the severe end of the oesophagitis spectrum.\n- **Endoscopy permits detection of a peptic stricture** and allows biopsies to distinguish a benign peptic stricture from a malignant one, and from Barrett's oesophagus, in the same examination.\n- Clinically it follows the structural pattern: **progressive dysphagia to solids** (see symptoms concept). Note that strictures also complicate **corrosive** and **eosinophilic** oesophagitis, discussed in the other-oesophagitis concept — the underlying cause determines surveillance and therapy.",
+          "key_points": [
+            "Peptic stricture = fibrotic healing of severe ulcerative reflux oesophagitis.",
+            "Peptic stricture → solid-food dysphagia; endoscopy detects it and excludes malignancy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Cameron ulcer", "definition_ar": "تقرح كاميرون: تآكلات دقيقة في عنق كيس الفتق الحجابي الكبير تنزف ببطء وتسبب فقر دم بعوز الحديد."},
+        {"term": "Peptic stricture", "definition_ar": "تضيق ببتي: تضيق ليفي حميد بالمريء السفلي نتيجة تندب التهاب المريء الارتجاعي التقرحي."},
+        {"term": "Reflux oesophagitis", "definition_ar": "التهاب المريء الارتجاعي: من احمرار خفيف حتى تقرح نازف مع تضيق، مع ضعف ترابط المنظر مع الأعراض."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c7",
+      "lecture_id": "L1_oesophagus",
+      "title": "Barrett's Oesophagus",
+      "summary_ar": "مريء باريت حالة سابقة للخباثة تُستبدل فيها البطانة الحرشفية للمريء السفلي بمخاطية عمادية (مريء العماديات) قد تحوي تنسجاً معوياً، كاستجابة تكيفية لالتهاب ارتجاعي مزمن. يوجد في 10% من منظارات أعراض الارتجاع، والانتشار المجتمعي الحقيقي حتى 1.5-5%. الخطورة النسبية لسرطان المريء ترتفع 40-120 ضعفاً لكن الخطورة المطلقة منخفضة (0.1-0.5% سنوياً). لا يوقف التطور مثبطات الحمض ولا الجراحة المضادة للارتجاع؛ والمراقبة بالتنظير تعتمد على طول القطعة ودرجة الخلل التنسجي، مع العلاج التنظيري الحافظ للعضو (استئصال + حقن حراري ترددي) للدرجة العالية.",
+      "difficulty": "advanced",
+      "order_index": 6,
+      "sections": [
+        {
+          "heading": "Definition and Pathology",
+          "body_text": "**Barrett's oesophagus is a pre-malignant condition in which the normal squamous lining of the lower oesophagus is replaced by columnar mucosa (columnar-lined oesophagus; CLO) that may contain areas of intestinal metaplasia.** It is an **adaptive response to chronic gastro-oesophageal reflux**.\n\n**Endoscopic appearance (lecture diagrams):**\n- **Normal lower oesophagus:** pale pink, smooth **squamous mucosa** continuing to the stomach.\n- **Barrett's oesophagus:** a **reddish, velvety, salmon-coloured segment** of columnar mucosa in the lower oesophagus, forming **irregular tongue-like projections** extending proximally from the gastro-oesophageal junction, contrasting sharply with the surrounding pale squamous lining.\n\n**Histology (lecture panels):**\n- **Squamous epithelium** — layered stratified squamous mucosa (normal state).\n- **Columnar epithelium (intestinal metaplasia)** — glandular mucosa whose surface and glands contain the hallmark **goblet cells**; the endoscopic photo shows the GOJ with a metaplastic columnar tongue beside native squamous epithelium.\n\n**Direction of change:** squamous → columnar, beginning at the GOJ and creeping **proximally (retrograde, bottom-to-top)** — NOT in an antegrade (top-to-bottom) direction. This is a favourite true/false exam item.",
+          "key_points": [
+            "Barrett's = squamous lining replaced by columnar mucosa (CLO) ± intestinal metaplasia; pre-malignant.",
+            "Endoscopy: salmon-red, velvety, tongue-like columnar segments from the GOJ.",
+            "Histology: goblet cells within columnar glands confirm intestinal metaplasia.",
+            "Direction: bottom-to-top (from GOJ proximally), not antegrade."
+          ]
+        },
+        {
+          "heading": "Epidemiology and Risk Factors",
+          "body_text": "- Barrett's is found in **10% of patients undergoing gastroscopy for reflux symptoms**.\n- Community-based epidemiological studies suggest the **true prevalence may be up to 1.5–5% of the population**, because the condition is **often asymptomatic** until discovered when the patient presents with **oesophageal cancer**.\n- The **relative risk of oesophageal cancer is increased 40–120-fold, but the absolute risk is low (0.1–0.5% per year)** — the classic pairing quoted in exams and in counselling.\n\n**Risk factors for Barrett's oesophagus:**\n- **Prolonged duration of GERD.**\n- **White male over 50 years.**\n- **Obesity, especially increase in waist circumference.**\n- **Weakly associated with smoking but NOT with alcohol intake.**",
+          "key_points": [
+            "10% of gastroscopies for reflux; true community prevalence 1.5–5%.",
+            "Cancer risk: RR ×40–120, but absolute risk only 0.1–0.5% per year.",
+            "Risk factors: chronic GERD, white male >50, central obesity (waist), smoking (weak); NOT alcohol."
+          ]
+        },
+        {
+          "heading": "Cancer Risk Determinants and Diagnosis",
+          "body_text": "**What actually drives the cancer risk:**\n- The risk of cancer seems to relate to the **severity and duration of reflux** rather than the presence of Barrett's oesophagus per se.\n- It has been suggested that **duodeno-gastro-oesophageal reflux of bile, pancreatic enzymes and pepsin, as well as gastric acid**, contributes to neoplastic progression — i.e. the aggressive refluxate mixture, not acid alone.\n\n**Diagnosis:**\n- Requires **multiple systematic biopsies** to maximise the chance of detecting **intestinal metaplasia and/or dysplasia** — both targeted biopsies from any visible abnormality and systematic biopsies along the columnar segment.",
+          "key_points": [
+            "Cancer risk tracks reflux severity and duration (bile, pancreatic enzymes, pepsin + acid), not merely the presence of Barrett's.",
+            "Diagnosis rests on multiple systematic biopsies showing intestinal metaplasia ± dysplasia."
+          ]
+        },
+        {
+          "heading": "Management, Surveillance and Dysplasia Pathways",
+          "body_text": "**Background management:**\n- **Neither potent acid suppression nor antireflux surgery stops progression or induces regression of Barrett's oesophagus** — treatment is indicated **only for symptoms of reflux or complications such as stricture**.\n\n**Endoscopic therapies:**\n- **Radiofrequency ablation (RFA)** or **photodynamic therapy** can **induce regression**, but at present are used **only for those with dysplasia or intramucosal cancer** (not for ordinary non-dysplastic Barrett's).\n\n**Surveillance programme (memorise the intervals):**\n- **Intestinal metaplasia WITHOUT dysplasia:** endoscopy at **3–5-yearly intervals if the Barrett's segment length is <3 cm**, and at **2–3-yearly intervals if the length is >3 cm**.\n- **Low-grade dysplasia:** endoscopy at **6-monthly intervals**.\n- **High-grade dysplasia or intramucosal carcinoma:** treatment options are either **oesophagectomy** or **endoscopic therapy — a combination of endoscopic resection of any visibly abnormal areas plus radiofrequency ablation of the remaining Barrett's mucosa** — as an **'organ-preserving' alternative to surgery**.\n- These cases should be **discussed in a multidisciplinary team (MDT) meeting and managed in specialist centres**.\n\n**Why surveillance matters (and its limits):** regular endoscopic surveillance can detect dysplasia at an early stage and may improve survival, but **because most Barrett's oesophagus is undetected until cancer develops, surveillance strategies are unlikely to influence the overall mortality rate of oesophageal cancer**.",
+          "key_points": [
+            "Acid suppression / antireflux surgery do NOT cause regression; treat only symptoms or complications.",
+            "RFA / photodynamic therapy only for dysplasia or intramucosal cancer.",
+            "Surveillance: no dysplasia <3 cm → 3–5 years; >3 cm → 2–3 years; LGD → 6 months; HGD → oesophagectomy or endoscopic resection + RFA (organ-preserving, MDT, specialist centre)."
+          ],
+          "check": {
+            "prompt": "A patient has a 5-cm Barrett's segment with intestinal metaplasia and NO dysplasia. What endoscopic surveillance interval applies?",
+            "options": ["Every 6 months", "Every 2–3 years", "Every 3–5 years", "Every 10 years", "No surveillance needed"],
+            "correct_index": 1,
+            "explanation_ar": "قطعة أطول من 3 سم بلا خلل تنسجي ← تنظير كل 2–3 سنوات؛ أما الأقصر من 3 سم فكل 3–5 سنوات، والخلل المنخفض الدرجة كل 6 أشهر، والعالي الدرجة يعالَج بدل المراقبة البسيطة."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Barrett's oesophagus", "definition_ar": "مريء باريت: استبدال البطانة الحرشفية السفلية بمخاطية عمادية قد تحوي تنسجاً معوياً، حالة سابقة للسرطانة الغدية."},
+        {"term": "Columnar-lined oesophagus (CLO)", "definition_ar": "المريء المبطّن بالعماديات: الاسم الوصفي لمريء باريت قبل توثيق التنسج المعوي."},
+        {"term": "Intestinal metaplasia", "definition_ar": "التنسج المعوي: تحول المخاطية العمادية إلى نوع معوي يحوي خلايا كأس، وهو جوهر خطورة باريت."},
+        {"term": "Goblet cell", "definition_ar": "الخلية الكأسية: خلية مخاطية مميزة للتنسج المعوي، علامة التشخيص النسيجي لمريء باريت."},
+        {"term": "Radiofrequency ablation (RFA)", "definition_ar": "الحقن الحراري الترددي: إزالة مخاطية باريت بالطاقة الحرارية، يُستخدم للخلل التنسجي أو السرطان داخل المخاطية."},
+        {"term": "Dysplasia", "definition_ar": "الخلل التنسجي: تغيرات نمو شاذة داخل النسيج؛ منخفضة الدرجة تعني مراقبة لصيقة وعالية الدرجة تتطلب علاجاً."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c8",
+      "lecture_id": "L1_oesophagus",
+      "title": "Other Causes of Oesophagitis — Infective, Corrosive, Drug-Induced and Eosinophilic",
+      "summary_ar": "أسباب أخرى لالتهاب المريء: خمجي (المبيضات والحلأ البسيط والفيروس المضخم للخلايا) وغالباً في المثبطين مناعياً؛ أكّال (مبيضات منزلية قوية وحمض البطاريات) في محاولات الانتحار والأطفال، ويعقّبه انثقاب والتهاب المنصف ثم تضيق وسرطان؛ دوائي (بوتاسيوم، مضادات التهاب لاستيرويدية، تتراسيكلين ودوكسي سيكلين، بيسفوسفونات، حديد فموي)؛ والتهاب المريء اليوزيني، وهو سبب شائع لانحشار الطعام عند البالغين (متلازمة الستيك هاوس)، يشخَّص بأكثر من 15 يوزيني/حقل مع خزعات قريبة وبعيدة ومستهدفة، ويعالج بالستيرويدات البلعية (فلوتيكازون/بيتاميثازون) والمونتيلوكاست للحالات المقاومة.",
+      "difficulty": "core",
+      "order_index": 7,
+      "sections": [
+        {
+          "heading": "Infective Oesophagitis",
+          "body_text": "- **Most common infective causes: Candida, herpes simplex virus (HSV) and cytomegalovirus (CMV).**\n- These mainly occur in **immunosuppressed patients** — HIV/AIDS, chemotherapy, transplantation, prolonged steroids (standard clinical context for this triad).\n- Typical clinical setting: an immunosuppressed host with odynophagia (painful swallowing); diagnosis is endoscopic with biopsies/brushings, since the three organisms have distinct endoscopic and histological appearances.",
+          "key_points": [
+            "Infective oesophagitis triad: Candida, HSV, CMV.",
+            "Think immunosuppression (HIV, chemotherapy, transplant, steroids)."
+          ]
+        },
+        {
+          "heading": "Corrosive Oesophagitis",
+          "body_text": "- Most commonly caused by **strong household bleach and battery acid**.\n- Usually occurs as **suicidal attempts**, or **intentionally/accidentally in children and mentally impaired persons**.\n- **Acute consequences:** **severe oesophagitis, perforation and mediastinitis** — life-threatening emergencies.\n- **Long-term complications:** **oesophageal stricture and cancer** — the post-caustic stricture is itself a listed risk factor for squamous cell carcinoma (see the tumours concept).",
+          "key_points": [
+            "Corrosives: household bleach, battery acid; suicidal attempts, children, mentally impaired persons.",
+            "Acute: severe oesophagitis, perforation, mediastinitis. Long-term: stricture, cancer."
+          ]
+        },
+        {
+          "heading": "Drug-Induced (Pill) Oesophagitis",
+          "body_text": "**Drugs that cause oesophageal injury (memorise the list):**\n- **Potassium supplements**\n- **NSAIDs**\n- **Antibiotics — mainly tetracycline and doxycycline**\n- **Bisphosphonates**\n- **Oral iron supplements**\n- Others\n\nMechanism (standard clinical note): tablets lodge against the oesophageal wall and dissolve locally, causing direct caustic mucosal injury — classically when taken with insufficient water or immediately before lying down.",
+          "key_points": [
+            "Pill oesophagitis: K+ supplements, NSAIDs, tetracycline/doxycycline, bisphosphonates, oral iron.",
+            "Prevention: take with plenty of water, stay upright after dosing (standard advice)."
+          ]
+        },
+        {
+          "heading": "Eosinophilic Oesophagitis (EoE)",
+          "body_text": "- **A common cause of food impaction in adults**, causing what is called the **steakhouse syndrome**.\n- **Complication: oesophageal stricture.**\n- **Endoscopic findings** (as in the lecture's entry question): **multiple oesophageal furrows, freckles and rings with NO dominant stricture**.\n- **Diagnosis:** endoscopic biopsies from **both the distal AND proximal oesophagus** showing **>15 eosinophils/hpf** (high-power field), **plus target biopsies from any lesion caused by EoE: ring, web, furrows, ulcers**.\n- **Treatment:** **swallowed corticosteroids such as fluticasone or betamethasone** (topical action on the mucosa — NOT inhaled routes); **refractory symptoms may respond to montelukast, a leukotriene inhibitor**.\n- The lecture's entry case had **40 eosinophils/hpf** — well above the >15/hpf threshold.",
+          "key_points": [
+            "EoE = commonest cause of adult food impaction (steakhouse syndrome); complication = stricture.",
+            "Endoscopy: furrows, freckles, rings, no dominant stricture.",
+            "Biopsy: >15 eosinophils/hpf from distal AND proximal oesophagus + target biopsies of lesions.",
+            "Treatment: swallowed fluticasone/betamethasone; refractory → montelukast (leukotriene inhibitor)."
+          ],
+          "check": {
+            "prompt": "What is the diagnostic eosinophil threshold on oesophageal biopsy in eosinophilic oesophagitis?",
+            "options": [">15 eosinophils/hpf in distal and proximal biopsies", ">5 eosinophils/hpf in gastric biopsies only", "Any eosinophils if furrows are seen", ">100 eosinophils/hpf always required", "<15 eosinophils/hpf with rings"],
+            "correct_index": 0,
+            "explanation_ar": "التهاب المريء اليوزيني يشخص بوجود أكثر من 15 يوزيني/حقل قوة في خزعات من المريء القاصي والدانس معاً، مع خزعات مستهدفة من الآفات (حلقات/أغشية/تلميات/تقرحات)."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Candida oesophagitis", "definition_ar": "التهاب المريء بالمبيضات: أشيع سبب خمجي، يصيب المثبطين مناعياً."},
+        {"term": "Corrosive oesophagitis", "definition_ar": "التهاب المريء الأكّال: إصابة بحارق (مبيضات منزلية/حمض بطاريات) قد تنتهي بانثقاب ثم تضيق وسرطان."},
+        {"term": "Pill oesophagitis", "definition_ar": "التهاب المريء الدوائي: احتباس القرص على المخاطية وإصابة مباشرة (بوتاسيوم، مسكنات، دوكسيسايكلين، بيسفوسفونات، حديد)."},
+        {"term": "Eosinophilic oesophagitis", "definition_ar": "التهاب المريء اليوزيني: التهاب أرجي بتسلل يوزينيات، أشيع سبب لانحشار الطعام عند البالغين."},
+        {"term": "Montelukast", "definition_ar": "مونتيلوكاست: مضاد مستقبلات الليكوتريين قد يفيد في أعراض التهاب المريء اليوزيني المقاومة."},
+        {"term": "Furrows, freckles and rings", "definition_ar": "تلميات ونمش وحلقات: المنظر التنظيري النموذجي للتهاب المريء اليوزيني دون تضيق مسيطر."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c9",
+      "lecture_id": "L1_oesophagus",
+      "title": "Pharyngeal Pouch (Zenker's Diverticulum)",
+      "summary_ar": "الرتج البلعومي (زنكر) هو أول اضطرابات الحركة: عدم تناسق البلع داخل البلعوم يؤدي إلى انفتاق عبر العضلة الحلقية البلعومية وتشكيل جراب. يعاني المريض عسر بلع ونتانة نفس وارتجاع طعام غير مهضوم وأحياناً غرغرة في العنق، وقد يكون لا عرضياً. اختبار الاختيار ابتلاع الباريوم، والعلاج شق عضلي جراحي (استئصال الرتج) للمرضى العرضيين.",
+      "difficulty": "advanced",
+      "order_index": 8,
+      "sections": [
+        {
+          "heading": "Pathogenesis and Clinical Features",
+          "body_text": "**Pharyngeal pouch (Zenker's diverticulum)** is the first of the oesophageal motility disorders in the lecture:\n- **Mechanism:** **incoordination of swallowing within the pharynx** leads to **herniation through the cricopharyngeus muscle** and formation of a pouch (the pharyngeal wall pushes out where the muscle fails to relax in sequence — a false, pulsion diverticulum).\n- **Presentation:** patients usually present with **dysphagia, halitosis and regurgitation**; sometimes the patient may feel **gurgling in the neck**, or the condition can be **usually asymptomatic** and discovered incidentally.\n- Regurgitation of **undigested food eaten hours earlier**, often early in the meal as the pouch empties, fits the 'proximal lesion' pattern of regurgitation (see symptoms concept).",
+          "key_points": [
+            "Mechanism: pharyngeal swallowing incoordination → herniation through cricopharyngeus → pouch.",
+            "Triad: dysphagia + halitosis + regurgitation; plus gurgling in the neck; may be asymptomatic."
+          ]
+        },
+        {
+          "heading": "Investigation and Treatment",
+          "body_text": "- **Investigation of choice: barium swallow** — the lecture's fluoroscopic images show a **large contrast-filled sac (pouch) protruding posteriorly at the pharyngo-oesophageal junction**, with labels on the pharynx, the Zenker's diverticulum, the normal oesophageal lumen and the **narrow cervical oesophagus** due to cricopharyngeal dysfunction. (Blind endoscopy risks entering and perforating the pouch — which is why the radiological study comes first.)\n- **Treatment: surgical myotomy ('diverticulotomy'), with or without resection of the pouch, is indicated in symptomatic patients.** Asymptomatic patients can be observed.",
+          "key_points": [
+            "Barium swallow = investigation of choice for Zenker's diverticulum.",
+            "Symptomatic patients → surgical myotomy (diverticulotomy) ± pouch resection."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Zenker's diverticulum", "definition_ar": "رتج زنكر: انفتاق مخاطية البلعوم عبر العضلة الحلقية البلعومية يشكل جراباً يجمع الطعام المتحتبس."},
+        {"term": "Diverticulotomy", "definition_ar": "استئصال الرتج: شق العضلة الحلقية البلعومية جراحياً مع أو دون استئصال الجراب."},
+        {"term": "Halitosis", "definition_ar": "نتانة النفس: رائحة فم كريهة بسبب تخمر الطعام المحتبس في الرتج."},
+        {"term": "Cricopharyngeus muscle", "definition_ar": "العضلة الحلقية البلعومية: مكوّن العاصرة المريئية العلوية، ينفتق عبرها رتج زنكر."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c10",
+      "lecture_id": "L1_oesophagus",
+      "title": "Achalasia of the Oesophagus",
+      "summary_ar": "الأكالازيا: عاصرة سفلية مرتفعة الضغط لا ترتخي مع موجة البلع مع فشل التقلص الدفعي لجسم المريء فيؤدي لتوسع تدريجي. السبب مجهول (نقص إفراز أكسيد النيتريك من العصبونات المثبطة، تنكس الخلايا العقدية، ضمور النوى الحائرية الظهرية متأخراً؛ وداء شاغاس يشبهه سريرياً). عسر البلع بطيء متقطع يسوء مع الصلب ويتحسن بالسوائل والوقوف والحركة، ولا حرقان لأن العاصرة مغلقة، مع ألم صدري تشنجي واستنشاق رئوي ليلي، وتهيؤ لسرطانة حرشفية. التشخيص: باريوم (منقار الطائر)، تنظير دائماً لاستبعاد الزائفة، ومانومترية مؤكدة. العلاج: توسيع هوائي 30-35 مم، سم بوتولينوم، POEM، أو شق هيلر مع طي جزئي وPPI لاحقاً؛ ودوائياً حاصرات الكالسيوم والنترات لغير المرشحين للإجراءات.",
+      "difficulty": "core",
+      "order_index": 9,
+      "sections": [
+        {
+          "heading": "Definition and Pathophysiology",
+          "body_text": "**Achalasia is characterised by:**\n- A **hypertonic lower oesophageal sphincter, which fails to relax in response to the swallowing wave.**\n- **Failure of propagated oesophageal contraction**, leading to **progressive dilatation of the oesophagus**.\n\n**Aetiology — the cause is unknown (idiopathic), but these defects are described:**\n- **Defective release of nitric oxide by inhibitory neurons** in the lower oesophageal sphincter has been reported.\n- **Degeneration of ganglion cells** within the sphincter and the body of the oesophagus.\n- **Loss of the dorsal vagal nuclei within the brainstem** can be demonstrated in later stages.\n- **Infection with Trypanosoma cruzi (Chagas' disease)** causes a syndrome that is **clinically similar to achalasia** — the classic secondary mimic.",
+          "key_points": [
+            "Achalasia = hypertonic non-relaxing LOS + absent propagated peristalsis → progressive dilatation.",
+            "Idiopathic: NO deficiency, ganglion cell degeneration, late dorsal vagal nucleus loss; Chagas' disease mimics."
+          ]
+        },
+        {
+          "heading": "Clinical Features",
+          "body_text": "- **Dysphagia is the usual presentation:** it **develops slowly, is initially intermittent, is worse for solids and eased by drinking liquids and by standing and moving around after eating**.\n- **Heartburn does NOT occur** — because **the closed oesophageal sphincter prevents gastro-oesophageal reflux** (a key discriminator from GERD and peptic stricture).\n- **Some patients experience episodes of chest pain due to oesophageal spasm.**\n- **As the disease progresses:** dysphagia worsens, **the oesophagus empties poorly** and **nocturnal pulmonary aspiration develops** (nocturnal regurgitation with cough/chest infections).\n- **Achalasia predisposes to squamous carcinoma of the oesophagus** — chronic stasis and inflammation in the dilated, food-filled oesophagus.",
+          "key_points": [
+            "Slow, intermittent dysphagia; worse solids, eased by liquids and standing/moving after meals.",
+            "NO heartburn (closed LOS); chest pain from spasm; late nocturnal pulmonary aspiration.",
+            "Long-term risk: squamous carcinoma."
+          ],
+          "check": {
+            "prompt": "Why does heartburn characteristically NOT occur in achalasia?",
+            "options": ["The hypertonic LOS stays closed and prevents gastro-oesophageal reflux", "Gastric acid secretion is absent", "The oesophageal mucosa is insensitive to acid", "Saliva production is excessive", "The oesophagus is dilated and buffers acid"],
+            "correct_index": 0,
+            "explanation_ar": "في الأكالازيا تبقى العاصرة السفلية مغلقة مرتفعة الضغط فتمنع ارتجاع محتويات المعدة، ولذلك لا يوجد حرقان — وهذه نقطة تمييز مهمة عن الارتجاع والتضيق القرحي."
+          }
+        },
+        {
+          "heading": "Investigations (Barium, Endoscopy, Manometry)",
+          "body_text": "**1. Barium swallow:** shows **tapered narrowing of the lower oesophagus** (the 'bird-beak' deformity); in **late disease the oesophageal body is dilated, aperistaltic and food-filled**.\n\n**2. Endoscopy: should ALWAYS be carried out** — because **carcinoma of the cardia can mimic the presentation and the radiological and manometric features of achalasia ('pseudo-achalasia')**.\n\n**3. Manometry: confirms the diagnosis** — the **high-pressure, non-relaxing lower oesophageal sphincter with poor contractility of the oesophageal body**.\n\n**Lecture figure (Fig. 21.31 Achalasia):**\n- [A] X-ray: a **dilated, barium-filled oesophagus (O) with a fluid level and distal tapering**, with a **closed lower oesophageal sphincter (LOS)**; D = diaphragm.\n- [B] **High-resolution manometry in achalasia:** **absence of the peristaltic swallowing wave in the oesophageal body** (black arrows) and **raised LOS pressure with failure of relaxation on swallowing** (white arrow) — compared with the normal pattern.",
+          "key_points": [
+            "Barium: bird-beak tapered lower oesophagus; late: dilated, aperistaltic, food-filled body with fluid level.",
+            "Endoscopy is mandatory before diagnosing idiopathic achalasia → exclude pseudo-achalasia (cardia carcinoma).",
+            "Manometry is confirmatory: high-pressure, non-relaxing LOS + poor body contractility."
+          ]
+        },
+        {
+          "heading": "Management — Endoscopic, Surgical and Pharmacological",
+          "body_text": "**Endoscopic options:**\n- **1. Forceful pneumatic dilatation using a 30–35-mm-diameter balloon.**\n- **2. Endoscopically directed injection of botulinum toxin into the lower oesophageal sphincter.**\n- **3. POEM — peroral endoscopic myotomy** — a complex endoscopic technique **recently developed in specialist centres**.\n\n**Surgical option:**\n- **Surgical myotomy (Heller's operation)**, performed **either laparoscopically or as an open operation**.\n\n**The key post-procedural complication — reflux:**\n- **Both pneumatic dilatation and myotomy may be complicated by gastro-oesophageal reflux**, and this can lead to **severe oesophagitis because oesophageal clearance is so poor** (no peristalsis to strip the refluxate).\n- For this reason, **Heller's myotomy is accompanied by a partial fundoplication anti-reflux procedure**, and **PPI therapy is often necessary after surgery**.\n\n**Pharmacological therapy:**\n- Reserved **for patients who cannot undergo endoscopic or surgical therapy**.\n- Includes **calcium channel blockers and nitrates** (relax LOS smooth muscle).",
+          "key_points": [
+            "Endoscopic: pneumatic dilatation (30–35 mm), botulinum toxin injection into LOS, POEM (specialist centres).",
+            "Surgical: Heller's myotomy (laparoscopic or open) + partial fundoplication; PPI often needed afterwards.",
+            "Medical (unfit patients): calcium channel blockers, nitrates."
+          ]
+        },
+        {
+          "heading": "Related Primary Motility Disorders",
+          "body_text": "**Other oesophageal motility disorders** mentioned alongside achalasia:\n- **Diffuse oesophageal spasm**\n- **Nutcracker oesophagus**\n- **Jackhammer oesophagus**\n\n**The differentiation between them is by oesophageal manometry** — each has its own manometric signature (spastic contractions in diffuse spasm; hypertensive peristalsis in nutcracker; hypercontractile extreme pressurisation in jackhammer — standard characterisations). Manometry therefore stands as the definitive diagnostic test for the whole family of oesophageal motility disorders, exactly as it confirms classic achalasia.",
+          "key_points": [
+            "Diffuse oesophageal spasm | nutcracker | jackhammer oesophagus — differentiated by oesophageal manometry."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Achalasia", "definition_ar": "الأكالازيا: فشل العاصرة السفلية في الارتخاء مع غياب التمعج الدفعي، فيتمدد المريء ويعاني المريض من عسر بلع بلا حرقان."},
+        {"term": "Heller's myotomy", "definition_ar": "شق هيلر: قطع عضلات العاصرة السفلية جراحياً (بالمنظار أو المفتوح) لعلاج الأكالازيا، يرافقه طي جزئي مضاد للارتجاع."},
+        {"term": "POEM", "definition_ar": "الشق العضلي عبر الفم: تقنية تنظيرية حديثة لقطع عضلة العاصرة في مراكز متخصصة."},
+        {"term": "Pneumatic dilatation", "definition_ar": "التوسيع الهوائي: تمديد قسري للعاصرة السفلية ببالون 30-35 مم لعلاج الأكالازيا."},
+        {"term": "Botulinum toxin injection", "definition_ar": "حقن سم البوتولينوم في العاصرة السفلية تنظيرياً لإرخائها في الأكالازيا."},
+        {"term": "Chagas' disease", "definition_ar": "داء شاغاس: إصابة بالمثقبيات الكروزية يعطي متلازمة سريرية مشابهة للأكالازيا."},
+        {"term": "Nutcracker oesophagus", "definition_ar": "مريء كسارة البندق: تقلعات حركات دودية مفرطة الضغط، يفرّق عنه بالمانومترية."},
+        {"term": "Jackhammer oesophagus", "definition_ar": "مريء المثقاب: أشد أشكال فرط التقلص المريئي، تشخيصه مانومتري."},
+        {"term": "Diffuse oesophageal spasm", "definition_ar": "التشنج المريئي المنتشر: تقلصات تشنجية متزامنة غير دفعية في جسم المريء."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c11",
+      "lecture_id": "L1_oesophagus",
+      "title": "Secondary Oesophageal Dysmotility and Pseudo-achalasia",
+      "summary_ar": "التصلب الجهازي ومتلازمة CREST يستبدلان عضل المريء بنسيج ليفي فيفقد التمعج مسبباً حرقاناً وعسر بلع مع التهاب مريء شديد وتضيقات ليفية حميدة، وهؤلاء يحتاجون PPI طويل الأمد. كما تسبب عسر البلع: التهاب العضلات الجلدي والرثية والوهن العضلي الوبيل. أما الأكالازيا الزائفة فتحدث فوق الستين بتطور سريع لعسر بلع الصلب ثم السائل مع فقد وزن، وسببها ارتشاح الوصلة المعدية المريئية بسرطان القلب أو انتقالات خبيثة؛ وتشخَّص بالتصوير المقطعي/الرنين للجزء السفلي والتنظير مع الخزعة والإيكو التنظيري مع الخزعة.",
+      "difficulty": "advanced",
+      "order_index": 10,
+      "sections": [
+        {
+          "heading": "Systemic and Neurological Causes of Dysmotility",
+          "body_text": "- **Systemic sclerosis (scleroderma) / CREST syndrome:** the **muscle of the oesophagus is replaced by fibrous tissue**, which causes **failure of peristalsis** leading to **heartburn and dysphagia**.\n  - **Oesophagitis is often severe** and **benign fibrous strictures occur** (atonic oesophagus + incompetent barrier = unrestricted reflux injury).\n  - **These patients require long-term therapy with PPIs.**\n- **Dermatomyositis, rheumatoid arthritis and myasthenia gravis may also cause dysphagia** — through inflammatory muscle or neuromuscular junction involvement of the swallowing apparatus (myasthenia typically fatigable oropharyngeal weakness — standard clinical note).",
+          "key_points": [
+            "Systemic sclerosis/CREST: fibrous replacement of oesophageal muscle → failed peristalsis → heartburn + dysphagia; severe oesophagitis and benign strictures; long-term PPI required.",
+            "Also causes dysphagia: dermatomyositis, rheumatoid arthritis, myasthenia gravis."
+          ]
+        },
+        {
+          "heading": "Pseudo-achalasia",
+          "body_text": "- **Usually occurs in older people (above their 60s)**, with **rapid development of symptoms over a short term** — in contrast to the slow, years-long course of idiopathic achalasia.\n- **Typical picture:** **dysphagia to solid food then to liquid**, with **progressive weight loss**.\n- **Cause: infiltrative disease at the gastro-oesophageal junction** — most commonly **carcinoma of the cardia**, or a **metastatic malignant deposit** to this area.\n- **Investigations:** **CT or MRI of the lower oesophagus**, **endoscopy with biopsy**, and **endoscopic ultrasound (EUS) with biopsy**.\n- **Clinical rule (tying the lecture together):** any 'new achalasia', especially above age 60 with rapid progression and weight loss, must be investigated to exclude malignancy before definitive achalasia therapy (see the achalasia investigations section).",
+          "key_points": [
+            "Pseudo-achalasia: >60s, rapid dysphagia (solids → liquids), progressive weight loss.",
+            "Cause: infiltrating carcinoma of the cardia or metastatic deposit at the GOJ.",
+            "Work-up: CT/MRI of lower oesophagus + endoscopy with biopsy + EUS with biopsy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "CREST syndrome", "definition_ar": "متلازمة كريست: شكل محدود من التصلب الجهازي (تكلس، ظاهرة رينو، تصلب إصبعي، توسع شعيرات، تسرع كلوي) مع إصابة مريئية شائعة."},
+        {"term": "Systemic sclerosis", "definition_ar": "التصلب الجهازي: مرض مناعي يليّف عضلات المريء فيفقد التمعج ويحدث ارتجاع وتضيقات."},
+        {"term": "Pseudo-achalasia", "definition_ar": "الأكالازيا الزائفة: ارتشاح خبيث للوصلة المعدية المريئية يحاكي الأكالازيا عند المسنين."},
+        {"term": "Endoscopic ultrasound (EUS)", "definition_ar": "الإيكو التنظيري: تصوير بالموجات فوق الصوتية عبر المنظار لتقييم طبقات جدار المريء والآفات الغارزة والارتشاحية."}
+      ]
+    },
+    {
+      "id": "L1_oesophagus_c12",
+      "lecture_id": "L1_oesophagus",
+      "title": "Tumours of the Oesophagus",
+      "summary_ar": "أشيع ورم حميد هو العضلي الأملس (الليوميومي) غالباً لا عرضي وقد يسبب نزفاً أو عسر بلع. السرطانة إما حرشفية أو غدية: الحرشفية تصيب أي جزء من المريء وجميع أورام الثلث العلوي تقريباً حرشفية (عواملها: التدخين، الكحول، مضغ نبات القلقان/التبغ، الأكالازيا، الداء الزلاقي، الغشاء ما بعد الحلقي/متلازمة بلومر-فينسون مع فقر دم بعوز الحديد المزمن، التضيق الأكّال، والسماك/فرط التقرن العائلي)، والأدينوكارسينوما أشيع حالياً وتنشأ نموذجياً في الثلث السفلي من مريء باريت أو قلب المعدة (عواملها: باريت، الGERD، السمنة، الذكورة، كبر السن، والتدخين). الأعراض: عسر بلع وألم صدري ونزف هضمي علوي وفقد وزن وانتقالات موضعية وبعيدة؛ التشخيص بالتصوير المقطعي/الرنين مع التباين والمنظار مع الخزعة؛ والعلاج استئصال المريء للمرضى القابلين للاستئصال والأصحاء، والكيميائي والشعاعي للمرض غير القابل للاستئصال والتلطيفي للحالات المتقدمة.",
+      "difficulty": "core",
+      "order_index": 11,
+      "sections": [
+        {
+          "heading": "Benign Tumours",
+          "body_text": "- **The most common benign tumour of the oesophagus is a leiomyoma** — a smooth-muscle tumour arising in the muscular layer (submucosal, firm, well-circumscribed — standard morphology).\n- It is **usually asymptomatic** but **may cause bleeding or dysphagia** when it grows large enough to compress or ulcerate.",
+          "key_points": [
+            "Leiomyoma = commonest benign oesophageal tumour.",
+            "Usually asymptomatic; may bleed or obstruct (dysphagia)."
+          ]
+        },
+        {
+          "heading": "Carcinoma — Types and Anatomical Distribution",
+          "body_text": "**Carcinoma of the oesophagus is either squamous cell carcinoma or adenocarcinoma.**\n- **Squamous cancer can occur in ANY part of the oesophagus, and almost all tumours in the UPPER oesophagus are squamous cancers.**\n- **Adenocarcinomas are more common (nowadays)** and **typically arise in the LOWER THIRD of the oesophagus, from Barrett's oesophagus or from the cardia of the stomach.**\n\n**Clinical shortcut:** an upper-oesophageal tumour → think squamous; a lower-oesophageal/GOJ tumour on a background of chronic reflux, obesity or Barrett's → think adenocarcinoma.",
+          "key_points": [
+            "Squamous: any segment; almost all upper-oesophageal tumours are squamous.",
+            "Adenocarcinoma: now the commoner type; lower third; arises from Barrett's or the gastric cardia."
+          ],
+          "check": {
+            "prompt": "A tumour detected in the upper third of the oesophagus is most likely to be:",
+            "options": ["Adenocarcinoma", "Squamous cell carcinoma", "Leiomyosarcoma", "Carcinoid tumour", "Metastatic deposit"],
+            "correct_index": 1,
+            "explanation_ar": "السرطانة الحرشفية قد تصيب أي جزء من المريء وجميع أورام الثلث العلوي تقريباً حرشفية، بينما الأدينوكارسينوما تنشأ في الثلث السفلي من مريء باريت أو قلب المعدة."
+          }
+        },
+        {
+          "heading": "Risk Factors for Squamous Cell Carcinoma",
+          "body_text": "**Risk factors for squamous cell carcinoma (memorise the list):**\n- **Smoking**\n- **Alcohol excess**\n- **Chewing betel nuts or tobacco**\n- **Achalasia of the oesophagus**\n- **Coeliac disease**\n- **Post-cricoid web (Plummer–Vinson syndrome)** in patients with **long-standing iron-deficiency anaemia**\n- **Post-caustic stricture**\n- **Tylosis (familial hyperkeratosis of palms and soles)**\n\nNote the theme: chronic chemical or mechanical irritation of the squamous mucosa (smoke, alcohol, betel, caustics, food stasis in achalasia) — plus two classic named syndromes (Plummer–Vinson and tylosis) that examiners love.",
+          "key_points": [
+            "Squamous risk factors: smoking, alcohol, betel nut/tobacco chewing, achalasia, coeliac disease, post-cricoid web (Plummer–Vinson with chronic IDA), post-caustic stricture, tylosis."
+          ]
+        },
+        {
+          "heading": "Risk Factors for Adenocarcinoma",
+          "body_text": "**Risk factors for oesophageal adenocarcinoma:**\n- **1. Barrett's oesophagus** (the strongest — intestinal metaplasia → dysplasia → adenocarcinoma sequence)\n- **2. GERD**\n- **3. Obesity and male sex**\n- **4. Old age**\n- **5. Smoking**\n\nNote: smoking appears in BOTH lists; but **alcohol excess is a squamous-only risk factor** and is NOT associated with Barrett's/adenocarcinoma risk (the lecture explicitly states Barrett's is weakly associated with smoking but not alcohol intake).",
+          "key_points": [
+            "Adenocarcinoma risk factors: Barrett's, GERD, obesity, male, old age, smoking.",
+            "Alcohol drives squamous cancer only — not the Barrett's–adenocarcinoma pathway."
+          ]
+        },
+        {
+          "heading": "Clinical Features, Diagnosis and Treatment",
+          "body_text": "**Clinical features of oesophageal carcinoma:**\n- **Dysphagia** (progressive, solids then liquids)\n- **Chest pain**\n- **Upper GI bleeding**\n- **Weight loss**\n- **Features of distant and local metastasis** (local invasion of the mediastinum — e.g. recurrent laryngeal nerve, tracheo-oesophageal fistula — and distant spread such as liver, lungs, cervical nodes: standard examples).\n\n**Diagnosis:**\n- **Radiological: CT chest or MRI with contrast** (staging local invasion and metastases).\n- **OGD with biopsy** (histological confirmation and typing).\n\n**Treatment:**\n- **Oesophagectomy for resectable disease in fit patients.**\n- **Chemotherapy** (perioperative/palliative, standard context).\n- **Radiotherapy for unresectable disease.**\n- **Palliative treatment for advanced disease** (e.g. stenting for dysphagia relief — standard addition).",
+          "key_points": [
+            "Presentation: dysphagia, chest pain, upper GI bleeding, weight loss, metastatic features.",
+            "Diagnosis: CT chest/MRI with contrast + OGD with biopsy.",
+            "Treatment: oesophagectomy (resectable, fit) | chemotherapy | radiotherapy (unresectable) | palliation (advanced)."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Leiomyoma", "definition_ar": "الليوميومي: ورم حميد من العضل الملساء، أشيع أورام المريء الحميدة."},
+        {"term": "Squamous cell carcinoma", "definition_ar": "سرطانة الخلايا الحرشفية: نوع سرطان المريء المرتبط بالتدخين والكحول والأكالازيا والتضيق الأكّال."},
+        {"term": "Adenocarcinoma", "definition_ar": "الأدينوكارسينوما: النوع الأشيع حالياً، من مريء باريت أو قلب المعدة في الثلث السفلي."},
+        {"term": "Plummer–Vinson syndrome", "definition_ar": "متلازمة بلومر-فينسون: غشاء ما بعد الحلقي مع فقر دم بعوز الحديد مزمن، عامل خطر للسرطانة الحرشفية."},
+        {"term": "Tylosis", "definition_ar": "السماك: فرط تقرن عائلي في راحتي اليدين والقدمين يرتبط بسرطانة المريء الحرشفية."},
+        {"term": "Oesophagectomy", "definition_ar": "استئصال المريء: العلاج الجراحي للسرطانة القابلة للاستئصال في المريض اللائق."}
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L1_oesophagus_f1",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c2",
+      "card_type": "basic",
+      "front_text": "What is the average length of the oesophagus, and at what distances from the upper incisors are the UOS and the diaphragm/OGJ?",
+      "back_text": "Average length ~27 cm. Landmarks from the upper central incisors: 15 cm = upper oesophageal sphincter/thoracic inlet (cervical oesophagus); 20 cm = sternal notch (upper thoracic); 25 cm = middle thoracic; 35-40 cm = diaphragm/oesophagogastric junction (lower thoracic); 40-45 cm = abdominal oesophagus.",
+      "explanation_ar": "أرقام يجب حفظها لتحديد مواقع الآفات تنظيرياً وشعاعياً بدقة."
+    },
+    {
+      "id": "L1_oesophagus_f2",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c2",
+      "card_type": "basic",
+      "front_text": "Which muscle types and nerve plexuses constitute the oesophageal wall?",
+      "back_text": "Striated muscle in the upper third, smooth muscle in the lower two-thirds, arranged as inner circular + outer longitudinal layers. Auerbach's (myenteric) plexus lies between the circular and longitudinal muscle layers; Meissner's plexus lies in the submucosa and innervates the muscularis mucosae. There is no serosal layer.",
+      "explanation_ar": "تذكّر: أورباخ بين العضلات ومايسنر تحت المخاطية، ولا يوجد غشاء مصلي للمريء."
+    },
+    {
+      "id": "L1_oesophagus_f3",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c3",
+      "card_type": "basic",
+      "front_text": "Dysphagia to solids only versus dysphagia to solids AND liquids — which pattern suggests which disease category?",
+      "back_text": "Solids only → structural/mechanical lesion (stricture, tumour, ring, web). Solids AND liquids (particularly from the outset) → motility disorder (achalasia, diffuse oesophageal spasm, scleroderma oesophagus).",
+      "explanation_ar": "الصلب فقط = آفة بنائية تضيّق اللمعة؛ الصلب والسائل معاً = اضطراب حركي."
+    },
+    {
+      "id": "L1_oesophagus_f4",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c3",
+      "card_type": "basic",
+      "front_text": "Which associated symptoms point to oropharyngeal (transfer) dysphagia?",
+      "back_text": "Food sticking in the throat or inability to propel the bolus, multiple swallowing attempts, plus drooling, dysarthria (tongue dysfunction), nasal regurgitation (failure to seal the nasopharynx), and coughing/aspiration (failure to elevate and cover the laryngeal vestibule) — because the cranial nerves of swallowing serve these functions too.",
+      "explanation_ar": "الأعصاب القحفية المسؤولة عن البلع تخدم وظائف أخرى، لذا تظهر هذه الأعراض المرافقة."
+    },
+    {
+      "id": "L1_oesophagus_f5",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c3",
+      "card_type": "basic",
+      "front_text": "Regurgitation EARLY in the meal versus LATE in the meal — what does each suggest?",
+      "back_text": "Early in the meal → proximal lesion (e.g. Zenker's diverticulum). Later in the meal → motility abnormality such as achalasia (the dilated oesophagus fills before contents return).",
+      "explanation_ar": "توقيت الارتجاع خلال الوجبة يميز بين الآفة القريبة والاضطراب الحركي."
+    },
+    {
+      "id": "L1_oesophagus_f6",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c8",
+      "card_type": "basic",
+      "front_text": "What is the 'steakhouse syndrome' and what is its commonest underlying cause in adults?",
+      "back_text": "Acute food impaction — sudden chest pain and food sticking typically after meats, raw vegetables or sticky rice, with risk of tracheal compression (oropharyngeal impaction) and aspiration when secretions cannot be handled. The commonest underlying cause of adult food impaction is eosinophilic oesophagitis.",
+      "explanation_ar": "انحشار الطعام عند البالغين فكّر أولاً بالتهاب المريء اليوزيني."
+    },
+    {
+      "id": "L1_oesophagus_f7",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c4",
+      "card_type": "basic",
+      "front_text": "What is the prevalence of GERD in the Western world versus Asia, and what are the risk factors?",
+      "back_text": "At least weekly heartburn/acid regurgitation: 10-20% in the Western world, <5% in Asia. Higher in North America than Europe, and in northern than southern Europe. Risk factors: obesity, possibly increasing age, and a genetic component.",
+      "explanation_ar": "أرقام وبائية كلاسيكية للامتحان: 10-20% غربياً وأقل من 5% آسيوياً."
+    },
+    {
+      "id": "L1_oesophagus_f8",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c5",
+      "card_type": "basic",
+      "front_text": "List the alarm symptoms/signs that mandate diagnostic endoscopy in a patient with reflux symptoms.",
+      "back_text": "Dysphagia, weight loss, anaemia, gastrointestinal bleeding, and persistent heartburn — plus failure to respond to antisecretory therapy.",
+      "explanation_ar": "علامات الإنذار: عسر بلع، فقد وزن، فقر دم، نزف هضمي، حرقان مستمر/فشل علاجي."
+    },
+    {
+      "id": "L1_oesophagus_f9",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c5",
+      "card_type": "basic",
+      "front_text": "What is the cornerstone of GERD pharmacotherapy and how do PPIs compare with H2-receptor antagonists?",
+      "back_text": "Inhibition of gastric acid secretion is the cornerstone. PPIs are superior to H2RAs for both healing of oesophagitis and symptom control. No major efficacy differences exist between individual PPIs; once-daily dosing is adequate. Note: healing of oesophagitis is more predictable than improvement in heartburn symptoms.",
+      "explanation_ar": "PPI يومياً كافٍ ومتفوق على حاصرات H2؛ شفاء الالتهاب أكثر قابلية للتنبؤ من تحسين الحرقان."
+    },
+    {
+      "id": "L1_oesophagus_f10",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c6",
+      "card_type": "basic",
+      "front_text": "Name the five complications of GERD.",
+      "back_text": "1. Oesophagitis; 2. Barrett's oesophagus; 3. Anaemia (iron-deficiency); 4. Benign oesophageal stricture; 5. Oesophageal adenocarcinoma.",
+      "explanation_ar": "خمسة مضاعفات يجب حفظها بالترتيب: التهاب، باريت، فقر دم، تضيق حميد، أدينوكارسينوما.",
+      "mnemonic_ar": "تذكير: (ت-ب-ف-ت-س) التهاب، باريت، فقر دم، تضيق، سرطانة غدية."
+    },
+    {
+      "id": "L1_oesophagus_f11",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c6",
+      "card_type": "basic",
+      "front_text": "What is a Cameron ulcer?",
+      "back_text": "A subtle erosion in the neck of a large hiatus hernia sac that bleeds chronically, causing iron-deficiency anaemia. When anaemia is detected in a GERD/hiatal hernia patient, also exclude unrelated causes — especially colorectal cancer.",
+      "explanation_ar": "تقرح في عنق كيس الفتق الحجابي الكبير يسبب فقر دم بعوز الحديد؛ لا تنسَ استبعاد سرطان القولون."
+    },
+    {
+      "id": "L1_oesophagus_f12",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c7",
+      "card_type": "basic",
+      "front_text": "Key epidemiology numbers of Barrett's oesophagus?",
+      "back_text": "Found in 10% of patients undergoing gastroscopy for reflux symptoms; true community prevalence up to 1.5-5% of the population. Relative risk of oesophageal cancer increased 40-120-fold, but absolute risk is low: 0.1-0.5% per year. Risk factors: prolonged GERD, white male >50, obesity/waist circumference; weakly smoking, NOT alcohol.",
+      "explanation_ar": "10% من منظارات الارتجاع؛ خطورة نسبية 40-120 ضعفاً لكن مطلقة 0.1-0.5% سنوياً."
+    },
+    {
+      "id": "L1_oesophagus_f13",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c7",
+      "card_type": "basic",
+      "front_text": "What are the endoscopic surveillance intervals in Barrett's oesophagus?",
+      "back_text": "Intestinal metaplasia without dysplasia: every 3-5 years if segment <3 cm; every 2-3 years if segment >3 cm. Low-grade dysplasia: 6-monthly endoscopy. High-grade dysplasia/intramucosal carcinoma: oesophagectomy OR endoscopic resection of visible lesions + radiofrequency ablation of remaining Barrett's (organ-preserving), via MDT in specialist centres.",
+      "explanation_ar": "بلا خلل تنسجي: 3-5 سنوات إذا <3 سم و2-3 سنوات إذا >3 سم؛ منخفض الدرجة كل 6 أشهر؛ عالي الدرجة يعالج لا يراقب."
+    },
+    {
+      "id": "L1_oesophagus_f14",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c8",
+      "card_type": "basic",
+      "front_text": "Diagnostic criteria and first-line treatment of eosinophilic oesophagitis?",
+      "back_text": "Biopsies from distal AND proximal oesophagus showing >15 eosinophils/hpf, plus target biopsies from lesions (ring, web, furrows, ulcers); endoscopy shows furrows, freckles and rings without a dominant stricture. First-line treatment: swallowed corticosteroids (fluticasone or betamethasone); refractory symptoms may respond to montelukast (leukotriene inhibitor). Complication: stricture; commonest adult cause of food impaction.",
+      "explanation_ar": "أكثر من 15 يوزيني/حقل من خزعات قريبة وبعيدة + أعراض وعلامات تنظيرية؛ العلاج ستيرويد بلعي وليس استنشاقي."
+    },
+    {
+      "id": "L1_oesophagus_f15",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c8",
+      "card_type": "basic",
+      "front_text": "Which non-reflux causes of oesophagitis should you always consider?",
+      "back_text": "Infective: Candida, HSV, CMV (mainly immunosuppressed). Corrosive: strong household bleach and battery acid (suicide attempts, children, mentally impaired) → severe oesophagitis, perforation, mediastinitis, then stricture and cancer. Drug-induced: potassium supplements, NSAIDs, tetracycline/doxycycline, bisphosphonates, oral iron. Eosinophilic oesophagitis.",
+      "mnemonic_ar": "عدوى-أكّال-أدوية-يوزيني: كانديدا/هربس/CMV؛ مبيضات وحمض بطاريات؛ بوتاسيوم ومسكنات ودوكسيسايكلين وبيسفوسفونات وحديد؛ ثم اليوزيني.",
+      "explanation_ar": "أربعة أسباب غير ارتجاعية: خمجي، أكّال، دوائي، يوزيني."
+    },
+    {
+      "id": "L1_oesophagus_f16",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c9",
+      "card_type": "basic",
+      "front_text": "Investigation of choice and treatment of Zenker's diverticulum (pharyngeal pouch)?",
+      "back_text": "Barium swallow is the investigation of choice (contrast-filled pouch at the pharyngo-oesophageal junction above a narrow cervical oesophagus). Treatment: surgical myotomy ('diverticulotomy'), with or without resection of the pouch, for symptomatic patients. Clinical features: dysphagia, halitosis, regurgitation, gurgling in the neck, or asymptomatic.",
+      "explanation_ar": "الباريوم أولاً (التنظير قد يثقب الرتج)، والشق العضلي جراحياً للمرضى العرضيين."
+    },
+    {
+      "id": "L1_oesophagus_f17",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c10",
+      "card_type": "basic",
+      "front_text": "What are the manometric hallmarks of achalasia, and which classic reflux symptom is characteristically absent?",
+      "back_text": "Hypertonic (high-pressure) LOS that fails to relax on swallowing + failed propagated peristalsis (poor contractility) of the oesophageal body → progressive oesophageal dilatation. Heartburn does NOT occur because the closed LOS prevents reflux. Achalasia also predisposes to squamous carcinoma; Chagas' disease mimics it clinically.",
+      "explanation_ar": "عاصرة مغلقة لا ترتخي + غياب التمعج؛ لا حرقان؛ خطر سرطانة حرشفية لاحق."
+    },
+    {
+      "id": "L1_oesophagus_f18",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c10",
+      "card_type": "basic",
+      "front_text": "Summarise the management options for achalasia (endoscopic, surgical and medical).",
+      "back_text": "Endoscopic: forceful pneumatic dilatation with a 30-35 mm balloon; endoscopic botulinum toxin injection into the LOS; POEM (peroral endoscopic myotomy) in specialist centres. Surgical: Heller's myotomy (laparoscopic or open) WITH a partial fundoplication because post-procedure reflux can cause severe oesophagitis (poor oesophageal clearance); PPI often needed after surgery. Medical (for patients unfit for procedures): calcium channel blockers and nitrates.",
+      "explanation_ar": "توسيع 30-35 مم، بوتولينوم، POEM، هيلر مع طي جزئي + PPI، أو دوائياً حاصرات الكالسيوم والنترات."
+    },
+    {
+      "id": "L1_oesophagus_f19",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c11",
+      "card_type": "basic",
+      "front_text": "Pseudo-achalasia — typical patient, cause and work-up?",
+      "back_text": "Patients above their 60s with RAPIDly progressive dysphagia (solids then liquids) and progressive weight loss, mimicking idiopathic achalasia clinically, radiologically and manometrically. Cause: infiltrative disease at the gastro-oesophageal junction — carcinoma of the cardia or metastatic malignant deposits. Work-up: CT or MRI of the lower oesophagus, endoscopy with biopsy, endoscopic ultrasound with biopsy.",
+      "explanation_ar": "فوق الستين + تطور سريع + فقد وزن = استبعد سرطانة القلب قبل تشخيص أكالازيا بدئية."
+    },
+    {
+      "id": "L1_oesophagus_f20",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c12",
+      "card_type": "basic",
+      "front_text": "Contrast the two oesophageal carcinoma types: typical location and risk factors.",
+      "back_text": "Squamous: can occur in any part; almost all upper-oesophageal tumours are squamous. Risks: smoking, alcohol excess, betel nut/tobacco chewing, achalasia, coeliac disease, post-cricoid web (Plummer-Vinson, long-standing IDA), post-caustic stricture, tylosis. Adenocarcinoma: commoner now, typically lower third from Barrett's or the cardia. Risks: Barrett's, GERD, obesity, male, old age, smoking.",
+      "mnemonic_ar": "الحرشفية: تدخين+كحول+أكالازيا+سماك+بلومر فينسون+زلاقي+قليقان+أكّال. الغدية: باريت+ارتجاع+سمنة+ذكر+كبر+تدخين.",
+      "explanation_ar": "العلوي حرشفي غالباً، والسفلي غدي من باريت؛ الكحول للحرشفية فقط وليس لباريت."
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L1_oesophagus_q1",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c10",
+      "question_stem": "A 52-year-old man whose achalasia was diagnosed 15 years ago attends for follow-up and asks about his long-term cancer risk. Which malignancy is achalasia known to predispose to?",
+      "options": [
+        "Adenocarcinoma of the lower oesophagus",
+        "Squamous cell carcinoma of the lower oesophagus",
+        "Squamous cell carcinoma of the upper oesophagus",
+        "Adenocarcinoma of the upper oesophagus",
+        "Adenocarcinoma and squamous cell carcinoma of the lower oesophagus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الأكالازيا المزمنة تهيئ للسرطانة الحرشفية في المريء السفلي المتوسع نتيجة ركود الطعام والالتهاب المزمن للبطانة الحرشفية. أما الأدينوكارسينوما فيرتبط بمسار مريء باريت والارتجاع وليس بالأكالازيا، لذا الخيار الأول والرابع والخامس خاطئة، والثالث غير دقيق لأن التوسع الركودي يشمل أساساً جسم المريء السفلي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "What happens to swallowed food in the dilated oesophagus of long-standing achalasia?",
+        "Chronic stasis and inflammation act on which epithelial type — squamous or columnar?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q2",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c10",
+      "question_stem": "A 70-year-old woman presents with progressive dysphagia to solids and fluids over 6 months, associated with weight loss. Barium swallow demonstrates a dilated oesophagus with a bird-beak appearance. What is the next best step?",
+      "options": [
+        "Refer for endoscopic dilatation",
+        "Oesophageal manometry",
+        "Calcium channel blockers",
+        "OGD with biopsy",
+        "Refer to surgery"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "منظر منقار الطائر يوحي بالأكالازيا، لكن العمر فوق الستين مع تطور سريع خلال 6 أشهر وفقد وزن يرفع احتمال الأكالازيا الزائفة: سرطانة قلب المعدة قد تحاكي الأكالازيا سريرياً وشعاعياً ومانومترياً، لذا التنظير مع الخزعة هو الخطوة التالية الأفضل قبل أي تشخيص نهائي. المانومترية تؤكد نمط الأكالازيا لكنها لا تستبعد الخباثة، والتوسيع أو حاصرات الكالسيوم أو الجراحة قبل استبعاد السرطان قد تكون ضارة جداً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Age >60 + rapid 6-month course + weight loss are red flags.",
+        "Which lesion at the cardia can mimic achalasia completely?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q3",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c5",
+      "question_stem": "A 46-year-old man has troublesome reflux symptoms occurring at any time of day for 2 years. Gastroscopy 6 months ago was normal. He has taken omeprazole 40 mg twice daily and metoclopramide 10 mg three times daily for 8 months, and previously an H2-receptor antagonist, all without benefit. He has no lifestyle risk factors for reflux. What is the next most appropriate management step?",
+      "options": [
+        "Ambulatory oesophageal pH and manometry studies",
+        "Barium swallow",
+        "Fasting gastrin level",
+        "Repeat endoscopy",
+        "Add antacids"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أعراض ارتجاع مقاومة لجرعة كافية من PPI وحاصر H2 ومنظّم حركي مع تنظير طبيعي تستدعي اختباراً موضوعياً: مراقبة pH المريئية المتنقلة (مع المقاومة) لإثبات الارتجاع أو نفيه، مع المانومترية لاستبعاد اضطراب حركي يتظاهر كارتجاع مقاوم. تكرار التنظير بعد 6 أشهر من تنظير طبيعي لن يغير القرار، والباريوم غير حاسم، والغاسترين الصائم يخص اشتباه متلازمة زولينجر-إليسون (قرح شديدة متكررة) وليس هذا النموذج، وإضافة مضادات الحموضة علاج غير كافٍ لمن فشل معه العلاج القوي.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Symptoms refractory to adequate acid suppression with a normal endoscopy — what has never been objectively proven?",
+        "Which test proves reflux objectively AND assesses oesophageal motility at the same time?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q4",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c8",
+      "question_stem": "A 42-year-old man presents with a 3-month history of dysphagia. OGD shows multiple oesophageal furrows, freckles and rings with no dominant stricture; biopsies show 40 eosinophils/hpf. In the setting of the appropriate diagnosis, what is the best next step?",
+      "options": [
+        "Inhaled corticosteroids",
+        "Endoscopic oesophageal dilatation",
+        "Swallowed corticosteroids",
+        "Immunosuppressant such as azathioprine",
+        "Refer to surgery"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "هذا التهاب مريء يوزيني: التلميات والنمش والحلقات دون تضيق مسيطر مع أكثر من 15 يوزيني/حقل (هنا 40). العلاج الأول هو الكورتيكوستيرويدات المبلوعة (فلوتيكازون أو بيتاميثازون) لتعمل موضعياً على مخاطية المريء؛ المستنشقة خاطئة لأن مسارها رئوي، والتوسيع التنظيري للحالات المترافقة بتضيق رجعي فقط، والأزاثيوبرين والجراحة ليسا من العلاج المعياري لهذا الداء.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Furrows + freckles + rings + eosinophils = which diagnosis?",
+        "The steroid must coat the oesophageal mucosa — by which route?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q5",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c5",
+      "question_stem": "A 34-year-old man presents with substernal discomfort, worse after meals (particularly a heavy evening meal), sometimes with hot/sour fluid in the back of the throat and nocturnal awakening. He denies dysphagia, odynophagia and weight loss. Symptoms have been present for 6 weeks and he has gained 20 kg over 2 years. Which is the most appropriate initial approach?",
+      "options": [
+        "Therapeutic trial of PPI",
+        "Esophagogastroduodenoscopy",
+        "CT scan of the chest",
+        "Coronary angiography",
+        "Oesophageal manometry"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أعراض ارتجاع نموذجية (حرقان خلف القص بعد الوجبات، ارتجاع حمضي للحلق، استيقاظ ليلي) دون أي علامة إنذار (لا عسر بلع ولا ألم بلع ولا فقد وزن — بل زيادة 20 كغ كعامل خطر سمنة) ← تجربة علاجية بمثبط مضخة البروتون هي التدخل الأولي الأنسب. التنظير يؤجل لحالات الفشل العلاجي أو علامات الإنذار، والتصوير المقطعي أو القسطرة التاجية لألم صدري لانمطي يشتبه قلبياً، والمانومترية عند الشك باضطراب حركي — وكلها لا تنطبق هنا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Are there any alarm features in this vignette?",
+        "Typical reflux symptoms without alarm features are treated empirically with which drug class?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q6",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c7",
+      "question_stem": "Which of the following statements about Barrett's oesophagus is TRUE?",
+      "options": [
+        "Columnar epithelium is replaced by squamous epithelium",
+        "It predisposes to adenocarcinoma",
+        "It appears in an antegrade (top-to-bottom) direction",
+        "It predisposes to squamous cell carcinoma",
+        "It does not predispose to cancer"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "العبارة الصحيحة: مريء باريت يهيئ للأدينوكارسينوما — وهذا أساس برامج المراقبة التنظيرية. باقي الخيارات خاطئة: في باريت تستبدل البطانة الحرشفية بعمادية (عكس الخيار الأول)، والتحول يبدأ من الوصلة المعدية المريئية صاعداً نحو الأعلى وليس من الأعلى للأسفل، ولا يهيئ للسرطانة الحرشفية (تلك مسار الأكالازيا والمواد الأكّالة والتدخين والكحول)، وكونه حالة سابقة للخباثة يعني أنه يهيئ للسرطان قطعاً.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L1_oesophagus_q7",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c4",
+      "question_stem": "In normal healthy individuals, when does physiological gastro-oesophageal reflux primarily occur?",
+      "options": [
+        "During transient relaxation of the LOS in the absence of a swallow, via a vagally mediated reflex stimulated by gastric distension",
+        "During forceful primary peristaltic contractions of the oesophageal body",
+        "When the crural diaphragm contracts vigorously during inspiration",
+        "Only during sleep when salivary flow is maximal",
+        "When delayed gastric emptying raises intragastric pH above 7"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الارتجاع الفيزيولوجي يحدث أساساً أثناء الارتخاء العابر للعاصرة المريئية السفلية دون بلعة، عبر منعكس مبهمي يحفزه تمدد المعدة (بعد الوجبة الكبيرة). الحركة الدودية واللعاب القاعدي آليتا التطهير وليستا سبب الارتجاع، وتقلص الحجاب الحاجز يقوّي الحاجز ولا يرخيه، والارتجاع ليس مقصوراً على النوم حيث يكون اللعاب أصلاً أقل، وتأخر الإفراغ عامل مرضي وليس فيزيولوجياً طبيعياً ولا يرفع الـpH هذه الطريقة.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "hints": [
+        "Which single event opens the barrier without a swallow?",
+        "Gastric distension triggers which nerve's reflex?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q8",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c5",
+      "question_stem": "A 47-year-old woman with verified GERD is being evaluated for possible extra-oesophageal reflux manifestations. Which of the following proposed associations is NOT clearly established as a reflux manifestation?",
+      "options": [
+        "Chronic cough",
+        "Laryngitis",
+        "Asthma",
+        "Dental erosions",
+        "Otitis media"
+      ],
+      "correct_index": 4,
+      "explanation_ar": "المظاهر خارج المريئية المعتمدة للارتجاع هي السعال المزمن والتهاب الحنجرة والربو وتآكلات الأسنان — وتُنسب للارتجاع بثقة فقط إذا رافقتها أعراض كلاسيكية. أما التهاب البلعوم والجيوب والتهاب الأذن الوسطى والتليف الرئوي مجهول السبب فهي اقترانات مقترحة غير مثبتة بوضوح، لذا التهاب الأذن الوسطى هو الجواب الصحيح (غير مثبت)، والبقية خيارات موثوقة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L1_oesophagus_q9",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c7",
+      "question_stem": "A 61-year-old man undergoes surveillance for Barrett's oesophagus. The Barrett's segment measures 4 cm and biopsies show intestinal metaplasia WITHOUT dysplasia. What endoscopic surveillance interval is currently recommended?",
+      "options": [
+        "Endoscopy every 6 months",
+        "Endoscopy every 2-3 years",
+        "Endoscopy every 3-5 years",
+        "Endoscopy every 10 years",
+        "No surveillance is needed"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التنسج المعوي دون خلل تنسجي: تنظير كل 3-5 سنوات إذا كانت القطعة أقصر من 3 سم، وكل 2-3 سنوات إذا كانت أطول من 3 سم — وقطعة المريض 4 سم فالجواب كل 2-3 سنوات. كل 6 أشخاص خاص بالخلل التنسجي المنخفض الدرجة، وكل 10 سنوات أو عدم المراقبة إهمال لحالة سابقة للخباثة، و3-5 سنوات تخص القطع الأقصر فقط.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "The surveillance interval depends on two variables: dysplasia grade and segment length.",
+        "This 4 cm segment crosses the 3 cm threshold — shorter or longer interval?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q10",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c9",
+      "question_stem": "A 69-year-old man reports dysphagia, regurgitation of undigested food eaten hours earlier, halitosis and a gurgling sensation in the neck. Which is the investigation of choice?",
+      "options": [
+        "Upper GI endoscopy",
+        "Barium swallow",
+        "Oesophageal manometry",
+        "CT scan of the neck",
+        "24-hour pH monitoring"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "القصة نموذجية للرتج البلعومي (زنكر): عسر بلع، ارتجاع طعام غير مهضوم بعد ساعات، نتانة نفس، وغرغرة عنقية — واختبار الاختيار هو ابتلاع الباريوم الذي يُظهر الجراب الممتلئ بالتباين عند الوصلة البلعومية المريئية فوق عنق مريئي ضيق. التنظير خطر هنا لأن المنظار قد يدخل الرتج ويثقبه، والمانومترية لاضطرابات حركة جسم المريء كالأكالازيا، ودرجة الحموضة للارتجاع، والتصوير المقطعي ليس اختبار الاختيار.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Regurgitation of undigested food hours old + neck gurgling = which structural lesion?",
+        "Which radiological study outlines a pharyngeal pouch safely?"
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q11",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c10",
+      "question_stem": "A 40-year-old man with confirmed idiopathic achalasia is listed for laparoscopic Heller's myotomy. Why is a partial fundoplication added to the myotomy?",
+      "options": [
+        "Post-procedure gastro-oesophageal reflux can cause severe oesophagitis because oesophageal clearance is so poor",
+        "It restores propagated peristalsis in the oesophageal body",
+        "It reduces the long-term risk of squamous carcinoma",
+        "Acid suppression is ineffective after myotomy",
+        "A hiatus hernia is always present in achalasia and must be corrected"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التوسيع الهوائي والشق العضلي قد يعقبهما ارتجاع معدي مريئي، وهذا الارتجاع يسبب التهاب مريء شديداً لأن التطهير المريئي ضعيف أصلاً في الأكالازيا (لا تمعج يجرّف الحمض) — لذلك يُرافق شق هيلر طيٌّ جزئي مضاد للارتجاع وكثيراً ما يلزم PPI بعد الجراحة. الطي لا يعيد التمعج المفقود، ولا يقلل خطر السرطانة الحرشفية، ومثبطات الحمض تبقى فعالة بعده، والفتق الحجابي ليس مكوّناً للأكالازيا.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "What happens to refluxed acid in an aperistaltic oesophagus after the LOS is disrupted?",
+        "The answer is about protecting the mucosa, not about peristalsis or cancer."
+      ]
+    },
+    {
+      "id": "L1_oesophagus_q12",
+      "lecture_id": "L1_oesophagus",
+      "concept_id": "L1_oesophagus_c12",
+      "question_stem": "A 63-year-old obese white man with a 20-year history of GERD undergoes endoscopy for new dysphagia. A mass is seen in the distal oesophagus at 38 cm, arising within a 5-cm segment of salmon-red mucosa. What is the most likely diagnosis?",
+      "options": [
+        "Squamous cell carcinoma of the upper oesophagus",
+        "Squamous cell carcinoma of the middle oesophagus",
+        "Adenocarcinoma of the lower oesophagus arising from Barrett's",
+        "Adenocarcinoma of the cervical oesophagus",
+        "Leiomyoma of the lower oesophagus"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "مريض بدين كبير السن مع ارتجاع مزمن (عوامل خطر الأدينوكارسينوما: باريت، ارتجاع، سمنة، ذكورة، كبر سن) وكتلة في الثلث السفلي (38 سم) داخل قطعة باريت (المخاطية السلمونية الحمراء) ← أدينوكارسينوما ناشئة من مريء باريت. الأورام الحرشفية قد تصيب أي جزء لكن أورام الثلث العلوي تقريباً كلها حرشفية وليس السفلي، والأدينوكارسينوما العنقية نادرة جداً، والليوميومي ورم تحت مخاطي حميد لا ينشأ داخل مخاطية باريت.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Salmon-red mucosa = which pre-malignant segment?",
+        "Which tumour arises from Barrett's mucosa in the lower third?"
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L1_oesophagus_case1",
+      "lecture_id": "L1_oesophagus",
+      "title": "The Bird-Beak Oesophagus: Progressive Dysphagia in a Young Man",
+      "scenario": "A 38-year-old teacher is referred to the gastroenterology clinic with an 18-month history of progressive swallowing difficulty. Initially intermittent and only with solid food, the dysphagia now affects solids and liquids alike. He regurgitates undigested food at night with choking spells, has lost 7 kg, and finds that eating is easier when he drinks plenty of water with meals and stands up and walks around afterwards. He has never experienced heartburn.",
+      "vignette": {
+        "age": 38,
+        "sex": "male",
+        "chief_complaint": "Progressive dysphagia to solids and liquids with nocturnal regurgitation and weight loss for 18 months",
+        "history": "Dysphagia began intermittently with solids 18 months ago and slowly progressed to solids and liquids; eased by drinking liquids and by standing and moving around after eating. Nocturnal regurgitation of undigested food with episodes of nocturnal cough. Never had heartburn. Occasional central chest pressure after large meals. No vomiting, haematemesis or melaena. No previous GI surgery. Non-smoker, minimal alcohol.",
+        "vitals": {
+          "bp": "122/78 mmHg",
+          "hr": "82/min",
+          "rr": "16/min",
+          "temp": "37.0 C",
+          "spo2": "97% on room air"
+        },
+        "exam": "Comfortable but mildly thin. No cervical lymphadenopathy. Chest: occasional bibasal crackles after nocturnal regurgitation episodes. Abdomen soft, non-tender, no masses, no organomegaly. Oral cavity and neurological examination normal.",
+        "labs": [
+          {"name": "Haemoglobin", "value": "12.9 g/dL (13.5-17.5)", "flag": "low"},
+          {"name": "White cell count", "value": "7.1 x10^9/L (4.0-11.0)", "flag": "normal"},
+          {"name": "Albumin", "value": "34 g/L (35-50)", "flag": "low"},
+          {"name": "C-reactive protein", "value": "4 mg/L (<10)", "flag": "normal"},
+          {"name": "Sodium", "value": "139 mmol/L (135-145)", "flag": "normal"},
+          {"name": "Potassium", "value": "4.2 mmol/L (3.5-5.1)", "flag": "normal"}
+        ],
+        "imaging": "Barium swallow: dilated oesophagus with retained food debris and an air-fluid level; smooth, tapered 'bird-beak' narrowing at the lower end with a closed lower oesophageal sphincter (diaphragm identified on the plain film)."
+      },
+      "steps": [
+        {
+          "id": "L1_oesophagus_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Achalasia of the oesophagus",
+            "GERD with peptic stricture",
+            "Eosinophilic oesophagitis",
+            "Pharyngeal pouch (Zenker's diverticulum)",
+            "Carcinoma of the gastric cardia"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عسر بلع للصلب والسائل معاً (نمط حركي) بتطور بطيء على 18 شهراً، يخف بشرب السوائل والوقوف والحركة بعد الأكل، مع ارتجاع ليلي لطعام غير مهضوم ولا حرقان إطلاقاً — كلها سمات الأكالازيا؛ غياب الحرقان لأن العاصرة السفلية مغلقة. التضيق القرحي يتبع تاريخ ارتجاع مع حرقان ويعطي عسر بلع للصلبات غالباً، واليوزيني يشخص بمنظر التلميات والحلقات وخزعات >15 يوزيني/حقل، ورتج زنكر يعرض بأعراض بلعومية مبكرة وغرغرة عنقية، وسرطانة القلب أكثر فوق الستين بتطور أسرع مع فقد وزن شديد.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case1_s2",
+          "prompt": "What is the next best step after the barium swallow?",
+          "options": [
+            "Proceed directly to oesophageal manometry",
+            "Upper GI endoscopy (OGD) with biopsy",
+            "Forceful pneumatic dilatation",
+            "Start calcium channel blockers",
+            "Laparoscopic Heller's myotomy"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "التنظير يجب إجراؤه دائماً قبل تثبيت تشخيص الأكالازيا البدئية، لأن سرطانة قلب المعدة قد تحاكي الأعراض والمظهر الشعاعي وحتى المانومتري (الأكالازيا الزائفة). المانومترية تأتي بعد استبعاد المحاكاة الخبيثة، والتوسيع الهوائي أو الشق العضلي أو الأدوية قبل استبعاد السرطان قد تؤخر تشخيص ورم قابل للعلاج.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case1_s3",
+          "prompt": "Endoscopy is normal with no lesion at the cardia. Which investigation confirms the diagnosis?",
+          "options": [
+            "High-resolution oesophageal manometry",
+            "24-hour ambulatory pH monitoring",
+            "Repeat barium swallow in 6 months",
+            "Endoscopic ultrasound",
+            "Serum IgE level"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المانومترية هي الاختبار المؤكد للأكالازيا: عاصرة سفلية مرتفعة الضغط لا ترتخي مع البلع مع ضعف تقلص جسم المريء وغياب التمعج الدفعي. مراقبة pH تُستخدم عند غموض تشخيص الارتجاع أو قبل جراحة مضادة للارتجاع، والإيكو التنظيري لتقييم ارتشاح جدار المريء (كالزائفة)، وتكرار الباريوم لا يضيف، و IgE لا علاقة له بالتشخيص.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case1_s4",
+          "prompt": "The patient is fit and requests a durable definitive treatment. Why is a partial fundoplication added to Heller's myotomy?",
+          "options": [
+            "To prevent severe post-myotomy reflux oesophagitis, because oesophageal clearance is so poor",
+            "To restore peristalsis of the oesophageal body",
+            "To reduce the long-term risk of squamous carcinoma",
+            "Because acid suppression is ineffective after myotomy",
+            "To accelerate emptying of the dilated oesophagus"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التوسيع والشق العضلي كلاهما قد يُعقَّد بارتجاع معدي مريئي يسبب التهاب مريء شديداً لأن تطهير المريء ضعيف جداً في الأكالازيا (لا تمعج يجرف الحمض) — لذلك يُرافق شق هيلر طيٌّ جزئي مضاد للارتجاع، وكثيراً ما يلزم PPI بعد الجراحة. الطي لا يعيد التمعج ولا يقلل خطر السرطانة، ومثبطات الحمض فعالة بعده.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case1_s5",
+          "prompt": "At follow-up 5 years later, which point must be communicated regarding long-term risk?",
+          "options": [
+            "Achalasia predisposes to squamous carcinoma of the oesophagus; new or changing symptoms need re-evaluation",
+            "Achalasia predisposes to adenocarcinoma, so annual OGD is required",
+            "The cancer risk is abolished after myotomy",
+            "There is no cancer risk in achalasia",
+            "Only aspiration pneumonia matters long-term"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الأكالازيا تهيئ للسرطانة الحرشفية بسبب ركود الطعام والالتهاب المزمن في المريء المتوسع، والخطر يبقى قائماً بعد العلاج، لذا أي تغير في نمط الأعراض (نزف، تفاقع فقد الوزن، ألم جديد) يستوجب إعادة تقييم. لا هيئة لسرطانة غدية هنا، والعلاج لا يلغي الخطر، والاستنشاق ليس الخطر الوحيد.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: أكالازيا بدئية عند رجل بعمر 38 سنة. الدروس المستفادة: (1) عسر البلع للصلب والسائل معاً مع غياب الحرقان والتحسن بشرب السوائل والوقوف بعد الأكل = نمط حركي (أكالازيا). (2) الباريوم يظهر منقار الطائر لكنه لا يستبعد المحاكاة الخبيثة — التنظير إلزامي أولاً لاستبعاد الأكالازيا الزائفة (سرطانة القلب). (3) المانومترية تؤكد: عاصرة غير مرتخية عالية الضغط مع غياب التمعج. (4) العلاج النهائي: توسيع هوائي 30-35 مم أو شق هيلر مع طي جزئي (منعاً لالتهاب مريء ارتجاعي شديد بسبب ضعف التطهير) أو POEM في المراكز المتخصصة؛ والدواء (حاصرات الكالسيوم والنترات) لغير المرشحين للإجراءات. (5) تذكّر الخطر طويل الأمد: سرطانة حرشفية.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L1_oesophagus_case2",
+      "lecture_id": "L1_oesophagus",
+      "title": "From Heartburn to Salmon-Red Mucosa: Barrett's Oesophagus",
+      "scenario": "A 58-year-old overweight man is reviewed for a 15-year history of heartburn and acid regurgitation, previously controlled intermittently with over-the-counter antacids. Over the last 3 months food has been sticking behind his sternum and his reflux has become nocturnal. He has gained 12 kg in 5 years and smokes 20 cigarettes daily.",
+      "vignette": {
+        "age": 58,
+        "sex": "male",
+        "chief_complaint": "Long-standing heartburn with new solid-food dysphagia",
+        "history": "15 years of heartburn and acid regurgitation with on-demand antacid use; nocturnal regurgitation for 3 months; intermittent dysphagia to solids (alarm feature prompting endoscopy); no vomiting, haematemesis or melaena; weight gain 12 kg over 5 years; 20-pack-year smoking; minimal alcohol; father had colorectal cancer.",
+        "vitals": {
+          "bp": "134/86 mmHg",
+          "hr": "78/min",
+          "rr": "14/min",
+          "temp": "36.8 C",
+          "spo2": "98% on room air"
+        },
+        "exam": "BMI 34 kg/m2, waist circumference 110 cm. Soft epigastric tenderness on palpation; no hepatomegaly, no lymphadenopathy; normal cardiopulmonary examination.",
+        "labs": [
+          {"name": "Haemoglobin", "value": "13.2 g/dL (13.5-17.5)", "flag": "low"},
+          {"name": "Mean corpuscular volume", "value": "87 fL (80-100)", "flag": "normal"},
+          {"name": "Ferritin", "value": "22 ng/mL (30-400)", "flag": "low"},
+          {"name": "White cell count", "value": "6.8 x10^9/L (4.0-11.0)", "flag": "normal"},
+          {"name": "Platelets", "value": "250 x10^9/L (150-400)", "flag": "normal"},
+          {"name": "Albumin", "value": "41 g/L (35-50)", "flag": "normal"}
+        ],
+        "imaging": "OGD: a 4-cm circumferential segment of salmon-red, velvety columnar mucosa with tongue-like projections extending proximally from the gastro-oesophageal junction; no ulcer or mass; systematic oesophageal biopsies taken."
+      },
+      "steps": [
+        {
+          "id": "L1_oesophagus_case2_s1",
+          "prompt": "What is the most likely endoscopic diagnosis?",
+          "options": [
+            "Barrett's oesophagus (columnar-lined oesophagus)",
+            "Severe erosive reflux oesophagitis",
+            "Eosinophilic oesophagitis",
+            "Early adenocarcinoma",
+            "Candida oesophagitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "قطعة مخاطية سلمونية مخملية بألسنة صاعدة من الوصلة المعدية المريئية عند مريض ارتجاع مزمن = مريء باريت (بطانة عمادية). الالتهاب التآكلي يظهر تقرحات وتآكلات حمراء لكن ليس ألسنة عمادية منتظمة، واليوزيني يظهر تلميات وحلقات ونمشاً، والمبيضات لويحات بيضاء، والسرطانة كتلة أو آفة مرئية — كلها لا تنطبق على هذا المنظر.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case2_s2",
+          "prompt": "Biopsies show columnar mucosa with goblet cells (intestinal metaplasia) and NO dysplasia. What surveillance interval applies to this 4-cm segment?",
+          "options": [
+            "Endoscopy every 6 months",
+            "Endoscopy every 2-3 years",
+            "Endoscopy every 3-5 years",
+            "Endoscopy every 10 years",
+            "No surveillance needed"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "التنسج المعوي دون خلل تنسجي بقطعة أطول من 3 سم ← تنظير كل 2-3 سنوات (لو كانت أقصر من 3 سم لكان كل 3-5 سنوات). كل 6 أشهر يخص الخلل التنسجي المنخفض الدرجة، وكل 10 سنوات أو غياب المراقبة إهمال لحالة سابقة للخباثة.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case2_s3",
+          "prompt": "Regarding the background management of non-dysplastic Barrett's oesophagus, which statement is correct?",
+          "options": [
+            "Neither potent acid suppression nor antireflux surgery stops progression or induces regression; treatment is indicated only for reflux symptoms or complications",
+            "High-dose PPI therapy reliably eradicates Barrett's mucosa",
+            "Antireflux surgery (Nissen fundoplication) regresses the columnar lining",
+            "Radiofrequency ablation is recommended for all non-dysplastic Barrett's",
+            "Immediate oesophagectomy prevents cancer in non-dysplastic Barrett's"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "لا مثبطات الحمض القوية ولا الجراحة المضادة للارتجاع توقف تطور مريء باريت أو تسبب تراجعه؛ لذا يعالَج فقط أعراض الارتجاع أو مضاعفاته كالتضيق. الحقن الحراري الترددي والضوئي يُحجزان للخلل التنسجي أو السرطان داخل المخاطية، والاستئصال الجراحي غير مطلوب لمرحلة غير متناسجة — كل الخيارات الأخرى تبالغ في العلاج.",
+          "xp": 10
+        },
+        {
+          "id": "L1_oesophagus_case2_s4",
+          "prompt": "Two years later, surveillance biopsies reveal high-grade dysplasia with an 8-mm irregular area within the segment. What is the recommended management?",
+          "options": [
+            "Endoscopic resection of the visibly abnormal areas plus radiofrequency ablation of the remaining Barrett's mucosa, discussed in an MDT at a specialist centre",
+            "Total gastrectomy",
+            "Repeat biopsies in 5 years",
+            "Long-term calcium channel blockers",
+            "Chemoradiotherapy alone with no resection"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخلل التنسجي العالي الدرجة أو السرطان داخل المخاطية: الخياران هما استئصال المريء أو العلاج التنظيري الحافظ للعضو — استئصال المناطق المرئية الشاذة تنظيرياً مع حقن حراري ترددي لبقية مخاطية باريت — ضمن قرار فريق متعدد التخصصات في مركز تخصصي. استئصال المعدة الكلي لا علاقة له، والتأجيل 5 سنوات يتيح تطور السرطان، وحاصرات الكالسيوم علاج للأكالازيا لا لباريت، والمعالجة الكيميائية الشعاعية وحدها ليست العلاج المعياري لهذه المرحلة.",
+          "xp": 12
+        },
+        {
+          "id": "L1_oesophagus_case2_s5",
+          "prompt": "How should his cancer risk be accurately communicated at counselling?",
+          "options": [
+            "The relative risk of oesophageal cancer is increased 40-120-fold, but the absolute risk is low (0.1-0.5% per year)",
+            "The absolute risk is about 5% per year",
+            "There is no increased cancer risk once PPI therapy is started",
+            "His risk equals that of the general population",
+            "Only smokers with Barrett's carry a cancer risk"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخطورة النسبية لسرطان المريء في باريت ترتفع 40-120 ضعفاً لكن الخطورة المطلقة منخفضة (0.1-0.5% سنوياً) — وهذه هي الرسالة الدقيقة للطمأنة مع التأكيد على المراقبة. الPPI لا يلغي الخطر، والخطر يعتمد على شدة الارتجاع ومدته أكثر من مجرد وجود باريت، والتدخين ليس شرطاً لوجود الخطورة.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: مريء باريت بتنسج معوي (قطعة 4 سم) تطور بعد سنتين إلى خلل تنسجي عالي الدرجة. الدروس: (1) ارتجاع لمدة 15 سنة في رجل بدين مدخن فوق الخمسين = أعلى خطورة لباريت. (2) المنظر التنظيري ألسنة سلمونية، والتأكيد بخزعات منهجية متعددة تظهر خلايا كأس (تنسج معوي). (3) فقر دم بعوز الحديد الخفيف هنا يذكّر بالنزف الخفي من التهاب المريء (وحتى تقرحات كاميرون مع الفتق الحجابي) مع وجوب استبعاد سرطان القولون والمستقيم خاصة مع تاريخ عائلي. (4) المراقبة: قطعة >3 سم بلا خلل كل 2-3 سنوات، منخفض الدرجة كل 6 أشهر، وعالي الدرجة = علاج حافظ للعضو (استئصال تنظيري + حقن حراري ترددي) عبر فريق متعدد التخصصات. (5) مثبطات الحمض والجراحة تعالجان الأعراض لا التطور نحو الخباثة، والخطورة المطلقة منخفضة (0.1-0.5% سنوياً) فطمئن المريض دون إهمال المراقبة.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

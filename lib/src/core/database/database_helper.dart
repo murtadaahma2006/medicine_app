@@ -11,7 +11,7 @@ import 'motivation_repository.dart';
 import 'user_progress.dart';
 import 'xp_event.dart';
 
-/// المستودع المركزي لقاعدة البيانات المحلية (SQLite) — منصة الطب الباطني.
+/// المستودع المركزي لقاعدة البيانات المحلية (SQLite) — MedOS.
 ///
 /// - ملف واحد: medical_app.db
 /// - جداول المحتوى: units · concepts · flashcards · mcq_bank
@@ -37,7 +37,20 @@ class DatabaseHelper {
   ///   concept_reads.gate_passed.
   /// v17: أهداف اليوم — units.is_pinned_today (تثبيت محاضرة لجدول
   ///   اليوم الذي يبنيه المستخدم بنفسه).
-  static const int databaseVersion = 17;
+  /// v18: تثبيت ذكي ذاتي التنظيف — units.pinned_at (طابع زمني ISO
+  ///   UTC لحظة التثبيت، null = غير مثبتة) بديلاً عن البولياني:
+  ///   إلغاء تلقائي للمكتملة فوراً وللمهملة بعد 48 ساعة + إشعار
+  ///   انتهاء مجدول (PinExpiryService). العمود القديم لا يُحذف
+  ///   (ALTER TABLE DROP ممنوع هنا: عمود داخل CHECK وجدول عليه
+  ///   مفاتيح أجنبية) — يتوقف استخدامه نهائياً.
+  /// v19: لؤلؤة اليوم — units.golden_tip (نص اختياري): أهم معلومة/
+  ///   فخ امتحاني بالمحاضرة (عقد JSON v2.2) — يعرضه الويدجت عشوائياً.
+  /// v20: التوسع متعدد التخصصات — units.specialty (نص): التخصص
+  ///   الافتراضية 'internal_medicine' تعبّئ كل المحاضرات القائمة
+  ///   لحظة الترقية (سلوك ADD COLUMN مع NOT NULL DEFAULT) فلا يضيع
+  ///   محتوى الباطنية ولا يتعطل استعلام.
+  /// v24: إضافة start_index و end_index إلى الملاحظات المضمنة.
+  static const int databaseVersion = 24;
 
   // ── جداول المحتوى الطبي ──
   static const String tableUnits = 'units';
@@ -46,6 +59,19 @@ class DatabaseHelper {
   static const String tableMcqBank = 'mcq_bank';
   static const String tableClinicalCases = 'clinical_cases';
   static const String tableClinicalCaseSteps = 'clinical_case_steps';
+
+  // ── التخصصات السريرية (v20) ──
+
+  /// القيمة الافتراضية للمحاضرات القائمة — الباطنية تاريخ المنصة
+  /// كله، فترحيل v20 يسندها إليها تلقائياً.
+  static const String defaultSpecialty = 'internal_medicine';
+
+  /// التخصصات المسموح بها في عقد البيانات (كود التأليف JSON).
+  static const List<String> specialties = <String>[
+    'internal_medicine',
+    'surgery',
+    'obgyn',
+  ];
 
   // ── جداول المستخدم والتقدم ──
   static const String tableUserProgress = 'user_progress';
@@ -58,6 +84,15 @@ class DatabaseHelper {
   static const String tableConceptReads = 'concept_reads';
   static const String tableFlowSessions = 'flow_sessions';
   static const String tableConfidenceLog = 'confidence_log';
+
+  // ── v21: إحصاءات يومية لزمن الدراسة (إجمالي وقت استخدام التطبيق) ──
+  static const String tableDailyStats = 'daily_stats';
+
+  // ── v22: ملاحظات داخلية مضمّنة في نص الشروحات (Inline Highlight) ──
+  static const String tableInlineNotes = 'inline_notes';
+
+  // ── v23: سجلات المرضى لنموذج أخذ القصة السريرية ──
+  static const String tablePatientRecords = 'patient_records';
 
   /// أنواع أحداث XP المسموحة في قيد CHECK — مصدر الحقيقة الوحيد.
   static const List<String> xpEventKinds = <String>[
@@ -130,15 +165,23 @@ class DatabaseHelper {
     batch.execute('''
       CREATE TABLE $tableUnits (
         id              TEXT PRIMARY KEY,
+        specialty       TEXT NOT NULL DEFAULT 'internal_medicine'
+                        CHECK (specialty IN ('internal_medicine','surgery','obgyn')),
         module          TEXT NOT NULL,
         system          TEXT NOT NULL,
         title           TEXT NOT NULL,
         description_ar  TEXT,
         order_index     INTEGER NOT NULL DEFAULT 0,
         is_pinned_today INTEGER NOT NULL DEFAULT 0
-                        CHECK (is_pinned_today IN (0,1))
+                        CHECK (is_pinned_today IN (0,1)),
+        pinned_at       TEXT,
+        golden_tip      TEXT
       )
     ''');
+    batch.execute(
+      'CREATE INDEX idx_units_specialty_order '
+      'ON $tableUnits(specialty, order_index)',
+    );
     batch.execute(
       'CREATE INDEX idx_units_module_order ON $tableUnits(module, order_index)',
     );
@@ -157,9 +200,7 @@ class DatabaseHelper {
         order_index    INTEGER NOT NULL DEFAULT 0
       )
     ''');
-    batch.execute(
-      'CREATE INDEX idx_concepts_unit ON $tableConcepts(unit_id)',
-    );
+    batch.execute('CREATE INDEX idx_concepts_unit ON $tableConcepts(unit_id)');
 
     // ── البطاقات الغنية (SRS) ──
     batch.execute('''
@@ -201,9 +242,7 @@ class DatabaseHelper {
         focus_sections_json TEXT
       )
     ''');
-    batch.execute(
-      'CREATE INDEX idx_mcq_bank_unit ON $tableMcqBank(unit_id)',
-    );
+    batch.execute('CREATE INDEX idx_mcq_bank_unit ON $tableMcqBank(unit_id)');
     batch.execute(
       'CREATE INDEX idx_mcq_bank_difficulty ON $tableMcqBank(difficulty)',
     );
@@ -266,7 +305,9 @@ class DatabaseHelper {
       CREATE UNIQUE INDEX idx_progress_item
         ON $tableUserProgress(item_type, item_id)
     ''');
-    batch.execute('CREATE INDEX idx_progress_status ON $tableUserProgress(status)');
+    batch.execute(
+      'CREATE INDEX idx_progress_status ON $tableUserProgress(status)',
+    );
 
     // ── سجل الإجابات (corrections) ──
     batch.execute('''
@@ -394,6 +435,57 @@ class DatabaseHelper {
         ON $tableConfidenceLog(question_id)
     ''');
 
+    // إحصاءات يومية لزمن الدراسة (v21) — جدول خفيف نحوّل فيه
+    // تجمّعات وقت استخدام التطبيق يومياً (UTC). date مفتاح أساسي —
+    // صف واحد لكل يوم، تتجمّع قيمته بالتكرار.
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableDailyStats (
+        date            TEXT PRIMARY KEY,
+        study_seconds   INTEGER NOT NULL DEFAULT 0
+                        CHECK (study_seconds >= 0)
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_daily_stats_date '
+      'ON $tableDailyStats(date)',
+    );
+
+    // ملاحظات داخلية مضمّنة في نص الشروحات (Inline Highlight — v22):
+    // المستخدم يحدّد نصاً/سطراً داخل الشرح ويرفق به ملاحظة شخصية،
+    // ثم يظهر النص مميَّزاً وخلفيته صفراء — النقر عليه يعرض الملاحظة.
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableInlineNotes (
+        id             INTEGER PRIMARY KEY AUTOINCREMENT,
+        concept_id     TEXT NOT NULL
+                       REFERENCES $tableConcepts(id) ON DELETE CASCADE,
+        selected_text  TEXT NOT NULL,
+        start_index    INTEGER DEFAULT 0,
+        end_index      INTEGER DEFAULT 0,
+        personal_note  TEXT NOT NULL,
+        color_code     TEXT,
+        created_at     TEXT NOT NULL
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_inline_notes_concept '
+      'ON $tableInlineNotes(concept_id)',
+    );
+
+    // v23: سجلات المرضى (نموذج أخذ القصة)
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tablePatientRecords (
+        id              INTEGER PRIMARY KEY AUTOINCREMENT,
+        patient_alias   TEXT NOT NULL,
+        responses_json  TEXT NOT NULL,
+        created_at      TEXT NOT NULL,
+        updated_at      TEXT NOT NULL
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_patient_records_time '
+      'ON $tablePatientRecords(created_at)',
+    );
+
     await batch.commit(noResult: true);
   }
 
@@ -414,11 +506,15 @@ class DatabaseHelper {
       String column,
       String definition,
     ) async {
-      final int exists = Sqflite.firstIntValue(await db.rawQuery(
-        'SELECT COUNT(*) FROM sqlite_master '
-        "WHERE type = 'table' AND name = ?",
-        <Object?>[table],
-      )) ?? 0;
+      final int exists =
+          Sqflite.firstIntValue(
+            await db.rawQuery(
+              'SELECT COUNT(*) FROM sqlite_master '
+              "WHERE type = 'table' AND name = ?",
+              <Object?>[table],
+            ),
+          ) ??
+          0;
       if (exists == 0) return;
       // العمود موجود أصلاً؟ (إعادة فتح بنفس الإصدار) — تجاهل.
       final List<Map<String, Object?>> cols = await db.rawQuery(
@@ -472,8 +568,11 @@ class DatabaseHelper {
       //     والشارات كلها (مستقلة عن المحتوى).
       final Batch batch = db.batch();
       for (final Map<String, Object?> row in badgeRows) {
-        batch.insert('unlocked_badges', row,
-            conflictAlgorithm: ConflictAlgorithm.ignore);
+        batch.insert(
+          'unlocked_badges',
+          row,
+          conflictAlgorithm: ConflictAlgorithm.ignore,
+        );
       }
       await batch.commit(noResult: true);
       // ملاحظة: أحداث XP القديمة (lesson/vocabulary/...) أنواع لم تعد
@@ -481,7 +580,8 @@ class DatabaseHelper {
       // مع بقاء الشارات المفتوحة كإنجازات تاريخية.
       if (kDebugMode && badgeRows.isNotEmpty) {
         debugPrint(
-            'DatabaseHelper: v14 — استُعيدت ${badgeRows.length} شارة تاريخية');
+          'DatabaseHelper: v14 — استُعيدت ${badgeRows.length} شارة تاريخية',
+        );
       }
     }
     if (oldV < 15) {
@@ -543,15 +643,9 @@ class DatabaseHelper {
       // الآمنة: قيم افتراضية، لا إعادة بناء، لا فقد بيانات).
       // تقيّد وجود الجدول أولاً: الترحيل تسامحي مع القواعد المصغرة
       // (اختبارات/بيئات جزئية) — لا يفشل افتتاح القاعدة أبداً.
-      await addColumnIfTable(
-        tableMcqBank, 'hints_json', 'TEXT',
-      );
-      await addColumnIfTable(
-        tableMcqBank, 'focus_sections_json', 'TEXT',
-      );
-      await addColumnIfTable(
-        tableClinicalCaseSteps, 'hints_json', 'TEXT',
-      );
+      await addColumnIfTable(tableMcqBank, 'hints_json', 'TEXT');
+      await addColumnIfTable(tableMcqBank, 'focus_sections_json', 'TEXT');
+      await addColumnIfTable(tableClinicalCaseSteps, 'hints_json', 'TEXT');
       await addColumnIfTable(
         tableFlashcards,
         'is_vivid',
@@ -569,24 +663,181 @@ class DatabaseHelper {
         tableUnits,
         'is_pinned_today',
         'INTEGER NOT NULL DEFAULT 0 '
-        'CHECK (is_pinned_today IN (0,1))',
+            'CHECK (is_pinned_today IN (0,1))',
       );
+    }
+    if (oldV < 18) {
+      // v18: التثبيت الذكي — طابع زمني لحظة التثبيت (null = غير
+      // مثبتة). المثبتات القائمة (is_pinned_today=1) تُرحَّل إلى
+      // «مثبتة الآن» كي لا يفقدها المستخدم — ثم يسري عليها عدّاد
+      // الـ 48 ساعة كأي تثبيت جديد.
+      try {
+        await addColumnIfTable(tableUnits, 'pinned_at', 'TEXT');
+        final int exists =
+            Sqflite.firstIntValue(
+              await db.rawQuery(
+                'SELECT COUNT(*) FROM sqlite_master '
+                "WHERE type = 'table' AND name = ?",
+                <Object?>[tableUnits],
+              ),
+            ) ??
+            0;
+        if (exists > 0) {
+          await db.execute(
+            'UPDATE $tableUnits SET pinned_at = ? '
+            'WHERE is_pinned_today = 1 AND pinned_at IS NULL',
+            <Object?>[DateTime.now().toUtc().toIso8601String()],
+          );
+        }
+      } catch (_) {
+        // حزام أمان — فشل الترحيل لا يمنع فتح القاعدة.
+      }
+    }
+    if (oldV < 19) {
+      // v19: لؤلؤة اليوم — units.golden_tip (عقد v2.2 اختياري).
+      try {
+        await addColumnIfTable(tableUnits, 'golden_tip', 'TEXT');
+      } catch (_) {
+        // حزام أمان — فشل الترحيل لا يمنع فتح القاعدة.
+      }
+    }
+    if (oldV < 20) {
+      // v20: التوسع متعدد التخصصات — specialty لكل محاضرة. القيمة
+      // الافتراضية في تعريف العمود تسند الباطنية لكل الصفوف القائمة
+      // تلقائياً (ADD COLUMN NOT NULL DEFAULT يعبّئ القديم والجديد
+      // معاً) — المحتوى الحالي لا يضيع ولا يتعطل.
+      //
+      // addColumnIfTable متسامح أصلاً (فحص PRAGMA table_info قبل
+      // ALTER — لا يفشل إن كان العمود موجوداً)؛ الـ try-catch هنا
+      // حزام أمان إضافي: فشل الترقية لأي سبب شاذ (قاعدة جزئية،
+      // إصدار SQLite غريب) لا يمنع فتح التطبيق — التطبيق يعمل
+      // والتخصص يبقى على الباطنية حتى الإصلاح.
+      try {
+        await addColumnIfTable(
+          tableUnits,
+          'specialty',
+          "TEXT NOT NULL DEFAULT 'internal_medicine' "
+              "CHECK (specialty IN ('internal_medicine','surgery','obgyn'))",
+        );
+      } catch (_) {
+        // صمت مقصود — فشل إضافة العمود لا يُسقط فتح القاعدة أبداً.
+      }
+    }
+    if (oldV < 21) {
+      // v21: جدول الإحصاءات اليومية لزمن الدراسة — إنشاء صرف لا فقد
+      // بيانات. CREATE TABLE IF NOT EXISTS متسامح مع القواعد المصغرة
+      // (اختبارات/بيئات جزئية) — لا يفشل افتتاح القاعدة أبداً.
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableDailyStats (
+          date            TEXT PRIMARY KEY,
+          study_seconds   INTEGER NOT NULL DEFAULT 0
+                          CHECK (study_seconds >= 0)
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_daily_stats_date '
+        'ON $tableDailyStats(date)',
+      );
+    }
+    if (oldV < 22) {
+      // v22: جدول الملاحظات المضمّنة — إنشاء صرف لا فقد بيانات.
+      // CREATE TABLE IF NOT EXISTS متسامح مع القواعد المصغرة/الجزئية
+      // (اختبارات/بيئات) — لا يفشل افتتاح القاعدة أبداً.
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableInlineNotes (
+          id             INTEGER PRIMARY KEY AUTOINCREMENT,
+          concept_id     TEXT NOT NULL
+                         REFERENCES $tableConcepts(id) ON DELETE CASCADE,
+          selected_text  TEXT NOT NULL,
+          start_index    INTEGER DEFAULT 0,
+          end_index      INTEGER DEFAULT 0,
+          personal_note  TEXT NOT NULL,
+          color_code     TEXT,
+          created_at     TEXT NOT NULL
+        )
+      ''');
+      // If the table already exists from an older v22 build without indices,
+      // we add them to avoid breaking the DB for users upgrading from that specific build.
+      try {
+        await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN start_index INTEGER DEFAULT 0');
+        await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN end_index INTEGER DEFAULT 0');
+      } catch (_) {}
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_inline_notes_concept '
+        'ON $tableInlineNotes(concept_id)',
+      );
+    }
+    if (oldV < 23) {
+      // v23: جدول سجلات المرضى لنموذج أخذ القصة (History Module)
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tablePatientRecords (
+          id              INTEGER PRIMARY KEY AUTOINCREMENT,
+          patient_alias   TEXT NOT NULL,
+          responses_json  TEXT NOT NULL,
+          created_at      TEXT NOT NULL,
+          updated_at      TEXT NOT NULL
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_patient_records_time '
+        'ON $tablePatientRecords(created_at)',
+      );
+    }
+    if (oldV < 24) {
+      // v24: إضافة أعمدة الإحداثيات الدقيقة للملاحظات المضمنة.
+      try {
+        await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN start_index INTEGER DEFAULT 0');
+        await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN end_index INTEGER DEFAULT 0');
+      } catch (_) {}
     }
   }
 
   // ─────────────────── الوحدات (المحاضرات الطبية) ───────────────────
 
-  /// كل الوحدات (أو حسب التخصص) مرتبة حسب التخصص ثم الترتيب.
+  /// كل الوحدات (أو حسب التخصص الفرعي module) مرتبة حسب التخصص ثم
+  /// الترتيب.
   Future<List<Map<String, Object?>>> getAllUnits({String? module}) async {
     final Database db = await database;
     return module == null
         ? db.query(tableUnits, orderBy: 'module, order_index')
         : db.query(
-            tableUnits,
-            where: 'module = ?',
-            whereArgs: <Object?>[module],
-            orderBy: 'order_index',
-          );
+          tableUnits,
+          where: 'module = ?',
+          whereArgs: <Object?>[module],
+          orderBy: 'order_index',
+        );
+  }
+
+  /// وحدات تخصص سريري كامل — v20: أساس شريط (باطنية|جراحة|نسائية)
+  /// في شاشتي المسار والمكتبة. null = كل التخصصات (كل المحتوى).
+  Future<List<Map<String, Object?>>> getUnitsBySpecialty(
+    String? specialty,
+  ) async {
+    final Database db = await database;
+    return db.query(
+      tableUnits,
+      where: 'specialty = ?',
+      whereArgs: <Object?>[specialty],
+      orderBy: 'order_index, id',
+    );
+  }
+
+  /// التخصصات السريرية الموجودة فعلاً في المحتوى (بترتيب العقد).
+  /// القاعدة قد تحوي واحداً أو أكثر — الواجهة تخفي شريط التبديل
+  /// عند وجود تخصص واحد (بلا فائدة للتبديل).
+  Future<List<String>> getDistinctSpecialties() async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      'SELECT DISTINCT specialty FROM $tableUnits',
+    );
+    final Set<String> present = <String>{
+      for (final Map<String, Object?> r in rows) r['specialty']! as String,
+    };
+    // ترتيب العقد (internal_medicine أولاً) لا الترتيب الأبجدي.
+    return <String>[
+      for (final String s in specialties)
+        if (present.contains(s)) s,
+    ];
   }
 
   /// وحدة واحدة بمعرّفها.
@@ -601,24 +852,32 @@ class DatabaseHelper {
     return rows.isEmpty ? null : rows.first;
   }
 
-  // ─────────────────── أهداف اليوم (v17: التثبيت) ───────────────────
+  // ─────────────────── أهداف اليوم (v18: التثبيت الذكي) ───────────────────
+
+  /// عتبة إهمال التثبيت — 48 ساعة من لحظة التثبيت (v18).
+  static const Duration stalePinThreshold = Duration(hours: 48);
 
   /// يثبّت/يفكّ تثبيت محاضرة لأهداف اليوم — يرجع الحالة الجديدة
-  /// (true = مثبتة). لا استثناءات: عند الفشل تُرجع الحالة القديمة.
+  /// (true = مثبتة). التثبيت يسجّل لحظة الآن في pinned_at (مفتاح عدّاد
+  /// الـ 48 ساعة)؛ الفك يمسحه إلى null. لا استثناءات: عند الفشل
+  /// تُرجع الحالة القديمة.
   Future<bool> toggleUnitPinnedToday(String unitId) async {
     final Database db = await database;
     try {
-      final int updated = await db.rawUpdate(
-        'UPDATE $tableUnits SET is_pinned_today = '
-        'CASE WHEN is_pinned_today = 1 THEN 0 ELSE 1 END '
-        'WHERE id = ?',
-        <Object?>[unitId],
+      final Map<String, Object?>? row = await getUnitById(unitId);
+      if (row == null) return false;
+      final bool nowPinned = row['pinned_at'] == null;
+      await db.rawUpdate(
+        'UPDATE $tableUnits SET pinned_at = ? WHERE id = ?',
+        <Object?>[
+          nowPinned ? DateTime.now().toUtc().toIso8601String() : null,
+          unitId,
+        ],
       );
-      if (updated == 0) return false;
-      return (await getUnitById(unitId))?['is_pinned_today'] == 1;
+      return nowPinned;
     } catch (_) {
       // الحالة القديمة عند الفشل — الواجهة تعيد القراءة.
-      return (await getUnitById(unitId))?['is_pinned_today'] == 1;
+      return (await getUnitById(unitId))?['pinned_at'] != null;
     }
   }
 
@@ -628,7 +887,7 @@ class DatabaseHelper {
     final Database db = await database;
     return db.query(
       tableUnits,
-      where: 'is_pinned_today = 1',
+      where: 'pinned_at IS NOT NULL',
       orderBy: 'system, order_index',
     );
   }
@@ -636,9 +895,11 @@ class DatabaseHelper {
   /// عدد المحاضرات المثبتة (لشارة سريعة دون جلب الصفوف).
   Future<int> pinnedUnitsCount() async {
     final Database db = await database;
-    final int? result = Sqflite.firstIntValue(await db.rawQuery(
-      'SELECT COUNT(*) FROM $tableUnits WHERE is_pinned_today = 1',
-    ));
+    final int? result = Sqflite.firstIntValue(
+      await db.rawQuery(
+        'SELECT COUNT(*) FROM $tableUnits WHERE pinned_at IS NOT NULL',
+      ),
+    );
     return result ?? 0;
   }
 
@@ -670,17 +931,18 @@ class DatabaseHelper {
                              AND r.completed = 1)))
              ) AS is_completed
       FROM $tableUnits u
-      WHERE u.is_pinned_today = 1
+      WHERE u.pinned_at IS NOT NULL
       ORDER BY u.system, u.order_index
     ''');
   }
 
-  /// إلغاء تثبيت محاضرة من أهداف اليوم — يُستدعى تلقائياً عند
-  /// إتمامها (auto-unpin) فتختفي من جدول اليوم وتقفز نسبة الإنجاز.
+  /// إلغاء تثبيت محاضرة من أهداف اليوم — يُستدعى يدوياً (فك المستخدم)
+  /// أو تلقائياً عند إتمامها (auto-unpin) فتختفي من جدول اليوم وتقفز
+  /// نسبة الإنجاز.
   Future<void> unpinUnit(String unitId) async {
     final Database db = await database;
     await db.rawUpdate(
-      'UPDATE $tableUnits SET is_pinned_today = 0 WHERE id = ?',
+      'UPDATE $tableUnits SET pinned_at = NULL WHERE id = ?',
       <Object?>[unitId],
     );
   }
@@ -691,9 +953,10 @@ class DatabaseHelper {
   /// شروح/تقييم) فيكتمل الهدف لحظة تحققه لا بعده.
   Future<void> unpinUnitIfCompleted(String unitId) async {
     final Database db = await database;
-    await db.rawUpdate('''
-      UPDATE $tableUnits SET is_pinned_today = 0
-      WHERE id = ? AND is_pinned_today = 1
+    await db.rawUpdate(
+      '''
+      UPDATE $tableUnits SET pinned_at = NULL
+      WHERE id = ? AND pinned_at IS NOT NULL
         AND (EXISTS(SELECT 1 FROM $tableUserProgress p
                    WHERE p.item_type = 'drill'
                      AND p.item_id = 'assess-' || ?
@@ -705,7 +968,132 @@ class DatabaseHelper {
                       AND NOT EXISTS(SELECT 1 FROM $tableConceptReads r
                           WHERE r.concept_id = c.id
                             AND r.completed = 1))))
-    ''', <Object?>[unitId, unitId, unitId, unitId]);
+    ''',
+      <Object?>[unitId, unitId, unitId, unitId],
+    );
+  }
+
+  /// ─────────────── التنظيف التلقائي (v18) ───────────────
+  ///
+  /// قلب التثبيت الذكي — يُستدعى عند إقلاع التطبيق وعند دخول شاشة
+  /// «اليوم». مسحور واحد ذرّي يفك تثبيت فئتين معاً:
+  ///
+  /// (أ) **المكتملة**: مثبتة واكتملت (اجتياز التقييم أو كل الشروح
+  ///     مقروءة) → فك فوري — المستخدم يرى إنجازه ولا تتراكم أهداف
+  ///     منجزة في جدول اليوم.
+  /// (ب) **المهملة**: مثبتة غير مكتملة ومر على تثبيتها أكثر من
+  ///     [stalePinThreshold] (48 ساعة) → فك تلقائي — لا يتراكم
+  ///     «دين منجزات» قديم يشعر المستخدم بالعجز أمامه.
+  ///
+  /// يعيد معرفات المحاضرات التي فُكّ تثبيتها (لإلغاء إشعاراتها
+  /// المجدولة — انظر PinExpiryService). الترتيب ضمان داخل معاملة
+  /// واحدة: أي فشل يتراجع كلياً فلا حالة وسطية.
+  Future<List<String>> cleanUpStalePins() async {
+    final Database db = await database;
+    final String cutoff =
+        DateTime.now().toUtc().subtract(stalePinThreshold).toIso8601String();
+
+    final List<String> unpinned = <String>[];
+    await db.transaction((Transaction txn) async {
+      // المعرفات أولاً (لإلغاء الإشعارات خارج المعاملة) ثم المسح.
+      // ملاحظة SQL: كل مرجع لعمود الوحدة داخل الاستعلامات الفرعية
+      // يجب تأهيله باسم الجدول — `id` وحده يحل إلى p.id الداخلي.
+      final List<Map<String, Object?>> rows = await txn.rawQuery(
+        'SELECT id FROM $tableUnits WHERE pinned_at IS NOT NULL '
+        'AND (EXISTS(SELECT 1 FROM $tableUserProgress p '
+        '            WHERE p.item_type = ? AND p.item_id = ? || $tableUnits.id '
+        '              AND p.status = ?) '
+        '     OR ((SELECT COUNT(*) FROM $tableConcepts c '
+        '          WHERE c.unit_id = $tableUnits.id) > 0 '
+        '         AND NOT EXISTS(SELECT 1 FROM $tableConcepts c '
+        '            WHERE c.unit_id = $tableUnits.id '
+        '              AND NOT EXISTS(SELECT 1 FROM $tableConceptReads r '
+        '                  WHERE r.concept_id = c.id '
+        '                    AND r.completed = 1))) '
+        '     OR pinned_at < ?)',
+        <Object?>['drill', 'assess-', 'completed', cutoff],
+      );
+      unpinned.addAll(rows.map((Map<String, Object?> r) => r['id']! as String));
+      if (unpinned.isNotEmpty) {
+        await txn.rawUpdate(
+          'UPDATE $tableUnits SET pinned_at = NULL WHERE id IN '
+          '(${unpinned.map((_) => '?').join(',')})',
+          unpinned,
+        );
+      }
+    });
+    return unpinned;
+  }
+
+  // ─────────────────── ويدجت الشاشة الرئيسية (v19) ───────────────────
+
+  /// عناوين المحاضرات المثبتة **غير المكتملة** — الجزء «أهدافي» في
+  /// الويدجت (pinned_at قائمة + is_completed مشتق ديناميكياً = 0).
+  /// سقف [limit] عناوين (الافتراضي 3 — سعة الويدجت) بترتيب المنهج.
+  Future<List<String>> getPendingPinnedLectureTitles({int limit = 3}) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT u.title FROM $tableUnits u
+      WHERE u.pinned_at IS NOT NULL
+        AND NOT (EXISTS(SELECT 1 FROM $tableUserProgress p
+                        WHERE p.item_type = 'drill'
+                          AND p.item_id = 'assess-' || u.id
+                          AND p.status = 'completed')
+                 OR ((SELECT COUNT(*) FROM $tableConcepts c
+                      WHERE c.unit_id = u.id) > 0
+                     AND NOT EXISTS(SELECT 1 FROM $tableConcepts c
+                        WHERE c.unit_id = u.id
+                          AND NOT EXISTS(SELECT 1 FROM $tableConceptReads r
+                              WHERE r.concept_id = c.id
+                                AND r.completed = 1))))
+      ORDER BY u.system, u.order_index
+      LIMIT ?
+    ''',
+      <Object?>[limit],
+    );
+    return <String>[
+      for (final Map<String, Object?> r in rows) r['title']! as String,
+    ];
+  }
+
+  /// إجمالي المحاضرات المثبتة **غير المكتملة** بلا سقف — عدّاد
+  /// «+N أخرى» في الويدجت (العدد الكلي مقابل عناوين [limit] فقط).
+  /// نفس معيار عدم الإكمال في [getPendingPinnedLectureTitles] حرفياً.
+  Future<int> countPendingPinnedLectures() async {
+    final Database db = await database;
+    final int? count = Sqflite.firstIntValue(
+      await db.rawQuery('''
+      SELECT COUNT(*) FROM $tableUnits u
+      WHERE u.pinned_at IS NOT NULL
+        AND NOT (EXISTS(SELECT 1 FROM $tableUserProgress p
+                        WHERE p.item_type = 'drill'
+                          AND p.item_id = 'assess-' || u.id
+                          AND p.status = 'completed')
+                 OR ((SELECT COUNT(*) FROM $tableConcepts c
+                      WHERE c.unit_id = u.id) > 0
+                     AND NOT EXISTS(SELECT 1 FROM $tableConcepts c
+                        WHERE c.unit_id = u.id
+                          AND NOT EXISTS(SELECT 1 FROM $tableConceptReads r
+                              WHERE r.concept_id = c.id
+                                AND r.completed = 1))))
+    '''),
+    );
+    return count ?? 0;
+  }
+
+  /// لؤلؤة اليوم — golden_tip واحدة عشوائية من أي محاضرة (مثبتة أو
+  /// لا). null إن لم تُزرع أي لؤلؤة بعد (الويدجت يعرض عندها بنك
+  /// المعلومات الثابت في Dart).
+  Future<String?> getRandomGoldenTip() async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      'SELECT golden_tip FROM $tableUnits '
+      'WHERE golden_tip IS NOT NULL AND TRIM(golden_tip) <> "" '
+      'ORDER BY RANDOM() LIMIT 1',
+    );
+    if (rows.isEmpty) return null;
+    return rows.first['golden_tip']! as String;
   }
 
   /// إدراج وحدة (idempotent).
@@ -788,8 +1176,7 @@ class DatabaseHelper {
         whereArgs: <Object?>[unitId],
       );
       final List<String> caseIds = <String>[
-        for (final Map<String, Object?> r in caseRows)
-          r['id']! as String,
+        for (final Map<String, Object?> r in caseRows) r['id']! as String,
       ];
 
       // (ب) جمع معرفات البطاقات قبل حذفها (لمفاتيح srs_cards).
@@ -800,8 +1187,7 @@ class DatabaseHelper {
         whereArgs: <Object?>[unitId],
       );
       final List<String> flashcardIds = <String>[
-        for (final Map<String, Object?> r in cardRows)
-          r['id']! as String,
+        for (final Map<String, Object?> r in cardRows) r['id']! as String,
       ];
 
       // (ب-2) جمع معرفات المفاهيم وأسئلة MCQ (لتنظيف جداول v15:
@@ -846,10 +1232,7 @@ class DatabaseHelper {
       ];
 
       // (هـ) مفاتيح xp_events (ref_id) — نفس مفاتيح التقدم + البطاقات.
-      final List<String> xpRefKeys = <String>[
-        ...progressKeys,
-        ...flashcardIds,
-      ];
+      final List<String> xpRefKeys = <String>[...progressKeys, ...flashcardIds];
 
       // (هـ-2) v15: تنظيف جداول محرّك القراءة المرتبطة بالمحاضرة.
       // flow_sessions: جلسات القراءة على مفاهيمها (ref_id) + جلسات
@@ -870,57 +1253,22 @@ class DatabaseHelper {
       );
 
       // (2) بطاقات التكرار المتباعد (تقدم Leitner للمحاضرة).
-      await _deleteByValues(
-        txn,
-        tableSrsCards,
-        'flashcard_id',
-        flashcardIds,
-      );
+      await _deleteByValues(txn, tableSrsCards, 'flashcard_id', flashcardIds);
 
       // (3) سجل الإجابات (تحليل الأخطاء).
-      await _deleteByValues(
-        txn,
-        tableCorrections,
-        'drill_id',
-        drillKeys,
-      );
+      await _deleteByValues(txn, tableCorrections, 'drill_id', drillKeys);
 
       // (4) تقدم المستخدم على أنشطة المحاضرة.
-      await _deleteByValues(
-        txn,
-        tableUserProgress,
-        'item_id',
-        progressKeys,
-      );
+      await _deleteByValues(txn, tableUserProgress, 'item_id', progressKeys);
 
       // (5) أحداث XP المرتبطة بعناصر المحاضرة (يحتفظ بغيرها —
       //     مجموع XP العام لا يتأثر سوى بأحداث هذه المحاضرة).
-      await _deleteByValues(
-        txn,
-        tableXpEvents,
-        'ref_id',
-        xpRefKeys,
-      );
+      await _deleteByValues(txn, tableXpEvents, 'ref_id', xpRefKeys);
 
       // (5-2) v15: جداول محرّك القراءة العميقة.
-      await _deleteByValues(
-        txn,
-        tableConceptReads,
-        'concept_id',
-        conceptIds,
-      );
-      await _deleteByValues(
-        txn,
-        tableConfidenceLog,
-        'question_id',
-        mcqIds,
-      );
-      await _deleteByValues(
-        txn,
-        tableFlowSessions,
-        'ref_id',
-        flowRefKeys,
-      );
+      await _deleteByValues(txn, tableConceptReads, 'concept_id', conceptIds);
+      await _deleteByValues(txn, tableConfidenceLog, 'question_id', mcqIds);
+      await _deleteByValues(txn, tableFlowSessions, 'ref_id', flowRefKeys);
 
       // (6) الحالات السريرية.
       await txn.delete(
@@ -1009,9 +1357,7 @@ class DatabaseHelper {
 
   // ─────────────────── البطاقات (Flashcards) ───────────────────
 
-  Future<List<Map<String, Object?>>> getFlashcardsForUnit(
-    String unitId,
-  ) async {
+  Future<List<Map<String, Object?>>> getFlashcardsForUnit(String unitId) async {
     final Database db = await database;
     return db.query(
       tableFlashcards,
@@ -1025,6 +1371,7 @@ class DatabaseHelper {
 
   /// بطاقات بفلترة ديناميكية وترتيب ذكي — قلب بنك البطاقات.
   ///
+  /// - [specialty]: التخصص السريري (v20) — null = كل التخصصات.
   /// - [system]: رمز الجهاز (cardiovascular, ...) — null = كل الأجهزة.
   /// - [lectureId]: محاضرة محددة داخل الجهاز — null = كل المحاضرات.
   /// - [isRandom]: false (افتراضي) = ترتيب المنهج: order_index المحاضرة
@@ -1033,6 +1380,7 @@ class DatabaseHelper {
   ///
   /// كل الشروط مركّبة بمعاملات مربوطة (؟) — لا تركيب نصي للقيم.
   Future<List<Map<String, Object?>>> getFlashcards({
+    String? specialty,
     String? system,
     String? lectureId,
     bool isRandom = false,
@@ -1043,6 +1391,10 @@ class DatabaseHelper {
     final List<String> where = <String>[];
     final List<Object?> args = <Object?>[];
 
+    if (specialty != null) {
+      where.add('u.specialty = ?');
+      args.add(specialty);
+    }
     if (lectureId != null) {
       where.add('f.unit_id = ?');
       args.add(lectureId);
@@ -1051,8 +1403,7 @@ class DatabaseHelper {
       args.add(system);
     }
 
-    final String whereSql =
-        where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
+    final String whereSql = where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
     final String orderSql = isRandom ? 'RANDOM()' : 'u.order_index, u.id, f.id';
     final String limitSql = limit == null ? '' : 'LIMIT $limit';
 
@@ -1068,6 +1419,7 @@ class DatabaseHelper {
 
   /// أسئلة MCQ بنفس عقد الفلترة الديناميكية — لبنك الأسئلة.
   Future<List<Map<String, Object?>>> getMcqs({
+    String? specialty,
     String? system,
     String? lectureId,
     bool isRandom = false,
@@ -1078,6 +1430,10 @@ class DatabaseHelper {
     final List<String> where = <String>[];
     final List<Object?> args = <Object?>[];
 
+    if (specialty != null) {
+      where.add('u.specialty = ?');
+      args.add(specialty);
+    }
     if (lectureId != null) {
       where.add('m.unit_id = ?');
       args.add(lectureId);
@@ -1086,8 +1442,7 @@ class DatabaseHelper {
       args.add(system);
     }
 
-    final String whereSql =
-        where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
+    final String whereSql = where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
     final String orderSql = isRandom ? 'RANDOM()' : 'u.order_index, u.id, m.id';
     final String limitSql = limit == null ? '' : 'LIMIT $limit';
 
@@ -1112,15 +1467,19 @@ class DatabaseHelper {
     String difficultyWeightSql,
   ) async {
     final Database db = await database;
-    return db.rawQuery('''
+    return db.rawQuery(
+      '''
       SELECT * FROM $tableMcqBank
       WHERE unit_id = ?
       ORDER BY $difficultyWeightSql id
-    ''', <Object?>[unitId]);
+    ''',
+      <Object?>[unitId],
+    );
   }
 
   /// الحالات السريرية بنفس عقد الفلترة الديناميكية.
   Future<List<Map<String, Object?>>> getCases({
+    String? specialty,
     String? system,
     String? lectureId,
     bool isRandom = false,
@@ -1131,6 +1490,10 @@ class DatabaseHelper {
     final List<String> where = <String>[];
     final List<Object?> args = <Object?>[];
 
+    if (specialty != null) {
+      where.add('u.specialty = ?');
+      args.add(specialty);
+    }
     if (lectureId != null) {
       where.add('c.unit_id = ?');
       args.add(lectureId);
@@ -1139,8 +1502,7 @@ class DatabaseHelper {
       args.add(system);
     }
 
-    final String whereSql =
-        where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
+    final String whereSql = where.isEmpty ? '' : 'WHERE ${where.join(' AND ')}';
     final String orderSql =
         isRandom ? 'RANDOM()' : 'u.order_index, u.id, c.order_index, c.id';
     final String limitSql = limit == null ? '' : 'LIMIT $limit';
@@ -1162,6 +1524,7 @@ class DatabaseHelper {
   /// الربط عبر EXISTS بدل JOIN — يضمن عدم تكرار البطاقة إذا كانت
   /// المحاضرة عليها عدة سجلات تقدم.
   Future<List<Map<String, Object?>>> getStudiedFlashcards({
+    String? specialty,
     String? system,
     int? limit,
   }) async {
@@ -1181,6 +1544,10 @@ class DatabaseHelper {
     ];
     final List<Object?> args = <Object?>[];
 
+    if (specialty != null) {
+      where.add('u.specialty = ?');
+      args.add(specialty);
+    }
     if (system != null) {
       where.add('u.system = ?');
       args.add(system);
@@ -1200,26 +1567,44 @@ class DatabaseHelper {
 
   /// وحدات (محاضرات) بفلترة الجهاز — لتغذية القائمة المنسدلة
   /// الثانية في لوحة التحكم (محاضرات الجهاز المختار فقط).
-  Future<List<Map<String, Object?>>> getUnitsBySystem(String? system) async {
+  /// [specialty] (v20): حصر الجهاز داخل تخصص سريري واحد.
+  Future<List<Map<String, Object?>>> getUnitsBySystem(
+    String? system, {
+    String? specialty,
+  }) async {
     final Database db = await database;
-    if (system == null) {
-      return db.query(tableUnits, orderBy: 'order_index, id');
+    final List<String> where = <String>[];
+    final List<Object?> args = <Object?>[];
+    if (system != null) {
+      where.add('system = ?');
+      args.add(system);
+    }
+    if (specialty != null) {
+      where.add('specialty = ?');
+      args.add(specialty);
     }
     return db.query(
       tableUnits,
-      where: 'system = ?',
-      whereArgs: <Object?>[system],
+      where: where.isEmpty ? null : where.join(' AND '),
+      whereArgs: where.isEmpty ? null : args,
       orderBy: 'order_index, id',
     );
   }
 
   /// الأجهزة الموجودة فعلاً في المحتوى (لأجهزة بلا محاضرات فارغة
-  /// في القائمة المنسدلة الأولى).
-  Future<List<String>> getDistinctSystems() async {
+  /// في القائمة المنسدلة الأولى). [specialty] (v20): أجهزة تخصص واحد.
+  Future<List<String>> getDistinctSystems({String? specialty}) async {
     final Database db = await database;
-    final List<Map<String, Object?>> rows = await db.rawQuery(
-      'SELECT DISTINCT system FROM $tableUnits ORDER BY system',
-    );
+    final List<Map<String, Object?>> rows =
+        specialty == null
+            ? await db.rawQuery(
+              'SELECT DISTINCT system FROM $tableUnits ORDER BY system',
+            )
+            : await db.rawQuery(
+              'SELECT DISTINCT system FROM $tableUnits '
+              'WHERE specialty = ? ORDER BY system',
+              <Object?>[specialty],
+            );
     return <String>[
       for (final Map<String, Object?> r in rows) r['system']! as String,
     ];
@@ -1362,9 +1747,9 @@ class DatabaseHelper {
   /// إجمالي نقاط الخبرة التراكمية (0 إن كان السجل فارغاً).
   Future<int> sumXp() async {
     final Database db = await database;
-    final int? result = Sqflite.firstIntValue(await db.rawQuery(
-      'SELECT SUM(xp) FROM $tableXpEvents',
-    ));
+    final int? result = Sqflite.firstIntValue(
+      await db.rawQuery('SELECT SUM(xp) FROM $tableXpEvents'),
+    );
     return result ?? 0;
   }
 
@@ -1400,35 +1785,34 @@ class DatabaseHelper {
   Future<bool> hasStreakBonusToday() async {
     final Database db = await database;
     final String today = _utcDateToday();
-    final int? result = Sqflite.firstIntValue(await db.rawQuery(
-      'SELECT COUNT(*) FROM $tableXpEvents '
-      'WHERE substr(created_at, 1, 10) = ?',
-      <Object?>[today],
-    ));
+    final int? result = Sqflite.firstIntValue(
+      await db.rawQuery(
+        'SELECT COUNT(*) FROM $tableXpEvents '
+        'WHERE substr(created_at, 1, 10) = ?',
+        <Object?>[today],
+      ),
+    );
     return (result ?? 0) > 0;
   }
 
   /// يفتح شارة (idempotent).
   Future<void> unlockBadge(String badgeId) async {
     final Database db = await database;
-    await db.insert(
-      tableUnlockedBadges,
-      <String, Object?>{
-        'badge_id': badgeId,
-        'unlocked_at': DateTime.now().toUtc().toIso8601String(),
-      },
-      conflictAlgorithm: ConflictAlgorithm.ignore,
-    );
+    await db.insert(tableUnlockedBadges, <String, Object?>{
+      'badge_id': badgeId,
+      'unlocked_at': DateTime.now().toUtc().toIso8601String(),
+    }, conflictAlgorithm: ConflictAlgorithm.ignore);
   }
 
   /// معرفات كل الشارات المفتوحة سابقاً.
   Future<Set<String>> getUnlockedBadgeIds() async {
     final Database db = await database;
-    final List<Map<String, Object?>> rows =
-        await db.query(tableUnlockedBadges, columns: <String>['badge_id']);
+    final List<Map<String, Object?>> rows = await db.query(
+      tableUnlockedBadges,
+      columns: <String>['badge_id'],
+    );
     return <String>{
-      for (final Map<String, Object?> row in rows)
-        row['badge_id']! as String,
+      for (final Map<String, Object?> row in rows) row['badge_id']! as String,
     };
   }
 
@@ -1453,9 +1837,8 @@ class DatabaseHelper {
   Future<List<String>> unlockEarnedBadges() async {
     try {
       final MotivationSnapshot snapshot = await MotivationRepository.snapshot();
-      final List<String> newlyEarned = snapshot.newlyEarned()
-          .map((BadgeDef badge) => badge.id)
-          .toList();
+      final List<String> newlyEarned =
+          snapshot.newlyEarned().map((BadgeDef badge) => badge.id).toList();
       for (final String badgeId in newlyEarned) {
         await unlockBadge(badgeId);
       }
@@ -1465,20 +1848,123 @@ class DatabaseHelper {
     }
   }
 
+  /// ─────────────── تجميع كتابات نهاية الجلسة (Batching) ───────────────
+  ///
+  /// كل كتابات ختام جلسة تدريب في **معاملة واحدة**: سجل الإجابات +
+  /// علامة التقدم + XP التقييم (اختياري) + مكافأة السلسلة + الشارات.
+  /// ذرّي: إما تُكتب كلها أو لا شيء — ولا فتح معاملة لكل استعلام.
+  ///
+  /// يعيد معرفات الشارات المفتوحة حديثاً (لأحداث الاحتفال).
+  Future<List<String>> finalizeSession({
+    List<Correction> corrections = const <Correction>[],
+    UserProgress? progress,
+    XpEventKind? bonusKind,
+    String? bonusRefId,
+    int bonusXp = 0,
+  }) async {
+    final Database db = await database;
+    final List<String> newBadges = <String>[];
+
+    await db.transaction((Transaction txn) async {
+      final Batch batch = txn.batch();
+
+      // سجل الإجابات دفعة واحدة.
+      for (final Correction correction in corrections) {
+        batch.insert(tableCorrections, correction.toMap());
+      }
+
+      // علامة التقدم (UPSERT يدوي داخل المعاملة).
+      if (progress != null) {
+        final Map<String, Object?> map = progress.toMap()..remove('id');
+        batch.update(
+          tableUserProgress,
+          <String, Object?>{
+            'status': map['status'],
+            'score': map['score'],
+            'times_reviewed': map['times_reviewed'],
+            'last_practiced_at': map['last_practiced_at'],
+            'updated_at': DateTime.now().toUtc().toIso8601String(),
+          },
+          where: 'item_type = ? AND item_id = ?',
+          whereArgs: <Object?>[
+            progressItemTypeToCode(progress.itemType),
+            progress.itemId,
+          ],
+        );
+        // INSERT OR REPLACE semantics عبر upsert يدوي: ندرج بعد
+        // التحديث — الصف الموجود حُدّث أعلاه؛ الجديد يُدرج الآن.
+        // ConflictAlgorithm.ignore يمنع التكرار إن سبق التحديث صفاً.
+        batch.insert(
+          tableUserProgress,
+          map,
+          conflictAlgorithm: ConflictAlgorithm.ignore,
+        );
+      }
+
+      // مكافأة اجتياز التقييم (اختيارية).
+      if (bonusKind != null && bonusXp > 0) {
+        batch.insert(tableXpEvents, <String, Object?>{
+          'kind': xpEventKindToCode(bonusKind),
+          'ref_id': bonusRefId,
+          'xp': bonusXp,
+          'created_at': DateTime.now().toUtc().toIso8601String(),
+        });
+      }
+
+      // مكافأة السلسلة اليومية — مرة واحدة يومياً (فحص ثم إدراج
+      // داخل نفس المعاملة: التزامن محفوظ بفتح المعاملة).
+      final String today = _utcDateToday();
+      final int? already = Sqflite.firstIntValue(
+        await txn.rawQuery(
+          'SELECT COUNT(*) FROM $tableXpEvents '
+          'WHERE substr(created_at, 1, 10) = ? AND kind = ?',
+          <Object?>[today, xpEventKindToCode(XpEventKind.streak)],
+        ),
+      );
+      if ((already ?? 0) == 0) {
+        batch.insert(tableXpEvents, <String, Object?>{
+          'kind': xpEventKindToCode(XpEventKind.streak),
+          'ref_id': today,
+          'xp': 10,
+          'created_at': DateTime.now().toUtc().toIso8601String(),
+        });
+      }
+
+      await batch.commit(noResult: true);
+    });
+
+    // الشارات تُقيّم بعد نجاح المعاملة (تعتمد قراءة القرارات) —
+    // تُعاد لتغذية أحداث الاحتفال.
+    try {
+      final MotivationSnapshot snapshot = await MotivationRepository.snapshot();
+      newBadges.addAll(
+        snapshot.newlyEarned().map((BadgeDef badge) => badge.id),
+      );
+      for (final String badgeId in newBadges) {
+        await unlockBadge(badgeId);
+      }
+    } catch (_) {
+      // الشارات غير حرجة — لا تُسقط الجلسة.
+    }
+    return newBadges;
+  }
+
   // ─────────────── استعلامات مساعدة (قراءة) ───────────────
 
   /// عدد عناصر مكتملة لنوع واحد من جدول التقدم.
   Future<int> countCompletedByType(ProgressItemType type) async {
     final Database db = await database;
-    final int? result = Sqflite.firstIntValue(await db.query(
-      tableUserProgress,
-      columns: <String>['COUNT(*) AS c'],
-      where: 'item_type = ? AND status = ?',
-      whereArgs: <Object?>[
-        progressItemTypeToCode(type),
-        progressStatusToCode(ProgressStatus.completed),
-      ],
-    ));
+    final int? result = Sqflite.firstIntValue(
+      await db.query(
+        tableUserProgress,
+        columns: <String>['COUNT(*) AS c'],
+        where: 'item_type = ? AND status = ?',
+        whereArgs: <Object?>[
+          progressItemTypeToCode(type),
+          progressStatusToCode(ProgressStatus.completed),
+        ],
+      ),
+    );
     return result ?? 0;
   }
 
@@ -1593,10 +2079,7 @@ class DatabaseHelper {
     );
     return <MapEntry<String, int>>[
       for (final Map<String, Object?> row in rows)
-        MapEntry<String, int>(
-          row['question_id']! as String,
-          row['c']! as int,
-        ),
+        MapEntry<String, int>(row['question_id']! as String, row['c']! as int),
     ];
   }
 
@@ -1645,9 +2128,10 @@ class DatabaseHelper {
           'read_count': 1,
           'completed': completed ? 1 : 0,
           'last_read_at': now,
-          'sections_json': sectionDwellSeconds == null
-              ? null
-              : jsonEncodeSorted(sectionDwellSeconds),
+          'sections_json':
+              sectionDwellSeconds == null
+                  ? null
+                  : jsonEncodeSorted(sectionDwellSeconds),
         });
       } else {
         previousReads = rows.first['read_count']! as int;
@@ -1655,13 +2139,13 @@ class DatabaseHelper {
           tableConceptReads,
           <String, Object?>{
             'read_count': previousReads + 1,
-            'completed': (rows.first['completed']! as int == 1 || completed)
-                ? 1
-                : 0,
+            'completed':
+                (rows.first['completed']! as int == 1 || completed) ? 1 : 0,
             'last_read_at': now,
-            'sections_json': sectionDwellSeconds == null
-                ? rows.first['sections_json']
-                : jsonEncodeSorted(sectionDwellSeconds),
+            'sections_json':
+                sectionDwellSeconds == null
+                    ? rows.first['sections_json']
+                    : jsonEncodeSorted(sectionDwellSeconds),
           },
           where: 'concept_id = ?',
           whereArgs: <Object?>[conceptId],
@@ -1734,9 +2218,7 @@ class DatabaseHelper {
   }
 
   /// كل أسئلة المفهوم (لنقاط الاعتراض داخل القارئ — المقترح B).
-  Future<List<Map<String, Object?>>> getMcqsForConcept(
-    String conceptId,
-  ) async {
+  Future<List<Map<String, Object?>>> getMcqsForConcept(String conceptId) async {
     final Database db = await database;
     return db.query(
       tableMcqBank,
@@ -1747,10 +2229,7 @@ class DatabaseHelper {
   }
 
   /// يفتح جلسة تدفق جديدة ويرجّع معرّفها.
-  Future<int> startFlowSession({
-    required String kind,
-    String? refId,
-  }) async {
+  Future<int> startFlowSession({required String kind, String? refId}) async {
     final Database db = await database;
     return db.insert(tableFlowSessions, <String, Object?>{
       'kind': kind,
@@ -1777,11 +2256,13 @@ class DatabaseHelper {
   /// مجموع دقائق التركيز المنجزة في يوم (UTC) — مقياس الشمال.
   Future<int> focusedSecondsOnDay(String utcDate) async {
     final Database db = await database;
-    final int? result = Sqflite.firstIntValue(await db.rawQuery(
-      'SELECT SUM(focused_seconds) FROM $tableFlowSessions '
-      'WHERE substr(started_at, 1, 10) = ? AND ended_at IS NOT NULL',
-      <Object?>[utcDate],
-    ));
+    final int? result = Sqflite.firstIntValue(
+      await db.rawQuery(
+        'SELECT SUM(focused_seconds) FROM $tableFlowSessions '
+        'WHERE substr(started_at, 1, 10) = ? AND ended_at IS NOT NULL',
+        <Object?>[utcDate],
+      ),
+    );
     return result ?? 0;
   }
 
@@ -1804,7 +2285,8 @@ class DatabaseHelper {
   /// يرجع قائمة {date, seconds} تصاعدية.
   Future<List<MapEntry<String, int>>> focusedMinutesRecent(int days) async {
     final Database db = await database;
-    final List<Map<String, Object?>> rows = await db.rawQuery('''
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
       SELECT substr(started_at, 1, 10) AS day,
              CAST(SUM(focused_seconds) / 60 AS INTEGER) AS minutes
       FROM $tableFlowSessions
@@ -1812,20 +2294,159 @@ class DatabaseHelper {
         AND started_at >= ?
       GROUP BY day
       ORDER BY day ASC
-    ''', <Object?>[
-      DateTime.now()
-          .toUtc()
-          .subtract(Duration(days: days - 1))
-          .toIso8601String()
-          .substring(0, 10),
-    ]);
+    ''',
+      <Object?>[
+        DateTime.now()
+            .toUtc()
+            .subtract(Duration(days: days - 1))
+            .toIso8601String()
+            .substring(0, 10),
+      ],
+    );
     return <MapEntry<String, int>>[
       for (final Map<String, Object?> r in rows)
-        MapEntry<String, int>(
-          r['day']! as String,
-          r['minutes']! as int,
-        ),
+        MapEntry<String, int>(r['day']! as String, r['minutes']! as int),
     ];
+  }
+
+  // ─────────────── الإحصاءات اليومية لزمن الدراسة (v21) ───────────────
+
+  /// يضيف زمناً (ثواني) إلى إحصاء اليوم الحالي (UTC) — تجميع idempotent.
+  ///
+  /// إذا لم يوجد صف لهذا اليوم ينشئه بالزمن المعطى؛ وإلا يضيف إلى
+  /// قيمته. يُستدعى من مدير دورة حياة التطبيق عند كل خروج/إيقاف.
+  Future<void> recordStudySeconds(int seconds) async {
+    if (seconds <= 0) return;
+    final Database db = await database;
+    final String today = DateTime.now().toUtc().toIso8601String().substring(
+      0,
+      10,
+    );
+
+    await db.transaction((Transaction txn) async {
+      final List<Map<String, Object?>> rows = await txn.query(
+        tableDailyStats,
+        where: 'date = ?',
+        whereArgs: <Object?>[today],
+        limit: 1,
+      );
+      if (rows.isEmpty) {
+        await txn.insert(tableDailyStats, <String, Object?>{
+          'date': today,
+          'study_seconds': seconds,
+        });
+      } else {
+        final int existing = rows.first['study_seconds']! as int;
+        await txn.update(
+          tableDailyStats,
+          <String, Object?>{'study_seconds': existing + seconds},
+          where: 'date = ?',
+          whereArgs: <Object?>[today],
+        );
+      }
+    });
+  }
+
+  /// زمن الدراسة (ثواني) ليوم محدد (UTC) — 0 لليوم الغائب.
+  Future<int> getStudySecondsOnDay(String utcDate) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.query(
+      tableDailyStats,
+      columns: <String>['study_seconds'],
+      where: 'date = ?',
+      whereArgs: <Object?>[utcDate],
+      limit: 1,
+    );
+    return rows.isEmpty ? 0 : (rows.first['study_seconds']! as int);
+  }
+
+  /// زمن الدراسة بالثواني لآخر [days] يوماً (تصاعدياً) — لإطعام تقويم
+  /// النشاط بالمدد اليومية.
+  Future<List<MapEntry<String, int>>> getStudySecondsRecent(int days) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.rawQuery(
+      '''
+      SELECT date AS day, study_seconds AS seconds
+      FROM $tableDailyStats
+      WHERE date >= ?
+      ORDER BY day ASC
+    ''',
+      <Object?>[
+        DateTime.now()
+            .toUtc()
+            .subtract(Duration(days: days - 1))
+            .toIso8601String()
+            .substring(0, 10),
+      ],
+    );
+    return <MapEntry<String, int>>[
+      for (final Map<String, Object?> r in rows)
+        MapEntry<String, int>(r['day']! as String, r['seconds']! as int),
+    ];
+  }
+
+  // ─────────── الملاحظات المضمّنة في نص الشروحات (v22) ───────────
+
+  /// يضيف ملاحظة داخلية مرتبطة بنص محدَّد داخل شرح (concept).
+  ///
+  /// [selectedText] النص الحرفي الذي حدّده المستخدم، [personalNote]
+  /// ملاحظته الشخصية. [colorCode] اختياري (مستقبلي لألوان التمييز).
+  /// يرجع معرف الصف الجديد.
+  Future<int> addInlineNote({
+    required String conceptId,
+    required String selectedText,
+    required int startIndex,
+    required int endIndex,
+    required String personalNote,
+    String? colorCode,
+  }) async {
+    final Database db = await database;
+    return db.insert(tableInlineNotes, <String, Object?>{
+      'concept_id': conceptId,
+      'selected_text': selectedText,
+      'start_index': startIndex,
+      'end_index': endIndex,
+      'personal_note': personalNote,
+      'color_code': colorCode,
+      'created_at': DateTime.now().toUtc().toIso8601String(),
+    });
+  }
+
+  /// تحديث نص الملاحظة الشخصية لصفّ موجود (يتحدَّد بمعرفه).
+  Future<void> updateInlineNote({
+    required int id,
+    required String personalNote,
+  }) async {
+    final Database db = await database;
+    await db.update(
+      tableInlineNotes,
+      <String, Object?>{'personal_note': personalNote},
+      where: 'id = ?',
+      whereArgs: <Object?>[id],
+    );
+  }
+
+  /// حذف ملاحظة داخلية بمعرفها.
+  Future<void> deleteInlineNote(int id) async {
+    final Database db = await database;
+    await db.delete(
+      tableInlineNotes,
+      where: 'id = ?',
+      whereArgs: <Object?>[id],
+    );
+  }
+
+  /// كل الملاحظات المضمّنة لشرح معيّن (بترتيب الإضافة).
+  Future<List<Map<String, Object?>>> getInlineNotesForConcept(
+    String conceptId,
+  ) async {
+    final Database db = await database;
+    return db.query(
+      tableInlineNotes,
+      where: 'concept_id = ?',
+      whereArgs: <Object?>[conceptId],
+      orderBy: 'id ASC',
+    );
   }
 
   /// متوسط زمن البقاء التاريخي على الأقسام (ثواني) عبر كل الشروح
@@ -1861,19 +2482,34 @@ class DatabaseHelper {
   /// لتوزيع الأجهزة، مع استبعاد الشروح المجتازة إن نُصب.
   Future<List<Map<String, Object?>>> getUnfinishedConcepts({
     int limit = 4,
+    String? specialty,
+    String? system,
   }) async {
     final Database db = await database;
-    return db.rawQuery('''
-      SELECT c.*, u.title AS unit_title, u.system AS unit_system
+    final String specialtyFilter = specialty != null ? 'AND u.specialty = ?' : '';
+    final String systemFilter = system != null ? 'AND u.system = ?' : '';
+    
+    final List<Object?> args = <Object?>[];
+    if (specialty != null) args.add(specialty);
+    if (system != null) args.add(system);
+    args.add(limit);
+
+    return db.rawQuery(
+      '''
+      SELECT c.*, u.title AS unit_title, u.system AS unit_system, u.specialty AS unit_specialty
       FROM $tableConcepts c
       INNER JOIN $tableUnits u ON u.id = c.unit_id
       WHERE NOT EXISTS (
         SELECT 1 FROM $tableConceptReads r
         WHERE r.concept_id = c.id AND r.completed = 1
       )
+      $specialtyFilter
+      $systemFilter
       ORDER BY RANDOM()
       LIMIT ?
-    ''', <Object?>[limit]);
+    ''',
+      args,
+    );
   }
 
   /// ترميز JSON بمفاتيح مرتبة — خرج حتمي قابل للاختبار.
@@ -1883,6 +2519,62 @@ class DatabaseHelper {
       for (final String k in keys) k: map[k]!,
     };
     return jsonEncode(sorted);
+  }
+
+  // ─────────────────── سجلات المرضى (Clinical History) ───────────────────
+
+  /// إضافة سجل مريض جديد
+  Future<int> insertPatientRecord(
+    String patientAlias,
+    String responsesJson,
+  ) async {
+    final Database db = await database;
+    final String now = DateTime.now().toUtc().toIso8601String();
+    return db.insert(tablePatientRecords, <String, Object?>{
+      'patient_alias': patientAlias,
+      'responses_json': responsesJson,
+      'created_at': now,
+      'updated_at': now,
+    });
+  }
+
+  /// جلب كل سجلات المرضى (مرتبة حسب الأحدث)
+  Future<List<Map<String, Object?>>> getPatientRecords() async {
+    final Database db = await database;
+    return db.query(
+      tablePatientRecords,
+      orderBy: 'created_at DESC',
+    );
+  }
+
+  /// تحديث سجل مريض موجود
+  Future<int> updatePatientRecord(
+    int id,
+    String patientAlias,
+    String responsesJson,
+  ) async {
+    final Database db = await database;
+    final String now = DateTime.now().toUtc().toIso8601String();
+    return db.update(
+      tablePatientRecords,
+      <String, Object?>{
+        'patient_alias': patientAlias,
+        'responses_json': responsesJson,
+        'updated_at': now,
+      },
+      where: 'id = ?',
+      whereArgs: <Object?>[id],
+    );
+  }
+
+  /// حذف سجل مريض
+  Future<int> deletePatientRecord(int id) async {
+    final Database db = await database;
+    return db.delete(
+      tablePatientRecords,
+      where: 'id = ?',
+      whereArgs: <Object?>[id],
+    );
   }
 
   // ─────────────────────────── الصيانة ───────────────────────────

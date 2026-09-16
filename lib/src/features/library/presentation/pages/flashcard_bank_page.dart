@@ -16,7 +16,11 @@ import 'flashcard_bank_session_page.dart';
 /// أي تغيير فلتر يعيد الاستعلام فوراً (setState → _loadItems).
 /// ─────────────────────────────────────────────────────────────────────
 class FlashcardBankPage extends StatefulWidget {
-  const FlashcardBankPage({super.key});
+  const FlashcardBankPage({this.specialty, super.key});
+
+  /// v20: حصر البنك داخل تخصص سريري واحد (null = كل التخصصات —
+  /// السلوك التاريخي عند الفتح من أي مكان آخر).
+  final String? specialty;
 
   @override
   State<FlashcardBankPage> createState() => _FlashcardBankPageState();
@@ -39,6 +43,8 @@ class _FlashcardBankPageState extends State<FlashcardBankPage> {
   bool _loading = true;
   String? _error;
 
+  String? get _specialty => widget.specialty;
+
   @override
   void initState() {
     super.initState();
@@ -53,10 +59,15 @@ class _FlashcardBankPageState extends State<FlashcardBankPage> {
       _error = null;
     });
     try {
-      final List<String> systems = await _db.getDistinctSystems();
+      final List<String> systems =
+          await _db.getDistinctSystems(specialty: _specialty);
       final List<Map<String, Object?>> lectures =
-          await _db.getUnitsBySystem(_selectedSystem);
+          await _db.getUnitsBySystem(
+        _selectedSystem,
+        specialty: _specialty,
+      );
       final int studied = (await _db.getStudiedFlashcards(
+        specialty: _specialty,
         system: _selectedSystem,
       ))
           .length;
@@ -83,6 +94,7 @@ class _FlashcardBankPageState extends State<FlashcardBankPage> {
     setState(() => _loading = true);
     try {
       final List<Map<String, Object?>> cards = await _db.getFlashcards(
+        specialty: _specialty,
         system: _selectedSystem,
         lectureId: _selectedLectureId,
         isRandom: _isRandom,
@@ -125,6 +137,7 @@ class _FlashcardBankPageState extends State<FlashcardBankPage> {
     await Navigator.of(context).push(MaterialPageRoute<Widget>(
       builder: (_) => FlashcardBankSessionPage(
         system: _selectedSystem,
+        specialty: _specialty,
       ),
     ));
     // عند العودة — قد تغيّرت حالة «المدروس» (سجل تقدم جديد).

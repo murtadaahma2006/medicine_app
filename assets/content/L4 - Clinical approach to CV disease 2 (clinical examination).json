@@ -1,0 +1,544 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "cvs_l4_clinical_examination",
+    "specialty": "internal_medicine",
+    "title": "Clinical Approach to CVS Disease: Clinical Examination",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L4-CLINICAL APPRACH TO CV DISESASE 2.pdf",
+      "page_count": 31
+    },
+    "tags": ["physical examination", "pulses", "pulsus paradoxus", "JVP", "heart sounds", "murmurs", "blood pressure"],
+    "order_index": 3,
+    "golden_tip": [
+      "Pulsus paradoxus = a fall of more than 10 mmHg in systolic BP during inspiration — think cardiac tamponade, severe asthma/COPD, and constrictive pericarditis. But remember Kussmaul's sign is the opposite: JVP RISES on inspiration in constrictive pericarditis.",
+      "Hill's sign: leg systolic pressure more than 20 mmHg HIGHER than arm pressure indicates significant aortic regurgitation. Conversely, radio-femoral delay = coarctation of the aorta.",
+      "In atrial fibrillation the 'a' wave of the JVP disappears (no atrial contraction); giant v waves mean tricuspid regurgitation; cannon a waves mean complete heart block with AV dissociation.",
+      "Fixed splitting of S2 is characteristic of atrial septal defect (unaffected by respiration), whereas wide splitting that varies with respiration occurs in RBBB and pulmonary stenosis."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "cvs_l4_c1_general_appearance_respiration_bp",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "title": "General Appearance, Respiration, and Blood Pressure Assessment",
+      "summary_ar": "المظهر العام، التنفس وتغيراته الدورية (شين-ستوكس)، وضغط الدم وتفسير عدم تساويه بين الأطراف وعلامة هيل وتأخر الكعبري-الفخذي.",
+      "sections": [
+        {
+          "heading": "General Appearance and Respiration",
+          "body_text": "**General appearance:**\n\n- The **respiratory rate may be increased** in patients with heart failure. Patients with **pulmonary edema** are usually **markedly tachypneic** and may have **labored breathing**. Patients with **advanced heart failure may have Cheyne-Stokes respirations** (crescendo–decrescendo cycles with apneic pauses).\n\n- **Body habitus** (obesity vs weight loss) is noted. Systemic diseases such as **hyperthyroidism, hypothyroidism, rheumatoid arthritis, scleroderma, and hemochromatosis** may be suspected from the patient's general appearance. **Marfan syndrome, Turner's syndrome, Down syndrome**, and a variety of congenital anomalies may also be readily apparent.\n\n- Other general survey elements: hands (clubbing, splinter hemorrhages), face (pallor, central cyanosis, malar flush, xanthelasma, dental caries/poor oral hygiene in endocarditis risk), fundi (retinopathy), tendon xanthomas, peripheral edema, observation of distress and well-being, skin temperature (tissue perfusion), sweating, urine output, body mass.\n\n**Respiration and hemodynamics:**\n\nCardiac output, BP, and pulse rate change with respiration as the result of changes in blood flow to the right and left heart:\n\n- During **inspiration**, the fall in intrathoracic pressure causes **increased return of venous blood into the chest and right side of the heart**, which **increases cardiac output from the RV**. A substantial amount of blood is **sequestered in the lungs**, however, due to **increased capacitance of the pulmonary vascular bed**, which causes a **reduction in blood flow to the left side of the heart**. This causes a **reduction in cardiac output from the LV and a slight fall in BP**.\n\n- With **expiration**, the opposite sequence occurs: there is a **fall in venous return to the right heart** with a **reduction in RV output**, and a **rise in venous return to the left side of the heart** with an **increase in LV output**.\n\n- **Summary of hemodynamic effects of respiration:**\n  - **Inspiration:** JVP falls; BP falls (up to 10 mmHg); heart rate accelerates; S2 splits\n  - **Expiration:** JVP rises; BP rises; heart rate slows; S2 fuses\n  - Inspiration prolongs RV ejection (delaying P2) and shortens LV ejection (bringing forward A2); expiration produces the opposite effects.",
+          "key_points": [
+            "Heart failure: tachypnea, labored breathing; pulmonary edema: marked tachypnea; advanced HF: Cheyne-Stokes respirations.",
+            "General appearance clues: thyroid disease, RA, scleroderma, hemochromatosis; Marfan, Turner, Down syndromes.",
+            "Inspiration: ↑ venous return to right heart, pulmonary sequestration → ↓ LV output → slight BP fall.",
+            "Expiration: opposite — ↑ LV output and BP.",
+            "Hemodynamic effects: inspiration — JVP falls, BP falls up to 10 mmHg, HR accelerates, S2 splits; expiration — all reverse."
+          ],
+          "check": {
+            "prompt": "Why does systolic BP normally fall slightly during inspiration?",
+            "options": [
+              "Blood is sequestered in the pulmonary vascular bed reducing LV filling",
+              "Inspiration increases systemic vascular resistance",
+              "Inspiration accelerates left ventricular contractility",
+              "The right ventricle stops ejecting during inspiration"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "أثناء الشهيق يزداد العود الوريدي للأيمن لكن الدم يُحتجز في سرير الرئة لتسعُع أوعيته، فيقل امتلاء البطين الأيسر ونتاجه فيهبط الضغط الانقباضي قليلاً؛ وعكس ذلك في الزفير."
+          }
+        },
+        {
+          "heading": "Pulsus Paradoxus",
+          "body_text": "**Pulsus paradoxus** describes an **exaggerated fall in BP during inspiration — a marked fall of more than 10 mmHg (systolic) during inspiration**.\n\n**Causes:**\n\n- **Cardiac tamponade**\n- **COPD**\n- **Acute severe bronchial asthma**\n- **Constrictive pericarditis**\n\n(The normal inspiratory fall is 0–10 mmHg; beyond that it is 'paradoxical'.) Mechanistically, in tamponade and constriction the exaggerated inspiratory pooling in the lungs plus the constrained pericardial space exaggerate the normal fall in LV filling and stroke volume. In severe airflow obstruction, markedly negative intrathoracic pressure amplifies the same effect.",
+          "key_points": [
+            "Pulsus paradoxus = inspiratory systolic BP fall > 10 mmHg.",
+            "Causes: cardiac tamponade, COPD, acute severe asthma, constrictive pericarditis.",
+            "Mechanism: exaggerated inspiratory reduction in LV filling/stroke volume."
+          ],
+          "check": {
+            "prompt": "A young man with a stab wound to the chest has hypotension, distended neck veins, muffled heart sounds, and pulsus paradoxus. What is the cause of the paradoxical pulse?",
+            "options": [
+              "Cardiac tamponade from hemopericardium",
+              "Asthma",
+              "Tension pneumothorax alone",
+              "Aortic stenosis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "طعنة صدر مع ثالوث بيك (هبوط ضغط، تورد يديوي، أصوات قلبية بعيدة) + نبض مفارق = تامponade قلبي بالنزف التأموري — أشيع سبب نبض مفارق بعد الصدمة."
+          }
+        },
+        {
+          "heading": "Blood Pressure Asymmetry and Regional Differences",
+          "body_text": "In normal situations, the **pressure in both arms is relatively equal**. If the pressure is measured in the **lower extremities rather than the arms, the systolic pressure is typically 10–20 mmHg HIGHER**.\n\n**If the pressures in the arms are asymmetric**, consider:\n\n- **Obstructive arterial diseases, most commonly atherosclerosis**\n- **Aortic dissection**\n- **Takayasu disease**\n- **Coarctation of the aorta**\n\n**Lower extremity pressures lower than arm pressures** occur in the setting of **abdominal aortic, iliac, or femoral arterial disease**.\n\n**Coarctation of the aorta** can also lead to **discrepant pressures between the upper and lower extremities** — classically with **radio-femoral delay**.\n\n**Leg pressure more than 20 mmHg HIGHER than arm pressure** (reversed gradient) can be found in the patient with **significant aortic regurgitation — a finding called HILL'S SIGN**.",
+          "key_points": [
+            "Arms are normally equal; legs normally 10–20 mmHg higher than arms.",
+            "Arm asymmetry: atherosclerosis, aortic dissection, Takayasu disease, coarctation.",
+            "Leg pressure < arm pressure: abdominal aortic, iliac, or femoral disease; coarctation with radio-femoral delay.",
+            "Leg pressure >20 mmHg above arm = Hill's sign of significant aortic regurgitation."
+          ],
+          "check": {
+            "prompt": "What does a leg systolic pressure 30 mmHg higher than the arm suggest?",
+            "options": [
+              "Coarctation of the aorta",
+              "Significant aortic regurgitation (Hill's sign)",
+              "Takayasu arteritis",
+              "Normal finding only"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "علامة هيل: ضغط الساق أعلى من الذراع بأكثر من 20 مم زئبق يشير إلى قلس أبهري مهم بسبب الجريان الانبساطي المتزايد للساقين. أما تضيق برزخ الأبهر فيجعل ضغط الساق أدنى مع تأخر الكعبري-الفخذي."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Cheyne-Stokes respiration", "definition_ar": "تنفس دوري هابط-صاعد مع وقفات تنفسية في فشل القلب المتقدم"},
+        {"term": "Pulsus paradoxus", "definition_ar": "هبوط الضغط الانقباضي أكثر من 10 مم زئبق أثناء الشهيق"},
+        {"term": "Hill's sign", "definition_ar": "ضغط ساق أعلى من الذراع بأكثر من 20 مم زئبق في القلس الأبهري المهم"},
+        {"term": "Radio-femoral delay", "definition_ar": "تأخر نبض الفخذ عن الكعبري، علامة تضيق برزخ الأبهر"},
+        {"term": "Takayasu disease", "definition_ar": "التهاب شرايين كبير مجهول السبب يسبب عدم تساوي ضغط الذراعين"}
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "cvs_l4_c2_pulse_exam",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "title": "Examination of the Arterial Pulse",
+      "summary_ar": "فحص النبض الشرياني: الصفات النبضية (الساقط، البطيء الصاعد، الثنائي، المتناوب، المفارق) وأسباب تسارع وتباطؤ النبض وحجمه.",
+      "sections": [
+        {
+          "heading": "Pulse Characters and Their Causes",
+          "body_text": "**Examination of the arterial pulse:** The character of the pulse is determined by **stroke volume and arterial compliance**, and is best assessed by palpating a **major artery such as the carotid or brachial artery**.\n\n- **Collapsing (water-hammer) pulse:** the **peak of the pulse wave arrives early and is followed by a rapid descent**. This rapid fall imparts the 'collapsing' sensation. It is **exaggerated by raising the patient's arm above the level of the heart**. It occurs in **severe aortic regurgitation** and is associated with **wide pulse pressure (systolic BP – diastolic BP > 80 mmHg)**. Aortic regurgitation, anemia, sepsis, and other causes of a large stroke volume typically produce a **bounding pulse** with high amplitude and wide pulse pressure.\n\n- **Slow-rising pulse (pulsus parvus et tardus):** a **gradual upstroke with a reduced peak occurring late in systole** — a feature of **severe aortic stenosis**. Aortic stenosis impedes ventricular emptying; if severe, it causes a slow-rising, weak, and delayed pulse.\n\n- **Pulsus bisferiens:** an **increased pulse with a DOUBLE systolic peak separated by a distinct mid-systolic dip**. Causes include **aortic regurgitation and concomitant aortic stenosis and regurgitation** (also hypertrophic obstructive cardiomyopathy).\n\n- **Pulsus alternans:** a **beat-to-beat variation in pulse volume with a normal rhythm**. It is **rare** and occurs in **advanced heart failure and atrial fibrillation** — characteristic of **severe left ventricular failure**.\n\n- **Pulsus paradoxus:** an **exaggeration of the normal variability of pulse volume with breathing** (>10 mmHg inspiratory fall) — most characteristic of **cardiac tamponade**.\n\n**Normal and abnormal carotid pulse contours:**\n- (A) Normal arterial pulse with simultaneous ECG — the dicrotic wave (D) occurs just after aortic valve closure.\n- (B) Wide pulse pressure in aortic insufficiency (collapsing).\n- (C) Pulsus parvus et tardus — small amplitude with slow upstroke in aortic stenosis.\n- (D) Bisferiens pulse with two systolic peaks — hypertrophic obstructive cardiomyopathy or aortic insufficiency, especially with concomitant AS.\n- (E) Pulsus alternans — severe left ventricular failure.\n- (F) Pulsus paradoxus (>10 mmHg with inspiration) — cardiac tamponade.",
+          "key_points": [
+            "Pulse character = stroke volume + arterial compliance; palpate carotid/brachial for best assessment.",
+            "Collapsing pulse: early peak, rapid descent, arm elevation exaggerates; severe AR with wide pulse pressure >80 mmHg.",
+            "Pulsus parvus et tardus: slow upstroke, reduced late peak = severe AS.",
+            "Bisferiens: double systolic peak with mid-systolic dip = AR ± concomitant AS, HOCM.",
+            "Pulsus alternans: beat-to-beat volume variation, regular rhythm = advanced HF/severe LVF.",
+            "Pulsus paradoxus: >10 mmHg inspiratory fall = tamponade (also COPD/asthma, constrictive pericarditis)."
+          ],
+          "check": {
+            "prompt": "A pulse with two systolic peaks separated by a mid-systolic dip suggests which lesion?",
+            "options": [
+              "Severe aortic stenosis alone",
+              "Mixed aortic stenosis and regurgitation (or HOCM)",
+              "Tricuspid regurgitation",
+              "Mitral stenosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النبض الثنائي (bisferiens) بقمتين انقباضيتين ينفصلهما انخساف منتصف الانقباض يظهر في القلس الأبهري المصاحب لتضيق أبهري وفي اعتلال عضلة القلب الضخامي الانسدادي. التضيق وحده يعطي parvus et tardus، والقلس وحده ساقطاً."
+          }
+        },
+        {
+          "heading": "Fast, Slow, and Large-Volume Pulses",
+          "body_text": "**Causes of a fast pulse (tachycardia >100 bpm):**\n\n- **Sinus rhythm:** exercise, pain, excitement/anxiety, fever, hyperthyroidism, medication (sympathomimetics e.g., salbutamol, vasodilators)\n- **Arrhythmia:** atrial fibrillation, atrial flutter, supraventricular tachycardia, ventricular tachycardia\n\n**Causes of a slow pulse (bradycardia <60 bpm):**\n\n- **Sinus rhythm:** sleep, athletic training, hypothyroidism\n- **Arrhythmia:** carotid sinus hypersensitivity, sick sinus syndrome, second-degree heart block, complete heart block, medication (beta-blockers, digoxin, verapamil, diltiazem)\n\n**Causes of increased pulse volume (bounding pulse):**\n\n- **Physiological:** exercise, pregnancy, advanced age, increased environmental temperature\n- **Pathological:** fever, thyrotoxicosis, anemia, peripheral arteriovenous shunt, **aortic regurgitation**, hypertension, **Paget's disease of bone**",
+          "key_points": [
+            "Fast: exercise, pain, anxiety, fever, hyperthyroidism, sympathomimetics/vasodilators; AF, flutter, SVT, VT.",
+            "Slow: sleep, athletes, hypothyroidism; carotid sinus hypersensitivity, sick sinus, 2nd/3rd-degree block, β-blockers/digoxin/verapamil/diltiazem.",
+            "Bounding: exercise, pregnancy, age, warmth; fever, thyrotoxicosis, anemia, AV shunt, aortic regurgitation, hypertension, Paget's disease."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Water-hammer pulse", "definition_ar": "نبضة ساقطة (كوريجان) بذروة مبكرة وهبوط سريع في القلس الأبهري الشديد"},
+        {"term": "Pulsus bisferiens", "definition_ar": "نبض بقمة انقباضية مزدوجة في قلس+تضيق أبهري أو HOCM"},
+        {"term": "Pulsus alternans", "definition_ar": "تباين حجم النبضة نبضة بعد نبضة بنظم منتظم في الفشل المتقدم"},
+        {"term": "Paget's disease", "definition_ar": "مرض باجيت العظمي يسبب نبضاً كبير الحجم عبر تحويلات شريانية وريدية"}
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "cvs_l4_c3_jvp",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "title": "The Jugular Venous Pulse (JVP)",
+      "summary_ar": "النبض الوريدي الوداجي: مكوناته (a, c, v, x, y)، ارتفاعه وعلامة كوسماول، العلامات المرضية في كل حالة (AF، التضيق ثلاثي الشرفات، حصار القلب الكامل).",
+      "sections": [
+        {
+          "heading": "Normal JVP Waveform Components",
+          "body_text": "The **JVP level reflects right atrial pressure** (normally **<7 mmHg / 9 cmH₂O**).\n\n**The normal JVP waveform has two distinct peaks per cardiac cycle:**\n\n- **'a' wave:** corresponds to **right atrial contraction** and occurs **just before the first heart sound**. **In atrial fibrillation the 'a' wave is absent** (no atrial contraction).\n- **'v' wave:** caused by **atrial filling during ventricular systole when the tricuspid valve is closed** — the **peak pressure in the right atrium immediately prior to opening of the tricuspid valve**.\n\n**Descent and other components:**\n\n- **'c' wave:** closure of the tricuspid valve.\n- **'a–x' descent:** due to **downward displacement of the tricuspid ring during systole** (as the right atrium relaxes and the valve plane moves toward the apex).\n- **'v–y' descent:** at the **commencement of ventricular filling** (tricuspid valve opens).\n\n**Abnormal JVP patterns:**\n\n- **Kussmaul's sign:** a **paradoxical RISE of JVP on inspiration** — seen in **pericardial constriction or tamponade, severe right ventricular failure, and restrictive cardiomyopathy**.\n- **Prominent 'a' wave:** caused by **delayed or restricted right ventricular filling**, e.g., **pulmonary hypertension or tricuspid stenosis**.\n- **Cannon waves:** **giant 'a' waves occurring when the right atrium contracts against a closed tricuspid valve**. **Irregular cannon waves** are seen in **complete heart block** due to **atrio-ventricular dissociation**. **Regular cannon waves** occur in **VT and SVT**.\n- **Large systolic 'V' wave: tricuspid regurgitation.**\n- **SVC obstruction:** mechanical obstruction of the superior vena cava (most often caused by **lung cancer**) may cause **extreme, non-pulsatile elevation of the JVP**. Here the JVP **no longer reflects right atrial pressure**.\n\n**Summary of JVP abnormalities by condition:**\n\n- **Heart failure:** elevation, sustained abdomino-jugular (hepato-jugular) reflux >10 seconds\n- **Pulmonary embolism:** elevation\n- **Pericardial effusion:** elevation, prominent 'y' descent\n- **Pericardial constriction:** elevation, Kussmaul's sign\n- **Superior vena cava obstruction:** elevation, loss of pulsation\n- **Atrial fibrillation:** absent 'a' waves\n- **Tricuspid stenosis:** giant 'a' waves\n- **Tricuspid regurgitation:** giant 'v' waves\n- **Complete heart block:** cannon 'a' waves\n\n**Also:** exaggerated x and y descents in constrictive pericarditis; prominent x descent and diminutive y descent in tamponade; enhanced a wave; dominant c-v wave in TR.",
+          "key_points": [
+            "JVP = right atrial pressure, normally <7 cmH₂O above sternal angle; a wave = atrial contraction before S1; v wave = atrial filling against closed tricuspid valve.",
+            "AF: a wave absent; TR: dominant/giant v (c-v) wave; TS: giant a wave; complete heart block: irregular cannon a waves (AV dissociation); regular cannon waves in VT/SVT.",
+            "Kussmaul's sign = JVP rises on inspiration: constriction/tamponade, severe RVF, restrictive cardiomyopathy.",
+            "SVC obstruction (lung cancer): extreme non-pulsatile JVP elevation — no longer reflects RA pressure.",
+            "Pericardial effusion: prominent y descent; constrictive pericarditis: exaggerated x and y descents; tamponade: prominent x with diminutive y.",
+            "Heart failure: elevated JVP with sustained hepato-jugular reflux >10 seconds."
+          ],
+          "check": {
+            "prompt": "A patient's neck veins show giant irregular 'a' waves that come and go unpredictably. The ECG reveals complete heart block. What are these waves called and why do they occur?",
+            "options": [
+              "Cannon 'a' waves — atrial contraction against a closed tricuspid valve due to AV dissociation",
+              "Giant 'v' waves of tricuspid regurgitation",
+              "Kussmaul waves of pericardial constriction",
+              "Normal respiratory variation"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "في الحصار الكامل تنفصل الأذينتان عن البطينين؛ عندما يتقلص الأذين الأيمن صدفةً وثلاثي الشرفات مغلق يرتطم الدم موجِداً موجات a مدفعية غير منتظمة. القلس ثلاثي الشرفات يعطي v عملاقة، وكوسماول ارتفاع JVP بالشهيق."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "JVP", "definition_ar": "ضغط الوريد الوداجي الذي يعكس ضغط الأذين الأيمن"},
+        {"term": "Cannon a waves", "definition_ar": "موجات a عملاقة من تقلص الأذين ضد صمام مغلق في الحصار القلبي الكامل"},
+        {"term": "Kussmaul's sign", "definition_ar": "ارتفاع الضغط الوريدي الوداجي أثناء الشهيق في التضيق والتامponade"},
+        {"term": "Hepato-jugular reflux", "definition_ar": "تورّد الوداجي المستمر بعد ضغط الكبد أكثر من 10 ثوانٍ في فشل القلب"},
+        {"term": "Malar flush", "definition_ar": "احمرار الخدين في التضيق التاجي وفرط الضغط الرئوي"}
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "cvs_l4_c4_heart_sounds_murmurs",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "title": "Heart Sounds, Their Splitting, and Murmur Timing",
+      "summary_ar": "الأصوات القلبية الأولى والثانية والثالثة، انقسام S2 الفيزيولوجي والثابت والعكسي، وشدة S1، والنفخات الانقباضية والانبساطية وتوقيتها مع الدورة القلبية.",
+      "sections": [
+        {
+          "heading": "First and Second Heart Sounds",
+          "body_text": "**Abnormalities of intensity of the FIRST heart sound (S1):**\n\n- **Quiet S1:**\n  - **Low cardiac output**\n  - **Poor left ventricular function**\n  - **Long P–R interval (first-degree heart block)**\n  - **Rheumatic mitral regurgitation**\n\n- **Loud S1:**\n  - **Increased cardiac output**\n  - **Short P–R interval**\n  - **Large stroke volume**\n  - **Atrial myxoma (rare)**\n  - **Mitral stenosis** (mobile valve closing forcefully with high LA pressure)\n\n- **Variable S1:** atrial fibrillation, complete heart block, extrasystoles.\n\n**Abnormalities of the SECOND heart sound (S2) splitting:**\n\nNote: **a single second sound in inspiration is normal in adults** (physiological splitting of up to ~normal degree); a single S2 throughout the respiratory cycle is normal in older adults.\n\n- **Quiet S2:** low cardiac output; **calcific aortic stenosis** (immobile valve); aortic regurgitation.\n\n- **Loud S2:** **systemic hypertension (loud aortic component A2)**; **pulmonary hypertension (loud pulmonary component P2)**.\n\n- **INCREASED (WIDE) splitting of S2 — widens in inspiration (enhanced physiological splitting):**\n  - **Right bundle branch block**\n  - **Pulmonary stenosis**\n  - **Pulmonary hypertension**\n  - (Also right ventricular pacing, VSD with left-to-right shunt.)\n\n- **FIXED splitting of S2 (unaffected by respiration):**\n  - **Atrial septal defect** — a characteristic finding (equalization of right and left atrial volumes abolishes respiratory variation).\n\n- **REVERSED (paradoxical) splitting of S2 — widens in expiration:**\n  - **Aortic stenosis**\n  - **Hypertrophic cardiomyopathy**\n  - **Left bundle branch block**\n  - **Ventricular pacing**\n  - (Left ventricular outflow obstruction and LBBB delay A2 so it closes after P2.)",
+          "key_points": [
+            "Quiet S1: low output, poor LV function, long PR (first-degree block), rheumatic MR. Loud S1: high output, short PR, large stroke volume, atrial myxoma, mitral stenosis. Variable S1: AF, complete heart block, extrasystoles.",
+            "Quiet S2: low output, calcific AS, AR. Loud S2: hypertension (A2), pulmonary hypertension (P2).",
+            "Wide splitting (wider on inspiration): RBBB, pulmonary stenosis, pulmonary hypertension.",
+            "Fixed splitting (unaffected by respiration): atrial septal defect.",
+            "Reversed splitting (wider on expiration): aortic stenosis, HOCM, left bundle branch block, ventricular pacing."
+          ],
+          "check": {
+            "prompt": "A young adult has wide splitting of S2 that does not vary with respiration. What lesion does this suggest?",
+            "options": [
+              "Atrial septal defect",
+              "Left bundle branch block",
+              "Aortic stenosis",
+              "Right bundle branch block"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الانقسام الثابت (لا يتأثر بالتنفس) سمة الحاجز الأذيني ASD: التحويلة تُسوي حجما الأذينين فتزيل التغير التنفسي. RBBB يعطي انقساماً واسعاً يزيد بالشهيق، وLBBB/AS/HOCM انقساماً معكوساً يزيد بالزفير."
+          }
+        },
+        {
+          "heading": "Third Heart Sound and Innocent Murmurs",
+          "body_text": "**Causes of a third heart sound (S3):**\n\n- **Physiological:**\n  - Healthy young adults\n  - Pregnancy\n  - Athletes\n  - Fever\n\n- **Pathological:**\n  - **Large, poorly contracting left ventricle** (dilated cardiomyopathy, heart failure)\n  - **Mitral regurgitation** (rapid filling of the LV from the LA)\n\n**Features of a benign (innocent) heart murmur:**\n\n- **Soft**\n- **No radiation**\n- **Mid-systolic**\n- **No other cardiac abnormalities**\n- **Heard at left sternal edge**",
+          "key_points": [
+            "S3 physiological: young adults, pregnancy, athletes, fever.",
+            "S3 pathological: large poorly contracting LV (DCM/HF), mitral regurgitation.",
+            "Innocent murmur: soft, mid-systolic, left sternal edge, no radiation, no other cardiac abnormalities."
+          ]
+        },
+        {
+          "heading": "Systolic and Diastolic Murmurs — Timing and Features",
+          "body_text": "**Common systolic murmurs:**\n\n- **Aortic stenosis:** mid-systolic, loud, rasping; base and left sternal edge, radiating to suprasternal notch and carotids; **single second heart sound; ejection click (in young patients); slow-rising pulse; LVH (pressure overload)**.\n- **Mitral regurgitation:** pansystolic, blowing; apex, radiating to axilla; **soft first heart sound; third heart sound; LVH (volume overload)**.\n- **Ventricular septal defect:** pansystolic, harsh; lower left sternal edge, radiating to whole precordium; **thrill; biventricular hypertrophy**.\n- **Benign (innocent):** mid-systolic, soft; left sternal edge, no radiation; no other signs of heart disease.\n\n**Timing and pattern of murmurs relative to the cardiac cycle:**\n\n- **Ejection systolic murmur:** aortic stenosis, pulmonary stenosis, aortic or pulmonary flow murmurs.\n- **Pansystolic murmur:** mitral regurgitation, tricuspid regurgitation, ventricular septal defect.\n- **Late systolic murmur (with click):** mitral valve prolapse.\n- **Early diastolic murmur:** aortic or pulmonary regurgitation.\n- **Mid-diastolic murmur (with opening snap):** mitral stenosis; also tricuspid stenosis, mitral/tricuspid flow murmurs.\n- **Clicks:** mid-systolic click, ejection click, or opening snap of aortic/mitral prosthesis.\n\n**DIastolic murmurs are always pathological: MS, AR, TS, PR.**",
+          "key_points": [
+            "AS murmur: mid-systolic, loud rasping, radiates to carotids with single S2, slow-rising pulse, LVH pressure overload.",
+            "MR murmur: pansystolic blowing, apex to axilla, soft S1, S3, LVH volume overload.",
+            "VSD murmur: pansystolic harsh, lower left sternal edge to whole precordium, thrill, biventricular hypertrophy.",
+            "Murmur timing: ejection systolic (AS/PS), pansystolic (MR/TR/VSD), late systolic click (MVP), early diastolic (AR/PR), mid-diastolic with opening snap (MS/TS).",
+            "Diastolic murmurs are always pathological: MS, AR, TS, PR."
+          ],
+          "check": {
+            "prompt": "Which of the following murmurs is classically pansystolic and radiates to the whole precordium with a thrill?",
+            "options": [
+              "Ventricular septal defect",
+              "Innocent flow murmur",
+              "Mitral stenosis",
+              "Aortic regurgitation"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عيب الحاجز البطيني: نفخة شاملة قاسية أسفل الحد الأيسر للقص تشع لكامل أمام الصدر مع نفحة وضخم حجرتين. التضيق التاجي نفخة انبساطية متوسطة، والقلس الأبهري انبساطية مبكرة، والبريئة قذفية رقيقة موضعية."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Fixed splitting", "definition_ar": "انقسام ثابت لS2 لا يتغير بالتنفس — سمة الحاجز الأذيني"},
+        {"term": "Reversed splitting", "definition_ar": "انقسام معكوس يزيد بالزفير في تضيق الأبهر وLBBB"},
+        {"term": "Opening snap", "definition_ar": "صوت انفتاح الصمام التاجي المتضيق في بداية النفخة الانبساطية"},
+        {"term": "Pansystolic murmur", "definition_ar": "نفخة تشمل الانقباض كله كقلس التاجي وVSD"},
+        {"term": "Innocent murmur", "definition_ar": "نفخة حميدة رقيقة قذفية بلا علامات مرض قلبي"}
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "cvs_l4_fc1",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c1_general_appearance_respiration_bp",
+      "card_type": "basic",
+      "front_text": "Define pulsus paradoxus and list its four causes.",
+      "back_text": "An exaggerated fall in systolic BP during inspiration — more than 10 mmHg fall. Causes: 1. Cardiac tamponade 2. COPD 3. Acute severe bronchial asthma 4. Constrictive pericarditis.",
+      "mnemonic_ar": "نبض مفارق: تامponade، COPD، ربو حاد، تأمور ضاغط.",
+      "explanation_ar": "هبوط ضغط انقباضي يتجاوز 10 مم زئبق أثناء الشهيق — الأسباب الأربعة الكلاسيكية فوق.",
+      "is_vivid": false,
+      "tags": ["pulsus paradoxus"]
+    },
+    {
+      "id": "cvs_l4_fc2",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c1_general_appearance_respiration_bp",
+      "card_type": "basic",
+      "front_text": "What are the causes of asymmetric arm blood pressures and of leg pressure LOWER than arm pressure?",
+      "back_text": "Arm asymmetry: obstructive arterial disease (most commonly atherosclerosis), aortic dissection, Takayasu disease, coarctation of the aorta.\nLeg pressure lower than arm: abdominal aortic, iliac, or femoral arterial disease (and coarctation — with radio-femoral delay).",
+      "explanation_ar": "عدم تساوي الذراعين: تصلب، تسلخ، تاكاياسو، تضيق برزخ. ضغط الساق أدنى: مرض أبهر بطني أو حرقفي أو فخذي.",
+      "is_vivid": false,
+      "tags": ["blood pressure"]
+    },
+    {
+      "id": "cvs_l4_fc3",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c1_general_appearance_respiration_bp",
+      "card_type": "basic",
+      "front_text": "What is Hill's sign?",
+      "back_text": "Leg (lower extremity) systolic pressure more than 20 mmHg HIGHER than arm pressure — found in significant aortic regurgitation (reversal of the normal 10–20 mmHg arm–leg gradient).",
+      "explanation_ar": "ضغط الساق أعلى من الذراع بأكثر من 20 مم زئبق = قلس أبهري مهم.",
+      "is_vivid": false,
+      "tags": ["Hill's sign", "AR"]
+    },
+    {
+      "id": "cvs_l4_fc4",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c2_pulse_exam",
+      "card_type": "basic",
+      "front_text": "Match the pulse character: collapsing, parvus et tardus, bisferiens, alternans, paradoxus.",
+      "back_text": "Collapsing (early peak, rapid descent, wide PP >80 mmHg): severe aortic regurgitation — exaggerated by raising the arm.\nParvus et tardus (slow upstroke, reduced late peak): severe aortic stenosis.\nBisferiens (double systolic peak with mid-systolic dip): aortic regurgitation ± concomitant AS; HOCM.\nAlternans (beat-to-beat volume variation, regular rhythm): advanced heart failure / severe LVF (and AF).\nParadoxus (>10 mmHg inspiratory fall): cardiac tamponade.",
+      "explanation_ar": "ساقط=قلس أبهري شديد؛ بطيء صاعد=تضيق أبهري شديد؛ ثنائي=قلس مع تضيق أوHOCM؛ متناوب=فشل متقدم؛ مفارق=تامponade.",
+      "is_vivid": false,
+      "tags": ["pulse characters"]
+    },
+    {
+      "id": "cvs_l4_fc5",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c3_jvp",
+      "card_type": "basic",
+      "front_text": "What happens to the 'a' wave of the JVP in atrial fibrillation, and what causes cannon a waves?",
+      "back_text": "In atrial fibrillation the 'a' wave is ABSENT (no atrial contraction). Cannon (giant) 'a' waves occur when the right atrium contracts against a closed tricuspid valve: IRREGULAR cannon waves in complete heart block (AV dissociation); REGULAR cannon waves in VT and SVT.",
+      "explanation_ar": "AF يفقد موجة a؛ موجات مدفعية غير منتظمة = حصار كامل؛ منتظمة = VT/SVT.",
+      "is_vivid": false,
+      "tags": ["JVP"]
+    },
+    {
+      "id": "cvs_l4_fc6",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c3_jvp",
+      "card_type": "basic",
+      "front_text": "Define Kussmaul's sign and its causes.",
+      "back_text": "A paradoxical RISE of the JVP on inspiration (the JVP normally falls). Seen in pericardial constriction or tamponade, severe right ventricular failure, and restrictive cardiomyopathy. Distinct from pulsus paradoxus (which is the inspiratory BP fall).",
+      "explanation_ar": "ارتفاع الوداجي بالشهيق بدل هبوطه — في التأمور الضاغط/المتضيق وفشل البطين الأيمن الشديد واعتلال القلب التقييدي.",
+      "is_vivid": false,
+      "tags": ["Kussmaul"]
+    },
+    {
+      "id": "cvs_l4_fc7",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c3_jvp",
+      "card_type": "basic",
+      "front_text": "What does an extreme, non-pulsatile elevated JVP indicate?",
+      "back_text": "Mechanical obstruction of the superior vena cava — most often caused by lung cancer. In this case the JVP NO LONGER reflects right atrial pressure (no pulsation transmitted).",
+      "explanation_ar": "انسداد الوريد الأجوف العلوي (غالباً بسرطان الرئة): تورّد أعظمي غير نابض لا يعكس ضغط الأذين الأيمن.",
+      "is_vivid": false,
+      "tags": ["SVC obstruction"]
+    },
+    {
+      "id": "cvs_l4_fc8",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c4_heart_sounds_murmurs",
+      "card_type": "basic",
+      "front_text": "What causes wide vs fixed vs reversed splitting of the second heart sound?",
+      "back_text": "WIDE splitting (widens with inspiration): right bundle branch block, pulmonary stenosis, pulmonary hypertension.\nFIXED splitting (unaffected by respiration): atrial septal defect — characteristic.\nREVERSED splitting (widens with expiration): aortic stenosis, hypertrophic cardiomyopathy, left bundle branch block, ventricular pacing.",
+      "mnemonic_ar": "واسع=RBBB/تضيق رئوي؛ ثابت=ASD؛ معكوس=AS/HOCM/LBBB.",
+      "explanation_ar": "الانقسامات الثلاثة ومسبباتها كما في الجواب — والثابت علامة ASD المميزة.",
+      "is_vivid": false,
+      "tags": ["S2 splitting"]
+    },
+    {
+      "id": "cvs_l4_fc9",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c4_heart_sounds_murmurs",
+      "card_type": "basic",
+      "front_text": "List the causes of a quiet S1, a loud S1, and physiological vs pathological S3.",
+      "back_text": "Quiet S1: low cardiac output, poor LV function, long PR interval (first-degree AVB), rheumatic MR.\nLoud S1: increased cardiac output, short PR interval, large stroke volume, atrial myxoma, mitral stenosis.\nS3 physiological: young adults, pregnancy, athletes, fever. S3 pathological: large poorly contracting LV (DCM/HF), mitral regurgitation.",
+      "explanation_ar": "S1 خافت: نتاج منخفض، ضعف بطين، PR طويل، قلس رثوي. S1 عالٍ: نتاج عالٍ، PR قصير، حجم ضربة كبير، مخاطomy، تضيق تاجي. S3 فسيولوجي في الشباب والحمل والرياضيين والحمى؛ مرضي في البطين المتمدد المتراخي والقلس التاجي.",
+      "is_vivid": false,
+      "tags": ["heart sounds"]
+    },
+    {
+      "id": "cvs_l4_fc10",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c4_heart_sounds_murmurs",
+      "card_type": "basic",
+      "front_text": "Which murmurs are always pathological, and which four lesions cause them?",
+      "back_text": "All DIASTOLIC murmurs are pathological. The four classic diastolic murmurs: MS (mitral stenosis), AR (aortic regurgitation), TS (tricuspid stenosis), PR (pulmonary regurgitation).",
+      "mnemonic_ar": "النفخات الانبساطية دائماً مرضية: MS، AR، TS، PR.",
+      "explanation_ar": "لا توجد نفخة انبساطية بريئة — أربع آفات فقط تصنعها: التضيق التاجي، القلس الأبهري، التضيق الثلاثي، والقلس الرئوي.",
+      "is_vivid": false,
+      "tags": ["diastolic murmurs"]
+    },
+    {
+      "id": "cvs_l4_fc11",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c4_heart_sounds_murmurs",
+      "card_type": "basic",
+      "front_text": "What are the five features of an innocent (benign) heart murmur?",
+      "back_text": "1. Soft\n2. No radiation\n3. Mid-systolic\n4. No other cardiac abnormalities\n5. Heard at the left sternal edge.",
+      "mnemonic_ar": "بريئة: رقيقة، بلا تشع، منتصف انقباض، بلا علامات أخرى، عند الحد الأيسر للقص.",
+      "explanation_ar": "خمس خصائص تحدد النفخة الحميدة وتطمئن الأهل والمريض.",
+      "is_vivid": false,
+      "tags": ["innocent murmur"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "cvs_l4_mcq1",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c1_general_appearance_respiration_bp",
+      "question_stem": "A 22-year-old man presents with acute severe asthma. On examination his systolic BP is 118 mmHg during expiration but drops to 96 mmHg during inspiration. What is this finding and its mechanism?",
+      "options": [
+        "Pulsus paradoxus from exaggerated inspiratory reduction in LV stroke volume due to markedly negative intrathoracic pressure",
+        "Hill's sign from aortic regurgitation",
+        "Kussmaul's sign of constrictive pericarditis",
+        "Pulsus alternans from advanced heart failure"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هبوط 22 مم زئبق مع الشهيق = نبض مفارق؛ في الربو الحاد يزيد الضغط داخل الصدر السلبي احتقان الدم بالرئة فيقل امتلاء البطين الأيسر وضربته. علامة هيل تتعلق بضغط الساقين، وكوسماول علامة وداجية، والمتناوب تناوب حجم بين ضربتين.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Quantify: >10 mmHg inspiratory fall",
+        "Severe airflow obstruction generates very negative intrathoracic pressure",
+        "LV filling falls with pulmonary blood pooling"
+      ],
+      "focus_sections": [1]
+    },
+    {
+      "id": "cvs_l4_mcq2",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c3_jvp",
+      "question_stem": "A 70-year-old man with lung cancer has grossly distended, non-pulsatile neck veins with facial plethora. His blood pressure and heart sounds are normal. What does the JVP reflect here?",
+      "options": [
+        "Right atrial pressure as usual",
+        "Superior vena cava obstruction — the JVP no longer reflects right atrial pressure",
+        "Tricuspid regurgitation with giant v waves",
+        "Complete heart block with cannon a waves"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "انصباب الوريد الأجوف العلوي (غالباً بسرطان الرئة) يسبب تورداً أعظمياً غير نابض لا يعكس ضغط الأذين الأيمن — والنابضية المفقودة مفتاح التفريق عن ارتفاع الضغط الأذيني.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Non-pulsatile and extreme elevation",
+        "Lung cancer compresses the SVC",
+        "JVP normally transmits RA pulsation"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l4_mcq3",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "concept_id": "cvs_l4_c4_heart_sounds_murmurs",
+      "question_stem": "An 18-year-old asymptomatic woman is found on routine exam to have wide splitting of S2 that does not change with respiration, and a soft mid-systolic flow murmur at the left sternal edge. What is the most likely diagnosis?",
+      "options": [
+        "Atrial septal defect",
+        "Right bundle branch block",
+        "Left bundle branch block",
+        "Ventricular septal defect"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الانقسام الثابت غير المتغير بالتنفس سمة ASD المميزة (تسوية حجما الأذينين عبر الحاجز المعيب). RBBB يوسع الانقسام لكنه يتغير بالشهيق، وLBBB يعطي انقساماً معكوساً، وVSD نفخة شاملة مع نفحة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Fixed splitting = equalized atrial volumes",
+        "Young, asymptomatic with flow murmur",
+        "ASD shunts at the atrial level"
+      ],
+      "focus_sections": [0]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "cvs_l4_case1",
+      "lecture_id": "cvs_l4_clinical_examination",
+      "title": "The Stab Wrist: Reading Tamponade at the Bedside",
+      "scenario": "A 24-year-old man is brought by ambulance after a stab wound to the left chest. He is pale, agitated, and gasping. The trauma team calls for an urgent bedside cardiovascular examination to guide the next move.",
+      "vignette": {
+        "age": 24,
+        "sex": "male",
+        "chief_complaint": "Chest stab wound with breathlessness and near-syncope",
+        "history": "Stab wound 40 minutes ago at the left fourth intercostal space, 3 cm from sternal edge; no prior medical history; rapid deterioration en route.",
+        "vitals": {
+          "bp": "82/60 mmHg (expiratory) falling to 66 mmHg (inspiratory)",
+          "hr": "128 bpm",
+          "rr": "30/min shallow",
+          "temp": "36.1 C",
+          "spo2": "92% on 15L oxygen"
+        },
+        "exam": "Neck veins grossly distended and pulsatile. Heart sounds muffled and distant. Apex beat impalable. Chest wound 2 cm, no active bleeding, no surgical emphysema; trachea midline; breath sounds equal bilaterally. Pulsus paradoxus present (>10 mmHg inspiratory fall). No murmurs.",
+        "labs": [
+          {"name": "Hemoglobin", "value": "13.9 g/dL (ref 13.5–17.5)", "flag": "normal"},
+          {"name": "Lactate", "value": "4.8 mmol/L (ref 0.5–2.2)", "flag": "high"},
+          {"name": "Bedside troponin", "value": "Not yet available", "flag": "normal"}
+        ],
+        "imaging": "Focused ultrasound (FAST): large pericardial effusion with right ventricular diastolic collapse and IVC plethoric."
+      },
+      "steps": [
+        {
+          "id": "cvs_l4_case1_s1",
+          "prompt": "What is the bedside diagnosis?",
+          "options": [
+            "Tension pneumothorax",
+            "Cardiac tamponade from hemopericardium",
+            "Massive hemothorax",
+            "Aortic dissection"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تورّد وداجي + أصوات قلبية بعيدة + هبوط ضغط = ثالوث بيك للتامponade؛ مع سابقة طعنة صدر قرب القص ونبض مفارق وخروج انبساطي للبطين الأيمن بالأمواج فوق الصوتية. لا انزياح رغامى ولا أصوات تنفسية غائبة (ينفي الاسترواح الضاغط)، ولا نخفاض ضخيم بالصوت (نافي للنزف الصدري الكتلة).",
+          "xp": 10,
+          "hints": [
+            "Beck triad: hypotension, distended neck veins, muffled heart sounds",
+            "Stab wound medial to midclavicular line threatens the pericardium",
+            "Pulsus paradoxus is present"
+          ]
+        },
+        {
+          "id": "cvs_l4_case1_s2",
+          "prompt": "Why does the systolic BP fall by more than 10 mmHg during inspiration in this patient (pulsus paradoxus)?",
+          "options": [
+            "Blood pools in the pulmonary veins during inspiration while the tense pericardium prevents RV and LV filling compensation",
+            "The left ventricle infarcts acutely",
+            "The aortic valve regurgitates during inspiration",
+            "Systemic vasodilation from sepsis"
+            ],
+          "correct_index": 0,
+          "explanation_ar": "في التامponade يزداد امتلاء البطين الأيمن بالشهيق فيتوتر البروتنيوم فيزيائياً ويقسم الحاجز نحو الأيسر فيقل امتلاء الأيسر وضربته فيهبط الضغط الانقباضي >10مم — أما الأسباب الأخرى فلا تربط بالشهيق.",
+          "xp": 10,
+          "hints": [
+            "Pericardial sac is a fixed space",
+            "Inspiration normally pools blood in lungs",
+            "Tamponade exaggerates the normal inspiratory BP fall"
+          ]
+        },
+        {
+          "id": "cvs_l4_case1_s3",
+          "prompt": "What is the immediate management?",
+          "options": [
+            "Urgent pericardiocentesis and simultaneous surgical consult for cardiac wound repair",
+            "CT chest with contrast first",
+            "Empiric antibiotics and observation",
+            "Chest tube insertion at the 5th intercostal space"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "النزح التأموري الفوري (pericardiocentesis) جنب إنعاش بالسوائل بحذر هو جسر الإنقاذ، مع استدعاء جراحة قلب فوري لأن الطعنة جراحية وتحتاج ترميم. CT يؤخر العلاج القاتل بالتأخير، والمضادات لا تعالج النزف، وأنبوب الصدر علاج الاسترواح/النزف الصدري وليس التامponade.",
+          "xp": 12,
+          "hints": [
+            "Diagnosis is clinical + bedside ultrasound",
+            "Drain the pericardial sac now",
+            "Penetrating cardiac injury needs a surgeon"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: تامponade قلبي بنزف تأموري بعد طعنة نافذة للصدر. الدروس المستفادة: (١) ثالوث بيك (هبوط ضغط + تورد وداجي + أصوات قلبية بعيدة) مع قصة رض نافذ يشخّص سريرياً — لا تنتظر التصوير. (٢) النبض المفارق (هبوط >10 مم زئبق بالشهيق) يعكس التنافس بين البطينين داخل البروتنيوم المشدود: امتلاء الأيمن بالشهيق يزيح الحاجز ويقلل امتلاء الأيسر. (٣) الأمواج فوق الصوتية السريرية (RV diastolic collapse، IVC ممتلئ) تؤكد فوراً. (٤) العلاج: نزح تأموري فوري جسراً مع إصلاح جراحي نهائي — والتذكر بأن كوسماول (ارتفاع الوداجي بالشهيق) يظهر في التأمور الضاغط المزمن وليس بالضرورة هنا.",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

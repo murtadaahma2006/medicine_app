@@ -1,0 +1,434 @@
+الدور والسياق:
+أنت بروفيسور استشاري في الطب الباطني ومهندس بيانات طبية محترف. سأقوم برفع محاضات طبية لك. مهمتك هي استخراج محتوى هذه المحاضرات بالكامل وبالترتيب بدقة متناهية (Zero Data Loss) وتحويلها إلى هياكل بيانات JSON صارم  (لا اريد كل المحاضرات في ملف JSON واحد, اريد كل محاضرة على حدة), مخصص لطالب طب في المرحلة الرابعة يستعد للامتحانات السريرية والنظرية.
+
+قواعد استخراج البيانات (Data Parsing Rules):
+
+الشمولية المطلقة (Zero Omission Policy): هذا هو الشرط الأهم! الطالب سيعتمد على مخرجاتك بنسبة 100% ولن يعود لقراءة ملف الـ PDF الأصلي أبداً. يُمنع منعاً باتاً تلخيص أو اختصار المحاضرة. يجب نقل كامل المحتوى الأكاديمي، كل الأسباب، كل الأعراض، كل التفاصيل الدقيقة، وكل بروتوكولات العلاج إلى مصفوفة concepts. لا تترك أي معلومة مهما بدت صغيرة أو ثانوية. انتبه بشدة للمعلومات المخفية في الصور، الجداول، والمخططات الخوارزمية (Algorithms) وقم بتحويلها إلى نصوص أو قوائم نقطية داخل الشروحات.
+
+الحقول الجديدة (حاسمة):
+
+يجب أن تكون قيمة حقل "specialty" هي "internal_medicine" دائماً.
+
+حقل "golden_tip": استخرج أهم 'فخ امتحاني' (Exam Trap) أو 'لؤلؤة سريرية' (Clinical Pearl) شديدة الأهمية ذُكرت في المحاضرة (مثل عرض جانبي خطير لدواء، أو علامة سريرية مميزة pathognomonic). اكتبها بأسلوب تحذيري أو نصيحة ذهبية.
+
+قاعدة اللغة (صارمة جداً):
+لغة المحتوى الأكاديمي الأساسية هي الإنجليزية. كل الحقول (الأسئلة، الخيارات، الحالات السريرية، الأعراض، والمفاهيم) يجب أن تُكتب باللغة الإنجليزية الأكاديمية السليمة.
+الاستثناء الوحيد: يُسمح باستخدام اللغة العربية فقط في الحقول التي تنتهي بلاحقة _ar (مثل: explanation_ar، summary_ar، debriefing_ar، و definition_ar).
+
+توجيهات صناعة المحتوى السريري (Content Engineering):
+
+المفاهيم المطولة (Concepts): كما ذكرنا، هنا تضع كامل المحاضرة بدون أي اختصار. قسّم المحاضرة منطقياً (مثلاً: Pathophysiology, Clinical Features, Diagnostics, Management). استخدم التنسيق النصي الواضح (قوائم نقطية، نصوص عريضة) لتسهيل القراءة والمذاكرة المطولة.
+
+البطاقات الاسترجاعية (Flashcards): صممها لتكون (High-Yield Facts). السؤال يجب أن يكون قصيراً ومباشراً، والجواب محدد وواضح لخدمة الاسترجاع السريع.
+
+أسئلة الخيارات المتعددة (MCQs): لا تضع أسئلة سطحية. اصنع أسئلة تعتمد على سيناريوهات سريرية (Clinical Scenarios) تحاكي امتحانات البورد. في حقل explanation_ar، اشرح لماذا الخيار الصحيح هو الأنسب، ولماذا الخيارات الأخرى خاطئة (Rule-outs).
+
+الحالات السريرية (Clinical Cases): ألف حالة سريرية واحدة على الأقل استناداً لأهم مرض في المحاضرة. املأ الـ vignette ببيانات مريض واقعية، علامات حيوية (Vitals)، ونتائج مختبرية حقيقية (Labs مع ذكر الـ Reference ranges). اجعل خطوات الحالة (steps) متسلسلة منطقياً: (الخطوة 1: التشخيص الأولي/التفريقي ⬅️ الخطوة 2: الفحص التأكيدي ⬅️ الخطوة 3: الإدارة العلاجية Management).
+
+تنسيق المخرجات (Output Constraints):
+أريد الرد النهائي أن يكون فقط كود JSON صالح (Valid JSON) وجاهز للنسخ تماماً، بدون أي حرف أو شروحات نصية أو تحيات قبله أو بعده. تأكد من صحة الفواصل (Commas) وتنسيق الأقواس لتجنب أخطاء الـ Parsing.
+
+إليك هيكل الـ JSON (Schema) الذي يجب أن تملأ البيانات بناءً عليه:
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://medicine-app.local/schemas/medical_lecture.schema.json",
+  "title": "Medical Lecture Content (Internal Medicine)",
+  "description": "العقد النهائي بين خط استخراج PDF والتطبيق — v2.0.0. لغة المحتوى الأساسية: الإنجليزية. الحقول المحايدة (front_text, question_stem...) إنجليزية دائماً؛ فقط الحقول المساعدة المسماة *_ar عربية.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "lecture", "concepts", "flashcards", "mcqs", "clinical_cases"],
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0"
+    },
+    "lecture": { "$ref": "#/$defs/lecture" },
+    "concepts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/concept" }
+    },
+    "flashcards": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/flashcard" }
+    },
+    "mcqs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/mcq" }
+    },
+    "clinical_cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/clinical_case" }
+    }
+  },
+  "$defs": {
+    "lecture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "module", "system", "source", "order_index"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "معرف المحاضرة — فريد عالمياً وثابت"
+        },
+        "specialty": {
+          "enum": ["internal_medicine", "surgery", "obgyn"],
+          "description": "v2.3 اختياري — التخصص السريري الأب. الافتراضي internal_medicine (كل الملفات القديمة صالحة بلا تغيير)."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3,
+          "description": "عنوان المحاضرة بالإنجليزية"
+        },
+        "module": {
+          "enum": [
+            "cardiology", "pulmonology", "nephrology", "gastroenterology",
+            "endocrinology", "hematology", "infectious", "rheumatology",
+            "neurology", "oncology"
+          ]
+        },
+        "system": {
+          "enum": [
+            "cardiovascular", "respiratory", "renal", "gastrointestinal",
+            "endocrine", "immune", "nervous", "musculoskeletal",
+            "hematologic", "integumentary"
+          ]
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["file_name", "page_count"],
+          "properties": {
+            "file_name": { "type": "string", "minLength": 5 },
+            "page_count": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "order_index": { "type": "integer", "minimum": 0 },
+        "golden_tip": {
+          "description": "v2.2 اختياري — أهم معلومة أو فخ امتحاني في المحاضرة (لؤلؤة اليوم في ويدجت الشاشة الرئيسية). نص واحد أو عدة نصوص.",
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 280,
+              "description": "لؤلؤة واحدة — إنجليزية أو عربية"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 10,
+              "items": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 280
+              }
+            }
+          ]
+        }
+      }
+    },
+    "concept": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lecture_id", "title", "sections", "difficulty", "order_index"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "lecture_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "title": {
+          "type": "string",
+          "minLength": 3,
+          "description": "عنوان الشرح بالإنجليزية"
+        },
+        "summary_ar": {
+          "type": "string",
+          "description": "ملخص عربي اختياري يظهر في البطاقة التمهيدية"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["heading", "body_text"],
+            "properties": {
+              "heading": {
+                "type": "string",
+                "minLength": 3,
+                "description": "عنوان القسم بالإنجليزية"
+              },
+              "body_text": {
+                "type": "string",
+                "minLength": 100,
+                "description": "نص الشرح بالإنجليزية — Markdown مبسط بلا HTML أو روابط"
+              },
+              "key_points": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "نقاط مفتاحية بالإنجليزية"
+              },
+              "check": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["prompt", "options", "correct_index"],
+                "description": "v2.1 اختياري — سؤال اعتراضي مدمج في القسم (نقطة اعتراض القارئ)",
+                "properties": {
+                  "prompt": { "type": "string", "minLength": 10 },
+                  "options": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 5,
+                    "items": { "type": "string", "minLength": 1 }
+                  },
+                  "correct_index": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "explanation_ar": { "type": "string", "minLength": 10 }
+                }
+              }
+            }
+          }
+        },
+        "key_terms": {
+          "type": "array",
+          "description": "مسرد المصطلحات — term إنجليزي + شرح عربي مساعد",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["term", "definition_ar"],
+            "properties": {
+              "term": { "type": "string", "minLength": 2 },
+              "definition_ar": { "type": "string", "minLength": 5 }
+            }
+          }
+        },
+        "difficulty": { "enum": ["core", "advanced"] },
+        "order_index": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "flashcard": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lecture_id", "card_type", "front_text", "back_text"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "lecture_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "concept_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "card_type": {
+          "enum": ["basic"],
+          "description": "v2.0: basic فقط — reverse و case_anchored محجوزان"
+        },
+        "front_text": {
+          "type": "string",
+          "minLength": 10,
+          "description": "سؤال استرجاعي بالإنجليزية"
+        },
+        "back_text": {
+          "type": "string",
+          "minLength": 20,
+          "description": "إجابة تفصيلية بالإنجليزية"
+        },
+        "mnemonic_ar": {
+          "type": "string",
+          "description": "حيلة حفظ عربية اختيارية"
+        },
+        "explanation_ar": {
+          "type": "string",
+          "description": "شرح عربي مساعد اختياري يظهر بعد قلب البطاقة"
+        },
+        "is_vivid": {
+          "type": "boolean",
+          "description": "v2.1 اختياري — بطاقة ذات قصة/مفاجأة (نقطة قطع Cliffhanger عند الذروة)"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "mcq": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lecture_id", "question_stem", "options", "correct_index", "explanation_ar", "difficulty", "clinical_vignette"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "lecture_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "concept_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "question_stem": {
+          "type": "string",
+          "minLength": 30,
+          "description": "نص السؤال بالإنجليزية (سيناريو سريري كامل إن كان clinical_vignette=true)"
+        },
+        "options": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": { "type": "string", "minLength": 1 },
+          "description": "مصفوفة نصوص مباشرة — بالإنجليزية"
+        },
+        "correct_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4,
+          "description": "موقع الإجابة الصحيحة في مصفوفة options — صفري الأساس (0 = الخيار الأول)"
+        },
+        "explanation_ar": {
+          "type": "string",
+          "minLength": 30,
+          "description": "شرح عربي للجواب الصحيح ولماذا البدائل خطأ"
+        },
+        "difficulty": { "enum": ["core", "advanced"] },
+        "clinical_vignette": { "type": "boolean" },
+        "hints": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "type": "string", "minLength": 3 },
+          "description": "v2.1 اختياري — جسر التلميح التدريجي (70%/40%/10% XP)"
+        },
+        "focus_sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "integer", "minimum": 0 },
+          "description": "v2.1 اختياري — فهارس الأقسام التي تجيب السؤال (تمييز «هنا كان خطؤك» في القارئ)"
+        }
+      }
+    },
+    "clinical_case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "lecture_id", "title", "scenario", "vignette", "steps", "debriefing_ar", "difficulty", "order_index"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "lecture_id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+        "title": {
+          "type": "string",
+          "minLength": 3,
+          "description": "عنوان الحالة بالإنجليزية"
+        },
+        "scenario": {
+          "type": "string",
+          "minLength": 50,
+          "description": "الفقرة الافتتاحية السردية بالإنجليزية"
+        },
+        "vignette": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["age", "sex", "chief_complaint", "history", "exam"],
+          "properties": {
+            "age": { "type": "integer", "minimum": 1, "maximum": 120 },
+            "sex": { "enum": ["male", "female"] },
+            "chief_complaint": { "type": "string", "minLength": 5 },
+            "history": {
+              "type": "string",
+              "description": "التاريخ المرضي بالإنجليزية"
+            },
+            "vitals": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "bp": { "type": "string" },
+                "hr": { "type": "string" },
+                "rr": { "type": "string" },
+                "temp": { "type": "string" },
+                "spo2": { "type": "string" }
+              }
+            },
+            "exam": {
+              "type": "string",
+              "description": "فحص جسدي بالإنجليزية"
+            },
+            "labs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["name", "value", "flag"],
+                "properties": {
+                  "name": { "type": "string" },
+                  "value": { "type": "string" },
+                  "flag": { "enum": ["normal", "high", "low", "critical"] }
+                }
+              }
+            },
+            "imaging": {
+              "type": "string",
+              "description": "نتائج التصوير بالإنجليزية"
+            }
+          }
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "prompt", "options", "correct_index", "explanation_ar"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]+$" },
+              "prompt": {
+                "type": "string",
+                "minLength": 10,
+                "description": "سؤال القرار السريري بالإنجليزية"
+              },
+              "options": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 5,
+                "items": { "type": "string", "minLength": 1 },
+                "description": "مصفوفة نصوص مباشرة — بالإنجليزية"
+              },
+              "correct_index": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4,
+                "description": "صفري الأساس (0 = الخيار الأول)"
+              },
+              "explanation_ar": {
+                "type": "string",
+                "minLength": 20,
+                "description": "شرح عربي لهذا القرار"
+              },
+              "xp": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 20,
+                "default": 5
+              },
+              "hints": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": { "type": "string", "minLength": 3 },
+                "description": "v2.1 اختياري — جسر التلميح التدريجي"
+              }
+            }
+          }
+        },
+        "debriefing_ar": {
+          "type": "string",
+          "minLength": 80,
+          "description": "التشخيص النهائي والدروس المستفادة — بالعربية"
+        },
+        "difficulty": { "enum": ["core", "advanced"] },
+        "order_index": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

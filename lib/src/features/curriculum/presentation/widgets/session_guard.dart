@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/utils/responsive_layout.dart';
 import '../../../../theme/tokens.dart';
 
 /// ─────────────────────────────────────────────────────────────────────
@@ -27,15 +28,8 @@ class SessionGuard {
   }) async {
     final bool? stay = await showDialog<bool>(
       context: context,
-      builder: (BuildContext ctx) => AlertDialog(
-        backgroundColor:
-            AppColors.surface(Theme.of(ctx).colorScheme.brightness),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppRadius.sheet),
-          side: BorderSide(
-            color: AppColors.border(Theme.of(ctx).colorScheme.brightness),
-          ),
-        ),
+      // تجاوب: على التابلت يُقيد عرض الحوار (موبايل: بلا أثر).
+      builder: (BuildContext ctx) => ResponsiveDialog(
         title: Text(
           remaining <= 0
               ? 'لقطة واحدة تفصلك عن الإكمال!'
@@ -55,7 +49,6 @@ class SessionGuard {
                 Theme.of(ctx).colorScheme.brightness),
           ),
         ),
-        actionsAlignment: MainAxisAlignment.spaceEvenly,
         actions: <Widget>[
           // البقاء هو الفعل الكبير البصري.
           FilledButton(

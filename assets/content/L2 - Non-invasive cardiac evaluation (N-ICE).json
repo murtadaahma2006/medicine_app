@@ -1,0 +1,622 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "cvs_l2_non_invasive_cardiac_evaluation",
+    "specialty": "internal_medicine",
+    "title": "Non-Invasive Cardiac Evaluation (N-ICE)",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L2 N-ICE.pdf",
+      "page_count": 38
+    },
+    "tags": ["exercise ECG", "treadmill test", "Holter", "BNP", "troponin", "chest X-ray", "echocardiography", "CT", "MRI"],
+    "order_index": 1,
+    "golden_tip": [
+      "Exercise ECG is POSITIVE if angina occurs, BP falls or fails to increase, or ST shifts >1 mm — but stress testing is CONTRAINDICATED in ACS, decompensated heart failure, severe hypertension, and arrhythmias.",
+      "Exercise-induced hypotension (a fall in BP) during a treadmill test is a HIGH-RISK finding — it signals severe ischemia or left main disease; never keep exercising such a patient."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "cvs_l2_c1_exercise_ecg",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Exercise ECG Test (Treadmill Test)",
+      "summary_ar": "اختبار جهد القلب (المشي المتحرك): دواعيه، معايير الاختبار الإيجابي، النتائج العالية الخطورة، وموانع الاستعمال.",
+      "sections": [
+        {
+          "heading": "Indications for Exercise Testing",
+          "body_text": "**16.3 Exercise testing — Indications:**\n\n- To **confirm the diagnosis of angina**\n- To **evaluate stable angina (risk stratification)**\n- To **diagnose and evaluate the treatment of exercise-induced arrhythmias**\n\nThe exercise ECG (treadmill) test requires an ECG machine, blood pressure cuff, electrodes, and a treadmill. Its basic principle is to provoke ischemia with graded dynamic exercise while monitoring the ECG and hemodynamic response.\n\n**High-risk findings on exercise testing:**\n\n- **Low threshold for ischaemia** (ischemia induced within **stage 1 or 2** of the protocol)\n- **Widespread, marked or prolonged ischaemic ECG changes**\n- **Exercise-induced arrhythmia**\n\n**Stress testing is contraindicated in:**\n\n- **Acute coronary syndrome**\n- **Decompensated heart failure**\n- **Severe hypertension**\n- **Arrhythmias**\n\n**The test is positive if:**\n\n- **Angina occurs**\n- **BP falls or fails to increase** with increasing workload (an ominous hemodynamic sign)\n- **ST segment shifts of more than 1 mm** (0.1 mV)\n\nThe interpretation of ST shifts must account for the morphology and timing of ST depression relative to the J point:\n\n- **J-point-only depression** or **upsloping ST depression**: negative standard (not diagnostic of ischemia)\n- **Slow upsloping** (60–80 ms after the J point): equivocal standard\n- **Horizontal** or **downsloping ST depression ≥1.0 mm at 60–80 ms after the J point**: positive standard\n\nBoth **false-negative** and **false-positive** results occur — the test is neither perfectly sensitive nor specific.",
+          "key_points": [
+            "Indications: confirm angina diagnosis, risk-stratify stable angina, assess exercise-induced arrhythmias.",
+            "High-risk findings: ischemia at low workload (stage 1–2), widespread/marked/prolonged ischemic changes, exercise-induced arrhythmia.",
+            "Contraindications: ACS, decompensated HF, severe hypertension, arrhythmias.",
+            "Positive test: angina, BP fall or failure to rise, or >1 mm ST shift.",
+            "Horizontal or downsloping ST depression ≥1 mm at 60–80 ms after the J point = positive; upsloping or J-point-only = negative; slow upsloping = equivocal.",
+            "False positives and false negatives both exist."
+          ],
+          "check": {
+            "prompt": "During a treadmill test, a patient develops 2 mm horizontal ST depression in V4–V6 at stage 1 along with a modest fall in blood pressure. What does this signify?",
+            "options": [
+              "A negative test",
+              "A positive, high-risk test requiring termination",
+              "An equivocal test to be repeated",
+              "A false-positive result"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "هبوط ST أفقي >1مم مع هبوط الضغط في مرحلة مبكرة = اختبار إيجابي عالي الخطورة (ischemia بحد أدنى من الجهد + هبوط ضغط) ويوجب إيقاف الاختبار والتحويل لتقييم تدخلي، وليس سلبياً أو غامضاً."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Treadmill test", "definition_ar": "اختبار جهد القلب على مشاية متحركة لتسريع الإقفار وتشخيصه"},
+        {"term": "Stage 1-2 ischemia", "definition_ar": "إحداث الإقفار في مراحل الجهد المبكرة — علامة خطر عالٍ"},
+        {"term": "ST shift 1 mm", "definition_ar": "انحراف مقطع ST بمقدار 1مم (0.1 مللي فولت) فأكثر معيار إيجابية الاختبار"},
+        {"term": "J point", "definition_ar": "نقطة التقاطع بين نهاية مركب QRS وبداية مقطع ST المرجعية للقياس"}
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "cvs_l2_c2_ambulatory_ecg",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Ambulatory ECG (Holter Monitoring and Implantable Loop Recorder)",
+      "summary_ar": "تخطيط القلب المتنقل (هولتر): دواعيه وأجهزته من المسجل الرقمي المحمول إلى المسجل المنزرع.",
+      "sections": [
+        {
+          "heading": "Ambulatory ECG — Indications and Devices",
+          "body_text": "**Indications for ambulatory ECG:**\n\n- **Suspected arrhythmia** — e.g., **intermittent palpitation, dizziness or syncope** that a resting ECG may miss because it captures only seconds of rhythm\n- **Transient myocardial ischaemia** — e.g., **Prinzmetal (variant) angina**, where transient ST changes occur at rest due to coronary spasm\n\n**Devices:**\n\n- A **portable digital recorder** worn by the patient for periods between **1 and 7 days** (classic Holter monitoring), with a diary for symptom correlation.\n- **Special event recorders** can be issued that **can be activated by the patient** at the time of symptoms — useful for infrequent but symptomatic episodes.\n- **Implantable loop recorder (ILR)** — a small subcutaneous device (placed under the skin, approximating the size of a small USB stick) that monitors for **1–3 years** and is indicated **if symptoms are very infrequent**; it continuously records and stores rhythm strips around patient-activated or auto-triggered events.",
+          "key_points": [
+            "Indications: suspected intermittent arrhythmia (palpitations, dizziness, syncope) and transient ischemia (Prinzmetal angina).",
+            "Holter: portable digital recorder, 1–7 days.",
+            "Patient-activated event recorders capture symptom-rhythm correlation.",
+            "Implantable loop recorder: 1–3 years of monitoring for very infrequent symptoms."
+          ],
+          "check": {
+            "prompt": "A patient has one fainting spell every 4 months with no abnormalities on resting ECG and echocardiography. Which monitoring device is most appropriate?",
+            "options": [
+              "24-hour Holter monitor",
+              "Patient-activated event recorder for 1 week",
+              "Implantable loop recorder for 1–3 years",
+              "Routine exercise treadmill test"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الأعراض نادرة جداً (كل بضعة أشهر) فتحتاج مسجلاً منزرعاً طويل الأمد (ILR) لمدة 1-3 سنوات؛ الهولتر ومسجل الأسبوع يفوّتان النوبات، واختبار الجهد يقيّم الإقفار المستثار وليس اللانظمية العفوية."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Holter monitor", "definition_ar": "جهاز تخطيط متنقل يرتدى 1-7 أيام لرصد اللانظميات العابرة"},
+        {"term": "ILR", "definition_ar": "مسجل حلقي منزرع تحت الجلد يرصد النظم 1-3 سنوات للأعراض النادرة"},
+        {"term": "Event recorder", "definition_ar": "مسجل يفعّله المريض عند الأعراض لربطها بالتخطيط"}
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "cvs_l2_c3_biomarkers",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Cardiac Biomarkers: BNP/NT-proBNP and Troponins",
+      "summary_ar": "البيوMarkers القلبية: ببتيد الدماغ المدر (BNP/NT-proBNP) والتروبونين I وT — دواعٍ وتفسير والحالات الأخرى التي ترفعها.",
+      "sections": [
+        {
+          "heading": "Brain Natriuretic Peptide (BNP / NT-proBNP)",
+          "body_text": "**Brain natriuretic peptide** is a **peptide hormone secreted by the LV** (in response to wall stress/volume expansion); it is then **cleaved to produce active BNP and N-terminal fragment (NT-proBNP)**.\n\nPhysiologically, BNP promotes natriuresis, diuresis, and vasodilation, opposing the renin–angiotensin–aldosterone system. Clinically, **BNP and NT-proBNP are used as biomarkers of heart failure** — they are released when the left ventricle is stretched, and their levels help:\n\n- Support the diagnosis of heart failure in a breathless patient (a normal level makes significant heart failure unlikely)\n- Gauge the severity and prognosis of heart failure\n- Guide the intensity of therapy (e.g., discharge thresholds in acute decompensation)\n\nWhen interpreting, remember that levels rise with age and renal impairment, and obesity can lower levels, potentially masking failure.",
+          "key_points": [
+            "BNP is secreted by the LV under wall stress and cleaved into active BNP + NT-proBNP.",
+            "Used to diagnose, stratify, and monitor heart failure; a normal level argues strongly against significant HF.",
+            "Interpret with caution: levels rise with age and renal impairment; obesity lowers levels."
+          ]
+        },
+        {
+          "heading": "Cardiac Troponins (I and T)",
+          "body_text": "**Troponin I and troponin T** are **structural cardiac muscle proteins** that are **released during myocyte injury/necrosis**. They are the **cornerstone of the diagnosis of acute myocardial infarction**.\n\n**Elevated plasma troponin concentrations may also be observed in other conditions** (myocardial injury without infarction):\n\n- **Aortic dissection**\n- **Pulmonary embolus**\n- **Septic shock**\n- **Pulmonary oedema**\n- **Renal failure**\n\nThus, an elevated troponin must always be interpreted in clinical context: it indicates myocardial injury, but the mechanism (acute MI vs type 2 supply–demand mismatch vs non-ischemic injury) must be determined from the ECG, the rise/fall pattern, and the clinical picture. In ACS, serial troponins show a **rise and/or fall**; in chronic conditions (e.g., renal failure), levels may be chronically mildly elevated without an acute rising trend.",
+          "key_points": [
+            "Troponins I and T are structural proteins released with myocyte necrosis — cornerstone of acute MI diagnosis.",
+            "Also elevated in: aortic dissection, pulmonary embolus, septic shock, pulmonary edema, renal failure.",
+            "MI requires a rise/fall pattern plus clinical/ECG evidence — troponin elevation alone is not synonymous with MI."
+          ],
+          "check": {
+            "prompt": "A tachycardic patient with massive pulmonary embolism has troponin T of 90 ng/L. Does this indicate acute myocardial infarction?",
+            "options": [
+              "Yes — any troponin elevation means MI",
+              "No — troponin can rise from right ventricular strain in PE without coronary occlusion",
+              "No — troponin is specific for sepsis",
+              "Yes — troponin rises only in MI"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الصمة الرئوية الضخمة ترفع التروبونين بسبب إجهاد البطين الأيمن ونقص التروية دون احتشاء إكليلي؛ لذا التروبونين علامة أذية عضلة قلبية وليس مرادفاً للاحتشاء — يجب قراءته مع ECG والصورة السريرية ونمط الارتفاع والانخفاض."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "NT-proBNP", "definition_ar": "الشظية الطرفية N الناتجة عن انشقاق برو-BNP، ومرتبط قوي لفشل القلب"},
+        {"term": "Troponin I/T", "definition_ar": "بروتينات هيكلية قلبية تُحرر عند نخر العضلة وتشكل أساس تشخيص الاحتشاء"},
+        {"term": "Type 2 MI", "definition_ar": "أذية قلبية من عدم توازن العرض والطلب (تشريح أبهر، صمة رئوية، صدمة) لا بسبب تمزق لويحة أولي"}
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "cvs_l2_c4_cxr",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Chest X-Ray in Cardiac Evaluation",
+      "summary_ar": "صورة الصدر الشعاعية: تقييم حجم القلب وشكله والأوعية الرئوية، وعلامات تضخم الغرف وتمدد الجيوب، والتكلسات والتغيرات الرئوية.",
+      "sections": [
+        {
+          "heading": "Basics and Projections",
+          "body_text": "**Chest X-ray assesses:**\n\n- **Size and shape of the heart** (cardiac silhouette)\n- **State of the pulmonary blood vessels** (congestion, plethora, effusions)\n- **Lung fields**\n\n**Projections:**\n\n- **Postero-anterior (PA)** projection taken in **full inspiration** is the standard — the heart size is assessed accurately because the scapulae are rotated away and the film–distance is standardized. On the PA film, the right cardiac border is formed by the right atrium (with SVC above), and the left border by the left ventricle (with aortic knob and pulmonary trunk above).\n- **Anteroposterior (AP)** projections can be performed when **patient movement is restricted** (portable films in ICU) but result in **magnification of the cardiac shadow**, exaggerating apparent cardiomegaly.",
+          "key_points": [
+            "CXR shows heart size/shape, pulmonary vasculature, lung fields.",
+            "PA in full inspiration is standard; AP (portable) magnifies the cardiac shadow.",
+            "Right border = RA/SVC; left border = LV, aortic knob, pulmonary trunk."
+          ]
+        },
+        {
+          "heading": "Chamber Enlargement Patterns",
+          "body_text": "**Enlarged cardiac silhouette (cardiomegaly)** may be due to:\n\n- **Chamber dilatation**, especially left ventricular dilatation\n- **Pericardial effusion** (a large effusion produces a globular 'water-bottle' heart)\n- **Mediastinal mass**\n- **Pectus excavatum** (deformed chest wall mimicking cardiomegaly)\n\n**Importantly, an enlarged cardiac silhouette is NOT a sensitive and NOT a specific indicator of left ventricular systolic dysfunction** — a dilated failing heart may appear normal-sized, and a normal heart may look enlarged on AP projection.\n\n**Chamber-specific signs:**\n\n- **Left atrial dilatation:** prominence of the **left atrial appendage**, creating the appearance of a **straight left heart border**, a **double cardiac shadow to the right of the sternum**, and **widening of the angle of the carina** (bifurcation of the trachea) — classically seen in severe mitral stenosis. Other signs: splayed carina, distended upper lobe pulmonary veins.\n- **Right atrial enlargement:** projects from the **right heart border towards the right lower lung field** — classically in severe tricuspid stenosis.\n- **Left ventricular dilatation:** **prominence of the left heart border** and enlargement of the cardiac silhouette — e.g., severe aortic regurgitation with aortic root dilatation (the 'sitting dove' appearance).\n- **Left ventricular hypertrophy:** **rounding of the left heart border.**\n- **Right ventricular dilatation/hypertrophy:** **increases heart size, displaces the apex upwards — 'boot-shaped heart'** — e.g., severe pulmonary stenosis.\n\n**Lateral or oblique projections** may reveal abnormalities **obscured by the spine on the PA view**:\n\n- **Pericardial calcification** in patients with **constrictive pericarditis**\n- **Calcified thoracic aortic aneurysm**",
+          "key_points": [
+            "Cardiomegaly differential: chamber dilatation (especially LV), pericardial effusion, mediastinal mass, pectus excavatum.",
+            "Cardiothoracic silhouette enlargement is neither sensitive nor specific for LV systolic dysfunction.",
+            "LA dilatation: straight left heart border (appendage), double shadow right of sternum, widened carinal angle (severe MS).",
+            "RA enlargement: right border projecting to right lower lung field (severe TS).",
+            "LV dilatation: prominent left heart border (severe AR with root dilatation); LVH: rounding of left border.",
+            "RV dilatation: boot-shaped heart with apex displaced upward (severe PS).",
+            "Lateral/oblique views: pericardial calcification (constrictive pericarditis), calcified aortic aneurysm."
+          ],
+          "check": {
+            "prompt": "A chest X-ray shows a straight left heart border, double cardiac shadow, and a widened carinal angle. Which chamber is enlarged and in which disease classically?",
+            "options": [
+              "Right atrium in tricuspid stenosis",
+              "Left atrium in severe mitral stenosis",
+              "Left ventricle in aortic regurgitation",
+              "Right ventricle in pulmonary stenosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "استقامة الحد الأيسر (بفص الأذين الأيسر) والظل المزدوج وتوسع زاوية الجؤجؤ = تمدد الأذين الأيسر النمطي لتضيق التاجي الشديد. تمدد الأذين الأيمن يبرز للحق السفلي الأيمن، وتوسع البطين الأيسر يبرز الحد الأيسر، والبطين الأيمن يعطي قلباً نعلية."
+          }
+        },
+        {
+          "heading": "Pulmonary Vasculature and Lung Fields",
+          "body_text": "**The lung fields on cardiac CXR:**\n\n- **Congestion and pleural effusions** are seen in **heart failure** (upper lobe venous diversion, Kerley B lines, bat-wing edema, effusions).\n\n**Pulmonary vasculature:**\n\n- **Increase in pulmonary blood flow ('pulmonary plethora')** occurs in patients with a **left-to-right shunt (congenital heart disease)** — e.g., ASD, VSD, PDA — with engorged central and peripheral pulmonary vessels.",
+          "key_points": [
+            "Heart failure CXR: congestion (upper-lobe diversion, Kerley B lines), pulmonary edema, pleural effusions.",
+            "Pulmonary plethora = shunt vascularity in left-to-right congenital shunts (ASD, VSD, PDA)."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Pulmonary plethora", "definition_ar": "زيادة التروية الرئوية الظاهرة شعاعياً في التحويلات يسار-يمين"},
+        {"term": "Straight left heart border", "definition_ar": "علامة تمدد الأذين الأيسر ببروز فصّه على الصورة الشعاعية"},
+        {"term": "Boot-shaped heart", "definition_ar": "قلب بشكل حذاء نعلية نتيجة تضخم البطين الأيمن وانزياح القمة للأعلى"},
+        {"term": "Water-bottle heart", "definition_ar": "ظل قلبي كمثري منتظم يشير لانصباب تأموري كبير"},
+        {"term": "Constrictive pericarditis", "definition_ar": "التهاب تأمور ضاغط مزمن مع تكلس قابل للاكتشاف على الصورة الجانبية"}
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "cvs_l2_c5_echocardiography",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Echocardiography: TTE, Doppler, TOE, and Stress Echo",
+      "summary_ar": "الإيكو القلبي: عبر الصدر والسطحي، دوبلر، عبر المريء (TOE)، وإيكو الجهد — دواعي كل منها ومعلوماته.",
+      "sections": [
+        {
+          "heading": "Transthoracic Echocardiography (TTE) and Doppler",
+          "body_text": "**Transthoracic echocardiography ('echo')** is the workhorse non-invasive imaging modality. **Common indications** include assessment of:\n\n- **Left ventricular and right ventricular function** (ejection fraction, wall motion)\n- **Coronary artery disease** (regional wall motion abnormalities)\n- **Heart valve disease** (structure, gradients, regurgitation)\n- **Congenital heart disease**\n- **Pericardial disease** (e.g., **pericardial effusion**)\n- **Vegetations in endocarditis**\n- **Intracardiac thrombus or mass in systemic embolism** (e.g., LA appendage thrombus, myxoma)\n\n**Doppler echocardiography** provides information on **blood flow (speed and direction) within the heart and the great vessels** — allowing quantification of valve gradients and regurgitant volumes. A **colour overlay on a two-dimensional real-time echo picture (colour-flow Doppler)** visually maps turbulent jets; e.g., a flame-shaped yellow/blue turbulent jet into the left atrium demonstrates mitral regurgitation in the four-chamber view.",
+          "key_points": [
+            "TTE indications: ventricular function, CAD (wall motion), valve disease, congenital disease, pericardial effusion, vegetations, intracardiac thrombus/mass.",
+            "Doppler quantifies flow velocity and direction; colour-flow Doppler maps turbulent jets (e.g., MR flame into LA)."
+          ],
+          "check": {
+            "prompt": "Which echocardiographic finding demonstrates mitral regurgitation on colour-flow Doppler?",
+            "options": [
+              "A flame-shaped turbulent jet directed into the left atrium during systole",
+              "A jet crossing the interatrial septum",
+              "A regurgitant jet into the right atrium",
+              "A high-velocity jet across a stenosed aortic valve only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قلس التاجي يظهر كنبضة لونية ملتوية لهبّية تتجه من البطين الأيسر إلى الأذين الأيسر أثناء الانقباض في المنظر رباعي الحجرات. النبضة العابرة للحاجز الأذيني تعني ASD، والنبضة للأذين الأيمن قلس ثلاثي الشرفات."
+          }
+        },
+        {
+          "heading": "Transoesophageal Echocardiography (TOE)",
+          "body_text": "**Transoesophageal echocardiography (TOE)** is performed by **passing an endoscope-like ultrasound probe into the oesophagus and upper stomach under light sedation** and positioning it **behind the LA**.\n\nBecause the esophagus lies immediately posterior to the left atrium, TOE provides high-resolution images of structures **poorly visualised by transthoracic echocardiography**, especially if the **patient is overweight or has obstructive airway disease**. TOE excels at imaging:\n\n- **Left atrial appendage** (detecting **thrombus**, e.g., in chronic atrial fibrillation before cardioversion)\n- **Pulmonary veins** (congenital anomaly)\n- **Interatrial septum** (ASD — including small defects and PFO)\n- **Prosthetic valve dysfunction** (especially mitral — shadowing from the prosthesis limits TTE)\n- **Small vegetations** in **infective endocarditis**, **especially on prosthetic valves**\n\nTOE requires light sedation, fasting, and informed consent; complications are rare (esophageal injury, aspiration).",
+          "key_points": [
+            "TOE = endoscope-like probe in esophagus under light sedation, positioned behind the LA.",
+            "Superior imaging of: LA appendage thrombus, pulmonary veins, interatrial septum/ASD, prosthetic valve dysfunction (mitral), small vegetations (especially prosthetic valve IE).",
+            "Preferred when TTE windows are poor (obesity, obstructive airway disease)."
+          ]
+        },
+        {
+          "heading": "Stress Echocardiography",
+          "body_text": "**Stress echocardiography** has two principal roles:\n\n1. **Suspected coronary artery disease in patients unsuitable for exercise stress testing** — such as those with **mobility problems** or **pre-existing bundle branch block** (which renders the exercise ECG uninterpretable). Ischemia is provoked by pharmacological stress: **infusion of a moderate to high dose of an inotrope, such as dobutamine** (increasing heart rate and contractility), while new regional wall motion abnormalities indicate ischemia.\n2. **Assessment of myocardial viability** in patients with **impaired left ventricular function** — viable (hibernating or stunned) myocardium shows contractile reserve with low-dose dobutamine, predicting functional recovery after revascularization.",
+          "key_points": [
+            "Stress echo: for CAD diagnosis when exercise ECG unsuitable (mobility problems, bundle branch block).",
+            "Pharmacological stress with dobutamine infusion provokes ischemia; new wall motion abnormality = positive.",
+            "Low-dose dobutamine assesses myocardial viability in impaired LV function."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "TTE", "definition_ar": "إيكو عبر جدار الصدر، الفحص القلبي غير الباضع الأساسي"},
+        {"term": "TOE/TEE", "definition_ar": "إيكو عبر المريء بمسبار داخلي يوضع خلف الأذين الأيسر بتفسير أدق"},
+        {"term": "Dobutamine stress echo", "definition_ar": "إيكو الجهد الدوائي بالدوبوتامين لكشف الإقفار أو الحيوية العضلية"},
+        {"term": "LA appendage thrombus", "definition_ar": "خثرة الفص الأذيني الأيسر في الرجفان المزمن تُرصد بأفضل ما يكون عبر المريء"}
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "cvs_l2_c6_ct_mri",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Computed Tomography and Cardiac MRI",
+      "summary_ar": "التصوير المقطعي المحوسب (CT) والرنين المغناطيسي القلبي (CMR): دواعي كل منهما ونقاط قوتهما.",
+      "sections": [
+        {
+          "heading": "Computed Tomography (CT)",
+          "body_text": "**CT has major cardiac and great-vessel roles:**\n\n- **Aorta** in suspected **aortic dissection** or **coarctation** (**CT aortography** — rapid, accurate delineation of the flap and branch vessel involvement)\n- **Pulmonary arteries and branches** in suspected **pulmonary embolism** (**CTPA** — the diagnostic standard for PE)\n- **Coronary artery assessment:**\n  - **Calcification** as an **index of cardiovascular risk** (**CT calcium score, CTCS**)\n  - **Non-invasive coronary angiography (CTCA)** — direct visualization of the coronary lumen, useful in low-to-intermediate risk chest pain to rule out obstructive disease\n\nCT provides excellent spatial resolution and rapid acquisition but involves ionizing radiation and (usually) iodinated contrast.",
+          "key_points": [
+            "CT aortography for aortic dissection/coarctation.",
+            "CTPA is the standard for pulmonary embolism.",
+            "CTCS calcium scoring indexes cardiovascular risk; CTCA performs non-invasive coronary angiography."
+          ],
+          "check": {
+            "prompt": "Which non-invasive test is the standard first-line imaging for suspected acute pulmonary embolism?",
+            "options": [
+              "CT pulmonary angiography (CTPA)",
+              "Exercise ECG",
+              "Transoesophageal echocardiography",
+              "Chest X-ray"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التصوير المقطعي للشرايين الرئوية (CTPA) هو المعيار التشخيصي للصمة الرئوية الحادة. صورة الصدر غير نوعية، وإيكو المريء ليس فحص الصمة، واختبار الجهد لا علاقة له بالحالة الحادة."
+          }
+        },
+        {
+          "heading": "Cardiac Magnetic Resonance Imaging (MRI/CMR)",
+          "body_text": "**Cardiac MRI** offers **better differentiation of soft tissue structures than CT** but is **poor at demonstrating calcification**.\n\n**Indications:**\n\n- **Aorta** in suspected **dissection** (when iodinated contrast is contraindicated)\n- **Congenital heart disease**, especially **complex** anatomy\n- **Valve disease:** **quantification of blood flow across regurgitant or stenotic valves** (phase-contrast flow mapping)\n- **Infiltrative heart disease** (e.g., **sarcoidosis, amyloidosis** — tissue characterization with late gadolinium enhancement)\n- **Coronary artery disease** (**stress CMR** perfusion imaging) in patients **unsuitable for exercise stress testing**\n- **Myocardial viability** in patients with **impaired left ventricular function** (delayed gadolinium enhancement differentiates scar from viable myocardium; e.g., recent inferior MI with microvascular obstruction appearing black, or old anterior MI with large subendocardial enhancement)",
+          "key_points": [
+            "CMR: superior soft-tissue differentiation vs CT, but poor at calcification.",
+            "Uses: aortic dissection, complex congenital disease, valve flow quantification, infiltrative disease (sarcoidosis), stress perfusion (when exercise unsuitable), and viability (delayed enhancement).",
+            "Delayed gadolinium enhancement: black area = microvascular obstruction (recent infarct); subendocardial white = scar (old infarct)."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "CTPA", "definition_ar": "تصوير مقطعي للشرايين الرئوية، معيار تشخيص الصمة الرئوية"},
+        {"term": "CTCS", "definition_ar": "درجة تكلس الشرايين الإكليلية كمؤشر خطر قلبي وعائي"},
+        {"term": "CTCA", "definition_ar": "تصوير مقطعي غير باضع للشرايين الإكليلية"},
+        {"term": "Late gadolinium enhancement", "definition_ar": "تعزيز متأخر بالغادولينيوم في CMR يميز النسيج الندبي عن الحيوي"}
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "cvs_l2_fc1",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "card_type": "basic",
+      "front_text": "What are the three indications for exercise (treadmill) ECG testing?",
+      "back_text": "1. To confirm the diagnosis of angina\n2. To evaluate stable angina (risk stratification)\n3. To diagnose and evaluate the treatment of exercise-induced arrhythmias.",
+      "explanation_ar": "تأكيد تشخيص الذبحة، تقييم الذبحة المستقرة للخطر، وتشخيص وتقييم علاج اللانظميات المستثارة بالجهد.",
+      "is_vivid": false,
+      "tags": ["exercise ECG"]
+    },
+    {
+      "id": "cvs_l2_fc2",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "card_type": "basic",
+      "front_text": "What are the three high-risk findings on an exercise ECG test?",
+      "back_text": "1. Low threshold for ischaemia (ischemia within stage 1 or 2)\n2. Widespread, marked or prolonged ischaemic ECG changes\n3. Exercise-induced arrhythmia.\nThese findings predict severe/ extensive coronary disease and a poor prognosis.",
+      "explanation_ar": "إقفار بمرحلة مبكرة (1 أو 2)، تغيرات إقفارية واسعة/معلّمة/ممتدة، ولانظمية مستثارة بالجهد — نتائج عالية الخطورة.",
+      "is_vivid": false,
+      "tags": ["exercise ECG", "high risk"]
+    },
+    {
+      "id": "cvs_l2_fc3",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "card_type": "basic",
+      "front_text": "List the contraindications to stress testing.",
+      "back_text": "1. Acute coronary syndrome\n2. Decompensated heart failure\n3. Severe hypertension\n4. Arrhythmias.",
+      "mnemonic_ar": "موانع الجهد: ACS، فشل قلب غير معوض، ضغط شديد، لانظميات.",
+      "explanation_ar": "إخضاع هذه الفئات للجهد قد يفاقم الإقفار أو يسبب لانظمية خبيثة — ممنوع منعاً باتاً.",
+      "is_vivid": false,
+      "tags": ["contraindications"]
+    },
+    {
+      "id": "cvs_l2_fc4",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "card_type": "basic",
+      "front_text": "What makes an exercise ECG test 'positive'?",
+      "back_text": "1. Angina occurs during the test\n2. BP falls or fails to increase with exercise\n3. ST segment shifts of more than 1 mm (0.1 mV).\nHorizontal or downsloping ST depression ≥1 mm at 60–80 ms after the J point is the positive standard; upsloping or J-point-only depression is negative; slow upsloping is equivocal.",
+      "explanation_ar": "ذبحة أثناء الاختبار، هبوط الضغط أو فشل ارتفاعه، و انحراف ST أكثر من 1 مم — الأفقي والمنحدر للأسفل إيجابي، والصاعد غامض.",
+      "is_vivid": false,
+      "tags": ["positive test"]
+    },
+    {
+      "id": "cvs_l2_fc5",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c2_ambulatory_ecg",
+      "card_type": "basic",
+      "front_text": "When is an implantable loop recorder (ILR) indicated?",
+      "back_text": "When symptoms (e.g., syncope/palpitations) are very infrequent — the ILR is placed under the skin and monitors the rhythm for 1–3 years, capturing events that Holter (1–7 days) or short external recorders would miss. Indications also include suspected arrhythmia with intermittent palpitation, dizziness or syncope, and transient myocardial ischaemia (Prinzmetal angina) for external Holter use.",
+      "explanation_ar": "الأعراض النادرة جداً تحتاج مسجلاً منزرعاً لمدة 1–3 سنوات، أما الهولتر (1–7 أيام) ف للأعراض المتكررة نسبياً وكذلك كشف إقفار برنزميتال العابر.",
+      "is_vivid": false,
+      "tags": ["ILR", "Holter"]
+    },
+    {
+      "id": "cvs_l2_fc6",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c3_biomarkers",
+      "card_type": "basic",
+      "front_text": "How is BNP produced and what is its clinical use?",
+      "back_text": "BNP is a peptide hormone secreted by the LV in response to wall stress, then cleaved to produce active BNP and the N-terminal fragment (NT-proBNP). Clinically it is used to diagnose heart failure, assess its severity/prognosis, and guide therapy; normal levels make significant heart failure unlikely.",
+      "explanation_ar": "يفرزه البطين الأيسر عند توتر جداره ثم يُشق إلى BNP فعال وشظية NT-proBNP؛ يستخدم لتشخيص فشل القلب وتقدير شدته وتوجيه علاجه.",
+      "is_vivid": false,
+      "tags": ["BNP", "heart failure"]
+    },
+    {
+      "id": "cvs_l2_fc7",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c3_biomarkers",
+      "card_type": "basic",
+      "front_text": "Name five non-MI conditions that elevate troponin.",
+      "back_text": "1. Aortic dissection\n2. Pulmonary embolus\n3. Septic shock\n4. Pulmonary oedema\n5. Renal failure.\n(Any condition producing myocardial injury or supply–demand mismatch.)",
+      "mnemonic_ar": "تروبونين يرتفع بغير الاحتشاء: تسلخ، صمة رئوية، إنتان، وذمة رئوية، فشل كلوي.",
+      "explanation_ar": "تذكر أن التروبونين مؤشر أذية عضلة قلبية وليس مرادفاً للاحتشاء — قرر نمط الارتفاع/الانخفاض مع السياق السريري و ECG.",
+      "is_vivid": false,
+      "tags": ["troponin"]
+    },
+    {
+      "id": "cvs_l2_fc8",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c4_cxr",
+      "card_type": "basic",
+      "front_text": "Which four things can cause an enlarged cardiac silhouette on CXR?",
+      "back_text": "1. Chamber dilatation (especially left ventricular dilatation)\n2. Pericardial effusion\n3. Mediastinal mass\n4. Pectus excavatum.\nRemember: an enlarged silhouette is NOT sensitive and NOT specific for LV systolic dysfunction.",
+      "explanation_ar": "تمدد حجرات (خصوصاً البطين الأيسر)، انصباب تأموري، كتلة منصفية، وصدر مقعّر — وليست العلامة حساسة أو نوعية لقصور البطين الأيسر الانقباضي.",
+      "is_vivid": false,
+      "tags": ["cardiomegaly"]
+    },
+    {
+      "id": "cvs_l2_fc9",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c4_cxr",
+      "card_type": "basic",
+      "front_text": "What are the chest X-ray signs of left atrial dilatation (e.g., severe mitral stenosis)?",
+      "back_text": "1. Prominence of the left atrial appendage creating a straight left heart border\n2. Double cardiac shadow to the right of the sternum\n3. Widening of the angle of the carina (tracheal bifurcation)\n(with distended pulmonary veins and splaying of the carina).",
+      "mnemonic_ar": "علامات الأذين الأيسر: حد أيسر مستقيم، ظل مزدوج، زاوية جؤجؤ متسعة.",
+      "explanation_ar": "بروز اللحيمة الأذينية يستقيم معه الحد الأيسر، ويظهر ظل مزدوج خلف القص، وتتسع زاوية تفريع الرغامى.",
+      "is_vivid": false,
+      "tags": ["LA enlargement", "mitral stenosis"]
+    },
+    {
+      "id": "cvs_l2_fc10",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c5_echocardiography",
+      "card_type": "basic",
+      "front_text": "List the seven common indications for transthoracic echocardiography.",
+      "back_text": "1. Left and right ventricular function\n2. Coronary artery disease (regional wall motion)\n3. Heart valve disease\n4. Congenital heart disease\n5. Pericardial disease (e.g., pericardial effusion)\n6. Vegetations in endocarditis\n7. Intracardiac thrombus or mass in systemic embolism.",
+      "explanation_ar": "وظائف البطينين، أمراض الشرايين الإكليلية، الصمامات، أمراض القلب الخلقية، أمراض التأمور، النبتات في التهاب الشغاف، وخثرة أو كتلة داخل القلب عند الصمّات الجهازية.",
+      "is_vivid": false,
+      "tags": ["TTE", "indications"]
+    },
+    {
+      "id": "cvs_l2_fc11",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c5_echocardiography",
+      "card_type": "basic",
+      "front_text": "Which structures are better seen on transoesophageal (TOE) than transthoracic echo?",
+      "back_text": "1. Left atrial appendage (thrombus)\n2. Pulmonary veins (congenital anomaly)\n3. Interatrial septum (ASD)\n4. Prosthetic valve dysfunction (especially mitral)\n5. Small vegetations in infective endocarditis, especially on prosthetic valves.\nTOE is preferred when the patient is overweight or has obstructive airway disease.",
+      "explanation_ar": "فص الأذين الأيسر (الخثرة)، الأوردة الرئوية، الحاجز الأذيني، خلل الصمامات الصناعية (خصوصاً التاجية)، والنبتات الصغيرة — والسمنة والانسداد الرئوي يحدّان من جودة الإيكو الصدري.",
+      "is_vivid": false,
+      "tags": ["TOE"]
+    },
+    {
+      "id": "cvs_l2_fc12",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c5_echocardiography",
+      "card_type": "basic",
+      "front_text": "What are the two indications for stress echocardiography?",
+      "back_text": "1. Suspected coronary artery disease in patients unsuitable for exercise stress testing (mobility problems, pre-existing bundle branch block) — using infusion of a moderate-to-high dose of the inotrope dobutamine\n2. Assessment of myocardial viability in patients with impaired left ventricular function (low-dose dobutamine contractile reserve).",
+      "explanation_ar": "كشف مرض الشرايين الإكليلية عند من لا يستطيع اختبار الجهد (سمنة/حصار فرع)، وتقييم حيوية العضلة القلبية في ضعف البطين الأيسر.",
+      "is_vivid": false,
+      "tags": ["stress echo"]
+    },
+    {
+      "id": "cvs_l2_fc13",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c6_ct_mri",
+      "card_type": "basic",
+      "front_text": "Match each CT/MRI application: aortic dissection, PE, coronary risk, infiltrative disease, and valve flow quantification.",
+      "back_text": "CT: aorta in dissection/coarctation (CT aortography); pulmonary arteries in PE (CTPA); coronary calcification risk index (CTCS) and non-invasive coronary angiography (CTCA).\nMRI (better soft tissue, poor at calcification): aortic dissection, complex congenital heart disease, quantification of blood flow across regurgitant/stenotic valves, infiltrative heart disease (sarcoidosis), stress CMR for CAD when exercise unsuitable, and myocardial viability in impaired LV function.",
+      "explanation_ar": "CT للتسلخ والصمة الرئوية وتكلس الشرايين وCTCA؛ الرنين لتمييز الأنسجة الرخوة، القلب الخلقي المعقد، قياس الجريان عبر الصمامات، الأمراض التوغلية، إجهاد CMR، والحيوية العضلية.",
+      "is_vivid": false,
+      "tags": ["CT", "MRI"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "cvs_l2_mcq1",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "question_stem": "A 58-year-old man with recent-onset chest pain at rest is referred for an exercise treadmill test. He had an episode of rest angina 2 days ago, and his ECG shows new T-wave inversions in V3–V5. What is the most appropriate action?",
+      "options": [
+        "Proceed with the treadmill test as planned",
+        "Cancel the test: unstable angina/ACS is a contraindication to stress testing",
+        "Perform the test at a lower workload",
+        "Repeat the test after giving sublingual nitrate prophylactically"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ذبحة راحة حديثة مع تغيرات ECG جديدة = متلازمة إكليلية حادة، واختبار الجهد ممنوع في ACS وقد يسبب احتشاءً أو لانظمية قاتلة. الأفعال الصحيحة هي الراحة والعلاج الطبي وتقييم تدخلي مبكر وليس خفض عبء الجهد أو تغطية بالنترات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Chest pain at rest with new ECG changes defines an acute coronary syndrome",
+        "Check the contraindications list",
+        "Stress can precipitate infarction or malignant arrhythmia"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l2_mcq2",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c1_exercise_ecg",
+      "question_stem": "During stage 2 of a Bruce protocol treadmill test, a patient develops 2.5 mm horizontal ST depression in V4–V6 and his blood pressure falls from 150/80 to 100/60 mmHg. What is the interpretation and required action?",
+      "options": [
+        "Equivocal finding; continue to target heart rate",
+        "False-positive finding; complete the test",
+        "Positive, high-risk finding; stop the test and arrange further evaluation (e.g., angiography)",
+        "Normal physiologic response to exercise"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "هبوط ST أفقي >1مم مع هبوط الضغط في مرحلة مبكرة = نتيجة إيجابية عالية الخطورة (إقفار بمستوى منخفض + استجابة ضغط خطيرة) توجب إيقاف الاختبار فوراً والترتيب لتقييم أعمق كالقسطرة الإكليلية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Horizontal ST depression ≥1 mm = positive criterion",
+        "A fall in BP during exercise is never physiologic",
+        "Low workload (stage 1–2) ischemia = high risk"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l2_mcq3",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c4_cxr",
+      "question_stem": "A 45-year-old woman with progressive exertional dyspnea has a PA chest X-ray showing a straight left heart border, double cardiac shadow behind the sternum, and a widened carinal angle with distended upper lobe veins. What is the most likely diagnosis?",
+      "options": [
+        "Severe mitral stenosis with left atrial dilatation",
+        "Isolated right ventricular hypertrophy from pulmonary stenosis",
+        "Left ventricular aneurysm",
+        "Pectus excavatum"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "استقامة الحد الأيسر ببروز فص الأذين الأيسر + الظل المزدوج + توسع زاوية الجؤجؤ = تمدد الأذين الأيسر النمطي لتضيق التاجي الشديد، مع احتقان وريدي علوي مصاحب. قلب الحذاء للبطين الأيمن، والصدر المقعّر يشبه تضخم الظل لا هذه العلامات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Straight left border + double shadow = which chamber?",
+        "Carina widening accompanies LA enlargement",
+        "Distended upper-lobe veins suggest mitral obstruction"
+      ],
+      "focus_sections": [1]
+    },
+    {
+      "id": "cvs_l2_mcq4",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "concept_id": "cvs_l2_c5_echocardiography",
+      "question_stem": "A 60-year-old obese man with a mechanical mitral valve replacement and fever has negative transthoracic echo but high clinical suspicion of prosthetic valve endocarditis. What is the next best imaging test?",
+      "options": [
+        "Repeat transthoracic echo in 6 weeks",
+        "Transoesophageal echocardiography",
+        "Exercise treadmill test",
+        "CT coronary angiography"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "إيكو المريء (TOE) هو الفحص الأفضل للصمامات الصناعية والنبتات الصغيرة وحالة فص الأذين الأيسر، خاصة عند السمنة التي تحدّ من نوافذ الإيكو الصدري. تكرار الإيكو الصدري يؤخر التشخيص، والجهد ممنوع بالإنتان، وCTCA لا يقيّم النبتات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Prosthetic valves shadow the TTE view",
+        "TOE sits right behind the LA",
+        "Endocarditis suspicion with poor TTE windows"
+      ],
+      "focus_sections": [1]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "cvs_l2_case1",
+      "lecture_id": "cvs_l2_non_invasive_cardiac_evaluation",
+      "title": "Chest Pain on the Treadmill: When the Test Itself Becomes the Answer",
+      "scenario": "A 57-year-old taxi driver is evaluated for 3 months of exertional central chest tightness. His resting ECG is normal, and the cardiology team schedules a Bruce-protocol treadmill test to confirm the diagnosis of angina and risk-stratify him.",
+      "vignette": {
+        "age": 57,
+        "sex": "male",
+        "chief_complaint": "Exertional central chest tightness for 3 months",
+        "history": "Hyperlipidemia, hypertension on amlodipine, 25-pack-year smoking history, father had MI at 55. Pain comes on after two flights of stairs, resolves within 3 minutes of rest, never at rest.",
+        "vitals": {
+          "bp": "150/90 mmHg",
+          "hr": "76 bpm regular",
+          "rr": "16/min",
+          "temp": "36.7 C",
+          "spo2": "98% room air"
+        },
+        "exam": "Weight 92 kg (BMI 30). Normal S1/S2, no murmurs, clear lung fields, no peripheral edema, all pulses present, no carotid bruits.",
+        "labs": [
+          {"name": "Total cholesterol", "value": "268 mg/dL (ref < 200)", "flag": "high"},
+          {"name": "LDL cholesterol", "value": "178 mg/dL (ref < 100)", "flag": "high"},
+          {"name": "HbA1c", "value": "5.8% (ref 4.0–5.6)", "flag": "high"},
+          {"name": "Fasting glucose", "value": "104 mg/dL (ref 70–99)", "flag": "high"},
+          {"name": "NT-proBNP", "value": "90 pg/mL (ref < 300)", "flag": "normal"},
+          {"name": "High-sensitivity troponin T", "value": "8 ng/L (ref < 14)", "flag": "normal"}
+        ],
+        "imaging": "Resting transthoracic echo: normal LV systolic function (EF 60%), no wall motion abnormality, no valve disease. Resting ECG: normal sinus rhythm, no ST changes."
+      },
+      "steps": [
+        {
+          "id": "cvs_l2_case1_s1",
+          "prompt": "What is the purpose of ordering an exercise ECG in this patient?",
+          "options": [
+            "To confirm the diagnosis of angina and risk-stratify stable angina",
+            "To diagnose acute myocardial infarction",
+            "To exclude aortic dissection",
+            "To detect pericardial effusion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "دواعي اختبار الجهد تشمل تأكيد تشخيص الذبحة وتقييم (تصنيف خطر) الذبحة المستقرة وتقييم لانظميات الجهد. لا دور له في تشخيص الاحتشاء الحاد (يُعتمد على التروبونين وECG) ولا في التسلخ أو الانصباب.",
+          "xp": 6,
+          "hints": [
+            "Stable exertional pattern with normal resting ECG",
+            "Exercise testing confirms and stratifies angina"
+          ]
+        },
+        {
+          "id": "cvs_l2_case1_s2",
+          "prompt": "At stage 1 of the test he develops 2 mm horizontal ST depression in V4–V6 with chest tightness, and his BP drops from 150 to 105 systolic. What is the correct action?",
+          "options": [
+            "Continue to 85% of predicted maximal heart rate",
+            "Stop the test — this is a positive, high-risk response",
+            "Give sublingual GTN and continue the test",
+            "Switch immediately to dobutamine stress echo within the same session"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "إقفار مبكر (مرحلة 1) مع هبوط ST أفقي >1مم وذبحة وهبوط ضغط = استجابة إيجابية عالية الخطورة توجب الإيقاف الفوري والإحالة لتقييم غازٍ (قسطرة)؛ إكمال الاختبار خطر، ومحاولة 'المتابعة بالنترات' غير منطقية، والانتقال الفوري للدوبوتامين غير مبرر بعد نتيجة إيجابية قاطعة.",
+          "xp": 10,
+          "hints": [
+            "Three positive criteria are present: angina, >1 mm ST shift, BP fall",
+            "Stage 1–2 ischemia = low threshold = high risk"
+          ]
+        },
+        {
+          "id": "cvs_l2_case1_s3",
+          "prompt": "Because of his poor exercise capacity, alternative non-invasive tests are considered. Which test assesses myocardial viability and detects ischemia in patients unsuitable for exercise testing?",
+          "options": [
+            "Dobutamine stress echocardiography",
+            "CT calcium score alone",
+            "Ambulatory 24-hour Holter",
+            "PA chest X-ray"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "إيكو الجهد الدوائي بالدوبوتامين يكشف الإقفار (اضطراب حركي جديد) عند غير القادرين على الجهد، كما يقيّم حيوية العضلة في ضعف البطين. درجة الكلس تقدّر الخطر لا الإقفار الوظيفي، والهولتر للانظميات، والصورة الشعاعية لا تقيم الإقفار.",
+          "xp": 8,
+          "hints": [
+            "Pharmacological stress alternative",
+            "Two roles: ischemia detection and viability"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: ذبحة صدرية مستقرة بمرض إكليلي متعدد الأوعية محتمل، والاختبار الإيجابي عالي الخطورة (إقفار بمرحلة 1، هبوط ST أفقي 2مم، هبوط ضغط) يصنّفه في مجموعة عالية الخطورة التي تستفيد من تصوير إكليلي وتدخل مبكر. الدروس المستفادة: (١) دواعي اختبار الجهد: تأكيد الذبحة، تصنيف الخطر، وتقييم لانظميات الجهد. (٢) المعايير الإيجابية الثلاثة: حدوث الذبحة، هبوط الضغط أو فشل ارتفاعه، و انحراف ST >1مم. (٣) نتائج الخطر العالي: إقفار مبكر (مرحلة 1–2)، تغيرات واسعة/معلّمة/ممتدة، ولانظمية مستثارة. (٤) عند عدم ملاءمة الجهد (سمنة، حصار فرع، مشاكل حركية) يُستخدم إيكو الجهد الدوائي بالدوبوتامين أو CMR الإجهاد، مع دور إضافي له في تقييم الحيوية العضلية قبل إعادة التوعية.",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

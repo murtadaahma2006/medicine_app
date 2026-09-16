@@ -1,0 +1,1567 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_Liver_L2",
+    "specialty": "surgery",
+    "title": "Liver II: Pyogenic and Amoebic Abscess, Hydatid Disease, Simple and Polycystic Liver Cysts",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "Liver L2- 2025.pdf",
+      "page_count": 18
+    },
+    "tags": [
+      "liver abscess",
+      "pyogenic abscess",
+      "amoebic abscess",
+      "hydatid cyst",
+      "echinococcus granulosus",
+      "simple liver cyst",
+      "polycystic liver disease",
+      "scolicidal agents"
+    ],
+    "order_index": 8,
+    "golden_tip": [
+      "Pyogenic liver abscess is NEVER treated with antibiotics alone: aminoglycoside or cephalosporin PLUS drainage (ultrasound-guided aspiration, or laparoscopic/laparotomy drainage) is the rule - 'antibiotics only' is the classic false exam statement.",
+      "Chocolate (anchovy-paste) pus means amoebic liver abscess, and the aspirate is often parasite-negative because Entamoeba histolytica lives in the abscess PERIPHERY - a thin white pus 'filled with E. histolytica' is the false option.",
+      "Metronidazole 750 mg tds for 7-10 days is the mainstay for amoebic abscess; drain only when there is no response after 5 days, the abscess is too big, or bacterial infection is superadded.",
+      "Jaundice plus acute cholangitis in a known hydatid cyst means intrabiliary rupture of daughter cysts; an acute abdomen after MINOR abdominal trauma means peritoneal rupture. Spilled hydatid fluid can cause anaphylactic shock.",
+      "The human is an accidental INTERMEDIATE host of Echinococcus granulosus (the dog is the definitive host): larvae reach the portal blood and settle 70% liver, 20% lung, 10% elsewhere - and hydatid fluid IS infectious."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_Liver_L2_c01",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Pyogenic Liver Abscess",
+      "summary_ar": "يغطي هذا المفهوم خراج الكبد القيحي: نوعه (وحيد كبير أو متعدد صغير، حاد أو مزمن)، مظاهره السريرية، المرضى الستة المعرضين للخطر، الجراثيم المسببة ومسارات وصولها إلى الكبد، التشخيص بالألتراساوند والتصوير المقطعي والأشعة العادية، والعلاج بالمضادات الحيوية مع التفريغ الذي لا يُسقط أبدًا.",
+      "sections": [
+        {
+          "heading": "Lecture Scope: the Cystic and Abscess-Forming Lesions of the Liver",
+          "body_text": "This is the **second liver lecture** of the general-surgery gastrointestinal module, delivered by **Dr. Noori Hannon, Consultant General and Gastrointestinal Surgeon (MD, FRCS, FACS, FICMS and PhD GI Surgery, United Kingdom)**. Its stated objectives are the complete spectrum of cystic and abscess-forming liver lesions: **hydatid cyst, amoebic liver cyst (amoebic liver abscess), pyogenic liver cyst (pyogenic liver abscess), simple liver cyst, polycystic liver cyst (polycystic liver disease)**, and the miscellaneous group - **tuberculous liver cyst (abscess) and cystic tumor**. For each entity the examinable questions are the same four: who is at risk, how does it present, how is it imaged, and how is it treated. One general principle runs through the whole lecture: **liver cysts are diagnosed mainly by ultrasound** (with CT, MRI and serology as backup), while plain **X-ray is only an adjunct** (it may show an air/fluid level in a pyogenic abscess or calcification in a dead hydatid cyst) - the statement 'liver cyst is diagnosed mainly by X-ray' is one of the lecture's classic false revision items. A practical framework separates **infective collections** (pyogenic, amoebic, tuberculous - antimicrobials with drainage when indicated), **developmental cysts** (simple and polycystic - treat only if symptomatic), **parasitic cysts** (hydatid - mostly surgical), and the rare **cystic tumor** (suspect it whenever a 'cyst' shows septations, mural nodules or enhancement).",
+          "key_points": [
+            "Objectives: hydatid, amoebic, pyogenic, simple and polycystic liver lesions, plus miscellaneous (tuberculous cyst, cystic tumor).",
+            "Ultrasound is the main diagnostic modality for liver cysts; X-ray is only an adjunct (classic false true/false item).",
+            "Framework: infective (drain with antimicrobials) vs developmental (treat only if symptomatic) vs parasitic (mostly surgical) vs cystic tumor (red flags: septations, mural nodules, enhancement)."
+          ]
+        },
+        {
+          "heading": "Morphology and Patients at Risk",
+          "body_text": "A **pyogenic liver abscess** is a bacterial pus collection within the liver parenchyma. Morphologically it is **single (large)** or **multiple (small)** - multiple small abscesses imply seeding from a systemic or biliary source and may coalesce into a larger cavity - and its clinical behavior is **acute or chronic**. The lecture lists six groups of **patients at risk**, and the list is a favorite short-answer question: **(1) the sickler** (sickle-cell patient - repeated hepatic ischemia and impaired immunity), **(2) the elderly**, **(3) the malnourished**, **(4) immune-suppressed (immunosuppressed) patients**, **(5) diabetics**, and **(6) post-traumatic and post-op patients** (infected hematoma, peri-hepatic collection, or biliary instrumentation after trauma or surgery). In any of these patients, a febrile illness with right-upper-quadrant symptoms must be investigated early with ultrasound - a high index of suspicion is what catches the abscess while it is still percutaneously drainable.",
+          "key_points": [
+            "Single (large) or multiple (small); acute or chronic.",
+            "At-risk list: sickler, elderly, malnourished, immunosuppressed, diabetics, post-traumatic and post-op patients.",
+            "Any at-risk patient with unexplained fever plus RUQ symptoms needs an early upper-abdominal ultrasound."
+          ]
+        },
+        {
+          "heading": "Clinical Manifestations",
+          "body_text": "The manifestations combine systemic sepsis with local liver irritation: **fever with lethargy and malaise**; **right upper quadrant discomfort and pain** (the lecture flags the pain with a question mark - it can be mild or absent in deep-seated or left-lobe abscesses); **anorexia**; and an **unwell look** - the patient simply appears ill and toxic. Fever is often swinging and may carry rigors. Because these features are nonspecific, pyogenic abscess is a classic cause of prolonged fever of unknown origin in the at-risk groups listed above, and the diagnosis is missed unless the liver is actively imaged. On examination there is tenderness in the right hypochondrium, sometimes with a palpable tender liver edge; mild jaundice occasionally appears when multiple abscesses compress the biliary tree (standard teaching). **Any at-risk patient with unexplained fever, anorexia and RUQ discomfort needs an early upper-abdominal ultrasound - not a course of empirical antibiotics and review.**",
+          "key_points": [
+            "Fever with lethargy and malaise; RUQ discomfort and pain; anorexia; unwell look.",
+            "Swinging fever with rigors; a classic cause of occult fever in at-risk patients.",
+            "Nonspecific presentation means the diagnosis is made by imaging, not by the history alone."
+          ]
+        },
+        {
+          "heading": "Microorganisms and Routes of Spread",
+          "body_text": "**Microorganisms**: the organisms most commonly grown are **Escherichia coli and Streptococcus milleri (commonly)**; the list continues with **Streptococcus faecalis, Klebsiella, Proteus and Staphylococci**. Beware the classic false statement that pyogenic abscess is 'caused mostly by Staphylococcus aureus' - it is not the commonest liver isolate. **Sources of liver abscess - how the bacteria reach the liver**: **1) the bile duct, by ascending infection - the commonest route** (biliary obstruction, stones, strictures and cholangitis); **2) the portal vein** (seeding from intra-abdominal sepsis such as appendicitis or diverticulitis - portal pyemia, producing multiple small abscesses); **3) a peri-hepatic infective focus** (direct spread from a neighboring infected collection around or below the liver); **4) haematogenous spread, e.g. via the hepatic artery** (bacteremia from a distant septic focus). In a proportion of patients no source is identified (a cryptogenic abscess). Empirical antibiotic choice (aminoglycoside, cephalosporin) is aimed at the enteric gram-negative flora of the commonest routes, then tailored to culture and sensitivity of aspirated pus and blood cultures.",
+          "key_points": [
+            "Most common: Escherichia coli and Streptococcus milleri; also Streptococcus faecalis, Klebsiella, Proteus, Staphylococci.",
+            "Routes: bile duct ascending (commonest), portal vein, peri-hepatic infective focus, haematogenous via hepatic artery.",
+            "'Caused mostly by Staphylococcus aureus' is the lecture's FALSE revision statement."
+          ],
+          "check": {
+            "prompt": "Which organisms most commonly cause a pyogenic liver abscess?",
+            "options": [
+              "Escherichia coli and Streptococcus milleri",
+              "Staphylococcus aureus (mostly)",
+              "Mycobacterium tuberculosis",
+              "Candida species and Aspergillus"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الإشيريكية القولونية والعقدية ميليري هما الأشيع في الخراج القيحي، وقد تُعزل أيضًا العقدية البرازية والكلبسيلة والبروتيس والعنقوديات. أما عبارة 'العنقوديات الذهبية هي الأشيع' فهي العبارة الخاطئة الشهيرة في الامتحان، والعصية السلية تسبب الخراج الدرني النادر وليس القيحي."
+          }
+        },
+        {
+          "heading": "Diagnosis",
+          "body_text": "**Ultrasound and CT scan** are the diagnostic mainstays and show a **multiloculated cystic mass lesion** - multiloculation and complex internal architecture are exactly what separate an abscess from a simple cyst. **X-ray may be beneficial** when the abscess contains gas: a plain chest or abdominal film can show an **air/fluid level** within the liver shadow, and an elevated right hemidiaphragm with basal atelectasis is a supportive chest sign (standard teaching). Laboratory work shows leukocytosis with raised inflammatory markers, and blood cultures must be taken before antibiotics are started. Imaging also answers the practical questions that decide therapy: the number and size of the abscesses (single large versus multiple small), the lobar location, and whether a safe percutaneous window exists for ultrasound-guided aspiration. In a septic at-risk patient, ultrasound is the first and often the only imaging needed before drainage.",
+          "key_points": [
+            "Ultrasound and CT: multiloculated cystic mass lesion.",
+            "X-ray may show an air/fluid level when the abscess contains gas.",
+            "Imaging decides number, size, location and the percutaneous drainage route."
+          ]
+        },
+        {
+          "heading": "Treatment: Antibiotics Plus Drainage",
+          "body_text": "Treatment has two inseparable limbs - the lecture's own wording is 'antibiotics plus drainage'. **1) Antibiotics plus drainage**: empiric **aminoglycoside and/or cephalosporin** cover for the enteric flora, made culture-directed once aspirate and blood cultures return; **drainage is by ultrasound-guided aspiration** (needle aspiration or percutaneous catheter drainage) of the collection. **2) It might need laparoscopic drainage or laparotomy for drainage** when percutaneous control fails, or the collection is multiloculated, thick, organized or already ruptured - open surgical toilet of the cavity then becomes necessary. Antibiotics alone are NOT adequate treatment (except for tiny multiple abscesses), and the statement 'treatment of pyogenic liver abscess is by antibiotics only' is one of the lecture's false revision items. Treatment continues with serial imaging until the cavity collapses; the underlying source (biliary stones, appendicitis, diverticulitis) must also be treated or the abscess recurs.",
+          "key_points": [
+            "Antibiotics (aminoglycoside, cephalosporin) PLUS drainage - ultrasound-guided aspiration first line.",
+            "Laparoscopic drainage or laparotomy when percutaneous therapy fails or the collection is complex.",
+            "'Antibiotics only' is FALSE - a classic exam trap; always treat the source."
+          ],
+          "check": {
+            "prompt": "A student writes: 'Treatment of pyogenic liver abscess is by antibiotics only.' What is the correct reply?",
+            "options": [
+              "False - antibiotics (aminoglycoside, cephalosporin) must be combined with drainage: ultrasound-guided aspiration, or laparoscopic/laparotomy drainage when needed",
+              "True - most abscesses resolve with antibiotics alone",
+              "True - drainage is reserved exclusively for hydatid cysts",
+              "False - the correct treatment is antifungal therapy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "علاج الخراج القيحي هو مضادات حيوية (أمينوغليكوزيد أو سيفالوسبورين) مع التفريغ دائمًا: شفط موجّه بالألتراساوند أو تفريغ تنظيري أو فتح بطن عند الحاجة؛ وعبارة 'المضادات الحيوية وحدها تكفي' عبارة خاطئة كلاسيكية في الامتحان."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Pyogenic liver abscess",
+          "definition_ar": "خراج الكبد القيحي: تجمع قيحي جرثومي في نسيج الكبد، وحيد كبير أو متعدد صغير، حاد أو مزمن؛ أشيع مسبباته الإشيريكية القولونية والعقدية ميليري، وأشيع طريق للعدوى هو الصاعد عبر القناة الصفراوية."
+        },
+        {
+          "term": "Streptococcus milleri",
+          "definition_ar": "العقدية ميليري: من أشيع الجراثيم المعزولة من خراج الكبد القيحي مع الإشيريكية القولونية."
+        },
+        {
+          "term": "Ascending biliary route",
+          "definition_ar": "المسار الصاعد عبر القناة الصفراوية: أشيع مصدر لخراج الكبد القيحي، يحدث عند انسداد أو التهاب الطرق الصفراوية (حصيات، تضيقات، التهاب طرق صفراوية)."
+        },
+        {
+          "term": "Multiloculated cystic mass",
+          "definition_ar": "كتلة كيسية متعددة الحجرات: مظهر الخراج القيحي في الألتراساوند والتصوير المقطعي، وهي التي تميزه عن الكيس البسيط أحيد الحجرة."
+        },
+        {
+          "term": "Ultrasound-guided aspiration",
+          "definition_ar": "الشفط الموجّه بالألتراساوند: تفريغ الخراج أو الكيس عبر إبرة أو قسطرة تحت الرؤية المباشرة بالموجات فوق الصوتية؛ الوسيلة الأولى للتفريغ."
+        },
+        {
+          "term": "Aminoglycoside",
+          "definition_ar": "الأمينوغليكوزيد: زمرة مضادات حيوية (مثل الجنتامايسين) تستخدم ضمن التغطية التجريبية للخراج القيحي مع السيفالوسبورين."
+        },
+        {
+          "term": "Sickler",
+          "definition_ar": "المريض المنجلي: مريض فقر الدم المنجلي، وهو أول المجموعات الست المعرضة للخراج القيحي بسبب احتشاءات الكبد وضعف المناعة."
+        },
+        {
+          "term": "Portal pyemia",
+          "definition_ar": "التجرثم البابي: وصول الجراثيم إلى الكبد عبر الوريد البابي من بؤرة عدوى داخل البطن كالزائدة الدودية أو رتوج القولون، مسببًا خراجات متعددة صغيرة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_Liver_L2_c02",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Amoebic Liver Abscess: the Tropical and Dysenteric Abscess",
+      "summary_ar": "يشرح هذا المفهوم الخراج الأميبي: طفيلي المتحولة الحالة للنسيج ومساره من الدوسنتاريا إلى الكبد (70% وحيد كبير و30% متعدد صغير)، ومسار المرض من التهاب كبدي أميبي إلى صديد الشوكولا فالطور الساكن فالانفجار، والمظاهر السريرية والتشخيص بالألتراساوند والتصوير المقطعي، والعلاج بالميترونيدازول 750 ملغ ثلاث مرات يوميًا لـ7-10 أيام مع بيان مؤشرات التفريغ الثلاثة.",
+      "sections": [
+        {
+          "heading": "Epidemiology, Organism and Pathogenesis",
+          "body_text": "Amoebic liver abscess carries two examinable nicknames: it is **the tropical abscess** (endemic in tropical regions) and **the dysenteric abscess** (it follows amoebic dysentery). Its distribution is characteristic: **70% are a solitary large abscess and 30% are multiple small abscesses**. The causative organism is **Entamoeba histolytica**. The pathogenesis chain (the lecture's M.O.) is: **dysentery - trophozoites invade the colonic mucosa and are carried in the portal venous blood to the liver - localized liquefaction of liver tissue by the cytolytic amoebae - abscess**. The classic patient is a young adult male from, or returning from, a tropical endemic area, with a preceding dysenteric illness - although a history of dysentery is absent in many cases. The right lobe is the usual seat of the single large abscess because of the streamline flow of portal blood to the right lobe (standard anatomical note) - a fact that also explains why the classic ultrasound finding is one large right-lobe lesion.",
+          "key_points": [
+            "The tropical and the dysenteric abscess; Entamoeba histolytica.",
+            "70% solitary large abscess, 30% multiple small abscesses.",
+            "Chain: dysentery - portal spread - localized liquefaction - abscess."
+          ]
+        },
+        {
+          "heading": "Course and Outcome of the Disease",
+          "body_text": "The **course (outcome) of the disease** unfolds in four examinable stages: **1) amoebic hepatitis** - the pre-suppurative stage with tender enlarged liver and fever; **2) amoebic abscess with chocolate pus (anchovy paste)** - liquefied liver tissue mixed with blood produces the thick, brown, odorless, sterile-looking chocolate or anchovy-paste pus; **3) encapsulated - dormant** - the abscess becomes walled off by fibrous tissue and may lie silent for months or years; **4) burst** - the dormant abscess may rupture **to the lung and pleural cavity**, **to the peritoneal cavity**, **into hollow organs** (stomach, intestine, biliary tree), or **to the skin** (a discharging sinus or fistula). This four-stage course with the four burst directions is a favorite short-answer and matching question - memorize it exactly as it stands, because each burst site has its own clinical drama: pleuritic pain and cough expectating brown sputum, peritonitis, or a sinus at the rib margin.",
+          "key_points": [
+            "1) Amoebic hepatitis, 2) abscess with chocolate (anchovy-paste) pus, 3) encapsulated dormant stage, 4) burst.",
+            "Burst sites: lung and pleural cavity, peritoneal cavity, hollow organs, skin.",
+            "The dormant encapsulated stage explains delayed presentations years after travel."
+          ],
+          "check": {
+            "prompt": "Put the natural course of an untreated amoebic liver abscess in the correct order:",
+            "options": [
+              "Amoebic hepatitis, then abscess with chocolate (anchovy-paste) pus, then encapsulation with a dormant stage, then possible burst to lung/pleural cavity, peritoneal cavity, hollow organs or skin",
+              "Abscess first, then amoebic hepatitis, then immediate spontaneous cure",
+              "A calcified dead cyst from the very beginning that never ruptures",
+              "Cholangitis, then suppuration, then calcification only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المسار الصحيح: التهاب كبدي أميبي، ثم خراج بصديد الشوكولا (معجون الأنشوجة)، ثم تليف محفظي وطور سكون، ثم انفجار محتمل إلى الرئة والجوف الجنبي أو الجوف البريتواني أو الأعضاء المجوفة أو الجلد."
+          }
+        },
+        {
+          "heading": "Clinical Features",
+          "body_text": "The clinical features are those of a chronic suppurative disease of the liver, and the lecture lists four: **1) anaemia** (anemia of chronic disease, worsened by malnutrition); **2) weight loss**; **3) pyrexia and night sweating** - drenching night sweats are characteristic and historically raised the differential with tuberculosis; **4) pain in the liver area with an enlarged, tender liver** - the tender hepatomegaly is the physical sign that directs attention to the liver. A preceding or concurrent history of amoebic dysentery, and tropical travel or residence, belong in every such history. The complications betray the burst sites listed above: pleuritic pain and right-sided chest signs, peritonitis, or a discharging cutaneous sinus each tell you where the abscess has ruptured.",
+          "key_points": [
+            "Anaemia, weight loss, pyrexia with night sweating, and pain in the liver area with enlarged tender liver.",
+            "Night sweats raise the old differential with tuberculosis.",
+            "Complication patterns reveal the burst site (chest, peritoneum, hollow organ, skin)."
+          ]
+        },
+        {
+          "heading": "Diagnosis, Including the CT Appearance",
+          "body_text": "**Diagnosis uses US, CT and X-ray** - the lecture specifies a **chest film (CXR) and an abdominal film** alongside ultrasound and CT. The lecture's CT images of an amoebic abscess show a **large, well-defined, low-attenuation (hypodense) lesion within the liver parenchyma with a THICK wall and HOMOGENOUS content**; the wall enhances after contrast, and a small central focus of gas or denser material may be visible - the arrows on the lecture images point to the thickened superior wall of the abscess. This 'thick wall, homogenous content' appearance separates the amoebic abscess from the simple cyst (thin, unmeasurable wall) and from the pyogenic abscess (multiloculated complex mass). **Isolation of the organism**: Entamoeba histolytica can be sought **from the stool** (cysts or trophozoites), but isolation **from the liver lesion is difficult, because the amoebae live in the periphery of the abscess** - the aspirated pus is therefore often negative for the parasite. The **chocolate (anchovy-paste) pus** is itself virtually diagnostic, and modern practice adds serum amoebic serology (ELISA antibodies), which is positive in the great majority (standard complement to the lecture).",
+          "key_points": [
+            "US, CT and X-ray (CXR and abdominal film).",
+            "CT: well-defined hypodense lesion with a thick enhancing wall and homogenous content.",
+            "Organism isolation: from stool possible; from the liver lesion difficult (amoebae in the periphery); chocolate pus is diagnostic."
+          ],
+          "check": {
+            "prompt": "Why is Entamoeba histolytica often not found in the aspirated pus of an amoebic liver abscess?",
+            "options": [
+              "The organisms live in the periphery of the abscess wall, not free within the pus",
+              "The pus is always a completely sterile fluid",
+              "Metronidazole kills all trophozoites within hours, before any aspiration",
+              "The parasite colonizes only the gallbladder, never the liver"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تتواجد الأميبا في محيط الخراج (في الجدار) وليس داخل القيح ذاته، لذا يكون فحص القيح سلبيًا غالبًا، بينما يدل لون الصديد الشوكولاتي (معجون الأنشوجة) على التشخيص بذاته."
+          }
+        },
+        {
+          "heading": "Treatment and the Indications for Drainage",
+          "body_text": "**Treatment**: **1) Metronidazole 750 mg tds (three times daily) for 7 - 10 days (mainly)** - this is the mainstay and usually the only treatment required. **2) Aspiration under ultrasound guidance (possible)** - both diagnostic (yielding chocolate pus) and therapeutic decompression. **3) Laparoscopic or open drainage (might be needed)** - reserved for failures and complicated abscesses. The **indications for drainage** are exactly three, and they are a favorite exam list: **1) no response to metronidazole after 5 days** (persistent fever and toxicity - the 5-day rule); **2) too big size** (a giant or rapidly enlarging abscess threatening rupture); **3) bacterial superadded infection** (secondary infection of the abscess, suggested by foul mixed pus and rising inflammatory markers). Note that metronidazole covers the amoeba but not superadded bacteria, so broad-spectrum antibiotics are added when secondary infection is confirmed. Percutaneous ultrasound-guided aspiration is safe and repeatable, with laparoscopic or open drainage reserved for thick multiloculated cavities, rupture, or failed percutaneous therapy.",
+          "key_points": [
+            "Metronidazole 750 mg tds for 7-10 days - the mainstay.",
+            "Ultrasound-guided aspiration when indicated; laparoscopic or open drainage might be needed.",
+            "Drainage indications: no response after 5 days, too big size, bacterial superadded infection."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Entamoeba histolytica",
+          "definition_ar": "المتحولة الحالة للنسيج: الطفيلي المسبب للدوسنتاريا الأميبية وخراج الكبد الأميبي؛ يصل إلى الكبد عبر الدورة الدموية البابية مسببًا انصهارًا موضعًا للنسيج الكبدي."
+        },
+        {
+          "term": "Chocolate (anchovy-paste) pus",
+          "definition_ar": "صديد الشوكولا أو معجون الأنشوجة: قيح بني سميك بلا رائحة من نسيج كبدي منصهر ودم؛ شبه مميز للخراج الأميبي."
+        },
+        {
+          "term": "Amoebic hepatitis",
+          "definition_ar": "التهاب الكبد الأميبي: المرحلة الأولى قبل تشكل الخراج، مع تضخم كبدي مؤلم وحمى."
+        },
+        {
+          "term": "Tropical abscess",
+          "definition_ar": "الخراج المداري: لقب خراج الكبد الأميبي لشيوعه في المناطق المدارية الموبوءة."
+        },
+        {
+          "term": "Dysenteric abscess",
+          "definition_ar": "الخراج الدوسنتاري: لقب الخراج الأميبي لأنه يتلو دوسنتاريا أميبية."
+        },
+        {
+          "term": "Metronidazole",
+          "definition_ar": "الميترونيدازول: الدواء الأساسي للخراج الأميبي بجرعة 750 ملغ ثلاث مرات يوميًا لمدة 7-10 أيام."
+        },
+        {
+          "term": "Superadded bacterial infection",
+          "definition_ar": "الإصابة الجرثومية الثانوية فوق الخراج الأميبي؛ أحد مؤشرات التفريغ الثلاثة وتتطلب مضادات حيوية واسعة إضافة للميترونيدازول."
+        },
+        {
+          "term": "Dormant encapsulated abscess",
+          "definition_ar": "الخراج المحفظ في طور السكون: مرحلة يتليف فيها الخراج ويصمت شهورًا أو سنوات وقد ينفجر لاحقًا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_Liver_L2_c03",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Simple Liver Cyst",
+      "summary_ar": "يشرح هذا المفهوم الكيس الكبدي البسيط: اكتشاف عرضي بجدار رفيع منتظم وحيد الحجرة ومحتوى متجانس، بلا استجابة نسيجية محيطة وبلا حواجز أو تكلل أو تعزيز أو عقيدات جدارية، وعلامات الإنذار التي تثير الشك بورم كيسي، والعلاج من اللاشيء عند غياب الأعراض إلى إزالة السقف الجراحية عند الكبير العرضي.",
+      "sections": [
+        {
+          "heading": "Definition and Diagnostic Imaging Features",
+          "body_text": "A **simple liver cyst** is a fluid-filled developmental lesion that is typically a **coincidental finding** - discovered on ultrasound or CT performed for something else. Its diagnostic features are deliberately bland, and every item is examinable: **regular, thin wall, unilocular**; **homogenous** content; **no surrounding tissue response** (no inflammatory or mass reaction in the adjacent liver); and **no variation in density within the cyst cavity**. On **CT the lesion has a sharply defined margin and no measurable wall**. The exclusion list is the highest-yield sentence in this topic: **NO septations, NO calcification, NO enhancement, and NO mural nodules**. A simple cyst also **has no microbial cause** (a TRUE statement from the lecture's revision list) - it is not an infection and needs no antibiotics. Whenever any of the 'NO' features is present the lesion is not simple: multiloculation points to a pyogenic abscess or hydatid disease (daughter cysts); a thick enhancing wall with homogenous content points to an amoebic abscess; and septations with mural nodules and enhancement raise the suspicion of a **cystic tumor** (biliary cystadenoma or cystadenocarcinoma) - the reason the miscellaneous objectives include cystic tumors.",
+          "key_points": [
+            "Coincidental finding; regular thin wall, unilocular, homogenous, no surrounding tissue response, no density variation.",
+            "CT: sharply defined margin with no measurable wall.",
+            "NO septations, calcification, enhancement or mural nodules; no microbial cause."
+          ],
+          "check": {
+            "prompt": "Compared with an amoebic liver abscess, the wall of a simple liver cyst is:",
+            "options": [
+              "Thin - on CT often not measurable at all - whereas the amoebic abscess has a thick enhancing wall",
+              "Thicker than the wall of an amoebic abscess",
+              "Identical in thickness, because both lesions have thick walls",
+              "Always heavily calcified in every simple cyst"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الكيس البسيط جداره رفيع منتظم وغالبًا غير قابل للقياس في التصوير المقطعي مع حافة محددة بحدة، بينما للخراج الأميبي جدار سميك محيط بمحتوى متجانس؛ كما أن الكيس البسيط لا سبب جرثوميًا له أصلًا."
+          }
+        },
+        {
+          "heading": "Management",
+          "body_text": "**Management**: **1) No treatment if it is asymptomatic** - this covers the vast majority: explain the benign nature of the lesion and arrange follow-up imaging only as needed. **2) Aspiration under ultrasound guidance** - it relieves symptoms and confirms the diagnosis, but carries a **possibility of recurrence** (the lecture marks this caveat with a question mark): simple aspiration alone commonly fails because the secreting cyst lining remains behind. **3) Definitive treatment for the large symptomatic cyst is open or laparoscopic deroofing** (also called fenestration) - excising the projecting roof of the cyst so that the cavity collapses and obliterates onto the liver surface. The laparoscopic route is now the preferred approach for suitable cysts because it combines definitive treatment with minimal access, while open deroofing is reserved for deep, inaccessible or recurrent cysts (standard surgical practice). Symptom criteria for treatment are pain, early satiety or pressure effects from a genuinely large cyst - not the mere presence of the cyst.",
+          "key_points": [
+            "No treatment if asymptomatic.",
+            "Ultrasound-guided aspiration - possible, with a risk of recurrence.",
+            "Definitive treatment of the large symptomatic cyst: open or laparoscopic deroofing."
+          ]
+        },
+        {
+          "heading": "The One-Screen Differential of a Cystic Liver Lesion",
+          "body_text": "Read every ultrasound report of a liver cyst as a branching question. **Thin wall, unilocular, homogenous, no septations/calcification/enhancement/mural nodules = simple cyst** - leave it alone unless symptomatic. **Thick wall with homogenous content = amoebic abscess** - metronidazole with drainage only on the three indications. **Multiloculated complex cystic mass with fever = pyogenic abscess** - antibiotics plus drainage. **Multiloculated cyst with daughter cysts and a floating membrane, in a Mediterranean sheep-raising area = hydatid cyst** - serology, then mostly surgery. **Multiple congenital cysts with polycystic kidneys = polycystic liver disease** - analgesia, then fenestration if refractory. **Mural nodules, septations and enhancement in a 'cyst' = cystic tumor until proven otherwise** - that red-flag combination must never be dismissed as simple. This one screen separates the entire lecture and is exactly how MCQs on liver cysts are constructed: each option differs by one imaging feature.",
+          "key_points": [
+            "Simple cyst: thin, unilocular, homogenous, none of the red flags.",
+            "Amoebic: thick wall, homogenous content; pyogenic: multiloculated with sepsis; hydatid: daughter cysts and floating membrane.",
+            "Septations plus mural nodules plus enhancement = cystic tumor, not a simple cyst."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Simple liver cyst",
+          "definition_ar": "الكيس الكبدي البسيط: كيس تنمووي يُكتشف صدفة، جداره رفيع منتظم وحيد الحجرة محتواه متجانس، بلا حواجز أو تكلل أو تعزيز أو عقيدات جدارية، ولا سبب جرثوميًا له."
+        },
+        {
+          "term": "Deroofing (fenestration)",
+          "definition_ar": "إزالة سقف الكيس أو النافذة: العلاج الجذري للكيس البسيط الكبير العرضي، إما بالجراحة المفتوحة أو التنظيرية."
+        },
+        {
+          "term": "Mural nodule",
+          "definition_ar": "العقيدة الجدارية: كتلة بارزة من جدار الكيس؛ وجودها يستبعد البساطة ويثير الشك بورم كيسي."
+        },
+        {
+          "term": "Septation",
+          "definition_ar": "الحاجز داخل الكيس: يعني تعدد الحجرات والملوثات؛ لا يوجد في الكيس البسيط مطلقًا."
+        },
+        {
+          "term": "Coincidental (incidental) finding",
+          "definition_ar": "الاكتشاف العرضي: الكيس البسيط يُكتشف صدفة في تصوير أُجري لسبب آخر، وغالبًا لا يحتاج علاجًا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_Liver_L2_c04",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Polycystic Liver Disease",
+      "summary_ar": "يشرح هذا المفهوم داء الكبد متعدد الأكياس: مرض خلقي متعدد الأكياس يرتبط بأكياس الكليتين وكثيرًا ما يكون بلا أعراض، وألمه الشديد المفاجئ سببه النزف داخل كيس، وعلاجه المسكنات أولًا ثم النافذة الجراحية (المفتوحة أو التنظيرية) عند عدم الاستجابة.",
+      "sections": [
+        {
+          "heading": "Congenital Multiple Cysts and the Kidney Association",
+          "body_text": "**Polycystic liver disease** is **congenital** and by definition **multiple** - dozens to hundreds of cysts of varying size gradually replace and expand the liver substance. Its defining association is **polycystic formation in the kidneys**: hepatorenal polycystic disease behaves as one diathesis, and the lecture's revision list states it plainly - polycystic liver disease is **considered a polycystic systemic disease** (a TRUE item). Most patients are **often asymptomatic - again a coincidental finding** on ultrasound or CT done for renal or other complaints. Because the kidneys share the disease, renal function and blood pressure must be assessed in every polycystic liver patient, and the individual cysts themselves are of the same bland simple-cyst type - it is their number and cumulative volume that produce the clinical picture.",
+          "key_points": [
+            "Congenital, multiple, associated with polycystic formation in the kidneys.",
+            "Often asymptomatic / coincidental finding - a polycystic systemic disease (TRUE revision item).",
+            "Assess renal function and blood pressure in every patient."
+          ]
+        },
+        {
+          "heading": "Symptoms: Discomfort and Hemorrhage into a Cyst",
+          "body_text": "Symptoms come from volume and from complications of individual cysts. **Discomfort** is chronic - a dragging fullness, early satiety and visible abdominal distension from gross hepatomegaly. **Sometimes there is severe pain, due to hemorrhage into a cyst** - a sudden, severe, localized pain that can mimic an acute abdomen and demands **ultrasound or CT scan** to demonstrate fresh blood within one of the cysts (echogenic or high-attenuation content replacing the simple fluid). The sudden severe pain of a polycystic liver is hemorrhage until imaging proves otherwise - the same logic as 'sudden pain in a simple cyst means bleed until excluded'.",
+          "key_points": [
+            "Chronic discomfort from gross hepatomegaly.",
+            "Severe sudden pain = hemorrhage into a cyst.",
+            "Confirm the hemorrhage with ultrasound or CT scan."
+          ],
+          "check": {
+            "prompt": "A patient with known polycystic liver disease suddenly develops severe right upper quadrant pain. What is the most likely explanation and the indicated investigation?",
+            "options": [
+              "Hemorrhage into a cyst - confirm with ultrasound or CT scan",
+              "Malignant transformation of a cyst - confirm with tumor markers",
+              "Rupture into the pleural cavity - confirm with chest X-ray only",
+              "Acute cholangitis - confirm immediately with ERCP"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "السبب الأشيع للألم الشديد المفاجئ في الكبد متعدد الأكياس هو النزف داخل أحد الأكياس، ويُثبت بالألتراساوند أو التصوير المقطعي؛ أما التحول الخبيث فنادر جدًا لا يُفترض أولًا."
+          }
+        },
+        {
+          "heading": "Management: Analgesia First, Fenestration if Refractory",
+          "body_text": "**Management is conservative first**: **analgesia** for symptomatic episodes, with observation and reassurance for the asymptomatic majority. **If there is no response to analgesia, proceed to open or laparoscopic fenestration of the liver cysts** - widely deroofing the most voluminous superficial cysts (usually combined with aspiration of their contents) so that the abdomen is decompressed. Fenestration relieves pressure symptoms but is palliative rather than curative in extensive disease, because deep cysts remain; renal cystic disease must be managed in parallel, and screening of relatives is standard practice given the hereditary nature of the condition. The stepwise sequence - analgesia, then fenestration for non-responders - is exactly how the lecture frames it and how exam questions test it.",
+          "key_points": [
+            "Analgesia first; the asymptomatic majority needs no intervention.",
+            "No response to analgesia - open or laparoscopic fenestration of the cysts.",
+            "Fenestration is palliative; renal disease and family screening run in parallel."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Polycystic liver disease",
+          "definition_ar": "داء الكبد متعدد الأكياس: مرض خلقي متعدد الأكياس يرتبط بتكوّن الأكياس في الكليتين، وكثيرًا ما يكون بلا أعراض واكتشافًا عرضيًا."
+        },
+        {
+          "term": "Fenestration",
+          "definition_ar": "النافذة: فتح سقوف الأكياس مفتوحًا أو تنظيريًا لتخفيف الضغط بعد فشل المسكنات في داء الكبد متعدد الأكياس."
+        },
+        {
+          "term": "Hemorrhage into a cyst",
+          "definition_ar": "النزف داخل كيس: سبب الألم الشديد المفاجئ في الكبد متعدد الأكياس؛ يُشخص بالألتراساوند أو التصوير المقطعي."
+        },
+        {
+          "term": "Polycystic kidneys",
+          "definition_ar": "الكلى متعددة الأكياس: الارتباط المرضي المميز لداء الكبد متعدد الأكياس؛ يفرض تقييم وظائف الكلية وضغط الدم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_Liver_L2_c05",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Hydatid Liver Disease: Life Cycle, Cyst Structure and Imaging",
+      "summary_ar": "يشرح هذا المفهوم الحويصلة العدارية الكبدية: دورة حياة المشوكة الحبيبية (الكلب مضيف نهائي والخروف والإنسان وسيطان، والتوزع 70% كبد و20% رئة و10% أماكن أخرى)، وطبقات الحويصلة الثلاث، وخصائص السائل العداري، والمظاهر التصويرية بالألتراساوند والتصوير المقطعي والرنين مع أكياس البنات والرمل العداري وعلامة زنبق الماء.",
+      "sections": [
+        {
+          "heading": "The Worm and Its Life Cycle",
+          "body_text": "**Hydatid liver disease is common in Mediterranean countries** - the sheep-raising belt that includes the Middle East - and wherever dogs and sheep live together. The causative agent is **the larva of Echinococcus granulosus**. The life cycle as the lecture states it: **the intestine of dogs is the definitive host - eggs are passed in dog feces onto the grass - sheep or human ingest the eggs - the embryo hatches, enters the portal blood - 70% settle in the liver, 20% in the lung, 10% elsewhere** (kidney, spleen, bone and brain are the standard 'elsewhere' sites). The human is therefore an **accidental intermediate host** - the dog, not man, is the definitive host carrying the adult worm, and the sheep is the usual intermediate host that maintains the cycle. The 70/20/10 distribution is one of the most quoted numbers of the whole lecture, and the host question is the most quoted true/false trap: 'hydatid cyst caused by E. granulosus affecting human as a definitive host' is FALSE.",
+          "key_points": [
+            "Common in Mediterranean countries; the larva of Echinococcus granulosus.",
+            "Dog = definitive host; eggs on grass; sheep or human = intermediate hosts; embryo reaches the portal blood.",
+            "Settlement: 70% liver, 20% lung, 10% elsewhere; the human is an accidental intermediate host."
+          ],
+          "check": {
+            "prompt": "In the life cycle of Echinococcus granulosus, which statement about hosts is correct?",
+            "options": [
+              "The dog is the definitive host; sheep and humans are intermediate hosts",
+              "The human is the definitive host and the dog is the intermediate host",
+              "The sheep is the definitive host and the dog is intermediate",
+              "Echinococcus granulosus has no definitive host and is free-living"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الكلب هو المضيف النهائي الذي يحمل الدودة البالغة في أمعائه ويطرح البيوض على العشب، بينما الخروف والإنسان مضيفان وسيطان يحملان الطور اليرقي؛ لذلك فعبارة 'الإنسان مضيف نهائي' هي العبارة الخاطئة الشهيرة في الامتحان."
+          }
+        },
+        {
+          "heading": "Cyst Wall Pathology: the Three Layers",
+          "body_text": "The intact hydatid cyst has **three layers** - a strictly ordered exam list: **1) adventitia** - the fibrous host reaction around the cyst (the pericyst), produced by the patient's own liver, and the layer that adheres to liver tissue and neighboring structures; **2) ectocyst - the laminated membrane** - the parasite's acellular, laminated, chitinous outer coat; **3) endocyst - the germinal membrane** - the living inner layer that buds **daughter cysts** and protoscolices into the cyst fluid. The three layers explain three clinical facts: the laminated membrane is tough enough to be delivered intact at surgery (and to float as the 'membrane' on imaging); the germinal membrane is the reproductive factory, so any of it left behind means recurrence; and the adventitia is host tissue, which is why careful dissection can stay in the plane between adventitia and ectocyst while protecting the liver.",
+          "key_points": [
+            "Three layers: adventitia (host fibrous pericyst), ectocyst (laminated membrane), endocyst (germinal membrane).",
+            "The germinal membrane forms daughter cysts - incomplete removal means recurrence.",
+            "Adventitia is host tissue; ectocyst and endocyst belong to the parasite."
+          ]
+        },
+        {
+          "heading": "Hydatid Fluid",
+          "body_text": "**Hydatid fluid** has five examinable properties: it is **crystal clear**; its **specific gravity is 1.005 - 1.009**; it is **under tension** - which is why a minor blow can rupture the cyst; **active cysts contain a large number of small daughter cysts** floating in the fluid; and it **contains no albumin** - a traditional laboratory distinction. Crucially, the fluid is **infectious**: it carries live protoscolices, so spillage during rupture or surgery can implant daughter cysts throughout the peritoneal cavity (secondary echinococcosis) and can trigger **anaphylactic shock**. The statement 'hydatid cyst fluid is not infectious' is therefore one of the lecture's FALSE revision items - the exact opposite of the truth, and the reason surgeons protect the operative field and instill scolicidal agents.",
+          "key_points": [
+            "Crystal clear; specific gravity 1.005-1.009; under tension; no albumin.",
+            "Active cysts contain many small daughter cysts.",
+            "The fluid IS infectious - peritoneal contamination and anaphylactic shock follow spillage."
+          ],
+          "check": {
+            "prompt": "Which statement about hydatid cyst fluid is TRUE?",
+            "options": [
+              "Crystal clear, specific gravity 1.005-1.009, under tension, contains no albumin - and is infectious because it holds protoscolices",
+              "It is thick chocolate fluid rich in albumin",
+              "It is non-infectious and completely safe if spilled into the peritoneum",
+              "It is turbid pus with a specific gravity above 1.100"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "السائل العداري رائق كالماء البلوري، كثافته النوعية 1.005-1.009، تحت ضغط، لا يحتوي ألبومين، والأكياس النشطة تحوي أكياس بنات كثيرة؛ وهو معدٍ لأنه يحمل رؤوس الأسكولكس التي قد تنزرع في البريتوان وتسبب صدمة تحسسية."
+          }
+        },
+        {
+          "heading": "Imaging: Ultrasound, CT and MRI, the Specimen, and the Water Lily Sign",
+          "body_text": "**Ultrasound shows a multiloculated cyst**: the lecture's own scans display a well-defined anechoic cystic lesion within the liver parenchyma with internal septations or multiple locules (measured **103.6 x 73.5 mm**) and a second complex view of the same mass with internal echoes and a thickened wall or internal septum (**105.3 x 77.8 mm**), acquired on a TOSHIBA machine. **CT scan and MRI add the pathognomonic floating membrane within the cyst**. The lecture's CT case (a 35-year-old woman scanned in March 2015 on a SOMATOM Definition AS computed tomography scanner) shows a very large, well-circumscribed, hypodense, fluid-filled mass occupying the majority of the right lobe of the liver with thin walls. Its companion surgical specimen photograph shows a metal tray filled with reddish-brown fluid (cyst fluid and blood) in which **multiple translucent, whitish-yellow, spherical-to-oval structures float - the daughter cysts and hydatid sand (protoscolices), which are pathognomonic for hydatid disease** - together with larger collapsed membranous structures (the laminated membrane or endocyst) of varying sizes; and the intraoperative photograph - surgical retractors holding the wound open and the surgeon's gloved hands in view - shows the large, tense, reddish-purple, smooth-walled cystic mass (the intact or partially opened hydatid cyst) exposed at laparotomy prior to evacuation. Together the three clinical photographs give the radiological and macroscopic correlation of a single hepatic hydatid case: the CT appearance of the cyst, the evacuated contents (daughter cysts and hydatid sand), and the operative view of the cyst itself. The follow-up slide displays three imaging views (two ultrasound views and one CT) of a hydatid cyst after treatment with rupture: the first grayscale ultrasound view shows the cyst interior mostly clear and anechoic, unlike the second view, in which the cavity becomes filled with heterogeneous, hyperechoic (gray/white) material and internal echoes - detached membranes and debris; the axial CT reveals multiple curvilinear, folded, ribbon-like structures floating within the fluid - the detached endocyst (germinal layer) and laminated membrane creating the classic **'water lily sign'** of a ruptured hydatid cyst.",
+          "key_points": [
+            "Ultrasound: multiloculated cyst with septations/locules (lecture measurements 103.6 x 73.5 mm and 105.3 x 77.8 mm).",
+            "CT and MRI: floating membrane within the cyst; daughter cysts and hydatid sand are pathognomonic on the specimen.",
+            "Post-treatment/rupture: floating shadows and the water lily sign from detached membranes."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Echinococcus granulosus",
+          "definition_ar": "المشوكة الحبيبية: دودة شريطية يقيم طورها البالغ في أمعاء الكلب (المضيف النهائي) وتصيب الإنسان والخروف بالطور اليرقي فتتكوّن الحويصلة العدارية."
+        },
+        {
+          "term": "Definitive host",
+          "definition_ar": "المضيف النهائي: الكلب، يحمل الدودة البالغة في أمعائه ويطرح البيوض في برازه على العشب."
+        },
+        {
+          "term": "Adventitia",
+          "definition_ar": "الأدفنيتشيا (المحفظة الليفية): الطبقة الخارجية للحويصلة العدارية، وهي تفاعل نسجي من كبد المريض نفسه."
+        },
+        {
+          "term": "Ectocyst",
+          "definition_ar": "الإكتوسيست: الغشاء الصفحي، الطبقة الوسطى اللاخلوية الخاصة بالطفيلي وقوية لدرجة أنها تنزاح كاملة أثناء الجراحة."
+        },
+        {
+          "term": "Endocyst",
+          "definition_ar": "الإندوسيست: الغشاء الجرثومي الداخلي الحي الذي يُنتج الأكياس البنات ورؤوس الأسكولكس؛ بقاؤه يعني نكس المرض."
+        },
+        {
+          "term": "Daughter cysts",
+          "definition_ar": "الأكياس البنات: أكياس صغيرة كثيرة داخل الحويصلة النشطة، وهي مصدر العدارية الثانوية عند تسربها."
+        },
+        {
+          "term": "Hydatid sand",
+          "definition_ar": "الرمل العداري: رؤوس الأسكولكس العائمة في السائل العداري؛ مظهر مميز للمرض على العينة الجراحية."
+        },
+        {
+          "term": "Water lily sign",
+          "definition_ar": "علامة زنبق الماء: أغشية منفصلة عائمة تُرى بعد انفجار الحويصلة أو معالجتها، كظلال عائمة بالألتراساوند وكتلاف شريطية بالتصوير المقطعي."
+        },
+        {
+          "term": "Hydatid fluid",
+          "definition_ar": "السائل العداري: رائق كالماء البلوري، كثافته النوعية 1.005-1.009، تحت ضغط، لا يحتوي ألبومين، وهو معدٍ لاحتوائه رؤوس الأسكولكس."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_Liver_L2_c06",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Hydatid Liver Disease: Clinical Features, Course, Diagnosis and Treatment",
+      "summary_ar": "يشرح هذا المفهوم مظاهر الحويصلة العدارية السريرية (لا أعراض، كتلة بطنية، مظاهر ضغط، مضاعفات كالانفجار داخل الصفراوية والبريتواني)، ومسار المرض، والتشخيص بالألتراساوند والتصوير المقطعي والرنين والاختبارات المصلية (إليزا وكازوني 75% وتثبيت المتممة)، والعلاج الجراحي مع المواد القاتلة للأسكولكس وتقنية PAIR والعلاج الدوائي بالجرعات الدقيقة.",
+      "sections": [
+        {
+          "heading": "Clinical Features",
+          "body_text": "**Clinical features** fall into four examinable groups: **1) symptomless** - the cyst is an incidental finding; **2) abdominal mass** - a painless, smooth, tense mass in the right hypochondrium is the classic presentation of a long-standing cyst; **3) pressure manifestations** - **discomfort**, **fullness and dyspepsia** (a large cyst pressing on the stomach and surrounding organs), and **jaundice** (compression of the biliary tree - the mechanical, pressure route to jaundice, before any rupture happens); **4) complications** - **suppuration** (secondary bacterial infection of the cyst, with fever and pain); **rupture with daughter hydatids into the biliary tree (intrabiliary rupture) - causing jaundice and acute cholangitis** (membranes and daughter cysts escape into the bile ducts); **peritoneal rupture - presenting as an acute abdomen after minor abdominal trauma** (remember the fluid is under tension, so even a trivial blow suffices); and rupture into the **pleural cavity** (thoracic extension). The pressure-versus-complication grouping is how viva examiners like the answer delivered, and the two rupture syndromes - jaundice with cholangitis, and sudden peritonitis after minor trauma - are the two favorite MCQ vignettes of the whole lecture.",
+          "key_points": [
+            "Symptomless; abdominal mass; pressure manifestations (discomfort, fullness and dyspepsia, jaundice).",
+            "Complications: suppuration; intrabiliary rupture of daughter hydatids - jaundice plus acute cholangitis.",
+            "Peritoneal rupture - acute abdomen after minor abdominal trauma; rupture to the pleural cavity."
+          ]
+        },
+        {
+          "heading": "Course of the Disease",
+          "body_text": "**The course of the disease** has three ends: **1) a dead - calcified cyst** - the parasite dies and the wall calcifies into a dense, inactive lesion; **2) the cyst enlarges gradually and becomes manifested by its size - and a huge cyst may become pedunculated and float in the peritoneal cavity**, when the differential diagnosis turns to **mesenteric, pancreatic or renal cyst** - a floating hydatid is the great mimicker of other abdominal cysts; **3) complications, e.g. rupture or infection**, along the routes described above. This triad explains every imaging vignette: an incidental calcified liver lesion in an endemic-area patient (the dead cyst), a giant freely mobile abdominal cyst (the floating cyst), or a sudden abdominal catastrophe after trivial trauma (the rupture).",
+          "key_points": [
+            "Dead calcified cyst; gradual enlargement until manifested by size; complications (rupture, infection).",
+            "A huge cyst may float in the peritoneal cavity - DDx: mesenteric, pancreatic or renal cyst.",
+            "Calcification means the cyst is dead; enlargement means it is active."
+          ]
+        },
+        {
+          "heading": "Diagnosis: Imaging and Serology",
+          "body_text": "**Diagnosis**: **1) ultrasound - a multiloculated cyst** (with daughter cysts and septations); **2) CT scan and MRI - a floating membrane within the cysts** (the detached laminated membrane, water-lily appearance); **3) serological and immunological tests**: **a) antibodies to hydatid antigen by ELISA** - the modern standard; **b) Casoni's test - positive in 75%** (the classical intradermal hypersensitivity test); **c) the complement fixation test** (the older serologic tool). Remember again: liver cysts are diagnosed mainly by **ultrasound** - X-ray contributes only calcification in a dead cyst or other indirect signs, and the statement that liver cysts are 'diagnosed mainly by X-ray' is one of the lecture's false revision items. Peripheral eosinophilia may support the diagnosis (standard adjunct), and the definitive parasitologic proof comes from the operative specimen: daughter cysts and hydatid sand.",
+          "key_points": [
+            "US: multiloculated cyst; CT and MRI: floating membrane within the cysts.",
+            "Serology: ELISA antibodies to hydatid antigen; Casoni's test 75% positive; complement fixation test.",
+            "Ultrasound is the main diagnostic tool - never plain X-ray."
+          ],
+          "check": {
+            "prompt": "Liver cysts are diagnosed mainly by which modality?",
+            "options": [
+              "Ultrasound (X-ray is only an adjunct - calcification or an air/fluid level)",
+              "Plain X-ray of the abdomen mainly",
+              "Barium follow-through",
+              "Hepatic angiography mainly"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الألتراساوند هو الفحص الرئيسي لتشخيص أكياس الكبد جميعها، ويضيف التصوير المقطعي والرنين التفاصيل والغشاء العائم، أما الأشعة العادية فهي مساعدة فقط (تكلل الحويصلة الميتة أو مستوى هواء-سائل في الخراج)؛ وعبارة 'التشخيص الرئيسي بالأشعة السينية' خاطئة."
+          }
+        },
+        {
+          "heading": "Surgical Treatment and Scolicidal Agents",
+          "body_text": "**Surgical treatment is the mainstay** - the lecture's own revision item states that **liver hydatid is treated mostly by surgery (TRUE)**. **Open surgical treatment** offers three escalating options: **A. deroofing with evacuation of the contents** - the standard operation: expose the cyst, aspirate it under field protection, instill a scolicidal agent, evacuate the daughter cysts and germinal membrane, and manage the residual cavity; **B. excision of the cysts** - total removal including the pericyst where anatomically safe; **C. liver resection - less likely** - reserved for giant peripheral cysts, destroyed liver tissue, or uncontrollable cysto-biliary communication. **Laparoscopic surgery might be beneficial** - the same steps with minimal access in selected patients. **Scolicidal agents** are the pharmacologic heart of the operation, killing protoscolices during evacuation: **1) ethanol alcohol 95%; 2) hypertonic saline; 3) silver nitrate 0.5%; 4) povidone iodine**. **PAIR - Puncture, Aspiration, Injection (of the scolicidal agent) and Re-aspiration** - is the percutaneous, image-guided option for selected uncomplicated cysts, always under drug cover. Medical therapy (next section) accompanies surgery, covers PAIR, and treats contamination.",
+          "key_points": [
+            "Mostly surgical: open deroofing with evacuation; excision of the cysts; liver resection (less likely).",
+            "Laparoscopic surgery might be beneficial; PAIR = puncture, aspiration, injection, re-aspiration.",
+            "Scolicidal agents: ethanol 95%, hypertonic saline, silver nitrate 0.5%, povidone iodine."
+          ],
+          "check": {
+            "prompt": "Which pair of scolicidal agents used in hydatid cyst surgery is correct?",
+            "options": [
+              "Ethanol alcohol 95% and silver nitrate 0.5%",
+              "Ethanol alcohol 50% and silver nitrate 5%",
+              "Metronidazole 750 mg tds and ceftriaxone",
+              "Normal saline and sterile water"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المواد القاتلة لرؤوس الأسكولكس هي الإيثانول 95%، والملح مفرط التوتر، ونترات الفضة 0.5%، وبوفيدون اليود؛ أما الميترونيدازول والمضادات الحيوية فليست مواد عدارية ولا تُحقن في الحويصلة."
+          }
+        },
+        {
+          "heading": "Medical (Antihelmintic) Treatment",
+          "body_text": "**Medical treatment** - the antihelmintic armory with its exact doses, exactly as the lecture gives them: **1) mebendazole 40 - 50 mg/kg; 2) albendazole 10 - 15 mg/kg; 3) praziquantel 40 mg/kg**. The benzimidazoles (mebendazole, albendazole) and praziquantel are used as **adjuncts around surgery and PAIR** (pre- and post-operative sterilization of cyst content), as **definitive therapy for inoperable, recurrent or disseminated disease**, and in combination (albendazole plus praziquantel is a recognized pairing - standard practice). The same drugs answer the surgical complication of **contamination of the peritoneal cavity**: the lecture's own instruction is '**careful [technique] and albendazole**'. Learn the three dose bands exactly - mebendazole 40-50, albendazole 10-15, praziquantel 40 mg/kg - because dose-matching is a ready-made MCQ, and confusing the amoebic dose (metronidazole 750 mg tds for 7-10 days) with the hydatid doses is the examiner's favorite cross-lecture trap.",
+          "key_points": [
+            "Mebendazole 40-50 mg/kg; albendazole 10-15 mg/kg; praziquantel 40 mg/kg.",
+            "Adjuncts to surgery and PAIR; definitive for inoperable, recurrent or disseminated disease.",
+            "Peritoneal contamination is answered by careful technique and albendazole."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Casoni's test",
+          "definition_ar": "اختبار كازوني: اختبار جلدي لفرط الحساسية للحويصلة العدارية، إيجابي بنسبة 75%."
+        },
+        {
+          "term": "ELISA",
+          "definition_ar": "الإليزا: فحص الأجسام المضادة لمستضد الحويصلة العدارية، وهو الفحص المصلي القياسي الحديث للتشخيص."
+        },
+        {
+          "term": "Complement fixation test",
+          "definition_ar": "اختبار تثبيت المتممة: أحد الاختبارات المصلية القديمة للعدارية المذكورة في المحاضرة."
+        },
+        {
+          "term": "PAIR",
+          "definition_ar": "PAIR: الوخز والشفط وحقن المادة القاتلة للأسكولكس ثم إعادة الشفط؛ تقنية عبر الجلد موجّهة بالتصوير لحويصلات مختارة مع غطاء دوائي."
+        },
+        {
+          "term": "Scolicidal agent",
+          "definition_ar": "المادة القاتلة للأسكولكس: الإيثانول 95% أو الملح مفرط التوتر أو نترات الفضة 0.5% أو بوفيدون اليود؛ تُستخدم أثناء إفراغ الحويصلة."
+        },
+        {
+          "term": "Deroofing with evacuation",
+          "definition_ar": "إزالة سقف الحويصلة مع إفراغ محتوياتها: العملية القياسية للحويصلة العدارية المفتوحة."
+        },
+        {
+          "term": "Mebendazole",
+          "definition_ar": "الميبندازول: مضاد للديدان يستخدم في العدارية بجرعة 40-50 ملغ/كغ."
+        },
+        {
+          "term": "Albendazole",
+          "definition_ar": "الألبيندازول: مضاد للديدان بجرعة 10-15 ملغ/كغ، يُستخدم حول الجراحة وعند تلوث البريتوان."
+        },
+        {
+          "term": "Praziquantel",
+          "definition_ar": "البرازيكانتل: مضاد للديدان بجرعة 40 ملغ/كغ في العدارية، ويرافق أحيانًا الألبيندازول."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_Liver_L2_c07",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Complications of Hydatid Surgery, Tuberculous Abscess and Cystic Tumors",
+      "summary_ar": "يسرد هذا المفهوم مضاعفات جراحة الحويصلة العدارية العشر (من التسرب الصفراوي إلى الصدمة التحسسية وتلوث البريتوان)، ثم الخراج الكبدي الدرني النادر المسبب بالعصية السلية وعلاجه بالتفريغ مع كورة مضادة للسل، ثم الورم الكيسي وعلامات إنذاره، وينتهي بمقارنة شاملة لكل آفات الكيس الكبدي.",
+      "sections": [
+        {
+          "heading": "The Ten Complications of Surgical Treatment of Hydatid Cysts",
+          "body_text": "Hydatid surgery is laden with complications, and the lecture lists **ten** - an exam list to be memorized in full: **1) biliary leak, leading to fistula** (cysto-biliary communication presenting with bile-stained discharge or cholestasis); **2) suppuration - a subhepatic, subphrenic or intrahepatic abscess** (an infected residual cavity or collection around the liver); **3) liver tissue damage and bleeding** (the liver is vascular and the adventitia is adherent to it); **4) recurrence** (viable protoscolices or daughter cysts left behind); **5) a missed small deep cyst** (intraoperative ultrasound is the safeguard - standard practice); **6) injuries of adjacent organs** (diaphragm with the pleural cavity, hollow viscera, kidney, and the great vessels behind the liver); **7) cholangitis** (an infected biliary communication); **8) anaphylactic shock** - the feared intraoperative collapse caused by hydatid fluid antigen spilling into the circulation; **9) contamination of the peritoneal cavity** with live protoscolices leading to secondary echinococcosis - the lecture's answer is 'careful [surgical technique] and albendazole'; and **10) wound infection**. Anaphylaxis and peritoneal contamination are the two dangers unique to hydatid surgery; recurrence and the missed deep cyst explain why postoperative albendazole and surveillance ultrasound are routine.",
+          "key_points": [
+            "Ten complications: biliary leak/fistula, suppuration (subhepatic/subphrenic/intrahepatic), liver damage and bleeding, recurrence, missed small deep cyst.",
+            "Adjacent organ injuries, cholangitis, anaphylactic shock, peritoneal contamination (careful technique and albendazole), wound infection.",
+            "Anaphylactic shock is caused by spilled hydatid fluid antigen - be ready to treat it intraoperatively."
+          ],
+          "check": {
+            "prompt": "Sudden hypotension with bronchospasm occurs during evacuation of a hydatid cyst. The mechanism is:",
+            "options": [
+              "Anaphylactic shock from spilled hydatid fluid antigen",
+              "Hypertonic saline toxicity",
+              "Simple hemorrhage from the cyst wall",
+              "A reaction to povidone iodine in every case"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تسرب السائل العداري أثناء الجراحة قد يسبب صدمة تحسسية حادة (أنافيلاكسية) بسبب مولدات المضاد في السائل؛ لذا يجب الحماية الدقيقة للحقل الجراحي واستخدام المواد القاتلة للأسكولكس والألبيندازول، والاستعداد لعلاج الأنافيلاكسيا فورًا."
+          }
+        },
+        {
+          "heading": "Tuberculous Liver Abscess (Cyst)",
+          "body_text": "The **tuberculous liver abscess (cyst)** is **rare**. Its organism is **Mycobacterium tuberculosis** - and emphatically not Enterobius vermicularis (the pinworm), which is the false distractor planted in the lecture's revision list. It occurs **mostly in endemic areas**. It **might be associated with pulmonary TB or TB lymphadenitis - but it might not be**: isolated hepatic tuberculosis exists, so a normal chest study never excludes it. Patients present with **nonspecific symptoms** (fever, weight loss, vague abdominal complaints) or are discovered during or after the diagnosis of **pulmonary TB or other extra-pulmonary TB**. **Diagnosis is by ultrasound and CT**, with aspiration providing material for microbiology and culture where available (standard practice); the definitive distinction from pyogenic and amoebic abscess is microbiologic, not radiologic. **Treatment is drainage plus an anti-TB course** - drainage alone, like drugs alone, is not enough; the combination is the exam answer.",
+          "key_points": [
+            "Rare; Mycobacterium tuberculosis; mostly endemic areas.",
+            "May or may not be associated with pulmonary TB or TB lymphadenitis; nonspecific presentation.",
+            "Diagnosis: US and CT. Treatment: drainage PLUS a full anti-TB course."
+          ]
+        },
+        {
+          "heading": "Cystic Tumors and the Integrated Picture of All Liver Cysts",
+          "body_text": "Two finishing thoughts organize the whole lecture. First, the objectives' miscellaneous item **cystic tumor**: the term covers neoplastic cystic lesions of the liver such as **biliary cystadenoma and cystadenocarcinoma** (the standard examples) - slow-growing tumors that masquerade as simple cysts until imaging shows their red flags: **septations, mural nodules and enhancement**, which is exactly why the simple-cyst criteria demand their absence. A suspected cystic tumor is managed by complete **excision** (standard principle), never by simple deroofing or observation. Second, the one-screen comparison of all six entities: **pyogenic abscess** - bacterial (E. coli, Streptococcus milleri), multiloculated cystic mass, antibiotics plus drainage; **amoebic abscess** - E. histolytica, 70% solitary large with thick wall and homogenous content, chocolate pus, metronidazole 750 mg tds for 7-10 days with drainage on its three indications; **simple cyst** - developmental, thin-walled, unilocular, homogenous with no septations/calcification/enhancement/mural nodules, no treatment if asymptomatic, deroofing if large and symptomatic; **polycystic disease** - congenital multiple cysts with polycystic kidneys, analgesia then fenestration; **hydatid cyst** - the larva of E. granulosus (dog definitive host, 70/20/10 distribution), multiloculated with daughter cysts and floating membrane, mostly surgery with scolicidal agents plus albendazole/mebendazole/praziquantel and PAIR in selected cases; **tuberculous abscess** - rare, M. tuberculosis in endemic areas, drainage plus anti-TB course. This grid, together with the lecture's 12 true/false revision items (fully converted into the MCQs and section checks of this file), is the final revision sheet for the exam.",
+          "key_points": [
+            "Cystic tumor (cystadenoma/cystadenocarcinoma): septations, mural nodules, enhancement - excision, not observation.",
+            "The six-entity grid separates etiology, imaging and treatment at a glance.",
+            "All 12 true/false revision items of the lecture are represented in this file's MCQs and checks."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Biliary leak (fistula)",
+          "definition_ar": "التسرب الصفراوي أو الناسور: أول مضاعفات جراحة العدارية، يحدث عند تواصل الحويصلة مع القنوات الصفراوية."
+        },
+        {
+          "term": "Anaphylactic shock",
+          "definition_ar": "الصدمة التحسسية: هبوط ضغط وضيق نفس حادان أثناء الجراحة نتيجة تسرب السائل العداري إلى الدوران؛ أخطر مضاعفات جراحة العدارية."
+        },
+        {
+          "term": "Subphrenic abscess",
+          "definition_ar": "الخراج تحت الحجاب: أحد مواضع القيح بعد تقيح الحويصلة أو جراحتها، مع الخراج تحت الكبدي وداخل الكبد."
+        },
+        {
+          "term": "Secondary echinococcosis",
+          "definition_ar": "العدارية الثانوية: انزراع رؤوس الأسكولكس في البريتوان بعد تسرب السائل العداري؛ تُمنع بالحذر وبالألبيندازول."
+        },
+        {
+          "term": "Tuberculous liver abscess",
+          "definition_ar": "الخراج الكبدي الدرني: نادر، سببه العصية السلية في المناطق الموبوءة؛ يشخص بالألتراساوند والتصوير المقطعي ويعالج بالتفريغ مع كورس كامل مضاد للسل."
+        },
+        {
+          "term": "Anti-TB course",
+          "definition_ar": "الكورس العلاجي المضاد للسل: يعطى مع التفريغ في الخراج الدرني؛ فالعلاج بالأدوية وحدها لا يكفي."
+        },
+        {
+          "term": "Cystic tumor (biliary cystadenoma)",
+          "definition_ar": "الورم الكيسي: كالورم القنوي الكيسي الحميد أو الخبيث؛ يُشتبه به عند وجود حواجز أو عقيدات جدارية أو تعزيز فيما يبدو كيسًا بسيطًا، وعلاجه الاستئصال الكامل."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_Liver_L2_f01",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c01",
+      "card_type": "basic",
+      "front_text": "Which microorganisms most commonly cause pyogenic liver abscess?",
+      "back_text": "Escherichia coli and Streptococcus milleri (commonly); also Streptococcus faecalis, Klebsiella, Proteus and Staphylococci - NOT mainly Staphylococcus aureus.",
+      "explanation_ar": "احفظ القاعدة: القولونية وميليري في القمة، والعنقوديات الذهبية ليست الأشيع في خراج الكبد.",
+      "tags": [
+        "pyogenic",
+        "microbiology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f02",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c01",
+      "card_type": "basic",
+      "front_text": "What is the commonest source/route of pyogenic liver abscess, and what are the other routes?",
+      "back_text": "Ascending infection through the bile duct (the commonest); then the portal vein, a peri-hepatic infective focus, and haematogenous spread (e.g. via the hepatic artery).",
+      "mnemonic_ar": "الترتيب: صفراوي صاعد، ثم بابي، ثم بؤرة حول الكبد، ثم شرياني.",
+      "tags": [
+        "pyogenic",
+        "routes"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f03",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c01",
+      "card_type": "basic",
+      "front_text": "List the six groups of patients at risk for pyogenic liver abscess.",
+      "back_text": "1) Sickler, 2) elderly, 3) malnourished, 4) immunosuppressed, 5) diabetics, 6) post-traumatic and post-op patients.",
+      "mnemonic_ar": "منجلي، عجوز، نحيل، مثبط المناعة، سكري، بعد رض أو عملية.",
+      "tags": [
+        "pyogenic",
+        "risk factors"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f04",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c01",
+      "card_type": "basic",
+      "front_text": "What is the treatment principle for pyogenic liver abscess?",
+      "back_text": "Antibiotics (e.g. aminoglycoside, cephalosporin) PLUS drainage - ultrasound-guided aspiration first, then laparoscopic drainage or laparotomy if needed; antibiotics alone are insufficient.",
+      "tags": [
+        "pyogenic",
+        "treatment"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f05",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "Which proportions and organism define amoebic liver abscess?",
+      "back_text": "Entamoeba histolytica; 70% are a solitary large abscess and 30% are multiple small abscesses; the tropical and dysenteric abscess.",
+      "tags": [
+        "amoebic",
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f06",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "Trace the pathogenesis chain of amoebic liver abscess.",
+      "back_text": "Dysentery - trophozoites carried via the portal blood to the liver - localized liquefaction of liver tissue - abscess (preceded by amoebic hepatitis).",
+      "tags": [
+        "amoebic",
+        "pathogenesis"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f07",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "What does aspirated pus look like in amoebic liver abscess?",
+      "back_text": "Thick, brown, odorless, chocolate pus - the classic anchovy paste; often parasite-negative because the amoebae live in the abscess periphery.",
+      "mnemonic_ar": "خيالك: علبة أنشوجة مفتوحة - معجون بني = أميبا.",
+      "is_vivid": true,
+      "tags": [
+        "amoebic",
+        "pus"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f08",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "First-line drug, dose and duration for amoebic liver abscess?",
+      "back_text": "Metronidazole 750 mg tds (three times daily) for 7-10 days (mainly); aspiration under ultrasound guidance is possible and drainage might be needed.",
+      "mnemonic_ar": "قاعدة: 750 في 3 جرعات لمدة 7-10 أيام.",
+      "tags": [
+        "amoebic",
+        "treatment"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f09",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "What are the three indications for drainage of an amoebic liver abscess?",
+      "back_text": "1) No response to metronidazole after 5 days; 2) too big size; 3) bacterial superadded infection.",
+      "mnemonic_ar": "قاعدة الخمسة: لا استجابة خلال 5 أيام، أو حجم كبير جدًا، أو تجرثم ثانوي.",
+      "tags": [
+        "amoebic",
+        "drainage"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f10",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "card_type": "basic",
+      "front_text": "Where can an amoebic liver abscess burst after its dormant encapsulated stage?",
+      "back_text": "To the lung and pleural cavity, the peritoneal cavity, hollow organs, and the skin.",
+      "is_vivid": true,
+      "tags": [
+        "amoebic",
+        "complications"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f11",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c03",
+      "card_type": "basic",
+      "front_text": "Which imaging features define a simple liver cyst and exclude the alternatives?",
+      "back_text": "Regular thin wall, unilocular, homogenous; no surrounding tissue response and no density variation; CT: sharply defined margin with no measurable wall; NO septations, calcification, enhancement or mural nodules.",
+      "tags": [
+        "simple cyst",
+        "imaging"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f12",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c03",
+      "card_type": "basic",
+      "front_text": "What is the definitive treatment of a large symptomatic simple liver cyst?",
+      "back_text": "Open or laparoscopic deroofing; no treatment if asymptomatic; ultrasound-guided aspiration alone risks recurrence.",
+      "tags": [
+        "simple cyst",
+        "treatment"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f13",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c04",
+      "card_type": "basic",
+      "front_text": "Polycystic liver disease: association, cause of severe sudden pain, and stepwise treatment?",
+      "back_text": "Congenital multiple cysts associated with polycystic kidneys (a systemic polycystic disease); severe sudden pain = hemorrhage into a cyst (confirm by US or CT); analgesia first, then open or laparoscopic fenestration if no response.",
+      "tags": [
+        "polycystic",
+        "treatment"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f14",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c05",
+      "card_type": "basic",
+      "front_text": "Name the hosts in the Echinococcus granulosus life cycle.",
+      "back_text": "The dog is the definitive host (adult worm in its intestine); sheep and humans are intermediate hosts - the human is an accidental intermediate host whose eggs-derived embryos reach the portal blood.",
+      "mnemonic_ar": "الكلب نهائي، والخروف والإنسان وسيطان؛ الإنسان مضيف وسيط عرضي.",
+      "tags": [
+        "hydatid",
+        "life cycle"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f15",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c05",
+      "card_type": "basic",
+      "front_text": "Where do Echinococcus granulosus larvae settle after reaching the portal blood?",
+      "back_text": "70% in the liver, 20% in the lung, 10% elsewhere (kidney, spleen, bone, brain).",
+      "mnemonic_ar": "قاعدة 70-20-10: كبد ثم رئة ثم أماكن أخرى.",
+      "tags": [
+        "hydatid",
+        "distribution"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f16",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c05",
+      "card_type": "basic",
+      "front_text": "What are the three layers of the hydatid cyst wall, from outside in?",
+      "back_text": "1) Adventitia (host fibrous pericyst); 2) Ectocyst - the laminated membrane; 3) Endocyst - the germinal membrane that buds daughter cysts and protoscolices.",
+      "mnemonic_ar": "من الخارج إلى الداخل: أدفنيتشيا، إكتوسيست، إندوسيست.",
+      "tags": [
+        "hydatid",
+        "pathology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f17",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c05",
+      "card_type": "basic",
+      "front_text": "List the properties of hydatid fluid and state whether it is infectious.",
+      "back_text": "Crystal clear; specific gravity 1.005-1.009; under tension; active cysts contain many small daughter cysts; contains no albumin - and it IS infectious (live protoscolices cause peritoneal contamination and anaphylaxis).",
+      "tags": [
+        "hydatid",
+        "fluid"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f18",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "card_type": "basic",
+      "front_text": "Which serological/immunological tests diagnose hydatid disease, and how does Casoni's test perform?",
+      "back_text": "ELISA antibodies to hydatid antigen (modern standard); Casoni's test positive in 75%; complement fixation test (older tool).",
+      "tags": [
+        "hydatid",
+        "serology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f19",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "card_type": "basic",
+      "front_text": "Name the four scolicidal agents with their exact concentrations.",
+      "back_text": "Ethanol alcohol 95%; hypertonic saline; silver nitrate 0.5%; povidone iodine.",
+      "mnemonic_ar": "إيثانول 95، ملح مفرط التوتر، نترات فضة 0.5، بوفيدون يود.",
+      "tags": [
+        "hydatid",
+        "scolicidal"
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_f20",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "card_type": "basic",
+      "front_text": "Give the medical (antihelmintic) treatment of hydatid disease with exact doses.",
+      "back_text": "Mebendazole 40-50 mg/kg; albendazole 10-15 mg/kg; praziquantel 40 mg/kg.",
+      "mnemonic_ar": "ميبندازول 40-50، ألبيندازول 10-15، برازيكانتل 40 ملغ/كغ.",
+      "tags": [
+        "hydatid",
+        "medical treatment"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_Liver_L2_m01",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "question_stem": "A 38-year-old male farmer from a tropical endemic region presents with three weeks of swinging fever, drenching night sweats, 6 kg weight loss, dull right hypochondrial pain and an enlarged tender liver. Hemoglobin 10.2 g/dl, WBC 13,400. Ultrasound shows an 8 cm solitary right-lobe lesion with a thick wall and homogenous content. What is the most likely diagnosis?",
+      "options": [
+        "Amoebic liver abscess",
+        "Pyogenic liver abscess",
+        "Hydatid cyst of the liver",
+        "Simple liver cyst",
+        "Hepatocellular carcinoma"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الشاب القادم من منطقة مدارية مع حمى وعرق ليلي وفقدان وزن ونقص هيموغلوبين والكبد المتضخم المؤلم وآفة مفردة كبيرة بجدار سميك ومحتوى متجانس = خراج كبدي أميبي (70% منها مفرد كبير). الخراج القيحي يأتي عادة في مسن أو سكري أو مثبط مناعة وكتلة متعددة الحجرات؛ الحويصلة العدارية كتلة صامتة متعددة الحجرات مع أكياس بنات؛ والكيس البسيط بلا أعراض وبجدار رفيع، وسرطان الكبد يظهر في كبد مريض بكتلة صلبة.",
+      "hints": [
+        "Tropical epidemiology plus a preceding dysenteric illness point to one entity.",
+        "70% of these abscesses are solitary and large, with a thick wall and homogenous content."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m02",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "question_stem": "The patient in the previous question undergoes ultrasound-guided aspiration of the lesion. Which aspirate appearance would confirm the diagnosis?",
+      "options": [
+        "Thick, brown, odorless chocolate pus - the anchovy paste",
+        "Crystal-clear fluid under tension",
+        "Thin white pus teeming with Entamoeba histolytica trophozoites",
+        "Frank green purulent fluid with gas"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "صديد الخراج الأميبي بني سميك كالشوكولا (معجون الأنشوجة) وهو شبه مميز للتشخيص. أما 'قيح أبيض رقيق مليء بالأميبا' فهو الخيار الخاطئ الشهير: فالطفيلي يتوضع في محيط الخراج لا في القيح، لذا يكون فحص القيح سلبيًا غالبًا. السائل الرائق تحت ضغط هو السائل العداري أو الكيس البسيط، والقيح الأخضر يشير لتجرثم ثانوي.",
+      "hints": [
+        "Think of the famous food-paste analogy for this pus.",
+        "The trophozoites hide in the abscess wall, not in the pus."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m03",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c01",
+      "question_stem": "A 66-year-old diabetic woman presents with fever, rigors, malaise and right upper quadrant pain two weeks after an episode of acute cholangitis that was treated with antibiotics. CT of the liver shows multiple small multiloculated cystic masses. What is the commonest source and route by which her liver abscesses arose?",
+      "options": [
+        "Ascending infection through the bile duct",
+        "Haematogenous spread via the hepatic artery",
+        "Spread through the portal vein from an abdominal focus",
+        "A peri-hepatic infective focus",
+        "Direct inoculation during previous surgery"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المسار الأشيع لخراج الكبد القيحي هو العدوى الصاعدة عبر القناة الصفراوية، كما في هذه المريضة التي سبق لها التهاب طرق صفراوية. المسارات الأخرى المذكورة في المحاضرة صحيحة لكنها ليست الأشيع: الوريد البابي (من بؤرة داخل البطن)، وبؤرة عدوى حول الكبد، والانتشار الدموي عبر الشريان الكبدي. كونها مسنة سكرية يضعها ضمن المجموعات المعرضة للخطر.",
+      "hints": [
+        "Her preceding biliary sepsis is the clue.",
+        "The lecture ranks this route first - 'the commonest'."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m04",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "question_stem": "A 35-year-old woman from a rural Mediterranean village, in close contact with sheep and sheepdogs, has six months of right upper quadrant fullness and a palpable non-tender mass. Ultrasound shows a large multiloculated right-lobe cyst with internal septations. Which laboratory test detects antibodies to hydatid antigen?",
+      "options": [
+        "ELISA for antibodies to hydatid antigen",
+        "Casoni's intradermal test - positive in 75%",
+        "Complement fixation test",
+        "Stool microscopy for Echinococcus ova"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الإليزا يكشف الأجسام المضادة لمستضد الحويصلة العدارية وهو الفحص المصلي القياسي. اختبار كازوني الجلدي إيجابي في 75% فقط، واختبار تثبيت المتممة أقدم وأقل حساسية؛ وكلها مذكورة في المحاضرة. أما فحص البراز عن بيوض فلا قيمة له: البيوض تطرح مع براز الكلب (المضيف النهائي) لا الإنسان الذي هو مضيف وسيط.",
+      "hints": [
+        "Serology, not stool, confirms hydatid disease in the human intermediate host.",
+        "One of the three listed serologic tests is the modern standard."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m05",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "question_stem": "A 42-year-old man with a known right-lobe hydatid cyst presents with new jaundice, high fever with rigors and tender hepatomegaly. Blood tests show leukocytosis, raised alkaline phosphatase and raised conjugated bilirubin. What has most likely happened?",
+      "options": [
+        "Intrabiliary rupture of daughter hydatids causing obstructive jaundice and acute cholangitis",
+        "Peritoneal rupture of the cyst",
+        "Rupture into the pleural cavity",
+        "Malignant transformation of the cyst"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الانفجار داخل الصفراوية (دخول الأكياس البنات والأغشية إلى القنوات الصفراوية) يسبب يرقانًا انسداديًا والتهابًا حادًا للطرق الصفراوية، وهذا هو المشهد الكلاسيكي في السؤال. الانفجار البريتواني يظهر كبطن حاد بعد رض بطني بسيط، والانفجار إلى الجوف الجنبي يعطي أعراضًا صدرية، والتحول الخبيث للحويصلة وارد نادرًا جدًا وليس هو التفسير الأرجح.",
+      "hints": [
+        "Jaundice plus cholangitis in a hydatid patient has one mechanism.",
+        "Daughter cysts escape into the biliary tree."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m06",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "question_stem": "A 30-year-old shepherd with a known hydatid cyst sustains minor blunt abdominal trauma while wrestling with a friend. Within hours he develops sudden severe generalized abdominal pain with guarding and rigidity. What is the diagnosis?",
+      "options": [
+        "Peritoneal rupture of the hydatid cyst - an acute abdomen",
+        "Intrabiliary rupture of the cyst",
+        "Hemorrhage into a simple liver cyst",
+        "Rupture of the spleen"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "السائل العداري تحت ضغط، لذا يكفي رض بطني بسيط لانفجار الحويصلة إلى الجوف البريتواني مسببًا بطنًا حادًا، مع خطر صدمة تحسسية وتلوث البريتوان برؤوس الأسكولكس (عدارية ثانوية). الانفجار داخل الصفراوية يعطي يرقانًا والتهابًا صفراويًا لا بطنًا حادًا، والنزف داخل كيس بسيط ليس في سياق حويصلة عدارية معروفة.",
+      "hints": [
+        "Why does MINOR trauma suffice? Because the cyst fluid is under tension.",
+        "The acute abdomen after trivial trauma in an endemic-area patient has a parasitic cause."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m07",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c02",
+      "question_stem": "A patient with a 10 cm right-lobe amoebic liver abscess has completed 5 days of correctly dosed metronidazole (750 mg tds) but remains febrile and toxic. What is the next step?",
+      "options": [
+        "Ultrasound-guided aspiration (drainage) of the abscess",
+        "Continue metronidazole alone for three more weeks",
+        "Immediate laparotomy and deroofing as the first drainage option",
+        "Start anti-tuberculous therapy for a possible tuberculous abscess"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "غياب الاستجابة للميترونيدازول بعد 5 أيام هو أول مؤشرات التفريغ، ويضاف إليه الحجم الكبير جدًا والتجرثم البكتيري الثانوي؛ لذا الشفط الموجه بالألتراساوند هو الخطوة التالية الصحيحة. الاستمرار بالميترونيدازول وحده فترة أطول خطأ، والتفريغ التنظيري أو المفتوح خيار لاحق عند فشل الشفط، والعلاج المضاد للسل يخص الخراج الدرني النادر الذي يشخص بالألتراساوند والتصوير المقطعي.",
+      "hints": [
+        "There is a numeric rule: count the days of failed drug therapy.",
+        "Five days of fever means the drug alone has had its chance."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        4
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m08",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "question_stem": "Which list contains ONLY the scolicidal agents used during hydatid cyst surgery, with correct concentrations?",
+      "options": [
+        "Ethanol alcohol 95%, hypertonic saline, silver nitrate 0.5%, povidone iodine",
+        "Metronidazole 750 mg tds, ceftriaxone, gentamicin",
+        "Albendazole 10-15 mg/kg, mebendazole 40-50 mg/kg, praziquantel 40 mg/kg",
+        "Ethanol alcohol 50%, normal saline, sterile water"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المواد القاتلة لرؤوس الأسكولكس هي الإيثانول 95% والملح مفرط التوتر ونترات الفضة 0.5% وبوفيدون اليود، وتُحقن في الحويصلة أثناء الجراحة. أما الألبيندازول والميبندازول والبرازيكانتل فهي أدوية جهازية تؤخذ فمويًا حول الجراحة وليست مواد حقن موضعية، والميترونيدازول والمضادات الحيوية علاج الخراج الأميبي والقيحي لا العدارية.",
+      "hints": [
+        "Distinguish drugs you instill into the cyst from drugs the patient swallows.",
+        "Two of the four agents carry a specific concentration."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m09",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c05",
+      "question_stem": "Which statement about hydatid cyst fluid is TRUE?",
+      "options": [
+        "It is crystal clear, under tension, with a specific gravity of 1.005-1.009, and contains no albumin",
+        "It is rich in albumin and dark brown in color",
+        "It is non-infectious and completely safe if spilled into the peritoneal cavity",
+        "It is turbid pus with a specific gravity above 1.100"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "السائل العداري رائق كالماء البلوري، تحت ضغط، كثافته النوعية 1.005-1.009، ولا يحتوي ألبومين، والأكياس النشطة تحوي عددًا كبيرًا من الأكياس البنات الصغيرة. وهو معدٍ لأنه يحمل رؤوس الأسكولكس الحية، لذا فتسربه يسبب تلوث البريتوان وصدمة تحسسية، وعبارة 'السائل غير معدٍ' خاطئة.",
+      "hints": [
+        "Two of the properties are numbers - recall them exactly.",
+        "Is the fluid safe if it spills? Think of anaphylaxis."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m10",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c04",
+      "question_stem": "Which statement about polycystic liver disease is correct?",
+      "options": [
+        "It is a congenital disease of multiple liver cysts, considered part of a polycystic systemic disease associated with polycystic kidneys",
+        "It is caused by the larva of Echinococcus granulosus",
+        "It always requires immediate open fenestration on diagnosis",
+        "It is a premalignant condition that mandates yearly tumor markers"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "داء الكبد متعدد الأكياس خلقي ومتعدد ويُعد داء أكياسًا جهازيًا لارتباطه بتكوّن الأكياس في الكليتين، وكثيرًا ما يكون بلا أعراض. وهو ليس عداريًا ولا سابقًا للخباثة، والعلاج مسكنات أولًا ثم النافذة (المفتوحة أو التنظيرية) عند عدم الاستجابة فقط، لا جراحة فورية لكل مريض.",
+      "hints": [
+        "Which other organ shares the disease?",
+        "Treatment is stepwise - drugs before surgery."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m11",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c07",
+      "question_stem": "From the lecture's revision list: which organism causes the tuberculous liver abscess (cyst)?",
+      "options": [
+        "Mycobacterium tuberculosis",
+        "Enterobius vermicularis",
+        "Entamoeba histolytica",
+        "Echinococcus granulosus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الخراج الدرني الكبدي نادر وسببه العصية السلية، ويشيع في المناطق الموبوءة وقد يرافق سل الرئة أو التهاب العقد اللمفاوية السلي أو لا يرافقهما، وعلاجه التفريغ مع كورس كامل مضاد للسل. أما الدودة الدبوسية (Enterobius vermicularis) فهي المشتت الخاطئ في قائمة الصح والخطأ، والمتحولة الحالة والمشوكة تسببان الخراج الأميبي والعداري على الترتيب.",
+      "hints": [
+        "The answer is in the name of the lesion.",
+        "One distractor is a pinworm - a classic false item."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "surg_Liver_L2_m12",
+      "lecture_id": "surg_Liver_L2",
+      "concept_id": "surg_Liver_L2_c06",
+      "question_stem": "Which combination of antihelmintic doses used in hydatid disease is correct?",
+      "options": [
+        "Mebendazole 40-50 mg/kg, albendazole 10-15 mg/kg, praziquantel 40 mg/kg",
+        "Mebendazole 10-15 mg/kg, albendazole 40-50 mg/kg, praziquantel 5 mg/kg",
+        "Metronidazole 750 mg tds for 7-10 days as the hydatid regimen",
+        "Mebendazole 100 mg as a single dose"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجرعات الصحيحة: ميبندازول 40-50 ملغ/كغ، ألبيندازول 10-15 ملغ/كغ، برازيكانتل 40 ملغ/كغ. أما الميترونيدازول 750 ملغ ثلاث مرات يوميًا لـ7-10 أيام فهو علاج الخراج الأميبي وليس العدارية، وهذا الخلط هو فخ الامتحان المفضل بين محاضرتَي الكبد.",
+      "hints": [
+        "Match each drug to its own dose band - they are not interchangeable.",
+        "Metronidazole belongs to the amoebic abscess, not to hydatid disease."
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        4
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_Liver_L2_case01",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Fever and Tender Hepatomegaly in a Young Farmer - Amoebic Liver Abscess",
+      "order_index": 0,
+      "difficulty": "core",
+      "scenario": "A 38-year-old male farmer from a tropical endemic region is referred to the surgical outpatient department with three weeks of intermittent high fever, drenching night sweats, loss of appetite and 6 kg of weight loss, plus a dull aching pain under the right costal margin. He recalls an episode of bloody diarrhea about one month before the fever began.",
+      "vignette": {
+        "age": 38,
+        "sex": "male",
+        "chief_complaint": "Fever with night sweats, weight loss and right upper quadrant pain for 3 weeks",
+        "history": "Farmer living in a tropical endemic area; an episode of amoebic dysentery (bloody diarrhea) one month earlier; no previous abdominal surgery; no diabetes or known immunosuppression; occasional alcohol use.",
+        "vitals": {
+          "bp": "110/70 mmHg",
+          "hr": "104/min",
+          "rr": "18/min",
+          "temp": "39.2 C",
+          "spo2": "98%"
+        },
+        "exam": "Ill-looking and mildly pale; temperature 39.2 C; tender hepatomegaly with the liver edge palpable 4 cm below the right costal margin (liver span 15 cm); no jaundice; chest clear; no ascites.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "10.2 g/dl",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "13,400/mm3",
+            "flag": "high"
+          },
+          {
+            "name": "Platelets",
+            "value": "340,000/mm3",
+            "flag": "normal"
+          },
+          {
+            "name": "ESR (1st hour)",
+            "value": "85 mm/h",
+            "flag": "high"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "1.0 mg/dl",
+            "flag": "normal"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "320 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "48 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum albumin",
+            "value": "3.1 g/dl",
+            "flag": "low"
+          },
+          {
+            "name": "Entamoeba histolytica serum antibody (ELISA)",
+            "value": "positive",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: a single large, well-defined 9 cm lesion in the right lobe of the liver with a THICK wall and HOMOGENOUS content; no septations, no daughter cysts. Chest X-ray: raised right hemidiaphragm, no free air."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L2_case01_s1",
+          "prompt": "What is the correct immediate management on arrival?",
+          "options": [
+            "Admit the patient, secure IV access, give IV fluids with analgesia and antipyretics, send baseline bloods and blood cultures, and start metronidazole",
+            "Take him straight to emergency laparotomy for drainage",
+            "Discharge him on oral paracetamol with review in two weeks",
+            "Start empirical anti-tuberculous therapy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المصاب مستقر ديناميكيًا لكنه متسمم، فالإدخال والسوائل الوريدية والتسكين وخفض الحرارة والتحاليل وزرع الدم هي الخطوة الأولى، مع بدء الميترونيدازول لأن الاحتمال الأرجح خراج أميبي في هذا السياق المداري. الفتح البطني الفوري غير مبرر قبل التصوير والتثبيت، والتصرف العاجل الآخر خطر، والعلاج المضاد للسل ليس خطوة أولى.",
+          "xp": 10,
+          "hints": [
+            "Resuscitate and treat the most likely organism first.",
+            "Which drug covers Entamoeba histolytica?"
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case01_s2",
+          "prompt": "Which work-up best confirms the diagnosis?",
+          "options": [
+            "Ultrasound with CT of the abdomen plus Entamoeba serology (aspiration would yield chocolate pus; stool examination is often negative)",
+            "Barium follow-through of the small bowel",
+            "ERCP with sphincterotomy",
+            "Hepatic angiography"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الألتراساوند والتصوير المقطعي يظهران آفة مفردة كبيرة بجدار سميك ومحتوى متجانس، والأجسام المضادة للأميبا تدعم التشخيص؛ وعند الشفط يظهر صديد الشوكولا، مع تذكر أن عزل الطفيلي من القيح صعب لأنه في محيط الخراج. بقية الفحوص لا دور لها هنا.",
+          "xp": 10,
+          "hints": [
+            "First-line liver imaging, then organism-directed serology.",
+            "The pus has a famous color - if you aspirate."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case01_s3",
+          "prompt": "What is the definitive (main) treatment for this condition?",
+          "options": [
+            "Metronidazole 750 mg three times daily for 7-10 days",
+            "Albendazole 10-15 mg/kg daily",
+            "Praziquantel 40 mg/kg daily",
+            "Immediate open surgical drainage in every patient"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الميترونيدازول 750 ملغ ثلاث مرات يوميًا لـ7-10 أيام هو العلاج الأساسي للخراج الأميبي وحده غالبًا. الألبيندازول والبرازيكانتل أدوية العدارية لا الأميبا، والتفريغ الجراحي ليس لكل مريض بل عند وجود مؤشرات محددة.",
+          "xp": 12,
+          "hints": [
+            "One drug, one dose, one duration - learn them as a triplet.",
+            "Hydatid drugs do not treat Entamoeba."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case01_s4",
+          "prompt": "On day 5 of correctly dosed metronidazole the fever persists (39 C), the patient looks toxic, and the abscess now measures 9.5 cm. What is the next step?",
+          "options": [
+            "Ultrasound-guided aspiration (percutaneous drainage) of the abscess",
+            "Continue metronidazole alone for three more weeks",
+            "Proceed to emergency laparotomy with deroofing as the first drainage option",
+            "Add anti-tuberculous drugs for a possible tuberculous abscess"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مؤشرات التفريغ الثلاثة: لا استجابة للميترونيدازول بعد 5 أيام (متوفرة هنا)، أو حجم كبير جدًا (متوفر أيضًا: 9.5 سم)، أو تجرثم بكتيري ثانوي؛ لذا الشفط الموجه بالألتراساوند هو الخطوة الصحيحة. الاستمرار بالدواء وحده يطيل التسمم، والفتح البطني أو التنظير خيار عند فشل الشفط، والسل احتمال بعيد يشخص بالألتراساوند والتصوير المقطعي.",
+          "xp": 12,
+          "hints": [
+            "Count the days: what happens at day 5 of failed therapy?",
+            "Percutaneous first, surgical later."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case01_s5",
+          "prompt": "The patient recovers and is being discharged. If a similar abscess had remained untreated and became encapsulated and dormant, what must the patient be warned about?",
+          "options": [
+            "The abscess may burst to the lung and pleural cavity, the peritoneal cavity, hollow organs or the skin",
+            "Malignant transformation into liver cancer",
+            "Chronic pancreatitis",
+            "Inevitable portal hypertension"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الطور الساكن للخراج الأميبي قد ينتهي بالانفجار إلى الرئة والجوف الجنبي أو الجوف البريتواني أو الأعضاء المجوفة أو الجلد - وهي مواضع الانفجار الأربعة التي يجب حفظها. لا يتحول الخراج الأميبي إلى سرطان، وليس من مضاعفاته التهاب بنكرياس مزمن أو فرط ضغط بابي حتمي.",
+          "xp": 8,
+          "hints": [
+            "Four burst sites - chest, peritoneum, hollow organs, skin.",
+            "Dormant does not mean harmless."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: خراج كبدي أميبي في شاب من منطقة موبوءة مع كبد متضخم مؤلم وآفة مفردة كبيرة بجدار سميك ومحتوى متجانس. الدروس: الحمى والعرق الليلي وفقدان الوزن ونقص الهيموغلوبين توجه نحو الخراج الأميبي، والعلاج الأساسي ميترونيدازول 750 ملغ ثلاث مرات يوميًا لـ7-10 أيام، ولا يُفرّغ الخراج إلا عند غياب الاستجابة بعد 5 أيام أو الحجم الكبير أو التجرثم الثانوي. فخاخ الامتحان: صديد الشوكولا (معجون الأنشوجة) مع صعوبة عزل الطفيلي من القيح لأنه في المحيط، والجدار السميك الذي يفرق الخراج الأميبي عن الكيس البسيط رفيع الجدار، وعدم الخلط بين جرعة الميترونيدازول الأميبية وجرعات أدوية العدارية."
+    },
+    {
+      "id": "surg_Liver_L2_case02",
+      "lecture_id": "surg_Liver_L2",
+      "title": "Jaundice and Cholangitis in a Village Woman - Intrabiliary Rupture of a Hydatid Cyst",
+      "order_index": 1,
+      "difficulty": "advanced",
+      "scenario": "A 35-year-old woman from a rural Mediterranean sheep-raising village is admitted through the emergency department. For six months she has had right upper quadrant fullness, dyspepsia and a slowly enlarging abdominal mass; for three days she has had jaundice, high fever with rigors and dark urine. She keeps sheep and dogs at home.",
+      "vignette": {
+        "age": 35,
+        "sex": "female",
+        "chief_complaint": "Jaundice, fever with rigors and dark urine for 3 days on a background of RUQ fullness and an abdominal mass",
+        "history": "Lives in a rural Mediterranean village with sheep and dogs at home; 6 months of postprandial fullness, dyspepsia and a progressively enlarging right abdominal mass; no previous surgery; no known gallstone disease.",
+        "vitals": {
+          "bp": "105/65 mmHg",
+          "hr": "112/min",
+          "rr": "20/min",
+          "temp": "38.8 C",
+          "spo2": "97%"
+        },
+        "exam": "Jaundiced, febrile and ill-looking; tender hepatomegaly with a smooth tense mass in the right hypochondrium; no ascites; no asterixis or encephalopathy.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "16,800/mm3",
+            "flag": "high"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "88%",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.4 g/dl",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "300,000/mm3",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "6.8 mg/dl",
+            "flag": "high"
+          },
+          {
+            "name": "Direct bilirubin",
+            "value": "5.4 mg/dl",
+            "flag": "high"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "560 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "180 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "90 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum albumin",
+            "value": "3.4 g/dl",
+            "flag": "low"
+          },
+          {
+            "name": "ELISA antibodies to hydatid antigen",
+            "value": "positive",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: large multiloculated cystic lesion of the right liver lobe containing daughter cysts; dilated CBD with echogenic debris. CT: a well-circumscribed multiloculated cyst with a floating membrane within it. MRCP: cysto-biliary communication with membranes and daughter cysts inside the dilated CBD."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L2_case02_s1",
+          "prompt": "What is the correct first step in management?",
+          "options": [
+            "Admit, IV fluids, analgesia, IV antibiotics covering gram-negative organisms, monitor vitals and take blood cultures - treat the acute cholangitis and stabilize",
+            "Immediate emergency laparotomy for cyst evacuation",
+            "Discharge with oral antibiotics and review in one week",
+            "Immediate percutaneous PAIR of the cyst"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريضة مصابة بالتهاب طرق صفراوية حاد على انفجار داخل الصفراوية، فالتثبيت بالسوائل والمضادات الحيوية الوريدية المغطية للجراثيم سالبة الغرام والمراقبة وزرع الدم يسبق أي قرار نهائي. الجراحة الفورية قبل التثبيت خطأ، والPAIR غير مناسب هنا لتواصل الحويصلة مع الطرق الصفراوية والتهابها الحاد.",
+          "xp": 10,
+          "hints": [
+            "Sepsis first, scalpel second.",
+            "Resuscitate and cover the biliary flora before imaging decisions."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case02_s2",
+          "prompt": "Which investigation pathway confirms the diagnosis and defines the anatomy?",
+          "options": [
+            "Ultrasound plus CT/MRI (multiloculated cyst with a floating membrane) with ELISA serology, and MRCP to show the cysto-biliary communication",
+            "Plain X-ray of the abdomen as the main diagnostic tool",
+            "Barium meal and follow-through",
+            "Colonoscopy with biopsy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الألتراساوند يظهر الكيس متعدد الحجرات مع أكياس البنات، والتصوير المقطعي/الرنين يظهران الغشاء العائم، والإليزا يكشف الأجسام المضادة لمستضد العدارية، والـ MRCP يحدد التواصل الصفراوي - وهو جوهر هذه الحالة. وعبارة 'الأشعة العادية هي الفحص الرئيسي' هي العبارة الخاطئة الكلاسيكية في قائمة الصح والخطأ.",
+          "xp": 10,
+          "hints": [
+            "Two questions: what is the cyst, and where is it leaking?",
+            "Ultrasound + serology + MRCP - never plain X-ray alone."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case02_s3",
+          "prompt": "What is the definitive treatment once she is stabilized?",
+          "options": [
+            "Surgical treatment: open deroofing with evacuation of the contents using scolicidal agents and clearance of the biliary tree, with perioperative albendazole (laparoscopic surgery might be beneficial in selected cases)",
+            "Mebendazole 40-50 mg/kg alone with no procedure",
+            "Observation and serial ultrasound every 6 months",
+            "Percutaneous PAIR as the treatment of choice in this complicated cyst"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحويصلة العدارية تعالج جراحيًا في الأغلب: إزالة السقف مع إفراغ المحتويات مع مواد قاتلة للأسكولكس (إيثانول 95% أو ملح مفرط التوتر أو نترات فضة 0.5% أو بوفيدون يود) وتنظيف الطرق الصفراوية من الأغشية والأكياس البنات، مع غطاء ألبيندازول حول الجراحة. الدواء وحده أو الملاحظة غير كافيين لخزاجة معقدة، والPAIR يخص حويصلات غير مختارة بلا تواصل صفراوي.",
+          "xp": 14,
+          "hints": [
+            "The lecture's revision item: liver hydatid is treated mostly by...?",
+            "Remember the scolicidal agents by concentration."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case02_s4",
+          "prompt": "During evacuation, hydatid fluid spills into the peritoneal cavity. What are the two great dangers and the correct response?",
+          "options": [
+            "Anaphylactic shock and peritoneal contamination (secondary echinococcosis) - prevented by careful technique, scolicidal agents and albendazole cover",
+            "Massive hemorrhage and liver failure only",
+            "Wound infection and ileus only",
+            "No danger, because hydatid fluid is non-infectious"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "السائل العداري معدٍ لاحتوائه رؤوس أسكولكس حية، فتسربه يهدد بصدمة تحسسية حادة وبانزراع عداري ثانوي في البريتوان؛ والرد هو الحذر الجراحي مع المواد القاتلة للأسكولكس والألبيندازول كما تنص المحاضرة. وعبارة 'السائل غير معدٍ' خاطئة تمامًا.",
+          "xp": 12,
+          "hints": [
+            "Two unique-to-hydatid dangers - one immunologic, one parasitic.",
+            "Careful technique and albendazole is the lecture's own answer."
+          ]
+        },
+        {
+          "id": "surg_Liver_L2_case02_s5",
+          "prompt": "After uneventful surgery she is started on albendazole 10-15 mg/kg. Which postoperative complications must the team watch for in the follow-up period?",
+          "options": [
+            "Biliary leak/fistula, suppuration (subhepatic, subphrenic or intrahepatic abscess), recurrence, missed small deep cyst, adjacent organ injuries, cholangitis, wound infection",
+            "Only cosmetic wound problems",
+            "Renal failure and hypertension alone",
+            "No follow-up is needed after complete evacuation"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مضاعفات جراحة العدارية عشر، وأهمها للمتابعة: التسرب الصفراوي والناسور، والتقيح تحت الكبدي وتحت الحجاب وداخل الكبد، وتلف نسيج الكبد والنزف، والنكس، والكيس العميق الصغير الفائت، وإصابة الأعضاء المجاورة، والتهاب الطرق الصفراوية، والصدمة التحسسية، وتلوث البريتوان، وخراج الجرح؛ لذلك المتابعة بالألتراساوند والألبيندازول واجبة.",
+          "xp": 10,
+          "hints": [
+            "Ten complications - recite them by system.",
+            "Recurrence and a missed deep cyst justify surveillance ultrasound."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: انفجار حويصلة عدارية داخل القناة الصفراوية مسببًا يرقانًا والتهاب طرق صفراوية حادًا في امرأة من بيئة رعوية متوسطية لها تاريخ امتلاء وعسر هضم وكتلة بطنية. الدروس: مظاهر الضغط تنذر باليرقان قبل الانفجار، والحويصلة تعالج جراحيًا في الأغلب (إزالة السقف مع الإفراغ مع مواد قاتلة للأسكولكس) مع الألبيندازول، ويجب الحذر من صدمة تحسسية وتلوث البريتوان عند التسرب، ومتابعة المضاعفات العشر بعد الجراحة. فخاخ الامتحان: أكياس الكبد تشخص بالألتراساوند أساسًا لا بالأشعة السينية، والإنسان مضيف وسيط لا نهائي، والسائل العداري معدٍ، وجرعات أدوية العدارية (ميبندازول 40-50، ألبيندازول 10-15، برازيكانتل 40 ملغ/كغ) غير جرعة الميترونيدازول الأميبية."
+    }
+  ]
+}

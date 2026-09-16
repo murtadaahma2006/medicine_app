@@ -1,9 +1,15 @@
 import '../../../core/database/database_helper.dart';
 import '../../../core/database/srs_repository.dart';
+import '../../../core/notifications/pin_expiry_service.dart';
+import '../../../core/utils/error_logger.dart';
 import '../domain/unit.dart';
 
 /// لقطة أهداف اليوم — محاضرات مثبتة + بطاقات SRS مستحقة في جملة
 /// واحدة. النموذج نقي (بلا Flutter) فيصلح للاختبار على FFI.
+///
+/// **v2 — فصل المراجعات (Decoupling)**: حلقة التقدم والرسالة الرئيسية
+/// تعكسان المحاضرات المثبتة **حصرياً** — البطاقات المستحقة شريط ثانوي
+/// منفصل أسفلها ولا تدخل في نسبة الإنجاز اليومية مهما بلغ عددها.
 class TodayGoalsSnapshot {
   const TodayGoalsSnapshot({
     required this.pinned,
@@ -17,7 +23,7 @@ class TodayGoalsSnapshot {
   /// منها ما أُكمل (تقييم مجتاز أو كل الشروح مقروءة).
   final List<Unit> completedPinned;
 
-  /// البطاقات المستحقة اليوم (SRS).
+  /// البطاقات المستحقة اليوم (SRS) — عرض ثانوي منفصل عن الحلقة.
   final int dueCards;
 
   /// المحاضرات المثبتة غير المكتملة — «لديك محاضرات بانتظارك».
@@ -26,28 +32,31 @@ class TodayGoalsSnapshot {
           if (!completedPinned.any((Unit c) => c.id == u.id)) u,
       ];
 
-  /// هل بقي عمل اليوم؟ (محاضرة مثبتة غير مكتملة أو بطاقات مستحقة).
-  bool get hasWork =>
-      pinned.length != completedPinned.length || dueCards > 0;
+  /// هل بقي عمل اليوم؟ (محاضرة مثبتة غير مكتملة **أو** بطاقات مستحقة)
+  /// — إشارة تشغيل عامة فقط؛ لا تدخل في الحلقة (المراجعات لها شريطها
+  /// الخاص المنفصل).
+  bool get hasWork => pendingPinned.isNotEmpty || dueCards > 0;
 
-  /// نسبة إنجاز أهداف اليوم 0.0 → 1.0 — سهم واحد لكل محاضرة مثبتة
-  /// وسهم واحد لحزمة البطاقات المستحقة.
-  double get progress {
-    final int total = pinned.length + 1;
-    final int done = completedPinned.length + (dueCards == 0 ? 1 : 0);
-    return (done / total).clamp(0.0, 1.0);
-  }
+  /// نسبة إنجاز أهداف اليوم 0.0 → 1.0 — **محاضرات مثبتة فقط**:
+  /// (المكتملة / إجمالي المثبتة). البطاقات المستحقة لا تلمس هذه
+  /// النسبة أبداً — الهدف اليومي الحقيقي للطالب محاضراته المثبتة.
+  /// لا مثبتات → 0.0 (حلقة فارغة برسالة دعوة للتثبيت).
+  double get progress => pinned.isEmpty
+      ? 0.0
+      : (completedPinned.length / pinned.length).clamp(0.0, 1.0);
 
-  /// مرحلة الحالة الموحدة — الرسالة والحلقة تُشتقان منها.
+  /// مرحلة الحالة الموحدة — **المحاضرات وحدها تقود الرسالة الرئيسية**:
+  /// none → لا مثبتات · lectures → بانتظارك · done → كلها مكتملة.
   TodayPhase get phase {
+    if (pinned.isEmpty) return TodayPhase.none;
     if (pendingPinned.isNotEmpty) return TodayPhase.lectures;
-    if (dueCards > 0) return TodayPhase.reviews;
     return TodayPhase.done;
   }
 }
 
-/// مراحل يوم الدراسة — ترتيب الأولوية: المحاضرات أولاً.
-enum TodayPhase { lectures, reviews, done }
+/// مراحل يوم الدراسة. (خرجت مرحلة المراجعات — البطاقات المستحقة
+/// شريط ثانوي مستقل ولا تقود الرسالة الرئيسية للحلقة.)
+enum TodayPhase { none, lectures, done }
 
 
 /// مستودع الوحدات — يجلب قائمة الوحدات (المحاضرات الطبية) من القاعدة
@@ -57,10 +66,18 @@ class UnitRepository {
 
   DatabaseHelper get _helper => DatabaseHelper.instance;
 
-  /// كل الوحدات (أو حسب التخصص إن وُرد) مرتبة.
+  /// كل الوحدات (أو حسب التخصص الفرعي module) مرتبة.
   Future<List<Unit>> getAllUnits({String? module}) async {
     final List<Map<String, Object?>> rows =
         await _helper.getAllUnits(module: module);
+    return rows.map<Unit>(Unit.fromMap).toList();
+  }
+
+  /// وحدات تخصص سريري كامل (v20) — أساس شريط (باطنية|جراحة|نسائية)
+  /// في شاشة المسار. [specialty] null = كل التخصصات.
+  Future<List<Unit>> getUnitsBySpecialty(String? specialty) async {
+    final List<Map<String, Object?>> rows =
+        await _helper.getUnitsBySpecialty(specialty);
     return rows.map<Unit>(Unit.fromMap).toList();
   }
 
@@ -70,11 +87,30 @@ class UnitRepository {
     return row == null ? null : Unit.fromMap(row);
   }
 
-  // ─────────────────── أهداف اليوم (v17: التثبيت) ───────────────────
+  // ─────────────────── أهداف اليوم (v18: التثبيت الذكي) ───────────────────
 
   /// يثبّت/يفكّ تثبيت محاضرة — يرجع الحالة الجديدة (true = مثبتة).
-  Future<bool> togglePinnedToday(String unitId) =>
-      _helper.toggleUnitPinnedToday(unitId);
+  /// تثبيت → جدولة إشعار الانتهاء (+48h) · فك → إلغاء الإشعار.
+  Future<bool> togglePinnedToday(Unit unit) async {
+    final String unitId = unit.id;
+    final bool nowPinned =
+        await _helper.toggleUnitPinnedToday(unitId);
+    // الإشعار خارج مسار القاعدة: فشله لا يُسقط التثبيت (صمت لطيف).
+    if (nowPinned) {
+      final Map<String, Object?>? row = await _helper.getUnitById(unitId);
+      final String? pinnedAtRaw = row?['pinned_at'] as String?;
+      if (pinnedAtRaw != null) {
+        await PinExpiryService.scheduleExpiryNotification(
+          unitId: unitId,
+          lectureTitle: unit.title,
+          pinnedAt: DateTime.parse(pinnedAtRaw),
+        );
+      }
+    } else {
+      await PinExpiryService.cancelExpiryNotification(unitId);
+    }
+    return nowPinned;
+  }
 
   /// المحاضرات المثبتة لأهداف اليوم (بترتيب المنهج).
   Future<List<Unit>> getPinnedUnits() async {
@@ -84,7 +120,10 @@ class UnitRepository {
 
   /// لقطة أهداف اليوم الكاملة — checkTodayStatus: محاضرات مثبتة مع
   /// حالة إكمالها (مشتقة ديناميكياً في القاعدة) + بطاقات SRS مستحقة.
+  /// **تدخل التنظيف أولاً**: المكتملة والمهملة (>48h) تُفكّ ويُلغى
+  /// إشعارها قبل بناء اللقطة — فلا يرى المستخدم هدفاً ميتاً أبداً.
   Future<TodayGoalsSnapshot> todayGoals() async {
+    await PinExpiryService.runAppCleanup();
     final List<Map<String, Object?>> rows =
         await _helper.getPinnedUnitsWithCompletion();
     final List<Unit> pinned = rows.map<Unit>(Unit.fromMap).toList();
@@ -160,12 +199,18 @@ class UnitRepository {
   /// داخل معاملة واحدة). يُستدعى بعد تأكيد المستخدم الصريح فقط.
   ///
   /// يعيد true عند النجاح (أو عدم وجود المحاضرة أصلاً) وfalse عند
-  /// الفشل — بلا استثناءات تصل الواجهة.
+  /// الفشل — بلا استثناءات تصل الواجهة. الفشل يُسجَّل في ErrorLogger
+  /// (كان صامتاً تماماً — فقدان بيانات بلا أثر يُشخَّص).
   Future<bool> deleteLecture(String unitId) async {
     try {
       await _helper.deleteLectureData(unitId);
       return true;
-    } catch (_) {
+    } catch (error, stack) {
+      AppErrorLogger.instance.record(
+        type: 'DeleteLecture',
+        error: error,
+        stack: stack,
+      );
       return false;
     }
   }

@@ -1,0 +1,600 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L7_pneumonia_hap",
+    "specialty": "internal_medicine",
+    "title": "Pneumonia II — Hospital-Acquired Pneumonia (HAP) and Pneumonia in the Immunocompromised Host",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L7 Pneumonia ll.pdf",
+      "page_count": 11
+    },
+    "tags": [
+      "hap",
+      "nosocomial",
+      "vap",
+      "mrsa",
+      "pseudomonas",
+      "immunocompromised",
+      "opportunistic"
+    ],
+    "order_index": 6,
+    "golden_tip": [
+      "HAP = new pneumonia at least 2 DAYS after admission — 2nd most common hospital-acquired infection and the LEADING cause of HAI death. Early-onset (4–5 days) resembles CAP; late-onset = Gram-negatives (E. coli, Pseudomonas, Klebsiella), MRSA, anaerobes.",
+      "Antibiotics by exposure: early-onset, no prior antibiotics = co-amoxiclav or cefuroxime; recent antibiotic course = piperacillin/tazobactam or 3rd-gen cephalosporin; late-onset needs anti-pseudomonal cover (meropenem or 3rd-gen + aminoglycoside) plus vancomycin for MRSA."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L7_c1",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Hospital-Acquired (Nosocomial) Pneumonia: Definition and Burden",
+      "summary_ar": "تعريف الالتهاب الرئوي المكتسب في المشفى وعبئه الوبائي ومجموعات الخطر والصورة الشعاعية المرافقة.",
+      "sections": [
+        {
+          "heading": "Definition, Epidemiology and Risk Groups",
+          "body_text": "**Hospital-acquired pneumonia (HAP), also called nosocomial pneumonia, is defined as a new episode of pneumonia occurring at least 2 days after admission to hospital.** It is **the 2nd most common hospital-acquired infection (HAI)** and — critically — **the leading cause of HAI-associated death.** It is particularly risky in three settings: **the elderly, patients in intensive care units, and patients who are mechanically ventilated** (ventilator-associated pneumonia, VAP, is the paradigm of HAP). The lecture's imaging slides illustrate the hospital context: a bedside AP film of a monitored patient with patchy bilateral opacities and blunted right costophrenic angle (consolidation with para-pneumonic effusion), and an intubated patient's film showing the diffuse bilateral 'white-out' of ARDS with endotracheal tube, central line and nasogastric tube in place — reminders that HAP evolves in already-sick patients and competes on the differential with ARDS.",
+          "key_points": [
+            "HAP = new pneumonia episode ≥ 2 days after hospital admission",
+            "2nd most common hospital-acquired infection; LEADING cause of HAI-associated death",
+            "Highest risk: elderly, ICU patients, mechanically ventilated (VAP)",
+            "Imaging context: monitored bed-bound patients; ARDS white-out on the differential"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Nosocomial",
+          "definition_ar": "مكتسب في المشفى: عدوى تنشأ بعد 48 ساعة على الأقل من الدخول."
+        },
+        {
+          "term": "VAP",
+          "definition_ar": "التهاب رئوي مرتبط بالتنفس الصناعي: شكل خاص من HAP عند المُنبَّبين."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L7_c2",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Predisposing Factors and Organisms",
+      "summary_ar": "عوامل التهيئة الأربعة (دروع مضطربة، ارتشاح، جراثيم مدخلة، تجرثم دم) والكائنات المبكرة والمتأخرة.",
+      "sections": [
+        {
+          "heading": "Factors Predisposing to HAP (Four Mechanistic Groups)",
+          "body_text": "**Group 1 — Reduced host defenses against bacteria**: reduced immune defenses (e.g., corticosteroid therapy), reduced cough reflex (post-operative patients), disordered mucociliary clearance (anaesthetic agents), and bulbar or vocal cord palsy. **Group 2 — Aspiration of nasopharyngeal or gastric secretions**: immobility or reduced conscious level, vomiting, dysphagia (stroke disease), and nasogastric intubation (the tube splints the gastro-oesophageal junction and bypasses the glottis). **Group 3 — Bacteria introduced directly into the lower respiratory tract**: endotracheal intubation or tracheostomy, infected ventilators/nebulisers/bronchoscopes, and dental or sinus infection. **Group 4 — Bacteraemic spread**: abdominal sepsis, IV cannula infection, and infected emboli. These four routes explain nearly every HAP vignette you will meet — always ask which defense failed.",
+          "key_points": [
+            "Reduced defenses: corticosteroids, post-op cough suppression, anaesthetics impairing mucociliary clearance, bulbar/vocal cord palsy",
+            "Aspiration: immobility, reduced consciousness, vomiting, dysphagia (stroke), NG intubation",
+            "Direct inoculation: endotracheal tube/tracheostomy, infected ventilators/nebulisers/bronchoscopes, dental/sinus infection",
+            "Bacteraemia: abdominal sepsis, IV cannula infection, infected emboli"
+          ]
+        },
+        {
+          "heading": "Organisms: Early versus Late Onset",
+          "body_text": "**In early-onset HAP (within the first 4–5 days) the organisms are similar to those in CAP** (pneumococcus, H. influenzae, MSSA, sensitive Gram-negatives). **Late-onset HAP is caused by different organisms, with MORE: Gram-negative bacteria (e.g., Escherichia coli, Pseudomonas aeruginosa, Klebsiella pneumoniae), Staphylococcus aureus (including meticillin-resistant MRSA), and anaerobes.** The divide is antibiotic exposure and hospital environment: the longer the stay and the broader the prior antibiotics, the more the flora shifts toward resistant nosocomial organisms. This early/late split dictates the entire empirical antibiotic strategy in the next concept.",
+          "key_points": [
+            "Early-onset HAP (4–5 days): organisms SIMILAR to CAP",
+            "Late-onset: more Gram-negatives — E. coli, Pseudomonas, Klebsiella",
+            "Late-onset: S. aureus including MRSA; anaerobes"
+          ],
+          "check": {
+            "prompt": "A patient develops pneumonia on hospital day 3 with no prior antibiotics. Which flora is expected?",
+            "options": [
+              "CAP-like organisms (pneumococcus, H. influenzae)",
+              "MDR Pseudomonas and MRSA",
+              "Fungal only",
+              "Nocardia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "البداية المبكرة خلال 4-5 أيام وبلا مضادات سابقة تحفظ فلورا شبيهة بالمكتسب مجتمعياً؛ أما المتأخر أو بعد المضادات فتتحول نحو المقاومة (زائفة، MRSA، لاهوائيات)."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "MRSA",
+          "definition_ar": "العنقوديات الذهبية المقاومة للميثيسيلين؛ مسبب متأخر شائع لHAP يتطلب فانكومايسين."
+        },
+        {
+          "term": "Piperacillin-tazobactam",
+          "definition_ar": "بنسلين واسع مضاد للزوائف؛ خيار عند تعرض حديث للمضادات."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L7_c3",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Clinical Features, Investigations and Differential Diagnosis",
+      "summary_ar": "المعايير التشخيصية السريرية والمخبرية والشعاعية، والتشخيص التفريقي (ARDS وغيره)، مع وصف صورتي الالتهاب وARDS.",
+      "sections": [
+        {
+          "heading": "When to Suspect HAP",
+          "body_text": "**The diagnosis should be considered in any hospitalized or ventilated patient who develops: (1) purulent sputum (or purulent endotracheal secretions); (2) new radiological infiltrates; (3) an unexplained increase in oxygen requirement; (4) a temperature of more than 38.3°C; or (5) leucocytosis or leucopenia.** The more features present, the higher the likelihood. The radiological companion images from the lecture: a hospital-acquired pneumonia film showing bilateral patchy opacities with dense right lower-lobe consolidation and blunting of the right costophrenic angle (para-pneumonic effusion), and an ARDS film showing diffuse bilateral alveolar 'white-out' with obscured heart borders and diaphragm, air bronchograms, and critical-care hardware (endotracheal tube, central venous catheter, nasogastric tube, ECG leads) — the classic differential problem at the bedside.",
+          "key_points": [
+            "Purulent sputum/endotracheal secretions",
+            "New radiological infiltrates",
+            "Unexplained increase in oxygen requirement",
+            "Temperature > 38.3 C",
+            "Leucocytosis or leucopenia",
+            "Imaging: patchy opacities + effusion (HAP) vs diffuse white-out with air bronchograms and lines/tubes (ARDS)"
+          ]
+        },
+        {
+          "heading": "Differential Diagnosis and the Need for Microbiology",
+          "body_text": "**The differential diagnosis of HAP includes: ARDS, pulmonary oedema, venous thromboembolism (VTE/pulmonary embolism), pulmonary haemorrhage, and drug toxicity** — all of which can produce infiltrates, hypoxemia and fever in a hospitalized patient. **Therefore, microbiological confirmation should be sought whenever possible** (sputum/endotracheal aspirate culture, blood cultures, and in ICU patients bronchoalveolar lavage or protected specimen brush when needed). Because the clinical picture cannot separate these entities reliably, the combination of microbiology, echocardiography/clinical assessment of volume status, and sometimes CT decides between infection, oedema, embolism, haemorrhage and drug toxicity.",
+          "key_points": [
+            "DDx: ARDS, pulmonary oedema, venous thromboembolism, pulmonary haemorrhage, drug toxicity",
+            "Microbiological confirmation should be sought whenever possible"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L7_c4",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Management of HAP",
+      "summary_ar": "المعالجة التجريبية حسب التوقيت والتعرض المسبق للمضادات، مع الغطاء الكاذب للزوائف وMRSA والقواعد العامة.",
+      "sections": [
+        {
+          "heading": "General Principles and Empirical Strategy",
+          "body_text": "**The principles are similar to those for CAP, focusing on adequate oxygenation, fluid balance and antibiotics.** However, **the choice of empirical antibiotic therapy is more challenging because of the diversity of pathogens and drug resistance.** The lecture's strategy: **In early-onset HAP in patients who have received NO previous antibiotics, treat with co-amoxiclav or cefuroxime.** **If the patient has received a course of recent antibiotics, treat with piperacillin/tazobactam or a third-generation cephalosporin.** **In late-onset HAP the choice of antibiotics must cover Gram-negative organisms, Staph. aureus (MRSA) and anaerobes.** **Anti-pseudomonal cover is provided by: a carbapenem (meropenem), or a third-generation cephalosporin WITH an aminoglycoside.** **MRSA cover is provided by glycopeptides (vancomycin).**",
+          "key_points": [
+            "Same principles as CAP: oxygenation, fluids, antibiotics — but empirical choice is harder",
+            "Early-onset, NO previous antibiotics: co-amoxiclav OR cefuroxime",
+            "Recent antibiotic course: piperacillin/tazobactam OR third-generation cephalosporin",
+            "Late-onset: cover Gram-negatives + MRSA + anaerobes",
+            "Anti-pseudomonal: meropenem, OR 3rd-gen cephalosporin + aminoglycoside",
+            "MRSA: glycopeptides (vancomycin)"
+          ]
+        },
+        {
+          "heading": "Refining Therapy, Physiotherapy and Nutrition",
+          "body_text": "**The final choice of agent is guided by knowledge of local patterns of microbiology and antibiotic resistance.** **It is usual to commence broad-based cover, discontinuing the less appropriate antibiotics as culture results become available** (de-escalation). **The duration of antibiotic therapy is a matter for clinical judgment** (severity, organism, clinical response) rather than a fixed rule. **Physiotherapy aids expectoration in immobile and elderly patients**, and **nutritional support is often required** — completing the bundle of supportive care that matters as much as the antibiotics in these debilitated patients.",
+          "key_points": [
+            "Agent choice guided by LOCAL microbiology and resistance patterns",
+            "Start broad, de-escalate as cultures return",
+            "Duration = clinical judgment",
+            "Physiotherapy for immobile/elderly; nutritional support often required"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L7_c5",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Pneumonia in the Immunocompromised Host",
+      "summary_ar": "الالتهاب الرئوي عند مثبطي المناعة: الكائنات الانتهازية (زوائف، فيروسات، فطريات، متفطرات، نوكاردية) وتعدد المسببات.",
+      "sections": [
+        {
+          "heading": "Spectrum of Pathogens and the Opportunistic Shift",
+          "body_text": "**Patients immunocompromised by drugs or disease (e.g., HIV) are at high risk of pulmonary infection.** The key principle: **the majority of infections are caused by the same pathogens that cause pneumonia in normal individuals** — immunocompromise does not abolish routine bugs. **However, in more profound immunosuppression, unusual organisms, organisms of low virulence, and organisms that are normally non-pathogenic may become 'opportunistic' pathogens**, specifically: **Gram-negative bacteria and Pseudomonas; viral agents; fungi; mycobacteria; and the less common Nocardia asteroides.** A second key principle: **infection is often due to MORE THAN ONE organism** — a single isolate should never close the workup, and broad sampling (sputum, BAL, blood, serology, antigen tests) is often needed. The depth of immunosuppression (neutropenia, CD4 count, drug intensity) predicts the width of the differential.",
+          "key_points": [
+            "Same pathogens as normal hosts cause most cases",
+            "Profound immunosuppression → opportunistic organisms: Gram-negatives/Pseudomonas, viruses, fungi, mycobacteria, Nocardia asteroides",
+            "Infection is often due to MORE THAN ONE organism",
+            "Depth of immunosuppression widens the differential"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Opportunistic pathogens",
+          "definition_ar": "كائنات قليلة الضراوة أو غير ممرضة تصبح مسببة للمرض عند مثبطي المناعة."
+        },
+        {
+          "term": "Nocardia asteroides",
+          "definition_ar": "جرثوم هوائي متشعب يسبب التهاباً رئوياً انتهازياً (خصوصاً عند مثبطي المناعة) مع خراجات متعددة."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L7_f1",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c1",
+      "card_type": "basic",
+      "front_text": "Define hospital-acquired pneumonia and its importance.",
+      "back_text": "HAP (nosocomial pneumonia) is a new episode of pneumonia occurring at least 2 days after admission to hospital. It is the 2nd most common hospital-acquired infection and the leading cause of HAI-associated death. Highest risk: the elderly, ICU patients, and the mechanically ventilated.",
+      "explanation_ar": "≥48 ساعة داخل المشفى؛ ثاني أشيع عدوى مشفوية وأول قاتل.",
+      "is_vivid": false,
+      "tags": [
+        "definition",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L7_f2",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c2",
+      "card_type": "basic",
+      "front_text": "List the four mechanistic groups of HAP predisposing factors with examples.",
+      "back_text": "1) Reduced host defenses: corticosteroids (immunity), post-operative cough-reflex suppression, anaesthetic agents (mucociliary clearance), bulbar/vocal cord palsy. 2) Aspiration of nasopharyngeal/gastric secretions: immobility, reduced conscious level, vomiting, dysphagia (stroke), nasogastric intubation. 3) Bacteria introduced into LRT: endotracheal intubation/tracheostomy, infected ventilators/nebulisers/bronchoscopes, dental/sinus infection. 4) Bacteraemia: abdominal sepsis, IV cannula infection, infected emboli.",
+      "explanation_ar": "دفاع مضطرب + ارتشاح + تلقيح مباشر + تجرثم دم.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L7_f3",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c2",
+      "card_type": "basic",
+      "front_text": "Contrast early-onset versus late-onset HAP organisms.",
+      "back_text": "Early-onset HAP (first 4–5 days): organisms similar to CAP (pneumococcus, H. influenzae, sensitive Gram-negatives). Late-onset HAP: different organisms with more Gram-negatives (E. coli, Pseudomonas, Klebsiella), Staph. aureus including MRSA, and anaerobes.",
+      "explanation_ar": "مبكر=مجتمعي؛ متأخر=مقاوم (زائفة، MRSA، لاهوائيات).",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L7_f4",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c3",
+      "card_type": "basic",
+      "front_text": "What features suggest HAP in a hospitalized/ventilated patient?",
+      "back_text": "Purulent sputum or endotracheal secretions; new radiological infiltrates; unexplained increase in oxygen requirement; temperature > 38.3 C; leucocytosis or leucopenia.",
+      "explanation_ar": "خمس علامات: قشع قيحي، ظل جديد، حاجة أكسجين، حمى، تعداد شاذ.",
+      "is_vivid": false,
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L7_f5",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c3",
+      "card_type": "basic",
+      "front_text": "What is the differential diagnosis of HAP, and why does it matter?",
+      "back_text": "ARDS, pulmonary oedema, venous thromboembolism, pulmonary haemorrhage, and drug toxicity. Because the clinical picture overlaps, microbiological confirmation should be sought whenever possible before committing to prolonged broad-spectrum antibiotics.",
+      "explanation_ar": "خمس بدائل تشخيصية تفرض تأكيداً ميكروبيولوجياً.",
+      "is_vivid": false,
+      "tags": [
+        "differential"
+      ]
+    },
+    {
+      "id": "L7_f6",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "What are the empirical antibiotic choices for HAP by scenario?",
+      "back_text": "Early-onset, no previous antibiotics: co-amoxiclav or cefuroxime. Recent antibiotic course: piperacillin/tazobactam or third-generation cephalosporin. Late-onset: must cover Gram-negatives, S. aureus (MRSA) and anaerobes — anti-pseudomonal cover by carbapenem (meropenem) or third-generation cephalosporin + aminoglycoside; MRSA cover by glycopeptides (vancomycin).",
+      "explanation_ar": "ثلاثة سيناريوهات وثلاث حزم.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L7_f7",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "What supportive care and refinement rules accompany HAP antibiotics?",
+      "back_text": "Agent choice guided by local microbiology and resistance patterns; commence broad-based cover and discontinue less appropriate antibiotics as cultures become available (de-escalation); duration is a matter of clinical judgment; physiotherapy aids expectoration in immobile and elderly patients; nutritional support is often required.",
+      "explanation_ar": "ابدأ واسعاً ثم انزل حسب المزرعة؛ مدة علاجية بحكم سريري.",
+      "is_vivid": false,
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L7_f8",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "Which organisms cause pneumonia in the profoundly immunocompromised host?",
+      "back_text": "Mostly the same pathogens as in normal individuals. In profound immunosuppression, opportunistic organisms emerge: Gram-negative bacteria and Pseudomonas, viral agents, fungi, mycobacteria, and less commonly Nocardia asteroides. Infection is often due to more than one organism.",
+      "explanation_ar": "قاعدة: البكتيريا الاعتيادية أولاً، والانتهازية مع العمق؛ غالباً أكثر من مسبب واحد.",
+      "is_vivid": false,
+      "tags": [
+        "immunocompromised",
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L7_q1",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c1",
+      "question_stem": "A ventilated ICU patient develops fever, purulent endotracheal secretions and a new right lower lobe infiltrate on day 7 of admission. What is this called and what flora is expected?",
+      "options": [
+        "Community-acquired pneumonia with CAP organisms",
+        "Hospital-acquired (ventilator-associated) pneumonia — late-onset flora: Gram-negatives (Pseudomonas, Klebsiella), MRSA and anaerobes",
+        "Aspiration of sterile gastric contents only",
+        "Pulmonary embolism"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ظهور بعد ≥48 ساعة من الدخول عند مُنبَّب = HAP/VAP؛ وبعد 7 أيام نحن في بداية متأخرة (beyond 4-5 days) فالفلورا المقاومة هي المتوقعة: سالبات غرام (زائفة، كليبسيلا، إشريكية) وMRSA ولاهوائيات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما تعريف HAP الزمني؟",
+        "البداية المتأخرة تعني أي فلورا؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L7_q2",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c4",
+      "question_stem": "A patient develops HAP on day 3 of admission and has NOT received any antibiotics during this admission. What is the recommended empirical therapy?",
+      "options": [
+        "Meropenem monotherapy",
+        "Co-amoxiclav or cefuroxime",
+        "Vancomycin alone",
+        "Liposomal amphotericin"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "نص المحاضرة: بداية مبكرة بلا مضادات سابقة = كو-أموكسيسيلاف أو سيفوروكسيم (فلورا شبيهة بCAP). الميروبنيم والفانكومايسين للمتأخر/المقاوم، والأمفوتيريسين فطريات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما أثر غياب المضادات السابقة على الفلورا؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L7_q3",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c4",
+      "question_stem": "A patient on broad-spectrum antibiotics for a week develops late-onset HAP with suspected MRSA. Which combination provides the needed cover?",
+      "options": [
+        "Amoxicillin + clarithromycin",
+        "Anti-pseudomonal agent (meropenem OR 3rd-generation cephalosporin + aminoglycoside) PLUS vancomycin for MRSA",
+        "Metronidazole alone",
+        "Flucloxacillin alone"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "المتأخر يتطلب غطاء الزوائف (كاربابينيم/ميروبنيم أو جيل ثالث + أمينوغليكوزيد) + غطاء MRSA بالغليكوببتيدات (فانكومايسين)، مع تغطية اللاهوائيات. الأموكسيسيلين والكلاريثرومايسين نظام CAP البسيط ولا يغطي المقاوم.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي دواء للزوائف وأي دواء لMRSA؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L7_q4",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c2",
+      "question_stem": "Which of the following is NOT one of the four mechanistic predisposing groups for HAP?",
+      "options": [
+        "Reduced host defenses (corticosteroids, post-op cough suppression)",
+        "Aspiration of nasopharyngeal/gastric secretions (stroke dysphagia, NG tube)",
+        "Direct introduction of bacteria (intubation, infected bronchoscopes)",
+        "Genetic predisposition to lung cancer"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "المجموعات الأربع وفق المحاضرة: دفاعات مضطربة، ارتشاح، تلقيح مباشر للجراثيم، وتجرثم دم (إنتان بطني، قثطرة وريدية، صمّات ملتهبة). الاستعداد الوراثي لسرطان الرئة ليس من آليات HAP.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "راجع المجموعات الأربع"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L7_q5",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c3",
+      "question_stem": "A hospitalized patient develops bilateral infiltrates and hypoxemia. All of the following are on the HAP differential EXCEPT:",
+      "options": [
+        "ARDS",
+        "Pulmonary oedema",
+        "Venous thromboembolism",
+        "Drug toxicity",
+        "Spontaneous pneumothorax"
+      ],
+      "correct_index": 4,
+      "explanation_ar": "قائمة التفريق في المحاضرة: ARDS، وذمة رئوية، صمة وريدية، نزف رئوي، وسُمية دوائية. الاسترواح التلقائي ليس ضمن التشخيص التفريقي المذكور (وظلته شعاعية مختلفة تماماً عن ارتشاح ثنائي).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "راجع القائمة الخماسية"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L7_q6",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c5",
+      "question_stem": "A profoundly neutropenic chemotherapy patient develops pneumonia. Which statement is correct?",
+      "options": [
+        "Only opportunistic organisms need consideration",
+        "Most cases are caused by the same pathogens as in normal hosts, but unusual/low-virulence organisms (Pseudomonas, fungi, viruses, mycobacteria, Nocardia) may become opportunistic — and infection is often due to more than one organism",
+        "Blood cultures are never useful",
+        "Empirical antifungal therapy alone is sufficient"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "قاعدة المحاضرة: الأغلبية بالعوامل الاعتيادية نفسها، ومع التثبيط العميق تظهر الانتهازية (سالب غرام/زائفة، فيروسات، فطريات، متفطرات، نوكاردية)، وغالباً يوجد أكثر من مسبب واحد — لذلك تؤخذ عينات متعددة ولا يُغلق التقييم بعزلة واحدة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "هل يختفي المسبب الاعتيادي عند مثبط المناعة؟",
+        "هل يوجد مسبب واحد عادة؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L7_q7",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c4",
+      "question_stem": "After 72 hours, culture from a late-onset HAP patient grows Klebsiella (ESBL-negative) sensitive to several agents. What is the appropriate antibiotic stewardship step?",
+      "options": [
+        "Continue all broad-spectrum agents to be safe",
+        "De-escalate: discontinue the less appropriate antibiotics as culture results become available",
+        "Add another empirical agent",
+        "Stop all antibiotics"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "قاعدة المحاضرة: نبدأ بغطاء واسع ثم نوقف الأقل ملاءمة عند ورود المزارع (de-escalation) — استمرار الواسع بلا دليل يزيد المقاومة والسميات. الإيقاف الكامل غير صحيح لأن العدوى مثبتة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ماذا نفعل عند وصول نتيجة المزرعة؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L7_q8",
+      "lecture_id": "L7_pneumonia_hap",
+      "concept_id": "L7_c1",
+      "question_stem": "Why is HAP such a high-priority complication in hospitals?",
+      "options": [
+        "It is the most common hospital-acquired infection",
+        "It is the 2nd most common hospital-acquired infection and the leading cause of HAI-associated death",
+        "It never occurs in ICU patients",
+        "It is always caused by fungi"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "وفق المحاضرة: HAP ثاني أشيع عدوى مكتسبة في المشفى، لكنها السبب الأول للوفاة المرتبطة بعداوى المشفى — إحصائية محورية تجعل الوقاية (رفع الرأس، إزالة التنجيد المبكر، تعقيم الأجهزة) أولوية قصوى.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "الترتيب: الأولى شيوعاً أم الأولى قتلاً؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L7_case1",
+      "lecture_id": "L7_pneumonia_hap",
+      "title": "Fever on Day 7 — Ventilator-Associated Pneumonia",
+      "scenario": "A 68-year-old man was admitted 7 days ago with an acute stroke and has been mechanically ventilated in the ICU since day 2 for poor airway protection. Today he spikes a fever, his secretions turn purulent, and his oxygen requirement rises. The ICU team must recognize ventilator-associated pneumonia, choose empiric therapy according to onset timing and prior antibiotic exposure, and plan de-escalation. This case rehearses the complete HAP decision tree.",
+      "vignette": {
+        "age": 68,
+        "sex": "male",
+        "chief_complaint": "Fever and purulent secretions in a ventilated patient (day 7)",
+        "history": "Acute ischaemic stroke with dysphagia and reduced conscious level; intubated and ventilated since hospital day 2; nasogastric tube in situ. He received ceftriaxone for 5 days for possible aspiration before it was stopped yesterday. Slight sedation today; no new chest trauma.",
+        "vitals": {
+          "bp": "105/60 mmHg",
+          "hr": "108 beats/min",
+          "rr": "26 (ventilated)",
+          "temp": "38.9 C",
+          "spo2": "91% on FiO2 0.45 (was 0.35 yesterday)"
+        },
+        "exam": "Sedated but arousable. Coarse crackles right base with dullness. Purulent green endotracheal secretions on suctioning. No skin breakdown; central line site clean; no leg swelling.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "17.8 x10^9/L (4-11)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "186 mg/L (<10)",
+            "flag": "high"
+          },
+          {
+            "name": "Procalcitonin",
+            "value": "4.2 ng/mL (<0.5)",
+            "flag": "high"
+          },
+          {
+            "name": "Urea",
+            "value": "9.8 mmol/L (2.5-7.5)",
+            "flag": "high"
+          },
+          {
+            "name": "Endotracheal aspirate Gram stain",
+            "value": "Numerous Gram-negative bacilli; culture pending",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Portable AP chest X-ray: new dense right lower lobe consolidation with air bronchograms and blunting of the right costophrenic angle, compared with day-4 film. No diffuse white-out (ARDS not suggested); line and tube positions appropriate."
+      },
+      "steps": [
+        {
+          "id": "L7_case1_s1",
+          "prompt": "What diagnostic label fits, and which five bedside features support it?",
+          "options": [
+            "Ventilator-associated pneumonia (a form of HAP) — supported by purulent secretions, new infiltrate, rising oxygen requirement, fever > 38.3 C, and leucocytosis",
+            "ARDS — diffuse white-out with normal secretions",
+            "Pulmonary embolism — normal secretions and clear X-ray",
+            "Drug fever — normal white count and X-ray"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "كل المعايير الخمسة محققة: قشع قيحي، ارتشاح جديد، ازدياد حاجة الأكسجين، حرارة >38.3، وتعدد كريات أبيض — عند مريض مُنبَّب منذ ≥48 ساعة = HAP/VAP. لا يوجد white-out منتشر لنفي ARDS، والمظهر لا يناسب صمة ولا حمى دوائية.",
+          "xp": 15,
+          "hints": [
+            "عدّد معايير الاشتباه الخمسة",
+            "الصورة: موضعية أم منتشرة بيضاء؟"
+          ]
+        },
+        {
+          "id": "L7_case1_s2",
+          "prompt": "Given day-7 onset AND a recent course of ceftriaxone, which empirical antibiotic strategy is correct?",
+          "options": [
+            "Co-amoxiclav alone (early-onset, no prior antibiotics)",
+            "Anti-pseudomonal cover (e.g., piperacillin-tazobactam or meropenem) plus vancomycin for MRSA, because late-onset HAP after recent antibiotics requires Gram-negative + MRSA + anaerobic cover",
+            "Oral clarithromycin",
+            "No antibiotics; observation only"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "البداية متأخرة (اليوم السابع) مع تعرض حديث لمضاد واسع (سيفترياكسون) تدفع نحو فلورا مقاومة؛ الخطة وفق المحاضرة: غطاء مضاد للزوائف (بيبراسيلين-تازوباكتام — أو كاربابينيم/جيل ثالث + أمينوغليكوزيد) + فانكومايسين لتغطية MRSA، ثم التنازل حسب المزرعة.",
+          "xp": 15,
+          "hints": [
+            "التوقيت (مبكر/متأخر) والتعرض المسبق للمضادات يحددان الحزمة",
+            "أي غطاء للزوائف وأي دواء لMRSA؟"
+          ]
+        },
+        {
+          "id": "L7_case1_s3",
+          "prompt": "Two days later, cultures grow Pseudomonas aeruginosa sensitive to piperacillin-tazobactam; no MRSA isolated. What is the stewardship response?",
+          "options": [
+            "Continue vancomycin and all current agents for 3 weeks regardless",
+            "De-escalate: stop vancomycin (no MRSA), narrow to the sensitive agent, and treat with duration based on clinical judgment, alongside physiotherapy and nutritional support",
+            "Stop all antibiotics today",
+            "Add empirical antifungal therapy"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "قاعدة المحاضرة: يبدأ الغطاء واسعاً ثم تُوقف الأدوية الأقل ملاءمة عند توفر المزارع. هنا نوقف الفانكومايسين لعدم وجود MRSA ونكمل بالعامل الحساس، مع أن المدة حكم سريري، مع فيزيائي علاجي ودعم غذائي للمُقعد.",
+          "xp": 15,
+          "hints": [
+            "ماذا يعني غياب MRSA في المزرعة؟",
+            "ما القاعدة عند ورود النتائج؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب رئوي مكتسب في المشفى مرتبط بالتنفس الصناعي (VAP) بالزائفة الزنجارية. الدروس المستفادة: (1) HAP = ظهور بعد ≥48 ساعة من الدخول؛ وهو ثاني أشيع عدوى مشفوية والسبب الأول للوفيات المرتبطة بها. (2) عوامل التهيئة هنا مثالية: خلع بلعوي بعد سكتة + أنبوب أنفي معدي + تنبيب وتهوية — الارتشاح والتلقيح المباشر معاً. (3) المعايير الخمسة (قشع قيحي، ارتشاح جديد، حاجة أكسجين أعلى، حمى >38.3، تعداد/قلة كريات) هي أداة الاشتباه. (4) التفريق عن ARDS والوذمة والصمة والنزف والسمية الدوائية يستلزم تأكيداً ميكروبيولوجياً. (5) الإستراتيجية: مبكر بلا مضادات = كو-أموكسيسيلاف/سيفوروكسيم؛ بعد مضادات حديثة = بيب-تازو أو جيل ثالث؛ متأخر = مضاد زوائف (ميروبنيم أو ج3+أمينوغليكوزيد) + فانكومايسين. (6) التنازل العلاجي عند المزارع ومدة بحكم سريري + فيزيائي ودعم غذائي.",
+      "difficulty": "advanced",
+      "order_index": 0
+    }
+  ]
+}

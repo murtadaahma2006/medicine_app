@@ -91,16 +91,9 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
 
-    return Scaffold(
-      backgroundColor: AppColors.background(b),
-      appBar: AppBar(
-        backgroundColor: AppColors.background(b),
-        title: Text('ملفّي',
-            style: AppType.caption
-                .copyWith(fontSize: 14, color: AppColors.textSecondary(b))),
-        centerTitle: true,
-      ),
-      body: _loading
+    return ColoredBox(
+      color: AppColors.background(b),
+      child: _loading
           ? const Center(child: CircularProgressIndicator())
           : _error != null
               ? EmptyState(
@@ -201,26 +194,26 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       const SizedBox(height: AppSpacing.lg),
 
-                      // ── شريط تقدّم مجموعات البطاقات ──
+                      // ── شريط تقدّم المحاضرات (المنهج) ──
                       AppCard(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text('تقدّمك',
+                            Text('تقدم المنهج',
                                 style: AppType.cardTitle.copyWith(
                                     color: AppColors.text(b))),
                             const SizedBox(height: AppSpacing.md),
                             ProgressBar(
                               progress: _unitsCount == 0
                                   ? 0
-                                  : (_completedVocabSets / _unitsCount)
+                                  : (_completedLessons / _unitsCount)
                                       .clamp(0.0, 1.0),
                               height: 10,
                               color: AppColors.success(b),
                             ),
                             const SizedBox(height: AppSpacing.sm),
                             Text(
-                              '$_completedVocabSets مجموعة بطاقات من $_unitsCount محاضرة',
+                              '$_completedLessons / $_unitsCount مكتمل',
                               style: AppType.body.copyWith(
                                   color: AppColors.textSecondary(b)),
                             ),

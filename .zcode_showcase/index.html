@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>لوحة الهوية البصرية — منصة الطب الباطني</title>
+<style>
+  /* ══ Design Tokens — منقولة حرفياً من lib/src/theme/tokens.dart ══ */
+  :root {
+    --primary: #1B3C6E; --primary-dark: #3E6DB5;
+    --primary-tint: #E9F0FA; --primary-tint-dark: #1C2C46;
+    --gold: #E8A33D; --gold-dark: #F0B45A; --on-gold: #3D2A08;
+    --gold-text: #8A5E10;
+    --bg: #F6F8FB; --surface: #FFFFFF; --surface-alt: #EEF2F7;
+    --text: #17202E; --text-secondary: #5B6879;
+    --border: #E3E9F0;
+    --success: #1E8E4E; --success-container: #E6F5EC;
+    --error: #D64545; --error-container: #FBEAEA;
+    --pearl-bg: #FBF4DE;
+    --card-radius: 16px; --chip-radius: 12px;
+    --shadow: 0 1px 2px rgba(23,32,46,.04);
+    --font-ar: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  }
+  [data-theme="dark"] {
+    --primary: #3E6DB5; --primary-tint: #1C2C46;
+    --gold: #F0B45A; --gold-text: #F0B45A;
+    --bg: #0F1520; --surface: #1A2332; --surface-alt: #232E42;
+    --text: #EAF0F8; --text-secondary: #9AA7B8;
+    --border: #2C3A50;
+    --success: #4CC17E; --success-container: #143524;
+    --error: #E46B6B; --error-container: #3A1A1A;
+    --pearl-bg: #33291A;
+    --shadow: 0 1px 2px rgba(0,0,0,.25);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-ar);
+    background: var(--bg); color: var(--text);
+    transition: background .25s, color .25s;
+    padding: 32px 20px 60px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  h1 { font-size: 28px; font-weight: 800; }
+  .sub { color: var(--text-secondary); font-size: 14px; margin-bottom: 28px; }
+  /* مبدّل الثيم */
+  .toggle {
+    display: inline-flex; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 999px; padding: 4px; gap: 4px;
+  }
+  .toggle button {
+    border: none; background: transparent; color: var(--text-secondary);
+    padding: 8px 18px; border-radius: 999px; cursor: pointer; font-family: inherit; font-size: 13px; font-weight: 700;
+    transition: all .2s;
+  }
+  .toggle button.active { background: var(--primary); color: #fff; }
+  :root[data-theme="dark"] .toggle button.active { color: #EAF0F8; }
+  /* البطاقات — مبدأ «حدود لا ظلال» */
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--card-radius); box-shadow: var(--shadow);
+    padding: 24px; margin-bottom: 20px;
+  }
+  .card h2 { font-size: 18px; margin-bottom: 4px; }
+  .card .desc { color: var(--text-secondary); font-size: 13px; margin-bottom: 18px; }
+  .grid { display: grid; gap: 16px; }
+  .g3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .g2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  /* الأيقونات */
+  .icon-box {
+    background: var(--surface-alt); border-radius: var(--chip-radius);
+    padding: 16px; text-align: center;
+  }
+  .icon-box img { width: 140px; height: 140px; border-radius: 28px; }
+  .icon-box .name { font-weight: 700; font-size: 13px; margin-top: 10px; }
+  .icon-box .tag { color: var(--text-secondary); font-size: 11.5px; margin-top: 2px; }
+  /* المقارنة قبل/بعد */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .compare .old img { filter: none; }
+  .compare .lbl { font-size: 12px; font-weight: 700; margin-bottom: 8px; display: block; }
+  .compare .old .lbl { color: var(--error); }
+  .compare .new .lbl { color: var(--success); }
+  /* رقاقات الألوان */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 10px; }
+  .sw { border-radius: var(--chip-radius); overflow: hidden; border: 1px solid var(--border); }
+  .sw .c { height: 52px; }
+  .sw .m { background: var(--surface); font-size: 10.5px; padding: 5px 6px; color: var(--text-secondary); direction: ltr; }
+  .sw .m b { color: var(--text); }
+  /* رقاقات التخصصات */
+  .module-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mchip {
+    display: inline-flex; align-items: center; gap: 6px;
+    border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 700;
+    border: 1px solid var(--border);
+  }
+  .mchip .dot { width: 10px; height: 10px; border-radius: 50%; }
+  /* الويدجت */
+  .widget-mock {
+    background: var(--bg); border: 1px solid var(--border); border-radius: 20px;
+    padding: 20px; display: flex; justify-content: center;
+  }
+  .widget-mock img { max-width: 380px; width: 100%; border-radius: 16px; }
+  /* الأزرار — مكونات مقترحة */
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .btn {
+    font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;
+    border-radius: var(--chip-radius); padding: 12px 22px; border: 1px solid transparent;
+    transition: transform .12s ease;
+  }
+  .btn:active { transform: scale(.97); }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-secondary { background: var(--surface); color: var(--primary); border-color: var(--border); }
+  .btn-gold { background: var(--gold); color: var(--on-gold); }
+  .btn-ghost { background: transparent; color: var(--primary); }
+  .btn-danger { background: var(--error-container); color: var(--error); border-color: var(--error); }
+  /* بطاقة محاضرة نموذجية */
+  .lecture-card {
+    border: 1px solid var(--border); border-radius: var(--card-radius);
+    padding: 16px; background: var(--surface); position: relative; overflow: hidden;
+  }
+  .lecture-card::before {
+    content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 4px; background: #1E96C8;
+  }
+  .lc-top { display: flex; justify-content: space-between; align-items: center; }
+  .lc-chip { background: #E8F3FA; color: #146A94; border-radius: 999px; padding: 4px 10px; font-size: 11px; font-weight: 700; }
+  [data-theme="dark"] .lc-chip { background: #1C3348; color: #7EC3E8; }
+  .lc-title { font-weight: 800; font-size: 15px; margin: 10px 0 6px; }
+  .lc-meta { color: var(--text-secondary); font-size: 12px; }
+  .lc-progress { height: 6px; background: var(--surface-alt); border-radius: 999px; margin-top: 12px; }
+  .lc-progress > div { height: 100%; width: 62%; background: var(--primary); border-radius: 999px; }
+  /* الرسوم البيانية */
+  .chart-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .chart-box { background: var(--surface); border: 1px solid var(--border); border-radius: var(--card-radius); padding: 14px; }
+  .chart-box img { width: 100%; border-radius: 8px; }
+  .chart-box .cap { font-size: 12px; color: var(--text-secondary); margin-top: 8px; text-align: center; }
+  footer { text-align: center; color: var(--text-secondary); font-size: 12px; margin-top: 32px; }
+  .badge { display:inline-block; background: var(--primary-tint); color: var(--primary); padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; margin-bottom: 14px;}
+  [data-theme="dark"] .badge { color: #7EC3E8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <span class="badge">عرض قدرات — مولّد برمجياً من tokens.dart</span>
+      <h1>لوحة الهوية البصرية — منصة الطب الباطني</h1>
+    </div>
+    <div class="toggle">
+      <button id="btn-light" class="active" onclick="setTheme('light')">☀️ فاتح</button>
+      <button id="btn-dark" onclick="setTheme('dark')">🌙 داكن</button>
+    </div>
+  </header>
+  <p class="sub">كل الألوان والخطوط والمسافات هنا منقولة من نظام التصميم الفعلي للتطبيق — جرب تبديل الوضع وستفهم فلسفة «الحاوية أولاً».</p>
+
+  <!-- ══ 1. الأيقونات ══ -->
+  <div class="card">
+    <h2>1 · مفاهيم أيقونة التطبيق</h2>
+    <p class="desc">ثلاثة اتجاهات، كلها بألوان الـ tokens الفعلية (كحلي #1B3C6E + ذهبي #E8A33D). لاحظ أن الشعار الحالي في <code>assets/brand/app_logo.svg</code> يستخدم ألواناً خارج النظام — هذه مفاهيم مُوحّدة.</p>
+    <div class="grid g3">
+      <div class="icon-box">
+        <img src="concepts/concept1_heart_shield_1024.png" alt="درع القلب والنبض">
+        <div class="name">المفهوم 1 — الدرع والنبض</div>
+        <div class="tag">حيطة طبية + قلب بحدّ ذهبي + خط نبض</div>
+      </div>
+      <div class="icon-box">
+        <img src="concepts/concept2_capsule_book_1024.png" alt="الكتاب والكبسولة">
+        <div class="name">المفهوم 2 — الكتاب والكبسولة</div>
+        <div class="tag">الهوية الأكاديمية: تعلّم + دواء</div>
+      </div>
+      <div class="icon-box">
+        <img src="concepts/concept3_specialty_constellation_1024.png" alt="كوكبة التخصصات">
+        <div class="name">المفهوم 3 — كوكبة التخصصات</div>
+        <div class="tag">الأكثر جرأة: صليب طبي + 10 نقاط بألوان التخصصات</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ 2. الألوان ══ -->
+  <div class="card">
+    <h2>2 · نظام الألوان (فاتح ↔ داكن)</h2>
+    <p class="desc">بدّل الوضع في الأعلى وشاهد الألوان تتحوّل — هذه نفس آلية <code>AppColors.primary(brightness)</code> في التطبيق.</p>
+    <div class="swatches" id="swatches"></div>
+    <div style="margin-top:22px">
+      <div style="font-weight:700; font-size:13px; margin-bottom:10px">التخصصات العشرة — الحاويات (Container-First)</div>
+      <div class="module-chips" id="modules"></div>
+    </div>
+  </div>
+
+  <!-- ══ 3. الويدجت ══ -->
+  <div class="card">
+    <h2>3 · واجهة ويدجت الشاشة الرئيسية</h2>
+    <p class="desc">نسخة mockup مطابقة لتخطيط <code>medicine_home_widget.xml</code> (أهدافي + لؤلؤة اليوم) — الويدجت نفسه لا يتغير هنا، هذا معاينة للتصميم في الوضعين.</p>
+    <div class="widget-mock">
+      <img src="concepts/widget_light.png" id="widget-img" alt="واجهة الويدجت">
+    </div>
+  </div>
+
+  <!-- ══ 4. المكونات ══ -->
+  <div class="card">
+    <h2>4 · مكوّنات واجهة مقترحة</h2>
+    <p class="desc">أزرار وبطاقة محاضرة بأسلوب «حدود لا ظلال» — انقر الأزرار لترى تفاعل الانكماش (0.97 / 120ms) نفسه في التطبيق.</p>
+    <div class="btn-row" style="margin-bottom:20px">
+      <button class="btn btn-primary">ابدأ المراجعة</button>
+      <button class="btn btn-secondary">تثبيت محاضرة</button>
+      <button class="btn btn-gold">+120 XP</button>
+      <button class="btn btn-ghost">تخطّي</button>
+      <button class="btn btn-danger">إلغاء التثبيت</button>
+    </div>
+    <div class="grid g2">
+      <div class="lecture-card">
+        <div class="lc-top">
+          <span class="lc-chip">تنفس · L4</span>
+          <span style="color:var(--text-secondary);font-size:12px">62%</span>
+        </div>
+        <div class="lc-title">Upper Respiratory Tract Infection</div>
+        <div class="lc-meta">المفاهيم 18 · البطاقات 24 · أسئلة 15 · حالات 4</div>
+        <div class="lc-progress"><div></div></div>
+      </div>
+      <div class="lecture-card" style="--c:#5F9E3E">
+        <div class="lc-top">
+          <span class="lc-chip" style="background:#F0F6EA;color:#3D6E26">هضم · L2</span>
+          <span style="color:var(--text-secondary);font-size:12px">100% ✓</span>
+        </div>
+        <div class="lc-title">Acid-Related Disorders</div>
+        <div class="lc-meta">مكتملة — متاحة للمراجعة المتباعدة</div>
+        <div class="lc-progress"><div style="width:100%;background:var(--success)"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ 5. الرسوم البيانية ══ -->
+  <div class="card">
+    <h2>5 · رسوم بيانية جاهزة للتطبيق</h2>
+    <p class="desc">ولّدت الرسم الأول من ملف محتوى فعلي في تطبيقك (<code>L4_URTI_lecture_content.json</code>) — نفس أسلوب العرض يمكن أن يغذّي شاشة الإحصاءات مستقبلاً.</p>
+    <div class="chart-row">
+      <div class="chart-box"><img src="charts/chart1_content_breakdown.png" alt=""><div class="cap">توزيع محتوى المحاضرة (بيانات حقيقية)</div></div>
+      <div class="chart-box"><img src="charts/chart2_lecture_progress.png" alt=""><div class="cap">تقدم المسار التعليمي</div></div>
+      <div class="chart-box"><img src="charts/chart3_module_mastery.png" alt=""><div class="cap">إتقان التخصصات العشرة</div></div>
+      <div class="chart-box"><img src="charts/chart4_weekly_review.png" alt=""><div class="cap">مراجعات الأسبوع مقابل الهدف</div></div>
+    </div>
+  </div>
+
+  <footer>صُنع برمجياً بواسطة ZCode — الألوان منقولة من lib/src/theme/tokens.dart · الخط Cairo (عربي) · 2026-09-14</footer>
+</div>
+
+<script>
+  // ══ tokens منقولة من tokens.dart ══
+  const pairs = [
+    ['primary', '#1B3C6E', '#3E6DB5'],
+    ['primaryTint', '#E9F0FA', '#1C2C46'],
+    ['gold', '#E8A33D', '#F0B45A'],
+    ['bg', '#F6F8FB', '#0F1520'],
+    ['surface', '#FFFFFF', '#1A2332'],
+    ['surfaceAlt', '#EEF2F7', '#232E42'],
+    ['text', '#17202E', '#EAF0F8'],
+    ['textSecondary', '#5B6879', '#9AA7B8'],
+    ['border', '#E3E9F0', '#2C3A50'],
+    ['success', '#1E8E4E', '#4CC17E'],
+    ['error', '#D64545', '#E46B6B'],
+    ['pearlBg', '#FBF4DE', '#33291A'],
+  ];
+  const modules = [
+    ['قلب', '#E14B4B', '#FDECEC', '#B02828'], ['تنفس', '#1E96C8', '#E8F3FA', '#146A94'],
+    ['كلى', '#C77F1E', '#FBF1E2', '#8F5B0F'], ['هضم', '#5F9E3E', '#F0F6EA', '#3D6E26'],
+    ['غدد', '#8B5CC9', '#F2EDFA', '#653B9E'], ['دم', '#B33939', '#FBEBEB', '#8A2323'],
+    ['عدوى', '#F28436', '#FEF2E9', '#B85F13'], ['رثوية', '#1FA8A0', '#E6F5F4', '#0F7A73'],
+    ['عصب', '#4A67C4', '#EBEFF9', '#2F4A9E'], ['أورام', '#D4568D', '#FCEBF3', '#AD2F68'],
+  ];
+
+  function setTheme(mode) {
+    document.documentElement.setAttribute('data-theme', mode);
+    document.getElementById('btn-light').classList.toggle('active', mode === 'light');
+    document.getElementById('btn-dark').classList.toggle('active', mode === 'dark');
+    document.getElementById('widget-img').src = mode === 'dark' ? 'concepts/widget_dark.png' : 'concepts/widget_light.png';
+    renderSwatches(mode);
+  }
+
+  function renderSwatches(mode) {
+    const idx = mode === 'dark' ? 2 : 1;
+    document.getElementById('swatches').innerHTML = pairs.map(([name, l, d]) =>
+      `<div class="sw"><div class="c" style="background:${idx === 1 ? l : d}"></div><div class="m"><b>${name}</b><br>${idx === 1 ? l : d}</div></div>`
+    ).join('');
+    document.getElementById('modules').innerHTML = modules.map(([n, a, c, t]) => {
+      const acc = mode === 'dark' ? lighten(a) : t;
+      const bg = mode === 'dark' ? 'rgba(255,255,255,.06)' : c;
+      return `<span class="mchip" style="background:${bg}"><span class="dot" style="background:${a}"></span>${n}</span>`;
+    }).join('');
+  }
+  // تفتيح بسيط لوضع الداكن (نفس فلسفة L≈72%)
+  function lighten(hex) {
+    const n = parseInt(hex.slice(1), 16);
+    const f = (v) => Math.min(255, Math.round(v + (255 - v) * 0.35));
+    return '#' + [f(n>>16&255), f(n>>8&255), f(n&255)].map(v=>v.toString(16).padStart(2,'0')).join('');
+  }
+  renderSwatches('light');
+</script>
+</body>
+</html>

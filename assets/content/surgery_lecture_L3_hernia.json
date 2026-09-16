@@ -1,0 +1,1527 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L3_hernia",
+    "specialty": "surgery",
+    "title": "Abdominal Wall Hernias: Principles, Inguinal, Femoral, Ventral Hernias and Abdominal Wall Conditions",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "Hernia.pdf",
+      "page_count": 14
+    },
+    "tags": [
+      "hernia",
+      "inguinal hernia",
+      "femoral hernia",
+      "ventral hernia",
+      "incisional hernia",
+      "abdominal wall",
+      "strangulation",
+      "burst abdomen"
+    ],
+    "order_index": 3,
+    "golden_tip": [
+      "A tense, tender, irreducible hernia with no expansile cough impulse is strangulated until proven otherwise: gangrene may occur within 5-6 hours of the first symptom, so send for urgent surgery.",
+      "Normal or frequent bowel motions do NOT exclude strangulation when only part of the bowel circumference is trapped (Richter's hernia, usually femoral): constipation is late and perforation may occur before operation.",
+      "A pink serosanguineous discharge from a laparotomy wound around the 6th to 8th postoperative day is pathognomonic of burst abdomen; pain and shock are often absent, so never dismiss it as simple wound infection.",
+      "Neck above and medial to the pubic tubercle = inguinal hernia; below and lateral = femoral hernia. About half of femoral hernias present as emergencies, so every femoral hernia needs surgical repair.",
+      "A scar regains only 70% of initial muscle strength: 10% of laparotomy incisions and 1% of port sites herniate; close fascia with bites 5 mm apart and 5-8 mm from the edge at a 4:1 suture-to-wound ratio with 2/0 slowly resorbable suture."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L3_hernia_c01",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Hernia Principles: Definition, Causes, Components and Classification",
+      "summary_ar": "الفتق هو بروز غير طبيعي لعضو أو نسيج عبر فتحة في الطبقة التي تحصره عادة. يعتمد هذا المفهوم أسباب فتوق جدار البطن، والمكونات الأربعة للفتق (العيب والكيس والغلاف والمحتوى مع فتقي ريختر ولتري)، والتصنيف من الخفي إلى القابل للرد فغير القابل للرد فالمنسد فالمخنوق فالملتهب، مع التاريخ المرضي والفحص والتحري ومبادئ العلاج بما فيها المراقبة اليقظة والترقيع بالشبكة.",
+      "sections": [
+        {
+          "heading": "Definition and Learning Objectives",
+          "body_text": "A **hernia** is an abnormal protrusion of an organ or tissue through an opening in the layer that normally confines it. In the abdomen, viscera and peritoneal fat are pushed through a defect in the musculofascial wall and present as a lump, most often in the groin or around previous scars. This lecture sets eight learning objectives: (1) basic anatomy of the abdominal wall and its weaknesses; (2) causes of abdominal hernia; (3) types of hernia and classifications; (4) clinical history and examination findings in hernia; (5) complications of abdominal hernia; (6) non-surgical and surgical management of hernia including mesh; (7) complications of hernia surgery; and (8) other abdominal wall conditions. Mastering these objectives allows the student to manage one of the most common problems in general surgery, from a painless reducible groin lump to the life-threatening emergency of a strangulated hernia.",
+          "key_points": [
+            "Hernia = abnormal protrusion of an organ or tissue through an opening in the layer that normally confines it.",
+            "Objectives: anatomy and weaknesses, causes, types and classification, clinical assessment, complications, management including mesh, complications of surgery, other abdominal wall conditions."
+          ]
+        },
+        {
+          "heading": "Causes of Abdominal Wall Herniation",
+          "body_text": "Herniation requires a weak wall plus a driving force. The causes of abdominal wall herniation are:\n- **Anatomical weakness** caused by inadequate muscular strength, classically at the **lumbar triangles** and the **posterior wall of the inguinal canal**.\n- **Developmental failure of the processus vaginalis to close**, producing an **indirect inguinal hernia**.\n- **Sharp and blunt trauma**: weakness may be the result of sharp trauma from abdominal surgery or stabbing. A surgical scar, even with perfect wound healing, has only **70% of the initial muscle strength**; consequently **10% of surgical incisions** and only **1% of laparoscopic port-site incisions** go on to herniate.\n- **Genetic weakness of collagen**, aggravated by **smoking**.\n- **Ageing and pregnancy**: herniation is common in pregnancy due to hormonally induced laxity of pelvic ligaments, and is more common in the elderly due to degenerative weakness of muscles and fibrous tissue.\n- **Primary neurological and muscle diseases**.\n- **Excessive intra-abdominal pressure** from chronic cough, straining on micturition or straining on defecation.",
+          "key_points": [
+            "A surgical scar, even with perfect healing, retains only 70% of initial muscle strength.",
+            "10% of surgical incisions versus 1% of laparoscopic port-site incisions herniate.",
+            "Pressure factors: chronic cough, straining on micturition or on defecation.",
+            "Pregnancy causes hormonally induced laxity of pelvic ligaments; the elderly have degenerative weakness."
+          ]
+        },
+        {
+          "heading": "The Four Essential Components of an Abdominal Wall Hernia",
+          "body_text": "Common principles in abdominal hernia: an abdominal wall hernia has four essential components.\n- **1. A defect in the wall.** The weakness may be entirely in **muscle** (for example an incisional hernia), in **fascia** (for example an epigastric hernia through the linea alba), or it may have a **bony component** (for example a femoral hernia). The weakness in the wall is usually the **narrowest part of the hernia**. The defect varies in size and may be very small or indeed very large; a **small defect with rigid walls traps the content** and prevents it from freely moving in and out of the defect, increasing the risk of complications.\n- **2. The sac of peritoneum.** More commonly, when peritoneum is lying immediately deep to the abdominal wall weakness, pressure forces the peritoneum through the defect and into the subcutaneous tissues. This sac of peritoneum allows bowel and omentum to pass through the defect.\n- **3. The covering**, derived from the layers of the abdominal wall through which the sac passes.\n- **4. The content**: omentum (**omentocele**); intestine (**enterocele** - small intestine, large intestine or appendix); a portion of the circumference of the intestine (**Richter's hernia**); a portion of bladder, ovary with or without fallopian tube; a **Meckel's diverticulum (Littre's hernia)**; or fluid as part of ascites.",
+          "key_points": [
+            "Defect: in muscle (incisional), fascia (epigastric) or with a bony component (femoral).",
+            "The wall defect is usually the narrowest part of the hernia; small rigid defects trap content and cause complications.",
+            "Omentum = omentocele; intestine = enterocele; part of the bowel circumference = Richter's; Meckel's diverticulum = Littre's.",
+            "Other contents: portion of bladder, ovary with or without fallopian tube, fluid (ascites)."
+          ],
+          "check": {
+            "prompt": "A hernia sac that contains a Meckel's diverticulum is called:",
+            "options": [
+              "Littre's hernia",
+              "Richter's hernia",
+              "Omentocele",
+              "Bubonocele",
+              "Enterocele"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "فتق لتري هو الفتق الذي يحتوي رتق ميكل، أما فتق ريختر فيدخل جزءاً من محيط جدار الأمعاء، والفتق الثربي محتواه الثرب، والبوبونوسيل فتق إربي يقتصر على القناة، والفتق المعوي يحتوي أمعاء."
+          }
+        },
+        {
+          "heading": "Classification of Hernias Irrespective of Site",
+          "body_text": "Classification (irrespective of the site):\n- **1. Occult hernia** - not detectable clinically.\n- **2. Reducible hernia** - the intraperitoneal organs can move freely in and out of the hernia; the content can be returned to the abdomen spontaneously, by the patient, or by the surgeon. There is an **expansile impulse on coughing**. If the content is **intestine**, there is a **gurgle on reduction and the first part is more difficult to reduce than the last**; if the content is **omentum**, it feels **doughy and the last portion is more difficult to reduce than the first**.\n- **3. Irreducible hernia** - the content is unable to return to the peritoneal cavity due to adhesion, a small defect, or overcrowding within the sac; irreducibility of an omental hernia is diagnostic of an **omentocele**.\n- **4. Obstructed hernia** - an irreducible hernia containing intestine which is partially or totally obstructed, but with **no interference with the blood supply** to the bowel. The symptoms are less severe and the onset more gradual than in strangulation.\n- **5. Strangulated hernia** - the blood supply to the content is seriously impaired, making the contents ischemic. **Gangrene may occur 5-6 hours after the onset.** The wall of the bowel perforates, releasing infected, toxic bowel content into the tissues and ultimately back into the peritoneal cavity. Strangulation is **more common in femoral hernia** because of the **narrow neck and rigid surrounds**, and in **Richter's hernia**. On examination the hernia is **tense, tender, irreducible, with no expansile cough impulse**.\n- **6. Inflamed hernia** - either from an internal cause, inflammation of the content of the sac (for example acute appendicitis or salpingitis), or from an external cause, a **trophic ulcer** that develops in the dependent part of a large hernia. On examination the hernia is **tender but not tense, with red, edematous overlying skin**.",
+          "key_points": [
+            "Reducible intestine gurgles: first part hardest to reduce; omentum feels doughy: last portion hardest.",
+            "Obstructed = obstruction WITHOUT blood supply interference; strangulated = impaired blood supply, gangrene possible within 5-6 hours.",
+            "Strangulated hernia O/E: tense, tender, irreducible, no expansile cough impulse.",
+            "Strangulation is commonest in femoral hernia (narrow neck, rigid surroundings) and Richter's hernia.",
+            "Inflamed hernia: tender, NOT tense, red edematous skin (internal cause like appendicitis/salpingitis, or trophic ulcer)."
+          ],
+          "check": {
+            "prompt": "What distinguishes an obstructed hernia from a strangulated hernia?",
+            "options": [
+              "The blood supply to the bowel is intact in obstruction but impaired in strangulation",
+              "Obstruction is always painless whereas strangulation is always painless too",
+              "Strangulation has a longer and more gradual onset",
+              "Obstruction occurs only in femoral hernias",
+              "Strangulated hernias always contain omentum"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفتق المنسد يحتوي أمعاء مسدودة جزئياً أو كلياً مع بقاء التروية الدموية سليمة وأعراضه أخف وبدايته أكثر تدرجاً، بعكس الفتق المخنوق الذي تختل فيه التروية الدموية فيصبح المحتوى ناقص التروية وعرضة للغنغرينا خلال 5-6 ساعات."
+          }
+        },
+        {
+          "heading": "Clinical History, Examination and Investigations",
+          "body_text": "**History.** Self-diagnosis is common. The hernia is usually painless, but patients may complain of an aching or heavy feeling. Sharp, intermittent pain suggests pinching of tissue, and **severe pain should alert the surgeon to a high risk of strangulation**. One should determine whether the hernia reduces spontaneously or needs to be helped. The patient should be asked about symptoms which might suggest bowel obstruction. It is important to know if this is a primary hernia, a recurrent hernia or an incisional hernia after previous surgery. General questions regarding the cardiac and respiratory systems are necessary to assess anaesthetic risk. In a male with a groin hernia, take a history of prostatic symptoms.\n**Examination checks.** Reducibility; cough impulse; overlying skin color changes (**bruising suggests venous engorgement of the content, while overlying cellulitis means the hernia content is strangulating**); tenderness; multiple defects and the contralateral side; signs of previous repair; scrotal content for a groin hernia; associated pathology.\n**Investigations.** For most hernias, no specific investigation is required, the diagnosis being made on clinical examination. Plain x-ray is of little value. Ultrasound scan is low cost but operator dependent, and may be useful in the early postoperative period. CT scan is used in complex ventral and incisional hernia. MRI scan is good in sportsman's groin with pain from an orthopaedic injury. Laparoscopy is useful to identify an occult contralateral inguinal hernia.",
+          "key_points": [
+            "Severe pain in a hernia = high risk of strangulation.",
+            "Bruising over a hernia suggests venous engorgement; cellulitis suggests strangulating content.",
+            "Always examine for multiple defects, the contralateral side, signs of previous repair and scrotal content.",
+            "US: cheap, operator dependent, useful early postoperatively; CT: complex ventral/incisional; MRI: sportsman's groin; laparoscopy: occult contralateral hernia."
+          ]
+        },
+        {
+          "heading": "Principles of Management: Watchful Waiting, Truss and Repair",
+          "body_text": "An abdominal wall hernia does not necessarily require repair. **Surgery** is indicated for relief of symptoms of discomfort and for cosmesis, when complications are likely, in **all cases of femoral hernia** because of the high risk of strangulation, in **any case of irreducible hernia**, especially where there is pain and tenderness, and it should be offered to younger adult patients. A patient who presents with **acute pain in a hernia, particularly if it is irreducible, should be offered urgent surgery**.\nIn elderly patients a policy of **watchful waiting** in asymptomatic inguinal hernia appears generally safe, provided the hernia is asymptomatic, small in size, easily reduced and is not causing anxiety. A **truss** can be used to control a hernia.\nLarge incisional hernias, particularly recurrent ones, present a major problem: surgical repair is a complex procedure with significant risk of complications and later recurrence. When the neck is wide, the risk of strangulation is low; in the obese and elderly patient these risks may outweigh the benefits of surgery, so surgeons commonly adopt a conservative approach.\n**Modern surgical repairs follow four principles:** (1) reduction of the hernia contents into the abdominal cavity with excision of any non-viable tissue and bowel repair if necessary; (2) excision and closure of the peritoneal sac; (3) closure of the hernia defect if possible; (4) reinforcement of the abdominal wall with **mesh**.",
+          "key_points": [
+            "All femoral hernias and all irreducible hernias (especially painful ones) need surgery; acute painful irreducible hernia = urgent surgery.",
+            "Watchful waiting is safe in elderly patients with asymptomatic, small, easily reduced, non-anxiety-causing inguinal hernia.",
+            "Wide-necked large incisional hernias in the obese/elderly may be treated conservatively.",
+            "Repair principles: reduce contents + excise non-viable tissue, excise and close the sac, close the defect, reinforce with mesh."
+          ],
+          "check": {
+            "prompt": "Which hernia must always be offered surgical repair because of its high risk of strangulation?",
+            "options": [
+              "Femoral hernia",
+              "Asymptomatic small epigastric hernia containing fat only",
+              "Divarication of the recti abdominis",
+              "Small asymptomatic paraumbilical hernia without bowel",
+              "Any occult hernia detected on laparoscopy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يجب إصلاح كل حالات الفتق الفخذي جراحياً بسبب الخطر العالي للخنق، بينما الفتق الشرسوفية الصغيرة الدهنية غير خطيرة، وتباعد المستقيمتين بلا خطر خنق، والفتق جنب السري الصغير اللاعرضي دون أحشاء يمكن تركه."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hernia",
+          "definition_ar": "فتق: بروز غير طبيعي لعضو أو نسيج من خلال فتحة في الطبقة التي تحويه طبيعياً."
+        },
+        {
+          "term": "Omentocele",
+          "definition_ar": "فتق الثرب: فتق محتواه كتلة من الثرب (الأومنتوم)."
+        },
+        {
+          "term": "Enterocele",
+          "definition_ar": "فتق الأمعاء: فتق يحتوي أمعاء دقيقة أو غليظة أو الزائدة الدودية."
+        },
+        {
+          "term": "Richter's hernia",
+          "definition_ar": "فتق ريختر: يدخل جزء من محيط جدار الأمعاء فقط في الكيس دون إغلاق كامل لللمعة، وغالباً في الفتق الفخذي، لذلك يبقى التبرز طبيعياً في البداية."
+        },
+        {
+          "term": "Littre's hernia",
+          "definition_ar": "فتق لتري: فتق يحتوي رتق ميكل."
+        },
+        {
+          "term": "Reducible hernia",
+          "definition_ar": "فتق قابل للرد: تعود المحتويات إلى جوف البطن تلقائياً أو بيد المريض أو الجراح، مع نبلة توسعية عند السعال."
+        },
+        {
+          "term": "Irreducible hernia",
+          "definition_ar": "فتق غير قابل للرد: تعجز المحتويات عن العودة بسبب التصاقات أو عيب صغير أو ازدحام داخل الكيس."
+        },
+        {
+          "term": "Obstructed hernia",
+          "definition_ar": "فتق منسد: فتق غير قابل للرد يحتوي أمعاء مسدودة جزئياً أو كلياً مع بقاء التروية الدموية سليمة."
+        },
+        {
+          "term": "Strangulated hernia",
+          "definition_ar": "فتق مخنوق: اختلال خطير في التروية الدموية للمحتويات يؤدي إلى نقص التروية والغنغرينا خلال 5-6 ساعات؛ يكون الفتق متوتراً متكتلاً غير قابل للرد دون نبلة سعال توسعية."
+        },
+        {
+          "term": "Inflamed hernia",
+          "definition_ar": "فتق ملتهب: التهاب ناتج عن محتوى الكيس مثل التهاب الزائدة الدودية أو البوق، أو عن سبب خارجي مثل قرحة ضغطية في قمة فتق كبير؛ يكون الفتق متكتلاً غير قاسٍ مع احمرار وتورم الجلد."
+        },
+        {
+          "term": "Occult hernia",
+          "definition_ar": "فتق خفي: لا يمكن اكتشافه بالفحص السريري."
+        },
+        {
+          "term": "Watchful waiting",
+          "definition_ar": "المراقبة اليقظة: سياسة انتظار آمنة عموماً لدى المسنين ذوي فتق إربي لا عرضي، صغير، سهل الرد وغير مسبب للقلق."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L3_hernia_c02",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Inguinal Hernia: Surgical Anatomy, Embryology and Types",
+      "summary_ar": "يشرح هذا المفهوم التشريح الجراحي للقناة الإربية (الحلقة العميقة والحلقة السطحية والحدود والأعصاب الثلاثة) ونشأة الفتق غير المباشر من بقاء الناتئ المهبلي مفتوحاً، ثم أنواع الفتق الإربي: غير المباشر بأنواعه الثلاثة (البوبونوسيل والحبلي والكامل)، والمباشر عبر مثلث هسلباخ، والمنزلق بمحتوياته المميزة حسب الجهة.",
+      "sections": [
+        {
+          "heading": "Overview and Surgical Anatomy of the Inguinal Canal",
+          "body_text": "Inguinal hernia is the most common hernia in men and is around **10 times more common in men than in women**. There are two basic types, indirect and direct, plus a third pattern, the sliding hernia.\n**Surgical anatomy.** The **deep inguinal ring** is a defect in the transversalis fascia lying midway between the pubic tubercle and the anterior superior iliac spine, about **2-3 cm above and marginally lateral to the femoral artery pulse** in the groin. The **inferior epigastric vessels** lie just medial to the deep inguinal ring, passing from the iliac vessels to the rectus abdominis muscle. The transversus muscle and the internal oblique muscle arch over the deep inguinal ring to become attached to the pubic tubercle, forming the **conjoint tendon**; below this arch there is no muscle, only transversalis fascia, resulting in an **area of weakness**. Anterior to the canal is the aponeurosis of the external oblique muscle, the fibers of which run downwards and medially; the testis finally emerges through an inverted V-shaped defect in this aponeurosis, the **superficial inguinal ring, 1.25 cm above the pubic tubercle**, and descends into the scrotum.\n**Boundaries of the inguinal canal:** anterior = external oblique aponeurosis; posterior = transversalis fascia (with the inferior epigastric vessels medial to the deep ring); superior = conjoint tendon; inferior = inguinal ligament.\n**The canal** is **3.75 cm long** in the adult, directed **downward and medially**. It transmits the **spermatic cord**: testicular artery, veins, lymphatics and the vas deferens. In females the **round ligament** descends through the canal to end in the labia majora. **Three important nerves** are related to the canal: the **ilioinguinal**, the **iliohypogastric** and the **genital branch of the genitofemoral nerve**.",
+          "key_points": [
+            "Inguinal hernia is about 10 times more common in men than in women.",
+            "Deep ring: transversalis fascia defect midway between pubic tubercle and ASIS, 2-3 cm above and slightly lateral to the femoral artery pulse.",
+            "Superficial ring: inverted V-shaped defect in external oblique aponeurosis, 1.25 cm above the pubic tubercle.",
+            "Canal = 3.75 cm in adults, downward and medial; transmits spermatic cord (or round ligament to the labia majora).",
+            "Nerves: ilioinguinal, iliohypogastric, genital branch of genitofemoral.",
+            "Weakness below the arch of the conjoint tendon: only transversalis fascia, no muscle."
+          ]
+        },
+        {
+          "heading": "Embryology: Processus Vaginalis and Congenital Hernia",
+          "body_text": "As the testis descends, a tube of peritoneum is pulled with the testis and wraps around it, ultimately forming the **tunica vaginalis**. This peritoneal tube should obliterate, possibly under hormonal control, but it commonly fails to fuse either in part or totally. As a result, bowel within the peritoneal cavity is able to pass inside the tube down towards the scrotum. **Inguinal hernia in neonates and young children is always of this congenital type.** However, in other patients the muscles around the deep inguinal ring can prevent a hernia from developing until later in life, when, under the constant positive abdominal pressure, the deep inguinal ring and muscles are stretched and the hernia becomes apparent.",
+          "key_points": [
+            "Patent processus vaginalis (partial or total) allows bowel to pass towards the scrotum.",
+            "Inguinal hernia in neonates and young children is ALWAYS congenital.",
+            "In adults, the deep ring and muscles stretch under constant positive abdominal pressure until the hernia appears."
+          ]
+        },
+        {
+          "heading": "Indirect (Oblique, Lateral) Inguinal Hernia",
+          "body_text": "The indirect hernia is **lateral** because its origin is lateral to the inferior epigastric vessels, and **oblique** because the hernia passes obliquely from lateral to medial through the abdominal muscle layers. It is the **most common type of hernia**, is common in the young, and affects **males 10 times more than females**. In the first decade it is more common on the **right** side. Clinical features include pain in the groin **referred to the testicles** when performing heavy work or taking strenuous exercise, visible and palpable bulging on coughing, and, as time goes on, the hernia comes down as soon as the patient stands up. In a large hernia there is a sensation of weight and dragging on the mesentery, producing **epigastric pain**. In an infant the swelling appears when the child cries.\n**Types of indirect inguinal hernia:**\n- **1. Bubonocele** - the hernia is limited to the inguinal canal.\n- **2. Funicular** - the processus vaginalis is closed just above the epididymis, so the content of the sac is felt separately from the testis.\n- **3. Complete (scrotal)** - common in infancy, and also in adolescence and adult life; the testis appears to lie within the lower part of the hernia.",
+          "key_points": [
+            "Indirect = lateral to the inferior epigastric vessels, oblique course, most common type, young males (M:F = 10:1).",
+            "Right side predominates in the first decade.",
+            "Bubonocele: confined to the canal; funicular: sac felt separately from the testis; complete (scrotal): testis lies within the lower part of the hernia.",
+            "Large indirect hernias cause dragging pain on the mesentery felt as epigastric pain."
+          ],
+          "check": {
+            "prompt": "An indirect hernia whose sac is felt separately from the testis because the processus vaginalis is closed just above the epididymis is a:",
+            "options": [
+              "Funicular hernia",
+              "Bubonocele",
+              "Complete scrotal hernia",
+              "Direct hernia",
+              "Sliding hernia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفتق الحبلي يغلق فيه الغلاف المهبلي فوق البربخ مباشرة فيُحس محتوى الكيس منفصلاً عن الخصية، بينما البوبونوسيل يقتصر على القناة الإربية، والفتق الكامل ينزل إلى الصفن وتظهر الخصية داخل أسفل الفتق."
+          }
+        },
+        {
+          "heading": "Direct (Medial) Inguinal Hernia and Hasselbach's Triangle",
+          "body_text": "A direct hernia is a result of stretching and weakening of the abdominal wall just medial to the inferior epigastric vessels, an area known as **Hasselbach's triangle**:\n- **Laterally** - the inferior epigastric vessels.\n- **Medially** - the lateral edge of the rectus abdominis muscle.\n- **Inferiorly** - the inguinal ligament.\nThis area is weak because the abdominal wall here consists only of transversalis fascia covered by the external oblique aponeurosis. The sac passes through a defect of the transversalis fascia in the posterior wall of the inguinal canal. A direct hernia is **medial** because its origin is medial to the inferior epigastric vessels, except in the **saddle-bag or pantaloon hernia**, which straddles both and is a cause of **recurrence**. Direct hernias account for **35% of inguinal hernias** and are common in old males; **all are acquired**. They do not attain a large size or descend into the scrotum, and they **rarely strangulate because of the wide neck**.",
+          "key_points": [
+            "Hasselbach's triangle: inferior epigastric vessels laterally, rectus abdominis edge medially, inguinal ligament inferiorly.",
+            "Direct hernia = 35% of inguinal hernias, elderly males, always acquired.",
+            "Direct hernias stay small, do not descend into the scrotum and rarely strangulate (wide neck).",
+            "Pantaloon (saddle-bag) hernia combines indirect and direct components and causes recurrence."
+          ],
+          "check": {
+            "prompt": "Which feature is typical of a direct inguinal hernia?",
+            "options": [
+              "It rarely strangulates because of its wide neck",
+              "It is congenital in origin",
+              "It is the most common hernia of young males",
+              "It commonly descends into the scrotum",
+              "It arises lateral to the inferior epigastric vessels"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفتق المباشر مكتسب دائماً ويشيع عند المسنين، ولا يصل إلى حجم كبير ولا ينزل إلى الصفن ونادراً ما يخنق بسبب عنقه الواسع، أما النشأة الجانبية للأوعية الشرسوفية السفلية فهي صفة الفتق غير المباشر."
+          }
+        },
+        {
+          "heading": "Sliding Inguinal Hernia",
+          "body_text": "The sliding hernia is the **third type of inguinal hernia**. It is an **acquired indirect hernia** arising at the deep inguinal ring, lateral to the inferior epigastric vessels. Retroperitoneal fatty tissue is pushed downwards along the inguinal canal, and as more tissue enters the hernia, peritoneum is pulled with it, thus creating a sac. The structures that may slide down:\n- **1. Sigmoid colon** may descend into a sliding hernia on the **left** side.\n- **2. The caecum and appendix** on the **right**.\n- **3. A portion of the bladder** on **both** sides.\nThe presence of these structures wholly within an ordinary hernial sac does **not** constitute a sliding hernia.\n**Clinical features:** sliding hernias occur almost always in **men over 40 years**; **80% are on the left side** and bilateral sliding hernia is rare. It should be suspected in a **very large globular inguinal hernia descending well into the scrotum**.",
+          "key_points": [
+            "Sliding hernia is an acquired indirect hernia that drags retroperitoneal structures into the sac.",
+            "Left: sigmoid colon; right: caecum and appendix; both sides: portion of bladder.",
+            "Almost always men over 40; 80% left-sided; suspect in a huge globular inguinoscrotal hernia.",
+            "Organs wholly within a normal sac do NOT make it a sliding hernia."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Deep inguinal ring",
+          "definition_ar": "الحلقة الإربية العميقة: فتحة في اللفافة المستعرضة في منتصف المسافة بين حدبة العانة والشوك الحرقفي الأمامي العلوي، فوق النبض الفخذي بـ 2-3 سم وحشيّه قليلاً."
+        },
+        {
+          "term": "Superficial inguinal ring",
+          "definition_ar": "الحلقة الإربية السطحية: فتحة على شكل V مقلوبة في جذر العضلة المائلة الخارجية، فوق حدبة العانة بـ 1.25 سم."
+        },
+        {
+          "term": "Inguinal canal",
+          "definition_ar": "القناة الإربية: قناة طولها 3.75 سم عند البالغ تتجه نحو الأسفل والأنسي، تنقل الحبل المنوي أو الرباط المدور."
+        },
+        {
+          "term": "Conjoint tendon",
+          "definition_ar": "الوتر المشترك: التصاق عضلتي المستعرضة والمائلة الداخلية بحدبة العانة مقوّساً فوق الحلقة الإربية العميقة."
+        },
+        {
+          "term": "Hasselbach's triangle",
+          "definition_ar": "مثلث هسلباخ: محاط جانبياً بالأوعية الشرسوفية السفلية، وأنسياً بالحد الوحشي للمستقيمة البطنية، وسفلياً بالرباط الإربي؛ يبرز منه الفتق المباشر."
+        },
+        {
+          "term": "Bubonocele",
+          "definition_ar": "بوبونوسيل: فتق غير مباشر يقتصر على القناة الإربية ولا ينزل أسفلها."
+        },
+        {
+          "term": "Funicular hernia",
+          "definition_ar": "فتق حبلي: يغلق الغلاف المهبلي فوق البربخ مباشرة، فيُحس محتوى الكيس منفصلاً عن الخصية."
+        },
+        {
+          "term": "Complete (scrotal) hernia",
+          "definition_ar": "فتق كامل (صفني): ينزل حتى الصفن وتظهر الخصية داخل الجزء الأسفل من الفتق؛ شائع في الطفولة ثم في المراهقة والرشد."
+        },
+        {
+          "term": "Saddle-bag (pantaloon) hernia",
+          "definition_ar": "فتق السرج (البنطلون): مزيج من فتق مباشر وآخر غير مباشر معاً؛ سبب معروف لنكس الفتق."
+        },
+        {
+          "term": "Sliding hernia",
+          "definition_ar": "فتق منزلق: فتق غير مباشر مكتسب يدفع فيه النسيج الشحمي خلف الصفاق جدار القناة وتُسحب معه الأعضاء: السين يساراً، والأعور والزائدة يميناً، وجزء من المثانة في الجانبين."
+        },
+        {
+          "term": "Processus vaginalis",
+          "definition_ar": "الناتئ المهبلي: أنبوب صفاقي يرافق نزول الخصية ويجب أن يطمث؛ بقاءه مفتوحاً كلياً أو جزئياً يسبب الفتق غير المباشر الخلقي."
+        },
+        {
+          "term": "Tunica vaginalis",
+          "definition_ar": "الغلالة المهبلية: بقايا الناتئ الصفاقي الملتفة حول الخصية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L3_hernia_c03",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Inguinal Hernia: Diagnosis, Management, Strangulation and Complications of Repair",
+      "summary_ar": "يتناول هذا المفهوم تشخيص الفتق الإربي واختبار الضغط على الحلقة العميقة والتشخيص التفريقي، وخيارات العلاج من المراقبة إلى الجراحة الانتخابية، ثم الخنق بنسبته وعواصقه المرتبة وأعراضه السريرية، وفتق ريختر وفتق الثرب المخنوق، ومضاعفات الجراحة الثلاثة الأزمنة بما فيها احتشاء الخصية، وختاماً فتق الرياضيين.",
+      "sections": [
+        {
+          "heading": "Diagnosis and Differential Diagnosis of Inguinal Hernia",
+          "body_text": "In most cases the diagnosis is simple and is often made by the patient (self-diagnosis). The hernia will usually reduce on lying and reappear on standing. With the patient lying down, the patient is asked to reduce the hernia if it has not spontaneously reduced; if the patient cannot, then the surgeon gently attempts to reduce it. Once reduced, the surgeon identifies the bony landmarks of the anterior superior iliac spine and the pubic tubercle, from which the location of the deep inguinal ring can be found just above the midpoint of the inguinal ligament. **Gentle pressure is applied at this point and the patient asked to cough:** if the hernia is controlled with pressure on the deep inguinal ring then it is likely to be **indirect/lateral**, and if the hernia appears **medial to this point despite local pressure**, then it is **direct/medial**.\n**Differential diagnosis:**\n- A groin lymph node mass.\n- A psoas abscess.\n- A subcutaneous soft tissue mass (for example a lipoma).\n- A femoral hernia: the neck of an inguinal hernia lies **above and medial** to the pubic tubercle, whereas the neck of a femoral hernia lies **below and lateral**.\n- A saphena varix: a groin swelling that increases in size on standing, with a definite cough impulse, particularly in pregnant women.\nLarge scrotal hernias may be misdiagnosed as a **hydrocele or other testicular swelling**. The surgeon should be able to identify the upper limit of a swelling that arises from within the scrotum, but a large scrotal hernia has **no upper limit** because it extends back along the inguinal canal to the peritoneal cavity (you cannot get above it). In cases of doubt, ultrasound or CT should establish the diagnosis. It is essential in men to examine the scrotal contents to exclude other pathologies and to check that the patient has both testes. It is also important to examine the opposite side, because contralateral hernia is common (**50% lifetime risk** of developing a hernia on the other side).",
+          "key_points": [
+            "Deep ring control test: hernia controlled by pressure over the deep ring = indirect; appears medial to the pressure point = direct.",
+            "Inguinal neck: above and medial to pubic tubercle; femoral neck: below and lateral.",
+            "A large scrotal hernia has no upper limit (cannot get above it), unlike a scrotal swelling such as a hydrocele.",
+            "Examine the scrotum (both testes present?) and the opposite side: 50% lifetime risk of contralateral hernia."
+          ]
+        },
+        {
+          "heading": "Management of Inguinal Hernia",
+          "body_text": "**1. No active treatment.** It is safe to recommend no active treatment in cases of early, asymptomatic, direct hernia, particularly in elderly patients who do not wish for surgical intervention.\n**2. Truss.** Surgical trusses are not recommended, but may be required for occasional patients who refuse any form of surgical intervention. If used, the hernia must be **reducible** and small or moderate sized, and the truss must be **applied before the patient gets up and while the hernia is reduced**.\n**3. Elective surgery.** Elective surgery for inguinal hernia is a common and simple operation. It can be undertaken under **local, regional or general anesthesia**.",
+          "key_points": [
+            "Early asymptomatic direct hernia in the elderly may safely be left untreated.",
+            "Truss: only for refusers; hernia must be reducible, small-moderate, applied before rising while reduced.",
+            "Elective repair: simple operation under local, regional or general anesthesia."
+          ]
+        },
+        {
+          "heading": "Strangulated Inguinal Hernia, Richter's and Strangulated Omentocele",
+          "body_text": "Strangulation complicates about **5%** of inguinal hernias. It is far more common in **indirect** than direct hernias (direct hernias have a wide neck). It occurs in patients who have worn a **truss for a long time** and in partially reducible or irreducible hernias. **In order of frequency, the constricting agent is:**\n- **1. The deep inguinal ring.**\n- **2. The superficial inguinal ring in children.**\n- **3. Adhesions within the sac.**\nThe contents are small intestine, omentum or both; large intestine is rare.\n**Clinical features:** gangrene may occur as early as **5-6 hours after the onset of the first symptom**; sudden pain that starts localized then generalizes; nausea and vomiting; and an increase in hernia size. **On examination the hernia is tense, tender, irreducible, with no expansile cough impulse.** If strangulation is not relieved, pain continues until peristaltic movement ceases and **paralytic ileus with septicemia** develop.\n**Strangulated Richter's hernia:** the sac contains a portion of the circumference of the small intestine (usually in a femoral hernia). There are **normal or frequent bowel motions**, and constipation is late (paralytic ileus). **Gangrene of the knuckle of bowel and perforation can occur before operation.**\n**Strangulated omentocele:** the same initial symptoms, but with **no vomiting or constipation**; gangrene is delayed and occurs in the **center of the fatty mass**.",
+          "key_points": [
+            "About 5% of inguinal hernias strangulate; indirect far more than direct (wide neck).",
+            "Constricting agents in order: deep ring, superficial ring (in children), adhesions within the sac.",
+            "Gangrene may occur as early as 5-6 hours after the first symptom.",
+            "Untreated strangulation: pain persists until peristalsis ceases, then paralytic ileus and septicemia.",
+            "Richter's: normal/frequent bowel motions early, late constipation, perforation may precede surgery.",
+            "Strangulated omentocele: no vomiting or constipation; delayed central gangrene of the fat."
+          ],
+          "check": {
+            "prompt": "In order of frequency, which is the most common constricting agent in a strangulated inguinal hernia?",
+            "options": [
+              "The deep inguinal ring",
+              "The superficial inguinal ring",
+              "Adhesions within the sac",
+              "The inguinal ligament",
+              "The conjoint tendon"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "حسب الترتيب التنازلي للشيوع يكون المضيق الأول هو الحلقة الإربية العميقة، ثم الحلقة السطحية عند الأطفال، ثم الالتصاقات داخل الكيس؛ أما الرباط الإربي والوتر المشترك فليسا مواضع خنق معتادة."
+          }
+        },
+        {
+          "heading": "Emergency Surgery and Complications of Inguinal Hernia Repair",
+          "body_text": "Approximately **5% of inguinal hernias present as an irreducible, painful lump** that may progress to strangulation and possible bowel infarction. The principles of surgery are the same as in the elective setting.\n**Complications of operation:**\n- **Immediate** - pain; hematoma, usually from subcutaneous vessels but occasionally from accidental damage to the **inferior epigastric or iliac vessels**; urinary retention; injury to the bowel, bladder, inferior epigastric artery, or to the **spermatic cord (in infants)**.\n- **Within the first week** - pain, bruising and swelling are common, while seroma formation and wound infection are less frequent.\n- **Late** - hernia **recurrence** and **chronic pain**. **Mesh repairs have lower recurrence rates than suture repairs.**\nRarely, damage to the **testicular artery** can lead to **testicular infarction**. It develops **2-3 days postoperatively**: the testis and spermatic cord become **hard, tender, swollen, painful and retracted**. It lasts **6-12 weeks** and may resolve or end in **testicular atrophy**.",
+          "key_points": [
+            "Immediate complications: hematoma (subcutaneous, inferior epigastric or iliac vessels), urinary retention, injury to bowel, bladder or cord.",
+            "First week: pain, bruising, swelling common; seroma and wound infection less frequent.",
+            "Late: recurrence and chronic pain; mesh repairs have lower recurrence than suture repairs.",
+            "Testicular infarction: day 2-3, hard tender swollen retracted testis and cord, lasts 6-12 weeks, may end in atrophy."
+          ]
+        },
+        {
+          "heading": "Sportsman's Hernia",
+          "body_text": "Sportsman's hernia presents as **severe pain in the groin area, extending into the scrotum and upper thigh**. It is seen in both men and women who play contact sports such as **football and rugby**. On examination there may be some tenderness in the region of the inguinal canal, over the pubic tubercle and over the insertion of the thigh adductor muscles. **Usually no hernia is present**: in most cases the pain is due to **adductor strain or pubic symphysis diastasis**, and **MRI scanning is most likely to detect the orthopaedic problem**.",
+          "key_points": [
+            "Severe groin pain radiating to scrotum and upper thigh in contact-sport athletes of both sexes.",
+            "Tenderness over the inguinal canal, pubic tubercle and adductor insertion.",
+            "Usually NO true hernia: think adductor strain or pubic symphysis diastasis.",
+            "MRI is the investigation of choice for the orthopaedic cause."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Strangulated Richter's hernia",
+          "definition_ar": "فتق ريختر المخنوق: خنق جزء من محيط جدار الأمعاء الدقيقة (عادة في فتق فخذي)؛ تبقى حركة الأمعاء طبيعية أو متكررة ويأتي الإمساك متأخراً مع علوص شللي، وقد يحدث الغنغرينا والانثقاب قبل الجراحة."
+        },
+        {
+          "term": "Strangulated omentocele",
+          "definition_ar": "فتق الثرب المخنوق: أعراض أولية مشابهة للخنق دون قيء أو إمساك؛ الغنغرينا متأخرة وتحدث في مركز الكتلة الشحمية."
+        },
+        {
+          "term": "Paralytic ileus",
+          "definition_ar": "علوص شللي: توقف حركة الأمعاء في مرحلة متقدمة من الخنق غير المعالج، يترافق مع تسمم دموي."
+        },
+        {
+          "term": "Testicular infarction",
+          "definition_ar": "احتشاء الخصية: مضاعفة نادرة لإصابة الشريان الخصوي أثناء إصلاح الفتق؛ خصية وحبل منوي قاسيان متورمان مؤلمان ومنكمشان بعد 2-3 أيام من الجراحة، ويدوم 6-12 أسبوعاً وقد ينتهي بضمور الخصية."
+        },
+        {
+          "term": "Sportsman's hernia",
+          "definition_ar": "فتق الرياضيين: ألم أربي شديد يمتد إلى الصفن وأعلى الفخذ لدى لاعبي الرياضات التلامسية؛ غالباً بلا فتق حقيقي والسبب شدادة العضلات هذا الفخذ أو تباعد الارتفاق العاني."
+        },
+        {
+          "term": "Hydrocele",
+          "definition_ar": "قيلة مائية: تجمع سائل حول الخصية قد يشبه الفتق الصفني الكبير؛ يمكن جس حد علوي للورم الصفني لكن لا حد علوي للفتق الصفني لأنه يمتد عبر القناة الإربية."
+        },
+        {
+          "term": "Saphena varix",
+          "definition_ar": "سكبة الصافنة: توسع كيسي في نهاية الوريد الصافن الطويل يظهر مع الوقوف ويختفي بالاستلقاء وينقل نبلة السعال كتخلخل مائي."
+        },
+        {
+          "term": "Deep ring control test",
+          "definition_ar": "اختبار الضغط على الحلقة العميقة: الضغط فوق منتصف الرباط الإربي أثناء السعال؛ ضبط الفتق يعني فتقاً غير مباشر، وظهوره أنسياً رغم الضغط يعني فتقاً مباشراً."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L3_hernia_c04",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Femoral Hernia: Anatomy, Presentation, Differential Diagnosis and Treatment",
+      "summary_ar": "الفتق الفخذي أقل شيوعاً من الإربي لكنه أخطر: يصيب النساء مرتين أكثر من الرجال، ونصف حالاته تمثل طوارئ بسبب الخنق عبر قناة فخذية صلبة حدودها الرباط الإربي أمامياً والرباط الحرقفي العاني خلفياً والوريد الفخذي وحشياً والرباط الهلالي أنسياً؛ تشخيصه سهل الإغفال وعلاجه جراحي دائماً مع تفرقه عن دوالي الصافنة والعقد اللمفية وخراج العضلة القطنية.",
+      "sections": [
+        {
+          "heading": "Surgical Anatomy of the Femoral Canal",
+          "body_text": "The femoral canal occupies the **most medial compartment of the femoral sheath** and measures **1.25 x 1.25 cm**. Its **contents** are fat, a lymphatic vessel and the **lymph node of Cloquet**. It is bounded by:\n- **Anteriorly** - the inguinal ligament.\n- **Posteriorly** - the iliopectineal ligament.\n- **Laterally** - the femoral vein.\n- **Medially** - the concave border of the lacunar ligament.\nThe narrow caliber and the rigid, inelastic boundaries of the canal explain why bowel entering it is so easily obstructed and strangulated.",
+          "key_points": [
+            "Femoral canal: most medial compartment of the femoral sheath, 1.25 x 1.25 cm.",
+            "Contents: fat, lymphatic vessel, node of Cloquet.",
+            "Boundaries: inguinal ligament (anterior), iliopectineal ligament (posterior), femoral vein (lateral), concave lacunar ligament (medial).",
+            "Narrow neck with rigid surrounds = high strangulation risk."
+          ],
+          "check": {
+            "prompt": "Which structure forms the medial boundary of the femoral canal?",
+            "options": [
+              "The concave border of the lacunar ligament",
+              "The iliopectineal ligament",
+              "The femoral vein",
+              "The inguinal ligament",
+              "The pectineus muscle fascia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحد الأنسي للقناة الفخذية هو الحد المقعر للرباط الهلالي، والأمامي هو الرباط الإربي، والخلفي هو الرباط الحرقفي العاني، والوحشي هو الوريد الفخذي."
+          }
+        },
+        {
+          "heading": "Clinical Features and Diagnosis of Femoral Hernia",
+          "body_text": "Femoral hernia is **less common than inguinal hernia**. The **female to male ratio is 2:1**, and it is far more common in **multiparous than nulliparous** women. It is **easily missed on examination**, and **50% of cases present as an emergency** with a very high risk of strangulation. **Diagnostic error is common and often leads to delay in diagnosis and treatment.** The hernia appears **below and lateral to the pubic tubercle**, and it may be only **1-2 cm in size**, so it can easily be mistaken for a lymph node. Because half of femoral hernias declare themselves through strangulation, any small tender lump in this position in a woman must be assumed to be a femoral hernia until excluded.",
+          "key_points": [
+            "Femoral hernia is less common than inguinal but far more dangerous.",
+            "F:M = 2:1; multipara more than nullipara.",
+            "50% present as emergencies with high strangulation risk.",
+            "Lump below and lateral to the pubic tubercle, may be only 1-2 cm, easily mistaken for a lymph node."
+          ]
+        },
+        {
+          "heading": "Investigations in Femoral Hernia",
+          "body_text": "In routine cases, no specific investigations are required - the diagnosis is clinical. If there is uncertainty, then **ultrasound or CT** should be requested. In the emergency patient, bowel obstruction usually occurs, and a **plain x-ray is likely to show small bowel obstruction**, supporting the diagnosis before urgent surgery.",
+          "key_points": [
+            "Routine femoral hernia: no investigation needed.",
+            "Uncertain diagnosis: ultrasound or CT.",
+            "Emergency presentation: plain x-ray usually shows small bowel obstruction."
+          ]
+        },
+        {
+          "heading": "Differential Diagnosis and Treatment of Femoral Hernia",
+          "body_text": "**Differential diagnosis:**\n- **1. An inguinal hernia** - the neck of the sac of an inguinal hernia lies **above and medial** to the pubic tubercle; in a femoral hernia it lies **below and lateral**.\n- **2. A saphena varix** - a saccular enlargement of the termination of the long saphenous vein, usually accompanied by other signs of varicose veins. It **disappears on lying supine** (a femoral hernia does not) and imparts a **fluid thrill** when the patient coughs or when the saphenous vein below the varix is tapped with the finger.\n- **3. An enlarged femoral lymph node** - there may be other enlarged lymph nodes.\n- **4. A psoas abscess** - a fluctuant swelling (an iliac abscess); examine the spine and obtain a spine x-ray.\n**Treatment of femoral hernia is by surgery, because of the risk of strangulation** - all femoral hernias should be repaired.",
+          "key_points": [
+            "Inguinal neck above and medial vs femoral neck below and lateral to the pubic tubercle.",
+            "Saphena varix: disappears supine, fluid thrill on coughing/tapping, associated varicosities.",
+            "Enlarged femoral node: look for other nodes; psoas abscess: fluctuant, examine the spine.",
+            "ALL femoral hernias are treated surgically because of the strangulation risk."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Femoral canal",
+          "definition_ar": "القناة الفخذية: الحجرة الأنسية لغمد الأوعية الفخذية، أبعادها 1.25 في 1.25 سم، تحتوي دهناً وأوعية لمفية وعقدة كلوك."
+        },
+        {
+          "term": "Lacunar ligament",
+          "definition_ar": "الرباط الهلالي (اللقمي): الحد الأنسي المقعر للقناة الفخذية، وهو العائق الصلب الذي يخنق محتوى الفتق الفخذي."
+        },
+        {
+          "term": "Iliopectineal ligament",
+          "definition_ar": "الرباط الحرقفي العاني: الحد الخلفي للقناة الفخذية."
+        },
+        {
+          "term": "Node of Cloquet",
+          "definition_ar": "عقدة كلوك: عقدة لمفية تقع في القناة الفخذية ضمن محتواها الطبيعي."
+        },
+        {
+          "term": "Saphena varix",
+          "definition_ar": "سكبة الصافنة: توسع كيسي في نهاية الوريد الصافن الطويل مع علامات دوالية أخرى؛ تختفي بالاستلقاء وتنقل تخلخلاً مائياً عند السعال أو النقر على الصافنة تحتها، بعكس الفتق الفخذي."
+        },
+        {
+          "term": "Femoral hernia",
+          "definition_ar": "الفتق الفخذي: بروز عبر القناة الفخذية تحت الرباط الإربي وحشي حدبة العانة؛ يصيب النساء مرتين أكثر من الرجال وغالباً متعددات الولادات، ونصف حالاته طوارئ بخطر خنق عالٍ."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L3_hernia_c05",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Ventral and Other Primary Hernias: Umbilical, Epigastric, Spigelian, Lumbar, Traumatic and Parastomal",
+      "summary_ar": "الفتوق الجدارية الأمامية أولية (سرية وشرسوفية وسبيغيلية وقطنية ورضية) أو ثانوية (جراحية وحول الفغر). الفتق السري عند البالغين خطير بسبب عنق الكيس الضيق مهما كبر حجم المحتوى، والشرسوفية فتق دهني عبر الخط الأبيض أصغر من سنتيمتر، والسبيغيلية تحت السرة عند حافة غمد المستقيمة، والقطنية عبر مثلثين قطنيين، وحول الفغر يصيب أكثر من نصف مرضى الفغر.",
+      "sections": [
+        {
+          "heading": "Definition and Classification of Ventral Hernias",
+          "body_text": "The term **ventral hernia** refers to hernias of the anterior abdominal wall; **inguinal and femoral hernias are not included**.\n- **Primary ventral hernias:** umbilical; epigastric; Spigelian; lumbar; traumatic.\n- **Secondary ventral hernias:** incisional; parastomal.\nRare external hernias at other sites that complete the list of abdominal wall hernias include **perineal hernia, obturator hernia, and gluteal and sciatic hernias**.",
+          "key_points": [
+            "Ventral hernia = anterior abdominal wall hernia; inguinal and femoral excluded.",
+            "Primary: umbilical, epigastric, Spigelian, lumbar, traumatic.",
+            "Secondary: incisional, parastomal.",
+            "Rare sites: perineal, obturator, gluteal, sciatic."
+          ]
+        },
+        {
+          "heading": "Umbilical and Paraumbilical Hernia in Adults",
+          "body_text": "Conditions which cause stretching and thinning of the linea alba, such as **pregnancy, obesity and liver disease with cirrhosis**, predispose to reopening of the umbilical defect. In adults, the defect can be not only through the umbilicus but also in the linea alba immediately adjacent to (most often **above**) the true umbilicus; the latter are commonly called **paraumbilical hernias**. Small umbilical hernias often contain omentum; larger hernias can contain small or large bowel, but even when very large **the neck of the sac is narrow compared with the volume of its contents**, so in adults umbilical hernias that include bowel are **prone to become irreducible, obstructed and strangulated**.\n**Clinical features:** the bulge is typically slightly to one side of the umbilical depression, creating a **crescent-shaped appearance** to the umbilicus; **women are affected more than men**; most patients complain of pain due to tissue tension or symptoms of intermittent bowel obstruction.\n**Treatment:**\n- Because of the high risk of strangulation, **operation should be advised in cases where the hernia contains bowel**.\n- Small hernias may be left alone if they are asymptomatic.\n- **Reduction of weight is essential before operation** in the obese patient.\n- Surgery may be performed open or laparoscopically.\n**Operation:** **herniorrhaphy** (suture repair) for a small defect; **hernioplasty with prosthetic mesh** for a **fascial defect larger than 2 cm** and for **recurrent hernia**.",
+          "key_points": [
+            "Predisposing conditions: pregnancy, obesity, cirrhosis (linea alba stretching).",
+            "Paraumbilical hernia: defect in the linea alba adjacent to (usually above) the umbilicus.",
+            "Narrow neck regardless of size makes adult umbilical hernias prone to irreducibility, obstruction and strangulation.",
+            "Crescent-shaped umbilicus; women more than men; pain from tissue tension or intermittent obstruction.",
+            "Mesh hernioplasty for defects over 2 cm and for recurrence; weight reduction before surgery."
+          ],
+          "check": {
+            "prompt": "A symptomatic adult paraumbilical hernia has a fascial defect measuring 3 cm. Which repair is indicated?",
+            "options": [
+              "Hernioplasty with prosthetic mesh",
+              "Simple herniorrhaphy with sutures alone",
+              "Observation with an abdominal binder",
+              "Injection sclerotherapy of the sac",
+              "Umbilicectomy alone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عيوب اللفافة الأكبر من 2 سم وكذلك الفتق الناكس تُعالج بالرأب باستخدام شبكة صنعية (هيرنيوبلاستي)، أما الخياطة وحدها فتكفي للعيوب الصغيرة، والحزام لا يعالج فتقاً عرضياً كبيراً."
+          }
+        },
+        {
+          "heading": "Epigastric Hernia (Fatty Hernia of the Linea Alba)",
+          "body_text": "Epigastric hernia occurs through the **linea alba anywhere between the xiphoid process and the umbilicus, usually midway**. The defect is **elliptical and usually less than 1 cm in diameter**. The hernia commonly contains **only extraperitoneal fat**; if it enlarges, it drags a pouch of peritoneum after it, and the sac is then either empty or contains a small portion of greater omentum. **More than one hernia may be present.**\n**Clinical features:**\n- It is often symptomless and discovered accidentally.\n- It can be **very painful even when the swelling is small** and may be locally tender. It is unlikely to be reducible because of the narrow neck and may resemble a **lipoma**.\n- A cough impulse may or may not be felt.\n**Treatment:**\n- Very small epigastric hernias have been known to **disappear spontaneously**, probably because of infarction of the fat.\n- Small to moderate-sized hernias **without a peritoneal sac are not dangerous**, and surgery should be offered only if the hernia is sufficiently symptomatic.\n- **Hernias containing bowel should always be repaired.**",
+          "key_points": [
+            "Defect: elliptical, less than 1 cm, midway between xiphoid and umbilicus; may be multiple.",
+            "Content: usually extraperitoneal fat only; may drag a peritoneal pouch with omentum.",
+            "Very painful even when small; irreducible (narrow neck); mimics a lipoma.",
+            "Fat-only hernias are not dangerous; bowel-containing hernias always need repair; very small ones may infarct and vanish."
+          ]
+        },
+        {
+          "heading": "Spigelian Hernia",
+          "body_text": "Spigelian hernias arise through a defect in the **Spigelian fascia**, which is the **aponeurosis of the transversus abdominis muscle**. They mostly appear **below the level of the umbilicus near the edge of the rectus sheath**. They affect **men and women equally (M = F), usually above 50 years** of age. On examination there is a **soft, reducible mass lateral to the rectus muscle and below the umbilicus**. The diagnosis is confirmed by **CT scan or ultrasound**. Treatment is by **operation**.",
+          "key_points": [
+            "Defect in the Spigelian fascia (aponeurosis of transversus abdominis).",
+            "Appears below the umbilicus at the edge of the rectus sheath; M = F, over 50 years.",
+            "Soft reducible mass lateral to the rectus, below the umbilicus.",
+            "Confirm with CT or ultrasound; treat by operation."
+          ]
+        },
+        {
+          "heading": "Lumbar Hernia",
+          "body_text": "**Anatomy of the lumbar triangles:**\n- The **inferior lumbar triangle** is bounded **below by the crest of the ilium**, **laterally by external oblique** and **medially by latissimus dorsi**.\n- The **superior lumbar triangle** is bounded **above by the 12th rib**, **laterally by internal oblique** and **medially by sacrospinalis**.\n**Primary lumbar hernias are rare and mostly occur through the inferior lumbar triangle; secondary lumbar hernias are common, occurring secondary to renal operations.**\n**Differential diagnosis:**\n- A lipoma.\n- A cold (tuberculous) abscess pointing to this position.\n- A pseudo-hernia due to local muscular paralysis.\n**Treatment is by operation.**",
+          "key_points": [
+            "Inferior triangle: iliac crest (below), external oblique (lateral), latissimus dorsi (medial) - commonest site.",
+            "Superior triangle: 12th rib (above), internal oblique (lateral), sacrospinalis (medial).",
+            "Primary lumbar hernias are rare (inferior triangle); secondary ones follow renal surgery.",
+            "DDx: lipoma, tuberculous cold abscess, pseudo-hernia from muscle paralysis."
+          ]
+        },
+        {
+          "heading": "Traumatic and Parastomal Hernia",
+          "body_text": "**Traumatic hernia** can be classified into three types:\n- **1.** Hernias through abdominal **stab wound sites** - these are effectively incisional hernias.\n- **2.** Hernias protruding through **splits or tears in the abdominal muscles** following blunt trauma.\n- **3.** Abdominal bulging secondary to **muscle atrophy** which occurs as a result of nerve injury or other traumatic denervation.\nThe key to the etiology is the **history and the non-anatomic location** of the hernia. Treatment is surgery if the hernia is symptomatic or if investigations suggest a **narrow neck**.\n**Parastomal hernia:** the muscle defect created tends to increase in size over time and can ultimately lead to massive herniation around the stoma. The **rate is over 50%**. It is difficult to manage a stoma which is lying adjacent to or atop a large hernia. The stoma may be **resited**, but further recurrence is likely. Open suture and mesh techniques have been described to repair parastomal hernia, and **prophylactic mesh insertion at the time of formation of the stoma** reduces the risk.",
+          "key_points": [
+            "Traumatic hernia types: stab-site (incisional equivalent), muscle split/tear after blunt trauma, denervation bulge.",
+            "Diagnosis clue: history of trauma plus non-anatomic location.",
+            "Surgery if symptomatic or if the neck is narrow.",
+            "Parastomal hernia: over 50% of stomas; resiting risks recurrence; prophylactic mesh at stoma formation helps."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ventral hernia",
+          "definition_ar": "فتق جداري أمامي: فتوق جدار البطن الأمامي عدا الإربي والفخذي؛ أولية (سرية، شرسوفية، سبيغيلية، قطنية، رضية) أو ثانوية (جراحية، حول فغر)."
+        },
+        {
+          "term": "Paraumbilical hernia",
+          "definition_ar": "فتق جنب السرة: عيب في الخط الأبيض مجاور للسرة (غالباً فوقها) وليس في السرة نفسها."
+        },
+        {
+          "term": "Herniorrhaphy",
+          "definition_ar": "ترقيع الفتق بالخياطة: إغلاق عيب اللفافة بالخياطة دون شبكة؛ مناسب للعيوب الصغيرة."
+        },
+        {
+          "term": "Hernioplasty",
+          "definition_ar": "رأب الفتق بالشبكة: تقوية العيب باستخدام شبكة صنعية؛ لعيب لفافي أكبر من 2 سم أو لفتق ناكس."
+        },
+        {
+          "term": "Epigastric hernia",
+          "definition_ar": "الفتق الشرسوفية: فتق دهني عبر الخط الأبيض بين الناتئ الرهابي والسرة، عيبه بيضاوي أصغر من سنتيمتر وقد يكون متعدداً."
+        },
+        {
+          "term": "Spigelian hernia",
+          "definition_ar": "فتق سبيغيليا: عبر لفافة سبيغيليا (جذر العضلة المستعرضة) تحت السرة عند حافة غمد المستقيمة؛ كتلة رخوة قابلة للرد وحشي المستقيمة."
+        },
+        {
+          "term": "Lumbar hernia",
+          "definition_ar": "الفتق القطني: يبرز عبر المثلث القطني السفلي (الأشيع) أو العلوي؛ الأولي نادر والثانوي شائع بعد جراحات الكلى."
+        },
+        {
+          "term": "Parastomal hernia",
+          "definition_ar": "فتق حول الفغر: فتق حول فتحة الفغر (كولوستومي أو إيليوستومي)؛ معدله فوق 50% وقد يستدعي نقل الفغر أو الترميم بالشبكة."
+        },
+        {
+          "term": "Traumatic hernia",
+          "definition_ar": "فتق رضي: بعد موضع طعنة أو تمزق عضلي رضي أو ضمور عضلي عصبي؛ يُشخص بالقصة وغير التشريحية للموضع."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L3_hernia_c06",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Incisional Hernia and Burst Abdomen: Predisposition, Prevention and Management",
+      "summary_ar": "الفتق الجراحي يصيب 10-50% من شقوق البطن الكبيرة و1-5% من مواضع المناظير، وتسببه عوامل جراحية وجرحية ومريضية؛ ويعالج بالحزام أو بالجراحة بمبادئ تغطية كامل الشق وشد أدنى وشبكة صنعية ومضادات حيوية. أما انفجار البطن فيحدث في 1-2% بين اليوم السادس والثامن وعلامته المميزة نزح وردي مصلي دموي، ويعالج إسعافياً بإعادة الأحشاء وخياطة الجرح. الوقاية تعتمد خياطة لفافة دقيقة بغرز 5 مم متباعدة و5-8 مم من الحافة وبنسبة خيط إلى جرح 4:1.",
+      "sections": [
+        {
+          "heading": "Predisposing Factors for Incisional Hernia and Burst Abdomen",
+          "body_text": "The same factors that weaken a laparotomy wound predispose to both incisional hernia and burst abdomen. They are grouped into three categories:\n- **Surgical factors:** inappropriate suture material; poor closure technique.\n- **Wound factors:** poor quality tissues; wound tension; wound infection.\n- **Patient factors:** genetic collagen disorders; obesity; general poor healing due to malnutrition, immunosuppression or steroid therapy; chronic cough; cancer.",
+          "key_points": [
+            "Surgical factors: wrong suture material, poor closure technique.",
+            "Wound factors: poor tissues, tension, infection.",
+            "Patient factors: collagen disorders, obesity, malnutrition, immunosuppression or steroids, chronic cough, cancer."
+          ]
+        },
+        {
+          "heading": "Incisional Hernia: Pathology and Clinical Features",
+          "body_text": "An incisional (postoperative) hernia usually starts as **disruption of the musculofascial layers of a wound in the early postoperative period**. This may progress rapidly to full-thickness wound dehiscence, usually heralded by a **serosanguineous discharge around the sixth postoperative day**, but more commonly the event passes unnoticed if the overlying skin wound has healed securely.\nIncisional hernia affects **10-50% of laparotomy incisions** and **1-5% of laparoscopic port-site incisions**, and occurs **mostly in obese patients**. It appears as a localized swelling involving part of a surgical scar but may present as a diffuse bulging of the whole length of the incision; there may be **several discrete hernias along the length of the incision**. The hernia increases steadily in size with time, and the skin overlying large hernias may become **thin and atrophic so that peristalsis may be seen in the underlying intestine**. **Attacks of partial intestinal obstruction are common and strangulation is less frequent.**",
+          "key_points": [
+            "Begins as early postoperative musculofascial disruption; may progress to dehiscence heralded by serosanguineous discharge around day 6.",
+            "Rates: 10-50% of laparotomy incisions versus 1-5% of port-site incisions; mostly obese patients.",
+            "Localized swelling of part of the scar or diffuse bulging; may be multiple along the incision.",
+            "Skin becomes thin and atrophic - peristalsis visible; partial obstruction common, strangulation less frequent."
+          ]
+        },
+        {
+          "heading": "Treatment of Incisional Hernia",
+          "body_text": "Asymptomatic incisional hernias may not require treatment. The wearing of an **abdominal binder or belt** often provides symptomatic relief and may prevent the hernia from increasing in size. Large incisional hernias, particularly recurrent ones, present a major problem: surgical repair is a complex procedure with significant risk of complications and later recurrence, and when the neck is wide the risk of strangulation is low; in the obese and elderly patient these risks may outweigh the benefits of surgery, so surgeons commonly adopt a conservative approach.\n**Principles of operative repair:**\n- **1)** The repair should cover the **whole length of the previous incision**.\n- **2)** Approximation of the musculofascial layers should be done with **minimal tension**.\n- **3)** **Prosthetic mesh** should be used to reduce the risk of recurrence.\n- **4)** Appropriate **systemic antibiotics** should be used.\nFor open surgery, **prosthetic mesh is the method of choice for all** incisional hernias.",
+          "key_points": [
+            "Asymptomatic hernia: binder or belt for relief and to limit enlargement.",
+            "Repair must cover the whole length of the previous incision with minimal tension.",
+            "Prosthetic mesh plus systemic antibiotics; open mesh repair is the method of choice.",
+            "Wide-necked hernias in obese/elderly: conservative approach may be justified."
+          ]
+        },
+        {
+          "heading": "Prevention of Incisional Hernia",
+          "body_text": "**1) Improve the patient's general condition preoperatively where possible:** smoking cessation, weight loss for obesity, or improving nutritional status in undernourished individuals.\n**2) Close the fascial layers with good technique and materials.** Recent work has shown that lower incisional hernia rates are gained when **smaller and closer bites** are used: **5 mm apart and 5-8 mm back from the wound edge**, with care taken to incorporate **fascia only (no muscle)** in the suture bites and to minimise excessive suture tension. A **2/0 slowly resorbable suture** is also recommended. There is **no evidence that interrupted sutures are better or worse than continuous** sutures. The **optimal ratio of suture length to wound length is 4:1**.\n**3) Drains should be brought out through separate incisions and not through the wound itself**, because a drain through the wound prevents fascial apposition and increases the risk of hernia formation.",
+          "key_points": [
+            "Preoperative optimization: stop smoking, lose weight, correct malnutrition.",
+            "Fascial closure: bites 5 mm apart, 5-8 mm from the wound edge, fascia only, minimal tension.",
+            "2/0 slowly resorbable suture; continuous is as good as interrupted.",
+            "Suture length to wound length ratio = 4:1.",
+            "Drains must exit through separate incisions, never through the wound."
+          ],
+          "check": {
+            "prompt": "What is the optimal ratio of suture length to wound length for fascial closure?",
+            "options": [
+              "4:1",
+              "1:1",
+              "2:1",
+              "10:1",
+              "1:4"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النسبة المثلى لطول الخيط إلى طول الجرح هي 4:1 مع خياطة بغرز صغيرة متقاربة تبعد 5 مم وتأخذ 5-8 مم من حافة الجرح وبخيط 2/0 بطيء الامتصاص مع لفافة فقط دون عضلة."
+          }
+        },
+        {
+          "heading": "Burst Abdomen (Abdominal Dehiscence)",
+          "body_text": "Burst abdomen occurs in **1-2%** of laparotomy wounds, mostly **between the 6th and 8th postoperative day**. A **serosanguineous (pink) discharge from the wound is a pathognomonic sign of disruption in 50% of cases**. The patient typically **felt something give way**. If the skin sutures have been removed, **viscera will be found lying on the skin**. **Pain and shock are often absent** - a comfortable patient must not reassure you.\n**Management:**\n- **Reassure the patient and cover the wound with a sterile towel.**\n- Pass a **nasogastric tube** and start **intravenous fluids**.\n- Proceed to **emergency operation**: replace the bowel and re-suture the wound.",
+          "key_points": [
+            "Incidence 1-2%; typically day 6-8 after surgery.",
+            "Pink serosanguineous discharge is pathognomonic in 50% of cases.",
+            "Patient feels something give way; viscera on the skin if sutures removed; pain and shock often ABSENT.",
+            "Management: reassure, sterile towel, NG tube, IV fluids, emergency re-operation and re-suture."
+          ],
+          "check": {
+            "prompt": "A pink serosanguineous discharge from a laparotomy wound on the 7th postoperative day indicates:",
+            "options": [
+              "Burst abdomen until proven otherwise",
+              "Simple wound infection requiring antibiotics only",
+              "Deep venous thrombosis",
+              "Urinary retention",
+              "An early incisional hernia needing elective repair"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النزح المصلي الدموي الوردي علامة مميزة لانفجار البطن وتحدث في 50% من الحالات غالباً بين اليوم السادس والثامن، وقد يغيب الألم والصدمة؛ والعلاج تغطية الجرح بمنشفة معقمة وأنبوب أنفي معدي وسوائل وريدية ثم جراحة إسعافية فورية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Incisional hernia",
+          "definition_ar": "فتق جراحي (بعد الجراحة): بروز عبر موضع شق سابق؛ يصيب 10-50% من شقوق فتح البطن و1-5% من مواضع المناظير وغالباً لدى البدينين."
+        },
+        {
+          "term": "Burst abdomen",
+          "definition_ar": "انفجار البطن (تفتح الجرح): انسلاق كامل طبقات جرح البطن عادة بين اليوم السادس والثامن؛ يحدث في 1-2% من الحالات وعلامته نزح وردي مصلي دموي."
+        },
+        {
+          "term": "Serosanguineous discharge",
+          "definition_ar": "النزح المصلي الدموي الوردي: العلامة المرضية المميزة لانفجار البطن وتوجد في نصف الحالات."
+        },
+        {
+          "term": "Abdominal binder",
+          "definition_ar": "حزام البطن: دعم خارجي يخفف أعراض الفتق الجراحي وقد يمنع تضخمه."
+        },
+        {
+          "term": "Suture length to wound length ratio",
+          "definition_ar": "نسبة طول الخيط إلى طول الجرح: النسبة المثلى 4:1 عند خياطة اللفافة لوقاية الشق من الفتق."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_L3_hernia_c07",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Other Abdominal Wall Conditions: Divarication, Umbilical Pathology, Tumors, Infections and Compartment Syndrome",
+      "summary_ar": "يشمل هذا المفهوم حالات جدار البطن الأخرى: تباعد المستقيمتين عند المسنات متعددات الولادات، وحالات السرة (التهاب مزمن وجيب مزمن والقناة البولية السرية المفتوحة وعقدة الأخت جوزف)، وأورام الجدار (الدسمويد المرتبط بيلان البوليبات العائلي والساركوما الليفية)، والالتهابات النخرية الشديدة والنواسير الجلدية، ومتلازمة الحجر البطني عند ضغط يفوق 20 ملم زئبق.",
+      "sections": [
+        {
+          "heading": "Divarication of the Recti Abdominis",
+          "body_text": "Divarication of the recti abdominis occurs principally in **elderly multiparous** patients. There is a **gap between the rectus muscles** through which the abdominal contents bulge; because the bulge is covered by intact fascia and there is no true hernial defect with a narrow neck, **there is no risk of strangulation**. It becomes obvious when the patient lifts the head off the bed and tenses the abdominal wall. **Treatment is by an abdominal belt**; surgery is not required.",
+          "key_points": [
+            "Elderly multiparous patients; gap between the recti.",
+            "NO risk of strangulation - not a true hernia with a narrow neck.",
+            "Treatment: abdominal belt."
+          ]
+        },
+        {
+          "heading": "Umbilical Conditions in the Adult",
+          "body_text": "**Chronic infection:** occurs in patients with **poor hygiene**, in the **obese**, and when a **paraumbilical hernia** is present. The usual organism is a **streptococcus**, and it is treated with appropriate antibiotics.\n**Chronic sinus:** a chronic sinus may arise following umbilical hernia repair owing to **infection of a mesh or non-absorbable suture material** used. Antibiotics may help, but usually the mesh or suture will need to be removed, with a risk of **recurrence of the hernia**.\n**Patent urachus:** the urachus is a connection between the **urinary bladder and the umbilicus**. It usually involutes but may present in later life as a result of **increased pressure in the bladder, usually due to prostatic hypertrophy**. The cause of obstruction should be dealt with initially; if the problem persists, **surgical excision of the patent urachus** might be considered.\n**Neoplasm of the umbilicus:** if a tumor presents at the umbilicus it is most probably due to **spread from internal organs along internal ligaments**, for example from the liver along the **falciform ligament**. A malignant mass at the umbilicus is called a **Sister Joseph's nodule**; it usually indicates **very advanced malignant disease**, and surgery probably has little to offer.",
+          "key_points": [
+            "Chronic umbilical infection: poor hygiene, obesity, paraumbilical hernia; streptococcus; antibiotics.",
+            "Chronic sinus after repair: infected mesh or non-absorbable suture; removal risks recurrence.",
+            "Patent urachus: bladder-to-umbilicus connection re-presenting from prostatic hypertrophy; treat the obstruction first, excise if persistent.",
+            "Sister Joseph's nodule: advanced malignancy spread along internal ligaments (e.g. liver via falciform ligament)."
+          ],
+          "check": {
+            "prompt": "A malignant nodule at the umbilicus is called, and usually indicates:",
+            "options": [
+              "Sister Joseph's nodule: very advanced malignant disease spread along internal ligaments",
+              "Node of Cloquet: an early femoral hernia",
+              "A desmoid tumour: a benign fibroma of FAP",
+              "An epigastric hernia containing fat",
+              "A patent urachus: bladder outlet obstruction"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عقدة الأخت جوزف كتلة خبيثة في السرة تنشأ غالباً بانتشار من أعضاء داخلية عبر الأربطة الداخلية مثل الكبد عبر الرباط المنجلي، وتدل على مرض خبيث متقدم جداً لا تنفع معه الجراحة غالباً."
+          }
+        },
+        {
+          "heading": "Neoplasms of the Abdominal Wall",
+          "body_text": "**Desmoid tumour** is an **encapsulated fibroma**. It is **common in women** and is reported in **familial adenomatous polyposis (FAP)**. **Surgical excision with a wide margin** is required to prevent recurrence, which is a frequent problem.\n**Fibrosarcoma** is **highly malignant**. It **responds poorly to both radiotherapy and chemotherapy**, and wide excision will often require **plastic surgical reconstruction**.",
+          "key_points": [
+            "Desmoid: encapsulated fibroma, women, FAP; wide-margin excision because recurrence is frequent.",
+            "Fibrosarcoma: highly malignant, poor response to radiotherapy and chemotherapy, wide excision with plastic reconstruction."
+          ]
+        },
+        {
+          "heading": "Synergistic Gangrene, Necrotizing Fasciitis and Cutaneous Fistula",
+          "body_text": "**Synergistic gangrene:** other forms of severe abdominal wall infection occur, generally known as **necrotising fasciitis (Fournier's gangrene)**. It is **rare** and commonly occurs **after laparotomy for a perforated viscus or gallbladder operation**. It is due to the **synergistic action of non-hemolytic streptococci and staphylococci**. The area around the wound exhibits **signs of cellulitis**, and the patient progresses to **septicemia and multiorgan failure syndrome (MOFS)**.\n**Treatment:**\n- **Metronidazole** plus a **powerful broad-spectrum antibiotic**.\n- **Surgical debridement of all necrotic tissue.**\n- **Hyperbaric oxygen** is of benefit.\n**Cutaneous fistula:** chronic intraperitoneal abscesses are the most likely sources. **CT scanning will locate the internal abscess**. **Crohn's disease** also has a tendency to fistulate into adjacent organs and may develop an **enterocutaneous fistula**. Treatment today is usually by **CT- or ultrasound-guided drainage**, but the surgeon may be called on to remove the source organ (**source control**).",
+          "key_points": [
+            "Synergistic gangrene = necrotising fasciitis/Fournier's gangrene: non-hemolytic streptococci + staphylococci.",
+            "Typically after laparotomy for perforated viscus or gallbladder surgery; cellulitis, septicemia, MOFS.",
+            "Treatment: metronidazole + broad-spectrum antibiotic, radical debridement, hyperbaric oxygen.",
+            "Cutaneous fistula: think chronic intraperitoneal abscess or Crohn's disease; CT/US-guided drainage or source control."
+          ]
+        },
+        {
+          "heading": "Abdominal Compartment Syndrome",
+          "body_text": "Abdominal compartment syndrome occurs in **severe intra-abdominal sepsis, such as pancreatitis**. High intra-abdominal pressure leads to **reduced blood flow and tissue ischemia**, which contributes to **multiorgan failure**. An **intra-abdominal pressure above 20 mmHg, as measured via a catheter in the urinary bladder, is diagnostic** and requires intervention to avoid organ failure. Treatment is by **tension-releasing incisions or laparostomy**.",
+          "key_points": [
+            "Occurs in severe intra-abdominal sepsis (e.g. pancreatitis).",
+            "High pressure reduces blood flow and causes tissue ischemia, contributing to multiorgan failure.",
+            "Diagnosis: bladder catheter pressure above 20 mmHg - requires intervention.",
+            "Treatment: tension-releasing incisions or laparostomy."
+          ],
+          "check": {
+            "prompt": "How is abdominal compartment syndrome diagnosed and at what pressure threshold?",
+            "options": [
+              "Bladder catheter pressure above 20 mmHg",
+              "Bladder catheter pressure above 5 mmHg",
+              "CT scan showing free intraperitoneal fluid",
+              "Serum lactate above 4 mmol/L",
+              "Abdominal x-ray showing dilated bowel loops"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يُشخّص متلازمة الحجر البطني بارتفاع الضغط داخل البطن فوق 20 ملم زئبق مقيساً عبر قثطرة في المثانة البولية، ويتطلب تدخلاً فورياً بفك الضغط عبر شقوق فاكّة أو فتح البطن المفتوح لتفادي قصور الأعضاء."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Divarication of the recti",
+          "definition_ar": "تباعد المستقيمتين: فجوة بين عضلتي المستقيمة البطنية لدى المسنات متعددات الولادات؛ بلا خطر خنق وعلاجها حزام البطن."
+        },
+        {
+          "term": "Patent urachus",
+          "definition_ar": "بقاء القناة البولية السرية مفتوحة: اتصال بين المثانة والسرة يظهر لاحقاً في الحياة بسبب ارتفاع الضغط داخل المثانة وغالباً بسبب تضخم البروستات."
+        },
+        {
+          "term": "Sister Joseph's nodule",
+          "definition_ar": "عقدة الأخت جوزف: كتلة خبيثة في السرة تدل على ورم متقدم منتشر عبر الأربطة الداخلية مثل الكبد عبر الرباط المنجلي."
+        },
+        {
+          "term": "Desmoid tumour",
+          "definition_ar": "ورم دسمويد: ورم ليفي محفظ يشيع في النساء ويرتبط بمرض البوليبات الغدي العائلي؛ يتطلب استئصالاً واسع الهوامش لأن النكس متكرر."
+        },
+        {
+          "term": "Fibrosarcoma",
+          "definition_ar": "الساركوما الليفية: ورم شديد الخباثة يستجيب بشكل ضعيف للعلاج الإشعاعي والكيميائي ويحتاج استئصالاً واسعاً مع ترميم جراحي تجميلي."
+        },
+        {
+          "term": "Synergistic gangrene",
+          "definition_ar": "الغنغرينا التآزرية: التهاب نخر شديد لجدار البطن (التهاب اللفافة النخري أو غنغرينا فورنييه) بتآزر العقديات غير حالة الدم والعنقوديات بعد جراحة ثقب حشوة أو جراحة المرارة."
+        },
+        {
+          "term": "Necrotising fasciitis",
+          "definition_ar": "التهاب اللفافة النخرّي: الشكل العام للإنتانات النخرية الشديدة لجدار البطن ويشمل غنغرينا فورنييه؛ علاجه تنضير جراحي فوري ومضادات حيوية وأكسجين عالي الضغط."
+        },
+        {
+          "term": "Enterocutaneous fistula",
+          "definition_ar": "ناسور معوي جلدي: اتصال بين الأمعاء والجلد؛ مصدره الشائع خراج مزمن داخل البطن أو داء كرون."
+        },
+        {
+          "term": "Abdominal compartment syndrome",
+          "definition_ar": "متلازمة الحجر البطني: ارتفاع الضغط داخل البطن فوق 20 ملم زئبق مقيساً عبر قثطرة المثانة يؤدي إلى نقص التروية وقصور الأعضاء ويستدعي فك الضغط."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L3_hernia_f01",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "What are the causes of abdominal wall herniation?",
+      "back_text": "Anatomical weakness (lumbar triangles, posterior wall of the inguinal canal); failure of the processus vaginalis to close (indirect inguinal hernia); sharp or blunt trauma (a scar keeps only 70% of muscle strength; 10% of incisions and 1% of port sites herniate); genetic collagen weakness with smoking; ageing and pregnancy; primary neurological and muscle diseases; raised intra-abdominal pressure (chronic cough, straining on micturition or defecation).",
+      "explanation_ar": "احفظها بمجموعتين: ضعف الجدار (خلقي أو مكتسب أو رضي) وضغط زائد من الداخل.",
+      "tags": ["etiology", "hernia"]
+    },
+    {
+      "id": "surg_L3_hernia_f02",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "What are the four essential components of an abdominal wall hernia?",
+      "back_text": "1) A defect in the wall (in muscle, fascia or bone - usually the narrowest part). 2) A peritoneal sac. 3) A covering derived from the layers of the abdominal wall traversed. 4) The content: omentum (omentocele), intestine (enterocele), part of the bowel circumference (Richter's), bladder, ovary with or without fallopian tube, Meckel's diverticulum (Littre's) or ascitic fluid.",
+      "tags": ["anatomy", "components"]
+    },
+    {
+      "id": "surg_L3_hernia_f03",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "Define Richter's hernia and Littre's hernia.",
+      "back_text": "Richter's hernia: only a portion of the circumference of the intestine (usually small bowel) is trapped in the sac - classically in a femoral hernia; bowel motions stay normal early. Littre's hernia: the sac contains a Meckel's diverticulum.",
+      "is_vivid": true,
+      "explanation_ar": "ريختر جزء من المحيط، ولتري رتق ميكل.",
+      "tags": ["eponyms"]
+    },
+    {
+      "id": "surg_L3_hernia_f04",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "Classify abdominal hernias irrespective of site (six types).",
+      "back_text": "1) Occult - not detectable clinically. 2) Reducible - free movement in and out, expansile cough impulse. 3) Irreducible - adhesions, small defect or overcrowding. 4) Obstructed - bowel obstructed but blood supply intact. 5) Strangulated - blood supply impaired, gangrene within 5-6 hours. 6) Inflamed - inflammation of the content or a trophic ulcer.",
+      "mnemonic_ar": "خفي، رد، ردُّه استحال، انسدّ، خُنق، التهب: تسلسل ازدياد الخطورة.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "surg_L3_hernia_f05",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "What are the examination findings of a strangulated hernia and how fast does gangrene occur?",
+      "back_text": "The hernia is tense, tender, irreducible and has no expansile cough impulse. Gangrene may occur as early as 5-6 hours after the onset of the first symptom, and the ischemic bowel may perforate before operation.",
+      "is_vivid": true,
+      "tags": ["strangulation", "emergency"]
+    },
+    {
+      "id": "surg_L3_hernia_f06",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c01",
+      "card_type": "basic",
+      "front_text": "How do you distinguish an obstructed from a strangulated hernia?",
+      "back_text": "Obstructed: irreducible hernia containing partially or totally obstructed bowel with NO interference with blood supply; symptoms less severe, onset more gradual. Strangulated: blood supply seriously impaired, contents become ischemic; risk of gangrene within 5-6 hours.",
+      "tags": ["classification", "strangulation"]
+    },
+    {
+      "id": "surg_L3_hernia_f07",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "Give the boundaries, length and contents of the adult inguinal canal.",
+      "back_text": "3.75 cm long, directed downward and medially. Anterior: external oblique aponeurosis. Posterior: transversalis fascia (inferior epigastric vessels medial to the deep ring). Superior: conjoint tendon. Inferior: inguinal ligament. It transmits the spermatic cord (testicular artery, veins, lymphatics, vas deferens) or the round ligament in females.",
+      "tags": ["anatomy", "inguinal canal"]
+    },
+    {
+      "id": "surg_L3_hernia_f08",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "Where are the deep and superficial inguinal rings located?",
+      "back_text": "Deep ring: a defect in the transversalis fascia midway between the pubic tubercle and the anterior superior iliac spine, 2-3 cm above and marginally lateral to the femoral artery pulse. Superficial ring: an inverted V-shaped defect in the external oblique aponeurosis, 1.25 cm above the pubic tubercle.",
+      "tags": ["anatomy"]
+    },
+    {
+      "id": "surg_L3_hernia_f09",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "Which three nerves are at risk during inguinal hernia surgery?",
+      "back_text": "The ilioinguinal nerve, the iliohypogastric nerve and the genital branch of the genitofemoral nerve.",
+      "mnemonic_ar": "إربي حرقفي تناسلي: العصبان الحرقفيان الأربي والبطني مع الفرع التناسلي للتناسلي الفخذي.",
+      "tags": ["anatomy", "nerves"]
+    },
+    {
+      "id": "surg_L3_hernia_f10",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "What are the three types of indirect inguinal hernia?",
+      "back_text": "1) Bubonocele - limited to the inguinal canal. 2) Funicular - processus vaginalis closed just above the epididymis; sac content felt separately from the testis. 3) Complete (scrotal) - common in infancy, adolescence and adult life; the testis appears to lie within the lower part of the hernia.",
+      "tags": ["inguinal hernia", "types"]
+    },
+    {
+      "id": "surg_L3_hernia_f11",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "What are the boundaries of Hasselbach's triangle?",
+      "back_text": "Laterally: inferior epigastric vessels. Medially: lateral edge of the rectus abdominis muscle. Inferiorly: inguinal ligament. Direct hernias protrude through this triangle, which contains only transversalis fascia covered by external oblique aponeurosis.",
+      "tags": ["anatomy", "direct hernia"]
+    },
+    {
+      "id": "surg_L3_hernia_f12",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "card_type": "basic",
+      "front_text": "Which structures typically slide into a sliding inguinal hernia on each side?",
+      "back_text": "Left: sigmoid colon. Right: caecum and appendix. Both sides: a portion of the bladder. Note: these organs lying wholly within an ordinary sac do NOT make it a sliding hernia. Sliding hernias are acquired indirect hernias, almost always men over 40, 80% left-sided.",
+      "tags": ["sliding hernia"]
+    },
+    {
+      "id": "surg_L3_hernia_f13",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "card_type": "basic",
+      "front_text": "In order of frequency, what constricts a strangulated inguinal hernia, and what are the usual contents?",
+      "back_text": "Constricting agents in order: 1) deep inguinal ring, 2) superficial inguinal ring in children, 3) adhesions within the sac. Contents: small intestine, omentum or both; large intestine is rare. About 5% of inguinal hernias strangulate, usually indirect ones.",
+      "tags": ["strangulation"]
+    },
+    {
+      "id": "surg_L3_hernia_f14",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "card_type": "basic",
+      "front_text": "Two to three days after inguinal hernia repair the testis and cord are hard, tender, swollen, painful and retracted. What is this and what is its course?",
+      "back_text": "Testicular infarction from intraoperative damage to the testicular artery. It develops 2-3 days postoperatively, lasts 6-12 weeks, and may resolve or end in testicular atrophy.",
+      "is_vivid": true,
+      "explanation_ar": "خصية قاسية منكمشة بعد يومين إلى ثلاثة من إصلاح الفتق = إصابة الشريان الخصوي.",
+      "tags": ["complications"]
+    },
+    {
+      "id": "surg_L3_hernia_f15",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "card_type": "basic",
+      "front_text": "Give the dimensions, contents and boundaries of the femoral canal.",
+      "back_text": "The most medial compartment of the femoral sheath, 1.25 x 1.25 cm, containing fat, a lymphatic vessel and the node of Cloquet. Boundaries: anterior - inguinal ligament; posterior - iliopectineal ligament; lateral - femoral vein; medial - concave border of the lacunar ligament.",
+      "tags": ["anatomy", "femoral canal"]
+    },
+    {
+      "id": "surg_L3_hernia_f16",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "card_type": "basic",
+      "front_text": "State the key epidemiology and risk of femoral hernia.",
+      "back_text": "Less common than inguinal hernia; female to male ratio 2:1; multipara more than nullipara; easily missed on examination; 50% of cases present as an emergency with very high strangulation risk - so all femoral hernias are repaired surgically. The lump lies below and lateral to the pubic tubercle and may be only 1-2 cm.",
+      "explanation_ar": "نصف حالات الفتق الفخذي تمثل طوارئ: لا مجال للمراقبة، الجراحة دائماً.",
+      "tags": ["femoral hernia", "epidemiology"]
+    },
+    {
+      "id": "surg_L3_hernia_f17",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "card_type": "basic",
+      "front_text": "How does a saphena varix differ from a femoral hernia?",
+      "back_text": "A saphena varix is a saccular enlargement of the termination of the long saphenous vein with other varicose vein signs; it disappears on lying supine (a femoral hernia does not) and imparts a fluid thrill on coughing or on tapping the saphenous vein below the varix.",
+      "tags": ["differential diagnosis"]
+    },
+    {
+      "id": "surg_L3_hernia_f18",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c05",
+      "card_type": "basic",
+      "front_text": "When is mesh hernioplasty required for an adult umbilical hernia?",
+      "back_text": "Herniorrhaphy (suture repair) suffices for a small defect; prosthetic mesh hernioplasty is indicated when the fascial defect exceeds 2 cm and for any recurrent hernia. Umbilical hernias containing bowel should always be repaired because the narrow neck makes irreducibility, obstruction and strangulation likely. Weight reduction is essential before surgery.",
+      "tags": ["umbilical hernia", "treatment"]
+    },
+    {
+      "id": "surg_L3_hernia_f19",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c06",
+      "card_type": "basic",
+      "front_text": "What suture technique prevents incisional hernia after laparotomy?",
+      "back_text": "Small close bites: stitches 5 mm apart and 5-8 mm back from the wound edge, incorporating fascia only (no muscle), with minimal tension, using a 2/0 slowly resorbable suture; optimal suture length to wound length ratio 4:1; drains brought out through separate incisions, not through the wound. Interrupted and continuous sutures are equally effective.",
+      "tags": ["prevention", "suture technique"]
+    },
+    {
+      "id": "surg_L3_hernia_f20",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c06",
+      "card_type": "basic",
+      "front_text": "What is the pathognomonic sign of burst abdomen, when does it occur and how is it managed?",
+      "back_text": "A pink serosanguineous discharge from the wound, pathognomonic in 50% of cases, typically between the 6th and 8th postoperative day; the patient feels something give way, and pain and shock are often absent. Management: reassure the patient, cover the wound with a sterile towel, nasogastric tube and IV fluids, then emergency operation to replace the bowel and re-suture the wound.",
+      "is_vivid": true,
+      "explanation_ar": "نزح وردي في اليوم السادس إلى الثامن = انفجار البطن لا التهاب جرح بسيط.",
+      "tags": ["burst abdomen", "emergency"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L3_hernia_m01",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "question_stem": "A 68-year-old gravida 6 woman presents with a 12-hour history of a painful lump in the right groin, vomiting and abdominal distension. Examination shows a 1.5 cm tense, tender, irreducible lump below and lateral to the pubic tubercle with no expansile cough impulse. What is the most likely diagnosis?",
+      "options": [
+        "Strangulated femoral hernia",
+        "Strangulated indirect inguinal hernia",
+        "Incarcerated epigastric hernia",
+        "Thrombosed saphena varix",
+        "Enlarged inflamed femoral lymph node"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الكتلة تحت وحشي حدبة العانة تنطبق على الفتق الفخذي، وكونها متوترة ومتكتلة وغير قابلة للرد دون نبلة سعال توسعية يعني الخنق. الفتق الإربي يكون عنقه فوق وأنسي حدبة العانة، والفتق الشرسوفية في خط الوسط بين الناتئ الرهابي والسرة، وسكبة الصافنة تختفي بالاستلقاء، والعقدة اللمفية ليست متوترة عادةً ولا تترافق مع انسداد أمعاء.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Landmark relation of the lump to the pubic tubercle is the key.",
+        "Tense, tender, irreducible with no expansile cough impulse = strangulation."
+      ],
+      "focus_sections": [1, 3]
+    },
+    {
+      "id": "surg_L3_hernia_m02",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "question_stem": "An 80-year-old multiparous woman has a 10-hour history of severe pain in a small irreducible groin lump below and lateral to the pubic tubercle. She has had two normal bowel motions since the pain began and distension is minimal. At operation a femoral hernia containing a strangulated knuckle of ileum is found. Which feature of this hernia explains the normal bowel motions early in strangulation?",
+      "options": [
+        "Only part of the circumference of the bowel wall is trapped (Richter's hernia)",
+        "The sac contains omentum only, so the bowel is unaffected",
+        "The inferior epigastric vessels are compressed",
+        "A Meckel's diverticulum forms the entire content",
+        "The neck of the sac is wide and pliable"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في فتق ريختر يعلق جزء من محيط جدار الأمعاء فقط دون إغلاق كامل لللمعة، لذلك تبقى حركة الأمعاء طبيعية أو متكررة ويكون الإمساك علامة متأخرة ناتجة عن علوص شللي، وقد يحدث الغنغرينا والانثقاب قبل الجراحة إن تأخر التدخل. المحتوى الثربي لا يسبب إمساكاً أصلاً ولا يعطي صورة خنق معوي، والأوعية الشرسوفية ورتق ميكل لا علاقة لهما بحركة الأمعاء، والعنق الواسع يقلل الخنق أصلاً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Which hernia type traps only part of the bowel wall?",
+        "Richter's hernia is usually found in femoral hernias."
+      ],
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L3_hernia_m03",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "question_stem": "In strangulated inguinal hernia, what is the most frequent constricting agent in adults and what is the order of frequency overall?",
+      "options": [
+        "Deep inguinal ring first, then superficial ring in children, then adhesions within the sac",
+        "Adhesions within the sac first, then deep ring, then superficial ring",
+        "Superficial ring first in all ages, then deep ring",
+        "The inguinal ligament is the commonest constricting agent",
+        "The conjoint tendon constricts most hernias"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "حسب الترتيب التنازلي للشيوع يكون المضيق الأول هو الحلقة الإربية العميقة، ثم الحلقة السطحية عند الأطفال، ثم الالتصاقات داخل الكيس. أما الرباط الإربي والوتر المشترك فليسا مواضع خنق معتادة، وعكس الترتيب خطأ حفظي شائع في الامتحانات.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L3_hernia_m04",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "question_stem": "Two days after right inguinal hernia repair, a 45-year-old man complains of severe scrotal pain. The testis and spermatic cord are hard, tender, swollen and the testis is retracted. What is the diagnosis and expected course?",
+      "options": [
+        "Testicular infarction from injury to the testicular artery; lasts 6-12 weeks and may resolve or end in atrophy",
+        "Simple wound hematoma that will absorb within days",
+        "Early recurrence of the hernia requiring reoperation",
+        "Urinary retention with a distended bladder",
+        "Normal postoperative edema resolving within 48 hours"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "إصابة الشريان الخصوي أثناء إصلاح الفتق تسبب احتشاء الخصية الذي يظهر بعد 2-3 أيام بخصية وحبل منوي قاسيين متورمين مؤلمين ومنكمشين، ويدوم 6-12 أسبوعاً وقد ينتهي بالضمور أو بالتحسن. الورم الدموي لا يجعل الحبل قاسياً منكمشاً بهذه الصورة، والنكس لا يحدث خلال يومين، واحتباس البول لا يمس الحبل المنوي، والتورم الفيزيولوجي يخف خلال 48 ساعة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L3_hernia_m05",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c02",
+      "question_stem": "Which of the following forms the medial boundary of Hasselbach's triangle?",
+      "options": [
+        "Lateral edge of the rectus abdominis muscle",
+        "Inferior epigastric vessels",
+        "Inguinal ligament",
+        "Conjoint tendon",
+        "Transversalis fascia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحد الأنسي لمثلث هسلباخ هو الحد الوحشي لعضلة المستقيمة البطنية، والجانبي هو الأوعية الشرسوفية السفلية، والسفلي هو الرباط الإربي. الوتر المشترك سقف القناة الإربية لا حد للمثلث، واللفافة المستعرضة هي أرضية المثلث نفسه لا حده.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L3_hernia_m06",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c06",
+      "question_stem": "On the 6th day after laparotomy for perforated appendicitis, a 58-year-old obese man notices a pink serosanguineous discharge from his wound and says he felt something give way. He is in no pain and is hemodynamically stable. What is the most appropriate immediate management?",
+      "options": [
+        "Reassure the patient, cover the wound with a sterile towel, nasogastric tube and IV fluids, then emergency operation to replace the bowel and re-suture",
+        "Send wound swabs and await culture results before starting antibiotics",
+        "Apply an abdominal binder and observe for 24 hours",
+        "Plan elective repair of the incisional hernia in 3 months",
+        "Remove one skin suture to drain the discharge under local anesthesia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النزح الوردي المصلي الدموي حوالي اليوم السادس بعد الجراحة علامة مميزة لانفجار البطن في نصف الحالات مع غياب الألم والصدمة كثيراً؛ والعلاج طمأنة المريض وتغطية الجرح بمنشفة معقمة وأنبوب أنفي معدي وسوائل وريدية ثم جراحة إسعافية فورية. الانتظار أو الحزم أو فتح غرزة واحدة للتصرح كلها تأخير خطر قد يسمح بخروج الأحشاء أو الإنتان.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Pink discharge around day 6-8 = dehiscence, not infection.",
+        "Management is resuscitation plus emergency re-operation."
+      ],
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L3_hernia_m07",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c06",
+      "question_stem": "Which fascial closure policy has been shown to reduce the risk of incisional hernia after laparotomy?",
+      "options": [
+        "Smaller and closer bites 5 mm apart and 5-8 mm from the wound edge, fascia only, minimal tension, 2/0 slowly resorbable suture, suture length to wound length ratio 4:1",
+        "Large interrupted bites 2 cm apart with tight knotting of braided nylon",
+        "Closing the skin only and leaving the fascia to heal spontaneously",
+        "Placing all drains through the main wound to keep the abdominal wall dry",
+        "Using rapidly resorbable suture so that no foreign material remains after 2 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الإغلاق الجيد للفافة يعني غرزاً صغيرة متقاربة تبعد 5 مم وتأخذ 5-8 مم من حافة الجرح مع لفافة فقط دون عضلة وشد أدنى بخيط 2/0 بطيء الامتصاص وبنسبة طول الخيط إلى طول الجرح 4:1. الغرز الكبيرة المتباعدة والشد القوي والخيط سريع الامتصاص والمصارّ عبر الجرح نفسه كلها تزيد خطر الفتق، ولا يوجد فرق مثبت بين المتصل والمتقطع.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L3_hernia_m08",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c03",
+      "question_stem": "A 26-year-old rugby player has severe groin pain radiating into the scrotum and upper thigh for 3 months. Examination reveals tenderness over the inguinal canal, the pubic tubercle and the adductor origin, but no hernia is palpable. Which investigation is most likely to identify the cause of the pain?",
+      "options": [
+        "MRI scan",
+        "Plain abdominal x-ray",
+        "Diagnostic laparoscopy",
+        "Duplex ultrasound of the femoral vessels",
+        "CT urogram"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ألم أربي شديد يمتد إلى الصفن وأعلى الفخذ لدى لاعب رياضة تلامسية مع مواضع إيلام مميزة وغياب فتق سريري يشخص بفتق الرياضيين، وسبب الألم غالباً شدادة عضلات هذا الفخذ أو تباعد الارتفاق العاني، والرنين المغناطيسي هو الفحص الأقدر على إظهار المشكلة العظمية العضلية. الأشعة العادية لا تظهر شيئاً، والتنظير البطني ليس أول خطوة تشخيصية هنا، ودوبلر الأوعية الفخذية وتصوير الجهاز البولي بلا قيمة في هذه الصورة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Usually no true hernia is present in sportsman's hernia.",
+        "The underlying problem is usually orthopaedic."
+      ],
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L3_hernia_m09",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "question_stem": "Which structure forms the medial boundary of the femoral canal, the structure that classically strangulates femoral hernia contents?",
+      "options": [
+        "The concave border of the lacunar ligament",
+        "The iliopectineal ligament",
+        "The femoral vein",
+        "The inguinal ligament",
+        "The femoral artery"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحد الأنسي للقناة الفخذية هو الحد المقعر للرباط الهلالي وهو العائق الصلب الذي يخنق محتوى الفتق الفخذي؛ الأمامي الرباط الإربي، والخلفي الرباط الحرقفي العاني، والوحشي الوريد الفخذي، والشريان الفخذي يقع وحشي الوريد خارج القناة أصلاً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [0]
+    },
+    {
+      "id": "surg_L3_hernia_m10",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c04",
+      "question_stem": "A 30-year-old pregnant woman has a soft groin swelling just below the inguinal ligament that appears on standing, disappears completely when she lies supine, and shows a cough impulse. Tapping the swelling transmits a thrill to the long saphenous vein below it. What is the diagnosis?",
+      "options": [
+        "Saphena varix",
+        "Femoral hernia",
+        "Indirect inguinal hernia",
+        "Enlarged femoral lymph node",
+        "Psoas abscess"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "سكبة الصافنة توسع كيسي في نهاية الوريد الصافن الطويل تظهر بالوقوف وتختفي بالاستلقاء وتنقل نبلة السعال وتخلخلاً مائياً عند النقر على الصافنة تحتها مع علامات دوالية أخرى. الفتق الفخذي لا يختفي بالاستلقاء، والفتق الإربي كتلة فوق الرباط الإربي، والعقدة اللمفية صلبة لا تنقل تخلخلاً، وخراج القطنية يتصل بمرض فقاري ويتقلص بضغط خفيف لا بالاستلقاء.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L3_hernia_m11",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c05",
+      "question_stem": "Why are adult umbilical and paraumbilical hernias that contain bowel at high risk of becoming irreducible, obstructed and strangulated?",
+      "options": [
+        "The neck of the sac remains narrow compared with the volume of its contents, even in very large hernias",
+        "The fascial defect is always larger than 10 cm",
+        "They always contain the sigmoid colon sliding into the sac",
+        "The overlying skin ulcerates early and infects the sac",
+        "The rectus muscles are paralyzed on both sides"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في الفتق السري عند البالغين يبقى عنق الكيس ضيقاً مقارنة بحجم المحتوى حتى لو كان الفتق كبيراً جداً، ولهذا تنزلق الأحشاء ويحدث عدم الرد والانسداد والخنق بسهولة فيتوجب نصح الجراحة عند احتواء الفتق على أحشاء. لا حجم ثابت للعيب، والقولون السيني محتوى الفتق المنزلق الإربي لا السري، وقرحة الجلد لا تفسر الخنق، وشلل المستقيمتين لا علاقة له.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L3_hernia_m12",
+      "lecture_id": "surg_L3_hernia",
+      "concept_id": "surg_L3_hernia_c07",
+      "question_stem": "A patient with severe acute pancreatitis becomes oliguric with a tense, distended abdomen and an intra-abdominal pressure of 24 mmHg measured via a bladder catheter. What does this indicate and what is the treatment?",
+      "options": [
+        "Abdominal compartment syndrome; requires intervention such as tension-releasing incisions or laparostomy to avoid organ failure",
+        "A normal finding in pancreatitis; continue conservative care",
+        "Simple small bowel obstruction; emergency laparotomy and bowel resection",
+        "Retroperitoneal hemorrhage; urgent angiographic embolization",
+        "Isolated urinary retention; urethral catheterization alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الضغط داخل البطن فوق 20 ملم زئبق مقيساً بقثطرة المثانة يشخص متلازمة الحجر البطني التي تنقص التروية وتؤدي إلى قصور أعضاء متعدد في إنتان شديد مثل التهاب البنكرياس، وعلاجها فك الضغط بشقوق فاكّة أو فتح البطن المفتوح فوراً. ليس هذا انسداداً معوياً يستوجب قطع أمعاء ولا نزفاً خلف الصفاق، والانتظار المحافظ أو القثطرة وحدها يؤخر العلاج ويهدد الحياة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "What bladder-pressure threshold defines abdominal compartment syndrome?",
+        "Treatment is surgical decompression."
+      ],
+      "focus_sections": [4]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L3_hernia_case01",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Strangulated Femoral Hernia with Richter's-Type Content in an Elderly Multipara",
+      "scenario": "A 68-year-old grand multipara with a chronic cough develops a painful, irreducible lump below and lateral to the right pubic tubercle after a bout of coughing, followed by vomiting and abdominal distension - while her bowel motions remain deceptively normal.",
+      "vignette": {
+        "age": 68,
+        "sex": "female",
+        "chief_complaint": "Painful irreducible right groin lump for 12 hours with vomiting",
+        "history": "Grand multipara with six vaginal deliveries. Chronic obstructive pulmonary disease with a persistent cough; hypertension controlled with amlodipine. A small groin lump was noticed 6 months ago and she could reduce it herself until this morning, when it became painful and stuck after a coughing bout. She has had two normal bowel motions since the pain began and passed flatus this morning.",
+        "vitals": {
+          "bp": "100/65 mmHg",
+          "hr": "108/min",
+          "rr": "20/min",
+          "temp": "37.8 C",
+          "spo2": "96% on room air"
+        },
+        "exam": "Alert but distressed. A 1.5 cm tense, tender, irreducible lump below and lateral to the pubic tubercle with no expansile cough impulse and mild overlying erythema. No groin lump on the left side. Abdomen distended with increased (tinkling) bowel sounds, no peritonism. Loose stools present on rectal exam.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "15.2 x 10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "112 mg/L",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "3.4 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "118 umol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.8 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Erect abdominal radiograph: multiple dilated small bowel loops with valvulae conniventes and scattered air-fluid levels; erect chest film shows no free subdiaphragmatic air."
+      },
+      "steps": [
+        {
+          "id": "surg_L3_hernia_case01_s1",
+          "prompt": "What is the most appropriate immediate management in the emergency department?",
+          "options": [
+            "Resuscitation: IV crystalloid and analgesia, broad-spectrum IV antibiotics, nasogastric tube and urinary catheter with urgent surgical referral",
+            "Attempt forceful reduction of the lump under sedation and discharge home if successful",
+            "Ultrasound-guided aspiration of the lump to exclude an abscess",
+            "Oral analgesia and an outpatient CT scan booked for next week",
+            "Fit a truss to control the hernia and review in clinic"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الإنعاش يسبق كل شيء: وريد محيطي وسوائل بلورية ومسكنات ومضاد حيوي وريدي واسع الطيف وأنبوب أنفي معدي لتخفيف الانسداد وقثطرة مثانة لمراقبة الإدرار ثم إحالة جراحية إسعافية. محاولة رد الفتق بالقوة قد تمزق الأمعاء المخنوقة وتعيد أنسجة غير حية إلى البطن، والبزل أو تأجيل الجراحة أو الحزام خطأ قد يكلف الأمعاء والحياة.",
+          "xp": 10,
+          "hints": [
+            "Strangulation is a surgical emergency: resuscitate while arranging theatre.",
+            "Never force a tense, tender, irreducible hernia."
+          ]
+        },
+        {
+          "id": "surg_L3_hernia_case01_s2",
+          "prompt": "Which investigation should be obtained next to confirm the working diagnosis?",
+          "options": [
+            "Erect chest and supine abdominal radiographs looking for small bowel obstruction and free air",
+            "Barium follow-through study of the small bowel",
+            "MRI of the pelvis to characterize the lump",
+            "Diagnostic laparoscopy as the first-line step",
+            "No imaging of any kind; no additional information is needed"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الأشعة العادية للبطن بالوضعيتين مع صورة صدر بالوقوف فحوص إسعافية سريعة تظهر عرى الأمعاء الدقيقة المتوسعة والمستويات السائلة الموافقة لانسداد الأمعاء الدقيقة الناتج عن الفتق الفخذي المخنوق وتنفي الانثقاب الحر. دراسة الباريوم بطيئة وخطيرة مع الانسداد، والرنين غير عملي إسعافياً، والتنظير البطني ليس خطوة تشخيصية أولى هنا.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L3_hernia_case01_s3",
+          "prompt": "After resuscitation, what is the definitive management?",
+          "options": [
+            "Emergency surgical exploration: open the sac, assess bowel viability, resect any non-viable bowel and repair the femoral defect",
+            "Elective laparoscopic mesh repair of the femoral hernia in 6 weeks",
+            "Conservative treatment with nasogastric decompression until the obstruction resolves",
+            "Fitting a truss to prevent further strangulation",
+            "CT-guided drainage of the hernia sac"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلاج الحاسم جراحة إسعافية فورية تحت تخدير عام بفتح الفتق وتقييم حيوية الأمعاء مع استئصال أي جزء غير حي ثم إصلاح العيب الفخذي. تأجيل الإصلاح بانتظار زوال الالتهاب أو الاكتفاء بالمسكنات والمضادات الحيوية يعني غنغرينا خلال ساعات (الغنغرينا قد تحدث خلال 5-6 ساعات من بدء الأعراض)، والحزام لا يصلح لفتق مخنوق، وتفريغ الكيسة بالقثطرة لا يعالج السبب.",
+          "xp": 15,
+          "hints": [
+            "Gangrene may occur within 5-6 hours of the first symptom.",
+            "All femoral hernias are repaired surgically; an strangulated one needs theatre now."
+          ]
+        },
+        {
+          "id": "surg_L3_hernia_case01_s4",
+          "prompt": "This patient passed two normal bowel motions after the pain began. Which feature of the hernia explains this deceptively normal bowel habit?",
+          "options": [
+            "Only part of the circumference of the bowel wall is trapped in the sac (Richter's hernia)",
+            "The hernia contains omentum only, so the bowel lumen is unaffected",
+            "The hernia is a sliding hernia containing the sigmoid colon",
+            "The femoral defect is wide and allows free passage of bowel contents",
+            "The obstruction is colonic and always resolves spontaneously"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "في فتق ريختر يعلق جزء من محيط جدار الأمعاء الدقيقة فقط في عنق ضيق صلب، فتبقى اللمعة مفتوحة جزئياً وتستمر حركة الأمعاء والتبرز الطبيعي أو المتكرر بداية، ويأتي الإمساك متأخراً مع العلوص الشللي. لذلك فإن التبرز الطبيعي لا ينفي الخنق، وقد يحدث الغنغرينا والانثقاب قبل الجراحة لو تأخرت.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي فتق فخذي مخنوق من نمط ريختر في سيدة مسنة متعددة الولادات. الدروس المستفادة: كل كتلة إربية تحت وحشي حدبة العانة عند امرأة تعتبر فتقاً فخذياً حتى يثبت العكس لأن نصف الحالات تمثل طوارئ؛ والعلامة الرباعية للخنق (متوتر متكتل غير قابل للرد دون نبلة سعال توسعية) تفرض الجراحة الفورية دون تشخيص تفريقي طويل؛ والتبرز الطبيعي لا ينفي الخنق في نمط ريختر لأن جزءاً من محيط الأمعاء فقط يعلق، وقد يحدث الغنغرينا خلال 5-6 ساعات والانثقاب قبل الجراحة؛ والإنعاش لا يؤجل الجراحة بل يرافقها تمهيداً لها.",
+      "difficulty": "advanced",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L3_hernia_case02",
+      "lecture_id": "surg_L3_hernia",
+      "title": "Strangulated Indirect Inguinal Hernia in an Elderly Man Managed with a Truss",
+      "scenario": "A 72-year-old man who has worn a truss over a long-standing right indirect inguinal hernia for 8 years presents with sudden severe pain in the hernia, irreducibility and vomiting - a classic strangulated inguinal hernia demanding immediate recognition and operation.",
+      "vignette": {
+        "age": 72,
+        "sex": "male",
+        "chief_complaint": "Sudden severe pain in a long-standing right groin hernia with vomiting",
+        "history": "Long-standing reducible right indirect inguinal hernia managed with a truss for 8 years because he refused surgery. Smoker with chronic bronchitis and a chronic cough. This morning, after lifting his grandson, the hernia came down and became painful and irreducible; he has vomited twice and has colicky central abdominal pain. Last bowel motion was 14 hours ago with no flatus since.",
+        "vitals": {
+          "bp": "105/70 mmHg",
+          "hr": "112/min",
+          "rr": "22/min",
+          "temp": "37.9 C",
+          "spo2": "95% on room air"
+        },
+        "exam": "Tense, tender, irreducible right inguinoscrotal swelling extending into the scrotum with no expansile cough impulse and overlying bruising. Abdomen distended with visible loops and increased bowel sounds, no peritonism. Left groin normal; both testes descended, the right difficult to assess separately from the mass.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "17.8 x 10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "4.2 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Sodium",
+            "value": "132 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "Potassium",
+            "value": "3.4 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "13.6 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Erect abdominal film: dilated small bowel loops in a ladder pattern with air-fluid levels; no pneumoperitoneum."
+      },
+      "steps": [
+        {
+          "id": "surg_L3_hernia_case02_s1",
+          "prompt": "What is the first priority in managing this patient?",
+          "options": [
+            "Resuscitation with IV fluids, opioid analgesia, IV antibiotics, nasogastric decompression and urinary catheterization while arranging emergency theatre",
+            "Sedation and gentle manual reduction of the hernia, then observation for 24 hours",
+            "Immediate transfer to theatre without venous access or resuscitation",
+            "Insertion of a flatus tube to relieve the obstruction",
+            "CT angiography to exclude a ruptured aortic aneurysm"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريض مصاب بخنق فتق إربي مع بداية تسمم ونقص شوارد، فالخطوة الأولى إنعاش بمسكنات وريدية وسوائل بلورية لتصحيح نقص الحجم الناتج عن القيء والانسداد، وأنبوب أنفي معدي، ومضاد حيوي وريدي، وقثطرة مثانة لمراقبة الإدرار، مع تحاليل وغازات دم ولاكتات، ثم غرفة العمليات فوراً. لا يجوز الرد القسري بعد الخنق لأنه قد يعيد أمعاء غير حية إلى البطن، ولا الانتقال إلى الجراحة دون إنعاش، وأنبوب الغازات لا يعالج الفتق المخنوق.",
+          "xp": 10,
+          "hints": [
+            "Resuscitate first, operate urgently: strangulation threatens the bowel within hours.",
+            "Never force reduction of a tense, tender, irreducible hernia."
+          ]
+        },
+        {
+          "id": "surg_L3_hernia_case02_s2",
+          "prompt": "At operation, in order of frequency, what is the most likely constricting agent in this adult patient?",
+          "options": [
+            "The deep inguinal ring",
+            "The superficial inguinal ring",
+            "Adhesions within the sac",
+            "The lacunar ligament",
+            "The conjoint tendon"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "في البالغ المضيق الأشيع هو الحلقة الإربية العميقة، يليها الحلقة السطحية عند الأطفال، ثم الالتصاقات داخل الكيس. الرباط الهلالي هو مضيق الفتق الفخذي لا الإربي، والوتر المشترك ليس موضع خنق معتاد. وتذكر أن خنق الفتق الإربي يصيب نحو 5% من الحالات وغالباً غير المباشر منها وأن استعمال الحزام لسنوات عامل خطر معروف.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L3_hernia_case02_s3",
+          "prompt": "A gangrenous segment of ileum is found in the sac. What is the correct operative sequence?",
+          "options": [
+            "Resect the non-viable bowel with primary anastomosis, excise and close the peritoneal sac, close the defect and reinforce the wall, using mesh judiciously in the contaminated field",
+            "Push the gangrenous loop back into the abdomen and simply repair the hernia",
+            "Close the hernia primarily and schedule a second-look laparotomy for the bowel",
+            "Create a permanent colostomy and abandon the hernia repair",
+            "Pack the wound open and leave the hernia unrepaired to granulate"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مبادئ الجراحة الإسعافية هي نفسها الانتخابية: رد المحتوى مع استئصال أي نسيج غير حي وإصلاح الأمعاء عند اللزوم (قطع ووصل أولي)، ثم استئصال الكيس الصفاقي وغلقه، ثم غلق العيب ما أمكن مع تقوية الجدار، مع الحذر في استخدام الشبكة عند وجود تلوث بعد قطع أمعاء غنغرينية. إرجاع أمعاء ميتة إلى البطن كارثة انثقاب وتسمم، والفتحة الدائمة غير مبررة هنا، وترك الجرح مفتوحاً ليس خطة أولى.",
+          "xp": 15
+        },
+        {
+          "id": "surg_L3_hernia_case02_s4",
+          "prompt": "On the second postoperative day the right testis and spermatic cord are hard, swollen and tender and the testis is retracted. What is the diagnosis and expected course?",
+          "options": [
+            "Testicular infarction from testicular artery injury; it lasts 6-12 weeks and may resolve or end in testicular atrophy",
+            "Simple wound hematoma that will absorb within a few days",
+            "Early hernia recurrence requiring immediate reoperation",
+            "Torsion of the testis requiring urgent detorsion",
+            "Normal postoperative swelling that resolves within 48 hours"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخصية القاسية المتورمة المؤلمة المنكمشة مع الحبل المنوي بعد يومين إلى ثلاثة من إصلاح الفتق تعني احتشاء الخصية بإصابة الشريان الخصوي؛ تدوم الحالة 6-12 أسبوعاً وقد تتحسن أو تنتهي بضمور الخصية، فالمراقبة والشرح للمريض أساس العلاج مع مراجعة الجراح عند أي تفاقم. الورم الدموي لا يعطي انكماشاً قاسياً للحبل، والنكس والتواء والوذم الفيزيولوجية كلها لا تطابق هذه الصورة الزمنية والعلامات.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي خنق فتق إربي غير مباشر لدى مسن استعمل حزام الفتق سنوات طويلة. الدروس المستفادة: الخنق يعقّب نحو 5% من الفتوق الإربية وغالباً غير المباشر منها لأن عنق المباشر واسع، والمضيق الأشيع هو الحلقة العميقة ثم السطحية عند الأطفال ثم الالتصاقات؛ والعلامة الرباعية (متوتر متكتل غير قابل للرد دون نبلة سعال توسعية) مع كدمة جلدية توحي باحتقان وريدي تستدعي جراحة فورية لأن الغنغرينا قد تحدث خلال 5-6 ساعات من أول عرض، وإذا تأخر التدخل توقف الدوران المعوي وحدث علوص شللي مع تسمم دموي؛ وبعد الجراحة راقب احتشاء الخصية في اليوم الثاني أو الثالث الذي قد ينتهي بالضمور.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

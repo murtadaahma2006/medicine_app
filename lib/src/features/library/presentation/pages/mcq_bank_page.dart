@@ -16,7 +16,10 @@ import '../widgets/bank_filter_panel.dart';
 /// أول محاضرات الفلتر إن اختار «الكل»).
 /// ─────────────────────────────────────────────────────────────────────
 class McqBankPage extends StatefulWidget {
-  const McqBankPage({super.key});
+  const McqBankPage({this.specialty, super.key});
+
+  /// v20: حصر البنك داخل تخصص سريري واحد (null = كل التخصصات).
+  final String? specialty;
 
   @override
   State<McqBankPage> createState() => _McqBankPageState();
@@ -24,6 +27,8 @@ class McqBankPage extends StatefulWidget {
 
 class _McqBankPageState extends State<McqBankPage> {
   final DatabaseHelper _db = DatabaseHelper.instance;
+
+  String? get _specialty => widget.specialty;
 
   List<String> _systems = const <String>[];
   List<Map<String, Object?>> _lectures = const <Map<String, Object?>>[];
@@ -48,9 +53,13 @@ class _McqBankPageState extends State<McqBankPage> {
       _error = null;
     });
     try {
-      final List<String> systems = await _db.getDistinctSystems();
+      final List<String> systems =
+          await _db.getDistinctSystems(specialty: _specialty);
       final List<Map<String, Object?>> lectures =
-          await _db.getUnitsBySystem(_selectedSystem);
+          await _db.getUnitsBySystem(
+        _selectedSystem,
+        specialty: _specialty,
+      );
 
       if (!mounted) return;
       setState(() {
@@ -71,6 +80,7 @@ class _McqBankPageState extends State<McqBankPage> {
     setState(() => _loading = true);
     try {
       final List<Map<String, Object?>> mcqs = await _db.getMcqs(
+        specialty: _specialty,
         system: _selectedSystem,
         lectureId: _selectedLectureId,
         isRandom: _isRandom,

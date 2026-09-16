@@ -1,15 +1,23 @@
+import 'dart:async' show unawaited;
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
 import '../../../../core/database/database_helper.dart';
+import '../../../../core/database/inline_note.dart';
 import '../../../../core/database/xp_event.dart';
+import '../../../../core/motivation/celebration_queue.dart';
+import '../../../../core/notifications/pin_expiry_service.dart';
 import '../../../../core/profile/learner_profile.dart';
+import '../../../../core/utils/error_logger.dart';
+import '../../../../core/utils/responsive_layout.dart';
+import '../../../../core/widget/home_widget_service.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../widgets/breath_gate.dart';
 import '../widgets/concept_gate_sheet.dart';
 import '../widgets/fixation_spans.dart';
+import '../widgets/inline_note_spans.dart';
 import '../widgets/interception_sheet.dart';
 import '../widgets/session_guard.dart';
 
@@ -106,6 +114,15 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
       <String, List<Map<String, Object?>>>{};
   int _interceptsPassed = 0;
   int _interceptsCorrect = 0;
+
+  // الملاحظات المضمّنة (v22): كل مفهوم → ملاحظاته المحفوظة. تُحمَّل
+  // عند بناء اللقطات وتُحدَّث عند إضافة/حذف ملاحظة.
+  final Map<String, List<InlineNote>> _inlineNotes =
+      <String, List<InlineNote>>{};
+
+  // (v22) النص المحدَّد حالياً داخل SelectionArea — يُلتقط عبر
+  // onSelectionChanged ليعرضه زر «إضافة ملاحظة» في القائمة المخصصة.
+  String _lastSelectedText = '';
 
   // كاشف التصفح (أسبوع 3).
   double _baselineDwellSeconds = 0;
@@ -317,7 +334,8 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
           top: Radius.circular(AppRadius.sheet),
         ),
       ),
-      builder: (BuildContext ctx) => SafeArea(
+      builder: (BuildContext ctx) => ResponsiveSheet(
+        child: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
@@ -373,7 +391,257 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
           ),
         ),
       ),
+),
+      );
+  }
+
+  /// يجلّب الملاحظات المضمّنة لمفهوم ويخزّنها في الكاش (النداء عند
+  /// أول عرض لكل مفهوم — لا في كل بناء).
+  Future<void> _loadInlineNotes(String conceptId) async {
+    try {
+      final List<Map<String, Object?>> rows =
+          await DatabaseHelper.instance.getInlineNotesForConcept(conceptId);
+      if (!mounted) return;
+      setState(() {
+        _inlineNotes[conceptId] = <InlineNote>[
+          for (final Map<String, Object?> r in rows)
+            InlineNote.fromMap(r),
+        ];
+      });
+    } catch (_) {
+      // فشل القراءة لا يعطّل القراءة — يُتجاهل بهدوء.
+    }
+  }
+
+  /// يلتقط النص المحدَّد داخل اللقطة (v22) — يُخزَّن لحين الضغط على
+  /// «إضافة ملاحظة» في القائمة المخصصة، إذ لا يملك SelectionArea في
+  /// هذه النسخة طريقاً عمومياً لقراءة النص المحدَّد حالياً.
+  void _onSelectionChanged(Object? content) {
+    String text = '';
+    try {
+      final Object? plain = (content as dynamic).plainText;
+      if (plain is String) text = plain;
+    } catch (_) {
+      text = '';
+    }
+    _lastSelectedText = text;
+  }
+
+  /// النقر على نص مميَّز — شيت صغير يعرض الملاحظة الشخصية مع أزرار
+  /// «تعديل» و«حذف».
+  void _onTapInlineNote(InlineNote note) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    AppSheet.show<void>(
+      context,
+      title: 'ملاحظتك',
+      builder: (BuildContext sheetContext) => Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          // النص المحدَّد مسبّقاً — قابل للنسخ، مصوّر بخط القراءة.
+          Container(
+            padding: const EdgeInsets.all(AppSpacing.md),
+            decoration: BoxDecoration(
+              color: AppColors.surfaceAlt(b),
+              borderRadius: BorderRadius.circular(AppRadius.chip),
+            ),
+            child: Text(
+              '"${note.selectedText}"',
+              textDirection: TextDirection.ltr,
+              textAlign: TextAlign.start,
+              style: AppType.body.copyWith(
+                fontSize: 13,
+                height: 1.55,
+                fontFamily: AppType.focusFamily,
+                color: AppColors.text(b),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          // الملاحظة الشخصية.
+          if (note.hasNote)
+            Text(
+              note.personalNote,
+              style: AppType.body.copyWith(
+                fontWeight: FontWeight.w600,
+                height: 1.6,
+                color: AppColors.text(b),
+              ),
+            )
+          else
+            Text(
+              'بلا ملاحظة — حدّد النص فقط.',
+              style: AppType.body.copyWith(
+                color: AppColors.textSecondary(b),
+              ),
+            ),
+          const SizedBox(height: AppSpacing.xl),
+          // تعديل الملاحظة — يُغلق الشيت العرضي ويفتح شيت الإدخال
+          // بمحتوى الملاحظة الحالية محمّلاً مسبقاً.
+          FilledButton.icon(
+            onPressed: () {
+              Navigator.of(sheetContext).pop();
+              unawaited(_onEditInlineNote(note));
+            },
+            icon: const Icon(Icons.edit_rounded, size: 18),
+            label: const Text('تعديل الملاحظة'),
+          ),
+          const SizedBox(height: AppSpacing.sm),
+          // حذف الملاحظة (زر ثانوي متواضع).
+          OutlinedButton.icon(
+            onPressed: () {
+              Navigator.of(sheetContext).pop();
+              unawaited(_deleteInlineNote(note));
+            },
+            icon: const Icon(Icons.delete_outline_rounded, size: 18),
+            label: const Text('حذف الملاحظة'),
+          ),
+        ],
+      ),
     );
+  }
+
+  Future<void> _deleteInlineNote(InlineNote note) async {
+    try {
+      await DatabaseHelper.instance.deleteInlineNote(note.remarkId);
+      if (!mounted) return;
+      setState(() {
+        _inlineNotes[note.conceptId]?.removeWhere(
+          (InlineNote n) => n.remarkId == note.remarkId,
+        );
+      });
+    } catch (_) {
+      // صمت — فشل الحذف لا يعطّل القراءة.
+    }
+  }
+
+/// تحديد نص داخل اللقطة + «إضافة ملاحظة» — شيت إدخال الملاحظة.
+  Future<void> _onAddInlineNote(
+    String selectedText,
+    int startIndex,
+    int endIndex,
+    String conceptId,
+  ) async {
+    final String trimmed = selectedText.trim();
+    if (trimmed.isEmpty) return;
+
+    await _showNoteEditor(
+      title: 'إضافة ملاحظة',
+      contextText: trimmed,
+      initialNote: '',
+      onSave: (String noteText) async {
+        await DatabaseHelper.instance.addInlineNote(
+          conceptId: conceptId,
+          selectedText: trimmed,
+          startIndex: startIndex,
+          endIndex: endIndex,
+          personalNote: noteText,
+        );
+      },
+      conceptId: conceptId,
+    );
+  }
+
+  /// «تعديل الملاحظة» — يُفتح شيت الإدخال معبّأً بمحتوى الملاحظة
+  /// الحالية ويحدَّث الصف في القاعدة (UPDATE) عند الحفظ.
+  Future<void> _onEditInlineNote(InlineNote note) async {
+    await _showNoteEditor(
+      title: 'تعديل الملاحظة',
+      contextText: note.selectedText,
+      initialNote: note.personalNote,
+      onSave: (String noteText) async {
+        await DatabaseHelper.instance.updateInlineNote(
+          id: note.remarkId,
+          personalNote: noteText,
+        );
+      },
+      conceptId: note.conceptId,
+    );
+  }
+
+  /// شيت موحّد لتأليف/تعديل ملاحظة مضمّنة. يعرض النص المحدَّد كسياق،
+  /// حقل ملاحظة (معبّأً بـ [initialNote] عند التعديل)، وزر حفظ يستدعي
+  /// [onSave] ثم يعيد تحميل ملاحظات الشرح ليظهر التغيير فوراً.
+  Future<void> _showNoteEditor({
+    required String title,
+    required String contextText,
+    required String initialNote,
+    required Future<void> Function(String noteText) onSave,
+    required String conceptId,
+  }) async {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final TextEditingController controller =
+        TextEditingController(text: initialNote);
+    // نضع المؤشر في نهاية النص عند التعديل ليتابع التحرير بسرعة.
+    controller.selection = TextSelection.collapsed(
+      offset: controller.text.length,
+    );
+    final bool? saved = await AppSheet.show<bool>(
+      context,
+      title: title,
+      builder: (BuildContext sheetContext) => Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          // النص المحدَّد — للسياق.
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(AppSpacing.md),
+            decoration: BoxDecoration(
+              color: AppColors.inlineNoteHighlight(b),
+              borderRadius: BorderRadius.circular(AppRadius.chip),
+              border: Border.all(color: AppColors.border(b)),
+            ),
+            child: Text(
+              contextText,
+              textDirection: TextDirection.ltr,
+              textAlign: TextAlign.start,
+              style: AppType.body.copyWith(
+                fontSize: 13,
+                height: 1.5,
+                fontFamily: AppType.focusFamily,
+                color: AppColors.text(b),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.md),
+          // حقل الملاحظة.
+          TextField(
+            controller: controller,
+            autofocus: true,
+            maxLines: 4,
+            minLines: 2,
+            textDirection: TextDirection.ltr,
+            decoration: InputDecoration(
+              hintText: 'اكتب ملاحظتك هنا...',
+              hintStyle: AppType.body.copyWith(
+                color: AppColors.textSecondary(b),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.lg),
+          // حفظ.
+          Align(
+            alignment: Alignment.centerRight,
+            child: FilledButton(
+              onPressed: () => Navigator.of(sheetContext).pop(true),
+              child: const Text('حفظ الملاحظة'),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (saved != true || !mounted) return;
+    final String noteText = controller.text.trim();
+    if (noteText.isEmpty) return;
+    try {
+      await onSave(noteText);
+      // إعادة تحميل ملاحظات المفهوم ليعرض التغيير فوراً.
+      await _loadInlineNotes(conceptId);
+    } catch (_) {
+      // صمت — فشل الحفظ لا يعطّل القراءة.
+    }
   }
 
   static List<Map<String, Object?>> _decodeSections(String? raw) {
@@ -559,6 +827,9 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
 
   /// إتمام القراءة: تسجيل concept_reads + إغلاق الجلسة + XP.
   Future<void> _finish() async {
+    // لقطة XP قبل الكتابات — ل كشف رفع المستوى (Motivator).
+    final int beforeXp = await Motivator.currentXp();
+
     try {
       final DatabaseHelper db = DatabaseHelper.instance;
 
@@ -580,8 +851,15 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
 
       // أهداف اليوم: إن كانت المحاضرة مثبتة وقد اكتملت قراءتها
       // كاملة (كل شروحها) → إلغاء التثبيت تلقائياً — الإتمام يُشتق
-      // ديناميكياً في القاعدة فلا نكرر المنطق هنا.
+      // ديناميكياً في القاعدة فلا نكرر المنطق هنا. مع إلغاء إشعار
+      // الانتهاء المجدول (+48h) لأن الهدف تحقق قبل انتهائه.
+      final bool wasPinned = (await db.getUnitById(widget.unitId))
+              ?['pinned_at'] !=
+          null;
       await db.unpinUnitIfCompleted(widget.unitId);
+      if (wasPinned) {
+        await PinExpiryService.cancelExpiryNotification(widget.unitId);
+      }
 
       if (_flowSessionId != null) {
         final int focused =
@@ -598,20 +876,39 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
         );
         await db.grantDailyStreakBonus();
       }
-    } catch (_) {
-      // صمت مقصود.
+
+      // الاحتفالات: شارات جديدة + رفع مستوى إن عُبر حدٌّ.
+      final List<String> newBadges =
+          await db.unlockEarnedBadges();
+      await Motivator.detectLevelUp(beforeXp, newBadgeIds: newBadges);
+    } catch (error) {
+      AppErrorLogger.instance.record(
+        type: 'ConceptReader',
+        error: error,
+      );
     }
 
+    // تحديث ويدجت الشاشة الرئيسية — فك التثبيت التلقائي أعلاه قد غيّر
+    // «أهدافي» (unawaited: الويدجت تحسين غير حركي).
+    unawaited(HomeWidgetService.refresh());
+
     if (!mounted) return;
+
+    // رسالة الختام عبر رسنجر الشاشة الأم — يُحفظ قبل pop
+    // (استخدام context بعد pop = عنصر مهدم).
+    final ScaffoldMessengerState? messenger = ScaffoldMessenger.maybeOf(context);
+    final int interceptsPassed = _interceptsPassed;
+    final int interceptsCorrect = _interceptsCorrect;
+
     // ملخص الاعتراضيات إن وُجدت — ثم إغلاق.
-    if (_interceptsPassed > 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
+    if (interceptsPassed > 0) {
+      messenger?.showSnackBar(
         SnackBar(
           behavior: SnackBarBehavior.floating,
           backgroundColor: AppColors.success(Brightness.light),
           content: Text(
-            'أتممت الجلسة — $_interceptsPassed نقطة استرجاع'
-            ' ($_interceptsCorrect صحيحة) 🌊',
+            'أتممت الجلسة — $interceptsPassed نقطة استرجاع'
+            ' ($interceptsCorrect صحيحة) 🌊',
             textAlign: TextAlign.center,
           ),
         ),
@@ -709,104 +1006,133 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
     final bool useAnchors = _anchorsEnabled && _isFirstRead;
     final bool isGateWrong = _isGateWrong(shot);
 
-    return Column(
-      children: <Widget>[
-        // ── شريط التقدم الرفيع ──
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
-          child: Row(
-            children: <Widget>[
-              Text(
-                '${_index + 1}/${_shots.length}',
-                textDirection: TextDirection.ltr,
-                style: AppType.caption.copyWith(
-                  fontSize: 11,
-                  color: AppColors.textSecondary(b),
-                ),
-              ),
-              const SizedBox(width: AppSpacing.sm),
-              Expanded(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(AppRadius.pill),
-                  child: LinearProgressIndicator(
-                    value: (_index + 1) / _shots.length,
-                    minHeight: 3,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+    // تحميل الملاحظات المضمّنة عند إظهار مفهوم أول مرة (كاش خفيف).
+    if (!_inlineNotes.containsKey(shot.conceptId)) {
+      unawaited(_loadInlineNotes(shot.conceptId));
+    }
+    final List<InlineNote> notes =
+        _inlineNotes[shot.conceptId] ?? const <InlineNote>[];
 
-        // ── اللقطة ──
-        Expanded(
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 460),
-              child: AnimatedSwitcher(
-                duration: AppMotion.scaled(context, AppMotion.transition),
-                switchInCurve: AppMotion.ease,
-                switchOutCurve: AppMotion.out,
-                transitionBuilder: (Widget child, Animation<double> anim) =>
-                    FadeTransition(
-                  opacity: anim,
-                  child: SlideTransition(
-                    position: Tween<Offset>(
-                      begin: const Offset(0, 0.04),
-                      end: Offset.zero,
-                    ).animate(anim),
-                    child: child,
+    // توافق الآيباد: عمود القراءة لا يتمدد على الشاشات الواسعة —
+    // ResponsiveReadingColumn الموحد (موبايل: بلا أي أثر).
+    return ResponsiveReadingColumn(
+      child: Column(
+          children: <Widget>[
+            // ── شريط التقدم الرفيع ──
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    '${_index + 1}/${_shots.length}',
+                    textDirection: TextDirection.ltr,
+                    style: AppType.caption.copyWith(
+                      fontSize: 11,
+                      color: AppColors.textSecondary(b),
+                    ),
                   ),
-                ),
-                child: KeyedSubtree(
-                  key: ValueKey<int>(_index),
-                  child: _ShotContent(
-                    shot: shot,
-                    useAnchors: useAnchors,
-                    anchorStrength: _anchorStrength,
-                    gateWrong: isGateWrong,
+                  const SizedBox(width: AppSpacing.sm),
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(AppRadius.pill),
+                      child: LinearProgressIndicator(
+                        value: (_index + 1) / _shots.length,
+                        minHeight: 3,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // ── اللقطة ──
+            Expanded(
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 460),
+                  child: AnimatedSwitcher(
+                    duration: AppMotion.scaled(context, AppMotion.transition),
+                    switchInCurve: AppMotion.ease,
+                    switchOutCurve: AppMotion.out,
+                    transitionBuilder: (Widget child, Animation<double> anim) =>
+                        FadeTransition(
+                      opacity: anim,
+                      child: SlideTransition(
+                        position: Tween<Offset>(
+                          begin: const Offset(0, 0.04),
+                          end: Offset.zero,
+                        ).animate(anim),
+                        child: child,
+                      ),
+                    ),
+                    child: KeyedSubtree(
+                      key: ValueKey<int>(_index),
+                      child: _ShotContent(
+                        shot: shot,
+                        useAnchors: useAnchors,
+                        anchorStrength: _anchorStrength,
+                        gateWrong: isGateWrong,
+                        inlineNotes: notes,
+                        onAddNote: (int start, int end) {
+                          final String selectedString = shot.body.substring(start, end);
+                          _onAddInlineNote(selectedString, start, end, shot.conceptId);
+                        },
+                        onTapNote: _onTapInlineNote,
+                        onSelectionChanged: _onSelectionChanged,
+                      ),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ),
 
-        // ── زر التالي الكبير الوحيد ──
-        SafeArea(
-          top: false,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-                AppSpacing.xl, AppSpacing.sm, AppSpacing.xl, AppSpacing.lg),
-            child: SizedBox(
-              width: double.infinity,
-              height: 56,
-              child: FilledButton(
-                onPressed: _next,
-                child: Text(
-                  shot.isLastShot ? 'إنهاء الشرح' : 'التالي',
-                  style: AppType.body.copyWith(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w800,
+            // ── زر التالي الكبير الوحيد ──
+            SafeArea(
+              top: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                    AppSpacing.xl, AppSpacing.sm, AppSpacing.xl, AppSpacing.lg),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 56,
+                  child: FilledButton(
+                    onPressed: _next,
+                    child: Text(
+                      shot.isLastShot ? 'إنهاء الشرح' : 'التالي',
+                      style: AppType.body.copyWith(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
+          ],
         ),
-      ],
-    );
+      );
   }
 }
 
 /// محتوى لقطة واحدة — مع التمييز الكهرماني عند «هنا كان خطؤك».
+///
+/// **v22 — النسخ والتحديد**: كامل نص اللقطة قابل للتحديد والنسخ
+/// (SelectionArea) — الجسم، العنوان، النقاط المفتاحية، والمسرد.
+/// هؤلاء طلبة طب ينسخون جرعات دواء ومعايير تشخيص إلى ملاحظاتهم؛
+/// منع التحديد هنا عائق تعليمي حقيقي. النطاق محصور بهذه الشاشة
+/// فقط — بقية التطبيق (أزرار/بطاقات/أسئلة) سلوكه التاريخي:
+/// النقر يمر بلا أثر تحديد.
 class _ShotContent extends StatelessWidget {
   const _ShotContent({
     required this.shot,
     required this.useAnchors,
     required this.anchorStrength,
     this.gateWrong = false,
+    this.inlineNotes = const <InlineNote>[],
+    this.onAddNote,
+    this.onTapNote,
+    this.onSelectionChanged,
   });
 
   final _Shot shot;
@@ -816,12 +1142,35 @@ class _ShotContent extends StatelessWidget {
   /// تمييز «هنا كان خطؤك» — إطار كهرماني رقيق + شارة (أسبوع 2).
   final bool gateWrong;
 
+  /// الملاحظات المضمّنة لهذا الشرح (v22) — تُظهر التمييز الصفري.
+  final List<InlineNote> inlineNotes;
+
+  /// تحديد نص داخل اللقطة ثم «إضافة ملاحظة» (مرفوع للصفحة) — يقرأ
+  /// النص المحدَّد الملتقط عبر [onSelectionChanged].
+  final void Function(int startIndex, int endIndex)? onAddNote;
+
+
+  /// النقر على نص مميَّز — عرض الملاحظة.
+  final void Function(InlineNote note)? onTapNote;
+
+  /// تغيير التحديد داخل اللقطة — تُلتقط النص المحدَّد إلى الصفحة
+  /// ليستخدمه زر «إضافة ملاحظة» في القائمة المخصصة. (النوع Object?
+  /// لأن SelectedContent غير مصدَّر علناً في هذه النسخة من Flutter.)
+  final ValueChanged<Object?>? onSelectionChanged;
+
   @override
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
     final Color accent = Theme.of(context).colorScheme.primary;
     final Color amber = AppColors.gold(b);
 
+    // v22: SelectionArea يغلّف محتوى اللقطة كلها — أي نص داخلها
+    // قابل للتحديد والنسخ (سلوك المنصة: زر النسخ/المشاركة من
+    // النظام). لف SingleChildScrollView لا العكس — كي يعمل
+    // التحديد عبر التمرير كاملاً.
+    //
+    // القائمة المخصصة: نضيف زر «إضافة ملاحظة» إلى أدوات التحديد
+    // الافتراضية (نسخ/تحديد الكل) — يمسك النص المحدَّد ويرفعه للصفحة.
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(
           horizontal: AppSpacing.xl, vertical: AppSpacing.lg),
@@ -901,34 +1250,59 @@ class _ShotContent extends StatelessWidget {
               Text.rich(
                 TextSpan(
                   children: buildAnchoredSpans(
-                    shot.heading,
+                    _sanitizeBidi(shot.heading),
                     focusHeadingStyle(b).copyWith(
                       color: AppColors.text(b),
                     ),
                     strength: anchorStrength,
                   ),
                 ),
-                textDirection: TextDirection.ltr,
+                textDirection: TextDirection.rtl,
                 textAlign: TextAlign.start,
               ),
               const SizedBox(height: AppSpacing.md),
             ],
 
             // ── جسم النص ──
+            // v22: يدمج المراسي (قراءة أولى) مع تمييز الملاحظات
+            // المضمّنة — أي نص محفوظ يظهر بأصفر فاتح وقابل للنقر.
             if (shot.body.isNotEmpty)
-              Text.rich(
+              SelectableText.rich(
                 TextSpan(
                   style: focusBodyStyle(b),
-                  children: useAnchors
-                      ? buildAnchoredSpans(
-                          shot.body,
-                          focusBodyStyle(b),
-                          strength: anchorStrength,
-                        )
-                      : <TextSpan>[TextSpan(text: shot.body)],
+                  children: _buildBodySpans(shot, b),
                 ),
-                textDirection: TextDirection.ltr,
+                textDirection: TextDirection.rtl,
                 textAlign: TextAlign.start, // لا Justify أبداً
+                contextMenuBuilder: (BuildContext ctx, EditableTextState state) {
+                  final List<ContextMenuButtonItem> items =
+                      List<ContextMenuButtonItem>.of(state.contextMenuButtonItems);
+                  
+                  items.insert(
+                    0,
+                    ContextMenuButtonItem(
+                      label: 'إضافة ملاحظة',
+                      onPressed: () {
+                        state.hideToolbar();
+                        if (onAddNote != null) {
+                          final TextSelection selection = state.textEditingValue.selection;
+                          final int start = selection.baseOffset < selection.extentOffset 
+                                            ? selection.baseOffset 
+                                            : selection.extentOffset;
+                          final int end = selection.baseOffset > selection.extentOffset 
+                                            ? selection.baseOffset 
+                                            : selection.extentOffset;
+                          onAddNote!(start, end);
+                        }
+                      },
+                    ),
+                  );
+                  
+                  return AdaptiveTextSelectionToolbar.buttonItems(
+                    anchors: state.contextMenuAnchors,
+                    buttonItems: items,
+                  );
+                },
               ),
 
             // ── النقاط المفتاحية ──
@@ -967,8 +1341,8 @@ class _ShotContent extends StatelessWidget {
                             const SizedBox(width: AppSpacing.sm),
                             Expanded(
                               child: Text(
-                                point,
-                                textDirection: TextDirection.ltr,
+                                _sanitizeBidi(point),
+                                textDirection: TextDirection.rtl,
                                 textAlign: TextAlign.start,
                                 style: AppType.body.copyWith(
                                   fontSize: 13,
@@ -1027,13 +1401,45 @@ class _ShotContent extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-            ],
-          ],
-        ),
-      ),
+                     ],
+                   ),
+                 ),
+             ],
+           ],
+         ),
+       ),
+    );
+  }
+
+  /// حقن علامة (RLM) لنهاية النصوص لضمان تنسيق علامات الترقيم والأقواس لليمين.
+  String _sanitizeBidi(String text) {
+    if (text.isEmpty) return text;
+    if (text.endsWith('\u200F')) return text;
+    return '$text\u200F';
+  }
+
+  /// يبني أجزاء جسم النص — يدمج مراسي التثبيت (قراءة أولى) مع تمييز
+  /// الملاحظات المضمّنة (v22).
+  ///
+  /// عند توفر ملاحظات للشرح: نمسح النص بحثاً عن التمييز أجزاءً، مع
+  /// تطبيق المراسي على المقاطع غير المميّزة فقط (حتى لا نكسر خلفية
+  /// التمييز)؛ بدونه يبقى السلوك التاريخي (مراسي فقط أو نص مسطح).
+  List<TextSpan> _buildBodySpans(_Shot shot, Brightness b) {
+    final TextStyle base = focusBodyStyle(b);
+    final String sanitizedBody = _sanitizeBidi(shot.body);
+    if (inlineNotes.isEmpty) {
+      return useAnchors
+          ? buildAnchoredSpans(sanitizedBody, base, strength: anchorStrength)
+          : <TextSpan>[TextSpan(text: sanitizedBody, style: base)];
+    }
+    return buildInlineNoteSpans(
+      sanitizedBody,
+      inlineNotes,
+      base: base,
+      onTap: onTapNote,
+      brightness: b,
+      useAnchors: useAnchors,
+      anchorStrength: anchorStrength,
     );
   }
 }

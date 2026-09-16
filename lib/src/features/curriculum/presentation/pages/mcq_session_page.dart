@@ -7,8 +7,12 @@ import '../../../../core/database/correction.dart';
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/user_progress.dart';
 import '../../../../core/database/xp_event.dart';
+import '../../../../core/motivation/celebration_queue.dart';
 import '../../../../core/motivation/flow_channel_controller.dart';
 import '../../../../core/motivation/reward_engine.dart';
+import '../../../../core/notifications/pin_expiry_service.dart';
+import '../../../../core/utils/error_logger.dart';
+import '../../../../core/utils/responsive_layout.dart';
 import '../../../../core/widget/home_widget_service.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
@@ -179,8 +183,9 @@ class _McqSessionPageState extends State<McqSessionPage> {
           ),
         );
       }
-    } catch (_) {
-      // صمت مقصود.
+    } catch (error) {
+      // فشل تسجيل الإجابة لا يوقف الجلسة — لكن يُشخَّص بدل الضياع.
+      AppErrorLogger.instance.record(type: 'McqAnswer', error: error);
     }
   }
 
@@ -202,44 +207,55 @@ class _McqSessionPageState extends State<McqSessionPage> {
         : ((_correctCount / _questions.length) * 100).round();
     final bool passed = percent >= 70;
 
+    // لقطة XP قبل الكسب — ل كشف رفع المستوى ختاماً (Motivator).
+    final int beforeXp = await Motivator.currentXp();
+
     try {
-      // حفظ سجل الإجابات دفعة واحدة.
-      await DatabaseHelper.instance.insertCorrections(_corrections);
+      // كل كتابات الختام في معاملة واحدة (Batching): سجل الإجابات +
+      // علامة التقدم + مكافأة الاجتياز + السلسلة + الشارات.
+      final List<String> newBadges =
+          await DatabaseHelper.instance.finalizeSession(
+        corrections: _corrections,
+        progress: UserProgress(
+          itemType: ProgressItemType.drill,
+          itemId: _drillKey,
+          status: ProgressStatus.completed,
+          timesReviewed: 1,
+          score: percent,
+          lastPracticedAt: DateTime.now().toUtc().toIso8601String(),
+        ),
+        bonusKind:
+            widget.isAssessment && passed ? XpEventKind.assessment : null,
+        bonusRefId: widget.unitId,
+        bonusXp: widget.isAssessment && passed ? 20 : 0,
+      );
 
-      // علامة الجلسة في user_progress (درجة مئوية) بمفتاح النمط:
-      // التقييم الرسمي assess-·unitId· — الخط الزمني يقرأه — والتدريب
-      // الحر mcq-·unitId·.
-      await DatabaseHelper.instance.upsertProgress(UserProgress(
-        itemType: ProgressItemType.drill,
-        itemId: _drillKey,
-        status: ProgressStatus.completed,
-        timesReviewed: 1,
-        score: percent,
-        lastPracticedAt: DateTime.now().toUtc().toIso8601String(),
-      ));
-
-      // مكافأة إضافية للاجتياز الرسمي (+20 XP بنوع assessment).
+      // أهداف اليوم: إتمام المحاضرة → إلغاء التثبيت تلقائياً
+      // فتختفي من جدول اليوم وتكتمل حلقة الإنجاز — وإلغاء إشعار
+      // انتهاء التثبيت المجدول (+48h) لأن الهدف تحقق قبل انتهائه.
       if (widget.isAssessment && passed) {
-        await DatabaseHelper.instance.addXpEvent(
-          kind: XpEventKind.assessment,
-          refId: widget.unitId,
-          xp: 20,
-        );
-        // أهداف اليوم: إتمام المحاضرة → إلغاء التثبيت تلقائياً
-        // فتختفي من جدول اليوم وتكتمل حلقة الإنجاز.
         await DatabaseHelper.instance.unpinUnit(widget.unitId);
+        await PinExpiryService.cancelExpiryNotification(widget.unitId);
       }
 
-      await DatabaseHelper.instance.grantDailyStreakBonus();
-      await DatabaseHelper.instance.unlockEarnedBadges();
-    } catch (_) {
-      // صمت مقصود.
+      // الاحتفالات: شارات جديدة + رفع مستوى إن عُبر حدٌّ.
+      await Motivator.detectLevelUp(beforeXp, newBadgeIds: newBadges);
+    } catch (error) {
+      AppErrorLogger.instance.record(
+        type: 'McqSession',
+        error: error,
+      );
     }
 
     // تحديث ويدجت الشاشة الرئيسية — إنجاز اليوم تغيّر.
     unawaited(HomeWidgetService.refresh());
 
     if (!mounted) return;
+
+    // رسالة التدريب الحر — تُعرض عبر رسنجر الشاشة الأم قبل أي pop
+    // (استخدام context بعد pop = استخدام عنصر مهدم).
+    final ScaffoldMessengerState? messenger =
+        widget.isAssessment ? null : ScaffoldMessenger.maybeOf(context);
 
     // التقييم الرسمي: شاشة النتيجة الموحدة ثم إغلاق الجلسة.
     if (widget.isAssessment) {
@@ -265,7 +281,7 @@ class _McqSessionPageState extends State<McqSessionPage> {
 
     // التدريب الحر: SnackBar بسيطة.
     Navigator.of(context).pop();
-    ScaffoldMessenger.of(context).showSnackBar(
+    messenger?.showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
         backgroundColor:
@@ -324,134 +340,138 @@ class _McqSessionPageState extends State<McqSessionPage> {
     final List<String> options = _optionsOf(q);
     final int correctIndex = (q['correct_index'] as num?)?.toInt() ?? 0;
 
-    return AnimatedContainer(
-      // ── وميض «منطقة الاندفاع» — حد أخضر خاطف 200ms عند 70% ──
-      duration: const Duration(milliseconds: 120),
-      decoration: BoxDecoration(
-        border: _sprintFlash
-            ? Border.all(color: AppColors.success(b), width: 2)
-            : null,
-      ),
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
-            child: ProgressBar(
-              // البداية المزيفة — الشريط يبدأ من 15% ممتلئاً.
-              progress: RewardEngine.displayProgress(
-                (_index + (_selected != null ? 1 : 0)) / _questions.length,
+    // توافق الآيباد: عمود الجلسة لا يتمدد على الشاشات الواسعة —
+    // ResponsiveReadingColumn (موبايل: بلا أي أثر — القيد لا يعمل).
+    return ResponsiveReadingColumn(
+      child: AnimatedContainer(
+        // ── وميض «منطقة الاندفاع» — حد أخضر خاطف 200ms عند 70% ──
+        duration: const Duration(milliseconds: 120),
+        decoration: BoxDecoration(
+          border: _sprintFlash
+              ? Border.all(color: AppColors.success(b), width: 2)
+              : null,
+        ),
+        child: Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+                child: ProgressBar(
+                  // البداية المزيفة — الشريط يبدأ من 15% ممتلئاً.
+                  progress: RewardEngine.displayProgress(
+                    (_index + (_selected != null ? 1 : 0)) / _questions.length,
+                  ),
+                  height: 6,
+                  color: AppColors.primary(b),
+                ),
               ),
-              height: 6,
-              color: AppColors.primary(b),
-            ),
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(AppSpacing.xl),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  // ── شارة الضربة الحمراء الومضية ──
-                  if (_luckyStrike)
-                    Center(
-                      child: AnimatedOpacity(
-                        opacity: 1,
-                        duration: AppMotion.scaled(
-                            context, AppMotion.celebration),
-                        child: Container(
-                          margin: const EdgeInsets.only(bottom: AppSpacing.md),
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: AppSpacing.lg,
-                            vertical: AppSpacing.xs + 2,
-                          ),
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              colors: AppGradients.gold,
-                            ),
-                            borderRadius:
-                                BorderRadius.circular(AppRadius.pill),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: <Widget>[
-                              const Icon(Icons.bolt_rounded,
-                                  size: 16, color: AppColors.onGold),
-                              const SizedBox(width: AppSpacing.xs),
-                              Text(
-                                RewardEngine.luckyStrikeLabel,
-                                style: AppType.caption.copyWith(
-                                  fontWeight: FontWeight.w900,
-                                  color: AppColors.onGold,
-                                ),
+              Expanded(
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(AppSpacing.xl),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      // ── شارة الضربة الحمراء الومضية ──
+                      if (_luckyStrike)
+                        Center(
+                          child: AnimatedOpacity(
+                            opacity: 1,
+                            duration: AppMotion.scaled(
+                                context, AppMotion.celebration),
+                            child: Container(
+                              margin: const EdgeInsets.only(bottom: AppSpacing.md),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: AppSpacing.lg,
+                                vertical: AppSpacing.xs + 2,
                               ),
-                            ],
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  colors: AppGradients.gold,
+                                ),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadius.pill),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: <Widget>[
+                                  const Icon(Icons.bolt_rounded,
+                                      size: 16, color: AppColors.onGold),
+                                  const SizedBox(width: AppSpacing.xs),
+                                  Text(
+                                    RewardEngine.luckyStrikeLabel,
+                                    style: AppType.caption.copyWith(
+                                      fontWeight: FontWeight.w900,
+                                      color: AppColors.onGold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+
+                      // ── نص السؤال ──
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(AppSpacing.lg),
+                        decoration: BoxDecoration(
+                          color: AppColors.surface(b),
+                          borderRadius: BorderRadius.circular(AppRadius.card),
+                          border: Border.all(color: AppColors.border(b)),
+                        ),
+                        child: Text(
+                          q['question_stem']! as String,
+                          textDirection: TextDirection.ltr,
+                          textAlign: TextAlign.start,
+                          style: AppType.body.copyWith(
+                            fontSize: 16,
+                            height: 1.65,
+                            fontFamily: AppType.latinFamily,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.text(b),
                           ),
                         ),
                       ),
-                    ),
+                      const SizedBox(height: AppSpacing.lg),
 
-                  // ── نص السؤال ──
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(AppSpacing.lg),
-                    decoration: BoxDecoration(
-                      color: AppColors.surface(b),
-                      borderRadius: BorderRadius.circular(AppRadius.card),
-                      border: Border.all(color: AppColors.border(b)),
-                    ),
-                    child: Text(
-                      q['question_stem']! as String,
-                      textDirection: TextDirection.ltr,
-                      textAlign: TextAlign.start,
-                      style: AppType.body.copyWith(
-                        fontSize: 16,
-                        height: 1.65,
-                        fontFamily: AppType.latinFamily,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.text(b),
-                      ),
-                    ),
+                      // ── الخيارات ──
+                      for (int i = 0; i < options.length; i++)
+                        ExerciseOptionButton(
+                          label: options[i],
+                          latin: true,
+                          onTap: _selected == null ? () => _select(i) : null,
+                          state: _selected == null
+                              ? null
+                              : i == correctIndex
+                                  ? OptionState.correct
+                                  : i == _selected
+                                      ? OptionState.wrong
+                                      : OptionState.dimmed,
+                        ),
+
+                      // ── الشرح العربي بعد الإجابة ──
+                      if (_selected != null) ...<Widget>[
+                        const SizedBox(height: AppSpacing.sm),
+                        _ExplanationCard(
+                          explanation: q['explanation_ar']! as String,
+                          correct: _lastAnswerCorrect == true,
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        AppButton(
+                          label: _index + 1 >= _questions.length
+                              ? 'إنهاء الجلسة'
+                              : 'السؤال التالي',
+                          trailingIcon: Icons.arrow_back_rounded,
+                          onPressed: _next,
+                        ),
+                      ],
+                    ],
                   ),
-                  const SizedBox(height: AppSpacing.lg),
-
-                  // ── الخيارات ──
-                  for (int i = 0; i < options.length; i++)
-                    ExerciseOptionButton(
-                      label: options[i],
-                      latin: true,
-                      onTap: _selected == null ? () => _select(i) : null,
-                      state: _selected == null
-                          ? null
-                          : i == correctIndex
-                              ? OptionState.correct
-                              : i == _selected
-                                  ? OptionState.wrong
-                                  : OptionState.dimmed,
-                    ),
-
-                  // ── الشرح العربي بعد الإجابة ──
-                  if (_selected != null) ...<Widget>[
-                    const SizedBox(height: AppSpacing.sm),
-                    _ExplanationCard(
-                      explanation: q['explanation_ar']! as String,
-                      correct: _lastAnswerCorrect == true,
-                    ),
-                    const SizedBox(height: AppSpacing.md),
-                    AppButton(
-                      label: _index + 1 >= _questions.length
-                          ? 'إنهاء الجلسة'
-                          : 'السؤال التالي',
-                      trailingIcon: Icons.arrow_back_rounded,
-                      onPressed: _next,
-                    ),
-                  ],
-                ],
+                ),
               ),
-            ),
+            ],
           ),
-        ],
-      ),
-    );
+        ),
+      );
   }
 }
 

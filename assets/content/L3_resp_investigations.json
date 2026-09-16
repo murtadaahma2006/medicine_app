@@ -1,0 +1,892 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L3_resp_investigations",
+    "specialty": "internal_medicine",
+    "title": "Investigations of Respiratory Diseases",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L3 investigation of respiratory pdf.pdf",
+      "page_count": 47
+    },
+    "tags": [
+      "chest-x-ray",
+      "ct",
+      "pet-ct",
+      "spirometry",
+      "peak-flow",
+      "microbiology",
+      "bronchoscopy",
+      "imaging"
+    ],
+    "order_index": 2,
+    "golden_tip": [
+      "EXAM TRAP: An AP (supine) chest X-ray MAGNIFIES the heart and can falsely suggest cardiomegaly — always judge heart size on a PA erect film. PA view is the standard first-line imaging; the lateral view adds information behind the heart and in the diaphragmatic sulci.",
+      "Spirometry numbers you must never forget: obstruction = FEV1/FVC < 70%. Significant reversibility = increase > 12% AND > 200 mL in FEV1 or FVC after a short-acting beta-2 agonist; a large improvement (> 400 mL) plus PEF variability over time points to ASTHMA.",
+      "CT pulmonary angiography (CTPA) is the investigation of choice for pulmonary thromboembolism; HRCT (thin-section) is the tool for diffuse parenchymal lung disease and bronchiectasis."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L3_c1",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Aim, Role and Highlights of Respiratory Investigations",
+      "summary_ar": "الهدف والدور العام للتحقيقات وخطوات المقاربة المنهجية من التاريخ والفحص حتى التشخيص التفريقي.",
+      "sections": [
+        {
+          "heading": "Aim, Role and Learning Objectives",
+          "body_text": "The lecture opens by defining the aim and role of investigations: they should **direct us, or direct the investigation pathway itself** — the right test at the right time, not a blind battery. The learning objectives are: (1) the **aim and role of investigations in complex diseases**; (2) the **importance of investigations in diagnosing and follow-up**; (3) the **advantages and disadvantages of each test**; (4) **analysis of investigations** (interpretation, not just ordering); (5) **how to choose among them and apply knowledge to daily practice**; and (6) a **summary of the most important points**. The golden rule of the whole lecture: investigations must always be **sent according to history and physical examination**, stepping up carefully and not rushing — a planned, hierarchical approach rather than indiscriminate testing.",
+          "key_points": [
+            "Investigations direct the clinician OR direct the next investigation step",
+            "Role: diagnosis AND follow-up of disease",
+            "Know advantages/disadvantages of each test and how to analyze results",
+            "Always send investigations according to history and physical examination — don't rush"
+          ]
+        },
+        {
+          "heading": "Highlights: The Complete Investigation Menu",
+          "body_text": "The lecture highlights the standard menu of respiratory investigations, applied in a logical order: **(1) Detailed history** — e.g., pneumonia, asthma, COPD, heart failure, pulmonary embolism; **(2) Thorough examination** — general and cardiorespiratory; **(3) Haematological tests** — CBC; **(4) Biochemical tests** — CRP, ESR; **(5) Radiology (imaging)**; **(6) Pulmonary function tests (PFT)**; **(7) Microbiological investigations**; **(8) Endoscopic examination**; leading finally to a **likely diagnosis and differential diagnosis**. The lecture's organizing diagram (page 39) divides the pathway by clinical context: **infectious presentations** (pneumonia, infective exacerbation of airway disease) require **imaging, hematological and biochemical, endoscopic and microbiological** tests, whereas **non-infectious presentations** (obstructive, restrictive) require **imaging and pulmonary function tests**.",
+          "key_points": [
+            "Menu: history → exam → CBC → CRP/ESR → imaging → PFT → microbiology → endoscopy",
+            "Infectious context: imaging + hematological/biochemical + endoscopic/microbiological",
+            "Non-infectious context (obstructive/restrictive): imaging + pulmonary function tests",
+            "Always end with a likely diagnosis and a differential"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "PFT",
+          "definition_ar": "اختبارات وظائف الرئة: سبيرومترية وحجامات رئوية وقياس تبادل الغازات لتصنيف الأمراض انسدادية/تقييدية."
+        },
+        {
+          "term": "CTPA",
+          "definition_ar": "تصوير مقطعي للأوعية الرئوية بالصبغة؛ التحقيق الاختياري لتشخيص الصمة الرئوية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L3_c2",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Chest X-Ray: Views, Pros and Cons, and How to Interpret",
+      "summary_ar": "أشعة الصدر: PA مقابل AP، القيمة الجانبية، المزايا والعيوب، النقاط العملية، وخريطة قراءة الصورة الطبيعية.",
+      "sections": [
+        {
+          "heading": "Plain CXR: PA and Lateral Views",
+          "body_text": "The chest X-ray is **one of the initial investigations performed in the majority of patients suspected of having respiratory disease**. The **posteroanterior (PA) view is the most used**: the X-ray beam enters from the back and exits to the front, the patient stands erect facing the film, and the heart — being close to the film — is shown at its true size. A **lateral CXR may provide additional information, particularly if pathology is suspected behind the heart or deep in the diaphragmatic sulci** (posterior-basal disease). In contrast, the **AP view** is taken with the patient supine (often in bed-bound or ICU patients): the beam enters from the front, the heart is far from the film, and the heart shadow is **magnified — a false appearance of cardiomegaly** is a classic pitfall. From the comparison slide: the AP film shows a magnified heart, more horizontal clavicles projected higher, scapulae overlapping the lung fields, and overall less sharpness.",
+          "key_points": [
+            "CXR = initial investigation for most suspected respiratory disease",
+            "PA (erect, beam back-to-front): standard; heart size accurate",
+            "Lateral view: adds info behind the heart and in diaphragmatic sulci",
+            "AP (supine, beam front-to-back): heart MAGNIFIED → false cardiomegaly; less sharp"
+          ],
+          "check": {
+            "prompt": "An ICU patient's AP supine film appears to show an enlarged heart. What is the correct interpretation?",
+            "options": [
+              "Confirm cardiomegaly and order echo",
+              "The AP view magnifies the heart — confirm on a PA erect film if possible",
+              "Start diuretics immediately",
+              "Order cardiac MRI"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "صورة AP تُكبّر ظل القلب لأنه بعيد عن الفيلم؛ لا تُشخص تضخم القلب إلا على صورة PA وقوفاً. هذا فخ امتحاني متكرر."
+          }
+        },
+        {
+          "heading": "CXR Advantages and Disadvantages",
+          "body_text": "**Advantages**: the CXR is **more accessible, cheaper and easier to interpret than a CT scan** — which is why it remains the first-line imaging test worldwide. **Disadvantages**: the **AP view is less accurate than the PA view** (magnification, poorer inspiration quality, supine positioning), and the **PA view is less accurate than CT scan** — for example, early **lung fibrosis** can be invisible on a plain film, and up to 15–30% of radiographically occult consolidations are missed. Therefore a normal CXR does not exclude significant disease when the clinical suspicion is high, and stepping up to CT is warranted.",
+          "key_points": [
+            "Advantages: accessible, cheap, easy interpretation",
+            "AP less accurate than PA; PA less accurate than CT (e.g., lung fibrosis)",
+            "A normal CXR does NOT exclude disease if clinical suspicion is high"
+          ]
+        },
+        {
+          "heading": "Practical Points from the Lecture Films",
+          "body_text": "The lecture demonstrates two practical points with paired PA and lateral films. **Practical point 1**: a radio-opaque foreign body seen on the frontal view over the right lower mediastinum was localized, using the lateral film, to the **anterior** half of the chest — two orthogonal views are required to localize any finding in three dimensions. **Practical point 2**: two foreign bodies — one coin-like object in the midline at the cervicothoracic junction (esophagus) and one rectangular object projected peripherally — the lateral view showed the second object lying in the **anterior chest wall/subcutaneous tissues**, proving it was OUTSIDE the chest cavity. Lesson: **the lateral view is essential to determine whether a finding is inside the chest (intrapulmonary/mediastinal) or outside (chest wall/subcutaneous)**, and whether an ingested coin is in the esophagus (midline, circular/airway 'triple sign') or trachea. The slide series also included an example of left lower lobe consolidation confirmed on the lateral view (posterior-inferior opacity) and an example of a left-sided pleural effusion with blunted costophrenic angle and meniscus.",
+          "key_points": [
+            "Always compare PA with lateral to localize a lesion in 3 dimensions",
+            "Lateral view distinguishes intrathoracic from chest-wall/subcutaneous lesions",
+            "Midline coin at thoracic inlet: think esophagus (versus trachea)",
+            "Example findings shown: left lower lobe consolidation, left pleural effusion with meniscus"
+          ]
+        },
+        {
+          "heading": "How to Interpret a Chest X-Ray: Normal Landmarks (Lecture Diagram)",
+          "body_text": "The lecture devotes a full diagram to the normal PA chest X-ray landmarks. **Bony thorax and soft tissues**: clavicles, scapulae, spinous processes, anterior ribs (angled downwards) and posterior ribs (more horizontal and easier to count). **Mediastinum and airways**: trachea (midline air column), **carina** (tracheal bifurcation, indicated by an upward arrow), **aortic knob** (aortic arch contour) and the **para-aortic line**. **Cardiac silhouette**: the right heart border is formed by the right atrium (RA), the left border by the left ventricle (LV), with RV anterior and LA posterior. **Hila**: the right hilum sits slightly LOWER than the left, which is slightly higher — reversal of this relationship suggests volume loss or elevation. **Diaphragm and subdiaphragmatic regions**: the right hemidiaphragm is typically higher than the left (liver); the gastric bubble lies beneath the left hemidiaphragm. **Angles**: the cardiophrenic angle medially and the sharp, acute **costophrenic angles** laterally — blunting indicates pleural fluid or thickening.",
+          "key_points": [
+            "Bony landmarks: clavicles, scapulae, anterior ribs (angled), posterior ribs (horizontal, countable)",
+            "Trachea midline; carina = bifurcation; aortic knob and para-aortic line",
+            "Right heart border = RA; left heart border = LV",
+            "RIGHT hilum is LOWER than the left (left slightly higher)",
+            "Right hemidiaphragm higher (liver); gastric bubble under left",
+            "Costophrenic angles sharp and acute; blunting = effusion/thickening"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "PA view",
+          "definition_ar": "صورة خلفية أمامية وقوفاً؛ المعيار لتقييم حجم القلب وأمراض الصدر."
+        },
+        {
+          "term": "Silhouette sign",
+          "definition_ar": "علامة الظل: فقدان حدّ عضو ملاصق لانسداد سنخي ملاصق له (مثل حدود القلب في التهاب الفص الأوسط)."
+        },
+        {
+          "term": "Meniscus sign",
+          "definition_ar": "علامة الهلال: سطح سائل منحنٍ في الانصباب الجنبي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L3_c3",
+      "lecture_id": "L3_resp_investigations",
+      "title": "CT, PET-CT, MRI and Ultrasound of the Chest",
+      "summary_ar": "التصوير المقطعي بنوافذه وأقسامه وHRCT وCTPA، تصوير PET-CT للتنشؤات، محدودية MRI، ودور السونار عند السرير.",
+      "sections": [
+        {
+          "heading": "Computed Tomography (CT): Principle and Windows",
+          "body_text": "CT provides **detailed images of the pulmonary parenchyma, mediastinum, pleura and bony structures**, with a wide **range of densities** (lung parenchyma, mediastinal/vascular structures, or bone) and **sections** in multiple planes: **cross-sectional (axial)**, **craniocaudal distribution AP (coronal)** and **craniocaudal distribution transverse (sagittal)**. The lecture illustrates the three axial **windows**: the **lung window** (axial) shows pulmonary vessels as branching white structures against dark air-filled lung, with mediastinal structures overexposed; the **mediastinal window** (axial) shows the heart chambers and great vessels (aorta, pulmonary artery, SVC) in clear detail while lung parenchyma appears uniformly black; and the **bone window** sharply defines vertebrae, ribs, sternum and clavicles with cortical bone bright white. Coronal and sagittal lung-window reconstructions display both lungs apex-to-base, the trachea and main bronchi, and the diaphragm. Summary of the lecture: **lung and mediastinal windows (axial section) are the most useful**.",
+          "key_points": [
+            "CT: detailed parenchyma, mediastinum, pleura, bone; axial, coronal and sagittal planes",
+            "Lung window: parenchyma and vessels; mediastinal window: heart, great vessels, nodes; bone window: skeleton",
+            "Lung and mediastinal (axial) windows are the most useful in practice"
+          ]
+        },
+        {
+          "heading": "Special CT Techniques: HRCT and CTPA",
+          "body_text": "**High-resolution thin-section CT (HRCT)** is used for **diffuse parenchymal lung disease**, identifying **airway thickening and bronchiectasis**. **CT pulmonary angiography (CTPA) has become the investigation of choice in the diagnosis of pulmonary thromboembolism** — contrast opacifies the pulmonary arterial tree and filling defects represent clot. CT is also used for **staging of malignant disease**. **Disadvantages of CT scan**: **(1) more radiation** (a chest CT delivers a far higher dose than a CXR), **(2) more expensive**, and **(3) less accessible** — hence the CXR remains the entry test, with CT as the second-line problem-solver. The lecture's 'practical point — COVID-19 era' slide highlights the context of using imaging wisely during pandemics (differentiating COVID pneumonitis from other pathology and from vaccination-related lymphadenopathy on PET-CT).",
+          "key_points": [
+            "HRCT (thin-section): diffuse parenchymal lung disease, airway thickening, bronchiectasis",
+            "CTPA = investigation of choice for pulmonary thromboembolism",
+            "CT for staging malignancy",
+            "CT disadvantages: more radiation, more expensive, less accessible"
+          ]
+        },
+        {
+          "heading": "Positron Emission Tomography (PET) and PET-CT",
+          "body_text": "**PET scanners employ the radiotracer 18F-fluorodeoxyglucose (FDG) to quantify the rate of glucose metabolism by cells** — rapidly metabolizing malignant cells take up FDG avidly. **Co-registration of PET and CT (PET-CT) enhances localization and characterization of metabolically active deposits.** **FDG-PET is useful in the staging of mediastinal lymph nodes and distal metastatic disease in patients with lung cancer, and in the investigation of pulmonary nodules.** The lecture's example images show: (A) a limited-stage study with focal uptake in the left hemithorax and right axillary node; (B) the same patient later with **widespread uptake in the liver and skeleton (vertebrae, ribs, pelvis, proximal femurs) consistent with extensive hepatic and osseous metastases — disease progression/upstaging**; and a fused PET-CT image precisely localizing hypermetabolic nodules within the lung anatomy. Remember the physiologic uptake sites (brain, urinary bladder) so they are not mistaken for disease.",
+          "key_points": [
+            "PET: 18F-FDG quantifies glucose metabolism (metabolically active = FDG-avid)",
+            "PET-CT fusion = metabolic + anatomic localization",
+            "Uses: staging mediastinal nodes and distant metastases in lung cancer; evaluation of pulmonary nodules",
+            "Physiologic uptake: brain and bladder (do not call metastases)"
+          ]
+        },
+        {
+          "heading": "MRI and Ultrasound",
+          "body_text": "**Magnetic resonance imaging (MRI) of the chest is seldom useful** — its **enemy is air** (poor signal from air-filled lung). Its roles are limited to **distinguishing benign from malignant pleural disease** and **delineating invasion of the chest wall or diaphragm by tumor**. **Ultrasound (transthoracic) is a point-of-care investigation** used to: **assess the pleural space** — differentiating **pleural fluid from pleural thickening**, detecting **pneumothorax** (absence of lung sliding), and **directly visualizing the diaphragm**; and to **guide pleural aspiration, biopsy, and intercostal chest drain insertion**. **Advantages: no radiation, easily accessible, cost-effective. Disadvantage: accuracy is operator-dependent.**",
+          "key_points": [
+            "MRI seldom useful; 'enemy is air'; roles: pleural disease characterization, chest wall/diaphragm invasion",
+            "US: point-of-care; pleural fluid vs thickening, pneumothorax, diaphragm; guides aspiration/biopsy/drain",
+            "US advantages: no radiation, accessible, cheap; disadvantage: operator-dependent"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "HRCT",
+          "definition_ar": "مقطعية عالية الدقة بشرائح رقيقة؛ أفضل فحص لأمراض النسيج الخلالي وتوسع القصبات."
+        },
+        {
+          "term": "FDG",
+          "definition_ar": "فلورو ديوكسي غلوكوز المشع؛ مبين استقلاب الغلوكوز في خلايا الأورام."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L3_c4",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Microbiological Investigations and Endoscopic Examination",
+      "summary_ar": "التحقيقات الميكروبيولوجية (قشع، سوائل، مسحات، دم، غسيل قصبي) والفحوص التنظيرية (حنجرة، قصبات، EBUS، صدري).",
+      "sections": [
+        {
+          "heading": "Microbiological Investigations",
+          "body_text": "**Sputum, pleural fluid, throat swabs, blood, and bronchial washings and aspirates can be examined for bacteria, fungi and viruses.** The use of **hypertonic saline to induce expectoration of sputum may obviate the need for more invasive procedures such as bronchoscopy** (induced sputum — classically for Pneumocystis in immunocompromised patients and for TB microscopy when no spontaneous sputum is produced). **Disadvantage: microbiological tests are not always highly sensitive nor specific** — negative results do not exclude infection, and contaminants can mislead. The lecture summary adds that **microbiological investigations have different sensitivity according to immune status, organ and pathogen** — the same test performs differently in neutropenic patients, in the lung versus sinuses, and for TB versus Legionella, for example (hence the need for paired serology, antigen tests and molecular PCR depending on context).",
+          "key_points": [
+            "Samples: sputum, pleural fluid, throat swabs, blood, bronchial washings/aspirates — for bacteria, fungi, viruses",
+            "Hypertonic saline-induced sputum can avoid bronchoscopy (e.g., Pneumocystis, TB)",
+            "Not always sensitive or specific",
+            "Sensitivity varies with immune status, organ involved and pathogen"
+          ]
+        },
+        {
+          "heading": "Endoscopic Examination of the Respiratory Tract",
+          "body_text": "Four endoscopic modalities are listed: **(1) Laryngoscopy** — direct or indirect visualization of the larynx and vocal cords (stridor, hoarseness, vocal cord palsy). **(2) Bronchoscopy** — flexible (diagnostic: central lesions, sampling by washings, brushings, biopsy, BAL, transbronchial biopsy) or rigid (therapeutic: massive hemoptysis, foreign body removal, stent placement). **(3) Endobronchial ultrasound (EBUS)** — ultrasound-guided needle aspiration of mediastinal/hilar lymph nodes through the bronchoscope, the standard for lung cancer nodal staging and sampling sarcoid-type adenopathy. **(4) Thoracoscopy** (medical or VATS) — direct inspection of the pleural space with targeted pleural biopsy, superior yield for pleural malignancy and exudative effusions. These tests sit at the top of the investigative ladder — reserved for when imaging and physiology have localized the problem.",
+          "key_points": [
+            "Laryngoscopy: vocal cords and larynx",
+            "Bronchoscopy: flexible = diagnostic sampling; rigid = foreign body, bleeding, stents",
+            "EBUS: mediastinal/hilar nodal staging (lung cancer, sarcoidosis)",
+            "Thoracoscopy/VATS: pleural inspection and targeted pleural biopsy"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Induced sputum",
+          "definition_ar": "قشع مُحدَث باستنشاق محلول ملحي مفرط التوتر؛ بديل أقل اجتياحاً للتنظير القصبي."
+        },
+        {
+          "term": "EBUS",
+          "definition_ar": "تنظير القصبات بالموجات فوق الصوتية؛ لسحب العقد اللمفية المنصفية ب دقة عالية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L3_c5",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Respiratory Function Testing: Spirometry, Volumes and Peak Flow",
+      "summary_ar": "اختبارات وظائف الرئة: السبيرومترية وقيمها، الانسدادي مقابل التقييدي، قابلية العكس، وحجم التنفس الأقصى وذروة التدفق.",
+      "sections": [
+        {
+          "heading": "Indications for Respiratory Function Testing",
+          "body_text": "Respiratory function testing serves three purposes: **(1) Diagnosis** — of **obstructive airways disease and diffuse parenchymal (restrictive) disease**; **(2) Quantification of functional impairment** — how severe is the physiological defect; and **(3) Monitoring of treatment or progression of disease** over time. Results are always **compared with normal values adjusted for age, gender, height and ethnic origin**. The three components of testing are: **(1) Spirometry** (obstruction vs restriction), **(2) Lung volumes**, and **(3) Gas exchange capacity** (diffusing capacity/transfer factor). Remember the lecture summary: **pulmonary function tests are for obstructive and restrictive diseases, NOT for infection** — an infected lung is evaluated by imaging and microbiology, not by spirometry.",
+          "key_points": [
+            "PFT purposes: diagnosis (obstructive vs restrictive), quantify impairment, monitor treatment/progression",
+            "Compared to predicted values adjusted for age, gender, height, ethnic origin",
+            "Components: spirometry, lung volumes, gas exchange capacity",
+            "PFT is NOT for infection — imaging and microbiology serve that context"
+          ]
+        },
+        {
+          "heading": "Spirometry: FEV1, FVC and Reversibility",
+          "body_text": "**The forced expired volume in 1 second (FEV1) is the volume exhaled in the first second of a forced maneuver (first second of FVC); the forced vital capacity (FVC) is the total volume exhaled. Airflow obstruction is defined as an FEV1/FVC ratio of less than 70%.** When obstruction is found, **spirometry should be repeated following inhaled short-acting beta-2-adrenoceptor agonists (e.g., salbutamol): an increase of more than 12% AND more than 200 mL in FEV1 or FVC indicates significant reversibility.** **A large improvement in FEV1 (more than 400 mL) and variability in peak flow over time are features of asthma.** The lecture's case example (62-year-old man, 167 cm): pre-bronchodilator FEV1 1.76 L (62% predicted) with FEV1/FVC 68% → moderate obstruction; post-bronchodilator FEV1 2.62 L with **48.9% increase (+860 mL)** → significant bronchodilatation, consistent with asthma ('reversibility 48%!').",
+          "key_points": [
+            "FEV1 = volume in first second; FVC = total exhaled volume",
+            "Obstruction: FEV1/FVC < 70%",
+            "Reversibility: > 12% AND > 200 mL rise in FEV1 or FVC after salbutamol",
+            "FEV1 improvement > 400 mL + PEF variability over time = asthma",
+            "Worked example: 48.9% (860 mL) reversibility after bronchodilator = asthma"
+          ],
+          "check": {
+            "prompt": "Pre-bronchodilator FEV1/FVC is 65%; after salbutamol FEV1 rises by 14% and 250 mL. What does this mean?",
+            "options": [
+              "Normal spirometry",
+              "Obstructive defect with significant reversibility (asthma pattern)",
+              "Restrictive defect",
+              "Fixed obstruction (COPD pattern)"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النسبة <70% تعني انسداداً، والتحسن >12% و >200 مل يعني انعكاسية كبيرة تدعم تشخيص الربو. الانسداد الثابت (COPD) لا يظهر هذه الدرجة من العكسية."
+          }
+        },
+        {
+          "heading": "Obstructive versus Restrictive Patterns",
+          "body_text": "**Obstructive pattern** (increased bronchospasm, mainly during expiration): **decreased FEV1, increased TLC with normal FVC — so the FEV1/FVC ratio is LOW, below 70%** (air trapping and hyperinflation raise total lung capacity). **Restrictive pattern**: **decreased lung volume — decreased TLC and decreased FVC with normal or only mildly decreased FEV1 — so the FEV1/FVC ratio is HIGH or normal (≥ 70%)**. The lung volumes diagram from the lecture defines: **TV (tidal volume) ~500 mL; IRV (inspiratory reserve) ~3000 mL; ERV (expiratory reserve) ~1100 mL; RV (residual volume) ~1200 mL**; capacities: **IC = TV + IRV; VC = IRV + TV + ERV; FRC = ERV + RV; TLC = all four volumes**. Remember that spirometry alone cannot measure RV, FRC or TLC (they contain RV) — hence **lung volume measurement (body plethysmography/helium dilution) is needed to confirm restriction by a reduced TLC**.",
+          "key_points": [
+            "Obstructive: ↓FEV1, ↑TLC (air trapping), FVC normal → FEV1/FVC < 70%",
+            "Restrictive: ↓TLC, ↓FVC, FEV1 normal/mildly ↓ → FEV1/FVC ≥ 70%",
+            "Volumes: TV ~500, IRV ~3000, ERV ~1100, RV ~1200 mL",
+            "Capacities: IC = TV+IRV; VC = IRV+TV+ERV; FRC = ERV+RV; TLC = sum of all",
+            "TLC/RV cannot be measured by spirometry alone — need body plethysmography"
+          ]
+        },
+        {
+          "heading": "Peak Flow Meter and Flow-Volume Loops",
+          "body_text": "The **peak flow meter** is a handheld device measuring the **peak expiratory flow rate (PEFR)** on a scale of roughly **50–700 L/min** (lecture device scale). The lecture summary: **peak flow meter is used in emergency and follow-up situations** — e.g., serial monitoring in acute asthma and home diaries to detect diurnal variation. The flow-volume loop panel from the lecture: a **normal loop** is a tall rounded 'kite' with high peak flow; an **obstructive loop** shows a **concave (scooped) expiratory limb** with reduced peak flow and preserved/wide volume (hyperinflation); a **restrictive loop** is a **narrow 'miniature' loop** — small volumes with relatively preserved flows. A **barrel chest** photograph (increased AP diameter, kyphosis, hyperinflated lateral chest X-ray) accompanied the lung volumes slide as the clinical correlate of chronic air trapping.",
+          "key_points": [
+            "Peak flow meter: PEFR, scale ~50–700 L/min; used in emergency and follow-up",
+            "Normal loop: tall kite; obstructive: concave expiratory limb; restrictive: narrow miniature loop",
+            "Barrel chest = hyperinflation correlate (increased AP diameter)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "FEV1",
+          "definition_ar": "الحجم الزفيري القسري في الثانية الأولى؛ مقياس شدة الانسداد."
+        },
+        {
+          "term": "FVC",
+          "definition_ar": "السعة الحيوية القسرية: إجمالي الحجم المزفور قسرياً."
+        },
+        {
+          "term": "RV",
+          "definition_ar": "الحجم المتبقي بعد الزفير الأقصى (~1200 مل)؛ لا يقاس بالسبيرومترية وحدها."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L3_c6",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Summary: How to Choose and Apply Investigations",
+      "summary_ar": "خلاصة اختيار التحقيقات حسب السياق السريري والقواعد العملية العشر للمحاضرة.",
+      "sections": [
+        {
+          "heading": "The Lecture Summary Rules",
+          "body_text": "The lecture closes with a set of summary rules that are themselves examinable: **(1) Always send investigations according to history and physical examination. (2) Stepping up carefully — don't rush. (3) The posteroanterior (PA) CXR is the first and most widely used imaging modality, while the lateral CXR may provide additional information. (4) CT pulmonary angiography is superior to other modalities of imaging (for PE). (5) Lung and mediastinal windows (axial section) are the most useful CT windows. (6) Microbiological investigations have different sensitivity according to immune status, organ and pathogen. (7) Pulmonary function tests are for obstructive and restrictive diseases, not for infection. (8) Peak flow meter is used in emergency and follow-up situations.** Applied together, these rules convert a scattered list of tests into a decision pathway: history and exam → CXR (PA ± lateral) → branch by context (infectious: microbiology ± CT; non-infectious: PFT ± HRCT/CTPA) → endoscopy for tissue/sampling when needed.",
+          "key_points": [
+            "Investigations follow history and examination; step up carefully, don't rush",
+            "PA CXR = first and most widely used imaging; lateral adds information",
+            "CTPA superior for PE; axial lung + mediastinal windows most useful",
+            "Microbiology sensitivity varies with immunity, organ, pathogen",
+            "PFT for obstructive/restrictive, NOT infection; peak flow for emergency and follow-up"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L3_f1",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c1",
+      "card_type": "basic",
+      "front_text": "What are the learning objectives / menu of respiratory investigations?",
+      "back_text": "Detailed history (pneumonia, asthma, COPD, HF, PE); thorough examination; haematological tests (CBC); biochemical tests (CRP, ESR); radiology (imaging); pulmonary function tests; microbiological investigations; endoscopic examination — ending with a likely diagnosis and differential.",
+      "explanation_ar": "الترتيب: تاريخ وفحص ثم مخبر ثم صورة ثم وظائف ثم ميكروبيولوجيا ثم تنظير.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L3_f2",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "Which CXR view is standard, when is lateral used, and when AP is needed?",
+      "back_text": "PA (posteroanterior, erect) is the standard/most used — accurate heart size. Lateral CXR adds information, particularly for pathology behind the heart or deep in the diaphragmatic sulci. AP is reserved for patients who cannot stand (bedside/ICU) — it magnifies the heart (false cardiomegaly).",
+      "explanation_ar": "PA للوقوف، AP للملازم للفراش (مع تضخم وهمي للقلب).",
+      "is_vivid": false,
+      "tags": [
+        "imaging",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L3_f3",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "Advantages and disadvantages of plain CXR.",
+      "back_text": "Advantages: more accessible, cheaper and easier to interpret than CT. Disadvantages: AP view less accurate than PA; PA view less accurate than CT (e.g., early lung fibrosis can be missed); a normal CXR does not exclude disease with high clinical suspicion.",
+      "explanation_ar": "رخيصة وسهلة لكن أقل حساسية من المقطعية.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L3_f4",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c2",
+      "card_type": "basic",
+      "front_text": "Name the key normal PA CXR landmarks (hila, diaphragm, heart borders, angles).",
+      "back_text": "Trachea midline; carina = bifurcation; aortic knob and para-aortic line. Right heart border = right atrium; left border = left ventricle. Right hilum slightly LOWER than left. Right hemidiaphragm higher than left (liver); gastric bubble under left. Sharp costophrenic angles; cardiophrenic angle medially.",
+      "explanation_ar": "السرة اليمنى أخفض؛ الحجاب الأيمن أعلى؛ الزاوية الضلعية الحجابية حادة.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L3_f5",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "What are the CT windows and their uses?",
+      "back_text": "Lung window (axial): pulmonary parenchyma and vessels. Mediastinal window (axial): heart chambers, great vessels, lymph nodes. Bone window: vertebrae, ribs, sternum, clavicles. Reconstructions: coronal (frontal, apex-to-base) and sagittal (lateral). Lung and mediastinal axial windows are the most useful.",
+      "explanation_ar": "نافذة رئوية للنسيج، وسطية للقلب والعقد، عظمية للهيكل.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L3_f6",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "What is HRCT and what is CTPA used for?",
+      "back_text": "HRCT = high-resolution thin-section CT for diffuse parenchymal lung disease, identifying airway thickening and bronchiectasis. CTPA = CT pulmonary angiography — the investigation of choice for pulmonary thromboembolism. CT disadvantages: more radiation, more expensive, less accessible.",
+      "explanation_ar": "HRCT للخلالي؛ CTPA للصمة الرئوية.",
+      "is_vivid": false,
+      "tags": [
+        "imaging",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L3_f7",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "How does PET-CT work and when is it used?",
+      "back_text": "PET employs the radiotracer 18F-FDG to quantify glucose metabolism by cells; co-registered PET-CT enhances localization and characterization of metabolically active deposits. FDG-PET is useful in staging mediastinal lymph nodes and distal metastatic disease in lung cancer and in investigating pulmonary nodules. Physiologic uptake occurs in brain and bladder.",
+      "explanation_ar": "FDG يقيس استقلاب الغلوكوز؛ للتنشئ (staging) وتقييم العقيدات.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L3_f8",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "card_type": "basic",
+      "front_text": "When is chest MRI useful and what are ultrasound's roles?",
+      "back_text": "MRI is seldom useful (air is its enemy); used for distinguishing benign from malignant pleural disease and delineating chest wall or diaphragm invasion by tumor. Ultrasound (point-of-care): assesses pleural space (fluid vs thickening, pneumothorax), visualizes the diaphragm, and guides pleural aspiration, biopsy and chest drain. Advantages: no radiation, accessible, cheap; disadvantage: operator-dependent.",
+      "explanation_ar": "MRI عدوها الهواء؛ السونار عند السرير بلا إشعاع.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L3_f9",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "What samples are examined in respiratory microbiology and what limits the tests?",
+      "back_text": "Sputum, pleural fluid, throat swabs, blood, bronchial washings and aspirates — examined for bacteria, fungi and viruses. Hypertonic saline-induced sputum may obviate bronchoscopy. Disadvantages: not always highly sensitive nor specific; sensitivity varies with immune status, organ and pathogen.",
+      "explanation_ar": "القشع المُحدَث يغني عن التنظير أحياناً.",
+      "is_vivid": false,
+      "tags": [
+        "microbiology"
+      ]
+    },
+    {
+      "id": "L3_f10",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c4",
+      "card_type": "basic",
+      "front_text": "List the four endoscopic examinations of the respiratory tract.",
+      "back_text": "1) Laryngoscopy; 2) Bronchoscopy (flexible = diagnostic; rigid = foreign body/hemoptysis/stents); 3) Endobronchial ultrasound (EBUS) — mediastinal and hilar node sampling for lung cancer staging; 4) Thoracoscopy — pleural inspection and targeted pleural biopsy.",
+      "explanation_ar": "حنجرة، قصبات، EBUS، تنظير صدري.",
+      "is_vivid": false,
+      "tags": [
+        "endoscopy"
+      ]
+    },
+    {
+      "id": "L3_f11",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "What are the three purposes and three components of respiratory function testing?",
+      "back_text": "Purposes: diagnosis (obstructive airways disease and diffuse parenchymal disease), quantifying functional impairment, and monitoring treatment or progression. Components: spirometry (obstruction, restriction), lung volumes, and gas exchange capacity. Results compared with predicted values adjusted for age, gender, height and ethnic origin.",
+      "explanation_ar": "تشخيص + تكميم + مراقبة.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L3_f12",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "Define FEV1, FVC, obstruction, and significant reversibility.",
+      "back_text": "FEV1 = volume exhaled in the first second of FVC; FVC = total volume exhaled. Airflow obstruction = FEV1/FVC < 70%. Significant reversibility = increase > 12% AND > 200 mL in FEV1 or FVC after inhaled short-acting beta-2 agonist (e.g., salbutamol). A large FEV1 improvement (> 400 mL) plus PEF variability over time are features of asthma.",
+      "mnemonic_ar": "12 و 200 و 400 — ثلاثية السبيرومترية الذهبية.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L3_f13",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "Contrast obstructive vs restrictive spirometry and lung volumes.",
+      "back_text": "Obstructive: bronchospasm mainly during expiration → decreased FEV1, increased TLC with normal FVC → FEV1/FVC < 70%. Restrictive: decreased lung volume → decreased TLC, decreased FVC with normal or mildly decreased FEV1 → FEV1/FVC high or normal (≥ 70%).",
+      "explanation_ar": "انسدادي: نسبة منخفضة وتضخم TLC؛ تقييدي: كل شيء صغير والنسبة طبيعية/عالية.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L3_f14",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "Give the normal lung volumes and the capacity equations.",
+      "back_text": "TV ~500 mL, IRV ~3000 mL, ERV ~1100 mL, RV ~1200 mL. IC = TV + IRV; VC = IRV + TV + ERV; FRC = ERV + RV; TLC = IRV + TV + ERV + RV. RV, FRC and TLC cannot be measured by spirometry alone.",
+      "explanation_ar": "معادلات السعات: IC=TV+IRV، VC=IRV+TV+ERV، FRC=ERV+RV، TLC=الكل.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L3_f15",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "card_type": "basic",
+      "front_text": "What is the peak flow meter and when is it used?",
+      "back_text": "A handheld device measuring peak expiratory flow rate (PEFR), scale roughly 50–700 L/min. Used in emergency situations (e.g., assessing severity of acute asthma: PEF 33–50% = acute severe; <33% = life-threatening) and in follow-up (home diaries detecting diurnal variability >20% of asthma).",
+      "explanation_ar": "ذروة التدفق: للطوارئ والمتابعة المنزلية.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L3_f16",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c6",
+      "card_type": "basic",
+      "front_text": "Summarize the lecture's rules for choosing investigations.",
+      "back_text": "1) Always send investigations according to history and physical examination. 2) Stepping up carefully — don't rush. 3) PA CXR is the first and most widely used imaging; lateral adds information. 4) CTPA is superior to other imaging (for PE). 5) Lung and mediastinal (axial) windows are the most useful. 6) Microbiology sensitivity varies by immune status, organ, pathogen. 7) PFTs are for obstructive and restrictive diseases, NOT infection. 8) Peak flow meter for emergency and follow-up.",
+      "explanation_ar": "ثماني قواعد ختامية تختصر المحاضرة.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L3_q1",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c2",
+      "question_stem": "A 70-year-old immobilized stroke patient has a bedside AP supine chest X-ray that appears to show cardiomegaly. What is the most appropriate interpretation?",
+      "options": [
+        "The patient has definite cardiomegaly; order an echocardiogram",
+        "The heart shadow is magnified on the AP view; if clinically important, confirm with a PA erect film",
+        "The patient needs an urgent CT chest",
+        "The X-ray machine needs recalibration"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "صورة AP بالاستلقاء تُبعد القلب عن الفيلم فتُكبّر ظله وتوحي زوراً بتضخم القلب. القاعدة: تقييم حجم القلب يكون على صورة PA وقوفاً. لا يعني ذلك إنكار الاحتقان إن وُجدت علاماته السريرية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي منظر يُبعد القلب عن الفيلم؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L3_q2",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c2",
+      "question_stem": "A radiopaque shadow is seen on the frontal chest film but cannot be localized. Which view or principle resolves its location?",
+      "options": [
+        "Repeat the same PA film with deeper inspiration",
+        "A lateral chest X-ray — two orthogonal views localize a lesion in three dimensions",
+        "Ultrasound of the abdomen",
+        "ECG"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "المنظر الجانبي يحدد إن كان الظل أمامياً أم خلفياً، داخل التجويف أم في جدار الصدر تحت الجلد — كما أظهرت النقاط العملية في المحاضرة بتحديد جسمين غريبين أحدهما في جدار الصدر الأمامي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "كم منظراً نحتاج للتوضع ثلاثي الأبعاد؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L3_q3",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "question_stem": "A 45-year-old woman with acute pleuritic chest pain and hypoxia; D-dimer is elevated. What is the imaging investigation of choice?",
+      "options": [
+        "PA chest X-ray",
+        "CT pulmonary angiography (CTPA)",
+        "Ventilation-perfusion scan is always first",
+        "MRI chest",
+        "PET scan"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التصوير المقطعي للأوعية الرئوية بالتباين CTPA أصبح التحقيق الاختياري لتشخيص الصمة الرئوية (وفق نص المحاضرة). الأشعة العادية لا تشخص الصمة، والمقارنة النووية تُستخدم عند تعذر CTPA (حساسية كلوية أو حمل).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما التحقيق المثالي للصمة الرئوية وفق المحاضرة؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L3_q4",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "question_stem": "A 60-year-old man with a newly diagnosed lung cancer needs staging of mediastinal lymph nodes and assessment of a pulmonary nodule's metabolic activity. Which modality serves both?",
+      "options": [
+        "Plain chest X-ray",
+        "FDG-PET/CT",
+        "Transthoracic ultrasound",
+        "MRI chest",
+        "Lateral CXR"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تصوير PET-CT بالـ FDG يفيد في تنشئة العقد اللمفية المنصفية والانتقالات البعيدة وتقييم العقيدات الرئوية. دمج PET مع CT يضيف التوضع التشريحي الدقيق للترسبات النشطة استقلابياً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي فحص يقيس النشاط الاستقلابي ويحدد الموقع معاً؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L3_q5",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c3",
+      "question_stem": "Which statement about MRI and ultrasound of the chest is correct?",
+      "options": [
+        "MRI is the first-line test for lung parenchyma",
+        "MRI is seldom useful (air is its enemy) but helps evaluate pleural disease and tumor invasion of chest wall/diaphragm; ultrasound is operator-dependent but radiation-free and guides pleural procedures",
+        "Ultrasound cannot detect pneumothorax",
+        "MRI is cheaper than CXR"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "وفق المحاضرة: MRI نادراً ما يفيد لأن عدوه الهواء، ودوره محدود بتمييز المرض الجنبي الحميد من الخبيث وتوضيح غزو جدار الصدر أو الحجاب. أما السونار فهو فحص عند السرير بلا إشعاع يفرق السائل عن التثخن ويكشف الاسترواح ويرشد البزل، لكن دقته تعتمد على المشغّل.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما 'عدو' الرنين المغناطيسي في الصدر؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L3_q6",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "question_stem": "A 34-year-old atopic woman has episodic wheeze. Spirometry shows FEV1/FVC of 64%; after salbutamol, FEV1 increases by 15% and 320 mL. What is the interpretation?",
+      "options": [
+        "Restrictive defect",
+        "Obstructive defect with significant reversibility — compatible with asthma",
+        "Fixed obstructive defect (COPD)",
+        "Normal spirometry"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "النسبة 64% أقل من 70% = انسداد. تحسن FEV1 بمقدار 15% (>12%) و320 مل (>200 مل) = انعكاسية معتبرة تدعم الربو (ولو تجاوز التحسن 400 مل لكان أكثر تأكيداً مع تذبذب ذروة التدفق).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "طبّق عتبتي 12% و 200 مل"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L3_q7",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "question_stem": "Which pattern fits a restrictive lung disease on pulmonary function testing?",
+      "options": [
+        "Decreased FEV1, increased TLC, FEV1/FVC < 70%",
+        "Decreased TLC and FVC with normal or high FEV1/FVC (≥70%)",
+        "Increased TLC with increased FVC",
+        "Normal spirometry with decreased diffusion only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التقييد = نقص الحجوم: TLC منخفض (وهو ما يثبت التقييد) وFVC منخفض وFEV1 طبيعي أو منخفض قليلاً فترتفع النسبة أو تبقى طبيعية ≥70%. النمط الأول انسدادي (نسبة منخفضة مع تضخم TLC).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما المقياس الذي يعرّف التقييد فعلياً؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L3_q8",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c5",
+      "question_stem": "Which lung volumes or capacities CANNOT be measured by spirometry alone?",
+      "options": [
+        "TV and IRV",
+        "RV, FRC and TLC (they contain residual volume)",
+        "VC and IC",
+        "ERV only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الحجم المتبقي RV لا يُزفر فلا تقيسه السبيرومترية، وبالتالي لا تُقاس FRC=ERV+RV ولا TLC التي تتضمن RV؛ تحتاج طريقة إضافية مثل مطياف الجسم (body plethysmography) أو تخفيف الهيليوم.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي حجم لا يمكن إخراجه من الرئة إطلاقاً؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L3_q9",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c6",
+      "question_stem": "According to the lecture summary, pulmonary function tests are indicated for which category of disease?",
+      "options": [
+        "Infectious exacerbations only",
+        "Obstructive and restrictive diseases (not infection)",
+        "Pleural effusion workup",
+        "Hemoptysis of unknown origin"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "قاعدة المحاضرة الصريحة: اختبارات وظائف الرئة للأمراض الانسدادية والتقييدية وليست للعدوى؛ فالعدوى تُقيّم بالتصوير والميكروبيولوجيا.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "فكّر في وظيفة الاختبار لا في وجود المرض"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L3_q10",
+      "lecture_id": "L3_resp_investigations",
+      "concept_id": "L3_c4",
+      "question_stem": "An immunocompromised patient with suspected Pneumocystis pneumonia cannot expectorate sputum. Which less-invasive step may avoid bronchoscopy?",
+      "options": [
+        "Induced sputum with hypertonic saline",
+        "Immediate open lung biopsy",
+        "Repeat blood cultures only",
+        "Thoracoscopy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "استنشاق محلول ملحي مفرط التوتر يستحث القشع وقد يغني عن إجراءات أجدد اجتياحاً مثل التنظير القصبي — نص صريح من المحاضرة، والقشع المُحدَث مفحوص أيضاً لعصيات المتفطرات عند غياب القشع التلقائي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما الطريقة غير الاجتياحية لتحصيل القشع؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L3_case1",
+      "lecture_id": "L3_resp_investigations",
+      "title": "Interpreting the Pulmonary Function Laboratory — Obstruction or Restriction?",
+      "scenario": "A 52-year-old man is referred to the pulmonary function laboratory with a 6-month history of progressive exertional breathlessness and a nagging dry cough. His GP could not decide whether this was airways disease or interstitial disease and has requested spirometry with reversibility testing plus lung volumes. This case tests the student's ability to read a PFT report, apply the 70% rule, interpret reversibility thresholds, and decide the next investigation.",
+      "vignette": {
+        "age": 52,
+        "sex": "male",
+        "chief_complaint": "Progressive exertional breathlessness for 6 months with dry cough",
+        "history": "Non-smoker, works in a grain warehouse for 20 years. No wheeze, no atopy, no nocturnal symptoms. No reflux. No pets at home, but significant exposure to moldy grain dust. No ankle swelling or orthopnea. Not on any medications (notably no ACE inhibitor).",
+        "vitals": {
+          "bp": "124/78 mmHg",
+          "hr": "82 beats/min",
+          "rr": "18 breaths/min",
+          "temp": "36.8 C",
+          "spo2": "94% on room air (desaturates to 88% on 6-min walk)"
+        },
+        "exam": "Bilateral fine end-inspiratory crackles at both bases. No wheeze. No clubbing. No peripheral oedema; JVP not raised. Chest expansion slightly reduced.",
+        "labs": [
+          {
+            "name": "CBC",
+            "value": "WBC 7.4 x10^9/L, Hb 14.2 g/dL, eosinophils 3%",
+            "flag": "normal"
+          },
+          {
+            "name": "CRP",
+            "value": "9 mg/L (<10)",
+            "flag": "normal"
+          },
+          {
+            "name": "Spirometry pre-bronchodilator",
+            "value": "FEV1 2.10 L (61% pred), FVC 2.55 L (68% pred), FEV1/FVC 82%",
+            "flag": "low"
+          },
+          {
+            "name": "Post-bronchodilator",
+            "value": "FEV1 2.18 L (+3.8%, +80 mL)",
+            "flag": "normal"
+          },
+          {
+            "name": "Lung volumes (plethysmography)",
+            "value": "TLC 4.30 L (64% predicted), RV 1.55 L (78% predicted)",
+            "flag": "low"
+          },
+          {
+            "name": "DLCO (gas transfer)",
+            "value": "58% predicted",
+            "flag": "low"
+          }
+        ],
+        "imaging": "Chest X-ray: reduced lung volumes with bilateral basal reticular opacities. HRCT (thin-section): subpleural reticulation, traction bronchiectasis at both bases and ground-glass centrilobular nodules in upper zones — features of chronic hypersensitivity pneumonitis pattern (consistent with moldy grain exposure)."
+      },
+      "steps": [
+        {
+          "id": "L3_case1_s1",
+          "prompt": "Apply spirometry rules: what pattern does FEV1/FVC of 82% with reduced FEV1 and FVC represent?",
+          "options": [
+            "Obstructive defect (FEV1/FVC < 70%)",
+            "Restrictive pattern — low ratio with both volumes reduced; confirm by measuring TLC",
+            "Normal spirometry",
+            "Significant bronchodilator reversibility (asthma)"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "النسبة 82% أعلى من 70% فهي ليست انسدادياً. انخفاض FEV1 وFVC معاً مع نسبة طبيعية/عالية نمط تقييدي، والتأكيد يتطلب قياس TLC (لا تقيسه السبيرومترية) — وفعلاً TLC=64% يؤكد التقييد. تحسن ما بعد الموصل الوريدي 3.8% و80 مل فقط دون العتبتين 12% و200 مل فلا انعكاسية معتبرة.",
+          "xp": 15,
+          "hints": [
+            "ما عتبة النسبة للانسداد؟",
+            "أي مقياس يثبت التقييد؟"
+          ]
+        },
+        {
+          "id": "L3_case1_s2",
+          "prompt": "Why was HRCT the correct next imaging step rather than repeating plain CXR?",
+          "options": [
+            "Plain CXR is more sensitive than CT for early fibrosis",
+            "HRCT (high-resolution thin-section CT) is the tool for diffuse parenchymal lung disease, airway thickening and bronchiectasis — far more sensitive than plain film",
+            "MRI would have been better",
+            "PET-CT is first-line for dyspnea"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "نص المحاضرة: PA أقل دقة من CT (مثال المحاضرة: التليف الرئوي المبكر لا يُرى على الصورة العادية)، وHRCT بشرائح رقيقة هو فحص أمراض النسيج الخلالي المنتشرة وتضخم جدار المجرى وتوسع القصبات. الرنين قليل الجدوى في النسيج الرئوي، وPET للتنشئة الورمية لا لضيق النفس.",
+          "xp": 15,
+          "hints": [
+            "أي فحص مخصص للأمراض الخلالية؟"
+          ]
+        },
+        {
+          "id": "L3_case1_s3",
+          "prompt": "Given his occupation and imaging pattern, which investigation could support an immunologic cause and what does the physiology show about gas exchange?",
+          "options": [
+            "Serum IgG precipitins to mold antigens; DLCO 58% shows impaired gas transfer typical of interstitial disease",
+            "Repeat spirometry after exercise",
+            "Blood cultures",
+            "Echocardiogram only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التعرض لمخزون حبوب متعفن مع عقيدات سنخية مركزية وتبلور شبكي قاعدي يوجه نحو التهاب الرئة فرط الحساسية المزمن؛ الأضداد الراسية (IgG) للمستضدات تدعم التشخيص. وانخفص DLCO مع هبوط إشباع الأكسجين بالمشي يعكس ضعف تبادل الغاز في المرض الخلالي — وهو ما يفسر أعراضه الوظيفية.",
+          "xp": 10,
+          "hints": [
+            "فكّر بمستضف عضوي مهني",
+            "ما مقياس تبادل الغازات؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب الرئة بفرط الحساسية المزمن (نمط تقييدي) بسبب تعرض مهني لمستضدات الحبوب المتعفنة. الدروس المستفادة: (1) قاعدة 70%: النسبة ≥70% مع خفض الحجمين = نمط تقييدي حتى يؤكد انخفاض TLC — فالسبيرومترية وحدها لا تقيس TLC/RV/FRC. (2) عتبات الانعكاسية: >12% و>200 مل بعد موسع قصير العمل؛ هذا المريض لم يحققها فلا ربو. (3) خوارزمية المحاضرة: عرض غير إعدائي (تقييدي) → تصوير + وظائف رئة؛ وHRCT هو أداة المرض الخلالي. (4) قياس DLCO وتخطي إشباع الجهد يكشف ضعف تبادل الغاز. (5) التاريخ المهني جزء لا يتجزأ من تفسير أي تحقيق تنفسي — دائماً اسأل عن التعرضات قبل طلب الأضداد.",
+      "difficulty": "advanced",
+      "order_index": 0
+    }
+  ]
+}

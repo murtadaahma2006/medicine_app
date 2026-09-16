@@ -1,0 +1,1211 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L8_bronchial_asthma",
+    "specialty": "internal_medicine",
+    "title": "Bronchial Asthma",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L8 Bronchial Asthma.pdf",
+      "page_count": 53
+    },
+    "tags": [
+      "asthma",
+      "airway-hyperresponsiveness",
+      "spirometry",
+      "reversibility",
+      "stepwise",
+      "inhalers",
+      "biologics",
+      "mart"
+    ],
+    "order_index": 7,
+    "golden_tip": [
+      "NEVER prescribe LABA MONOTHERAPY in asthma — it is linked to increased risk of ASTHMA DEATH. Always use a combination ICS/LABA inhaler; formoterol-containing combinations can serve MART (Maintenance and Reliever Therapy).",
+      "Aspirin-sensitive asthma: salicylates inhibit CYCLO-OXYGENASE → arachidonic acid shifts to 5-LIPOXYGENASE → excess CYSTEINYL LEUKOTRIENES → bronchoconstriction. Hence LTRAs work — and aspirin/NSAIDs (even topical beta-blocker eye drops!) are dangerous.",
+      "Diagnostic numbers: obstruction = FEV1/FVC < 70%; reversibility = FEV1 rise ≥ 12% AND ≥ 200 mL after bronchodilator (greater confidence if > 15% and > 400 mL); PEF diurnal variation > 20% on ≥ 3 days/week for 2 weeks; exercise challenge = FEV1 fall ≥ 15% after 6 minutes."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L8_c1",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Definition, Epidemiology and Risk Factors",
+      "summary_ar": "تعريف الربو بأركانه الأربعة، وبائياته، والعوامل الوراثية (الأتوبية) والبيئية المؤثرة.",
+      "sections": [
+        {
+          "heading": "Definition — The Four Pillars",
+          "body_text": "Asthma is defined by four pillars: **(1) it is a chronic inflammatory disorder of the airways; (2) in which many cells play a role; (3) it is associated with airway hyper-responsiveness that leads to recurrent episodes of symptoms at night and in the early morning (variable with the day(s)); (4) there is widespread but variable airflow obstruction within the lung that is often REVERSIBLE, either spontaneously or with treatment.** The lecture's clinical exhortation — **'Always ask WHY?'** — reminds the student that every asthmatic has driving factors (allergens, drugs, occupation) that must be hunted rather than simply prescribing bronchodilators. The variability (over days = episodic; within a day = diurnal) is the clinical fingerprint that separates asthma from fixed obstruction of COPD.",
+          "key_points": [
+            "Chronic airway inflammation, many cell types involved",
+            "Airway hyper-responsiveness → recurrent symptoms at night and early morning",
+            "Widespread but VARIABLE obstruction, often reversible spontaneously or with treatment",
+            "Always ask WHY? — identify the driving factors"
+          ]
+        },
+        {
+          "heading": "Prevalence and Risk Factors",
+          "body_text": "**Asthma rates steadily rose throughout the late 20th century** (increasing prevalence), it **affects all ages** and is recognized as **a major long-term respiratory condition**. Two families of factors influence its development and management: **Genetic determinants — atopy** (the inherited tendency), and **Environmental determinants**. The environmental triggers and risk factors listed: **(1) allergens — indoor and outdoor; (2) microbial exposure** (the role of microbes influencing the immune system — the hygiene hypothesis); **(3) diet and nutrition** — certain diets or vitamin deficiencies may affect asthma risk; **(4) breastfeeding** — research into its protective effects is ongoing; **(5) tobacco smoke; (6) air pollution; (7) obesity.**",
+          "key_points": [
+            "Increasing prevalence since late 20th century; all ages; major long-term condition",
+            "Genetic: atopy; Environmental: allergens, microbial exposure, diet/vitamins, breastfeeding (protective, ongoing research), tobacco smoke, air pollution, obesity"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Atopy",
+          "definition_ar": "استعداد وراثي لإنتاج IgE تجاه مستأرجات بيئية؛ يقاس بفحص الجلد الوخزي أو IgE المصل."
+        },
+        {
+          "term": "Airway hyper-responsiveness",
+          "definition_ar": "تضيق مفرط للقصبات استجابة لمحفزات بسيطة لا تؤثر في الأصحاء."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L8_c2",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Pathophysiology: AHR, Atopy, Aspirin-Sensitive and Exercise-Induced Asthma",
+      "summary_ar": "الفيزيولوجيا المرضية: فرط الاستجابة، الأتوبية والمستأرجات، ربو الأسبرين (مسار حمض الأراكيدونيك)، والربو الناتج عن الجهد.",
+      "sections": [
+        {
+          "heading": "Airway Hyper-Reactivity (AHR)",
+          "body_text": "**AHR is the excessive narrowing of the airways in response to minimal triggers which would not affect healthy individuals.** AHR is **central to asthma diagnosis** and is **closely linked to airway inflammation**, though other mechanisms are involved. **The extent of airway narrowing and the responsiveness of airway smooth muscle contribute to AHR.** Functionally, AHR explains why cold air, smoke, perfume or laughter can provoke bronchospasm in asthmatics but not in normals — and it can be quantified by provocation tests (methacholine challenge) in patients whose ordinary spirometry is normal.",
+          "key_points": [
+            "Excessive narrowing to minimal triggers (no effect on healthy people)",
+            "Central to diagnosis; closely linked to airway inflammation",
+            "Airway narrowing extent + smooth muscle responsiveness contribute"
+          ]
+        },
+        {
+          "heading": "Atopy and Allergen Sensitization",
+          "body_text": "**Atopy is defined as the genetic tendency to produce immunoglobulin E (IgE) in response to environmental allergens**, commonly associated with asthma and **measured by skin-prick tests or elevated serum IgE**. **Common allergens**: **Indoor** — house dust mites, pet dander (e.g., from cats and dogs), cockroaches, and fungal spores; **Outdoor** — (notably air) **pollution**; and **occupational asthma** — allergens/irritants encountered in the workplace. This atopic axis is the foundation of both trigger avoidance counseling and the anti-IgE biologic strategy (omalizumab).",
+          "key_points": [
+            "Atopy = genetic tendency to produce IgE to environmental allergens",
+            "Measured by skin-prick tests or elevated serum IgE",
+            "Indoor allergens: dust mites, pet dander (cats/dogs), cockroaches, fungal spores",
+            "Outdoor: pollution; occupational: workplace agents"
+          ]
+        },
+        {
+          "heading": "Aspirin-Sensitive Asthma and the Arachidonic Acid Pathway",
+          "body_text": "**Mechanism: ingestion of salicylates (e.g., aspirin) inhibits cyclo-oxygenase enzymes.** From the lecture's arachidonic acid pathway diagram: tissue injury injures the phospholipid cell membrane; **phospholipase A2 releases arachidonic acid**; arachidonic acid then follows two branches — **the cyclooxygenase pathway (COX-1, COX-2)** producing PGG2 → PGH2 → **prostacyclin, prostaglandins (pain, inflammation) and thromboxane (platelet aggregation)**, and **the 5-lipoxygenase pathway producing LEUKOTRIENES (bronchoconstriction, asthma attacks, smooth muscle contraction)**. **COX inhibition by aspirin SHIFTS arachidonic acid metabolism to the lipoxygenase pathway, increasing the production of cysteinyl leukotrienes, which are POTENT asthma inducers.** This single diagram explains: why aspirin/NSAIDs trigger asthma, why leukotriene receptor antagonists (LTRA) are effective, and why some severe asthmatics benefit from anti-IL5/anti-IgE strategies.",
+          "key_points": [
+            "Aspirin inhibits cyclo-oxygenase (COX-1/COX-2)",
+            "Arachidonic acid (released by phospholipase A2 from membrane phospholipids) shifts to the 5-LIPOXYGENASE pathway",
+            "↑ Cysteinyl leukotrienes = potent asthma inducers (bronchoconstriction, smooth muscle contraction)",
+            "COX branch normally makes: prostacyclin, prostaglandins (pain/inflammation), thromboxane (platelet aggregation)",
+            "Explains the efficacy of LTRA in aspirin-sensitive asthma"
+          ],
+          "check": {
+            "prompt": "Why does aspirin trigger asthma in aspirin-sensitive patients?",
+            "options": [
+              "It releases histamine directly",
+              "COX inhibition shunts arachidonic acid to the lipoxygenase pathway, increasing cysteinyl leukotrienes",
+              "It blocks beta-2 receptors",
+              "It increases IgE production"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "تثبيط السايكلوأوكسيجيناز يحوّل استقلاب حمض الأراكيدونيك نحو مسار 5-ليبوأوكسيجيناز فيتراكم الليكوترينات السيستئينية — موسعات قوية لتضيق القصبات ومحرضات نوبات الربو."
+          }
+        },
+        {
+          "heading": "Exercise-Induced Asthma",
+          "body_text": "**Hyperventilation: during exercise, rapid breathing leads to WATER LOSS from the respiratory mucosa; the resulting dehydration of the airway lining triggers the release of inflammatory mediators. Heat loss: cooling of the respiratory mucosa may also play a role in triggering bronchoconstriction during exercise.** This is why exercise-induced symptoms are worse in cold, dry air and why the exercise challenge test (FEV1 fall ≥ 15% after 6 minutes) reproduces the phenomenon under controlled conditions. Prophylaxis with a SABA (or LTRA) before exercise is the practical consequence.",
+          "key_points": [
+            "Hyperventilation → water loss from respiratory mucosa → dehydration triggers mediator release",
+            "Heat loss/cooling of the mucosa also contributes",
+            "Worse in cold dry air; exercise test: FEV1 drop ≥ 15% after 6 minutes"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cysteinyl leukotrienes",
+          "definition_ar": "ليكوترينات سيستئينية (LTC4/D4/E4) تنتج عبر 5-ليبوأوكسيجيناز؛ تسبب تضيق قصبات قوياً."
+        },
+        {
+          "term": "Phospholipase A2",
+          "definition_ar": "إنزيم يحرر حمض الأراكيدونيك من غشاء الفوسفوليبيد؛ نقطة انطلاق مساري البروستاغلاندينات والليكوترينات."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 1
+    },
+    {
+      "id": "L8_c3",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Chronic (Persistent) Asthma Inflammation and Phenotypes",
+      "summary_ar": "الالتهاب المزمن المعقد في الربو المستمر وخلاياه، والأنماط الثلاثة (يوزيني، عدلاتي، قليل الحبيبات) وعلاقتها بالعلاجات الحيوية.",
+      "sections": [
+        {
+          "heading": "The Chronic Inflammatory Response and Its Phenotypes",
+          "body_text": "In **persistent asthma**, inflammation becomes **chronic and complex**, involving: **influx of inflammatory cells; activation of airway structural cells (so-called 'asthmatic bronchitis' — remodeling of the airway wall); and release of cytokines, chemokines and growth factors.** The lecture classifies asthma inflammation into three phenotypes: **eosinophilic, neutrophilic and pauci-granulocytic** asthma. This phenotyping is not academic — it is the basis of **biological therapy**: eosinophilic asthma responds to anti-IL5 agents (benralizumab, mepolizumab, reslizumab) and anti-IL4/13 (dupilumab), while IgE-driven atopic disease responds to omalizumab. Chronic structural activation also underlies fixed airflow limitation and the hyperinflation seen on radiology in long-standing disease.",
+          "key_points": [
+            "Persistent asthma: chronic complex inflammation — inflammatory cell influx, structural cell activation (asthmatic bronchitis/remodeling), cytokines/chemokines/growth factors",
+            "Phenotypes: eosinophilic, neutrophilic, pauci-granulocytic",
+            "Phenotyping guides biological therapy"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Airway remodeling",
+          "definition_ar": "تغيرات بنيوية مزمنة بجدار القصبة (تضخم العضل الأملس، تليف تحت الظهارة) تؤدي لان narrowing شبه ثابت."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "L8_c4",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Clinical Features, Triggers and Physical Examination",
+      "summary_ar": "الأعراض الأربعة الكلاسيكية والربو السعالي، المحفزات الشاملة (أدوية وحيوانات وعفن)، والفحص السريري مع علامات الشدة والحالات المرافقة.",
+      "sections": [
+        {
+          "heading": "Main Symptoms and Cough-Variant Asthma",
+          "body_text": "**Main symptoms: (1) wheezing** — a whistling or high-pitched sound during breathing, especially on exhalation; **(2) chest tightness** — sensation of pressure or constriction; **(3) breathlessness** — difficulty breathing, often feeling out of breath; **(4) cough** — can be persistent and typically worsens at night or in the early morning.** **Cough-variant asthma**: some patients primarily experience coughing without prominent wheezing or breathlessness, which can delay diagnosis. **Misdiagnosis risk: these symptoms are often mistaken for a prolonged cold or chest infection, especially if lasting more than 10 days.** On history taking, the lecture stresses **variability**: 'days — episodic' and 'day — diurnal variation'; during an attack there is widespread but variable obstruction of airflow, and the hyper-reactive response is the unifying mechanism.",
+          "key_points": [
+            "Wheeze (especially expiratory), chest tightness, breathlessness, cough (worse night/early morning)",
+            "Cough-variant asthma: cough without prominent wheeze — delays diagnosis",
+            "Symptoms > 10 days mistaken for cold/chest infection — misdiagnosis risk",
+            "History: episodic (between days) + diurnal variation (within day)"
+          ]
+        },
+        {
+          "heading": "Common Triggers (Including Drugs)",
+          "body_text": "**Exercise**: particularly in colder conditions, physical activity can precipitate symptoms. **Airborne allergens and pollutants**: dust, pollen, smoke, pets, pest infestations, mold, and occupational agents (mold is often linked to water damage in homes or buildings). **Viral and bacterial infections**: upper respiratory tract infections frequently exacerbate symptoms. **Medications and foods**: **beta-blockers — even topical forms such as eye drops**; **aspirin and NSAIDs; oral contraceptives; cholinergic agents; and prostaglandin F2α and betel nuts.** **Pets**: exposure to animals like cats, guinea pigs, rabbits or horses can aggravate asthma. **Pest infestations**: dust mites or cockroaches. The drug list is a perennial exam favorite — especially 'even topical beta-blocker eye drops'.",
+          "key_points": [
+            "Exercise (worse in cold), airborne allergens/pollutants, occupational agents, infections (URTI)",
+            "Drugs: beta-blockers (EVEN topical eye drops), aspirin/NSAIDs, oral contraceptives, cholinergic agents, PGF2alpha, betel nuts",
+            "Pets: cats, guinea pigs, rabbits, horses; pests: dust mites, cockroaches; mold (water damage)"
+          ]
+        },
+        {
+          "heading": "Physical Examination — Mild and Severe",
+          "body_text": "**In the interval between attacks, physical examination may be minimal or normal if the patient has no symptoms; positive findings appear during an attack.** **Associated conditions to seek**: **nasal polyps** (associated with chronic inflammation in some asthmatics — part of the aspirin triad), **eczema** (common as part of the atopic profile), and rarely a **vasculitic rash suggesting eosinophilic granulomatosis with polyangiitis (formerly Churg-Strauss syndrome)**. From the lecture's examination diagram of the severe asthmatic: **agitation or drowsiness; central cyanosis; intercostal indrawing (in children); wheeze — which becomes a SILENT CHEST in severe asthma (no air moving); hyperinflated chest; and a rapid pulse that becomes SLOW in severe (pre-arrest) asthma.** These two 'paradoxical' signs — silent chest and bradycardia — mark impending respiratory arrest, not improvement.",
+          "key_points": [
+            "Minimal findings between attacks; positive findings during attacks",
+            "Associated: nasal polyps, eczema, rarely vasculitic rash (EGPA/Churg-Strauss)",
+            "Severe asthma: agitation/drowsiness, central cyanosis, intercostal indrawing (children), hyperinflated chest",
+            "DANGER signs: SILENT CHEST and pulse becoming SLOW (impending arrest)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cough-variant asthma",
+          "definition_ar": "نمط ربو يسوده السعال دون أزيز أو ضيق بارز؛ يؤخر التشخيص."
+        },
+        {
+          "term": "EGPA (Churg-Strauss)",
+          "definition_ar": "التهاب أوعية يوزيني مع ربو وطفح وعائي؛ سابقاً متلازمة شورغ-ستراوس."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L8_c5",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Differential Diagnosis, Investigations and Diagnostic Criteria",
+      "summary_ar": "التشخيص التفريقي والمنهج التشخيصي: السبيرومترية وأهدافها، معايير التشخيص الرقمية، ذروة التدفق، اختبارات فرط الاستجابة والجهد، FeNO والصور.",
+      "sections": [
+        {
+          "heading": "Differential Diagnosis and Radiology",
+          "body_text": "**DDX of asthma: COPD; vocal cord paralysis; tracheal obstruction; bronchiolitis; and others (e.g., heart failure).** **Radiology**: the chest X-ray is **normal between attacks**; during attacks it may show **hyperinflation on the PA view — horizontal ribs, flattened diaphragm, and MORE THAN 6 ANTERIOR or 10 POSTERIOR RIBS visible above the level of the diaphragm in the mid-clavicular line** (the lecture's rib-counting image demonstrated 9 posterior ribs). The X-ray also excludes the complications/alternatives: **pneumothorax, collapse and pneumonia.** Radiology therefore supports rather than makes the diagnosis — asthma is a clinical + physiological diagnosis.",
+          "key_points": [
+            "DDx: COPD, vocal cord paralysis, tracheal obstruction, bronchiolitis, heart failure",
+            "CXR normal between attacks; hyperinflation during attacks: horizontal ribs, flattened diaphragm, > 6 anterior / > 10 posterior ribs",
+            "CXR also excludes pneumothorax, collapse, pneumonia"
+          ]
+        },
+        {
+          "heading": "Diagnostic Approach and Spirometry",
+          "body_text": "The **diagnostic approach**: **Clinical** (history + exam) → **Lung functions**: spirometry, peak flow meter, and other tests — **FeNO (fractional exhaled nitric oxide, marker of eosinophilic inflammation), CBC (eosinophils), imaging.** **The three aims of spirometry: (1) demonstrate an obstructive defect — FEV1/FVC < 70%; (2) assess severity — by the FEV1; (3) test bronchodilator reversibility.** The two graphic outputs are the **volume-time graph** (FEV1 read at 1 second; FVC at plateau) and the **flow-volume loop** (PEF at the summit; concave expiratory limb in obstruction). The lecture's worked example: a 62-year-old man with pre-bronchodilator FEV1 1.76 L (62% predicted) and FEV1/FVC 68% — moderate obstruction — which rose to 2.62 L after salbutamol, a **48.9% increase (+860 mL)**: 'significant bronchodilatation' — the asthma signature.",
+          "key_points": [
+            "Approach: clinical → spirometry/PEF → FeNO, CBC, imaging",
+            "Spirometry aims: obstructive defect (FEV1/FVC < 70%), severity (FEV1), reversibility",
+            "Volume-time graph and flow-volume loop are the two outputs",
+            "Worked example: 48.9% (+860 mL) FEV1 reversibility = asthma"
+          ]
+        },
+        {
+          "heading": "Diagnostic Criteria — The Numbers",
+          "body_text": "From the lecture's diagnostic criteria box ('How to make a diagnosis of asthma'), a compatible clinical history plus objective demonstration of variable obstruction: **(1) Bronchodilator reversibility: FEV1 increase ≥ 12% (and ≥ 200 mL) following a bronchodilator or a trial of glucocorticoids — greater confidence if the increase is > 15% and > 400 mL. (2) PEF variability: diurnal variation > 20% on ≥ 3 days in a week, for 2 weeks, on a PEF diary. (3) Exercise challenge: FEV1 decrease ≥ 15% after 6 minutes of exercise.** When baseline spirometry is normal but suspicion persists, **additional testing (needing hospital facilities)**: **Airway hyper-responsiveness testing with methacholine challenge — useful for patients with symptoms but normal lung function; it has a HIGH NEGATIVE PREDICTIVE VALUE; however positive results can also appear in COPD, bronchiectasis and cystic fibrosis. Exercise tests are recommended if symptoms are mainly triggered by exercise.**",
+          "key_points": [
+            "Reversibility: FEV1 ≥ 12% AND ≥ 200 mL (greater confidence > 15% and > 400 mL)",
+            "PEF: > 20% diurnal variation, ≥ 3 days/week, for 2 weeks",
+            "Exercise challenge: FEV1 fall ≥ 15% after 6 min",
+            "Methacholine challenge: for symptoms with normal spirometry; high NPV; also positive in COPD/bronchiectasis/CF",
+            "Exercise tests when symptoms are exercise-triggered"
+          ],
+          "check": {
+            "prompt": "A patient's FEV1 rises from 2.00 L to 2.30 L (15%) after salbutamol. Is this significant reversibility?",
+            "options": [
+              "Yes — exceeds 12% (check the 200 mL volume criterion too: +300 mL qualifies)",
+              "No — the volume criterion fails",
+              "No — requires 400 mL always",
+              "Reversibility testing is not used in asthma"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "العتبة: زيادة ≥12% و≥200 مل؛ هنا 15% و300 مل فكلاهما متحقق — انعكاسية معتبرة تدعم الربو (ثقة أكبر لو تجاوزت 15% و400 مل)."
+          }
+        },
+        {
+          "heading": "Peak Flow Meter",
+          "body_text": "**The peak flow meter is the alternative when spirometry is unavailable.** Patients record **PEF readings twice daily — once in the morning and once in the evening.** **A diurnal variation in PEF of more than 20%, with lower values typically in the morning, indicates asthma.** (The device scale runs roughly 60–800 L/min.) PEF diaries also serve follow-up: monitoring control, detecting deterioration early, and documenting the response to treatment trials — a cheap, powerful physiologic tool.",
+          "key_points": [
+            "Alternative if spirometry unavailable",
+            "Twice-daily readings (morning and evening)",
+            "Diurnal variation > 20% with morning dips = asthma"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "FeNO",
+          "definition_ar": "أكسيد النيتريك المنزفر الجزئي؛ مؤشر التهاب يوزيني ويوجه العلاج بالستيرويد."
+        },
+        {
+          "term": "Methacholine challenge",
+          "definition_ar": "اختبار تحريضي لفرط استجابة القصبات؛ قيمة تنبؤية سلبية عالية لنفي الربو."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L8_c6",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Treatment: Goals, Avoidance and the Stepwise Approach (Steps 1–5)",
+      "summary_ar": "أهداف العلاج، تجنب المحفزات، والنهج التدريجي الكامل بخطواته الخمس مع الجرعات والعلاجات الحيوية.",
+      "sections": [
+        {
+          "heading": "Goals and Avoidance of Aggravating Factors",
+          "body_text": "**Primary goals: achieve and maintain complete asthma control — (1) prevent exacerbations; (2) reduce symptom frequency; (3) improve overall quality of life.** **Avoidance of aggravating factors**: **(1) occupational asthma — remove from exposure; (2) atopic asthma — allergen avoidance; (3) medications — stop the offending drugs (aspirin/NSAIDs, beta-blockers); (4) smoking cessation.** The pharmacological principle: **once asthma control is established, the dose of inhaled (or oral) glucocorticoid should be titrated to the lowest dose at which effective control is maintained — decreasing the dose of glucocorticoid by around 25%–50% every 3 months** (the stepping-down rule).",
+          "key_points": [
+            "Goals: prevent exacerbations, reduce symptoms, improve quality of life",
+            "Avoidance: occupational, atopic allergens, offending medications, smoking cessation",
+            "Step-down: reduce glucocorticoid dose by 25–50% every 3 months to the lowest effective dose"
+          ]
+        },
+        {
+          "heading": "Step 1: Regular Preventer Therapy",
+          "body_text": "**Initial treatment: a low-dose inhaled glucocorticoid (ICS) is the first line of treatment for asthma, plus short-acting beta-2 agonists as required (unless using MART — maintenance and reliever therapy).** **Recommended starting dose for adults: beclometasone dipropionate (BDP) equivalent 400 micrograms/day; higher doses for smokers** (smokers need more because of steroid resistance). **Device selection depends on patient preference and competence in using the device properly; the most common device is the metered-dose inhaler (MDI).** From the management algorithm: consider monitored initiation of treatment with low-dose ICS at diagnosis; for infrequent, short-lived wheeze, regular preventer may be bypassed initially.",
+          "key_points": [
+            "Low-dose ICS = first line + SABA PRN (unless MART)",
+            "Adult starting dose: BDP equivalent 400 mcg/day; higher in smokers",
+            "Device: patient preference + competence; MDI most common"
+          ]
+        },
+        {
+          "heading": "Step 2: Initial Add-on Therapy",
+          "body_text": "**When to add: if asthma control remains poor despite regular ICS therapy — add a long-acting beta agonist (LABA).** **It is recommended to use a combination ICS/LABA inhaler in order to PREVENT LABA MONOTHERAPY, which is linked to the risk of asthma death.** **Special combination option: combination ICS/LABA inhalers containing formoterol (a fast-acting LABA) can serve dual purposes — maintenance AND reliever therapy (MART).** This is the single most important safety rule of asthma pharmacotherapy and a guaranteed exam point.",
+          "key_points": [
+            "Add LABA when control poor despite regular ICS",
+            "Use COMBINATION ICS/LABA inhaler — LABA monotherapy risks ASTHMA DEATH",
+            "Formoterol combinations can serve MART (maintenance + reliever)"
+          ]
+        },
+        {
+          "heading": "Step 3: Additional Add-on Therapies",
+          "body_text": "**IF no response to LABA: the LABA should be STOPPED, and the next step is to increase the ICS to a medium dose (800 micrograms BDP or equivalent daily).** **IF partial response to LABA (LABA improves symptoms but control remains poor): increase the ICS to a medium dose, or alternatively trial other add-on therapies such as a leukotriene receptor antagonist (LTRA) or a slow-release theophylline preparation.** The decision fork — stop versus continue the LABA — hinges on whether any benefit was observed.",
+          "key_points": [
+            "No response to LABA → STOP LABA; increase ICS to medium dose (800 mcg BDP)",
+            "Partial response → increase ICS to medium dose; or add LTRA or slow-release theophylline"
+          ]
+        },
+        {
+          "heading": "Step 4: High-Dose Therapies",
+          "body_text": "**Trial up to a high-dose inhaled glucocorticoid (ICS): 2000 micrograms BDP equivalent per day.** **Additional add-ons to consider: LTRA; a long-acting muscarinic agent (LAMA, e.g., tiotropium); theophylline; and a slow-release oral beta-2 agonist.** **Note: if any trialed add-on therapy is ineffective, it should be DISCONTINUED** — therapeutic triage rather than indefinite stacking of inhalers. Check adherence, technique and triggers again before escalating beyond this step.",
+          "key_points": [
+            "High-dose ICS: 2000 mcg BDP equivalent/day",
+            "Add-ons: LTRA, LAMA (tiotropium), theophylline, slow-release oral beta-2 agonist",
+            "Discontinue any ineffective add-on"
+          ]
+        },
+        {
+          "heading": "Step 5: Oral Glucocorticoids and Biologic Therapy",
+          "body_text": "**Step 5 = continuous or frequent use of oral glucocorticoids. (1) Oral prednisolone: prescribe the LOWEST effective dose, administered ONCE daily in the MORNING to reduce side effects, with management of side effects (osteoporosis prevention). (2) Referral for severe asthma specialist assessment: patients on oral glucocorticoids for > 3 months (long-term steroids), or with > 3–4 courses of glucocorticoids per year (frequent exacerbations).** **(3) Consider biologic therapy: omalizumab (anti-IgE) for severe IgE-driven atopic asthma; for eosinophilic asthma consider benralizumab (anti-IL5 receptor), mepolizumab (anti-IL5), reslizumab (anti-IL5), or dupilumab (anti-IL4/IL-13).** The biologics map directly onto the inflammatory phenotypes described in the pathophysiology concept.",
+          "key_points": [
+            "Oral prednisolone: lowest effective dose, once daily in the MORNING; manage osteoporosis",
+            "Specialist referral: > 3 months oral steroids OR > 3–4 steroid courses/year",
+            "Omalizumab (anti-IgE) for severe atopic asthma",
+            "Eosinophilic: benralizumab (anti-IL5r), mepolizumab (anti-IL5), reslizumab (anti-IL5), dupilumab (anti-IL4/13)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "MART",
+          "definition_ar": "علاج صيانة وإغاثة معاً: بخاخ مركب ICS+فورموتيرول يُستخدم للغرضين."
+        },
+        {
+          "term": "BDP equivalent",
+          "definition_ar": "معيار جرعة الستيرويد المستنشق المقارن بالبيكلوميثازون: منخفض 400، متوسط 800، عالٍ 2000 ميكروغرام/يوم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L8_c7",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "Inhaler Medications, Devices, Side Effects and Levels of Control",
+      "summary_ar": "أدوية البخاخ (موسعات ومضادات كولين وستيرويد)، أجهزة MDI وDPI وتقنيتها، الآثار الجانبية، وجدول مستويات الضبط.",
+      "sections": [
+        {
+          "heading": "Inhaler Medications by Class",
+          "body_text": "**Reliever medications**: **short-acting beta-2 agonist (SABA) — salbutamol (Ventolin)**; **short-acting anticholinergic (SAMA) — ipratropium bromide (Atrovent)**. **Preventer/controller medications**: **inhaled corticosteroid (ICS) — budesonide**; **long-acting beta-2 agonist (LABA) — salmeterol, formoterol**; **long-acting anticholinergic (LAMA) — tiotropium**. **Maintenance and reliever therapy (MART) — ICS + formoterol ONLY** (formoterol's fast onset is what makes MART possible; salmeterol is too slow to serve as a reliever). Knowing which LABA can act as a reliever (formoterol) versus which cannot (salmeterol) is a frequent exam discriminator.",
+          "key_points": [
+            "Relievers: SABA salbutamol (Ventolin); SAMA ipratropium (Atrovent)",
+            "Controllers: ICS budesonide; LABA salmeterol/formoterol; LAMA tiotropium",
+            "MART = ICS + formoterol ONLY (fast-acting LABA)"
+          ]
+        },
+        {
+          "heading": "Side Effects by Class",
+          "body_text": "**Beta-2 agonists: tachycardia, arrhythmias, tremors and HYPOKALAEMIA** (beta-2 drives potassium into cells — a classic biochemistry link; high-dose SABA in acute severe asthma causes dangerous K+ drops). **Anticholinergics: tachycardia, abdominal pain, pharyngitis.** **Inhaled corticosteroids: pharyngitis (and oral candidiasis — the reason for rinsing after use), cataract and glaucoma** with long-term use. The systemic effects of ICS at low dose are minimal, but at high dose adrenal suppression, osteoporosis and skin thinning join the list — the rationale for the lowest-dose stepping-down rule.",
+          "key_points": [
+            "B2 agonists: tachycardia, arrhythmias, tremor, HYPOKALAEMIA",
+            "Anticholinergics: tachycardia, abdominal pain, pharyngitis",
+            "ICS: pharyngitis (oral candidiasis), cataract, glaucoma"
+          ]
+        },
+        {
+          "heading": "Devices: MDI Technique and DPI Classification",
+          "body_text": "**Metered-dose inhaler (MDI) technique** (from the lecture figure): **(1) remove the cap and shake the inhaler; (2) breathe out gently and place the mouthpiece into the mouth; (3) incline the head backwards to minimise oropharyngeal deposition; (4) simultaneously begin a slow deep inspiration, depress the canister and continue to inhale; (5) hold the breath for 10 seconds.** **Dry powder inhalers (DPI)** are classified as: **nonreusable** — single-dose systems (e.g., Diskus... as presented: single-dose device example Diskus) and multiple-dose systems (Turbuhaler, Easyhaler); **reusable** — single-dose systems (Aerolizer, Rotadisk) and multiple-dose systems (Novolizer). The lecture also showed a **spacer device** (valved holding chamber with facemask — improves delivery in children and crises) and a **nebuliser compressor** (for acute attacks when inhalation effort fails). Examples of combination devices from the lecture images: **ADVAIR DISKUS (fluticasone 250 mcg/salmeterol 50 mcg)** and **SYMBICORT TURBUHALER (budesonide/formoterol 80/4.5 mcg — a MART-capable combination).**",
+          "key_points": [
+            "MDI: shake → exhale → head back → slow deep inspiration while pressing → hold 10 s",
+            "DPI: nonreusable (single: Diskus; multiple: Turbuhaler, Easyhaler) and reusable (single: Aerolizer, Rotadisk; multiple: Novolizer)",
+            "Spacer with mask for children; nebuliser for acute severe attacks",
+            "Combination examples: fluticasone/salmeterol (Diskus); budesonide/formoterol (Symbicort — MART capable)"
+          ]
+        },
+        {
+          "heading": "Levels of Asthma Control (Table) and 'Who to Treat'",
+          "body_text": "**Levels of control** (assessed over the preceding period): **Controlled** — daytime symptoms ≤ twice/week; no limitations of activities; no nocturnal symptoms/awakening; reliever need ≤ twice/week; normal lung function (PEF or FEV1); no exacerbations. **Partly controlled (any present in any week)** — daytime symptoms > twice/week; any limitations; any nocturnal awakening; reliever > twice/week; lung function < 80% predicted or personal best; ≥ 1 exacerbation/year. **Uncontrolled** — **≥ 3 features of partly controlled asthma present in any week** (or 1 exacerbation in any week). **'Who to treat' ladder**: acute exacerbation → treat as an acute attack; partially or uncontrolled → step up therapy; well controlled → maintain and consider stepping down. From the algorithm: consider moving UP if the patient uses rescue SABA **three doses a week or more**; move up to improve control and move down to find the lowest controlling therapy.",
+          "key_points": [
+            "Controlled: symptoms/reliever ≤ 2/week, no nocturnal, no limitations, normal PEF/FEV1, no exacerbations",
+            "Partly controlled: any of — > 2/week symptoms, any nocturnal, any limitation, reliever > 2/week, PEF < 80%, ≥ 1 exacerbation/year",
+            "Uncontrolled: ≥ 3 partly-controlled features in any week",
+            "Move up if rescue SABA ≥ 3 doses/week; move down to the lowest effective therapy"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Spacer",
+          "definition_ar": "غرفة موصولة بالبخاخ تحسّن توصيل الدواء وتقلل الترسّب البلعومي؛ مهمة للأطفال والهجمات."
+        },
+        {
+          "term": "Turbuhaler",
+          "definition_ar": "بخاخ مسحوق جاف متعدد الجرعات (مثل سيمبيكورت) قابل للاستخدام كMART."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L8_f1",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c1",
+      "card_type": "basic",
+      "front_text": "State the four-part definition of bronchial asthma.",
+      "back_text": "1) A chronic inflammatory disorder of the airway; 2) in which many cells play a role; 3) associated with airway hyper-responsiveness leading to recurrent episodes of symptoms at night and in the early morning (variable with the day(s)); 4) widespread but variable airflow obstruction within the lung that is often reversible, either spontaneously or with treatment. Always ask WHY? (identify driving factors).",
+      "explanation_ar": "التهاب مزمن + خلايا متعددة + فرط استجابة + انسداد متغير قابل للعكس.",
+      "is_vivid": false,
+      "tags": [
+        "definition",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f2",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c1",
+      "card_type": "basic",
+      "front_text": "List the environmental risk factors influencing asthma development.",
+      "back_text": "1) Allergens (indoor and outdoor); 2) microbial exposure (influencing the immune system); 3) diet and nutrition (vitamin deficiencies may affect risk); 4) breastfeeding (protective effect under research); 5) tobacco smoke; 6) air pollution; 7) obesity. Genetic determinant: atopy.",
+      "explanation_ar": "سبعة عوامل بيئية + الأتوبية الوراثية.",
+      "is_vivid": false,
+      "tags": [
+        "risk-factors"
+      ]
+    },
+    {
+      "id": "L8_f3",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "Define airway hyper-responsiveness (AHR).",
+      "back_text": "AHR is the excessive narrowing of the airways in response to minimal triggers which would not affect healthy individuals. It is central to asthma diagnosis and closely linked to airway inflammation; the extent of airway narrowing and the responsiveness of airway smooth muscle contribute to it.",
+      "explanation_ar": "تضيق مبالغ فيه لمحفزات بسيطة؛ محور التشخيص ومرتبط بالالتهاب.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f4",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "Explain the mechanism of aspirin-sensitive asthma via the arachidonic acid pathway.",
+      "back_text": "Ingestion of salicylates inhibits cyclo-oxygenase (COX-1/COX-2). Arachidonic acid (released from membrane phospholipids by phospholipase A2) is therefore shunted to the 5-lipoxygenase pathway, increasing production of cysteinyl leukotrienes — potent asthma inducers (bronchoconstriction, smooth muscle contraction). COX branch products: prostacyclin, prostaglandins (pain, inflammation), thromboxane (platelet aggregation).",
+      "explanation_ar": "تثبيط COX يحول المسار نحو الليكوترينات = نوبة ربو.",
+      "is_vivid": false,
+      "tags": [
+        "pathophysiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f5",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "How does exercise induce asthma?",
+      "back_text": "During exercise, hyperventilation leads to water loss from the respiratory mucosa; the resulting dehydration of the airway lining triggers release of inflammatory mediators. Heat loss (cooling of the respiratory mucosa) may also play a role in triggering bronchoconstriction. Symptoms are worse in cold, dry conditions.",
+      "explanation_ar": "فقد ماء وتبريد للمخاطية = تحرر وسائط التهابية.",
+      "is_vivid": false,
+      "tags": [
+        "pathophysiology"
+      ]
+    },
+    {
+      "id": "L8_f6",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "What is atopy and how is it measured? List common allergens.",
+      "back_text": "Atopy is the genetic tendency to produce IgE in response to environmental allergens, commonly associated with asthma; measured by skin-prick tests or elevated serum IgE. Indoor allergens: house dust mites, pet dander (cats/dogs), cockroaches, fungal spores. Outdoor: pollution. Occupational: workplace agents.",
+      "explanation_ar": "أتوبية = IgE وراثية؛ تقاس بوخز الجلد أو IgE المصل.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f7",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c3",
+      "card_type": "basic",
+      "front_text": "What characterizes persistent asthma inflammation and what are the three phenotypes?",
+      "back_text": "Inflammation becomes chronic and complex: influx of inflammatory cells; activation of airway structural cells ('asthmatic bronchitis' — remodeling); release of cytokines, chemokines and growth factors. Phenotypes: eosinophilic, neutrophilic, pauci-granulocytic — the basis for biological therapy selection.",
+      "explanation_ar": "ثلاثة أنماط: يوزيني، عدلاتي، قليل الحبيبات.",
+      "is_vivid": false,
+      "tags": [
+        "pathophysiology"
+      ]
+    },
+    {
+      "id": "L8_f8",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "What are the four main symptoms of asthma, and what is cough-variant asthma?",
+      "back_text": "1) Wheezing — high-pitched whistling, especially on exhalation; 2) chest tightness; 3) breathlessness; 4) cough — persistent, typically worse at night or early morning. Cough-variant asthma: cough is the predominant symptom without prominent wheeze/breathlessness, delaying diagnosis. Symptoms lasting > 10 days are often mistaken for a prolonged cold or chest infection.",
+      "explanation_ar": "أزيز + ضيق صدر + زلة + سعال ليلي/فجوري؛ النمط السعالي يؤخر التشخيص.",
+      "is_vivid": false,
+      "tags": [
+        "clinical",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f9",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "Which drugs can trigger or aggravate asthma?",
+      "back_text": "Beta-blockers (even topical forms such as eye drops); aspirin and NSAIDs; oral contraceptives; cholinergic agents; prostaglandin F2alpha; and betel nuts. Also: viral and bacterial URTIs, exercise (especially cold), airborne allergens, pets (cats, guinea pigs, rabbits, horses), pests (dust mites, cockroaches), mold (water damage) and occupational agents.",
+      "explanation_ar": "حتى قطرات العين المحتوية على حاصرات بيتا تُشعل الربو!",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f10",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "What signs mark SEVERE (pre-arrest) asthma on examination, and what associated conditions are sought?",
+      "back_text": "Severe: agitation or drowsiness, central cyanosis, intercostal indrawing (children), hyperinflated chest, rapid pulse — which becomes SLOW in severe asthma, and wheeze — which becomes a SILENT chest in severe asthma (no air movement). Associated conditions: nasal polyps (chronic inflammation), eczema (atopic profile), rarely a vasculitic rash suggesting eosinophilic granulomatosis with polyangiitis (Churg-Strauss).",
+      "explanation_ar": "صدر صامت + نبض بطيء = إنذار توقف — لا تحسن!",
+      "is_vivid": false,
+      "tags": [
+        "clinical",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f11",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "What does the chest X-ray show in asthma?",
+      "back_text": "Normal between attacks. During attacks: hyperinflation on the PA view — horizontal ribs, flattened diaphragm, and more than 6 anterior or 10 posterior ribs above the diaphragm level in the mid-clavicular line. The X-ray also excludes pneumothorax, collapse and pneumonia. DDX: COPD, vocal cord paralysis, tracheal obstruction, bronchiolitis, heart failure.",
+      "explanation_ar": "طبيعي بين النوب؛ فرط نفخ أثناءها.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L8_f12",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "What are the three aims of spirometry in asthma?",
+      "back_text": "1) Demonstrate an obstructive defect: FEV1/FVC < 70%. 2) Assess severity: by the FEV1 value. 3) Test bronchodilator reversibility. Outputs: volume-time graph and flow-volume loop (concave expiratory limb in obstruction).",
+      "explanation_ar": "انسداد + شدة + انعكاسية.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f13",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "Recite the numerical diagnostic criteria for asthma.",
+      "back_text": "Bronchodilator reversibility: FEV1 increase ≥ 12% AND ≥ 200 mL after bronchodilator or glucocorticoid trial (greater confidence if > 15% and > 400 mL). PEF variability: diurnal variation > 20% on ≥ 3 days a week for 2 weeks. Exercise challenge: FEV1 fall ≥ 15% after 6 minutes of exercise.",
+      "mnemonic_ar": "12-200-400-20-15: أرقام الربو الذهبية.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f14",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "When is methacholine challenge used and how do you interpret it?",
+      "back_text": "AHR (methacholine) challenge is useful for patients with symptoms but NORMAL lung function; it has a HIGH NEGATIVE PREDICTIVE VALUE (a negative test effectively excludes asthma). However, positive results can also appear in COPD, bronchiectasis and cystic fibrosis — so positivity is not specific. Exercise tests are recommended if symptoms are mainly exercise-triggered.",
+      "explanation_ar": "سلبي = ينفي؛ إيجابي = ليس بالضرورة ربو.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "L8_f15",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "How is a peak flow meter used to diagnose asthma?",
+      "back_text": "Alternative if spirometry unavailable. Patients record PEF readings twice daily — once in the morning and once in the evening. A diurnal variation of more than 20%, with lower values typically in the morning, indicates asthma.",
+      "explanation_ar": "تذبذب يومي >20% مع هبوط صباحي = ربو.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f16",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "What are the goals of asthma treatment and the avoidance list?",
+      "back_text": "Goals: achieve and maintain complete control — prevent exacerbations, reduce symptom frequency, improve overall quality of life. Avoidance: 1) occupational asthma (remove exposure); 2) atopic asthma (allergen avoidance); 3) medications (stop aspirin/NSAIDs, beta-blockers); 4) smoking cessation. Once control established, titrate ICS to the lowest dose — decrease by 25–50% every 3 months.",
+      "explanation_ar": "أهداف ثلاثة + تجنب رباعي + تنازل 25-50% كل 3 أشهر.",
+      "is_vivid": false,
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L8_f17",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Step 1 of the stepwise approach: what is first-line and at what dose?",
+      "back_text": "Regular preventer therapy: low-dose inhaled glucocorticoid (ICS) is the FIRST LINE, plus short-acting beta-2 agonist as required (unless using MART). Recommended adult starting dose: beclometasone dipropionate (BDP) equivalent 400 micrograms/day; HIGHER doses for smokers. Device selection depends on patient preference and competence; the most common device is the MDI.",
+      "explanation_ar": "ICS منخفض أولاً: 400 ميكروغرام BDP (مدخنون أعلى).",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f18",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Step 2: what is added and which safety rule applies?",
+      "back_text": "If control remains poor despite regular ICS, add a long-acting beta agonist (LABA). It is recommended to use a COMBINATION ICS/LABA inhaler to prevent LABA MONOTHERAPY, which is linked to the risk of ASTHMA DEATH. Combination ICS/LABA with formoterol (fast-acting LABA) can serve dual maintenance AND reliever purposes (MART).",
+      "explanation_ar": "LABA وحده ممنوع — خطر موت؛ دائماً مع ICS مركّب.",
+      "is_vivid": true,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f19",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Step 3 and Step 4: what happens with LABA non/partial response and what are the high-dose options?",
+      "back_text": "Step 3: no response to LABA → STOP the LABA and increase ICS to medium dose (800 mcg BDP); partial response → increase ICS to medium dose, or trial LTRA or slow-release theophylline. Step 4: trial up to high-dose ICS (2000 mcg BDP equivalent/day) with add-ons: LTRA, LAMA (tiotropium), theophylline, slow-release oral beta-2 agonist; discontinue any ineffective add-on.",
+      "explanation_ar": "بلا استجابة أوقف LABA؛ عالٍ 2000 مع إضافات توقفها إن لم تنفع.",
+      "is_vivid": false,
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L8_f20",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Step 5: oral glucocorticoids rules, referral triggers and the biologics map.",
+      "back_text": "Oral prednisolone: lowest effective dose, once daily in the morning (to reduce side effects), with osteoporosis management. Referral for severe asthma specialist assessment: > 3 months on oral glucocorticoids, or > 3–4 courses per year. Biologics: omalizumab (anti-IgE) for severe IgE-driven atopic asthma; eosinophilic asthma — benralizumab (anti-IL5r), mepolizumab (anti-IL5), reslizumab (anti-IL5), dupilumab (anti-IL4/IL-13).",
+      "explanation_ar": "بريدنيزولون صباحاً بأقل جرعة؛ إحالة >3 أشهر أو >3-4 كورسات سنوياً؛ بيولوجي حسب النمط.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f21",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "card_type": "basic",
+      "front_text": "Classify inhaler medications (reliever vs preventer) with examples.",
+      "back_text": "Relievers: SABA — salbutamol (Ventolin); SAMA — ipratropium bromide (Atrovent). Preventers/controllers: ICS — budesonide; LABA — salmeterol, formoterol; LAMA — tiotropium. MART: ICS + formoterol ONLY (fast onset makes formoterol suitable as reliever; salmeterol is not).",
+      "explanation_ar": "فورموتيرول يصلح مُنقذاً؛ سالميتيرول لا.",
+      "is_vivid": false,
+      "tags": [
+        "pharmacology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f22",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "card_type": "basic",
+      "front_text": "What are the side effects of each inhaler class?",
+      "back_text": "Beta-2 agonists: tachycardia, arrhythmias, tremors, hypokalaemia. Anticholinergics: tachycardia, abdominal pain, pharyngitis. Inhaled corticosteroids: pharyngitis (oral candidiasis), cataract and glaucoma.",
+      "explanation_ar": "نقص بوتاسيوم مع B2؛ سادّ/إعتام عدسة مع ICS.",
+      "is_vivid": false,
+      "tags": [
+        "pharmacology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f23",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "card_type": "basic",
+      "front_text": "Describe correct MDI technique in five steps.",
+      "back_text": "1) Remove the cap and shake the inhaler. 2) Breathe out gently and place the mouthpiece into the mouth. 3) Incline the head backwards to minimise oropharyngeal deposition. 4) Simultaneously begin a slow deep inspiration, depress the canister and continue to inhale. 5) Hold the breath for 10 seconds.",
+      "explanation_ar": "هزّ - زفير - رأس للخلف - شهيق بطيء مع الضغط - حبس 10 ثوان.",
+      "is_vivid": false,
+      "tags": [
+        "devices",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L8_f24",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "card_type": "basic",
+      "front_text": "How are dry powder inhalers (DPI) classified, and what combination devices were shown?",
+      "back_text": "Nonreusable: single-dose systems (Diskus) and multiple-dose systems (Turbuhaler, Easyhaler). Reusable: single-dose systems (Aerolizer, Rotadisk) and multiple-dose systems (Novolizer). Combination devices shown: ADVAIR DISKUS (fluticasone 250 mcg/salmeterol 50 mcg) and SYMBICORT TURBUHALER (budesonide/formoterol 80/4.5 mcg — MART-capable). Spacers improve delivery in children; nebulisers are used in acute attacks.",
+      "explanation_ar": "تصنيف DPI + مثالا الأجهزة المركبة.",
+      "is_vivid": false,
+      "tags": [
+        "devices"
+      ]
+    },
+    {
+      "id": "L8_f25",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "card_type": "basic",
+      "front_text": "Reproduce the levels of asthma control table.",
+      "back_text": "Controlled: daytime symptoms and reliever use ≤ twice/week; no activity limitation; no nocturnal awakening; normal PEF/FEV1; no exacerbations. Partly controlled (any present in any week): symptoms > twice/week; any limitation; any nocturnal symptom; reliever > twice/week; PEF/FEV1 < 80% predicted; ≥ 1 exacerbation/year. Uncontrolled: ≥ 3 features of partly controlled asthma in any week. Consider stepping up if rescue SABA used ≥ 3 doses/week.",
+      "explanation_ar": "جدول الضبط: محكوم/جزئي/غير محكوم.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L8_q1",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "question_stem": "Which of the following terms best describes the airway's reaction in bronchial asthma?",
+      "options": [
+        "Lung fibrosis",
+        "Hypo-responsiveness",
+        "Airway hyper-responsiveness",
+        "Airway fatigue"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة: فرط استجابة المجرى الهوائي (AHR) هو المصطلح المميز — تضيق مفرط لمحفزات بسيطة لا تؤثر في الأصحاء. لا تليف ولا نقص استجابة ولا إنهاك.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L8_q2",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c4",
+      "question_stem": "Which of the following symptoms is commonly associated with bronchial asthma?",
+      "options": [
+        "Chest pain",
+        "Shortness of breath, especially at night or early morning",
+        "Persistent dry cough only during the daytime",
+        "High fever and chills"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة: أعراض الربو تزداد ليلاً وفي الصباح الباكر (زلة، أزيز، ضيق صدر، سعال). ألم الصدر والحمى ليسا من أعراضه الرباعية، والسعال النهاري وحده يخالف الطابع الليلي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L8_q3",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "question_stem": "Which lung function test is preferred to demonstrate variable airflow obstruction in asthma?",
+      "options": [
+        "Chest X-ray",
+        "Blood oxygen levels",
+        "Spirometry",
+        "MRI of the chest"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة: السبيرومترية هي الفحص المفضل لإظهار الانسداد المتغير (FEV1/FVC والانعكاسية). الأشعة والرنين لا تقيسان الوظيفة.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L8_q4",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "question_stem": "What two spirometry measurements are commonly used to assess lung function in asthma diagnosis?",
+      "options": [
+        "Tidal Volume (TV) and Inspiratory Reserve Volume (IRV)",
+        "Residual Volume (RV) and Functional Residual Capacity (FRC)",
+        "Forced Expiratory Volume in 1 second (FEV1) and Forced Vital Capacity (FVC)",
+        "Total Lung Capacity (TLC) and Inspiratory Capacity (IC)"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة: FEV1 وFVC هما المقياسان المستخدمان — نسبتهما (<70%) تثبت الانسداد وFEV1 يقيس الشدة والانعكاسية. الحجوم الأخرى لا تُقاس بالسبيرومترية.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L8_q5",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "question_stem": "What is the purpose of bronchodilator reversibility testing in asthma diagnosis?",
+      "options": [
+        "To confirm the presence of infection",
+        "To identify the severity of airway obstruction and see if it improves with treatment",
+        "To measure heart rate during breathing",
+        "To monitor blood oxygen levels"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة: اختبار الانعكاسية يحدد شدة الانسداد ويختبر تحسنه بعد العلاج (زيادة ≥12% و≥200 مل تدعم الربو).",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L8_q6",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "question_stem": "What is the first-line treatment for asthma?",
+      "options": [
+        "High-dose oral steroids",
+        "Low-dose inhaled glucocorticoid (ICS)",
+        "Antibiotics",
+        "Long-acting B2 agonists only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة: الخط الأول هو ICS منخفض الجرعة مع SABA عند الحاجة (إلا في MART). الستيرويد الفموي للخط الخامس، وLABA وحده ممنوع.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L8_q7",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "question_stem": "Frequent asthma exacerbations, defined as requiring 3–4 courses of glucocorticoids per year, suggest what level of asthma severity?",
+      "options": [
+        "Mild intermittent asthma",
+        "Mild persistent asthma",
+        "Severe asthma",
+        "Moderate asthma"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة: 3-4 كورسات كورتيكوستيرويد سنوياً تعني ربو شديداً يستوجب الإحالة لتقييم أخصائي (و>3 أشهر ستيرويد فموي أيضاً).",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        5
+      ]
+    },
+    {
+      "id": "L8_q8",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "question_stem": "What does the acronym 'MART' stand for in asthma treatment?",
+      "options": [
+        "Maintenance and Reliever Therapy",
+        "Medication and Rescue Treatment",
+        "Managed Asthma Respiratory Therapy",
+        "Maximum Asthma Relief Technique"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "سؤال المحاضرة: MART = صيانة وإغاثة — بخاخ مركب ICS+فورموتيرول فقط (بسبب بداية عمله السريعة) يُستخدم للغرضين معاً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L8_q9",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "question_stem": "What should be done if there is no improvement in asthma control with LABA?",
+      "options": [
+        "Decrease the ICS dose",
+        "Discontinue LABA and increase the ICS dose",
+        "Continue LABA and add a leukotriene receptor antagonist (LTRA)",
+        "Only monitor symptoms"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة: عند غياب الاستجابة لLABA يُوقف ويُرفع ICS إلى الجرعة المتوسطة (800 ميكروغرام BDP)؛ وعند الاستجابة الجزئية يُرفع ICS أو تُضاف LTRA/ثيوفيلين.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L8_q10",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "question_stem": "A patient with asthma should be referred for specialist assessment (biologic therapy) if they require how many courses of glucocorticoids per year?",
+      "options": [
+        "1–2 courses per year",
+        "3–4 courses per year",
+        "Only 1 course per year",
+        "5–6 courses per year"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة: العتبة 3-4 كورسات سنوياً (أو ستيرويد فموي >3 أشهر) للإحالة لتقييم الربو الشديد والنظر في العلاج البيولوجي (أوماليزوماب/ميبوليزوماب...).",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        5
+      ]
+    },
+    {
+      "id": "L8_q11",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c2",
+      "question_stem": "A 34-year-old asthmatic woman with nasal polyps takes aspirin for a headache and 30 minutes later develops severe wheeze. What is the mechanism?",
+      "options": [
+        "IgE-mediated mast cell degranulation to aspirin",
+        "COX inhibition shunting arachidonic acid to the lipoxygenase pathway → excess cysteinyl leukotrienes",
+        "Direct histamine release",
+        "Beta-2 receptor blockade"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الثلاثي: ربو + زوائد أنفية + حساسية أسبرين. تثبيط السايكلوأوكسيجيناز يحوّل حمض الأراكيدونيك نحو 5-ليبوأوكسيجيناز فتتراكم الليكوترينات السيستئينية القوية التضييق — ولذا تنفع مضادات مستقبلات الليكوترين.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ما المسار البديل بعد تثبيط COX؟",
+        "أي وسيط التهابي مسؤول؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L8_q12",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c6",
+      "question_stem": "A 28-year-old with poorly controlled asthma despite low-dose ICS is prescribed salmeterol monotherapy. What is the danger and the correct action?",
+      "options": [
+        "No danger — LABA alone is standard",
+        "LABA monotherapy is linked to increased risk of asthma death — switch to a combination ICS/LABA inhaler (formoterol combination enables MART)",
+        "Add oral prednisolone immediately",
+        "Refer for omalizumab now"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "القاعدة الصارمة: LABA وحده يرفع خطر الوفاة بالربو؛ يجب الجمع مع ICS في بخاخ واحد، وتكوين الفورموتيرول يسمح باستخدامه صيانةً وإغاثةً (MART).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ماذا يقول الدليل عن LABA وحده؟",
+        "أي LABA يصلح للإغاثة؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L8_q13",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "question_stem": "A patient records PEF each morning and evening for 2 weeks: morning values 380–420 L/min, evening values 520–560 L/min. What does this indicate?",
+      "options": [
+        "Normal variation",
+        "Diurnal PEF variation > 20% with morning dips — diagnostic of asthma",
+        "Restrictive disease",
+        "Poor effort"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الهبوط الصباحي مع فروق >20% بين الصباح والمساء (هنا نحو 25-30%) عبر ≥3 أيام في الأسبوع لأسبوعين = تذبذب تشخيصي للربو.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "احسب نسبة التذبذب",
+        "متى تكون القيم أدنى؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L8_q14",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c4",
+      "question_stem": "A 30-year-old asthmatic presents with a vasculitic rash, worsening asthma and marked blood eosinophilia. Which associated condition should be suspected?",
+      "options": [
+        "Eosinophilic granulomatosis with polyangiitis (Churg-Strauss syndrome)",
+        "COPD",
+        "Cystic fibrosis",
+        "Bronchiolitis obliterans"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ربو + طفح وعائي + يوزينية دموية عالية = التهاب الوعاء اليوزيني مع التهاب الأوعية (EGPA/شورغ-ستراوس) المذكور في فحص المرضى المرافق للربو.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ثلث الشرايط: ربو + يوزينية + التهاب أوعية؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L8_q15",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c7",
+      "question_stem": "Which side effect is characteristic of high-dose short-acting beta-2 agonist use in acute severe asthma?",
+      "options": [
+        "Hyperkalaemia",
+        "Hypokalaemia (with tremor, tachycardia, arrhythmias)",
+        "Hypercalcaemia",
+        "Metabolic alkalosis only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ناهضات بيتا-2 تدفع البوتاسيوم داخل الخلايا → نقص بوتاسيوم مع رجفان وتسرع قلب واضطرابات نظم — الآثار المذكورة حرفياً في المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أين ينتقل البوتاسيوم بفعل بيتا-2؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L8_q16",
+      "lecture_id": "L8_bronchial_asthma",
+      "concept_id": "L8_c5",
+      "question_stem": "A methacholine challenge test is performed in a symptomatic patient with normal spirometry. Which statement is correct?",
+      "options": [
+        "A negative test rules out asthma with high confidence (high negative predictive value)",
+        "A positive test is diagnostic of asthma alone",
+        "The test is only for COPD",
+        "It replaces PEF diaries in all patients"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اختبار فرط الاستجابة ذو قيمة تنبؤية سلبية عالية: السلبي يستبعد الربو عملياً؛ لكن الإيجابي يظهر أيضاً في COPD وتوسع القصبات والتليف الكيسي فليس نوعياً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ما قيمة الاختبار السلبية؟ وما أمر إيجابيته؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L8_case1",
+      "lecture_id": "L8_bronchial_asthma",
+      "title": "From Recurrent 'Chest Infections' to Controlled Asthma — The Stepwise Ladder",
+      "scenario": "A 24-year-old nursing student is referred for a 6-month history of recurrent wheeze, chest tightness and nocturnal cough that have been repeatedly treated as 'chest infections'. Her symptoms flare with cleaning products at the hospital, with exercise in cold weather, and she has twice needed nebulized salbutamol in the past 3 months. This case walks the student through objective diagnosis with spirometry and reversibility, then up and down the stepwise management ladder, including the safety rule about LABA monotherapy.",
+      "vignette": {
+        "age": 24,
+        "sex": "female",
+        "chief_complaint": "Recurrent wheeze, chest tightness and nocturnal cough for 6 months",
+        "history": "Atopic background: childhood eczema and allergic rhinitis; keeps a cat at home. Symptoms worse at night and around 4 AM, with exercise (especially in cold weather) and with hospital cleaning agents. Two courses of 'antibiotics' in 3 months without benefit; salbutamol inhaler gives clear relief. No smoking. Family history: mother has asthma.",
+        "vitals": {
+          "bp": "112/70 mmHg",
+          "hr": "88 beats/min",
+          "rr": "18 breaths/min",
+          "temp": "36.6 C",
+          "spo2": "97% on room air"
+        },
+        "exam": "Mild expiratory polyphonic wheeze on forced expiration; otherwise normal chest. Eczema of flexures; nasal mucosa boggy, no polyps seen on anterior rhinoscopy. No clubbing, no cyanosis.",
+        "labs": [
+          {
+            "name": "Blood eosinophils",
+            "value": "0.55 x10^9/L (<0.45)",
+            "flag": "high"
+          },
+          {
+            "name": "Serum total IgE",
+            "value": "320 IU/mL (<100)",
+            "flag": "high"
+          },
+          {
+            "name": "Spirometry pre-bronchodilator",
+            "value": "FEV1 2.24 L (66% pred), FVC 3.40 L, FEV1/FVC 66%",
+            "flag": "low"
+          },
+          {
+            "name": "Spirometry post-salbutamol (15 min)",
+            "value": "FEV1 2.72 L (+21.4%, +480 mL), FEV1/FVC 76%",
+            "flag": "normal"
+          },
+          {
+            "name": "FeNO",
+            "value": "62 ppb (<25)",
+            "flag": "high"
+          },
+          {
+            "name": "PEF diary (2 weeks)",
+            "value": "Morning mean 330 L/min, evening mean 445 L/min (diurnal variation ~26%)",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Chest X-ray: hyperinflation — flattened diaphragms and horizontal ribs with 7 anterior ribs visible above the diaphragm; no pneumothorax, collapse or consolidation."
+      },
+      "steps": [
+        {
+          "id": "L8_case1_s1",
+          "prompt": "Which findings objectively establish the diagnosis of asthma?",
+          "options": [
+            "Blood eosinophilia and high IgE alone",
+            "Obstructive spirometry (FEV1/FVC 66%) with significant reversibility (+21.4% and +480 mL > the 12%/200 mL threshold) plus > 20% diurnal PEF variation — in an atopic patient with typical history",
+            "The chest X-ray hyperinflation",
+            "Response to antibiotics"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الانسداد (نسبة <70%) + انعكاسية معتبرة (>12% و>200 مل — بل تجاوزت 15% و400 مل مما يزيد الثقة) + تذبذب PEF اليومي >20% = تأكيد موضوعي للربو. اليوزينية وIgE وFeNO دعامات، والصورة تدعم فقط.",
+          "xp": 15,
+          "hints": [
+            "طبّق عتبتي 12% و200 مل",
+            "ما نسبة التذبذب اليومي في يوميات PEF؟"
+          ]
+        },
+        {
+          "id": "L8_case1_s2",
+          "prompt": "According to the stepwise approach, what is the correct first-line controller therapy and device counseling?",
+          "options": [
+            "Oral prednisolone daily",
+            "Low-dose ICS (e.g., BDP 400 mcg/day) with SABA as reliever, plus trigger avoidance (cat, cleaning agents) and inhaler-technique teaching (MDI: shake, exhale, slow deep inhalation, 10-second breath-hold)",
+            "Salmeterol monotherapy",
+            "Antibiotic courses for 'infections'"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الخط الأول: ICS منخفض (400 ميكروغرام BDP أو ما يعادلها) مع SABA عند الحاجة، مع تجنب المحفزات وتعليم تقنية البخاخ — نص المحاضرة حرفياً. الستيرويد الفموي للخط الخامس، وLABA وحده محظور (خطر موت بالربو).",
+          "xp": 15,
+          "hints": [
+            "ما الخط الأول في النهج التدريجي؟",
+            "ماذا يجب أن يُعلم حول الجهاز؟"
+          ]
+        },
+        {
+          "id": "L8_case1_s3",
+          "prompt": "Three months later she still needs salbutamol 5 times/week and wakes twice weekly at 4 AM despite good ICS adherence. What is the next step?",
+          "options": [
+            "Stop ICS and observe",
+            "Add a LABA as a COMBINATION ICS/LABA inhaler (formoterol combination enables MART)",
+            "Add LABA alone for simplicity",
+            "Start omalizumab immediately"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تحكم جزئي رغم ICS منتظم = الخطوة 2: إضافة LABA، ووجوباً في بخاخ مركب ICS/LABA منعاً لLABA وحده المرتبط بزيادة خطر الوفاة بالربو؛ تركيبة الفورموتيرول تتيح MART (صيانة وإغاثة).",
+          "xp": 15,
+          "hints": [
+            "أي قاعدة أمان تحكم إضافة LABA؟",
+            "أي LABA يصلح مُنقذاً؟"
+          ]
+        },
+        {
+          "id": "L8_case1_s4",
+          "prompt": "After a further 3 months she is well controlled with no night waking and reliever use once weekly. What is the appropriate maintenance decision?",
+          "options": [
+            "Continue the same dose permanently",
+            "Step down: titrate the glucocorticoid dose down by 25–50% every 3 months to the lowest dose maintaining control",
+            "Stop all inhalers today",
+            "Escalate to high-dose ICS for safety"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "قاعدة التنازل: عند تحقق الضبط، تُخفض جرعة الكورتيكوستيرويد بنحو 25-50% كل 3 أشهر حتى أدنى جرعة تحافظ على الضبط — موازنة بين الفعالية وآثار ICS (التهاب بلعوم، سادّة، إعتام عدسة).",
+          "xp": 10,
+          "hints": [
+            "ما نسبة ووتيرة التخفيض؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: ربو قصبي أتوبي متوسط (غير مضبوط سابقاً) مع محفزات مهنية ومنزلية. الدروس المستفادة: (1) التشخيص موضوعي لا سريري فقط: انسداد FEV1/FVC <70% + انعكاسية ≥12% و≥200 مل (ثقة أعلى >15% و>400 مل كما حققت المريضة +480 مل) + تذبذب PEF >20%. (2) معيّات الدعم: يوزينية، IgE مرتفع، FeNO مرتفع = التهاب يوزيني يستجيب جيداً لICS. (3) المحفزات: قطة، منظفات، جهد في البرد؛ وحتى قطرات عين بيتا حاصرة قد تفعل مثلها — اسأل عن كل دواء. (4) السلّم: خط 1 = ICS منخفض (BDP 400)؛ خط 2 = إضافة LABA ببخاخ مركب فقط (LABA وحده = خطر موت)؛ formoterol يتيح MART. (5) التنازل 25-50% كل 3 أشهر بعد الضبط. (6) إحالة الربو الشديد عند >3-4 كورسات ستيرويد سنوياً أو >3 أشهر فموي — مع البيولوجيات حسب النمط (أوماليزوماب IgE؛ مضادات IL5 لليوزيني).",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

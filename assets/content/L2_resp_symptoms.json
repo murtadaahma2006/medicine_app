@@ -1,0 +1,937 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L2_resp_symptoms",
+    "specialty": "internal_medicine",
+    "title": "Symptoms of Respiratory Disease",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L2 Respiratory.pdf",
+      "page_count": 7
+    },
+    "tags": [
+      "cough",
+      "dyspnea",
+      "chest-pain",
+      "hemoptysis",
+      "wheeze",
+      "stridor",
+      "cyanosis",
+      "clinical-signs"
+    ],
+    "order_index": 1,
+    "golden_tip": [
+      "EXAM TRAP: A BOVINE cough means VOCAL CORD involvement (recurrent laryngeal nerve palsy) — a barking croup cough is subglottic. Also: nocturnal asthma cough peaks at 3–5 AM, whereas PND of left heart failure occurs 1–2 hours after falling asleep.",
+      "ACE-inhibitor cough is DRY, occurs in 5–30% of users, may start as late as 6 MONTHS after initiation (excess bradykinin), resolves after cessation but you may need to wait 1 month to confirm — always ask about drugs before working up chronic cough with a normal chest X-ray.",
+      "CENTRAL cyanosis involves the tongue and mucous membranes; PERIPHERAL cyanosis spares the sublingual mucosa. Central cyanosis + clubbing = congenital heart disease, Eisenmenger, lung abscess, or pulmonary AV fistula."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L2_c1",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "Cough: Definition, Mechanism and Causes by Duration and Site",
+      "summary_ar": "السعال: التعريف والآلية والتصنيف الزمني (حاد/تحت حاد/مزمن) والتفكير التشريحي من البلعوم حتى النسيج الرئوي.",
+      "sections": [
+        {
+          "heading": "Definition and Mechanism",
+          "body_text": "**Cough is a sound produced by expulsion of air against a partially closed glottis.** It serves as a **protective mechanism against foreign bodies, retained secretions and aspirated material**. The mechanism of cough is as follows: cough receptors are scattered on the respiratory mucosa and the lower esophagus; stimulation of these receptors sends signals **via vagus nerve branches to the medulla oblongata**, which in turn sends impulses to the respiratory muscles **via the phrenic nerve and spinal nerves**. Anything that interrupts this arc (weak muscles, suppressed cough center, viscid secretions) produces an ineffective cough and predisposes to retention of secretions and infection.",
+          "key_points": [
+            "Cough = expulsion of air against a partially closed glottis (protective)",
+            "Receptors in respiratory mucosa + lower esophagus → vagus → medulla → phrenic/spinal nerves to muscles"
+          ]
+        },
+        {
+          "heading": "Classification by Duration (Aetiology)",
+          "body_text": "Acute cough is often a viral infection and usually self-limiting, while chronic cough arouses suspicion of chronic debilitating illnesses like malignancy, tuberculosis or other inflammatory conditions. The formal classification: **(1) Acute cough: less than 3 weeks** — viral infection, aspiration, inhalation of noxious material. **(2) Subacute cough: 3–8 weeks** — post-viral tussive syndrome and pertussis. **(3) Chronic cough: more than 8 weeks** — infections (e.g., TB), neoplasm, bronchiectasis and COPD. This time-based framework is the first branch point in every exam vignette about cough: think viral/irritant for acute, post-infectious/pertussis for subacute, and structural/chronic disease for chronic cough.",
+          "key_points": [
+            "Acute < 3 weeks: viral infection, aspiration, noxious inhalation",
+            "Subacute 3–8 weeks: post-viral tussive syndrome, pertussis",
+            "Chronic > 8 weeks: TB, neoplasm, bronchiectasis, COPD (think chronic debilitating disease)"
+          ]
+        },
+        {
+          "heading": "Anatomic Considerations: Pharynx and Larynx",
+          "body_text": "**Pharynx**: cough originating from the pharynx is commonly due to **post-nasal drips (upper airway cough syndrome)**; secretions drip down onto the pharyngeal mucosa, usually with a history of chronic rhinitis. Cough may also be noticed with any irritation of the pharynx, as in infection (viral or bacterial), **gastroesophageal reflux (GERD)**, cigarette smoking and allergy. **Larynx**: acute laryngitis is usually a viral infection (influenza, parainfluenza, RSV, adenovirus) or bacterial (Haemophilus influenzae, diphtheria). Chronic laryngitis is commonly caused by cigarette smoking, GERD, TB and fungal infection in immunocompromised patients. **Laryngeal cough has a characteristic sound called bovine cough, where the vocal cord is affected.** Paroxysms of cough are often accompanied by stridor; common causes in these circumstances are viral laryngitis, tumor and smoking.",
+          "key_points": [
+            "Pharyngeal cough: post-nasal drip (UACS), chronic rhinitis; also GERD, smoking, allergy, infections",
+            "Acute laryngitis: viral (influenza, parainfluenza, RSV, adenovirus) or bacterial (H. influenzae, diphtheria)",
+            "Chronic laryngitis: smoking, GERD, TB, fungal (immunocompromised)",
+            "BOVINE cough = vocal cord affected",
+            "Paroxysms of cough + stridor: viral laryngitis, tumor, smoking"
+          ]
+        },
+        {
+          "heading": "Anatomic Considerations: Trachea and Bronchi",
+          "body_text": "**Trachea**: viral tracheitis is a common cause; tracheitis is characterized by **retrosternal pain usually with a dry cough**. **Bronchi**: cough from the bronchi is either acute (usually viral), which may be dry or productive, or a chronic type seen as **chronic bronchitis** due to longstanding tobacco smoking — usually **productive and worse in the morning**. **Cough in asthma is usually worse at night** and must be differentiated from **paroxysmal nocturnal dyspnea (PND) of left-sided heart failure**. **Cough due to bronchogenic lung cancer is usually persistent and accompanied by hemoptysis**. **Eosinophilic bronchitis has features similar to asthma but airway hyperreactivity is absent.** These site-specific patterns allow you to localize the origin of a cough from the history alone before any investigation.",
+          "key_points": [
+            "Tracheitis: retrosternal pain + dry cough (commonly viral)",
+            "Chronic bronchitis: tobacco smoking, productive, WORSE IN THE MORNING",
+            "Asthma cough: WORSE AT NIGHT (3–5 AM); differentiate from PND of LV failure",
+            "Bronchogenic cancer: persistent cough + hemoptysis",
+            "Eosinophilic bronchitis: asthma-like but NO airway hyperreactivity"
+          ]
+        },
+        {
+          "heading": "Anatomic Considerations: Lung Parenchyma and Impaired Cough",
+          "body_text": "**Lung parenchyma**: cough in parenchymal lung diseases is often accompanied by **hemoptysis**, as in pneumonia or cancer. **Cough due to tuberculosis is usually associated with night sweats and fever with hemoptysis.** **Cough in pulmonary edema is often at night with frothy pinkish sputum.** In **ILD (interstitial lung disease) the cough is distressing and dry.** **Impaired cough**: the cough reflex becomes interrupted and weak due to weak respiratory muscles (abdominal, intercostal), chest wall deformity, abnormal airway secretions (viscid secretions), or suppression of the respiratory center in deep coma, by drugs, encephalitis or stroke. Patients with impaired cough are at high risk of aspiration pneumonia and retained secretions.",
+          "key_points": [
+            "Parenchymal disease: cough + hemoptysis (pneumonia, cancer)",
+            "TB cough: night sweats + fever + hemoptysis",
+            "Pulmonary edema: nocturnal cough with frothy pink sputum",
+            "ILD: distressing dry cough",
+            "Impaired cough: weak muscles, chest wall deformity, viscid secretions, suppressed center (coma, drugs, encephalitis, stroke)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Upper airway cough syndrome (UACS)",
+          "definition_ar": "متلازمة السعال الناتجة عن تنقيط الأنف الخلفي؛ سبب شائع للسعال المزمن."
+        },
+        {
+          "term": "Bovine cough",
+          "definition_ar": "سعال بلا طابع الانفجاري بسبب إصابة الحبل الصوتي (شلل العصب الحنجري الراجع)."
+        },
+        {
+          "term": "Post-viral tussive syndrome",
+          "definition_ar": "سعال متبقٍ بعد فيروسي يستمر 3-8 أسابيع بعد زوال العدوى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L2_c2",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "Chronic Cough with Normal Chest X-ray, and Complications of Cough",
+      "summary_ar": "أسباب السعال المزمن مع صورة صدر طبيعية (مثبطات ACE، الارتجاع، تنقيط الأنف، سعال الربو، التهاب القصبات اليوزيني) ومضاعفات السعال.",
+      "sections": [
+        {
+          "heading": "The Six Causes of Chronic Cough with Normal CXR and Examination",
+          "body_text": "This is a high-yield exam list: the causes of chronic cough with a **normal chest X-ray and normal clinical examination**: **(1) ACE inhibitors (5–30% of users)** — the steps of ACE inhibition leave **excess bradykinin** in the lungs; the cough usually starts after one week but can be seen **after 6 months**; it causes irritation of nerve endings (mechanism not fully clear); **cessation of the ACE inhibitor stops the cough, but waiting one month is sometimes necessary** to rule out the ACEI effect; the cough is usually **dry**. **(2) Gastroesophageal reflux (GERD)**. **(3) Upper airway cough syndrome (post-nasal drip syndrome)** — features include heart burn, obesity and hoarseness of voice. **(4) Cough-variant asthma** — more common in children, not in adults. **(5) Eosinophilic bronchitis** — chronic cough with elevated sputum eosinophils; patients are usually atopic with asthma-like features but **airway hyperreactivity is absent**. **(6) Cough hypersensitivity syndrome** — dry or minimally productive cough triggered by laughing, talking or exercise; it **may respond to gabapentin**.",
+          "key_points": [
+            "ACEI cough: 5–30%, excess bradykinin, dry, may start 1 week to 6 months after initiation",
+            "Stop ACEI → cough resolves, but allow up to 1 month to confirm",
+            "GERD and UACS (post-nasal drip): heartburn, obesity, hoarseness",
+            "Cough-variant asthma: mainly CHILDREN",
+            "Eosinophilic bronchitis: atopic, high sputum eosinophils, NO hyperreactivity",
+            "Cough hypersensitivity syndrome: triggered by laughing/talking/exercise; may respond to gabapentin"
+          ],
+          "check": {
+            "prompt": "A 60-year-old woman on lisinopril for 3 months develops a persistent dry cough; CXR and exam are normal. What is the best next step?",
+            "options": [
+              "Start antibiotics",
+              "Stop the ACE inhibitor and switch to an ARB",
+              "CT chest",
+              "Bronchoscopy",
+              "Start gabapentin"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "سعال مثبطات الإنزيم المحول جاف ويحدث في 5-30% من المستخدمين؛ الإيقاف والتحويل إلى مضاد مستقبلات أنجيوتنسين هو الخطوة الصحيحة، وقد يحتاج شهراً حتى يزول السعال."
+          }
+        },
+        {
+          "heading": "Complications of Cough",
+          "body_text": "Cough is protective, but when severe or prolonged it produces its own complications. The lecture lists three: **(1) headache** (raised intrathoracic and venous pressure during paroxysms), **(2) urinary incontinence** (stress incontinence from repeated spikes in intra-abdominal pressure, especially in multiparous women and the elderly), and **(3) musculoskeletal pain** (intercostal muscle strain, costochondral injury, and even rib fractures in severe cases, e.g., in osteoporotic patients or pertussis). Recognizing these complications matters clinically because they may be the presenting complaint of the underlying cough, and in the exam they appear as vignettes of 'cough with urinary leakage' pointing to chronic cough etiologies.",
+          "key_points": [
+            "Headache",
+            "Urinary incontinence",
+            "Musculoskeletal pain — the three listed complications of cough"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Bradykinin",
+          "definition_ar": "براديكينين: مادة تتراكم في الرئة عند تثبيط الإنزيم المحول للأنجيوتنسين وتسبب تهييج النهايات العصبية والسعال الجاف."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L2_c3",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "Dyspnea (Breathlessness)",
+      "summary_ar": "ضيق النفس: تعريفه وأهمية سرعة البدء والتوزيع السببي (جهازي، قلبي، تنفسي بمواقعه) والعوامل الموقفية والليلية.",
+      "sections": [
+        {
+          "heading": "Definition and Onset Timing (Minutes to Years)",
+          "body_text": "Dyspnea means the **feeling of an uncomfortable need to breathe**. The onset speed is diagnostic. **Sudden (within minutes)**: inhalation of a foreign body, severe asthmatic attack, pulmonary embolism, rapid build-up of air in the pleural space in pneumothorax, or ischemic heart disease causing rapid pulmonary edema. **Less sudden, over hours or days**: infectious causes like pneumonia or mucopurulent exacerbation of COPD, or the slow inflammatory response of a mild-to-moderate bronchial asthma attack. **Weeks to months**: slow progressive pleural effusion or anemia. **Years**: pulmonary fibrosis or COPD. This 'tempogram' of dyspnea is one of the most powerful diagnostic tools in respiratory medicine and a favorite exam device.",
+          "key_points": [
+            "Minutes: foreign body, severe asthma, PE, pneumothorax, acute pulmonary edema (IHD)",
+            "Hours–days: pneumonia, COPD exacerbation, mild-moderate asthma attack",
+            "Weeks–months: progressive pleural effusion, anemia",
+            "Years: pulmonary fibrosis, COPD"
+          ]
+        },
+        {
+          "heading": "Aetiology by System",
+          "body_text": "Dyspnea is observed among widespread diseases including systemic, respiratory and cardiac diseases — it is found in the majority of lower respiratory tract diseases, and almost all severe cardiac illnesses including pericardial, myocardial and valvular diseases. **(1) Systemic causes**: anemia, obesity, psychogenic, metabolic acidosis. **(2) Cardiac causes**: pericarditis, pericardial effusion, cardiomyopathies, ischemic heart diseases, mitral valve diseases. **(3) Respiratory causes**: **(A) Airway** — laryngeal tumor, foreign body, asthma, COPD, bronchiectasis, bronchogenic cancer, bronchopneumonia; **(B) Parenchyma** — pneumoconiosis, ILD, sarcoidosis, TB, lobar pneumonia, lung cancer (primary and secondary); **(C) Pulmonary circulation** — pulmonary embolism, primary pulmonary hypertension, vasculitis; **(D) Pleura** — pneumothorax, pleural effusion, empyema; **(E) Chest wall and neuromuscular** — kyphosis, kyphoscoliosis, Guillain–Barre syndrome, myasthenia gravis.",
+          "key_points": [
+            "Systemic: anemia, obesity, psychogenic, metabolic acidosis",
+            "Cardiac: pericarditis/effusion, cardiomyopathies, IHD, mitral valve disease",
+            "Airway: tumor, foreign body, asthma, COPD, bronchiectasis, cancer, bronchopneumonia",
+            "Parenchyma: pneumoconiosis, ILD, sarcoidosis, TB, lobar pneumonia, cancer",
+            "Circulation: PE, primary pulmonary HTN, vasculitis",
+            "Pleura: pneumothorax, effusion, empyema",
+            "Chest wall/neuromuscular: kyphoscoliosis, Guillain–Barre, myasthenia gravis"
+          ]
+        },
+        {
+          "heading": "Positional and Nocturnal Patterns",
+          "body_text": "Positional clues refine the differential. **Dyspnea on lying flat (orthopnea)** indicates left-sided heart failure, but also occurs in ascites, pregnancy, or a large pleural effusion. **Dyspnea that improves on lying and worsens upright (platypnea)** suggests a **right-to-left shunt due to patent foramen ovale or ASD**. **Paroxysmal nocturnal dyspnea (PND)** is the characteristic dyspnea of left-sided heart failure, occurring **1–2 hours after sleep**, and must be differentiated from the dyspnea of asthmatic patients, which usually occurs at **3–5 AM**. The severity of dyspnea (and of heart failure symptoms) is graded with the **NYHA classification**. These timing/position patterns frequently decide between a cardiac and a respiratory cause in clinical practice.",
+          "key_points": [
+            "Orthopnea (flat position): left heart failure, ascites, pregnancy, large pleural effusion",
+            "Platypnea (upright): right-to-left shunt — PFO or ASD",
+            "PND: left heart failure, 1–2 hours AFTER falling asleep",
+            "Nocturnal asthma: 3–5 AM",
+            "Severity graded by NYHA classification"
+          ],
+          "check": {
+            "prompt": "A patient wakes gasping 1–2 hours after falling asleep, and another wakes wheezing at 4 AM. Which pattern fits left-sided heart failure?",
+            "options": [
+              "The 4 AM wheezer",
+              "The 1–2 hour after sleep gasper",
+              "Both equally",
+              "Neither"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ضيق النفس الانتيابي الليلي لفشل القلب الأيسر يحدث بعد 1-2 ساعة من النوم، بينما الربو الليلي يبلغ ذروته بين 3-5 صباحاً — تمييز زمني كلاسيكي في الامتحانات."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Orthopnea",
+          "definition_ar": "ضيق النفس عند الاستلقاء؛ علامة فشل قلب أيسر (أو حبن/حمل/انصباب كبير)."
+        },
+        {
+          "term": "Platypnea",
+          "definition_ar": "ضيق النفس عند الجلوس/الوقوف مع تحسن عند الاستلقاء؛ يوحي بتحويلة من يمين ل يسار (PFO/ASD)."
+        },
+        {
+          "term": "PND",
+          "definition_ar": "ضيق النفس الليلي الانتيابي: يستيقظ المريض بعد 1-2 ساعة من النوم؛ سمة فشل القلب الأيسر."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L2_c4",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "Chest Pain and Hemoptysis",
+      "summary_ar": "ألم الصدر من منشأ تنفسي (الجنبي المميز وإحالة الحجاب) ونفث الدم: تعريفه وحجمه الهائل وأسبابه الشاملة.",
+      "sections": [
+        {
+          "heading": "Chest Pain: Pain-Sensitive Structures and Respiratory Causes",
+          "body_text": "The pain-sensitive structures in the chest are the **parietal pleura, the chest wall and the mediastinum**; the innervation of the lung itself is totally autonomic (visceral), so lung parenchyma is insensitive to pain. **Pleuritic chest pain is sharp and stabbing and worsens with inspiration**. Irritation of the parietal pleura over the **upper six ribs** causes localized chest pain, while irritation of the parietal pleura **over the diaphragm** causes **referred pain to the neck or shoulder** (phrenic nerve C3–5 distribution). The respiratory causes of chest pain are: **herpetic neuralgia, muscle spasm, rib fracture, chest wall invasion by cancer, costochondritis, pleurisy, pneumothorax, pulmonary infarction and pulmonary embolism.**",
+          "key_points": [
+            "Pain-sensitive: parietal pleura, chest wall, mediastinum (lung parenchyma is visceral/autonomic)",
+            "Pleuritic pain: sharp, stabbing, worse on inspiration",
+            "Upper 6 ribs pleura → localized pain; diaphragmatic pleura → referred to neck/shoulder",
+            "Causes: herpetic neuralgia, muscle spasm, rib fracture, cancer invasion, costochondritis, pleurisy, pneumothorax, pulmonary infarction, PE"
+          ]
+        },
+        {
+          "heading": "Hemoptysis: Definition and Alveolar Causes",
+          "body_text": "**Massive hemoptysis is defined as more than 200–600 mL per 24 hours.** Hemoptysis is the expectoration of blood from the respiratory tract; it may arise anywhere **from the alveoli up to the glottis**, and should be differentiated from **hematemesis (from the GIT)**. Hemoptysis may be as simple as acute bronchitis or as terrifying as lung cancer. At the **alveolar level**, bleeding is basically due to injury to capillaries or small vessels — this is seen in **diffuse alveolar hemorrhage (DAH)** as in **Wegener's granulomatosis (granulomatosis with polyangiitis)** or autoimmune diseases like **SLE**, or injury to the alveolar basement membrane as in **Goodpasture's syndrome** (anti-GBM disease). **Autoantibodies after bone marrow transplantation** can also target the lungs causing hemorrhage. Injury may also occur by **inhalation of toxic chemicals like cocaine or smoke from fire, or physical trauma.** Hemoptysis is common among patients **receiving anticoagulants or antiplatelets** or with any bleeding tendency like **thrombocytopenia**.",
+          "key_points": [
+            "Massive hemoptysis: > 200–600 mL/24 h",
+            "Origin: alveoli up to glottis (differentiate from hematemesis)",
+            "DAH: GPA (Wegener's), SLE; anti-GBM = Goodpasture's",
+            "Post-bone-marrow-transplant autoantibodies can cause alveolar hemorrhage",
+            "Toxic inhalation (cocaine, fire smoke), trauma",
+            "Anticoagulants/antiplatelets and thrombocytopenia predispose"
+          ]
+        },
+        {
+          "heading": "Hemoptysis: Airway, Neoplastic and Vascular Causes",
+          "body_text": "Owing to the **proximity of blood vessels to the bronchial tree**, any airway infection — viral, bacterial or even fungal — can cause hemoptysis. Thus **acute bronchitis, pneumonia, acute mucopurulent exacerbations of COPD, bronchiectasis, lung abscess, TB and lung cancer (primary or metastatic)** can all present with hemoptysis. **Hemoptysis accounts for 10% of presentations of lung cancer**, especially **small cell carcinoma and squamous cell carcinoma** — these two are the more common cancer causes of hemoptysis because of their **proximity to the hilum, where they erode the hilar vessels**. Vascular causes of hemoptysis include **congestive heart failure** (elevated left atrial pressure with consequent pulmonary congestion), **pulmonary AV malformations** and **pulmonary embolism with infarction**, all of which are significant causes.",
+          "key_points": [
+            "Airway infections (viral/bacterial/fungal) bleed because vessels lie close to bronchi",
+            "List: acute bronchitis, pneumonia, COPD exacerbation, bronchiectasis, lung abscess, TB, cancer",
+            "10% of lung cancer presentations; SCLC and squamous cell (hilar, erode vessels)",
+            "Vascular: CHF (high LA pressure), pulmonary AV malformations, PE with infarction"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Massive hemoptysis",
+          "definition_ar": "نفث دم يزيد عن 200-600 مل في 24 ساعة؛ حالة إسعافية تهدد الحياة بالاختناق."
+        },
+        {
+          "term": "DAH",
+          "definition_ar": "نزف سنخي منتشر: نزف شعري منتشر يحدث في التهاب الأوعية (GPA، SLE) أو متلازمة غودباستشر."
+        },
+        {
+          "term": "Goodpasture syndrome",
+          "definition_ar": "متلازمة غودباستشر: أضداد ضد الغشاء القاعدي السنخي الكبيبي تسبب نزفاً سنخياً والتهاب كبيبات الكلى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L2_c5",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "Wheeze, Stridor and Cyanosis",
+      "summary_ar": "الأزيز والصفير: تعريفهما وفروقهما وأسبابهما، والزُراق المركزي والمحيطي وأسبابهما والزُراق مع تبقرط الأصابع.",
+      "sections": [
+        {
+          "heading": "Wheeze",
+          "body_text": "**Wheeze is a high-pitched whistling sound due to airway narrowing.** Wheezing is **more prominent at expiration** because of the increased intrathoracic pressure that compresses airways during expiration; **if an inspiratory wheeze exists, it often indicates severe airway obstruction**. Aetiology: **bronchospastic conditions like COPD or bronchial asthma**; **mucosal edema** (bronchopneumonia, congestive heart failure — 'cardiac asthma'); **external compression by tumor or lymph nodes**; and **partial obstruction by foreign body, tumor or tenacious secretions**. Note the exam nuance: a **monophonic/fixed wheeze** suggests a single localized obstruction (foreign body or tumor), whereas **polyphonic wheeze** suggests diffuse airway narrowing (asthma/COPD).",
+          "key_points": [
+            "High-pitched whistling from airway narrowing; predominantly expiratory",
+            "Inspiratory wheeze = severe obstruction",
+            "Causes: bronchospasm (asthma, COPD), mucosal edema (bronchopneumonia, CHF), external compression (tumor/lymph), partial obstruction (foreign body, tumor, secretions)"
+          ]
+        },
+        {
+          "heading": "Stridor",
+          "body_text": "**Stridor is a high-pitched sound due to partial UPPER airway obstruction.** It is commonly **inspiratory**, but it can be expiratory or biphasic. **Stridor due to tracheobronchial diseases is often of the expiratory type, while inspiratory stridor indicates vocal cord narrowing.** Common causes of stridor are **epiglottitis, tumor of the trachea or major bronchi, and foreign body**. Stridor at rest is always an emergency: it implies critical narrowing of the central airway and demands immediate airway assessment, sometimes before any examination maneuver is attempted.",
+          "key_points": [
+            "High-pitched sound from partial UPPER airway obstruction",
+            "Usually inspiratory; can be expiratory or both",
+            "Expiratory stridor → tracheobronchial disease; inspiratory stridor → vocal cord narrowing",
+            "Causes: epiglottitis, tracheal/major bronchial tumor, foreign body"
+          ]
+        },
+        {
+          "heading": "Cyanosis: Definition and Peripheral Type",
+          "body_text": "**Cyanosis is a bluish discoloration of skin and mucous membranes due to the presence of deoxygenated hemoglobin exceeding 4 g/dL, or PaO2 < 85% (< 75% in dark-skinned patients).** It is either central or peripheral. **Peripheral cyanosis**: there is **normal arterial oxygen saturation**; it is most commonly due to a fall in regional blood flow — as in **vasoconstriction from cold exposure**, **decreased cardiac output as in heart failure**, or **Raynaud's phenomenon**. It affects the **fingers, toes, lips and tip of the nose, often SPARING the mucous membrane of the oral cavity including the sublingual mucosa**. **Venous and arterial obstruction are important causes** of peripheral cyanosis. The sublingual examination is thus the clinical trick to separate peripheral from central cyanosis at the bedside.",
+          "key_points": [
+            "Bluish discoloration from deoxygenated Hb > 4 g/dL (or PaO2 < 85%; < 75% in dark skin)",
+            "PERIPHERAL: normal arterial saturation; regional flow fall — cold, heart failure, Raynaud's",
+            "Affects fingers, toes, lips, nose tip; SPARES sublingual/oral mucosa",
+            "Venous and arterial obstruction are important causes"
+          ]
+        },
+        {
+          "heading": "Central Cyanosis and Cyanosis with Clubbing",
+          "body_text": "**Central cyanosis** exists in the **mucous membranes and tongue**: deoxygenated hemoglobin is more than 4 g/L and the PaO2 is less than 85%. Aetiology: **(A) Cardiac**: cyanotic congenital heart disease like **tetralogy of Fallot**, heart failure, and **reversed shunt (Eisenmenger's syndrome)**. **(B) Respiratory**: ascent to **altitudes above 4000 m**, **narcotics**, **alveolar hypoventilation**, **pneumonia**, **bronchial asthma**, **COPD**, and **pulmonary AV fistula** (in hereditary hemorrhagic telangiectasia and liver cirrhosis). **(C) Abnormal hemoglobins**: **methemoglobinemia and sulfhemoglobinemia** — these cause cyanosis with a NORMAL PaO2, a classic exam trap. Finally, **cyanosis with clubbing of fingers is seen in**: (1) congenital heart disease, (2) Eisenmenger's syndrome, (3) lung abscess, and (4) pulmonary AV fistula.",
+          "key_points": [
+            "CENTRAL: mucous membranes and tongue involved; deoxygenated Hb > 4 g/L, PaO2 < 85%",
+            "Cardiac: TOF, heart failure, Eisenmenger's (reversed shunt)",
+            "Respiratory: altitude > 4000 m, narcotics, hypoventilation, pneumonia, asthma, COPD, pulmonary AV fistula (HHT, cirrhosis)",
+            "Abnormal Hb: methemoglobinemia, sulfhemoglobinemia (cyanosis with normal PaO2)",
+            "Cyanosis + clubbing: congenital heart disease, Eisenmenger's, lung abscess, pulmonary AV fistula"
+          ],
+          "check": {
+            "prompt": "A patient has blue lips and tongue with SpO2 85% that does NOT improve with high-flow oxygen, and normal-looking fingers. Which category fits best?",
+            "options": [
+              "Peripheral cyanosis",
+              "Central cyanosis from respiratory disease",
+              "Methemoglobinemia (abnormal hemoglobin)",
+              "Raynaud phenomenon"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الزُراق مع نقص تشبع لا يستجيب للأكسجين يشير إلى خضاب غير طبيعي مثل ميتهيموغلوبين الدم — فخ امتحاني كلاسيكي حيث PaO2 طبيعي لكن الأكسجين لا يصلح التشبع."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Stridor",
+          "definition_ar": "صوت عالٍ نتيجة انسداد جزئي للمجرى الهوائي العلوي؛ شهيقي يعني تضيقاً عند الحبال الصوتية."
+        },
+        {
+          "term": "Eisenmenger syndrome",
+          "definition_ar": "انعكاس اتجاه التحولة القلبية من يمين ل يسار بسبب ارتفاع الضغط الرئوي؛ يسبب زُراقاً مركزياً وتبقرطاً."
+        },
+        {
+          "term": "Methemoglobinemia",
+          "definition_ar": "خضاب مؤكسد لا يحمل الأكسجين؛ يسبب زُراقاً مع PaO2 طبيعي ولا يستجيب للأكسجين."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L2_f1",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "card_type": "basic",
+      "front_text": "Define cough and describe its neural mechanism.",
+      "back_text": "Cough is a sound produced by expulsion of air against a partially closed glottis; it protects against foreign bodies, retained secretions and aspirated material. Mechanism: stimulation of cough receptors in respiratory mucosa and lower esophagus → vagus nerve branches → medulla oblongata → impulses to respiratory muscles via phrenic nerve and spinal nerves.",
+      "explanation_ar": "قوس السعال: مستقبلات → مبهم → بصلة → عصب حجابي وأعصاب شوكية.",
+      "is_vivid": false,
+      "tags": [
+        "cough"
+      ]
+    },
+    {
+      "id": "L2_f2",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "card_type": "basic",
+      "front_text": "Classify cough by duration with causes of each.",
+      "back_text": "Acute (<3 weeks): viral infection, aspiration, noxious inhalation. Subacute (3–8 weeks): post-viral tussive syndrome, pertussis. Chronic (>8 weeks): infections (TB), neoplasm, bronchiectasis, COPD — chronic cough arouses suspicion of chronic debilitating illness.",
+      "mnemonic_ar": "3 و 8 أسابيع هي الحدود الفاصلة.",
+      "is_vivid": false,
+      "tags": [
+        "cough"
+      ]
+    },
+    {
+      "id": "L2_f3",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "card_type": "basic",
+      "front_text": "What is bovine cough and what does it indicate?",
+      "back_text": "Bovine cough is the laryngeal cough with characteristic loss of the explosive sound, occurring when the vocal cord is affected (e.g., recurrent laryngeal nerve palsy). Paroxysms of laryngeal cough are often accompanied by stridor (viral laryngitis, tumor, smoking).",
+      "explanation_ar": "سعال بقري = حبل صوتي مصاب.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield",
+        "cough"
+      ]
+    },
+    {
+      "id": "L2_f4",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "card_type": "basic",
+      "front_text": "Match the cough patterns: chronic bronchitis, asthma, pulmonary edema, ILD, TB.",
+      "back_text": "Chronic bronchitis: productive, worse in the morning (tobacco smoking). Asthma: worse at night (3–5 AM). Pulmonary edema: at night with frothy pinkish sputum. ILD: distressing, dry. TB: night sweats + fever + hemoptysis. Bronchogenic cancer: persistent + hemoptysis.",
+      "explanation_ar": "أنماط زمنية مميزة: صباحي=قصبي مزمن، ليلي=ربو/وذمة، جاف مزعج=ILd.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L2_f5",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "card_type": "basic",
+      "front_text": "List the causes of impaired (weak) cough reflex.",
+      "back_text": "Weak respiratory muscles (abdominal, intercostal), chest wall deformity, abnormal viscid airway secretions, and suppression of the respiratory center (deep coma, drugs, encephalitis, stroke).",
+      "explanation_ar": "ضعف العضلات + تشوه الجدار + مخاط لزج + تثبيط المركز.",
+      "is_vivid": false,
+      "tags": [
+        "cough"
+      ]
+    },
+    {
+      "id": "L2_f6",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c2",
+      "card_type": "basic",
+      "front_text": "What are the 6 causes of chronic cough with normal CXR and normal examination?",
+      "back_text": "1) ACE inhibitors (5–30%, excess bradykinin, dry cough). 2) GERD. 3) Upper airway cough syndrome (post-nasal drip) — heartburn, obesity, hoarseness. 4) Cough-variant asthma (mainly children). 5) Eosinophilic bronchitis (atopic, no airway hyperreactivity). 6) Cough hypersensitivity syndrome (triggered by laughing/talking/exercise; may respond to gabapentin).",
+      "mnemonic_ar": "A-G-U-C-E-C: ACEI, GERD, UACS, Cough-variant, Eosinophilic, Cough hypersensitivity.",
+      "explanation_ar": "قائمة ذهبية للامتحان: 6 أسباب بسعال وصورة صدر طبيعية.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L2_f7",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c2",
+      "card_type": "basic",
+      "front_text": "What are the complications of cough?",
+      "back_text": "Headache, urinary incontinence, and musculoskeletal pain.",
+      "explanation_ar": "ثلاثة فقط: صداع، سلس بولي، ألم عضلي هيكلي.",
+      "is_vivid": false,
+      "tags": [
+        "cough"
+      ]
+    },
+    {
+      "id": "L2_f8",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c3",
+      "card_type": "basic",
+      "front_text": "Classify dyspnea by speed of onset with examples.",
+      "back_text": "Minutes: foreign body, severe asthma attack, pulmonary embolism, pneumothorax, rapid pulmonary edema from IHD. Hours–days: pneumonia, mucopurulent COPD exacerbation, mild-moderate asthma. Weeks–months: slow progressive pleural effusion, anemia. Years: pulmonary fibrosis, COPD.",
+      "explanation_ar": "سرعة البدء = أول دليل تشخيصي في ضيق النفس.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield",
+        "dyspnea"
+      ]
+    },
+    {
+      "id": "L2_f9",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c3",
+      "card_type": "basic",
+      "front_text": "List the causes of dyspnea by system (systemic, cardiac, respiratory).",
+      "back_text": "Systemic: anemia, obesity, psychogenic, metabolic acidosis. Cardiac: pericarditis, pericardial effusion, cardiomyopathies, IHD, mitral valve disease. Respiratory — airway: laryngeal tumor, foreign body, asthma, COPD, bronchiectasis, bronchogenic cancer, bronchopneumonia; parenchyma: pneumoconiosis, ILD, sarcoidosis, TB, lobar pneumonia, lung cancer; circulation: PE, primary pulmonary hypertension, vasculitis; pleura: pneumothorax, effusion, empyema; chest wall: kyphosis/kyphoscoliosis, Guillain–Barre, myasthenia gravis.",
+      "explanation_ar": "قائمة شاملة مرتبة حسب الجهاز والموقع.",
+      "is_vivid": false,
+      "tags": [
+        "dyspnea"
+      ]
+    },
+    {
+      "id": "L2_f10",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c3",
+      "card_type": "basic",
+      "front_text": "Differentiate PND from nocturnal asthma by timing, and name the position-related dyspneas.",
+      "back_text": "PND of left-sided heart failure occurs 1–2 hours AFTER falling asleep; nocturnal asthma typically occurs at 3–5 AM. Orthopnea (worse lying flat): left heart failure, ascites, pregnancy, large pleural effusion. Platypnea (worse upright): right-to-left shunt (PFO, ASD).",
+      "mnemonic_ar": "1-2 ساعة = قلب؛ 3-5 صباحاً = ربو.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield",
+        "dyspnea"
+      ]
+    },
+    {
+      "id": "L2_f11",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "card_type": "basic",
+      "front_text": "Which chest structures are pain-sensitive, and what is the pattern of pleuritic pain?",
+      "back_text": "Pain-sensitive structures: parietal pleura, chest wall, mediastinum (lung innervation is entirely autonomic/visceral). Pleuritic pain is sharp and stabbing, worsens with inspiration; parietal pleura over upper six ribs → localized pain; over the diaphragm → referred pain to neck or shoulder.",
+      "explanation_ar": "البطانة الجنبية فوق الحجاب تحيل الألم للرقبة/الكتف (عصب حجابي C3-5).",
+      "is_vivid": false,
+      "tags": [
+        "chest-pain"
+      ]
+    },
+    {
+      "id": "L2_f12",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "card_type": "basic",
+      "front_text": "Define massive hemoptysis and its threshold, and list alveolar causes.",
+      "back_text": "Massive hemoptysis = > 200–600 mL/24 hours. Alveolar-level causes: diffuse alveolar hemorrhage from granulomatosis with polyangiitis (Wegener's) or SLE; anti-GBM disease (Goodpasture's) targeting the alveolar basement membrane; autoantibodies after bone marrow transplantation; toxic inhalation (cocaine, fire); physical trauma; anticoagulants/antiplatelets and thrombocytopenia.",
+      "explanation_ar": "النزف السنخي: التهاب أوعية أو أضداد غشاء قاعدي أو سموم مستنشقة.",
+      "is_vivid": false,
+      "tags": [
+        "hemoptysis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L2_f13",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "card_type": "basic",
+      "front_text": "Which lung cancers most commonly cause hemoptysis and why?",
+      "back_text": "Small cell carcinoma and squamous cell carcinoma — they account for hemoptysis in about 10% of lung cancer presentations because of their central/proximal location and proximity to the hilum, where they erode the hilar vessels.",
+      "explanation_ar": "المركزية (صغيرة الخلايا وحرشفية) تأكل الأوعية السرّية.",
+      "is_vivid": false,
+      "tags": [
+        "hemoptysis"
+      ]
+    },
+    {
+      "id": "L2_f14",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "card_type": "basic",
+      "front_text": "List the vascular causes of hemoptysis.",
+      "back_text": "Congestive heart failure (elevated left atrial pressure → pulmonary congestion), pulmonary AV malformations, and pulmonary embolism with infarction.",
+      "explanation_ar": "فشل قلب احتقاني، تشوهات شرياني وريدي رئوية، صمة رئوية مع احتشاء.",
+      "is_vivid": false,
+      "tags": [
+        "hemoptysis"
+      ]
+    },
+    {
+      "id": "L2_f15",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "card_type": "basic",
+      "front_text": "Define wheeze. What does an inspiratory wheeze indicate?",
+      "back_text": "Wheeze is a high-pitched whistling sound due to airway narrowing, more at expiration (increased intrathoracic pressure). An inspiratory wheeze often indicates SEVERE airway obstruction. Causes: bronchospasm (asthma, COPD), mucosal edema (bronchopneumonia, CHF), external compression (tumor, lymph nodes), partial obstruction (foreign body, tumor, tenacious secretions).",
+      "explanation_ar": "أزيز شهيقي = انسداد شديد.",
+      "is_vivid": false,
+      "tags": [
+        "wheeze"
+      ]
+    },
+    {
+      "id": "L2_f16",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "card_type": "basic",
+      "front_text": "Define stridor and its types. What does inspiratory stridor indicate?",
+      "back_text": "Stridor is a high-pitched sound from partial UPPER airway obstruction — commonly inspiratory but can be expiratory or both. Tracheobronchial diseases often cause expiratory stridor; inspiratory stridor indicates vocal cord narrowing. Causes: epiglottitis, tracheal or major bronchial tumor, foreign body.",
+      "explanation_ar": "شهيقي = حبال صوتية؛ زفيري = قصبي رغامي.",
+      "is_vivid": false,
+      "tags": [
+        "stridor",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L2_f17",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "card_type": "basic",
+      "front_text": "Differentiate peripheral from central cyanosis (mechanism, sites, causes).",
+      "back_text": "Peripheral: normal arterial O2 saturation, from fall in regional blood flow (cold vasoconstriction, low cardiac output, Raynaud's); affects fingers, toes, lips, nose tip; SPARES the oral/sublingual mucosa; venous/arterial obstruction also causes it. Central: mucous membranes and tongue involved; deoxygenated Hb > 4 g/L; PaO2 < 85%; cardiac (TOF, failure, Eisenmenger's), respiratory (altitude > 4000 m, narcotics, hypoventilation, pneumonia, asthma, COPD, pulmonary AV fistula), abnormal Hb (methemoglobinemia, sulfhemoglobinemia).",
+      "mnemonic_ar": "تحت اللسان: محفوظ = محيطي؛ مصبوغ = مركزي.",
+      "is_vivid": false,
+      "tags": [
+        "cyanosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L2_f18",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "card_type": "basic",
+      "front_text": "Cyanosis with clubbing — name the four causes.",
+      "back_text": "1) Congenital heart disease. 2) Eisenmenger's syndrome. 3) Lung abscess. 4) Pulmonary AV fistula.",
+      "explanation_ar": "أربعة أسباب فقط — سؤال متكرر.",
+      "is_vivid": false,
+      "tags": [
+        "cyanosis",
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L2_q1",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "question_stem": "A 62-year-old smoker has a 3-month history of cough that is productive and consistently worse in the morning. CXR is normal. Which is the most likely origin of his cough?",
+      "options": [
+        "Chronic bronchitis (bronchial origin)",
+        "Asthma",
+        "Pulmonary edema",
+        "Interstitial lung disease",
+        "Pertussis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "السعال الصباحي المنتج هو سمة التهاب القصبات المزمن الناتج عن التدخين المطول. الربو ليلي، الوذمة الرئوية ليلية مع بلغم وردي رغوي، والـ ILD جاف مزعج. الشاهقة (pertussis) سعال تحت حاد 3-8 أسابيع.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما النمط الزمني لالتهاب القصبات المزمن؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L2_q2",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c1",
+      "question_stem": "A 55-year-old man presents with a 6-week history of cough that has lost its explosive character, sounding 'bovine'. He smokes 40 cigarettes/day. What is the most important concern?",
+      "options": [
+        "Vocal cord involvement (e.g., recurrent laryngeal nerve palsy from malignancy)",
+        "Eosinophilic bronchitis",
+        "Post-nasal drip",
+        "GERD",
+        "Pertussis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "السعال البقري يعني إصابة الحبل الصوتي، وعند مدخن كبير يجب البحث عن ورم يضغط على العصب الحنجري الراجع. بقية الخيارات تسبب سعالاً عادياً دون فقدان الطابع الانفجاري.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي سعال يفقد طابعه الانفجاري؟",
+        "ما دلالة ذلك عصبياً؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L2_q3",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c2",
+      "question_stem": "A 58-year-old hypertensive woman started lisinopril 4 months ago and now has a persistent dry cough. Chest X-ray, spirometry and examination are normal. What is the mechanism and the appropriate action?",
+      "options": [
+        "Excess bradykinin; stop ACEI and switch to an ARB",
+        "Excess angiotensin II; increase the dose",
+        "Bronchospasm; start a bronchodilator",
+        "Allergic alveolitis; start steroids",
+        "Post-nasal drip; start intranasal steroid"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تثبيط الإنزيم المحول يترك فائض براديكينين في الرئة يهيج النهايات العصبية مسبباً سعالاً جافاً قد يبدأ بعد أسبوع وحتى 6 أشهر. الإيقاف والتحويل لمضاد مستقبلات أنجيوتنسين هو الحل، وقد ننتظر شهراً ليختفي السعال.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما المادة المتراكمة عند تثبيط ACE؟",
+        "ما البديل الآمن للسعال؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L2_q4",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c3",
+      "question_stem": "A 70-year-old man reports waking with breathlessness 1–2 hours after falling asleep, relieved by sitting upright. What is the most likely cause?",
+      "options": [
+        "Left-sided heart failure (PND)",
+        "Nocturnal asthma",
+        "Pulmonary embolism",
+        "Pneumothorax",
+        "Pertussis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ضيق النفس الليلي الانتيابي بعد 1-2 ساعة من النوم مع التحسن بالجلوس سمة فشل القلب الأيسر، بينما الربو الليلي يحدث عادة بين 3-5 صباحاً. الصمة والاسترواح يحدثان بشكل مفاجئ لا نمطي ليلي متكرر.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "التوقيت 1-2 ساعة بعد النوم يخص أي حالة؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L2_q5",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c3",
+      "question_stem": "A 24-year-old woman develops sudden severe breathlessness within minutes while eating. Which is the most likely mechanism?",
+      "options": [
+        "Inhalation of a foreign body",
+        "Slow progressive pleural effusion",
+        "Chronic anemia",
+        "Pulmonary fibrosis",
+        "COPD"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ضيق النفس خلال دقائق يوجّه لاستنشاق جسم غريب، نوبة ربو شديدة، صمة رئوية، استرواح صدر أو وذمة رئوية سريعة. البدائل الأخرى (انصباب تدريجي، فقر دم، تليف، COPD) تتطور خلال أيام إلى سنوات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "سرعة البدء خلال دقائق تحصر التشخيص في أي مجموعة؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L2_q6",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "question_stem": "A 30-year-old man presents with hemoptysis of 400 mL over 24 hours, hematuria and rising creatinine. Which antibody is most likely responsible?",
+      "options": [
+        "Anti-glomerular basement membrane antibodies (Goodpasture syndrome)",
+        "Anti-Jo1",
+        "Rheumatoid factor",
+        "ANA",
+        "Anti-centromere"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نفث الدم الضخم (>200-600 مل/24 ساعة) مع التهاب كبيبات (بيلة دموية وارتفاع كرياتينين) هو نمط متلازمة غودباستشر: أضداد ضد الغشاء القاعدي السنخي الكبيبي. SLE وGPA يسببان نزفاً سنخياً منتشراً أيضاً لكن الأضداد هنا مميزة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "نفث دم + التهاب كبيبات = أي متلازمة؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L2_q7",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c4",
+      "question_stem": "A 58-year-old man with pneumonia complains of sharp right-sided chest pain that worsens on inspiration and a bruise-like pain over his right shoulder. Irritation of which structure explains the shoulder pain?",
+      "options": [
+        "Parietal pleura over the diaphragm (referred via phrenic nerve)",
+        "Lung parenchyma",
+        "Visceral pleura",
+        "Upper six ribs parietal pleura",
+        "Mediastinal pleura"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "البطانة الجنبية الجدارية فوق الحجاب تحيل الألم إلى الرقبة أو الكتف عبر العصب الحجابي، بينما تهييجها فوق الأضلاع الستة العلوية يسبب ألماً موضعياً بالناحية. النسيج الرئوي نفسه لا يحس بالألم.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي جزء جنبي يحيل الألم للكتف؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L2_q8",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "question_stem": "A cyanotic patient has blue tongue and mucous membranes, but a normal PaO2 and no response to 100% oxygen. Which is the most likely diagnosis?",
+      "options": [
+        "Methemoglobinemia",
+        "Tetralogy of Fallot",
+        "COPD with hypercapnia",
+        "Pulmonary AV fistula",
+        "Heart failure"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الزُراق مع PaO2 طبيعي وعدم استجابة للأكسجين العالي = خضاب غير طبيعي (ميتهيموغلوبين الدم أو سلفهيموغلوبين الدم). في الزُراق القلبي أو التنفسي يوجد نقص PaO2 حقيقي يتحسن جزئياً بالأكسجين.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "الزُراق مع PaO2 طبيعي = أي فئة؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L2_q9",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "question_stem": "A patient with long-standing cyanosis presents with clubbed fingers. Which of the following is NOT a classic cause of cyanosis with clubbing?",
+      "options": [
+        "Lung abscess",
+        "Eisenmenger syndrome",
+        "Pulmonary AV fistula",
+        "Raynaud phenomenon",
+        "Congenital heart disease"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "الزُراق مع التبقرط يُرى في: أمراض القلب الخلقية، متلازمة أيزنمنغر، خراج الرئة، والتشوه الشرياني الوريدي الرئوي. ظاهرة رينو تسبب زُراقاً محيطياً دون تبقرط ودون زُراق مركزي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي حالة تسبب زُراقاً محيطياً فقط؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L2_q10",
+      "lecture_id": "L2_resp_symptoms",
+      "concept_id": "L2_c5",
+      "question_stem": "An 18-month-old child is brought with fever, drooling and inspiratory stridor. What is the mechanism of the stridor and its site?",
+      "options": [
+        "Narrowing of the vocal cord region (upper airway) — inspiratory stridor",
+        "Bronchiolar narrowing — expiratory stridor",
+        "Alveolar flooding",
+        "Pleural effusion",
+        "Diaphragmatic paralysis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الصفير الشهيقي يدل على تضيق المجرى الهوائي العلوي عند مستوى الحبال الصوتية. الصفير الزفيري يعني مرضاً قصبياً رغامياً. الحالة الموصوفة (سيلان لعاب + حمى + صفير) توحي بالتهاب لسان المزمار — حالة إسعافية.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "شهيقي أم زفيري؟ أي مستوى؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L2_case1",
+      "lecture_id": "L2_resp_symptoms",
+      "title": "The Smoker with Hemoptysis — From Symptom to Diagnosis",
+      "scenario": "A 61-year-old heavy smoker presents to the chest clinic with blood-streaked sputum for three weeks. He postponed seeking help, assuming it was 'just a smoker's cough', but the persistence of the symptom and one frightening episode of frank red sputum finally brought him in. Hemoptysis in a smoker over 40 is lung cancer until proven otherwise — this case walks the student through the symptom-based reasoning, the definition thresholds, the differential diagnosis and the diagnostic pathway.",
+      "vignette": {
+        "age": 61,
+        "sex": "male",
+        "chief_complaint": "Cough with blood-streaked sputum for 3 weeks",
+        "history": "Chronic cough for 8 months, previously attributed to smoking; 45 pack-years. 6 kg unintentional weight loss over 3 months. Occasional night sweats. No fever or purulent sputum. No chest trauma, no nosebleeds, no anticoagulants. No reflux symptoms. Works as a construction worker; no TB contact.",
+        "vitals": {
+          "bp": "132/82 mmHg",
+          "hr": "94 beats/min",
+          "rr": "18 breaths/min",
+          "temp": "37.1 C",
+          "spo2": "95% on room air"
+        },
+        "exam": "Cachectic-appearing man. Clubbing of fingers noted. Reduced breath sounds with a fixed monophonic wheeze over the right upper zone. No cervical or supraclavicular lymphadenopathy. Rest of examination unremarkable.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "11.8 g/dL (13-17)",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "8.9 x10^9/L (4-11)",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "245 x10^9/L (150-400)",
+            "flag": "normal"
+          },
+          {
+            "name": "CRP",
+            "value": "22 mg/L (<10)",
+            "flag": "high"
+          },
+          {
+            "name": "Coagulation profile (PT/INR, aPTT)",
+            "value": "Normal",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Chest X-ray: 4 cm opacity in the right upper zone with right hilar fullness; no cavitation, no effusion. CT chest with contrast: spiculated right upper lobe mass encasing the right upper lobe bronchus with enlarged right hilar and subcarinal lymph nodes (short axis 1.6 cm)."
+      },
+      "steps": [
+        {
+          "id": "L2_case1_s1",
+          "prompt": "The patient asks how much blood loss counts as 'massive hemoptysis'. What is the definition, and does he have it?",
+          "options": [
+            "> 200–600 mL per 24 hours; he does NOT have massive hemoptysis",
+            "> 5 mL per 24 hours; he HAS massive hemoptysis",
+            "> 50 mL per week; he HAS massive hemoptysis",
+            "Any blood-tinged sputum is massive; he HAS it"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "نفث الدم الضخم يُعرَّف بأنه أكثر من 200-600 مل في 24 ساعة، وهو حالة إسعافية تهدد الحياة بالاختناق وليس بالنزف. نفث الدم المخطط بالدم الذي لدى المريض ليس ضخماً، لكنه علامة إنذارية لورم حتى يثبت العكس عند مدخن فوق الأربعين.",
+          "xp": 10,
+          "hints": [
+            "تذكّر رقم العتبة الشائعة بالملليلتر يومياً"
+          ]
+        },
+        {
+          "id": "L2_case1_s2",
+          "prompt": "Which two lung cancer types most commonly present with hemoptysis, and why?",
+          "options": [
+            "Adenocarcinoma and carcinoid — peripheral location",
+            "Small cell carcinoma and squamous cell carcinoma — central/hilar location eroding hilar vessels",
+            "Mesothelioma and adenocarcinoma — pleural based",
+            "Metastatic osteosarcoma — vascular lesions"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "سرطان الخلية الصغيرة والسرطان حرشفي الخلايا مركزيان وقريبان من السرة حيث يخربان الأوعية السرّية؛ لذا هما الأكثر إحداثاً لنفث الدم (نفث الدم يشكل نحو 10% من طرق ظهور سرطان الرئة).",
+          "xp": 15,
+          "hints": [
+            "فكّر في الموقع: مركزي أم محيطي؟"
+          ]
+        },
+        {
+          "id": "L2_case1_s3",
+          "prompt": "Given the fixed monophonic wheeze over the right upper zone, what is the best next diagnostic step to obtain tissue diagnosis and assess the airway?",
+          "options": [
+            "Repeat chest X-ray in 6 weeks",
+            "Fiberoptic bronchoscopy with biopsy (after CT)",
+            "Sputum culture only",
+            "Trial of antibiotics",
+            "Peak flow diary for 2 weeks"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الورم المركزي مع نفث دم وعقد لمفية سرّية يجعل التنظير القصبي المرن مع الخزعة الوسيلة المثلى للحصول على التشخيص النسيجي وتقييم الشجرة القصبية. الأشعة المقطعية الظليلة تسبق التنظير للتخطيط. المتابعة أو المضادات الحيوية فقط قد تؤخر تشخيصاً محتملاً للسرطان بلا مبرر.",
+          "xp": 15,
+          "hints": [
+            "أي إجراء يعطي تشخيصاً نسيجياً ويقيّم القصبة؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي المحتمل: سرطان رئة مركزي (غالباً حرشفي الخلايا أو صغير الخلايا) في الفص العلوي الأيمن مع انتشار عقد لمفية سرّية. الدروس المستفادة: (1) نفث الدم عند مدخن فوق الأربعين = سرطان رئة حتى يثبت العكس، خاصة مع فقد وزن وتبقرط وسعال مستمر. (2) تعريف نفث الدم الضخم (>200-600 مل/24 ساعة) مهم لأنه إسعاف تنفسي (خطر الاختناق) وليس فقط نزف. (3) الأورام المركزية (صغير الخلايا وحرشفي) هي الأكثر إحداثاً لنفث الدم لقربها من الأوعية السرّية. (4) الأزيز أحادي النغمة الثابت يشير لانسداد موضعي (ورم/جسم غريب) وليس لتضيق منتشر كالربو. (5) تسلسل التشخيص: صورة صدر ثم مقطعية ظليلة ثم تنظير قصبي مع خزعة للحصول على النسيج.",
+      "difficulty": "advanced",
+      "order_index": 0
+    }
+  ]
+}

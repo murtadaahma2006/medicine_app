@@ -45,20 +45,40 @@ class DeepReadingBlock {
 /// unit_system). إن خلت القاعدة من شروح غير مكتملة → غوصة من أول
 /// شروح المحتوى (إعادة فتح = مراجعة بنية).
 Future<List<DeepReadingBlock>> buildReadingBlocks(
-  DatabaseHelper db,
-) async {
+  DatabaseHelper db, {
+  String? specialty,
+  String? system,
+}) async {
   List<Map<String, Object?>> concepts =
-      await db.getUnfinishedConcepts(limit: 6);
+      await db.getUnfinishedConcepts(limit: 6, specialty: specialty, system: system);
 
   // لا غير مكتمل؟ → كل الشروح (وضع مراجعة البنية).
   if (concepts.isEmpty) {
+    final String specialtyFilter = specialty != null ? 'u.specialty = ?' : '';
+    final String systemFilter = system != null ? 'u.system = ?' : '';
+    
+    final List<String> conditions = <String>[];
+    final List<Object?> args = <Object?>[];
+    
+    if (specialty != null) {
+      conditions.add(specialtyFilter);
+      args.add(specialty);
+    }
+    if (system != null) {
+      conditions.add(systemFilter);
+      args.add(system);
+    }
+    
+    final String whereClause = conditions.isEmpty ? '' : 'WHERE ${conditions.join(' AND ')}';
+    
     concepts = await db.rawQueryParameterized('''
       SELECT c.*, u.title AS unit_title, u.system AS unit_system
       FROM ${DatabaseHelper.tableConcepts} c
       INNER JOIN ${DatabaseHelper.tableUnits} u ON u.id = c.unit_id
+      $whereClause
       ORDER BY RANDOM()
       LIMIT 6
-    ''');
+    ''', args);
   }
   // نسخة قابلة للتعديل — نتيجة sqflite للقراءة فقط.
   concepts = List<Map<String, Object?>>.of(concepts);
@@ -156,7 +176,10 @@ List<Map<String, Object?>> _interleaveBySystem(
 /// «أصغر وحدة تُقاوَم نفسياً».
 /// ─────────────────────────────────────────────────────────────────────
 class ReadingBlocksPage extends StatefulWidget {
-  const ReadingBlocksPage({super.key});
+  const ReadingBlocksPage({this.specialty, this.system, super.key});
+  
+  final String? specialty;
+  final String? system;
 
   @override
   State<ReadingBlocksPage> createState() => _ReadingBlocksPageState();
@@ -166,10 +189,14 @@ class _ReadingBlocksPageState extends State<ReadingBlocksPage> {
   bool _loading = true;
   String? _error;
   List<DeepReadingBlock> _blocks = const <DeepReadingBlock>[];
+  String? _selectedSpecialty;
+  String? _selectedSystem;
 
   @override
   void initState() {
     super.initState();
+    _selectedSpecialty = widget.specialty;
+    _selectedSystem = widget.system;
     _load();
   }
 
@@ -179,8 +206,11 @@ class _ReadingBlocksPageState extends State<ReadingBlocksPage> {
       _error = null;
     });
     try {
-      final List<DeepReadingBlock> blocks =
-          await buildReadingBlocks(DatabaseHelper.instance);
+      final List<DeepReadingBlock> blocks = await buildReadingBlocks(
+        DatabaseHelper.instance,
+        specialty: _selectedSpecialty,
+        system: _selectedSystem,
+      );
       if (!mounted) return;
       setState(() {
         _blocks = blocks;
@@ -204,9 +234,10 @@ class _ReadingBlocksPageState extends State<ReadingBlocksPage> {
   @override
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
+    final String title = widget.system == 'physiology' ? 'الفسيولوجيا السريرية' : 'كتل القراءة العميقة';
 
     return Scaffold(
-      appBar: AppBar(title: const Text('كتل القراءة العميقة')),
+      appBar: AppBar(title: Text(title)),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : _error != null
@@ -244,6 +275,21 @@ class _ReadingBlocksPageState extends State<ReadingBlocksPage> {
                               color: AppColors.textSecondary(b),
                             ),
                           ),
+                          const SizedBox(height: AppSpacing.lg),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: <Widget>[
+                                _buildChip('الكل', null),
+                                const SizedBox(width: AppSpacing.sm),
+                                _buildChip('الباطنية', 'internal_medicine'),
+                                const SizedBox(width: AppSpacing.sm),
+                                _buildChip('الجراحة', 'surgery'),
+                                const SizedBox(width: AppSpacing.sm),
+                                _buildChip('النسائية', 'obgyn'),
+                              ],
+                            ),
+                          ),
                           const SizedBox(height: AppSpacing.xl),
                           for (final DeepReadingBlock block in _blocks)
                             Padding(
@@ -258,6 +304,31 @@ class _ReadingBlocksPageState extends State<ReadingBlocksPage> {
                         ],
                       ),
                     ),
+    );
+  }
+
+  Widget _buildChip(String label, String? specialty) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final bool isSelected = _selectedSpecialty == specialty;
+    return ChoiceChip(
+      label: Text(label),
+      selected: isSelected,
+      onSelected: (bool selected) {
+        if (selected && _selectedSpecialty != specialty) {
+          setState(() => _selectedSpecialty = specialty);
+          _load();
+        }
+      },
+      selectedColor: Theme.of(context).colorScheme.primaryContainer,
+      labelStyle: AppType.body.copyWith(
+        color: isSelected
+            ? Theme.of(context).colorScheme.onPrimaryContainer
+            : AppColors.textSecondary(b),
+        fontWeight: isSelected ? FontWeight.w700 : FontWeight.w500,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(AppRadius.chip),
+      ),
     );
   }
 }

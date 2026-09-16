@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- تسجيل النطق الذاتي (المرحلة 10) — يطلبه record عند التسجيل -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- إذن الإشعارات — إلزامي على Android 13+ (API 33) لتظهر التذكيرات -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <!-- إذن الجدولة الدقيقة — يضمن ظهور التذكير في ساعته على Android 12+ -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
     <application
-        android:label="تعلّم الألمانية"
+        android:label="MedOS"
         android:name=".MedicineApp"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -26,17 +28,31 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            
+            <!-- ── الإضافة المفقودة: تمكين الضغط على الويدجت (Deep Links) ── -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="medicineapp" android:host="daily-review" />
+            </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+            
+        <!-- ── تفعيل محرك Impeller للاندرويد ── -->
+        <!-- يزيل التقطيع (Jank) ويجعل الرسوميات أسرع وأكثر سلاسة بشكل ملحوظ -->
+        <meta-data
+            android:name="io.flutter.embedding.android.EnableImpeller"
+            android:value="true" />
 
         <!-- ── ويدجت الشاشة الرئيسية (المراجعة اليومية) ── -->
         <receiver
             android:name=".MedicineHomeWidgetProvider"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/widget_title">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -44,6 +60,15 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/medicine_home_widget_info"/>
+        </receiver>
+
+        <!-- التحديث الخلفي للويدجت (home_widget 0.3.0+): 
+             تم استبدال JobIntentService القديم. هذا هو الاستدعاء الصحيح لـ WorkManager. -->
+        <receiver android:name="es.antonborri.home_widget.HomeWidgetBackgroundIntent"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="es.antonborri.home_widget.action.BACKGROUND"/>
+            </intent-filter>
         </receiver>
     </application>
     <!-- Required to query activities that can process text, see:

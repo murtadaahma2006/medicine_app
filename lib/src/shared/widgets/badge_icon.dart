@@ -13,6 +13,10 @@ import 'app_svg_icon.dart';
 /// - مفتوحة: كاملة الألوان بمعدنها (برونز/فضة/ذهب).
 ///
 /// البديل الآمن: إيموجي الشارة عند غياب الـSVG — لا انهيار أبداً.
+///
+/// **أداء**: لا FutureBuilder ولا قراءة قرص عند كل rebuild — فحص
+/// الوجود عبر errorBuilder المتزامن + كاش للأصول المفقودة (نفس
+/// نمط AppSvgIcon): أول frame يعرض الميدالية أو البديل فوراً.
 /// ─────────────────────────────────────────────────────────────────────
 class BadgeIcon extends StatelessWidget {
   const BadgeIcon(
@@ -49,6 +53,9 @@ class BadgeIcon extends StatelessWidget {
     'xp-500': 'badges/badge_xp_star',
   };
 
+  /// أصول فشل تحميلها — لا يُعاد فحصها في كل بناء.
+  static final Set<String> _missingAssets = <String>{};
+
   @override
   Widget build(BuildContext context) {
     final String? path = _assetOf[badgeId] == null
@@ -61,6 +68,8 @@ class BadgeIcon extends StatelessWidget {
         path: path,
         size: size,
         emoji: emojiFallback,
+        onMissing: _markMissing,
+        isMissing: _isMissing,
       );
     }
 
@@ -68,8 +77,17 @@ class BadgeIcon extends StatelessWidget {
       return _emojiBox(context, opacity: 1);
     }
 
-    return _SvgBadge(path: path, size: size, emoji: emojiFallback);
+    return _SvgBadge(
+      path: path,
+      size: size,
+      emoji: emojiFallback,
+      onMissing: _markMissing,
+      isMissing: _isMissing,
+    );
   }
+
+  static void _markMissing(String path) => _missingAssets.add(path);
+  static bool _isMissing(String path) => _missingAssets.contains(path);
 
   Widget _emojiBox(BuildContext context, {required double opacity}) {
     return SizedBox(
@@ -85,94 +103,101 @@ class BadgeIcon extends StatelessWidget {
   }
 }
 
-/// يعرض ميدالية SVG مع بديل إيموجي آمن.
+/// يعرض ميدالية SVG مع بديل إيموجي آمن — بلا FutureBuilder: خطأ
+/// التحميل يظهر البديل في نفس الـ frame عبر errorBuilder.
 class _SvgBadge extends StatelessWidget {
-  const _SvgBadge({required this.path, required this.size, this.emoji});
+  const _SvgBadge({
+    required this.path,
+    required this.size,
+    required this.onMissing,
+    required this.isMissing,
+    this.emoji,
+  });
 
   final String path;
   final double size;
   final String? emoji;
+  final void Function(String path) onMissing;
+  final bool Function(String path) isMissing;
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<bool>(
-      future: DefaultAssetBundle.of(context)
-          .loadString(path)
-          .then((_) => true)
-          .catchError((_) => false),
-      builder: (BuildContext context, AsyncSnapshot<bool> snap) {
-        if (snap.data != true) {
-          return SizedBox(
-            width: size,
-            height: size,
-            child: Center(
-              child: Text(emoji ?? '🏅',
-                  style: TextStyle(fontSize: size * 0.55)),
-            ),
-          );
-        }
-        return SvgPicture.asset(path, width: size, height: size);
+    // فشل سابق معروف؟ → البديل مباشرة (صفر عمل).
+    if (isMissing(path)) {
+      return _emojiBox();
+    }
+
+    return SvgPicture.asset(
+      path,
+      width: size,
+      height: size,
+      errorBuilder: (BuildContext context, Object error, StackTrace? st) {
+        onMissing(path);
+        return _emojiBox();
       },
     );
   }
+
+  Widget _emojiBox() => SizedBox(
+        width: size,
+        height: size,
+        child: Center(
+          child: Text(emoji ?? '🏅', style: TextStyle(fontSize: size * 0.55)),
+        ),
+      );
 }
 
 /// الظل الصامت — شارة مقفلة: 15% رمادي + قفل صغير إن توفر رمز.
 class _LockedSilhouette extends StatelessWidget {
-  const _LockedSilhouette({required this.path, required this.size, this.emoji});
+  const _LockedSilhouette({
+    required this.path,
+    required this.size,
+    required this.onMissing,
+    required this.isMissing,
+    this.emoji,
+  });
 
   final String? path;
   final double size;
   final String? emoji;
+  final void Function(String path) onMissing;
+  final bool Function(String path) isMissing;
 
   @override
   Widget build(BuildContext context) {
-    if (path == null) {
-      return SizedBox(
+    final String? resolvedPath = path;
+    if (resolvedPath == null || isMissing(resolvedPath)) {
+      return _emojiBox();
+    }
+
+    return Opacity(
+      // Silhouette: نفس الرسمة مسطحة رمادياً بشفافية 15%.
+      opacity: 0.15,
+      child: SvgPicture.asset(
+        resolvedPath,
+        width: size,
+        height: size,
+        // توحيد رمادي كامل فوق ألوان المعدن.
+        colorFilter: const ColorFilter.mode(
+          Color(0xFF5B6879),
+          BlendMode.srcIn,
+        ),
+        errorBuilder: (BuildContext context, Object error, StackTrace? st) {
+          onMissing(resolvedPath);
+          return _emojiBox();
+        },
+      ),
+    );
+  }
+
+  Widget _emojiBox() => SizedBox(
         width: size,
         height: size,
         child: Center(
           child: Opacity(
             opacity: 0.22,
-            child: Text(emoji ?? '🏅',
-                style: TextStyle(fontSize: size * 0.55)),
+            child: Text(emoji ?? '🏅', style: TextStyle(fontSize: size * 0.55)),
           ),
         ),
       );
-    }
-
-    return FutureBuilder<bool>(
-      future: DefaultAssetBundle.of(context)
-          .loadString(path!)
-          .then((_) => true)
-          .catchError((_) => false),
-      builder: (BuildContext context, AsyncSnapshot<bool> snap) {
-        if (snap.data != true) {
-          return SizedBox(
-            width: size,
-            height: size,
-            child: Center(
-              child: Opacity(
-                opacity: 0.22,
-                child: Text(emoji ?? '🏅',
-                    style: TextStyle(fontSize: size * 0.55)),
-              ),
-            ),
-          );
-        }
-        // Silhouette: نفس الرسمة مسطحة رمادياً بشفافية 15%.
-        return Opacity(
-          opacity: 0.15,
-          child: ColorFiltered(
-            colorFilter: const ColorFilter.mode(
-              Color(0xFF5B6879),
-              BlendMode.srcIn,
-            ),
-            child:
-                SvgPicture.asset(path!, width: size, height: size),
-          ),
-        );
-      },
-    );
-  }
 }

@@ -1,0 +1,1432 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_Liver_L1",
+    "specialty": "surgery",
+    "title": "Liver I: Surgical Anatomy, Hepatobiliary Investigations and Liver Trauma",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "Liver L1- 2025.pdf",
+      "page_count": 20
+    },
+    "tags": [
+      "liver",
+      "surgical anatomy",
+      "couinaud segments",
+      "porta hepatis",
+      "hepatobiliary imaging",
+      "ercp",
+      "ptc",
+      "liver trauma"
+    ],
+    "order_index": 7,
+    "golden_tip": [
+      "Ultrasound is the FIRST-LINE hepatobiliary test: it detects bile duct dilatation, gallstones, liver tumors and liver cysts and guides percutaneous liver biopsy. The exam trap that ultrasound cannot diagnose a liver cyst is FALSE.",
+      "Pancreatitis, cholangitis, bleeding and perforation are complications of ERCP (related to sphincterotomy) - NOT of MRCP. MRCP is the non-invasive diagnostic technique; ERCP is the invasive, mainly therapeutic one.",
+      "The 3 hepatic veins (right, left and median) leave from the BACK of the liver - they are NOT in the porta hepatis. Porta hepatis contents from posterior to anterior (VAD): portal vein, then hepatic arteries, then bile ducts.",
+      "A haemodynamically UNSTABLE patient with a lower chest or upper abdominal stab or crushing injury goes to the operating theatre for exploratory laparotomy after ABC resuscitation - never to the CT scanner.",
+      "Stop conservative treatment of blunt liver trauma when: 1) blood loss continues despite correction of underlying coagulopathy, or 2) signs of generalized peritonitis develop."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_Liver_L1_c01",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Liver Surgical Anatomy and Physiology",
+      "summary_ar": "يؤسس هذا المفهوم أساسات جراحة الكبد: الكبد أكبر غدة في الجسم (1.5 كغ) محاطة بمحفظة ليفية كاملة ومغطاة بالبريتون جزئياً، وله أربع وظائف أساسية يقيسها تحليل وظائف الكبد. ثم التشريح الجراحي: الفصوص الأربعة، ومحتوى سرة الكبد بترتيب VAD من الخلف إلى الأمام (وريد بابي، شرايين كبدية، ثم قنوات صفراوية مع الأوعية اللمفاوية والأعصاب)، والتروية المزدوجة 75% وريد بابي يحمل دماً منزوع الأكسجين مع المغذيات و25% شرايين كبدية مؤكسجة، والفصيصات السداسية بثلاثي بابي في كل زاوية، والأوردة الكبدية الثلاثة (أيمن وأيسر وأوسط) الخارجة من ظهر الكبد لا من سرة الكبد، وأخيراً قطاعات Couinaud من I إلى VIII على جانبي خط حفر المرارة.",
+      "sections": [
+        {
+          "heading": "Lecture Objectives, Attribution and the Liver at a Glance",
+          "body_text": "This first liver lecture of the 2025 series is delivered by Dr Noori Hannon Jasim, Consultant General and Gastrointestinal Surgeon (MD, FRCS, FACS, FICMS and PhD GI Surgery, United Kingdom), and states three objectives: **1. Surgical anatomy of the liver (liver segments), 2. Investigations of the hepatobiliary system, 3. Liver trauma.** (The original slide deck ends with an aerial (satellite or drone-view) photograph that depicts an urban and suburban landscape as its subject matter: its central feature is a large complex of multi-story buildings - likely a hospital, university or corporate campus - arranged in a grid-like pattern and bordered by a multi-lane highway, with dense residential housing with red-tiled roofs to the south and west, green parkland with mature trees and smaller auxiliary buildings in the surroundings; it appears to be a contextual introductory image showing the location of the medical school or teaching hospital. The final slide is blank. Based on the exhaustive visual extraction and image descriptions of the original slides, the photos, figures, tables, diagrams, flowcharts, classifications and algorithms of the lecture have all been transferred, and their transcription appears inside the relevant sections below.)\n\nThe liver is the **largest gland in the body, weighing about 1.5 kg**. It is **completely surrounded by a fibrous capsule** (the Glisson capsule) but is **only partially covered by peritoneum**: where peritoneum is absent, the **bare area** of the liver lies in direct contact with the diaphragm. This capsule-versus-peritoneum distinction matters clinically: superficial tears may be tamponaded by an intact capsule, and the peritoneal reflections form the ligamentous attachments the surgeon must divide when mobilizing the liver.",
+          "key_points": [
+            "Largest gland in the body: about 1.5 kg.",
+            "Completely surrounded by a fibrous capsule (Glisson capsule); only PARTIALLY covered by peritoneum (bare area).",
+            "Lecture objectives: surgical anatomy with segments, hepatobiliary investigations, liver trauma."
+          ]
+        },
+        {
+          "heading": "Functions of the Liver and Liver Function Tests (LFT)",
+          "body_text": "The lecture lists **four functions of the liver**:\n- **1. Production and secretion of bilirubin (the bile pigment) and bile salts.**\n- **2. Involvement in many metabolic activities** related to carbohydrate (CHO), fat, protein, hormones and drugs.\n- **3. Filtration of blood from bacteria and foreign particles** (the reticuloendothelial function of the Kupffer cells lining the sinusoids).\n- **4. Maintaining core body temperature and pH balance.**\n\nThe laboratory reflection of these functions is the **liver function test (LFT) panel: bilirubin, alkaline phosphatase (Alk phosphatase), aspartate transaminase (AST), alanine transaminase (ALT), gamma-glutamyl transpeptidase (GGT), albumin (Alb) and prothrombin time (PT).** For exam interpretation: bilirubin reflects pigment handling; alkaline phosphatase and GGT mark cholestasis; AST and ALT mark hepatocellular injury; and albumin with PT reflect the synthetic function of the liver (the clotting factors are vitamin-K-dependent liver products).",
+          "key_points": [
+            "Four functions: bile production (bilirubin pigment and salts), metabolism (CHO, fat, protein, hormones, drugs), filtration of blood from bacteria and foreign particles, core temperature and pH balance.",
+            "LFT panel: bilirubin, alkaline phosphatase, AST, ALT, GGT, albumin, PT.",
+            "Albumin and PT = synthetic function; AST/ALT = hepatocellular injury; ALP and GGT = cholestasis."
+          ],
+          "check": {
+            "prompt": "Which two components of the LFT panel best reflect the synthetic function of the liver?",
+            "options": [
+              "Albumin and prothrombin time (PT)",
+              "AST and ALT",
+              "Bilirubin and alkaline phosphatase",
+              "GGT and AST",
+              "Bilirubin and albumin"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الألبومين وزمن البروثرومبين يعكسان الوظيفة التركيبية للكبد لأن الكبد يصنعهما، بينما AST وALT تدلان على تلف الخلايا الكبدية، والفوسفاتيز القلوي مع GGT على الركود الصفراوي، والبيليروبين على التعامل مع صبغة الصفراء."
+          }
+        },
+        {
+          "heading": "Gross Anatomy: Lobes, Porta Hepatis (VAD Order), Nerves, Blood Supply and Ligaments",
+          "body_text": "**Lobes:** the anatomical lobes of the liver are the **right, left, caudate and quadrate** lobes.\n\n**Porta hepatis (the liver hilum):** a transverse fissure on the inferior surface through which the structures pass **from posterior to anterior in the VAD order**: the **portal vein** (V) lies most posterior, then the **right and left hepatic arteries** (A), then the **right and left hepatic ducts** (D) with their continuity as the **common hepatic duct and then the common bile duct (CBD)**; **lymphatics and nerves** also pass through the hilum. This single VAD arrangement is the roadmap for any hilar dissection: it tells the surgeon what lies behind what during cholecystectomy, bile duct exploration and control of hepatic inflow.\n\n**Nerves:** sympathetic fibers from the **coeliac plexus** and parasympathetic fibers from the **vagus nerve**.\n\n**Blood supply - a double inflow:** the **portal vein contributes about 75%** of blood flow, carrying **deoxygenated blood plus nutrients from the digestive system** (absorbed food, drugs and intestinal products delivered directly to the hepatocytes), while the **hepatic arteries contribute about 25%**, carrying **oxygenated blood** to meet the oxygen demand of the parenchyma.\n\n**Peritoneal ligaments of the liver:** the **falciform ligament**, suspending the liver from the anterior abdominal wall and containing the ligamentum teres, and the **lesser omentum**, connecting the lesser curvature of the stomach and the duodenum to the liver and carrying the portal triad in its free edge (the hepatoduodenal ligament).",
+          "key_points": [
+            "Lobes: right, left, caudate and quadrate.",
+            "Porta hepatis posterior-to-anterior = VAD: portal vein, right and left hepatic arteries, right and left hepatic ducts (to common hepatic duct then CBD), plus lymphatics and nerves.",
+            "Nerves: sympathetics from the coeliac plexus, parasympathetics from the vagus.",
+            "Portal vein 75% (deoxygenated blood plus nutrients); hepatic arteries 25% (oxygenated blood).",
+            "Peritoneal ligaments: falciform ligament and lesser omentum."
+          ],
+          "check": {
+            "prompt": "During hilar dissection, what is the order of the main structures in the porta hepatis from posterior to anterior?",
+            "options": [
+              "Portal vein, then right and left hepatic arteries, then right and left hepatic ducts (VAD)",
+              "Hepatic arteries, then portal vein, then hepatic ducts",
+              "Hepatic ducts, then hepatic arteries, then portal vein",
+              "Portal vein, then hepatic ducts, then hepatic arteries",
+              "Hepatic veins, then portal vein, then hepatic ducts"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الترتيب من الخلف إلى الأمام هو VAD: الوريد البابي خلفياً، ثم الشريانان الكبديان الأيمن والأيسر، ثم القناتان الكبديتان، مع الأوعية اللمفاوية والأعصاب. والأوردة الكبدية ليست في سرة الكبد أصلاً بل تخرج من ظهر الكبد."
+          }
+        },
+        {
+          "heading": "Hepatic Lobules, the Portal Triad and the Three Hepatic Veins",
+          "body_text": "**Microscopical architecture - the hepatic lobules:** the liver parenchyma is built from **hexagonal microscopical units, the lobules**. **Each corner of the hexagon carries a portal triad**: a branch of the **portal vein (portal v)**, a branch of the **hepatic artery (hepatic a)** and a **bile duct (bile d)**. Blood from the triad flows through the sinusoids - lined by endothelium and Kupffer cells - toward the central vein of the lobule, while bile secreted by the hepatocytes flows the opposite way into the triadal bile ducts.\n\n**Venous drainage - a favourite exam trap:** there are **3 hepatic veins - the right, left and MEDIAN hepatic veins**. They emerge **from the BACK of the liver** (draining into the suprahepatic inferior vena cava) and are **NOT in the porta hepatis**. The porta hepatis carries the inflow (portal vein and hepatic artery) and the bile ducts, while the hepatic veins leave separately and posteriorly - one reason retrohepatic venous injuries bleed so ferociously and cannot be controlled from the hilum.",
+          "key_points": [
+            "Hepatic lobule = hexagonal microscopical unit with a portal triad at each corner.",
+            "Portal triad = portal vein branch + hepatic artery branch + bile duct branch.",
+            "3 hepatic veins: right, left and MEDIAN; they leave from the back of the liver and are NOT in the porta hepatis."
+          ]
+        },
+        {
+          "heading": "Internal Segmental Anatomy: Couinaud Segments I-VIII",
+          "body_text": "The **internal anatomy of the liver is described by the liver segments (I-VIII)** - the Couinaud segmentation that surgeons use instead of the crude anatomical lobes. A **dividing line is drawn between the gallbladder fossa** (conceptually extended between the gallbladder fossa and the inferior vena cava - Cantlie line):\n- **Segments I-IV lie to the LEFT of the line** and are supplied by the **left portal vein (L portal v), the left hepatic artery (L hep a)**, and drained by the **left hepatic vein and the middle hepatic vein (L h.v and M h.v)**.\n- **Segments V-VIII lie to the RIGHT of the line** and are supplied by the **right portal vein (R portal v), the right hepatic artery (R hep a)**, and drained by the **right hepatic vein and the middle hepatic vein (R h.v and M h.v)**.\n\nSegment I corresponds to the **caudate lobe**, lying posteriorly between the ligamentum venosum and the vena cava with its own direct caval drainage. The **middle hepatic vein runs in the dividing plane itself and is shared by both sides** - the anatomical fact that makes hemihepatectomy a plane-following operation.",
+          "key_points": [
+            "Couinaud segments I-VIII: segments I-IV left of the gallbladder-fossa line (left portal vein, left hepatic artery, left and middle hepatic veins).",
+            "Segments V-VIII right of the line (right portal vein, right hepatic artery, right and middle hepatic veins).",
+            "Segment I = caudate lobe; the middle hepatic vein lies in the dividing plane and is shared."
+          ],
+          "check": {
+            "prompt": "A tumor is located in Couinaud segment VI. On which side of the gallbladder-fossa line does it lie, and which vessels define that side?",
+            "options": [
+              "Right side - right portal vein, right hepatic artery, right and middle hepatic veins",
+              "Left side - left portal vein, left hepatic artery, left and middle hepatic veins",
+              "Left side - left portal vein, right hepatic artery, left hepatic vein",
+              "Right side - right portal vein, left hepatic artery, right hepatic vein only",
+              "On the line itself - middle hepatic artery and middle portal vein"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "القطاعات V إلى VIII تقع يمين خط حفر المرارة وتروى بالوريد البابي الأيمن والشريان الكبدي الأيمن وتصرّف بالوريد الكبدي الأيمن والأوسط، بينما I إلى IV يسار الخط بالتروية اليسرى، والوريد الكبدي الأوسط مشترك لأنه يجري في المستوى الفاصل نفسه."
+          }
+        },
+        {
+          "heading": "The Lecture Questions: Porta Hepatis Surgical Benefits and Why Liver Segments Matter",
+          "body_text": "The lecture poses two revision questions that every student must be able to answer.\n\n**1. What are the contents of the porta hepatis, and what are the surgical benefits of knowing them?**\nContents (posterior to anterior - VAD): the **portal vein, right and left hepatic arteries, right and left hepatic ducts** (continuing as common hepatic duct then CBD), **plus lymphatics and nerves**. Surgical benefits: (a) safe identification of the triad structures during hilar and hepatoduodenal dissection; (b) **control of hepatic inflow for liver bleeding** - the Pringle maneuver compresses the portal vein and hepatic artery within the hepatoduodenal ligament; (c) recognition of vascular and ductal variations before resection or transplantation; (d) planning of biliary drainage and repair, since the ducts lie most anteriorly and are the structures most easily injured at the hilum.\n\n**2. Why do we need to know liver segments, and which anatomical facts lead to this classification?**\nThe anatomical fact that leads to the classification is segmental autonomy: each Couinaud segment is an autonomous unit - it receives its **own branch of the portal vein, hepatic artery and bile duct** (the segmental portal triads) and drains through **its own hepatic venous territory**, with the middle-hepatic-vein plane separating the left (I-IV) from the right (V-VIII) functional liver. Because resection follows these planes, segmental anatomy allows **anatomical (segment-orientated) resection** - removing one to three segments while preserving the remaining parenchyma - and underpins the planning of **major hepatectomy and living-donor transplantation, the localization of tumors and injuries on imaging, and the description of intrahepatic pathology** along segmental lines.",
+          "key_points": [
+            "Porta hepatis surgical benefits: hilar identification, Pringle inflow control, variation mapping, biliary access.",
+            "Segments are autonomous triad units separated by the middle hepatic vein plane.",
+            "Segmental anatomy enables anatomical resection, transplantation planning and imaging localization."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Porta hepatis (liver hilum)",
+          "definition_ar": "سرة الكبد: شق مستعرض على السطح السفلي للكبد يمر عبره من الخلف إلى الأمام الوريد البابي، ثم الشريانان الكبديان الأيمن والأيسر، ثم القناتان الكبدية اليمنى واليسرى اللتان تتصلان بالقناة الكبدية المشتركة فالقناة الصفراوية المشتركة، مع الأوعية اللمفاوية والأعصاب."
+        },
+        {
+          "term": "Couinaud segments",
+          "definition_ar": "قطاعات الكبد الثمانية من I إلى VIII: تقع I-IV يسار خط حفر المرارة وتروى بالوريد البابي والشريان الكبدي الأيسرين وتصرّف بالوريد الكبدي الأيسر والأوسط، بينما تقع V-VIII يمين الخط وتروى بمقابلهما اليمنى وتصرّف بالوريد الكبدي الأيمن والأوسط."
+        },
+        {
+          "term": "Portal triad",
+          "definition_ar": "الثلاثي البابي: فرع وريدي بابي وفرع شريان كبدي وفرع قناة صفراوية، يقع في كل زاوية من زوايا الفصيص الكبدي السداسي."
+        },
+        {
+          "term": "Hepatic lobule",
+          "definition_ar": "الفصيص الكبدي: الوحدة المجهرية السداسية الشكل للكبد، في كل زاوية منه ثلاثي بابي، ويتصرف دمه عبر الجيوبانيات نحو الوريد المركزي بينما تجري الصفراء بالاتجاه المعاكس."
+        },
+        {
+          "term": "Bare area of the liver",
+          "definition_ar": "المنطقة العارية من الكبد: الجزء الذي لا يغطيه البريتون لأنه ملتصق مباشرة بالحجاب الحاجز، بينما تحيط المحفظة الليفية الكبد كاملاً."
+        },
+        {
+          "term": "Falciform ligament",
+          "definition_ar": "الرباط المنجلي: ثنية بيريتونية تمتد من جدار البطن الأمامي إلى الكبد وتحتوي الرباط المدور، وهو أحد الرباطين البريتونيين المرتبطين بالكبد مع الثرب الصغير."
+        },
+        {
+          "term": "Lesser omentum",
+          "definition_ar": "الثرب الصغير: ثنية بيريتونية من انحناء المعدة الأصغر والإثني عشر إلى الكبد، ويحمل الثلاثي البابي في حافته الحرة أي الرباط الكبدي الاثنا عشري."
+        },
+        {
+          "term": "Pringle maneuver",
+          "definition_ar": "مناورة برينغل: الضغط على الوريد البابي والشريان الكبدي داخل الرباط الكبدي الاثنا عشري للسيطرة مؤقتاً على نزف الكبد أثناء الجراحة، وهي فائدة جراحية مباشرة لمعرفة محتوى سرة الكبد."
+        },
+        {
+          "term": "Cantlie line",
+          "definition_ar": "خط كانتلي: الخط الوهمي بين حفر المرارة والوريد الأجوف السفلي الذي يفصل القطاعات I-IV يساراً عن V-VIII يميناً، ويجري فيه الوريد الكبدي الأوسط."
+        },
+        {
+          "term": "Glisson capsule",
+          "definition_ar": "محفظة غليسون: المحفظة الليفية التي تحيط بالكبد بالكامل، بينما يغطيه غشاء البيريتون جزئياً فقط."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_Liver_L1_c02",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Hepatobiliary Investigations I: Ultrasound, Triple-Phase CT and MRI",
+      "summary_ar": "الموجات فوق الصوتية هي التحقيق الأول للجهاز الكبدي الصفراوي لأمانها وتوفرها، وتكشف اتساع القنوات الصفراوية وحصى المرارة وأورام الكبد والكيسات الكبدية وتوجه الخزعة الكبدية الجلدية. أما التصوير المقطعي الحلزوني ثلاثي الطور فيضم تبايناً فموياً لتوضيح المعدة والإثني عشر بالنسبة لسرة الكبد، وتبايناً وريدياً بأربع فوائد: المرحلة الشريانية المبكرة لكشف الأورام الصغيرة، والطور الوريدي لتعزيز حافة الآفات الالتهابية، والتعزيز الوريدي المتأخر للورم الوعائي، وقياس كثافة الآفة الكيسية. والرنين المغناطيسي بديل عند منع تباين CT بسبب الحساسية، وMRCP يصور الأقنية الصفراوية بجودة ممتازة دون تدخل مع تفوق صور ERCP وPTC المباشرة، وMRA بديل غير تداخلي عن التصوير الوعائي.",
+      "sections": [
+        {
+          "heading": "Ultrasound Scan: The First-Line Hepatobiliary Test",
+          "body_text": "**Ultrasound scan (U/S) is the first-line test for imaging of the liver**, chosen for its **safety and availability** - no radiation, bedside performance, low cost and repeatability. It:\n- detects **bile duct dilatation** (the key sonographic sign of biliary obstruction),\n- detects **gall stones**,\n- detects **liver tumors**,\n- detects **liver cysts** (so the statement that ultrasound cannot diagnose a liver cyst is false),\n- and **guides the percutaneous (P/C) liver biopsy**.\n\nIts guiding role in percutaneous liver biopsy also makes it the entry point for tissue diagnosis. Its main limitations are operator dependence and degraded views in obesity or overlying bowel gas - which is why CT or MRI follow whenever ultrasound is inadequate or the clinical question remains open.",
+          "key_points": [
+            "Ultrasound = first line, because of safety and availability.",
+            "Detects: bile duct dilatation, gall stones, liver tumors, liver cysts.",
+            "Guides percutaneous liver biopsy.",
+            "It CAN diagnose a liver cyst - a classic true/false trap."
+          ]
+        },
+        {
+          "heading": "Triple-Phase Spiral CT (Computerized Tomography) of the Liver",
+          "body_text": "**Triple-phase spiral CT (computerized tomography)** is the standard multiphase liver protocol and has two contrast components:\n- **A. Oral contrast CT enhancement**: opacifies the **stomach and duodenum**, allowing **visualization of the stomach and duodenum in relation to the liver hilum** - essential for judging whether a lesion arises from the liver or from an adjacent hollow organ, and for planning surgery around the hilum.\n- **B. IV contrast**, with four uses:\n  - **1. Early arterial phase** - **detecting small liver tumors** (most liver tumors are artery-supplied and enhance while the parenchyma is still unenhanced).\n  - **2. Venous phase** - **inflammatory lesions exhibit rim enhancement**.\n  - **3. Late venous enhancement** - the characteristic filling-in pattern of **haemangioma**.\n  - **4. Measurement of the density of a liver lesion** (a simple **cystic** lesion shows water-density, non-enhancing content).\n\nThe same IV-enhanced CT of chest and abdomen later becomes the backbone of the blunt liver trauma pathway.",
+          "key_points": [
+            "Oral contrast: shows stomach and duodenum in relation to the liver hilum.",
+            "Early arterial phase: small liver tumors.",
+            "Venous phase: inflammatory lesions with rim enhancement.",
+            "Late venous enhancement: haemangioma.",
+            "Density measurement: characterizes cystic lesions."
+          ],
+          "check": {
+            "prompt": "On triple-phase spiral CT, which IV-contrast phase detects small liver tumors and which shows the rim enhancement of inflammatory lesions?",
+            "options": [
+              "Early arterial phase for small tumors; venous phase for rim enhancement of inflammatory lesions",
+              "Late venous phase for small tumors; early arterial phase for inflammation",
+              "Oral contrast phase for both",
+              "Venous phase for small tumors; late venous phase for rim enhancement",
+              "Density measurement alone detects both"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المرحلة الشريانية المبكرة تكشف الأورام الكبدية الصغيرة لأنها شريانية التروية، والطور الوريدي يُظهر الآفات الالتهابية بتعزيز حافي، بينما التعزيز الوريدي المتأخر صفة الورم الوعائي، وتباين الفم يقيّم المعدة والإثني عشر بالنسبة لسرة الكبد، وقياس الكثافة يميز الآفات الكيسية."
+          }
+        },
+        {
+          "heading": "MRI, MRCP and MRA: Indications",
+          "body_text": "**MRI (magnetic resonance imaging)** has three lecture indications in hepatobiliary disease:\n- **A. When IV contrast CT is contraindicated because of allergy** to iodinated contrast - MRI becomes the cross-sectional imaging alternative.\n- **B. MRCP (magnetic resonance cholangio-pancreatography)**: **excellent-quality imaging of the biliary tract, non-invasively**, without radiation or endoscopy. The exam nuance: **ERCP or PTC pictures are better than MRCP ones** - direct contrast cholangiography still gives the highest-resolution duct images, but at the price of invasiveness.\n- **C. MRA (magnetic resonance angiography)**: images the **hepatic artery and portal vein without the need for arterial cannulation** and is used **as an alternative to hepatic angiography** when only vascular anatomy and patency are needed.",
+          "key_points": [
+            "MRI when IV contrast CT is contraindicated because of allergy.",
+            "MRCP: excellent-quality, non-invasive biliary imaging; but ERCP or PTC pictures are better.",
+            "MRA: hepatic artery and portal vein without arterial cannulation - alternative to hepatic angiography."
+          ]
+        },
+        {
+          "heading": "The MRCP Image of the Lecture: Gallbladder and Duct Stones",
+          "body_text": "The lecture slide demonstrates a **radiological scan - an MRCP (magnetic resonance cholangiopancreatography) of the biliary system**; this imaging modality displays four labeled structures; the slide labels read gall bladder, bile duct, stone in gall bladder and stone in bile duct, and the pathological findings are:\n- **Gall bladder**: a large, bright, fluid-filled structure visible on one side of the image.\n- **Bile duct**: the tubular common bile duct extending downwards from the liver/gallbladder region.\n- **Stone in gall bladder**: a dark, rounded filling defect visible within the lumen of the gall bladder, indicating the presence of a gallstone - **cholelithiasis**.\n- **Stone in bile duct**: a dark, rounded filling defect visible in the distal portion of the bile duct, indicating choledocholithiasis (a bile duct stone).\n\n**Key teaching finding:** the image demonstrates **concurrent gallstones (cholelithiasis) and a bile duct stone (choledocholithiasis)**, a common clinical scenario in biliary surgery - the exact setting in which ultrasound is followed by MRCP and then by therapeutic ERCP for stone retrieval."
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "First-line ultrasound",
+          "definition_ar": "الموجات فوق الصوتية كتحقيق أول للكبد والجهاز الصفراوي لسلامتها وتوفرها؛ تكشف اتساع القنوات الصفراوية وحصى المرارة وأورام الكبد والكيسات الكبدية وتوجه الخزعة الكبدية الجلدية."
+        },
+        {
+          "term": "Triple-phase spiral CT",
+          "definition_ar": "التصوير المقطعي الحلزوني ثلاثي الطور: بروتوكول يضم تبايناً فموياً لعرض المعدة والإثني عشر بالنسبة لسرة الكبد وتبايناً وريدياً بمراحل شريانية مبكرة ووريدية ومتأخرة مع قياس كثافة الآفات."
+        },
+        {
+          "term": "Early arterial phase",
+          "definition_ar": "المرحلة الشريانية المبكرة بعد حقن التباين الوريدي: أفضل مرحلة لكشف الأورام الكبدية الصغيرة لأن معظمها يتغذى بالشريان الكبدي ويتعزز قبل البرانشيمة."
+        },
+        {
+          "term": "Rim enhancement",
+          "definition_ar": "تعزيز الحافة في الطور الوريدي: نمط تظهر فيه الآفات الالتهابية الكبدية كحلقة متعززة محيطياً - علامة مميزة لها في التصوير المقطعي."
+        },
+        {
+          "term": "Haemangioma",
+          "definition_ar": "الورم الوعائي الكبدي: أشيع آفة كبدية حميدة، يتميز بتعزيز حويصلي محيطي يمتلئ تدريجياً في الطور الوريدي المتأخر، ولا يأخذ لقاح غبار الكبريت في الطب النووي."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير الأقنية الصفراوية والبنكرياسية بالرنين المغناطيسي: تصوير غير تداخلي بجودة ممتازة للسبيل الصفراوي دون إشعاع، لكن صور ERCP أو PTC المباشرة تظل أفضل منه."
+        },
+        {
+          "term": "MRA",
+          "definition_ar": "تصوير الأوعية بالرنين المغناطيسي: يظهر الشريان الكبدي والوريد البابي دون قسطرة شريانية، ويستخدم كبديل عن التصوير الوعائي الكبدي."
+        },
+        {
+          "term": "Choledocholithiasis",
+          "definition_ar": "حصاة القناة الصفراوية المشتركة: عيب ملء داكن مدور داخل القناة على MRCP أو التصبغة المباشرة، وقد تجتمع مع حصى المرارة في آن واحد."
+        },
+        {
+          "term": "Cholelithiasis",
+          "definition_ar": "حصى المرارة: عيوب ملء داكنة داخل المرارة تُرى على الموجات فوق الصوتية وعلى MRCP."
+        },
+        {
+          "term": "Percutaneous liver biopsy",
+          "definition_ar": "الخزعة الكبدية الجلدية: سحب عينة من الكبد بإبرة عبر الجلد بتوجيه الموجات فوق الصوتية، وهي إحدى قدرات التحقيق الأول."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_Liver_L1_c03",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Hepatobiliary Investigations II: ERCP, Endoluminal Ultrasound and PTC",
+      "summary_ar": "ERCP هو تنظير القنوات الصفراوية والبنكرياسية بالمنظار الرجعي، وهدفه الأساسي علاجي ويسبق عادة بـ MRCP: استخراج الحصى، وتوسيع التضيقات بالبالون، وإدخال الدعامات، والفرشاة الخلوية للأورام. أما استخدامه التشخيصي فيكون في اليرقان الانسدادي أو عندما تشير الصور السابقة إلى شذوذ صفراوي، ويُسبق بـ MRCP ما لم يكن مضاد استطباب فيصبح تشخيصياً وعلاجياً في الجلسة نفسها. يستلزم الإجراء تحضيراً قبل العملية: فحص التخثر، وصادات وقائية، وشرح المضاعفات الأربع المرتبطة بقطع العضلة العاصرة: التهاب البنكرياس والتهاب الأقنية الصفراوية والنزف والانثقاب. ويضيف تنظير الموجات فوق الصوتية عبر الأنبوب معلومات عن مدى الأورام السرية، أما PTC فيلجأ إليه عند فشل ERCP أو استحالته وفي ورم القنوات الصفراوية السري حيث فشل ERCP في إظهار الأقنية داخل الكبد.",
+      "sections": [
+        {
+          "heading": "ERCP: Definition and Indications",
+          "body_text": "**ERCP (endoscopic retrograde cholangiopancreatography)** combines side-viewing endoscopy of the duodenal papilla with retrograde injection of contrast into the biliary and pancreatic ducts under X-ray (fluoroscopic) guidance.\n\n**Indications:**\n- **A. Therapeutic (mostly)** - this is the **main purpose of ERCP**, and the procedure is **usually and mostly preceded by MRCP** so that the anatomy and pathology are already known before the scope is passed. The therapeutic repertoire:\n  - **1. Stone retrieval** from the bile ducts.\n  - **2. Balloon dilatation of strictures**.\n  - **3. Stent insertion** across strictures or leaks.\n  - **4. Brush cytology of tumors** for a cytological diagnosis.\n- **B. Diagnostic** - in **obstructive jaundice, or when previous imaging suggests a biliary tract abnormality**. It is **usually preceded by MRCP unless the latter is contraindicated**, in which case **it can be used as diagnostic and therapeutic at the same time accordingly** - one anesthesia, one intervention.",
+          "key_points": [
+            "ERCP is mainly THERAPEUTIC and is usually preceded by MRCP.",
+            "Therapeutic list: stone retrieval, balloon dilatation of strictures, stent insertion, brush cytology of tumors.",
+            "Diagnostic use: obstructive jaundice or previous imaging suggesting biliary abnormality.",
+            "If MRCP is contraindicated, ERCP becomes diagnostic and therapeutic in the same session."
+          ]
+        },
+        {
+          "heading": "The ERCP Images of the Lecture: Fluoroscopy, Cholangiogram and Stone Extraction",
+          "body_text": "The lecture slide carries three complementary ERCP images:\n- **Fluoroscopic view (ERCP)** - modality: X-ray/fluoroscopy: a radiological image in which arrows point to the branching **biliary tree opacified with contrast dye**, to the tubular instrument (the **endoscope**) in position, and to **stones**, visible as radiolucent filling defects - dark gaps within the white contrast column - in the distal biliary ducts.\n- **Fluoroscopic cholangiogram** - modality: fluoroscopic image with a circular field of view: a detailed view of the **intrahepatic and extrahepatic biliary tree filled with contrast**, with the **side-viewing duodenoscope** in position at the ampulla; the ducts appear **dilated and irregular, consistent with pathology such as stones or strictures**.\n- **Endoscopic (direct vision) photograph** at the bottom center of the slide: a close-up view through the duodenoscope showing the **major papilla (ampulla of Vater) after a sphincterotomy** has been performed, with **multiple large, yellowish-green, faceted stones emerging and being extracted from the biliary orifice into the duodenal lumen**; a small fluoroscopic inset image in the bottom left corner, corresponding to the endoscopic view and confirming the location of the endoscope and stones under X-ray guidance.\n\nTogether these images show the full ERCP workflow: fluoroscopic duct opacification, endoscopic access to the papilla, sphincterotomy and mechanical stone extraction."
+        },
+        {
+          "heading": "Preoperative Preparation for ERCP and Its Complications",
+          "body_text": "Every ERCP requires a defined **pre-operative preparation**:\n- **A. Check the coagulation** profile (platelet count, PT/INR): sphincterotomy and stone extraction can bleed, so a safe coagulation baseline is mandatory; vitamin-K-dependent defects are corrected beforehand.\n- **B. Prophylactic antibiotics (AB)** to cover biliary-enteric organisms and reduce infective complications.\n- **C. Explanation of possible complications** to the patient when consent is taken: **pancreatitis, cholangitis, bleeding and perforation - the four classic complications related to sphincterotomy** (and to duodenal manipulation).\n\nThese four complications are complications of ERCP, not of MRCP - the lecture true/false list makes exactly this distinction, because MRCP is non-invasive and carries none of them."
+        },
+        {
+          "heading": "Endoluminal Ultrasound",
+          "body_text": "**Endoluminal ultrasound** (endoscopic ultrasound passed through the duodenoscope) **provides additional information on the extent of hilar tumours** - depth of invasion along the bile duct, relationship to the portal vein and hepatic artery, and peri-ductal nodes. It is therefore the complementary staging tool used before deciding resectability or drainage in hilar cholangiocarcinoma, refining what MRCP and CT have shown; in the lecture's staging workflow it provided the additional information on the extent of the hilar tumour before the resection or drainage decision was taken.",
+          "key_points": [
+            "Endoluminal ultrasound = additional information on the extent of hilar tumours.",
+            "Complements MRCP/CT in staging hilar cholangiocarcinoma before resection or drainage decisions."
+          ]
+        },
+        {
+          "heading": "PTC (Percutaneous Trans-hepatic Cholangiography): Indications",
+          "body_text": "**PTC (percutaneous trans-hepatic cholangiography)** is the radiologist's direct cholangiogram: a fine needle is passed **through the skin and the liver into a (usually dilated) intrahepatic bile duct**, and contrast is injected to outline the ducts from above; the track can be converted into external or internal biliary drainage.\n\n**Indications:**\n- **1. When ERCP has failed or is impossible** (failed cannulation of the papilla, altered upper-GI anatomy, duodenal obstruction blocking the endoscope).\n- **2. Hilar bile duct tumor (for example cholangiocarcinoma)** where **ERCP failed to visualize the intrahepatic bile ducts** - PTC enters the dilated ducts from above and demonstrates the level and length of the hilar obstruction.\n\nExam trap from the lecture true/false list: **PTC is NOT an intravenous injection of dye, and ERCP is not its second-choice backup** - the sequence runs the other way: PTC is reserved for the patient in whom ERCP has failed or cannot be done. PTC carries its own risks (bleeding, cholangitis, bile leak), so coagulation must likewise be checked beforehand.",
+          "key_points": [
+            "PTC = percutaneous trans-hepatic puncture of an intrahepatic duct, NOT an IV dye injection.",
+            "Indication 1: ERCP failed or impossible.",
+            "Indication 2: hilar bile duct tumor (e.g. cholangiocarcinoma) with failure to visualize the intrahepatic ducts at ERCP."
+          ],
+          "check": {
+            "prompt": "A jaundiced patient with a hilar cholangiocarcinoma had an ERCP that failed to outline the intrahepatic ducts. Which investigation is indicated next?",
+            "options": [
+              "Percutaneous trans-hepatic cholangiography (PTC)",
+              "Repeat ERCP with a larger sphincterotomy",
+              "Intravenous cholangiography",
+              "HIDA scintigraphy",
+              "Sulphur colloid liver scan"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند فشل ERCP أو تعذره، وبخاصة في ورم القنوات الصفراوية السري حيث يفشل إظهار الأقنية داخل الكبد، يكون PTC هو الاختيار: إبرة عبر الجلد والكبد تدخل قناة موسعة وتصبغها من الأعلى. وPTC ليس حقناً وريدياً للصبغة، ومسح HIDA وغبار الكبريت ليسا لتصوير الأقنية بهذه الطريقة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "ERCP",
+          "definition_ar": "تنظير القنوات الصفراوية والبنكرياسية بالمنظار الرجعي: منظار جانبي الرؤية يصل حليمة فاتر ويحقن تبايناً رجعياً داخل الأقنية تحت المراقبة الفلورية؛ هدفه الأساسي علاجي ويسبقه عادة MRCP."
+        },
+        {
+          "term": "Sphincterotomy",
+          "definition_ar": "قطع العضلة العاصرة لحليمة فاتر: شق العاصرة قبل استخراج الحصى أو تركيب الدعامة؛ ترتبط به مضاعفات التهاب البنكرياس والتهاب الأقنية والنزف والانثقاب."
+        },
+        {
+          "term": "Brush cytology",
+          "definition_ar": "الفرشاة الخلوية: كشط الآفة داخل القناة الصفراوية بفرشاة تمر عبر ERCP للحصول على خلايا للتشخيص الخلوي."
+        },
+        {
+          "term": "Biliary stent",
+          "definition_ar": "الدعامة الصفراوية: أنبوب بلاستيكي أو معدني يركب عبر ERCP أو PTC عبر التضيق لتصريف الصفراء إلى الإثني عشر أو إلى الخارج."
+        },
+        {
+          "term": "Endoluminal ultrasound",
+          "definition_ar": "الموجات فوق الصوتية عبر الأنبوب: منظار يحمل مسبار أمواج فوق صوتية يوفر معلومات إضافية عن مدى الأورام السرية وعمق غزوها للأوعية المجاورة."
+        },
+        {
+          "term": "PTC",
+          "definition_ar": "تصوير الأقنية الصفراوية عبر الكبد عبر الجلد: إبرة تدخل عبر الجلد والكبد إلى قناة صفراوية داخل الكبد ثم يحقن التباين؛ يلجأ إليه عند فشل ERCP أو تعذره أو في ورم القنوات السري."
+        },
+        {
+          "term": "Cholangiocarcinoma",
+          "definition_ar": "سرطان الأقنية الصفراوية: ورم ينشأ من بطانة القنوات الصفراوية، وإذا كان سرّياً فقد يفشل ERCP في إظهار الأقنية داخل الكبد فيصبح PTC ضرورياً للتشخيص والتصريف."
+        },
+        {
+          "term": "Obstructive jaundice",
+          "definition_ar": "اليرقان الانسدادي: اصفرار الجلد والعينين من انسداد تصريف الصفراء، وهو أحد الاستطبابات التشخيصية لERCP."
+        },
+        {
+          "term": "Side-viewing duodenoscope",
+          "definition_ar": "المنظار الاثنا عشري جانبي الرؤية: منظار ERCP الذي يرى الحليمة جانبياً لقنها وحقن التباين وتمرير الأدوات."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_Liver_L1_c04",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Hepatobiliary Investigations III: Angiography, Laparoscopy, Nuclear Medicine and the Imaging Self-Test",
+      "summary_ar": "التصوير الوعائي الكبدي قسطرة شريانية له استطبابات تشخيصية وعلاجية: تشخيصياً لتصوير تشريح الشريان الكبدي وتأكيد نفوذ الوريد البابي وجمع معلومات إضافية عن عقيدة كبدية، وعلاجياً لإغلاق التحويلات الشريانية الوريدية وانصدام مواضع النزف في الكبد والانصدام الكيميائي. والتنظير البطني مع الموجات فوق الصوتية التنظيرية أدوات تصنيف لأورام الكبد والبنكرياس والسبيل الصفراوي وللكشف عن الانتقالات الصفاقية والأورام الكبدية السطحية. أما الطب النووي فمسح التكنيشيوم 99م يتتبع اللقاح من الوريد إلى الدورة الدموية فالخلايا الكبدية فالصفراء أمام كاميرا غاما ليشخص تسرب الصفراء والانسداد الصفراوي، ومسح غبار الكبريت تلتقطه خلايا كوبفر فيفرق بين الأديوما والورم الوعائي (لا التقاط) وبين الفرط التصنيع العقدي البؤري FNH (التقاط).",
+      "sections": [
+        {
+          "heading": "Angiography of the Liver: Diagnostic and Therapeutic Indications",
+          "body_text": "**Angiography of the liver** (invasive catheter angiography, usually by transfemoral arterial cannulation) has two groups of indications:\n- **1. Diagnostic**:\n  - **A. To visualize the anatomy of the hepatic artery** (variant arterial anatomy, the arterial supply of a tumor) and **to confirm the patency of the portal vein**.\n  - **B. To obtain additional information on a liver nodule** - its arterial blush and washout pattern help characterize it.\n- **2. Therapeutic**:\n  - **A. Occlusion of AV (arteriovenous) malformations**.\n  - **B. Embolization of bleeding sites in the liver** (post-traumatic or iatrogenic hemorrhage).\n  - **C. Chemoembolization** - delivering chemotherapy into the tumor-feeding artery and then occluding it (TACE), used for unresectable arterially-enhancing liver tumors.\n\nRemember from the MRI section that **MRA is the non-invasive alternative** when only the hepatic artery and portal vein need to be shown, because it needs **no arterial cannulation**.",
+          "key_points": [
+            "Diagnostic angiography: hepatic artery anatomy, portal vein patency, extra information on a liver nodule.",
+            "Therapeutic angiography: occlusion of AV malformations, embolization of bleeding sites, chemoembolization.",
+            "MRA is the non-invasive alternative for pure vascular anatomy."
+          ]
+        },
+        {
+          "heading": "Laparoscopy and Laparoscopic Ultrasound",
+          "body_text": "**Laparoscopy and laparoscopic ultrasound** are primarily **staging tools** in hepatobiliary practice: they are **useful for the staging of HBP (hepato-biliary-pancreatic) cancers**, for the detection of **peritoneal metastases** (small seedings on the peritoneal surface that cross-sectional imaging misses) and for the assessment of **superficial liver tumours** - small lesions on the liver surface, their relation to the diaphragm, hilum and capsule.\nLaparoscopic ultrasound adds the deep view: with the probe placed directly on the liver it shows intraparenchymal tumor extent, segmental involvement and vascular invasion, so that unresectable patients are spared a pointless laparotomy and resectable ones are planned accurately.",
+          "key_points": [
+            "Laparoscopy + laparoscopic ultrasound = staging of HBP cancers.",
+            "Detects peritoneal metastases and superficial liver tumours.",
+            "Prevents unnecessary laparotomy in unresectable disease."
+          ]
+        },
+        {
+          "heading": "Nuclear Medicine Scanning: 99mTc Radionuclide and Sulphur Colloid",
+          "body_text": "**Nuclear medicine scanning** uses two radiotracer techniques in hepatobiliary disease:\n- **A. Technetium-99m (99mTc)-labeled radionuclide** (HIDA-type biliary scintigraphy): injected **intravenously**, it passes through the **circulation** to the **liver, where it is taken up by the hepatocytes**, is excreted with the **bile**, and its whole journey is recorded by the **gamma camera**. This dynamic pathway **diagnoses bile leak** (tracer activity outside the biliary tree, for example after biliary surgery or trauma) **and biliary obstruction** (delayed or absent progression of activity into the intestine).\n- **B. Sulphur colloid liver scan** (demonstrated on the lecture slide as the sulphur colloid scan): the colloid particles are taken up by the **Kupffer cells** of the reticuloendothelial system, so the pattern of uptake **differentiates focal nodular hyperplasia (FNH) - which contains Kupffer cells and shows uptake - from hepatic adenoma and haemangiomas, which show no uptake**. This is the classic imaging differentiator between FNH and the other two benign lesions.",
+          "key_points": [
+            "99mTc radionuclide pathway: IV - circulation - liver (hepatocytes) - bile - gamma camera.",
+            "99mTc scan diagnoses bile leak and biliary obstruction.",
+            "Sulphur colloid is taken up by Kupffer cells: adenoma and haemangioma = no uptake; FNH = uptake."
+          ],
+          "check": {
+            "prompt": "On a sulphur colloid liver scan, which focal lesion takes up the tracer and which do not?",
+            "options": [
+              "Focal nodular hyperplasia shows uptake (it contains Kupffer cells); adenoma and haemangioma show no uptake",
+              "Adenoma shows uptake; FNH and haemangioma show none",
+              "Haemangioma shows uptake; FNH and adenoma show none",
+              "All focal lesions show equal uptake",
+              "No focal lesion ever shows uptake"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "غبار الكبريت تلتقطه خلايا كوبفر الموجودة في الفرط التصنيع العقدي البؤري FNH فيظهر التقاطاً، بينما الأديوما والورم الوعائي لا يحتويان خلايا كوبفر فلا يظهران أي التقاط - وهذا المفتاح المميز بينها."
+          }
+        },
+        {
+          "heading": "Imaging Self-Test: The Five True/False Statements of the Lecture",
+          "body_text": "The lecture closes the imaging block with five true/false statements - **each one is FALSE**, and the reasoning is the exam point:\n- **CT is better than MRCP in detection of biliary tree pathologies - FALSE**: MRCP images the biliary tract non-invasively with excellent quality; only the direct cholangiography pictures of ERCP or PTC are better still.\n- **MRCP is an invasive therapeutic technique while ERCP is noninvasive and only diagnostic - FALSE**: the statement is exactly reversed - **MRCP is the non-invasive, diagnostic technique; ERCP is the invasive, mainly therapeutic one** (stone retrieval, balloon dilatation, stents, brush cytology).\n- **Ultrasound scan cannot diagnose liver cyst - FALSE**: ultrasound detects liver cysts (and bile duct dilatation, gall stones, liver tumors, and it guides percutaneous liver biopsy).\n- **PTC is an IV injection of dye, and when it fails ERCP is the second choice - FALSE**: PTC is a **percutaneous trans-hepatic** injection into an intrahepatic duct, and it is used **when ERCP has failed or is impossible** - the sequence is the opposite of the statement.\n- **Pancreatitis, cholangitis, bleeding and perforation are the main complications of MRCP - FALSE**: these are the complications of **ERCP, related to sphincterotomy**; MRCP is non-invasive and carries none of them.\n\nBeing able to refute each statement quickly is the fastest way to score on the imaging questions of this lecture."
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hepatic angiography",
+          "definition_ar": "التصوير الوعائي الكبدي: قسطرة شريانية عبر الفخذ لتصوير الشريان الكبدي وتأكيد نفوذ الوريد البابي وجمع معلومات عن عقيدات الكبد، وله استخدامات علاجية بالانصدام."
+        },
+        {
+          "term": "Chemoembolization",
+          "definition_ar": "الانصدام الكيميائي: حقن العلاج الكيميائي في الشريان المغذي للورم ثم انصدامه؛ أحد الاستطبابات العلاجية للتصوير الوعائي الكبدي."
+        },
+        {
+          "term": "Embolization",
+          "definition_ar": "الانصدام: إغلاق وعائي انتقائي عبر القسطرة لعلاج مواضع النزف في الكبد أو التحويلات الشريانية الوريدية."
+        },
+        {
+          "term": "HIDA scan (99mTc radionuclide)",
+          "definition_ar": "مسح التكنيشيوم 99م: لقاح مشع يحقن وريدياً فيمر بالدورة الدموية فتأخذه الخلايا الكبدية ويفرز مع الصفراء ويرصد بكاميرا غاما؛ يشخص تسرب الصفراء والانسداد الصفراوي."
+        },
+        {
+          "term": "Sulphur colloid scan",
+          "definition_ar": "مسح غبار الكبريت: لقاح تلتقطه خلايا كوبفر فيميز بين الأديوما والورم الوعائي بلا التقاط وبين الفرط التصنيع العقدي البؤري FNH بالتقاط."
+        },
+        {
+          "term": "Kupffer cells",
+          "definition_ar": "خلايا كوبفر: بلاعم الجيوبانيات الكبدية المسؤولة عن ترشيح الدم من الجراثيم والجسيمات الغريبة، وهي أساس مسح غبار الكبريت."
+        },
+        {
+          "term": "Focal nodular hyperplasia (FNH)",
+          "definition_ar": "الفرط التصنيع العقدي البؤري: آفة كبدية حميدة تحتوي خلايا كوبفر فتأخذ لقاح غبار الكبريت، بعكس الأديوما والورم الوعائي."
+        },
+        {
+          "term": "Laparoscopic ultrasound",
+          "definition_ar": "الموجات فوق الصوتية بالتنظير: مسبار يوضع على الكبد عبر التنظير البطني لتصنيف أورام الكبد والبنكرياس والسبيل الصفراوي وبيان عمق الغزو الوعائي."
+        },
+        {
+          "term": "Staging laparoscopy",
+          "definition_ar": "التنظير البطني التصنيفي: تنظار البطن لكشف الانتقالات الصفاقية والأورام الكبدية السطحية قبل قرار الاستئصال في أورام الكبد والبنكرياس والسبيل الصفراوي."
+        },
+        {
+          "term": "Gamma camera",
+          "definition_ar": "كاميرا غاما: كاشف الإشعاع في الطب النووي الذي يرسم مسار اللقاح المشع من الكبد إلى الصفراء والأمعاء."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_Liver_L1_c05",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Liver Trauma: Injury Patterns and Diagnosis",
+      "summary_ar": "رضح الكبد من الإصابات الخطيرة: النافذ (طعنة أو رصاصة) يسبب كدمة وتمزقاً وانسلاخاً للكبد، والكللي يأتي بالاصطدام والسحق. التشخيص مسارَان: مسار الاشتباه العالي - كل جراحات الصدر السفلي والبطن الأعلى النافذة أو الساحقة مع عدم استقرار ديناميكي وعائي (تسرع النبض وهبوط الضغط والحاجة الماسة لنقل الدم) - وهو بنفسه إشارة علاجية إلى الإنعاش والمسرح؛ ومسار الرضح الكللي المستقر مع ألم وانثناء البطن الذي يقيَّم بأربع خطوات: الموجات فوق الصوتية ثم CT مقوى بالتباين الوريدي للصدر والبطن، وتصوير الصدر لإصابة البرانشيمة الرئوية أو الأوعية الكبيرة، والغسل الصفاقي والبزل التشخيصي، والتنظير البطني لكشف تمزق الحجاب الحاجز المرافق.",
+      "sections": [
+        {
+          "heading": "Serious Liver Injuries: Penetrating versus Blunt",
+          "body_text": "**Liver trauma ranks among the serious injuries** of emergency surgery because of the organ's size, vascularity and friability. The mechanisms are:\n- **Penetrating trauma (stab or gunshot)**, producing **contusion, laceration and avulsion of the liver** - the skin wound may look trivial while the intra-abdominal damage is extensive; a right lower-chest or upper-abdominal track can traverse the liver capsule without warning.\n- **Blunt trauma** (road traffic collisions, crushing injuries, falls from height) - compression and deceleration can burst the parenchyma, tear hepatic veins where they enter the vena cava, or create subcapsular hematomas that may expand or rupture hours or days later.\n\n**Every lower-chest and upper-abdominal wound or crush must be presumed to have injured the liver until proven otherwise.**",
+          "key_points": [
+            "Penetrating (stab or gunshot) injuries: contusion, laceration and avulsion of the liver.",
+            "Blunt injuries: parenchymal bursts, retrohepatic venous tears, subcapsular hematomas.",
+            "High suspicion for ALL lower chest and upper abdominal stab wounds or crushing injuries."
+          ]
+        },
+        {
+          "heading": "Diagnosis A: High Suspicion in the Haemodynamically Unstable Patient",
+          "body_text": "**Diagnostic pathway A - the high-suspicion, unstable patient:**\nMaintain **high suspicion in ALL lower chest and upper abdominal stab wounds (penetrating) or crushing (blunt) injuries**, and look for the **haemodynamically unstable** picture:\n- **pulse rate (PR) increase**,\n- **blood pressure (BP) decrease**,\n- and **+++ need for blood transfusion**.\n\nThis combination - suspicious mechanism plus instability - **is itself the diagnostic trigger**: the patient is bleeding from the liver (or another intra-abdominal source) until proven otherwise, and belongs to the treatment pathway of **resuscitation and theatre**, not to prolonged imaging. The diagnosis is effectively made clinically.",
+          "key_points": [
+            "High suspicion: all lower chest and upper abdominal stab wounds or crushing injuries.",
+            "Instability = PR increase + BP decrease + +++ need for blood transfusion.",
+            "Mechanism + instability = clinical diagnosis; go to resuscitation and theatre, not the scanner."
+          ]
+        },
+        {
+          "heading": "Diagnosis B: The Stable Blunt-Trauma Patient (Four-Step Work-Up)",
+          "body_text": "**Diagnostic pathway B - blunt trauma, haemodynamically stable, with abdominal tenderness and guarding.** The lecture gives four steps:\n- **1. U/S (ultrasound) then IV-enhanced CT scan of the chest and abdomen** - ultrasound first (safe, available, demonstrates free fluid), then intravenous contrast CT defining the liver injury, its depth and any active extravasation, together with the chest component.\n- **2. Chest scan** - looking for **lung parenchyma or big vessel damage** (great-vessel and lung injury accompanies severe deceleration trauma).\n- **3. Peritoneal lavage and diagnostic aspirate** - showing **free fluid and haemoperitoneum** when imaging is equivocal or unavailable.\n- **4. Laparoscopy** - to detect **any associated diaphragmatic rupture**, which is easily missed on CT and otherwise declares itself later as herniation.\n\nThe four steps are examinable as a fixed list: ultrasound + CT, chest scan, peritoneal lavage and diagnostic aspirate, laparoscopy for diaphragmatic rupture.",
+          "key_points": [
+            "Pathway B applies to the blunt, stable patient with tenderness and guarding.",
+            "Step 1: U/S then IV-enhanced CT of chest and abdomen.",
+            "Step 2: chest scan for lung parenchyma or big vessel damage.",
+            "Step 3: peritoneal lavage and diagnostic aspirate (free fluid, haemoperitoneum).",
+            "Step 4: laparoscopy for any associated diaphragmatic rupture."
+          ],
+          "check": {
+            "prompt": "In pathway B for the stable blunt-trauma patient, which step specifically detects an associated diaphragmatic rupture?",
+            "options": [
+              "Laparoscopy",
+              "Peritoneal lavage alone",
+              "The chest scan alone",
+              "Ultrasound alone",
+              "Diagnostic aspirate"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التنظير البطني هو الخطوة المخصصة لكشف تمزق الحجاب الحاجز المرافق لأنه يرى الحجاب مباشرة، بينما الغسل الصفاقي والبزل يكشفان السائل الحر والدم داخل الصفاق، والموجات فوق الصوتية وتصوير الصدر لا يثبتان التمزق الحجابي بثقة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Penetrating liver trauma",
+          "definition_ar": "رضح الكبد النافذ: طعنة سكين أو رصاصة تسبب كدمة أو تمزقاً أو انسلاخاً للكبد، ويكفي جرح في الصدر السفلي أو البطن الأعلى للاشتباه به."
+        },
+        {
+          "term": "Blunt liver trauma",
+          "definition_ar": "رضح الكبد الكللي: اصطدام أو سحق أو سقوط من علو، قد يمزق الحشوية أو الأوردة الكبدية الخلفية أو يكوّن ورباً دموياً تحت المحفظة."
+        },
+        {
+          "term": "Contusion",
+          "definition_ar": "الكدمة الكبدية: رضح نزفي في الحشوية دون تمزق كامل للمحفظة."
+        },
+        {
+          "term": "Laceration",
+          "definition_ar": "التمزق الكبدي: شق في حشوية الكبد بعمق متفاوت قد يمتد إلى الأوعية والأقنية الصفراوية."
+        },
+        {
+          "term": "Avulsion",
+          "definition_ar": "الانسلاخ الكبدي: اقتلاع جزء من الكبد أو تمزق أوعيته عند منشئها، وهي من أشد إصابات الرضح النافذ."
+        },
+        {
+          "term": "Haemoperitoneum",
+          "definition_ar": "نزف داخل الصفاق: دم حر في التجويف البطني يظهر على الموجات فوق الصوتية أو بالغسل الصفاقي والبزل التشخيصي."
+        },
+        {
+          "term": "Peritoneal lavage",
+          "definition_ar": "الغسل الصفاقي التشخيصي: إدخال محلول إلى التجويف البطني وسحبه لتقييم وجود الدم الحر عند مرضى الرضح الكللي."
+        },
+        {
+          "term": "Diagnostic aspirate",
+          "definition_ar": "البزل التشخيصي: سحب السائل الحر عبر الجلد بغية تحديد الدم أو الصفراء داخل البطن."
+        },
+        {
+          "term": "Diaphragmatic rupture",
+          "definition_ar": "تمزق الحجاب الحاجز: إصابة مرافقة للرضح الكللي يكشفها التنظير البطني، وخطرها المتأخر الفتق والخنق."
+        },
+        {
+          "term": "Haemodynamically unstable",
+          "definition_ar": "عدم الاستقرار الديناميكي الوعائي: تسرع النبض وهبوط الضغط والحاجة الماسة لنقل الدم؛ إشارة إلى مسار الإنعاش والمسرح لا إلى التصوير."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_Liver_L1_c06",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Liver Trauma: Treatment and Complications",
+      "summary_ar": "علاج رضح الكبد النافذ: أولاً الإنعاش بترتيب ABC للمجر الهوائي والتنفس والدورة مع قسطرة كبيرة وتحضير الدم وتعويض الحجم بالغرويات ودم O سالب وأنبوب صدري عند اللزوم، ثم النقل إلى مسرح العمليات لاستكشاف البطن. والرضح الكللي الشديد يتبع الخطة نفسها، أما الخفيف أو المستقر ديناميكياً فيصوَّر أولاً ثم يعالج وفق النتيجة، وأكثرهم يعالج محافظاً بمراقبة لصيقة. يُوقف العلاج المحافظ عند استمرار فقد الدم رغم تصحيح التخثر أو عند ظهور علامات التهاب الصفاق العام. والمضاعفات: النزف الهائل المفاجئ، والأورام الدموية تحت وداخل المحفظة، وخراج الكبد، والناسورات الصفراوية النادرة وأم الدم الشريانية والناسورات الشريانية الوريدية والشريانية الصفراوية، والفشل الكبدي أحياناً في الرضح الواسع، ومضاعفات بعيدة المدى نادرة في السبيل الصفراوي.",
+      "sections": [
+        {
+          "heading": "Treatment of Penetrating Liver Trauma: Resuscitation then Theatre",
+          "body_text": "**Treatment of penetrating liver trauma follows two stages:**\n- **A. Resuscitation - the ABC sequence: Airway, Breathing and Circulation.** Secure the airway, support ventilation, and restore the circulation: insert a **large-bore cannula**, take blood samples and **prepare blood for transfusion**, give **volume replacement with colloid and O-negative (O-ve) blood** while cross-matched units are being prepared, and insert a **chest tube once indicated** (a hemopneumothorax on the injured side is part of the resuscitation, not a separate delay).\n- **B. Then transfer the patient to the operating theatre for exploratory laparotomy** - direct control of the liver injury by packing, direct suture, resectional debridement or damage-control surgery as the injury dictates.\n\nThere is no role for delaying imaging in the unstable penetrating patient: **resuscitation and surgery run together, and the scanner is for the stable.**",
+          "key_points": [
+            "Stage A: resuscitation in the ABC order - cannula, blood preparation, volume replacement (colloid, O-ve blood), chest tube once indicated.",
+            "Stage B: transfer to the operating theatre for exploratory laparotomy.",
+            "Imaging is not part of the unstable penetrating pathway."
+          ]
+        },
+        {
+          "heading": "Treatment of Blunt Liver Trauma: Severe versus Mild",
+          "body_text": "**Treatment of blunt liver trauma follows the severity:**\n- **1. Severe blunt trauma - the same plan as penetrating injury**: A. resuscitation (ABC with cannula, blood preparation, volume replacement by colloid and O-negative blood, chest tube once indicated), B. theatre for **exploratory laparotomy**.\n- **2. Mild blunt trauma and/or a haemodynamically stable patient - imaging as mentioned in the previous slide** (diagnostic pathway B: ultrasound then IV-enhanced CT of chest and abdomen, chest scan, peritoneal lavage and diagnostic aspirate, laparoscopy for diaphragmatic rupture) **and then management accordingly**: most stable patients with contusions, limited lacerations or subcapsular hematomas are managed **conservatively** - monitored bed rest, serial abdominal examination, serial hemoglobin, appropriate transfusion and correction of any coagulopathy.\n\nThe stable-versus-unstable distinction at the front door therefore decides the whole pathway.",
+          "key_points": [
+            "Severe blunt trauma = same plan as penetrating: resuscitation then exploratory laparotomy.",
+            "Mild blunt trauma and/or stable patient: imaging first, then treatment accordingly.",
+            "Most stable blunt injuries are managed conservatively with close monitoring."
+          ]
+        },
+        {
+          "heading": "Indications to Stop Conservative Treatment",
+          "body_text": "**Indications to stop conservative treatment of blunt liver trauma (the two examinable triggers):**\n- **1. Ongoing blood loss in spite of correction of any underlying coagulopathy** - a persisting transfusion requirement (repeatedly falling hemoglobin, falling pressure) after coagulopathy has been corrected means the bleeding is surgical and needs an operation.\n- **2. Development of signs of generalized peritonitis** - progressive diffuse abdominal pain, rigidity and loss of bowel sounds signal associated hollow-viscus injury, bile peritonitis or uncontrolled hemorrhage.\n\nEither indication converts the plan immediately to **exploratory laparotomy**.",
+          "key_points": [
+            "Trigger 1: ongoing blood loss despite correction of underlying coagulopathy.",
+            "Trigger 2: development of signs of generalized peritonitis.",
+            "Either trigger = stop conservative treatment and operate."
+          ],
+          "check": {
+            "prompt": "Which pair of findings are the two indications to stop conservative treatment of blunt liver trauma?",
+            "options": [
+              "Ongoing blood loss despite correction of coagulopathy, and signs of generalized peritonitis",
+              "A single fever spike and mild tenderness",
+              "Rising AST and ALT on day 1",
+              "One episode of transient hypotension that responded to fluids",
+              "Pain that requires analgesia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المؤشران هما استمرار فقد الدم رغم تصحيح اضطراب التخثر الأساسي وظهور علامات التهاب الصفاق العام؛ أما الحمى العابرة أو ارتفاع الأنزيمات الكبدية أو هبوط الضغط العابر المستجيب للسوائل فليست مؤشرات لترك العلاج المحافظ."
+          }
+        },
+        {
+          "heading": "Complications of Liver Trauma",
+          "body_text": "**Complications of liver trauma (the examinable list):**\n- **1. Sudden massive blood loss** - immediate exsanguination, the feared early complication.\n- **2. Subcapsular or intracapsular hematomas** - may expand or rupture later (delayed hemorrhage) and organize or calcify if they persist.\n- **3. Liver abscess** - an infected hematoma or necrotic parenchyma presenting with fever and rigors days after the injury.\n- **4. Biliary fistulae (rare)** - bile leaking to skin, duodenum or chest; together with **hepatic artery aneurysms, arteriovenous (A/V) and arteriobiliary fistulae** - arterial injuries that may later require angiographic embolization.\n- **5. Occasionally liver failure in extensive trauma** - when too much parenchyma is destroyed or perfusion was interrupted for too long.\n- **6. Long-term complications are rare, like biliary tract complications** - late strictures, bilomas and recurrent cholangitis.\n\n(The source slide numbers biliary fistulae and the aneurysm/fistula group together under a repeated number 4 - all items are transferred here in full.)",
+          "key_points": [
+            "Early lethal: sudden massive blood loss.",
+            "Delayed hemorrhage: subcapsular or intracapsular hematomas.",
+            "Infective: liver abscess.",
+            "Biliary/vascular: biliary fistulae (rare), hepatic artery aneurysms, A/V and arteriobiliary fistulae.",
+            "Parenchymal: occasional liver failure in extensive trauma; rare long-term biliary tract complications."
+          ],
+          "check": {
+            "prompt": "Which pair of complications belongs to the vascular injury group of liver trauma?",
+            "options": [
+              "Hepatic artery aneurysms and arteriobiliary fistulae",
+              "Liver abscess and biliary fistula",
+              "Subcapsular hematoma and liver failure",
+              "Bile leak and cholangitis",
+              "Peritonitis and wound infection"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "أم الدم الشريانية الكبدية والناسورات الشريانية الوريدية والشريانية الصفراوية تنتمي إلى مجموعة إصابات الشرايين بعد الرضح وقد تحتاج انصداماً وعائياً، بينما الخراج والناسور الصفراوي مضاعفات خمجية أو صفراوية، والورم الدموي تحت المحفظة مضاعفة نزفية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "ABC resuscitation",
+          "definition_ar": "إنعاش ABC: تقييم وإدارة المجر الهوائي ثم التنفس ثم الدورة الدموية مع قسطرة وريدية كبيرة وتحضير دم وتعويض حجم - خطوة العلاج الأولى في رضح الكبد."
+        },
+        {
+          "term": "Exploratory laparotomy",
+          "definition_ar": "استكشاف البطن: فتح البطن الإسعافي للسيطرة على النزف والإصابات عند مريض الرضح غير المستقر أو عند مؤشرات إيقاف العلاج المحافظ."
+        },
+        {
+          "term": "O-negative blood",
+          "definition_ar": "الدم O سالب: دم المانح الشامل الذي يعطى عاجلاً قبل جهوز الدم المتطابق أثناء إنعاش النزف الكارثي."
+        },
+        {
+          "term": "Conservative (non-operative) treatment",
+          "definition_ar": "العلاج المحافظ غير الجراحي: مراقبة لصيقة وفحوص وتحاليل متسلسلة للرضح الكبدي الكللي الخفيف في المريض المستقر ديناميكياً."
+        },
+        {
+          "term": "Subcapsular hematoma",
+          "definition_ar": "الورم الدموي تحت المحفظة: تجمع دم بين المحفظة الليفية والحشوية قد يتمدد أو ينفجر متأخراً - مضاعفة مبكرة ومتأخرة معاً."
+        },
+        {
+          "term": "Liver abscess",
+          "definition_ar": "خراج الكبد: تجمع قيحي بعد رضح الكبد نتيجة خمج ورم دموي أو نخر، يظهر بحمى وقشعريرة بعد أيام من الإصابة."
+        },
+        {
+          "term": "Biliary fistula",
+          "definition_ar": "الناسور الصفراوي: تسرب الصفراء إلى الجلد أو الأمعاء أو الصدر، وهو مضاعفة نادرة لرضح الكبد."
+        },
+        {
+          "term": "Arteriobiliary fistula",
+          "definition_ar": "الناسور الشرياني الصفراوي: اتصال مكتسب بين الشريان الكبدي وقناة صفراوية يسبب يرقاناً أو نزفاً داخل الأقنية وقد يُعالج بالانصدام الوعائي."
+        },
+        {
+          "term": "Liver failure after trauma",
+          "definition_ar": "الفشل الكبدي بعد الرضح: مضاعفة عارضة عند الرضح الواسع الذي يفقد حشوية كبيرة أو يتوقف ترويه طويلاً."
+        },
+        {
+          "term": "Coagulopathy correction",
+          "definition_ar": "تصحيح اضطراب التخثر: خطوة واجبة قبل الحكم على استمرار النزف، فاستمرار فقد الدم بعد التصحيح يعني نزفاً جراحياً يستدعي العملية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_Liver_L1_f01",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "How heavy is the liver, and how do the fibrous capsule and peritoneum cover it?",
+      "back_text": "Largest gland in the body - about 1.5 kg. It is completely surrounded by a fibrous capsule (Glisson capsule) but only PARTIALLY covered by peritoneum (the bare area has none).",
+      "tags": [
+        "anatomy",
+        "liver"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f02",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "List the four functions of the liver given in the lecture.",
+      "back_text": "1. Production and secretion of bilirubin (bile pigment) and bile salts. 2. Metabolic activities related to CHO, fat, protein, hormones and drugs. 3. Filtration of blood from bacteria and foreign particles. 4. Maintaining core body temperature and pH balance.",
+      "mnemonic_ar": "صفراء - استقلاب - ترشيح - حرارة وحموضة: الأربع وظائف بالترتيب نفسه.",
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f03",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "Which seven tests make up the liver function test (LFT) panel?",
+      "back_text": "Bilirubin, alkaline phosphatase, aspartate transaminase (AST), alanine transaminase (ALT), gamma-glutamyl transpeptidase (GGT), albumin (Alb) and prothrombin time (PT).",
+      "tags": [
+        "labs"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f04",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "Contents of the porta hepatis from posterior to anterior?",
+      "back_text": "VAD: portal vein, then right and left hepatic arteries, then right and left hepatic ducts (continuing as common hepatic duct then CBD) - plus lymphatics and nerves.",
+      "mnemonic_ar": "VAD من الخلف إلى الأمام: Vein وريد بابي، ثم Artery شريانان كبديان، ثم Duct قناتان كبديتان - احفظ الحرفين الثلاثة بالترتيب.",
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f05",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "Nerve supply of the liver?",
+      "back_text": "Sympathetics from the coeliac plexus; parasympathetics from the vagus nerve.",
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f06",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "Blood supply of the liver - percentages and what each carries?",
+      "back_text": "Portal vein 75%: deoxygenated blood plus nutrients from the digestive system. Hepatic arteries 25%: oxygenated blood.",
+      "mnemonic_ar": "75/25: البابي يحمل الدفق الكبير مع المغذيات من الأمعاء، والشريان الكبدي يحمل الأكسجين.",
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f07",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "What lies at each corner of the hexagonal hepatic lobule?",
+      "back_text": "A portal triad: a portal vein branch, a hepatic artery branch and a bile duct branch (blood flows to the central vein; bile flows the opposite way).",
+      "tags": [
+        "histology"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f08",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "How many hepatic veins are there, and where do they leave the liver?",
+      "back_text": "Three - right, left and MEDIAN - emerging from the BACK of the liver to the inferior vena cava. They are NOT in the porta hepatis (which carries portal vein, arteries and ducts).",
+      "explanation_ar": "فخ متكرر: الأوردة الكبدية ليست في سرة الكبد، بل تخرج من الظهر، ولهذا تنزف إصابات الأوردة الخلفية بشراسة ولا تضبط من السرة.",
+      "tags": [
+        "anatomy",
+        "trap"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f09",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "card_type": "basic",
+      "front_text": "Couinaud segments: what lies on each side of the gallbladder-fossa line?",
+      "back_text": "Segments I-IV to the LEFT (left portal vein, left hepatic artery, left + middle hepatic veins). Segments V-VIII to the RIGHT (right portal vein, right hepatic artery, right + middle hepatic veins).",
+      "mnemonic_ar": "يسار الخط I-IV بروية يسارية، ويمينه V-VIII بروية يمينية، والوريد الأوسط مشترك بينهما لأنه يجري في الخط الفاصل.",
+      "tags": [
+        "anatomy",
+        "segments"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f10",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "card_type": "basic",
+      "front_text": "Why is ultrasound the first-line hepatobiliary test, and what does it detect?",
+      "back_text": "Safety and availability. It detects bile duct dilatation, gall stones, liver tumors and liver cysts, and guides percutaneous liver biopsy (it CAN diagnose a liver cyst).",
+      "explanation_ar": "جملة الاختبار: الموجات فوق الصوتية لا تشخص الكيسة الكبدية = خطأ، فهي تشخصها وتوجه الخزعة الجلدية.",
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f11",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "card_type": "basic",
+      "front_text": "Triple-phase spiral CT: the four IV-contrast uses and the purpose of oral contrast?",
+      "back_text": "Oral contrast shows stomach and duodenum in relation to the liver hilum. IV contrast: 1. early arterial phase - small liver tumors; 2. venous phase - inflammatory lesions with rim enhancement; 3. late venous enhancement - haemangioma; 4. measurement of lesion density (cystic).",
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f12",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "card_type": "basic",
+      "front_text": "Three MRI indications in hepatobiliary disease?",
+      "back_text": "1. When IV contrast CT is contraindicated because of allergy. 2. MRCP - excellent-quality non-invasive biliary imaging (ERCP or PTC pictures are still better). 3. MRA - hepatic artery and portal vein without arterial cannulation, an alternative to hepatic angiography.",
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f13",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "card_type": "basic",
+      "front_text": "The four therapeutic procedures of ERCP (its main purpose)?",
+      "back_text": "1. Stone retrieval. 2. Balloon dilatation of strictures. 3. Stent insertion. 4. Brush cytology of tumors for cytology. (ERCP is usually preceded by MRCP.)",
+      "mnemonic_ar": "حصاة - بالون - دعامة - فرشاة: أربع وظائف علاجية لـ ERCP، وكلها تسبق عادة بـ MRCP.",
+      "tags": [
+        "ercp"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f14",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "card_type": "basic",
+      "front_text": "Pre-operative preparation before ERCP, and its four classic complications?",
+      "back_text": "Check the coagulation; give prophylactic antibiotics; explain the complications of sphincterotomy: pancreatitis, cholangitis, bleeding and perforation.",
+      "explanation_ar": "هذه المضاعفات الأربع تخص ERCP وقطع العضلة العاصرة، وليست مضاعفات MRCP غير التداخلي - فخ جملة الصواب والخطأ في المحاضرة.",
+      "is_vivid": true,
+      "tags": [
+        "ercp",
+        "complications"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f15",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "card_type": "basic",
+      "front_text": "Two indications for PTC?",
+      "back_text": "1. When ERCP has failed or is impossible. 2. A hilar bile duct tumor (e.g. cholangiocarcinoma) where ERCP failed to visualize the intrahepatic bile ducts. PTC is percutaneous trans-hepatic, NOT an IV dye injection.",
+      "tags": [
+        "ptc"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f16",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c04",
+      "card_type": "basic",
+      "front_text": "Angiography of the liver: diagnostic and therapeutic indications?",
+      "back_text": "Diagnostic: visualize hepatic artery anatomy, confirm portal vein patency, extra information on a liver nodule. Therapeutic: occlusion of AV malformations, embolization of bleeding sites in the liver, chemoembolization.",
+      "tags": [
+        "angiography"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f17",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c04",
+      "card_type": "basic",
+      "front_text": "Technetium-99m (99mTc) radionuclide scan - pathway and diagnoses?",
+      "back_text": "IV injection - circulation - liver (hepatocyte uptake) - bile - gamma camera. Diagnoses bile leak and biliary obstruction.",
+      "mnemonic_ar": "مسار HIDA: وريد فدورة دموية فخلية كبدية فصفراء فكاميرا غاما - ثم اسأل: أين تسربت الصفراء وأين انسدت؟",
+      "tags": [
+        "nuclear medicine"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f18",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c04",
+      "card_type": "basic",
+      "front_text": "Sulphur colloid liver scan - which focal lesions take up the tracer and which do not?",
+      "back_text": "Kupffer-cell uptake differentiates: focal nodular hyperplasia (FNH) shows uptake; hepatic adenoma and haemangioma show NO uptake.",
+      "mnemonic_ar": "FNH تأخذ لأن فيها خلايا كوبفر، والأديوما والورم الوعائي لا يأخذان - سؤال تفريق كلاسيكي.",
+      "tags": [
+        "nuclear medicine",
+        "fnh"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f19",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c05",
+      "card_type": "basic",
+      "front_text": "Diagnostic work-up of the STABLE blunt liver trauma patient (pathway B, four steps)?",
+      "back_text": "1. U/S then IV-enhanced CT of chest and abdomen. 2. Chest scan for lung parenchyma or big vessel damage. 3. Peritoneal lavage and diagnostic aspirate (free fluid, haemoperitoneum). 4. Laparoscopy for any associated diaphragmatic rupture.",
+      "is_vivid": true,
+      "tags": [
+        "trauma",
+        "imaging"
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_f20",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c06",
+      "card_type": "basic",
+      "front_text": "When must conservative treatment of blunt liver trauma be stopped?",
+      "back_text": "1. Ongoing blood loss in spite of correction of any underlying coagulopathy. 2. Development of signs of generalized peritonitis.",
+      "explanation_ar": "إما نزف مستمر بعد تصحيح التخثر أو علامات التهاب الصفاق العام - وكلاهما يعني التحويل الفوري إلى استكشاف البطن.",
+      "tags": [
+        "trauma",
+        "management"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_Liver_L1_m01",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "question_stem": "A 44-year-old woman presents with right upper quadrant pain and clinical jaundice. Her junior doctor asks which hepatobiliary imaging test should be requested first and what it can show. What do you answer?",
+      "options": [
+        "Ultrasound scan - the first-line test for safety and availability; it detects bile duct dilatation, gall stones, liver tumors and liver cysts, and guides percutaneous liver biopsy",
+        "Triple-phase spiral CT with IV contrast, because ultrasound cannot diagnose a liver cyst",
+        "ERCP, because it combines diagnosis and therapy in a single sitting",
+        "PTC, because it is only an intravenous injection of dye",
+        "Hepatic angiography, to map the hepatic artery before anything else"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الموجات فوق الصوتية هي التحقيق الأول للجهاز الكبدي الصفراوي لسلامتها وتوفرها وقابليتها للتكرار دون إشعاع: تكشف اتساع القنوات الصفراوية وحصى المرارة وأورام الكبد والكيسات الكبدية وتوجه الخزعة الكبدية الجلدية. عبارة أنها لا تشخص الكيسة الكبدية خاطئة، وERCP إجراء علاجي تداخلي يسبقه عادة MRCP وليس خطاً أول، وPTC إبرة عبر الجلد إلى قناة داخل الكبد وليس حقناً وريدياً، والتصوير الوعائي ليس تحقيقاً أولياً لليرقان.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m02",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "question_stem": "A surgical house officer lists five beliefs about biliary imaging after attending the liver lecture. Which single statement is TRUE?",
+      "options": [
+        "CT is better than MRCP in the detection of biliary tree pathologies",
+        "MRCP provides excellent-quality non-invasive imaging of the biliary tract, although ERCP or PTC pictures are better than MRCP ones",
+        "MRCP images the ducts better than a direct ERCP cholangiogram",
+        "MRCP requires arterial cannulation before the ducts can be seen",
+        "Oral-contrast CT is the best test for bile duct dilatation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "MRCP يصور السبيل الصفراوي بجودة ممتازة وبشكل غير تداخلي، لكن صور ERCP وPTC المباشرة تظل أفضل لأنها تصبغة تُحقن داخل الأقنية نفسها. فالعبارة الأولى خاطئة لأن CT ليس أفضل من MRCP في أمراض الشجرة الصفراوية، والثالثة عكس الحقيقة، والرابعة تصف MRA لا MRCP، والخامسة خاطئة لأن تباين الفم يقيّم المعدة والإثني عشر بالنسبة لسرة الكبد لا اتساع الأقنية.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m03",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "question_stem": "Which option correctly contrasts ERCP and MRCP?",
+      "options": [
+        "MRCP is an invasive therapeutic technique, while ERCP is non-invasive and only diagnostic",
+        "ERCP is an invasive technique that is mainly therapeutic (stone retrieval, balloon dilatation of strictures, stent insertion, brush cytology), while MRCP is non-invasive and diagnostic",
+        "Both are equally invasive, so they are interchangeable",
+        "ERCP is non-invasive because the endoscope passes through a natural orifice",
+        "MRCP is therapeutic because it can drain the biliary tract"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ERCP إجراء تداخلي عبر منظار جانبي الرؤية وهدفه الأساسي علاجي: استخراج الحصى وتوسيع التضيقات بالبالون وإدخال الدعامات والفرشاة الخلوية، بينما MRCP تصوير بالرنين المغناطيسي غير تداخلي تشخيصي. فالعبارة الأولى معكوسة تماماً، والقول بأنهما متكافئان أو أن ERCP غير تداخلي لأنه يمر فتحة طبيعية خلط بين التداخلي وغير الجراحي، وMRCP لا يستطيع تصريف أي شيء.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m04",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "question_stem": "A 63-year-old man with painless obstructive jaundice has dilated intrahepatic ducts and a hilar mass on ultrasound. An ERCP is attempted but fails to outline the intrahepatic ducts. What is the next investigation?",
+      "options": [
+        "Percutaneous trans-hepatic cholangiography (PTC)",
+        "Repeat ERCP with a wider sphincterotomy",
+        "Intravenous dye cholangiography, keeping ERCP as second choice",
+        "Technetium-99m HIDA scintigraphy",
+        "Sulphur colloid liver scan"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "PTC هو الاختيار عندما يفشل ERCP أو يتعذر، وبخاصة في ورم القنوات الصفراوية السري مثل الكولانجيوكارسينوما حيث فشل ERCP في إظهار الأقنية داخل الكبد: إبرة عبر الجلد والكبد تدخل قناة موسعة وتصبغها من الأعلى ويمكن تحويلها إلى تصريف. والعبارة الثالثة تحمل خطأين: PTC ليس حقناً وريدياً، والترتيب معكوس لأن PTC يأتي بعد فشل ERCP لا قبله، ومسح HIDA وغبار الكبريت ليسا لتصوير مستوى الانسداد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Think of the trans-hepatic route when the endoscopic route fails.",
+        "Hilar tumors block the endoscopic view of the dilated intrahepatic ducts."
+      ],
+      "focus_sections": [
+        4
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m05",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c03",
+      "question_stem": "Six hours after ERCP with sphincterotomy and stone retrieval, a 51-year-old woman develops severe epigastric pain radiating to the back with vomiting and a rising serum amylase. Which procedure owns these classic complications?",
+      "options": [
+        "ERCP - pancreatitis, cholangitis, bleeding and perforation, related to sphincterotomy",
+        "MRCP - because MRCP is invasive and therapeutic",
+        "Ultrasound-guided liver biopsy - hemorrhage and bile leak",
+        "PTC - because it is an intravenous injection of dye",
+        "HIDA scintigraphy - radiation cholangitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التهاب البنكرياس بعد ERCP هو أخمص الاختبار: البانكرياتيت والتهاب الأقنية الصفراوية والنزف والانثقاب هي المضاعفات الأربع الكلاسيكية لـ ERCP المرتبطة بقطع العضلة العاصرة ومعالجة الحصى، ولهذا يفحص التخثر وتعطى صادات وقائية وتُشرح للمريض قبل الإجراء. وMRCP غير تداخلي لا يسبب شيئاً منها، والخزعة الجلدية سببها نزف وتسرب صفراء لا بانكرياتيت، وPTC ليس حقناً وريدياً، وHIDA لا يسبب التهاب أقنية إشعاعياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m06",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "question_stem": "A 57-year-old man needs characterization of a focal liver lesion but has a documented severe allergy to iodinated IV contrast, so contrast-enhanced CT is contraindicated. Which imaging strategy follows the lecture indications?",
+      "options": [
+        "MRI - including MRCP for the ducts and MRA for the hepatic artery and portal vein without arterial cannulation, as an alternative to hepatic angiography",
+        "Proceed with IV contrast CT under antihistamine cover alone",
+        "Diagnostic hepatic angiography through transfemoral arterial cannulation",
+        "ERCP as the first imaging test",
+        "No imaging is possible; proceed to exploratory laparotomy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أول استطبابات الرنين المغناطيسي هو منع تباين CT الوريدي بسبب الحساسية، ويشمل MRCP لتصوير السبيل الصفراوي بجودة ممتازة دون تداخل وMRA لتصوير الشريان الكبدي والوريد البابي دون قسطرة شريانية كبديل عن التصوير الوعائي. فالمضي في CT رغم حساسية شديدة خطر لا يبره غطاء مضاد هيستاميني وحده، والقسطرة الشريانية التشخيصية غير ضرورية حين يتوفر MRA، وERCP إجراء علاجي تداخلي لا وسيلة تصوير أولية، ورفض التصوير كلياً غير مقبول.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m07",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c01",
+      "question_stem": "A 61-year-old man with chronic hepatitis B is found to have a 4 cm liver tumor in Couinaud segment VI. Which anatomical description is correct for the side of the liver containing his tumor?",
+      "options": [
+        "Right side of the gallbladder-fossa line - segments V-VIII, supplied by the right portal vein and right hepatic artery and drained by the right and middle hepatic veins",
+        "Left side of the line - segments I-IV, supplied by the left portal vein and left hepatic artery and drained by the left and middle hepatic veins",
+        "Left side of the line - supplied by the left portal vein but drained by the right hepatic vein",
+        "Right side of the line - supplied by the right portal vein and drained only by the middle hepatic vein",
+        "On the dividing line itself, drained by the caudate lobe veins"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القطاع VI يقع يمين خط حفر المرارة ضمن القطاعات V-VIII المروية بالوريد البابي الأيمن والشريان الكبدي الأيمن والمصرّفة بالوريد الكبدي الأيمن والأوسط. فالقطاعات I-IV يسار الخط بروية يسارية، والوريد الكبدي الأوسط مشترك لأنه يجري في المستوى الفاصل نفسه، والقطاع I هو الفص المذنب وليس موضع الورم هنا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Draw the gallbladder fossa line first, then place segment VI.",
+        "The middle hepatic vein lies in the dividing plane and is shared by both sides."
+      ],
+      "focus_sections": [
+        4
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m08",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c06",
+      "question_stem": "A 24-year-old man has been managed conservatively for blunt liver trauma. Six days later he spikes fevers to 39 C with new right upper quadrant pain and a tender, enlarged liver. Which complication of liver trauma best explains this picture?",
+      "options": [
+        "Liver abscess - an infected hematoma or necrotic parenchyma",
+        "Sudden massive blood loss",
+        "Arteriobiliary fistula",
+        "Biliary fistula to the skin",
+        "Rupture of a subcapsular hematoma"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحمى المتأخرة مع ألم وضيق فوق المعدة يميناً بعد رضح عولج محافظاً هي الصورة النموذجية لخراج الكبد الناتج عن خمج ورم دموي أو نخر. فالنزف الهائل مضاعفة مبكرة تعطي انهاكاً وعائياً لا حمى بعد ستة أيام، والناسور الشرياني الصفراوي يظهر بيرقان أو نزف صفراوي، وناسور الجلد يظهر بتسرب صفراء عبر الجرح، وتمزق الورم الدموي تحت المحفظة يعطي هبوطاً وعائياً حاداً لا متلازمة حموية مطولة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m09",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c02",
+      "question_stem": "A 66-year-old man with cirrhosis undergoes surveillance imaging for hepatocellular carcinoma. On triple-phase spiral CT, which IV-contrast phase is used to detect small liver tumors, and which phase characterizes a haemangioma?",
+      "options": [
+        "Early arterial phase detects small liver tumors; late venous enhancement characterizes haemangioma",
+        "Venous phase detects small tumors; early arterial phase characterizes haemangioma",
+        "The oral contrast phase detects both",
+        "Venous phase detects both, because inflammatory lesions exhibit rim enhancement",
+        "Density measurement without contrast detects both"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المرحلة الشريانية المبكرة تكشف الأورام الكبدية الصغيرة لأن معظمها شرياني التروية فيتعزز قبل البرانشيمة، والورم الوعائي يتقنص بتعزيز محيطي يمتلئ في الطور الوريدي المتأخر، والآفات الالتهابية تظهر تعزيز حافة في الطور الوريدي، وقياس الكثافة يميز الآفات الكيسية، وتباين الفم يظهر المعدة والإثني عشر بالنسبة لسرة الكبد لا الأورام.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m10",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c04",
+      "question_stem": "An asymptomatic 33-year-old woman has an incidental focal liver lesion. A sulphur colloid liver scan shows tracer uptake within the lesion. What is the likely diagnosis, and what would the other two classic differential lesions have shown?",
+      "options": [
+        "Focal nodular hyperplasia (FNH) - uptake by its Kupffer cells; adenoma and haemangioma would show no uptake",
+        "Hepatic adenoma - uptake; FNH and haemangioma would show none",
+        "Haemangioma - uptake; FNH and adenoma would show none",
+        "Liver abscess - uptake; all benign tumors show none",
+        "Simple cyst - uptake; all solid lesions show none"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "غبار الكبريت تلتقطه خلايا كوبفر، والفرط التصنيع العقدي البؤري FNH يحتوي خلايا كوبفر فيظهر التقاطاً، بينما الأديوما والورم الوعائي لا يحتويانها فلا يظهران أي التقاط - وهذا مفتاح التفريق الكلاسيكي. أما الخراج والكيسة فلا حشوية كبدية فيهما أصلاً، وكل الخيارات المعكوسة تخالف هذه القاعدة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m11",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c05",
+      "question_stem": "A 27-year-old man arrives after a road traffic collision. He is haemodynamically stable but has right upper quadrant tenderness and guarding. Which sequence follows the lecture diagnostic pathway B?",
+      "options": [
+        "U/S then IV-enhanced CT of chest and abdomen; chest scan for lung parenchyma or big vessel damage; peritoneal lavage and diagnostic aspirate; laparoscopy for any associated diaphragmatic rupture",
+        "Immediate exploratory laparotomy without any imaging",
+        "ERCP followed by PTC if the ducts are not seen",
+        "Observation with serial examination only, without imaging",
+        "HIDA scan followed by hepatic angiography"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المسار B للرضح الكللي المستقر مع ألم وانثناء: الموجات فوق الصوتية ثم CT مقوى بالتباين الوريدي للصدر والبطن، وتصوير الصدر بحثاً عن إصابة البرانشيمة الرئوية أو الأوعية الكبيرة، والغسل الصفاقي والبزل التشخيصي عند الحاجة، والتنظير البطني لتمزق الحجاب المرافق. فالاستكشاف المباشر للمريض غير المستقر لا المستقر، والمراقبة دون تصوير خطر، وERCP وPTC وHIDA ليسا من أدوات تصنيف رضح الكبد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_Liver_L1_m12",
+      "lecture_id": "surg_Liver_L1",
+      "concept_id": "surg_Liver_L1_c06",
+      "question_stem": "A 30-year-old man arrives with a stab wound to the right lower chest. His pulse is 128/min, blood pressure 82/50 mmHg, and he clearly needs urgent blood transfusion. What is the correct management sequence?",
+      "options": [
+        "ABC resuscitation - cannula, blood preparation, volume replacement with colloid and O-negative blood, chest tube once indicated - then transfer to the operating theatre for exploratory laparotomy",
+        "IV-contrast CT of chest and abdomen first to grade the liver injury",
+        "Diagnostic laparoscopy to exclude diaphragmatic rupture",
+        "Conservative management with monitoring, because most liver injuries settle",
+        "Angiographic embolization as the definitive first step"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الطعنة مع تسرع النبض وهبوط الضغط والحاجة الماسة لنقل الدم تعني عدم استقرار وعائي بعد آلية عالية الاشتباه، وهذا مسار العلاج لا التصوير: إنعاش ABC بقسطرة كبيرة وتحضير دم وتعويض الحجم بالغرويات ودم O سالب وأنبوب صدري عند اللزوم، ثم نقل مباشر إلى مسرح العمليات لاستكشاف البطن. فالتصوير بال tomography للمستقر فقط وقد يكون قاتلاً هنا، والتنظير والانصدام يؤخران السيطرة على النزف، والعلاج المحافظ خيار المستقرين لا المنهارين وعائياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Stability decides imaging versus theatre.",
+        "Resuscitation runs together with the preparation for laparotomy."
+      ],
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_Liver_L1_case01",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Blunt Liver Trauma in a Stable Young Driver: Resuscitation, Imaging and the Conservative-versus-Surgery Decision",
+      "scenario": "A 22-year-old man is brought to the emergency department by ambulance 40 minutes after his car struck a wall. He was wearing a seatbelt and hit the steering column with his right lower chest and upper abdomen. He is alert but in pain, and the trauma team activates the liver trauma pathway.",
+      "vignette": {
+        "age": 22,
+        "sex": "male",
+        "chief_complaint": "Right upper quadrant abdominal pain after a road traffic collision",
+        "history": "Restrained driver; steering-column impact to the right lower chest and upper abdomen; no loss of consciousness; no previous surgery or medications; fasted since the accident.",
+        "vitals": {
+          "bp": "118/76 mmHg",
+          "hr": "104/min",
+          "rr": "20/min",
+          "temp": "36.8 C",
+          "spo2": "98% on room air"
+        },
+        "exam": "Right lower-chest wall contusion; marked right upper quadrant tenderness with voluntary guarding but no generalized rigidity; bowel sounds reduced; neck veins not distended; pelvis and long bones stable.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "12.9 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "White cell count",
+            "value": "11.4 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Platelets",
+            "value": "220 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "INR",
+            "value": "1.1",
+            "flag": "normal"
+          },
+          {
+            "name": "AST",
+            "value": "310 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "356 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Bilirubin",
+            "value": "1.0 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Albumin",
+            "value": "41 g/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "70 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Lactate",
+            "value": "1.8 mmol/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Cross-match",
+            "value": "2 units prepared",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Bedside ultrasound (FAST) shows free fluid in the hepatorenal space; IV-contrast CT of chest and abdomen shows a liver laceration involving segments VI and VII with a subcapsular hematoma and no active contrast extravasation; chest component normal with intact lung parenchyma and great vessels; no evidence of diaphragmatic rupture."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L1_case01_s1",
+          "prompt": "What is the first management priority for this patient on arrival?",
+          "options": [
+            "Initial assessment and resuscitation in the ABC order - airway, breathing, circulation - with IV cannula, analgesia, blood sampling and cross-match, and continuous monitoring",
+            "Immediate IV-contrast CT of chest and abdomen before any resuscitation",
+            "Immediate exploratory laparotomy",
+            "ERCP to assess the biliary tract",
+            "Admission to the ward for observation without monitoring"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البداية دائماً بتقييم وإنعاش ABC: تأمين المجر الهوائي والتنفس والدورة الدموية مع قسطرة وريدية كبيرة ومسكنات وتحاليل وتحضير دم متطابق ومراقبة مستمرة. فالتصوير قبل الاستقرار الأولي أو المسرح مباشرة ليس الخطوة الأولى لمريض مستقر، وERCP لا مكان له في التقييم الأولي للرضح، والمراقبة دون إنعاش ومراقبة أجهزة إهمال.",
+          "xp": 10,
+          "hints": [
+            "Start with the airway before anything else.",
+            "Resuscitation and monitoring precede definitive imaging decisions."
+          ]
+        },
+        {
+          "id": "surg_Liver_L1_case01_s2",
+          "prompt": "He remains stable but has persistent tenderness and guarding. Which diagnostic pathway applies, per the lecture?",
+          "options": [
+            "Pathway B: U/S then IV-enhanced CT of chest and abdomen, chest scan for lung parenchyma or big vessel damage, peritoneal lavage and diagnostic aspirate if needed, and laparoscopy if diaphragmatic rupture is suspected",
+            "Pathway A: straight to theatre because of the guarding",
+            "CT without IV contrast to avoid allergy",
+            "Peritoneal lavage alone, then discharge if negative",
+            "HIDA scan followed by angiography"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريض المستقر ديناميكياً مع رضح كللي وألم وانثناء يتبع المسار B بأربع خطوات: الموجات فوق الصوتية ثم CT مقوى بالتباين الوريدي للصدر والبطن، وتصوير الصدر بحثاً عن إصابة البرانشيمة الرئوية أو الأوعية الكبيرة، والغسل الصفاقي والبزل التشخيصي عند الالتباس، والتنظير البطني عند الاشتباه بتمزق الحجاب. فالمسرح للمريض غير المستقر، وCT دون تباين لا يحدد إصابة الكبد، وHIDA والتصوير الوعائي ليسا أدوات تقييم الرضح.",
+          "xp": 10
+        },
+        {
+          "id": "surg_Liver_L1_case01_s3",
+          "prompt": "CT shows a laceration with a subcapsular hematoma and no active extravasation, and he remains stable. What is the definitive management?",
+          "options": [
+            "Conservative (non-operative) management with close monitoring - bed rest, serial abdominal examination, serial hemoglobin, transfusion if needed and correction of any coagulopathy",
+            "Immediate exploratory laparotomy",
+            "Routine diagnostic laparoscopy",
+            "Prophylactic ERCP with sphincterotomy",
+            "Angiographic chemoembolization of the injured segments"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الإصابة محدودة (تمزق مع ورم دموي تحت المحفظة دون نزف نشط ظاهر) والمريض مستقر ديناميكياً، فالعلاج المحافظ هو القاعدة: مراقبة لصيقة وفحوص متكررة وهيموغلوبين متسلسل ونقل دم عند الحاجة وتصحيح أي اضطراب تخثر. فالاستكشاف الفوري للمريض غير المستقر أو لمن تحقق مؤشر الإيقاف، وERCP ليس وقائياً في الرضح، والانصدام الكيميائي علاج أورام لا رضوح.",
+          "xp": 12
+        },
+        {
+          "id": "surg_Liver_L1_case01_s4",
+          "prompt": "On day 2 his hemoglobin keeps falling and he has needed 3 units of blood; the INR has been corrected to 1.1 with plasma and vitamin K yet bleeding continues, and he now develops diffuse abdominal rigidity. What is the next step?",
+          "options": [
+            "Stop conservative treatment and proceed to exploratory laparotomy - ongoing blood loss despite correction of coagulopathy plus signs of generalized peritonitis are the two indications",
+            "Continue transfusion and observation, since most blunt injuries settle",
+            "Repeat CT and wait for a further hemoglobin drop before deciding",
+            "ERCP with biliary stenting",
+            "Discharge with outpatient follow-up"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "استمرار فقد الدم رغم تصحيح اضطراب التخثر مع ظهور علامات التهاب الصفاق العام هما مؤشرا إيقاف العلاج المحافظ والتحويل الفوري إلى استكشاف البطن. فالاستمرار بالنقل المتكرر يهدر الوقت ويدفن مؤشر الخطورة، وتكرار CT لا يوقف النزف بل يؤخره، وERCP لا يعالج النزف، والخروج في هذه الحالة إهمال لا يغتفر.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص: رضح كبدي كللي (تمزق القطاعين VI وVII مع ورم دموي تحت المحفظة) في شاب مستقر ديناميكياً. الدرس المحوري: المريض المستقر يمر بمسار التصوير - الموجات فوق الصوتية ثم CT مقوى بالتباين الوريدي للصدر والبطن مع تقييم البرانشيمة الرئوية والأوعية الكبيرة - ثم يعالج وفق النتيجة، وأكثر الإصابات المستقرة تعالج محافظاً بمراقبة لصيقة. واحفظ مؤشري إيقاف المحافظة: استمرار فقد الدم رغم تصحيح التخثر، أو علامات التهاب الصفاق العام. الفخ الشائع: الاطمئنان إلى هيموغلوبين طبيعي مبكر رغم نزف مستمر، وتجاهل الحمى المتأخرة بعد أيام التي قد تعني خراج الكبد.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_Liver_L1_case02",
+      "lecture_id": "surg_Liver_L1",
+      "title": "Penetrating Right Lower-Chest Stab Wound with Haemodynamic Instability",
+      "scenario": "A 28-year-old man is rushed to the emergency department 20 minutes after being stabbed just below the right nipple during an assault. He is pale, sweating and restless, the resuscitation team is called, and the penetrating liver trauma pathway is activated.",
+      "vignette": {
+        "age": 28,
+        "sex": "male",
+        "chief_complaint": "Stab wound to the right lower chest with severe abdominal pain",
+        "history": "Single knife entry wound below the right nipple in the right 7th intercostal space at the anterior axillary line, 20 minutes before arrival; no other injuries; nothing by mouth since the assault.",
+        "vitals": {
+          "bp": "82/50 mmHg",
+          "hr": "128/min",
+          "rr": "26/min",
+          "temp": "36.1 C",
+          "spo2": "94% on room air"
+        },
+        "exam": "Entry wound below the right nipple tracking toward the upper abdomen; diffuse abdominal tenderness with guarding and absent bowel sounds; decreased breath sounds at the right base; neck veins flat.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "10.4 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "14.0 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Platelets",
+            "value": "196 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "INR",
+            "value": "1.3",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "4.8 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Cross-match",
+            "value": "4 units requested urgently",
+            "flag": "critical"
+          }
+        ],
+        "imaging": "Focused ultrasound (FAST) at the bedside shows large-volume free intraperitoneal fluid around the liver; portable chest X-ray shows a small right hemopneumothorax."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L1_case02_s1",
+          "prompt": "What is the immediate priority in this patient?",
+          "options": [
+            "Resuscitation in the ABC sequence - airway, breathing and circulation - with a large-bore cannula, urgent blood preparation, and volume replacement with colloid and O-negative blood until cross-matched units arrive",
+            "Immediate IV-contrast CT of chest and abdomen to locate the bleeding",
+            "Diagnostic laparoscopy under anesthesia",
+            "Peritoneal lavage to confirm haemoperitoneum",
+            "Transfer to the surgical ward for observation"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الإنعاش أولاً بترتيب ABC: المجر الهوائي ثم التنفس ثم الدورة الدموية مع قسطرة كبيرة وأخذ العينات وتحضير الدم وتعويض الحجم بالغرويات ودم O سالب حتى جهوظ الدم المتطابق. لا وقت للتصوير في مريض غير مستقر بعد طعنة نافذة، والغسل الصفاقي والتنظير يؤخران السيطرة على النزف، والمراقبة على السرير إهمال يودي بحياته.",
+          "xp": 12,
+          "hints": [
+            "The pressure is falling - circulation comes first.",
+            "O-negative blood bridges the gap until cross-matched blood is ready."
+          ]
+        },
+        {
+          "id": "surg_Liver_L1_case02_s2",
+          "prompt": "He has a small right hemopneumothorax with falling oxygen saturation. What belongs to this resuscitation phase?",
+          "options": [
+            "Insertion of a chest tube once indicated, as part of the resuscitation",
+            "Elective intubation and ventilation regardless of consciousness",
+            "Deferring the chest problem until after the laparotomy",
+            "Requesting a repeat chest film in 24 hours",
+            "Immediate thoracotomy before laparotomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أنبوب الصدر عند اللزوم جزء من الإنعاش لا من التأخير: الخلل التنفسي وهبوط الأكسجة بعد طعنة الصدر السفلي قد يعني تحويلة دموية أو هوائية يجب تصريفها فوراً قبل أو أثناء التحضير للمسرح. فالتنبيب الانتقائي ليس مفروضاً إذا كان وعيه سليماً وتنفسه مكافياً، والتأجيل 24 ساعة ممنوع، وبضع الصدر ليس الخطوة الأولى في هذه الصورة.",
+          "xp": 10
+        },
+        {
+          "id": "surg_Liver_L1_case02_s3",
+          "prompt": "After resuscitation begins, what is the definitive management of this unstable penetrating liver injury?",
+          "options": [
+            "Transfer to the operating theatre for exploratory laparotomy",
+            "CT grading of the liver injury first",
+            "Angiographic embolization in the radiology suite",
+            "Conservative management with monitoring",
+            "ERCP with sphincterotomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد بدء الإنعاش ينقل المريض النافذ غير المستقر مباشرة إلى مسرح العمليات لاستكشاف البطن والسيطرة على نزف الكبد بالحشو أو الخياطة أو جراحة ضبط الأضرار. فالتصوير بال tomography يؤخر السيطرة على النزف وقد يكون قاتلاً، والانصدام الوعائي خيار منتخب للمستقر أو النزف المتأخر أو المضاعفات الوعائية، والعلاج المحافظ ممنوع في غير المستقر، وERCP ليس علاجاً لنزف الرضح.",
+          "xp": 15
+        },
+        {
+          "id": "surg_Liver_L1_case02_s4",
+          "prompt": "He survives surgery after packing and repair of a deep right-lobe laceration. Which set lists the recognized complications of liver trauma that the team must now watch for?",
+          "options": [
+            "Sudden massive blood loss; subcapsular or intracapsular hematomas; liver abscess; biliary fistulae (rare); hepatic artery aneurysms with A/V and arteriobiliary fistulae; occasional liver failure in extensive trauma; rare long-term biliary tract complications",
+            "Only early bleeding - late complications do not occur after repair",
+            "Cholecystitis and cholangitis only",
+            "Pancreatitis, cholangitis, bleeding and perforation from sphincterotomy",
+            "Bile leak alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "قائمة مضاعفات رضح الكبد كاملة: النزف الهائل المفاجئ، والأورام الدموية تحت المحفظة وداخلها، وخراج الكبد، والناسورات الصفراوية النادرة مع أم الدم الشريانية الكبدية والناسورات الشريانية الوريدية والشريانية الصفراوية، والفشل الكبدي العارض في الرضح الواسع، ومضاعفات بعيدة المدى نادرة في السبيل الصفراوي. أما البانكرياتيت والتهاب الأقنية والنزف والانثقاب فمضاعفات ERCP لا رضح، والقول بعدم وجود مضاعفات متأخرة خطأ شائع.",
+          "xp": 12
+        }
+      ],
+      "debriefing_ar": "التشخيص: طعنة نافذة في الصدر السفلي الأيمن أصابت الكبد مع نزف داخل الصفاق وتحويلة صدرية يمنى. الدرس المحوري: كل جرح طعنة في الصدر السفلي أو البطن الأعلى مع عدم استقرار وعائي (تسرع النبض وهبوط الضغط والحاجة الماسة لنقل الدم) يستدعي إنعاش ABC بقسطرة كبيرة وتحضير دم وتعويض بالغرويات ودم O سالب وأنبوب صدري عند اللزوم، ثم نقلاً مباشراً إلى مسرح العمليات لاستكشاف البطن - فالتصوير للمستقرين فقط. وبعد النجاة راقب المضاعفات الست، وأهمها النزف الهائل المبكر وخراج الكبد المتأخر. الفخ القاتل: الاكتفاء بمراقبة مريض غير مستقر بحجة أن معظم رضوح الكبد تعالج محافظاً، فذلك حكم يخص المريض المستقر وحده.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

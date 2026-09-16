@@ -1,0 +1,721 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "cvs_l5_ecg",
+    "specialty": "internal_medicine",
+    "title": "Electrocardiogram (ECG): From Basics to Systematic Interpretation",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L5 ECG lecture 2025 (2).pdf",
+      "page_count": 101
+    },
+    "tags": ["ECG", "conduction system", "leads", "axis", "waves", "QT interval", "interpretation", "artifacts"],
+    "order_index": 4,
+    "golden_tip": [
+      "ECG paper: at 25 mm/s a small square = 0.04 s (40 ms) and a large square = 0.2 s (200 ms); 1 mV = 10 mm. Wrong paper speed (12.5 mm/s) can masquerade as narrow-complex tachycardia — always check calibration first.",
+      "Pathological Q wave: >40 ms (1 mm) wide, >2 mm deep, OR >25% of QRS depth, OR any QS complex. QS complexes are ALWAYS pathological.",
+      "Long QTc predisposes to torsades de pointes; but a VERY SHORT QTc (<390 ms) — short QT syndrome — is also at risk for VT and VF.",
+      "In dextrocardia the ECG shows globally negative lead I with positive aVR and NO R wave transition in chest leads; in simple limb-lead reversal the R transition in chest leads remains NORMAL."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "cvs_l5_c1_conduction_leads_paper",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "Conduction System, ECG Types, Electrodes, Leads, and ECG Paper",
+      "summary_ar": "جهاز التوصيل الطبيعي، أنواع تخطيط القلب، الأقطاب مقابل المشتقات، مواضع المشتقات القياسية واليمنى والخلفية، وورق التخطيط (الوقت والسعة والمعايرة).",
+      "sections": [
+        {
+          "heading": "Normal Conduction System and ECG Types",
+          "body_text": "**Normal conduction system:**\n\n- **SA node:** normally is the **dominant cardiac pacemaker**. Its impulse spreads through the atria via three internodal tracts (anterior, middle, posterior) and Bachmann's bundle to the left atrium.\n- **AV node:** the **ONLY electrical connection linking the atria and the ventricles** (the fibrous skeleton otherwise insulates the chambers).\n- Conduction then proceeds through the **bundle of His**, right and left bundle branches, and Purkinje fibers.\n\n**Electrophysiology equivalences:**\n\n- **Electrical activation = depolarization = contraction**\n- **Electrical recovery = repolarization** — necessary before repeated depolarization.\n\n**ECG types:**\n\n- **Surface ECG:**\n  - **Resting ECG (12-lead ECG)**\n  - **Stress or exercise ECG** (special indications)\n  - **Ambulatory ECG (Holter monitoring)** (special indications)\n- **Intracardiac electrogram:** using intra-cardiac leads:\n  - **Implantable devices**\n  - **During EPS (electrophysiological study)**",
+          "key_points": [
+            "SA node = dominant pacemaker; AV node = the only electrical atrioventricular connection.",
+            "Depolarization = contraction; repolarization = recovery required before the next depolarization.",
+            "Surface ECG: resting 12-lead, stress, ambulatory (Holter); intracardiac electrograms: implantable devices and EPS."
+          ],
+          "check": {
+            "prompt": "Why is the AV node critical as the only electrical connection between atria and ventricles?",
+            "options": [
+              "It prevents retrograde conduction only",
+              "All atrial impulses reaching the ventricles must pass through it, allowing rate control of ventricular response",
+              "It generates the P wave",
+              "It bypasses the His bundle"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الهيكل الليفي للقلب يعزل كهربائياً الأذينين عن البطينين، والعقدة الأذينية البطينية هي المعبر الوحيد — لذلك كل النبضات الأذينية (بما فيها لانظميات سريعة) تمر عبرها ويُنظّم عبرها استجابة البطين."
+          }
+        },
+        {
+          "heading": "Electrodes vs Leads, Lead Systems, and Precordial Placement",
+          "body_text": "**Electrode vs lead:**\n\n- **Electrode:** the **metallic disk (conductive pad)** attached to the skin that enables recording of electrical currents.\n- **Lead:** a **graphical description of the electrical activity of the heart**, created by analyzing several electrodes (the recording we get from the electrodes).\n\n**Limb electrodes and leads:**\n\n- Limb electrodes: **RA (right arm), LA (left arm), RF/LL (right foot/left foot)**\n- **Bipolar limb leads: record from two electrodes — I, II, III** (Einthoven's triangle)\n- **Augmented unipolar limb leads:** exploring electrode = one electrode (positive); reference electrode = combining two electrodes (negative): **aVR, aVL, aVF** ('aV' = augmented vector). Einthoven's hexaxial system arranges leads I, II, III, aVR, aVL, aVF around a circle at 30° intervals for frontal plane axis determination.\n\n**Chest (precordial) electrodes:** V1, V2, V3, V4, V5, V6 (some machines mark them C1–C6):\n\n- **V1:** 4th intercostal space to the right of the sternum\n- **V2:** 4th intercostal space to the left of the sternum\n- **V3:** directly between V2 and V4\n- **V4:** 5th intercostal space at the midclavicular line\n- **V5:** level with V4 at the left anterior axillary line\n- **V6:** level with V5 at the left midaxillary line (directly under the midpoint of the armpit)\n\n**Additional lead sets:**\n\n- **Right-sided ECG (V1R–V6R):** electrodes placed in mirror-image positions on the right chest — **FOR RIGHT VENTRICULAR INFARCTION**.\n- **Posterior leads (V7, V8, V9):** using the V1/V2/V3 electrode positions posteriorly (or V4/V5/V6 electrodes) at the posterior chest — **FOR POSTERIOR WALL INFARCTION**. V1–V3 mirror the posterior wall in posterior STEMI.\n- **Dextrocardia technique:** place the precordial electrodes in a **mirror-image position on the right side of the chest** AND **reverse the limb electrodes**.\n- **Electrode misplacement pitfalls:** reversing all precordial electrodes, reversing only V4, or reversing V1 and V3 causes abnormal R wave progression (poor R wave progression mimics).",
+          "key_points": [
+            "Electrode = skin pad; lead = graphical recording derived from electrodes.",
+            "Bipolar limb leads I, II, III (Einthoven); augmented unipolar aVR, aVL, aVF.",
+            "Precordial placement: V1 right of sternum 4th ICS, V2 left 4th ICS, V3 between V2-V4, V4 5th ICS midclavicular, V5 anterior axillary, V6 midaxillary.",
+            "Right-sided leads for RV infarction; posterior leads V7–V9 for posterior infarction.",
+            "Dextrocardia: mirror-image precordials + reversed limb electrodes.",
+            "Electrode misplacement causes spurious poor R wave progression."
+          ]
+        },
+        {
+          "heading": "ECG Paper: Time, Amplitude, Calibration, and Voltage",
+          "body_text": "**ECG paper — time:**\n\n- Speed: **25 mm/second** standard\n- **25 mm = 1 sec = 1000 msec**\n- **Small square = 1 mm = 0.04 sec = 40 msec**\n- **Large square = 5 mm = 0.2 sec = 200 msec**\n- **1 sec = 5 large squares**\n- Each standard ECG strip records **10 seconds** (four 2.5-second groups of leads).\n- **ECG is scanned from left to right**; ECG is recorded **simultaneously in multiple leads**.\n- At **50 mm/s**, complexes appear wider (used to analyze subtle findings); at **12.5 mm/sec** complexes appear narrow — a rhythm can be **wrongly diagnosed as narrow QRS complex tachycardia** if the speed is not checked.\n\n**ECG paper — amplitude (voltage):**\n\n- Standard calibration: **1 mV = 10 mm height** (10 mm/mV)\n- **Half calibration: 0.5 mV = 5 mm height** (used for high voltages)\n- **Double calibration: 2 mV = 20 mm** for tiny voltages\n\n**Low voltage ECG:**\n\n- The amplitudes of QRS are **< 5 mm in limb leads** OR **< 10 mm in precordial leads**.\n- **CAUSES:**\n  - **Fluid:** pericardial effusion; pleural effusion\n  - **Fat:** obesity\n  - **Air:** emphysema\n  - **Infiltrative:** amyloidosis\n  - **Loss of viable myocardium:** end-stage dilated cardiomyopathy\n- **Pseudo-low voltage** occurs when the calibration is set to half (0.5 mV = 5 mm) — check the calibration pulse before diagnosing.\n\n**High voltage ECG** — e.g., due to **LVH** (with standard 10 mm/mV calibration).",
+          "key_points": [
+            "25 mm/s: small square 40 ms, large square 200 ms, 5 large squares = 1 second, strip = 10 seconds.",
+            "Amplitude: 1 mV = 10 mm; half calibration 0.5 mV = 5 mm; double 2 mV.",
+            "Low voltage: limb QRS <5 mm or precordial <10 mm — causes: Fluid (effusions), Fat (obesity), Air (emphysema), Infiltrative (amyloidosis), loss of myocardium (end-stage DCM).",
+            "Check calibration before diagnosing low or high voltage (pseudo-low voltage = half calibration).",
+            "Wrong speed (12.5 mm/s) can falsely suggest narrow-complex tachycardia."
+          ],
+          "check": {
+            "prompt": "A routine ECG shows all QRS complexes of very small amplitude. The calibration mark shows 1 mV = 10 mm, and the patient is cachectic with known severe COPD. What are the likely mechanisms of low voltage?",
+            "options": [
+              "Air (emphysema) and possibly loss of viable myocardium",
+              "Only technical error always",
+              "Left ventricular hypertrophy",
+              "Pericarditis only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "انتفاخ الرئة (الهواء) يعزل كهربائياً القلب فيقل الجهد؛ وقد يضاف فقد العضلة الحية في اعتلال القلب المتضخم نهاية المرحلة. استُبعد الخطأ التقني لأن المعايرة صحيحة 1 مللي فولت=10مم، وال LVH يرفع الجهد لا يخفضه."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Bipolar leads", "definition_ar": "مشتقات ثنائية القطب I وII وIII تسجل بين قطبين"},
+        {"term": "Augmented unipolar leads", "definition_ar": "مشتقات أحادية معززة (aVR, aVL, aVF) بقطب مستكشف ومرجع مركب"},
+        {"term": "Dextrocardia", "definition_ar": "قلب معكوس الوضع يتطلب عكس أقطاب الأطراف والمشاشية"},
+        {"term": "Low voltage ECG", "definition_ar": "QRS أقل من 5مم بالأطراف أو 10مم بالمشاشية"},
+        {"term": "EPS", "definition_ar": "دراسة فيزيولوجية كهربائية بقثاطر داخل القلب"}
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "cvs_l5_c2_axis_heart_rate",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "Vertical (Frontal) Axis, Horizontal Axis, and Heart Rate Calculation",
+      "summary_ar": "المحور الأمامي (الرأسي) بطريقة الأرباع ومخطط المحور السداسي، انتقال R الصدري والمحور الأفقي، وحساب معدل القلب بأنواعه (منتظم، غير منتظم، AV dissociation).",
+      "sections": [
+        {
+          "heading": "Vertical (Frontal) Axis Determination",
+          "body_text": "**Axis determination by limb leads:**\n\n- **Lead positive:** axis is **toward the lead**\n- **Equiphasic:** axis is **perpendicular** to the lead\n- **Lead negative:** axis is **away from the lead**\n\n**Quick quadrant method using lead I and aVF:**\n\n- **Lead I positive + aVF positive → NORMAL axis** (0° to +90°)\n- **Lead I positive + aVF negative → check lead II:**\n  - Lead II positive → **NORMAL** (axis between 0° and −30°)\n  - Lead II negative → **LEFT axis deviation (LAD)** (−30° to −90°)\n- **Lead I negative + aVF positive → RIGHT axis deviation (RAD)** (+90° to +180°)\n- **Lead I negative + aVF negative → EXTREME axis deviation** (−90° to ±180°, 'northwest axis'; if lead II positive with Lead I negative and aVF negative, the axis may still be normal — check lead II)\n\n**Frontal plane axis chart (E-Figure 48-4):**\n\n- **Normal (NL): −30° to +90°**\n- **Left axis deviation (LAD): −30° to −90°** (moderate −30° to −45°; marked −45° to −90°)\n- **Right axis deviation (RAD): +90° to +180°** (moderate +90° to +120°; marked +120° to +180°)\n- **Extreme right axis deviation (ERAD): −90° to ±180°**\n- **Mild RAD is considered NORMAL in children, adolescents, and young adults.**\n\n**Method 1 — The Quadrant Method:** using Lead I, Lead II, and aVF: positive/equiphasic/negative combinations classify the axis into NORMAL or LAD.",
+          "key_points": [
+            "Positive lead: axis toward it; negative: away; equiphasic: perpendicular.",
+            "I positive + aVF positive = normal; I positive + aVF negative → use lead II (positive = normal, negative = LAD).",
+            "I negative + aVF positive = RAD; both negative = extreme axis deviation.",
+            "Ranges: normal −30° to +90°; LAD −30° to −90°; RAD +90° to +180°; extreme −90° to ±180°.",
+            "Mild RAD is normal in children, adolescents, and young adults."
+          ],
+          "check": {
+            "prompt": "Lead I is positive, aVF is negative, and lead II is negative. What is the axis?",
+            "options": ["Normal axis", "Left axis deviation", "Right axis deviation", "Extreme axis deviation"],
+            "correct_index": 1,
+            "explanation_ar": "I موجب وaVF سالب يلزمنا فحص II؛ II سالب = انحراف محور أيسر (بين -30 و-90 درجة). لو كان II موجباً لكان المحور طبيعياً."
+          }
+        },
+        {
+          "heading": "Horizontal Axis (Precordial Transition) and R Wave Progression",
+          "body_text": "**Horizontal axis (transition point in chest leads):**\n\n- The **transition point** is defined as the point at which **the amplitude of the R wave first exceeds the amplitude of the S wave** (R/S > 1).\n- **Clockwise rotation (late transition)** — transition occurring late (e.g., at V5) — may portend a **higher risk of future coronary events**.\n- **Counterclockwise rotation (early transition)** — transition at V2 (e.g., from V2).\n- **Poor R wave progression:** delayed R growth across V1–V6 (V2 pattern persisting to V5) — causes include **anterior wall injury**, **dilated cardiomyopathy**, **LBBB**, and **electrode misplacement (V1 and V3 reversed)**.\n\n**Normal R transition with normal connection:** normal precordial R growth from V1 (rS) through V6 (R).\n\n**Recognizing lead connection errors (normal connection/levocardia vs dextrocardia vs limb lead reversal):**\n\n- **Normal connection:** lead I positive, aVR negative, normal R transition in chest leads.\n- **Wrong connection/limb leads reversal:** globally NEGATIVE lead I, globally POSITIVE aVR, but **normal R transition in chest leads** (mimicking RAD).\n- **Dextrocardia:** globally negative lead I, globally positive aVR, AND **NO R transition in chest leads** (poor R progression to V6).",
+          "key_points": [
+            "Transition point = first precordial lead where R > S; clockwise (late) transition may portend higher coronary risk.",
+            "Poor R wave progression: anterior injury, DCM, LBBB, or electrode misplacement.",
+            "Limb-lead reversal: negative I + positive aVR WITH normal chest transition.",
+            "Dextrocardia: negative I + positive aVR WITH NO chest R transition (mirror-image)."
+          ]
+        },
+        {
+          "heading": "Heart Rate Calculation",
+          "body_text": "**Heart rate calculations:**\n\n- **1 minute = 60 sec = 60,000 msec = 300 large squares** (each large square = 200 msec)\n\n- **Regular RR:**\n  - **HR = 300 / RR (number of large boxes)**\n  - e.g., RR of 4 large squares → 75 bpm; 3 → 100; 2 → 150; 5 → 60.\n\n- **Grossly irregular RR (as in atrial fibrillation):** HR is **averaged over a number of cardiac cycles**:\n  - **Number of beats in the whole ECG strip (10 sec = 50 large squares) × 6**\n  - **Number of beats in 20 large squares (4 sec) × 15**\n  - **Number of beats in 15 large squares (3 sec) × 20**\n\n- **Atrioventricular dissociation (e.g., complete heart block):**\n  - **P rate ≠ R (QRS) rate — each must be counted separately** (e.g., P rate 100 with QRS rate 37 in complete AV block).",
+          "key_points": [
+            "Regular rhythm: HR = 300 / number of large squares between R waves.",
+            "Irregular (AF): average — beats in 10-sec strip × 6; 20 large squares × 15; 15 large squares × 20.",
+            "AV dissociation: count P rate and QRS rate separately."
+          ],
+          "check": {
+            "prompt": "An ECG rhythm strip shows completely irregular RR intervals with no P waves. There are 30 QRS complexes in the 10-second strip. What is the average ventricular rate?",
+            "options": ["90 bpm", "150 bpm", "180 bpm", "60 bpm"],
+            "correct_index": 2,
+            "explanation_ar": "الرجفان الأذيني: نحسب عدد الضربات في شريط 10 ثوانٍ (50 مربعاً كبيراً) ونضرب بـ6: 30×6=180 نبضة/دقيقة. الطريقة الوحيدة الصحيحة هنا هي المتوسط لأن النظم غير منتظم فقانون 300/RR لا ينطبق."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Transition point", "definition_ar": "المشاقة التي تفوق فيها R موجة S أول مرة"},
+        {"term": "Poor R wave progression", "definition_ar": "ضعف تدرج R عبر V1-V6 لأذية أمامية أو LBBB أو خطأ أقطاب"},
+        {"term": "Northwest axis", "definition_ar": "محور متطرف شمال غربي بين -90 و±180 درجة"},
+        {"term": "RAD", "definition_ar": "انحراف محور أيمن +90 إلى +180 درجة"}
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "cvs_l5_c3_rhythm_p_qrs",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "Rhythm Recognition, P-QRS Relationship, P Wave, and QRS Complex",
+      "summary_ar": "النظم الجيبي وعلاماته، النظميات غير الجيبية (الرجفان والرفرفة والأيدلوفنتريكولار المتسارع)، علاقة P-QRS (الحصار بأنواعه)، موجة P الطبيعية والمتضخمة، ومركب QRS ونعوض الحزمة.",
+      "sections": [
+        {
+          "heading": "Rhythm Recognition and Non-Sinus Rhythms",
+          "body_text": "**Sinus rhythm** — originates from the SA node. In normally connected ECG electrodes, a **sinus P wave** is:\n\n- **Present** + **Normal axis (upright in leads I and II, inverted in aVR)**\n- **Best seen in lead II and V1 ('antenna of atria')**\n\n**Non-sinus rhythms to recognize:**\n\n- **Atrial fibrillation:** **f waves** (fibrillatory waves) — irregular baseline, no true P waves, irregularly irregular QRS.\n- **Atrial flutter:** **F waves** (sawtooth flutter waves) — regular atrial activity typically ~300 bpm with variable AV conduction.\n- **Accelerated idioventricular rhythm:** wide-complex ventricular rhythm at 60–100 bpm (not sinus — QRS originates from the ventricle).\n- **Ectopic P wave** — atrial depolarization from a non-sinus atrial focus.\n\n**P-QRS relationship:**\n\n- **Complete AV block:** atrial depolarization from the sinus node (sinus P) with ventricular depolarization by an escape rhythm (non-sinus QRS) — **P-QRS dissociation (no relationship); AV dissociation**. Example: **P rate = 100, QRS rate = 37**.\n- **2:1 AV block:** for every two P waves, only one is conducted — **non-conducted P waves** appear between QRS complexes.",
+          "key_points": [
+            "Sinus P: upright in I and II, inverted in aVR; best in II and V1 ('antenna of atria').",
+            "f waves = atrial fibrillation; F (sawtooth) waves = atrial flutter; wide regular 60–100 bpm without P = accelerated idioventricular rhythm.",
+            "Complete AV block: P-QRS dissociation (e.g., P 100, QRS 37); 2:1 AV block: non-conducted P waves."
+          ],
+          "check": {
+            "prompt": "A rhythm strip shows P waves at 100 bpm unrelated to QRS complexes at 37 bpm. What is the rhythm?",
+            "options": ["Sinus bradycardia", "Complete (third-degree) AV block with junctional/ventricular escape", "Atrial flutter with 2:1 block", "Accelerated idioventricular rhythm"],
+            "correct_index": 1,
+            "explanation_ar": "انفصال P عن QRS بمعدلين مختلفين (100 مقابل 37) = حصار قلبي كامل؛ البطين يهرب بإيقاع تعويضي. الرفرفة تحافظ على علاقة ثابتة مع F موجات، والأيدلوفنتريكولار لا يُرى فيه P أصلاً."
+          }
+        },
+        {
+          "heading": "The P Wave and Atrial Enlargement",
+          "body_text": "**The P wave = atrial muscular depolarization.**\n\n**Normal P wave criteria:**\n\n- **Upright in leads I and II, inverted in aVR (normal P axis)**\n- **Smooth contour**\n- Amplitude **< 2.5 mm in limb leads** and **< 1.5 mm in precordial leads**\n- Duration <0.12 sec (120 ms)\n\n**Atrial enlargement patterns (lead II and V1 — the 'antenna of atria'):**\n\n- **Right atrial (RA) enlargement — P pulmonale:** tall, peaked P waves (>2.5 mm in II/III/aVF)\n- **Left atrial (LA) enlargement — P mitrale:** broad, notched, bifid P waves in II with deep terminal negative deflection in V1\n- **Bi-atrial enlargement:** features of both — tall AND wide P waves",
+          "key_points": [
+            "Normal P: upright in I/II, inverted in aVR, <2.5 mm limb, <1.5 mm precordial, <120 ms.",
+            "P pulmonale (RA enlargement): tall peaked P; P mitrale (LA enlargement): broad bifid P with deep V1 terminal negativity; both = bi-atrial enlargement.",
+            "Lead II and V1 are the best 'antennae' for atrial analysis."
+          ]
+        },
+        {
+          "heading": "PR Interval, PR Segment, and the QRS Complex",
+          "body_text": "**PR interval = the delay between atrial and ventricular depolarization** (normal 0.09–0.20 s = 90–200 ms; 2–5 small squares):\n\n- **Long PR interval (>5 small squares, >200 ms): first-degree AV block**\n- **Short PR interval (<2 small squares, <80 ms): WPW (pre-excitation)**\n\n**PR segment:** from the end of P to QRS onset; normally lies on the isoelectric line (with the TP segment). **PR segment DEPRESSION suggests PERICARDITIS.**\n\n**QRS complex = ventricular muscular depolarization.** Important information in: coronary artery disease, cardiomyopathy, metabolic abnormalities, etc.\n\n- **Prolonged QRS (>120 ms): an intraventricular and/or interventricular conduction delay is present** (e.g., bundle branch block).\n- **Normal QRS duration < 120 ms** (normal intervals table: 75–110 ms).\n- **QRS nomenclature:** R and r = positive deflections; Q, q, S, s = negative excursions from baseline. Q/q = initial negative deflection PRECEDING a positive (R/r); S/s = negative deflection FOLLOWING a positive (R/r). **Capital letters (Q, R, S) = large amplitude (≥5 mm = 0.5 mV); lower case (q, r, s) = small (<5 mm).** Morphology examples: rSR', RsR', rSr', rs, Rs, qR, QS, QRs, qRs.\n\n**Bundle branch block patterns:**\n\n- **RBBB:** QRS >120 ms with **RSR' pattern in V1–V3 ('M-shaped' QRS)** and a **wide, slurred S wave in lateral leads (I, aVL, V5–V6)**.\n- **LBBB:** QRS >120 ms with a **dominant S wave in V1** and a **broad R wave in lateral leads (I, aVL, V5–V6)**.\n\n**Tachycardia framework:**\n\n- **Regular NARROW QRS tachycardia: SVT**\n- **Regular WIDE QRS tachycardia: differential diagnosis** (VT vs SVT with aberrancy vs pre-excited tachycardia).",
+          "key_points": [
+            "PR interval 90–200 ms (2–5 small squares): long = first-degree AV block; short (<80 ms) = WPW.",
+            "PR segment depression = pericarditis; the TP segment is the isoelectric reference.",
+            "QRS <120 ms normal; >120 ms = intraventricular conduction delay.",
+            "Q/q precede R; S/s follow R; capitals ≥5 mm, lowercase <5 mm.",
+            "RBBB: RSR' (M-shaped) in V1–V3 + wide slurred S in I/aVL/V5–V6; LBBB: dominant S in V1 + broad R in lateral leads.",
+            "Regular narrow tachycardia = SVT; regular wide tachycardia = differential (VT until proven otherwise)."
+          ],
+          "check": {
+            "prompt": "An ECG shows a PR interval of 0.26 seconds with every P followed by a QRS. What is the diagnosis?",
+            "options": ["First-degree AV block", "WPW syndrome", "Second-degree AV block Mobitz I", "Complete heart block"],
+            "correct_index": 0,
+            "explanation_ar": "PR يتجاوز 200 ملي ثانية (5 مربعات صغيرة) مع توصيل كل النبضات = حصار أذيني بطيني من الدرجة الأولى. الـ WPW يُقصّر PR، وموبيتز I يُطيل تدريجياً ويسقط QRS، والكامل يفصل P عن QRS كلياً."
+          }
+        },
+        {
+          "heading": "Q Waves: Physiological vs Pathological",
+          "body_text": "**Small septal (physiological) q wave:**\n\n- Normal in **I, aVL, V5, V6** (from left-to-right septal depolarization)\n\n**Pathological Q wave criteria (any one):**\n\n- **> 40 ms (1 mm) wide**\n- **> 2 mm deep**\n- **OR > 25% of the depth of the QRS complex**\n- **OR any QS complex**\n\n**QS complex (no r or R) — ALWAYS indicates a pathological Q.**\n\nPathological Q waves indicate **old myocardial infarction** (electrically dead/scarred myocardium with window on the opposite wall) but can also occur in other conditions (cardiomyopathy, LBBB, infiltrative disease).",
+          "key_points": [
+            "Physiological septal q: normal in I, aVL, V5, V6.",
+            "Pathological Q: >40 ms wide, >2 mm deep, >25% of QRS depth, or any QS complex.",
+            "QS complexes are always pathological — think completed infarction."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "f waves", "definition_ar": "موجات رجفانية غير منتظمة تعكس الرجفان الأذيني"},
+        {"term": "F waves", "definition_ar": "موجات رفرفة أذينية مسننة حادة بنحو 300 دقة"},
+        {"term": "P mitrale", "definition_ar": "موجة P عريضة مشطوبة في تضخم الأذين الأيسر"},
+        {"term": "P pulmonale", "definition_ar": "موجة P عالية مدببة في تضخم الأذين الأيمن"},
+        {"term": "QS complex", "definition_ar": "مركب QS بلا R يعتبر دائماً Q مرضياً (ندبة احتشاء)"},
+        {"term": "Accelerated idioventricular rhythm", "definition_ar": "إيقاع بطيني متسارع 60-100 بلا P"}
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "cvs_l5_c4_qt_st_t",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "QT Interval, ST Segment, and T Wave",
+      "summary_ar": "فترة QT وتصحيحها وقصرها المرضي، مقطع ST وحالاته (هبوطه وأشكاله، ارتفاعه المقعر والمحدب وتأثير الديغوكسين)، وموجة T الطبيعية والمرضية والفرط حدة والتخصيب.",
+      "sections": [
+        {
+          "heading": "The QT Interval",
+          "body_text": "**The QT interval** reflects **ventricular repolarization**; it also includes the time required for **ventricular depolarization (QRS duration)**.\n\n- **Best measured in II, V5, and V6** (use the **longest interval among the three**).\n- **QT must be corrected for heart rate** — **Bazett's formula (QTc) = QT / √RR**.\n- Normal QTc: **males 390–450 ms; females 390–460 ms** (normal intervals table).\n- **LONG QTc: risk for torsades de pointes VT.**\n- **VERY SHORT QTc (<390 msec): short QT syndrome is ALSO at risk for VT & VF.**\n- Bedside rule: QT is normal if **< half the RR interval**; suspicious if **> half RR**.",
+          "key_points": [
+            "QT = repolarization + QRS; measure in II, V5, V6 using the longest; correct with Bazett (QTc = QT/√RR).",
+            "Normal QTc: male 390–450 ms, female 390–460 ms.",
+            "Long QTc → torsades de pointes; VERY short QTc <390 ms (short QT syndrome) → VT/VF risk too.",
+            "Quick check: QT > half RR is abnormal."
+          ]
+        },
+        {
+          "heading": "The ST Segment",
+          "body_text": "**The ST segment and T wave (and occasionally the U wave) reflect ventricular repolarization.**\n\n**ST segment depression morphologies:**\n\n- **Upsloping** — least specific (often rate-related)\n- **Horizontal** — strongly suggests ischemia\n- **Downsloping** — the most specific for ischemia\n\n**ST segment elevation morphologies:**\n\n- **CONCAVE (saddle-shaped)** — typical of NON-STEMI causes like **benign early repolarization or acute pericarditis**\n- **CONVEX (non-concave, obliquely straight/dome-shaped)** — **typical of STEMI**\n\n**DIGITALIS EFFECT:** the classic 'reverse tick' or Salvador Dali moustache sign — asymmetric ST depression with downsloping that is sagging, with shortened QT — a THERAPEUTIC LEVEL effect, not digitalis toxicity.\n\n**J point and J wave:** the ST segment is measured from the **J point** (junction of QRS end and ST start); **J waves (Osborn waves)** are seen in hypothermia. The J point is where STE is measured in STEMI (e.g., values like 2.2 mm, 1.5 mm, 2.0 mm, 1.8 mm measured at the J point in various leads).",
+          "key_points": [
+            "ST + T (± U) = repolarization.",
+            "ST depression: upsloping least specific; horizontal ischemic; downsloping most specific.",
+            "Concave STE = pericarditis/early repolarization; convex/dome STE = STEMI.",
+            "Digitalis effect: reverse-tick sagging ST depression (therapeutic, not toxic).",
+            "J point anchors ST measurement; J (Osborn) waves = hypothermia."
+          ],
+          "check": {
+            "prompt": "An ECG shows concave (saddle-shaped) ST elevation in multiple leads including V2–V6 and I with PR segment depression. Which condition is most likely?",
+            "options": ["Acute pericarditis", "STEMI", "Left bundle branch block", "Digoxin effect"],
+            "correct_index": 0,
+            "explanation_ar": "الارتفاع المقعر المنتشر مع انخفاض مقطع PR يرشح التهاب التأمور الحاد (أو التنكس المبكر الحميد)؛ بينما ال STEMI محدب ومحصور بمنطقة تروية واحد مع انعكاسات. الديغوكسين يسبب انخفاض ST بشكل علامة الصحّاح المعكوس لا ارتفاعاً."
+          }
+        },
+        {
+          "heading": "The T Wave and Lead–Wall Correlations",
+          "body_text": "**Normal T wave characteristics:**\n\n- **Upright in all leads except aVR and V1**\n- Amplitude best compared with the **preceding QRS**\n\n**Abnormal T wave morphologies:**\n\n- **Flat T wave**\n- **Inverted T wave**\n- **Biphasic T wave** — up then down, or down then up\n- **DYNAMIC T changes** (e.g., first ECG vs ECG after 1 hour — evolving ischemia/infarction)\n\n**Two specific tall T patterns:**\n\n- **HYPERACUTE T WAVE** — **very early myocardial infarction** (bulbous, broad T in the affected territory)\n- **PEAKED (TENTED) T WAVE** — **HYPERKALEMIA** (narrow, pointed, tall T)\n\n**Leads and ventricular walls (coronary territories):**\n\n- **Inferior wall:** II, III, aVF\n- **Lateral wall:** I, aVL, V5, V6\n- **Septal:** V1, V2\n- **Anterior:** V3, V4\n- **Inferior ST elevation** → II, III, aVF elevation (reciprocal changes in I, aVL)\n- **V1–V3 mirror the posterior wall of the heart in posterior STEMI** (tall R, ST depression, upright T in V1–V3 as mirror images); **posterior leads V7–V9 confirm** (ST elevation and Q waves in V7–V9).\n- **V4–V6 electrodes may be used to obtain posterior ECG leads (V7–V9).**\n- **RVH pattern:** dominant R, ST depression, and T wave inversion in leads corresponding to the RV (V1–V3) — right ventricular strain.\n- **Right ventricular infarction in the context of inferior STEMI** — confirm with **right-sided leads (V3R–V6R)**.",
+          "key_points": [
+            "Normal T upright except aVR, V1; flat, inverted, or biphasic T are abnormal; dynamic changes over an hour indicate evolving ischemia.",
+            "Hyperacute (bulbous) T = very early MI; peaked/tented T = hyperkalemia.",
+            "Walls: inferior II/III/aVF; lateral I/aVL/V5/V6; septal V1/V2; anterior V3/V4.",
+            "Posterior STEMI: V1–V3 are mirror images (tall R, ST depression, upright T); confirm with V7–V9.",
+            "RV infarction with inferior STEMI: use right-sided leads.",
+            "RVH: dominant R with ST depression and T inversion in V1–V3 (right strain)."
+          ],
+          "check": {
+            "prompt": "In a posterior wall STEMI, what do leads V1–V3 typically show?",
+            "options": [
+              "ST elevation and pathological Q waves identical to anterior STEMI",
+              "Mirror-image changes: tall R waves, horizontal ST depression, and upright T waves",
+              "Peaked tented T waves of hyperkalemia",
+              "Normal findings always"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الجدار الخلفي يقابل V1–V3؛ فاحتشاؤه ينعكس فيها كنتيجة مرآة: R عالية وهبوط ST أفقي وT منتصبة — ويؤكد بارتفاع ST وموجات Q في V7–V9."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "QTc Bazett", "definition_ar": "تصحيح QT لمعدل النبض بقسمة QT على الجذر التربيعي لفترة RR"},
+        {"term": "Hyperacute T", "definition_ar": "موجة T منتفخة عالية تنذر بالاحتشاء المبكر جداً"},
+        {"term": "Osborn wave", "definition_ar": "موجة J (أوزبورن) في انخفاض حرارة الجسم"},
+        {"term": "Digitalis effect", "definition_ar": "أثر الديغوكسين العلاجي: انخفاض ST بشكل الصحّاح المعكوس مع T قصيرة"},
+        {"term": "Reciprocal changes", "definition_ar": "تغيرات عاكسة في المشتقات المقابلة لمنطقة الاحتشاء"}
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "cvs_l5_c5_artifacts_interpretation",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "ECG Artifacts and the Systematic Interpretation Approach",
+      "summary_ar": "الأخطاء الفنية (حركة مرض باركنسون وارتياح الأقطاب)، الترتيب المنهجي لقراءة ECG، والقيمة السريرية للتخطيط مع أمثلة الحالات الأربع.",
+      "sections": [
+        {
+          "heading": "ECG Artifacts and Readiness for Interpretation",
+          "body_text": "**ECG artifacts:**\n\n- **Motion artifacts** in the ECG of a patient with **Parkinson's disease** (tremor superimposed on the baseline — regular, fast artifact mimicking flutter) — artifacts often show regular morphology matching tremor frequency, without hemodynamic consequence.\n- **Motion artifacts from loose electrode connection** due to **inadequate electrode gel** — irregular, wandering baseline.\n\n**An ECG is ready for interpretation when:**\n\n- **Properly placed electrodes**\n- **Standard ECG paper settings** (25 mm/s, 10 mm/mV)\n- **Normal heart orientation and position** (not dextrocardia)\n- **No ECG artifacts**\n\n**Systematic interpretation sequence (A–Z):**\n\n1. **Clinical data**\n2. **12-lead ECG — Label (name) / Date**\n3. **Calibration (Voltage)**\n4. **Connection**\n5. **Rhythm**\n6. **P–QRS relationship**\n7. **Rate**\n8. **Vertical and horizontal axis**\n9. **Waves and segments: Normal? Abnormal? (Leads, morphology, dimensions or deviation)**\n\n**Clinical correlation of the same ECG — four cases:**\n\n- **CASE 1:** Typical ischemic chest pain → **Post-myocardial infarction angina**\n- **CASE 2:** Pericardial character chest pain → **Post-myocardial infarction pericarditis**\n- **CASE 3:** Breathlessness; orthopnoea → **Acute cardiogenic pulmonary edema**\n- **CASE 4:** Routine preoperative evaluation of a 70-year-old male → **Silent myocardial infarction**\n\n**Causes of ECG changes:**\n\n- **Direct cardiac causes:**\n  - **Coronary:** coronary artery disease\n  - **Myocardial:** cardiomyopathies, myocarditis, myocardial contusion, hypertrophy\n  - **Pericardial:** pericarditis, constrictive pericarditis, pericardial effusion\n  - **Valvular:** pressure overload and/or volume overload\n  - **Idiopathic and genetic tachy- and bradyarrhythmias**\n- **Indirect cardiac causes:**\n  - **Pulmonary:** pulmonary embolism; pulmonary hypertension; hypoxia\n  - **Thyroid disorders:** hypothyroidism and hyperthyroidism\n  - **Hypothermia**\n  - **Electrolytes disturbance:** K, Na, Ca, Mg\n  - **Neurological:** intracranial haemorrhage\n  - **Drugs:** antiarrhythmics, digoxin, antidepressants\n\n**Example of a completed interpretation:** Rhythm strip II with the diagnosis: 'sinus bradycardia; prior STEMI (about days old)'.",
+          "key_points": [
+            "Parkinson tremor creates regular motion artifacts; loose electrodes/gel cause wandering baseline — always exclude artifact before diagnosing arrhythmia.",
+            "ECG ready when: proper electrode placement, standard settings (25 mm/s, 10 mm/mV), normal heart position, no artifacts.",
+            "Systematic order: clinical data → labeling → calibration → connection → rhythm → P–QRS relationship → rate → vertical/horizontal axis → waves/segments.",
+            "Same ECG + different clinical context = different diagnosis (post-MI angina, post-MI pericarditis, cardiogenic pulmonary edema, silent MI).",
+            "ECG changes: direct cardiac (coronary, myocardial, pericardial, valvular, genetic arrhythmias) and indirect (pulmonary, thyroid, hypothermia, electrolytes, intracranial hemorrhage, drugs)."
+          ],
+          "check": {
+            "prompt": "A regular, fast 'sawtooth-like' baseline artifact appears in a patient with visible hand tremor from Parkinson's disease, with normal pulse and blood pressure. What should be considered first?",
+            "options": [
+              "Atrial flutter requiring anticoagulation",
+              "Motion artifact from Parkinsonian tremor",
+              "Ventricular tachycardia",
+              "Digoxin toxicity"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "رجف باركنسون يطبع ذبذبات منتظمة على خط الأساس تحاكي الرفرفة؛ النبض السوي والاستقرار البدني يدفعان للاشتباه بالخطأ الفني أولاً قبل وسم لانظمية غير موجودة."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "Motion artifact", "definition_ar": "تشويش حركي من رجف باركنسون أو أقطاب مرتخية يحاكي لانظميات"},
+        {"term": "Silent MI", "definition_ar": "احتشاء صامت بلا ألم يكتشف عرضياً في تخطيط روتيني"},
+        {"term": "Systematic interpretation", "definition_ar": "قراءة ECG بترتيب ثابت: معايرة، اتصال، نظم، علاقة P-QRS، معدل، محاور، موجات"}
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "cvs_l5_fc1",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c1_conduction_leads_paper",
+      "card_type": "basic",
+      "front_text": "What is the only electrical connection between the atria and the ventricles?",
+      "back_text": "The AV node (with the bundle of His) — the fibrous skeleton otherwise insulates the atria from the ventricles, so every atrial impulse must pass through the AV node to reach the ventricles.",
+      "explanation_ar": "العقدة الأذينية البطينية وحدها تصل الأذينين بالبطينين كهربائياً — لذا تنظم سرعة الاستجابة البطينية.",
+      "is_vivid": false,
+      "tags": ["conduction"]
+    },
+    {
+      "id": "cvs_l5_fc2",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c1_conduction_leads_paper",
+      "card_type": "basic",
+      "front_text": "What are the time and amplitude values of standard ECG paper?",
+      "back_text": "Speed 25 mm/s: small square (1 mm) = 0.04 s (40 ms); large square (5 mm) = 0.2 s (200 ms); 5 large squares = 1 second; a strip = 10 seconds. Amplitude: 1 mV = 10 mm (half calibration 0.5 mV = 5 mm; double 2 mV = 20 mm).",
+      "mnemonic_ar": "صغير 40 ملي، كبير 200 ملي، 1 مللي فولت = 10 مم، والشريط 10 ثوانٍ.",
+      "explanation_ar": "احفظ هذه الأرقام كقاعدة أولى لقراءة أي تخطيط.",
+      "is_vivid": false,
+      "tags": ["ECG paper"]
+    },
+    {
+      "id": "cvs_l5_fc3",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c1_conduction_leads_paper",
+      "card_type": "basic",
+      "front_text": "List the five causes of low-voltage ECG.",
+      "back_text": "Fluid (pericardial/pleural effusion), Fat (obesity), Air (emphysema), Infiltrative (amyloidosis), and loss of viable myocardium (end-stage dilated cardiomyopathy). QRS <5 mm limb or <10 mm precordial — but first exclude pseudo-low voltage (half calibration).",
+      "mnemonic_ar": "سوائل، شحوم، هواء، ارتشاحي، فقد عضلة.",
+      "explanation_ar": "الأسباب الخمسة بمنطق الحاجز بين القلب والقطب: سائل/دهن/هواء/ارتشاح/فقد عضلة حية.",
+      "is_vivid": false,
+      "tags": ["low voltage"]
+    },
+    {
+      "id": "cvs_l5_fc4",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c1_conduction_leads_paper",
+      "card_type": "basic",
+      "front_text": "Where are V1–V6 electrodes placed, and what special lead sets detect RV and posterior infarction?",
+      "back_text": "V1: 4th ICS right of sternum; V2: 4th ICS left of sternum; V3: between V2 and V4; V4: 5th ICS midclavicular line; V5: anterior axillary line at V4 level; V6: midaxillary line at V5 level. Right-sided leads (V1R–V6R) detect RV infarction; posterior leads V7–V9 detect posterior infarction. In dextrocardia, mirror the precordials AND reverse limb electrodes.",
+      "explanation_ar": "مواضع V1–V6 القياسية + المشتقات اليمنى للبطين الأيمن والخلفية V7–V9 للجدار الخلفي.",
+      "is_vivid": false,
+      "tags": ["precordial leads"]
+    },
+    {
+      "id": "cvs_l5_fc5",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c2_axis_heart_rate",
+      "card_type": "basic",
+      "front_text": "Using leads I, II, and aVF, how do you classify the frontal axis?",
+      "back_text": "I+ aVF+ = normal. I+ aVF− → check II: II+ = normal; II− = LAD. I− aVF+ = RAD. I− aVF− = extreme axis deviation (but if II positive, still normal). Normal −30° to +90°; LAD −30° to −90°; RAD +90° to +180°; extreme −90° to ±180°. Mild RAD is normal in children/adolescents/young adults.",
+      "explanation_ar": "طريقة الأرباع بموجات I وaVF مع اللجوء لII في الحالات الحدية.",
+      "is_vivid": false,
+      "tags": ["axis"]
+    },
+    {
+      "id": "cvs_l5_fc6",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c2_axis_heart_rate",
+      "card_type": "basic",
+      "front_text": "How do you distinguish limb-lead reversal from dextrocardia on ECG?",
+      "back_text": "Both show globally negative lead I and globally positive aVR. In LIMB LEAD REVERSAL the chest leads show NORMAL R wave transition; in DEXTROCARDIA there is NO R transition (poor R progression across V1–V6, mirror-image pattern).",
+      "explanation_ar": "قلب النقبضة الأطراف يترك صدرياً طبيعياً؛ أما ال Dextrocardia فيعكس التدرج الصدري أيضاً.",
+      "is_vivid": false,
+      "tags": ["dextrocardia", "lead reversal"]
+    },
+    {
+      "id": "cvs_l5_fc7",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c2_axis_heart_rate",
+      "card_type": "basic",
+      "front_text": "How do you calculate heart rate in regular and irregular rhythms?",
+      "back_text": "Regular: HR = 300 / number of large squares between consecutive R waves (3→100, 4→75, 2→150, 5→60). Irregular (e.g., AF): average — beats in the 10-second strip (50 large squares) × 6; or beats in 20 large squares (4 s) × 15; or beats in 15 large squares (3 s) × 20. In AV dissociation count the P rate and QRS rate separately.",
+      "explanation_ar": "300÷عدد المربعات للمنتظم، والضرب بـ6/15/20 حسب طول النافذة للمتقطع، وقياس منفصل للـP وQRS عند الانفصال.",
+      "is_vivid": false,
+      "tags": ["heart rate"]
+    },
+    {
+      "id": "cvs_l5_fc8",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c3_rhythm_p_qrs",
+      "card_type": "basic",
+      "front_text": "What are the criteria of a normal P wave and the patterns of atrial enlargement?",
+      "back_text": "Normal P: upright in I/II, inverted in aVR, smooth, <2.5 mm limb / <1.5 mm precordial, <120 ms. P pulmonale (RA enlargement): tall peaked P. P mitrale (LA enlargement): broad bifid P with deep terminal negative deflection in V1. Both = bi-atrial enlargement. Best leads: II and V1 ('antenna of atria').",
+      "explanation_ar": "P طبيعية ثم الأنماط: رئوية عالية مدببة (أذين أيمن)، تاجية عريضة مشطوبة (أذين أيسر)، والاثنتان معاً تعني تضخماً أذينياً مزدوجاً.",
+      "is_vivid": false,
+      "tags": ["P wave"]
+    },
+    {
+      "id": "cvs_l5_fc9",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c3_rhythm_p_qrs",
+      "card_type": "basic",
+      "front_text": "State the PR interval abnormalities and their diagnoses, and what PR segment depression indicates.",
+      "back_text": "Normal PR = 90–200 ms (2–5 small squares). Long PR (>200 ms, >5 small squares) = first-degree AV block. Short PR (<80 ms, <2 small squares) = WPW pre-excitation. PR segment DEPRESSION = pericarditis. P-QRS dissociation = complete heart block; non-conducted P waves = second-degree (e.g., 2:1) block.",
+      "explanation_ar": "طويل = حصار أول؛ قصير = WPW؛ انخفاض مقطع PR = تأمور؛ انفصال = حصار كامل.",
+      "is_vivid": false,
+      "tags": ["PR interval"]
+    },
+    {
+      "id": "cvs_l5_fc10",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c3_rhythm_p_qrs",
+      "card_type": "basic",
+      "front_text": "What are the pathological Q wave criteria?",
+      "back_text": "Any of: (1) > 40 ms (1 mm) wide; (2) > 2 mm deep; (3) > 25% of the depth of the QRS complex; (4) any QS complex (no r or R — always pathological). Physiological septal q is normal in I, aVL, V5, V6.",
+      "mnemonic_ar": "مرضي: عريض >1مم، عميق >2مم، >25% من QRS، أو مركب QS.",
+      "explanation_ar": "المعايير الأربعة؛ و QS دائماً مرضي، بينما q الحاجزي الفسيولوجي طبيعي في I وaVL وV5–V6.",
+      "is_vivid": false,
+      "tags": ["Q wave"]
+    },
+    {
+      "id": "cvs_l5_fc11",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c3_rhythm_p_qrs",
+      "card_type": "basic",
+      "front_text": "Describe RBBB and LBBB ECG patterns.",
+      "back_text": "RBBB: QRS >120 ms, RSR' pattern ('M-shaped') in V1–V3, and a wide slurred S wave in lateral leads (I, aVL, V5–V6). LBBB: QRS >120 ms, dominant S wave in V1, broad R wave in lateral leads (I, aVL, V5–V6).",
+      "explanation_ar": "RBBB نمط M في V1–V3 مع S متسع وحشي؛ LBBB سائد في V1 وR عريض وحشي.",
+      "is_vivid": false,
+      "tags": ["BBB"]
+    },
+    {
+      "id": "cvs_l5_fc12",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "card_type": "basic",
+      "front_text": "How do you measure and correct the QT interval, and what are its dangers?",
+      "back_text": "Measure in II, V5, V6 using the longest interval; includes QRS duration; reflect repolarization. Correct with Bazett: QTc = QT/√RR. Normal QTc: male 390–450 ms, female 390–460 ms. Long QTc → torsades de pointes VT. VERY SHORT QTc (<390 ms, short QT syndrome) → also at risk of VT & VF. Quick screen: QT should be < half RR.",
+      "explanation_ar": "أطول قيمة في II وV5–V6 وتصحيح بازيت؛ الطويل يسبب تورساد، والقصير جداً (<390) يشكل خطر VT/VF أيضاً.",
+      "is_vivid": false,
+      "tags": ["QT"]
+    },
+    {
+      "id": "cvs_l5_fc13",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "card_type": "basic",
+      "front_text": "Which ST elevation morphology favors STEMI and which favors pericarditis/early repolarization?",
+      "back_text": "CONVEX (dome-shaped, non-concave) ST elevation is typical of STEMI. CONCAVE (saddle-shaped) elevation is typical of non-STEMI causes like benign early repolarization or acute pericarditis (with PR segment depression). ST depression morphologies: horizontal and downsloping suggest ischemia (downsloping most specific); upsloping is least specific.",
+      "explanation_ar": "محدب=STEMI، مقعر=تأمور/تنكس مبكر؛ الهبوط الأفقي والمنحدر أكثر نوعية للإقفار.",
+      "is_vivid": false,
+      "tags": ["ST segment"]
+    },
+    {
+      "id": "cvs_l5_fc14",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "card_type": "basic",
+      "front_text": "Differentiate hyperacute T waves from peaked tented T waves.",
+      "back_text": "Hyperacute T waves — broad, bulbous T waves in the ischemic territory — indicate VERY EARLY myocardial infarction. Peaked (tented) T waves — narrow and pointed — indicate HYPERKALEMIA. Normal T is upright in all leads except aVR and V1; flat, inverted, or biphasic T waves are abnormal; dynamic changes over 1 hour indicate evolving ischemia.",
+      "explanation_ar": "منتفخة عريضة = احتشاء مبكر؛ مدببة ضيقة = فرط بوتاسيوم.",
+      "is_vivid": false,
+      "tags": ["T wave"]
+    },
+    {
+      "id": "cvs_l5_fc15",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "card_type": "basic",
+      "front_text": "Map the ECG leads to ventricular walls and recall posterior STEMI's mirror in V1–V3.",
+      "back_text": "Inferior: II, III, aVF. Lateral: I, aVL, V5, V6. Septal: V1, V2. Anterior: V3, V4. Posterior STEMI is mirrored in V1–V3 as tall R waves, horizontal ST depression, and upright T waves — confirmed by ST elevation and Q waves in posterior leads V7–V9. RV infarction (with inferior STEMI) requires right-sided leads.",
+      "explanation_ar": "خلفي=جدران ومقابلاتها؛ احتشاء خلفي = مرآة في V1–V3 وتثبيت بV7–V9.",
+      "is_vivid": false,
+      "tags": ["leads and walls"]
+    },
+    {
+      "id": "cvs_l5_fc16",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c5_artifacts_interpretation",
+      "card_type": "basic",
+      "front_text": "What is the systematic order of ECG interpretation, and what makes an ECG 'ready' for reading?",
+      "back_text": "Ready: properly placed electrodes, standard settings (25 mm/s, 10 mm/mV), normal heart orientation/position, no artifacts (e.g., Parkinson tremor or loose electrode gel). Order: clinical data → label/date → calibration → connection → rhythm → P–QRS relationship → rate → vertical and horizontal axis → waves and segments (normal vs abnormal: leads, morphology, dimensions, deviation).",
+      "mnemonic_ar": "جاهزية: أقطاب صحيحة، معايرة قياسية، وضع قلب طبيعي، لا تشويش.",
+      "explanation_ar": "تسلسل القراءة ثابت يمنع إغفال أي عنصر.",
+      "is_vivid": false,
+      "tags": ["interpretation"]
+    },
+    {
+      "id": "cvs_l5_fc17",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c5_artifacts_interpretation",
+      "card_type": "basic",
+      "front_text": "Name the direct and indirect (non-cardiac) causes of ECG changes.",
+      "back_text": "Direct cardiac: coronary (CAD), myocardial (cardiomyopathies, myocarditis, contusion, hypertrophy), pericardial (pericarditis, constrictive pericarditis, effusion), valvular (pressure/volume overload), idiopathic and genetic tachy- and bradyarrhythmias.\nIndirect: pulmonary (PE, pulmonary hypertension, hypoxia), thyroid disorders (hypo/hyper), hypothermia, electrolyte disturbance (K, Na, Ca, Mg), neurological (intracranial haemorrhage), drugs (antiarrhythmics, digoxin, antidepressants).",
+      "mnemonic_ar": "مباشرة: إكليلية، عضلية، تأمورية، صمامية، لانظمية وراثية؛ غير مباشرة: رئوية، درقية، برودة، شوارد، عصبية، أدوية.",
+      "explanation_ar": "فبالتخطيط يعلّل مرضياً يجب مسح هاتين القائمتين.",
+      "is_vivid": false,
+      "tags": ["ECG causes"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "cvs_l5_mcq1",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c2_axis_heart_rate",
+      "question_stem": "A 65-year-old woman's ECG shows lead I positive, aVF negative, and lead II negative. The QRS is 90 ms. What is the axis interpretation?",
+      "options": [
+        "Normal axis",
+        "Left axis deviation",
+        "Right axis deviation",
+        "Extreme axis deviation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "I موجب وaVF سالب يوجب فحص II؛ سالب = انحراف محور أيسر (-30 إلى -90). المحور الطبيعي يفرض II موجباً، والأيمن يتطلب I سالباً وaVF موجباً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "Two-lead method: I and aVF first",
+        "Borderline case needs lead II",
+        "II negative tips it to LAD"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l5_mcq2",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c3_rhythm_p_qrs",
+      "question_stem": "A 78-year-old man with dizziness has an ECG showing P waves at 96 bpm and QRS complexes at 38 bpm with no fixed relationship between them. What is the rhythm and the expected management priority?",
+      "options": [
+        "Sinus bradycardia — observe",
+        "Complete heart block — assess for pacemaker insertion",
+        "Atrial flutter with 4:1 conduction — rate control",
+        "Second-degree Mobitz I — atropine always"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "انفصال تام بين P وQRS بمعدلين مختلفين (96 مقابل 38) = حصار أذيني بطيني كامل؛ مريض عمري مع أعراض يتطلب تقييم ناظم قلب دائم. الجيبي البطيء يحفظ العلاقة، والرفرفة تحافظ على نسبة ثابتة، وموبيتز I يطول تدريجياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "P rate ≠ QRS rate = AV dissociation",
+        "Symptomatic bradycardia in the elderly",
+        "Complete block rarely reverses spontaneously"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l5_mcq3",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "question_stem": "A 30-year-old woman on citalopram develops dizziness; her QTc measures 520 ms. What arrhythmia is she at risk of, and what is the mechanism?",
+      "options": [
+        "Torsades de pointes — prolonged repolarization with early afterdepolarizations",
+        "Atrial fibrillation from LA dilatation",
+        "Accelerated idioventricular rhythm",
+        "Short QT syndrome VT"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "إطالة QT (بمضادات الاكتئاب) تُطيل إعادة الاستقطاب وتخلق إزالة استقطاب مبكرة بعدية تطلق تورساد دي بوينت (VT ملتوٍ). الرجفان يحتاج عوامل أذينية، والأيدلوفنتريكولار إيقاع هروب، وال QT القصير جداً حالة وراثية معاكسة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "QTc > 500 ms in a woman on QT-prolonging drug",
+        "Polymorphic VT associated with long QT",
+        "Early afterdepolarizations trigger it"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l5_mcq4",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c4_qt_st_t",
+      "question_stem": "An ECG of a patient with chest pain shows 3 mm convex ST elevation in V2–V4 with reciprocal ST depression in II, III, aVF. What is the diagnosis and artery involved?",
+      "options": [
+        "Anterior STEMI — LAD occlusion",
+        "Inferior STEMI — RCA occlusion",
+        "Acute pericarditis",
+        "Lateral STEMI — circumflex occlusion"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ارتفاع ST محدب في V2–V4 (منطقة أمامى/حاجزية) مع انعكاس سفلي = STEMI أمامي بشريان LAD. السفلي يرفع II/III/aVF، والوحشي I/aVL/V5-6، والتأمور مقعر ومنتشر مع انخفاض PR.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Convex elevation in chest leads V2–V4",
+        "Reciprocal changes point away from the culprit",
+        "V1–V4 territory = LAD"
+      ],
+      "focus_sections": [2]
+    },
+    {
+      "id": "cvs_l5_mcq5",
+      "lecture_id": "cvs_l5_ecg",
+      "concept_id": "cvs_l5_c1_conduction_leads_paper",
+      "question_stem": "A chest clinic patient's ECG shows small QRS complexes in all limb leads (<4 mm) and <9 mm in precordials, with a calibration pulse of 10 mm/mV. He has a 40-year smoking history and severe COPD. What is the best explanation?",
+      "options": [
+        "Emphysema-related air insulation lowering voltage",
+        "Pericardial effusion",
+        "Left ventricular hypertrophy",
+        "Electrode gel artifact"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النفاخ الرئوي (هواء) يعزل القلب ويخفض الجهد مع معايرة سليمة؛ نفاذ الأدلة المرضية والسيرة يرجحان الانتفاخ. الانصباب التأموري خيار مهم لكن بدون قصة نفاخ أو علاماته، وال LVH يرفع الجهد، والهلام الرديء يشوش الأساس ولا يخفض الجهد المنتظم.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Low voltage with normal calibration = true finding",
+        "Air is one of the five causes (Fluid, Fat, Air, Infiltration, muscle loss)",
+        "40 pack-years of COPD"
+      ],
+      "focus_sections": [2]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "cvs_l5_case1",
+      "lecture_id": "cvs_l5_ecg",
+      "title": "The Electric Storm: Hyperkalemia on a 12-Lead ECG",
+      "scenario": "A 67-year-old woman with chronic kidney disease presents with progressive muscle weakness and palpitations. Her ECG shows the classic progression of tall peaked T waves, and the team must read the tracing systematically before her rhythm degenerates.",
+      "vignette": {
+        "age": 67,
+        "sex": "female",
+        "chief_complaint": "Muscle weakness and palpitations for 2 days",
+        "history": "CKD stage 4 (baseline creatinine 2.8 mg/dL), hypertension, type 2 diabetes; missed her last two dialysis sessions; takes lisinopril and spironolactone.",
+        "vitals": {
+          "bp": "156/88 mmHg",
+          "hr": "96 bpm regular",
+          "rr": "18/min",
+          "temp": "36.6 C",
+          "spo2": "97% room air"
+        },
+        "exam": "Alert, mild proximal muscle weakness, no edema resolution since last dialysis; JVP at 8 cm; heart sounds regular with no murmurs; chest clear.",
+        "labs": [
+          {"name": "Serum potassium", "value": "7.4 mmol/L (ref 3.5–5.0)", "flag": "critical"},
+          {"name": "Serum creatinine", "value": "4.6 mg/dL (ref 0.6–1.1)", "flag": "critical"},
+          {"name": "Blood urea", "value": "112 mg/dL (ref 7–20)", "flag": "high"},
+          {"name": "Serum bicarbonate", "value": "14 mEq/L (ref 22–28)", "flag": "low"},
+          {"name": "Serum glucose", "value": "180 mg/dL (ref 70–99)", "flag": "high"}
+        ],
+        "imaging": "ECG at 25 mm/s, 10 mm/mV: PR interval 240 ms, QRS 130 ms widening, symmetrically peaked 'tented' T waves best seen in II, V2–V4; no ST elevation or Q waves."
+      },
+      "steps": [
+        {
+          "id": "cvs_l5_case1_s1",
+          "prompt": "What do the tall, narrow, symmetrically peaked T waves represent?",
+          "options": [
+            "Hyperacute T waves of very early MI",
+            "Peaked (tented) T waves of hyperkalemia",
+            "Normal variant in CKD",
+            "Pericarditis repolarization changes"
+            ],
+          "correct_index": 1,
+          "explanation_ar": "T مدببة ضيقة متناظرة مع بوتاسيوم 7.4 = فرط بوتاسيوم (T مخيمية). فرط الحدة للاحتشاء المبكر T منتفخة عريضة في منطقة تروية واحدة مع ألم صدري إقفاري، ولا علاقة للتأمور.",
+          "xp": 8,
+          "hints": [
+            "Narrow pointed symmetric T vs broad bulbous T",
+            "K+ is 7.4 — think electrolyte first",
+            "PR and QRS are also drifting (240 ms, 130 ms)"
+          ]
+        },
+        {
+          "id": "cvs_l5_case1_s2",
+          "prompt": "Interpret the PR and QRS findings in the context of hyperkalemia.",
+          "options": [
+            "First-degree AV block and bundle branch delay caused by hyperkalemic conduction slowing",
+            "WPW with short PR",
+            "Complete heart block with escape",
+            "Digoxin effect"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "فرط البوتاسيوم يثبط التوصيل: يطول PR (حصار أول) ويوسع QRS (توصيل داخل بطيني) قبل أن ينهار النظم إلى تسرع أو توقف جيبي. لا نقص PR ولا انفصال تام ولا أثر ديجوكسين.",
+          "xp": 8,
+          "hints": [
+            "Hyperkalemia depresses conduction progressively",
+            "PR 240 ms then QRS widening is the sequence",
+            "Worst case: sine wave then asystole"
+          ]
+        },
+        {
+          "id": "cvs_l5_case1_s3",
+          "prompt": "What is the immediate management sequence?",
+          "options": [
+            "IV calcium gluconate to stabilize the myocardium, then insulin+dextrose to shift K+ intracellularly, bicarbonate consideration, and urgent dialysis",
+            "Oral potassium binder alone and clinic follow-up",
+            "Beta-blocker for palpitations",
+            "Observe with serial ECGs only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الكالسيوم الوريدي يستقر الغشاء فوراً (درع عضلي)، ثم الإنسولين-دكستروز (وسريداً بيكربونات الحماض) ينقل البوتاسيوم للخلايا، والحل النهائي هو الديلزة العاجلة. الرابطة الفموية بطيئة لا تصلح لفرط شديد مع تغيرات تخطيط، والبيتا حاجب لا يعالج السبب.",
+          "xp": 12,
+          "hints": [
+            "Membrane stabilization first",
+            "Shift K+ intracellularly second",
+            "Definitive removal = dialysis"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: فرط بوتاسيوم شديد (7.4) ثانوي لفشل كلوي مزمن مع فوترة جلسات ديلازة ومثبطات رنين-أنجيوتنسين وسبيرونولاكتون. الدروس: (١) التخطيط في فرط البوتاسيوم يتدرج: T مخيمية (مدببة متناظرة) ← إطالة PR ← توسع QRS ← فقد P ← موجة الجيب ثم توقف — قراءة منهجية (معايرة، اتصال، نظم، علاقة P-QRS، معدل، محاور، موجات) تلتقط كل عنصر. (٢) فرّق بين T المخيمية (بوتاسيوم) والفرط حدة (احتشاء مبكر). (٣) العلاج المتسلسل: كالسيوم وريدي للاستقرار، إنسولين/دكستروز (± بيكربونات في الحماض) للنقل، ثم ديلازة عاجلة، مع مراقبة مستمرة بالتخطيط.",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

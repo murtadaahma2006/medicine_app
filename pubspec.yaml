@@ -24,7 +24,6 @@ dependencies:
   shared_preferences: ^2.5.2
   sqflite: ^2.4.1
   timezone: ^0.10.1
-  workmanager: ^0.6.0
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.4
@@ -53,6 +52,11 @@ flutter:
     - assets/illustrations/badges/
     - assets/illustrations/levels/
     - assets/illustrations/misc/
+    - docs/schemas/
+    - docs/باطنية.txt
+    - docs/جراحة.txt
+    - docs/نسائية.txt
+    - assets/data/
 
   fonts:
     # العربية — Cairo (خط تعليمي عربي حديث واضح على الشاشات)
@@ -79,6 +83,6 @@ flutter_launcher_icons:
   android: true
   ios: true
   remove_alpha_ios: true
-  image_path: "assets/brand/icon/app_icon.png"
-  adaptive_icon_background: "#1B3B6F"
-  adaptive_icon_foreground: "assets/brand/icon/app_icon.png"
+  image_path: "assets/brand/icon/app_icon_new.png"
+  adaptive_icon_background: "#152047"
+  adaptive_icon_foreground: "assets/brand/icon/app_icon_foreground_new.png"

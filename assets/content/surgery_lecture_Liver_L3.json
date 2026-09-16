@@ -1,0 +1,1534 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_Liver_L3",
+    "specialty": "surgery",
+    "title": "Liver III: Benign and Malignant Liver Tumors, Hepatic Deposits and Liver Transplantation",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "Liver L3- 2025.pdf",
+      "page_count": 19
+    },
+    "tags": [
+      "liver tumours",
+      "haemangioma",
+      "hepatic adenoma",
+      "focal nodular hyperplasia",
+      "hepatocellular carcinoma",
+      "cholangiocarcinoma",
+      "hepatic deposits",
+      "liver transplantation"
+    ],
+    "order_index": 9,
+    "golden_tip": [
+      "Never biopsy a suspected hepatic haemangioma percutaneously - it may bleed profusely. Diagnose with U/S (abnormal plexus of vessels) and contrast CT (peripheral nodular arterial enhancement then delayed centripetal fill-in).",
+      "Hepatic adenoma in a woman on contraceptive pills is premalignant: lobe or segmental resection is the treatment of choice. Haemangioma, in contrast, has little if any malignant potential and a small asymptomatic lesion needs NO treatment.",
+      "Sulphur colloid liver scan separates the great mimics: FNH is positive (functioning Kupffer cells) while hepatic adenoma and primary or metastatic tumours are negative (decreased Kupffer cells).",
+      "80% of primary liver malignancies are HCC and 80% of HCCs arise in a cirrhotic liver (M:F 8:1, 3rd-4th decades) - screen every HBV/HCV cirrhotic with U/S and AFP.",
+      "Elderly painless obstructive jaundice with dilated intrahepatic but NOT extrahepatic ducts on U/S = cholangiocarcinoma at the confluence of the right and left hepatic ducts; tissue diagnosis needs ERCP brush cytology (2/3), and PTC drains bile if ERCP fails."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_Liver_L3_c01",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Benign Liver Tumours I: Haemangioma",
+      "summary_ar": "يبدأ هذا المفهوم بتصنيف أورام الكبد (حميدة وخبيثة، أولية وثانوية) ثم يفصّل الورم الوعائي الدموي (الهايمانجيوما) بوصفه أشيع أورام الكبد الحميدة: غالباً متعدد من النوع الكهفي وصامت سريرياً وليس ما قبل خبيث. التشخيص بالموجات فوق الصوتية (ضفيرة أوعية غير طبيعية) وبالتصوير المقطعي المتعاقب (تعزيز محيطي عقدي في الطور الشرياني ثم تعزيز مركزي متأخر بسبب امتصاص الأوعية الصغيرة للمادة الظليلة)، والخزعة عبر الجلد ممنوعة لأنها قد تنزف بغزارة. لا علاج إذا كان صغيراً غير عرضي، أما الكبير العرضي فمعالجته جدلية.",
+      "sections": [
+        {
+          "heading": "Classification of Liver Tumours and the Scope of the Lecture",
+          "body_text": "The third liver lecture (delivered by Dr. Noori Hanoon, Consultant General and Gastrointestinal Surgeon, MD, FRCS, FACS, FICMS and PhD, England) has two stated objectives: **1. Liver tumors** and **2. Liver transplantation (a brief idea)**. Liver tumours are classified into two main groups: **I - Benign tumour** and **II - Malignant tumour**. The benign group contains three entities: **A - Haemangioma** (a vascular lesion), **B - Hepatic adenoma**, and **C - Focal nodular hyperplasia (FNH)**. The malignant group comprises **primary cancer** - hepatocellular carcinoma (HCC) and cholangiocarcinoma - and **secondary liver tumours (hepatic deposits)**, which are much more common than primaries. This classification drives the entire clinical approach to a focal liver lesion: first assign the lesion to one of these boxes using imaging (U/S, contrast CT, nuclear medicine), because treatment ranges from no treatment at all (small asymptomatic haemangioma) to segmental resection (FNH, adenoma), major hepatic resection or transplantation (HCC, selected deposits).",
+          "key_points": [
+            "Liver tumours: I - Benign (haemangioma, hepatic adenoma, FNH); II - Malignant (primary: HCC, cholangiocarcinoma; secondary: hepatic deposits).",
+            "Hepatic deposits are much more common than primary tumours.",
+            "Lecture objectives: liver tumours + liver transplantation (brief idea)."
+          ]
+        },
+        {
+          "heading": "Haemangioma - Pathology and Clinical Features",
+          "body_text": "**Haemangioma** (hepatic hemangioma) is a **vascular lesion** and the **most common** benign liver tumour. The facts listed in the lecture: - It is **often multiple**, of the **cavernous type** (cavernous haemangioma - a blood-filled lesion composed of dilated vascular spaces). - It is **symptomless** in the great majority of patients, typically an incidental U/S or CT finding. - **If too large, it presents as a mass - compressible** on clinical examination. - **They have little if any malignant potential (NOT premalignant)** - this is the crucial contrast with hepatic adenoma, which is premalignant. Because the natural history is benign, most haemangiomas are simply observed. The two clinical problems a haemangioma can create are diagnostic (mimicking a malignant vascular tumour on imaging) and haemodynamic or mechanical (rarely, arteriovenous shunting within the lesion that embarrasses heart function, or a large compressive mass).",
+          "key_points": [
+            "Most common benign liver tumour; vascular lesion.",
+            "Often multiple, cavernous type; symptomless.",
+            "If too large: mass that is compressible.",
+            "Little if any malignant potential - NOT premalignant."
+          ]
+        },
+        {
+          "heading": "Haemangioma - Diagnosis: Ultrasound, CT and MRI Patterns",
+          "body_text": "**Ultrasound is diagnostic: an abnormal plexus of vessels** within the lesion. **Contrast CT** shows the classic dynamic pattern: **peripheral nodular enhancement on the arterial phase, then centripetal enhancement** - that is, **delayed or slow contrast enhancement due to small vessel uptake**, as contrast gradually fills the lesion from its rim inward. The lecture's radiology figure ('Hepatic hemangioma') is a series of MRI images of the liver showing a focal lesion consistent with hepatic hemangioma; its caption reads: 'Unenhanced, arterial, portal venous and delayed phases show the typical pattern of hemangioma with peripheral nodular enhancement in the early phase and centripetal progression to uniform enhancement during the portal venous and delayed phases.' Phase by phase - the characteristic dynamic contrast enhancement pattern across the phases of contrast administration: - **Unenhanced phase:** the lesion appears as a **hypointense (dark) mass relative to the liver parenchyma**. - **Arterial phase:** **peripheral nodular enhancement** - bright, discontinuous nodules of contrast at the periphery of the lesion. - **Portal venous phase:** **centripetal progression**, the enhancing areas moving inward toward the center of the mass. - **Delayed phase:** the lesion **exhibits uniform (complete) fill-in**, appearing largely isointense or hyperintense to the surrounding liver tissue as the contrast agent fills the vascular spaces of the haemangioma. A second lecture figure is an axial three-phase contrast-enhanced CT (triphasic CT) of the upper abdomen: on the non-contrast phase it shows a subtle, ill-defined hypodense (darker) lesion in the right lobe (indicated by a black arrowhead; the letter C is visible near the center); on the arterial phase intense, heterogeneous peripheral enhancement (bright rim) with central non-enhancing areas suggesting necrosis or a cystic component; and on the portal venous / delayed phase persistent enhancement or washout relative to the surrounding liver parenchyma, the lesion remaining clearly visible as a hyperdense or mixed-density mass. The image description itself notes that vivid arterial-phase enhancement is a critical diagnostic feature in liver imaging and can also indicate hepatocellular carcinoma or a hypervascular metastasis - which is exactly why the characteristic slow centripetal fill-in pattern of haemangioma that this gallery illustrates must be recognised. **Percutaneous (P/C) biopsy should be avoided - it may bleed profusely.**",
+          "key_points": [
+            "U/S diagnostic: abnormal plexus of vessels.",
+            "CT: peripheral nodular enhancement on the arterial phase, then centripetal (delayed, slow) enhancement due to small vessel uptake.",
+            "MRI: unenhanced hypointense; arterial peripheral nodular enhancement; portal venous centripetal progression; delayed uniform fill-in.",
+            "Percutaneous biopsy should be avoided - it may bleed profusely."
+          ],
+          "check": {
+            "prompt": "A percutaneous biopsy is planned for a 6-cm liver lesion showing peripheral nodular enhancement on arterial-phase CT with centripetal fill-in. What is the correct action?",
+            "options": [
+              "Proceed with percutaneous biopsy under U/S guidance",
+              "Avoid percutaneous biopsy - it may bleed profusely",
+              "Biopsy only after giving vitamin K",
+              "Perform a sulphur colloid liver scan before biopsy",
+              "Biopsy through the normal liver capsule route"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الآفة الموصوفة هي ورم وعائي دموي (هايمانجيوما): تعزيز محيطي عقدي في الطور الشرياني ثم امتلاء مركزي متأخر. الخزعة عبر الجلد ممنوعة لأنها قد تنزف بغزارة، فالتشخيص يعتمد على الموجات فوق الصوتية (ضفيرة أوعية غير طبيعية) والتصوير المقطعي المتعاقب."
+          }
+        },
+        {
+          "heading": "Haemangioma - Treatment and Indications for Treatment",
+          "body_text": "**If small and asymptomatic: NO treatment** - observation is all that is required. **If large and symptomatic: treatment is controversial.** The options listed in the lecture are: - **Excision (removal)** of the lesion. - **Embolization** of its feeding vessels. - **Lobe or segmental resection** of the liver. - **DXT (deep X-ray therapy / radiotherapy) to reduce the size** of the tumour. The two defined **indications for treatment** are: 1) **Arteriovenous (A/V) shunting within the lesion that embarrasses heart function** (high-output strain on the heart), and 2) **Misdiagnosis of a malignant vascular tumour** - i.e. when imaging cannot confidently exclude a malignant vascular lesion and leaving it untreated is unacceptable. In practice most haemangiomas fall outside these two indications and are managed conservatively with radiological follow-up; the take-home message is that a lesion with little if any malignant potential does not warrant risky surgery unless it threatens cardiac function or diagnostic certainty.",
+          "key_points": [
+            "Small + asymptomatic: no treatment.",
+            "Large + symptomatic: controversial - excision/removal, embolization, lobe or segmental resection, or DXT to reduce size.",
+            "Indication 1: arteriovenous shunting embarrassing heart function.",
+            "Indication 2: misdiagnosis of a malignant vascular tumour."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Haemangioma",
+          "definition_ar": "ورم وعائي دموي: أشيع أورام الكبد الحميدة، آفة وعائية غالباً متعددة من النوع الكهفي، صامتة سريرياً وليست ما قبل خبيثة."
+        },
+        {
+          "term": "Cavernous haemangioma",
+          "definition_ar": "النوع الكهفي من الورم الوعائي: تجاويف وعائية متوسعة مملوءة بالدم، وهو الشكل الذي تأخذه الهايمانجيومات الكبدية غالباً."
+        },
+        {
+          "term": "Abnormal plexus of vessels",
+          "definition_ar": "العلامة التشخيصية للهايمانجيوما على الموجات فوق الصوتية: ضفيرة أوعية غير طبيعية داخل الآفة."
+        },
+        {
+          "term": "Peripheral nodular enhancement",
+          "definition_ar": "تعزيز محيطي عقدي في الطور الشرياني: العلامة المميزة للهايمانجيوما على التصوير المقطعي والرنين المتعاقب."
+        },
+        {
+          "term": "Centripetal enhancement",
+          "definition_ar": "امتلاء الآفة بالمادة الظليلة من المحيط نحو المركز بشكل متأخر وبطيء بسبب امتصاص الأوعية الصغيرة، وهو تكملة نمط الهايمانجيوما."
+        },
+        {
+          "term": "Arteriovenous shunting",
+          "definition_ar": "تحويلة شريانية وريدية داخل الورم الوعائي قد ترهق وظيفة القلب، وهي أحد استطبابين لعلاج الهايمانجيوما."
+        },
+        {
+          "term": "DXT (deep X-ray therapy)",
+          "definition_ar": "العلاج بالأشعة السينية العميقة بهدف تصغير حجم الهايمانجيوما الكبيرة العرضية؛ أحد خيارات العلاج الجدلية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_Liver_L3_c02",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Benign Liver Tumours II: Hepatic Adenoma and Focal Nodular Hyperplasia",
+      "summary_ar": "الورم الغدي الكبدي آفة ما قبل خبيثة تصيب النساء على حبوب منع الحمل وتنشأ في كبد طبيعي؛ يظهر ككتلة صلبة محددة جيداً يصعب شعاعياً تمييزها عن الخباثة، ويكشف التصوير الوعائي توعياً شريانياً محيطياً جيد التطور، وعلاجه المختار استئصال الفص أو القطعة. أما فرط التنسج العقدي البؤلي فيفرط نمو لنسيج كبدي عامل بسدى ليفي (خلايا كبدية وخلايا كوبفر) في امرأة متوسطة العمر دون ارتباط بمرض كبدي، وعلامته ندبة مركزية مع توعي جيد، ويكون موجباً في مسح الكبريت الغروي، وعلاجه الاستئصال القطعي.",
+      "sections": [
+        {
+          "heading": "Hepatic Adenoma - Pathology and Risk Group",
+          "body_text": "Hepatic adenoma is the second benign entity in the lecture's classification and the most important one clinically, because it is **premalignant**. Its three defining features: - It occurs mostly in **women taking contraceptive pills** (the classic hormone-associated liver tumour). - It **develops in otherwise normal liver tissue** - unlike HCC, which arises on a background of chronic liver disease and cirrhosis, and unlike FNH, which is a hyperplastic overgrowth. - Because it is **premalignant**, it is not simply observed: the risk of malignant transformation is the very reason it is resected. This triplet (premalignant + contraceptive pills + normal liver) is a classic spot-diagnosis in examinations and appears verbatim in the lecture's cross-matching training exercise as descriptor C: 'Premalignant lesion mostly in women with contraceptive pills'.",
+          "key_points": [
+            "Premalignant benign liver tumour.",
+            "Mostly women taking contraceptive pills.",
+            "Develops in otherwise normal liver tissue."
+          ]
+        },
+        {
+          "heading": "Hepatic Adenoma - Diagnosis and Treatment",
+          "body_text": "**Diagnosis:** **U/S and CT show well circumscribed solid tumours**. Unfortunately, adenoma is **difficult to differentiate from malignant tumours radiologically** on routine U/S and CT - a solid, well-defined mass in a woman on the pill must therefore be treated with suspicion. This is why the lecture adds **angiography**, which demonstrates **well developed peripheral arterialisation of the tumour** - its rich feeding arterial supply at the periphery. The imaging message: a well-circumscribed solid mass in the correct clinical setting (woman, contraceptive pills, otherwise normal liver) is adenoma until proven otherwise, and angiography characterises its arterialised periphery. **Treatment: lobe or segmental resection is the treatment of choice** - precisely because the lesion is **premalignant**. Contrast this with haemangioma (no treatment if small and asymptomatic) and with FNH (resection for symptoms or diagnostic doubt, not for premalignancy).",
+          "key_points": [
+            "U/S and CT: well circumscribed solid tumours - difficult to differentiate from malignant tumours radiologically.",
+            "Angiography: well developed peripheral arterialisation of the tumour.",
+            "Rx: lobe or segmental resection - the treatment of choice, because it is premalignant."
+          ]
+        },
+        {
+          "heading": "Focal Nodular Hyperplasia (FNH) - Pathology and Risk Group",
+          "body_text": "FNH (focal nodular hyperplasia) is the third benign entity. Its nature is hyperplastic rather than truly neoplastic: it is a **focal overgrowth of functioning liver tissue supported by fibrous tissue stroma**, and it contains both **hepatocytes and Kupffer cells** - this composition is the key to its diagnosis on the sulphur colloid scan (next section) and appears in the cross-matching exercise as descriptor D: 'kupffer cells'. Demographics: it affects the **middle-age female** population, and - critically - it has **no association with underlying liver disease** (the liver around it is normal). Its **aetiology is unusual and unknown**. FNH is not a premalignant lesion; the reasons it may be resected are size, symptoms or diagnostic doubt, not malignant potential - another contrast with hepatic adenoma.",
+          "key_points": [
+            "Focal overgrowth of functioning liver tissue supported by fibrous stroma (hepatocytes and Kupffer cells).",
+            "Middle-age female; NO association with underlying liver disease.",
+            "Unusual and unknown aetiology; not premalignant."
+          ]
+        },
+        {
+          "heading": "FNH - Diagnosis (U/S, CT, Sulphur Colloid Scan) and Treatment",
+          "body_text": "**Dx-U/S: solid tumour** on ultrasound. **CT** demonstrates a **central scarring and well-vascularised lesion** - a pattern the lecture explicitly calls **not specific** (the lecture's dedicated CT slide of FNH is captioned 'CT scan Finding of Focal Nodular Hyperplasia (FNH): Central Scaring and well-vascularised Lesion'). The decisive discriminator is the **sulphur colloid liver scan**: **FNH is positive**, because its functioning **Kupffer cells** take up the colloid, **but hepatic adenoma and primary or metastatic tumours are negative**, because they contain **decreased Kupffer cells**. This single nuclear medicine test therefore separates FNH (Kupffer-cell-containing hyperplasia) from hepatic adenoma and from all malignant focal liver lesions, and it appears as descriptors D and E of the cross-matching exercise ('kupffer cells'; 'Sulphur colloid liver scan'). **Treatment: surgery - segmental resection.**",
+          "key_points": [
+            "U/S: solid tumour.",
+            "CT: central scarring with a well-vascularised lesion (not specific).",
+            "Sulphur colloid liver scan: FNH positive (Kupffer cells); adenoma and primary or metastatic tumours negative (decreased Kupffer cells).",
+            "Rx: surgery - segmental resection."
+          ],
+          "check": {
+            "prompt": "A middle-aged woman has a solid liver mass with central scarring on CT. Which investigation separates FNH from hepatic adenoma and malignant tumours?",
+            "options": [
+              "Sulphur colloid liver scan - FNH is positive because it contains Kupffer cells",
+              "Percutaneous biopsy under ultrasound guidance",
+              "Alpha fetoprotein measurement",
+              "Selective hepatic angiography alone",
+              "Triphasic CT with washout analysis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مسح الكبد بالمادة الغروية الكبريتية يفرّق بدقة: فرط التنسج العقدي البؤري موجب لأنه يحتوي خلايا كوبفر عاملة تلتقط المادة، بينما الورم الغدي والأورام الخبيثة الأولية والنقائل سالبة لنقص خلايا كوبفر فيها."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hepatic adenoma",
+          "definition_ar": "ورم غدي كبدي حميد لكنه ما قبل خبيث، يصيب النساء المستخدمات لحبوب منع الحمل وينشأ في نسيج كبدي طبيعي، وعلاجه الاستئصال."
+        },
+        {
+          "term": "Premalignant lesion",
+          "definition_ar": "آفة حميدة قابلة للتحول الخبيث؛ الورم الغدي الكبدي هو الآفة الحميدة ما قبل الخباثة في هذا التصنيف، ولذلك يُستأصل."
+        },
+        {
+          "term": "Contraceptive pills",
+          "definition_ar": "حبوب منع الحمل: عامل الارتباط الكلاسيكي بالورم الغدي الكبدي (آفة كبدية مرتبطة بالهرمونات)."
+        },
+        {
+          "term": "Peripheral arterialisation",
+          "definition_ar": "العلامة الوعائية للورم الغدي الكبدي على التصوير الوعائي: توعّي شرياني محيطي جيد التطور يغذي الورم."
+        },
+        {
+          "term": "Focal nodular hyperplasia (FNH)",
+          "definition_ar": "فرط تنسج عقدي بؤري: فرط نمو موضعي لنسيج كبدي عامل مدعوم بسدى ليفي يحوي خلايا كبدية وخلايا كوبفر، في امرأة متوسطة العمر دون ارتباط بمرض كبدي."
+        },
+        {
+          "term": "Kupffer cells",
+          "definition_ar": "خلايا كوبفر: البلاعم الكبدية الحاجزة؛ وجودها العاملة داخل فرط التنسج العقدي البؤري هو سبب موجبية مسح الكبريت الغروي."
+        },
+        {
+          "term": "Sulphur colloid liver scan",
+          "definition_ar": "مسح الكبد بالمادة الغروية الكبريتية: موجب في فرط التنسج العقدي البؤري (خلايا كوبفر عاملة) وسالب في الورم الغدي والأورام الخبيثة الأولية والنقائل (نقص خلايا كوبفر)."
+        },
+        {
+          "term": "Central scarring",
+          "definition_ar": "التندب المركزي: علامة التصوير المقطعي لفرط التنسج العقدي البؤلي مع آفة شديدة التوعية، وهي غير نوعية بحد ذاتها."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_Liver_L3_c03",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Hepatocellular Carcinoma (HCC)",
+      "summary_ar": "سرطان الخلايا الكبدية من أشيع الأورام في العالم، يمثل 80% من خباثات الكبد الأولية وينشأ 80% منه في كبد مشمّع، مع غلبة الذكور 8:1 في العقدين الثالث والرابع، ويرتبط بالالتهاب الكبدي B وC المزمن فيُمسح هؤلاء بالموجات فوق الصوتية وAFP. صورتُه السريرية أعراض مرض كبدي مزمن (تعب، يرقان، حبن، فرط ضغط بابي) مع أعراض ورم (كتلة، فقد وزن، فقد شهية)، وتشخيصه بالموجات والتصوير المقطعي ثلاثي الأطوار (تعزيز شرياني مبكر جداً ثم غسل في الطور البابي) والخزعة، وعلاجه الاستئصال الجراحي أو زراعة الكبد.",
+      "sections": [
+        {
+          "heading": "Epidemiology, Risk Factors and Screening",
+          "body_text": "HCC is **one of the commonest tumours in the world** (the lecture wording is 'specially UK', as written). Its central epidemiological relationship is with **chronic liver disease - HBV and HCV**; this association is the basis of **screening by U/S and AFP** in patients with chronic viral hepatitis and cirrhosis. The demographic and quantitative facts that must be memorised: - **Middle age: 3rd - 4th decades.** - **Male : female ratio 8:1.** - HCC constitutes **80% of primary liver malignancy**, and **80% of HCC occur in a cirrhotic liver** (the double-80 rule). - The tumour **may be multicentric** (more than one tumour focus arising simultaneously in the cirrhotic liver). - **Alpha fetoprotein is raised** - it is the tumor marker of HCC (cross-matching descriptors: 'Hepatitis B or C or L. cirrhosis' and 'Alpha fetoprotein as tumor marker'). These numbers explain why any cirrhotic patient who deteriorates is investigated for HCC, and why surveillance programmes target exactly this population.",
+          "key_points": [
+            "One of the commonest tumours in the world (lecture wording: 'specially UK').",
+            "Association with chronic liver disease HBV and HCV - screening by U/S and AFP.",
+            "Middle age 3rd-4th decades; M:F = 8:1.",
+            "80% of primary liver malignancy; 80% of HCC occur in cirrhotic liver.",
+            "May be multicentric; alpha fetoprotein raised."
+          ],
+          "check": {
+            "prompt": "What percentage of primary liver malignancies does HCC represent, and in what proportion does it arise in a cirrhotic liver?",
+            "options": [
+              "50% of primaries; 50% in cirrhotic liver",
+              "80% of primaries; 80% in cirrhotic liver",
+              "30% of primaries; 70% in cirrhotic liver",
+              "80% of primaries; 35% in cirrhotic liver",
+              "95% of primaries; 5% in cirrhotic liver"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "قاعدة الثمانينات: يشكل سرطان الخلايا الكبدية 80% من خباثات الكبد الأولية، وينشأ 80% منه في كبد مشمّع؛ مع غلبة الذكور على الإناث 8:1 وعمر متوسط في العقدين الثالث والرابع."
+          }
+        },
+        {
+          "heading": "Clinical Features - the Double Syndrome",
+          "body_text": "The clinical picture of HCC is a **double syndrome**: the symptoms and signs of **chronic liver disease (CLD)** plus the symptoms and signs of **cancer**. **Symptoms and signs of CLD:** - **Malaise and weakness** - **Jaundice** - **Ascites** - **Portal hypertension** (with its consequences - splenomegaly and varices). **Symptoms and signs of cancer:** - **Mass** (a hard upper-abdominal hepatic lump) - **Weight loss** - **Anorexia**. The practical corollary: in a patient known to have chronic viral liver disease or cirrhosis, new malaise, jaundice, ascites, portal hypertension, a palpable mass, weight loss or anorexia must trigger HCC screening with **U/S and AFP**, because 80% of these tumours arise on exactly this background and they may be multicentric.",
+          "key_points": [
+            "S&S of CLD: malaise and weakness, jaundice, ascites, portal hypertension.",
+            "S&S of cancer: mass, weight loss, anorexia.",
+            "Deterioration of a cirrhotic patient = screen for HCC (U/S + AFP)."
+          ]
+        },
+        {
+          "heading": "Diagnosis of HCC",
+          "body_text": "**Diagnosis: U/S, CT and biopsy.** Ultrasound is the screening and first-line imaging tool (paired with serum alpha fetoprotein, which is raised in HCC and serves as its tumor marker). **CT must be performed as a triphasic contrast study** to characterise the lesion's hypervascular behaviour (arterial-phase perfusion with portal-phase washout - detailed in the next section). **Biopsy** provides the histological diagnosis when imaging and marker features are not conclusive. The lecture's imaging gallery of a hypervascular focal liver lesion demonstrates exactly why multiphase studies are essential: vivid arterial-phase enhancement is the critical diagnostic feature separating hypervascular tumours (HCC, hypervascular metastasis) from the background liver, and the pattern differs from the slow centripetal fill-in of haemangioma.",
+          "key_points": [
+            "Dx: U/S, CT (triphasic), biopsy.",
+            "Alpha fetoprotein: the tumor marker, raised in HCC.",
+            "Screening of HBV/HCV chronic liver disease: U/S + AFP."
+          ]
+        },
+        {
+          "heading": "CT Findings in HCC - the Triphasic Pattern",
+          "body_text": "The lecture lists the CT findings of HCC explicitly: - **Single or multiple masses that are hypodense to normal liver** on the unenhanced study. - **Calcification may be seen** within the tumour. - **Possibly signs of liver cirrhosis** (nodular liver contour) and **possibly splenomegaly** (portal hypertension). - **After contrast injection the study should be a triphasic study**, and then: - **Arterial phase: very early arterial perfusion** - the lesion enhances vividly and earlier than the rest of the liver (cross-matching descriptor I: 'Very early arterial perfusion with rapid contrast washout'). - **Portal phase: contrast washout** - the lesion loses its contrast and drops back to hypodense relative to the enhancing liver. This early-enhancement-then-washout behaviour is the radiological mirror image of haemangioma (peripheral nodular enhancement then centripetal delayed fill-in), and it is the pattern the student must recognise instantly on a triphasic CT of a liver mass.",
+          "key_points": [
+            "Single or multiple hypodense masses; calcification may be seen.",
+            "Possibly signs of cirrhosis + possibly splenomegaly.",
+            "After contrast injection: triphasic study.",
+            "Arterial phase: very early arterial perfusion; portal phase: contrast washout."
+          ],
+          "check": {
+            "prompt": "On triphasic contrast CT, a liver mass shows very early arterial perfusion followed by contrast washout in the portal phase. What is the diagnosis?",
+            "options": [
+              "Haemangioma",
+              "Hepatocellular carcinoma",
+              "Focal nodular hyperplasia",
+              "Hepatic adenoma",
+              "Hypovascular colorectal metastasis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التعزيز الشرياني المبكر جداً مع الغسل في الطور البابي هو نمط سرطان الخلايا الكبدية في التصوير ثلاثي الأطوار؛ بينما الهايمانجيوما تظهر تعزيزاً محيطياً عقدياً ثم امتلاءً مركزياً متأخراً، والنقائل القولونية عادة قليلة التوعية."
+          }
+        },
+        {
+          "heading": "Treatment of HCC",
+          "body_text": "**1. Surgical resection - lobe or segment/s.** Resection is the primary curative option for a localised tumour in a patient whose liver function and residual parenchyma permit it; the extent of resection (anatomical lobe, or one or more segments) follows the **size and site** of the tumour. **2. Liver transplantation.** Transplantation is the alternative when resection is impossible or the underlying cirrhosis is too advanced; the lecture notes that it depends on **size, site and availability of donors** - the tumour's size and site determine whether it falls within transplant criteria, and donor availability determines access to the operation. Both strategies must be weighed against the fact that **80% of HCC arise in a cirrhotic liver**, so the state of the background liver (not only the tumour) drives the resection-versus-transplant decision. (Non-surgical options such as ablation or chemoembolisation are outside this lecture's scope.)",
+          "key_points": [
+            "Rx 1: surgical resection - lobe or segment/s.",
+            "Rx 2: liver transplantation - depends on size, site and availability of donors.",
+            "The cirrhotic background drives the resection-versus-transplant decision."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hepatocellular carcinoma (HCC)",
+          "definition_ar": "سرطان الخلايا الكبدية: أشيع خباثة كبدية أولية (80%)، يرتبط بالتشمع والالتهاب الكبدي B وC، وذكوره يفوق إناثه 8:1."
+        },
+        {
+          "term": "Alpha fetoprotein (AFP)",
+          "definition_ar": "البروتين الجنيني ألفا: واسم الورم لسرطان الخلايا الكبدية، يرتفع في مصله ويُستخدم مع الموجات فوق الصوتية لمسح المشمّعين."
+        },
+        {
+          "term": "Multicentric tumour",
+          "definition_ar": "ورم متعدد البؤر: نشوء أكثر من بؤرة ورمية في آن واحد داخل الكبد المشمّع، وهو ما قد يحدث في سرطان الخلايا الكبدية."
+        },
+        {
+          "term": "Triphasic CT study",
+          "definition_ar": "دراسة ثلاثية الأطوار بالتصوير المقطعي بعد حقن المادة الظليلة: طور شرياني ثم طور بابي ثم طور متأخر، وهي الطريقة المطلوبة لتقييم آفات الكبد."
+        },
+        {
+          "term": "Contrast washout",
+          "definition_ar": "غسل المادة الظليلة: فقدان الآفة تعزيزها في الطور البابي بعد تعزيزها الشرياني المبكر؛ علامة سرطان الخلايا الكبدية."
+        },
+        {
+          "term": "Cirrhotic liver",
+          "definition_ar": "الكبد المشمّع: الأرضية التي ينشأ عليها 80% من سرطانات الخلايا الكبدية، ويُرى على التصوير المقطعي بمحيط عقيدي مع ضخامة طحال محتملة."
+        },
+        {
+          "term": "Portal hypertension",
+          "definition_ar": "فرط الضغط البابي: من علامات أمراض الكبد المزمنة المصاحبة لسرطان الخلايا الكبدية (ضخامة الطحال والدوالي والحبن)."
+        },
+        {
+          "term": "Screening (U/S + AFP)",
+          "definition_ar": "المسح الدوري لحاملي الالتهاب الكبدي B وC والمشمّعين بالموجات فوق الصوتية وقياس البروتين الجنيني ألفا لالتقاط سرطان الخلايا الكبدية مبكراً."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_Liver_L3_c04",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Cholangiocarcinoma and Primary Sclerosing Cholangitis",
+      "summary_ar": "الورم الغدي الصفراوي خباثة أولية تصيب المسنين ومرضى التصلب الصفراوي الأولي؛ تنشأ كآفة ليفية تُضيّق ملتقى القنوات الكبدية اليمنى واليسرى فتسبب يرقاناً انسدادياً بلا ألم، بينما النمط البعيد عقدي الشكل يسد لمعة القناة. صورته: يرقان انسدادي غير مؤلم مع كبد متضخم مؤلم وفقد وزن وحمى وهزال. تشخيصه بالموجات (اتساع القنوات داخل الكبد فقط)، والكولانجيوغرافيا (MRCP)، وخزعة الفرشاة عبر ERCP (2/3)، والتصوير المقطعي والوعائي؛ وعلاجه PTC عند فشل ERCP لتصريف الصفراء ثم الاستئصال مع الكيماوي والأشعة، وإنذاره سيئ جداً. ويُختم المفهوم بالتصلب الصفراوي الأولي: مرض شبابي يضيّق ويطمس القنوات داخل وخارج الكبد ويرتبط بالتهاب القولون التقرحي، وزراعة الكبد علاجه المفيد الوحيد.",
+      "sections": [
+        {
+          "heading": "Pathology, Sites and Risk Groups",
+          "body_text": "Cholangiocarcinoma is the second primary malignant liver tumour. **Risk groups:** - **Elderly age.** - **Patients with PSC (primary sclerosing cholangitis).** Morphology and sites: these are **fibrotic tumours** that produce a **stricture - often fibrous - at the confluence of the right and left hepatic ducts**, which obstructs biliary outflow and produces **jaundice**. The **distal bile duct cholangiocarcinoma** grows as a **polypoid** lesion that **obstructs the lumen of the bile duct** from within. Hilar cholangiocarcinoma is classically staged by the **Bismuth classification** (cross-matching descriptor L: 'Bismuth classification'), which grades the tumour by its extent along the ducts: **Bismuth I** - tumour below the confluence; **Bismuth II** - tumour reaching the confluence; **Bismuth IIIa / IIIb** - extension into the right / left secondary ducts; **Bismuth IV** - involvement of both sides or beyond the secondary ducts (this standard expansion is added for completeness - the lecture lists the classification by name only).",
+          "key_points": [
+            "Elderly age; patients with PSC.",
+            "Fibrotic tumours - fibrous stricture at the confluence of R and L hepatic ducts - jaundice.",
+            "Distal bile duct CC: polypoid lesion obstructing the lumen of the bile duct.",
+            "Hilar CC is staged by the Bismuth classification (I-IV)."
+          ]
+        },
+        {
+          "heading": "Clinical Features",
+          "body_text": "The clinical picture of cholangiocarcinoma is that of **painless obstructive jaundice** in an elderly patient, with constitutional features: - **Painless obstructive jaundice.** - **Enlarged tender liver** (hepatomegaly that is tender on palpation). - **Weight loss.** - **Fever.** - **Asthenia** (weakness and loss of vigour). The combination of painless jaundice with tender hepatomegaly, weight loss, fever and asthenia in the elderly must always raise cholangiocarcinoma (together with other periampullary and pancreatic malignancies); the distinguishing ultrasonic clue is given in the next section - **dilated intrahepatic but NOT extrahepatic ducts** for the hilar variant, because the obstruction sits at the confluence, above the extrahepatic ducts.",
+          "key_points": [
+            "Painless obstructive jaundice.",
+            "Enlarged tender liver.",
+            "Weight loss, fever, asthenia."
+          ]
+        },
+        {
+          "heading": "Diagnosis",
+          "body_text": "The diagnostic ladder of cholangiocarcinoma, exactly as the lecture lists it: - **U/S: dilated intrahepatic but NOT extrahepatic bile ducts** - the hallmark of a hilar stricture at the confluence of the right and left hepatic ducts (cross-matching descriptor J: 'Elderly with dilated intrahepatic but not extra-hepatic biliary ducts in U/S'). - **Cholangiography (e.g. MRCP): hilar stricture** - direct demonstration of the fibrous narrowing at the confluence. - **Brush cytology (using ERCP): tissue diagnosis in 2/3 of cases.** - **CT: mass - if there is infiltration of the liver parenchyma.** - **Angiography: local spread to PV (portal vein) or HA (hepatic artery)** - defining vascular involvement, which determines resectability. Note that the tumour's own contrast behaviour is far less specific than in HCC; it is the duct pattern (intrahepatic dilatation with a hilar stricture) plus tissue from brush cytology that carry the diagnosis.",
+          "key_points": [
+            "U/S: dilated intrahepatic but NOT extrahepatic bile ducts.",
+            "Cholangiography (MRCP): hilar stricture.",
+            "Brush cytology using ERCP: tissue diagnosis in 2/3 of cases.",
+            "CT: mass if infiltration of liver parenchyma.",
+            "Angiography: local spread to portal vein or hepatic artery."
+          ],
+          "check": {
+            "prompt": "An elderly man with painless jaundice has U/S showing dilated intrahepatic ducts but a normal-calibre extrahepatic duct. Where is the obstruction?",
+            "options": [
+              "Ampulla of Vater",
+              "Head of the pancreas",
+              "Confluence of the right and left hepatic ducts (hilar cholangiocarcinoma)",
+              "Distal common bile duct stone",
+              "Neck of the gallbladder"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "اتساع القنوات الصفراوية داخل الكبد مع بقاء القنوات خارج الكبد بقياس طبيعي يدل على انسداد عند ملتقى القنوات الكبدية اليمنى واليسرى، أي ورم غدي صفراوي حارقي ليفي في منطقة الباب؛ أما أورام رأس البنكرياس والحليمة فتوسّع القنوات خارج الكبد أيضاً."
+          }
+        },
+        {
+          "heading": "Treatment and Prognosis",
+          "body_text": "**Treatment of cholangiocarcinoma:** - **PTC (percutaneous trans-hepatic cholangiography) in case of failure of ERCP** - used **as a therapeutic procedure for bile drainage, thus decreasing jaundice** (it drains the obstructed biliary system through the liver when endoscopic access fails, buying time and improving the patient before any definitive therapy). - **Surgical resection, combined with chemotherapy and radiotherapy.** Where the Bismuth type and the vascular status (angiography: no spread to portal vein or hepatic artery) allow, resection plus adjuvant chemo-radiotherapy is the definitive strategy. **Prognosis: very poor.** Most tumours are advanced at presentation, and even resected disease carries a bleak outlook - this blunt prognostic statement is one of the lecture's key exam facts.",
+          "key_points": [
+            "PTC if ERCP fails - therapeutic bile drainage, decreasing jaundice.",
+            "Surgical resection + chemotherapy and radiotherapy.",
+            "Prognosis: very poor."
+          ]
+        },
+        {
+          "heading": "Primary Sclerosing Cholangitis (PSC) - the Predisposing Disease",
+          "body_text": "The lecture closes with a slide summarising PSC, the benign biliary disease that predisposes to cholangiocarcinoma: - **Young adults.** - **Progressive fibrous stricture and obliteration of both intra- and extra-hepatic bile ducts.** - **Etiology: unknown but genetic**, and it is **likely attributed to its association with ulcerative colitis**. - **Diagnosis: 1. Cholangiography (MRCP or ERCP) - irregular narrowing of the bile ducts; if equivocal, then 2. liver biopsy - fibrous obliteration of the biliary tracts.** - **Outcome: obstruction leading to jaundice; liver failure; cholangiocarcinoma - diagnosed by biliary brush cytology by ERCP.** - **Treatment: follow-up and monitoring; biliary stenting by ERCP for temporary relief of obstructive jaundice; liver transplantation - the only useful treatment modality.** This slide ties the whole lecture together: PSC links biliary stricture disease, cholangiocarcinoma (its feared complication) and liver transplantation (its only curative option), and it also appears among the risk settings for post-transplant hepatic artery thrombosis.",
+          "key_points": [
+            "PSC: young adults; progressive fibrous stricture and obliteration of both intra- and extra-hepatic bile ducts.",
+            "Etiology unknown but genetic; associated with ulcerative colitis.",
+            "Dx: cholangiography (MRCP or ERCP) - irregular narrowing of the ducts; if equivocal, liver biopsy (fibrous obliteration of biliary tracts).",
+            "Outcome: obstruction and jaundice, liver failure, cholangiocarcinoma (brush cytology by ERCP).",
+            "Rx: follow-up and monitoring; ERCP stenting (temporary relief); liver transplantation - the only useful treatment modality."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cholangiocarcinoma",
+          "definition_ar": "الورم الغدي الصفراوي: خباثة أولية تنشأ من القنوات الصفراوية، تصيب المسنين ومرضى التصلب الصفراوي الأولي، وإنذاره سيئ جداً."
+        },
+        {
+          "term": "Hilar stricture",
+          "definition_ar": "تضيق منطقة الباب: الآفة الليفية عند ملتقى القنوات الكبدية اليمنى واليسرى المسببة لليرقان مع اتساع القنوات داخل الكبد فقط."
+        },
+        {
+          "term": "Bismuth classification",
+          "definition_ar": "تصنيف بيسموث للأورام الغدية الصفراوية البابية حسب امتدادها: I تحت الملتقى، II يصل الملتقى، IIIa/IIIb يمتد للقنوات الثانوية اليمنى/اليسرى، IV الجانبان معاً."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير القنوات الصفراوية والبنكرياسية بالرنين المغناطيسي: وسيلة الكولانجيوغرافيا التي تُظهر تضيق الباب في الورم الغدي الصفراوي."
+        },
+        {
+          "term": "Brush cytology (ERCP)",
+          "definition_ar": "خزعة الفرشاة عبر ERCP: وسيلة التشخيص النسيجي للورم الغدي الصفراوي، وتنجح في نحو ثلثي الحالات (2/3)."
+        },
+        {
+          "term": "PTC",
+          "definition_ar": "تصوير القنوات الصفراوية عبر الكبد عبر الجلد: إجراء تشخيصي وعلاجي لتصريف الصفراء وتخفيف اليرقان عند فشل ERCP."
+        },
+        {
+          "term": "Asthenia",
+          "definition_ar": "الهزال: الضعف العام وفقدان النشاط، من أعراض الورم الغدي الصفراوي إلى جانب فقد الوزن والحمى."
+        },
+        {
+          "term": "Primary sclerosing cholangitis (PSC)",
+          "definition_ar": "التصلب الصفراوي الأولي: تضيق وانسداد ليفي تدريجي للقنوات داخل الكبد وخارجه في الشباب، مرتبط بالتهاب القولون التقرحي، وزراعة الكبد علاجه المفيد الوحيد."
+        },
+        {
+          "term": "Ulcerative colitis",
+          "definition_ar": "التهاب القولون التقرحي: المرض المعوي المرتبط بالتصلب الصفراوي الأولي والذي يرفع خطر حدوث الورم الغدي الصفراوي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_Liver_L3_c05",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Secondary Liver Tumours (Hepatic Deposits)",
+      "summary_ar": "النقائل الكبدية أشد شيوعاً بكثير من الأورام الأولية وغالباً متعددة؛ الكبد ثاني أشيع موضع للنقائل بعد العقد اللمفية، و30-70% من مرضى السرطان المتوفين لديهم نقائل كبدية. مصادرها داخل البطن (القولون والمستقيم، البنكرياس، الرحم والمبيضان) وخارج البطن (الميلانوما، الكارسينويد، الثدي والساركوما). يُشخَّص الورم الكبدي بالطرق المعتادة ثم يُبحث عن الأولي بالفحص السريري وتصوير الصدر ومسح العظم والقولونوسكوبيا وPET. العلاج جراحي إن أمكن (البقاء لخمس سنوات 35% بعد استئصال نقيلة قولونية مفردة)، وإلا كيماوي جهازي بـ 5-FU مع حمض الفولينيك.",
+      "sections": [
+        {
+          "heading": "Frequency, Sources and Epidemiology",
+          "body_text": "**Secondary liver tumours (hepatic deposits) are much more common than primary tumours**, and they are **multiple usually** (in the majority of patients the deposits are numerous and often affect both lobes). Their sources are listed by compartment: **Intra-abdominal sources:** - **GIT (colorectal)** - the single most important source (cross-matching descriptor K: 'Colorectal tumors') - **Pancreas** - **Uterus and ovaries**. **Extra-abdominal sources:** - **Melanoma** - **Carcinoid tumours** - **Breast** - **Sarcoma**. Two epidemiological anchors from the lecture: - **The liver is the 2nd most common site for deposits after nodes.** - **30% - 70% of patients who die of cancer have liver deposits.** These figures explain why every cancer staging work-up scrutinises the liver, and why a focal liver lesion in a patient with known or suspected cancer is a deposit until proven otherwise.",
+          "key_points": [
+            "Much more common than primary tumours; multiple usually.",
+            "Intra-abdominal sources: GIT (colorectal), pancreas, uterus and ovaries.",
+            "Extra-abdominal sources: melanoma, carcinoid tumours, breast and sarcoma.",
+            "Liver = 2nd most common site for deposits after nodes.",
+            "30-70% of patients who die of cancer have liver deposits."
+          ]
+        },
+        {
+          "heading": "Diagnosis - the Two Parallel Tracks",
+          "body_text": "Diagnosis runs on two parallel tracks: **1. Diagnosis of the liver tumours, as described before: U/S, CT, etc.** - the same imaging pathway used for primary lesions (ultrasound first, multiphase contrast CT for characterisation, with tissue when needed). **2. Diagnosis of the primary:** - **Clinical examination** - **Chest CT** - **Bone scan** - **Colonoscopy** - **PET scan (positron emission tomography)** - etc. The logic: a patient presenting with hepatic deposits needs a systematic hunt for the primary tumour using clinical examination and the organ-directed panel (chest CT, bone scan, colonoscopy, PET scan), whereas a patient with an already-known cancer needs liver imaging to complete staging. Both tracks must be complete before any treatment decision, because resectability of a deposit means nothing if an uncontrolled primary or extrahepatic disease is missed.",
+          "key_points": [
+            "Track 1: diagnose the liver tumours - U/S, CT, etc., as described for primary tumours.",
+            "Track 2: diagnose the primary - clinical exam, chest CT, bone scan, colonoscopy, PET scan.",
+            "Complete both tracks before deciding on resection."
+          ]
+        },
+        {
+          "heading": "Treatment and Prognosis",
+          "body_text": "**1. Surgical resection.** Resectable disease - classically a **solitary colorectal metastasis** - is treated by hepatic resection. **2. If not resectable - systemic chemotherapy: 5-FU (5-fluorouracil) and folinic acid.** **Prognosis: the 5-year survival rate after resection of a solitary colorectal metastasis is 35%.** This figure - one of the most quoted numbers in hepatic surgical oncology - is the justification for aggressive surgical treatment of limited metastatic disease: no other treatment for hepatic deposits approaches it, and it is why the answer to 'a solitary colorectal deposit, otherwise disease-free' is resection, not chemotherapy. For unresectable (multiple, bilobar or extrahepatic) disease, 5-FU with folinic acid remains the systemic backbone and is palliative rather than curative.",
+          "key_points": [
+            "Rx 1: surgical resection.",
+            "Rx 2: if not resectable - systemic chemo (5-FU and folinic acid).",
+            "5-year survival after resection of a solitary colorectal metastasis = 35%."
+          ],
+          "check": {
+            "prompt": "A 62-year-old man is found to have a solitary liver deposit on follow-up after colorectal cancer resection, with no other disease. What 5-year survival can resection offer him?",
+            "options": [
+              "5%",
+              "35%",
+              "60%",
+              "80%",
+              "95%"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "البقاء لخمس سنوات بعد استئصال نقيلة كبدية مفردة من سرطان القولون والمستقيم يبلغ 35%، وهي أفضل نتيجة لأي معالجة للنقائل الكبدية وتبرر الجراحة للمرضى المنتقين؛ أما غير القابل للاستئصال فيعالج جهازياً بـ 5-FU مع حمض الفولينيك."
+          }
+        },
+        {
+          "heading": "Hypervascular versus Hypovascular Metastasis",
+          "body_text": "The lecture contrasts the two imaging behaviours of hepatic deposits: **Hypervascular metastasis** - deposits with heavy arterial inflow that **enhance vividly in the arterial phase** of contrast studies; classically melanoma, carcinoid and neuroendocrine-type deposits (the lecture's triphasic CT annotation makes the same point - vivid arterial-phase enhancement can indicate a hypervascular metastasis just as it can HCC). **Hypovascular metastasis** - the common pattern of colorectal and most gastrointestinal deposits, which remain **hypodense relative to the enhancing liver** and are therefore **best seen on the portal venous phase**. The practical lesson: the phase in which a deposit is most conspicuous depends on its vascularity, so multiphase (triphasic) imaging is required for both detecting and characterising deposits - exactly as for primary liver tumours. (The classical tumour associations named above are standard-teaching expansion; the lecture itself states the two categories, hypervascular and hypovascular metastasis, by name.)",
+          "key_points": [
+            "Hypervascular metastasis: vivid arterial-phase enhancement (melanoma, carcinoid pattern).",
+            "Hypovascular metastasis: hypodense on portal venous phase (colorectal pattern).",
+            "Multiphase (triphasic) imaging is required to detect and characterise deposits."
+          ]
+        },
+        {
+          "heading": "Lecture Cross-Matching Exercise - the Six Liver Tumours and Their Identity Clues",
+          "body_text": "The lecture ends its tumour section with a 'Cross Matching for training' exercise: six entities must be matched with twelve descriptors (A-L). The complete exercise with answers: **1. Haemangioma:** A - 'peripheral nodular enhancement on arterial phase then centripetal enhancement (delayed or slow contrast enhancement)'; B - 'often small, multiple, asymptomatic and mostly no treatment is needed'. **2. FNH:** D - 'kupffer cells'; E - 'sulphur colloid liver scan'; F - 'central scarring and well-vascularised lesion'. **3. Hepatic adenoma:** C - 'premalignant lesion mostly in women with contraceptive pills'. **4. HCC:** G - 'hepatitis B or C or L. cirrhosis'; H - 'alpha fetoprotein as tumor marker'; I - 'very early arterial perfusion with rapid contrast washout in CT scan'. **5. Cholangiocarcinoma:** J - 'elderly with dilated intrahepatic but not extra-hepatic biliary ducts in U/S'; L - 'Bismuth classification'. **6. Liver secondaries:** K - 'colorectal tumors'. These twelve descriptor-answer pairs condense the content of the whole tumour section into the highest-yield revision grid of the lecture, and they have been converted into the flashcards and clinical-vignette MCQs of this study file.",
+          "key_points": [
+            "Haemangioma = A (peripheral nodular then centripetal enhancement) + B (small, multiple, asymptomatic, mostly no treatment).",
+            "FNH = D (kupffer cells) + E (sulphur colloid liver scan) + F (central scarring, well-vascularised).",
+            "Hepatic adenoma = C (premalignant, women on contraceptive pills).",
+            "HCC = G (hepatitis B or C or liver cirrhosis) + H (alpha fetoprotein) + I (early arterial perfusion with washout).",
+            "Cholangiocarcinoma = J (elderly, dilated intrahepatic but not extra-hepatic ducts) + L (Bismuth classification).",
+            "Liver secondaries = K (colorectal tumors)."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hepatic deposits (liver secondaries)",
+          "definition_ar": "الودائع النقيلية في الكبد: أورام كبدية ثانوية أشد شيوعاً من الأولية وغالباً متعددة؛ الكبد ثاني أشيع موضع للنقائل بعد العقد اللمفية."
+        },
+        {
+          "term": "Colorectal metastasis",
+          "definition_ar": "نقيلة من سرطان القولون والمستقيم: أشيع مصدر للنقائل الكبدية؛ استئصال النقيلة المفردة يمنح بقاء 35% لخمس سنوات."
+        },
+        {
+          "term": "PET scan",
+          "definition_ar": "التصوير بالإصدار البوزيتروني: من وسائل البحث عن الورم الأولي عند اكتشاف نقائل كبدية، إلى جانب الفحص السريري وتصوير الصدر ومسح العظم والقولونوسكوبيا."
+        },
+        {
+          "term": "5-FU (5-fluorouracil)",
+          "definition_ar": "فلورويوراسيل: العلاج الكيماوي الجهازي للنقائل الكبدية غير القابلة للاستئصال، يعطى مع حمض الفولينيك."
+        },
+        {
+          "term": "Folinic acid",
+          "definition_ar": "حمض الفولينيك: يعطى مع 5-FU لتعزيز فاعليته في معالجة النقائل الكبدية غير القابلة للجراحة."
+        },
+        {
+          "term": "Hypervascular metastasis",
+          "definition_ar": "نقيلة شديدة التوعية: تتعزز بوضوح في الطور الشرياني للتصوير المتعاقب، كنقائل الميلانوما والكارسينويد."
+        },
+        {
+          "term": "Hypovascular metastasis",
+          "definition_ar": "نقيلة قليلة التوعية: تبقى أقل كثافة من الكبد المتعزز وتُرى أفضل ما يمكن في الطور البابي، كالنقائل القولونية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_Liver_L3_c06",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Liver Transplantation",
+      "summary_ar": "بدأت زراعة الكبد مع Starzl عام 1963 في الولايات المتحدة وCalne عام 1968 في كامبريدج ببريطانيا، ولها أربع مجموعات استطباب: التشمع والقصور الكبدي المزمن، والفشل الكبدي الحاد الخاطف (فيروسي أو دوائي كفرط الباراسيتامول)، وأمراض الكبد الأيضية، والخباثة الكبدية الأولية. تقنياً تُجرى عبر جرح تحت الضلعي المزدوج وتُوصل الأوعية بترتيب ثابت (الأجوف فوق الكبد، الأجوف تحت الكبد، البابي، الشريان الكبدي، القناة الصفراوية)، ويُدار النزف الكبير واضطراب التخثر داخل العملية بالتقييم المتكرر وتصحيح عوامل التخثر موجَّهاً بتصوير التخثر الدوراني. المضاعفات التقنية: نزف (حزم 2-3 أيام)، ومضاعفات وعائية أهمها خثارة الشريان الكبدي (الدوبلر أو التصوير الوعائي، وإعادة الزراعة)، ومضاعفات صفراوية (تضيق وتسرب: توسيع ودعامات أو تصحيح جراحي). وأفضل النتائج في أمراض الكبد المزمنة.",
+      "sections": [
+        {
+          "heading": "History and the Four Indication Groups",
+          "body_text": "**History:** - **Starzl, 1963, USA.** - **Calne, 1968, Cambridge, UK.** **Indications - 4 groups:** **1. Cirrhosis and chronic liver failure**, examples: - Alcoholic liver disease - Viral liver disease (hepatitis B and C) - Non-alcoholic steatohepatitis (NASH) - Primary biliary cirrhosis - Biliary atresia in children (the classic paediatric indication). **2. Acute liver failure**, e.g. acute fulminant liver failure, **usually viral or drug induced (e.g. paracetamol overdose)**. **3. Metabolic liver diseases**, e.g.: - Wilson's disease - Oxalosis - Familial amyloid polyneuropathy. **4. Primary hepatic malignancy**, which is **more common when predisposed by liver cirrhosis, especially virally induced** - this is the same HCC population discussed in the HCC concept, where transplantation is one of the two treatments, depending on **size, site and availability of donors**.",
+          "key_points": [
+            "Starzl 1963 USA; Calne 1968 Cambridge UK.",
+            "Group 1: cirrhosis and chronic liver failure - alcoholic, viral HBV and C, NASH, primary biliary cirrhosis, biliary atresia in children.",
+            "Group 2: acute fulminant liver failure - usually viral or drug induced (paracetamol overdose).",
+            "Group 3: metabolic - Wilson's disease, oxalosis, familial amyloid polyneuropathy.",
+            "Group 4: primary hepatic malignancy, predisposed by cirrhosis especially virally induced."
+          ]
+        },
+        {
+          "heading": "Surgical Technique and Intraoperative Management",
+          "body_text": "**Technique (the lecture's Figure 81.28):** the incision used for liver transplantation is a **bilateral subcostal incision** (often called a **chevron or rooftop incision**); the two-part anatomical and surgical diagram labeled Figure 81.28 shows a schematic outline of the human torso/abdomen with a dashed line that indicates the surgical incision extending across the upper abdomen. After removal of the recipient liver, the graft is implanted (the implanted liver drawn as an orange organ with five numbered labels marking the connections), and the **anastomoses, in order of performance, are: (1) suprahepatic cava** (the top connection to the inferior vena cava); **(2) infrahepatic cava** (the bottom venous connection); **(3) portal vein** (the main venous inflow to the new liver); **(4) hepatic artery** (the arterial supply); **(5) bile duct** (the biliary drainage - the final ductal connection). **Intraoperative management** (the slide 'Thromboelastography in Theatre'): - **Management of intraoperative blood loss - it can be very considerable.** - **Management of perioperative coagulopathy: assessment repeatedly, and correction with appropriate clotting factors; many centres use thromboelastography in theatre** - the slide photograph of the medical equipment in the operating theatre setting shows the TEG analyzer, a point-of-care device that displays the efficiency of blood coagulation and allows rational, goal-directed correction of coagulopathy during the operation - that is, it is used intraoperatively to guide the management of coagulopathy and blood loss during complex surgeries such as liver transplantation. The slide text reads: 'Management of intraoperative blood loss (it can be very considerable); management of perioperative coagulopathy: assessment repeatedly and correction with appropriate clotting factors; many centres use rationale thromboelastography.'",
+          "key_points": [
+            "Incision: bilateral subcostal (chevron/rooftop).",
+            "Anastomoses in order: suprahepatic cava, infrahepatic cava, portal vein, hepatic artery, bile duct.",
+            "Intraoperative blood loss can be very considerable.",
+            "Perioperative coagulopathy: assess repeatedly, correct with appropriate clotting factors.",
+            "Many centres use thromboelastography (TEG) in theatre for goal-directed correction."
+          ],
+          "check": {
+            "prompt": "During liver graft implantation, which anastomosis is performed first, and which is last?",
+            "options": [
+              "Portal vein first; bile duct last",
+              "Suprahepatic cava first; bile duct last",
+              "Bile duct first; hepatic artery last",
+              "Hepatic artery first; portal vein last",
+              "Infrahepatic cava first; suprahepatic cava last"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ترتيب الوصلات في زراعة الكبد (الشكل 81.28): الوريد الأجوف فوق الكبدي أولاً، ثم تحت الكبدي، ثم الوريد البابي، ثم الشريان الكبدي، وأخيراً القناة الصفراوية."
+          }
+        },
+        {
+          "heading": "Technical Complications",
+          "body_text": "The three technical complications of liver transplantation: **1. Haemorrhage** - treated by **packing of the peritransplant area for 2-3 days**, **correction of coagulopathy**, and **possible evacuation** (reoperation to evacuate a haematoma when needed). **2. Vascular complications** - most commonly **hepatic artery thrombosis**, occurring **spontaneously or due to acute rejection**, especially in **the paediatric recipient** and in **primary sclerosing cholangitis**; **diagnosis: Doppler U/S or angiography; treatment: retransplantation.** **3. Biliary complications** - most commonly **biliary stenosis and biliary leak**; **treatment: endoscopic dilatation and stenting, or surgical correction.** These three categories (bleeding, arterial thrombosis, bile duct stenosis/leak) dominate the early postoperative course: a deteriorating transplant recipient must be evaluated for exactly this triad, with Doppler ultrasound as the immediate bedside vascular test.",
+          "key_points": [
+            "Haemorrhage: pack the peritransplant area 2-3 days, correct coagulopathy, possible evacuation.",
+            "Vascular: most commonly hepatic artery thrombosis - spontaneous or due to acute rejection (paediatric recipient, primary sclerosing cholangitis); Dx Doppler U/S or angiography; Rx retransplantation.",
+            "Biliary: most commonly stenosis and leak; Rx endoscopic dilatation and stenting or surgical correction."
+          ]
+        },
+        {
+          "heading": "Outcome After Liver Transplantation",
+          "body_text": "**Outcome depends on the underlying disease:** 1. **The best outcome is in chronic liver disease** - stable recipients with long-standing disease tolerate the operation best. 2. **In acute liver disease there is a higher mortality rate in the early post-transplantation period because of multiple organ failure** - the fulminant patient arrives physiologically deranged. 3. **Patients with liver tumour have a very good early outcome but ultimately fare much less well because of tumour malignancy** - recurrent malignancy erodes long-term survival despite an excellent perioperative course. 4. **Patients with hepatitis B or C may develop graft failure due to recurrent viral infection** of the graft. These outcome gradients underpin transplant selection: the cirrhotic chronic-failure patient gains most, the acute-failure patient is a rescue with higher early risk, and the malignancy patient trades an excellent early course for late tumour recurrence.",
+          "key_points": [
+            "Best outcome: chronic liver disease.",
+            "Acute liver disease: higher early mortality from multiple organ failure.",
+            "Liver tumour patients: very good early outcome but ultimately fare much less well (tumour malignancy).",
+            "Hepatitis B or C: graft failure from recurrent viral infection."
+          ],
+          "check": {
+            "prompt": "Which group of liver transplant recipients has the best outcome?",
+            "options": [
+              "Acute fulminant liver failure",
+              "Chronic liver disease",
+              "Primary hepatic malignancy",
+              "Hepatitis B with recurrent viral infection",
+              "Paracetamol overdose"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "أفضل النتائج بعد الزراعة في أمراض الكبد المزمنة؛ أما الفشل الكبدي الحاد فوفياته المبكرة أعلى بسبب فشل الأعضاء المتعدد، ومرضى الأورام الكبدية نتائجهم المبكرة جيدة جداً لكنهم يسوؤون لاحقاً بسبب خباثة الورم، وحاملو الالتهاب B أو C معرضون لفشل الطعم بعدوى فيروسية ناكسة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Liver transplantation",
+          "definition_ar": "زراعة الكبد: استبدال الكبد المريض بكبد سليم من متبرع؛ بدأها Starzl عام 1963 في الولايات المتحدة وCalne عام 1968 في كامبريدج ببريطانيا."
+        },
+        {
+          "term": "Biliary atresia",
+          "definition_ar": "رتق القنوات الصفراوية: استطباب زراعة الكبد عند الأطفال ضمن مجموعة التشمع والقصور الكبدي المزمن."
+        },
+        {
+          "term": "NASH (non-alcoholic steatohepatitis)",
+          "definition_ar": "التهاب الكبد الدهني غير الكحولي: من أسباب التشمع المزمن واستطبابات زراعة الكبد."
+        },
+        {
+          "term": "Acute fulminant liver failure",
+          "definition_ar": "الفشل الكبدي الخاطف الحاد: فيروسي أو دوائي (كفرط جرعة الباراسيتامول)، استطباب عاجل للزراعة مع وفيات مبكرة أعلى بسبب فشل الأعضاء المتعدد."
+        },
+        {
+          "term": "Wilson's disease",
+          "definition_ar": "داء ويلسون: اضطراب أيضي نحاسي من أمراض الكبد الأيضية التي تُعالج بزراعة الكبد."
+        },
+        {
+          "term": "Oxalosis",
+          "definition_ar": "الأكسالوز: مرض أيضي (فرط الأوكسالات) من استطبابات زراعة الكبد في المجموعة الأيضية."
+        },
+        {
+          "term": "Familial amyloid polyneuropathy",
+          "definition_ar": "اعتلال الأعصاب المتعدد النشواني الوراثي: من أمراض الكبد الأيضية التي تستدعي الزراعة."
+        },
+        {
+          "term": "Hepatic artery thrombosis",
+          "definition_ar": "خثارة الشريان الكبدي: أشيع المضاعفات الوعائية بعد الزراعة، تحدث تلقائياً أو بسبب الرفض الحاد خصوصاً عند الأطفال ومرضى التصلب الصفراوي الأولي، وتشخيصها بالدوبلر أو التصوير الوعائي وعلاجها إعادة الزراعة."
+        },
+        {
+          "term": "Thromboelastography (TEG)",
+          "definition_ar": "تصوير التخثر الدوراني: جهاز فوري قرب المريض يقيّم كفاءة تخثر الدم ويوجه تصحيح اضطراب التخثر أثناء زراعة الكبد في غرفة العمليات."
+        },
+        {
+          "term": "Chevron (bilateral subcostal) incision",
+          "definition_ar": "الجرح تحت الضلعي المزدوج (شيفرون أو السقف): مدخل زراعة الكبد عبر أعلى البطن في الشكل 81.28."
+        },
+        {
+          "term": "Retransplantation",
+          "definition_ar": "إعادة الزراعة: علاج خثارة الشريان الكبدي بعد الزراعة بعد تشخيصها بالدوبلر أو التصوير الوعائي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_Liver_L3_f01",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c01",
+      "card_type": "basic",
+      "front_text": "Which is the most common benign liver tumour, and what is its malignant potential?",
+      "back_text": "Haemangioma - a vascular lesion, often multiple of the cavernous type and usually symptomless; it has little if any malignant potential (NOT premalignant). If too large it presents as a compressible mass. (Cross-match B: often small, multiple, asymptomatic and mostly no treatment is needed.)",
+      "explanation_ar": "الهايمانجيوما أشيع الأورام الحميدة وليست ما قبل خبيثة، بعكس الورم الغدي الكبدي الذي يحمل خطر التحول الخبيث.",
+      "tags": [
+        "benign liver tumour",
+        "haemangioma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f02",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c01",
+      "card_type": "basic",
+      "front_text": "Dynamic contrast enhancement pattern of hepatic haemangioma on CT/MRI?",
+      "back_text": "Peripheral nodular enhancement on the arterial phase, then centripetal enhancement - delayed or slow contrast enhancement due to small vessel uptake. MRI phases: unenhanced hypointense; arterial peripheral nodular; portal venous centripetal progression; delayed uniform fill-in. (Cross-match A.)",
+      "mnemonic_ar": "من المحيط إلى المركز ببطء: عقيدات محيطية في الطور الشرياني ثم زحف متأخر نحو المركز - هذه الهايمانجيوما، عكس HCC الذي يتعزز مبكراً ويغسل سريعاً.",
+      "tags": [
+        "imaging",
+        "haemangioma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f03",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c01",
+      "card_type": "basic",
+      "front_text": "Why should percutaneous biopsy be avoided in a suspected haemangioma?",
+      "back_text": "Because it may bleed profusely - the lesion is a cavernous plexus of blood-filled vessels. Diagnosis rests on U/S (abnormal plexus of vessels) and contrast CT (peripheral nodular then centripetal enhancement).",
+      "is_vivid": true,
+      "explanation_ar": "الخزعة عبر الجلد في الهايمانجيوما قد تسبب نزفاً غزيراً يهدد الحياة؛ التشخيص شعاعي وليس نسيجياً.",
+      "tags": [
+        "contraindication",
+        "biopsy"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f04",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c01",
+      "card_type": "basic",
+      "front_text": "The two defined indications for treating a hepatic haemangioma?",
+      "back_text": "1) Arteriovenous shunting that embarrasses heart function; 2) misdiagnosis of a malignant vascular tumour. For large symptomatic lesions treatment is controversial: excision/removal, embolization, lobe or segmental resection, or DXT to reduce size.",
+      "explanation_ar": "معظم الهايمانجيومات لا تحتاج علاجاً؛ العلاج يقتصر على التحويلة الشريانية الوريدية المرهقة للقلب أو الشك بالخباثة الوعائية.",
+      "tags": [
+        "treatment",
+        "haemangioma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f05",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "card_type": "basic",
+      "front_text": "Hepatic adenoma: classic patient, liver background and malignant potential?",
+      "back_text": "A premalignant lesion, mostly in women taking contraceptive pills; it develops in otherwise normal liver tissue. (Cross-match C.)",
+      "mnemonic_ar": "حبوب منع الحمل + كبد طبيعي + ما قبل خبيث = الورم الغدي الكبدي - ثلاثية التشخيص الفوري في الامتحان.",
+      "tags": [
+        "hepatic adenoma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f06",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "card_type": "basic",
+      "front_text": "Treatment of choice for hepatic adenoma, and why?",
+      "back_text": "Lobe or segmental resection - because the lesion is premalignant. On imaging: U/S and CT show a well-circumscribed solid tumour that is difficult to differentiate from malignant tumours radiologically; angiography shows well developed peripheral arterialisation of the tumour.",
+      "explanation_ar": "لأن الورم الغدي ما قبل خبيث فالاستئصال هو العلاج المختار، والتصوير الوعائي يؤكد التوعي الشرياني المحيطي.",
+      "tags": [
+        "treatment",
+        "hepatic adenoma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f07",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "card_type": "basic",
+      "front_text": "What is focal nodular hyperplasia (FNH) composed of, and in whom does it occur?",
+      "back_text": "Focal overgrowth of functioning liver tissue supported by fibrous tissue stroma, containing hepatocytes and Kupffer cells; middle-age female with no association with underlying liver disease; unusual and unknown aetiology. (Cross-match D.)",
+      "explanation_ar": "فرط التنسج العقدي البؤلي ليسورماً حقيقياً بل فرط نمو لنسيج كبدي عامل، ولذلك يحتوي خلايا كوبفر ويكون مسح الكبريت الغروي موجباً.",
+      "tags": [
+        "FNH"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f08",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "card_type": "basic",
+      "front_text": "Sulphur colloid liver scan: which focal liver lesion is positive and which are negative?",
+      "back_text": "FNH is positive (its functioning Kupffer cells take up the colloid); hepatic adenoma and primary or metastatic tumours are negative (decreased Kupffer cells). (Cross-match E.)",
+      "mnemonic_ar": "كوبفر يفرّق: الموجب هو فرط التنسج العقدي البؤري لأن فيه خلايا كوبفر عاملة، والسالب الورم الغدي والأورام الخبيثة لنقص خلايا كوبفر.",
+      "tags": [
+        "nuclear medicine",
+        "FNH"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f09",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "card_type": "basic",
+      "front_text": "CT finding and treatment of focal nodular hyperplasia?",
+      "back_text": "CT: central scarring with a well-vascularised lesion (a pattern that is not specific). Treatment: surgery - segmental resection. (Cross-match F.)",
+      "explanation_ar": "الندبة المركزية مع التوعي الجيد علامة FNH على CT لكنها غير نوعية، والعلاج جراحي بالاستئصال القطعي.",
+      "tags": [
+        "imaging",
+        "FNH"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f10",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c03",
+      "card_type": "basic",
+      "front_text": "Which chronic liver diseases are associated with HCC, and how are their carriers screened?",
+      "back_text": "Chronic liver disease from HBV and HCV (with cirrhosis); screening is by U/S and AFP - alpha fetoprotein is the tumor marker. (Cross-match G + H.)",
+      "explanation_ar": "الالتهاب الكبدي B وC المزمن والتشمع هي أرضية HCC، ولذلك يُمسح هؤلاء المرضى دورياً بالموجات فوق الصوتية والبروتين الجنيني ألفا.",
+      "tags": [
+        "screening",
+        "HCC"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f11",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c03",
+      "card_type": "basic",
+      "front_text": "The double-80 rule, sex ratio and age range of HCC?",
+      "back_text": "HCC = 80% of primary liver malignancy, and 80% of HCC occur in cirrhotic liver; M:F = 8:1; middle age 3rd-4th decades; the tumour may be multicentric.",
+      "mnemonic_ar": "٨٠ و٨٠ و٨:١: ثمانون بالمئة من خباثات الكبد الأولية، وثمانون بالمئة تنشأ في كبد مشمّع، والذكور ثمانية أضعاف الإناث، في العقدين الثالث والرابع.",
+      "tags": [
+        "epidemiology",
+        "HCC"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f12",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c03",
+      "card_type": "basic",
+      "front_text": "Triphasic CT behaviour of hepatocellular carcinoma?",
+      "back_text": "Unenhanced: single or multiple hypodense masses, calcification may be seen, with possibly signs of cirrhosis and splenomegaly. After contrast injection (triphasic study): arterial phase - very early arterial perfusion; portal phase - contrast washout. (Cross-match I.)",
+      "is_vivid": true,
+      "explanation_ar": "HCC يتعزز مبكراً جداً في الطور الشرياني ثم يغسل سريعاً في الطور البابي - عكس الهايمانجيوما تماماً.",
+      "tags": [
+        "imaging",
+        "HCC"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f13",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "card_type": "basic",
+      "front_text": "Ultrasonic hallmark of hilar cholangiocarcinoma in the elderly?",
+      "back_text": "Dilated intrahepatic but NOT extrahepatic bile ducts - produced by a fibrotic stricture at the confluence of the right and left hepatic ducts; the distal bile duct tumour is polypoid and obstructs the lumen. (Cross-match J.)",
+      "explanation_ar": "الورم الغدي الصفراوي البابي يضيّق ملتقى القنوات الكبدية فتتسع القنوات داخل الكبد فقط دون خارجها.",
+      "tags": [
+        "imaging",
+        "cholangiocarcinoma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f14",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "card_type": "basic",
+      "front_text": "Which classification is applied to hilar cholangiocarcinoma?",
+      "back_text": "The Bismuth classification: I - below the confluence; II - reaching the confluence; IIIa/IIIb - extending into the right/left secondary ducts; IV - both sides. (Cross-match L.)",
+      "explanation_ar": "تصنيف بيسموث يرتب الورم الغدي الصفراوي البابي حسب امتداده العمودي على القنوات، وهو ما يقابل البند L في تمرين المطابقة.",
+      "tags": [
+        "classification",
+        "cholangiocarcinoma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f15",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "card_type": "basic",
+      "front_text": "How is tissue diagnosis obtained in cholangiocarcinoma, and what is the yield?",
+      "back_text": "Brush cytology using ERCP - it gives a tissue diagnosis in 2/3 of cases. If ERCP fails, PTC (percutaneous trans-hepatic cholangiography) provides therapeutic bile drainage, thus decreasing jaundice.",
+      "explanation_ar": "خزعة الفرشاة عبر ERCP تنجح في ثلثي الحالات فقط؛ وعند فشل ERCP يستخدم PTC لتصريف الصفراء وتخفيف اليرقان.",
+      "tags": [
+        "diagnosis",
+        "cholangiocarcinoma"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f16",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c05",
+      "card_type": "basic",
+      "front_text": "Epidemiology of hepatic deposits: frequency, site rank and autopsy rate?",
+      "back_text": "Much more common than primary tumours and usually multiple; the liver is the 2nd most common site for deposits after nodes; 30-70% of patients who die of cancer have liver deposits; the commonest source is colorectal tumours. (Cross-match K.)",
+      "explanation_ar": "الكبد ثاني أشيع موضع للنقائل بعد العقد اللمفية، وثلث إلى ثلثي المتوفين بالسرطان لديهم نقائل كبدية، وأشيع المصدر القولون والمستقيم.",
+      "tags": [
+        "epidemiology",
+        "hepatic deposits"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f17",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c05",
+      "card_type": "basic",
+      "front_text": "Prognosis after resection of a solitary colorectal liver metastasis, and the chemotherapy for unresectable deposits?",
+      "back_text": "The 5-year survival rate after resection of a solitary colorectal metastasis is 35%. If not resectable: systemic chemotherapy with 5-FU (5-fluorouracil) and folinic acid.",
+      "mnemonic_ar": "٣٥٪ لبقاء خمس سنوات بعد استئصال النقيلة المفردة من القولون؛ وغير القابل للاستئصال: 5-FU مع حمض الفولينيك.",
+      "tags": [
+        "prognosis",
+        "hepatic deposits"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f18",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c06",
+      "card_type": "basic",
+      "front_text": "History and the four indication groups of liver transplantation?",
+      "back_text": "Starzl 1963 (USA); Calne 1968 (Cambridge, UK). Groups: 1) cirrhosis and chronic liver failure - alcoholic, viral (hepatitis B and C), NASH, primary biliary cirrhosis, biliary atresia in children; 2) acute fulminant liver failure - usually viral or drug induced (e.g. paracetamol overdose); 3) metabolic liver diseases - Wilson's disease, oxalosis, familial amyloid polyneuropathy; 4) primary hepatic malignancy, predisposed by cirrhosis especially virally induced.",
+      "explanation_ar": "أربع مجموعات استطباب: القصور المزمن، والفشل الحاد الخاطف، والأمراض الأيضية، والخباثة الأولية على أرضية تشمع وخاصة الفيروسي.",
+      "tags": [
+        "transplantation",
+        "indications"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f19",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c06",
+      "card_type": "basic",
+      "front_text": "Order of the anastomoses during liver graft implantation?",
+      "back_text": "1 - suprahepatic cava; 2 - infrahepatic cava; 3 - portal vein; 4 - hepatic artery; 5 - bile duct. The incision is bilateral subcostal (chevron / rooftop).",
+      "mnemonic_ar": "فوق، تحت، بابي، شرياني، صفراوي - خمس وصلات بهذا الترتيب الثابت في الشكل 81.28.",
+      "tags": [
+        "technique",
+        "transplantation"
+      ]
+    },
+    {
+      "id": "surg_Liver_L3_f20",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c06",
+      "card_type": "basic",
+      "front_text": "Outcome of liver transplantation by indication group?",
+      "back_text": "Best outcome in chronic liver disease; acute liver disease has higher early mortality from multiple organ failure; liver tumour patients have a very good early outcome but ultimately fare much less well because of tumour malignancy; hepatitis B or C may develop graft failure from recurrent viral infection.",
+      "explanation_ar": "نتائج الزراعة تتبع المرض الأصلي: الأفضل للأمراض المزمنة، والأخطر مبكراً للحادة، والأورام تنجو مبكراً ثم تنكس بالخباثة، والالتهابات الفيروسية قد تفشل الطعم بالعدوى الناكسة.",
+      "tags": [
+        "outcome",
+        "transplantation"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_Liver_L3_m01",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c01",
+      "question_stem": "A 38-year-old asymptomatic woman undergoes abdominal ultrasound for dyspepsia, which shows a 3-cm right-lobe liver lesion. Contrast CT demonstrates peripheral nodular enhancement on the arterial phase with centripetal fill-in on delayed images. What is the most likely diagnosis?",
+      "options": [
+        "Hepatic haemangioma",
+        "Focal nodular hyperplasia",
+        "Hepatic adenoma",
+        "Hepatocellular carcinoma",
+        "Hypovascular colorectal liver metastasis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التعزيز المحيطي العقدي في الطور الشرياني ثم الامتلاء المركزي المتأخر هو النمط الكلاسيكي للهايمانجيوما (البند A في تمرين المطابقة). فرط التنسج العقدي البؤري يظهر ندبة مركزية مع توعي جيد وموجبية مسح الكبريت الغروي؛ والورم الغدي كتلة صلبة محددة يصعب تمييزها شعاعياً عن الخباثة؛ وسرطان الخلايا الكبدية يتعزز شريانياً مبكراً جداً ثم يغسل سريعاً في الطور البابي؛ والنقائل القولونية قليلة التوعية ومتعددة غالباً.",
+      "hints": [
+        "The pattern is dynamic - follow the contrast over time.",
+        "Slow centripetal fill-in from small vessel uptake."
+      ],
+      "focus_sections": [
+        2
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m02",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "question_stem": "A 32-year-old woman who has taken contraceptive pills for 6 years is found to have a well-circumscribed solid liver mass on U/S and CT; radiology cannot confidently exclude malignancy. What is the treatment of choice?",
+      "options": [
+        "Observation with serial ultrasound",
+        "Systemic chemotherapy",
+        "Lobe or segmental resection",
+        "Embolization of the feeding artery",
+        "DXT (radiotherapy) to reduce size"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "هذا هو الورم الغدي الكبدي: آفة ما قبل خبيثة في امرأة على حبوب منع الحمل تنشأ في كبد طبيعي، لذلك فاستئصال الفص أو القطعة هو العلاج المختار. الملاحظة خطأ لأن الآفة قد تتحول لخباثة؛ والكيماوي والإصمام والأشعة ليست علاجات الورم الغدي (الإصمام والأشعة خيارات الهايمانجيوما الكبيرة الجدلية).",
+      "hints": [
+        "Think about the malignant potential of this lesion.",
+        "Premalignant lesions in a fit patient are resected."
+      ],
+      "focus_sections": [
+        0,
+        1
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m03",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c02",
+      "question_stem": "A 45-year-old woman has a solid liver mass; CT shows central scarring with a well-vascularised lesion. A sulphur colloid liver scan is positive. Why is the scan positive in this lesion?",
+      "options": [
+        "The lesion contains functioning Kupffer cells",
+        "The lesion contains hepatocytes only",
+        "The lesion has decreased Kupffer cells",
+        "The lesion is hypovascular",
+        "The lesion has a fibrous capsule"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "فرط التنسج العقدي البؤلي فرط نمو لنسيج كبدي عامل مدعوم بسدى ليفي يحتوي خلايا كبدية وخلايا كوبفر عاملة، فتلتقط خلايا كوبفر المادة الغروية الكبريتية فيصبح المسح موجباً؛ بينما الورم الغدي والأورام الخبيثة الأولية والنقائل سالبة لنقص خلايا كوبفر فيها. التوعي والندبة المركزية موجودان في FNH لكنهما ليسا سبب موجبية المسح.",
+      "hints": [
+        "Which cell of the liver takes up colloid?",
+        "FNH is functioning liver tissue - both hepatocytes and Kupffer cells."
+      ],
+      "focus_sections": [
+        3
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m04",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c03",
+      "question_stem": "A 58-year-old man with chronic hepatitis C cirrhosis reports 3 months of malaise, weakness, anorexia and 7-kg weight loss. Examination shows jaundice, ascites and a hard hepatic mass. Alpha fetoprotein is markedly raised and triphasic CT shows very early arterial perfusion with portal-phase contrast washout. What is the diagnosis?",
+      "options": [
+        "Hepatocellular carcinoma",
+        "Cholangiocarcinoma",
+        "Hepatic adenoma",
+        "Haemangioma",
+        "Focal nodular hyperplasia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذا هو المشهد الكلاسيكي لسرطان الخلايا الكبدية على أرضية تشمع فيروسي: أعراض مرض كبدي مزمن (تعب وضعف ويرقان وحبن وفرط ضغط بابي) مع أعراض الورم (كتلة وفقد وزن وفقد شهية)، وAFP مرتفع، وتعزيز شرياني مبكر جداً مع غسل في الطور البابي. الكولانجيوكارسينوما يعطي يرقاناً انسدادياً بلا ألم مع اتساع القنوات داخل الكبد فقط؛ والورم الغدي في امرأة على الحبوب بكبد طبيعي؛ والهايمانجيوما تعزيز محيطي عقدي بطيء الامتلاء دون AFP؛ وفرط التنسج العقدي البؤلي موجب المسح الغروي.",
+      "hints": [
+        "Double syndrome: CLD + cancer on a cirrhotic background.",
+        "80% of HCC arise in a cirrhotic liver."
+      ],
+      "focus_sections": [
+        1,
+        3
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m05",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c03",
+      "question_stem": "Which of the following quantitative statements about hepatocellular carcinoma is correct?",
+      "options": [
+        "It represents 50% of primary liver malignancies",
+        "It represents 80% of primary liver malignancies and 80% of cases arise in a cirrhotic liver",
+        "It occurs equally in both sexes",
+        "It is a tumour of the 7th-8th decades",
+        "Only 10% arise in cirrhotic livers"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "قاعدة الثمانينات: يشكل سرطان الخلايا الكبدية 80% من خباثات الكبد الأولية، وينشأ 80% منه في كبد مشمّع؛ والنسبة ذكور إلى إناث 8:1، والعمر المتوسط في العقدين الثالث والرابع، وقد يكون متعدد البؤر، ويجب مسح المشمّعين فيروسيّاً بالموجات فوق الصوتية وAFP.",
+      "focus_sections": [
+        0
+      ],
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "surg_Liver_L3_m06",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "question_stem": "A 74-year-old man presents with 6 weeks of painless obstructive jaundice, an enlarged tender liver, weight loss, fever and asthenia. Ultrasound shows dilated intrahepatic bile ducts with a normal-calibre extrahepatic duct. What is the most likely diagnosis?",
+      "options": [
+        "Carcinoma of the head of the pancreas",
+        "Choledocholithiasis",
+        "Hepatocellular carcinoma",
+        "Hilar cholangiocarcinoma at the confluence of the right and left hepatic ducts",
+        "Ampullary carcinoma"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "الورم الغدي الصفراوي الحارقي ورم ليفي يضيّق ملتقى القنوات الكبدية اليمنى واليسرى فتتسع القنوات داخل الكبد فقط دون القنوات خارج الكبد؛ والمشهد السريري في مسن: يرقان انسدادي بلا ألم وكبد متضخم مؤلم وفقد وزن وحمى وهزال (البند J في تمرين المطابقة). أورام رأس البنكرياس والحليمة والحصاة الصفراوية توسّع القنوات خارج الكبد أيضاً؛ وHCC كتلة كبدية مع AFP مرتفع دون نمط القنوات هذا.",
+      "hints": [
+        "Where must the obstruction sit to dilate only the intrahepatic ducts?",
+        "Elderly + painless jaundice + tender hepatomegaly."
+      ],
+      "focus_sections": [
+        1,
+        2
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m07",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "question_stem": "In the elderly man above, MRCP confirms a hilar stricture. Which investigation provides a tissue diagnosis, and in what proportion of cases?",
+      "options": [
+        "MRCP alone, in 95% of cases",
+        "Brush cytology using ERCP, in about 2/3 of cases",
+        "Sulphur colloid liver scan, in 2/3 of cases",
+        "Percutaneous biopsy, in all cases",
+        "Doppler ultrasound, in half of cases"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "خزعة الفرشاة عبر ERCP هي وسيلة التشخيص النسيجي للورم الغدي الصفراوي وتنجح في نحو ثلثي الحالات (2/3). MRCP يُظهر التضيق لكنه لا يعطي نسيجاً؛ ومسح الكبريت الغروي يستعمل للآفات الكبدية الكتلية كفرط التنسج العقدي البؤلي؛ والدوبلر يقيّم الأوعية لا النسيج؛ والخزعة عبر الجلد ليست الخطوة الأولى للتضيقات البابية.",
+      "hints": [
+        "Cholangiography shows the stricture - but who gives you cells?",
+        "The yield is two-thirds."
+      ],
+      "focus_sections": [
+        2
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m08",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "question_stem": "The same patient's jaundice deepens and ERCP cannulation of the stricture fails. What is the next therapeutic step?",
+      "options": [
+        "Immediate laparotomy and resection",
+        "PTC (percutaneous trans-hepatic cholangiography) for bile drainage to decrease jaundice",
+        "Systemic chemotherapy alone",
+        "Liver transplantation",
+        "External beam radiotherapy alone"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عند فشل ERCP يُلجأ إلى PTC (تصوير القنوات الصفراوية عبر الكبد عبر الجلد) كإجراء علاجي لتصريف الصفراء وتخفيف اليرقان، تمهيداً للقرار النهائي بالاستئصال مع الكيماوي والأشعة. الجراحة الفورية على مريض يرقاني متدهور خاطئة، والكيماوي والأشعة وحدها لا تعالج الانسداد، والزراعة ليست علاج الورم الغدي الصفراوي المتقدم.",
+      "hints": [
+        "The bile must be drained first.",
+        "PTC is both diagnostic and therapeutic."
+      ],
+      "focus_sections": [
+        3
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m09",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c05",
+      "question_stem": "Two years after resection of a colonic cancer, a 63-year-old man is found to have a solitary 3-cm liver deposit; staging shows no other disease. What is the treatment of choice?",
+      "options": [
+        "Systemic chemotherapy with 5-FU and folinic acid",
+        "Surgical resection of the deposit",
+        "Liver transplantation",
+        "DXT (radiotherapy) to the liver",
+        "Best supportive care"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "النقيلة الكبدية المفردة من سرطان القولون والمستقيم تُستأصل جراحياً والبقيا لخمس سنوات بعدها 35% - وهي أفضل نتيجة لأي معالجة للنقائل الكبدية. الكيماوي بـ 5-FU وحمض الفولينيك مخصص للمرضى غير القابلين للاستئصال؛ والزراعة ليست للنقائل؛ والأشعة ليست علاجاً قياسياً؛ والرعاية التلطيفية ترفض علاجاً قابلاً للشفاء المحتمل.",
+      "hints": [
+        "Solitary deposit + disease-free otherwise = one option.",
+        "The 5-year survival figure is 35%."
+      ],
+      "focus_sections": [
+        2
+      ],
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "surg_Liver_L3_m10",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c04",
+      "question_stem": "According to the lecture, what is the only useful treatment modality for primary sclerosing cholangitis (PSC)?",
+      "options": [
+        "Biliary stenting by ERCP",
+        "Long-term corticosteroids",
+        "Liver transplantation",
+        "Broad-spectrum antibiotics",
+        "Ursodeoxycholic acid"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "زراعة الكبد هي وسيلة العلاج المفيدة الوحيد في التصلب الصفراوي الأولي؛ أما الدعامات عبر ERCP فتعطي تخفيفاً مؤقتاً ليرقان الانسداد فقط، مع المتابعة والمراقبة، وخزعة الفرشاة عبر ERCP لكشف الكولانجيوكارسينوما. الكورتيزون والمضادات الحيوية وحمض اليوروديوكسيكوليك ليست من علاجات المحاضرة لهذا المرض.",
+      "focus_sections": [
+        4
+      ],
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "surg_Liver_L3_m11",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c06",
+      "question_stem": "During liver graft implantation, in what order are the five anastomoses performed?",
+      "options": [
+        "Portal vein, hepatic artery, bile duct, suprahepatic cava, infrahepatic cava",
+        "Suprahepatic cava, infrahepatic cava, portal vein, hepatic artery, bile duct",
+        "Bile duct, hepatic artery, portal vein, infrahepatic cava, suprahepatic cava",
+        "Hepatic artery, portal vein, bile duct, suprahepatic cava, infrahepatic cava",
+        "Infrahepatic cava, suprahepatic cava, bile duct, portal vein, hepatic artery"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الترتيب الصحيح (الشكل 81.28): الوريد الأجوف فوق الكبدي أولاً، ثم الوريد الأجوف تحت الكبدي، ثم الوريد البابي، ثم الشريان الكبدي، وأخيراً القناة الصفراوية - عبر الجرح تحت الضلعي المزدوج (شيفرون). باقي الخيارات تعكس الترتيب أو تبدأ بالقناة الصفراوية أو الشريان وهي خطأ شائع.",
+      "hints": [
+        "Venous outflow first, arterial inflow and bile last.",
+        "Cava above, cava below, portal vein, artery, duct."
+      ],
+      "focus_sections": [
+        1
+      ],
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "surg_Liver_L3_m12",
+      "lecture_id": "surg_Liver_L3",
+      "concept_id": "surg_Liver_L3_c06",
+      "question_stem": "A 4-year-old who received a liver transplant for biliary atresia develops acute rejection, followed by graft dysfunction and fever. Doppler ultrasound shows absent flow in the hepatic artery. What is the diagnosis and its treatment?",
+      "options": [
+        "Biliary stenosis - endoscopic dilatation and stenting",
+        "Hepatic artery thrombosis - retransplantation",
+        "Haemorrhage - repack the peritransplant area for 2-3 days",
+        "Portal vein thrombosis - immediate thrombolysis",
+        "Recurrent viral hepatitis - antiviral therapy"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "خثارة الشريان الكبدي هي أشيع المضاعفات الوعائية بعد الزراعة، وتحدث تلقائياً أو بسبب الرفض الحاد، وخاصة عند المتلقين الأطفال ومرضى التصلب الصفراوي الأولي؛ وتشخيصها بالدوبلر أو التصوير الوعائي، وعلاجها إعادة الزراعة. التضيق الصفراوي يعالج بالتوسيع والدعامات عبر التنظير، والنزف بالحزم 2-3 أيام مع تصحيح التخثر وإخلاء الورم الدموي إذا لزم.",
+      "hints": [
+        "Paediatric recipient + acute rejection + absent arterial flow.",
+        "The most common vascular complication."
+      ],
+      "focus_sections": [
+        2
+      ],
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_Liver_L3_case01",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Hepatocellular Carcinoma in a Cirrhotic Liver - from Surveillance to the Resection-versus-Transplant Decision",
+      "scenario": "A 58-year-old man with long-standing hepatitis C cirrhosis is picked up by surveillance ultrasound after 3 months of malaise, anorexia and weight loss; a new focal liver mass and a markedly raised alpha fetoprotein lead to a triphasic CT and then the central surgical question of the lecture: resection or transplantation.",
+      "vignette": {
+        "age": 58,
+        "sex": "male",
+        "chief_complaint": "Malaise, weakness, anorexia, weight loss and increasing abdominal girth for 3 months",
+        "history": "Chronic hepatitis C infection for 18 years with established cirrhosis on previous biopsy; annual surveillance ultrasound until now always negative; no alcohol misuse; no previous variceal bleeding; not on any hepatotoxic medication.",
+        "vitals": {
+          "bp": "112/70 mmHg",
+          "hr": "98/min",
+          "rr": "18/min",
+          "temp": "37.3 C",
+          "spo2": "97% on room air"
+        },
+        "exam": "Mildly jaundiced, spider naevi and palmar erythema; distended abdomen with shifting dullness (ascites); firm nodular hepatomegaly with a hard 5-cm mass in the right lobe; spleen tip palpable (portal hypertension); no encephalopathy.",
+        "labs": [
+          {
+            "name": "Alpha fetoprotein (AFP)",
+            "value": "820 ng/mL",
+            "flag": "critical"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "10.9 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "Platelets",
+            "value": "92 x10^9/L",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "4.3 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "2.6 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Albumin",
+            "value": "2.9 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "INR",
+            "value": "1.5",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "68 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "AST",
+            "value": "84 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "1.0 mg/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Surveillance U/S: new 4.6-cm hypoechoic mass in the right lobe, nodular cirrhotic contour, splenomegaly and moderate ascites. Triphasic contrast CT: hypodense mass on the unenhanced phase with very early arterial perfusion in the arterial phase and contrast washout in the portal phase; background cirrhosis with splenomegaly; no main portal vein invasion reported."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L3_case01_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Hepatocellular carcinoma on a cirrhotic background",
+            "Cholangiocarcinoma at the hepatic duct confluence",
+            "Hepatic adenoma",
+            "Cavernous haemangioma",
+            "Hypervascular liver metastasis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "سرطان الخلايا الكبدية هو المرجح: 80% من خباثات الكبد الأولية و80% منها ينشأ في كبد مشمّع مع غلبة ذكورية 8:1؛ والصورة مزدوجة: أعراض مرض كبدي مزمن (تعب، يرقان، حبن، فرط ضغط بابي) مع أعراض ورم (كتلة، فقد وزن، فقد شهية)، وAFP مرتفع بشدة، والتصوير ثلاثي الأطوار يُظهر تعزيزاً شريانياً مبكراً جداً وغسلاً في الطور البابي. الكولانجيوكارسينوما يرقان انسدادي مع قنوات متسعة داخل الكبد فقط؛ والورم الغدي في امرأة على الحبوب بكبد طبيعي؛ والهايمانجيوما تعزيز محيطي عقدي بطيء الامتلاء؛ والنقائل متعددة غالباً مع ورم أولي معروف.",
+          "xp": 10,
+          "hints": [
+            "Two syndromes are running at once: CLD and cancer.",
+            "The AFP and the triphasic pattern decide it."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case01_s2",
+          "prompt": "Which diagnostic pathway is used to confirm the lesion and forms the surveillance strategy for every HBV/HCV cirrhotic patient?",
+          "options": [
+            "U/S and alpha fetoprotein, with triphasic CT to characterise (biopsy if still equivocal)",
+            "Sulphur colloid liver scan with follow-up angiography",
+            "ERCP with brush cytology",
+            "PET scan alone",
+            "Percutaneous biopsy as the first investigation"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "تشخيص HCC بالموجات فوق الصوتية والتصوير المقطعي والخزعة؛ والمسح الدوري للمصابين بالالتهاب الكبدي B وC المزمن والتشمع يكون بالموجات فوق الصوتية وAFP - وهذا بالضبط ما التقط هذا الورم مبكراً. مسح الكبريت الغروي لفرط التنسج العقدي البؤلي؛ وخزعة الفرشاة عبر ERCP للورم الغدي الصفراوي؛ والخزعة عبر الجلد ليست أول خطوة هنا.",
+          "xp": 10,
+          "hints": [
+            "The same pair is used for screening and for work-up.",
+            "AFP is the tumor marker of HCC."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case01_s3",
+          "prompt": "The tumour measures 4.6 cm in a cirrhotic, decompensating liver (ascites, low albumin, raised INR). What is the best definitive treatment strategy?",
+          "options": [
+            "Right hepatic lobe resection now",
+            "Liver transplantation, subject to size, site and availability of donors",
+            "Embolization alone",
+            "DXT to reduce the size of the tumour",
+            "Systemic chemotherapy with 5-FU and folinic acid"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "علاج HCC الجراحي خياران: الاستئصال (فص أو قطعة/قطع) وزراعة الكبد التي تعتمد على الحجم والموقع وتوفر المتبرعين. في هذا المريض علامات سوء تعويض التشمع (حبن، ألبومين منخفض، INR مرتفع، صفيحات منخفضة) تجعل الاستئصال الفصي خطر فشل كبدي، فالزراعة هي الأنسب ضمن معايير الحجم والموقع وتوفر المتبرع. الإصمام والأشعة خيارات الهايمانجيوما الكبيرة، و5-FU مع حمض الفولينيك علاج النقائل غير القابلة للاستئصال.",
+          "xp": 15,
+          "hints": [
+            "Look at the background liver, not only the tumour.",
+            "Transplantation treats both the tumour and the cirrhosis."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case01_s4",
+          "prompt": "What surveillance principle does this case reinforce for every patient with chronic HBV/HCV liver disease?",
+          "options": [
+            "Annual clinical examination only",
+            "Screening by U/S and AFP",
+            "CT scan every 5 years",
+            "No screening is required",
+            "Colonoscopy surveillance"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "ارتباط HCC بالأمراض الكبدية المزمنة HBV وHCV هو أساس المسح بالموجات فوق الصوتية وAFP؛ لأن 80% من هذه الأورام تنشأ في كبد مشمّع واكتشافها مبكراً هو ما يجعل الاستئصال أو الزراعة ممكنين. الفحص السريري وحده أو تصوير كل خمس سنوات غير كافيين.",
+          "xp": 8,
+          "hints": [
+            "Two tests, repeated regularly.",
+            "The same association explains the double-80 rule."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: سرطان خلايا كبدية على أرضية تشمع فيروسي C مع سوء تعويض مبكر. الدروس الجوهرية: قاعدة الثمانينات (80% من خباثات الكبد الأولية هي HCC و80% منها في كبد مشمّع)، وغلبة الذكور 8:1 في العقدين الثالث والرابع؛ والصورة السريرية مزدوجة (علامات مرض كبدي مزمن + علامات ورم)؛ وAFP هو واسم الورم؛ والنمط الشعاعي تعزيز شرياني مبكر جداً مع غسل بابي في دراسة ثلاثية الأطوار مع علامات تشمع وضخامة طحال؛ والعلاج خياران جراحيان: استئصال فص/قطع أو زراعة كبد تعتمد على الحجم والموقع وتوفر المتبرعين، ويسود الخيار الثاني عند سوء تعويض التشمع. الفخ الامتحاني: إغفال مسح المشمّعين فيروسيّاً، أو الخلط بين نمط HCC (غسل سريع) ونمط الهايمانجيوما (امتلاء مركزي متأخر).",
+      "difficulty": "advanced",
+      "order_index": 0
+    },
+    {
+      "id": "surg_Liver_L3_case02",
+      "lecture_id": "surg_Liver_L3",
+      "title": "Painless Obstructive Jaundice in the Elderly - Hilar Cholangiocarcinoma",
+      "scenario": "A 74-year-old man is referred with 6 weeks of progressive painless obstructive jaundice, dark urine and pale stools; ultrasound shows dilated intrahepatic ducts with a normal-calibre extrahepatic duct, and the case steps through MRCP, brush cytology, therapeutic drainage after failed ERCP, and the resection decision with its very poor prognosis.",
+      "vignette": {
+        "age": 74,
+        "sex": "male",
+        "chief_complaint": "Progressive painless jaundice with dark urine and pale stools for 6 weeks",
+        "history": "No abdominal pain, no fever spikes with rigors, no previous biliary surgery and no known gallstones; 6-kg weight loss over 2 months, marked asthenia and impaired appetite; low-grade intermittent fever for 2 weeks; no history of inflammatory bowel disease; non-smoker, minimal alcohol.",
+        "vitals": {
+          "bp": "132/80 mmHg",
+          "hr": "88/min",
+          "rr": "18/min",
+          "temp": "37.6 C",
+          "spo2": "96% on room air"
+        },
+        "exam": "Deeply jaundiced with excoriation marks from pruritus; liver enlarged 4 cm below the right costal margin, firm and tender on palpation; gallbladder not palpable; no ascites; no stigmata of chronic liver disease.",
+        "labs": [
+          {
+            "name": "Total bilirubin",
+            "value": "16.2 mg/dL (predominantly direct)",
+            "flag": "critical"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "640 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Gamma GT",
+            "value": "310 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "92 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "AST",
+            "value": "78 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Albumin",
+            "value": "3.1 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "INR",
+            "value": "1.8",
+            "flag": "high"
+          },
+          {
+            "name": "Alpha fetoprotein",
+            "value": "4 ng/mL",
+            "flag": "normal"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "11.2 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "11.4 x10^9/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Abdominal U/S: dilated intrahepatic bile ducts in both lobes; extrahepatic (common hepatic/bile) duct NOT dilated; no gallstones; no mass in the pancreatic head; gallbladder collapsed."
+      },
+      "steps": [
+        {
+          "id": "surg_Liver_L3_case02_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Carcinoma of the head of the pancreas",
+            "Choledocholithiasis with impacted stone",
+            "Hepatocellular carcinoma",
+            "Hilar cholangiocarcinoma - fibrotic stricture at the confluence of the right and left hepatic ducts",
+            "Acute cholangitis from benign stricture"
+          ],
+          "correct_index": 3,
+          "explanation_ar": "المسن المصاب بيرقان انسدادي بلا ألم مع كبد متضخم مؤلم وفقد وزن وحمى وهزال، والموجات تُظهر قنوات صفراوية متسعة داخل الكبد مع قنوات خارج كبد بقياس طبيعي: هذا الورم الغدي الصفراوي الحارقي الذي يُضيّق ملتقى القنوات الكبدية اليمنى واليسرى (البند J). أورام رأس البنكرياس والحليمة والحصاة توسّع القنوات خارج الكبد أيضاً؛ وHCC كتلة مع AFP مرتفع (وهو طبيعي هنا)؛ والتهاب القنوات الصاعد يقدم حمى قشعريرة وألماً.",
+          "xp": 10,
+          "hints": [
+            "Which level of obstruction dilates only the intrahepatic ducts?",
+            "Elderly + painless + constitutional symptoms."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case02_s2",
+          "prompt": "Which is the next cholangiographic investigation to demonstrate the level and nature of the obstruction?",
+          "options": [
+            "MRCP (cholangiography) to demonstrate the hilar stricture",
+            "Sulphur colloid liver scan",
+            "Triphasic CT of the liver as the only test",
+            "PET scan",
+            "HIDA scan"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الكولانجيوغرافيا (MRCP) هي الوسيلة التالية لتوضيح التضيق الحارقي عند الملتقى. مسح الكبريت الغروي يستعمل للآفات الكبدية الحميدة (فرط التنسج العقدي البؤلي)؛ والتصوير المقطعي يفيد لإظهار الكتلة عند اختراق النسيج الكبدي لكنه ليس كولانجيوغرافيا؛ وPET للبحث عن النقائل والأوليات.",
+          "xp": 10,
+          "hints": [
+            "Non-invasive imaging of the ducts themselves.",
+            "It will show an irregular hilar stricture."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case02_s3",
+          "prompt": "MRCP shows an irregular hilar stricture. Which procedure provides a tissue diagnosis, and with what success rate?",
+          "options": [
+            "Brush cytology via ERCP - tissue diagnosis in 2/3 of cases",
+            "Percutaneous needle biopsy of the stricture - in all cases",
+            "Cytology of ascitic fluid - in 2/3",
+            "MRCP spectroscopy - in 90%",
+            "Serum tumor markers alone - diagnostic in all cases"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "خزعة الفرشاة عبر ERCP تعطي التشخيص النسيجي للورم الغدي الصفراوي في نحو ثلثي الحالات (2/3) - وهي الخطوة المطلوبة قبل أي علاج نهائي. سوائل البطن والواسمات المصلية غير كافية للتشخيص النسيجي.",
+          "xp": 10,
+          "hints": [
+            "Tissue is required before committing to major surgery.",
+            "The yield is two-thirds, not all cases."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case02_s4",
+          "prompt": "During ERCP the stricture cannot be cannulated and the jaundice deepens further. What is the next therapeutic step?",
+          "options": [
+            "PTC (percutaneous trans-hepatic cholangiography) for therapeutic bile drainage, thus decreasing jaundice",
+            "Immediate laparotomy and resection",
+            "Systemic chemotherapy alone",
+            "Long-term observation",
+            "Repeat ERCP indefinitely"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند فشل ERCP تُستخدم PTC عبر الجلد عبر الكبد كإجراء علاجي لتصريف الصفراء وتخفيف اليرقان؛ الجراحة الفورية على يرقان عميق غير مأمونة، والكيماوي وحده لا يحل الانسداد، والانتظار يسمح بسوء الوظيفتين الكبدية والكلوية.",
+          "xp": 10,
+          "hints": [
+            "Drain the biliary system first - through the liver.",
+            "PTC is diagnostic AND therapeutic."
+          ]
+        },
+        {
+          "id": "surg_Liver_L3_case02_s5",
+          "prompt": "After drainage and staging (CT shows no parenchymal mass; angiography shows no spread to portal vein or hepatic artery), what is the definitive treatment plan, and what is the prognosis?",
+          "options": [
+            "Surgical resection combined with chemotherapy and radiotherapy - prognosis very poor",
+            "Liver transplantation - excellent long-term cure",
+            "Systemic 5-FU and folinic acid only",
+            "Permanent endoscopic stent only - good prognosis",
+            "DXT to the hilum - curative"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المعالجة النهائية هي الاستئصال الجراحي مع الكيماوي والعلاج الإشعاعي، بشرط غياب الانتشار الوعائي (الوريد البابي أو الشريان الكبدي) وغياب الاختراق النسيجي الواسع؛ ومع ذلك يبقى الإنذار سيئاً جداً وهي حقيقة امتحانية ثابتة في المحاضرة. الزراعة ليست لعلاج هذا الورم المتقدم، والدعامة تخفيف مؤقت، و5-FU وحمض الفولينيك للنقائل الكبدية غير القابلة للاستئصال.",
+          "xp": 15,
+          "hints": [
+            "Vascular involvement on angiography decides resectability.",
+            "The prognosis adjective in the lecture is 'very poor'."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: ورم غدي صفراوي حارقي (كولانجيوكارسينوما) عند مسن، مع تضيق ليفي في ملتقى القنوات الكبدية اليمنى واليسرى. الدروس: اليرقان الانسدادي بلا ألم في المسن مع كبد متضخم مؤلم وفقد وزن وحمى وهزال يستدعي هذا الورم؛ والعلامة الموجية الفاصلة اتساع القنوات داخل الكبد فقط دون خارج الكبد؛ والتشخيص الكولانجيوغرافي (MRCP) يُظهر التضيق الحارقي؛ وخزعة الفرشاة عبر ERCP تعطي نسيجاً في 2/3 من الحالات؛ وعند فشل ERCP يكون PTC علاجياً بتصريف الصفراء وتخفيف اليرقان؛ والمعالجة النهائية استئصال مع كيماوي وأشعة بعد نفي الانتشار للوريد البابي أو الشريان الكبدي بالتصوير الوعائي؛ والإنذار سيئ جداً. الفخ الامتحاني: الخلط بين مستويات الانسداد (حارقي: قنوات داخلية فقط مقابل رأس البنكرياس أو الحليمة: توسع القنوات خارج الكبد أيضاً)، ونسيان أن تصنيف بيسموث هو تصنيف هذا الورم.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

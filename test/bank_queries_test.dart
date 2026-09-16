@@ -211,9 +211,164 @@ void main() {
         await helper.getUnitsBySystem('cardiovascular');
     expect(cardio.length, 2);
 
-    // null = كل الوحدات مرتبة.
+    // null = كل الأجهزة.
     final List<Map<String, Object?>> all =
         await helper.getUnitsBySystem(null);
     expect(all.length, 3);
+  });
+
+  group('v20 — التخصص السريري (specialty)', () {
+    /// زرع متعدد التخصصات: باطنية (موجودة عبر seed) + جراحة + نسائية.
+    Future<void> seedSpecialties() async {
+      await seed();
+      final DatabaseHelper helper = DatabaseHelper.instance;
+
+      // جراحة: محاضرتان (appendectomy + cholecystectomy).
+      for (final (String, String, String, int) s in const <(String, String,
+          String, int)>[
+        ('surg-001', 'general_surgery', 'gastrointestinal', 0),
+        ('surg-002', 'general_surgery', 'gastrointestinal', 1),
+      ]) {
+        await helper.insertUnit(<String, Object?>{
+          'id': s.$1,
+          'specialty': 'surgery',
+          'module': s.$2,
+          'system': s.$3,
+          'title': 'Surgery Lecture ${s.$1}',
+          'order_index': s.$4,
+        });
+        await helper.insertFlashcard(<String, Object?>{
+          'id': '${s.$1}-f1',
+          'unit_id': s.$1,
+          'card_type': 'basic',
+          'front_text': 'Surgery front of ${s.$1}',
+          'back_text': 'Surgery back answer long enough',
+        });
+      }
+
+      // نسائية: محاضرة واحدة.
+      await helper.insertUnit(<String, Object?>{
+        'id': 'obgyn-001',
+        'specialty': 'obgyn',
+        'module': 'gynecology',
+        'system': 'endocrine',
+        'title': 'ObGyn Lecture obgyn-001',
+        'order_index': 0,
+      });
+      await helper.insertFlashcard(<String, Object?>{
+        'id': 'obgyn-001-f1',
+        'unit_id': 'obgyn-001',
+        'card_type': 'basic',
+        'front_text': 'ObGyn front question here',
+        'back_text': 'ObGyn back answer long enough',
+      });
+    }
+
+    test('الافتراض باطنية — seed بلا specialty يسند internal_medicine',
+        () async {
+      await seed();
+      final DatabaseHelper helper = DatabaseHelper.instance;
+
+      // seed() يزرع بلا specialty → عمود DEFAULT يسند الباطنية.
+      final List<Map<String, Object?>> rows =
+          await helper.getUnitsBySpecialty('internal_medicine');
+      expect(rows.length, 3);
+      expect(
+        rows.every(
+            (Map<String, Object?> r) => r['specialty'] == 'internal_medicine'),
+        isTrue,
+      );
+
+      // لا جراحة ولا نسائية بعد.
+      expect(await helper.getUnitsBySpecialty('surgery'), isEmpty);
+      expect(await helper.getUnitsBySpecialty('obgyn'), isEmpty);
+    });
+
+    test('getUnitsBySpecialty + getDistinctSpecialties — عزل تام',
+        () async {
+      await seedSpecialties();
+      final DatabaseHelper helper = DatabaseHelper.instance;
+
+      // التخصصات الموجودة بترتيب العقد (باطنية أولاً).
+      final List<String> specialties =
+          await helper.getDistinctSpecialties();
+      expect(specialties,
+          <String>['internal_medicine', 'surgery', 'obgyn']);
+
+      // كل تخصص يرى محاضراته فقط.
+      expect((await helper.getUnitsBySpecialty('internal_medicine')).length,
+          3);
+      expect((await helper.getUnitsBySpecialty('surgery')).length, 2);
+      expect((await helper.getUnitsBySpecialty('obgyn')).length, 1);
+
+      // فلترة الأجهزة داخل تخصص واحد: gastrointestinal فيه محاضرتا
+      // الجراحة (seed الأصلي باطنياً في القلب والتنفس فقط) — بلا
+      // وسيط يظهر جهاز الهضم عبر كل التخصصات.
+      expect(
+        (await helper.getUnitsBySystem('gastrointestinal')).length,
+        2,
+        reason: 'بلا وسيط: جهاز الهضم من كل التخصصات (محاضرتا الجراحة)',
+      );
+      expect(
+        (await helper.getUnitsBySystem('gastrointestinal',
+            specialty: 'surgery'))
+            .length,
+        2,
+      );
+      expect(
+        (await helper.getUnitsBySystem('gastrointestinal',
+            specialty: 'internal_medicine'))
+            .length,
+        0,
+        reason: 'الباطنية بلا محاضرات هضمية في هذا الزرع',
+      );
+      expect(
+        await helper.getDistinctSystems(specialty: 'surgery'),
+        <String>['gastrointestinal'],
+      );
+    });
+
+    test('بنوك المكتبة تُفلتر بالتخصص — بطاقات', () async {
+      await seedSpecialties();
+      final DatabaseHelper helper = DatabaseHelper.instance;
+
+      // بلا فلتر: كل البطاقات (6 باطنية + 2 جراحة + 1 نسائية).
+      final List<Map<String, Object?>> all = await helper.getFlashcards();
+      expect(all.length, 9);
+
+      // فلتر الجراحة وحدها.
+      final List<Map<String, Object?>> surgery =
+          await helper.getFlashcards(specialty: 'surgery');
+      expect(surgery.length, 2);
+      expect(
+        surgery.every((Map<String, Object?> f) =>
+            f['unit_id']!.toString().startsWith('surg')),
+        isTrue,
+      );
+
+      // دمج specialty + system (نسائية داخل endocrine).
+      final List<Map<String, Object?>> obgynEndocrine =
+          await helper.getFlashcards(
+              specialty: 'obgyn', system: 'endocrine');
+      expect(obgynEndocrine.length, 1);
+    });
+
+    test('بنوك المكتبة تُفلتر بالتخصص — أسئلة وحالات', () async {
+      await seedSpecialties();
+      final DatabaseHelper helper = DatabaseHelper.instance;
+
+      // MCQ: الباطنية فقط (الأسئلة زُرعت في seed() لها وحدها).
+      final List<Map<String, Object?>> imMcqs =
+          await helper.getMcqs(specialty: 'internal_medicine');
+      expect(imMcqs.length, 6);
+      expect(await helper.getMcqs(specialty: 'surgery'), isEmpty);
+
+      // الحالات: نفس العزل.
+      expect(
+        (await helper.getCases(specialty: 'internal_medicine')).length,
+        3,
+      );
+      expect(await helper.getCases(specialty: 'obgyn'), isEmpty);
+    });
   });
 }

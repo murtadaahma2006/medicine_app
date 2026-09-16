@@ -1,0 +1,1273 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L4_placenta",
+    "specialty": "obgyn",
+    "title": "The Placenta and Umbilical Cord: Structure, Function, and Abnormalities",
+    "module": "maternal_fetal_medicine",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L4 PLACENTA Dr Zaineb T..pdf",
+      "page_count": 31
+    },
+    "tags": [
+      "placenta",
+      "chorion frondosum",
+      "decidua basalis",
+      "placental function",
+      "placenta praevia",
+      "placenta accreta",
+      "velamentous insertion",
+      "umbilical cord",
+      "placental infarcts",
+      "chorioangioma"
+    ],
+    "order_index": 3,
+    "golden_tip": [
+      "Exam trap: brisk postpartum haemorrhage with a well-contracted uterus after an 'apparently complete' placenta — always inspect the membranes; a circular gap with vessels running toward the placental edge means a retained succenturiate (accessory) lobe.",
+      "Velamentous insertion: umbilical vessels run unprotected through the membranes — at spontaneous ROM or amniotomy they can tear, and it is the FETUS that bleeds (vaginal bleeding with fetal distress/bradycardia).",
+      "Accreta spectrum depth: accreta = villi reach the myometrium (75-78%), increta = invade into the myometrium (17%), percreta = penetrate through to the peritoneal coat (5%)."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L4_placenta_c1",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Definition, Origin, and Normal Structure of the Placenta",
+      "summary_ar": "المشيمة عضو وعائي غشائي يتكوّن أثناء الحمل من نسيج جنيني ونسيج أمومي معاً: المشعرة الزغابية (chorion frondosum) من الجنين والساقطة القاعدية (decidua basalis) من الأم. تتموضع عادةً في القطعة العلوية للرحم (99.5%)، وعند تمام الحمل تكون قرصاً إسفنجياً دائرياً قطره 20 سم وسماكته 2.5 سم ووزنه 500 غرام، بسطح جنيني أملس لامع وسطح أمومي خشن مقسّم إلى 15-20 فصيصاً (cotyledons).",
+      "sections": [
+        {
+          "heading": "Lecture Objectives and Definition",
+          "body_text": "- **Objectives of the lecture** (as set out on the opening slides of this obstetrics and gynecology deck by Dr.Zaineb Al-Yasin). The deck is 31 pages long and ends with a short thank-you slide. At the end of the lecture, students will be able to:\n- 1- Define the placenta.\n- 2- Summarize the function of the placenta and the umbilical cord.\n- 3- List the abnormalities in the placenta and the umbilical cord.\n\n**Definition.** The placenta is a **membranous vascular organ that develops in female mammals during pregnancy**, lining the uterine wall and partially enveloping the fetus, to which it is attached by the umbilical cord. **Following birth, the placenta is expelled.**\n\n- The placenta forms from **both embryonic and maternal tissue** — it is a true fetomaternal organ.\n- **Etymology:** the word 'placenta' is derived from the Latin meaning **a flat cake**, a reference to its disc-like shape.",
+          "key_points": [
+            "Definition: membranous vascular organ of pregnancy; lines the uterine wall, partially envelops the fetus, attached by the umbilical cord, expelled after birth.",
+            "Forms from both embryonic (fetal) and maternal tissue.",
+            "Latin 'placenta' = a flat cake.",
+            "Lecture objectives: define the placenta; summarize placental and cord functions; list placental and cord abnormalities."
+          ]
+        },
+        {
+          "heading": "Origin and Normal Position",
+          "body_text": "**Origin.** The placenta develops from:\n- **Chorion frondosum** — the **fetal** origin.\n- **Decidua basalis** — the **maternal** origin.\n\n**Position.**\n- The placenta is located in the **upper uterine segment in 99.5%** of pregnancies.\n- It lies on either the **posterior surface (2/3)** or the **anterior surface (1/3)** of the uterus.\n\n**In-utero anatomy — the sagittal illustration.** The lecture's anatomical illustration is a sagittal cross section of the gravid uterus in the third trimester. The fetus is drawn in a flexed position with a cephalic presentation. The **placenta** is depicted as a thick, reddish, vascular organ attached to the **upper uterine wall**, labeled with a leader line pointing to it; the umbilical cord connects the fetal abdomen to the placenta. The image shows the muscular uterine wall surrounding the fetus and the amniotic fluid, while the maternal anatomy (abdominal wall, spine/vertebrae and pelvic bones) is faintly outlined in the background. In short, the placenta is a combined fetomaternal structure.",
+          "key_points": [
+            "Chorion frondosum (fetal origin) + decidua basalis (maternal origin) = the placenta.",
+            "Upper uterine segment in 99.5% of pregnancies.",
+            "Posterior surface in 2/3; anterior surface in 1/3."
+          ]
+        },
+        {
+          "heading": "Gross Appearance of the Placenta at Term",
+          "body_text": "**The placenta at term** is **circular in shape, forming a spongy disc** that measures:\n- **Diameter: 20 cm**\n- **Thickness: 2.5 cm**\n- **Weight: 500g**\n\nIt has **a fetal and a maternal surface** (detailed in the next two sections).\n\n**Gross photograph of the delivered placenta.** The slide image (a stock photograph, watermarked 'alamy', taken on a white absorbent drape with a blue surgical drape behind — a delivery room setting) shows the maternal surface of a fresh specimen of the human placenta: a discoid, roughly circular organ, **dark red to reddish-brown**, with a glistening, moist surface suggesting recent delivery and a lobulated, fleshy, irregular texture. The umbilical cord is pale pinkish-tan to whitish, elongated and tortuous, and exhibits visible helical twisting, with an apparent central or slightly eccentric insertion; about 10-15 cm of the cord is visible in the image. Key findings: there are **no obvious gross abnormalities** — no large infarcts, haematomas or significant calcifications — the margins are intact, and the surface shows a vascular pattern of darker red branching lines beneath the amniotic membrane. This is the standard visual picture of a normal term placenta. These are the dimensions of the placenta at term.",
+          "key_points": [
+            "Term placenta: circular spongy disc, 20 cm in diameter, 2.5 cm thick, weight 500g.",
+            "It has a fetal surface and a maternal surface.",
+            "Overall appearance of the fresh specimen: dark red to reddish-brown, lobulated, glistening and moist; tortuous helical cord with central/slightly eccentric insertion."
+          ],
+          "check": {
+            "prompt": "A resident measures a freshly delivered term placenta. Which set of measurements is normal?",
+            "options": [
+              "Diameter 15 cm, thickness 1 cm, weight 250 g",
+              "Diameter 20 cm, thickness 2.5 cm, weight 500g",
+              "Diameter 25 cm, thickness 4 cm, weight 1 kg",
+              "Diameter 12 cm, thickness 2 cm, weight 300 g"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المشيمة عند تمام الحمل قرص إسفنجي دائري قطره 20 سم وسماكته 2.5 سم ووزنه 500 غرام تقريباً؛ القيم الأصغر أو الأكبر (كالأمثلة الأخرى) ليست قيماً طبيعية للمشيمة الناضجة، فالمشيمة الضخمة تستدعي البحث عن الزهري الخلقي أو الاستسقاء الجنيني أو السكري."
+          }
+        },
+        {
+          "heading": "The Maternal Surface (Basal Plate)",
+          "body_text": "**The maternal surface** — the slide text lists its features as bullets:\n- **Rough and spongy.**\n- **Maternal blood gives it a dull red colour.**\n- **Remnants of the decidua basalis give it a shaggy appearance.**\n- **Divided into 15-20 cotyledons by the septa** — placental septa project from the decidua basalis and separate the slightly raised, convex, fleshy lobules, creating the shallow grooves (sulci) seen between them.\n\n**On the specimen photograph of the normal term maternal surface** (slide captioned 'Placenta, normal term, maternal surface', with a small metric ruler present for scale) the discoid organ is dark, dull red, rough, irregular and shaggy/spongy in texture; the surface is partitioned into multiple raised cotyledons — the number of lobulated divisions being consistent with the **15-20 cotyledons** of the description — and the periphery carries a thin, translucent, pale rim of reflected membranes (amnion and chorion) where the membranes would attach. The tissue looks healthy and well vascularized, with no infarction, abruption or abnormal adhesion — a picture consistent with a normal term placenta. All four bullet features come straight from the slide text.",
+          "key_points": [
+            "Maternal surface: rough and spongy.",
+            "Dull red colour = maternal blood; shaggy appearance = remnants of the decidua basalis.",
+            "Divided into 15-20 cotyledons by placental septa (shallow grooves/sulci between lobules)."
+          ]
+        },
+        {
+          "heading": "The Fetal Surface (Chorionic Plate)",
+          "body_text": "**The fetal surface** — the slide lists its features as follows:\n- **Covered by smooth and glistening amnion overlying the chorion.**\n- **The umbilical cord is attached at or near its centre.**\n- **Branches of the umbilical vessels are visible beneath the amnion** as they radiate from the insertion of the cord out to the periphery.\n\n**On the specimen photograph of the normal term fetal surface** (slide captioned 'Placenta, normal term, fetal surface') the chorionic plate is smooth, shiny and translucent with a bluish-grey color; prominent dark, branching chorionic vessels (umbilical arteries and vein) radiate from the cord insertion (roughly centered on the disc, central or slightly eccentric) in a tree-like pattern across the disc, and the reddish-purple placental parenchyma is seen through the translucent membranes. The pale/whitish cord is thick and coiled, and a small blue metric ruler in the image again provides scale. A one-line bedside description of the fetal surface: **smooth and glistening, with vessels radiating beneath the amnion** — the exact opposite of the rough, shaggy, cotyledonated maternal surface.",
+          "key_points": [
+            "Fetal surface: covered by smooth, glistening amnion overlying the chorion.",
+            "Umbilical cord attached at or near the centre.",
+            "Branches of the umbilical vessels visible beneath the amnion, radiating from the cord insertion.",
+            "The fetal surface vessels lie immediately beneath the amnion."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Chorion frondosum",
+          "definition_ar": "الجزء الزغابي من غشاء الكوريون الجنيني، وهو الأصل الجنيني الذي تُبنى منه المشيمة."
+        },
+        {
+          "term": "Decidua basalis",
+          "definition_ar": "الساقطة القاعدية: طبقة بطانة الرحم عند موضع انزراع المشيمة، وهي الأصل الأمومي لها."
+        },
+        {
+          "term": "Cotyledon",
+          "definition_ar": "فصيص مشيمي مرتفع على السطح الأمومي؛ يوجد 15-20 فصيصاً يفصلها حواجز مشيمية."
+        },
+        {
+          "term": "Placental septum",
+          "definition_ar": "حواجز ناتئة من الساقطة القاعدية تقسم السطح الأمومي إلى فصيصات (cotyledons)."
+        },
+        {
+          "term": "Amnion",
+          "definition_ar": "الغشاء الأمنيوني الأملس اللامع الذي يغطي السطح الجنيني للمشيمة ويحيط بالحبل السري."
+        },
+        {
+          "term": "Chorionic plate",
+          "definition_ar": "الصفيحة الزغابية المكوّنة للسطح الجنيني للمشيمة، وتحمل الأوعية المشيمية المتشعبة."
+        },
+        {
+          "term": "Flat cake (placenta)",
+          "definition_ar": "المعنى اللاتيني لكلمة placenta: كعكة مسطحة، وصفٌ لشكل المشيمة القرصي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L4_placenta_c2",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Functions of the Placenta",
+      "summary_ar": "تؤدي المشيمة خمس وظائف مرقّمة في المحاضرة: نقل الأكسجين والمغذيات من دم الأم، والإطراح الجنيني (ثاني أكسيد الكربون والفضلات)، وحاجز ضد انتقال العدوى (مع قدرة لولبيات الزهري وفيروس الحصبة الألمانية على العبور، وعجز المواد التي يزيد وزنها الجزيئي عن 500 دالتون)، وإفراز الهرمونات (hCG والإستروجين والبروجستيرون لحفظ الساقطة ونمو الرحم والثدي)، والوظيفة المناعية بتحمّل مولدات الضد الأبوية دون رفض الجنين.",
+      "sections": [
+        {
+          "heading": "Overview: The Five Functions",
+          "body_text": "The lecture enumerates **five functions of the placenta**, numbered on the slides as: **1-** transfer of oxygen and nutrients, **2-** excretion, **3-** barrier against infection, **4-** hormone secretion, and **5-immunological** function. Together they make the placenta the fetus's lung, gut, kidney, endocrine gland and immune interface for the whole of pregnancy:\n- **1-** The fetus takes oxygen and nutrients from maternal blood.\n- **2-** Carbon dioxide and waste products pass from fetal to maternal blood.\n- **3-** A barrier against infection — imperfect (syphilis and rubella cross).\n- **4-** Secretion of hCG, estrogen and progesterone.\n- **5-** Immunological tolerance of the fetus.",
+          "key_points": [
+            "Five functions: nutritive/respiratory, excretory, barrier, endocrine, immunological.",
+            "The placenta substitutes for the fetal lungs, gut, kidneys and endocrine system until birth."
+          ]
+        },
+        {
+          "heading": "Respiratory, Nutritive and Excretory Functions",
+          "body_text": "**1- The placenta enables the fetus to take oxygen and nutrients from maternal blood.** All the oxygen and the nutrients required for fetal growth are made available to the fetus across the placental exchange surface, so the fetus depends completely on this organ until delivery.\n\n**2- It serves as the excretory organ of the fetus.** **Carbon dioxide and other waste products pass from fetal to maternal blood**, and the mother then eliminates them through her lungs and kidneys. Before birth, therefore, the placenta performs the work that the fetal lungs, gut and kidneys will take over after delivery.",
+          "key_points": [
+            "Function 1: oxygen and nutrients pass from maternal blood to the fetus.",
+            "Function 2: the placenta is the fetal excretory organ — CO2 and other waste products pass from fetal to maternal blood."
+          ]
+        },
+        {
+          "heading": "Barrier Function — and What Can Still Cross",
+          "body_text": "**3- The placenta forms a barrier against the transfer of infection to the fetus**, but the barrier is selective rather than absolute:\n- **Some organisms can still pass**, and the lecture's two classic examples are the **spirochetes of syphilis** and the **rubella virus** — both causes of congenital (transplacentally acquired) infection.\n- **High molecular weight limits transfer:** substances of high molecular weight — **more than 500 daltons — cannot cross** the placenta.\n\nSo remember the 'placental barrier' as a **size-selective and imperfect infective barrier**: large molecules are excluded from transfer, but the spirochetes of syphilis and the rubella virus still reach the fetus in utero.",
+          "key_points": [
+            "The placenta is a barrier against infection, but syphilis spirochetes and rubella virus cross it.",
+            "Substances with molecular weight above 500 daltons cannot cross the placenta."
+          ],
+          "check": {
+            "prompt": "According to the lecture, which infectious agents can cross the placenta to the fetus?",
+            "options": [
+              "The spirochetes of syphilis and the rubella virus",
+              "No infectious agent ever crosses the placenta",
+              "Only organisms lighter than 500 daltons cross",
+              "All bacteria cross but no virus can"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تشكّل المشيمة حاجزاً ضد انتقال العدوى، لكن اللولبيات المسببة للزهري وفيروس الحصبة الألمانية قادرتان على العبور وإصابة الجنين. الخيارات الأخرى خاطئة: الحاجز ليس مطلقاً، وقاعدة 500 دالتون تخص الوزن الجزيئي للمواد (فما زاد عنها لا يعبر) وليست قاعدة للجراثيم، ولا يصح القول إن البكتيريا كلها تعبر والفيروسات لا تعبر."
+          }
+        },
+        {
+          "heading": "Endocrine Function",
+          "body_text": "**4- It secretes hormones.** The placenta secretes **human chorionic gonadotrophin (hCG), estrogen and progesterone**, together with other hormones, which play an essential part in:\n- **Maintenance of the decidua** — keeping the pregnant endometrium that supports the conceptus.\n- **Growth of the uterus** — allowing the gravid uterus to enlarge throughout pregnancy.\n- **Growth of the breast** — preparing the breasts for lactation.\n\nThis endocrine output sustains the pregnancy; note that the three headline hormones (hCG, estrogen and progesterone) are named together in the lecture as the placenta's essential secretion, and each is tied to one of the three target tissues: decidua, uterus and breast.",
+          "key_points": [
+            "Placental hormones: hCG, estrogen, progesterone (and others).",
+            "Roles: maintenance of the decidua, growth of the uterus, growth of the breast."
+          ]
+        },
+        {
+          "heading": "Immunological Function",
+          "body_text": "**5- Immunological function.** **Fetal tissue has paternally determined antigens foreign to the mother** — half of the fetal genome is paternal, so the fetus is effectively a semi-allogeneic graft — **and yet no rejection occurs**. The slide words it verbatim: 'Fetal tissue has paternally determined antigens foreign to the mother inspite of that no rejection occur.'\n\nThis is the fifth listed function of the placenta: the normal **maternal immunological tolerance** of the antigenically foreign fetus throughout pregnancy. It explains why the fetus survives as an allograft that would otherwise have been rejected like any transplanted tissue carrying foreign, paternally determined antigens.",
+          "key_points": [
+            "Fetal tissue carries paternally determined antigens that are foreign to the mother.",
+            "Despite this, no rejection occurs — the placenta's immunological function.",
+            "The fetus survives as a tolerated semi-allogeneic graft."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "hCG (human chorionic gonadotrophin)",
+          "definition_ar": "الهرمون الموجه للغدد التناسلية المشيمي البشري، أول وأشهر هرمونات المشيمة الحافظة للحمل."
+        },
+        {
+          "term": "Placental barrier",
+          "definition_ar": "الحاجز المشيمي الذي يمنع انتقال معظم العدوى إلى الجنين، مع قدرته على إمرار لولبيات الزهري وفيروس الحصبة الألمانية."
+        },
+        {
+          "term": "Spirochetes of syphilis",
+          "definition_ar": "اللولبيات المسببة للزهري؛ عامل معدٍ قادر على عبور المشيمة وإصابة الجنين (زهري خلقي)."
+        },
+        {
+          "term": "Rubella virus",
+          "definition_ar": "فيروس الحصبة الألمانية؛ يعبر المشيمة إلى الجنين ويسبب إصابة خلقية."
+        },
+        {
+          "term": "Dalton",
+          "definition_ar": "وحدة الوزن الجزيئي؛ المواد التي يزيد وزنها عن 500 دالتون لا تستطيع عبور المشيمة."
+        },
+        {
+          "term": "Immunological tolerance",
+          "definition_ar": "تحمّل جسم الأم لمولدات الضد الأبوية في أنسجة الجنين من دون رفض مناعي طوال الحمل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L4_placenta_c3",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Abnormal Site and Abnormal Adhesion of the Placenta",
+      "summary_ar": "تصنّف المحاضرة اعتلالات المشيمة في خمس مجموعات، أولها اعتلال موضع الانزراع: المشيمة المنزاحة (praevia) بانزراع المشيمة كلياً أو جزئياً على القطعة الرحمية السفلية في 1 من كل 250 حمل. وثانيها اعتلال الالتصاق (طيف accreta): وصول الزغابات إلى العضل الرحمي (accreta، 75-78%)، أو غزوها داخل العضل (increta، 17%)، أو اختراقها كامل الجدار حتى الطبقة البريتونية (percreta، 5%).",
+      "sections": [
+        {
+          "heading": "The Five Groups of Placental Abnormalities",
+          "body_text": "The lecture's section on **abnormalities of the placenta** follows its own classification and numbering:\n- **1-Abnormalities in the site of implantation** — normally the placenta is attached near the fundus; abnormally it may implant on the lower segment (placenta praevia).\n- **2-Abnormal adhesion** — the placenta accreta spectrum (accreta, increta, percreta).\n- **3-Abnormal shape** — bilobed placenta, placenta succenturiata, placenta fenestrata, and (from the morphology diagram) placenta membranacea and the ring (zonary) placenta.\n- **4-Abnormal weight** — the abnormally large and heavy placenta.\n- **5-Placental lesions** — placental infarcts and chorioangioma.\n\nThe umbilical cord has its own abnormalities — false (pseudo) knots, true knots and velamentous insertion — which are covered in the final concept of this lecture.",
+          "key_points": [
+            "Five groups of placental abnormalities: site, adhesion, shape, weight, lesions.",
+            "Numbering used by the lecture: 1-site, 2-adhesion, 3-shape, 4-weight, 5-lesions."
+          ]
+        },
+        {
+          "heading": "Abnormal Site — Placenta Praevia",
+          "body_text": "**Normal implantation site.** Normally the placenta is attached to the uterine wall **near the fundus**, either on the **anterior or the posterior** surface.\n\n**Placenta praevia.** In **1 in 250 pregnancies** the placenta is implanted **wholly or partly on the lower segment of the uterus** — this is called **placenta praevia** (also written placenta previa).\n\n**The illustrations used in the lecture** present a side-by-side anatomical comparison of two conditions displayed as sagittal cross sections of the gravid uterus, each containing a fetus in cephalic presentation. Each label is attached to its structure by a leader line. The labels identify the **normal placenta, umbilical cord, uterine wall and cervix**:\n- **Left illustration — normal placenta:** the placental tissue sits at the **fundus (top) of the uterine cavity**, well away from the cervical opening; the cervix at the inferior aspect of the uterus is clear and the internal os is unobstructed.\n- **Right illustration — placenta previa:** the placenta is positioned abnormally in the **lower uterine segment** — at the bottom of the uterus, directly above and partially or completely **covering the internal cervical os** — in sharp visual contrast to the fundal position of the normal illustration.",
+          "key_points": [
+            "Normal site: uterine wall near the fundus, anterior or posterior surface.",
+            "Placenta praevia = implantation wholly or partly on the lower uterine segment.",
+            "Incidence: 1 in 250 pregnancies.",
+            "Diagram contrast: fundal placenta with clear cervix vs lower-segment placenta covering the internal os."
+          ],
+          "check": {
+            "prompt": "In about what proportion of pregnancies is the placenta implanted wholly or partly on the lower uterine segment?",
+            "options": [
+              "1 in 25 pregnancies",
+              "1 in 250 pregnancies",
+              "1 in 2,500 pregnancies",
+              "1 in 10 pregnancies"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "تنزرع المشيمة كلياً أو جزئياً على القطعة السفلية للرحم في حمل واحد من كل 250 تقريباً، وهذا هو تعريف المشيمة المنزاحة placenta praevia. النسب الأخرى لا تطابق الرقم الذي ذكرته المحاضرة."
+          }
+        },
+        {
+          "heading": "Abnormal Adhesion — The Placenta Accreta Spectrum",
+          "body_text": "**2-Abnormal adhesion** — here the chorionic villi do not remain confined to the decidua but attach to or invade the uterine wall itself:\n- **Placenta accreta:** the chorionic villi penetrate deeply into the uterine wall **to reach the myometrium**; the placental villi attach directly to the myometrium without intervening decidua (a superficial abnormal attachment).\n- **Placenta increta:** the villi **penetrate deeply into the myometrium**, invading the muscular layer itself.\n- **Placenta percreta:** the villi **reach the peritoneal coat** — they have penetrated through the entire thickness of the myometrium, potentially reaching the serosa or adjacent organs such as the bladder.\n\n**Relative frequencies (from the lecture's diagram of placental invasion):** **accreta 75-78%**, **increta 17%**, **percreta 5%** — accreta is by far the commonest form of the spectrum.\n\n**The diagram.** A schematic cross section of the gravid uterus — oriented with the fundus at the top and the cervix at the bottom — shows placental tissue with villous structures within the uterine cavity; it is labeled 'normal (decidua)', **stratum basalis of the endometrium** and **myometrium**, and purple/pink shading highlights the areas of abnormal placental attachment and invasion corresponding to accreta, increta and percreta.",
+          "key_points": [
+            "Accreta: villi reach the myometrium (75-78% of the spectrum).",
+            "Increta: villi invade deeply into the myometrium (17%).",
+            "Percreta: villi penetrate through to the peritoneal coat, possibly reaching serosa or bladder (5%).",
+            "Diagram landmarks: decidua (normal), stratum basalis of endometrium, myometrium."
+          ],
+          "check": {
+            "prompt": "Histology shows chorionic villi penetrating through the full thickness of the myometrium to the peritoneal coat. Which diagnosis fits the depth of invasion?",
+            "options": [
+              "Placenta accreta",
+              "Placenta increta",
+              "Placenta percreta",
+              "Placenta praevia"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "عندما تخترق الزغابات كامل سماكة العضل الرحمي وتصل إلى الغلاف البريتوني فهي المشيمة المخرّقة percreta. أما accreta فوصول الزغابات إلى العضل والتصاقه به، وincreta غزو الزغابات داخل العضل من دون بلوغ البريتوني، وpraevia اعتلال في موضع الانزراع (القطعة السفلية) لا في عمق الاختراق."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Placenta praevia",
+          "definition_ar": "المشيمة المنزاحة: انزراع المشيمة كلياً أو جزئياً على القطعة الرحمية السفلية، وتحدث في 1 من كل 250 حملاً."
+        },
+        {
+          "term": "Lower uterine segment",
+          "definition_ar": "القطعة السفلية من الرحم الواقعة بين جسم الرحم وعنقه؛ انزراع المشيمة فيها يُسمى مشيمة منزاحة."
+        },
+        {
+          "term": "Placenta accreta",
+          "definition_ar": "وصول الزغابات المشيمية إلى العضل الرحمي والتصاقها به دون ساقطة فاصلة؛ الأشيع في الطيف (75-78%)."
+        },
+        {
+          "term": "Placenta increta",
+          "definition_ar": "غزو الزغابات المشيمية عميقاً داخل العضل الرحمي (~17% من حالات طيف الالتصاق)."
+        },
+        {
+          "term": "Placenta percreta",
+          "definition_ar": "اختراق الزغابات لكامل سماكة العضل الرحمي حتى الطبقة البريتونية/المصلية (~5%)."
+        },
+        {
+          "term": "Stratum basalis of endometrium",
+          "definition_ar": "الطبقة القاعدية من بطانة الرحم؛ معلم نسيجي في مخطط طيف الالتصاق المشيمي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L4_placenta_c4",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Abnormalities of Placental Shape",
+      "summary_ar": "تشمل اعتلالات شكل المشيمة: المشيمة ثنائية الفص (فصان متساويان يتصلان بنسيج مشيمي مع أوعية عابرة في الأغشية)، والمشيمة ذات الفص الإضافي succenturiata (فص صغير يتصل بالفص الرئيسي عبر الأغشية وقد يبقى محتجزاً في الرحم فيسبب نزفاً تالياً للولادة، وعلامته فجوة دائرية في الأغشية تصدر عنها أوعية دموية)، والمشيمة مثقوبة النافذة fenestrata، والمشيمة الغشائية membranacea، والمشيمة الحلقية zonary.",
+      "sections": [
+        {
+          "heading": "A- Bilobed Placenta",
+          "body_text": "**3-Abnormal shape — A-Bilobed placenta.** The placenta consists of two equal lobes. In the lecture's wording, the lobes are connected by placental tissue.\n\n**Specimen photograph of a bilobed placenta.** The gross pathology specimen displays **two distinct, roughly equal-sized lobes** of reddish-purple placental tissue joined by a thin bridge of fetal membranes. Chorionic vessels stand out as dark branching lines across the surface of both lobes, and fetal vessels can be seen **traversing from one lobe to the other across the connecting membrane bridge**. The umbilical cord inserts at or near the junction between the two lobes, and a ruler marked in centimeters shows the total width of the specimen is approximately 15-20 cm.\n\n**Clinical significance.** The vessels running between the lobes are **unprotected by Wharton's jelly**; if they cross the internal cervical os — vasa praevia — there is a high risk of **fetal haemorrhage if the membranes rupture** during labour or delivery.",
+          "key_points": [
+            "Bilobed placenta = two equal lobes connected by placental tissue.",
+            "Vessels cross between the lobes in the membranes, unprotected by Wharton's jelly.",
+            "Vasa praevia risk: fetal haemorrhage at membrane rupture."
+          ]
+        },
+        {
+          "heading": "B- Placenta Succenturiata (Accessory Lobes)",
+          "body_text": "**B-Placenta succenturiata (accessory lobes).** Here the placenta consists of **a large lobe and a smaller one connected together by membranes**:\n- The **umbilical cord is inserted into the large lobe**.\n- **Branches of its vessels cross the membranes** to reach the small succenturiate (accessory) lobe.\n- The **accessory lobe may be retained in the uterus after delivery, leading to postpartum haemorrhage** — the classic exam trap of this lecture.\n- **How the retention is suspected:** a **circular gap is detected in the membranes** from which blood vessels pass towards the edge of the main placenta. Always inspect the delivered membranes before declaring the placenta complete.\n\n**Specimen photograph (slide titled 'Placenta accessory lobe').** A separate, smaller, rounded mass of dark red/brown placental tissue with a characteristic lobulated, fleshy texture is located to one side of the large, irregular main placental body; the two are connected by a **vascular bridge of fetal blood vessels running through the fetal membranes**, and a thick, twisted, reddish-pink umbilical cord extends from the main body. The specimen is photographed against a solid blue background, typical of medical specimen photography.",
+          "key_points": [
+            "Large lobe + smaller accessory lobe connected by membranes.",
+            "Cord inserts into the large lobe; vessel branches cross the membranes to the accessory lobe.",
+            "Retained accessory lobe → postpartum haemorrhage.",
+            "Diagnostic clue: circular gap in the membranes with vessels passing toward the edge of the main placenta."
+          ],
+          "check": {
+            "prompt": "After an apparently complete delivery, a woman bleeds heavily with a well-contracted uterus. Inspection of the membranes shows a circular gap with vessels running toward the placental edge. What has been retained?",
+            "options": [
+              "A succenturiate (accessory) lobe",
+              "A cotyledon of the main disc",
+              "A fenestrated window of placenta",
+              "A true knot of the cord"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفجوة الدائرية في الأغشية التي تصدر عنها أوعية باتجاه حافة المشيمة الرئيسية هي العلامة المميزة لبقاء فص إضافي succenturiate في الرحم، وهو ما يسبب نزف ما بعد الولادة. الفصيص العادي جزء من القرص الرئيسي ويُفحص معه، والنافذة fenestrata فجوة في نسيج المشيمة نفسها، والعقدة الحقيقية تخص الحبل السري لا الأغشية."
+          }
+        },
+        {
+          "heading": "C- Placenta Fenestrata",
+          "body_text": "**C-Placenta fenestrata.** A gap is seen in the placenta covered by membranes, giving the appearance of a window.\n\n**In the lecture's diagram of placental morphology variations**, the fenestrated placenta is drawn with a **central defect (window) where placental tissue is absent**; the umbilical cord inserts eccentrically, and vascular branches **radiate around the central fenestration**. Clinically, the membranous window can be mistaken on inspection for missing placental tissue or a rupture, so it belongs on the differential whenever part of the disc looks 'absent' but the membranes are intact over the gap.",
+          "key_points": [
+            "Fenestrata: a gap in the placenta covered by membranes — a window appearance.",
+            "Central defect lacking villous tissue; cord may insert eccentrically; vessels radiate around the fenestration."
+          ]
+        },
+        {
+          "heading": "Other Shape Variants — Placenta Membranacea and Ring (Zonary) Placenta",
+          "body_text": "The lecture's drawing of placental morphology variations also shows two rarer shape variants:\n- **Placenta membranacea (also known as placenta diffusa):** the placenta is **abnormally thin and spread out over a large surface area of the uterus**, so it resembles a **membrane rather than a thick disc**; an inset in the diagram shows a 3D cross-sectional view of the uterus with thin placental tissue lining the internal surface, the cord inserting into this thin layer.\n- **Ring (zonary) placenta:** the placental tissue forms a **complete or partial ring or belt shape**, leaving the **central area (and sometimes the periphery) devoid of villous tissue**; the cord inserts into the ring, and the inset shows the placenta forming a band around the interior circumference of the uterus.\n\nBoth are extremes of placental shape worth recognizing on inspection: a placenta that is 'all membrane' (membranacea) or a 'ring of placenta' (zonary) — alongside the two-lobe bilobed placenta, the accessory succenturiate lobe, and the window of the fenestrated placenta, they complete the lecture's list of shape abnormalities.",
+          "key_points": [
+            "Placenta membranacea (diffusa): abnormally thin placenta covering a large uterine surface, membrane-like.",
+            "Ring (zonary) placenta: placental tissue forms a complete or partial ring; central area devoid of villous tissue.",
+            "The shape-abnormality list: bilobed, succenturiata, fenestrata, membranacea, zonary."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Bilobed placenta",
+          "definition_ar": "مشيمة ثنائية الفص: فصان متساويان يتصلان بنسيج مشيمي، وتعبر الأوعية بينهما عبر الأغشية."
+        },
+        {
+          "term": "Succenturiate (accessory) lobe",
+          "definition_ar": "فص إضافي صغير يتصل بالفص الرئيسي عبر الأغشية والأوعية؛ بقاؤه في الرحم يسبب نزفاً تالياً للولادة."
+        },
+        {
+          "term": "Placenta fenestrata",
+          "definition_ar": "المشيمة مثقوبة النافذة: فجوة في النسيج المشيمي مغطاة بالأغشية وتبدو كنافذة."
+        },
+        {
+          "term": "Placenta membranacea (diffusa)",
+          "definition_ar": "المشيمة الغشائية المنتشرة: مشيمة رقيقة تغطي مساحة واسعة من الرحم كالغشاء لا كقرص سميك."
+        },
+        {
+          "term": "Ring (zonary) placenta",
+          "definition_ar": "المشيمة الحلقية: نسيج مشيمي يشكل حلقة كاملة أو جزئية والمنطقة المركزية خالية من الزغابات."
+        },
+        {
+          "term": "Vasa praevia",
+          "definition_ar": "أوعية جنينية عابرة في الأغشية فوق العنق الداخلي؛ تمزقها عند تمزق الأغشية يسبب نزفاً جنينياً غزيراً."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L4_placenta_c5",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Abnormal Placental Weight and Placental Lesions",
+      "summary_ar": "تزداد مشيمة الحجم والوزن في ثلاث حالات كلاسيكية: الزهري الخلقي والاستسقاء الجنيني وداء السكري. أما آفات المشيمة فتشمل الاحتشاءات المشيمية (البيضاء بسبب ترسب الفيبرين المفرط وقد تتكلس وتوجد في المشيمة الطبيعية، والحمراء بسبب نزف من أوعية الساقطة الأمومية وتتحول القديمة منها إلى بيضاء بترسب الفيبرين) وترافق أساساً حالات ارتفاع الضغط مع الحمل، إضافة إلى الورم الوعائي المشيمي chorioangioma وهو ورم حميد نادر قد يترافق مع كثرة السائل الأمنيوسي.",
+      "sections": [
+        {
+          "heading": "4-Abnormal Weight",
+          "body_text": "**4-Abnormal weight.** The placenta **increases in size and weight** in three classic conditions quoted by the lecture:\n- **Congenital syphilis**\n- **Hydrops fetalis**\n- **Diabetes mellitus**\n\nA placenta that is conspicuously large or heavy at delivery should therefore prompt review of these three maternal and fetal conditions. This trio — congenital syphilis, hydrops fetalis and diabetes mellitus — is the lecture's complete list for the abnormally big, heavy placenta, and pairs directly with the normal term weight of about 500g quoted earlier.",
+          "key_points": [
+            "Big placenta trio: congenital syphilis, hydrops fetalis, diabetes mellitus.",
+            "Normal term weight is about 500g — markedly more suggests these three conditions."
+          ]
+        },
+        {
+          "heading": "5- Placental Lesions: Infarcts",
+          "body_text": "**5- Placental lesions — placental infarcts.**\n- Infarcts are **seen in the placenta at term, mainly in hypertensive states with pregnancy**.\n- **White infarcts: due to excessive fibrin deposition.** A **normal placenta may contain white infarcts**, in which **calcium deposition may occur** — so an occasional white infarct is not in itself proof of disease.\n- **Red infarcts: due to haemorrhage from the maternal vessels of the decidua.**\n- **Old red infarcts finally become white** because of fibrin deposition — the natural history of a red infarct is to age into a white one.\n\nExam hook: **colour tells you the mechanism — white = fibrin deposition, red = fresh haemorrhage from decidual (maternal) vessels** — and the maternal association to quote is hypertension in pregnancy.",
+          "key_points": [
+            "Infarcts are seen in the term placenta, mainly in hypertensive states with pregnancy.",
+            "White infarcts = excessive fibrin deposition; may calcify; may be found in a normal placenta.",
+            "Red infarcts = haemorrhage from maternal vessels of the decidua.",
+            "Old red infarcts finally become white due to fibrin deposition."
+          ],
+          "check": {
+            "prompt": "A term placenta from a hypertensive pregnancy contains a firm white lesion. What is its underlying lesion?",
+            "options": [
+              "Excessive fibrin deposition (a white infarct)",
+              "Fresh haemorrhage from maternal decidual vessels",
+              "A benign vascular tumour (chorioangioma)",
+              "A calcified succenturiate lobe"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الاحتشاء الأبيض ناتج عن ترسب مفرط للفيبرين، وقد تتكلس فيه الأملاح، ويُرى أساساً في حالات ارتفاع الضغط مع الحمل وقد يوجد في المشيمة الطبيعية. أما النزف من أوعية الساقطة فيعطي احتشاءً أحمر، وchorioangioma ورم وعائي حميد، والفص الإضافي نسج مشيمية سوية لا آفة بيضاء."
+          }
+        },
+        {
+          "heading": "Placental Tumour: Chorioangioma",
+          "body_text": "**Placental tumour — chorioangioma.** Chorioangioma is a **rare benign tumour of the placental blood vessels** which **may be associated with polyhydramnios**.\n\nIt is the placental tumour to remember from this lecture: **benign, vascular, rare**, and linked in the same sentence with **polyhydramnios** (excess amniotic fluid). If an exam stem pairs a placental mass with polyhydramnios, chorioangioma is the intended answer.",
+          "key_points": [
+            "Chorioangioma: rare, benign tumour of placental blood vessels.",
+            "Association to remember: polyhydramnios."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Placental infarct",
+          "definition_ar": "احتشاء مشيمي: منطقة متنخرة في المشيمة، تُرى أساساً في حالات ارتفاع الضغط مع الحمل."
+        },
+        {
+          "term": "White infarct",
+          "definition_ar": "احتشاء أبيض ناتج عن ترسب مفرط للفيبرين؛ قد تتكلس فيه الأملاح وقد يوجد في المشيمة الطبيعية."
+        },
+        {
+          "term": "Red infarct",
+          "definition_ar": "احتشاء أحمر ناتج عن نزف من الأوعية الأمومية للساقطة؛ القديم منه يتحول إلى أبيض."
+        },
+        {
+          "term": "Chorioangioma",
+          "definition_ar": "ورم وعائي مشيمي حميد ونادر قد يترافق مع كثرة السائل الأمنيوسي."
+        },
+        {
+          "term": "Polyhydramnios",
+          "definition_ar": "كثرة السائل الأمنيوسي؛ ترتبط بورم المشيمة الوعائي chorioangioma."
+        },
+        {
+          "term": "Hydrops fetalis",
+          "definition_ar": "الاستسقاء الجنيني: أحد أسباب تضخم المشيمة وثقلها إلى جانب الزهري الخلقي والسكري."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L4_placenta_c6",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "The Umbilical Cord: Structure, Knots, and Insertion",
+      "summary_ar": "الحبل السري هو الرابط بين المشيمة والجنين: طوله عادة 50-60 سم (ويتفاوت بين حدود قصوى من 7.5 حتى 180 سم) وقطره 1-2 سم، وهو حبل التوأي الشكل يحمل شريينين سريين ووريداً واحداً داخل جيلة وارتون المحاطة بالغشاء الأمنيوني، ويرتبط بمنتصف السطح الجنيني للمشيمة وبجدار بطن الجنين البطني. من اعتلالاته: العقد الحقيقية (خطرة عند اشتدادها ومع الحبل الطويل)، والعقد الكاذبة، والانغراس الغشائي velamentous حيث تعبر أوعية الحبل الأغشية دون حماية وقد تتمزق عند تمزق الأغشية أو بضع السلى مسببة نزفاً.",
+      "sections": [
+        {
+          "heading": "Structure and Contents of the Umbilical Cord",
+          "body_text": "The umbilical cord is **the connection between placenta and fetus**.\n\n**Measurements:**\n- **Length: 50-60 cm** — the lecture notes that length varies widely, quoting extremes from 7.5 cm up to 180 cm.\n- **Diameter: 1-2 cm.**\n- **Shape: tortuous**, showing **false knots** (pseudoknots).\n\n**Contents:** **two umbilical arteries and one umbilical vein**, embedded in **Wharton jelly** (Wharton's jelly) and surrounded by the **amniotic membrane**.\n\n**Attachments:**\n- One end is attached to the **fetal surface of the placenta near its center**.\n- The other attachment is to the **ventral aspect of the fetal abdominal wall** (the fetal abdomen, at the future umbilicus).\n\n**Functions:** it contains the **umbilical vessels that connect the fetus to the placenta** — the lifeline through which all fetal-maternal exchange travels.",
+          "key_points": [
+            "Length 50-60 cm (extremes quoted: 7.5-180 cm); diameter 1-2 cm.",
+            "Tortuous cord showing false knots.",
+            "Contents: two umbilical arteries + one umbilical vein in Wharton's jelly, surrounded by amniotic membrane.",
+            "Attached near the centre of the fetal surface and to the ventral fetal abdominal wall."
+          ],
+          "check": {
+            "prompt": "How many umbilical arteries and veins does a normal umbilical cord contain?",
+            "options": [
+              "Two arteries and one vein",
+              "One artery and one vein",
+              "Two arteries and two veins",
+              "One artery and two veins"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يحوي الحبل السري الطبيعي شريينين سريين ووريداً واحداً، مغروسة كلها في جيلة وارتون ومحاطة بالغشاء الأمنيوني؛ الحبل ذو الوعاءين (شريان واحد ووريد واحد) حالة غير طبيعية تُذكر في سياقات أخرى."
+          }
+        },
+        {
+          "heading": "True Knots and Pseudoknots (False Knots)",
+          "body_text": "**True knots.** Sometimes true knots develop due to **the fetus passing through a loop in the cord**. If the knot becomes **very tight, it obstructs the fetal circulation and the fetus is at risk**; this **usually occurs when the cord is too long** (a long cord leaves slack loops for the fetus to slip through).\n\n**Specimen photograph of a true knot.** Visual findings on this gross pathological specimen: a long, tubular cord **tightly knotted in its centre**, one segment of the cord having passed through another. The knot and the segment extending from it display **dark purple to bluish-grey discoloration** indicating **venous congestion or ischaemia**, together with areas of **dark red hemorrhage** (blood staining), the surface remaining glossy and moist as in fresh tissue. A tight true knot **compresses the umbilical vessels — particularly the vein** — and can lead to **fetal hypoxia, distress, or intrauterine fetal demise**.\n\n**Pseudoknot (false knot) — slide 'Pseudoknot of umbilical cord'.** The clinical photograph demonstrates the whitish, tubular cord with its twisted, coiled (helical) texture against a black background, bearing a **localized, rounded, translucent whitish protrusion (bulge)**. This localized bulge is a pseudoknot. It is a **local redundancy or kinking of the cord vessels or of Wharton's jelly** — it **mimics a true knot** but is not a loop passed through another loop; pseudoknots are the ordinary 'false knots' seen on the tortuous cord and are usually innocent.",
+          "key_points": [
+            "True knot mechanism: the fetus passes through a loop of cord.",
+            "A very tight knot obstructs fetal circulation — risk of hypoxia, distress, intrauterine demise; compression particularly affects the vein.",
+            "True knots usually occur when the cord is too long.",
+            "Pseudoknot = localized translucent bulge from redundancy/kinking of vessels or Wharton's jelly; mimics but is not a true knot."
+          ]
+        },
+        {
+          "heading": "Velamentous Insertion of the Umbilical Cord",
+          "body_text": "**Normal insertion.** The cord is usually inserted **in the centre of the fetal surface of the placenta**.\n\n**Velamentous insertion.** Occasionally the cord is **inserted into the membranes of the fetal sac some distance from the edge of the placenta**. In these cases the **umbilical blood vessels run through the membranes between placenta and cord** — this is **velamentous insertion**.\n\n**Why this form is more dangerous:** when the **membranes of the fetal sac rupture**, or when an **amniotomy is done**, the **blood vessels may be damaged and bleeding occurs** — the vessels are unsupported in the membranes, without the protection of Wharton's jelly, so the blood that is lost is fetal blood.\n\n**Specimen photograph (slide 'placental velamentous insertion of umbilical cord').** The cord does not insert directly into the placental disc; instead the umbilical vessels **separate and travel within the fetal membranes (amnion and chorion) before reaching the placental margin**. The exposed, unprotected vessels are clearly visible traversing the translucent membranes (a metric ruler marked 0-3 cm accompanies the specimen), while the fetal surface of the placenta shows its typical branching chorionic vessels.",
+          "key_points": [
+            "Normal cord insertion: centre of the fetal surface.",
+            "Velamentous insertion: cord inserts into the membranes some distance from the placental edge; vessels run through the membranes between placenta and cord.",
+            "Danger: at membrane rupture or amniotomy the vessels may be damaged → bleeding (fetal blood).",
+            "On the specimen: exposed vessels travelling within the membranes before reaching the margin."
+          ],
+          "check": {
+            "prompt": "At amniotomy, sudden bleeding occurs from fetal vessels that were running within the membranes. What is the cord abnormality?",
+            "options": [
+              "Central insertion of the cord",
+              "Velamentous insertion of the cord",
+              "A true knot of the cord",
+              "A fenestrated placenta"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الأوعية الجارية داخل الأغشية بين المشيمة والحبل هي تعريف الانغراس الغشائي velamentous insertion، وهو أخطر أنماط انغراس الحبل لأن الأوعية عارية دون حماية جيلة وارتون فتتمزق عند بضع السلى أو تمزق الأغشية. الانغراس المركزي وضع طبيعي، والعقدة الحقيقية تخص الحبل نفسه لا الأغشية، والنافذة fenestrata آفة شكل في المشيمة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Wharton's jelly",
+          "definition_ar": "المادة الهلامية (جيلة وارتون) التي تغمر أوعية الحبل السري وتحميها داخل الحبل."
+        },
+        {
+          "term": "True knot",
+          "definition_ar": "عقدة حقيقية للحبل السري تحدث بمرور الجنين عبر حلقة من الحبل؛ إذا اشتدت عرقلت الدوران الجنيني، وتشاهد عادة مع الحبل الطويل."
+        },
+        {
+          "term": "Pseudoknot (false knot)",
+          "definition_ar": "عقدة كاذبة: انتفاخ موضعي شفاف ناتج عن تكرّج الأوعية أو جيلة وارتون، لا عن مرور الحبل عبر حلقة."
+        },
+        {
+          "term": "Velamentous insertion",
+          "definition_ar": "انغراس غشائي للحبل: يدخل الحبل في أغشية الكيس الجنيني بعيداً عن حافة المشيمة فتعبر أوعيته الأغشية دون حماية."
+        },
+        {
+          "term": "Amniotomy",
+          "definition_ar": "بضع السلى: تمزيق الأغشية اصطناعياً؛ خطره إصابة الأوعية الغشائية عند وجود انغراس غشائي للحبل."
+        },
+        {
+          "term": "Tortuous cord",
+          "definition_ar": "الحبل السري التوأي الملتوي الذي تظهر عليه عقد كاذبة (false knots)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L4_placenta_f01",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "What is the placenta? Give the lecture definition.",
+      "back_text": "A membranous vascular organ that develops in female mammals during pregnancy, lining the uterine wall and partially enveloping the fetus, to which it is attached by the umbilical cord. Following birth, the placenta is expelled. It forms from both embryonic and maternal tissue. (Latin 'placenta' = a flat cake.)",
+      "tags": [
+        "definition",
+        "placenta"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f02",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "From which two tissues does the placenta develop, and which one is fetal vs maternal?",
+      "back_text": "Chorion frondosum = the fetal origin; decidua basalis = the maternal origin.",
+      "mnemonic_ar": "«الفروندوسوم من الجنين، والبازاليس من الأم» — احفظ الثنائية: chorion frondosum جنيني وdecidua basalis أمومي.",
+      "tags": [
+        "origin",
+        "embryology"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f03",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "Where does the placenta normally lie? Quote the lecture's percentages.",
+      "back_text": "In the upper uterine segment in 99.5% of pregnancies — on the posterior surface in 2/3 or the anterior surface in 1/3.",
+      "tags": [
+        "position"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f04",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "What are the dimensions and weight of a normal placenta at term?",
+      "back_text": "A circular, spongy disc: 20 cm in diameter, 2.5 cm thick, weighing about 500g, with a fetal and a maternal surface.",
+      "tags": [
+        "dimensions",
+        "term placenta"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f05",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "Describe the maternal surface of the term placenta (4 features).",
+      "back_text": "Rough and spongy; dull red colour (maternal blood); shaggy appearance (remnants of the decidua basalis); divided into 15-20 cotyledons by the septa.",
+      "mnemonic_ar": "«خشن إسفنجي أحمر باهت أشعث مقسّم»: أربع سمات للسطح الأمومي و15-20 فصيصاً.",
+      "tags": [
+        "maternal surface"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f06",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "card_type": "basic",
+      "front_text": "Describe the fetal surface of the term placenta.",
+      "back_text": "Covered by smooth, glistening amnion overlying the chorion; the umbilical cord is attached at or near its centre; branches of the umbilical vessels are visible beneath the amnion, radiating from the cord insertion.",
+      "tags": [
+        "fetal surface"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f07",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "card_type": "basic",
+      "front_text": "List the five functions of the placenta.",
+      "back_text": "1- Oxygen and nutrient transfer from maternal blood; 2- excretory organ of the fetus (CO2 and other waste products pass to maternal blood); 3- barrier against infection (imperfect — syphilis spirochetes and rubella virus cross); 4- hormone secretion (hCG, estrogen, progesterone); 5- immunological function (no rejection of the fetus carrying foreign paternal antigens).",
+      "mnemonic_ar": "وظائف المشيمة الخمس: «تُنفّس وتُغذّي، تُطرح، تحجب، تُفرز، تتحمّل» — تنفس/تغذية، إطراح، حاجز، هرمونات، مناعة.",
+      "tags": [
+        "functions"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f08",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "card_type": "basic",
+      "front_text": "What is the molecular-weight cut-off for crossing the placenta?",
+      "back_text": "Substances with high molecular weight — more than 500 daltons — cannot cross the placenta.",
+      "explanation_ar": "قاعدة عالية الغلة: أي مادة يزيد وزنها الجزيئي عن 500 دالتون لا تعبر المشيمة؛ الرقم نفسه سؤال امتحاني متكرر.",
+      "tags": [
+        "barrier",
+        "500 daltons"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f09",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "card_type": "basic",
+      "front_text": "Which infectious agents classically cross the 'placental barrier'?",
+      "back_text": "The spirochetes of syphilis and the rubella virus.",
+      "tags": [
+        "infection",
+        "congenital"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f10",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "card_type": "basic",
+      "front_text": "Which hormones does the placenta secrete, and what do they achieve?",
+      "back_text": "Human chorionic gonadotrophin (hCG), estrogen and progesterone, plus other hormones: they maintain the decidua and drive the growth of the uterus and the breast.",
+      "mnemonic_ar": "«hCG-إستروجين-بروجستيرون: تحفظ الساقطة وتُنمّي الرحم والثدي».",
+      "tags": [
+        "hormones"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f11",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "card_type": "basic",
+      "front_text": "Why is the fetus — which carries foreign paternal antigens — not rejected by the mother?",
+      "back_text": "This is the placenta's immunological function: fetal tissue has paternally determined antigens foreign to the mother, and in spite of that no rejection occurs.",
+      "explanation_ar": "الجنين نصف غريب مناعياً عن أمه لأن مولدات الضد فيه أبووية المصدر، ومع ذلك لا يرفضه رحمها — هذه «الوظيفة المناعية» الخامسة للمشيمة.",
+      "tags": [
+        "immunology"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f12",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c3",
+      "card_type": "basic",
+      "front_text": "Define placenta praevia and quote its incidence.",
+      "back_text": "Implantation of the placenta wholly or partly on the lower segment of the uterus (the normal site is near the fundus, anterior or posterior). Incidence: 1 in 250 pregnancies.",
+      "tags": [
+        "praevia",
+        "site"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f13",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c3",
+      "card_type": "basic",
+      "front_text": "Define placenta accreta, increta and percreta, with their relative frequencies.",
+      "back_text": "Accreta: chorionic villi reach the myometrium (75-78% of the spectrum). Increta: villi invade deeply into the myometrium (17%). Percreta: villi penetrate through to the peritoneal coat (5%).",
+      "mnemonic_ar": "تدرّج الاختراق: «اكرِيتا يلامس، إنكريتا يغزو، بيركريتا يخرق حتى البريتوني» — والأشيع اكرِيتا (75-78%).",
+      "tags": [
+        "accreta spectrum"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f14",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c4",
+      "card_type": "basic",
+      "front_text": "What is a bilobed placenta, and why can it be dangerous?",
+      "back_text": "Two equal lobes connected by placental tissue. Fetal vessels cross between the lobes in the membranes, unprotected by Wharton's jelly — if they cross the internal os (vasa praevia), rupture of the membranes risks fetal haemorrhage.",
+      "tags": [
+        "bilobed",
+        "shape"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f15",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c4",
+      "card_type": "basic",
+      "front_text": "A retained succenturiate lobe: what complication does it cause, and how is it suspected at inspection?",
+      "back_text": "Postpartum haemorrhage. It is suspected when a circular gap is detected in the membranes, from which blood vessels pass toward the edge of the main placenta.",
+      "explanation_ar": "لا تكتفٍ بنظرة عابرة إلى المشيمة بعد الولادة؛ افحص الأغشية: أي فجوة دائرية تصدر عنها أوعية دموية تعني بقاء فص إضافي في الرحم — أشهر سبب «خفي» لنزف ما بعد الولادة مع رحم متقلص.",
+      "is_vivid": true,
+      "tags": [
+        "succenturiate",
+        "PPH"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f16",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c4",
+      "card_type": "basic",
+      "front_text": "What is placenta fenestrata?",
+      "back_text": "A gap is seen in the placenta, covered by membranes, giving the appearance of a window (central defect devoid of villous tissue, with vessels radiating around it).",
+      "tags": [
+        "fenestrata"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f17",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c4",
+      "card_type": "basic",
+      "front_text": "Define placenta membranacea (diffusa) and ring (zonary) placenta.",
+      "back_text": "Membranacea: the placenta is abnormally thin and spread over a large surface area of the uterus, resembling a membrane rather than a thick disc. Zonary: placental tissue forms a complete or partial ring/belt, with the central area devoid of villous tissue.",
+      "tags": [
+        "membranacea",
+        "zonary"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f18",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c5",
+      "card_type": "basic",
+      "front_text": "Name the three classic conditions in which the placenta is abnormally large and heavy.",
+      "back_text": "Congenital syphilis, hydrops fetalis, and diabetes mellitus.",
+      "mnemonic_ar": "ثلاثي المشيمة الضخمة: «زهري خلقي، استسقاء جنيني، سكري».",
+      "tags": [
+        "abnormal weight"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f19",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c5",
+      "card_type": "basic",
+      "front_text": "White vs red placental infarcts — mechanism, associations and natural history?",
+      "back_text": "White infarcts: excessive fibrin deposition (a normal placenta may contain them, and calcium deposition may occur in them). Red infarcts: haemorrhage from the maternal vessels of the decidua. Old red infarcts finally become white due to fibrin deposition. Infarcts are seen at term, mainly in hypertensive states with pregnancy.",
+      "explanation_ar": "اللون يدل على الآلية: الأبيض فيبرين، والأحمر نزف من أوعية الساقطة الأمومية؛ والاحتشاء الأحمر القديم «يشيخ» إلى أبيض بترسب الفيبرين.",
+      "tags": [
+        "infarcts"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f20",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c5",
+      "card_type": "basic",
+      "front_text": "What is a chorioangioma, and with which complication is it associated?",
+      "back_text": "A rare benign tumour of the placental blood vessels; it may be associated with polyhydramnios.",
+      "tags": [
+        "chorioangioma"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f21",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "card_type": "basic",
+      "front_text": "Normal umbilical cord: length, diameter and shape?",
+      "back_text": "Length 50-60 cm (varies widely — extremes quoted from 7.5 cm up to 180 cm); diameter 1-2 cm; tortuous in shape, showing false knots.",
+      "tags": [
+        "cord",
+        "measurements"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f22",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "card_type": "basic",
+      "front_text": "What does the umbilical cord contain, and what surrounds it?",
+      "back_text": "Two umbilical arteries and one umbilical vein, embedded in Wharton's jelly and surrounded by amniotic membrane.",
+      "mnemonic_ar": "«شريانان ووريد واحد يسبحون في جيلة وارتون» — 2A + 1V.",
+      "tags": [
+        "cord",
+        "contents"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f23",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "card_type": "basic",
+      "front_text": "How do true knots of the cord form, and when are they dangerous?",
+      "back_text": "The fetus passes through a loop in the cord; if the knot becomes very tight it obstructs the fetal circulation and the fetus is at risk (compression of the vessels, particularly the vein, risking hypoxia, distress or intrauterine fetal demise). This usually occurs when the cord is too long.",
+      "tags": [
+        "true knot"
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_f24",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "card_type": "basic",
+      "front_text": "What is velamentous insertion of the cord, and why is it dangerous?",
+      "back_text": "The cord is inserted into the membranes of the fetal sac some distance from the edge of the placenta, so the umbilical blood vessels run through the membranes between placenta and cord, unprotected. When the membranes rupture or an amniotomy is done, the vessels may be damaged and bleeding (fetal) occurs.",
+      "explanation_ar": "الأوعية عارية داخل الأغشية دون حماية جيلة وارتون؛ أي بضع سلى أو تمزق أغشية قد يمزقها فينزف الجنين لا الأم — ولهذا يوصف الانغراس الغشائي بأنه أخطر أنماط انغراس الحبل.",
+      "is_vivid": true,
+      "tags": [
+        "velamentous",
+        "fetal bleeding"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L4_placenta_m01",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "clinical_vignette": true,
+      "question_stem": "A 26-year-old G1P0 delivers spontaneously at 39 weeks' gestation. The resident examines the placenta: a circular, spongy disc with a smooth, shiny fetal surface and a rough, cotyledonated maternal surface. Which set of gross measurements fits a normal term placenta?",
+      "options": [
+        "Diameter 20 cm, thickness 2.5 cm, weight 500g",
+        "Diameter 15 cm, thickness 1 cm, weight 250 g",
+        "Diameter 25 cm, thickness 4 cm, weight 1 kg",
+        "Diameter 30 cm, thickness 5 cm, weight 1.5 kg"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المشيمة الطبيعية عند تمام الحمل قرص دائري إسفنجي قطره 20 سم وسماكته 2.5 سم ووزنه 500 غرام تقريباً، ولها سطح جنيني وسطح أمومي. الأقطار والأوزان الأصغر (15 سم و250 غرام) أو الأكبر (25 سم فأكثر، 1 كغ فأكثر) ليست قيم المشيمة الناضجة الطبيعية؛ وتذكّر أن المشيمة الضخمة تستدعي البحث عن الزهري الخلقي أو الاستسقاء الجنيني أو السكري.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m02",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "clinical_vignette": true,
+      "question_stem": "While inspecting the maternal surface of a freshly delivered term placenta, a medical student notes a dull red, rough, shaggy surface divided into about 18 slightly raised, fleshy lobules by shallow grooves. What are these lobules and what divides them?",
+      "options": [
+        "Cotyledons, separated by placental septa projecting from the decidua basalis",
+        "Infarcts, separated by fibrous scars",
+        "Chorionic villi, separated by folds of amnion",
+        "Lobules of Wharton's jelly, separated by the cord vessels"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الفصيصات المشيمية cotyledons هي الوحدات المرتفعة اللحمية على السطح الأمومي وعددها 15-20، وتفصلها الحواجز المشيمية septa الناتئة من الساقطة القاعدية على هيئة أخاديد سطحية. ليست احتشاءات (فهي آفات متنخرة لا فصيصات سوية)، ولا زغابات مشيمية (تلك بنية مجهرية)، وجيلة وارتون تخص الحبل السري لا سطح المشيمة.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m03",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c1",
+      "clinical_vignette": false,
+      "question_stem": "In an OSCE station the examiner asks: 'From which two tissues does the placenta develop, and which component is fetal?' The correct answer is:",
+      "options": [
+        "Chorion frondosum (fetal) and decidua basalis (maternal)",
+        "Chorion laeve (fetal) and decidua parietalis (maternal)",
+        "Amnion (fetal) and myometrium (maternal)",
+        "Yolk sac (fetal) and decidua capsularis (maternal)"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تتطور المشيمة من المشعرة الزغابية chorion frondosum (الأصل الجنيني) ومن الساقطة القاعدية decidua basalis (الأصل الأمومي). الخيارات الأخرى تخلط بين أغشية جنينية أخرى لا تبني المشيمة (الكوريون الأملس، الأمنيون، كيس المح) وساقطات رحمية غير قاعدية أو بالعضل الرحمي.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m04",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "clinical_vignette": true,
+      "question_stem": "A pharmacology tutor asks why a high-molecular-weight protein drug is not expected to reach the fetus in utero. Which placental transfer rule from the lecture explains this?",
+      "options": [
+        "Substances with a molecular weight of more than 500 daltons cannot cross the placenta",
+        "All proteins cross the placenta by active transport",
+        "Only substances heavier than 5,000 daltons cross the placenta",
+        "The placenta is freely permeable to all molecules regardless of size"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القاعدة المذكورة في المحاضرة: المواد ذات الوزن الجزيئي المرتفع — أكثر من 500 دالتون — لا تستطيع عبور المشيمة، ولذلك لا يصل الدواء البروتيني عالي الوزن الجزيئي إلى الجنين. الخيارات الأخرى تخالف هذه القاعدة الصريحة: فليس كل البروتين يعبر، والعتبة 500 دالتون لا 5000، والمشيمة ليست منفذاً حراً.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m05",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "clinical_vignette": true,
+      "question_stem": "A 24-year-old primigravida at 16 weeks has a positive syphilis screen, and there is concern about congenital infection. According to the lecture, which infectious agents are classically able to cross the placental barrier?",
+      "options": [
+        "The spirochetes of syphilis and the rubella virus",
+        "Staphylococcus aureus and Escherichia coli",
+        "Gardnerella vaginalis and Candida albicans",
+        "No infectious agent can ever cross the placenta"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تشكّل المشيمة حاجزاً ضد انتقال العدوى، لكن اللولبيات المسببة للزهري وفيروس الحصبة الألمانية قادران على العبور وإصابة الجنين، وهما المثالان اللذان ذكرتهما المحاضرة. جراثيم الجلد والمهبل الشائعة ليست من العوامل العابرة المذكورة، والقول إن لا عامل معدٍ يعبر مطلقاً يناقض المثالين المعروفين.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m06",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "clinical_vignette": false,
+      "question_stem": "Which hormones does the placenta secrete, and what essential roles do they play in pregnancy according to the lecture?",
+      "options": [
+        "hCG, estrogen and progesterone — maintenance of the decidua, growth of the uterus and breast",
+        "FSH and LH — follicular recruitment and ovulation",
+        "Oxytocin and prolactin — labour contractions and milk let-down",
+        "Testosterone and DHEA — fetal virilization"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تفرز المشيمة الهرمون الموجه للغدد التناسلية المشيمي البشري hCG والإستروجين والبروجستيرون وهرمونات أخرى، وتؤدي هذه الهرمونات دوراً جوهرياً في حفظ الساقطة ونمو الرحم ونمو الثدي. أما FSH وLH فهرمونان نخاميان، والأوكسيتوسين والبرولاكتين ليسا من إفراز المشيمة المذكور هنا، والتستوستيرون ليس هرمون المشيمة الوظيفي في هذا السياق.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m07",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c2",
+      "clinical_vignette": false,
+      "question_stem": "Which statement best describes the immunological function of the placenta described in the lecture?",
+      "options": [
+        "Fetal tissue carries paternally determined antigens foreign to the mother, yet no rejection occurs",
+        "The fetus is immunologically identical to the mother",
+        "Maternal antibodies continuously destroy fetal antigens",
+        "A physical calcium wall excludes all maternal immune cells"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نسيج الجنين يحمل مولدات ضد محددة أبوياً وهي غريبة عن الأم، ومع ذلك لا يحدث رفض مناعي — هذه هي الوظيفة المناعية للمشيمة (تحمّل الجنين نصف الغريب). الجنين ليس مطابقاً مناعياً للأم، ولا تجري مهاجمة لمولدات الضد الجنينية (فلا رفض أصلاً)، ولا يوجد «حاجز كلسي» يمنع الخلايا المناعية الأمومية.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m08",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c3",
+      "clinical_vignette": true,
+      "question_stem": "A 32-year-old G4P3 with two previous caesarean sections has a 32-week ultrasound showing the placenta lying on the lower uterine segment over the internal os. The registrar explains that implantation of the placenta wholly or partly on the lower segment is called what, and occurs in about what frequency?",
+      "options": [
+        "Placenta praevia — 1 in 250 pregnancies",
+        "Placenta accreta — 1 in 25 pregnancies",
+        "Placenta percreta — 1 in 2,500 pregnancies",
+        "Placenta succenturiata — 1 in 500 pregnancies"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "انزراع المشيمة كلياً أو جزئياً على القطعة الرحمية السفلية هو تعريف المشيمة المنزاحة placenta praevia، وتحدث في حمل واحد من كل 250. أما accreta وpercreta فاعتلالا التصاق (عمق اختراق الزغابات في الجدار) لا موضع الانزراع، وsuccenturiata اعتلال شكل (فص إضافي)؛ وجميع النسب المرافقة لها في الخيارات خاطئة.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m09",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c3",
+      "clinical_vignette": true,
+      "question_stem": "A 35-year-old G5P4 with three prior caesareans undergoes caesarean hysterectomy for a morbidly adherent placenta. Histology shows chorionic villi penetrating through the full thickness of the myometrium and reaching the peritoneal coat. Which diagnosis fits the depth of invasion?",
+      "options": [
+        "Placenta percreta",
+        "Placenta accreta",
+        "Placenta increta",
+        "Placenta praevia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "عندما تخترق الزغابات المشيمية كامل سماكة العضل الرحمي وتصل إلى الغلاف البريتوني فهي المشيمة المخرّقة percreta. أما accreta فوصول الزغابات إلى العضل والتصاقها به دون ساقطة فاصلة، وincreta غزو الزغابات عميقاً داخل العضل من دون بلوغ البريتوني، وpraevia تتعلق بموضع الانزراع في القطعة السفلية لا بعمق الاختراق.",
+      "difficulty": "advanced",
+      "hints": [
+        "Think only about DEPTH: where do the villi end up?",
+        "Per- = through: the peritoneal coat has been reached."
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_m10",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c3",
+      "clinical_vignette": true,
+      "question_stem": "At a perinatal pathology meeting, the distribution of abnormal placental adhesion is discussed using the lecture's diagram. Which form is the most common, and what is its approximate share of the spectrum?",
+      "options": [
+        "Accreta — about 75-78% of cases",
+        "Increta — about 75% of cases",
+        "Percreta — about 78% of cases",
+        "Accreta — about 5% of cases"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بحسب مخطط المحاضرة: accreta هي الأشيع وتشكل نحو 75-78% من طيف الالتصاق الشاذ، تليها increta بنحو 17% ثم percreta بنحو 5%. الخيارات الأخرى تعكس النسب أو تنسبها إلى الشكل الخطأ.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "obgyn_L4_placenta_m11",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c4",
+      "clinical_vignette": true,
+      "question_stem": "Twenty minutes after a spontaneous vaginal delivery, a 28-year-old G2P1 bleeds briskly despite a well-contracted uterus. The placenta looked complete on first inspection, but re-examination of the membranes reveals a circular gap with blood vessels passing toward the edge of the main placenta. What is the diagnosis?",
+      "options": [
+        "Retained succenturiate (accessory) lobe",
+        "Uterine atony",
+        "Placenta percreta",
+        "Placental chorioangioma"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الفجوة الدائرية في الأغشية التي تصدر عنها أوعية باتجاه حافة المشيمة الرئيسية هي العلامة المميزة لبقاء فص إضافي succenturiate في الرحم، وهو يسبب نزفاً تالياً للولادة. الرحم المتقلص جيداً ينفي الذبول الرحمي، وpercreta تعني التصاق المشيمة باختراق الجدار (تُعيق ولادتها أصلاً)، وchorioangioma ورم وعائي يترافق مع كثرة السائل الأمنيوسي لا مع هذا المشهد.",
+      "difficulty": "advanced",
+      "hints": [
+        "The uterus is contracted — think retained tissue, not atony.",
+        "Look again at the membranes: a circular gap with vessels leading to the placental edge."
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_m12",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "clinical_vignette": true,
+      "question_stem": "A 26-year-old G1P0 at 39 weeks is in latent labour. Immediately after amniotomy, bright-red vaginal bleeding appears and the fetal heart rate falls to 70 bpm. Antenatal ultrasound had shown the cord inserting into the membranes away from the placental edge. What is the most likely explanation?",
+      "options": [
+        "A torn velamentous umbilical vessel running in the membranes",
+        "Placenta praevia bleeding from the lower segment",
+        "Placental abruption with concealed blood loss",
+        "A pseudoknot of the umbilical cord"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الانغراس الغشائي velamentous insertion يعني أن أوعية الحبل تعبر الأغشية دون حماية جيلة وارتون؛ عند بضع السلى أو تمزق الأغشية قد تتمزق هذه الأوعية فينزف الجنين نفسه، فيظهر نزف أحمر فجائي مع تباطؤ قلب الجنين بينما الأم مستقرة. المشيمة المنزاحة تنزف بلا ألم عادة دون هذا الهبوط الحاد المبكر لنبض الجنين، والانفصال المشيمي يترافق مع ألم ورحم متوتر خشبي، والعقدة الكاذبة كتلة سليمة لا تنزف.",
+      "difficulty": "advanced",
+      "hints": [
+        "The mother is stable but the fetus is not — whose blood is being lost?",
+        "Remember where the cord vessels were running on the antenatal scan."
+      ]
+    },
+    {
+      "id": "obgyn_L4_placenta_m13",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c6",
+      "clinical_vignette": true,
+      "question_stem": "A gross photograph of an umbilical cord shows one segment passed through a loop of the cord, with dark purple to bluish-grey discoloration and blood staining beyond the knot. The registrar explains that true knots typically occur under which condition, and endanger the fetus by which mechanism?",
+      "options": [
+        "An excessively long cord, with a tight knot obstructing the fetal circulation",
+        "A very short cord, with the knot tearing the amnion",
+        "A two-vessel cord, with the knot thrombosing the single artery",
+        "A velamentous cord, with the knot avulsing the membranes"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "العقدة الحقيقية تتشكل بمرور الجنين عبر حلقة (عقدة) من الحبل السري، وتحدث عادة عندما يكون الحبل طويلاً جداً؛ فإذا اشتدت عرقلت الدوران الجنيني — بضغط الأوعية وخاصة الوريد — وعرّضت الجنين لنقص الأكسجة والضيق وحتى الوفاة داخل الرحم. الحبل القصير لا يتيح للجنين المرور عبر حلقة، والحبل ذو الوعاءين والانغراس الغشائي مصطلح لا صلة له بآلية العقدة.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m14",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c5",
+      "clinical_vignette": true,
+      "question_stem": "A 30-year-old G2P1 at 34 weeks has polyhydramnios on ultrasound, with a well-circumscribed vascular mass within the placenta. Which placental tumour does the lecture associate with polyhydramnios?",
+      "options": [
+        "Chorioangioma — a rare benign tumour of placental blood vessels",
+        "Placental infarct — an area of fibrin deposition",
+        "Succenturiate lobe — an accessory lobe of placenta",
+        "Cotyledon — a normal lobule of the maternal surface"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الورم الوعائي المشيمي chorioangioma ورم حميد نادر ينشأ من أوعية المشيمة، وقد يترافق مع كثرة السائل الأمنيوسي polyhydramnios — وهي العلاقة التي أكدتها المحاضرة. الاحتشاء المشيمي آفة نسيجية من ترسب الفيبرين أو النزف لا كتلة وعائية، والفص الإضافي نسج مشيمية طبيعية الشكل، والفصيص بنية سوية من السطح الأمومي.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L4_placenta_m15",
+      "lecture_id": "obgyn_L4_placenta",
+      "concept_id": "obgyn_L4_placenta_c5",
+      "clinical_vignette": true,
+      "question_stem": "A 31-year-old with a hypertensive state of pregnancy delivers at 37 weeks. The pathologist reports several firm white lesions in the term placenta, which microscopy shows to be confluent fibrin. How does the lecture classify these lesions?",
+      "options": [
+        "White infarcts — due to excessive fibrin deposition, mainly seen in hypertensive states with pregnancy",
+        "Red infarcts — due to haemorrhage from maternal decidual vessels",
+        "Chorioangioma — a benign vascular tumour",
+        "Normal cotyledons separated by septa"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الاحتشاءات البيضاء ناتجة عن ترسب مفرط للفيبرين، وتُرى أساساً في حالات ارتفاع الضغط مع الحمل، وقد تحتوي المشيمة الطبيعية على احتشاءات بيضاء قد تتكلس فيها. أما الاحتشاءات الحمراء فسببها نزف من الأوعية الأمومية للساقطة وتتحول القديمة منها إلى بيضاء بترسب الفيبرين، وchorioangioma ورم وعائي حميد، والفصيصات بنية طبيعية مفصولة بحواجز لا آفات بيضاء.",
+      "difficulty": "advanced"
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L4_placenta_case1",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Primary Postpartum Haemorrhage from a Retained Succenturiate Lobe",
+      "scenario": "A 28-year-old woman bleeds heavily twenty minutes after a spontaneous vaginal delivery. Her uterus is well contracted, yet fresh vaginal bleeding continues. The answer to 'why is she still bleeding?' lies in the delivered placenta and its membranes.",
+      "vignette": {
+        "age": 28,
+        "sex": "female",
+        "chief_complaint": "Heavy vaginal bleeding after vaginal delivery",
+        "history": "G2P1, spontaneous vaginal delivery at 39+5 weeks of a live male infant, birthweight 3,300 g. Oxytocin infusion is running. The placenta delivered spontaneously about 5 minutes after birth and was declared 'complete' on a quick first look. Antenatal course was uneventful; no history of bleeding disorder or anticoagulant use.",
+        "vitals": {
+          "bp": "98/62 mmHg",
+          "hr": "118 bpm",
+          "rr": "22/min",
+          "temp": "36.6 °C",
+          "spo2": "98% on room air"
+        },
+        "exam": "Uterus well contracted, firm and midline at the level of the umbilicus. Steady trickle of fresh dark red blood from the vagina. Perineum intact; on inspection with a speculum the cervix and vaginal walls show no laceration. No pallor or confusion yet.",
+        "labs": [
+          {
+            "name": "Haemoglobin",
+            "value": "10.1 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "Platelets",
+            "value": "172 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Fibrinogen",
+            "value": "4.1 g/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Bedside ultrasound of the uterus: the main placental disc is not retained; a small echogenic plaque of tissue remains adherent to the uterine wall, separate from the contracting myometrium."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L4_placenta_case1_s1",
+          "prompt": "With the uterus well contracted and the genital tract intact, what is the most likely cause of this primary postpartum haemorrhage?",
+          "options": [
+            "Uterine atony",
+            "Retained succenturiate (accessory) placental lobe",
+            "Cervical laceration",
+            "Coagulopathy"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الرحم المتقلص جيداً ينفي الذبول الرحمي كسبب أولي، والفحص المهبلي ينفي تمزق العنق، والمختبرات لا تدعم اضطراب التخثر. البقاء الأرجح هو نسيج مشيمي محتجز: الفص الإضافي succenturiate الذي قد يبقى في الرحم بعد ولادة تبدو معها المشيمة «كاملة»، وهو ما يفسر النزف مع رحم متقلص.",
+          "xp": 10,
+          "hints": [
+            "The uterus is firm — the 'four Ts' collapse to retained tissue here.",
+            "The placenta was only given a 'quick first look'."
+          ]
+        },
+        {
+          "id": "obgyn_L4_placenta_case1_s2",
+          "prompt": "Which finding on re-inspection of the delivered placenta and membranes will confirm the diagnosis?",
+          "options": [
+            "A circular gap in the membranes, with blood vessels passing from it toward the edge of the main placenta",
+            "A window-like defect in the disc itself, covered by membranes",
+            "Two equal-sized lobes joined by placental tissue",
+            "Chorionic vessels radiating from a central cord insertion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العلامة المميزة لبقاء الفص الإضافي هي فجوة دائرية في الأغشية تصدر عنها أوعية دموية باتجاه حافة المشيمة الرئيسية، لأن الأوعية كانت تعبر من الفص الرئيسي إلى الفص الإضافي عبر الأغشية. النافذة المغطاة بالأغشية تصف fenestrata، والفصان المتساويان يصفان bilobed، والأوعية المشيمية المتشعبة من إدخال مركزي وصف السطح الجنيني الطبيعي.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L4_placenta_case1_s3",
+          "prompt": "What is the definitive next step in management?",
+          "options": [
+            "Repeat oxytocin bolus and observe for another hour",
+            "Uterine exploration and removal of the retained lobe",
+            "Immediate hysterectomy",
+            "Uterine packing alone, with transfer to theatre later"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "التدبير الحاسم هو استكشاف الرحم وإزالة الفص الإضافي المحتجز، فيتوقف النزف الناجم عن بقائه. مضادات الانقباض وحدها لا تنفع لأن الرحم متقلص أصلاً، واستئصال الرحم إجراء مفرط قبل إزالة النسيج المحتجز، والحزم وحده يؤجل العلاج النهائي ويطيل النزف.",
+          "xp": 15,
+          "hints": [
+            "The bleeding source is tissue left behind — remove it.",
+            "Uterotonics treat a relaxed uterus; hers is already contracted."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: نزف تالٍ للولادة أولي بسبب فص مشيمي إضافي محتجز (retained succenturiate lobe). الدرس الأهم: لا تعتمد على أن المشيمة «تبدو كاملة» بعد الولادة؛ افحص المشيمة والأغشية معاً، فالفجوة الدائرية التي تصدر عنها أوعية نحو حافة المشيمة الرئيسية هي التوقيع المميز لبقاء الفص الإضافي، وإزالته فوراً توقف النزف وتغني عن تدابير أكبر.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L4_placenta_case2",
+      "lecture_id": "obgyn_L4_placenta",
+      "title": "Fetal Bleeding at Amniotomy in Velamentous Cord Insertion",
+      "scenario": "A 26-year-old primigravida at 39 weeks in latent labour develops sudden vaginal bleeding and a deep fetal bradycardia seconds after artificial rupture of the membranes. It is the fetus, not the mother, who is exsanguinating.",
+      "vignette": {
+        "age": 26,
+        "sex": "female",
+        "chief_complaint": "Sudden vaginal bleeding with fetal bradycardia after amniotomy",
+        "history": "G1P0 at 39+0 weeks in spontaneous latent labour, contractions every 5-7 minutes, cephalic presentation, head engaged. Amniotomy was performed for slow progress. Immediately afterwards, bright-red vaginal bleeding was noted and the CTG showed a prolonged fetal bradycardia. A third-trimester ultrasound report had described the umbilical cord inserting into the fetal membranes away from the placental edge.",
+        "vitals": {
+          "bp": "108/70 mmHg",
+          "hr": "102 bpm",
+          "rr": "20/min",
+          "temp": "36.8 °C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Maternal abdomen: uterus soft and relaxes normally between contractions, non-tender, no rigidity or guarding. Moderate bright-red vaginal bleeding continues. No cord prolapse on careful examination. Continuous fetal heart monitoring: bradycardia 68-72 bpm persisting for more than 3 minutes.",
+        "labs": [
+          {
+            "name": "Maternal haemoglobin",
+            "value": "11.3 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Maternal platelets",
+            "value": "210 x10^9/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Antenatal colour Doppler: the umbilical vessels leave the cord insertion and run through the fetal membranes toward the placental margin, unprotected by Wharton's jelly — velamentous insertion of the cord."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L4_placenta_case2_s1",
+          "prompt": "What is the most likely source of the bleeding and the fetal bradycardia?",
+          "options": [
+            "A torn velamentous umbilical vessel running in the membranes",
+            "Placental abruption",
+            "Placenta praevia",
+            "Uterine rupture"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند الانغراس الغشائي تعبر أوعية الحبل الأغشية دون حماية جيلة وارتون؛ وقد يمزقها بضع السلى أو تمزق الأغشية، فينزف الجنين نفسه: نزف مباغت مع تباطؤ قلب الجنين بينما الأم مستقرة. الانفصال المشيمي يسبب ألماً شديداً ورحماً متوتراً خشبياً مع نزف متنكر غالباً، والمشيمة المنزاحة كانت ستشخّص قبل الولادة وتنزف بلا ألم من دون هذا الهبوط الحاد لنبض الجنين، وتمزق الرحم نادر في قرينة بكر لا عمليات سابقة لها.",
+          "xp": 12,
+          "hints": [
+            "The mother is stable while the fetus collapses — whose blood is being lost?",
+            "Where were the cord vessels running according to the Doppler report?"
+          ]
+        },
+        {
+          "id": "obgyn_L4_placenta_case2_s2",
+          "prompt": "Which anatomical abnormality of the cord underlies this event?",
+          "options": [
+            "The cord was inserted into the membranes some distance from the placental edge, so its vessels ran through the membranes",
+            "The cord was inserted centrally on the fetal surface of the placenta",
+            "The placenta consisted of two equal lobes",
+            "The placenta had a window covered by membranes"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "هذا هو تعريف الانغراس الغشائي velamentous insertion: يدخل الحبل في أغشية الكيس الجنيني بعيداً عن حافة المشيمة، فتجري الأوعية السرية داخل الأغشية بين المشيمة والحبل عارية دون حماية. الانغراس المركزي على السطح الجنيني هو الوضع الطبيعي، والمشيمة ثنائية الفص والنافذة fenestrata اعتلالان في شكل المشيمة لا صلة لهما بموضع إدخال الحبل.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L4_placenta_case2_s3",
+          "prompt": "What is the priority in management?",
+          "options": [
+            "Immediate emergency caesarean delivery for fetal compromise",
+            "Observe with continuous CTG and re-assess in 2 hours",
+            "Give tocolysis and transfuse the mother",
+            "Perform a vaginal examination only, to exclude cord prolapse"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "النزف من أوعية الحبل نزف جنيني مهدد للحياة، والجنين في تباطؤ ممتد؛ الأولوية هي الولادة القيصرية الإسعافية لإنقاذ الجنين. المراقبة أو إعادة التقييم بعد ساعتين تأخير قاتل، والتثبيط الرحمي ونقل الدم للأم لا يعالجان مصدر النزف (الجنين)، وفحص المهبل لاستبعاد هبوط الحبل خطوة تشخيصية وحدها لا تدبيراً علاجياً.",
+          "xp": 18,
+          "hints": [
+            "A bradycardia of 70 bpm for 3+ minutes after ROM with bleeding = act now.",
+            "Deliver the baby to stop the fetal blood loss."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: انغراس غشائي للحبل السري (velamentous insertion) مع تمزق وعاء جنيني عند بضع السلى، فنزف الجنين وظهر التباطؤ الجنيني المطوّل. الدرس المفتاحي: أي نزف مهبلي يلي تمزق الأغشية أو بضع السلى مصحوب بعلامات انزعاج جنيني عند أم مستقرة ديناميكياً يجب أن يثير الشك بتمزق أوعية غشائية غير محمية؛ ففي الانغراس الغشائي تجري الأوعية عارية في الأغشية من دون حماية جيلة وارتون، ولذلك يوصف بأنه أخطر أنماط إدخال الحبل السري.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

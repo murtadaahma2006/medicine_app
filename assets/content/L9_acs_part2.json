@@ -1,0 +1,1076 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L9_acs_part2",
+    "specialty": "internal_medicine",
+    "title": "Acute Coronary Syndrome Part II (Diagnosis and Management)",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L9 ACS PART II.pdf",
+      "page_count": 80
+    },
+    "tags": [
+      "acute coronary syndrome",
+      "STEMI",
+      "NSTEMI",
+      "unstable angina",
+      "troponin",
+      "universal definition",
+      "GRACE score",
+      "primary PCI",
+      "fibrinolysis",
+      "secondary prevention"
+    ],
+    "order_index": 9,
+    "golden_tip": [
+      "STEMI = ST elevation in two contiguous leads (>= 1 mm limb leads, >= 2 mm chest leads) OR new LBBB; Non-STE-ACS = ST depression and/or T-wave inversion. NSTEMI vs unstable angina is decided ONLY by troponin (rise/fall above the 99th centile = NSTEMI).",
+      "EXAM TRAP: Early VF (within the first 48 hours) successfully resuscitated carries the SAME prognosis as no VF at all — but ventricular arrhythmias in the convalescent phase predict sudden death.",
+      "Inferior STEMI with hypotension: think RIGHT VENTRICULAR infarction (confirm with right-sided leads V3R/V4R) — treat with fluid loading, NOT nitrates/diuretics. Other causes: LV failure, bradyarrhythmia, acute severe MR, VSR, Bezold-Jarisch reflex.",
+      "NSAIDs and steroids are AVOIDED in post-MI pericarditis — they increase the risk of aneurysm formation and myocardial rupture; use opiate-based analgesia.",
+      "Fibrinolysis: ST elevation in two contiguous leads or new LBBB, within 12 hours of pain onset (best within 6, best of all within 3), and no contraindications — otherwise Primary PCI is the reperfusion strategy of choice."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L9_c1",
+      "lecture_id": "L9_acs_part2",
+      "title": "The ACS Spectrum, Universal Definition and Biomarkers",
+      "summary_ar": "طيف المتلازمة التاجية الحادة (UA/NSTEMI/STEMI)، التعريف العالمي الرابع لاحتشاء العضلة، أسباب أذية العضلة، وتوقيت الإنزيمات الحيوية.",
+      "sections": [
+        {
+          "heading": "The ACS Spectrum and Working Diagnosis",
+          "body_text": "**Acute coronary syndrome (ACS)** is a term that encompasses **unstable angina and myocardial infarction (NSTEMI and STEMI)**. Following **disruption of a vulnerable plaque**, patients experience ischaemic discomfort from a reduction of flow through the affected epicardial coronary artery — caused by a **completely occlusive thrombus or a subtotally occlusive thrombus**.\n\n**The working diagnosis by ECG (2023 ESC pathway):** if a patient has signs/symptoms suggestive of ACS, **perform an ECG within 10 minutes of first medical contact (FMC)**:\n- **STEMI:** **ST-segment elevation OR new LBBB.**\n- **Non-STE-ACS (NSTE-ACS):** **ST-segment depression and/or T-wave inversion** (or normal ECG).\n\n**The final diagnosis** then depends on **high-sensitivity cardiac troponin (hs-cTn) — rise and fall = NSTEMI; non-elevated = unstable angina** — plus angiography/imaging as required (non-ACS diagnoses are also possible).\n\n**Q-wave evolution:** of patients presenting with ST-segment elevation, the **majority ultimately develop a Q wave on the ECG (Q-wave MI)**, while a minority do not (older literature: 'non-Q-wave MI'). **The majority of NSTEMI patients do NOT develop a Q wave; a minority do.** The 2023 ESC spectrum figure arranges severity from oligo/asymptomatic presentations through increasing chest pain, persistent pain, cardiogenic shock/acute HF and cardiac arrest — with ECG from normal, ST depression, ST elevation to malignant arrhythmia.",
+          "key_points": [
+            "ACS = unstable angina + NSTEMI + STEMI after plaque disruption",
+            "ECG within 10 minutes of FMC",
+            "STEMI: ST elevation or new LBBB; NSTE-ACS: ST depression and/or T inversion",
+            "NSTEMI vs unstable angina decided by troponin rise/fall",
+            "Most STEMI -> Q-wave MI; most NSTEMI -> no Q wave"
+          ],
+          "check": {
+            "prompt": "A patient has ischaemic chest pain, ST depression in V4-V6 and a troponin that rises from 20 to 340 ng/L. What is the final diagnosis?",
+            "options": [
+              "Unstable angina",
+              "NSTEMI",
+              "STEMI",
+              "Non-ACS chest pain"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الزلة الإكليلية مع انحراف ST هابط (غير مرتفع) + ارتفاع/صعود تروبونين = احتشاء دون ارتفاع ST (NSTEMI)؛ الذبحة غير المستقرة يكون فيها التروبونين طبيعياً، والSTEMI يتطلب ارتفاع ST أو LBBB جديد."
+          }
+        },
+        {
+          "heading": "The Fourth Universal Definition of Myocardial Infarction",
+          "body_text": "**Box 16.47 Criteria for diagnosis of an ACUTE MI** — detection of a **rise and/or fall of cardiac biomarker values (preferably cardiac troponin), with at least one value above the 99th centile upper reference limit (URL)**, AND at least one of:\n1. **Symptoms of ischaemia.**\n2. **New or presumed new significant ST-T changes or new left bundle branch block.**\n3. **Development of pathological Q waves.**\n4. **Imaging evidence of new loss of viable myocardium or new regional wall motion abnormality.**\n5. **Identification of an intracoronary thrombus by angiography or post-mortem.**\n\n**Box 16.48 Criteria for a PRIOR (healed) MI** includes any one of: pathological Q waves with or without symptoms; imaging evidence of a zone of reduced/absent perfusion with viable myocardium; pathological findings of a healed or healing MI.\n\n**The 'Ten commandments' of the Fourth Universal Definition (ESC):**\n1. **Myocardial injury** is defined by cardiac troponin values **above the 99th percentile URL**.\n2. Myocardial injury may be **acute (rise and/or fall of cTn)**, as in acute heart failure, or **chronic (<=20% variation of cTn values)**, as in chronic kidney disease.\n3. Myocardial injury may occur in a variety of situations — after coronary procedural intervention and/or with cardiovascular and non-cardiovascular illnesses.\n4. **Occurrence of ACUTE myocardial injury in the setting of ACUTE myocardial ischaemia defines acute myocardial infarction.**\n\n**TABLE 58.3 Causes of myocardial injury (troponin elevation WITHOUT necessarily infarction):**\n- **Primary myocardial ischaemia:** plaque rupture; intraluminal coronary artery thrombus formation.\n- **Supply-demand imbalance:** tachy-/bradyarrhythmias; aortic dissection or severe aortic valve disease; hypertrophic cardiomyopathy; cardiogenic/hypovolaemic/septic shock; severe respiratory failure; severe anaemia; hypertension with/without LVH; **coronary spasm**; coronary embolism or vasculitis; coronary endothelial dysfunction without significant CAD.\n- **Not related to myocardial ischaemia:** cardiac contusion, surgery, ablation, pacing or defibrillator shocks; rhabdomyolysis with cardiac involvement; myocarditis; cardiotoxic agents (anthracyclines, trastuzumab).\n- **Multifactorial/indeterminate:** heart failure; stress (takotsubo) cardiomyopathy; severe PE or pulmonary hypertension; sepsis and critically ill patients; renal failure; severe acute neurologic disease (stroke, SAH); infiltrative diseases (amyloidosis, sarcoidosis); strenuous exercise.",
+          "key_points": [
+            "Acute MI: troponin rise/fall >99th centile URL + one of 5 criteria (symptoms, new ST-T/LBBB, Q waves, imaging, thrombus)",
+            "Myocardial injury = cTn >99th percentile; acute = rise/fall; chronic = <=20% variation (CKD)",
+            "Acute injury + acute ischaemia = acute MI",
+            "Supply-demand imbalance and non-ischaemic injury lists explain troponin elevation without MI"
+          ]
+        },
+        {
+          "heading": "Cardiac Biomarkers: Timing and Interpretation (Fig. 16.69)",
+          "body_text": "**Serial measurements of serum troponin should be taken.**\n- **In unstable angina there is NO detectable rise in troponin** — the diagnosis rests on the clinical history and ECG changes.\n- **MI causes a rise in plasma troponin T and I concentrations**: levels **increase within 3-6 hours, peak at about 36 hours, and remain elevated for up to 2 weeks.**\n- **Creatine kinase (CK)** and the troponins are the **first to rise**, followed by **aspartate aminotransferase (AST)** and then **lactate (hydroxybutyrate) dehydrogenase (LDH)** — the classic 'wave' of Fig. 16.69.\n- **In patients treated with reperfusion therapy, a rapid rise in plasma creatine kinase (curve CK(R)) occurs due to a washout effect.**\n- **A full blood count may reveal leucocytosis peaking on the first day; ESR and CRP are also elevated.**\n- **Lipids should be measured within 24 hours of presentation** — there is often a transient fall in cholesterol in the 3 months following infarction.\n\n**Other investigations:** **echocardiography** is normally performed before discharge (ventricular function, wall motion, complications); **coronary angiography** should be considered with a view to revascularisation in all patients at **moderate or high risk** — those who fail to settle on medical therapy, extensive ECG changes, elevated troponin, or severe pre-existing stable angina.",
+          "key_points": [
+            "Unstable angina: NO troponin rise",
+            "Troponin: rises 3-6 h, peaks ~36 h, elevated up to 2 weeks",
+            "CK and troponins rise first, then AST, then LDH; reperfusion causes CK washout",
+            "Leucocytosis day 1; ESR/CRP elevated; lipids within 24 h (later transient fall)",
+            "Echo before discharge; angiography for medium/high-risk patients"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "99th centile URL",
+          "definition_ar": "الحد المرجعي العلوي للتروبونين (المئين 99) الذي يفوقه يُعد أذية عضلة قلبية."
+        },
+        {
+          "term": "Working diagnosis",
+          "definition_ar": "التشخيص الأولي بالتخطيط (STEMI مقابل NSTE-ACS) قبل التروبونين، خلال 10 دقائق من أول تماس طبي."
+        },
+        {
+          "term": "CK washout",
+          "definition_ar": "ارتفاع سريع للكرياتين كيناز بعد إعادة التروية بفعل غسل الإنزيم من النسيج المُعاد ترويته."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L9_c2",
+      "lecture_id": "L9_acs_part2",
+      "title": "Clinical Features, Arrhythmias and Risk Stratification",
+      "summary_ar": "السريريات (الصندوق 16.49) مع علامات التنبيه الودي والمبهمي وقصور العضلة، اضطرابات النظم (16.50) وإدارتها، ودرجة GRACE لترتيب الخطورة.",
+      "sections": [
+        {
+          "heading": "Clinical Features (Box 16.49)",
+          "body_text": "**Symptoms:**\n- **Prolonged cardiac-type pain: chest, throat, arms, epigastrium or back** — the pain occurs in the same sites as angina but is **usually more severe and lasts longer**; often described as crushing/heavy and accompanied by **anxiety and fear of impending death**.\n- **Nausea and vomiting.**\n- **Breathlessness.**\n- **Collapse/syncope.**\n\n**Physical signs:**\n- **Signs of sympathetic activation: pallor, sweating, tachycardia.**\n- **Signs of vagal activation: vomiting, bradycardia.**\n- **Signs of impaired myocardial function: hypotension, oliguria, cold peripheries; narrow pulse pressure; raised JVP; third heart sound; quiet first heart sound; diffuse apical impulse; lung crepitations.**\n- **Low-grade fever.**\n- **Complications listed in the box: mitral regurgitation and pericarditis.**",
+          "key_points": [
+            "Prolonged pain: chest/throat/arms/epigastrium/back; anxiety and fear of death",
+            "Sympathetic: pallor, sweating, tachycardia; vagal: vomiting, bradycardia",
+            "Impaired myocardial function: hypotension, oliguria, cold peripheries, S3, quiet S1, crepitations",
+            "Low-grade fever; MR and pericarditis as complications"
+          ]
+        },
+        {
+          "heading": "Arrhythmias in ACS (Box 16.50) and Their Management",
+          "body_text": "**Common arrhythmias:** ventricular fibrillation; ventricular tachycardia; **accelerated idioventricular rhythm**; ventricular ectopics; atrial fibrillation; atrial tachycardia; **sinus bradycardia (particularly after inferior MI)**; atrioventricular block.\n\n**Management principles:**\n- Arrhythmias are common but **often transient and of no haemodynamic or prognostic importance**; risk is minimised by **adequate pain relief, rest and correction of hypokalaemia**.\n- **VF occurs in 5-10% of patients who reach hospital** and is thought to be the major cause of death in those who die before receiving medical attention. **Prompt defibrillation restores sinus rhythm and is life-saving.**\n- **The prognosis of patients with EARLY VF (within the first 48 hours) who are successfully and promptly resuscitated is IDENTICAL to that of patients who do not suffer VF.**\n- **Ventricular arrhythmias during the CONVALESCENT phase may be a marker of poor ventricular function and may herald sudden death** — selected patients benefit from electrophysiological testing and specific anti-arrhythmic therapy including ICDs.\n- **AF** is common but frequently transient and usually does not require emergency treatment — **but if it causes a rapid ventricular rate with hypotension or circulatory collapse, prompt cardioversion is essential**; otherwise digoxin or a beta-blocker. **AF may be a feature of impending or overt LV failure** — therapy is ineffective if failure is not recognised and treated. **Anticoagulation is required if AF persists.**\n- **Bradycardia** does not require treatment unless there is hypotension or haemodynamic deterioration, in which case **atropine (0.6-1.2 mg IV)** may be given. **Inferior MI may be complicated by AV block** (usually transient, nodal, with a stable escape rhythm — as opposed to anterior MI where block suggests extensive necrosis).",
+          "key_points": [
+            "Correct hypokalaemia, pain relief, rest to minimise arrhythmia risk",
+            "VF in 5-10% reaching hospital; prompt defibrillation is life-saving",
+            "Early VF (<48 h) resuscitated: prognosis identical to no VF",
+            "Convalescent ventricular arrhythmia: marker of poor ventricular function, sudden death risk -> ICD consideration",
+            "AF with collapse: prompt cardioversion; AF with failure: treat the failure; persisting AF: anticoagulate",
+            "Bradycardia: atropine 0.6-1.2 mg IV only if haemodynamically significant"
+          ],
+          "check": {
+            "prompt": "A patient suffers VF 18 hours after an anterior STEMI and is promptly defibrillated to sinus rhythm. What does this imply prognostically?",
+            "options": [
+              "It predicts a very poor outlook and automatic ICD implantation",
+              "Early VF (within the first 48 hours) that is promptly resuscitated carries the same prognosis as no VF at all",
+              "It indicates failed reperfusion in every case",
+              "It mandates lifelong amiodarone"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الرجفان البطيني المبكر (خلال 48 ساعة الأولى) المعالج بنجاح يحمل نفس مآل من لم يُصب به؛ أما اضطرابات النظم البطينية في طور النقاهة فهي التي تنبئ بخطر موت مفاجئ وتفكير بICD."
+          }
+        },
+        {
+          "heading": "Risk Stratification: The GRACE Score (Fig. 16.62)",
+          "body_text": "The **GRACE score** stratifies risk in ACS using:\n- **Killip class** (I = 0 points ... IV = 59 points)\n- **Systolic BP** (very low scores the most points: <=80 mmHg = 58; high scores zero)\n- **Heart rate** (>=200 bpm = 46 points)\n- **Age** (>=90 years = 100 points)\n- **Serum creatinine** (rising with level)\n- **Cardiac arrest at admission = 39 points; ST-segment deviation = 28 points; elevated cardiac enzymes = 14 points.**\n\n**Clinical use:** clinical risk-factor analysis using tools such as the GRACE score should be performed **to identify patients selected for intensive therapy, and specifically early inpatient coronary angiography — a score of 140 points or more indicates early intervention.** The lecture's worked example calculates a total (e.g., a patient with Killip II, SBP 99, HR 100, age 65, creatinine 105, ST deviation and elevated enzymes) and reads out the predicted mortality.\n\n**Selected medium- to high-risk patients benefit from in-hospital coronary angiography and revascularisation but this does NOT need to take place in the first 12 hours unless there are high-risk features such as ongoing chest pain or dynamic ECG changes. Reperfusion therapy with PCI confers NO immediate mortality benefit in non-ST-elevation ACS.**",
+          "key_points": [
+            "GRACE components: Killip, SBP, HR, age, creatinine, arrest at admission, ST deviation, elevated enzymes",
+            "GRACE >= 140 -> early inpatient angiography/intensive therapy",
+            "NSTE-ACS angiography: not in first 12 h unless high-risk features (ongoing pain, dynamic ECG)",
+            "PCI gives no immediate mortality benefit in NSTE-ACS — it is risk-driven"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Accelerated idioventricular rhythm",
+          "definition_ar": "نظم بطيني متسارع بطيء (عادة 60-100) شائع وعابر بعد إعادة التروية ولا يستوجب علاجاً."
+        },
+        {
+          "term": "GRACE score",
+          "definition_ar": "درجة خطورة للمتلازمة التاجية الحادة (Killip، ضغط، معدل، عمر، كرياتينين، توقف قلب، انحراف ST، إنزيمات)؛ ≥140 تدخل مبكر."
+        },
+        {
+          "term": "Killip class",
+          "definition_ar": "تصنيف قصور القلب في الاحتشاء: I بلا احتقان، II احتقان/مفرقعات، III وذمة رئوية، IV صدمة قلبية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L9_c3",
+      "lecture_id": "L9_acs_part2",
+      "title": "Complications of Myocardial Infarction",
+      "summary_ar": "مضاعفات الاحتشاء: نظميات، الذبحة الناكسة، التامور والدرسلر، القصور الحاد، إعادة التشكل وال أم الدم، تمزق الحلمة والحجاب والجدار، واحتشاء البطين الأيمن.",
+      "sections": [
+        {
+          "heading": "Ischaemic, Inflammatory and Mechanical Complications",
+          "body_text": "**Recurrent angina:** patients who develop recurrent angina **at rest or on minimal exertion** following an ACS are at high risk and require prompt coronary angiography.\n\n**Pericarditis:** occurs only following infarction and is **particularly common on the SECOND and THIRD days**. The patient may recognise that a **different pain** has developed — same site but **positional and worse (or present only) on inspiration**; a **pericardial rub** may be audible. **Opiate-based analgesia should be used; NSAIDs and steroidal anti-inflammatory drugs may increase the risk of aneurysm formation and myocardial rupture in the early recovery period and SHOULD BE AVOIDED.**\n\n**Dressler's syndrome:** persistent **fever, pericarditis and pleurisy, probably due to autoimmunity**, occurring **a few weeks or even months after MI**, often subsiding after a few days; prolonged/severe cases may need **high-dose aspirin, NSAIDs or even glucocorticoids**.\n\n**Acute heart failure:** usually reflects **extensive myocardial damage** and is associated with a **poor prognosis**; all other complications of MI are more likely when acute HF is present.\n\n**Ventricular remodelling:** a potential complication of acute **transmural** MI due to **thinning and stretching of the infarcted segment** — increased wall stress with **progressive dilatation and hypertrophy of the remaining ventricle** (Fig. 16.64: infarct expansion occurs over days and weeks, but remodelling can take years). **ACE inhibitors and mineralocorticoid receptor antagonists reduce late ventricular remodelling and can prevent heart failure.**\n\n**Ventricular aneurysm:** develops in **approximately 10% of patients with MI**, particularly with **persistent occlusion of the infarct-related vessel**. Complications: **heart failure, ventricular arrhythmias, mural thrombus and systemic embolism**. Features: **paradoxical impulse on the chest wall, PERSISTENT ST elevation on the ECG, and sometimes an unusual bulge from the cardiac silhouette on CXR. Echocardiography is diagnostic.** Surgical removal carries high morbidity/mortality but is sometimes necessary.\n\n**Embolism:** thrombus often forms on the endocardial surface of freshly infarcted myocardium -> **systemic embolism (stroke, ischaemic limb)**; venous thrombosis and PE have become less common with prophylactic anticoagulants and early mobilisation.",
+          "key_points": [
+            "Pericarditis: day 2-3, positional pain, rub; opiates only — AVOID NSAIDs/steroids (rupture/aneurysm risk)",
+            "Dressler's: weeks-months later, autoimmune fever/pericarditis/pleurisy",
+            "Remodelling: thinning/stretching -> dilatation; reduced by ACEi + MRA",
+            "Aneurysm ~10%: persistent ST elevation, paradoxical impulse, mural thrombus/embolism; echo diagnostic",
+            "Systemic embolism from mural thrombus; recurrent angina = high risk, urgent angiography"
+          ]
+        },
+        {
+          "heading": "Rupture Syndromes and Right Ventricular Infarction",
+          "body_text": "**Papillary muscle rupture:** typically presents with **acute pulmonary oedema and shock** due to the sudden onset of **severe mitral regurgitation**. Examination usually reveals a **pansystolic murmur and third heart sound — but the murmur may be QUIET or ABSENT in severe MR** (rapid equalisation of pressures). **Diagnosis is confirmed by echocardiography; emergency valve replacement may be necessary.** Lesser degrees of MR from **papillary muscle dysfunction** are common and may be transient.\n\n**Ventricular septal rupture (VSR):** usually presents with **sudden haemodynamic deterioration** accompanied by a **new, loud pansystolic murmur radiating to the RIGHT sternal border** (may be difficult to distinguish from acute MR). **Rupture of the interventricular septum causes a left-to-right shunt through a VSD, which tends to cause ACUTE RIGHT HEART FAILURE rather than pulmonary oedema.** Doppler echocardiography and right heart catheterisation confirm the diagnosis. **Treatment is emergency surgical repair; without it, the condition is usually fatal.**\n\n**Ventricular free-wall rupture:** may lead to **cardiac tamponade and is usually fatal** — occasionally an incomplete rupture can be supported until emergency surgery.\n\n**Right ventricular infarction** complicates **inferior STEMI** (confirm with **right-sided leads V3R/V4R**; the lecture images show ST elevation in the right precordial leads). **TABLE 3.2 Causes of hypotension in inferior MI: right ventricular infarction; left ventricular failure; bradyarrhythmia; acute severe mitral regurgitation; ventricular septal rupture; Bezold-Jarisch reflex.** RV infarction is treated with **fluid loading** (avoid nitrates/diuretics, which drop preload).",
+          "key_points": [
+            "Papillary muscle rupture: acute pulmonary oedema + shock; murmur may be quiet in severe MR; echo diagnosis; emergency valve surgery",
+            "VSR: loud pansystolic murmur to right sternal border; left-to-right shunt -> acute RIGHT heart failure; surgical repair or fatal",
+            "Free-wall rupture: tamponade, usually fatal",
+            "RV infarction in inferior STEMI: right-sided leads; hypotension differential includes Bezold-Jarisch reflex",
+            "RV infarct: fluid loading; avoid preload reducers"
+          ],
+          "check": {
+            "prompt": "Three days after an inferior STEMI, a patient suddenly deteriorates: loud pansystolic murmur at the lower left sternal edge radiating to the right sternal border, with acute right heart failure signs but clear lung fields. What is the diagnosis?",
+            "options": [
+              "Papillary muscle rupture",
+              "Ventricular septal rupture (left-to-right shunt causing right heart failure)",
+              "Dressler's syndrome",
+              "Ventricular aneurysm"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "تمزق الحجاب بين البطينين: تدهور مفاجئ ولغط شامل عالٍ يذيع للحد القصي الأيمن مع فشل أيمن حاد (تحويل يسار-يمين) ورئتين صافيتين — بينما تمزق الحلمة يعطي وذمة رئوية حادة، والدريسلر حمى والتهاب تامور متأخر، وأم الدم نبضاً متناقضاً وارتفاع ST مستديماً."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Dressler's syndrome",
+          "definition_ar": "متلازمة مناعية متأخرة بعد الاحتشاء: حمى والتهاب تامور والتهاب جنبة."
+        },
+        {
+          "term": "Ventricular septal rupture",
+          "definition_ar": "تمزق الحجاب البطيني بعد الاحتشاء: لغط شامل عالٍ وفشل أيمن حاد بتحويل يسار-يمين؛ جراحة إسعافية."
+        },
+        {
+          "term": "Bezold-Jarisch reflex",
+          "definition_ar": "منعكس مبهمي سببي (خصوصاً في الاحتشاء السفلي وإعادة التروية) يسبب بطءاً وهبوط ضغط."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "L9_c4",
+      "lecture_id": "L9_acs_part2",
+      "title": "The ECG in ACS: Localisation, Evolution and Differential Diagnosis",
+      "summary_ar": "تخطيط القلب في المتلازمة الحادة: مناطق الاحتشاء والشرايين المسؤولة، تطور تغيرات STEMI، تشخيص التفريقي لارتفاع ST، واحتشاء الخلفي والبطين الأيمن.",
+      "sections": [
+        {
+          "heading": "Localisation and the Infarct-Related Artery",
+          "body_text": "The standard 12-lead ECG is **central to confirming the diagnosis** but may be difficult to interpret in the presence of pre-existing changes.\n\n**Territory-artery map (lecture figure):**\n- **Inferior (II, III, aVF) — RCA.**\n- **Anteroseptal (V1-V2).**\n- **Anteroapical (V3-V4).**\n- **Anterolateral (V5-V6, I, aVL) — circumflex (Cx).**\n\n**TABLE 1.3 (ECG subsets, occlusion anatomy and mortality):**\n1. **Proximal LAD** (proximal to first septal perforator): **ST elevation V1-V6, I, aVL, and fascicular or bundle branch block — highest mortality (30-day 19.6%, 1-year 25.6%).**\n2. **Mid-LAD** (proximal to large diagonal, distal to first septal perforator): STE V4-V6, I, aVL (9.2% / 12.4%).\n3. **Distal LAD or diagonal:** STE V1-V4, or I, aVL, V5-V6 (6.8% / 10.2%).\n4. **Moderate-to-large inferior (posterior, lateral, RV involvement) — proximal RCA or left circumflex:** STE II, III, aVF with any of: V1, V3R, V4R; V5, V6; R > S in V1 + V2 (6.4% / 8.4%).\n5. **Small inferior — distal RCA or circumflex branch:** STE II, III, aVF only (4.5% / 6.7%).\n\n**In non-ST-elevation ACS**, there is **partial occlusion of a major vessel or complete occlusion of a minor vessel**, producing **ST depression and/or T-wave inversion**; in anteroseptal ischaemia the changes appear in **V1-V4**, anterolateral infarction produces changes **V4-V6, aVL and lead I**, and inferior infarction affects **II, III and aVF**.",
+          "key_points": [
+            "Inferior II/III/aVF = RCA; anterolateral V5-V6, I, aVL = Cx",
+            "Proximal LAD occlusion: STE V1-V6 + I/aVL + blocks — worst mortality (~20% at 30 days)",
+            "Small inferior (II/III/aVF only) — lowest mortality",
+            "NSTE-ACS: partial occlusion of major or complete occlusion of minor vessel"
+          ]
+        },
+        {
+          "heading": "Evolution of STEMI, ST-Elevation Measurement and Differential",
+          "body_text": "**Serial evolution (Fig. 16.65):** **Normal -> hyperacute T waves -> ST elevation -> Q-wave development with T-wave evolution -> T-wave inversion and recovery** over hours to weeks (0-12 hours and beyond): **hyperacute (tall) T waves -> ST elevation -> development of Q waves -> T-wave inversion -> resolution/stabilisation.**\n\n**How to measure ST elevation:** at the **J point** (the lecture's annotated ECG shows 1.8 mm measured at the J point, ~2 mm below the reference).\n\n**ST-depression morphologies in NSTE-ACS:** **upsloping, downsloping, or horizontal** — horizontal and downsloping carry the ischaemic weight.\n\n**ST-elevation morphology:** convex ('tombstone'), straight upsloping, straight horizontal, straight downsloping patterns are illustrated.\n\n**Differential diagnosis of ST-segment elevation (Table 240-1):**\n- **Myocardial ischaemia/infarction:** acute MI (epicardial occlusion); **non-infarction transmural ischaemia (Prinzmetal vasospasm); Takotsubo (stress) cardiomyopathy; post-MI (ventricular aneurysm pattern).**\n- **Non-ischaemic:** **acute pericarditis**; normal variants (benign early repolarisation); **LVH/LBBB**; **acute pulmonary embolism**; **Brugada patterns** (RBBB-like with ST elevation in right precordial leads); class 1C antiarrhythmic drugs; **DC cardioversion (transient)**; hypercalcaemia; **hyperkalaemia; hypothermia (J/Osborn waves)**; myocarditis; tumour invading LV; trauma.",
+          "key_points": [
+            "Evolution: hyperacute T -> STE -> Q waves -> T inversion -> resolution",
+            "Measure ST elevation at the J point",
+            "ST depression: horizontal/downsloping most significant",
+            "ST elevation differential: pericarditis, early repolarisation, LVH/LBBB, PE, Brugada, Takotsubo, hyperkalaemia, hypothermia (Osborn), vasospasm, aneurysm pattern"
+          ]
+        },
+        {
+          "heading": "Posterior and Right Ventricular Infarction",
+          "body_text": "**Posterior infarction** (with inferolateral STEMI): **posterior extension is suggested by** (lecture slide):\n- **Horizontal ST depression in V1-V3.**\n- **Tall, broad R waves (> 30 ms) in V2-V3.**\n- **Dominant R wave (R/S ratio > 1) in V2.**\n- **Upright T waves in V2-V3.**\n**Posterior infarction is confirmed by the presence of ST elevation and Q waves in the posterior leads V7-V9** — because V1-V3 look at the posterior wall as a mirror image (hence the 'reciprocal' horizontal depression and tall R waves).\n\n**Right ventricular infarction in the context of inferior STEMI:** look for **ST elevation in right-sided leads (V3R, V4R)**; suspect it whenever an inferior STEMI becomes hypotensive — and remember the differential (Table 3.2): **RV infarction, LV failure, bradyarrhythmia, acute severe MR, VSR, Bezold-Jarisch reflex.**\n\n**Anterolateral STEMI example (Fig. 8.5):** ST elevation across the precordial leads with reciprocal changes, annotated at standard calibration (10 mm/mV, 25 mm/s).",
+          "key_points": [
+            "Posterior MI signs in V1-V3: horizontal ST depression, tall broad R waves >30 ms, R/S >1 in V2, upright T waves",
+            "Confirm posterior MI: ST elevation + Q waves in V7-V9",
+            "RV infarct: right-sided leads V3R/V4R in inferior STEMI",
+            "Hypotensive inferior STEMI: run the Table 3.2 differential"
+          ],
+          "check": {
+            "prompt": "An ECG shows horizontal ST depression in V1-V3 with tall broad R waves and upright T waves in V2-V3. What should be done to confirm the diagnosis?",
+            "options": [
+              "Repeat the ECG after 30 minutes",
+              "Record posterior leads V7-V9 looking for ST elevation and Q waves",
+              "Give digoxin and reassess",
+              "Nothing — this pattern is always normal"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "هذه علامات المرآة لاحتشاء خلفي؛ التأكيد بتسجيل التوصيلات الخلفية V7-V9 وإظهار ارتفاع ST وموجات Q فيها."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "J point",
+          "definition_ar": "نقطة وصل QRS مع ST؛ عندها يقاس ارتفاع ST في الاحتشاء."
+        },
+        {
+          "term": "Hyperacute T waves",
+          "definition_ar": "موجات T عالية مترهلة مبكرة جداً في أول دقائق الاحتشاء."
+        },
+        {
+          "term": "V7-V9",
+          "definition_ar": "التوصيلات الخلفية خلف الإبط؛ تظهر ارتفاع ST في احتشاء الجدار الخلفي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "L9_c5",
+      "lecture_id": "L9_acs_part2",
+      "title": "Immediate Management and Reperfusion Therapy",
+      "summary_ar": "الإدارة الفورية (الأكسجين والمراقبة، الأسبرين والتيكاغريلور والميتوبرولول)، المسكنات، مضادات الصفيحات والتخثر، وإعادة التروية: PCI الأولي مقابل الحالة الليتية بمعاييرها ومضاداتها ووكلائها.",
+      "sections": [
+        {
+          "heading": "Immediate Clinical Assessment and Drug Therapy",
+          "body_text": "**All patients with suspected ACS should be admitted urgently to hospital** — ideally to a **dedicated cardiac unit** with monitoring and resuscitation facilities. Appropriate medical therapy can reduce the incidence of complications by at least 60%. **GRACE-based risk analysis identifies patients for intensive therapy and early inpatient angiography (>= 140 points).**\n\n**Immediate package (lecture algorithm):**\n- **Immediate clinical assessment + ECG + troponin.**\n- **Oxygen and cardiac rhythm monitoring.**\n- **Aspirin 300 mg PO; Ticagrelor 180 mg PO.**\n- **Metoprolol 5-15 mg IV / 50-100 mg PO** (if no contraindications).\n- **Transfer to a specialist cardiology unit.**\n\n**Analgesia:** adequate analgesia is essential — not only to relieve distress but to **lower adrenergic drive and thereby reduce vascular resistance, BP, infarct size and susceptibility to ventricular arrhythmias.** Use **intravenous opiates (morphine sulphate 5-10 mg or diamorphine 2.5-5 mg) with antiemetics (metoclopramide 10 mg)**, titrated in repeated small aliquots. **AVOID intramuscular injections** — delayed effect from poor skeletal muscle perfusion and painful haematoma risk after antithrombotic therapy.\n\n**Antithrombotic therapy:** **antiplatelet therapy with aspirin plus a P2Y12 inhibitor such as clopidogrel/ticagrelor; anticoagulation further reduces thromboembolic complications and prevents re-infarction.** Anticoagulation can be achieved with **unfractionated heparin, low-molecular-weight heparin (subcutaneous enoxaparin 1 mg/kg twice daily)** or pentasaccharides (best safety/efficacy profile in trials). **Anticoagulation should be continued for 8 days or until discharge or revascularisation.** **Consider warfarin if there is persistent AF or extensive anterior infarction with mural thrombus** (increased systemic thromboembolism risk).\n\n**Anti-anginal therapy:** **sublingual GTN (300-500 micrograms)** is a valuable first-aid measure; **IV nitrates (GTN 0.6-1.2 mg/h or isosorbide dinitrate 1-2 mg/h)** for LV failure and persistent ischaemic pain. **IV beta-blockers (atenolol 5-10 mg or metoprolol 5-15 mg over 5 min) relieve pain, reduce arrhythmias and improve short-term mortality if given within 12 hours — but AVOID if heart failure (pulmonary oedema), hypotension (SBP < 105 mmHg) or bradycardia (HR < 65).** Nifedipine/amlodipine can be added to a beta-blocker for persistent discomfort (tachycardia if used alone); **verapamil or diltiazem if beta-blockers are contraindicated.** Long-term oral beta-blockers reduce long-term mortality by ~25% — benefits extend to patients with heart failure, COPD or peripheral arterial disease unless poorly tolerated.",
+          "key_points": [
+            "Admit urgently; dedicated cardiac unit; GRACE >= 140 -> early angiography",
+            "Oxygen + monitoring; aspirin 300 mg; ticagrelor 180 mg; metoprolol if suitable",
+            "IV morphine 5-10 mg / diamorphine 2.5-5 mg + metoclopramide, titrated; avoid IM injections",
+            "Aspirin + P2Y12 inhibitor + anticoagulation (enoxaparin 1 mg/kg BD; continue 8 days/until revascularisation)",
+            "Warfarin if persistent AF or extensive anterior MI with mural thrombus",
+            "IV beta-blocker within 12 h unless pulmonary oedema, SBP <105, HR <65",
+            "Sublingual GTN 300-500 mcg first-aid; IV nitrates for failure/persistent pain"
+          ]
+        },
+        {
+          "heading": "Reperfusion: Primary PCI versus Fibrinolysis (ESC 2017 Algorithm)",
+          "body_text": "**Immediate reperfusion therapy with PCI is indicated when the ECG shows new bundle branch block or characteristic ST-segment elevation in two contiguous leads** (>= 1 mm in the limb leads or >= 2 mm in the chest leads). **PCI is the treatment of choice for patients presenting within 12 hours of symptom onset.**\n- **If PCI cannot be performed within 120 minutes for any reason, and thrombolysis is contraindicated, the procedure should be performed as soon as practically possible.**\n- **Patients should be considered for PCI within the first 24 hours even if they have reperfused spontaneously or with thrombolytic therapy.**\n- **Coronary artery patency is restored in over 95% of patients undergoing PCI**; the procedure preserves LV function, more than halves re-infarction rates, and clinical trials show **more than 95% 1-year survival**. Successful therapy gives **rapid pain relief, resolution of ST elevation and occasional transient arrhythmias.**\n- **Key point: primary PCI is associated with a superior rate of TIMI 3 flow restoration, lower reinfarction and mortality, and less intracranial bleeding compared with fibrinolytic therapy.**\n\n**In general, fibrinolytic therapy is indicated when there is:**\n- **ST-segment elevation in two contiguous leads OR evidence of new-onset LBBB, AND**\n- **Time from onset of chest pain < 12 hours (better within 6 hours, best within 3 hours), AND**\n- **Absence of contraindications.**\n\n**Box 16.52 Relative contraindications to thrombolytic therapy:**\n- **Active internal bleeding.**\n- **Previous subarachnoid or intracerebral haemorrhage.**\n- **Uncontrolled hypertension.**\n- **Recent surgery (within 1 month).**\n- **Recent trauma (including traumatic resuscitation).**\n- **High probability of active peptic ulcer.**\n- **Pregnancy.**\n\n**Fibrinolytic agents (comparison table):**\n| Agent | Regimen | Fibrin specificity | Antigenic | 90-min TIMI 3 flow |\n|---|---|---|---|---|\n| **Tenecteplase (TNK)** | single weight-based IV bolus | High | No | **~85%** |\n| **Reteplase (r-PA)** | 10 units + 10 units IV boluses 30 min apart | Moderate | No | ~83% |\n| **Alteplase (t-PA)** | 90-min weight-based infusion | Moderate | No | ~84% |\n| **Streptokinase** | 1.5 million units IV over 30-60 min | **None** | **Yes** (hypotension/allergy) | 60-68% |\n\n**ESC 2017 total ischaemic time algorithm:** minimise **patient delay** (recognition) and **system delay**; at **FMC by EMS, obtain the ECG within 10 minutes**; if the patient presents **directly to a PCI centre**, target **wire crossing < 60 minutes**; if via EMS to a PCI centre, **STEMI diagnosis-to-wire < 90-120 minutes**; **if the expected PCI delay is > 120 minutes, give fibrinolysis (lytic bolus < 10 minutes from diagnosis)** — and after successful lysis, proceed to **routine early angiography (2-24 hours)**.",
+          "key_points": [
+            "PCI: STE in 2 contiguous leads or new LBBB; treatment of choice within 12 h",
+            "Patency >95% with PCI; superior TIMI 3 flow, less reinfarction/ICH than lysis",
+            "Fibrinolysis: STE/new LBBB + <12 h (best <3 h) + no contraindication",
+            "Lysis contraindications: active bleeding, previous intracranial bleed, uncontrolled HTN, surgery <1 month, trauma, active ulcer, pregnancy",
+            "Tenecteplase: single bolus, most fibrin-specific, ~85% TIMI 3; streptokinase: non-specific, antigenic, 60-68%",
+            "ESC 2017: ECG <10 min from FMC; wire crossing <60 min at PCI centre; if PCI >120 min away -> lytic bolus <10 min then angiography 2-24 h"
+          ],
+          "check": {
+            "prompt": "A 58-year-old presents 90 minutes after onset of crushing chest pain; ECG shows 3 mm ST elevation in V2-V4. She is at a hospital 3 hours by road from the nearest cath lab. What is the reperfusion strategy?",
+            "options": [
+              "Transfer for primary PCI regardless of delay",
+              "Fibrinolysis now (ST elevation within 12 h, PCI delay > 120 minutes), then routine early angiography",
+              "Medical therapy only",
+              "Thrombolysis is contraindicated because she is female"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الارتفاع ST في توصيلين متجاورين خلال <12 ساعة مع تعذر PCI خلال 120 دقيقة = حال الليتية فوراً (الأفضل خلال 3 ساعات من الألم) ثم تصوير تاجي مبكر روتيني (2-24 ساعة) وفق خوارزمية ESC 2017."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Primary PCI",
+          "definition_ar": "تدخل تاجي باعت أولي دون حال ليتية مسبقة؛ إعادة التروية المختارة ضمن 12 ساعة."
+        },
+        {
+          "term": "TIMI 3 flow",
+          "definition_ar": "جريان تاجي كامل بعد إعادة التروية؛ يحققه PCI أفضل من الحالة الليتية."
+        },
+        {
+          "term": "Total ischaemic time",
+          "definition_ar": "مجموع تأخر المريض وتأخر النظام حتى إعادة التروية؛ هدف الخوارزميات تقصيره."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L9_c6",
+      "lecture_id": "L9_acs_part2",
+      "title": "Secondary Prevention, Late Management and MI in Old Age",
+      "summary_ar": "الوقاية الثانوية (ACEi/MRA/ستاتين/إيقاف التدخين)، الصندوق 16.51 للإدارة المتأخرة، الاحتشاء في المسنين، والإنذار.",
+      "sections": [
+        {
+          "heading": "Secondary Prevention and Late Management (Box 16.51)",
+          "body_text": "**Box 16.51 Late management of myocardial infarction:**\n- **Risk stratification and further investigation.**\n- **Lifestyle modification: diet (weight control, lipid-lowering, Mediterranean diet), cessation of smoking, regular exercise.**\n- **Secondary prevention drug therapy: antiplatelet therapy (aspirin and/or clopidogrel); beta-blocker; ACE inhibitor/ARB; statin; mineralocorticoid receptor antagonist; additional therapy for control of diabetes and hypertension.**\n- **Rehabilitation.**\n- **Devices: implantable cardiac defibrillator (high-risk patients).**\n\n**Renin-angiotensin blockade:** long-term **ACE inhibitors (enalapril 10 mg twice daily or ramipril 2.5-5 mg twice daily)** counteract ventricular remodelling, prevent heart failure, improve survival, reduce reinfarction and avoid rehospitalisation.\n\n**Mineralocorticoid receptor antagonists:** patients with acute MI and **LV dysfunction (EF < 35%) with either pulmonary oedema or diabetes mellitus** benefit from **eplerenone 25-50 mg daily or spironolactone 25-50 mg daily**.\n\n**Lipid-lowering therapy:** all patients should receive **statins** after ACS; patients with **LDL cholesterol above 3.2 mmol/L (approximately 120 mg/dL) benefit from more intensive therapy such as atorvastatin 80 mg daily**. Other agents (**ezetimibe, fibrates, anion exchange resins, injectable PCSK9 inhibitors**) when statins alone are inadequate.\n\n**Smoking cessation:** the **5-year mortality of patients who continue to smoke is DOUBLE that of those who quit at the time of their ACS** — giving up smoking is the single most effective contribution a patient can make. Success increases with supportive advice and pharmacological therapy.\n\n**Diet and exercise:** maintain ideal body weight, Mediterranean-style diet, regular exercise, good control of diabetes and hypertension.",
+          "key_points": [
+            "Late management: risk stratification, lifestyle, drugs (antiplatelet, beta-blocker, ACEi/ARB, statin, MRA), rehabilitation, ICD in high-risk",
+            "ACEi: enalapril 10 mg BD or ramipril 2.5-5 mg BD — counteract remodelling",
+            "MRA (eplerenone/spironolactone 25-50 mg) if EF <35% + pulmonary oedema or diabetes",
+            "Atorvastatin 80 mg if LDL > 3.2 mmol/L; add ezetimibe/PCSK9i if needed",
+            "Continued smoking doubles 5-year mortality"
+          ]
+        },
+        {
+          "heading": "Myocardial Infarction in Old Age (Box 16.53) and Prognosis",
+          "body_text": "**Box 16.53 Myocardial infarction in old age:**\n- **Atypical presentation: often with anorexia, fatigue, weakness, delirium or falls rather than chest pain.**\n- **Case fatality rises steeply: hospital mortality exceeds 25% in those over 75 years — five times greater than in those aged less than 55 years.**\n- **Survival benefit of treatments is not influenced by age** — the **absolute benefit of evidence-based treatments may therefore be greatest in older people.**\n- **Hazards of treatments rise with age** (e.g., increased risk of intracerebral bleeding after thrombolysis), partly due to increased comorbidity.\n- **Quality of evidence:** older patients were under-represented in the landmark trials; the balance of risk and benefit for treatments such as thrombolysis and primary PCI in frail older people is uncertain.\n\n**Prognosis** of patients who have survived an ACS is related to the **extent of residual myocardial ischaemia**, the degree of LV dysfunction, and the adequacy of secondary prevention.\n\n**Immediate in-hospital maintenance medication (lecture slide):** **antiplatelet + beta-blocker + ACE inhibitor therapy** as the core maintenance package.",
+          "key_points": [
+            "Old-age MI: atypical — anorexia, fatigue, weakness, delirium, falls",
+            "Hospital mortality >25% in over-75s (5x the under-55s)",
+            "Absolute treatment benefit may be greatest in the elderly; hazards also rise",
+            "Prognosis: residual ischaemia + LV dysfunction + secondary prevention"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Secondary prevention",
+          "definition_ar": "حزمة ما بعد الاحتشاء: مضاد صفيحي، حاصر بيتا، مثبط ACE، ستاتين، MRA، وتعديل نمط الحياة."
+        },
+        {
+          "term": "Cardiac rehabilitation",
+          "definition_ar": "برنامج تمارين وتعليم ودعم نفسي بعد الاحتشاء لتحسين المآل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L9_f1",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "How is the working diagnosis of ACS made and how is NSTEMI separated from unstable angina?",
+      "back_text": "ECG within 10 minutes of first medical contact: ST elevation or new LBBB = STEMI (working diagnosis); ST depression and/or T inversion (or normal ECG) = NSTE-ACS. Then hs-troponin: rise and fall above the 99th centile URL = NSTEMI; non-elevated = unstable angina.",
+      "explanation_ar": "تخطيط خلال 10 دقائق: ارتفاع ST أو LBBB جديد = STEMI؛ انحراف هابط/انقلاب T = NSTE-ACS؛ ثم التروبونين يفصل NSTEMI عن الذبحة غير المستقرة.",
+      "tags": [
+        "diagnosis",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L9_f2",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "State the Fourth Universal Definition criteria for acute MI.",
+      "back_text": "Detection of a rise and/or fall of cardiac troponin with at least one value above the 99th centile URL, plus at least one of: symptoms of ischaemia; new or presumed new significant ST-T changes or new LBBB; development of pathological Q waves; imaging evidence of new loss of viable myocardium or new regional wall motion abnormality; identification of an intracoronary thrombus by angiography or autopsy.",
+      "explanation_ar": "صعود/هبوط تروبونين فوق المئين 99 مع واحد من: أعراض نقص تروية، تغيرات ST-T جديدة أو LBBB جديد، موجات Q مرضية، تصوير يظهر فقد نسيج حي أو اضطراب حركية موضعي، أو خثرة تاجية بالقسطرة/التشريح.",
+      "tags": [
+        "universal definition"
+      ]
+    },
+    {
+      "id": "L9_f3",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "What is the difference between myocardial injury and myocardial infarction?",
+      "back_text": "Myocardial injury = troponin above the 99th percentile URL (acute: rise and/or fall; chronic: <=20% variation, e.g., CKD). ACUTE myocardial injury IN THE SETTING OF ACUTE MYOCARDIAL ISCHAEMIA = acute myocardial infarction. Injury without ischaemia occurs in supply-demand imbalance (tachyarrhythmia, shock, severe anaemia, dissection) or direct injury (myocarditis, contusion, cardio-toxic drugs).",
+      "explanation_ar": "الأذية: تروبونين فوق المئين 99 (حاد: صعود/هبوط؛ مزمن: تفاوت ≤20% كالقصور الكلوي)؛ والأذية الحادة في سياق نقص تروية حاد = احتشاء؛ ما عدا ذلك (اختلال توازن العرض/الطلب أو أذية مباشرة) أذية بلا احتشاء.",
+      "is_vivid": true,
+      "tags": [
+        "universal definition",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L9_f4",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "What are the timings of the cardiac biomarkers after MI?",
+      "back_text": "Troponin T/I: rise within 3-6 hours, peak about 36 hours, remain elevated up to 2 weeks. CK rises first (with troponins), then AST, then LDH (hydroxybutyrate dehydrogenase). Reperfusion produces a rapid early CK rise (washout). Unstable angina has NO detectable troponin rise.",
+      "explanation_ar": "التروبونين: يرتفع 3-6 ساعات، ذروة ~36 ساعة، يبقى حتى أسبوعين؛ CK أولاً ثم AST ثم LDH؛ وإعادة التروية تغسل CK مبكراً؛ والذبحة غير المستقرة بلا ارتفاع.",
+      "tags": [
+        "biomarkers"
+      ]
+    },
+    {
+      "id": "L9_f5",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "card_type": "basic",
+      "front_text": "Why measure lipids within 24 hours of ACS presentation?",
+      "back_text": "There is often a transient fall in cholesterol in the 3 months following infarction — so late measurement underestimates the patient's true lipid status; measure within 24 hours. Also: leucocytosis peaks on day 1, ESR and CRP are elevated.",
+      "explanation_ar": "يسقط الكوليسترول عابراً خلال 3 أشهر بعد الاحتشاء فيُقاس خلال 24 ساعة؛ مع كثرة بيض يوم 1 وارتفاع ESR/CRP.",
+      "tags": [
+        "biomarkers",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L9_f6",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "What are the Box 16.49 clinical features of ACS?",
+      "back_text": "Symptoms: prolonged cardiac pain (chest, throat, arms, epigastrium, back), anxiety/fear of impending death, nausea/vomiting, breathlessness, collapse/syncope. Signs: sympathetic activation (pallor, sweating, tachycardia), vagal activation (vomiting, bradycardia), impaired myocardial function (hypotension, oliguria, cold peripheries, narrow pulse pressure, raised JVP, S3, quiet S1, diffuse apex, crepitations), low-grade fever.",
+      "explanation_ar": "ألم مطول قلبي النمط مع رهبة الموت وغثيان وزلة أو انهيار؛ علامات تنشيط ودّي (شحوب تعرق تسرع) وودني (إقياء بطء) وقصور عضلة (هبوط ضغط، S3، S1 خافت، مفرقعات) وحمى منخفضة.",
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L9_f7",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "What is the prognostic significance of early versus late ventricular fibrillation after MI?",
+      "back_text": "VF occurs in 5-10% of patients reaching hospital and is the major cause of pre-hospital death; prompt defibrillation is life-saving. Early VF (within the first 48 hours) successfully resuscitated has a prognosis IDENTICAL to patients without VF. Convalescent-phase ventricular arrhythmias mark poor ventricular function and may herald sudden death (consider ICD).",
+      "explanation_ar": "رجفان مبكر خلال 48 ساعة ومعالج: مآل مطابق لمن لم يُصب؛ نظميات طور النقاهة تدل على بطين ضعيف وخطر موت مفاجئ (ICD).",
+      "is_vivid": true,
+      "tags": [
+        "arrhythmia",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L9_f8",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "How is atrial fibrillation managed in ACS, and when is bradycardia treated?",
+      "back_text": "AF: usually transient, no emergency treatment — UNLESS rapid ventricular rate with hypotension/collapse (prompt cardioversion is essential); otherwise digoxin or beta-blocker; AF may signal LV failure (treat it or therapy fails); anticoagulate if AF persists. Bradycardia: treat only with hypotension/haemodynamic deterioration — atropine 0.6-1.2 mg IV. Sinus bradycardia is typical after inferior MI.",
+      "explanation_ar": "الرجفان: إن أحدث تسرعاً مع هبوط ضغط فتقويم عاجل؛ وإلا ديغوكسين/حاصر بيتا، وتذكّر أنه قد يعبر عن قصور؛ ومضاد تخثر إن استمر. البطء: أتروبين فقط عند التدهور الدوراني.",
+      "tags": [
+        "arrhythmia"
+      ]
+    },
+    {
+      "id": "L9_f9",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c2",
+      "card_type": "basic",
+      "front_text": "What does the GRACE score incorporate and what threshold drives early intervention?",
+      "back_text": "Killip class, systolic BP, heart rate, age, serum creatinine, cardiac arrest at admission (39 points), ST-segment deviation (28 points) and elevated cardiac enzymes (14 points). A GRACE score of 140 or more indicates early inpatient coronary angiography/intensive therapy.",
+      "explanation_ar": "GRACE: كيليب، ضغط انقباضي، معدل، عمر، كرياتينين، توقف قلب عند القبول (39)، انحراف ST (28)، إنزيمات مرتفعة (14)؛ و≥140 يعني تدخلاً مبكراً.",
+      "tags": [
+        "risk score"
+      ]
+    },
+    {
+      "id": "L9_f10",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c3",
+      "card_type": "basic",
+      "front_text": "How do post-MI pericarditis and Dressler's syndrome differ in timing and treatment?",
+      "back_text": "Post-MI pericarditis: days 2-3, positional pain worse on inspiration, pericardial rub — use OPIATE analgesia; AVOID NSAIDs/steroids (increase risk of aneurysm formation and myocardial rupture). Dressler's syndrome: weeks to months later, autoimmune fever with pericarditis and pleurisy — treat with high-dose aspirin, NSAIDs or glucocorticoids if severe/prolonged.",
+      "explanation_ar": "التامور بعد الاحتشاء: اليوم 2-3، ألم وضعي وحكة تامورية، مسكنات أفيونية وتجنب NSAIDs/الستيرويد (خطر تمزق وأم دم)؛ ودريسلر: أسابيع-أشهر لاحقاً، مناعي، يعالج بجرعات أسبرين عالية/NSAIDs/ستيرويد عند اللزوم.",
+      "is_vivid": true,
+      "tags": [
+        "complications",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L9_f11",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c3",
+      "card_type": "basic",
+      "front_text": "List the three mechanical rupture syndromes of MI with their presentations.",
+      "back_text": "Papillary muscle rupture: acute pulmonary oedema + shock with sudden severe MR (murmur may be quiet/absent; emergency valve surgery). Ventricular septal rupture: sudden deterioration, loud pansystolic murmur radiating to the right sternal border, left-to-right shunt causing acute RIGHT heart failure (not pulmonary oedema); emergency surgical repair or fatal. Free-wall rupture: cardiac tamponade, usually fatal.",
+      "explanation_ar": "تمزق الحلمة: وذمة رئوية وصدمة بMR شديد (قد يغيب اللغط)؛ تمزق الحجاب: لغط عالٍ للحد الأيمن وفشل أيمن بتحويل؛ وتمزق الجدار: ضاغط ومميت عادة.",
+      "tags": [
+        "complications",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L9_f12",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c3",
+      "card_type": "basic",
+      "front_text": "Give the causes of hypotension in inferior MI (Table 3.2).",
+      "back_text": "Right ventricular infarction; left ventricular failure; bradyarrhythmia; acute severe mitral regurgitation; ventricular septal rupture; Bezold-Jarisch reflex.",
+      "explanation_ar": "احتشاء البطين الأيمن، فشل الأيسر، بطء نظم، MR حاد شديد، تمزق الحجاب، ومنعكس بيزولد-جاريش.",
+      "tags": [
+        "inferior MI"
+      ]
+    },
+    {
+      "id": "L9_f13",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "Which ECG territory maps to which coronary artery, and which occlusion has the worst mortality?",
+      "back_text": "Inferior (II, III, aVF) = RCA; anterolateral (V5-V6, I, aVL) = circumflex; anteroseptal V1-V2 and anteroapical V3-V4 = LAD. Proximal LAD occlusion (STE V1-V6 + I/aVL with fascicular/bundle branch block) has the worst mortality (~19.6% at 30 days, 25.6% at 1 year); small inferior (II, III, aVF only) has the lowest.",
+      "explanation_ar": "السفلي = RCA؛ الأمامي الوحشي = Cx؛ وLAD الداني (ارتفاع V1-V6 + I/aVL مع حصار) الأسوأ بوفاة 30 يوم ~19.6%؛ والسفلي الصغير الأخف.",
+      "tags": [
+        "ECG localization"
+      ]
+    },
+    {
+      "id": "L9_f14",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "Describe the serial ECG evolution of STEMI.",
+      "back_text": "Normal -> hyperacute (tall) T waves -> ST elevation -> Q-wave development -> T-wave inversion -> stabilisation/resolution over weeks. ST elevation is measured at the J point.",
+      "explanation_ar": "طبيعي ← T مفرطة الحدة ← ارتفاع ST ← ظهور Q ← انقلاب T ← الاستقرار؛ والقياس عند نقطة J.",
+      "tags": [
+        "ECG"
+      ]
+    },
+    {
+      "id": "L9_f15",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c4",
+      "card_type": "basic",
+      "front_text": "How is posterior infarction recognised and confirmed?",
+      "back_text": "Suspect with horizontal ST depression in V1-V3, tall broad R waves (>30 ms) in V2-V3, dominant R wave (R/S >1) in V2 and upright T waves in V2-V3. Confirm with posterior leads V7-V9 showing ST elevation and Q waves.",
+      "explanation_ar": "علامات المرآة V1-V3 (انحراف أفقي هابط، R عريضة عالية، R/S>1، T قائمة) والتأكيد بارتفاع ST وموجات Q في V7-V9.",
+      "tags": [
+        "ECG",
+        "posterior MI"
+      ]
+    },
+    {
+      "id": "L9_f16",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "What is the immediate management package for suspected ACS?",
+      "back_text": "Admit urgently (dedicated cardiac unit): immediate clinical assessment + ECG + troponin; oxygen and cardiac rhythm monitoring; aspirin 300 mg PO; ticagrelor 180 mg PO; metoprolol 5-15 mg IV or 50-100 mg PO if no contraindications; transfer to specialist cardiology. Analgesia: IV morphine 5-10 mg (or diamorphine 2.5-5 mg) + metoclopramide 10 mg titrated; avoid IM injections.",
+      "explanation_ar": "أكسجين ومراقبة، أسبرين 300، تيكاغريلور 180، ميتوبرولول عند غياب الموانع، نقل لوحدة قلبية؛ وتسكين وريدي بالأفيونات مع مضاد إقياء مع تكرار الدفعات؛ وتجنب الحقن العضلي.",
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L9_f17",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "When is IV beta-blockade contraindicated in ACS, and which calcium antagonists are alternatives?",
+      "back_text": "Avoid IV beta-blockers with heart failure (pulmonary oedema), hypotension (SBP < 105 mmHg) or bradycardia (HR < 65/min). Nifedipine/amlodipine can be added to a beta-blocker for persistent discomfort (tachycardia if used alone); verapamil or diltiazem if beta-blockers are contraindicated.",
+      "explanation_ar": "يمنع IV بيتا: وذمة رئوية، انقباضي <105، معدل <65؛ وريتارد نيفي/أملوديبين يضاف للبيتا؛ والفيراباميل/دلتيازيم عند منع البيتا.",
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L9_f18",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "What are the indications and relative contraindications for fibrinolytic therapy?",
+      "back_text": "Indications: ST elevation in two contiguous leads OR new LBBB, within 12 hours of pain onset (best within 6, best of all within 3), absence of contraindications. Relative contraindications (Box 16.52): active internal bleeding; previous subarachnoid/intracerebral haemorrhage; uncontrolled hypertension; recent surgery (<1 month); recent trauma (including traumatic resuscitation); high probability of active peptic ulcer; pregnancy.",
+      "explanation_ar": "الاستطباب: ارتفاع ST بتوصيلين أو LBBB جديد خلال <12 ساعة دون موانع؛ الموانع النسبية: نزف داخلي فعّال، نزف داخل قحف سابق، ضغط غير مسيطر، جراحة/رض حديث، قرحة فعالة محتملة، وحمل.",
+      "tags": [
+        "fibrinolysis",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L9_f19",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "Compare the fibrinolytic agents.",
+      "back_text": "Tenecteplase (TNK): single weight-based IV bolus, high fibrin specificity, non-antigenic, ~85% TIMI 3 flow. Reteplase: double bolus 30 min apart, moderate specificity, ~83%. Alteplase (t-PA): 90-min infusion, moderate specificity, ~84%. Streptokinase: 1.5 MU over 30-60 min, non-fibrin-specific, ANTIGENIC (hypotension/allergy), 60-68% TIMI 3.",
+      "explanation_ar": "TNK: بولس مفرد حسب الوزن ونوعية فيبرين عالية ~85%؛ الريتيبلاز بولسان؛ الألتيبلاز تسريب 90 دقيقة؛ والستربتوكيناز غير النوعي ومولد لل antigens بجريان 60-68%.",
+      "tags": [
+        "fibrinolysis"
+      ]
+    },
+    {
+      "id": "L9_f20",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "card_type": "basic",
+      "front_text": "Summarise the ESC 2017 reperfusion timing algorithm.",
+      "back_text": "Minimise patient and system delay: ECG within 10 minutes of FMC (by EMS). Presenting to a PCI centre: wire crossing < 60 minutes from STEMI diagnosis. If PCI cannot be achieved within 120 minutes: fibrinolysis (lytic bolus < 10 minutes from diagnosis) then routine early angiography 2-24 hours after successful lysis. Primary PCI: superior TIMI 3 flow, lower reinfarction/mortality/intracranial bleeding versus fibrinolysis.",
+      "explanation_ar": "ECG خلال 10 دقائق من FMC؛ عبور السلك <60 دقيقة عند مركز PCI؛ وإذا تعذر PCI خلال 120 دقيقة: بولس ليتي خلال 10 دقائق ثم تصوير مبكر 2-24 ساعة.",
+      "tags": [
+        "reperfusion",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L9_f21",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c6",
+      "card_type": "basic",
+      "front_text": "Which patients receive mineralocorticoid receptor antagonists after MI, and what statin intensity for LDL >3.2 mmol/L?",
+      "back_text": "MRA (eplerenone or spironolactone 25-50 mg daily) for acute MI with LV dysfunction (EF < 35%) plus either pulmonary oedema or diabetes mellitus. LDL > 3.2 mmol/L (120 mg/dL): intensive therapy such as atorvastatin 80 mg daily; add ezetimibe, fibrates, resins or PCSK9 inhibitors if targets are unmet.",
+      "explanation_ar": "MRA عند EF <35% مع وذمة رئوية أو سكري؛ وLDL >3.2 ملمول/ل: أتورفاستاتين 80 ملغ يومياً مع بدائل عند القصور.",
+      "tags": [
+        "secondary prevention"
+      ]
+    },
+    {
+      "id": "L9_f22",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c6",
+      "card_type": "basic",
+      "front_text": "How does myocardial infarction present in old age and what is the mortality?",
+      "back_text": "Atypical presentation: anorexia, fatigue, weakness, delirium or falls rather than chest pain. Hospital mortality exceeds 25% in over-75s — five times that of under-55s. Absolute benefit of evidence-based treatment may be greatest in older people, but hazards (e.g., intracerebral bleeding after thrombolysis) also rise with age.",
+      "explanation_ar": "عرض لانموذجي (فقد شهية، وهن، هذيان، سقوط)؛ ووفاة المشفى >25% فوق 75 سنة (خمسة أضعاف)؛ والفائدة المطلقة أكبر والضرر أعلى أيضاً.",
+      "tags": [
+        "geriatrics"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L9_q1",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "question_stem": "A 64-year-old presents with 2 hours of heavy chest pressure. ECG shows 2.5 mm ST elevation in II, III and aVF. Which reperfusion decision framework applies?",
+      "options": [
+        "NSTE-ACS pathway with delayed troponin-guided angiography",
+        "STEMI pathway: ECG within 10 minutes of FMC; reperfusion (primary PCI within 120 minutes or fibrinolysis if unavailable) for ST elevation in two contiguous leads",
+        "Exercise treadmill test before discharge",
+        "Observation only — inferior STEMIs are benign"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ارتفاع ST في توصيلين متجاورين سفليين = مسار STEMI: تخطيط خلال 10 دقائق من أول تماس وإعادة تروية فورية (PCI الأولي ضمن 120 دقيقة وإلا الحالة الليتية ضمن 12 ساعة)؛ والمسار المتأخر والاختبار الحمل لا مكان لهما.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q2",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c1",
+      "question_stem": "A patient with ischaemic-sounding chest pain has a troponin I of 60 ng/L (URL 34) on admission and 55 ng/L at 3 hours. ECG shows new T-wave inversion in V3-V5. How is this classified?",
+      "options": [
+        "Acute myocardial infarction (injury with ischaemia) — NSTEMI",
+        "Chronic myocardial injury only",
+        "Unstable angina",
+        "Stable angina"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قيم فوق المئين 99 مع تغيرات ST-T جديدة جديدة (انقلاب T) في سياق إكليلي حاد = أذية حادة مع نقص تروية = احتشاء حاد (NSTEMI). الأذية المزمنة تفاوتها ≤20% بلا سياق حاد، والذبحة غير المستقرة تروبونينها طبيعي.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q3",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c2",
+      "question_stem": "A patient develops polymorphic VT 10 days after an anterior MI with EF 30%. What does this imply compared with VF in the first 48 hours?",
+      "options": [
+        "Both carry the same benign prognosis",
+        "Convalescent-phase ventricular arrhythmia marks poor ventricular function and may herald sudden death — consider electrophysiological testing/ICD; early VF (<48 h) resuscitated has the same prognosis as no VF",
+        "Late arrhythmias never occur after MI",
+        "This indicates Dressler's syndrome"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "النظميات البطينية في طور النقاهة علامة بطين ضعيف وتنذر بموت مفاجئ (تقييم فيزيولوجي كهربائي وICD)؛ بينما المبكر خلال 48 ساعة المعالج يحمل مآل من لم يصب به.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q4",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c3",
+      "question_stem": "Two days after a large anterior MI, a patient develops pleuritic, positional chest pain at the same site and a friction rub. Which analgesic strategy is correct?",
+      "options": [
+        "Ibuprofen regularly for 5 days",
+        "Prednisolone 40 mg daily",
+        "Opiate-based analgesia — NSAIDs and steroids are avoided early post-MI because they increase the risk of aneurysm formation and myocardial rupture",
+        "Colchicine daily for 3 months"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "التهاب التامور بعد الاحتشاء (اليوم 2-3، ألم وضعي وحكة) يعالج بالمسكنات الأفيونية؛ وNSAIDs والستيرويد تُتجنب مبكراً لزيادتها خطر أم الدم وتمزق العضلة. (الدريسلر المتأخر خلافاً لذلك قد يحتاج أسبرين عالي/NSAIDs/ستيرويد.)",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q5",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c3",
+      "question_stem": "A 70-year-old man with inferior STEMI becomes hypotensive after successful PCI; lung fields are clear and right-sided leads show ST elevation in V4R. What is the correct treatment approach?",
+      "options": [
+        "Intravenous furosemide to unload the chest",
+        "Fluid loading for right ventricular infarction, avoiding nitrates and diuretics",
+        "Immediate dobutamine infusion",
+        "Trendelenburg positioning with high-dose nitrates"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "احتشاء البطين الأيمن (ارتفاع V4R مع هبوط ضغط ورئتين صافيتين) يعالج بتحميل السوائل؛ المدرات والنترات تخفض العود الوريدي وتفاقم الهبوط.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "رئتان صافيتان مع هبوط ضغط سفلي = فكر يميناً.",
+        "ما الذي يملأ البطين الأيمن المعتمد على العود؟"
+      ]
+    },
+    {
+      "id": "L9_q6",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c4",
+      "question_stem": "An ECG shows ST elevation in V1-V6, I and aVL with a new right bundle branch block. Which occlusion is responsible and what is its approximate 30-day mortality?",
+      "options": [
+        "Distal LAD — 4.5%",
+        "Proximal LAD (before the first septal perforator) — approximately 19.6%",
+        "Right coronary artery — 6.4%",
+        "Left circumflex — 25%"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "احتشاء أمامي واسع مع حصار = انسداد LAD الداني قبل أول ثقبة حاجزية؛ أعلى وفاة 30 يوماً في جدول المحاضرة (~19.6%).",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q7",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c4",
+      "question_stem": "Which ECG pattern is NOT a recognised cause of ST-segment elevation?",
+      "options": [
+        "Acute pericarditis and benign early repolarisation",
+        "Brugada pattern and hypothermia (Osborn waves)",
+        "Hyperkalaemia and takotsubo cardiomyopathy",
+        "First-degree AV block"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "حصار AV الأول يطيل PR ولا يرفع ST؛ أما التامور الحاد والتناظر المبكر الحميد وبروغادا والتبرؤ (موجات أوزبورن) وفرط البوتاسيوم وتاكوتسوبو فكلها ضمن التشخيص التفريقي لارتفاع ST.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L9_q8",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c5",
+      "question_stem": "A patient with STEMI has just received streptokinase. Which properties distinguish streptokinase from tenecteplase?",
+      "options": [
+        "Streptokinase is more fibrin-specific and non-antigenic",
+        "Streptokinase is non-fibrin-specific and antigenic (hypotension/allergy) with lower TIMI 3 patency (60-68%), whereas tenecteplase is a single weight-based bolus with high fibrin specificity (~85% patency)",
+        "Both require a 90-minute infusion",
+        "Tenecteplase is contraindicated in anterior MI"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الستربتوكيناز غير النوعي للفبرين ومولد أضداد (هبوط ضغط/تحسس) وبجريان TIMI3 أدنى (60-68%)؛ التينكت بلاز بولس مفرد حسب الوزن نوعي جداً (~85%).",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L9_q9",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c6",
+      "question_stem": "A 67-year-old survivor of anterior MI has EF 32%, pulmonary oedema on admission and type 2 diabetes. Which additional drug class has a specific indication?",
+      "options": [
+        "Mineralocorticoid receptor antagonist (eplerenone or spironolactone 25-50 mg daily)",
+        "Digoxin for all post-MI patients",
+        "Verapamil to prevent remodelling",
+        "Routine antibiotic prophylaxis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "EF <35% مع وذمة رئوية أو سكري = استطباب MRA (إبليرينون/سبيرونولاكتون 25-50 ملغ/يوم) فوق ACEi؛ والديغوكسين والفيراباميل ليسا وقاية عامة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L9_q10",
+      "lecture_id": "L9_acs_part2",
+      "concept_id": "L9_c6",
+      "question_stem": "An 82-year-old is brought in with confusion, anorexia and a fall; ECG shows an evolving anterior STEMI. What is true about MI in old age?",
+      "options": [
+        "Atypical presentation is typical; hospital mortality exceeds 25% in over-75s yet the absolute benefit of evidence-based treatment may be greatest in older patients",
+        "Chest pain is the rule in the elderly",
+        "Age is a contraindication to reperfusion",
+        "Mortality in the elderly is lower than in younger patients"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المسن يقدم لانموذجياً (فقد شهية، وهن، هذيان، سقوط)؛ وفاته المشفية >25% فوق 75؛ والفائدة المطلقة من العلاج المثبت قد تكون الأكبر عندهم مع ارتفاع الأذيات (نزف داخل قحف بعد الحالة الليتية).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L9_case1",
+      "lecture_id": "L9_acs_part2",
+      "title": "Inferior STEMI with Right Ventricular Infarction",
+      "scenario": "A 61-year-old diabetic man is brought by ambulance with 90 minutes of crushing central chest pain radiating to both arms, sweating and vomiting. The paramedics transmit an ECG showing ST elevation in II, III and aVF. On arrival he becomes hypotensive despite pain relief, and the team must work through the working diagnosis, the right-sided ECG, and the reperfusion decision — a hospital without catheterisation facilities.",
+      "vignette": {
+        "age": 61,
+        "sex": "male",
+        "chief_complaint": "90 minutes of crushing chest pain with sweating and vomiting",
+        "history": "Type 2 diabetes (metformin), hypertension, smoker 25 pack-years; no previous cardiac history; no bleeding history or recent surgery.",
+        "vitals": {
+          "bp": "86/54 mmHg",
+          "hr": "48 bpm (sinus bradycardia)",
+          "rr": "22/min",
+          "temp": "36.4 C",
+          "spo2": "95% room air"
+        },
+        "exam": "Distressed, pale and diaphoretic. JVP elevated at 7 cm. Lung fields CLEAR. Heart sounds quiet; no murmur initially. No peripheral oedema. Right-sided ECG requested.",
+        "labs": [
+          {
+            "name": "hs-Troponin T (0 h)",
+            "value": "42 ng/L (ref <14)",
+            "flag": "high"
+          },
+          {
+            "name": "hs-Troponin T (3 h)",
+            "value": "1180 ng/L",
+            "flag": "critical"
+          },
+          {
+            "name": "Glucose",
+            "value": "11.8 mmol/L (ref 4-7.8)",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "106 micromol/L (ref 60-110)",
+            "flag": "normal"
+          },
+          {
+            "name": "Potassium",
+            "value": "3.3 mmol/L (ref 3.5-5.0)",
+            "flag": "low"
+          }
+        ],
+        "imaging": "ECG: ST elevation 3 mm in II, III, aVF with reciprocal depression in I and aVL; sinus bradycardia 48. RIGHT-SIDED ECG: ST elevation in V3R-V4R (right ventricular infarction). No posterior lead changes. CXR: clear lung fields, normal heart size."
+      },
+      "steps": [
+        {
+          "id": "L9_case1_s1",
+          "prompt": "What is the working diagnosis and its artery?",
+          "options": [
+            "Anterior STEMI — LAD",
+            "Inferior STEMI (ST elevation II, III, aVF) — RCA (usually a dominant right coronary artery)",
+            "NSTEMI — partial occlusion",
+            "Unstable angina"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "ارتفاع ST في II وIII وaVF مع انحراف مقابل في I وaVL = احتشاء سفلي برتك RCA؛ والبطء النسبي والمبالغة الودنية تتسق مع منعكس مبهمي سفلي.",
+          "xp": 10,
+          "hints": [
+            "أي التوصيلات مرتفعة؟",
+            "شريان منطقة السفلية عادة؟"
+          ]
+        },
+        {
+          "id": "L9_case1_s2",
+          "prompt": "The patient is hypotensive with clear lungs. What investigation clarifies the cause, and what does Table 3.2 list?",
+          "options": [
+            "Urgent CT pulmonary angiogram",
+            "Right-sided ECG (V3R/V4R) — the hypotension differential in inferior MI is: RV infarction, LV failure, bradyarrhythmia, acute severe MR, VSR, Bezold-Jarisch reflex",
+            "Echocardiogram only, hours later",
+            "Tilt table test"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "هبوط الضغط في السفلي: احتشاء يمين (تأكيد بتوصيلات يمينية V3R/V4R) أو فشل أيسر أو بطء أو MR حاد أو تمزق حجاب أو منعكس بيزولد-جاريش؛ والرئتان الصافيتان مع وداجي مرتفع يرجحان اليمين.",
+          "xp": 15,
+          "hints": [
+            "ماذا يوجه بين هذه الأسباب بسريرياً؟",
+            "توصيلات يمينية."
+          ]
+        },
+        {
+          "id": "L9_case1_s3",
+          "prompt": "Right-sided ECG confirms RV infarction. What is the correct haemodynamic management?",
+          "options": [
+            "IV furosemide 80 mg to clear congestion",
+            "Fluid loading (with careful monitoring), avoiding nitrates and diuretics; atropine if bradycardia causes haemodynamic compromise",
+            "High-dose sublingual GTN",
+            "Fluid restriction to 1 L/day"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "البطين الأيمن المصاب يعتمد على العود الوريدي: تحميل سوائل بحذر مع تجنب النترات والمدرات؛ والأتروبين 0.6-1.2 ملغ وريدياً للبطء المؤثر دورانياً.",
+          "xp": 15,
+          "hints": [
+            "المشكلة امتلاء أم احتقان؟",
+            "ماذا يحدث لو خفضت العود الوريدي؟"
+          ]
+        },
+        {
+          "id": "L9_case1_s4",
+          "prompt": "The nearest PCI centre is 3 hours away by road. It is now 2.5 hours from pain onset. What reperfusion strategy fits the lecture's algorithm?",
+          "options": [
+            "Await transfer for primary PCI, accepting a 3-hour delay",
+            "Fibrinolysis now (ST elevation within 12 hours; PCI not achievable within 120 minutes; no contraindications) with tenecteplase weight-based bolus, then transfer for routine early angiography (2-24 hours)",
+            "Medical therapy only with aspirin and analgesia",
+            "Thrombolysis is contraindicated by the hypotension alone"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "التعذر الزمني لـPCI (>120 دقيقة) مع استيفاء المعايير (ارتفاع ST، <12 ساعة، لا موانع) يجعل الحال الليتية (بولس TNK حسب الوزن) ثم التصوير المبكر 2-24 ساعة هو الاستراتيجية؛ وهبوط ضغط الروماتيزم الروماتيزم ليس مانعاً بحد ذاته بعد تصحيحه بالسوائل.",
+          "xp": 15,
+          "hints": [
+            "قاعدة الـ120 دقيقة.",
+            "هل حقق معايير الحال الليتية الثلاثة؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة نموذجية لاحتشاء سفلي مع مشاركة يمينية: الألم الماطح مع تعرق وإقياء وبرد، ارتفاع II/III/aVF مع انعكاس في I/aVL وبطء جيبي. هبوط الضغط مع رئتين صافيتين ووداجي مرتفع → وصلة يمينية V4R أكدت احتشاء البطين الأيمن (جدول أسباب هبوط الضغط في السفلي: يمين، فشل أيسر، بطء، MR حاد، VSR، بيزولد-جاريش). الإدارة: تحميل سوائل وضبط البطء بالأتروبين وتجنب النترات/المدرات؛ ثم قرار إعادة التروية وفق خوارزمية ESC 2017: PCI غير متاح خلال 120 دقيقة → حال ليتية ببولس TNK (مع تصحيح البوتاسيوم المنخفض — نقص البوتاسيوم يزيد نظميات) ثم تصوير مبكر 2-24 ساعة. الدروس: 1) وصلة يمينية عند أي سفلي مترنّح؛ 2) امتلاء لا احتقان؛ 3) الزمن هو القرار (التأخر>120 دقيقة يحول لليتية)؛ 4) تصحيح البوتاسيوم جزء من مكافحة النظميات.",
+      "difficulty": "advanced",
+      "order_index": 0
+    },
+    {
+      "id": "L9_case2",
+      "lecture_id": "L9_acs_part2",
+      "title": "Mechanical Complication Day 3: Ventricular Septal Rupture",
+      "scenario": "A 74-year-old woman was admitted 3 days ago with an extensive anterior STEMI treated with primary PCI and a drug-eluting stent to a proximally occluded LAD. She had been stable on the ward, but the nurses call the team urgently: she has suddenly become cold, clammy and breathless, with a new loud murmur. This case focuses on distinguishing the mechanical complications of MI at the bedside and the pathway to emergency surgery.",
+      "vignette": {
+        "age": 74,
+        "sex": "female",
+        "chief_complaint": "Sudden breathlessness and collapse on day 3 post-MI",
+        "history": "Extensive anterior STEMI 3 days ago (ST elevation V1-V6, I, aVL with fascicular block at presentation); primary PCI with stent to proximal LAD; aspirin + ticagrelor + enoxaparin; previously independent, hypertensive.",
+        "vitals": {
+          "bp": "78/50 mmHg",
+          "hr": "124 bpm sinus tachycardia",
+          "rr": "32/min",
+          "temp": "36.6 C",
+          "spo2": "88% room air"
+        },
+        "exam": "Cold and clammy; JVP raised with prominent v waves; a NEW loud pansystolic murmur at the lower left sternal edge radiating to the RIGHT sternal border with a palpable thrill; lung fields with only basal crackles (no frank pulmonary oedema); pulsatile liver edge emerging; oliguria (<20 mL/h).",
+        "labs": [
+          {
+            "name": "Lactate",
+            "value": "5.8 mmol/L (ref 0.5-2.2)",
+            "flag": "critical"
+          },
+          {
+            "name": "Creatinine",
+            "value": "186 micromol/L (baseline 92)",
+            "flag": "high"
+          },
+          {
+            "name": "hs-Troponin T",
+            "value": "Elevated (baseline post-MI trajectory)",
+            "flag": "high"
+          },
+          {
+            "name": "Hb",
+            "value": "10.8 g/dL (ref 12-16)",
+            "flag": "low"
+          }
+        ],
+        "imaging": "ECG: sinus tachycardia, Q waves V1-V5 (evolved anterior MI), no new STE. Urgent transthoracic echo: deficient ventricular septum with high-velocity left-to-right shunt jet across the apical septum (ventricular septal rupture); hyperdynamic residual LV; moderate TR from RV volume overload; no severe MR."
+      },
+      "steps": [
+        {
+          "id": "L9_case2_s1",
+          "prompt": "What is the diagnosis and its mechanism?",
+          "options": [
+            "Papillary muscle rupture with acute severe mitral regurgitation",
+            "Ventricular septal rupture — a new loud pansystolic murmur radiating to the right sternal border with a left-to-right shunt causing acute right heart failure rather than pulmonary oedema",
+            "Dressler's syndrome",
+            "Stent thrombosis with re-infarction"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تمزق الحجاب في اليوم 2-5 بعد احتشاء أمامي واسع: لغط شامل عالٍ يذيع يمين القص مع رجفة وفشل أيمن حاد (تحويل يسار-يمين) — بينما تمزق الحلمة يُحدث وذمة رئوية حادة، وخطل الدعامة ألماً وارتفاع ST جديد.",
+          "xp": 15,
+          "hints": [
+            "أين يذيع اللغط؟",
+            "أين الفشل — أيمن أم أيسر؟"
+          ]
+        },
+        {
+          "id": "L9_case2_s2",
+          "prompt": "Which investigation confirms the diagnosis?",
+          "options": [
+            "Repeat troponin only",
+            "Doppler echocardiography (and right heart catheterisation if needed) demonstrating the left-to-right shunt",
+            "Chest X-ray",
+            "Exercise stress test"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الدوبلر الصدوي يظهر العيب الحجابي ونفث التحويل يسار-يمين؛ وقسطرة اليمين (قفزة أكسجين عند مستوى البطين) تكمل التأكيد عند الحاجة.",
+          "xp": 10,
+          "hints": [
+            "الشاهد هو التحويل.",
+            "ما الأداة الأسرع للتحويل؟"
+          ]
+        },
+        {
+          "id": "L9_case2_s3",
+          "prompt": "What is the definitive treatment?",
+          "options": [
+            "Diuretics and digoxin alone",
+            "Emergency surgical repair — without it the condition is usually fatal; stabilise with supportive measures (vasopressors/inotropic support, often mechanical support) en route to theatre",
+            "High-dose corticosteroids",
+            "Anticoagulation adjustment only"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الإصلاح الجراحي الإسعافي هو العلاج (دونها الحالة قاتلة عادة)؛ مع تثبيت مؤقت بالدعم الدوائي/الميكانيكي أثناء التجهيز للجراحة.",
+          "xp": 15,
+          "hints": [
+            "المشكلة ميكانيكية — علاجها؟",
+            "ماذا يحدث بلا جراحة؟"
+          ]
+        },
+        {
+          "id": "L9_case2_s4",
+          "prompt": "Her post-MI medication plan after recovery must include which core secondary prevention (per Box 16.51), assuming EF remains ~35% with diabetes?",
+          "options": [
+            "Aspirin + beta-blocker + ACE inhibitor + statin + mineralocorticoid receptor antagonist (eplerenone), with diabetes and BP control, rehabilitation and lifestyle measures",
+            "Aspirin alone",
+            "Digoxin and furosemide only",
+            "NSAIDs for residual pericarditis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحزمة الكاملة (صندوق 16.51): مضاد صفيحي، بيتا، ACEi، ستاتين، MRA (EF<35% مع سكري)، ضبط السكري والضغط، إعادة تأهيل وتعديل نمط الحياة؛ وNSAIDs تُتجنب بعد الاحتشاء.",
+          "xp": 10,
+          "hints": [
+            "EF 35% + سكري = أضف ماذا؟",
+            "الوقاية الثانوية سلة كاملة لا دواء واحد."
+          ]
+        }
+      ],
+      "debriefing_ar": "مضاعفة ميكانيكية كلاسيكية في اليوم 3 بعد احتشاء أمامي واسع (LAD داني): تدهور مفاجئ مع لغط شامل عالٍ يذيع للحد القصي الأيمن وفشل أيمن حاد وبقاء الرئتين دون وذمة صريحة — نمط تمزق الحجاب البطيني (عكس تمزق الحلمة الذي يظهر بوذمة رئوية حادة وMR). التأكيد بالدوبلر الصدوي (تحويل يسار-يمين) والعلاج جراحة إسعافية وإلا فالنتيجة قاتلة عادة. الدروس: 1) اليوم 2-5 هو نافذة المضاعفات الميكانيكية (حلمة، حجاب، جدار)؛ 2) اتجاه اللغط والفشل (أيمن أم أيسر) يفرق سريرياً بين تمزقي الحلمة والحجاب؛ 3) أم الدم تبقى في التفريقي بارتفاع ST مستديم ونبض متناقض؛ 4) الوقاية الثانوية الكاملة (بما فيها MRA عند EF<35% مع سكري) هي استكمال العلاج بعد النجاة.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

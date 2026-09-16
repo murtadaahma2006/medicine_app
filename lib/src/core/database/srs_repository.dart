@@ -10,7 +10,6 @@ class SrsCard {
     required this.backText,
     required this.type,
     required this.box,
-    required this.nextDue,
   });
 
   /// معرف البطاقة (جدول flashcards).
@@ -27,9 +26,6 @@ class SrsCard {
 
   /// صندوق Leitner الحالي (1..5).
   final int box;
-
-  /// ISO UTC للاستحقاق القادم.
-  final String nextDue;
 }
 
 /// مستودع التكرار المتباعد — خوارزمية Leitner بصناديق 1..5.
@@ -116,7 +112,7 @@ abstract final class SrsRepository {
   // ───────────────────────── الاستعلامات ─────────────────────────
 
   /// البطاقات المستحقة اليوم مرتبة بالأقدمية — الجرعة اليومية للمراجعة.
-  static Future<List<SrsCard>> dueToday({int limit = 25}) async {
+  static Future<List<SrsCard>> dueToday() async {
     final Database db = await DatabaseHelper.instance.database;
     final List<Map<String, Object?>> rows = await db.rawQuery('''
       SELECT f.id AS card_id, f.front_text, f.back_text,
@@ -125,8 +121,7 @@ abstract final class SrsRepository {
       JOIN ${DatabaseHelper.tableFlashcards} f ON f.id = s.flashcard_id
       WHERE s.next_due <= ?
       ORDER BY s.next_due ASC
-      LIMIT ?
-    ''', <Object?>[_endOfTodayUtc(), limit]);
+    ''', <Object?>[_endOfTodayUtc()]);
 
     return rows
         .map<SrsCard>(
@@ -136,7 +131,6 @@ abstract final class SrsRepository {
             backText: row['back_text']! as String,
             type: (row['s_type'] as String?) ?? 'basic',
             box: (row['s_box'] as num?)?.toInt() ?? 1,
-            nextDue: '',
           ),
         )
         .toList();

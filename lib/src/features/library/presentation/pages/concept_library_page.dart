@@ -14,7 +14,10 @@ import '../widgets/bank_filter_panel.dart';
 /// المعنية على الشرح المختار.
 /// ─────────────────────────────────────────────────────────────────────
 class ConceptLibraryPage extends StatefulWidget {
-  const ConceptLibraryPage({super.key});
+  const ConceptLibraryPage({this.specialty, super.key});
+
+  /// v20: حصر المكتبة داخل تخصص سريري واحد (null = كل التخصصات).
+  final String? specialty;
 
   @override
   State<ConceptLibraryPage> createState() => _ConceptLibraryPageState();
@@ -22,6 +25,8 @@ class ConceptLibraryPage extends StatefulWidget {
 
 class _ConceptLibraryPageState extends State<ConceptLibraryPage> {
   final DatabaseHelper _db = DatabaseHelper.instance;
+
+  String? get _specialty => widget.specialty;
 
   List<String> _systems = const <String>[];
   List<Map<String, Object?>> _lectures = const <Map<String, Object?>>[];
@@ -46,9 +51,13 @@ class _ConceptLibraryPageState extends State<ConceptLibraryPage> {
       _error = null;
     });
     try {
-      final List<String> systems = await _db.getDistinctSystems();
+      final List<String> systems =
+          await _db.getDistinctSystems(specialty: _specialty);
       final List<Map<String, Object?>> lectures =
-          await _db.getUnitsBySystem(_selectedSystem);
+          await _db.getUnitsBySystem(
+        _selectedSystem,
+        specialty: _specialty,
+      );
 
       if (!mounted) return;
       setState(() {
@@ -71,6 +80,10 @@ class _ConceptLibraryPageState extends State<ConceptLibraryPage> {
       final Database db = await _db.database;
       final List<String> where = <String>[];
       final List<Object?> args = <Object?>[];
+      if (_specialty != null) {
+        where.add('u.specialty = ?');
+        args.add(_specialty);
+      }
       if (_selectedLectureId != null) {
         where.add('c.unit_id = ?');
         args.add(_selectedLectureId);
@@ -244,11 +257,15 @@ class _ConceptRow extends StatelessWidget {
             width: 42,
             height: 42,
             decoration: BoxDecoration(
-              color: AppColors.success(b).withValues(alpha: 0.12),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: AppGradients.warmSage,
+              ),
               borderRadius: BorderRadius.circular(AppRadius.chip),
             ),
-            child: Icon(Icons.menu_book_rounded,
-                size: 20, color: AppColors.success(b)),
+            child: const Icon(Icons.menu_book_rounded,
+                size: 20, color: Colors.white),
           ),
           const SizedBox(width: AppSpacing.md),
           Expanded(

@@ -1,8 +1,19 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+// ── قراءة بيانات توقيع release (إن وُجدت) ──
+// الملف android/key.properties لا يُرفع للمستودع (مستثنى في .gitignore).
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
 android {
@@ -28,9 +39,28 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        // توقيع release الحقيقي — يُنشأ فقط عند وجود android/key.properties.
+        // غيابه (جهاز تطوير بلا keystore) = بناء debug-signed بلا فشل.
+        if (keystorePropertiesFile.exists()) {
+            create("release") {
+                keyAlias = keystoreProperties["keyAlias"] as String
+                keyPassword = keystoreProperties["keyPassword"] as String
+                storeFile = file(keystoreProperties["storeFile"] as String)
+                storePassword = keystoreProperties["storePassword"] as String
+            }
+        }
+    }
+
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("debug")
+            // توقيع حقيقي إن توفر key.properties، وإلا fallback لـ debug
+            // (بناء محلي للتجربة فقط — لا يصلح للنشر على المتاجر).
+            signingConfig = if (keystorePropertiesFile.exists()) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
         }
     }
 }

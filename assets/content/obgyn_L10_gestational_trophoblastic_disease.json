@@ -1,0 +1,1425 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L10_gestational_trophoblastic_disease",
+    "specialty": "obgyn",
+    "title": "Hydatidiform Mole and Gestational Trophoblastic Disease",
+    "module": "gynecologic_oncology",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L10 H. mole.pdf",
+      "page_count": 28
+    },
+    "tags": [
+      "gestational trophoblastic disease",
+      "complete mole",
+      "partial mole",
+      "hydatidiform mole",
+      "beta-hCG",
+      "snowstorm ultrasound",
+      "theca lutein cyst",
+      "choriocarcinoma",
+      "suction evacuation",
+      "hCG follow-up"
+    ],
+    "order_index": 9,
+    "golden_tip": [
+      "Preeclampsia BEFORE 20 weeks is an exam red flag for molar pregnancy — with hyperemesis and exaggerated pregnancy signs by 6–8 weeks (high hCG), a large-for-date soft doughy uterus, and grape-like vesicles passed vaginally, think hydatidiform mole.",
+      "Genetics trap: complete mole = 46,XX (90%), all-paternal chromosomes, NO fetal tissue; partial mole = 69,XXY/69,XXX triploid (dispermy) WITH fetal tissue but no viable fetus. 46,YY has never been observed.",
+      "After evacuation: β-hCG weekly until normal for 3–4 weeks, then monthly for 6 months. Plateau or rise = malignant GTN → exclude metastases (lungs first). No IUCD, and no hormonal contraception until hCG normalizes."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Gestational Trophoblastic Disease: Spectrum, Definitions, and Risk Factors",
+      "summary_ar": "مرض الأرومة الغاذية الحملي (GTD) مجموعة اضطرابات تنشأ كلها من المشيمة وتشمل الحمل العنقودي الكامل والجزئي وأورام الأرومة الغاذية الموضعية في المشيمة والأحمال الغازية وسرطان المشيمة. الحمل العنقودي يعني تكاثرًا غير طبيعي لخلايا الأرومة الغاذية مع وذمة سدية وتشكل حويصلات تشبه عنقود العنب. يرتفع الخطر عند النساء فوق الأربعين أو دون العشرين وعند من لم ينجبن من قبل ومن سبق لهن حمل عنقودي.",
+      "sections": [
+        {
+          "heading": "The Spectrum of Gestational Trophoblastic Disease",
+          "body_text": "Gestational trophoblastic disease (GTD) encompasses several disease processes that originate in the placenta. These include:\n- Complete and partial moles (hydatidiform mole)\n- Placental site trophoblastic tumors\n- Invasive moles\n- Choriocarcinomas\n\nThe spectrum therefore runs from benign molar disease through invasive (pre-malignant) forms up to choriocarcinoma, which the lecture explicitly calls a **malignant disease of trophoblastic tissue**. GTD sits at the crossroads of obstetrics and gynecology: it presents as an early-pregnancy problem (bleeding, enlarged uterus, high hCG) but is managed within gynecologic oncology once malignant change enters the picture. One unifying idea runs through the whole lecture: trophoblast is the hCG factory, so every entity in this spectrum is tracked with quantitative **hCG** — for diagnosis, for follow-up after evacuation, and for detecting malignant change.",
+          "key_points": [
+            "GTD = several placenta-originating disease processes: complete and partial moles (hydatidiform mole), placental site trophoblastic tumors, invasive moles, and choriocarcinomas",
+            "All GTD entities produce hCG — the single marker used for diagnosis and surveillance throughout the lecture"
+          ]
+        },
+        {
+          "heading": "Hydatidiform Mole: Definition and the Two Forms",
+          "body_text": "The term **hydatidiform mole** (the older slides also write it 'hydatiform mole' or simply 'H mole') means that the placental trophoblastic cells **proliferate abnormally**, with **stromal edema**, with formation of **vesicles that look like a bunch of grapes** on their appearance.\n\nTwo forms of H mole exist:\n1. **Complete hydatidiform mole**\n2. **Partial hydatidiform mole**\n\nThe grape-like vesicles are hydropic (edematous) chorionic villi. When they rupture they release their fluid as light pink or brown discharge, and when they detach they may be passed vaginally as visible grape-like tissue — the hallmark of the disease and its most common presenting symptom (97%)."
+        },
+        {
+          "heading": "Complete vs Partial Mole: Origin, Fetal Tissue, and Malignant Potential",
+          "body_text": "**Complete hydatidiform mole**\n- A sperm has fertilized an **'empty' egg** — an ovum that contains **no nucleus or DNA**.\n- All the genetic material comes from the **father's sperm**; therefore there is **no fetal tissue**.\n- Up to **20%** of patients with complete moles will need **additional surgery or chemotherapy after their initial surgery**.\n- A small percentage of complete moles may develop into **choriocarcinoma**, a malignant form of GTD.\n\n**Partial hydatidiform mole**\n- **Two sperm fertilize a normal egg** (dispermy).\n- These contain **some fetal tissue mixed in with the trophoblastic tissue** — but **no viable fetus is being formed**.\n- Only a **small percentage** of patients with partial moles need further treatment after initial surgery.\n- Partial moles **rarely develop into malignant GTD**.\n\nExam pearl: fetal tissue on the specimen = PARTIAL mole; total absence of fetal tissue with purely paternal genetics = COMPLETE mole (which also carries the higher malignant risk).",
+          "check": {
+            "prompt": "Molar placentation is reported WITH fetal tissue mixed between areas of trophoblast. What is the diagnosis and its malignant risk?",
+            "options": [
+              "Complete mole — 10–20% become malignant",
+              "Invasive mole — spreads to brain first",
+              "Partial mole — rarely develops into malignant GTD",
+              "Complete mole — always becomes choriocarcinoma",
+              "Choriocarcinoma — requires immediate chemotherapy"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "وجود نسيج جنيني بين نسيج الأرومة الغاذية يميّز الحمل العنقودي الجزئي الناشئ عن إخصاب بييضة طبيعية بمنيّين؛ وهو نادرًا ما يتحول إلى مرض أرومي غاذي خبيث، بينما الحمل الكامل خالٍ من النسيج الجنيني تمامًا وذو خطر خباثة أعلى."
+          }
+        },
+        {
+          "heading": "Risk Factors for Molar Pregnancy",
+          "body_text": "- **Age:** the risk of **complete** molar pregnancy is highest in women **over age 40** and **younger than 20**. Age is less a factor for partial moles — and remember that **all women of childbearing age are at risk** for the disease.\n- **Pregnancy number:** **nulliparous** women are at more risk.\n- **Having a molar pregnancy before:** once a woman has had a hydatidiform mole, there is about a **1 in 60** chance that she will have another one; it is important to remember that normal outcomes are expected in 98% of subsequent pregnancies.\n- **Blood type:** women with blood type **A or AB** are at slightly higher risk than those with type **B or O**.",
+          "key_points": [
+            "Extreme maternal age (<20 or >40 years) is the top risk factor for COMPLETE mole; age matters less for partial moles",
+            "Previous mole: ~1 in 60 chance of recurrence, yet 98% of subsequent pregnancies are normal",
+            "Nulliparity and blood type A/AB add slightly higher risk than B/O"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gestational trophoblastic disease (GTD)",
+          "definition_ar": "مجموعة اضطرابات تنشأ من المشيمة تشمل الحمل العنقودي الكامل والجزئي والورم الأرومي الغاذي الموضعي في المشيمة والحمل الغازي وسرطان المشيمة."
+        },
+        {
+          "term": "Hydatidiform mole",
+          "definition_ar": "تكاثر غير طبيعي لخلايا الأرومة الغاذية المشيمية مع وذمة سدية وتشكل حويصلات مائية تشبه حبات العنب."
+        },
+        {
+          "term": "Complete mole",
+          "definition_ar": "حمل عنقودي كامل تأتي فيه كل المادة الوراثية من الأب (بييضة فارغة) ولا يحتوي أي نسيج جنيني."
+        },
+        {
+          "term": "Partial mole",
+          "definition_ar": "حمل عنقودي جزئي ثلاثي الصيغة الصبغية (69) ينشأ عن إخصاب بييضة طبيعية بمنيّين ويحتوي نسيجًا جنينيًا غير قابل للحياة."
+        },
+        {
+          "term": "Choriocarcinoma",
+          "definition_ar": "سرطان المشيمة؛ ورم خبيث للنسيج الأرومي الغاذي ينتشر بالغزو الموضعي وبالدم إلى الرئتين والكبد والدماغ."
+        },
+        {
+          "term": "Placental site trophoblastic tumor",
+          "definition_ar": "ورم من الأرومة الغاذية في موضع انغراس المشيمة؛ أحد مكونات طيف مرض الأرومة الغاذية الحملي."
+        },
+        {
+          "term": "Invasive mole",
+          "definition_ar": "حمل عنقودي غازٍ تخترق فيه الأرومة الغاذية جدار الرحم؛ من أشكال المرض الأرومي الغاذي."
+        },
+        {
+          "term": "Nulliparous",
+          "definition_ar": "امرأة لم تنجب من قبل (عديمة الولادات)؛ وهي أكثر عرضة لحدوث الحمل العنقودي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Genetics and Pathogenesis of Complete and Partial Moles",
+      "summary_ar": "الحمل العنقودي الكامل لا يحتوي نسيجًا جنينيًا؛ 90% منه 46,XX و10% منه 46,XY، وكل صبغياته أبوية المنشأ: النمط المتماثل الجينات (80%) ينتج عن مضاعفة المجموعة الصبغية الأبوية النصفية فيكون أنثى دائمًا ولا يُشاهد 46,YY أبدًا، والنمط المتباين (20%) ينتج عن إخصاب بييضة فارغة بمنيّين. أما الحمل الجزئي فثلاثي الصيغة (69,XXY أو 69,XXX) من إخصاب بييضة طبيعية بمنيّين.",
+      "sections": [
+        {
+          "heading": "Complete Mole: Karyotype and Androgenetic Origin",
+          "body_text": "A **complete mole contains no fetal tissue**.\n- **Ninety percent (90%) are 46,XX**\n- **10% are 46,XY**\n\nComplete moles can be divided into 2 types — both are **androgenetic** (all chromosomal material is paternal):\n\n**1. Homozygous (androgenetic) complete mole**\n- Accounts for **80%** of complete moles\n- Two **identical paternal chromosome complements**, derived from **duplication of the paternal haploid chromosomes** (a single sperm fertilizes an empty ovum and its haploid set doubles)\n- **Always female** — **46,YY has never been observed**\n\n**2. Heterozygous (androgenetic) complete mole**\n- Accounts for **20%** of complete moles\n- May be **male or female**\n- All chromosomes are of paternal origin, most likely due to **dispermy** (two different sperm fertilizing the same empty ovum)\n\nBecause there is no maternal genomic contribution and no embryo, the entire uterine content is proliferating trophoblast — the reason hCG can reach extreme levels and the reason malignant change is a genuine risk afterwards.",
+          "key_points": [
+            "Complete mole: 90% 46,XX / 10% 46,XY — ALL chromosomes paternal, NO fetal tissue",
+            "Homozygous complete mole (80%): duplication of a single paternal haploid set — always female; 46,YY never observed",
+            "Heterozygous complete mole (20%): dispermy — male or female"
+          ]
+        },
+        {
+          "heading": "The Lecture's Fertilization Diagrams: How Each Karyotype Arises",
+          "body_text": "The lecture illustrates complete-mole pathogenesis with two diagrams, in which the inputs are sperm (represented as orange ovals) and an egg (a yellow oval), combined with a '+' operator; the output of each scenario is a zygote — a cell containing chromosomes that are entirely paternal.\n\n**Scenario 1 → 46,XX (homozygous):** a single sperm carrying **23X** fertilizes an **empty egg**; the paternal haploid set duplicates, leaving one set labeled 23X plus a second identical set labeled 23X — **23X + 23X → total karyotype 46,XX**.\n\n**Scenario 2 → 46,XY (heterozygous):** two sperm — one carrying **23Y** and one carrying **23X** — fertilize the same **empty egg**, giving paternal sets **23Y + 23X → total karyotype 46,XY** (the presence of the 23Y and 23X sets is implied by the resulting karyotype).\n\nIn both scenarios the ovum is empty (no maternal chromosomes), so **100% of the genome is paternal** and no embryo can develop — hence a 'complete' mole with no fetal tissue, no gestational sac, and no fetal heart activity on ultrasound.",
+          "check": {
+            "prompt": "A complete mole is reported as homozygous with karyotype 46,XX. Which mechanism produced it?",
+            "options": [
+              "Dispermy — a 23X sperm and a 23Y sperm fertilizing a normal ovum",
+              "Duplication of the paternal haploid chromosomes after a single X-bearing sperm fertilized an empty ovum",
+              "Fertilization of a normal ovum by one sperm with loss of maternal chromosomes",
+              "Duplication of the maternal haploid set within a normal ovum",
+              "Fusion of two separate blastocysts inside the uterus"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النمط المتماثل الجينات (80% من الأحمال الكاملة) ينتج عن مضاعفة المجموعة الصبغية الأبوية النصفية الواحدة بعد إخصاب بييضة فارغة، فيكون أنثى دائمًا 46,XX ولا يُشاهد 46,YY قط، أما الإخصاب بمنيّين لبييضة طبيعية فيعطي حملًا جزئيًا ثلاثيًا مثل 69,XXY."
+          }
+        },
+        {
+          "heading": "Partial Mole: Triploid Karyotypes (69,XXY and 69,XXX)",
+          "body_text": "The partial-mole diagrams show a **normal egg** (carrying its own 23X) fertilized by **two sperm** (dispermy):\n- **23X sperm + 23Y sperm + normal egg (23X) → 69,XXY**\n- **23X sperm + 23X sperm + normal egg (23X) → 69,XXX**\n\nThe output in each diagram is **triploidy — 69 chromosomes**: one maternal plus two paternal haploid sets. Because maternal DNA is present, a **partial mole contains some fetal tissue mixed in with the trophoblastic tissue — but no viable fetus is formed**.\n\nContrast with the complete mole: empty ovum, purely paternal diploid genome (46,XX or 46,XY), and absolutely no fetal tissue. This single genetic distinction explains nearly every clinical difference between the two forms — hCG burden, ultrasound appearance, and malignant potential.",
+          "key_points": [
+            "Partial mole = triploid: 69,XXY or 69,XXX from TWO sperm fertilizing a NORMAL egg",
+            "Fetal tissue is present in a partial mole but no viable fetus forms",
+            "Complete mole genome is 100% paternal; partial mole keeps one maternal haploid set"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Androgenetic",
+          "definition_ar": "أندروجيني: كل المادة الصبغية من أصل أبوي فقط، كما في الحمل العنقودي الكامل."
+        },
+        {
+          "term": "Homozygous",
+          "definition_ar": "متماثل الجينات: مجموعتان صبغيتان أبويتان متطابقتان من مضاعفة مجموعة أبوية نصفية واحدة؛ يشكل 80% من الأحمال الكاملة."
+        },
+        {
+          "term": "Heterozygous",
+          "definition_ar": "متباين الجينات: صبغيات أبوية من منيّين مختلفين؛ يشكل 20% من الأحمال الكاملة وقد يكون النتيجة ذكرًا أو أنثى."
+        },
+        {
+          "term": "Dispermy",
+          "definition_ar": "إخصاب بييضة واحدة بمنيّين؛ آلية الحمل الجزئي الثلاثي والنمط المتباين من الحمل الكامل."
+        },
+        {
+          "term": "Triploid",
+          "definition_ar": "ثلاثي الصيغة الصبغية: 69 كروموسومًا (69,XXY أو 69,XXX) كما في الحمل العنقودي الجزئي."
+        },
+        {
+          "term": "Haploid",
+          "definition_ar": "نصف العدد الصبغي (23 كروموسومًا)؛ المجموعة التي يحملها كل منيٍّ أو بييضة."
+        },
+        {
+          "term": "Karyotype",
+          "definition_ar": "الصيغة الصبغية للخلية مثل 46,XX أو 46,XY أو 69,XXY."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Clinical Manifestations of Hydatidiform Mole",
+      "summary_ar": "أشيع عرض هو النزف المهبلي (97%) على شكل إفراز وردي فاتح أو بني من تمزق الحويصلات أو خروج حويصلات منفصلة تشبه العنب مهبليًا. يشمل الطيف أيضًا ألمًا حوضيًا وفرط إقياء حمليًا وعلامات حمل مبالغًا فيها بعمر 6–8 أسابيع بسبب ارتفاع hCG، وما قبل إرجاج قبل الأسبوع 20، وفقر دم من الفقد التدريجي للدم، ورحمًا أكبر من عمر الحمل لينًا عجيني الملمس، وتكيسات ثيكا-لوتينية في المبيض.",
+      "sections": [
+        {
+          "heading": "Symptoms and Signs (the Full Spectrum)",
+          "body_text": "The clinical manifestations of hydatidiform mole (symptoms and signs) are:\n\n1. **Vaginal bleeding (97%)** — ruptured vesicles resulting in **light pink or brown vaginal discharge**, or **detached vesicles that may be passed vaginally (grape-like appearance)**\n2. **Pelvic pain**\n3. **Hyperemesis gravidarum**\n4. **Exaggerated signs of pregnancy**, appearing by **6–8 weeks** due to **high levels of hCG**\n5. **Preeclampsia at <20 weeks' gestation (early onset)**\n6. **Anemia** as a result of the gradual loss of blood\n7. **Enlarged uterus (large for date)** — **soft, doughy** in consistency by palpation\n8. **Theca lutein cysts of the ovary** (adnexal mass)\n\nThe combination that separates a mole from every other cause of early-pregnancy bleeding is 'too large + too strong + too early': a uterus TOO LARGE for dates, pregnancy signs TOO STRONG for dates (hyperemesis, early preeclampsia), and bleeding that may include passed grape-like vesicles.",
+          "key_points": [
+            "Vaginal bleeding is the most common symptom — 97% — classically light pink or brown discharge or passed grape-like vesicles",
+            "Preeclampsia BEFORE 20 weeks = think molar pregnancy (early-onset disease is otherwise rare)",
+            "Hyperemesis and exaggerated pregnancy signs appear by 6–8 weeks from very high hCG",
+            "Large-for-date, soft, doughy uterus; theca lutein cysts may present as an adnexal mass",
+            "Gradual, repeated blood loss produces anemia"
+          ],
+          "check": {
+            "prompt": "A woman at 16 weeks' gestation develops hypertension with proteinuria, hyperemesis gravidarum, and a uterus measuring 22 weeks. Which diagnosis must be excluded first?",
+            "options": [
+              "Chronic essential hypertension",
+              "Twin pregnancy with normal placentas",
+              "Gestational diabetes",
+              "Molar (hydatidiform) pregnancy",
+              "Placental abruption"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "ما قبل الإرجاج قبل الأسبوع 20 علامة إنذيرية للحمل العنقودي؛ ففرط hCG يفسر أيضًا فرط الإقياء والعلامات الحملية المبالغ فيها منذ 6–8 أسابيع، وتضخم الرحم أكثر من عمر الحمل بملمس لين عجيني مع احتمال تكيسات ثيكا-لوتينية يدعم التشخيص."
+          }
+        },
+        {
+          "heading": "Why These Signs Appear: the hCG Link",
+          "body_text": "Nearly every manifestation above traces back to two consequences of proliferating trophoblast:\n\n- **Hormone excess:** trophoblast is the hCG factory, so exuberant growth floods the circulation with hCG (levels may exceed 100,000 mIU/mL). Very high hCG **exaggerates the normal signs of pregnancy by 6–8 weeks**, drives **hyperemesis gravidarum**, stimulates the ovaries into **theca lutein cysts**, and underlies the **early-onset preeclampsia before 20 weeks**.\n- **Structural change:** the uterus fills with vesicles instead of a fetus, so it becomes **large for date, soft and doughy**; the hydropic villi are fragile, so they **rupture and bleed** (pink-brown discharge), and the gradual losses add up to **anemia**; pelvic pain accompanies the enlarged, distorted uterus.\n\nKeep this two-column logic (hormone excess vs structural change) in mind — it lets you reconstruct the entire symptom list instead of memorizing it.",
+          "key_points": [
+            "Hormone excess (hCG): exaggerated pregnancy signs by 6–8 weeks, hyperemesis, theca lutein cysts, early preeclampsia",
+            "Structural change: large-for-date soft doughy uterus, fragile vesicles that rupture and bleed, gradual-loss anemia, pelvic pain"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hyperemesis gravidarum",
+          "definition_ar": "فرط الإقياء الحملي: قيء شديد ومستمر في الحمل؛ من علامات الحمل العنقودي لارتفاع hCG."
+        },
+        {
+          "term": "Preeclampsia",
+          "definition_ar": "ما قبل الإرجاج: ارتفاع ضغط مع زلال بولي؛ ظهوره قبل الأسبوع 20 يوجب استبعاد الحمل العنقودي."
+        },
+        {
+          "term": "Theca lutein cysts",
+          "definition_ar": "تكيسات ثيكا-لوتينية: أكياس مبيضية ناتجة عن تحريض hCG المرتفع جدًا؛ قد تظهر ككتلة مُلحقة."
+        },
+        {
+          "term": "Large-for-date uterus",
+          "definition_ar": "رحم أكبر من عمر الحمل بملمس لين عجيني؛ علامة سريرية للحمل العنقودي."
+        },
+        {
+          "term": "Grape-like vesicles",
+          "definition_ar": "حويصلات تشبه حبات العنب قد تُطرح مهبليًا؛ العلامة المميزة للحمل العنقودي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Diagnostic Workup: Laboratory Tests, Ultrasound, Chest Imaging, and Histology",
+      "summary_ar": "يرتفع الشك بالحمل العنقودي عند hCG الكمي أعلى من 100,000 ملي-وحدة/مل (لكن قد يكون طبيعيًا). تشمل الفحوص المخبرية تعداد الدم الكامل مع الصفيحات ووظائف التخثر والكبد واليوريا والكرياتينين والتيروكسين (مرتفع مع يوثيرويدية سريرية). التصوير فوق الصوتي هو المعيار لتحديد الحملين الكامل والجزئي بنمط العاصفة الثلجية أو كتلة داخل رحمية متعددة الأكياس، وتُؤخذ صورة شعاعية أساسية للصدر لأن الرئتين الموقع الأول للنقائل، ويؤكد التشريح المرضي الزغابات المتوذمة وفرط تنسج الأرومة الغاذية وندرة الأوعية الجنينية.",
+      "sections": [
+        {
+          "heading": "Laboratory Tests",
+          "body_text": "**Quantitative beta-hCG (β-hCG)**\n- hCG levels greater than **100,000 mIU/mL** indicate **exuberant trophoblastic growth** and raise suspicion for a molar pregnancy.\n- **However, a molar pregnancy may have a normal hCG level** — a normal value never excludes the diagnosis.\n\n**Complete blood cell count with platelets**\n- Anemia could be present (from the gradual loss of blood) and coagulopathy could occur.\n\n**Clotting function**\n- Test clotting function to **exclude the development of a coagulopathy** — or to treat one if discovered.\n\n**Liver function tests** — part of the baseline organ panel.\n\n**Blood urea nitrogen (BUN) and serum creatinine** — renal baseline.\n\n**Thyroxine**\n- Although women with molar pregnancies are usually **clinically euthyroid**, plasma thyroxine is usually **elevated above the reference range for pregnancy**.\n- The patient **may present with signs and symptoms of hyperthyroidism**.",
+          "key_points": [
+            "β-hCG >100,000 mIU/mL = exuberant trophoblastic growth → suspicion of mole — but a NORMAL hCG does not rule it out",
+            "Screen for anemia (CBC with platelets), coagulopathy (clotting function), liver function, BUN and creatinine",
+            "Classic endocrine quirk: elevated thyroxine with clinical euthyroidism — some patients present frankly hyperthyroid"
+          ]
+        },
+        {
+          "heading": "Ultrasonography: the Criterion Standard and the Snowstorm Pattern",
+          "body_text": "Ultrasonography is the **criterion standard for identifying both complete and partial molar pregnancies**.\n- **Classic image (older ultrasonographic technology):** a **snowstorm pattern** representing the **hydropic chorionic villi**.\n- **High-resolution ultrasonography:** shows a **complex intrauterine mass containing many small cysts**.\n\nThe lecture's sonogram is annotated '**MOLAR PREG**': the ultrasound image displays an endometrial cavity significantly distended by a **heterogeneous, echogenic mass containing numerous small, anechoic (dark) cystic spaces** — the characteristic sonographic equivalent of grape-like vesicles ('snowstorm' / 'bunch of grapes' texture from the vesicular swellings of the chorionic villi). The mass completely fills the uterine cavity. The image labels read '**CX**' for the cervix below and '**HD**' for the probe head/orientation marker at the top of the sector (the sector header carries the machine's technical parameters — probe, mechanical index, depth scale 9.1 cm, and similar on-screen elements). There is a **complete absence of a gestational sac, fetus, or fetal heart activity** in this view.\n\nA companion routine obstetric first trimester scan in the same teaching set shows the contrasting normal situation: a fetus at **13w2d** whose spine appears as a bright linear echogenic structure, with limb buds visible against a background of uterine wall and amniotic fluid. The biometry table reads: femur length **FL = 0.960cm** (0.960 cm between the measurement calipers placed across the fetal femur), calculated gestational age **12w6d (25%)**, EDD 02-25-2005, and EFW **67g / 2oz (13%)**, with the depth/frequency readout (14.4cm) in the header — all displayed on the adjacent ultrasound slide. This is a reminder that in a COMPLETE mole no fetus is ever visualized, whereas a partial mole may retain fetal structures.",
+          "check": {
+            "prompt": "What does the classic 'snowstorm' pattern on ultrasound actually represent?",
+            "options": [
+              "Free blood clots in the uterine cavity",
+              "Multiple early gestational sacs",
+              "Hydropic (edematous) chorionic villi",
+              "Degenerating uterine fibroids",
+              "Ovarian theca lutein cysts"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "نمط العاصفة الثلجية هو انعكاس للزغابات المشيمية المتوذمة (المائية)؛ وبالتصوير عالي الدقة تظهر كتلة داخل رحمية معقدة تحوي العديد من الأكياس الصغيرة، مع غياب كيس الحمل والجنين ونشاط القلب الجنيني في الحمل الكامل."
+          }
+        },
+        {
+          "heading": "Baseline Chest Radiograph and Cross-Sectional Imaging",
+          "body_text": "**Once a molar pregnancy is diagnosed, a baseline chest radiograph should be taken** — the **lungs are a primary site of metastasis for malignant trophoblastic tumors**, and the film is the reference point for later comparison if malignant GTN develops.\n\nThe lecture also includes a cross-sectional slide whose imaging modality is a contrast-enhanced **sagittal CT of the abdomen and pelvis**; it demonstrates a large (approximately **10–12 cm**, estimated based on vertebral body height), well-circumscribed, heterogeneous pelvic mass. Its internal characteristics reveal a complex internal architecture: large areas of soft-tissue attenuation (gray), cystic/necrotic components of lower attenuation (darker gray), and irregular hyperdense (bright white) foci that may represent **calcifications or enhancing vascular septations**. The mass arises centrally from the uterus/adnexa, **displacing bowel loops superiorly** (loops containing both air (black) and contrast material); the urinary **bladder** is **located anteriorly** and is **partially compressed**, while the **rectum** (containing air) lies posterior. The **liver** and the **kidneys** (partially visualized, retroperitoneal) sit in the upper abdomen, and the lumbar vertebrae and sacrum of the vertebral column, iliac bones, pubic symphysis and coccyx complete the bony anatomy of the pelvis. The lecture slide's radiologic reading **suggests a degenerated uterine leiomyoma (fibroid) or a complex adnexal (ovarian) mass (e.g., cystadenoma or malignancy)**, and notes that further characterization with ultrasound or MRI would be required — the teaching point being that a large, complex, mixed solid-cystic pelvic mass in the GTD context must be interpreted together with hCG trends and histology, never on imaging alone.",
+          "key_points": [
+            "Baseline chest X-ray at diagnosis: the lungs are the primary metastatic site of malignant trophoblastic disease",
+            "CT can depict bulky, complex mixed solid-cystic pelvic disease — but final characterization requires hCG correlation and histology"
+          ]
+        },
+        {
+          "heading": "Histologic and Gross Pathologic Findings",
+          "body_text": "**Histologic findings — complete mole:**\n- **Edematous placental villi** (hydropic villi)\n- **Hyperplasia of the trophoblasts**\n- **Lack or scarcity of fetal blood vessels**\n- Chromosomal complement: **46XX in most cases, or 46XY in approximately 10–15% of cases**\n\n**The lecture's histology slide (a photomicrograph of a histological section, H&E stain, with a thin horizontal scale bar at the bottom right of 1.0 mm):** large, dilated, **cystic spaces filled with pale eosinophilic, proteinaceous fluid** — the edematous villi — lined by flattened-to-cuboidal cells, with a highly **vascularized** intervening stroma showing prominent **hemorrhage**; smaller glandular/tubular microcysts appear adjacent to the larger cysts.\n\n**Gross description:** the gross pathology slide content shows two photographs measured against a ruler (markings 1–7 cm). The **left** photograph shows a large (approximately **7–8 cm**), **globular, fleshy mass** with a **bosselated** (bumpy), **mottled tan-to-deep-purple, highly vascularized surface** on a green surgical drape; the **right** photograph shows the cut surface — a **characteristic whorled and fleshy** appearance with small rounded nodules of varying sizes and **areas of hemorrhage**. Abundant trophoblastic tissue is vascular, fleshy and hemorrhagic — which is exactly why evacuation can bleed heavily (see the complications concept).",
+          "key_points": [
+            "Histologic triad of complete mole: edematous villi + trophoblastic hyperplasia + absent or scanty fetal blood vessels",
+            "Karyotype on histology: 46XX in most cases; 46XY in approximately 10–15%",
+            "Grossly: grape-like vesicles; the tissue is vascular and hemorrhagic — anticipate bleeding at evacuation"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Quantitative β-hCG",
+          "definition_ar": "قياس β-hCG الكمي في المصل؛ المستوى الأعلى من 100,000 ملي-وحدة/مل يثير الشك بالحمل العنقودي مع أن القيمة قد تكون طبيعية."
+        },
+        {
+          "term": "Snowstorm pattern",
+          "definition_ar": "نمط العاصفة الثلجية في التصوير فوق الصوتي؛ يمثل الزغابات المشيمية المتوذمة."
+        },
+        {
+          "term": "Hydropic chorionic villi",
+          "definition_ar": "الزغابات المشيمية المائية المتوذمة؛ الوحدة النسيجية للحمل العنقودي ومصدر نمط العاصفة الثلجية."
+        },
+        {
+          "term": "Euthyroid hyperthyroxinemia",
+          "definition_ar": "ارتفاع التيروكسين دون أعراض سريرية فرط درقية؛ شائع في الحمل العنقودي وقد يتظاهر بعض المريضات بفرط الدرق."
+        },
+        {
+          "term": "Baseline chest radiograph",
+          "definition_ar": "صورة شعاعية أساسية للصدر تُؤخذ عند تشخيص الحمل العنقودي لأن الرئتين موقع أول لنقائل الأورام الأرومية الغاذية الخبيثة."
+        },
+        {
+          "term": "Trophoblastic hyperplasia",
+          "definition_ar": "فرط تنسج الأرومة الغاذية؛ سمة نسيجية أساسية للحمل العنقودي مع الزغابات المتوذمة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c5",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Treatment of Hydatidiform Mole: Evacuation and Contraception Rules",
+      "summary_ar": "العلاج هو إزالة كل النسيج الأرومي الغاذي؛ قد يُجهض الحمل العنقودي تلقائيًا وهو يحمل خطر تحول خبيث أقل، وإلا فيتم الشفط بالتفريغ أو التوسيع والكحت. يجب تجنب الحمل خلال فترة المتابعة، واللولب الرحمي مضاد الاستطباب، وتُتجنب وسائل منع الحمل الهرمونية حتى يعود hCG إلى المدى الطبيعي.",
+      "sections": [
+        {
+          "heading": "Management Principles",
+          "body_text": "- **Treatment is to remove all trophoblastic tissue.**\n- In some cases, **the mole will abort spontaneously** — and a spontaneous abortion carries **less risk of malignant change**.\n- If spontaneous abortion does not occur, **vacuum aspiration or dilatation and curettage (D&C)** is necessary.\n- **Pregnancy is to be avoided during the follow-up period** — any pregnancy would make the serial hCG curve impossible to interpret.\n- **IUCDs are contraindicated** after a molar pregnancy.\n- **Hormonal methods of contraception are to be avoided until hCG levels are normal.**\n\nIn practical terms: evacuate completely, then protect the follow-up with a **barrier method** until hCG has normalized and the surveillance protocol is finished.",
+          "key_points": [
+            "Goal of treatment: remove ALL trophoblastic tissue",
+            "A mole that aborts spontaneously carries LESS risk of malignant change",
+            "Otherwise: vacuum aspiration or D&C",
+            "No pregnancy during follow-up; NO IUCD; hormonal contraception only after hCG normalizes — barrier methods fill the gap"
+          ]
+        },
+        {
+          "heading": "Suction Evacuation: the Lecture's Technique Figure",
+          "body_text": "The lecture's treatment figure is a **medical illustration** (sagittal section of the female pelvis) whose caption (label B) reads: '**The amniotic fluid, placenta and fetus are suctioned through the cannula into a collection jar. The fetus and placenta are torn apart in the process.**'\n\nThe anatomical structures and instruments shown, step by step:\n- A **vaginal speculum** (Graves/Simms type) is inserted into the **vaginal canal** to visualize the **cervix**, which appears **dilated** to allow instrument passage.\n- A rigid **metal suction cannula** is passed through the cervix into the **uterine cavity** (the thick red muscular wall is the **myometrium**) and connected to flexible **suction tubing**; the surgeon's gloved hand stabilizes the tubing/cannula assembly.\n- **Negative pressure** — a blue arrow indicating the direction of flow — evacuates the uterine contents (products of conception: amniotic fluid, placental tissue, fetal parts) through the cannula into the **collection jar** (the jar is not fully visible but implied in the illustration); the tissue is physically **fragmented (torn apart)** as it passes through the cannula.\n- Surrounding anatomical structures: the **bladder** anteriorly with the pubic symphysis, the **rectum/anus** posteriorly, the **sacrum/coccyx** and pelvic floor muscles supporting the organs.\n\nThis is the 'vacuum aspiration' of the management slide — the procedure of choice for removing all trophoblastic tissue when the mole does not abort spontaneously.",
+          "check": {
+            "prompt": "A woman has just completed molar evacuation and requests a hormonal contraceptive implant. What is the correct advice?",
+            "options": [
+              "Insert it today — hormones do not affect hCG monitoring",
+              "Hormonal contraception should be avoided until hCG levels are normal; use a barrier method meanwhile",
+              "An IUCD is the preferred alternative today",
+              "No contraception is needed during follow-up",
+              "Permanent sterilization is recommended after every mole"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "تُتجنب وسائل منع الحمل الهرمونية حتى يعود hCG إلى المدى الطبيعي، واللولب الرحمي مضاد الاستطباب بعد الحمل العنقودي؛ فالأنسب طريقة حاجزية خلال فترة المتابعة مع تجنب الحمل كليًا حتى انتهائها."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Vacuum aspiration",
+          "definition_ar": "الشفط بالتفريغ؛ إفراغ الرحم من نسيج الحمل العنقودي عبر قنية شفط مع ضغط سالب."
+        },
+        {
+          "term": "Dilatation and curettage (D&C)",
+          "definition_ar": "التوسيع والكحت؛ بديل للشفط في إزالة كل النسيج الأرومي الغاذي."
+        },
+        {
+          "term": "IUCD",
+          "definition_ar": "اللولب داخل الرحم؛ مضاد الاستطباب خلال فترة المتابعة بعد الحمل العنقودي."
+        },
+        {
+          "term": "Spontaneous abortion of the mole",
+          "definition_ar": "إجهاض تلقائي للحمل العنقودي؛ يحمل خطر التحول الخبيث أقل من الإجراءات."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c6",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Follow-up After Molar Evacuation: the hCG Protocol and Future Pregnancies",
+      "summary_ar": "يُتابع hCG الكمي في المصل أسبوعيًا حتى يستقر ضمن المدى المرجعي 3–4 أسابيع (ويجب أن يهبط باستمرار ولا يرتفع أبدًا؛ يعتدل عادة خلال 8–12 أسبوعًا بعد الإفراغ) ثم شهريًا لستة أشهر. الثبات أو الارتفاع يعني مرضًا أروميًا غاذيًا خبيثًا يستوجب استبعاد النقائل. يُنصح بمنع حمل فعال خلال المتابعة، وخطر الحمل العنقودي الثاني 1.2–1.4% ويصل 20% بعد حملين، مع تقييم كل حمل قادم مبكرًا بالتصوير فوق الصوتي.",
+      "sections": [
+        {
+          "heading": "The Serial β-hCG Schedule (Further Outpatient Care)",
+          "body_text": "- **Serial quantitative serum beta-hCG levels should be determined** after evacuation.\n- Serum hCG levels are obtained **weekly until the levels are within the reference range for 3–4 weeks**.\n- Levels should **consistently drop and should never increase**.\n- **Normal levels are usually reached within 8–12 weeks** after evacuation of the hydatidiform mole.\n- **As long as the hCG levels are falling, intervention is not needed.**\n- Once levels have reached the reference range for 3–4 weeks, **check them monthly for 6 months**.\n- **If the serum hCG levels plateau or rise, the patient is considered to have malignant disease (i.e., gestational trophoblastic neoplasia, GTN) and metastatic disease needs to be excluded.**\n\nThink of the follow-up curve as a one-way staircase: every week must be lower than the last. A single rise — or even a plateau — converts the patient from 'benign mole under observation' to 'malignant GTN — exclude metastases now'.",
+          "check": {
+            "prompt": "Six weeks after evacuation, weekly hCG values read 6,900 → 7,100 → 6,950 mIU/mL. What does this pattern mean?",
+            "options": [
+              "Expected fluctuation — continue observation",
+              "Laboratory error — repeat in one month",
+              "Normal regression — discharge from follow-up",
+              "New pregnancy — order an ultrasound",
+              "Plateau = malignant gestational trophoblastic neoplasia; metastatic disease must be excluded"
+            ],
+            "correct_index": 4,
+            "explanation_ar": "يجب أن يهبط hCG باستمرار وألا يرتفع أبدًا؛ فالثبات أو الارتفاع بعد الإفراغ يعني مرضًا أروميًا غاذيًا خبيثًا (GTN) ويستوجب عندها استبعاد النقائل فورًا."
+          }
+        },
+        {
+          "heading": "Contraception During Follow-up and Future Pregnancy Counseling",
+          "body_text": "- **Effective contraception is recommended during the period of follow-up.**\n- After a hydatidiform mole, the risk of developing a **second mole is 1.2–1.4%**.\n- The risk **increases to 20% after 2 moles**.\n- **Evaluate all future pregnancies early with ultrasonography.**\n\nReassurance for the patient comes from the risk-factor data earlier in the lecture: after one mole, roughly **1 in 60** women will have another, but **98% of subsequent pregnancies will be normal** — hence the strategy of an early first-trimester ultrasound in every later pregnancy, not permanent labeling as high risk.",
+          "key_points": [
+            "Effective contraception (barrier) throughout the follow-up period",
+            "Second mole risk: 1.2–1.4% after one mole; 20% after two moles",
+            "Evaluate ALL future pregnancies early with ultrasonography"
+          ]
+        },
+        {
+          "heading": "High-Yield Numbers at a Glance (Whole-Lecture Recap)",
+          "body_text": "- **97%** — frequency of vaginal bleeding in hydatidiform mole\n- **90% / 10%** — 46,XX / 46,XY split of complete moles\n- **80% / 20%** — homozygous / heterozygous androgenetic complete moles\n- **>100,000mIU/mL** — quantitative β-hCG level that raises suspicion of molar pregnancy (a normal level does NOT exclude it)\n- **6–8 weeks** — timing of exaggerated pregnancy signs from high hCG\n- **<20 weeks** — preeclampsia onset that signals a mole\n- **10–15%** — 46XY chromosomal complement on histology\n- **8–12 weeks** — time for hCG to normalize after evacuation\n- **3–4weeks** of weekly hCG once within reference range, then monthly for **6months** — the follow-up schedule\n- **1.2–1.4%** — second-mole risk; **20%** after two moles; **1 in 60** after one mole, with **98%** of subsequent pregnancies normal\n- **10–20%** — molar pregnancies that develop malignant trophoblastic disease\n- **16 weeks** — uterine size above which trophoblastic embolism risk is greatest\n- **≥1 year** — pregnancy avoidance after choriocarcinoma chemotherapy\n- **10–12 days** — post-conception timing of implantation bleeding\n- **first 10weeks** — window of decidual bleeding",
+          "key_points": [
+            "Exam questions recycle this lecture's numbers relentlessly — cold recall of this list earns easy marks",
+            "Anchor pairs to remember: 90/10 karyotypes, 80/20 zygosity, 1.2–1.4%→20% recurrence, 10–20% malignancy"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gestational trophoblastic neoplasia (GTN)",
+          "definition_ar": "المرض الأرومي الغاذي الخبيث بعد حمل عنقودي؛ يُشخص بثبات أو ارتفاع hCG بعد الإفراغ ويستوجب استبعاد النقائل."
+        },
+        {
+          "term": "hCG plateau",
+          "definition_ar": "ثبات مستوى hCG دون هبوط خلال المتابعة؛ علامة تحول خبيث تستوجب البحث عن نقائل."
+        },
+        {
+          "term": "Reference range",
+          "definition_ar": "المدى المرجعي الطبيعي للفحص؛ يجب استقرار hCG داخله 3–4 أسابيع قبل التحويل إلى المتابعة الشهرية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Complications and Malignant Sequelae: From Perforation to Choriocarcinoma",
+      "summary_ar": "من المضاعفات: ثقب الرحم أثناء الكحت الشافط لأن الرحم كبير ولين (يُكمل الإجراء بتوجيه منظار البطن)، والنزف الغزير الشائع أثناء الإفراغ (يبدأ الأوكسيتوسين الوريدي مع بدء الشفط مع توفر الميثيرجين والدم)، والخباثة في 10–20% من الأحمال، والتخثر المنتشر داخل الأوعية، والانصمام الأرومي الغاذي المسبب لقصور تنفسي حاد (الخطر الأعظم حين يتجاوز الرحم حجم 16 أسبوعًا وقد يكون قاتلًا). أما سرطان المشيمة فيرفع hCG بقوة من جديد وينتشر للرئتين والكبد والدماغ ويُعالج بالكيميائي بنجاح شبه تام.",
+      "sections": [
+        {
+          "heading": "Procedural and Medical Complications",
+          "body_text": "**Uterine perforation**\n- Perforation of the uterus during suction curettage sometimes occurs because the **uterus is large and boggy**.\n- If perforation is noted, **the procedure should be completed under laparoscopic guidance**.\n\n**Hemorrhage**\n- A **frequent complication during the evacuation** of a molar pregnancy.\n- For this reason, **intravenous oxytocin should be started at the initiation of the suctioning**.\n- **Methergine should also be available**, and **blood for possible transfusion should be readily available**.\n\n**Malignant trophoblastic disease**\n- Develops in **10–20% of molar pregnancies** — for this reason, quantitative hCG should be serially monitored as described in the follow-up protocol.\n\n**Disseminated intravascular coagulation (DIC)**\n- Factors released by the molar tissue could **trigger the coagulation cascade**; patients should be **monitored for DIC**.\n\n**Trophoblastic embolism**\n- Could cause **acute respiratory insufficiency**.\n- The **greatest risk factor** for this complication is a **uterus larger than that expected for a gestational age of 16 weeks**.\n- The condition **may be fatal**.",
+          "key_points": [
+            "Perforation of the large, boggy uterus during suction curettage → complete the procedure under laparoscopic guidance",
+            "Hemorrhage is frequent: IV oxytocin AT the initiation of suctioning + methergine available + blood for transfusion readily available",
+            "10–20% of molar pregnancies develop malignant trophoblastic disease — the reason for serial hCG",
+            "Monitor for DIC (molar factors can trigger the coagulation cascade)",
+            "Trophoblastic embolism → acute respiratory insufficiency; greatest risk with a uterus larger than expected for 16 weeks' gestation; may be fatal"
+          ],
+          "check": {
+            "prompt": "Immediately after evacuating a mole from a uterus equivalent to 20 weeks' size, the patient becomes acutely dyspneic and hypoxemic. Most likely mechanism?",
+            "options": [
+              "Oxytocin-induced pulmonary edema",
+              "Trophoblastic embolism causing acute respiratory insufficiency",
+              "Uterine perforation with hemoperitoneum",
+              "Anaphylaxis to methergine",
+              "DIC with pulmonary microthrombi"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الانصمام الأرومي الغاذي يسبب قصورًا تنفسيًا حادًا وقد يكون قاتلًا، وعامل الخطر الأعظم هو رحم أكبر من المتوقع لعمر حمل 16 أسبوعًا؛ لذلك تُتخذ الاحتياطات القصوى عند إفراغ الأحمال كبيرة الحجم."
+          }
+        },
+        {
+          "heading": "Choriocarcinoma: the Malignant End of the GTD Spectrum",
+          "body_text": "**Choriocarcinoma is a malignant disease of trophoblastic tissue.**\n\n- **hCG levels will rise and the test will become strongly positive again** — after having fallen following evacuation.\n- It **may occur in the next pregnancy following evacuation of a mole**.\n- The condition is **rapidly fatal unless treated**.\n- The disease **spreads by local invasion AND via the bloodstream**.\n- **Metastases may occur in the lungs, liver, or brain.**\n\nClinically, think of choriocarcinoma whenever a woman with prior molar disease has a strongly positive hCG test that rises again, together with respiratory, hepatic, or neurologic findings — the three metastatic sites the lecture lists (lungs, liver, brain) are exactly where to look, with the lungs the primary site.",
+          "key_points": [
+            "hCG rising and strongly positive again after a mole = choriocarcinoma until proven otherwise",
+            "May occur in the NEXT pregnancy after mole evacuation",
+            "Rapidly fatal unless treated; spreads by local invasion and via the bloodstream",
+            "Metastases: lungs (primary site), liver, brain"
+          ]
+        },
+        {
+          "heading": "Choriocarcinoma Treatment and Post-Treatment Counseling",
+          "body_text": "- **Responds extremely well to chemotherapy.**\n- **Cytotoxic drugs are used singly or in combination with other therapy.**\n- Treatment is **nearly always completely successful**.\n- **Pregnancy should be avoided for at least one year on completion of treatment.**\n- **Subsequent pregnancy will require close hCG monitoring, as there is a risk of recurrence.**\n\nThe reassuring message for patients: a malignancy that spreads through the bloodstream to lungs, liver and brain is nevertheless **one of the most chemocurable cancers** — nearly always completely successful — and early detection through the hCG follow-up protocol is exactly what makes that cure possible.",
+          "key_points": [
+            "Choriocarcinoma treatment: chemotherapy — cytotoxic drugs singly or in combination with other therapy",
+            "Nearly always completely successful",
+            "Avoid pregnancy for at least ONE YEAR after completing treatment",
+            "Any subsequent pregnancy requires close hCG monitoring (recurrence risk)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Uterine perforation",
+          "definition_ar": "ثقب جدار الرحم أثناء الكحت الشافط بسبب كبر الرحم وليونته؛ يُكمل الإجراء بتوجيه منظار البطن."
+        },
+        {
+          "term": "Methergine",
+          "definition_ar": "الميثيرجين (ميثيل إرغومترين)؛ دواء قابض للرحم يجب أن يكون متوفرًا أثناء إفراغ الحمل العنقودي تحسبًا للنزف."
+        },
+        {
+          "term": "Trophoblastic embolism",
+          "definition_ar": "انصمام خلايا الأرومة الغاذية إلى الرئة مسببًا قصورًا تنفسيًا حادًا؛ الأخطر عندما يتجاوز الرحم حجم 16 أسبوعًا وقد يكون مميتًا."
+        },
+        {
+          "term": "DIC",
+          "definition_ar": "التخثر المنتشر داخل الأوعية؛ عوامل من النسيج العنقودي قد تحفز سلسلة التخثر فيجب مراقبة المريضات."
+        },
+        {
+          "term": "Choriocarcinoma",
+          "definition_ar": "سرطان المشيمة؛ ورم خبيث للأرومة الغاذية ينتشر موضعيًا وبالدم إلى الرئة والكبد والدماغ ويستجيب ممتازًا للعلاج الكيميائي."
+        },
+        {
+          "term": "Oxytocin",
+          "definition_ar": "الأوكسيتوسين الوريدي يبدأ مع بدء الشفط للوقاية من النزف أثناء إفراغ الحمل العنقودي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_c8",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "Implantation Bleeding and Decidual Bleeding in Early Pregnancy",
+      "summary_ar": "نزف الانغراس يحدث نحو 10–12 يومًا بعد الإخصاب حول موعد الدورة المتوقع نتيجة اختراق الأرومة الغاذية لبطانة الرحم وانغراس الكيسة الأريمية؛ وهو أحمر فاتح وأخف من الدورة وقد يُخلط بها، مما يجعله مهمًا عند حساب آخر دورة لتقدير تاريخ الولادة. أما نزف الساقطة فيحدث أحيانًا خلال أول 10 أسابيع حول موعد الدورة بفعل الهرمونات الحيضية قبل التصاق البطانة كليًا بالمشيمة، ولا يشكل خطرًا صحيًا على الأم أو الجنين لكنه قد يؤثر في حساب تاريخ الولادة المتوقع.",
+      "sections": [
+        {
+          "heading": "Implantation Bleeding",
+          "body_text": "- As the **trophoblast erodes the endometrial endothelium** and the **blastocyst implants**, a **small vaginal loss may be apparent**.\n- It occurs at approximately **10–12 days post-conception**, **around the same time as expected menses**, and **may be mistaken for a woman's period** — although it is abnormal (usually **bright red and lighter** than a true period).\n- It is **significant when calculating the LMP for estimation of the due date**: if the patient counts this spotting as her 'last period', the estimated gestational age and EDD will be wrong.\n\nSo when a 'period' arrives at the expected time but is unusually **light and bright red**, consider implantation bleeding — and probe the details of the last 'period' when dating any early pregnancy.",
+          "key_points": [
+            "Implantation bleeding: ~10–12 days post-conception, around expected menses — commonly mistaken for a period",
+            "Character: usually bright red and LIGHTER than a true period",
+            "Significance: it distorts the LMP and therefore the estimation of the due date (EDD)"
+          ]
+        },
+        {
+          "heading": "Decidual Bleeding",
+          "body_text": "- Occasionally there is **bleeding from the decidua during the first 10 weeks**, usually at **around the time menses is expected**.\n- It is **caused by menstrual hormones**.\n- It is **especially common in the early stages of pregnancy, before the lining has completely attached to the placenta**.\n- It is **not thought to be a health threat to mother or fetus**.\n- It **may affect the calculation of the EDD**.\n\nImplantation and decidual bleeding together explain the classic trap of 'periods during pregnancy' — bleeding around the expected menses in early pregnancy is usually one of these two benign phenomena. Neither threatens mother or fetus, but both can misdate the pregnancy; and any heavier early-pregnancy bleeding still deserves evaluation to exclude ectopic pregnancy, miscarriage, or — when joined by hyperemesis and early preeclampsia — a hydatidiform mole.",
+          "key_points": [
+            "Decidual bleeding: first 10 weeks, around expected menses, caused by menstrual hormones, before the lining is completely attached to the placenta",
+            "Not a health threat to mother or fetus — but may affect EDD calculation",
+            "Both benign bleeds can be mistaken for menses: ask about volume and color when dating a pregnancy"
+          ],
+          "check": {
+            "prompt": "A patient reports light bleeding around each expected period during her first 10 weeks of pregnancy; ultrasound shows a healthy fetus. What is this phenomenon?",
+            "options": [
+              "Implantation bleeding at 10–12 days post-conception",
+              "Threatened miscarriage",
+              "Ectopic pregnancy",
+              "Decidual bleeding caused by menstrual hormones",
+              "Molar pregnancy"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "نزف الساقطة يحدث أحيانًا خلال أول 10 أسابيع حول موعد الدورة المتوقع بفعل الهرمونات الحيضية قبل التصاق البطانة كليًا بالمشيمة؛ ولا يُعد خطرًا صحيًا على الأم أو الجنين لكنه قد يؤثر في حساب تاريخ الولادة المتوقع."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Implantation bleeding",
+          "definition_ar": "نزف الانغراس؛ فقد مهبلي صغير بعد 10–12 يومًا من الإخصاب عند اختراق الأرومة الغاذية للبطانة وانغراس الكيسة الأريمية."
+        },
+        {
+          "term": "Decidual bleeding",
+          "definition_ar": "نزف الساقطة؛ نزيف من الساقطة خلال أول 10 أسابيع حول موعد الدورة بفعل الهرمونات الحيضية."
+        },
+        {
+          "term": "Decidua",
+          "definition_ar": "الساقطة؛ بطانة الرحم الحملية المتحولة قبل اكتمال التصاقها بالمشيمة."
+        },
+        {
+          "term": "LMP",
+          "definition_ar": "أول يوم لآخر دورة شهرية؛ أساس حساب عمر الحمل وتقدير تاريخ الولادة المتوقع."
+        },
+        {
+          "term": "EDD",
+          "definition_ar": "التاريخ المتوقع للولادة؛ قد يتأثر حسابه بنزف الانغراس أو نزف الساقطة."
+        },
+        {
+          "term": "Blastocyst",
+          "definition_ar": "الكيسة الأريمية؛ المرحلة الجنينية المبكرة التي تنغرس في بطانة الرحم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 7
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f01",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "card_type": "basic",
+      "front_text": "Which four disease processes make up gestational trophoblastic disease (GTD)?",
+      "back_text": "GTD encompasses several disease processes that originate in the placenta: (1) complete and partial moles (hydatidiform mole), (2) placental site trophoblastic tumors, (3) invasive moles, and (4) choriocarcinomas.",
+      "tags": [
+        "gtd",
+        "definitions"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f02",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "card_type": "basic",
+      "front_text": "What does 'hydatidiform mole' mean pathologically?",
+      "back_text": "The placental trophoblastic cells proliferate abnormally, with stromal edema, with formation of vesicles that look like a bunch of grapes on their appearance. Two forms exist: complete hydatidiform mole and partial hydatidiform mole.",
+      "tags": [
+        "definitions",
+        "pathology"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f03",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "card_type": "basic",
+      "front_text": "Complete vs partial mole: genetic origin, fetal tissue, and malignant potential?",
+      "back_text": "Complete: a sperm fertilizes an empty egg (no nucleus or DNA) — all genetic material from the father, NO fetal tissue; up to 20% of patients need additional surgery or chemotherapy after initial surgery, and a small percentage develop choriocarcinoma. Partial: two sperm fertilize a normal egg; some fetal tissue mixed with trophoblast but no viable fetus; rarely develops into malignant GTD.",
+      "mnemonic_ar": "الكامل = بييضة فارغة (كل شيء من الأب ولا جنين)؛ الجزئي = بييضة طبيعية + منيّان (يوجد نسيج جنيني لكن لا جنين حي).",
+      "tags": [
+        "genetics",
+        "classification"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f04",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "card_type": "basic",
+      "front_text": "List the risk factors for molar pregnancy.",
+      "back_text": "Age over 40 or younger than 20 (highest risk for COMPLETE mole; age less a factor for partial mole — all women of childbearing age are at risk); nulliparity; previous molar pregnancy; blood type A or AB (slightly higher risk than B or O).",
+      "tags": [
+        "risk factors"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f05",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c1",
+      "card_type": "basic",
+      "front_text": "After one hydatidiform mole, what are the odds of another mole — and of a normal next pregnancy?",
+      "back_text": "About a 1 in 60 chance of having another hydatidiform mole — but 98% of subsequent pregnancies will be normal.",
+      "tags": [
+        "prognosis",
+        "risk factors"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f06",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "card_type": "basic",
+      "front_text": "What are the karyotypes of complete hydatidiform mole?",
+      "back_text": "90% are 46,XX and 10% are 46,XY; a complete mole contains no fetal tissue.",
+      "mnemonic_ar": "٩٠٪ أنثى 46,XX — وعشرة بالمئة فقط ذكر 46,XY، ولا نسيج جنيني إطلاقًا.",
+      "tags": [
+        "genetics"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f07",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "card_type": "basic",
+      "front_text": "Homozygous vs heterozygous androgenetic complete mole — proportions and mechanisms?",
+      "back_text": "Homozygous = 80%: two identical paternal chromosome complements derived from duplication of the paternal haploid chromosomes; ALWAYS female — 46,YY has never been observed. Heterozygous = 20%: all chromosomes of paternal origin, most likely due to dispermy; may be male or female.",
+      "tags": [
+        "genetics"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f08",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "card_type": "basic",
+      "front_text": "Karyotypes of partial hydatidiform mole and how do they arise?",
+      "back_text": "Triploid: 69,XXY (23X sperm + 23Y sperm + normal egg) or 69,XXX (23X sperm + 23X sperm + normal egg) — two sperm fertilizing a NORMAL egg (dispermy); fetal tissue present but no viable fetus is formed.",
+      "tags": [
+        "genetics"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f09",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "card_type": "basic",
+      "front_text": "Most common symptom of hydatidiform mole — frequency and character?",
+      "back_text": "Vaginal bleeding (97%): light pink or brown vaginal discharge from ruptured vesicles, or detached vesicles passed vaginally with a grape-like appearance.",
+      "is_vivid": true,
+      "tags": [
+        "clinical",
+        "symptoms"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f10",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "card_type": "basic",
+      "front_text": "Which 'too early / too strong' features suggest molar pregnancy by 6–8 weeks?",
+      "back_text": "Exaggerated signs of pregnancy appearing by 6–8 weeks (due to high hCG levels) and preeclampsia before 20 weeks' gestation (early onset) — typically accompanied by hyperemesis gravidarum.",
+      "explanation_ar": "ارتفاع hCG الشديد يضخم علامات الحمل مبكرًا ويحرض فرط الإقياء وما قبل الإرجاج المبكر؛ فظهور ما قبل الإرجاج قبل الأسبوع 20 إنذير للحمل العنقودي دائمًا.",
+      "tags": [
+        "clinical",
+        "symptoms"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f11",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "card_type": "basic",
+      "front_text": "Uterine and ovarian physical findings in molar pregnancy?",
+      "back_text": "Enlarged uterus (large for date) that is soft and doughy in consistency by palpation; theca lutein cysts of the ovary may present as an adnexal mass; anemia from gradual blood loss may cause pallor.",
+      "tags": [
+        "clinical",
+        "exam"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f12",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "card_type": "basic",
+      "front_text": "At what β-hCG level does molar pregnancy become suspect — and what is the caveat?",
+      "back_text": "hCG greater than 100,000 mIU/mL indicates exuberant trophoblastic growth and raises suspicion for a molar pregnancy — HOWEVER, a molar pregnancy may have a normal hCG level.",
+      "explanation_ar": "العتبة 100,000 ملي-وحدة/مل ترفع الشك فقط وليست شرطًا للتشخيص؛ فبعض الأحمال العنقودية تأتي بقيم طبيعية تمامًا، لذا لا ينفي hCG الطبيعي التشخيص.",
+      "tags": [
+        "diagnosis",
+        "labs"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f13",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "card_type": "basic",
+      "front_text": "Describe the classic ultrasound appearance of complete molar pregnancy.",
+      "back_text": "Ultrasonography is the criterion standard for identifying both complete and partial moles. Older technology: a snowstorm pattern representing hydropic chorionic villi. High-resolution: a complex intrauterine mass containing many small cysts — with complete absence of gestational sac, fetus, or fetal heart activity.",
+      "tags": [
+        "imaging",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f14",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "card_type": "basic",
+      "front_text": "Why is a baseline chest radiograph taken once a molar pregnancy is diagnosed?",
+      "back_text": "Because the lungs are a primary site of metastasis for malignant trophoblastic tumors — the baseline film allows comparison during hCG follow-up if malignant GTN develops.",
+      "tags": [
+        "imaging",
+        "follow-up"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f15",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "card_type": "basic",
+      "front_text": "Histologic triad of complete mole — and its karyotype distribution?",
+      "back_text": "Edematous placental villi, hyperplasia of the trophoblasts, and lack or scarcity of fetal blood vessels; chromosomal complement is 46XX in most cases or 46XY in approximately 10–15% of cases.",
+      "tags": [
+        "pathology",
+        "diagnosis"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f16",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "card_type": "basic",
+      "front_text": "Thyroid function pattern in molar pregnancy?",
+      "back_text": "Women with molar pregnancies are usually clinically euthyroid, but plasma thyroxine is usually elevated above the reference range for pregnancy; the patient may present with signs and symptoms of hyperthyroidism.",
+      "explanation_ar": "hCG المرتفع جدًا يحاكي TSH فيحرك الغدة الدرقية دون أعراض عند أغلب المريضات؛ فإن ظهرت أعراض فرط الدرق فهي تظاهر معروف للحمل العنقودي.",
+      "tags": [
+        "labs",
+        "endocrine"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f17",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c5",
+      "card_type": "basic",
+      "front_text": "Treatment of hydatidiform mole — goal and methods?",
+      "back_text": "Treatment is to remove all trophoblastic tissue. In some cases the mole will abort spontaneously (carrying LESS risk of malignant change); if this does not occur, vacuum aspiration or dilatation and curettage (D&C) is necessary.",
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f18",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c5",
+      "card_type": "basic",
+      "front_text": "Contraception rules after molar evacuation?",
+      "back_text": "Pregnancy is to be avoided during the follow-up period; IUCDs are contraindicated; hormonal methods of contraception are to be avoided until hCG levels are normal — so use barrier contraception.",
+      "tags": [
+        "management",
+        "contraception"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f19",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c6",
+      "card_type": "basic",
+      "front_text": "State the post-evacuation β-hCG follow-up schedule.",
+      "back_text": "Serial quantitative serum β-hCG weekly until levels are within the reference range for 3–4 weeks (should consistently drop and never increase; normal levels usually reached within 8–12 weeks after evacuation), then monthly for 6 months.",
+      "mnemonic_ar": "أسبوعيًا حتى الاستقرار الطبيعي ٣-٤ أسابيع، ثم شهريًا لستة أشهر؛ الهبوط مستمر ولا ارتفاع أبدًا.",
+      "tags": [
+        "follow-up"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f20",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c6",
+      "card_type": "basic",
+      "front_text": "What does a plateaued or rising hCG after molar evacuation signify?",
+      "back_text": "The patient is considered to have malignant disease — gestational trophoblastic neoplasia (GTN) — and metastatic disease needs to be excluded (the lungs being the primary metastatic site).",
+      "explanation_ar": "منحنى hCG بعد الإفراغ طريق ذو اتجاه واحد نحو الأسفل؛ فأي ثبات أو ارتفاع يعني تحولًا خبيثًا يستوجب فحص النقائل فورًا.",
+      "tags": [
+        "follow-up",
+        "malignancy"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f21",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c6",
+      "card_type": "basic",
+      "front_text": "Risk of a second mole — after one mole and after two?",
+      "back_text": "After a hydatidiform mole the risk of developing a second mole is 1.2–1.4%; the risk increases to 20% after 2 moles. Evaluate all future pregnancies early with ultrasonography.",
+      "tags": [
+        "prognosis",
+        "follow-up"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f22",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "card_type": "basic",
+      "front_text": "Name the complications of molar evacuation and their countermeasures.",
+      "back_text": "Uterine perforation (large boggy uterus — complete the procedure under laparoscopic guidance); hemorrhage (IV oxytocin started at the initiation of suctioning, methergine available, blood for transfusion readily available); DIC (monitor); trophoblastic embolism (greatest risk with uterus larger than expected for 16 weeks — may be fatal); malignant trophoblastic disease in 10–20% (serial hCG).",
+      "tags": [
+        "complications"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f23",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "card_type": "basic",
+      "front_text": "Greatest risk factor for trophoblastic embolism and its consequence?",
+      "back_text": "A uterus larger than that expected for a gestational age of 16 weeks. Trophoblastic embolism can cause acute respiratory insufficiency, and the condition may be fatal.",
+      "is_vivid": true,
+      "tags": [
+        "complications"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f24",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "card_type": "basic",
+      "front_text": "Choriocarcinoma: marker, spread, metastatic sites, and treatment outcome?",
+      "back_text": "Malignant disease of trophoblastic tissue: hCG levels rise and the test becomes strongly positive again; may occur in the next pregnancy after mole evacuation; rapidly fatal unless treated; spreads by local invasion and via the bloodstream with metastases in lungs, liver, or brain. Treatment is chemotherapy (cytotoxic drugs singly or in combination) — nearly always completely successful.",
+      "tags": [
+        "choriocarcinoma",
+        "malignancy"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_f25",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c8",
+      "card_type": "basic",
+      "front_text": "Implantation vs decidual bleeding — timing, cause, and significance?",
+      "back_text": "Implantation bleeding: ~10–12 days post-conception, around expected menses, as trophoblast erodes the endometrium and the blastocyst implants; usually bright red and lighter than a period; significant when calculating the LMP for estimation of the due date. Decidual bleeding: during the first 10 weeks, around the time menses is expected, caused by menstrual hormones before the lining completely attaches to the placenta; not a health threat to mother or fetus, but may affect EDD calculation.",
+      "explanation_ar": "كلاهما نزف حميد مبكر قد يُخلط بالدورة: نزف الانغراس يوم ١٠-١٢ بعد الإخصاب أخف وأحمر فاتح، ونزف الساقطة في أول ١٠ أسابيع بفعل الهرمونات الحيضية؛ وأثرهما العملي خطأ حساب آخر دورة وتاريخ الولادة.",
+      "tags": [
+        "bleeding",
+        "early pregnancy"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m01",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "question_stem": "A 24-year-old G1P0 woman at 14 weeks' gestation by LMP reports three weeks of light pink-brown vaginal discharge and passage of small grape-like tissue yesterday. She has severe nausea and vomiting, blood pressure 158/102 mmHg with 2+ proteinuria, and a uterus palpable at 20 weeks that is soft and doughy. No fetal heart tones are detectable. Which is the most likely diagnosis?",
+      "options": [
+        "Complete hydatidiform mole",
+        "Partial hydatidiform mole",
+        "Missed abortion",
+        "Ectopic pregnancy",
+        "Uterine leiomyoma with degeneration"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القصة نموذجية للحمل العنقودي الكامل: نزف مهبلي وردي أو بني مع طرح حويصلات تشبه العنب (97% من الحالات)، ورحم أكبر من عمر الحمل لين عجيني الملمس، وما قبل إرجاج مبكر قبل الأسبوع 20، وفرط إقياء حملي نتيجة hCG المرتفع جدًا. الحمل الجزئي يحتوي نسيجًا جنينيًا مع جنين غير قابل للحياة وضخامة رحمية أقل وضوحًا، والإجهاض الفائت لا يفسر الرحم المتضخم ولا ما قبل الإرجاج المبكر، والحمل الهاجر لا يصل أبدًا برحم بحجم 20 أسبوعًا مع هذه العلامات، والليفومي المتآكل لا يرفع hCG ولا يسبب طرح أنسجة عنقودية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Preeclampsia before 20 weeks is the giveaway",
+        "What does passage of grape-like tissue mean?"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m02",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c3",
+      "question_stem": "A 31-year-old primigravida at 16 weeks' gestation is found to have new-onset hypertension and proteinuria. Ultrasound two weeks ago reportedly showed no viable fetus. Which finding would most strongly point to hydatidiform mole as the cause of her early preeclampsia?",
+      "options": [
+        "Blood pressure of 140/90 mmHg",
+        "Mild ankle edema",
+        "Platelet count of 210,000/mm³",
+        "Serum β-hCG of 340,000 mIU/mL",
+        "Uterus consistent with 16 weeks"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "ما قبل الإرجاج قبل الأسبوع 20 عرض إنذيري للحمل العنقودي، والرابط الفيزيولوجي هو hCG المرتفع بشدة؛ فقيمة تتجاوز 100,000 ملي-وحدة/مل تشير إلى نمو أرومي غاذي غزير وترفع الشك بالحمل العنقودي. أما بقية الخيارات — ضغط 140/90 ووذمة الكاحل وتعداد صفيحات طبيعي ورحم موافق للعمر — فتُشاهد في ما قبل الإرجاج العادي ولا تميز السبب أبدًا.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m03",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "question_stem": "Which statement correctly describes the genetics of a homozygous (androgenetic) complete hydatidiform mole?",
+      "options": [
+        "Two sperm fertilizing a normal ovum, giving 69,XXY",
+        "Two identical paternal chromosome complements derived from duplication of the paternal haploid chromosomes; always female — 46,YY has never been observed",
+        "One maternal and one paternal haploid set, as in normal conception",
+        "Duplication of the maternal haploid chromosomes within the ovum",
+        "A single paternal X chromosome set without duplication"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "النمط المتماثل الأندروجيني (80% من الأحمال الكاملة) يحمل مجموعتين صبغيتين أبويتين متطابقتين ناتجتين عن مضاعفة المجموعة النصفية الأبوية بعد إخصاب بييضة فارغة بمنيٍّ واحد، وهو أنثى دائمًا (46,XX) ولم يُشاهد 46,YY قط. الإخصاب بمنيّين لبييضة طبيعية يعطي حملًا جزئيًا ثلاثيًا (69,XXY)، والمجموعة الأمومية غائبة تمامًا في الأحمال الكاملة، والعدد الصبغي لا يبقى نصفًا (23) بل يتضاعف إلى 46.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m04",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c2",
+      "question_stem": "A 29-year-old woman at 13 weeks' gestation has intermittent brown spotting and a uterus appropriate for dates. Ultrasound shows an abnormal placenta with scattered cystic spaces and fetal tissue with no viable fetus; quantitative β-hCG is 62,000 mIU/mL. What karyotype is most likely to be reported?",
+      "options": [
+        "69,XXY (triploid, from dispermy)",
+        "46,XX androgenetic diploid",
+        "46,XY androgenetic diploid",
+        "47,XX,+21",
+        "45,X"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المشيمة الشاذة مع أكياس متفرقة ونسيج جنيني غير حي ورحم موافق للعمر تشير إلى حمل عنقودي جزئي؛ صيغته ثلاثية نتيجة إخصاب بييضة طبيعية بمنيّين: 23X + 23Y + بييضة 23X = 69,XXY. الصيغتان 46,XX و46,XY تخصان الحمل الكامل الخالي من النسيج الجنيني، و47,XX,+21 خاصة بمتلازمة داون، و45,X خاصة بمتلازمة تورنر.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m05",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "question_stem": "A 26-year-old at 9 weeks' gestation has painless brown vaginal bleeding, and molar pregnancy is suspected. Which statement about β-hCG in this setting is correct?",
+      "options": [
+        "A normal hCG level reliably excludes molar pregnancy",
+        "An hCG above 100,000 mIU/mL is diagnostic of choriocarcinoma",
+        "A level greater than 100,000 mIU/mL indicates exuberant trophoblastic growth and raises suspicion, but a molar pregnancy may also present with a normal hCG level",
+        "hCG testing is unnecessary once ultrasound shows a snowstorm pattern",
+        "hCG levels in molar pregnancy are always lower than in normal pregnancy"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "المستوى الأعلى من 100,000 ملي-وحدة/مل يدل على نمو أرومي غاذي غزير ويثير الشك بالحمل العنقودي، لكن الحمل العنقودي قد يأتي أصلًا بمستوى hCG طبيعي — فالقيمة الطبيعية لا تنفي التشخيص أبدًا. الخيارات الأخرى خاطئة: تجاوز العتبة ليس تشخيصًا لسرطان المشيمة، والتصوير فوق الصوتي لا يغني عن المتابعة المصلية اللاحقة، ومستويات الحمل العنقودي غالبًا أعلى لا أدنى من الحمل الطبيعي.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "The threshold raises suspicion — it is not an absolute rule"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m06",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "question_stem": "Pelvic ultrasound of a woman with 11 weeks of amenorrhea and pink-brown discharge shows the uterine cavity filled by a heterogeneous echogenic mass with numerous small anechoic cystic spaces; no gestational sac or fetus is seen. What does the classic 'snowstorm' pattern represent?",
+      "options": [
+        "Multiple early gestational sacs",
+        "Hydropic (edematous) chorionic villi",
+        "Blood clots from placental abruption",
+        "Degenerating uterine fibroids",
+        "Bilateral theca lutein cysts"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "نمط العاصفة الثلجية هو التمثيل الصوتي للزغابات المشيمية المتوذمة (المائية) وهي الوحدة النسيجية للحمل العنقودي؛ وبالتصوير عالي الدقة تظهر كتلة داخل رحمية معقدة تحوي العديد من الأكياس الصغيرة. الأكياس الحملية المتعددة والخثرات الدموية والأورام الليفية المتآكلة لا تعطي هذا النمط، وتكيسات ثيكا-لوتينية توضع في المبيضين لا داخل الرحم.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m07",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "question_stem": "Ultrasound confirms a complete molar pregnancy in a 27-year-old with β-hCG of 210,000 mIU/mL and stable vitals. Besides arranging evacuation and baseline laboratory tests, which investigation is indicated at diagnosis?",
+      "options": [
+        "Baseline chest radiograph, because the lungs are a primary site of metastasis for malignant trophoblastic tumors",
+        "CT of the brain to screen for cerebral metastases",
+        "MRI of the pelvis to stage the mole",
+        "PET-CT for whole-body staging",
+        "Serial Coombs tests"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "عند تشخيص الحمل العنقودي تُؤخذ صورة شعاعية أساسية للصدر لأن الرئتين موقع أول لنقائل الأورام الأرومية الغاذية الخبيثة، وهي نقطة المقارنة اللاحقة خلال متابعة hCG. فحص CT للدماغ وMRI للحوض وPET-CT ليست ضمن بروتوكول المحاضرة عند التشخيص الأولي، واختبارات كومبس لا محل لها هنا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m08",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c4",
+      "question_stem": "A woman with a confirmed molar pregnancy has plasma thyroxine above the reference range for pregnancy, but no tachycardia, tremor, or weight loss. How is this finding explained?",
+      "options": [
+        "She has primary hyperthyroidism unrelated to the mole",
+        "This indicates choriocarcinoma until proven otherwise",
+        "The thyroxine result must be a laboratory error",
+        "Women with molar pregnancies are usually clinically euthyroid even though plasma thyroxine is usually elevated above the pregnancy reference range — and some patients do present with hyperthyroid signs",
+        "She requires thyroidectomy before uterine evacuation"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "المريضات بحمل عنقودي عادةً طبيعيات درقيًا (euthyroid) سريريًا، لكن التيروكسين البلازمي غالبًا مرتفع فوق المدى المرجعي للحمل بفعل التحريض الهرموني الشديد، وقد تتظاهر بعض المريضات بعلامات وأعراض فرط الدرق. لا يُفترض فرط درق أولي مستقل ولا يُعد الارتفاع دليل سرطان مشيمة، وليس خطأ مختبريًا، ولا مكان لاستئصال الدرق قبل الإفراغ.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m09",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c5",
+      "question_stem": "A 28-year-old completes uneventful suction evacuation of a complete mole; her β-hCG is falling appropriately. She wishes to avoid pregnancy during follow-up. Which contraception plan is correct?",
+      "options": [
+        "Combined oral contraceptive starting today",
+        "Intrauterine device insertion at this visit",
+        "Barrier contraception — IUCDs are contraindicated and hormonal methods should be avoided until hCG levels are normal",
+        "No contraception — infertility persists during follow-up",
+        "Depot medroxyprogesterone injection today"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "خلال فترة المتابعة يُنصح بمنع حمل فعال: اللولب الرحمي مضاد الاستطباب، وتُتجنب الوسائل الهرمونية حتى يعود hCG إلى الطبيعي حتى تبقى المتابعة المصلية قابلة للتفسير؛ فالأنسب طريقة حاجزية. حبوب المركبة والحقن واللولب كلها خاطئة الآن، ولا يوجد عقم خلال المتابعة بل يجب منع الحمل بفعالية.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m10",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c6",
+      "question_stem": "Seven weeks after molar evacuation, a 33-year-old's weekly serum β-hCG values are 8,200 → 6,900 → 7,400 → 9,100 mIU/mL. She used barrier contraception consistently. What is the interpretation and next step?",
+      "options": [
+        "Plateaued then rising hCG = malignant gestational trophoblastic neoplasia; metastatic disease must be excluded",
+        "Expected post-evacuation fluctuation — continue weekly hCG for another 6 weeks",
+        "A new pregnancy — order an urgent ultrasound",
+        "Residual trophoblast that always resolves spontaneously — no action needed",
+        "Empirical repeat uterine evacuation"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بعد إفراغ الحمل العنقودي يجب أن يهبط hCG باستمرار وألا يرتفع أبدًا؛ فالثبات ثم الارتفاع هنا (مع الالتزام بمانع حمل) يعني مرضًا أروميًا غاذيًا خبيثًا (GTN) ويجب استبعاد النقائل فورًا. الاختلاجات المتوقعة لا تشمل ارتفاعًا، وحمل جديد مستبعد بالالتزام بالمانع، وانتظار ستة أسابيع أخرى أو الإفراغ التجريبي تأخير خطير للعلاج.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The curve must only ever go down"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m11",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "question_stem": "During suction evacuation of a hydatidiform mole from a uterus equivalent to 20 weeks' size (soft and boggy), the patient acutely develops dyspnea and hypoxemia immediately after the procedure. Which complication is most likely, and what is its greatest risk factor?",
+      "options": [
+        "Uterine perforation with intra-abdominal bleeding",
+        "Trophoblastic embolism causing acute respiratory insufficiency — greatest risk with a uterus larger than expected for a gestational age of 16 weeks",
+        "DIC with uncontrolled bleeding",
+        "Anaphylaxis to methergine",
+        "Pulmonary edema from oxytocin overdose"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الانصمام الأرومي الغاذي يسبب قصورًا تنفسيًا حادًا وقد يكون قاتلًا، وعامل الخطر الأعظم هو رحم أكبر من المتوقع لعمر حمل 16 أسبوعًا — وملمس الرحم الكبير اللين في هذه المريضة يزيد الرجحان. الثقب الرحمي يسبب نزفًا بطنيًا وليس نقص أكسجة أوليًا، والتخثر المنتشر يظهر بنزف واختلال تخثر لا بضيق تنفس معال، ولا تذكر المحاضرة وذمة رئوية من الأوكسيتوسين ولا تأقيًا من الميثيرجين.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Big uterus = big embolic risk",
+        "The lungs receive the trophoblastic debris"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m12",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "question_stem": "Two years after molar evacuation and full hCG normalization, a 35-year-old presents with rising β-hCG and a lung lesion; biopsy confirms choriocarcinoma. According to the lecture, where else should metastases be sought?",
+      "options": [
+        "Bone and skin",
+        "Stomach and esophagus",
+        "Kidneys and bladder",
+        "Liver and brain — alongside the lungs, the listed metastatic sites",
+        "Inguinal lymph nodes only"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "ينتشر سرطان المشيمة بالغزو الموضعي وعبر مجرى الدم، ونقائله قد تصيب الرئتين والكبد والدماغ؛ فالرئة الموقع الأول للنقائل وتُفحص أولًا بالأشعة الصدرية ثم يُبحث في الكبد والدماغ. العظام والجلد والمعدة والمريء والكلى والمثانة والعقد الأربية ليست من مواضع النقائل المذكورة في المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m13",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c7",
+      "question_stem": "A 30-year-old completes chemotherapy for choriocarcinoma with hCG now normal. She asks about future childbearing. Which advice fits the lecture protocol?",
+      "options": [
+        "Avoid pregnancy for at least one year after completion of treatment; subsequent pregnancies require close hCG monitoring because there is a risk of recurrence",
+        "Pregnancy is permanently contraindicated after choriocarcinoma",
+        "She may conceive immediately now that hCG is normal",
+        "Avoid pregnancy for one month only",
+        "An IUCD is required for five years before conceiving"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بعد إتمام علاج سرطان المشيمة يُنصح بتجنب الحمل سنة على الأقل، وكل حمل لاحق يتطلب مراقبة hCG عن قرب لوجود خطر نكس. الحمل ليس ممنوعًا مدى الحياة، ولا يجوز الحمل فور اعتدال الهرمون لأن سنة الحظر مقصودة، والشهر الواحد غير كافٍ، ولا حاجة للولب لسنوات (وهو أصلًا مضاد الاستطباب في سياق متابعة الأرومة الغاذية).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The number to remember is 12 months"
+      ]
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m14",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c8",
+      "question_stem": "A 27-year-old reports a 'very light, bright-red period' occurring about 11 days after presumed conception, followed days later by a positive pregnancy test. What is this bleeding, and why does it matter?",
+      "options": [
+        "Decidual bleeding — caused by menstrual hormones",
+        "Threatened miscarriage requiring bed rest",
+        "Implantation bleeding — significant when calculating the LMP for estimation of the due date",
+        "Ectopic pregnancy requiring laparoscopy",
+        "Molar pregnancy requiring quantitative hCG testing"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "نزف الانغراس يحدث بعد 10-12 يومًا من الإخصاب حول موعد الدورة المتوقع نتيجة اختراق الأرومة الغاذية للبطانة وانغراس الكيسة الأريمية؛ وهو أحمر فاتح وأخف من الطمث وقد يُخلط به، ودلالته جوهرية عند حساب آخر دورة لتقدير تاريخ الولادة. نزف الساقطة يقع عبر أول 10 أسابيع بفعل الهرمونات الحيضية، وبقية الخيارات لا تستقيم مع حمل مستمر طبيعي.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_m15",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "concept_id": "obgyn_L10_gestational_trophoblastic_disease_c8",
+      "question_stem": "Which statement about decidual bleeding is correct?",
+      "options": [
+        "It occurs at 10–12 days post-conception as the blastocyst implants",
+        "It occurs during the first 10 weeks, usually around the time menses is expected, is caused by menstrual hormones, and is not thought to be a health threat to mother or fetus",
+        "It always indicates threatened miscarriage",
+        "It results from trophoblastic proliferation with stromal edema",
+        "It always requires anti-D immunoglobulin"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "نزف الساقطة يحدث أحيانًا خلال أول 10 أسابيع حول موعد الدورة المتوقع بفعل الهرمونات الحيضية، وخصوصًا قبل التصاق البطانة كليًا بالمشيمة؛ ولا يُعد خطرًا صحيًا على الأم أو الجنين لكنه قد يؤثر في حساب تاريخ الولادة المتوقع. أما نزف الانغراس فيقع تحديدًا بعد 10-12 يومًا من الإخصاب، والحمل العنقودي تكاثر أرومي غاذي مع وذمة سدية — وصف مختلف تمامًا.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_case1",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "The Classic Complete Mole: From Grape-Like Bleeding to Evacuation and Follow-up",
+      "scenario": "A 27-year-old G2P1 woman at approximately 13 weeks' gestation by LMP presents with three weeks of light pink-brown vaginal discharge, passage of grape-like tissue, severe vomiting, and new hypertension. The team must recognize molar pregnancy, evacuate the uterus safely, and set up the follow-up that protects her from malignant change.",
+      "vignette": {
+        "age": 27,
+        "sex": "female",
+        "chief_complaint": "Vaginal bleeding with passage of grape-like tissue",
+        "history": "G2P1, LMP 13 weeks ago. Three weeks of intermittent light pink-brown vaginal discharge; yesterday passed small translucent grape-like vesicles vaginally. Severe nausea and vomiting for two weeks (hyperemesis), exaggerated pregnancy symptoms since about 7 weeks. No previous molar pregnancy; blood type A positive; no chronic illness.",
+        "vitals": {
+          "bp": "150/98 mmHg",
+          "hr": "108/min",
+          "rr": "20/min",
+          "temp": "36.8 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Uterus palpable at 20-week size (large for date), soft and doughy in consistency; right adnexal fullness consistent with a theca lutein cyst, non-tender; no fetal heart tones by Doppler; conjunctival pallor; 2+ urine protein.",
+        "labs": [
+          {
+            "name": "Quantitative β-hCG",
+            "value": "412,000 mIU/mL",
+            "flag": "critical"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "9.8 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "Platelets",
+            "value": "182,000/uL",
+            "flag": "normal"
+          },
+          {
+            "name": "Plasma thyroxine (T4)",
+            "value": "18.5 mcg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Serum creatinine",
+            "value": "0.7 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "ALT",
+            "value": "22 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Clotting function (PT/INR)",
+            "value": "normal",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Pelvic ultrasound: endometrial cavity significantly distended by a heterogeneous echogenic mass with numerous small anechoic cystic spaces (snowstorm pattern) — no gestational sac, fetus, or fetal heart activity; right ovarian theca lutein cyst. Baseline chest radiograph: clear lung fields."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Complete hydatidiform mole",
+            "Partial hydatidiform mole",
+            "Missed abortion with retained products of conception",
+            "Ectopic pregnancy",
+            "Uterine leiomyoma with degeneration"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحمل العنقودي الكامل هو التشخيص الأرجح: نزف وردي بني مع طرح حويصلات عنقودية (97% من الحالات)، ورحم أكبر من عمر الحمل لين عجيني، وما قبل إرجاج مبكر قبل 20 أسبوعًا، وفرط إقياء من hCG المرتفع جدًا (412,000) مع تكيس ثيكا-لوتيني. الحمل الجزئي يتضمن نسيجًا جنينيًا، والإجهاض الفائت لا يفسر ضخامة الرحم ولا ما قبل الإرجاج المبكر، والحمل الهاجر لا يحدث برحم حجمه 20 أسبوعًا، والليفومي لا يرفع hCG.",
+          "xp": 10,
+          "hints": [
+            "Combine the uterine size with the blood pressure timing",
+            "Grape-like tissue is nearly pathognomonic"
+          ]
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case1_s2",
+          "prompt": "Once the diagnosis is established, which baseline imaging is indicated?",
+          "options": [
+            "CT of the brain",
+            "Hysterosalpingography",
+            "Chest radiograph — the lungs are a primary site of metastasis for malignant trophoblastic tumors",
+            "Whole-body PET-CT",
+            "No further imaging is needed"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "عند تشخيص الحمل العنقودي تُؤخذ صورة شعاعية أساسية للصدر لأن الرئتين الموقع الأول لنقائل الأورام الأرومية الغاذية الخبيثة؛ وهي مرجع المقارنة خلال متابعة hCG اللاحقة. فحوص الدماغ والرحم بالصبغة وPET-CT ليست من بروتوكول المحاضرة عند التشخيص الأولي.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case1_s3",
+          "prompt": "What is the appropriate definitive treatment?",
+          "options": [
+            "Immediate hysterectomy",
+            "Vacuum aspiration (suction evacuation) of the uterus, with IV oxytocin started at the initiation of suctioning",
+            "Expectant management until the pregnancy resolves on its own",
+            "Systemic chemotherapy as first-line therapy",
+            "Uterine artery embolization alone"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الهدف العلاجي هو إزالة كل النسيج الأرومي الغاذي، والوسيلة المختارة هي الشفط بالتفريغ (أو التوسيع والكحت) مع بدء الأوكسيتوسين الوريدي فور بدء الشفط لأن النزف مضاعف شائع، مع توفر الميثيرجين والدم. الاستئصال الرحمي ليس ضروريًا في هذه المريضة الشابة، والانتظار حتى الحل الذاتي خطر غير مبرر هنا، والكيميائي ليس الخط الأول للحمل العنقودي غير الخبيث، والامبولية لا تزيل النسيج للمراقبة النسيجية.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case1_s4",
+          "prompt": "Which peri-procedural preparations specifically target the known complications of molar evacuation?",
+          "options": [
+            "Broad-spectrum antibiotics only",
+            "General anesthesia with deliberate hypotension",
+            "Pre-procedure uterine packing",
+            "IV oxytocin started at the initiation of suctioning, methergine available, and blood for possible transfusion readily available",
+            "Prophylactic single-agent chemotherapy for every patient"
+          ],
+          "correct_index": 3,
+          "explanation_ar": "النزف مضاعف شائع أثناء إفراغ الحمل العنقودي؛ لذلك يبدأ الأوكسيتوسين الوريدي مع بدء الشفط مباشرة، ويكون الميثيرجين متوفرًا والدم جاهزًا للنقل. كما يُراقب حدوث ثقب الرحم (الرحم كبير لين — يُكمل الإجراء بمنظار البطن إن حدث) والتخثر المنتشر داخل الأوعية. المضادات الحيوية وحدها أو التحضير التخديري أو حشو الرحم أو الكيميائي الوقائي لا تعالج هذه المضاعفات المحددة.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case1_s5",
+          "prompt": "Which follow-up plan and contraception advice is correct for after evacuation?",
+          "options": [
+            "Weekly serum β-hCG until within the reference range for 3–4 weeks, then monthly for 6 months; barrier contraception — no IUCD, no hormonal method until hCG normalizes",
+            "Monthly hCG for life with any contraception she prefers",
+            "No follow-up needed if hCG is normal at two weeks",
+            "Weekly hCG for two weeks then discharge from care",
+            "Hormonal implant now to suppress hCG secretion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الجدول الصحيح: hCG الكمي أسبوعيًا حتى الاستقرار ضمن المدى المرجعي 3–4 أسابيع (ويجب أن يهبط دائمًا ولا يرتفع أبدًا، ويعتدل عادة خلال 8–12 أسبوعًا بعد الإفراغ) ثم شهريًا لستة أشهر؛ مع منع حمل فعال بطريقة حاجزية لأن اللولب مضاد الاستطباب والهرمونات تُتجنب حتى يعتدل hCG، لأن 10–20% من الأحمال تتطور إلى مرض خبيث يُكشف بهذه المتابعة.",
+          "xp": 18,
+          "hints": [
+            "Weekly first, then monthly — for how long each?"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: حمل عنقودي كامل مصحوب بما قبل إرجاج مبكر وفرط إقياء وفقر دم وتكيس ثيكا-لوتيني وارتفاع التيروكسين مع يوثيرويدية سريرية. الدروس المستفادة: ما قبل الإرجاج قبل الأسبوع 20 مع رحم أكبر من عمره لين عجيني ونزف وردي بني أو حويصلات عنقودية = فكر فورًا بالحمل العنقودي؛ وhCG فوق 100,000 يرفع الشك لكن قد يكون طبيعيًا؛ والإفراغ يكون بالشفط مع الاستعداد للنزف والثقب؛ ثم تأتي المتابعة الصارمة لـ hCG لأن 10–20% تتطور إلى مرض خبيث، مع منع الحمل واللولب والهرمونات حتى اعتدال الهرمون.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L10_gestational_trophoblastic_disease_case2",
+      "lecture_id": "obgyn_L10_gestational_trophoblastic_disease",
+      "title": "When the hCG Curve Betrays You: Post-Mole Gestational Trophoblastic Neoplasia",
+      "scenario": "A 33-year-old woman is followed after suction evacuation of a complete hydatidiform mole. Her β-hCG curve — falling, then plateauing, then rising — forces the team to declare malignant gestational trophoblastic neoplasia, hunt for metastases, and deliver the chemotherapy that makes choriocarcinoma one of medicine's most curable cancers.",
+      "vignette": {
+        "age": 33,
+        "sex": "female",
+        "chief_complaint": "Rising β-hCG on follow-up after molar evacuation",
+        "history": "G3P2. Complete hydatidiform mole evacuated by suction 7 weeks ago; baseline chest radiograph was clear at diagnosis. Barrier contraception used consistently since evacuation. Weekly quantitative serum β-hCG: 21,000 → 8,200 → 6,900 → 7,400 → 9,100 mIU/mL over five weeks. New mild dry cough for one week. No vaginal bleeding at present.",
+        "vitals": {
+          "bp": "118/76 mmHg",
+          "hr": "88/min",
+          "rr": "18/min",
+          "temp": "36.6 C",
+          "spo2": "97% on room air"
+        },
+        "exam": "Uterus involuted and non-tender; no adnexal masses; no vaginal bleeding; chest auscultation unremarkable.",
+        "labs": [
+          {
+            "name": "Quantitative β-hCG",
+            "value": "9,100 mIU/mL (risen from 6,900)",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.1 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "230,000/uL",
+            "flag": "normal"
+          },
+          {
+            "name": "Clotting function (PT/INR)",
+            "value": "normal",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Chest radiograph: two new well-defined pulmonary opacities consistent with metastatic deposits — the lungs being a primary site of metastasis for malignant trophoblastic tumors."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case2_s1",
+          "prompt": "What does the hCG pattern signify?",
+          "options": [
+            "Plateau then rise after evacuation = malignant gestational trophoblastic neoplasia (GTN)",
+            "Normal fluctuation of post-molar regression",
+            "A new pregnancy despite barrier contraception",
+            "Laboratory variation — repeat in one month",
+            "Residual normal trophoblast that always self-resolves"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد الإفراغ يجب أن يهبط hCG باستمرار وألا يرتفع أبدًا؛ فالثبات ثم الارتفاع هنا يعني مرضًا أروميًا غاذيًا خبيثًا (GTN) ويستوجب استبعاد النقائل فورًا. الاختلاج الطبيعي لا يشمل الارتفاع، والحمل الجديد مستبعد بالالتزام الصارم بمانع الحمل، وانتظار شهر لإعادة الفحص تأخير غير مقبول، والبقايا الأرومية لا تحل ذاتيًا بل قد تعني سرطان مشيمة سريع الفتك دون علاج.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case2_s2",
+          "prompt": "Why were the lungs the first site examined for metastases?",
+          "options": [
+            "Because brain imaging is contraindicated during follow-up",
+            "The lungs are a primary site of metastasis for malignant trophoblastic tumors — a baseline chest radiograph is taken at diagnosis for exactly this reason",
+            "The lungs are the only organ ever involved in GTD",
+            "Because the liver filters trophoblastic cells first",
+            "hCG is produced in the lungs"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الرئتان الموقع الأول لنقائل الأورام الأرومية الغاذية الخبيثة؛ ولهذا تُؤخذ صورة شعاعية أساسية للصدر عند تشخيص الحمل العنقودي أصلًا لتكون مرجع المقارنة. وليست الرئة العضو الوحيد المعرض (الكبد والدماغ معنيان أيضًا)، ولا علاقة للتصوير الدماغي أو الترشيح الكبدي أو إنتاج hCG الرئوي بالمنطق هنا.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case2_s3",
+          "prompt": "Which treatment fits malignant trophoblastic disease / choriocarcinoma?",
+          "options": [
+            "Chemotherapy with cytotoxic drugs (single or in combination with other therapy) — it responds extremely well and is nearly always completely successful",
+            "Hysterectomy alone with no further follow-up",
+            "Radiation therapy to the pelvis",
+            "Watchful waiting for spontaneous resolution",
+            "Repeat suction evacuation alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "سرطان المشيمة يستجيب استجابة ممتازة للعلاج الكيميائي (أدوية سامة للخلايا مفردة أو مشتركة مع علاج آخر) وينجح العلاج بشكل شبه تام؛ فهو من أكثر السرطانات قابلية للشفاء. الاستئصال وحده لا يعالج الانتشار الدموي، والإشعاع والانتظار وإعادة الشفط وحدها ليست من خطة المحاضرة لهذا المرض المنتشر.",
+          "xp": 15
+        },
+        {
+          "id": "obgyn_L10_gestational_trophoblastic_disease_case2_s4",
+          "prompt": "What counseling completes her care after successful treatment?",
+          "options": [
+            "Conceive as soon as hCG normalizes to prove fertility",
+            "Pregnancy is forbidden for life",
+            "Only cesarean deliveries in future pregnancies",
+            "Avoid pregnancy for at least one year after completing treatment; subsequent pregnancies require close hCG monitoring (recurrence risk) and early ultrasonography",
+            "No special monitoring is needed in future pregnancies"
+          ],
+          "correct_index": 3,
+          "explanation_ar": "بعد إتمام العلاج الكيميائي يُنصح بتجنب الحمل سنة على الأقل، وكل حمل لاحق يتطلب مراقبة hCG عن قرب لخطر النكس مع تقييم مبكر بالتصوير فوق الصوتي (خطر حمل عنقودي ثانٍ 1.2–1.4% وبعد حملين 20%). الحمل ليس ممنوعًا للأبد، ولا يُشترط التوليد القيصري، والحمل الفوري أو إهمال المراقبة كلاهما خيار خاطئ.",
+          "xp": 15,
+          "hints": [
+            "One year is the magic number after chemotherapy"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: ورم أرومي غاذي حملي خبيث (GTN/سرطان مشيمة) بعد إفراغ حمل عنقودي مع نقائل رئوية. الدرس المحوري: منحنى hCG بعد الإفراغ طريق ذو اتجاه واحد؛ فالثبات أو الارتفاع يعني خباثة ويستوجب استبعاد النقائل بدءًا من الرئة (الموقع الأول) — ثم علاج كيميائي مفرد أو مشترك ينجح بشكل شبه تام، مع تجنب الحمل سنة على الأقل بعد العلاج ومتابعة hCG عن قرب في الأحمال اللاحقة بسبب خطر النكس وارتباط المرض أحيانًا بالحمل التالي بعد الإفراغ.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

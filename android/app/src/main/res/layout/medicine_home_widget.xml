@@ -1,95 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ويدجت الشاشة الرئيسية — منصة الطب الباطني.
-     حجم افتراضي 4x2 — قابل للتحجيم (minWidth/minHeight متوافقان
-     مع شبكة الأيقونات في أندرويد 12+). -->
+<!-- ويدجت الشاشة الرئيسية — منصة الطب الباطني (v19: أهدافي + لؤلؤة اليوم).
+     بنية من جزأين: علوي «أهدافي» (مثبتات غير مكتملة) وسفلي «لؤلؤة اليوم».
+     حجم افتراضي 4x2 — قابل للتحجيم. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/widget_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="14dp"
     android:background="@drawable/widget_background"
     android:clickable="true"
     android:focusable="true">
 
-    <!-- ── الرأس: العنوان ── -->
-    <TextView
-        android:id="@+id/widget_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/widget_title"
-        android:textSize="13sp"
-        android:textStyle="bold"
-        android:textColor="@color/widget_text_secondary" />
-
+    <!-- ══ الجزء العلوي: أهدافي (المثبتات غير المكتملة) ══ -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="6dp"
-        android:gravity="center_vertical">
-
-        <!-- ── الرقم الكبير: البطاقات المستحقة ── -->
-        <TextView
-            android:id="@+id/widget_due_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="44sp"
-            android:textStyle="bold"
-            android:textColor="@color/widget_due_normal"
-            android:fontFamily="sans-serif-condensed" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="12dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/widget_due_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/widget_due_label"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:textColor="@color/widget_text_primary" />
-
-            <!-- ── الإنجاز اليومي ── -->
-            <ProgressBar
-                android:id="@+id/widget_progress"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:layout_marginTop="6dp"
-                android:max="100"
-                android:progress="0"
-                android:progressTint="@color/widget_accent"
-                android:progressBackgroundTint="@color/widget_track" />
-
-            <TextView
-                android:id="@+id/widget_progress_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:text="@string/widget_progress_placeholder"
-                android:textSize="11sp"
-                android:textColor="@color/widget_text_secondary" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- ── المعلومة الطبية السريعة ── -->
-    <TextView
-        android:id="@+id/widget_tip"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="10dp"
-        android:text="@string/widget_tip_placeholder"
-        android:textSize="12sp"
-        android:lineSpacingExtra="2dp"
-        android:maxLines="3"
-        android:ellipsize="end"
-        android:textColor="@color/widget_text_secondary" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/widget_goals_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📌"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/widget_goals_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/widget_goals_label"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/widget_text_primary" />
+        </LinearLayout>
+
+        <!-- أسطر المحاضرات المتبقية — يبناها Kotlin ديناميكياً
+             (PendingIntent واحد للكل). عنوان واحد يكفي غالباً؛
+             السقف 3 محاضرات. -->
+        <TextView
+            android:id="@+id/widget_goal_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="12.5sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/widget_goal_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="11.5sp"
+            android:textColor="@color/widget_text_secondary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/widget_goal_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="11.5sp"
+            android:textColor="@color/widget_text_secondary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textDirection="ltr"
+            android:textAlignment="viewStart"
+            android:visibility="gone" />
+
+        <!-- عدد زائد مخفي (زيادة على السقف) — «+N أخرى». -->
+        <TextView
+            android:id="@+id/widget_goal_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="11sp"
+            android:textColor="@color/widget_text_secondary"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- فاصل خفيف بين الجزأين -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/widget_border" />
+
+    <!-- ══ الجزء السفلي: لؤلؤة اليوم ══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/widget_pearl_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/widget_pearl_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/widget_pearl_label"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/widget_text_primary" />
+        </LinearLayout>
+
+        <!-- النص الطبي — خط مميز وواضح بخلفية خفيفة. -->
+        <TextView
+            android:id="@+id/widget_pearl_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="6dp"
+            android:background="@color/widget_pearl_bg"
+            android:textSize="12sp"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/widget_text_primary"
+            android:text="@string/widget_pearl_placeholder" />
+    </LinearLayout>
 </LinearLayout>

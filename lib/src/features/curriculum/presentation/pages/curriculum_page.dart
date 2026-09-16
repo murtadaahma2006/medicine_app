@@ -1,6 +1,10 @@
+import 'dart:async' show unawaited;
+
 import 'package:flutter/material.dart';
 
 import '../../../../core/database/database_helper.dart';
+import '../../../../core/utils/responsive_layout.dart';
+import '../../../../core/widget/home_widget_service.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../../../curriculum/data/unit_repository.dart';
@@ -50,16 +54,53 @@ class _CurriculumPageState extends State<CurriculumPage> {
   bool _loading = true;
   String? _error;
 
+  /// آخر تخصص حُمّل منهجه فعلاً. didChangeDependencies يستدعى عند كل
+  /// تغيّر حقيقي في النطاق (وليس عند كل بناء) — هذه الحراسة تجعل
+  /// التحميل يقع مرة أولى ثم عند تبديل التخصص فقط.
+  String? _loadedSpecialty;
+
+  /// عدّاد تحميلات متوازية: تبديل سريع بين التخصصات أثناء تحميل
+  /// جارٍ يجعل النتيجة القديمة تصل متأخرة — تجاهل أي نتيجة غير آخر
+  /// تحميل (المفتاح في مقارنة الحالة لا الترتيب الزمني).
+  int _loadEpoch = 0;
+
   @override
   void initState() {
     super.initState();
     _repo = const UnitRepository();
-    _load();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // التحميل هنا (لا initState): السياق مكتمل فيُقرأ التخصص المحفوظ
+    // من الجلسة السابقة منذ أول تحميل، وأي تبديل لاحق يعيد التحميل.
+    final String specialty = SpecialtyScope.effectiveOf(context);
+    if (specialty != _loadedSpecialty) _load();
   }
 
   Future<void> _load() async {
+    // رقم هذا التحميل — يُقارن في النجاح والفشل معاً: فشل تحميل
+    // قديم بعد بدء أحدث يُتجاهل (لا يعرض خطأ زائفاً).
+    final int epoch = ++_loadEpoch;
     try {
-      final List<Unit> units = await _repo.getAllUnits();
+      // v20: التخصص النشط يحدد المنهج المعروض. القراءة في سياق صالح
+      // دائماً (didChangeDependencies/نداءات مستخدم) — التحديث صامت
+      // بلا وميض سبينر عند التبديل: القائمة القديمة تبقى حتى يصل
+      // الجديد ثم يُبدَّل دفعة واحدة.
+      final String specialty = SpecialtyScope.effectiveOf(context);
+      final bool specialtyChanged = specialty != _loadedSpecialty;
+      _loadedSpecialty = specialty;
+      final List<Unit> units = (await _repo.getUnitsBySpecialty(specialty))
+          .where((Unit u) => u.system != 'physiology')
+          .toList();
+
+      // تحديث قائمة التخصصات في الجذر (استيراد محاضرة جراحية قد
+      // يظهر شريط التبديل لأول مرة).
+      final List<String> specialties =
+          await DatabaseHelper.instance.getDistinctSpecialties();
+      if (!mounted) return;
+      SpecialtyScope.maybeUpdateRoot(context, specialties);
 
       // حالة كل الوحدات باستعلام واحد: معرفات تقييماتها المكتملة.
       final DatabaseHelper db = DatabaseHelper.instance;
@@ -82,19 +123,23 @@ class _CurriculumPageState extends State<CurriculumPage> {
       }
       final List<String> systems = systemsInOrder.items;
 
-      if (!mounted) return;
+      if (!mounted || epoch != _loadEpoch) return;
       setState(() {
         _units = units;
         _systems = systems;
         _completedUnitIds.clear();
         _completedUnitIds.addAll(completed);
+        // عند التبديل: تصفير التوسعة — أجهزة التخصص السابق لا تنطبق
+        // على الجديد؛ نوسّع أول جهاز فقط (نفس تجربة أول فتح).
+        if (specialtyChanged) _expandedSystems.clear();
         if (_expandedSystems.isEmpty && systems.isNotEmpty) {
           _expandedSystems.add(systems.first);
         }
         _loading = false;
+        _error = null;
       });
     } catch (_) {
-      if (!mounted) return;
+      if (!mounted || epoch != _loadEpoch) return;
       setState(() {
         _error = 'تعذّر تحميل المنهج.';
         _loading = false;
@@ -257,9 +302,11 @@ class _CurriculumPageState extends State<CurriculumPage> {
 
   /// تثبيت/فك تثبيت محاضرة — تحديث محلي فوري (بلا إعادة تحميل كامل
   /// كي لا يفقد المستخدم موضع تمريره) + SnackBar تأكيد خفيف.
+  /// الويدجت يعرض «أهدافي» من المثبتات — يُحدَّث فور تغيّرها.
   Future<void> _togglePin(Unit unit) async {
-    final bool nowPinned = await _repo.togglePinnedToday(unit.id);
+    final bool nowPinned = await _repo.togglePinnedToday(unit);
     if (!mounted) return;
+    unawaited(HomeWidgetService.refresh());
 
     setState(() {
       final int i = _units.indexWhere((Unit u) => u.id == unit.id);
@@ -289,7 +336,8 @@ class _CurriculumPageState extends State<CurriculumPage> {
   Future<void> _confirmDelete(Unit unit) async {
     final bool? confirmed = await showDialog<bool>(
       context: context,
-      builder: (BuildContext ctx) => AlertDialog(
+      // تجاوب: على التابلت يُقيد عرض الحوار (موبايل: بلا أثر).
+      builder: (BuildContext ctx) => ResponsiveDialog(
         title: const Text('حذف المحاضرة'),
         content: Text(
           'هل أنت متأكد من حذف «${_cleanTitle(unit.title)}»؟\n\n'
@@ -360,10 +408,19 @@ class _CurriculumPageState extends State<CurriculumPage> {
       );
     }
     if (_units.isEmpty) {
-      return const EmptyState(
+      // v20: فراغ داخل تخصص فيه محتوى آخر = دعوة لاستيراد، لا «لا
+      // محاضرات بعد» العامة.
+      final SpecialtyScope? scope = SpecialtyScope.of(context);
+      final bool singleSpecialty =
+          (scope?.specialties.length ?? 1) <= 1;
+      return EmptyState(
         icon: Icons.school_rounded,
-        title: 'لا محاضرات بعد',
-        subtitle: 'سيظهر المنهج الطبي هنا بعد حقن المحتوى',
+        title: singleSpecialty
+            ? 'لا محاضرات بعد'
+            : 'لا توجد محاضرات مضافة في هذا التخصص حالياً',
+        subtitle: singleSpecialty
+            ? 'سيظهر المنهج الطبي هنا بعد حقن المحتوى'
+            : 'استورد محاضرة من هذا التخصص أو بدّل التخصص أعلى الشاشة',
       );
     }
 
@@ -373,70 +430,108 @@ class _CurriculumPageState extends State<CurriculumPage> {
       children: <Widget>[
         RefreshIndicator(
           onRefresh: _load,
-          child: ReorderableListView.builder(
-            physics: const AlwaysScrollableScrollPhysics(),
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpacing.xl,
-              vertical: AppSpacing.lg,
-            ),
-            buildDefaultDragHandles: false,
-            itemCount: rows.length,
-            onReorder: _onReorder,
-            proxyDecorator: (Widget child, int index, Animation<double> a) {
-              // ظل أعمق أثناء السحب — رد فعل بصري واضح.
-              return AnimatedBuilder(
-                animation: a,
-                builder: (BuildContext c, Widget? ch) {
-                  return Material(
-                    color: Colors.transparent,
-                    elevation: 0,
-                    child: ch,
-                  );
-                },
-                child: child,
-              );
-            },
-            itemBuilder: (BuildContext context, int index) {
-              final _Row row = rows[index];
-              final String key =
-                  row.isHeader ? 'hdr-${row.system}' : row.unit!.id;
+          // تجاوب: على التابلت (وضع المشاهدة) — أكورديون أجهزة بشبكة
+          // محاضرات 2/3 أعمدة. الموبايل ووضع الترتيب اليدوي: القائمة
+          // الأصلية القابلة للسحب مع شريط التخصصات في رأسها.
+          child: (ResponsiveLayout.isTablet(
+                      MediaQuery.sizeOf(context).width) &&
+                  !_reorderMode)
+              ? _buildTabletAccordion()
+              : Builder(
+                  builder: (BuildContext context) {
+                    final Widget list = ReorderableListView.builder(
+                      physics: const AlwaysScrollableScrollPhysics(),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpacing.xl,
+                        vertical: AppSpacing.lg,
+                      ),
+                      buildDefaultDragHandles: false,
+                      itemCount: rows.length,
+                      onReorder: _onReorder,
+                      proxyDecorator:
+                          (Widget child, int index, Animation<double> a) {
+                        // ظل أعمق أثناء السحب — رد فعل بصري واضح.
+                        return AnimatedBuilder(
+                          animation: a,
+                          builder: (BuildContext c, Widget? ch) {
+                            return Material(
+                              color: Colors.transparent,
+                              elevation: 0,
+                              child: ch,
+                            );
+                          },
+                          child: child,
+                        );
+                      },
+                      itemBuilder: (BuildContext context, int index) {
+                        final _Row row = rows[index];
+                        final String key =
+                            row.isHeader ? 'hdr-${row.system}' : row.unit!.id;
 
-              if (row.isHeader) {
-                // ── ترويسة الجهاز (أكورديون) ──
-                final List<Unit> systemUnits = _unitsOfSystem(row.system);
-                final int done = _completedCountOf(row.system);
-                final bool expanded =
-                    _expandedSystems.contains(row.system);
+                        if (row.isHeader) {
+                          // ── ترويسة الجهاز (أكورديون) ──
+                          final List<Unit> systemUnits =
+                              _unitsOfSystem(row.system);
+                          final int done = _completedCountOf(row.system);
+                          final bool expanded =
+                              _expandedSystems.contains(row.system);
 
-                return SystemExpansionTile(
-                  key: ValueKey<String>(key),
-                  system: row.system,
-                  lectureCount: systemUnits.length,
-                  completedCount: done,
-                  expanded: expanded,
-                  onToggle: () => _toggleExpanded(row.system),
-                  onDropHere: () {}, // الإفلات يُعالج في onReorder.
-                );
-              }
+                          return SystemExpansionTile(
+                            key: ValueKey<String>(key),
+                            system: row.system,
+                            lectureCount: systemUnits.length,
+                            completedCount: done,
+                            expanded: expanded,
+                            onToggle: () => _toggleExpanded(row.system),
+                            onDropHere: () {}, // الإفلات يُعالج في onReorder.
+                          );
+                        }
 
-              // ── صف المحاضرة ──
-              final Unit unit = row.unit!;
-              final bool completed = _isUnitCompleted(unit.id);
+                        // ── صف المحاضرة ──
+                        final Unit unit = row.unit!;
+                        final bool completed = _isUnitCompleted(unit.id);
 
-              return SystemLectureTile(
-                key: ValueKey<String>(key),
-                unit: unit,
-                completed: completed,
-                reorderMode: _reorderMode,
-                index: index,
-                pinned: unit.isPinnedToday,
-                onTogglePin: () => _togglePin(unit),
-                onOpen: () => _openUnit(unit),
-                onMove: () => _showMoveSheet(unit),
-                onDelete: () => _confirmDelete(unit),
-              );
-            },
-          ),
+                        return SystemLectureTile(
+                          key: ValueKey<String>(key),
+                          unit: unit,
+                          completed: completed,
+                          reorderMode: _reorderMode,
+                          index: index,
+                          pinned: unit.isPinnedToday,
+                          onTogglePin: () => _togglePin(unit),
+                          onOpen: () => _openUnit(unit),
+                          onMove: () => _showMoveSheet(unit),
+                          onDelete: () => _confirmDelete(unit),
+                        );
+                      },
+                    );
+
+                    // v20: شريط التخصصات فوق القائمة (يُخفى تلقائياً عند
+                    // تخصص واحد — SizedBox.shrink بلا فراغ).
+                    final SpecialtyScope? scope = SpecialtyScope.of(context);
+                    if (scope == null || scope.specialties.length < 2) {
+                      return list;
+                    }
+                    return Column(
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            AppSpacing.xl,
+                            AppSpacing.md,
+                            AppSpacing.xl,
+                            AppSpacing.sm,
+                          ),
+                          child: SpecialtySegmentBar(
+                            specialty: scope.specialty,
+                            specialties: scope.specialties,
+                            onChanged: SpecialtyScope.changeOf(context),
+                          ),
+                        ),
+                        Expanded(child: list),
+                      ],
+                    );
+                  },
+                ),
         ),
 
         // ── زر وضع الترتيب عائم ──
@@ -448,6 +543,100 @@ class _CurriculumPageState extends State<CurriculumPage> {
             onToggle: () => setState(() => _reorderMode = !_reorderMode),
           ),
         ),
+      ],
+    );
+  }
+
+  /// بناء التابلت (وضع المشاهدة): أكورديون أجهزة تضم شبكة محاضرات
+  /// ديناميكية (2 أعمدة طولياً / 3 عرضياً) — بدل القائمة الطولية
+  /// الفارغة بصرياً على الشاشات الواسعة.
+  Widget _buildTabletAccordion() {
+    final List<String> systems = <String>[
+      for (final _Row r in _buildRows())
+        if (r.isHeader) r.system,
+    ];
+
+    final Widget list = ListView.builder(
+      physics: const AlwaysScrollableScrollPhysics(),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpacing.xl,
+        vertical: AppSpacing.lg,
+      ),
+      itemCount: systems.length,
+      itemBuilder: (BuildContext context, int index) {
+        final String system = systems[index];
+        final List<Unit> systemUnits = _unitsOfSystem(system);
+        final int done = _completedCountOf(system);
+        final bool expanded = _expandedSystems.contains(system);
+        final int columns = ResponsiveLayout.gridColumns(context);
+
+        return Column(
+          key: ValueKey<String>('hdr-$system'),
+          children: <Widget>[
+            SystemExpansionTile(
+              system: system,
+              lectureCount: systemUnits.length,
+              completedCount: done,
+              expanded: expanded,
+              onToggle: () => _toggleExpanded(system),
+              onDropHere: () {},
+            ),
+            if (expanded && columns > 1)
+              Padding(
+                padding:
+                    const EdgeInsets.only(bottom: AppSpacing.md),
+                child: GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  padding: EdgeInsets.zero,
+                  gridDelegate:
+                      SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: columns,
+                    mainAxisSpacing: ResponsiveLayout.gridSpacing,
+                    crossAxisSpacing: ResponsiveLayout.gridSpacing,
+                    childAspectRatio: 1.9,
+                  ),
+                  itemCount: systemUnits.length,
+                  itemBuilder: (BuildContext context, int i) {
+                    final Unit unit = systemUnits[i];
+                    return SystemLectureTile(
+                      unit: unit,
+                      completed: _isUnitCompleted(unit.id),
+                      reorderMode: false,
+                      index: i,
+                      pinned: unit.isPinnedToday,
+                      onTogglePin: () => _togglePin(unit),
+                      onOpen: () => _openUnit(unit),
+                      onMove: () => _showMoveSheet(unit),
+                      onDelete: () => _confirmDelete(unit),
+                    );
+                  },
+                ),
+              ),
+          ],
+        );
+      },
+    );
+
+    // v20: شريط التخصصات فوق أكورديون التابلت كذلك (موحد الموقف).
+    final SpecialtyScope? scope = SpecialtyScope.of(context);
+    if (scope == null || scope.specialties.length < 2) return list;
+    return Column(
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpacing.xl,
+            AppSpacing.md,
+            AppSpacing.xl,
+            AppSpacing.sm,
+          ),
+          child: SpecialtySegmentBar(
+            specialty: scope.specialty,
+            specialties: scope.specialties,
+            onChanged: SpecialtyScope.changeOf(context),
+          ),
+        ),
+        Expanded(child: list),
       ],
     );
   }

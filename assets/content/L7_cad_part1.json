@@ -1,0 +1,1027 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L7_cad_part1",
+    "specialty": "internal_medicine",
+    "title": "Coronary Artery Disease Part I (Chronic Coronary Syndrome)",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L7 CAD PART I.pdf",
+      "page_count": 51
+    },
+    "tags": [
+      "chronic coronary syndrome",
+      "stable angina",
+      "atherosclerosis",
+      "plaque rupture",
+      "risk factors",
+      "stress testing",
+      "CT coronary angiography",
+      "antianginal therapy",
+      "statins",
+      "revascularization"
+    ],
+    "order_index": 7,
+    "golden_tip": [
+      "EXAM TRAP: Acute coronary syndromes arise from rupture/erosion of plaques that are often < 50% stenosed — the vulnerable plaque, not the tightest one. Atherosclerosis stays asymptomatic until stenosis exceeds 70-80% of luminal diameter.",
+      "A NORMAL resting ECG does NOT exclude ischaemia, and a NORMAL resting echocardiogram does NOT exclude CAD — both are often normal between episodes in chronic coronary syndrome.",
+      "Exercise ECG excludes LVH, LBBB, resting ST depression and digoxin users. Best use: intermediate-risk/atypical or low-risk/typical patients. Sensitivity 68%, specificity 70%; stress echo accuracy 80-90%.",
+      "Statin rule for CCS: high-intensity statin for ALL regardless of baseline LDL, targeting LDL-C < 1.4 mmol/L (55 mg/dL) AND a >= 50% reduction from baseline — add ezetimibe, then bempedoic acid, if the goal is unmet.",
+      "Revascularisation has a proven SURVIVAL benefit for left main stem (LMS), three-vessel disease, and LV systolic dysfunction — otherwise PCI/CABG in stable angina is for symptoms despite optimal medical therapy or patient preference."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L7_c1",
+      "lecture_id": "L7_cad_part1",
+      "title": "Atherosclerosis: Plaque Biology and the CCS-ACS Spectrum",
+      "summary_ar": "تصلب الشرايين: تسلسل تطور اللويحة من الخط الدهني إلى اللويحة الممزقة، ودور التمزق/التآكل في المتلازمتين المزمنة والحادة، وجدول المظاهر السريرية-المرضية.",
+      "sections": [
+        {
+          "heading": "Plaque Progression (from Fatty Streak to Rupture)",
+          "body_text": "**Atherosclerosis begins with endothelial dysfunction**, then progresses through a stereotyped histological sequence (lecture table, from 'Sequences in progression of atherosclerosis'):\n\n- **Fatty streak (earliest onset):** mainly **intracellular lipid accumulation** (foam cells) — **clinically silent**.\n- **Intermediate lesion:** intracellular lipid accumulation plus **small extracellular lipid pools**.\n- **Atheroma:** intracellular lipid accumulation with a **core of extracellular lipid**.\n- **Fibroatheroma:** increased extracellular matrix/Smooth muscle cell accumulation — established lesion.\n- **Vulnerable plaque: thin-cap fibroatheroma with a necrotic debris core** (rich in macrophage foam cells, dendritic cells and T cells with ApoB-lipoproteins).\n- **Ruptured plaque (or eroded plaque): exposure of the thrombogenic core -> luminal thrombosis.**\n\n**The coronary circulation segments (FIGURE 273-1):** **epicardial arteries > 400 micrometre (transport)**, **small arteries < 400 micrometre (regulation)**, **arterioles < 100 micrometre and capillaries < 10 micrometre (exchange)** — with most resistance normally in the microcirculation; microvascular dysfunction is a real cause of ischaemia.\n\n**Ischaemia cascade (FIGURE 273-2):** decreased **subendocardial perfusion -> altered metabolism/abnormal ST -> micro-infarction/myocardial fibrosis**, as near-term or prolonged manifestations of an oxygen supply-demand mismatch, driven by **endothelial and microvascular dysfunction**.",
+          "key_points": [
+            "Endothelial dysfunction initiates atherosclerosis",
+            "Fatty streak (silent) -> intermediate -> atheroma -> fibroatheroma -> vulnerable -> ruptured plaque",
+            "Vulnerable plaque: necrotic core, inflammatory cells, thin cap",
+            "Epicardial >400 um transport; small arteries <400 um regulation; arterioles/capillaries exchange",
+            "Ischaemia cascade: subendocardial hypoperfusion -> metabolic/ST changes -> micro-infarction/fibrosis"
+          ]
+        },
+        {
+          "heading": "Role of Plaque Rupture and Erosion: CCS versus ACS",
+          "body_text": "**Atherosclerosis is generally asymptomatic until the plaque stenosis exceeds 70 or 80 percent of the luminal diameter**, which can reduce flow and produce **typical angina pectoris**.\n\n**Progression involves two distinct processes:**\n- **A chronic process leading to slow luminal narrowing = chronic coronary syndrome (CCS).**\n- **An acute process causing rapid luminal obstruction associated with plaque haemorrhage and/or luminal thrombosis = acute coronary syndrome (ACS).**\n\n**Acute coronary and cerebrovascular syndromes (unstable angina, myocardial infarction, sudden death, and stroke) are typically due to RUPTURE or EROSION of plaques leading to thrombosis — although these plaques may have less than 50 percent stenosis.**\n\n**Box 16.36 — CAD clinical manifestations and their pathology:**\n| Clinical problem | Pathology |\n|---|---|\n| **Stable angina** | Ischaemia due to **fixed atheromatous stenosis** of one or more coronary arteries |\n| **Unstable angina** | Ischaemia caused by **dynamic obstruction** due to **plaque rupture or erosion with superimposed thrombosis** |\n| **Myocardial infarction** | **Myocardial necrosis** from acute occlusion (rupture/erosion + thrombosis) |\n| **Heart failure** | Myocardial dysfunction due to infarction or ischaemia |\n| **Arrhythmia** | Altered conduction due to ischaemia or infarction |\n| **Sudden death** | Ventricular arrhythmia, asystole or massive myocardial infarction |",
+          "key_points": [
+            "Silent until stenosis >70-80% luminal diameter",
+            "CCS = chronic slow narrowing; ACS = plaque haemorrhage/thrombosis with rapid obstruction",
+            "ACS lesions often <50% stenosed (rupture/erosion)",
+            "Stable angina = fixed stenosis; unstable = dynamic obstruction with thrombus"
+          ],
+          "check": {
+            "prompt": "Why can a plaque of only 40% stenosis cause a myocardial infarction?",
+            "options": [
+              "All plaques over 30% occlude eventually",
+              "Plaque rupture or erosion with superimposed thrombosis can rapidly convert a subcritical stenosis into total occlusion",
+              "Stenosis percentage does not relate to flow at all",
+              "Because plaques never rupture above 70%"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الاحتشاء لا يحتاج تضيقاً حرجاً مسبقاً: تمزق/تآكل اللويحة مع خثرة فائقة يحدث انسداداً سريعاً كاملاً؛ فالمتلازمات الحادة تنشأ غالباً من لويحات <50% (الهشة) لا من الأشد تضيقاً."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Vulnerable plaque",
+          "definition_ar": "لويحة قليلة التليف غنية بنخر التهابي وقبعة رقيقة؛ قابلة للتمزق وإحداث أحداث حادة."
+        },
+        {
+          "term": "Plaque erosion",
+          "definition_ar": "تآكل سطح لويحة دون قلعة تليفية كاملة مع خثرة ملتصقة؛ آلية بديلة للتمزق في المتلازمات الحادة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L7_c2",
+      "lecture_id": "L7_cad_part1",
+      "title": "Risk Factors and the Myocardial Oxygen Supply-Demand Balance",
+      "summary_ar": "عوامل خطر الشريان التاجي (جدول 8.1) غير المعدلة والمعدلة والواسمات، وصندوق 16.38 لعوامل ميزان أكسجة العضلة عرضاً وطلباً.",
+      "sections": [
+        {
+          "heading": "Risk Factors and Markers (TABLE 8.1)",
+          "body_text": "**Non-modifiable risk factors:**\n- **Age**\n- **Male sex**\n- **Family history of premature coronary artery disease**\n\n**Modifiable independent risk factors:**\n- **Hyperlipidaemia**\n- **Hypertension**\n- **Diabetes mellitus**\n- **Metabolic syndrome**\n- **Cigarette smoking**\n- **Obesity**\n- **Sedentary lifestyle**\n- **Heavy alcohol intake**\n\n**Markers (associated, not established as causal):**\n- **Elevated lipoprotein(a)**\n- **Hyperhomocysteinaemia**\n- **Elevated high-sensitivity C-reactive protein (hsCRP)**",
+          "key_points": [
+            "Non-modifiable: age, male sex, family history of premature CAD",
+            "Modifiable: lipids, BP, diabetes, metabolic syndrome, smoking, obesity, sedentary lifestyle, heavy alcohol",
+            "Markers: Lp(a), homocysteine, hsCRP"
+          ]
+        },
+        {
+          "heading": "Myocardial Oxygen Supply and Demand (Box 16.38)",
+          "body_text": "**Oxygen demand — determined by cardiac work:**\n- **Heart rate**\n- **Blood pressure**\n- **Myocardial contractility**\n- **Left ventricular hypertrophy**\n- **Valve disease**\n\n**Oxygen supply — determined by coronary blood flow** (which **occurs mainly in diastole**):\n- **Duration of diastole** (the longer the diastole, the more coronary filling)\n- **Coronary perfusion pressure (aortic diastolic minus coronary sinus or right atrial diastolic pressure)**\n- **Coronary vasomotor tone**\n- **Oxygenation: haemoglobin and oxygen saturation**\n\nThis balance explains both the physiology of angina (demand exceeding supply across a fixed stenosis) and the logic of every antianginal drug: **beta-blockers slow the heart rate (longer diastole, less demand); nitrates reduce preload/afterload (less demand) and dilate coronaries (more supply); calcium channel blockers reduce BP and contractility.**",
+          "key_points": [
+            "Demand: heart rate, BP, contractility, LVH, valve disease",
+            "Supply: diastole duration, perfusion pressure (aortic diastolic - RA/coronary sinus diastolic), vasomotor tone, Hb/O2 saturation",
+            "Coronary blood flow occurs mainly in DIASTOLE",
+            "Every antianginal class maps onto this balance"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Coronary perfusion pressure",
+          "definition_ar": "فرق الضغط الانبساطي الأبهري عن الضغط الانبساطي الأذيني الأيمن/الجيب التاجي؛ محدد التدفق التاجي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L7_c3",
+      "lecture_id": "L7_cad_part1",
+      "title": "Clinical Assessment of Suspected Stable Angina",
+      "summary_ar": "التقويم السريري للذبحة المستقرة: الأعراض، الفحص الفيزيائي، الأشكال الخاصة (تشنجية، متلازمة X، ANOCA)، وترتيب الخطورة (16.41).",
+      "sections": [
+        {
+          "heading": "Symptoms and Physical Examination",
+          "body_text": "**Symptoms of CAD:** chest pain (typical vs atypical), dyspnoea, palpitation, syncope — with the key distinctions of **unstable angina vs stable angina (CCS)** and the **angina equivalent** concept.\n\n**Physical examination is frequently unremarkable** but should include a careful search for:\n- **Evidence of valve disease (particularly aortic).**\n- **Important risk factors: hypertension, diabetes mellitus, dyslipidaemia.**\n- **Signs of left ventricular dysfunction.**\n- **Other manifestations of arterial disease (carotid bruits, peripheral arterial disease).**\n- **Unrelated conditions that may exacerbate angina: anaemia, thyrotoxicosis.**\n\n**Special angina syndromes:**\n- **Coronary artery spasm:** angina from **vasospasm**, which may coexist with atherosclerosis (especially in unstable angina) or occur as an **isolated phenomenon in less than 1% of cases with normal coronary arteries on angiography** — 'variant angina'; with **transient ST elevation** it is **Prinzmetal's angina**.\n- **Syndrome X:** the constellation of **typical angina on effort + objective evidence of myocardial ischaemia on stress testing + normal coronary arteries on angiography**; many are **women**, mechanism often unclear, disorder poorly understood — **good prognosis but may respond to anti-anginal therapy**.\n- **ANOCA/microvascular angina:** **one-third of patients may have no significant epicardial disease and often have microvascular disease as the underlying pathophysiology (angina with no obstructive coronary artery disease).**\n- **Other causes of angina:** aortic stenosis, hypertrophic obstructive cardiomyopathy and aortitis; rarely vasculitis.",
+          "key_points": [
+            "Exam often unremarkable: seek valve disease (aortic), risk factors, LV dysfunction, carotid bruits/PAD, anaemia/thyrotoxicosis",
+            "Variant/Prinzmetal: isolated spasm <1%, normal coronaries, transient ST elevation",
+            "Syndrome X: typical effort angina + objective ischaemia + normal angiogram; women; good prognosis",
+            "One-third of angina patients have ANOCA (microvascular disease)",
+            "Angina also in AS, HOCM, aortitis"
+          ],
+          "check": {
+            "prompt": "A 54-year-old woman has classic exertional chest tightness, a positive exercise ECG for ischaemia, and completely normal coronary arteries at angiography. What is this called?",
+            "options": [
+              "Prinzmetal's angina",
+              "Syndrome X",
+              "Unstable angina",
+              "Aortic stenosis angina"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "متلازمة X: ذبحة نموذجية مجهودية + دليل موضوعي لنقص التروية + شرايين طبيعية بالتصوير؛ شائعة لدى النساء ومآلها جيد وقد تستجيب للعلاج المضاد للذبحة — بينما برنزميتال تشنج مع ارتفاع ST عابر."
+          }
+        },
+        {
+          "heading": "Risk Stratification in Stable Angina (Box 16.41)",
+          "body_text": "**HIGH-risk features:**\n- **Post-infarct angina**\n- **Poor effort tolerance**\n- **Ischaemia at low workload**\n- **Left main or three-vessel disease**\n- **Poor left ventricular function**\n\n**LOW-risk features:**\n- **Predictable exertional angina**\n- **Good effort tolerance**\n- **Ischaemia only at high workload**\n- **Single-vessel or two-vessel disease**\n- **Good left ventricular function**\n\nThis stratification directs both the **intensity of investigation (early imaging versus invasive strategy)** and the **urgency of considering revascularisation** — high-risk patients warrant definitive coronary imaging and, where anatomy confers survival benefit, revascularisation.",
+          "key_points": [
+            "High risk: post-infarct angina, poor effort tolerance, low-workload ischaemia, left main/3VD, poor LV function",
+            "Low risk: predictable exertional angina, good tolerance, high-workload ischaemia only, 1-2 vessel disease, good LV"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "ANOCA",
+          "definition_ar": "ذبحة دون مرض تاجي إبكليلي انسادي؛ جذر المشكلة وعائي دقيق غالباً."
+        },
+        {
+          "term": "Syndrome X",
+          "definition_ar": "ذبحة نموذجية مع نقص تروية موضوعي وشرايين سليمة؛ شائعة بالنساء ومآل جيد."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L7_c4",
+      "lecture_id": "L7_cad_part1",
+      "title": "Investigations: ECG, Echocardiography, Stress Testing and Coronary Imaging",
+      "summary_ar": "التحقيقات في الذبحة المستقرة: التحاليل والتخطيط الأساسي والصدى السكوني، مبدأ اختبارات الجهد وطرقها واسترجاعها، والتصوير التاجي بالطبقي والقسطرة.",
+      "sections": [
+        {
+          "heading": "Baseline Tests: Bloods, ECG and Resting Echocardiography",
+          "body_text": "**Blood tests:** **CBC, RBS (random blood sugar), HbA1c, RFT (renal function), lipid profile.**\n\n**Baseline electrocardiogram (ECG)** may show:\n- **ST-depression; T-wave inversion; pathological Q-waves.**\n- Other abnormalities such as **ventricular hypertrophy, bundle branch block.**\n- **A normal ECG does NOT exclude ischaemia** as the aetiology of chest pain.\n\n**Resting echocardiography** provides useful information in the overall assessment of suspected stable angina (**to guide treatment options and for risk stratification**):\n1. **Regional wall motion abnormalities.**\n2. **LV systolic function (EF) may guide the choice of medical therapy versus revascularisation.**\n3. **LV hypertrophy, assessment of the aortic (AS) and mitral (MR) valves.**\n- **A NORMAL resting echocardiogram does NOT exclude CAD.**",
+          "key_points": [
+            "Bloods: CBC, glucose/HbA1c, renal function, lipids",
+            "ECG: ST depression, T inversion, pathological Q, LVH, BBB — normal ECG does not exclude ischaemia",
+            "Echo: regional wall motion, EF (medical vs revascularisation), LVH, AS/MR — normal echo does not exclude CAD"
+          ]
+        },
+        {
+          "heading": "Stress Testing: Inducing and Detecting Ischaemia",
+          "body_text": "**Basic principle of stress testing: provoke ischaemia, followed by functional assessment with different modalities to detect it.** Stress tests are categorised by the methods used to **provoke** and to **detect** myocardial ischaemia.\n\n**Methods to INDUCE ischaemia:**\n- **Exercise** — the most physiologically sound and useful method; a test is **adequate if 85% or more of the age-predicted maximum heart rate (220 minus age) is achieved**, and it provides an **objective assessment of functional capacity with prognostic value**.\n- **Pharmacological testing — dobutamine, adenosine or dipyridamole** — for patients who cannot exercise to an adequate heart rate.\n\n**Methods to DETECT ischaemia:**\n- **Stress ECG**\n- **Stress echocardiography**\n- **Nuclear study (SPECT, PET)**\n- **CMR (stress perfusion MRI)**\n\n**Stress ECG specifics:**\n- **Exclude patients with LVH, LBBB, resting ST-depression, or those taking digoxin** (uninterpretable baseline).\n- **Sensitivity 68% and specificity 70%** for the general population (lower in low-risk persons).\n- **Best used in the INTERMEDIATE-risk patient with an atypical history, or the low-risk patient with a typical history** — the likelihood that an abnormal result indicates CAD is much higher for an older person with multiple risk factors.\n- For most **high-risk** patients, **invasive testing is preferred** for definitive diagnosis and possible intervention.\n- **Fig. 16.57 example:** resting ECG with minor inferolateral T-wave changes; after 3 minutes of treadmill exercise, **marked planar ST depression in V5 and V6** — angiography revealed **critical three-vessel disease**.\n\n**Stress echocardiography:** accuracy in detecting significant coronary stenosis is **80-90%, superior to exercise electrocardiography** (new or worsening regional wall-motion abnormality at stress compared with rest).\n\n**Nuclear study (SPECT): a perfusion defect present during stress but NOT at rest provides evidence of REVERSIBLE myocardial ischaemia.**\n\n**Coronary artery imaging:** **CT coronary angiography** (non-invasive, also useful in the Fig. 16.55 pathway for patients without known CAD) and **invasive coronary artery catheterisation** (for high-risk patients or when revascularisation is planned — for patients with KNOWN CAD, further stress imaging rather than CTCA is recommended).",
+          "key_points": [
+            "Adequate exercise test: >=85% of (220 - age); functional capacity has prognostic value",
+            "Pharmacological stress: dobutamine, adenosine, dipyridamole",
+            "Detection: stress ECG, stress echo, SPECT/PET, CMR",
+            "Stress ECG exclusions: LVH, LBBB, resting ST depression, digoxin; sens 68%/spec 70%",
+            "Stress echo accuracy 80-90%, superior to exercise ECG",
+            "Reversible perfusion defect (stress, not rest) = ischaemia on SPECT",
+            "CTCA for patients without known CAD; catheterisation for high-risk/known CAD"
+          ],
+          "check": {
+            "prompt": "Which patients should be excluded from diagnostic exercise-ECG stress testing?",
+            "options": [
+              "Patients with typical angina only",
+              "Patients with LVH, LBBB, resting ST-depression, or taking digoxin",
+              "Patients over 60",
+              "Patients with hyperlipidaemia"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "خط الأساس غير القابل للتأويل (LVH، LBBB، انحراف ST راحة، ديجوكسين) يُخرج المريض من اختبار الجهد الكهربائي؛ البدائل: صدى الجهد أو التصوير النووي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Adequate exercise test",
+          "definition_ar": "بلوغ ≥85% من المعدل الأقصى المتوقع للعمر (220-العمر) قبل الحكم على سلبية الاختبار."
+        },
+        {
+          "term": "Reversible perfusion defect",
+          "definition_ar": "عيب تروية بالجهد يزول بالراحة؛ دليل نقص التروية في SPECT."
+        },
+        {
+          "term": "ANOCA",
+          "definition_ar": "ذبحة بلا مرض انسدادي إبكليلي — ثلث المرضى؛ الآلية وعائية دقيقة غالباً."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L7_c5",
+      "lecture_id": "L7_cad_part1",
+      "title": "Management I: Lifestyle, Risk-Factor Control, Antiplatelets, Statins and Antianginal Drugs",
+      "summary_ar": "إدارة المتلازمة التاجية المزمنة: نصائح نمط الحياة (16.42)، ضبط الضغط والسكري، الأسبرين والستاتينات بأهداف LDL-C، وكل فئات مضادات الذبحة بجرعاتها.",
+      "sections": [
+        {
+          "heading": "Lifestyle, Hypertension, Diabetes, Antiplatelet and Statin Therapy",
+          "body_text": "**Box 16.42 Advice to patients with stable angina:**\n- **Do not smoke.**\n- **Aim for an ideal body weight.**\n- **Take regular exercise** (exercise up to, but not beyond, the point of chest discomfort is beneficial and **may promote collateral vessels**).\n- **Avoid severe unaccustomed exertion, and vigorous exercise after a heavy meal or in very cold weather.**\n- **Take a sublingual nitrate before undertaking exertion that may induce angina** (prophylactic use).\n\n**Control of hypertension and diabetes (2024/2025 guidance as taught):**\n- **In adults with CCD and hypertension (systolic BP >= 130 and/or diastolic BP >= 80 mmHg): ACE inhibitors, angiotensin-receptor blockers (ARB) or beta-blockers are recommended as FIRST-LINE therapy.**\n- **In patients with CCD and type 2 diabetes (target HbA1c < 7.0%): an SGLT2 inhibitor or a GLP-1 receptor agonist has proven cardiovascular benefit.**\n\n**Antiplatelet therapy:**\n- **All patients with angina secondary to CAD should receive antiplatelet therapy.**\n- **Low-dose aspirin (75 mg) for all, continued indefinitely** (reduces MI risk).\n- **Clopidogrel 75 mg daily is an equally effective alternative** if aspirin causes dyspepsia or other side effects.\n\n**Statin therapy:**\n- **All patients should be prescribed a statin, even if cholesterol is normal — evidence-based doses of a HIGH-INTENSITY statin regardless of baseline LDL.**\n- **LDL-C goal: < 1.4 mmol/L (55 mg/dL) AND a >= 50% reduction from baseline (Class I, Level A).**\n- **Statin-intolerant patients not at goal on ezetimibe: add bempedoic acid (Class I B; IIa with maximally tolerated statin + ezetimibe).**\n- **Intensity table:** HIGH (>= 50% LDL lowering): **atorvastatin 40-80 mg, rosuvastatin 20-40 mg**; MODERATE (30-49%): atorvastatin 10-20 mg, rosuvastatin 5-10 mg, simvastatin 20-40 mg, pravastatin 40-80 mg, lovastatin 40 mg, fluvastatin XL 80 mg; LOW (< 30%): simvastatin 10 mg, pravastatin 10-20 mg, fluvastatin 20-40 mg, pitavastatin 1-4 mg.",
+          "key_points": [
+            "Advice: stop smoking, ideal weight, regular exercise (collaterals), avoid heavy-meal/cold-weather exertion, prophylactic GTN",
+            "HTN >=130/80: ACEi/ARB or beta-blocker first line",
+            "T2DM with CCD: SGLT2 inhibitor or GLP-1 RA (HbA1c <7.0%)",
+            "Aspirin 75 mg indefinitely; clopidogrel 75 mg if intolerant",
+            "High-intensity statin regardless of baseline LDL; goal LDL-C <1.4 mmol/L + >=50% reduction",
+            "Add ezetimibe then bempedoic acid if unmet",
+            "High intensity: atorvastatin 40-80, rosuvastatin 20-40"
+          ]
+        },
+        {
+          "heading": "Antianginal Drugs (2024 ESC Recommendations and Davidson's Detail)",
+          "body_text": "**Goal of anti-anginal therapy: control symptoms with the simplest regimen that does not cause side effects.** Five groups are available with little evidence that one is more effective than another; conventional start: **sublingual GTN + beta-blocker, then add a calcium channel antagonist or long-acting nitrate; if two drugs fail, consider revascularisation.**\n\n**2024 ESC recommendations:**\n- **Tailor antianginal selection to patient characteristics, comorbidities, concomitant medications, tolerability and the underlying pathophysiology (I C).**\n- **Short-acting nitrates for immediate relief of angina (I B).**\n- **Initial treatment with beta-blockers and/or CCBs to control heart rate and symptoms for most patients with CCS (I B).**\n- **If not controlled on a beta-blocker or CCB alone: combination of beta-blocker + DHP-CCB (IIa B).**\n- **Long-acting nitrates or ranolazine as add-on therapy for inadequate control on beta-blockers and/or CCBs (IIa B).**\n\n**1. Nitrates** — act directly on vascular smooth muscle producing **venous and arteriolar dilatation**: they help angina by **lowering preload and afterload (reduced oxygen demand) and increasing supply through coronary vasodilatation**.\n- **Sublingual GTN** (metered-dose aerosol **400 micrograms per spray**, or tablets 500/800 micrograms) relieves an attack in **2-3 minutes**; use **prophylactically** before exertion. Side effects: headache, symptomatic hypotension, rarely syncope.\n- **Long-acting:** transcutaneous GTN patch **5-10 mg daily**; slow-release buccal **1-5 mg four times daily**; oral **isosorbide dinitrate 10-20 mg three times daily** or **isosorbide mononitrate 20-60 mg once or twice daily** (unlike GTN, not extensively first-pass metabolised).\n- **Continuous nitrate therapy causes pharmacological tolerance — avoid with a 6-8-hour nitrate-free period, best at night**; if **nocturnal angina** predominates, give long-acting nitrates at the end of the day instead.\n\n**2. Beta-blockers** — lower myocardial oxygen demand by **reducing heart rate, BP and myocardial contractility**; may provoke bronchospasm in asthma; theoretically non-selective agents may aggravate coronary vasospasm (blocked beta2-adrenoceptors).\n- Prefer **once-daily cardioselective preparations: slow-release metoprolol 60-200 mg daily or bisoprolol 5-15 mg daily.**\n- **Do NOT withdraw abruptly — the beta-blocker withdrawal syndrome can precipitate dangerous arrhythmias, worsening angina or MI.**\n\n**3. Calcium channel antagonists** — lower oxygen demand by **reducing BP and myocardial contractility**.\n- **Dihydropyridines (nifedipine, amlodipine) may cause reflex tachycardia — combine with a beta-blocker.**\n- **Verapamil and diltiazem can be used as monotherapy** (slow SA node firing, inhibit AV conduction, bradycardia) — particularly useful when beta-blockers are contraindicated.\n- **Caution in poor LV function** (negative inotropy can precipitate heart failure); other effects: peripheral oedema, flushing, headache, dizziness.\n- **Box 16.44:** nifedipine 5-20 mg three times daily (marked tachycardia; slow-release preparations available); nicardipine 20-40 mg TID (less myocardial depression); amlodipine 2.5-10 mg daily (ultra-long-acting); verapamil 40-80 mg TID (constipation; anti-arrhythmic); diltiazem 60-120 mg TID (similar anti-arrhythmic properties).\n\n**4. Potassium channel activators** — **nicorandil 10-30 mg twice daily orally**, the only drug in this class: **arterial and venous vasodilator without the tolerance seen with nitrates.**\n\n**5. Other drugs:**\n- **Ivabradine (If-channel antagonist):** induces **bradycardia by modulating sinus-node ion channels; does not inhibit myocardial contractility and appears safe in heart failure.**\n- **Ranolazine:** inhibits the **late inward sodium current** in coronary artery smooth muscle cells (secondary effect on calcium flux and vascular tone), reducing angina symptoms.",
+          "key_points": [
+            "Start GTN + beta-blocker; add CCB or long-acting nitrate; revascularise if two drugs fail",
+            "Short-acting nitrate = immediate relief (I B); beta-blocker and/or CCB initial therapy (I B)",
+            "Sublingual GTN 400 mcg spray/500-800 mcg tablet; relief in 2-3 min; prophylactic use",
+            "Nitrate tolerance: 6-8 h nitrate-free interval (at night)",
+            "Cardioselective BB: metoprolol SR 60-200 mg, bisoprolol 5-15 mg; no abrupt withdrawal",
+            "DHP-CCB with BB (reflex tachycardia); verapamil/diltiazem monotherapy; caution poor LV",
+            "Nicorandil 10-30 mg BD (K-channel activator, no nitrate tolerance)",
+            "Ivabradine: sinus-node If channel, HF-safe; ranolazine: late inward sodium current"
+          ],
+          "check": {
+            "prompt": "Why is a nitrate-free interval prescribed for patients on continuous nitrate therapy?",
+            "options": [
+              "To reduce the cost of therapy",
+              "To prevent pharmacological tolerance — best achieved at night when the patient is inactive (6-8 hours)",
+              "Because nitrates accumulate to toxic levels",
+              "To enhance the beta-blocker effect"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الاستخدام المستمر للنترات يحدث تحملاً دوائياً؛ فترة خلو 6-8 ساعات (ليلاً أفضل) تحفظ الفعالية — إلا إن كانت الذبحة الليلية مسيطرة فتُعطى النترات الطويلة نهاية اليوم."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Nitrate tolerance",
+          "definition_ar": "تدهور فعالية النترات مع الاستمرار؛ يُدار بفترة خلو 6-8 ساعات."
+        },
+        {
+          "term": "Ivabradine",
+          "definition_ar": "حاصر قناة If في العقدة الجيبية؛ يبطئ النبض دون تثبيط التقلص وآمن في قصور القلب."
+        },
+        {
+          "term": "Ranolazine",
+          "definition_ar": "مثبط تيار الصوديوم الداخلي المتأخر؛ يخف أعراض الذبحة دون تأثير ديناميكي كبير."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L7_c6",
+      "lecture_id": "L7_cad_part1",
+      "title": "Revascularisation and Prognosis of Coronary Artery Disease",
+      "summary_ar": "خيارات إعادة التروية (PCI/CABG) واستطباباتها بما فيها فائدة البقاء (LMS، ثلاثة أوعية، خلل البطين)، وإنذار المرض حسب الأوعية والوظيفة.",
+      "sections": [
+        {
+          "heading": "Revascularisation: Options and Indications",
+          "body_text": "**Options: percutaneous coronary intervention (PCI) or coronary artery bypass graft surgery (CABG).**\n\n**Either CABG or PCI is indicated in the following groups of patients with stable angina pectoris:**\n- **Patients with activity-limiting symptoms despite optimal medical therapy.**\n- **Active patients who prefer PCI for improved quality of life compared to medical therapy.**\n- **Those with anatomy for which revascularisation has a proven SURVIVAL benefit: LEFT MAIN STEM (LMS), THREE-VESSEL DISEASE, and LV SYSTOLIC DYSFUNCTION.**\n\n**Prognosis (lecture closing):** the prognosis of CAD is related to the **number of diseased vessels and the degree of left ventricular dysfunction**:\n- **Single-vessel disease with good LV function: 5-year survival > 90%.**\n- **Severe LV dysfunction with extensive three-vessel disease: 5-year survival < 30% unless revascularisation is performed.**\n- **Symptoms are a poor guide to prognosis** — spontaneous improvement in angina due to the **development of collateral vessels** is common; nevertheless, the **5-year mortality of patients with severe angina (CCS III or IV) is nearly double that of patients with mild symptoms.**",
+          "key_points": [
+            "Indications: limiting symptoms despite OMT; patient preference (QoL); survival-benefit anatomy",
+            "Survival-benefit anatomy: left main stem, three-vessel disease, LV systolic dysfunction",
+            "Single-vessel + good LV: >90% 5-year survival; 3VD + severe LV dysfunction: <30% without revascularisation",
+            "Symptoms poorly reflect prognosis (collateral development); CCS III/IV doubles 5-year mortality"
+          ],
+          "check": {
+            "prompt": "Which anatomical patterns carry a proven SURVIVAL benefit from revascularisation in stable CAD?",
+            "options": [
+              "Single-vessel proximal LAD disease with normal LV function",
+              "Left main stem disease, three-vessel disease, and LV systolic dysfunction",
+              "Any patient with typical angina",
+              "Two-vessel disease with normal LV function"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "فائدة البقاء تثبت للجذع الأيسر الرئيس وثلاثة أوعية وخلل الوظيفة الانقباضية للبطين؛ ما عدا ذلك تكون إعادة التروية لأعراض (OMT فاشل أو تفضيل المريض) لا للبقاء."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "CABG",
+          "definition_ar": "تطعيم مجاورة الشريان التاجي بالأوعية (ثديية داخلية/ساقية) لتجاوز التضيقات."
+        },
+        {
+          "term": "PCI",
+          "definition_ar": "تدخل تاجي عبر الجلد: بالون ودعامة عبر قسطرة لتوسيع الآفة الانسدادية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L7_f1",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c1",
+      "card_type": "basic",
+      "front_text": "At what stenosis diameter does atherosclerosis become symptomatic, and which plaques cause acute events?",
+      "back_text": "Generally asymptomatic until stenosis exceeds 70-80% of luminal diameter (producing angina). Acute coronary/cerebrovascular syndromes are typically due to rupture or erosion of plaques leading to thrombosis — and these plaques may have LESS than 50% stenosis.",
+      "explanation_ar": "بلا أعراض حتى تجاوز التضيق 70-80% من قطر التجويف؛ والأحداث الحادة من تمزق/تآكل لويحات غالباً <50% مع خثرة.",
+      "is_vivid": true,
+      "tags": [
+        "plaque biology",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L7_f2",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c1",
+      "card_type": "basic",
+      "front_text": "Name the histological sequence of atherosclerotic plaque progression.",
+      "back_text": "Endothelial dysfunction -> fatty streak (intracellular lipid/foam cells, silent) -> intermediate lesion (small extracellular lipid pools) -> atheroma (extracellular lipid core) -> fibroatheroma (matrix/SMC increase) -> vulnerable plaque (thin cap, necrotic core) -> ruptured/eroded plaque with thrombosis.",
+      "explanation_ar": "خلل البطانة ← خط دهني ← آفة وسيطة ← أثروما ← ليفي أثرومي ← لويحة هشة ← ممزقة/متآكلة مع خثرة.",
+      "tags": [
+        "pathology"
+      ]
+    },
+    {
+      "id": "L7_f3",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c1",
+      "card_type": "basic",
+      "front_text": "Match each CAD clinical problem to its pathology (Box 16.36).",
+      "back_text": "Stable angina = fixed atheromatous stenosis; unstable angina = dynamic obstruction from plaque rupture/erosion with thrombosis; MI = myocardial necrosis from acute occlusion; heart failure = dysfunction from infarction/ischaemia; arrhythmia = altered conduction; sudden death = ventricular arrhythmia, asystole or massive infarction.",
+      "explanation_ar": "المستقرة تضيق ثابت؛ غير المستقرة انسداد حركي بخثرة؛ الاحتشاء تنخر بانسداد حاد؛ والقصور واختلال النظم والموت المفاجئ تبعات.",
+      "tags": [
+        "pathology",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L7_f4",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c2",
+      "card_type": "basic",
+      "front_text": "List the non-modifiable, modifiable and marker risk factors for CAD (Table 8.1).",
+      "back_text": "Non-modifiable: age, male sex, family history of premature CAD. Modifiable: hyperlipidaemia, hypertension, diabetes mellitus, metabolic syndrome, cigarette smoking, obesity, sedentary lifestyle, heavy alcohol intake. Markers: elevated Lp(a), hyperhomocysteinaemia, elevated hsCRP.",
+      "explanation_ar": "غير معدلة: عمر، ذكورة، قصة عائلية مبكرة؛ معدلة: شحوم، ضغط، سكري، متلازمة أيضية، تدخين، بدانة، خمول، كحول؛ وواسمات: Lp(a)، هوموسيستين، hsCRP.",
+      "tags": [
+        "risk factors"
+      ]
+    },
+    {
+      "id": "L7_f5",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c2",
+      "card_type": "basic",
+      "front_text": "What determines myocardial oxygen demand and supply (Box 16.38)?",
+      "back_text": "Demand (cardiac work): heart rate, blood pressure, myocardial contractility, LV hypertrophy, valve disease. Supply (coronary blood flow, mainly in DIASTOLE): duration of diastole, coronary perfusion pressure (aortic diastolic minus coronary sinus/right atrial diastolic), coronary vasomotor tone, and oxygenation (haemoglobin, oxygen saturation).",
+      "explanation_ar": "الطلب: معدل، ضغط، تقلص، LVH، دسامات؛ والعرض (والتدفق بالانبساط أساساً): مدة الانبساط، ضغط التروية (انبساطي أبهري - انبساطي أيمن)، النقبض الوعائي التاجي، والخضاب والتشبع.",
+      "tags": [
+        "physiology",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L7_f6",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c3",
+      "card_type": "basic",
+      "front_text": "What should the physical examination in suspected angina search for?",
+      "back_text": "It is frequently unremarkable, but look for: valve disease (particularly aortic); risk factors (hypertension, diabetes, dyslipidaemia); signs of LV dysfunction; other manifestations of arterial disease (carotid bruits, peripheral arterial disease); and conditions that may exacerbate angina (anaemia, thyrotoxicosis).",
+      "explanation_ar": "غالباً طبيعي؛ ابحث: دسامات (خصوصاً الأبهري)، عوامل خطر، علامات خلل بطين أيسر، لغط سباتي/مرض شرياني محيطي، وفقر دم أو تسمق درقي يفاقم الذبحة.",
+      "tags": [
+        "examination"
+      ]
+    },
+    {
+      "id": "L7_f7",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c3",
+      "card_type": "basic",
+      "front_text": "Define coronary spasm/variant angina, Prinzmetal's angina, syndrome X and ANOCA.",
+      "back_text": "Variant angina: isolated vasospasm (<1% of cases) in angiographically normal coronaries; with transient ST elevation it is Prinzmetal's angina. Syndrome X: typical effort angina + objective ischaemia on stress testing + normal angiogram (many women; good prognosis; may respond to antianginals). ANOCA: angina with no obstructive CAD — one-third of patients, often microvascular disease.",
+      "explanation_ar": "التشنجي المعزول <1% بشرايين طبيعية؛ مع ارتفاع ST عابر = برنزميتال؛ متلازمة X: ذبحة نموذجية + نقص تروية موضوعي + تصوير طبيعي؛ وANOCA بلا انسداد إبكليلي (ثلث المرضى، وعائي دقيق).",
+      "tags": [
+        "syndromes",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L7_f8",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c3",
+      "card_type": "basic",
+      "front_text": "What distinguishes high-risk from low-risk stable angina (Box 16.41)?",
+      "back_text": "High risk: post-infarct angina, poor effort tolerance, ischaemia at low workload, left main or three-vessel disease, poor LV function. Low risk: predictable exertional angina, good effort tolerance, ischaemia only at high workload, one- or two-vessel disease, good LV function.",
+      "explanation_ar": "عالي: ذبحة بعد احتشاء، تحمل ضعيف، نقص تروية بحمل منخفض، جذع أيسر/ثلاثة أوعية، بطين ضعيف؛ ومنخفض: عكسها.",
+      "tags": [
+        "risk stratification"
+      ]
+    },
+    {
+      "id": "L7_f9",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "What can the baseline ECG show in CCS and what does a normal ECG/echo mean?",
+      "back_text": "ECG: ST-depression, T-wave inversion, pathological Q-waves, ventricular hypertrophy, bundle branch block. A NORMAL ECG does NOT exclude ischaemia; a NORMAL resting echocardiogram does NOT exclude CAD.",
+      "explanation_ar": "انحراف ST هابط، انقلاب T، Q مرضية، LVH، حصار؛ والطبيعي في كليهما لا ينفي نقص التروية/المرض.",
+      "is_vivid": true,
+      "tags": [
+        "investigations",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L7_f10",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "What are the methods to induce and to detect ischaemia in stress testing?",
+      "back_text": "Induce: exercise (most physiological; adequate if >= 85% of age-predicted maximum heart rate [220 - age]) or pharmacological (dobutamine, adenosine, dipyridamole) for those who cannot exercise. Detect: stress ECG, stress echocardiography, nuclear study (SPECT/PET), CMR.",
+      "explanation_ar": "التحريض: جهد (85% من 220-العمر) أو دوائي (دوبوتامين/أدينوزين/ديبيريدامول)؛ والكشف: جهد كهربائي، جهد صدوي، نووي (SPECT/PET)، ورنين.",
+      "tags": [
+        "stress testing"
+      ]
+    },
+    {
+      "id": "L7_f11",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "Which patients are excluded from stress ECG, and what are its sensitivity/specificity?",
+      "back_text": "Exclude LVH, LBBB, resting ST-depression and digoxin users. General population: sensitivity 68%, specificity 70% (lower in low-risk persons). Best use: intermediate-risk patient with atypical history, or low-risk patient with typical history; high-risk patients usually go straight to invasive testing.",
+      "explanation_ar": "يُستثنى LVH وLBBB وانحراف راحة والديجوكسين؛ حساسية 68% ونوعية 70%؛ أمثل الحالات: متوسط الخطورة بقصة لانموذجية أو منخفضة بقصة نموذجية.",
+      "tags": [
+        "stress ECG"
+      ]
+    },
+    {
+      "id": "L7_f12",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "How do stress echo and SPECT detect ischaemia, and what are their accuracies?",
+      "back_text": "Stress echo: new/worsening regional wall motion abnormality during stress; accuracy 80-90% for significant stenosis, superior to exercise ECG. SPECT: a perfusion defect present during stress but NOT at rest = reversible myocardial ischaemia.",
+      "explanation_ar": "صدى الجهد: اضطراب حركية جديد/أشد بدقة 80-90%؛ وSPECT: عيب تروية بالجهد يزول بالراحة = نقص تروية قابل للعكس.",
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L7_f13",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "card_type": "basic",
+      "front_text": "When is CT coronary angiography preferred over invasive catheterisation?",
+      "back_text": "CTCA is the non-invasive anatomical test best adopted for patients WITHOUT prior known CAD (Fig. 16.55 pathway after clinical assessment, bloods and ECG); for patients with KNOWN CAD, further stress imaging (echo, radionuclide or MR perfusion) rather than CTCA is recommended; invasive catheterisation for high-risk patients or when revascularisation is planned.",
+      "explanation_ar": "CTCA لغير معروفي المرض؛ ومعروفو المرض يكملون بتصوير جهد (صدى/نووي/رنين) لا CTCA؛ والقسطرة للخطورة العالية أو عند التخطيط لإعادة التروية.",
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L7_f14",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "Summarise Box 16.42 advice to patients with stable angina.",
+      "back_text": "Do not smoke; aim for ideal body weight; take regular exercise (up to but not beyond the point of chest discomfort — may promote collateral vessels); avoid severe unaccustomed exertion and vigorous exercise after a heavy meal or in very cold weather; take sublingual nitrate prophylactically before exertion liable to provoke angina.",
+      "explanation_ar": "لا تدخن، وزن مثالي، تمرين منتظم دون عتبة الألم (يعزز الجوانب)، تجنب المجهول الشديد والجهد بعد الطعام الثقيل وفي الجو البارد، ونترات تحت لسانية وقائياً قبل الجهد.",
+      "tags": [
+        "lifestyle"
+      ]
+    },
+    {
+      "id": "L7_f15",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "What are the first-line antihypertensives in CCD, and which diabetes drugs carry cardiovascular benefit?",
+      "back_text": "Hypertension (SBP >= 130 and/or DBP >= 80 mmHg): ACE inhibitors, ARBs or beta-blockers first line. Type 2 diabetes with CCD (HbA1c target < 7.0%): SGLT2 inhibitor or GLP-1 receptor agonist for proven cardiovascular benefit.",
+      "explanation_ar": "ضغط ≥130/80: ACEi/ARB أو بيتا حاصر أولاً؛ وسكري نوع2 مع CCD: SGLT2i أو GLP-1RA بفائدة قلبية مثبتة (HbA1c <7%).",
+      "tags": [
+        "risk factor control"
+      ]
+    },
+    {
+      "id": "L7_f16",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "What antiplatelet and statin therapy do all CCS patients receive?",
+      "back_text": "Aspirin 75 mg daily indefinitely (reduces MI risk); clopidogrel 75 mg daily is an equally effective alternative if aspirin is not tolerated. High-intensity statin at evidence-based doses regardless of baseline LDL; LDL-C goal < 1.4 mmol/L (55 mg/dL) plus >= 50% reduction from baseline; add ezetimibe then bempedoic acid if unmet.",
+      "explanation_ar": "أسبرين 75 ملغ دائماً (أو كلوبيدوغريل عند التعذر)؛ وستاتين عالي الشدة مهما كان LDL بهدف <1.4 ملمول/ل و≥50% خفضاً، مع إزتيميب ثم بيمبيدويك عند القصور.",
+      "tags": [
+        "secondary prevention",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L7_f17",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "How is a positive exercise ECG for ischaemia defined morphologically (Fig. 16.57 example)?",
+      "back_text": "Marked planar (horizontal) ST depression developing in the precordial leads during exercise (e.g., V5-V6 after 3 minutes of treadmill), often from a near-normal resting ECG — the example went on to critical three-vessel disease at angiography.",
+      "explanation_ar": "انحراف ST مستوٍ (أفقي) معلّم بالتوصيلات أمامية أثناء الجهد من رسم شبه طبيعي — المثال انتهى بثلاثة أوعية حرجة.",
+      "tags": [
+        "stress ECG"
+      ]
+    },
+    {
+      "id": "L7_f18",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "How do nitrates work and how is tolerance avoided?",
+      "back_text": "Direct action on vascular smooth muscle: venous and arteriolar dilatation — lower preload/afterload (less demand) plus coronary vasodilatation (more supply). Sublingual GTN 400 mcg spray or 500-800 mcg tablet relieves attacks in 2-3 minutes. Long-acting: GTN patch 5-10 mg/day, buccal 1-5 mg QID, isosorbide dinitrate 10-20 mg TID, mononitrate 20-60 mg OD/BD. Avoid tolerance with a 6-8-hour nitrate-free period (best at night; end-of-day dosing if nocturnal angina).",
+      "explanation_ar": "توسع وريدي وشريني: خفض الحملين + توسع تاجي؛ GTN تحت لساني يريح خلال 2-3 دقائق؛ ويفاد التحمّل بفترة خلو 6-8 ساعات ليلاً.",
+      "tags": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "L7_f19",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "Which beta-blockers are preferred in angina and why must they not be stopped abruptly?",
+      "back_text": "Once-daily cardioselective preparations: slow-release metoprolol 60-200 mg daily or bisoprolol 5-15 mg daily (less bronchospasm; no coronary beta2 blockade that might aggravate vasospasm). Abrupt withdrawal causes the beta-blocker withdrawal syndrome — dangerous arrhythmias, worsening angina or MI.",
+      "explanation_ar": "ميتوبرولول مستر 60-200 أو بيسوبرولول 5-15 (انتقائيان مرة يومياً)؛ والقطع المفاجئ يحدث متلازمة انسحاب (نظميات خطرة وذبحة أسوأ واحتشاء).",
+      "is_vivid": true,
+      "tags": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "L7_f20",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "Compare the calcium channel blockers used in angina (Box 16.44).",
+      "back_text": "Dihydropyridines (nifedipine 5-20 mg TID — marked tachycardia, combine with beta-blocker; nicardipine 20-40 mg TID — less myocardial depression; amlodipine 2.5-10 mg daily — ultra-long-acting) vs non-DHP (verapamil 40-80 mg TID — constipation, anti-arrhythmic; diltiazem 60-120 mg TID — similar). Verapamil/diltiazem can be monotherapy (SA/AV slowing); all need care in poor LV function.",
+      "explanation_ar": "DHP: نيفي (تسرع — مع بيتا)، نيكاردب، أملودب طويل؛ وغير DHP: فيراباميل (إمساك وخواص نظمية) ودلتيازيم — تصلح وحدها؛ والجميع بحذر مع بطين ضعيف.",
+      "tags": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "L7_f21",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "card_type": "basic",
+      "front_text": "What are the 'other' antianginal drugs and their mechanisms?",
+      "back_text": "Nicorandil 10-30 mg BD — potassium channel activator, arterial and venous vasodilator without nitrate tolerance. Ivabradine — If-channel antagonist of the sinus node, bradycardia without negative inotropy, safe in heart failure. Ranolazine — inhibits the late inward sodium current in coronary smooth muscle, reducing angina symptoms.",
+      "explanation_ar": "نيكوراندل (قناة بوتاسيوم، بلا تحمل نترات)؛ إيفابرادين (If جيبي، آمن في القصور)؛ رانولازين (تيار الصوديوم المتأخر).",
+      "tags": [
+        "pharmacology"
+      ]
+    },
+    {
+      "id": "L7_f22",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c6",
+      "card_type": "basic",
+      "front_text": "What are the indications for revascularisation in stable angina, and what determines prognosis?",
+      "back_text": "Indications: activity-limiting symptoms despite optimal medical therapy; active patients preferring PCI for quality of life; anatomy with proven survival benefit — left main stem, three-vessel disease, LV systolic dysfunction. Prognosis: number of diseased vessels + degree of LV dysfunction (single-vessel/good LV > 90% 5-year survival; severe LV dysfunction + 3VD < 30% without revascularisation); CCS III/IV nearly doubles 5-year mortality; symptoms are otherwise a poor guide (collaterals).",
+      "explanation_ar": "الاستطباب: أعراض مقيدة رغم العلاج الأمثل، تفضيل المريض، أو تشريح فائدة البقاء (LMS، ثلاثة أوعية، خلل البطين)؛ والإنذار بعدد الأوعية ووظيفة البطين.",
+      "tags": [
+        "revascularisation",
+        "high yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L7_q1",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c1",
+      "question_stem": "A 55-year-old man presents with an acute STEMI. Angiography shows a culprit lesion with only 45% residual stenosis after thrombus aspiration. How can a subcritical stenosis have caused an infarction?",
+      "options": [
+        "The measurement is wrong — infarctions require >70% stenosis",
+        "Plaque rupture or erosion with superimposed thrombosis rapidly converts a subcritical (often <50%) stenosis into total occlusion",
+        "All subcritical plaques occlude within a year",
+        "Microvascular disease alone explains it"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الأحداث الحادة تنشأ من تمزق/تآكل لويحات دون 50% غالباً مع خثرة فائقة تُحدث انسداداً سريعاً؛ لا يلزم تضيق حرج مزمن — بعكس الذبحة المستقرة التي تحتاج >70-80%.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q2",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c2",
+      "question_stem": "A 60-year-old with stable angina has tachycardia-controlled rate 110 bpm at rest. Which determinant of myocardial oxygen supply is being harmed by this tachycardia?",
+      "options": [
+        "Coronary vasomotor tone only",
+        "Duration of diastole — coronary blood flow occurs mainly in diastole, which tachycardia shortens",
+        "Haemoglobin concentration",
+        "Aortic systolic pressure"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التدفق التاجي يحدث بالانبساط أساساً؛ تسرّع القلب يقصّر الانبساط فيقل العرض بينما يرفع الطلب أيضاً — لذا حاصرات بيتا مزدوجة الفائدة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q3",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c3",
+      "question_stem": "A 52-year-old woman has exertional chest tightness, 2 mm horizontal ST depression on exercise ECG, yet angiography shows smooth normal coronary arteries. What is the diagnosis and its outlook?",
+      "options": [
+        "Syndrome X — good prognosis, may respond to antianginal therapy",
+        "Left main stem disease requiring CABG",
+        "NSTEMI requiring immediate PCI",
+        "Aortic stenosis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "متلازمة X: ذبحة نموذجية + نقص تروية موضوعي بالجهد + شرايين طبيعية؛ شائعة لدى النساء، مآل جيد، وقد تستجيب للمضادة للذبحة — وينظر أيضاً في آلية ANOCA الوعائية الدقيقة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q4",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c3",
+      "question_stem": "Which patient with chest pain is at highest risk on Box 16.41 stratification?",
+      "options": [
+        "Predictable exertional angina with good effort tolerance and single-vessel disease",
+        "Post-infarct angina with ischaemia at low workload and poor LV function",
+        "Ischaemia only at high workload with good LV function",
+        "Two-vessel disease with good effort tolerance"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ذبحة ما بعد الاحتشاء مع نقص تروية بحمل منخفض وخلل بطين = عالي الخطورة (مع جذع أيسر/ثلاثة أوعية)؛ والبقية منخفضة.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q5",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "question_stem": "A 58-year-old with LBBB and suspected angina needs ischaemia testing. Which modality is appropriate?",
+      "options": [
+        "Exercise ECG alone",
+        "Stress echocardiography or imaging-based stress (SPECT/CMR) — LBBB, LVH, resting ST depression and digoxin exclude exercise-ECG interpretation",
+        "No testing is possible",
+        "Daily 12-lead ECG"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "LBBB وLVH وانحراف الراحة والديجوكسين تُخرج من تفسير جهد التخطيط؛ البديل: صدى الجهد أو التصوير النووي/الرنين — وصدى الجهد أدق (80-90%).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q6",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c4",
+      "question_stem": "In SPECT myocardial perfusion imaging, what finding constitutes evidence of reversible ischaemia?",
+      "options": [
+        "A defect present at rest that persists at stress",
+        "A perfusion defect present during stress but NOT at rest",
+        "Global uniform uptake at stress",
+        "An infarct pattern of uptake"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عيب تروية بالجهد يزول بالراحة = نقص تروية عكوس؛ الثابت بالحالتين ندقة/احتشاء.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L7_q7",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "question_stem": "A 61-year-old with CCS, type 2 diabetes and BP 144/88 mmHg is on aspirin. What additional risk-factor pharmacotherapy does the lecture mandate?",
+      "options": [
+        "SGLT2 inhibitor or GLP-1 receptor agonist for the diabetes, ACE inhibitor/ARB or beta-blocker for the hypertension, and a high-intensity statin regardless of baseline LDL",
+        "Insulin only for the diabetes",
+        "No statin if LDL is normal",
+        "Diuretic as sole antihypertensive"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "سكري CCD: SGLT2i أو GLP-1RA؛ ضغط ≥130/80: ACEi/ARB أو بيتا؛ وستاتين عالي الشدة مهما كان LDL بهدف <1.4 ملمول/ل و≥50% خفضاً.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q8",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "question_stem": "A patient on isosorbide mononitrate 60 mg twice daily reports returning angina after 2 weeks. What is the likely explanation and fix?",
+      "options": [
+        "True allergy to nitrates — stop all vasodilators",
+        "Pharmacological nitrate tolerance — build in a 6-8-hour nitrate-free period (best at night; asymmetric end-of-day dosing if nocturnal angina)",
+        "Metabolic acidosis",
+        "The dose was too low — triple it immediately"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التحمل الدوائي للنترات هو التفسير الأشيع؛ الحل فترة خلو 6-8 ساعات (ليلية عادة)، أو إعطاء الجرعة الطويلة نهاية اليوم إن كانت الذبحة ليلية.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q9",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c5",
+      "question_stem": "A 68-year-old with angina has COPD, cannot tolerate beta-blockers, and has poor LV function. Which antianginal choices fit best?",
+      "options": [
+        "Nifedipine alone at high dose",
+        "Diltiazem cautiously only if LV function acceptable, otherwise consider ivabradine (if sinus rhythm), ranolazine or nicorandil — with short-acting GTN for relief",
+        "Propranolol",
+        "Verapamil with a beta-blocker"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "غير DHP خيار عدم تحمل البيتا لكنه مثبط تقلص (حذر مع البطين الضعيف)؛ والبدائل الآمنة: إيفابرادين (جيبي، آمن قصورياً)، رانولازين، نيكوراندل، مع GTN قصير للنجدة؛ الجمع بيتا+فيراباميل ممنوع.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L7_q10",
+      "lecture_id": "L7_cad_part1",
+      "concept_id": "L7_c6",
+      "question_stem": "Angiography in a symptomatic patient shows distal left main stenosis of 70% with LV EF 40%. What is the indication for revascularisation here?",
+      "options": [
+        "Patient preference only — no survival benefit exists",
+        "Anatomy with a proven survival benefit (left main stem disease with LV systolic dysfunction) — revascularisation is indicated",
+        "No indication unless symptoms fail three drugs",
+        "PCI is contraindicated in left main disease"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الجذع الأيسر وثلاثة الأوعية وخلل البطين = تشريح فائدة البقاء؛ إعادة التروية مستطبَة لا تنتظر فشل الأدوية (مع الأعراض المقيدة أو التفضيل كدوافع أخرى).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L7_case1",
+      "lecture_id": "L7_cad_part1",
+      "title": "New-Onset Exertional Chest Pain: The Stable Angina Pathway",
+      "scenario": "A 57-year-old schoolteacher presents to the outpatient clinic with 3 months of central chest tightness on climbing two flights of stairs, reliably relieved by 2-3 minutes of rest. This case walks the full lecture pathway from typical-angina recognition through baseline tests, stress testing strategy, and the evidence-based preventive package — the essence of chronic coronary syndrome assessment.",
+      "vignette": {
+        "age": 57,
+        "sex": "male",
+        "chief_complaint": "Exertional central chest tightness for 3 months",
+        "history": "Pain is central, 'tight', radiates to the left jaw, provoked by two flights of stairs or walking against a cold wind, relieved by rest in 2-3 minutes; never at rest; no syncope. Smoker 20 pack-years; father had MI at 55; no diabetes known. On no medications.",
+        "vitals": {
+          "bp": "146/88 mmHg",
+          "hr": "72 bpm regular",
+          "rr": "16/min",
+          "temp": "36.5 C",
+          "spo2": "98% room air"
+        },
+        "exam": "Comfortable; BMI 29. Right carotid bruit; no radiofemoral delay; heart sounds normal with no murmur; chest clear; no oedema; palpable dorsalis pedis pulses both sides.",
+        "labs": [
+          {
+            "name": "HbA1c",
+            "value": "6.3% (ref 4.0-5.6%)",
+            "flag": "high"
+          },
+          {
+            "name": "Fasting glucose",
+            "value": "6.8 mmol/L (ref 3.9-5.5)",
+            "flag": "high"
+          },
+          {
+            "name": "Total cholesterol",
+            "value": "6.4 mmol/L (ref <5.0)",
+            "flag": "high"
+          },
+          {
+            "name": "LDL cholesterol",
+            "value": "4.3 mmol/L (ref <3.0)",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "94 micromol/L (ref 60-110)",
+            "flag": "normal"
+          },
+          {
+            "name": "Hb",
+            "value": "14.2 g/dL (ref 13-17)",
+            "flag": "normal"
+          },
+          {
+            "name": "TSH",
+            "value": "1.8 mIU/L (ref 0.4-4.0)",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Resting ECG: sinus rhythm, normal (no ST/T changes, no LVH, no Q waves). Resting echocardiography: EF 58%, no regional wall-motion abnormality, mild LVH, no significant valve disease. Exercise ECG: achieved 92% of age-predicted maximum heart rate (adequate test); 1.5-2 mm horizontal ST depression in V5-V6 at stage 2 with chest tightness — POSITIVE test with good effort tolerance."
+      },
+      "steps": [
+        {
+          "id": "L7_case1_s1",
+          "prompt": "Is this typical angina, and why do the normal ECG and echo not reassure?",
+          "options": [
+            "Atypical pain — no further testing needed",
+            "Typical angina (exertional substernal tightness, relieved by rest); a normal ECG does NOT exclude ischaemia and a normal resting echo does NOT exclude CAD",
+            "Definitely non-cardiac because the exam is normal",
+            "Unstable angina requiring admission"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الثلاثية النموذجية (خلف القص بالجهد، يزول بالراحة) = ذبحة نموذجية؛ والتخطيط والصدى السكونيان الطبيعيان لا ينفيان — بل يوجّهان للجهد، مع البحث عن مفاقمات (فقر دم، درق) وعلامات دسامية/شريانية (لغط سباتي هنا).",
+          "xp": 10,
+          "hints": [
+            "اجمع خصائص الألم الثلاث.",
+            "ماذا تعني سلبية الفحوص السكونية؟",
+            "ماذا يكشف اللغط السباتي؟"
+          ]
+        },
+        {
+          "id": "L7_case1_s2",
+          "prompt": "Was exercise ECG the right first stress test here, and why was the test 'adequate'?",
+          "options": [
+            "No — he should have gone straight to invasive angiography",
+            "Yes — intermediate-risk patient, interpretable baseline ECG; the test is adequate because >= 85% of the age-predicted maximum heart rate (220 - age) was achieved; functional capacity carries prognostic value",
+            "No — pharmacological stress was mandatory above age 55",
+            "Exercise ECG is only for asymptomatic screening"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "خطر متوسط + أساس قابل للتأويل = جهد كهربائي مناسب؛ وبلوغ ≥85% من (220-57) يجعله كافياً؛ الانحراف الأفقي القمي في المرحلة 2 إيجابي، وسعة الجهد ذات قيمة إنذارية.",
+          "xp": 10,
+          "hints": [
+            "معيار الكفاية بالنبض؟",
+            "لمن يكون جهد التخطيط أمثل؟"
+          ]
+        },
+        {
+          "id": "L7_case1_s3",
+          "prompt": "Given a positive test with good effort tolerance and no high-risk features, what is the recommended next anatomical step?",
+          "options": [
+            "CT coronary angiography — the pathway test for patients WITHOUT known CAD",
+            "Immediate CABG",
+            "Repeat exercise ECG weekly",
+            "Discharge with GTN only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "لمريض غير معروف المرض وفق مخطط 16.55: بعد التقييم والتحاليل والتخطيط والجهد يُطلب CTCA لتشريح الشرايين؛ والقسطرة تُحفظ للخطورة العالية أو التخطيط لإعادة التروية.",
+          "xp": 10,
+          "hints": [
+            "أول اختبار تشريحي لغير المعروفين؟",
+            "متى القسطرة؟"
+          ]
+        },
+        {
+          "id": "L7_case1_s4",
+          "prompt": "Regardless of the CTCA result, which preventive drug package starts today?",
+          "options": [
+            "Aspirin 75 mg indefinitely, high-intensity statin (goal LDL-C < 1.4 mmol/L and >= 50% reduction), antihypertensive (ACE inhibitor/ARB or beta-blocker — BP >= 130/80), plus sublingual GTN for attacks/prophylaxis; diabetes drugs with CV benefit if T2DM confirmed",
+            "GTN as needed only",
+            "Clopidogrel plus furosemide",
+            "No drugs until angiography"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحزمة: أسبرين 75 دائماً، ستاتين عالي الشدة بهدف <1.4 و≥50%، علاج الضغط (≥130/80: ACEi/ARB أو بيتا)، GTN قصير للنجدة والوقاية قبل الجهد، وSGLT2i/GLP-1RA عند تثبيت السكري — مع نصائح 16.42.",
+          "xp": 15,
+          "hints": [
+            "ثلاث أدوية لكل مريض CCS؟",
+            "هدف LDL؟",
+            "ماذا قبل الجهد المتوقع؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "الحالة تطبق مسار الذبحة المستقرة كاملاً: ألم نموذجي ثلاثي الخصائص مع عوامل خطر (تدخين، قصة عائلية، ما قبل السكري، LDL 4.3، ضغط ≥130/80) ولغط سباتي (مرض شرياني منتشر). التخطيط والصدى السكونيان طبيعيان — وهذا لا ينفي؛ فجهد التخطيط (بلوغ 92% من 220-العمر = كافٍ) أظهر انحرافاً أفقياً قمياً مع الألم. الخطوة التشريحية CTCA لغير معروف المرض، وتُحفظ القسطرة للخطورة العالية/إعادة التروية. العلاج يبدأ فوراً: أسبرين، ستاتين عالي الشدة (هدف <1.4 و≥50%)، علاج الضغط، GTN قصير مع النصائح الوقائية، وSGLT2i/GLP-1RA عند تأكيد السكري. الدروس: 1) سلبية السكون لا تعني شيئاً في الذبحة؛ 2) كفاية اختبار الجهد تعتمد على 85% من النبض الأقصى المتوقع؛ 3) CTCA لغير المعروفين والقسطرة للخطورة العالية؛ 4) الوقاية الثانوية لا تنتظر نتيجة التشريح.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L7_case2",
+      "lecture_id": "L7_cad_part1",
+      "title": "Symptomatic Three-Vessel Disease: The Revascularisation Decision",
+      "scenario": "A 66-year-old former security guard remains limited by angina (CCS III) despite maximal tolerated medical therapy. His CT coronary angiogram shows extensive three-vessel disease with reduced LV function. The multidisciplinary meeting must apply the lecture's revascularisation indications and prognosis data to choose between CABG, PCI and continued medical therapy.",
+      "vignette": {
+        "age": 66,
+        "sex": "male",
+        "chief_complaint": "Activity-limiting angina despite optimal medical therapy (CCS III)",
+        "history": "Angina for 4 years; now chest tightness after 50 metres. On aspirin 75 mg, atorvastatin 40 mg, bisoprolol 10 mg, amlodipine 10 mg, isosorbide mononitrate 60 mg BD (with nitrate-free nights) and GTN prn. Prior NSTEMI 3 years ago (PCI to RCA). Diabetes on metformin; ex-smoker.",
+        "vitals": {
+          "bp": "132/78 mmHg",
+          "hr": "58 bpm regular",
+          "rr": "16/min",
+          "temp": "36.4 C",
+          "spo2": "97% room air"
+        },
+        "exam": "Trace ankle oedema; apex displaced 2 cm laterally; S4 gallop; no murmurs; chest clear; carotids equal without bruits; foot pulses present.",
+        "labs": [
+          {
+            "name": "LDL cholesterol",
+            "value": "2.9 mmol/L (goal <1.4)",
+            "flag": "high"
+          },
+          {
+            "name": "HbA1c",
+            "value": "7.6% (goal <7.0%)",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "112 micromol/L (ref 60-110)",
+            "flag": "high"
+          },
+          {
+            "name": "NT-proBNP",
+            "value": "780 pg/mL (ref <125)",
+            "flag": "high"
+          },
+          {
+            "name": "Hb",
+            "value": "12.4 g/dL (ref 13-17)",
+            "flag": "low"
+          }
+        ],
+        "imaging": "CT coronary angiography: heavy calcification; proximal 80% LAD, 70% circumflex, 90% ostial RCA (chronic total occlusion with collateral filling); distal left main 50%. Invasive angiography with ventriculography: EF 42% with anterior hypokinesis. FFR/CABG heart-team discussion pending."
+      },
+      "steps": [
+        {
+          "id": "L7_case2_s1",
+          "prompt": "Which lecture indication(s) for revascularisation does this patient satisfy?",
+          "options": [
+            "None — he is already on two antianginals",
+            "All three: activity-limiting symptoms despite optimal medical therapy; anatomy with proven survival benefit (extensive three-vessel disease with LV systolic dysfunction); (patient preference pending)",
+            "Patient preference only",
+            "Urgent indication for fibrinolysis"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "أعراض مقيدة (CCS III) رغم العلاج الأمثل + تشريح فائدة البقاء (ثلاثة أوعية مع EF 42%)؛ وهذان استطبابان مستقلان يكفيان منفردَين، والثالث تفضيل المريض.",
+          "xp": 10,
+          "hints": [
+            "راجع الاستطبابات الثلاثة.",
+            "EF 42% وثلاثة أوعية تصنعان أي استطباب؟"
+          ]
+        },
+        {
+          "id": "L7_case2_s2",
+          "prompt": "What prognosis data justify offering revascularisation rather than continuing medical therapy alone?",
+          "options": [
+            "Symptoms always predict prognosis accurately",
+            "Severe LV dysfunction with extensive three-vessel disease carries a 5-year survival < 30% unless revascularised (vs > 90% for single-vessel disease with good LV); CCS III/IV nearly doubles 5-year mortality",
+            "Revascularisation cures diabetes",
+            "Medical therapy is always superior in diabetics"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الأوعية الثلاثة مع خلل البطين الشديد تنجو <30% خلال 5 سنوات دون إعادة تروية مقابل >90% لوعاء واحد بوظيفة جيدة؛ والذبحة الشديدة (III/IV) تضاعف الوفاة تقريباً — والأعراض بحد ذاتها دليل إنذار فقير (الجوانب تحسّن الأعراض دون الأوعية).",
+          "xp": 10,
+          "hints": [
+            "أرقام البقاء للأوعية والوظيفة؟",
+            "أثر CCS III/IV؟"
+          ]
+        },
+        {
+          "id": "L7_case2_s3",
+          "prompt": "Which antianginal intensification options remain per the 2024 ESC stepwise recommendations before/alongside revascularisation?",
+          "options": [
+            "None — beta-blocker and CCB are already maximal",
+            "Combine beta-blocker + DHP-CCB if not already combined (he is), and add long-acting nitrate or ranolazine as add-on (IIa B) — nicorandil, ivabradine or ranolazine as alternatives",
+            "Stop all antianginals before surgery",
+            "Add verapamil to bisoprolol"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "هو أصلاً على بيتا+DHP-CCB ونترات طويلة؛ البدائل الإضافية: رانولازين أو نيكوراندل أو إيفابرادين (IIa B)؛ والجمع بيتا+فيراباميل/دلتيازيم ممنوع (بطء شديد وتثبيط تقلص).",
+          "xp": 10,
+          "hints": [
+            "ما الإضافة بعد بيتا+CCB؟",
+            "أي مجموعات تُمنع؟"
+          ]
+        },
+        {
+          "id": "L7_case2_s4",
+          "prompt": "His LDL is 2.9 mmol/L on atorvastatin 40 mg. What does the 2024 lipid ladder require?",
+          "options": [
+            "Accept 2.9 mmol/L — he is on a statin",
+            "Uptitrate to high-intensity atorvastatin 80 mg (or rosuvastatin 20-40 mg) toward LDL-C < 1.4 mmol/L with >= 50% reduction; add ezetimibe if unmet; then bempedoic acid; also intensify diabetes therapy with an SGLT2 inhibitor or GLP-1 RA",
+            "Stop the statin because of diabetes",
+            "Switch to a fibrate only"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الهدف <1.4 ملمول/ل مع خفض ≥50%: تصعيد الأتورفاستاتين إلى 80 (أو روزوفاستاتين 20-40) ثم إزتيميب ثم بيمبيدويك عند القصور؛ وإضافة SGLT2i أو GLP-1RA للسكري (HbA1c 7.6% > الهدف 7%).",
+          "xp": 10,
+          "hints": [
+            "سلم الدهون؟",
+            "ما دواء السكري المفيد قلبياً؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة قرار إعادة التروية في المتلازمة المزمنة: CCS III رغم (أسبرين + ستاتين + بيتا + DHP-CCB + نترات طويلة بفترة خلو) مع ثلاثة أوعية (LAD 80%، Cx 70%، RCA 90% مُسدّ كلياً مزمن) وEF 42% وذرع أيسر 50%. الاستطبابات مكتملة: أعراض مقيدة رغم OMT + تشريح فائدة البقاء (3VD + خلل البطين)؛ وبيانات الإنذار (<30% بقاء 5 سنوات بلا إعادة تروية مقابل >90% لوعاء واحد بوظيفة جيدة) تدعم التدخل، مع مضاعفة الذبحة III/IV للوفاة. وفق 2024: تُكثف الأدوية المضادة للذبحة (رانولازين/نيكوراندل/إيفابرادين) وتُشدّد الدهون (هدف <1.4 و≥50% بإزتيميب ثم بيمبيدويك) والسكري (SGLT2i/GLP-1RA). الدروس: 1) استطبابا الأعراض والتشريح مستقلان؛ 2) الأعراض مؤشر إنذار فقير (الجوانب) لكن شدتها (III/IV) تنبئية؛ 3) حظر جمع بيتا مع فيراباميل/دلتيازيم؛ 4) سلم الدهون المتدرج لا يتوقف عند الستاتين وحده.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

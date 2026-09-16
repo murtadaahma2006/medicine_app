@@ -1,21 +1,23 @@
-﻿import 'dart:io';
+import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/backup/backup_service.dart';
+import '../../../../core/utils/responsive_layout.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 
 /// شاشة «نسخة احتياطية / استعادة».
 ///
-/// - **تصدير**: كل تقدم المستخدم إلى JSON في مجلد المستندات + زر
-///   مشاركة الملف عبر تطبيقات الجهاز (share_plus).
+/// - **تصدير**: كل تقدم المستخدم إلى ملف .db (قاعدة شاملة) في مجلد
+///   المستندات + زر مشاركة الملف عبر تطبيقات الجهاز (share_plus).
 /// - **استعادة**: اختيار ملف (file_picker) → تحذير صريح أن الاستيراد
-///   **يستبدل التقدم الحالي** → تنفيذ داخل معاملة واحدة.
+///   **يستبدل التقدم الحالي** → استبدال فيزيائي للقاعدة + إعادة تشغيل التطبيق.
 ///
 /// ملاحظة عقدية: فشل أي عملية يعرض رسالة مهذبة فقط (لا انهيار).
 /// file_picker حزمة جديدة تُدار عند أول استخدام — غيابها على منصة
@@ -49,7 +51,8 @@ class _BackupPageState extends State<BackupPage> {
       if (result.ok) {
         final bool? share = await showDialog<bool>(
           context: context,
-          builder: (BuildContext ctx) => AlertDialog(
+          // تجاوب: على التابلت يُقيد عرض الحوار (موبايل: بلا أثر).
+          builder: (BuildContext ctx) => ResponsiveDialog(
             title: const Text('تم إنشاء النسخة الاحتياطية'),
             content: Text(
               'حُفظ الملف بنجاح (${result.itemCount} عنصراً).\n'
@@ -70,7 +73,7 @@ class _BackupPageState extends State<BackupPage> {
         if (share == true && result.filePath != null && mounted) {
           await Share.shareXFiles(
             <XFile>[XFile(result.filePath!)],
-            text: 'نسخة احتياطية — منصة الطب الباطني',
+            text: 'نسخة احتياطية — MedOS',
           );
         }
       } else {
@@ -99,21 +102,33 @@ class _BackupPageState extends State<BackupPage> {
     if (_busy) return;
     setState(() => _busy = true);
     try {
+      // تم تغيير type إلى FileType.any لحل مشكلة iOS التي تمنع اختيار ملفات غير قياسية
       final FilePickerResult? picked = await FilePicker.platform.pickFiles(
-        type: FileType.custom,
-        allowedExtensions: <String>['json'],
+        type: FileType.any,
       );
       if (picked == null || picked.files.single.path == null) {
         if (mounted) setState(() => _busy = false);
         return;
       }
+      
       final String path = picked.files.single.path!;
+      
+      // تحقق برمجي يدوي لتجنب مشاكل FilePicker على iOS
+      final String extension = path.split('.').last.toLowerCase();
+      if (extension != 'db' && extension != 'json') {
+        if (mounted) {
+          _toast('عذراً، الرجاء اختيار ملف بصيغة .db أو .json فقط');
+          setState(() => _busy = false);
+        }
+        return;
+      }
 
       if (!mounted) return;
       // تحذير الاستبدال الصريح (قرار المواصفة — تأكيد المستخدم).
       final bool? confirmed = await showDialog<bool>(
         context: context,
-        builder: (BuildContext ctx) => AlertDialog(
+        // تجاوب: على التابلت يُقيد عرض الحوار (موبايل: بلا أثر).
+        builder: (BuildContext ctx) => ResponsiveDialog(
           title: const Text('تحذير: استبدال التقدم'),
           content: const Text(
             'الاستعادة **تحذف تقدمك الحالي** (سجل الإجابات، البطاقات، '
@@ -167,6 +182,13 @@ class _BackupPageState extends State<BackupPage> {
 
       if (!mounted) return;
       _toast(result.messageAr);
+      
+      // فور الانتهاء والنجاح، نرسل المستخدم لشاشة البداية لإعادة بناء بيئة التطبيق
+      if (result.ok) {
+        // تأخير بسيط ليقرأ المستخدم رسالة النجاح
+        await Future<void>.delayed(const Duration(milliseconds: 1500));
+        if (mounted) context.go('/');
+      }
     } catch (_) {
       _toast('تعذّر فتح منتقي الملفات — تحقق من الأذونات.');
     }

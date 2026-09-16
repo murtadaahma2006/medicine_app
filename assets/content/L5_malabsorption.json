@@ -1,0 +1,1225 @@
+{
+"schema_version": "2.0.0",
+"lecture": {
+"id": "L5_malabsorption",
+"title": "Malabsorption Syndrome",
+"specialty": "internal_medicine",
+"module": "gastroenterology",
+"system": "gastrointestinal",
+"source": {"file_name": "L5 malabsorption.pdf", "page_count": 40},
+"order_index": 4,
+"tags": ["malabsorption", "steatorrhea", "celiac disease", "D-xylose test", "Schilling test", "fecal fat", "lactose intolerance", "Whipple disease", "tropical sprue", "bacterial overgrowth"],
+"golden_tip": [
+"Steatorrhea = pale, bulky, malodorous stools that FLOAT on the toilet water and are difficult to flush, with floating oil droplets — the hallmark of fat malabsorption. Confirmation: 72-hour stool fat; abnormal > 6 g/day, steatorrhea > 20 g/day.",
+"Celiac serology must always be paired with a serum IgA level: IgA endomysial and IgA tTG antibodies can be falsely negative in IgA deficiency — this is exactly why the lecture's algorithm obtains the serum IgA level together with the antibodies.",
+"Never order a casual gluten rechallenge: 10 g gluten/day for 4-6 weeks can precipitate 'gliadin shock' — fulminant diarrhea with dehydration and acidosis. Untreated celiac also raises small-bowel adenocarcinoma, oropharyngeal SCC and non-Hodgkin lymphoma risk."
+]
+},
+"concepts": [
+{
+"id": "L5_malabsorption_c1",
+"lecture_id": "L5_malabsorption",
+"title": "Malabsorption Syndrome — Learning Outcomes and Core Definitions",
+"summary_ar": "تفتتح المحاضرة بتحديد مخرجات التعلم الخمسة ثم التعريفات الأساسية: سوء الهضم Maldigestion وهو اضطراب تفكيك الطعام داخل لمعة الأمعاء، مقابل سوء الامتصاص Malabsorption وهو اضطراب عبور المغذيات عبر المخاطية المعوية إلى الدم واللمف. وتشمل المحاضرة العوامل والأعراض والتحريات وأمثلة متلازمات سوء الامتصاص.",
+"difficulty": "core",
+"order_index": 0,
+"sections": [
+{
+"heading": "Learning Outcomes of the Lecture",
+"body_text": "The opening slide lists five explicit learning outcomes that map the whole lecture:\n- **LO1: Definition of malabsorption**\n- **LO2: Risk factors of malabsorption**\n- **LO3: Clinical presentation and pathophysiology of each symptom**\n- **LO4: Investigation of malabsorption**\n- **LO5: Examples of malabsorption syndrome**\nThe deck then delivers these outcomes in order: definitions and risk factors first, then a mechanism-based table of clinical manifestations, then detailed symptom discussions (steatorrhea, weight loss, flatus, edema, anemia, bone disease), then the investigations (stool fat studies, Schilling test, D-xylose test, barium studies, endoscopy), and finally worked examples of specific syndromes — celiac disease, lactose intolerance, Whipple disease, and small-bowel bacterial overgrowth (closing with the question of tropical sprue).",
+"key_points": [
+"LO1-LO5: definition, risk factors, clinical presentation with pathophysiology, investigation, and examples of malabsorption syndrome.",
+"The lecture title is Malabsorption Syndrome, and it is part of the gastroenterology module."
+]
+},
+{
+"heading": "Maldigestion vs Malabsorption — Core Definitions",
+"body_text": "The definition slide splits the problem into two mechanisms, illustrated with an anatomical drawing of the gastrointestinal tract (oesophagus, stomach highlighted below the diaphragm, and the loops of small intestine):\n- **Maldigestion:** impaired **intraluminal breakdown** of food — defective digestion of fats, proteins and carbohydrates within the intestinal lumen before the products ever reach the mucosa.\n- **Malabsorption:** impaired **uptake and transport of digested nutrients across the small-intestinal mucosa** into the blood and lymph.\n(The slide presents the two terms side-by-side with the anatomical illustration; the wording above completes them with the standard textbook distinction — standard reference.) The lecture title, **Malabsorption Syndrome**, is used as the collective term for this group of disorders, whose net result is nutrient loss in the stool with weight loss, diarrhea and specific deficiency states.",
+"key_points": [
+"Maldigestion = failure of intraluminal digestion (the breakdown step).",
+"Malabsorption = failure of mucosal uptake/transport (the absorption step).",
+"Malabsorption syndrome = the collective clinical term used throughout this lecture."
+],
+"check": {
+"prompt": "A patient with pancreatic enzyme deficiency cannot break down fats within the intestinal lumen. Which term best describes this defect?",
+"options": ["Malabsorption", "Maldigestion", "Protein-losing enteropathy", "Tropical sprue"],
+"correct_index": 1,
+"explanation_ar": "عجز إنزيمات البنكرياس يعني أن الطعام لا يُفكَّك داخل لمعة الأمعاء، وهذا يُسمى سوء الهضم Maldigestion، بينما سوء الامتصاص Malabsorption يعني خلل العبور عبر المخاطية المعوية رغم هضم سليم."
+}
+}
+],
+"key_terms": [
+{"term": "Malabsorption syndrome", "definition_ar": "متلازمة سوء الامتصاص: مجموعة اضطرابات تُؤدي إلى فشل هضم الطعام أو امتصاصه بشكل طبيعي مع فقد المغذيات في البراز."},
+{"term": "Maldigestion", "definition_ar": "سوء الهضم: خلل في تفكيك الطعام داخل لمعة الأمعاء (مثل نقص إنزيمات البنكرياس أو الأملاح الصفراوية)."},
+{"term": "Malabsorption", "definition_ar": "سوء الامتصاص: خلل في التقاط المغذيات المهضومة وعبورها عبر مخاطية الأمعاء الدقيقة إلى الدم واللمف."}
+]
+},
+{
+"id": "L5_malabsorption_c2",
+"lecture_id": "L5_malabsorption",
+"title": "Risk Factors for Malabsorption",
+"summary_ar": "عوامل الخطورة لسوء الامتصاص كما وردت في المحاضرة: أمراض تصيب الأمعاء، استخدام المسهلات، الإفراط في المضادات الحيوية، جراحة الأمعاء، الإفراط في الكحول، والسفر إلى بلدان ينتشر فيها الطفيليات المعوية.",
+"difficulty": "core",
+"order_index": 1,
+"sections": [
+{
+"heading": "Risk Factors for Malabsorption",
+"body_text": "The risk-factor slide is drawn as a flowchart that reads: **'Factors that may increase the chance of having malabsorption include:'** followed by six listed factors:\n- **Medical conditions affecting the intestine**\n- **Use of laxatives**\n- **Excessive use of antibiotics**\n- **Intestinal surgery**\n- **Excessive use of alcohol**\n- **Travel to countries with high incidence of intestinal parasites**\nThe slide illustrates the point with a photograph of scattered white pills/capsules labeled **'Laxative Abuse'** — a visual reminder that chronic laxative overuse is one of the recognized risk factors. For the exam, be able to reproduce all six factors exactly as listed.",
+"key_points": [
+"Six risk factors: intestinal disease, laxatives, excessive antibiotics, intestinal surgery, excessive alcohol, travel to high-parasite-incidence countries.",
+"The slide specifically illustrates laxative abuse."
+]
+}
+]
+},
+{
+"id": "L5_malabsorption_c3",
+"lecture_id": "L5_malabsorption",
+"title": "Pathophysiology of the Clinical Manifestations of Malabsorption",
+"summary_ar": "جدول المحاضرة يربط كل عرض بآليته: فقد الوزن بفقد الشهية وسوء امتصاص المغذيات، والإسهال باضطراب امتصاص الماء والشوارد وإفراز القولون الثانوي للأحماض الصفراوية ثنائية الهيدروكسيل والأحماض الدهنية غير الممتصة، والنفاخ بتخمر الكربوهيدرات غير الممتصة جرثومياً، مع آليات فقر الدم والنزف واعتلال الأعصاب والجلد والعظام والوذمة.",
+"difficulty": "core",
+"order_index": 2,
+"sections": [
+{
+"heading": "Symptom-Mechanism Table — Part 1 (Nutritional and Gastrointestinal)",
+"body_text": "The lecture builds a two-part table linking every **Symptom or Sign** to its **Mechanism**. Part 1:\n- **Weight loss / malnutrition** | Anorexia, malabsorption of nutrients\n- **Diarrhea** | Impaired absorption or secretion of water and electrolytes; colonic fluid secretion secondary to unabsorbed dihydroxy bile acids and fatty acids\n- **Flatus** | Bacterial fermentation of unabsorbed carbohydrate\n- **Glossitis, cheilosis, stomatitis** | Deficiency of iron, vitamin B12, folate, and vitamin A\n- **Abdominal pain** | Bowel distention or inflammation, pancreatitis\n- **Bone pain** | Calcium, vitamin D malabsorption, protein deficiency, osteoporosis\n- **Tetany, paresthesia** | Calcium and magnesium malabsorption\n- **Weakness** | Anemia, electrolyte depletion (particularly K+)\nHigh-yield mechanism: the diarrhea of malabsorption is not only osmotic — unabsorbed **dihydroxy bile acids and fatty acids** themselves drive **colonic fluid secretion**.",
+"key_points": [
+"Diarrhea mechanism: impaired absorption/secretion of water and electrolytes PLUS colonic fluid secretion driven by unabsorbed dihydroxy bile acids and fatty acids.",
+"Flatus = bacterial fermentation of unabsorbed carbohydrate.",
+"Glossitis/cheilosis/stomatitis = deficiency of iron, B12, folate, vitamin A.",
+"Tetany and paresthesia = calcium and magnesium malabsorption; weakness = anemia and K+ depletion."
+],
+"check": {
+"prompt": "Which mechanism directly contributes to the diarrhea of malabsorption syndromes?",
+"options": ["Colonic fluid secretion stimulated by unabsorbed dihydroxy bile acids and fatty acids", "Vitamin K malabsorption causing hypoprothrombinemia", "Bacterial fermentation of unabsorbed carbohydrate", "Protein depletion causing secondary hypopituitarism"],
+"correct_index": 0,
+"explanation_ar": "الإسهال في سوء الامتصاص ناتج عن اضطراب امتصاص وإفراز الماء والشوارد إضافة إلى إفراز القولون للسوائل بفعل الأحماض الصفراوية ثنائية الهيدروكسيل والأحماض الدهنية غير الممتصة. أما تخمر الكربوهيدرات فيسبب النفاخ وليس الإسهال المائي، ونقص فيتامين K يسبب النزف، ونقص البروتين يسبب الوذمة واضطراب الطمث."
+}
+},
+{
+"heading": "Symptom-Mechanism Table — Part 2 (Systemic, Hematologic, Dermatologic and Endocrine)",
+"body_text": "The second half of the mechanism table:\n- **Azotemia, hypotension** | Fluid and electrolyte depletion\n- **Amenorrhea, decreased libido** | Protein depletion, decreased calories, secondary hypopituitarism\n- **Anemia** | Impaired absorption of iron, folate, vitamin B12\n- **Bleeding** | Vitamin K malabsorption, hypoprothrombinemia\n- **Night blindness / xerophthalmia** | Vitamin A malabsorption\n- **Peripheral neuropathy** | Vitamin B12 and thiamine deficiency\n- **Dermatitis** | Deficiency of vitamin A, zinc, and essential fatty acid\nEach row is a favorite exam stem: bleeding points to **vitamin K malabsorption with hypoprothrombinemia**, night blindness to **vitamin A**, peripheral neuropathy to **B12 and thiamine (B1)**, and dermatitis to **vitamin A, zinc and essential fatty acid** deficiency.",
+"key_points": [
+"Amenorrhea/decreased libido: protein depletion, decreased calories, secondary hypopituitarism.",
+"Bleeding = vitamin K malabsorption with hypoprothrombinemia.",
+"Night blindness/xerophthalmia = vitamin A; peripheral neuropathy = B12 and thiamine; dermatitis = vitamin A, zinc, essential fatty acids."
+]
+},
+{
+"heading": "Anemia and Malabsorption — Microcytic versus Macrocytic",
+"body_text": "Although anemia appears in the table (impaired absorption of iron, folate, vitamin B12), the lecture dedicates a separate slide to its two patterns:\n- Anemia from malabsorption can be either **microcytic (iron deficiency)** or **macrocytic (vitamin B12 deficiency)**.\n- **Iron deficiency anemia often is a manifestation of celiac disease** (proximal small-bowel mucosal damage impairs iron absorption).\n- **Ileal involvement in Crohn disease or ileal resection can cause megaloblastic anemia due to vitamin B12 deficiency** (the terminal ileum is where the B12-intrinsic factor complex is absorbed).",
+"key_points": [
+"Microcytic anemia in malabsorption = iron deficiency, classically celiac disease.",
+"Macrocytic (megaloblastic) anemia = B12 deficiency from ileal Crohn disease or ileal resection.",
+"Folate deficiency is the other classic macrocytic cause listed in the mechanism table."
+]
+}
+],
+"key_terms": [
+{"term": "Glossitis", "definition_ar": "التهاب اللسان: احمرار وألم في اللسان ينتج عن نقص الحديد وفيتامينات B12 وحمض الفوليك وفيتامين A."},
+{"term": "Cheilosis", "definition_ar": "التهاب وزوايا الفم المتشققة (الكيلوز) بسبب نقص فيتامينات B والحديد."},
+{"term": "Stomatitis", "definition_ar": "التهاب بطانة الفم مع تقرحات مؤلمة مرتبط بنقص الفيتامينات والمعادن."},
+{"term": "Tetany", "definition_ar": "التكزز: تشنج عضلي مؤلم بسبب نقص الكالسيوم والمغنيسيوم الناتج عن سوء امتصاصهما."},
+{"term": "Paresthesia", "definition_ar": "التنميل المذل: إحساس غير طبيعي بوخز الدبابيس والأبر نتيجة نقص الكالسيوم والمغنيسيوم."},
+{"term": "Azotemia", "definition_ar": "آزوتيمية: ارتفاع اليوريا والكرياتينين في الدم بسبب نفاد السوائل والشوارد."},
+{"term": "Xerophthalmia", "definition_ar": "جفاف العين والعشا الليلي الناتج عن نقص فيتامين A بسبب سوء امتصاصه."},
+{"term": "Hypoprothrombinemia", "definition_ar": "نقص البروثرومبين في الدم بسبب سوء امتصاص فيتامين K فيؤهب للنزف."}
+]
+},
+{
+"id": "L5_malabsorption_c4",
+"lecture_id": "L5_malabsorption",
+"title": "Cardinal Clinical Features of Malabsorption",
+"summary_ar": "الأعراض الأساسية لسوء الامتصاص: الإسهال الدهني ببراز شاحب ضخم كريه يطفو ويصعب شطفه مع قطرات زيت، وفقد الوزن (أشد في الأمراض المنتشرة كالداء البطني وداء ويبل)، والنفاخ والتطبل البطني بالهيدروجين والميثان، والوذمة بنقص الألبومين مع احتمال حبن، والأنيما صغيرة أو كبيرة الكريات، وأمراض العظام بنقص فيتامين D والكالسيوم مع فرق ثانوي للجارات الدرقية.",
+"difficulty": "core",
+"order_index": 3,
+"sections": [
+{
+"heading": "Steatorrhea — the Hallmark Stool",
+"body_text": "Steatorrhea gets its own slide with an unforgettable cartoon of a bulky, foul-smelling stool with flies buzzing over it:\n- **Steatorrhea is the result of fat malabsorption.**\n- **The hallmark of steatorrhea is the passage of pale, bulky, and malodorous stools.**\n- Such stools often **float on top of the toilet water** and are **difficult to flush**.\n- Also, patients find **floating oil droplets in the toilet following defecation**.\nAny patient describing pale, greasy, floating, hard-to-flush stools with an oil film should trigger a malabsorption work-up, starting with stool fat studies.",
+"key_points": [
+"Steatorrhea = fat malabsorption.",
+"Hallmark stool: pale, bulky, malodorous, floats, difficult to flush, floating oil droplets."
+]
+},
+{
+"heading": "Weight Loss and Fatigue",
+"body_text": "The slide (illustrated by an exhausted patient leaning forward with the caption 'WEIGHT LOSS') states:\n- **Weight loss is common and may be pronounced.**\n- **The chance of weight loss increases in diffuse diseases involving the intestine, such as celiac disease and Whipple disease.**\nFatigue accompanies the weight loss through anemia and electrolyte depletion. Focal or limited disease may spare body weight, but extensive mucosal disease wastes the patient.",
+"key_points": [
+"Weight loss is common and may be pronounced in malabsorption.",
+"Diffuse intestinal diseases — celiac disease and Whipple disease — maximize the chance of weight loss."
+]
+},
+{
+"heading": "Flatulence and Abdominal Distention",
+"body_text": "The slide shows a patient holding the upper abdomen in discomfort and explains:\n- **Bacterial fermentation of unabsorbed food substances releases gaseous products, such as hydrogen and methane, causing flatulence.**\n- **Flatulence often causes uncomfortable abdominal distention and cramps.**\nThis is the same mechanism as the table row 'Flatus | bacterial fermentation of unabsorbed carbohydrate' — the gas is produced by colonic bacteria acting on substrate the small intestine failed to absorb.",
+"key_points": [
+"Flatus gas = hydrogen and methane from bacterial fermentation of unabsorbed food/carbohydrate.",
+"Flatulence produces abdominal distention and cramps."
+]
+},
+{
+"heading": "Edema and Protein Loss",
+"body_text": "The slide (photograph of bilateral pitting edema of the lower legs and feet) explains the protein-losing side of malabsorption:\n- **Hypoalbuminemia from chronic protein malabsorption or from loss of protein into the intestinal lumen causes peripheral edema.**\n- **Extensive obstruction of the lymphatic system, as seen in intestinal lymphangiectasia, can cause protein loss.**\n- **With severe protein depletion, ascites may develop.**\nSo peripheral edema (or even ascites) in a malabsorbing patient reflects hypoalbuminemia from two routes: failed absorption of protein and active protein loss into the gut, including lymphatic obstruction.",
+"key_points": [
+"Peripheral edema = hypoalbuminemia from chronic protein malabsorption or luminal protein loss.",
+"Intestinal lymphangiectasia = lymphatic obstruction causing protein loss.",
+"Severe protein depletion can progress to ascites."
+]
+},
+{
+"heading": "Anemia in Malabsorption",
+"body_text": "The anemia slide (warning sign reading 'ANEMIA') teaches:\n- Depending on the cause, anemia resulting from malabsorption can be either **microcytic (iron deficiency)** or **macrocytic (vitamin B12 deficiency)**.\n- **Iron deficiency anemia often is a manifestation of celiac disease.**\n- **Ileal involvement in Crohn disease or ileal resection can cause megaloblastic anemia due to vitamin B12 deficiency.**\nThus the blood film itself localizes the disease: microcytosis points to proximal (duodenal) mucosal damage, while macrocytosis points to the terminal ileum.",
+"key_points": [
+"Two anemia patterns: microcytic (iron) and macrocytic (B12).",
+"Iron deficiency anemia is often the presenting manifestation of celiac disease.",
+"Ileal Crohn disease or ileal resection → megaloblastic anemia from B12 deficiency."
+],
+"check": {
+"prompt": "A patient who underwent ileal resection for Crohn disease develops anemia. Which pattern is expected?",
+"options": ["Microcytic hypochromic anemia", "Megaloblastic (macrocytic) anemia due to vitamin B12 deficiency", "Hemolytic anemia", "Iron deficiency anemia"],
+"correct_index": 1,
+"explanation_ar": "اللفائفي الأخير هو موضع امتصاص معقد B12 مع العامل الداخلي، لذا فإن استئصاله أو إصابته بداء كرون يسبب فقر دم كبير الكريات ضخم الأرومات بنقص B12، بينما فقر الدم صغير الكريات بنقص الحديد يحصل في الداء البطني بسبب إصابة العفج."
+}
+},
+{
+"heading": "Metabolic Defects of Bones",
+"body_text": "The bone slide completes the clinical picture:\n- **Vitamin D deficiency can cause bone disorders, such as osteopenia or osteomalacia.**\n- **Bone pain and pathologic fractures may be observed.**\n- **Malabsorption of calcium can lead to secondary hyperparathyroidism.**\nThe mechanism is a two-hit on bone: no vitamin D (no mineralization) and no calcium (chronic hypocalcemia driving parathyroid overactivity, which further strips calcium from bone).",
+"key_points": [
+"Vitamin D malabsorption → osteopenia/osteomalacia.",
+"Bone pain and pathologic fractures may be the presenting complaint.",
+"Calcium malabsorption → secondary hyperparathyroidism."
+]
+}
+],
+"key_terms": [
+{"term": "Steatorrhea", "definition_ar": "الإسهال الدهني: براز شاحب ضخم كريه الرائحة يطفو على الماء ويصعب شطفه بسبب فقد الدهون غير الممتصة."},
+{"term": "Hypoalbuminemia", "definition_ar": "نقص الألبومين في الدم نتيجة سوء امتصاص البروتين أو فقدانه داخل لمعة الأمعاء فيسبب الوذمة المحيطية."},
+{"term": "Intestinal lymphangiectasia", "definition_ar": "توسع الأوعية اللمفية المعوية: انسداد لمفي واسع يسبب فقد البروتين في البراز ويؤدي إلى وذمة وحبن."},
+{"term": "Osteomalacia", "definition_ar": "تلين العظام بسبب نقص فيتامين D نتيجة سوء امتصاصه، مع ألم عظمي وكسور مرضية."},
+{"term": "Osteopenia", "definition_ar": "نقص كثافة العظام، مرحلة مبكرة من مرض العظم الاستقلابي في سوء الامتصاص."},
+{"term": "Secondary hyperparathyroidism", "definition_ar": "فرق جارات الدرق الثانوي: فرط نشاطها التعويضي بسبب نقص الكالسيوم الممتص."},
+{"term": "Megaloblastic anemia", "definition_ar": "فقر دم ضخم الأرومات بسبب نقص B12 أو حمض الفوليك، وأرومات كريات الحمر ضخمة ونواة غير ناضجة."}
+]
+},
+{
+"id": "L5_malabsorption_c5",
+"lecture_id": "L5_malabsorption",
+"title": "Investigations of Malabsorption — Stool Fat, Schilling Test and D-Xylose Test",
+"summary_ar": "تحريات سوء الامتصاص: اختبار دهون البراز الكمي (جمع 72 ساعة، الشاذ أكثر من 6 غم/يوم والمصاب بالإسهال الدهني أكثر من 20 غم/يوم) مع اختبارات نوعية، واختبار شيلنغ لتقييم امتصاص فيتامين B12 والتفريق بين فقر الدم الخبيث وإصابة اللفائفي، واختبار D-xylose (25 غم بعد صيام ليلي وبول 5 ساعات، الشاذ أقل من 4.5 غم) مع أسباب الإيجابيات الكاذبة.",
+"difficulty": "core",
+"order_index": 4,
+"sections": [
+{
+"heading": "Tests for Steatorrhea — Stool Fat Studies",
+"body_text": "The investigations section opens with a laboratory/microscope image and the stool fat slide:\n**Quantitative test (the reference standard):**\n- **72-hour stool fat collection**\n- Abnormal when **> 6 gm/day**\n- **Patients with steatorrhea excrete > 20 gm/day**\n**Qualitative tests:** the slide lists qualitative alternatives to the quantitative collection; the accompanying microscope image represents stool microscopy for fat (e.g., Sudan staining of a random stool sample for fat droplets — standard reference). The quantitative 72-hour collection on a known fat intake remains the definitive test.",
+"key_points": [
+"Quantitative test = 72-hour stool fat collection.",
+"Abnormal: > 6 g/day; overt steatorrhea: > 20 g/day.",
+"Qualitative tests (stain/microscopy-based) are screening alternatives."
+]
+},
+{
+"heading": "Schilling Test — Vitamin B12 Absorption",
+"body_text": "Slide 15 is devoted entirely to the **Schilling test**, presented as a multi-stage diagram of vitamin B12 absorption testing. (The diagram could not be machine-transcribed during extraction; the protocol below is the standard textbook description of the test shown on the slide — standard reference.)\n- **Purpose:** to determine **whether and why a patient is failing to absorb vitamin B12**.\n- **Part 1 (without intrinsic factor):** the patient takes a small oral dose of **radiolabeled vitamin B12**, followed by a **large intramuscular flushing dose of unlabeled vitamin B12** to saturate body stores so that any absorbed radioactive B12 is excreted in the urine. **Urine is collected for 24 hours** and its radioactivity measured. **Low urinary excretion of radiolabeled B12 = B12 malabsorption.**\n- **Part 2 (with intrinsic factor):** the test is repeated with **oral intrinsic factor given with the radiolabeled B12**.\n- **Interpretation:** if urinary radio-B12 excretion **corrects** with intrinsic factor, the diagnosis is **pernicious anemia** (lack of gastric intrinsic factor); if excretion **does not correct**, the lesion is in the ileum (ileal disease or resection) or bacterial overgrowth consuming B12.",
+"key_points": [
+"Schilling test = oral radiolabeled B12 + IM flushing dose of unlabeled B12; measure 24-hour urinary radioactivity (standard reference).",
+"Part 1 low, Part 2 corrected by intrinsic factor = pernicious anemia.",
+"No correction with intrinsic factor = ileal disease/resection or bacterial overgrowth (standard reference)."
+],
+"check": {
+"prompt": "Schilling test: Part 1 shows low urinary radiolabeled B12; when the test is repeated with oral intrinsic factor, excretion normalizes. What is the diagnosis?",
+"options": ["Ileal resection", "Pernicious anemia", "Bacterial overgrowth", "Celiac disease", "Lactase deficiency"],
+"correct_index": 1,
+"explanation_ar": "تصحيح الإطراح البولي للـ B12 المشع عند إضافة العامل الداخلي يعني أن الخلل هو نقص العامل الداخلي المعدي أي فقر الدم الخبيث، أما إصابة اللفائفي أو فرط النمو الجرثومي فلا يُصحّحها العامل الداخلي لأن موضع الامتصاص نفسه معطوب."
+}
+},
+{
+"heading": "D-Xylose Test — Assessing Mucosal Absorption",
+"body_text": "**Protocol exactly as lectured:**\n- After an **overnight fast**, give **25 gm D-xylose** orally\n- **Urine is collected for the next 5 hours**\n- **Abnormal test: < 4.5 gm excretion** in the 5-hour urine\nThe ADAM diagram on the slide shows the two specimens: a **blood sample taken** and a **'clean catch' urine sample collected**, from which **D-xylose levels are measured**.\n**False-positive results:**\n- **Renal dysfunction**\n- **Inadequate urine sample**\n- **Impaired gastric emptying**\n- **Ascites**\n- **Drugs: ASA (aspirin), indomethacin, neomycin**\n(D-xylose is a monosaccharide absorbed directly across the mucosa without needing pancreatic digestion or bile, so it probes mucosal integrity — standard reference principle.)",
+"key_points": [
+"25 g D-xylose after overnight fast; collect urine for 5 hours; abnormal if < 4.5 g excreted.",
+"False positives: renal dysfunction, inadequate urine sample, impaired gastric emptying, ascites, drugs (ASA, indomethacin, neomycin).",
+"D-xylose absorption tests the mucosa itself, not pancreatic function (standard reference)."
+],
+"check": {
+"prompt": "A patient with chronic kidney disease performs a D-xylose test: 5-hour urinary excretion is 3.2 g. How should this be interpreted?",
+"options": [
+"Definitive evidence of small-intestinal mucosal disease",
+"Definitive evidence of pancreatic insufficiency",
+"A false-positive result — renal dysfunction invalidates the test",
+"A normal result"
+],
+"correct_index": 2,
+"explanation_ar": "النتيجة شاذة (أقل من 4.5 غم) لكن القصور الكلوي من الأسباب المذكورة للإيجابية الكاذبة لأن الإطراح البولي هو المعيار، لذا لا يمكن الاعتماد على الاختبار عند مريض كلوي، وليس الاختبار أصلاً لتقييم وظيفة البنكرياس."
+}
+}
+],
+"key_terms": [
+{"term": "72-hour stool fat collection", "definition_ar": "جمع براز 72 ساعة لقياس الدهون كمياً: الشاذ أكثر من 6 غم/يوم، ومريض الإسهال الدهني أكثر من 20 غم/يوم."},
+{"term": "Schilling test", "definition_ar": "اختبار شيلنغ: يقيس امتصاص B12 المشع فموياً عبر إطراحه البولي، ويتكرر مع العامل الداخلي للتفريق بين فقر الدم الخبيث وإصابة اللفائفي (مرجع قياسي)."},
+{"term": "Intrinsic factor", "definition_ar": "العامل الداخلي: بروتين تفرزه المعدة يرتبط بـ B12 ليمتص في اللفائفي الأخير."},
+{"term": "D-xylose test", "definition_ar": "اختبار D-xylose: 25 غم فموياً بعد صيام ليلي مع جمع بول 5 ساعات؛ الإطراح أقل من 4.5 غم شاذ ويدل على خلل المخاطية."},
+{"term": "False-positive result", "definition_ar": "نتيجة إيجابية كاذبة: اختبار شاذ رغم عدم وجود المرض، كما في القصور الكلوي أو نقص عينة البول في اختبار D-xylose."}
+]
+},
+{
+"id": "L5_malabsorption_c6",
+"lecture_id": "L5_malabsorption",
+"title": "Barium Studies and Endoscopy in Malabsorption",
+"summary_ar": "دراسات الباريوم تعرض أربعة أنماط: طبيعي (نمط ريشي منتظم)، الداء البطني (علامة القالب مع فقد الطيات وتوسع العروى)، رتوج الصائم (بروزات مليئة بالباريوم)، وداء كرون (تضيق قطعي وعلامة الخيط والمظهر الحجر المرصوف). والتنظير الهضمي يعطي قرائن تشخيصية (نقص الطيات العفجية والتسنن والنمط الفسيفسائي) والخزعة تثبت التشخيص.",
+"difficulty": "core",
+"order_index": 5,
+"sections": [
+{
+"heading": "Barium Studies — Four Classic Patterns",
+"body_text": "The barium slide shows four small-bowel follow-through studies side by side:\n- **A. Normal individual:** a normal, **feathery mucosal pattern** — the jejunal folds (valvulae conniventes) appear as fine, regular, closely spaced transverse lines.\n- **B. Celiac sprue:** the **'moulage sign'** — a featureless, cast-like bowel: **loss of the normal feathery pattern, dilatation of the intestinal lumen, and effacement/reduction in the number of jejunal folds**.\n- **C. Jejunal diverticulosis:** **multiple rounded, barium-filled outpouchings (diverticula)** projecting from the lumen along the mesenteric border, varying in size — a substrate for bacterial overgrowth.\n- **D. Crohn's disease:** **segmental narrowing (stenosis)** with the **'string sign'/cobblestone appearance**, irregular mucosal ulcerations, thickened distorted folds, stricturing, and possible fistulous tracts or deep ulcerations.",
+"key_points": [
+"Normal = feathery pattern with regular valvulae conniventes.",
+"Celiac sprue = moulage sign: featureless, dilated bowel with loss of jejunal folds.",
+"Jejunal diverticulosis = multiple barium-filled outpouchings along the mesenteric border.",
+"Crohn's disease = segmental stenosis, string sign, cobblestone mucosa."
+]
+},
+{
+"heading": "Endoscopy — Gross Morphology, Vital Dyes and Biopsy",
+"body_text": "**Gross morphology gives the diagnostic clue:**\n- **Reduced duodenal folds and scalloping of the duodenal mucosa → celiac disease**\n- **Use of vital dyes** helps identify villous atrophy\n- **Biopsy → to establish the diagnosis**\n**Endoscopic gallery in celiac disease (as shown on the slide):**\n- **Reduced duodenal folds** — a smooth mucosal surface\n- **DII (second part of duodenum) — no villi** — a completely flat mucosa without visible projections\n- **DII — scalloping** — irregular, notched mucosal folds\n- **Mosaic pattern** — patchy/nodular mucosa with atrophic areas interspersed with relatively preserved mucosa\n**Histology comparison (as shown):**\n- **Normal intestinal biopsy:** long, finger-like villi with a normal mucosal architecture\n- **Small-intestinal biopsy in active celiac disease:** **marked villous atrophy (flattening of the mucosa), crypt hyperplasia, and increased inflammatory cell infiltration of the lamina propria**",
+"key_points": [
+"Endoscopic clues to celiac: reduced duodenal folds, scalloping, no villi, mosaic pattern.",
+"Vital dyes help identify villous atrophy at endoscopy.",
+"Biopsy establishes the diagnosis.",
+"Active celiac histology: villous atrophy + crypt hyperplasia + lamina propria inflammation."
+],
+"check": {
+"prompt": "At upper GI endoscopy you note reduced duodenal folds, scalloping and a mosaic pattern. What is the next step?",
+"options": [
+"Duodenal biopsy to establish the diagnosis",
+"Barium enema",
+"24-hour ambulatory pH monitoring",
+"Colonoscopy with ileal intubation"
+],
+"correct_index": 0,
+"explanation_ar": "نقص الطيات العفجية مع التسننات والنمط الفسيفسائي قرائن تنظيرية للداء البطني، لكن التشخيص يُثبَّت بالخزعة المعوية (ضمن التنظير نفسه)، وليس بأي من الفحوص الأخرى."
+}
+}
+],
+"key_terms": [
+{"term": "Valvulae conniventes", "definition_ar": "الطيات الدائرية للأمعاء الدقيقة، تظهر بشكل ريشي منتظم في صور الباريوم الطبيعية."},
+{"term": "Moulage sign", "definition_ar": "علامة القالب: مظهر أمعاء عديم السمات في الداء البطني مع فقد النمط الريشي وتوسع العروة."},
+{"term": "Scalloping", "definition_ar": "التسنن: حواف غير منتظمة ومقطبشة للطيات المخاطية العفجية تُلاحظ تنظيرياً في الداء البطني."},
+{"term": "Mosaic pattern", "definition_ar": "النمط الفسيفسائي: مظهر مخاطي مترقق فيه مناطق ضماء متناوبة مع مناطق محفوظة."},
+{"term": "Villous atrophy", "definition_ar": "ضمور الزغابات: تسطح المخاطية بفقد الزغابات المعوية، العلامة النسيجية المميزة للداء البطني."},
+{"term": "Crypt hyperplasia", "definition_ar": "فرط تنسج الخبايا: تطاول وزيادة أعداد الخبايا المعوية المصاحب لضمور الزغابات."},
+{"term": "String sign", "definition_ar": "علامة الخيط: تضيق شديد قطعي في لمعة الأمعاء يُرى في داء كرون."}
+]
+},
+{
+"id": "L5_malabsorption_c7",
+"lecture_id": "L5_malabsorption",
+"title": "Celiac Disease — Historical Background and Pathophysiology",
+"summary_ar": "يستعرض الداء البطني تاريخياً: تدجين الحبوب في الهلال الخصيب قبل 10000 سنة، ووصف أرتايوس للحالة المزمنة واسمها Koiliakos أي معاناة الأحشاء، وتحسن الأطفال خلال الحرب العالمية الثانية بانعدام الخبز، واكتشاف ديكه للعلاقة بين الحبوب وسوء الامتصاص. وهو اضطراب مناعي تحفزه الغليادين (مكون الغلوتين) عند مهيئين وراثياً، ويسمى أيضاً الاختلاط البطني واللاستوائي وعدم تحمل الغلوتين والاعتلال المعوي الحساس للغلوتين.",
+"difficulty": "core",
+"order_index": 6,
+"sections": [
+{
+"heading": "Historical Background of Celiac Disease",
+"body_text": "The celiac section opens with a food slide (breads, pasta, rice, potatoes and beans) and then three history slides:\n- **~10,000 years ago:** **cereal grains were first domesticated from wild grasses in the Fertile Crescent** — illustrated with ancient Egyptian baking scenes and traditional grain threshing. Celiac disease is, in effect, a disease of the agricultural/grain era.\n- **2nd century AD:** **Aretaeus from Cappadochia (now Turkey) described a chronic malabsorptive condition** and **named this disorder 'koiliakos', which is Greek for 'suffering in the bowels.'**\n- **World War II:** **celiac children improved during the food shortages when bread was unavailable**; **after the war, symptoms reoccurred when bread and cereals were reintroduced.**\n- **Dutch pediatrician Willem K Dicke recognized and confirmed this association between cereal grains and malabsorption.**\nThis natural wartime 'gluten withdrawal experiment' is the classic evidence linking cereal gluten to the disease.",
+"key_points": [
+"Cereal grains domesticated in the Fertile Crescent ~10,000 years ago.",
+"Aretaeus (2nd century AD, Cappadochia) named the chronic malabsorptive condition 'koiliakos' = suffering in the bowels.",
+"WWII bread shortage → celiac children improved; post-war bread reintroduction → relapse.",
+"Willem K Dicke confirmed the cereal grain-malabsorption association."
+]
+},
+{
+"heading": "Pathophysiology and Synonyms of Celiac Disease",
+"body_text": "The pathophysiology slide states:\n- **Celiac disease is an immune disorder that is triggered by an environmental agent (the gliadin component of gluten) in genetically predisposed individuals.**\nThe slide (a distressed slice of bread with a sad face) then lists its alternative names — **also known as:**\n- **Celiac sprue**\n- **Non-tropical sprue**\n- **Gluten intolerance**\n- **Gluten-sensitive enteropathy**\nRemember the trigger triad: an **environmental agent (gliadin, a component of gluten) + genetic predisposition + immune-mediated injury** of the small-intestinal mucosa.",
+"key_points": [
+"Immune disorder + environmental trigger (gliadin component of gluten) + genetic predisposition.",
+"Synonyms: celiac sprue, non-tropical sprue, gluten intolerance, gluten-sensitive enteropathy.",
+"'Non-tropical sprue' distinguishes it from tropical sprue (the lecture's closing question)."
+],
+"check": {
+"prompt": "What is the environmental agent that triggers celiac disease in genetically predisposed individuals?",
+"options": [
+"The gliadin component of gluten",
+"Lactose",
+"Bile acids",
+"Escherichia coli toxin"
+],
+"correct_index": 0,
+"explanation_ar": "المحفز البيئي للداء البطني هو الغليادين وهو مكوّن الغلوتين الموجود في القمح والحبوب، وليس اللاكتوز ولا الأحماض الصفراوية، ويتفاعل معه الجهاز المناعي عند الأشخاص المهيئين وراثياً."
+}
+}
+],
+"key_terms": [
+{"term": "Gliadin", "definition_ar": "الغليادين: بروتين مكون للغلوتين في القمح وهو المحفز المناعي للداء البطني."},
+{"term": "Gluten", "definition_ar": "الغلوتين: بروتين التخزين في القمح والشعير يحتوي الغليادين المسبب للداء البطني."},
+{"term": "Koiliakos", "definition_ar": "التسمية اليونانية القديمة التي أطلقها أرتايوس وتعني المعاناة في الأحشاء."},
+{"term": "Gluten-sensitive enteropathy", "definition_ar": "الاعتلال المعوي الحساس للغلوتين: اسم مرادف للداء البطني."}
+]
+},
+{
+"id": "L5_malabsorption_c8",
+"lecture_id": "L5_malabsorption",
+"title": "Celiac Disease — Risk Factors and Associated Disorders",
+"summary_ar": "الأشخاص المصابون بأمراض مناعية أو اضطرابات وراثية أكثر عرضة للداء البطني: التهاب المفاصل الرثياني، الداء السكري نمط 1، أمراض الدرقية، أمراض الكبد المناعية، أديسون، شوغرن، الذئبة، متلازمة داون، متلازمة تيرنر، عدم تحمل اللاكتوز، ولمفوما الأمعاء.",
+"difficulty": "core",
+"order_index": 7,
+"sections": [
+{
+"heading": "Risk Factors and Associated Disorders",
+"body_text": "The slide (a plate of bread slices wrapped in yellow CAUTION tape) states: **people suffering from other immune diseases and certain genetic disorders are more likely to have celiac disease.** Some disorders associated with celiac include:\n- **Rheumatoid arthritis**\n- **Type 1 diabetes**\n- **Thyroid disease**\n- **Autoimmune liver disease**\n- **Addison's disease**\n- **Sjogren's disease**\n- **Lupus**\n- **Down syndrome**\n- **Turner syndrome**\n- **Lactose intolerance**\n- **Intestinal lymphoma**\nFor the exam, this list works both ways: a patient with any of these conditions and GI symptoms/anemia deserves celiac serology, and a known celiac patient must be monitored for associated autoimmune disease and lymphoma.",
+"key_points": [
+"Autoimmune associations: rheumatoid arthritis, type 1 diabetes, thyroid disease, autoimmune liver disease, Addison's disease, Sjogren's disease, lupus.",
+"Genetic syndrome associations: Down syndrome, Turner syndrome.",
+"Also associated: lactose intolerance and intestinal lymphoma."
+]
+}
+],
+"key_terms": [
+{"term": "Autoimmune liver disease", "definition_ar": "أمراض الكبد المناعية الذاتية مثل التهاب الكبد المناعي وتشمع الصفراوي الأولي، ترافق الداء البطني."},
+{"term": "Intestinal lymphoma", "definition_ar": "لمفوما الأمعاء: ورم خبيث لمفاوي يترافق مع الداء البطني طويل الأمد غير المعالج."}
+]
+},
+{
+"id": "L5_malabsorption_c9",
+"lecture_id": "L5_malabsorption",
+"title": "Celiac Disease — Diagnosis: Serology, Histology, Genetics, Rechallenge and Algorithms",
+"summary_ar": "تشخيص الداء البطني: مصلياً بأضداد الإندوميزيوم IgA وأضداد ناقلة الغلوتامين tTG من نوع IgA وIgG، ونسيجياً بضمور زغابات جزئي أو كلي مع ارتشاح التهابي، ووراثياً بـ HLA-DQ2 وDQ8 عند أكثر من 90%. ومع تحدي الغلوتين 10 غم/يوم لأربعة إلى ستة أسابيع مع خطر الصدمة الغليادينية. وتقسم الخوارزمية حسب الاحتمال قبل الاختبار 2-5% مع دمج المصلية والخزعة.",
+"difficulty": "advanced",
+"order_index": 8,
+"sections": [
+{
+"heading": "Serologic Testing for Celiac Disease",
+"body_text": "The serology slide (blood tubes on an immunology/serology requisition form) lists the antibody tests used to diagnose celiac disease:\n- **IgA endomysial antibodies**\n- **IgA and IgG tissue transglutaminase antibodies**\nThese tests are the entry point of both diagnostic algorithms on the following slides, where they are always paired with a **serum IgA level**.",
+"key_points": [
+"IgA endomysial antibodies (EMA).",
+"IgA and IgG tissue transglutaminase (tTG) antibodies.",
+"Serology is paired with serum IgA level in the diagnostic algorithms."
+]
+},
+{
+"heading": "Histopathology and Genetic Testing",
+"body_text": "**Histopathology (2):** the diagnostic biopsy shows **subtotal or total villous atrophy with intense inflammatory infiltration.**\n**Genetic testing (3):** **HLA-DQ2 and HLA-DQ8 markers are present in > 90% of CD patients.**\nThe Mayo diagram on the slide contrasts the **normal small intestine** (long finger-like villi projecting from the mucosal surface) with **celiac disease** (a flattened mucosal surface with complete loss of the normal villous architecture).",
+"key_points": [
+"Histology: subtotal or total villous atrophy + intense inflammatory infiltration.",
+"HLA-DQ2 and HLA-DQ8 present in > 90% of celiac patients.",
+"Normal intestine = finger-like villi; celiac = flattened mucosa with loss of villi."
+]
+},
+{
+"heading": "Gluten Rechallenge — Protocol and Hazard",
+"body_text": "**Gluten rechallenge** is defined as **improvement in symptoms and histology with gluten avoidance, with a documented return of these features upon gluten reintroduction.**\n- It may be performed by consuming **10 g of gluten per day (an amount contained in four slices of regular bread) for four to six weeks**.\n- **One hazard of rechallenge is development of fulminant diarrhea, with dehydration, acidosis, and other metabolic disturbances ('gliadin shock').**\n(Slide reference: Krainick HG et al., Helv Paediatr Acta 1958 — the original description of the acute gliadin reaction.) The slide image of a hand rejecting a wheat stalk underlines the principle: gluten is the enemy in celiac disease.",
+"key_points": [
+"Rechallenge = symptom/histology improvement off gluten + documented relapse on gluten.",
+"Protocol: 10 g gluten/day (= four slices of bread) for 4-6 weeks.",
+"Hazard: 'gliadin shock' — fulminant diarrhea with dehydration and acidosis."
+]
+},
+{
+"heading": "Diagnostic Algorithm — Low Pre-test Probability (< 2 to 5 percent)",
+"body_text": "When the clinical suspicion of celiac disease is low (**pre-test probability < 2 to 5 percent**), the algorithm runs:\n- Obtain **IgA endomysial or tTG antibody AND serum IgA level**\n- If **positive → proceed to small bowel biopsy**\n- If **negative → diagnosis excluded**\nIn low-probability patients the cheap, non-invasive serology (with total IgA to exclude IgA deficiency) gates the decision to biopsy.",
+"key_points": [
+"Probability < 2-5%: obtain IgA endomysial or tTG antibody + serum IgA level.",
+"Positive serology → small bowel biopsy.",
+"Negative serology → diagnosis excluded."
+]
+},
+{
+"heading": "Diagnostic Algorithm — High Pre-test Probability (> 2 to 5 percent)",
+"body_text": "When pre-test probability is **> 2 to 5 percent**, driven by indicators such as:\n- **Family history**\n- **Unexplained iron deficiency anemia**\n- **Steatorrhea or other GI symptoms**\n- **Failure to thrive**\n- **Type 1 diabetes mellitus or other associated disorders**\n- **Other symptoms**\nthe algorithm does **both tests together: IgA endomysial or tTG antibody + IgA AND small bowel biopsy**, then interprets the paired results:\n- **Serology + | Histology +** (both positive) → **TREAT**\n- **Serology + | Histology -** → **review and/or repeat biopsy** → if positive → TREAT\n- **Serology - | Histology +** → **rule out other causes of villous atrophy** → if another cause is identified → **diagnosis excluded**; if no other cause → **TREAT**\n- **Serology - | Histology -** (both negative) → **diagnosis excluded**\n(The slide's flowchart draws the serology-negative/histology-positive branch through 'rule out other causes of villous atrophy', with the exit that identifies another cause leading to 'diagnosis excluded' and the exit that excludes other causes leading to 'TREAT'.)",
+"key_points": [
+"High-probability indicators: family history, unexplained iron deficiency anemia, steatorrhea/GI symptoms, failure to thrive, type 1 DM/associated disorders.",
+"High probability → serology AND biopsy together.",
+"Both positive → treat; both negative → excluded.",
+"Serology+/histology- → review/repeat biopsy; serology-/histology+ → rule out other causes of villous atrophy."
+],
+"check": {
+"prompt": "A high-probability patient has POSITIVE tTG IgA serology but a small-bowel biopsy WITHOUT villous atrophy. What does the algorithm advise?",
+"options": [
+"Treat immediately as celiac disease",
+"Diagnosis excluded",
+"Review and/or repeat the biopsy",
+"Start a gluten rechallenge"
+],
+"correct_index": 2,
+"explanation_ar": "عند تناقض النتائج (مصلية موجبة مع نسيج سليم) توصي الخوارزمية بمراجعة النتيجة و/أو إعادة الخزعة قبل أي قرار، فلا يُعالج المريض مباشرة ولا يُستبعد التشخيص أيضاً، وتحدي الغلوتين ليس الخطوة التالية هنا."
+}
+}
+],
+"key_terms": [
+{"term": "IgA endomysial antibodies", "definition_ar": "أضداد الإندوميزيوم من نوع IgA: اختبار مصلي نوعي للداء البطني."},
+{"term": "Tissue transglutaminase (tTG) antibodies", "definition_ar": "أضداد ناقلة الغلوتامين النسيجية من نوع IgA و IgG: الاختبار المصلي المفضل لتشخيص الداء البطني."},
+{"term": "HLA-DQ2 / HLA-DQ8", "definition_ar": "مستضدات الكريات البيض التي توجد عند أكثر من 90% من مرضى الداء البطني وتدل على التهيؤ الوراثي."},
+{"term": "Gliadin shock", "definition_ar": "الصدمة الغليادينية: إسهال فتاك مع تجفف وحماض واضطرابات استقلابية عند تحدي المريض بالغلوتين."},
+{"term": "Gluten rechallenge", "definition_ar": "تحدي الغلوتين: إعادة إدخال الغلوتين (10 غم يومياً 4-6 أسابيع) بعد الانسحاب لإثبات عودة الأعراض والآفات النسيجية."}
+]
+},
+{
+"id": "L5_malabsorption_c10",
+"lecture_id": "L5_malabsorption",
+"title": "Celiac Disease — Malignant Complications",
+"summary_ar": "الأوراض الخبيثة أكثر حدوثاً في الداء البطني الكلاسيكي غير المعالج لفترة طويلة: أدينوكارسينوما الأمعاء الدقيقة، وسرطان الخلايا الحرشفية للمريء والفم والبلعوم، ولمفوما لا هودجكن، وكلها أكثر شيوعاً عند مرضى الداء البطني مقارنة بالأصحاء.",
+"difficulty": "advanced",
+"order_index": 9,
+"sections": [
+{
+"heading": "Malignant Disease in Untreated Celiac Disease",
+"body_text": "The slide (illustrated with the red crab symbol of cancer) delivers a sobering message:\n- **Malignant diseases are more frequent in patients with long-term untreated classical CD.**\nThe tumors that **occur more often in CD patients than in healthy control individuals** are:\n- **Small-bowel adenocarcinoma**\n- **Esophageal and oropharyngeal squamous-cell carcinoma**\n- **Non-Hodgkin's lymphoma**\nThis is the argument for diagnosing celiac disease early and maintaining strict gluten avoidance: untreated disease is not merely malnutrition, it is a premalignant chronic inflammatory state.",
+"key_points": [
+"Long-term untreated classical celiac disease → increased malignancy risk.",
+"Small-bowel adenocarcinoma.",
+"Esophageal and oropharyngeal squamous-cell carcinoma.",
+"Non-Hodgkin's lymphoma."
+]
+}
+]
+},
+{
+"id": "L5_malabsorption_c11",
+"lecture_id": "L5_malabsorption",
+"title": "Lactose Intolerance",
+"summary_ar": "عدم تحمل اللاكتوز هو العجز عن تفكيك سكر اللاكتوز الطبيعي الموجود في منتجات الألبان لأن الأمعاء الدقيقة تتوقف عن إنتاج كمية كافية من إنزيم اللاكتاز، فينتقل اللاكتوز غير المهضوم إلى القولون حيث تخمره الجراثيم، ويسمى أيضاً نقص اللاكتاز. تشخيصه باختبار تحمل اللاكتوز: 50 غم فموياً وقياس سكر الدم عند 0 و60 و120 دقيقة، وارتفاع أقل من 20 ملغ/دل مع الأعراض تشخيصي، بحساسية 75% ونوعية 96%.",
+"difficulty": "core",
+"order_index": 10,
+"sections": [
+{
+"heading": "Definition and Dietary Sources of Lactose",
+"body_text": "The lactose section opens with a slide of dairy products (milk, cheeses, yogurt) and defines:\n- **Lactose intolerance is the inability to break down a type of natural sugar called lactose.**\n- **Lactose is commonly found in dairy products, such as milk and yogurt.**\nNote the distinction the lecture is making: the problem is not the sugar itself but the missing breakdown of it — an enzyme problem, not a toxin.",
+"key_points": [
+"Lactose = a natural sugar in dairy products (milk, yogurt).",
+"Lactose intolerance = inability to break it down."
+]
+},
+{
+"heading": "Pathophysiology — Lactase Deficiency",
+"body_text": "The mechanism slide explains:\n- A person becomes lactose intolerant when his or her **small intestine stops making enough of the enzyme lactase to digest and break down the lactose.**\n- When this happens, **the undigested lactose moves into the large intestine.** The **bacteria that are normally present in the large intestine interact with the undigested lactose.**\n- **The condition may also be called lactase deficiency.**\nThis is a mucosal enzyme deficiency producing an osmotic/fermentative picture: unabsorbed sugar draws water into the gut and colonic bacteria ferment it into gas — hence diarrhea, flatulence, bloating and cramps after dairy.",
+"key_points": [
+"Deficient enzyme: lactase, produced by the small intestine.",
+"Undigested lactose reaches the colon and is fermented by resident bacteria.",
+"Synonym: lactase deficiency."
+]
+},
+{
+"heading": "Diagnosis — Lactose Tolerance Test",
+"body_text": "**Lactose tolerance test protocol (as lectured):**\n- **Oral administration of 50 gram lactose**\n- **Blood glucose levels measured at 0, 60 and 120 minutes**\n- **Increase of blood glucose by less than 20 mg/dl + symptoms = diagnostic**\n**False-negative results:** **diabetes, bacterial overgrowth, delayed gastric emptying**\n**Accuracy: sensitivity 75%, specificity 96%**\n(The slide shows yogurt containers crossed out with a red prohibition symbol — dairy is the trigger to avoid.) A normal absorber digests lactose into glucose and galactose, which raises blood glucose by more than 20 mg/dL; the intolerant patient cannot split the sugar, so glucose barely rises and symptoms appear.",
+"key_points": [
+"Protocol: 50 g oral lactose; blood glucose at 0, 60, 120 min.",
+"Diagnostic: glucose rise < 20 mg/dL PLUS symptoms.",
+"False negatives: diabetes, bacterial overgrowth, delayed gastric emptying.",
+"Sensitivity 75%, specificity 96%."
+],
+"check": {
+"prompt": "During a lactose tolerance test, which result is diagnostic of lactose intolerance?",
+"options": [
+"Blood glucose rise of 35 mg/dL with symptoms",
+"Blood glucose rise of less than 20 mg/dL with symptoms",
+"Blood glucose rise of less than 20 mg/dL without any symptoms",
+"Blood glucose rise of 25 mg/dL without symptoms"
+],
+"correct_index": 1,
+"explanation_ar": "المعيار التشخيصي هو ارتفاع سكر الدم أقل من 20 ملغ/دل مع ظهور الأعراض، لأن الغير متحمل لا يستطيع تفكيك اللاكتوز إلى غلوكوز فيبقى الارتفاع ضئيلاً، أما الارتفاع فوق 20 مع أعراض فهذا لا ينطبق والارتفاع الضئيل بدون أعراض غير كافٍ للتشخيص."
+}
+}
+],
+"key_terms": [
+{"term": "Lactose", "definition_ar": "اللاكتوز: سكر طبيعي (ثنائي السكريد) موجود في الحليب ومنتجات الألبان."},
+{"term": "Lactase", "definition_ar": "اللاكتاز: إنزيم تفرزه الأمعاء الدقيقة لتفكيك اللاكتوز إلى غلوكوز وغلاكتوز."},
+{"term": "Lactase deficiency", "definition_ar": "نقص اللاكتاز: الاسم المرادف لعدم تحمل اللاكتوز، نقص إنزيم تفكيك سكر الحليب."},
+{"term": "Lactose tolerance test", "definition_ar": "اختبار تحمل اللاكتوز: 50 غم لاكتوز فموياً وقياس سكر الدم، وارتفاع أقل من 20 ملغ/دل مع الأعراض تشخيصي."}
+]
+},
+{
+"id": "L5_malabsorption_c12",
+"lecture_id": "L5_malabsorption",
+"title": "Whipple's Disease",
+"summary_ar": "داء ويبل: عدوى جرثومية نادرة بالمتصرفة ويبلية Tropheryma whipplei تصيب الجهاز الهضمي غالباً وتضعف تفكيك الدهون والكربوهيدرات، وقد تصيب الدماغ والقلب والمفاصل والعيون. عوامل الخطورة: متوسطو العمر وكبار السن والذكور والقوقازيون والعمال الزراعيون وعمال الصرف الصحي مع مهيئات مناعية HLA. التشخيص بصبغة PAS وتفاعل PCR للـ 16sRNA مع ESR وCRP مرتفعين وفقر دم مزمن ونقص ألبومين.",
+"difficulty": "advanced",
+"order_index": 11,
+"sections": [
+{
+"heading": "Definition, Cause and Organ Involvement",
+"body_text": "The Whipple section title slide already shows the diagnostic histology — a small-intestinal biopsy with bright magenta PAS-positive granular deposits packing macrophages in the lamina propria and distorting the villi. The lecture defines:\n- **Whipple's disease is a rare bacterial infection that most often affects the gastrointestinal system.**\n- It **interferes with normal digestion by impairing the breakdown of foods, such as fats and carbohydrates.**\n- **Whipple's disease can also infect other organs, including the brain, heart, joints and eyes.**\n- **The cause of Whipple's disease is infection with the bacterium Tropheryma whipplei.**\nThe multi-organ reach (CNS, heart, joints, eyes) plus malabsorption is the clinical signature that separates Whipple's disease from purely enteric causes of malabsorption.",
+"key_points": [
+"Rare bacterial infection, mostly GI, impairing breakdown of fats and carbohydrates.",
+"Other organs: brain, heart, joints, eyes.",
+"Causative bacterium: Tropheryma whipplei.",
+"Title-slide histology: PAS-positive granular macrophages in the lamina propria."
+]
+},
+{
+"heading": "Risk Factors for Whipple's Disease",
+"body_text": "The risk-factor slide lists:\n- **Middle-age and older individuals**\n- **Males more than females**\n- **Caucasian patients**\n- **Family clusters** (suggesting an immunogenetic component)\n- **HLA-B27 antigen; HLA-DRB1*13 and DQB1*06 alleles**\n- **Sewage plant workers, farmers and agricultural workers**\nThe occupational group points toward an environmental exposure (soil/sewage) to Tropheryma whipplei in a host with permissive immunity.",
+"key_points": [
+"Middle-aged/older Caucasian males.",
+"Family clusters → immunogenetic component; HLA-B27, HLA-DRB1*13, DQB1*06.",
+"Occupational: sewage plant workers, farmers, agricultural workers."
+]
+},
+{
+"heading": "Diagnosis of Whipple's Disease",
+"body_text": "The diagnosis slide gives a three-tier approach:\n**1. Periodic acid-Schiff (PAS):** tissue staining — the title-slide photomicrograph shows the PAS-positive macrophages distending the small-intestinal lamina propria.\n**2. Polymerase chain reaction (PCR):**\n- **PCR-sequenced bacterial 16sRNA**\n- **PCR can be applied to duodenal tissue, lymph node, pleural-fluid cells, and peripheral blood**\n**3. Abnormal laboratory findings:**\n- **Elevated ESR, elevated CRP**\n- **Anemia of chronic disease**\n- **Hypoalbuminemia**\nThe combination of tissue PAS positivity plus PCR confirmation on duodenal tissue (or blood/other specimens) secures the diagnosis of Tropheryma whipplei infection.",
+"key_points": [
+"PAS stain of involved tissue (PAS-positive macrophages).",
+"PCR: sequencing bacterial 16sRNA; applicable to duodenal tissue, lymph node, pleural-fluid cells, peripheral blood.",
+"Labs: high ESR, high CRP, anemia of chronic disease, hypoalbuminemia."
+],
+"check": {
+"prompt": "Which molecular target does the diagnostic PCR of Whipple's disease sequence?",
+"options": [
+"Bacterial 16sRNA",
+"Bacterial 23sRNA",
+"Viral reverse transcriptase",
+"Human HLA-DQ2"
+],
+"correct_index": 0,
+"explanation_ar": "التفاعل السلسلي البوليميرازي في داء ويبل يستهدف ويسلسل الحمض النووي الريبي 16s الجرثومي، ويمكن تطبيقه على النسيج العفجي والعقد اللمفية وسائل الجنبة والدم المحيطي، ولا علاقة له بالـ HLA-DQ2 الخاص بالداء البطني."
+}
+}
+],
+"key_terms": [
+{"term": "Tropheryma whipplei", "definition_ar": "التروفيريما ويبلي: الجرثوم المسبب لداء ويبل، عصية تُكشف بصبغة PAS وتفاعل PCR."},
+{"term": "Periodic acid-Schiff (PAS)", "definition_ar": "صبغة شيف بحمض البيريوديك (PAS): تلون البقايا الجرثومية داخل البلاعم بلون أرجواني في داء ويبل."},
+{"term": "16sRNA PCR", "definition_ar": "تفاعل سلسلي يستهدف RNA الريبوسومي 16S الجرثومي لتأكيد الإصابة بالتروفيريما ويبلي."},
+{"term": "Anemia of chronic disease", "definition_ar": "فقر دم الأمراض المزمنة: نمط فقر دم مصاحب للالتهاب المزمن كما في داء ويبل."}
+]
+},
+{
+"id": "L5_malabsorption_c13",
+"lecture_id": "L5_malabsorption",
+"title": "Tropical Sprue and Small-Bowel Bacterial Overgrowth",
+"summary_ar": "تختم المحاضرة بسؤال: ما هو الاختلاط الاستوائي؟ وهو مصطلح مقابل الاختلاط اللاستوائي (الداء البطني). ثم تشرح المحاضرة فرط النمو الجرثومي للأمعاء الدقيقة: الأمعاء الدقيقة طبيعياً عقيمة بفضل الحمض والتمعج المعوي (العامل الأهم) والغلوبولين المناعي، وينتج فرط النمو عن الرتوج المعوية والعروة العمياء والتضيقات والسكري وتصلب الجلد.",
+"difficulty": "advanced",
+"order_index": 12,
+"sections": [
+{
+"heading": "Tropical Sprue — the Lecture's Closing Question",
+"body_text": "The lecture closes the examples section with a full-slide question: **'What is Tropical Sprue ?????'**\nThe question follows directly after the celiac disease block, where celiac was explicitly listed under the synonym **'non-tropical sprue'**. The slide therefore prompts the student to contrast celiac disease (non-tropical sprue) with tropical sprue as a separate malabsorption syndrome, and it introduces the next and final slide on **bacterial overgrowth of the small bowel** — the mechanism classically linked with tropical sprue and with jejunal diverticulosis seen on the barium slide. (The lecture presents this slide as a question only; no further tropical-sprue detail is given in this deck, so treat it as a self-study prompt linking the term 'non-tropical sprue' = celiac disease.)",
+"key_points": [
+"The lecture poses: 'What is Tropical Sprue?' as a closing reflective question.",
+"Celiac disease = non-tropical sprue (its synonym on the pathophysiology slide).",
+"The question introduces the final slide on small-bowel bacterial overgrowth."
+]
+},
+{
+"heading": "Small-Bowel Bacterial Overgrowth — Sterility Mechanisms and Causes",
+"body_text": "The final slide (illustrated by rod-shaped bacilli under the microscope) explains why the gut normally stays clean and what breaks it:\n**The normal small intestine is bacterially sterile due to:**\n- **Acid**\n- **Intestinal peristalsis (the major factor)**\n- **Immunoglobulin**\n**Causes of bacterial overgrowth, e.g.:**\n- **Small intestinal diverticuli**\n- **Blind loop**\n- **Strictures**\n- **DM / Scleroderma**\nEach cause either creates a stagnant niche (diverticuli, blind loop, strictures after surgery) or slows transit (diabetic enteric neuropathy, scleroderma), defeating the major protective mechanism — peristalsis — so colonic-type flora colonize the small bowel, deconjugate bile salts and consume vitamin B12, producing steatorrhea and megaloblastic anemia.",
+"key_points": [
+"Normal small intestine is bacterially sterile due to: acid, intestinal peristalsis (major), immunoglobulin.",
+"Causes of overgrowth: small intestinal diverticuli, blind loop, strictures, DM, scleroderma.",
+"Peristalsis is the MAJOR protective factor."
+],
+"check": {
+"prompt": "Which is the MAJOR factor keeping the normal small intestine bacterially sterile?",
+"options": ["Gastric acid", "Intestinal peristalsis", "Secretory immunoglobulin", "Bile salts"],
+"correct_index": 1,
+"explanation_ar": "التمعج المعوي هو العامل الأهم لإبقاء الأمعاء الدقيقة عقيمة لأنه يكتسح الجراثيم باستمرار نحو الأسفل، يساعده الحمض المعدي والأضداد المناعية، لذا فإن أي ركود معوي (رتوج، عروة عمياء، تضيق، سكري، تصلب جلد) يسمح بفرط النمو الجرثومي."
+}
+}
+],
+"key_terms": [
+{"term": "Tropical sprue", "definition_ar": "الاختلاط الاستوائي: متلازمة سوء امتصاص يطرحها المحاضرة كسؤال ختامي مقابل الاختلاط اللاستوائي (الداء البطني)."},
+{"term": "Blind loop", "definition_ar": "العروة العمياء: جزء من الأمعاء معزول عن التدفق الطبيعي بعد جراحة يتحول إلى بؤرة ركود وفرط نمو جرثومي."},
+{"term": "Small intestinal diverticuli", "definition_ar": "رتوج الأمعاء الدقيقة: جيوب مخاطية تسبب ركوداً وفرط نمو جرثومي (ظهرت في صورة الباريوم)."},
+{"term": "Bacterial overgrowth", "definition_ar": "فرط النمو الجرثومي المعوي: استعمار الجراثيم للأمعاء الدقيقة عند اختل آليات التعقيم، فيسبب سوء امتصاص."}
+]
+}
+],
+"flashcards": [
+{
+"id": "L5_malabsorption_f1",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c1",
+"card_type": "basic",
+"front_text": "Differentiate maldigestion from malabsorption.",
+"back_text": "Maldigestion = impaired intraluminal BREAKDOWN of nutrients (digestion step, e.g., pancreatic enzymes, bile). Malabsorption = impaired mucosal UPTAKE and TRANSPORT of digested nutrients across the small-intestinal lining into blood and lymph. Together they constitute the malabsorption syndrome.",
+"explanation_ar": "سوء الهضم خلل في تفكيك الطعام داخل اللمعة، وسوء الامتصاص خلل في عبور المغذيات عبر المخاطية؛ لا تخلط بينهما في الامتحان."
+},
+{
+"id": "L5_malabsorption_f2",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c2",
+"card_type": "basic",
+"front_text": "List the six risk factors for malabsorption stated in the lecture.",
+"back_text": "1) Medical conditions affecting the intestine; 2) Use of laxatives; 3) Excessive use of antibiotics; 4) Intestinal surgery; 5) Excessive use of alcohol; 6) Travel to countries with high incidence of intestinal parasites.",
+"explanation_ar": "احفظ الستة: أمراض الأمعاء، المسهلات، الإفراط بالمضادات الحيوية، جراحة الأمعاء، الكحول، السفر لبلدان الطفيليات المعوية.",
+"mnemonic_ar": "ذكّر نفسك: (أمراض، مسهلات، مضادات، جراحة، كحول، سفر)."
+},
+{
+"id": "L5_malabsorption_f3",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c3",
+"card_type": "basic",
+"front_text": "What is the mechanism of diarrhea in malabsorption disorders?",
+"back_text": "Impaired absorption or secretion of water and electrolytes, PLUS colonic fluid secretion secondary to unabsorbed dihydroxy bile acids and fatty acids.",
+"explanation_ar": "الإسهال ليس أسموزياً فقط: الأحماض الصفراوية ثنائية الهيدروكسيل والأحماض الدهنية غير الممتصة تحفز القولون على إفراز السوائل."
+},
+{
+"id": "L5_malabsorption_f4",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"card_type": "basic",
+"front_text": "Describe the hallmark stool of steatorrhea.",
+"back_text": "Pale, bulky, malodorous stools that float on top of the toilet water, are difficult to flush, with floating oil droplets seen in the toilet after defecation — the result of fat malabsorption.",
+"explanation_ar": "الإسهال الدهني: براز شاحب ضخم كريه يطفو ويصعب شطفه مع قطرات زيت طافية — علامة سوء امتصاص الدهون."
+},
+{
+"id": "L5_malabsorption_f5",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"card_type": "basic",
+"front_text": "Why do malabsorption patients develop peripheral edema and even ascites?",
+"back_text": "Hypoalbuminemia from chronic protein malabsorption or loss of protein into the intestinal lumen causes peripheral edema; extensive lymphatic obstruction (intestinal lymphangiectasia) causes protein loss; severe protein depletion can progress to ascites.",
+"explanation_ar": "نقص الألبومين بسبب سوء امتصاص البروتين أو فقدانه داخل اللمعة (ومنها الانسداد اللمفي في توسع الأوعية اللمفية المعوية) يسبب الوذمة وقد يتقدم إلى الحبن."
+},
+{
+"id": "L5_malabsorption_f6",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"card_type": "basic",
+"front_text": "Which diseases cause microcytic vs macrocytic anemia in malabsorption?",
+"back_text": "Microcytic (iron deficiency): celiac disease — proximal duodenal mucosal damage. Macrocytic/megaloblastic (vitamin B12 deficiency): ileal involvement in Crohn disease or ileal resection.",
+"explanation_ar": "صغير الكريات = نقص حديد في الداء البطني (العفج)، كبير الكريات = نقص B12 في إصابة أو استئصال اللفائفي."
+},
+{
+"id": "L5_malabsorption_f7",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"card_type": "basic",
+"front_text": "What metabolic bone defects complicate malabsorption?",
+"back_text": "Vitamin D deficiency causes osteopenia or osteomalacia, with bone pain and pathologic fractures; malabsorption of calcium leads to secondary hyperparathyroidism.",
+"explanation_ar": "نقص فيتامين D يسبب تلين العظام ونقص الكثافة مع كسور مرضية، ونقص الكالسيوم يسبب فرق جارات درق ثانوي."
+},
+{
+"id": "L5_malabsorption_f8",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c5",
+"card_type": "basic",
+"front_text": "Quantitative fecal fat test: protocol and thresholds?",
+"back_text": "72-hour stool fat collection; abnormal when > 6 g/day; patients with steatorrhea excrete > 20 g/day. Qualitative (stain/microscopy) tests are the screening alternatives.",
+"explanation_ar": "جمع براز 72 ساعة: أكثر من 6 غم/يوم شاذ، ومريض الإسهال الدهني يطرح أكثر من 20 غم/يوم."
+},
+{
+"id": "L5_malabsorption_f9",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c5",
+"card_type": "basic",
+"front_text": "Schilling test: how does Part 2 with intrinsic factor distinguish pernicious anemia?",
+"back_text": "Part 1: oral radiolabeled B12 + IM flushing dose of unlabeled B12; collect 24-h urine — low urinary radio-B12 = B12 malabsorption. Part 2: repeat with oral intrinsic factor — excretion CORRECTS = pernicious anemia (IF deficiency); no correction = ileal disease/resection or bacterial overgrowth. (standard reference)",
+"explanation_ar": "تصحيح الإطراح مع العامل الداخلي = فقر الدم الخبيث (نقص العامل الداخلي)، وعدم التصحيح = إصابة لفائفية أو فرط نمو جرثومي. (مرجع قياسي)"
+},
+{
+"id": "L5_malabsorption_f10",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c5",
+"card_type": "basic",
+"front_text": "D-xylose test: protocol, abnormal cut-off and false-positive causes?",
+"back_text": "Overnight fast, then 25 g oral D-xylose; collect urine for the next 5 hours; abnormal if excretion < 4.5 g. False positives: renal dysfunction, inadequate urine sample, impaired gastric emptying, ascites, drugs (ASA, indomethacin, neomycin).",
+"explanation_ar": "25 غم بعد صيام ليلي وبول 5 ساعات؛ أقل من 4.5 غم شاذ. إيجابيات كاذبة: قصور كلوي، عينة بول ناقصة، إبطاء إفراغ المعدة، حبن، أدوية (أسبرين، إندوميتاسين، نيوميسين)."
+},
+{
+"id": "L5_malabsorption_f11",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c6",
+"card_type": "basic",
+"front_text": "What endoscopic findings suggest celiac disease, and what confirms it?",
+"back_text": "Reduced duodenal folds, scalloping of the duodenal mucosa, no villi in DII, and mosaic pattern; vital dyes help identify villous atrophy; biopsy establishes the diagnosis (subtotal/total villous atrophy, crypt hyperplasia, inflammatory infiltration).",
+"explanation_ar": "قرائن تنظيرية: نقص الطيات والتسننات وغياب الزغابات والنمط الفسيفسائي مع الأصباغ الحيوية؛ والخزعة هي ما يثبت التشخيص."
+},
+{
+"id": "L5_malabsorption_f12",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c7",
+"card_type": "basic",
+"front_text": "What triggers celiac disease, and what are its four synonyms?",
+"back_text": "An immune disorder triggered by the gliadin component of gluten in genetically predisposed individuals. Synonyms: celiac sprue, non-tropical sprue, gluten intolerance, gluten-sensitive enteropathy.",
+"explanation_ar": "المحفز هو الغليادين المكون للغلوتين عند مهيئين وراثياً. المرادفات: الاختلاط البطني، اللاستوائي، عدم تحمل الغلوتين، الاعتلال المعوي الحساس للغلوتين."
+},
+{
+"id": "L5_malabsorption_f13",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c8",
+"card_type": "basic",
+"front_text": "Name the disorders associated with celiac disease.",
+"back_text": "Rheumatoid arthritis, type 1 diabetes, thyroid disease, autoimmune liver disease, Addison's disease, Sjogren's disease, lupus, Down syndrome, Turner syndrome, lactose intolerance, intestinal lymphoma.",
+"explanation_ar": "أمراض مناعية (رثياني، سكري نمط 1، درقية، كبد مناعي، أديسون، شوغرن، ذئبة) ومتلازمات وراثية (داون، تيرنر) ولاكتوز ولمفوما الأمعاء.",
+"mnemonic_ar": "قسّمها للحفظ: مناعية (سكري-درقية-رثياني-كبد-أديسون-شوغرن-ذئبة) + وراثية (داون-تيرنر) + معوية (لاكتوز-لمفوما)."
+},
+{
+"id": "L5_malabsorption_f14",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"card_type": "basic",
+"front_text": "Which serologic tests diagnose celiac disease?",
+"back_text": "IgA endomysial antibodies, and IgA plus IgG tissue transglutaminase (tTG) antibodies — always interpreted together with a serum IgA level.",
+"explanation_ar": "أضداد الإندوميزيوم IgA وأضداد ناقلة الغلوتامين tTG بنوعيها IgA وIgG، مع مستوى IgA المصلية لتجنب السلبية الكاذبة عند نقصه."
+},
+{
+"id": "L5_malabsorption_f15",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"card_type": "basic",
+"front_text": "Gluten rechallenge: dose, duration and the dangerous complication?",
+"back_text": "10 g of gluten per day (contained in four slices of regular bread) for four to six weeks. Hazard: fulminant diarrhea with dehydration, acidosis and other metabolic disturbances — 'gliadin shock'.",
+"explanation_ar": "10 غم غلوتين يومياً (أربع شرائح خبز) لمدة 4-6 أسابيع؛ الخطر هو الصدمة الغليادينية: إسهال فتاك مع تجفف وحماض."
+},
+{
+"id": "L5_malabsorption_f16",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"card_type": "basic",
+"front_text": "Histopathology and genetic markers of celiac disease?",
+"back_text": "Histopathology: subtotal or total villous atrophy with intense inflammatory infiltration. Genetic: HLA-DQ2 and HLA-DQ8 markers in > 90% of celiac patients.",
+"explanation_ar": "نسيجياً: ضمور زغابات جزئي أو كلي مع ارتشاح التهابي شديد. وراثياً: HLA-DQ2 وDQ8 عند أكثر من 90% من المرضى."
+},
+{
+"id": "L5_malabsorption_f17",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c10",
+"card_type": "basic",
+"front_text": "Which malignancies are increased in long-term untreated classical celiac disease?",
+"back_text": "Small-bowel adenocarcinoma, esophageal and oropharyngeal squamous-cell carcinoma, and non-Hodgkin's lymphoma — all more frequent than in healthy controls.",
+"explanation_ar": "أدينوكارسينوما الأمعاء الدقيقة، سرطان الخلايا الحرشفية المريئي والفموي البلعومي، ولمفوما لا هودجكن."
+},
+{
+"id": "L5_malabsorption_f18",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c11",
+"card_type": "basic",
+"front_text": "Lactose tolerance test: protocol, diagnostic criterion, false negatives and accuracy?",
+"back_text": "50 g oral lactose; blood glucose at 0, 60 and 120 min; a rise < 20 mg/dL plus symptoms is diagnostic. False negatives: diabetes, bacterial overgrowth, delayed gastric emptying. Sensitivity 75%, specificity 96%.",
+"explanation_ar": "50 غم لاكتوز فموياً وقياس السكر عند 0 و60 و120 دقيقة؛ ارتفاع أقل من 20 ملغ/دل مع الأعراض تشخيصي. سلبيات كاذبة: سكري، فرط نمو جرثومي، إبطاء إفراغ المعدة. حساسية 75% ونوعية 96%."
+},
+{
+"id": "L5_malabsorption_f19",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c12",
+"card_type": "basic",
+"front_text": "How is Whipple's disease diagnosed?",
+"back_text": "1) Periodic acid-Schiff (PAS) stain of tissue (PAS-positive macrophages in the lamina propria); 2) PCR sequencing bacterial 16sRNA — applicable to duodenal tissue, lymph node, pleural-fluid cells and peripheral blood; 3) labs: raised ESR and CRP, anemia of chronic disease, hypoalbuminemia. Cause: Tropheryma whipplei.",
+"explanation_ar": "صبغة PAS، وتفاعل PCR للـ16sRNA على النسيج العفجي أو العقد اللمفية أو سائل الجنبة أو الدم، مع ESR وCRP مرتفعين وفقر دم مزمن ونقص ألبومين، والمسبب هو التروفيريما ويبلي."
+},
+{
+"id": "L5_malabsorption_f20",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c13",
+"card_type": "basic",
+"front_text": "Why is the normal small intestine sterile, and what causes bacterial overgrowth?",
+"back_text": "Sterile due to acid, intestinal peristalsis (the major factor) and immunoglobulin. Causes of overgrowth: small intestinal diverticuli, blind loop, strictures, and DM/scleroderma.",
+"explanation_ar": "التعقيم بالحمض والتمعج (العامل الأهم) والغلوبولين المناعي؛ وينتج فرط النمو عن الرتوج والعروة العمياء والتضيقات والسكري وتصلب الجلد."
+}
+],
+"mcqs": [
+{
+"id": "L5_malabsorption_q1",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"question_stem": "A 41-year-old man presents with a 6-month history of loose stools. He describes the stool as pale, bulky and foul-smelling; it floats on the toilet water and is very difficult to flush, and he has noticed oil droplets floating in the toilet after defecation. He has lost 8 kg. Which term best describes this stool abnormality?",
+"options": [
+"Steatorrhea resulting from fat malabsorption",
+"Melena from upper gastrointestinal bleeding",
+"Hematochezia from colonic bleeding",
+"Rice-water stool of secretory diarrhea"
+],
+"correct_index": 0,
+"explanation_ar": "هذه الصورة نموذجية للإسهال الدهني Steatorrhea: براز شاحب ضخم كريه الرائحة يطفو على الماء ويصعب شطفه مع قطرات زيت طافية، وهو نتيجة سوء امتصاص الدهون كما نصت المحاضرة. الميلينا براز أسود قطراني من نزف العلوي، والهيماتوكيزيا دم أحمر طازج من القولون، وبراز ماء الأرز إسهال إفرازي شديد كالكوليرا، وكلها لا تنطبق على هذا الوصف.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": [
+"Focus on the stool description: pale, bulky, floating, oily.",
+"Which nutrient, when unabsorbed, produces greasy floating stools?"
+]
+},
+{
+"id": "L5_malabsorption_q2",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"question_stem": "A 34-year-old woman with long-standing malabsorption presents with bilateral pitting leg edema and mild ascites; serum albumin is 2.6 g/dL. According to the lecture, what is the mechanism of her edema?",
+"options": [
+"Hypoalbuminemia from chronic protein malabsorption and loss of protein into the intestinal lumen",
+"Right-sided heart failure causing venous congestion",
+"Nephrotic syndrome causing urinary protein loss",
+"Chronic venous insufficiency of the lower limbs"
+],
+"correct_index": 0,
+"explanation_ar": "الوذمة المحيطية (وقد تتقدم إلى حبن) في سوء الامتصاص ناتجة عن نقص الألبومين بفقد البروتين المزمن: سوء امتصاص البروتين أو فقدانه داخل لمعة الأمعاء، مع إمكانية انسداد لمفي واسع كما في توسع الأوعية اللمفية المعوية. لا شيء في الحالة يشير لفشل قلب أيمن (لا احتقان عنقي ولا ضخامة كبد) ولا لمتلازمة نفروزية (البروتينية البولية غير مذكورة) ولا لقصور وريدي مزمن (الوذمة ثنائية ومترافقة بنقص ألبومين واضح).",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q3",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c4",
+"question_stem": "A 45-year-old man who underwent ileal resection for Crohn disease two years ago presents with fatigue. Hb is 9.4 g/dL and MCV 112 fL. Which deficiency explains his anemia, and why?",
+"options": [
+"Vitamin B12 — the terminal ileum absorbs the B12-intrinsic factor complex",
+"Iron — the duodenum is the iron absorption site",
+"Vitamin K — absorbed in the jejunum",
+"Folate — deficient because of proximal mucosal damage"
+],
+"correct_index": 0,
+"explanation_ar": "استئصال اللفائفي أو إصابته بداء كرون يمنع امتصاص معقد B12 مع العامل الداخلي في اللفائفي الأخير، فيحدث فقر دم ضخم الأرومات كبير الكريات (MCV مرتفع) كما ذكرت المحاضرة حرفياً. نقص الحديد يعطي كريات صغيرة ويرتبط بالداء البطني في العفج، ونقص فيتامين K يعطي نزفاً لا أنيميا، وحمض الفوليك يُمتص في الصائم/العفج فلا يُفقد بإصابة لفائفية.",
+"difficulty": "advanced",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q4",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c5",
+"question_stem": "A 58-year-old woman with chronic kidney disease (eGFR 22 mL/min/1.73m2) undergoes a D-xylose test for suspected malabsorption: after an overnight fast she ingests 25 g D-xylose and her 5-hour urine collection contains 3.2 g. How should this result be interpreted?",
+"options": [
+"A false-positive result — renal dysfunction is a recognized cause of abnormal D-xylose excretion",
+"Definitive evidence of small-intestinal mucosal disease",
+"Definitive evidence of pancreatic exocrine insufficiency",
+"A normal test result"
+],
+"correct_index": 0,
+"explanation_ar": "الإطراح أقل من 4.5 غم شاذ نظرياً، لكن القصور الكلوي أول أسباب الإيجابية الكاذبة المذكورة في المحاضرة (مع نقص عينة البول وإبطاء إفراغ المعدة والحبن والأدوية كالأسبرين والإندوميتاسين والنيوميسين)، لأن المعيار هو الإطراح البولي ففشله يفسد الاختبار. والنتيجة ليست دليلاً على مرض مخاطية، كما أن D-xylose أصلاً لا يختبر وظيفة البنكرياس بل امتصاص المخاطية، وبالطبع 3.2 غم ليست نتيجة طبيعية.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": [
+"What is actually being measured in this test — absorption or urinary excretion?",
+"Recall the list of false-positive causes of the D-xylose test."
+]
+},
+{
+"id": "L5_malabsorption_q5",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c5",
+"question_stem": "A 60-year-old woman with paresthesias and macrocytic anemia undergoes a Schilling test. Part 1 (oral radiolabeled vitamin B12 alone) shows low 24-hour urinary radioactivity; when the test is repeated with oral intrinsic factor, urinary excretion normalizes. What is the diagnosis? (standard reference)",
+"options": [
+"Pernicious anemia due to lack of gastric intrinsic factor",
+"Ileal resection",
+"Small-bowel bacterial overgrowth",
+"Celiac disease",
+"Folate deficiency"
+],
+"correct_index": 0,
+"explanation_ar": "في اختبار شيلنغ (مرجع قياسي): الجزء الأول يكشف سوء امتصاص B12 (إطراح بولي مشع منخفض)، فإذا صحّح الجزء الثاني مع العامل الداخلي الإطراحَ فهذا يعني أن الخلل نقص العامل الداخلي المعدي أي فقر الدم الخبيث. أما استئصال اللفائفي أو فرط النمو الجرثومي فلا يصححهما إضافة العامل الداخلي لأن موضع الامتصاص نفسه معطوب أو الجراثيم تستهلك B12، والداء البطني لا يعطي هذا النمط التصحيحي، ونقص الفولات لا علاقة له باختبار B12 أصلاً.",
+"difficulty": "advanced",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q6",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c6",
+"question_stem": "A small-bowel barium follow-through in a 30-year-old woman with chronic diarrhea and weight loss shows a featureless, cast-like upper small bowel with dilatation, loss of the normal feathery pattern and a reduced number of jejunal folds (moulage sign). What is the most likely diagnosis?",
+"options": [
+"Celiac sprue",
+"Crohn's disease",
+"Jejunal diverticulosis",
+"Normal individual",
+"Intestinal lymphoma"
+],
+"correct_index": 0,
+"explanation_ar": "علامة القالب Moulage (أمعاء عديمة السمات مع فقد النمط الريشي وتوسع العروة ونقص الطيات الصائمية) هي نمط الداء البطني في صور الباريوم. أما داء كرون فيظهر تضيقاً قطعياً مع علامة الخيط والمظهر الحجر المرصوف، ورتوج الصائم تظهر بروزات متعددة مليئة بالباريوم، والشخص الطبيعي يحتفظ بالنمط الريشي المنتظم، ولمفوما الأمعاء ليست من الأنماط الأربعة التي عرضتها المحاضرة.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q7",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"question_stem": "A 26-year-old woman with type 1 diabetes reports 8 months of intermittent diarrhea and is found to have unexplained iron-deficiency anemia; her sister has celiac disease. Her pre-test probability of celiac disease is therefore high (> 2 to 5 percent). According to the lecture's diagnostic algorithm, what is the next step?",
+"options": [
+"Obtain IgA endomysial or tTG antibody + serum IgA AND a small bowel biopsy",
+"Start an empirical gluten-free diet and monitor the response",
+"Perform colonoscopy with random biopsies",
+"Perform a lactose tolerance test",
+"Collect a 72-hour stool fat sample and stop there"
+],
+"correct_index": 0,
+"explanation_ar": "عند الاحتمال قبل الاختبار أعلى من 2-5% (قصة عائلية، فقر دم حديدي غير مفسر، أعراض هضمية، سكري نمط 1) توصي خوارزمية المحاضرة بإجراء الاختبارين معاً: أضداد الإندوميزيوم أو tTG من نوع IgA مع مستوى IgA المصلية والخزعة المعوية الدقيقة. تجربة حمية خالية من الغلوتين قبل التشخيص خطأ لأنها تُبطل الاختبارات، والتنظير القولوني لا يشخص الداء البطني، واختبار اللاكتوز لمرض آخر، وجمع دهون البراز وحده يثبت الإسهال الدهني ولا يشخص سببه.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": [
+"High pre-test probability changes the algorithm — which two tests run together?",
+"Serology (with IgA level) plus small bowel biopsy."
+]
+},
+{
+"id": "L5_malabsorption_q8",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"question_stem": "During a malabsorption work-up, a patient's IgA tTG serology is negative but the duodenal biopsy demonstrates villous atrophy. According to the lecture's high-probability diagnostic algorithm, what should be done next?",
+"options": [
+"Rule out other causes of villous atrophy",
+"Consider the diagnosis of celiac disease excluded",
+"Treat immediately as celiac disease",
+"Repeat only the serology monthly",
+"Proceed to gluten rechallenge"
+],
+"correct_index": 0,
+"explanation_ar": "الفرع (مصلية سالبة مع نسيج موجب) في الخوارزمية يتطلب استبعاد الأسباب الأخرى لضمور الزغابات؛ فإذا وُجد سبب آخر يُستبعد الداء البطني، وإذا لم يوجد يُعالج على أنه داء بطني. استبعاد التشخيص مباشرة خطأ لأن ذلك مسار الفرع السلبي المزدوج، والعلاج الفوري يتجاوز خطوة الاستبعاد، وتكرار المصلية وحده لا يحل التناقض، وتحدي الغلوتين خطوة قديمة تنطوي على خطر الصدمة الغليادينية وليست الخطوة التالية.",
+"difficulty": "advanced",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q9",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c9",
+"question_stem": "A gastroenterologist considers a gluten rechallenge (10 g of gluten per day for four to six weeks) in an adult with previously suspected celiac disease to document the return of symptoms and histology. According to the lecture, what is the recognized hazard of this procedure?",
+"options": [
+"Fulminant diarrhea with dehydration, acidosis and other metabolic disturbances ('gliadin shock')",
+"Anaphylactic shock",
+"Acute pancreatitis",
+"Small-bowel obstruction",
+"Nephrotic-range proteinuria"
+],
+"correct_index": 0,
+"explanation_ar": "ذكرت المحاضرة حرفياً أن خطر تحدي الغلوتين هو تطور إسهال فتاك مع تجفف وحماض واضطرابات استقلابية أخرى، ويسمى الصدمة الغليادينية gliadin shock، وجرعة التحدي 10 غم غلوتين يومياً (أربع شرائح خبز) لأربعة إلى ستة أسابيع. لا علاقة للأمر بالتأق الحاد أو التهاب البنكرياس الحاد أو انسداد الأمعاء أو المتلازمة النفروزية.",
+"difficulty": "advanced",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q10",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c11",
+"question_stem": "A 22-year-old woman develops cramps, bloating and watery diarrhea within two hours of drinking milk. A lactose tolerance test is performed: after 50 g oral lactose, blood glucose rises by only 12 mg/dL and she develops typical symptoms during the test. What is the diagnosis and its mechanism?",
+"options": [
+"Lactase deficiency — undigested lactose passes to the colon where bacteria interact with it",
+"Celiac disease — gliadin-triggered villous atrophy",
+"Bile salt deficiency causing fat malabsorption",
+"Pancreatic exocrine insufficiency causing steatorrhea",
+"Ileal Crohn disease causing B12 malabsorption"
+],
+"correct_index": 0,
+"explanation_ar": "معيار تشخيص عدم تحمل اللاكتوز هو ارتفاع سكر الدم أقل من 20 ملغ/دل مع ظهور الأعراض بعد 50 غم لاكتوز فموياً (حساسية 75% ونوعية 96%)، وآليته أن الأمعاء الدقيقة تتوقف عن إنتاج ما يكفي من اللاكتاز فيصل اللاكتوز غير المهضوم إلى القولون وتتفاعل معه الجراثيم. الداء البطني يسبب فقر دم حديدي وضمور زغابات، ونقص الأملاح الصفراوية وقصور البنكرياس يسببان إسهالاً دهنياً لا أعراض لاكتوز، وإصابة اللفائفي تعطي فقر دم كبير الكريات، وكلها لا تفسير لها هنا.",
+"difficulty": "core",
+"clinical_vignette": true
+},
+{
+"id": "L5_malabsorption_q11",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c12",
+"question_stem": "A 55-year-old Caucasian farmer has 8 months of weight loss, steatorrhea, migratory large-joint arthralgia and low-grade fever. Labs: Hb 10.6 g/dL, ESR 68 mm/h, CRP 46 mg/L, albumin 2.8 g/dL. A duodenal biopsy shows lamina propria macrophages packed with PAS-positive granular material. What is the causative organism and its confirmatory test?",
+"options": [
+"Tropheryma whipplei — confirmed by PCR sequencing bacterial 16sRNA",
+"Giardia lamblia — confirmed by stool antigen testing",
+"Mycobacterium avium — confirmed by acid-fast staining",
+"Campylobacter jejuni — confirmed by stool culture",
+"Candida albicans — confirmed by fungal culture"
+],
+"correct_index": 0,
+"explanation_ar": "المزراب: مزارع قوقازي متوسط العمر لديه سوء امتصاص مع ألم مفاصل وحمى، مع بلاعم محشوة بمادة PAS موجبة في خزعة العفج: هذه بطاقة داء ويبل، والمسبب هو جرثوم Tropheryma whipplei، ويؤكد بتفاعل PCR الذي يسلسل 16sRNA الجرثومي ويمكن تطبيقه على النسيج العفجي والعقد اللمفية وخلايا سائل الجنبة والدم المحيطي، مع ارتفاع ESR وCRP وفقر دم الأمراض المزمنة ونقص الألبومين. الجيارديا طفيلي يظهر بمسحة البراز لا ببلاعم PAS، والمتفطرة الطيرية تُظهر عصيات مقاومة للحمض، والكامبيلوباكتر والكانديدا لا تعطي هذا النسيج.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": [
+"Occupation (farmer) + PAS-positive macrophages + joint pain points to one rare disease.",
+"Which molecular target confirms it — and in which specimens?"
+]
+},
+{
+"id": "L5_malabsorption_q12",
+"lecture_id": "L5_malabsorption",
+"concept_id": "L5_malabsorption_c13",
+"question_stem": "A 62-year-old woman with long-standing scleroderma develops bloating, steatorrhea and vitamin B12 deficiency; a barium study shows multiple jejunal diverticuli. Which mechanism best explains her malabsorption?",
+"options": [
+"Small-bowel bacterial overgrowth due to impaired peristaltic clearance of the intestine",
+"Gluten-triggered immune enteropathy",
+"Pancreatic exocrine insufficiency",
+"Lactase deficiency",
+"Obstruction of the extrahepatic bile ducts"
+],
+"correct_index": 0,
+"explanation_ar": "الأمعاء الدقيقة طبيعياً عقيمة بفضل الحمض والتمعج المعوي (العامل الأهم) والغلوبولين المناعي. تصلب الجلد (مثل السكري) يبطئ التمعج، والرتج الصائمية والعراوى العمياء والتضيقات تخلق ركوداً، فيحدث فرط النمو الجرثومي الذي يسبب سوء الامتصاص. الداء البطني مناعي يتحفزه الغليادين، وقصور البنكرياس خارجي الإفراز سبب تجاويفي للهضم، ونقص اللاكتاز يقتصر على سكر الحليب، وانقطاع الصفراء خارج الكبد يعطي يرقاناً راسقاً، وكلها لا تناسب سياق تصلب الجلد مع الرتوج.",
+"difficulty": "core",
+"clinical_vignette": true
+}
+],
+"clinical_cases": [
+{
+"id": "L5_malabsorption_case1",
+"lecture_id": "L5_malabsorption",
+"title": "Chronic Diarrhea, Weight Loss and Iron Deficiency Anemia in a Young Woman",
+"scenario": "A 29-year-old woman is referred to the gastroenterology clinic with eight months of greasy, foul-smelling stools that float and are difficult to flush, progressive fatigue and 9 kg of unintentional weight loss. She has noticed ankle swelling for the last two months. Her father has type 1 diabetes and her sister has autoimmune thyroid disease.",
+"vignette": {
+"age": 29,
+"sex": "female",
+"chief_complaint": "Chronic diarrhea with floating greasy stools, fatigue and weight loss for 8 months",
+"history": "Stools are pale, bulky and malodorous, float on the toilet water and leave oil droplets; she reports bloating and flatulence after meals. No blood in stool, no fever, no NSAID or laxative use, minimal alcohol, no recent travel. Family history: father with type 1 diabetes, sister with thyroid disease.",
+"vitals": {"bp": "105/70 mmHg", "hr": "92 bpm", "rr": "14/min", "temp": "36.8 C", "spo2": "99%"},
+"exam": "Thin, pale conjunctivae. Mild diffuse abdominal distention with soft non-tender abdomen, no organomegaly. Bilateral pitting ankle edema. No lymphadenopathy.",
+"labs": [
+{"name": "Hemoglobin", "value": "10.1 g/dL (12.0-15.5)", "flag": "low"},
+{"name": "MCV", "value": "75 fL (80-100)", "flag": "low"},
+{"name": "Ferritin", "value": "6 ng/mL (15-150)", "flag": "low"},
+{"name": "Albumin", "value": "3.0 g/dL (3.5-5.0)", "flag": "low"},
+{"name": "Calcium", "value": "8.2 mg/dL (8.5-10.5)", "flag": "low"},
+{"name": "Anti-tTG IgA", "value": "72 U/mL (0-10)", "flag": "high"},
+{"name": "Total serum IgA", "value": "190 mg/dL (70-400)", "flag": "normal"},
+{"name": "72-hour fecal fat", "value": "24 g/day (normal < 6 g/day)", "flag": "high"},
+{"name": "INR", "value": "1.1 (0.8-1.2)", "flag": "normal"}
+]
+},
+"steps": [
+{
+"id": "L5_malabsorption_case1_s1",
+"prompt": "What is the most likely diagnosis?",
+"options": [
+"Celiac disease (gluten-sensitive enteropathy)",
+"Chronic pancreatitis",
+"Irritable bowel syndrome",
+"Lactose intolerance",
+"Intestinal lymphoma"
+],
+"correct_index": 0,
+"explanation_ar": "اجتماع الإسهال الدهني مع فقر دم صغير الكريات غير مفسر ونقص الألبومين والوذمة وقصة عائلية مناعية (سكري نمط 1 ودرقية) يجعل الداء البطني التشخيص الأرجح، وهو مرتبط بهذه الأمراض في قائمة المحاضرة. التهاب البنكرياس المزمن يعطي إسهالاً دهنياً لكن الأنيميا الحديدية ليست سمته، والقولون العصبي لا يسبب نقص ألبومين أو أنيميا أو إسهالاً دهنياً، وعدم تحمل اللاكتوز يسبب أعراضاً بعد الحليب فقط ولا يسبب سوء امتصاص واسعاً، ولمفوما الأمعاء احتمال أقل وهي مدرجة كمضاعف مرتبط وليست الصورة الأولى.",
+"xp": 10,
+"hints": [
+"Iron deficiency anemia + steatorrhea + autoimmune family history.",
+"Which associated disorder of celiac disease does her father have?"
+]
+},
+{
+"id": "L5_malabsorption_case1_s2",
+"prompt": "According to the lecture's diagnostic algorithm for a high pre-test probability patient, which combination of investigations is indicated?",
+"options": [
+"IgA endomysial or tTG antibody + serum IgA AND small bowel biopsy",
+"72-hour stool fat collection alone",
+"Colonoscopy with random colonic biopsies",
+"Barium enema",
+"Schilling test"
+],
+"correct_index": 0,
+"explanation_ar": "احتمال ما قبل الاختبار أعلى من 2-5% (أعراض هضمية، فقر دم حديدي غير مفسر، قصة عائلية)، لذا توصي خوارزمية المحاضرة بإجراء المصلية (أضداد الإندوميزيوم أو tTG مع مستوى IgA) والخزعة المعوية الدقيقة معاً. جمع دهون البراز يثبت الإسهال الدهني فقط ولا يشخص سببه، والتنظير القولوني وخزعاته لا تقيم الزغابات المعوية الدقيقة، وحقنة الباريوم ليست أداة تشخيص مؤكدة، واختبار شيلنغ مخصص لتقصي نقص B12.",
+"xp": 10
+},
+{
+"id": "L5_malabsorption_case1_s3",
+"prompt": "Which histopathologic finding is expected on her duodenal biopsy?",
+"options": [
+"Subtotal or total villous atrophy with intense inflammatory infiltration",
+"Caseating granulomas with Langhans giant cells",
+"Lamina propria macrophages packed with PAS-positive granular material",
+"Completely normal villi and crypts",
+"Crypt abscesses with neutrophils"
+],
+"correct_index": 0,
+"explanation_ar": "النسيج المميز للداء البطني هو ضمور زغابات جزئي أو كلي مع ارتشاح التهابي شديد كما ذكرت المحاضرة (مع فرط تنسج الخبايا في صور المقارنة). الورم الحبيبي Caseating سمة السل، وبلاعم PAS الموجبة بطاقة داء ويبل، والخبايا الطبيعية تنفي المرض النشط، وخُراجات الخبايا القيحية سمة التهاب القولون التقرحي.",
+"xp": 10
+},
+{
+"id": "L5_malabsorption_case1_s4",
+"prompt": "What is the appropriate management?",
+"options": [
+"Strict gluten avoidance (gluten-free diet) with follow-up of symptoms and histology",
+"Lactose-free diet alone",
+"Long-term oral tetracycline",
+"Pancreatic enzyme replacement",
+"Segmental small-bowel resection"
+],
+"correct_index": 0,
+"explanation_ar": "المعالجة الأساسية للداء البطني هي تجنب الغلوتين، وقد نصت المحاضرة على أن الامتناع عن الغلوتين يحسن الأعراض والنسيج وأن إعادة إدخاله تعيدهما. حمية اللاكتوز تعالج مرضاً آخر قد يترافق لكنه ليس العلاج الأصلي، والتتراسيكلين علاج تاريخي لداء ويبل والاختلاط الاستوائي، وإنزيمات البنكرياس لقصور البنكرياس، والاستئصال الجراحي لا مكان له هنا.",
+"xp": 10
+},
+{
+"id": "L5_malabsorption_case1_s5",
+"prompt": "If she remains untreated for many years, which group of malignancies does the lecture say becomes more frequent?",
+"options": [
+"Small-bowel adenocarcinoma, esophageal and oropharyngeal squamous-cell carcinoma, and non-Hodgkin's lymphoma",
+"Colorectal adenocarcinoma only",
+"Gastric MALT lymphoma",
+"Pancreatic adenocarcinoma",
+"Hepatocellular carcinoma"
+],
+"correct_index": 0,
+"explanation_ar": "ذكرت المحاضرة أن الأمراض الخبيثة أكثر شيوعاً في الداء البطني الكلاسيكي غير المعالج طويلاً، وتحديداً أدينوكارسينوما الأمعاء الدقيقة وسرطان الخلايا الحرشفية المريئي والفموي البلعومي ولمفوما لا هودجكن مقارنة بالأصحاء. سرطان القولون والمعدة والبنكرياس والكبد ليست ضمن الأورام المذكورة في المحاضرة.",
+"xp": 15
+}
+],
+"debriefing_ar": "التشخيص النهائي: الداء البطني (الاعتلال المعوي الحساس للغلوتين). الدروس المستفادة: كل مريض شاب لديه إسهال دهني مع فقر دم حديدي غير مفسر يجب أن يُبحث عن الداء البطني خاصة مع الأمراض المرافقة (سكري نمط 1 وأمراض المناعة الأخرى ومتلازمتي داون وتيرنر). احترم تسلسل الخوارزمية: مصلية IgA مع مستوى IgA الكلي ثم خزعة الأمعاء الدقيقة، ولا تبدأ حمية الغلوتين قبل إتمام التشخيص لأنها تبطل الاختبارات. العلاج هو تجنب الغلوتين مدى الحياة مع المتابعة، لأن الإهمال طويل الأمد يرفع خطر الأورام الخبيثة بما فيها لمفوما لا هودجكن. لاحظ أن الوذمة هنا نقص ألبومين وليست قلبية أو كلوية.",
+"difficulty": "core",
+"order_index": 0
+},
+{
+"id": "L5_malabsorption_case2",
+"lecture_id": "L5_malabsorption",
+"title": "Weight Loss, Steatorrhea and Migratory Arthralgia in a Middle-Aged Farmer",
+"scenario": "A 54-year-old Caucasian farmer is evaluated for eight months of migratory large-joint arthralgia, intermittent low-grade fever, 12 kg of unintentional weight loss and increasingly greasy, bulky stools. He has no history of intestinal surgery and takes no laxatives or regular antibiotics.",
+"vignette": {
+"age": 54,
+"sex": "male",
+"chief_complaint": "Weight loss, greasy stools and migratory joint pains for 8 months",
+"history": "Migratory arthralgia of knees, wrists and ankles for one year preceding the diarrhea; intermittent fevers up to 37.8 C; marked fatigue; reduced appetite; no melena, no rash, no eye symptoms recalled. Occupation: farmer. No family history of celiac disease.",
+"vitals": {"bp": "100/65 mmHg", "hr": "88 bpm", "rr": "16/min", "temp": "37.4 C", "spo2": "98%"},
+"exam": "Cachectic man, pale conjunctivae. Abdomen soft, mildly distended, non-tender, no organomegaly or masses. Trace bilateral ankle edema. Mild tenderness of both wrists without synovitis.",
+"labs": [
+{"name": "Hemoglobin", "value": "10.6 g/dL (13.5-17.5)", "flag": "low"},
+{"name": "MCV", "value": "88 fL (80-100)", "flag": "normal"},
+{"name": "ESR", "value": "68 mm/h (0-20)", "flag": "high"},
+{"name": "CRP", "value": "46 mg/L (< 5)", "flag": "high"},
+{"name": "Albumin", "value": "2.8 g/dL (3.5-5.0)", "flag": "low"},
+{"name": "Anti-tTG IgA", "value": "4 U/mL (0-10)", "flag": "normal"},
+{"name": "72-hour fecal fat", "value": "21 g/day (normal < 6 g/day)", "flag": "high"}
+]
+},
+"steps": [
+{
+"id": "L5_malabsorption_case2_s1",
+"prompt": "After the initial malabsorption work-up, which diagnosis best fits this presentation?",
+"options": [
+"Whipple's disease",
+"Celiac disease",
+"Lactose intolerance",
+"Chronic pancreatitis",
+"Small-bowel bacterial overgrowth"
+],
+"correct_index": 0,
+"explanation_ar": "سوء امتصاص مع ألم مفاليجي هاجر وحمى خفيفة عند مزارع قوقازي متوسط العمر مع ESR وCRP مرتفعين هو البطاقة الكلاسيكية لداء ويبل، وهو عدوى جرثومية نادرة تصيب الجهاز الهضمي غالباً ويمكن أن تصيب المفاصل والدماغ والقلب والعيون. الداء البطني أقل ترجيحاً مع أضداد tTG طبيعية وغياب الصورة الحديدية، وعدم تحمل اللاكتوز لا يسبب التهاباً جهازياً ولا نقص ألبومين، والتهاب البنكرياس المزمن لا يفسر الألم المفصلي والحمى، وفرط النمو الجرثومي ممكن لكنه يتطلب ركوداً معوياً (رتوج، عروة عمياء، تضيقات، سكري، تصلب جلد) غير موجود في القصة.",
+"xp": 10,
+"hints": [
+"Occupational exposure (farmer) + systemic inflammation + malabsorption.",
+"Joint pain precedes the diarrhea in this rare bacterial infection."
+]
+},
+{
+"id": "L5_malabsorption_case2_s2",
+"prompt": "Which diagnostic procedure should be performed next?",
+"options": [
+"Upper endoscopy with duodenal biopsy for Periodic acid-Schiff (PAS) staining",
+"Lactose tolerance test",
+"Schilling test",
+"Barium enema",
+"HLA-DQ2/DQ8 typing"
+],
+"correct_index": 0,
+"explanation_ar": "خطوة التشخيص الأولى في داء ويبل هي تنظير العلوي مع خزعة العفج وصبغتها بصبغة PAS لكشف البلاعم المحشوة بالمادة الموجبة، وهو أول بنود المحاضرة التشخيصية. اختبار اللاكتوز يختبر نقص اللاكتاز، وشيلنغ يختبر امتصاص B12 ولا يشخص داء ويبل، وحقنة الباريوم ليست اختباراً مؤكداً، والتنميط HLA يخص الداء البطني ولا قيمة له هنا.",
+"xp": 10
+},
+{
+"id": "L5_malabsorption_case2_s3",
+"prompt": "The biopsy shows PAS-positive macrophages in the lamina propria. Which confirmatory molecular test does the lecture list, and on which specimens can it be applied?",
+"options": [
+"PCR sequencing bacterial 16sRNA — applicable to duodenal tissue, lymph node, pleural-fluid cells and peripheral blood",
+"PCR for HLA-DQB1*06",
+"Serum protein electrophoresis",
+"Fecal calprotectin",
+"Routine aerobic blood culture"
+],
+"correct_index": 0,
+"explanation_ar": "تأكيد داء ويبل يكون بتفاعل PCR الذي يسلسل الحمض الريبي النووي 16s الجرثومي، ويمكن تطبيقه على النسيج العفجي والعقد اللمفية وخلايا سائل الجنبة والدم المحيطي كما نصت المحاضرة. الـ HLA-DRB1*13 وDQB1*06 عوامل خطورة وراثية لا اختبارات تشخيصية، والرحلان البروتيني والكالبروتكتين البرازي والزرع الدمي الاعتيادي ليست وسائل تشخيص هذا الجرثوم.",
+"xp": 15
+},
+{
+"id": "L5_malabsorption_case2_s4",
+"prompt": "What is the causative organism of this disease?",
+"options": [
+"Tropheryma whipplei",
+"Giardia lamblia",
+"Campylobacter jejuni",
+"Salmonella typhi",
+"Clostridioides difficile"
+],
+"correct_index": 0,
+"explanation_ar": "المسبب هو جرثوم Tropheryma whipplei كما ذكرت المحاضرة، وهو عدوى جرثومية نادرة تعطل تفكيك الدهون والكربوهيدارات وتصيب أحياناً الدماغ والقلب والمفاصل والعيون. الجيارديا طفيلي معوي بسيط، والكامبيلوباكتر والسالمونيلا تسبب إسهالات حادة التهابية، والعصية الصعبة تسبب التهاب قولون مترافق بالمضادات الحيوية، ولا واحد منها يعطي بلاعم PAS الموجبة.",
+"xp": 10
+}
+],
+"debriefing_ar": "التشخيص النهائي: داء ويبل الناتج عن الإصابة بجرثوم Tropheryma whipplei. الدروس المستفادة: عندما يجتمع سوء امتصاص مع أعراض جهازية (مفاصل، حمى، التهاب) عند رجل قوقازي متوسط العمر أو أكبر يعمل في الزراعة أو الصرف الصحي، فكر فوراً بداء ويبل. خطوات التشخيص الثلاث التي تذكرها المحاضرة: صبغة PAS على الخزعة، ثم PCR للـ 16sRNA على النسيج العفجي أو الدم أو العقد اللمفية أو سائل الجنبة، مع اضطرابات مخبرية داعمة (ESR وCRP مرتفعان، فقر دم الأمراض المزمنة، نقص الألبومين). لاحظ أن المفارقة كانت تسبق الإسهال، وهي سمة شهيرة لهذا المرض، وأن أضداد tTG الطبيعية أبعدت الداء البطني في هذه الحالة.",
+"difficulty": "advanced",
+"order_index": 1
+}
+]
+}

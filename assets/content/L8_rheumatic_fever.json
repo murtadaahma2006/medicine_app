@@ -1,0 +1,1087 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L8_rheumatic_fever",
+    "specialty": "internal_medicine",
+    "title": "Acute Rheumatic Fever",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L8 Rheumatic fever.pdf",
+      "page_count": 38
+    },
+    "tags": [
+      "rheumatic fever",
+      "Jones criteria",
+      "group A streptococcus",
+      "pancarditis",
+      "Sydenham chorea",
+      "erythema marginatum",
+      "Aschoff nodules",
+      "secondary prophylaxis",
+      "rheumatic heart disease"
+    ],
+    "order_index": 8,
+    "golden_tip": [
+      "EXAM TRAP: Arthritis is the most common and EARLIEST major manifestation of acute rheumatic fever (75%), while chorea (>= 3 months later) and subcutaneous nodules are LATE. Erythema marginatum and subcutaneous nodules occur in only ~5% of patients.",
+      "Aschoff nodules are PATHOGNOMONIC for rheumatic carditis and occur ONLY in the heart — composed of multinucleated giant cells surrounded by macrophages and T lymphocytes, and are NOT seen until the subacute or chronic phases.",
+      "Long-term benzathine penicillin prophylaxis prevents further attacks of acute rheumatic fever but does NOT protect against infective endocarditis — a classic exam distinction.",
+      "Isolated chorea or chronic carditis can be diagnosed as rheumatic fever WITHOUT evidence of preceding streptococcal infection, if other causes are excluded (diagnosis by exclusion).",
+      "ASO titre: raised in 80% of adult acute RF cases (> 200 in adults, > 300 in children) but NORMAL in most cases of isolated chorea."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L8_c1",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Epidemiology, Pathogenesis and Histopathology",
+      "summary_ar": "حمى الروماتيزم الحادة: الوبائيات (5-15 سنة)، المنشأ المناعي (تحسس نمط ثانٍ وتحاكٍ جزيئي مع العقديات المجموعة A)، والنسيج المميز (عقيدات أشوف).",
+      "sections": [
+        {
+          "heading": "Epidemiology",
+          "body_text": "Acute rheumatic fever usually affects **children and young adults between the ages of 5 and 15 years**. It is now **rare in high-income countries** in Western Europe and North America, but **remains endemic in the Indian subcontinent, Africa and South America** — a distribution driven by crowding, untreated streptococcal pharyngitis and limited access to healthcare. Because the disease continues to cause the bulk of global valvular heart disease in young people in endemic regions, awareness of its presentation remains essential even where the disease has become rare.\n\nA closing teaching message of the lecture (framed for endemic regions) bears remembering: **malaria is not the only cause of joint pain and fever — joint pain and fever can indicate acute rheumatic fever.**"
+        },
+        {
+          "heading": "Pathogenesis (Immune-Mediated, Molecular Mimicry)",
+          "body_text": "In a **genetically susceptible host**, the condition is triggered by an **immune-mediated (type II hypersensitivity reaction), delayed response to infection with specific strains of group A streptococci**, whose antigens **cross-react with cardiac myosin and sarcolemmal membrane proteins** (molecular mimicry).\n\n**Antibodies produced against the streptococcal antigens** cause inflammation in the **endocardium, myocardium and pericardium**, as well as the **joints, skin and nervous system** — explaining why rheumatic fever is a multisystem disease.\n\nThe lecture's pathophysiology flowchart traces the whole sequence:\n1. **Sore throat** — pharyngeal infection with beta-haemolytic (group A) streptococcus.\n2. **Immune response in the lymph node** — B lymphocytes generate antistreptococcal antibodies.\n3. **Blood vessel dissemination** — the antibodies travel in the bloodstream.\n4. **Deposition of cross-reactive antibody** in the heart — producing **acute rheumatic heart disease** with three pathological results:\n   - **Valvular vegetations** (verrucous lesions on leaflets),\n   - **Myocardial Aschoff bodies** (the granulomatous lesion of rheumatic myocarditis),\n   - **Fibrinous pericarditis** (the classic 'bread-and-butter' appearance).",
+          "key_points": [
+            "Genetically susceptible host + specific group A strep strains",
+            "Type II hypersensitivity, delayed immune response",
+            "Cross-reactivity with cardiac myosin and sarcolemmal membrane proteins",
+            "Antibodies inflame endocardium, myocardium, pericardium, joints, skin, nervous system",
+            "Results: vegetations, Aschoff bodies, fibrinous pericarditis"
+          ]
+        },
+        {
+          "heading": "Histopathology",
+          "body_text": "Two histological findings define rheumatic carditis:\n\n- **Fibrinoid degeneration** is seen in the collagen of connective tissues (an early, non-specific acute-phase change).\n- **Aschoff nodules (bodies)** are **pathognomonic** and occur **only in the heart**. They are composed of **multinucleated giant cells surrounded by macrophages and T lymphocytes**, and are **not seen until the subacute or chronic phases of rheumatic carditis** — an important timing point: a patient presenting in the first days of acute rheumatic fever may not yet demonstrate them.\n\nThe lecture also illustrates the histology of rheumatic myocarditis on H&E staining: a focal inflammatory infiltrate of dark nuclei within the myocardium, with disruption of the adjacent cardiac myocytes — loss of striations, fragmentation (myocytolysis) and interstitial oedema — surrounded by otherwise normal pink-staining myocardial fibres.",
+          "key_points": [
+            "Fibrinoid degeneration of collagen",
+            "Aschoff nodules: pathognomonic, only in the heart",
+            "Composition: multinucleated giant cells + macrophages + T lymphocytes",
+            "Not seen until subacute/chronic phases of rheumatic carditis"
+          ],
+          "check": {
+            "prompt": "Which histological finding is pathognomonic of rheumatic carditis and where is it found?",
+            "options": [
+              "Aschoff nodules — only in the heart",
+              "Fibrinoid degeneration — only in the joints",
+              "Libman-Sacks vegetations — only on the mitral valve",
+              "Caseating granulomas — only in the pericardium"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عقيدات أشوف مميزة تشخيصياً لحمى الروماتيزم ولا توجد إلا في القلب، وتظهر في الأطوار تحت الحادة/المزمنة؛ والتليف الفبريني تغير غير نوعي، وعقيدات ليبرمان-ساكس تخص الذأباء، وال granulomas حالة للسلّ."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Molecular mimicry",
+          "definition_ar": "تشابه مستضدات العقديات مع بروتينات القلب (الميوسين وأغشية الساركوليما) فيهاجم الجسم أنسجته الخاصة."
+        },
+        {
+          "term": "Aschoff nodule",
+          "definition_ar": "العلامة النسيجية المميزة لالتهاب القلب الروماتيزمي: خلايا عملاقة متعددة الأنوية تحيط بها بلاعم ولمفيات T."
+        },
+        {
+          "term": "Pancarditis",
+          "definition_ar": "التهاب يشمل طبقات القلب الثلاث: الشغاف والعضل والتامور."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L8_c2",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Clinical Features I: Presentation and Carditis",
+      "summary_ar": "مقدمة المرض متعدد الأجهزة بعد 2-3 أسابيع من التهاب البلعوم العقدي، والتهاب القلب الشامل (pancarditis): أعراضه، علاماته، اللغطات بما فيها لغط كاري كومبس، وتغيرات التخطيط.",
+      "sections": [
+        {
+          "heading": "General Presentation",
+          "body_text": "Acute rheumatic fever is a **multisystem disorder** that appears **2-3 weeks after an episode of streptococcal pharyngitis**. Importantly, **there may be no history of sore throat** — the preceding pharyngitis can be mild or silent, so a negative pharyngeal history never excludes the diagnosis.\n\nIt usually presents with **fever, anorexia, lethargy and joint pain**. The full clinical picture then unfolds as the major manifestations (carditis, arthritis, chorea, erythema marginatum, subcutaneous nodules) appear in their characteristic temporal sequence: arthritis and carditis come earliest (peaking around 1-1.5 months), erythema marginatum is low-grade and persistent, while chorea and subcutaneous nodules appear late (from about 1.5-3 months onward).",
+          "key_points": [
+            "Multisystem disorder",
+            "2-3 weeks after streptococcal pharyngitis",
+            "There may be NO history of sore throat",
+            "Presents with fever, anorexia, lethargy and joint pain"
+          ]
+        },
+        {
+          "heading": "Carditis — The Defining Manifestation",
+          "body_text": "Rheumatic fever causes a **pancarditis** involving the **endocardium, myocardium and pericardium to varying degrees**. Its **incidence declines with increasing age, ranging from 90% at 3 years to around 30% in adolescence** — i.e., the youngest children get the worst carditis.\n\n**Symptoms of carditis:**\n- **Breathlessness** (due to heart failure or pericardial effusion).\n- **Palpitations or chest pain** (usually due to pericarditis or pancarditis).\n- **Syncope** (AV block).\n\n**Signs of carditis:**\n- **Tachycardia** (often out of proportion to fever).\n- **Cardiac enlargement** (mild).\n- **Pericarditis** — may cause chest pain, a **pericardial friction rub** and precordial tenderness.\n- **Cardiac failure** — may be due to **myocardial dysfunction or valvular regurgitation**.\n\n**New or changed murmurs:**\n- A **soft systolic murmur due to mitral regurgitation** is very common.\n- **Aortic regurgitation occurs in 50% of cases.**\n- A **soft mid-diastolic murmur (the Carey Coombs murmur)** is typically due to **valvulitis, with nodules forming on the mitral valve leaflets**.\n- The **tricuspid and pulmonary valves are rarely involved**.\n\n**ECG changes in carditis:** commonly **ST and T wave changes** (myocarditis and pericarditis); conduction defects — **first-degree AV block** (the commonest), and rarely 2nd or 3rd degree AV block. The lecture's example ECG demonstrates a **right bundle branch block** pattern (rSR' in V1 with wide slurred S waves in lateral leads) as another conduction abnormality seen in rheumatic carditis.",
+          "key_points": [
+            "Pancarditis: endocardium + myocardium + pericardium",
+            "Carditis incidence: 90% at 3 years -> ~30% in adolescence",
+            "MR soft systolic murmur very common; AR in 50%",
+            "Carey Coombs murmur: soft mid-diastolic, from valvulitis with mitral nodules",
+            "Tricuspid and pulmonary valves rarely involved",
+            "ECG: ST/T changes; first-degree AV block commonest, rarely 2nd/3rd degree"
+          ],
+          "check": {
+            "prompt": "A 10-year-old boy with acute rheumatic fever develops a new soft mid-diastolic murmur at the apex. What is this murmur called and what causes it?",
+            "options": [
+              "Austin Flint murmur — aortic regurgitation jet striking the mitral valve",
+              "Carey Coombs murmur — valvulitis with nodules forming on the mitral valve leaflets",
+              "Graham Steell murmur — pulmonary regurgitation from pulmonary hypertension",
+              "Means-Lerman scratch — hyperdynamic flow in hyperthyroidism"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "لغط كاري كومبس لغط انبساطي وسطي ناعم في حمى الروماتيزم، سببه التهاب الصمام (valvulitis) مع تشكل عقيدات على ورقات التاجي. أوستن فلينت يخص ارتجاع الأبهر، وغراهام ستيل يخص ارتجاع الرئوي بضغط رئوي عالٍ."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Pancarditis",
+          "definition_ar": "التهاب الطبقات الثلاث في حمى الروماتيزم الحادة."
+        },
+        {
+          "term": "Carey Coombs murmur",
+          "definition_ar": "لغط انبساطي وسطي ناعم قصير نتيجة التهاب الصمام التاجي مع عقيدات على الوريقات في الحمى الروماتيزمية الحادة."
+        },
+        {
+          "term": "Pericardial friction rub",
+          "definition_ar": "حكّة تامورية مسموعة نتيجة احتكاق طبقتي التامور الملتهبتين."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L8_c3",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Clinical Features II: Arthritis, Skin Lesions, Chorea and Other Features",
+      "summary_ar": "التهاب المفاصل (الأشيع والأقدم 75%)، الآفات الجلدية (حمامى هامشية وعقيدات تحت الجلد ~5% متأخرة)، رقص سيدنهام (متأخر، إناث، 70% مع التهاب قلب)، ومظاهر نادرة أخرى.",
+      "sections": [
+        {
+          "heading": "Arthritis — The Most Common and Earliest Major Manifestation",
+          "body_text": "Arthritis is the **most common and earliest major manifestation**, occurring **in 75%** of patients. Its classic characteristics:\n- **Acute** — lasting between 1 day and 4 weeks.\n- **Inflammatory** — red, swollen, tender joints.\n- **Asymmetric.**\n- **Migratory** — affecting joints in succession (one joint settles as the next flares).\n- **Large joints typically affected** — the knees, ankles, elbows and wrists.\n- **Dramatic response to NSAIDs** — such a rapid, complete response that it can nearly dissolve the clinical picture if analgesics are given before assessment.",
+          "key_points": [
+            "Most common and earliest major manifestation (75%)",
+            "Acute (1 day to 4 weeks), red/swollen/tender",
+            "Asymmetric and migratory (in succession)",
+            "Large joints: knees, ankles, elbows, wrists",
+            "Dramatic response to NSAID"
+          ],
+          "check": {
+            "prompt": "Which pattern of joint involvement is typical of acute rheumatic fever?",
+            "options": [
+              "Symmetric small-joint arthritis of the hands lasting months",
+              "Acute, asymmetric, migratory arthritis of large joints with dramatic NSAID response",
+              "Chronic destructive monoarthritis of the hip",
+              "Migratory polyarthralgia without objective swelling, lasting years"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التهاب المفاصل الروماتيزمي: حاد، غير متناظر، مهاجر بالتعاقب، يصيب المفاصل الكبيرة (الركبتين والكاحلين والمرفقين والرسغين) ويستجيب بشكل درامي على مضادات الالتهاب. التناظر والمفاصل الصغيرة والمزمن التخريبي يوجه نحو الروماتويد."
+          }
+        },
+        {
+          "heading": "Skin Lesions — Erythema Marginatum and Subcutaneous Nodules",
+          "body_text": "Skin lesions occur in **about 5% of patients** and appear **more than 3 weeks after the onset of other manifestations** — they therefore **help to CONFIRM rather than make the diagnosis**.\n\n**Erythema marginatum:**\n- Starts as **red macules that fade in the centre but remain at the edges.**\n- Occurs mainly on the **trunk and proximal extremities but NOT the face.**\n- The resulting red rings or 'margins' may **coalesce or overlap**, producing the classic expanding polycyclic, serpiginous, non-pruritic rash with central clearing.\n\n**Subcutaneous nodules:**\n- **Small (0.5-2.0 cm), firm and painless.**\n- **Best felt over extensor surfaces of bone or tendons** (e.g., the olecranon region), as firm, mobile, non-inflamed swellings under the skin.\n- Photographs in the lecture emphasise that **nodules of rheumatoid arthritis are larger** — a key differential point at the bedside.",
+          "key_points": [
+            "Skin lesions in ~5%; appear >3 weeks after other manifestations",
+            "Erythema marginatum: red macules fading centrally, trunk/proximal limbs, NOT face, rings coalesce",
+            "Subcutaneous nodules: 0.5-2.0 cm, firm, painless, extensor surfaces",
+            "RF nodules are smaller than rheumatoid nodules",
+            "Late skin findings confirm rather than establish the diagnosis"
+          ]
+        },
+        {
+          "heading": "Sydenham's Chorea (St Vitus Dance)",
+          "body_text": "Sydenham's chorea is the classic **late neurological manifestation**:\n- It appears **at least 3 months after the episode of acute rheumatic fever**, when **all the other signs may have disappeared**.\n- It occurs in **up to one-third of cases** and is **more common in females**.\n- **Up to 70% of cases have carditis** — so a child presenting with chorea deserves a careful cardiac examination and echocardiography.\n- It consists of **purposeless, involuntary choreiform movements of the hands, feet or face** (the lecture photograph and video illustrate the jerky, writhing limb movements).\n- **Emotional lability may be the first feature.**\n- **Prognosis: spontaneous recovery usually occurs within a few months.**\n\n**Other rare features** of acute rheumatic fever include **pleurisy, pleural effusion and pneumonia**.",
+          "key_points": [
+            "Late manifestation: at least 3 months after the episode",
+            "Up to one-third of cases; more common in females",
+            "Up to 70% of cases have carditis",
+            "Purposeless involuntary choreiform movements of hands, feet or face",
+            "Emotional lability may be the first feature",
+            "Spontaneous recovery usually within a few months",
+            "Rare features: pleurisy, pleural effusion, pneumonia"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Erythema marginatum",
+          "definition_ar": "حمامى هامشية: بقع حمراء تبهت مركزها وتبقى حوافها على الجذع والأطراف القريبة لا الوجه؛ معيار جونز الكبير."
+        },
+        {
+          "term": "Subcutaneous nodules",
+          "definition_ar": "عقيدات تحت الجلد: قاسية غير مؤلمة 0.5-2 سم على سطوح البسط؛ أصغر من عقيدات الروماتويد."
+        },
+        {
+          "term": "Sydenham chorea",
+          "definition_ar": "رقص سيدنهام: حركات لاإرادية عبثية متأخرة (≥3 أشهر) تكثر في الإناث، وقد يسبقها تقلب عاطفي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L8_c4",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Diagnosis: Investigations and the Jones Criteria",
+      "summary_ar": "التحاليل (ESR/CRP، زرع الحلق، ASO، التخطيط والصدى) ومعايير جونز الكلاسيكية والمحدثة 2015 مع فروق الخطورة المنخفضة/العالية والتشخيص الافتراضي بالاستبعاد.",
+      "sections": [
+        {
+          "heading": "Investigations",
+          "body_text": "The laboratory work-up serves two purposes: documenting inflammation and documenting preceding streptococcal infection.\n\n- **WBC, ESR and CRP** — for **monitoring progress of the disease** (and they also count as minor Jones criteria when raised).\n- **Throat cultures** — positive results are obtained in **only 10-25%** of cases (the pharyngitis has usually resolved by presentation).\n- **Antistreptolysin O antibodies (ASO)** — a **raised titre in 80% of adult cases of acute rheumatic fever** but **normal in most cases of chorea** (because chorea is a late manifestation and antibody titres have fallen). Interpretive thresholds: **> 200 in adults, > 300 in children**.\n- **ECG** — for conduction abnormalities (first-degree AV block and other block degrees, ST/T changes).\n- **Echocardiography** — to detect and quantify carditis, valve regurgitation and vegetations (subclinical carditis).\n- **CXR** — may show **cardiomegaly and pulmonary oedema** in severe carditis.\n\nEvidence of recent streptococcal infection can also come from a **history of recent scarlet fever** — the lecture illustrates its classic findings: strawberry tongue, tonsillar exudate, circumoral pallor and a fine 'sandpaper' rash.",
+          "key_points": [
+            "WBC/ESR/CRP monitor disease progress",
+            "Throat cultures positive in only 10-25%",
+            "ASO raised in 80% of adult acute RF; normal in most chorea",
+            "ASO thresholds: >200 adults, >300 children",
+            "ECG (AV block), echocardiography (carditis), CXR (cardiomegaly, pulmonary oedema)"
+          ]
+        },
+        {
+          "heading": "The Jones Criteria (Classical)",
+          "body_text": "**Major manifestations:**\n- **Carditis**\n- **Polyarthritis**\n- **Chorea** (a LATE manifestation)\n- **Erythema marginatum**\n- **Subcutaneous nodules** (LATE; ~5%)\n\n**Minor manifestations:**\n- **Fever**\n- **Arthralgia**\n- **Raised erythrocyte sedimentation rate or C-reactive protein**\n- **Previous rheumatic fever**\n- **Leucocytosis**\n- **First-degree atrioventricular block**\n\n**Plus: supporting evidence of preceding streptococcal infection** — recent scarlet fever, raised antistreptolysin O or other streptococcal antibody titre, or positive throat culture. (*Evidence of recent streptococcal infection is particularly important if there is only one major manifestation.*)\n\n**Diagnostic rule:** the diagnosis of an initial episode of ARF requires **2 major manifestations, OR 1 major plus 2 minor manifestations**, in the presence of supporting evidence of preceding GAS infection.",
+          "key_points": [
+            "Major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules",
+            "Minor: fever, arthralgia, raised ESR/CRP, previous RF, leucocytosis, first-degree AV block",
+            "Plus evidence of preceding streptococcal infection",
+            "Initial ARF: 2 major OR 1 major + 2 minor"
+          ],
+          "check": {
+            "prompt": "A child has fever, arthralgia, raised ESR and leucocytosis, plus a positive throat culture for group A streptococcus, but no major manifestation. Does this satisfy the Jones criteria for acute rheumatic fever?",
+            "options": [
+              "Yes — four minor manifestations with strep evidence are sufficient",
+              "No — an initial episode requires 2 major, or 1 major plus 2 minor manifestations",
+              "Yes — any single minor manifestation with a positive culture is sufficient",
+              "No — Jones criteria cannot be applied when the throat culture is positive"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النوبة الأولى تتطلب معيارين كبيرين أو كبير + صغيرين مع دليل عدوى عقدية سابقة؛ الحرارة وألم المفاصل وارتفاع ESR والكريات البيض كلها معايير صغيرة لا تكفي وحدها للنوبة الأولى (لكن ثلاثة صغار تكفي للنكس في التحديث 2015)."
+          }
+        },
+        {
+          "heading": "2015 Jones Criteria Revision (Risk-Stratified)",
+          "body_text": "The 2015 revision risk-stratifies populations and applies to **all patient populations with evidence of preceding GAS infection**:\n\n**Diagnosis thresholds:**\n- **Initial ARF:** 2 major manifestations OR 1 major + 2 minor manifestations.\n- **Recurrent ARF:** 2 major OR 1 major + 2 minor **OR 3 minor** manifestations.\n\n**Major criteria — differences by population risk:**\n| Criterion | Low-risk populations | Moderate- and high-risk populations |\n|---|---|---|\n| Carditis | Clinical and/or subclinical | Clinical and/or subclinical |\n| Arthritis | **Polyarthritis only** | **Monoarthritis or polyarthritis; polyarthralgia** |\n| Chorea | Yes | Yes |\n| Erythema marginatum | Yes | Yes |\n| Subcutaneous nodules | Yes | Yes |\n\n**Minor criteria — differences by population risk:**\n| Criterion | Low-risk populations | Moderate- and high-risk populations |\n|---|---|---|\n| Joint manifestation | **Polyarthralgia** | **Monoarthralgia** |\n| Fever | **>= 38.5 C** | **>= 38 C** |\n| ESR / CRP | **ESR >= 60 mm in the 1st hour and/or CRP >= 3.0 mg/dL** | **ESR >= 30 mm in the 1st hour and/or CRP >= 3.0 mg/dL** |\n| Prolonged PR interval | After accounting for age variability (cannot be counted if carditis is used as a major criterion) | Same |\n\n**Low-risk populations** are those with ARF incidence **<= 2/100,000 school-aged children** or all-age rheumatic heart disease prevalence **<= 1/1000 population per year**. In moderate/high-risk populations, the criteria are deliberately loosened (monoarthritis counts as major, lower fever/ESR thresholds) to avoid missing cases.",
+          "key_points": [
+            "Recurrent ARF may be diagnosed with only 3 minor manifestations",
+            "Low-risk: polyarthritis only as major; high-risk: monoarthritis/polyarthritis/polyarthralgia",
+            "Fever threshold: >=38.5 C (low-risk) vs >=38 C (high-risk)",
+            "ESR: >=60 mm/h (low-risk) vs >=30 mm/h (high-risk); CRP >=3.0 mg/dL both",
+            "Prolonged PR cannot be double-counted when carditis is a major criterion",
+            "Low-risk = ARF incidence <=2/100,000 school-aged children or RHD prevalence <=1/1000"
+          ]
+        },
+        {
+          "heading": "Presumptive Diagnosis Without Strep Evidence",
+          "body_text": "A **presumptive diagnosis can be made without evidence of preceding streptococcal infection** in cases of:\n- **Isolated chorea** (a late manifestation, by which time ASO titres have often normalised), or\n- **Carditis (especially chronic carditis)**,\n\n**if other causes of these have been excluded (diagnosis by exclusion)**. This is a deliberately practical rule: waiting for serological proof in a late or chronic presentation would deny treatment and secondary prophylaxis to patients who need them. In practice it mandates ruling out other causes of chorea (e.g., Sydenham vs other choreiform disorders) and other causes of carditis/valvulitis before committing to the diagnosis of rheumatic fever.",
+          "key_points": [
+            "Isolated chorea: presumptive RF diagnosis without strep evidence",
+            "Chronic carditis likewise — diagnosis by exclusion",
+            "Always exclude other causes first"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Jones criteria",
+          "definition_ar": "معايير تشخيص حمى الروماتيزم: كبريات وصغيرات مع دليل عدوى عقدية سابقة."
+        },
+        {
+          "term": "ASO titre",
+          "definition_ar": "عيار الأجسام المضادة للستربتوليزين O؛ >200 عند البالغين و>300 عند الأطفال يدعم عدوى عقدية حديثة."
+        },
+        {
+          "term": "Subclinical carditis",
+          "definition_ar": "التهاب قلب يُكتشف بالصدى فقط دون لغط أو علامة إكلينيكية؛ يُحتسب معياراً كبيراً في تحديث 2015."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "L8_c5",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Management: Bed Rest, Heart Failure, Antibiotics, Aspirin and Glucocorticoids",
+      "summary_ar": "أهداف العلاج (تحديد الضرر القلبي وتخفيف الأعراض)، الراحة السريرية، علاج القصور، الصاد الحاد، الأسبرين بجرعته ومدته، والستيرويدات في الحالات الشديدة.",
+      "sections": [
+        {
+          "heading": "Aims, Bed Rest and Heart Failure",
+          "body_text": "**The aims of management** are to **limit cardiac damage** and to **relieve symptoms**. There is no therapy that reverses the established immunological injury — treatment is supportive while the episode resolves.\n\n**Bed rest:**\n- The **duration should be guided by symptoms, along with temperature, leucocyte count and ESR** (markers of ongoing inflammation).\n- Patients can then **return to normal physical activity, but strenuous exercise should be avoided in those who have had carditis**.\n\n**Treatment of cardiac failure:**\n- Some patients, **particularly those in early adolescence, develop a fulminant form of the disease with severe mitral regurgitation and, sometimes, concomitant aortic regurgitation.**\n- **If heart failure in these cases does not respond to medical treatment, valve replacement may be necessary.**\n- **Occasionally, AV block may occur** but it is **seldom progressive and usually resolves spontaneously; rarely, pacemaker insertion may be required.**",
+          "key_points": [
+            "Aims: limit cardiac damage + relieve symptoms",
+            "Bed rest guided by symptoms, temperature, WBC and ESR",
+            "Avoid strenuous exercise after carditis",
+            "Fulminant disease (early adolescence): severe MR +/- AR",
+            "Valve replacement if HF refractory to medical therapy",
+            "AV block usually resolves spontaneously; rarely pacemaker"
+          ]
+        },
+        {
+          "heading": "Acute Antibiotic Treatment",
+          "body_text": "Eradication of the organism is given during the acute episode (it does not alter the course of the established attack but clears residual streptococci before long-term prophylaxis begins):\n\n- **A single dose of benzathine benzylpenicillin (1.2 million U IM)**, or\n- **Oral phenoxymethylpenicillin (250 mg four times daily for 10 days).**\n- **If the patient is penicillin-allergic, erythromycin or a cephalosporin can be used.**",
+          "key_points": [
+            "Benzathine benzylpenicillin 1.2 million U IM single dose",
+            "OR phenoxymethylpenicillin 250 mg QID for 10 days",
+            "Penicillin-allergic: erythromycin or cephalosporin"
+          ],
+          "check": {
+            "prompt": "Which regimen is appropriate acute-phase antibiotic therapy for a non-allergic child with acute rheumatic fever?",
+            "options": [
+              "Doxycycline 100 mg twice daily for 3 weeks",
+              "Benzathine benzylpenicillin 1.2 million units IM as a single dose",
+              "Amphotericin B IV for 2 weeks",
+              "No antibiotics — the immune phase has already begun"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الجرعة المفردة من بنزاثين بنسلين 1.2 مليون وحدة عضلياً (أو فينوكسي ميثيل بنسلين 250 ملغ ×4 يومياً لـ10 أيام) هي البروتوكول المعياري لاستئصال العقديات في الطور الحاد؛ الحساسية تُبدَّل بالإريثروميسين أو السيفالوسبورين."
+          }
+        },
+        {
+          "heading": "Aspirin",
+          "body_text": "**Aspirin** is the classical anti-inflammatory agent of acute rheumatic fever:\n- **A response within 24 hours helps confirm the diagnosis** (the fever and arthritis settle remarkably quickly).\n- **A reasonable starting dose is 60 mg/kg body weight/day, divided into six doses.**\n- **In adults, 100 mg/kg per day may be needed, up to the limits of tolerance or a maximum of 8 g per day.**\n- **PPI is recommended for gastric protection** at these doses.\n- Worked example from the lecture: a 36 kg adolescent needs 3600 mg/day = 600 mg (2 tablets of 300 mg) six times daily.\n- **Aspirin should be continued until the ESR has fallen and then gradually tailed off.**",
+          "key_points": [
+            "Response within 24 hours supports the diagnosis",
+            "Starting dose 60 mg/kg/day in six divided doses",
+            "Adults: up to 100 mg/kg/day, maximum 8 g/day",
+            "Add PPI for gastric protection",
+            "Continue until ESR falls, then taper"
+          ]
+        },
+        {
+          "heading": "Glucocorticoids",
+          "body_text": "**Glucocorticoids:**\n- **Produce more rapid symptomatic relief than aspirin** and are **indicated in cases with severe carditis or severe arthritis.**\n- **There is no evidence that long-term steroids are beneficial.**\n- **Prednisolone (1.0-2.0 mg/kg per day in divided doses)** should be **continued until the ESR is normal and then tailed off.**\n\nThe practical algorithm is therefore: mild disease (arthritis, mild carditis) -> aspirin; severe carditis or severe arthritis -> prednisolone; and in all cases, treat heart failure on its merits and consider valve surgery for refractory fulminant regurgitation.",
+          "key_points": [
+            "More rapid symptomatic relief than aspirin",
+            "Indicated for severe carditis or severe arthritis",
+            "No evidence that long-term steroids are beneficial",
+            "Prednisolone 1.0-2.0 mg/kg/day in divided doses until ESR normal, then taper"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Benzathine benzylpenicillin",
+          "definition_ar": "صاد معلق طويل المفعول يُعطى عضلياً كجرعة مفردة لاستئصال العقديات وشهرياً للوقاية الثانوية."
+        },
+        {
+          "term": "Carey Coombs murmur",
+          "definition_ar": "لغط انبساطي وسطي ناعم من التهاب الوريقات التاجية الحاد في الحمى الروماتيزمية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L8_c6",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Secondary Prophylaxis and Chronic Rheumatic Heart Disease",
+      "summary_ar": "الوقاية الثانوية بالبنسلين ومددها حسب بقايا المرض القلبي، التنبيه أن الوقاية لا تحمي من التهاب الشغاف، ووبائيات المرض القلبي الروماتيزمي المزمن وتوزع الصمامات.",
+      "sections": [
+        {
+          "heading": "Long-Term (Secondary) Prophylaxis",
+          "body_text": "Secondary prophylaxis prevents recurrent streptococcal infection and therefore recurrent attacks of rheumatic fever (each recurrence can compound valve damage):\n\n- **Oral phenoxymethylpenicillin (250 mg twice daily)**, or\n- **Benzathine benzylpenicillin (1.2 million U IM monthly) if adherence is in doubt.**\n- **Sulfadiazine or erythromycin may be used if the patient is allergic to penicillin.**\n\n**Duration — stop rules:**\n- **Without residual heart disease:** until **5 years after the last episode or 21 years of age, whichever is later.**\n- **With residual heart disease:** until **10 years after the last episode or 40 years of age, whichever is later.**\n- **The duration should be extended if the patient lives in an area of high prevalence** and has an **occupation (such as teaching) with a high risk of exposure to streptococcal infection.**\n\n**NOTE (high-yield): while long-term antibiotic prophylaxis prevents further attacks of acute rheumatic fever, it does NOT protect against infective endocarditis.** Endocarditis prophylaxis (e.g., before dental procedures in high-risk valvular disease) is a separate consideration with its own indications.",
+          "key_points": [
+            "Phenoxymethylpenicillin 250 mg BD, or benzathine penicillin 1.2 MU IM monthly if adherence in doubt",
+            "Penicillin allergy: sulfadiazine or erythromycin",
+            "No residual heart disease: 5 years after last episode or age 21, whichever later",
+            "Residual heart disease: 10 years after last episode or age 40, whichever later",
+            "Extend for high-prevalence areas or high-exposure occupations (teaching)",
+            "Prophylaxis does NOT protect against infective endocarditis"
+          ],
+          "check": {
+            "prompt": "A 16-year-old student had acute rheumatic fever with carditis and now has persistent moderate mitral regurgitation on echo. Until when should secondary antibiotic prophylaxis continue?",
+            "options": [
+              "Until 5 years after the last episode or age 21, whichever is later",
+              "Until 10 years after the last episode or age 40, whichever is later",
+              "Until the ESR normalises, then stop",
+              "Lifelong daily aspirin instead of antibiotics"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "وجود مرض قلبي متبقٍ (الارتجاع التاجي) يفرض الاستمرار حتى 10 سنوات من آخر هجمة أو سن 40 أيهما ألاحق؛ قاعدة الخمس سنوات/سن 21 تخص من دون مرض متبقٍ."
+          }
+        },
+        {
+          "heading": "Chronic Rheumatic Heart Disease",
+          "body_text": "**Chronic valvular heart disease develops in at least half of those affected by rheumatic fever with carditis.** Two-thirds of cases occur in **women**.\n\n- A **history of rheumatic fever or chorea is present in only about half** of all patients with chronic rheumatic heart disease — the other half recall no antecedent illness.\n- **The mitral valve is affected in more than 90% of cases.**\n- **The aortic valve is the next most frequently involved**, followed by the **tricuspid** and then the **pulmonary valve**.\n- **Isolated mitral stenosis accounts for about 25% of all cases**, and an **additional 40% have mixed mitral stenosis and regurgitation.**\n\nThis valve gradient (mitral >> aortic > tricuspid > pulmonary) and the female predominance of chronic rheumatic mitral disease are both classic exam facts.",
+          "key_points": [
+            "Chronic valvular disease in at least half of those with RF carditis",
+            "Two-thirds of cases are women",
+            "History of RF/chorea in only about half of chronic RHD patients",
+            "Mitral valve affected in >90%; aortic next; tricuspid then pulmonary",
+            "Isolated MS ~25%; additional 40% mixed MS + MR"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Secondary prophylaxis",
+          "definition_ar": "الوقاية من نكس الحمى الروماتيزمية بالبنسلين طويل الأمد وفق مدد محددة حسب بقايا المرض القلبي."
+        },
+        {
+          "term": "Chronic rheumatic heart disease",
+          "definition_ar": "اعتلال صمامي مزمن (تندب وتليف) يتبع حمى الروماتيزم مع التهاب قلب؛ يصيب التاجي في أكثر من 90%."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L8_f1",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c1",
+      "card_type": "basic",
+      "front_text": "Which age group does acute rheumatic fever typically affect, and where does it remain endemic?",
+      "back_text": "Children and young adults aged 5-15 years. Rare in high-income Western countries, but endemic in the Indian subcontinent, Africa and South America.",
+      "explanation_ar": "تصيب الأطفال واليافعين 5-15 سنة؛ نادرة في الدول الغنية ومتوطنة في شبه القارة الهندية وأفريقيا وأمريكا الجنوبية.",
+      "tags": [
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "L8_f2",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c1",
+      "card_type": "basic",
+      "front_text": "What is the immunological mechanism of acute rheumatic fever?",
+      "back_text": "An immune-mediated (type II hypersensitivity) delayed response to specific strains of group A streptococci in a genetically susceptible host. Streptococcal antigens cross-react with cardiac myosin and sarcolemmal membrane proteins (molecular mimicry); the antibodies inflame endocardium, myocardium, pericardium, joints, skin and nervous system.",
+      "explanation_ar": "تحسس نمط ثانٍ متأخر في مضيف مهيأ وراثياً؛ مستضدات العقديات تتشابه مع ميوسين القلب وأغشية الساركوليما فتحدث الأجسام المضادة التهاباً في القلب والمفاصل والجلد والجهاز العصبي.",
+      "tags": [
+        "pathogenesis"
+      ]
+    },
+    {
+      "id": "L8_f3",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c1",
+      "card_type": "basic",
+      "front_text": "What are Aschoff nodules, what are they composed of, and when do they appear?",
+      "back_text": "Pathognomonic granulomas occurring ONLY in the heart, composed of multinucleated giant cells surrounded by macrophages and T lymphocytes; not seen until the subacute or chronic phases of rheumatic carditis.",
+      "explanation_ar": "عقيدات أشوف: مميزة وتوجد في القلب فقط؛ خلايا عملاقة متعددة الأنوية تحيط بها بلاعم ولمفيات T، ولا تظهر إلا في الأطوار تحت الحادة/المزمنة.",
+      "is_vivid": true,
+      "tags": [
+        "histopathology",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L8_f4",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "How long after streptococcal pharyngitis does acute rheumatic fever appear, and can the sore throat be absent?",
+      "back_text": "2-3 weeks after the episode of streptococcal pharyngitis; there may be NO history of sore throat (the preceding pharyngitis can be silent).",
+      "explanation_ar": "تظهر بعد 2-3 أسابيع من التهاب البلعوم العقدي، وقد لا يوجد تاريخ التهاب حلق أصلاً.",
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L8_f5",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "How does the incidence of rheumatic carditis change with age?",
+      "back_text": "It declines with increasing age: from 90% at 3 years to around 30% in adolescence. Rheumatic fever causes a pancarditis (endocardium + myocardium + pericardium).",
+      "explanation_ar": "التهاب القلب يتراجع مع العمر: 90% بعمر 3 سنوات إلى نحو 30% في المراهقة؛ وهو التهاب شامل للطبقات الثلاث.",
+      "tags": [
+        "carditis"
+      ]
+    },
+    {
+      "id": "L8_f6",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "Describe the murmurs of acute rheumatic carditis.",
+      "back_text": "Soft systolic murmur of mitral regurgitation (very common); aortic regurgitation in 50% of cases; the Carey Coombs murmur — a soft mid-diastolic murmur from valvulitis with nodules on the mitral leaflets. Tricuspid and pulmonary valves are rarely involved.",
+      "explanation_ar": "لغط انقباضي ناعم لارتجاع تاجي (شائع جداً)، ارتجاع أبهر في 50%، ولغط كاري كومبس الانبساطي الوسطي الناعم من التهاب الصمام؛ الصمامان الثلاثي والرئوي نادراً ما يُصابان.",
+      "tags": [
+        "murmurs"
+      ]
+    },
+    {
+      "id": "L8_f7",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c2",
+      "card_type": "basic",
+      "front_text": "What ECG changes occur in rheumatic carditis?",
+      "back_text": "ST and T wave changes (myocarditis/pericarditis); conduction defects — first-degree AV block is the commonest, and rarely 2nd or 3rd degree AV block.",
+      "explanation_ar": "تغيرات ST وT، واضطرابات توصيل: حصار أذيني بطيني من الدرجة الأولى هو الأشيع، ونادراً الثاني أو الثالث.",
+      "tags": [
+        "ECG"
+      ]
+    },
+    {
+      "id": "L8_f8",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c3",
+      "card_type": "basic",
+      "front_text": "What are the six characteristic features of rheumatic arthritis?",
+      "back_text": "Most common and earliest major manifestation (75%); acute (1 day-4 weeks); inflamed (red, swollen, tender); asymmetric; migratory (in succession); large joints (knees, ankles, elbows, wrists) with a dramatic response to NSAIDs.",
+      "explanation_ar": "الأشيع والأقدم (75%)؛ حاد (1 يوم-4 أسابيع)؛ ملتهب؛ غير متناظر؛ مهاجر بالتعاقب؛ مفاصل كبيرة مع استجابة درامية لمضادات الالتهاب.",
+      "mnemonic_ar": "تذكّر: (أشيع - حاد - مهاجر - غير متناظر - كبير - يستجيب بسرعة).",
+      "tags": [
+        "arthritis"
+      ]
+    },
+    {
+      "id": "L8_f9",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c3",
+      "card_type": "basic",
+      "front_text": "Describe erythema marginatum and where it occurs.",
+      "back_text": "Red macules that fade in the centre while remaining at the edges, forming rings/margins that may coalesce or overlap; occurs mainly on the trunk and proximal extremities but NOT the face. Part of the ~5% late skin manifestations (>3 weeks after onset).",
+      "explanation_ar": "بقع حمراء تبهت مركزياً وتبقى حوافها مكونة حلقات قد تندمج؛ على الجذع والأطراف القريبة وليس الوجه؛ ضمن الآفات الجلدية المتأخرة (~5% بعد >3 أسابيع).",
+      "tags": [
+        "skin"
+      ]
+    },
+    {
+      "id": "L8_f10",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c3",
+      "card_type": "basic",
+      "front_text": "What are the characteristics of rheumatic subcutaneous nodules and how do they compare with rheumatoid nodules?",
+      "back_text": "Small (0.5-2.0 cm), firm and painless, best felt over extensor surfaces of bone or tendons. Rheumatic nodules are SMALLER than rheumatoid nodules.",
+      "explanation_ar": "صغيرة (0.5-2 سم)، قاسية وغير مؤلمة على سطوح البسط للعظام/الأوتار؛ وأصغر من عقيدات الروماتويد.",
+      "tags": [
+        "skin"
+      ]
+    },
+    {
+      "id": "L8_f11",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c3",
+      "card_type": "basic",
+      "front_text": "Summarise Sydenham's chorea.",
+      "back_text": "Late neurological manifestation appearing at least 3 months after the ARF episode (other signs may have gone); up to one-third of cases; more common in females; up to 70% have carditis; purposeless involuntary choreiform movements of hands/feet/face; emotional lability may be the first feature; spontaneous recovery usually within a few months.",
+      "explanation_ar": "مظهر عصبي متأخر (≥3 أشهر)؛ حتى ثلث الحالات؛ أكثر في الإناث؛ 70% لديهم التهاب قلب؛ حركات لاإرادية عبثية؛ تقلب عاطفي قد يكون أول عرض؛ شفاء تلقائي عادة خلال أشهر.",
+      "tags": [
+        "chorea"
+      ]
+    },
+    {
+      "id": "L8_f12",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "List the Jones MAJOR and MINOR criteria.",
+      "back_text": "Major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules. Minor: fever, arthralgia, raised ESR or CRP, previous rheumatic fever, leucocytosis, first-degree AV block. Plus: evidence of preceding streptococcal infection (recent scarlet fever, raised ASO/other streptococcal antibody titre, positive throat culture).",
+      "explanation_ar": "كبريات: التهاب قلب، التهاب مفاصل متعدد، رقص، حمامى هامشية، عقيدات تحت الجلد. صغيرات: حرارة، ألم مفاصل، ارتفاع ESR/CRP، حمى سابقة، كثرة بيض، حصار AV درجة أولى. مع دليل عدوى عقدية.",
+      "mnemonic_ar": "حيلة للكبريات: JONES = (J)oints آرثريتس، (O)بليغ تـcarditis، (N)odules عقيدات، (E)rythema حمامى، (S)ydenham رقص.",
+      "tags": [
+        "Jones criteria",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L8_f13",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "How is an initial vs recurrent episode of ARF diagnosed (2015 Jones criteria)?",
+      "back_text": "Initial ARF: 2 major manifestations OR 1 major + 2 minor (with evidence of preceding GAS infection). Recurrent ARF: 2 major OR 1 major + 2 minor OR 3 minor manifestations.",
+      "explanation_ar": "النوبة الأولى: معياران كبيران أو كبير + صغيران؛ النكس: معياران كبيران أو كبير + صغيران أو ثلاثة صغار.",
+      "is_vivid": true,
+      "tags": [
+        "Jones criteria"
+      ]
+    },
+    {
+      "id": "L8_f14",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "In the 2015 revision, how do major/minor criteria differ between low-risk and moderate/high-risk populations?",
+      "back_text": "Arthritis major: low-risk = polyarthritis only; high-risk = monoarthritis or polyarthritis or polyarthralgia. Fever minor: >=38.5 C low-risk vs >=38 C high-risk. ESR minor: >=60 mm/h low-risk vs >=30 mm/h high-risk (CRP >=3.0 mg/dL both). Prolonged PR: both, not counted if carditis is a major criterion. Low-risk = ARF incidence <=2/100,000 school-aged children or RHD prevalence <=1/1000/year.",
+      "explanation_ar": "في المجموعات عالية الخطورة يُحتسب التهاب المفصل الوحيد/ألم المفاصل المتعدد معياراً كبيراً وتخفض عتبات الحرارة (≥38) وESR (≥30)؛ التعريف المنخفض: وقوع ≤2/100,000 طفل مدرسي أو انتشار RHD ≤1/1000.",
+      "tags": [
+        "Jones 2015"
+      ]
+    },
+    {
+      "id": "L8_f15",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "card_type": "basic",
+      "front_text": "What are the ASO titre thresholds, its sensitivity in adult ARF, and its behaviour in chorea?",
+      "back_text": "Raised (> 200 in adults, > 300 in children) in 80% of adult cases of acute rheumatic fever; normal in most cases of chorea (late manifestation). Throat cultures are positive in only 10-25%.",
+      "explanation_ar": "عيار ASO: >200 بالغ و>300 طفل؛ مرتفع في 80% من البالغين الحادين وطبيعي في معظم حالات الرقص؛ وزرع الحلق إيجابي في 10-25% فقط.",
+      "is_vivid": true,
+      "tags": [
+        "investigations"
+      ]
+    },
+    {
+      "id": "L8_f16",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "What is the acute antibiotic regimen for rheumatic fever?",
+      "back_text": "Single dose benzathine benzylpenicillin 1.2 million U IM, OR oral phenoxymethylpenicillin 250 mg four times daily for 10 days; erythromycin or a cephalosporin if penicillin-allergic.",
+      "explanation_ar": "بنزاثين بنسلين 1.2 مليون وحدة عضلياً جرعة مفردة أو فينوكسي ميثيل بنسلين 250 ملغ ×4 لـ10 أيام؛ وعند الحساسية إريثروميسين أو سيفالوسبورين.",
+      "tags": [
+        "treatment"
+      ]
+    },
+    {
+      "id": "L8_f17",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "How is aspirin dosed in acute rheumatic fever and for how long?",
+      "back_text": "Start at 60 mg/kg/day divided into six doses (adults may need up to 100 mg/kg/day, max 8 g/day; PPI cover). A response within 24 hours supports the diagnosis. Continue until the ESR has fallen, then tail off gradually.",
+      "explanation_ar": "يبدأ بـ60 ملغ/كغ/يوم على ست جرعات (البالغ حتى 100 ملغ/كغ وبحد أقصى 8 غ/يوم مع PPI)؛ الاستجابة خلال 24 ساعة تدعم التشخيص؛ يستمر حتى هبوط ESR ثم يُخفَّض تدريجياً.",
+      "tags": [
+        "treatment"
+      ]
+    },
+    {
+      "id": "L8_f18",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c5",
+      "card_type": "basic",
+      "front_text": "When are glucocorticoids indicated in acute rheumatic fever and at what dose?",
+      "back_text": "For severe carditis or severe arthritis (more rapid symptomatic relief than aspirin). Prednisolone 1.0-2.0 mg/kg/day in divided doses, continued until the ESR is normal, then tailed off. No evidence that long-term steroids are beneficial.",
+      "explanation_ar": "يُشار إليها في التهاب القلب/المفاصل الشديد؛ بريدنيزولون 1-2 ملغ/كغ/يوم مقسمة حتى يعتدل ESR ثم يخفض؛ لا فائدة مثبتة للستيرويد طويل الأمد.",
+      "tags": [
+        "treatment"
+      ]
+    },
+    {
+      "id": "L8_f19",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "What are the secondary prophylaxis regimens and stop rules for rheumatic fever?",
+      "back_text": "Oral phenoxymethylpenicillin 250 mg twice daily OR benzathine benzylpenicillin 1.2 million U IM monthly (if adherence in doubt); sulfadiazine or erythromycin if penicillin-allergic. WITHOUT residual heart disease: until 5 years after the last episode or age 21 (whichever later). WITH residual heart disease: until 10 years after the last episode or age 40 (whichever later). Extend in high-prevalence areas/high-exposure occupations (teaching).",
+      "explanation_ar": "فينوكسي ميثيل بنسلين 250 ملغ مرتين يومياً أو بنزاثين بنسلين 1.2 مليون وحدة شهرياً؛ بلا مرض متبقٍ: 5 سنوات أو سن 21؛ مع مرض متبقٍ: 10 سنوات أو سن 40 أيهما ألاحق.",
+      "mnemonic_ar": "قاعدة الحفظ: (بلا متبقٍ: 5/21) و(مع متبقٍ: 10/40).",
+      "tags": [
+        "prophylaxis",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L8_f20",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Does long-term rheumatic prophylaxis protect against infective endocarditis?",
+      "back_text": "NO. Long-term antibiotic prophylaxis prevents further attacks of acute rheumatic fever but does NOT protect against infective endocarditis.",
+      "explanation_ar": "لا؛ الوقاية طويلة الأمد تمنع نكسات الحمى الروماتيزمية لكنها لا تحمي من التهاب الشغاف العدوائي.",
+      "is_vivid": true,
+      "tags": [
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L8_f21",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "card_type": "basic",
+      "front_text": "Which valves are affected in chronic rheumatic heart disease and in what order of frequency?",
+      "back_text": "Mitral valve in >90% of cases; aortic valve next; then tricuspid; then pulmonary. Isolated mitral stenosis ~25% of cases; an additional 40% have mixed mitral stenosis and regurgitation. Two-thirds of cases occur in women; chronic valvular disease develops in at least half of those with RF carditis.",
+      "explanation_ar": "التاجي >90% ثم الأبهري فالثلاثي فالرئوي؛ التضيق التاجي المعزول ~25% و40% إضافية مختلط تضيق وارتجاع؛ ثلثا الحالات نساء.",
+      "tags": [
+        "chronic RHD"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L8_q1",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "question_stem": "An 11-year-old boy presents with fever and painful swelling of the right knee, followed 3 days later by the left ankle. Three weeks ago he had a sore throat that resolved without treatment. Examination reveals a soft apical systolic murmur and ESR 55 mm/h. ASO titre is 480 IU. What is the most likely diagnosis?",
+      "options": [
+        "Juvenile idiopathic arthritis",
+        "Acute rheumatic fever",
+        "Septic arthritis",
+        "Systemic lupus erythematosus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الصورة نموذجية لحمى الروماتيزم الحادة: التهاب مفاصل حاد مهاجر غير متناظر في مفاصل كبيرة بعد 2-3 أسابيع من التهاب حلق عقدي، مع معيار كبير ثانٍ (التهاب قلب بلغط انقباضي تاجي) وارتفاع ASO وESR. الروماتويد الشبابي متناظر ومزمن، والإنتاني مفصل مفرد شديد، والذأباء لا يشرح الهجرة والترتيب الزمني العقدي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "لاحظ الترتيب الزمني بعد التهاب الحلق.",
+        "المفاصل الكبيرة والهجرة علامة مميزة.",
+        "اللغط الجديد يرفع التهاب القلب."
+      ]
+    },
+    {
+      "id": "L8_q2",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "question_stem": "Which combination of findings fulfils the Jones criteria for an INITIAL episode of acute rheumatic fever in a patient with documented preceding group A streptococcal infection?",
+      "options": [
+        "Carditis + polyarthritis",
+        "Fever + arthralgia + raised ESR",
+        "Fever + leucocytosis + first-degree AV block",
+        "Erythema marginatum alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "النوبة الأولى تتطلب معيارين كبيرين أو كبير + صغيرين. التهاب القلب + التهاب المفاصل المتعدد = معياران كبيران فتكفي. بقية الخيارات صغيرات فقط (لا تكفي للنوبة الأولى) أو معيار واحد كبير منفرد.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L8_q3",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "question_stem": "A 13-year-old girl develops purposeless jerky movements of her hands and face with emotional lability 4 months after an episode of acute rheumatic fever; ASO titre is normal and other causes have been excluded. How should she be managed diagnostically?",
+      "options": [
+        "Rheumatic fever is excluded because the ASO titre is normal",
+        "A presumptive diagnosis of rheumatic chorea can be made without streptococcal evidence (diagnosis by exclusion)",
+        "The diagnosis requires 2 major plus 2 minor criteria in this case",
+        "This is Huntington disease until proven otherwise"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الرقص المعزول مظهر متأخر؛ يُسمح بتشخيص افتراضي دون دليل عدوى عقدية بعد استبعاد الأسباب الأخرى، لأن ASO يعتدل في معظم حالات الرقص المتأخرة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q4",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c2",
+      "question_stem": "During assessment of a 9-year-old with acute rheumatic fever, a soft mid-diastolic murmur is heard at the apex. What is the mechanism of this murmur?",
+      "options": [
+        "Functional mitral stenosis from severe annular calcification",
+        "Valvulitis with nodules forming on the mitral valve leaflets (Carey Coombs murmur)",
+        "Turbulent flow across a stenotic aortic valve",
+        "Atrial myxoma prolapsing across the mitral orifice"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "لغط كاري كومبس: انبساطي وسطي ناعم سببه التهاب الصمام مع عقيدات على ورقات التاجي في الطور الحاد — وليس تضيقاً ليفياً مزمناً.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q5",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c5",
+      "question_stem": "A 12-year-old (36 kg) with acute rheumatic fever and mild carditis is to start aspirin. What is the appropriate starting regimen?",
+      "options": [
+        "Aspirin 60 mg/kg/day divided into six doses (2160 mg/day) with PPI cover",
+        "Aspirin 75 mg once daily for life",
+        "Aspirin 8 g/day immediately as a fixed adult dose",
+        "Aspirin 100 mg/kg/day divided into two doses"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجرعة الابتدائية 60 ملغ/كغ/يوم مقسمة على ست جرعات (لكن انتبه: 36 كغ × 60 = 2160 ملغ/يوم؛ مثال المحاضرة استخدم 100 ملغ/كغ=3600 ملغ لليافع البالغ نسبياً) مع PPI للحماية المعدية، وتستمر حتى هبوط ESR. الخيار الثابت للبالغين (8 غ) ليس نقطة البداية لطفل.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q6",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c5",
+      "question_stem": "A 14-year-old develops acute rheumatic fever with severe carditis, congestive heart failure and severe mitral regurgitation despite medical heart-failure therapy. What is the appropriate escalation?",
+      "options": [
+        " lifelong long-term corticosteroids",
+        "Prednisolone 1-2 mg/kg/day and consideration of valve replacement if failure persists",
+        "Immediate dual antiplatelet therapy and coronary angiography",
+        "Monthly benzathine penicillin alone will reverse the regurgitation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التهاب القلب الشديد يستوجب بريدنيزولون 1-2 ملغ/كغ/يوم (حتى اعتدال ESR)، وإذا استمر القصور الحجمي الشديد رغم العلاج الدوائي فاستبدال الصمام قد يلزم؛ لا فائدة مثبتة للستيرويد الدائم ولا للصاد وحده.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q7",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "question_stem": "A 22-year-old woman had rheumatic fever 6 years ago; echocardiography today shows no residual valvular lesions. Until when should secondary prophylaxis have continued, assuming no high-risk occupation or high-prevalence setting?",
+      "options": [
+        "Until 5 years after the last episode or age 21, whichever is later — so until now (age 22, 6 years post-episode)",
+        "Until age 40 regardless of residuals",
+        "Lifelong, because rheumatic fever always recurs",
+        "For 10 years only if she had residual heart disease — she has none, so no prophylaxis was ever needed"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بلا مرض قلبي متبقٍ: حتى 5 سنوات من آخر هجمة أو سن 21 أيهما ألاحق؛ هي الآن 22 وأمر بعد 6 سنوات فكلا الشرطين تجاوز، فالتوقف الآن صحيح.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q8",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "question_stem": "A patient with chronic rheumatic mitral stenosis on monthly benzathine penicillin prophylaxis is about to undergo a high-risk dental extraction. Which statement is correct?",
+      "options": [
+        "The monthly penicillin fully protects against infective endocarditis",
+        "Long-term prophylaxis prevents further rheumatic attacks but does NOT protect against infective endocarditis — endocarditis prophylaxis must be considered separately",
+        "Benzathine penicillin must be stopped before dental work",
+        "Only patients with prosthetic valves need dental antibiotic cover"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الوقاية الروماتيزمية تمنع نكسات الحمى فقط ولا تحمي من التهاب الشغاف؛ حماية الشغاف حول الإجراءات الجراحية/السنية اعتبار مستقل (تشمل الصمامات الصناعية، نكس التهاب الشغاف، وبعض أمراض القلب الخلقية).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L8_q9",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c6",
+      "question_stem": "In chronic rheumatic heart disease, which valve is most frequently involved, and what proportion has isolated mitral stenosis?",
+      "options": [
+        "Aortic valve; isolated aortic stenosis in 50%",
+        "Mitral valve (>90% of cases); isolated mitral stenosis about 25% and a further 40% mixed MS and MR",
+        "Tricuspid valve; isolated tricuspid stenosis in 60%",
+        "All four valves equally; no dominant pattern"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التاجي هو الأشيع (>90%) يليه الأبهري فالثلاثي فالرئوي؛ التضيق التاجي المعزول ~25% و40% إضافية مختلط تضيق وارتجاع تاجي.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L8_q10",
+      "lecture_id": "L8_rheumatic_fever",
+      "concept_id": "L8_c4",
+      "question_stem": "A child living in a high-prevalence region presents with fever, monoarthritis of one knee (no other joints), raised CRP and evidence of recent GAS infection. Under the 2015 Jones criteria, how does monoarthritis count?",
+      "options": [
+        "It cannot count at all — only polyarthritis is ever a major criterion",
+        "In moderate/high-risk populations, monoarthritis (and even polyarthralgia) counts as a MAJOR criterion",
+        "It counts only as a minor criterion everywhere",
+        "It counts as a major criterion only in low-risk populations"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "في تحديث 2015 وبالمناطق متوسطة/عالية الخطورة يُعد التهاب المفصل الوحيد أو حتى ألم المفاصل المتعدد معياراً كبيراً (في المناطق منخفضة الخطورة يبقى الالتهاب المتعدد فقط)، مع تخفيض عتبتي الحرارة (≥38) وESR (≥30).",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L8_case1",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Classic First Presentation of Acute Rheumatic Fever",
+      "scenario": "An 11-year-old schoolgirl from a crowded household is brought to the paediatric assessment unit with 4 days of fever and painful, swollen joints. Two weeks ago she had a sore throat that settled without antibiotics. Her parents report she has been lethargic and off her food. On examination her right knee is hot, swollen and tender, and yesterday her left ankle was similarly affected before settling.",
+      "vignette": {
+        "age": 11,
+        "sex": "female",
+        "chief_complaint": "Fever with migratory painful swollen joints for 4 days",
+        "history": "Sore throat 2 weeks ago, untreated. Lethargy and anorexia. No prior rheumatic fever. No rash observed by parents. Family lives in crowded accommodation; two siblings had recent sore throats.",
+        "vitals": {
+          "bp": "96/58 mmHg",
+          "hr": "118 bpm",
+          "rr": "22/min",
+          "temp": "38.6 C",
+          "spo2": "99% room air"
+        },
+        "exam": "Right knee swollen, warm and tender with restricted movement; left ankle now normal (previously swollen). Non-tender small nodules palpated over the extensor surface of the left elbow. Auscultation: soft apical systolic murmur (grade 2/6) and soft mid-diastolic murmur at the apex; no pericardial rub. No rash on trunk.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "14.8 x10^9/L (ref 4.5-13.5)",
+            "flag": "high"
+          },
+          {
+            "name": "ESR (1st hour)",
+            "value": "68 mm (ref <20)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "6.2 mg/dL (ref <0.5)",
+            "flag": "high"
+          },
+          {
+            "name": "ASO titre",
+            "value": "620 IU/mL (ref <200)",
+            "flag": "high"
+          },
+          {
+            "name": "Throat culture",
+            "value": "Negative",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "ECG: sinus tachycardia with PR interval 0.20 s at the upper-normal limit for age (borderline first-degree AV block). Echocardiography: mild mitral regurgitation with thickened leaflets and small nodular densities consistent with valvulitis; normal LV function; no pericardial effusion. CXR: normal heart size, clear lung fields."
+      },
+      "steps": [
+        {
+          "id": "L8_case1_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Juvenile idiopathic arthritis (systemic onset)",
+            "Acute rheumatic fever (2 major criteria: polyarthritis and carditis)",
+            "Septic arthritis of the knee",
+            "Henoch-Schonlein purpura with arthralgia"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "التهاب مفاصل حاد مهاجر غير متناظر بمفاصل كبيرة + carditis (لغط تاجي انقباضي ناعم + كاري كومبس + عقيدات على الوريقات بالصدى) بعد 2-3 أسبوع من التهاب حلق، مع ASO مرتفع وESR/CRP عالية: معياران كبيران + دليل عدوى عقدية = حمى رومايزمية أولية.",
+          "xp": 15,
+          "hints": [
+            "اجمع المعايير الكبيرة والصغيرة أولاً.",
+            "المفاصل الكبيرة + الهجرة + الاستجابة السريعة = نمط روماتيزمي.",
+            "اللغطان الجديدان مع عقيدات الوريقات = التهاب قلب."
+          ]
+        },
+        {
+          "id": "L8_case1_s2",
+          "prompt": "Which finding in this girl is the LATE major manifestation, and what does it imply?",
+          "options": [
+            "The knee arthritis — it appeared after the sore throat",
+            "The subcutaneous nodules over the elbow — a late major criterion (~5%), implying the episode has been evolving for weeks",
+            "The fever — it always appears last",
+            "The raised CRP — a late laboratory marker"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "العقيدات تحت الجلد (والحمامى الهامشية) مظاهر متأخرة (>3 أسابيع) تحدث في ~5%؛ وجودها يدعم أن الهجمة نشطة منذ أسابيع، بينما التهاب المفاصل مبكر (أيام-4 أسابيع) والحرارة علامة صغيرة.",
+          "xp": 10,
+          "hints": [
+            "رتب المعايير زمنياً.",
+            "الآفات الجلدية/العقيدات متأخرة والقصة الآن >3 أسابيع من الحلق."
+          ]
+        },
+        {
+          "id": "L8_case1_s3",
+          "prompt": "What is the correct acute management package?",
+          "options": [
+            "IV antibiotics for 6 weeks plus mandatory valve replacement now",
+            "Benzathine benzylpenicillin 1.2 MU IM (organism eradication), aspirin 60 mg/kg/day in six divided doses with PPI, and bed rest guided by symptoms/temperature/WBC/ESR",
+            "Prednisolone 2 mg/kg/day for 12 months",
+            "NSAIDs alone with immediate return to school sports"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الحزمة المعيارية: استئصال العقديات (بنزاثين بنسلين جرعة مفردة)، أسبرين 60 ملغ/كغ/يوم على 6 جرعات مع PPI (التهاب قلب خفيف-متوسط فلا ستيرويد)، وراحة يوجهها السرير والحرارة والبيض وESR مع تجنب الجهد الشاق بعد carditis.",
+          "xp": 15,
+          "hints": [
+            "الستيرويد للحالات الشديدة فقط.",
+            "الأسبرين يستمر حتى هبوط ESR.",
+            "لا ننسى استئصال العقديات قبل الوقاية الثانوية."
+          ]
+        },
+        {
+          "id": "L8_case1_s4",
+          "prompt": "She has residual mild mitral regurgitation on follow-up echo. Until when should secondary prophylaxis continue (assuming no high-risk setting)?",
+          "options": [
+            "5 years after this episode or age 21, whichever is later",
+            "10 years after this episode or age 40, whichever is later",
+            "Until the murmur disappears",
+            "3 months only — until the chorea risk passes"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "وجود مرض قلبي متبقٍ (ارتجاع تاجي) يجعل المدة: 10 سنوات من آخر هجمة أو سن 40 أيهما ألاحق. الخيار 5 سنوات/21 يخص من دون متبقٍ.",
+          "xp": 10,
+          "hints": [
+            "متبقٍ أم لا؟",
+            "قاعدة: بلا متبقٍ 5/21، مع متبقٍ 10/40."
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة نموذجية لأول عرض لحمى الروماتيزم: التهاب حلق غير معالج قبل أسبوعين ثم حمى وخمول والتهاب مفاصل مهاجر بالكبيرة (أشيع وأقدم معيار كبير 75%) مع carditis (لغط تاجي + كاري كومبس + عقيدات وريقات بالصدى + حصار AV حدّي) وعقيدات تحت الجلد (مظهر كبير متأخر ~5%)، مع دليل عدوى عقدية (ASO مرتفع رغم سلبية الزرع). الإدارة: بنزاثين بنسلين، أسبرين 60 ملغ/كغ/يوم على ست جرعات مع PPI حتى هبوط ESR، راحة موجّهة، ثم وقاية ثانوية (مع المتبقي القلبي: 10 سنوات أو سن 40). الدروس: 1) سلبية زرع الحلق لا تنفي التشخيص (10-25% فقط إيجابية)؛ 2) ASO أداة الدليل الأهم؛ 3) معايير جونز تطبيق منظّم لا انطباعي؛ 4) carditis يحدد شدة العلاج (أسبرين مقابل ستيرويد) ومدة الوقاية.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L8_case2",
+      "lecture_id": "L8_rheumatic_fever",
+      "title": "Fulminant Rheumatic Carditis in Early Adolescence",
+      "scenario": "A 13-year-old boy is admitted with breathlessness at rest, orthopnoea and fever. Four weeks ago he was treated for streptococcal pharyngitis in a neighbouring clinic. He now has a fulminant presentation: severe mitral regurgitation with concomitant aortic regurgitation and early heart failure — the pattern the lecture warns about for early adolescence.",
+      "vignette": {
+        "age": 13,
+        "sex": "male",
+        "chief_complaint": "Breathlessness at rest with fever for 2 days",
+        "history": "Streptococcal pharyngitis documented 4 weeks ago (partial treatment). No prior cardiac history. Sudden deterioration from mild lethargy to orthopnoea over 48 hours.",
+        "vitals": {
+          "bp": "104/64 mmHg",
+          "hr": "126 bpm",
+          "rr": "32/min",
+          "temp": "38.9 C",
+          "spo2": "93% room air"
+        },
+        "exam": "Distressed, sitting upright. Raised JVP. Bilateral basal crackles with scattered crepitations. Apex displaced laterally with a hyperdynamic impulse; loud apical pansystolic murmur radiating to axilla (severe MR) and an early diastolic murmur at the left sternal edge (AR). No pericardial rub. No joint swelling currently; a faint serpiginous rash with central clearing on the trunk.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "16.2 x10^9/L (ref 4.5-13.5)",
+            "flag": "high"
+          },
+          {
+            "name": "ESR (1st hour)",
+            "value": "82 mm (ref <20)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "9.4 mg/dL (ref <0.5)",
+            "flag": "high"
+          },
+          {
+            "name": "ASO titre",
+            "value": "810 IU/mL (ref <200)",
+            "flag": "high"
+          },
+          {
+            "name": "NT-proBNP",
+            "value": "4150 pg/mL (ref <125)",
+            "flag": "critical"
+          }
+        ],
+        "imaging": "ECG: sinus tachycardia, widespread ST/T changes, first-degree AV block. CXR: cardiomegaly with pulmonary venous congestion and small bilateral pleural effusions. Echocardiography: severe mitral regurgitation (flail anterior leaflet with nodular vegetations of valvulitis), moderate aortic regurgitation, dilated LA, reduced LV contractility (myocarditis component); small pericardial effusion."
+      },
+      "steps": [
+        {
+          "id": "L8_case2_s1",
+          "prompt": "The carditis is severe with heart failure. Which anti-inflammatory therapy is indicated in addition to heart-failure management?",
+          "options": [
+            "Aspirin 60 mg/kg/day only",
+            "Prednisolone 1.0-2.0 mg/kg/day in divided doses — glucocorticoids for severe carditis, continued until ESR normal then tapered",
+            "No anti-inflammatory therapy; antibiotics alone",
+            "Colchicine plus NSAIDs"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الستيرويد (بريدنيزولون 1-2 ملغ/كغ/يوم مقسمة) مخصص للحالات الشديدة (carditis/arthritis شديد) لأنه أسرع تخفيفاً من الأسبرين، ويستمر حتى اعتدال ESR ثم يخفف؛ ولا مجال للعلاج المزدوج المذكور أو الاقتصار على الصاد.",
+          "xp": 15,
+          "hints": [
+            "شدة carditis تحدد الدواء.",
+            "الستيرويد يخفف الأعراض أسرع من الأسبرين.",
+            "نقطة النهاية: اعتدال ESR."
+          ]
+        },
+        {
+          "id": "L8_case2_s2",
+          "prompt": "Despite diuretics, afterload reduction and steroid therapy, pulmonary congestion persists and the child remains in NYHA class IV. What is the next consideration?",
+          "options": [
+            "Double the aspirin dose to 120 mg/kg/day",
+            "Valve replacement surgery for refractory fulminant regurgitation",
+            "Discharge home on monthly penicillin",
+            "Permanent pacemaker insertion"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الفشل المقاوم للعلاج الدوائي في الصمامية الشديدة يقتضي التفكير باستبدال الصمام؛ مضاعفة الأسبرين لا تعالج الارتجاع، والمنظم لا يستطب هنا (لا حصار عالي الدرجة)، والعودة للمنزل خطر.",
+          "xp": 15,
+          "hints": [
+            "المشكلة الميكانيكية (ارتجاع شديد) تحتاج حلاً ميكانيكياً.",
+            "العلاج الدوائي أُنجز ولم يكفِ."
+          ]
+        },
+        {
+          "id": "L8_case2_s3",
+          "prompt": "What acute antibiotic regimen should he receive before secondary prophylaxis begins?",
+          "options": [
+            "Benzathine benzylpenicillin 1.2 million U IM as a single dose (or phenoxymethylpenicillin 250 mg QID x 10 days)",
+            "Oral amoxicillin 500 mg TID for 3 days",
+            "No antibiotics since pharyngitis was already treated",
+            "IV vancomycin and gentamicin for 6 weeks"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "استئصال العقديات في الطور الحاد بجرعة بنزاثين مفردة (أو الفينوكسي ميثيل بنسلين 10 أيام)؛ فانكومايسين/جنتاميسين بروتوكول التهاب الشغاف لا الحمى الروماتيزمية، والاعتماد على العلاج الجزئي السابق غير مضمون.",
+          "xp": 10,
+          "hints": [
+            "البروتوكول الروماتيزمي جرعة بنسلين مفردة.",
+            "لا تخلط بين بروتوكول الشغاف والروماتيزم."
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة الشكل الفُلامِن في المراهقة المبكرة: MR شديد مع AR مصاحب وقصور قلب متظاهر بسرعة، مع myocarditis (انخفاض التقلص وتغيرات ST/T) و pericarditis (انصباب صغير). المخرجات التعليمية: 1) الستيرويدات (بريدنيزولون 1-2 ملغ/كغ/يوم) هي العلاج المضاد للالتهاب في carditis الشديد — أسرع من الأسبرين — مع متابعة ESR حتى الاعتدال ثم التنقيص؛ 2) القصور المقاوم دوائياً في الارتجاع الشديد يستدعي استبدال الصمام؛ 3) استئصال العقديات بالبنسلين يسبق بدء الوقاية الثانوية؛ 4) الحمامى الهامشية اللاحظة على الجذد تدعم التشخيص (معيار كبير) رغم غياب التهاب المفاصل الحالي؛ 5) وجود disease residual مؤكد سيجعل مدة الوقاية 10 سنوات/سن 40.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

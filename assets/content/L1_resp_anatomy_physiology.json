@@ -1,0 +1,1015 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L1_resp_anatomy_physiology",
+    "specialty": "internal_medicine",
+    "title": "Basic Anatomy and Physiology of the Respiratory System",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L1 2025-2026 (3).pdf",
+      "page_count": 15
+    },
+    "tags": [
+      "anatomy",
+      "physiology",
+      "surfactant",
+      "control-of-respiration",
+      "defense-mechanisms",
+      "bronchial-tree"
+    ],
+    "order_index": 0,
+    "golden_tip": [
+      "EXAM TRAP: An aspirated foreign body preferentially enters the RIGHT main bronchus because it is wider, shorter and MORE VERTICAL than the left — a classic MCQ scenario in a child who choked on a peanut.",
+      "Surfactant is synthesized by type II pneumocytes starting at 24–35 weeks of gestation — a premature neonate born before this window develops Neonatal Respiratory Distress Syndrome. Remember: type II cells = only 5% of alveolar cells but 100% of surfactant production."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L1_c1",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Overview and Anatomy of the Respiratory Tract",
+      "summary_ar": "نظرة عامة على وظائف الرئتين وتقسيمات المجري التنفسي العلوي والسفلي مع تشريح القصبة الهوائية والشعب الهوائية الرئيسية والفصية.",
+      "sections": [
+        {
+          "heading": "Primary Function and Basic Physiology of the Lungs",
+          "body_text": "The primary function of the lungs is to **deliver oxygen to the pulmonary capillaries** and to **remove carbon dioxide from the alveoli**. The lungs are elastic structures that are situated within another elastic structure — the chest wall. This double-elastic arrangement creates the fundamental mechanical relationship of respiration: the **inward lung recoil is opposed by the outward chest wall recoil**. This balance is controlled by the contraction and relaxation of the inspiratory and expiratory muscles, causing air to flow in and out of the lung. When the inspiratory muscles contract, the chest expands, the intrapleural pressure becomes more negative, and air flows into the alveoli; when they relax, the elastic recoil of the lung drives air out. This concept explains why diseases that destroy elastic tissue (emphysema) or stiffen the chest wall (kyphoscoliosis) produce different patterns of respiratory failure.",
+          "key_points": [
+            "Lungs deliver O2 to pulmonary capillaries and remove CO2 from alveoli",
+            "Lung (elastic) sits inside the chest wall (elastic) — a double elastic system",
+            "Inward lung recoil is balanced against outward chest wall recoil",
+            "Inspiratory/expiratory muscle contraction and relaxation control this balance and drive airflow"
+          ]
+        },
+        {
+          "heading": "Upper Airway",
+          "body_text": "The upper airway consists, in order, of the **nose**, the **paranasal sinuses**, the **mouth**, the **pharynx** and the **larynx**. The nose and nasopharynx serve as the first air-conditioning station of the respiratory tract: inspired air is **heated, humidified and filtered** there, and particles larger than **10 micrometers** are trapped before proceeding distally. The larynx protects the lower airway during swallowing and generates voice. These structures are frequently the site of upper respiratory tract infections (rhinitis, sinusitis, pharyngitis, laryngitis) and can be a source of referred symptoms and post-nasal drip that presents as chronic cough.",
+          "key_points": [
+            "Upper airway = nose, paranasal sinuses, mouth, pharynx, larynx",
+            "Nose/nasopharynx heat, humidify and filter air; particles > 10 micrometer are trapped"
+          ]
+        },
+        {
+          "heading": "Lower Airway: Trachea and Main Bronchi",
+          "body_text": "The lower airway comprises the **trachea, bronchi, bronchioles and alveoli**. The trachea is a **10–12 cm tube** supported by **C-shaped cartilage rings**; the open posterior part of the C facilitates **distension of the esophagus** during swallowing. The trachea divides at the **carina** into the right and left main bronchi. The **right main bronchus is more vertical (wider and shorter) than the left**; it subdivides into an upper lobe bronchus and an intermediate bronchus, which further subdivides into the middle and lower lobe bronchi. The left main bronchus divides into upper lobe and lower lobe bronchi. Each lobar bronchus divides further into **segmental and subsegmental bronchi**. The vertical orientation of the right main bronchus is the anatomical reason aspirated foreign bodies and secretions preferentially enter the right lung.",
+          "key_points": [
+            "Trachea = 10–12 cm, C-shaped cartilage (open posteriorly to allow esophageal distension)",
+            "Bifurcation occurs at the carina",
+            "Right main bronchus: more vertical, wider — divides into upper lobe bronchus + intermediate bronchus (middle + lower)",
+            "Left main bronchus: divides into upper and lower lobe bronchi",
+            "Lobar bronchi divide into segmental then subsegmental bronchi"
+          ],
+          "check": {
+            "prompt": "A 3-year-old child aspirates a peanut. Where is it MOST likely to lodge?",
+            "options": [
+              "Left main bronchus",
+              "Right main bronchus",
+              "Trachea at the carina",
+              "Left lower lobe bronchus"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "القصبة اليمنى أعرض وأقصر وأكثر عمودية من اليسرية، لذلك تستقبل الأجسام الغريبة المستنشقة بشكل تفضيلي — نقطة امتحانية كلاسيكية."
+          }
+        },
+        {
+          "heading": "Bronchial Tree Generations (Airway Branching Map)",
+          "body_text": "The bronchial and alveolar tree branches in an organized sequence of **generations** (from the lecture diagram): **trachea (generation 0)**, main/principal bronchus (**1st generation**), lobar bronchus (**2nd generation**), segmental bronchus (**3rd–4th generations**), subsegmental bronchus (**5th–11th generations**), bronchiole (**12th–15th generations**), **terminal bronchiole (16th generation)** — which marks the end of the conducting zone — then **respiratory bronchioles (17th–19th generations)** and finally the **alveolar sac (23rd generation)** with its alveoli, where gas exchange occurs. Knowing this map is essential: the conducting portion (trachea to terminal bronchioles) transports air with no gas exchange, while the respiratory portion (respiratory bronchioles onward) is the gas-exchange compartment.",
+          "key_points": [
+            "Trachea = generation 0; main bronchus = 1st; lobar = 2nd; segmental = 3rd–4th; subsegmental = 5th–11th",
+            "Bronchioles = 12th–15th generations; terminal bronchiole = 16th generation",
+            "Respiratory bronchioles = 17th–19th generations; alveolar sac = 23rd generation",
+            "Terminal bronchiole is the boundary between conducting and respiratory zones"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Carina",
+          "definition_ar": "نقطة تفرع القصبة الهوائية إلى القصبتين الرئيسيتين اليمنى واليسرى، وهي منطقة غنية بالمستقبلات الحسية للسعال."
+        },
+        {
+          "term": "Intermediate bronchus",
+          "definition_ar": "جزء من الشعبية اليمنى يلي الشعبة الفصية العلوية ويتفرع لاحقاً إلى الفصيين الأوسط والسفلي."
+        },
+        {
+          "term": "Generation (airway)",
+          "definition_ar": "عدد مرات التفرع من القصبة الهوائية؛ القصبة = الجيل صفر، والأسناخ الكيسية = الجيل الثالث والعشرون."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L1_c2",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Bronchi vs Bronchioles, Airway Cells and Functional Zones",
+      "summary_ar": "المقارنة التفصيلية بين القصبات والقصيبات، الخلايا المتخصصة (Kulchitsky وGoblet)، والمنطقة الموصلة مقابل المنطقة التنفسية.",
+      "sections": [
+        {
+          "heading": "Bronchi versus Bronchioles",
+          "body_text": "The lecture gives a systematic comparison. **Bronchi**: comprise the first **seven (7) divisions** of the bronchial tree, are supported by **rings or plates of cartilage**, are lined by **ciliated epithelium and contain glands**, and contain only a **little amount of smooth muscle**. **Bronchioles**: represent the next **16–18 divisions** of the bronchial tree, divided into terminal bronchioles and respiratory bronchioles; they are **not supported by cartilage** and are therefore collapsible, but they are held patent by the surrounding elastic tissue. They are lined by a single layer of ciliated epithelium, **except the respiratory bronchioles which lack cilia**. The terminal bronchioles contain **more smooth muscle** than the bronchi — this is why bronchioles are the main site of bronchospasm in asthma. **Gas exchange occurs in the respiratory bronchioles.**",
+          "key_points": [
+            "Bronchi = first 7 divisions; cartilage rings/plates; ciliated epithelium with glands; little smooth muscle",
+            "Bronchioles = next 16–18 divisions; NO cartilage (collapsible); single-layer ciliated epithelium",
+            "Respiratory bronchioles lack cilia; terminal bronchioles contain MORE smooth muscle (site of bronchospasm)",
+            "Gas exchange occurs in respiratory bronchioles"
+          ]
+        },
+        {
+          "heading": "Specialized Airway Cells: Kulchitsky and Goblet Cells",
+          "body_text": "Two specialized cell types are highlighted. **Kulchitsky cells** are **neuroendocrine cells containing 5-hydroxytryptamine (serotonin)** scattered in the epithelium of both bronchi and bronchioles — they are the cell of origin of small cell (neuroendocrine) lung carcinoma. **Goblet cells** are **mucus-secreting cells** scattered among the epithelial lining of the respiratory tract; they are found in the **trachea, bronchi and larger (terminal) bronchioles**. Excess goblet cell hyperplasia and mucus production contributes to sputum production in chronic bronchitis and asthma.",
+          "key_points": [
+            "Kulchitsky cells = neuroendocrine cells with 5-hydroxytryptamine, in bronchial AND bronchiolar epithelium",
+            "Goblet cells = mucus-secreting cells in trachea, bronchi and larger/terminal bronchioles"
+          ]
+        },
+        {
+          "heading": "Conducting Zone (The Anatomical Dead Space)",
+          "body_text": "The conducting zone is a **dead space extending from the trachea to the terminal bronchioles**. Its function is to aid in **air conditioning: warming, humidification and filtering** of inspired air. It receives its blood supply from the **systemic circulation via the bronchial artery** (a branch of the descending aorta), NOT from the pulmonary circulation. No gas exchange takes place here — the volume of this zone (~150 mL in an adult) is the anatomical dead space, which must be ventilated before fresh air reaches the gas-exchange region with each breath.",
+          "key_points": [
+            "Conducting zone = trachea to terminal bronchioles (anatomical dead space)",
+            "Functions: warm, humidify, filter inspired air",
+            "Blood supply: systemic circulation (bronchial artery)"
+          ]
+        },
+        {
+          "heading": "Respiratory Zone (The Gas Exchange Unit)",
+          "body_text": "The respiratory zone involves the **respiratory bronchioles, alveolar ducts and alveolar sacs containing alveoli**; it serves as the **gas exchange unit** of the lung. In contrast to the conducting zone, it receives its blood supply from the **pulmonary circulation (pulmonary artery)**. The acinus is the functional unit of the lung responsible for gas exchange: it comprises the branching respiratory bronchioles and their clusters of alveoli, alveolar ducts and alveoli. All pathology of gas exchange (pneumonia consolidation, pulmonary edema, fibrosis) ultimately acts by disturbing the structure or function of the acinus.",
+          "key_points": [
+            "Respiratory zone = respiratory bronchioles + alveolar ducts + alveolar sacs + alveoli",
+            "Gas exchange unit; blood supply from pulmonary artery (pulmonary circulation)",
+            "The acinus = respiratory bronchioles + alveolar ducts + alveoli (functional gas-exchange unit)"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Conducting zone",
+          "definition_ar": "المنطقة الموصلة من القصبة حتى القصيبات الانتهائية؛ فراغ ميت وظيفته تدفئة وترطيب وتصفية الهواء، وتغذيتها من الشريان القصبي."
+        },
+        {
+          "term": "Respiratory zone",
+          "definition_ar": "منطقة تبادل الغازات من القصيبات التنفسية حتى الأسناخ، وتغذيتها من الدورة الدموية الرئوية."
+        },
+        {
+          "term": "Kulchitsky cells",
+          "definition_ar": "خلايا عصبية صمّاء تحتوي السيروتونين، منتشرة في ظهارة القصبات والقصيبات؛ أصل سرطان الرئة صغير الخلايا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L1_c3",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Muscles of Respiration and Breathing Dynamics",
+      "summary_ar": "عضلات التنفس: الحجاب الحاجز والعضلات الوربية والإضافية، ديناميكية الشهيق والزفير، ونسبة الزفير إلى الشهيق في الراحة والجهد.",
+      "sections": [
+        {
+          "heading": "The Diaphragm",
+          "body_text": "The diaphragm is the principal muscle of inspiration. It consists of a **muscular part** divided into **sternal, costal and lumbar portions**, and a **central tendon**. It contains the **orifices of the esophagus and the vagus nerve** (through the muscular part) and the **orifice of the inferior vena cava** (through the central tendon). It receives its innervation chiefly from the **phrenic nerves from C3, C4 and C5** (classic mnemonic: 'C3, 4, 5 keeps the diaphragm alive'). About **50% of its muscle fibers are of the slow-twitch type with low glycolytic capacity**, meaning they are **relatively resistant to fatigue** — an essential property for a muscle that contracts continuously for life. The diaphragm accounts for **about 75% of air entry** during quiet inspiration.",
+          "key_points": [
+            "Muscular part: sternal, costal, lumbar; central tendon contains IVC orifice",
+            "Esophageal and vagal orifices pass through the muscular part",
+            "Innervation: phrenic nerve C3, C4, C5",
+            "~50% slow-twitch fibers with low glycolytic capacity — fatigue-resistant",
+            "Serves about 75% of tidal air entry"
+          ]
+        },
+        {
+          "heading": "Intercostal Muscles and Accessory Muscles",
+          "body_text": "The **external intercostal muscles increase the transverse and anteroposterior diameters** of the chest during inspiration, while the **internal intercostal muscles do the reverse** (they decrease chest diameter and are active in forced expiration). **Accessory inspiratory muscles** are needed in **forced inspiration** and include the **sternocleidomastoid, scalene and serratus anterior muscles** — their visible recruitment at rest is a clinical sign of respiratory distress. Expiration is usually **passive and needs no muscle contraction**, driven by the elastic recoil of the lungs; however, the body needs active muscle contraction in **obstructive lung diseases** (COPD, asthma) and in **forced expiration such as exercise** — the muscles then used are the **internal intercostal muscles and the abdominal muscles**.",
+          "key_points": [
+            "External intercostals increase transverse + AP diameter (inspiration); internal intercostals do the reverse",
+            "Accessory inspiratory muscles (forced inspiration): sternocleidomastoid, scalene, serratus anterior",
+            "Expiration is normally passive (elastic recoil); active in obstructive disease and forced expiration",
+            "Active expiratory muscles: internal intercostals + abdominal muscles"
+          ],
+          "check": {
+            "prompt": "Which muscle group is recruited during FORCED expiration in a COPD patient?",
+            "options": [
+              "Sternocleidomastoid",
+              "Scalene muscles",
+              "Internal intercostal and abdominal muscles",
+              "External intercostal muscles"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الزفير القسري يستخدم العضلات الوربية الداخلية وعضلات البطن، بينما العضلات الإضافية (قصية الترقوية الخشائية والسلانية) عضلات شهيق قسري."
+          }
+        },
+        {
+          "heading": "Airflow Pathway and Breathing Pattern in Health",
+          "body_text": "The air travels through the nose and mouth to the pharynx and larynx; in the nose and nasopharynx it is **heated, humidified and filtered from particles larger than 10 micrometers**. The **tapering, branching bronchi are patent because of the presence of cartilage**, whilst the **bronchioles are collapsible but held patent by the surrounding elastic tissue**. During quiet normal breathing, the **expiratory time is twofold greater than the inspiratory time** and there is **usually a pause** after expiration. In **exercise**, the pause disappears and **expiration becomes equal to inspiration**. Expiration is largely passive, driven by the elastic recoil of the lungs, but it can become active when ventilatory demands rise. These timing relationships become abnormal in obstructive disease, where prolonged expiration and loss of the pause produce the classic pursed-lip breathing and hyperinflation of COPD.",
+          "key_points": [
+            "Nose/nasopharynx: heat, humidify, filter particles > 10 micrometer",
+            "Bronchi stay patent by cartilage; bronchioles kept open by surrounding elastic tissue (collapsible)",
+            "Quiet breathing: expiration time = 2x inspiration time, with a pause",
+            "Exercise: pause disappears, expiration = inspiration"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Phrenic nerve",
+          "definition_ar": "العصب الحجابي الناشئ من الجذور C3-C5 الذي يعصّب الحجاب الحاجز؛ إصابته تسبب شلل الحجاب."
+        },
+        {
+          "term": "Accessory muscles",
+          "definition_ar": "عضلات شهيق إضافية (قصية ترقوية خشائية، سلانية، مسننة أمامية) تُستخدم في الشهيق القسري وتُعد علامة ضائقة تنفسية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L1_c4",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Alveoli, Surfactant and Lung Compliance",
+      "summary_ar": "بنية الأسناخ وخلاياها، دور السورفكتانت في ثبات الأسناخ، توقيت تصنيعه الجنيني، العوامل الناقصة له، ومفهوم مطاوعة الرئة.",
+      "sections": [
+        {
+          "heading": "Alveolar Structure and Cell Types",
+          "body_text": "There are approximately **300 million alveoli in both lungs**, representing a total surface area equal to about **70 square meters** — roughly the size of a tennis court — available for gas exchange. Each alveolus is a small, rounded, single-layered sac consisting of **two types of cells**. **Type I pneumocytes** are flattened epithelial cells that constitute about **95% of the alveolar surface cells** and form the thin blood–air barrier. **Type II pneumocytes** are cuboidal cells that constitute about **5% of alveolar cells** and are responsible for **producing surfactant**. The alveoli are connected to each other by the **pores of Kohn**, which allow collateral air drift between adjacent alveoli and can partially compensate for distal airway obstruction.",
+          "key_points": [
+            "~300 million alveoli; total area ~ 70 m2",
+            "Type I pneumocytes: flattened, ~95% of cells, form the gas-exchange barrier",
+            "Type II pneumocytes: cuboidal, ~5% of cells, produce surfactant",
+            "Pores of Kohn connect adjacent alveoli (collateral ventilation)"
+          ]
+        },
+        {
+          "heading": "Surfactant: Function and Fetal Synthesis",
+          "body_text": "Surfactant is a **phospholipid material secreted by type II pneumocytes**. It **maintains alveolar stability**, i.e. it prevents **overdistension during inspiration** and **collapse during expiration**, by **reducing the surface tension** of the alveolar lining fluid and counteracting the natural tendency of the alveoli to collapse (Law of Laplace: small alveoli would otherwise empty into larger ones). Clinically this is why premature babies develop hyaline membrane disease (neonatal respiratory distress syndrome). Surfactant is synthesized in the fetal lungs **between 24 and 35 weeks of pregnancy**; the L/S (lecithin/sphingomyelin) ratio of amniotic fluid reflects maturity. **Factors that decrease the level of surfactant** are: **long-term 100% oxygen therapy**, **cigarette smoking**, and **hypothyroidism** (thyroid hormone is needed for surfactant synthesis).",
+          "key_points": [
+            "Phospholipid secreted by type II pneumocytes",
+            "Reduces surface tension → prevents overdistension in inspiration and collapse in expiration",
+            "Synthesized in fetal lungs between 24–35 weeks of gestation",
+            "Decreased by: long-term 100% O2 therapy, cigarette smoking, hypothyroidism"
+          ]
+        },
+        {
+          "heading": "Lung Compliance",
+          "body_text": "**Lung compliance** is the term used to measure the **distensibility or expansibility of the lung**: it is the **lung volume change for a given change in intramural pressure**. Intramural pressure means the **difference between the alveolar pressure and the intrapleural pressure**. High compliance means the lung expands easily (e.g., emphysema — elastic tissue destroyed), whereas low compliance means a stiff lung requiring more pressure to inflate (e.g., pulmonary fibrosis, pulmonary edema, ARDS, surfactant deficiency in the neonate). Surfactant is a major determinant of compliance: by lowering surface tension, it increases compliance and reduces the work of breathing. Any condition that reduces surfactant (100% oxygen, smoking, hypothyroidism) or infiltrates/stiffens the lung parenchyma will reduce compliance.",
+          "key_points": [
+            "Compliance = change in lung volume per unit change in intramural pressure",
+            "Intramural pressure = alveolar pressure minus intrapleural pressure",
+            "High compliance: emphysema; Low compliance: fibrosis, edema, RDS",
+            "Surfactant increases compliance and reduces the work of breathing"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Surfactant",
+          "definition_ar": "مادة فسفوليبيدية تفرزها الخلايا الرئوية من النوع الثاني تقلل التوتر السطحي وتحافظ على ثبات الأسناخ."
+        },
+        {
+          "term": "Pores of Kohn",
+          "definition_ar": "مسامات تربط الأسناخ المتجاورة وتسمح بمرور الهواء الجانبي التعويضي."
+        },
+        {
+          "term": "Compliance",
+          "definition_ar": "مطاوعة الرئة: التغير في حجم الرئة لكل تغير في الضغط داخل الجدار؛ تقل في التليف وتزداد في الانتفاخ."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L1_c5",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Bronchial Tone, Pulmonary Circulation and V/Q Matching",
+      "summary_ar": "العوامل المسيطرة على توتر القصبات (عصبية وهرمونية وإيقاع يوماوي)، الشريان القصبي، الدورة الرئوية، مطابقة التهوية للتروية، وارتفاع الضغط الرئوي.",
+      "sections": [
+        {
+          "heading": "Factors Controlling Bronchial Tone",
+          "body_text": "Bronchial tone is controlled by four mechanisms listed in the lecture. **(1) Nervous control**: parasympathetic (cholinergic) stimulation causes **bronchoconstriction via muscarinic (M) receptors**, while sympathetic (adrenergic) stimulation causes **bronchodilation via beta-2 (B2) receptors** — this is the physiological basis of bronchodilator therapy (beta-2 agonists) and anticholinergic therapy (ipratropium). **(2) Hormonal/chemical control**: histamine and the **slow-reacting substance of anaphylaxis (SR-SA)** cause bronchoconstriction and increase tissue permeability; SR-SA is a **mixture of leukotrienes** — explaining why leukotriene receptor antagonists (montelukast) help asthma. **(3) Circadian rhythm**: maximum bronchodilation occurs at **6 AM** (note: nocturnal/early-morning asthma symptoms relate to the trough of this rhythm). **(4) Exercise causes bronchoconstriction** (the basis of exercise-induced bronchoconstriction and the exercise challenge test).",
+          "key_points": [
+            "Parasympathetic (M receptors) → bronchoconstriction; sympathetic (B2 receptors) → bronchodilation",
+            "Histamine + SR-SA (leukotrienes) → bronchoconstriction + increased tissue permeability",
+            "Maximum bronchodilation occurs at 6 AM (circadian rhythm)",
+            "Exercise causes bronchoconstriction"
+          ]
+        },
+        {
+          "heading": "Bronchial Artery and Dual Blood Supply",
+          "body_text": "The **bronchial artery is a branch of the descending aorta** (about **2 mm** in diameter) carrying **oxygenated blood to the lung tissue**. It ends at the level of the **respiratory bronchioles**, where it **anastomoses with branches of the pulmonary arteries**. It supplies the **trachea, bronchi and lung parenchyma**. Remember the general rule: the conducting zone is nourished by the systemic (bronchial) circulation, while the respiratory zone receives pulmonary circulation; the anastomosis between them at the level of respiratory bronchioles explains why bronchial carcinomas can receive systemic blood supply, and why massive hemoptysis can arise from bronchial (systemic) arteries in bronchiectasis.",
+          "key_points": [
+            "Bronchial artery = branch of descending aorta (~2 mm)",
+            "Carries oxygenated blood to lung tissue (trachea, bronchi, parenchyma)",
+            "Ends at respiratory bronchioles, anastomosing with pulmonary arterial branches"
+          ]
+        },
+        {
+          "heading": "Pulmonary Circulation Pressures and Pulmonary Hypertension",
+          "body_text": "The pulmonary circulation is a **low-pressure system**: the normal pulmonary artery pressure is around **8–20 mmHg**. **Pulmonary hypertension is considered when the pressure exceeds 25 mmHg at rest or 30 mmHg during exercise**. Pulmonary hypertension occurs when the pulmonary vessels are: **destroyed by emphysema**, **obstructed by thrombus**, **involved in interstitial inflammation**, or **thickened by pulmonary vascular disease**. The downstream consequence is that the **right ventricle becomes hypertrophied or fails — cor pulmonale**. The pulmonary artery arises from the right ventricle and, after a series of branches, ends in the capillary meshwork around the alveoli; blood is returned through tributaries that form the pulmonary veins emptying into the left atrium.",
+          "key_points": [
+            "Normal pulmonary artery pressure: 8–20 mmHg",
+            "Pulmonary HTN: > 25 mmHg at rest or > 30 mmHg on exercise",
+            "Causes: emphysema (destruction), thrombus (obstruction), interstitial inflammation, vascular disease (thickening)",
+            "End result: RV hypertrophy or failure = cor pulmonale"
+          ]
+        },
+        {
+          "heading": "Ventilation/Perfusion Matching",
+          "body_text": "To achieve optimal gas exchange within the lungs, the **regional distribution of ventilation and perfusion must be matched**. At the **segmental and sub-segmental level**, **hypoxia constricts pulmonary arterioles** (hypoxic pulmonary vasoconstriction — diverting blood away from poorly ventilated regions), while **airway CO2 dilates bronchi** (acting like a beta-2 agonist, improving ventilation of well-perfused regions). Together these two local reflexes help maintain good regional matching of ventilation and perfusion. **Lung disease may create regions of relative under-ventilation or under-perfusion, disturbing this regional matching and causing respiratory failure.** The V/Q mismatch (e.g., shunt with V/Q = 0 in pneumonia, or dead space with V/Q = infinity in pulmonary embolism) is the fundamental mechanism of hypoxemia in most lung diseases.",
+          "key_points": [
+            "Optimal gas exchange requires matched regional ventilation and perfusion",
+            "Hypoxia constricts pulmonary ARTERIOLES (redirects blood to ventilated alveoli)",
+            "Airway CO2 dilates BRONCHI (like beta-2 effect)",
+            "V/Q mismatch from under-ventilated/under-perfused regions causes respiratory failure"
+          ],
+          "check": {
+            "prompt": "In a pulmonary lobule with poor ventilation, what is the effect of local alveolar hypoxia on its supplying arteriole?",
+            "options": [
+              "Vasodilation",
+              "Vasoconstriction",
+              "No effect",
+              "Bronchodilation"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "نقص الأكسجة الموضعي يسبب تضيّق الشرينات الرئوية لتحويل الدم بعيداً عن المناطق ضعيفة التهوية — آلية وقائية لمطابقة التهوية بالتروية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "SR-SA",
+          "definition_ar": "المادة بطيئة التفاعل لفرط الحساسية؛ خليط من الليكوترينات يسبب تضيق القصبات وزيادة نفوذية الأنسجة."
+        },
+        {
+          "term": "Cor pulmonale",
+          "definition_ar": "تضخم أو فشل البطين الأيمن الثانوي لمرض رئوي/ارتفاع ضغط رئوي."
+        },
+        {
+          "term": "Hypoxic vasoconstriction",
+          "definition_ar": "تضيّق الشرينات الرئوية استجابة لنقص الأكسجة الموضعي؛ يعيد توجيه الدم نحو الأسناخ المهوّاة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L1_c6",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Control of Respiration",
+      "summary_ar": "التحكم بالتنفس: العصبونات الحركية التنفسية في البصلة، المستقبلات الكيميائية المركزية والمحيطية، والمستقبلات الأخرى.",
+      "sections": [
+        {
+          "heading": "Central Respiritory Neurons and Central Chemoreceptors",
+          "body_text": "The **respiratory motor neurons are situated in the posterior medulla oblongata**; they are the **origin of the respiratory cycle**. Their activity is modulated by multiple external inputs in health and in disease. The **central chemoreceptors are situated in the ventrolateral medulla**; they are **sensitive to the pH of the CSF** and are **indirectly stimulated by a rise in arterial PCO2** (CO2 crosses the blood–brain barrier, forms carbonic acid and lowers CSF pH). This makes CO2 — not oxygen — the main driver of minute ventilation in health. In chronic CO2 retainers (severe COPD), the central chemoreceptors become desensitized, and the hypoxic drive from peripheral chemoreceptors becomes relatively more important, which is the rationale for controlled oxygen therapy in hypercapnic COPD exacerbations.",
+          "key_points": [
+            "Respiratory motor neurons: posterior medulla oblongata — origin of the respiratory cycle",
+            "Central chemoreceptors: ventrolateral medulla, sensitive to CSF pH",
+            "Stimulated indirectly by rising arterial PCO2"
+          ]
+        },
+        {
+          "heading": "Peripheral Chemoreceptors: Carotid Bodies",
+          "body_text": "The **carotid bodies are situated at the bifurcation of the carotid arteries**; they are **sensitive to hypoxemia** but are **mainly activated when the arterial PO2 falls below 8 kPa (60 mmHg)**. They are also **sensitized to hypoxia by a raised arterial PCO2** (hypercapnia amplifies the hypoxic ventilatory response). This 60 mmHg threshold is clinically crucial: oxygen saturation begins to fall steeply on the hemoglobin dissociation curve precisely at this point (the 'shoulder' of the curve), which is why a PaO2 < 60 mmHg defines severe hypoxemia and the threshold for urgent oxygen therapy. Additional inputs modulating respiration include: **muscle spindles in the respiratory muscles** that sense changes in mechanical load; **vagal sensory fibres from the lung** that may be stimulated by stretch, inhaled toxins, and disease processes in the interstitium; and **cortical (volitional) and limbic (emotional) influences** which can override the automatic control of breathing (e.g., breath-holding, anxiety-driven hyperventilation).",
+          "key_points": [
+            "Carotid bodies: at carotid bifurcation, sensitive to hypoxemia",
+            "Mainly activated when PO2 < 8 kPa (60 mmHg)",
+            "Sensitized to hypoxia by raised PCO2",
+            "Muscle spindles sense mechanical load; vagal fibres sense stretch, toxins, interstitial disease",
+            "Cortical (volitional) and limbic (emotional) input can override automatic breathing"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Central chemoreceptors",
+          "definition_ar": "مستقبلات في البصلة الوحشية البطنية حساسة لدرجة حموضة السائل الدماغي الشوكي وتتحفز غير مباشرة بارتفاع CO2 الشرياني."
+        },
+        {
+          "term": "Carotid bodies",
+          "definition_ar": "أجسام صغيرة عند تفرع السباتي حساسة لنقص الأكسجة وتتحفز أساساً عند هبوط PO2 دون 60 ملم زئبق."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L1_c7",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Non-Respiratory Functions and Lung Defense Mechanisms",
+      "summary_ar": "الوظائف غير التنفسية للرئة، وجدول آليات الدفاع حسب حجم الجسيمات، والمصعد المخاطي الهدبي.",
+      "sections": [
+        {
+          "heading": "Non-Respiratory Functions of the Lungs",
+          "body_text": "Beyond gas exchange, the lungs perform seven additional functions listed in the lecture: **(1) water balance** (insensible water loss through respiration), **(2) heat loss**, **(3) acid–base balance** through regulated CO2 release (the respiratory component of acid–base homeostasis), **(4) defense mechanisms** — removal of foreign bodies, IgA production, and alveolar macrophages, neutrophils and lymphocytes, **(5) improving venous return** (the respiratory pump — negative intrathoracic pressure during inspiration augments venous return to the right heart), **(6) activation of angiotensin 1 to angiotensin 2** by angiotensin-converting enzyme (ACE) on pulmonary endothelium — the lung is the main site of ACE activity, which is why ACE inhibitors cause cough and why sarcoidosis (ACE-producing granulomas) elevates serum ACE, and **(7) synthesis of an anticoagulant — heparin by mast cells**. The lung also handles/synthesize vasoactive mediators: **prostaglandins PGF2 and PGE2, serotonin, histamine, bradykinin and noradrenalin** — making it an important metabolic and endocrine organ.",
+          "key_points": [
+            "Water balance; heat loss; acid–base balance via CO2 release",
+            "Defense: foreign body removal, IgA, alveolar macrophages/neutrophils/lymphocytes",
+            "Improves venous return (respiratory pump)",
+            "Activates angiotensin 1 → angiotensin 2 (ACE on pulmonary endothelium)",
+            "Synthesizes heparin (mast cells); handles PGF2, PGE2, serotonin, histamine, bradykinin, noradrenalin"
+          ]
+        },
+        {
+          "heading": "Defense Mechanisms by Particle Size (Lecture Diagram)",
+          "body_text": "The lecture presents a diagram of the response of different parts of the respiratory system to an inhaled foreign body according to particle size: particles **larger than 10 micrometers** are trapped in the **nose** by **hair and mucus** and cleared by **sneezing**; particles of **2–6 micrometers** impact on the **upper airway** mucus and are cleared by **coughing**; particles reaching the **lower airway** (roughly 6 down to 2 micrometers) are trapped in **mucus**; and the **smallest particles (about 2 down to 0.2–0.5 micrometers)** reach the **alveoli** where they are handled by **macrophages**. Respiratory secretions contain sufficient amounts of **IgA, lysozymes and antioxidants** with the potential to destroy organic material. However, **inorganic particles like silica and asbestos are engulfed by macrophages, which in turn die and release proteolytic enzymes, resulting in lung damage** — the pathogenesis of pneumoconiosis.",
+          "key_points": [
+            "> 10 micrometer: nose — hair + mucus, cleared by sneezing",
+            "2–6 micrometer: upper airway — mucus, cleared by coughing",
+            "~6–2 micrometer: lower airway — mucus trapping",
+            "Smallest (~2–0.2 micrometer): alveoli — macrophages",
+            "Secretions contain IgA, lysozymes, antioxidants",
+            "Inorganic dust (silica, asbestos): macrophages die → release proteolytic enzymes → lung damage (pneumoconiosis)"
+          ]
+        },
+        {
+          "heading": "The Mucociliary Escalator",
+          "body_text": "Inhaled particles that are trapped in the upper or lower respiratory system are cleared by the **mucociliary escalator toward the oropharynx**, to be **swallowed or coughed out**. The coordinated beating of cilia propels the mucus blanket (with its trapped particles) upward from the bronchioles and bronchi to the pharynx at a speed of roughly 1 cm per hour. This clearance system is impaired by cigarette smoking, general anesthesia, cold air, high oxygen concentrations and cystic fibrosis (abnormally viscid mucus) — all conditions that predispose to retained secretions, recurrent infection and lobar collapse. Combined with the cough reflex (a protective expulsion mechanism against foreign bodies, retained secretions and aspirated material), it constitutes the cornerstone of respiratory clearance.",
+          "key_points": [
+            "Mucociliary escalator moves trapped particles toward the oropharynx",
+            "Particles are then swallowed or coughed out",
+            "Impaired by smoking, anesthetics, high O2, viscid secretions → infection and collapse"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Mucociliary escalator",
+          "definition_ar": "حركة الأهداب المنسقة التي تدفع طبقة المخاط مع الجسيمات المحتبسة نحو البلعوم للبلع أو السعال."
+        },
+        {
+          "term": "ACE",
+          "definition_ar": "الإنزيم المحول للأنجيوتنسين على البطانة الرئوية؛ يحول أنجيوتنسين 1 إلى 2، وتثبيطه يسبب سعالاً مزمناً."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L1_f1",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c1",
+      "card_type": "basic",
+      "front_text": "What is the primary function of the lungs?",
+      "back_text": "To deliver oxygen to the pulmonary capillaries and remove carbon dioxide from the alveoli. The lungs are elastic structures within the elastic chest wall; inward lung recoil is opposed by outward chest recoil, and this balance is controlled by inspiratory and expiratory muscles.",
+      "explanation_ar": "الوظيفة الأساسية: توصيل الأكسجين للشعيرات الرئوية وإزالة ثاني أكسيد الكربون من الأسناخ.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f2",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c1",
+      "card_type": "basic",
+      "front_text": "What is the length of the trachea and the shape of its cartilage, and why is the cartilage C-shaped?",
+      "back_text": "The trachea is a 10–12 cm tube supported by C-shaped cartilage. The open posterior part of the C facilitates distension of the esophagus during swallowing. It divides at the carina into right and left main bronchi.",
+      "explanation_ar": "القصبة 10-12 سم، غضاريفها على شكل C لتسمح بتمدد المريء خلفها.",
+      "is_vivid": false,
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "L1_f3",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c1",
+      "card_type": "basic",
+      "front_text": "Why do aspirated foreign bodies preferentially enter the right main bronchus?",
+      "back_text": "Because the right main bronchus is wider, shorter and MORE VERTICAL than the left. It subdivides into an upper lobe bronchus and an intermediate bronchus (which divides into middle and lower lobe bronchi).",
+      "mnemonic_ar": "Right = Rough, Rapid, Roasted — الفول السوداني يذهب لليمين!",
+      "explanation_ar": "قاعدة ذهبية: الجسم الغريب المستنشق يدخل الشعبة اليمنى لأنها أكثر عمودية.",
+      "is_vivid": false,
+      "tags": [
+        "anatomy",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f4",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c1",
+      "card_type": "basic",
+      "front_text": "List the bronchial tree generations from trachea to alveolar sac.",
+      "back_text": "Trachea = 0; main bronchus = 1st; lobar bronchus = 2nd; segmental = 3rd–4th; subsegmental = 5th–11th; bronchiole = 12th–15th; terminal bronchiole = 16th (end of conducting zone); respiratory bronchioles = 17th–19th; alveolar sac = 23rd generation.",
+      "mnemonic_ar": "تذكّر: القصيبة الانتهائية = الجيل 16 (حدود المنطقة الموصلة).",
+      "explanation_ar": "خريطة الأجيال: 0 قصبة، 16 نهائية، 17-19 تنفسية، 23 كيس سنخي.",
+      "is_vivid": false,
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "L1_f5",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c2",
+      "card_type": "basic",
+      "front_text": "What are the differences between bronchi and bronchioles?",
+      "back_text": "Bronchi: first 7 divisions, cartilage rings/plates, ciliated epithelium with glands, little smooth muscle. Bronchioles: next 16–18 divisions, NO cartilage (collapsible, held open by elastic tissue), single-layer ciliated epithelium (respiratory bronchioles lack cilia), terminal bronchioles have MORE smooth muscle; gas exchange occurs in respiratory bronchioles.",
+      "explanation_ar": "الفرق الجوهري: غضروف موجود في القصبات وغائب في القصيبات، والعضل الأملس أكثر في القصيبات الانتهائية.",
+      "is_vivid": false,
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "L1_f6",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c2",
+      "card_type": "basic",
+      "front_text": "What are Kulchitsky cells and goblet cells?",
+      "back_text": "Kulchitsky cells are neuroendocrine cells containing 5-hydroxytryptamine (serotonin) scattered in the epithelium of bronchi and bronchioles (origin of small cell lung carcinoma). Goblet cells are mucus-secreting cells scattered in the epithelial lining, found in the trachea, bronchi and larger (terminal) bronchioles.",
+      "explanation_ar": "خلايا Kulchitsky عصبية صمّاء (سيروتونين)؛ خلايا Goblet مخاطية.",
+      "is_vivid": false,
+      "tags": [
+        "histology"
+      ]
+    },
+    {
+      "id": "L1_f7",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c2",
+      "card_type": "basic",
+      "front_text": "Compare the blood supply of the conducting zone and the respiratory zone.",
+      "back_text": "Conducting zone (trachea to terminal bronchioles): systemic circulation via the bronchial artery. Respiratory zone (respiratory bronchioles, alveolar ducts, sacs, alveoli): pulmonary circulation via the pulmonary artery.",
+      "explanation_ar": "الموصلة = شريان قصبي (جهازي)؛ التنفسية = شريان رئوي.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f8",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c3",
+      "card_type": "basic",
+      "front_text": "What is the innervation of the diaphragm and what is its contribution to quiet breathing?",
+      "back_text": "The diaphragm is innervated chiefly by the phrenic nerves from C3, C4 and C5 ('C3, 4, 5 keeps the diaphragm alive'). About 50% of its fibers are slow-twitch with low glycolytic capacity (fatigue-resistant). It serves about 75% of air entry during quiet inspiration.",
+      "mnemonic_ar": "C3-4-5 keeps the diaphragm alive — بسيطة ولا تُنسى.",
+      "explanation_ar": "الحجاب الحاجز مسؤول عن 75% من دخول الهواء.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f9",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c3",
+      "card_type": "basic",
+      "front_text": "Name the accessory inspiratory muscles and the muscles of forced expiration.",
+      "back_text": "Accessory inspiratory muscles (forced inspiration): sternocleidomastoid, scalene and serratus anterior muscles. Forced expiration (e.g., exercise, obstructive lung disease): internal intercostal muscles and abdominal muscles. Quiet expiration is passive via elastic recoil.",
+      "explanation_ar": "الشهيق القسري: قصية ترقوية خشائية + سلانية + مسننة أمامية؛ الزفير القسري: وربية داخلية + بطنية.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f10",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c4",
+      "card_type": "basic",
+      "front_text": "What is surfactant, what does it do, when is it synthesized, and what decreases it?",
+      "back_text": "Surfactant is a phospholipid secreted by type II pneumocytes. It maintains alveolar stability (prevents overdistension on inspiration and collapse on expiration) by reducing surface tension. It is synthesized in fetal lungs between 24–35 weeks of gestation. Decreased by: long-term 100% oxygen therapy, cigarette smoking, and hypothyroidism.",
+      "mnemonic_ar": "24-35 أسبوعاً = نافذة السورفكتانت — قبلها يحدث تنقص تنفسي وليدي.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f11",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c4",
+      "card_type": "basic",
+      "front_text": "What is lung compliance and how is it defined?",
+      "back_text": "Compliance measures the distensibility/expansibility of the lung: the lung volume change for a given change in intramural pressure, where intramural pressure = alveolar pressure minus intrapleural pressure. Reduced in fibrosis/ARDS/RDS; increased in emphysema.",
+      "explanation_ar": "المطاوعة = تغير الحجم / تغير الضغط داخل الجدار (سنخي - جنبي).",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f12",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c4",
+      "card_type": "basic",
+      "front_text": "How many alveoli exist and what is their surface area and cell composition?",
+      "back_text": "About 300 million alveoli in both lungs, representing an area of about 70 m2. Type I pneumocytes (flattened) constitute ~95% of alveolar cells and form the barrier; type II pneumocytes (cuboidal) constitute ~5% and produce surfactant. Alveoli are interconnected by pores of Kohn.",
+      "explanation_ar": "300 مليون سنخ بمساحة 70 م²؛ النوع الأول 95% والنوع الثاني 5% (يفرز السورفكتانت).",
+      "is_vivid": false,
+      "tags": [
+        "histology"
+      ]
+    },
+    {
+      "id": "L1_f13",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "card_type": "basic",
+      "front_text": "What controls bronchial tone? (nervous, hormonal, circadian, exercise)",
+      "back_text": "1) Nervous: parasympathetic (M receptors) causes bronchoconstriction; sympathetic (B2 receptors) causes bronchodilation. 2) Hormonal: histamine and SR-SA (leukotrienes) cause bronchoconstriction and increase tissue permeability. 3) Circadian: maximum bronchodilation at 6 AM. 4) Exercise causes bronchoconstriction.",
+      "explanation_ar": "كوليني = تضيق؛ بيتا-2 = توسيع؛ ذروة التوسع 6 صباحاً.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f14",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "card_type": "basic",
+      "front_text": "What is the origin and course of the bronchial artery?",
+      "back_text": "The bronchial artery is a branch of the descending aorta (~2 mm diameter) carrying oxygenated blood to the lung tissue (trachea, bronchi, lung parenchyma). It ends at the level of respiratory bronchioles, anastomosing with branches of the pulmonary arteries.",
+      "explanation_ar": "شريان قصبي من الأبهر النازل، ينتهي عند القصيبات التنفسية بتفاغر مع الشرايين الرئوية.",
+      "is_vivid": false,
+      "tags": [
+        "anatomy"
+      ]
+    },
+    {
+      "id": "L1_f15",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "card_type": "basic",
+      "front_text": "What is the normal pulmonary artery pressure and the threshold for pulmonary hypertension?",
+      "back_text": "Normal pulmonary artery pressure is around 8–20 mmHg. Pulmonary hypertension is considered when pressure is > 25 mmHg at rest or > 30 mmHg during exercise. Causes include destruction by emphysema, obstruction by thrombus, interstitial inflammation, and pulmonary vascular thickening — leading to RV hypertrophy/failure (cor pulmonale).",
+      "explanation_ar": "طبيعي 8-20؛ ارتفاع ضغط رئوي > 25 راحة أو > 30 جهد.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f16",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "card_type": "basic",
+      "front_text": "How do hypoxia and CO2 locally regulate V/Q matching?",
+      "back_text": "At the segmental and sub-segmental level: alveolar hypoxia CONSTRICTS pulmonary arterioles (diverting blood to ventilated units), while airway CO2 DILATES bronchi (like a beta-2 agonist, improving ventilation of perfused units). Lung disease creates under-ventilated or under-perfused regions, disturbing matching and causing respiratory failure.",
+      "explanation_ar": "نقص الأكسجة يضيّق الشرينات الرئوية؛ CO2 القصبي يوسع القصبات.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f17",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c6",
+      "card_type": "basic",
+      "front_text": "Where are the central and peripheral chemoreceptors and what stimulates them?",
+      "back_text": "Central chemoreceptors: ventrolateral medulla, sensitive to CSF pH, indirectly stimulated by a rise in arterial PCO2. Peripheral (carotid bodies at the carotid bifurcation): sensitive to hypoxemia, mainly activated when PO2 falls below 8 kPa (60 mmHg); sensitized to hypoxia by raised PCO2.",
+      "mnemonic_ar": "عتبة الأجسام السباتية: PO2 < 60 ملم زئبق — نفس رقم نقص الأكسجة الشديد.",
+      "is_vivid": false,
+      "tags": [
+        "physiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L1_f18",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c6",
+      "card_type": "basic",
+      "front_text": "Which non-chemical inputs can influence the respiratory center?",
+      "back_text": "Respiratory motor neurons (posterior medulla) are modulated by: muscle spindles in respiratory muscles (sense mechanical load), vagal sensory fibres from the lung (stimulated by stretch, inhaled toxins, interstitial disease processes), and cortical (volitional) and limbic (emotional) influences that can override automatic control of breathing.",
+      "explanation_ar": "المغزل العضلي + ألياف مبهمية + قشرة وجهاز طرفي (نفسي) تعدّل التنفس.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f19",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c7",
+      "card_type": "basic",
+      "front_text": "List the non-respiratory functions of the lungs.",
+      "back_text": "1) Water balance; 2) Heat loss; 3) Acid–base balance (regulated CO2 release); 4) Defense (foreign body removal, IgA production, alveolar macrophages, neutrophils, lymphocytes); 5) Improving venous return; 6) Activation of angiotensin 1 to angiotensin 2 (ACE); 7) Synthesis of anticoagulant (heparin by mast cells). The lung also handles prostaglandins (PGF2, PGE2), serotonin, histamine, bradykinin and noradrenalin.",
+      "mnemonic_ar": "WHAD-IVH: Water, Heat, Acid-base, Defense, Improved venous return, Vasoactive (angiotensin), Heparin.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L1_f20",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c7",
+      "card_type": "basic",
+      "front_text": "How are inhaled particles of different sizes cleared from the respiratory tract?",
+      "back_text": "> 10 micrometer: nose — hair and mucus, cleared by sneezing. 2–6 micrometer: upper airway — mucus, cleared by coughing. ~6–2 micrometer: lower airway — mucus trapping. Smallest (~2 down to 0.2 micrometer): alveoli — macrophages. Trapped particles are cleared by the mucociliary escalator toward the oropharynx to be swallowed or coughed out.",
+      "explanation_ar": "حسب الحجم: أنف >10، مجرى علوي 2-6، قصبي أدنى، حويصلات = بلعوميات.",
+      "is_vivid": false,
+      "tags": [
+        "defense"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L1_q1",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c1",
+      "question_stem": "A 4-year-old boy was playing with small toys and suddenly develops choking and paroxysmal cough. A chest X-ray shows hyperinflation of the right lung. Where did the foreign body most likely lodge?",
+      "options": [
+        "Left main bronchus",
+        "Right main bronchus",
+        "Trachea above the carina",
+        "Left lower lobe bronchus",
+        "Right upper lobe bronchus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الجسم الغريب يستقر عادة في القصبة الرئيسية اليمنى لأنها أعرض وأقصر وأكثر عمودية من اليسرى، لذلك فرط النفخ يظهر في الرئة اليمنى. اليسرى أفقية أكثر وتفرعاتها بزاوية حادة، والقصبة نفسها نادرة لأن الجسم إما يُسعل خارجاً أو ينزل لشعبة رئيسية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "تذكر اتجاه القصبتين الرئيسيتين",
+        "أي جانب أعرض وأكثر عمودية؟",
+        "فرط النفخ في أي رئة؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L1_q2",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c4",
+      "question_stem": "A neonate born at 29 weeks of gestation develops grunting, nasal flaring and cyanosis shortly after birth, with diffuse ground-glass opacities on chest X-ray. Which cellular defect underlies this condition?",
+      "options": [
+        "Absent type I pneumocytes",
+        "Deficient surfactant production by type II pneumocytes",
+        "Excess Kulchitsky cell proliferation",
+        "Goblet cell hyperplasia",
+        "Absence of pores of Kohn"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الطفل مصاب بمتلازمة الضائقة التنفسية الوليدية (مرض الغشاء الزجاجي) بسبب نقص السورفكتانت الذي يُصنَّع في الرئة الجنينية بين الأسبوعين 24-35. الخلايا من النوع الثاني (5% من الخلايا السنخية) هي التي تفرز السورفكتانت؛ فنقصه يرفع التوتر السطحي ويقلل المطاوعة ويؤدي لانخماص الأسناخ. خلايا النوع الأول تشكل الحاجز وغير مسؤولة، وخلايا Kulchitsky عصبية صمّاء لا علاقة لها.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما هي نافذة تصنيع السورفكتانت الجنينية؟",
+        "أي خلية تفرز السورفكتانت؟",
+        "فكّر في التوتر السطحي والمطاوعة"
+      ],
+      "focus_sections": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "L1_q3",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c3",
+      "question_stem": "A 25-year-old man sustains a high spinal cord injury at the C1–C2 level after a diving accident. Which immediate life-threatening respiratory consequence is expected?",
+      "options": [
+        "Bronchospasm from loss of sympathetic tone",
+        "Complete paralysis of the diaphragm (phrenic roots C3–C5 involved or above)",
+        "Loss of cough reflex only",
+        "Pulmonary vasoconstriction",
+        "Surfactant depletion"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الحجاب الحاجز يتعصب بالعصب الحجابي من الجذور C3-C5؛ إصابة النخاع فوق C3 أو عند C1-C2 تلغي عمل الحجاب الحاجز كلياً وتسبب فشلاً تنفسياً يتطلب تهوية ميكانيكية فورية. الإصابات تحت C5 تحفظ الحجاب؛ إصابة C6 وما دون لا تشل الحجاب.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ما جذور العصب الحجابي؟",
+        "إصابة فوق هذه الجذور تعني ماذا؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L1_q4",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "question_stem": "A 58-year-old man with severe emphysema has an echocardiogram showing right ventricular hypertrophy and elevated pulmonary artery pressure. Which mechanism best explains his pulmonary hypertension?",
+      "options": [
+        "Hypoxia-induced constriction of pulmonary arterioles with destruction of the vascular bed",
+        "Left atrial myxoma",
+        "Patent ductus arteriosus",
+        "Excess surfactant production",
+        "Bronchial artery hypertrophy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في الانتفاخ الرئوي (emphysema) تُدمَّر الأوعية الرئوية وتُهدم سريرها الشعري، إضافة لتضيّق الشرينات الرئوية بنقص الأكسجة الموضعي؛ النتيجة ارتفاع المقاومة الرئوية ثم تضخم البطين الأيمن (cor pulmonale). البدائل الأخرى لا تنطبق على سياق الانتفاخ الرئوي المزمن.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "تذكّر العواقب الوعائية لتدمير الحويصلات",
+        "أي بطين يتأثر بالضغط الرئوي المرتفع؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L1_q5",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c6",
+      "question_stem": "A mountaineer ascends rapidly to high altitude. His arterial blood gas shows PaO2 of 55 mmHg with normal PaCO2 initially. Which receptor is principally responsible for the increase in his minute ventilation?",
+      "options": [
+        "Central chemoreceptors in the ventrolateral medulla responding to CSF pH",
+        "Carotid body chemoreceptors activated by PaO2 below 60 mmHg",
+        "Muscle spindles in the diaphragm",
+        "Vagal stretch receptors",
+        "Juxtacapillary receptors"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الأجسام السباتية (عند تفرع السباتي) هي المسؤولة عن التحفز بنقص الأكسجة، وتتفعّل أساساً عندما يهبط PO2 دون 8 كيلوباسكال (60 ملم زئبق) — وهو ما حدث عند تسلق المرتفعات. المستقبلات المركزية تتحفز بتغير pH السائل الدماغي الشوكي نتيجة ارتفاع CO2 وليس بنقص الأكسجة مباشرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي مستقبل يحس بنقص الأكسجة وليس CO2؟",
+        "ما العتبة الرقمية للتفعيل؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L1_q6",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c2",
+      "question_stem": "Histamine and slow-reacting substance of anaphylaxis (SR-SA) act on the airways by causing which of the following?",
+      "options": [
+        "Bronchodilation and decreased permeability",
+        "Bronchoconstriction and increased tissue permeability",
+        "Surfactant release",
+        "Mucociliary acceleration",
+        "Pulmonary vasodilation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الهيستامين والمادة بطيئة التفاعل (SR-SA وهي خليط من الليكوترينات) تسبب تضيق القصبات وزيادة نفوذية الأنسجة — ولهذا تعمل مضادات الليكوترينات (مونتيلوكاست) في علاج الربو. البدائل الأخرى عكس الفعل الحقيقي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "SR-SA أي عائلة كيميائية؟",
+        "ماذا تفعل الليكوترينات للقصبات والأوعية؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L1_q7",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c5",
+      "question_stem": "In a patient with lobar pneumonia, the affected alveoli are filled with exudate but the PA pressure remains normal. If a lung region becomes severely hypoxic while still perfused, what local response attempts to restore V/Q matching?",
+      "options": [
+        "Dilation of pulmonary arterioles in that region",
+        "Constriction of pulmonary arterioles in that region",
+        "Constriction of bronchi in that region",
+        "Increased surfactant secretion",
+        "Opening of the pores of Kohn"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "نقص الأكسجة السنخي الموضعي يضيّق الشرينات الرئوية المغذية لتلك المنطقة فيُحوَّل الدم نحو المناطق المهوّاة جيداً — هذه آلية التضيّق الناقص الأكسجي الرئوي لاستعادة مطابقة التهوية/التروية. أما CO2 القصبي فيوسّع القصبات. التوسع الوعائي الرئوي ليس استجابة لنقص الأكسجة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي وعاء يتأثر بنقص الأكسجة السنخي؟",
+        "ما الهدف من هذه الاستجابة؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L1_q8",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "concept_id": "L1_c4",
+      "question_stem": "Which of the following factors DECREASES the level of pulmonary surfactant?",
+      "options": [
+        "Hyperthyroidism",
+        "Hypothyroidism",
+        "Exercise training",
+        "Pregnancy beyond 35 weeks",
+        "Beta-2 agonist therapy"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "العوامل الناقصة للسورفكتانت حسب المحاضرة: الأكسجين 100% لفترات طويلة، التدخين، وقصور الغدة الدرقية (الهرمون الدرقي ضروري لتصنيع السورفكتانت). فرط نشاط الدرقية والتدريب والولادة بعد الأسبوع 35 ليست من العوامل الناقصة.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "أي هرمون ضروري لتصنيع السورفكتانت؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L1_case1",
+      "lecture_id": "L1_resp_anatomy_physiology",
+      "title": "Choking Child with Unilateral Hyperinflation (Foreign Body Aspiration)",
+      "scenario": "A terrified mother rushes her 3-year-old son to the emergency department. Twenty minutes ago he was eating peanuts while laughing during play, when he suddenly developed an episode of choking, gagging and paroxysmal coughing. The cough has now subsided but the child remains irritable with an audible wheeze. This is a classic emergency scenario where knowledge of bronchial anatomy determines the diagnosis, the imaging strategy and the life-saving intervention.",
+      "vignette": {
+        "age": 3,
+        "sex": "male",
+        "chief_complaint": "Choking episode followed by wheeze and irritability",
+        "history": "Previously healthy boy, no fevers or coryza. While eating peanuts he had a sudden choking and gagging episode with paroxysmal cough that partially resolved. Since then he breathes noisily and refuses to lie down. No similar episodes before; immunizations up to date.",
+        "vitals": {
+          "bp": "95/60 mmHg",
+          "hr": "128 beats/min",
+          "rr": "34 breaths/min",
+          "temp": "37.0 C",
+          "spo2": "93% on room air"
+        },
+        "exam": "Alert but irritable, mild subcostal recession. Trachea central. Percussion note hyper-resonant on the right hemithorax. Breath sounds globally reduced on the right with a monophonic (fixed) wheeze on the right side; left lung normal. No stridor. No cyanosis at rest.",
+        "labs": [
+          {
+            "name": "CBC — white cell count",
+            "value": "9.2 x10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "3 mg/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Capillary blood gas pH",
+            "value": "7.38",
+            "flag": "normal"
+          },
+          {
+            "name": "PaO2",
+            "value": "72 mmHg on room air",
+            "flag": "low"
+          }
+        ],
+        "imaging": "Chest X-ray (inspiratory and expiratory films): right lung hyperinflation with mediastinal shift toward the LEFT on expiration, suggesting air trapping in the right lung due to a check-valve obstruction of the right main bronchus; no consolidation, no pneumothorax."
+      },
+      "steps": [
+        {
+          "id": "L1_case1_s1",
+          "prompt": "Based on the anatomy of the bronchial tree, where is the peanut most likely lodged?",
+          "options": [
+            "Left main bronchus",
+            "Right main bronchus",
+            "Larynx",
+            "Carina",
+            "Left segmental bronchus"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "القصبة الرئيسية اليمنى أعرض وأقصر وأكثر عمودية من اليسرى؛ لذلك تتلقى الأجسام الغريبة المستنشقة بشكل تفضيلي. فرط النفخ الأيمن مع انزياح المنصف أثناء الزفير يؤكد انحصار الجسم في الجانب الأيمن.",
+          "xp": 10,
+          "hints": [
+            "قارن عمودية القصبتين الرئيسيتين",
+            "أي رئة أظهرت فرط النفخ؟"
+          ]
+        },
+        {
+          "id": "L1_case1_s2",
+          "prompt": "What is the most appropriate next investigation to confirm the site of obstruction?",
+          "options": [
+            "CT chest with contrast",
+            "Inspiratory and expiratory chest X-ray (already done) followed by rigid bronchoscopy",
+            "MRI airway",
+            "Barium swallow",
+            "Peak flow measurement"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "أفلام الصدر بالشهيق والزفير تكشف انحصار الهواء (فرط نفخ ثابت) وتحدد الجانب، لكن التأكيد والعلاج معاً يتم بالتنظير القصبي الصلب الذي يسمح بإزالة الجسم الغريب بأمان تحت تخدير عام — وهو المعيار الذهبي.",
+          "xp": 15,
+          "hints": [
+            "أي إجراء يشخّص ويعالج في الوقت نفسه؟",
+            "التنظير المرن أم الصلب للأجسام الغريبة عند الأطفال؟"
+          ]
+        },
+        {
+          "id": "L1_case1_s3",
+          "prompt": "The child is taken to theatre and the peanut is successfully removed via rigid bronchoscopy. What is the key anatomical reason this complication was more likely on the right side?",
+          "options": [
+            "The right main bronchus is longer and narrower",
+            "The right main bronchus is wider, shorter and more vertical",
+            "The right lung has three lobes",
+            "The right pulmonary artery crosses the bronchus",
+            "The carina deviates to the left"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "السبب التشريحي: القصبة اليمنى أعرض وأقصر وأكثر عمودية، فتقريباً كل جسم مستنشق يسير بخط شبه مستقيم إليها. هذه نقطة امتحانية كلاسيكية تربط التشريح بحالة طارئة شائعة.",
+          "xp": 10,
+          "hints": [
+            "فكّر في زاوية التفرع من القصبة"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: استنشاق جسم غريب (فول سوداني) في القصبة الرئيسية اليمنى مع انحصار هوائي صمامي (check-valve) مسبب فرط نفخ الرئة اليمنى. الدروس المستفادة: (1) القصبة اليمنى أعرض وأقصر وأكثر عمودية من اليسرى ولذلك تستقبل الأجسام الغريبة المستنشقة تفضيلياً — نقطة تشريحية محورية تظهر كثيراً في الامتحانات. (2) السعال المتقطع لا يعني خروج الجسم؛ يجب تقييم أي اختناق سابق عند الأطفال بأشعة صدر بالشهيق والزفير بحثاً عن فرط نفخ ثابت أو انزياح منصفي. (3) التنظير القصبي الصلب هو إجراء التشخيص والعلاج معاً. (4) المضاعفات المتأخرة غير المعالجة تشمل الرئة المفرطة النفخ، الالتهاب الرئوي الانحصاري، والانخماص — لذا لا يجوز إهمال الحالة حتى لو هدأت الأعراض.",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

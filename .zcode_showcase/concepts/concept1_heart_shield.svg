@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- المفهوم 1: درع القلب والنبض — كحلي tokens مع نبض ذهبي -->
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3C6E"/>
+      <stop offset="1" stop-color="#142C53"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="200" y1="150" x2="340" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8A33D"/>
+      <stop offset="1" stop-color="#C77F1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg1)"/>
+  <!-- درع -->
+  <path d="M256 96 L400 152 V280 C400 376 336 424 256 448 C176 424 112 376 112 280 V152 Z"
+        fill="#FFFFFF" fill-opacity="0.06" stroke="#E9F0FA" stroke-opacity="0.25" stroke-width="3"/>
+  <!-- قلب مضمّن -->
+  <path d="M256 352 C216 316 176 288 176 244 C176 214 200 192 227 192 C243 192 252 200 256 208 C260 200 269 192 285 192 C312 192 336 214 336 244 C336 288 296 316 256 352 Z"
+        fill="none" stroke="url(#gold1)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- خط النبض داخل القلب -->
+  <path d="M196 252 H232 L246 224 L262 280 L276 246 H316"
+        fill="none" stroke="#E9F0FA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- شظية ذهبية أسفل الدرع — إشارة للؤلؤة -->
+  <circle cx="256" cy="424" r="10" fill="url(#gold1)"/>
+</svg>

@@ -1,0 +1,4740 @@
+{
+  "module_metadata": {
+    "module_id": "clinical_history_taking_im",
+    "module_name": "Clinical History Taking - Internal Medicine",
+    "app": "MedOS",
+    "version": "1.0.0",
+    "language": "en",
+    "offline": true,
+    "target_users": "4th-year medical students",
+    "last_updated": "2026-09-16",
+    "design_notes": {
+      "field_naming": "snake_case, globally unique across all sections and templates (machine-verified)",
+      "section_prefixes": "systemic review fields carry a system prefix (cvs_, resp_, gi_, neuro_, gu_, rheum_, heme_, endo_, derma_, psych_) so SQL queries like WHERE field_name LIKE 'cvs_%' are possible",
+      "supported_field_types": [
+        "text",
+        "multiline_text",
+        "number",
+        "boolean",
+        "dropdown",
+        "multi_select",
+        "date",
+        "list_repeater"
+      ],
+      "conditional_fields": "A field carrying depends_on stays hidden until the parent field satisfies it. Supported operators: equals (match a stored value), not_equals, is_set (parent holds any non-null value).",
+      "groups": "An optional 'group' string renders a sub-header inside the section ListView (e.g. 'Menstrual History').",
+      "red_flags": "Fields with red_flag=true are danger symptoms: highlight them in the UI and surface them in the generated presentation. For dropdown/multi_select fields, red_flag applies to any non-None value.",
+      "pertinent_negatives": "Fields with pertinent_negative=true that end up false/None are joined into the 'denies ...' sentence of the case presentation.",
+      "narrative_generation": "For a true boolean, use 'narrative' if present, otherwise the lower-cased label. For dropdown/multi_select, use 'narrative' with {value} replaced by the stored value; when 'narrative' is absent fall back to '{label}: {value}'. Dropdown values equal to 'None', 'None reported', 'None identified' or null are treated as negative.",
+      "value_encoding_for_sqlite": "boolean -> INTEGER 0/1; number -> REAL; multi_select -> JSON array string in value_text; everything else -> TEXT"
+    },
+    "stats": {
+      "sections": 20,
+      "history_fields": 389,
+      "hpi_complaint_templates": 10,
+      "lab_reference_tests": 90,
+      "clinical_pearls": 17
+    }
+  },
+  "history_taking_module": {
+    "sections": [
+      {
+        "section_id": "demographics",
+        "title": "Patient Demographics",
+        "instruction": "Open the encounter by introducing yourself, confirming patient identity, and documenting the informant and reliability.",
+        "fields": [
+          {
+            "name": "encounter_setting",
+            "label": "Encounter Setting",
+            "type": "dropdown",
+            "options": [
+              "Outpatient clinic",
+              "Emergency department",
+              "Inpatient ward"
+            ]
+          },
+          {
+            "name": "patient_name",
+            "label": "Patient Full Name",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "mrn",
+            "label": "Medical Record Number (MRN)",
+            "type": "text",
+            "hint": "Hospital number if available"
+          },
+          {
+            "name": "age_years",
+            "label": "Age (years)",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 120
+          },
+          {
+            "name": "gender",
+            "label": "Gender",
+            "type": "dropdown",
+            "options": [
+              "Male",
+              "Female"
+            ],
+            "required": true
+          },
+          {
+            "name": "marital_status",
+            "label": "Marital Status",
+            "type": "dropdown",
+            "options": [
+              "Single",
+              "Married",
+              "Divorced",
+              "Widowed",
+              "Separated"
+            ]
+          },
+          {
+            "name": "occupation",
+            "label": "Occupation",
+            "type": "text",
+            "hint": "e.g. farmer, teacher, driver, housewife - ask about exposures",
+            "narrative": "a {value} by occupation"
+          },
+          {
+            "name": "residence",
+            "label": "Residence",
+            "type": "text",
+            "hint": "City / district / rural"
+          },
+          {
+            "name": "phone_number",
+            "label": "Phone Number",
+            "type": "text"
+          },
+          {
+            "name": "informant",
+            "label": "Informant",
+            "type": "dropdown",
+            "options": [
+              "Patient",
+              "Parent",
+              "Spouse",
+              "Sibling",
+              "Son or daughter",
+              "Other relative",
+              "Friend or bystander",
+              "Medical records"
+            ]
+          },
+          {
+            "name": "informant_reliability",
+            "label": "Informant Reliability",
+            "type": "dropdown",
+            "options": [
+              "Reliable",
+              "Partially reliable",
+              "Unreliable",
+              "Unknown"
+            ]
+          },
+          {
+            "name": "blood_group",
+            "label": "Blood Group",
+            "type": "dropdown",
+            "options": [
+              "A+",
+              "A-",
+              "B+",
+              "B-",
+              "AB+",
+              "AB-",
+              "O+",
+              "O-",
+              "Unknown"
+            ]
+          },
+          {
+            "name": "encounter_date",
+            "label": "Date of Encounter",
+            "type": "date"
+          }
+        ]
+      },
+      {
+        "section_id": "chief_complaint",
+        "title": "Chief Complaint (CC)",
+        "instruction": "List the main complaints in the patient's own words, each with its duration. Ask: 'What brought you to the hospital today?' Selecting a complaint automatically loads its detailed HPI template.",
+        "fields": [
+          {
+            "name": "cc_1",
+            "label": "Chief Complaint 1",
+            "type": "dropdown",
+            "required": true,
+            "options": [
+              "Chest pain",
+              "Shortness of breath",
+              "Cough",
+              "Fever",
+              "Palpitations",
+              "Abdominal pain",
+              "Nausea and/or vomiting",
+              "Diarrhea",
+              "Constipation",
+              "Jaundice",
+              "Hematemesis (vomiting blood)",
+              "Melena (black tarry stools)",
+              "Hemoptysis (coughing blood)",
+              "Headache",
+              "Dizziness",
+              "Syncope (fainting)",
+              "Limb weakness",
+              "Numbness or tingling",
+              "Seizure",
+              "Confusion or altered consciousness",
+              "Dysuria (painful urination)",
+              "Hematuria (blood in urine)",
+              "Oliguria (reduced urine output)",
+              "Joint pain",
+              "Back pain",
+              "Leg swelling",
+              "Weight loss",
+              "Fatigue",
+              "Loss of appetite",
+              "Night sweats",
+              "Rash",
+              "Other (specify)"
+            ]
+          },
+          {
+            "name": "cc_1_other",
+            "label": "Specify Complaint 1",
+            "type": "text",
+            "depends_on": {
+              "field": "cc_1",
+              "equals": "Other (specify)"
+            }
+          },
+          {
+            "name": "cc_1_duration_value",
+            "label": "Duration of Complaint 1",
+            "type": "number",
+            "depends_on": {
+              "field": "cc_1",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_1_duration_unit",
+            "label": "Duration Unit",
+            "type": "dropdown",
+            "options": [
+              "Hours",
+              "Days",
+              "Weeks",
+              "Months",
+              "Years"
+            ],
+            "depends_on": {
+              "field": "cc_1",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_2",
+            "label": "Chief Complaint 2",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Chest pain",
+              "Shortness of breath",
+              "Cough",
+              "Fever",
+              "Palpitations",
+              "Abdominal pain",
+              "Nausea and/or vomiting",
+              "Diarrhea",
+              "Constipation",
+              "Jaundice",
+              "Hematemesis (vomiting blood)",
+              "Melena (black tarry stools)",
+              "Hemoptysis (coughing blood)",
+              "Headache",
+              "Dizziness",
+              "Syncope (fainting)",
+              "Limb weakness",
+              "Numbness or tingling",
+              "Seizure",
+              "Confusion or altered consciousness",
+              "Dysuria (painful urination)",
+              "Hematuria (blood in urine)",
+              "Oliguria (reduced urine output)",
+              "Joint pain",
+              "Back pain",
+              "Leg swelling",
+              "Weight loss",
+              "Fatigue",
+              "Loss of appetite",
+              "Night sweats",
+              "Rash",
+              "Other (specify)"
+            ]
+          },
+          {
+            "name": "cc_2_other",
+            "label": "Specify Complaint 2",
+            "type": "text",
+            "depends_on": {
+              "field": "cc_2",
+              "equals": "Other (specify)"
+            }
+          },
+          {
+            "name": "cc_2_duration_value",
+            "label": "Duration of Complaint 2",
+            "type": "number",
+            "depends_on": {
+              "field": "cc_2",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_2_duration_unit",
+            "label": "Duration Unit",
+            "type": "dropdown",
+            "options": [
+              "Hours",
+              "Days",
+              "Weeks",
+              "Months",
+              "Years"
+            ],
+            "depends_on": {
+              "field": "cc_2",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_3",
+            "label": "Chief Complaint 3",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Chest pain",
+              "Shortness of breath",
+              "Cough",
+              "Fever",
+              "Palpitations",
+              "Abdominal pain",
+              "Nausea and/or vomiting",
+              "Diarrhea",
+              "Constipation",
+              "Jaundice",
+              "Hematemesis (vomiting blood)",
+              "Melena (black tarry stools)",
+              "Hemoptysis (coughing blood)",
+              "Headache",
+              "Dizziness",
+              "Syncope (fainting)",
+              "Limb weakness",
+              "Numbness or tingling",
+              "Seizure",
+              "Confusion or altered consciousness",
+              "Dysuria (painful urination)",
+              "Hematuria (blood in urine)",
+              "Oliguria (reduced urine output)",
+              "Joint pain",
+              "Back pain",
+              "Leg swelling",
+              "Weight loss",
+              "Fatigue",
+              "Loss of appetite",
+              "Night sweats",
+              "Rash",
+              "Other (specify)"
+            ]
+          },
+          {
+            "name": "cc_3_other",
+            "label": "Specify Complaint 3",
+            "type": "text",
+            "depends_on": {
+              "field": "cc_3",
+              "equals": "Other (specify)"
+            }
+          },
+          {
+            "name": "cc_3_duration_value",
+            "label": "Duration of Complaint 3",
+            "type": "number",
+            "depends_on": {
+              "field": "cc_3",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_3_duration_unit",
+            "label": "Duration Unit",
+            "type": "dropdown",
+            "options": [
+              "Hours",
+              "Days",
+              "Weeks",
+              "Months",
+              "Years"
+            ],
+            "depends_on": {
+              "field": "cc_3",
+              "is_set": true
+            }
+          },
+          {
+            "name": "cc_own_words",
+            "label": "Complaint in Patient's Own Words",
+            "type": "text",
+            "hint": "e.g. 'I have a burning pain in my stomach'"
+          }
+        ]
+      },
+      {
+        "section_id": "hpi_core",
+        "title": "History of Present Illness (HPI) - General",
+        "instruction": "Expand each chief complaint: onset, course, context, treatment so far, and constitutional (B) symptoms. For pain complaints also complete the SOCRATES section and the matching complaint template.",
+        "fields": [
+          {
+            "name": "onset_mode",
+            "label": "Mode of Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden (seconds to minutes)",
+              "Acute (hours)",
+              "Gradual (days)",
+              "Insidious (weeks to months)"
+            ]
+          },
+          {
+            "name": "course_since_onset",
+            "label": "Course Since Onset",
+            "type": "dropdown",
+            "options": [
+              "Improving",
+              "Static (unchanged)",
+              "Progressively worsening",
+              "Relapsing and remitting",
+              "Episodic attacks"
+            ]
+          },
+          {
+            "name": "preceding_events",
+            "label": "Preceding / Triggering Events",
+            "type": "multiline_text",
+            "hint": "e.g. trauma, new drug, stress, infection, exertion, food"
+          },
+          {
+            "name": "treatment_so_far",
+            "label": "Treatment Taken So Far",
+            "type": "multiline_text",
+            "hint": "Self-medication, previous clinic or hospital visits for this illness"
+          },
+          {
+            "name": "treatment_response",
+            "label": "Response to Treatment",
+            "type": "dropdown",
+            "options": [
+              "Not treated yet",
+              "Complete response",
+              "Partial response",
+              "No response",
+              "Felt worse"
+            ]
+          },
+          {
+            "name": "constitutional_fever",
+            "label": "Fever",
+            "type": "boolean",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_chills",
+            "label": "Chills and Rigors",
+            "type": "boolean",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_night_sweats",
+            "label": "Night Sweats",
+            "type": "boolean",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_weight_loss",
+            "label": "Weight Loss",
+            "type": "boolean",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_weight_loss_amount",
+            "label": "Amount of Weight Lost",
+            "type": "text",
+            "depends_on": {
+              "field": "constitutional_weight_loss",
+              "equals": true
+            },
+            "hint": "e.g. 6 kg in 2 months",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_appetite",
+            "label": "Appetite",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Reduced",
+              "Increased"
+            ],
+            "narrative": "{value} appetite",
+            "group": "Constitutional (B) Symptoms"
+          },
+          {
+            "name": "constitutional_fatigue",
+            "label": "Fatigue / Malaise",
+            "type": "boolean",
+            "group": "Constitutional (B) Symptoms"
+          }
+        ]
+      },
+      {
+        "section_id": "hpi_socrates",
+        "title": "Pain Assessment (SOCRATES)",
+        "instruction": "SOCRATES = Site, Onset, Character, Radiation, Associations, Timing, Exacerbating/Relieving factors, Severity. Complete for any significant pain complaint.",
+        "fields": [
+          {
+            "name": "socrates_site",
+            "label": "Site",
+            "type": "text",
+            "hint": "Ask the patient to point with one finger"
+          },
+          {
+            "name": "socrates_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden (seconds)",
+              "Gradual over minutes",
+              "Gradual over hours",
+              "Gradual over days"
+            ]
+          },
+          {
+            "name": "socrates_character",
+            "label": "Character",
+            "type": "dropdown",
+            "options": [
+              "Crushing / pressure / squeezing",
+              "Sharp / stabbing",
+              "Burning",
+              "Colicky (waves)",
+              "Tearing / ripping",
+              "Dull ache",
+              "Throbbing",
+              "Electric-shock like"
+            ]
+          },
+          {
+            "name": "socrates_radiation",
+            "label": "Radiation",
+            "type": "text",
+            "hint": "e.g. to left arm, jaw, back, groin"
+          },
+          {
+            "name": "socrates_associations",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Nausea",
+              "Vomiting",
+              "Sweating (diaphoresis)",
+              "Shortness of breath",
+              "Palpitations",
+              "Dizziness",
+              "Fever",
+              "None reported"
+            ]
+          },
+          {
+            "name": "socrates_timing",
+            "label": "Timing / Pattern",
+            "type": "dropdown",
+            "options": [
+              "Constant since onset",
+              "Intermittent episodes",
+              "Progressively increasing",
+              "Waves (colicky)",
+              "Worse at night",
+              "Only on exertion",
+              "Only at rest"
+            ]
+          },
+          {
+            "name": "socrates_exacerbating",
+            "label": "Exacerbating Factors",
+            "type": "multi_select",
+            "options": [
+              "Deep breathing or coughing",
+              "Movement / walking",
+              "Exertion",
+              "Eating or fasting",
+              "Lying flat",
+              "Touch / pressure",
+              "Stress",
+              "None identified"
+            ]
+          },
+          {
+            "name": "socrates_relieving",
+            "label": "Relieving Factors",
+            "type": "multi_select",
+            "options": [
+              "Rest",
+              "Simple analgesics",
+              "GTN (nitroglycerin)",
+              "Antacids or food",
+              "Sitting up / leaning forward",
+              "Position change",
+              "Local heat",
+              "Nothing"
+            ]
+          },
+          {
+            "name": "socrates_severity",
+            "label": "Severity (0-10)",
+            "type": "number",
+            "min": 0,
+            "max": 10,
+            "narrative": "severity {value}/10"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_cvs",
+        "title": "Cardiovascular System",
+        "instruction": "Screen for ischemia (chest pain), heart failure (exertional dyspnea, orthopnea, PND, edema), and arrhythmia (palpitations, syncope).",
+        "fields": [
+          {
+            "name": "cvs_chest_pain",
+            "label": "Chest Pain",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "cvs_dyspnea_exertion",
+            "label": "Exertional Dyspnea (NYHA)",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Only on severe exertion (NYHA I)",
+              "On moderate exertion, 2 flights of stairs (NYHA II)",
+              "On minimal exertion, dressing or walking indoors (NYHA III)",
+              "At rest (NYHA IV)"
+            ],
+            "narrative": "exertional dyspnea ({value})",
+            "pertinent_negative": true
+          },
+          {
+            "name": "cvs_orthopnea",
+            "label": "Orthopnea",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "1 pillow",
+              "2 pillows",
+              "3+ pillows"
+            ],
+            "narrative": "orthopnea ({value})",
+            "pertinent_negative": true
+          },
+          {
+            "name": "cvs_pnd",
+            "label": "Paroxysmal Nocturnal Dyspnea (PND)",
+            "type": "boolean",
+            "narrative": "paroxysmal nocturnal dyspnea",
+            "pertinent_negative": true
+          },
+          {
+            "name": "cvs_palpitations",
+            "label": "Palpitations",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "cvs_syncope",
+            "label": "Syncope",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "cvs_edema",
+            "label": "Leg Swelling / Edema",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Ankles only",
+              "Up to mid-shin",
+              "Up to the knees",
+              "Thighs and sacral",
+              "Anasarca (generalized)"
+            ],
+            "narrative": "pitting edema up to {value}"
+          },
+          {
+            "name": "cvs_cough_pink_frothy",
+            "label": "Cough with Pink Frothy Sputum",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "cvs_claudication",
+            "label": "Intermittent Claudication",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "After walking more than 200 m",
+              "After walking less than 200 m",
+              "Rest pain in the feet"
+            ],
+            "narrative": "intermittent claudication ({value})"
+          },
+          {
+            "name": "cvs_htn_known",
+            "label": "Known Hypertension",
+            "type": "boolean"
+          },
+          {
+            "name": "cvs_htn_years",
+            "label": "Hypertension Duration (years)",
+            "type": "number",
+            "depends_on": {
+              "field": "cvs_htn_known",
+              "equals": true
+            }
+          },
+          {
+            "name": "cvs_htn_control",
+            "label": "Hypertension Control",
+            "type": "dropdown",
+            "options": [
+              "Well controlled on medication",
+              "Poorly controlled",
+              "Never treated",
+              "Unknown"
+            ],
+            "depends_on": {
+              "field": "cvs_htn_known",
+              "equals": true
+            }
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_resp",
+        "title": "Respiratory System",
+        "instruction": "Cover cough, sputum, hemoptysis, breathlessness, wheeze and sleep-disordered breathing. Hemoptysis and stridor are red flags.",
+        "fields": [
+          {
+            "name": "resp_cough",
+            "label": "Cough",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Dry / non-productive",
+              "Productive"
+            ],
+            "pertinent_negative": true
+          },
+          {
+            "name": "resp_sputum",
+            "label": "Sputum Appearance",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Mucoid (white/clear)",
+              "Purulent (yellow-green)",
+              "Rusty",
+              "Copious and foul-smelling",
+              "Pink frothy"
+            ],
+            "depends_on": {
+              "field": "resp_cough",
+              "equals": "Productive"
+            },
+            "red_flag": true,
+            "narrative": "sputum that is {value}"
+          },
+          {
+            "name": "resp_hemoptysis",
+            "label": "Hemoptysis (Coughing Blood)",
+            "type": "boolean",
+            "red_flag": true,
+            "pertinent_negative": true
+          },
+          {
+            "name": "resp_dyspnea",
+            "label": "Breathlessness",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "resp_wheeze",
+            "label": "Wheezing",
+            "type": "boolean"
+          },
+          {
+            "name": "resp_chest_tightness",
+            "label": "Chest Tightness",
+            "type": "boolean"
+          },
+          {
+            "name": "resp_stridor",
+            "label": "Stridor",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "resp_snoring",
+            "label": "Loud Snoring",
+            "type": "boolean",
+            "group": "Sleep-Disordered Breathing"
+          },
+          {
+            "name": "resp_apneas",
+            "label": "Witnessed Sleep Apneas",
+            "type": "boolean",
+            "group": "Sleep-Disordered Breathing"
+          },
+          {
+            "name": "resp_daytime_sleepiness",
+            "label": "Excessive Daytime Sleepiness",
+            "type": "boolean",
+            "group": "Sleep-Disordered Breathing"
+          },
+          {
+            "name": "resp_morning_headache",
+            "label": "Morning Headaches",
+            "type": "boolean",
+            "group": "Sleep-Disordered Breathing",
+            "narrative": "morning headaches (suggesting nocturnal hypercapnia)"
+          },
+          {
+            "name": "resp_recurrent_infections",
+            "label": "Recurrent Chest Infections",
+            "type": "boolean",
+            "hint": "More than 2 episodes per year"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_gi",
+        "title": "Gastrointestinal System",
+        "instruction": "Cover the tract from mouth (dysphagia) to rectum (melena, tenesmus) plus hepatobiliary symptoms (jaundice, pale stools, dark urine).",
+        "fields": [
+          {
+            "name": "gi_abdominal_pain",
+            "label": "Abdominal Pain",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "gi_dysphagia",
+            "label": "Dysphagia (Swallowing Difficulty)",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "To solids only",
+              "To solids, now progressing to liquids",
+              "To both solids and liquids from the start",
+              "Difficulty initiating the swallow"
+            ],
+            "narrative": "dysphagia {value}",
+            "pertinent_negative": true
+          },
+          {
+            "name": "gi_odynophagia",
+            "label": "Odynophagia (Painful Swallowing)",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_heartburn",
+            "label": "Heartburn",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_regurgitation",
+            "label": "Regurgitation",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_early_satiety",
+            "label": "Early Satiety",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_anorexia",
+            "label": "Loss of Appetite (Anorexia)",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_nausea",
+            "label": "Nausea",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_vomiting",
+            "label": "Vomiting",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_vomitus",
+            "label": "Vomitus Appearance",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Food contents",
+              "Bilious (green)",
+              "Coffee-ground",
+              "Frank blood",
+              "Feculent"
+            ],
+            "depends_on": {
+              "field": "gi_vomiting",
+              "equals": true
+            },
+            "red_flag": true,
+            "narrative": "vomitus that is {value}"
+          },
+          {
+            "name": "gi_abdominal_distension",
+            "label": "Abdominal Distension",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_bowel_pattern",
+            "label": "Bowel Habit",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Constipation",
+              "Diarrhea",
+              "Alternating constipation and diarrhea"
+            ]
+          },
+          {
+            "name": "gi_stool_appearance",
+            "label": "Stool Appearance",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Watery",
+              "Bloody",
+              "Black tarry (melena)",
+              "Pale and bulky (steatorrhea)",
+              "Contains mucus",
+              "Pencil-thin"
+            ],
+            "red_flag": true
+          },
+          {
+            "name": "gi_melena",
+            "label": "Melena (Black Tarry Stools)",
+            "type": "boolean",
+            "red_flag": true,
+            "pertinent_negative": true
+          },
+          {
+            "name": "gi_hematochezia",
+            "label": "Fresh Blood Per Rectum",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "gi_tenesmus",
+            "label": "Tenesmus (Constant Urge to Defecate)",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_jaundice",
+            "label": "Jaundice",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "gi_pruritus",
+            "label": "Generalized Itching (Pruritus)",
+            "type": "boolean"
+          },
+          {
+            "name": "gi_pale_stools_dark_urine",
+            "label": "Pale Stools with Dark Urine",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_neuro",
+        "title": "Neurological System",
+        "instruction": "Screen higher functions, cranial nerves, motor, sensory, coordination and gait, plus sphincter function. Sudden-onset focal deficit is a red flag.",
+        "fields": [
+          {
+            "name": "neuro_headache",
+            "label": "Headache",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "neuro_dizziness",
+            "label": "Dizziness",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Lightheadedness",
+              "Vertigo (spinning)",
+              "Unsteadiness when walking"
+            ],
+            "pertinent_negative": true
+          },
+          {
+            "name": "neuro_syncope",
+            "label": "Syncope (Fainting)",
+            "type": "boolean"
+          },
+          {
+            "name": "neuro_seizures",
+            "label": "Seizures / Fits",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "neuro_loss_of_consciousness",
+            "label": "Loss of Consciousness",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "neuro_confusion",
+            "label": "Confusion / Altered Behavior",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "neuro_memory_decline",
+            "label": "Memory Decline",
+            "type": "boolean",
+            "group": "Higher Functions"
+          },
+          {
+            "name": "neuro_concentration_decline",
+            "label": "Poor Concentration",
+            "type": "boolean",
+            "group": "Higher Functions"
+          },
+          {
+            "name": "neuro_weakness",
+            "label": "Limb Weakness",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "One arm or leg",
+              "One side of the body (hemiparesis)",
+              "Both legs (paraparesis)",
+              "All four limbs",
+              "Fluctuating (fatigable)",
+              "Proximal only",
+              "Distal only"
+            ],
+            "narrative": "weakness affecting {value}"
+          },
+          {
+            "name": "neuro_sensory_change",
+            "label": "Sensory Change",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Numbness in hands and feet (glove-and-stocking)",
+              "One side of the body",
+              "Patchy areas",
+              "Band-like around the trunk"
+            ],
+            "narrative": "numbness in a {value} distribution"
+          },
+          {
+            "name": "neuro_paresthesia",
+            "label": "Tingling / Pins and Needles",
+            "type": "boolean"
+          },
+          {
+            "name": "neuro_vision_symptoms",
+            "label": "Visual Symptoms",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Blurred vision",
+              "Double vision (diplopia)",
+              "Transient vision loss",
+              "Persistent vision loss",
+              "Flashing lights / floaters"
+            ],
+            "red_flag": true
+          },
+          {
+            "name": "neuro_speech_symptoms",
+            "label": "Speech Symptoms",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Slurred speech (dysarthria)",
+              "Difficulty finding words",
+              "Difficulty understanding speech",
+              "Hoarse voice (dysphonia)"
+            ],
+            "red_flag": true
+          },
+          {
+            "name": "neuro_cranial_symptoms",
+            "label": "Other Cranial Nerve Symptoms",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Facial droop or asymmetry",
+              "Facial numbness",
+              "Hearing loss",
+              "Tinnitus (ringing in ears)",
+              "Loss of smell",
+              "Altered taste"
+            ]
+          },
+          {
+            "name": "neuro_gait",
+            "label": "Gait",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Unsteady / off balance",
+              "Shuffling with small steps",
+              "Waddling",
+              "Dragging one foot",
+              "Wide-based"
+            ],
+            "narrative": "a {value} gait"
+          },
+          {
+            "name": "neuro_tremor",
+            "label": "Tremor",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Present at rest",
+              "Present with action",
+              "Worse near target (intention)"
+            ],
+            "narrative": "tremor {value}"
+          },
+          {
+            "name": "neuro_involuntary_movements",
+            "label": "Involuntary Movements",
+            "type": "boolean"
+          },
+          {
+            "name": "neuro_bladder_bowel",
+            "label": "Bladder / Bowel Dysfunction",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Urinary incontinence",
+              "Urinary retention",
+              "Fecal incontinence",
+              "Constipation with retention"
+            ],
+            "red_flag": true,
+            "narrative": "bladder/bowel dysfunction ({value})"
+          },
+          {
+            "name": "neuro_neck_stiffness",
+            "label": "Neck Stiffness",
+            "type": "boolean",
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_gu",
+        "title": "Genitourinary System",
+        "instruction": "Screen urinary symptoms, renal colic, sexual health, and - for female patients - menstrual and obstetric history.",
+        "fields": [
+          {
+            "name": "gu_dysuria",
+            "label": "Dysuria (Painful Urination)",
+            "type": "boolean",
+            "pertinent_negative": true
+          },
+          {
+            "name": "gu_frequency",
+            "label": "Increased Urinary Frequency",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_urgency",
+            "label": "Urgency",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_nocturia",
+            "label": "Nocturia",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Once per night",
+              "Twice per night",
+              "Three or more times per night"
+            ]
+          },
+          {
+            "name": "gu_polyuria",
+            "label": "Polyuria (Large Volumes of Urine)",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_polydipsia",
+            "label": "Polydipsia (Excessive Thirst)",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_oliguria",
+            "label": "Oliguria (Reduced Urine Output)",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "gu_anuria",
+            "label": "Anuria (No Urine Output)",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "gu_hematuria",
+            "label": "Hematuria (Blood in Urine)",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "gu_foamy_urine",
+            "label": "Frothy / Foamy Urine",
+            "type": "boolean",
+            "narrative": "frothy urine (suggesting proteinuria)"
+          },
+          {
+            "name": "gu_flank_pain",
+            "label": "Loin (Flank) Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_suprapubic_pain",
+            "label": "Suprapubic Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_stone_passage",
+            "label": "Passing Gravel / Stones in Urine",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_incontinence",
+            "label": "Urinary Incontinence",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Stress (on coughing or sneezing)",
+              "Urge (cannot hold)",
+              "Overflow dribbling",
+              "Mixed"
+            ]
+          },
+          {
+            "name": "gu_retention",
+            "label": "Urinary Retention / Hesitancy",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_urethral_discharge",
+            "label": "Urethral Discharge",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_scrotal_symptoms",
+            "label": "Scrotal Pain or Swelling",
+            "type": "boolean",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Male"
+            }
+          },
+          {
+            "name": "gu_sexual_dysfunction",
+            "label": "Sexual Dysfunction (Libido / Erectile)",
+            "type": "boolean"
+          },
+          {
+            "name": "gu_lmp",
+            "label": "Date of Last Menstrual Period (LMP)",
+            "type": "date",
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_cycle_regular",
+            "label": "Cycle Regularity",
+            "type": "dropdown",
+            "options": [
+              "Regular",
+              "Irregular"
+            ],
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_cycle_length",
+            "label": "Cycle Length (days)",
+            "type": "number",
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_menstrual_flow",
+            "label": "Menstrual Flow",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Heavy (soaking more than 1 pad per hour or clots)",
+              "Light"
+            ],
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_dysmenorrhea",
+            "label": "Dysmenorrhea (Painful Periods)",
+            "type": "boolean",
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_intermenstrual_bleeding",
+            "label": "Intermenstrual Bleeding",
+            "type": "boolean",
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_postmenopausal_bleeding",
+            "label": "Postmenopausal Bleeding",
+            "type": "boolean",
+            "red_flag": true,
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_menopause_status",
+            "label": "Menopause Status",
+            "type": "dropdown",
+            "options": [
+              "Premenopausal",
+              "Perimenopausal",
+              "Postmenopausal"
+            ],
+            "group": "Menstrual History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_gravida",
+            "label": "Gravida (Total Pregnancies)",
+            "type": "number",
+            "group": "Obstetric History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_para",
+            "label": "Para (Births Beyond Viability)",
+            "type": "number",
+            "group": "Obstetric History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_abortions",
+            "label": "Abortions (Spontaneous + Induced)",
+            "type": "number",
+            "group": "Obstetric History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_current_pregnancy",
+            "label": "Currently Pregnant",
+            "type": "boolean",
+            "group": "Obstetric History",
+            "depends_on": {
+              "field": "gender",
+              "equals": "Female"
+            }
+          },
+          {
+            "name": "gu_edd",
+            "label": "Estimated Delivery Date (EDD)",
+            "type": "date",
+            "group": "Obstetric History",
+            "depends_on": {
+              "field": "gu_current_pregnancy",
+              "equals": true
+            }
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_rheum",
+        "title": "Rheumatology / Musculoskeletal System",
+        "instruction": "Define joint pain pattern (number, symmetry, small vs large, morning stiffness duration), plus extra-articular autoimmune features. A single hot swollen joint is septic arthritis until proven otherwise.",
+        "fields": [
+          {
+            "name": "rheum_joint_pain",
+            "label": "Joint Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "rheum_joint_distribution",
+            "label": "Joint Distribution",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "One joint (monoarticular)",
+              "2-4 joints (oligoarticular)",
+              "5 or more joints (polyarticular)"
+            ],
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_joint_symmetry",
+            "label": "Symmetry",
+            "type": "dropdown",
+            "options": [
+              "Symmetric",
+              "Asymmetric"
+            ],
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_joint_type",
+            "label": "Joint Type Involved",
+            "type": "dropdown",
+            "options": [
+              "Small joints (hands/feet)",
+              "Large joints",
+              "Both small and large",
+              "Spine predominant"
+            ],
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_morning_stiffness",
+            "label": "Morning Stiffness Duration",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Less than 30 minutes",
+              "30-60 minutes",
+              "More than 1 hour"
+            ],
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            },
+            "narrative": "morning stiffness lasting {value}"
+          },
+          {
+            "name": "rheum_joint_swelling",
+            "label": "Joint Swelling",
+            "type": "boolean",
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_joint_redness",
+            "label": "Joint Redness / Warmth",
+            "type": "boolean",
+            "depends_on": {
+              "field": "rheum_joint_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_hot_swollen_joint",
+            "label": "Single Hot Swollen Joint",
+            "type": "boolean",
+            "red_flag": true,
+            "narrative": "a single hot swollen joint (septic arthritis must be excluded)"
+          },
+          {
+            "name": "rheum_back_pain",
+            "label": "Back Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "rheum_inflammatory_back_features",
+            "label": "Inflammatory Back Pain Features",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Worse in the morning, improves with activity",
+              "Improves with exercise but not rest",
+              "Wakes the patient in the second half of the night",
+              "Alternating buttock pain"
+            ],
+            "depends_on": {
+              "field": "rheum_back_pain",
+              "equals": true
+            }
+          },
+          {
+            "name": "rheum_neck_pain",
+            "label": "Neck Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "rheum_myalgia",
+            "label": "Muscle Pain (Myalgia)",
+            "type": "boolean"
+          },
+          {
+            "name": "rheum_proximal_weakness",
+            "label": "Proximal Muscle Weakness",
+            "type": "boolean",
+            "hint": "Difficulty rising from a chair or combing hair"
+          },
+          {
+            "name": "rheum_dry_eyes",
+            "label": "Dry Eyes",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_dry_mouth",
+            "label": "Dry Mouth",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_photosensitivity",
+            "label": "Photosensitivity",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_oral_ulcers",
+            "label": "Recurrent Oral Ulcers",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_genital_ulcers",
+            "label": "Genital Ulcers",
+            "type": "boolean",
+            "group": "Connective Tissue Features",
+            "narrative": "genital ulcers (with oral ulcers, consider Behcet disease)"
+          },
+          {
+            "name": "rheum_raynaud",
+            "label": "Raynaud Phenomenon",
+            "type": "boolean",
+            "hint": "Color changes of fingers in cold",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_malar_rash",
+            "label": "Butterfly (Malar) Facial Rash",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_alopecia",
+            "label": "Hair Loss (Alopecia)",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_subcutaneous_nodules",
+            "label": "Subcutaneous Nodules",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_nail_changes",
+            "label": "Nail Changes (Pitting, Onycholysis)",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          },
+          {
+            "name": "rheum_heel_pain",
+            "label": "Heel Pain (Enthesitis)",
+            "type": "boolean",
+            "group": "Connective Tissue Features"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_heme",
+        "title": "Hematological / Lymphatic System",
+        "instruction": "Screen for anemia symptoms, bleeding tendency, lymphadenopathy and recurrent infection. Supraclavicular nodes and persistent unexplained lymphadenopathy are red flags.",
+        "fields": [
+          {
+            "name": "heme_anemia_symptoms",
+            "label": "Symptoms of Anemia",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Fatigue",
+              "Breathlessness on exertion",
+              "Dizziness",
+              "Headache",
+              "Pallor noticed by others",
+              "Palpitations"
+            ]
+          },
+          {
+            "name": "heme_easy_bruising",
+            "label": "Easy Bruising",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_petechiae",
+            "label": "Pinpoint Skin Spots (Petechiae)",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "heme_epistaxis",
+            "label": "Recurrent Nose Bleeds",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_gum_bleeding",
+            "label": "Bleeding Gums",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_prolonged_bleeding",
+            "label": "Prolonged Bleeding From Minor Cuts",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_lymphadenopathy",
+            "label": "Swollen Glands (Lymphadenopathy)",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_lymph_sites",
+            "label": "Lymph Node Sites",
+            "type": "multi_select",
+            "options": [
+              "Neck",
+              "Axilla",
+              "Groin",
+              "Supraclavicular"
+            ],
+            "depends_on": {
+              "field": "heme_lymphadenopathy",
+              "equals": true
+            },
+            "narrative": "lymphadenopathy at {value}"
+          },
+          {
+            "name": "heme_bone_pain",
+            "label": "Bone Pain",
+            "type": "boolean"
+          },
+          {
+            "name": "heme_recurrent_infections",
+            "label": "Recurrent Infections",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_endo",
+        "title": "Endocrine System",
+        "instruction": "Screen thyrotoxicosis (heat intolerance, sweating, weight loss with good appetite), hypothyroidism (cold intolerance, weight gain), diabetes (polyuria, polydipsia, polyphagia) and adrenal/Cushing features.",
+        "fields": [
+          {
+            "name": "endo_heat_intolerance",
+            "label": "Heat Intolerance",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_cold_intolerance",
+            "label": "Cold Intolerance",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_polyphagia",
+            "label": "Excessive Hunger (Polyphagia)",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_weight_gain",
+            "label": "Weight Gain",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_excessive_sweating",
+            "label": "Excessive Sweating",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_neck_swelling",
+            "label": "Neck Swelling (Goiter)",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_eye_changes",
+            "label": "Eye Changes",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Bulging eyes (proptosis)",
+              "Gritty or red eyes",
+              "Double vision",
+              "Drooping eyelid"
+            ],
+            "narrative": "eye changes: {value}"
+          },
+          {
+            "name": "endo_hirsutism",
+            "label": "Excess Facial / Body Hair (Hirsutism)",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_striae",
+            "label": "Purple Abdominal Striae",
+            "type": "boolean"
+          },
+          {
+            "name": "endo_galactorrhea",
+            "label": "Nipple Discharge (Galactorrhea)",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_derma",
+        "title": "Skin (Integumentary) System",
+        "instruction": "A new rash with fever or after a new drug is a red flag (drug reaction, meningococcemia, vasculitis).",
+        "fields": [
+          {
+            "name": "derma_rash",
+            "label": "Rash",
+            "type": "boolean"
+          },
+          {
+            "name": "derma_rash_detail",
+            "label": "Rash Details",
+            "type": "text",
+            "depends_on": {
+              "field": "derma_rash",
+              "equals": true
+            },
+            "hint": "Site, onset, spread, itch, fever, new drugs"
+          },
+          {
+            "name": "derma_pruritus",
+            "label": "Itching (Pruritus)",
+            "type": "boolean"
+          },
+          {
+            "name": "derma_pigmentation",
+            "label": "Skin Pigmentation Change",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Darkened (hyperpigmented)",
+              "Lightened (hypopigmented)",
+              "Yellowish (jaundiced)",
+              "Bronze"
+            ],
+            "narrative": "{value} skin"
+          },
+          {
+            "name": "derma_ulcers",
+            "label": "Skin Ulcers / Non-healing Wounds",
+            "type": "boolean"
+          },
+          {
+            "name": "derma_hair_nail_changes",
+            "label": "Hair or Nail Changes",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "systemic_psych",
+        "title": "Psychiatric Screen",
+        "instruction": "Screen mood, sleep and anxiety. Any suicidal ideation is an emergency requiring immediate senior review.",
+        "fields": [
+          {
+            "name": "psych_mood",
+            "label": "Mood",
+            "type": "dropdown",
+            "options": [
+              "Normal / euthymic",
+              "Persistently low",
+              "Elevated / expansive",
+              "Fluctuating highs and lows"
+            ]
+          },
+          {
+            "name": "psych_sleep",
+            "label": "Sleep",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Difficulty initiating sleep",
+              "Early morning waking",
+              "Frequent awakening",
+              "Excessive sleep",
+              "Day-night reversal"
+            ]
+          },
+          {
+            "name": "psych_anxiety",
+            "label": "Anxiety / Worry",
+            "type": "boolean"
+          },
+          {
+            "name": "psych_concentration",
+            "label": "Poor Concentration",
+            "type": "boolean"
+          },
+          {
+            "name": "psych_psychotic_symptoms",
+            "label": "Hallucinations or Delusions",
+            "type": "boolean"
+          },
+          {
+            "name": "psych_suicidal_ideation",
+            "label": "Thoughts of Self-harm or Suicide",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "psych_functional_decline",
+            "label": "Decline in Work or Self-care",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "past_medical_history",
+        "title": "Past Medical History (PMH)",
+        "instruction": "Ask systematically: 'Do you have any of these conditions?' Tick and record duration and control for each positive answer.",
+        "fields": [
+          {
+            "name": "pmh_htn",
+            "label": "Hypertension",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_htn_years",
+            "label": "Duration (years)",
+            "type": "number",
+            "depends_on": {
+              "field": "pmh_htn",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_dm",
+            "label": "Diabetes Mellitus",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_dm_type",
+            "label": "Diabetes Type",
+            "type": "dropdown",
+            "options": [
+              "Type 1",
+              "Type 2",
+              "Gestational",
+              "Unclassified"
+            ],
+            "depends_on": {
+              "field": "pmh_dm",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_dm_years",
+            "label": "Duration (years)",
+            "type": "number",
+            "depends_on": {
+              "field": "pmh_dm",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_dm_control",
+            "label": "Diabetes Control",
+            "type": "dropdown",
+            "options": [
+              "Diet controlled",
+              "On oral agents",
+              "On insulin",
+              "Poor control / poor compliance",
+              "Unknown"
+            ],
+            "depends_on": {
+              "field": "pmh_dm",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_ihd",
+            "label": "Ischemic Heart Disease / Previous MI",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_heart_failure",
+            "label": "Heart Failure",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_arrhythmia",
+            "label": "Arrhythmia (e.g. Atrial Fibrillation)",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_valvular",
+            "label": "Valvular Heart Disease",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_valvular_detail",
+            "label": "Valve Lesion Details",
+            "type": "text",
+            "depends_on": {
+              "field": "pmh_valvular",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_rheumatic_fever",
+            "label": "Rheumatic Fever",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_stroke_tia",
+            "label": "Stroke or TIA",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_ckd",
+            "label": "Chronic Kidney Disease",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_ckd_detail",
+            "label": "CKD Details",
+            "type": "text",
+            "depends_on": {
+              "field": "pmh_ckd",
+              "equals": true
+            },
+            "hint": "Stage / baseline creatinine"
+          },
+          {
+            "name": "pmh_copd",
+            "label": "COPD / Chronic Bronchitis / Emphysema",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_asthma",
+            "label": "Asthma",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_tb",
+            "label": "Tuberculosis (Past or Present)",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_tb_treatment",
+            "label": "TB Treatment Status",
+            "type": "dropdown",
+            "options": [
+              "Never treated",
+              "Currently on treatment",
+              "Completed full course",
+              "Incomplete course",
+              "Unknown"
+            ],
+            "depends_on": {
+              "field": "pmh_tb",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_hepatitis",
+            "label": "Viral Hepatitis",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_hepatitis_type",
+            "label": "Hepatitis Type",
+            "type": "text",
+            "depends_on": {
+              "field": "pmh_hepatitis",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_liver_disease",
+            "label": "Chronic Liver Disease / Cirrhosis",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_thyroid",
+            "label": "Thyroid Disease",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_thyroid_type",
+            "label": "Thyroid Disease Type",
+            "type": "dropdown",
+            "options": [
+              "Hypothyroid",
+              "Hyperthyroid",
+              "Other / unknown"
+            ],
+            "depends_on": {
+              "field": "pmh_thyroid",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_dyslipidemia",
+            "label": "Dyslipidemia",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_epilepsy",
+            "label": "Epilepsy",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_migraine",
+            "label": "Migraine",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_gout",
+            "label": "Gout",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_peptic_ulcer",
+            "label": "Peptic Ulcer Disease",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_malignancy",
+            "label": "Any Cancer",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_malignancy_detail",
+            "label": "Cancer Details",
+            "type": "text",
+            "depends_on": {
+              "field": "pmh_malignancy",
+              "equals": true
+            },
+            "hint": "Type, year, treatment received"
+          },
+          {
+            "name": "pmh_sickle_cell",
+            "label": "Sickle Cell Disease / Trait",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_thalassemia",
+            "label": "Thalassemia / Hemoglobinopathy",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_g6pd",
+            "label": "G6PD Deficiency",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_transfusion",
+            "label": "Previous Blood Transfusion",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_transfusion_reaction",
+            "label": "Transfusion Reaction",
+            "type": "boolean",
+            "depends_on": {
+              "field": "pmh_transfusion",
+              "equals": true
+            }
+          },
+          {
+            "name": "pmh_hospitalizations",
+            "label": "Number of Hospital Admissions",
+            "type": "number"
+          },
+          {
+            "name": "pmh_hospitalization_details",
+            "label": "Admission Details",
+            "type": "multiline_text"
+          },
+          {
+            "name": "pmh_similar_episode",
+            "label": "Similar Episode in the Past",
+            "type": "boolean"
+          },
+          {
+            "name": "pmh_childhood_illnesses",
+            "label": "Childhood Illnesses",
+            "type": "text",
+            "hint": "e.g. measles, chickenpox, rheumatic fever"
+          },
+          {
+            "name": "pmh_other",
+            "label": "Other Medical Problems",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "section_id": "past_surgical_history",
+        "title": "Past Surgical History (PSH)",
+        "instruction": "Tick previous operations and record the year plus any complications. Note anesthesia problems (relevant for future surgery).",
+        "fields": [
+          {
+            "name": "psh_operations",
+            "label": "Previous Operations",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Appendectomy",
+              "Cholecystectomy",
+              "Hernia repair",
+              "Tonsillectomy",
+              "Cesarean section",
+              "Hysterectomy",
+              "Thyroidectomy",
+              "Peptic ulcer surgery",
+              "Bowel resection",
+              "Splenectomy",
+              "Nephrectomy / urologic surgery",
+              "Prostate surgery (TURP)",
+              "Cardiac surgery (CABG / valve)",
+              "Pacemaker or coronary stent",
+              "Amputation",
+              "Organ transplant",
+              "Lithotripsy",
+              "Other"
+            ]
+          },
+          {
+            "name": "psh_operations_detail",
+            "label": "Operation Details",
+            "type": "text",
+            "hint": "Operation, year, and any complications"
+          },
+          {
+            "name": "psh_anesthesia_problems",
+            "label": "Problems With Anesthesia",
+            "type": "boolean",
+            "hint": "e.g. difficult intubation, post-op vomiting, malignant hyperthermia in family"
+          },
+          {
+            "name": "psh_anesthesia_detail",
+            "label": "Anesthesia Problem Details",
+            "type": "text",
+            "depends_on": {
+              "field": "psh_anesthesia_problems",
+              "equals": true
+            }
+          },
+          {
+            "name": "psh_surgery_complications",
+            "label": "Complications After Any Surgery",
+            "type": "boolean"
+          },
+          {
+            "name": "psh_complication_detail",
+            "label": "Complication Details",
+            "type": "text",
+            "depends_on": {
+              "field": "psh_surgery_complications",
+              "equals": true
+            }
+          }
+        ]
+      },
+      {
+        "section_id": "drug_history",
+        "title": "Drug History & Allergies",
+        "instruction": "Ask: 'What tablets, inhalers or injections do you take?' Include dose and frequency. Always ask separately about over-the-counter and herbal/traditional remedies.",
+        "fields": [
+          {
+            "name": "dh_medications",
+            "label": "Current Medications",
+            "type": "list_repeater",
+            "item_fields": [
+              {
+                "name": "med_name",
+                "label": "Drug Name",
+                "type": "text"
+              },
+              {
+                "name": "med_dose",
+                "label": "Dose",
+                "type": "text",
+                "hint": "e.g. 500 mg"
+              },
+              {
+                "name": "med_route",
+                "label": "Route",
+                "type": "dropdown",
+                "options": [
+                  "Oral",
+                  "IV",
+                  "IM",
+                  "Subcutaneous",
+                  "Inhaled",
+                  "Topical",
+                  "Rectal"
+                ]
+              },
+              {
+                "name": "med_frequency",
+                "label": "Frequency",
+                "type": "dropdown",
+                "options": [
+                  "Once daily (OD)",
+                  "Twice daily (BD)",
+                  "Three times daily (TDS)",
+                  "Four times daily (QDS)",
+                  "As needed (PRN)",
+                  "Weekly"
+                ]
+              },
+              {
+                "name": "med_duration",
+                "label": "Duration Taken",
+                "type": "text",
+                "hint": "e.g. 3 months"
+              }
+            ]
+          },
+          {
+            "name": "dh_compliance",
+            "label": "Compliance",
+            "type": "dropdown",
+            "options": [
+              "Good - rarely misses doses",
+              "Moderate - occasionally misses",
+              "Poor - frequently misses",
+              "Unknown"
+            ]
+          },
+          {
+            "name": "dh_allergy",
+            "label": "Drug Allergy",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_allergy_drug",
+            "label": "Allergic To",
+            "type": "text",
+            "depends_on": {
+              "field": "dh_allergy",
+              "equals": true
+            }
+          },
+          {
+            "name": "dh_allergy_reaction",
+            "label": "Reaction Type",
+            "type": "dropdown",
+            "options": [
+              "Skin rash",
+              "Urticaria (hives)",
+              "Angioedema (lip/face swelling)",
+              "Anaphylaxis",
+              "GI upset only",
+              "Unknown"
+            ],
+            "depends_on": {
+              "field": "dh_allergy",
+              "equals": true
+            },
+            "red_flag": true
+          },
+          {
+            "name": "dh_otc",
+            "label": "Over-the-Counter Medicines",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_otc_detail",
+            "label": "OTC Details",
+            "type": "text",
+            "depends_on": {
+              "field": "dh_otc",
+              "equals": true
+            }
+          },
+          {
+            "name": "dh_herbal",
+            "label": "Herbal / Traditional Remedies",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_herbal_detail",
+            "label": "Herbal Details",
+            "type": "text",
+            "depends_on": {
+              "field": "dh_herbal",
+              "equals": true
+            }
+          },
+          {
+            "name": "dh_steroids",
+            "label": "Corticosteroid Use (Current or Past)",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_anticoagulants",
+            "label": "Anticoagulants / Antiplatelets",
+            "type": "boolean",
+            "hint": "warfarin, aspirin, clopidogrel, DOACs"
+          },
+          {
+            "name": "dh_nsaid_regular",
+            "label": "Regular NSAID Use",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_contraception_hrt",
+            "label": "Contraceptive Pill / Hormone Therapy",
+            "type": "boolean"
+          },
+          {
+            "name": "dh_vaccinations",
+            "label": "Vaccinations",
+            "type": "multi_select",
+            "options": [
+              "None known",
+              "BCG",
+              "Influenza",
+              "Pneumococcal",
+              "COVID-19",
+              "Hepatitis B",
+              "Tetanus"
+            ]
+          }
+        ]
+      },
+      {
+        "section_id": "family_history",
+        "title": "Family History (FH)",
+        "instruction": "Ask about parents, siblings and children: alive/dead, cause of death, chronic disease. Consanguinity and familial hemoglobinopathies are especially relevant in our region.",
+        "fields": [
+          {
+            "name": "fh_father",
+            "label": "Father",
+            "type": "dropdown",
+            "options": [
+              "Alive and well",
+              "Alive with illness",
+              "Deceased",
+              "Unknown"
+            ],
+            "group": "First-Degree Relatives"
+          },
+          {
+            "name": "fh_father_detail",
+            "label": "Father's Illness / Cause of Death",
+            "type": "text",
+            "group": "First-Degree Relatives",
+            "hint": "Condition + age at death if applicable"
+          },
+          {
+            "name": "fh_mother",
+            "label": "Mother",
+            "type": "dropdown",
+            "options": [
+              "Alive and well",
+              "Alive with illness",
+              "Deceased",
+              "Unknown"
+            ],
+            "group": "First-Degree Relatives"
+          },
+          {
+            "name": "fh_mother_detail",
+            "label": "Mother's Illness / Cause of Death",
+            "type": "text",
+            "group": "First-Degree Relatives"
+          },
+          {
+            "name": "fh_siblings",
+            "label": "Siblings",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "All alive and well",
+              "Illness present in sibling(s)",
+              "Deceased sibling(s)",
+              "Unknown"
+            ],
+            "group": "First-Degree Relatives"
+          },
+          {
+            "name": "fh_siblings_detail",
+            "label": "Sibling Details",
+            "type": "text",
+            "group": "First-Degree Relatives"
+          },
+          {
+            "name": "fh_conditions",
+            "label": "Family History of These Conditions",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Hypertension",
+              "Diabetes mellitus",
+              "Ischemic heart disease (early: male <55, female <65)",
+              "Stroke",
+              "Cancer",
+              "Asthma",
+              "COPD",
+              "Tuberculosis",
+              "Epilepsy",
+              "Psychiatric illness",
+              "Thyroid disease",
+              "Chronic kidney disease",
+              "Rheumatologic disease",
+              "Bleeding disorder",
+              "Thalassemia / hemoglobinopathy",
+              "Sickle cell anemia or trait",
+              "G6PD deficiency",
+              "Familial hypercholesterolemia"
+            ]
+          },
+          {
+            "name": "fh_conditions_specify",
+            "label": "Specify Relative + Condition",
+            "type": "text",
+            "depends_on": {
+              "field": "fh_conditions",
+              "is_set": true
+            },
+            "hint": "e.g. father - MI at 50"
+          },
+          {
+            "name": "fh_sudden_death",
+            "label": "Sudden Unexplained Death Before 40 in Family",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "fh_consanguinity",
+            "label": "Parents Are First Cousins (Consanguinity)",
+            "type": "boolean"
+          }
+        ]
+      },
+      {
+        "section_id": "social_history",
+        "title": "Social History (SH)",
+        "instruction": "Smoking (calculate pack-years), alcohol, substances, occupation exposures, living conditions, diet and stressors - these often explain the diagnosis.",
+        "fields": [
+          {
+            "name": "sh_smoking",
+            "label": "Smoking Status",
+            "type": "dropdown",
+            "options": [
+              "Never smoked",
+              "Current smoker",
+              "Ex-smoker"
+            ],
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_cigarettes_per_day",
+            "label": "Cigarettes Per Day",
+            "type": "number",
+            "depends_on": {
+              "field": "sh_smoking",
+              "not_equals": "Never smoked"
+            },
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_smoking_years",
+            "label": "Years of Smoking",
+            "type": "number",
+            "depends_on": {
+              "field": "sh_smoking",
+              "not_equals": "Never smoked"
+            },
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_pack_years",
+            "label": "Pack-Years",
+            "type": "number",
+            "depends_on": {
+              "field": "sh_smoking",
+              "not_equals": "Never smoked"
+            },
+            "hint": "(cigarettes per day / 20) x years - can be auto-calculated",
+            "narrative": "a {value} pack-year smoking history",
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_alcohol",
+            "label": "Alcohol",
+            "type": "dropdown",
+            "options": [
+              "Never",
+              "Occasional",
+              "Regular weekly",
+              "Former drinker",
+              "Declined to answer"
+            ],
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_substance_use",
+            "label": "Recreational Drug / Substance Use",
+            "type": "boolean",
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_substance_type",
+            "label": "Substance Type",
+            "type": "multi_select",
+            "options": [
+              "Cannabis",
+              "Opioids (heroin, tramadol)",
+              "Amphetamines",
+              "Benzodiazepines (misuse)",
+              "Inhalants (glue, solvents)",
+              "Injected drugs",
+              "Other"
+            ],
+            "depends_on": {
+              "field": "sh_substance_use",
+              "equals": true
+            },
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_iv_drug_use",
+            "label": "Intravenous Drug Use",
+            "type": "boolean",
+            "red_flag": true,
+            "group": "Smoking & Substances"
+          },
+          {
+            "name": "sh_occupation_exposures",
+            "label": "Occupational Exposures",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Dust / silica",
+              "Asbestos",
+              "Chemicals / fumes",
+              "Organic solvents",
+              "Farming / livestock",
+              "Heavy manual lifting",
+              "Prolonged driving",
+              "Healthcare work",
+              "Military / conflict exposure"
+            ],
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_diet",
+            "label": "Diet",
+            "type": "dropdown",
+            "options": [
+              "Balanced mixed",
+              "High salt",
+              "High fat / fast food",
+              "Mostly vegetarian",
+              "Poor / insufficient intake",
+              "Diabetic diet"
+            ],
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_exercise",
+            "label": "Exercise",
+            "type": "dropdown",
+            "options": [
+              "Sedentary",
+              "Light 1-2 times weekly",
+              "Moderate 3-5 times weekly",
+              "Daily / intense"
+            ],
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_caffeine",
+            "label": "Caffeine Intake",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "1-2 cups per day",
+              "3-5 cups per day",
+              "More than 5 cups per day"
+            ],
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_living_situation",
+            "label": "Living Situation",
+            "type": "dropdown",
+            "options": [
+              "Lives alone",
+              "With family",
+              "Extended family / crowded",
+              "Camp / displaced shelter",
+              "Care home"
+            ],
+            "narrative": "lives {value}",
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_pets",
+            "label": "Pets or Livestock at Home",
+            "type": "boolean",
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_travel_recent",
+            "label": "Travel Outside Usual Area (Last 6 Months)",
+            "type": "boolean",
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_travel_detail",
+            "label": "Travel Details",
+            "type": "text",
+            "depends_on": {
+              "field": "sh_travel_recent",
+              "equals": true
+            },
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_children_count",
+            "label": "Number of Children",
+            "type": "number",
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_stressors",
+            "label": "Recent Stressors",
+            "type": "text",
+            "hint": "e.g. bereavement, finances, conflict, exams",
+            "group": "Lifestyle & Environment"
+          },
+          {
+            "name": "sh_sexual_health",
+            "label": "Sexual Health Screen",
+            "type": "multi_select",
+            "options": [
+              "Not applicable / declined",
+              "No risk factors",
+              "New or multiple partners",
+              "No barrier contraception",
+              "Past STI",
+              "Partner with STI symptoms"
+            ],
+            "group": "Lifestyle & Environment"
+          }
+        ]
+      },
+      {
+        "section_id": "clinical_reasoning",
+        "title": "Student Clinical Reasoning",
+        "instruction": "Now synthesize: summarize the case, commit to a differential list, and plan initial investigations. This section is the teaching core of the module.",
+        "fields": [
+          {
+            "name": "cr_summary",
+            "label": "Student Summary",
+            "type": "multiline_text",
+            "hint": "Summarize in 3-5 sentences: who, presenting problem, key positives and negatives"
+          },
+          {
+            "name": "cr_differentials",
+            "label": "Differential Diagnoses",
+            "type": "list_repeater",
+            "item_fields": [
+              {
+                "name": "dx_name",
+                "label": "Possible Diagnosis",
+                "type": "text"
+              },
+              {
+                "name": "dx_reasoning",
+                "label": "Supporting Features From History",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "cr_investigations",
+            "label": "Planned Initial Investigations",
+            "type": "multiline_text",
+            "hint": "e.g. CBC, renal and liver panels, ECG, chest X-ray, urinalysis"
+          }
+        ]
+      }
+    ],
+    "hpi_complaint_templates": [
+      {
+        "template_id": "hpi_chest_pain",
+        "title": "Chest Pain - Detailed HPI",
+        "triggers": [
+          "Chest pain"
+        ],
+        "instruction": "Differentiate cardiac (crushing, exertional, radiating, GTN-responsive), dissection (tearing to back), pericarditic (positional), pleuritic and GI causes. The associated red flags demand urgent ECG.",
+        "fields": [
+          {
+            "name": "cp_site",
+            "label": "Site",
+            "type": "dropdown",
+            "options": [
+              "Central / retrosternal",
+              "Left-sided",
+              "Diffuse",
+              "Right-sided",
+              "Epigastric"
+            ]
+          },
+          {
+            "name": "cp_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden (seconds to minutes)",
+              "During exertion",
+              "At rest",
+              "After emotional stress",
+              "After trauma"
+            ]
+          },
+          {
+            "name": "cp_character",
+            "label": "Character",
+            "type": "dropdown",
+            "options": [
+              "Crushing / pressure / squeezing",
+              "Sharp / stabbing",
+              "Burning",
+              "Tearing, migrating to the back",
+              "Pleuritic (worse on breathing)"
+            ]
+          },
+          {
+            "name": "cp_radiation",
+            "label": "Radiation",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Left arm",
+              "Both arms",
+              "Neck and jaw",
+              "Back (interscapular)",
+              "Epigastrium",
+              "Right shoulder"
+            ]
+          },
+          {
+            "name": "cp_duration_episodes",
+            "label": "Duration of Each Episode",
+            "type": "dropdown",
+            "options": [
+              "Seconds to minutes",
+              "Less than 15 minutes",
+              "15-30 minutes",
+              "More than 30 minutes",
+              "Hours"
+            ]
+          },
+          {
+            "name": "cp_pattern",
+            "label": "Pattern",
+            "type": "dropdown",
+            "options": [
+              "On exertion only, relieved by rest (stable angina)",
+              "At rest, increasing frequency (unstable pattern)",
+              "First severe prolonged episode",
+              "Position-dependent, worse lying flat",
+              "Recurrent brief seconds (musculoskeletal)"
+            ]
+          },
+          {
+            "name": "cp_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Sweating (diaphoresis)",
+              "Nausea / vomiting",
+              "Shortness of breath",
+              "Palpitations",
+              "Syncope",
+              "Sense of impending doom",
+              "Fever",
+              "Cough"
+            ]
+          },
+          {
+            "name": "cp_worse",
+            "label": "Made Worse By",
+            "type": "multi_select",
+            "options": [
+              "Exertion",
+              "Deep breathing",
+              "Lying flat",
+              "Movement / twisting",
+              "Palpation of the chest wall",
+              "Coughing",
+              "Emotion"
+            ]
+          },
+          {
+            "name": "cp_relieved",
+            "label": "Relieved By",
+            "type": "multi_select",
+            "options": [
+              "Rest (within minutes)",
+              "GTN under the tongue (within 5 minutes)",
+              "Sitting forward",
+              "Antacids",
+              "Nothing"
+            ]
+          },
+          {
+            "name": "cp_chest_wall_tenderness",
+            "label": "Pain Reproducible by Pressing the Chest Wall",
+            "type": "boolean"
+          },
+          {
+            "name": "cp_risk_factors",
+            "label": "Cardiac Risk Factors",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Hypertension",
+              "Diabetes",
+              "Smoking",
+              "Dyslipidemia",
+              "Family history of premature CAD",
+              "Obesity",
+              "Cocaine / amphetamine use"
+            ]
+          },
+          {
+            "name": "cp_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Pain with syncope",
+              "Tearing pain radiating to the back (dissection)",
+              "Pain with hemoptysis (PE)",
+              "Cold sweat with lightheadedness",
+              "Pain lasting more than 20 minutes unrelieved by rest or GTN"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_dyspnea",
+        "title": "Shortness of Breath - Detailed HPI",
+        "triggers": [
+          "Shortness of breath"
+        ],
+        "instruction": "Grade severity with the MRC dyspnea scale, define tempo of onset (sudden = PE/pneumothorax, days = pneumonia, months = HF/COPD), and screen for orthopnea and PND.",
+        "fields": [
+          {
+            "name": "dysp_onset",
+            "label": "Tempo of Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden (minutes)",
+              "Over hours",
+              "Over days",
+              "Over weeks to months",
+              "Chronic with sudden worsening tonight"
+            ]
+          },
+          {
+            "name": "dysp_mrc_grade",
+            "label": "MRC Dyspnea Grade",
+            "type": "dropdown",
+            "options": [
+              "1 - Only with strenuous exercise",
+              "2 - Hurries on level ground / slight hill",
+              "3 - Walks slower than peers, stops on level ground",
+              "4 - Stops after about 100 m or a few minutes",
+              "5 - Breathless while dressing / at rest"
+            ],
+            "narrative": "MRC grade {value} breathlessness"
+          },
+          {
+            "name": "dysp_orthopnea_present",
+            "label": "Orthopnea Present",
+            "type": "boolean"
+          },
+          {
+            "name": "dysp_pnd_episodes",
+            "label": "Wakes From Sleep Gasping (PND)",
+            "type": "boolean"
+          },
+          {
+            "name": "dysp_tripod_position",
+            "label": "Sleeps Sitting Up / Tripod Position",
+            "type": "boolean"
+          },
+          {
+            "name": "dysp_triggers",
+            "label": "Triggers",
+            "type": "multi_select",
+            "options": [
+              "Exertion",
+              "Dust / animals",
+              "Cold air",
+              "Strong smells",
+              "Respiratory infection",
+              "Emotion",
+              "Lying flat"
+            ]
+          },
+          {
+            "name": "dysp_progression",
+            "label": "Progression",
+            "type": "dropdown",
+            "options": [
+              "Stable",
+              "Slowly progressive",
+              "Rapidly progressive",
+              "Stepwise worse over years",
+              "Episodic with full recovery between attacks"
+            ]
+          },
+          {
+            "name": "dysp_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Chest pain",
+              "Hemoptysis",
+              "Leg swelling",
+              "Fever",
+              "Productive sputum",
+              "Wheeze",
+              "Snoring and daytime sleepiness"
+            ]
+          },
+          {
+            "name": "dysp_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Sudden onset with pleuritic pain (PE)",
+              "Stridor",
+              "Coughing pink frothy sputum",
+              "Unable to complete a sentence",
+              "Bluish lips noticed by family"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_cough",
+        "title": "Cough - Detailed HPI",
+        "triggers": [
+          "Cough",
+          "Hemoptysis (coughing blood)"
+        ],
+        "instruction": "Classify duration (acute <3 weeks, subacute 3-8 weeks, chronic >8 weeks) and productivity. Weight loss + night sweats + hemoptysis in a smoker or TB contact = investigate urgently.",
+        "fields": [
+          {
+            "name": "cx_duration_class",
+            "label": "Duration Category",
+            "type": "dropdown",
+            "options": [
+              "Acute (less than 3 weeks)",
+              "Subacute (3-8 weeks)",
+              "Chronic (more than 8 weeks)"
+            ]
+          },
+          {
+            "name": "cx_type",
+            "label": "Type of Cough",
+            "type": "dropdown",
+            "options": [
+              "Dry / irritating",
+              "Productive with sputum",
+              "Nocturnal",
+              "Post-prandial",
+              "Habit / psychogenic"
+            ]
+          },
+          {
+            "name": "cx_sputum_character",
+            "label": "Sputum Character",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "White / mucoid",
+              "Yellow-green purulent",
+              "Rusty",
+              "Foul-smelling (anaerobic)",
+              "Pink frothy",
+              "Copious and salty (bronchiectasis)"
+            ],
+            "depends_on": {
+              "field": "cx_type",
+              "equals": "Productive with sputum"
+            }
+          },
+          {
+            "name": "cx_hemoptysis_present",
+            "label": "Hemoptysis",
+            "type": "boolean",
+            "red_flag": true
+          },
+          {
+            "name": "cx_hemoptysis_amount",
+            "label": "Hemoptysis Amount",
+            "type": "text",
+            "depends_on": {
+              "field": "cx_hemoptysis_present",
+              "equals": true
+            },
+            "hint": "Streaks vs frank blood vs clots"
+          },
+          {
+            "name": "cx_timing",
+            "label": "Timing",
+            "type": "dropdown",
+            "options": [
+              "Worse in the morning",
+              "Nocturnal",
+              "Seasonal",
+              "Throughout the day",
+              "After meals"
+            ]
+          },
+          {
+            "name": "cx_triggers",
+            "label": "Triggers",
+            "type": "multi_select",
+            "options": [
+              "Cold air",
+              "Smoke / cooking fumes",
+              "Dust",
+              "Strong smells",
+              "Lying down",
+              "Post-nasal drip sensation",
+              "ACE inhibitor medication"
+            ]
+          },
+          {
+            "name": "cx_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Fever",
+              "Weight loss",
+              "Night sweats",
+              "Chest pain",
+              "Wheeze",
+              "Breathlessness",
+              "Hoarseness",
+              "Heartburn",
+              "Sneezing / rhinitis"
+            ]
+          },
+          {
+            "name": "cx_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Hemoptysis",
+              "Weight loss with night sweats (TB)",
+              "Smoker over 45 with new or changed cough",
+              "Hoarseness lasting more than 3 weeks",
+              "Known TB contact"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_fever",
+        "title": "Fever - Detailed HPI",
+        "triggers": [
+          "Fever",
+          "Night sweats"
+        ],
+        "instruction": "Define the fever pattern, height and duration, then hunt the source: travel, raw milk (brucellosis), sick contacts, TB exposure, animal exposure. This template pairs with the full systemic review.",
+        "fields": [
+          {
+            "name": "fev_duration_value",
+            "label": "Duration of Fever",
+            "type": "number"
+          },
+          {
+            "name": "fev_duration_unit",
+            "label": "Duration Unit",
+            "type": "dropdown",
+            "options": [
+              "Days",
+              "Weeks",
+              "Months"
+            ]
+          },
+          {
+            "name": "fev_max_temp",
+            "label": "Maximum Recorded Temperature (C)",
+            "type": "number",
+            "min": 37,
+            "max": 42
+          },
+          {
+            "name": "fev_pattern",
+            "label": "Fever Pattern",
+            "type": "dropdown",
+            "options": [
+              "Continuous (sustained, little variation)",
+              "Intermittent (touches normal daily)",
+              "Remittent (fluctuates, never normal)",
+              "Relapsing (afebrile days then fever again)",
+              "Undulant (waves over weeks - brucellosis)"
+            ],
+            "narrative": "a {value} fever pattern"
+          },
+          {
+            "name": "fev_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Chills / rigors",
+              "Night sweats",
+              "Rash",
+              "Arthralgia / myalgia",
+              "Sore throat",
+              "Headache",
+              "Cough",
+              "Dysuria",
+              "Diarrhea",
+              "Abdominal pain",
+              "Swollen glands",
+              "Confusion"
+            ]
+          },
+          {
+            "name": "fev_antipyretic_response",
+            "label": "Response to Antipyretics",
+            "type": "dropdown",
+            "options": [
+              "Not tried",
+              "Good - temperature normalizes",
+              "Partial",
+              "None"
+            ]
+          },
+          {
+            "name": "fev_exposures",
+            "label": "Exposures",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Sick contacts at home",
+              "Untreated water / raw milk (brucellosis, typhoid)",
+              "Livestock / animals",
+              "Travel to malaria-endemic area",
+              "Known TB contact",
+              "IV drug use",
+              "Recent hospitalization"
+            ]
+          },
+          {
+            "name": "fev_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Temperature above 41 C",
+              "Rash with fever",
+              "Neck stiffness",
+              "Confusion or seizures",
+              "Known neutropenia or immunosuppression"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_abdominal_pain",
+        "title": "Abdominal Pain - Detailed HPI",
+        "triggers": [
+          "Abdominal pain"
+        ],
+        "instruction": "Apply SOCRATES tailored to the abdomen: site, migration (periumbilical to RIF = appendicitis; flank to groin = ureteric colic), character (colicky vs constant), food relation, and obstruction screen. Pain before vomiting suggests a surgical cause.",
+        "fields": [
+          {
+            "name": "abd_site",
+            "label": "Site",
+            "type": "dropdown",
+            "options": [
+              "Epigastric",
+              "Right hypochondrium",
+              "Left hypochondrium",
+              "Periumbilical",
+              "Right iliac fossa",
+              "Left iliac fossa",
+              "Suprapubic",
+              "Flank / loin",
+              "Generalized"
+            ]
+          },
+          {
+            "name": "abd_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden severe (perforation?)",
+              "Rapid over hours",
+              "Gradual over days"
+            ]
+          },
+          {
+            "name": "abd_character",
+            "label": "Character",
+            "type": "dropdown",
+            "options": [
+              "Colicky (comes in waves)",
+              "Constant dull ache",
+              "Burning / gnawing",
+              "Sharp and localized",
+              "Diffuse cramping"
+            ]
+          },
+          {
+            "name": "abd_migration",
+            "label": "Migration",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Periumbilical to right iliac fossa (appendicitis)",
+              "Epigastric to right hypochondrium (biliary)",
+              "Epigastric to the back (pancreatitis)",
+              "Flank to groin (ureteric colic)",
+              "Localized then generalized (perforation)"
+            ]
+          },
+          {
+            "name": "abd_duration_value",
+            "label": "Duration",
+            "type": "number"
+          },
+          {
+            "name": "abd_duration_unit",
+            "label": "Duration Unit",
+            "type": "dropdown",
+            "options": [
+              "Hours",
+              "Days",
+              "Weeks",
+              "Months"
+            ]
+          },
+          {
+            "name": "abd_worse",
+            "label": "Made Worse By",
+            "type": "multi_select",
+            "options": [
+              "Fatty food",
+              "Any food / after meals",
+              "Hunger / empty stomach",
+              "Movement / bumpy road",
+              "Deep breathing",
+              "Alcohol"
+            ]
+          },
+          {
+            "name": "abd_relieved",
+            "label": "Relieved By",
+            "type": "multi_select",
+            "options": [
+              "Nothing",
+              "Antacids / milk",
+              "Food",
+              "Vomiting",
+              "Passing flatus or stool",
+              "Local heat",
+              "Leaning forward"
+            ]
+          },
+          {
+            "name": "abd_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Nausea",
+              "Vomiting",
+              "Fever",
+              "Jaundice",
+              "Abdominal distension",
+              "Constipation / no flatus",
+              "Diarrhea",
+              "Dysuria",
+              "Hematemesis",
+              "Melena",
+              "Anorexia",
+              "Weight loss"
+            ]
+          },
+          {
+            "name": "abd_vomiting_order",
+            "label": "Order of Pain vs Vomiting",
+            "type": "dropdown",
+            "options": [
+              "Pain first, then vomiting (surgical)",
+              "Vomiting first, then pain (medical / gastroenteritis)",
+              "Simultaneous"
+            ]
+          },
+          {
+            "name": "abd_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Rigid board-like abdomen",
+              "Vomiting blood or coffee-ground material",
+              "Melena",
+              "Pain with fainting (hypotension)",
+              "Painless jaundice with weight loss",
+              "Distension with no flatus (obstruction)"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_jaundice",
+        "title": "Jaundice - Detailed HPI",
+        "triggers": [
+          "Jaundice"
+        ],
+        "instruction": "Classify pre-hepatic / hepatic / post-hepatic from the history: pale stools + dark urine + pruritus = obstructive. Hunt viral risk factors and always screen for encephalopathy and bleeding (acute liver failure).",
+        "fields": [
+          {
+            "name": "ja_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden over days",
+              "Gradual over weeks",
+              "Fluctuating",
+              "Long-standing"
+            ]
+          },
+          {
+            "name": "ja_stool_color",
+            "label": "Stool Color",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Pale / clay-colored"
+            ]
+          },
+          {
+            "name": "ja_urine_color",
+            "label": "Urine Color",
+            "type": "dropdown",
+            "options": [
+              "Normal",
+              "Dark (tea-colored)"
+            ]
+          },
+          {
+            "name": "ja_pruritus",
+            "label": "Itching (Pruritus)",
+            "type": "boolean"
+          },
+          {
+            "name": "ja_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Fever",
+              "Right upper quadrant pain",
+              "Abdominal distension",
+              "Leg swelling",
+              "Confusion (encephalopathy)",
+              "Easy bruising",
+              "Weight loss",
+              "Anorexia"
+            ]
+          },
+          {
+            "name": "ja_risk_factors",
+            "label": "Risk Factors",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Alcohol use",
+              "IV drug use",
+              "Blood transfusion",
+              "Tattoos / shared razors",
+              "Unprotected sexual contact",
+              "Raw shellfish (hepatitis A)",
+              "Herbal / traditional medicines",
+              "Recent surgery or pregnancy",
+              "Sick contacts (hepatitis E)"
+            ]
+          },
+          {
+            "name": "ja_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Confusion or drowsiness (acute liver failure)",
+              "Bleeding tendency",
+              "Painless jaundice with weight loss (malignancy)",
+              "Fever with severe RUQ pain (cholangitis)"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_headache",
+        "title": "Headache - Detailed HPI",
+        "triggers": [
+          "Headache"
+        ],
+        "instruction": "Separate primary (migraine / tension / cluster) from secondary headache using red flags: thunderclap onset, fever with neck stiffness, new neurology, morning worsening with vomiting, new headache over 50.",
+        "fields": [
+          {
+            "name": "ha_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Gradual over hours",
+              "Sudden severe within a minute (thunderclap)",
+              "Progressive over days to weeks",
+              "Lifelong recurrent"
+            ]
+          },
+          {
+            "name": "ha_location",
+            "label": "Location",
+            "type": "dropdown",
+            "options": [
+              "Bilateral forehead / temples",
+              "Occipital with neck pain",
+              "Unilateral (one side)",
+              "Periorbital / around one eye",
+              "Global band-like"
+            ]
+          },
+          {
+            "name": "ha_quality",
+            "label": "Quality",
+            "type": "dropdown",
+            "options": [
+              "Throbbing / pulsating",
+              "Pressure / tightness band",
+              "Sharp / stabbing",
+              "Burning behind the eye",
+              "Constant dull"
+            ]
+          },
+          {
+            "name": "ha_frequency",
+            "label": "Frequency",
+            "type": "dropdown",
+            "options": [
+              "Single continuous episode",
+              "Daily",
+              "Several per week",
+              "Episodic (a few per month)",
+              "Nocturnal attacks at the same time daily (cluster)"
+            ]
+          },
+          {
+            "name": "ha_episode_duration",
+            "label": "Duration of Each Episode",
+            "type": "dropdown",
+            "options": [
+              "Seconds to minutes",
+              "30 minutes to a few hours",
+              "4-72 hours",
+              "Days",
+              "Constant since onset"
+            ]
+          },
+          {
+            "name": "ha_precipitants",
+            "label": "Precipitants",
+            "type": "multi_select",
+            "options": [
+              "Stress / tension",
+              "Missing meals",
+              "Sleep deprivation",
+              "Alcohol",
+              "Menstruation",
+              "Cough / straining",
+              "Bright light",
+              "Weather change",
+              "None identified"
+            ]
+          },
+          {
+            "name": "ha_aura",
+            "label": "Aura Before Headache",
+            "type": "boolean"
+          },
+          {
+            "name": "ha_aura_detail",
+            "label": "Aura Features",
+            "type": "multi_select",
+            "options": [
+              "Flashing lights / zigzag lines",
+              "Tingling spreading over minutes",
+              "Speech disturbance",
+              "Weakness on one side"
+            ],
+            "depends_on": {
+              "field": "ha_aura",
+              "equals": true
+            }
+          },
+          {
+            "name": "ha_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Nausea / vomiting",
+              "Photophobia",
+              "Phonophobia",
+              "Tearing and red eye",
+              "Nasal congestion",
+              "Neck stiffness",
+              "Fever",
+              "Transient visual loss",
+              "Weakness or numbness",
+              "Seizure"
+            ]
+          },
+          {
+            "name": "ha_analgesic_overuse",
+            "label": "Analgesic Use More Than 10 Days per Month",
+            "type": "boolean"
+          },
+          {
+            "name": "ha_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Thunderclap onset (subarachnoid hemorrhage)",
+              "Fever with neck stiffness (meningitis)",
+              "New neurological deficit or seizure",
+              "Worse in the morning with vomiting (raised ICP)",
+              "New headache after age 50",
+              "Painful red eye with halos (acute glaucoma)",
+              "On anticoagulants"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_palpitations",
+        "title": "Palpitations - Detailed HPI",
+        "triggers": [
+          "Palpitations"
+        ],
+        "instruction": "Ask the patient to tap out the rhythm. Sudden-onset sudden-offset regular tachycardia suggests SVT; irregular suggests atrial fibrillation. Red flags: syncope, chest pain, family history of sudden death.",
+        "fields": [
+          {
+            "name": "pal_onset_offset",
+            "label": "Onset / Offset",
+            "type": "dropdown",
+            "options": [
+              "Sudden start, sudden stop",
+              "Sudden start, gradual fade",
+              "Gradual awareness"
+            ]
+          },
+          {
+            "name": "pal_rhythm",
+            "label": "Rhythm as Described by Patient",
+            "type": "dropdown",
+            "options": [
+              "Fast and regular",
+              "Fast and irregular",
+              "Forceful but regular",
+              "Skipped beats / flip-flops"
+            ]
+          },
+          {
+            "name": "pal_estimated_rate",
+            "label": "Patient-Estimated Heart Rate (bpm)",
+            "type": "number",
+            "hint": "Ask the patient to tap the rhythm on their chest"
+          },
+          {
+            "name": "pal_episode_duration",
+            "label": "Episode Duration",
+            "type": "dropdown",
+            "options": [
+              "Seconds",
+              "Minutes to an hour",
+              "Hours",
+              "Days"
+            ]
+          },
+          {
+            "name": "pal_frequency",
+            "label": "Frequency",
+            "type": "dropdown",
+            "options": [
+              "Rare (less than monthly)",
+              "Monthly",
+              "Weekly",
+              "Daily"
+            ]
+          },
+          {
+            "name": "pal_triggers",
+            "label": "Triggers",
+            "type": "multi_select",
+            "options": [
+              "Exertion",
+              "Caffeine",
+              "Alcohol",
+              "Smoking",
+              "Emotion / stress",
+              "Standing up quickly",
+              "Dehydration"
+            ]
+          },
+          {
+            "name": "pal_relief",
+            "label": "Terminated By",
+            "type": "multi_select",
+            "options": [
+              "Valsalva / breath-holding",
+              "Rest",
+              "Sleep",
+              "Nothing",
+              "Carotid sinus pressure (done medically)"
+            ]
+          },
+          {
+            "name": "pal_associated",
+            "label": "Associated Symptoms",
+            "type": "multi_select",
+            "options": [
+              "Chest pain",
+              "Breathlessness",
+              "Near-fainting / fainting",
+              "Dizziness",
+              "Polyuria after the episode",
+              "Anxiety / panic feeling"
+            ]
+          },
+          {
+            "name": "pal_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Palpitations with syncope",
+              "With chest pain",
+              "Family history of sudden death",
+              "Known structural heart disease",
+              "Taking QT-prolonging drugs"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_dizziness_syncope",
+        "title": "Dizziness / Syncope - Detailed HPI",
+        "triggers": [
+          "Dizziness",
+          "Syncope (fainting)"
+        ],
+        "instruction": "First classify: lightheadedness (presyncope), vertigo (spin), or disequilibrium. Then separate vasovagal from cardiac syncope (exertional, no prodrome, injury = cardiac). Tongue biting + postictal confusion = seizure.",
+        "fields": [
+          {
+            "name": "diz_category",
+            "label": "Type of Dizziness",
+            "type": "dropdown",
+            "options": [
+              "Lightheadedness (near-faint)",
+              "Vertigo (spinning of self or surroundings)",
+              "Off-balance when walking",
+              "Vague / faintness"
+            ]
+          },
+          {
+            "name": "diz_duration",
+            "label": "Duration of Episodes",
+            "type": "dropdown",
+            "options": [
+              "Seconds",
+              "Minutes",
+              "Hours",
+              "Continuous"
+            ]
+          },
+          {
+            "name": "diz_triggers",
+            "label": "Triggers",
+            "type": "multi_select",
+            "options": [
+              "Standing up quickly",
+              "Head position / rolling in bed",
+              "Sudden head turn",
+              "Exertion",
+              "Prolonged standing, hot crowded places",
+              "Emotion / pain / sight of blood",
+              "Neck extension"
+            ]
+          },
+          {
+            "name": "diz_vertigo_features",
+            "label": "Vertigo Features",
+            "type": "multi_select",
+            "options": [
+              "Rotatory (room spins)",
+              "Nausea / vomiting",
+              "Hearing loss",
+              "Tinnitus",
+              "Fullness in one ear",
+              "Worse with eyes closed"
+            ],
+            "depends_on": {
+              "field": "diz_category",
+              "equals": "Vertigo (spinning of self or surroundings)"
+            }
+          },
+          {
+            "name": "diz_syncope_occurred",
+            "label": "Complete Loss of Consciousness Occurred",
+            "type": "boolean"
+          },
+          {
+            "name": "diz_syncope_context",
+            "label": "Context of Collapse",
+            "type": "dropdown",
+            "options": [
+              "Not applicable",
+              "While standing",
+              "On standing up",
+              "During exertion",
+              "Sudden without any warning",
+              "Emotional shock / pain"
+            ],
+            "depends_on": {
+              "field": "diz_syncope_occurred",
+              "equals": true
+            }
+          },
+          {
+            "name": "diz_prodrome",
+            "label": "Warning Symptoms (Prodrome)",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Nausea / sweating",
+              "Tunnel vision",
+              "Spots before eyes",
+              "Feeling of warmth",
+              "Aura evolving over minutes",
+              "Palpitations",
+              "Chest pain"
+            ],
+            "depends_on": {
+              "field": "diz_syncope_occurred",
+              "equals": true
+            }
+          },
+          {
+            "name": "diz_postictal_confusion",
+            "label": "Prolonged Confusion After the Episode",
+            "type": "boolean",
+            "narrative": "postictal-like confusion after the episode (suggests seizure)"
+          },
+          {
+            "name": "diz_injuries",
+            "label": "Injury Sustained During Episode",
+            "type": "boolean"
+          },
+          {
+            "name": "diz_tongue_biting",
+            "label": "Tongue Biting or Incontinence During Episode",
+            "type": "boolean"
+          },
+          {
+            "name": "diz_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Syncope during exertion",
+              "No prodrome with injury",
+              "Palpitations at onset",
+              "Family history of sudden death",
+              "New neurological deficit"
+            ],
+            "red_flag": true
+          }
+        ]
+      },
+      {
+        "template_id": "hpi_urinary",
+        "title": "Urinary Symptoms - Detailed HPI",
+        "triggers": [
+          "Dysuria (painful urination)",
+          "Hematuria (blood in urine)",
+          "Oliguria (reduced urine output)"
+        ],
+        "instruction": "Separate lower UTI (cystitis: dysuria, frequency, suprapubic pain) from upper UTI (pyelonephritis: fever, rigors, loin pain). In elderly men think of retention and prostatism; confusion in the elderly may be the only UTI sign.",
+        "fields": [
+          {
+            "name": "ur_symptoms",
+            "label": "Urinary Symptoms Present",
+            "type": "multi_select",
+            "options": [
+              "Burning / pain on urination",
+              "Frequency",
+              "Urgency",
+              "Suprapubic pain",
+              "Fever / chills",
+              "Loin pain",
+              "Blood in urine",
+              "Cloudy / smelly urine"
+            ]
+          },
+          {
+            "name": "ur_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden (hours)",
+              "Over days",
+              "Recurrent over months"
+            ]
+          },
+          {
+            "name": "ur_associated",
+            "label": "Associated Factors",
+            "type": "multi_select",
+            "options": [
+              "Vaginal / urethral discharge",
+              "New sexual partner",
+              "Known or possible pregnancy",
+              "Recent urinary catheter",
+              "History of renal stones",
+              "Diabetes",
+              "Feeling of incomplete emptying",
+              "Nocturia",
+              "Poor stream / hesitancy"
+            ]
+          },
+          {
+            "name": "ur_systemic",
+            "label": "Systemic Features",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Rigors",
+              "Vomiting",
+              "Confusion (elderly urosepsis)"
+            ]
+          },
+          {
+            "name": "ur_red_flags",
+            "label": "Red Flags Present",
+            "type": "multi_select",
+            "options": [
+              "None",
+              "Fever with loin pain (pyelonephritis)",
+              "Anuria",
+              "Gross hematuria with clots",
+              "Confusion in an elderly patient"
+            ],
+            "red_flag": true
+          }
+        ]
+      }
+    ],
+    "lab_references": [
+      {
+        "id": "cbc_hb_male",
+        "category": "Complete Blood Count",
+        "test": "Hemoglobin (Male)",
+        "normal_range": "13.5 - 17.5 g/dL",
+        "critical_low": "below 7.0 g/dL (transfusion threshold context)"
+      },
+      {
+        "id": "cbc_hb_female",
+        "category": "Complete Blood Count",
+        "test": "Hemoglobin (Female)",
+        "normal_range": "12.0 - 15.5 g/dL"
+      },
+      {
+        "id": "cbc_hct_male",
+        "category": "Complete Blood Count",
+        "test": "Hematocrit (Male)",
+        "normal_range": "40 - 52%"
+      },
+      {
+        "id": "cbc_hct_female",
+        "category": "Complete Blood Count",
+        "test": "Hematocrit (Female)",
+        "normal_range": "36 - 46%"
+      },
+      {
+        "id": "cbc_rbc_male",
+        "category": "Complete Blood Count",
+        "test": "RBC Count (Male)",
+        "normal_range": "4.5 - 5.9 million/uL"
+      },
+      {
+        "id": "cbc_rbc_female",
+        "category": "Complete Blood Count",
+        "test": "RBC Count (Female)",
+        "normal_range": "4.1 - 5.1 million/uL"
+      },
+      {
+        "id": "cbc_wbc",
+        "category": "Complete Blood Count",
+        "test": "White Blood Cell Count",
+        "normal_range": "4,000 - 11,000/uL",
+        "critical_low": "below 2,000/uL (neutropenic sepsis risk)",
+        "critical_high": "above 30,000/uL"
+      },
+      {
+        "id": "cbc_neutrophils",
+        "category": "Complete Blood Count",
+        "test": "Neutrophils",
+        "normal_range": "40 - 70% (2.0 - 7.5 x 10^9/L)"
+      },
+      {
+        "id": "cbc_lymphocytes",
+        "category": "Complete Blood Count",
+        "test": "Lymphocytes",
+        "normal_range": "20 - 40% (1.0 - 4.0 x 10^9/L)"
+      },
+      {
+        "id": "cbc_monocytes",
+        "category": "Complete Blood Count",
+        "test": "Monocytes",
+        "normal_range": "2 - 10%"
+      },
+      {
+        "id": "cbc_eosinophils",
+        "category": "Complete Blood Count",
+        "test": "Eosinophils",
+        "normal_range": "1 - 6%",
+        "note": "Eosinophilia: allergy, asthma, parasites, drug reactions"
+      },
+      {
+        "id": "cbc_basophils",
+        "category": "Complete Blood Count",
+        "test": "Basophils",
+        "normal_range": "0 - 1%"
+      },
+      {
+        "id": "cbc_platelets",
+        "category": "Complete Blood Count",
+        "test": "Platelet Count",
+        "normal_range": "150,000 - 400,000/uL",
+        "critical_low": "below 50,000 bleeding risk; below 20,000 spontaneous bleeding"
+      },
+      {
+        "id": "cbc_mcv",
+        "category": "Complete Blood Count",
+        "test": "MCV (Mean Corpuscular Volume)",
+        "normal_range": "80 - 100 fL",
+        "note": "Classify anemia: microcytic below 80, normocytic 80-100, macrocytic above 100"
+      },
+      {
+        "id": "cbc_mch",
+        "category": "Complete Blood Count",
+        "test": "MCH (Mean Corpuscular Hemoglobin)",
+        "normal_range": "27 - 33 pg"
+      },
+      {
+        "id": "cbc_mchc",
+        "category": "Complete Blood Count",
+        "test": "MCHC",
+        "normal_range": "32 - 36 g/dL"
+      },
+      {
+        "id": "cbc_rdw",
+        "category": "Complete Blood Count",
+        "test": "RDW (Red Cell Distribution Width)",
+        "normal_range": "11.5 - 14.5%"
+      },
+      {
+        "id": "cbc_reticulocytes",
+        "category": "Complete Blood Count",
+        "test": "Reticulocytes",
+        "normal_range": "0.5 - 2.5%",
+        "note": "Low in marrow failure; high in hemolysis or after iron therapy"
+      },
+      {
+        "id": "cbc_esr_male",
+        "category": "Complete Blood Count",
+        "test": "ESR (Male)",
+        "normal_range": "below 15 mm/hour"
+      },
+      {
+        "id": "cbc_esr_female",
+        "category": "Complete Blood Count",
+        "test": "ESR (Female)",
+        "normal_range": "below 20 mm/hour"
+      },
+      {
+        "id": "ren_bun",
+        "category": "Renal & Electrolytes",
+        "test": "Blood Urea Nitrogen (BUN)",
+        "normal_range": "7 - 20 mg/dL"
+      },
+      {
+        "id": "ren_creatinine_male",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Creatinine (Male)",
+        "normal_range": "0.7 - 1.3 mg/dL"
+      },
+      {
+        "id": "ren_creatinine_female",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Creatinine (Female)",
+        "normal_range": "0.6 - 1.1 mg/dL"
+      },
+      {
+        "id": "ren_egfr",
+        "category": "Renal & Electrolytes",
+        "test": "eGFR",
+        "normal_range": "above 90 mL/min/1.73 m2"
+      },
+      {
+        "id": "ren_uric_acid_male",
+        "category": "Renal & Electrolytes",
+        "test": "Uric Acid (Male)",
+        "normal_range": "3.5 - 7.2 mg/dL"
+      },
+      {
+        "id": "ren_uric_acid_female",
+        "category": "Renal & Electrolytes",
+        "test": "Uric Acid (Female)",
+        "normal_range": "2.6 - 6.0 mg/dL"
+      },
+      {
+        "id": "ren_sodium",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Sodium (Na+)",
+        "normal_range": "135 - 145 mEq/L",
+        "critical_low": "below 120 (seizure risk)",
+        "critical_high": "above 160"
+      },
+      {
+        "id": "ren_potassium",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Potassium (K+)",
+        "normal_range": "3.5 - 5.0 mEq/L",
+        "critical_low": "below 2.5",
+        "critical_high": "above 6.5 (arrhythmia - check ECG)",
+        "note": "Hemolysed sample falsely raises K+"
+      },
+      {
+        "id": "ren_chloride",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Chloride (Cl-)",
+        "normal_range": "96 - 106 mEq/L"
+      },
+      {
+        "id": "ren_bicarbonate",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Bicarbonate (HCO3-)",
+        "normal_range": "22 - 28 mEq/L"
+      },
+      {
+        "id": "ren_calcium",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Calcium (total)",
+        "normal_range": "8.5 - 10.5 mg/dL",
+        "note": "Correct for albumin: add 0.8 x (4.0 - albumin in g/dL)"
+      },
+      {
+        "id": "ren_phosphate",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Phosphate",
+        "normal_range": "2.5 - 4.5 mg/dL"
+      },
+      {
+        "id": "ren_magnesium",
+        "category": "Renal & Electrolytes",
+        "test": "Serum Magnesium",
+        "normal_range": "1.7 - 2.2 mg/dL"
+      },
+      {
+        "id": "hea_alt",
+        "category": "Liver & Coagulation",
+        "test": "ALT (SGPT)",
+        "normal_range": "7 - 35 U/L"
+      },
+      {
+        "id": "hea_ast",
+        "category": "Liver & Coagulation",
+        "test": "AST (SGOT)",
+        "normal_range": "8 - 40 U/L"
+      },
+      {
+        "id": "hea_alp",
+        "category": "Liver & Coagulation",
+        "test": "Alkaline Phosphatase (ALP)",
+        "normal_range": "40 - 130 U/L",
+        "note": "Also raised in bone disease and pregnancy"
+      },
+      {
+        "id": "hea_ggt_male",
+        "category": "Liver & Coagulation",
+        "test": "GGT (Male)",
+        "normal_range": "8 - 61 U/L"
+      },
+      {
+        "id": "hea_ggt_female",
+        "category": "Liver & Coagulation",
+        "test": "GGT (Female)",
+        "normal_range": "5 - 36 U/L"
+      },
+      {
+        "id": "hea_bilirubin_total",
+        "category": "Liver & Coagulation",
+        "test": "Total Bilirubin",
+        "normal_range": "0.3 - 1.2 mg/dL",
+        "note": "Clinically visible jaundice usually above 2.5 - 3 mg/dL"
+      },
+      {
+        "id": "hea_bilirubin_direct",
+        "category": "Liver & Coagulation",
+        "test": "Direct (Conjugated) Bilirubin",
+        "normal_range": "0.0 - 0.3 mg/dL"
+      },
+      {
+        "id": "hea_albumin",
+        "category": "Liver & Coagulation",
+        "test": "Serum Albumin",
+        "normal_range": "3.5 - 5.0 g/dL"
+      },
+      {
+        "id": "hea_total_protein",
+        "category": "Liver & Coagulation",
+        "test": "Total Protein",
+        "normal_range": "6.4 - 8.3 g/dL"
+      },
+      {
+        "id": "hea_pt",
+        "category": "Liver & Coagulation",
+        "test": "Prothrombin Time (PT)",
+        "normal_range": "11 - 13.5 seconds"
+      },
+      {
+        "id": "hea_inr",
+        "category": "Liver & Coagulation",
+        "test": "INR",
+        "normal_range": "0.8 - 1.2",
+        "note": "Monitors warfarin; prolonged INR in cholestasis and liver failure"
+      },
+      {
+        "id": "hea_aptt",
+        "category": "Liver & Coagulation",
+        "test": "aPTT",
+        "normal_range": "30 - 40 seconds",
+        "note": "Monitors unfractionated heparin"
+      },
+      {
+        "id": "car_troponin_i",
+        "category": "Cardiac & Lipids",
+        "test": "Troponin I (standard assay)",
+        "normal_range": "below 0.04 ng/mL",
+        "note": "High-sensitivity assays use the 99th percentile cutoff; interpret rise AND fall"
+      },
+      {
+        "id": "car_ck_male",
+        "category": "Cardiac & Lipids",
+        "test": "Creatine Kinase (Male)",
+        "normal_range": "39 - 308 U/L"
+      },
+      {
+        "id": "car_ck_female",
+        "category": "Cardiac & Lipids",
+        "test": "Creatine Kinase (Female)",
+        "normal_range": "26 - 192 U/L"
+      },
+      {
+        "id": "car_ckmb",
+        "category": "Cardiac & Lipids",
+        "test": "CK-MB",
+        "normal_range": "0 - 25 U/L (below 5% of total CK)"
+      },
+      {
+        "id": "car_ldh",
+        "category": "Cardiac & Lipids",
+        "test": "LDH",
+        "normal_range": "140 - 280 U/L"
+      },
+      {
+        "id": "car_bnp",
+        "category": "Cardiac & Lipids",
+        "test": "BNP",
+        "normal_range": "below 100 pg/mL",
+        "note": "BNP below 100 makes heart failure unlikely"
+      },
+      {
+        "id": "car_ntprobnp",
+        "category": "Cardiac & Lipids",
+        "test": "NT-proBNP",
+        "normal_range": "below 300 pg/mL (age-dependent)"
+      },
+      {
+        "id": "car_total_cholesterol",
+        "category": "Cardiac & Lipids",
+        "test": "Total Cholesterol",
+        "normal_range": "below 200 mg/dL (desirable)"
+      },
+      {
+        "id": "car_ldl",
+        "category": "Cardiac & Lipids",
+        "test": "LDL Cholesterol",
+        "normal_range": "below 100 mg/dL (optimal)"
+      },
+      {
+        "id": "car_hdl_male",
+        "category": "Cardiac & Lipids",
+        "test": "HDL Cholesterol (Male)",
+        "normal_range": "above 40 mg/dL"
+      },
+      {
+        "id": "car_hdl_female",
+        "category": "Cardiac & Lipids",
+        "test": "HDL Cholesterol (Female)",
+        "normal_range": "above 50 mg/dL"
+      },
+      {
+        "id": "car_triglycerides",
+        "category": "Cardiac & Lipids",
+        "test": "Triglycerides",
+        "normal_range": "below 150 mg/dL"
+      },
+      {
+        "id": "thy_tsh",
+        "category": "Thyroid",
+        "test": "TSH",
+        "normal_range": "0.4 - 4.5 mIU/L"
+      },
+      {
+        "id": "thy_ft4",
+        "category": "Thyroid",
+        "test": "Free T4",
+        "normal_range": "0.8 - 1.8 ng/dL"
+      },
+      {
+        "id": "thy_ft3",
+        "category": "Thyroid",
+        "test": "Free T3",
+        "normal_range": "2.3 - 4.2 pg/mL"
+      },
+      {
+        "id": "met_fasting_glucose",
+        "category": "Diabetes & Metabolic",
+        "test": "Fasting Blood Glucose",
+        "normal_range": "70 - 99 mg/dL",
+        "note": "100-125 prediabetes; 126 or more (on two occasions) = diabetes"
+      },
+      {
+        "id": "met_random_glucose",
+        "category": "Diabetes & Metabolic",
+        "test": "Random Blood Glucose",
+        "normal_range": "below 140 mg/dL",
+        "note": "200 or more with symptoms = diabetes"
+      },
+      {
+        "id": "met_hba1c",
+        "category": "Diabetes & Metabolic",
+        "test": "HbA1c",
+        "normal_range": "below 5.7%",
+        "note": "5.7-6.4% prediabetes; 6.5% or more = diabetes"
+      },
+      {
+        "id": "met_ogtt_2h",
+        "category": "Diabetes & Metabolic",
+        "test": "OGTT 2-hour Glucose",
+        "normal_range": "below 140 mg/dL"
+      },
+      {
+        "id": "met_lactate",
+        "category": "Diabetes & Metabolic",
+        "test": "Lactate",
+        "normal_range": "0.5 - 2.2 mmol/L",
+        "note": "Above 4 with acidosis suggests tissue hypoperfusion / sepsis"
+      },
+      {
+        "id": "nut_serum_iron",
+        "category": "Iron & Vitamins",
+        "test": "Serum Iron",
+        "normal_range": "60 - 170 ug/dL"
+      },
+      {
+        "id": "nut_tibc",
+        "category": "Iron & Vitamins",
+        "test": "TIBC",
+        "normal_range": "240 - 450 ug/dL",
+        "note": "High in iron deficiency; low in chronic disease"
+      },
+      {
+        "id": "nut_ferritin_male",
+        "category": "Iron & Vitamins",
+        "test": "Ferritin (Male)",
+        "normal_range": "30 - 300 ng/mL"
+      },
+      {
+        "id": "nut_ferritin_female",
+        "category": "Iron & Vitamins",
+        "test": "Ferritin (Female)",
+        "normal_range": "15 - 200 ng/mL"
+      },
+      {
+        "id": "nut_transferrin_saturation",
+        "category": "Iron & Vitamins",
+        "test": "Transferrin Saturation",
+        "normal_range": "20 - 50%"
+      },
+      {
+        "id": "nut_vitamin_b12",
+        "category": "Iron & Vitamins",
+        "test": "Vitamin B12",
+        "normal_range": "200 - 900 pg/mL"
+      },
+      {
+        "id": "nut_folate",
+        "category": "Iron & Vitamins",
+        "test": "Folate (Serum)",
+        "normal_range": "2.7 - 17.0 ng/mL"
+      },
+      {
+        "id": "nut_vitamin_d",
+        "category": "Iron & Vitamins",
+        "test": "Vitamin D (25-OH)",
+        "normal_range": "30 - 100 ng/mL",
+        "note": "20-29 insufficient; below 20 deficient"
+      },
+      {
+        "id": "oth_crp",
+        "category": "Inflammation & Others",
+        "test": "C-Reactive Protein (CRP)",
+        "normal_range": "below 5 mg/L"
+      },
+      {
+        "id": "oth_ddimer",
+        "category": "Inflammation & Others",
+        "test": "D-dimer",
+        "normal_range": "below 0.5 ug/mL (FEU)",
+        "note": "Only rules out VTE when pretest probability is low; use age x 0.01 cutoff above age 50"
+      },
+      {
+        "id": "oth_amylase",
+        "category": "Inflammation & Others",
+        "test": "Amylase",
+        "normal_range": "28 - 100 U/L"
+      },
+      {
+        "id": "oth_lipase",
+        "category": "Inflammation & Others",
+        "test": "Lipase",
+        "normal_range": "13 - 60 U/L",
+        "note": "More specific than amylase for pancreatitis"
+      },
+      {
+        "id": "abg_ph",
+        "category": "Arterial Blood Gas",
+        "test": "pH",
+        "normal_range": "7.35 - 7.45"
+      },
+      {
+        "id": "abg_pao2",
+        "category": "Arterial Blood Gas",
+        "test": "PaO2",
+        "normal_range": "80 - 100 mmHg"
+      },
+      {
+        "id": "abg_paco2",
+        "category": "Arterial Blood Gas",
+        "test": "PaCO2",
+        "normal_range": "35 - 45 mmHg"
+      },
+      {
+        "id": "abg_hco3",
+        "category": "Arterial Blood Gas",
+        "test": "HCO3 (arterial)",
+        "normal_range": "22 - 26 mEq/L"
+      },
+      {
+        "id": "abg_spo2",
+        "category": "Arterial Blood Gas",
+        "test": "SpO2 (pulse oximetry)",
+        "normal_range": "95 - 100%"
+      },
+      {
+        "id": "uri_appearance",
+        "category": "Urinalysis",
+        "test": "Urine Appearance",
+        "normal_range": "Clear, pale yellow"
+      },
+      {
+        "id": "uri_ph",
+        "category": "Urinalysis",
+        "test": "Urine pH",
+        "normal_range": "4.5 - 8.0"
+      },
+      {
+        "id": "uri_specific_gravity",
+        "category": "Urinalysis",
+        "test": "Urine Specific Gravity",
+        "normal_range": "1.005 - 1.030"
+      },
+      {
+        "id": "uri_protein",
+        "category": "Urinalysis",
+        "test": "Urine Protein",
+        "normal_range": "Negative"
+      },
+      {
+        "id": "uri_glucose",
+        "category": "Urinalysis",
+        "test": "Urine Glucose",
+        "normal_range": "Negative",
+        "note": "Appears when plasma glucose exceeds ~180 mg/dL (renal threshold)"
+      },
+      {
+        "id": "uri_blood",
+        "category": "Urinalysis",
+        "test": "Urine Blood",
+        "normal_range": "Negative"
+      },
+      {
+        "id": "uri_wbc",
+        "category": "Urinalysis",
+        "test": "Urine WBC",
+        "normal_range": "below 5 per high-power field"
+      },
+      {
+        "id": "uri_rbc",
+        "category": "Urinalysis",
+        "test": "Urine RBC",
+        "normal_range": "below 3 per high-power field"
+      }
+    ],
+    "clinical_pearls": [
+      {
+        "id": "pearl_mcv_anemia",
+        "category": "Hematology",
+        "pearl": "Classify anemia by MCV: microcytic (<80) = iron deficiency, thalassemia, chronic disease; normocytic (80-100) = acute blood loss, CKD, marrow failure; macrocytic (>100) = B12/folate deficiency, alcohol, hypothyroidism, reticulocytosis."
+      },
+      {
+        "id": "pearl_mentzer",
+        "category": "Hematology",
+        "pearl": "Mentzer index (MCV / RBC count in millions): below 13 suggests thalassemia trait; above 13 suggests iron deficiency. RDW is high in iron deficiency but usually normal in thalassemia trait."
+      },
+      {
+        "id": "pearl_bun_creatinine",
+        "category": "Renal",
+        "pearl": "BUN/creatinine ratio above 20 (using mg/dL) suggests a pre-renal cause (dehydration, heart failure) or GI bleeding (protein load)."
+      },
+      {
+        "id": "pearl_creatinine_elderly",
+        "category": "Renal",
+        "pearl": "A 'normal' creatinine does not guarantee normal renal function in elderly or low-muscle-mass patients - always calculate eGFR."
+      },
+      {
+        "id": "pearl_lft_patterns",
+        "category": "Liver",
+        "pearl": "Hepatocellular pattern: AST/ALT markedly raised with mild ALP rise. Cholestatic pattern: ALP and GGT markedly raised with mild transaminase rise. AST:ALT ratio above 2 with raised GGT suggests alcohol-related liver disease."
+      },
+      {
+        "id": "pearl_isolated_alp",
+        "category": "Liver",
+        "pearl": "An isolated ALP rise should be confirmed with GGT: high GGT = hepatic origin; normal GGT = bone origin (or pregnancy)."
+      },
+      {
+        "id": "pearl_jaundice_urine",
+        "category": "Liver",
+        "pearl": "Dark urine + pale stools indicates conjugated hyperbilirubinemia (obstructive). Unconjugated hyperbilirubinemia (hemolysis, Gilbert) does not darken the urine because unconjugated bilirubin is albumin-bound and not filtered."
+      },
+      {
+        "id": "pearl_corrected_calcium",
+        "category": "Electrolytes",
+        "pearl": "Corrected calcium = measured calcium + 0.8 x (4.0 - serum albumin in g/dL). Interpret total calcium only after correction."
+      },
+      {
+        "id": "pearl_hyponatremia",
+        "category": "Electrolytes",
+        "pearl": "In hyponatremia always check serum osmolality first (estimated: 2xNa + glucose/18 + BUN/2.8) to exclude pseudohyponatremia, then assess volume status and urine sodium."
+      },
+      {
+        "id": "pearl_potassium_ecg",
+        "category": "Electrolytes",
+        "pearl": "Potassium below 2.5 or above 6.5 mEq/L is life-threatening - obtain an immediate ECG. Exclude pseudohyperkalemia (hemolysed sample) before treating."
+      },
+      {
+        "id": "pearl_anion_gap",
+        "category": "Electrolytes",
+        "pearl": "Anion gap = Na - (Cl + HCO3), normal 8-12 mEq/L. High gap acidosis mnemonic MUDPILES: Methanol, Uremia, DKA, Propylene glycol, Isoniazid/Iron, Lactate, Ethylene glycol, Salicylates."
+      },
+      {
+        "id": "pearl_ddimer",
+        "category": "Cardiac",
+        "pearl": "D-dimer is only useful to RULE OUT PE/DVT when the pretest probability is low (e.g. Wells score low). A positive D-dimer is not diagnostic - it mandates imaging."
+      },
+      {
+        "id": "pearl_troponin",
+        "category": "Cardiac",
+        "pearl": "Troponin must show a rise and/or fall with at least one value above the 99th percentile to diagnose myocardial infarction; a single static mild rise occurs in CKD, heart failure and sepsis."
+      },
+      {
+        "id": "pearl_esr_crp",
+        "category": "Inflammation",
+        "pearl": "CRP rises within hours and falls quickly on recovery; ESR changes slowly and is affected by age, anemia and pregnancy. Both are non-specific screening markers."
+      },
+      {
+        "id": "pearl_ferritin_apr",
+        "category": "Hematology",
+        "pearl": "Ferritin is an acute-phase reactant: a normal or high ferritin does NOT exclude iron deficiency in inflammation or chronic disease - check transferrin saturation or soluble transferrin receptor."
+      },
+      {
+        "id": "pearl_inr_aptt",
+        "category": "Coagulation",
+        "pearl": "INR monitors warfarin (extrinsic pathway); aPTT monitors unfractionated heparin (intrinsic pathway). Isolated prolonged aPTT with bleeding think hemophilia; with clotting think lupus anticoagulant."
+      },
+      {
+        "id": "pearl_ketonuria",
+        "category": "Metabolic",
+        "pearl": "Hyperglycemia with ketonuria, vomiting and Kussmaul breathing = DKA until proven otherwise: send glucose, ABG (pH, bicarbonate) and ketones."
+      }
+    ],
+    "case_presentation": {
+      "description": "Rules for auto-assembling a formal Internal Medicine case presentation paragraph from the stored field values of a completed encounter.",
+      "generation_order": [
+        "opening",
+        "chief_complaints",
+        "hpi_detail",
+        "socrates_detail",
+        "pertinent_positives",
+        "pertinent_negatives",
+        "past_history",
+        "drugs_allergies",
+        "family_social",
+        "red_flag_close"
+      ],
+      "rules": {
+        "pronom": "Use he/his for Male, she/her for Female (key: pronoun).",
+        "title": "Mr. for Male, Ms. for Female.",
+        "booleans": "A true boolean contributes its 'narrative' phrase, or the lower-cased label when 'narrative' is absent. False booleans are silent unless pertinent_negative=true (then they feed the 'denies' sentence).",
+        "dropdowns_and_multi_select": "Values equal to 'None', 'None reported', 'None identified', 'Not applicable' or null are treated as negative and skipped. Otherwise use 'narrative' with {value} replaced, or fall back to '{label}: {value}'.",
+        "list_joining": "Join phrases with ', ' and place ' and ' before the final phrase.",
+        "pmh_pairing": "When a pmh boolean is true and its paired _years field is set, render '<label> for <years> years'. Add the control field when set (e.g. 'poorly controlled').",
+        "priority": "If a symptom appears both in an HPI complaint template and the systemic review, the template value takes precedence in the narrative.",
+        "negatives_scope": "State pertinent negatives mainly from the system matching the chief complaint - a good presentation does not read the entire review of systems aloud.",
+        "occupation_phrase": "'a/an ' + occupation, omitted entirely when occupation is empty."
+      },
+      "templates": {
+        "opening": "{title} {patient_name}, a {age_years}-year-old {gender}{occupation_phrase}, {marital_status}, presented to the {encounter_setting} with a {cc_1_duration_value}-{cc_1_duration_unit} history of {cc_1}.",
+        "chief_complaints": "The complaints are {cc_list_with_durations}.",
+        "hpi_detail": "The {cc_1_lower} began {onset_mode} and has been {course_since_onset}. {preceding_events_sentence} {treatment_so_far_sentence}",
+        "socrates_detail": "The pain is {socrates_character_lower} in character, located {socrates_site}, radiating to {socrates_radiation}, with severity {socrates_severity}/10. It is worse with {socrates_exacerbating} and relieved by {socrates_relieving}.",
+        "pertinent_positives": "It is associated with {joined_associated_symptoms}.",
+        "systemic_positives": "Systemic review reveals {joined_ros_positives}.",
+        "pertinent_negatives": "{pronoun} denies {joined_pertinent_negatives}.",
+        "past_medical": "Past medical history includes {pmh_joined}.",
+        "drugs_allergies": "Current medications: {medication_list}. {allergy_sentence}",
+        "allergy_sentence": "Allergies: {dh_allergy_drug} ({dh_allergy_reaction}).",
+        "family_social": "Family history: {fh_summary}. {pronoun_cap} is {sh_smoking_sentence} {sh_alcohol_sentence} {sh_living_sentence}",
+        "red_flag_close": "Red flags identified in this history: {red_flag_list}.",
+        "smoking_sentence": "a current smoker with {sh_pack_years} pack-years / an ex-smoker with {sh_pack_years} pack-years / a never-smoker."
+      },
+      "example_output": "Mr. Ahmed Ali, a 58-year-old male, a farmer by occupation, Married, presented to the Emergency department with a 2-Days history of Chest pain. The Chest pain began Sudden (seconds to minutes) and has been Progressively worsening. The pain is Crushing / pressure / squeezing in character, located Central / retrosternal, radiating to Left arm, with severity 8/10. It is worse with Exertion and relieved by Rest (within minutes). It is associated with sweating (diaphoresis) and nausea. Systemic review reveals exertional dyspnea (On minimal exertion, dressing or walking indoors (NYHA III)), orthopnea (2 pillows) and pitting edema up to Ankles only. He denies palpitations, hemoptysis, melena, jaundice or dysphagia. Past medical history includes Hypertension for 10 years (poorly controlled) and Diabetes Mellitus (Type 2) for 8 years on oral agents. Current medications: metformin 500 mg TDS, amlodipine 5 mg OD. Allergies: none known. Family history: father died of MI at age 50. He is a current smoker with a 30 pack-year history. Red flags identified in this history: Pain lasting more than 20 minutes unrelieved by rest or GTN."
+    },
+    "sqlite_schema": {
+      "strategy": "Entity-Attribute-Value (EAV) for flexible, schema-driven form data + normalized tables for repeatable rows (medications, differentials). This JSON schema lives in app assets and drives dynamic form rendering, so no table migration is needed when the question set evolves.",
+      "tables": [
+        {
+          "table_name": "patients",
+          "columns": [
+            "patient_id INTEGER PRIMARY KEY AUTOINCREMENT",
+            "full_name TEXT NOT NULL",
+            "mrn TEXT UNIQUE",
+            "age_years INTEGER",
+            "gender TEXT",
+            "created_at TEXT NOT NULL DEFAULT (datetime('now'))"
+          ]
+        },
+        {
+          "table_name": "encounters",
+          "columns": [
+            "encounter_id INTEGER PRIMARY KEY AUTOINCREMENT",
+            "patient_id INTEGER NOT NULL REFERENCES patients(patient_id) ON DELETE CASCADE",
+            "encounter_date TEXT NOT NULL",
+            "setting TEXT",
+            "status TEXT NOT NULL DEFAULT 'draft'",
+            "presentation_text TEXT",
+            "created_at TEXT NOT NULL DEFAULT (datetime('now'))",
+            "updated_at TEXT NOT NULL DEFAULT (datetime('now'))"
+          ]
+        },
+        {
+          "table_name": "responses",
+          "columns": [
+            "response_id INTEGER PRIMARY KEY AUTOINCREMENT",
+            "encounter_id INTEGER NOT NULL REFERENCES encounters(encounter_id) ON DELETE CASCADE",
+            "section_id TEXT NOT NULL",
+            "template_id TEXT",
+            "field_name TEXT NOT NULL",
+            "field_type TEXT NOT NULL",
+            "value_text TEXT",
+            "value_number REAL",
+            "value_boolean INTEGER",
+            "updated_at TEXT NOT NULL DEFAULT (datetime('now'))",
+            "UNIQUE (encounter_id, field_name)"
+          ],
+          "notes": "Store booleans as 0/1, numbers in value_number, everything else (including multi_select as a JSON array string) in value_text. Auto-save each change with INSERT ... ON CONFLICT(encounter_id, field_name) DO UPDATE."
+        },
+        {
+          "table_name": "medication_entries",
+          "columns": [
+            "medication_entry_id INTEGER PRIMARY KEY AUTOINCREMENT",
+            "encounter_id INTEGER NOT NULL REFERENCES encounters(encounter_id) ON DELETE CASCADE",
+            "drug_name TEXT NOT NULL",
+            "dose TEXT",
+            "route TEXT",
+            "frequency TEXT",
+            "duration TEXT"
+          ]
+        },
+        {
+          "table_name": "differential_entries",
+          "columns": [
+            "differential_id INTEGER PRIMARY KEY AUTOINCREMENT",
+            "encounter_id INTEGER NOT NULL REFERENCES encounters(encounter_id) ON DELETE CASCADE",
+            "rank INTEGER",
+            "diagnosis TEXT NOT NULL",
+            "supporting_reasoning TEXT"
+          ]
+        }
+      ],
+      "indexes": [
+        "CREATE INDEX IF NOT EXISTS idx_responses_encounter ON responses(encounter_id)",
+        "CREATE INDEX IF NOT EXISTS idx_encounters_patient ON encounters(patient_id)"
+      ],
+      "flutter_implementation_notes": [
+        "Ship this JSON as an asset (declare in pubspec.yaml under assets/) and parse it once at startup: rootBundle.loadString + jsonDecode.",
+        "In sqflite onConfigure run: PRAGMA foreign_keys = ON.",
+        "Render each section as a ListView of field widgets dispatched by field type (checkbox for boolean, DropdownButton for dropdown, chips for multi_select, text fields otherwise).",
+        "Honor depends_on reactively: hide a field until its parent satisfies equals / not_equals / is_set, and clear dependent values when the parent changes.",
+        "Use the section prefixes (cvs_, resp_, gi_, ...) for scoped queries such as WHERE field_name LIKE 'cvs_%'.",
+        "list_repeater fields (medications, differentials) persist to their dedicated tables, not to responses.",
+        "Generate the case presentation by walking case_presentation.generation_order and joining the stored values per case_presentation.rules.",
+        "Cache lab_references in a local table on first launch to allow offline search and user favorites later."
+      ]
+    }
+  }
+}

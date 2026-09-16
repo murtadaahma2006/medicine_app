@@ -1,0 +1,1464 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L2_esophagus",
+    "specialty": "surgery",
+    "title": "Esophagus II: Achalasia, Esophageal Neoplasms and Dysmotility Disorders",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L2 Esophagus.2pptx (1).pdf",
+      "page_count": 59
+    },
+    "tags": [
+      "achalasia",
+      "esophageal-neoplasms",
+      "esophageal-dysmotility",
+      "heller-myotomy",
+      "oesophagectomy",
+      "tnm-staging",
+      "barium-swallow",
+      "manometry"
+    ],
+    "order_index": 2,
+    "golden_tip": [
+      "Apparent achalasia plus short-duration dysphagia, significant weight loss and age over 60 equals malignancy (pseudoachalasia) until endoscopy proves otherwise: always scope and biopsy BEFORE myotomy or dilation.",
+      "Hoarseness from recurrent laryngeal nerve palsy, Horner syndrome, chronic spinal pain, diaphragmatic paralysis, supraclavicular nodes or more than 20% weight loss = advanced incurable esophageal cancer.",
+      "Heartburn in achalasia comes from fermentation of retained food in the dilated esophagus, NOT true gastroesophageal reflux - do not dismiss new dysphagia as ordinary GERD.",
+      "Heller 1914 = anterior PLUS posterior myotomies; the MODIFIED Heller used today = single anterior myotomy with Dor - a classic exam distinction, with excellent results in up to 95%.",
+      "About two-thirds of esophageal cancer patients are already incurable at diagnosis; MRI adds NOTHING over CT - stage with CT, EUS, PET, laparoscopy and bronchoscopy for upper-third tumors."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L2_esophagus_c01",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Achalasia - Definition, Pathophysiology and Etiology",
+      "summary_ar": "الأكالاسيا تعني حرفياً عدم الارتخاء: فقدان التمعج في المري البعيد مع فشل العاصرة السفلية في الارتخاء أثناء البلع، فيتوسع المري ويحتبس الطعام خلف عاصرة مغلقة مكوناً انسداداً وظيفياً عند الوصل المريئي المعدي. السبب الأشيع مجهول، مع أدوار للمناعة الذاتية (HLA-DQw1 وأضداد العصبونات المعوية) والعدوى المزمنة (الهربس النطاقي والحصبة) ومرض شاغاس المدمر لخلايا العقد داخل الجدار.",
+      "sections": [
+        {
+          "heading": "Definition and Core Pathophysiology",
+          "body_text": "**Achalasia** literally means 'does not relax'. It is defined by two inseparable abnormalities: **loss of peristalsis in the distal esophagus** and **failure of the lower esophageal sphincter (LES) to relax** during swallowing. The classic pathophysiology diagram (a rectangular box highlights the junction) shows the gastroesophageal junction - where the esophagus meets the stomach - in cross-section: the esophagus above appears dilated and filled with blue-colored material representing retained food/fluid, the LES is a narrowed, tightly constricted muscular ring at its distal end, and the stomach below (with normal rugae, the gastric folds) is entirely normal - but the opening from the esophagus into the stomach is obstructed by the non-relaxing sphincter. The result is a **functional obstruction at the gastroesophageal junction** with progressive proximal dilation of the esophageal body (**megaesophagus**) - in other words, the sphincter fails to relax while the body fails to propel. Because the barrier is functional rather than a fixed lesion, dysphagia characteristically affects **both solids AND liquids from the outset**. Chronic stasis of retained material explains the downstream pathology: fermentation (experienced as 'heartburn'), inflammation and ulceration, Candida colonization, regurgitation and recurrent aspiration. Whatever the initiating cause, the final common pathway is **loss of the inhibitory ganglion cells of the myenteric (Auerbach) plexus** of the distal esophagus and LES, leaving the sphincter unable to relax on swallowing.",
+          "key_points": [
+            "Achalasia means 'does not relax': aperistalsis of the distal esophageal body PLUS failure of LES relaxation",
+            "The non-relaxing LES creates a functional GE-junction obstruction with proximal megaesophagus",
+            "Dysphagia to solids and liquids from the very beginning - functional, not a fixed mechanical block",
+            "Stasis drives fermentation, inflammation, ulceration, candidiasis, regurgitation and aspiration"
+          ]
+        },
+        {
+          "heading": "Etiology",
+          "body_text": "The etiology of achalasia **is not known** in the great majority of patients (idiopathic disease). Recognized associations and causes:\n- **Autoimmune theory**: achalasia is associated with **HLA-DQw1** and with **antibodies to enteric neurons**, supporting immune-mediated destruction of the esophageal nerve plexuses.\n- **Chronic viral infection**: **herpes zoster virus and measles virus** have both been implicated in chronic injury of the esophageal neural plexuses.\n- **Chagas disease (Trypanosoma cruzi)**: the classic secondary cause in endemic areas - the organism causes a **loss of intramural ganglion cells**, which leads to **aperistalsis and incomplete LES relaxation**, a picture clinically and manometrically indistinguishable from idiopathic achalasia.\n- **Pseudoachalasia** (a mimic rather than a true cause): malignancy infiltrating the esophageal neural plexuses or acting as a paraneoplastic syndrome, other tumors (esophagus, lung, lymphoma, pancreatic carcinoma) and long-term gastric band use - discussed in detail with esophageal cancer.\nWhatever the cause, the unifying lesion is **degeneration and loss of ganglion cells in the myenteric plexus** of the distal esophagus and LES.",
+          "key_points": [
+            "Etiology usually unknown (idiopathic)",
+            "Autoimmune association: HLA-DQw1 with antibodies to enteric neurons",
+            "Chronic infections implicated: herpes zoster and measles viruses",
+            "Chagas disease (Trypanosoma cruzi) destroys intramural ganglion cells: aperistalsis + incomplete LES relaxation"
+          ],
+          "check": {
+            "prompt": "Which disease produces a clinical and manometric picture indistinguishable from idiopathic achalasia by destroying intramural ganglion cells?",
+            "options": [
+              "Chagas disease (Trypanosoma cruzi)",
+              "Herpes zoster infection",
+              "Measles infection",
+              "Scleroderma of the esophagus",
+              "Diabetic autonomic neuropathy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مرض شاغاس الناجم عن المثقبية الكروزية يدمر خلايا العقد داخل جدار المري فيؤدي إلى فقدان التمعج وعدم اكتمال ارتخاء العاصرة السفلية، محاكياً الأكالاسيا الأولية تماماً. أما الهربس النطاقي والحصبة فعدوى مزمنة منسوبة للأكالاسيا دون هذا التخريب، وارتباط HLA-DQw1 يشير للمناعة الذاتية، بينما تصلب الجلد يسبب مرياً بلا تمعج مع عاصرة منخفضة الضغط (عكس الأكالاسيا)."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Achalasia",
+          "definition_ar": "عجز العاصرة السفلية للمري عن الارتخاء مع فقدان التمعج في المري البعيد؛ ومعنى الاسم حرفياً: لا ترتخي."
+        },
+        {
+          "term": "Aperistalsis",
+          "definition_ar": "غياب الحركات التمعجية المنسقة لجدار المري المسؤولة عن دفع البلعة نحو المعدة."
+        },
+        {
+          "term": "Lower esophageal sphincter (LES)",
+          "definition_ar": "العضلة العاصرة عند الوصل المريئي المعدي، تفتح فيزيولوجياً أثناء البلع وتغلق بين الوجبات؛ وهي مقر الخلل الأساسي في الأكالاسيا."
+        },
+        {
+          "term": "Megaesophagus",
+          "definition_ar": "اتساع المري المكتسب نتيجة احتباس الطعام والسوائل خلف عاصرة لا ترتخي."
+        },
+        {
+          "term": "HLA-DQw1",
+          "definition_ar": "مستضد الكريات البيضاء البشري المرتبط بالاستعداد المناعي الذاتي للأكالاسيا."
+        },
+        {
+          "term": "Chagas disease",
+          "definition_ar": "مرض شاغاس الناجم عن المثقبية الكروزية؛ يدمر خلايا العقد داخل جدار المري فيسبب فقدان التمعج وعدم اكتمال ارتخاء العاصرة."
+        },
+        {
+          "term": "Myenteric (Auerbach) plexus",
+          "definition_ar": "ضفيرة عصبية بين الطبقتين العضليتين لجدار الجهاز الهضمي؛ تدميرها يزيل التحكم بالحركة والارتخاء."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L2_esophagus_c02",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Achalasia - Clinical Manifestations and Diagnostic Evaluation",
+      "summary_ar": "يُشتبه بالأكالاسيا سريرياً بعسر بلع للصلب والسائل مع مناورات التفريغ (الوقوف ورفع الذراعين وشرب الماء بكثرة)، وتؤكد التشخيص ثلاث أدوات: الباريوم بمنقار الطائر ودقة تقارب 95% مع غياب التمعج وربما شكل نشط تشنجي، والمانومتري بضغط عاصرة راجع مرتفع وارتخاء ناقص وغياب التمعج أو تقلصات متزامنة، والمنظار وجوباً لاستبعاد الخباثة، ويظهر مرياً متوسعاً فيه بقايا طعام والتهاب وتقرح ومبيضات، والعاصرة لا تفتح تلقائياً لكنها تُعبر بضغط لطيف.",
+      "sections": [
+        {
+          "heading": "Clinical Manifestations and Emptying Maneuvers",
+          "body_text": "**Dysphagia** is the cardinal symptom of achalasia. Because the esophagus empties poorly, patients adopt characteristic **maneuvers to aid esophageal emptying**:\n- **Standing after eating**, to enlist the aid of gravity.\n- **Raising the arms after eating**, to increase intrathoracic pressure.\n- **Using a large amount of water** to wash the food down.\nOther clinical facts from the lecture:\n- **Recurrent aspiration** may result from chronic gastroesophageal regurgitation and may lead to **pulmonary complications** (nocturnal cough, recurrent pneumonia).\n- **Heartburn is complained of more often than true GER**: it occurs because of **fermentation of retained food in the dilated esophagus**, not because of acid reflux across the tight sphincter.\n- The diagnosis is **usually made between the ages of 25 and 60 years**.\n- Other symptoms: **chest pain, regurgitation, dyspepsia, weight loss and aspiration**.\n- Achalasia carries an **increased risk for developing esophageal cancer of the squamous cell type**, which justifies long-term surveillance even after successful treatment.",
+          "key_points": [
+            "Dysphagia to solids and liquids is the cardinal symptom",
+            "Emptying maneuvers: standing (gravity), raising arms (raises intrathoracic pressure), large volumes of water",
+            "Heartburn = fermentation of retained food, NOT true reflux",
+            "Recurrent aspiration from regurgitation causes pulmonary complications",
+            "Usually diagnosed between 25 and 60 years of age",
+            "Increased risk of squamous cell carcinoma of the esophagus"
+          ],
+          "check": {
+            "prompt": "Why do patients with achalasia frequently complain of heartburn even though the LES is tight?",
+            "options": [
+              "Fermentation of retained food in the dilated esophagus",
+              "Acid reflux across an incompetent LES",
+              "Excessive gastric acid secretion",
+              "Candida esophagitis in every case",
+              "A sliding hiatal hernia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحرقة في الأكالاسيا ناتجة عن تخمّر الطعام المحتجز في المري المتوسع وليس عن قلس حقيقي عبر عاصرة مشدودة؛ لهذا لا تستجيب الحرقة لمثبطات الحموض كما يُتوقع. المبيضات قد تسبب التهاباً لكنها ليست سبب الحرقة في كل الحالات، والقلس عبر عاصرة مرتخية يناقض أساس المرض."
+          }
+        },
+        {
+          "heading": "Barium Swallow (Esophagram)",
+          "body_text": "The **barium swallow** is the classic radiographic investigation. In achalasia it shows a **significantly dilated esophagus (megaesophagus), reflecting accumulation of ingested material that cannot pass, tapering to a smooth, narrow, beak-like segment at the gastroesophageal junction - the bird's beak (rat's tail) appearance** - classically appreciated on a lateral or oblique projection, where the contrast column ends in a smooth tapered beak above the stomach. **Clinical significance:** the smooth tapering creates a silhouette that resembles the beak of a bird - the classic radiographic sign of achalasia. Fluoroscopy demonstrates **absence of peristalsis** in the esophageal body. The **diagnostic accuracy of the barium swallow is approximately 95%**. In some patients, rather than a flaccid silent tube, **spastic contractions are seen in the esophageal body - the so-called 'vigorous' achalasia** variant. Paired esophagrams of the same patient show the identical picture of smooth distal tapering with proximal dilation; an identical radiographic appearance can, however, be produced by malignant pseudoachalasia, which is why radiology alone never completes the diagnostic workup.",
+          "key_points": [
+            "Bird's beak (rat's tail): smooth tapered GE-junction narrowing with dilated esophagus above",
+            "Diagnostic accuracy approximately 95%",
+            "Absent peristalsis on fluoroscopy",
+            "Spastic body contractions define 'vigorous' achalasia"
+          ],
+          "check": {
+            "prompt": "The diagnostic accuracy of the barium swallow in achalasia is approximately:",
+            "options": [
+              "50%",
+              "70%",
+              "85%",
+              "95%",
+              "Only 30%"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "دقة صورة الباريوم في تشخيص الأكالاسيا تقارب 95% بفضل مظهر منقار الطائر مع غياب التمعج، ومع ذلك يبقى التنظير إلزامياً لاستبعاد الأكالاسيا الكاذبة الورمية قبل أي علاج نهائي."
+          }
+        },
+        {
+          "heading": "Esophageal Manometry - the Confirmatory Test",
+          "body_text": "**Manometry is the confirmatory diagnostic test** for achalasia and demonstrates the defining triad:\n- **Elevated resting LES pressure** (a hypertensive sphincter at rest).\n- **Incomplete LES relaxation** with swallowing (failure of deglutitive relaxation).\n- **Peristalsis is absent, or replaced by simultaneous (non-propulsive) contractions** in the esophageal body.\nTechnically, the esophageal motility study measures pressures **at various points in the esophagus after the patient takes wet (fluid-containing) or dry (solid-containing) swallows**. Manometry also separates achalasia from the other dysmotility syndromes - nutcracker esophagus, diffuse esophageal spasm and isolated hypertensive LES - each of which has a distinct pressure signature, and it is essential when the radiographic picture is atypical or when botulinum toxin, pneumatic dilation or surgical myotomy is being planned.",
+          "key_points": [
+            "Elevated resting LES pressure",
+            "Incomplete LES relaxation with deglutition",
+            "Absent peristalsis or simultaneous contractions in the esophageal body",
+            "Performed with wet and dry swallows, measuring pressures at multiple esophageal levels"
+          ]
+        },
+        {
+          "heading": "Endoscopy and Features Suggesting Malignancy",
+          "body_text": "**Endoscopy is mandatory in every patient with suspected achalasia** - above all to **exclude malignancies** (pseudoachalasia) before any destructive therapy such as pneumatic dilation or myotomy. Endoscopic findings in achalasia:\n- A **dilated esophagus containing residual food material**.\n- **Inflammation and ulceration** of the stasis-exposed mucosa.\n- **Candida infection** favored by chronic stasis.\n- The **LES does not open spontaneously** but is **traversed easily with gentle pressure** - a fixed, impassable, ulcerated or frayed cardia should instead suggest tumor.\n**Features that suggest malignancy in a patient with apparent achalasia:**\n1. **Short duration of dysphagia.**\n2. **Significant weight loss.**\n3. **Age older than 60 years.**\nAny of these should trigger biopsy and a full oncological workup rather than antispasmodic or mechanical therapy for 'benign' achalasia.",
+          "key_points": [
+            "Endoscopy excludes malignancy (pseudoachalasia) before treatment",
+            "Dilated esophagus with residual material, inflammation, ulceration and Candida from stasis",
+            "LES does not open spontaneously but is traversed easily with gentle pressure",
+            "Malignancy warning triad: short dysphagia duration, significant weight loss, age older than 60"
+          ],
+          "check": {
+            "prompt": "Which triad of features should raise suspicion of underlying malignancy in a patient with apparent achalasia?",
+            "options": [
+              "Short duration of dysphagia, significant weight loss, age older than 60",
+              "Long duration, heartburn and young age",
+              "Chest pain, halitosis and koilonychia",
+              "Regurgitation, cough and dyspepsia",
+              "Fever, night sweats and rash"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قصر مدة عسر البلع مع نزول وزن مهم مع تجاوز الستين هي العلامات الثلاث المنذرة بورم خبيث متنكر في هيئة أكالاسيا (أكالاسيا كاذبة)؛ أما بقية الخيارات فأعراض شائعة في الأكالاسيا الحميدة نفسها أو غير نوعية إطلاقاً."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Bird's beak sign",
+          "definition_ar": "علامة منقار الطائر في صورة الباريوم: تضيق أملس مدبب عند الوصل المريئي المعدي مع اتساع المري فوقه؛ العلامة الكلاسيكية للأكالاسيا."
+        },
+        {
+          "term": "Vigorous achalasia",
+          "definition_ar": "شكل من الأكالاسيا تظهر فيه تقلصات تشنجية في جسم المري بدلاً من السكون التام."
+        },
+        {
+          "term": "Esophageal manometry",
+          "definition_ar": "قياس ضغوط المري عند نقاط مختلفة بعد بلعات رطبة أو جافة؛ الاختبار التأكيدي للأكالاسيا واضطرابات الحركة."
+        },
+        {
+          "term": "Stasis candidiasis",
+          "definition_ar": "التهاب المري بالمبيضات الناتج عن ركود الطعام في المري المتوسع."
+        },
+        {
+          "term": "Pseudoachalasia",
+          "definition_ar": "محاكاة الأكالاسيا بمرض آخر كخباثة تنخر الضفائر العصبية أو ربط معدي؛ يجب استبعادها بالمنظار قبل العلاج."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L2_esophagus_c03",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Achalasia - Therapeutic Approaches",
+      "summary_ar": "أربع وسائل علاجية للأكالاسيا: الأدوية مرخية العضل الملساء (النترات وحاصرات قنوات الكالسيوم) وآثارها الجانبية الشائعة الصداع والوذمة المحيطية، وسم البوتولينوم الذي يحجب إطلاق الأستيل كولين في الضفيرة العضلية ويناسب غير المؤهلين للجراحة، والتمديد البالوني الذي يضعف العاصرة بتمزق أليافها، والرأب الجراحي بهيلر المعدل: شق أمامي واحد حتى تحت المخاطية مع رأب دور، بنتائج ممتازة حتى 95% عبر طريق صدري أو بطني.",
+      "sections": [
+        {
+          "heading": "The Four Therapeutic Modalities - Overview",
+          "body_text": "There are **four therapeutic modalities** for achalasia:\n1. **Pharmacotherapy** (smooth-muscle-relaxing drugs).\n2. **Botulinum toxin** injection into the LES.\n3. **Pneumatic (balloon) dilation** of the LES.\n4. **Surgical myotomy** (the Heller operation).\nAll four share one goal - **reducing the outflow resistance of the non-relaxing LES** - because the aperistalsis of the esophageal body cannot be restored by any therapy. The choice among them depends on the patient's age, general fitness, comorbidity, preference and local expertise: drugs and botulinum toxin suit frail or high-risk patients, pneumatic dilation offers the most effective non-operative definitive option, and surgical myotomy provides the most durable result in fit patients. Even after successful disruption of the sphincter, esophageal emptying remains gravity- and hydrostatic-assisted rather than truly peristaltic.",
+          "key_points": [
+            "Four modalities: pharmacotherapy, botulinum toxin, pneumatic dilation, surgical myotomy",
+            "All aim to reduce LES outflow resistance; aperistalsis itself is irreversible",
+            "Drugs and botulinum toxin for the unfit; dilation or myotomy for definitive therapy",
+            "Emptying after any therapy remains gravity-assisted"
+          ]
+        },
+        {
+          "heading": "Pharmacotherapy and Botulinum Toxin",
+          "body_text": "**Pharmacotherapy** uses agents that relax smooth muscle and therefore theoretically decrease LES pressure:\n- **Nitrates** and **calcium channel blockers (CCB)**.\n- **Side effects such as headaches and peripheral edema are common**, which limits long-term use; medical therapy alone provides only modest and short-lived symptom relief.\n**Botulinum toxin (BTX)** injected into the LES **reduces the LES pressure by selectively blocking the release of acetylcholine from the presynaptic cholinergic nerve terminals in the myenteric plexus**. By removing the cholinergic excitatory drive to the sphincter muscle, LES tone falls without any mechanical disruption of the wall. The effect is temporary (months) and injections must be repeated; BTX is therefore most useful in elderly or unfit patients in whom pneumatic dilation or surgery carries an unacceptable risk.",
+          "key_points": [
+            "Nitrates and calcium channel blockers theoretically decrease LES pressure",
+            "Headache and peripheral edema are the common limiting side effects",
+            "BTX blocks acetylcholine release from presynaptic cholinergic terminals in the myenteric plexus",
+            "BTX effect is temporary - reserved mainly for unfit patients"
+          ]
+        },
+        {
+          "heading": "Pneumatic (Balloon) Dilation",
+          "body_text": "**Balloon dilatation weakens the LES by tearing its muscle fibers.** A large balloon is positioned across the gastroesophageal junction and inflated forcefully under endoscopic or radiologic control, producing a controlled partial tear of the circular muscle of the sphincter while aiming to preserve the mucosa. It is the most effective non-operative definitive treatment, but the very mechanism of muscle tearing carries the risk of **esophageal perforation**, which can progress to mediastinitis and require emergency surgery; repeat dilatation sessions are often needed to maintain symptomatic control. Dilation must only be performed after endoscopy has excluded malignancy (pseudoachalasia) and in a setting where perforation can be immediately recognized and managed.",
+          "key_points": [
+            "Pneumatic dilation weakens the LES by tearing its muscle fibers",
+            "Most effective non-operative definitive option",
+            "Main risk: esophageal perforation - requires emergency surgical backup",
+            "Repeat sessions frequently needed; only after malignancy is excluded"
+          ]
+        },
+        {
+          "heading": "Surgical Myotomy - the Heller Operation",
+          "body_text": "**Surgical myotomy weakens the LES by cutting its muscle fibers down to the mucosa**, leaving the mucosa intact.\n- The operation was **first described by Ernest Heller in 1914**.\n- **Originally it consisted of two myotomies: anterior and posterior.**\n- The **modified Heller myotomy** used today is a **single anterior myotomy**, commonly combined with a **Dor (anterior partial) fundoplication** to limit postoperative gastroesophageal reflux.\n- **Excellent results have been reported in up to 95% of patients in select series**, making myotomy the most durable option, particularly for fit patients.\n- Traditionally accomplished by a **transthoracic or transabdominal approach** (today usually performed laparoscopically).\nThe myotomy extends across the distal esophageal muscle and onto the gastric cardia so that the high-pressure zone is abolished completely; incomplete extension onto the stomach is a recognized cause of persistent dysphagia after myotomy.",
+          "key_points": [
+            "Myotomy cuts LES muscle fibers down to (but not through) the mucosa",
+            "Ernest Heller, 1914: originally anterior AND posterior myotomies",
+            "Modified Heller: single anterior myotomy, usually with Dor fundoplication",
+            "Excellent results in up to 95% of patients in select series",
+            "Transthoracic or transabdominal approach"
+          ],
+          "check": {
+            "prompt": "How does the modified Heller myotomy differ from the original 1914 Heller operation?",
+            "options": [
+              "The modified operation is a single anterior myotomy (often with Dor), whereas the original comprised anterior and posterior myotomies",
+              "The modified operation adds a posterior myotomy to the anterior one",
+              "The modified operation includes a distal gastrectomy",
+              "The original operation cut only the mucosa",
+              "The modified operation is performed endoscopically with botulinum toxin"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "وصف هيلر العملية عام 1914 بشقين أحدهما أمامي والآخر خلفي، ثم عُدِّلت إلى شق أمامي واحد يُضاف إليه عادة رأب دور الأمامي للوقاية من القلس، مع نتائج ممتازة تصل إلى 95%. الشق يقطع الألياف العضلية حتى تحت المخاطية دون قطع المخاطية نفسها، والطريق التقليدي عبر الصدر أو البطن."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Heller myotomy",
+          "definition_ar": "شق ألياف عضلة العاصرة السفلية حتى تحت المخاطية لعلاج الأكالاسيا؛ وصفه إرنست هيلر عام 1914 بشقين أمامي وخلفي ثم عُدِّل إلى شق أمامي واحد."
+        },
+        {
+          "term": "Dor fundoplication",
+          "definition_ar": "رأب قعر المعدة الأمامي الجزئي المضاف عادة بعد هيلر المعدل للوقاية من القلس المريئي."
+        },
+        {
+          "term": "Botulinum toxin",
+          "definition_ar": "سم البوتولينوم الذي يخفض ضغط العاصرة بحجب إطلاق الأستيل كولين من النهايات العصبية الكولينية قبل المشبكية في الضفيرة العضلية."
+        },
+        {
+          "term": "Pneumatic dilation",
+          "definition_ar": "تمديد بالوني قوي يعتمد على تمزق ألياف العاصرة السفلية لإضعافها مع خطر تمزق المري."
+        },
+        {
+          "term": "Nitrates and calcium channel blockers",
+          "definition_ar": "مرخيات العضل الملساء التي تخفض ضغط العاصرة نظرياً؛ آثارها الجانبية الشائعة الصداع والوذمة المحيطية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L2_esophagus_c04",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Esophageal Neoplasms - Benign Tumours and Malignant Histotypes",
+      "summary_ar": "الأورام الحميدة للمري نادرة وأغلبها غير ظهاري المنشأ: الورم السدوي المعدي المعوي GIST والشحمي وورم الخلايا الحبيبية، وتبقى غالباً صغيرة وبلا أعراض. الخباثات نوعان: حرشفي يصيب الثلثين العلويين ويسود عالمياً، وعوامل خطره الكحول والتبغ والفقر والجرح القلوي والأكالاسيا وبلامر فينسون ونقص الفواكه والخضار والمشروبات الساخنة والإشعاع المنصفي وفيروس الورم الحليمي والأطعمة الملوثة بالفطور، ويصيب الذكور أربعة أضعاف بعد سن 45؛ وغدي يصيب الثلث السفلي ويسود في الغرب وينشأ غالباً من مري باريت (القلس والتبغ والإشعاع) وبسبعة أضعاف لدى الذكور القوقازيين وبقيا خمس سنوات أقل من 25%.",
+      "sections": [
+        {
+          "heading": "Benign Tumours of the Oesophagus",
+          "body_text": "**Benign tumours of the oesophagus are relatively rare.** True epithelial tumours - **papillomas, adenomas and hyperplastic polyps** - do occur, but the **majority of 'benign' tumours are not epithelial in origin** and arise from other layers of the oesophageal wall:\n- **Gastrointestinal stromal tumour (GIST)**.\n- **Lipoma.**\n- **Granular cell tumour.**\n**Most benign oesophageal tumours are small and asymptomatic**, discovered incidentally at endoscopy or on imaging, and **even a large benign tumour may cause only mild symptoms** - typically slowly progressive dysphagia or vague retrosternal pressure, rather than the relentless dysphagia, odynophagia and weight loss of carcinoma.",
+          "key_points": [
+            "Benign oesophageal tumours are rare",
+            "True epithelial types: papilloma, adenoma, hyperplastic polyp",
+            "Majority are non-epithelial: GIST, lipoma, granular cell tumour",
+            "Usually small and asymptomatic; even large ones cause only mild symptoms"
+          ]
+        },
+        {
+          "heading": "Malignant Tumours - Types, Distribution and Geography",
+          "body_text": "**The vast majority of oesophageal cancers are epithelial** and fall into one of two types:\n1. **Adenocarcinoma.**\n2. **Squamous cell carcinoma.**\nTheir distribution within the oesophagus and across the world differs systematically:\n- **Squamous cell carcinoma generally affects the upper two-thirds** of the oesophagus.\n- **Adenocarcinoma affects the lower one-third.**\n- **Worldwide, squamous cell cancer is most common, but adenocarcinoma predominates in the West**, where its incidence has been increasing.\nThe anatomical split matters clinically: an upper- or mid-oesophageal tumour in a smoker is usually squamous, whereas a distal tumour arising in a Barrett segment is usually adenocarcinoma - a distinction that drives the choice of staging investigations (bronchoscopy for upper-third tumours) and of therapy.",
+          "key_points": [
+            "Two epithelial types: adenocarcinoma and squamous cell carcinoma",
+            "SCC: upper two-thirds - most common worldwide",
+            "Adenocarcinoma: lower one-third - predominates in the West",
+            "Tumor location predicts histology and guides staging"
+          ]
+        },
+        {
+          "heading": "Adenocarcinoma - Origin, Risk Factors and Prognosis",
+          "body_text": "**Origin and risk factors:**\n- **Most oesophageal adenocarcinomas arise from Barrett oesophagus** - the columnar metaplasia created by chronic gastro-oesophageal reflux.\n- **Risk factors: gastro-oesophageal reflux/Barrett oesophagus (GERD with metaplastic Barrett), tobacco use and exposure to radiation.** (The source slide also begins a list of factors by which risk is reduced, although the items themselves are truncated in the original handout.)\n- **Increased rates of oesophageal adenocarcinoma** have been documented, particularly in Western populations.\n- Adenocarcinoma **occurs most frequently in Caucasians** and shows a strong gender bias, being **sevenfold more common in men**.\n**Pathogenesis:** molecular studies suggest that the progression of Barrett oesophagus to adenocarcinoma occurs **over an extended period through the stepwise acquisition of genetic and epigenetic changes** - the biological rationale for endoscopic surveillance of Barrett and early interception of dysplasia.\n**Clinical features:** pain or difficulty in swallowing, progressive weight loss, hematemesis, chest pain, or vomiting; the tumour is **occasionally discovered during evaluation of GERD or surveillance of Barrett oesophagus**.\n**Prognosis:** as a result of the advanced stage at diagnosis, **overall 5-year survival is less than 25%**.",
+          "key_points": [
+            "Most arise from Barrett esophagus",
+            "Risk factors: GERD/Barrett, tobacco, radiation exposure",
+            "Most frequent in Caucasians; sevenfold more common in men",
+            "Stepwise genetic and epigenetic progression over an extended period",
+            "Features: painful/difficult swallowing, weight loss, hematemesis, chest pain, vomiting",
+            "Advanced stage at diagnosis - 5-year survival under 25%"
+          ]
+        },
+        {
+          "heading": "Squamous Cell Carcinoma - Risk Factors and Clinical Features",
+          "body_text": "**Risk factors for oesophageal squamous cell carcinoma include:**\n- **Alcohol and tobacco use** (polycyclic hydrocarbons, nitrosamines).\n- **Poverty.**\n- **Caustic oesophageal injury.**\n- **Achalasia.**\n- **Plummer-Vinson syndrome.**\n- **Diets deficient in fruits or vegetables.**\n- **Frequent consumption of very hot beverages.**\n- **Previous radiation to the mediastinum.**\n- **Human papilloma virus infection**, implicated in high-risk areas.\n- **Fungus-contaminated foods.**\n**Epidemiology:** SCC occurs in **adults older than age 45** and affects **males four times more frequently than females**.\n**Clinical features:** the onset is **insidious** and the tumour most commonly presents with **dysphagia, odynophagia (pain on swallowing) or obstruction**; **weight loss** follows. **Hemorrhage and sepsis may accompany tumour ulceration.** Occasionally the **first symptoms are caused by aspiration of food via a tracheoesophageal fistula** - a presentation that must never be mistaken for simple recurrent aspiration pneumonia.",
+          "key_points": [
+            "Alcohol and tobacco (polycyclic hydrocarbons, nitrosamines) lead the risk list",
+            "Also: poverty, caustic injury, achalasia, Plummer-Vinson, low fruit/vegetable diet, hot beverages, mediastinal radiation, HPV, fungus-contaminated foods",
+            "Adults older than 45; males affected four times more than females",
+            "Insidious onset: dysphagia, odynophagia, obstruction, weight loss",
+            "Ulceration may cause hemorrhage and sepsis",
+            "First symptom may be aspiration via tracheoesophageal fistula"
+          ],
+          "check": {
+            "prompt": "Which combination best describes the typical epidemiology of oesophageal squamous cell carcinoma?",
+            "options": [
+              "Upper two-thirds; males four times more often; age older than 45",
+              "Lower third; females predominant; age older than 45",
+              "Upper two-thirds; females four times more often; age younger than 30",
+              "Lower third; males sevenfold; any age equally",
+              "Mid-oesophagus only; no sex difference; children mainly"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "السرطان الحرشفي يصيب الثلثين العلويين للمري ويسود عند الذكور بأربعة أضعاف بعد سن 45؛ أما الثلث السفلي والسيادة الذكورية السباعية فيخصان السرطان الغدي، ولا علاقة للإناث أو الأطفال بذلك."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gastrointestinal stromal tumour (GIST)",
+          "definition_ar": "ورم سدوي منشؤه الخلايا البينية في جدار الجهاز الهضمي؛ من أشيع الأورام المريئية الحميدة غير الظهارية."
+        },
+        {
+          "term": "Barrett oesophagus",
+          "definition_ar": "استحالة عمادية (معوية) لظهارة المري السفلي بسبب القلس المزمن؛ المنشأ الأشيع لسرطان المري الغدي."
+        },
+        {
+          "term": "Granular cell tumour",
+          "definition_ar": "ورم الخلايا الحبيبية: ورم حميد نادر ينشأ من جدار المري وليس من الظهارة."
+        },
+        {
+          "term": "Hyperplastic polyp",
+          "definition_ar": "بوليب تكاثري حميد نادر من الظهارة المريئية."
+        },
+        {
+          "term": "Adenocarcinoma",
+          "definition_ar": "السرطان الغدي للمري: يسود في الغرب ويصيب الثلث السفلي غالباً وينشأ من مري باريت."
+        },
+        {
+          "term": "Squamous cell carcinoma",
+          "definition_ar": "السرطان الحرشفي: الأشيع عالمياً، يصيب الثلثين العلويين ويرتبط بالكحول والتبغ وعوامل خطر أخرى."
+        },
+        {
+          "term": "Tracheoesophageal fistula",
+          "definition_ar": "ناسور بين المري والقصبة الهوائية؛ قد يتسبب بالشفط كأول عرض لسرطان مري حرشفي متقدم."
+        },
+        {
+          "term": "Plummer-Vinson syndrome",
+          "definition_ar": "متلازمة بلامر فينسون: شبكة فوق الغضروف الحلقي مع فقر دم بعوز الحديد والتهاب اللسان وتقعر الأظافر؛ عامل خطر للسرطان الحرشفي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L2_esophagus_c05",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Oesophageal Cancer - Spread, Clinical Features, Pseudoachalasia, Staging Investigations and TNM",
+      "summary_ar": "ينتشر سرطان المري بثلاث طرق: مباشرة عبر الجدار، ولمفاوياً، ودموياً؛ والانتشار المباشر يكون جانبياً عبر طبقات الجدار وطولياً داخله عبر القنوات اللمفية تحت المخاطية، فلا يكون التصريف اللمفي قطعياً. مبكراً أعراض عسر هضم غير نوعية، ثم عسر بلع وقلس وقيء وألم بلع ونزول وزن؛ ومتأخراً شلل الحنجري الراجع وهورنر وألم فقري مزمن وشلل الحجاب، ونزول وزن يتجاوز 20% وفقد الشهية يجعلان الشفاء مستبعداً. الأكالاسيا الكاذبة أشيع أسبابها الخباثة. التحقيقات: المنظار أولاً، وتنظير القصبات للثلث العلوي بأكثر من 30%، والتنظير البطني للبذر الصفاقي، والمقطعي للنقائل الدموية، والرنين بلا فائدة إضافية، والتنظير فوق الصوتي للعمق والعقد، والبوزيتروني بالـFDG، مع جدول TNM كاملاً.",
+      "sections": [
+        {
+          "heading": "Patterns of Tumour Spread",
+          "body_text": "**Tumours of the oesophagus can spread in three ways:**\n1. **Invasion directly through the oesophageal wall** (direct spread).\n2. **Via the lymphatics.**\n3. **In the bloodstream.**\n**Direct spread occurs both laterally, through the component layers of the oesophageal wall, and longitudinally, within the oesophageal wall.** **Longitudinal spread is mainly via the submucosal lymphatic channels of the oesophagus.** Because of this anatomy, **the pattern of lymphatic drainage of the oesophagus is not segmental, as in other parts of the gastrointestinal tract.** Consequently, tumour cells may travel long distances up and down within the submucosal lymphatics before the lesion declares itself, involved lymph nodes may lie far above or below the visible tumour (including cervical and coeliac fields), and generous longitudinal resection margins are required at oesophagectomy - the tumour seen at endoscopy is only the visible tip of the submucosal iceberg.",
+          "key_points": [
+            "Three routes: direct through the wall, lymphatic, bloodstream",
+            "Direct spread is lateral (through wall layers) AND longitudinal (within the wall)",
+            "Longitudinal spread runs mainly in the submucosal lymphatic channels",
+            "Oesophageal lymphatic drainage is NOT segmental, unlike the rest of the GI tract",
+            "Nodes may sit far from the visible tumour - resect generous longitudinal margins"
+          ]
+        },
+        {
+          "heading": "Early and Late Clinical Features",
+          "body_text": "**Early disease:** non-specific dyspeptic symptoms, or a vague feeling of **'something that is not quite right' during swallowing**; some cancers are diagnosed **during endoscopic surveillance of patients with Barrett's oesophagus**. As disease progresses: **dysphagia**, sometimes also **regurgitation, vomiting, odynophagia and weight loss**.\n**Late disease - signatures of local invasion:**\n- **Recurrent laryngeal nerve palsy** (hoarseness).\n- **Horner's syndrome.**\n- **Chronic spinal pain.**\n- **Diaphragmatic paralysis.**\n**Other factors that make surgical cure unlikely:**\n- **Weight loss of more than 20 per cent.**\n- **Loss of appetite.**\n**Signs of disseminated disease on clinical examination:**\n- **Cutaneous tumour metastases.**\n- **Enlarged supraclavicular lymph nodes.**\n**Hoarseness due to recurrent laryngeal nerve palsy is a sign of advanced and incurable disease; palpable lymphadenopathy in the neck is likewise a sign of advanced disease.** These examination findings should redirect the entire plan from curative resection toward staging-confirmed palliation.",
+          "key_points": [
+            "Early: non-specific dyspepsia or 'something not quite right' on swallowing; found on Barrett surveillance",
+            "Progressive: dysphagia, regurgitation, vomiting, odynophagia, weight loss",
+            "Late: recurrent laryngeal nerve palsy, Horner's syndrome, chronic spinal pain, diaphragmatic paralysis",
+            "Weight loss over 20% and anorexia make surgical cure unlikely",
+            "Cutaneous metastases or supraclavicular nodes = disseminated, incurable disease",
+            "Hoarseness or palpable neck nodes = advanced disease"
+          ],
+          "check": {
+            "prompt": "A patient with known oesophageal cancer develops new hoarseness. What does this most reliably indicate?",
+            "options": [
+              "Recurrent laryngeal nerve palsy - advanced and incurable disease",
+              "Laryngitis from chemotherapy",
+              "An early, still-resectable tumour",
+              "A Zenker diverticulum",
+              "Simple gastro-oesophageal reflux"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "البحة الجديدة في مريض سرطان مري تعني شلل العصب الحنجري الراجع بغزو الورم، وهي علامة مرض متقدم غير قابل للشفاء تفيد بتحويل الخطة نحو التلطيف، وليست التهاب حنجرة دوائياً ولا قلساً بسيطاً."
+          }
+        },
+        {
+          "heading": "Pseudoachalasia",
+          "body_text": "**Pseudoachalasia is a radiographic and manometric mimic of achalasia produced by other pathology:**\n- **Malignancy is the most common cause of pseudoachalasia.** The mechanism is either **direct invasion of the oesophageal neural plexuses** by tumour, or a **paraneoplastic syndrome**.\n- **Other tumors** that can produce it: **carcinoma of the oesophagus, lung, lymphoma and pancreatic carcinoma**.\n- **Long-term use of a gastric band can lead to oesophageal dilatation and pseudoachalasia.**\nThe clinical lesson: a bird's-beak with warning features (short duration of dysphagia, significant weight loss, age over 60) is cancer until endoscopy and biopsy prove otherwise. Treating pseudoachalasia with pneumatic dilation or Heller myotomy both delays cancer therapy and risks perforating an infiltrated cardia.",
+          "key_points": [
+            "Malignancy is the most common cause of pseudoachalasia",
+            "Mechanisms: direct invasion of the oesophageal neural plexuses or a paraneoplastic syndrome",
+            "Implicated tumors: oesophagus, lung, lymphoma, pancreatic carcinoma",
+            "Long-term gastric band use dilates the oesophagus and mimics achalasia"
+          ]
+        },
+        {
+          "heading": "Endoscopy - the First-Line Investigation",
+          "body_text": "**Endoscopy is the first-line investigation for most patients.** It provides an **unrivalled direct view of the oesophageal mucosa and any lesion, allowing its site and size to be documented**, and **cytology and/or histology specimens taken via the endoscope are crucial for accurate diagnosis.**\n**The chief limitation of conventional endoscopy is that only the mucosal surface can be studied and biopsied** - submucosal longitudinal spread, deep invasion, nodal disease and distant metastases are invisible to it - **so other investigations are therefore usually required to define the extent (stage) of the disease.**\nOnce the initial diagnosis of a **malignant oesophageal neoplasm** has been made, **patients should be assessed first in terms of their general health and fitness for potential therapies** (performance status, nutrition, cardiopulmonary reserve) before complex staging.\n**Transcutaneous ultrasound** has only a limited role: **it is difficult to visualize mediastinal structures with the relatively low-frequency sound waves** used through the chest wall (it remains useful for the neck, supraclavicular nodes and liver). **Barium esophagram** remains complementary - paired films classically show the megaesophagus tapering to a smooth bird's-beak or rat's-tail at the gastro-oesophageal junction in achalasia, an appearance that pseudoachalasia can reproduce exactly.",
+          "key_points": [
+            "Endoscopy: first-line - direct view, documents site and size, yields crucial cytology/histology",
+            "Chief limitation: only the mucosal surface is seen and biopsied",
+            "General health and fitness assessed first once malignancy is diagnosed",
+            "Transcutaneous ultrasound poorly visualizes mediastinal structures (low-frequency waves)",
+            "Barium swallow complementary; bird's-beak may equally be pseudoachalasia"
+          ]
+        },
+        {
+          "heading": "Staging Modalities - Bronchoscopy, Laparoscopy, CT, MRI, EUS and PET",
+          "body_text": "- **Bronchoscopy:** many middle- and upper-third oesophageal carcinomas (and therefore usually squamous carcinomas) are sufficiently advanced at the time of diagnosis that the trachea or bronchi are already involved (source Figure 62.46). Bronchoscopy **may reveal impingement or invasion of the main airways in over 30 per cent of new patients with cancers in the upper third** of the oesophagus.\n- **Laparoscopy:** a useful technique for the **diagnosis of intra-abdominal and hepatic metastases**; it has the advantage of enabling **tissue samples or peritoneal cytology** to be obtained and is **the only modality reliably able to detect peritoneal tumour seedlings**.\n- **Computed tomography (CT) scanning:** the **modality most used to identify haematogenous metastases** - distant organs are easily seen and metastases within them are visualised with high accuracy.\n- **Magnetic resonance imaging (MRI): adds no benefit to the CT scan.**\n- **Endoscopic ultrasound (EUS):** can determine **the depth of spread of the malignant tumour through the oesophageal wall**, **the invasion of adjacent organs (T4)** and **metastasis to lymph nodes**; it can also detect **contiguous spread downward into the cardia** and **more distant metastases to the left lobe of the liver**.\n- **Positron emission tomography/computed tomography (PET/CT) scanning:** PET in the context of cancer staging relies on the **generally high metabolic activity (particularly in the glycolytic pathway) of tumours compared with normal tissues**; the patient is given a small dose of the radiopharmaceutical agent **18F-fluorodeoxyglucose (FDG)**, which accumulates in glucose-avid tumour tissue and lights it up on the scan.",
+          "key_points": [
+            "Bronchoscopy: airway impingement/invasion in over 30% of upper-third cancers",
+            "Laparoscopy: only modality reliably detecting peritoneal seedlings; allows tissue/cytology",
+            "CT: most used for haematogenous metastases with high accuracy",
+            "MRI adds no benefit over CT",
+            "EUS: depth of wall invasion, T4 organ invasion, lymph nodes, cardia and left liver lobe",
+            "PET relies on high glycolytic metabolism; tracer is 18F-FDG"
+          ],
+          "check": {
+            "prompt": "Which modality is the only one reliably able to detect peritoneal tumour seedlings in oesophageal cancer?",
+            "options": [
+              "Laparoscopy",
+              "CT scan",
+              "MRI",
+              "Endoscopic ultrasound",
+              "PET-CT"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التنظير البطني هو الوسيلة الوحيدة الموثوقة لاكتشاف بذور الورم الصفاقية، ويفضل عنها بإمكانية أخذ عينات نسيجية أو غسل صفاقي؛ فالمقطعي والرنين والتنظير فوق الصوتي والبوزيتروني لا تُظهر البذر الصفاقي الدقيق ب موثوقية."
+          }
+        },
+        {
+          "heading": "TNM Staging Scheme for Oesophageal Cancer (Table 62.2)",
+          "body_text": "**T - primary tumour:**\n- **Tis: high-grade dysplasia.**\n- **T1: tumour invading lamina propria or submucosa.**\n- **T2: tumour invading muscularis propria.**\n- **T3: tumour invading beyond muscularis propria.**\n- **T4a: tumour invading adjacent structures - pleura, pericardium, diaphragm.**\n- **T4b: tumour invading adjacent structures - trachea, bone, aorta.**\n**N - regional lymph nodes:**\n- **N0: no lymph node metastases.**\n- **N1: lymph node metastases in 1-2 nodes.**\n- **N2: lymph node metastases in 3-6 nodes.**\n- **N3: lymph node metastases in 7 or more nodes.**\n**M - distant metastases:**\n- **M0: no distant metastases.**\n- **M1: all other distant metastases.**\n**Stage groupings:**\n- **Stage 1A: T1N0M0; Stage 1B: T2N0M0; Stage 2A: T3N0M0; Stage 2B: T1-2N1M0.**\n- **Stage 3A: T4aN0M0, T3N1M0, T1-2N2M0; Stage 3B: T3N2M0.**\n- **Stage 3C: T4aN1-2M0, T4bN0-3M0, T1-4N3M0.**\n- **Stage 4: T1-4N1-3M1.**\nStaging integrates the modalities above: **EUS for T and N, CT and PET for M, laparoscopy for peritoneal disease, and bronchoscopy for airway invasion in upper-third tumours.**",
+          "key_points": [
+            "Tis = high-grade dysplasia; T1 lamina propria/submucosa; T2 muscularis propria; T3 beyond muscularis",
+            "T4a invades pleura, pericardium, diaphragm; T4b invades trachea, bone, aorta",
+            "N1 = 1-2 nodes; N2 = 3-6 nodes; N3 = 7 or more",
+            "M1 = any distant metastasis; Stage 4 = any T, N1-3, M1",
+            "EUS stages T and N; CT/PET stage M; laparoscopy peritoneum; bronchoscopy airway"
+          ],
+          "check": {
+            "prompt": "In the oesophageal cancer TNM scheme, N2 disease corresponds to lymph node metastases in how many regional nodes?",
+            "options": [
+              "1-2 nodes",
+              "3-6 nodes",
+              "7 or more nodes",
+              "A single resectable node",
+              "Any node above the clavicle only"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "بحسب جدول TNM: N1 تعني نقائل في 1-2 عقدة، وN2 في 3-6 عقد، وN3 في 7 عقد أو أكثر؛ فإجابة 3-6 عقد هي الصحيحة لحالة N2."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Longitudinal submucosal spread",
+          "definition_ar": "انتشار الورم طولياً داخل جدار المري عبر القنوات اللمفية تحت المخاطية، ولذلك لا يكون التصريف اللمفي للمري قطعياً كبقية الجهاز الهضمي."
+        },
+        {
+          "term": "Recurrent laryngeal nerve palsy",
+          "definition_ar": "شلل العصب الحنجري الراجع بغزو الورم؛ بحة الصوت الناتجة علامة مرض متقدم غير قابل للشفاء."
+        },
+        {
+          "term": "Horner's syndrome",
+          "definition_ar": "تدلي الجفن مع تضييق الحدقة وغؤور العين نتيجة غزو السلسلة الودية العنقية."
+        },
+        {
+          "term": "Pseudoachalasia",
+          "definition_ar": "صورة تقلد الأكالاسيا وسببها الأشيع خباثة (غزو مباشر للضفائر العصبية أو متلازمة نظيرة ورمية)، ومن الأسباب الأخرى أورام المري والرئة واللمفوما والبنكرياس وربط المعدة طويل الأمد."
+        },
+        {
+          "term": "Paraneoplastic syndrome",
+          "definition_ar": "ظاهرة وظيفية بعيدة عن الورم ذاته وليست بغزو مباشر؛ إحدى آليات الأكالاسيا الكاذبة."
+        },
+        {
+          "term": "Peritoneal seedlings",
+          "definition_ar": "بذور ورمية مزروعة في الصفاق؛ يكتشفها التنظير البطني وحده بشكل موثوق."
+        },
+        {
+          "term": "Endoscopic ultrasound (EUS)",
+          "definition_ar": "التنظير بالتصوير فوق الصوتي؛ أدق طريقة لتحديد عمق غزو الورم في جدار المري والعقد اللمفية المجاورة."
+        },
+        {
+          "term": "18F-FDG",
+          "definition_ar": "نظير الجلوكوز المسمع بالفلور 18 الذي يتراكم في الأنسجة الورمية عالية النشاط الأيضي في فحص البوزيترون."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L2_esophagus_c06",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Oesophageal Cancer - Treatment: Palliation, Curative Surgery, Oesophagectomy Approaches and Recent Advances",
+      "summary_ar": "خوارزمية العلاج: اللياقة للجراحة، ثم النقائل الدموية، ثم الغزو المجاور، ثم الانتشار الصفاقي (أي إجابة بنعم تعني تلطيفاً)، ثم العقد اللمفية (إيجابية = علاج متعدد الوسائط، سالبة = جراحة وحدها). ثلثا المرضى غير قابلين للشفاء عند التشخيص، وهدف التلطيف استعادة البلع المريح بأفضل نوعية حياة. مبادئ الاستئصال: هوامش كافية واستئصال لمفاوي يقلل خطأ التحديد المرحلي، وقد يضاف الإشعاع بعد الجراحة عند نقص الهامش خاصة في الحرشفي. الطرق الجراحية: الصدرية البطنية، وإيفور لويس ذات المرحلتين، وماكون بشق عنقي ثالث، وعبر الحجاب دون فتح الصدر. الحديث: الاستئصال المخاطي بالمنظور والعلاج الضوئي، مع علاج مدثر قد يحسن البقيا وكيميائي إشعاعي وحده قد يشفي حالات مختارة.",
+      "sections": [
+        {
+          "heading": "Treatment Decision Algorithm and Goals of Palliation",
+          "body_text": "**Treatment algorithm for malignant tumours - a clinical decision-making flowchart of sequential questions leading to specific management pathways (source slide):**\n1. **Is the patient fit for surgery?** If **no** - **palliation**.\n2. If fit: **haematogenous metastases?** If **yes** - **palliation**.\n3. **Contiguous organ invasion?** If **yes** - **palliation**.\n4. **Peritoneal spread?** If **yes** - **palliation**.\n5. **Lymph node metastases?** If **yes** - **multimodal therapy**. If **no** - **surgery alone.**\n**Principles:** at the time of diagnosis, **around two-thirds of all patients with oesophageal cancer will already have incurable disease.** The **aim of palliative treatment is to overcome debilitating or distressing symptoms while maintaining the best quality of life possible** for the patient. **Some patients do not require specific therapeutic interventions, but do need supportive care and appropriate liaison with community nursing and hospice care services.**\n**Dysphagia is the predominant symptom in advanced oesophageal cancer, so the principal aim of palliation is to restore adequate swallowing.** A variety of methods is available, appropriate to the short life expectancy of most patients (endoscopic stenting, radiotherapy and other endoscopic treatments among them).",
+          "key_points": [
+            "Algorithm: fitness, then haematogenous mets, contiguous invasion, peritoneal spread, then nodes",
+            "Unfit / haematogenous mets / contiguous invasion / peritoneal spread = palliation",
+            "Node-positive but otherwise clean = multimodal therapy; node-negative = surgery alone",
+            "Two-thirds of patients are already incurable at diagnosis",
+            "Palliation aims at symptom relief and quality of life; principal target is swallowing",
+            "Some patients need only supportive, community and hospice care"
+          ],
+          "check": {
+            "prompt": "According to the treatment algorithm, a fit patient with no haematogenous metastases, no contiguous organ invasion, no peritoneal spread and no lymph node metastases should receive:",
+            "options": [
+              "Surgery alone",
+              "Multimodal therapy",
+              "Palliation only",
+              "Endoscopic mucosal resection in every case",
+              "Neoadjuvant immunotherapy alone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المريض المؤهل للجراحة بلا نقائل دموية ولا غزو مجاور ولا انتشار صفاقي تُسأل عنه العقد اللمفية: سالبة = جراحة وحدها، وموجبة = علاج متعدد الوسائط؛ والتلطيف يكون عند غياب اللياقة أو وجود أي شكل من الانتشار البعيد أو الصفاقي أو الغزو المجاور."
+          }
+        },
+        {
+          "heading": "Curative Surgery - Principles of Oesophagectomy",
+          "body_text": "**The principle of oesophagectomy is to deal adequately with the local tumour in order to minimize the risk of local recurrence, and to achieve an adequate lymphadenectomy to reduce the risk of staging error.**\n- **When such a margin cannot be achieved proximally - particularly with squamous cell carcinoma - there is evidence that postoperative radiotherapy can minimize local recurrence.**\n- **Adenocarcinoma commonly involves the gastric cardia** and may therefore **extend into the fundus or down the lesser curve**; **some degree of gastric excision is essential** in order to achieve adequate local clearance and accomplish an appropriate lymphadenectomy.\n- **Excision of contiguous structures - such as the crura, diaphragm and mediastinal pleura - needs to be considered** as a method of creating **negative resection margins.**\nA radical resection therefore removes the tumour-bearing oesophagus with generous longitudinal margins (respecting submucosal spread), a sleeve of stomach when required for cardia/fundus disease, the appropriate lymph-node fields, and any contiguous structure invaded en route - en bloc, with immediate reconstruction, usually by a gastric conduit.",
+          "key_points": [
+            "Adequate local tumour clearance minimizes local recurrence",
+            "Adequate lymphadenectomy reduces the risk of staging error",
+            "Inadequate proximal margin (especially SCC): postoperative radiotherapy reduces recurrence",
+            "Cardia involvement demands partial gastric excision along the fundus and lesser curve",
+            "Crura, diaphragm and mediastinal pleura may be excised to obtain negative margins"
+          ]
+        },
+        {
+          "heading": "Surgical Approaches to Oesophagectomy (Figure 62.53)",
+          "body_text": "**The two usual approaches for surgery of the oesophagus (Figure 62.53):**\n- **(a) Thoracoabdominal approach:** a single long, curved incision extending from the **left lower chest across the costal margin into the upper abdomen**, which **opens the abdominal and thoracic cavities together**; the stomach is mobilized, **pulled up and tubularized to replace the resected oesophagus.**\n- **(b) Two-stage Ivor Lewis approach:** **the abdomen is opened first, closed, and then the thoracotomy is performed** - a right thoracotomy plus a vertical upper midline laparotomy in the mid-abdomen; the **gastric conduit is positioned within the thoracic cavity for the anastomosis.**\n- **The McKeown operation adds a third incision in the neck to complete a cervical anastomosis.**\n- **(3) Transhiatal oesophagectomy: performed without thoracotomy** - the oesophagus is mobilized through the abdominal hiatus and a cervical incision, and the anastomosis is cervical.\nChoice of approach depends on tumour location (upper-third tumours favour a cervical anastomosis; distal adenocarcinomas suit Ivor Lewis or thoracoabdominal), the need for mediastinal lymphadenectomy, and the patient's cardiopulmonary reserve.",
+          "key_points": [
+            "Thoracoabdominal: one incision, chest and abdomen opened together; stomach tubularized as conduit",
+            "Ivor Lewis: abdomen first, then right thoracotomy; intrathoracic anastomosis",
+            "McKeown: third cervical incision completes a cervical anastomosis",
+            "Transhiatal oesophagectomy avoids thoracotomy altogether",
+            "Approach follows tumour location, nodal fields and cardiopulmonary fitness"
+          ]
+        },
+        {
+          "heading": "Recent Advances (EMR, PDT) and the Summary Points",
+          "body_text": "**Endoscopic mucosal resection (EMR):** for apparently **early lesions**, EMR has become **increasingly popular**, providing **either a cure or at least sufficient histological information upon which to base a further management strategy** (precise T-staging of high-grade dysplasia and early cancer).\n**Photodynamic therapy (PDT):** an alternative approach **largely used in patients who were either unfit or unwilling to undergo surgery**. This endoscopic technique relies on **the administration of a photosensitiser that is taken up preferentially by dysplastic and neoplastic tissue**, which is then destroyed by activating light delivered through the endoscope (systemic photosensitizers add the drawback of cutaneous photosensitivity).\n**Summary points of the lecture:**\n- **Radical oesophagectomy is the most important aspect of curative treatment.**\n- **Neoadjuvant treatments before surgery may improve survival in a proportion of patients.**\n- **Chemoradiotherapy alone may cure selected patients, particularly those with squamous cell cancers.**\n- **Useful palliation may be achieved by chemo/radiotherapy or endoscopic treatments.**",
+          "key_points": [
+            "EMR for early lesions: cure or definitive histology for further planning",
+            "PDT: photosensitiser taken up by dysplastic/neoplastic tissue, activated endoscopically; for unfit/unwilling patients",
+            "Radical oesophagectomy remains the cornerstone of cure",
+            "Neoadjuvant therapy may improve survival in a proportion",
+            "Chemoradiotherapy alone can cure selected SCC patients",
+            "Palliation by chemo/radiotherapy or endoscopic treatments"
+          ],
+          "check": {
+            "prompt": "According to the lecture summary, which treatment may on its own cure selected patients, particularly those with squamous cell cancers?",
+            "options": [
+              "Chemoradiotherapy alone",
+              "Neoadjuvant chemotherapy alone in all patients",
+              "Endoscopic mucosal resection for every T3 tumour",
+              "Palliative stenting",
+              "Photodynamic therapy as first-line for all stages"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "ينص ملخص المحاضرة على أن الكيميائي الإشعاعي وحده قد يشفي مرضى مختارين وخاصة ذوي السرطانات الحرشفية؛ أما الاستئصال المخاطي فيخص الآفات المبكرة فقط، والدعامات تلطيفية، والعلاج الضوئي بديل لغير المرشحين للجراحة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Oesophagectomy",
+          "definition_ar": "استئصال المري الجذري مع إعادة الوصل بأنبوب المعدة؛ حجر الأساس في العلاج الشافي."
+        },
+        {
+          "term": "Lymphadenectomy",
+          "definition_ar": "استئصال حقول العقد اللمفية مع الورم لتقليل خطر خطأ التحديد المرحلي."
+        },
+        {
+          "term": "Ivor Lewis operation",
+          "definition_ar": "عملية إيفور لويس ذات المرحلتين: فتح البطن أولاً ثم الصدر الأيمن لاستئصال الورم وعمل الوصل داخل الصدر."
+        },
+        {
+          "term": "McKeown operation",
+          "definition_ar": "عملية ماكون: إضافة شق عنقي ثالث لإتمام الوصل العنقي بعد فتح البطن والصدر."
+        },
+        {
+          "term": "Transhiatal oesophagectomy",
+          "definition_ar": "استئصال المري عبر فتحة الحجاب دون فتح الصدر مع وصل عنقي."
+        },
+        {
+          "term": "Endoscopic mucosal resection (EMR)",
+          "definition_ar": "استئصال المخاطية بالمنظور للآفات المبكرة؛ قد يشفي أو يقدم معلومات نسيجية تحدد الخطة اللاحقة."
+        },
+        {
+          "term": "Photodynamic therapy (PDT)",
+          "definition_ar": "العلاج الضوئي: حقن مادة محسسة للضوء تتراكم في النسيج المصاب ثم تفعيلها بالضوء عبر المنظور."
+        },
+        {
+          "term": "Neoadjuvant therapy",
+          "definition_ar": "العلاج الكيميائي و/أو الإشعاعي قبل الجراحة وقد يحسن البقيا لدى نسبة من المرضى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_L2_esophagus_c07",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "Esophageal Obstruction and Dysmotility Disorders",
+      "summary_ar": "ينقسم انسداد المري إلى بنيوي ميكانيكي (تضيقات بالقلس المزمن أو الإشعاع أو الجرح القلوي أو السرطان، وشبكات مخاطية وحلقات شاتزكي) مع عسر بلع يتدرج من الصلب إلى السائل، ووظيفي بحركة غير متناسقة (عسر الحركة): مري جارق الجوز بتقلصات عالية السعة متناسقة، وتشنج مري منتشر بتقلصات متزامنة بسعة طبيعية يشخص بالمانومتري ويظهر مري الفتاحة، وعاصرة سفلية مفرطة الضغط معزولة. وقد ينشأ عن عسر الحركة رتوج: زنكر فوق العاصرة العلوية (كتلة وقلس ورائحة فم) وفوق الحجاب فوق السفلية. ومتلازمة بلامر فينسون: شبكة فوق الغضروف الحلقي مع فقر دم بعوز الحديد والتهاب اللسان وتقعر الأظافر.",
+      "sections": [
+        {
+          "heading": "Esophageal Obstruction - Structural versus Functional",
+          "body_text": "**Esophageal obstruction divides into two categories:**\n1. **Structural (mechanical) obstructions** - a fixed lesion narrows the lumen.\n2. **Functional obstruction - disruption of the coordinated waves of peristaltic contractions - termed esophageal dysmotility.**\n**Mechanical obstruction presents as progressive dysphagia that begins with inability to swallow solids and progresses to liquids.** Causes:\n1. **Strictures/stenosis** - from **chronic gastro-esophageal reflux, irradiation, caustic injury or cancer.**\n2. **Cancer.**\n3. **Esophageal mucosal webs** - mostly **idiopathic** (or part of Plummer-Vinson syndrome).\n4. **Esophageal rings, or Schatzki rings.**\nThe temporal pattern is a powerful bedside discriminator: solids-first-then-liquids points to a mechanical lesion, whereas dysphagia to solids AND liquids simultaneously from the beginning points to a motility (functional) disorder such as achalasia or diffuse esophageal spasm.",
+          "key_points": [
+            "Structural (mechanical) versus functional (dysmotility) obstruction",
+            "Mechanical dysphagia: solids first, then liquids - progressive",
+            "Stricture causes: chronic GER, irradiation, caustic injury, cancer",
+            "Webs (idiopathic) and Schatzki rings complete the mechanical list",
+            "Solids-and-liquids-together from onset suggests a motility disorder"
+          ]
+        },
+        {
+          "heading": "Nutcracker Esophagus (Hypertensive Peristalsis)",
+          "body_text": "**Nutcracker esophagus** is defined by **high-amplitude contractions of the distal esophagus - but the contractions proceed in a coordinated manner** (peristalsis is preserved). It is also called **hypertensive peristalsis**: a benign motility disorder in which contractions in the smooth muscles of the esophagus occur with **excessive duration or amplitude**. The swallowing mechanism itself remains orderly: in the peristalsis diagram (a sagittal view of the pharynx, esophagus, stomach and duodenum), the yellow food bolus is trapped in a segment of the esophagus - the wall immediately above is relaxed/dilated to allow passage, while the wall immediately inferior to the bolus is contracted/narrowed, pushing the bolus onward - but in nutcracker esophagus the squeeze is simply far too forceful (the lecture's visual mnemonic: a wooden nutcracker crushing walnuts; the name is shared with the unrelated renal 'nutcracker syndrome' - compression of the left renal vein between the superior mesenteric artery and the aorta - which is NOT the esophageal condition). Symptoms: **dysphagia and chest pain** - the chest pain is frequently severe and angina-like and often triggers a negative cardiac workup before the esophagus is considered.",
+          "key_points": [
+            "High-amplitude distal esophageal contractions that remain coordinated",
+            "Also called hypertensive peristalsis; benign",
+            "Excessive duration or amplitude of smooth-muscle contraction",
+            "Presents with dysphagia and chest pain (angina-like)"
+          ]
+        },
+        {
+          "heading": "Diffuse Esophageal Spasm and the Corkscrew Esophagus",
+          "body_text": "**Diffuse esophageal spasm (DES)** consists of **repetitive, simultaneous contractions of the distal esophageal smooth muscle - uncoordinated contractions of the esophagus that are of normal amplitude.** Symptoms: **dysphagia and chest pain.** **The diagnosis is made by manometry (DX by manometry).** On barium swallow the markedly dilated lumen shows prominent, irregular, thickened mucosal folds with multiple large nodular filling defects creating a tortuous, spiral-like, serpiginous **'corkscrew' esophagus** pattern throughout the visualized segment - an appearance described as pathognomonic in the lecture - and a focal rounded collection of contrast at the distal end may represent an associated **diverticulum or a localized outpouching**. Clinical correlation: DES is the mirror image of nutcracker esophagus: both cause dysphagia and chest pain, but nutcracker contractions are coordinated and excessive in amplitude, whereas DES contractions are simultaneous (uncoordinated) and of normal amplitude.",
+          "key_points": [
+            "Repetitive simultaneous contractions of distal esophageal smooth muscle",
+            "Uncoordinated contractions of NORMAL amplitude",
+            "Dysphagia and chest pain",
+            "Diagnosis: manometry",
+            "Barium: corkscrew (serpiginous) esophagus; distal diverticulum may coexist"
+          ],
+          "check": {
+            "prompt": "How is diffuse esophageal spasm definitively diagnosed?",
+            "options": [
+              "Esophageal manometry showing repetitive simultaneous contractions of normal amplitude",
+              "Barium swallow alone is diagnostic in all cases",
+              "24-hour pH monitoring",
+              "CT of the chest",
+              "Serology for Trypanosoma cruzi"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "التشنج المريئي المنتشر يُشخَّص بالمانومتري الذي يظهر تقلصات متزامنة متكررة بسعة طبيعية؛ ومري الفتاحة على الباريوم مظهر موحٍ لكنه ليس تشخيصياً في كل الحالات، وقياس الـPH يقيّم القلس لا التشنج، والمقطعي والسيروولوجيا لا دور لهما هنا."
+          }
+        },
+        {
+          "heading": "Hypertensive LES and Esophageal Manometry Technique",
+          "body_text": "**Lower esophageal sphincter dysfunction/hypertensive lower esophageal sphincter** - such as **high resting pressure or incomplete relaxation** - is the third dysmotility pattern. It is **termed hypertensive lower esophageal sphincter when it occurs in the absence of the altered patterns of esophageal contraction seen in the disorders described above** - that is, an isolated LES abnormality with an otherwise normal peristaltic pattern (no nutcracker-amplitude waves and no simultaneous spasm; when LES dysfunction coexists with aperistalsis, the syndrome is achalasia).\n**Esophageal motility study (esophageal manometry):** esophageal motility studies involve **pressure measurements of the esophagus after a patient takes a wet (fluid-containing) or dry (solid-containing) swallow**, with measurements **usually taken at various points in the esophagus**. This technique is the diagnostic backbone of every dysmotility syndrome in this lecture - achalasia, nutcracker esophagus, diffuse esophageal spasm and hypertensive LES.",
+          "key_points": [
+            "LES dysfunction: high resting pressure or incomplete relaxation",
+            "Hypertensive LES = isolated LES abnormality without altered contraction patterns",
+            "Manometry uses wet (fluid) and dry (solid) swallows",
+            "Pressures recorded at various points along the esophagus"
+          ]
+        },
+        {
+          "heading": "Esophageal Diverticula and Plummer-Vinson Syndrome",
+          "body_text": "**Esophageal dysmotility may result in the development of diverticula:**\n- **Epiphrenic diverticulum - above the lower esophageal sphincter.**\n- **Zenker diverticulum/pharyngoesophageal diverticulum - above the upper esophageal sphincter. If large, food accumulates within it, producing a mass (often a neck swelling), regurgitation (of undigested food, typically hours after eating or on reclining) and halitosis.**\n**Plummer-Vinson syndrome** is also called the **Paterson-Kelly syndrome or sideropenic dysphagia.** The **original descriptions are vague and poorly supported by evidence of a coherent syndrome.** **Dysphagia is said to occur because of the presence of a postcricoid web that is associated with iron deficiency anaemia, glossitis and koilonychia.** Patients are typically middle-aged women with iron deficiency; the syndrome is a recognized risk factor for squamous cell carcinoma of the esophagus, and the web can be disrupted endoscopically while the iron deficiency is corrected.",
+          "key_points": [
+            "Dysmotility produces pulsion diverticula",
+            "Epiphrenic diverticulum sits above the LES",
+            "Zenker (pharyngoesophageal) diverticulum sits above the UES",
+            "Large Zenker: food accumulation, mass, regurgitation of undigested food, halitosis",
+            "Plummer-Vinson = Paterson-Kelly = sideropenic dysphagia",
+            "Postcricoid web + iron deficiency anemia + glossitis + koilonychia; SCC risk factor"
+          ],
+          "check": {
+            "prompt": "Which constellation completes the Plummer-Vinson (Paterson-Kelly) syndrome?",
+            "options": [
+              "Postcricoid web with iron deficiency anemia, glossitis and koilonychia",
+              "Bird's-beak deformity with aspiration and weight loss",
+              "Corkscrew esophagus with chest pain and dysphagia",
+              "Zenker diverticulum with halitosis and regurgitation",
+              "Schatzki ring with intermittent solid-food dysphagia"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "متلازمة بلامر فينسون (باترسون كيلي أو عسر البلع الناقص الحديد) تتكون من شبكة فوق الغضروف الحلقي مع فقر دم بعوز الحديد والتهاب اللسان وتقعر الأظافر؛ أما بقية الخيارات فتصف الأكالاسيا والتشنج المنتشر ورتج زنكر وحلقة شاتزكي على الترتيب."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Nutcracker esophagus",
+          "definition_ar": "مري جارق الجوز: تقلصات عالية السعة لكن متناسقة في المري البعيد؛ حالة حميدة تسبب عسر بلع وألم صدري."
+        },
+        {
+          "term": "Diffuse esophageal spasm",
+          "definition_ar": "تشنج مري منتشر: تقلصات متزامنة متكررة بسعة طبيعية في عضل المري البعيد؛ يشخص بالمانومتري."
+        },
+        {
+          "term": "Corkscrew esophagus",
+          "definition_ar": "مري الفتاحة: مظهر الباريوم المتعرج الحلزوني في التشنج المريئي المنتشر."
+        },
+        {
+          "term": "Hypertensive LES",
+          "definition_ar": "عاصرة سفلية مفرطة الضغط: ضغط راجع مرتفع أو ارتخاء ناقص دون اضطراب أنماط تقلص جسم المري."
+        },
+        {
+          "term": "Zenker diverticulum",
+          "definition_ar": "رتج زنكر (البلعومي المريئي): رتج فوق العاصرة العلوية؛ إذا كبر تجمع فيه الطعام فسبب كتلة وقلس طعام غير مهضوم ورائحة فم كريهة."
+        },
+        {
+          "term": "Epiphrenic diverticulum",
+          "definition_ar": "رتج فوق الحجاب: رتج فوق العاصرة السفلية ينشأ عن اضطراب حركي."
+        },
+        {
+          "term": "Schatzki ring",
+          "definition_ar": "حلقة شاتزكي: حلقة مخاطية في المري السفلي تسبب عسر بلع متقطع للجامدات."
+        },
+        {
+          "term": "Postcricoid web",
+          "definition_ar": "شبكة فوق الغضروف الحلقي: غشاء مخاطي في مخرج البلعوم يسبب عسر البلع في متلازمة بلامر فينسون."
+        },
+        {
+          "term": "Koilonychia",
+          "definition_ar": "تقعر الأظافر (الأظافر الملعقية): علامة كلاسيكية لنقص الحديد."
+        },
+        {
+          "term": "Sideropenic dysphagia",
+          "definition_ar": "عسر البلع الناقص الحديد: اسم بديل لمتلازمة بلامر فينسون (باترسون كيلي)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L2_esophagus_f01",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "What is the definition of achalasia?",
+      "back_text": "Literally 'does not relax': loss of peristalsis in the distal esophagus PLUS failure of the lower esophageal sphincter (LES) to relax - both components are required for the diagnosis.",
+      "mnemonic_ar": "الأكالاسيا حالة مزدوجة: لا تمعّج في المري البعيد + لا ارتخاء للعاصرة السفلية؛ احفظها بقاعدة: «عاصرة لا تفتح ومري لا يدفع».",
+      "is_vivid": false,
+      "tags": ["achalasia", "definition"]
+    },
+    {
+      "id": "surg_L2_esophagus_f02",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "Name the recognized etiologic associations of achalasia.",
+      "back_text": "Idiopathic in most; autoimmune - HLA-DQw1 with antibodies to enteric neurons; chronic infections - herpes zoster and measles viruses; Chagas disease (Trypanosoma cruzi) destroying intramural ganglion cells.",
+      "is_vivid": false,
+      "tags": ["achalasia", "etiology"]
+    },
+    {
+      "id": "surg_L2_esophagus_f03",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "Which emptying maneuvers do achalasia patients adopt, and why is heartburn common despite a tight LES?",
+      "back_text": "1) Standing after eating (gravity); 2) raising the arms after eating (raises intrathoracic pressure); 3) drinking a large amount of water to wash food down. Heartburn results from fermentation of retained food in the dilated esophagus, not true reflux; chronic regurgitation also causes recurrent aspiration and pulmonary complications.",
+      "mnemonic_ar": "قف - ارفع ذراعيك - اشرب ماءً كثيراً: ثلاث حيل إفراغ المري في الأكالاسيا.",
+      "is_vivid": true,
+      "tags": ["achalasia", "clinical"]
+    },
+    {
+      "id": "surg_L2_esophagus_f04",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "Barium swallow findings and diagnostic accuracy in achalasia?",
+      "back_text": "Dilated esophagus (megaesophagus) tapering to a smooth, narrow bird's beak (rat's tail) at the GE junction with absent peristalsis; diagnostic accuracy approximately 95%. Spastic body contractions define the 'vigorous' achalasia variant.",
+      "is_vivid": false,
+      "tags": ["achalasia", "barium-swallow"]
+    },
+    {
+      "id": "surg_L2_esophagus_f05",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "What is the manometric triad of achalasia?",
+      "back_text": "1) Elevated resting LES pressure; 2) incomplete LES relaxation with swallowing; 3) absent peristalsis or simultaneous (non-propulsive) contractions in the esophageal body.",
+      "mnemonic_ar": "ضغط عالٍ + ارتخاء ناقص + تمعّج غائب أو متزامن: الثالوث المانومتري للأكالاسيا.",
+      "is_vivid": false,
+      "tags": ["achalasia", "manometry"]
+    },
+    {
+      "id": "surg_L2_esophagus_f06",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "Endoscopic findings in achalasia - and the mandatory reason to scope every patient?",
+      "back_text": "Dilated esophagus with residual food material, inflammation, ulceration and Candida infection from stasis; the LES does not open spontaneously but is traversed easily with gentle pressure. Endoscopy is mandatory to exclude malignancy (pseudoachalasia) before treatment.",
+      "is_vivid": false,
+      "tags": ["achalasia", "endoscopy"]
+    },
+    {
+      "id": "surg_L2_esophagus_f07",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "Which three features suggest malignancy in a patient with apparent achalasia?",
+      "back_text": "1) Short duration of dysphagia; 2) significant weight loss; 3) age older than 60 years - malignancy (pseudoachalasia) until endoscopy and biopsy prove otherwise.",
+      "mnemonic_ar": "قصر المدة + نزول وزن مهم + عمر فوق 60 = ورم خبيث متنكر كأكالاسيا؛ راقب قبل أن تمدد.",
+      "is_vivid": true,
+      "tags": ["pseudoachalasia", "red-flags"]
+    },
+    {
+      "id": "surg_L2_esophagus_f08",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "card_type": "basic",
+      "front_text": "What are the four therapeutic modalities for achalasia, and the main side effects of drug therapy?",
+      "back_text": "Pharmacotherapy (nitrates and calcium channel blockers - common side effects: headaches and peripheral edema), botulinum toxin injection, pneumatic (balloon) dilation, and surgical myotomy (Heller).",
+      "is_vivid": false,
+      "tags": ["achalasia", "treatment"]
+    },
+    {
+      "id": "surg_L2_esophagus_f09",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "card_type": "basic",
+      "front_text": "How does botulinum toxin lower LES pressure in achalasia?",
+      "back_text": "It selectively blocks the release of acetylcholine from presynaptic cholinergic nerve terminals in the myenteric plexus, removing the excitatory drive to the sphincter muscle; the effect is temporary and injections must be repeated.",
+      "is_vivid": false,
+      "tags": ["achalasia", "pharmacology"]
+    },
+    {
+      "id": "surg_L2_esophagus_f10",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "card_type": "basic",
+      "front_text": "Key facts about the Heller myotomy for achalasia?",
+      "back_text": "The LES is weakened by cutting its muscle fibers down to the mucosa. First described by Ernest Heller in 1914 as anterior PLUS posterior myotomies; the MODIFIED Heller is a single anterior myotomy (with Dor fundoplication). Excellent results in up to 95% in select series; transthoracic or transabdominal approach.",
+      "mnemonic_ar": "هيلر 1914 = شقّان أمامي وخلفي؛ هيلر المعدَّل = شق أمامي واحد مع دور، ونجاحه حتى 95%.",
+      "is_vivid": false,
+      "tags": ["achalasia", "heller-myotomy"]
+    },
+    {
+      "id": "surg_L2_esophagus_f11",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "Which tumours form the majority of benign esophageal neoplasms, and how do benign tumours behave?",
+      "back_text": "Most are NOT epithelial: gastrointestinal stromal tumour (GIST), lipoma and granular cell tumour (true papillomas, adenomas and hyperplastic polyps do occur). Most are small and asymptomatic; even a large benign tumour may cause only mild symptoms.",
+      "is_vivid": false,
+      "tags": ["benign-tumors", "gist"]
+    },
+    {
+      "id": "surg_L2_esophagus_f12",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "Contrast squamous cell carcinoma and adenocarcinoma of the esophagus by location, geography and demographics.",
+      "back_text": "SCC: upper two-thirds, most common worldwide, males 4:1 over age 45. Adenocarcinoma: lower one-third, predominates in the West, arises mostly from Barrett esophagus, sevenfold more common in men, most frequent in Caucasians, overall 5-year survival under 25%.",
+      "is_vivid": false,
+      "tags": ["esophageal-cancer", "histology"]
+    },
+    {
+      "id": "surg_L2_esophagus_f13",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "List the risk factors for esophageal squamous cell carcinoma.",
+      "back_text": "Alcohol and tobacco (polycyclic hydrocarbons, nitrosamines); poverty; caustic esophageal injury; achalasia; Plummer-Vinson syndrome; diets deficient in fruits or vegetables; frequent very hot beverages; previous mediastinal radiation; HPV infection in high-risk areas; fungus-contaminated foods; males 4:1, age above 45.",
+      "mnemonic_ar": "عوامل الخطر الحرشفي: كحول وتبغ، فقر، جرح قلوي، أكالاسيا، بلامر فينسون، قلة فواكه وخضار، مشروبات ساخنة، إشعاع منصفي، فيروس الورم الحليمي، أطعمة ملوثة بالفطور.",
+      "is_vivid": false,
+      "tags": ["scc", "risk-factors"]
+    },
+    {
+      "id": "surg_L2_esophagus_f14",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "Which late features mark advanced, incurable esophageal cancer?",
+      "back_text": "Recurrent laryngeal nerve palsy (hoarseness), Horner's syndrome, chronic spinal pain, diaphragmatic paralysis; weight loss over 20% and anorexia make surgical cure unlikely; cutaneous metastases or enlarged supraclavicular nodes indicate disseminated disease; palpable neck nodes likewise mean advanced disease.",
+      "is_vivid": false,
+      "tags": ["esophageal-cancer", "prognosis"]
+    },
+    {
+      "id": "surg_L2_esophagus_f15",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "What is pseudoachalasia and what are its causes?",
+      "back_text": "A malignant mimic of achalasia - the most common cause is malignancy, either direct invasion of the esophageal neural plexuses or a paraneoplastic syndrome; other tumors: esophagus, lung, lymphoma and pancreatic carcinoma; long-term gastric band use causes esophageal dilatation and pseudoachalasia.",
+      "is_vivid": false,
+      "tags": ["pseudoachalasia"]
+    },
+    {
+      "id": "surg_L2_esophagus_f16",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "Match each staging modality to its role in esophageal cancer.",
+      "back_text": "CT: identifies haematogenous metastases (most used). MRI: adds NO benefit over CT. EUS: depth of wall invasion, T4 organ invasion, lymph nodes, contiguous cardia spread and left liver lobe lesions. PET: high glycolytic metabolism imaged with 18F-FDG. Laparoscopy: peritoneal seedlings (the only reliable modality) plus peritoneal cytology. Bronchoscopy: airway impingement/invasion in over 30% of upper-third tumours.",
+      "is_vivid": false,
+      "tags": ["staging", "investigations"]
+    },
+    {
+      "id": "surg_L2_esophagus_f17",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "Esophageal cancer TNM: definitions of T1-T4b and the N-category cutoffs?",
+      "back_text": "T1 lamina propria or submucosa; T2 muscularis propria; T3 beyond muscularis propria; T4a pleura, pericardium, diaphragm; T4b trachea, bone, aorta. N1 = 1-2 nodes; N2 = 3-6 nodes; N3 = 7 or more; M1 = any distant metastasis (Stage 4).",
+      "mnemonic_ar": "N بالتسلسل: 1-2 ثم 3-6 ثم 7 فأكثر؛ وT4a قابلة للاستئصال (جنبة، تامور، حجاب) بينما T4b لا (رغامى، عظم، أبهر).",
+      "is_vivid": false,
+      "tags": ["tnm", "staging"]
+    },
+    {
+      "id": "surg_L2_esophagus_f18",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c07",
+      "card_type": "basic",
+      "front_text": "Nutcracker esophagus versus diffuse esophageal spasm versus hypertensive LES - the discriminating manometric features?",
+      "back_text": "Nutcracker: high-amplitude but COORDINATED distal contractions (excessive duration/amplitude; benign). DES: repetitive, SIMULTANEOUS contractions of NORMAL amplitude, diagnosed by manometry, corkscrew esophagus on barium. Hypertensive LES: isolated high resting pressure or incomplete relaxation with normal contraction patterns.",
+      "is_vivid": false,
+      "tags": ["dysmotility", "manometry"]
+    },
+    {
+      "id": "surg_L2_esophagus_f19",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c07",
+      "card_type": "basic",
+      "front_text": "Where do Zenker and epiphrenic diverticula arise, and how does a large Zenker present?",
+      "back_text": "Zenker (pharyngoesophageal) diverticulum above the upper esophageal sphincter; epiphrenic diverticulum above the lower esophageal sphincter - both consequences of dysmotility. A large Zenker accumulates food, causing a mass (neck swelling), regurgitation of undigested food and halitosis.",
+      "is_vivid": true,
+      "tags": ["diverticula", "zenker"]
+    },
+    {
+      "id": "surg_L2_esophagus_f20",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c07",
+      "card_type": "basic",
+      "front_text": "Plummer-Vinson (Paterson-Kelly) syndrome - alternative names and classic components?",
+      "back_text": "Also called Paterson-Kelly syndrome or sideropenic dysphagia: dysphagia from a postcricoid web associated with iron deficiency anemia, glossitis and koilonychia (original descriptions were vague and poorly supported); a recognized risk factor for squamous cell carcinoma.",
+      "mnemonic_ar": "شبكة فوق غضروف حلقي + نقص حديد + التهاب لسان + تقعر أظافر = بلامر فينسون؛ وارتباطها بسرطان حرشفي لاحق.",
+      "is_vivid": false,
+      "tags": ["plummer-vinson", "sideropenic-dysphagia"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L2_esophagus_m01",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "question_stem": "A 41-year-old man complains of regurgitation of saliva and of undigested food. An esophagram reveals a dilated esophagus and a bird's-beak deformity. Manometry shows a hypertensive lower esophageal sphincter with failure to relax with deglutition. Which of the following is the safest and most effective treatment of this condition?",
+      "options": [
+        "Medical treatment with sublingual nitroglycerin, nitrates, or calcium channel blockers",
+        "Endoscopic injection of botulinum toxin into the lower esophageal sphincter",
+        "Pneumatic (balloon) dilation of the lower esophageal sphincter",
+        "Modified Heller (surgical) myotomy, usually with a Dor fundoplication",
+        "Transhiatal esophagectomy with gastric conduit reconstruction"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "التشخيص أكالاسيا مؤكدة بالصورة والمانومتري (مري متوسع + منقار طائر + عاصرة مفرطة الضغط لا ترتخي مع البلع). رأب العضلة بهيلر المعدل هو الخيار الأكثر أماناً وفعالية ودواماً للمرشح الجراحي، بنتائج ممتازة تصل إلى 95% في سلاسل مختارة مع إضافة رأب دور لتقليل القلس. الأدوية (نترات وحاصرات قنوات الكالسيوم) تعطي تخفيفاً جزئياً مؤقتاً وآثارها الجانبية (الصداع والوذمة المحيطية) شائعة؛ وسم البوتولينوم مؤقت يتطلب تكرار الحقن ويحفظ لغير المؤهلين جراحياً؛ والتمديد البالوني فعال لكنه يحمل خطر تمزق المري؛ أما استئصال المري فيخص المري الضخمي المتقدم أو الحالات الفاشلة وليس الخط الأول.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The diagnosis is achalasia - all four classic treatment modalities appear among the options.",
+        "Weigh durability and safety together: which single option gives a lasting reduction of LES pressure without repeated sessions or a perforation risk?"
+      ],
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L2_esophagus_m02",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "question_stem": "A 52-year-old man has 6 months of dysphagia to both solids and liquids, nocturnal regurgitation of undigested food and 5 kg weight loss. Barium swallow shows a dilated esophagus with a smooth bird's-beak taper at the gastroesophageal junction. Which investigation must be performed before any definitive therapy such as dilation or myotomy?",
+      "options": [
+        "Esophagogastroduodenoscopy with inspection and biopsies of the gastroesophageal junction",
+        "24-hour ambulatory pH monitoring",
+        "Cardiac exercise stress test",
+        "MRI of the chest",
+        "Serum acetylcholine receptor antibodies"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قبل أي علاج نهائي مخرِّب (تمديد أو رأب عضلة) يجب تنظير المري والمعدة وفحص الوصل المريئي المعدي مع الخزعات لاستبعاد الأكالاسيا الكاذبة الورمية، فالخباثة أشيع محاكيات الأكالاسيا. قياس الـPH يقيّم القلس لا الأورام، وتخطيط القلب لا علاقة له، والرنين لا يضيف فائدة، وأضداد المستقبلات لا تشخص الأكالاسيا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L2_esophagus_m03",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "question_stem": "Which manometric findings characterize classic achalasia?",
+      "options": [
+        "Elevated resting LES pressure, incomplete LES relaxation, and absent peristalsis or simultaneous contractions",
+        "Low resting LES pressure with normal peristalsis",
+        "High-amplitude coordinated distal esophageal contractions with normal LES relaxation",
+        "Repetitive simultaneous contractions of normal amplitude with complete LES relaxation",
+        "A normal study with a hypertensive upper esophageal sphincter"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ثالوث الأكالاسيا المانومتري: ضغط راجع مرتفع للعاصرة السفلية، ارتخاء ناقص مع البلع، وغياب التمعج أو وجود تقلصات متزامنة غير دافعة. الضغط المنخفض مع تمعج سوي يشير للقلس؛ والتقلصات العالية السعة المتناسقة هي مري جارق الجوز؛ والتقلصات المتزامنة بسعة طبيعية هي التشنج المنتشر؛ وفرط ضغط العاصرة العلوية ليس أكالاسيا.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L2_esophagus_m04",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c02",
+      "question_stem": "A 68-year-old man is referred with 'achalasia' on a barium swallow. His dysphagia began only 3 months ago, he has lost 12 kg, and there is no history of reflux. What do these features suggest and what is the next step?",
+      "options": [
+        "Malignancy until proven otherwise - endoscopy with biopsy (pseudoachalasia)",
+        "True idiopathic achalasia - proceed directly to pneumatic dilation",
+        "Early achalasia - start calcium channel blockers and review in 6 months",
+        "Candida esophagitis alone - antifungal therapy",
+        "Diffuse esophageal spasm - manometry then nitrates"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قصر مدة عسر البلع (3 أشهر فقط) مع نزول وزن كبير (12 كغ) مع العمر فوق 60 هي علامات الإنذار الثلاث بورم خبيث متنكر في هيئة أكالاسيا (أكالاسيا كاذبة)، والخطوة الصحيحة تنظير مع خزعات لا علاج تمددي أو دوائي. مضادات الفطريات تعالج مضاعفة لا السبب، والمانومتري وحده لا يستبعد الخباثة، والتشنج المنتشر تشخيص مختلف تماماً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Recall the triad of features that suggest malignancy in apparent achalasia.",
+        "Short duration + significant weight loss + age over 60 - what must be excluded before treating?"
+      ],
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L2_esophagus_m05",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "question_stem": "By which mechanism does botulinum toxin reduce lower esophageal sphincter pressure in achalasia?",
+      "options": [
+        "Selective blockade of acetylcholine release from presynaptic cholinergic nerve terminals in the myenteric plexus",
+        "Direct lysis of LES smooth muscle fibers",
+        "Stimulation of nitric oxide synthase in the squamous epithelium",
+        "Irreversible destruction of enteric ganglion cells",
+        "Competitive antagonism at muscarinic receptors of the diaphragm"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يعمل سم البوتولينوم على حجب إطلاق الأستيل كولين انتقائياً من النهايات العصبية الكولينية قبل المشبكية داخل الضفيرة العضلية، فتنخفض القوة الانقباضية للعاصرة دون تحلل ميكانيكي للعضلة ودون تخريب للعقد ودون تنافس على مستقبلات المسكارين؛ ولذلك يكون تأثيره مؤقتاً ويحتاج تكراراً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L2_esophagus_m06",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c03",
+      "question_stem": "Regarding the Heller myotomy for achalasia, which statement is correct?",
+      "options": [
+        "It was first described in 1914 and originally consisted of both anterior and posterior myotomies",
+        "The modified Heller myotomy is a posterior myotomy with a Nissen fundoplication",
+        "It cuts the mucosa as well as the muscle of the LES",
+        "Excellent results are reported in fewer than 40% of patients",
+        "It can only be performed through a left thoracotomy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "وصف إرنست هيلر العملية عام 1914 بشقين أمامي وخلفي، والشكل المعدل اليوم شق أمامي واحد يضاف إليه عادة رأب دور الأمامي (لا نيسن الخلفي)؛ يقطع الشق الألياف العضلية حتى تحت المخاطية دون قطع المخاطية نفسها، والنتائج الممتازة تصل إلى 95% في سلاسل مختارة، والطريق التقليدي صدري أو بطني معاً وليس الصدر الأيسر وحده.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L2_esophagus_m07",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c04",
+      "question_stem": "A 51-year-old man from a high-risk region is found to have squamous cell carcinoma of the mid-esophagus. Which of the following factors is NOT a recognized risk factor for esophageal squamous cell carcinoma?",
+      "options": [
+        "Barrett esophagus with intestinal metaplasia",
+        "Long-standing achalasia",
+        "Plummer-Vinson syndrome with iron deficiency anemia",
+        "Frequent consumption of very hot beverages",
+        "Caustic stricture from lye ingestion in childhood"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "مري باريت هو عامل الخطر الأهم لسرطان المري الغدي وليس الحرشفي، وهو بذلك الخيار الوحيد غير المرتبط بالحرشفي في القائمة؛ بينما الأكالاسيا وبلامر فينسون والمشروبات الساخنة جداً والاحتراق القلوي كلها عوامل خطر حرشفية معروفة من قائمة المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L2_esophagus_m08",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c04",
+      "question_stem": "A 63-year-old Caucasian man with 15 years of GERD and documented Barrett esophagus develops progressive dysphagia and 8 kg weight loss; biopsy of an ulcerated distal esophageal mass shows adenocarcinoma. Which statement best fits this tumor?",
+      "options": [
+        "It most likely arose from Barrett esophagus and involves the lower third of the esophagus",
+        "It is four times more common in women than men",
+        "It is the most common esophageal cancer worldwide",
+        "It carries an overall 5-year survival above 60%",
+        "It spreads only through the bloodstream"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الورم الغدي ينشأ غالباً من مري باريت ويصيب الثلث السفلي للمري. الأشيع عالمياً هو الحرشفي لا الغدي؛ والذكور سبعة أضعاف الإناث لا العكس؛ والبقيا الكلية لخمس سنوات أقل من 25% بسبب التشخيص بمرحلة متقدمة؛ والانتشار ثلاثي الطرق (مباشر ولمفاوي ودموي) وليس الدموي فقط.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L2_esophagus_m09",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "question_stem": "A 58-year-old heavy smoker has biopsy-proven squamous cell carcinoma of the upper third of the esophagus and is fit for treatment. Which staging investigation specifically assesses tracheobronchial involvement, and how often is it positive in such tumors?",
+      "options": [
+        "Bronchoscopy - impingement or invasion of the main airways in over 30% of new upper-third cancers",
+        "Transcutaneous ultrasound - airway invasion seen in 80%",
+        "MRI of the mediastinum - superior to CT for airway invasion",
+        "Laparoscopy - detects airway invasion in 50%",
+        "Barium swallow - tracheal fistula demonstrated in 95%"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تنظير القصبات هو الفحص المخصص لتقييم مجرى الهواء في سرطانات الثلث العلوي (وعادة الحرشفية منها)، إذ يكشف انطباغاً أو غزواً للطرق الهوائية الرئيسية في أكثر من 30% من المرضى الجدد. التصوير فوق الجلد ضعيف الرؤية للمنصف بحكم موجاته منخفضة التردد، والرنين لا يضيف فائدة على المقطعي، والتنظير البطني للانتشار الصفاقي، والباريوم لا يظهر غزو القصبة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L2_esophagus_m10",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c05",
+      "question_stem": "In the staging of oesophageal cancer, which pairing of modality and information is correct?",
+      "options": [
+        "EUS - depth of tumour spread through the oesophageal wall and lymph node metastases",
+        "MRI - adds important benefit over CT for haematogenous metastases",
+        "CT - the only modality reliably detecting peritoneal tumour seedlings",
+        "PET - uses unlabeled glucose to map peristalsis",
+        "Plain chest radiograph - first-line for mucosal biopsy"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الاقتران الصحيح: التنظير فوق الصوتي يحدد عمق غزو الورم في جدار المري والعقد اللمفية وغزو الأعضاء المجاورة (T4). الرنين لا يضيف أي فائدة على المقطعي؛ والبذر الصفاقي يكشفه التنظير البطني وحده دون المقطعي؛ والبوزيتروني يستعمل FDG المسمع بالفلور 18 لا جلوكوزاً غير مسمع؛ والمنظار هو تحقيق الخط الأول مع الخزعات.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L2_esophagus_m11",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c06",
+      "question_stem": "A 66-year-old man with adenocarcinoma of the distal esophagus has staging CT showing multiple metastatic liver deposits from the primary tumor; he is cachectic with 15 kg weight loss. What is the most appropriate management goal?",
+      "options": [
+        "Palliation - relief of dysphagia and maintenance of the best quality of life",
+        "Curative radical esophagectomy with two-field lymphadenectomy",
+        "Neoadjuvant chemoradiotherapy followed by surgery",
+        "Endoscopic mucosal resection of the primary tumor",
+        "Immediate Heller myotomy to improve swallowing"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "وجود نقائل دموية كبدية يجعل المرض غير قابل للشفاء (ثلثا مرضى سرطان المري كذلك عند التشخيص)، فيتحول الهدف إلى التلطيف: استعادة بلع مريح بأفضل نوعية حياة مع دعم ورعاية مساندة وربط بخدمات التمريض المجتمعي والرعاية التلطيفية. الاستئصال الجذري أو العلاج المدثر الشافي لن يغيّرا الإنذار هنا؛ والاستئصال المخاطي مخصص للآفات المبكرة فقط؛ ورأب هيلر علاج الأكالاسيا لا السرطان.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Where does haematogenous metastasis sit in the treatment algorithm?",
+        "The principal aim of palliation in advanced oesophageal cancer is the predominant symptom - dysphagia."
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "surg_L2_esophagus_m12",
+      "lecture_id": "surg_L2_esophagus",
+      "concept_id": "surg_L2_esophagus_c07",
+      "question_stem": "A 49-year-old woman presents with dysphagia, a sore smooth tongue and spoon-shaped nails; investigations reveal iron deficiency anemia. What is the most likely diagnosis and its classic esophageal finding?",
+      "options": [
+        "Plummer-Vinson (Paterson-Kelly) syndrome with a postcricoid web",
+        "Zenker diverticulum with a large pharyngoesophageal pouch",
+        "Achalasia with a bird's-beak deformity",
+        "Diffuse esophageal spasm with a corkscrew esophagus",
+        "Schatzki ring with a ringed lower esophagus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المرأة المصابة بفقر دم نقص الحديد مع التهاب اللسان والأظافر الملعقية وعسر البلع = متلازمة بلامر فينسون (باترسون كيلي أو عسر البلع الناقص الحديد) وسبب عسر البلع فيها شبكة فوق الغضروف الحلقي؛ وهي عامل خطر معروف للسرطان الحرشفي. رتج زنكر يسبب كتلة وقلساً ورائحة فم؛ ومنقار الطائر للأكالاسيا؛ ومري الفتاحة للتشنج المنتشر؛ وحلقة شاتزكي لعسر بلع متقطع للجامدات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [4]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L2_esophagus_case01",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "The Bird's Beak that was not Benign - Achalasia versus Pseudoachalasia",
+      "scenario": "A 58-year-old man presents to the outpatient clinic with 4 months of progressive difficulty swallowing both solids and liquids, nocturnal regurgitation of undigested food and saliva, 9 kg of weight loss and intermittent retrosternal chest discomfort. He has discovered that drinking large volumes of water with meals, standing upright after eating and raising his arms help the food go down. An esophagram arranged by his family physician shows a markedly dilated esophagus tapering to a smooth bird's-beak at the gastroesophageal junction.",
+      "vignette": {
+        "age": 58,
+        "sex": "male",
+        "chief_complaint": "Progressive dysphagia to solids and liquids with regurgitation and weight loss",
+        "history": "Symptoms for 4 months and steadily worsening; uses large gulps of water, standing and arm-raising to aid swallowing; regurgitates undigested food at night; 9 kg weight loss; no prior heartburn treatment; no tobacco or alcohol; no previous gastric banding.",
+        "vitals": {
+          "bp": "118/76",
+          "hr": "84",
+          "rr": "16",
+          "temp": "36.7",
+          "spo2": "98%"
+        },
+        "exam": "Cachectic but comfortable; chest clear to auscultation; no neck masses and no palpable supraclavicular lymphadenopathy; abdomen soft, non-tender, no organomegaly.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "11.8 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "White cell count",
+            "value": "7.4 x 10^9/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Albumin",
+            "value": "31 g/L",
+            "flag": "low"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "6 mg/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Esophagram: markedly dilated esophagus (megaesophagus) with a smooth, tapered bird's-beak narrowing at the gastroesophageal junction and absent peristalsis."
+      },
+      "steps": [
+        {
+          "id": "surg_L2_esophagus_case01_s1",
+          "prompt": "What is the priority of initial assessment and immediate management for this patient?",
+          "options": [
+            "Structured assessment with vital-sign monitoring, IV fluids for dehydration, nutritional assessment and screening for aspiration complications",
+            "Immediate pneumatic dilation of the LES under sedation on the same day",
+            "Empirical high-dose proton pump inhibitor therapy and discharge home",
+            "Rigid esophagoscopy under general anesthesia",
+            "Urgent exploratory laparotomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريض مستقر ديناميكياً، فالأولوية تقييم منظم مع مراقبة العلامات، وتصحيح التجفاف بالسوائل الوريدية، وتقييم الحالة التغذوية، والبحث عن اختلاطات شفط رئوي من القلق المزمن قبل أي علاج نهائي. لا مكان للتمديد الفوري قبل استبعاد الخباثة، ومضادات الحموضة لا تعالج السبب، والتنظير الصلب والجراحة الاستكشافية بلا مقتضى.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L2_esophagus_case01_s2",
+          "prompt": "The clinical picture and esophagram suggest achalasia. Which investigation is mandatory before offering any definitive therapy?",
+          "options": [
+            "Upper gastrointestinal endoscopy with careful inspection and biopsies of the gastroesophageal junction to exclude malignancy (pseudoachalasia)",
+            "Esophageal manometry alone, which by itself excludes cancer",
+            "CT chest and abdomen alone",
+            "24-hour pH study",
+            "Serum tumor markers (CEA and CA 19-9) alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المنظار هو الخطوة الحتمية قبل أي علاج مخرِّب (تمديد بالوني أو رأب عضلة) لاستبعاد الأكالاسيا الكاذبة الورمية؛ وعلامات الإنذار هنا حاضرة: مدة قصيرة نسبياً (4 أشهر) ونزول وزن 9 كغ والعمر يقارب الستين. المانومتري يؤكد التشخيص لكنه لا يستبعد الورم، والمقطعي لا يفحص الغشاء المخاطي مباشرة، وقياس الـPH يقيّم القلس، والواسمات الورمية غير موثوقة وحدها.",
+          "xp": 15,
+          "hints": [
+            "Two of the three malignancy warning features are already present in this vignette.",
+            "Only one investigation directly visualizes and biopsies the gastroesophageal junction."
+          ]
+        },
+        {
+          "id": "surg_L2_esophagus_case01_s3",
+          "prompt": "Endoscopy shows a dilated esophagus with retained food and Candida, no tumor, and a GE junction that admits the scope with gentle pressure. Manometry: elevated resting LES pressure, incomplete relaxation, absent peristalsis. What is the definitive treatment of choice for this fit 58-year-old?",
+          "options": [
+            "Modified Heller (anterior) myotomy, usually with a Dor fundoplication",
+            "Lifelong nitrates and calcium channel blockers",
+            "Repeat botulinum toxin injections every 6 months",
+            "Endoscopic laser ablation of the LES",
+            "Total gastrectomy with Roux-en-Y reconstruction"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد استبعاد الورم، رأب هيلر المعدل (شق أمامي واحد للألياف العضلية حتى تحت المخاطية مع رأب دور) هو الأكثر أماناً وفعالية ودواماً للمرشح الجراحي بنتائج تصل إلى 95% في سلاسل مختارة، ويتم عبر طريق بطني أو صدري تقليدياً. الأدوية محدودة التأثير مع صداع ووذمة محيطية؛ والبوتولينوم مؤقت يتكرر؛ والاستئصال بالليزر ليس علاجاً معيارياً؛ واستئصال المعدة الكلي بلا أساس نهائياً.",
+          "xp": 15
+        },
+        {
+          "id": "surg_L2_esophagus_case01_s4",
+          "prompt": "After an uneventful Heller myotomy with Dor fundoplication, which issues must be addressed at long-term follow-up?",
+          "options": [
+            "Gastroesophageal reflux, persistent or recurrent dysphagia, and surveillance for squamous cell carcinoma of the esophagus",
+            "No follow-up is needed after a successful myotomy",
+            "Monthly barium swallows for life",
+            "Immediate unrestricted solid diet from day 1 without reassessment",
+            "Prophylactic esophagectomy at 10 years"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد رأب هيلر يجب متابعة القلس المريئي (وهو سبب إضافة رأب دور) وعودة عسر البلع أو استمراره (بسبب شق ناقص على المعدة أو الالتحام)، مع مراقبة طويلة الأمد لخطر سرطان المري الحرشفي المرتفع في الأكالاسيا حتى بعد العلاج الناجح. إهمال المتابعة أو التهويل ب استئصال وقائي كلاهما خطأ؛ والباريوم الشهري لا مقتضى له.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: أكالاسيا أولية (مري متوسع + منقار طائر + مانومتري نموذجي) بعد استبعاد الأكالاسيا الكاذبة بالمنظار والخزعات. الدروس المحورية: كل صورة بارium بمنقار طائر تستدعي منظاراً وخزعات قبل التمديد أو الجراحة؛ والعلامات المنذرة بالورم هي قصر مدة عسر البلع ونزول الوزن المهم والعمر فوق 60؛ والعلاج الأنسب للمريض المؤهل جراحياً هو هيلر المعدل مع دور بنتائج ممتازة حتى 95%؛ مع متابعة مدى الحياة لخطر السرطان الحرشفي ولمضاعفات القلس بعد الرأب.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L2_esophagus_case02",
+      "lecture_id": "surg_L2_esophagus",
+      "title": "From Dysphagia to Decision - Staging and Treating Squamous Cell Carcinoma of the Upper Esophagus",
+      "scenario": "A 60-year-old man presents with 4 months of progressive dysphagia, beginning with solids and now including liquids, together with odynophagia, regurgitation and a 10 kg weight loss. He has smoked 30 cigarettes daily for 35 years and drinks alcohol heavily. His voice is normal and no supraclavicular nodes are palpable. He is mildly dehydrated, has obvious muscle wasting, but walks independently and is mentally prepared for any treatment offered.",
+      "vignette": {
+        "age": 60,
+        "sex": "male",
+        "chief_complaint": "Progressive dysphagia to solids then liquids with 10 kg weight loss",
+        "history": "4 months of progression from solids to liquids; odynophagia; regurgitation; anorexia; heavy tobacco (about 35 pack-years) and alcohol use; no hoarseness; no prior GERD, Barrett surveillance or caustic injury; no previous radiotherapy.",
+        "vitals": {
+          "bp": "104/68",
+          "hr": "98",
+          "rr": "18",
+          "temp": "36.4",
+          "spo2": "96%"
+        },
+        "exam": "Cachectic with temporal and shoulder-girdle wasting; not jaundiced; no palpable lymphadenopathy including supraclavicular fossae; chest clear; abdomen soft with mild epigastric tenderness; no masses.",
+        "labs": [
+          {
+            "name": "Hemoglobin",
+            "value": "10.9 g/dL",
+            "flag": "low"
+          },
+          {
+            "name": "Albumin",
+            "value": "28 g/L",
+            "flag": "low"
+          },
+          {
+            "name": "Sodium",
+            "value": "132 mmol/L",
+            "flag": "low"
+          },
+          {
+            "name": "Creatinine",
+            "value": "1.0 mg/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Esophagram performed at the referring center: irregular stenosis with shouldering of the upper esophagus; chest radiograph unremarkable."
+      },
+      "steps": [
+        {
+          "id": "surg_L2_esophagus_case02_s1",
+          "prompt": "What are the immediate priorities in this dehydrated, malnourished man before cancer-specific workup?",
+          "options": [
+            "Resuscitation: IV fluids, correction of dehydration and electrolytes, nutritional support and analgesia",
+            "Immediate neoadjuvant chemotherapy today",
+            "Direct transfer to the operating theater for esophagectomy",
+            "Palliative radiotherapy on the same day",
+            "Immediate blood transfusion for this degree of anemia"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البدء بتعويض السوائل والشوارد ومعالجة سوء التغذية والمسكنات؛ فالتجفاف ونقص التغذية يزيدان اختلاطات أي علاج لاحق ولا يجوز البدء بعلاج كيميائي أو جراحي قبل التوثيق النسيجي والتحديد المرحلي؛ وليس هبوط الهيموغلوبين بدرجة تستوجب نقلاً فورياً.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L2_esophagus_case02_s2",
+          "prompt": "Which investigation is the first-line test to establish the diagnosis?",
+          "options": [
+            "Upper endoscopy with biopsies for histology and/or cytology",
+            "Contrast-enhanced CT of chest and abdomen",
+            "PET-CT",
+            "Barium swallow",
+            "Mediastinoscopy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المنظار هو تحقيق الخط الأول: رؤية مباشرة غير مضاهاة للغشاء المخاطي والآفة مع توثيق موقعها وحجمها وخزعات نسيجية أو خلوية حتمية للتشخيص الدقيق؛ ومحدوديته أنه لا يرى سوى السطح المخاطي. المقطعي والبوزيتروني للتحديد المرحلي لا للتشخيص النسيجي، والباريوم وحده غير كافٍ، والتنظير المنصفي ليس خط أول للمري.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L2_esophagus_case02_s3",
+          "prompt": "Biopsy shows moderately differentiated squamous cell carcinoma of the upper third of the esophagus. Which staging investigation is specifically indicated here, and why?",
+          "options": [
+            "Bronchoscopy - upper-third tumors impinge on or invade the main airways in over 30% of new patients",
+            "Laparoscopy - the primary tool for airway assessment",
+            "Transcutaneous ultrasound - the best view of mediastinal structures",
+            "MRI - adds important benefit over CT here",
+            "EUS - primarily evaluates tracheal cartilage invasion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أورام الثلث الأوسط والعلوي (وعادة الحرشفية) متقدمة عند التشخيص بما يكفي لإصابة الرغامى أو القصبات في كثير من الحالات، لذا تنظير القصبات جزء أساسي من التحديد المرحلي ويكشف الانطباغ أو الغزو في أكثر من 30% من سرطانات الثلث العلوي الجديدة. التنظير البطني للانتشار الصفاقي، والتصوير عبر الجلد ضعيف رؤية المنصف، والرنين لا يضيف على المقطعي، والتنظير فوق الصوتي يفيد للعمق والعقد لا لغزو القصبة تحديداً.",
+          "xp": 15,
+          "hints": [
+            "Tumor site (upper third) decides which adjacent structure is most at risk.",
+            "One modality directly inspects impingement versus invasion of the main airways."
+          ]
+        },
+        {
+          "id": "surg_L2_esophagus_case02_s4",
+          "prompt": "Bronchoscopy shows impingement without invasion. EUS stages the tumor T3 with two regional nodes involved (N1). CT and PET show no haematogenous or distant metastases, and laparoscopy shows no peritoneal spread. He remains fit for surgery. According to the treatment algorithm, which pathway applies?",
+          "options": [
+            "Multimodal therapy - neoadjuvant chemoradiotherapy followed by surgery - because lymph node metastases are present",
+            "Surgery alone, because nodes do not change the pathway",
+            "Palliation only, because any node involvement means incurability",
+            "Endoscopic mucosal resection alone for T3 disease",
+            "Photodynamic therapy as the only curative option"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بحسب خوارزمية المحاضرة: مريض مؤهل للجراحة، لا نقائل دموية، لا غزو مجاور (الانطباغ ليس غزواً)، لا انتشار صفاقي، لكن العقد اللمفية موجبة (T3N1M0)؛ والقاعدة: عقد لمفية إيجابية = علاج متعدد الوسائط (كيميائي إشعاعي مدثر ثم جراحة)، أما الجراحة وحدها فتخصص لحالة N0، والتلطيف عند غياب اللياقة أو وجود انتشار بعيد/صفاقي/غزو مجاور. والاستئصال المخاطي للآفات المبكرة فقط، والعلاج الضوئي لغير المرشحين للجراحة.",
+          "xp": 15
+        },
+        {
+          "id": "surg_L2_esophagus_case02_s5",
+          "prompt": "Two years later he develops new hoarseness and a palpable left supraclavicular node. What does this signify and what is the management goal now?",
+          "options": [
+            "Advanced incurable disease - palliation focused on relieving dysphagia and maintaining quality of life",
+            "Curative redo-esophagectomy with lymphadenectomy",
+            "External beam radiotherapy to the neck with curative intent",
+            "Heller myotomy for the new dysphagia",
+            "EMR of the supraclavicular node"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البحة الجديدة تعني شلل العصب الحنجري الراجع، والعقدة فوق الترقوة تعني انتشاراً لمفاوياً بعيداً؛ وكلاهما علامة مرض متقدم غير قابل للشفاء، فيصبح الهدف تلطيفياً: استعادة بلع كاف بأفضل نوعية حياة مع دعم ورعاية مساندة وربط بخدمات الرعاية التلطيفية، لأن عسر البلع هو العرض الغالب في السرطان المتقدم. لا دور لجراحة شافية جديدة هنا، ورأب هيلر خاص بالأكالاسيا.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "الخلاصة: سرطان مري حرشفي بالثلث العلوي عند مدخن مدمن على الكحول. التسلسل الصحيح: إنعاش وتغذية أولاً، ثم منظار وخزعات (تحقيق الخط الأول)، ثم تحديد مرحلي بالمقطعي والتنظير فوق الصوتي والبوزيتروني مع تنظير القصبات إلزامياً للثلث العلوي، وتنظير البطن عند الاشتباه بالانتشار الصفاقي. وفق الخوارزمية: عقد لمفية إيجابية دون نقائل بعيدة = علاج متعدد الوسائط. ظهور البحة (شلل الحنجري الراجع) أو العقدة فوق الترقوة لاحقاً يعني مرضاً متقدماً غير قابل للشفاء والهدف التلطيف باستعادة البلع؛ وتذكر أن نحو ثلثي المرضى غير قابلين للشفاء عند التشخيص، وأن الرنين لا يضيف شيئاً على المقطعي.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

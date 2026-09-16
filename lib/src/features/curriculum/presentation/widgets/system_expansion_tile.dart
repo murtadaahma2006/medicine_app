@@ -204,6 +204,9 @@ abstract final class SystemNames {
         'musculoskeletal' => 'الجهاز العضلي الهيكلي',
         'hematologic' => 'الجهاز الدوري (الدم)',
         'integumentary' => 'الجهاز الغلافي (الجلد)',
+        // v21: أجهزة الجراحة/النسائية — نفس المستوى التشريحي.
+        'reproductive' => 'الجهاز التناسلي',
+        'urinary' => 'الجهاز البولي التناسلي',
         _ => system,
       };
 
@@ -219,6 +222,9 @@ abstract final class SystemNames {
         'musculoskeletal' => Icons.accessibility_new_rounded,
         'hematologic' => Icons.bloodtype_rounded,
         'integumentary' => Icons.face_retouching_natural_rounded,
+        // v21: أجهزة الجراحة/النسائية.
+        'reproductive' => Icons.child_friendly_rounded,
+        'urinary' => Icons.water_drop_rounded,
         _ => Icons.local_hospital_rounded,
       };
 
@@ -234,6 +240,10 @@ abstract final class SystemNames {
         'musculoskeletal' => 'rheumatology',
         'hematologic' => 'hematology',
         'integumentary' => 'rheumatology',
+        // v21: المواد الجراحية/النسائية — ألوانها من عائلات
+        // الجراحة/النسائية (specialtyPrimary عبر ألوان المجموع).
+        'reproductive' => 'gynecology',
+        'urinary' => 'urology',
         _ => 'cardiology',
       };
 }

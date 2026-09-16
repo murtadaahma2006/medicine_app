@@ -1,0 +1,1015 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L6_infective_endocarditis",
+    "specialty": "internal_medicine",
+    "title": "Infective Endocarditis",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L6 Infective endocarditis.pdf",
+      "page_count": 46
+    },
+    "tags": [
+      "infective endocarditis",
+      "Duke criteria",
+      "vegetations",
+      "blood cultures",
+      "Staphylococcus aureus",
+      "HACEK",
+      "prophylaxis",
+      "Osler nodes",
+      "Roth spots"
+    ],
+    "order_index": 6,
+    "golden_tip": [
+      "EXAM TRAP: Staphylococcus aureus is now THE most common cause of infective endocarditis overall — highly virulent, florid vegetations, rapid valve destruction and abscesses, even on previously NORMAL valves.",
+      "Coagulase-negative staphylococci must NOT be routinely dismissed as culture contaminants: post-operative prosthetic IE (Staph. epidermidis) and rapidly destructive multi-embolic disease (Staph. lugdunensis).",
+      "Strep. gallolyticus (formerly Strep. bovis) endocarditis mandates evaluation for LARGE BOWEL MALIGNANCY — an unforgettable exam association.",
+      "New conduction disturbance / AV block in a patient with endocarditis signals an AORTIC ROOT ABSCESS until proven otherwise.",
+      "Antibiotic prophylaxis = HIGH-RISK HEART (prosthetic valve, previous IE, high-risk CHD) + HIGH-RISK DENTAL procedure (gingival/periapical manipulation or oral mucosa perforation) — and is NOT recommended for respiratory, GI/urogenital or skin procedures.",
+      "Fatality is approximately 20% even with treatment — infective endocarditis is never a benign diagnosis."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L6_c1",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Definition, Pathophysiology and Microbiology",
+      "summary_ar": "تعريف التهاب الشغاف العدوائي وفيزيولوجيته المرضية (مواقع الضرر النفاث، النجيجات ومضاعفاتها) وكل الأحياء المسببة مع منشئها وسماتها.",
+      "sections": [
+        {
+          "heading": "Definition and Pathophysiology",
+          "body_text": "**Infective endocarditis (IE)** is a **microbial infection of the endocardium** involving any of the following:\n- A **heart valve (native or prosthetic)**\n- The **lining of a cardiac chamber**\n- The **lining of a blood vessel**\n- **Congenital heart defects**\n\n**Fatality is approximately 20% even with treatment.**\n\n**Pathophysiology — where does it seed?**\n- **Abnormal heart (sites of pre-existing endocardial damage):** the most vulnerable areas are those damaged by a **high-pressure jet of blood**, such as **VSD, AR, MR**. The risk is **minimal at low-pressure lesions, such as a large ASD** (a favourite exam contrast).\n- **Normal heart:** infection with particularly **virulent or aggressive organisms such as Staphylococcus aureus** can cause endocarditis on a previously normal valve.\n\n**Why it progresses:** the relatively **avascular valve tissue** and the **presence of fibrin and platelet aggregates** protect the proliferating organisms from host defence mechanisms.\n\n**What vegetations do (the three complications):**\n- **Become large — severe obstruction** (uncommon; mostly with **fungal** infective endocarditis).\n- **Damage the valve** — by tissue distortion, cusp perforation or disruption of chordae — producing **severe regurgitation and heart failure**.\n- **Destroy adjacent tissues — abscess formation**.\n\n**Immune phenomena:** **vasculitis and glomerulonephritis** (immune-complex deposition).\n**Embolic phenomena:** **brain (CVA), limb (acute limb ischaemia), kidney (AKI), spleen (acute splenic infarction)**. **Mycotic aneurysms** may develop in arteries at the site of infected emboli (e.g., **cerebral mycotic aneurysm**).",
+          "key_points": [
+            "Infection of endocardium: valves (native/prosthetic), chamber lining, vessel lining, congenital defects",
+            "Fatality ~20% even treated",
+            "High-pressure jet lesions (VSD, AR, MR) vulnerable; large ASD low risk",
+            "S. aureus can attack normal valves",
+            "Vegetations: obstruct (fungal), perforate/distort (regurgitation, HF), abscess",
+            "Immune: vasculitis, glomerulonephritis; Embolic: CVA, limb, AKI, splenic infarct, mycotic aneurysms"
+          ]
+        },
+        {
+          "heading": "Microbiology — Organism by Organism",
+          "body_text": "**Over three-quarters of cases are caused by streptococci or staphylococci.**\n\n**1. Staphylococcus aureus**\n- **The most common cause of IE.**\n- **Highly virulent and invasive**, usually producing **florid vegetations, rapid valve destruction and abscess formation**.\n- **Origin: skin infections, abscesses or vascular access sites (IV or central lines), or from IV drug use.**\n\n**2. Viridans streptococci (e.g., Strep. mitis and Strep. sanguis)**\n- **Oral cavity commensals.**\n- **Origin: chewing or tooth-brushing, or at the time of dental treatment.**\n\n**3. HACEK group (3-4%)** (Haemophilus aphrophilus, Aggregatibacter and related genera)\n- **Oropharyngeal commensals.**\n- **Prolonged culture is required** — the diagnosis may be revealed only after extended incubation.\n\n**4. Coagulase-negative staphylococci (CONS): Staph. epidermidis and Staph. lugdunensis**\n- **Staph. lugdunensis: rapidly destructive and associated with multiple emboli.**\n- Part of the **normal skin flora**; **origin: post-operative endocarditis after cardiac surgery**.\n- Cause **native valve endocarditis in approximately 5% of cases** and **should NOT be routinely dismissed as blood culture contaminants.**\n\n**5. Enterococcus faecalis, E. faecium and Strep. gallolyticus (previously Strep. bovis)**\n- **Origin: bowel or urinary tract.**\n- **Strep. gallolyticus is associated with large bowel malignancy.**\n\n**6. Q fever endocarditis (Coxiella burnetii)**\n- **Origin: farm animals (cattle, sheep, goats — urine, faeces, milk).**\n- **The aortic valve is usually affected**; there may also be **hepatitis, pneumonia and purpura**.\n- **Life-long antibiotic therapy may be required.**\n\n**7. Brucella endocarditis** — origin: **contact with goats or cattle**.\n\n**8. Yeasts and fungi**\n- **Origin: immunocompromised patients or those with in-dwelling intravenous catheters.**\n- **Abscesses and emboli are common; mortality is high; therapy is difficult and surgery is often required.**",
+          "key_points": [
+            ">75% streptococci or staphylococci",
+            "S. aureus: most common, florid vegetations, rapid destruction, abscess; skin/IVDU/lines",
+            "Viridans strep: oral commensals (chewing, brushing, dental work)",
+            "HACEK 3-4%, oropharyngeal, need prolonged culture",
+            "CONS: post-cardiac-surgery; not contaminants; lugdunensis aggressive",
+            "Enterococcus/gallolyticus: bowel/urinary; gallolyticus -> large bowel malignancy",
+            "Q fever: farm animals, aortic valve, lifelong therapy",
+            "Fungi: immunocompromised/catheters; surgery often needed"
+          ],
+          "check": {
+            "prompt": "A 68-year-old man grows Streptococcus gallolyticus from blood cultures during work-up of endocarditis. What additional investigation is mandated by this finding?",
+            "options": [
+              "CT head for cerebral aneurysm",
+              "Colonoscopy to exclude large bowel malignancy",
+              "Echocardiography only",
+              "SerumACE level"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التهاب شغاف بـ Strep. gallolyticus (bovis سابقاً) يقترن بخباثة الأمعاء الغليظة، لذا يلزم تنظير القولون؛ أصل الجرثوم معوي/بولي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Vegetation",
+          "definition_ar": "كتلة من الصفيحات والفبرين والجراثيم مثبتة على الشغاف؛ قد تسد الصمام أو تخربه أو تخرب الأنسجة المجاورة."
+        },
+        {
+          "term": "Mycotic aneurysm",
+          "definition_ar": "توسع شرياني موضعي عند موقع انصمام معدٍ (مثل الشريان الدماغي) في التهاب الشغاف."
+        },
+        {
+          "term": "HACEK",
+          "definition_ar": "مجموعة جراثيم ساكنة للفم بطيئة النمو تحتاج حضناً مطولاً؛ مسؤول عن 3-4% من حالات التهاب الشغاف."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L6_c2",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Clinical Features",
+      "summary_ar": "الأشكال الحاد وتحت الحاد ومتى يجب الشك بالتهاب الشغاف، مع خريطة تواتر الموجودات السريرية كاملة (Fig 16.89) والعلامات المحيطية المصورة.",
+      "sections": [
+        {
+          "heading": "Acute versus Subacute Presentation",
+          "body_text": "IE presents as **acute** or **subacute** syndromes, but there is **considerable overlap** because:\n1. The clinical pattern is influenced by:\n   - The **microorganism**\n   - The **site of infection**\n   - **Prior antibiotic therapy**\n   - The **presence of a valve or shunt prosthesis**\n2. The subacute form may **abruptly develop acute life-threatening complications**, such as **valve disruption or emboli**.\n\n**When to suspect IE:** it should be suspected when a patient **with congenital or valvular heart disease** develops:\n- **Persistent fever, unusual tiredness, night sweats or weight loss (constitutional symptoms)**.\n- **New signs of valve dysfunction or heart failure.**\n- Less often, the patient can present **with complications** (embolic stroke, splenic infarct, immune-complex manifestations, or new conduction block).",
+          "key_points": [
+            "Acute vs subacute with considerable overlap",
+            "Pattern depends on organism, site, prior antibiotics, prosthesis",
+            "Subacute can suddenly declare valve disruption or emboli",
+            "Suspect IE: predisposed heart + constitutional symptoms OR new valve dysfunction/HF OR complications"
+          ]
+        },
+        {
+          "heading": "Systemic Clinical Findings and Their Frequencies (Fig. 16.89)",
+          "body_text": "The lecture's whole-body map of IE findings, with frequencies:\n- **Haematuria (60-70%)** — glomerulonephritis/embolic renal involvement.\n- **'Varying' murmurs — 90% have a new or changed murmur.**\n- **Petechial rash (40-50%, may be transient)** and **petechial haemorrhages on mucous membranes and fundi (20-30%)**.\n- **Cardiac failure (40-50%).**\n- **Splenomegaly (30-40% — long-standing endocarditis only)**; likewise **digital clubbing (10%, long-standing only)**.\n- **Cerebral emboli (15%).**\n- **Conduction disorder (10-20%).**\n- **Splinter haemorrhages (10%)**; **systemic emboli (7%) with nail-fold infarcts**; **Osler's nodes (5%)**.\n- **Subconjunctival haemorrhages (2-5%)**; **Roth's spots in fundi (rare, <5%)**.\n- **Poor dentition** (an important clue to the portal of entry) and **loss of pulses** (embolic occlusion).\n\n**The four photographed peripheral stigmata:** **Roth spots** (retinal haemorrhages with pale centres), **Osler nodes** (tender nodules on finger pads — immune/vasculitic), **Janeway lesions** (non-tender erythematous macules on palms — embolic), and **splinter haemorrhages** (linear subungual streaks).",
+          "key_points": [
+            "New/changed murmur in 90%",
+            "Haematuria 60-70%; petechial rash 40-50%; HF 40-50%",
+            "Splenomegaly 30-40% and clubbing 10% — long-standing disease only",
+            "Cerebral emboli 15%; conduction disorder 10-20%",
+            "Osler 5% (painful), Janeway (painless), splinters 10%, Roth spots <5%",
+            "Poor dentition points to the portal of entry"
+          ],
+          "check": {
+            "prompt": "Which combination of findings is characteristic of LONG-STANDING (subacute) endocarditis specifically?",
+            "options": [
+              "Splinter haemorrhages and petechiae",
+              "Splenomegaly and digital clubbing",
+              "Cerebral emboli and haematuria",
+              "New murmur and fever"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ضخامة الطحال (30-40%) وتعجر الأصابع (10%) سمتا الشكل المزمن/طويل الأمد تحديداً، بينما اللغط الجديد والنزف والانصمامات تظهر في أي شكل."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Osler's nodes",
+          "definition_ar": "عقيدات مؤلمة على وسادات الأصابع؛ ظاهرة التهاب وعائي مناعي في التهاب الشغاف."
+        },
+        {
+          "term": "Roth's spots",
+          "definition_ar": "بقع شبكية نزفية بمركز شاحب؛ نادرة (<5%) في التهاب الشغاف."
+        },
+        {
+          "term": "Janeway lesions",
+          "definition_ar": "بقع حمراء غير مؤلمة على الراحتين/الأخمصين؛ انصمامات إنتانية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L6_c3",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Diagnosis: Investigations and the Modified Duke Criteria",
+      "summary_ar": "التحاليل المخبرية والشعاعية، معايير ديوك المعدلة الكبرى والصغرى وقواعد التصنيف (مؤكد/ممكن/مرفوض) وتحديثات معايير التصوير.",
+      "sections": [
+        {
+          "heading": "Laboratory and Imaging Investigations",
+          "body_text": "**The ECG** may show the development of **AV block (due to aortic root abscess formation)** and occasionally **infarction due to emboli**.\n\n**The chest X-ray** may show evidence of **cardiac failure and cardiomegaly**.\n\n**Blood tests:** positive **rheumatoid factor** (immune phenomenon), elevation of the **ESR and CRP**, a **normocytic normochromic anaemia**, and **leucocytosis** are common but **not invariable**.\n\n**General urine examination: proteinuria and non-visible (microscopic) haematuria** — reflecting glomerulonephritis.\n\n**Blood cultures** remain the diagnostic mainstay. **Typical organisms** that satisfy the major criterion (grown from two separate cultures) are: **Staphylococcus aureus, viridans streptococci, Streptococcus gallolyticus, Enterococci (in the absence of a primary focus), and the HACEK group.**\n\n**Echocardiography** (transthoracic, then transoesophageal if needed) demonstrates vegetations, abscesses, fistulae, perforation, prosthetic dehiscence and new regurgitation.",
+          "key_points": [
+            "New AV block = aortic root abscess",
+            "CXR: cardiomegaly, failure",
+            "RF positive, ESR/CRP up, normocytic normochromic anaemia, leucocytosis",
+            "Urine: proteinuria + non-visible haematuria (glomerulonephritis)",
+            "Typical organisms: S. aureus, viridans strep, S. gallolyticus, enterococci (no primary focus), HACEK"
+          ]
+        },
+        {
+          "heading": "The Modified Duke Criteria (Box 16.95)",
+          "body_text": "**MAJOR criteria:**\n1. **Positive blood culture:**\n   - **Typical organism from two cultures**, or\n   - **Persistent positive blood cultures taken > 12 hours apart**, or\n   - **Three or more positive cultures taken over > 1 hour.**\n2. **Endocardial involvement:**\n   - **Positive echocardiographic findings of vegetations**, or\n   - **New valvular regurgitation.**\n\n**MINOR criteria:**\n- **Predisposing valvular or cardiac abnormality**\n- **Intravenous drug misuse**\n- **Pyrexia >= 38 C**\n- **Embolic phenomenon**\n- **Vasculitic phenomenon**\n- **Blood cultures suggestive**: organism grown but not achieving major criteria\n- **Suggestive echocardiographic findings**\n\n**Diagnostic categories:**\n- **DEFINITE endocarditis:** **2 major**, OR **1 major + 3 minor**, OR **5 minor**.\n- **POSSIBLE endocarditis:** **1 major + 1 minor**, OR **3 minor**.\n- **REJECTED IE:** firm alternative diagnosis; OR resolution of symptoms suggesting IE with antibiotic therapy for **<= 4 days**; OR no pathological evidence of IE at surgery or autopsy with antibiotic therapy for <= 4 days; OR does not meet criteria for possible IE.",
+          "key_points": [
+            "Major 1: typical organism x2 cultures / persistent >12h apart / >=3 over >1h",
+            "Major 2: echo vegetations or new regurgitation",
+            "Minor: predisposition, IVDU, fever >=38, embolic, vasculitic, suggestive cultures/echo",
+            "Definite: 2 major, or 1 major + 3 minor, or 5 minor",
+            "Possible: 1 major + 1 minor, or 3 minor",
+            "Rejected: alternate diagnosis, resolution on <=4 days of antibiotics, no pathology"
+          ],
+          "check": {
+            "prompt": "A patient has 1 major criterion (two blood cultures growing viridans streptococci) and 3 minor criteria (fever 38.5 C, vasculitic phenomena, predisposing valve disease). How is this classified?",
+            "options": [
+              "Possible endocarditis",
+              "Definite endocarditis",
+              "Rejected endocarditis",
+              "Insufficient information to classify"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "معيار كبير + ثلاثة صغار = التهاب شغاف مؤكد (Definite) وفق ديوك المعدلة؛ (1 كبير + 1 صغير أو 3 صغار فقط = ممكن)."
+          }
+        },
+        {
+          "heading": "Updates in the Major Criteria (2023 ESC Imaging)",
+          "body_text": "**'Imaging positive for IE' — updated major criteria:**\n\n**a. Echocardiogram positive for IE:**\n- **Vegetation**\n- **Abscess, pseudoaneurysm, intracardiac fistula**\n- **Valvular perforation or aneurysm**\n- **New partial dehiscence of a prosthetic valve**\n\n**b. Abnormal activity around the site of prosthetic valve implantation detected by 18F-FDG PET/CT** (only if the prosthesis was implanted **> 3 months** earlier) **or radiolabelled leukocyte SPECT/CT.**\n\n**c. Definite paravalvular lesions by cardiac CT.**\n\nThese imaging criteria extend the classic echo findings to modern multimodal imaging — particularly valuable for **prosthetic valve endocarditis**, where transthoracic echo is limited and PET/CT can reveal periprosthetic inflammation once the early post-operative period (>3 months) has passed.",
+          "key_points": [
+            "Echo positive: vegetation, abscess, pseudoaneurysm, fistula, perforation/aneurysm, prosthetic dehiscence",
+            "18F-FDG PET/CT for prosthetic valves implanted >3 months",
+            "Radiolabelled leukocyte SPECT/CT alternative",
+            "Cardiac CT: definite paravalvular lesions"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Modified Duke criteria",
+          "definition_ar": "معايير تشخيص التهاب الشغاف: كبريات (زروعات دم إيجابية نمطية، مشاركة شغافية) وصغيرات وقواعد تصنيف."
+        },
+        {
+          "term": "18F-FDG PET/CT",
+          "definition_ar": "تصوير PET/CT بالفلوردوكسي غلوكوز المشع؛ يكشف الالتهاب حول الصمام الصناعي المزروع قبل أكثر من 3 أشهر."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 2
+    },
+    {
+      "id": "L6_c4",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Treatment: Empirical and Organism-Directed Therapy",
+      "summary_ar": "مبدأ العلاج التجريبي حسب الشكل الحاد/تحت الحاد والصمام، ثم العلاج النوعي وفق الزرع والحساسية، مع ملامح جدول الجرعات (Box 16.96).",
+      "sections": [
+        {
+          "heading": "Empirical Therapy",
+          "body_text": "**Subacute presentation:**\n- **Antibiotic treatment should ideally be WITHHELD until the results of blood cultures are available** (a hasty empirical regimen can suppress growth of fastidious organisms and forever obscure the diagnosis — culture-negative endocarditis).\n\n**Acute presentation:**\n- **Initially, empirical therapy should be started after blood samples for culture are drawn**, with:\n  - **Native valve endocarditis: vancomycin IV + gentamicin IV.**\n  - **Prosthetic valve endocarditis: vancomycin IV + gentamicin IV + rifampicin orally.**\n\n**Then, specific treatment:** the **results of blood culture and sensitivity (MIC = minimum inhibitory concentration of drugs) help to guide antibiotic therapy.**",
+          "key_points": [
+            "Subacute: withhold antibiotics until culture results if patient stable",
+            "Acute native valve: vancomycin + gentamicin",
+            "Acute prosthetic valve: vancomycin + gentamicin + rifampicin",
+            "MIC guides the definitive choice"
+          ],
+          "check": {
+            "prompt": "A stable patient with 3 weeks of low-grade fever and a known mitral valve prolapse has had 3 sets of blood cultures drawn. What is the appropriate antibiotic strategy?",
+            "options": [
+              "Start vancomycin + gentamicin immediately",
+              "Withhold antibiotics until blood culture results are available (subacute presentation)",
+              "Start oral amoxicillin empirically",
+              "No antibiotics — endocarditis is excluded if the first culture is negative"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "في الشكل تحت الحاد المستقر: يُؤخر بدء الصادات مثالياً حتى نتائج الزروعات لتجنب كبت نمو الجراثيم المُتطلبة وإنتاج شغاف سلبي الزروع؛ العلاج التجريبي الفوري يخص الشكل الحاد."
+          }
+        },
+        {
+          "heading": "Organism-Directed Regimens (Box 16.96 Principles)",
+          "body_text": "**Streptococci (by penicillin susceptibility):**\n- **Penicillin MIC < 0.125 mg/L: benzylpenicillin IV 1.2 g six times daily** (use 6-times-daily dosing if weight > 85 kg) — **4 weeks** for native valves (only **2 weeks of benzylpenicillin plus gentamicin 1 mg/kg twice daily** when Box 16.97 conditions are met: uncomplicated native-valve case with a fully susceptible organism and rapid response) and **6 weeks for prosthetic valves**.\n- **Penicillin MIC > 0.125 to < 0.5 mg/L: benzylpenicillin IV 2.4 g six times daily PLUS gentamicin** (duration extended accordingly).\n- **Ceftriaxone 2 g once daily IV/IM** can replace benzylpenicillin for **non-severe penicillin allergy**.\n\n**Staphylococci — native valve:**\n- **Meticillin-sensitive: flucloxacillin IV 2 g 4-6 times daily.**\n- **Meticillin-resistant with vancomycin MIC < 2 mg/L and rifampicin-sensitive: vancomycin IV 1 g twice daily (plus rifampicin orally 300-600 mg twice daily).**\n\n**Staphylococci — prosthetic valve (all 6-week courses):**\n- **Meticillin-sensitive: flucloxacillin + gentamicin IV 1 mg/kg twice daily + rifampicin orally 300-600 mg twice daily.**\n- **Meticillin-resistant: vancomycin IV 1 g twice daily + rifampicin orally 300-600 mg twice daily.**\n\n**Monitoring (examination favourites):**\n- **Pre-dose ('trough') gentamicin level should be < 1 mg/L; post-dose 3-5 mg/L** — adjust to levels and renal function.\n- **Pre-dose vancomycin level should be 15-20 mg/L** — adjust to levels and renal function.",
+          "key_points": [
+            "Penicillin-susceptible strep: benzylpenicillin 1.2 g x6/day; 4 weeks native (2 weeks if uncomplicated), 6 weeks prosthetic",
+            "Less-susceptible strep (MIC 0.125-0.5): benzylpenicillin 2.4 g x6/day + gentamicin",
+            "Ceftriaxone 2 g OD for non-severe penicillin allergy",
+            "Native-valve MSSA: flucloxacillin 2 g 4-6x/day",
+            "Prosthetic-valve staph: add gentamicin + rifampicin, 6 weeks",
+            "Gentamicin trough <1 mg/L (post-dose 3-5); vancomycin trough 15-20 mg/L"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "MIC",
+          "definition_ar": "التركيز المثبط الأدنى للصاد؛ يوجه اختيار الدواء ومدته في التهاب الشغاف."
+        },
+        {
+          "term": "Rifampicin in prosthetic IE",
+          "definition_ar": "يُضاف للفانكومايسين/الفلوكلوكساسيلين في شغاف الصمام الصناعي لقدرته على اختراق الغلاف الحيوي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "L6_c5",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Prophylaxis and Prevention",
+      "summary_ar": "منطق الوقاية (قلب عالي الخطورة + إجراء عالي الخطورة)، القلوب والإجراءات المستهدفة، ما لا يوصى به، جدول الجرعة الوقائية، والإجراءات غير النوعية.",
+      "sections": [
+        {
+          "heading": "Who Gets Prophylaxis — and for Which Procedures",
+          "body_text": "**The conceptual rule (lecture diagram):** antibiotic prophylaxis is considered only when **a HIGH-RISK CARDIAC CONDITION** is combined with **a HIGH-RISK PROCEDURE** for infective endocarditis (both boxes must be ticked).\n\n**High-risk cardiac conditions — antibiotic prophylaxis should only be considered for:**\n1. **Prosthetic valve.**\n2. **Previous episode of IE.**\n3. **CHD (congenital heart disease):**\n   a. **Cyanotic CHD.**\n   b. **CHD repaired with a prosthetic material** — prophylaxis **up to 6 months if complete repair / lifelong if residual shunt remains**.\n\n**High-risk procedures — dental procedures requiring:**\n- **Manipulation of the gingival or periapical region of the teeth, or**\n- **Perforation of the oral mucosa.**\n\n**Antibiotic prophylaxis is NOT recommended for:**\n- **Other dental procedures** (local anaesthetic injections in non-infected tissues, treatment of superficial caries, removal of sutures, dental X-rays, placement/adjustment of removable prosthodontic or orthodontic appliances or braces, shedding of deciduous teeth, trauma to lips and oral mucosa).\n- **Respiratory tract procedures.**\n- **Gastrointestinal or urogenital procedures.**\n- **Skin and soft tissue procedures.**",
+          "key_points": [
+            "Prophylaxis = high-risk heart + high-risk (dental) procedure",
+            "High-risk hearts: prosthetic valve, previous IE, cyanotic CHD, CHD repaired with prosthetic material",
+            "6 months after complete repair; lifelong if residual shunt",
+            "Only gingival/periapical manipulation or oral mucosa perforation count",
+            "NOT for respiratory, GI/urogenital, skin procedures or routine dental work"
+          ],
+          "check": {
+            "prompt": "A patient with a mechanical mitral valve replacement is scheduled for colonoscopy with polypectomy. Does he need infective endocarditis prophylaxis?",
+            "options": [
+              "Yes — prosthetic valve is an absolute indication for any procedure",
+              "No — gastrointestinal procedures are not indications for IE prophylaxis, regardless of the valve",
+              "Yes — but only with clindamycin",
+              "No — prophylaxis is never given to prosthetic valve patients"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الوقاية تقتصر على الإجراءات السنية عالية الخطورة (معالجة لثوية/ذرية أو ثقب المخاطية الفموية) عند أصحاب القلوب عالية الخطورة؛ إجراءات الجهاز الهضمي/البولي التناسلي والتنفسي والجلد ليست استطباباً."
+          }
+        },
+        {
+          "heading": "Prophylaxis Regimen and Non-Specific Measures",
+          "body_text": "**Recommended prophylaxis for high-risk dental procedures in high-risk patients — a SINGLE dose 30-60 minutes before the procedure:**\n\n| Situation | Antibiotic | Adults | Children |\n|---|---|---|---|\n| No allergy to penicillin/ampicillin | Amoxicillin or ampicillin | 2 g orally or IV | 50 mg/kg orally or IV |\n| Allergy to penicillin/ampicillin | Clindamycin | 600 mg orally or IV | 20 mg/kg orally or IV |\n\n*Alternatives: cephalexin 2 g IV (adults) or 50 mg/kg IV (children); cefazolin or ceftriaxone 1 g IV (adults) or 50 mg/kg IV (children). **Cephalosporins should NOT be used in patients with anaphylaxis, angio-oedema or urticaria after penicillin/ampicillin** (cross-sensitivity).*\n\n**Non-specific preventive measures** — applied to the general population and particularly reinforced in high-risk patients:\n- Good oral/dental hygiene and regular dental review.\n- **Disinfection of wounds.**\n- **Curative antibiotics for any focus of bacterial infection.**\n- **No self-medication with antibiotics.**\n- **Strict infection control measures for any at-risk procedure.**\n- **Discourage piercing and tattooing.**",
+          "key_points": [
+            "Amoxicillin/ampicillin 2 g (50 mg/kg) single dose 30-60 min before",
+            "Penicillin allergy: clindamycin 600 mg (20 mg/kg)",
+            "Cephalosporin alternatives contraindicated in anaphylactic-type penicillin allergy",
+            "Prevention: wound disinfection, treat infection foci, no self-medication, discourage piercing/tattooing"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "IE prophylaxis",
+          "definition_ar": "جرعة صاد مفردة قبل الإجراء السني عالي الخطورة للمرضى أصحاب القلوب عالية الخطورة فقط."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L6_c6",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Non-Infective Endocarditis and Lecture Test Scenarios",
+      "summary_ar": "التهابات الشغاف غير العدوائية (ليبرمان-ساكس للذأباء، المارنتي للخباثات) وسيناريو الاختبار السريري الختامي للمحاضرة.",
+      "sections": [
+        {
+          "heading": "Non-Infective Endocarditis",
+          "body_text": "Two classic non-infective (sterile) vegetations close the lecture's differential:\n\n- **Libman-Sacks endocarditis** — sterile vegetations characterising **systemic lupus erythematosus** (SLE) — antiphospholipid-associated valvulitis with verrucous vegetations.\n- **Marantic (thrombotic non-bacterial) endocarditis** — sterile thrombotic vegetations classically associated with **advanced malignancy (metastatic carcinomas), chronic infections such as TB, and DIC** — i.e., a state of hypercoagulability (the lecture's MCQ answer: all of the above).\n\nRecognising these matters because they present with embolic phenomena and murmurs that mimic IE, but blood cultures are sterile and treatment targets the underlying disease rather than antibiotics.",
+          "key_points": [
+            "Libman-Sacks = SLE (sterile verrucous vegetations)",
+            "Marantic = metastatic carcinomas, chronic infection like TB, DIC (hypercoagulability)",
+            "Cultures sterile; treat the underlying disease"
+          ]
+        },
+        {
+          "heading": "Lecture's Integrated Clinical Scenario",
+          "body_text": "**The lecture's own test case (transcribed):** A **40-year-old hypertensive woman** presents with a **4-week history of fever, night sweating and hand pain**.\n\n**Clinical examination:**\n- **Pallor**\n- **Temperature 39 C, BP = 150/90, HR = 100 regular**\n- **Precordial examination: grade 2 systolic murmur at the apex with a soft S1**\n- **Abdominal examination: mild splenomegaly**\n- **Hands: arthritis of the interphalangeal and metacarpophalangeal joints**\n- **Echocardiography: thickened, prolapsed mitral valve leaflets with vegetations and moderate mitral regurgitation.**\n\nThis vignette bundles the teaching: constitutional symptoms (fever, night sweats), anaemia (pallor), a new murmur with soft S1 (valvulitis/MR), splenomegaly (subacute duration), immune phenomena (arthritis), and definitive endocardial involvement on echo — definite IE by Duke criteria (1 major + several minor), with the underlying mitral valve prolapse as the predisposing lesion.",
+          "key_points": [
+            "Constitutional symptoms + new murmur + splenomegaly + immune arthritis + echo vegetations",
+            "Mitral valve prolapse as the predisposing lesion",
+            "Duke: endocardial involvement (major) + fever + predisposition + vasculitic phenomena = definite IE"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Libman-Sacks endocarditis",
+          "definition_ar": "التهاب شغاف عقيم مسنن في الذأباء الحمامية الجهازية."
+        },
+        {
+          "term": "Marantic endocarditis",
+          "definition_ar": "التهاب شغاف خثري غير جرثومي في حالات فرط الخثار (خباثات، سل، DIC)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L6_f1",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Define infective endocarditis and state its mortality.",
+      "back_text": "A microbial infection of the endocardium involving a heart valve (native or prosthetic), the lining of a cardiac chamber or blood vessel, or congenital heart defects. Fatality is approximately 20% even with treatment.",
+      "explanation_ar": "خمج الشغاف: يصيب الصمامات (طبيعية أو صناعية) أو بطانة حجرات/أوعية أو العيوب الخلقية؛ الوفاة ~20% رغم العلاج.",
+      "is_vivid": true,
+      "tags": [
+        "definition"
+      ]
+    },
+    {
+      "id": "L6_f2",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Which cardiac lesions predispose to IE, and which congenital lesion carries minimal risk?",
+      "back_text": "Sites of pre-existing endocardial damage from a high-pressure jet of blood: VSD, AR, MR. Minimal risk at low-pressure lesions such as a LARGE ASD. Virulent organisms (S. aureus) can infect normal valves.",
+      "explanation_ar": "آفات النفاث عالي الضغط (VSD، AR، MR) هي الأعرض للعدوى؛ القيلة الأذينية الكبيرة منخفضة الخطورة لانخفاض الضغط؛ والعنقوديات الذهبية تغزو الصمامات السليمة.",
+      "is_vivid": true,
+      "tags": [
+        "pathophysiology",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L6_f3",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "What three things can vegetations do, and which organism typically causes the obstructive form?",
+      "back_text": "1) Become large, causing severe obstruction (uncommon — mostly fungal IE); 2) Damage the valve (tissue distortion, cusp perforation, chordae disruption) -> severe regurgitation -> heart failure; 3) Destroy adjacent tissues -> abscess formation.",
+      "explanation_ar": "النجيجات تسد (فطرية عادة)، أو تخرب الصمام فتحدث ارتجاعاً وقصوراً، أو تخرب الأنسجة المجاورة فتُكوّن خراجات.",
+      "tags": [
+        "pathophysiology"
+      ]
+    },
+    {
+      "id": "L6_f4",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "List the immune and embolic phenomena of IE.",
+      "back_text": "Immune: vasculitis, glomerulonephritis. Embolic: brain (CVA), limb (acute limb ischaemia), kidney (AKI), spleen (acute splenic infarction); mycotic aneurysms at sites of infected emboli (e.g., cerebral mycotic aneurysm).",
+      "explanation_ar": "المناعية: التهاب وعائي والتهاب كبيبات؛ الانصمامية: سكتة، نقص تروية طرف، قصور كلوي، احشاء طحال، وأم الدم الفطرية.",
+      "tags": [
+        "complications"
+      ]
+    },
+    {
+      "id": "L6_f5",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Which organism is the most common cause of IE, and what are its hallmarks and origins?",
+      "back_text": "Staphylococcus aureus — highly virulent and invasive, producing florid vegetations, rapid valve destruction and abscess formation. Origin: skin infections, abscesses, vascular access sites (IV/central lines), or IV drug use.",
+      "explanation_ar": "العنقوديات الذهبية الأشيع: عنفوانية، نجيجات وارحة، تخريب سريع وخراجات؛ منشؤها الجلد والخطوط الوريدية وتعاطي الوريد.",
+      "tags": [
+        "microbiology",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L6_f6",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "What is the origin of viridans streptococcal IE, and which streptococcus is linked to bowel malignancy?",
+      "back_text": "Viridans streptococci (Strep. mitis, Strep. sanguis) are oral cavity commensals entering via chewing, tooth-brushing or dental treatment. Strep. gallolyticus (formerly bovis) originates from bowel/urinary tract and is associated with large bowel malignancy.",
+      "explanation_ar": "العقديات الخضراء من الفم (مضغ/تنظيف أسنان/علاج سني)؛ وgallolyticus من الأمعاء ويرافق خباثة القولون.",
+      "is_vivid": true,
+      "tags": [
+        "microbiology",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L6_f7",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "What should coagulase-negative staphylococci in blood cultures NOT be assumed to be, and what disease associations do they carry?",
+      "back_text": "They should NOT be routinely dismissed as blood culture contaminants. Staph. epidermidis: post-operative endocarditis after cardiac surgery. Staph. lugdunensis: rapidly destructive disease with multiple emboli. They also cause ~5% of native valve IE.",
+      "explanation_ar": "لا تُعدّ العنقوديات السلبية التخثر لوثاً دوماً؛ الإبيديرميديس بعد جراحة القلب، واللوغدوننسيس خرب سريع متعدد الانصمامات.",
+      "tags": [
+        "microbiology",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L6_f8",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Summarise Q fever endocarditis (Coxiella burnetii).",
+      "back_text": "Origin: farm animals (cattle, sheep, goats — urine, faeces, milk). The aortic valve is usually affected; hepatitis, pneumonia and purpura may accompany it. Life-long antibiotic therapy may be required.",
+      "explanation_ar": "حمى Q: من مزارع الأبقار والأغنام والماعز؛ يصيب الأبهر غالباً مع التهاب كبد وذات رئة وpurpura؛ وقد يلزم علاج مدى الحياة.",
+      "tags": [
+        "microbiology"
+      ]
+    },
+    {
+      "id": "L6_f9",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c2",
+      "card_type": "basic",
+      "front_text": "When should IE be suspected clinically?",
+      "back_text": "When a patient with congenital or valvular heart disease develops persistent fever, unusual tiredness, night sweats or weight loss (constitutional symptoms); new signs of valve dysfunction or heart failure; or less often presents directly with complications (emboli, glomerulonephritis, conduction block).",
+      "explanation_ar": "نشك بالشغاف عند مريض قلب خلقية/صمامية: حمى مستمرة، تعب، عرق ليلي، نقص وزن، علامات خلل صمام جديد أو قصور، أو بمضاعفة انصمامية.",
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L6_f10",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c2",
+      "card_type": "basic",
+      "front_text": "Give the frequencies of key IE findings: new murmur, haematuria, petechial rash, cardiac failure, splenomegaly.",
+      "back_text": "New or changed ('varying') murmur 90%; haematuria 60-70%; petechial rash 40-50% (may be transient); cardiac failure 40-50%; splenomegaly 30-40% (long-standing endocarditis only). Also: cerebral emboli 15%, conduction disorder 10-20%, splinter haemorrhages 10%, clubbing 10% (long-standing), Osler's nodes 5%, subconjunctival haemorrhages 2-5%, Roth's spots <5%.",
+      "explanation_ar": "لغط جديد 90%؛ بيلة دموية 60-70%؛ طفح充满 petechiae 40-50%؛ قصور قلب 40-50%؛ ضخامة طحال 30-40% (مزمن فقط)؛ وانصمامات دماغية 15%.",
+      "tags": [
+        "clinical",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L6_f11",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "What laboratory constellation supports IE?",
+      "back_text": "Positive rheumatoid factor (immune phenomenon), raised ESR and CRP, normocytic normochromic anaemia, leucocytosis (common but not invariable); urinalysis shows proteinuria and non-visible haematuria (glomerulonephritis).",
+      "explanation_ar": "عامل روماتويد إيجابي، ESR/CRP مرتفعة، فقر دم عديم الصباغ متناظر الخلايا، كثرة بيض؛ وبول: بيلة بروتينية وخلايا دم حمراء غير مرئية (كبيبات).",
+      "tags": [
+        "investigations"
+      ]
+    },
+    {
+      "id": "L6_f12",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "What does new AV block in an IE patient indicate?",
+      "back_text": "Aortic root abscess formation (the ECG may also occasionally show infarction due to emboli).",
+      "explanation_ar": "حصار AV جديد = خراج جذر الأبهر حتى يثبت العكس؛ وقد يظهر احتشاء انصمامي بالتخطيط.",
+      "is_vivid": true,
+      "tags": [
+        "ECG",
+        "exam trap"
+      ]
+    },
+    {
+      "id": "L6_f13",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "List the MAJOR and MINOR modified Duke criteria.",
+      "back_text": "Major: (1) positive blood culture — typical organism from two cultures, OR persistent positivity >12 h apart, OR three or more positive cultures over >1 h; (2) endocardial involvement — echo vegetations OR new valvular regurgitation. Minor: predisposing valvular/cardiac abnormality; IV drug misuse; pyrexia >=38 C; embolic phenomenon; vasculitic phenomenon; suggestive cultures not meeting major; suggestive echo.",
+      "explanation_ar": "كبير 1: زروعات نمطية إيجابية (طريقتان)؛ كبير 2: مشاركة شغافية (نجيجات بالصدى أو ارتجاع جديد). الصغيرات: استعداد، تعاطي وريدي، حرارة ≥38، ظاهرة انصمامية، وعائية، زروع/صدى موحية.",
+      "mnemonic_ar": "قاعدة التشخيص: مؤكد = 2 كبار أو 1 كبير+3 صغار أو 5 صغار؛ ممكن = 1 كبير+1 صغير أو 3 صغار.",
+      "tags": [
+        "Duke criteria",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L6_f14",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "What are the updated (2023 ESC) imaging major criteria?",
+      "back_text": "Echo positive: vegetation, abscess, pseudoaneurysm, intracardiac fistula, valvular perforation or aneurysm, new partial dehiscence of prosthetic valve. Plus: abnormal activity around a prosthesis on 18F-FDG PET/CT (only if implanted >3 months) or radiolabelled leukocyte SPECT/CT; and definite paravalvular lesions on cardiac CT.",
+      "explanation_ar": "الصدى الإيجابي (نجيجات، خراج، أم دم كاذبة، ناسور، ثقب/أم دم صمامية، انفلات صناعي جديد) + PET/CT حول الصناعي المزروع >3 أشهر أو SPECT/CT للكريات الموسومة، وآفات نظافة صمامية بالطبقي القلبي.",
+      "tags": [
+        "Duke 2023"
+      ]
+    },
+    {
+      "id": "L6_f15",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "What is the empirical antibiotic strategy for acute IE, native vs prosthetic valve?",
+      "back_text": "Draw blood cultures first, then start: native valve endocarditis — vancomycin IV + gentamicin IV; prosthetic valve endocarditis — vancomycin IV + gentamicin IV + rifampicin orally. Subacute: ideally withhold antibiotics until culture results.",
+      "explanation_ar": "بعد سحب الزروعات: الصمام الطبيعي فانكومايسين+جنتاميسين؛ الصناعي يضاف ريفامبين؛ وتحت الحاد ينتظر النتائج.",
+      "tags": [
+        "treatment"
+      ]
+    },
+    {
+      "id": "L6_f16",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "What are the target aminoglycoside and glycopeptide levels in IE therapy?",
+      "back_text": "Gentamicin: pre-dose (trough) < 1 mg/L, post-dose 3-5 mg/L. Vancomycin: pre-dose level 15-20 mg/L. Adjust both according to levels and renal function.",
+      "explanation_ar": "الجنتاميسين: قبل الجرعة <1 و بعد 3-5 ملغ/ل؛ الفانكومايسين: قبل الجرعة 15-20 ملغ/ل؛ مع التعديل حسب الوظيفة الكلوية.",
+      "tags": [
+        "treatment",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "L6_f17",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c5",
+      "card_type": "basic",
+      "front_text": "Which patients qualify for IE prophylaxis, and for which procedures?",
+      "back_text": "High-risk cardiac conditions: prosthetic valve, previous IE, cyanotic CHD, or CHD repaired with prosthetic material (6 months if complete repair, lifelong if residual shunt). Prophylaxis is ONLY for dental procedures involving gingival/periapical manipulation or perforation of the oral mucosa.",
+      "explanation_ar": "القلوب عالية الخطورة (صناعي، سابقة شغاف، خلقي ازرقاجي، مُصلّح بمادة صناعية) + إجراء سني لثوي/ذروي أو ثقب مخاطية فموية فقط.",
+      "is_vivid": true,
+      "tags": [
+        "prophylaxis",
+        "high yield"
+      ]
+    },
+    {
+      "id": "L6_f18",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c5",
+      "card_type": "basic",
+      "front_text": "What is the prophylaxis regimen for high-risk dental procedures?",
+      "back_text": "Single dose 30-60 minutes before: no penicillin allergy — amoxicillin or ampicillin 2 g (adults) / 50 mg/kg (children) orally or IV. Penicillin allergy — clindamycin 600 mg / 20 mg/kg. Alternatives: cephalexin, cefazolin or ceftriaxone (NOT if anaphylaxis, angio-oedema or urticaria to penicillin).",
+      "explanation_ar": "جرعة مفردة قبل 30-60 دقيقة: أموكسيسيلين 2غ (50 ملغ/كغ)، وعند التحسس كليندامايسين 600 ملغ (20 ملغ/كغ)؛ السيفالوسبورينات لا تُستخدم بعد تفاعل تأقي/وذمة/شرى.",
+      "tags": [
+        "prophylaxis"
+      ]
+    },
+    {
+      "id": "L6_f19",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c5",
+      "card_type": "basic",
+      "front_text": "Name the non-specific preventive measures for IE.",
+      "back_text": "Good dental hygiene; disinfection of wounds; curative antibiotics for any focus of bacterial infection; no self-medication with antibiotics; strict infection control for at-risk procedures; discourage piercing and tattooing.",
+      "explanation_ar": "نظافة فموية، تطهير الجروح، علاج بؤر الخمج، لا تداول ذاتي بالصادات، ضبط إجراءات مكافحة العدوى، وعدم تشجيع الثقب والوشم.",
+      "tags": [
+        "prevention"
+      ]
+    },
+    {
+      "id": "L6_f20",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "What are Libman-Sacks and marantic endocarditis?",
+      "back_text": "Libman-Sacks endocarditis: sterile verrucous vegetations of SLE. Marantic (thrombotic, non-bacterial) endocarditis: sterile thrombotic vegetations of hypercoagulable states — metastatic carcinomas, chronic infection like TB, DIC.",
+      "explanation_ar": "ليبرمان-ساكس: عقيم يخص الذأباء؛ والمارنتي: خثري عقيم في فرط الخثار (خباثات منتشرة، سل، DIC).",
+      "tags": [
+        "non-infective IE"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L6_q1",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "question_stem": "A 34-year-old IV drug user is admitted with 5 days of high fever and rigors. He has no prior valve disease. Blood cultures on day 1 grow Staphylococcus aureus, and echo shows large vegetations on the tricuspid valve with severe regurgitation and a paravalvular abscess. What explains infection of a previously normal valve?",
+      "options": [
+        "Low-pressure chamber lesions predispose to IE",
+        "Particularly virulent organisms such as S. aureus can cause endocarditis in a previously normal heart",
+        "All IE requires pre-existing valvular damage",
+        "Fungal infection is required for normal-valve IE"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "العنقوديات الذهبية كائن عنيف قادر على إصابة صمام سليم تماماً بنجيجات وارحة وتخريب سريع وخراجات — بعكس العقديات الخضراء التي تحتاج استعداداً صمامياً. الآفات منخفضة الضغط (كالASD الكبير) نادرة العدوى أصلاً.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q2",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "question_stem": "A 72-year-old man has subacute endocarditis; multiple blood cultures grow coagulase-negative staphylococci 4 months after mitral valve replacement. What is the correct interpretation?",
+      "options": [
+        "Contaminants — repeat cultures and discharge",
+        "Post-operative prosthetic valve endocarditis (e.g., Staph. epidermidis); CONS should not be routinely dismissed as contaminants",
+        "Definite fungal endocarditis",
+        "Marantic endocarditis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "السالبة التخثر سلافة شغاف الصمام الصناعي بعد الجراحة، ولا يجوز اعتبارها لوثاً دوماً (5% من شغاف الصمام الطبيعي أيضاً؛ واللوغدوننسيس خرب سريع).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q3",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c2",
+      "question_stem": "Which finding on examination would specifically point towards LONG-STANDING subacute endocarditis rather than acute disease?",
+      "options": [
+        "New changing murmur",
+        "Splinter haemorrhages",
+        "Digital clubbing and splenomegaly",
+        "Fever with rigors"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "التعجر (10%) وضخامة الطحال (30-40%) تحدثان في الشكل طويل الأمد فقط؛ اللغط الجديد والشظايا والحمى تظهر في كل الأشكال.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q4",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "question_stem": "A patient being treated for proven aortic valve endocarditis develops first-degree AV block on serial ECGs. What is the most urgent concern?",
+      "options": [
+        "Digoxin toxicity",
+        "Aortic root abscess formation",
+        "Rheumatic fever recurrence",
+        "Normal finding in endocarditis — no action needed"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "اضطراب التوصيل الجديد (حصار AV) في شغاف الأبهر يشير لخراج جذر الأبهر — مضاعفة تخريبية تستدعي تقييماً جراحياً عاجلاً؛ وليس سماوية دوائية أو روماتيزماً.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q5",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c3",
+      "question_stem": "A patient with a known bicuspid aortic valve has fever 38.6 C, painful finger-pad nodules, microscopic haematuria, and one blood culture growing viridans streptococci (not typical-organism criteria). Echo shows a 4 mm mitral vegetation. How is the Duke classification applied?",
+      "options": [
+        "Definite IE — echo vegetation (major) + fever, predisposition, vasculitic phenomena (minors)",
+        "Possible IE only — one culture is never enough",
+        "Rejected IE — cultures are insufficient",
+        "Cannot classify without surgery"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المشاركة الشغافية (نجيجة بالصدى) = معيار كبير؛ مع ≥3 صغار (استعداد، حرارة ≥38، ظاهرة وعائية) = 1 كبير + 3 صغار = شغاف مؤكد. زرع واحد غير نمطي لا يمنع التصنيف.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q6",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c4",
+      "question_stem": "A patient with acute presentations of prosthetic valve endocarditis has had 3 sets of blood cultures drawn. Which empirical regimen should be started?",
+      "options": [
+        "Oral amoxicillin 500 mg four times daily",
+        "Vancomycin IV + gentamicin IV + rifampicin orally",
+        "Flucloxacillin alone orally",
+        "Wait for all culture results before any antibiotic"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الشكل الحاد على صمام صناعي: فانكومايسين وريدي + جنتاميسين وريدي + ريفامبين فموي بعد سحب الزروعات؛ الانتظار يخص الشكل تحت الحاد المستقر فقط.",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q7",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c4",
+      "question_stem": "During gentamicin therapy for enterococcal endocarditis, which pre-dose ('trough') level is the therapeutic target, and what is the vancomycin trough target?",
+      "options": [
+        "Gentamicin trough < 1 mg/L; vancomycin trough 15-20 mg/L",
+        "Gentamicin trough 5-10 mg/L; vancomycin trough 5 mg/L",
+        "Both troughs should exceed 10 mg/L",
+        "Levels are unnecessary if renal function is normal"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "قبل الجرعة: جنتاميسين <1 ملغ/ل (بعد الجرعة 3-5) وفانكومايسين 15-20 ملغ/ل؛ مع تعديل الجرعات حسب المستويات والوظيفة الكلوية لتجنب السمية الدهلية والكلوية.",
+      "difficulty": "advanced",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L6_q8",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c5",
+      "question_stem": "A 26-year-old woman with a history of infective endocarditis (fully treated) asks about antibiotics before her upcoming dental scaling with gingival manipulation. What should she receive?",
+      "options": [
+        "No prophylaxis — previous IE is not an indication",
+        "Amoxicillin 2 g orally as a single dose 30-60 minutes before the procedure",
+        "Clindamycin daily for 7 days starting after the procedure",
+        "Vancomycin IV immediately before the procedure"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سابقة شغاف عدوائي + إجراء سني لثوي = وقاية مفردة بأموكسيسيلين 2غ قبل 30-60 دقيقة؛ الكليندامايسين بديل التحسس (600 ملغ مفردة لا 7 أيام).",
+      "difficulty": "core",
+      "clinical_vignette": true
+    },
+    {
+      "id": "L6_q9",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c5",
+      "question_stem": "Which list correctly pairs non-infective endocarditis with its associated disease?",
+      "options": [
+        "Libman-Sacks — SLE; marantic — metastatic carcinoma, TB, DIC",
+        "Libman-Sacks — rheumatic fever; marantic — SLE",
+        "Libman-Sacks — TB; marantic — infective",
+        "Both are variants of bacterial endocarditis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ليبرمان-ساكس مع الذأباء الحمامية؛ والمارنتي مع حالات فرط الخثار (خباثات منتشرة، عدوى مزمنة كسل، وDIC) — زروعات عقيمة.",
+      "difficulty": "core",
+      "clinical_vignette": false
+    },
+    {
+      "id": "L6_q10",
+      "lecture_id": "L6_infective_endocarditis",
+      "concept_id": "L6_c1",
+      "question_stem": "A farmer with chronic Q fever endocarditis asks why his aortic valve is affected and why treatment is so prolonged. Which statements are correct?",
+      "options": [
+        "Coxiella burnetii typically affects the aortic valve, is acquired from farm animals, and may require life-long antibiotic therapy",
+        "Q fever endocarditis always resolves in 2 weeks",
+        "Coxiella is an oral commensal acquired from tooth-brushing",
+        "Q fever endocarditis requires valve replacement in all cases"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الكوكسيلا بورنيتية من مزارع الأبقار/الأغنام/الماعز (بول وروث وحليب)، تصيب الأبهر عادة مع التهاب كبد وذات رئة وpurpura، وقد يلزم علاج مدى الحياة؛ ليست فموية المنشأ ولا تُشفى بأسبوعين دوماً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L6_case1",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Subacute Native-Valve Endocarditis: Duke Criteria in Action",
+      "scenario": "A 52-year-old schoolteacher with known mitral valve prolapse presents with 5 weeks of low-grade fever, night sweats, fatigue and unintentional 4 kg weight loss. She noticed small dark lines under her nails and painful tender nodules on her finger pads last week. Her dentist had performed a cleaning 2 months ago. This case walks through suspicion, confirmation and first-line management of subacute native-valve streptococcal endocarditis.",
+      "vignette": {
+        "age": 52,
+        "sex": "female",
+        "chief_complaint": "Five weeks of fever, night sweats and weight loss",
+        "history": "Mitral valve prolapse with moderate mitral regurgitation (known echo 2 years ago). Dental cleaning 8 weeks ago. No IV drug use. No recent procedures or lines.",
+        "vitals": {
+          "bp": "118/72 mmHg",
+          "hr": "96 bpm regular",
+          "rr": "18/min",
+          "temp": "38.4 C",
+          "spo2": "98% room air"
+        },
+        "exam": "Pallor; small tender nodules on the pads of the right index and middle fingers (Osler's nodes); splinter haemorrhages in two nails; two small non-tender erythematous macules on the left thenar eminence; spleen palpable 3 cm below the costal margin; apical mid-systolic click with a longer louder murmur than her baseline MR; no peripheral oedema; fundoscopy: one Roth's spot.",
+        "labs": [
+          {
+            "name": "Hb",
+            "value": "10.2 g/dL (ref 12-16)",
+            "flag": "low"
+          },
+          {
+            "name": "WBC",
+            "value": "12.4 x10^9/L (ref 4.5-11)",
+            "flag": "high"
+          },
+          {
+            "name": "ESR (1st hour)",
+            "value": "74 mm (ref <20)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "78 mg/L (ref <5)",
+            "flag": "high"
+          },
+          {
+            "name": "Rheumatoid factor",
+            "value": "Positive (1:64)",
+            "flag": "high"
+          },
+          {
+            "name": "Urinalysis",
+            "value": "Protein 1+, 20 RBCs/hpf",
+            "flag": "high"
+          },
+          {
+            "name": "Blood cultures (3 of 3 sets)",
+            "value": "Viridans streptococci (Strep. mitis), penicillin MIC 0.06 mg/L",
+            "flag": "critical"
+          }
+        ],
+        "imaging": "ECG: sinus rhythm, normal PR. Transthoracic echo: 8 mm mobile vegetation on the anterior mitral leaflet, moderate-severe MR, no abscess. CXR: mild cardiomegaly, clear lung fields."
+      },
+      "steps": [
+        {
+          "id": "L6_case1_s1",
+          "prompt": "Apply the modified Duke criteria to this patient.",
+          "options": [
+            "Definite IE: 2 major criteria (typical blood cultures + echo vegetation) plus multiple minor criteria",
+            "Possible IE: only minor criteria present",
+            "Rejected IE: subacute course argues against endocarditis",
+            "Cannot be classified without transoesophageal echo"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "معياران كبيران: زروعات نمطية (عقدية خضراء في زرعين+ / ثلاث زروعات إيجابية) + نجيجة بالصدى؛ إضافة إلى صغار (استعداد صمامي، حرارة ≥38، ظاهرة وعائية أوزلر/روث/RF، بيلة دموية) = شغاف مؤكد قطعاً.",
+          "xp": 15,
+          "hints": [
+            "رتب المعايير كباراً وصغاراً أولاً.",
+            "العقدية الخضراء كائن نمطي.",
+            "النجيجة الصدوية معيار كبير ثانٍ."
+          ]
+        },
+        {
+          "id": "L6_case1_s2",
+          "prompt": "Given subacute presentation and stable haemodynamics, what was the correct antibiotic strategy at admission?",
+          "options": [
+            "Immediate empirical vancomycin + gentamicin + rifampicin",
+            "Draw three sets of blood cultures and WITHHOLD antibiotics until results, then start benzylpenicillin-based therapy",
+            "Oral amoxicillin 500 mg QID and review in 2 weeks",
+            "Start antifungal therapy empirically"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تحت الحاد المستقر: ثلاث زروعات قبل أي صاد ثم انتظار النتائج (تجنباً لكبت النمو)، ثم بنزيل بنسلين لأن MIC <0.125 ملغ/ل — 4 أسابيع للصمام الطبيعي.",
+          "xp": 10,
+          "hints": [
+            "متى نؤخر الصادات؟",
+            "الزرع يحدد الدواء لا العكس."
+          ]
+        },
+        {
+          "id": "L6_case1_s3",
+          "prompt": "What is the definitive antibiotic regimen for this fully penicillin-susceptible viridans streptococcal native-valve IE?",
+          "options": [
+            "Benzylpenicillin IV 1.2 g six times daily for 4 weeks (2 weeks with gentamicin if uncomplicated criteria are met)",
+            "Oral flucloxacillin for 2 weeks",
+            "Vancomycin + rifampicin for 6 weeks",
+            "Ceftriaxone IV for 6 months"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العقديات حساسة للبنسلين (MIC <0.125): بنزيل بنسلين 1.2غ ×6 يومياً لمدة 4 أسابيع؛ ويمكن اختصارها لأسبوعين مع جنتاميسين عند تحقق شروط الحالة غير المعقدة. الفلوكلوكساسيلين للعنقوديات والريفامبين للصناعي.",
+          "xp": 15,
+          "hints": [
+            "دواء العقديات الحساسة؟",
+            "المدة للصمام الطبيعي؟",
+            "متى يجوز الأسبوعان؟"
+          ]
+        },
+        {
+          "id": "L6_case1_s4",
+          "prompt": "On day 9 of therapy the patient develops complete heart block. What does this signify and what is the response?",
+          "options": [
+            "Expected side effect of penicillin — continue and observe",
+            "Aortic root abscess formation — urgent surgical evaluation",
+            "Rheumatic carditis — start prednisolone",
+            "Electrolyte imbalance only — repeat potassium"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "اضطراب توصيل جديد أثناء الشغاف = خراج جذر الأبهر حتى إثبات العكس؛ يستوجب صدى عاجلاً/TOE وتقييماً جراحياً، فالخراج لا يستجيب للصادات وحدها.",
+          "xp": 10,
+          "hints": [
+            "ال AV block الجديد في الشغاف؟",
+            "الخراج مشكلة ميكانيكية."
+          ]
+        }
+      ],
+      "debriefing_ar": "حالة شغاف تحت حاد تقليدي على صمام متضخم (MVP): أعراض بنيوية مطولة، علامات محيطية وعائية وانصمامية (أوزلر، شظايا، روث، جانواي)، ضخامة طحال، فقر دم، RF إيجابي وبيلة دموية، مع زروعات عقديات خضراء نمطية ونجيجة صدوية — ديوك: معياران كبيران + صغار = مؤكد. الإدارة: زروعات ثلاث قبل الصاد، ثم بنزيل بنسلين 4 أسابيع (أو أسبوعان مع جنتاميسين عند الشروط)، مع ترصد المضاعفات: القصور، الانصمامات، واضطراب التوصيل (خراج جذر الأبهر = استشارة جراحية عاجلة). الدروس: 1) الانتظار المُنضبط للزروعات في تحت الحاد هو السلوك الصحيح؛ 2) MIC يحدد الدواء والمدة؛ 3) أي حصار AV جديد يجب أن يرفع شأن الخراج فوراً.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L6_case2",
+      "lecture_id": "L6_infective_endocarditis",
+      "title": "Acute Right-Sided Staphylococcal Endocarditis in an IV Drug User",
+      "scenario": "A 29-year-old man who injects heroin is brought to the emergency department with 4 days of high fever, rigors and pleuritic right-sided chest pain. He has had two previous admissions for skin abscesses at injection sites. This case focuses on the acute, right-sided staphylococcal form of IE — its organisms, septic pulmonary emboli, and empirical therapy.",
+      "vignette": {
+        "age": 29,
+        "sex": "male",
+        "chief_complaint": "Four days of high fever and pleuritic right chest pain",
+        "history": "Heroin injection for 6 years, repeated skin abscesses and cellulitis at injection sites, poor venous access, no prior valve disease, no dental procedures recently. Hepatitis C positive.",
+        "vitals": {
+          "bp": "104/62 mmHg",
+          "hr": "118 bpm regular",
+          "rr": "26/min",
+          "temp": "39.4 C",
+          "spo2": "92% room air"
+        },
+        "exam": "Ill-looking, needle track marks with one infected groin site; a soft tricuspid regurgitation murmur at the lower left sternal edge (new); no splenomegaly (acute course); no peripheral stigmata of immune-complex type; lungs: right basal crackles and a pleural rub.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "19.8 x10^9/L (ref 4-11)",
+            "flag": "high"
+          },
+          {
+            "name": "CRP",
+            "value": "186 mg/L (ref <5)",
+            "flag": "critical"
+          },
+          {
+            "name": "Hb",
+            "value": "12.8 g/dL (ref 13-17)",
+            "flag": "low"
+          },
+          {
+            "name": "Blood cultures (2 of 2 drawn 1 h apart)",
+            "value": "Staphylococcus aureus (meticillin-sensitive)",
+            "flag": "critical"
+          },
+          {
+            "name": "Urinalysis",
+            "value": "No haematuria",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "ECG: sinus tachycardia, no conduction block. CXR: two peripheral wedge-shaped opacities and a small right pleural effusion (septic pulmonary emboli). Transthoracic echo: large mobile vegetations on the tricuspid valve with severe tricuspid regurgitation; left valves normal; no abscess."
+      },
+      "steps": [
+        {
+          "id": "L6_case2_s1",
+          "prompt": "Why does this patient have IE on a previously normal valve, and why are the lungs (not the systemic circulation) the target of his emboli?",
+          "options": [
+            "S. aureus is virulent enough to infect normal valves; right-sided vegetations embolise to the pulmonary circulation producing septic pulmonary emboli",
+            "Fungal infection always involves normal valves and systemic arteries",
+            "Viridans streptococci from dental work seeded his tricuspid valve and embolised to the brain",
+            "Emboli from tricuspid vegetations bypass the lungs and cause splenic infarcts"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "العنقوديات الذهبية تغزو الصمامات السليمة؛ ونجيجات الأيمن (الثلاثي) ترمي انصمامات خمجية إلى الرئتين (كائنات إسفينية محيطية وانصباب) لا إلى الدوران الجهازي.",
+          "xp": 15,
+          "hints": [
+            "شدّة الكائن أم الاستعداد الصمامي؟",
+            "من أي جهة تُرسَل الانصمامات إلى الرئة؟"
+          ]
+        },
+        {
+          "id": "L6_case2_s2",
+          "prompt": "What empirical antibiotic regimen is appropriate immediately after cultures are drawn?",
+          "options": [
+            "Withhold all antibiotics pending full sensitivities",
+            "Vancomycin IV + gentamicin IV (acute native valve regimen) — refined to flucloxacillin once meticillin-susceptibility is confirmed",
+            "Oral co-amoxiclav and review in clinic",
+            "Lifelong doxycycline"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الشكل الحاد على صمام طبيعي: فانكومايسين + جنتاميسين فور سحب الزروعات؛ ثم تصحيحه إلى فلوكلوكساسيلين 2غ 4-6 مرات يومياً بعد تأكيد الحساسية للمتيسيلين.",
+          "xp": 10,
+          "hints": [
+            "حاد + طبيعي = أي خطة؟",
+            "بعد المعاينة؟"
+          ]
+        },
+        {
+          "id": "L6_case2_s3",
+          "prompt": "Three weeks into appropriate therapy he remains febrile with persistent large vegetations and recurrent septic emboli. What is the next step?",
+          "options": [
+            "Stop all antibiotics — this is expected",
+            "Surgical evaluation for valve surgery (persistent infection, large vegetations with recurrent emboli) plus ongoing antibiotics",
+            "Add oral rifampicin only, as he is a 'prosthetic-like' case",
+            "Repeat blood cultures weekly and observe indefinitely"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "استمرار الخمج مع نجيجات كبيرة وانصمامات متكررة رغم العلاج المناسب استطباب جراحي (إزالة/إصلاح) مع مواصلة الصادات؛ إضافة ريفامبين وحدها خطة الصمام الصناعي لا تكفي هنا.",
+          "xp": 10,
+          "hints": [
+            "الحمى المستمرة والانصمامات المتكررة؟",
+            "الجراحة لمن؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "الشكل الحاد الأيمني في متعاطي الوريد: عنقوديات ذهبية (الأشيع إجمالاً) تغزو ثلاثياً سليماً، فتنشأ حمى toxic مع نفث دموي وألم جنبي من انصمامات رئوية خمجية (أخماذ إسفينية محيطية) وارتجاع ثلاثي جديد. الإدارة: زروعات ثم فانكومايسين+جنتاميسين تجريبياً وتصحيحه لفلوكلوكساسيلين وفق المعاينة، مع مراقبة المضاعفات (الخراج، هشاشة الصمام) واللجوء للجراحة عند استمرار الخمج أو تكرر الانصمامات أو القصور. الدروس: 1) حقن الوريد = شغاف أيمني عنقودي حتى يثبت العكس؛ 2) انصمامات الرئة المحيطية ليست دائماً خثرية — اسأل عن الحقن الوريدي؛ 3) المؤشرات الجراحية: فشل العلاج الدوائي، نجيجات كبيرة متكررة الانصمام، قصور قلب صمامي.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

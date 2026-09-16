@@ -1,0 +1,762 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L5_hypersensitivity_pneumonitis",
+    "specialty": "internal_medicine",
+    "title": "Hypersensitivity Pneumonitis (Extrinsic Allergic Alveolitis)",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L5 Hypersensitivity pneumonitis.pdf",
+      "page_count": 37
+    },
+    "tags": [
+      "hypersensitivity-pneumonitis",
+      "ild",
+      "farmer-lung",
+      "bird-fancier",
+      "hrct",
+      "restrictive"
+    ],
+    "order_index": 4,
+    "golden_tip": [
+      "EXAM TRAP: HP is a TYPE III + TYPE IV reaction (IgG immune complex + non-caseating granulomas) — NOT IgE! Serum precipitins support but do not confirm the diagnosis (many exposed farmers/breeders stay healthy). BAL shows increased CD8+ T lymphocytes.",
+      "Symptoms appear 4–8 HOURS AFTER antigen exposure (unlike asthma's immediate reaction) — the timing in the vignette is the diagnosis. Acute HP: flu-like illness after heavy exposure (moldy hay, pigeon loft); chronic HP: insidious fibrosis from low-level exposure (pet bird).",
+      "Paradox worth remembering: HP is LESS common in SMOKERS than non-smokers (reasons unclear) — the opposite of most lung disease."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L5_c1",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "Definition and Diseases Caused by Organic Dusts",
+      "summary_ar": "تعريف التهاب الرئة بفرط الحساسية والتفريق بينه وبين الربو والاستنشاق (pneumoconiosis) وجدول أمراض الغبار العضوي الكامل.",
+      "sections": [
+        {
+          "heading": "Definition and Position among Allergic Lung Diseases",
+          "body_text": "**Hypersensitivity pneumonitis (HP), also known as extrinsic allergic alveolitis, results from inhaling organic antigens (mostly), causing an immune complex reaction in the alveolar walls, bronchiolar walls and interstitium.** The lecture positions HP against its two allergic 'cousins': **Asthma** is an **airway disease due to an allergic agent** (bronchospasm, obstructive physiology), whereas **HP is an interstitial lung disease due to an allergic reaction** (restrictive physiology), and **Pneumoconiosis is an interstitial lung disease where inhaled dust is deposited** (inorganic mineral dust, not an immune reaction to organic antigen). Commonest causes of HP: **Farmer's lung** and **Bird fancier's lung**; it can also be caused by **medications and other environmental factors**.",
+          "key_points": [
+            "HP = extrinsic allergic alveolitis: inhaled organic antigens → immune complex reaction in alveolar/bronchiolar walls and interstitium",
+            "Asthma = allergic AIRWAY disease (obstructive); HP = allergic INTERSTITIAL disease (restrictive); pneumoconiosis = dust DEPOSITION disease",
+            "Commonest: farmer's lung, bird fancier's lung; also drugs and environmental factors"
+          ]
+        },
+        {
+          "heading": "The Complete Table: Lung Diseases Caused by Organic Dusts (Lecture Table)",
+          "body_text": "The lecture table of examples of lung diseases caused by organic dusts (reproduce it in full): **Farmer's lung*** — source: mouldy hay, straw, grain — antigen: *Saccharopolyspora rectivirgula* (formerly *Micropolyspora faeni*), *Aspergillus fumigatus*. **Bird fancier's lung*** — avian excreta, proteins and feathers — avian serum proteins. **Malt worker's lung*** — mouldy maltings — *Aspergillus clavatus*. **Cheese worker's lung*** — mouldy cheese — *Aspergillus clavatus*, *Penicillium casei*. **Maple bark stripper's lung*** — bark from stored maple — *Cryptostroma corticale*. **Saxophone player's lung*** — reed of any wind instrument — *Fusarium* spp., *Penicillium* spp., *Cladosporium* spp. **Byssinosis** — textile industries — cotton, flax, hemp dust. **Inhalation ('humidifier') fever** — contamination of air conditioning — thermophilic actinomycetes. Footnote: *** = presents as hypersensitivity pneumonitis.** Note that byssinosis and humidifier fever are related organic-dust syndromes that do NOT present as classic HP.",
+          "key_points": [
+            "Farmer's lung: mouldy hay/straw/grain — Saccharopolyspora rectivirgula, Aspergillus fumigatus",
+            "Bird fancier's lung: avian excreta/proteins/feathers — avian serum proteins",
+            "Malt worker's: Aspergillus clavatus; Cheese worker's: A. clavatus + Penicillium casei",
+            "Maple bark stripper's: Cryptostroma corticale; Saxophone player's: Fusarium/Penicillium/Cladosporium",
+            "Byssinosis: cotton/flax/hemp (textiles) — NOT classic HP; Humidifier fever: thermophilic actinomycetes",
+            "* = presents as hypersensitivity pneumonitis"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Extrinsic allergic alveolitis",
+          "definition_ar": "الاسم الثاني لالتهاب الرئة بفرط الحساسية؛ تفاعل مناعي معقد في جدر الأسناخ والقصيبات والخلال بسبب مستضدات عضوية مستنشقة."
+        },
+        {
+          "term": "Precipitins",
+          "definition_ar": "أضداد IgG راسبة ضد المستضد المستنشق؛ تدعم تشخيص HP لكنها غير حاسمة وحدها."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L5_c2",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "Pathogenesis",
+      "summary_ar": "الآلية الإمراضية: تفاعل النوع الثالث (Arthus) مع النوع الرابع، الحبيبات غير المتجبنة، والمفارقة مع المدخنين.",
+      "sections": [
+        {
+          "heading": "Type III (Immune Complex) and Type IV (Granulomatous) Responses",
+          "body_text": "The pathogenesis of HP **involves type III and type IV immune responses**: **(1) Type III (Arthus reaction)**: **IgG antibodies in the serum** and **activation of complement** produce an **inflammatory response in the alveolar walls → radiological Ground-Glass Opacity and Consolidation**. **(2) Type IV response**: presence of **poorly formed, non-caseating granulomas in alveolar walls → centrilobular nodules** on imaging. **Chronic forms may lead to fibrosis in the lungs.** A key histological contrast: these granulomas are poorly formed and NON-caseating (unlike the caseating granulomas of tuberculosis and the well-formed granulomas of sarcoidosis). This dual mechanism explains the mixed picture: acute inflammatory (GGO/consolidation) and subacute granulomatous (centrilobular nodules) phases, culminating in fibrosis if exposure continues.",
+          "key_points": [
+            "Type III (Arthus): IgG + complement → alveolar wall inflammation → GGO and consolidation",
+            "Type IV: poorly formed NON-caseating granulomas → centrilobular nodules",
+            "Chronic exposure → pulmonary fibrosis",
+            "Contrast: TB = caseating; sarcoidosis = well-formed non-caseating"
+          ]
+        },
+        {
+          "heading": "The Smoking Paradox",
+          "body_text": "An interesting note from the lecture: there is a **lower incidence of HP in smokers compared to non-smokers, though the reasons are unclear**. This is one of the few lung diseases in which cigarette smoking appears protective (hypotheses include altered immune responsiveness and suppressed antibody production), and it is a favorite exam curiosity. Note, however, that smoking worsens outcomes once HP is established (smokers who do develop chronic HP tend toward worse fibrosis).",
+          "key_points": [
+            "HP incidence is LOWER in smokers than non-smokers — reasons unclear",
+            "One of the few lung diseases where smoking appears 'protective'"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Arthus reaction",
+          "definition_ar": "تفاعل مناعي معقدات من النوع الثالث موضعي؛ أساس الطور الحاد في HP."
+        },
+        {
+          "term": "Centrilobular nodules",
+          "definition_ar": "عقيدات مركزية فصية على HRCT؛ سمة الطور تحت الحاد (تفاعل النوع الرابع)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L5_c3",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "Clinical Features",
+      "summary_ar": "السمات السريرية حسب حجم التعرض: الحاد (أعراض شبيهة بالإنفلونزا بعد ساعات) والمزمن (تليف تدريجي)، مع سماع الفرقعات التصاعدية.",
+      "sections": [
+        {
+          "heading": "Acute versus Chronic Presentation (Antigen Load)",
+          "body_text": "**Presentation varies based on antigen load.** **Acute exposure — high antigen load** (e.g., a farmer exposed to moldy hay or a pigeon fancier in a loft) leads to **influenza-like symptoms within hours**: fever, chills, malaise, myalgia — accompanied by **cough, breathlessness and wheeze**, typically 4–8 hours after exposure. **Chronic/low-level exposure — low antigen load** (e.g., a pet bird owner) presents more gradually with **slowly progressive breathlessness**, and **fibrosis may already be present by the time of diagnosis**. The two lecture cases illustrate the spectrum: **Case 1** — a 17-year-old female with SOB for more than 6 months, low-grade fever, dry cough, NO hyperreactive symptoms, weight loss, no response to multiple inhaler types nor frequent antibiotics; on exam not in distress, no cyanosis, mildly tachypneic with scattered inspiratory crepitations, vitally stable, no leg oedema, normal JVP, no gallop rhythm. **Case 2** — a 30-year-old female with SOB for more than 2 years, low-grade fever, dry cough, no hyperreactive symptoms, NO weight loss, same failure of inhalers/antibiotics, but WITH **clubbing** — signaling the chronic fibrotic phase.",
+          "key_points": [
+            "Acute (high antigen load): influenza-like symptoms within hours (4–8 h after exposure) + cough, breathlessness, wheeze",
+            "Chronic (low-level exposure, e.g., pet bird): slowly progressive breathlessness; fibrosis may be present at diagnosis",
+            "Key discriminators from asthma: NO hyperreactive symptoms, no response to inhalers, inspiratory crepitations (not expiratory wheeze)",
+            "Clubbing may appear in chronic fibrotic HP (Case 2)"
+          ]
+        },
+        {
+          "heading": "Auscultation Findings",
+          "body_text": "**Auscultation in HP reveals end-inspiratory crackles and squeaks across the chest** — crackles occurring at the END of inspiration, with characteristic inspiratory 'squeaks' (a sign of bronchiolar involvement). This contrasts with the polyphonic expiratory wheeze of asthma: HP is heard on INSPIRATION (interstitial/bronchiolar disease), asthma on expiration (airway obstruction). In advanced fibrotic disease the crackles become persistent basal Velcro-like crackles, as in other fibrosing interstitial lung diseases.",
+          "key_points": [
+            "End-inspiratory crackles across the chest",
+            "Inspiratory squeaks (bronchiolar involvement)",
+            "Contrast: asthma = expiratory wheeze; HP = end-inspiratory crackles/squeaks"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Squeaks",
+          "definition_ar": "صرير شهيقي عالي التردد ناتج عن إصابة القصيبات؛ يُسمع في HP."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L5_c4",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "Investigations and Diagnosis",
+      "summary_ar": "التحقيقات: الأشعة وHRCT (النمط الحاد والمزمن)، وظائف الرئة التقييدية، العوامل التنبؤية الستة، وركائز التشخيص الخمس مع BAL والخزعة.",
+      "sections": [
+        {
+          "heading": "Imaging: CXR and HRCT",
+          "body_text": "**Chest X-ray in acute HP shows ill-defined patchy airspace shadowing (which may be confused with pneumonia)**. **High-resolution CT (HRCT) of the chest** — **in inflammatory or acute HP: bilateral ground-glass shadowing with or without consolidation**, plus **small centrilobular nodular opacities with an upper/middle lobe focus**, and **air trapping** (mosaic attenuation). **In chronic or fibrotic HP: fibrosis-related findings — volume loss, traction bronchiectasis and honeycombing.** The lecture images demonstrate: the CXR of acute HP (diffuse bilateral patchy opacities) side-by-side with pneumonia (dense focal left-sided consolidation); HRCT air trapping (a circled region of darker, underperfused lung); the three **patterns of nodules — random (hematogenous spread), centrilobular (HP, sparing the pleural surfaces), and perilymphatic (sarcoidosis, following pleura/septa)**; and fibrotic HP with reticulation, traction bronchiectasis, honeycombing and architectural distortion.",
+          "key_points": [
+            "CXR acute HP: ill-defined patchy airspace shadowing — may mimic pneumonia",
+            "HRCT acute/inflammatory: bilateral ground-glass ± consolidation, centrilobular nodules (upper/middle), air trapping",
+            "HRCT chronic/fibrotic: volume loss, traction bronchiectasis, honeycombing",
+            "Nodule patterns: centrilobular = HP (sparing pleura); perilymphatic = sarcoidosis; random = miliary/metastatic"
+          ]
+        },
+        {
+          "heading": "Pulmonary Function Tests",
+          "body_text": "**PFTs in HP reveal a restrictive ventilatory defect**: **reduced lung volumes and impaired gas transfer** (low DLCO), **oxygen desaturation in dynamic tests** (e.g., 6-minute walk), and — in **advanced disease — type I respiratory failure (hypoxemic) at rest**. This restrictive physiology (low TLC, low FVC, high or normal FEV1/FVC) is the physiological opposite of asthma/COPD and is the functional signature of the interstitial inflammation and fibrosis described above.",
+          "key_points": [
+            "Restrictive ventilatory defect: reduced lung volumes + impaired gas transfer (low DLCO)",
+            "Oxygen desaturation on dynamic (exercise) tests",
+            "Advanced disease: type I respiratory failure at rest"
+          ]
+        },
+        {
+          "heading": "Predictive Factors and Diagnostic Pillars",
+          "body_text": "**The predictive factors in the identification of HP** (a six-item high-yield list): **(1) exposure to a known offending antigen; (2) positive precipitating antibodies to the offending antigen; (3) recurrent episodes of symptoms; (4) symptoms occurring 4–8 hours after exposure; (5) inspiratory crackles on examination; (6) weight loss.** The **diagnosis is based on identification of a potential antigen source (e.g., home or workplace) plus clinical and radiological features**. **Supporting tests: serum antibody (IgG) or precipitin test — a positive test supports the diagnosis but is NOT definitive without other symptoms** (many farmers and pigeon breeders with positive tests remain healthy). **Additional investigations: bronchoalveolar lavage (BAL) shows increased CD8+ T lymphocytes; transbronchial or open-lung biopsy may be required for definitive diagnosis.** **In about 40% of cases the causative antigen remains unidentified despite extensive investigation.** The lecture's diagnostic framework diagram: the diagnosis of HP rests on the integration of **Clinical + Radiological + Antigen (AG) + BAL + TBLB** — the multidisciplinary pillars.",
+          "key_points": [
+            "Six predictive factors: known antigen exposure, positive precipitins, recurrent episodes, symptoms 4–8 h after exposure, inspiratory crackles, weight loss",
+            "Diagnosis = antigen source identification + clinical + radiological features",
+            "Serum IgG/precipitins support but are NOT definitive alone (healthy carriers exist)",
+            "BAL: increased CD8+ T lymphocytes (CD4:CD8 ratio inverted)",
+            "TBLB/open biopsy for definitive diagnosis when needed",
+            "~40% of cases: causative antigen never identified",
+            "Framework: Clinical + Radiological + Antigen + BAL + TBLB"
+          ],
+          "check": {
+            "prompt": "A pigeon breeder has a positive serum precipitin test but no respiratory symptoms. What does this mean?",
+            "options": [
+              "He has hypersensitivity pneumonitis and needs steroids",
+              "A positive test supports HP but is not definitive without clinical features — many exposed individuals remain healthy",
+              "He needs immediate open lung biopsy",
+              "The test excludes HP"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الأضداد الراسبة تدعم التشخيص فقط عند وجود الصورة السريرية والإشعاعية؛ كثير من مربي الحمام والمزارعين إيجابيون دون مرض — لذلك لا يكفي الفحص وحده."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "BAL",
+          "definition_ar": "غسل القصبات والأسناخ: يظهر في HP ارتفاع اللمفاويات T CD8+."
+        },
+        {
+          "term": "TBLB",
+          "definition_ar": "خزعة رئوية عبر القصبات: قد تُظهر حبيبات غير متجبنة لتأكيد التشخيص."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 3
+    },
+    {
+      "id": "L5_c5",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "Management and Prognosis",
+      "summary_ar": "العلاج: إيقاف التعرض والتقييد والبريدنيزولون 0.5 ملغ/كغ ثم التدرج النازل، والإنذار مع احتمالات التليف.",
+      "sections": [
+        {
+          "heading": "Management",
+          "body_text": "The **cornerstone of management is CESSATION OF EXPOSURE** to the offending antigen. **Avoidance of exposure**: remove or avoid the antigen source; **dust masks with filters** where avoidance is impossible (occupational cases). **Medication for acute HP: prednisolone 0.5 mg/kg daily until symptoms and radiological findings resolve, then a gradual taper to 10 mg/day over several months.** **Oxygen therapy for severe hypoxemia.** The lecture's summary slide crystallizes the management: (1) interstitial lung disease due to an allergic reaction — keep suspicion high; (2) diagnosis is made **clinically and radiologically**; (3) **treatment is by steroids** (after exposure cessation). For chronic fibrotic HP, management follows the general principles of fibrosing ILD, and refractory cases may need antifibrotics/specialist input.",
+          "key_points": [
+            "Cease exposure — the most important step; dust masks with filters if unavoidable",
+            "Acute HP: prednisolone 0.5 mg/kg/day until symptoms + radiology resolve, then taper to 10 mg/day over months",
+            "Oxygen therapy for severe hypoxemia",
+            "Diagnosis clinical + radiological; treatment = avoidance + steroids"
+          ]
+        },
+        {
+          "heading": "Prognosis",
+          "body_text": "**Most patients recover fully** (particularly acute HP with prompt exposure removal and steroid therapy). **However, if untreated or with continued exposure, fibrosis can progress**, potentially leading to: **severe respiratory disability; hypoxemia, pulmonary hypertension and cor pulmonale; and death in advanced cases.** This is why Case 2's clubbing after 2 years of symptoms is ominous — established fibrosis is largely irreversible, and the therapeutic window is in the inflammatory phase. Early antigen identification and removal is therefore the single most important prognostic intervention.",
+          "key_points": [
+            "Most patients recover fully with exposure cessation + treatment",
+            "Untreated/continued exposure: progressive fibrosis → severe respiratory disability",
+            "End-stage complications: hypoxemia, pulmonary hypertension, cor pulmonale, death",
+            "Early diagnosis and antigen removal = the key prognostic determinant"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 4
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L5_f1",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c1",
+      "card_type": "basic",
+      "front_text": "Define hypersensitivity pneumonitis and its alternative name.",
+      "back_text": "HP, also known as extrinsic allergic alveolitis, results from inhaling organic antigens (mostly), causing an immune complex reaction in the alveolar walls, bronchiolar walls and interstitium. Commonest causes: farmer's lung and bird fancier's lung; also medications and environmental factors.",
+      "explanation_ar": "التهاب رئة خارجي مناعي تحسسي في الجدر السنخية والقصيبية والخلالي.",
+      "is_vivid": false,
+      "tags": [
+        "definition",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f2",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c1",
+      "card_type": "basic",
+      "front_text": "Differentiate asthma, hypersensitivity pneumonitis and pneumoconiosis.",
+      "back_text": "Asthma: airway disease due to allergic agent (obstructive). HP: interstitial lung disease due to allergic reaction (restrictive). Pneumoconiosis: interstitial lung disease where inhaled (inorganic) dust deposition causes the pathology.",
+      "explanation_ar": "ربو=مجرى هوائي؛ HP=خلالي تحسسي؛ استنشاق=ترسب غبار.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f3",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c1",
+      "card_type": "basic",
+      "front_text": "What are the antigen sources for farmer's lung and bird fancier's lung?",
+      "back_text": "Farmer's lung: mouldy hay, straw, grain — antigens Saccharopolyspora rectivirgula (formerly Micropolyspora faeni) and Aspergillus fumigatus. Bird fancier's lung: avian excreta, proteins and feathers — antigen: avian serum proteins.",
+      "explanation_ar": "تبن متعفن = فطران؛ ريش وفضلات طيور = بروتينات مصل طيري.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f4",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c1",
+      "card_type": "basic",
+      "front_text": "Name 4 other organic-dust lung diseases from the lecture table with their antigens.",
+      "back_text": "Malt worker's lung: Aspergillus clavatus (mouldy maltings). Cheese worker's lung: A. clavatus + Penicillium casei (mouldy cheese). Maple bark stripper's lung: Cryptostroma corticale. Saxophone player's lung: Fusarium, Penicillium, Cladosporium spp. (instrument reeds). Also byssinosis (cotton/flax/hemp — textile) and humidifier fever (therophilic actinomycetes in air conditioning).",
+      "explanation_ar": "الجدول الكامل قد يأتي كسؤال مطابقة.",
+      "is_vivid": false,
+      "tags": [
+        "table"
+      ]
+    },
+    {
+      "id": "L5_f5",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c2",
+      "card_type": "basic",
+      "front_text": "Which immune mechanisms operate in HP and what does each produce?",
+      "back_text": "Type III (Arthus reaction): IgG antibodies + complement activation → inflammatory response in alveolar walls → ground-glass opacity and consolidation on imaging. Type IV response: poorly formed, non-caseating granulomas in alveolar walls → centrilobular nodules. Chronic forms lead to fibrosis.",
+      "mnemonic_ar": "III = GGO؛ IV = عقيدات مركزية؛ مزمن = تليف.",
+      "is_vivid": false,
+      "tags": [
+        "pathogenesis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f6",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c2",
+      "card_type": "basic",
+      "front_text": "What is the relationship between HP and cigarette smoking?",
+      "back_text": "There is a LOWER incidence of HP in smokers compared to non-smokers, though the reasons are unclear — one of the few lung diseases where smoking appears paradoxically protective. This is a classic exam curiosity.",
+      "explanation_ar": "مفارقة: التدخين 'يحمي' من HP — أسباب غير واضحة.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f7",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c3",
+      "card_type": "basic",
+      "front_text": "Contrast acute versus chronic HP presentation.",
+      "back_text": "Acute (high antigen load, e.g., farmer/pigeon loft): influenza-like symptoms within hours (4–8 h after exposure) — cough, breathlessness, wheeze. Chronic (low-level exposure, e.g., pet bird owner): slowly progressive breathlessness over months; fibrosis may be present at diagnosis; clubbing may develop.",
+      "explanation_ar": "حاد بعد ساعات كالإنفلونزا؛ مزمن خفي مع تليف.",
+      "is_vivid": false,
+      "tags": [
+        "clinical",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f8",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c3",
+      "card_type": "basic",
+      "front_text": "What is heard on auscultation in HP?",
+      "back_text": "End-inspiratory crackles and squeaks across the chest. Contrast: asthma produces expiratory polyphonic wheeze; HP sounds on INSPIRATION (interstitial/bronchiolar disease).",
+      "explanation_ar": "فرقعات نهاية شهيق + صرير (squeaks).",
+      "is_vivid": false,
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L5_f9",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "card_type": "basic",
+      "front_text": "What does HRCT show in acute versus chronic HP?",
+      "back_text": "Inflammatory/acute HP: bilateral ground-glass shadowing ± consolidation, small centrilobular nodular opacities (upper/middle lobe focus), and air trapping (mosaic attenuation). Chronic/fibrotic HP: volume loss, traction bronchiectasis, and honeycombing.",
+      "explanation_ar": "حاد: زجاجي + عقيدات + انحصار هواء؛ مزمن: تليف وخلية عسلية.",
+      "is_vivid": false,
+      "tags": [
+        "imaging",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f10",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "card_type": "basic",
+      "front_text": "What are the three patterns of nodules on HRCT and their diseases?",
+      "back_text": "Centrilobular: nodules in the center of the secondary pulmonary lobule, sparing pleural surfaces — characteristic of HP (and silicosis). Perilymphatic: following pleura, septa and bronchovascular bundles — sarcoidosis. Random: scattered arbitrarily — hematogenous spread (miliary TB, metastases).",
+      "explanation_ar": "مركز فصي=HP؛ حول لمفي=ساركويد؛ عشوائي=انتشار دموي.",
+      "is_vivid": false,
+      "tags": [
+        "imaging",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f11",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "card_type": "basic",
+      "front_text": "What do PFTs show in HP?",
+      "back_text": "A restrictive ventilatory defect: reduced lung volumes and impaired gas transfer (low DLCO), oxygen desaturation in dynamic (exercise) tests; advanced disease results in type I respiratory failure at rest.",
+      "explanation_ar": "نمط تقييدي + نقص DLCO + إجهاد نقص أكسجة.",
+      "is_vivid": false,
+      "tags": [
+        "physiology"
+      ]
+    },
+    {
+      "id": "L5_f12",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "card_type": "basic",
+      "front_text": "List the six predictive factors for identifying HP.",
+      "back_text": "1) Exposure to a known offending antigen. 2) Positive precipitating antibodies to the offending antigen. 3) Recurrent episodes of symptoms. 4) Symptoms occurring 4–8 hours after exposure. 5) Inspiratory crackles on examination. 6) Weight loss.",
+      "mnemonic_ar": "تذكّر: تعرض، أضداد، نوب متكررة، 4-8 ساعات، فرقعات، نقص وزن.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f13",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "card_type": "basic",
+      "front_text": "What does BAL show in HP, and how definitive are serum precipitins?",
+      "back_text": "BAL shows increased CD8+ T lymphocytes. Serum IgG precipitins SUPPORT the diagnosis but are NOT definitive without other symptoms — many farmers and pigeon breeders with positive tests remain healthy. In ~40% of cases the causative antigen is never identified. TBLB or open-lung biopsy may be needed for definitive diagnosis.",
+      "explanation_ar": "BAL = CD8+ مرتفعة؛ الأضداد داعمة فقط؛ 40% مجهول المستضد.",
+      "is_vivid": false,
+      "tags": [
+        "diagnosis",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L5_f14",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c5",
+      "card_type": "basic",
+      "front_text": "How is HP treated and what is the prognosis?",
+      "back_text": "Cease exposure (cornerstone) + dust masks with filters; prednisolone 0.5 mg/kg daily for acute HP until symptoms and radiology resolve, then gradual taper to 10 mg/day over several months; oxygen for severe hypoxemia. Most patients recover fully; if untreated, fibrosis progresses to severe respiratory disability, hypoxemia, pulmonary hypertension, cor pulmonale and death.",
+      "explanation_ar": "إيقاف التعرض أولاً ثم بريدنيزولون 0.5 ملغ/كغ مع تدرج نازل.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L5_q1",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c5",
+      "question_stem": "Which of the following is true about chronic hypersensitivity pneumonitis?",
+      "options": [
+        "It never leads to fibrosis",
+        "It is always caused by high antigen exposure",
+        "It can result in fibrosis and restrictive lung disease",
+        "It only affects non-smokers"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة الأصلي: التهاب الرئة بفرط الحساسية المزمن (تعرض منخفض مستمر مثل طائر منزلي) يسبب تليفاً ومرضاً رئوياً تقييدياً متقدماً. لا يقتصر على غير المدخنين (وإن كانت الإصابة أقل شيوعاً عند المدخنين)، وليس دائماً بتعرض عالٍ.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "L5_q2",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c2",
+      "question_stem": "Which antibody is commonly found in patients with HP?",
+      "options": [
+        "IgA",
+        "IgE",
+        "IgG",
+        "IgM"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "سؤال المحاضرة الأصلي: الأضداد الراصة IgG هي المعلم المصلاني في HP (تفاعل النوع الثالث Arthus). ليس IgE كما في الربو والتحسس الأتوبي — فخ شائع.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "L5_q3",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c5",
+      "question_stem": "What is a common treatment for acute HP?",
+      "options": [
+        "High-dose ibuprofen",
+        "Prednisolone 0.5 mg/kg daily",
+        "Antihistamines",
+        "Antibiotics"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة الأصلي: بريدنيزولون 0.5 ملغ/كغ يومياً حتى زوال الأعراض والنتائج الشعاعية ثم تدرج نازل إلى 10 ملغ يومياً. مضادات الهيستامين للمسارات IgE لا تفيد، والمضادات الحيوية لا مكان لها في مرض مناعي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L5_q4",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "question_stem": "Which of the following is true regarding serological testing in HP diagnosis?",
+      "options": [
+        "A positive IgG precipitin test alone is sufficient for diagnosis",
+        "Positive antibodies are diagnostic only when paired with clinical features",
+        "IgE testing is the most specific for HP",
+        "The absence of IgG antibodies rules out HP"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "سؤال المحاضرة الأصلي: الأضداد الإيجابية تشخيصية فقط عند اقترانها بالملامح السريرية؛ فكثير من المعرضين إيجابيون دون مرض، وغياب الأضداد لا ينفي HP قطعياً. IgE ليست خاصة بHP إطلاقاً.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L5_q5",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c3",
+      "question_stem": "A 47-year-old farmer develops fever, chills, malaise, cough and breathlessness every evening during harvest season, resolving by morning; symptoms appear 4–6 hours after working with mouldy hay. What is the most likely diagnosis and mechanism?",
+      "options": [
+        "Occupational asthma (IgE-mediated immediate reaction)",
+        "Acute hypersensitivity pneumonitis (type III + IV reaction to organic antigen)",
+        "Silicosis",
+        "Byssinosis",
+        "Pneumonia due to S. pneumoniae"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "التوقيت هو المفتاح: أعراض شبيهة بالإنفلونزا بعد 4-8 ساعات من تعرض كثيف للتبن المتعفن (نسبة لتفاعل معقدات مناعي + حبيبات) = التهاب رئة بفرط حساسية حاد. الربو المهني تفاعل فوري IgE (خلال دقائق) مع صفير زفيري، والالتهاب الرئوي الجرثومي لا يتكرر مساءً كل يوم ويزول صباحاً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "ما أهمية توقيت الأعراض بعد التعرض؟",
+        "أي جسم مضاد: فوري أم متأخر؟"
+      ],
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "L5_q6",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "question_stem": "HRCT of a patient with subacute HP shows small nodules sparing the pleural surfaces. What is this pattern called, and what is its mechanism?",
+      "options": [
+        "Perilymphatic nodules (sarcoid pattern)",
+        "Centrilobular nodules — type IV poorly formed non-caseating granulomas in alveolar walls",
+        "Random nodules (miliary pattern)",
+        "Tree-in-bud (endobronchial spread)"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "العقيدات مركزية الفصية التي تحفظ السطوح الجنبية هي سمة HP تحت الحاد وتقابل تفاعل النوع الرابع (حبيبات غير متجبنة سيئة التكوين). حول اللمفية للساركويد، والعشوائية للانتشار الدموي.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي نمط عقيدات يحفظ الجنبة؟"
+      ],
+      "focus_sections": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "L5_q7",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "question_stem": "Which BAL finding supports hypersensitivity pneumonitis?",
+      "options": [
+        "Increased CD8+ T lymphocytes",
+        "Increased CD4+ T lymphocytes only",
+        "Eosinophils > 40%",
+        "Malignant cells"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "غسل القصبات والأسناخ في HP يظهر ارتفاع اللمفاويات T CD8+ (عكس الساركويد حيث تزداد CD4+). فرط اليوزينيات يوحي بـ EGPA أو الربو، والخلايا الخبيثة بورم.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "قارن CD8 مع CD4 بين HP والساركويد"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L5_q8",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c1",
+      "question_stem": "A 30-year-old woman keeps a parakeet at home and has had 2 years of progressive exertional dyspnea, low-grade fever and dry cough, failing inhalers; exam shows clubbing and end-inspiratory crackles. What is the antigen and the phase of her disease?",
+      "options": [
+        "Avian serum proteins; chronic fibrotic HP from low-level exposure",
+        "Thermophilic actinomycetes; acute HP",
+        "Cotton dust; byssinosis",
+        "Aspergillus clavatus; malt worker's lung"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "طائر منزلي = تعرض منخفض مستمر لبروتينات مصل طائر → HP مزمن تليفي (تقدم تدريجي، تبقرط، فشل الموسعات). الميكروب حراري الحموضة يرتبط بحمى المرطب والمرطبات الملوثة، والقطن بالتبيسنوز في عمال النسيج.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "مستوى التعرض يحدد الطور: عالٍ=حاد، منخفض مستمر=مزمن"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L5_q9",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c4",
+      "question_stem": "Pulmonary function testing in a patient with chronic HP will most likely show:",
+      "options": [
+        "Obstructive defect with increased TLC and reduced FEV1/FVC",
+        "Restrictive defect with reduced TLC, reduced FVC and impaired gas transfer",
+        "Normal PFTs with isolated desaturation",
+        "Increased DLCO"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "HP مرض خلالي → نمط تقييدي: نقص الحجوم (TLC وFVC) مع ضعف انتقال الغاز (DLCO منخفض) ونقص إشباع بالجهد. النمط الانسدادي مع تضخم TLC سمة الربو/COPD.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "خلالي = أي نمط وظيفي؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L5_q10",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "concept_id": "L5_c5",
+      "question_stem": "What is the MOST important first step in managing a patient with confirmed HP?",
+      "options": [
+        "Start high-dose intravenous steroids",
+        "Cease exposure to the offending antigen",
+        "Start azathioprine",
+        "Annual influenza vaccination only"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "إيقاف التعرض هو حجر الأساس؛ الكورتيكوستيرويد (بريدنيزولون 0.5 ملغ/كغ) يعالج الالتهاب لكنه بلا فائدة دائمة مع استمرار التعرض. الأقحاح المناعي علاج مساند لاحق في المرض المزمن.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما الذي يوقف تقدم المرض جذرياً؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L5_case1",
+      "lecture_id": "L5_hypersensitivity_pneumonitis",
+      "title": "The Pigeon Fancier's Evening Fever",
+      "scenario": "A 51-year-old man attends the respiratory clinic with a 3-month history of repeated episodes of fever, chills and breathlessness that classically appear every Monday evening and gradually improve over weekends. He breeds racing pigeons in a rooftop loft and spends hours there daily. Multiple courses of antibiotics have failed, and an inhaler gave no relief. This vignette tests the candidate's ability to recognize the time-locked exposure–symptom pattern of hypersensitivity pneumonitis and to order the correct integrated workup.",
+      "vignette": {
+        "age": 51,
+        "sex": "male",
+        "chief_complaint": "Recurrent evening fever and breathlessness for 3 months",
+        "history": "Life-long non-smoker pigeon fancier with ~60 birds; daily loft cleaning. Episodes begin 4–6 hours after loft work: fever up to 38.5 C, rigors, malaise, dry cough and breathlessness — easing when away from the loft for 2–3 days. No wheeze, no nocturnal symptoms, no orthopnea. No response to salbutamol inhaler or repeated antibiotics. 5 kg weight loss over 3 months.",
+        "vitals": {
+          "bp": "128/76 mmHg",
+          "hr": "96 beats/min",
+          "rr": "22 breaths/min",
+          "temp": "37.9 C (during episode)",
+          "spo2": "92% on room air"
+        },
+        "exam": "Mildly tachypneic, no cyanosis, no clubbing yet. Bilateral fine END-inspiratory crackles mid and lower zones; no expiratory wheeze. No peripheral oedema, JVP normal, no gallop rhythm.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "10.8 x10^9/L (4-11)",
+            "flag": "normal"
+          },
+          {
+            "name": "CRP",
+            "value": "48 mg/L (<10)",
+            "flag": "high"
+          },
+          {
+            "name": "Serum avian precipitins (IgG)",
+            "value": "Positive to pigeon serum proteins",
+            "flag": "high"
+          },
+          {
+            "name": "Spirometry",
+            "value": "FEV1 68% pred, FVC 66% pred, FEV1/FVC 84% (post-BD +2%, +60 mL)",
+            "flag": "low"
+          },
+          {
+            "name": "TLC (plethysmography)",
+            "value": "65% predicted",
+            "flag": "low"
+          },
+          {
+            "name": "DLCO",
+            "value": "54% predicted",
+            "flag": "low"
+          },
+          {
+            "name": "BAL (later)",
+            "value": "Lymphocytosis with increased CD8+ T cells, CD4:CD8 ratio 0.6",
+            "flag": "high"
+          }
+        ],
+        "imaging": "CXR: ill-defined bilateral patchy airspace shadowing. HRCT: bilateral ground-glass opacity with numerous small centrilobular nodules in upper and middle zones, with mosaic attenuation (air trapping) on expiratory images; no honeycombing — consistent with subacute hypersensitivity pneumonitis."
+      },
+      "steps": [
+        {
+          "id": "L5_case1_s1",
+          "prompt": "The time pattern of his symptoms (4–6 hours after loft exposure, improving away from the loft) points to which immunologic mechanism?",
+          "options": [
+            "IgE-mediated immediate hypersensitivity (asthma)",
+            "Immune-complex (type III) + granulomatous (type IV) reaction to inhaled avian antigen",
+            "Direct toxic pneumonitis from inorganic dust",
+            "Bacterial infection from the birds"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الأعراض المتأخرة 4-8 ساعات بعد التعرض الكثيف تجسد تفاعل Arthus (معقدات IgG + متممة) مع مساهمة النوع الرابع (حبيبات غير متجبنة). الربو تفاعل فوري خلال دقائق مع صفير زفيري، والغبار غير العضوي يسبب استنشاق (pneumoconiosis) وليس نوبات حمى متكررة، والعدوى البكتيرية لا تختفي خلال عطلة نهاية الأسبوع.",
+          "xp": 15,
+          "hints": [
+            "الفاصل الزمني بين التعرض والأعراض؟",
+            "أي جسم مضاد مسؤول؟"
+          ]
+        },
+        {
+          "id": "L5_case1_s2",
+          "prompt": "Which constellation of investigations best confirms the diagnosis?",
+          "options": [
+            "Positive avian precipitins ALONE",
+            "Exposure history + clinical features + HRCT (ground-glass, centrilobular nodules, air trapping) + restrictive PFT with low DLCO, supported by BAL CD8+ lymphocytosis",
+            "Open lung biopsy is ALWAYS required",
+            "Positive tuberculin test"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "تشخيص HP سريري وإشعاعي متكامل: تعرض موثق + نمط الأعراض + HRCT المميز + نمط تقييدي بنقص DLCO + BAL بلمفاويات CD8+. الأضداد وحدها لا تكفي (أصحاء حاملون)، والخزعة تُحجز للحالات الغامضة فقط.",
+          "xp": 15,
+          "hints": [
+            "هل يكفي فحص مصلي واحد؟",
+            "ما مكونات التشخيص متعدد الركائز؟"
+          ]
+        },
+        {
+          "id": "L5_case1_s3",
+          "prompt": "What is the correct management plan?",
+          "options": [
+            "Continue loft work with a simple cloth mask; start salbutamol PRN",
+            "Cease exposure (remove birds / avoid loft, or filter mask if unavoidable) + prednisolone 0.5 mg/kg daily tapered over months; oxygen if severely hypoxemic",
+            "Long-term azithromycin prophylaxis",
+            "Immediate lung transplantation assessment"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الركيزة الأولى إيقاف التعرض نهائياً (أو كمامة بمرشح عند التعذر)، مع بريدنيزولون 0.5 ملغ/كغ يومياً حتى زوال الأعراض والنتائج الشعاعية ثم تدرج نازل إلى 10 ملغ يومياً عبر أشهر، وأكسجين لنقص الأكسجة الشديد. الاستمرار بالتعرض مع قناع قماشي بسيط يقود للتليف.",
+          "xp": 15,
+          "hints": [
+            "أي إجراء يقطع مسار المرض؟",
+            "ما جرعة الستيرويد ومنهج التدرج؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب رئة بفرط حساسية تحت حاد (pigeon fancier's lung) ببروتينات مصل الحمام. الدروس المستفادة: (1) نمط زمني مميز: أعراض شبيهة بالإنفلونزا بعد 4-8 ساعات من التعرض الكثيف وتتحسن بالابتعاد — هذا التوقيت بحد ذاته شبه تشخيصي ويقابل العاملين الستة التنبؤية (تعرض، أضداد، نوب متكررة، 4-8 ساعات، فرقعات شهيقية، نقص وزن). (2) الأضداد الراسبة IgG داعمة لكنها غير حاسمة منفردة. (3) HRCT: زجاج مغشى + عقيدات مركزية الفصية (تحفظ الجنبة) + انحصار هوائي؛ ويفرق عن الالتهاب الرئوي بأنه ثنائي الجانب منتشر متكرر. (4) الوظائف: نمط تقييدي بنقص DLCO — عكس الربو. (5) BAL: لمفاويات CD8+. (6) العلاج: إيقاف التعرض أولاً ثم بريدنيزولون 0.5 ملغ/كغ بتدرج نازل، مع إنذار جيد إذا عولج مبكراً، وإلا فالتليف والمضاعفات (تليف متقدم، ارتفاع ضغط رئوي، cor pulmonale) هي النهاية.",
+      "difficulty": "advanced",
+      "order_index": 0
+    }
+  ]
+}

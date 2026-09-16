@@ -51,10 +51,11 @@
 > home_widget يكتب بياناته في `UserDefaults(suiteName: "group.medicine_app.shared")` — نفس المعرف في `PayloadReader` داخل ملف Swift.
 
 ### ج) URL Scheme (Deep Link)
-الويدجت يستعمل `widgetURL` مع `medicineapp://daily-review` (home_widget يعترضه — **لا تحتاج تسجيل scheme يدوياً**، لكن لضمان عمله من حالة الإقلاع البارد):
+الويدجت يستعمل `widgetURL` مع `medicineapp://daily-review`:
 1. `Runner → Info` → **URL Types** → أضف:
    - Identifier: `com.medicineapp`
    - URL Schemes: `medicineapp`
+> **مهم**: التسجيل ضروري فعلاً — بدونه لا يستجيب iOS لفتح `medicineapp://` (v19.1: مضاف فعلاً في `ios/Runner/Info.plist` عبر `CFBundleURLTypes` — تحقق منه فقط إن أعاد Xcode توليد الملف).
 
 ### د) النشر
 - Builda التطبيق عادي (`flutter build ios`) — الـ Extension يُبنى تلقائياً معه.
@@ -64,18 +65,30 @@
 
 ## 3) كيف تعمل البيانات (العقد الموحد)
 
-| المفتاح | Dart (الكاتب) | Android (القارئ) | iOS (القارئ) |
-|---|---|---|---|
-| `due_cards` | `HomeWidgetService.keyDueCards` | `prefs.getString("due_cards")` | `defaults.string(forKey: "due_cards")` |
-| `daily_progress` | `keyDailyProgress` | `"daily_progress"` | `"daily_progress"` |
-| `medical_tip` | `keyMedicalTip` | `"medical_tip"` | `"medical_tip"` |
-| `completed_today` | `keyCompletedToday` | (احتياطي) | (احتياطي) |
+| المفتاح | Dart (الكاتب) | Android (القارئ) | iOS (القارئ) | العرض في v19 |
+|---|---|---|---|---|
+| `pinned_titles` | `keyPinnedTitles` | `prefs.getString("pinned_titles")` | `defaults.string(forKey: "pinned_titles")` | أسطر «أهدافي» (سقف 3) |
+| `pinned_count` | `keyPinnedCount` | (احتياطي — طول القائمة المقطوعة) | fallback رجعي لـ `pinned_total` | — |
+| `pinned_total` | `keyPinnedTotal` | `prefs.getString("pinned_total")` | `defaults.string(forKey: "pinned_total")` | عدّاد «+N أخرى» |
+| `clinical_pearl` | `keyClinicalPearl` | `prefs.getString("clinical_pearl")` | `defaults.string(forKey: "clinical_pearl")` | «لؤلؤة اليوم» |
+| `due_cards` | `HomeWidgetService.keyDueCards` | (احتياطي v1) | (احتياطي v1) | لا يُعرض حالياً |
+| `daily_progress` | `keyDailyProgress` | (احتياطي v1) | (احتياطي v1) | لا يُعرض حالياً |
+| `medical_tip` | `keyMedicalTip` | (احتياطي v1) | (احتياطي v1) | لا يُعرض حالياً |
+| `completed_today` | `keyCompletedToday` | (احتياطي) | (احتياطي) | — |
 
-- **التحديث الفوري**: بعد كل إجابة بطاقة/إنهاء جلسة (flashcard_session / mcq_session / bank_session) → `HomeWidgetService.refresh()`.
+**عقد v19.1 (تحديث الإصلاحات):**
+- **عدّاد «+N أخرى»**: `pinned_total` = إجمالي المثبتات غير المكتملة **بلا سقف** (`countPendingPinnedLectures`) — لا تخلطه مع `pinned_count` (طول قائمة العناوين المقطوعة بـ 3). Native يحسب الزائد عن `MAX_LINES=3`.
+- **حد اليوم محلي**: أحداث اليوم تُحصى منذ منتصف الليل **بتوقيت الجهاز** (كانت UTC فتتصفر العدادات 3 فجراً بتوقيت UTC+3).
+- **تحصين الفواصل**: عنوان محاضرة يحوي `|` يُستبدل بـ `⁄` قبل الدمج كي لا ينشق سطر «أهدافي» خطياً.
+- **نقرة الإقلاع البارد**: نية تسجَّل في `HomeWidgetService` إذا وصلت قبل جهوزية الراوتر، وتستهلكها شاشة البداية (`consumePendingNavigation`) فتوجّه للمراجعة اليومية بدل وجهتها الافتراضية — بعد التهيئة الأولى فقط. بعدها (`markStartupFinished`) النقرات توجيه فوري.
+- **تحديث عند التثبيت/الفك**: `curriculum_page._togglePin` + `concept_reader._finish` (فك التثبيت التلقائي) يستدعيان `refresh()` — «أهدافي» في الويدجت تتغير لحظياً.
+- **Android manifest**: `HomeWidgetBackgroundReceiver` + `HomeWidgetBackgroundService` مصرَّحان في manifest التطبيق (بدونهما بث التحديث الخلفي لا يصل أحداً — تصريح الحزمة نفسها فارغ).
+
+- **التحديث الفوري**: بعد كل إجابة بطاقة/إنهاء جلسة (flashcard_session / mcq_session / bank_session / concept_reader) + عند تثبيت/فك تثبيت محاضرة → `HomeWidgetService.refresh()`.
 - **عند فتح التطبيق**: `main.dart` يستدعي `refresh()`.
 - **الخلفية**: Android = WorkManager كل 6 ساعات (يبث لـ HomeWidgetBackgroundReceiver) · iOS = TimelinePolicy `.after(6h)` + `WidgetCenter.reloadTimelines`.
-- **الضغط**: `medicineapp://daily-review` → `initiallyLaunchedFromHomeWidget` (إقلاع بارد) أو `widgetClicked` (تطبيق حي) → `go_router.go('/daily-review')`.
+- **الضغط**: `medicineapp://daily-review` → `initiallyLaunchedFromHomeWidget` (إقلاع بارد — عبر نية شاشة البداية) أو `widgetClicked` (تطبيق حي) → `go_router.go('/daily-review')`. iOS يتطلب `CFBundleURLTypes` في Info.plist (مسجل فعلاً).
 
 ## 4) التحقق
-- اختبارات Dart: `test/home_widget_payload_test.dart` (4 اختبارات — الحمولة النقية).
-- لاختبار التحديث الخلفي في أندرويد: `adb shell am broadcast -a es.antonborri.home_widget.action.BACKGROUND -n com.example.medicine_app/.MedicineWidgetWorker` أو انتظر دورة WorkManager.
+- اختبارات Dart: `test/home_widget_payload_test.dart` (11 اختباراً — الحمولة النقية + العدد الكلي + تحصين الفواصل + استهلاك النية المعلّقة).
+- لاختبار التحديث الخلفي في أندرويد: `adb shell am broadcast -a es.antonborri.home_widget.action.BACKGROUND -n com.example.medicine_app/es.antonborri.home_widget.HomeWidgetBackgroundReceiver` أو انتظر دورة WorkManager.

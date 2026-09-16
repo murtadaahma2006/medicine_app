@@ -84,7 +84,11 @@ abstract final class DailyReminderService {
       const AndroidInitializationSettings android =
           AndroidInitializationSettings('@mipmap/ic_launcher');
       const DarwinInitializationSettings darwin =
-          DarwinInitializationSettings();
+          DarwinInitializationSettings(
+        requestAlertPermission: true,
+        requestBadgePermission: true,
+        requestSoundPermission: true,
+      );
       const InitializationSettings settings = InitializationSettings(
         android: android,
         iOS: darwin,
@@ -93,10 +97,28 @@ abstract final class DailyReminderService {
       await plugin.initialize(settings);
       _plugin = plugin;
       _initialized = true;
+      // Android 13+ (API 33): الإشعارات معطلة افتراضياً — الطلب مرة واحدة.
+      await _requestAndroidPermissions(plugin);
     } catch (error) {
       // بيئات الاختبار وسطح المكتب بلا إعدادات منصة → صمت.
       debugPrint('DailyReminder: التهيئة غير متاحة هنا ($error)');
       _initialized = false;
+    }
+  }
+
+  /// يطلب إذن POST_NOTIFICATIONS على Android 13+ (v19 من الإضافة).
+  /// في الإصدارات الأقدم (وiOS بعد التهيئة أعلاه) يعيد true مباشرة.
+  static Future<void> _requestAndroidPermissions(
+    FlutterLocalNotificationsPlugin plugin,
+  ) async {
+    try {
+      await plugin
+          .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>()
+          ?.requestNotificationsPermission();
+    } catch (error) {
+      // رفض المستخدم أو منصة بلا إشعارات — لا يُسقط التطبيق.
+      debugPrint('DailyReminder: إذن الإشعارات غير متاح ($error)');
     }
   }
 
@@ -127,8 +149,8 @@ abstract final class DailyReminderService {
 
       await plugin.zonedSchedule(
         _notificationId,
-        'وقت الألمانية! 🇩🇪',
-        'خمس دقائق تكفي لتقوية سلسلتك اليومية.',
+        'مراجعة الطب الباطني 🩺',
+        'خمس دقائق تكفي لتقوية سلسلتك وترسيخ بطاقات اليوم.',
         scheduled,
         details,
         androidScheduleMode: AndroidScheduleMode.inexact,

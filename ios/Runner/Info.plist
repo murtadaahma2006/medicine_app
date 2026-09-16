@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>medicine_app</string>
+	<string>MedOS</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -24,6 +24,20 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<!-- مخطط URL لويدجت الشاشة الرئيسية — الضغط على الويدجت يفتح
+	     التطبيق على medicineapp://daily-review (نفس dailyReviewUri
+	     في HomeWidgetService). بدونه لا يستجيب iOS لفتح الرابط. -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.medicineapp</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>medicineapp</string>
+			</array>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

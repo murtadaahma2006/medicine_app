@@ -1,0 +1,1551 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L1_esophagus",
+    "specialty": "surgery",
+    "title": "Esophagus I: Surgical Anatomy, Physiology, Esophageal Emergencies, GERD and Hiatus Hernia",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L1 ESOPHAGUS FULL.pdf",
+      "page_count": 55
+    },
+    "tags": [
+      "esophagus",
+      "gerd",
+      "hiatus hernia",
+      "boerhaave syndrome",
+      "mallory-weiss",
+      "corrosive injury",
+      "nissen fundoplication",
+      "barrett esophagus"
+    ],
+    "order_index": 1,
+    "golden_tip": [
+      "Surgical (subcutaneous) emphysema after vomiting is virtually pathognomonic for esophageal perforation - treat as Boerhaave until proven otherwise, not myocardial infarction.",
+      "Boerhaave is the most serious esophageal perforation: full-thickness barotrauma drives gastric content into the mediastinum and pleura - rapid chemical irritation, then fatal infection if untreated.",
+      "Beware button batteries in the esophagus: they burn and perforate within hours - urgent endoscopic removal, never observation.",
+      "Severity of GERD symptoms often fails to match the severity of erosive esophagitis, and many Barrett's patients are asymptomatic - endoscope whenever alarm features appear.",
+      "Types II-IV hiatus hernia can volvulize, obstruct and strangulate; repair = reduce the hernia, resect the sac, close the hiatal defect. Type I is managed like GERD."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L1_esophagus_c01",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Esophageal Surgical Anatomy",
+      "summary_ar": "يغطي هذا المفهوم التشريح الجراحي للمريء: أنبوب عضلي يصل البلعوم بالمعدة وطوله 23-25 سم يحوي عاصرتين، ومواضع الانضغاط الخارجي الثلاثة (الأبهر والشعبة الرئيسية اليسرى والحجاب الحاجز) حيث تعلق الأجسام الأجنبية، وطبقات الجدار من المخاطية الحرشفية إلى البرانية عديمة المصلية، والتعصيب المبهمي بأستيل كولين المُثير والنتريك أكسيد المُثبِّط، والتروية الدموية القطعية.",
+      "sections": [
+        {
+          "heading": "Gross Anatomy, Landmarks and Lecture Objectives",
+          "body_text": "The lecture sets four objectives: to understand the surgical anatomy and physiology of the esophagus, to assess how to evaluate patients with esophageal diseases, to understand how trauma affects the esophagus, and to build a rational approach to patients with benign and malignant esophageal diseases.\n\nThe esophagus is a **muscular tube connecting the pharynx to the stomach**. It measures **23-25 cm in length** and contains **two sphincters**, an upper esophageal sphincter (UES) and a lower esophageal sphincter (LES). It is **lined by squamous epithelium** (stratified, non-keratinizing) and only a short segment, **less than 3 cm, lies below the diaphragm** as the intra-abdominal esophagus. Although conceptually a simple conduit, the structure and function of the esophagus are considerably more complex than a plain tube: it coordinates bolus transport, barrier function at both ends, and clearance of refluxate, all without a serosal cover for most of its length.",
+          "key_points": [
+            "Esophagus = muscular tube from pharynx to stomach, 23-25 cm long.",
+            "Contains two sphincters: upper (UES) and lower (LES).",
+            "Lined by stratified squamous epithelium; less than 3 cm lies below the diaphragm.",
+            "Lecture objectives: anatomy and physiology, patient assessment, trauma effects, approach to benign and malignant disease."
+          ]
+        },
+        {
+          "heading": "Sites of External Compression and Clinical Relevance",
+          "body_text": "Three structures indent and externally compress the esophageal lumen at predictable points:\n- The **aorta** (impression of the arch and descending thoracic aorta).\n- The **left main stem bronchus**.\n- The **diaphragm** (the hiatal narrowing at the diaphragmatic hiatus).\n\nThese are the narrowest points of the esophageal lumen and therefore the levels at which swallowed objects slow down or lodge. The lecture stresses a direct **clinical application in foreign body impaction**: coins, food boluses and, most dangerously, **button batteries** typically impact at one of these three compressions, so the radiograph of any impacted foreign body must be interpreted with these levels in mind.",
+          "key_points": [
+            "External compression sites: aorta, left main stem bronchus, diaphragm.",
+            "These three narrowings are the classic impaction points for foreign bodies.",
+            "Radiographs of impacted objects should be read against these levels."
+          ],
+          "check": {
+            "prompt": "Which triplet gives the classic sites of external compression of the esophagus?",
+            "options": [
+              "Aorta, left main stem bronchus, diaphragm",
+              "Aorta, right main stem bronchus, pylorus",
+              "Inferior vena cava, right bronchus, cricopharyngeus",
+              "Azygos vein, pulmonary trunk, gastroesophageal junction",
+              "Left atrium, trachea, splenic flexure"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مواضع الانضغاط الخارجي الثلاثة هي الأبهر والشعبة الرئيسية اليسرى والحجاب الحاجز، وهي أضيق نقاط المريء حيث تعلق الأجسام الأجنبية عادة."
+          }
+        },
+        {
+          "heading": "Histology of the Esophageal Wall",
+          "body_text": "From lumen outward, the esophageal wall has these layers:\n- **Mucosa** - composed of **stratified squamous epithelium**, **lamina propria** and **muscularis mucosa**.\n- **Submucosa** - loose connective tissue containing the submucosal (Meissner) plexus, mucus glands and vessels.\n- **Muscularis propria** - **skeletal muscle in the upper one third** and **smooth muscle in the lower two thirds**; this mixed arrangement explains why the cervical esophagus is under volitional control, while the thoracic and abdominal segments are autonomically driven.\n- **Adventitia** - an outer fibroelastic coat. The esophagus has **no serosa and no mesentery** along most of its length, which is surgically decisive: it weakens suture-holding and permits rapid spread of infection and tumor into the mediastinum.",
+          "key_points": [
+            "Mucosa: stratified squamous epithelium + lamina propria + muscularis mucosa.",
+            "Muscularis propria: skeletal muscle upper 1/3, smooth muscle lower 2/3.",
+            "Adventitia only - no serosal covering over most of the esophagus.",
+            "Absence of serosa favors early mediastinal spread of infection and cancer."
+          ],
+          "check": {
+            "prompt": "Which statement about esophageal muscle histology is correct?",
+            "options": [
+              "Skeletal muscle in the upper 1/3 and smooth muscle in the lower 2/3",
+              "Smooth muscle in the upper 2/3 and skeletal muscle in the lower 1/3",
+              "Skeletal muscle throughout the entire length",
+              "Smooth muscle throughout the entire length",
+              "Cardiac-type striated muscle in the middle third only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الثلث العلوي من المريء عضلات هيكلية إرادية والثلثان السفليان عضلات ملساء لا إرادية، وهذا يفسر التحكم الإرادي ببداية البلع."
+          }
+        },
+        {
+          "heading": "Innervation and Neurotransmitters",
+          "body_text": "Esophageal innervation is predominantly **vagal**. The **vagus nerve supplies the smooth muscle** of the lower two thirds, while the striated muscle of the upper third receives its motor input through the recurrent laryngeal branches of the vagus and the glossopharyngeal nerve. Two intrinsic plexuses run within the wall:\n- The **myenteric (Auerbach) plexus**, lying between the circular and longitudinal muscle coats, which generates and coordinates **peristalsis**.\n- The **Meissner's (submucosal) plexus**, which regulates secretion and submucosal blood flow.\n\nThe key neurotransmitters are functionally polarized: **acetylcholine (ACh) is excitatory and predominates proximally**, whereas **nitric oxide (NO) is inhibitory and predominates distally**. Loss of the distal inhibitory neurons (as in achalasia) abolishes LES relaxation; loss of proximal excitatory drive (as in scleroderma) strips the esophagus of propulsive power.",
+          "key_points": [
+            "Vagus nerve supplies the smooth-muscle (lower 2/3) esophagus.",
+            "Myenteric plexus drives peristalsis; Meissner plexus is submucosal.",
+            "ACh = excitatory, proximal; NO = inhibitory, distal.",
+            "Achalasia = loss of distal inhibitory neurons; scleroderma = loss of excitatory drive."
+          ]
+        },
+        {
+          "heading": "Blood Supply - Segmental Orientation",
+          "body_text": "The esophageal blood supply follows a **segmental orientation**, matching its three topographic segments, and each segment shares its vessels with **other viscera**:\n- **Cervical esophagus** - inferior thyroid arteries (shared with the thyroid gland).\n- **Thoracic esophagus** - bronchial arteries and multiple small direct branches from the descending thoracic aorta.\n- **Abdominal esophagus** - left gastric artery (a celiac trunk branch shared with the stomach) and the inferior phrenic arteries.\n\nVenous drainage parallels the arteries: the cervical and thoracic segments drain to the brachiocephalic and azygos/hemiazygos systems, while the abdominal segment drains via the left gastric vein into the portal system. This creates the **portal-systemic anastomosis at the distal esophagus**, the seat of esophageal varices in portal hypertension. The rich intramural anastomotic network explains why esophageal anastomoses generally heal well and why ischemic strictures of the esophagus are uncommon.",
+          "key_points": [
+            "Segmental supply: inferior thyroid (cervical), bronchial/aortic branches (thoracic), left gastric and inferior phrenic (abdominal).",
+            "Left gastric venous drainage creates the portal-systemic anastomosis - the variceal zone.",
+            "Rich intramural collaterals explain good anastomotic healing."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Adventitia",
+          "definition_ar": "الغلاف الليفي الخارجي للمريء؛ لا يمتلك المريء مصلية على معظم طوله، مما يسمح بانتشار العدوى والأورام بسرعة إلى المنصف."
+        },
+        {
+          "term": "Stratified squamous epithelium",
+          "definition_ar": "بطانة المريء المكوّنة من خلايا حرشفية طبقية مقاومة لخدش مرور الطعام."
+        },
+        {
+          "term": "Muscularis propria",
+          "definition_ar": "طبقة العضلات الرئيسية للمريء: الثلث العلوي عضلات هيكلية والثلثان السفليان عضلات ملساء."
+        },
+        {
+          "term": "Myenteric plexus",
+          "definition_ar": "ضفيرة عصبية (أورباخ) بين العضلتين الدائرية والطولية تنسّق حركة التمعج في المريء."
+        },
+        {
+          "term": "Meissner plexus",
+          "definition_ar": "الضفيرة العصبية تحت المخاطية التي تنظّم الإفراز والأوعية تحت المخاطية."
+        },
+        {
+          "term": "Portal-systemic anastomosis",
+          "definition_ar": "التوصل البابي الجهازي عند الجزء البطني للمريء عبر وريد المعدة الأيسر، وهو موضع دوالي المريء في فرط ضغط الباب."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L1_esophagus_c02",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Esophageal Physiology: Peristalsis and the Two Sphincters",
+      "summary_ar": "يشرح هذا المفهوم فيزيولوجيا المريء: المعج الأولي المطلق ببلعة الطعام والمنقبض من الأعلى إلى الأسفل، والثانوي المطلق بتمدد المريء والارتجاع لتنظيف التجويف، والانقباضات الثالثة غير الدافعة، والعاصرة العلوية من العضلة الحلقية البلعومية المنقبضة نبريا في الراحة، والعاصرة السفلية بضغط 10-40 ملم زئبق كعاصرة فسيولوجية تعمل مع الحجاب الحاجز.",
+      "sections": [
+        {
+          "heading": "Patterns of Esophageal Peristalsis",
+          "body_text": "Esophageal motor activity takes three recognizable patterns:\n- **Primary peristalsis** - initiated by the **food bolus**; a progressive contraction wave that travels **from proximal to distal**, carrying the swallowed bolus into the stomach. It is the contraction sequence of the voluntary swallow.\n- **Secondary peristalsis** - triggered by **esophageal distention (a residual food bolus) and by reflux**; it is a clearance reflex that strips retained material and refluxate back into the stomach without a new swallow.\n- **Tertiary contractions** - non-propulsive, uncoordinated contractions of the esophageal body. They serve no transport function and are common incidental manometric and radiologic findings, becoming frequent with aging and prominent in diffuse esophageal spasm.\n\nTogether, peristaltic amplitude and the sequenced relaxation of the two sphincters guarantee bolus transport and esophageal emptying; failure of this machinery produces dysphagia and stasis rather than pain alone.",
+          "key_points": [
+            "Primary peristalsis: food bolus, contraction travels proximal to distal.",
+            "Secondary peristalsis: esophageal distention (residual bolus) and reflux - the clearance reflex.",
+            "Tertiary contractions: non-propulsive, uncoordinated, common with aging."
+          ],
+          "check": {
+            "prompt": "Which peristaltic pattern clears refluxate or a residual bolus WITHOUT a new swallow?",
+            "options": [
+              "Primary peristalsis",
+              "Secondary peristalsis",
+              "Tertiary contractions",
+              "Gastric antral milling",
+              "Reverse peristalsis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المعج الثانوي يُطلقه تمدد المريء ببقايا الطعام أو الارتجاع لتنظيف التجويف دون بلعة جديدة، بينما الأولي يتبع البلع مباشرة والثالث غير دافع."
+          }
+        },
+        {
+          "heading": "Upper Esophageal Sphincter (UES)",
+          "body_text": "The **upper esophageal sphincter is composed of the cricopharyngeus muscle** - the transverse fibers attached to the cricoid cartilage that close the pharyngoesophageal junction.\n- **At rest it is in a state of tonic contraction** (tonic contracture), which prevents inspired air from entering the esophagus and protects the airway from aspirated esophageal content.\n- **During the pharyngeal phase of swallowing it relaxes** precisely for the fraction of a second needed for the bolus to pass from pharynx to esophagus, then closes again before the propulsive wave arrives.\n\nFailure of timed cricopharyngeal relaxation (cricopharyngeal achalasia, Zenker diverticulum) produces dysphagia felt high in the neck, while weakness of UES closure predisposes to aspiration pneumonia.",
+          "key_points": [
+            "UES = cricopharyngeus muscle.",
+            "Rest: tonic contraction (guards the airway).",
+            "Pharyngeal phase of swallowing: timed relaxation."
+          ]
+        },
+        {
+          "heading": "Lower Esophageal Sphincter (LES) - the Physiological Sphincter",
+          "body_text": "The **lower esophageal sphincter** is defined by function rather than by anatomy:\n- Its resting pressure is **10-40 mm Hg** above intragastric pressure.\n- It lies **below the diaphragm**, at the top of the short intra-abdominal esophageal segment (less than 3 cm).\n- It is a **physiological sphincter, not a true anatomic sphincter** - no distinct anatomical ring exists; the high-pressure zone is created by the thickened circular muscle of the distal esophagus together with the pinchcock effect of the diaphragmatic crura and the mucosal rosette at the cardia.\n- The LES **normally works in conjunction with the diaphragm** to form the primary antireflux barrier - a relationship revisited in GERD and hiatus hernia.\n\nTransient LES relaxations that are not triggered by swallowing are the dominant mechanism allowing reflux episodes in both healthy people and GERD patients.",
+          "key_points": [
+            "LES resting pressure: 10-40 mm Hg.",
+            "Located below the diaphragm; physiological, not a true anatomic sphincter.",
+            "Works in conjunction with the diaphragm as the main antireflux barrier.",
+            "Transient LES relaxations are the dominant reflux mechanism."
+          ],
+          "check": {
+            "prompt": "What is the normal resting pressure range of the lower esophageal sphincter?",
+            "options": [
+              "0-5 mm Hg",
+              "10-40 mm Hg",
+              "60-90 mm Hg",
+              "100-140 mm Hg",
+              "Identical to intragastric pressure at all times"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "يتراوح الضغط الانقباضي للعاصرة السفلية بين 10 و40 ملم زئبق فوق الضغط داخل المعدة، وهي عاصرة فسيولوجية تقع أسفل الحجاب الحاجز."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Primary peristalsis",
+          "definition_ar": "الموجة التمعجية الأولى التي يطلقها البلع، تنقبض من الأعلى إلى الأسفل لدفع البلعة إلى المعدة."
+        },
+        {
+          "term": "Secondary peristalsis",
+          "definition_ar": "المعج الثانوي الذي يُطلقه تمدد المريء ببقايا الطعام أو الارتجاع، ووظيفته تنظيف تجويف المريء دون بلعة جديدة."
+        },
+        {
+          "term": "Tertiary contractions",
+          "definition_ar": "انقباضات ثالثة غير دافعة وغير متناسقة لا تنقل الطعام، تكثر مع تقدم العمر وفي التشنج المنتشر للمريء."
+        },
+        {
+          "term": "Cricopharyngeus muscle",
+          "definition_ar": "العضلة الحلقية البلعومية المكوِّنة للعاصرة المريئية العلوية، تنقبض نبريا في الراحة وتسترخي في الطور البلعومي للبلع."
+        },
+        {
+          "term": "Physiological sphincter",
+          "definition_ar": "عاصرة وظيفية دون حلقة تشريحية مميزة؛ العاصرة السفلية للمريء نموذج لها وتعمل مع الحجاب الحاجز كحاجز مضاد للارتجاع."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L1_esophagus_c03",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Esophageal Testing and Symptom Assessment",
+      "summary_ar": "يستعرض هذا المفهوم اختبارات المريء الأربعة: بلع الباريوم والتنظير المرن أو الصلب وقياس الضغط داخل التجويف ورصد الحموضة على مدار 24 ساعة، مع مؤشرات التنظير ودور قياس الضغط في اضطرابات الحركة، ثم تقييم الأعراض النموذجية كالحرقة وعسر البلع والارتجاع، والأعراض غير النموذجية كبحة الصوت والسعال والرائحة الكريهة.",
+      "sections": [
+        {
+          "heading": "The Four Core Esophageal Tests",
+          "body_text": "Esophageal testing rests on four complementary investigations:\n- **Barium swallow** - a contrast radiograph of swallowing that defines anatomy: strictures, diverticula, hiatal hernia, extrinsic compression, leaks and fistulae.\n- **Endoscopy** - direct mucosal and structural inspection, with biopsy and therapeutic capability.\n- **Manometry** - intraluminal pressure measurement of the sphincters and peristaltic function.\n- **24-hour pH monitoring** - continuous (ambulatory) measurement of acid exposure in the esophagus over a full day-night cycle, correlating symptoms with reflux episodes.\n\nThe sequence chosen depends on the working diagnosis: structural questions go to barium swallow and endoscopy first, whereas functional questions go to manometry and pH monitoring.",
+          "key_points": [
+            "Four tests: barium swallow, endoscopy, manometry, 24-hour pH monitoring.",
+            "Barium swallow and endoscopy answer structural questions.",
+            "Manometry and pH monitoring answer functional questions."
+          ]
+        },
+        {
+          "heading": "Endoscopy: Evaluation and Indications",
+          "body_text": "Endoscopy (esophagoscopy, or upper GI endoscopy/EGD) evaluates:\n- The **mucosa** (esophagitis, Barrett metaplasia, mucosal tears, tumors).\n- **Structural abnormalities** (strictures, webs, rings, extrinsic compression, hiatal hernia).\n- It may be **rigid or flexible**; flexible instruments dominate modern practice, while rigid esophagoscopy retains a role for some impacted foreign bodies.\n- It is **diagnostic and/or therapeutic** (dilation, injection of bleeding lesions, foreign body retrieval, stenting).\n\n**Indications for endoscopy** in esophageal disease:\n- **Weight loss**.\n- **Upper gastrointestinal bleeding**.\n- **Dysphagia, odynophagia and chest pain** of esophageal origin.\n- **Partial or no response to empiric therapy** - a warning that the symptomatic diagnosis is wrong.\n- **Evaluation for Barrett's esophagus** in chronic reflux.",
+          "key_points": [
+            "Evaluates mucosa and structural abnormalities; rigid or flexible; diagnostic and/or therapeutic.",
+            "Indications: weight loss, upper GI bleeding, dysphagia/odynophagia/chest pain.",
+            "Partial or no response to empiric therapy mandates endoscopy.",
+            "Evaluation for Barrett's esophagus is a standing indication in chronic GERD."
+          ]
+        },
+        {
+          "heading": "Manometry - Measuring Esophageal Motor Function",
+          "body_text": "Esophageal manometry **measures intraluminal pressures** along the esophagus and thereby demonstrates:\n- The **coordination of the pressure activities of the LES, the esophageal body and the UES** during swallowing.\n- Resting sphincter pressures, peristaltic amplitude, wave progression and completeness of deglutitive relaxation.\n\nIts main indication is the **assessment of patients with symptoms suggestive of esophageal motor dysfunction**, classically:\n- **Achalasia** - absent peristalsis with a hypertensive, non-relaxing LES.\n- **Scleroderma** - low LES pressure with feeble, aperistaltic smooth-muscle segments (the inverse pattern).\n\nManometry is also essential before antireflux surgery, to exclude a misdiagnosed motility disorder, and during 24-hour pH studies, to position the pH electrode 5 cm above the manometrically defined LES.",
+          "key_points": [
+            "Manometry measures intraluminal pressures.",
+            "Shows coordination of LES, esophageal body and UES pressure activity.",
+            "Key indications: suspected motor dysfunction - achalasia, scleroderma.",
+            "Mandatory before antireflux surgery and for pH-catheter positioning."
+          ]
+        },
+        {
+          "heading": "Typical (Classic) Esophageal Symptoms",
+          "body_text": "The five typical esophageal symptoms are:\n- **Heartburn** - retrosternal burning rising toward the throat; the cardinal reflux symptom.\n- **Dysphagia** - the **sensation of food being delayed in its normal passage from mouth to stomach**; patients often complain of a sensation of food 'sticking'. Note that dysphagia is a transit symptom, not merely pain.\n- **Odynophagia** - painful swallowing, typical of severe esophagitis, pill-induced injury, infection or neoplasia.\n- **Regurgitation** - effortless return of esophageal or gastric content into the mouth or pharynx, without nausea or retching.\n- **Aspiration** - entry of refluxed material into the airway, causing nocturnal cough, choking or pneumonia.\n\nThe combination of typical symptoms with risk factors usually allows a working diagnosis before any test is ordered.",
+          "key_points": [
+            "Heartburn, dysphagia, odynophagia, regurgitation, aspiration = the five typical symptoms.",
+            "Dysphagia = sensation of food delayed/sticking in its passage from mouth to stomach.",
+            "Aspiration = refluxate entering the airway (nocturnal cough, choking, pneumonia)."
+          ],
+          "check": {
+            "prompt": "A patient reports the sensation of food 'sticking' during its passage from mouth to stomach. Which symptom is this, by definition?",
+            "options": [
+              "Odynophagia",
+              "Dysphagia",
+              "Globus",
+              "Regurgitation",
+              "Heartburn"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "عسر البلع هو الإحساس بتأخر الطعام في مروره الطبيعي من الفم إلى المعدة، وكثيرا ما يصفه المريض بأن الطعام يعلق."
+          }
+        },
+        {
+          "heading": "Atypical Esophageal Symptoms",
+          "body_text": "Esophageal disease - especially reflux - frequently presents outside the retrosternal territory. Atypical symptoms include:\n- **Dyspepsia** (epigastric burning and fullness).\n- **Nausea and vomiting**.\n- **Hematemesis** (haematemesis).\n- **Globus** - the sensation of a lump in the throat with no structural obstruction.\n- **Coughing**, **throat clearing** and **throat pain**.\n- **Hoarseness** (reflux laryngitis).\n- **Wheezing/stridor** and **dyspnea** (reflux-triggered bronchospasm).\n- **Apnea** (reflux-associated apneic spells in infants).\n- **Halitosis**.\n\nBecause these symptoms overlap with respiratory, ENT and cardiac disease, a high index of suspicion is required; complications of GERD may appear in patients who never had typical heartburn.",
+          "key_points": [
+            "Atypical list: dyspepsia, nausea/vomiting, hematemesis, globus, cough, throat clearing, throat pain, hoarseness, wheezing/stridor, dyspnea, apnea, halitosis.",
+            "GERD complications can appear without typical symptoms.",
+            "Respiratory and ENT presentations of reflux are common and easily missed."
+          ],
+          "check": {
+            "prompt": "Which of the following is an ATYPICAL symptom of esophageal disease?",
+            "options": [
+              "Heartburn",
+              "Dysphagia",
+              "Hoarseness with throat clearing",
+              "Regurgitation",
+              "Aspiration"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "بحة الصوت وتنظيف الحلق المتكرر عرضان غير نموذجيان لداء المريء يُعزيان غالبا إلى الارتجاع، بينما الحرقة وعسر البلع والارتجاع أعراض نموذجية."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Barium swallow",
+          "definition_ar": "دراسة شعاعية بالبلع مع الباريوم تُظهر التشريح: التضيقات والفتوق والانضغاطات الخارجية والتسريبات."
+        },
+        {
+          "term": "Esophageal manometry",
+          "definition_ar": "قياس الضغوط داخل تجويف المريء لتقييم تناسق عمل العاصرتين وجسم المريء، أساسي في اضطرابات الحركة كاللا ارتخائية وتصلب الجلد."
+        },
+        {
+          "term": "24-hour pH monitoring",
+          "definition_ar": "رصد حموضة المريء على مدار 24 ساعة لربط نوبات الارتجاع بالأعراض وكمية التعرض للحمض."
+        },
+        {
+          "term": "Dysphagia",
+          "definition_ar": "الإحساس بتأخر الطعام أثناء مروره من الفم إلى المعدة، وكثيرا ما يوصف بأن الطعام يعلق."
+        },
+        {
+          "term": "Odynophagia",
+          "definition_ar": "ألم أثناء البلع، يوحي بالتهاب مريء شديد أو إصابة دوائية أو إنتانية أو ورم."
+        },
+        {
+          "term": "Globus",
+          "definition_ar": "الإحساس بكتلة في الحلق دون انسداد بنيوي حقيقي."
+        },
+        {
+          "term": "Aspiration",
+          "definition_ar": "دخول المحتوى المرتجع إلى المجاري الهوائية مسببا سعالا ليليا أو شرقا أو ذات رئة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L1_esophagus_c04",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Esophageal Emergencies: Foreign Bodies, Perforation and Mallory-Weiss Syndrome",
+      "summary_ar": "يتناول هذا المفهوم طوارئ المريء: الأجسام الأجنبية وأشيعها بلعة الطعام الدالة على مرض كامن مع خطر بطاريات الأزرار، والانثقاب العلاجي المنشأ أو التلقائي الانضغاطي (متلازمة بورهاف) الذي يظل الانتفاخ الجراحي علامته شبه المميزة مع فخ التشخيص الخاطئ كجلطة قلبية، وقرار العلاج الجراحي أو التحفظي وفق أربعة عوامل، ومتلازمة مالوري-ويس النزفية.",
+      "sections": [
+        {
+          "heading": "Foreign Bodies in the Esophagus",
+          "body_text": "Foreign body entrapment is a common esophageal emergency.\n- The **most common esophageal foreign body is a food bolus** (typically meat impaction), and its importance is that it **usually signifies underlying disease** - a stricture, ring, web or tumor that has narrowed the lumen. A bolus impaction in an adult therefore mandates later endoscopic evaluation of the esophagus even after successful clearance.\n- **It is usually possible to remove foreign bodies by flexible or rigid endoscopy** under sedation or anesthesia; blind instrumental pushing, bougienage of an unrecognized obstruction and forced emesis are discouraged.\n- **Beware of button batteries in the oesophagus**: a lodged disc generates hydroxide at its negative pole and burns the mucosa within hours, producing deep necrosis, perforation and even aortoesophageal fistula. A battery seen on x-ray within the esophagus is an indication for **urgent endoscopic removal**, never for observation.\n- Impaction occurs at the **three sites of external compression** (aorta, left main stem bronchus, diaphragm).\n\nButton batteries, sharp objects and multiple magnets all warrant same-session urgent removal rather than watchful waiting.",
+          "key_points": [
+            "Most common foreign body: food bolus - usually signifies underlying disease.",
+            "Removal is usually possible by flexible or rigid endoscopy.",
+            "Beware button batteries - burns and perforation within hours; urgent removal.",
+            "Impaction happens at the three compression sites."
+          ],
+          "check": {
+            "prompt": "A child has a button battery impacted in the upper esophagus. What is the correct action?",
+            "options": [
+              "Observe with repeat x-ray in 24 hours",
+              "Discharge home awaiting spontaneous passage",
+              "Urgent endoscopic removal (flexible or rigid)",
+              "Barium swallow before any intervention",
+              "Induce vomiting to expel the battery"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "بطارية الزر تحرق مخاطية المريء خلال ساعات وقد تثقبه، لذا إزالتها التنظيرية إجراء عاجل لا يحتمل المراقبة أو التأجيل."
+          }
+        },
+        {
+          "heading": "Perforation: Etiology and Boerhaave Syndrome (Barotrauma)",
+          "body_text": "Perforation of the oesophagus is **usually iatrogenic (at therapeutic endoscopy)** - dilation, variceal therapy, foreign body retrieval, stenting - **or due to 'barotrauma' (spontaneous perforation)**.\n\n**Barotrauma (spontaneous perforation, Boerhaave syndrome):**\n- This occurs **classically when a person vomits against a closed glottis**. The pressure in the oesophagus **increases rapidly**, and the oesophagus **bursts at its weakest point in the lower third**, sending a **stream of material into the mediastinum and often the pleural cavity as well**.\n- **Boerhaave syndrome is the most serious type of perforation. WHY? Because it is a full-thickness barometric rupture of a healthy wall**: it causes **rapid chemical irritation in the mediastinum and pleura followed by infection if untreated** - fulminant mediastinitis, empyema and septic shock. Instrumental perforations, by contrast, are often recognized immediately, occur in a prepared patient and are frequently contained.\n- The lecture asks: what factors enhance the spread of gastro-intestinal fluid to the mediastinum? The **negative intrathoracic pressure during inspiration actively sucks fluid out** through the tear, while continued swallowing keeps feeding the leak; a full stomach and ongoing vomiting enlarge the delivered volume.\n- Barotrauma has also been described in relation to **other pressure events** - straining, weightlifting, childbirth, compressed-air exposure and forceful Valsalva maneuvers.\n\n**Surgical emphysema is virtually pathognomonic**: subcutaneous air with swelling, bruising, dusky discoloration and crepitus in the neck and supraclavicular areas - the key teaching finding of the lecture's clinical photograph. Many instrumental perforations can be managed conservatively, but spontaneous perforation is often life-threatening.",
+          "key_points": [
+            "Perforation is usually iatrogenic (therapeutic endoscopy) or barotrauma (spontaneous).",
+            "Boerhaave: vomiting against a closed glottis; burst at the weakest point of the lower third; contents enter mediastinum and often pleura.",
+            "Most serious type: rapid chemical irritation then infection - mediastinitis, empyema, septic shock.",
+            "Negative intrathoracic pressure enhances spread of gastro-intestinal fluid into the mediastinum.",
+            "Surgical emphysema is virtually pathognomonic; spontaneous perforation is often life-threatening."
+          ]
+        },
+        {
+          "heading": "Diagnosis of Spontaneous Perforation - the Classic Pitfalls",
+          "body_text": "The **clinical history is usually severe pain in the chest or upper abdomen following a meal or a bout of drinking**, with **associated shortness of breath common**.\n\nPitfalls stressed by the lecture:\n- **Many cases are misdiagnosed as myocardial infarction, perforated peptic ulcer or pancreatitis** when the pain is confined to the upper abdomen - three mimics that delay a life-saving diagnosis.\n- There may be a **surprising amount of rigidity on examination of the upper abdomen, even in the absence of any peritoneal contamination** - the rigidity is referred from diaphragmatic and mediastinal irritation, so a 'surgical abdomen' without free contamination is still consistent with Boerhaave.\n- Supporting signs: **surgical (subcutaneous) emphysema** in the neck and supraclavicular fossae, fever, tachycardia, hypoxia, left pleural effusion and mediastinal widening on chest x-ray, and rapid deterioration toward septic shock.\n\nAny severe chest or upper abdominal pain after vomiting, plus surgical emphysema, is Boerhaave until proven otherwise.",
+          "key_points": [
+            "History: severe chest/upper abdominal pain after a meal or bout of drinking; shortness of breath common.",
+            "Classic misdiagnoses: myocardial infarction, perforated peptic ulcer, pancreatitis.",
+            "Surprising upper abdominal rigidity may occur without any peritoneal contamination.",
+            "Surgical emphysema + postemetic pain = Boerhaave until proven otherwise."
+          ]
+        },
+        {
+          "heading": "Other Types of Perforation",
+          "body_text": "Beyond instrumentation and barotrauma:\n- **Pathological perforation** - **rare**. What is more common is **erosion into an adjacent structure with fistula formation**; the **aerodigestive (tracheo-broncho-esophageal) fistula is the most common** variety and is usually encountered in **primary malignant disease of the oesophagus or bronchus** (also after radiotherapy or in chronic infectious disease).\n- **Penetrating injury** - perforation by **knives and bullets is uncommon, even in war**, because the oesophagus is a **relatively small target surrounded by other vital organs** (heart, great vessels, trachea) that are usually injured first.\n- **Foreign bodies** - the oesophagus may be **perforated during removal of a foreign body**, or occasionally by **an object that has been left in the oesophagus for several days** and erodes through the wall (button batteries, sharp bones, pressure necrosis from coins).\n\nCervical odynophagia, neck induration and fever after instrumentation or foreign body impaction suggest a contained cervical leak - the most forgiving perforation, because the cervical esophagus is surrounded by fascial planes that localize contamination.",
+          "key_points": [
+            "Pathological perforation is rare; erosion with fistula formation is more common.",
+            "Aerodigestive fistula is the most common pathological fistula - usually in esophageal or bronchial malignancy.",
+            "Penetrating injury is uncommon even in war: small target surrounded by vital organs.",
+            "Foreign bodies perforate during removal or after being left several days."
+          ]
+        },
+        {
+          "heading": "Treatment of Esophageal Perforation - Aim and the Four-Factor Decision",
+          "body_text": "**The aim of treatment is to limit mediastinal contamination and to prevent or deal with infection.** All decisions flow from this aim: nothing oral, broad-spectrum antibiotics, drainage of contaminated spaces, and repair or diversion of the leak.\n\n**The decision between operative and non-operative management rests on four factors:**\n1. The **site of the perforation** (cervical versus thoracoabdominal oesophagus).\n2. The **event causing the perforation** (spontaneous versus instrumental).\n3. The **underlying pathology** (benign or malignant).\n4. The **interval since perforation and the resulting septic load** - the source slide is truncated after factor 3, and the standard fourth consideration taught alongside this table is the delay before diagnosis and treatment, which governs the degree of mediastinal contamination and physiological derangement.\n\nThe lecture presents this decision as a two-column table of factors influencing management of esophageal perforation.\n\n**Factors that favour non-operative management:**\n- Small septic load.\n- Minimal cardiovascular upset.\n- Perforation confined to the mediastinum.\n- Perforation by flexible endoscope.\n- Perforation of the cervical oesophagus.\n\n**Factors that favour operative repair:**\n- Large septic load.\n- Septic shock.\n- Pleura breached.\n- Boerhaave's syndrome.\n- Perforation of the abdominal oesophagus.\n\nNon-operative care means nil per os, intravenous broad-spectrum antibiotics, acid suppression, nutritional support (feeding jejunostomy) and drainage of collections if needed. Operative care means primary repair with buttressing, mediastinal toilet, drainage and feeding access; esophagectomy or diversion is reserved for an unsalvageable esophagus.",
+          "key_points": [
+            "Aim: limit mediastinal contamination and prevent or treat infection.",
+            "Four factors: site, event, underlying pathology, interval/degree of contamination.",
+            "Non-operative: small septic load, minimal upset, confined to mediastinum, flexible endoscope, cervical esophagus.",
+            "Operative: large septic load, septic shock, pleura breached, Boerhaave, abdominal esophagus."
+          ],
+          "check": {
+            "prompt": "Which combination of findings favors OPERATIVE repair of an esophageal perforation?",
+            "options": [
+              "Small septic load with minimal cardiovascular upset",
+              "Perforation confined to the mediastinum by flexible endoscope",
+              "Septic shock with pleura breached after forceful vomiting",
+              "Cervical perforation by flexible endoscope",
+              "Minimal contamination with a delayed but contained leak"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الصدمة الإنتانية واختراق الجنبة ومتلازمة بورهاف كلها عوامل تُرجّح الإصلاح الجراحي، بينما الحمل الإنتاني الصغير والانثقاب العنقي المحصور عبر منظار مرن يُرجّحان العلاج التحفظي."
+          }
+        },
+        {
+          "heading": "Lacerations - Mallory-Weiss Syndrome",
+          "body_text": "**Mallory-Weiss syndrome** consists of **longitudinal tears in the esophagus at the esophagogastric junction**.\n- The **presumed pathogenesis is inadequate relaxation of the musculature of the lower esophageal sphincter during vomiting**, with **stretching and tearing of the esophagogastric junction at the moment of propulsive expulsion** of gastric content - forceful vomiting produces a **mucosal tear at the cardia rather than a full perforation**.\n- **Vigorous vomiting produces a vertical split in the gastric mucosa immediately below the squamocolumnar junction at the cardia in 90 per cent of cases** (the lecture's endoscopic image shows exactly this linear laceration, with arrows marking its edges and depth).\n- The condition **presents with haematemesis**, classically after initial non-bloody vomiting or retching (alcohol binge, hyperemesis gravidarum).\n- **Usually the bleeding is not severe** and settles with supportive care; **endoscopic injection therapy may be required for the occasional severe case**; **surgery is rarely required**.\n\nDistinguish Mallory-Weiss from Boerhaave: Mallory-Weiss is a **partial-thickness mucosal laceration that bleeds**, whereas Boerhaave is a **full-thickness rupture that contaminates the mediastinum** - the same act of vomiting can produce either.",
+          "key_points": [
+            "Longitudinal mucosal tears at the esophagogastric junction - not a full perforation.",
+            "Mechanism: inadequate LES relaxation during vomiting with stretching and tearing at propulsive expulsion.",
+            "Vertical split in gastric mucosa immediately below the squamocolumnar junction at the cardia in 90% of cases.",
+            "Presents with hematemesis; bleeding usually not severe; endoscopic injection if severe; surgery rare."
+          ],
+          "check": {
+            "prompt": "Where does the Mallory-Weiss laceration characteristically occur?",
+            "options": [
+              "Upper third of the esophagus at the cricopharyngeus",
+              "Immediately below the squamocolumnar junction at the cardia (90% of cases)",
+              "Gastric antrum",
+              "Mid-esophagus beside the aortic arch",
+              "Duodenal bulb"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "التمزق العمودي يحدث في المخاطية المعدية مباشرة تحت الوصل الحرشفي الأسطواني عند الفؤاد في 90 بالمئة من الحالات."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Boerhaave syndrome",
+          "definition_ar": "انثقاب المريء التلقائي الانضغاطي بسبب القيء ضد لسان مزمار مغلق؛ ينفجر المريء في أضعف نقطة بالثلث السفلي ويفرغ محتواه في المنصف والجنبة، وهو أخطر أنواع الانثقاب ومهدد للحياة."
+        },
+        {
+          "term": "Barotrauma",
+          "definition_ar": "إصابة ضغطية ترتفع فيها الضغوط داخل تجويف المريء فجأة حتى يتمزق الجدار كامل السماكة."
+        },
+        {
+          "term": "Surgical emphysema",
+          "definition_ar": "انتفاخ جراحي (تهوية جلدية) تحت الجلد في الرقبة والمنطقة الترقوية مع فرقعة عند الجس، علامة شبه مميزة لانثقاب المريء."
+        },
+        {
+          "term": "Iatrogenic perforation",
+          "definition_ar": "انثقاب ناتج عن تدخل طبي كالتوسيع أو التنظير العلاجي؛ كثير منه يُدار تحفظيا لأنه معترف به فورا ومحصور."
+        },
+        {
+          "term": "Aerodigestive fistula",
+          "definition_ar": "ناسور بين المريء والقصبة أو الشعب، أكثر النواسير المرضية شيوعا، ويصادف عادة في الأورام الأولية للمريء أو القصبة."
+        },
+        {
+          "term": "Mallory-Weiss syndrome",
+          "definition_ar": "تمزقات طولية في المخاطية عند الوصل المريئي المعدي ناجمة عن قيء عنيف دون ارتخاء كاف للعاصرة السفلية، تعرض بنفث الدم وعادة ينزف بشكل خفيف."
+        },
+        {
+          "term": "Squamocolumnar junction",
+          "definition_ar": "الوصل الحرشفي الأسطواني عند الفؤاد؛ يقع تمزق مالوري-ويس مباشرة تحته في 90 بالمئة من الحالات."
+        },
+        {
+          "term": "Mediastinitis",
+          "definition_ar": "التهاب المنصف، المضاعفة القاتلة لانثقاب المريء: تخريش كيميائي سريع ثم إنتان إذا لم يعالج."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L1_esophagus_c05",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Corrosive Injury of the Esophagus",
+      "summary_ar": "يوضح هذا المفهوم إصابات الأكّال: القلويات عديمة الطعم والرائحة تُبتلع بأحجام كبيرة وتسبب انحلالا وتصبنا للدهون وخثارا للأوعية، بينما الحموض تسبب نخارا تخثريا بجلبة تحد العمق وتضر المعدة أكثر عبر التشنج البوابي، والتنظير المبكر مفتاح التدبير، والتضيق يصيب نحو نصف الإصابات الواسعة، ويؤجل القطع الانتخابي ثلاثة أشهر على الأقل.",
+      "sections": [
+        {
+          "heading": "Agents, Circumstances and Determinants of Injury",
+          "body_text": "**Corrosives such as sodium hydroxide (lye, caustic soda) or sulphuric acid may be taken in attempted suicide.** Accidental ingestion occurs in **children** and when corrosives are **stored in bottles labeled as beverages** - the classic domestic-poisoning scenario.\n\n**All corrosives can cause severe damage to the mouth, pharynx, larynx, esophagus and stomach.** The extent of damage is largely determined by three variables:\n- The **type of agent** (alkali versus acid).\n- Its **concentration**.\n- The **volume ingested**.\n\nBecause the outcome ranges from trivial mucosal edema to transmural necrosis with perforation, grading of injury endoscopically drives every subsequent decision - nothing else predicts the phase of care as reliably.",
+          "key_points": [
+            "Agents: sodium hydroxide (lye, caustic soda) and sulphuric acid; suicide attempts, childhood accidents, mislabeled beverage bottles.",
+            "Damage may involve mouth, pharynx, larynx, esophagus and stomach.",
+            "Extent depends on agent type, concentration and volume ingested."
+          ]
+        },
+        {
+          "heading": "Alkali versus Acid - Mechanisms of Injury",
+          "body_text": "**Alkalis (sodium hydroxide, lye, caustic soda):**\n- Are **relatively odorless and tasteless, making them more likely to be ingested in large volume** before the victim stops swallowing.\n- Cause **liquefaction, saponification of fats, dehydration and thrombosis of blood vessels** - a progressively deepening injury that can traverse the entire wall and perforate.\n\n**Acids (e.g., sulphuric acid):**\n- Cause **coagulative necrosis with eschar formation**, and **this coagulant may limit penetration to deeper layers of the oesophageal wall** - the burn creates its own barrier.\n- **Acids cause more gastric damage than alkalis because of the induction of intense pylorospasm with pooling in the antrum** - the corrosive bath is trapped against the antral mucosa.\n\nExamination of the mouth and oropharynx does NOT predict the depth of esophageal injury; only endoscopy does.",
+          "key_points": [
+            "Alkalis: odorless and tasteless - ingested in large volumes.",
+            "Alkali injury: liquefaction, saponification of fats, dehydration, vessel thrombosis - deep.",
+            "Acid injury: coagulative necrosis with eschar that may limit deeper penetration.",
+            "Acids cause more gastric damage: intense pylorospasm with pooling in the antrum.",
+            "Oral examination does not predict esophageal injury."
+          ],
+          "check": {
+            "prompt": "Why do ingested acids typically cause more GASTRIC damage than alkalis?",
+            "options": [
+              "Acids are always ingested in larger volumes",
+              "Acids induce intense pylorospasm with pooling of the corrosive in the antrum",
+              "Acids saponify the gastric wall directly",
+              "Alkalis are tasteless so none of them reaches the stomach",
+              "The stomach completely neutralizes alkalis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "تُحدث الحموض تشنجا بوابيا شديدا فيتجمع الحمض في غار المعدة ويحرق مخاطيتها، بينما يحدّ التخثر والجلبة من عمق إصابة المريء."
+          }
+        },
+        {
+          "heading": "Acute Management of Corrosive Injury",
+          "body_text": "**The key to management is early endoscopy by an experienced endoscopist to inspect the whole of the oesophagus and stomach.** Endoscopy is performed once the airway is secure and the patient is resuscitated - usually within the first 24 hours - and it grades the burn from superficial to transmural.\n- **Minor injuries with only oedema (edema) of the mucosa resolve rapidly with no late sequelae** - no stricture, no prolonged follow-up.\n- **With more severe injuries, a feeding jejunostomy may be appropriate until the patient can swallow saliva satisfactorily** - enteral nutrition delivered beyond the burn, with serial reassessment of safe swallowing.\n- **The widespread use of broad-spectrum antibiotics and steroids is controversial** - neither has convincingly prevented stricture or perforation; antibiotics are justified for proven infection or perforation, and steroids remain debated.\n- **Emergency surgery is reserved for bleeding or perforation** during the acute necrotizing phase.\n\nNeutralization, induced emesis and blind nasogastric intubation are avoided - each maneuver can add further injury.",
+          "key_points": [
+            "Key to management: early endoscopy by an experienced endoscopist of the whole esophagus and stomach.",
+            "Minor injuries (mucosal edema only) resolve rapidly with no late sequelae.",
+            "Severe injuries: feeding jejunostomy until saliva is swallowed satisfactorily.",
+            "Broad-spectrum antibiotics and steroid use is controversial.",
+            "Emergency surgery only for bleeding or perforation."
+          ]
+        },
+        {
+          "heading": "Stricture Development and Timing of Elective Surgery",
+          "body_text": "**Regular endoscopic examinations are the best way to assess stricture development** after corrosive injury - surveillance endoscopy tracks the evolution from sloughing to fibrosis.\n- **Significant stricture formation occurs in about 50 per cent of patients with extensive mucosal damage** - the single most important late statistic of the disease.\n- The lecture's radiology image - a barium swallow (oesophagogram) of a chronic corrosive stricture - shows a **long, irregular, severe narrowing with a 'string-like' appearance** as contrast passes through the fibrotic segment, while the proximal and distal portions appear relatively dilated compared to the strictured area.\n- **Emergency surgery is for bleeding or perforation; elective oesophageal resection should be deferred for at least three months until the fibrotic phase is established.** Operating during the immature, inflamed, vascular phase of the first weeks invites disaster; waiting allows demarcation, nutritional optimization and accurate definition of the length to be resected or dilated.\n- Established strictures are managed with an endoscopic dilation program (bougies or balloon); resection or bypass is reserved for failures and nondilatable long strictures. Chronic corrosive strictures also carry a long-term risk of squamous cell carcinoma.",
+          "key_points": [
+            "Regular endoscopic examination is the best way to monitor stricture development.",
+            "Significant stricture forms in about 50% of extensive mucosal damage.",
+            "Barium swallow: long irregular 'string-like' narrowing.",
+            "Elective resection deferred at least three months until the fibrotic phase is established.",
+            "Emergency surgery only for bleeding or perforation."
+          ],
+          "check": {
+            "prompt": "A patient survives extensive caustic injury but develops a long fibrotic stricture. When should elective esophageal resection be scheduled?",
+            "options": [
+              "Immediately, during the acute necrotizing phase",
+              "Within the first week",
+              "After at least three months, once the fibrotic phase is established",
+              "Only after five years of observation",
+              "Never - all corrosive strictures respond fully to a single dilation"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "يؤجل القطع الانتخابي ثلاثة أشهر على الأقل حتى تكتمل المرحلة الليفية ويتحدد مدى التضيق بدقة؛ الجراحة المبكرة على جدار متنخر ملتهب كارثة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Caustic soda (lye)",
+          "definition_ar": "هيدروكسيد الصوديوم، قلوي أكّال عديم الرائحة والطعم يُبتلع بأحجام كبيرة ويسبب انحلالا وتصبنا للدهون."
+        },
+        {
+          "term": "Liquefaction necrosis",
+          "definition_ar": "النخار الانحلالي التسييلي الذي تحدثه القلويات مع تصبّن الدهون وتجفيف الأنسجة وخثار الأوعية، فيتعمق الحرق عبر الجدار."
+        },
+        {
+          "term": "Saponification",
+          "definition_ar": "تصبّن دهون جدار المريء بالقلويات، وهو ما يسهّل اختراق الحرق لكل الطبقات."
+        },
+        {
+          "term": "Coagulative necrosis",
+          "definition_ar": "النخار التخثري الذي تحدثه الحموض مع تكوّن جُلبة قد تحدّ من انتشار الحرق إلى الطبقات العميقة."
+        },
+        {
+          "term": "Eschar",
+          "definition_ar": "الجُلبة المتخثرة التي تغطي الحرق الحمضي وتقي مؤقتا الطبقات الأعمق."
+        },
+        {
+          "term": "Pylorospasm",
+          "definition_ar": "تشنج البواب الشديد الذي تحدثه الحموض فيتجمع الحمض في الغار ويزيد الضرر المعدي."
+        },
+        {
+          "term": "Feeding jejunostomy",
+          "definition_ar": "فغر التغذية بالصائم، يُنشأ في الإصابات الشديدة لإطعام المريض حتى يستعيد البلع الآمن للعاب."
+        },
+        {
+          "term": "Corrosive stricture",
+          "definition_ar": "تضيق ليفي متأخر يصيب نحو نصف المرضى ذوي تخريب المخاطية الواسع، يُتابع بالتنظير الدوري ويوسَّع بالبالون أو الخواتم."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L1_esophagus_c06",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Gastroesophageal Reflux Disease: Definition, Pathophysiology, Complications and Full Management Pathway",
+      "summary_ar": "يستعرض هذا المفهوم داء الارتجاع المعدي المريئي: تعريفه وأشكاله الفسيولوجية مقابل المرضية، وآليات ضعف العاصرة السفلية، والأعراض وعلامات الإنذار، والمضاعفات كالتهاب المريء التآكلي المسؤول عن 40-60 بالمئة من الأعراض والتضيق ومريء باريت مع برنامج المراقبة، ثم العلاج بنمط الحياة والدواء وجراحة نيسن والتقنيات داخل التجويف.",
+      "sections": [
+        {
+          "heading": "Definition, Physiologic versus Pathologic Reflux, and Pathophysiology",
+          "body_text": "**The American College of Gastroenterology (ACG) defines GERD as symptoms OR mucosal damage produced by the abnormal reflux of gastric contents into the esophagus.** The disease is **often chronic and relapsing**, and **complications of GERD may be seen in patients who lack typical symptoms** - the silent-reflux trap.\n\n**Physiologic reflux** (in healthy individuals) is **postprandial, short-lived, asymptomatic and without nocturnal symptoms**; occasional episodes occur in healthy people and are **more common when awake and in the upright position than during sleep in the supine position**. **Pathologic reflux (GERD)** is defined by **symptoms**, **mucosal injury** and **nocturnal symptoms**.\n\n**Pathophysiology.** The **primary barrier to gastroesophageal reflux is the lower esophageal sphincter, which normally works in conjunction with the diaphragm**; if the barrier is disrupted, acid goes from the stomach to the esophagus. Gastroesophageal reflux results from **transient relaxation or incompetence of the lower esophageal sphincter, or increased pressure within the stomach**.\n\n**Factors contributing to gastroesophageal reflux:**\n- **Increased gastric volume (post meals)**.\n- **Position pushing gastric contents close to the gastroesophageal juncture (junction) - such as bending or lying down**.\n- **Increased gastric pressure (obesity or tight clothing)**.\n- **Hiatal hernia**, which disconnects the LES from its diaphragmatic support.\n\nPoor esophageal clearance by secondary peristalsis, diminished salivary bicarbonate and delayed gastric emptying all lengthen mucosal acid exposure time.",
+          "key_points": [
+            "ACG definition: symptoms OR mucosal damage from abnormal reflux of gastric contents into the esophagus.",
+            "Physiologic reflux: postprandial, short-lived, asymptomatic, no nocturnal symptoms; more common awake/upright than supine/asleep.",
+            "Pathologic reflux: symptoms, mucosal injury, nocturnal symptoms.",
+            "Mechanism: transient LES relaxation or incompetence, or increased intragastric pressure.",
+            "Contributing factors: increased gastric volume, position (bending/lying), increased gastric pressure (obesity/tight clothing), hiatal hernia."
+          ]
+        },
+        {
+          "heading": "Clinical Manifestations and Alarm Signs",
+          "body_text": "**Typical manifestations of GERD:**\n- **Heartburn after meals, while bending over, or recumbent** - the defining symptom.\n- **Dyspepsia or indigestion**.\n- **Regurgitation of sour materials into the mouth, pain with swallowing**.\n- **Atypical chest pain** that can mimic cardiac disease.\n- **Extraesophageal manifestations: asthma, laryngitis, chronic cough, sore throat with hoarseness**.\n\n**Alarms (alarm signs/symptoms)** - any of these in a reflux patient demands endoscopy because they signal complications or neoplasia:\n- **Dysphagia**\n- **Early satiety**\n- **GI bleeding**\n- **Odynophagia**\n- **Vomiting**\n- **Weight loss**\n- **Iron deficiency anemia**\n\nThe atypical symptom list of esophageal disease (globus, hoarseness, wheezing/stridor, dyspnea, apnea, halitosis, nausea and vomiting, hematemesis, dyspepsia) maps directly onto reflux presentations, which is why GERD must be considered in unexplained respiratory and ENT complaints.",
+          "key_points": [
+            "Heartburn after meals, bending over, or recumbent; dyspepsia; sour regurgitation; pain with swallowing; atypical chest pain.",
+            "Extraesophageal: asthma, laryngitis, chronic cough, sore throat with hoarseness.",
+            "Alarm signs: dysphagia, early satiety, GI bleeding, odynophagia, vomiting, weight loss, iron deficiency anemia."
+          ]
+        },
+        {
+          "heading": "Complications: Erosive Esophagitis, Stricture and Barrett's - with Surveillance",
+          "body_text": "GERD has three classical complications:\n\n**1. Erosive esophagitis**\n- **Responsible for 40-60 per cent of GERD symptoms.**\n- **Severity of symptoms often fails to match severity of erosive esophagitis** - minimal heartburn with deep ulceration, or severe symptoms with an intact mucosa (non-erosive reflux disease). Symptom severity is therefore not a proxy for injury severity.\n\n**2. Esophageal stricture**\n- **Result of healing of erosive esophagitis** - fibrotic narrowing of the distal esophagus.\n- Presents as progressive solid-food dysphagia and **may need dilation** (bougienage or balloon) combined with acid suppression.\n\n**3. Barrett's esophagus**\n- **Columnar metaplasia of the esophagus**: acid damages the lining and causes **chronic esophagitis**; the damaged area heals in a **metaplastic process in which abnormal columnar cells replace squamous cells**.\n- **This specialized intestinal metaplasia can progress to dysplasia and adenocarcinoma** - Barrett's is the strongest known risk factor for esophageal adenocarcinoma.\n- **Management of Barrett's esophagus: in the same manner as GERD**, plus surveillance - **EGD every 3 years in patients without dysplasia**, and **in patients with dysplasia, surveillance at annual to shorter intervals**.\n\n**Which GERD patients need regular EGD?** Those with **alarm symptoms**, **poor therapeutic response**, or **long symptom duration**; a **'once in a lifetime' EGD for patients with chronic GERD is becoming accepted practice**, because **many patients with Barrett's are asymptomatic** and would otherwise never be detected.",
+          "key_points": [
+            "Erosive esophagitis: responsible for 40-60% of GERD symptoms; symptom severity often mismatches injury severity.",
+            "Stricture: healing of erosive esophagitis; may need dilation.",
+            "Barrett's: columnar metaplasia replacing squamous epithelium; specialized intestinal metaplasia can progress to dysplasia and adenocarcinoma.",
+            "Barrett's without dysplasia: EGD every 3 years; with dysplasia: annual or shorter intervals.",
+            "Regular EGD for alarm symptoms, poor response, long duration; 'once in a lifetime' EGD for chronic GERD is accepted practice.",
+            "Many Barrett's patients are asymptomatic."
+          ],
+          "check": {
+            "prompt": "A patient with chronic GERD has biopsy-proven Barrett's esophagus WITHOUT dysplasia. What surveillance interval does the lecture recommend?",
+            "options": [
+              "No further endoscopy is ever needed",
+              "EGD every 3 years",
+              "EGD every 3 months for life",
+              "Immediate esophagectomy",
+              "EGD only if alarm symptoms develop"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "يُنصح بالتنظير كل 3 سنوات في مريء باريت دون خلل تكاثري، ويُقصر الفاصل إلى سنوي أو أقل عند وجود الخلل التكاثري."
+          }
+        },
+        {
+          "heading": "Diagnostic Workup for GERD",
+          "body_text": "**Diagnostic tests (the lecture's algorithm, attributed to Husni Rousan):**\n- **Barium swallow** - evaluation of the esophagus, stomach and small intestine; shows hiatal hernia, strictures and anatomical abnormalities, but it is not a mucosal test.\n- **Upper endoscopy** - **direct visualization** of the mucosa with grading of esophagitis; **biopsies may be done** (Barrett metaplasia, dysplasia, eosinophilic esophagitis, malignancy).\n- **24-hour ambulatory pH monitoring** - quantifies acid exposure and correlates symptoms with reflux episodes; essential when the diagnosis is uncertain, before antireflux surgery if endoscopy is normal, and for refractory symptoms.\n\nMost patients with typical, uncomplicated symptoms are diagnosed empirically and respond to a trial of proton-pump inhibition. Testing is reserved for alarm presentations, atypical symptoms, failure of empiric therapy and preoperative planning - with manometry added before surgery to exclude a motility disorder.",
+          "key_points": [
+            "Barium swallow evaluates esophagus, stomach and small intestine anatomically.",
+            "Upper endoscopy: direct visualization with biopsies.",
+            "24-hour ambulatory pH monitoring quantifies acid exposure and symptom correlation.",
+            "Empiric PPI trial is acceptable only in uncomplicated typical symptoms."
+          ]
+        },
+        {
+          "heading": "Dietary, Lifestyle and Pharmacological Management",
+          "body_text": "**1) Dietary and lifestyle management:**\n- **Elimination of acid foods (tomatoes, spicy and citrus foods, coffee)**.\n- **Avoiding foods which relax the esophageal sphincter or delay gastric emptying (fatty foods, chocolate, alcohol)**.\n- **Maintain ideal body weight**.\n- **Eat small meals and stay upright 2 hours post eating; no eating 3 hours prior to going to bed**.\n- **Elevate the head of the bed on 6-8 blocks** to decrease reflux.\n- **No smoking**.\n- **Avoiding bending, and wear loose fitting clothing**.\n\n**2) Medications:**\n- **Antacids for mild to moderate symptoms**, e.g. **Maalox, Gaviscon** - rapid symptom relief without healing effect.\n- **H2-receptor blockers: decrease acid production; given BID (twice daily) or more often**, e.g. **cimetidine, ranitidine, famotidine, nizatidine**.\n- **Proton-pump inhibitors: reduce gastric secretions, promote healing of esophageal erosion and relieve symptoms**, e.g. **omeprazole, lansoprazole** - the mainstay of healing therapy.\n- **Promotility (prokinetic) agents: enhance esophageal clearance and gastric emptying**, e.g. **domperidone** - useful when motility is the weak link.",
+          "key_points": [
+            "Eliminate acid foods (tomatoes, spicy, citrus, coffee); avoid LES-relaxing/emptying-delaying foods (fatty foods, chocolate, alcohol).",
+            "Small meals, upright 2 hours post eating, no food 3 hours before bed, head of bed elevated on 6-8 blocks, no smoking, loose clothing, ideal weight.",
+            "Antacids (Maalox, Gaviscon) for mild-moderate symptoms.",
+            "H2 blockers BID or more: cimetidine, ranitidine, famotidine, nizatidine.",
+            "PPIs heal erosions: omeprazole, lansoprazole.",
+            "Prokinetics (domperidone) enhance esophageal clearance and gastric emptying."
+          ],
+          "check": {
+            "prompt": "Which lifestyle prescription for GERD is correct according to the lecture?",
+            "options": [
+              "Sleep flat in the supine position right after dinner",
+              "Elevate the head of the bed on 6-8 blocks and avoid eating 3 hours before bed",
+              "Eat three large meals daily to buffer acid",
+              "Wear tight fitted clothing to support the diaphragm",
+              "Continue smoking to stimulate salivary bicarbonate"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "رفع رأس السرير على 6-8 قطع وتجنب الأكل قبل النوم بثلاث ساعات والبقاء منتصبا ساعتين بعد الطعام تدابير مثبتة لخفض الارتجاع الليلي."
+          }
+        },
+        {
+          "heading": "Surgical and Endoluminal Antireflux Therapy",
+          "body_text": "**Surgery is indicated for persons not improved by diet and lifestyle changes:**\n- **Failed medical treatment**.\n- **Severe oesophagitis**.\n- **Young patients with ongoing regurgitation** - who face decades of suppressive therapy.\n- **Respiratory symptoms** attributable to reflux.\n- **Barrett's oesophagus**.\n\n**Operations: laparoscopic or open procedures to tighten the lower esophageal sphincter**, e.g. **Nissen fundoplication**.\n\n**Nissen fundoplication**\n- The **most commonly preferred surgery** for GERD.\n- A **360-degree fundus wrap**: the gastric fundus is mobilized, passed behind the esophagus through the **retro-esophageal window**, and wrapped circumferentially (360 degrees) around the lower esophagus, secured with sutures, creating a reinforced valve mechanism at the gastroesophageal junction - the classic Gray's Anatomy (2007) diagram shows the fundus being drawn through the retro-esophageal window and the completed wrap fixed with three horizontal sutures, and the intraoperative view shows the suture line with possible reinforcement pledgets at the esophagogastric junction.\n- **Effective** for long-term control of reflux.\n- **Complications: inability to vomit, gas bloat syndrome (inability to belch with postprandial bloating and flatulence), and dysphagia** (from a tight or slipped wrap).\n\n**Recent techniques for GERD - two novel endoluminal therapies approved by the Food and Drug Administration (FDA), USA:**\n1. **Transoral endoscopic suturing** - to **plicate the GE junction**.\n2. **Endoscopic application of radiofrequency energy (the Stretta procedure)** - delivered to the LES region to tighten and reinforce the barrier.",
+          "key_points": [
+            "Surgical indications: failed medical treatment, severe oesophagitis, young patients with ongoing regurgitation, respiratory symptoms, Barrett's oesophagus.",
+            "Laparoscopic or open procedures tighten the LES; Nissen fundoplication is the example.",
+            "Nissen: most commonly preferred; 360-degree fundus wrap; effective.",
+            "Nissen complications: inability to vomit, gas bloat syndrome, dysphagia.",
+            "FDA-approved endoluminal therapies: transoral endoscopic suturing (plication of GE junction) and Stretta radiofrequency energy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "GERD",
+          "definition_ar": "داء الارتجاع المعدي المريئي: أعراض أو تخريب مخاطي ناتج عن الارتجاع الشاذ لمحتويات المعدة إلى المريء، مرض مزمن متكرر قد تظهر مضاعفاته دون أعراض نموذجية."
+        },
+        {
+          "term": "Erosive esophagitis",
+          "definition_ar": "التهاب المريء التآكلي المسؤول عن 40-60 بالمئة من أعراض الداء؛ شدة الأعراض كثيرا لا تطابق شدة الالتهاب."
+        },
+        {
+          "term": "Barrett's esophagus",
+          "definition_ar": "حؤول أسطواني للمخاطية المريئية بعد التهاب مزمن بالحمض، يمكن أن يتطور من الحؤول المعوي المتخصص إلى خلل تكاثري وسرطان غدي."
+        },
+        {
+          "term": "Alarm symptoms",
+          "definition_ar": "علامات الإنذار الموجبة للتنظير: عسر البلع، الشبع المبكر، النزف الهضمي، البلع المؤلم، الإقياء، نقص الوزن، وفقر الدم بعوز الحديد."
+        },
+        {
+          "term": "Nissen fundoplication",
+          "definition_ar": "عملية نيسن: لف القبة المعدية 360 درجة حول المريء السفلي لتقوية الحاجز المضاد للارتجاع، أشيع جراحة للداء."
+        },
+        {
+          "term": "Gas bloat syndrome",
+          "definition_ar": "متلازمة انتفاخ الغازات بعد نيسن: عجز عن التجشؤ مع تمدد وانتفاخ بعد الطعام."
+        },
+        {
+          "term": "Stretta procedure",
+          "definition_ar": "إجراء ستريتا: تطبيق طاقة التردد الراديوي عبر التنظير عند العاصرة السفلية لتقوية الحاجز المضاد للارتجاع."
+        },
+        {
+          "term": "Transoral endoscopic suturing",
+          "definition_ar": "الخياطة التنظيرية عبر الفم لتطويق الوصل المعدي المريئي كعلاج داخل التجويف للداء."
+        },
+        {
+          "term": "Transient LES relaxation",
+          "definition_ar": "الارتخاء العابر للعاصرة السفلية دون بلعة، الآلية المسيطرة على نوبات الارتجاع في الأصحاء والمرضى."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_L1_esophagus_c07",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Hiatus Hernia: Classification, Complications and Treatment",
+      "summary_ar": "يشمل هذا المفهوم فتق الحجاب: بروز جزء من المعدة عبر فتحة المريء في الحجاب الحاجز إلى التجويف الصدري، وتصنيفه حسب موضع الوصل المعدي المريئي إلى منزلق ومتدحرج ومختلط ورابع بأحشاء أخرى، ومضاعفاته من الالتفاف المعدي والانسداد والخنق وقرحة كاميرون، وعلاجه: الأول كالارتجاع والبقية جراحيا بالرد وقطع الكيس وإغلاق عيب الحجاب.",
+      "sections": [
+        {
+          "heading": "Definition and the Classification Principle",
+          "body_text": "**Definition: a hiatus hernia is present when part of the stomach protrudes through the esophageal hiatus of the diaphragm into the thoracic cavity.**\n\n**The classification of hiatus hernia is based upon the position of the gastroesophageal junction (GE junction)** relative to the diaphragm:\n- **Type I** - the GE junction itself migrates above the hiatus (sliding hernia).\n- **Type II** - the GE junction stays below, and the fundus herniates alongside it (rolling/paraesophageal hernia).\n- **Type III** - both defects coexist (combined).\n- **Type IV** - other abdominal viscera join the hernia.\n\nThis single principle - 'where is the GE junction?' - resolves every classification question the examiner can ask, and it predicts both the reflux behavior of Type I and the strangulation risk of Types II-IV.",
+          "key_points": [
+            "Hiatus hernia = part of the stomach protrudes through the esophageal hiatus into the thoracic cavity.",
+            "Classification is based upon the position of the gastroesophageal junction.",
+            "Type I sliding, Type II rolling, Type III combined, Type IV other viscera."
+          ]
+        },
+        {
+          "heading": "Type I - Sliding Hernia",
+          "body_text": "**Type I (sliding hernia):**\n- **Due to the laxity of the phrenoesophageal membrane** - generalized weakening and stretching of the membrane that normally anchors the GE junction to the hiatus.\n- **Cephalad displacement of the GE junction through the hiatus into the mediastinum** - the junction and proximal stomach slide up together.\n- **It is the commonest type** - the great majority of all hiatus hernias.\n- **Asymptomatic** in most patients, found incidentally on chest imaging; when symptoms occur they are those of **GERD**, because the herniated segment loses the diaphragmatic pinchcock and the intra-abdominal pressure advantage of the LES.\n- Treatment is **that of GERD** - lifestyle measures, acid suppression and, if surgery is needed, an antireflux procedure rather than an emergency hernia operation.",
+          "key_points": [
+            "Type I: laxity of the phrenoesophageal membrane with cephalad displacement of the GE junction into the mediastinum.",
+            "The commonest type and usually asymptomatic.",
+            "Symptomatic Type I behaves as GERD and is treated as GERD."
+          ]
+        },
+        {
+          "heading": "Type II - Rolling (Paraesophageal) Hernia",
+          "body_text": "**Type II (rolling hernia):**\n- **Due to a focal defect in the phrenoesophageal membrane** - a localized tear or weakness through which the stomach escapes while the junction remains anchored.\n- **Superior migration of the fundus of the stomach alongside the GE junction and oesophagus into the mediastinum** - the fundus 'rolls up' beside a normally placed esophagus.\n- **The GE junction in this type remains in its normal intra-abdominal location** - so the antireflux barrier is often preserved and heartburn may be absent, lulling patient and surgeon into complacency.\n- Because the GE junction fixes the stomach while the fundus ascends, the herniated stomach can **twist on itself (gastric volvulus)**, obstruct, strangulate and infarct - the reason paraesophageal hernias are repaired even when minimally symptomatic.",
+          "key_points": [
+            "Type II: focal defect in the phrenoesophageal membrane; fundus migrates alongside the GE junction and esophagus into the mediastinum.",
+            "The GE junction remains in its normal intra-abdominal location.",
+            "Reflux may be absent - the danger is volvulus and strangulation, not heartburn."
+          ]
+        },
+        {
+          "heading": "Types III and IV",
+          "body_text": "**Type III hiatus hernia:**\n- **It is the combination of Type I and Type II** - global laxity with cephalad displacement of the GE junction PLUS a focal component through which the fundus rolls up alongside the esophagus. Both reflux and strangulation mechanisms coexist, and in practice it is the commonest of the paraesophageal group.\n\n**Type IV hiatus hernia:**\n- **It is the hernia containing other abdominal viscera like transverse colon and omentum** - the hiatal defect has enlarged enough to admit structures other than stomach; spleen, small bowel, pancreas and liver may also enter the sac.\n- Type IV shares the torsion-obstruction-strangulation risk of Types II and III and adds the risk of visceral (colonic) compromise within the sac.\n\nTypes II, III and IV are grouped as **paraesophageal hernias**, and their management is surgical.",
+          "key_points": [
+            "Type III = combination of Type I and Type II.",
+            "Type IV = hernia containing other abdominal viscera like transverse colon and omentum.",
+            "Types II-IV (paraesophageal group) are managed surgically."
+          ]
+        },
+        {
+          "heading": "Complications of Hiatus Hernia",
+          "body_text": "The lecture lists the complications that justify taking hiatus hernia seriously:\n- **Gastric volvulus** - torsion of the herniated stomach (organo-axial most common), producing the classic emergency triad of severe epigastric or chest pain, unproductive retching, and inability to pass a nasogastric tube.\n- **Obstruction** - at the twisted pylorus or GE junction.\n- **Infarction** - strangulation and necrosis of the stomach within the sac; a surgical emergency with high mortality.\n- **Ischemia - Cameron ulcer** - linear ischemic erosions and ulcers of the herniated gastric mucosa where it traverses the diaphragmatic hiatus; a classic hidden cause of **iron deficiency anemia**.\n- **GERD - Barrett's oesophagus** - in sliding and mixed hernias, chronic reflux can drive columnar metaplasia and ultimately adenocarcinoma.\n\nAny hiatus hernia patient presenting with acute chest or epigastric pain and vomiting must be evaluated for volvulus and strangulation before anything else.",
+          "key_points": [
+            "Complications: gastric volvulus, obstruction, infarction, ischemia (Cameron ulcer), GERD leading to Barrett's oesophagus.",
+            "Volvulus triad: severe pain, unproductive retching, inability to pass a nasogastric tube.",
+            "Cameron ulcer = linear ischemic ulcer of herniated mucosa; hidden cause of iron deficiency anemia."
+          ],
+          "check": {
+            "prompt": "A patient with a large hiatus hernia has chronic iron deficiency anemia with no overt bleeding source. Which complication should be sought at endoscopy?",
+            "options": [
+              "Cameron ulcer of the herniated gastric mucosa",
+              "Mallory-Weiss tear",
+              "Dieulafoy lesion of the antrum",
+              "Boerhaave perforation",
+              "Aortoesophageal fistula"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قرحة كاميرون قرحة خطية ناقصة التروية في المخاطية المعدية المرتهقة عند مستوى الحجاب، وهي سبب خفي كلاسيكي لفقر الدم بعوز الحديد."
+          }
+        },
+        {
+          "heading": "Treatment of Hiatus Hernia",
+          "body_text": "**Treatment follows the type:**\n- **Type I: treated like GERD** - lifestyle measures and acid suppression; antireflux surgery (fundoplication) only for treatment failures or complications of reflux. A small sliding hernia found incidentally needs nothing else.\n- **Types II, III and IV: surgical treatment** - because of the risks of volvulus, obstruction, ischemia/infarction and Cameron ulcer. Elective repair is offered even for relatively asymptomatic paraesophageal hernias; acute volvulus or strangulation requires **emergency** repair after resuscitation.\n\n**Hernia repair - the three essential steps:**\n1. **Reduction of the hernia** - return the stomach (and other viscera in Type IV) to the abdomen, untwisting any volvulus.\n2. **Resection of the sac** - excise the hernia sac to prevent recurrence and fluid collection.\n3. **Closure of the hiatal defect** - crural repair, usually with non-absorbable sutures with or without reinforcement, to restore the diaphragmatic barrier. An antireflux procedure (fundoplication) or a gastropexy is commonly added, and gastropexy alone may be chosen in frail emergency patients.",
+          "key_points": [
+            "Type I is treated like GERD.",
+            "Types II, III and IV need surgical treatment - even when minimally symptomatic.",
+            "Repair steps: reduction of the hernia, resection of the sac, closure of the hiatal defect.",
+            "Emergency repair is required for volvulus or strangulation."
+          ],
+          "check": {
+            "prompt": "What are the three essential steps of surgical hiatus hernia repair taught in the lecture?",
+            "options": [
+              "Gastric resection, vagotomy and pyloroplasty",
+              "Reduction of the hernia, resection of the sac, closure of the hiatal defect",
+              "Esophagectomy with cervical anastomosis",
+              "Long-term PPI therapy alone",
+              "Endoscopic balloon dilation of the hiatus"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "خطوات إصلاح الفتق هي رد الفتق وقطع الكيس وإغلاق عيب الحجاب، وتضاف عادة عملية مضادة للارتجاع أو تثبيت المعدة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Hiatus hernia",
+          "definition_ar": "فتق الحجاب: بروز جزء من المعدة عبر فتحة المريء في الحجاب الحاجز إلى التجويف الصدري."
+        },
+        {
+          "term": "Phrenoesophageal membrane",
+          "definition_ar": "الغشاء الحجابي المريئي الذي يثبت الوصل المعدي المريئي بالحجاب؛ يسبب ترهله النوع المنزلق وتمزقه البؤري النوع المتدحرج."
+        },
+        {
+          "term": "Sliding (Type I) hernia",
+          "definition_ar": "الفتق المنزلق: هجرة الوصل المعدي المريئي إلى المنصف عبر حجاب مرتخٍ؛ أشيع الأنواع وعادة بلا أعراض."
+        },
+        {
+          "term": "Rolling (Type II) hernia",
+          "definition_ar": "الفتق المتدحرج: صعود قبة المعدة بجانب المريء عبر عيب بؤري مع بقاء الوصل في البطن، وخطره الالتفاف والخنق."
+        },
+        {
+          "term": "Gastric volvulus",
+          "definition_ar": "التفاف المعدة داخل الفتق مسببا انسدادا وقد يخنقها؛ من مضاعفات الفتوق المتدحرجة والمعقدة."
+        },
+        {
+          "term": "Cameron ulcer",
+          "definition_ar": "قرحة خطية ناقصة التروية في المخاطية المعدية المرتهقة عند مستوى الفتحة، سبب خفي لفقر دم بعوز الحديد."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L1_esophagus_f01",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "What is the esophagus - length, connections, lining and sphincters?",
+      "back_text": "A muscular tube connecting the pharynx to the stomach, 23-25 cm long, lined by stratified squamous epithelium, containing two sphincters (UES and LES), with less than 3 cm lying below the diaphragm.",
+      "tags": ["anatomy"]
+    },
+    {
+      "id": "surg_L1_esophagus_f02",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "Name the three sites of external compression of the esophagus.",
+      "back_text": "The aorta, the left main stem bronchus and the diaphragm - the natural narrowings where foreign bodies (food bolus, coins, button batteries) commonly impact.",
+      "tags": ["anatomy", "foreign bodies"]
+    },
+    {
+      "id": "surg_L1_esophagus_f03",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "Which muscle types make up the esophageal muscularis propria?",
+      "back_text": "Skeletal muscle in the upper one third and smooth muscle in the lower two thirds; the wall runs mucosa, submucosa, muscularis propria, adventitia (no serosa).",
+      "tags": ["histology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f04",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c01",
+      "card_type": "basic",
+      "front_text": "Which esophageal neurotransmitter is excitatory and which is inhibitory?",
+      "back_text": "Acetylcholine (ACh) - excitatory, predominating proximally; nitric oxide (NO) - inhibitory, predominating distally. The vagus supplies the smooth muscle; the myenteric plexus drives peristalsis and Meissner plexus is submucosal.",
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f05",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "Distinguish primary, secondary and tertiary esophageal contractions.",
+      "back_text": "Primary peristalsis: initiated by the food bolus, contraction travels from proximal to distal. Secondary peristalsis: triggered by esophageal distention (residual bolus) and reflux - a clearance reflex. Tertiary contractions: non-propulsive and uncoordinated.",
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f06",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "What muscle forms the UES and how does it behave at rest and on swallowing?",
+      "back_text": "The cricopharyngeus muscle: tonic contraction at rest; relaxation during the pharyngeal phase of swallowing.",
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f07",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c02",
+      "card_type": "basic",
+      "front_text": "Give the normal resting LES pressure and its anatomical character.",
+      "back_text": "10-40 mm Hg, located below the diaphragm; a physiological sphincter - not a true anatomic sphincter - working in conjunction with the diaphragm as the primary antireflux barrier.",
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f08",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c03",
+      "card_type": "basic",
+      "front_text": "List the four core esophageal tests.",
+      "back_text": "Barium swallow, endoscopy (rigid or flexible; diagnostic and/or therapeutic), manometry, and 24-hour pH monitoring.",
+      "tags": ["investigations"]
+    },
+    {
+      "id": "surg_L1_esophagus_f09",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c03",
+      "card_type": "basic",
+      "front_text": "What are the indications for endoscopy in esophageal disease?",
+      "back_text": "Weight loss, upper gastrointestinal bleeding, dysphagia, odynophagia and chest pain, partial or no response to empiric therapy, and evaluation for Barrett's esophagus.",
+      "tags": ["investigations"]
+    },
+    {
+      "id": "surg_L1_esophagus_f10",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "What is the most common foreign body in the esophagus - and the most dangerous?",
+      "back_text": "Most common: a food bolus, which usually signifies underlying disease (stricture, ring or tumor). Most dangerous: button batteries - they burn and perforate the wall and demand urgent endoscopic removal. Removal is usually by flexible or rigid endoscopy.",
+      "mnemonic_ar": "بطارية الزر عدو صغير بحرق كبير: أي بطارية عالقة في المريء تعني تنظيرا عاجلا لا مراقبة.",
+      "is_vivid": true,
+      "tags": ["foreign bodies", "emergency"]
+    },
+    {
+      "id": "surg_L1_esophagus_f11",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "Describe the classic mechanism of Boerhaave syndrome.",
+      "back_text": "Vomiting against a closed glottis raises intraesophageal pressure rapidly; the esophagus bursts at its weakest point in the lower third, driving a stream of material into the mediastinum and often the pleural cavity - the most serious, often life-threatening perforation.",
+      "is_vivid": true,
+      "tags": ["perforation", "emergency"]
+    },
+    {
+      "id": "surg_L1_esophagus_f12",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "Which physical sign is virtually pathognomonic of esophageal perforation?",
+      "back_text": "Surgical (subcutaneous) emphysema - crepitus, swelling, bruising and dusky discoloration over the neck and supraclavicular areas.",
+      "tags": ["perforation", "signs"]
+    },
+    {
+      "id": "surg_L1_esophagus_f13",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "What four factors decide operative versus non-operative care in esophageal perforation?",
+      "back_text": "1) Site (cervical vs thoracoabdominal); 2) event (spontaneous vs instrumental); 3) underlying pathology (benign vs malignant); 4) interval since perforation and septic load. Septic shock, pleura breached, Boerhaave and abdominal perforation favor operation; small contained leaks after flexible endoscopy favor conservatism.",
+      "mnemonic_ar": "أين حدث؟ كيف حدث؟ ما وراءه؟ ومتى؟ الموضع، الحدث، المرض الكامن، والتأخير مع الحمل الإنتاني.",
+      "tags": ["perforation", "decision"]
+    },
+    {
+      "id": "surg_L1_esophagus_f14",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "card_type": "basic",
+      "front_text": "What is Mallory-Weiss syndrome and where does the tear occur?",
+      "back_text": "Longitudinal mucosal tears at the esophagogastric junction - a vertical split in the gastric mucosa immediately below the squamocolumnar junction at the cardia in 90 per cent of cases; presents with hematemesis after forceful vomiting; bleeding usually mild, endoscopic injection for severe bleeds, surgery rare.",
+      "tags": ["mallory-weiss", "bleeding"]
+    },
+    {
+      "id": "surg_L1_esophagus_f15",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "Contrast alkali versus acid mechanisms of corrosive esophageal injury.",
+      "back_text": "Alkalis (lye, caustic soda): odorless and tasteless so ingested in large volumes; cause liquefaction, saponification of fats, dehydration and vessel thrombosis - deep injury. Acids (sulphuric): coagulative necrosis with eschar that may limit penetration; more gastric damage via intense pylorospasm with antral pooling.",
+      "tags": ["corrosive", "pathophysiology"]
+    },
+    {
+      "id": "surg_L1_esophagus_f16",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c05",
+      "card_type": "basic",
+      "front_text": "Stricture rate after extensive corrosive damage, and timing of elective resection?",
+      "back_text": "Significant stricture develops in about 50 per cent of patients with extensive mucosal damage; follow with regular endoscopy (the best way to assess stricture development); defer elective esophageal resection for at least three months until the fibrotic phase is established. Emergency surgery only for bleeding or perforation.",
+      "tags": ["corrosive", "stricture"]
+    },
+    {
+      "id": "surg_L1_esophagus_f17",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "card_type": "basic",
+      "front_text": "State the ACG definition of GERD.",
+      "back_text": "Symptoms OR mucosal damage produced by the abnormal reflux of gastric contents into the esophagus; often chronic and relapsing, with complications possible in patients lacking typical symptoms. Physiologic reflux is postprandial, short-lived, asymptomatic and never nocturnal.",
+      "tags": ["gerd", "definitions"]
+    },
+    {
+      "id": "surg_L1_esophagus_f18",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "card_type": "basic",
+      "front_text": "How often is erosive esophagitis responsible for GERD symptoms, and what mismatch matters?",
+      "back_text": "Erosive esophagitis is responsible for 40-60 per cent of GERD symptoms; severity of symptoms often fails to match severity of erosive esophagitis.",
+      "tags": ["gerd", "complications"]
+    },
+    {
+      "id": "surg_L1_esophagus_f19",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "card_type": "basic",
+      "front_text": "Describe the Nissen fundoplication and its three classic complications.",
+      "back_text": "The most commonly preferred antireflux operation: a 360-degree wrap of the gastric fundus around the lower esophagus; effective. Complications: inability to vomit, gas bloat syndrome, dysphagia.",
+      "mnemonic_ar": "نيسن 360: لفة كاملة للقبة حول المريء؛ عجز عن التقيؤ وانتفاخ الغازات وعسر البلع ثلاثيتها المزعجة.",
+      "tags": ["gerd", "surgery"]
+    },
+    {
+      "id": "surg_L1_esophagus_f20",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c07",
+      "card_type": "basic",
+      "front_text": "Classify hiatus hernia types I-IV and state the treatment rule.",
+      "back_text": "I: sliding - GE junction migrates cephalad (lax phrenoesophageal membrane; commonest; asymptomatic). II: rolling - fundus alongside the esophagus via a focal defect, GE junction stays intra-abdominal. III: combination of I and II. IV: contains other viscera (transverse colon, omentum). Treat Type I like GERD; Types II-IV surgically: reduce the hernia, resect the sac, close the hiatal defect.",
+      "tags": ["hiatus hernia", "classification"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L1_esophagus_m01",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c01",
+      "question_stem": "Which triplet correctly lists the three sites at which the esophagus is externally compressed - the classic points where foreign bodies impact?",
+      "options": [
+        "Aorta, left main stem bronchus, diaphragm",
+        "Aorta, right main stem bronchus, pylorus",
+        "Inferior vena cava, right bronchus, cricopharyngeus",
+        "Azygos vein, pulmonary trunk, gastroesophageal junction",
+        "Left atrium, trachea, splenic flexure"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "مواضع الانضغاط الخارجي الثلاثة هي الأبهر والشعبة الرئيسية اليسرى والحجاب الحاجز وهي أضيق نقاط المريء، لذلك تعلق فيها الأجسام الأجنبية. لا تضغط الشعبة اليمنى ولا البابر ولا الأوردة المذكورة في المشتتات على المريء.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "The lecture lists exactly three compressing structures.",
+        "One is a great artery, one an airway, one the hiatal muscle.",
+        "These are the narrowings where coins and batteries lodge."
+      ],
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L1_esophagus_m02",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c02",
+      "question_stem": "A 38-year-old woman with refractory heartburn undergoes esophageal manometry. Which resting lower esophageal sphincter pressure range is NORMAL and defines a competent physiological sphincter?",
+      "options": [
+        "0-5 mm Hg",
+        "10-40 mm Hg",
+        "60-90 mm Hg",
+        "100-140 mm Hg",
+        "Identical to intrathoracic pressure throughout the cycle"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الضغط الانقباضي الطبيعي للعاصرة السفلية يتراوح بين 10 و40 ملم زئبق فوق الضغط داخل المعدة. القيم المنخفضة جدا تدل على عاصرة مرتخية كما في الدارج الشديد أو تصلب الجلد، والقيم المرتفعة جدا توصف في اللا ارتخائية، والتساوي مع الضغط الصدري يعني غياب العاصرة وظيفيا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Recall the physiology section numbers.",
+        "The normal zone is a two-digit range in mm Hg."
+      ],
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L1_esophagus_m03",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "question_stem": "A 4-year-old boy is drooling and refuses solids 6 hours after swallowing a small disc. Chest x-ray shows a round double-density object with a step-off edge lodged in the upper esophagus. What is the most appropriate next step?",
+      "options": [
+        "Discharge home with a bowel regimen and repeat x-ray in 24 hours",
+        "Induce emesis to expel the object",
+        "Immediate endoscopic removal under anesthesia (flexible or rigid)",
+        "Barium swallow to outline the object before any intervention",
+        "Observe until the object passes the pylorus spontaneously"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الجسم المستدير ذو الحافة المتدرجة هو بطارية زر، وهي عدو المريء لأنها تحرق المخاطية خلال ساعات وقد تثقب الجدار وتصنع ناسورا أبهريا مريئيا، لذا يجب إزالتها تنظيريا فورا. المراقبة والإقياء وبلع الباريوم كلها تأخير خطر على طفل مصاب.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The step-off double density is the signature of a button battery.",
+        "Beware button batteries in the oesophagus."
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "surg_L1_esophagus_m04",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "question_stem": "A 46-year-old man develops sudden severe chest and upper abdominal pain with breathlessness immediately after forceful vomiting against a closed glottis following an alcohol binge. Examination reveals crepitus and swelling over the neck and supraclavicular areas. What is the most likely diagnosis?",
+      "options": [
+        "Acute myocardial infarction",
+        "Boerhaave syndrome (spontaneous esophageal perforation)",
+        "Mallory-Weiss tear",
+        "Perforated peptic ulcer",
+        "Acute pancreatitis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "القيء ضد لسان مزمار مغلق يرفع ضغط المريء فينفجر في أضعف نقطة بالثلث السفلي، والانتفاخ الجراحي فوق الترقوتين شبه مميز لانثقاب المريء. الجلطة والقرحة الثاقبة والبنكرياس هي التشاخيصات الخاطئة الشائعة التي تؤخر الإنقاذ، ومالوري ويس تمزق مخاطي ينزف ولا يثقب المنصف.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Surgical emphysema is virtually pathognomonic.",
+        "Postemetic pain plus crepitus points to one syndrome."
+      ],
+      "focus_sections": [1, 2]
+    },
+    {
+      "id": "surg_L1_esophagus_m05",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "question_stem": "A patient with esophageal perforation is being triaged between operative and non-operative management. Which profile of findings favors OPERATIVE repair according to the four-factor decision?",
+      "options": [
+        "Small septic load and minimal cardiovascular upset after flexible endoscopic perforation",
+        "Perforation confined to the mediastinum of the cervical esophagus",
+        "Large septic load, septic shock and a breached pleura after forceful vomiting",
+        "Contained leak with minor symptoms recognized immediately",
+        "Instrumental perforation recognized during diagnostic endoscopy"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الحمل الإنتاني الكبير مع الصدمة الإنتانية واختراق الجنبة وخصوصا بورهاف كلها عوامل توجب الإصلاح الجراحي. أما الحمل الصغير والانثقاب العنقي المحصور بالمنصف والانثقاب عبر منظار مرن المعترف به فورا فتوجه نحو العلاج التحفظي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Read the two-column table: which column contains septic shock?",
+        "Pleura breached and Boerhaave sit in the operative column."
+      ],
+      "focus_sections": [4]
+    },
+    {
+      "id": "surg_L1_esophagus_m06",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c04",
+      "question_stem": "A 27-year-old man has repeated non-bloody retching after an alcohol binge and then vomits bright red blood. He is hemodynamically stable. Endoscopy shows a longitudinal mucosal tear at the cardia. What is the appropriate management?",
+      "options": [
+        "Immediate thoracotomy and repair",
+        "Supportive care, with endoscopic injection therapy reserved for the occasional severe bleeder - surgery is rarely required",
+        "Lifelong H2 blockers with yearly barium swallow",
+        "Nissen fundoplication during the same admission",
+        "Water-soluble contrast swallow followed by esophageal resection"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "مالوري ويس تمزق مخاطي طولي يقع مباشرة تحت الوصل الحرشفي الأسطواني عند الفؤاد في 90 بالمئة من الحالات، والنزف عادة غير شديد ويتوقف تلقائيا؛ ويحتاج القليل فقط إلى حقن تنظيري، والجراحة نادرة. بضع الصدر أو القطع مبالغة خطرة لنزف بهذا الهدوء.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The tear bleeds but does not perforate.",
+        "Most bleeds settle; only severe ones need injection."
+      ],
+      "focus_sections": [5]
+    },
+    {
+      "id": "surg_L1_esophagus_m07",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c05",
+      "question_stem": "A 19-year-old woman ingests sodium hydroxide (lye) in a suicide attempt. Which mechanism best explains the depth of her esophageal injury?",
+      "options": [
+        "Coagulative necrosis with eschar that limits penetration to deeper layers",
+        "Liquefaction, saponification of fats, dehydration and thrombosis of blood vessels",
+        "Intense pylorospasm with pooling of the agent in the antrum",
+        "Superficial mucosal edema that always resolves without sequelae",
+        "Immediate total sloughing limited to the stratified squamous epithelium"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "القلويات كهيدروكسيد الصوديوم تحدث نخارا انحلاليا مع تصبّن الدهون وتجفيف النسيج وخثار الأوعية فيتعمق الحرق عبر الجدار. الجُلبة المتخثرة سمة الحموض وهي التي تحد العمق، والتشنج البوابي آلية الضرر المعدي بالحموض لا القلويات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Alkalis are odorless and tasteless - large volumes are swallowed.",
+        "Think saponification of fats."
+      ],
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L1_esophagus_m08",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c05",
+      "question_stem": "A patient survives extensive caustic esophageal injury. On follow-up endoscopy a long fibrotic stricture is developing. If elective esophageal resection becomes necessary, when should it be scheduled?",
+      "options": [
+        "Immediately, during the acute necrotizing phase",
+        "Within the first week after injury",
+        "After at least three months, once the fibrotic phase is established",
+        "Only after five years of observation",
+        "Never - all corrosive strictures respond fully to a single dilation"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "يؤجل القطع الانتخابي ثلاثة أشهر على الأقل حتى تكتمل المرحلة الليفية ويتحدد مدى التضيق بدقة، إذ الجراحة المبكرة على جدار متنخر ملتهب كارثة. يصيب التضيق الصريح نحو 50 بالمئة من تخريب المخاطية الواسع ويتابع بالتنظير الدوري والتوسيع أولا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Regular endoscopy tracks stricture development.",
+        "Wait for demarcation and fibrosis - three months."
+      ],
+      "focus_sections": [3]
+    },
+    {
+      "id": "surg_L1_esophagus_m09",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "question_stem": "A 59-year-old man with a 10-year history of reflux symptoms reports new progressive dysphagia, a 6 kg weight loss, and fatigue. Labs show hemoglobin 9.2 g/dL with iron deficiency. What is the most appropriate next step?",
+      "options": [
+        "Double-dose proton-pump inhibitor trial for 8 weeks",
+        "Upper gastrointestinal endoscopy with biopsy",
+        "24-hour ambulatory pH monitoring",
+        "Esophageal manometry",
+        "Barium swallow alone, with no biopsy capability"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عسر البلع ونقص الوزن وفقر الدم بعوز الحديد علامات إنذار توجب التنظير فورا لاستبعاد التضيق ومريء باريت والسرطان. تجربة مضخة البروتون هنا تأخير خطر، وقياس الضغط والرصد الحمضي خطوة لاحقة، والباريوم وحده لا يتيح الخزعة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Dysphagia plus weight loss plus anemia in GERD is an alarm constellation.",
+        "Alarm signs demand direct visualization."
+      ],
+      "focus_sections": [1, 2]
+    },
+    {
+      "id": "surg_L1_esophagus_m10",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "question_stem": "A 62-year-old man with chronic GERD undergoes EGD. Biopsies show Barrett's esophagus with NO dysplasia. What surveillance program does the lecture recommend?",
+      "options": [
+        "No further endoscopy is ever needed",
+        "EGD every 3 years",
+        "EGD every 3 months indefinitely",
+        "Immediate esophagectomy",
+        "Annual barium swallow instead of endoscopy"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "في مريء باريت دون خلل تكاثري يكفي تنظير كل 3 سنوات، ويُقصر الفاصل إلى سنوي أو أقل عند وجود الخلل التكاثري. الاستئصال الفوري ليس مبدأ المراقبة دون خلل، والباريوم لا يكشف الحؤول لأنه ليس فحصا مخاطيا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "No dysplasia means a longer interval.",
+        "Three years is the lecture's number."
+      ],
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L1_esophagus_m11",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c06",
+      "question_stem": "Three months after laparoscopic Nissen fundoplication, a 44-year-old woman reports postprandial epigastric fullness, inability to belch, and distress from gassiness. Which procedure-specific complication is this?",
+      "options": [
+        "Gas bloat syndrome",
+        "Dumping syndrome",
+        "Afferent loop syndrome",
+        "Boerhaave syndrome",
+        "Blind loop syndrome"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "متلازمة انتفاخ الغازات مضاعفة معروفة بعد لف نيسن 360 درجة: يفقد المريض القدرة على التجشؤ فتتجمع الغازات بعد الطعام. العجز عن الإقياء وعسر البلع بقية مضاعفات اللف، أما الإغراق ومتلازمات العرى فخاصة بجراحات المعدة الأخرى لا بلف القبة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "A 360-degree wrap blocks belching.",
+        "Inability to vomit, gas bloat and dysphagia are the Nissen triad of nuisance complications."
+      ],
+      "focus_sections": [5]
+    },
+    {
+      "id": "surg_L1_esophagus_m12",
+      "lecture_id": "surg_L1_esophagus",
+      "concept_id": "surg_L1_esophagus_c07",
+      "question_stem": "A 74-year-old woman has a Type IV hiatus hernia containing transverse colon and omentum, discovered on CT after intermittent postprandial chest pain. Elective surgical repair is planned. Which steps constitute the hernia repair taught in the lecture?",
+      "options": [
+        "Reduction of the hernia, resection of the sac, and closure of the hiatal defect",
+        "Segmental colonic resection with primary anastomosis",
+        "Total gastrectomy with Roux-en-Y reconstruction",
+        "Endoscopic pneumatic dilation of the hiatus",
+        "Long-term proton-pump inhibitor therapy alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "إصلاح فتق الحجاب يقوم على رد الفتق وقطع الكيس وإغلاق عيب الحجاب؛ والأنواع الثانية إلى الرابعة تعالج جراحيا ولو بلا أعراض بسبب خطر الالتفاف والخنق وقرحة كاميرون، بينما النوع الأول يعالج كالارتجاع. قطع القولون أو استئصال المعدة ليسا جزءا من الإصلاح.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Three steps: reduce, resect the sac, close the defect.",
+        "Type I is the only type managed like GERD."
+      ],
+      "focus_sections": [5, 3]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L1_esophagus_case01",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Postemetic Chest Catastrophe - Boerhaave Syndrome",
+      "scenario": "A 48-year-old man is brought to the emergency department one hour after sudden severe lower chest and upper abdominal pain that began during forceful vomiting after a heavy alcohol binge. He is breathless, sweating, and in severe distress.",
+      "vignette": {
+        "age": 48,
+        "sex": "male",
+        "chief_complaint": "Sudden severe chest and epigastric pain with breathlessness after forceful vomiting",
+        "history": "Chronic heavy alcohol use; hypertension treated with amlodipine; no prior cardiac history; the pain started mid-vomiting against a closed glottis and has not eased; one earlier similar but milder episode that resolved spontaneously.",
+        "vitals": {
+          "bp": "102/64 mmHg",
+          "hr": "118/min",
+          "rr": "26/min",
+          "temp": "38.1 C",
+          "spo2": "92% on room air"
+        },
+        "exam": "Ill-appearing and diaphoretic. Palpable crepitus with swelling, bruising and dusky discoloration over the left neck and supraclavicular fossa (surgical emphysema). Decreased breath sounds with dullness at the left base. Epigastric tenderness with surprising upper abdominal rigidity despite absent peritoneal free air.",
+        "labs": [
+          {
+            "name": "White blood cell count",
+            "value": "18.6 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "112 mg/L",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "3.4 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Troponin I",
+            "value": "0.01 ng/mL",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum lipase",
+            "value": "38 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "13.8 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Chest x-ray: left hydropneumothorax, pneumomediastinum, extensive subcutaneous emphysema over the neck and upper chest, and mediastinal widening."
+      },
+      "steps": [
+        {
+          "id": "surg_L1_esophagus_case01_s1",
+          "prompt": "What is the most appropriate IMMEDIATE management in the emergency department?",
+          "options": [
+            "Immediate oral barium swallow in the imaging suite",
+            "IV access with aggressive crystalloid resuscitation, analgesia, oxygen, nil per os, and empiric broad-spectrum IV antibiotics",
+            "Immediate awake upper endoscopy at the bedside",
+            "Oral antacid and observation on the ward",
+            "Activated charcoal via nasogastric tube"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الخطوة الأولى دائما الإنعاش: وريدان وسوائل ومسكن وأكسجين ومنع الطعام مع صادات وريدية واسعة، لأن التخريش الكيميائي للمنصف سيتبعه إنتان قاتل. الباريوم الفموي أو التنظير قبل الاستقرار يزيد التلوث، والفحم عبر أنبوب معدي خطأ مركب.",
+          "xp": 10,
+          "hints": [
+            "Think ABC before diagnosis.",
+            "What limits mediastinal contamination and infection while you work up the leak?"
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case01_s2",
+          "prompt": "After initial resuscitation, which investigation best confirms the diagnosis and defines the leak?",
+          "options": [
+            "12-lead ECG with serial troponins",
+            "Serum amylase and lipase",
+            "Water-soluble contrast esophagogram (Gastrografin swallow) with or without contrast-enhanced CT of the chest",
+            "Barium swallow as the first contrast agent",
+            "Urgent diagnostic laparoscopy"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "بلع المادة المائية الذوابة يظهر تسرب المادة خارج المريء ويحدد امتداده إلى المنصف والجنبة، ويمكن أن يضاف تصوير مقطعي محقون. الباريوم ممنوع كبداية لأنه إن تسرب صار مهيجا شديدا للمنصف، وتخطيط القلب والبنكرياس اختبارات لاستبعاد المشابهات، والتنظير قد يوسع الثقب.",
+          "xp": 10,
+          "hints": [
+            "Choose the contrast agent that is safe if it extravasates.",
+            "The ECG here is normal - what else explains postemetic pain with emphysema?"
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case01_s3",
+          "prompt": "The swallow shows free extravasation into the left pleural space and the patient drifts into septic shock. What is the definitive management?",
+          "options": [
+            "Conservative management: nil per os, parenteral nutrition and antibiotics alone",
+            "Endoscopic placement of a covered self-expanding metal stent as definitive sole therapy",
+            "Emergency thoracotomy with repair of the lower-third perforation, mediastinal toilet, pleural drainage and feeding access",
+            "Elective repair after six weeks of conservative therapy",
+            "Long-term proton-pump inhibitor therapy and outpatient re-evaluation"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "وفق عوامل القرار الأربعة: بورهاف مع حمل إنتاني كبير وصدمة إنتانية واختراق الجنبة يعني إصلاحا جراحيا عاجلا مع تنظيف المنصف والنزح. التحفظ هنا تأخير قاتل، والدعامة وحدها ليست قرار هذه الحالة، وإرجاء الجراحة ستة أسابيع خطأ في الصف الجراحي من الجدول.",
+          "xp": 15,
+          "hints": [
+            "Revisit the four factors and the operative column of the decision table.",
+            "Septic shock decides the column."
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case01_s4",
+          "prompt": "Postoperatively the patient cannot swallow safely for weeks. What is the appropriate nutritional strategy taught by the lecture?",
+          "options": [
+            "Immediate oral soft diet on day 1",
+            "No feeding at all until stricture assessment at 3 months",
+            "Feeding jejunostomy with gradual return to oral intake guided by contrast study and endoscopy, until saliva swallowing is satisfactory",
+            "Permanent total parenteral nutrition",
+            "Nasogastric tube passed across the fresh repair into the stomach"
+          ],
+          "correct_index": 2,
+          "explanation_ar": "فغر التغذية بالصائم يغذي المريض متجاوزا الإصلاح حتى يستعيد بلع لعابه بأمان، مع عودة تدريجية موجهة بالدراسة الظليلة والتنظير. الأنبوب الأنفي المعدي عبر الإصلاح الجديد يهدد الخياطة، والتغذية الوريدية الدائمة ليست هدفها.",
+          "xp": 8,
+          "hints": [
+            "Feed the gut, but not across the repair.",
+            "The corrosive-injury lecture uses the same jejunostomy principle."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: متلازمة بورهاف، انثقاب تلقائي انضغاطي للثلث السفلي للمريء بعد قيء ضد لسان مزمار مغلق. الدروس المحورية: الانتفاخ الجراحي شبه مميز للانثقاب، والألم بعد القيء يشخص خطأ كجلطة قلبية أو قرحة ثاقبة أو بنكرياس فيتأخر العلاج. القرار بين الجراحة والتحفظ يقوم على أربعة عوامل: الموضع والحدث والمرض الكامن والتأخير مع الحمل الإنتاني. يبدأ الإنعاش دائما قبل التصوير، وبليعة المادة المائية الذوابة أول دراسة تأكيدية لا الباريوم.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L1_esophagus_case02",
+      "lecture_id": "surg_L1_esophagus",
+      "title": "Strangulation Threat in a Paraesophageal (Rolling) Hiatus Hernia",
+      "scenario": "A 75-year-old woman with a known large hiatus hernia presents to the emergency department with three hours of severe retrosternal and epigastric pain, repeated retching without vomitus, and progressive abdominal distension after a large evening meal.",
+      "vignette": {
+        "age": 75,
+        "sex": "female",
+        "chief_complaint": "Severe chest and epigastric pain with unproductive retching",
+        "history": "Known Type III (mixed) hiatus hernia on follow-up imaging; long-standing early satiety and intermittent postprandial fullness; chronic GERD treated intermittently with omeprazole; elective repair was declined last year. Tonight the pain began suddenly after dinner; she feels distended and cannot vomit despite retching.",
+        "vitals": {
+          "bp": "96/58 mmHg",
+          "hr": "124/min",
+          "rr": "24/min",
+          "temp": "37.8 C",
+          "spo2": "95% on room air"
+        },
+        "exam": "Distended, tympanitic epigastrium with dullness in the left lower chest; absent bowel sounds in the epigastrium; severe tenderness without generalized peritonitis; gentle nasogastric tube passage unsuccessful; patient distressed but orientated.",
+        "labs": [
+          {
+            "name": "White blood cell count",
+            "value": "16.9 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "4.3 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.4 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Creatinine",
+            "value": "1.5 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "C-reactive protein",
+            "value": "48 mg/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Chest x-ray: large retrocardiac air-fluid level with a herniated gastric bubble in the posterior mediastinum. CT abdomen with contrast (after resuscitation): organo-axial gastric volvulus within a large hiatus hernia; congested but viable gastric wall, no free perforation; the GE junction lies above the diaphragm with the fundus alongside (Type III)."
+      },
+      "steps": [
+        {
+          "id": "surg_L1_esophagus_case02_s1",
+          "prompt": "What is the correct first response in the emergency department?",
+          "options": [
+            "Immediate induction of anesthesia and laparotomy without resuscitation",
+            "IV crystalloid resuscitation, analgesia, nil per os, oxygen, blood cultures and IV antibiotics, with gentle nasogastric tube passage attempted under imaging guidance while the surgical team stands by",
+            "Oral Gastrografin challenge to test for obstruction",
+            "Doubling the proton-pump inhibitor dose and reassessing in 12 hours",
+            "Flexible endoscopy for decompression by a lone on-call physician"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "قبل أي قرار يأتي إنعاش المريضة المسنة المائلة للصدمة: سوائل ومسكن ومنع طعام وأكسجين وصادات وريدية، مع محاولة لطيفة لتمرير أنبوب أنفي معدي تحت التوجيه لتخفيف الالتفاف والجراح جاهز. الجراحة قبل الإنعاش قد تقتل، والانتظار 12 ساعة يجازف بالخنق.",
+          "xp": 10,
+          "hints": [
+            "Resuscitate first - always.",
+            "A tube may buy time in gastric volvulus."
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case02_s2",
+          "prompt": "After partial resuscitation, which investigation best defines the anatomy and the viability threat?",
+          "options": [
+            "Contrast-enhanced CT of chest and abdomen",
+            "Barium swallow as the first study in this obstructed patient",
+            "Transthoracic echocardiography",
+            "24-hour pH monitoring",
+            "Esophageal manometry"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التصوير المقطعي المحقون يحدد وجود الالتفاف ومحوره ونوع الفتق وحالة جدار المعدة وعلامات الخنق. الباريوم ممنوع عند الانسداد الكامل لخطر الأسبر، والرصد الحمضي وقياس الضغط اختبارات وظيفية لا مكان لها في الطارئ، والإيكو القلبي لا يرى الفتق.",
+          "xp": 10,
+          "hints": [
+            "Define the twist and the blood supply in one study.",
+            "Never barium a complete obstruction."
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case02_s3",
+          "prompt": "The stomach remains twisted with a rising lactate despite the tube. What is the definitive management?",
+          "options": [
+            "Emergency laparotomy or laparoscopy: reduction of the volvulated stomach, assessment of gastric viability, resection of the hernia sac and closure of the hiatal defect, with an antireflux procedure or gastropexy as appropriate",
+            "Elective repair scheduled six weeks later",
+            "Endoscopic detorsion alone followed by discharge",
+            "Total gastrectomy as the default operation",
+            "Continued conservative nasogastric decompression until symptoms settle"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الفتوق من النوع الثاني إلى الرابع تعالج جراحيا، والطارئ منها رد الالتفاف وتقييم حيوية المعدة ثم خطوات الإصلاح الثلاث: رد الفتق وقطع الكيس وإغلاق عيب الحجاب. الاستئصال الكلي ليس الافتراضي، والفك التنظيري وحده يترك الفتق لينحرف مجددا، والاستمرار بالتحفظ مع ارتفاع اللاكتات يهدد بخنق المعدة.",
+          "xp": 15,
+          "hints": [
+            "Type III with an ischemic signature - which arm of the treatment rule applies?",
+            "The three repair steps are the answer."
+          ]
+        },
+        {
+          "id": "surg_L1_esophagus_case02_s4",
+          "prompt": "The patient recovers after repair. Which long-term considerations are correct?",
+          "options": [
+            "No follow-up is needed once the hernia is repaired",
+            "Follow-up for reflux symptoms with acid suppression, vigilance for Cameron ulcer as a cause of iron deficiency anemia, and the rule that Type I is managed like GERD while Types II-IV are the surgical group",
+            "Yearly CT surveillance for gastric cancer in all repaired patients",
+            "Lifetime liquid diet only",
+            "Surveillance endoscopy every 3 months for Barrett's in every hernia patient regardless of reflux"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "بعد الإصلاح تتابع أعراض الارتجاع وتعالج كالدارج، ويبحث عن قرحة كاميرون عند أي فقر دم بعوز الحديد، مع تذكر أن النوع الأول يعالج كالارتجاع والأنواع الثانية إلى الرابعة هي الفئة الجراحية. الملاحقة المفرطة بالتصوير أو التنظير لكل مريض ليست مبدأ الدرس.",
+          "xp": 8,
+          "hints": [
+            "Which ulcer hides in a hiatus hernia?",
+            "Recall the type-based treatment rule."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: التفاف معدي حاد داخل فتق حجاب مختلط من النوع الثالث. الدروس: الفتوق المتدحرجة والمعقدة من النوع الثاني إلى الرابع تنطوي على خطر الالتفاف والانسداد والخنق وقرحة كاميرون، لذا تعالج جراحيا بالرد وقطع الكيس وإغلاق عيب الحجاب حتى لو كانت شبه بلا أعراض، بينما النوع المنزلق الأول يعالج كالارتجاع المعدي المريئي. فخ الامتحان: ألم صدري وشرقي مع قيء غير منتج وعجز عن إدخال الأنبوب الأنفي المعدي هو التفاف معدي لا جلطة قلبية.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

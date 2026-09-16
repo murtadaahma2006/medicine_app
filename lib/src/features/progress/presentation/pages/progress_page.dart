@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/motivation_repository.dart';
 import '../../../../core/motivation/motivation_model.dart';
 import '../../../../routing/app_router.dart';
@@ -193,8 +194,8 @@ class _StreakRow extends StatelessWidget {
         children: <Widget>[
           AppIllustration('badge_streak3', size: 48, borderRadius: BorderRadius.circular(12),),
           const SizedBox(width: AppSpacing.md),
-          // عدّاد السلسلة يتصاعد.
-          _CountUp(
+          // عدّاد السلسلة يتصاعد — العدّاد الموحد (double lerp سليم).
+          CountUp(
             value: snapshot.currentStreak,
             style: AppType.termWord.copyWith(
               fontSize: 34,
@@ -230,8 +231,9 @@ class _StreakRow extends StatelessWidget {
 /// تقويم نشاط آخر 35 يوماً (5 أسابيع × 7) — خلايا تتوهج بالأيام
 /// النشطة، وأعمدته تدخل بتتابع (40ms لكل عمود — أسبوع).
 ///
-/// مصدر الأيام: أيام النشاط من xp_events حصراً (نفس قرار مصدر السلاسل
-/// الموثق في MotivationRepository).
+/// مصدر الأيام النشطة: أيام النشاط من xp_events حصراً (نفس قرار
+/// مصدر السلاسل الموثق في MotivationRepository). زمن الدراسة اليومي
+/// يُعرض عند النقر على أي خلية من جدول daily_stats.
 class _StreakCalendar extends StatefulWidget {
   const _StreakCalendar();
 
@@ -242,6 +244,9 @@ class _StreakCalendar extends StatefulWidget {
 class _StreakCalendarState extends State<_StreakCalendar> {
   Set<String>? _activeDays;
 
+  /// زمن الدراسة بالثواني لكل يوم — {عاليخصم: ثواني}.
+  Map<String, int>? _studySeconds;
+
   @override
   void initState() {
     super.initState();
@@ -250,12 +255,24 @@ class _StreakCalendarState extends State<_StreakCalendar> {
 
   Future<void> _load() async {
     try {
+      // النشاط (السلسلة) + زمن الدراسة يومياً — بالتوازي.
       final List<String> days = await MotivationRepository.activeDays();
+      final List<MapEntry<String, int>> secs = await DatabaseHelper
+          .instance
+          .getStudySecondsRecent(35);
       if (!mounted) return;
-      setState(() => _activeDays = days.toSet());
+      setState(() {
+        _activeDays = days.toSet();
+        _studySeconds = <String, int>{
+          for (final MapEntry<String, int> e in secs) e.key: e.value,
+        };
+      });
     } catch (_) {
       if (!mounted) return;
-      setState(() => _activeDays = <String>{});
+      setState(() {
+        _activeDays = <String>{};
+        _studySeconds = <String, int>{};
+      });
     }
   }
 
@@ -263,6 +280,7 @@ class _StreakCalendarState extends State<_StreakCalendar> {
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
     final Set<String>? activeDays = _activeDays;
+    final Map<String, int>? studySeconds = _studySeconds;
 
     return AppCard(
       child: Column(
@@ -278,7 +296,7 @@ class _StreakCalendarState extends State<_StreakCalendar> {
             ],
           ),
           const SizedBox(height: AppSpacing.md),
-          if (activeDays == null)
+          if (activeDays == null || studySeconds == null)
             const Center(
               child: Padding(
                 padding: EdgeInsets.all(AppSpacing.md),
@@ -293,6 +311,7 @@ class _StreakCalendarState extends State<_StreakCalendar> {
                   _WeekRow(
                     week: week,
                     activeDays: activeDays,
+                    studySeconds: studySeconds,
                   ),
               ],
             ),
@@ -324,7 +343,22 @@ class _StreakCalendarState extends State<_StreakCalendar> {
               Text('راحة',
                   style: AppType.caption
                       .copyWith(color: AppColors.textSecondary(b))),
+              const SizedBox(width: AppSpacing.md),
+              Icon(Icons.touch_app_rounded,
+                  size: 13, color: AppColors.textSecondary(b)),
+              const SizedBox(width: AppSpacing.xs),
+              Text('اضغط للوقت',
+                  style: AppType.caption
+                      .copyWith(color: AppColors.textSecondary(b))),
             ],
+          ),
+          const SizedBox(height: AppSpacing.xs),
+          Text(
+            'كل يوم يُظهر زمن استخدامك في ذلك اليوم.',
+            style: AppType.caption.copyWith(
+              fontSize: 10.5,
+              color: AppColors.textSecondary(b).withValues(alpha: 0.8),
+            ),
           ),
         ],
       ),
@@ -334,10 +368,15 @@ class _StreakCalendarState extends State<_StreakCalendar> {
 
 /// صف أسبوع واحد — يدخل بتدرج (40ms × رقمه) مرة واحدة.
 class _WeekRow extends StatelessWidget {
-  const _WeekRow({required this.week, required this.activeDays});
+  const _WeekRow({
+    required this.week,
+    required this.activeDays,
+    required this.studySeconds,
+  });
 
   final int week;
   final Set<String> activeDays;
+  final Map<String, int> studySeconds;
 
   @override
   Widget build(BuildContext context) {
@@ -374,7 +413,8 @@ class _WeekRow extends StatelessWidget {
     );
   }
 
-  /// خلية يوم واحد: التاريخ = اليوم - (34 - index).
+  /// خلية يوم واحد: التاريخ = اليوم - (34 - index). قابلة للنقر لعرض
+  /// زمن الدراسة في ذلك اليوم (تلميح أنيق).
   Widget _buildCell(Brightness b, int week, int day) {
     // العمود الأول (أقصى اليمين بصرياً في RTL هو index 0) = الأقدم.
     final int daysAgo = 34 - (week * 7 + day);
@@ -383,30 +423,59 @@ class _WeekRow extends StatelessWidget {
     final String key = date.toIso8601String().substring(0, 10);
     final bool active = activeDays.contains(key);
     final bool isToday = daysAgo == 0;
+    final int seconds = studySeconds[key] ?? 0;
 
-    return Container(
-      width: 34,
-      height: 34,
+    return Tooltip(
+      message: formatDuration(seconds),
+      triggerMode: TooltipTriggerMode.tap,
+      waitDuration: Duration.zero,
+      showDuration: const Duration(seconds: 3),
+      margin: const EdgeInsets.all(8),
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.md, vertical: AppSpacing.sm + 2),
       decoration: BoxDecoration(
-        color: active
-            ? AppColors.success(b).withValues(alpha: 0.9)
-            : AppColors.surfaceAlt(b),
-        borderRadius: BorderRadius.circular(AppRadius.chip - 4),
-        border: isToday
-            ? Border.all(color: AppColors.primary(b), width: 2)
-            : Border.all(color: AppColors.border(b)),
+        color: AppColors.text(b),
+        borderRadius: BorderRadius.circular(AppRadius.chip),
+        boxShadow: AppShadows.floating(b),
       ),
-      child: active
-          ? Center(
-              child: Icon(
-                Icons.check_rounded,
-                size: 16,
-                color: AppColors.surface(b),
-              ),
-            )
-          : null,
+      textStyle: AppType.caption.copyWith(
+        fontWeight: FontWeight.w800,
+        color: AppColors.background(b),
+      ),
+      child: Container(
+        width: 34,
+        height: 34,
+        decoration: BoxDecoration(
+          color: active
+              ? AppColors.success(b).withValues(alpha: 0.9)
+              : AppColors.surfaceAlt(b),
+          borderRadius: BorderRadius.circular(AppRadius.chip - 4),
+          border: isToday
+              ? Border.all(color: AppColors.primary(b), width: 2)
+              : Border.all(color: AppColors.border(b)),
+        ),
+        child: active
+            ? Center(
+                child: Icon(
+                  Icons.check_rounded,
+                  size: 16,
+                  color: AppColors.surface(b),
+                ),
+              )
+            : null,
+      ),
     );
   }
+}
+
+/// ينسّق الثواني إلى نص عربي أنيق: "1س 15د" / "45د" / "0د".
+String formatDuration(int totalSeconds) {
+  if (totalSeconds <= 0) return '0د';
+  final int minutes = totalSeconds ~/ 60;
+  final int hours = minutes ~/ 60;
+  final int remMinutes = minutes % 60;
+  if (hours > 0) return '$hoursس $remMinutesد';
+  return '$remMinutesد';
 }
 
 // ─────────────────────────── شبكة الشارات ───────────────────────────
@@ -657,7 +726,8 @@ class _StatCard extends StatelessWidget {
               ),
             ),
             // القيمة تتصاعد تصاعدياً عند البناء.
-            _CountUp(
+            // العدّاد الموحد (double lerp سليم — لا int lerp).
+            CountUp(
               value: value,
               style: AppType.termWord.copyWith(
                 fontSize: 24,
@@ -671,32 +741,3 @@ class _StatCard extends StatelessWidget {
   }
 }
 
-/// عدّاد تصاعدي — من 0 إلى value خلال 900ms (أرقام جدولية).
-///
-/// نسخة مطابقة لعقل _CountUp في شاشة النتيجة الموحدة — مكررة هنا
-/// خصوصاً لأن النسخة هناك خاصة بمكوّن النتيجة (private)؛ توحيد كامل
-/// يمر عبر نقلها لمكتبة المكونات في المرحلة 7 (جرد التوحيد).
-class _CountUp extends StatelessWidget {
-  const _CountUp({required this.value, required this.style});
-
-  final int value;
-  final TextStyle style;
-
-  @override
-  Widget build(BuildContext context) {
-    if (MediaQuery.disableAnimationsOf(context)) {
-      return Text('$value',
-          textDirection: TextDirection.ltr, style: style);
-    }
-    return TweenAnimationBuilder<int>(
-      tween: Tween<int>(begin: 0, end: value),
-      duration: const Duration(milliseconds: 900),
-      curve: AppMotion.ease,
-      builder: (BuildContext context, int v, Widget? _) => Text(
-        '$v',
-        textDirection: TextDirection.ltr,
-        style: style,
-      ),
-    );
-  }
-}

@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- المفهوم 2: الكبسولة والكتاب — طبي + أكاديمي -->
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1B3C6E"/>
+      <stop offset="1" stop-color="#142C53"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="150" y1="140" x2="360" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8A33D"/>
+      <stop offset="1" stop-color="#C77F1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg2)"/>
+  <!-- كتاب مفتوح -->
+  <path d="M256 200 C220 172 168 168 136 176 V340 C168 332 220 336 256 364 C292 336 344 332 376 340 V176 C344 168 292 172 256 200 Z"
+        fill="#FFFFFF" fill-opacity="0.08" stroke="#E9F0FA" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M256 200 V364" stroke="#E9F0FA" stroke-opacity="0.35" stroke-width="3"/>
+  <!-- سطور الكتاب -->
+  <path d="M160 212 C190 208 220 212 240 224 M160 244 C190 240 220 244 240 256 M160 276 C190 272 220 276 240 288"
+        stroke="#E9F0FA" stroke-opacity="0.45" stroke-width="6" stroke-linecap="round"/>
+  <path d="M352 212 C322 208 292 212 272 224 M352 244 C322 240 292 244 272 256"
+        stroke="#E9F0FA" stroke-opacity="0.45" stroke-width="6" stroke-linecap="round"/>
+  <!-- كبسولة مائلة فوق الكتاب -->
+  <g transform="rotate(40 340 160)">
+    <rect x="300" y="112" width="80" height="38" rx="19" fill="url(#gold2)"/>
+    <rect x="300" y="112" width="40" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.28"/>
+    <path d="M340 112 h0 a0 0 0 0 1 0 0 v38 h-21 a19 19 0 0 1 0 -38 Z" fill="none"/>
+    <line x1="340" y1="112" x2="340" y2="150" stroke="#142C53" stroke-opacity="0.5" stroke-width="2"/>
+  </g>
+  <!-- نجمة لؤلؤة صغيرة -->
+  <path d="M186 420 L194 440 L214 448 L194 456 L186 476 L178 456 L158 448 L178 440 Z"
+        fill="url(#gold2)" opacity="0.9"/>
+</svg>

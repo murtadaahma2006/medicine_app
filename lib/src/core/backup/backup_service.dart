@@ -17,17 +17,14 @@ DocumentsDirProvider documentsDirProvider =
     () async => Directory.systemTemp;
 
 /// خدمة النسخ الاحتياطي — تصدير/استيراد بيانات المستخدم
-/// إلى ملف JSON واحد قابل للمشاركة.
+/// باستخدام "النسخ الشامل" (Universal Backup).
 ///
 /// **الضمانات**:
-/// - **التصدير**: كل جداول المستخدم (user_progress, corrections,
-///   xp_events, srs_cards, unlocked_badges) + التفضيلات
-///   مع رقم المخطط وطابع زمني — لا يمس المحتوى أبداً.
-/// - **الاستيراد**: تحقق بنيوي صارم ثم استبدال التقدم الحالي داخل
-///   **معاملة واحدة** — الاستثناء الوحيد المسموح فيه DELETE (قاعدة
-///   القسم 2): **جداول المستخدم فقط**، المحتوى لا يُمس.
-/// - رفض مهذب لكل الحالات (ملف تالف/مخطط مغاير/مفاتيح ناقصة) — لا
-///   استثناءات تصل المستخدم، وفشل الاستيراد لا يمس بياناته الحالية.
+/// - **التصدير**: يتم إغلاق القاعدة لضمان اكتمال الكتابة (WAL flush)،
+///   ثم نسخ ملف `.db` كاملاً، وحقن `SharedPreferences` داخله.
+///   هذا يضمن حفظ كافة جداول المحتوى والتقدم الحالية والمستقبلية.
+/// - **الاستيراد**: يدعم استيراد `.db` الجديد أو `.json` القديم (كخيار تراجعي).
+///   عند استيراد `.db`، تُستبدل القاعدة بالكامل بعد استخراج التفضيلات.
 abstract final class BackupService {
   /// الملف داخل Documents/MedicineApp/Backups.
   static Future<Directory> backupDir() async {
@@ -40,52 +37,65 @@ abstract final class BackupService {
     return dir;
   }
 
-  /// اسم الملف الموحد: مخطط + طابع زمني.
+  /// اسم الملف الموحد: مخطط + طابع زمني + امتداد .db.
   static String fileNameFor(DateTime now) =>
       'medical_backup_v${DatabaseHelper.databaseVersion}_'
-      '${now.millisecondsSinceEpoch}.json';
+      '${now.millisecondsSinceEpoch}.db';
 
   // ───────────────────────────── التصدير ─────────────────────────────
 
-  /// يصدّر نسخة JSON كاملة. [preferences] يجمعها المستدعي من
-  /// SharedPreferences (تفكيك الاعتماد — قابل للاختبار).
+  /// يصدّر نسخة كاملة لملف القاعدة مع حقن التفضيلات.
   static Future<BackupExportResult> export({
     Map<String, Object?>? preferences,
   }) async {
     try {
       final DatabaseHelper helper = DatabaseHelper.instance;
-      final Database db = await helper.database;
 
-      final Map<String, Object?> data = <String, Object?>{
-        'schema_version': DatabaseHelper.databaseVersion,
-        'exported_at': DateTime.now().toUtc().toIso8601String(),
-        'app': 'medicine_app',
-        'data': <String, Object?>{
-          'user_progress':
-              await db.query(DatabaseHelper.tableUserProgress),
-          'corrections':
-              await db.query(DatabaseHelper.tableCorrections),
-          'xp_events': await db.query(DatabaseHelper.tableXpEvents),
-          'srs_cards': await db.query(DatabaseHelper.tableSrsCards),
-          'unlocked_badges':
-              await db.query(DatabaseHelper.tableUnlockedBadges),
-          'preferences': preferences ?? const <String, Object?>{},
-        },
-      };
+      // 1. الإغلاق الآمن لفرض دمج تغييرات الـ WAL في الملف الأساسي
+      await helper.close();
 
-      final Directory dir = await backupDir();
-      final File file =
-          File(p.join(dir.path, fileNameFor(DateTime.now())));
-      const JsonEncoder encoder = JsonEncoder.withIndent('  ');
-      await file.writeAsString(encoder.convert(data));
+      final String dbDir = await getDatabasesPath();
+      final String originalDbPath = p.join(dbDir, DatabaseHelper.databaseName);
+
+      final Directory bDir = await backupDir();
+      final String backupPath = p.join(bDir.path, fileNameFor(DateTime.now()));
+
+      // 2. نسخ الملف الفيزيائي بالكامل
+      await File(originalDbPath).copy(backupPath);
+
+      // 3. إعادة فتح القاعدة الأساسية ليستمر التطبيق بالعمل طبيعياً
+      await helper.database;
+
+      // 4. حقن التفضيلات (SharedPreferences) داخل ملف النسخة الاحتياطية كجدول مخفي
+      if (preferences != null && preferences.isNotEmpty) {
+        final Database backupDb = await openDatabase(backupPath);
+        await backupDb.execute(
+          'CREATE TABLE IF NOT EXISTS _preferences_backup (key TEXT PRIMARY KEY, value_json TEXT)',
+        );
+        final Batch batch = backupDb.batch();
+        preferences.forEach((String key, Object? value) {
+          batch.insert(
+            '_preferences_backup',
+            <String, Object?>{'key': key, 'value_json': jsonEncode(value)},
+            conflictAlgorithm: ConflictAlgorithm.replace,
+          );
+        });
+        await batch.commit(noResult: true);
+        await backupDb.close();
+      }
 
       return BackupExportResult(
         ok: true,
-        filePath: file.path,
-        itemCount: _countRows(data),
+        filePath: backupPath,
+        itemCount: preferences?.length ?? 0,
       );
     } catch (error) {
       debugPrint('BackupService: فشل التصدير ($error)');
+      // في حال الفشل، نضمن إعادة فتح القاعدة الأساسية لكي لا يتعطل التطبيق
+      try {
+        await DatabaseHelper.instance.database;
+      } catch (_) {}
+      
       return const BackupExportResult(
         ok: false,
         messageAr: 'تعذّر إنشاء النسخة الاحتياطية — تحقق من مساحة التخزين.',
@@ -93,25 +103,13 @@ abstract final class BackupService {
     }
   }
 
-  static int _countRows(Map<String, Object?> data) {
-    final Object? raw = data['data'];
-    if (raw is! Map) return 0;
-    int count = 0;
-    for (final Object? v in raw.values) {
-      if (v is List) count += v.length;
-    }
-    return count;
-  }
-
   // ───────────────────────────── الاستيراد ─────────────────────────────
 
-  /// يستورد نسخة احتياطية: تحقق بنيوي ثم استبدال داخل معاملة واحدة.
-  /// [onPreferences] يستقبل التفضيلات ليعيد تطبيقها خارج القاعدة.
+  /// يستورد نسخة احتياطية: يقرر ما إذا كان الملف .db جديد أو .json قديم.
   static Future<BackupImportResult> importFromFile(
     String path, {
     void Function(Map<String, Object?> prefs)? onPreferences,
   }) async {
-    // (1) قراءة + فك JSON.
     final File file = File(path);
     if (!await file.exists()) {
       return const BackupImportResult(
@@ -119,6 +117,100 @@ abstract final class BackupService {
         messageAr: 'الملف غير موجود.',
       );
     }
+
+    final String extension = p.extension(path).toLowerCase();
+    if (extension == '.json') {
+      return _importLegacyJson(path, onPreferences: onPreferences);
+    } else if (extension == '.db') {
+      return _importUniversalDb(path, onPreferences: onPreferences);
+    } else {
+      return const BackupImportResult(
+        ok: false,
+        messageAr: 'صيغة الملف غير مدعومة (فقط .db أو .json).',
+      );
+    }
+  }
+
+  /// الاستيراد الشامل (Universal Backup) باستبدال ملف القاعدة الفيزيائي.
+  static Future<BackupImportResult> _importUniversalDb(
+    String path, {
+    void Function(Map<String, Object?> prefs)? onPreferences,
+  }) async {
+    Database? importedDb;
+    try {
+      // 1. فتح ملف النسخة كقاعدة بيانات للتحقق منه واستخراج التفضيلات
+      importedDb = await openDatabase(path, readOnly: true);
+      
+      final List<Map<String, Object?>> tables = await importedDb.rawQuery(
+          "SELECT name FROM sqlite_master WHERE type='table'");
+      
+      // تحقق بسيط من صحة القاعدة الطبية
+      if (!tables.any((Map<String, Object?> t) => t['name'] == DatabaseHelper.tableUnits)) {
+        await importedDb.close();
+        return const BackupImportResult(
+          ok: false,
+          messageAr: 'الملف المختار ليس نسخة احتياطية صالحة لـ MedOS.',
+        );
+      }
+
+      // استخراج التفضيلات المحقونة (إن وجدت)
+      if (tables.any((Map<String, Object?> t) => t['name'] == '_preferences_backup')) {
+        final List<Map<String, Object?>> prefsRows = await importedDb.query('_preferences_backup');
+        final Map<String, Object?> extractedPrefs = <String, Object?>{};
+        for (final Map<String, Object?> row in prefsRows) {
+          extractedPrefs[row['key'] as String] = jsonDecode(row['value_json'] as String);
+        }
+        if (extractedPrefs.isNotEmpty) {
+          onPreferences?.call(extractedPrefs);
+        }
+      }
+      
+      await importedDb.close();
+
+      // 2. الاستبدال الفيزيائي لقاعدة بيانات التطبيق
+      final DatabaseHelper helper = DatabaseHelper.instance;
+      // إغلاق القاعدة لفك القفل عنها
+      await helper.close();
+
+      final String dbDir = await getDatabasesPath();
+      final String liveDbPath = p.join(dbDir, DatabaseHelper.databaseName);
+
+      // مسح ملفات WAL و SHM المؤقتة إن وجدت لتجنب التلف بعد استبدال الملف الأساسي
+      final File walFile = File('$liveDbPath-wal');
+      final File shmFile = File('$liveDbPath-shm');
+      if (walFile.existsSync()) await walFile.delete();
+      if (shmFile.existsSync()) await shmFile.delete();
+
+      // الكتابة فوق الملف المباشر
+      await File(path).copy(liveDbPath);
+
+      // لن نقوم بإعادة فتح القاعدة هنا، سيقوم الـ UI بإعادة توجيه المستخدم لـ SplashPage 
+      // والتي ستقوم بتحميل القاعدة من الصفر بشكل طبيعي وآمن.
+      
+      return const BackupImportResult(
+        ok: true,
+        messageAr: 'تمت الاستعادة بنجاح. سيتم إعادة تشغيل التطبيق.',
+      );
+    } catch (error) {
+      debugPrint('BackupService: فشل الاستيراد الشامل ($error)');
+      await importedDb?.close();
+      // محاولة إنقاذ القاعدة الحالية
+      try {
+        await DatabaseHelper.instance.database;
+      } catch (_) {}
+      return const BackupImportResult(
+        ok: false,
+        messageAr: 'فشل استيراد القاعدة — بياناتك الحالية لم تتأثر.',
+      );
+    }
+  }
+
+  /// الاستيراد القديم (Legacy JSON) لدعم النسخ السابقة (Backward Compatibility).
+  static Future<BackupImportResult> _importLegacyJson(
+    String path, {
+    void Function(Map<String, Object?> prefs)? onPreferences,
+  }) async {
+    final File file = File(path);
     Map<String, Object?> data;
     try {
       final dynamic decoded = jsonDecode(await file.readAsString());
@@ -138,25 +230,20 @@ abstract final class BackupService {
       );
     }
 
-    // (2) تحقق بنيوي — رفض مهذل بتفاصيل السبب.
     final String? structuralError = _validateStructure(data);
     if (structuralError != null) {
       return BackupImportResult(ok: false, messageAr: structuralError);
     }
 
-    // (3) توافق رقم المخطط — رفض مهذل عند الاختلاف (القرار الموثق:
-    //     لا ترقية آلية داخل ملف استعادة — سلامة البيانات أولاً).
     final int schemaVersion = data['schema_version']! as int;
     if (schemaVersion != DatabaseHelper.databaseVersion) {
       return BackupImportResult(
         ok: false,
         messageAr: 'نسخة بمخطط مغاير ($schemaVersion مقابل '
-            '${DatabaseHelper.databaseVersion}) — لا يمكن الاستيراد '
-            'بأمان. استخدم نسخة من نفس إصدار التطبيق.',
+            '${DatabaseHelper.databaseVersion}).',
       );
     }
 
-    // (4) الاستبدال — معاملة واحدة، جداول المستخدم فقط.
     try {
       final DatabaseHelper helper = DatabaseHelper.instance;
       final Database db = await helper.database;
@@ -170,7 +257,6 @@ abstract final class BackupService {
       final Map<String, Object?> tables = _stringKeyed(tablesRaw);
 
       await db.transaction((Transaction txn) async {
-        // الاستثناء الوحيد المسموح بـDELETE — بيانات المستخدم فقط.
         await txn.delete(DatabaseHelper.tableUserProgress);
         await txn.delete(DatabaseHelper.tableCorrections);
         await txn.delete(DatabaseHelper.tableXpEvents);
@@ -189,7 +275,6 @@ abstract final class BackupService {
             tables['unlocked_badges']);
       });
 
-      // (5) التفضيلات — تطبيق خارج القاعدة عبر المستدعي.
       final Object? rawPrefs = tables['preferences'];
       final Map<String, Object?> prefs =
           rawPrefs is Map ? _stringKeyed(rawPrefs) : const <String, Object?>{};
@@ -199,11 +284,11 @@ abstract final class BackupService {
 
       return BackupImportResult(
         ok: true,
-        messageAr: 'تمت الاستعادة بنجاح.',
+        messageAr: 'تمت الاستعادة بنجاح من ملف JSON القديم. سيتم إعادة التشغيل.',
         itemCount: _countRows(data),
       );
     } catch (error) {
-      debugPrint('BackupService: فشل الاستيراد ($error)');
+      debugPrint('BackupService: فشل الاستيراد القديم ($error)');
       return const BackupImportResult(
         ok: false,
         messageAr: 'فشل الاستيراد — بياناتك الحالية لم تتأثر.',
@@ -211,7 +296,16 @@ abstract final class BackupService {
     }
   }
 
-  /// فحص بنيوي: المفاتيح الإلزامية وأنواعها وقوائم الجداول.
+  static int _countRows(Map<String, Object?> data) {
+    final Object? raw = data['data'];
+    if (raw is! Map) return 0;
+    int count = 0;
+    for (final Object? v in raw.values) {
+      if (v is List) count += v.length;
+    }
+    return count;
+  }
+
   static String? _validateStructure(Map<String, Object?> data) {
     if (data['schema_version'] is! int) {
       return 'الملف ينقصه رقم المخطط أو تالف.';
@@ -236,7 +330,7 @@ abstract final class BackupService {
         return 'النسخة ينقصها جدول «$key» أو تالف.';
       }
     }
-    return null; // سليم بنيوياً.
+    return null;
   }
 
   static Map<String, Object?> _stringKeyed(Map raw) =>

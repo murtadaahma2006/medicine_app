@@ -1,0 +1,1368 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L6_obstructive_jaundice",
+    "specialty": "surgery",
+    "title": "Obstructive Jaundice: Differential Diagnosis, Systematic Approach and Surgical Management",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "Obs Jaundice L6.pdf",
+      "page_count": 17
+    },
+    "tags": [
+      "jaundice",
+      "obstructive jaundice",
+      "biliary obstruction",
+      "choledocholithiasis",
+      "ercp",
+      "mrcp",
+      "courvoisier law",
+      "whipple"
+    ],
+    "order_index": 6,
+    "golden_tip": [
+      "Painless progressive jaundice with a palpable non-tender gallbladder (Courvoisier's law positive) is carcinoma of the head of the pancreas until proven otherwise - stone disease usually leaves a contracted, fibrotic gallbladder.",
+      "Dark tea-colored urine + pale clay stool + high alkaline phosphatase + normal unconjugated bilirubin = post-hepatic (surgical) obstruction. Unconjugated hyperbilirubinemia = medical; never refer these patients for surgery.",
+      "Give parenteral vitamin K before any invasive procedure in obstructive jaundice: absent bile means no vitamin K absorption and a fully correctable coagulopathy.",
+      "Ultrasound must show a dilated CBD in true biliary obstruction; MRCP is diagnostic and confirmatory. A dilated CBD without splenomegaly points to obstruction rather than chronic liver disease.",
+      "Choledocholithiasis: ERCP first; surgery (supraduodenal choledochotomy or transduodenal sphincterotomy) only if ERCP fails - and always follow with laparoscopic cholecystectomy."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L6_obstructive_jaundice_c01",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Bilirubin Physiology and the Definition of Jaundice",
+      "summary_ar": "يشرح هذا المفهوم فيزيولوجيا البيليروبين الطبيعية من الطحال إلى الكبد إلى الأمعاء (90% ستيركوبيلينوجين و10% عودة بابية)، وتعريف اليرقان مع مستويات البيليروبن التي يتطور عندها (أكثر من 2 ملغ/دل) ويصبح قابلًا للكشف (أكثر من 3 ملغ/دل)، وتصنيف اليرقان إلى ما قبل الكبدي والكبدي وما بعد الكبدي.",
+      "sections": [
+        {
+          "heading": "Lecture Objectives and Scope",
+          "body_text": "This lecture, delivered by Dr. Noori Hanoon (FRCS, FACS, FICMS and PhD, United Kingdom; Consultant General and Gastrointestinal Surgery), is the sixth lecture of the general surgery gastrointestinal module and is devoted to obstructive (post-hepatic) jaundice. The stated objectives are that the student should know: (1) the differential diagnosis of obstructive jaundice; (2) the proper approach and work-up for a jaundiced patient; (3) supportive treatment for obstructive jaundice; and (4) definitive treatment for the most common causes of obstructive jaundice. The lecture flows from normal bilirubin physiology and the definition of jaundice, through the broad four-column differential diagnosis of all jaundice, then a cause-by-level classification of biliary obstruction (intra-luminal, intra-mural, extra-luminal), a systematic history-and-examination approach, laboratory and imaging work-up (LFT, urine and stool, ultrasound, MRCP, CT, ERCP, PTC), and finally supportive followed by definitive interventional or surgical treatment (ERCP and bile duct surgery for stones; Whipple operation or triple bypass for pancreatic and periampullary tumors; resection with hepaticojejunostomy, stenting, PTC and chemo-radiation for cholangiocarcinoma).",
+          "key_points": [
+            "Objectives: differential diagnosis of obstructive jaundice; proper approach and work-up; supportive treatment; definitive treatment of the most common causes.",
+            "The lecture is the 6th of the GI general-surgery module and focuses on the last (biliary obstruction) column of the jaundice differential.",
+            "Everything in the approach is organized around one question: is the bilirubin conjugated (direct) or unconjugated (indirect)?"
+          ]
+        },
+        {
+          "heading": "Normal Bilirubin Physiology: Spleen, Liver and Intestine",
+          "body_text": "Normal bilirubin handling occurs in three stations. **In the spleen**: hemoglobin is degraded to **haem and globin**; haem is then converted to **bilirubin, which is unconjugated and protein-bound** (attached to plasma albumin, water-insoluble, and therefore absent from urine). **In the liver**: unconjugated bilirubin is taken up and **transported with ligand or Z protein**, then **conjugated with glucuronic acid** inside the hepatocyte; conjugation makes bilirubin water-soluble so it can be excreted into bile. **In the intestine**: conjugated bilirubin is **converted by a bacterial process to urobilinogen**; **90% of urobilinogen is converted to oxidized urobilinogen (stercobilinogen)**, which gives stool its normal brown color, while **the remaining 10% returns back by the portal vein to the liver** (the enterohepatic circulation of bilirubin), to be re-excreted in bile or to spill over into urine. Every laboratory feature of obstructive jaundice can be derived from this pathway: when the CBD or CHD is blocked, conjugated (water-soluble) bilirubin regurgitates into the blood and appears in urine (dark tea color), while no bilirubin reaches the gut, no urobilinogen or stercobilinogen is formed, urine urobilinogen falls, and stool turns pale clay color.",
+          "key_points": [
+            "Spleen: hemoglobin to haem + globin; haem to unconjugated, protein-bound bilirubin.",
+            "Liver: transport with ligand or Z protein, then conjugation with glucuronic acid.",
+            "Intestine: bacterial conversion to urobilinogen; 90% oxidized to stercobilinogen, 10% returns to the liver via the portal vein.",
+            "Obstruction blocks the pathway downstream: conjugated bilirubin in blood and urine, no stercobilinogen in stool."
+          ],
+          "check": {
+            "prompt": "In normal intestinal physiology, what is the fate of urobilinogen?",
+            "options": [
+              "90% is oxidized to stercobilinogen and 10% returns to the liver via the portal vein",
+              "10% is oxidized to stercobilinogen and 90% returns to the liver via the portal vein",
+              "It is completely reabsorbed and excreted unchanged in the urine",
+              "It is converted back into unconjugated bilirubin by intestinal bacteria"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "في الأمعاء يتحول البيليروبن المقترن بفعل البكتيريا إلى يوروبيلينوجين؛ 90% منه يُؤكسد إلى ستيركوبيلينوجين الذي يعطي البراز لونه الطبيعي، و10% فقط يعود عبر الوريد البابي إلى الكبد."
+          }
+        },
+        {
+          "heading": "Definition of Jaundice and Clinical Thresholds",
+          "body_text": "**Jaundice (icterus) is the yellowish discoloration of skin, sclera and mucous membranes that results from excessive deposition of bilirubin in tissues.** Jaundice develops when serum bilirubin levels are **more than 2 mg/dl (34.2 μmol/L)**, and it typically can be detected when serum bilirubin is **above 3 mg/dl (51.3 μmol/L)**. Scleral staining is appreciated earliest because bilirubin has affinity for elastic tissue, which is abundant in the conjunctiva. Jaundice can be categorized as **pre-hepatic** (increased production or failed delivery/conjugation of bilirubin before it reaches the liver), **hepatic** (impaired hepatocyte uptake, conjugation or excretion), and **post-hepatic / obstructive** (mechanical blockage of biliary drainage of the CBD or CHD) - the subject of this lecture. This three-way split maps directly onto the four-column differential diagnosis table and onto the medical-versus-surgical decision algorithm of the work-up.",
+          "key_points": [
+            "Jaundice = yellowish discoloration of skin, sclera and mucous membranes from bilirubin deposition.",
+            "Develops above 2 mg/dl (34.2 μmol/L); detectable above 3 mg/dl (51.3 μmol/L).",
+            "Categories: pre-hepatic, hepatic, post-hepatic (obstructive = this lecture)."
+          ],
+          "check": {
+            "prompt": "At what serum bilirubin level does jaundice develop, and at what level does it become clinically detectable?",
+            "options": [
+              "It develops above 2 mg/dl (34.2 umol/L) and is detectable above 3 mg/dl (51.3 umol/L)",
+              "It develops above 3 mg/dl and is detectable above 5 mg/dl",
+              "It develops above 1 mg/dl and is detectable above 2 mg/dl",
+              "It develops only when bilirubin exceeds 5 mg/dl"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "يتطور اليرقان عندما يتجاوز بيليروبن المصل 2 ملغ/دل (34.2 ميكرومول/ل)، ويصبح عادة قابلًا للكشف السريري فوق 3 ملغ/دل (51.3 ميكرومول/ل)."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Jaundice (icterus)",
+          "definition_ar": "اليرقان: اصفرار الجلد والصلبة والأغشية المخاطية نتيجة ترسب مفرط للبيليروبن في الأنسجة؛ يتطور عند بيليروبن مصل أكبر من 2 ملغ/دل."
+        },
+        {
+          "term": "Unconjugated (indirect) bilirubin",
+          "definition_ar": "بيليروبن غير مقترن: ينتج من تحلل الهيم في الطحال، مرتبط بالبروتين، غير ذواب في الماء فلا يظهر في البول؛ ارتفاعه يشير إلى سبب ما قبل كبدي أو اضطراب نقل واقتران."
+        },
+        {
+          "term": "Conjugated (direct) bilirubin",
+          "definition_ar": "بيليروبن مقترن بحمض الغلوكورونيك في الكبد فيصبح ذوابًا في الماء ويُفرز في الصفراء؛ ارتفاعه يشير إلى اضطراب إفراز كبدي أو انسداد صفراوي."
+        },
+        {
+          "term": "Urobilinogen",
+          "definition_ar": "اليوروبيلينوجين: ناتج تحويل البكتيريا للبيليروبن المقترن في الأمعاء؛ 10% منه يعود للكبد عبر الوريد البابي؛ ينقص في البول عند الانسداد الصفراوي."
+        },
+        {
+          "term": "Stercobilinogen",
+          "definition_ar": "الستيركوبيلينوجين: الشكل المؤكسد لليوروبيلينوجين (90%) والمسؤول عن اللون الطبيعي للبراز؛ غيابه في الانسداد يسبب البراز الفاتح الطيني."
+        },
+        {
+          "term": "Ligand / Z protein",
+          "definition_ar": "بروتينان ناقلان داخل الخلية الكبدية ينقلان البيليروبن غير المقترن من البلازما إلى موضع اقترانه بحمض الغلوكورونيك."
+        },
+        {
+          "term": "Enterohepatic bilirubin circulation",
+          "definition_ar": "الدورة المعوية الكبدية للبيليروبين: عودة 10% من اليوروبيلينوجين المعوي عبر الوريد البابي إلى الكبد ليُفرز ثانية في الصفراء."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c02",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Broad Differential Diagnosis of Jaundice - The Four-Column Framework",
+      "summary_ar": "يعرض هذا المفهوم الجدول الواسع للتشخيص التفريقي لليرقان في أربعة أعمدة: زيادة الإنتاج، ونقص النقل أو الاقتران، واضطراب الإفراز، والانسداد الصفراوي، مع تحديد نوع البيليروبن المرتفع في كل عمود، وأن العمود الأخير (الحصاة والتضيق والسرطان والتهاب البنكرياس المزمن وتصلب القنوات الأولي) هو موضوع المحاضرة: اليرقان الانسدادي الجراحي.",
+      "sections": [
+        {
+          "heading": "The Four-Column Broad Differential Diagnosis Table",
+          "body_text": "The highest-yield slide of the lecture is the **broad differential diagnosis of jaundice**, organized into four columns, each with its own bilirubin fraction; **the last column (biliary obstruction) is the subject of this lecture - obstructive jaundice**. Transferred in full: **Column 1 - increased production (unconjugated bilirubin rises):** hemolysis; transfusions; sepsis; burns; hemoglobinopathies (Hgb-opathies). **Column 2 - decreased transport or decreased conjugation (unconjugated bilirubin rises):** Gilbert's syndrome; Crigler-Najjar syndrome; neonatal causes; cirrhosis; hepatitis; drug inhibition. **Column 3 - impaired excretion (conjugated bilirubin rises):** Rotor's syndrome; Dubin-Johnson syndrome; cancer; cirrhosis; hepatitis; amyloidosis; pregnancy. **Column 4 - biliary obstruction = obstructive jaundice (conjugated bilirubin rises):** CH (common hepatic duct) or CBD (common bile duct) stone; stricture; cancer; chronic pancreatitis; primary sclerosing cholangitis (PSC). Read the table as a function test: the first two columns raise the **indirect (unconjugated) fraction** and are medical; the third raises the **direct (conjugated) fraction** at the hepatocyte level and is also medical; the fourth raises the conjugated fraction by mechanical blockage of the ducts and is **surgical**.",
+          "key_points": [
+            "Four columns: increased production / decreased transport or conjugation / impaired excretion / biliary obstruction.",
+            "Columns 1 and 2 cause unconjugated hyperbilirubinemia; columns 3 and 4 cause conjugated hyperbilirubinemia.",
+            "Only column 4 (CH/CBD stone, stricture, cancer, chronic pancreatitis, PSC) is obstructive = surgical = the subject of this lecture."
+          ],
+          "check": {
+            "prompt": "In the broad differential diagnosis table, in which column do Rotor's and Dubin-Johnson syndromes belong, and which bilirubin fraction rises?",
+            "options": [
+              "Impaired excretion column, conjugated bilirubin rises",
+              "Increased production column, unconjugated bilirubin rises",
+              "Decreased transport or conjugation column, unconjugated bilirubin rises",
+              "Biliary obstruction column, conjugated bilirubin rises"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "متلازمتا روتور ودوبين-جونسون تنتميان إلى عمود اضطراب الإفراز الكبدي مع ارتفاع البيليروبن المقترن، وليسا من عمود الانسداد الصفراوي ولا من عمودي الإنتاج أو الاقتران."
+          }
+        },
+        {
+          "heading": "Medical Columns in Detail - Increased Production and Impaired Conjugation",
+          "body_text": "The **increased production** column (all unconjugated): **hemolysis** (any cause, including sickle cell anemia and thalassemia), **transfusions** (a bolus of donor erythrocytes that must be broken down), **sepsis**, **burns**, and **hemoglobinopathies (Hgb-opathies)**. The **decreased transport or decreased conjugation** column (also unconjugated): **Gilbert's syndrome** (mild, common, benign reduced glucuronidation - jaundice fluctuates with stress, fasting or dehydration), **Crigler-Najjar syndrome** (severe deficiency or absence of the glucuronyl transferase, with neonatal kernicterus risk), **neonatal** causes (hepatic immaturity), **cirrhosis** and **hepatitis** (hepatocyte dysfunction), and **drug inhibition** of uptake or conjugation - the reason the lecture's drug history explicitly asks about **rifampicin**. These patients need **medical** hematology or hepatology work-up: an unconjugated fraction never indicates surgical obstruction, and taking them to theater is a classic exam error.",
+          "key_points": [
+            "Unconjugated causes: hemolysis, transfusions, sepsis, burns, Hgb-opathies (production); Gilbert's, Crigler-Najjar, neonatal, cirrhosis, hepatitis, drug inhibition (transport/conjugation).",
+            "Gilbert's = benign fluctuating mild unconjugated jaundice; Crigler-Najjar = severe neonatal conjugation failure.",
+            "Unconjugated hyperbilirubinemia is medical - never surgical."
+          ]
+        },
+        {
+          "heading": "Impaired Excretion and the Biliary Obstruction Column",
+          "body_text": "The **impaired excretion** column raises **conjugated** bilirubin at the level of hepatocyte canalicular export: **Rotor's syndrome** and **Dubin-Johnson syndrome** (benign inherited defects of biliary excretion of conjugated bilirubin; Dubin-Johnson pigments the liver black), **cancer**, **cirrhosis**, **hepatitis**, **amyloidosis**, and **pregnancy** (intrahepatic cholestasis of pregnancy). Despite the conjugated fraction, these remain **medical, non-obstructive** causes. The **biliary obstruction column** - the subject of this lecture - comprises **CH/CBD stone, stricture, cancer, chronic pancreatitis, and primary sclerosing cholangitis (PSC)**; here conjugated bilirubin rises because bile cannot escape the duct system, so the problem demands **mechanical relief by endoscopy (ERCP, stenting, PTC) or by surgery**. This is exactly why the diagnostic algorithm classifies: unconjugated = medical; conjugated with obstruction = surgical.",
+          "key_points": [
+            "Impaired excretion (conjugated but medical): Rotor's, Dubin-Johnson, cancer, cirrhosis, hepatitis, amyloidosis, pregnancy.",
+            "Biliary obstruction (conjugated and surgical): CH/CBD stone, stricture, cancer, chronic pancreatitis, PSC.",
+            "Conjugated hyperbilirubinemia is not automatically surgical - only post-hepatic mechanical obstruction is."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Gilbert's syndrome",
+          "definition_ar": "متلازمة جيلبرت: نقص خفيف حميد في اقتران البيليروبن يسبب يرقانًا غير مقترن متقطعًا يزداد مع الصيام والتوتر؛ عمود نقص النقل أو الاقتران وهي حالة طبية."
+        },
+        {
+          "term": "Crigler-Najjar syndrome",
+          "definition_ar": "متلازمة كريغلر-نجار: نقص شديد أو غياب إنزيم الغلوكورونيل ترانسفيراز يسبب يرقانًا غير مقترن شديدًا عند الوليد مع خطر اليرقان النووي."
+        },
+        {
+          "term": "Rotor's syndrome",
+          "definition_ar": "متلازمة روتور: خلل وراثي حميد في إفراز البيليروبن المقترن من الخلية الكبدية يسبب يرقانًا مقترنًا دون انسداد."
+        },
+        {
+          "term": "Dubin-Johnson syndrome",
+          "definition_ar": "متلازمة دوبين-جونسون: خلل وراثي في نقل البيليروبن المقترن إلى القنيات الصفراوية يسبب يرقانًا مقترنًا وكبدًا أسود اللون بسبب الصباغ."
+        },
+        {
+          "term": "Hemoglobinopathies (Hgb-opathies)",
+          "definition_ar": "اضطرابات الهيموغلوبين مثل الأنيميا المنجلية والثلاسيميا؛ تسبب يرقانًا غير مقترنًا من عمود زيادة إنتاج البيليروبن."
+        },
+        {
+          "term": "Primary sclerosing cholangitis (PSC)",
+          "definition_ar": "تصلب القنوات الصفراوية الأولي: التهاب وتليف وتضيق القنوات داخل وخارج الكبد؛ يظهر في عمود الانسداد الصفراوي ويرتبط بأمراض الأمعاء المزمنة."
+        },
+        {
+          "term": "Amyloidosis",
+          "definition_ar": "الداء النشواني: ترسب مادة نشوانية في الكبد قد يضعف الإفراز الصفراوي فيسبب يرقانًا مقترنًا من عمود اضطراب الإفراز."
+        },
+        {
+          "term": "Intrahepatic cholestasis of pregnancy",
+          "definition_ar": "الكوليستاز داخل الكبدي في الحمل: يرقان مقترن مع حكة أثناء الحمل؛ من أسباب عمود اضطراب الإفراز وهو طبي لا جراحي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c03",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Obstructive Jaundice - Causes Classified by Anatomical Level",
+      "summary_ar": "يصنف هذا المفهوم أسباب اليرقان الانسدادي حسب موقع السبب بالنسبة لقناة الصفراء: أسباب داخل تجويف القناة (حصاة القناة الكبدية أو الجامعة، والكيسة الابنة من تمزق كيسة هيداتيد الكبد إلى داخل القنوات)، وأسباب في جدار القناة (سرطان القناة الصفراوية، التضيق، الرتق الصفراوي عند الوليد، كيسة القناة الجامعة، وتصلب القنات الأولي)، وأسباب خارج القناة تضغط عليها (سرطان رأس البنكرياس، التهاب البنكرياس المزمن، سرطان الكبد أو الانتقالات، الورم حول الأمبولة، والتهاب المرارة الحاد أحيانًا، وسرطان المرارة).",
+      "sections": [
+        {
+          "heading": "Mechanism and the Level-Based Classification",
+          "body_text": "**Obstructive (post-hepatic) jaundice results from mechanical biliary obstruction of the CBD or CHD** (common bile duct or common hepatic duct). Blocked bile flow has three consequences: (1) **conjugated bilirubin regurgitates into the blood** - direct hyperbilirubinemia with dark urine containing conjugated bilirubin; (2) **no bilirubin reaches the intestine**, so no urobilinogen or stercobilinogen is produced - urine urobilinogen falls and stool becomes pale clay colored; (3) retained bile salts cause **pruritus** and the alkaline phosphatase of cholestasis rises. The lecture classifies the causes of obstruction by their anatomical relation to the duct lumen: **intra-luminal** (inside the duct), **intra-mural** (within the duct wall), and **extra-luminal** (outside the duct, compressing or invading it). Memorize the causes level by level - examination questions almost always test one cause against another level.",
+          "key_points": [
+            "Obstructive jaundice = mechanical obstruction of the CBD or CHD.",
+            "Consequences: conjugated hyperbilirubinemia, dark urine, pale stool, pruritus, high alkaline phosphatase.",
+            "Classification by level: intra-luminal, intra-mural, extra-luminal."
+          ]
+        },
+        {
+          "heading": "Intra-Luminal Causes (Inside the Duct)",
+          "body_text": "There are two intra-luminal causes. **1. CHD or CBD stone** - choledocholithiasis, the commonest cause of obstructive jaundice: typically (though not always) accompanied by biliary colic, previous similar attacks, and the risk of ascending cholangitis. **2. Daughter cyst** - the **intrabiliary rupture of a liver hydatid cyst** releases daughter cysts (with hydatid material and membranes) into the biliary tree, where they lodge and obstruct the ducts. Suspect a daughter cyst in patients from hydatid-endemic areas or in any patient with **previous liver surgery for hydatid disease** (an explicit item of the lecture's history checklist), and look for the hydatid cyst on ultrasound or CT.",
+          "key_points": [
+            "Intra-luminal = CHD/CBD stone + daughter cyst of liver hydatid.",
+            "A daughter cyst implies intrabiliary rupture of a liver hydatid cyst.",
+            "Choledocholithiasis is the single most common cause of obstructive jaundice."
+          ],
+          "check": {
+            "prompt": "A daughter cyst entering the biliary tree after intrabiliary rupture of a liver hydatid cyst is classified as which level of obstructive cause?",
+            "options": [
+              "Intra-luminal cause",
+              "Intra-mural cause",
+              "Extra-luminal cause",
+              "Pre-hepatic cause"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الكيسة الابنة تنفصل من كيسة الهيداتيد الكبدية إلى داخل تجويف القناة الصفراوية وتسدها من الداخل، فهي سبب داخل التجويف، بينما أسباب الجدار مثل التضيق والسرطان وخارج التجويف مثل سرطان رأس البنكرياس."
+          }
+        },
+        {
+          "heading": "Intra-Mural Causes (Within the Duct Wall)",
+          "body_text": "Five intra-mural causes: **1. Cholangiocarcinoma** - carcinoma arising from the bile duct epithelium, stricturing and blocking the duct from within its wall. **2. Stricture** - benign (postoperative, ischemic or inflammatory) or malignant narrowing of the duct. **3. Biliary atresia in the neonate** - the classic pediatric surgical cause of persistent deepening neonatal jaundice with pale clay stool and dark urine, demanding early operative drainage. **4. Choledochal cyst** - congenital cystic dilatation of the bile duct, which may harbor sludge or stones and carries malignant potential. **5. Primary sclerosing cholangitis (PSC)** - progressive inflammation, fibrosis and multifocal stricturing of the intra- and extrahepatic ducts, associated with chronic bowel disease (the reason chronic bowel disease appears in the history checklist).",
+          "key_points": [
+            "Intra-mural: cholangiocarcinoma, stricture, biliary atresia (neonate), choledochal cyst, PSC.",
+            "Neonatal obstructive jaundice with pale stool = biliary atresia until excluded.",
+            "PSC is linked with chronic inflammatory bowel disease."
+          ]
+        },
+        {
+          "heading": "Extra-Luminal Causes (Compressing or Invading from Outside)",
+          "body_text": "Six extra-luminal causes: **1. Carcinoma of the head of the pancreas** - the textbook cause of painless progressive obstructive jaundice with a palpable gallbladder (Courvoisier's law positive). **2. Chronic pancreatitis** - a fibrotic pancreatic head strictures the retropancreatic CBD. **3. Liver cancer or metastatic cancer** - involving the hilum or porta hepatis and compressing or invading the ducts. **4. Periampullary tumor or cancer (duodenal)** - cancer of the ampulla or periampullary duodenum, which also produces hematemesis or melena when it ulcerates. **5. Occasionally acute cholecystitis** - a gallstone complication in which the inflamed gallbladder and adjacent inflammatory mass can compress the bile duct. **6. Carcinoma of the gallbladder (Ca GB)** - infiltrating and obstructing the duct, usually at a late stage. Extra-luminal malignant causes dominate the painless-jaundice-in-an-older-patient vignettes beloved by examiners.",
+          "key_points": [
+            "Extra-luminal: Ca head of pancreas, chronic pancreatitis, liver cancer or metastases, periampullary/duodenal cancer, occasionally acute cholecystitis, Ca gallbladder.",
+            "Ca head of pancreas = painless progressive jaundice + Courvoisier positive.",
+            "Periampullary cancer may declare itself with hematemesis or melena."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Choledocholithiasis",
+          "definition_ar": "حصاة القناة الصفراوية الجامعة: أشيع سبب داخل تجويف القناة لليرقان الانسدادي؛ تعالج بـERCP أولًا ثم الجراحة عند الفشل ثم استئصال المرارة بالتنظير."
+        },
+        {
+          "term": "Daughter cyst",
+          "definition_ar": "الكيسة الابنة: كيسات صغيرة تنفصل من كيسة الهيداتيد الكبدية عند تمزقها داخل القنوات الصفراوية فتسدها؛ سبب داخل تجويف القناة."
+        },
+        {
+          "term": "Liver hydatid cyst",
+          "definition_ar": "كيسة الهيداتيد الكبدية: مرض مشتقات دودة الإكينوكوكس؛ تمزقها داخل القنوات الصفراوية يسبب يرقانًا انسداديًا بالكيسات الابنة."
+        },
+        {
+          "term": "Cholangiocarcinoma",
+          "definition_ar": "سرطان القنوات الصفراوية: ورم ينشأ من ظهارة القناة؛ سبب داخل جدار القناة لليرقان الانسدادي ويعالج بالاستئصال مع مفاغرة كبدية-صائمية أو بالدعامات عند تعذر الجراحة."
+        },
+        {
+          "term": "Biliary atresia",
+          "definition_ar": "الرتق الصفراوي: غياب أو انسداد القنوات الصفراوية عند الوليد يسبب يرقانًا انسداديًا ببراز فاتح؛ من أسباب جدار القناة عند حديثي الولادة ويتطلب جراحة مبكرة."
+        },
+        {
+          "term": "Choledochal cyst",
+          "definition_ar": "كيسة القناة الصفراوية الجامعة: توسع كيسي خلقي في القناة يسبب يرقانًا انسداديًا؛ سبب داخل جدار القناة."
+        },
+        {
+          "term": "Periampullary tumor",
+          "definition_ar": "الورم حول الأمبولة (العفجي): سرطان منطقة أمبولة فاتر أو الاثني عشر المجاور؛ سبب خارج تجويف القناة وقد يسبب نزفًا هضميًا علويًا."
+        },
+        {
+          "term": "Carcinoma of the gallbladder",
+          "definition_ar": "سرطان المرارة: قد ينسد القناة الصفراوية بالغزو المباشر؛ سبب خارج تجويف القناة لليرقان الانسدادي."
+        },
+        {
+          "term": "Chronic pancreatitis",
+          "definition_ar": "التهاب البنكرياس المزمن: تليف رأس البنكرياس يضيق القناة الجامعة خلفه مسببًا يرقانًا انسداديًا؛ سبب خارج تجويف القناة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c04",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Clinical Approach to the Jaundiced Patient - History and Examination",
+      "summary_ar": "يغطي هذا المفهوم المنهجية الكاملة لتقييم المريض اليرقاني: التاريخ المرضي بخمس عشرة نقطة من مدة اليرقان إلى الأدوية مثل الريفامبيسين، والفحص العام (تأكيد اليرقان وعمقه والشحوب والجفاف والكدمات والعلامات الحيوية)، وعلامات أمراض الكبد المزمنة المتعوضة وغير المتعوضة، والفحص البطني مع قانون كورفوزييه للمرارة؛ والهدف هو تحديد هل البيليروبن مقترن أو غير مقترن وما السبب المحتمل للانسداد.",
+      "sections": [
+        {
+          "heading": "The Three-Arm Approach and Its Two Goals",
+          "body_text": "The approach and work-up (management) of obstructive jaundice begins when a **patient presents with skin discoloration suggestive of jaundice**, and proceeds along three arms: **1. History, 2. Examination, 3. Investigation**. The aim of the approach is to know two things: **(1) whether the hyperbilirubinemia is direct (conjugated) or indirect (unconjugated)**, and **(2) the possible cause of the obstructive jaundice**. Answering question 1 sorts medical from surgical patients (unconjugated = medical; conjugated with obstruction = surgical), while question 2 selects the correct definitive treatment - ERCP with cholecystectomy for a stone, resection or bypass for a tumor, and stenting with chemo-radiation for inoperable cholangiocarcinoma.",
+          "key_points": [
+            "Patient with skin discoloration suggestive of jaundice -> History, Examination, Investigation.",
+            "Goal 1: direct (conjugated) or indirect (unconjugated) hyperbilirubinemia?",
+            "Goal 2: the possible cause of the obstructive jaundice."
+          ]
+        },
+        {
+          "heading": "History - The Complete 15-Point Checklist",
+          "body_text": "Take a systematic history covering all fifteen items of the lecture checklist (the source slide duplicates its numbering at 13 and skips 6; every item is preserved here): **1. Duration** of the jaundice. **2. Onset, progression and depth** - a sudden colicky, fluctuating onset favors stones, while a gradual painless deepening favors malignancy. **3. Itching, and change in color of urine and stool** - dark urine and pale stool with pruritus mark cholestasis and obstruction. **4. Pain and fever (high or low grade fever)** - biliary colic points to stones; high fever with rigors points to cholangitis; low-grade fever accompanies tumors or hepatitis. **5. Further GI symptoms: nausea, vomiting, hematemesis, melena, abdominal distension, etc.** - hematemesis or melena raises periampullary/duodenal cancer and portal hypertension. **6. Other systemic symptoms: oliguria, change in consciousness, bruises** - warnings of hepatorenal syndrome, hepatic encephalopathy and coagulopathy. **7. History of hemolytic disease (SCA, thalassemia)** - the unconjugated, medical pathway. **8. Blood transfusion** - a hemolytic load and viral hepatitis risk. **9. Previous similar attacks** - recurrent biliary colic or passed stones. **10. Previous surgery like liver surgery (hydatid) or biliary surgery (laparoscopic cholecystectomy)** - think of a daughter cyst, retained or recurrent stones, or a postoperative stricture. **11. Any chronic liver disease or chronic bowel disease** - cirrhosis, chronic hepatitis, and PSC associated with inflammatory bowel disease. **12. Family history of jaundice** - hereditary hemolysis or Gilbert's syndrome. **13. Alcohol.** **14. Further social history: uncovered sexual life or contact with affected patients like doctors, and multiple recent travels** - exposure to viral hepatitis. **15. Drug history like rifampicin** - drug-induced liver injury, cholestasis or inhibition of conjugation.",
+          "key_points": [
+            "Cholestasis flags: itching, dark urine, pale stool.",
+            "Red-flag systemic symptoms: oliguria, change in consciousness, bruises.",
+            "Key past items: hemolytic disease (SCA, thalassemia), transfusion, previous hydatid or biliary surgery, chronic liver or bowel disease, alcohol, travel and sexual contact, rifampicin.",
+            "High fever with rigors = ascending cholangitis; pain = stones; painless progression = malignancy."
+          ],
+          "check": {
+            "prompt": "A 64-year-old man reports six weeks of painless, progressively deepening jaundice with 8 kg weight loss, dark urine and pale stool, and no fever. Which cause is most likely?",
+            "options": [
+              "Carcinoma of the head of the pancreas",
+              "Impacted CBD stone",
+              "Gilbert's syndrome",
+              "Acute viral hepatitis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "اليرقان الباهت غير المؤلم المتدرج مع نقص وزن في مسنّ يشير إلى سبب خبيث خارج القناة مثل سرطان رأس البنكرياس؛ الحصاة تسبب ألمًا ومغصًا، وجيلبرت يرقان غير مقترن خفيف، والتهاب الكبد يرتفع معه ناقلات الأمين بشدة وحمى."
+          }
+        },
+        {
+          "heading": "General Examination",
+          "body_text": "General examination has five explicit components from the lecture: **1. Confirm icterus by examination of the eye and mucous membrane** - the sclera and conjunctivae stain early because bilirubin binds elastic tissue. **2. Assess the depth of jaundice** - a bedside proxy for the bilirubin level and the chronicity of obstruction. **3. Look for pallor and dehydration** - pallor suggests anemia (hemolysis or cancer) and dehydration follows vomiting or poor intake. **4. Look for bruise(s)** - a sign of the coagulopathy of vitamin K malabsorption or of liver failure. **5. Check the vital signs (temperature and pulse rate)** - fever and tachycardia signal ascending cholangitis or sepsis and escalate the urgency of the entire pathway (resuscitation and antibiotics before anything else).",
+          "key_points": [
+            "Confirm icterus in the eyes and mucous membranes; grade the depth.",
+            "Pallor, dehydration, bruising and vital signs (temperature and PR) complete the general survey.",
+            "Fever with tachycardia in a jaundiced patient = cholangitis until excluded."
+          ]
+        },
+        {
+          "heading": "Signs of Chronic Liver Disease (Pointing to Medical Causes)",
+          "body_text": "During examination, search for **signs of chronic liver disease** - present in case of chronic liver disease (the medical causes), not in pure surgical obstruction. The lecture's examination list: **xanthelasma, spider naevi, gynaecomastia, Dupuytren's contracture, and clubbing of the fingers**. The accompanying slide classifies chronic liver signs fully: **General:** jaundice, fever, loss of body hair. **Compensated chronic liver disease:** xanthelasmas, parotid enlargement, spider naevi, gynaecomastia, liver (small or large), splenomegaly, liver palms (palmar erythema), clubbing, Dupuytren's contracture, xanthomas, scratch marks (from cholestatic pruritus), testicular atrophy, purpura, and pigmented ulcers. **Decompensated chronic liver disease:** neurological signs - disorientation, drowsy progressing to coma; hepatic flap (asterixis); fetor hepaticus; ascites; dilated veins on the abdomen; oedema. The slide is a schematic of a human torso and limbs with connector lines pointing to the anatomical locations where these physical signs typically manifest: face and eyes (xanthelasmas, parotid enlargement, jaundice, loss of body hair), chest (spider naevi, gynaecomastia), upper abdomen (liver size, splenomegaly), hands (liver palms, clubbing, Dupuytren's contracture, xanthomas), legs and periphery (scratch marks, purpura, pigmented ulcers, oedema), with testicular atrophy completing the picture. In contrast, a patient with uncomplicated surgical obstruction has **no splenomegaly and no stigmata of chronic liver disease**.",
+          "key_points": [
+            "Examination list: xanthelasma, spider naevi, gynaecomastia, Dupuytren's contracture, clubbing of fingers.",
+            "Compensated: xanthelasmas, parotid enlargement, spider naevi, gynaecomastia, small/large liver, splenomegaly, liver palms, clubbing, Dupuytren's, xanthomas, scratch marks, testicular atrophy, purpura, pigmented ulcers.",
+            "Decompensated: disorientation/drowsiness to coma, hepatic flap, fetor hepaticus, ascites, dilated abdominal veins, oedema.",
+            "These signs point to medical (hepatic) causes; their absence with a dilated CBD favors obstruction."
+          ]
+        },
+        {
+          "heading": "Abdominal Examination and Courvoisier's Law",
+          "body_text": "Ordinary abdominal examination must document: **dilated veins** on the abdominal wall (portal hypertension/cirrhosis); **abdominal distention (ascites)**; the **liver - size, shape and surface** (a large, hard, irregular liver suggests cirrhosis or cancer, while tenderness accompanies hepatitis or congestion); **enlargement of the gallbladder - state whether Courvoisier's law is positive or negative**; **splenomegaly** (portal hypertension or hemolysis - characteristically absent in uncomplicated obstruction, which is why the ultrasound note 'no splenomegaly' supports obstruction); **any abdominal mass** (pancreatic head, liver, or the palpable gallbladder itself); and **others** (for example scratch marks from cholestatic pruritus). **Courvoisier's law (also spelled Corvoisier's law in some texts): in a jaundiced patient, a palpable, distended, non-tender gallbladder indicates malignant obstruction - most classically carcinoma of the head of the pancreas - and NOT gallstones**, because a stone-diseased gallbladder is thickened, fibrotic and contracted and cannot distend (Courvoisier negative); obstruction distal to the cystic duct with an otherwise healthy gallbladder wall permits hydrostatic distension.",
+          "key_points": [
+            "Abdominal checklist: dilated veins, distention/ascites, liver size-shape-surface, gallbladder enlargement (Courvoisier positive or negative), splenomegaly, mass, others.",
+            "Courvoisier positive = palpable gallbladder in jaundice = malignant obstruction (Ca head of pancreas classically).",
+            "Splenomegaly argues for chronic liver disease or hemolysis, against simple obstruction."
+          ],
+          "check": {
+            "prompt": "A jaundiced patient has a palpable, distended, non-tender gallbladder. According to Courvoisier's law this most strongly suggests:",
+            "options": [
+              "Malignant obstruction such as carcinoma of the head of the pancreas",
+              "An impacted CBD stone with cholangitis",
+              "Hemolytic anemia",
+              "Acute cholecystitis with gallstones"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "قانون كورفوزييه: المرارة الممتلئة غير المتألمة القابلة للجس في مريض يرقان تدل على انسداد خبيث (كلاسيكيًا سرطان رأس البنكرياس)؛ فالمرارة المصابة بالحصى متليفة منكمشة لا تتمدد، والانحلال الدمي لا يسبب يرقانًا انسداديًا أصلًا."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Icterus",
+          "definition_ar": "اليرقان السريري: اصفرار يُؤكد بفحص العين (الصلبة) والأغشية المخاطية، وتُقدّر عمق درجته أثناء الفحص العام."
+        },
+        {
+          "term": "Courvoisier's law",
+          "definition_ar": "قانون كورفوزييه: مرارة ممتلئة قابلة للجس في مريض يرقان = انسداد خبيث (سرطان رأس البنكرياس عادة) وليس حصى، لأن مرارة الحصى متليفة منكمشة."
+        },
+        {
+          "term": "Spider naevi",
+          "definition_ar": "الشامات العنكبوتية: توسعات شعرية وعائية في الجذع الأعلى من علامات أمراض الكبد المزمنة المتعوضة."
+        },
+        {
+          "term": "Xanthelasma",
+          "definition_ar": "الزانثلازما: ترسبات دهنية صفراء حول الجفنين؛ من علامات الكبد المزمن واضطراب شحوم الدم."
+        },
+        {
+          "term": "Gynaecomastia",
+          "definition_ar": "تثدي الرجل: تضخم الثدي عند الذكر نتيجة اضطراب استقلاب الإستروجين في أمراض الكبد المزمنة."
+        },
+        {
+          "term": "Dupuytren's contracture",
+          "definition_ar": "تقاصر دوبويتران: تليف وتقاصر لفافة راحة اليد؛ علامة مرتبطة بأمراض الكبد المزمنة والكحول."
+        },
+        {
+          "term": "Hepatic flap (asterixis)",
+          "definition_ar": "الرفرفة الكبدية: عدم القدرة على إبقاء اليدين ممدودتين بسبب اضطراب الوعي في الاعتلال الدماغي الكبدي غير المتعوض."
+        },
+        {
+          "term": "Fetor hepaticus",
+          "definition_ar": "رائحة الكبد: رائحة نفس مميزة (مثل المريطايا) تشير إلى اعتلال دماغي كبدي وفشل كبدي غير متعوض."
+        },
+        {
+          "term": "Ascites",
+          "definition_ar": "الحبن: تجمع السائل في البطن؛ يُفحص كتوسع بطني مع علامات الموجة والإزاحة، ومن علامات تشمع الكبد غير المتعوض."
+        },
+        {
+          "term": "Splenomegaly",
+          "definition_ar": "تضخم الطحال: يشير إلى فرط ضغط الباب أو انحلال دم؛ غيابه في اليرقان الانسدادي الصرف يفرقه عن أمراض الكبد المزمنة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c05",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Investigations and the Medical-versus-Surgical Decision",
+      "summary_ar": "يشرح هذا المفهوم نمط وظائف الكبد في اليرقان الانسدادي (ارتفاع البيليروبن الكلي والمقترن والفوسفاتاز القلوي مع بيليروبن غير مقترن طبيعي وناقلات أمين طبيعية أو مرتفعة)، وتغيرات البول والبراز (يوروبيلينوجين منخفض وبول داكن لون الشاي وبراز فاتح طيني)، والتصوير بالأمواج فوق الصوتية (توسع القناة الجامعة إلزاميًا) وMRCP التشخيصي التأكيدي وCT للهيداتيد والكتل، وصور ERCP وPTC، ثم خوارزمية القرار: غير المقترن طبي والمقترن الانسدادي جراحي.",
+      "sections": [
+        {
+          "heading": "Liver Function Tests in Obstructive Jaundice",
+          "body_text": "The liver function test (LFT) pattern in obstructive jaundice: **total serum bilirubin: increased; conjugated bilirubin (direct): increased; unconjugated bilirubin (indirect): normal; alkaline phosphatase: increased; ALT and AST: normal or increased**. The rise is therefore **dominated by the direct fraction together with a markedly raised alkaline phosphatase** - the cholestatic enzyme of canalicular origin - while the transaminases (ALT/AST) stay normal or rise only mildly. Contrast patterns: a hepatocellular pattern (transaminases elevated many-fold with only modest alkaline phosphatase) points to hepatitis, and a predominantly indirect rise points to hemolysis or a conjugation defect. Recognizing the cholestatic (direct + ALP) pattern is what pushes the patient across the medical-surgical boundary of the algorithm.",
+          "key_points": [
+            "Obstructive LFT: total up, direct up, indirect normal, ALP up, ALT/AST normal or up.",
+            "High ALP with direct hyperbilirubinemia = cholestasis/obstruction.",
+            "Transaminases many-fold up = hepatitis (medical); indirect up = hemolysis or conjugation defect (medical)."
+          ],
+          "check": {
+            "prompt": "Which liver function test pattern fits obstructive jaundice?",
+            "options": [
+              "Total bilirubin increased, conjugated increased, unconjugated normal, alkaline phosphatase increased",
+              "Total increased with unconjugated increased and conjugated normal",
+              "ALT and AST massively increased with normal bilirubin and normal ALP",
+              "Normal bilirubin with increased alkaline phosphatase only"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "نمط الانسداد: ارتفاع البيليروبن الكلي والمقترن (المباشر) مع بيليروبن غير مقترن طبيعي وارتفاع الفوسفاتاز القلوي، أما ناقلات الأمين فطبيعية أو مرتفعة قليلًا."
+          }
+        },
+        {
+          "heading": "Urine and Stool Examination",
+          "body_text": "**Urobilinogen in urine: decreased** - because obstructed bile delivers no bilirubin to the gut, no urobilinogen is generated and reabsorbed (in contrast to hemolysis, where urine urobilinogen is increased). **Urine color: dark (tea color)** - the urine **contains conjugated bilirubin**, which is water-soluble, filtered by the glomerulus and excreted; unconjugated bilirubin is albumin-bound and never appears in urine. **Stool would be pale (clay color) because of the absence of stercobilinogen.** The triad of **dark tea-colored urine + pale clay stool + pruritus** in a deeply jaundiced patient is the bedside signature of biliary obstruction, and each element follows directly from the normal physiology: no bile in the gut means no stercobilinogen (pale stool) and no urobilinogen returning to the urine, while regurgitated conjugated bilirubin darkens it.",
+          "key_points": [
+            "Urine urobilinogen decreased (increased in hemolysis).",
+            "Dark tea-colored urine contains conjugated bilirubin.",
+            "Pale clay stool from absent stercobilinogen."
+          ]
+        },
+        {
+          "heading": "Ultrasound, MRCP and CT",
+          "body_text": "**US scan** is the first-line imaging test and in obstructive jaundice must show: **a dilated CBD (a must)**, plus **gallstones (possibly)**, plus or **a hydatid cyst (possibly)**, and **no splenomegaly** - supporting obstruction rather than chronic liver disease with portal hypertension. **MRCP is diagnostic and confirmative**: it demonstrates the **dilated CBD and CHD** and the **possible cause of obstruction, for example a stone (commonly)**, without contrast, radiation or duct cannulation. **CT scan** is sometimes requested if the underlying cause is a **hydatid cyst or a mass (tumor)** - it characterizes the cyst (daughter cysts, calcification) and, for tumors, assesses size, local invasion, lymph nodes, metastases and resectability before a Whipple or bypass decision.",
+          "key_points": [
+            "US (first-line): dilated CBD is a must; gallstones and hydatid cyst possibly; no splenomegaly.",
+            "MRCP: diagnostic and confirmative - dilated CBD + CHD plus the cause, commonly a stone.",
+            "CT: requested for hydatid cyst or mass (tumor) and resectability assessment."
+          ],
+          "check": {
+            "prompt": "Which ultrasound finding is mandatory in true obstructive jaundice?",
+            "options": [
+              "A dilated CBD",
+              "Gallstones in the gallbladder",
+              "A hydatid cyst",
+              "Splenomegaly",
+              "Ascites"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "توسع القناة الصفراوية الجامعة إلزامي في الانسداد الحقيقي؛ أما الحصيات أو الكيسة الهيداتيدية فممكنة وليست إلزامية، ويُغيب تضخم الطحال لصالح الانسداد مقابل مرض الكبد المزمن."
+          }
+        },
+        {
+          "heading": "ERCP and PTC - Interventional Cholangiography",
+          "body_text": "The imaging gallery slide contrasts the three biliary studies. **ERCP (endoscopic retrograde cholangiopancreatography):** the slide shows an ERCP image obtained under fluoroscopy of a **large biliary stone** (1.05 cm; the caption is misprinted as '105 cm') - a **side-viewing duodenoscope visible within the duodenum**, and the key finding is a radiopaque filling defect in the opacified biliary tree; ERCP demonstrates the endoscopic approach to visualizing and potentially extracting stones from the CBD, and it is the first-line definitive treatment of choledocholithiasis (sphincterotomy, stone extraction, stenting). **PTC (percutaneous transhepatic cholangiogram):** contrast material injected percutaneously into the biliary system **opacifies the intrahepatic and extrahepatic ducts**, showing **dilated biliary ducts** with a catheter or guidewire traversing the biliary tree; PTC is typically used **when ERCP is unsuccessful or not possible**, providing a detailed roadmap of the biliary anatomy and any obstruction, and allowing external or internal drainage. **Ultrasound findings** on the same slide: labels of the **CBD** (a tubular, anechoic structure with concentric wall layers) and the **PD (pancreatic duct)** (a smaller tubular structure below it), with a **hyperechoic (bright) focus with posterior acoustic shadowing at the distal CBD/PD confluence, representing a biliary stone (choledocholithiasis) causing obstruction or impaction** - likely an endoscopic ultrasound view given the high resolution and proximity. Ultrasound remains the first-line modality for detecting biliary dilation and stones. (Imaging credits: © 2008 Elsevier Inc.)",
+          "key_points": [
+            "ERCP: side-viewing duodenoscope in the duodenum; radiopaque filling defect = stone; diagnostic AND therapeutic (first-line for CBD stones).",
+            "PTC: percutaneous transhepatic contrast opacifying dilated ducts; used when ERCP fails.",
+            "US: CBD and PD labels; hyperechoic focus with posterior acoustic shadowing at the distal CBD/PD confluence = stone with obstruction/impaction."
+          ]
+        },
+        {
+          "heading": "The Conjugated-versus-Unconjugated Decision Algorithm",
+          "body_text": "The lecture's diagnostic algorithm (a clinical decision tree / flowchart of boxes) runs as follows: **a patient presents with skin discoloration suggestive of jaundice -> history and examination (+ investigation) -> branch on the bilirubin fraction.** **Left path: unconjugated = indirect hyperbilirubinemia -> then this is MEDICAL.** **Right path: conjugated = direct hyperbilirubinemia -> differential diagnosis: hepatic (medical, non-obstructive) versus post-hepatic (surgical, obstructive).** The conjugated branch splits into two sub-categories: **hepatic jaundice is medical and is confirmed by liver biopsy**, whereas **post-hepatic jaundice is obstructive = surgical**. The key teaching point of the diagram is that it distinguishes **medical management** (unconjugated/indirect causes and hepatic causes, where liver biopsy settles the diagnosis) from **surgical management** (post-hepatic obstructive causes needing mechanical relief). Anchor the golden rule: **unconjugated = medical; conjugated with post-hepatic obstruction = surgical.**",
+          "key_points": [
+            "Unconjugated (indirect) hyperbilirubinemia = medical.",
+            "Conjugated (direct): hepatic = medical (liver biopsy confirms); post-hepatic = obstructive = surgical.",
+            "The algorithm is the gate that routes the jaundiced patient to medicine or to surgery."
+          ],
+          "check": {
+            "prompt": "According to the diagnostic algorithm, a jaundiced patient with conjugated (direct) hyperbilirubinemia and post-hepatic obstruction is:",
+            "options": [
+              "Surgical, because post-hepatic obstruction needs mechanical relief",
+              "Medical, exactly like unconjugated jaundice",
+              "Medical, confirmed by liver biopsy",
+              "Neither; observation alone is sufficient"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "المقترن بعد كبدي = انسدادي = جراحي يحتاج تخفيفًا ميكانيكيًا؛ أما غير المقترن فطبي، والمقترن الكبدي طبي أيضًا ويُؤكد بخزعة الكبد، ولا مكان للمتابعة وحدها في الانسداد."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Alkaline phosphatase",
+          "definition_ar": "الفوسفاتاز القلوي: إنزيم قنوي المصدر يرتفع في الكوليستاز والانسداد الصفراوي مع ارتفاع البيليروبن المقترن."
+        },
+        {
+          "term": "Urine urobilinogen",
+          "definition_ar": "يوروبيلينوجين البول: ينقص في اليرقان الانسدادي لغياب البيليروبن عن الأمعاء، ويزداد في الانحلال الدموي."
+        },
+        {
+          "term": "Cholestatic (obstructive) LFT pattern",
+          "definition_ar": "النمط الكوليستازي: ارتفاع البيليروبن المقترن والفوسفاتاز القلوي مع بيليروبن غير مقترن طبيعي وناقلات أمين طبيعية أو مرتفعة قليلًا."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير البنكرياس والأقنية الصفراوية بالرنين المغناطيسي: فحص تشخيصي وتأكيدي غير باضع يُظهر توسع القناة الجامعة والكبدية وسبب الانسداد مثل الحصاة."
+        },
+        {
+          "term": "ERCP",
+          "definition_ar": "تنظير القنوات الصفراوية والبنكرياس بالمنظار الرجعي عبر الأمبولة: إجراء تشخيصي وعلاجي؛ الخيار الأول لاستخراج حصوات القناة الجامعة ووضع الدعامات."
+        },
+        {
+          "term": "PTC (percutaneous transhepatic cholangiogram)",
+          "definition_ar": "تصوير القنوات الصفراوية عبر الجلد: حقن مادة ظليلة إلى شبكة القنوات داخل الكبد؛ يُستخدم عند فشل ERCP للتصوير والتصريف."
+        },
+        {
+          "term": "Liver biopsy",
+          "definition_ar": "خزعة الكبد: تُستخدم لتأكيد اليرقان الكبدي (الطبي) في فرع المقترن من الخوارزمية، ولا دور لها في الانسداد."
+        },
+        {
+          "term": "Hyperechoic focus with posterior acoustic shadowing",
+          "definition_ar": "بؤرة عالية الصدى مع ظل صوتي خلفي: المظهر الأمواجي الكلاسيكي للحصاة الصفراوية كما في صورة القناة الجامعة مع القناة البنكرياسية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c06",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Supportive Treatment of Obstructive Jaundice",
+      "summary_ar": "يلخص هذا المفهوم العلاج الداعم لليرقان الانسدادي: الإدخال إلى المستشفى، وتوازن السوائل والكهارل بسوائل وريدية حذرة، وتصحيح عيوب التخثر بفيتامين K، والوقاية من الخمج بالمضادات الحيوية، والوقاية من المتلازمة الكبدية الكلوية والاعتلال الدماغي الكبدي باستخدام حذر للسوائل الوريدية والمدرات؛ وهو نفسه علاج التهاب القنوات الصفراوية الصاعد (سوائل، مضادات حيوية، فيتامين K).",
+      "sections": [
+        {
+          "heading": "The Supportive Treatment Package",
+          "body_text": "Supportive treatment of obstructive jaundice precedes and accompanies definitive relief and contains five elements: **1. Admission to hospital** - obstructive jaundice is never worked up and left at home. **2. Fluid and electrolyte balance - careful IV fluid** therapy: the cholestatic kidney sits on the edge of hepatorenal failure, so both under-resuscitation and fluid overload are dangerous. **3. Correction of coagulation defects - vitamin K** given parenterally: with no bile in the gut, fat-soluble vitamin K cannot be absorbed, PT/INR prolongs and bruising appears; parenteral vitamin K reverses this before any invasive procedure (ERCP, PTC or surgery). **4. Prevention of infection - antibiotics**: stagnant bile behind an obstruction is easily contaminated, and ascending cholangitis or sepsis must be pre-empted. **5. Prevention of hepatorenal syndrome and hepatic encephalopathy - by the careful use of IV fluid and diuretics** (avoid dehydration and nephrotoxic insults; avoid excessive diuresis).",
+          "key_points": [
+            "Admission, careful IV fluid and electrolyte balance, vitamin K, antibiotics, prevention of hepatorenal syndrome and encephalopathy.",
+            "Vitamin K is parenteral - oral vitamin K is not absorbed without bile.",
+            "Careful IV fluid and careful diuretics protect the kidney and brain of the cholestatic patient."
+          ],
+          "check": {
+            "prompt": "Why is parenteral vitamin K given in obstructive jaundice?",
+            "options": [
+              "Bile does not reach the gut, so fat-soluble vitamin K is not absorbed, causing a correctable coagulopathy",
+              "Vitamin K relieves the biliary obstruction itself",
+              "Vitamin K directly prevents hepatorenal syndrome",
+              "Vitamin K lowers the serum bilirubin level"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "غياب الصفراء عن الأمعاء يمنع امتصاص فيتامين K الدهني فيطول زمن البروثرومبين وتظهر الكدمات؛ يعطى حقنيًا لتصحيح التخثر قبل أي إجراء باضع، ولا يخفض البيليروبن ولا يفك الانسداد."
+          }
+        },
+        {
+          "heading": "Why Each Element Matters (Rationale and Exam Traps)",
+          "body_text": "Each supportive element answers a red flag from the history and examination: **oliguria** (the history item) is the earliest alarm of **hepatorenal syndrome** - met with careful IV fluids, not aggressive diuresis; **change in consciousness** heralds **hepatic encephalopathy**; **bruises** reflect the coagulopathy corrected by vitamin K; and **fever** with tachycardia on the vital signs signals developing cholangitis needing antibiotics. The same package is explicitly the treatment of **cholangitis** in the definitive-treatment slide of the lecture: 'cholangitis should be treated as mentioned above (IVF, antibiotics, vitamin K, ...)'. In other words: **resuscitate and support first, then relieve the obstruction by ERCP or surgery** - exactly the sequence examined in clinical case scenarios, and the reason a febrile, hypotensive jaundiced patient goes to the intensive pathway before the endoscopy suite.",
+          "key_points": [
+            "Oliguria = watch for hepatorenal syndrome; confusion = hepatic encephalopathy; bruises = coagulopathy.",
+            "Cholangitis is treated with IV fluids, antibiotics and vitamin K before drainage.",
+            "Sequence in every case: supportive care and resuscitation first, then definitive ERCP/surgery."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Vitamin K (parenteral)",
+          "definition_ar": "فيتامين K الحقني: يصحح عيوب التخثر الناتجة عن سوء امتصاصه الدهني في غياب الصفراء عن الأمعاء قبل ERCP أو الجراحة."
+        },
+        {
+          "term": "Ascending cholangitis",
+          "definition_ar": "التهاب القنوات الصفراوية الصاعد: خمج الصفراء الراكدة خلف انسداد (حصاة عادة) بحمى عالية ورجفة ويرقان وألم؛ يعالج بالسوائل والمضادات الحيوية وفيتامين K ثم التصريف."
+        },
+        {
+          "term": "Hepatorenal syndrome",
+          "definition_ar": "المتلازمة الكبدية الكلوية: قصور كلوي وظيفي يرافق اليرقان الشديد والكوليستاز؛ تُمنع بالسوائل الوريدية الحذرة وتجنب الإفراط في المدرات."
+        },
+        {
+          "term": "Hepatic encephalopathy",
+          "definition_ar": "الاعتلال الدماغي الكبدي: اضطراب وعي من تشوش إلى نعاس فسبات مع رفرفة كبدية ورائحة كبدية؛ يُمنع بالمعالجة الداعمة الحذرة."
+        },
+        {
+          "term": "Coagulopathy of obstructive jaundice",
+          "definition_ar": "علة التخثر في اليرقان الانسدادي: نقص فيتامين K لغياب الأملاح الصفراوية فيعمل زمن البروثرومبين ويظهر الكدمات؛ يصحح حقنيًا بفيتامين K."
+        },
+        {
+          "term": "Careful IV fluid therapy",
+          "definition_ar": "المعالجة الوريدية الحذرة: توازن السوائل والكهارل لتجنب التحميل المفرط والتجفاف معًا في مريض اليرقان الانسدادي، للوقاية من القصور الكلوي والدماغي."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_c07",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Definitive Treatment - Endoscopic and Surgical Options by Cause",
+      "summary_ar": "يوضح هذا المفهوم العلاج النهائي حسب السبب: حصاة القناة الصفراوية تبدأ بـERCP ثم الجراحة عند الفشل (فتح القناة فوق الاثني عشر أو قطع المصرة عبر الاثني عشر) ثم استئصال المرارة بالتنظير؛ وسرطان رأس البنكرياس والورم حول الأمبولة القابل للاستئصال يعالج بعملية وايبل وغير القابل بالتحويل الثلاثي؛ وسرطان القناة الصفراوية بالاستئصال مع مفاغرة كبدية-صائمية ثم الدعامات عبر ERCP فـPTC فالمعالجة الكيميائية الإشعاعية فالرعاية الداعمة، والمبدأ العام: التقدم حسب السيناريو السريري.",
+      "sections": [
+        {
+          "heading": "Choledocholithiasis (Bile Duct Stone)",
+          "body_text": "Definitive treatment of **choledocholithiasis (bile duct stone)** follows a strict sequence: **1. ERCP first** - endoscopic sphincterotomy with stone extraction (and stenting if needed). **If ERCP fails, then go to surgery. 2. Surgery:** **A. supraduodenal choledochotomy with stone removal (CBD exploration)** - opening the duct longitudinally above the duodenum, retrieving the stones and closing, classically over a T-tube; or **B. transduodenal sphincterotomy and stone extraction** - dividing the sphincter of Oddi through the duodenum for distally impacted stones. **3. Cholangitis should be treated as mentioned above (IVF, antibiotics, vitamin K, ...)** - supportive care first, then drainage. **4. Then laparoscopic cholecystectomy** - once the duct is cleared, the gallbladder (the stone factory) is removed laparoscopically to prevent recurrent stones. Never stop at clearing the duct: the examination answer to 'what follows successful ERCP?' is **laparoscopic cholecystectomy**.",
+          "key_points": [
+            "Sequence: ERCP first; if failed -> supraduodenal choledochotomy (CBD exploration) or transduodenal sphincterotomy with extraction.",
+            "Cholangitis: IV fluids, antibiotics, vitamin K first.",
+            "Always follow duct clearance with laparoscopic cholecystectomy."
+          ],
+          "check": {
+            "prompt": "ERCP fails to extract a large CBD stone in a fit patient. What are the surgical options?",
+            "options": [
+              "Supraduodenal choledochotomy (CBD exploration) or transduodenal sphincterotomy with stone extraction",
+              "Whipple pancreaticoduodenectomy",
+              "Triple bypass surgery",
+              "Hepaticojejunostomy alone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند فشل ERCP للحصاة نلجأ لفتح القناة الجامعة فوق الاثني عشر (استكشاف القناة) أو قطع المصرة عبر الاثني عشر مع استخراج الحصاة، ثم استئصال المرارة بالتنظير؛ ووايبل والتحويل الثلاثي ومفاغرة الكبد والصائم لعلاج الأورام لا الحصيات."
+          }
+        },
+        {
+          "heading": "Carcinoma of the Head of the Pancreas and Periampullary Tumors",
+          "body_text": "For tumors such as **carcinoma of the head of the pancreas or periampullary tumor**: **1. If it is resectable, curative resection such as the Whipple operation** (pancreaticoduodenectomy - detailed in the Whipple versus triple bypass section). **2. If it is irresectable (unresectable), palliative surgery such as triple bypass surgery** (detailed below). Resectability is judged from the work-up imaging (contrast CT/MRCP: size, vascular invasion, metastases); the jaundice itself is corrected supportively (careful fluids, vitamin K) and, for inoperable patients, by endoscopic stenting. Periampullary lesions additionally declare themselves with **hematemesis or melena** (the GI symptoms of the history checklist) and are more often resectable and curable than pancreatic head cancer itself.",
+          "key_points": [
+            "Resectable Ca head of pancreas / periampullary tumor -> curative Whipple operation.",
+            "Irresectable -> palliative triple bypass surgery.",
+            "Periampullary tumors may present with upper GI bleeding and carry a better prognosis."
+          ]
+        },
+        {
+          "heading": "Cholangiocarcinoma - The Escalating Ladder",
+          "body_text": "**Cholangiocarcinoma** follows a stepwise ladder: **1. If the tumors are operable, then surgery: resection with hepaticojejunostomy** (the source writes it as hepatic-jejunostomy) - removing the diseased duct segment/tumor and draining the proximal biliary tree into the jejunum. **2. If the tumors are inoperable and palliative surgery is not feasible and indicated, then:** **(1) drainage by endoscopic stenting by ERCP - if ERCP fails, then by PTC, as in some cases of cholangiocarcinoma; (2) chemo-radiation; (3) for very advanced cases, continue in supportive care.** The governing instruction of the whole definitive-treatment slide is: **proceed according to the clinical scenario present** - the cause, the resectability, the patient's fitness and the available expertise decide which rung of the ladder applies.",
+          "key_points": [
+            "Operable cholangiocarcinoma: resection with hepaticojejunostomy.",
+            "Inoperable (bypass not feasible): ERCP stenting, then PTC if failed, then chemo-radiation, then supportive care for very advanced disease.",
+            "Overall principle: proceed according to the clinical scenario present."
+          ]
+        },
+        {
+          "heading": "Whipple versus Triple Bypass - What the Surgeon Actually Does",
+          "body_text": "The slide titled 'Whipple vs TripleBypass in Ca head Pancreas' contrasts the two operations with Mayo diagrams. **Whipple operation (pancreaticoduodenectomy), curative:** in the 'before surgery' diagram the tumor (a dark mass, located in the head of the pancreas) involves the duodenum, in continuity with the gallbladder, bile duct, stomach, pancreas, duodenum and small intestine. In the 'after surgery' diagram the head of the pancreas and the duodenum have been resected, and **three anastomoses (connections) attach everything to the small intestine: 1. the bile duct attached to the small intestine (hepatico-jejunostomy); 2. the stomach attached to the small intestine (gastrojejunostomy); 3. the remaining pancreas attached to the small intestine (pancreaticojejunostomy)** - the reconstruction phase of the pancreaticoduodenectomy. **Triple bypass, palliative:** unlike the Whipple, **the tumor remains in situ** in the head of the pancreas; three bypass loops relieve the obstructions it causes: **1. a biliary bypass (choledochojejunostomy) to drain bile around the obstructed bile duct (relieves jaundice and pruritus); 2. a gastric bypass (gastrojejunostomy) allowing food to pass from the stomach to the intestine, bypassing the duodenal obstruction (relieves vomiting); 3. a jejunal loop in Roux-en-Y configuration used to facilitate these connections.** (Diagrams copyright © Mayo Foundation for Medical Education and Research, all rights reserved.)",
+          "key_points": [
+            "Whipple = resection of pancreatic head + duodenum + bile duct + gallbladder (with distal stomach) followed by 3 anastomoses to the jejunum: bile duct, stomach, remaining pancreas.",
+            "Triple bypass = choledochojejunostomy + gastrojejunostomy on a Roux-en-Y loop with the tumor left in situ - relieves jaundice and duodenal obstruction.",
+            "Whipple is curative intent for resectable disease; triple bypass is palliation for unresectable disease."
+          ],
+          "check": {
+            "prompt": "Which set of three anastomoses completes a Whipple pancreaticoduodenectomy?",
+            "options": [
+              "Bile duct, stomach and remaining pancreas each attached to the small intestine",
+              "Gallbladder, duodenum and pancreas attached to the stomach",
+              "Three bypass loops with the tumor left in situ",
+              "Colon, rectum and stomach attached together"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "بعد استئصال رأس البنكرياس والاثني عشر تُجرى ثلاث مفاغر مع الأمعاء الدقيقة: القناة الصفراوية، والمعدة، وبقية البنكرياس؛ أما الحلقات الثلاث مع بقاء الورم فهي التحويل الثلاثي التلطيفي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "ERCP sphincterotomy with stone extraction",
+          "definition_ar": "قطع مصرة أودي عبر المنظار مع استخراج حصاة القناة الجامعة: الخطوة العلاجية الأولى في حصاة القناة الصفراوية."
+        },
+        {
+          "term": "Supraduodenal choledochotomy",
+          "definition_ar": "فتح القناة الصفراوية الجامعة فوق الاثني عشر لاستخراج الحصاة (استكشاف القناة الجامعة) عند فشل ERCP، ويغلق عادة على أنبوب T."
+        },
+        {
+          "term": "Transduodenal sphincterotomy",
+          "definition_ar": "قطع مصرة أودي عبر الاثني عشر واستخراج الحصاة: الخيار الجراحي البديل لحصاة قاصية قرب الأمبولة عند فشل ERCP."
+        },
+        {
+          "term": "CBD exploration",
+          "definition_ar": "استكشاف القناة الصفراوية الجامعة: فتحها وتفتيشها وإفراغها من الحصيات عبر فتح فوق الاثني عشر."
+        },
+        {
+          "term": "Laparoscopic cholecystectomy",
+          "definition_ar": "استئصال المرارة بالتنظير: الخطوة الأخيرة بعد إفراغ القناة الجامعة من الحصاة لمنع نكس الحصى."
+        },
+        {
+          "term": "Whipple operation (pancreaticoduodenectomy)",
+          "definition_ar": "عملية وايبل (استئصال البنكرياس والاثني عشر): استئصال رأس البنكرياس والاثني عشر والقناة الصفراوية والمرارة مع ثلاث مفاغر معوية؛ علاج جذري لأورام رأس البنكرياس وحول الأمبولة."
+        },
+        {
+          "term": "Triple bypass surgery",
+          "definition_ar": "التحويل الثلاثي: عملية تلطيفية لسرطان رأس البنكرياس غير القابل للاستئصال: تحويل صفراوي (مفاغرة القناة الجامعة مع الصائم) وتحويل معدني (مفاغرة معدية-صائمية) بحلقة روكس-إن-واي مع بقاء الورم."
+        },
+        {
+          "term": "Hepaticojejunostomy",
+          "definition_ar": "المفاغرة الكبدية-الصائمية: توصيل القناة الصفراوية الكبدية بالصائم لتصريف الصفراء بعد استئصال سرطان القناة الصفراوية."
+        },
+        {
+          "term": "Choledochojejunostomy",
+          "definition_ar": "المفاغرة الجامعة-الصائمية: تحويل الصفراء حول انسداد القناة في التحويل الثلاثي التلطيفي."
+        },
+        {
+          "term": "Gastrojejunostomy",
+          "definition_ar": "المفاغرة المعدية-الصائمية: توصيل المعدة بالصائم لتجاوز انسداد العفج؛ عنصر في وايبل وفي التحويل الثلاثي."
+        },
+        {
+          "term": "Pancreaticojejunostomy",
+          "definition_ar": "المفاغرة البنكرياسية-الصائمية: توصيل بقية البنكرياس بالصائم في إعادة البناء بعد عملية وايبل."
+        },
+        {
+          "term": "Endoscopic stenting by ERCP",
+          "definition_ar": "وضع دعامة عبر ERCP: تصريف الصفراء عبر انسداد غير قابل للجراحة كسرطان القناة الصفراوية المتقدم؛ وعند فشلها نلجأ لـPTC عبر الجلد."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L6_obstructive_jaundice_f01",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c01",
+      "card_type": "basic",
+      "front_text": "Define jaundice and state both serum bilirubin thresholds.",
+      "back_text": "Yellowish discoloration of skin, sclera and mucous membranes from excessive deposition of bilirubin in tissues; develops above 2 mg/dl (34.2 umol/L) and is typically detectable above 3 mg/dl (51.3 umol/L).",
+      "tags": ["definition", "thresholds"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f02",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c01",
+      "card_type": "basic",
+      "front_text": "Trace normal bilirubin physiology from spleen to intestine.",
+      "back_text": "Spleen: hemoglobin degrades to haem + globin; haem becomes unconjugated, protein-bound bilirubin. Liver: transported with ligand or Z protein, then conjugated with glucuronic acid. Intestine: bacteria convert it to urobilinogen; 90% is oxidized to stercobilinogen (stool color) and 10% returns via the portal vein to the liver.",
+      "mnemonic_ar": "الطحال يصنع غير المقترن، الكبد يقترن، وبكتيريا الأمعاء تحول: 90% براز و10% عودة بابية.",
+      "tags": ["physiology"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f03",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "card_type": "basic",
+      "front_text": "What are the four columns of the broad jaundice differential diagnosis and which bilirubin fraction rises in each?",
+      "back_text": "1. Increased production (unconjugated). 2. Decreased transport or decreased conjugation (unconjugated). 3. Impaired excretion (conjugated). 4. Biliary obstruction = obstructive jaundice (conjugated) - the surgical column and the subject of this lecture.",
+      "mnemonic_ar": "أعمدة اليرقان: إنتاج - نقل/اقتران - إفراز - انسداد؛ الأول والثاني غير مقترن، والثالث والرابع مقترن، والرابع وحده جراحي.",
+      "tags": ["differential diagnosis"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f04",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "card_type": "basic",
+      "front_text": "List the increased-production (unconjugated) causes of jaundice.",
+      "back_text": "Hemolysis, transfusions, sepsis, burns, and hemoglobinopathies (Hgb-opathies).",
+      "tags": ["differential diagnosis"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f05",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "card_type": "basic",
+      "front_text": "List the decreased transport / decreased conjugation causes of jaundice.",
+      "back_text": "Gilbert's syndrome, Crigler-Najjar syndrome, neonatal causes, cirrhosis, hepatitis, and drug inhibition (e.g., rifampicin).",
+      "tags": ["differential diagnosis"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f06",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "card_type": "basic",
+      "front_text": "List the impaired-excretion (conjugated, still medical) causes of jaundice.",
+      "back_text": "Rotor's syndrome, Dubin-Johnson syndrome, cancer, cirrhosis, hepatitis, amyloidosis, and pregnancy.",
+      "tags": ["differential diagnosis"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f07",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "card_type": "basic",
+      "front_text": "Which causes populate the biliary obstruction (surgical) column of the jaundice DDx?",
+      "back_text": "CH/CBD stone, stricture, cancer, chronic pancreatitis, and primary sclerosing cholangitis (PSC).",
+      "tags": ["differential diagnosis", "surgical"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f08",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c03",
+      "card_type": "basic",
+      "front_text": "Name the two intra-luminal causes of obstructive jaundice.",
+      "back_text": "1. CHD or CBD stone (choledocholithiasis). 2. Daughter cyst from intrabiliary rupture of a liver hydatid cyst.",
+      "mnemonic_ar": "داخل تجويف القناة: حصاة أو كيسة ابنة من هيداتيد الكبد.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f09",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c03",
+      "card_type": "basic",
+      "front_text": "Name the five intra-mural causes of obstructive jaundice.",
+      "back_text": "Cholangiocarcinoma, stricture, biliary atresia in the neonate, choledochal cyst, and primary sclerosing cholangitis.",
+      "mnemonic_ar": "جدار القناة: ورم (كولانجيوكارسينوما)، تضيق، رتق وليدي، كيسة قناة، تصلب قنوات أولي.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f10",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c03",
+      "card_type": "basic",
+      "front_text": "Name the six extra-luminal causes of obstructive jaundice.",
+      "back_text": "Carcinoma of the head of the pancreas, chronic pancreatitis, liver cancer or metastatic cancer, periampullary tumor or cancer (duodenal), occasionally acute cholecystitis (gallstone complication), and carcinoma of the gallbladder.",
+      "tags": ["classification"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f11",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "card_type": "basic",
+      "front_text": "Give the full LFT pattern of obstructive jaundice.",
+      "back_text": "Total serum bilirubin increased; conjugated (direct) increased; unconjugated (indirect) normal; alkaline phosphatase increased; ALT and AST normal or increased.",
+      "tags": ["investigations"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f12",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "card_type": "basic",
+      "front_text": "Describe the urine and stool changes in obstructive jaundice.",
+      "back_text": "Urine urobilinogen decreased; urine dark (tea color) because it contains conjugated bilirubin; stool pale (clay color) because stercobilinogen is absent.",
+      "is_vivid": true,
+      "mnemonic_ar": "بول شاي وبراز طين = انسداد صفراوي؛ تذكر أن اليوروبيلينوجين ينقص ولا يزداد.",
+      "tags": ["investigations"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f13",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "card_type": "basic",
+      "front_text": "What must ultrasound show in obstructive jaundice, and what are the roles of MRCP and CT?",
+      "back_text": "US: dilated CBD (a must) + gallstones (possibly) + hydatid cyst (possibly), and no splenomegaly. MRCP: diagnostic and confirmative - dilated CBD and CHD plus the cause, commonly a stone. CT: requested when the cause is a hydatid cyst or a mass (tumor).",
+      "tags": ["imaging"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f14",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c04",
+      "card_type": "basic",
+      "front_text": "State Courvoisier's law.",
+      "back_text": "In a jaundiced patient, a palpable, distended, non-tender gallbladder indicates malignant obstruction (classically carcinoma of the head of the pancreas), not stones - a stone-diseased gallbladder is fibrotic and contracted (Courvoisier negative).",
+      "is_vivid": true,
+      "explanation_ar": "المرارة الممتلئة غير المتألمة القابلة للجس في مريض يرقان = سبب خبيث؛ فمرارة الحصى متليفة منكمشة لا تتمدد.",
+      "tags": ["signs"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f15",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "card_type": "basic",
+      "front_text": "State the medical-versus-surgical rule of the jaundice algorithm.",
+      "back_text": "Unconjugated (indirect) hyperbilirubinemia = medical. Conjugated (direct): hepatic causes are medical (liver biopsy confirms); post-hepatic obstruction = surgical.",
+      "tags": ["algorithm"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f16",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c06",
+      "card_type": "basic",
+      "front_text": "List the five elements of supportive treatment in obstructive jaundice.",
+      "back_text": "1. Admission to hospital. 2. Fluid and electrolyte balance with careful IV fluid. 3. Vitamin K for coagulation defects. 4. Antibiotics for prevention of infection. 5. Prevention of hepatorenal syndrome and hepatic encephalopathy (careful IV fluid and diuretics).",
+      "mnemonic_ar": "دعم اليرقان الانسدادي: إدخال للمستشفى - سوائل حذرة - فيتامين K - مضاد حيوي - وقاية كلوية ودماغية.",
+      "tags": ["treatment"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f17",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "card_type": "basic",
+      "front_text": "Outline the definitive treatment of choledocholithiasis.",
+      "back_text": "1. ERCP first. 2. If ERCP fails, surgery: A. supraduodenal choledochotomy with stone removal (CBD exploration) or B. transduodenal sphincterotomy and stone extraction. 3. Cholangitis: IVF, antibiotics, vitamin K. 4. Then laparoscopic cholecystectomy.",
+      "tags": ["treatment", "stones"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f18",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "card_type": "basic",
+      "front_text": "Which three anastomoses complete a Whipple pancreaticoduodenectomy?",
+      "back_text": "Bile duct to small intestine (hepatico-jejunostomy), stomach to small intestine (gastrojejunostomy), and remaining pancreas to small intestine (pancreaticojejunostomy), after resecting the pancreatic head and duodenum.",
+      "mnemonic_ar": "وايبل = ثلاث مفاغر مع الأمعاء: صفراء (قناة)، طعام (معدة)، عصارة (بنكرياس).",
+      "tags": ["surgery", "whipple"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f19",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "card_type": "basic",
+      "front_text": "What are the components of palliative triple bypass for unresectable pancreatic head cancer?",
+      "back_text": "A biliary bypass (choledochojejunostomy) to drain bile around the obstructed duct, a gastric bypass (gastrojejunostomy) for duodenal obstruction, and a jejunal loop in Roux-en-Y configuration to facilitate the connections - the tumor is left in situ.",
+      "tags": ["surgery", "palliation"]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_f20",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "card_type": "basic",
+      "front_text": "Describe the escalating treatment ladder of cholangiocarcinoma.",
+      "back_text": "Operable: resection with hepaticojejunostomy. Inoperable when palliative surgery is not feasible: endoscopic stenting by ERCP, then PTC if ERCP fails, then chemo-radiation; very advanced cases continue in supportive care.",
+      "tags": ["treatment", "cholangiocarcinoma"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L6_obstructive_jaundice_m01",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c04",
+      "question_stem": "A 64-year-old man presents with six weeks of painless, progressively deepening jaundice, pruritus, dark tea-colored urine, pale clay stools and 8 kg of weight loss. He is afebrile. Examination reveals a palpable, distended, non-tender gallbladder and no splenomegaly. Labs: conjugated bilirubin 11 mg/dl, alkaline phosphatase 580 U/L, unconjugated bilirubin normal. What is the most likely diagnosis?",
+      "options": [
+        "Carcinoma of the head of the pancreas",
+        "Choledocholithiasis with an impacted stone",
+        "Gilbert's syndrome",
+        "Hemolytic anemia",
+        "Acute viral hepatitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يرقان باهت متدرج غير مؤلم مع نقص وزن ومرارة ممتلئة غير متألمة (قانون كورفوزييه إيجابي) وارتفاع مقترن مع فوسفاتاز قلوي عالٍ = سرطان رأس البنكرياس. الحصاة تسبب مغصًا صفراويًا ومرارة متليفة منكمشة (كورفوزييه سلبي)، وجيلبرت يرقان غير مقترن خفيف مع إنزيمات طبيعية، والانحلال الدمي يرفع الشق غير المقترن، والتهاب الكبد يرفع ناقلات الأمين بشدة مع حمى وألم كبدي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Painless + progressive + palpable gallbladder in an older patient.",
+        "Courvoisier's law separates malignant obstruction from stone disease."
+      ],
+      "focus_sections": [1, 4]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m02",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "question_stem": "A 45-year-old woman has two weeks of generalized pruritus, dark (tea-colored) urine and pale clay-colored stool. Labs: total bilirubin 9 mg/dl (direct 7.5), alkaline phosphatase 700 U/L, ALT 60 U/L. Which investigation should be ordered FIRST to establish the cause?",
+      "options": [
+        "Abdominal ultrasound looking for a dilated CBD, stones and absence of splenomegaly",
+        "MRCP as the very first test",
+        "Percutaneous transhepatic cholangiogram (PTC)",
+        "Liver biopsy",
+        "HIDA scan"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الأمواج فوق الصوتية هي الفحص الأول في اليرقان الكوليستازي: يجب أن تُظهر توسع القناة الجامعة (أمر إلزامي) وقد تظهر حصيات أو كيسة هيداتيد مع غياب تضخم الطحال؛ ثم يأتي MRCP كفحص تشخيصي تأكيدي. PTC يُستخدم عند فشل ERCP وليس أولًا، وخزعة الكبد لليرقان الكبدي الطبي، وHIDA لتقييم المرارة وليس للانسداد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m03",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "question_stem": "Which urine finding distinguishes obstructive jaundice from hemolytic jaundice?",
+      "options": [
+        "Urobilinogen is decreased in obstruction and increased in hemolysis",
+        "Urobilinogen is increased in both conditions",
+        "Urobilinogen is decreased in both conditions",
+        "Conjugated bilirubin is absent from urine in obstruction",
+        "Urine color is normal in obstruction and dark in hemolysis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في الانسداد لا يصل البيليروبن إلى الأمعاء فلا يتكون يوروبيلينوجين ولا يعود للبول، فينقص؛ بينما في الانحلال الدموي يزداد إنتاجه وامتصاصه وإفرازه البولي. البول في الانسداد داكن لون الشاي لاحتوائه بيليروبن مقترنًا، وليس عاديًا.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m04",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c06",
+      "question_stem": "A 52-year-old woman with known gallstones presents with right upper quadrant pain, temperature 39.2 C with rigors, jaundice, blood pressure 100/65 mmHg and pulse 118/min. What is the best INITIAL management?",
+      "options": [
+        "Admission with ABC resuscitation: careful IV fluids, blood cultures, IV antibiotics and vitamin K",
+        "Immediate ERCP sphincterotomy before any resuscitation",
+        "Emergency laparotomy and CBD exploration",
+        "Oral antibiotics with outpatient follow-up",
+        "PTC drainage as the first step"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المريضة مصابة بالتهاب القنوات الصفراوية الصاعد (حمى عالية ورجفة ويرقان وألم مع عدم استقرار)؛ الأولوية هي الإنعاش والدعم: سوائل وريدية حذرة، زرع دم ثم مضادات حيوية وريدية، وفيتامين K لتصحيح التخثر، ثم ERCP العلاجي بعد الاستقرار. ERCP قبل الإنعاش خطأ في مريض غير مستقر، والجراحة تُحتفظ بها عند فشل ERCP، والعلاج الفموي غير كافٍ، وPTC ليس خطًا أولًا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Fever + rigors + jaundice + RUQ pain = ascending cholangitis.",
+        "Supportive treatment comes before definitive drainage."
+      ],
+      "focus_sections": [0, 1]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m05",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c03",
+      "question_stem": "Which of the following is an INTRA-MURAL cause of obstructive jaundice?",
+      "options": [
+        "Choledochal cyst",
+        "Daughter cyst of a liver hydatid",
+        "Carcinoma of the head of the pancreas",
+        "CBD stone",
+        "Periampullary carcinoma"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "كيسة القناة الجامعة الخلقية سبب داخل جدار القناة، بينما الكيسة الابنة للهيداتيد والحصاة داخل تجويف القناة، وسرطان رأس البنكرياس والورم حول الأمبولة أسباب خارج التجويف تضغط القناة من خارجها.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [1, 2, 3]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m06",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c02",
+      "question_stem": "A 22-year-old man is noticed to be mildly jaundiced during examination stress and fasting; the jaundice has come and gone for years. Total bilirubin 2.4 mg/dl with unconjugated predominance, normal alkaline phosphatase and normal ALT/AST; urine bilirubin negative. What is the most likely diagnosis?",
+      "options": [
+        "Gilbert's syndrome",
+        "Dubin-Johnson syndrome",
+        "Choledocholithiasis",
+        "Carcinoma of the head of the pancreas",
+        "Rotor's syndrome"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يرقان خفيف متقطع يزداد مع الصيام والتوتر مع فرط بيليروبن غير مقترن وإنزيمات طبيعية وبول سليم = متلازمة جيلبرت، وهي من عمود نقص النقل أو الاقتران وحالتها طبية حميدة. دوبين-جونسون وروتر يرفعان الشق المقترن، والحصاة وسرطان رأس البنكرياس يسببان يرقانًا مقترنًا انسداديًا مع فوسفاتاز قلوي مرتفع وبول داكن.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [1]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m07",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c05",
+      "question_stem": "Which statement about MRCP in obstructive jaundice is correct according to the lecture?",
+      "options": [
+        "It is diagnostic and confirmative, showing a dilated CBD and CHD plus the cause of obstruction, commonly a stone",
+        "It is only a screening tool that never confirms the cause",
+        "It requires cannulation of the ampulla like ERCP",
+        "It replaces ultrasound as the first-line test",
+        "It is contraindicated when the CBD is dilated"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "MRCP فحص تشخيصي وتأكيدي غير باضع يُظهر توسع القناة الجامعة والكبدية مع سبب الانسداد مثل الحصاة الشائعة؛ لا يحتاج قثطرة الأمبولة كـERCP، ويبقى بعد الأمواج فوق الصوتية الفحص الأول، وليس له أي مضادة استطباب عند توسع القناة.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m08",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c06",
+      "question_stem": "A 58-year-old man with obstructive jaundice from a CBD stone has INR 2.1 and scattered bruises. He is scheduled for ERCP. What must be done before the procedure?",
+      "options": [
+        "Parenteral vitamin K to correct the coagulation defect",
+        "Oral warfarin to thin the blood",
+        "Nothing; the INR will normalize after ERCP",
+        "Platelet transfusion",
+        "Long-term fresh frozen plasma for life"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "انسداد الصفراء عن الأمعاء يمنع امتصاص فيتامين K الدهني فيطول INR وتظهر الكدمات؛ يعطى فيتامين K حقنيًا قبل ERCP أو الجراحة لتصحيح عيوب التخثر. الوارفارن يزيد الخطر، والانتظار حتى بعد ERCP خطر نزفي، ونقل الصفيحات لا يعالج علة التخثر المعتمدة على فيتامين K، والبلازما الطازجة للحالات النازفة أو الإسعافية فقط.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [0]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m09",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "question_stem": "A 50-year-old woman with a proven CBD stone undergoes two failed ERCP attempts (failed cannulation). She is stable. What is the next step in her definitive treatment?",
+      "options": [
+        "Surgery: supraduodenal choledochotomy with stone removal (CBD exploration)",
+        "Laparoscopic cholecystectomy alone",
+        "Whipple pancreaticoduodenectomy",
+        "Triple bypass surgery",
+        "Conservative treatment with repeat LFTs"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "عند فشل ERCP ننتقل إلى الجراحة: فتح القناة الجامعة فوق الاثني عشر لاستخراج الحصاة (استكشاف القناة) أو قطع المصرة عبر الاثني عشر، ثم استئصال المرارة بالتنظير لاحقًا لمنع النكس. استئصال المرارة وحده لا يعالج حصاة القناة الجامعة، ووايبل والتحويل الثلاثي لعلاج الأورام، والانتظار غير مقبول مع قناة مسدودة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ERCP first; if it fails, the duct must still be cleared.",
+        "The lecture names two surgical options for a failed ERCP."
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m10",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "question_stem": "A 67-year-old man with unresectable carcinoma of the head of the pancreas (multiple liver metastases) develops deepening jaundice with intractable vomiting from duodenal obstruction. Which palliation fits him best?",
+      "options": [
+        "Triple bypass surgery (biliary and gastric bypass on a Roux-en-Y loop)",
+        "Whipple pancreaticoduodenectomy",
+        "ERCP stenting alone",
+        "Chemo-radiation alone",
+        "Vitamin K and observation"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "سرطان غير قابل للاستئصال مع انسداد صفراوي وانسداد عفجي (إقياء) يستدعي التحويل الثلاثي التلطيفي: تحويل الصفراء حول القناة المسدودة وتحويل الغذاء من المعدة إلى الأمعاء متجاوزًا العفج بحلقة روكس-إن-واي مع بقاء الورم في مكانه. عملية وايبل تخص الحالات القابلة للاستئصال فقط، والدعامة وحدها لا تحل الانسداد العفجي، والمعالجة الكيميائية الإشعاعية ليست بديلًا عن التلطيف الميكانيكي هنا، والمتابعة وحدها تترك المريض يرقانيًا نازفًا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Two obstructions: bile duct and duodenum.",
+        "Palliative surgery for unresectable pancreatic head cancer is the triple bypass."
+      ],
+      "focus_sections": [1, 3]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m11",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c07",
+      "question_stem": "In inoperable cholangiocarcinoma where palliative surgery is not feasible or indicated, what is the correct drainage and treatment ladder?",
+      "options": [
+        "Endoscopic stenting by ERCP first; if ERCP fails then PTC; then chemo-radiation; very advanced cases continue in supportive care",
+        "PTC first, then ERCP if PTC fails",
+        "Immediate chemo-radiation without drainage",
+        "Whipple operation",
+        "Observation with repeat LFTs"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "سلم سرطان القناة غير القابل للجراحة: تصريف بدعامة داخلية عبر ERCP أولًا، وعند فشله نلجأ إلى PTC عبر الجلد كما في بعض حالات كولانجيوكارسينوما، ثم المعالجة الكيميائية الإشعاعية، والحالات المتقدمة جدًا تستمر على الرعاية الداعمة. الاستئصال مع مفاغرة كبدية-صائمية يخص الحالات القابلة للجراحة فقط، وترك المريض بلا تصريف يعرضه للكوليستاز والحكة والقصور الكبدي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [2]
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_m12",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "concept_id": "surg_L6_obstructive_jaundice_c03",
+      "question_stem": "A 3-week-old neonate has had progressively deepening jaundice since the second week of life, with pale clay-colored stools and dark yellow urine; feeding and alertness are normal, and the liver is modestly enlarged. Which obstructive cause from the lecture is most likely?",
+      "options": [
+        "Biliary atresia",
+        "Choledochal cyst",
+        "Cholangiocarcinoma",
+        "CBD stone",
+        "Primary sclerosing cholangitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يرقان وليدي متعمق مع براز فاتح وبول داكن = رتق القنوات الصفراوية، وهو السبب داخل جدار القناة عند الوليد في تصنيف المحاضرة ويتطلب جراحة مبكرة. الكيسة القناية ممكنة لكنها أقل شيوعًا كسبب انسدادي وليدي نموذجي، وسرطان القناة والحصاة نادرة جدًا في هذا العمر، وتصلب القنوات الأولي يخص البالغين ومرضى الأمعاء الالتهابية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [2]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L6_obstructive_jaundice_case01",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Painless Obstructive Jaundice - Carcinoma of the Head of the Pancreas",
+      "order_index": 0,
+      "difficulty": "core",
+      "scenario": "A 64-year-old man is referred to the surgical outpatient clinic with six weeks of painless yellowish discoloration of his skin and eyes, dark tea-colored urine, pale clay-colored stools, and generalized pruritus. He has lost 8 kg. His wife noticed the yellow eyes first. He is a retired teacher, non-diabetic, non-drinker, with no previous surgery and no family history of jaundice.",
+      "vignette": {
+        "age": 64,
+        "sex": "male",
+        "chief_complaint": "Painless progressive jaundice with dark urine and pale stools for 6 weeks",
+        "history": "Pruritus for 4 weeks; 8 kg unintentional weight loss and anorexia; no fever, no abdominal pain, no biliary colic; no nausea, vomiting, hematemesis or melena; normal urine output and fully conscious; no hemolytic disease (no SCA, no thalassemia); no blood transfusion; no previous similar attacks; no previous liver (hydatid) or biliary surgery; no chronic liver or bowel disease; no alcohol; no uncovered sexual contact or recent travel; no drugs (no rifampicin).",
+        "vitals": {
+          "bp": "128/82 mmHg",
+          "hr": "88/min",
+          "rr": "18/min",
+          "temp": "37.0 C",
+          "spo2": "98% room air"
+        },
+        "exam": "Deep icterus of sclerae and mucous membranes confirmed; mild pallor; no dehydration; no bruises; no xanthelasma, spider naevi, gynaecomastia, Dupuytren's contracture or clubbing (no stigmata of chronic liver disease); abdomen soft with a palpable, distended, non-tender gallbladder (Courvoisier's law positive), liver 2 cm below costal margin with smooth surface, no splenomegaly, no ascites, no dilated veins, no palpable mass other than the gallbladder.",
+        "labs": [
+          { "name": "Total serum bilirubin", "value": "12.6 mg/dl", "flag": "critical" },
+          { "name": "Conjugated (direct) bilirubin", "value": "10.9 mg/dl", "flag": "critical" },
+          { "name": "Unconjugated (indirect) bilirubin", "value": "1.7 mg/dl", "flag": "normal" },
+          { "name": "Alkaline phosphatase", "value": "640 U/L", "flag": "high" },
+          { "name": "ALT", "value": "58 U/L", "flag": "high" },
+          { "name": "AST", "value": "52 U/L", "flag": "high" },
+          { "name": "INR", "value": "1.9", "flag": "high" },
+          { "name": "Albumin", "value": "3.1 g/dl", "flag": "low" },
+          { "name": "Hemoglobin", "value": "11.1 g/dl", "flag": "low" },
+          { "name": "White blood cell count", "value": "7.4 x 10^9/L", "flag": "normal" },
+          { "name": "CA 19-9", "value": "412 U/ml", "flag": "high" }
+        ],
+        "imaging": "Abdominal ultrasound: dilated CBD and CHD, distended gallbladder, no gallstones, no hydatid cyst, no splenomegaly. Contrast CT pancreas protocol: 3.5 cm mass in the head of the pancreas with dilated biliary and pancreatic ducts; no distant metastases on staging. MRCP: dilated CBD and CHD with abrupt cut-off of the distal CBD at the pancreatic head."
+      },
+      "steps": [
+        {
+          "id": "surg_L6_obstructive_jaundice_case01_s1",
+          "prompt": "This deeply jaundiced man with INR 1.9 is admitted. What is the correct immediate management?",
+          "options": [
+            "Admission with careful IV fluid and electrolyte balance plus parenteral vitamin K to correct coagulation before any intervention",
+            "Discharge home on oral vitamin K with an outpatient CT appointment",
+            "Proceed directly to Whipple pancreaticoduodenectomy tonight",
+            "Immediate ERCP with sphincterotomy",
+            "Start ursodeoxycholic acid and repeat the LFTs in one week"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "أولوية المريض المستقر: الإدخال للمستشفى مع سوائل وريدية حذرة وتوازن الكهارل وفيتامين K حقنيًا لتصحيح عيوب التخثر قبل أي إجراء باضع؛ ففيتامين K الفموي لا يُمتص لغياب الصفراء عن الأمعاء، والجراحة أو ERCP قبل تصحيح التخثر والإنعاش خطر نزفي، والمتابعة المنزلية غير مقبولة في يرقان انسدادي عميق.",
+          "xp": 10,
+          "hints": [
+            "Absent bile = no vitamin K absorption = correctable coagulopathy.",
+            "Supportive treatment always precedes definitive treatment."
+          ]
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case01_s2",
+          "prompt": "Ultrasound shows dilated ducts. Which investigation confirms the cause and assesses resectability?",
+          "options": [
+            "MRCP plus contrast-enhanced CT of the abdomen (dilated CBD and CHD, level and cause of obstruction, mass and staging)",
+            "Repeat abdominal ultrasound only",
+            "Percutaneous liver biopsy",
+            "HIDA scan",
+            "Diagnostic laparoscopy alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد استقرار المريض نؤكد السبب: MRCP فحص تشخيصي وتأكيدي يُظهر توسع القناة الجامعة والكبدية ومستوى الانسداد، مع CT ببروتوكول البنكرياس بالتباين لتوصيف الكتلة وتقييم الغزو الوعائي والانتشار والقابلية للاستئصال قبل قرار وايبل أو التلطيف. الخزعة الكبدية لليرقان الكبدي الطبي، وHIDA يقيّم المرارة، وتكرار الأمواج وحده لا يحدد القابلية للاستئصال.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case01_s3",
+          "prompt": "Staging shows a resectable carcinoma of the head of the pancreas in this fit 64-year-old. What is the definitive treatment?",
+          "options": [
+            "Curative resection with the Whipple operation (pancreaticoduodenectomy)",
+            "Palliative triple bypass surgery",
+            "Endoscopic ERCP stenting only",
+            "Chemo-radiation alone",
+            "Laparoscopic cholecystectomy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ورم رأس بنكرياس قابل للاستئصال في مريض مناسب = استئصال جذري بعملية وايبل (بنكرياس واثنا عشر) وهي العلاج المُرجّى للشفاء؛ فالتحويل الثلاثي والدعامة تلطيف للحالات غير القابلة، والمعالجة الكيميائية الإشعاعية وحدها ليست علاجًا جذريًا، واستئصال المرارة لا يعالج ورمًا بنكرياسيًا.",
+          "xp": 12
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case01_s4",
+          "prompt": "Suppose staging had shown multiple liver metastases with early duodenal obstruction (vomiting, dilated stomach). Which palliation fits best?",
+          "options": [
+            "Triple bypass surgery: biliary and gastric bypass on a Roux-en-Y jejunal loop",
+            "Whipple pancreaticoduodenectomy",
+            "ERCP stenting alone",
+            "Long-term parenteral nutrition",
+            "Vitamin K alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "انتشار كبدي = غير قابل للاستئصال؛ ومع علامات انسداد عفجي (إقياء وتوسع المعدة) يفك التحويل الثلاثي الانسدادين الصفراوي والمعدي معًا فيحسن اليرقان والإقياء وجودة الحياة، بينما وايبل ممنوع لعدم القابلية، والدعامة وحدها لا تحل الانسداد العفجي، والتغذية الوريدية طويلة الأمد وفيتامين K وحده لا يعالجان الانسدادين.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case01_s5",
+          "prompt": "If he were unfit for any palliative surgery and needed biliary drainage, what is the drainage ladder?",
+          "options": [
+            "Endoscopic stenting by ERCP first; if it fails then PTC; then chemo-radiation; supportive care for very advanced disease",
+            "PTC first, then ERCP if PTC fails",
+            "Immediate chemo-radiation without drainage",
+            "External surgical biliary fistula",
+            "No drainage; observation only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند تعذر الجراحة التلطيفية أو عدم ملاءمتها: التصريف بدعامة داخلية عبر ERCP هو الخط الأول، وعند فشله نلجأ إلى PTC عبر الجلد، ثم المعالجة الكيميائية الإشعاعية، والحالات المتقدمة جدًا تستمر على الرعاية الداعمة؛ والمبدأ العام في كامل شريحة العلاج النهائي: التقدم حسب السيناريو السريري الموجود.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: سرطان رأس البنكرياس مسببًا يرقانًا انسداديًا باهتًا مع قانون كورفوزييه إيجابي. الدروس الأساسية: اليرقان الباهت المتدرج غير المؤلم مع مرارة ممتلئة في مسنّ = ورم خبيث حتى إثبات العكس؛ اعتمد على الأمواج فوق الصوتية ثم MRCP وCT لتحديد السبب والقابلية للاستئصال؛ وابدأ دائمًا بالعلاج الداعم (إدخال، سوائل وريدية حذرة، فيتامين K لتصحيح عيوب التخثر، مضادات حيوية عند علامات الخمج) قبل التدخل النهائي. مصائد الامتحان: البول الداكن لون الشاي مع البراز الفاتح الطيني والفوسفاتاز القلوي المرتفع مع بيليروبن مقترن مرتفع وغير مقترن طبيعي؛ والقابل للاستئصال يعالج بوايبل، وغير القابل بالتحويل الثلاثي، والضعيف بالدعامة عبر ERCP ثم PTC."
+    },
+    {
+      "id": "surg_L6_obstructive_jaundice_case02",
+      "lecture_id": "surg_L6_obstructive_jaundice",
+      "title": "Ascending Cholangitis Complicating Choledocholithiasis",
+      "order_index": 1,
+      "difficulty": "core",
+      "scenario": "A 52-year-old woman is rushed to the emergency department with 24 hours of severe right upper quadrant pain, high fever with shaking chills, and progressive yellowing of her eyes. She has known gallstone disease for three years with previous similar but milder attacks of right upper quadrant pain after fatty meals, never investigated. She looks unwell, diaphoretic and mildly confused about the date.",
+      "vignette": {
+        "age": 52,
+        "sex": "female",
+        "chief_complaint": "RUQ pain, high fever with rigors and jaundice for 24 hours",
+        "history": "Known gallstones for 3 years with previous similar milder attacks of right upper quadrant pain after fatty meals; no previous surgery; no alcohol; no chronic liver or bowel disease; no hemolytic disease; no transfusion; no recent travel or uncovered sexual contact; no drugs; urine dark tea-colored for 2 days and stool becoming pale.",
+        "vitals": {
+          "bp": "100/65 mmHg",
+          "hr": "118/min",
+          "rr": "22/min",
+          "temp": "39.2 C",
+          "spo2": "95% room air"
+        },
+        "exam": "Ill-looking, diaphoretic, mildly confused; deep icterus of sclerae and mucous membranes confirmed; no pallor; mild dehydration; no bruises; no stigmata of chronic liver disease (no xanthelasma, spider naevi, gynaecomastia, Dupuytren's or clubbing); abdomen: right upper quadrant tenderness with voluntary guarding, positive Murphy sign, palpable tender liver edge 2 cm, gallbladder NOT palpable (Courvoisier negative), no splenomegaly, no ascites.",
+        "labs": [
+          { "name": "White blood cell count", "value": "18.6 x 10^9/L", "flag": "high" },
+          { "name": "Total serum bilirubin", "value": "8.4 mg/dl", "flag": "critical" },
+          { "name": "Conjugated (direct) bilirubin", "value": "6.9 mg/dl", "flag": "critical" },
+          { "name": "Unconjugated (indirect) bilirubin", "value": "1.5 mg/dl", "flag": "normal" },
+          { "name": "Alkaline phosphatase", "value": "520 U/L", "flag": "high" },
+          { "name": "ALT", "value": "180 U/L", "flag": "high" },
+          { "name": "AST", "value": "165 U/L", "flag": "high" },
+          { "name": "INR", "value": "1.6", "flag": "high" },
+          { "name": "Serum creatinine", "value": "1.6 mg/dl", "flag": "high" },
+          { "name": "Serum lactate", "value": "3.2 mmol/L", "flag": "high" },
+          { "name": "Serum amylase", "value": "70 U/L", "flag": "normal" }
+        ],
+        "imaging": "Bedside ultrasound: dilated CBD (10 mm) containing an echogenic focus with posterior acoustic shadowing (CBD stone), multiple gallbladder stones in a thickened, contracted gallbladder, no splenomegaly, no free fluid."
+      },
+      "steps": [
+        {
+          "id": "surg_L6_obstructive_jaundice_case02_s1",
+          "prompt": "What is the immediate management priority for this unstable jaundiced woman?",
+          "options": [
+            "ABC resuscitation: IV access, careful IV fluids, blood cultures then IV antibiotics, and vitamin K",
+            "Immediate ERCP sphincterotomy before resuscitation",
+            "Emergency laparotomy and CBD exploration",
+            "Oral antibiotics and discharge home",
+            "PTC drainage as the first step"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريضة مصابة بالتهاب القنوات الصفراوية الصاعد مع إنتان مبكر (حمى ورجفة وتسرع وهبوط ضغط وارتفاع لاكتات)؛ الأولوية الإنعاش: قرب وريدي وسوائل وريدية حذرة (وقاية من المتلازمة الكبدية الكلوية)، زرع دم ثم مضادات حيوية وريدية واسعة، وفيتامين K لأن INR مرتفع. ERCP ضروري لكن بعد الاستقرار، والجراحة تحتفظ بها عند فشل ERCP، والعلاج الفموي غير كافٍ، وPTC ليس خطًا أولًا.",
+          "xp": 12,
+          "hints": [
+            "Fever + rigors + jaundice + RUQ pain = ascending cholangitis.",
+            "Resuscitate first; the endoscope follows the resuscitation, not the reverse."
+          ]
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case02_s2",
+          "prompt": "After 6 hours of resuscitation she is stable. US shows a dilated CBD with a stone. What is the next definitive step?",
+          "options": [
+            "Therapeutic ERCP: sphincterotomy with stone extraction (plus stent if needed)",
+            "Laparoscopic cholecystectomy alone",
+            "MRCP then discharge home",
+            "Elective open cholecystectomy in 6 weeks",
+            "Conservative treatment with repeat LFTs"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "ERCP هو الخيار الأول لعلاج حصاة القناة الجامعة: قطع المصرة واستخراج الحصاة مع دعامة عند الحاجة، وهو في الوقت نفسه تشخيصي وعلاجي؛ MRCP تشخيصية وتأكيدية وقد تسبق التدخل، أما استئصال المرارة وحده فلا يفرغ القناة المسدودة، والانتظار 6 أسابيع خطر في قناة ملتهبة، والمتابعة المحافظة غير مقبولة.",
+          "xp": 10
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case02_s3",
+          "prompt": "ERCP fails twice (failed cannulation). She remains septic with a dilated, obstructed CBD. What now?",
+          "options": [
+            "Surgery: supraduodenal choledochotomy with stone removal (CBD exploration) or transduodenal sphincterotomy and extraction",
+            "Wait 48 hours and repeat ERCP in a septic patient",
+            "Whipple operation",
+            "Triple bypass surgery",
+            "Long-term antibiotics alone"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند فشل ERCP مرتين ننتقل إلى الجراحة: فتح القناة الجامعة فوق الاثني عشر واستخراج الحصاة (استكشاف القناة الجامعة) أو قطع المصرة عبر الاثني عشر لحصاة قاصية، مع تصريف كافٍ؛ فتأخير التصريف 48 ساعة في مريضة إنتانية يرفع الاختطار، ووايبل والتحويل الثلاثي لعلاج الأورام، والمضادات الحيوية وحدها لا تفرغ القناة المسدودة.",
+          "xp": 12
+        },
+        {
+          "id": "surg_L6_obstructive_jaundice_case02_s4",
+          "prompt": "The duct is cleared and the patient makes a full recovery. What prevents recurrent obstruction?",
+          "options": [
+            "Laparoscopic cholecystectomy during the same admission or soon after",
+            "Lifelong ERCP stenting",
+            "Ursodeoxycholic acid",
+            "Low-fat diet only",
+            "Annual ultrasound follow-up only"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بعد إفراغ القناة الجامعة يجب استئصال المرارة بالتنظير (في نفس القبول أو بعده قريبًا) لإزالة مستودع الحصى ومنع النكس والتهاب المرارة الحاد؛ فالدعامة طويلة الأمد واليورسوديول والحمية والمتابعة السنوية وحدها لا تمنع تشكل حصيات جديدة من مرارة متحصية.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب القنوات الصفراوية الصاعد على حصاة في القناة الجامعة عند مريضة معروفة بداء الحصيات. الدروس الأساسية: حمى عالية مع رجفة ويرقان وأم ربع علوي أيمن = التهاب قنوات صفراوية صاعد حتى إثبات العكس؛ والتسلسل الصحيح إنعاش ودعم أولًا (سوائل وريدية حذرة، مضادات حيوية وريدية بعد زرع الدم، فيتامين K لتصحيح عيوب التخثر) ثم ERCP العلاجي للتصريف واستخراج الحصاة، ثم استئصال المرارة بالتنظير لمنع النكس؛ وعند فشل ERCP تُجرى الجراحة (فتح القناة فوق الاثني عشر أو قطع المصرة عبر الاثني عشر). مصائد الامتحان: لا ترسل مريضًا غير مستقر إلى غرفة التنظير، ولا تتوقف بعد إفراغ القناة دون استئصال المرارة، وتذكر أن المرارة غير المجسوسة هنا تجعل قانون كورفوزييه سلبيًا متماشيًا مع الحصاة."
+    }
+  ]
+}

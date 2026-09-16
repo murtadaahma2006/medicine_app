@@ -1,0 +1,858 @@
+{
+"schema_version": "2.0.0",
+"lecture": {
+"id": "L3_gastritis",
+"specialty": "internal_medicine",
+"title": "Inflammatory Diseases of the Stomach: Gastritis",
+"module": "gastroenterology",
+"system": "gastrointestinal",
+"source": {"file_name": "L3 Gastritis org.pdf", "page_count": 25},
+"tags": ["gastritis", "gastropathy", "Helicobacter pylori", "acute gastritis", "chronic gastritis", "NSAID gastropathy", "pernicious anemia", "Menetrier disease", "stress ulcer", "gastric premalignant conditions"],
+"order_index": 2,
+"golden_tip": [
+"EXAM TRAP: gastritis = inflammation + mucosal injury and is a HISTOLOGICAL diagnosis that needs biopsy; gastropathy = epithelial damage/regeneration WITHOUT inflammation, diagnosed on gross endoscopic or radiologic appearance alone.",
+"Histology discriminator: acute gastritis = NEUTROPHILIC infiltrate; chronic gastritis = MONONUCLEAR infiltrate (lymphocytes + macrophages). One line, one mark.",
+"Type A (autoimmune, anti-parietal-cell antibodies, achlorhydria, hypergastrinemia, pernicious anemia, premalignant) vs Type B (H. pylori, antrum-predominant, prone to peptic ulcer; pangastritis goes metaplasia, dysplasia, then cancer)."
+]
+},
+"concepts": [
+{
+"id": "L3_gastritis_c1",
+"lecture_id": "L3_gastritis",
+"title": "Gastritis - Learning Objectives, Definition and the Gastritis vs Gastropathy Distinction",
+"summary_ar": "التهاب المعدة هو التهاب مترافق مع أذية المخاطية وهو تشخيص نسيجي يتطلب الخزعة، بينما اعتلال المعدة يعني أذية وتجدداً للخلايا الظهارية دون التهاب ويكفي فيه المنظر العياني بالتنظير أو التصوير الشعاعي. تغطي المحاضرة ستة أهداف: التعريف، الفيزيولوجيا المرضية لكل نمط، الأسباب، الأنواع، المراحل، والمظاهر السريرية.",
+"sections": [
+{
+"heading": "Lecture Scope and Learning Objectives",
+"body_text": "This lecture deals with the **inflammatory diseases of the stomach - GASTRITIS** - and is organized around six learning objectives:\n- **LO1: Definition of gastritis** (and how it differs from gastropathy).\n- **LO2: Pathophysiology of each type of gastritis** (the attack-defense balance of the gastric mucosa).\n- **LO3: Etiology of gastritis** (increased aggressive factors versus weakened defensive factors).\n- **LO4: Types of gastritis** (acute vs chronic; non-specific vs rare specific forms; clinical Types A and B, reflux, lymphocytic and hypertrophic gastritis).\n- **LO5: Staging of each type of gastritis** (acute superficial gastritis, acute erosive gastritis, acute gastric ulceration).\n- **LO6: Clinical features of gastritis** (acute and chronic presentations).\n\nStudying tip: keep this objective map in mind - every exam question on gastritis belongs to one of these six areas.",
+"key_points": [
+"The lecture objectives span definition, pathophysiology, etiology, types, staging and clinical features of gastritis.",
+"Gastritis is not one disease but a group of inflammatory entities of the gastric mucosa with different causes and consequences."
+]
+},
+{
+"heading": "Definition of Gastritis",
+"body_text": "- The term **gastritis** is used to denote **inflammation associated with mucosal injury** of the stomach.\n- Gastritis is mostly a **histological term** - it **needs biopsy to be confirmed**. Endoscopic appearance alone is not enough to declare inflammatory gastritis; mucosal biopsies must be taken and read by the pathologist.\n- Because it is defined histologically, gastritis may be present with minimal endoscopic findings, and vice versa - endoscopic 'gastritis' without histologic inflammation is not gastritis.\n- Gastritis is a group of diseases, not a single entity: different etiologies (NSAIDs/aspirin, *Helicobacter pylori*, alcohol, severe stress, autoimmunity, bile reflux, viruses) produce different histologic patterns, different clinical pictures and different risks (peptic ulcer, hemorrhage, cancer).",
+"key_points": [
+"Gastritis = inflammation associated with mucosal injury.",
+"It is mostly a HISTOLOGICAL term - biopsy is required for confirmation.",
+"Endoscopic appearance alone cannot confirm inflammatory gastritis."
+]
+},
+{
+"heading": "Gastropathy - Injury Without Inflammation",
+"body_text": "- **Epithelial cell damage and regeneration WITHOUT associated inflammation** is properly referred to as **'gastropathy'**.\n- Gastropathy may be diagnosed **without histological evidence** - just according to the **gross appearance in endoscopy or radiology** (e.g. hyperemia, erosions, edema of the mucosa, abnormal fold pattern).\n- Practical contrast: gastritis = biopsy-proven mucosal inflammation | gastropathy = macroscopic injury pattern with no inflammatory infiltrate on microscopy.\n- Clinically the two overlap (NSAID injury, for example, can produce both patterns), but for the exam the single discriminator is **presence of inflammation on histology**.\n- Endoscopy image in the lecture: acute gastritis viewed endoscopically shows multiple scattered small pale/whitish lesions (erosions) on an erythematous, inflamed background with an irregular surface and spots of exudate or shallow ulceration.",
+"key_points": [
+"Gastropathy = epithelial damage + regeneration WITHOUT inflammation.",
+"Gastropathy can be labeled from gross endoscopic/radiologic appearance, no histology needed.",
+"Inflammation on microscopy is THE line separating gastritis from gastropathy."
+],
+"check": {
+"prompt": "At endoscopy the gastric mucosa shows erosions and hyperemia. Biopsy reports epithelial cell damage and regeneration with NO inflammatory infiltrate. Which term is correct?",
+"options": ["Gastritis", "Gastropathy", "Acute gastritis", "Chronic gastritis", "Peptic ulcer disease"],
+"correct_index": 1,
+"explanation_ar": "لا يوجد ارتشاح التهابي نسيجي بل أذية وتجدد للخلايا الظهارية فقط، وهذا هو التعريف الدقيق لاعتلال المعدة Gastropathy، أما التهاب المعدة فيتطلب وجود التهاب في الخزعة النسيجية."
+}
+}
+],
+"key_terms": [
+{"term": "Gastritis", "definition_ar": "التهاب المعدة: التهاب مترافق مع أذية المخاطية، تشخيصه نسيجي ويتطلب الخزعة."},
+{"term": "Gastropathy", "definition_ar": "اعتلال المعدة: أذية وتجدد للخلايا الظهارية دون التهاب، ويشخص بالمنظر العياني في التنظير أو التصوير الشعاعي."},
+{"term": "Mucosal injury", "definition_ar": "أذية المخاطية: تلف يصيب بطانة المعدة نتيجة عوامل هجومية أو ضعف في الدفاعات."},
+{"term": "Biopsy", "definition_ar": "الخزعة: أخذ عينة نسيجية من مخاطية المعدة لتأكيد التهاب المعدة نسيجياً."}
+],
+"difficulty": "core",
+"order_index": 0
+},
+{
+"id": "L3_gastritis_c2",
+"lecture_id": "L3_gastritis",
+"title": "Pathophysiology - The Attack-Defense Balance of the Gastric Mucosa",
+"summary_ar": "ينشأ التهاب المعدة والقرحة الهضمية من اختلال التوازن بين العوامل الهجومية (الملوية البوابية، حمض الهيدروكلوريك، الببسين، مضادات الالتهاب غير الستيروئيدية) والعوامل الدفاعية (البيكربونات، البروستاغلاندينات، المخاط، جريان الدم المخاطي). التوازن يعطي مخاطية سليمة، والاختلال لصالح الهجوم يعطي التهاباً وتآكلات ثم قرحة هضمية. ويمكن تصور الأسباب في ثلاثة سيناريوهات: حاجز طبيعي، هجوم متزايد، أو دفاع ضعيف.",
+"sections": [
+{
+"heading": "The Balance Scale - Hostile vs Protective Factors",
+"body_text": "Gastritis (and peptic injury in general) results from an **imbalance between aggressive (hostile) factors and defensive (protective) factors** of the gastric mucosa. The lecture illustrates this as a two-pan balance scale:\n\n**Hostile / aggressive factors (left pan):**\n- ***Helicobacter pylori***\n- **Gastric acid (HCl)**\n- **Pepsin**\n- **NSAIDs**\n\n**Protective / defensive factors (right pan):**\n- **Bicarbonate** secretion\n- **Prostaglandins**\n- **Mucus production**\n- **Blood flow to the mucosa**\n\n**Outcome of the balance (two scenarios in the diagram):**\n- **Scenario A - balanced scale:** defense matches attack → smooth, intact surface → **healthy mucosa**.\n- **Scenario B - imbalanced scale tilted toward hostile factors (heavier left pan):** attack outweighs defense → eroded, crater-like lesion → **peptic ulcer formation**.\n\nIn words: when mucosal defense equals or exceeds luminal aggression the mucosa stays healthy; when aggression outweighs defense, inflammation, erosions and finally ulceration develop.",
+"key_points": [
+"Aggressive (hostile) factors: H. pylori, gastric acid (HCl), pepsin, NSAIDs.",
+"Defensive (protective) factors: bicarbonate, prostaglandins, mucus production, blood flow to the mucosa.",
+"Balance → healthy mucosa; imbalance (attack over defense) → erosions → peptic ulcer formation."
+]
+},
+{
+"heading": "Three Etiopathogenetic Scenarios - Normal, Increased Attack, Weak Defense",
+"body_text": "The etiology of gastritis is presented as **three schematic scenarios** of the mucosal barrier (drawn as a wall):\n\n- **A) Normal:** a robust, intact gastric mucosal barrier - small luminal particles (acid/pepsin) approach the wall but are effectively **blocked and deflected**, unable to penetrate the defense. No injury occurs.\n- **B) Increased attack:** a wall of normal strength overwhelmed by excessive aggressive forces - **HCl, pepsin and NSAIDs** strike the wall with great force, causing structural damage, crumbling and break-through of the defense.\n- **C) Weak defense:** a broken, dilapidated barrier with multiple defects (a fence with missing planks and gaps) - luminal particles pass **easily through the holes**. The causes listed under weak defense: ***Helicobacter pylori*, stress, drugs, smoking**.\n\n**Take-home message:** gastritis arises EITHER because aggressive factors increase (HCl, pepsin, NSAIDs) OR because defensive factors weaken (H. pylori, stress, drugs, smoking) - a dual mechanism that explains therapy (reduce attack and/or strengthen defense) and answers most etiology questions.\n\n*Note:* H. pylori appears among the hostile factors on the balance scale (page 4) and among the weak-defense causes in the etiology scheme (page 5) - it both attacks the mucosa and undermines the barrier.",
+"key_points": [
+"Scenario A (normal): intact barrier deflects acid and pepsin - no injury.",
+"Scenario B (increased attack): HCl, pepsin, NSAIDs overwhelm a normal barrier.",
+"Scenario C (weak defense): H. pylori, stress, drugs, smoking create gaps in a weakened barrier.",
+"Gastritis = increased attack OR weak defense (often both together)."
+],
+"check": {
+"prompt": "In the etiology scheme of this lecture, under which mechanism are H. pylori, stress, drugs and smoking classified?",
+"options": ["Increased aggressive factors", "Weak defensive factors", "Normal mucosal barrier", "Both increased attack and normal defense", "None - they cause only gastropathy"],
+"correct_index": 1,
+"explanation_ar": "بحسب مخطط المحاضرة تُصنّف الملوية البوابية والشدة والأدوية والتدخين ضمن ضعف عوامل الدفاع، بينما حمض الهيدروكلوريك والببسين ومضادات الالتهاب غير الستيروئيدية تمثل زيادة عوامل الهجوم."
+}
+}
+],
+"key_terms": [
+{"term": "Aggressive factors", "definition_ar": "العوامل الهجومية: حمض المعدة والببسين ومضادات الالتهاب غير الستيروئيدية والملوية البوابية التي تهاجم المخاطية."},
+{"term": "Defensive factors", "definition_ar": "العوامل الدفاعية: البيكربونات والبروستاغلاندينات وإفراز المخاط وجريان الدم المخاطي."},
+{"term": "Mucosal barrier", "definition_ar": "الحاجز المخاطي: جدار واقٍ يمنع نفوذ الحمض والببسين إلى ظهارة المعدة."},
+{"term": "Peptic ulcer formation", "definition_ar": "تشكل القرحة الهضمية: النتيجة النهائية لاختلال التوازن لصالح العوامل الهجومية."}
+],
+"difficulty": "core",
+"order_index": 1
+},
+{
+"id": "L3_gastritis_c3",
+"lecture_id": "L3_gastritis",
+"title": "Acute Gastritis - Definition, Classification and Full Etiology",
+"summary_ar": "التهاب المعدة الحاد هو التهاب قصير الأمد بارتشاح عدلات، وكثيراً ما يكون تنآكلياً ونزفياً. أسبابه الشائعة: الأسبرين ومضادات الالتهاب غير الستيروئيدية (تثبط COX-1 فتضيع البروستاغلاندينات الحامية)، الإصابة الأولية بالملوية البوابية، الكحول، أدوية كالمستحضرات الحديدية، الشديدة الفسيولوجية (حروق، فشل متعدد الأعضاء، رض دماغي)، قلس الصفراء بعد جراحة المعدة، والفيروسات (CMV والحلأ البسيط عند مرضى الإيدز). التدخين الثقيل يضر المخاطية بست آليات، والتهاب معدة الشدة لا يُكتشف غالباً إلا عند بدء النزف ولذلك الوقاية أفضل من العلاج، وكثير من الحالات مجهولة السبب.",
+"sections": [
+{
+"heading": "Classification of Gastritis - Acute vs Chronic",
+"body_text": "The master classification of the lecture divides gastritis into two main types:\n\n- **Gastritis**\n  - **Acute** - short-term inflammation with a **neutrophilic infiltrate** (definition, causes, staging and clinical features covered in this and the next concept).\n  - **Chronic** - long-standing form with a **mononuclear cell infiltrate** (lymphocytes and macrophages); subdivided into chronic non-specific gastritis (H. pylori, autoimmune/pernicious anemia, post-gastrectomy) and rare chronic 'specific' forms, then discussed clinically as Type A, Type B, reflux and lymphocytic gastritis, plus hypertrophic gastritis (Menetrier's disease).\n\nThis acute/chronic split is primarily **histologic and temporal**, not merely symptomatic - a favourite one-line exam discriminator: **acute = neutrophils, chronic = mononuclear cells**.",
+"key_points": [
+"Gastritis is first classified into ACUTE and CHRONIC.",
+"Acute = short term + neutrophilic infiltrate; chronic = long standing + mononuclear infiltrate (lymphocytes and macrophages)."
+]
+},
+{
+"heading": "Definition of Acute Gastritis",
+"body_text": "**Acute gastritis refers to short-term inflammation with a neutrophilic infiltrate.**\n\n- **Time course:** short term, abrupt onset.\n- **Histology:** **neutrophils** (acute inflammatory cells) infiltrating the gastric mucosa - this is the defining histologic feature separating it from chronic gastritis.\n- **Endoscopic appearance (lecture image):** multiple, scattered, small pale/whitish lesions or **erosions** against a background of erythematous (reddened), inflamed tissue; the mucosal surface looks irregular with visible spots of exudate or shallow ulceration.\n- Acute gastritis is **often erosive and hemorrhagic** - most of its causes (NSAIDs, alcohol, stress) produce mucosal breaks that can bleed, which is why hemorrhage dominates its clinical picture.",
+"key_points": [
+"Acute gastritis = short-term inflammation + neutrophilic infiltrate.",
+"It is often erosive and hemorrhagic.",
+"Endoscopy: scattered small whitish erosions on an erythematous background."
+]
+},
+{
+"heading": "Common Causes of Acute Gastritis (Often Erosive and Hemorrhagic)",
+"body_text": "The lecture lists the common causes of acute gastritis (often erosive and hemorrhagic):\n- **Aspirin, NSAIDs** - the classic offenders (mechanism below).\n- ***Helicobacter pylori* (initial infection)** - the acute phase of primary H. pylori infection can present as acute gastritis (which later evolves into chronic gastritis).\n- **Alcohol** - direct mucosal toxin after excessive consumption.\n- **Other drugs, e.g. iron preparations** - direct mucosal irritation.\n- **Severe physiological stress** - e.g. **burns, multi-organ failure, central nervous system trauma** (the setting of stress gastritis in the seriously ill).\n- **Bile reflux** - e.g. **following gastric surgery** (chemical injury from bile salts on the operated stomach).\n- **Viral infections** - e.g. **CMV, herpes simplex virus in HIV/AIDS** (opportunistic viral gastritis in the immunocompromised).\n\nMnemonic-friendly grouping: **drugs** (aspirin/NSAIDs, iron, alcohol as a chemical), **infections** (H. pylori initial, CMV, HSV in HIV/AIDS), **stress states** (burns, multi-organ failure, CNS trauma), and **reflux of bile** (post gastric surgery).",
+"key_points": [
+"Aspirin and NSAIDs are the commonest drug causes of acute erosive gastritis.",
+"H. pylori INITIAL infection causes acute gastritis (later chronicity).",
+"Other causes: alcohol, iron preparations, severe physiological stress (burns, multi-organ failure, CNS trauma), bile reflux after gastric surgery, viral infections (CMV, HSV in HIV/AIDS)."
+]
+},
+{
+"heading": "NSAIDs and Aspirin - the Arachidonic Acid Pathway",
+"body_text": "**Etiology note:** aspirin and NSAIDs (and the other causes) are **frequently associated with each other** - multiple insults often coexist in the same patient.\n\nThe mechanism of NSAID-induced gastric injury follows the **arachidonic acid pathway** (lecture flowchart):\n\n- **ARACHIDONIC ACID** (top of the pathway)\n- → **Cyclo-oxygenase 1 (COX-1)** - labeled **constitutive** (normally and always present) → produces **prostaglandins that PROTECT the gastric mucosa** (they maintain mucus, bicarbonate and mucosal blood flow).\n- → **Cyclo-oxygenase 2 (COX-2)** - labeled **inducible** (upregulated by injury/inflammation) → produces **prostaglandins that mediate pain, inflammation and fever** (these are the targets of the anti-inflammatory effect).\n- **NSAIDs act as an INHIBITORY arrow on the pathway** - they block BOTH cyclo-oxygenases: inhibiting **COX-2** gives the desired analgesic/anti-inflammatory/antipyretic effect, while inhibiting **COX-1** strips the mucosa of its protective prostaglandins → gastritis, erosions and ulcers.\n\nEndoscopic image of the lecture: NSAID-injured mucosa with multiple irregular whitish-yellowish erosions/ulcerations with surrounding erythema on a hyperemic, inflamed background.",
+"key_points": [
+"COX-1 = constitutive → protective gastric prostaglandins; COX-2 = inducible → pain/inflammation/fever prostaglandins.",
+"NSAIDs inhibit BOTH COX enzymes - therapeutic benefit comes from COX-2, gastric injury from COX-1 inhibition.",
+"Aspirin and NSAID causes frequently coexist with other gastritis causes."
+],
+"check": {
+"prompt": "Why do NSAIDs cause acute gastric mucosal injury despite being anti-inflammatory drugs?",
+"options": ["They inhibit COX-1, removing protective mucosal prostaglandins", "They directly stimulate gastrin release from G cells", "They increase vagal acid stimulation", "They only cause bile reflux", "They destroy parietal cells directly"],
+"correct_index": 0,
+"explanation_ar": "تثبط مضادات الالتهاب غير الستيروئيدية إنزيم COX-1 الدائم التواجد والذي ينتج البروستاغلاندينات الحامية للمخاطية (مخاط، بيكربونات، جريان دم)، فيفقد الجدار المخاطي وقايته ويتآكل، ولا علاقة لها بالغاسترين ولا بالعصب المبهم ولا بخلايا الجدار القاعدية."
+}
+},
+{
+"heading": "Heavy Smoking - Six Mechanisms of Mucosal Injury",
+"body_text": "**Heavy smoking** is listed among the causes that weaken mucosal defense, acting through **six mechanisms** (all six are examinable):\n- **Stimulates gastric acid secretion.**\n- **Stimulates bile salt reflux.**\n- **Causes alteration in mucosal blood flow.**\n- **Decreases mucus secretion.**\n- **Reduces prostaglandin synthesis.**\n- **Decreases pancreatic bicarbonate secretion.**\n\n**Net effect:** smoking simultaneously INCREASES attack (more acid, more bile salt reflux) and DECREASES defense (less mucus, less prostaglandin, less bicarbonate, disturbed mucosal blood flow) - a double hit on the mucosal balance. This is why smoking cessation is part of the prevention of gastritis and peptic ulcer disease.",
+"key_points": [
+"Smoking raises attack: more acid secretion, more bile salt reflux.",
+"Smoking weakens defense: less mucus, less prostaglandin synthesis, less pancreatic bicarbonate, altered mucosal blood flow.",
+"Six mechanisms - know them as a list."
+]
+},
+{
+"heading": "Stress Gastritis in the Systemically Ill Patient",
+"body_text": "Acute stress-related gastritis (stress ulceration / acute hemorrhagic gastritis) occurs in:\n- **Systemic infection and seriously ill patients.**\n- **Severe stress** - e.g. **trauma, burns, the multiple injured patient.**\n- **Surgery.**\n- **Ischemia.**\n\nKey clinical truths from the lecture:\n- **Unrecognized until bleeding started** - in the ICU patient the mucosal injury is silent; the first sign is often hemorrhage (coffee-ground aspirate, hematemesis, melena, dropping hemoglobin).\n- **Difficult to treat** once bleeding has started.\n- **Better to prevent?** - the lecture's rhetorical take-home: **prevention (stress ulcer prophylaxis) is superior to treating established bleeding**.\n\nEndoscopic image of the lecture: multiple diffuse superficial erosions with whitish exudates on an erythematous, friable mucosa - the characteristic appearance of stress-induced gastritis (stress ulceration / acute hemorrhagic gastritis).",
+"key_points": [
+"Stress gastritis settings: systemic infection/seriously ill, severe stress (trauma, burns, multiple injuries), surgery, ischemia.",
+"It is usually UNRECOGNIZED until bleeding starts.",
+"It is difficult to treat - prevention is better."
+]
+},
+{
+"heading": "Alcohol and Idiopathic Acute Gastritis",
+"body_text": "- **Excessive alcohol consumption** - a direct chemical insult to the gastric mucosa producing acute (often erosive) gastritis, typically after binge drinking.\n- **Often, idiopathic** - a substantial proportion of acute gastritis has **no identifiable cause** despite full evaluation (no drug, no H. pylori, no alcohol, no stressor). Keep idiopathic gastritis in mind for vignettes that deliberately give no etiology.",
+"key_points": [
+"Excessive alcohol consumption is a direct cause of acute gastritis.",
+"Many cases of acute gastritis are idiopathic (no cause found)."
+]
+}
+],
+"key_terms": [
+{"term": "Neutrophilic infiltrate", "definition_ar": "ارتشاح العدلات: العلامة النسيجية للتهاب المعدة الحاد."},
+{"term": "COX-1 (constitutive)", "definition_ar": "إنزيم السيكلوأوكسيجيناز-1: دائم التواجد، ينتج بروستاغلاندينات حامية لمخاطية المعدة."},
+{"term": "COX-2 (inducible)", "definition_ar": "إنزيم السيكلوأوكسيجيناز-2: مُستحث بالالتهاب، ينتج بروستاغلاندينات الألم والالتهاب والحمى."},
+{"term": "Stress gastritis", "definition_ar": "التهاب معدة الشدة: يصيب المرضى الخطيرين (حروق، رضوض، جراحة، إنتان، إقفار) ولا يُكتشف غالباً إلا عند بدء النزف."},
+{"term": "Bile reflux", "definition_ar": "قلس الصفراء: ارتداد العصارة الصفراوية إلى المعدة (بعد جراحة المعدة أو استئصال المرارة) فيؤذي المخاطية كيميائياً."},
+{"term": "Iron preparations", "definition_ar": "المستحضرات الحديدية: أدوية تهيج مخاطية المعدة وتسبب التهاباً حاداً."},
+{"term": "Idiopathic gastritis", "definition_ar": "التهاب المعدة مجهول السبب: لا يُعثر على سبب رغم التقييم الكامل."}
+],
+"difficulty": "core",
+"order_index": 2
+},
+{
+"id": "L3_gastritis_c4",
+"lecture_id": "L3_gastritis",
+"title": "Acute Gastritis - Staging and Clinical Features",
+"summary_ar": "يتدرج التهاب المعدة الحاد في ثلاث مراحل متصاعدة: التهاب المعدة السطحي الحاد (التهاب عابر في المخاطية السطحية)، ثم التهاب المعدة التنآكلي الحاد (تخريب مناطق صغيرة متعددة من المخاطية السطحية مع احتمال نزف أو تسلخ)، ثم التقرح المِعدي الحاد (تخريب كامل سماكة المخاطية وسبب مهم للنزف الهضمي الشديد). سريرياً يمتد الطيف من حالة بلا أعراض إلى ألم شرسوفي وغثيان وقيء ونزف (قيء دموي ضخم وتُريَّح أسود) وحتى فقد دم مميت، حسب شدة الإصابة.",
+"sections": [
+{
+"heading": "Staging of Acute Gastritis - Three Progressive Stages",
+"body_text": "Acute gastric mucosal injury evolves through **three stages** of increasing depth and severity:\n\n- **Stage 1 - Acute superficial gastritis:** an acute mucosal inflammation of the **superficial gastric mucosa** that is usually **transient**.\n- **Stage 2 - Acute erosive gastritis:** destruction of **multiple small zones of superficial mucosa**; there may be **hemorrhage or sloughing** of the destroyed mucosa.\n- **Stage 3 - Acute gastric ulceration:** destruction of the **FULL thickness of the mucosa**; it is an **important cause of severe GI bleeding**.\n\nPseudo-table for rapid revision:\nStage 1 | Acute superficial gastritis | superficial mucosal inflammation | usually transient\nStage 2 | Acute erosive gastritis | multiple small superficial zones destroyed | hemorrhage or sloughing may occur\nStage 3 | Acute gastric ulceration | full-thickness mucosal destruction | important cause of severe GI bleeding\n\nEndoscopic correlates (lecture images):\n- Superficial gastritis: erythematous, edematous mucosa with scattered small whitish-yellowish patches/exudates - superficial injury.\n- Erosive gastritis: multiple scattered erosions and areas of hemorrhage, with whitish-yellowish exudate or fibrin within the erosions.\n- Acute ulceration: multiple irregular pale-white to yellowish plaques and areas of ulceration on an erythematous, inflamed background.\n\n**Principle:** the deeper the lesion, the higher the bleeding risk - an erosion is a superficial break, whereas an ulcer reaches the full thickness of the mucosa.",
+"key_points": [
+"Stage 1 acute superficial gastritis - superficial inflammation, usually transient.",
+"Stage 2 acute erosive gastritis - multiple small zones of superficial destruction ± hemorrhage/sloughing.",
+"Stage 3 acute gastric ulceration - full-thickness mucosal destruction; important cause of severe GI bleeding.",
+"Erosion = superficial break; ulcer = full-thickness mucosal destruction."
+]
+},
+{
+"heading": "Clinical Features of Acute Gastritis",
+"body_text": "Acute gastritis produces a **broad range of symptoms and signs that depend on the severity of the condition** - the spectrum runs from silent to lethal:\n- **Asymptomatic** - many cases never declare themselves.\n- **Epigastric pain** - the leading symptom when present.\n- **Nausea and vomiting.**\n- **Hemorrhage** - from oozing to **massive hematemesis and melena**.\n- **Or fatal blood loss** - severe hemorrhagic gastritis can kill.\n\n**Clinical pearl:** because acute gastritis is frequently asymptomatic until it bleeds (especially NSAID and stress gastritis), the first manifestation may be **upper GI bleeding in a patient with a suggestive history** - NSAID/aspirin use, alcohol binge, ICU stay for burns/trauma/multi-organ failure - or CNS trauma.",
+"key_points": [
+"Symptoms depend on severity: asymptomatic → epigastric pain → nausea/vomiting → hemorrhage (massive hematemesis, melena) → fatal blood loss.",
+"NSAID and stress gastritis are often silent until they bleed."
+],
+"check": {
+"prompt": "A burn patient suddenly develops massive hematemesis. Endoscopy shows a lesion destroying the FULL thickness of the gastric mucosa. Which stage of acute gastritis is this?",
+"options": ["Acute superficial gastritis", "Acute erosive gastritis", "Acute gastric ulceration", "Chronic atrophic gastritis", "Lymphocytic gastritis"],
+"correct_index": 2,
+"explanation_ar": "تخريب كامل سماكة المخاطية هو تعريف التقرح المِعدي الحاد، وهو المرحلة الثالثة والأخطر وسبب مهم للنزف الهضمي الشديد، بينما يبقى التهاب المعدة السطحي والتنآكلي محدوداً بالطبقات السطحية للمخاطية."
+}
+}
+],
+"key_terms": [
+{"term": "Erosion", "definition_ar": "التآكل: تخريب سطحي موضع للمخاطية لا يصل إلى كامل سماكتها."},
+{"term": "Sloughing", "definition_ar": "التسلخ: انفصال نسيج مخاطي متنخر عن السطح."},
+{"term": "Acute gastric ulceration", "definition_ar": "التقرح المِعدي الحاد: تخريب كامل سماكة المخاطية، وسبب مهم للنزف الهضمي الشديد."},
+{"term": "Hematemesis", "definition_ar": "القيء الدموي: تقيؤ دم أحمر أو بلون القهوة، علامة نزف هضمي علوي."},
+{"term": "Melena", "definition_ar": "التُريَّح الأسود: براز أسود قطراني ناتج عن النزف الهضمي العلوي."},
+{"term": "Fatal blood loss", "definition_ar": "الفقد الدموي المميت: أشد مضاعفات التهاب المعدة النزفي الحاد."}
+],
+"difficulty": "core",
+"order_index": 3
+},
+{
+"id": "L3_gastritis_c5",
+"lecture_id": "L3_gastritis",
+"title": "Chronic Gastritis - Definition and Etiologic Classification",
+"summary_ar": "التهاب المعدة المزمن شكل طويل الأمد بارتشاح وحيدات النوى (لمفاويات وبلاعم). تنقسم أسبابه إلى مجموعة لا نوعية شائعة (الملوية البوابية، المناعي الذاتي المصاحب لفقر الدم الوبيل، وبعد استئصال المعدة) وأشكال نوعية نادرة تشمل الإنتانات (CMV والتدرن)، وأمراض الهضم (داء كرون)، والأمراض الجهازية (الساركوئيد ومرض الطعم مقابل الثوي)، والمجهول السبب (التهاب المعدة الحبيبي).",
+"sections": [
+{
+"heading": "Definition and Histology of Chronic Gastritis",
+"body_text": "**Chronic gastritis refers to the long-standing form with a mononuclear cell infiltrate (lymphocytes and macrophages).**\n\n- **Duration:** long standing, persistent inflammation.\n- **Histology:** **mononuclear infiltrate** - lymphocytes and macrophages dominate, in contrast to the neutrophils of acute gastritis.\n- **Endoscopy (lecture image):** erythematous (reddened), somewhat irregular or nodular mucosa with visible mucosal changes of chronic inflammation.\n- **Why typing matters:** chronic gastritis is a histologic spectrum that may progress - in some forms - to **atrophy, intestinal metaplasia, dysplasia and eventually gastric cancer**, so identifying the cause (H. pylori vs autoimmune vs reflux...) determines both treatment and cancer surveillance.",
+"key_points": [
+"Chronic gastritis = long-standing inflammation + mononuclear infiltrate (lymphocytes and macrophages).",
+"It can evolve toward atrophy → metaplasia → dysplasia → cancer, so the cause must be typed."
+]
+},
+{
+"heading": "Chronic Non-specific Gastritis - the Common Group",
+"body_text": "The common (non-specific) chronic gastritides:\n- ***H. pylori* infection** - the commonest cause worldwide; typically antrum-predominant (Type B pattern, see next concept).\n- **Autoimmune (pernicious anemia)** - Type A pattern, antibodies against parietal cells.\n- **Post-gastrectomy** - chronic gastritis of the gastric remnant after surgical removal of part of the stomach (bile reflux plus loss of trophic and protective factors)."
+},
+{
+"heading": "Chronic 'Specific' Forms (Rare)",
+"body_text": "The rare chronic 'specific' forms of gastritis:\n- **Infections**, e.g. **CMV, tuberculosis**.\n- **Gastrointestinal diseases**, e.g. **Crohn's disease** (granulomatous involvement of the stomach).\n- **Systemic diseases**, e.g. **sarcoidosis, graft-versus-host disease (GVHD)**.\n- **Idiopathic**, e.g. **granulomatous gastritis**.\n\nExam heuristic: when gastric biopsy in chronic gastritis shows **granulomas**, think of the specific forms - tuberculosis, Crohn's disease, sarcoidosis - and when it shows viral inclusion bodies, think CMV (especially in HIV/AIDS).",
+"key_points": [
+"Non-specific group: H. pylori infection, autoimmune (pernicious anemia), post-gastrectomy.",
+"Specific rare forms: infections (CMV, TB), GI diseases (Crohn's), systemic diseases (sarcoidosis, GVHD), idiopathic granulomatous gastritis.",
+"Granulomas on gastric biopsy → think TB, Crohn's disease or sarcoidosis."
+],
+"check": {
+"prompt": "A 40-year-old patient with known pulmonary sarcoidosis has chronic gastritis on biopsy. Under which category is this classified?",
+"options": ["Chronic non-specific gastritis", "Chronic specific gastritis (systemic disease)", "Type A autoimmune gastritis", "Reflux gastritis", "Acute erosive gastritis"],
+"correct_index": 1,
+"explanation_ar": "الساركوئيد مرض جهازي، والتهاب المعدة المزمن الناتج عن الأمراض الجهازية (الساركوئيد ومرض الطعم مقابل الثوي) يُصنف ضمن الأشكال المزمنة النوعية النادرة، وليس ضمن المجموعة اللا نوعية الشائعة (ملوية بوابية، مناعي، بعد استئصال المعدة)."
+}
+}
+],
+"key_terms": [
+{"term": "Mononuclear infiltrate", "definition_ar": "ارتشاح وحيدات النوى: لمفاويات وبلاعم، وهي سمة التهاب المعدة المزمن."},
+{"term": "Pernicious anemia", "definition_ar": "فقر الدم الوبيل: فقر دم كبير الكريات بنقص فيتامين B12 بسبب فقدان العامل الداخلي في التهاب المعدة المناعي الذاتي."},
+{"term": "Post-gastrectomy gastritis", "definition_ar": "التهاب المعدة بعد استئصال المعدة: نتيجة قلس الصفراء وفقد العوامل الواقية في المعدة المتبقية."},
+{"term": "Granulomatous gastritis", "definition_ar": "التهاب المعدة الحبيبي: شكل نادر (تدرن، كرون، ساركوئيد أو مجهول السبب)."},
+{"term": "Graft-versus-host disease (GVHD)", "definition_ar": "مرض الطعم مقابل الثوي: مضاعفة مناعية بعد زرع نقي العظم قد يصيب المعدة أيضاً."}
+],
+"difficulty": "core",
+"order_index": 4
+},
+{
+"id": "L3_gastritis_c6",
+"lecture_id": "L3_gastritis",
+"title": "Chronic Gastritis - Type A, Type B, Reflux and Lymphocytic Gastritis",
+"summary_ar": "النمط A مناعي ذاتي بأضداد ضد الخلايا الجدارية: لا حمض (لاكلورهيدريا) ولا عامل داخلي (فقر دم وبيل بنقص B12)، فرط غاسترينيمية، ورم غدي صغير، وحالة ما قبل سرطانية. النمط B مرتبط بالملوية البوابية ويصيب البواب غالباً ويجعل صاحبه معرضاً للقرحة الهضمية، بينما البان-معدة تمهد للحؤول ثم الخلل التنسقي ثم السرطان. التهاب المعدة القلسي سببه القلس المعدي-المعوي بعد جراحة المعدة المخرِّبة أو استئصال المرارة أو أحياناً دون جراحة، ويعالج بالخالبات الصفراوية والمحركات (كالدومبيريدون) والجراحة للحالات المقاومة. أما اللمفاوي فنادر بارتشاح خلايا T وعلى الأرجح مرتبط بالملوية البوابية.",
+"sections": [
+{
+"heading": "Type A Gastritis (Autoimmune Chronic Gastritis)",
+"body_text": "**1 - Type A Gastritis (autoimmune):**\n- **Autoimmune antibodies against parietal cells** - the acid- and intrinsic-factor-producing cells (parietal cells lie in the body/fundus mucosa).\n- **No HCl → achlorhydria** - destruction of parietal cells abolishes gastric acid secretion.\n- **No intrinsic factor (IF) → pernicious anemia** - **vitamin B12 malabsorption** (B12 can only be absorbed in the terminal ileum when bound to IF).\n- **Hypergastrinemia** - with no acid to exert feedback inhibition, G-cell gastrin secretion rises to high levels.\n- **Microadenoma** - small neuroendocrine tumors/nodules may develop (listed in the lecture as part of the Type A sequence, in association with hypergastrinemia).\n- **Premalignant** - longstanding autoimmune atrophic gastritis carries increased neoplastic risk and requires surveillance.\n\nEndoscopy (lecture images): a reddish, somewhat atrophic or inflamed surface with **visible vascular patterns**; a second view shows a paler, irregular mucosa with nodular or polypoid-appearing lesions.\n\nChain to memorize: anti-parietal cell antibodies → no HCl (achlorhydria) + no IF → B12 malabsorption (pernicious anemia) → and, because acid no longer inhibits G cells → hypergastrinemia → microadenoma → premalignant.",
+"key_points": [
+"Type A = autoimmune antibodies against parietal cells.",
+"Achlorhydria (no HCl) + loss of intrinsic factor → pernicious anemia with B12 malabsorption.",
+"Hypergastrinemia (loss of acid feedback), microadenoma, premalignant - needs surveillance."
+],
+"check": {
+"prompt": "Why does Type A autoimmune gastritis cause hypergastrinemia?",
+"options": ["Loss of acid feedback inhibition on G cells", "Gastrin is directly stimulated by autoantibodies", "H. pylori directly stimulates gastrin in Type A", "B12 deficiency stimulates gastrin release", "Duodenal hypertrophy secretes extra gastrin"],
+"correct_index": 0,
+"explanation_ar": "في النمط A تخرب الأضداد الذاتية الخلايا الجدارية فتغيب الحمض (لاكلورهيدريا)، وغياب الحمض يلغي التثبيط الراجع على خلايا G فيرتفع الغاسترين؛ فالسبب فقد التثبيط الحمضي وليس تحريضاً مباشراً للأضداد أو غيرها."
+}
+},
+{
+"heading": "Type B Gastritis (H. pylori-Associated Chronic Gastritis)",
+"body_text": "**2 - Type B Gastritis (H. pylori-associated):**\n- Caused by ***Helicobacter pylori* infection**.\n- **Mostly affects the antrum** (antrum-predominant gastritis; the body mucosa is relatively spared, so acid production is largely maintained).\n- **Patients are prone to peptic ulcer** disease - antral-predominant H. pylori gastritis is the classical gastritis of peptic ulcer disease.\n- **Those with pangastritis are prone to cancer** - the lecture's progression: **pangastritis → metaplasia → dysplasia → CA (gastric carcinoma)**.\n\nClinical distinction to memorize: antral-predominant Type B → **peptic ulcer risk** | pangastritis (whole stomach inflamed) → **atrophy → metaplasia → dysplasia → cancer risk**.\n\nEndoscopy (lecture images): the antrum shows erythematous, reddish mucosa with visible vascular patterns and scattered small erosions or nodular lesions; the pangastritis image shows diffuse mucosal change with an atrophic, discolored appearance and **prominent loss of the normal rugal folds**.",
+"key_points": [
+"Type B = H. pylori-associated chronic gastritis, mostly affecting the antrum.",
+"Antral Type B patients are prone to PEPTIC ULCER.",
+"Pangastritis patients are prone to CANCER: pangastritis → metaplasia → dysplasia → carcinoma."
+]
+},
+{
+"heading": "Reflux Gastritis (Bile / Chemical Gastritis)",
+"body_text": "**3 - Reflux Gastritis:**\n- **Caused by enterogastric reflux** - bile-containing intestinal contents reflux back into the stomach and chemically injure the mucosa.\n- Occurs **after destructive gastric surgery** (e.g. post-gastrectomy states).\n- Also **after cholecystectomy** (loss of the gallbladder reservoir alters bile delivery).\n- **Occasionally with no surgery at all** - spontaneous enterogastric reflux.\n\n**Treatment (Rx):**\n- **Bile-chelating agents** - bind bile salts and limit their mucosal injury.\n- **Prokinetic agents, e.g. domperidone** - accelerate gastric emptying and reduce reflux.\n- **Surgery - for severe, non-responsive patients** who fail medical therapy.\n\nEndoscopy (lecture image): erythematous, edematous mucosa with visible **bile staining** - a greenish-yellowish hue mixed with the redness of inflammation - consistent with chemical (reflux) irritation.",
+"key_points": [
+"Reflux gastritis = enterogastric (bile) reflux, classically after destructive gastric surgery or cholecystectomy, occasionally without surgery.",
+"Rx: bile-chelating agents + prokinetics (domperidone); surgery only for severe non-responders."
+]
+},
+{
+"heading": "Lymphocytic Gastritis",
+"body_text": "**4 - Lymphocytic Gastritis:**\n- **Rare.**\n- **T-cell infiltration** of the gastric mucosa (hence 'lymphocytic').\n- **Probably related to H. pylori infection** - the lecture lists H. pylori as the probable association.\n- **Histology (lecture photomicrograph, H&E stain):** dense, diffuse infiltration of the lamina propria by small, dark-staining mononuclear cells (lymphocytes) surrounding the gastric pits/foveolae.\n- **Endoscopy (lecture image):** prominent, thickened, erythematous and nodular gastric rugae (folds) with a **'cobblestone'** appearance; the mucosal surface looks irregular and inflamed.",
+"key_points": [
+"Lymphocytic gastritis is RARE, with T-cell infiltration of the mucosa.",
+"It is probably associated with H. pylori infection.",
+"Endoscopy: thickened cobblestone-like rugae; histology: dense lymphocytic infiltrate of the lamina propria."
+]
+}
+],
+"key_terms": [
+{"term": "Parietal cell antibodies", "definition_ar": "أضداد ضد الخلايا الجدارية: تخرب الخلايا المفرزة للحمض والعامل الداخلي في النمط A من التهاب المعدة المزمن."},
+{"term": "Intrinsic factor (IF)", "definition_ar": "العامل الداخلي: بروتين تفرزه الخلايا الجدارية يلزم لامتصاص فيتامين B12 في اللفائفي."},
+{"term": "Achlorhydria", "definition_ar": "اللاكلورهيدريا: غياب حمض الهيدروكلوريك من عصارة المعدة."},
+{"term": "Hypergastrinemia", "definition_ar": "فرط الغاسترينيمية: ارتفاع مستوى الغاسترين نتيجة غياب التثبيط الراجع الحمضي على خلايا G."},
+{"term": "Microadenoma", "definition_ar": "ورم غدي صغير: يذكر ضمن مضاعفات النمط A ويرتبط بفرط الغاسترين."},
+{"term": "Pangastritis", "definition_ar": "التهاب البان-معدة: إصابة المعدة كلها بالالتهاب، ومهيئة لسلسلة الحؤول ثم الخلل التنسقي ثم السرطان."},
+{"term": "Intestinal metaplasia", "definition_ar": "الحؤول المعوي: تحول نسيج المخاطية المعدية إلى نسيج يشبه نسيج الأمعاء، مرحلة ما قبل الخلل التنسقي."},
+{"term": "Dysplasia", "definition_ar": "الخلل التنسقي: تغيرات تكاثرية شاذة في الخلايا تسبق السرطان."},
+{"term": "Enterogastric reflux", "definition_ar": "القلس المعدي-المعوي العكسي: ارتداد محتويات الأمعاء مع الصفراء إلى المعدة."},
+{"term": "Domperidone", "definition_ar": "الدومبيريدون: دواء محرك للجهاز الهضمي يستخدم في علاج التهاب المعدة القلسي."},
+{"term": "Bile-chelating agents", "definition_ar": "الخالبات الصفراوية: أدوية ترتبط بالأملاح الصفراوية فتمنع أذاها الكيميائي للمخاطية."}
+],
+"difficulty": "advanced",
+"order_index": 5
+},
+{
+"id": "L3_gastritis_c7",
+"lecture_id": "L3_gastritis",
+"title": "Chronic Gastritis - Clinical Features, Hypertrophic Gastritis and Menetrier Disease",
+"summary_ar": "التهاب المعدة المزمن قليل الأعراض عادة: غثيان وإقياء وانزعاج في أعلى البطن فقط، ولذلك يكتشف صدفةً غالباً. ثم تطرح المحاضرة التهاب المعدة الضخامي: ضخامة كبيرة في الثنيات المخاطية، ونموذجه داء مينيتريه، وهو مرض غير شائع يسبب ضخامة ثنيات ضخمة مع إفراز مخاطي غزير (فقد بروتين) ونقص بروتينات الدم ونقص الحمض وفقر دم، وهو حالة ما قبل سرطانية يعالج باستئصال المعدة.",
+"sections": [
+{
+"heading": "Clinical Features of Chronic Gastritis",
+"body_text": "Chronic gastritis is usually **clinically silent or oligosymptomatic** - patients complain of **only a few symptoms**:\n- **Nausea.**\n- **Vomiting.**\n- **Upper abdominal discomfort.**\n\nThis poverty of symptoms explains why chronic gastritis - and its premalignant potential - is usually discovered **incidentally**, on endoscopy and biopsy performed for other reasons (e.g. dyspepsia work-up, anemia evaluation), rather than being diagnosed from symptoms alone. Severity of symptoms does NOT correlate with the histologic severity or the cancer risk."
+},
+{
+"heading": "Hypertrophic Gastritis - the Question the Lecture Poses",
+"body_text": "The lecture deliberately challenges the student: **'What is hypertrophic gastritis? Types?'**\n\n- **Hypertrophic gastritis (hypertrophic gastropathy)** = conditions in which the gastric **mucosal folds (rugae) become grossly thickened and enlarged** - 'hypertrophic' describes the giant rugal pattern seen at endoscopy or radiology, NOT simple inflammation severity.\n- The prototype disease presented in this lecture is **Menetrier's disease** (see next section).\n\nConcept check: thickened gastric folds are not 'more inflammation' - think of protein-losing hypertrophic gastropathy (Menetrier's) as the classic exam representative of this group."
+},
+{
+"heading": "Menetrier Disease (Giant Hypertrophic Gastritis)",
+"body_text": "**Menetrier's disease:**\n- **Unusual** (a rare disease).\n- **Gross hypertrophy of the gastric mucosal folds.**\n- **Results in:**\n  - **Excess mucus production → protein-losing gastropathy → hypoproteinemia** (protein is lost with the secreted mucus into the gastric lumen).\n  - **Hypochlorhydria** - reduced gastric acid secretion (the hypertrophic mucosa is mucus-secreting rather than acid-secreting).\n  - **Anemia.**\n  - **Premalignant condition.**\n- **Rx: by gastrectomy** (surgical removal of the stomach - the lecture's answer for treating this disease).\n\nEndoscopy (lecture images): massive, thickened, tortuous gastric folds giving a **'cerebriform' (brain-like) appearance** to the stomach lining; the folds are pale and edematous with visible mucus on the surface; a second view shows prominent, enlarged, irregular rugal folds consistent with hypertrophic gastropathy.",
+"key_points": [
+"Menetrier's disease is unusual, with gross hypertrophy of gastric mucosal folds.",
+"Consequences: protein-losing mucus production → hypoproteinemia, hypochlorhydria, anemia; premalignant.",
+"Rx per the lecture: gastrectomy.",
+"Cerebriform (brain-like) giant rugae at endoscopy = Menetrier's disease."
+],
+"check": {
+"prompt": "A patient with generalized edema and low serum albumin has endoscopy showing giant cerebriform gastric folds with abundant mucus and low acid output. What is the treatment of this premalignant condition per the lecture?",
+"options": ["Long-term proton pump inhibitor alone", "Domperidone", "Gastrectomy", "Bile-chelating agents", "H. pylori eradication alone"],
+"correct_index": 2,
+"explanation_ar": "هذه ملامح داء مينيتريه: ضخامة كبيرة لثنيات المعدة مع إفراز مخاطي غزير وفقد بروتين (نقص بروتينات الدم) ونقص الحمض وفقر دم، وهو حالة ما قبل سرطانية، وعلاجه وفق المحاضرة هو استئصال المعدة Gastrectomy، أما باقي الخيارات فتخص حالات أخرى."
+}
+}
+],
+"key_terms": [
+{"term": "Hypertrophic gastritis", "definition_ar": "التهاب المعدة الضخامي: تثخن كبير في الثنيات المخاطية للمعدة يُرى بالتنظير أو التصوير."},
+{"term": "Menetrier disease", "definition_ar": "داء مينيتريه: مرض غير شائع بضخامة ثنيات المعدة مع فقد بروتين ونقص حمض وحالة ما قبل سرطانية."},
+{"term": "Protein-losing gastropathy", "definition_ar": "اعتلال معدة فقداني للبروتين: فقد البروتين عبر المخاطية المفرزة للمخاط مؤدياً لنقص بروتينات الدم."},
+{"term": "Hypoproteinemia", "definition_ar": "نقص بروتينات الدم: انخفاض الألبومين والبروتين الكلي وقد يسبب الوذمة."},
+{"term": "Gastrectomy", "definition_ar": "استئصال المعدة: العلاج الجراحي المذكور في المحاضرة لداء مينيتريه."}
+],
+"difficulty": "advanced",
+"order_index": 6
+}
+],
+"flashcards": [
+{
+"id": "L3_gastritis_f1",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c1",
+"card_type": "basic",
+"front_text": "What is the strict definition of gastritis, and what does its diagnosis require?",
+"back_text": "Gastritis = inflammation associated with mucosal injury of the stomach. It is mostly a HISTOLOGICAL term that needs BIOPSY to be confirmed.",
+"explanation_ar": "لاحظ أن التهاب المعدة تشخيص نسيجي أولاً: لا يكفي المنظر بالتنظير لتأكيده بل يجب أخذ خزعة."
+},
+{
+"id": "L3_gastritis_f2",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c1",
+"card_type": "basic",
+"front_text": "Gastritis vs gastropathy - what is the difference?",
+"back_text": "Gastropathy = epithelial cell damage and regeneration WITHOUT inflammation; it may be diagnosed without histology, from gross appearance on endoscopy or radiology. Gastritis = inflammation + mucosal injury, confirmed on biopsy.",
+"explanation_ar": "الفاصل الحاسم هو الالتهاب النسيجي: موجود في التهاب المعدة وغائب في اعتلال المعدة."
+},
+{
+"id": "L3_gastritis_f3",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c5",
+"card_type": "basic",
+"front_text": "Which inflammatory infiltrate defines (a) acute and (b) chronic gastritis?",
+"back_text": "(a) Acute gastritis: NEUTROPHILIC infiltrate with short-term inflammation. (b) Chronic gastritis: MONONUCLEAR infiltrate - lymphocytes and macrophages - in a long-standing form.",
+"explanation_ar": "عدلات = حاد، وحيدات النوى (لمفاويات وبلاعم) = مزمن. سطر واحد يفرق بينهما في الامتحان."
+},
+{
+"id": "L3_gastritis_f4",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c2",
+"card_type": "basic",
+"front_text": "List the four hostile (aggressive) factors on the gastric mucosal balance scale.",
+"back_text": "Helicobacter pylori, gastric acid (HCl), pepsin, and NSAIDs.",
+"mnemonic_ar": "تذكر: (ح-ب-م-ن) حمض، ببسين، ملوية، مضادات التهاب NSAIDs."
+},
+{
+"id": "L3_gastritis_f5",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c2",
+"card_type": "basic",
+"front_text": "List the four protective (defensive) factors of the gastric mucosa.",
+"back_text": "Bicarbonate secretion, prostaglandins, mucus production, and blood flow to the mucosa.",
+"explanation_ar": "عوامل الدفاع الأربعة: بيكربونات، بروستاغلاندينات، مخاط، جريان دم مخاطي."
+},
+{
+"id": "L3_gastritis_f6",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"card_type": "basic",
+"front_text": "Enumerate the common causes of acute gastritis (often erosive and hemorrhagic).",
+"back_text": "Aspirin/NSAIDs; H. pylori (initial infection); alcohol; other drugs e.g. iron preparations; severe physiological stress (burns, multi-organ failure, CNS trauma); bile reflux after gastric surgery; viral infections (CMV, herpes simplex virus in HIV/AIDS).",
+"explanation_ar": "قسّمها ذهنياً: أدوية (أسبرين، مضادات التهاب، حديد، كحول)، إنتانات (ملوية أولية، CMV، حلأ عند الإيدز)، شدة فسيولوجية (حروق، فشل متعدد الأعضاء، رض عصبي مركزي)، وقلس صفراوي بعد جراحة المعدة.",
+"mnemonic_ar": "وسيلة الحفظ: (أ-ع-ش-ق) أدوية، إنتانات، شدة، قلس صفراوي."
+},
+{
+"id": "L3_gastritis_f7",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"card_type": "basic",
+"front_text": "How do NSAIDs damage the gastric mucosa via the arachidonic acid pathway?",
+"back_text": "NSAIDs inhibit BOTH cyclo-oxygenases: COX-1 (constitutive) produces protective mucosal prostaglandins - its inhibition removes mucosal protection; COX-2 (inducible) produces pain/inflammation/fever prostaglandins - its inhibition is the therapeutic effect.",
+"explanation_ar": "الاستفادة العلاجية من تثبيط COX-2، والأذية المعدية من تثبيط COX-1 وضياع البروستاغلاندينات الحامية."
+},
+{
+"id": "L3_gastritis_f8",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"card_type": "basic",
+"front_text": "Name the six mechanisms by which heavy smoking injures the gastric mucosa.",
+"back_text": "1) Stimulates gastric acid secretion. 2) Stimulates bile salt reflux. 3) Alters mucosal blood flow. 4) Decreases mucus secretion. 5) Reduces prostaglandin synthesis. 6) Decreases pancreatic bicarbonate secretion.",
+"explanation_ar": "التدخين ضربة مزدوجة: يزيد الهجوم (حمض وقلس أملاح صفراوية) ويضعف الدفاع (مخاط وبروستاغلاندينات وبيكربونات وجريان دم).",
+"mnemonic_ar": "احفظها بثلاث مجموعات: يزيد (حمض، قلس صفراوي)، يغير (جريان الدم)، ينقص (مخاط، بروستاغلاندين، بيكربونات بنكرياسية)."
+},
+{
+"id": "L3_gastritis_f9",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"card_type": "basic",
+"front_text": "What are the clinical settings of stress gastritis, and its key management principle?",
+"back_text": "Settings: systemic infection/seriously ill patients, severe stress (trauma, burns, multiple injured), surgery, ischemia. Principle: it is unrecognized until bleeding starts and difficult to treat - PREVENTION is better than treatment.",
+"explanation_ar": "التهاب معدة الشدة صامت حتى ينزف، لذلك تُطبق الوقاية (المثبطات الحمضية) عند مرضى العناية المبكرين."
+},
+{
+"id": "L3_gastritis_f10",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c4",
+"card_type": "basic",
+"front_text": "Name the three stages of acute gastritis in order of increasing severity.",
+"back_text": "1) Acute superficial gastritis - superficial mucosal inflammation, usually transient. 2) Acute erosive gastritis - destruction of multiple small zones of superficial mucosa ± hemorrhage/sloughing. 3) Acute gastric ulceration - full-thickness mucosal destruction; important cause of severe GI bleeding.",
+"explanation_ar": "التدرج: سطحي عابر ← تنآكلي متعدد المناطق ← تقرح كامل السماكة، ويزداد خطر النزف مع العمق."
+},
+{
+"id": "L3_gastritis_f11",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c4",
+"card_type": "basic",
+"front_text": "Which stage of acute gastric injury destroys the FULL thickness of the mucosa, and why does it matter?",
+"back_text": "Acute gastric ulceration - destruction of the full thickness of mucosa; it is an important cause of severe GI bleeding.",
+"explanation_ar": "كامل السماكة = تقرح حاد = خطر نزف هضمي شديد؛ التآكل يبقى سطحياً."
+},
+{
+"id": "L3_gastritis_f12",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c4",
+"card_type": "basic",
+"front_text": "List the clinical features of acute gastritis from mildest to most severe.",
+"back_text": "A broad range depending on severity: asymptomatic; epigastric pain; nausea and vomiting; hemorrhage (massive hematemesis, melena); or even fatal blood loss.",
+"explanation_ar": "الطيف السريري يتوقف على الشدة: من صامت إلى ألم شرسوفي وغثيان وإقياء ونزف جماع وحتى فقد دم مميت."
+},
+{
+"id": "L3_gastritis_f13",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c5",
+"card_type": "basic",
+"front_text": "What are the causes of chronic NON-specific gastritis?",
+"back_text": "H. pylori infection; autoimmune gastritis (pernicious anemia); post-gastrectomy gastritis.",
+"explanation_ar": "ثلاثة أسباب لانوعية: ملوية بوابية، مناعي ذاتي (فقر الدم الوبيل)، وبعد استئصال المعدة."
+},
+{
+"id": "L3_gastritis_f14",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c5",
+"card_type": "basic",
+"front_text": "Name the rare chronic 'specific' forms of gastritis with their examples.",
+"back_text": "Infections (CMV, tuberculosis); gastrointestinal diseases (Crohn's disease); systemic diseases (sarcoidosis, graft-versus-host disease); idiopathic (granulomatous gastritis).",
+"explanation_ar": "النوعية النادرة: إنتانات (CMV، تدرن)، داء كرون، أمراض جهازية (ساركوئيد، طعم مقابل ثوي)، وحبيبي مجهول السبب."
+},
+{
+"id": "L3_gastritis_f15",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"card_type": "basic",
+"front_text": "Summarize the full feature set of Type A (autoimmune) chronic gastritis.",
+"back_text": "Autoimmune antibodies against parietal cells; achlorhydria (no HCl); no intrinsic factor → pernicious anemia with vitamin B12 malabsorption; hypergastrinemia; microadenoma; premalignant.",
+"explanation_ar": "سلسلة النمط A: أضداد ضد الخلايا الجدارية ← لا حمض ولا عامل داخلي ← فقر دم وبيل ← فرط غاسترين ← ورم غدي صغير ← ما قبل سرطاني."
+},
+{
+"id": "L3_gastritis_f16",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"card_type": "basic",
+"front_text": "Summarize Type B chronic gastritis and its cancer progression.",
+"back_text": "H. pylori-associated; mostly affects the ANTRUM; patients prone to peptic ulcer; those with pangastritis prone to cancer: pangastritis → metaplasia → dysplasia → carcinoma (CA).",
+"explanation_ar": "النمط B: ملوية بوابية تصيب البواب غالباً، وتعرض صاحبها للقرحة الهضمية؛ أما البان-معدة فسلسلها: حؤول ثم خلل تنسقي ثم سرطان."
+},
+{
+"id": "L3_gastritis_f17",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"card_type": "basic",
+"front_text": "What are the cause and treatments of reflux (bile) gastritis?",
+"back_text": "Cause: enterogastric reflux - after destructive gastric surgery, after cholecystectomy, occasionally without surgery. Rx: bile-chelating agents; prokinetic agents (domperidone); surgery for severe non-responsive patients.",
+"explanation_ar": "قلس معدي-معوي بعد جراحة المعدة أو استئصال المرارة؛ العلاج: خالبات صفراوية، محركات مثل الدومبيريدون، والجراحة للمقاوم فقط."
+},
+{
+"id": "L3_gastritis_f18",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"card_type": "basic",
+"front_text": "What is lymphocytic gastritis?",
+"back_text": "A RARE chronic gastritis with T-cell infiltration of the gastric mucosa, probably caused by H. pylori infection; endoscopy shows thickened erythematous cobblestone-like rugae, histology a dense lymphocytic infiltrate of the lamina propria.",
+"explanation_ar": "نادر، ارتشاح خلايا T، على الأرجح مرتبط بالملوية البوابية، ومنظره بالتنظير ثنيات متثخنة بشكل حجر الرصيف."
+},
+{
+"id": "L3_gastritis_f19",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c7",
+"card_type": "basic",
+"front_text": "What is Menetrier's disease, its consequences and its treatment?",
+"back_text": "An unusual disease with gross hypertrophy of gastric mucosal folds, resulting in excess mucus production (protein-losing) → hypoproteinemia, hypochlorhydria, anemia; it is a premalignant condition. Rx: gastrectomy.",
+"explanation_ar": "داء مينيتريه: ضخامة ثنيات ضخمة + مخاط غزير فقدّان للبروتين ← نقص بروتينات الدم ونقص حمض وفقر دم، ما قبل سرطاني، وعلاجه استئصال المعدة."
+},
+{
+"id": "L3_gastritis_f20",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c7",
+"card_type": "basic",
+"front_text": "What symptoms does chronic gastritis usually cause?",
+"back_text": "Usually only a few symptoms: nausea, vomiting, and upper abdominal discomfort - often discovered incidentally.",
+"explanation_ar": "التهاب المعدة المزمن قليل الأعراض عادة، لذا يُكتشف صدفةً بالتنظير والخزعة."
+}
+],
+"mcqs": [
+{
+"id": "L3_gastritis_q1",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"question_stem": "A 58-year-old man with knee osteoarthritis has taken over-the-counter ibuprofen daily for 3 weeks. He presents with burning epigastric pain, nausea, one episode of coffee-ground vomiting and black tarry stools. Upper endoscopy shows multiple shallow gastric erosions on an erythematous mucosa. What is the most likely diagnosis?",
+"options": ["Acute erosive (hemorrhagic) gastritis caused by NSAIDs", "Type A autoimmune chronic gastritis", "Menetrier's disease", "Lymphocytic gastritis", "Reflux gastritis after gastric surgery"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: التهاب المعدة الحاد التنآكلي النزفي بسبب مضادات الالتهاب غير الستيروئيدية - قصة استخدام الإيبوبروفين مع ألم شرسوفي وقيء قهوائي وتُريَّح أسود وتآكلات سطحية متعددة بالتنظير هي الصورة النموذجية. النمط A المناعي خطأ لأنه مزمن ويصيب مسناً بفقر دم وبيل B12 ونقص حمض لا بنزف حاد. داء مينيتريه خطأ لأنه ضخامة ثنيات مع نقص بروتينات الدم ونقص حمض وليس تآكلات نازفة. اللمفاوي خطأ لأنه نادر بارتشاح خلايا T ومنظر حجر الرصيف. القلسي خطأ لأنه يتطلب جراحة معدة أو مرارة سابقة ولم توجد.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["Focus on the drug history and the black stools.", "Acute gastritis is often erosive and hemorrhagic."]
+},
+{
+"id": "L3_gastritis_q2",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"question_stem": "A 67-year-old man on low-dose aspirin after myocardial infarction develops epigastric pain; endoscopy shows gastric erosions. Which molecular mechanism best explains his mucosal injury?",
+"options": ["Inhibition of COX-1 with loss of protective mucosal prostaglandins", "Direct stimulation of gastrin secretion from G cells", "Destruction of parietal cells by autoantibodies", "Induction of enterogastric bile reflux", "Inhibition of COX-2 only, with loss of pain-mediating prostaglandins"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: تثبيط COX-1 الدائم التواجد فيضيع إنتاج البروستاغلاندينات الحامية للمخاطية (مخاط وبيكربونات وجريان دم) فتتآكل. تحريض الغاسترين خطأ فليس له علاقة بالأسبرين. الأضداد ضد الخلايا الجدارية تخص النمط A المناعي وليس الأسبرين. قلس الصفراء يخص التهاب المعدة القلسي بعد الجراحة. أما تثبيط COX-2 وحده فهو التأثير العلاجي المرغوب (ألم وحمى والتهاب) وليس سبب الأذية المعدية.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Which cyclo-oxygenase protects the stomach?", "COX-1 is constitutive; COX-2 is inducible."]
+},
+{
+"id": "L3_gastritis_q3",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"question_stem": "A 24-year-old man with 40% total body surface burns is intubated in the ICU. On day 5 his nasogastric aspirate turns coffee-ground and his hemoglobin falls 3 g/dL. What is the key lesson about his stress gastritis?",
+"options": ["It is usually unrecognized until bleeding has started, so prevention is better than treatment", "It is easily cured with bile-chelating agents once bleeding begins", "It typically causes chronic epigastric pain for months before bleeding", "It is an autoimmune process requiring vitamin B12 monitoring", "It is caused exclusively by excessive alcohol consumption"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: التهاب معدة الشدة صامت ولا يُكتشف غالباً إلا عند بدء النزف، وعلاجه بعد النزف صعب، لذلك الوقاية أفضل من العلاج - وهذا نص المحاضرة. الخالبات الصفراوية علاج التهاب المعدة القلسي لا الشديد. الألم المزمن لأشهر يليق بالالتهاب المزمن لا الحاد. المناعي الذاتي يخص النمط A. الكحول سبب مستقل آخر لالتهاب المعدة الحاد وليس سبب التهاب الشدة.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["The ICU patient cannot complain of pain.", "The lecture asks: better to prevent?"]
+},
+{
+"id": "L3_gastritis_q4",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c5",
+"question_stem": "A gastric biopsy from a 52-year-old woman with long-standing dyspepsia shows mucosal infiltration by lymphocytes and macrophages with no neutrophils. What does this histology indicate?",
+"options": ["Acute gastritis", "Chronic gastritis", "Gastropathy without mucosal injury", "Acute gastric ulceration", "Normal gastric mucosa"],
+"correct_index": 1,
+"explanation_ar": "الجواب الصحيح: التهاب المعدة المزمن - طويل الأمد بارتشاح وحيدات النوى (لمفاويات وبلاعم). الحاد يرتشح عدلات ولا يوجد هنا. اعتلال المعدة لا يوجد فيه ارتشاح التهابي أصلاً بل أذية وتجدد ظهاري فقط. التقرح الحاد تخريب كامل سماكة وليس وصفاً للاشتاح. والمخاطية السليمة لا تظهر هذا الالتهاب.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["Mononuclear cells = which time course?", "Neutrophils mean acute; lymphocytes and macrophages mean chronic."]
+},
+{
+"id": "L3_gastritis_q5",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"question_stem": "A 68-year-old woman presents with fatigue, glossitis and symmetric foot paresthesias. Labs: Hb 9.4 g/dL, MCV 116 fL, low vitamin B12, markedly elevated fasting gastrin, and positive anti-parietal cell antibodies. Which type of chronic gastritis does she have?",
+"options": ["Type A autoimmune gastritis", "Type B H. pylori antral gastritis", "Reflux gastritis", "Lymphocytic gastritis", "Granulomatous gastritis"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: النمط A المناعي الذاتي - أضداد ضد الخلايا الجدارية تخربها فلا حمض (لاكلورهيدريا وفرط غاسترين لغياب التثبيط الراجع) ولا عامل داخلي فلا يمتص B12 و يحدث فقر الدم الوبيل كبير الكريات مع أعراض عصبية. النمط B ملوية بوابية تصيب البواب وتعرض للقرحة لا لفقر الوبيل. القلسي بعد جراحات البطن بأعراض قيء صفراوي. اللمفاوي نادر بارتشاح T. والحبيبي نادر (تدرن، كرون، ساركوئيد) لا علاقة له بالأضداد.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["Anti-parietal cell antibodies point to one specific type.", "Achlorhydria drives gastrin up."]
+},
+{
+"id": "L3_gastritis_q6",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"question_stem": "A 45-year-old man has H. pylori-associated pangastritis on biopsy. According to the lecture, which progression places him at risk of gastric carcinoma?",
+"options": ["Pangastritis → metaplasia → dysplasia → carcinoma", "Erosion → sloughing → perforation", "Atrophy → achlorhydria → pernicious anemia", "Hyperemia → cobblestone rugae → lymphoid hyperplasia", "Reflux → mucus hypertrophy → protein loss"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح وفق نص المحاضرة: البان-معدة ← حؤول ← خلل تنسقي ← سرطان المعدة، أي أن المصابين بالبان-معدة معرضون للسرطان بخلاف إصابة البواب وحدها التي تُعرِّض صاحبها للقرحة الهضمية. التسلخ والانثقاب يخصان مراحل الالتهاب الحاد لا مسار السرطنة. فقر الدم الوبيل واللاكلورهيدريا مسار النمط A المناعي. منظر حجر الرصيف يخص اللمفاوي. وفقد البروتين بضخامة الثنيات يخص مينيتريه.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Whole-stomach involvement matters more than antral disease for cancer.", "Metaplasia comes before dysplasia."]
+},
+{
+"id": "L3_gastritis_q7",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"question_stem": "Three years after cholecystectomy, a 50-year-old woman has chronic upper abdominal discomfort and bilious vomiting; endoscopy shows bile-stained, erythematous gastric mucosa. What is the appropriate first-line treatment per the lecture?",
+"options": ["Bile-chelating agents with prokinetics such as domperidone", "Immediate gastrectomy", "Vitamin B12 injections", "Lifelong aspirin therapy", "Pancreatic enzyme replacement"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: التهاب المعدة القلسي (الصفراوي) بعد استئصال المرارة يعالج أولاً بالخالبات الصفراوية مع المحركات الحركية كالدومبيريدون، ولا تُلجأ للجراحة إلا في الحالات الشديدة غير المستجيبة. استئصال المعدة الفوري خطأ فهو علاج مينيتريه أو الحالات المقاومة جداً. حقن B12 تخص فقر الدم الوبيل بالنمط A. الأسبرين يزيد الأذية أصلاً. والإنزيمات البنكرياسية لا دور لها هنا.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["The problem is bile in the stomach.", "Chelate the bile and improve motility first."]
+},
+{
+"id": "L3_gastritis_q8",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c7",
+"question_stem": "A 55-year-old man presents with generalized edema. Serum albumin is 2.4 g/dL; upper endoscopy reveals massively thickened cerebriform gastric folds with abundant mucus and low gastric acid output. What is the treatment of this premalignant condition according to the lecture?",
+"options": ["Gastrectomy", "Prokinetic agents alone", "H. pylori eradication alone", "Bile-chelating agents", "Iron supplementation"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: هذه صورة داء مينيتريه - ضخامة كبيرة لثنيات المعدة (منظر دماغي) مع إفراز مخاطي غزير فقدّان للبروتين (نقص بروتينات الدم والوذمة) ونقص الحمض وفقر دم وحالة ما قبل سرطانية، وعلاجه وفق المحاضرة استئصال المعدة. المحركات تخص القلسي. إبادة الملوية تخص النمط B. الخالبات الصفراوية تخص القلسي أيضاً. والحديد علاج فقر الدم الغذائي ولا يعالج سبب فقد البروتين.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Cerebriform folds + hypoproteinemia = which rare disease?", "The lecture gives one definitive treatment for it."]
+},
+{
+"id": "L3_gastritis_q9",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c1",
+"question_stem": "At endoscopy a patient's stomach shows patchy mucosal hyperemia and erosions. Biopsy reports epithelial cell damage and regeneration with NO inflammatory infiltrate. Which term is correct?",
+"options": ["Gastropathy", "Acute gastritis", "Chronic gastritis", "Type B gastritis", "Peptic ulcer disease"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: اعتلال المعدة Gastropathy - أذية وتجدد للخلايا الظهارية دون التهاب، ويكفي تشخيصه المنظر العياني بالتنظير أو التصوير دون نسيج. أما التهاب المعدة الحاد فيتطلب عدلات، والمزمن يتطلب لمفاويات وبلاعم، وكلاهما غائب هنا. النمط B نوع من المزمن بالملوية. والقرحة تخريب كامل السماكة وليست مجرد أذية بلا التهاب.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["Inflammation is the keyword in the biopsy report.", "Damage and regeneration WITHOUT inflammation has its own name."]
+},
+{
+"id": "L3_gastritis_q10",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c4",
+"question_stem": "A multi-trauma ICU patient develops massive hematemesis on day 4. Endoscopy shows multiple gastric lesions destroying the full thickness of the mucosa. Which stage of acute gastritis has he reached?",
+"options": ["Acute superficial gastritis", "Acute erosive gastritis", "Acute gastric ulceration", "Chronic atrophic gastritis", "Hypertrophic gastritis"],
+"correct_index": 2,
+"explanation_ar": "الجواب الصحيح: التقرح المِعدي الحاد - المرحلة الثالثة والأعمق بتخريب كامل سماكة المخاطية، وهو سبب مهم للنزف الهضمي الشديد كما في هذا المريض. السطحي التهاب عابر محدود بالسطح. التنآكلي يخرب مناطق صغيرة سطحية متعددة مع نزف أو تسلخ لكن ليس كامل السماكة. الضموري المزمن يخص الأنماط المزمنة لا الشدة الحادة. والضخامي (مينيتريه) ضخامة ثنيات مع نقص بروتين لا علاقة له.",
+"difficulty": "core",
+"clinical_vignette": true,
+"hints": ["How deep does the lesion go?", "Erosion = superficial; ulcer = full thickness of mucosa."]
+},
+{
+"id": "L3_gastritis_q11",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c6",
+"question_stem": "A 42-year-old man undergoes endoscopy for dyspepsia; his gastric rugae are thickened with a cobblestone appearance, and biopsy (H&E) shows a dense diffuse T-cell infiltration of the lamina propria. With which organism is this rare gastritis probably associated?",
+"options": ["Helicobacter pylori", "Cytomegalovirus (CMV)", "Mycobacterium tuberculosis", "Herpes simplex virus", "Candida albicans"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح: التهاب المعدة اللمفاوي - نادر، بارتشاح خلايا T في الصفيحة المخصوصة، وعلى الأرجح مرتبط بعدوى الملوية البوابية وفق المحاضرة. CMV والتدرن يسببان أشكالاً نوعية مزمنة (مشتملات فيروسية أو حبيبات) لا ارتشاحاً لمفاوياً منتشراً كهذا. الحلأ البسيط يسبب التهاب معد حاد في مرضى الإيدز. والمبيضات لا تذكر ضمن أسباب هذا النمط في المحاضرة.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["This is the rare lymphocytic gastritis.", "The lecture links it to the commonest chronic gastritis organism."]
+},
+{
+"id": "L3_gastritis_q12",
+"lecture_id": "L3_gastritis",
+"concept_id": "L3_gastritis_c3",
+"question_stem": "A 49-year-old heavy smoker with dyspepsia asks how smoking harms his stomach. Which of the following is NOT one of the six smoking-related mechanisms listed in the lecture?",
+"options": ["Increases pancreatic bicarbonate secretion", "Decreases mucus secretion", "Reduces prostaglandin synthesis", "Stimulates bile salt reflux", "Stimulates gastric acid secretion"],
+"correct_index": 0,
+"explanation_ar": "الجواب الصحيح (الآلية غير المذكورة): زيادة إفراز البنكرياس للبيكربونات - بل العكس تماماً، فالتدخين ينقص إفراز البيكربونات البنكرياسية. أما بقية الخيارات فكلها آليات حقيقية للتدخين في المحاضرة: ينقص إفراز المخاط، ينقص تصنيع البروستاغلاندينات، يحرض قلس الأملاح الصفراوية، ويحرض إفراز حمض المعدة، كما يغير جريان الدم المخاطي.",
+"difficulty": "advanced",
+"clinical_vignette": true,
+"hints": ["Smoking weakens defense and strengthens attack.", "Bicarbonate belongs to the defense side - does smoking increase it?"]
+}
+],
+"clinical_cases": [
+{
+"id": "L3_gastritis_case1",
+"lecture_id": "L3_gastritis",
+"title": "NSAID-Induced Acute Erosive Gastritis with Upper GI Bleeding",
+"scenario": "A 58-year-old man is brought to the emergency department with two episodes of coffee-ground vomiting and black tarry stools over the past 24 hours. He has been taking daily ibuprofen for three weeks for knee osteoarthritis and describes a week of burning epigastric pain before the bleeding started.",
+"vignette": {
+"age": 58,
+"sex": "male",
+"chief_complaint": "Coffee-ground vomiting and black tarry stools for 24 hours",
+"history": "Osteoarthritis of both knees treated with over-the-counter ibuprofen 400 mg three times daily for 3 weeks; burning epigastric pain for 1 week; no previous peptic ulcer disease; no anticoagulants; social alcohol use; heavy smoker (30 pack-years); no prior gastric or biliary surgery.",
+"vitals": {"bp": "106/68 mmHg", "hr": "104 bpm", "rr": "18 /min", "temp": "36.9 C", "spo2": "97% on room air"},
+"exam": "Mild pallor of the conjunctivae; epigastric tenderness without guarding or rebound; no hepatosplenomegaly; melena on digital rectal examination; no stigmata of chronic liver disease.",
+"labs": [
+{"name": "Hemoglobin", "value": "9.8 g/dL (13.5-17.5)", "flag": "low"},
+{"name": "Hematocrit", "value": "29% (41-53)", "flag": "low"},
+{"name": "MCV", "value": "88 fL (80-100)", "flag": "normal"},
+{"name": "WBC", "value": "9.6 x10^9/L (4.0-11.0)", "flag": "normal"},
+{"name": "Platelets", "value": "265 x10^9/L (150-400)", "flag": "normal"},
+{"name": "BUN", "value": "28 mg/dL (7-20)", "flag": "high"},
+{"name": "Creatinine", "value": "1.0 mg/dL (0.6-1.3)", "flag": "normal"},
+{"name": "INR", "value": "1.0 (0.8-1.2)", "flag": "normal"}
+],
+"imaging": "Chest X-ray normal with no free air under the diaphragm; no signs of perforation."
+},
+"steps": [
+{
+"id": "L3_gastritis_case1_s1",
+"prompt": "What is the most likely diagnosis at this stage?",
+"options": ["Acute erosive hemorrhagic gastritis secondary to NSAID use", "Type A autoimmune chronic gastritis", "Menetrier's disease", "Bile reflux gastritis", "Esophageal variceal bleeding"],
+"correct_index": 0,
+"explanation_ar": "قصة أسابيع من الإيبوبروفين مع ألم شرسوفي ثم قيء قهوائي وتُريَّح أسود ونقص خضاب تدل على التهاب المعدة الحاد التنآكلي النزفي بمضادات الالتهاب، وهو غالباً ما يكون تنآكلياً ونزفياً. النمط A مزمن عند مسنة بفقر وبيل، ومينيتريه ضخامة ثنيات مع نقص بروتين، والقلسي يحتاج جراحة سابقة، والدوالي تحتاج أعراض تشمع ولم توجد.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case1_s2",
+"prompt": "What is the confirmatory investigation of choice?",
+"options": ["Upper gastrointestinal endoscopy with biopsy", "Barium meal study", "Abdominal ultrasound", "H. pylori serology alone", "CT scan of the abdomen"],
+"correct_index": 0,
+"explanation_ar": "التهاب المعدة تشخيص نسيجي يتطلب الخزعة، والتنظير الهضمي العلوي هو الوسيلة التي ترى التآكلات وتأخذ الخزعات وتفحص الملوية البوابية في الوقت نفسه. الباريوم لا يعطي نسيجاً ولا دقة للآفات السطحية، والإيكو لا يرى المخاطية، والأمصال وحدها لا تشخص التهاب المعدة، والطبقي المحوري ليس أداة تشخيص التهاب المعدة النازف.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case1_s3",
+"prompt": "What is the immediate management?",
+"options": ["Stop ibuprofen and start acid suppression (proton pump inhibitor) with supportive care and transfusion as needed", "Continue ibuprofen and add oral antacids only", "Immediate total gastrectomy", "Domperidone alone", "Vitamin B12 injections"],
+"correct_index": 0,
+"explanation_ar": "العلاج الفوري: إيقاف الدواء المسبب مع تثبيط الحمض بمثبطات مضخة البروتون ودعم بالمحاليل والنقل عند الحاجة، فالبضع الأساسي هو إزالة عامل الهجوم وتقوية الدفاع. متابعة الإيبوبروفين مع مضادات حموضة فقط خطأ وتجاوز للسبب. استئصال المعدة ليس علاج الالتهاب الحاد. والدومبيريدون محرك يخص القلسي، وB12 يخص الوبيل المناعي.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case1_s4",
+"prompt": "During endoscopy, which additional cause of gastritis frequently co-exists with NSAIDs and should be tested and treated?",
+"options": ["Helicobacter pylori infection", "CMV gastritis", "Autoimmune gastritis", "Granulomatous gastritis", "Menetrier's disease"],
+"correct_index": 0,
+"explanation_ar": "المحاضرة تؤكد أن الأسباب تترافق معاً بكثرة، والإصابة بالملوية البوابية شائعة لدى مرضى مضادات الالتهاب، وفحصها وإبادتها عند وجودها يمنع النكس. CMV يخص مرضى الإيدز، والمناعي والحبيبي أشكال مزمنة نادرة مستقلة، ومينيتريه مرض ضخامي مستقل.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case1_s5",
+"prompt": "After recovery, what is the key prevention advice for this patient?",
+"options": ["Avoid NSAIDs/aspirin when possible (or use lowest dose with acid suppression), and stop smoking", "Increase the ibuprofen dose for his knee pain", "Take long-term iron therapy alone", "Undergo elective gastrectomy", "No follow-up is needed after the bleeding stops"],
+"correct_index": 0,
+"explanation_ar": "الوقاية هي رسالة المحاضرة: تجنب مضادات الالتهاب والأسبرين ما أمكن أو استعمال أقل جرعة فعالة مع مثبطات الحمض عند الضرورة، وترك التدخين لأنه يضر بست آليات (حمض، قلس صفراوي، جريان دم، مخاط، بروستاغلاندينات، بيكربونات بنكرياسية). زيادة الجرعة تزيد الأذية، والحديد ليس وقاية، واستئصال المعدة ليس له دور هنا، والانقطاع عن المتابعة يفوت فرصة المعالجة الوقائية.",
+"xp": 10
+}
+],
+"debriefing_ar": "التشخيص النهائي: التهاب المعدة الحاد التنآكلي النزفي بسبب مضادات الالتهاب غير الستيروئيدية. الدروس المستفادة: التهاب المعدة الحاد كثيراً ما يكون صامتاً حتى ينزف؛ تثبط هذه الأدوية COX-1 فتفقد المخاطية بروستاغلانديناتها الحامية؛ التشخيص يعتمد على التنظير الهضمي العلوي مع الخزعة لأن التهاب المعدة تشخيص نسيجي؛ العلاج إيقاف الدواء المسبب مع مثبطات مضخة البروتون والدعم؛ يجب فحص الملوية البوابية ومعالجتها لأن الأسباب تترافق؛ والوقاية (تجنب المضادات والإقلاع عن التدخين) أفضل من العلاج.",
+"difficulty": "core",
+"order_index": 0
+},
+{
+"id": "L3_gastritis_case2",
+"lecture_id": "L3_gastritis",
+"title": "Autoimmune Type A Chronic Gastritis Presenting as Pernicious Anemia",
+"scenario": "A 68-year-old woman attends the outpatient clinic with four months of progressive fatigue, breathlessness on exertion, a sore smooth tongue and tingling numbness in both feet. She takes no drugs, has had no gastric surgery and reports no GI bleeding.",
+"vignette": {
+"age": 68,
+"sex": "female",
+"chief_complaint": "Progressive fatigue, sore tongue and tingling of both feet for 4 months",
+"history": "No NSAID or aspirin use; no alcohol; no previous gastric or biliary surgery; menopause at age 52; sister has autoimmune thyroid disease.",
+"vitals": {"bp": "128/78 mmHg", "hr": "88 bpm", "rr": "16 /min", "temp": "36.6 C", "spo2": "98% on room air"},
+"exam": "Pale conjunctivae with a mild lemon-yellow skin tint; smooth atrophic tongue (glossitis); decreased vibration sense at both ankles; no abdominal tenderness or organomegaly; no peripheral edema.",
+"labs": [
+{"name": "Hemoglobin", "value": "9.0 g/dL (12.0-15.5)", "flag": "low"},
+{"name": "MCV", "value": "116 fL (80-100)", "flag": "high"},
+{"name": "WBC", "value": "3.9 x10^9/L (4.0-11.0)", "flag": "low"},
+{"name": "Platelets", "value": "148 x10^9/L (150-400)", "flag": "low"},
+{"name": "Vitamin B12", "value": "92 pg/mL (200-900)", "flag": "low"},
+{"name": "Fasting gastrin", "value": "760 pg/mL (<100)", "flag": "high"},
+{"name": "Anti-parietal cell antibodies", "value": "Positive (negative in healthy)", "flag": "high"},
+{"name": "LDH", "value": "410 U/L (120-246)", "flag": "high"}
+],
+"imaging": "Upper endoscopy: atrophic gastric body mucosa with visible vascular patterns and one small nodular (polypoid) lesion; the antrum appears preserved."
+},
+"steps": [
+{
+"id": "L3_gastritis_case2_s1",
+"prompt": "What is the most likely diagnosis?",
+"options": ["Type A autoimmune chronic gastritis with pernicious anemia", "Type B H. pylori antral gastritis", "Reflux gastritis after cholecystectomy", "Menetrier's disease", "CMV gastritis"],
+"correct_index": 0,
+"explanation_ar": "فقر دم كبير الكريات مع نقص B12 وارتفاع الغاسترين وأضداد الخلايا الجدارية وضمور جسم المعدة مع سلامة البواب = النمط A المناعي الذاتي المصحوب بفقر الدم الوبيل. النمط B ملوية بوابية بصرية البواب وتعرض للقرحة. القلسي يتطلب جراحة سابقة. ومينيتريه ضخامة ثنيات مع نقص بروتين، وCMV يخص ضعيفي المناعة.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case2_s2",
+"prompt": "Which laboratory pattern is expected from the loss of parietal cell function?",
+"options": ["Achlorhydria with hypergastrinemia and loss of intrinsic factor", "Hypochlorhydria with hypogastrinemia and high intrinsic factor", "Hyperchlorhydria with low gastrin", "Increased acid with increased intrinsic factor", "Normal acid secretion with high intrinsic factor"],
+"correct_index": 0,
+"explanation_ar": "تخرب الخلايا الجدارية يعني لا حمض (لاكلورهيدريا) ولا عامل داخلي؛ وغياب الحمض يلغي التثبيط الراجع على خلايا G فيرتفع الغاسترين (فرط غاسترينيمية)، وفقد العامل الداخلي يمنع امتصاص B12 فيحدث فقر الدم الوبيل. لا يمكن أن يكون الغاسترين منخفضاً مع غياب الحمض، ولا يمكن أن يرتفع الحمض بعد تخرب الخلايا المفرزة له أصلاً.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case2_s3",
+"prompt": "Why is this patient's gastritis a 'premalignant' condition?",
+"options": ["Long-standing autoimmune atrophic gastritis can progress to microadenoma and gastric neoplasia, so endoscopic surveillance is needed", "It always transforms into MALT lymphoma within one year", "It causes severe GI bleeding within months", "It produces protein-losing gastropathy leading to cancer", "It raises gastric acid to carcinogenic levels"],
+"correct_index": 0,
+"explanation_ar": "المحاضرة تذكر ضمن النمط A الورم الغدي الصغير وأن الحالة ما قبل سرطانية، فالضمور المناعي طويل الأمد يستوجب مراقبة تنظيرية. التحول لليمفوما كل سنة مبالغة غير مذكورة، والنزف الشديد يخص الحاد النزفي لا هذا النمط، وفقد البروتين سمة مينيتريه، والحمض منخفض أصلاً هنا لا مرتفع.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case2_s4",
+"prompt": "What is the appropriate treatment for this patient?",
+"options": ["Vitamin B12 replacement (parenteral) with endoscopic surveillance", "Domperidone therapy", "Bile-chelating agents", "H. pylori eradication triple therapy", "Immediate total gastrectomy"],
+"correct_index": 0,
+"explanation_ar": "العلاج تعويض فيتامين B12 بالحقن لمعالجة فقر الدم الوبيل والأعراض العصبية مع المراقبة التنظيرية لأن الحالة ما قبل سرطانية. الدومبيريدون والخالبات الصفراوية تعالجان القلسي، وإبادة الملوية تعالج النمط B، أما استئصال المعدة فيحفظ لحالات مينيتريه أو الورم الغازي وليس خط العلاج الأول هنا.",
+"xp": 10
+},
+{
+"id": "L3_gastritis_case2_s5",
+"prompt": "The small polypoid lesion biopsied at endoscopy proves to be a microadenoma. Which association does the lecture list for such lesions in Type A gastritis?",
+"options": ["Hypergastrinemia", "Helicobacter pylori infection", "Bile reflux", "Cigarette smoking", "Iron therapy"],
+"correct_index": 0,
+"explanation_ar": "تذكر المحاضرة في سلسلة النمط A: فرط الغاسترينيمية والورم الغدي الصغير؛ ففرط الغاسترين الناتج عن غياب التثبيط الحمضي هو الاقتران المذكور للأورام الغدية الصغيرة. الملوية تخص النمط B، والقلس يخص النمط القلسي، والتدخين عامل هجوم عام، والحديد مهيج للمخاطية لا علاقة له بالأورام الغدية.",
+"xp": 10
+}
+],
+"debriefing_ar": "التشخيص النهائي: التهاب المعدة المزمن من النمط A (مناعي ذاتي) مترافق مع فقر الدم الوبيل. الدروس المستفادة: أضداد الخلايا الجدارية تخرب الخلايا المفرزة للحمض والعامل الداخلي فتحدث اللاكلورهيدريا، وفرط الغاسترينيمية بغياب التثبيط الراجع، ونقص امتصاص B12 فيحدث فقر دم كبير الكريات مع أعراض عصبية (تنميل واضطراب حس الاهتزاز) وحمار اللسان. الحالة ما قبل سرطانية (ورم غدي صغير/سرطان معدة) ولذلك تلزم المراقبة التنظيرية، والعلاج تعويض B12 بالحقن مع المتابعة الدورية.",
+"difficulty": "advanced",
+"order_index": 1
+}
+]
+}

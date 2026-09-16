@@ -1,0 +1,989 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L6_pneumonia_cap",
+    "specialty": "internal_medicine",
+    "title": "Pneumonia I — Community-Acquired Pneumonia (CAP)",
+    "module": "pulmonology",
+    "system": "respiratory",
+    "source": {
+      "file_name": "L6 Pneumonia.pdf",
+      "page_count": 24
+    },
+    "tags": [
+      "pneumonia",
+      "cap",
+      "curb-65",
+      "consolidation",
+      "antibiotics",
+      "streptococcus-pneumoniae"
+    ],
+    "order_index": 5,
+    "golden_tip": [
+      "CURB-65: Confusion, Urea > 7 mmol/L, Respiratory rate > 30/min, Blood pressure (SBP < 90 or DBP < 60), age > 65. Score 0–1 = likely home therapy; 2 = hospital-supervised; 3 = severe pneumonia, assess ICU (especially if 4–5). Urea > 7 is also a blood severity marker.",
+      "Pneumonia is 'the old man's friend' — extremes of age, and atypical presentations (confusion, falls, no fever) in the very young and elderly. Rust-coloured sputum = S. pneumoniae; staphylococcal pneumonia follows influenza and cavitates with pneumatocoeles."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L6_c1",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Definitions, Classification and Pathology",
+      "summary_ar": "تعريف الالتهاب الرئوي وتصنيفه (CAP/HAP/مثبطو المناعة)، الفرق بين الفصي والقصبي، ومراحل الاستجابة الالتهابية الأربع.",
+      "sections": [
+        {
+          "heading": "Definition and Classification",
+          "body_text": "**Pneumonia is an acute respiratory illness with recently developed radiological pulmonary shadowing, which may be segmental, lobar or multilobar** — an acute inflammation of the substance of the lung. It is classified as: **(1) Community-acquired (CAP)**, **(2) Hospital-acquired (HAP)**, and **(3) Pneumonia in immunocompromised hosts**. Two radiological-pathological descriptors: **'Lobar pneumonia' refers to homogeneous consolidation of one or more lung lobes, often with associated pleural inflammation**, whereas **'Bronchopneumonia' refers to more patchy alveolar consolidation associated with bronchial and bronchiolar inflammation, often affecting both lower lobes.** These terms describe patterns, not organisms — any pathogen can produce either picture, which is why the lecture emphasizes that the clinical and radiological picture does not reliably differentiate organisms.",
+          "key_points": [
+            "Pneumonia = acute respiratory illness + new radiological pulmonary shadowing (segmental, lobar, multilobar)",
+            "Classes: CAP, HAP, immunocompromised-host pneumonia",
+            "Lobar pneumonia: homogeneous lobar consolidation ± pleural inflammation",
+            "Bronchopneumonia: patchy consolidation + bronchiolar inflammation, both lower lobes"
+          ]
+        },
+        {
+          "heading": "The Four Stages of Lobar Pneumonia (Inflammatory Response)",
+          "body_text": "The inflammatory response in lobar pneumonia evolves through four classical stages: **First stage — CONGESTION**: the alveolar units are flooded by a proteinaceous exudate with neutrophils, red blood cells and numerous pneumococci. **Second stage — RED HEPATISATION**: as fibrin forms, the cut surface of the affected lobe resembles liver (red, firm, airless). **Third stage — GREY HEPATISATION**: as congestion resolves, the lung tissue becomes grey (fibrin, degenerating RBCs, WBCs). **Fourth stage — RESOLUTION**: clearance and repair mechanisms restore the normal architecture of the lung.** This sequence underlies the changing physical signs — in early consolidation you may hear only reduced air entry and crackles, while established consolidation gives dullness to percussion, bronchial breathing and whispering pectoriloquy.",
+          "key_points": [
+            "Stage 1 Congestion: proteinaceous exudate + neutrophils + RBCs + pneumococci",
+            "Stage 2 Red hepatisation: fibrin — lung resembles liver on cut surface",
+            "Stage 3 Grey hepatisation: congestion resolves, lung turns grey",
+            "Stage 4 Resolution: normal architecture restored"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Consolidation",
+          "definition_ar": "انسداد سنخي بمفرزات التهابية يجعل النسيج صلباً موصلاً للصوت (تنفس قصبي، كلام همسي مسموع)."
+        },
+        {
+          "term": "Hepatisation",
+          "definition_ar": "تحول النسيج الرئوي لقوام يشبه الكبد خلال تطور الالتهاب الفصي (أحمر ثم رمادي)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L6_c2",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Epidemiology, Predisposing Factors and Organisms",
+      "summary_ar": "وبائيات CAP وعوامل المهيأة وقائمة المسببات البكتيرية والفيروسية مع القرائن السياقية لكل ميكروب.",
+      "sections": [
+        {
+          "heading": "Epidemiology and Predisposing Factors",
+          "body_text": "CAP accounts for **around 5–12% of all lower respiratory tract infections**. It **affects all age groups but is commonest at the extremes of age** — known as **'the old man's friend'**. Spread is **by droplet infection in most cases**, and the agent most commonly implicated is **Streptococcus pneumoniae**. Adult CAP is increasingly recognized as caused by **viral infections**. Although CAP may occur in previously healthy people, several factors impair the effectiveness of local defense and predispose to pneumonia: **cigarette smoking, alcohol, pre-existing lung disease, upper respiratory tract infections, corticosteroid therapy, old age, recent influenza infection, HIV, and indoor air pollution.**",
+          "key_points": [
+            "CAP = 5–12% of LRTIs; extremes of age; 'old man's friend'",
+            "Droplet spread; commonest agent: Streptococcus pneumoniae; viral CAP increasingly recognized",
+            "Predisposing: smoking, alcohol, pre-existing lung disease, URTI, corticosteroids, old age, recent influenza, HIV, indoor air pollution"
+          ]
+        },
+        {
+          "heading": "Organisms Causing CAP",
+          "body_text": "**Bacteria**: Streptococcus pneumoniae; Mycoplasma pneumoniae; Legionella pneumophila; Chlamydia pneumoniae; Haemophilus influenzae; Staphylococcus aureus; Chlamydia psittaci; Coxiella burnetii (Q fever); Klebsiella pneumoniae. **Viruses**: influenza, parainfluenza, measles, herpes simplex, varicella, adenovirus, cytomegalovirus (CMV), and coronavirus. S. pneumoniae remains the single most important pathogen and the commonest cause of severe and fatal CAP.",
+          "key_points": [
+            "Bacteria: pneumococcus, Mycoplasma, Legionella, C. pneumoniae, H. influenzae, S. aureus, C. psittaci, Coxiella burnetii, Klebsiella",
+            "Viruses: influenza, parainfluenza, measles, HSV, varicella, adenovirus, CMV, coronavirus"
+          ]
+        },
+        {
+          "heading": "Clinical Context Pointers to the Organism",
+          "body_text": "A 'best guess' as to the likely organism is made from the **context in which pneumonia develops — NOT from the clinical or radiological picture**, which does not differ sufficiently between organisms. The lecture examples: **Mycoplasma pneumoniae is more common in the young and rare in the elderly**; **Haemophilus influenzae is more common in the elderly when underlying lung disease is present**; **Legionella pneumophila occurs in local outbreaks centred on contaminated cooling systems** (hotels, hospitals); **Staphylococcus aureus is more common following an episode of influenza**; and **foreign travel facilitates the spread of illnesses such as severe acute respiratory syndrome (SARS), caused by coronavirus**. These epidemiological hooks are the high-yield 'trigger words' of exam vignettes.",
+          "key_points": [
+            "Guess the organism from CONTEXT, not from clinical/radiological picture",
+            "Mycoplasma: young, rare in elderly",
+            "H. influenzae: elderly + underlying lung disease",
+            "Legionella: local outbreaks from contaminated cooling systems",
+            "S. aureus: post-influenza",
+            "Foreign travel: SARS (coronavirus)"
+          ],
+          "check": {
+            "prompt": "A 68-year-old COPD smoker develops CAP. Which organism is statistically favored by this context?",
+            "options": [
+              "Mycoplasma pneumoniae",
+              "Haemophilus influenzae",
+              "Legionella",
+              "Chlamydia psittaci"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المستدمية النزلية أشيع عند المسنين مع مرض رئوي مسبق، بينما الميكوبلازما في الشباب والليجيونيلا في فاشيات أبراج التبريد."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Atypical pathogens",
+          "definition_ar": "ميكوبلازما وليجيونيلا وكلاميديا: لا تُرى بالصبغة وتحتاج مصليات/PCR؛ تسبب CAP 'غير النمطية'."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L6_c3",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Clinical Features and Examination",
+      "summary_ar": "الأعراض الجهازية والرئوية، البصاق الصدئي، الألم الجنبي، علامات الإتراق الفصي، ومؤشرات الشدة في الفحص.",
+      "sections": [
+        {
+          "heading": "Symptoms",
+          "body_text": "Lobar pneumonia usually presents as an **acute illness**. **Systemic features: fever, rigors, shivering, malaise and delirium; appetite is invariably lost and headache frequently reported.** **Pulmonary symptoms: cough, which at first is short, painful and dry, but later accompanied by expectoration of muco-purulent sputum.** **Rust-coloured sputum points to Streptococcus pneumoniae**, with occasional hemoptysis. **Pleuritic chest pain may be a presenting feature, referred to the shoulder or the anterior abdominal wall** in lobar pneumonia; **upper abdominal tenderness** occurs with lower lobe pneumonia or if there is associated hepatitis (basal pneumonia inflames the liver). **Less typical presentations may be seen in the very young and the elderly** — confusion or deterioration without classic fever and cough.",
+          "key_points": [
+            "Systemic: fever, rigors, shivering, malaise, delirium, anorexia, headache",
+            "Cough: short/painful/dry → muco-purulent sputum",
+            "Rust-coloured sputum = S. pneumoniae; occasional hemoptysis",
+            "Pleuritic pain referred to shoulder/anterior abdominal wall",
+            "Upper abdominal tenderness: lower lobe pneumonia or associated hepatitis",
+            "Atypical presentations in the very young and elderly"
+          ]
+        },
+        {
+          "heading": "Physical Signs and Severity Indicators",
+          "body_text": "On examination: **raised respiratory rate and pulse rate, decreased blood pressure, and delirium in mental state — ALL are severity indicators. Pyrexia is a clue if present.** The patient may be **cyanosed and distressed with low oxygen saturation.** **Chest signs vary depending on the phase of the inflammatory response.** When consolidated, the lung is **dull to percussion** and **conduction of sound is enhanced**, producing on auscultation: **bronchial breathing, whispering pectoriloquy and crackles throughout.** **In many patients the signs are more subtle, with reduced air entry only — but crackles are usually present.** From the lecture's radiology slides: right middle lobe consolidation **obliterates the right heart border (positive silhouette sign)** while the diaphragm stays visible, whereas right upper lobe consolidation shows a dense opacity with **air bronchograms** respecting the horizontal fissure.",
+          "key_points": [
+            "Severity indicators: raised RR and PR, decreased BP, delirium; low SpO2, cyanosis, distress",
+            "Consolidation: dull to percussion + enhanced sound conduction",
+            "Auscultation: bronchial breathing, whispering pectoriloquy, crackles",
+            "Subtle cases: reduced air entry only, but crackles usually present",
+            "RML pneumonia obscures right heart border (silhouette sign); RUL shows air bronchograms"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Whispering pectoriloquy",
+          "definition_ar": "سماع الهمس المكتوم بوضوح فوق منطقة الانسداد؛ علامة انسداد مثل التنفس القصبي."
+        },
+        {
+          "term": "Air bronchogram",
+          "definition_ar": "برونشات هوية ظاهرة ضمن نسيج مطبق: علامة انسداد سنخي مع بقاء القصبات سالكة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L6_c4",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Investigations",
+      "summary_ar": "أهداف التحقيقات، اختبارات الدم ومؤشرات الشدة فيها، الصورة الشعاعية، والفحوص الميكروبيولوجية و معايير القشع المقبول.",
+      "sections": [
+        {
+          "heading": "Aims and Principles",
+          "body_text": "The aims of investigation are to: **(1) confirm the diagnosis, (2) exclude other conditions, (3) assess the severity, and (4) identify the development of complications.** Note the pragmatic rule: **whilst many cases of mild to moderate CAP can be successfully managed without identification of the organism, a range of microbiological tests should be performed on patients with severe CAP.** In other words, the sicker the patient, the harder you look for the organism.",
+          "key_points": [
+            "Aims: confirm diagnosis, exclude other conditions, assess severity, identify complications",
+            "Mild-moderate CAP: organism identification often unnecessary",
+            "Severe CAP: full microbiological workup indicated"
+          ]
+        },
+        {
+          "heading": "Blood Tests and Their Severity Meaning",
+          "body_text": "**Full blood count**: a **very high white cell count (> 20 x10^9/L) or a low count (< 4 x10^9/L) is a marker of severity**; **neutrophil leucocytosis > 15 x10^9/L suggests bacterial aetiology**; **haemolytic anaemia is an occasional complication of Mycoplasma** (cold agglutinins). **Urea and electrolytes**: **urea > 7 mmol/L is a marker of severity** (and a CURB-65 component); **hyponatraemia is also a marker of severity.** **Liver function tests**: abnormal if basal pneumonia inflames the liver; **hypoalbuminaemia is a marker of severity.** **ESR/CRP**: non-specifically elevated. These laboratory severity markers complement the clinical CURB-65 score in deciding the site of care.",
+          "key_points": [
+            "WBC > 20 or < 4 x10^9/L = severity marker; neutrophils > 15 = bacterial",
+            "Haemolytic anaemia: complication of Mycoplasma",
+            "Urea > 7 mmol/L = severity (CURB); hyponatraemia = severity",
+            "LFT abnormal with basal pneumonia; hypoalbuminaemia = severity",
+            "ESR/CRP non-specifically raised"
+          ]
+        },
+        {
+          "heading": "Chest X-ray and CT Patterns",
+          "body_text": "**Lobar pneumonia**: patchy opacification evolves into **homogeneous consolidation of the affected lobe**, with an **air bronchogram** (air-filled bronchi appear lucent against consolidated lung). **Bronchopneumonia**: typically **patchy and segmental shadowing**. **Complications seen on imaging**: **para-pneumonic effusion, intrapulmonary abscess or empyema.** **Staphylococcus aureus** produces **multilobar shadowing, cavitation, pneumatocoeles and abscesses.** **CT of the chest** is used in patients with suspected **post-obstructive pneumonia** (e.g., behind a tumour). **Pleural fluid: always aspirate and culture when more than trivial amounts are present, with ultrasound guidance.**",
+          "key_points": [
+            "Lobar: patchy → homogeneous lobar consolidation + air bronchogram",
+            "Bronchopneumonia: patchy segmental shadowing",
+            "Complications: para-pneumonic effusion, abscess, empyema",
+            "Staph aureus: multilobar shadowing, cavitation, pneumatocoeles",
+            "CT: post-obstructive pneumonia; pleural fluid always aspirated (US-guided) if non-trivial"
+          ]
+        },
+        {
+          "heading": "Microbiological Tests",
+          "body_text": "**Blood culture** — bacteraemia is a marker of severity. **Serology**: acute and convalescent titres for **Mycoplasma, Chlamydia, Legionella and viral infections**. **Cold agglutinins: positive in 50% of patients with Mycoplasma pneumonia**. **PCR** for Mycoplasma pneumoniae and other atypical pathogens. **Urine antigen for Legionella; serum antigen for pneumococcus.** **Arterial blood gases: measure when SaO2 < 93% or when severe clinical features are present**, to assess ventilatory failure or acidosis. **Sputum: MUST have > 25 WBCs and < 10 squamous epithelial cells per high-power field to be appropriate for culture** (more epithelial cells means salivary contamination); samples are sent for Gram stain, culture and antimicrobial sensitivity testing. **Oropharyngeal swab** is also listed among the sampling options.",
+          "key_points": [
+            "Blood culture: bacteraemia = severity marker",
+            "Serology: paired acute + convalescent for Mycoplasma, Chlamydia, Legionella, viruses",
+            "Cold agglutinins positive in ~50% of Mycoplasma",
+            "PCR for atypicals; urine Legionella antigen; serum pneumococcal antigen",
+            "ABG when SaO2 < 93% or severe features",
+            "Sputum validity: > 25 WBC AND < 10 squamous epithelial cells per HPF"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Cold agglutinins",
+          "definition_ar": "أضداد ذاتية تتفعل بالبرودة؛ إيجابية في نحو 50% من الميكوبلازما وتسبب فقر دم انحلالياً."
+        },
+        {
+          "term": "Pneumatocoele",
+          "definition_ar": "تجاويف هوائية رقيقة الجدار داخل الرئة؛ سمة الالتهاب العنقودي عند الأطفال."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L6_c5",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Severity Assessment: CURB-65 and ITU Referral",
+      "summary_ar": "تقييم الشدة: مكونات CURB-65 الخمسة ومسارها العلاجي، ومؤشرات الإحالة للعناية المركزة.",
+      "sections": [
+        {
+          "heading": "CURB-65 Score",
+          "body_text": "**CURB-65 — score 1 point for each feature present**: **C**onfusion; **U**rea > 7 mmol/L; **R**espiratory rate > 30/min; **B**lood pressure — systolic < 90 mmHg OR diastolic < 60 mmHg; age **> 65 years.** Interpretation: **Score 0 or 1: likely to be suitable for home treatment. Score 2: consider hospital-supervised treatment** — options include short-stay inpatient or hospital-supervised outpatient. **Score 3: manage in hospital as severe pneumonia, and assess for ICU admission — especially if CURB-65 score is 4 or 5.** The score directly answers the exam question 'where should this patient be treated?' and anchors the ITU-referral rule: a **CURB score of 4–5** itself mandates intensive care assessment.",
+          "key_points": [
+            "C: confusion; U: urea > 7 mmol/L; R: RR > 30; B: SBP < 90 or DBP < 60; age > 65",
+            "0–1: home treatment likely suitable",
+            "2: hospital-supervised treatment (short-stay or supervised outpatient)",
+            "3: hospital as severe pneumonia; assess ICU especially if 4–5"
+          ],
+          "check": {
+            "prompt": "Confused 70-year-old with urea 9 mmol/L, RR 24, BP 128/70. What is the CURB-65 score and disposition?",
+            "options": [
+              "Score 3 — admit to hospital as severe pneumonia",
+              "Score 2 — consider hospital-supervised treatment",
+              "Score 1 — home treatment",
+              "Score 4 — immediate ICU intubation"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "نقاط: تشوش (1) + يوريا >7 (1) + عمر >65 (1) = 3. التنفس 24 أقل من 30 والضغط طبيعي. نتيجة 3 = استشفاء كالتهاب رئوي شديد وتقييم للعناية."
+          }
+        },
+        {
+          "heading": "Indications for Referral to the Intensive Therapy Unit (ITU)",
+          "body_text": "**Indications for ITU referral**: **a CURB-65 score of 4–5**, or **failure to respond rapidly to initial management**, plus the physiological criteria: **persisting hypoxia (PaO2 < 8 kPa (60 mmHg) despite oxygen); progressive hypercapnia; severe acidosis; circulatory shock; and reduced conscious level.** These criteria recognize the two lethal trajectories of pneumonia — refractory hypoxaemic respiratory failure and septic shock — either of which demands organ-support capability beyond the general ward.",
+          "key_points": [
+            "CURB 4–5, or failing to respond rapidly to initial management",
+            "Persisting hypoxia: PaO2 < 8 kPa (60 mmHg) despite O2",
+            "Progressive hypercapnia; severe acidosis",
+            "Circulatory shock; reduced conscious level"
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "CURB-65",
+          "definition_ar": "مقياس شدة الالتهاب الرئوي: تشوش، يوريا >7، تنفس >30، ضغط انقباضي <90 أو انبساطي <60، عمر >65."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L6_c6",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "Management, Antibiotics and Complications",
+      "summary_ar": "المعالجة: الأكسجين والسوائل، جدول المضادات الحيوية الكامل، مسكنات الألم الجنبي، الاستجابة العلاجية، الوفيات، والمضاعفات.",
+      "sections": [
+        {
+          "heading": "General Management and Oxygen",
+          "body_text": "**The most important aspects of management are: oxygenation, fluid balance, antibiotic therapy and — in severe or prolonged illness — nutritional support.** **Oxygen is indicated in tachypnoea, hypoxaemia, hypotension or acidosis, with the aim of maintaining PaO2 at or above 60 mmHg or SaO2 at or above 92%.** **High concentrations (35% or more), humidified, should be used in all patients who do not have hypercapnia associated with COPD.** **Continuous positive airway pressure (CPAP) is used in those who remain hypoxic, managed in intensive care.** **Intravenous fluids** should be considered in patients with **severe illness, older patients, and those who are vomiting**; otherwise adequate oral intake is encouraged; **inotropic support may be required in patients with shock.**",
+          "key_points": [
+            "Priorities: oxygenation, fluid balance, antibiotics, nutrition (severe/prolonged)",
+            "O2 targets: PaO2 ≥ 60 mmHg or SaO2 ≥ 92%",
+            "High-flow (≥ 35%) humidified O2 unless COPD hypercapnia",
+            "CPAP in refractory hypoxemia (ICU); IV fluids in severe/elderly/vomiting; inotropes in shock"
+          ]
+        },
+        {
+          "heading": "Antibiotic Principles and the CAP Regimen Table",
+          "body_text": "**Prompt administration of antibiotics improves outcome. The initial choice is guided by: clinical context, severity assessment, and local knowledge of antibiotic resistance.** **In most uncomplicated pneumonia a 7-day course is adequate — longer in Legionella, staphylococcal or Klebsiella pneumonia. Oral antibiotics are usually adequate unless there is severe illness or impaired consciousness.** The lecture regimen table (memorize the doses): **Uncomplicated CAP: amoxicillin 500 mg three times daily orally.** **Penicillin allergy: clarithromycin 500 mg twice daily, or erythromycin 500 mg four times daily orally.** **If Staphylococcus is cultured or suspected: flucloxacillin 1–2 g four times daily IV PLUS clarithromycin 500 mg twice daily IV.** **If Mycoplasma or Legionella is suspected: clarithromycin 500 mg twice daily orally/IV (or erythromycin 500 mg QDS) PLUS rifampicin 600 mg twice daily IV in severe cases.** **Severe CAP: clarithromycin 500 mg BD IV (or erythromycin 500 mg QDS IV) PLUS one of: co-amoxiclav 1.2 g TDS IV, ceftriaxone 1–2 g daily IV, cefuroxime 1.5 g TDS IV; OR amoxicillin 1 g QDS IV plus flucloxacillin 2 g QDS IV.**",
+          "key_points": [
+            "Prompt antibiotics improve outcome; guided by context + severity + local resistance",
+            "Uncomplicated: 7 days; longer for Legionella/staph/Klebsiella",
+            "Uncomplicated CAP: amoxicillin 500 mg TDS PO",
+            "Penicillin allergy: clarithromycin 500 mg BD or erythromycin 500 mg QDS",
+            "Staph: flucloxacillin 1–2 g QDS IV + clarithromycin 500 mg BD IV",
+            "Mycoplasma/Legionella: clarithromycin ± rifampicin 600 mg BD IV if severe",
+            "Severe CAP: clarithromycin IV + (co-amoxiclav 1.2 g TDS / ceftriaxone 1–2 g / cefuroxime 1.5 g TDS), or amoxicillin 1 g QDS + flucloxacillin 2 g QDS"
+          ]
+        },
+        {
+          "heading": "Pleuritic Pain, Physiotherapy and Response to Therapy",
+          "body_text": "**Pleural pain may prevent breathing normally and coughing efficiently.** For the majority, **analgesia with paracetamol, co-codamol or NSAIDs is sufficient; opiates, if required, are used with extreme caution in patients with poor respiratory function, as they may suppress ventilation.** **Physiotherapy is not usually indicated in patients with CAP, but may help expectoration in those who suppress cough because of pleural pain.** **Response to therapy**: most patients respond promptly to antibiotics, but **fever may persist for several days**, and **the chest X-ray often takes several weeks to clear, especially in old age** (radiological resolution lags behind clinical recovery). **Delayed recovery suggests either: a complication, incorrect diagnosis, secondary proximal bronchial obstruction, or recurrent aspiration.**",
+          "key_points": [
+            "Analgesia for pleuritic pain: paracetamol, co-codamol, NSAIDs; opiates with EXTREME caution (suppress ventilation)",
+            "Physiotherapy not routine; helps those suppressing cough from pain",
+            "Fever may persist days; CXR takes weeks to clear (longer in elderly)",
+            "Delayed recovery: complication, wrong diagnosis, proximal obstruction, recurrent aspiration"
+          ]
+        },
+        {
+          "heading": "Mortality and Complications",
+          "body_text": "**Mortality**: in adults with **non-severe pneumonia it is very low (< 1%)**; **hospital death rates are typically 5–10%**; and **may be as high as 50% in severe illness.** **Complications of pneumonia**: **para-pneumonic effusion (common)**; **empyema**; **retention of sputum causing lobar collapse**; **deep vein thrombosis and pulmonary embolism**; **pneumothorax (Staph. aureus)**; **suppurative pneumonia/lung abscess**; **ARDS, renal failure, multi-organ failure**; **ectopic abscess formation (Staph. aureus)**; **hepatitis, pericarditis, myocarditis, meningo-encephalitis**; and **pyrexia due to drug hypersensitivity (a cause of FUO — fever of unknown origin)**.",
+          "key_points": [
+            "Mortality: < 1% non-severe; 5–10% in hospital; up to 50% in severe illness",
+            "Common: para-pneumonic effusion; empyema; lobar collapse from sputum retention",
+            "Thrombotic: DVT and PE",
+            "Staph-specific: pneumothorax, ectopic abscesses",
+            "Suppurative pneumonia/lung abscess; ARDS, renal failure, MOF",
+            "Hepatitis, pericarditis, myocarditis, meningo-encephalitis",
+            "Drug hypersensitivity pyrexia (FUO)"
+          ]
+        }
+      ],
+      "key_terms": [],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L6_f1",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Define pneumonia and its radiological requirement.",
+      "back_text": "Pneumonia is an acute respiratory illness with recently developed radiological pulmonary shadowing, which may be segmental, lobar or multilobar (acute inflammation of the lung substance). Classified: community-acquired (CAP), hospital-acquired (HAP), and pneumonia in immunocompromised hosts.",
+      "explanation_ar": "لا تشخيص التهاب رئوي دون ظل شعاعي حديث.",
+      "is_vivid": false,
+      "tags": [
+        "definition"
+      ]
+    },
+    {
+      "id": "L6_f2",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Differentiate lobar pneumonia from bronchopneumonia.",
+      "back_text": "Lobar pneumonia: radiological/pathological term for homogeneous consolidation of one or more lung lobes, often with pleural inflammation. Bronchopneumonia: more patchy alveolar consolidation associated with bronchial and bronchiolar inflammation, often affecting both lower lobes.",
+      "explanation_ar": "فصي=متجانس؛ قصبي=رقعى قاعد bilateral.",
+      "is_vivid": false,
+      "tags": [
+        "pathology"
+      ]
+    },
+    {
+      "id": "L6_f3",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c1",
+      "card_type": "basic",
+      "front_text": "Name the four stages of lobar pneumonia in order.",
+      "back_text": "1st Congestion: alveoli flooded by proteinaceous exudate, neutrophils, RBCs and numerous pneumococci. 2nd Red hepatisation: fibrin forms; cut surface resembles liver. 3rd Grey hepatisation: congestion resolves, tissue becomes grey. 4th Resolution: clearance and repair restore normal architecture.",
+      "mnemonic_ar": "احمرق-رمادى-إصلاح: Congestion → Red → Grey → Resolution.",
+      "is_vivid": false,
+      "tags": [
+        "pathology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f4",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c2",
+      "card_type": "basic",
+      "front_text": "List the predisposing factors for pneumonia.",
+      "back_text": "Cigarette smoking; alcohol; pre-existing lung disease; upper respiratory tract infections; corticosteroid therapy; old age; recent influenza infection; HIV; indoor air pollution.",
+      "explanation_ar": "تسعة عوامل تضعف الدفاع المحلي.",
+      "is_vivid": false,
+      "tags": [
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "L6_f5",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c2",
+      "card_type": "basic",
+      "front_text": "Which organisms cause CAP? (bacteria and viruses)",
+      "back_text": "Bacteria: Streptococcus pneumoniae, Mycoplasma pneumoniae, Legionella pneumophila, Chlamydia pneumoniae, Haemophilus influenzae, Staphylococcus aureus, Chlamydia psittaci, Coxiella burnetii (Q fever), Klebsiella pneumoniae. Viruses: influenza, parainfluenza, measles, HSV, varicella, adenovirus, CMV, coronavirus.",
+      "explanation_ar": "الرئوية أولاً ثم اللانمطية ثم الفيروسات.",
+      "is_vivid": false,
+      "tags": [
+        "microbiology"
+      ]
+    },
+    {
+      "id": "L6_f6",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c2",
+      "card_type": "basic",
+      "front_text": "Give the clinical-context clues for organism guessing in CAP.",
+      "back_text": "Mycoplasma: young patients, rare in elderly. H. influenzae: elderly with underlying lung disease. Legionella: local outbreaks centred on contaminated cooling systems. S. aureus: follows influenza. Foreign travel: SARS (coronavirus). Note: clinical/radiological picture does NOT reliably differentiate organisms — context does.",
+      "explanation_ar": "السياق يوجه التخمين لا الصورة السريرية أو الشعاعية.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f7",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "What sputum color suggests pneumococcal pneumonia, and what referred pains occur?",
+      "back_text": "Rust-coloured sputum suggests Streptococcus pneumoniae (occasional hemoptysis too). Pleuritic chest pain may be referred to the shoulder or the anterior abdominal wall; upper abdominal tenderness occurs in lower lobe pneumonia or with associated hepatitis.",
+      "explanation_ar": "بصاق صدئي = رئوية؛ ألم كتف/بطن = إحالة حجابية أو التهاب كبد مصاحب.",
+      "is_vivid": false,
+      "tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "L6_f8",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c3",
+      "card_type": "basic",
+      "front_text": "What are the auscultatory findings of established consolidation, and which examination findings mark severity?",
+      "back_text": "Consolidated lung: dull to percussion, enhanced sound conduction — bronchial breathing, whispering pectoriloquy, crackles throughout (subtle cases: reduced air entry only, but crackles usually present). Severity indicators: raised respiratory rate and pulse, decreased blood pressure, delirium, pyrexia a clue, cyanosis, distress, low oxygen saturation.",
+      "explanation_ar": "تقرع مكتوم + تنفس قصبي + كلام همسي = انسداد.",
+      "is_vivid": false,
+      "tags": [
+        "clinical",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f9",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "Which blood test values are severity markers in CAP?",
+      "back_text": "WBC very high > 20 x10^9/L or low < 4 x10^9/L (severity); neutrophil leucocytosis > 15 x10^9/L (bacterial); urea > 7 mmol/L (severity, CURB component); hyponatraemia (severity); hypoalbuminaemia (severity); bacteraemia on blood culture (severity). Haemolytic anaemia = occasional Mycoplasma complication.",
+      "explanation_ar": "خمسة مؤشرات مخبرية للشدة.",
+      "is_vivid": false,
+      "tags": [
+        "investigations",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f10",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "What are the CXR patterns in pneumonia and its complications?",
+      "back_text": "Lobar: patchy opacification evolving into homogeneous consolidation with air bronchogram. Bronchopneumonia: patchy segmental shadowing. Staph aureus: multilobar shadowing, cavitation, pneumatocoeles, abscesses. Complications: para-pneumonic effusion, intrapulmonary abscess, empyema. CT for post-obstructive pneumonia. Always aspirate non-trivial pleural fluid (US-guided).",
+      "explanation_ar": "برونشوغرام هوائي = انسداد؛ تكهفات = عنقودي.",
+      "is_vivid": false,
+      "tags": [
+        "imaging"
+      ]
+    },
+    {
+      "id": "L6_f11",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "What sputum criteria make a sample acceptable for culture, and when are ABGs indicated?",
+      "back_text": "Sputum MUST have > 25 WBCs and < 10 squamous epithelial cells per high-power field to be appropriate for culture (more epithelial cells = saliva contamination). ABGs are measured when SaO2 < 93% or when severe clinical features are present, to assess ventilatory failure or acidosis.",
+      "explanation_ar": ">25 كريات بيضاء و <10 خلايا حرشفية = عينة صالحة.",
+      "is_vivid": false,
+      "tags": [
+        "microbiology",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f12",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "card_type": "basic",
+      "front_text": "Which microbiological tests detect atypical pathogens?",
+      "back_text": "Serology (acute and convalescent titres) for Mycoplasma, Chlamydia, Legionella and viruses; cold agglutinins (positive in 50% of Mycoplasma pneumonia); PCR for Mycoplasma and other atypicals; urine antigen for Legionella; serum antigen for pneumococcus.",
+      "explanation_ar": "مصليات متعددة + PCR + مستضد بولي لليجيونيلا.",
+      "is_vivid": false,
+      "tags": [
+        "microbiology"
+      ]
+    },
+    {
+      "id": "L6_f13",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c5",
+      "card_type": "basic",
+      "front_text": "Recite CURB-65 and its management thresholds.",
+      "back_text": "C: confusion. U: urea > 7 mmol/L. R: respiratory rate > 30/min. B: blood pressure — systolic < 90 or diastolic < 60 mmHg. Age > 65. Score 0–1: likely suitable for home treatment. 2: consider hospital-supervised treatment (short-stay inpatient or supervised outpatient). 3: manage in hospital as severe pneumonia; assess ICU especially if 4–5.",
+      "mnemonic_ar": "CURB-65: تشوش، يوريا، تنفس، ضغط، عمر — القاعدة الذهبية.",
+      "is_vivid": false,
+      "tags": [
+        "high-yield",
+        "severity"
+      ]
+    },
+    {
+      "id": "L6_f14",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c5",
+      "card_type": "basic",
+      "front_text": "What are the indications for ITU referral in CAP?",
+      "back_text": "CURB score 4–5; failing to respond rapidly to initial management; persisting hypoxia (PaO2 < 8 kPa (60 mmHg) despite oxygen); progressive hypercapnia; severe acidosis; circulatory shock; reduced conscious level.",
+      "explanation_ar": "نقص أكسجة معاند + حماض + صدمة + وعي متدنٍ = عناية.",
+      "is_vivid": false,
+      "tags": [
+        "severity",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f15",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "What are the oxygen targets and fluid rules in CAP management?",
+      "back_text": "Oxygen indicated in tachypnoea, hypoxaemia, hypotension or acidosis; aim PaO2 ≥ 60 mmHg or SaO2 ≥ 92%. High concentrations (≥ 35%) humidified in all patients WITHOUT COPD hypercapnia. CPAP (in ICU) if remains hypoxic. IV fluids for severe illness, older patients, vomiting; otherwise oral intake; inotropes for shock.",
+      "explanation_ar": "هدف SaO2 ≥ 92%؛ بلا فرط ثنائي أكسيد الكربون أعطِ تركيزاً عالياً مرطباً.",
+      "is_vivid": false,
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L6_f16",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "Reproduce the antibiotic regimen table for CAP.",
+      "back_text": "Uncomplicated: amoxicillin 500 mg TDS PO. Penicillin allergy: clarithromycin 500 mg BD or erythromycin 500 mg QDS PO. Staph suspected/cultured: flucloxacillin 1–2 g QDS IV + clarithromycin 500 mg BD IV. Mycoplasma/Legionella: clarithromycin 500 mg BD PO/IV ± rifampicin 600 mg BD IV if severe. Severe CAP: clarithromycin 500 mg BD IV (or erythromycin 500 mg QDS IV) + co-amoxiclav 1.2 g TDS IV or ceftriaxone 1–2 g daily IV or cefuroxime 1.5 g TDS IV; or amoxicillin 1 g QDS IV + flucloxacillin 2 g QDS IV. Duration: 7 days usually; longer for Legionella, staph, Klebsiella.",
+      "explanation_ar": "احفظ الجرعات — سؤال موثق في الامتحانات.",
+      "is_vivid": false,
+      "tags": [
+        "management",
+        "high-yield"
+      ]
+    },
+    {
+      "id": "L6_f17",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "How is pleuritic pain managed in pneumonia, and why caution with opiates?",
+      "back_text": "Analgesia with paracetamol, co-codamol or NSAIDs is sufficient for the majority. Opiates, if required, are used with EXTREME caution in patients with poor respiratory function, as they may suppress ventilation. Physiotherapy is not usually indicated but may help expectoration in those who suppress cough because of pleural pain.",
+      "explanation_ar": "أفيونيات تكبت التهوية — حذر عند ضعف الوظيفة التنفسية.",
+      "is_vivid": false,
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "L6_f18",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "What does delayed recovery from pneumonia suggest, and what is the mortality by severity?",
+      "back_text": "Delayed recovery suggests: a complication, incorrect diagnosis, secondary proximal bronchial obstruction (e.g., tumour), or recurrent aspiration. Fever may persist for days and CXR takes weeks to clear (longer in elderly). Mortality: < 1% in non-severe adult pneumonia; 5–10% typical hospital death rates; up to 50% in severe illness.",
+      "explanation_ar": "تعافٍ متأخر = مضاعفة أو تشخيص خاطئ أو انسداد أو ارتجاع متكرر.",
+      "is_vivid": false,
+      "tags": [
+        "prognosis"
+      ]
+    },
+    {
+      "id": "L6_f19",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "card_type": "basic",
+      "front_text": "List the complications of pneumonia.",
+      "back_text": "Para-pneumonic effusion (common); empyema; retention of sputum causing lobar collapse; DVT and pulmonary embolism; pneumothorax (Staph aureus); suppurative pneumonia/lung abscess; ARDS, renal failure, multi-organ failure; ectopic abscess formation (Staph aureus); hepatitis, pericarditis, myocarditis, meningo-encephalitis; pyrexia due to drug hypersensitivity (FUO).",
+      "explanation_ar": "من الانصباب إلى الفشل متعدد الأعضاء.",
+      "is_vivid": false,
+      "tags": [
+        "complications",
+        "high-yield"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L6_q1",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c5",
+      "question_stem": "A 72-year-old man is admitted with fever, confusion (new disorientation), RR 26, BP 100/60, urea 9.5 mmol/L, CRP 180. What is his CURB-65 score and site-of-care decision?",
+      "options": [
+        "Score 2 — outpatient management",
+        "Score 3 — admit to hospital as severe pneumonia and assess for ICU",
+        "Score 1 — home treatment",
+        "Score 4 — immediate intubation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "النقاط: تشوش (1) + يوريا >7 (1) + عمر >65 (1) = 3 (التنفس 26 <30 والانقباضي 100 >90). نتيجة 3 = استشفاء كالتهاب الرئوي الشديد مع تقييم العناية المركزة (خاصة لو 4-5).",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "احسب النقاط واحداً واحداً",
+        "عتبة التنفس والضغط"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L6_q2",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c2",
+      "question_stem": "A 19-year-old university student has a 5-day history of dry cough, low-grade fever and malaise; his roommate had similar illness; CXR shows bilateral patchy infiltrates; cold agglutinins positive. What is the likely organism?",
+      "options": [
+        "Mycoplasma pneumoniae",
+        "Streptococcus pneumoniae",
+        "Klebsiella pneumoniae",
+        "Legionella pneumophila",
+        "Adenovirus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "شاب + مرض جماعي في السكن الجامعي + infiltrates رقعية + أضداد باردة إيجابية (50% من الميكوبلازما) = الميكوبلازما. الرئوية تعطي سعالاً منتجاً بصاقاً صدئياً وحمى شديدة، والليجيونيلا مرتبطة بأبراج التبريد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي ميكروب يصيب الشباب في تجمعات؟",
+        "ماذا تعني الأضداد الباردة؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L6_q3",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c3",
+      "question_stem": "A 54-year-old man with right lower lobe pneumonia reports severe pain in the right upper abdomen. What explains this?",
+      "options": [
+        "Lower lobe pneumonia with diaphragmatic pleural involvement (or associated hepatitis) — referred pain",
+        "Acute cholecystitis from septic spread",
+        "Renal colic",
+        "Splenic infarction"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "التهاب الفص السفلي يهيّج البطانة الجنبية فوق الحجاب فَيُحيل الألم للجدار البطني الأمامي، وقد يصاحبه التهاب كبد (خمول كبدي) بسبب قرب الفص القاعدي من الكبد — نص المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أين يُحيل الألم الجداري القاعدي؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L6_q4",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "question_stem": "Which sputum sample is appropriate for bacterial culture?",
+      "options": [
+        "> 25 WBCs and < 10 squamous epithelial cells per high-power field",
+        "> 10 WBCs and > 25 squamous epithelial cells",
+        "Any purulent-looking sample regardless of microscopy",
+        "Only samples with eosinophils"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "معيار المحاضرة: >25 كرية بيضاء و <10 خلايا حرشفية لكل حقل قوي — كثرة الحرشفيات تعني تلوثاً باللعاب وتُرفض العينة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "كثرة الخلايا الحرشفية تعني ماذا؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "L6_q5",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c2",
+      "question_stem": "A 60-year-old man develops high fever and purulent sputum 5 days after an episode of proven influenza A. CXR shows multilobar shadowing with cavitation and pneumatocoeles. What is the most likely organism?",
+      "options": [
+        "Staphylococcus aureus",
+        "Mycoplasma pneumoniae",
+        "Streptococcus pneumoniae",
+        "Coxiella burnetii",
+        "CMV"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نصان من المحاضرة: العنقوديات أكثر شيوعاً بعد الإنفلونزا، وسمتها الشعاعية ظلال متعددة الفصوص مع تكهفات وpneumatocoeles وخراجات.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما الكائن الذي يعقب الإنفلونزا؟",
+        "ما سمة تصويره؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L6_q6",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c4",
+      "question_stem": "A sputum culture is pending in a patient with severe CAP. Which laboratory value is NOT a recognized severity marker?",
+      "options": [
+        "Urea > 7 mmol/L",
+        "Neutrophil leucocytosis > 15 x10^9/L",
+        "Hypoalbuminaemia",
+        "Very high (>20) or low (<4) white cell count"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عدلات >15 تشير إلى السبب الجرثومي وليست مؤشر شدة؛ بينما يوريا >7 ونقص الألبيومين وWBC الشديد الارتفاع أو الانخفاض كلها مؤشرات شدة معتمدة في المحاضرة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "فرّق بين مؤشر السببية ومؤشر الشدة"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L6_q7",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "question_stem": "A 45-year-old with uncomplicated CAP and no allergies is started on treatment. Which regimen matches the lecture's first-line choice?",
+      "options": [
+        "Amoxicillin 500 mg three times daily orally for 7 days",
+        "Ceftriaxone 2 g IV daily for 14 days",
+        "Clarithromycin alone 500 mg QID",
+        "Levofloxacin 750 mg daily for 3 days"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نص المحاضرة: غير المعقد = أموكسيسيلين 500 ملغ ثلاث مرات يومياً فموياً (عادة 7 أيام). الماكروليدات لمن لديه حساسية بنسلينية، ونظام العلاج المزدوج للشديد.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ماذا يعني 'uncomplicated' في جدول المضادات؟"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L6_q8",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "question_stem": "A patient with severe CAP and penicillin allergy requires treatment. Which combination matches the lecture recommendations?",
+      "options": [
+        "Clarithromycin 500 mg BD IV plus ceftriaxone 1–2 g daily IV",
+        "Oral amoxicillin alone",
+        "Flucloxacillin alone",
+        "Rifampicin alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الشديد: كلاريثرومايسين 500 ملغ مرتين وريدياً (أو إريثرومايسين 500 ×4) + واحد من: كو-أموكسيسيلاف 1.2غ ×3 أو سيفترياكسون 1-2غ يومياً أو سيفوروكسيم 1.5غ ×3 — أو أموكسيسيلين 1غ ×4 + فلواكلوكساسيلين 2غ ×4.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أذكر الثنائي الأساسي للالتهاب الشديد"
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L6_q9",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c5",
+      "question_stem": "Which of the following is an indication for ITU referral in CAP?",
+      "options": [
+        "Fever persisting 48 hours into treatment",
+        "CURB-65 score of 2",
+        "Persisting hypoxia with PaO2 < 8 kPa (60 mmHg) despite oxygen therapy",
+        "CRP > 100 mg/L"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "مؤشرات العناية: CURB 4-5 أو عدم الاستجابة السريعة + نقص أكسجة معاند (PaO2 <60 رغم الأكسجين)، فرط كربون متزايد، حماض شديد، صدمة، وعي متدنٍ. الحمى المستمرة ليومين والـ CRP المرتفع ليسا مؤشري عناية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "أي معيار وظيفي عضوي؟"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L6_q10",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "question_stem": "A treated CAP patient clinically improves but the 2-week follow-up chest X-ray still shows consolidation. What is the correct interpretation?",
+      "options": [
+        "Treatment failure — change antibiotics immediately",
+        "Chest X-ray resolution lags behind clinical recovery and may take several weeks (especially in the elderly); persistent symptoms, not persistent shadow alone, should trigger workup",
+        "Immediate CT-guided biopsy",
+        "Start antituberculous therapy"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "نص المحاضرة: صورة الصدر تحتاج عدة أسابيع لتصفّيها خاصة في المسنين — التأخر المتوقع شعاعياً لا يعني فشلاً علاجياً. لكن التعافي السريري المتأخر (حمى مستمرة/أعراض) يستدعي البحث عن مضاعفة أو تشخيص خاطئ أو انسداد قصبي قريب أو ارتجاع متكرر.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "ما الذي يتأخر: الأعراض أم الصورة؟"
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L6_q11",
+      "lecture_id": "L6_pneumonia_cap",
+      "concept_id": "L6_c6",
+      "question_stem": "Which pair of complications is specifically associated with Staphylococcus aureus pneumonia?",
+      "options": [
+        "Pneumothorax and ectopic abscess formation",
+        "Cold agglutinins and hemolytic anemia",
+        "Hyponatraemia and SIADH",
+        "Empyema alone"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "خصائص العنقوديات وفق المحاضرة: استرواح الصدر والخراجات الهاجرة (ectopic abscesses) إضافة للتكهفات وpneumatocoeles شعاعياً. الأضداد الباردة والانحلال للميكوبلازما.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "أي ميكروب يغزو ويكهف ويهاجر؟"
+      ],
+      "focus_sections": [
+        3
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L6_case1",
+      "lecture_id": "L6_pneumonia_cap",
+      "title": "The Old Man's Friend — Scoring and Treating Severe CAP",
+      "scenario": "A 74-year-old man is brought to the emergency department by his family with 3 days of fever, productive cough and progressive breathlessness, and since this morning he has become confused about time and place. This case takes the student through the complete CAP pathway: recognition, severity scoring with CURB-65, interpretation of blood severity markers, first-line investigations, and the correct antibiotic and supportive therapy decisions.",
+      "vignette": {
+        "age": 74,
+        "sex": "male",
+        "chief_complaint": "Fever, productive cough and breathlessness for 3 days with new confusion",
+        "history": "Ex-smoker (40 pack-years, quit 10 years ago), mild COPD, type 2 diabetes. Illness began abruptly with rigors, fever to 39.2 C, right-sided pleuritic chest pain and a cough now producing rust-colored sputum. No recent influenza, no travel, no sick contacts. Not on immunosuppressants. Lives with family; normally independent.",
+        "vitals": {
+          "bp": "95/55 mmHg",
+          "hr": "112 beats/min",
+          "rr": "32 breaths/min",
+          "temp": "38.9 C",
+          "spo2": "88% on room air"
+        },
+        "exam": "Ill-appearing, disoriented to time. Cyanosed lips; using accessory muscles. Right base: dull to percussion, increased tactile vocal fremitus, bronchial breathing and whispering pectoriloquy with coarse crackles. Left lung clear. No leg oedema; capillary refill 3 s.",
+        "labs": [
+          {
+            "name": "White cell count",
+            "value": "22.5 x10^9/L (4-11)",
+            "flag": "critical"
+          },
+          {
+            "name": "Neutrophils",
+            "value": "19.1 x10^9/L",
+            "flag": "high"
+          },
+          {
+            "name": "Urea",
+            "value": "11.2 mmol/L (2.5-7.5)",
+            "flag": "high"
+          },
+          {
+            "name": "Creatinine",
+            "value": "141 micromol/L (60-110)",
+            "flag": "high"
+          },
+          {
+            "name": "Sodium",
+            "value": "128 mmol/L (135-145)",
+            "flag": "low"
+          },
+          {
+            "name": "Albumin",
+            "value": "28 g/L (35-50)",
+            "flag": "low"
+          },
+          {
+            "name": "CRP",
+            "value": "230 mg/L (<10)",
+            "flag": "critical"
+          },
+          {
+            "name": "Sputum Gram stain",
+            "value": "Gram-positive diplococci; >25 WBC, <10 epithelial cells/HPF",
+            "flag": "high"
+          },
+          {
+            "name": "Blood cultures x2",
+            "value": "Streptococcus pneumoniae (later)",
+            "flag": "critical"
+          },
+          {
+            "name": "ABG on room air",
+            "value": "pH 7.49, PaO2 54 mmHg, PaCO2 30 mmHg",
+            "flag": "critical"
+          }
+        ],
+        "imaging": "Chest X-ray: dense homogeneous consolidation of the right lower lobe with air bronchograms and a small meniscate para-pneumonic effusion at the right base. Left lung clear; no cavitation."
+      },
+      "steps": [
+        {
+          "id": "L6_case1_s1",
+          "prompt": "Calculate the CURB-65 score and choose the disposition.",
+          "options": [
+            "Score 2 — hospital-supervised outpatient treatment",
+            "Score 4 — manage in hospital as severe pneumonia with early ICU assessment",
+            "Score 3 — home treatment with oral amoxicillin",
+            "Score 1 — discharge with follow-up X-ray"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "النقاط: تشوش (1) + يوريا >7 (1) + تنفس >30 (1) + انقباضي <90 (1) + عمر >65 (1) = 5/5. النتيجة 4-5 تعني التهاباً رئوياً شديداً يستوجب الاستشفاء مع تقييم فوري للعناية المركزة.",
+          "xp": 15,
+          "hints": [
+            "رتب: تشوش، يوريا، تنفس، ضغط، عمر",
+            "احسب النقاط الخمس"
+          ]
+        },
+        {
+          "id": "L6_case1_s2",
+          "prompt": "Which organism is suggested by the rust-coloured sputum, Gram-positive diplococci and this clinical picture?",
+          "options": [
+            "Streptococcus pneumoniae",
+            "Staphylococcus aureus",
+            "Mycoplasma pneumoniae",
+            "Legionella pneumophila",
+            "Klebsiella pneumoniae"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "البصاق الصدئي + مكورات ثنائية إيجابية الغرام + بداية حادة بفرفرة وحمى عالية = العقدية الرئوية، أشيع مسبب للالتهاب الرئوي المكتسب مجتمعياً وأشده فتكاً.",
+          "xp": 10,
+          "hints": [
+            "لون البصاق؟",
+            "شكل الجرثوم بالغرام؟"
+          ]
+        },
+        {
+          "id": "L6_case1_s3",
+          "prompt": "What is the correct initial management package for this severe CAP?",
+          "options": [
+            "Oral amoxicillin 500 mg TDS and discharge",
+            "Oxygen targeting SaO2 ≥ 92%, IV fluids, and IV antibiotics: clarithromycin 500 mg BD + ceftriaxone 1–2 g daily (with ICU assessment)",
+            "Nebulized salbutamol only",
+            "Oral clarithromycin alone for 7 days"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "حزمة العلاج: أكسجين بهدف SaO2 ≥92% (تركيز عالٍ مرطب ما لم يوجد فرط كربون COPD)، سوائل وريدية (مرض شديد + قيء محتمل + مسن)، ومضادات وريدية للالتهاب الشديد: كلاريثرومايسين 500 ملغ ×2 + واحد من كو-أموكسيسيلاف/سيفترياكسون/سيفوروكسيم، مع تقييم العناية المركزة فوراً.",
+          "xp": 15,
+          "hints": [
+            "هدف التشبع؟",
+            "أي ثنائي وريدي للشديد؟"
+          ]
+        },
+        {
+          "id": "L6_case1_s4",
+          "prompt": "On day 3 the patient is alert, afebrile and saturating 95% on 2 L oxygen, but his family is alarmed that the repeat chest X-ray still shows consolidation. What do you tell them?",
+          "options": [
+            "The antibiotics have failed; escalate immediately",
+            "Chest X-ray resolution lags behind clinical recovery and may take several weeks (especially in the elderly); clinical improvement is the therapeutic target",
+            "He needs a CT chest now",
+            "Stop antibiotics since fever resolved"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "قاعدة المحاضرة: معظم المرضى يستجيبون سريعاً لكن الحمى قد تستمر أياماً والصورة أسابيع خاصة عند المسنين. التحسن السريري هو المعيار؛ أما استمرار الأعراض فيستدعي البحث عن مضاعفة أو انسداد قصبي أو ارتجاع متكرر.",
+          "xp": 10,
+          "hints": [
+            "ما الذي يتأخر في التصحيح: السريرية أم الصورة؟"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب رئوي مكتسب مجتمعي شديد بالعقدية الرئوية (فص أيمن سفلي) مع انصباب جاور-التهابي وتجرثم دم. الدروس المستفادة: (1) CURB-65 عملياً: 5/5 هنا (تشوش، يوريا >7، تنفس >30، انقباضي <90، عمر >65) = استشفاء كشديد + تقييم عناية فوري. (2) المؤشرات المخبرية للشدة تصدّقت: WBC >20، يوريا >7، نقص صوديوم، نقص ألبيومين، تجرثم دم. (3) البصاق الصدئي ومكورات ثنائية غرام-موجبة سمة الرئوية. (4) عينة القشع الصالحة: >25 كريات بيضاء و<10 حرشفيات. (5) علاج الشديد: أكسجين بهدف ≥92% + سوائل + كلاريثرومايسين وريدي مع سيفترياكسون/كو-أموكسيسيلاف، ومضادات فموية للبسيط فقط. (6) تصفية الصورة تتأخر أسابيع — التعافي السريري هو المعيار، والتأخر السريري هو ما يستدعي إعادة التقييم (مضاعفة/انسداد/ارتشاح متكرر).",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

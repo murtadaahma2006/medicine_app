@@ -1,8 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../../app/app.dart';
+import '../../../../core/content/lecture_template_service.dart';
+import '../../../../core/content/specialty_domains.dart';
 import '../../../../core/profile/learner_profile.dart';
 import '../../../../routing/app_router.dart';
 import '../../../../shared/widgets/widgets.dart';
@@ -26,8 +30,6 @@ class _SettingsPageState extends State<SettingsPage> {
   String? _error;
 
   String _themeMode = 'system';
-  int _dailyGoal = 10;
-
   @override
   void initState() {
     super.initState();
@@ -41,11 +43,9 @@ class _SettingsPageState extends State<SettingsPage> {
     });
     try {
       final String theme = await LearnerProfile.themeMode();
-      final int goal = await LearnerProfile.dailyGoal();
       if (!mounted) return;
       setState(() {
         _themeMode = theme;
-        _dailyGoal = goal;
         _loading = false;
       });
     } catch (_) {
@@ -64,9 +64,62 @@ class _SettingsPageState extends State<SettingsPage> {
     channel?.notifier();
   }
 
-  Future<void> _changeGoal(int goal) async {
-    setState(() => _dailyGoal = goal);
-    await LearnerProfile.setDailyGoal(goal);
+
+  /// اختيار تخصص القالب ثم تصديره — bottom sheet بالتخصصات الثلاثة
+  /// (باطنية/جراحة/نسائية) بألوانها وأيقوناتها، ثم توليد ملف JSON
+  /// الخاص بالتخصص المختار وفتح نافذة المشاركة (share sheet).
+  Future<void> _exportTemplate() async {
+    final String? specialty = await AppSheet.show<String>(
+      context,
+      title: 'أي قالب تريد تصديره؟',
+      maxHeightFactor: 0.5,
+      builder: (BuildContext sheetContext) =>
+          _SpecialtyPickerSheet(parent: this),
+    );
+    if (specialty == null || !mounted) return;
+
+    final TemplateExportResult result =
+        await LectureTemplateService.export(specialty);
+    if (!mounted) return;
+
+    if (result.ok && result.filePath != null) {
+      await Share.shareXFiles(
+        <XFile>[XFile(result.filePath!)],
+        text: 'قالب محاضرة ${SpecialtyDomains.nameAr(specialty)} '
+            '— MedOS',
+        subject: 'Lecture Template — $specialty — MedOS',
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(result.messageAr ?? 'تعذّر إنشاء ملف القالب.'),
+          duration: const Duration(milliseconds: 2200),
+        ),
+      );
+    }
+  }
+
+  /// يقرأ ملف النص من المسار المحدد داخل assets وينسخه للحافظة.
+  Future<void> _copyPrompt(String filename) async {
+    try {
+      final String text = await rootBundle.loadString('docs/$filename.txt');
+      await Clipboard.setData(ClipboardData(text: text));
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('تم نسخ برومبت $filename بنجاح!'),
+          duration: const Duration(milliseconds: 2200),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('تعذّر قراءة الملف، تأكد من تحديث الأصول (assets).'),
+          duration: Duration(milliseconds: 2200),
+        ),
+      );
+    }
   }
 
   @override
@@ -122,35 +175,7 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
         ),
 
-        const SizedBox(height: AppSpacing.xxl),
 
-        // ── قسم الهدف اليومي ──
-        const SectionHeader('الهدف اليومي'),
-        AppCard(
-          child: Row(
-            children: <Widget>[
-              for (final int goal in const <int>[5, 10, 15, 20])
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xs),
-                    child: _GoalOption(
-                      value: goal,
-                      selected: _dailyGoal == goal,
-                      onTap: () => _changeGoal(goal),
-                    ),
-                  ),
-                ),
-            ],
-          ),
-        ),
-        const SizedBox(height: AppSpacing.sm),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xs),
-          child: Text(
-            'عدد البطاقات المستحقة يومياً في «مراجعة اليوم»',
-            style: AppType.caption.copyWith(color: AppColors.textSecondary(Theme.of(context).colorScheme.brightness)),
-          ),
-        ),
 
         const SizedBox(height: AppSpacing.xxl),
 
@@ -190,10 +215,16 @@ class _SettingsPageState extends State<SettingsPage> {
             builder: (_) => const LectureImportPage(),
           )),
         ),
+        const SizedBox(height: AppSpacing.md),
+        _NavTile(
+          icon: Icons.file_upload_outlined,
+          title: 'تصدير قالب المحاضرة (JSON)',
+          subtitle: 'ملف مثال جاهز للتعبئة بمحاضرتك القادمة — شاركه أو احفظه',
+          onTap: _exportTemplate,
+        ),
 
         const SizedBox(height: AppSpacing.xxl),
 
-        // ── قسم النسخ الاحتياطي ──
         const SectionHeader('نسخة احتياطية'),
         _NavTile(
           icon: Icons.backup_rounded,
@@ -204,12 +235,37 @@ class _SettingsPageState extends State<SettingsPage> {
           )),
         ),
 
+        const SizedBox(height: AppSpacing.xxl),
+
+        // ── قسم صناعة المحتوى الذكي ──
+        const SectionHeader('صناعة المحتوى الذكي (AI)'),
+        _NavTile(
+          icon: Icons.copy_all_rounded,
+          title: 'انسخ برومبت الباطنية',
+          subtitle: 'نص تعليمات مفصل لتحويل نصوص الطب الباطني إلى محاضرات JSON ذكية',
+          onTap: () => _copyPrompt('باطنية'),
+        ),
+        const SizedBox(height: AppSpacing.md),
+        _NavTile(
+          icon: Icons.copy_all_rounded,
+          title: 'انسخ برومبت الجراحة',
+          subtitle: 'نص تعليمات مفصل لتحويل نصوص الجراحة إلى محاضرات JSON ذكية',
+          onTap: () => _copyPrompt('جراحة'),
+        ),
+        const SizedBox(height: AppSpacing.md),
+        _NavTile(
+          icon: Icons.copy_all_rounded,
+          title: 'انسخ برومبت النسائية',
+          subtitle: 'نص تعليمات مفصل لتحويل نصوص التوليد والنسائية إلى محاضرات JSON ذكية',
+          onTap: () => _copyPrompt('نسائية'),
+        ),
+
         const SizedBox(height: AppSpacing.xxxl),
 
         // ── سطر التطبيق ──
         Center(
           child: Text(
-            'منصة الطب الباطني · نسخة 1.0.0 · أوفلاين 100%',
+            'MedOS · نسخة 1.0.0 · أوفلاين 100%',
             style: AppType.caption.copyWith(
                 color: AppColors.textSecondary(Theme.of(context).colorScheme.brightness)),
           ),
@@ -300,6 +356,96 @@ class _NavTile extends StatelessWidget {
   }
 }
 
+/// ─────────────────────────────────────────────────────────────────────
+/// ورقة اختيار تخصص القالب — الباطنية/الجراحة/النسائية ببطاقات
+/// موحدة بألوان التخصصات وأيقوناتها ووصف مواد كل منها.
+/// ─────────────────────────────────────────────────────────────────────
+class _SpecialtyPickerSheet extends StatelessWidget {
+  const _SpecialtyPickerSheet({required this.parent});
+
+  /// مالك دالة التصدير — يُستدعى عليه عند الاختيار. مرجع State
+  /// مباشر داخل نفس الملف (نمط شيت نقل المحاضرة في المسار).
+  final _SettingsPageState parent;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        for (final String specialty in SpecialtyDomains.all)
+          Padding(
+            padding: const EdgeInsets.only(bottom: AppSpacing.md),
+            child: _SpecialtyOption(
+              specialty: specialty,
+              onTap: () => Navigator.of(context).pop(specialty),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+/// بطاقة تخصص واحدة داخل ورقة الاختيار.
+class _SpecialtyOption extends StatelessWidget {
+  const _SpecialtyOption({
+    required this.specialty,
+    required this.onTap,
+  });
+
+  final String specialty;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final Color accent = AppColors.specialtyPrimary(specialty, b);
+    final Color container = AppColors.specialtyContainer(specialty, b);
+
+    return AppCard(
+      onTap: onTap,
+      child: Row(
+        children: <Widget>[
+          Container(
+            width: 44,
+            height: 44,
+            decoration: BoxDecoration(
+              color: container,
+              borderRadius: BorderRadius.circular(AppRadius.chip),
+            ),
+            child: Icon(
+              SpecialtyDomains.iconOf(specialty),
+              size: 22,
+              color: accent,
+              semanticLabel: SpecialtyDomains.nameAr(specialty),
+            ),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  SpecialtyDomains.nameAr(specialty),
+                  style: AppType.body.copyWith(fontWeight: FontWeight.w700),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  SpecialtyDomains.descriptionAr(specialty),
+                  style: AppType.body.copyWith(
+                      fontSize: 12.5,
+                      color: AppColors.textSecondary(b)),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_left_rounded,
+              color: AppColors.textSecondary(b)),
+        ],
+      ),
+    );
+  }
+}
+
 /// خيار وضع مظهر واحد (فاتح/داكن/تلقائي).
 class _ThemeOption extends StatelessWidget {
   const _ThemeOption({
@@ -371,56 +517,3 @@ class _ThemeOption extends StatelessWidget {
   }
 }
 
-/// خيار هدف يومي واحد (5/10/15/20).
-class _GoalOption extends StatelessWidget {
-  const _GoalOption({
-    required this.value,
-    required this.selected,
-    required this.onTap,
-  });
-
-  final int value;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
-    final Brightness b = theme.colorScheme.brightness;
-    final Color primary = theme.colorScheme.primary;
-
-    return Semantics(
-      button: true,
-      selected: selected,
-      label: 'الهدف اليومي: $value بطاقة',
-      child: GestureDetector(
-        onTap: onTap,
-        behavior: HitTestBehavior.opaque,
-        child: AnimatedContainer(
-          duration: AppMotion.scaled(context, AppMotion.feedback),
-          curve: AppMotion.ease,
-          padding: const EdgeInsets.symmetric(vertical: AppSpacing.md),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color:
-                selected ? AppColors.primaryTint(b) : AppColors.surfaceAlt(b),
-            borderRadius: BorderRadius.circular(AppRadius.chip),
-            border: Border.all(
-              color: selected ? primary : AppColors.border(b),
-              width: selected ? 2 : 1,
-            ),
-          ),
-          child: Text(
-            '$value',
-            textDirection: TextDirection.ltr,
-            style: AppType.cardTitle.copyWith(
-              fontWeight: FontWeight.w800,
-              fontSize: 20,
-              color: selected ? primary : AppColors.textSecondary(b),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}

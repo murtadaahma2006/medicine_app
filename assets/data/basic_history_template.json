@@ -1,0 +1,457 @@
+{
+  "history_taking_module": {
+    "sections": [
+      {
+        "section_id": "demographics",
+        "title": "Patient Information",
+        "fields": [
+          {"name": "demo_todays_date", "label": "Today's Date", "type": "text"},
+          {"name": "demo_last_physical", "label": "Date of Last Physical Exam", "type": "text"},
+          {"name": "demo_first_name", "label": "First Name", "type": "text"},
+          {"name": "demo_middle_name", "label": "Middle Name", "type": "text"},
+          {"name": "demo_last_name", "label": "Last Name", "type": "text"},
+          {"name": "demo_ssn", "label": "Social Security No / ID", "type": "text"},
+          {"name": "demo_dob", "label": "Date of Birth", "type": "text"}
+        ]
+      },
+      {
+        "section_id": "basic_cc",
+        "title": "Chief Complaint",
+        "fields": [
+          {
+            "name": "cc_main",
+            "label": "Main Reason for Visit",
+            "type": "text"
+          },
+          {
+            "name": "cc_location",
+            "label": "Location / Radiation",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "section_id": "basic_hpi",
+        "title": "History of Present Illness",
+        "fields": [
+          {
+            "name": "hpi_duration",
+            "label": "Duration",
+            "type": "text"
+          },
+          {
+            "name": "hpi_onset",
+            "label": "Onset",
+            "type": "dropdown",
+            "options": [
+              "Sudden",
+              "Gradual",
+              "Intermittent"
+            ]
+          },
+          {
+            "name": "hpi_quality",
+            "label": "Quality",
+            "type": "dropdown",
+            "options": [
+              "Sharp",
+              "Dull",
+              "Aching",
+              "Burning",
+              "Throbbing",
+              "Pressure"
+            ]
+          },
+          {
+            "name": "hpi_severity",
+            "label": "Severity (1-10)",
+            "type": "dropdown",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10"
+            ]
+          },
+          {
+            "name": "hpi_factors",
+            "label": "Relieving/Aggravating Factors",
+            "type": "text"
+          },
+          {
+            "name": "hpi_interference",
+            "label": "Interference with function",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "section_id": "basic_pmh_soc",
+        "title": "Past Medical & Social",
+        "fields": [
+          {
+            "name": "pmh_illnesses",
+            "label": "Major Illnesses",
+            "type": "text"
+          },
+          {
+            "name": "pmh_surgeries",
+            "label": "Surgeries/Hospitalizations",
+            "type": "text"
+          },
+          {
+            "name": "pmh_medications",
+            "label": "Current Medications",
+            "type": "text"
+          },
+          {
+            "name": "pmh_allergies",
+            "label": "Allergies",
+            "type": "text"
+          },
+          {
+            "name": "soc_smoke",
+            "label": "Smoking",
+            "type": "dropdown",
+            "options": [
+              "Never",
+              "Current",
+              "Former"
+            ]
+          },
+          {
+            "name": "soc_drink",
+            "label": "Alcohol",
+            "type": "dropdown",
+            "options": [
+              "None",
+              "Occasional",
+              "Frequent"
+            ]
+          }
+        ]
+      },
+      {
+        "section_id": "basic_ros",
+        "title": "Review of Systems",
+        "fields": [
+          {
+            "name": "ros_const",
+            "label": "Constitutional",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_const_fever",
+                "label": "Fever",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_const_chills",
+                "label": "Chills",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_const_weight_loss",
+                "label": "Weight loss",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_const_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_eyes",
+            "label": "Eyes",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_eyes_vision_changes",
+                "label": "Vision changes",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_eyes_pain",
+                "label": "Pain",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_eyes_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_ent",
+            "label": "ENT",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_ent_hearing",
+                "label": "Hearing loss",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_ent_sore_throat",
+                "label": "Sore throat",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_ent_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_cvs",
+            "label": "Cardiovascular",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_cvs_chest_pain",
+                "label": "Chest pain",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_cvs_palpitations",
+                "label": "Palpitations",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_cvs_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_resp",
+            "label": "Respiratory",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_resp_cough",
+                "label": "Cough",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_resp_sob",
+                "label": "Shortness of breath",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_resp_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_gi",
+            "label": "Gastrointestinal",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_gi_nausea",
+                "label": "Nausea",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_gi_vomiting",
+                "label": "Vomiting",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_gi_diarrhea",
+                "label": "Diarrhea",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_gi_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_gu",
+            "label": "Genitourinary",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_gu_dysuria",
+                "label": "Dysuria",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_gu_hematuria",
+                "label": "Hematuria",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_gu_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_msk",
+            "label": "Musculoskeletal",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_msk_joint_pain",
+                "label": "Joint pain",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_msk_swelling",
+                "label": "Swelling",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_msk_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_neuro",
+            "label": "Neurological",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_neuro_headache",
+                "label": "Headache",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_neuro_weakness",
+                "label": "Weakness",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_neuro_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_psych",
+            "label": "Psychologic",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_psych_depression",
+                "label": "Depression",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_psych_anxiety",
+                "label": "Anxiety",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_psych_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_endo",
+            "label": "Endocrine",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_endo_polyuria",
+                "label": "Polyuria",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_endo_heat_intolerance",
+                "label": "Heat intolerance",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_endo_cold_intolerance",
+                "label": "Cold intolerance",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_endo_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ros_hem",
+            "label": "Hematologic",
+            "type": "group",
+            "sub_fields": [
+              {
+                "name": "ros_hem_bruising",
+                "label": "Bruising",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_hem_bleeding",
+                "label": "Bleeding",
+                "type": "boolean"
+              },
+              {
+                "name": "ros_hem_other",
+                "label": "Other (Specify)",
+                "type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "lab_references": [
+      {
+        "test": "Hemoglobin (Male)",
+        "normal_range": "13.5 - 17.5 g/dL"
+      },
+      {
+        "test": "Hemoglobin (Female)",
+        "normal_range": "12.0 - 15.5 g/dL"
+      },
+      {
+        "test": "WBC",
+        "normal_range": "4,500 - 11,000 /mcL"
+      },
+      {
+        "test": "Platelets",
+        "normal_range": "150,000 - 450,000 /mcL"
+      },
+      {
+        "test": "Sodium",
+        "normal_range": "135 - 145 mEq/L"
+      },
+      {
+        "test": "Potassium",
+        "normal_range": "3.5 - 5.0 mEq/L"
+      },
+      {
+        "test": "Creatinine",
+        "normal_range": "0.6 - 1.2 mg/dL"
+      }
+    ]
+  }
+}

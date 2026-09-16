@@ -1,0 +1,1357 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L10_autoimmune_hepatitis",
+    "title": "Autoimmune Hepatitis",
+    "specialty": "internal_medicine",
+    "module": "gastroenterology",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L10 Autoimmune Hepatitis.pdf",
+      "page_count": 16
+    },
+    "tags": [
+      "autoimmune hepatitis",
+      "Type 1 AIH",
+      "Type 2 AIH",
+      "ANA",
+      "anti-smooth muscle antibody",
+      "anti-LKM1",
+      "hypergammaglobulinemia",
+      "prednisone",
+      "azathioprine",
+      "periportal hepatitis",
+      "liver biopsy"
+    ],
+    "order_index": 9,
+    "golden_tip": [
+      "AIH = self-perpetuating hepatocellular inflammation of UNKNOWN cause + hypergammaglobulinemia + liver autoantibodies (ANA/ASMA or anti-LKM1) + EXCLUSION of Wilson, A1AT deficiency, hemochromatosis, drug-induced and viral hepatitis before you label it.",
+      "Untreated severe AIH is lethal: 40% of untreated patients die within 6 months, and 40% develop cirrhosis. Absolute treatment indications: AST >10x ULN, or AST >5x ULN with globulin >2x normal, or bridging/multiacinar necrosis.",
+      "Type 2 AIH (anti-LKM1, age 2-14, adults only 4%) progresses to cirrhosis in 82% versus 45% for Type 1 (ANA/ASMA, ages 10-20 and 45-70) — a favourite exam discriminator."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L10_autoimmune_hepatitis_c1",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Autoimmune Hepatitis — Definition, Learning Framework and Background",
+      "summary_ar": "يقدم هذا المفهوم الإطار التعليمي للمحاضرة والتعريف الدقيق لالتهاب الكبد المناعي الذاتي: التهاب كبدي خلوي ذاتي الاستدامة مجهول السبب يتميز بالتهاب المنطقة البابية وفرط غاما غلوبيولين الدم والأضداد الذاتية الكبدية في المصل مع استبعاد أمراض الكبد المزمنة الأخرى، ثم يعرض الخلفية والإنذار: 40% من مرضى الشدة غير المعالجين يموتون خلال 6 أشهر، و40% يتطورون لتليف كبدي، و40% يبدؤون بشكل حاد، والبريدنيزون والأزاثيوبرين هما حجر الأساس العلاجي.",
+      "sections": [
+        {
+          "heading": "Lecture Overview and Learning Outcomes",
+          "body_text": "The title slide of this lecture is **AUTOIMMUNE HEPATITIS** (AIH). The lecture is built on **six learning outcomes**:\n\n- **LO1** — Definition of autoimmune hepatitis (AIH)\n- **LO2** — Clinical presentation of AIH (symptoms, physical findings, laboratory features)\n- **LO3** — Differential diagnosis of AIH\n- **LO4** — Diagnosis of AIH\n- **LO5** — Subclassification of AIH (Type I vs Type II)\n- **LO6** — Treatment of AIH (indications, regimens, and reasons for preference)\n\nKeep this framework in mind while studying: AIH is one of the few chronic liver diseases in which **immunosuppression (prednisone ± azathioprine) dramatically changes the natural history**, so recognizing the disease is a high-yield skill for both written and clinical exams.",
+          "key_points": [
+            "Six learning outcomes: definition, clinical presentation, differential diagnosis, diagnosis, subclassification (Type I/II), treatment.",
+            "AIH is a chronic liver disease whose prognosis is transformed by immunosuppression."
+          ]
+        },
+        {
+          "heading": "Definition of Autoimmune Hepatitis",
+          "body_text": "**Autoimmune hepatitis (AIH)** is defined as a **self-perpetuating hepatocellular inflammation of unknown cause**. The disease is characterized by the presence of **four** cardinal elements:\n\n- **Periportal hepatitis** (interface hepatitis around portal tracts on liver histology)\n- **Hypergammaglobulinemia** (diffuse elevation of gamma globulins, predominantly IgG)\n- **Serum liver-associated autoantibodies**\n- **Exclusion of other chronic liver diseases**\n\nTwo words deserve special emphasis for exams: **self-perpetuating** means the hepatic inflammation sustains itself without an ongoing external trigger — which is exactly why sustained immunosuppression (not merely removing a cause) is required. **Unknown cause** means no virus, drug or metabolic disorder can be implicated — AIH is only diagnosed **after every other chronic liver disease has been excluded**.",
+          "key_points": [
+            "AIH = self-perpetuating hepatocellular inflammation of unknown cause.",
+            "Four characteristic features: periportal hepatitis, hypergammaglobulinemia, serum liver-associated autoantibodies, exclusion of other chronic liver diseases.",
+            "'Unknown cause' makes AIH fundamentally a diagnosis of exclusion."
+          ],
+          "check": {
+            "prompt": "Which of the following is NOT part of the characterization of autoimmune hepatitis?",
+            "options": [
+              "Periportal hepatitis",
+              "Hypergammaglobulinemia",
+              "Serum liver-associated autoantibodies",
+              "Positive hepatitis B surface antigen"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "التهاب الكبد المناعي يتسم بالتهاب المنطقة البابية وفرط غاما غلوبيولين الدم ووجود أضداد ذاتية مرتبطة بالكبد في المصل مع استبعاد أمراض الكبد المزمنة الأخرى. وجود مستضد سطحي إيجابي لفيروس B يدل على التهاب كبد فيروسي مزمن ويستبعد تشخيص AIH لأن التهاب الكبد المناعي مجهول السبب ويشترط استبعاد الالتهابات الفيروسية."
+          }
+        },
+        {
+          "heading": "Background — Natural History of Untreated AIH",
+          "body_text": "The background slide quantifies how aggressive untreated autoimmune hepatitis can be:\n\n- **40% of patients with untreated severe disease die within 6 months of diagnosis** — untreated severe AIH is a potentially lethal disease.\n- **40% develop cirrhosis**; among the cirrhotic patients **54% develop esophageal varices** and **20% die of hemorrhage** — variceal bleeding is the dominant fatal complication once cirrhosis has formed.\n- **An acute onset of illness is seen in 40% of patients** — AIH does not always behave as an insidious chronic disease; it frequently mimics an **acute hepatitis** picture (a classic exam trap: an acute hepatitis presentation with positive autoantibodies can still be AIH).\n- **Prednisone and azathioprine are the mainstay of treatment** — these immunosuppressants are the therapeutic pillars that reverse the dismal numbers above.\n\nMemory hook — three different **40%** figures: **40% die within 6 months** (untreated severe disease), **40% develop cirrhosis**, and **40% present with an acute onset**.",
+          "key_points": [
+            "40% of untreated patients with severe AIH die within 6 months of diagnosis.",
+            "40% develop cirrhosis; 54% of these develop esophageal varices and 20% die of hemorrhage.",
+            "An acute onset of illness is seen in 40% of AIH patients.",
+            "Prednisone and azathioprine are the mainstay of treatment."
+          ],
+          "check": {
+            "prompt": "According to the lecture, what percentage of patients with untreated SEVERE autoimmune hepatitis die within 6 months of diagnosis?",
+            "options": [
+              "10%",
+              "25%",
+              "40%",
+              "60%"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "الرقم الصحيح هو 40%: مرضى التهاب الكبد المناعي الشديد غير المعالجين يموت 40% منهم خلال 6 أشهر من التشخيص، وهذا يفسر أهمية البدء المبكر بالعلاج المثبط للمناعة. أما 40% الأخرى فتشير لنسبة من يتطور لهم تليف كبدي، و40% أيضاً لمن يبدأ المرض لديهم بشكل حاد."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Autoimmune hepatitis (AIH)",
+          "definition_ar": "التهاب الكبد المناعي الذاتي: التهاب كبدي خلوي ذاتي الاستدامة مجهول السبب."
+        },
+        {
+          "term": "Self-perpetuating inflammation",
+          "definition_ar": "التهاب ذاتي الاستدامة: التهاب يبقى مستمراً من تلقاء نفسه دون محفز خارجي مستمر، ولذلك يحتاج إلى علاج مثبط للمناعة."
+        },
+        {
+          "term": "Periportal hepatitis",
+          "definition_ar": "التهاب المنطقة البابية: التهاب يصيب المنطقة المحيطة بالسبلات البابية في الكبد (التهاب السطح البيني) وهو من خصائص AIH نسيجياً."
+        },
+        {
+          "term": "Hypergammaglobulinemia",
+          "definition_ar": "فرط غاما غلوبيولين الدم: ارتفاع شامل للغلوبيولينات المناعية في الدم (خاصة IgG) ويُرى في 92% من مرضى AIH."
+        },
+        {
+          "term": "Serum liver-associated autoantibodies",
+          "definition_ar": "الأضداد الذاتية المرتبطة بالكبد في المصل: مثل ANA وASMA في النمط الأول وanti-LKM1 في النمط الثاني."
+        },
+        {
+          "term": "Esophageal varices",
+          "definition_ar": "دوالي المريء: توسعات وريدية تنشأ عند تليف الكبد وارتفاع الضغط البابي، وقد تنزف وتسبب وفاة 20% من مرضى AIH المتليفين."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c2",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Clinical Manifestations of AIH — Symptoms, Physical Findings and Laboratory Features",
+      "summary_ar": "يغطي هذا المفهوم مظاهر التهاب الكبد المناعي السريرية: الأعراض (تعب 85%، يرقان 77%، ألم بطني 48%، حكة 36%، فقدان شهية وتعدد ألم عضلي 30% لكل منهما، إسهال 28%، حمى 18%)، والعلامات الجسدية (ضخامة كبد 78%، يرقان 69%، وعنكبوتات وعائية 58%، مرض مناعي مرافق 48%، ضخامة طحال 32%، حبن 20%، اعتلال دماغي 14%)، والمل المخبري (ارتفاع AST 100%، فرط غاما غلوبيولين 92%، ارتفاع IgG 91%، فرط بيلروبين 83%، وارتفاع الفوسفاتاز القلوي أكثر من ضعفين في 33% فقط).",
+      "sections": [
+        {
+          "heading": "Symptoms of Autoimmune Hepatitis (LO2)",
+          "body_text": "Symptoms of AIH with their frequencies from the lecture (pseudo-table, ordered from most to least common):\n\n- **Fatigue** | **85%** — by far the most common symptom of AIH\n- **Jaundice** | **77%**\n- **Abdominal pain** | **48%**\n- **Pruritus** | **36%**\n- **Anorexia** | **30%**\n- **Polymyalgias** (aching of multiple muscle groups) | **30%**\n- **Diarrhea** | **28%**\n- **Fevers** | **18%**\n\nClinical message: AIH is a great mimicker — the combination of **fatigue + jaundice** dominates the presentation, but constitutional and rheumatologic features (**polymyalgias, fevers, anorexia**) frequently accompany it and reflect its immune-mediated nature. Recall from the background that **40% of patients present with an acute onset** of these symptoms.",
+          "key_points": [
+            "Most common symptom: fatigue (85%).",
+            "Jaundice 77%, abdominal pain 48%, pruritus 36%.",
+            "Anorexia 30%, polymyalgias 30%, diarrhea 28%, fevers 18%.",
+            "Symptoms may begin acutely (acute onset in 40% of patients)."
+          ],
+          "check": {
+            "prompt": "Which is the MOST common symptom of autoimmune hepatitis in the lecture's frequency table?",
+            "options": [
+              "Fever",
+              "Pruritus",
+              "Fatigue",
+              "Diarrhea"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "التعب هو أكثر أعراض التهاب الكبد المناعي شيوعاً بنسبة 85%، يليه اليرقان 77% ثم ألم البطن 48% فالحكة 36%. أما الحمى (18%) والإسهال (28%) فأقل شيوعاً بكثير."
+          }
+        },
+        {
+          "heading": "Physical Findings (LO2)",
+          "body_text": "Physical findings in AIH with their frequencies (pseudo-table):\n\n- **Hepatomegaly** | **78%** — the most common physical sign\n- **Jaundice** | **69%**\n- **Spider nevi** | **58%** — a stigmata of chronic liver disease\n- **Concurrent immune disease** | **48%** — nearly half of patients have another autoimmune condition (e.g., thyroid disease, arthritis, ulcerative colitis) — a hallmark clue to the autoimmune nature of the illness\n- **Splenomegaly** | **32%** — suggests portal hypertension\n- **Ascites** | **20%** — decompensated/advanced disease\n- **Encephalopathy** | **14%** — fulminant or end-stage presentation\n\nReading the list top-down traces the natural history: an enlarged tender liver and jaundice early, stigmata of chronic liver disease (spider nevi) with concurrent immune disease, and finally portal-hypertensive decompensation (splenomegaly, ascites, encephalopathy).",
+          "key_points": [
+            "Most common physical finding: hepatomegaly (78%).",
+            "Jaundice 69%, spider nevi 58%, splenomegaly 32%, ascites 20%, encephalopathy 14%.",
+            "Concurrent immune disease is present in 48% of patients — a key diagnostic clue.",
+            "Splenomegaly, ascites and encephalopathy indicate advanced disease/portal hypertension."
+          ]
+        },
+        {
+          "heading": "Laboratory Features (LO2)",
+          "body_text": "Laboratory features of AIH with frequencies (pseudo-table):\n\n- **Elevated AST** | **100%** — every patient has raised aminotransferases; AST elevation is universal\n- **Hypergammaglobulinemia** | **92%** — the polyclonal gamma-globulin spike is nearly universal and is one of the four defining features\n- **Increased immunoglobulin G (IgG) level** | **91%** — the gamma globulin elevation is predominantly IgG\n- **Hyperbilirubinemia** | **83%**\n- **Alkaline phosphatase >2x (ULN)** | **33%** — only one third have marked cholestatic enzyme elevation; a predominantly hepatocellular pattern (very high AST with near-normal ALP) is typical\n\nExam pearls: **AST is elevated in 100%** — a normal AST practically excludes active AIH. The **IgG-driven hypergammaglobulinemia (92%/91%)** is the biochemical signature of the disease, and **ALP >2x ULN in only 33%** helps distinguish the hepatocellular pattern of AIH from cholestatic diseases (primary biliary cholangitis/primary sclerosing cholangitis).",
+          "key_points": [
+            "Elevated AST in 100% of patients — the universal finding.",
+            "Hypergammaglobulinemia 92%; increased IgG level 91% — the biochemical signature of AIH.",
+            "Hyperbilirubinemia 83%.",
+            "Alkaline phosphatase >2x ULN in only 33% — hepatocellular (not cholestatic) enzyme pattern dominates."
+          ],
+          "check": {
+            "prompt": "Which laboratory abnormality is found in 100% of patients with autoimmune hepatitis?",
+            "options": [
+              "Hyperbilirubinemia",
+              "Elevated AST",
+              "Alkaline phosphatase >2x ULN",
+              "Hypergammaglobulinemia"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ارتفاع AST موجود عند 100% من مرضى التهاب الكبد المناعي، لذلك فإن AST طبيعي يستبعد عملياً المرض النشط. أما فرط غاما الغلوبيولين فيوجد في 92% وارتفاع IgG في 91% وفرط البيلروبين في 83% والفوسفاتاز القلوي فوق ضعفي الحد الطبيعي في 33% فقط — كلها شائعة لكن ليس عالمية مثل AST."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Polymyalgia",
+          "definition_ar": "تعدد الألم العضلي: ألم في مجموعات عضلية متعددة، يُرى في 30% من مرضى AIH."
+        },
+        {
+          "term": "Spider nevi",
+          "definition_ar": "الوعاه العنكبوتية (الشامات الوعائية العنكبوتية): آثار وعائية صغيرة تشبه العنكبوت من سمات المرض الكبدي المزمن، توجد في 58% من مرضى AIH."
+        },
+        {
+          "term": "Concurrent immune disease",
+          "definition_ar": "مرض مناعي مرافق: مرض ذاتي المناعة آخر (كالتهاب الدرق أو التهاب المفاصل) يصيب 48% من مرضى AIH."
+        },
+        {
+          "term": "Immunoglobulin G (IgG)",
+          "definition_ar": "الغلوبيولين المناعي G: النوع الرئيسي من الأضداد الذي يرتفع في AIH (91% من المرضى) ويشكل فرط غاما غلوبيولين الدم."
+        },
+        {
+          "term": "Hyperbilirubinemia",
+          "definition_ar": "فرط بيلروبين الدم: ارتفاع البيلروبين المسؤول عن اليرقان، يوجد في 83% من مرضى AIH."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c3",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Differential Diagnosis of AIH (LO3)",
+      "summary_ar": "يشمل التشخيص التفريقي لالتهاب الكبد المناعي خمسة محاكيات رئيسية يجب استبعادها قبل تأكيد التشخيص: داء ويلسون، عوز مضاد التريبسين ألفا-1، داء ترسب الأصبغة الدموية (الهيموكروماتوز)، التهاب الكبد الدوائي، والتهاب الكبد الفيروسي — لأن تعريف AIH نفسه يشترط استبعاد أمراض الكبد المزمنة الأخرى.",
+      "sections": [
+        {
+          "heading": "The Five Key Mimics of Autoimmune Hepatitis",
+          "body_text": "The differential diagnosis (LO3) slide lists the chronic liver diseases that must be excluded before diagnosing AIH:\n\n- **Wilson's disease** — a metabolic copper-storage liver disease (standard discriminator: low ceruloplasmin, Kayser-Fleischer rings, especially in young patients)\n- **Alpha-1 antitrypsin (A1AT) deficiency** — inherited cause of chronic hepatitis/cirrhosis (standard discriminator: low serum A1AT level and phenotyping)\n- **Hemochromatosis** — iron overload liver disease (standard discriminator: elevated transferrin saturation and ferritin)\n- **Drug-induced hepatitis** — hepatotoxic drug injury (standard discriminator: careful drug history, e.g., nitrofurantoin or minocycline which can even induce an AIH-like picture)\n- **Viral hepatitis** — chronic hepatitis B and C (standard discriminator: viral serology HBsAg, anti-HBc, anti-HCV; hepatitis C in particular can produce autoantibodies and mimic AIH)\n\nThe logic of this list comes directly from the **definition**: AIH is an inflammation of **unknown cause**, so by definition the diagnosis is only made **after excluding other chronic liver diseases**. The parenthetical discriminators above are standard-reference additions to help you order the exclusion work-up in practice.",
+          "key_points": [
+            "Five differential diagnoses: Wilson's disease, A1AT deficiency, hemochromatosis, drug-induced hepatitis, viral hepatitis.",
+            "Excluding these is mandatory — AIH is defined by exclusion of other chronic liver diseases.",
+            "Young patient with 'AIH picture': always exclude Wilson's disease first.",
+            "Viral hepatitis (especially HCV) and certain drugs can produce autoantibodies and mimic AIH."
+          ],
+          "check": {
+            "prompt": "A 16-year-old boy presents with Coombs-negative hemolytic anemia and acute liver failure. Low ceruloplasmin and Kayser-Fleischer rings are found. What is the diagnosis?",
+            "options": [
+              "Type 2 autoimmune hepatitis",
+              "Wilson's disease",
+              "Alpha-1 antitrypsin deficiency",
+              "Hemochromatosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "هذه صورة داء ويلسون: مريض شاب مع فقر دم انحلالي كومبس سلبي وفشل كبدي حاد مع هبوط السيرولوبلازمين وحلقات كايزر-فلايشر. داء ويلسون هو أول ما يجب استبعاده عند الشباب المصابين بأمراض كبدية قبل تشخيص AIH لأنه يصيب نفس الفئة العمرية ويحاكيه. أما عوز A1AT فسببه تراكم بروتين شاذ في الكبد، والهيموكروماتوز مرض ترسب حديد يصيب عادة متوسطي العمر."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Wilson's disease",
+          "definition_ar": "داء ويلسون: اضطراب وراثي في استقلاب النحاس يتراكم في الكبد والدماغ والعين (حلقات كايزر-فلايشر) ويحاكي AIH عند الشباب."
+        },
+        {
+          "term": "Alpha-1 antitrypsin deficiency",
+          "definition_ar": "عوز مضاد التريبسين ألفا-1: مرض وراثي يسبب التهاب كبد مزمن وتليفاً وانتفاخ رئوياً، من التشاخيص التفريقية لـ AIH."
+        },
+        {
+          "term": "Hemochromatosis",
+          "definition_ar": "داء ترسب الأصبغة الدموية (الهيموكروماتوز): تراكم وراثي للحديد في الكبد والبنكرياس والقلب والمفاصل والجلد."
+        },
+        {
+          "term": "Drug-induced hepatitis",
+          "definition_ar": "التهاب الكبد الدوائي: أذية كبدية ناجمة عن أدوية قد تحاكي AIH سريرياً ومخبرياً وتحرض أضداداً ذاتية أحياناً."
+        },
+        {
+          "term": "Viral hepatitis",
+          "definition_ar": "التهاب الكبد الفيروسي: التهاب الكبد بفيروسات B أو C (وغيرها)، يجب استبعاده مصلياً قبل تشخيص AIH."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c4",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Diagnosis of AIH — Clinical Criteria and Recommendations (LO4)",
+      "summary_ar": "يشرح هذا المفهوم معايير تشخيص التهاب الكبد المناعي: وجود مظاهر سريرية مميزة، والفحص النسيجي للكبد، واستبعاد الأمراض الأخرى. كما يوصي بأن تشخيص AIH يتطلب قياس مستويات الناقلات الأمينية والغلوبيولين، وكشف الأضداد ANA و/أو SMA وanti-LKM1، والفحص النسيجي، وأن تُطبَّق معايير التشخيص على جميع المرضى.",
+      "sections": [
+        {
+          "heading": "Clinical Diagnostic Criteria of AIH",
+          "body_text": "The diagnostic criteria for AIH (LO4) rest on **three clinical criteria**:\n\n- **Presence of characteristic clinical features** — the symptom/sign/laboratory constellation described in LO2 (fatigue, jaundice, hepatomegaly, elevated AST with hypergammaglobulinemia/IgG, autoantibodies)\n- **Liver histology** — biopsy showing the characteristic lesion (**periportal/interface hepatitis**; in advanced disease bridging necrosis, multiacinar necrosis or cirrhosis may be seen — these same histologic lesions reappear later as absolute indications for treatment)\n- **Exclusion of other diseases** — the five mimics of LO3 (Wilson's disease, A1AT deficiency, hemochromatosis, drug-induced hepatitis, viral hepatitis)\n\nNote how the criteria mirror the definition: characteristic features + histology + exclusion of alternatives. **No single test alone secures the diagnosis** — it is the composite of clinical, serological, biochemical and histological findings with exclusion of mimics.",
+          "key_points": [
+            "Three clinical criteria: characteristic clinical features, liver histology, exclusion of other diseases.",
+            "Liver histology shows periportal (interface) hepatitis; bridging/multiacinar necrosis mark severe disease.",
+            "Diagnosis is a composite — no single finding is diagnostic in isolation."
+          ],
+          "check": {
+            "prompt": "Which of the following is one of the three clinical criteria for diagnosing AIH?",
+            "options": [
+              "ERCP showing biliary dilation",
+              "Exclusion of other diseases",
+              "Positive blood culture",
+              "Ascitic fluid neutrophil count >250"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "معايير تشخيص AIH السريرية ثلاثة: وجود مظاهر سريرية مميزة، وفحص نسيج الكبد، واستبعاد الأمراض الأخرى (ويلسون، عوز A1AT، الهيموكروماتوز، الدوائي، الفيروسي). لا علاقة للتنظير الرضحي للطرق الصفراوية أو زرع الدم أو عد خلايا السائل البطني بتشخيص AIH."
+          }
+        },
+        {
+          "heading": "Recommendations — Required Work-up and Application",
+          "body_text": "The recommendations slide states two directives:\n\n- **Diagnosis of AIH requires:**\n  - **Aminotransferase and globulin levels** (AST/ALT plus serum protein electrophoresis demonstrating hypergammaglobulinemia/IgG)\n  - **Detection of autoantibodies: ANA and/or SMA, anti-LKM1**\n  - **Histology** (liver biopsy)\n- **Diagnostic criteria for AIH should be applied to ALL patients** — the criteria are not reserved for classic textbook presentations; every patient in whom liver disease is unexplained should be screened with this work-up (standard-reference note: this especially includes patients presenting with acute hepatitis, since AIH has an acute onset in 40%).\n\nIn practice the work-up bundles the definition, the LO2 laboratory features and the LO3 exclusions into one algorithm: **aminotransferases + globulins + autoantibodies + biopsy + exclusion of mimics = the diagnostic package of AIH**.",
+          "key_points": [
+            "Diagnosis of AIH requires: aminotransferase and globulin levels; detection of ANA and/or SMA, anti-LKM1; and histology.",
+            "Diagnostic criteria for AIH should be applied to all patients.",
+            "Liver biopsy is part of the required diagnostic work-up.",
+            "Apply the criteria even in acute presentations (40% of AIH begins acutely)."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Liver histology",
+          "definition_ar": "الفحص النسيجي للكبد: خزعة الكبد التي تُظهر التهاب المنطقة البابية/السطح البيني المميز لـ AIH وهي جزء إلزامي من التشخيص."
+        },
+        {
+          "term": "Aminotransferases",
+          "definition_ar": "الناقلات الأمينية: إنزيمات AST وALT التي ترتفع في أذية الخلايا الكبدية (AST مرفوع عند 100% من مرضى AIH)."
+        },
+        {
+          "term": "ANA (antinuclear antibodies)",
+          "definition_ar": "الأضداد المضادة للنوى: من أضداد النمط الأول من AIH."
+        },
+        {
+          "term": "SMA / ASMA (anti-smooth muscle antibodies)",
+          "definition_ar": "الأضداد المضادة للعضل الأملس: الضر الثاني المميز للنمط الأول من AIH."
+        },
+        {
+          "term": "Anti-LKM1",
+          "definition_ar": "الأضداد المضادة للكبد والكلى الدقيقة النمط 1: ال marker المميز للنمط الثاني من AIH عند الأطفال."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c5",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Subclassification of AIH — Type 1 versus Type 2 (LO5)",
+      "summary_ar": "ينقسم التهاب الكبد المناعي إلى نمطين: النمط الأول (أضداد ANA وASMA، أعمار 10-20 و45-70، النساء، أمراض مناعية مرافقة، غاما غلوبيولين +++، استجابة للستيرويدات +++، تقدم للتليف 45%) والنمط الثاني (أضداد anti-LKM1 وSLC-1 للبالغين فقط، عمر أطفال 2-14 ونادر في البالغين 4%، غاما غلوبيولين +، استجابة ++، تقدم للتليف 82%).",
+      "sections": [
+        {
+          "heading": "Overview — Two Types of AIH",
+          "body_text": "AIH is **subclassified into two types based on the diagnostic autoantibody profile** (LO5):\n\n- **Type I (Type 1) AIH** — defined by **ANA and/or ASMA** (antinuclear antibodies and anti-smooth muscle antibodies)\n- **Type II (Type 2) AIH** — defined by **anti-LKM1** (antibodies to liver-kidney microsome type 1) and **anti-liver cytosol antibody-1 (SLC-1)**\n\nBoth types share the same core disease (self-perpetuating hepatocellular inflammation) but differ in **age distribution, gamma-globulin elevation, steroid responsiveness and risk of progression to cirrhosis**, as detailed in the next two sections.",
+          "key_points": [
+            "AIH is subclassified into Type I and Type II.",
+            "Type I autoantibodies: ANA, ASMA. Type II autoantibodies: anti-LKM1 (and anti-liver cytosol antibody-1/SLC-1).",
+            "The subclassification is antibody-based."
+          ]
+        },
+        {
+          "heading": "Type 1 AIH — Detailed Profile",
+          "body_text": "The full profile of **Type 1 AIH** from the LO4&LO5 slide:\n\n- **Diagnostic autoantibodies:** **ANA, ASMA**\n- **Age:** bimodal distribution — **10-20 years and 45-70 years** (young patients and middle-aged/older adults)\n- **Sex:** predominantly **women**\n- **Concurrent immune diseases:** commonly associated (recall 48% of all AIH patients have a concurrent immune disease)\n- **Elevated gamma globulin:** **+++** (marked hypergammaglobulinemia)\n- **Steroid responsiveness:** **+++** (excellent response to corticosteroids)\n- **Progression to cirrhosis:** **45%**\n\nType 1 is the classic presentation: a **woman** in one of the two age peaks, with high IgG/gamma globulins, autoimmune markers (ANA/ASMA), often another autoimmune disease, and a **brisk response to steroids**.",
+          "key_points": [
+            "Type 1 AIH autoantibodies: ANA and ASMA.",
+            "Bimodal age: 10-20 and 45-70 years; predominantly women.",
+            "Gamma globulin elevation +++, steroid responsiveness +++.",
+            "Progression to cirrhosis: 45%.",
+            "Concurrent immune diseases are characteristic."
+          ],
+          "check": {
+            "prompt": "A 52-year-old woman has chronic hepatitis with ANA 1:320, positive ASMA and IgG 2600 mg/dL. Concurrent hypothyroidism is present. What is the type and expected steroid response?",
+            "options": [
+              "Type 1 AIH; excellent (+++) steroid response",
+              "Type 2 AIH; poor (+) steroid response",
+              "Type 1 AIH; no response to steroids",
+              "Type 2 AIH; excellent (+++) steroid response"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "امرأة في منتصف العمر (ذروة عمرية 45-70) مع أضداد ANA وASMA ومرض مناعي مرافق (التهاب درق) = النمط الأول من AIH، وهو يستجيب للستيرويدات استجابة ممتازة (+++) مع ارتفاع غاما غلوبيولين واضح (+++). النمط الثاني يتصف بـ anti-LKM1 عند الأطفال (2-14 سنة) باستجابة ++ وارتفاع أقل للغاما غلوبيولين (+)."
+          }
+        },
+        {
+          "heading": "Type 2 AIH — Detailed Profile",
+          "body_text": "The full profile of **Type 2 AIH** from the LO4&LO5 slide:\n\n- **Diagnostic autoantibodies:** **anti-LKM1**; plus **anti-liver cytosol antibody-1 (SLC-1)** — which occurs in **adults only**\n- **Age:** **pediatric (2-14 years)**; **rare in adults (4%)**\n- **Sex:** predominantly **women** (girls, given the pediatric age)\n- **Concurrent autoimmune disease:** associated\n- **Elevated gamma-globulins:** **+** (only mild elevation — much weaker than Type 1)\n- **Steroids responsiveness:** **++** (intermediate — less complete than the +++ of Type 1)\n- **Progression to cirrhosis:** **82%** — an aggressive disease that progresses to cirrhosis far more often than Type 1\n\nClinical picture: a **young girl (2-14 years)** with chronic hepatitis, positive **anti-LKM1**, only mild gamma-globulin elevation, and a high risk (82%) of cirrhosis — AIH type 2 is **rare in adults (4%)**.",
+          "key_points": [
+            "Type 2 AIH autoantibodies: anti-LKM1 and anti-liver cytosol antibody-1 (SLC-1, adults only).",
+            "Age: pediatric 2-14 years; rare in adults (4%).",
+            "Gamma-globulin elevation only + (mild); steroid responsiveness ++ (intermediate).",
+            "Progression to cirrhosis: 82% — much more aggressive than Type 1 (45%)."
+          ]
+        },
+        {
+          "heading": "Head-to-Head Comparison — Type 1 vs Type 2 AIH",
+          "body_text": "All attributes of the two types side by side (pseudo-table):\n\n- **Diagnostic autoantibodies** | Type 1: **ANA, ASMA** | Type 2: **anti-LKM1, anti-liver cytosol antibody-1 (SLC-1; adults only)**\n- **Age** | Type 1: **10-20 and 45-70 years (bimodal)** | Type 2: **pediatric 2-14 years; rare adults (4%)**\n- **Sex** | Type 1: **women** | Type 2: **women**\n- **Concurrent immune/autoimmune disease** | Type 1: **yes** | Type 2: **yes**\n- **Elevated gamma globulin** | Type 1: **+++** | Type 2: **+**\n- **Steroid responsiveness** | Type 1: **+++** | Type 2: **++**\n- **Progression to cirrhosis** | Type 1: **45%** | Type 2: **82%**\n\nHigh-yield discriminators for exams: the **antibody** (ANA/ASMA vs anti-LKM1), the **age** (bimodal adult-including vs pediatric), the **intensity** of gamma-globulin elevation (+++ vs +), steroid response (+++ vs ++), and the cirrhosis risk (**45% vs 82%**).",
+          "key_points": [
+            "Type 1: ANA/ASMA, ages 10-20 & 45-70, gamma globulin +++, steroids +++, cirrhosis 45%.",
+            "Type 2: anti-LKM1 (+SLC-1 adults only), ages 2-14 (adults 4%), gamma globulin +, steroids ++, cirrhosis 82%.",
+            "Both types predominantly affect women and associate with concurrent autoimmune disease.",
+            "Type 2 is the more aggressive type (82% cirrhosis progression)."
+          ],
+          "check": {
+            "prompt": "Which feature best distinguishes Type 2 from Type 1 AIH?",
+            "options": [
+              "Predominance of women",
+              "Anti-LKM1 positivity with pediatric onset (2-14 years)",
+              "Concurrent autoimmune disease",
+              "Response to immunosuppression"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "النمط الثاني يتميز بأضداد anti-LKM1 وبدء الطفولة (2-14 سنة) وندرته عند البالغين (4%)، بينما تُعد هيمنة النساء والأمراض المناعية المرافقة والاستجابة للعلاج المثبط للمناعة سمات مشتركة بين النمطين. النمط الأول يتصف بـ ANA وASMA مع ذروتين عمريتين (10-20 و45-70)."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Type 1 AIH",
+          "definition_ar": "النمط الأول من التهاب الكبد المناعي: أضداد ANA وASMA، أعمار 10-20 و45-70، نساء، غاما غلوبيولين +++، استجابة ستيرويدية +++، تليف 45%."
+        },
+        {
+          "term": "Type 2 AIH",
+          "definition_ar": "النمط الثاني: أضداد anti-LKM1 وSLC-1، أطفال 2-14 سنة (بالغون 4% فقط)، غاما غلوبيولين +، استجابة ++، تليف 82%."
+        },
+        {
+          "term": "Anti-LKM1",
+          "definition_ar": "الأضداد المضادة للمستضد الكبدي الكلوي الدقيق النمط 1: ال marker المصلي المميز للنمط الثاني من AIH."
+        },
+        {
+          "term": "Anti-liver cytosol antibody-1 (SLC-1)",
+          "definition_ar": "الضد الذاتي المضاد لسيتوبلازم الكبد النمط 1: يظهر في النمط الثاني عند البالغين فقط حسب المحاضرة."
+        },
+        {
+          "term": "Steroid responsiveness",
+          "definition_ar": "الاستجابة للستيرويدات: ممتازة (+++) في النمط الأول ومتوسطة (++) في النمط الثاني."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c6",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Indications for Treatment of AIH (LO6) — Absolute versus Relative",
+      "summary_ar": "يوضح هذا المفهوم دواعي علاج التهاب الكبد المناعي: دواعٍ مطلقة (AST أعلى من 10 أضعاف الحد الطبيعي، أو AST أعلى من 5 أضعاف مع غلوبيولين أعلى من ضعفي الطبيعي، أو نخر جسري/نخر متعدد الفصيصات) ودواعٍ نسبية (أعراض كالتعب والألم المفصلي واليرقان، أو AST وغلوبيولين أقل من معايير الدواعي المطلقة، أو التهاب السطح البيني نسيجياً).",
+      "sections": [
+        {
+          "heading": "Absolute Indications for Treatment",
+          "body_text": "**Absolute indications** to treat AIH (treatment must be started):\n\n- **Serum AST >10x ULN** (more than ten times the upper limit of normal) — severe hepatocellular inflammation\n- **Serum AST >5x ULN AND globulin >2x normal** — moderate enzyme elevation combined with intense hypergammaglobulinemia (two-fold elevated gamma globulin)\n- **Bridging necrosis or multiacinar necrosis** on liver histology — histological severity marking aggressive disease heading toward cirrhosis\n\nThese criteria combine **biochemical severity** (AST multiples of ULN, globulin multiples of normal) with **histological severity** (bridging/multiacinar necrosis). Any one of them is enough to mandate therapy, remembering that untreated severe AIH carries a **40% 6-month mortality**.",
+          "key_points": [
+            "Absolute: AST >10x ULN.",
+            "Absolute: AST >5x ULN together with globulin >2x normal.",
+            "Absolute: bridging necrosis or multiacinar necrosis on biopsy.",
+            "Any single absolute indication mandates immediate treatment."
+          ],
+          "check": {
+            "prompt": "A patient with AIH has AST 12x ULN and normal globulins, and biopsy shows interface hepatitis only. How should she be classified?",
+            "options": [
+              "Absolute indication for treatment (AST >10x ULN)",
+              "Relative indication (interface hepatitis)",
+              "No indication for treatment",
+              "Indication only if symptomatic"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "AST أعلى من 10 أضعاف الحد الأعلى الطبيعي هو داعٍ مطلق للعلاج بحد ذاته حتى لو كانت الغلوبيولينات طبيعية والخزعة لا تظهر سوى التهاب سطحي بيني. أما الالتهاب السطحي البيني وحده فهو داعٍ نسبي، ولا يوجد مريض 'بلا داعٍ' عندما تكون المعايير المطلقة مستوفاة."
+          }
+        },
+        {
+          "heading": "Relative Indications for Treatment",
+          "body_text": "**Relative indications** to treat AIH (treatment considered/individualized):\n\n- **Symptoms** — fatigue, arthralgia, jaundice (the same leading symptoms of LO2: fatigue 85%, jaundice 77%)\n- **Serum AST and globulin less than absolute criteria** — milder biochemical activity than the absolute thresholds (e.g., AST between normal and 5-10x ULN without globulin >2x)\n- **Interface hepatitis** on liver histology — the milder histological lesion (periportal interface hepatitis WITHOUT bridging or multiacinar necrosis)\n\nThe hierarchy is symmetric: **absolute = severe numbers or severe necrosis** (AST >10x; AST >5x + globulin >2x; bridging/multiacinar necrosis) versus **relative = symptoms alone, borderline numbers, or interface hepatitis only**.",
+          "key_points": [
+            "Relative: symptoms (fatigue, arthralgia, jaundice).",
+            "Relative: AST and globulin levels lower than the absolute criteria.",
+            "Relative: interface hepatitis on histology (no bridging/multiacinar necrosis).",
+            "Bridging/multiacinar necrosis = absolute; interface hepatitis alone = relative."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Absolute indication",
+          "definition_ar": "داعٍ مطلق للعلاج: معيار يستوجب بدء العلاج فوراً (AST>10 أضعاف، أو AST>5 أضعاف مع غلوبيولين>ضضعفين، أو نخر جسري/متعدد الفصيصات)."
+        },
+        {
+          "term": "Relative indication",
+          "definition_ar": "داعٍ نسبي: يُقيَّم قرار العلاج فيه (أعراض، أو قيم أخفض من المعايير المطلقة، أو التهاب سطحي بيني)."
+        },
+        {
+          "term": "Bridging necrosis",
+          "definition_ar": "النخر الجسري: نخر يصل بين السبلات البابية و/أو الوريدية المركزية عبر الفصيص، علامة شدة وسبب داعٍ مطلق للعلاج."
+        },
+        {
+          "term": "Multiacinar necrosis",
+          "definition_ar": "النخر متعدد الفصيصات: نخر يشمل فصيصات كاملة، آفة نسيجية شديدة تدفع للعلاج الفوري."
+        },
+        {
+          "term": "Interface hepatitis",
+          "definition_ar": "التهاب السطح البيني: التهاب المنطقة البابية يغزو حدود الحُمَيْض، وهو الآفة المميزة لـ AIH لكنه وحده يُعد داعياً نسبياً للعلاج."
+        },
+        {
+          "term": "ULN (upper limit of normal)",
+          "definition_ar": "الحد الأعلى الطبيعي: القيمة العليا المرجعية للمخبر الذي تُقاس عليها أضعاف الارتفاع."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_c7",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "Treatment of AIH — Regimens (Prednisone ± Azathioprine) and Reasons for Preference (LO6)",
+      "summary_ar": "يعرض هذا المفهوم بروتوكولات علاج التهاب الكبد المناعي: البريدنيزون وحده (60 ملغ ثم 40 ثم 30 ثم 30 ثم 20 ملغ وقاية) أو الدمج مع الأزاثيوبرين (30+50 ثم 20+50 ثم 15+50 ثم 15+50 ثم 10+50 ملغ وقاية)، وأسباب التفضيل: يُفضَّل البريدنيزون وحده عند القلة الخلوية والحمل والخباثة والدورة القصيرة (<6 أشهر)، بينما يُفضَّل الدمج بعد سن اليأس وفي هشاشة العظام والداء السكري الهش والبدانة وحب الشباب والتقلب الوجداني وارتفاع الضغط.",
+      "sections": [
+        {
+          "heading": "Standard Treatment Regimens — Week-by-Week Schedule",
+          "body_text": "**Prednisone and azathioprine are the mainstay of treatment.** Two standard regimens are offered — **Prednisone only** versus **Combination (Prednisone + Azathioprine, Pred + AZA)** — with the complete week-by-week tapering schedule (pseudo-table):\n\n- **Week 1** | Prednisone only: **60 mg** | Combination: **Prednisone 30 mg + AZA 50 mg**\n- **Week 2** | Prednisone only: **40 mg** | Combination: **Prednisone 20 mg + AZA 50 mg**\n- **Week 3** | Prednisone only: **30 mg** | Combination: **Prednisone 15 mg + AZA 50 mg**\n- **Week 4** | Prednisone only: **30 mg** | Combination: **Prednisone 15 mg + AZA 50 mg**\n- **Maintenance until endpoint** | Prednisone only: **20 mg** | Combination: **Prednisone 10 mg + AZA 50 mg**\n\nPharmacological logic: in the combination regimen the **azathioprine dose is fixed at 50 mg throughout**, allowing the **prednisone dose to be halved at every step** (30 → 20 → 15 → 15 → 10 mg) compared with prednisone-only (60 → 40 → 30 → 30 → 20 mg) — the steroid-sparing effect of azathioprine. Treatment continues **until the endpoint** (remission), after which the regimen is reassessed.",
+          "key_points": [
+            "Prednisone-only schedule: 60 mg (week 1), 40 mg (week 2), 30 mg (week 3), 30 mg (week 4), then 20 mg maintenance until endpoint.",
+            "Combination schedule: 30+50, 20+50, 15+50, 15+50, then 10 mg prednisone + 50 mg AZA maintenance.",
+            "Azathioprine is fixed at 50 mg in the combination regimen — its role is steroid-sparing.",
+            "Both regimens are equivalent in efficacy; the choice depends on the patient profile."
+          ],
+          "check": {
+            "prompt": "A patient with AIH starts the COMBINATION regimen. What is her prednisone/azathioprine dose in week 2?",
+            "options": [
+              "Prednisone 40 mg + AZA 50 mg",
+              "Prednisone 20 mg + AZA 50 mg",
+              "Prednisone 30 mg + AZA 50 mg",
+              "Prednisone 15 mg + AZA 25 mg"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "في نظام الدمج: الأسبوع الأول 30 ملغ بريدنيزون + 50 ملغ أزاثيوبرين، والأسبوع الثاني 20 + 50 ملغ، ثم 15 + 50 في الأسبوعين الثالث والرابع، ثم 10 + 50 كجرعة وقائية. أما 40 ملغ فهي جرعة الأسبوع الثاني لنظام البريدنيزون وحده، وجرعة الأزاثيوبرين ثابتة 50 ملغ ولا تُخفَّض."
+          }
+        },
+        {
+          "heading": "Reasons for Preference — Choosing the Regimen",
+          "body_text": "The choice between **Prednisone only** and **Combination (Pred + AZA)** follows patient-specific reasons of preference (pseudo-table):\n\n**Prefer PREDNISONE ONLY when:**\n- **Cytopenia** — azathioprine is myelotoxic (bone-marrow suppression), so it is avoided when blood counts are low\n- **Pregnancy** — azathioprine is avoided in the pregnant patient\n- **Malignancy** — azathioprine (as an immunomodulator) is avoided in patients with cancer\n- **Short course <6 months** — when treatment is planned to be brief, adding a second drug offers no advantage\n\n**Prefer the COMBINATION (Pred + AZA) when the patient is at risk of steroid toxicity:**\n- **Postmenopausal state**\n- **Osteoporosis**\n- **Brittle diabetes**\n- **Obesity**\n- **Acne**\n- **Emotional liability** (mood lability — steroid neuropsychiatric effect)\n- **Hypertension**\n\nThe logic is transparent: **prednisone-only spares the azathioprine problems (marrow, fetus, cancer) at the price of a higher steroid dose (60 mg start)**, while the **combination halves the steroid exposure (30 mg start) at the price of azathioprine's risks** — ideal when steroid complications (bone, glucose, weight, skin, mood, blood pressure) are the dominant threat.",
+          "key_points": [
+            "Prednisone-only preferred: cytopenia, pregnancy, malignancy, short course <6 months.",
+            "Combination preferred: postmenopausal state, osteoporosis, brittle diabetes, obesity, acne, emotional liability, hypertension.",
+            "Prednisone-only = higher steroid dose but no azathioprine toxicity; combination = steroid-sparing.",
+            "Azathioprine concerns: myelotoxicity (cytopenia), pregnancy, malignancy."
+          ],
+          "check": {
+            "prompt": "A 55-year-old postmenopausal woman with AIH, osteoporosis and brittle type 2 diabetes needs treatment. Which regimen is preferred and why?",
+            "options": [
+              "Prednisone only — avoids azathioprine myelotoxicity",
+              "Combination — minimizes the steroid dose to protect bone, glucose and fracture risk",
+              "Prednisone only — azathioprine is contraindicated in diabetes",
+              "No treatment — she has only relative indications"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "بعد سن اليأس مع هشاشة العظام والداء السكري الهش، الخطر الأكبر هو سُمِّية الستيرويدات، لذلك يُفضَّل نظام الدمج لأنه يخفض جرعة البريدنيزون إلى النصف (30 ملغ بدلاً من 60) مع أزاثيوبرين 50 ملغ. أما نظام البريدنيزون وحده فيُفضَّل عند القلة الخلوية والحمل والخباثة والدورة القصيرة. ومرضها لديه دواعٍ علاجية قائمة ولا يوجد سبب لحجب العلاج."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Prednisone",
+          "definition_ar": "البريدنيزون: كورتيكوستيرويد نظامي، الدعامة العلاجية الأولى لـ AIH (60-40-30-30-20 ملغ وحده أو بجرعات مخففة مع الأزاثيوبرين)."
+        },
+        {
+          "term": "Azathioprine (AZA)",
+          "definition_ar": "الأزاثيوبرين: مثبط مناعي يُدمج بجرعة ثابتة 50 ملغ مع البريدنيزون لتوفير جرعة الستيرويد، ويُتجنب عند القلة الخلوية والحمل والخباثة."
+        },
+        {
+          "term": "Steroid-sparing",
+          "definition_ar": "موفّر للستيرويد: تأثير الأزاثيوبرين الذي يسمح بخفض جرعة البريدنيزون إلى النصف مع الحفاظ على الفعالية."
+        },
+        {
+          "term": "Emotional liability",
+          "definition_ar": "التقلب الوجداني/المزاجي: أثر نفسي جانبي للستيرويدات يجعل الدمج مفضلاً لتقليل جرعتها."
+        },
+        {
+          "term": "Maintenance until endpoint",
+          "definition_ar": "الجرعة الوقائية حتى نقطة النهاية: الجرعة المستمرة (20 ملغ بريدنيزون وحده أو 10+50 مع الأزاثيوبرين) حتى تحقيق نقطة النهاية العلاجية (الهدأة)."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L10_autoimmune_hepatitis_f1",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "What is the definition of autoimmune hepatitis (AIH)?",
+      "back_text": "A **self-perpetuating hepatocellular inflammation of unknown cause**, characterized by periportal hepatitis, hypergammaglobulinemia, serum liver-associated autoantibodies, and exclusion of other chronic liver diseases.",
+      "explanation_ar": "احفظ التعريف حرفياً: التهاب كبدي خلوي ذاتي الاستدامة مجهول السبب — كلمة ذاتي الاستدامة تفسر الحاجة لعلاج مثبط للمناعة مستمر، وكلمة مجهول السبب تجعل التشخيص قائماً على استبعاد غيره."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f2",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "List the four characteristic features of AIH.",
+      "back_text": "1) **Periportal hepatitis** (interface hepatitis on histology), 2) **Hypergammaglobulinemia**, 3) **Serum liver-associated autoantibodies**, 4) **Exclusion of other chronic liver diseases**.",
+      "explanation_ar": "الأربعة معاً تشكل التعريف العملي: ثلاث خصائص إيجابية (نسيجية، مخبرية، مصلية) وشرط سلبي واحد (استبعاد الأمراض الأخرى)."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f3",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "What is the prognosis of UNTREATED severe AIH?",
+      "back_text": "**40% of patients with untreated severe disease die within 6 months of diagnosis**; 40% develop cirrhosis — of these 54% develop esophageal varices and 20% die of hemorrhage.",
+      "explanation_ar": "ثلاث أرقام 40% للتذكر: 40% يموتون خلال 6 أشهر إذا كان المرض شديداً وغير معالج، و40% يتطورون لتليف، و40% يبدؤون بشكل حاد."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f4",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "How often does AIH present with an ACUTE onset, and what is the mainstay of treatment?",
+      "back_text": "An acute onset of illness is seen in **40% of patients** — AIH can mimic acute hepatitis. The mainstay of treatment is **prednisone and azathioprine**.",
+      "explanation_ar": "لا تفترض أن كل يرقان حاد هو فيروسي؛ 40% من مرضى AIH يبدؤون بشكل حاد، والعلاج الأساسي هو البريدنيزون والأزاثيوبرين."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f5",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "card_type": "basic",
+      "front_text": "What is the MOST common symptom of AIH and how frequent is it?",
+      "back_text": "**Fatigue — 85%**, followed by jaundice 77%, abdominal pain 48%, and pruritus 36%.",
+      "explanation_ar": "التعب هو العرض الأكثر شيوعاً (85%) يليه اليرقان (77%). سؤال شائع: أكثر عرض = تعب، أكثر علامة = ضخامة كبد."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f6",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "card_type": "basic",
+      "front_text": "Rank ALL symptoms of AIH with their percentages.",
+      "back_text": "Fatigue 85% | Jaundice 77% | Abdominal pain 48% | Pruritus 36% | Anorexia 30% | Polymyalgias 30% | Diarrhea 28% | Fevers 18%.",
+      "explanation_ar": "تعب، يرقان، ألم بطني، حكة، فقدان شهية، ألم عضلي متعدد، إسهال، حمى — بنسب 85، 77، 48، 36، 30، 30، 28، 18."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f7",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "card_type": "basic",
+      "front_text": "What is the MOST common physical finding in AIH?",
+      "back_text": "**Hepatomegaly — 78%**; then jaundice 69%, spider nevi 58%, concurrent immune disease 48%, splenomegaly 32%, ascites 20%, encephalopathy 14%.",
+      "explanation_ar": "ضخامة الكبد أكثر علامة (78%). وجود مرض مناعي مرافق عند 48% قرينة هامة تشير للطبيعة المناعية الذاتية للمرض."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f8",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "card_type": "basic",
+      "front_text": "List the laboratory features of AIH with frequencies.",
+      "back_text": "Elevated AST **100%** | Hypergammaglobulinemia **92%** | Increased IgG **91%** | Hyperbilirubinemia **83%** | Alkaline phosphatase >2x ULN only **33%** (hepatocellular, not cholestatic, pattern).",
+      "explanation_ar": "AST مرفوع عند الجميع (100%)، وفرط الغاما غلوبيولين/IgG هو البصمة الكيميائية للمرض، بينما ارتفاع الفوسفاتاز القلوي فوق ضعفين يوجد عند الثلث فقط — نمط خلوي لا ركودي."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f9",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c3",
+      "card_type": "basic",
+      "front_text": "Which five diseases must be excluded before diagnosing AIH (differential diagnosis)?",
+      "back_text": "1) **Wilson's disease**, 2) **Alpha-1 antitrypsin (A1AT) deficiency**, 3) **Hemochromatosis**, 4) **Drug-induced hepatitis**, 5) **Viral hepatitis**.",
+      "mnemonic_ar": "احفظها بالحروف: و-ع-هـ-د-ف: ويلسون، عوز A1AT، هيموكروماتوز، دوائي، فيروسي.",
+      "explanation_ar": "لأن سبب AIH مجهول، لا يُشخص إلا بعد استبعاد هذه الأمراض الخمسة، خاصة ويلسون عند الشباب والالتهاب الفيروسي C الذي قد يحرض أضداداً ذاتية."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f10",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c4",
+      "card_type": "basic",
+      "front_text": "What are the three clinical criteria for the diagnosis of AIH?",
+      "back_text": "1) **Presence of characteristic clinical features**, 2) **Liver histology**, 3) **Exclusion of other diseases**.",
+      "explanation_ar": "مظاهر سريرية مميزة + نسيج كبدي + استبعاد أمراض أخرى = معايير التشخيص الثلاثة."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f11",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c4",
+      "card_type": "basic",
+      "front_text": "According to the recommendations, what does the diagnosis of AIH require?",
+      "back_text": "**Aminotransferase and globulin levels; detection of ANA and/or SMA, anti-LKM1; and histology** — and the diagnostic criteria for AIH should be applied to ALL patients.",
+      "explanation_ar": "حزمة التشخيص: ناقلات أمينية + غلوبيولين + أضداد ذاتية (ANA/SMA/anti-LKM1) + خزعة كبد، وتطبق المعايير على جميع المرضى."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f12",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c5",
+      "card_type": "basic",
+      "front_text": "Type 1 AIH: which autoantibodies and which age distribution?",
+      "back_text": "**ANA and ASMA**; bimodal age distribution **10-20 years and 45-70 years**; predominantly **women**.",
+      "explanation_ar": "النمط الأول: ANA وASMA مع ذروتين عمريتين (شباب 10-20 وناضجون 45-70) وهيمنة النساء."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f13",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c5",
+      "card_type": "basic",
+      "front_text": "Type 1 AIH: gamma globulin level, steroid responsiveness and cirrhosis progression?",
+      "back_text": "Elevated gamma globulin **+++**, steroid responsiveness **+++** (excellent), progression to cirrhosis **45%**.",
+      "explanation_ar": "النمط الأول: غاما غلوبيولين +++ واستجابة ستيرويدية +++ وتليف 45% — استجابة ممتازة للعلاج."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f14",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c5",
+      "card_type": "basic",
+      "front_text": "Type 2 AIH: which autoantibodies and which age distribution?",
+      "back_text": "**Anti-LKM1** and **anti-liver cytosol antibody-1 (SLC-1)** (the latter in adults only); **pediatric age 2-14 years**, rare in adults (**4%**).",
+      "explanation_ar": "النمط الثاني: anti-LKM1 مع SLC-1 (للبالغين فقط)، يصيب الأطفال 2-14 سنة ونادر عند البالغين (4%)."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f15",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c5",
+      "card_type": "basic",
+      "front_text": "Type 2 AIH: gamma globulin level, steroid responsiveness and cirrhosis progression?",
+      "back_text": "Elevated gamma-globulins only **+** (mild), steroid responsiveness **++** (intermediate), progression to cirrhosis **82%** — the aggressive type.",
+      "explanation_ar": "النمط الثاني أشرس: غاما غلوبيولين + فقط واستجابة ++ وتليف 82% — قارن مع 45% في النمط الأول."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f16",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c6",
+      "card_type": "basic",
+      "front_text": "What are the ABSOLUTE indications for treatment of AIH?",
+      "back_text": "1) **Serum AST >10x ULN**, 2) **Serum AST >5x ULN AND globulin >2x normal**, 3) **Bridging necrosis or multiacinar necrosis** on liver histology.",
+      "explanation_ar": "دواعٍ مطلقة: AST فوق 10 أضعاف، أو فوق 5 أضعاف مع غلوبيولين فوق ضعفين، أو نخر جسري/متعدد الفصيصات — أي واحد منها يكفي للبدء بالعلاج."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f17",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c6",
+      "card_type": "basic",
+      "front_text": "What are the RELATIVE indications for treatment of AIH?",
+      "back_text": "1) **Symptoms** (fatigue, arthralgia, jaundice), 2) **Serum AST and globulin less than the absolute criteria**, 3) **Interface hepatitis** on histology.",
+      "explanation_ar": "دواعٍ نسبية: أعراض فقط، أو قيم أدنى من المعايير المطلقة، أو التهاب سطحي بيني دون نخر جسري."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f18",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "card_type": "basic",
+      "front_text": "Give the PREDNISONE-ONLY treatment regimen of AIH (weeks 1-4 and maintenance).",
+      "back_text": "Week 1: **60 mg** | Week 2: **40 mg** | Week 3: **30 mg** | Week 4: **30 mg** | Maintenance until endpoint: **20 mg**.",
+      "explanation_ar": "بريدنيزون وحده: 60 ثم 40 ثم 30 ثم 30 ثم 20 ملغ وقائية حتى نقطة النهاية."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f19",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "card_type": "basic",
+      "front_text": "Give the COMBINATION (prednisone + azathioprine) regimen of AIH (weeks 1-4 and maintenance).",
+      "back_text": "Week 1: **30 mg + 50 mg** | Week 2: **20 mg + 50 mg** | Week 3: **15 mg + 50 mg** | Week 4: **15 mg + 50 mg** | Maintenance: **10 mg + 50 mg** — azathioprine is fixed at 50 mg throughout.",
+      "explanation_ar": "الدمج: 30+50، ثم 20+50، ثم 15+50، ثم 15+50، ثم 10+50 وقائياً — الأزاثيوبرين ثابت 50 ملغ ودوره توفير جرعة الستيرويد."
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_f20",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "card_type": "basic",
+      "front_text": "When is PREDNISONE-ONLY preferred and when is the COMBINATION preferred in AIH?",
+      "back_text": "Prednisone only: **cytopenia, pregnancy, malignancy, short course <6 months**. Combination: **postmenopausal state, osteoporosis, brittle diabetes, obesity, acne, emotional liability, hypertension**.",
+      "explanation_ar": "البريدنيزون وحده عند مشاكل الأزاثيوبرين (نقي العظم، الحمل، الخباثة، دورة قصيرة)، والدمج عند خطر سُمّية الستيرويد (سن اليأس، هشاشة، سكري هش، بدانة، حب شباب، تقلب مزاج، ضغط)."
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L10_autoimmune_hepatitis_q1",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "question_stem": "A 52-year-old woman presents with 6 weeks of fatigue, arthralgias and progressive jaundice. Examination shows hepatomegaly and spider nevi. Labs: AST 680 U/L (ref 10-40), ALT 740 U/L (ref 7-56), ALP 132 U/L (ref 44-147), total bilirubin 6.2 mg/dL (ref 0.3-1.2), IgG 2850 mg/dL (ref 700-1600), ANA positive 1:320, anti-smooth muscle antibody positive; hepatitis B and C serology negative. What is the most likely diagnosis?",
+      "options": [
+        "Autoimmune hepatitis (Type 1)",
+        "Primary biliary cholangitis",
+        "Wilson's disease",
+        "Hemochromatosis",
+        "Drug-induced hepatitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذه الصورة النموذجية للنمط الأول من التهاب الكبد المناعي: امرأة في الذروة العمرية الثانية (45-70) مع تعب وألم مفصلي ويرقان وضخامة كبد وعنكبوتات وعائية، ونمط إنزيمي خلوي (ناقلات مرتفعة بشدة مع فوسفاتاز قلوي طبيعي تقريباً) وارتفاع IgG/غاما غلوبيولين وأضداد ANA وASMA إيجابية مع استبعاد الالتهاب الفيروسي. التهاب الطرق الصفراوية الصفراوي الأولي يعطي نمطاً ركودياً (فوسفاتاز قلوي مرتفع جداً) مع أضداد AMA وليس ارتفاع IgG مع ANA/ASMA. داء ويلسون يصيب الشباب عادة مع علامات عصبية وحلقات كايزر-فلايشر. الهيموكروماتوز يظهر مع ارتفاع فيريتين وتشبع الترانسفيرين وداء سكري وتصبغ جلدي. والتهاب الكبد الدوائي يحتاج قصة دواء محرض (كالنيتروفورانتوين) ولا يفسر ارتفاع الغاما غلوبيولين المزمن.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Middle-aged woman + hepatocellular enzyme pattern + very high IgG.",
+        "ANA and ASMA are the autoantibodies of Type 1 AIH (ages 10-20 and 45-70, women)."
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q2",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c4",
+      "question_stem": "A 45-year-old woman is suspected of having autoimmune hepatitis based on fatigue, jaundice, AST 9x ULN, hypergammaglobulinemia and positive ANA/SMA. According to the lecture's recommendations, which component is still REQUIRED to establish the diagnosis?",
+      "options": [
+        "Liver biopsy for histology",
+        "ERCP of the biliary tree",
+        "HLA typing",
+        "Repeat autoantibody testing in 6 months",
+        "Abdominal ultrasound showing cirrhosis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تشخيص AIH يتطلب وفق التوصيات: مستويات الناقلات الأمينية والغلوبيولين، وكشف الأضداد ANA و/أو SMA وanti-LKM1، والفحص النسيجي (خزعة الكبد) — لذا الخزعة هي العنصر الناقص المطلوب. التنظير الرضحي للطرق الصفراوية فحص لتشخيص أمراض الطرق الصفراوية الركودية لا علاقة له بـ AIH. وزمرة النسج HLA ليست شرطاً تشخيصياً، وتكرار الأضداد بعد 6 أشهر يؤخر التشخيص بلا فائدة، والموجات فوق الصوتية قد تكون طبيعية مبكراً ولا تثبت التشخيص.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The diagnostic package = transaminases + globulins + autoantibodies + one tissue test.",
+        "The tissue test demonstrates periportal (interface) hepatitis."
+      ],
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q3",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c3",
+      "question_stem": "A 15-year-old boy is evaluated for a 3-week history of jaundice and slurred speech. He has Coombs-negative hemolytic anemia, AST 400 U/L, low serum ceruloplasmin, and golden-brown rings at the periphery of both corneas on slit-lamp examination. Which disease from the AIH differential diagnosis does he have?",
+      "options": [
+        "Wilson's disease",
+        "Alpha-1 antitrypsin deficiency",
+        "Hereditary hemochromatosis",
+        "Type 2 autoimmune hepatitis",
+        "Chronic hepatitis C"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القصة نموذجية لداء ويلسون: مراهق مع يرقان وفقر دم انحلالي كومبس سلبي وعلامات عصبية (كلام مبهم) وهبوط السيرولوبلازمين وحلقات كايزر-فلايشر. داء ويلسون أول ما يجب استبعاده ضمن التشخيص التفريقي لـ AIH لأنه يصيب نفس الفئة الشابة. عوز A1AT يسبب تليفاً ورئوياً مزمناً لا انحلالاً ولا حلقات قرنية. الهيموكروماتوز مرض ترسب حديد مع داء سكري وتصبغ وتضخم كبد وليس انحلال دم. النمط الثاني من AIH يحمل anti-LKM1 دون هبوط سيرولوبلازمين. والتهاب الكبد C المزمن يُشخص مصلياً ولا يسبب حلقات كايزر-فلايشر ولا انحلال دم.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Coombs-negative hemolysis + neurologic signs + low ceruloplasmin in an adolescent.",
+        "The corneal finding is Kayser-Fleischer rings — copper deposition."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q4",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c5",
+      "question_stem": "An 8-year-old girl with chronic hepatitis has negative ANA, negative anti-smooth muscle antibody, but strongly positive anti-LKM1; serum IgG is only mildly elevated. Which statement about her disease is correct?",
+      "options": [
+        "Type 1 AIH; progression to cirrhosis in 45%",
+        "Type 2 AIH; progression to cirrhosis in 82%",
+        "Type 2 AIH; steroid responsiveness is +++ (excellent)",
+        "Type 1 AIH; gamma globulin elevation is +++",
+        "Drug-induced hepatitis masquerading as AIH"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "طفلة بعمر 2-14 سنة مع anti-LKM1 إيجابي = النمط الثاني من AIH، وهو نمط عدواني يتقدم للتليف في 82% من الحالات، مع ارتفاع بسيط فقط في الغاما غلوبيولين (+) واستجابة ستيرويدية متوسطة (++). أما النمط الأول فيتصف بـ ANA/ASMA مع ذروتين عمريتين (10-20 و45-70) وغاما غلوبيولين +++ واستجابة +++ وتليف 45%. ولا وجود لقصة دواء هنا تدعم الالتهاب الدوائي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Anti-LKM1 defines Type 2 AIH, a pediatric disease (2-14 years).",
+        "Type 2 is the aggressive type — its cirrhosis progression rate is nearly double that of Type 1."
+      ],
+      "focus_sections": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q5",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c6",
+      "question_stem": "A 40-year-old woman with newly diagnosed autoimmune hepatitis has AST 13x the upper limit of normal with normal globulin levels; her liver biopsy shows interface hepatitis without bridging necrosis. How do you classify her indication for treatment?",
+      "options": [
+        "Absolute indication — AST >10x ULN",
+        "Relative indication — interface hepatitis only",
+        "No indication — globulins are normal",
+        "Treatment only if symptoms develop",
+        "Absolute indication — interface hepatitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ارتفاع AST فوق 10 أضعاف الحد الأعلى الطبيعي هو بحد ذاته داعٍ مطلق للعلاج بغض النظر عن الغلوبيولين والنسيج. الالتهاب السطحي البيني وحده (دون نخر جسري أو متعدد الفصيصات) يُعد داعياً نسبياً فقط لكنه لا يلغي الداعي المطلق المستوفي مسبقاً بارتفاع الإنزيم. وغياب الأعراض أو طبيعية الغلوبيولين لا يبرران تأخير العلاج عندما يتحقق معيار مطلق.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Check the AST multiples: what threshold makes treatment mandatory?",
+        "AST >10x ULN alone is an absolute indication."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q6",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c6",
+      "question_stem": "A 60-year-old man with autoimmune hepatitis reports fatigue and arthralgia. Labs show AST 3x ULN and globulin 1.3x normal; liver biopsy reveals interface hepatitis without bridging or multiacinar necrosis. What is the appropriate classification of his indication for treatment?",
+      "options": [
+        "Absolute indication — symptoms present",
+        "Relative indication — symptoms, low-grade biochemical activity and interface hepatitis",
+        "No indication — AST below 10x ULN",
+        "Absolute indication — interface hepatitis on biopsy",
+        "Treatment contraindicated at his age"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "عنده ثلاثة دواعٍ نسبية مجتمعة: أعراض (تعب وألم مفصلي)، وقيم AST وغلوبيولين أدنى من المعايير المطلقة (3 أضعاف فقط دون 5-10 أضعاف وغلوبيولين دون ضعفين)، والتهاب سطحي بيني نسيجياً دون نخر جسري أو متعدد الفصيصات. لا يوجد أي معيار مطلق: فالأعراض وحدها ليست داعياً مطلقاً، والالتهاب السطحي البيني وحده داعٍ نسبي وليس مطلقاً، والعمر لا يمنع العلاج.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Absolute = AST >10x, or AST >5x with globulin >2x, or bridging/multiacinar necrosis.",
+        "Interface hepatitis alone, symptoms alone, and borderline enzymes are all relative indications."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q7",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "question_stem": "A 35-year-old woman with severe autoimmune hepatitis is started on the COMBINATION regimen (prednisone + azathioprine). What are her doses in week 2 of treatment?",
+      "options": [
+        "Prednisone 40 mg + azathioprine 50 mg",
+        "Prednisone 30 mg + azathioprine 50 mg",
+        "Prednisone 20 mg + azathioprine 50 mg",
+        "Prednisone 15 mg + azathioprine 25 mg",
+        "Prednisone 10 mg + azathioprine 50 mg"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "نظام الدمج: الأسبوع الأول بريدنيزون 30 ملغ + أزاثيوبرين 50 ملغ، والأسبوع الثاني 20 ملغ + 50 ملغ، ثم الأسبوعان الثالث والرابع 15 ملغ + 50 ملغ، ثم الوقائي 10 ملغ + 50 ملغ حتى نقطة النهاية. جرعة 40 ملغ تخص نظام البريدنيزون وحده في الأسبوع الثاني، والأزاثيوبرين ثابت دائماً 50 ملغ ولا يُخفض إلى 25 ملغ، و10 ملغ هي جرعة البريدنيزون الوقائية في الدمج وليست جرعة الأسبوع الثاني.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Azathioprine never changes: 50 mg at every step.",
+        "Combination prednisone taper: 30 → 20 → 15 → 15 → 10 mg."
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q8",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "question_stem": "A 29-year-old pregnant woman at 14 weeks of gestation is diagnosed with severe autoimmune hepatitis (AST 11x ULN). Which treatment approach does the lecture prefer for her?",
+      "options": [
+        "Combination prednisone + azathioprine",
+        "Prednisone only",
+        "Azathioprine only",
+        "Defer all treatment until after delivery",
+        "Referral for liver transplantation"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "الحمل من أسباب تفضيل البريدنيزون وحده في علاج AIH — يُتجنب الأزاثيوبرين عند الحوامل. أما تأجيل العلاج فيهدد الأم لأن 40% من مرضى الشدة غير المعالجين يموتون خلال 6 أشهر، والأزاثيوبرين وحده لا يكفي كعلاج أولي وليس خياراً قياسياً في الحمل، وزرع الكبد ليس علاجاً لالتهاب كبدي قابل للاستجابة للستيرويدات.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Which drug of the pair carries teratogenicity/myelosuppression concerns?",
+        "Pregnancy is listed among the reasons to prefer prednisone-only."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q9",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c7",
+      "question_stem": "A 58-year-old postmenopausal woman with osteoporosis (T-score -3.1) and brittle type 2 diabetes needs treatment for autoimmune hepatitis with absolute indications. Which regimen does the lecture prefer?",
+      "options": [
+        "Prednisone only, starting at 60 mg",
+        "Combination prednisone + azathioprine",
+        "Azathioprine monotherapy",
+        "No treatment — comorbidities prohibit immunosuppression",
+        "Prednisone only, maintained at 60 mg indefinitely"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "بعد سن اليأس مع هشاشة العظام وداء سكري هش، الخطر المهيمن هو سُمّية الستيرويدات، لذا يُفضل نظام الدمج الذي يبدأ ببريدنيزون 30 ملغ فقط (نصف جرعة نظام البريدنيزون وحده) مع أزاثيوبرين 50 ملغ ثابت — توفير للستيرويد يحمي العظم والسكر. البريدنيزون وحده بجرعة 60 ملغ يضاعف خطر الكسور وسوء ضبط السكر، والأزاثيوبرين وحده ليس العلاج القياسي الأولي، ولا توجد ممانعة من العلاج هنا، والجرعة العالية لا تبقى إلى ما لا نهاية بل تُخفض تدريجياً حتى نقطة النهاية.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Her problems (bone loss, brittle diabetes) are all steroid-toxicity risks.",
+        "The combination regimen halves the prednisone dose at every step."
+      ],
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q10",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c2",
+      "question_stem": "Reviewing the laboratory features of autoimmune hepatitis, an intern asks which abnormality is found in essentially 100% of patients. What is the correct answer?",
+      "options": [
+        "Hyperbilirubinemia",
+        "Hypergammaglobulinemia",
+        "Alkaline phosphatase >2x ULN",
+        "Elevated AST",
+        "Increased IgG level"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "ارتفاع AST موجود عند 100% من المرضى — إنه الملمح المخبري العالمي للمرض، فـ AST طبيعي يستبعد عملياً AIH النشط. أما البقية فمرتفعة لكن ليست عالمية: فرط البيلروبين 83%، وفرط غاما الغلوبيولين 92%، وارتفاع IgG 91%، والفوسفاتاز القلوي فوق ضعفين عند 33% فقط (نمط خلوي لا ركودي).",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "hints": [
+        "Think of the single laboratory test whose normal value would argue strongly against active AIH.",
+        "It is the hepatocellular enzyme, not the cholestatic one."
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q11",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c1",
+      "question_stem": "Before the steroid era, a colleague asks you to quantify the prognosis of untreated SEVERE autoimmune hepatitis according to this lecture. Which figure is correct?",
+      "options": [
+        "10% die within 1 year",
+        "20% die within 6 weeks",
+        "40% die within 6 months of diagnosis",
+        "60% die within 3 months",
+        "80% die within 1 month"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "40% من مرضى AIH الشديد غير المعالج يموتون خلال 6 أشهر من التشخيص — وهذا ما يجعل البريدنيزون والأزاثيوبرين حجر الأساس العلاجي. الأرقام الأخرى خاطئة: لا 10% خلال سنة (المرض أخطر من ذلك)، ولا 20% خلال 6 أسابيع، ولا 60% خلال 3 أشهر، ولا 80% خلال شهر — احفظ الرقم 40% خلال 6 أشهر، وميزه عن 40% التي تتطور للتليف و40% التي تبدأ ببداية حادة.",
+      "difficulty": "advanced",
+      "clinical_vignette": false,
+      "hints": [
+        "The lecture loves the number 40% — three different 40% figures appear.",
+        "The mortality figure is tied to a 6-month window."
+      ],
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_q12",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "concept_id": "L10_autoimmune_hepatitis_c4",
+      "question_stem": "A resident wants to diagnose autoimmune hepatitis in a 30-year-old man with chronic hepatitis based solely on a positive ANA (1:160) and elevated AST 4x ULN, without further work-up. Why is this approach flawed?",
+      "options": [
+        "ANA is not an autoantibody of AIH",
+        "AIH diagnosis requires the full criteria: characteristic features, histology, and exclusion of other chronic liver diseases",
+        "Positive ANA always means systemic lupus erythematosus, not liver disease",
+        "AIH can only be diagnosed after cirrhosis has developed",
+        "Men never develop autoimmune hepatitis"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "تشخيص AIH مركّب وليس أحادي الاختبار: يلزم وجود مظاهر سريرية مميزة، وفحص نسيجي للكبد (خزعة تظهر التهاباً سطحياً بينياً/بابياً)، واستبعاد الأمراض الأخرى (الفيروسي، ويلسون، عوز A1AT، الهيموكروماتوز، الدوائي) — فالمرض مجهول السبب بحكم تعريفه. ANA فعلاً من أضداد AIH لكنه وحده لا يشخص، وقد يكون إيجابياً في الذئبة وفي التهاب الكبد C وحتى عند أصحاء. والرجال يصابون بالمرض وإن كانت النساء أكثر، ولا يُنتظر التليف لتشخيص المرض.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "AIH is 'of unknown cause' — what does that force you to do before diagnosing it?",
+        "Three criteria: clinical features + histology + exclusion of other diseases."
+      ],
+      "focus_sections": [
+        0
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L10_autoimmune_hepatitis_case1",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "The Postmenopausal Woman with Lethargy and Jaundice",
+      "scenario": "A 52-year-old woman presents with a three-month history of progressive fatigue, dark urine and yellowing of her eyes. She has also noticed aching in her shoulders and hips. She has a known history of autoimmune thyroiditis and is postmenopausal. This is a classic presentation of autoimmune hepatitis Type 1 — the most common AIH subtype in adult women — requiring recognition, serological confirmation, and a treatment decision in which her menopausal status directly influences the chosen regimen.",
+      "vignette": {
+        "age": 52,
+        "sex": "female",
+        "chief_complaint": "Progressive fatigue and yellowing of the eyes for 3 months",
+        "history": "Postmenopausal woman with autoimmune thyroiditis (concurrent immune disease). Reports fatigue, polyarthralgia of shoulders and hips, anorexia and pruritus. No alcohol consumption, no new medications (no nitrofurantoin/minocycline), no blood transfusions, no IV drug use, no family history of liver disease.",
+        "vitals": {
+          "bp": "128/78 mmHg",
+          "hr": "84 bpm",
+          "rr": "16 /min",
+          "temp": "37.0 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Icteric sclera. Multiple spider nevi over the upper chest. Liver palpable 3 cm below the costal margin (hepatomegaly), mildly tender. No splenomegaly, no ascites, no asterixis or encephalopathy. Thyroid: mildly enlarged, consistent with known thyroiditis.",
+        "labs": [
+          {
+            "name": "AST",
+            "value": "960 U/L (ref 10-40)",
+            "flag": "critical"
+          },
+          {
+            "name": "ALT",
+            "value": "880 U/L (ref 7-56)",
+            "flag": "critical"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "168 U/L (ref 40-129)",
+            "flag": "high"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "7.2 mg/dL (ref 0.3-1.2)",
+            "flag": "high"
+          },
+          {
+            "name": "Serum albumin",
+            "value": "3.4 g/dL (ref 3.5-5.2)",
+            "flag": "low"
+          },
+          {
+            "name": "Gamma globulin (IgG)",
+            "value": "2,650 mg/dL (ref 700-1,600)",
+            "flag": "high"
+          },
+          {
+            "name": "ANA",
+            "value": "Positive 1:320",
+            "flag": "high"
+          },
+          {
+            "name": "Anti-smooth muscle antibody (ASMA)",
+            "value": "Positive",
+            "flag": "high"
+          },
+          {
+            "name": "Anti-LKM1",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "HBsAg and anti-HCV",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum ceruloplasmin",
+            "value": "28 mg/dL (ref 20-60)",
+            "flag": "normal"
+          },
+          {
+            "name": "Ferritin / iron studies",
+            "value": "Within normal limits",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: hepatomegaly with increased echogenicity; no biliary dilatation; no ascites; normal spleen size."
+      },
+      "steps": [
+        {
+          "id": "L10_autoimmune_hepatitis_case1_s1",
+          "prompt": "Based on this presentation, what is the most likely diagnosis?",
+          "options": [
+            "Autoimmune hepatitis Type 1",
+            "Wilson disease",
+            "Drug-induced liver injury",
+            "Acute viral hepatitis B",
+            "Primary biliary cholangitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "امرأة بالغة (45-70) في سن ما بعد اليأس، قصة تعب (85%) ويرقان (77%) وألم مفصلي، مع مرض مناعي مصاحب (التهاب دراق هاشيموتو)، ارتفاع شديد في AST (100% من الحالات)، فرط غاما غلوبيولينيميا (92%)، وANA وASMA إيجابيان — هذا النمط الأول من التهاب الكبد المناعي الذاتي. مرض ويلسون يصيب صغار السن عادةً، والأدوية مستبعدة (لا أدوية جديدة)، والالتهاب الكبدي الفيروسي B سلبي مصلياً، ويرقان الانسداد الصفراوي الأولي يترافق مع ALP أعلى بكثير وAMA إيجابي.",
+          "xp": 10,
+          "hints": [
+            "Concurrent immune disease is present in 48% of these patients.",
+            "Which antibodies pair with Type 1 disease?"
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case1_s2",
+          "prompt": "Which of the following is required to CONFIRM the diagnosis before starting treatment, per the lecture's recommendations?",
+          "options": [
+            "Liver biopsy showing interface hepatitis, after excluding viral and metabolic causes",
+            "Repeated ANA testing in 6 months",
+            "ERCP to exclude biliary obstruction",
+            "Trial of prednisone for 4 weeks as a diagnostic test"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "وفق توصيات المحاضرة: تشخيص AIH يتطلب مستويات ناقلات الأمين والغلوبيولين، وكشف الأجسام المضادة (ANA و/أو SMA أو anti-LKM1)، والنسيج الكبدي (خزعة تُظهر التهاب الواجهة interface hepatitis)، مع استبعاد الأسباب الفيروسية والأيضية والدوائية أولاً لأن التعريف هو «التهاب كبدي ذاتي الاستمرار مجهول السبب». لا يُشترط تكرار الأجسام المضادة، وERCP غير ضروري مع غياب توسع القنوات، والتجربة العلاجية ليست وسيلة تشخيصية معتمدة.",
+          "xp": 10,
+          "hints": [
+            "Diagnosis of exclusion + characteristic serology + histology.",
+            "The recommendations slide lists aminotransferases/globulins, autoantibodies, and histology."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case1_s3",
+          "prompt": "Does this patient have an ABSOLUTE indication for treatment?",
+          "options": [
+            "Yes — AST is more than 10x the upper limit of normal",
+            "No — absolute indications require bridging necrosis only",
+            "No — treatment is only indicated when cirrhosis has developed",
+            "Yes — because ANA is positive at any titer"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "AST عند المريضة 960 وحدة/ل أي حوالي 24 ضعف الحد الأعلى الطبيعي، وهذا يتجاوز معيار المطلق الأول (AST > 10 أضعاف الحد الطبيعي). دواعي المعالجة المطلقة وفق المحاضرة: AST > 10x ULN، أو AST > 5x ULN مع غلوبيولين > 2x الطبيعي، أو نخر جسري/نخر متعدد الفصيصات. وجود الورم الوعائي ANA وحده ليس داعياً للعلاج، ولا يُنتظر حدوث التليف لأن 40% من غير المعالجين يتطورون للتليف.",
+          "xp": 10,
+          "hints": [
+            "Compare her AST with the upper limit of normal (40 U/L).",
+            "Absolute indications: AST >10x ULN, or AST >5x ULN + globulin >2x NL, or bridging/multiacinar necrosis."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case1_s4",
+          "prompt": "Which treatment regimen is MOST appropriate for this postmenopausal patient?",
+          "options": [
+            "Combination therapy: prednisone 30 mg + azathioprine 50 mg, tapering prednisone to 10 mg + azathioprine 50 mg maintenance",
+            "Prednisone only: 60 mg daily, tapering to 20 mg maintenance",
+            "Azathioprine 50 mg alone",
+            "Prednisone 60 mg daily indefinitely without tapering"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريضة في سن ما بعد اليأس — وهو أحد أسباب تفضيل المعالجة المشتركة وفق شريحة «أسباب التفضيل»: حالة ما بعد اليأس، هشاشة العظام، السكري الهش، البدانة، حب الشباب، تقلب المزاج، وارتفاع الضغط. الجرعة المشتركة: بريدنيزون 30 ملغ + أزاثيوبرين 50 ملغ في الأسبوع الأول، ثم 20+50، ثم 15+50، ثم 15+50، ثم صيانة 10+50 حتى نقطة النهاية. أما بريدنيزون وحده (60-40-30-30 ثم 20 صيانة) فيُفضل عند نقص الخلايا، الحمل، الأورام الخبيثة، والكورس القصير <6 أشهر. الأزاثيوبرين وحده ليس علاجاً أولياً، والبريدنيزون الثابت دون تخفيض خاطئ.",
+          "xp": 15,
+          "hints": [
+            "Her menopausal state matters — which column of the preference table does she fit?",
+            "Combination regimen week 1 = prednisone 30 mg + AZA 50 mg."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case1_s5",
+          "prompt": "What is the expected endpoint of successful therapy?",
+          "options": [
+            "Remission (clinical and biochemical), allowing tapering to the lowest maintenance doses (prednisone 10 mg + azathioprine 50 mg) until the treatment endpoint",
+            "Permanent normalisation of ANA and ASMA titres",
+            "Complete withdrawal of all drugs after week 4 regardless of response",
+            "Regression of cirrhosis on follow-up biopsy"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الهدف هو الهدأة السريرية والمخبرية مع الوصول لأقل جرعات صيانة (بريدنيزون 10 ملغ + أزاثيوبرين 50 ملغ) حتى نقطة النهاية العلاجية. الأجسام المضادة قد تبقى إيجابية رغم الهدأة ولا تُستخدم وحدها كمؤشر، والسحب الكامل بعد 4 أسابيع مبكر وخطير (الانتكاس)، والتليف إن وجد لا يتراجع بالكامل — استجابة الستيرويد في النمط الأول (+++) ممتازة لكن العلاج يُستمر حتى نقطة النهاية المحددة.",
+          "xp": 10,
+          "hints": [
+            "Type 1 AIH is strongly steroid responsive (+++).",
+            "Maintenance column of the regimen table: prednisone 10 mg + AZA 50 mg 'until endpoint'."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب الكبد المناعي الذاتي من النمط الأول (ANA وASMA إيجابيان) عند امرأة بعد سن اليأس مع مرض مناعي مصاحب. الدروس المستفادة: (1) أي مريض بيرقان وارتفاع ناقلات أمين لا تشخيصياً سبباً واضحاً يجب أن يُفرَّق عن مرض ويلسون، عوز مضادة التربسين، تراكم الحديد، الأدوية، والالتهاب الفيروسي — فتعريف AIH «مجهول السبب» يجعل الاستبعاد شرطاً. (2) الدواعي المطلقة للعلاج: AST > 10x ULN أو AST > 5x مع غلوبيولين > 2x أو النخر الجسري. (3) اختيار المحضر يعتمد على مريضه: بعد اليأس وهشاشة العظام والسكري الهش والبدانة وحب الشباب وتقلب المزاج وارتفاع الضغط تُفضل المعالجة المشتركة (لتقليل جرعة الكورتيزون)، بينما نقص الخلايا والحمل والأورام والكورس القصير تُفضل البريدنيزون وحده. (4) النمط الأول: تليف 45%، استجابة ستيرويدية +++؛ قارن بالنمط الثاني عند الأطفال: تليف 82%.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L10_autoimmune_hepatitis_case2",
+      "lecture_id": "L10_autoimmune_hepatitis",
+      "title": "The Girl with Recurrent Jaundice and Anti-LKM1",
+      "scenario": "A 9-year-old girl is referred for evaluation of persistent jaundice, fatigue and dark urine that have recurred twice over the past four months. Her growth has been poor and her teachers note easy fatigability. Examination and serology point away from the common adult pattern of ANA/ASMA positivity — this pediatric presentation illustrates the distinct Type 2 form of autoimmune hepatitis, defined by anti-LKM1 and anti-liver cytosol type 1 antibodies, an earlier age of onset, and a distinctly higher progression to cirrhosis.",
+      "vignette": {
+        "age": 9,
+        "sex": "female",
+        "chief_complaint": "Recurrent jaundice and fatigue for 4 months",
+        "history": "Previously healthy girl. Two prior episodes of self-limited jaundice attributed to 'viral hepatitis' without serological confirmation. No medications, no foreign travel, no raw shellfish ingestion, no family history of liver or autoimmune disease. Normal developmental history but poor weight gain over the last 6 months.",
+        "vitals": {
+          "bp": "100/62 mmHg",
+          "hr": "96 bpm",
+          "rr": "20 /min",
+          "temp": "36.8 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Icteric sclera and mild pallor. Liver edge palpable 4 cm below the right costal margin, non-tender. No spider nevi, no splenomegaly, no ascites, no stigmata of chronic liver disease. No Kayser-Fleischer rings on slit-lamp examination.",
+        "labs": [
+          {
+            "name": "AST",
+            "value": "640 U/L (ref 10-40)",
+            "flag": "critical"
+          },
+          {
+            "name": "ALT",
+            "value": "585 U/L (ref 7-56)",
+            "flag": "critical"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "290 U/L (age-adjusted ref 130-560)",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "4.8 mg/dL (ref 0.3-1.2)",
+            "flag": "high"
+          },
+          {
+            "name": "Gamma globulin (IgG)",
+            "value": "2,100 mg/dL (ref 400-1,300 for age)",
+            "flag": "high"
+          },
+          {
+            "name": "ANA",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Anti-smooth muscle antibody (ASMA)",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Anti-LKM1",
+            "value": "Positive",
+            "flag": "high"
+          },
+          {
+            "name": "Anti-liver cytosol type 1 (anti-SLC1)",
+            "value": "Positive",
+            "flag": "high"
+          },
+          {
+            "name": "HBsAg, anti-HAV IgM, anti-HCV",
+            "value": "Negative",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum ceruloplasmin",
+            "value": "31 mg/dL (ref 20-60)",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Abdominal ultrasound: hepatomegaly with homogeneous echotexture; no biliary dilatation; spleen normal."
+      },
+      "steps": [
+        {
+          "id": "L10_autoimmune_hepatitis_case2_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Autoimmune hepatitis Type 2",
+            "Autoimmune hepatitis Type 1",
+            "Wilson disease",
+            "Autoimmune thyroiditis with cholestasis",
+            "Hepatitis A infection"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "طفلة في عمر 2-14 سنة (العمر البيدiatricي للنمط الثاني) مع Anti-LKM1 وanti-SLC1 إيجابيين وANA/ASMA سلبيين — النمط الثاني من التهاب الكبد المناعي الذاتي. النمط الأول يترافق مع ANA/ASMA ويصيب فئتين عمريتين (10-20 و45-70). مرض ويلسون مستبعد بغياب حلقات كايزر-فلايشر وسيرولوبلازمين طبيعي وعمر غير نموذجي. التهاب الكبد A سلبي IgM. لا يوجد يرقان انسدادي صفراوي.",
+          "xp": 10,
+          "hints": [
+            "Which antibodies define pediatric AIH (age 2-14)?",
+            "LKM1 = liver-kidney microsomal type 1."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case2_s2",
+          "prompt": "How does Type 2 AIH differ from Type 1 in this patient, according to the lecture's comparison?",
+          "options": [
+            "Type 2 has a higher progression to cirrhosis (82%) and typically pediatric onset (2-14 years), while Type 1 progresses in 45% and peaks at ages 10-20 and 45-70",
+            "Type 2 occurs mainly in postmenopausal women",
+            "Type 2 is defined by ANA and ASMA positivity",
+            "Type 2 does not respond to steroids, unlike Type 1"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مقارنة المحاضرة: النمط الأول — أضداد ANA/ASMA، عمر 10-20 و45-70، نساء بشكل رئيسي، أمراض مناعية مصاحبة، غاما غلوبيولين +++، استجابة ستيرويدية +++)+، تليف 45%. النمط الثاني — أضداد LKM1 وSLC-1، عمر أطفال 2-14 ونادر عند البالغين (4%)، غاما غلوبيولين +، استجابة ستيرويدية ++، تليف 82%. إذن النمط الثاني أسوأ تطوراً نحو التليف لكنه ما يزال مستجيباً للستيرويد (++ وليس معدوم الاستجابة).",
+          "xp": 10,
+          "hints": [
+            "Compare the cirrhosis percentages: 45% vs 82%.",
+            "Type 2 antibodies: LKM1 and SLC-1; age 2-14."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case2_s3",
+          "prompt": "Per the lecture's recommendations, how should the diagnostic criteria be applied?",
+          "options": [
+            "Apply the criteria to all patients: aminotransferase and globulin levels, detection of ANA and/or SMA or anti-LKM1, and liver histology",
+            "Only apply the criteria to adults, since AIH is an adult disease",
+            "Rely on anti-LKM1 positivity alone — histology is unnecessary in children",
+            "Wait for progression to cirrhosis before applying the criteria"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "توصيات المحاضرة صريحة: معايير التشخيص تنطبق على جميع المرضى، وتتطلب: مستويات ناقلات الأمين والغلوبيولين، كشف ANA و/أو SMA أو anti-LKM1، والنسيج الكبدي (الخزعة). لا يُكتفى بالأضداد وحدها، ولا يُنتظر التليف — بل إن التشخيص المبكر والعلاج يهدفان لمنعه لأن 40% من غير المعالجين يتليفون و20% منهم قد يموتون.",
+          "xp": 10,
+          "hints": [
+            "'Diagnostic criteria for AIH should be applied to all patients.'",
+            "Three components: enzymes/globulins + autoantibodies + histology."
+          ]
+        },
+        {
+          "id": "L10_autoimmune_hepatitis_case2_s4",
+          "prompt": "Her AST is 640 U/L (about 16x ULN). What is the next step?",
+          "options": [
+            "Start immunosuppressive therapy — she has an absolute indication (AST > 10x ULN)",
+            "Observe with repeat liver tests in 6 months",
+            "Liver transplantation as first-line therapy",
+            "Initiate only vitamin E and lifestyle advice"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "AST > 10 أضعاف الحد الطبيعي = داعٍ مطلق للمعالجة المثبطة للمناعة فوراً. المراقبة خطأ لأن المرض سيتقدم نحو التليف (82% في النمط الثاني). الزراعة الكبدي ليست خطاً أولاً بل للفشل الكبدي المتقدم/الفشل الصاعق الذي لا يستجيب. النمط الثاني مستجيب للستيرويد (++) لذلك العلاج الدوائي هو الأساس.",
+          "xp": 10,
+          "hints": [
+            "Absolute indication #1: serum AST > 10x ULN.",
+            "Type 2 is steroid responsive (++)."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب الكبد المناعي الذاتي من النمط الثاني عند طفلة — أضداد LKM1 وSLC-1 إيجابية، ANA/ASMA سلبية، عمر 2-14 سنة. الدروس المستفادة: (1) النمط الثاني مرض أطفال أساساً (البالغون 4% فقط) لكن النساء أكثر عرضة. (2) فرق النمطين: الأول (ANA/ASMA، عمر 10-20 و45-70، IgG +++، تليف 45%، استجابة +++) مقابل الثاني (LKM1/SLC-1، 2-14 سنة، IgG +، تليف 82%، استجابة ++). (3) المعالجة تُبدأ عند الدواعي المطلقة (AST > 10x ULN هنا). (4) التشخيص يتطلب دوماً الأضداد + الخزعة (التهاب الواجهة) + استبعاد الفيروسي والأيضي والدوائي — حتى عند الأطفال. (5) بدون علاج: 40% تليف و20% وفاة — لذلك لا تنتظر.",
+      "difficulty": "advanced",
+      "order_index": 1
+    }
+  ]
+}

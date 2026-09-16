@@ -92,51 +92,27 @@ class _BrandLockupState extends State<BrandLockup>
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-                shape: BoxShape.circle,
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.15),
-                    blurRadius: widget.size * 0.3,
-                    offset: Offset(0, widget.size * 0.1),
-                  ),
-                ],
-              ),
-              padding: EdgeInsets.all(widget.size * 0.15),
-              child: Image.asset(
-                'assets/brand/final/logo_mark.png',
-                width: widget.size,
-                height: widget.size,
-                fit: BoxFit.contain,
+            Image.asset(
+              'assets/brand/icon/app_icon_foreground_new.png',
+              width: widget.size * 1.5, // Slightly larger since we removed padding
+              height: widget.size * 1.5,
+              fit: BoxFit.contain,
               errorBuilder: (context, error, stackTrace) => Text(
                 '🩺',
                 style: TextStyle(fontSize: widget.size * 0.5),
               ),
             ),
-          ),
-          SizedBox(height: widget.size * 0.25),
-          Text(
-            'منصة الطب الباطني',
-            style: TextStyle(
-              fontFamily: AppType.arabicFamily,
-              fontSize: widget.size * 0.2,
-              fontWeight: FontWeight.w800,
-              color: Colors.white,
-              letterSpacing: 0.5,
+            SizedBox(height: widget.size * 0.1),
+            Text(
+              'MedOS',
+              style: TextStyle(
+                fontFamily: AppType.arabicFamily,
+                fontSize: widget.size * 0.28,
+                fontWeight: FontWeight.w800,
+                color: Colors.white,
+                letterSpacing: 0.5,
+              ),
             ),
-          ),
-          SizedBox(height: widget.size * 0.05),
-          Text(
-            'Internal Medicine',
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              fontFamily: AppType.latinFamily,
-              fontSize: widget.size * 0.12,
-              color: Colors.white.withValues(alpha: 0.9),
-            ),
-          ),
           ],
         ),
       ),

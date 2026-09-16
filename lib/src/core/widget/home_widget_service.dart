@@ -1,9 +1,8 @@
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart' show TargetPlatform, debugPrint, defaultTargetPlatform;
 import 'package:home_widget/home_widget.dart';
 
 import '../database/database_helper.dart';
 import '../database/srs_repository.dart';
-import '../profile/learner_profile.dart';
 
 /// حمولة بيانات الويدجت — قيم عرض قابلة للاختبار بلا قنوات منصة.
 class HomeWidgetPayload {
@@ -13,6 +12,9 @@ class HomeWidgetPayload {
     required this.medicalTip,
     required this.completedToday,
     required this.generatedAtIso,
+    this.pendingPinnedTitles = const <String>[],
+    this.pinnedTotal = 0,
+    this.clinicalPearl = '',
   });
 
   /// عدد البطاقات المستحقة للمراجعة اليوم.
@@ -30,10 +32,34 @@ class HomeWidgetPayload {
   /// ISO UTC لحظة الحساب (تشخيص/حداثة البيانات).
   final String generatedAtIso;
 
+  /// عناوين المحاضرات المثبتة غير المكتملة (سقف 3 — الجزء «أهدافي»).
+  final List<String> pendingPinnedTitles;
+
+  /// إجمالي المثبتات غير المكتملة بلا سقف — منه يحسب الويدجت
+  /// «+N أخرى» (لاحظ: يختلف عن طول [pendingPinnedTitles] المقطوع).
+  final int pinnedTotal;
+
+  /// لؤلؤة اليوم — golden_tip عشوائية من أي محاضرة (الجزء السفلي).
+  /// فارغة عند غيابها → الويدجت يعرض بنك المعلومات الثابت.
+  final String clinicalPearl;
+
   /// عتبة «التراكم كبير» — الرقم يظهر أحمر عند تجاوزها.
   static const int highDueThreshold = 15;
 
+  /// أقصى عدد محاضرات تُرسل للويدجت (سعة العرض في الشاشة الصغيرة).
+  static const int maxPinnedTitles = 3;
+
   bool get isDueHigh => dueCards >= highDueThreshold;
+
+  /// كم محاضرة وراء السقف — «+N أخرى» (لا سالب أبداً).
+  int get extraPinnedCount => pinnedTotal - maxPinnedTitles;
+
+  /// عناوين المثبتات نصاً واحداً مدمجاً بفواصل — عقد Native XML/Kotlin
+  /// (سطر واحد لكل محاضرة في الويدجت عبر split على "|").
+  /// الفواصل تُنزع من العنوان نفسه كي لا ينشق خطياً (عقد الإرسال).
+  String get pendingPinnedJoined => pendingPinnedTitles
+      .map((String t) => t.replaceAll('|', '⁄'))
+      .join(' | ');
 
   Map<String, Object?> toMap() => <String, Object?>{
         'due_cards': dueCards,
@@ -41,6 +67,11 @@ class HomeWidgetPayload {
         'completed_today': completedToday,
         'medical_tip': medicalTip,
         'generated_at': generatedAtIso,
+        'pinned_titles': pendingPinnedJoined,
+        'pinned_count': pendingPinnedTitles.length,
+        // العدد الكلي غير المقطوع — منه يُشتق «+N أخرى» في Native.
+        'pinned_total': pinnedTotal,
+        'clinical_pearl': clinicalPearl,
       };
 }
 
@@ -72,6 +103,10 @@ abstract final class HomeWidgetService {
   static const String keyMedicalTip = 'medical_tip';
   static const String keyCompletedToday = 'completed_today';
   static const String keyGeneratedAt = 'generated_at';
+  static const String keyPinnedTitles = 'pinned_titles';
+  static const String keyPinnedCount = 'pinned_count';
+  static const String keyPinnedTotal = 'pinned_total';
+  static const String keyClinicalPearl = 'clinical_pearl';
 
   /// بنك المعلومات الطبية السريعة — تُختار واحدة حسب اليوم.
   static const List<String> medicalTips = <String>[
@@ -106,12 +141,13 @@ abstract final class HomeWidgetService {
     // (1) البطاقات المستحقة اليوم (Leitner).
     final int due = await SrsRepository.dueTodayCount();
 
-    // (2) أنشطة اليوم: أحداث XP منذ بداية اليوم UTC.
-    final DateTime nowUtc = DateTime.now().toUtc();
-    final DateTime dayStartUtc =
-        DateTime.utc(nowUtc.year, nowUtc.month, nowUtc.day);
+    // (2) أنشطة اليوم: أحداث XP منذ بداية اليوم **المحلي** — عدّاد
+    //     «اليوم» في الويدجت يتبع يوم المستخدم لا منتصف ليل UTC
+    //     (كان يتصفر 3 فجراً بتوقيت UTC+3).
+    final DateTime nowLocal = DateTime.now();
+    final DateTime dayStartLocal = DateTime(nowLocal.year, nowLocal.month, nowLocal.day);
     final List<Map<String, Object?>> todayEvents =
-        await db.xpEventsSince(dayStartUtc.toIso8601String());
+        await db.xpEventsSince(dayStartLocal.toUtc().toIso8601String());
 
     // الأنشطة المكتملة اليوم = تقييمات + بطاقات مُراجَعة.
     final int completedToday = todayEvents
@@ -119,20 +155,34 @@ abstract final class HomeWidgetService {
             e['kind'] == 'assessment' || e['kind'] == 'flashcard')
         .length;
 
-    // (3) الهدف اليومي من تفضيلات المستخدم (الافتراضي 10 بطاقات).
-    final int goal = await LearnerProfile.dailyGoal();
-
-    // نسبة الإنجاز 0–100 من الهدف (سقف 100).
-    final int progress = goal <= 0
+    // (3) نسبة الإنجاز اليومي (بناءً على المهام الفعلية المستحقة والمكتملة).
+    final int totalToday = completedToday + due;
+    final int progress = totalToday == 0
         ? 0
-        : ((completedToday / goal) * 100).clamp(0, 100).toInt();
+        : ((completedToday / totalToday) * 100).clamp(0, 100).toInt();
+
+    // (4) أهدافي — المحاضرات المثبتة غير المكتملة: العناوين بسقف 3
+    //     للعرض + العدد الكلي الحقيقي (عدّاد «+N أخرى»).
+    final List<String> pinnedTitles =
+        await db.getPendingPinnedLectureTitles(
+      limit: HomeWidgetPayload.maxPinnedTitles,
+    );
+    final int pinnedTotal = await db.countPendingPinnedLectures();
+
+    // (5) لؤلؤة اليوم — golden_tip عشوائية؛ عند غيابها بنك المعلومات
+    //     الثابت (تتبدل يومياً) يضمن أن الجزء السفلي ليس فارغاً أبداً.
+    final String? goldenTip = await db.getRandomGoldenTip();
+    final String pearl = goldenTip ?? tipForDate(nowLocal.toUtc());
 
     return HomeWidgetPayload(
       dueCards: due,
       dailyProgress: progress,
       completedToday: completedToday,
-      medicalTip: tipForDate(nowUtc),
-      generatedAtIso: nowUtc.toIso8601String(),
+      medicalTip: tipForDate(nowLocal.toUtc()),
+      generatedAtIso: DateTime.now().toUtc().toIso8601String(),
+      pendingPinnedTitles: pinnedTitles,
+      pinnedTotal: pinnedTotal,
+      clinicalPearl: pearl,
     );
   }
 
@@ -142,8 +192,10 @@ abstract final class HomeWidgetService {
   /// AppGroup UserDefaults في iOS) ويطلب تحديث الويدجت.
   static Future<void> sync(HomeWidgetPayload payload) async {
     try {
-      // AppGroup أولاً (iOS يكتب فيه) — بلا أثر في Android.
-      await HomeWidget.setAppGroupId(appGroupId);
+      // AppGroup أولاً (iOS يكتب فيه) — في Android سيغير مسار التخزين الافتراضي لذا نقصره على iOS.
+      if (defaultTargetPlatform == TargetPlatform.iOS) {
+        await HomeWidget.setAppGroupId(appGroupId);
+      }
 
       await HomeWidget.saveWidgetData<String>(
           keyDueCards, payload.dueCards.toString());
@@ -155,6 +207,18 @@ abstract final class HomeWidgetService {
           keyCompletedToday, payload.completedToday.toString());
       await HomeWidget.saveWidgetData<String>(
           keyGeneratedAt, payload.generatedAtIso);
+
+      // v19: أهدافي — عناوين المثبتات مدمجة بـ " | " (عد + نص واحد)
+      // والويدجت الأصلي يقسمها لأسطر. pinned_total = العدد الكلي
+      // غير المقطوع (عدّاد «+N أخرى» في Native). لؤلؤة اليوم نص مستقل.
+      await HomeWidget.saveWidgetData<String>(
+          keyPinnedTitles, payload.pendingPinnedJoined);
+      await HomeWidget.saveWidgetData<String>(
+          keyPinnedCount, payload.pendingPinnedTitles.length.toString());
+      await HomeWidget.saveWidgetData<String>(
+          keyPinnedTotal, payload.pinnedTotal.toString());
+      await HomeWidget.saveWidgetData<String>(
+          keyClinicalPearl, payload.clinicalPearl);
 
       await HomeWidget.updateWidget(
         iOSName: iosWidgetName,
@@ -192,6 +256,24 @@ abstract final class HomeWidgetService {
 
   // ─────────────────── استقبال الضغط (Deep Link) ───────────────────
 
+  /// نية نقرة معلّقة — وصلت أثناء الإقلاع (شاشة البداية) قبل أن
+  /// يجهز الراوتر للتوجيه الآمن. تُستهلك عند التوجيه النهائي لشاشة
+  /// البداية (راجع [consumePendingNavigation]).
+  static bool _pendingDailyReview = false;
+
+  /// هل اكتمل الإقلاع (تجاوزنا شاشة البداية)؟ قبلها أي نقرة ويدجت
+  /// تُسجَّل نيةً لا توجيهاً مباشراً — شاشة البداية ستوجّه حسبها،
+  /// وتوجيهها الافتراضي بعد 900ms لن يسحق شيئاً.
+  static bool _startupFinished = false;
+
+  /// تُستدعى من شاشة البداية لحظة توجيهها النهائي — بعدها نقرات
+  /// الويدجت توجيه فوري عبر معالج main.
+  static void markStartupFinished() => _startupFinished = true;
+
+  /// تسجيل نية «المراجعة اليومية» يدوياً — يُستخدم دفاعياً من معالج
+  /// main إن وصلت النقرة قبل بناء الـ navigator.
+  static void setPendingDailyReview() => _pendingDailyReview = true;
+
   /// تهيئة استقبال نقرة الويدجت — يستدعى بعد أول إطار في main.
   /// يفتح «المراجعة اليومية» عند وصول medicineapp://daily-review.
   static Future<void> initClickRouting() async {
@@ -210,15 +292,31 @@ abstract final class HomeWidgetService {
   static void _handleWidgetUri(Uri? uri) {
     if (uri == null) return;
     if (uri.toString().contains('daily-review')) {
-      // التوجيه عبر معالج يسجله main — تفكيك الاعتماد الدائري.
-      _clickHandler?.call();
+      if (_startupFinished) {
+        // التطبيق حي بعد الإقلاع — توجيه فوري عبر معالج main
+        // (تفكيك الاعتماد الدائري: الخدمة لا تعرف الراوتر).
+        _clickHandler?.call();
+      } else {
+        // إقلاع بارد: الراوتر/الشاشات لم تكتمل — سجّل النية
+        // ويستهلكها التوجيه النهائي لشاشة البداية.
+        _pendingDailyReview = true;
+      }
     }
   }
 
-  /// معالج نقرة الويدجت — يضبطه main بتوجيه go_router مباشرة.
+  /// معالج نقرة الويدجت — يضبطه main بتوجيه go_router مباشر.
   static void Function()? _clickHandler;
 
   static void setClickHandler(void Function() handler) {
     _clickHandler = handler;
+  }
+
+  /// يستهلك نية «المراجعة اليومية» المعلّقة إن وُجدت — يعيد true
+  /// وعلى المستدعي (شاشة البداية) توجيه المستخدم إليها بدل وجهته
+  /// الافتراضية. استدعاء واحد يمسح النية (لا توجيه مزدوج).
+  static bool consumePendingNavigation() {
+    final bool pending = _pendingDailyReview;
+    _pendingDailyReview = false;
+    return pending;
   }
 }

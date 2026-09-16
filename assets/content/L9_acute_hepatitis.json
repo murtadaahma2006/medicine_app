@@ -1,0 +1,1222 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "L9_acute_hepatitis",
+    "title": "Acute Hepatitis",
+    "specialty": "internal_medicine",
+    "module": "gastroenterology",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "L9 Acute Hepatitis.pdf",
+      "page_count": 30
+    },
+    "tags": ["acute hepatitis", "viral hepatitis", "hepatitis A", "hepatitis B", "hepatitis C", "hepatitis D", "hepatitis E", "HBV serology", "liver function tests", "jaundice"],
+    "order_index": 8,
+    "golden_tip": [
+      "IgM anti-HBc is the ONLY HBV serological marker during the 'window period' (HBsAg and anti-HBs both negative) — the classic exam trap in hepatitis serology.",
+      "In acute viral hepatitis ALT rises more than AST; a significantly elevated ALP points AWAY from hepatitis toward biliary obstruction or abscess, and a prolonged PT means failing hepatic synthetic function.",
+      "Hepatitis D can never infect alone: it needs the HBsAg outer envelope to replicate — it appears only as co-infection with acute HBV or superinfection of a chronic HBV carrier."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "L9_acute_hepatitis_c1",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Acute Hepatitis - Definitions and Classification",
+      "summary_ar": "يشرح هذا المفهوم تعريف التهاب الكبد والتهاب الكبد الفيروسي الحاد والفشل الكبدي الحاد والتهاب الكبد الصاعق والتهاب الكبد المزمن وتليف الكبد، مع الصورة النسيجية المميزة على تلوين H&E.",
+      "sections": [
+        {
+          "heading": "Lecture Overview, Learning Objectives and Title Histology",
+          "body_text": "This lecture on **Acute Hepatitis** is built on five learning objectives: **Definition**, **Causes**, **Clinical features**, **Diagnosis** and **Treatment**. The title slide carries the hallmark histology image of the disease: on **H&E staining** of liver parenchyma there is a dense collection of **inflammatory cells** — mainly **lymphocytes and other mononuclear cells** — clustered within the hepatic lobule; the hepatocytes show injury with **swelling and ballooning** of some cells, and the normal **cord-like arrangement** of hepatocytes is disrupted by the inflammatory process. This picture (inflammatory cells within liver tissue) is the very definition of hepatitis and the foundation for everything that follows in the lecture.",
+          "key_points": [
+            "Learning objectives: Definition, Causes, Clinical features, Diagnosis, Treatment.",
+            "Histology of acute hepatitis (H&E): dense lobular lymphocytic/mononuclear inflammatory infiltrate, hepatocyte swelling and ballooning, disrupted hepatic cords.",
+            "Hepatitis = inflammation of the liver with inflammatory cells in the organ tissue."
+          ]
+        },
+        {
+          "heading": "Core Definitions - Acute vs Chronic vs Fulminant",
+          "body_text": "The lecture's definitions, converted into a pseudo-table:\n\n- **Hepatitis** | inflammation of liver; presence of inflammatory cells in organ tissue\n- **Acute viral hepatitis** | symptoms last **less than 6 months**\n- **Acute hepatic failure** | massive hepatic necrosis with **impaired consciousness within 8 weeks** of onset of illness\n- **Chronic hepatitis** | inflammation of liver for **at least 6 months**\n- **Cirrhosis** | replacement of liver tissue -> **fibrosis, scar tissue**\n- **Fulminant hepatitis** | **severe impairment of hepatic functions or severe necrosis of hepatocytes in the absence of preexisting liver disease**\n\nTwo time anchors are exam favorites: the **6-month** boundary separating acute from chronic hepatitis, and the **8-week** consciousness deadline defining acute hepatic failure. Fulminant hepatitis specifically implies **no preexisting liver disease** — a previously healthy liver that fails suddenly.",
+          "key_points": [
+            "Acute viral hepatitis = symptoms < 6 months; chronic hepatitis = inflammation for at least 6 months.",
+            "Acute hepatic failure = massive hepatic necrosis + impaired consciousness within 8 weeks of onset.",
+            "Fulminant hepatitis implies absence of preexisting liver disease.",
+            "Cirrhosis = replacement of liver tissue by fibrosis/scar tissue."
+          ],
+          "check": {
+            "prompt": "A previously healthy patient develops massive hepatic necrosis with impaired consciousness 5 weeks after the onset of a hepatitis-like illness. Which term fits best?",
+            "options": [
+              "Acute hepatic failure",
+              "Chronic hepatitis",
+              "Cirrhosis",
+              "Chronic carrier state"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفشل الكبدي الحاد يُعرَّف بنخر كبدي هائل مع اضطراب الوعي خلال 8 أسابيع من بدء المرض عند مريض بلا مرض كبدي مسبق، وهذا ما ينطبق على الحالة. أما الالتهاب المزمن فيتطلب 6 أشهر على الأقل، والتليف هو استبدال النسيج الكبدي بنسيج ندبي، وحالة الحامل تعني حمل الفيروس دون فشل كبدي."
+          }
+        }
+      ],
+      "key_terms": [
+        { "term": "Hepatitis", "definition_ar": "التهاب الكبد: وجود خلايا التهابية في نسيج الكبد." },
+        { "term": "Acute viral hepatitis", "definition_ar": "التهاب الكبد الفيروسي الحاد: أعراض تدوم أقل من 6 أشهر." },
+        { "term": "Acute hepatic failure", "definition_ar": "الفشل الكبدي الحاد: نخر كبدي هائل مع اضطراب وعي خلال 8 أسابيع من بداية المرض." },
+        { "term": "Fulminant hepatitis", "definition_ar": "التهاب الكبد الصاعق: اضطراب شديد لوظائف الكبد أو نخر شديد للخلايا الكبدية دون مرض كبدي مسبق." },
+        { "term": "Chronic hepatitis", "definition_ar": "التهاب الكبد المزمن: التهاب الكبد لمدة 6 أشهر على الأقل." },
+        { "term": "Cirrhosis", "definition_ar": "التليف الكبدي: استبدال نسيج الكبد بنسيج ليفي ندبي." },
+        { "term": "Ballooning (hepatocyte)", "definition_ar": "تورم وتنفخ الخلايا الكبدية المصابة، وهو تغير نسيجي يُرى في التهاب الكبد الحاد." }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L9_acute_hepatitis_c2",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Etiology - Causes of Acute Hepatitis",
+      "summary_ar": "الأسباب السبعة لالتهاب الكبد الحاد بحسب المحاضرة: الانتانات الفيروسية (A وB وC وD وE وF وGB وCMV وEBV)، الانتانات الأخرى (طفيليات وجراثيم)، الأدوية، السموم، الكحول، التهاب الكبد المناعي الذاتي، والتهاب الكبد الإسكيمي.",
+      "sections": [
+        {
+          "heading": "Viral Causes of Acute Hepatitis",
+          "body_text": "The lecture lists **seven causes** of acute hepatitis, the first and most important being **viral infections**: hepatitis viruses **A, B, C, D, E, F, GB**, in addition to **CMV** and **EBV**. The five classical hepatitis viruses dominate clinical medicine:\n\n- **Hepatitis A** — RNA virus, fecal-oral transmission (contaminated water and food)\n- **Hepatitis B** — parenteral, sexual and vertical/perinatal transmission; with its defective satellite **hepatitis D**\n- **Hepatitis C** — RNA virus, parenteral transmission (IV drug users)\n- **Hepatitis E** — RNA virus, enterically transmitted (fecal-oral), typically self-limiting\n\nCMV and EBV hepatitis occur as part of systemic viral illness, and hepatitis F and GB viruses are rare additional agents listed by the lecture. The rest of this lecture deals with viruses A through E in detail.",
+          "key_points": [
+            "Viral causes listed: hepatitis A, B, C, D, E, F, GB, CMV, EBV.",
+            "Fecal-oral viruses: A and E. Blood/body-fluid viruses: B, D and C.",
+            "Viral infection is the most common cause of acute hepatitis."
+          ]
+        },
+        {
+          "heading": "Non-viral Causes of Acute Hepatitis",
+          "body_text": "Beyond viruses, the lecture lists **six further causes** of acute hepatitis:\n\n- **2) Other infections** — **parasites** and **bacteria**\n- **3) Drugs** — drug-induced liver injury\n- **4) Toxins**\n- **5) Alcohol** — alcoholic hepatitis\n- **6) Autoimmune hepatitis**\n- **7) Ischemic hepatitis** — liver injury from hypoperfusion\n\nPractical message: before labeling any jaundiced patient as having 'viral hepatitis', the history must screen for **recent medications, toxin exposure, alcohol intake, autoimmune disease and ischemic events** (e.g., shock, hypotension, heart failure). These non-viral causes can mimic viral hepatitis clinically and biochemically.",
+          "key_points": [
+            "Non-viral causes: parasites/bacteria, drugs, toxins, alcohol, autoimmune hepatitis, ischemic hepatitis.",
+            "Always take a drug, toxin and alcohol history in every jaundiced patient.",
+            "Ischemic hepatitis follows hypoperfusion states such as shock."
+          ],
+          "check": {
+            "prompt": "Which of the following is NOT one of the lecture's seven causes of acute hepatitis?",
+            "options": [
+              "Cholelithiasis",
+              "Alcohol",
+              "Autoimmune hepatitis",
+              "EBV infection"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "حصى المرارة ليست من أسباب التهاب الكبد الحاد؛ إنها من التشاخيص التفريقية لأنها تسبب يرقاناً انسدادياً وليس التهاباً في النسيج الكبدي، بينما الكحول والتهاب الكبد المناعي وإصابة EBV كلها مذكورة صراحة ضمن الأسباب السبعة."
+          }
+        }
+      ],
+      "key_terms": [
+        { "term": "Drug-induced hepatitis", "definition_ar": "التهاب كبد ناجم عن الأدوية." },
+        { "term": "Ischemic hepatitis", "definition_ar": "التهاب الكبد الإسكيمي: أذية نسيج الكبد بسبب نقص التروية الدموية كما في هبوط الضغط والصدمة." },
+        { "term": "Autoimmune hepatitis", "definition_ar": "التهاب كبد ذاتي المناعة: التهاب ناتج عن مهاجمة جهاز المناعة لخلايا الكبد." },
+        { "term": "CMV / EBV hepatitis", "definition_ar": "التهاب كبد فيروسي غير شائع بسبب فيروس المضخم الخلوي أو فيروس إبشتاين-بار ضمن مرض فيروسي عام." }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "L9_acute_hepatitis_c3",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Clinical Features - The Four Phases of Acute Viral Hepatitis",
+      "summary_ar": "العرض النموذجي لالتهاب الكبد الانتاني يمر بأربعة أطوار: طور التكاثر الفيروسي (لا عرضي)، الطور البادر/التمهيدي (فقدان شهية وغثيان ونفور من دخان السجائر)، الطور اليرقاني (بول داكن ثم براز شاحب وألم الربع العلوي الأيمن مع ضخامة كبدية)، وطور النقاهة حيث تختفي الأعراض ويعود الأنزيمات إلى الطبيعي.",
+      "sections": [
+        {
+          "heading": "Classic Presentation - The Four Phases of Infectious Hepatitis",
+          "body_text": "The **classic presentation of infectious hepatitis** runs through **four phases**:\n\n- **Phase 1 - Viral replication**: patients are **asymptomatic** during this phase; the virus multiplies silently before the immune response strikes.\n- **Phase 2 - Prodromal phase**: constitutional and gastrointestinal symptoms appear (detailed in the next section).\n- **Phase 3 - Icteric phase**: jaundice, dark urine and pale stools.\n- **Phase 4 - Convalescent phase**: **symptoms and icterus resolve** and **liver enzymes return to normal**.\n\nThis phase structure is the classic framework of 'infectious hepatitis' (classically hepatitis A) but the same sequence is applied to the other hepatitis viruses when they are symptomatic.",
+          "key_points": [
+            "Four phases: viral replication (asymptomatic) -> prodromal -> icteric -> convalescent.",
+            "In the convalescent phase symptoms and icterus resolve and liver enzymes return to normal.",
+            "Phase 1 is asymptomatic viral replication."
+          ]
+        },
+        {
+          "heading": "Prodromal Phase - Symptoms and the Classic Misdiagnosis",
+          "body_text": "During the **prodromal phase** patients experience **anorexia, nausea, vomiting, alterations in taste, arthralgias, malaise, fatigue, urticaria, and pruritus**. Some patients develop a characteristic **aversion to cigarette smoke** — a smoker who suddenly cannot stand the smell of cigarettes is a classic history clue for acute viral hepatitis. When seen by a health care provider during this phase, patients are **often diagnosed as having gastroenteritis or a viral syndrome**, because jaundice has not yet appeared. Therefore, in any patient with unexplained anorexia, nausea and malaise, ask about dark urine, look for scleral icterus, and consider hepatitis before settling for 'gastritis'.",
+          "key_points": [
+            "Prodromal symptoms: anorexia, nausea, vomiting, alterations in taste, arthralgias, malaise, fatigue, urticaria, pruritus.",
+            "Aversion to cigarette smoke = classic prodromal clue.",
+            "The prodromal phase is frequently misdiagnosed as gastroenteritis or a viral syndrome."
+          ],
+          "check": {
+            "prompt": "A 40-year-old smoker presents with 5 days of anorexia, nausea and malaise; he reports he can no longer stand the smell of his cigarettes. What should you suspect?",
+            "options": [
+              "Prodromal phase of acute viral hepatitis",
+              "Acute cholecystitis",
+              "Peptic ulcer disease",
+              "Chronic pancreatitis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النفور من دخان السجائر مع فقدان الشهية والغثيان والوهن هو عرض بادر نموذجي لالتهاب الكبد الفيروسي الحاد. التهاب المرارة الحاد يسبب ألماً حاداً في الربع العلوي الأيمن مع حمى وموجة مورفي، وقرحة المعدة تسبب ألماً شرسوفياً مرتبطاً بالطعام، والتهاب البنكرياس المزمن يسبب ألماً مستمراً مع سوء امتصاص — ولا يوجد في أي منها نفور من دخان السجائر."
+          }
+        },
+        {
+          "heading": "Icteric Phase - Findings",
+          "body_text": "In the **icteric phase**, **jaundice** appears. Patients may note **dark urine, followed by pale-colored stools** — conjugated bilirubin becomes water-soluble, spills into the urine (bilirubinuria), while less bilirubin reaches the gut, so the stools lose their color. In addition to the predominant **gastrointestinal symptoms and malaise**, patients become **icteric** and may develop **right upper quadrant (RUQ) pain with hepatomegaly**. This is the phase in which the diagnosis usually becomes clinically evident and laboratory tests (raised transaminases, bilirubinuria on dipstick) are most striking.",
+          "key_points": [
+            "Dark urine comes first, followed by pale-colored stools.",
+            "RUQ pain with hepatomegaly accompanies the jaundice.",
+            "GI symptoms and malaise persist into the icteric phase."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Prodromal phase", "definition_ar": "الطور البادر (التمهيدي): مرحلة ما قبل اليرقان مع فقدان شهية وغثيان ووهن ونفور من التدخين." },
+        { "term": "Icteric phase", "definition_ar": "الطور اليرقاني: ظهور اليرقان مع بول داكن وبراز شاحب وألم الربع العلوي الأيمن." },
+        { "term": "Convalescent phase", "definition_ar": "طور النقاهة: زوال الأعراض واليرقان وعودة أنزيمات الكبد إلى الحدود الطبيعية." },
+        { "term": "Bilirubinuria", "definition_ar": "وجود البيليروبين في البول وهو سبب لون البول الداكن في الطور اليرقاني." }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "L9_acute_hepatitis_c4",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Severe Course, Complications and Physical Examination",
+      "summary_ar": "الحالات الشديدة قد تؤدي إلى التهاب كبد صاعق: اعتلال دماغي كبدي (رجفان أذيالي ثنائي الجانب واحمرار راحتي اليدين)، متلازمة كبدية-كلوية، واستعداد للنزف. أما الفحص السريري فيظهر حمى خفيفة وعلامات تجفاف ويرقان الصلبة والأغشية المخاطية والغشاء الطبلي واندفاعات شرية وكبداً متضخماً مؤلماً بحافة قاسية ملساء.",
+      "sections": [
+        {
+          "heading": "Severe Cases - Fulminant Hepatitis and Its Three Complications",
+          "body_text": "**Severe cases may result in fulminant hepatitis** — severe impairment of hepatic functions or severe hepatocyte necrosis in the absence of preexisting liver disease. The lecture lists three life-threatening complications:\n\n- **Hepatic encephalopathy** — heralded by **bilateral (B/L) asterixis** (flapping tremor of the outstretched, dorsiflexed hands) and **palmar erythema**\n- **Hepatorenal syndrome** — functional renal failure complicating liver failure\n- **Bleeding diathesis** — spontaneous bleeding tendency from failing synthesis of clotting factors (prolonged PT)\n\nAny acute hepatitis patient who becomes encephalopathic, oliguric or bleeds spontaneously has crossed into **fulminant disease** — an emergency requiring intensive care and urgent transplant-center contact.",
+          "key_points": [
+            "Fulminant hepatitis complications: hepatic encephalopathy (B/L asterixis, palmar erythema), hepatorenal syndrome, bleeding diathesis.",
+            "Fulminant hepatitis = severe liver failure WITHOUT preexisting liver disease.",
+            "Asterixis = bilateral flapping tremor, a sign of hepatic encephalopathy."
+          ]
+        },
+        {
+          "heading": "Physical Examination Findings",
+          "body_text": "Physical examination in acute hepatitis, system by system:\n\n- **General/vitals**: **low-grade fever**; signs of dehydration such as **tachycardia, dry mucous membranes, loss of skin turgor, and delayed capillary refill** (from vomiting and decreased oral intake).\n- **Icteric phase**: **icterus of the sclerae or mucous membranes**, or **discoloration of the tympanic membranes** — inspect the sclerae in natural light; they yellow before the skin does.\n- **Skin**: may be **jaundiced** and may reveal **urticarial rashes** (a prodromal immune phenomenon).\n- **Abdomen**: the **liver may be tender and diffusely enlarged** with a **firm, sharp, smooth edge** — tender hepatomegaly is the signature of acute hepatitis, contrasting with the hard, nodular, craggy liver of cirrhosis or malignancy.",
+          "key_points": [
+            "Low-grade fever plus dehydration signs: tachycardia, dry mucous membranes, loss of skin turgor, delayed capillary refill.",
+            "Icterus first visible in the sclerae, mucous membranes and tympanic membranes.",
+            "Tender diffuse hepatomegaly with a firm, sharp, smooth edge.",
+            "The skin may show jaundice and urticarial rashes."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Asterixis", "definition_ar": "الرجفان الأذيالي: رجفان اليد الممدودة (الصفع) وهو علامة اعتلال دماغي كبدي." },
+        { "term": "Palmar erythema", "definition_ar": "احمرار راحتي اليدين: علامة مرض كبدي شديد." },
+        { "term": "Hepatorenal syndrome", "definition_ar": "المتلازمة الكبدية-الكلوية: فشل كلوي وظيفي يصاحب الفشل الكبدي الشديد." },
+        { "term": "Bleeding diathesis", "definition_ar": "الاستعداد للنزف بسبب نقص تصنيع عوامل التخثر في الكبد." },
+        { "term": "Tender hepatomegaly", "definition_ar": "ضخامة كبدية مؤلمة: علامة مميزة لالتهاب الكبد الحاد." }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "L9_acute_hepatitis_c5",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Diagnosis and Differential Diagnosis of Acute Hepatitis",
+      "summary_ar": "تشخيص التهاب الكبد الحاد: ارتفاع ناقلات الأمين ليس نوعياً لكنه مفيد وALT يرتفع أكثر من AST، وبيليروبين البول موجود، والبيليروبين الكلي فوق 30 ملغ/دل يدل على مرض أشد، وارتفاع الفوسفاتاز القلوي الكبير يوجب استبعاد الخراج أو الانسداد الصفراوي، وتطاول PT يعكس ضعف التصنيع، وارتفاع الكرياتينين يوحي بمرض كبدي صاعق، مع الإيكو وخزعة الكبد. وتشمل التشاخيص التفريقية أمراض المرارة والبنكرياس والمعدة والأمعاء والرضوض.",
+      "sections": [
+        {
+          "heading": "Laboratory Workup and Interpretation",
+          "body_text": "**Diagnosis** of acute hepatitis — the lecture's complete workup with exact interpretations:\n\n- **LFT (liver function tests)**: elevation of serum transaminases is **not diagnostic, but useful**; characteristically **ALT is elevated more than AST**.\n- **Urine analysis**: presence of **bilirubin** (bilirubinuria, causing dark urine).\n- **Serum bilirubin**: total bilirubin may be elevated in infectious hepatitis; **bilirubin levels higher than 30 mg/dL indicate more severe disease**.\n- **Alkaline phosphatase (ALP)**: **if elevated significantly, consider abscess or biliary obstruction** — a markedly cholestatic pattern argues against uncomplicated viral hepatitis.\n- **Prothrombin time (PT)**: if prolonged -> **impaired synthetic function of the liver** (clotting factors are made in the liver; PT is a severity marker).\n- **BUN & serum creatinine**: **decreased renal function suggests fulminant hepatic disease** (hepatorenal syndrome).\n- **U/S (ultrasound)**: imaging to exclude biliary obstruction and gallstones and to assess the liver.\n- **Liver biopsy**: reserved for atypical or doubtful cases.",
+          "key_points": [
+            "ALT elevated more than AST in acute viral hepatitis.",
+            "Total bilirubin higher than 30 mg/dL indicates more severe disease.",
+            "Significantly elevated ALP -> consider abscess or biliary obstruction.",
+            "Prolonged PT = impaired hepatic synthetic function.",
+            "Decreased renal function (BUN/creatinine) suggests fulminant hepatic disease."
+          ],
+          "check": {
+            "prompt": "In a jaundiced patient with suspected acute viral hepatitis, a significantly elevated alkaline phosphatase should prompt you to consider which of the following?",
+            "options": [
+              "Biliary obstruction or abscess",
+              "Fulminant hepatic failure",
+              "Chronic carrier state",
+              "Convalescent phase"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "ارتفاع الفوسفاتاز القلوي بشكل كبير لا يناسب التهاب الكبد الفيروسي غير المعقد (نمط خلوي) بل يوجب التفكير بخراج كبدي أو انسداد طرق صفراوية (نمط ركودي). الفشل الصاعق يُقاس باضطراب الوعي وتطاول زمن البروثرومبين، وحالة الحامل لا تعطي يرقاناً، وطور النقاهة يعني تحسن الأنزيمات لا ارتفاعها."
+          }
+        },
+        {
+          "heading": "Differential Diagnosis",
+          "body_text": "The lecture's **differential diagnosis** list for an acute hepatitis presentation:\n\n- **Abdominal trauma, blunt**\n- **Obstruction, small bowel**\n- **Aneurysm, abdominal**\n- **Pancreatitis**\n- **Cholangitis**\n- **Cholecystitis and biliary colic**\n- **Cholelithiasis**\n- **Gastritis and PUD (peptic ulcer disease)**\n- **Gastroenteritis**\n\nPractical discriminators: biliary disease (cholelithiasis, cholecystitis, cholangitis) drives **ALP up** far more than transaminases and causes colicky RUQ pain with fever; pancreatitis gives epigastric pain boring to the back; gastritis/PUD and gastroenteritis lack **bilirubinuria and transaminase elevation**; trauma, abdominal aneurysm and small bowel obstruction carry their own distinct acute-abdomen contexts. This is why the workup always includes transaminases, bilirubin, ALP, PT, renal function and an abdominal ultrasound.",
+          "key_points": [
+            "Biliary causes (cholelithiasis, cholecystitis, cholangitis) are the main cholestatic mimics.",
+            "Gastritis, PUD and gastroenteritis mimic the prodromal GI symptoms.",
+            "Pancreatitis, blunt abdominal trauma, abdominal aneurysm and small bowel obstruction are surgical differentials."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Transaminases (AST/ALT)", "definition_ar": "ناقلات الأمين: أنزيمات تتحرر من الخلايا الكبدية المتأذية؛ ترتفع في التهاب الكبد الحاد ويرتفع ALT أكثر من AST." },
+        { "term": "Prothrombin time (PT)", "definition_ar": "زمن البروثرومبين: يقيس عوامل التخثر التي يصنعها الكبد؛ تطاوله يدل على ضعف التصنيع الكبدي." },
+        { "term": "Serology", "definition_ar": "المصليات: فحص المستضدات والأضداد الفيروسية في المصل لتحديد سبب التهاب الكبد." },
+        { "term": "Bilirubinuria", "definition_ar": "البيليروبين في البول: يكشفه تحليل البول وهو سبب البول الداكن." }
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "L9_acute_hepatitis_c6",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis A Virus (HAV)",
+      "summary_ar": "التهاب الكبد A سبب شائع لالتهاب الكبد الحاد، فيروس RNA ينتقل بالطريق الفموي-البرازي عبر الماء والطعام الملوثين، فترة الحضانة 2-7 أسابيع، مرض خفيف محدود ذاتياً يمنح مناعة مدى الحياة ولا يسبب إصابة مزمنة أبداً، وتعود AST وALT إلى الحدود الطبيعية خلال 5-20 أسبوعاً، والمعالجة داعمة. التشخيص: IgM anti-HAV إيجابي عند بدء الأعراض ويبقى 3-6 أشهر، ثم IgG يدوم سنوات طويلة.",
+      "sections": [
+        {
+          "heading": "Virology, Transmission and Clinical Course",
+          "body_text": "**Hepatitis A** facts exactly as lectured:\n\n- A **common cause of acute hepatitis**.\n- **RNA virus**.\n- **Transmission: fecal-oral route** — **contaminated water and food** (person-to-person spread and food/water-borne outbreaks are typical).\n- **Incubation period: 2-7 weeks**.\n- **AST & ALT levels usually return to reference ranges over 5-20 weeks**.\n- **Mild, self-limited disease** that **confers lifelong immunity** to hepatitis A virus.\n- **Chronic infection with hepatitis A virus does not occur** — the single most testable HAV statement.\n- **Treatment: supportive** (rest, adequate hydration and nutrition; no specific antiviral therapy).",
+          "key_points": [
+            "HAV = RNA virus, fecal-oral transmission via contaminated water and food, incubation 2-7 weeks.",
+            "Mild self-limited disease; lifelong immunity; chronic HAV infection does NOT occur.",
+            "AST & ALT usually return to reference ranges over 5-20 weeks.",
+            "Treatment is supportive only."
+          ]
+        },
+        {
+          "heading": "Serological Diagnosis of HAV",
+          "body_text": "**Diagnosis of HAV** relies on **serum serology: presence of serum antigens and immunoglobulins**:\n\n- **IgM anti-HAV**: **positive at the time of onset of symptoms**; results **remain positive for 3-6 months after the primary infection** -> the marker of **acute hepatitis A**.\n- **Anti-HAV IgG**: **appears soon after IgM** and **generally persists for many years** -> evidence of immunity (from past infection or vaccination).\n\nInterpretation rule: **IgM (with or without IgG) = acute infection now; IgG alone = immunity/past exposure.** There is no chronic serological pattern because HAV never becomes chronic.",
+          "key_points": [
+            "IgM anti-HAV: positive at symptom onset, remains positive 3-6 months after primary infection.",
+            "Anti-HAV IgG: appears soon after IgM, persists many years = immunity.",
+            "IgM = acute disease; IgG = immunity."
+          ],
+          "check": {
+            "prompt": "Which result indicates acute hepatitis A infection?",
+            "options": [
+              "IgM anti-HAV positive",
+              "IgG anti-HAV positive with negative IgM",
+              "HBsAg positive",
+              "IgM anti-HBc positive"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "IgM anti-HAV يصبح إيجابياً مع بدء الأعراض ويبقى إيجابياً 3-6 أشهر بعد الإصابة الأولية فهو دليل التهاب A الحاد. أما IgG وحده فيعني مناعة أو إصابة قديمة، وHBsAg وIgM anti-HBc واسمات تخص فيروس B وليس A."
+          }
+        }
+      ],
+      "key_terms": [
+        { "term": "Fecal-oral transmission", "definition_ar": "الانتقال الفموي-البرازي: انتقال الفيروس عبر المياه والأغذية الملوثة بالبراز كما في التهاب A وE." },
+        { "term": "IgM anti-HAV", "definition_ar": "الضد المناعي M لفيروس A: دليل إصابة حادة، يظهر مع الأعراض ويبقى 3-6 أشهر." },
+        { "term": "Anti-HAV IgG", "definition_ar": "الضد المناعي G لفيروس A: يظهر بعد IgM بقليل ويستمر سنوات طويلة دالاً على المناعة." },
+        { "term": "Self-limited disease", "definition_ar": "مرض محدود ذاتياً: يتحسن تلقائياً دون علاج نوعي." }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "L9_acute_hepatitis_c7",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis B - Pathophysiology, Transmission and At-Risk Groups",
+      "summary_ar": "ينتقل فيروس التهاب الكبد B بثلاث طرق رئيسية: الطريق الحقني/عبر الجلد (متعاطو المخدرات الوريدية، وخز الإبر، مرضى الغسيل الكلوي)، الطريق الجنسي، والطريق العمودي/الولادي. وتشمل المجموعات المعرضة للخطر العاملين الصحيين ومتعاطي المخدرات الوريدية ومتلقّي نقل الدم المتكرر وذوي السلوك الجنسي المتعدد والمخالطين للحاملين والمسافرين إلى المناطق الموبوءة (أمريكا الجنوبية وجنوب آسيا وأفريقيا) ونزلاء والعاملين في دور الرعاية.",
+      "sections": [
+        {
+          "heading": "Pathophysiology - The Three Transmission Routes",
+          "body_text": "The **Hepatitis B & D** section of the lecture opens with HBV **pathophysiology**. **Transmission occurs through 3 main ways**:\n\n- **Parenteral/percutaneous route** — **IV drug users, needle sticks, hemodialysis patients**\n- **Sexually** — through sexual contact\n- **Vertical/perinatal route** — from mother to child around delivery\n\nNote the contrast with hepatitis A and E (fecal-oral): HBV is a blood-borne and body-fluid-borne virus, which is why its at-risk groups are defined by exposure to blood, sexual contact and birth, and why a vaccine-plus-immunoglobulin strategy exists for perinatal exposure.",
+          "key_points": [
+            "3 transmission routes: parenteral/percutaneous (IVDU, needle sticks, hemodialysis), sexual, vertical/perinatal.",
+            "HBV is blood/body-fluid borne — unlike the fecal-oral viruses A and E."
+          ]
+        },
+        {
+          "heading": "At-Risk Groups",
+          "body_text": "The lecture's **at-risk groups** for hepatitis B:\n\n- **IV drug users**\n- **People receiving multiple blood transfusions**\n- **Sexual promiscuity**\n- **People in contact with HBV carriers**\n- **Travelers to endemic areas of South America, Southern Asia, and Africa**\n- **Residents and employees of residential care facilities**\n- **Health care workers**\n\nEvery one of these groups is specifically a **vaccination target** in the prophylaxis protocol — the HBV vaccine is indicated for everyone, especially these high-risk groups.",
+          "key_points": [
+            "High-risk groups: IVDU, multiple blood transfusions, sexual promiscuity, contact with HBV carriers, travelers to endemic regions (South America, Southern Asia, Africa), residential care residents and employees, health care workers.",
+            "All at-risk groups are HBV vaccination targets."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Parenteral/percutaneous transmission", "definition_ar": "الانتقال عبر الدم والحقن: كوخز الإبر ومشاركة الإبر ومعدات الغسيل الكلوي." },
+        { "term": "Vertical (perinatal) transmission", "definition_ar": "الانتقال العمودي/الولادي: من الأم الحاملة إلى وليدها حول الولادة." },
+        { "term": "Needle stick injury", "definition_ar": "إصابة وخز الإبرة: تعرض العاملين الصحيين لدم ملوث؛ تستدعي إعطاء اللقاح خلال 48 ساعة." }
+      ],
+      "difficulty": "core",
+      "order_index": 6
+    },
+    {
+      "id": "L9_acute_hepatitis_c8",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis B - Serological Markers and Clinical Presentation",
+      "summary_ar": "واسمات B المصلية: HBsAg يُكشف بعد 1-2 أسبوع من الإصابة ويوجد في الحاد والمزمن، وHBeAg يظهر بعد HBsAg بقليل ويدل على التكاثر الفيروسي والعدوى، وAnti-HBs يظهر بعد التطعيم أو التخلص من HBsAg خلال 1-3 أشهر ويدل على المناعة، وAnti-HBc (IgM أو IgG) هو الواسم المصلي الوحيد في فترة النافذة. إكلينيكياً: حاد أقل من 6 أشهر بنشاط ناقلات أمين مرتفع، أو مزمن أكثر من 6 أشهر مع حالة حامل منخفضة التكاثر وتحول مصلي من HBeAg إلى HBeAb، وقد يسبب فشلاً كبدياً صاعقاً.",
+      "sections": [
+        {
+          "heading": "HBV Serology - The Four Markers",
+          "body_text": "**Serology** of HBV — the four markers with timing and meaning (pseudo-table):\n\n- **HBsAg** (surface antigen) | **present in acute or chronic infection** | **detectable 1 to 2 weeks after infection**\n- **HBeAg** (e antigen) | **appears shortly after HBsAg** | **indicates viral replication and infectivity** (high viral load, highly infectious)\n- **HBsAb (Anti-HBs)** (surface antibody) | **present after vaccination or clearance of HBsAg (usually 1 to 3 months)** | **indicates immunity to HBV**\n- **HB core antibody (IgM anti-HBc or IgG anti-HBc)** | **only serological marker of HBV during the 'window period'** — the interval when HBsAg has already disappeared but anti-HBs has not yet appeared\n\nMemory map: **surface antigen = infection present; e antigen = replication/infectivity; surface antibody = immunity (vaccine or recovery); core antibody = the window-period bridge between antigen loss and antibody gain.**",
+          "key_points": [
+            "HBsAg: detectable 1-2 weeks after infection; present in acute AND chronic infection.",
+            "HBeAg: appears shortly after HBsAg; indicates viral replication and infectivity.",
+            "Anti-HBs: present after vaccination or clearance of HBsAg (usually 1-3 months); indicates immunity.",
+            "Anti-HBc (IgM/IgG): the ONLY serological marker during the window period."
+          ],
+          "check": {
+            "prompt": "A jaundiced patient has negative HBsAg, negative anti-HBs, and positive IgM anti-HBc. What is the interpretation?",
+            "options": [
+              "Window period of acute HBV infection",
+              "Successful HBV vaccination",
+              "Chronic HBV carrier state",
+              "Immunity from remote resolved HBV"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "في فترة النافذة يختفي HBsAg ولم يظهر Anti-HBs بعد، فيبقى Anti-HBc الواسم المصلي الوحيد الموجود، ووجوده بنمط IgM يحدد الإصابة الحادة. التطعيم الناجح يعطي Anti-HBs فقط دون أي Anti-HBc، وحالة الحامل المزمن تحمل HBsAg إيجابياً، والمناعة من إصابة قديمة تظهر Anti-HBs مع IgG anti-HBc وليس IgM."
+          }
+        },
+        {
+          "heading": "Clinical Presentation of HBV Infection",
+          "body_text": "**Clinical presentation** of hepatitis B:\n\n- **Acute hepatitis B** — **less than 6 months**; defined by **significant aminotransferase activity due to inflammatory injury** (high AST/ALT from hepatocellular injury).\n- **Symptoms are often non-specific**: **myalgia, malaise, nausea, fatigue, pruritus, abdominal pain (RUQ), jaundice**.\n- **Fulminant hepatitis** — acute HBV may result in **liver failure** (encephalopathy, hepatorenal syndrome, bleeding diathesis).\n- **Chronic hepatitis B** — **greater than 6 months**.\n- **Carrier state with low replication** — the inactive carrier.\n- **Seroconversion from HBeAg to HBeAb** — the immunologic switch from a high-replication, highly infectious phase (HBeAg-positive) to a low-replication phase (HBeAb-positive), a landmark event in chronic HBV.",
+          "key_points": [
+            "Acute HBV < 6 months (significant aminotransferase activity); chronic HBV > 6 months.",
+            "Non-specific symptoms: myalgia, malaise, nausea, fatigue, pruritus, RUQ abdominal pain, jaundice.",
+            "Acute HBV can cause fulminant hepatitis and liver failure.",
+            "Seroconversion HBeAg -> HBeAb marks transition to the low-replication carrier state."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "HBsAg", "definition_ar": "مستضد سطح فيروس B: علامة الإصابة الحادة أو المزمنة، يُكشف بعد 1-2 أسبوع من العدوى." },
+        { "term": "HBeAg", "definition_ar": "مستضد e: يظهر بعد HBsAg بقليل ويدل على تكاثر الفيروس وعدواه العالية." },
+        { "term": "Anti-HBs (HBsAb)", "definition_ar": "ضد المستضد السطحي: يظهر بعد التطعيم أو بعد التخلص من HBsAg (عادة 1-3 أشهر) ويدل على المناعة." },
+        { "term": "Window period", "definition_ar": "فترة النافذة: مرحلة بين اختفاء HBsAg وظهور Anti-HBs يكون فيها Anti-HBc الواسم المصلي الوحيد." },
+        { "term": "Seroconversion (HBeAg to HBeAb)", "definition_ar": "التحول المصلي: انتقال المريض من طور التكاثر العالي (HBeAg إيجابي) إلى طور التكاثر المنخفض (HBeAb إيجابي)." }
+      ],
+      "difficulty": "core",
+      "order_index": 7
+    },
+    {
+      "id": "L9_acute_hepatitis_c9",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis B - Diagnosis, Progression and Prognosis",
+      "summary_ar": "تشخيص التهاب B: المصليات، واختبارات كيمياء الكبد (AST وALT وALP والبيليروبين الكلي)، والنسج بتلوين البيروكسيداز المناعي، والحمض النووي الفيروسي HBV DNA بـPCR وهو أدق واسم، وخزعة الكبد لتحديد الدرجة (الالتهاب) والمرحلة (التليف) في الالتهاب المزمن. فترة الحضانة 30-180 يوماً؛ و90% من الإصابات الحادة تشفى تلقائياً، وأقل من 1% فشل صاعق، و2-10% تزمن، وخطر التليف 8-20%، و5-10% يتطورون لسرطان الخلية الكبدية مع تليف مسبق أو بدونه، وأقل من 5% حالة حامل مزمنة.",
+      "sections": [
+        {
+          "heading": "Diagnostic Workup of HBV",
+          "body_text": "**Diagnosis** of hepatitis B — the lecture's five tools:\n\n- **Serology** (HBsAg, HBeAg, anti-HBs, anti-HBc — see the serology concept)\n- **Liver chemistry tests**: **AST, ALT, ALP, and total bilirubin**\n- **Histology** — **immunoperoxidase staining** of liver tissue (demonstrates viral antigens in hepatocytes)\n- **HBV viral DNA** — **the most accurate marker of viral DNA**, detected by **PCR** (quantitative — measures the actual viral load)\n- **Liver biopsy** — to determine **grade (inflammation)** and **stage (fibrosis)** in **chronic hepatitis**",
+          "key_points": [
+            "HBV DNA by PCR = the most accurate marker (viral load).",
+            "Liver biopsy in chronic HBV determines grade (inflammation) and stage (fibrosis).",
+            "Liver chemistry: AST, ALT, ALP, total bilirubin; histology uses immunoperoxidase staining."
+          ]
+        },
+        {
+          "heading": "Progression and Prognosis - The Exact Numbers",
+          "body_text": "**Progression** of HBV infection — memorize these exact figures:\n\n- **Incubation period: 30-180 days** (the longest range among the hepatitis viruses)\n- **Acute HBV infection: 90% resolve by themselves**\n- **Less than 1% develop fulminant hepatic failure**\n- **Chronic HBV infection: 2-10% progress to chronic state**\n- **Risk of liver cirrhosis: 8% to 20%**\n- **5% to 10% of people progress to HCC (hepatocellular carcinoma) with or without preceding cirrhosis**\n- **Less than 5% achieve a chronic carrier state**\n\nExam bottom line: an **adult** with acute HBV clears the virus in 90% of cases; the danger of HBV is chronicity -> cirrhosis -> HCC, which is why chronic carriers need long-term surveillance.",
+          "key_points": [
+            "Incubation period 30-180 days.",
+            "Acute HBV: 90% spontaneous resolution; <1% fulminant hepatic failure.",
+            "Chronicity 2-10%; cirrhosis risk 8-20%; HCC 5-10% (with or without preceding cirrhosis); chronic carrier state <5%."
+          ],
+          "check": {
+            "prompt": "What proportion of adult patients with acute HBV infection resolve spontaneously?",
+            "options": [
+              "90%",
+              "50%",
+              "2-10%",
+              "Less than 1%"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "90% من البالغين المصابين بالتهاب B الحاد يشفون تلقائياً بفضل مناعتهم؛ وأقل من 1% يطورون فشلاً كبدياً صاعقاً، و2-10% فقط يتحولون إلى إصابة مزمنة. لذلك يكون إنذار الإصابة الحادة عند البالغين ممتازاً بعكس العدوى الوليدية التي تزمن في معظم الحالات."
+          }
+        }
+      ],
+      "key_terms": [
+        { "term": "HBV viral DNA (PCR)", "definition_ar": "الحمض النووي الفيروسي: أدق واسم للتكاثر الفيروسي ويُكشف بتفاعل البوليميراز المتسلسل PCR." },
+        { "term": "Immunoperoxidase staining", "definition_ar": "تلوين البيروكسيداز المناعي: تقنية نسيجية تُظهر المستضدات الفيروسية في نسيج الكبد." },
+        { "term": "Grade (biopsy)", "definition_ar": "درجة الالتهاب في خزعة الكبد." },
+        { "term": "Stage (biopsy)", "definition_ar": "مرحلة التليف في خزعة الكبد." },
+        { "term": "HCC (hepatocellular carcinoma)", "definition_ar": "سرطان الخلية الكبدية: من مضاعفات الالتهاب المزمن B وC، وقد يحدث مع تليف مسبق أو بدونه." }
+      ],
+      "difficulty": "core",
+      "order_index": 8
+    },
+    {
+      "id": "L9_acute_hepatitis_c10",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis B - Treatment, Prophylaxis and Liver Transplantation",
+      "summary_ar": "معالجة B: الإنترفيرون ألفا خط أول بجرعة ثلاث مرات أسبوعياً تحت الجلد وله أعراض جانبية (أعراض شبيهة بالانفلونزا، تساقط شعر، طفح، إسهال) والمؤلف الميغيلي pINF-alpha خيار أفضل؛ ومن الأدوية الفموية إنتيكافير خط أول مع لاميفودين وتينوفوفير. الوقاية: لقاح عضلي بجدول 0 و1 و6 أشهر واستجابة أكبر من 90% بعد الجرعة الثالثة؛ وليدة الأم المصابة يأخذ اللقاح مع HBIG 0.5 مل خلال 12 ساعة من الولادة ثم جرعتين بعمر شهر و6 أشهر مع إعادة فحص بعمر السنة؛ ووخز الإبرة يستدعي الجرعة الأولى خلال 48 ساعة وبحد أقصى أسبوع. وزرع الكبد ملاذ أخير للمرض المتقدم وسرطان الكبد.",
+      "sections": [
+        {
+          "heading": "Antiviral Treatment of HBV",
+          "body_text": "**Treatment** of hepatitis B as presented in the lecture:\n\n- **1) Interferon therapy - First Line**\n  - **Interferon alpha: 3x weekly, Sub-Q (subcutaneous)**\n  - **Side effects: 'flu-like symptoms', alopecia, rash, diarrhea**\n  - **pINF-alpha (pegylated interferon-alpha)** — a **better choice than IFN-alpha**\n- **Treatment continued - oral antivirals:**\n  - **Entecavir - 1st line**\n  - **Lamivudine**\n  - **Tenofovir**",
+          "key_points": [
+            "Interferon alpha 3x weekly Sub-Q is first-line therapy; pegylated IFN-alpha is the better choice.",
+            "Interferon side effects: flu-like symptoms, alopecia, rash, diarrhea.",
+            "Oral antivirals: entecavir (1st line), lamivudine, tenofovir."
+          ]
+        },
+        {
+          "heading": "Prophylaxis - Vaccine, Perinatal and Needle-Stick Protocols",
+          "body_text": "**Prophylaxis** against HBV — three protocols:\n\n- **HBV vaccine**\n  - **Indicated for everyone, especially those in high-risk groups**\n  - **IM injection at 0, 1, 6 months in infants and adults**\n  - **Response greater than 90% after the 3rd dose**\n- **Newborns of HBV (pregnant) mothers**\n  - **Give 1st dose of Hep B vaccine AND Hep B Immunoglobulin (HBIG) 0.5 ml within 12 hours of birth**\n  - **2nd dose at 1 month, 3rd dose at 6 months**\n  - **Recheck at 12 months for active infection**\n- **Others, i.e. those receiving a needle stick**\n  - **Should receive the 1st dose of vaccine within 48 hours and no later than a week**",
+          "key_points": [
+            "Vaccine schedule 0, 1, 6 months IM (infants and adults); response >90% after the 3rd dose.",
+            "Neonate of HBV mother: vaccine dose 1 + HBIG 0.5 ml within 12 hours of birth; dose 2 at 1 month, dose 3 at 6 months; recheck at 12 months.",
+            "Needle stick: first vaccine dose within 48 hours, no later than one week."
+          ],
+          "check": {
+            "prompt": "A newborn of an HBsAg-positive mother should receive which of the following within 12 hours of birth?",
+            "options": [
+              "First Hep B vaccine dose plus HBIG 0.5 ml",
+              "HBIG 0.5 ml alone",
+              "Vaccine alone on the 0, 1, 6 month schedule",
+              "No prophylaxis until 12 months of age"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "وليدة الأم الحاملة لفيروس B يحصل على الجرعة الأولى من اللقاح مع الغلوبولين المناعي HBIG بجرعة 0.5 مل خلال 12 ساعة من الولادة (مناعة فورية وفعالة معاً)، ثم الجرعة الثانية بعمر شهر والثالثة بعمر 6 أشهر مع إعادة الفحص بعمر 12 شهراً. إعطاء أحد المركبين وحده أقل حماية، والتأخير حتى عمر السنة خطأ خطير لأن العدوى الوليدية تتحول للإزمان غالباً."
+          }
+        },
+        {
+          "heading": "Liver Transplantation",
+          "body_text": "**Liver transplant** is the **last resort** for those with **advanced liver disease and HCC due to infection**. It is the final station of the HBV (and HCV) pathway: acute infection -> chronicity (2-10%) -> cirrhosis (8-20%) and/or HCC (5-10%) -> decompensated advanced liver disease -> transplantation. No medical therapy reverses decompensated cirrhosis or advanced HCC, which is why **prevention by vaccination** and early antiviral treatment of chronic infection matter so much.",
+          "key_points": [
+            "Transplant = last resort for advanced liver disease and HCC due to HBV/HCV infection.",
+            "Prevention by vaccination is the only way to stop the pathway that ends in transplant."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Pegylated interferon (pINF-alpha)", "definition_ar": "الإنترفيرون الميغيلي: خيار أفضل من الإنترفيرون العادي بامتصاص مستديم وتصفية أبطول وعمر نصفي أطول." },
+        { "term": "Entecavir", "definition_ar": "مضاد فيروسي فموي خط أول لالتهاب B." },
+        { "term": "Lamivudine", "definition_ar": "مضاد فيروسي فموي لالتهاب B (من خيارات المعالجة)." },
+        { "term": "Tenofovir", "definition_ar": "مضاد فيروسي فموي لالتهاب B (من خيارات المعالجة)." },
+        { "term": "HBIG", "definition_ar": "الغلوبولين المناعي لالتهاب B: أضداد جاهزة تُعطى وقائياً للمولود بجرعة 0.5 مل خلال 12 ساعة من الولادة." },
+        { "term": "Liver transplantation", "definition_ar": "زرع الكبد: خيار أخير للمرض الكبدي المتقدم وسرطان الكبد الناتج عن الإصابة الفيروسية." }
+      ],
+      "difficulty": "core",
+      "order_index": 9
+    },
+    {
+      "id": "L9_acute_hepatitis_c11",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis D Virus (HDV)",
+      "summary_ar": "فيروس D المعيب لا ينتقل إلا كإصابة مشتركة مع التهاب B الحاد أو كإصابة إضافية فوق حامل B المزمن لأنه يحتاج غلاف HBsAg الخارجي ليتكاثر وينتقل؛ قد يتقدم للمرض المزمن وفترة حضانته 30-150 يوماً. الأضداد anti-HDV تدل على الإصابة الإضافية وقد تغيب في الإصابة الحادة مما يستوجب إعادة الفحص.",
+      "sections": [
+        {
+          "heading": "Transmission and Pathogenesis - The Defective Virus",
+          "body_text": "**Hepatitis D (HDV)** is transmitted **only as**:\n\n- **Co-infection with acute HBV** (both viruses acquired together), or\n- **Superinfection in a chronic HBV carrier** (HDV landing on an established HBV infection)\n\nThe reason: HDV is a **defective virus that requires the outer envelope of HBsAg for replication and transmission** — it cannot spread without hepatitis B. Additional facts from the lecture:\n\n- **Can progress to chronic disease**\n- **Incubation period: 30 to 150 days**\n\nClinical consequence: superinfection of a chronic carrier typically produces a **severe acute hepatitis flare** with higher rates of fulminant disease and chronicity than HBV alone.",
+          "key_points": [
+            "HDV requires the HBsAg outer envelope for replication and transmission — no HDV without HBV.",
+            "Two patterns: co-infection with acute HBV, or superinfection of a chronic HBV carrier.",
+            "Incubation period 30-150 days; can progress to chronic disease."
+          ],
+          "check": {
+            "prompt": "Why can hepatitis D never be transmitted as an isolated infection?",
+            "options": [
+              "It requires the HBsAg outer envelope for replication",
+              "It is transmitted only by the fecal-oral route",
+              "It needs anti-HDV antibody to replicate",
+              "It only infects immunosuppressed patients"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "فيروس D معيب وراثياً ولا يمتلك غلافاً خاصاً به؛ يستعير مستضد السطح HBsAg من فيروس B غلافاً ليتكاثر وينتقل، ولذلك لا يظهر إلا كإصابة مشتركة مع B الحاد أو إصابة إضافية فوق حامل B. الطريق الفموي-البرازي يخص فيروسي A وE، ولا علاقة للأضداد أو نقص المناعة بذلك."
+          }
+        },
+        {
+          "heading": "Serology and Diagnosis of HDV",
+          "body_text": "**Serology** of hepatitis D:\n\n- **Hepatitis D antibody (Anti-HDV)** — **indicates HDV superinfection**\n- **The antibody is not always present in acute infection — requires repeat testing**\n\nPractical point: in **any HBsAg-positive patient** who develops an unexplained severe acute hepatitis or an acute-on-chronic flare, send **anti-HDV**; if the first result is negative but suspicion persists, **repeat the test** rather than excluding HDV — a single negative anti-HDV early in acute infection does not rule it out.",
+          "key_points": [
+            "Anti-HDV indicates HDV superinfection.",
+            "The antibody may be absent in acute HDV infection — repeat testing is required.",
+            "Test anti-HDV in HBsAg-positive patients with severe or flaring hepatitis."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "Defective virus", "definition_ar": "فيروس معيب: لا يتكاثر إلا بمساعدة فيروس آخر (فيروس D يحتاج غلاف HBsAg)." },
+        { "term": "Co-infection", "definition_ar": "إصابة مشتركة: الإصابة بفيروسي B وD معاً في آن واحد." },
+        { "term": "Superinfection", "definition_ar": "إصابة إضافية: إصابة حامل B المزمن بفيروس D فوق إصابته القائمة." },
+        { "term": "Anti-HDV", "definition_ar": "ضد فيروس D: يدل على الإصابة الإضافية وقد يتأخر ظهوره في الإصابة الحادة فيتطلب إعادة الفحص." }
+      ],
+      "difficulty": "advanced",
+      "order_index": 10
+    },
+    {
+      "id": "L9_acute_hepatitis_c12",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis C Virus (HCV)",
+      "summary_ar": "فيروس C هو فيروس RNA بحضانة 7-8 أسابيع ينتقل بالطريق الحقني وخاصة عند متعاطي المخدرات الوريدية؛ عادة خفيف سريرياً لا يسبب مرضاً حاداً هاماً مع تقلبات في AST وALT، و80% من الحالات لا عرضية دون يرقان، لكن 50% تتطور لالتهاب مزمن و20% لتليف. الأضداد Anti-HCV لا تميز الحاد من المزمن، وEIA يظهر بعد 3-5 أشهر، وPCR يكشف الحمض النووي الريبي. المعالجة: إنترفيرون مع ريبافيرين، والوسوفيبوفير الحديثة (سوفوسبوفير وليديباسفير 12 أسبوعاً بنجاح 99% للنمط الأول، وسوفوسبوفير مع فلباتاسفير شامل لكل الأنماط).",
+      "sections": [
+        {
+          "heading": "Virology, Transmission and Clinical Course",
+          "body_text": "**Hepatitis C** essentials from the lecture:\n\n- **RNA virus**\n- **Incubation period: 7-8 weeks**\n- **Parenteral transmission: IV drug users** (the key risk group)\n- **Usually clinically mild — does not cause significant acute illness**\n- **Fluctuating elevations of AST & ALT** (a waxing-and-waning transaminase pattern is characteristic)\n- **20% likelihood of developing cirrhosis**\n- **50% likelihood of developing chronic hepatitis**\n- **80% of cases: patients are asymptomatic and do not develop icterus**\n\nContrast with hepatitis A: HCV is quiet acutely but dangerous long-term — half of infected patients go chronic and one in five develops cirrhosis.",
+          "key_points": [
+            "HCV = RNA virus; incubation 7-8 weeks; parenteral transmission (IV drug users).",
+            "Acute HCV is usually mild/subclinical: 80% asymptomatic without icterus; fluctuating AST & ALT.",
+            "50% likelihood of chronic hepatitis; 20% likelihood of cirrhosis."
+          ]
+        },
+        {
+          "heading": "Diagnosis of HCV",
+          "body_text": "**Diagnosis of HCV:**\n\n- **Anti-HCV (antibody)** — **cannot distinguish acute from chronic infection** (it only tells you the patient has encountered the virus at some time).\n- **EIA** — antibodies against the **core protein and nonstructural proteins**; **may appear 3-5 months after infection** (early serology can be falsely negative during the window period).\n- **PCR** — **used to detect viral RNA -> HCV** (confirms active infection and quantifies viral load).\n\nDiagnostic strategy: screen with anti-HCV (EIA); confirm active infection with **HCV RNA PCR** — especially important because the antibody cannot separate acute from chronic disease.",
+          "key_points": [
+            "Anti-HCV cannot distinguish acute from chronic HCV infection.",
+            "EIA antibodies (against core protein and nonstructural proteins) may appear 3-5 months after infection.",
+            "PCR detects HCV RNA — the confirmatory test for active infection."
+          ]
+        },
+        {
+          "heading": "Treatment of HCV - From Interferon to 99% Cure",
+          "body_text": "**Treatment** of hepatitis C as presented:\n\n- **Classical regimen: Interferon alpha + Ribavirin**\n- **PEG-IFNs (pegylated interferons)** — offer **better sustained absorption, a slower rate of clearance, and a longer half-life than unmodified IFN**\n- **Modern direct-acting antiviral therapy**: **12 weeks of treatment with oral sofosbuvir plus ledipasvir plus ribavirin can achieve a 99% SVR (sustained virologic response) in genotype 1 patients**\n- **Sofosbuvir plus velpatasvir achieves similar results and is pan-genotypic** — effective across all HCV genotypes\n\nNote: **SVR (sustained virologic response)** = undetectable HCV RNA after completing therapy — the modern definition of cure.",
+          "key_points": [
+            "Classical therapy: interferon alpha plus ribavirin; PEG-IFNs have better sustained absorption, slower clearance and longer half-life than unmodified IFN.",
+            "12 weeks of sofosbuvir + ledipasvir + ribavirin = 99% SVR in genotype 1 patients.",
+            "Sofosbuvir + velpatasvir = similar results and is pan-genotypic."
+          ],
+          "check": {
+            "prompt": "Which HCV regimen is pan-genotypic with SVR rates similar to sofosbuvir/ledipasvir/ribavirin?",
+            "options": [
+              "Sofosbuvir plus velpatasvir",
+              "Interferon alpha monotherapy",
+              "Entecavir plus tenofovir",
+              "Lamivudine monotherapy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "سوفوسبوفير مع فلباتاسفير نظام شامل لكل الأنماط الجينية ويعطي نتائج مشابهة باستجابة فيروسية مستديمة تقارب 99%. الإنترفيرون وحده أقل فعالية، أما إنتيكافير ولاميفودين وتينوفوفير فهي أدوية فيروس B المزمن وليست علاجاً لالتهاب C."
+          }
+        }
+      ],
+      "key_terms": [
+        { "term": "EIA", "definition_ar": "مقايسة الممتز المناعي الإنزيمي: تفحص الأضداد ضد البروتين اللب والبروتينات غير البنيوية لفيروس C وقد تظهر بعد 3-5 أشهر من العدوى." },
+        { "term": "HCV RNA PCR", "definition_ar": "تفاعل البوليميراز المتسلسل: يكشف الحمض النووي الريبي لفيروس C ويؤكد الإصابة النشطة." },
+        { "term": "SVR (sustained virologic response)", "definition_ar": "الاستجابة الفيروسية المستديمة: غياب الحمض النووي الفيروسي بعد انتهاء العلاج، أي الشفاء." },
+        { "term": "Genotype", "definition_ar": "النمط الجيني للفيروس: يحدد اختيار الدواء؛ النمط 1 يستجيب 99% لسوفوسبوفير وليديباسفير." },
+        { "term": "Ribavirin", "definition_ar": "ريبافيرين: دواء مضاد فيروسي يُشارك في معالجة التهاب C مع الإنترفيرون أو السوفوسبوفير." },
+        { "term": "Sofosbuvir", "definition_ar": "سوفوسبوفير: مضاد فيروسي فموي مباشر يشكل أساس العلاج الحديث لالتهاب C." }
+      ],
+      "difficulty": "advanced",
+      "order_index": 11
+    },
+    {
+      "id": "L9_acute_hepatitis_c13",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "Hepatitis E Virus (HEV)",
+      "summary_ar": "فيروس E هو فيروس RNA ينتقل معوياً بالطريق الفموي-البرازي مثل A؛ مرض نموذجياً محدود ذاتياً يسبب أعراض التهاب الكبد الحاد وفترة حضانته 2-9 أسابيع. التشخيص بكشف HEV RNA في المصل أو الكبد أو البراز وبالأضداد: IgM للإصابة الحادة وIgG، مع ارتفاع AST وALT، والمعالجة داعمة.",
+      "sections": [
+        {
+          "heading": "Virology, Transmission and Clinical Features",
+          "body_text": "**Hepatitis E** essentials:\n\n- **HEV is an RNA virus**\n- **Enterically transmitted infection; fecal-oral route** — like hepatitis A, spread by contaminated water and food\n- **Typically self-limiting**\n- **Symptoms of acute hepatitis** — the same prodromal-then-icteric pattern described in the clinical-features concept\n- **Incubation period of hepatitis E virus is 2-9 weeks**",
+          "key_points": [
+            "HEV = RNA virus, enterically transmitted (fecal-oral route), typically self-limiting.",
+            "Incubation period 2-9 weeks.",
+            "Presents with symptoms of acute hepatitis (prodromal then icteric pattern)."
+          ]
+        },
+        {
+          "heading": "Diagnosis and Treatment",
+          "body_text": "**Hepatitis E - diagnosis:**\n\n- **Serum, liver, and stool samples can be tested for HEV RNA**\n- **Anti-HEV antibodies:**\n  - **IgM (acute)** infection\n  - **IgG (chronic)** — as stated on the slide (IgG classically reflects prior/resolved infection and lasting immunity)\n- **AST & ALT are elevated**\n\n**Treatment: supportive** — like hepatitis A, the disease is typically self-limiting and requires no antiviral therapy; management is rest, hydration, nutrition and monitoring for the rare severe course.",
+          "key_points": [
+            "HEV RNA can be detected in serum, liver and stool samples.",
+            "Anti-HEV IgM = acute infection; IgG listed on the slide as the chronic-phase antibody (classically = past infection/immunity).",
+            "AST & ALT are elevated; treatment is supportive."
+          ]
+        }
+      ],
+      "key_terms": [
+        { "term": "HEV RNA testing", "definition_ar": "كشف الحمض النووي لفيروس E في المصل أو الكبد أو البراز لتأكيد التشخيص." },
+        { "term": "Anti-HEV IgM", "definition_ar": "الضد المناعي M لفيروس E: يدل على الإصابة الحادة." },
+        { "term": "Anti-HEV IgG", "definition_ar": "الضد المناعي G لفيروس E: ورد في المحاضرة كواسم للطور المتأخر (ويعني كلاسيكياً إصابة سابقة ومناعة)." },
+        { "term": "Enteric (fecal-oral) transmission", "definition_ar": "الانتقال المعوي الفموي-البرازي عبر الماء والطعام الملوث، كما في فيروسي A وE." }
+      ],
+      "difficulty": "core",
+      "order_index": 12
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L9_acute_hepatitis_f1",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "What is the definition of hepatitis, and what does the classic histology show?",
+      "back_text": "Hepatitis = inflammation of the liver with presence of inflammatory cells in the organ tissue. The classic H&E histology shows a dense lobular infiltrate of lymphocytes and other mononuclear cells, hepatocyte swelling and ballooning, and disruption of the normal hepatocyte cord architecture.",
+      "explanation_ar": "التعريف نسيجي بجوهره: خلايا التهابية داخل فصيصات الكبد مع أذية الخلايا الكبدية (تورم وانتفاخ) وتخريب بنية الحبال الكبدية."
+    },
+    {
+      "id": "L9_acute_hepatitis_f2",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c1",
+      "card_type": "basic",
+      "front_text": "Define acute viral hepatitis, acute hepatic failure, chronic hepatitis, and fulminant hepatitis.",
+      "back_text": "Acute viral hepatitis: symptoms last less than 6 months. Acute hepatic failure: massive hepatic necrosis with impaired consciousness within 8 weeks of onset of illness. Chronic hepatitis: inflammation of the liver for at least 6 months. Fulminant hepatitis: severe impairment of hepatic functions or severe hepatocyte necrosis in the absence of preexisting liver disease.",
+      "explanation_ar": "احفظ الرقمين: أقل من 6 أشهر = حاد، و6 أشهر فأكثر = مزمن؛ واضطراب الوعي خلال 8 أسابيع = فشل كبدي حاد، والصاعق يفترض غياب مرض كبدي مسبق."
+    },
+    {
+      "id": "L9_acute_hepatitis_f3",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c2",
+      "card_type": "basic",
+      "front_text": "List the seven causes of acute hepatitis.",
+      "back_text": "1) Viral infections: hepatitis A, B, C, D, E, F, GB, CMV, EBV. 2) Other infections: parasites and bacteria. 3) Drugs. 4) Toxins. 5) Alcohol. 6) Autoimmune hepatitis. 7) Ischemic hepatitis.",
+      "mnemonic_ar": "تذكر السلسلة السبعة: فيروس، انتان آخر (طفيليات وجراثيم)، دواء، سم، كحول، مناعي ذاتي، إسكيمي.",
+      "explanation_ar": "الفيروسية هي الأشيع (خاصة A-E)، لكن لا تنسَ الأسباب غير الفيروسية قبل إطلاق تشخيص فيروسي على كل مريض يرقاني."
+    },
+    {
+      "id": "L9_acute_hepatitis_f4",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c3",
+      "card_type": "basic",
+      "front_text": "What are the four phases of classic infectious hepatitis?",
+      "back_text": "Phase 1 - Viral replication (patients are asymptomatic); Phase 2 - Prodromal phase; Phase 3 - Icteric phase; Phase 4 - Convalescent phase, in which symptoms and icterus resolve and liver enzymes return to normal.",
+      "explanation_ar": "التكاثر الفيروسي صامت أولاً، ثم الطور البادر، ثم اليرقان، ثم النقاهة مع عودة الأنزيمات إلى الطبيعي."
+    },
+    {
+      "id": "L9_acute_hepatitis_f5",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c3",
+      "card_type": "basic",
+      "front_text": "What symptoms characterize the prodromal phase, and what is the classic misdiagnosis?",
+      "back_text": "Anorexia, nausea, vomiting, alterations in taste, arthralgias, malaise, fatigue, urticaria, and pruritus; some develop an aversion to cigarette smoke. Patients seen in this phase are often misdiagnosed with gastroenteritis or a viral syndrome.",
+      "explanation_ar": "قبل ظهور اليرقان يشبه الطور البادر التهاب المعدة والأمعاء أو متلازمة فيروسية — اسأل عن لون البول وافحص الصلبة."
+    },
+    {
+      "id": "L9_acute_hepatitis_f6",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c3",
+      "card_type": "basic",
+      "front_text": "What marks the icteric phase of acute hepatitis?",
+      "back_text": "Jaundice; patients may note dark urine followed by pale-colored stools. GI symptoms and malaise persist, patients become icteric, and may develop right upper quadrant pain with hepatomegaly.",
+      "explanation_ar": "البول الداكن أولاً ثم البراز الشاحب، مع ألم في الربع العلوي الأيمن وضخامة كبدية مؤلمة."
+    },
+    {
+      "id": "L9_acute_hepatitis_f7",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c4",
+      "card_type": "basic",
+      "front_text": "What are the three complications of severe (fulminant) hepatitis?",
+      "back_text": "Hepatic encephalopathy (bilateral asterixis, palmar erythema), hepatorenal syndrome, and bleeding diathesis.",
+      "explanation_ar": "المثلث الخطير: اعتلال دماغي كبدي (رجفان أذيالي ثنائي الجانب واحمرار راحتي اليدين)، متلازمة كبدية-كلوية، واستعداد للنزف."
+    },
+    {
+      "id": "L9_acute_hepatitis_f8",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c5",
+      "card_type": "basic",
+      "front_text": "How do you interpret the laboratory workup in acute viral hepatitis?",
+      "back_text": "Transaminase elevation is not diagnostic but useful - ALT is elevated more than AST; urinalysis shows bilirubin; total bilirubin higher than 30 mg/dL indicates more severe disease; significantly elevated ALP suggests abscess or biliary obstruction; prolonged PT = impaired hepatic synthetic function; decreased renal function (BUN/creatinine) suggests fulminant hepatic disease. U/S and liver biopsy complete the workup.",
+      "explanation_ar": "نمط خلوي: ALT أكثر من AST؛ أما الارتفاع الكبير للفوسفاتاز القلوي ففكر بانسداد أو خراج؛ وتطاول PT وارتفاع الكرياتينين علامات سوء إنذار."
+    },
+    {
+      "id": "L9_acute_hepatitis_f9",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c6",
+      "card_type": "basic",
+      "front_text": "Hepatitis A: virus type, transmission, incubation, and outcome?",
+      "back_text": "RNA virus; fecal-oral transmission through contaminated water and food; incubation period 2-7 weeks; mild self-limited disease conferring lifelong immunity; chronic infection does NOT occur; AST & ALT usually return to reference ranges over 5-20 weeks; treatment is supportive.",
+      "explanation_ar": "لا يوجد إطلاقاً التهاب A مزمن — المرض خفيف محدود ذاتياً ويمنح مناعة دائمة، والعلاج داعم فقط."
+    },
+    {
+      "id": "L9_acute_hepatitis_f10",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c6",
+      "card_type": "basic",
+      "front_text": "HAV serology: what do IgM and IgG anti-HAV mean and when do they appear?",
+      "back_text": "IgM anti-HAV: positive at the time of onset of symptoms and remains positive for 3-6 months after the primary infection (marker of acute infection). Anti-HAV IgG: appears soon after IgM and generally persists for many years (immunity).",
+      "explanation_ar": "IgM = إصابة حادة الآن؛ IgG = مناعة تدوم سنوات بعد الإصابة أو التطعيم."
+    },
+    {
+      "id": "L9_acute_hepatitis_f11",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c7",
+      "card_type": "basic",
+      "front_text": "How is HBV transmitted, and which groups are at risk?",
+      "back_text": "Three main routes: parenteral/percutaneous (IV drug users, needle sticks, hemodialysis patients), sexual, and vertical/perinatal. At-risk groups: IV drug users, people receiving multiple blood transfusions, sexual promiscuity, people in contact with HBV carriers, travelers to endemic areas of South America, Southern Asia and Africa, residents and employees of residential care facilities, and health care workers.",
+      "explanation_ar": "فيروس B دموي وسوائل: حقني وجنسي وولادي؛ والجميع مستهدف باللقاح وخاصة هذه المجموعات المعرضة."
+    },
+    {
+      "id": "L9_acute_hepatitis_f12",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c8",
+      "card_type": "basic",
+      "front_text": "Interpret the four HBV serological markers.",
+      "back_text": "HBsAg: present in acute or chronic infection, detectable 1-2 weeks after infection. HBeAg: appears shortly after HBsAg, indicates viral replication and infectivity. Anti-HBs: present after vaccination or clearance of HBsAg (usually 1-3 months), indicates immunity. Anti-HBc (IgM or IgG): the only serological marker during the window period.",
+      "explanation_ar": "مستضد السطح = إصابة؛ مستضد e = تكاثر وعدوى؛ ضد السطح = مناعة؛ ضد اللب = واسم فترة النافذة."
+    },
+    {
+      "id": "L9_acute_hepatitis_f13",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c9",
+      "card_type": "basic",
+      "front_text": "HBV progression: what are the key percentages?",
+      "back_text": "Incubation 30-180 days; acute infection - 90% resolve by themselves, less than 1% develop fulminant hepatic failure; 2-10% progress to chronic state; risk of cirrhosis 8-20%; 5-10% progress to HCC with or without preceding cirrhosis; less than 5% achieve a chronic carrier state.",
+      "explanation_ar": "90% شفاء تلقائي عند البالغين، 2-10% إزمان، 8-20% تليف، 5-10% سرطان كبد، وأقل من 1% التهاب صاعق."
+    },
+    {
+      "id": "L9_acute_hepatitis_f14",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c10",
+      "card_type": "basic",
+      "front_text": "What is the first-line treatment of hepatitis B, and what are interferon's side effects?",
+      "back_text": "Interferon therapy is first line: interferon alpha 3x weekly subcutaneously; pegylated IFN-alpha (pINF-alpha) is a better choice than IFN-alpha. Oral antivirals: entecavir (1st line), lamivudine, tenofovir. Interferon side effects: flu-like symptoms, alopecia, rash, diarrhea.",
+      "explanation_ar": "الإنترفيرون (والميغيلي منه أفضل) مع إنتيكافير خط أول فموي؛ وأعراض الإنترفيرون الجانبية أشبه بالانفلونزا مع تساقط شعر وطفح وإسهال."
+    },
+    {
+      "id": "L9_acute_hepatitis_f15",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c10",
+      "card_type": "basic",
+      "front_text": "Summarize HBV prophylaxis: vaccine schedule, neonatal protocol, and needle-stick protocol.",
+      "back_text": "Vaccine: IM at 0, 1, 6 months in infants and adults; response greater than 90% after the 3rd dose. Newborn of HBV mother: 1st vaccine dose + HBIG 0.5 ml within 12 hours of birth, 2nd dose at 1 month, 3rd at 6 months, recheck at 12 months. Needle stick: 1st vaccine dose within 48 hours and no later than one week.",
+      "explanation_ar": "احفظ الأرقام: اللقاح 0-1-6 أشهر؛ المولود: لقاح + HBIG 0.5 مل خلال 12 ساعة؛ وخز الإبرة: لقاح خلال 48 ساعة (أسبوع كحد أقصى)."
+    },
+    {
+      "id": "L9_acute_hepatitis_f16",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c11",
+      "card_type": "basic",
+      "front_text": "Why does hepatitis D only occur with hepatitis B, and what is its serology?",
+      "back_text": "HDV requires the outer envelope of HBsAg for replication and transmission, so it occurs only as co-infection with acute HBV or superinfection of a chronic HBV carrier. Incubation 30-150 days; can progress to chronic disease. Anti-HDV indicates superinfection but is not always present in acute infection - repeat testing is required.",
+      "explanation_ar": "فيروس معيب يستعير غلاف HBsAg؛ لا إصابة D بدون B؛ والأضداد قد تغيب في الإصابة الحادة فيجب إعادة الفحص."
+    },
+    {
+      "id": "L9_acute_hepatitis_f17",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c12",
+      "card_type": "basic",
+      "front_text": "Hepatitis C: incubation, transmission, and clinical course?",
+      "back_text": "RNA virus; incubation period 7-8 weeks; parenteral transmission (IV drug users). Usually clinically mild without significant acute illness; fluctuating elevations of AST & ALT; 80% of cases asymptomatic without icterus; 50% likelihood of chronic hepatitis; 20% likelihood of cirrhosis.",
+      "explanation_ar": "حاد خفيث: 80% بلا أعراض ولا يرقان، لكن 50% يزمنون و20% يتليفون — خطورة C في إزمامه."
+    },
+    {
+      "id": "L9_acute_hepatitis_f18",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c12",
+      "card_type": "basic",
+      "front_text": "How is hepatitis C diagnosed?",
+      "back_text": "Anti-HCV antibody cannot distinguish acute from chronic infection. EIA (antibodies against core protein and nonstructural proteins) may appear 3-5 months after infection. PCR is used to detect viral RNA and confirms active HCV infection.",
+      "explanation_ar": "الأضداد للفرز فقط ولا تفرق الحاد من المزمن؛ وPCR يكشف الحمض النووي ويؤكد الإصابة النشطة."
+    },
+    {
+      "id": "L9_acute_hepatitis_f19",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c12",
+      "card_type": "basic",
+      "front_text": "What is the modern treatment of HCV and its success rate?",
+      "back_text": "12 weeks of oral sofosbuvir plus ledipasvir plus ribavirin achieves a 99% SVR in genotype 1 patients; sofosbuvir plus velpatasvir achieves similar results and is pan-genotypic. Classical therapy: interferon alpha plus ribavirin; PEG-IFNs have better sustained absorption, slower clearance and a longer half-life than unmodified IFN.",
+      "explanation_ar": "12 أسبوعاً من سوفوسبوفير + ليديباسفير + ريبافيرين تعطي شفاءً بنسبة 99% للنمط الأول؛ وسوفوسبوفير مع فلباتاسفير بديل شامل لكل الأنماط."
+    },
+    {
+      "id": "L9_acute_hepatitis_f20",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c13",
+      "card_type": "basic",
+      "front_text": "Hepatitis E: transmission, incubation, diagnosis, and treatment?",
+      "back_text": "RNA virus; enterically transmitted (fecal-oral route); typically self-limiting with symptoms of acute hepatitis; incubation period 2-9 weeks. Diagnosis: HEV RNA in serum, liver, or stool samples; anti-HEV IgM (acute) and IgG; AST & ALT are elevated. Treatment: supportive.",
+      "explanation_ar": "مثل A ينتقل فموياً-برازياً ومحدود ذاتياً؛ التشخيص بHEV RNA في المصل أو الكبد أو البراز وIgM للإصابة الحادة؛ والعلاج داعم."
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "L9_acute_hepatitis_q1",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c3",
+      "question_stem": "A 22-year-old man presents with 10 days of anorexia, nausea, malaise and a new aversion to cigarette smoke, followed by dark urine and scleral icterus. Labs: AST 920 U/L (ref 10-40), ALT 1,480 U/L (ref 7-56), total bilirubin 8.6 mg/dL (ref 0.3-1.2), ALP 128 U/L (ref 44-147, normal), PT 13 s (normal). What is the most likely diagnosis?",
+      "options": [
+        "Acute viral hepatitis",
+        "Acute cholecystitis",
+        "Choledocholithiasis with biliary obstruction",
+        "Acute pancreatitis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذه هي الصورة النموذجية لالتهاب الكبد الفيروسي الحاد: طور بادر (فقدان شهية، غثيان، وهن، نفور من دخان السجائر) ثم طور يرقاني (بول داكن ويرقان) مع نمط خلوي للأنزيمات (ارتفاع هائل للناقلات مع ALT أعلى من AST) وALP طبيعي تقريباً. التهاب المرارة الحاد يسبب ألماً حاداً في الربع العلوي الأيمن مع حمى وموجة مورفي وليس ارتفاعاً هائلاً للناقلات؛ والحصى في الطرق الصفراوية ترفع ALP بشكل كبير مع يرقان ركودي وألم قولنجي؛ والتهاب البنكرياس يسبب ألماً شرسوفياً نافذاً إلى الظهر مع ارتفاع الليباز لا هذا النمط الكبدي الخلوي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Aversion to cigarette smoke is a classic prodromal clue of viral hepatitis.",
+        "ALT greater than AST with near-normal ALP indicates a hepatocellular pattern."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q2",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c6",
+      "question_stem": "A 19-year-old student develops jaundice, dark urine and nausea 3 weeks after returning from a rural trip where she drank untreated water. Serology returns: IgM anti-HAV positive. What does this result indicate?",
+      "options": [
+        "Acute hepatitis A infection",
+        "Past hepatitis A infection with immunity",
+        "Chronic hepatitis A infection",
+        "Acute hepatitis B infection",
+        "Hepatitis A carrier state"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "IgM anti-HAV يصبح إيجابياً عند بدء الأعراض ويبقى كذلك 3-6 أشهر بعد الإصابة الأولية، فهو دليل التهاب A الحاد المتوافق مع التعرض الفموي-البرازي عبر المياه الملوثة. IgG وحده كان سيعني إصابة سابقة أو مناعة؛ ولا يوجد أصلاً التهاب A مزمن أو حالة حامل لأن المرض محدود ذاتياً ويمنح مناعة مدى الحياة؛ وواسمات فيروس B (HBsAg وIgM anti-HBc) لا علاقة لها بفيروس A.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "IgM is the acute-phase antibody.",
+        "HAV never causes chronic infection."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q3",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c8",
+      "question_stem": "A 30-year-old man is evaluated for jaundice 9 weeks after a needle-stick injury. Serology: HBsAg negative, anti-HBs negative, IgM anti-HBc positive. What is the interpretation?",
+      "options": [
+        "Window period of acute HBV infection",
+        "Successful HBV vaccination",
+        "Chronic HBV carrier state",
+        "Immunity from remote resolved HBV infection",
+        "Acute hepatitis A infection"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "فترة النافذة هي الفاصل الزمني بين اختفاء HBsAg وظهور Anti-HBs (الذي يظهر عادة بعد 1-3 أشهر من التخلص من المستضد)، وفيها يكون Anti-HBc الواسم المصلي الوحيد الموجود — ووجوده بنمط IgM يحدد الإصابة الحادة بعد التعرض الحقني قبل 9 أسابيع. التطعيم الناجح يعطي Anti-HBs فقط دون أي Anti-HBc؛ وحالة الحامل المزمن تحمل HBsAg إيجابياً؛ والمناعة من إصابة قديمة تُظهر Anti-HBs مع IgG anti-HBc وليس IgM؛ وواسمات فيروس A غير معنية هنا.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Which marker bridges the gap between loss of HBsAg and appearance of anti-HBs?",
+        "IgM anti-HBc without HBsAg or anti-HBs = window period."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q4",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c9",
+      "question_stem": "A 34-year-old woman with chronic hepatitis B is being assessed before starting antiviral therapy. Which test is the most accurate marker of viral DNA?",
+      "options": [
+        "HBV viral DNA detected by PCR",
+        "HBsAg",
+        "HBeAg",
+        "IgG anti-HBc"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الحمض النووي الفيروسي HBV DNA المكتشف بتفاعل البوليميراز المتسلسل PCR هو أدق واسم للتكاثر الفيروسي لأنه يقيس الحمل الفيروسي كمياً. HBsAg يدل فقط على وجود إصابة (حادة أو مزمنة) دون قياس التكاثر؛ وHBeAg يعكس التكاثر والعدوية لكنه نوعي وليس كمياً؛ وIgG anti-HBc يدل على تعرض سابق للفيروس وليس واسم تكاثر نشط.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Which test actually quantifies the virus itself rather than the immune response?",
+        "PCR detects viral nucleic acid directly."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q5",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c10",
+      "question_stem": "A pregnant woman with chronic hepatitis B (HBsAg positive) delivers a term newborn. What should the newborn receive within 12 hours of birth?",
+      "options": [
+        "First dose of Hep B vaccine plus HBIG 0.5 ml",
+        "HBIG 0.5 ml alone",
+        "First vaccine dose alone on the 0, 1, 6 month schedule",
+        "No prophylaxis; recheck HBsAg at 12 months"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "وليد الأم الحاملة لفيروس B يجب أن يحصل على الجرعة الأولى من لقاح B مع الغلوبولين المناعي HBIG بجرعة 0.5 مل خلال 12 ساعة من الولادة، ثم الجرعة الثانية بعمر شهر والثالثة بعمر 6 أشهر، مع إعادة الفحص بعمر 12 شهراً لكشف إصابة نشطة. إعطاء أحد المركبين وحده أقل حماية؛ والانتظار دون وقاية خطأ خطير لأن العدوى الوليدية تتحول غالباً إلى إصابة مزمنة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Combined active plus passive immunization gives immediate and lasting protection.",
+        "The schedule continues at 1 and 6 months with a check at 12 months."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q6",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c10",
+      "question_stem": "An unvaccinated 27-year-old nurse sustains a needle-stick injury from an HBsAg-positive patient. What post-exposure prophylaxis does the lecture recommend?",
+      "options": [
+        "First dose of HBV vaccine within 48 hours and no later than a week",
+        "Immediate entecavir therapy",
+        "HBIG 0.5 ml monthly for 6 months",
+        "No prophylaxis needed for a healthy adult",
+        "Monthly HBV DNA PCR monitoring for a year"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بحسب المحاضرة: متلقّو وخز الإبرة يجب أن يتلقوا الجرعة الأولى من اللقاح خلال 48 ساعة وبحد أقصى أسبوع. الإنتيكافير علاج للالتهاب المزمن وليس وقاية بعد التعرض؛ وجدول HBIG الشهري غير موجود في المحاضرة (جرعة 0.5 مل المذكورة خاصة بالمولودين)؛ وترك المصاب دون وقاية غير مقبول؛ ومتابعة PCR وحدها ليست تدبيراً وقائياً.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "The window for the first vaccine dose after a needle stick is 48 hours to one week."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q7",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c11",
+      "question_stem": "A known chronic HBV carrier (HBsAg positive) presents with a second, severe episode of acute hepatitis. Anti-HDV returns positive. What best explains this episode?",
+      "options": [
+        "HDV superinfection - HDV requires the HBsAg outer envelope to replicate",
+        "Acute hepatitis A co-infection",
+        "Hepatitis C reactivation",
+        "Alcoholic hepatitis",
+        "Autoimmune hepatitis flare"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "فيروس D معيب يحتاج غلاف HBsAg الخارجي ليتكاثر وينتقل، فيظهر إما كإصابة مشتركة مع B الحاد أو إصابة إضافية فوق حامل B المزمن — وهذه الحالة الثانية هي الموجودة هنا: حامل B مزمن يصاب بسورة التهابية حادة شديدة بعد إصابة إضافية بD. فيروس A ينتقل فموياً-برازياً ويُشخص بIgM anti-HAV؛ والتهاب C لا يعاود الاشتداد هكذا ويُكشف بأضداده وPCR؛ ولا ذكر للكحول أو المناعة الذاتية في القصة.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "HDV is a defective virus — what does it need from HBV?",
+        "Superinfection = HDV landing on chronic HBV carriage."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q8",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c12",
+      "question_stem": "A 28-year-old IV drug user has mild fatigue and fluctuating AST/ALT levels over several weeks. Anti-HCV by EIA is positive. Which test confirms active HCV infection and measures the viral load?",
+      "options": [
+        "HCV RNA PCR",
+        "Repeat EIA in 3-5 months",
+        "Liver biopsy",
+        "Anti-HCV IgM assay",
+        "Abdominal ultrasound"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أضداد HCV لا تميز الإصابة الحادة من المزمنة، والفحص المؤكد هو PCR لكشف الحمض النووي الريبي للفيروس وقياس الحمل الفيروسي. إعادة EIA بعد 3-5 أشهر تتعلق بتأخر ظهور الأضداد وليست تأكيداً للإصابة النشطة؛ وخزعة الكبد تحدد الدرجة والمرحلة وليست أول خطوة تشخيصية؛ ولا يوجد فحص IgM معتمد لHCV؛ والإيكو لا يشخص الإصابة الفيروسية أصلاً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "The antibody cannot separate acute from chronic infection — what detects the virus itself?",
+        "PCR detects viral RNA."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q9",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c12",
+      "question_stem": "A treatment-naive patient with chronic hepatitis C, genotype 1, is about to start modern direct-acting antiviral therapy. Which 12-week oral regimen achieves a 99% SVR in genotype 1 patients?",
+      "options": [
+        "Sofosbuvir plus ledipasvir plus ribavirin",
+        "Interferon alpha monotherapy 3x weekly",
+        "Entecavir for 12 weeks",
+        "Lamivudine plus tenofovir",
+        "Monthly HBIG 0.5 ml"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بحسب المحاضرة: 12 أسبوعاً من سوفوسبوفير الفموي مع ليديباسفير مع ريبافيرين تحقق استجابة فيروسية مستديمة بنسبة 99% في النمط الجيني الأول. الإنترفيرون وحده أقل فعالية بكثير؛ وإنتيكافير ولاميفودين وتينوفوفير وHBIG كلها أدوية ومستحضرات تخص فيروس B وليست علاجاً لالتهاب C.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Direct-acting antivirals target HCV polymerase and NS5A.",
+        "The regimen combines sofosbuvir with an NS5A inhibitor plus ribavirin."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q10",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c4",
+      "question_stem": "A patient hospitalized with acute viral hepatitis becomes drowsy with bilateral asterixis; repeat labs show PT 24 s (ref 11-13.5) and creatinine rising from 0.9 to 2.1 mg/dL. What do these findings indicate?",
+      "options": [
+        "Fulminant hepatic disease",
+        "Normal convalescent phase",
+        "Uncomplicated chronic carrier state",
+        "Acute cholecystitis",
+        "Prodromal phase"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تطاول زمن البروثرومبين يعكس اضطراب الوظيفة التركيبية للكبد، وارتفاع الكرياتينين معه يوحي بمرض كبدي صاعق (متلازمة كبدية-كلوية)، والرجفان الأذيالي الثنائي علامة اعتلال دماغي كبدي — أي التهاب كبد صاعق يستدعي العناية المشددة. طور النقاهة يعني تحسن الأعراض وعودة الأنزيمات للطبيعي؛ وحالة الحامل لا يرقان فيها ولا فشل تركيبي؛ والتهاب المرارة لا يفسر الاعتلال الدماغي وتطاول PT؛ والطور البادر يسبق اليرقان ولا يترافق بفشل كبدي.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Asterixis + prolonged PT + rising creatinine = the severe triad.",
+        "Think of encephalopathy, hepatorenal syndrome and bleeding diathesis."
+      ]
+    },
+    {
+      "id": "L9_acute_hepatitis_q11",
+      "lecture_id": "L9_acute_hepatitis",
+      "concept_id": "L9_acute_hepatitis_c13",
+      "question_stem": "A 26-year-old man from an area with poor sanitation presents with a self-limiting acute hepatitis 5 weeks after drinking untreated water. IgM anti-HAV is negative; he has no history of injection drug use, transfusion or sexual risk. Which virus is the most likely cause?",
+      "options": [
+        "Hepatitis E virus (enterically transmitted RNA virus)",
+        "Hepatitis A virus",
+        "Hepatitis B virus",
+        "Hepatitis C virus"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الفيروسات المنقولة فموياً-برازياً هما A وE؛ وبما أن IgM anti-HAV سلبي فقد استُبعد A فيبقى فيروس E (RNA معوي، فترة حضانة 2-9 أسابيع، محدود ذاتياً) وهو الأرجح — ويتأكد التشخيص بHEV RNA في المصل أو الكبد أو البراز أو IgM anti-HEV. أما B فطرق انتقاله حقنية وجنسية وولادية، وC حقني، وكلاهما لا يتفق مع القصة ولا مع غياب عوامل الخطورة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Two hepatitis viruses share the fecal-oral route.",
+        "HAV has already been excluded serologically."
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "L9_acute_hepatitis_case1",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "The Jaundiced Traveler - Acute Hepatitis A",
+      "scenario": "A 22-year-old male university student presents with 10 days of anorexia, nausea and profound malaise, followed 4 days ago by dark urine and progressive yellowing of his eyes. He smokes 10 cigarettes/day but says he can no longer stand the smell of smoke. Three weeks ago he returned from a rural trip where he drank untreated water and ate street food. He denies IV drug use, blood transfusion and sexual risk; he has never received a hepatitis vaccine.",
+      "vignette": {
+        "age": 22,
+        "sex": "male",
+        "chief_complaint": "Nausea, anorexia, fatigue and yellow eyes for 4 days",
+        "history": "10 days of anorexia, nausea, vomiting, altered taste, arthralgias and malaise; aversion to cigarette smoke for 1 week. Dark urine then pale stools over the last 4 days. Mild RUQ discomfort. Rural trip 3 weeks ago with untreated water and street food exposure. No IVDU, no transfusions, no tattoos, no medications, no alcohol.",
+        "vitals": {
+          "bp": "118/74 mmHg",
+          "hr": "98 bpm",
+          "rr": "18 /min",
+          "temp": "37.5 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Low-grade fever, mild dehydration with dry mucous membranes; scleral icterus and mildly yellowish tympanic membranes; jaundiced skin without urticaria; tender diffuse hepatomegaly 3 cm below the costal margin with a firm, sharp, smooth edge; no asterixis, no palmar erythema, no splenomegaly, no ascites.",
+        "labs": [
+          { "name": "AST", "value": "920 U/L (ref 10-40)", "flag": "high" },
+          { "name": "ALT", "value": "1480 U/L (ref 7-56)", "flag": "high" },
+          { "name": "Alkaline phosphatase", "value": "128 U/L (ref 44-147)", "flag": "normal" },
+          { "name": "Total bilirubin", "value": "8.6 mg/dL (ref 0.3-1.2)", "flag": "high" },
+          { "name": "Direct bilirubin", "value": "6.1 mg/dL (ref 0.1-0.3)", "flag": "high" },
+          { "name": "Prothrombin time", "value": "13.0 s (ref 11-13.5)", "flag": "normal" },
+          { "name": "BUN", "value": "15 mg/dL (ref 7-20)", "flag": "normal" },
+          { "name": "Serum creatinine", "value": "0.9 mg/dL (ref 0.6-1.2)", "flag": "normal" },
+          { "name": "Urine bilirubin", "value": "Positive (ref: negative)", "flag": "high" },
+          { "name": "IgM anti-HAV", "value": "Positive (ref: negative)", "flag": "high" },
+          { "name": "HBsAg", "value": "Negative (ref: negative)", "flag": "normal" },
+          { "name": "IgM anti-HBc", "value": "Negative (ref: negative)", "flag": "normal" },
+          { "name": "Anti-HCV", "value": "Negative (ref: negative)", "flag": "normal" }
+        ],
+        "imaging": "Abdominal ultrasound: mildly enlarged liver with normal echotexture; gallbladder and biliary tree normal, no stones, no ductal dilatation."
+      },
+      "steps": [
+        {
+          "id": "L9_acute_hepatitis_case1_s1",
+          "prompt": "At this first visit, before serology returns, what is the most likely clinical diagnosis?",
+          "options": [
+            "Acute viral hepatitis in the icteric phase",
+            "Acute gastroenteritis",
+            "Biliary colic due to cholelithiasis",
+            "Acute pancreatitis",
+            "Peptic ulcer disease"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "القصة نموذجية: طور بادر (فقدان شهية، غثيان، وهن، نفور من دخان السجائر) ثم طور يرقاني (بول داكن ثم براز شاحب ويرقان) مع ضخامة كبدية مؤلمة وارتفاع خلوي للناقلات (ALT أكثر من AST) وبيليروبين بول إيجابي. التهاب المعدة والأمعاء لا يسبب يرقاناً ولا ارتفاع ناقلات؛ والقولنج الصفراوي ألم قولنجي مع ALP مرتفع ونتائج كبد طبيعية غالباً؛ والتهاب البنكرياس ألم شرسوفي نافذ للظهر مع ليباز مرتفع؛ وقرحة المعدة ألم مرتبط بالطعام دون يرقان.",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case1_s2",
+          "prompt": "Which single laboratory result confirms the etiologic diagnosis?",
+          "options": [
+            "IgM anti-HAV positive",
+            "HBsAg positive",
+            "Anti-HCV positive by EIA",
+            "Anti-HDV positive",
+            "HEV RNA positive"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التعرض الفموي-البرازي (مياه غير معالجة وطعام شعبي) قبل 3 أسابيع يتوافق مع فترة حضانة A (2-7 أسابيع)، وIgM anti-HAV هو واسم الإصابة الحادة (إيجابي عند بدء الأعراض ويبقى 3-6 أشهر). HBsAg يخص فيروس B ولا يوجد تعرض حقني أو جنسي؛ وأضداد HCV وHDV لا تناسب القصة؛ وHEV ممكن نظرياً لكن الوبائيات والفحص المتوفر يجعلان A هو المؤكد هنا.",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case1_s3",
+          "prompt": "What is the appropriate management?",
+          "options": [
+            "Supportive care: rest, hydration, adequate nutrition and monitoring",
+            "Interferon alpha 3x weekly subcutaneously",
+            "Entecavir daily",
+            "Sofosbuvir plus velpatasvir for 12 weeks",
+            "Immediate liver transplant evaluation"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "التهاب A مرض خفيف محدود ذاتياً والمعالجة داعمة فقط: راحة، ترطاب وتغذية كافية مع مراقبة علامات الشدة. الإنترفيرون والإنتيكافير علاجات لالتهاب B المزمن، وسوفوسبوفير وفلباتاسفير لالتهاب C — ولا دور لأي منها في A؛ وزرع الكبد ملاذ أخير للمرض الكبدي المتقدم وليس لالتهاب A غير المعقد.",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case1_s4",
+          "prompt": "Two days later the patient becomes drowsy with a flapping tremor of both outstretched hands and gum bleeding; repeat PT is 22 s. What has happened?",
+          "options": [
+            "Fulminant hepatitis with encephalopathy and bleeding diathesis",
+            "Normal convalescent phase",
+            "Progression of cholelithiasis",
+            "Chronic hepatitis A",
+            "Unrelated drug reaction"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "النعاس مع الرجفان الأذيالي الثنائي = اعتلال دماغي كبدي، والنزف اللثوي مع تطاول PT = استعداد نزفي ناقص عوامل التخثر — أي تطور إلى التهاب كبد صاعق يستدعي العناية المشددة والاتصال بمركز زرع. لا يوجد ما يسمى التهاب A مزمن؛ وطور النقاهة هو زوال الأعراض لا تفاقمها؛ والحصى لا تسبب اعتلالاً دماغياً؛ والقصة ليست تحسساً دوائياً.",
+          "xp": 15
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب الكبد A الحاد بعد التعرض الفموي-البرازي خلال سفر. الدروس المستفادة: (1) النفور من دخان السجائر مع الأعراض البادرية ثم البول الداكن واليرقان يشكل التسلسل النموذجي لالتهاب الكبد الانتاني بأطواره الأربعة. (2) نمط الأنزيمات خلوي: ارتفاع ناقلات أمين هائل مع ALT أعلى من AST وبيليروبين بول إيجابي وALP طبيعي تقريباً مع PT طبيعي. (3) IgM anti-HAV يؤكد الإصابة الحادة (يبقى إيجابياً 3-6 أشهر) ثم يليه IgG الدال على المناعة مدى الحياة — ولا يوجد التهاب A مزمن أبداً. (4) المعالجة داعمة، لكن يجب مراقبة علامات الصمود: اضطراب الوعي، الرجفان الأذيالي، تطاول PT، وارتفاع الكرياتينين — فهذه علامات التهاب صاعق تستوجب العناية المشددة.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "L9_acute_hepatitis_case2",
+      "lecture_id": "L9_acute_hepatitis",
+      "title": "The Unvaccinated Nurse - Needle-Stick Acute Hepatitis B",
+      "scenario": "A 27-year-old male nurse, never vaccinated against hepatitis B, sustained a deep needle-stick injury while drawing blood from an HBsAg-positive patient 10 weeks ago; no post-exposure prophylaxis was given at the time. He now presents with 1 week of myalgia, malaise, fatigue, nausea, pruritus and RUQ abdominal pain, and yesterday his wife noticed his eyes looked yellow. He denies alcohol, drugs and medications.",
+      "vignette": {
+        "age": 27,
+        "sex": "male",
+        "chief_complaint": "Malaise, nausea and yellow eyes for 1 week",
+        "history": "Needle-stick injury from an HBsAg-positive patient 10 weeks ago without post-exposure prophylaxis. No IVDU, no blood transfusions, no tattoos, no alcohol, no medications. His wife is vaccinated against HBV.",
+        "vitals": {
+          "bp": "122/78 mmHg",
+          "hr": "88 bpm",
+          "rr": "16 /min",
+          "temp": "37.3 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Scleral icterus; tender hepatomegaly with a firm, sharp, smooth edge; no encephalopathy, no asterixis, no palmar erythema, no ascites.",
+        "labs": [
+          { "name": "AST", "value": "760 U/L (ref 10-40)", "flag": "high" },
+          { "name": "ALT", "value": "1120 U/L (ref 7-56)", "flag": "high" },
+          { "name": "Alkaline phosphatase", "value": "120 U/L (ref 44-147)", "flag": "normal" },
+          { "name": "Total bilirubin", "value": "6.4 mg/dL (ref 0.3-1.2)", "flag": "high" },
+          { "name": "Prothrombin time", "value": "13.2 s (ref 11-13.5)", "flag": "normal" },
+          { "name": "HBsAg", "value": "Positive (ref: negative)", "flag": "high" },
+          { "name": "IgM anti-HBc", "value": "Positive (ref: negative)", "flag": "high" },
+          { "name": "HBeAg", "value": "Positive (ref: negative)", "flag": "high" },
+          { "name": "Anti-HBs", "value": "Negative, <10 mIU/mL (ref >10 = immune)", "flag": "low" },
+          { "name": "HBV DNA (PCR)", "value": "2,400,000 IU/mL (ref: not detected)", "flag": "high" },
+          { "name": "IgM anti-HAV", "value": "Negative (ref: negative)", "flag": "normal" },
+          { "name": "Anti-HCV", "value": "Negative (ref: negative)", "flag": "normal" },
+          { "name": "Anti-HDV", "value": "Negative (ref: negative)", "flag": "normal" }
+        ],
+        "imaging": "Abdominal ultrasound: hepatomegaly with normal biliary tree; no gallstones, no focal lesions."
+      },
+      "steps": [
+        {
+          "id": "L9_acute_hepatitis_case2_s1",
+          "prompt": "What is the most likely diagnosis?",
+          "options": [
+            "Acute hepatitis B infection",
+            "Acute hepatitis A infection",
+            "Acute hepatitis C infection",
+            "Hepatitis D co-infection",
+            "Ischemic hepatitis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "تعرض حقني (وخز إبرة) قبل 10 أسابيع يتوافق تماماً مع فترة حضانة B (30-180 يوماً)، والنتائج تؤكدها: HBsAg إيجابي مع IgM anti-HBc إيجابي (النمط النسيجي المصلي للإصابة الحادة). التهاب A ينتقل فموياً-برازياً وIgM anti-HAV سلبي؛ والتهاب C عادة خفيف وغالباً بلا يرقان وأضداده سالبة؛ ولا دليل مصلياً على D (anti-HDV سلبي)؛ ولا يوجد سياق لنقص التروية (لا هبوط ضغط ولا صدمة).",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case2_s2",
+          "prompt": "Which test most accurately reflects viral replication and infectivity?",
+          "options": [
+            "HBV DNA by PCR",
+            "HBeAg",
+            "Immunoperoxidase staining of liver tissue",
+            "Total bilirubin",
+            "IgG anti-HBc"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الحمض النووي الفيروسي HBV DNA المكتشف بPCR هو أدق واسم للتكاثر الفيروسي لأنه يقيس الحمل الفيروسي مباشرة وكمياً. HBeAg يدل على التكاثر والعدوية لكنه نوعي وليس كمياً؛ وتلوين البيروكسيداز المناعي فحص نسيجي وليس أداة قياس روتينية؛ والبيليروبين مؤشر شدة لا تكاثر؛ وIgG anti-HBc يدل على تعرض سابق فقط.",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case2_s3",
+          "prompt": "What post-exposure measure should have been offered at the time of his needle-stick injury?",
+          "options": [
+            "First dose of HBV vaccine within 48 hours and no later than one week",
+            "Immediate entecavir therapy",
+            "HBIG 0.5 ml monthly for 6 months",
+            "No prophylaxis for a healthy adult",
+            "Weekly HBsAg testing for 6 months"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بحسب بروتوكول المحاضرة: متلقّو وخز الإبرة يجب أن يتلقوا الجرعة الأولى من لقاح B خلال 48 ساعة وبحد أقصى أسبوع — وهذا كان سيحميه كونه غير مطعم. الإنتيكافير علاج للإصابة المزمنة وليس وقاية؛ وجدول HBIG الشهري غير معتمد في المحاضرة؛ وترك غير المطعم دون وقاية خطأ؛ والفحص المتكرر وحده ليس تدبيراً وقائياً.",
+          "xp": 10
+        },
+        {
+          "id": "L9_acute_hepatitis_case2_s4",
+          "prompt": "Without antiviral therapy, what is the most likely outcome of his acute infection?",
+          "options": [
+            "Spontaneous resolution in about 90% of adult acute HBV infections",
+            "Fulminant hepatic failure in most patients",
+            "Chronic infection in more than half of adults",
+            "Immediate need for liver transplantation",
+            "Cirrhosis within one year in all patients"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "90% من البالغين المصابين بالتهاب B الحاد يتعافون تلقائياً بفضل مناعتهم، وأقل من 1% يطورون فشلاً كبدياً صاعقاً، و2-10% فقط يزمنون، ومن هؤلاء يتطور 8-20% للتليف و5-10% لسرطان الكبد مع مرور الوقت — لذا المتابعة التسلسلية للناقلات والمصليات ضرورية، أما التليف خلال سنة في الجميع فغير صحيح، وزرع الكبد ملاذ أخير للمرض المتقدم فقط.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: التهاب الكبد B الحاد بعد إصابة وخز إبرة من مريض HBsAg إيجابي دون تلقي وقاية بعد التعرض. الدروس المستفادة: (1) وخز الإبرة عند غير المطعم يستوجب الجرعة الأولى من اللقاح خلال 48 ساعة وبحد أقصى أسبوع. (2) HBsAg مع IgM anti-HBc يؤكدان الإصابة الحادة، وHBeAg مع الحمض النووي الفيروسي المرتفع يعكسان تكاثراً وعدوية عالية، وHBV DNA بPCR هو أدق واسم للتكاثر الفيروسي. (3) 90% من البالغين يتعافون تلقائياً فالمراقبة أولاً، مع الانتباه لعلامات الصمود والاستمرار المزمن (2-10%). (4) الوقاية هي الأساس: اللقاح بجدول 0-1-6 أشهر يعطي استجابة تتجاوز 90% بعد الجرعة الثالثة، ووليدة الأم المصابة يحصل على اللقاح مع HBIG 0.5 مل خلال 12 ساعة من الولادة.",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

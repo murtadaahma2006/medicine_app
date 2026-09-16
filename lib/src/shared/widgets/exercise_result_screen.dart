@@ -5,6 +5,7 @@ import '../../theme/tokens.dart';
 import 'app_button.dart';
 import 'app_card.dart';
 import 'confetti.dart';
+import 'count_up.dart';
 import 'progress.dart';
 
 /// ─────────────────────────────────────────────────────────────────────
@@ -100,8 +101,8 @@ class ExerciseResultScreen extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    // عدّاد النسبة التصاعدي.
-                    _CountUp(
+                    // عدّاد النسبة التصاعدي — العدّاد الموحد.
+                    CountUp(
                       value: percent,
                       suffix: '%',
                       style: AppType.screenTitle.copyWith(
@@ -112,7 +113,7 @@ class ExerciseResultScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: AppSpacing.xs),
                     // عدّاد الصحيح/الإجمالي.
-                    _CountUp(
+                    CountUp(
                       value: score,
                       prefix: '',
                       suffix: ' من $total',
@@ -181,37 +182,6 @@ class ExerciseResultScreen extends StatelessWidget {
   }
 }
 
-/// عدّاد تصاعدي — من 0 إلى value خلال 900ms بأرقام جدولية.
-class _CountUp extends StatelessWidget {
-  const _CountUp({
-    required this.value,
-    required this.style,
-    this.prefix = '',
-    this.suffix = '',
-  });
-
-  final int value;
-  final TextStyle style;
-  final String prefix;
-  final String suffix;
-
-  @override
-  Widget build(BuildContext context) {
-    if (MediaQuery.disableAnimationsOf(context)) {
-      return Text('$prefix$value$suffix', style: style);
-    }
-    return TweenAnimationBuilder<int>(
-      tween: Tween<int>(begin: 0, end: value),
-      duration: const Duration(milliseconds: 900),
-      curve: AppMotion.ease,
-      builder: (BuildContext context, int v, Widget? _) => Text(
-        '$prefix$v$suffix',
-        textDirection: TextDirection.ltr,
-        style: style,
-      ),
-    );
-  }
-}
 
 /// رقاقة XP ذهبية.
 class _XpChip extends StatelessWidget {
@@ -329,7 +299,7 @@ class ExamResultScreen extends StatelessWidget {
                 size: 170,
                 stroke: 12,
                 color: ringColor,
-                child: _CountUp(
+                child: CountUp(
                   value: totalPercent,
                   suffix: '%',
                   style: AppType.screenTitle.copyWith(

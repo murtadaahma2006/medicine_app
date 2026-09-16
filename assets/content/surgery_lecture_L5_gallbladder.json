@@ -1,0 +1,1641 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "surg_L5_gallbladder",
+    "specialty": "surgery",
+    "title": "Gallbladder II: Cholecystitis, Mirizzi Syndrome, Bile Duct Stones, Cholangitis and Carcinoma",
+    "module": "general_surgery",
+    "system": "gastrointestinal",
+    "source": {
+      "file_name": "GB L5.pdf",
+      "page_count": 15
+    },
+    "tags": [
+      "cholecystitis",
+      "mirizzi syndrome",
+      "choledocholithiasis",
+      "cholangitis",
+      "gallbladder carcinoma",
+      "laparoscopic cholecystectomy",
+      "ercp"
+    ],
+    "order_index": 5,
+    "golden_tip": [
+      "Fever + jaundice + RUQ pain = Charcot triad: ascending cholangitis until proven otherwise. Admit, rehydrate with IV fluids, start IV ceftriaxone and arrange urgent ERCP sphincterotomy for drainage.",
+      "Murphy's sign positive with fever and leukocytosis = acute cholecystitis. Chronic cholecystitis has NO fever and a NEGATIVE Murphy's sign - do not mix the two in the exam.",
+      "Golden period for early laparoscopic cholecystectomy = 2-5 days from onset of symptoms. Outside it: conservative Rx 2-3 days, then cholecystectomy after 6-8 weeks on a fat-free diet. Conversion to open is NOT failure.",
+      "Obstructive LFT pattern of bile duct stones: high bilirubin (mostly direct) and high alkaline phosphatase with normal or insignificant AST/ALT - this separates obstruction from hepatitis.",
+      "Jaundice + RUQ pain + fever with a stone impacted in the cystic duct or gallbladder neck = Mirizzi syndrome (external compression of CHD/CBD); MRCP and ERCP are both diagnostic, and it is also a cause of post-cholecystectomy biliary leak."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "surg_L5_gallbladder_c01",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Acute Cholecystitis: Aetiology, Microbiology and Pathogenesis",
+      "summary_ar": "التهاب المرارة الحاد هو التهاب حاد لجدار المرارة: حصوي في 85-95% من الحالات (حجر منحشر في جيب هارتمان أو ساد للقناة المرارية في 90%) وعديم الحصى في 5-15% (ركود ونقص تروية). الجراثيم بالترتيب: الإشريكية القولونية فالكلبسيلا فالعقدية البرازية فالبرويدات، ثم الكلوستريديا والتيفية وهي غير شائعة لكنها خطيرة. الأسباب الوعوية (سكري، فقر دم منجلي، ضغط مرتفع، أمراض كولاجين) تؤدي إلى خثار الشريان المراري فنقص التروية. وعواقب النوبة: هدواء، أو غرغرينا وموكوسيل وقيح، أو انثقاب، أو التهاب مزمن.",
+      "sections": [
+        {
+          "heading": "Definition and the Calculous-Acalculous Split (85-95% vs 5-15%)",
+          "body_text": "This is the second gallbladder lecture of the course (delivered by Dr Noori Henoon Jasim, FRCS, FACS, FICMS and PhD, United Kingdom, consultant gastrointestinal surgeon and associate professor), covering cholecystitis acute and chronic, postcholecystectomy syndrome, stones in bile ducts, ascending suppurative cholangitis and carcinoma of the gall bladder. **Acute cholecystitis is an acute inflammation of the gallbladder wall**. By frequency the disease splits into two forms: **calculous acute cholecystitis in 85-95% of cases**, in which one or more stones obstruct the cystic duct or lie impacted in Hartmann's pouch, and **acalculous acute cholecystitis in 5-15%**, in which no stone is found and the inflammation is driven by bile stasis, ischemia and bacterial proliferation in a distended, unemptied gallbladder. Acalculous disease classically appears in fasting, critically ill or injured patients (prolonged NPO status, sepsis, burns, major surgery, total parenteral nutrition) whose gallbladder never receives a cholecystokinin stimulus, so the bile thickens, sludges and becomes both chemically irritating and a culture medium. The pathogenesis shared by both forms follows one cascade: obstruction or dysfunction of the cystic duct, then mucus and bile accumulate, the gallbladder distends, intraluminal pressure rises, lymphatic and venous drainage of the wall is compromised, chemical inflammation of the mucosa begins, and bacteria invade, producing suppurative inflammation. If the cystic artery supply is additionally cut off, the wall becomes ischemic and then gangrenous. This cascade explains every clinical finding, investigation result and treatment step in the following concepts: the colicky pain and tender mass of a distended organ, the low-grade fever of a confined bacterial infection, and the need to drain or remove the gallbladder before gangrene or perforation occurs.",
+          "key_points": [
+            "Acute cholecystitis = acute inflammation of the gallbladder wall.",
+            "Calculous form: 85-95% of cases (stone obstructing the cystic duct or impacted in Hartmann's pouch).",
+            "Acalculous form: 5-15% (stasis and ischemia in fasting or critically ill patients).",
+            "Cascade: cystic duct obstruction, distension, rising pressure, wall ischemia, chemical then bacterial inflammation."
+          ],
+          "check": {
+            "prompt": "In what percentage of cases is acute cholecystitis calculous (stone-related)?",
+            "options": [
+              "5-15%",
+              "25-35%",
+              "40-60%",
+              "85-95%",
+              "Almost 100%"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "الشكل الحصوي يمثل 85-95% من حالات التهاب المرارة الحاد، بينما الشكل عديم الحصى (الركودي وناقص التروية) يمثل 5-15% فقط؛ لذلك نبحث عن الحصى أولًا في كل مريض."
+          }
+        },
+        {
+          "heading": "Causative Microorganisms (M.O.) in Order",
+          "body_text": "The organisms responsible for acute cholecystitis, in the order given by the lecture, are: **1- Escherichia coli; 2- Klebsiella; 3- Streptococcus faecalis (the enterococcus); 4- Bacteroides; 5- Clostridia and typhoid, which are uncommon and serious**. The first three are enteric organisms that reach the gallbladder either by reflux up the biliary tree from the duodenum or through the portal venous blood; Bacteroides is the important anaerobe, particularly in severe or gangrenous disease. Clostridia are gas-forming anaerobes capable of producing emphysematous cholecystitis, classically in diabetic patients, and typhoid (Salmonella typhi) is carried chronically in the gallbladder, where the organism survives inside bile and seeds both chronic infection and stone formation; both are uncommon but serious, which is why the lecture singles them out. This microbiology is not academic trivia: it dictates the antibiotic plan of the conservative regimen, namely a third-generation cephalosporin such as **ceftriaxone or cefotaxime, or gentamicin**, with anaerobic cover added whenever Bacteroides or clostridia are suspected in severe or gangrenous disease. A blood culture growing E. coli or Klebsiella in a febrile patient with right upper quadrant pain should always raise the question of the biliary tree as the source.",
+          "key_points": [
+            "Organisms in order: E. coli, Klebsiella, Streptococcus faecalis, Bacteroides, then clostridia and typhoid.",
+            "Clostridia and typhoid are uncommon and serious (gas-forming emphysematous disease in diabetics; chronic typhoid carriage).",
+            "The organism list explains the antibiotic choice: ceftriaxone, cefotaxime or gentamicin."
+          ]
+        },
+        {
+          "heading": "Causes of Acute Cholecystitis and the Ischemic Endpoint",
+          "body_text": "The causes of acute cholecystitis are: **1- Stone in 90% of cases, impacted in Hartmann's pouch or obstructing the cystic duct**; **2- stasis**; **3- pancreatic juice reflux**; **4- a CBD stone**; **5- bacteremia**; and **6- the vascular effect of diabetes mellitus, sickle cell disease, hypertension and collagen disease, producing cystic artery thrombosis and ischemia** of the gallbladder wall. In the calculous 90% the stone physically blocks bile outflow at Hartmann's pouch (the pouch at the gallbladder neck) or within the cystic duct itself, so the gallbladder distends against a closed outlet. Stasis without a stone is the mechanism of acalculous disease described above. Pancreatic juice reflux occurs when pancreatic secretions track back up the common channel into the biliary tree and chemically inflame the gallbladder mucosa. A CBD stone causes obstruction downstream and engages the gallbladder by pressure and infection. Bacteremia seeds the gallbladder wall during systemic infection. The vascular group is the one students forget: the gallbladder is supplied by the cystic artery, effectively an end artery, so diabetic vasculopathy, sickle cell sludging and infarction, hypertensive arteriolar disease and collagen-vascular (vasculitic) injury can thrombose it, producing ischemic, often gangrenous cholecystitis with no stone at all - the classical route to gangrene in elderly diabetic patients.",
+          "key_points": [
+            "Stone causes 90%: impacted in Hartmann's pouch or obstructing the cystic duct.",
+            "Non-stone causes: stasis, pancreatic juice reflux, CBD stone, bacteremia.",
+            "Vascular causes (DM, sickle cell, hypertension, collagen disease) lead to cystic artery thrombosis, ischemia and gangrene."
+          ],
+          "check": {
+            "prompt": "What is the single commonest cause of acute cholecystitis?",
+            "options": [
+              "A stone impacted in Hartmann's pouch or obstructing the cystic duct (90%)",
+              "Stasis of bile within the gallbladder",
+              "Bacteremia from a distant infective source",
+              "Pancreatic juice reflux",
+              "Cystic artery thrombosis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الحصى هي السبب في 90% من الحالات وتنحشر في جيب هارتمان أو تسد القناة المرارية؛ أما الركود وارتجاع العصارة البنكرياسية وتجرثم الدم وخثار الشريان المراري فأسباب أقل شيوعًا."
+          }
+        },
+        {
+          "heading": "Sequelae of an Acute Attack",
+          "body_text": "Every attack of acute cholecystitis can end in one of four ways - the four sequelae of the attack. **1- Resolution**: the impacted stone disimpacts, drainage of the gallbladder resumes and the stone slips back into the body of the gallbladder, so the obstruction, distension and inflammation settle; this is the outcome in about 90% of conservatively treated attacks and is the reason a 2-3 day conservative trial is legitimate. **2- The impacted stone persists**, in which case continuing obstruction and inflammation progress to **gangrene** of the ischemic wall (especially in diabetics and the elderly), to **mucocele** (a chronically obstructed gallbladder distended with clear mucus once infection has been suppressed) or to **empyema** (the gallbladder filled with pus, the abscess of the gallbladder, giving high fever and a toxic patient). **3- Perforation** of the gangrenous wall, which may be walled off as a pericholecystic abscess or may leak freely to produce bile peritonitis, a surgical emergency. **4- Chronic cholecystitis**: repeated attacks heal by fibrosis, producing the thickened, fibrotic, shrunken gallbladder discussed in the next concept. Clinically this list is the justification for reviewing a conservatively managed patient every few hours: failure to improve within the expected 2-3 days signals that the stone remains impacted and that gangrene, empyema or perforation may be developing, at which point laparoscopic cholecystectomy or laparoscopic cholecystostomy must be performed.",
+          "key_points": [
+            "Resolution (disimpaction, drainage, slipping back of the stone) occurs in about 90% of conservative trials.",
+            "Persistent impacted stone leads to gangrene, mucocele or empyema.",
+            "Perforation may produce a walled-off abscess or free bile peritonitis.",
+            "Repeated attacks lead to chronic cholecystitis."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Acute cholecystitis",
+          "definition_ar": "التهاب حاد لجدار المرارة، حصوي في 85-95% من الحالات، يتصف بألم قولنجي وحمّى خفيفة وعلامة مورفي إيجابية."
+        },
+        {
+          "term": "Calculous cholecystitis",
+          "definition_ar": "التهاب المرارة الناتج عن حصى تسد القناة المرارية أو تنحشر في جيب هارتمان، وهو 85-95% من الحالات."
+        },
+        {
+          "term": "Acalculous cholecystitis",
+          "definition_ar": "التهاب المرارة دون حصى (5-15%)، بآلية ركود الصفراء ونقص التروية عند المرضى الحرجين والصائمين طويلًا."
+        },
+        {
+          "term": "Hartmann's pouch",
+          "definition_ar": "انتباغ صغير في عنق المرارة قرب اتصال القناة المرارية، وهو الموقع المعتاد لانحشار الحصى المسبب لالتهاب المرارة الحاد."
+        },
+        {
+          "term": "Cystic artery thrombosis",
+          "definition_ar": "خثار الشريان المراري (شريان نهائي) بسبب السكري أو فقر الدم المنجلي أو ارتفاع الضغط أو أمراض الكولاجين، فيؤدي إلى نقص تروية جدار المرارة وغرغرينتها."
+        },
+        {
+          "term": "Mucocele of the gallbladder",
+          "definition_ar": "انتباج المرارة بمخاط صافٍ نتيجة انسداد مزمن للقناة المرارية دون خمج فعّال."
+        },
+        {
+          "term": "Empyema of the gallbladder",
+          "definition_ar": "امتلاء المرارة بالقيح، أي خراج المرارة، نتيجة استمرار الانسداد مع الخمج الجرثومي، ويعطي حمّى عالية وتسممًا."
+        },
+        {
+          "term": "Bacteremia",
+          "definition_ar": "وجود الجراثيم في الدم، وهي إحدى طرق وصول الجراثيم مثل الإشريكية القولونية إلى جدار المرارة."
+        },
+        {
+          "term": "Pancreatic juice reflux",
+          "definition_ar": "ارتجاع عصارة البنكرياس إلى الشجرة الصفراوية عبر القناة المشتركة فتلتهب بطانة المرارة كيميائيًا."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "surg_L5_gallbladder_c02",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Acute Cholecystitis: Clinical Features, Differential Diagnosis and Investigations",
+      "summary_ar": "صورة التهاب المرارة الحاد السريرية اثنا عشر بندًا: بداية مفاجئة، العمر 30-70 سنة (وفي من تجاوز 60 سنة يشكل 25-35%)، البيض أكثر من السود، وجبة دسمة، ألم قولنجي، غثيان وقيء، حمّى خفيفة، علامة بواس، يرقان أحيانًا، علامة مورفي، إيلام وتصلب، وكتلة مؤلمة مجسوسة. والتشخيص التفريقي تسعة أمراض، والتأكيد بالأمواج فوق الصوتية (انتباج المرارة وسماكة الجدار وسائل محيط وحصى) مع تعداد كريات بيض مرتفع ووظائف كبد طبيعية تقريبًا.",
+      "sections": [
+        {
+          "heading": "Clinical Features - the Twelve Classic Findings",
+          "body_text": "The clinical features of acute cholecystitis are twelve, and examiners love them as a list. **1- Sudden onset** of symptoms, typically hours after the trigger. **2- Age 30-70 years**; and in patients older than 60 years acute cholecystitis accounts for **25-35%** of acute biliary presentations, so the elderly are over-represented among complicated cases. **3- White Caucasian patients are affected more than Black people**. **4- A heavy fatty meal** is the classical precipitant: fat in the duodenum releases cholecystokinin, which forces the gallbladder to contract against an obstructed cystic duct. **5- Pain that is colicky**, in the right hypochondrium. **6- Nausea and vomiting**. **7- Low-grade fever** - in the lecture's own case scenario the temperature is 37.8 C. **8- Boas's sign** - referred pain with hyperesthesia of the skin beneath the right scapula, due to irritation of the phrenic nerve supply of the diaphragmatic peritoneum overlying the inflamed gallbladder. **9- Jaundice occasionally**, which should always prompt a search for a coexisting CBD stone or Mirizzi syndrome. **10- Murphy's sign** - the examiner hooks the fingers under the right costal margin and asks the patient to breathe in deeply; the descending, inflamed gallbladder touches the hand and inspiration abruptly stops with pain, and the sign is positive only on the right side. **11- Tenderness and rigidity** (guarding) over the right hypochondrium from localized peritoneal irritation. **12- A palpable tender mass** in a substantial minority of patients, representing the inflamed gallbladder wrapped in adherent omentum - an inflammatory mass that appears together with fever, distinguishing it from a malignant mass. Taken together: sudden right hypochondrial colicky pain after a fatty meal, with nausea, low-grade fever, positive Murphy's sign and tenderness in a middle-aged Caucasian woman is the textbook picture of acute calculous cholecystitis.",
+          "key_points": [
+            "Sudden onset; age 30-70 years; above 60 years the disease makes up 25-35%; Caucasians more than Black patients.",
+            "Heavy fatty meal precipitates the attack (CCK contraction against an obstructed cystic duct).",
+            "Colicky right hypochondrial pain, nausea and vomiting, low-grade fever (37.8 C in the source case).",
+            "Boas's sign = referred hyperesthesia under the right scapula; Murphy's sign = inspiratory arrest under the right costal margin.",
+            "Occasional jaundice - look for a CBD stone or Mirizzi syndrome.",
+            "Tenderness and rigidity; a palpable tender inflammatory mass."
+          ],
+          "check": {
+            "prompt": "During examination of a patient with suspected acute cholecystitis, deep palpation under the right costal margin causes sudden arrest of inspiration with pain. What is this sign called?",
+            "options": [
+              "Boas's sign",
+              "Murphy's sign",
+              "Courvoisier's law",
+              "Charcot's triad",
+              "McBurney's point tenderness"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "علامة مورفي هي توقف الشهيق العميق فجأة بسبب الألم عند جس الربع العلوي الأيمن لنزول المرارة الملتهبة على يد الفاحص؛ أما علامة بواس فهي فرط حساسية جلدية تحت الكتف الأيمن."
+          }
+        },
+        {
+          "heading": "Differential Diagnosis - Nine Mimics of Acute Cholecystitis",
+          "body_text": "Nine conditions must be differentiated from acute cholecystitis, each with a classical clue. **1- Appendicitis**: a high-lying or retrocecal appendix under the right lobe of the liver (or the appendix in a long pregnant uterus) mimics right upper quadrant pain; pain migrating from the umbilicus to the right iliac fossa with McBurney's point tenderness favors appendicitis. **2- Perforated peptic ulcer**: a perforated duodenal ulcer may leak bile-bearing fluid down the right paracolic gutter and produce right-sided signs; a history of epigastric pain and free subdiaphragmatic gas on an erect chest film favor perforation. **3- Acute right pyelonephritis**: fever with rigors, loin (costovertebral angle) tenderness and urinary symptoms with pyuria and bacteriuria favor the kidney. **4- Liver abscess**: swinging fever, tender hepatomegaly and an elevated right diaphragm with a right pleural reaction; imaging settles it. **5- Right lower lobar pneumonia**: basal pneumonia irritating the diaphragm refers pain to the right upper abdomen; respiratory signs and an infiltrate on chest imaging point to the lung. **6- Hepatitis**: viral hepatitis gives tender hepatomegaly with markedly raised transaminases (AST/ALT) rather than an obstructive pattern. **7- Pancreatitis**: epigastric pain boring to the back with raised amylase and lipase; remember that gallstones cause both diseases, so they can coexist in the same patient. **8- Herpes zoster**: dermatomal pain precedes the typical vesicular rash, and the tenderness is in the abdominal wall, not the viscera. **9- Myocardial infarction**: an inferior infarct can present as epigastric or right upper abdominal pain; an ECG is mandatory in atypical abdominal pain in elderly or diabetic patients. The exam skill is pairing each mimic with its discriminator: urinalysis for the kidney, erect chest film for the ulcer and the lung, ECG for the heart, amylase and lipase for the pancreas, LFT pattern for the liver, and ultrasound for the gallbladder.",
+          "key_points": [
+            "DDx (9): appendicitis, perforated peptic ulcer, acute right pyelonephritis, liver abscess, right lower lobar pneumonia, hepatitis, pancreatitis, herpes zoster, myocardial infarction.",
+            "Each mimic has a discriminator: urinalysis, erect chest film, ECG, amylase and lipase, transaminase pattern, dermatomal rash, ultrasound."
+          ]
+        },
+        {
+          "heading": "Diagnosis: Ultrasonography, Liver Function Tests and WBC",
+          "body_text": "The diagnosis of acute cholecystitis rests on three investigations. **1- Ultrasonography is the first-line test** and shows four findings: a **distended gallbladder**, an **increase in wall thickness** from edema, a **pericholecystic fluid collection**, in addition to the **presence of a stone**, usually impacted at the neck or in the cystic duct. Ultrasound is inexpensive, bedside, radiation-free and interrogates the liver, bile ducts and pancreas in the same sitting, which is exactly why it is the correct next imaging test in the lecture's own case scenario. **2- Liver function tests (LFT)**: mostly no changes, or sometimes only little changes - significant jaundice or a rising bilirubin and alkaline phosphatase should redirect attention to a CBD stone, cholangitis or Mirizzi syndrome rather than uncomplicated cholecystitis. **3- WBC count: leukocytosis** - in the source case scenario the white cell count was 11000 with normal LFTs, a typical borderline-elevated laboratory picture. In practice amylase and lipase may be added to exclude concurrent gallstone pancreatitis, but the single best first investigation in suspected acute cholecystitis remains ultrasonography; MRCP is reserved for suspected duct stones, and ERCP is a therapeutic tool, not a screening test.",
+          "key_points": [
+            "US features (4): distended gallbladder, increased wall thickness, pericholecystic fluid collection, stone.",
+            "LFT: mostly no or little changes; derangement suggests CBD stone, cholangitis or Mirizzi syndrome.",
+            "WBC: leukocytosis (source scenario 11000 with normal LFT).",
+            "US is the first-line imaging test; MRCP for duct stones; ERCP is therapeutic."
+          ],
+          "check": {
+            "prompt": "Which single investigation is the correct first-line test to confirm suspected acute cholecystitis?",
+            "options": [
+              "Abdominal ultrasonography",
+              "MRCP",
+              "ERCP",
+              "CT scan of the abdomen",
+              "Percutaneous transhepatic cholangiography"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الأمواج فوق الصوتية هي فحص الخط الأول لأنها تُظهر انتباج المرارة وسماكة الجدار والسائل المحيط والحصى في جلسة واحدة؛ أما التنظير الصفراوي فهو فحص وعلاج وليس فحص فرز أولي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Murphy's sign",
+          "definition_ar": "توقف الشهيق العميق فجأة بسبب الألم عند جس الربع العلوي الأيمن؛ علامة مميزة لالتهاب المرارة الحاد وتكون موجبة في الجهة اليمنى فقط."
+        },
+        {
+          "term": "Boas's sign",
+          "definition_ar": "ألم رجيع مع فرط حساسية في الجلد تحت الكتف الأيمن نتيجة تهيّج العصب الحجابي في التهاب المرارة الحاد."
+        },
+        {
+          "term": "Low-grade fever",
+          "definition_ar": "حمّى خفيفة نحو 37.8 درجة مئوية تقابل خمجًا موضعًا داخل المرارة الملتهبة، وهي جزء من الصورة السريرية."
+        },
+        {
+          "term": "Leukocytosis",
+          "definition_ar": "ارتفاع تعداد الكريات البيض مثل 11000 في التهاب المرارة الحاد، وهو دليل مخبري داعم لوجود التهاب حاد."
+        },
+        {
+          "term": "Pericholecystic fluid",
+          "definition_ar": "سائل حول المرارة يُرى بالأمواج فوق الصوتية ويدل على التهاب موضع مع نضح مصلي من الجدار الملتهب."
+        },
+        {
+          "term": "Palpable tender mass",
+          "definition_ar": "كتلة مؤلمة مجسوسة في الربع العلوي الأيمن تمثل المرارة الملتهبة محاطة بالثرب؛ ظهورها مع حمّى يدل على منشأ التهابي."
+        },
+        {
+          "term": "Right hypochondrium",
+          "definition_ar": "الربع العلوي الأيمن من البطن، وهو موضع أمراض المرارة والكبد والقنوات الصفراوية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "surg_L5_gallbladder_c03",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Acute Cholecystitis: Treatment and the Laparoscopic Approach",
+      "summary_ar": "العلاج يبدأ تحفظيًا لمدة 2-3 أيام (صيام مع أنبوب أنفي معري، وسيفترياكسون أو سيفوتاكسيم أو جنتامايسين، ومسكن مع مضاد تشنج)، فيهدوء 90% من الحالات ثم يُستأصل بالتنظير بعد 6-8 أسابيع مع حمية خالية من الدهون، ومن لا يتحسن فالاستئصار أو الجلبي المراري بالتنظير. الفترة الذهبية للاستئصار المبكر هي 2-5 أيام من بدء الأعراض، والجراحة المفتوحة نادرة اليوم، ونسبة التحويل أعلى في الحاد لكن التحويل ليس فشلًا. وأثناء الجراحة يجب تحقيق المنظر الحرج للأمان قبل وضع القصاصات.",
+      "sections": [
+        {
+          "heading": "Conservative Treatment for 2-3 Days and the 90% Rule",
+          "body_text": "The treatment of acute cholecystitis begins with a structured conservative regimen lasting **2-3 days**, during which **90% of cases subside**. Its three components are: **1- an NG (nasogastric) tube and nil per mouth (NPO)** - resting the gut and the gallbladder, preventing further cholecystokinin-driven contraction against the obstructed duct and managing the ileus and vomiting; **2- antibiotics**, for example **ceftriaxone, cefotaxime or gentamicin**, chosen to cover the E. coli, Klebsiella, Streptococcus faecalis and Bacteroides listed in the microbiology section; and **3- analgesia and an antispasmodic** to break the colicky pain of cystic duct obstruction. **If the patient improves**, the attack has resolved by disimpaction of the stone, and an **interval (delayed) laparoscopic cholecystectomy is performed after 6-8 weeks**; during this waiting period **the patient should be on a fat-free diet**, so that no fatty meal triggers a fresh attack of gallbladder contraction while the inflamed wall settles. **If the patient does not improve during or after these 2-3 days of conservative treatment**, the stone is still impacted and the gallbladder is heading toward gangrene or empyema, so the options become **laparoscopic cholecystectomy or laparoscopic cholecystostomy** - drainage of the gallbladder through a tube placed laparoscopically, chosen for the very unfit or high-risk patient in whom a full inflammatory dissection is judged too dangerous. Conservative treatment is therefore not passive waiting: it is a 2-3 day therapeutic trial with a predefined exit plan.",
+          "key_points": [
+            "Conservative Rx for 2-3 days: NG tube and NPO; antibiotics (ceftriaxone, cefotaxime or gentamicin); analgesia and antispasmodic.",
+            "90% of attacks subside on this regimen.",
+            "Improved: interval laparoscopic cholecystectomy at 6-8 weeks with a fat-free diet in the interim.",
+            "Not improved during or after the 2-3 days: laparoscopic cholecystectomy or laparoscopic cholecystostomy."
+          ]
+        },
+        {
+          "heading": "Early Laparoscopic Cholecystectomy and the Golden Period (2-5 Days)",
+          "body_text": "**Early laparoscopic cholecystectomy** is performed when the patient presents **within the golden period of 2-5 days from the onset of symptoms**. Inside this window the gallbladder is edematous and vascular but not yet densely fibrosed, so the tissue planes around the cystic duct and artery can still be developed laparoscopically with an acceptable conversion rate; beyond day 5 the omentum and duodenum become plastered to the gallbladder with organized fibrosis, and early surgery becomes both harder and more dangerous, which is why such patients are sent down the conservative-then-interval pathway. **Nowadays the operation of choice is laparoscopic cholecystectomy, and open cholecystectomy is rarely performed** - reserved for situations where a laparoscopic service is not accessible or when conversion becomes necessary. Students must memorize the lecture's sentence about conversion: **the conversion rate in acute cholecystitis is higher than in elective surgery for other presentations, but conversion is still not a failure of laparoscopic cholecystectomy** - it is a sound safety decision made when the anatomy cannot be identified, when bleeding or injury threatens, or when the critical view of safety cannot be achieved. Converting early to protect the common bile duct is good surgery, not defeat.",
+          "key_points": [
+            "Golden period = 2-5 days from onset of symptoms, for early laparoscopic cholecystectomy.",
+            "Nowadays laparoscopic cholecystectomy is standard; open cholecystectomy is rare (inaccessible laparoscopy or conversion).",
+            "Conversion rate in acute cholecystitis is higher than elective.",
+            "Conversion is NOT failure - it is a safety decision."
+          ],
+          "check": {
+            "prompt": "A patient with acute cholecystitis is reviewed 72 hours (day 3) after onset of symptoms and is stable with improving pain, fit for anesthesia. What is the optimal definitive plan?",
+            "options": [
+              "Proceed with early laparoscopic cholecystectomy now, within the golden period",
+              "Discharge on a fat-free diet and list for elective cholecystectomy in one year",
+              "Prolong conservative treatment for two weeks before review",
+              "Primary open cholecystectomy through a right subcostal incision",
+              "ERCP and sphincterotomy"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "اليوم الثالث يقع ضمن الفترة الذهبية من 2 إلى 5 أيام من بدء الأعراض، والمريض مستقر وقابل للتخدير، فيُجرى الاستئصار المراري بالتنظير مبكرًا، ولا دور للتنظير الصفراوي دون حصى قناة أو يرقان."
+          }
+        },
+        {
+          "heading": "Laparoscopic Cholecystectomy: Calot's Triangle, Critical View of Safety and Ports",
+          "body_text": "The operative anatomy and safety technique of laparoscopic cholecystectomy, as illustrated in the lecture figures: The **anatomical schematic** shows the liver (brown) with the gallbladder/fossa area (green) and highlights two zones - the **hepatocystic triangle**, the larger triangular space, and **Calot's triangle**, the smaller, more specific triangle located within the hepatocystic triangle, **bounded by the cystic duct, the cystic artery and the common hepatic duct**. The **intraoperative laparoscopic view of the hilar region** identifies the following structures: the **base of liver segment 4** visible superiorly; the **cystic artery (CA)** branching towards the gallbladder; the **node of Lund (LN)**, the cystic lymph node; the **cystic duct (CD)** leading from the gallbladder; the **hepatic artery proper (HAP)**, the main arterial supply to the liver; and the **common bile duct (CBD)**, the main biliary drainage tube. The **critical view of safety** during dissection is achieved when the **hepatocystic triangle has been cleared of fat and fibrous tissue and only two structures are seen entering the gallbladder: the cystic duct and the cystic artery**, with the node of Lund also clearly visible in the dissected field. Only when this window is open - the gallbladder hanging from the cystic duct and artery alone, the base of segment 4 seen above and the common hepatic duct and CBD out of harm's way - may the clips be placed and the duct and artery divided; clipping any structure that has not been conclusively identified is how CBD injuries happen. The standard **four-port placement** seen in the clinical photograph of the abdomen: a **10 mm access port at or near the umbilicus** for the camera; a **10 mm right hand working port** in the upper right quadrant/epigastrium; a **5 mm left hand working port** in the left upper quadrant/epigastrium; and a **5 mm port for the fundus grasper** in the right flank/subcostal area, used to grasp the gallbladder fundus and retract it over the liver. The external surgical setup photograph shows the **trocars inserted** into the abdomen through these port sites, and the surgeon positioning photograph shows the **primary surgeon standing on the patient's left side**, holding the laparoscopic instruments in both hands while looking at the monitor.",
+          "key_points": [
+            "Calot's triangle lies within the larger hepatocystic triangle and is bounded by the cystic duct, cystic artery and common hepatic duct.",
+            "Laparoscopic landmarks: segment 4 base, cystic artery, node of Lund, cystic duct, hepatic artery proper, CBD.",
+            "Critical view of safety = hepatocystic triangle cleared of fat and fibrous tissue; only CD and CA enter the gallbladder before clipping.",
+            "Ports: 10 mm umbilical camera port, 10 mm right hand working port, 5 mm left hand working port, 5 mm fundus grasper port; surgeon stands on the patient's left."
+          ],
+          "check": {
+            "prompt": "During laparoscopic cholecystectomy, when has the surgeon achieved the critical view of safety?",
+            "options": [
+              "When the gallbladder fundus is fully mobilized off the liver bed",
+              "When the hepatocystic triangle is cleared of fat and fibrous tissue and only the cystic duct and cystic artery are seen entering the gallbladder",
+              "When the common bile duct is formally opened and drained",
+              "When the cystic artery is clipped before the cystic duct",
+              "When the node of Lund is sent for frozen section"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المنظر الحرج للأمان يعني تنظيف المثلث الكبدي المراري من الشحم والنسيج الليفي بحيث يظهر هيكلان فقط داخلان إلى المرارة هما القناة المرارية والشريان المراري، وعندها فقط تُوضع القصاصات ويُقطع بأمان بعيدًا عن القناة الجامعة."
+          }
+        },
+        {
+          "heading": "Choosing the Operation - a Practical Decision Pathway",
+          "body_text": "Putting the treatment options into one decision pathway for exams and ward rounds: **A fit patient seen within the golden period (2-5 days from onset)** goes for **early laparoscopic cholecystectomy** after a short period of resuscitation, analgesia and antibiotics - the modern standard. **A patient seen after the golden period** is started on the conservative regimen (NG tube, NPO, ceftriaxone/cefotaxime/gentamicin, analgesia and antispasmodic) for **2-3 days**; if the expected resolution follows, the gallbladder is removed electively **6-8 weeks later**, with the patient maintained on a **fat-free diet** in the interval. **A patient who fails to improve during or after the 2-3 conservative days** needs the gallbladder dealt with during the same admission: **laparoscopic cholecystectomy**, or **laparoscopic cholecystostomy** if the patient is too unfit for a full dissection or the anatomy is too hostile - the drain can later be removed once the tract matures and the acute illness has settled. In every branch the operation of choice is laparoscopic; **open cholecystectomy is the fallback** for non-accessible laparoscopy or for conversion, and a conversion, as stressed before, is a safety decision rather than a failure.",
+          "key_points": [
+            "Within the golden period: early laparoscopic cholecystectomy. Outside it: conservative trial for 2-3 days.",
+            "Conservative success: interval laparoscopic cholecystectomy at 6-8 weeks on a fat-free diet.",
+            "Conservative failure: same-admission laparoscopic cholecystectomy or laparoscopic cholecystostomy.",
+            "Laparoscopic is the default; open is for non-accessible laparoscopy or conversion."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Golden period",
+          "definition_ar": "الفترة الذهبية من 2 إلى 5 أيام من بدء أعراض التهاب المرارة الحاد التي يُجرى خلالها الاستئصار المراري المبكر بالتنظير قبل أن يتحول الالتهاب إلى تليف كثيف."
+        },
+        {
+          "term": "Nil per mouth (NPO)",
+          "definition_ar": "إيقاف كل شيء عن طريق الفم مع أنبوب أنفي معدي عند الحاجة؛ وهو الجزء الأول من العلاج التحفظي لالتهاب المرارة الحاد."
+        },
+        {
+          "term": "Interval cholecystectomy",
+          "definition_ar": "استئصال المرارة المؤجل 6-8 أسابيع بعد هدوء نوبة التهاب حاد بالعلاج التحفظي، مع حمية خالية من الدهون خلال فترة الانتظار."
+        },
+        {
+          "term": "Critical view of safety",
+          "definition_ar": "المنظر الحرج للأمان أثناء استئصال المرارة بالتنظير: تنظيف المثلث الكبدي المراري بحيث لا يبقى داخلًا إلى المرارة سوى القناة المرارية والشريان المراري قبل وضع القصاصات."
+        },
+        {
+          "term": "Calot's triangle",
+          "definition_ar": "مثلث كالو، وهي مساحة أصغر داخل المثلث الكبدي المراري، يحدّها القناة المرارية والشريان المراري والقناة الكبدية الجامعة."
+        },
+        {
+          "term": "Node of Lund",
+          "definition_ar": "العقدة اللمفية المرارية أو عقدة لند عند تقاطع القناة المرارية؛ تظهر عند تنظيف المثلث وتُستأصل مع العينة."
+        },
+        {
+          "term": "Laparoscopic cholecystostomy",
+          "definition_ar": "فتح وتصريف المرارة بالتنظير عبر قسطرة، وهو خيار المريض عالي الخطورة أو من فشل العلاج التحفظي."
+        },
+        {
+          "term": "Conversion",
+          "definition_ar": "التحول من التنظير إلى الجراحة المفتوحة؛ نسبته أعلى في الحالات الحادة لكنه ليس فشلًا بل قرار سلامة لحماية القناة الجامعة."
+        },
+        {
+          "term": "Fat-free diet",
+          "definition_ar": "حمية خالية من الدهون تُتبع خلال الأسابيع الستة إلى الثمانية الفاصلة بين هدوء الالتهاب والاستئصار المؤجل لمنع نوبة انقباض جديدة."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "surg_L5_gallbladder_c04",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Chronic Cholecystitis and Saint Triad",
+      "summary_ar": "التهاب المرارة المزمن: جدار ليفي سميك في مرارة متقلصة تحوي حصى؛ نوبات ألم يمينية تحت الضلع متغيرة الشدة والفاصل تدوم كل منها 3-12 ساعة، مع عسر هضم انتفاخي (امتلاء وتجشؤ وحرقة وتطبل) وغثيان، دون حمّى ودون علامة مورفي موجبة. الأمواج فوق الصوتية تُظهر تقلص المرارة رغم صيام 8 ساعات مع سماكة الجدار والحصى، والتحاليل طبيعية، والعلاج استئصار المرارة بالتنظير. ومثلث سانت (حصى المرارة مع انتباغات القولون مع فتق حجابي) يذكّر بتحديد المسبب الحقيقي لعسر الهضم قبل الجراحة.",
+      "sections": [
+        {
+          "heading": "Pathology and Symptom Profile of Chronic Cholecystitis",
+          "body_text": "Chronic cholecystitis is the long-run counterpart of the acute disease: repeated attacks of inflammation heal by fibrosis, leaving **a thickened, fibrotic wall with overall shrinkage (contraction) of the gallbladder, containing stone or stones**. Its symptom profile differs sharply from the acute form. **1- Pain: episodes of right hypochondrial pain of varying severity and interval, each lasting 3-12 hours**, characteristically after meals; the attacks are milder and less frequent than an acute attack, and by the time the patient reaches the surgeon the findings may have melted away. **2- Flatulent dyspepsia**: fullness after meals, belching, heartburn and abdominal distension - the fat-intolerance complex. **3- Nausea and vomiting**. **4- No fever** - chronic cholecystitis is not active infective inflammation, so the patient is afebrile. **5- Negative Murphy's sign** - the gallbladder wall is not acutely inflamed enough to stop inspiration. This fever-free, Murphy-negative, recurring-episode picture is the exam discriminator from acute cholecystitis, in which fever and a positive Murphy's sign are the rule. The classical trap is to dismiss these patients as simple dyspepsia; the correct habit is to send every patient with recurrent biliary-type dyspepsia for an ultrasound, because the stones are still present, still symptomatic and still capable of producing acute cholecystitis, pancreatitis or a CBD stone.",
+          "key_points": [
+            "Chronic cholecystitis = thickened fibrotic wall of a shrunken gallbladder with stone(s).",
+            "Recurrent right hypochondrial pain episodes of varying severity and interval, each 3-12 hours, after meals.",
+            "Flatulent dyspepsia: fullness, belching, heartburn, distension; plus nausea and vomiting.",
+            "NO fever and NEGATIVE Murphy's sign - the contrast with acute cholecystitis."
+          ],
+          "check": {
+            "prompt": "Which pair of findings most clearly distinguishes chronic from acute cholecystitis?",
+            "options": [
+              "Absence of fever with a negative Murphy's sign",
+              "Right hypochondrial pain after fatty meals",
+              "Presence of gallstones on ultrasound",
+              "Nausea and vomiting during attacks",
+              "Female sex and age above 40 years"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الفرق المفصلي أن الالتهاب المزمن لا يترافق مع حمّى ولا مع علامة مورفي موجبة لأن الالتهاب ليس حادًا فعّالًا، بينما الألم والحصى والغثيان مشتركة بين الشكلين."
+          }
+        },
+        {
+          "heading": "Investigations and Treatment of Chronic Cholecystitis",
+          "body_text": "The investigations of chronic cholecystitis are three. **1- Ultrasonography** shows **shrinkage of the gallbladder in spite of fasting for 8 hours**, together with a **thick gallbladder wall** and the **presence of stones**. The fasting detail is the sonographic key: a normal gallbladder, given 8 hours without food, should be full and distended with stored bile; a gallbladder that remains contracted in spite of an 8-hour fast has a fibrotic, non-compliant wall that cannot accommodate bile - that is chronic cholecystitis in a single image. **2- A normal WBC** count, because there is no active infection. **3- Normal liver function tests (LFT)**, because the disease is confined to the gallbladder; deranged LFTs would again point to a CBD stone or cholangitis rather than to chronic cholecystitis. The treatment of chronic cholecystitis is **laparoscopic cholecystectomy** - the stones are symptomatic and the attacks recur, and an elective operation on a chronically inflamed but quiescent gallbladder is far easier and safer than operating in the heat of an acute attack. There is no role for expectant management in a fit symptomatic patient, because delaying surgery only invites one of the acute complications - acute cholecystitis, empyema, pancreatitis or a migrated duct stone.",
+          "key_points": [
+            "US: shrunken gallbladder in spite of 8 hours of fasting + thick wall + stones.",
+            "Normal WBC and normal LFT.",
+            "Treatment: elective laparoscopic cholecystectomy."
+          ]
+        },
+        {
+          "heading": "Saint Triad - Gallstones, Diverticulosis and Hiatus Hernia",
+          "body_text": "**Saint triad** is the association of three causes of dyspepsia in the same patient: **1- gallstone or gallstones; 2- diverticulosis (of the colon); 3- hiatus hernia**. The lecture's warning follows directly: **it is important to find which one is the cause of the dyspepsia**, because all three produce nearly identical upper abdominal symptoms - fullness, belching, heartburn and post-prandial discomfort. If the wrong culprit is blamed, the patient undergoes cholecystectomy (or hernia repair) and returns with the same dyspepsia - one of the recognized roads into post-cholecystectomy syndrome, in which 15% of cholecystectomies fail to relieve symptoms, with Saint's triad listed first among its causes. The workup is therefore deliberate: an ultrasound documents the stones, endoscopy or a barium swallow evaluates the hiatus hernia, and a colon study assesses the diverticulosis, after which the symptom timeline and the food triggers are matched to the offending organ before any operation is offered. Saint triad is a favorite exam association (named after the Irish surgeon C.F.M. Saint) and it links this concept to the complications concept: it is simultaneously a differential diagnosis of gallbladder-type dyspepsia and the leading listed cause of persistent symptoms after the gallbladder has been removed.",
+          "key_points": [
+            "Saint triad = gallstones + diverticulosis + hiatus hernia.",
+            "All three cause dyspepsia; identify the true culprit before operating.",
+            "Unrecognized Saint triad is the first listed cause of post-cholecystectomy syndrome."
+          ],
+          "check": {
+            "prompt": "Which triplet makes up Saint triad?",
+            "options": [
+              "Gallstones, diverticulosis and hiatus hernia",
+              "Gallstones, diabetes and sickle cell anaemia",
+              "Fever, jaundice and right upper quadrant pain",
+              "Cholecystitis, pancreatitis and cholangitis",
+              "Gallbladder cancer, liver cyst and colonic polyp"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مثلث سانت هو حصى المرارة مع انتباغات القولون مع الفتق الحجابي؛ وهي ثلاثة أسباب شائعة لعسر الهضم في المريض نفسه، لذا يجب تحديد المسبب الفعلي قبل الجراحة."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Chronic cholecystitis",
+          "definition_ar": "التهاب مزمن للمرارة يترك جدارًا ليفيًا سميكًا ومرارة متقلصة تحوي حصى، مع نوبات ألم متكررة دون حمّى."
+        },
+        {
+          "term": "Flatulent dyspepsia",
+          "definition_ar": "عسر هضم انتفاخي: امتلاء بعد الأكل وتجشؤ وحرقة فم المعدة وتطبل البطن؛ من الأعراض الكلاسيكية لالتهاب المرارة المزمن."
+        },
+        {
+          "term": "Saint triad",
+          "definition_ar": "ثلاثية سانت: حصى المرارة مع انتباغات القولون مع فتق الفرجة الحجابية في المريض نفسه؛ أهم أسباب عسر الهضم المشترك."
+        },
+        {
+          "term": "Shrunken gallbladder",
+          "definition_ar": "مرارة متليفة متقلصة الحجم رغم صيام 8 ساعات، وهي علامة صوتية مميزة لالتهاب المرارة المزمن."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "surg_L5_gallbladder_c05",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Mirizzi Syndrome, Post-Cholecystectomy Complications and Indications for Cholecystectomy",
+      "summary_ar": "متلازمة ميريزي: حجر منحشر في القناة المرارية أو عنق المرارة يضغط القناة الكبدية الجامعة أو الجامعة للصفراء فيسبب انسدادًا ويرقانًا (أنواع من الأول إلى الخامس)، وأعراضها يرقان وألم وحمّى، وتشخيصها بالتحاليل والأمواج والـMRCP والـERCP وكلاهما تشخيصي، وعلاجها استئصار المرارة مع أو بدون استكشاف القناة الجامعة وإصلاحها. مضاعفات استئصال المرارة: نزف ويرقان وإصابة الأعضاء المجاورة وتسرب صفراوي (قصاصات زاحلة أو قناة إضافية أو إصابة القناة الجامعة ونقص ترويتها أو متلازمة ميريزي) ومتلازمة ما بعد الاستئصار التي لا تخفف أعراض 15% بسبب سبعة أسباب. ودواعي الاستئصار: حصى عرضية، أو صامتة مع سكري أو فقر دم منجلي، أو وقائي جدلي في جراحة البدانة المفرطة، أو سرطان المرارة مع استئصار إسفيني لفراش الكبد.",
+      "sections": [
+        {
+          "heading": "Mirizzi Syndrome - Definition, Types and Clinical Features",
+          "body_text": "**Mirizzi syndrome (also spelled Mirrizi)** is a rare condition in which **a gallstone impacted in the cystic duct or in the neck of the gallbladder causes compression of the common hepatic duct (CHD) or the common bile duct (CBD), resulting in CBD obstruction and jaundice**. The obstruction is extrinsic - the stone itself never leaves the cystic duct, but together with the surrounding inflammation it presses on the adjacent duct, which runs close and parallel to the cystic duct within the hepatocystic triangle. The lecture classifies the syndrome into **types I, II, III, IV and V, as illustrated in the photo**; because that figure carries no extracted text, the standard Csendes classification is given here for completeness: **Type I** - simple external compression of the CHD or CBD by the impacted stone with pericholecystic inflammation, and no fistula (the commonest type); **Type II** - a cholecystocholedochal fistula has formed as the stone erodes through, involving less than one-third of the bile duct circumference; **Type III** - the fistula involves up to two-thirds of the duct wall; **Type IV** - complete circumferential destruction of the bile duct wall; **Type V** - any of the above types combined with a cholecystoenteric fistula into the duodenum or colon (subdivided in some series into V-a without and V-b with gallstone ileus). The clinical features (C/F) of Mirizzi syndrome are **jaundice, pain and fever** - the same triad that mimics a CBD stone with cholangitis, which is why imaging of the ducts is mandatory before any operation. Mirizzi matters twice in this lecture: once as a cause of obstructive jaundice in its own right, and once as a mechanical cause of biliary injury and leak during cholecystectomy, because the inflamed, distorted anatomy drags the CBD toward the neck of the gallbladder and invites the surgeon to misidentify and injure it.",
+          "key_points": [
+            "Mirizzi = a stone impacted in the cystic duct or gallbladder neck compressing the CHD or CBD, causing obstruction and jaundice.",
+            "Types I-V: I external compression; II fistula under one-third of the circumference; III up to two-thirds; IV complete destruction; V any type with cholecystoenteric fistula (standard Csendes classification, photo not text-extracted).",
+            "C/F: jaundice, pain and fever.",
+            "A recognized hazard that makes CBD injury more likely during cholecystectomy."
+          ],
+          "check": {
+            "prompt": "What is the essential mechanism of Mirizzi syndrome?",
+            "options": [
+              "A stone impacted in the cystic duct or gallbladder neck externally compressing the CHD or CBD",
+              "A primary stone formed inside the common bile duct",
+              "A stricture of the sphincter of Oddi",
+              "Slipped clips after cholecystectomy",
+              "A cholecystoenteric fistula without any impacted stone"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "جوهر متلازمة ميريزي هو حجر منحشر في القناة المرارية أو عنق المرارة يضغط من الخارج على القناة الكبدية الجامعة أو الجامعة للصفراء فيسبب انسدادًا ويرقانًا دون أن يكون الحجر داخل القناة نفسها."
+          }
+        },
+        {
+          "heading": "Mirizzi Syndrome - Diagnosis and Treatment",
+          "body_text": "The investigations for Mirizzi syndrome: **1- CBC (increased WBC)** - the leukocytosis of the accompanying inflammation - and **LFT changes with increased bilirubin and alkaline phosphatase**, an obstructive (cholestatic) pattern identical to that of a CBD stone. **2- Ultrasonography**, which may show the impacted stone at the neck or cystic duct with dilatation of the biliary tree above the level of compression. **3- MRCP and ERCP - both are diagnostic**: MRCP non-invasively demonstrates the extrinsic compression, the dilated ducts and any fistulous communication; ERCP is simultaneously diagnostic and therapeutic - it outlines the anatomy, can decompress and stent the duct, and thereby guides the surgical plan. The treatment is **cholecystectomy and/or CBD exploration**: **removal of the stone/s from the CBD followed by CBD repair**, and the lecture gives **choledochoduodenostomy** as the example of such a repair - a biliary-enteric anastomosis draining the duct into the duodenum when the duct wall is damaged or must be bypassed. In the higher types (III and IV), the repair may require more complex biliary-enteric reconstruction, and the full extent of the disease is often only established intra-operatively, which is exactly why intraoperative cholangiography is recommended when Mirizzi is suspected: **the anatomy must be defined before any duct is cut**.",
+          "key_points": [
+            "Ix: CBC (raised WBC); LFT with raised bilirubin and alkaline phosphatase; ultrasound; MRCP and ERCP - both diagnostic.",
+            "Rx: cholecystectomy and/or CBD exploration with removal of the stones followed by repair, e.g. choledochoduodenostomy.",
+            "Define the anatomy (cholangiography) before dividing any duct."
+          ]
+        },
+        {
+          "heading": "Post-Cholecystectomy Complications and the Four Causes of Biliary Leak",
+          "body_text": "The post-cholecystectomy complications are five. **1- Bleeding** - from the cystic artery, the liver bed or a port site, presenting as intra-abdominal hematoma or shock in the early postoperative hours. **2- Jaundice** - postoperative jaundice demands a structured search: a retained CBD stone, a clipped or injured CBD, or a leaking duct with bile accumulating under pressure. **3- Adjacent organs injury** - the duodenum, colon, small bowel or liver can be injured during port insertion or dissection. **4- Biliary leak progressing to a fistula**, whose four causes must be memorized in the lecture's order: **(a) slipped clips, or rarely a slipped ligature**, when occlusion of the cystic duct stump fails; **(b) an accessory duct** - a small aberrant duct of the liver bed, never identified and therefore never clipped; **(c) CBD injury or ischemia** - a divided, burned or devascularized duct; and **(d) Mirizzi syndrome**, whose inflamed anatomy predisposes to misidentification and injury of the CBD at operation. A biliary leak presents with bile in the drain, bile-stained ascites, peritonitis, fever and progressive jaundice, and is confirmed and often treated by ERCP (stenting across the leak) with percutaneous drainage of collections. **5- Post-cholecystectomy syndrome**, the persistence or recurrence of symptoms after the gallbladder has been removed, detailed in the next section.",
+          "key_points": [
+            "Complications: bleeding, jaundice, adjacent organs injury, biliary leak leading to fistula, post-cholecystectomy syndrome.",
+            "Biliary leak causes (4): slipped clips or rarely ligature; accessory duct; CBD injury or ischemia; Mirizzi syndrome."
+          ]
+        },
+        {
+          "heading": "Postcholecystectomy (Post-Cholecystectomy) Syndrome - 15% and Its Seven Causes",
+          "body_text": "**Postcholecystectomy syndrome** (the slide heading reads post cholecystostomy syndrome, but it refers to the syndrome after cholecystectomy) means that **15% of cholecystectomies fail to relieve the patient's symptoms**. The seven causes must be memorized: **1- Saint's triad** - the diverticulosis or the hiatus hernia, not the stones, was the true cause of the dyspepsia; **2- pancreatitis**, including gallstone pancreatitis and pancreatic disease; **3- D.U. - duodenal ulcer** - masquerading as biliary pain; **4- a CBD stone**, retained or newly formed; **5- a long cystic duct stump** - a residual stump long enough to form a small symptomatic reservoir (stump syndrome); **6- a CBD stricture**, ischemic or post-injury; and **7- fibrosis of the sphincter of Oddi**, impairing bile drainage at the ampulla. The clinical approach to such a patient is to re-take the history (was the pain ever truly biliary?), repeat LFTs and ultrasound, and progress to MRCP or ERCP to interrogate the ducts. Note how this list unites the whole lecture: Saint triad from the chronic cholecystitis concept, Mirizzi and CBD injury from the complications concept, and the duct-stone pathology of the next concept all reappear here as reasons a cholecystectomy can leave the patient unimproved.",
+          "key_points": [
+            "15% of cholecystectomies fail to relieve symptoms.",
+            "Causes (7): Saint triad; pancreatitis; duodenal ulcer; CBD stone; long cystic duct stump; CBD stricture; fibrosis of the sphincter of Oddi."
+          ],
+          "check": {
+            "prompt": "A patient still has upper abdominal pain 6 months after an uncomplicated cholecystectomy. Which of the following is a recognized cause of post-cholecystectomy syndrome?",
+            "options": [
+              "A long cystic duct stump",
+              "A short cystic duct stump",
+              "Boas's sign",
+              "Right lower lobar pneumonia",
+              "A calcified cystic artery"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "من أسباب متلازمة ما بعد استئصال المرارة: بقايا قناة مرارية طويلة، وحصى أو تضيق في القناة الجامعة، وتليف عاصرة أودي، وتقرح الاثني عشر، والتهاب البنكرياس، وثلاثية سانت؛ أما القناة القصيرة فهي هدف الجراحة السليم."
+          }
+        },
+        {
+          "heading": "Indications for Cholecystectomy",
+          "body_text": "The indications of cholecystectomy in general are four. **1- Symptomatic gallstones**: pain, complications or sequelae attributable to stones justify removing the gallbladder - this covers acute cholecystitis, chronic cholecystitis and recurrent biliary colic. **2- Asymptomatic gallstones with diabetes mellitus and sickle cell anaemia**: in these groups the complications of an acute attack are dangerous (diabetics develop gangrenous and emphysematous cholecystitis with silent atypical presentations, and sickle cell patients suffer repeated crises that both mimic and worsen biliary inflammation), so the stones are removed before they become dangerous. **3- Prophylactic cholecystectomy - controversial - as in morbid obesity surgery**: rapid weight loss after bariatric operations precipitates gallstone formation in a substantial fraction of patients, so some surgeons remove the gallbladder concomitantly or plan for it later; because the risk-benefit balance is debated, the lecture explicitly labels this indication controversial. **4- Carcinoma of the gallbladder**, where the operation is necessarily bigger than a simple cholecystectomy: it is **accompanied by a wedge resection of the liver bed** (with excision of the gallbladder liver bed and hilar lymphadenectomy, as detailed in the carcinoma concept). For every other asymptomatic patient with an incidental stone and no risk factors, observation remains the default, because the lifetime risk of developing symptoms is modest.",
+          "key_points": [
+            "1- Symptomatic gallstones.",
+            "2- Asymptomatic gallstones with diabetes mellitus and sickle cell anaemia.",
+            "3- Prophylactic cholecystectomy (controversial), e.g. in morbid obesity surgery.",
+            "4- Gallbladder carcinoma - with wedge resection of the liver bed and hilar lymphadenectomy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Mirizzi syndrome",
+          "definition_ar": "حجر منحشر في القناة المرارية أو عنق المرارة يضغط القناة الكبدية الجامعة أو الجامعة للصفراء مسببًا يرقانًا انسداديًا؛ النوع الأول ضغط خارجي، والأنواع الثاني إلى الرابع ناسور متزايد الاتساع، والخامس مع ناسور مراري معوي."
+        },
+        {
+          "term": "Common hepatic duct (CHD)",
+          "definition_ar": "القناة الكبدية الجامعة التي تجمع قنوات الكبد اليمنى واليسرى قبل اتصالها بالقناة المرارية لتكوين الجامعة للصفراء."
+        },
+        {
+          "term": "Accessory duct",
+          "definition_ar": "قناة صفراوية إضافية صغيرة تصب من فراش الكبد مباشرة في المرارة أو القناة المرارية؛ إن لم تُقصّ تتسبب بتسرب صفراوي بعد الجراحة."
+        },
+        {
+          "term": "Slipped clips",
+          "definition_ar": "قصاصات زاحلة عن جذمور القناة المرارية بعد الجراحة، وهي أشيع أسباب التسرب الصفراوي والناسور الصفراوي."
+        },
+        {
+          "term": "Post-cholecystectomy syndrome",
+          "definition_ar": "استمرار الأعراض بعد استئصال المرارة في نحو 15% من المرضى؛ أسبابها سبعة أبرزها ثلاثية سانت وحصى القناة الجامعة وبقايا قناة مرارية طويلة."
+        },
+        {
+          "term": "Choledochoduodenostomy",
+          "definition_ar": "مفاغرة بين القناة الجامعة للصفراء والاثني عشر لإصلاح القناة أو تجاوز تضيقها، كما في متلازمة ميريزي وبعد استكشاف القناة."
+        },
+        {
+          "term": "Hilar lymphadenectomy",
+          "definition_ar": "استئصال العقد اللمفية البابية (نقرة الكبد)، وهو جزء من جراحة سرطان المرارة."
+        },
+        {
+          "term": "Wedge resection of the liver bed",
+          "definition_ar": "استئصار إسفيني لفراش المرارة في الكبد يرافق استئصال المرارة في سرطانها لضمان هوامش سليمة."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "surg_L5_gallbladder_c06",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Stones in the Bile Ducts (Choledocholithiasis): Obstructive Jaundice, Charcot Triad and Clearance of the Duct",
+      "summary_ar": "حصى القنوات الصفراوية (أولية أو ثانوية لحصى المرارة) تؤدي أولًا إلى يرقان انسدادي ثم إلى التهاب القناة الصفراوية. الأعراض ثالوث شاركو: يرقان متقطع وألم قولنجي وحمّى مع رجفة. مضاعفاتها: التهاب القناة والتهاب البنكرياس والتشمع الصفراوي. التحاليل: ارتفاع البيليروبين والمباشر والفوسفاتاز القلوي مع AST وALT طبيعيين تقريبًا، والأمواج تُظهر اتساع القناة الجامعة، والـMRCP يؤكد الحجر. العلاج: تنظير القنوات مع قطع العاصرة، وعند الفشل فتح القناة الجامعة فوق الاثني عشري مع أنبوب T أو مفاغرة قناة-اثني عشر، أو قطع العاصرة عبر الاثني عشر مع استخراج الحجر.",
+      "sections": [
+        {
+          "heading": "Primary and Secondary Duct Stones and Their Consequences",
+          "body_text": "**Stones in the bile ducts lead to obstructive jaundice firstly** - that is the opening sentence of the lecture and the key to the whole topic. Duct stones are **either primary or secondary to gallstones**: **primary stones** form within the bile ducts themselves, typically brown pigment stones growing in a duct that is dilated, strictured or stagnant, often with bacterial beta-glucuronidase activity deconjugating bilirubin; **secondary stones**, the commoner variety, are stones that formed in the gallbladder and migrated through the cystic duct into the common bile duct - they are the reason every jaundiced gallstone patient must have the duct imaged. The two consequences are **obstructive jaundice** (the stone blocks bile outflow, conjugated bilirubin regurgitates into the blood, and the patient turns yellow with dark urine and pale stools) **and cholangitis** (infected, stagnant bile behind the obstruction - the emergency detailed in the next concept). The obstruction of a duct stone is characteristically **intermittent**, because the stone can disimpact and reimpact, ball-valving at the ampulla: this explains the classical fluctuating jaundice far better than a fixed malignant stricture ever would, and intermittent jaundice in a gallstone patient should always suggest a duct stone.",
+          "key_points": [
+            "Duct stones lead to obstructive jaundice firstly.",
+            "Primary = formed in the duct (pigment, stasis); secondary = migrated from the gallbladder (commoner).",
+            "Consequences: obstructive jaundice and cholangitis.",
+            "The obstruction is characteristically intermittent (ball-valve at the ampulla)."
+          ]
+        },
+        {
+          "heading": "Symptoms - Charcot Triad - and Complications",
+          "body_text": "The symptoms of bile duct stones are three, and together they make up the classical **Charcot triad**: **1- jaundice, mostly intermittent**; **2- colicky pain**, as the duct distends and strains against the obstructing stone; and **3- fever and rigors**, bacteria proliferating in the stagnant bile entering the bloodstream - a rigor is the classical shaking chill of bacteremia. **Charcot triad means the duct stone has already complicated into cholangitis until proven otherwise**, and its completeness is a marker of severity. The three complications of duct stones are: **1- cholangitis**, which may progress to suppurative ascending cholangitis with septicemia; **2- pancreatitis**, when a small stone migrates further down and impacts at the ampulla of Vater, obstructing the pancreatic duct - gallstone pancreatitis; and **3- biliary cirrhosis**, the end result of long-standing untreated obstruction: retained bile inflames and fibroses the intrahepatic ducts and the liver parenchyma, with portal hypertension following after months to years. This complication trio explains why a duct stone is never simply observed: it must be extracted, by ERCP first and by surgery if ERCP fails.",
+          "key_points": [
+            "Charcot triad: intermittent jaundice + colicky pain + fever and rigors.",
+            "Complications: cholangitis, pancreatitis, biliary cirrhosis."
+          ],
+          "check": {
+            "prompt": "Which triad is classically produced by a stone in the common bile duct with infected stagnant bile?",
+            "options": [
+              "Charcot triad: jaundice, colicky pain, fever and rigors",
+              "Saint triad: gallstones, diverticulosis, hiatus hernia",
+              "Boas triad: scapular pain, fever, mass",
+              "Csendes triad: compression, fistula, stricture",
+              "Murphy triad: tenderness, rigidity, leukocytosis"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "ثالوث شاركو هو يرقان متقطع غالبًا مع ألم قولنجي مع حمّى ورجفة؛ ووجوده يعني أن حصى القناة الجامعة قد تطورت إلى التهاب القناة الصفراوية ويستدعي تدخلًا عاجلًا."
+          }
+        },
+        {
+          "heading": "Diagnosis - the Obstructive LFT Pattern, Ultrasound and MRCP",
+          "body_text": "The diagnosis of bile duct stones rests on three steps, and the LFT pattern is the exam favorite. **1- LFT: an increase in bilirubin, an increase in direct (conjugated) bilirubin and an increase in alkaline phosphatase, with normal or not significant changes in AST or ALT**. This is the pure obstructive (cholestatic) signature: the ductal enzyme alkaline phosphatase rises from pressure on the biliary epithelium, conjugated bilirubin regurgitates into the blood because outflow is blocked, while the hepatocyte transaminases AST and ALT remain essentially normal because the liver cells themselves are intact - contrast this with viral hepatitis, where AST and ALT soar while alkaline phosphatase stays near normal. **2- Ultrasound: showing a dilated CBD** - the duct dilates upstream of the obstruction (a normal CBD is slim, up to about 6 mm in caliber, and dilates progressively with obstruction and mildly with age); ultrasound also documents the dilated intrahepatic ducts and the gallbladder stones of origin, although the distal stone itself is often hidden behind duodenal gas. **3- MRCP to confirm the presence of a stone in the CBD**: it is non-invasive, requires neither contrast nor endoscopy, and is the confirmatory test of choice before any therapeutic ERCP is attempted.",
+          "key_points": [
+            "LFT pattern: raised bilirubin (mostly direct) and raised alkaline phosphatase, with normal or insignificant AST/ALT changes.",
+            "US: dilated CBD (and dilated intrahepatic ducts).",
+            "MRCP: confirms the stone in the CBD before therapy."
+          ]
+        },
+        {
+          "heading": "Treatment - ERCP and Sphincterotomy First; Choledochotomy If Failed",
+          "body_text": "The treatment ladder of bile duct stones has two rungs. **1- ERCP and sphincterotomy** is the first-line treatment: at endoscopy the papilla is identified, the sphincter of Oddi is divided (sphincterotomy), and the stone is extracted with a basket or balloon, or crushed and removed; in the same sitting a stent or nasobiliary drain can be placed to decompress an infected system. **2- If ERCP fails** (a stone too large or impacted, intrahepatic stones, anatomical difficulty, or the service unavailable), **choledochotomy - open or laparoscopic CBD exploration - is performed**, and the lecture divides it into two approaches: **A- supraduodenal choledochotomy**: the duct is opened above the duodenum and the stone or stones removed (with irrigation, scoops or a balloon), after which either **a T-tube** is left draining the duct - allowing the sphincter to settle and providing access for a check cholangiogram before removal - **or a choledochoduodenostomy (choledocho-duodenostomy)** is constructed, draining the duct directly into the duodenum, the drainage option favored for a dilated duct with multiple or primary stones; and **B- transduodenal sphincterotomy and stone extraction**: the duodenum is opened over the ampulla, the sphincter is divided from below and the stone extracted - the approach for a stone impacted at the ampulla itself. Once the duct is cleared, the gallbladder (the factory of secondary stones) is scheduled for laparoscopic cholecystectomy so the duct does not simply refill.",
+          "key_points": [
+            "First-line: ERCP and sphincterotomy with stone extraction.",
+            "If failed: choledochotomy (CBD exploration).",
+            "Supraduodenal route: stone removal then T-tube or choledochoduodenostomy.",
+            "Transduodenal route: sphincterotomy and stone extraction (for impacted distal/ampullary stones)."
+          ],
+          "check": {
+            "prompt": "ERCP and sphincterotomy have failed to clear a large impacted stone in the distal CBD in a fit patient. What is the next step?",
+            "options": [
+              "Surgical CBD exploration by choledochotomy (supraduodenal or transduodenal)",
+              "Repeat ERCP every month until the stone dissolves",
+              "Long-term dissolution therapy with bile salts",
+              "Observation with a fat-free diet only",
+              "Laparoscopic cholecystectomy without duct clearance"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند فشل التنظير العلاجي تُفتح القناة الجامعة جراحيًا: فتح فوق الاثني عشري مع أنبوب T أو مفاغرة قناة واثني عشر، أو قطع العاصرة عبر الاثني عشري لاستخراج الحصى؛ فالذوبان الدوائي والانتظار لا مكان لهما مع انسداد معتمد."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Choledocholithiasis",
+          "definition_ar": "وجود حصى داخل القناة الجامعة للصفراء، أولية أو ثانوية لحصى المرارة، وتؤدي إلى يرقان انسدادي والتهاب القناة الصفراوية."
+        },
+        {
+          "term": "Charcot triad",
+          "definition_ar": "ثالوث شاركو: يرقان متقطع وألم قولنجي وحمّى مع رجفة؛ علامة التهاب القناة الصفراوية بسبب الحصى."
+        },
+        {
+          "term": "ERCP",
+          "definition_ar": "تنظير القنوات الصفراوية والبنكرياس بالرجعي عبر الاثني عشر؛ تشخيصي وعلاجي معًا، ومع قطع العاصرة يستخرج حصى القناة الجامعة ويصرف الشجرة الصفراوية."
+        },
+        {
+          "term": "Sphincterotomy",
+          "definition_ar": "قطع عضلة أودي العاصرة عند الحليمة لفتح الطريق لاستخراج حصى القناة الجامعة، سواء عبر التنظير أو عبر فتح الاثني عشر."
+        },
+        {
+          "term": "MRCP",
+          "definition_ar": "تصوير القنوات الصفراوية والبنكرياس بالرنين المغناطيسي؛ الفحص غير الباضع المؤكد لحصى القناة قبل العلاج."
+        },
+        {
+          "term": "Choledochotomy",
+          "definition_ar": "فتح القناة الجامعة للصفراء جراحيًا لاستكشافها واستخراج الحصى عند فشل التنظير العلاجي."
+        },
+        {
+          "term": "T-tube",
+          "definition_ar": "أنبوب على شكل حرف T يُترك في القناة الجامعة بعد فتحها فوق الاثني عشر لتصريف الصفراء والطمأنة بتصوير القناة قبل سحبه."
+        },
+        {
+          "term": "Choledochoduodenostomy",
+          "definition_ar": "مفاغرة القناة الجامعة مع الاثني عشر؛ خيار تصريف وإصلاح بعد استخراج حصى القناة أو في متلازمة ميريزي."
+        },
+        {
+          "term": "Obstructive jaundice",
+          "definition_ar": "يرقان انسدادي: ارتفاع البيليروبين المباشر والفوسفاتاز القلوي مع إنزيمات خلوية طبيعية تقريبًا، مع بول غامق وبراز فاتح."
+        },
+        {
+          "term": "Biliary cirrhosis",
+          "definition_ar": "تشمع صفراوي ناتج عن انسداد صفراوي مزمن غير معالج؛ يليف نبيج الكبد وترتفع الضغوط البابية."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    },
+    {
+      "id": "surg_L5_gallbladder_c07",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Ascending Suppurative Cholangitis and Carcinoma of the Gallbladder",
+      "summary_ar": "التهاب القناة الصفراوية الصاعد القيحي هو خمج جرثومي للشجرة الصفراوية بسبب حصى القناة الجامعة؛ ثالوث شاركو: حمّى ورجفة، يرقان خفيف متقطع، ومغص صفراوي مع تضخم كبد مؤلم. المضاعفات: تجرثم الدم بالجراثيم سلبية الغرام الذي قد يقود إلى فشل الأعضاء، وخراجات كبدية متعددة. البروتوكول: قبول للمستشفى، إماهة وريدية، سيفالوسبورين (سيفترياكسون)، تصريف عبر التنظير مع قطع العاصرة واستخراج الحصى، والجراحة عند الفشل. وسرطان المرارة نادر يصاحب الحصى في 90% والإناث للذكور 5/1؛ علاجه استئصال المرارة مع فراشها الكبدي والعقد البابية، وإنذاعه سيئ: 90% يموتون خلال سنة و2-5% فقط ينجون خمس سنوات.",
+      "sections": [
+        {
+          "heading": "Ascending (Suppurative) Cholangitis - Definition and Charcot's Triad",
+          "body_text": "**Ascending (suppurative) cholangitis is a bacterial infection of the biliary tree due to a common bile duct stone**. The pathogenesis is the ascending route: the stone obstructs and stagnates the bile, bacteria (the same enteric flora listed for cholecystitis - E. coli, Klebsiella, Streptococcus faecalis, Bacteroides) ascend from the duodenum through the sphincter of Oddi or arrive through the portal venous blood, multiply in the static bile under pressure, and the infected bile then refluxes into the bloodstream and the intrahepatic ducts - hence suppurative, pus-forming cholangitis with bacteremia. The clinical picture is **Charcot's triad**, given in the lecture's own wording: **1- fever and rigor** (the shaking chill of gram-negative bacteremia); **2- jaundice - mild, intermittent** (the obstruction is partial and ball-valving at this stage); **3- biliary colic and tender hepatomegaly** (the distended ducts and the engorged, inflamed liver are painful, the liver edge tender on palpation and on breathing). Charcot's triad in a patient known to have gallstones is cholangitis until proven otherwise, and it is an emergency: the infected biliary system under pressure must be drained, because the complications that follow are lethal. The elderly diabetic may present with confusion or shock and an incomplete triad, so the index of suspicion must stay high.",
+          "key_points": [
+            "Definition: bacterial infection of the biliary tree due to a CBD stone.",
+            "Charcot's triad: 1- fever and rigor; 2- mild intermittent jaundice; 3- biliary colic with tender hepatomegaly.",
+            "Emergency: pressure plus infection in a closed system demands drainage."
+          ]
+        },
+        {
+          "heading": "Complications - Gram-Negative Septicemia and Multiple Liver Abscesses",
+          "body_text": "The complications of ascending cholangitis are two, and both are life-threatening. **1- Gram-negative septicemia, which might lead to organ failure**: the endotoxemia of E. coli and Klebsiella drives vasodilatory (distributive) shock, acute kidney injury, acute respiratory failure and ultimately multi-organ dysfunction; this is why cholangitis belongs to the short list of abdominal emergencies in which mortality is determined by the speed of biliary decompression, and why blood cultures must be drawn before antibiotics and repeated with any clinical deterioration. **2- Multiple liver abscesses**: the infected bile seeding the intrahepatic ducts produces scattered pyogenic abscesses throughout the liver parenchyma; they are visible on ultrasound or CT as multiple low-density lesions, they require prolonged intravenous antibiotics in addition to drainage of the obstructed system, and individual large collections may need percutaneous drainage. A patient with cholangitis who deteriorates despite antibiotics is failing because pus is under pressure behind the obstruction and escaping into the bloodstream, and the definitive answer is drainage of the duct, not escalation of antibiotics alone.",
+          "key_points": [
+            "Gram-negative septicemia may lead to organ failure (shock, kidney injury, respiratory failure).",
+            "Multiple liver abscesses seed the liver via the infected intrahepatic ducts.",
+            "Deterioration despite antibiotics = the duct is still obstructed: drain it."
+          ]
+        },
+        {
+          "heading": "Diagnosis of Cholangitis",
+          "body_text": "The diagnostic workup of ascending suppurative cholangitis: **1- LFT - an obstructive picture**: rising bilirubin (mostly conjugated, direct) and a markedly raised alkaline phosphatase with near-normal transaminases - the same cholestatic signature as a duct stone, but here in a febrile, toxic patient. **2- Ultrasound - dilated bile ducts**, documenting the level of obstruction, usually with a stone or sludge in the distal CBD, and sometimes already the hypoechoic lesions of developing liver abscesses. **3- MRCP - very important to confirm the presence of a stone in the CBD**, defining the number, size and position of the stones and any anatomical anomaly before intervention. **4- Blood culture, plus or minus: isolation of an organism from blood on culture** confirms the bacteremia, directs the antibiotic choice and alerts the team to resistant or unusual organisms; it should be drawn before the first antibiotic dose wherever possible. Supporting tests include the CBC (leukocytosis), renal function and electrolytes (prerenal azotemia of sepsis) and inflammatory markers. The constellation that seals the diagnosis is Charcot's triad plus obstructive LFTs plus dilated ducts on ultrasound.",
+          "key_points": [
+            "LFT: obstructive picture (raised bilirubin and alkaline phosphatase).",
+            "US: dilated bile ducts.",
+            "MRCP: very important to confirm the stone in the CBD.",
+            "Blood culture: isolation of the organism from blood."
+          ]
+        },
+        {
+          "heading": "Treatment Protocol - the Six Steps",
+          "body_text": "The treatment protocol of ascending suppurative cholangitis is six steps, in order. **1- Admission to hospital** - cholangitis is never managed as an outpatient. **2- Rehydration with IV fluid** - these patients are volume-depleted from fever, rigors, poor intake and vasodilatory sepsis; resuscitation restores perfusion and urine output and buys time for definitive drainage. **3- Antibiotics - a cephalosporin such as a ceftriaxone vial** intravenously, covering the enteric gram-negatives responsible, with anaerobic cover added in severe disease and the regimen refined when the blood culture returns. **4- Drainage - ERCP with sphincterotomy**, decompressing the obstructed system; drainage is the decisive step, because antibiotics alone cannot sterilize bile under pressure. **5- CBD stone removal - by ERCP**, extracting or crushing the stones, with a stent or nasobiliary drain left behind if clearance must be staged. **6- If ERCP fails, then surgery (CBD exploration as mentioned in the previous slide)** - as detailed in the bile duct stones concept - supraduodenal choledochotomy with stone removal and a T-tube or choledochoduodenostomy, or transduodenal sphincterotomy and stone extraction - with percutaneous transhepatic biliary drainage as a rescue option when neither ERCP nor immediate surgery is feasible. In the septic unstable patient, resuscitation and antibiotics run concurrently with arrangements for urgent ERCP; the sequence is resuscitate, confirm, drain - in that order, all within hours.",
+          "key_points": [
+            "1- Admission to hospital; 2- rehydration with IV fluid; 3- IV cephalosporin (ceftriaxone vial).",
+            "4- Drainage by ERCP (sphincterotomy); 5- CBD stone removal by ERCP.",
+            "6- If ERCP fails: surgery - CBD exploration as in the duct-stone concept."
+          ],
+          "check": {
+            "prompt": "A patient with Charcot's triad and obstructive LFTs is diagnosed with ascending suppurative cholangitis. After admission, IV fluids and IV ceftriaxone are started. What is the decisive next step?",
+            "options": [
+              "Urgent ERCP with sphincterotomy for biliary drainage",
+              "Immediate open cholecystectomy",
+              "Oral antibiotics and discharge home",
+              "CT-guided percutaneous liver biopsy",
+              "Observation overnight with repeat LFTs"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الخطوة الحاسمة هي تصريف الشجرة الصفراوية عبر التنظير مع قطع العاصرة، فالمضادات الحيوية وحدها لا تعقم صفراء تحت الضغط؛ أما استئصال المرارة فليس أولوية في المرحلة الإنتانية الحادة."
+          }
+        },
+        {
+          "heading": "Carcinoma of the Gallbladder - Epidemiology, Aetiology, Pathology and Spread",
+          "body_text": "**Carcinoma of the gallbladder is very rare; 90% of cases are associated with gallstones, and the female/male ratio is 5/1**. The **aetiology** lists three factors: **1- stone**, with **0.3-3%** of gallstone patients harboring or developing cancer - the figure that justifies heightened suspicion in long-standing stones; **2- age in the 70s**, the typical patient being an elderly woman; and **3- porcelain gallbladder**, a calcified gallbladder wall after chronic inflammation, a recognized premalignant lesion whose discovery strengthens the argument for cholecystectomy. The **pathology types** are three: **1- scirrhous carcinoma** (a hard, fibrous, diffusely infiltrating tumor), **2- squamous carcinoma**, and **3- adenocarcinoma** - the commonest histology, arising from the glandular mucosa. The **spread** follows three routes: **1- direct invasion of the liver** - the tumor sits against liver segments IVb and V and invades early through the gallbladder bed, which is why the cancer operation includes a wedge of liver; **2- lymphatic spread to the hilar lymph nodes and onward to the celiac lymph nodes** - the first station is precisely the node of Lund encountered in the critical view of safety; and **3- distant spread - uncommon**, because patients usually succumb to local invasion before distant metastases appear. The overall picture is of a locally aggressive disease of elderly women with stones, discovered late.",
+          "key_points": [
+            "Very rare; 90% associated with gallstones; female to male 5/1.",
+            "Aetiology: stones (0.3-3%), age in the 70s, porcelain gallbladder.",
+            "Pathology types: scirrhous carcinoma, squamous carcinoma, adenocarcinoma.",
+            "Spread: direct liver invasion; lymphatic to hilar then celiac nodes; distant spread uncommon."
+          ]
+        },
+        {
+          "heading": "Carcinoma of the Gallbladder - Clinical Features, Treatment and Prognosis",
+          "body_text": "The **clinical features** of gallbladder carcinoma are four: **1- accidentally discovered at cholecystectomy in 1%** - the surgeon sends what appeared to be a benign inflamed gallbladder and the pathologist returns carcinoma, the classic incidental gallbladder cancer; **2- may present with cholecystitis-like manifestations** - right upper quadrant pain, fever and tenderness identical to acute or chronic cholecystitis, which is why stones and cancer are entangled in the same patients; **3- a palpable mass** in the right hypochondrium - in a patient with gallstones, a hard, irregular, non-tender gallbladder mass is cancer until proven otherwise, in contrast with the tender febrile inflammatory mass of acute cholecystitis; and **4- jaundice**, which signals advanced disease - direct invasion of the bile duct or massive nodal disease at the hilum. The **treatment** for resectable disease is **cholecystectomy plus excision of the gallbladder liver bed plus hilar lymphadenectomy** - the operation referred to in the indications concept as cholecystectomy accompanied with wedge resection of the liver bed; for an incidental carcinoma found after simple cholecystectomy, re-exploration for liver-bed resection and lymphadenectomy is the rule when the depth of invasion justifies it. The **prognosis is poor: 90% of patients die within one year, and only 2-5% achieve 5-year survival** - figures that make gallbladder cancer one of the worst gastrointestinal malignancies and justify treating every porcelain gallbladder and every suspicious operative finding with respect.",
+          "key_points": [
+            "1% discovered incidentally at cholecystectomy.",
+            "May present exactly like cholecystitis; palpable mass; jaundice indicates advanced disease.",
+            "Treatment: cholecystectomy + excision of the gallbladder liver bed + hilar lymphadenectomy.",
+            "Prognosis: poor - 90% die within one year; 2-5% 5-year survival."
+          ],
+          "check": {
+            "prompt": "What is the expected prognosis of carcinoma of the gallbladder?",
+            "options": [
+              "Poor: 90% die within one year and 2-5% survive five years",
+              "Good: 90% survive five years",
+              "Cure in all cases detected incidentally",
+              "Median survival of ten years",
+              "Identical to colonic cancer stage for stage"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "إنذاع سرطان المرارة سيئ جدًا: يموت 90% من المرضى خلال سنة واحدة، والنجاة خمس سنوات لا تتجاوز 2-5%؛ لذلك تُعامل كل مرارة خزفية وكل نتيجة مشتبهة باحترام شديد."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Ascending suppurative cholangitis",
+          "definition_ar": "خمج جرثومي صاعد للشجرة الصفراوية بسبب حصى في القناة الجامعة؛ يعطي ثالوث شاركو ويهدد بتجرثم الدم وخراجات الكبد."
+        },
+        {
+          "term": "Tender hepatomegaly",
+          "definition_ar": "تضخم الكبد المؤلم الملموس في التهاب القناة الصفراوية نتيجة اتساع القنوات الكبدية الملتهبة."
+        },
+        {
+          "term": "Gram-negative septicemia",
+          "definition_ar": "تجرثم الدم بجراثيم سلبية الغرام كالإشريكية القولونية؛ قد يقود إلى صدمة وفشل أعضاء متعدد في الكولانجيتيس."
+        },
+        {
+          "term": "Blood culture",
+          "definition_ar": "زرع الدم لعزل الجرثوم المسبب في التهاب القناة الصفراوية، ويُسحب قبل الجرعة الأولى من المضاد الحيوي كلما أمكن."
+        },
+        {
+          "term": "Multiple liver abscesses",
+          "definition_ar": "خراجات كبدية متعددة متفرقة ناتجة عن زرع الصفراء المنتنة داخل القنوات الكبدية في الكولانجيتيس الصاعد."
+        },
+        {
+          "term": "Porcelain gallbladder",
+          "definition_ar": "المرارة الخزفية: تكلّس جدار المرارة بعد التهاب مزمن؛ آفة قبل سرطانية تدعم قرار الاستئصار."
+        },
+        {
+          "term": "Scirrhous carcinoma",
+          "definition_ar": "نمط سرطاني صلب ليفي غزير الانتشار داخل الجدار؛ أحد الأنماط الثلاثة لسرطان المرارة."
+        },
+        {
+          "term": "Incidental gallbladder carcinoma",
+          "definition_ar": "سرطان يُكتشف بالمصادفة في عينة مرارة استُأصلت ظنًا أنها ملتهبة فقط؛ يشكل نحو 1% من الاستئصالات."
+        },
+        {
+          "term": "Hilar lymphadenectomy",
+          "definition_ar": "استئصال العقد اللمفية البابية، وهو جزء أساسي من جراحة سرطان المرارة مع استئصار فراش المرارة الكبدي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 6
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "surg_L5_gallbladder_f01",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c01",
+      "card_type": "basic",
+      "front_text": "What percentages divide acute cholecystitis into calculous and acalculous forms?",
+      "back_text": "Calculous 85-95% (a stone impacted in Hartmann's pouch or obstructing the cystic duct); acalculous 5-15% (stasis, ischemia and bacteremia with no stone).",
+      "explanation_ar": "احفظ التوزيع: 85-95% من الالتهابات الحادة حصوية، بينما 5-15% فقط تحدث بلا حصى وفق آلية الركود ونقص التروية.",
+      "tags": [
+        "cholecystitis",
+        "epidemiology"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f02",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c01",
+      "card_type": "basic",
+      "front_text": "List the causative microorganisms of acute cholecystitis, in the lecture's order.",
+      "back_text": "1- E. coli; 2- Klebsiella; 3- Streptococcus faecalis; 4- Bacteroides; 5- Clostridia and typhoid (uncommon and serious).",
+      "mnemonic_ar": "احفظها بالترتيب: إيشريشيا قولونية، فكلبسيلا، فالعقدية البرازية، فالبرويدات؛ ثم الزوج النادر الخطير: الكلوستريديا والتيفية.",
+      "explanation_ar": "القائمة تبرر اختيار المضاد الحيوي في العلاج التحفظي: سيفترياكسون أو سيفوتاكسيم أو جنتامايسين.",
+      "tags": [
+        "microbiology",
+        "cholecystitis"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f03",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c01",
+      "card_type": "basic",
+      "front_text": "What are the six causes of acute cholecystitis, and which dominates?",
+      "back_text": "1- Stone in 90% (impacted in Hartmann's pouch or obstructing the cystic duct); 2- stasis; 3- pancreatic juice reflux; 4- CBD stone; 5- bacteremia; 6- vascular (DM, sickle cell, hypertension, collagen disease) causing cystic artery thrombosis and ischemia.",
+      "tags": [
+        "cholecystitis",
+        "aetiology"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f04",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "card_type": "basic",
+      "front_text": "Differentiate Boas's sign from Murphy's sign in acute cholecystitis.",
+      "back_text": "Boas's sign = referred hyperesthesia or pain in the skin beneath the right scapula (phrenic irritation). Murphy's sign = sudden arrest of deep inspiration when the inflamed gallbladder touches the palpating hand under the right costal margin.",
+      "is_vivid": true,
+      "explanation_ar": "علامة مورفي موضعية على الربع العلوي الأيمن وتتوقف مع الشهيق، أما علامة بواس فرجيع تحت الكتف الأيمن؛ كلتيهما علامتا التهاب مرارة حاد.",
+      "tags": [
+        "signs",
+        "cholecystitis"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f05",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "card_type": "basic",
+      "front_text": "The nine differential diagnoses of acute cholecystitis?",
+      "back_text": "1- Appendicitis; 2- perforated peptic ulcer; 3- acute right pyelonephritis; 4- liver abscess; 5- right lower lobar pneumonia; 6- hepatitis; 7- pancreatitis; 8- herpes zoster; 9- myocardial infarction.",
+      "mnemonic_ar": "الألم تحت الضلع الأيمن لا يعني المرارة دائمًا: الزائدة والقرحة والكلوة والخراج والرئة والكبد والبنكرياس والقوباء والقلب، تسعة مقلدين.",
+      "tags": [
+        "differential diagnosis"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f06",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c03",
+      "card_type": "basic",
+      "front_text": "What is the critical view of safety in laparoscopic cholecystectomy, and what are the four ports?",
+      "back_text": "The hepatocystic triangle is cleared of fat and fibrous tissue so that only the cystic duct and cystic artery are seen entering the gallbladder (node of Lund visible) - only then clip and divide. Ports: 10 mm access port at the umbilicus (camera); 10 mm right hand working port; 5 mm left hand working port; 5 mm port for the fundus grasper in the right flank/subcostal area. The surgeon stands on the patient's left.",
+      "explanation_ar": "قبل وضع القصاصة يجب ألا يبقى داخلًا إلى المرارة سوى القناة المرارية والشريان المراري؛ هذا يحمي القناة الجامعة من الإصالة.",
+      "tags": [
+        "operative surgery",
+        "safety"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f07",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "card_type": "basic",
+      "front_text": "The four ultrasonographic features of acute calculous cholecystitis?",
+      "back_text": "Distended gallbladder; increased wall thickness; pericholecystic fluid collection; presence of a stone. (Supporting labs: leukocytosis; LFT mostly normal or little changed.)",
+      "tags": [
+        "imaging",
+        "cholecystitis"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f08",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c03",
+      "card_type": "basic",
+      "front_text": "Conservative treatment of acute cholecystitis: duration, components and success rate?",
+      "back_text": "For 2-3 days: NG tube and nil per mouth; antibiotics (ceftriaxone, cefotaxime or gentamicin); analgesia and an antispasmodic. Symptoms subside in 90% of cases.",
+      "tags": [
+        "management"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f09",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c03",
+      "card_type": "basic",
+      "front_text": "Timing rules for cholecystectomy after an acute attack: golden period, interval surgery, diet, failure and conversion?",
+      "back_text": "Golden period = 2-5 days from onset of symptoms (early laparoscopic cholecystectomy). Conservative success = laparoscopic cholecystectomy after 6-8 weeks on a fat-free diet. No improvement after 2-3 days = laparoscopic cholecystectomy or laparoscopic cholecystostomy. Conversion rate is higher in acute than elective cases, but conversion is NOT failure.",
+      "tags": [
+        "management",
+        "timing"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f10",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c04",
+      "card_type": "basic",
+      "front_text": "The five contrasting clinical features of chronic cholecystitis?",
+      "back_text": "Thickened fibrotic wall of a shrunken gallbladder with stones; recurrent right hypochondrial pain episodes lasting 3-12 hours after meals; flatulent dyspepsia (fullness, belching, heartburn, distension) with nausea and vomiting; NO fever; NEGATIVE Murphy's sign. US: shrinkage in spite of 8 hours of fasting, thick wall, stones; normal WBC and LFT. Rx: laparoscopic cholecystectomy.",
+      "explanation_ar": "السمة المميزة: لا حمّى ولا علامة مورفي موجبة، مع مرارة متقلصة رغم الصيام؛ والعلاج استئصار بالتنظير.",
+      "tags": [
+        "cholecystitis",
+        "chronic"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f11",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c04",
+      "card_type": "basic",
+      "front_text": "What is Saint triad and why does it matter?",
+      "back_text": "Gallstone(s) + diverticulosis + hiatus hernia. All three cause dyspepsia, so identify which one is the true culprit before operating; unrecognized Saint triad is the first listed cause of post-cholecystectomy syndrome.",
+      "mnemonic_ar": "سانت ثلاثية عسر الهضم: حصى مع انتباغات مع فتق حجابي، ثلاثة مشتبهون قبل أن تتهم المرارة وحدها.",
+      "tags": [
+        "triad",
+        "dyspepsia"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f12",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "card_type": "basic",
+      "front_text": "The four indications for cholecystectomy in general?",
+      "back_text": "1- Symptomatic gallstones; 2- asymptomatic gallstones with diabetes mellitus and sickle cell anaemia; 3- prophylactic cholecystectomy (controversial), e.g. morbid obesity surgery; 4- carcinoma of the gallbladder, accompanied by wedge resection of the liver bed.",
+      "tags": [
+        "indications"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f13",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "card_type": "basic",
+      "front_text": "The four causes of biliary leak (fistula) after cholecystectomy?",
+      "back_text": "a) Slipped clips or rarely slipped ligature; b) accessory duct; c) CBD injury or ischemia; d) Mirizzi syndrome. (The other complications: bleeding, jaundice, adjacent organs injury, post-cholecystectomy syndrome.)",
+      "tags": [
+        "complications"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f14",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "card_type": "basic",
+      "front_text": "Post-cholecystectomy syndrome: frequency and the seven causes?",
+      "back_text": "15% of cholecystectomies fail to relieve symptoms. Causes: 1- Saint's triad; 2- pancreatitis; 3- duodenal ulcer (D.U.); 4- CBD stone; 5- long cystic duct stump; 6- CBD stricture; 7- fibrosis of the sphincter of Oddi.",
+      "mnemonic_ar": "خمسة عشر بالمئة لا يرتاحون بعد الجراحة: سانت، بنكرياس، قرحة، حصى، جذمور طويل، تضيق، عاصرة ليفية.",
+      "tags": [
+        "complications",
+        "syndrome"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f15",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "card_type": "basic",
+      "front_text": "Define Mirizzi syndrome and outline its types.",
+      "back_text": "A stone impacted in the cystic duct or neck of the gallbladder compresses the CHD or CBD, causing obstruction and jaundice. Types I-V: I = external compression; II = fistula involving under one-third of the duct circumference; III = up to two-thirds; IV = complete circumferential destruction; V = any type with a cholecystoenteric fistula. C/F: jaundice, pain, fever; MRCP and ERCP are both diagnostic; Rx: cholecystectomy and/or CBD exploration with repair (e.g. choledochoduodenostomy).",
+      "is_vivid": true,
+      "explanation_ar": "الحجر خارج القناة لكنه يضغطها من الخارج؛ كلما تأخر التشخيص زاد احتمال تحول الضغط إلى ناسور كامل المحيط.",
+      "tags": [
+        "mirizzi",
+        "jaundice"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f16",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "card_type": "basic",
+      "front_text": "What is Charcot's triad and what does it signify?",
+      "back_text": "1- Fever and rigor; 2- jaundice (mild, intermittent); 3- biliary colic with tender hepatomegaly. It signifies ascending cholangitis from a CBD stone - an emergency: admit, IV fluids, IV ceftriaxone, then ERCP sphincterotomy for drainage.",
+      "mnemonic_ar": "شاركو: حمّى ورجفة، يرقان، مغص مع كبد مؤلم؛ ثلاثية تعني فتح المجاري الصفراوية فورًا.",
+      "is_vivid": true,
+      "tags": [
+        "triad",
+        "cholangitis"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f17",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c06",
+      "card_type": "basic",
+      "front_text": "The LFT pattern of an obstructing stone in the bile duct?",
+      "back_text": "Increased bilirubin with increased direct (conjugated) bilirubin and increased alkaline phosphatase, with normal or not significant changes in AST or ALT. US shows a dilated CBD; MRCP confirms the stone.",
+      "tags": [
+        "labs",
+        "obstruction"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f18",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c06",
+      "card_type": "basic",
+      "front_text": "Treatment ladder for CBD stones, including the choledochotomy options if ERCP fails?",
+      "back_text": "1- ERCP and sphincterotomy (first line). 2- If failed, choledochotomy (CBD exploration): A- supraduodenal stone removal then T-tube or choledochoduodenostomy; B- transduodenal sphincterotomy and stone extraction.",
+      "tags": [
+        "ercp",
+        "surgery"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f19",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "card_type": "basic",
+      "front_text": "The six-step management protocol of ascending suppurative cholangitis?",
+      "back_text": "1- Admission to hospital; 2- rehydration with IV fluid; 3- antibiotics - cephalosporin such as ceftriaxone vial; 4- drainage by ERCP (sphincterotomy); 5- CBD stone removal by ERCP; 6- if ERCP fails, surgery (CBD exploration). Watch for gram-negative septicemia with organ failure and multiple liver abscesses.",
+      "tags": [
+        "cholangitis",
+        "protocol"
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_f20",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "card_type": "basic",
+      "front_text": "Key numbers of carcinoma of the gallbladder?",
+      "back_text": "Very rare; 90% associated with gallstones; female to male 5/1; stone risk 0.3-3%; age in the 70s; porcelain gallbladder premalignant; 1% discovered incidentally at cholecystectomy; 90% die within one year; 2-5% 5-year survival. Rx: cholecystectomy + excision of the gallbladder liver bed + hilar lymphadenectomy.",
+      "explanation_ar": "احفظ الأرقام: 90% مع حصى، إناث خمس أضعاف الذكور، وإنذاع قاتل: تسعون بالمئة يموتون خلال سنة.",
+      "tags": [
+        "oncology",
+        "prognosis"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "surg_L5_gallbladder_m01",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "question_stem": "A 40 year old lady presented with sudden right hypochondrial colicky pain, temperature 37.8 C and a positive Murphy's sign. WBC was 11000 with normal liver function tests. What is the most likely diagnosis?",
+      "options": [
+        "Chronic cholecystitis",
+        "Dyspepsia",
+        "Biliary colic",
+        "Acute cholecystitis",
+        "Gall stone ileus"
+      ],
+      "correct_index": 3,
+      "explanation_ar": "بداية مفاجئة لألم قولنجي مع حمّى خفيفة 37.8 وعلامة مورفي إيجابية وتعداد كريات 11000 هي الصورة الكلاسيكية لالتهاب المرارة الحاد. الالتهاب المزمن يأتي دون حمّى وبعلامة مورفي سالبة، والمغص الصفراوي البسيط لا يترافق مع حمّى ولا علامة مورفي، وعسر الهضم تشخيص استبعادي لا يفسر الحمّى والتعداد، وحصى المرارة المعوي يسبب انسدادًا معويًا.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m02",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "question_stem": "For the same patient with suspected acute calculous cholecystitis, what is the most likely next imaging test that must be requested?",
+      "options": [
+        "Ultrasonography",
+        "MRCP",
+        "CT scan",
+        "ERCP",
+        "PTC (percutaneous transhepatic cholangiography)"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الأمواج فوق الصوتية هي فحص الخط الأول فتُظهر انتباج المرارة وسماكة الجدار والسائل المحيط والحصى. الـMRCP لحالات الشك بحصى القناة الجامعة، والتنظير الصفراوي بالرجعي فحص وعلاجي وليس فحص فرز، والـPTC عند اتساع القنوات الكبدية أو بعد فشل التنظير، والـCT ليس الفحص الأول للمرارة.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m03",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c02",
+      "question_stem": "All of the following are ultrasonic features of acute calculous cholecystitis except:",
+      "options": [
+        "Gall stones",
+        "Distended gall bladder",
+        "Pericholecystic fluid collection",
+        "Increase wall thickness",
+        "Shrinkage of gall bladder"
+      ],
+      "correct_index": 4,
+      "explanation_ar": "علامات الالتهاب الحاد بالأمواج: حصى وانتباج المرارة وسائل محيط وسماكة الجدار؛ أما تقلص المرارة رغم الصيام فهو من علامات التهاب المرارة المزمن، لذا فهو الاستثناء الصحيح.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m04",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "question_stem": "A 68 year old woman with known gallstones presents with fever 38.9 C with shaking rigors, mild fluctuating jaundice over 3 days, and right upper quadrant colicky pain; examination shows tender hepatomegaly. What is the most likely diagnosis?",
+      "options": [
+        "Acute cholecystitis",
+        "Ascending suppurative cholangitis",
+        "Viral hepatitis",
+        "Solitary liver abscess",
+        "Perforated duodenal ulcer"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "ثالوث شاركو مكتمل: حمّى ورجفة مع يرقان خفيف متقطع ومغص صفراوي مع تضخم كبد مؤلم، في مريضة معروفة بالحصى، وهو تشخيص التهاب القناة الصفراوية الصاعد القيحي. التهاب المرارة الحاد لا يعطي يرقانًا عادة ولا تضخم كبد، والتهاب الكبد الفيروسي يرفع إنزيمات الخلايا بشدة، وخراج الكبد الوحيد لا يشرح المغص واليرقان المتقطع، والقرحة المثقوبة تعطي بطنًا خشنيًا دون يرقان متقطع.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Group the three findings into one eponymous triad.",
+        "Fever and rigors plus intermittent jaundice plus biliary colic with tender hepatomegaly.",
+        "The cause will be a stone in the common bile duct."
+      ],
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m05",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "question_stem": "The patient above is admitted; after blood cultures, IV fluid resuscitation and IV ceftriaxone are started. What is the definitive next step in her management?",
+      "options": [
+        "Urgent ERCP with sphincterotomy for biliary drainage and stone removal",
+        "Immediate open cholecystectomy",
+        "Oral antibiotics and discharge home",
+        "CT-guided percutaneous liver biopsy",
+        "Wait for the blood culture result before any further intervention"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بروتوكول الكولانجيتيس: قبول وإماهة ومضاد حيوي وريدي ثم التصريف العاجل عبر التنظير مع قطع العاصرة واستخراج حصى القناة؛ فالصفراء المنتنة تحت الضغط لا تتعقم بالمضادات وحدها. الجراحة المفتوحة ليست الخطوة التالية، والخروج أو انتظار نتيجة الزرع قبل التصريف تأخير خطر قد يقود إلى تجرثم الدم وفشل الأعضاء.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m06",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c03",
+      "question_stem": "A 52 year old man presents 60 hours (day 3) after the onset of acute right hypochondrial pain diagnosed as acute calculous cholecystitis. He is stable, afebrile on antibiotics and fit for anesthesia. What is the best definitive management?",
+      "options": [
+        "Early laparoscopic cholecystectomy now, within the golden period",
+        "Conservative treatment for 2 weeks and then discharge",
+        "Laparoscopic cholecystectomy delayed for 6 months",
+        "ERCP and sphincterotomy",
+        "Laparoscopic cholecystostomy as the first-choice operation"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "اليوم الثالث يقع ضمن الفترة الذهبية من 2 إلى 5 أيام من بدء الأعراض والمريض مستقر وقابل للتخدير، فالاستئصار المبكر بالتنظير هو الأمثل. الجلبي المراري خيار المريض عالي الخطورة أو فاشل التحفظي، والتنظير الصفراوي لا دور له دون حصى قناة أو يرقان، وتمديد التحفظي أسبوعين أو تأخير الجراحة ستة أشهر خارج منطق الفترة الذهبية.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Count the days since the onset of symptoms.",
+        "2-5 days from onset defines the golden period.",
+        "A stable, fit patient inside the window goes straight to early laparoscopic cholecystectomy."
+      ],
+      "focus_sections": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m07",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c01",
+      "question_stem": "Which pair of organisms is described as uncommon but serious in the bacteriology of acute cholecystitis?",
+      "options": [
+        "E. coli and Klebsiella",
+        "Clostridia and typhoid",
+        "Streptococcus faecalis and Bacteroides",
+        "Staphylococcus aureus and Pseudomonas",
+        "Candida and Aspergillus"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "القائمة الشائعة بالترتيب: الإشريكية القولونية فالكلبسيلا فالعقدية البرازية فالبرويدات؛ أما الكلوستريديا والتيفية فغير شائعتين لكنهما خطيرتان: الكلوستريديا لاهوائية منتجة للغاز قد تسبب التهاب مرارة هوائيًا، والتيفية تستوطن المرارة وتُلقّح الحصى. بقية الخيارات إما شائعة أو ليست من قائمة المحاضرة.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        1
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m08",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "question_stem": "A 58 year old woman with gallstones presents with right upper quadrant pain, fever and progressive jaundice. Imaging shows a stone impacted in the cystic duct with a dilated common hepatic duct above the level of the cystic duct insertion. What is the mechanism of her jaundice?",
+      "options": [
+        "External compression of the CHD or CBD by a stone impacted in the cystic duct or gallbladder neck (Mirizzi syndrome)",
+        "A primary stone formed within and obstructing the common hepatic duct",
+        "Intrahepatic cholestasis from viral hepatitis",
+        "Hemolysis from sickle cell disease",
+        "Obstruction of the pancreatic duct at the ampulla"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هذه متلازمة ميريزي: حجر منحشر في القناة المرارية أو عنق المرارة يضغط من الخارج على القناة الكبدية الجامعة أو الجامعة للصفراء فيسبب انسدادًا ويرقانًا مع ألم وحمّى. الحصى الأولية داخل القناة احتمال آخر لكن الصورة الانضغاطية خارج القناة هي جوهر ميريزي؛ واليرقان الانحلالي أو الركود الخلوي لا يفسر اتساع القناة فوق مستوى الانحشار.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Where is the stone located, and where is the dilatation?",
+        "The stone never entered the duct - it presses on it from outside.",
+        "Mirizzi syndrome: MRCP and ERCP are both diagnostic."
+      ],
+      "focus_sections": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m09",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c06",
+      "question_stem": "Which liver function test pattern best fits an obstructing stone in the common bile duct?",
+      "options": [
+        "Increased bilirubin and direct bilirubin with increased alkaline phosphatase and normal or not significant AST/ALT changes",
+        "Markedly increased AST and ALT with normal bilirubin and alkaline phosphatase",
+        "Low alkaline phosphatase with high indirect bilirubin",
+        "Normal LFTs with leukopenia",
+        "Isolated increase of ALT only"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نمط الانسداد الصفراوي: ارتفاع البيليروبين الكلي والمباشر مع ارتفاع الفوسفاتاز القلوي، وإنزيمات الخلايا الكبدية طبيعية أو متغيرة بشكل غير مهم؛ أما الارتفاع الهائل للناقلات الأمينية فهو نمط التهاب الكبد الخلوي، والبيليروبين غير المباشر يرتفع في الانحلال، والكثرة البيض لا علاقة لها بالنمط الكبدي.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m10",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c05",
+      "question_stem": "On day 2 after an otherwise uncomplicated laparoscopic cholecystectomy, a patient develops increasing abdominal pain, fever and bile-stained fluid from the drain. Which of the following is a recognized cause of post-cholecystectomy biliary leak and fistula?",
+      "options": [
+        "Slipped clips from the cystic duct stump",
+        "A short cystic duct stump",
+        "A heavy fatty meal started too early",
+        "Fibrosis of the sphincter of Oddi",
+        "Boas's sign"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "أسباب التسرب الصفراوي أربعة: قصاصات زاحلة أو ربط زاحل نادرًا، وقناة صفراوية إضافية، وإصاءة القناة الجامعة أو نقص ترويتها، ومتلازمة ميريزي. الجذمور القصير هو هدف الجراحة السليم، وتليف العاصرة من أسباب متلازمة ما بعد الاستئصار لا التسرب المبكر، والوجبة الدسمة وعلامة بواس لا علاقة لهما.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "focus_sections": [
+        2
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m11",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c01",
+      "question_stem": "In a patient whose impacted gallstone fails to disimpact after an attack of acute cholecystitis, which trio of gallbladder complications can develop?",
+      "options": [
+        "Gangrene, mucocele and empyema",
+        "Chronic cholecystitis, hiatus hernia and diverticulosis",
+        "Cholangitis, pancreatitis and biliary cirrhosis",
+        "Bleeding, jaundice and adjacent organ injury",
+        "Saint triad, duodenal ulcer and CBD stricture"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "استمرار الحجر المنحشر يقود إلى غرغرينا الجدار ناقص التروية، وإلى الموكوسيل عند انسداد مطول دون خمج، وإلى الإصابة بالقيح أي خراج المرارة. الكولانجيتيس والبنكرياس والتشمع مضاعفات حصى القناة الجامعة، والنزف واليرقان وإصابة الأعضاء مضاعفات الاستئصار الجراحي، وثلاثية سانت والقرحة والتضيق أسباب متلازمة ما بعد الاستئصار.",
+      "difficulty": "core",
+      "clinical_vignette": false,
+      "focus_sections": [
+        3
+      ]
+    },
+    {
+      "id": "surg_L5_gallbladder_m12",
+      "lecture_id": "surg_L5_gallbladder",
+      "concept_id": "surg_L5_gallbladder_c07",
+      "question_stem": "A 74 year old woman with 20 years of gallstones presents with weight loss and a hard, irregular, non-tender right upper quadrant mass; bilirubin is rising. Imaging and biopsy confirm carcinoma of the gallbladder. What is the standard surgical treatment and expected prognosis?",
+      "options": [
+        "Cholecystectomy plus excision of the gallbladder liver bed plus hilar lymphadenectomy; prognosis poor - 90% die within one year and only 2-5% survive five years",
+        "Simple laparoscopic cholecystectomy alone; excellent prognosis",
+        "Whipple pancreaticoduodenectomy; 80% five year survival",
+        "Chemotherapy alone with a median survival of ten years",
+        "Liver transplantation alone; 60% five year survival"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الجراحة المعيارية لسرطان المرارة القابل للاستئصال: استئصار المرارة مع استئصار فراشها الكبدي وتفريغ العقد البابية، والإنذاء سيئ جدًا إذ يموت 90% خلال سنة ولا ينجو سوى 2-5% خمس سنوات. الاستئصار البسيط وحده غير كافٍ للورم الظاهر، والبنكرياس والكبد أو الكيمياء وحدها ليست العلاج المعياري لهذا الورم.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "The operation is bigger than a simple cholecystectomy: add liver bed and nodes.",
+        "Epidemiology: elderly woman with long-standing stones, female to male 5/1.",
+        "90% die within one year; 2-5% reach five years."
+      ],
+      "focus_sections": [
+        5
+      ]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "surg_L5_gallbladder_case01",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Acute Calculous Cholecystitis - the Golden Period Decision",
+      "order_index": 0,
+      "difficulty": "core",
+      "scenario": "A 40 year old lady presented to the emergency department with sudden right hypochondrial colicky pain that started 3 days ago after a heavy fatty meal, with nausea, two episodes of vomiting and low-grade fever; she is known to have gallstones reported on a previous ultrasound done for similar milder episodes.",
+      "vignette": {
+        "age": 40,
+        "sex": "female",
+        "chief_complaint": "Sudden right hypochondrial colicky pain with fever for 3 days",
+        "history": "Known gallstones for 2 years with previous milder self-limiting episodes of right upper quadrant discomfort after fatty meals. The current pain began about one hour after a heavy fatty meal, is colicky, radiates to the right shoulder tip and is associated with nausea and vomiting. No jaundice, no dark urine, no chest pain, no urinary symptoms, no bowel changes.",
+        "vitals": {
+          "bp": "124/78 mmHg",
+          "hr": "98/min",
+          "rr": "20/min",
+          "temp": "37.8 C",
+          "spo2": "99% on room air"
+        },
+        "exam": "Alert, mildly distressed with pain. Positive Murphy's sign on the right side. Tenderness and mild rigidity in the right hypochondrium. No palpable mass, no jaundice, no lymphadenopathy. Bowel sounds normal. Chest clear.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "11000/mm3",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "13.1 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Platelets",
+            "value": "260,000/mm3",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "0.9 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Direct bilirubin",
+            "value": "0.2 mg/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "95 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "AST",
+            "value": "28 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "ALT",
+            "value": "24 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "70 U/L",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasonography (after resuscitation): distended gallbladder with wall thickness 4.5 mm, a pericholecystic fluid collection, and a stone impacted at Hartmann's pouch; the CBD measures 5 mm with no ductal stones; liver and pancreas normal."
+      },
+      "steps": [
+        {
+          "id": "surg_L5_gallbladder_case01_s1",
+          "prompt": "What is the immediate management of this patient in the emergency department?",
+          "options": [
+            "Immediate laparoscopic cholecystectomy within the next hour without further preparation",
+            "Conservative treatment: nil per mouth with NG tube if vomiting, IV fluids, analgesia with an antispasmodic, and IV antibiotics (ceftriaxone)",
+            "ERCP and sphincterotomy tonight",
+            "Discharge home with oral analgesia and a fat-free diet",
+            "Open cholecystectomy through a right subcostal incision"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الخطوة الأولى هي العلاج التحفظي: صيام مع أنبوب أنفي معري عند الحاجة، وسوائل وريدية، ومسكن مع مضاد تشنج، ومضاد حيوي وريدي مثل السيفترياكسون أو السيفوتاكسيم أو الجنتامايسين. الجراحة الفورية دون تحضير ليست أول خطوة عند أول تقديم، والتنظير الصفراوي لا يستطب دون يرقان أو حصى قناة، والخروج خطأ خطر في نوبة التهاب حاد.",
+          "xp": 10,
+          "hints": [
+            "Start with the structured 2-3 day conservative regimen.",
+            "NPO, IV fluids, analgesia plus antispasmodic, IV antibiotics."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case01_s2",
+          "prompt": "Which single confirmatory investigation must be requested next?",
+          "options": [
+            "Abdominal ultrasonography",
+            "MRCP as the first-line test",
+            "ERCP",
+            "Contrast-enhanced CT of chest and abdomen",
+            "Oral cholecystography"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الأمواج فوق الصوتية هي فحص التأكيد الأول وتظهر العلامات الأربع: مرارة منتبجة وجدار سميك وسائل محيط وحصى منحشرة في جيب هارتمان. الـMRCP يُحتفظ به عند الشك بحصى القناة الجامعة، والتنظير الصفراوي علاجي وليس تشخيصًا أوليًا، والـCT والتصوير الفموي ليسا فحوص الخط الأول للمرارة.",
+          "xp": 10,
+          "hints": [
+            "Bedside, radiation-free, and interrogates gallbladder, ducts and pancreas together.",
+            "It will show the four features: distension, wall thickness, fluid, stone."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case01_s3",
+          "prompt": "She improves overnight but remains mildly tender. It is now day 3 from the onset of symptoms and she is fit for anesthesia. What is the best definitive treatment?",
+          "options": [
+            "Early laparoscopic cholecystectomy now - she is inside the golden period (2-5 days)",
+            "Discharge and elective laparoscopic cholecystectomy after 6 months",
+            "Conservative treatment alone until full resolution, then no surgery at all",
+            "Laparoscopic cholecystostomy as the first-line definitive choice",
+            "ERCP with stenting of the cystic duct"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المريضة في اليوم الثالث أي داخل الفترة الذهبية من 2 إلى 5 أيام من بدء الأعراض، وهي مستقرة وقابلة للتخدير، فالاستئصار المراري المبكر بالتنظير هو الأمثل. لو تجاوزت الفترة الذهبية لكان المسار تحفظيًا 2-3 أيام ثم استئصارًا مؤجلًا بعد 6-8 أسابيع مع حمية خالية من الدهون؛ والجلبي المراري للمريض غير الملائم أو الفاشل على التحفظي، والتنظير الصفراوي لا دور له هنا.",
+          "xp": 12,
+          "hints": [
+            "Count the days since onset: day 3 falls inside a famous window.",
+            "Golden period = 2-5 days for early laparoscopic cholecystectomy."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case01_s4",
+          "prompt": "During laparoscopic cholecystectomy, before applying clips to the cystic duct and cystic artery, what must the surgeon achieve?",
+          "options": [
+            "The critical view of safety: the hepatocystic triangle cleared so only the cystic duct and cystic artery are seen entering the gallbladder",
+            "Complete mobilization of the right lobe of the liver",
+            "Formal opening and inspection of the common bile duct",
+            "Aspiration of all bile from the gallbladder fundus",
+            "Removal of the node of Lund for frozen section"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "المنظر الحرج للأمان: تنظيف المثلث الكبدي المراري من الشحم والنسيج الليفي بحيث لا يبقى داخلًا إلى المرارة سوى القناة المرارية والشريان المراري، مع رؤية قاعدة القطعة الرابعة والعقدة المرارية؛ وعندها فقط تُوضع القصاصات وتُقطع الهياكل بأمان بعيدًا عن القناة الكبدية الجامعة والجامعة للصفراء.",
+          "xp": 12,
+          "hints": [
+            "Two structures, one window: which two?",
+            "Clear the hepatocystic triangle of fat and fibrous tissue first."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case01_s5",
+          "prompt": "Because of dense inflammation the anatomy cannot be safely clarified, and the team converts to open cholecystectomy. How should this conversion be interpreted?",
+          "options": [
+            "A recognized safety decision: the conversion rate is higher in acute cholecystitis, but conversion is not failure",
+            "A failure of the surgeon that must be avoided at all costs",
+            "Proof that laparoscopic cholecystectomy is contraindicated in acute cholecystitis",
+            "An automatic indication to add an ERCP",
+            "A routine indication to leave a T-tube in every conversion"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "نسبة التحويل إلى الجراحة المفتوحة أعلى في التهاب المرارة الحاد منها في الجراحة الانتخابية لحالات أخرى، لكن التحويل ليس فشلًا للاستئصار بالتنظير بل قرار سلامة لحماية القناة الجامعة عندما يتعذر تحديد التشريح أو تحقيق المنظر الحرج للأمان؛ ولا يستوجب روتينيًا تنظيرًا صفراويًا أو أنبوبًا على شكل T.",
+          "xp": 10,
+          "hints": [
+            "Remember the lecture's NB sentence about conversion.",
+            "Conversion rate is higher in acute cases - and conversion is not failure."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: التهاب مرارة حاد حصوي في سيدة بعمر 40 سنة: بداية مفاجئة بعد وجبة دسمة، ألم قولنجي يميني تحت الضلع، حرارة 37.8 درجة، علامة مورفي إيجابية، كريات بيض 11000 ووظائف كبد طبيعية. الدروس الأساسية: الأمواج فوق الصوتية هي فحص التأكيد الأول بعلاماتها الأربع؛ والمريض الذي يراجع خلال 2 إلى 5 أيام من بدء الأعراض يقع في الفترة الذهبية للاستئصار المبكر بالتنظير؛ وقبل القص يجب تحقيق المنظر الحرج للأمان بتنظيف المثلث الكبدي المراري؛ والتحويل إلى الجراحة المفتوحة ليس فشلًا بل قرار سلامة. الفخ الاختباري: الخلط بين المغص الصفراوي البسيط والالتهاب الحاد، فالحمّى وعلامة مورفي والتعداد المرتفع هي الفاصل بينهما."
+    },
+    {
+      "id": "surg_L5_gallbladder_case02",
+      "lecture_id": "surg_L5_gallbladder",
+      "title": "Ascending Suppurative Cholangitis - a Charcot Triad Emergency",
+      "order_index": 1,
+      "difficulty": "advanced",
+      "scenario": "A 66 year old diabetic woman known to have multiple gallstones is brought to the emergency department with fever and shaking rigors for 24 hours, dark urine, yellowish eyes and colicky right upper quadrant pain; she has passed little urine since morning and looks toxic and mildly confused.",
+      "vignette": {
+        "age": 66,
+        "sex": "female",
+        "chief_complaint": "Fever with rigors, jaundice and right upper quadrant colicky pain for 24 hours",
+        "history": "Known multiple gallstones for years with previous self-limiting episodes of right hypochondrial pain. Diabetes mellitus on metformin. No previous abdominal surgery. No blood transfusions. The current illness began with a rigor followed by spiking fever, darkening urine, mild fluctuating yellowish sclerae and colicky pain under the right ribs.",
+        "vitals": {
+          "bp": "104/64 mmHg",
+          "hr": "118/min",
+          "rr": "24/min",
+          "temp": "38.9 C",
+          "spo2": "96% on room air"
+        },
+        "exam": "Toxic-looking, mildly confused to time. Icteric sclerae. Tender hepatomegaly with the liver edge 3 cm below the costal margin, exquisitely tender on inspiration. Mild right hypochondrial tenderness without board-like rigidity. Dry mucous membranes; reduced urine output.",
+        "labs": [
+          {
+            "name": "WBC",
+            "value": "19,200/mm3",
+            "flag": "high"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "12.4 g/dL",
+            "flag": "normal"
+          },
+          {
+            "name": "Total bilirubin",
+            "value": "5.4 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Direct bilirubin",
+            "value": "4.3 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Alkaline phosphatase",
+            "value": "480 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "AST",
+            "value": "62 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "ALT",
+            "value": "55 U/L",
+            "flag": "high"
+          },
+          {
+            "name": "Serum amylase",
+            "value": "90 U/L",
+            "flag": "normal"
+          },
+          {
+            "name": "Creatinine",
+            "value": "1.8 mg/dL",
+            "flag": "high"
+          },
+          {
+            "name": "Lactate",
+            "value": "3.4 mmol/L",
+            "flag": "high"
+          },
+          {
+            "name": "Blood culture",
+            "value": "E. coli isolated after 24 hours",
+            "flag": "critical"
+          }
+        ],
+        "imaging": "Ultrasound: dilated CBD 12 mm with a 9 mm stone in the distal CBD, dilated intrahepatic ducts, gallbladder containing multiple stones with a 3 mm wall, no pericholecystic fluid. MRCP: confirms the distal CBD stone and excludes intrahepatic strictures."
+      },
+      "steps": [
+        {
+          "id": "surg_L5_gallbladder_case02_s1",
+          "prompt": "What are the immediate first steps in the management of this patient?",
+          "options": [
+            "Admission to hospital, IV fluid rehydration, blood cultures then IV ceftriaxone, and urgent arrangement for biliary drainage",
+            "Immediate ERCP in the corridor without any resuscitation",
+            "Oral ciprofloxacin and discharge with outpatient follow-up",
+            "Emergency open cholecystectomy as the first intervention",
+            "Wait for the MRCP report before starting any treatment"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "بروتوكول التهاب القناة الصفراوية الصاعد: قبول عاجل إلى المشفى، وإماهة وريدية فورية فالمريضة جافة والبول قليل واللاكتات مرتفع، وسحب زروع دم ثم مضاد حيوي وريدي من عائلة السيفالوسبورين مثل السيفترياكسون، مع الترتيب العاجل للتصريف الصفراوي. لا مكان للعلاج الفموي أو الجراحة أولًا، والتنظير دون إنعاش متهور، والانتظار قبل بدء العلاج خطر.",
+          "xp": 12,
+          "hints": [
+            "She is septic and dry: resuscitate first, but do not stop there.",
+            "Six-step protocol: admission, IV fluids, IV cephalosporin, drainage, stone removal, surgery if ERCP fails."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case02_s2",
+          "prompt": "Ultrasound shows dilated bile ducts. Which investigation confirms the cause of her obstructed, infected biliary system before intervention?",
+          "options": [
+            "MRCP confirming the stone in the CBD",
+            "Plain abdominal radiograph",
+            "HIDA scan",
+            "Barium meal and follow-through",
+            "Erect chest radiograph"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الـMRCP هو الفحص غير الباضع المهم جدًا لتأكيد وجود الحجر في القناة الجامعة وتحديد حجمه وموضعه قبل التدخل؛ الأمواج أظهرت القنوات المتوسعة والزرع الدم سيؤكد الجرثوم لكنه لا يُظهر الحجر، وبقية الفحوص لا دور لها في تأكيد حصى القناة.",
+          "xp": 10,
+          "hints": [
+            "Non-invasive, no contrast, no endoscopy: the confirmatory imaging of duct stones.",
+            "It is also very important in cholangitis workup."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case02_s3",
+          "prompt": "After resuscitation and IV antibiotics, what is the definitive therapeutic step?",
+          "options": [
+            "ERCP with sphincterotomy, drainage of the biliary tree and removal of the CBD stone",
+            "Laparoscopic cholecystectomy alone",
+            "Prolonged antibiotics without drainage",
+            "Percutaneous cholecystostomy as definitive treatment",
+            "Transduodenal sphincterotomy as the first choice"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الخطوة الحاسمة هي تصريف الشجرة الصفراوية وإزالة السبب عبر التنظير مع قطع العاصرة واستخراج الحصى، مع دعامة أو أنبوب صفراوي أنفي إذا لزم تقسيم الإجراء. استئصال المرارة وحده لا يعالج انسداد القناة، والمضادات المطولة بلا تصريف تفشل لأن الصفراء تحت الضغط لا تتعقم، والجلبي المراري ليس العلاج المعياري لحصى القناة الجامعة، والقطع عبر الاثني عشر جراحة احتياطية عند فشل التنظير.",
+          "xp": 12,
+          "hints": [
+            "Drainage of the obstructed infected system is the life-saving step.",
+            "Steps 4 and 5 of the protocol: ERCP sphincterotomy then stone removal."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case02_s4",
+          "prompt": "The distal stone is too impacted and ERCP fails to clear the duct. What is the next line of treatment?",
+          "options": [
+            "Surgical CBD exploration: supraduodenal choledochotomy with stone removal then T-tube or choledochoduodenostomy, or transduodenal sphincterotomy with stone extraction",
+            "Stop all active treatment and observe",
+            "Referral for liver transplantation",
+            "Repeat ERCP daily for two weeks",
+            "Dissolution therapy with bile salts"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "عند فشل التنظير العلاجي نلجأ إلى الجراحة وفتح القناة الجامعة: الفتح فوق الاثني عشري واستخراج الحصى مع ترك أنبوب على شكل T أو إجراء مفاغرة قناة واثني عشر، أو قطع العاصرة عبر الاثني عشري واستخراج الحصى المنحشر عند الحليمة. الذوبان الدوائي والانتظار ليسا خيارين في خمج معتمد، وزرع الكبد لا يستطب، وتكرار التنظير يوميًا أسبوعين تأخير غير مقبول.",
+          "xp": 12,
+          "hints": [
+            "The surgical fallback has two routes: above the duodenum or through it.",
+            "T-tube or choledochoduodenostomy after supraduodenal stone removal."
+          ]
+        },
+        {
+          "id": "surg_L5_gallbladder_case02_s5",
+          "prompt": "Which complications must the team anticipate and actively monitor for during her admission?",
+          "options": [
+            "Gram-negative septicemia progressing to organ failure, and multiple liver abscesses",
+            "Post-cholecystectomy syndrome and Boas's sign",
+            "Saint triad and flatulent dyspepsia",
+            "Porcelain gallbladder and mucocele",
+            "Long cystic duct stump and slipped clips"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "مضاعفات الكولانجيتيس الصاعد: تجرثم الدم بجراثيم سلبية الغرام قد يقود إلى فشل أعضاء متعدد (صدمة وفشل كلوي وضيق تنفس)، وخراجات كبدية متعددة تُرى بالأمواج أو الـCT؛ لذلك تُراقب العلامات الحيوية والبول واللاكتات مع زروع دم متكررة، وتُتابع صور الكبد. بقية الخيارات تخص أمراضًا ومضاعفات أخرى لا علاقة لها بهذه المرحلة.",
+          "xp": 10,
+          "hints": [
+            "Think endotoxemia and seeded pus within the liver.",
+            "The two complications listed in the lecture for ascending cholangitis."
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص: التهاب قناة صفراوية صاعد قيحي بسبب حصى القناة الجامعة في سيدة مسنّة سكرية. العلامة المميزة: ثالوث شاركو مكتمل (حمّى ورجفة مع يرقان خفيف متقطع ومغص صفراوي مع تضخم كبد مؤلم) مع تحاليل انسدادية (بيليروبين ومباشر وفوسفاتاز قلوي مرتفعة مع إنزيمات خلوية شبه طبيعية) وقنوات متوسعة بالأمواج وحجر مؤكد بالـMRCP وعزل الإشريكية القولونية من زرع الدم. الدروس: الترتيب حاسم: قبول، إماهة وريدية، مضاد حيوي وريدي كسيفترياكسون، ثم تصريف عاجل عبر التنظير مع قطع العاصرة واستخراج الحصى، والجراحة عند الفشل. الفخ الأخطر: الاكتفاء بالمضادات الحيوية وانتظار التحسن؛ فالصفراء المنتنة تحت الضغط لا تتعقم إلا بالتصريف، وأي تأخير يدفع نحو تجرثم الدم السلبي الغرام وفشل الأعضاء وخراجات الكبد المتعددة."
+    }
+  ]
+}

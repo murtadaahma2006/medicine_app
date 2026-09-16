@@ -9,9 +9,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// لا ترمي استثناءات أبداً (نفس فلسفة بقية الخدمات).
 abstract final class LearnerProfile {
   static const String _prefOnboarded = 'onboarding.done';
-  static const String _prefGoal = 'daily.goal.cards';
   static const String _prefModule = 'placement.module';
   static const String _prefTheme = 'theme.mode';
+
+  /// التخصص السريري النشط (v20) — 'internal_medicine' (افتراضي) ·
+  /// 'surgery' · 'obgyn'. مشترك بين شاشتي المسار والمكتبة: اختيار
+  /// واحد يفترض القارئ في كليهما.
+  static const String _prefSpecialty = 'specialty.active';
 
   // ── القراءة العميقة (محرّك الأسبوع الأول) ──
   static const String _prefAnchorsEnabled = 'reading.anchors.enabled';
@@ -37,37 +41,8 @@ abstract final class LearnerProfile {
     }
   }
 
-  /// الهدف اليومي بالبطاقات (5/10/15/20 — الافتراضي 10).
-  static Future<int> dailyGoal() async {
-    try {
-      final SharedPreferences prefs = await SharedPreferences.getInstance();
-      return prefs.getInt(_prefGoal) ?? 10;
-    } catch (_) {
-      return 10;
-    }
-  }
-
-  /// ضبط الهدف اليومي.
-  static Future<void> setDailyGoal(int cards) async {
-    try {
-      final SharedPreferences prefs = await SharedPreferences.getInstance();
-      await prefs.setInt(_prefGoal, cards);
-    } catch (_) {
-      // صمت مقصود.
-    }
-  }
-
-  /// التخصص المحدد من الأونبوردنغ (null = لم يختر).
-  static Future<String?> placementModule() async {
-    try {
-      final SharedPreferences prefs = await SharedPreferences.getInstance();
-      return prefs.getString(_prefModule);
-    } catch (_) {
-      return null;
-    }
-  }
-
-  /// حفظ التخصص المفضل.
+  /// حفظ التخصص المفضل (من الأونبوردنغ — الكتابة فقط؛ القيمة لا
+  /// تُقرأ حالياً لكنها تُحفظ للاستخدام المستقبلي في تخصيص المسار).
   static Future<void> setPlacementModule(String module) async {
     try {
       final SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -103,6 +78,27 @@ abstract final class LearnerProfile {
         'dark' => ThemeMode.dark,
         _ => ThemeMode.system,
       };
+
+  /// التخصص السريري النشط — الباطنية افتراضاً (السلوك التاريخي
+  /// للمنصة قبل التوسع، وأمان ضد أي قيمة دخيلة).
+  static Future<String> activeSpecialty() async {
+    try {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      return prefs.getString(_prefSpecialty) ?? 'internal_medicine';
+    } catch (_) {
+      return 'internal_medicine';
+    }
+  }
+
+  /// ضبط التخصص السريري النشط.
+  static Future<void> setActiveSpecialty(String specialty) async {
+    try {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_prefSpecialty, specialty);
+    } catch (_) {
+      // صمت مقصود.
+    }
+  }
 
   // ───────────── القراءة العميقة (مراسي التثبيت) ─────────────
 

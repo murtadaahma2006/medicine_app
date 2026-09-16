@@ -1,0 +1,1284 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "obgyn_L5_diagnosis_of_pregnancy",
+    "specialty": "obgyn",
+    "title": "Diagnosis of Pregnancy: Symptoms, Signs, and Tests",
+    "module": "obstetrics",
+    "system": "reproductive",
+    "source": {
+      "file_name": "L5 diagnosis of pregnancy.pdf",
+      "page_count": 34
+    },
+    "tags": [
+      "pregnancy diagnosis",
+      "amenorrhea",
+      "presumptive signs",
+      "probable signs",
+      "positive signs",
+      "Hegar sign",
+      "Chadwick sign",
+      "Goodell sign",
+      "quickening",
+      "hCG pregnancy test",
+      "fundal height",
+      "Naegele rule"
+    ],
+    "order_index": 4,
+    "golden_tip": [
+      "Exam trap: serum β-hCG (radioimmunoassay) turns positive only 9-12 days after conception, and the β-subunit is assayed because anti-α-hCG antibodies cross-react with pituitary LH and give false positives. A positive serum test is > 25 mIU/L.",
+      "Classify the evidence: symptoms (amenorrhea, morning sickness, quickening) = presumptive; examiner signs (Chadwick, Goodell, Hegar, uterine enlargement, Braxton-Hicks, uterine souffle) = probable; fetal heartbeat, palpated fetal movement, ultrasound and X-ray = positive.",
+      "Numbers that discriminate: quickening at 18-20 weeks in a primigravida, two weeks earlier in a multigravida; fetal heart heard from 18-20 weeks at 120-160bpm, while a uterine souffle is a blowing murmur that SYNCHRONIZES WITH THE MATERNAL PULSE after 20 weeks."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Presumptive Symptoms of Early Pregnancy",
+      "summary_ar": "يبدأ تشخيص الحمل بالأعراض الافتراضية التي تشكو منها المريضة نفسها: انقطاع الطمث (مع علامة هارتمان)، وغثيان الصباح، وتكرار التبول، وتغيرات الثديين والشهية، والتعب، وفرز اللعاب المفرط، والإمساك. هذه الأعراض ترجّح الحمل لكنها ليست حاسمة، إذ قد تحدث لأسباب أخرى مثل الإرضاع والأدوية والتوتر والأمراض المزمنة ونقص الوزن الشديد.",
+      "sections": [
+        {
+          "heading": "Overview: How Pregnancy Evidence Is Classified",
+          "body_text": "This lecture on the diagnosis of pregnancy is delivered by **Dr.Hutham T.Al-Yaseen**, an OBGYN-fertility specialist. The material is organized around a three-tier framework that examiners love:\n- **Presumptive evidence (symptoms)** — changes felt by the patient herself: cessation of menstruation (amenorrhea), morning sickness, frequency of micturition, breast symptoms, appetite changes, fatigue, excessive salivation, and constipation. Any of these can be produced by other conditions, so they never establish the diagnosis of pregnancy on their own.\n- **Probable evidence (signs)** — changes detected by the examiner: genital tract changes (Chadwick sign, Goodell sign, Hegar sign), uterine enlargement, Braxton-Hicks contractions, uterine souffle, and palpation of the fetal outline. These are strongly suggestive but can still be mimicked by other pathology.\n- **Positive (diagnostic) evidence** — findings that confirm the presence of a fetus: fetal heartbeat, palpation of fetal movement, ultrasound, and X-ray.\nTo settle the diagnosis pregnancy tests based on hCG (urine and serum) plus ultrasonography are used, and in mid or late pregnancy dating relies on symptoms and signs, uterine size, and the EDC calculation. The deck's title slide simply credits the lecturer, and the closing slide is a decorative 'Thank you' page.",
+          "key_points": [
+            "Presumptive = symptoms felt by the patient; probable = signs elicited by the examiner; positive = findings that prove a fetus is present.",
+            "Symptoms alone (e.g. amenorrhea, nausea, quickening) are never diagnostic of pregnancy.",
+            "The lecture deck (34 pages) is by Dr.Hutham T.Al-Yaseen, OBGYN-fertility specialist; the closing 'Thank you' page carries no academic content."
+          ],
+          "check": {
+            "prompt": "A 26-year-old woman reports 8 weeks of amenorrhea, morning nausea, and breast tenderness. In the three-tier framework, this cluster of complaints belongs to which category of pregnancy evidence?",
+            "options": [
+              "Presumptive evidence (symptoms felt by the patient)",
+              "Probable evidence (signs elicited by the examiner)",
+              "Positive (diagnostic) evidence",
+              "Pathognomonic laboratory evidence"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "انقطاع الطمث وغثيان الصباح وألم الثدي أعراض تشكو منها المريضة نفسها، فهي أدلة افتراضية (presumptive) وليست علامات يكتشفها الفاحص ولا دلائل تثبت وجود الجنين. العلامات المحتملة مثل جودل وهيغار وتشادويك تُجس بالفحص السريري، أما نبض الجنين والموجات فوق الصوتية فهي الأدلة المؤكدة."
+          }
+        },
+        {
+          "heading": "Amenorrhea and Hartman's (Placental) Sign",
+          "body_text": "**Cessation of menstruation (amenorrhea)** is symptom number 1 and the classic first clue to pregnancy. Two caveats make it unreliable as sole evidence:\n- **Bleeding may still occur in the first 3 months** of an otherwise normal pregnancy; this light spotting is called **Hartman's sign (placental sign)** and must not be mistaken for a true period or automatically labeled a miscarriage.\n- **Amenorrhea has many non-pregnant causes**, so a missed period alone never proves conception. The slide content is a categorical diagram: its content title is 'Causes of amenorrhea', and the slide displays five colored rectangular boxes arranged in two rows — top row: **lactation** (orange box), **medication** (grey box), **stress** (yellow/amber box); bottom row: **chronic diseases** (blue box) and **severe weight loss** (green box, written on the slide as 'Sever weight loss').\nLactation causes amenorrhea in the postpartum period, and medication, psychological stress, chronic systemic diseases and severe weight loss are the other classic mimics listed. In practice, every amenorrheic woman of reproductive age needs a pregnancy test before any other work-up, because none of these symptoms is specific.",
+          "key_points": [
+            "Amenorrhea = symptom 1 of pregnancy, but it is presumptive, not diagnostic.",
+            "Hartman's sign (placental sign): bleeding may occur during the first 3 months of an otherwise normal pregnancy.",
+            "Non-pregnant causes of amenorrhea: lactation, medication, stress, chronic diseases, severe weight loss.",
+            "Amenorrhea plus any of these mimics is why symptoms alone never confirm pregnancy."
+          ]
+        },
+        {
+          "heading": "Morning Sickness and Frequency of Micturition",
+          "body_text": "**2. Morning sickness** is the second classical symptom:\n- Occurs in **50% of cases** (about half of pregnant women).\n- Appears **in the morning or soon after getting out of bed**.\n- Consists of **nausea and vomiting**.\n- **Disappears gradually at the end of the 3rd month** (end of the first trimester) — an important reassurance point for worried patients.\n- It is attributed to the **rise in hCG**.\n**3. Frequency of micturition** in the first trimester has three mechanisms:\n- **Congestion of the bladder mucosa**.\n- **hCG leads to increased blood supply to the pelvis**, adding to pelvic congestion.\n- **Pressure of the anteverted uterus on the bladder** while the uterus is still a pelvic organ.\nReassurance: the symptom **decreases towards the end of the first trimester**, as the uterus rises out of the pelvis into the abdomen and stops compressing the bladder.",
+          "key_points": [
+            "Morning sickness: 50% of cases, in the morning or soon after getting out of bed, nausea and vomiting, disappears gradually at the end of the 3rd month, attributed to rising hCG.",
+            "Frequency of micturition: bladder mucosal congestion + hCG-driven pelvic hyperemia + pressure of the anteverted uterus on the bladder.",
+            "Urinary frequency decreases towards the end of the first trimester."
+          ]
+        },
+        {
+          "heading": "Breast, Appetite, Fatigue, Salivation, and Bowel Symptoms",
+          "body_text": "**4. Breast changes (as symptoms):** the patient notices increased **heaviness, a tingling sensation, tenderness, and discomfort or actual pain** in the breasts. The physiological basis is the development of the **mammary ducts under estrogen (E↑)** and the **alveolar system under progesterone (P↑)**.\n**5. Appetite changes:** craving for certain types of food and refusal of others. The slide's text content is a single bullet, and the image serves as a visual metaphor for dietary variety: a top-down photograph of various healthy foods — sliced lemons, cherry tomatoes, sliced pineapple, cranberries and blueberries in heart-shaped bowls, a halved avocado, sliced kiwis, red and orange/yellow bell peppers, celery stalks, garlic cloves, ginger root, almonds in a white dish and a yellow powdery spice (turmeric); other items include a green lime on a dark surface.\n**6. Fatigue:** a tendency to sleep more, together with an **increase in basal body temperature (BBT)**. The slide pairs the bullet points with a photograph of a sleeping tabby cat lying relaxed on its back on light blue bedding, with the background softly blurred (bokeh effect) — a visual metaphor for somnolence. Another slide shows a pregnant woman (wearing a dark striped long-sleeved shirt, hands resting on her abdomen) beside wrapped gift boxes (paper with a red-and-white geometric pattern and a multicolored heart pattern tied with a pink string) and a wooden toy — the setting simply reinforces the pregnancy theme.\n**7. Excessive salivation:** **ptyalism** is common during the first trimester of pregnancy.\n**8. Constipation:** due to the **progesterone effect on smooth muscles** of the gut. The slide's histology image (an H&E-type stain highlighting cellular nuclei in dark purple) shows a tubular or villous structure with a dense, darkly stained central core of small, tightly packed cells (possibly representing a developing vessel, seen in cross section), surrounded by a wide zone of large, clear, vacuolated cells with thin cell membranes and a thin outer layer of cuboidal/columnar cells forming the outer boundary of the structure — edematous mucosal tissue under hormonal influence, so that on cross section the field is dominated by large, clear, vacuolated cells. Contextual interpretation: the image likely illustrates the tissue relaxation and fluid retention consistent with progesterone's smooth-muscle-relaxing effect on the gut.",
+          "key_points": [
+            "Breast symptoms: heaviness, tenderness, tingling, discomfort or actual pain — mammary ducts develop under estrogen, the alveolar system under progesterone.",
+            "Fatigue: tendency sleep more, with an increased BBT (lecture wording: 'tendency to sleep more').",
+            "Ptyalism (excessive salivation) is common during the first trimester of pregnancy.",
+            "Constipation: progesterone effect smooth-muscle relaxation of the bowel.",
+            "Appetite changes: craving for certain types of food and refusal of others."
+          ],
+          "check": {
+            "prompt": "A patient in her first trimester reports marked constipation. Which hormone effect explains this symptom?",
+            "options": [
+              "Progesterone relaxing smooth muscle",
+              "Estrogen stimulating peristalsis",
+              "hCG irritating the gastric mucosa",
+              "Oxytocin contracting the bowel"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "الإمساك في الحمل المبكر ناتج عن تأثير البروجسترون المُرخي للعضلات الملساء في الجهاز الهضمي مما يبطئ حركة الأمعاء. الإستروجين لا يسبب إمساكاً، وهرمون hCG مسؤول عن غثيان الصباح وليس الإمساك، والأوكسيتوسين يخص انقباض الرحم أثناء المخاض لا الأمعاء."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Amenorrhea",
+          "definition_ar": "انقطاع الطمث؛ أول أعراض الحمل لكنه غير حاسم إذ يحدث أيضاً بسبب الإرضاع والأدوية والتوتر والأمراض المزمنة ونقص الوزن الشديد."
+        },
+        {
+          "term": "Hartman's (placental) sign",
+          "definition_ar": "علامة هارتمان أو العلامة المشيمية: نزف بسيط قد يحدث خلال الأشهر الثلاثة الأولى من حمل طبيعي ولا يعني نزولاً حيضياً حقيقياً ولا إجهاضاً بالضرورة."
+        },
+        {
+          "term": "Morning sickness",
+          "definition_ar": "غثيان الصباح: غثيان وإقياع يحدث في نحو 50% من الحملات صباحاً أو بعد النهوض من الفراش، ويختفي تدريجياً نهاية الشهر الثالث، ويعزى لارتفاع hCG."
+        },
+        {
+          "term": "Frequency of micturition",
+          "definition_ar": "تكرار التبول في الثلث الأول بسبب احتقان مخاطية المثانة وزيادة التروية الحوضية بفعل hCG وضغط الرحم المعتدل على المثانة، ويتحسن نهاية الثلث الأول."
+        },
+        {
+          "term": "Ptyalism",
+          "definition_ar": "فرز اللعاب المفرط (فرط اللعاب)، شائع خلال الثلث الأول من الحمل."
+        },
+        {
+          "term": "Basal body temperature (BBT)",
+          "definition_ar": "حرارة الجسم القاعدية: ترتفع في الحمل المبكر وتُذكر ضمن أعراض التعب، كما أنها أحد الاختبارات التقليدية للحمل."
+        },
+        {
+          "term": "Presumptive signs",
+          "definition_ar": "الأدلة الافتراضية: أعراض تشعر بها المريضة نفسها (كانقطاع الطمث والغثيان والابتهاك) ولا تثبت الحمل بذاتها."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "First-Trimester Signs: Genital Tract and Breast",
+      "summary_ar": "تستعرض هذه المفهومة علامات الثلث الأول التي يكتشفها الفاحص: تلون المهبل وعنق الرحم بالأزرق البنفسجي (علامة تشادويك)، وليونة عنق الرحم (علامة جودل بين الأسبوعين 4-8)، وانضغاطية برزخ عنق الرحم (علامة هيغار بين الأسبوعين 6-10 وتصبح سالبة بعدها)، إضافة إلى علامات الثدي مثل التصبغ والهالة الثانوية وحليمات مونتغمري وإفراز اللبأ. هذه العلامات محتملة وليست مؤكدة.",
+      "sections": [
+        {
+          "heading": "Genital Tract Changes and Chadwick Sign",
+          "body_text": "The divider slide 'Signs in first trimester' is purely decorative — colored cloud-shaped tags (cloud shaped speech bubble cutouts) hanging from strings, suspended by a black string/cord like a mobile — it carries no clinical data; the exam-relevant signs follow. The first-trimester signs span pregnancy pages 12-18 of the deck.\n**Vagina:** on inspection the vagina shows a **bluish or purple discoloration** caused by **congested pelvic vasculature**, together with **increased vaginal discharge** due to **estrogen and progesterone (E and P↑)** — a discoloration that may appear simply bluish or purple. The slide's text content is one bullet, and the accompanying histology image shows on microscopy a trichrome-like staining pattern: on the left side, a dense vertical band of small, densely packed polygonal cells with several large, clear circular lumens (glandular or vascular structures seen in cross-section, suggesting glandular tissue), beside a more loosely arranged region of large, edematous cells with blue cell membranes and magenta/purple-stained connective elements — the structural tissue architecture underlying the hypertrophied vaginal walls and increased vascularity of pregnancy, as mentioned in the text.\n**Chadwick sign** is a **bluish-purple discoloration of the cervix** (a bluish purple hue of the cervix and vagina) that can occur in **early pregnancy**; it reflects venous congestion and increased vasculature of the pelvic organs. Its histology picture shows a transition from deep purplish tones toward lighter bluish tones across densely packed stratified epithelium — the image description emphasizes this color transition as the visible correlate of the congested vasculature, illustrating the histological basis of the bluish discoloration. Chadwick sign is classified as a **probable sign** of pregnancy.",
+          "key_points": [
+            "Vaginal changes: bluish or purple discoloration (congested pelvic vasculature) + increased vaginal discharge (estrogen and progesterone).",
+            "Chadwick sign = bluish-purple discoloration of the cervix in early pregnancy — a probable sign.",
+            "The genital tract changes are illustrated by histology of hypertrophied, edematous mucosa with increased vascularity."
+          ]
+        },
+        {
+          "heading": "Goodell and Hegar Signs (the Cervical Signs Figure)",
+          "body_text": "**Goodell sign** is a **probable sign of pregnancy characterized by softening of the cervix**, noticed in the cervix during the **first 4 to 8 weeks** of pregnancy (the figure labels it as the first 4-8wks). A positive Goodell sign occurs due to **increased blood flow**, with three underlying causes: **hypertrophy (enlargement) of existing blood vessels**, **growth of new blood vessels (angiogenesis)**, and **edema due to increased blood circulation**. It is a clinical indication of early pregnancy but is **not definitive**; in clinical context it may present together with the **Chadwick sign and Hegar sign**.\n**Hegar sign** is a **non-specific sign of pregnancy characterized by the compressibility and softening of the cervical isthmus** — the portion of the cervix between the uterus (the uterine body) and the vaginal portion of the cervix. It is elicited on **bimanual examination**, with the abdominal hand (a gloved hand on the lower abdomen) palpating the uterine fundus while two gloved fingers of the vaginal hand palpate the cervix; the softened isthmus at the junction between cervix and uterine body feels so compressible that the uterus seems divided into two separate segments.\n**Timing:** the sign can be elicited between the **6th and 10th week** of pregnancy, after which the sign **becomes negative** because the **gestational sac has now filled the whole uterine cavity**.\nThe lecture's figure (source: Osmosis from Elsevier) contains several diagrams shown side by side: a diagram showing a **normal (non-pregnant) cervix** that is firm with a small, tight external os; a **Goodell sign** cervix that is larger and softer with a slightly more patulous (relaxed) opening; a **Chadwick sign** cervix colored blue/purple (cyanosis of the tissue indicating venous congestion and increased vascularity of the pelvic organs); and a **Hegar sign** panel depicting the bimanual examination with the early gestational sac/embryo inside the uterus. Ancillary illustrations include a visual diagram of blood vessels showing hypertrophy and angiogenesis (the physiological cause of the signs), a pregnant-woman icon with the fetus in the womb, and an instrument drawing (a Sim's speculum-type vaginal instrument).",
+          "key_points": [
+            "Goodell sign: softening of the cervix during weeks 4-8, due to increased blood flow (vessel hypertrophy + growth of new blood vessels + edema).",
+            "Hegar sign: compressibility and softening of the cervical isthmus (between the uterine body and the vaginal portion of the cervix), elicited weeks 6-10.",
+            "Hegar sign becomes negative after the 10th week because the gestational sac has filled the whole uterine cavity.",
+            "Both are probable (not positive) signs; Goodell sign may present with Chadwick and Hegar signs."
+          ],
+          "check": {
+            "prompt": "On bimanual examination at 8 weeks gestation the cervical isthmus feels markedly compressible, but the same finding is absent at 14 weeks. Why did Hegar sign become negative?",
+            "options": [
+              "The gestational sac has now filled the whole uterine cavity",
+              "The cervix becomes fibrotic after 10 weeks",
+              "hCG falls to zero by 12 weeks",
+              "The isthmus relocates above the pelvic brim after 8 weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "علامة هيغار تُجس بين الأسبوعين السادس والعاشر حيث يكون برزخ عنق الرحم طرياً قابلاً للانضغاط، ثم تصبح العلامة سالبة لأن الكيس الحملي يصبح مالئاً كامل تجويف الرحم فلا يبقى برزخ قابل للانضغاط. لا يحدث تليف للعنق، وhCG لا يهبط للصفر في هذه المرحلة، ولا ينتقل البرزخ فوق حافة الحوض."
+          }
+        },
+        {
+          "heading": "Breast Signs in Early Pregnancy",
+          "body_text": "On examination, the breasts show:\n- **Increased size and sensitivity of the breasts and nipples**, with **increased vascularity and the appearance of subcutaneous veins**.\n- **Dark pigmentation of the nipples and areola**.\n- **Development of the second areola** (a secondary ring of pigmentation around the areola).\n- **Increased prominence of the tubercles of Montgomery** (small sebaceous glands on the areola).\n- **Secretion of colostrum** — the first milk-like fluid that can be expressed in early pregnancy.\nThese breast signs are classified as **probable signs** of pregnancy: they are produced by estrogen- and progesterone-driven development of the duct and alveolar systems, but similar changes can occur with other hormonal states, so on their own they confirm neither the pregnancy nor the fetus.",
+          "key_points": [
+            "Breast signs: increased size and sensitivity, subcutaneous veins, dark pigmentation of nipples/areola, second areola, prominent Montgomery tubercles, colostrum secretion.",
+            "Clinical relevance: breast examination findings are probable signs — an extension of the breast symptoms (heaviness, tingling, pain) into objective findings."
+          ],
+          "check": {
+            "prompt": "Which breast finding described in this lecture is a secretion that can appear in early pregnancy?",
+            "options": [
+              "Colostrum",
+              "Mature milk",
+              "Lochia",
+              "Meconium"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "اللبأ (colostrum) هو الإفراز الذي قد يُعصر من الثدي في الحمل المبكر قبل نزول الحليب الناضج بعد الولادة. اللوحاء إفراز رحمي بعد الولادة، والعقي براز الجنين داخل الرحم، والحليب الناضج يظهر بعد الولادة وليس في الثلث الأول."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Chadwick sign",
+          "definition_ar": "علامة تشادويك: تلون عنق الرحم والمهبل بالأزرق البنفسجي في الحمل المبكر نتيجة الاحتقان الوريدي وزيادة تروية الحوض؛ علامة محتملة."
+        },
+        {
+          "term": "Goodell sign",
+          "definition_ar": "علامة جودل: ليونة عنق الرحم بين الأسبوعين 4-8 بسبب زيادة التروية الدموية (ضخامة الأوعية القائمة ونمو أوعية جديدة ووذمة)؛ علامة محتملة."
+        },
+        {
+          "term": "Hegar sign",
+          "definition_ar": "علامة هيغار: انضغاطية وليونة برزخ عنق الرحم (بين جسم الرحم والجزء المهبلي للعنق) تُجس بالفحص الثنائي بين الأسبوعين 6-10 ثم تصبح سالبة لأن الكيس الحملي يملأ الرحم."
+        },
+        {
+          "term": "Cervical isthmus",
+          "definition_ar": "برزخ عنق الرحم: الجزء الواقع بين جسم الرحم والجزء المهبلي من عنق الرحم، وهو موضع علامة هيغار."
+        },
+        {
+          "term": "Colostrum",
+          "definition_ar": "اللبأ: إفراز لبني أولي قد يُعصر من الثديين في الحمل المبكر."
+        },
+        {
+          "term": "Tubercles of Montgomery",
+          "definition_ar": "حليمات مونتغمري: غدد دهنية صغيرة في هالة الثدي تزداد بروزاً في الحمل."
+        },
+        {
+          "term": "Second areola",
+          "definition_ar": "الهالة الثانوية: حلقة تصبغ إضافية تتشكل حول الهالة الأصلية أثناء الحمل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c3",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Probable Signs of the Second Trimester",
+      "summary_ar": "في الثلث الثاني تصبح علامات الحمل المحتملة أوضح: تضخم الرحم (يبدو كروياً بالفحص الثنائي ويُجس فوق الارتفاق العاني بدءاً من الأسبوع 12)، وانقباضات براكستون-هيكس غير المؤلمة (علامة بالمر قبل صعود الرحم)، ونفخة الرحم المتزامنة مع نبض الأم، وجس مخطط الجنين. كما تشعر المريضة بابتهاك الجنين بين الأسبوعين 18-20 عند البكر وأسبوعين أبكر عند متعددات الحمل، مع التنبيه إلى أن تضخم البطن وحده قد يكون بسبب كيس مبيض أو شحوم.",
+      "sections": [
+        {
+          "heading": "Uterine Enlargement and Braxton-Hicks (Palmer's Sign)",
+          "body_text": "The probable signs first become evident as the uterus outgrows the pelvis in the second trimester. **Uterine enlargement** is the leading probable sign:\n- On **bimanual examination**, the **body of the uterus is felt to be globular**, and as progressive enlargement occurs the diagnosis becomes more evident.\n- **Softening of the uterus due to increased vascularity** accompanies the growth.\n- **Abdominal enlargement from the enlarging uterus is noticed at the 12th week**: the uterus is then **just above the pubic symphysis**, and it gradually increases thereafter.\n- **Intermittent painless contractions may be felt even when the uterus is still in the pelvis — this is Palmer's sign**. As the uterus rises up into the abdomen, these intermittent contractions become more easily felt and are then called **Braxton Hicks contractions** (Braxton-Hicks): painless, irregular uterine tightenings that the examiner can palpate through the abdominal wall.\n**Uterine souffle** and **palpation of the fetal outline** complete the list of probable signs of the second trimester.",
+          "key_points": [
+            "Probable signs second trimester: uterine enlargement, Braxton-Hicks contractions, uterine souffle, palpation of fetal outline.",
+            "The uterus feels globular on bimanual examination and softens because of increased vascularity.",
+            "Abdominal (uterine) enlargement becomes noticeable at the 12th week, just above the pubic symphysis.",
+            "Palmer's sign = intermittent painless contractions felt while the uterus is still in the pelvis; more easily felt once the uterus rises = Braxton Hicks contractions."
+          ]
+        },
+        {
+          "heading": "Uterine Souffle and Palpation of Fetal Outline",
+          "body_text": "**Uterine souffle** is a **blowing murmur** heard over the uterus, produced by **increased blood flow to the uterus** during pregnancy. Technique and characteristics:\n- The **stethoscope is passed firmly against the uterine wall**.\n- The murmur **synchronizes with the maternal pulsation** — the key discriminator from the fetal heart, which keeps its own independent rate of 120-160bpm.\n- It is typically **heard after 20 weeks**.\nBecause it reflects maternal uterine blood flow rather than the fetus itself, the souffle remains a **probable** sign of pregnancy.\n**Palpation of fetal outline:** by abdominal palpation fetal outlines (the fetal body and its parts) can be identified around the **20th week**; like the souffle it is a probable sign, because a discrete outline can occasionally be mimicked by other pelvic-abdominal masses. The slide for this finding shows a close-up photograph of a newborn baby's foot resting in an adult's hand as the visual for the fetal body.",
+          "key_points": [
+            "Uterine souffle: blowing murmur from increased uterine blood flow; stethoscope pressed firmly against the uterine wall; synchronizes with maternal pulsation; heard after 20 weeks.",
+            "Differentiate by the pulse: beats with the mother = uterine souffle; independent 120-160bpm rhythm = fetal heart.",
+            "By palpation fetal outlines become identifiable at about the 20th week."
+          ]
+        },
+        {
+          "heading": "Abdominal Enlargement as a Symptom and Quickening",
+          "body_text": "**Symptoms of the second trimester — abdominal enlargement:**\n- Women notice **abdominal fullness in early pregnancy**.\n- Later on the **uterine enlargement becomes more evident** as the fundus rises.\n- **Caution:** some women feel that she is pregnant because of abdominal enlargement, but this enlargement may be due to **other reasons, e.g. an ovarian cyst or fat (obesity)** — one more reason abdominal enlargement alone is only presumptive evidence.\n**Quickening** is the **perception of the first fetal movement** by the mother:\n- In a **primigravida**, the mother feels fetal movement at **18-20 weeks**.\n- In a **multigravida**, she feels it **two weeks earlier** (about 16-18 weeks), because she recognizes the sensation from previous pregnancies.\n- Quickening indicates three things: **the diagnosis of pregnancy, the duration of pregnancy, and the safety of the fetus** — continued normal movement reassures about fetal well-being.\nDespite this triple value, quickening is a **symptom (presumptive evidence)**, not a positive sign, since only the mother perceives it.",
+          "key_points": [
+            "Quickening = perception of the first fetal movement: 18-20 weeks in a primigravida, two weeks earlier in a multigravida.",
+            "Quickening indicates the diagnosis of pregnancy, the duration of pregnancy, and the safety of the fetus — yet it remains a presumptive symptom.",
+            "Abdominal enlargement can also come from an ovarian cyst or fat — never diagnostic by itself."
+          ],
+          "check": {
+            "prompt": "A 29-year-old G3P2 reports first feeling definite fetal movements at 17 weeks. Is this timing consistent with the lecture?",
+            "options": [
+              "Yes — multigravidas feel quickening two weeks earlier than the 18-20 weeks of primigravidas",
+              "No — quickening is always at 20 weeks regardless of parity",
+              "No — multigravidas feel it two weeks later than primigravidas",
+              "It suggests a dating error of about 4 weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "تبدأ الأم البكر بالإحساس بحركة الجنين بين الأسبوع 18-20، بينما تشعر متعددة الحمل بالحركة أسبوعين أبكر تقريباً (16-18 أسبوعاً) لأنها تعرف الإحساس من حملاتها السابقة. فالشعور بالحركة عند الأسبوع 17 في مريضة G3P2 طبيعي تماماً ولا يدل على خطأ في حساب العمر الحملي."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Braxton-Hicks contractions",
+          "definition_ar": "انقباضات براكستون-هيكس: انقباضات رحمية متقطعة غير مؤلمة تُجس بسهولة أكبر بعد صعود الرحم إلى البطن؛ علامة محتملة في الثلث الثاني."
+        },
+        {
+          "term": "Palmer's sign",
+          "definition_ar": "علامة بالمر: الشعور بانقباضات رحمية متقطعة غير مؤلمة بينما لا يزال الرحم داخل الحوض."
+        },
+        {
+          "term": "Uterine souffle",
+          "definition_ar": "نفخة الرحم: نفخة هابطة تُسمع بضغط السماعة بإحكام على جدار الرحم بعد الأسبوع 20 وتتزامن مع نبض الأم؛ سببها زيادة جريان الدم الرحمي."
+        },
+        {
+          "term": "Quickening",
+          "definition_ar": "الابتهاك: إحساس الأم بأول حركة للجنين، بين الأسبوع 18-20 عند البكر وأسبوعين أبكر عند متعددات الحمل."
+        },
+        {
+          "term": "Primigravida",
+          "definition_ar": "البكر: المرأة في حملها الأول، تشعر بابتهاك الجنين بين الأسبوع 18-20."
+        },
+        {
+          "term": "Multigravida",
+          "definition_ar": "متعددة الحمل: المرأة التي سبق لها الحمل أكثر من مرة، وتشعر بالابتهاك أسبوعين أبكر من البكر."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Positive (Diagnostic) Signs of Pregnancy",
+      "summary_ar": "العلامات المؤكدة للحمل هي التي تثبت وجود الجنين نفسه: نبض الجنين (يُسمع بين الأسبوع 18-20 بمعدل طبيعي 120-160 نبضة في الدقيقة)، وجس حركة الجنين من قبل الفاحص، والموجات فوق الصوتية، والأشعة السينية. يجب التمييز بين نبض الجنين المستقل عن نبض الأم ونفخة الرحم التي تتزامن مع نبض الأم وتُسمع بعد الأسبوع 20، ويُجس مخطط الجنين عند الأسبوع 20.",
+      "sections": [
+        {
+          "heading": "The Four Positive Signs",
+          "body_text": "**Positive (diagnostic) signs** are the findings that definitively establish that a fetus is present. The lecture lists four:\n1. **Fetal heartbeat** — heard with the stethoscope from the 18th-20th weeks at a normal rate of **120-160bpm** (auscultation details in the next section).\n2. **Palpation of fetal movement** — the examiner feels the fetus move; this is distinct from quickening, which only the mother perceives.\n3. **Ultrasound** — demonstration of the fetus itself (the ultrasonography findings listed with the laboratory tests: enlargement of uterus, gestational sac, embryo or fetal pulse).\n4. **X-ray** — radiological demonstration of the fetus (used historically; modern practice avoids radiation exposure in pregnancy whenever possible).\nEverything else in the lecture sits below this tier: symptoms are presumptive evidence, and probable signs such as the Chadwick, Goodell and Hegar signs, uterine enlargement, Braxton-Hicks contractions, uterine souffle and palpation of fetal outline can all be mimicked by other conditions — for example an ovarian cyst or fat can enlarge the abdomen, and a soft uterus can reflect other hormonal states.",
+          "key_points": [
+            "Positive (diagnostic) signs: fetal heartbeat, palpation of fetal movement, ultrasound, X-ray.",
+            "Fetal heartbeat: heard from the 18th-20th weeks at a normal rate of 120-160bpm.",
+            "Only positive signs prove a fetus; every probable sign can be mimicked (e.g. ovarian cyst or fat)."
+          ]
+        },
+        {
+          "heading": "Fetal Heart Auscultation and Differentiation from Uterine Souffle",
+          "body_text": "**Fetal heart:**\n- **Heard at the 18th-20th weeks** of pregnancy with a (fetal) stethoscope.\n- **Normal rate: 120-160bpm** — a rapid rate clearly different from the maternal pulse.\n- **Differentiation from the uterine souffle:** the uterine souffle arises from **increased blood flow to the uterus**; when the **stethoscope is passed firmly against the uterine wall** you hear a **blowing murmur that synchronizes with the maternal pulsation**, and this souffle is heard **after 20 weeks**. In contrast, the fetal heart keeps its own independent 120-160bpm rhythm that is out of step with the mother's pulse.\nPractical rule: palpate the maternal radial pulse while listening — a sound beating with the mother is the uterine souffle (probable sign, maternal blood flow), while a rapid independent 120-160bpm sound is the fetal heart (positive sign).\n**Fetal body:** by the **20th week** the outlines of the fetus can be palpated on abdominal examination; by palpation fetal parts become distinct at this stage. The slide's figure (image description subject: a close-up photograph of a newborn baby's foot resting in an adult's hand, the pink soft sole and toes visible) visually represents the fetus as a discrete, palpable body.",
+          "key_points": [
+            "Fetal heart is heard at the 18th-20th weeks at 120-160bpm; the uterine souffle is heard after 20 weeks and synchronizes with maternal pulsation.",
+            "A blowing murmur following the maternal pulse = uterine souffle (probable); an independent 120-160bpm rhythm = fetal heart (positive).",
+            "Fetal outlines are palpable at the 20th week."
+          ],
+          "check": {
+            "prompt": "While auscultating at 24 weeks you hear a soft blowing sound. It beats in time with the mother's radial pulse of 88/min. What is it?",
+            "options": [
+              "Uterine souffle",
+              "Fetal heart at 88 bpm (fetal bradycardia)",
+              "Maternal bowel sounds",
+              "Amniotic fluid flow"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "النفخة الناعمة المتزامنة مع نبض الأم (88/د) هي نفخة الرحم الناتجة عن زيادة جريان الدم إلى الرحم، وتُسمع بضغط السماعة بإحكام على جدار الرحم بعد الأسبوع 20. نبض الجنين الطبيعي 120-160/د وهو مستقل عن نبض الأم، فمعدل 88/د لا يوافق نبضاً جنينياً طبيعياً، وأصوات الأمعاء والسائل الأمنيوسي ليست نفخات متزامنة مع النبض."
+          }
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "Positive (diagnostic) signs",
+          "definition_ar": "العلامات المؤكدة للحمل: نبض الجنين، وجس حركة الجنين، والموجات فوق الصوتية، والأشعة السينية؛ وهي التي تثبت وجود الجنين."
+        },
+        {
+          "term": "Fetal heartbeat",
+          "definition_ar": "نبض الجنين: يُسمع بين الأسبوع 18-20 بمعدل طبيعي 120-160 نبضة في الدقيقة؛ علامة مؤكدة للحمل."
+        },
+        {
+          "term": "Palpation of fetal movement",
+          "definition_ar": "جس حركة الجنين من قبل الفاحص؛ علامة مؤكدة تختلف عن الابتهاك الذي تحس به الأم وحدها."
+        },
+        {
+          "term": "Fetal outline",
+          "definition_ar": "مخطط الجنين: يُجس جسم الجنين وأجزاؤه بالجس البطني حول الأسبوع 20؛ علامة محتملة."
+        },
+        {
+          "term": "Ultrasonography",
+          "definition_ar": "الموجات فوق الصوتية: تُظهر تضخم الرحم والكيس الحملي والجنين أو نبضه؛ وسيلة تأكيد للحمل."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Laboratory Diagnosis: hCG-Based Pregnancy Tests",
+      "summary_ar": "يعتمد التشخيص المخبري للحمل على هرمون الغونادوتروبين المشيمي hCG الذي تنتجه الخلايا الأرومية الغاذية الالتهامية ويُفرز في بلازما الأم ثم يُطرح في بولها. اختبار البول أحادي الخطوة يعطي نتيجة موجبة أو سالبة، بينما يكشف اختبار المصل β-hCG بالمقايسة الإشعاعية المناعية الحمل خلال 9-12 يوماً من الإلقاح عندما يتجاوز 25 وحدة دولية/لتر. تُستهدف الوحدة الفرعية β تحديداً لأن الأضداد ضد الوحدة α تتفاعل مع LH النخامي فتعطي نتائج موجبة كاذبة، ومن الاختبارات الأقدم اختبار البروجسترون وفحص مخاط عنق الرحم ودرجة حرارة الجسم القاعدية.",
+      "sections": [
+        {
+          "heading": "Available Tests and hCG Physiology",
+          "body_text": "**Laboratory tests for pregnancy:**\n1. **Pregnancy test**\n   - **Urine hCG test (one step):** a rapid qualitative test reported as positive (+) or negative (-).\n   - **Serum β-hCG:** reported positive when **> 25 mIU/L**.\n2. **Ultrasonography:** demonstrates **enlargement of the uterus**, the **gestational sac**, and an **embryo or fetal pulse**.\n**Physiology behind the tests:** pregnancy tests are **based on the production of chorionic gonadotrophin (hCG) by the syncytiotrophoblastic cells** during early pregnancy. hCG is **secreted into the maternal bloodstream (plasma)** and is then **excreted in the mother's urine** — which is why both blood and urine can be tested. The lecture's flow is: syncytiotrophoblastic production → secretion into maternal plasma → excretion into urine → immunological test or serum assay.",
+          "key_points": [
+            "Urine hCG one-step test: qualitative, reported as + or -; serum β-hCG is positive when > 25 mIU/L.",
+            "hCG is produced by syncytiotrophoblastic cells, secreted into maternal plasma, and excreted in the mother's urine.",
+            "Ultrasonography shows uterine enlargement, the gestational sac, and an embryo or fetal pulse."
+          ]
+        },
+        {
+          "heading": "hCG Structure and the Immunological Urine Test",
+          "body_text": "**hCG structure:** hCG is a **glycoprotein consisting of an α (alpha) subunit and a β (beta) subunit**. The **α subunit is also present in pituitary LH**, whereas the **β subunit is characteristic of the hCG hormone** — the biochemical reason modern assays target β-hCG.\n**The urine test is called an immunological test.** Principle:\n- **Anti-hCG** antibody (from a **rabbit or sheep which has been immunized against hCG**) is added to the maternal urine.\n- An **indicator** is then added: **hCG-coated latex particles OR hCG-coated RBC (red blood) cells**.\n- **If there is no pregnancy, the latex particles precipitate or the RBC cells agglutinate** (the free anti-hCG cross-links the coated indicator particles).\n- If the patient **is** pregnant, hCG in the urine saturates the anti-hCG and blocks the particle reaction, producing the positive pattern — this classic agglutination/precipitation inhibition principle underlies the one-step urine kits.",
+          "key_points": [
+            "hCG = glycoprotein with α + β subunits; α is shared with pituitary LH, β is specific to hCG.",
+            "Urine immunological test: anti-hCG (rabbit or sheep) + indicator (hCG-coated latex particles or hCG-coated RBC cells).",
+            "No pregnancy → latex particle precipitation or RBC agglutination; pregnancy → the reaction is blocked by urinary hCG."
+          ]
+        },
+        {
+          "heading": "Serum β-hCG (Radioimmunoassay)",
+          "body_text": "**Maternal serum test (radioimmunoassay, RIA):**\n- **Detects the hCG β subunit specifically.**\n- Can diagnose pregnancy **within 9-12 days after conception** — earlier than any symptom or sign in this lecture.\n- **The β subunit is more accurate because anti-α hCG may cross-react with LH and give a false positive result.**\nClinical bottom line: when a very early diagnosis is needed, the serum β-hCG radioimmunoassay is the test of choice; for routine confirmation after a missed period, the one-step urine test usually suffices, and ultrasonography confirms the pregnancy and its location.",
+          "key_points": [
+            "Serum β-hCG (RIA): detects the β subunit specifically; positive within 9-12 days after conception.",
+            "Anti-α hCG may cross-react with LH and give a false positive — that is why β-subunit assays are preferred.",
+            "Positive threshold for the serum test: > 25 mIU/L."
+          ],
+          "check": {
+            "prompt": "A woman had a single conception event 10 days ago and wants to know now whether she conceived. Which test can diagnose pregnancy this early?",
+            "options": [
+              "Serum β-hCG radioimmunoassay",
+              "Urine one-step hCG test",
+              "Cervical mucus examination",
+              "Palpation for Hegar sign"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "مقايسة β-hCG في المصل بالمقايسة الإشعاعية المناعية تكشف الحمل خلال 9-12 يوماً من الإلقاح لأنها تقيس الوحدة الفرعية β خصيصاً وبحساسية عالية. اختبار البول أحادي الخطوة أقل حساسية في هذه المرحلة المبكرة جداً، وفحص مخاط عنق الرحم اختبار تقليدي غير نوعي، وعلامة هيغار لا تُجس قبل الأسبوع 6-10 من الحمل أي بعد فترة أطول بكثير."
+          }
+        },
+        {
+          "heading": "Other Traditional Tests",
+          "body_text": "The lecture lists three additional (older, adjunctive) tests:\n1. **Progesterone test** — in pregnancy the progesterone produced by the corpus luteum maintains the endometrium, so withdrawal bleeding fails to occur after progesterone administration (a positive progesterone-type response argues for pregnancy).\n2. **Cervical mucus examination** — under progesterone dominance the mucus of early pregnancy becomes thick and scanty with ferning absent, a gestational-type mucus pattern.\n3. **Basal body temperature (BBT)** — a sustained luteal-type rise in BBT that does not fall at the expected time supports early pregnancy (matching the fatigue symptom note of an increased BBT).\nThese tests are of largely historical or adjunctive value today; hCG assays and ultrasound have replaced them for routine diagnosis. The slide illustrates the topic with a photograph of laboratory pipette tips, each holding a droplet of clear liquid, above a multi-well plate containing pink/purple liquid — the setting is a typical laboratory environment, with the background softly blurred (bokeh effect) in green and blue tones and an orange dashed arc visible in the upper right corner of the slide.",
+          "key_points": [
+            "Other tests listed: progesterone test, cervical mucus examination, basal body temperature (BBT).",
+            "These traditional tests are adjunctive/historical — hCG assays and ultrasound are the modern standard."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "hCG",
+          "definition_ar": "الغونادوتروبين المشيمي البشري: غليكوبروتين تنتجه الخلايا الأرومية الغاذية الالتهامية، يُفرز في بلازما الأم ثم يُطرح في بولها، وعليه تُبنى اختبارات الحمل."
+        },
+        {
+          "term": "β-subunit",
+          "definition_ar": "الوحدة الفرعية β: خاصة بهرمون hCG وتُستهدف في المقايسات النوعية، بينما الوحدة α مشتركة مع LH النخامي."
+        },
+        {
+          "term": "Radioimmunoassay (RIA)",
+          "definition_ar": "المقايسة الإشعاعية المناعية: مقايسة المصل التي تكشف الوحدة الفرعية β خصيصاً وتشخص الحمل خلال 9-12 يوماً من الإلقاح."
+        },
+        {
+          "term": "Syncytiotrophoblast",
+          "definition_ar": "الأرومة الغاذية الالتهامية: طبقة الخلايا المنتجة لهرمون hCG في الحمل المبكر."
+        },
+        {
+          "term": "Immunological test",
+          "definition_ar": "الاختبار المناعي البولي: يُضاف ضد hCG (من أرنب أو خروف مُنّع ضد hCG) إلى بول الأم ثم كاشف من جزيئات اللاتكس أو كريات الدم الحمراء المغلفة بـ hCG؛ غياب الحمل يُظهر ترسيباً أو تراصاً."
+        },
+        {
+          "term": "False positive",
+          "definition_ar": "النتيجة الموجبة الكاذبة: نتيجة إيجابية خاطئة، كما يحدث عند تفاعل الأضداد المضادة للوحدة α مع LH النخامي."
+        }
+      ],
+      "difficulty": "advanced",
+      "order_index": 4
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_c6",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Diagnosis of Mid-to-Late Pregnancy and Skin Changes",
+      "summary_ar": "يعتمد تشخيص الحمل في منتصفه وآخره على الأعراض والعلامات: حساب تاريخ الولادة المتوقع (EDC) بقاعدة +9 أو -3 أشهر مع +7 أيام عن آخر طمث (قاعدة نيغل)، ومعالم ارتفاع قمة الرحم (الأسبوع 14: إصبعان فوق الارتفاق، الأسبوع 16: منتصف المسافة بين الارتفاق والسرة، الأسبوع 20-22: عند السرة)، وسماع نبض الجنين (18-20 أسبوعاً بمعدل 120-160/د)، وجس مخطط الجنين عند الأسبوع 20، مع تغيرات جلد البطن مثل الخطوط الحملية الحمراء ثم البيضاء.",
+      "sections": [
+        {
+          "heading": "Gestational Age and the EDC (Naegele's Rule)",
+          "body_text": "The diagnosis of **mid or late pregnancy** relies on **symptoms and signs** together:\n**1. EDC (estimated date of confinement/delivery):** calculated from the first day of the last menstrual period (LMP) using the rule **+9 or -3 (month), +7 (day)** — i.e., add 9 months and 7 days to the LMP (or subtract 3 months, add 7 days and add one year). This is the classic Naegele's rule. Example: LMP January 10 → +9 months = October 10 → +7 days → **EDC October 17**.\n**2. Enlargement of uterus (fundal height landmarks):**\n- **14th week:** the uterus is **2 fingers above the symphysis** (pubic symphysis).\n- **16th week:** **midway between the symphysis and the umbilicus**.\n- **20th-22nd week:** **at the umbilicus**.\nThese anatomical landmarks let the examiner cross-check the stated gestational age at a single visit; a uterus inconsistent with the dates prompts re-dating or investigation, remembering that an ovarian cyst or fat can enlarge the abdomen without pregnancy.",
+          "key_points": [
+            "EDC rule (Naegele): LMP + 9 months (or -3 months) and + 7 days.",
+            "Fundal height landmarks: 14 weeks = 2 fingers above the symphysis; 16 weeks = midway between symphysis and umbilicus; 20th-22nd week = at the umbilicus.",
+            "Enlargement uterus landmarks to memorize: 14 / 16 / 20-22 weeks."
+          ],
+          "check": {
+            "prompt": "The fundus is palpated midway between the pubic symphysis and the umbilicus. Which gestational age fits this landmark?",
+            "options": [
+              "16 weeks",
+              "14 weeks",
+              "20 weeks",
+              "12 weeks"
+            ],
+            "correct_index": 0,
+            "explanation_ar": "عند الأسبوع 14 تكون قمة الرحم إصبعين فوق الارتفاق العاني، وعند الأسبوع 16 في منتصف المسافة بين الارتفاق والسرة، وعند الأسبوع 20-22 عند مستوى السرة، وعند الأسبوع 12 يبدأ الرحم بالظهور فوق الارتفاق مباشرة؛ فالموقع المنتصف ينطبق على الأسبوع 16."
+          }
+        },
+        {
+          "heading": "Fetal Heart, Fetal Body, and Related Mid-Pregnancy Findings",
+          "body_text": "In mid-to-late pregnancy the examination adds:\n- **Fetal heart:** heard from the **18th-20th weeks**; **normal rate 120-160bpm**.\n- **Differentiation:** the **uterine souffle** — from increased blood flow to the uterus, heard when the **stethoscope is passed firmly against the uterine wall** as a **blowing murmur synchronizing with maternal pulsation** — appears **after 20 weeks** and must not be confused with the fetal heart.\n- **Fetal body:** the outlines of the fetus are **palpated at the 20th week** — by abdominal palpation fetal parts become distinct, confirming a discrete fetal body within the uterus.\nThe slide for the fetal body shows a close-up photograph of a newborn baby's foot resting in an adult's hand — the foot in the foreground, other objects softly blurred with shallow depth of field, the pink soft sole and toes kept in sharp focus; the image serves visual purposes only — the exam finding it illustrates is palpation of the fetal outlines at the 20th week.",
+          "key_points": [
+            "Fetal heart heard at the 18th-20th weeks at 120-160bpm; uterine souffle heard after 20 weeks as a blowing murmur with the maternal pulse.",
+            "Fetal outlines are palpable at the 20th week.",
+            "EDC calculation + fundal landmarks together date a mid or late pregnancy."
+          ]
+        },
+        {
+          "heading": "Abdominal Skin Changes: Striae Gravidarum",
+          "body_text": "The image-only slide near the end of the deck (no extractable text; recovered by VLM extraction; the slide is captioned Obstetrics & Gynecology) shows **striae distensae (stretch marks) of the abdominal skin — striae gravidarum**, in a comparative side-by-side clinical photograph:\n- **Left panel (early stage — striae rubra):** multiple, parallel, vertical, linear atrophic plaques on the lateral abdomen/flank that are **reddish-purple or violaceous** (striae rubra), slightly depressed with an irregular, rippled 'crepe-paper' texture — the active, vascularized stage of recent stretching on the left side of the figure.\n- **Right panel (late stage — striae alba):** extensive, widespread striae over the central anterior abdomen with a **radial, horizontal and vertical pattern** around the periumbilical area, appearing **hypopigmented or silvery-white** (striae alba) — the mature, chronic stage representing permanent scarring of the dermis, where elastic fibers have ruptured and been replaced by collagen bundles in connective tissue.\n- **Key dermatological features:** epidermal **atrophy** (thinning), a **linear configuration** in lines perpendicular to the direction of maximal skin tension, and the **abdomen as the common site** for striae gravidarum, associated with pregnancy or significant weight fluctuation; the density may be high, covering almost the entire field of view, and the original photographs carry a stock watermark visible in the bottom right corner (partially obscured).\nSource-review note: for every image-only slide VLM descriptions were generated (pages 17 and 33 carried no extractable text), and the final page of the deck is a decorative 'Thank you' slide; its visual elements are a magnifying glass with a black handle and a silver rim positioned diagonally on a solid yellow background, and the layout places it on the left half occupying approximately 60% of the slide width, with the 'Thank you' text on the right ~40%.",
+          "key_points": [
+            "Striae rubra: reddish-purple, violaceous, early/active stretch marks; striae alba: hypopigmented, silvery-white, mature permanent scarring.",
+            "Striae are atrophic linear plaques perpendicular to maximal skin tension; the abdomen is the common site.",
+            "Slides 17 and 33 were image-only (no extractable text) and were recovered by VLM extraction; the closing thank-you slide is decorative."
+          ]
+        }
+      ],
+      "key_terms": [
+        {
+          "term": "EDC",
+          "definition_ar": "تاريخ الولادة المتوقع: يُحسب من أول يوم لآخر طمث بإضافة 9 أشهر (أو طرح 3 أشهر) و7 أيام — قاعدة نيغل."
+        },
+        {
+          "term": "Naegele's rule",
+          "definition_ar": "قاعدة نيغل: +9 أو -3 أشهر مع +7 أيام عن أول يوم لآخر حيض لتقدير تاريخ الولادة المتوقع."
+        },
+        {
+          "term": "Fundal height",
+          "definition_ar": "ارتفاع قمة الرحم: الأسبوع 14 إصبعان فوق الارتفاق، والأسبوع 16 منتصف الطريق إلى السرة، والأسبوع 20-22 عند السرة."
+        },
+        {
+          "term": "Striae gravidarum",
+          "definition_ar": "الخطوط الحملية: خطوط تمدد جلدية على البطن تبدأ حمراء بنفسجية (rubra) ثم تتحول إلى بيضاء فضية دائمة (alba)."
+        },
+        {
+          "term": "Striae rubra",
+          "definition_ar": "الطور المبكر من الخطوط الحملية: لويحات خطية ضامرة حمراء-بنفسجية وعائية حديثة العهد."
+        },
+        {
+          "term": "Striae alba",
+          "definition_ar": "الطور المتأخر: خطوط ناقصة التصبغ فضية-بيضاء تمثل ندبة جلدية دائمة بعد تمزق الألياف المرنة."
+        },
+        {
+          "term": "Cervical mucus examination",
+          "definition_ar": "فحص مخاط عنق الرحم: اختبار تقليدي للحمل يعتمد على سماكة المخاط واختفاء نمط السراخس تحت سيطرة البروجسترون."
+        }
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f01",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What is the classic first symptom of pregnancy, and what mild bleeding phenomenon can still occur during the first 3 months?",
+      "back_text": "Cessation of menstruation (amenorrhea) is symptom number 1. Hartman's sign (placental sign) = light bleeding that may occur during the first 3 months of an otherwise normal pregnancy.",
+      "is_vivid": true,
+      "tags": [
+        "amenorrhea",
+        "presumptive signs"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f02",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "Apart from pregnancy, list the five causes of amenorrhea shown in the lecture's diagram.",
+      "back_text": "Lactation, medication, stress, chronic diseases, and severe weight loss (written on the slide as 'Sever weight loss'). Amenorrhea from any of these mimics pregnancy.",
+      "mnemonic_ar": "لام سوا بالوزن: اللبن (الإرضاع)، الدواء، التوتر (Stress)، الأمراض المزمنة، ونقص الوزن الشديد.",
+      "tags": [
+        "amenorrhea"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f03",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "Give the epidemiology, timing, course and cause of morning sickness.",
+      "back_text": "Occurs in 50% of cases; in the morning or soon after getting out of bed; nausea and vomiting; disappears gradually at the end of the 3rd month; attributed to the rise in hCG.",
+      "mnemonic_ar": "خمسين بالمئة، صباحاً، تنتهي نهاية الشهر الثالث، والسبب hCG — احفظها: 50 ثم 3 ثم hCG.",
+      "tags": [
+        "morning sickness"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f04",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What three mechanisms cause frequency of micturition in the first trimester, and when does it improve?",
+      "back_text": "(1) Congestion of the bladder mucosa; (2) hCG increases the blood supply to the pelvis; (3) pressure of the anteverted uterus on the bladder. It decreases towards the end of the first trimester as the uterus rises.",
+      "tags": [
+        "micturition"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f05",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "Which hormones underlie the early breast symptoms (heaviness, tingling, tenderness, pain)?",
+      "back_text": "Development of the mammary ducts is driven by estrogen (E↑) and of the alveolar system by progesterone (P↑) — producing heaviness, tingling sensation, discomfort or actual pain.",
+      "tags": [
+        "breast changes"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f06",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What fatigue findings are listed among pregnancy symptoms?",
+      "back_text": "A tendency to sleep more plus an increase in basal body temperature (BBT).",
+      "tags": [
+        "fatigue"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f07",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "What is ptyalism and when is it common?",
+      "back_text": "Excessive salivation; it is common during the first trimester of pregnancy.",
+      "tags": [
+        "ptyalism"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f08",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "card_type": "basic",
+      "front_text": "Why does constipation occur in early pregnancy?",
+      "back_text": "Due to the progesterone effect on smooth muscles — progesterone relaxes intestinal smooth muscle and slows transit.",
+      "tags": [
+        "constipation"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f09",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Define Chadwick sign.",
+      "back_text": "A bluish-purple discoloration of the cervix (and vagina) that can occur in early pregnancy, reflecting congested pelvic vasculature/venous congestion; a probable sign.",
+      "tags": [
+        "Chadwick sign"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f10",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Define Goodell sign and state when it is noticed.",
+      "back_text": "Softening of the cervix due to increased blood flow (vessel hypertrophy, new vessel growth, edema) — a probable sign noticed during the first 4 to 8 weeks of pregnancy; may present with Chadwick and Hegar signs.",
+      "mnemonic_ar": "جودل = ليونة العنق: تذكّر 4-8 أسابيع، وسببها زيادة التروية (ضخامة أوعية + أوعية جديدة + وذمة).",
+      "tags": [
+        "Goodell sign"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f11",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "card_type": "basic",
+      "front_text": "Define Hegar sign, state when it is elicited, and explain why it later becomes negative.",
+      "back_text": "Compressibility and softening of the cervical isthmus (portion between the uterine body and the vaginal portion of the cervix), elicited on bimanual examination between the 6th and 10th week; it becomes negative after that because the gestational sac has filled the whole uterine cavity.",
+      "mnemonic_ar": "هيغار 6-10: البرزخ ينضغط بين إصبعي الفاحص ثم يختفي لأن الكيس يملأ الرحم كله.",
+      "tags": [
+        "Hegar sign"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f12",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "List the four probable signs of the second trimester.",
+      "back_text": "Uterine enlargement, Braxton-Hicks contractions, uterine souffle, and palpation of the fetal outline.",
+      "mnemonic_ar": "تذكّر: رحم يكبر + انقباضات بلا ألم + نفخة تتبع نبض الأم + مخطط جنين يُجس.",
+      "tags": [
+        "probable signs"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f13",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "What is Palmer's sign and how does it relate to Braxton-Hicks contractions?",
+      "back_text": "Palmer's sign = intermittent painless contractions felt even while the uterus is still in the pelvis; as the uterus rises into the abdomen these contractions become more easily felt and are then called Braxton Hicks contractions.",
+      "tags": [
+        "Braxton-Hicks"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f14",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c3",
+      "card_type": "basic",
+      "front_text": "When does a primigravida feel quickening, and how does this differ in a multigravida? What does quickening indicate?",
+      "back_text": "Primigravida: first fetal movement at 18-20 weeks; multigravida: two weeks earlier (~16-18 weeks). It indicates the diagnosis of pregnancy, the duration of pregnancy, and the safety of the fetus.",
+      "mnemonic_ar": "البكر 18-20 والمتعددة أسبوعين قبل — والابتهاك يثبت الحمل ومدته وسلامة الجنين.",
+      "tags": [
+        "quickening"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f15",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "List the four positive (diagnostic) signs of pregnancy.",
+      "back_text": "Fetal heartbeat, palpation of fetal movement, ultrasound, and X-ray — the findings that prove a fetus is present.",
+      "tags": [
+        "positive signs"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f16",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "From which week is the fetal heart heard, and what is the normal rate?",
+      "back_text": "Heard at the 18th-20th weeks; normal rate 120-160bpm (independent of the maternal pulse).",
+      "mnemonic_ar": "18-20 أسبوعاً و120-160 نبضة — أرقام لا تُنسى في الامتحان.",
+      "tags": [
+        "fetal heartbeat"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f17",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "card_type": "basic",
+      "front_text": "How do you characterize and differentiate a uterine souffle?",
+      "back_text": "A blowing murmur from increased blood flow to the uterus; the stethoscope is passed firmly against the uterine wall; it synchronizes with the maternal pulsation and is heard after 20 weeks — unlike the fetal heart (independent 120-160bpm).",
+      "tags": [
+        "uterine souffle"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f18",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "What are the two laboratory pregnancy tests listed, and the positivity threshold of serum β-hCG?",
+      "back_text": "Urine hCG test (one step): qualitative + or -. Serum β-hCG: positive when > 25 mIU/L.",
+      "tags": [
+        "hCG test"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f19",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Where is hCG produced and how does it reach the urine?",
+      "back_text": "Produced by syncytiotrophoblastic cells during early pregnancy; secreted into the maternal bloodstream (plasma), then excreted in the mother's urine — so both serum and urine can be tested.",
+      "tags": [
+        "hCG"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f20",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Describe the subunit structure of hCG and its clinical significance.",
+      "back_text": "hCG is a glycoprotein of an α subunit and a β subunit; α is also present in pituitary LH, while β is characteristic of hCG — so β-subunit assays avoid LH cross-reactivity and false positives.",
+      "mnemonic_ar": "α مشتركة مع LH (لهذا تحصل موجبات كاذبة)، بينما β خاصة بـ hCG فاخترها دائماً.",
+      "tags": [
+        "hCG",
+        "beta subunit"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f21",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "How early can the maternal serum radioimmunoassay diagnose pregnancy, and why is the β subunit more accurate?",
+      "back_text": "Within 9-12 days after conception; the β subunit is more accurate because anti-α hCG may cross-react with LH and give a false positive result.",
+      "mnemonic_ar": "β تكشف الحمل بعد 9-12 يوماً من الإلقاح — أبكر من أي علامة سريرية.",
+      "tags": [
+        "radioimmunoassay"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f22",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Describe the principle of the immunological urine pregnancy test (latex/RBC indicator).",
+      "back_text": "Add anti-hCG (from a rabbit or sheep immunized against hCG) to maternal urine, then add hCG-coated latex particles or hCG-coated RBC cells; if no pregnancy, the latex particles precipitate or the RBC cells agglutinate; in pregnancy urinary hCG blocks the reaction.",
+      "explanation_ar": "الفكرة: إن عدم حدوث الترسيب/التراص يعني وجود hCG في البول أي وجود حمل، أما حدوث التراص فيعني عدم الحمل لأن الأضداد الحرة تربط الجسيمات المغلفة.",
+      "tags": [
+        "immunological test"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f23",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "card_type": "basic",
+      "front_text": "Name the three 'other' traditional pregnancy tests listed besides hCG assays.",
+      "back_text": "Progesterone test, cervical mucus examination, and basal body temperature (BBT) — adjunctive/historical tests now replaced by hCG assays and ultrasound.",
+      "tags": [
+        "other tests"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f24",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c6",
+      "card_type": "basic",
+      "front_text": "State the EDC rule and the fundal height landmarks at 14, 16 and 20-22 weeks.",
+      "back_text": "EDC = LMP +9 or -3 (month) and +7 (day) — Naegele's rule. Uterus: 14th week = 2 fingers above the symphysis; 16th week = midway between symphysis and umbilicus; 20th-22nd week = at the umbilicus.",
+      "mnemonic_ar": "قاعدة نيغل: أضف 9 أشهر و7 أيام. والرحم: 14 إصبعان، 16 المنتصف، 20-22 عند السرة.",
+      "tags": [
+        "EDC",
+        "fundal height"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_f25",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c6",
+      "card_type": "basic",
+      "front_text": "Distinguish striae rubra from striae alba.",
+      "back_text": "Striae rubra: early, reddish-purple/violaceous, vascularized atrophic stretch marks. Striae alba: mature, hypopigmented, silvery-white permanent dermal scarring (elastic fibers replaced by collagen); the abdomen is the common site.",
+      "is_vivid": true,
+      "mnemonic_ar": "rubra = حمراء حديثة، alba = بيضاء قديمة — من اللاتينية: أحمر ثم أبيض.",
+      "tags": [
+        "striae gravidarum"
+      ]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m01",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "clinical_vignette": true,
+      "question_stem": "A 24-year-old G1P0 woman presents with 7 weeks of amenorrhea, nausea in the morning soon after getting out of bed, breast tenderness and increased urinary frequency. She asks whether these complaints prove she is pregnant. Which category of pregnancy evidence do her complaints represent?",
+      "options": [
+        "Presumptive evidence — symptoms felt by the patient that can have other causes",
+        "Probable evidence — signs elicited by the examiner",
+        "Positive evidence — findings that confirm a fetus",
+        "Laboratory evidence — all of these symptoms are diagnostic"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "انقطاع الطمث وغثيان الصباح وألم الثدي وتكرار التبول أعراض افتراضية (presumptive) تشكو منها المريضة نفسها، وكلها قد يسببها غير الحمل (مثل الإرضاع والأدوية والتوتر والأمراض المزمنة ونقص الوزن). الأدلة المحتملة علامات يجدها الفاحص مثل جودل وهيغار وتشادويك وتضخم الرحم، أما الأدلة المؤكدة فهي نبض الجنين وجس حركته والموجات فوق الصوتية والأشعة. الأعراض وحدها ليست اختباراً مخبرياً ولا تشخيصاً مؤكداً.",
+      "difficulty": "core",
+      "hints": [
+        "Who notices the finding — the patient or the examiner?",
+        "Can each of these symptoms occur without pregnancy?"
+      ],
+      "focus_sections": [
+        0
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m02",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "clinical_vignette": true,
+      "question_stem": "An 8-week pregnant woman reports 2 days of light vaginal bleeding at the time her period would have been due. The pregnancy is otherwise progressing normally and there is no pain. What is this phenomenon called in the lecture?",
+      "options": [
+        "Hartman's (placental) sign",
+        "Threatened miscarriage",
+        "Show",
+        "Ovulatory breakthrough bleeding"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "علامة هارتمان (العلامة المشيمية) هي نزف خفيف قد يحدث خلال الأشهر الثلاثة الأولى لحمل طبيعي دون أن يعني نزولاً حيضياً حقيقياً. لم تُذكر في المحاضرة كعلامة إجهاض مهدد (الذي يتطلب تقييماً مختلفاً)، و'show' هو نزول سدادة مخاطية قرب المخاض، والنزف التبويضي لا يحدث أثناء حمل قائم.",
+      "difficulty": "core",
+      "hints": [
+        "The lecture names a 'sign' for first-trimester spotting in a normal pregnancy.",
+        "It is named after Hartman and also called the placental sign."
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m03",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "clinical_vignette": true,
+      "question_stem": "A 31-year-old woman with negative urine hCG tests on two occasions has had secondary amenorrhea for 6 months. Which list contains ONLY the causes of amenorrhea given in this lecture?",
+      "options": [
+        "Lactation, medication, stress, chronic diseases, severe weight loss",
+        "Lactation, fibroids, stress, chronic diseases, severe weight loss",
+        "Medication, stress, polycystic ovaries, weight loss",
+        "Chronic diseases, lactation, endometriosis, medication"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "المخطط في المحاضرة يسرد خمسة أسباب لانقطاع الطمث غير الحمل: الإرضاع، والأدوية، والتوتر، والأمراض المزمنة، ونقص الوزن الشديد. الورم الليفي الرحمي والمبيض متعدد الكيسات والانتباذ البطاني الرحمي أسباب معروفة سريرياً لكنها ليست ضمن قائمة هذه المحاضرة، فالخيارات الأخرى تخالف المذكور حرفياً.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m04",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "clinical_vignette": true,
+      "question_stem": "A woman at 9 weeks gestation has nausea and vomiting each morning soon after getting out of bed and asks when it will end. According to the lecture, what is true of morning sickness?",
+      "options": [
+        "It occurs in 50% of cases and disappears gradually at the end of the 3rd month",
+        "It occurs in nearly all cases and lasts until delivery",
+        "It is caused by progesterone and worsens until mid-pregnancy",
+        "It occurs in 25% of cases and resolves at 20 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "غثيان الصباح يحدث في 50% من الحملات، صباحاً أو بعد النهوض من الفراش مباشرة، ويختفي تدريجياً نهاية الشهر الثالث، وسببه ارتفاع hCG وليس البروجسترون. الخيارات الأخرى تخطئ في النسبة أو المدة أو الهرمون المسؤول.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m05",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c1",
+      "clinical_vignette": true,
+      "question_stem": "A 7-week pregnant primigravida passes urine many times day and night; urinalysis is normal with no dysuria. What is the best explanation per the lecture?",
+      "options": [
+        "Congestion of the bladder mucosa with hCG-driven pelvic hyperemia and pressure of the anteverted uterus",
+        "Urinary tract infection of pregnancy",
+        "Gestational diabetes causing polyuria",
+        "Pressure of the fetal head on the bladder"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "يُفسَّر تكرار التبول في الثلث الأول بثلاث آليات وردت في المحاضرة: احتقان مخاطية المثانة، وزيادة تروية الحوض بفعل hCG، وضغط الرحم المعتدل على المثانة، ويتحسن نهاية الثلث الأول بصعود الرحم. لا التهاب بولاً (التحليل طبيعي ولا حرقة)، والسكري الحملي يتأخر زمنياً عن هذه المرحلة، ورأس الجنين لا يضغط على المثانة في عمر حملي 7 أسابيع.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m06",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "clinical_vignette": true,
+      "question_stem": "On pelvic examination of a woman at 6 weeks gestation, the cervix is noticeably soft and the vagina appears bluish-purple. How are these findings classified?",
+      "options": [
+        "Goodell and Chadwick signs — both probable signs",
+        "Hegar and Goodell signs — both positive signs",
+        "Chadwick sign (probable) and quickening (presumptive)",
+        "Goodell sign (positive) and Chadwick sign (presumptive)"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "ليونة عنق الرحم هي علامة جودل (تُلاحظ بين الأسبوعين 4-8 بسبب زيادة التروية)، وتلون المهبل والعنق بالأزرق البنفسجي هو علامة تشادويك، وكلتاهما علامتان محتملتان نتيجة الاحتقان الحوضي. علامة هيغار تخص انضغاطية برزخ العنق (أسبوع 6-10) وهي محتملة أيضاً وليست مؤكدة، والابتهاك عرض افتراضي تحسه الأم وحدها، ولا توجد أي علامة مؤكدة ضمن الخيارات الخاطئة.",
+      "difficulty": "core",
+      "hints": [
+        "Soft cervix at 4-8 weeks and bluish vagina each carry an eponym.",
+        "Neither finding proves a fetus — which tier is that?"
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m07",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c2",
+      "clinical_vignette": true,
+      "question_stem": "A clinician elicits marked cervical isthmus compressibility at 9 weeks but cannot elicit it at 13 weeks in the same pregnancy. Why did Hegar sign become negative?",
+      "options": [
+        "After the 10th week the gestational sac has filled the whole uterine cavity, so the sign becomes negative",
+        "The isthmus becomes rigid due to fibrosis after 10 weeks",
+        "The uterus becomes retroverted in the second trimester",
+        "hCG falls below detectable levels after 10 weeks"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تُجس علامة هيغار بين الأسبوعين السادس والعاشر حيث يكون برزخ عنق الرحم طرياً قابلاً للانضغاط، وبعدها تصبح العلامة سالبة لأن الكيس الحملي يملأ كامل تجويف الرحم فلا يبقى فراغ قابل للانضغاط. لا يحدث تليف للبرزخ، ولا يصبح الرحم راجعاً في الثلث الثاني (بل يصعد إلى البطن)، وهرمون hCG يبقى مرتفعاً حتى نهاية الثلث الأول على الأقل.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m08",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c3",
+      "clinical_vignette": true,
+      "question_stem": "A 29-year-old G3P2 at 17 weeks by agreed dates reports she began feeling definite fetal movements about a week ago. What does the lecture predict about quickening in multigravidas?",
+      "options": [
+        "Fetal movement is felt two weeks earlier than in primigravidas (who feel it at 18-20 weeks)",
+        "Multigravidas feel movement only after 22 weeks",
+        "Multigravidas never feel movement before 20 weeks",
+        "Quickening timing is identical in primi- and multigravidas"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تشعر البكر بابتهاك الجنين بين الأسبوع 18-20، بينما تشعر متعددة الحمل بالحركة أسبوعين أبكر أي نحو 16-18 أسبوعاً لأنها تعرف الإحساس من حملاتها السابقة. فبدء الحركة حول الأسبوع 16 في مريضة G3P2 متوافق تماماً مع العمر الحملي 17 أسبوعاً الآن، وبقية الخيارات تخالف صراحة ما ورد في المحاضرة.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m09",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "clinical_vignette": true,
+      "question_stem": "At 26 weeks you auscultate the abdomen: a soft blowing sound beats at 90/min matching the mother's radial pulse, and a separate rapid sound at 145/min is heard. How do you interpret these sounds?",
+      "options": [
+        "The blowing sound is the uterine souffle (maternal pulse); the 145/min sound is the fetal heart",
+        "The blowing sound is the fetal heart; the 145/min sound is maternal tachycardia",
+        "Both sounds are fetal hearts (twins)",
+        "The blowing sound is amniotic fluid flow; the 145/min sound is the uterine souffle"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "نفخة الرحم نفخة هابطة ناتجة عن زيادة جريان الدم إلى الرحم، تُسمع بضغط السماعة بإحكام على جدار الرحم، وتتزامن مع نبض الأم (هنا 90/د)، وتُسمع بعد الأسبوع 20. أما الصوت السريع 145/د فهو نبض الجنين (الطبيعي 120-160/د) وهو مستقل عن نبض الأم. لا يمكن أن تكون النفخة بسرعة 145 لأنها تتبع نبض الأم، ونبض الأم 88-90 لا يُسمع بالسماعة على الرحم كصوت مستقل، ولا وجود لصوت سائل أمنيوسي مميز هنا.",
+      "difficulty": "advanced",
+      "hints": [
+        "Which pulse does the blowing murmur follow?",
+        "Normal fetal heart rate is 120-160bpm."
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m10",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "clinical_vignette": true,
+      "question_stem": "A woman underwent embryo transfer; a single conception event occurred 10 days ago, and she wants the earliest possible biochemical diagnosis of pregnancy. Which test does the lecture recommend for this window?",
+      "options": [
+        "Serum β-hCG radioimmunoassay — detects the β subunit specifically and is positive within 9-12 days after conception",
+        "Urine one-step hCG test — positive from day 5 after conception",
+        "Cervical mucus examination — diagnostic from day 7",
+        "Basal body temperature chart — diagnostic from day 9"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "مقايسة β-hCG المصلية بالمقايسة الإشعاعية المناعية تكشف الحمل خلال 9-12 يوماً بعد الإلقاح لأنها تستهدف الوحدة الفرعية β خصيصاً وبحساسية عالية، فتناسب اليوم 10. اختبار البول أحادي الخطوة أقل حساسية في هذه البكاءة الشديدة، وفحص مخاط عنق الرحم ودرجة حرارة الجسم القاعدية اختبارات تقليدية غير نوعية ولا تصلح للتشخيص المبكر.",
+      "difficulty": "advanced"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m11",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "clinical_vignette": true,
+      "question_stem": "In a classic immunological urine pregnancy test, anti-hCG antibody (raised in a rabbit or sheep) is mixed with the patient's urine, then hCG-coated latex particles are added. Precipitation of the particles appears. What does this result indicate?",
+      "options": [
+        "No pregnancy — free anti-hCG cross-links the coated particles and they precipitate/agglutinate",
+        "Pregnancy — hCG cross-links the particles directly",
+        "Ectopic pregnancy specifically",
+        "A false positive due to LH cross-reactivity"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "في الاختبار المناعي البولي: إذا لم يكن هناك حمل فلا يوجد hCG في البول يشبع الأضداد، فترتبط الأضداد الحرة بجزيئات اللاتكس أو الكريات الحمراء المغلفة بهرمون hCG فتحدث ظاهرة الترسيب أو التراص — فالترسيب هنا يعني غياب الحمل. أما في الحمل فيُشبع hCG البولي الأضداد وتُثبط الظاهرة. لا علاقة للنتيجة بالحمل الهاجر تحديداً، وتفاعل LH المتصالب يخص مقايسات الوحدة α في المصل لا هذا الترتيب.",
+      "difficulty": "advanced",
+      "hints": [
+        "Remember the inhibition logic: urinary hCG soaks up the antibody.",
+        "Agglutination/precipitation appears when the antibody is free — i.e., no hCG in the urine."
+      ]
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m12",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c6",
+      "clinical_vignette": true,
+      "question_stem": "A woman's last menstrual period started on January 10. Using the lecture's EDC rule (+9 or -3 months, +7 days), what is her estimated date of confinement?",
+      "options": [
+        "October 17 of the same year",
+        "October 10 of the same year",
+        "January 17 of the next year",
+        "April 17 of the same year"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "القاعدة: أضف 9 أشهر و7 أيام إلى أول يوم لآخر طمث: 10 يناير + 9 أشهر = 10 أكتوبر، + 7 أيام = 17 أكتوبر. أو بطريقة الطرح: 10 يناير - 3 أشهر = 10 أكتوبر من العام السابق، + 7 أيام + سنة = 17 أكتوبر من العام نفسه. الخيار 10 أكتوبر ينسى الأيام السبعة، وبقية الخيارات تخطئ في الحساب كلياً.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m13",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c6",
+      "clinical_vignette": true,
+      "question_stem": "At a first antenatal visit the fundus is palpated at the level of the umbilicus in a G1P0 who reports feeling fetal movements for about 2 weeks. Which gestational age best fits these findings?",
+      "options": [
+        "20th-22nd weeks — the uterus reaches the umbilicus at 20-22 weeks and primigravid quickening began ~2 weeks earlier at 18-20 weeks",
+        "16 weeks — the uterus is at the umbilicus at 16 weeks",
+        "24-26 weeks — above the umbilicus",
+        "14 weeks — 2 fingers above the symphysis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "تبلغ قمة الرحم مستوى السرة بين الأسبوع 20-22، وتبدأ البكر بالإحساس بحركة الجنين بين الأسبوع 18-20، فالجمع بين الرحم عند السرة وحركة بدأت قبل أسبوعين يوافق عمراً حملياً 20-22 أسبوعاً. عند الأسبوع 16 يكون الرحم في منتصف المسافة بين الارتفاق والسرة، وعند 14 إصبعين فوق الارتفاق، فالخيارات الأخرى تخطئ في المعالم.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m14",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c4",
+      "clinical_vignette": false,
+      "question_stem": "Which of the following findings, if present, is a POSITIVE (diagnostic) sign of pregnancy according to the lecture?",
+      "options": [
+        "Palpation of fetal movement by the examiner",
+        "Chadwick sign",
+        "Goodell sign",
+        "Uterine souffle"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "جس حركة الجنين من قبل الفاحص علامة مؤكدة مثل نبض الجنين والموجات فوق الصوتية والأشعة السينية. أما علامة تشادويك (تلون العنق) وعلامة جودل (ليونة العنق) ونفخة الرحم (جريان دم الأم) فعلامات محتملة تعكس تغيرات الأم الفسيولوجية فقط ولا تثبت وجود الجنين.",
+      "difficulty": "core"
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_m15",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "concept_id": "obgyn_L5_diagnosis_of_pregnancy_c5",
+      "clinical_vignette": false,
+      "question_stem": "hCG is composed of which subunits, and why do modern pregnancy assays target β-hCG rather than the α subunit?",
+      "options": [
+        "An α and a β subunit; α is shared with pituitary LH, so β gives specificity and avoids false positives",
+        "An α subunit only; β belongs to FSH",
+        "A β subunit only; hCG has no α subunit",
+        "An α and a γ subunit; γ is unique to hCG"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "هرمون hCG غليكوبروتين مكون من وحدتين فرعيتين α وβ؛ الوحدة α مشتركة مع LH النخامي، لذلك فإن الأضداد المضادة لـ α قد تتفاعل مع LH وتعطي نتيجة موجبة كاذبة، بينما الوحدة β خاصة بهرمون hCG فتمنح الاختبار نوعيته. لا توجد وحدة γ في hCG، ووحدة β ليست الوحيدة في تركيب الهرمون.",
+      "difficulty": "core"
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_case1",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Missed Periods, Morning Nausea, and a Positive Test in a Young Primigravida",
+      "scenario": "A 24-year-old newly married woman presents with 8 weeks of amenorrhea, morning nausea, urinary frequency and breast heaviness; she is anxious to know whether she is pregnant and whether her symptoms are normal.",
+      "vignette": {
+        "age": 24,
+        "sex": "female",
+        "chief_complaint": "8 weeks of missed periods with morning nausea and breast heaviness",
+        "history": "G1P0, married 3 months ago; previously regular 28-day cycles; no contraception; no chronic diseases. Nausea appears in the morning or soon after getting out of bed; she reports increased sleepiness, craving for certain foods, mild constipation and passing urine frequently by day and night.",
+        "vitals": {
+          "bp": "110/70 mmHg",
+          "hr": "84/min",
+          "rr": "16/min",
+          "temp": "36.8 °C",
+          "spo2": "99%"
+        },
+        "exam": "Breasts: increased size and sensitivity, dark pigmentation of the nipples and areola, prominent tubercles of Montgomery, bilateral tenderness. Vagina: bluish-purple discoloration. Cervix: soft (Goodell positive). Bimanual examination: the body of the uterus feels globular, soft, ~8 weeks size, with a compressible cervical isthmus (Hegar positive).",
+        "labs": [
+          {
+            "name": "Urine hCG (one-step)",
+            "value": "Positive",
+            "flag": "normal"
+          },
+          {
+            "name": "Serum β-hCG",
+            "value": "48,650 mIU/L",
+            "flag": "high"
+          }
+        ],
+        "imaging": "Ultrasound deferred until the booking visit; not required to confirm the diagnosis today."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case1_s1",
+          "prompt": "What is the most appropriate first step to confirm the diagnosis of pregnancy in this patient?",
+          "options": [
+            "A pregnancy test: urine hCG one-step test or serum β-hCG (> 25 mIU/L)",
+            "Immediate X-ray of the abdomen",
+            "Progesterone challenge (withdrawal) test",
+            "Cervical mucus examination"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "لتأكيد الحمل نستخدم اختبارات hCG: اختبار البول أحادي الخطوة (نتيجته + أو -) أو قياس β-hCG في المصل الذي يعد موجباً فوق 25 mIU/L. الأشعة السينية ليست وسيلة تشخيص أولى للحمل (إشعاع بلا ضرورة)، واختبار البروجسترون وفحص مخاط عنق الرحم اختبارات تقليدية قديمة لا تُستخدم للتأكيد.",
+          "xp": 10,
+          "hints": [
+            "Which hormone do all modern pregnancy tests measure?",
+            "Urine or serum — the one-step urine test is the quickest."
+          ]
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case1_s2",
+          "prompt": "Her physical findings (soft cervix, bluish-purple vagina, compressible isthmus, globular soft uterus) belong to which tier of pregnancy evidence?",
+          "options": [
+            "Probable signs — elicited by the examiner but not diagnostic alone",
+            "Positive signs — they prove the pregnancy",
+            "Presumptive symptoms — felt by the patient",
+            "Laboratory evidence"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "علامات جودل (ليونة العنق، أسبوع 4-8) وتشادويك (التلون الأزرق البنفسجي) وهيغار (انضغاطية البرزخ، أسبوع 6-10) وتضخم الرحم الكروي الطري كلها علامات محتملة يجدها الفاحص نتيجة الاحتقان الحوضي والتأثير الهرموني، وهي ليست مؤكدة بذاتها؛ فالأدلة المؤكدة هي نبض الجنين وجس حركته والموجات فوق الصوتية والأشعة.",
+          "xp": 10
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case1_s3",
+          "prompt": "Why does the serum test specifically report β-hCG rather than the α subunit or total hCG?",
+          "options": [
+            "The β subunit is characteristic of hCG, while anti-α hCG may cross-react with pituitary LH and give a false positive",
+            "The α subunit is not produced during pregnancy",
+            "β-hCG is detectable only in urine",
+            "The β subunit is cheaper and faster to measure"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "hCG غليكوبروتين من وحدتي α وβ؛ الوحدة α مشتركة مع LH النخامي فتفاعل الأضداد المضادة لها مع LH قد يعطي موجباً كاذباً، بينما الوحدة β خاصة بـ hCG فتمنح المقايسة الإشعاعية المناعية نوعيتها، وهي قادرة على كشف الحمل خلال 9-12 يوماً من الإلقاح.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case1_s4",
+          "prompt": "She asks when her nausea and urinary frequency will improve. Based on the lecture, what do you tell her?",
+          "options": [
+            "Both improve by the end of the first trimester — morning sickness disappears gradually at the end of the 3rd month and urinary frequency decreases towards the end of the first trimester",
+            "Both persist until delivery",
+            "Both worsen through the second trimester",
+            "They stop only after she feels quickening"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "غثيان الصباح يختفي تدريجياً نهاية الشهر الثالث (لارتباطه بارتفاع hCG الذي يهبط بعد الذروة)، وتكرار التبول يتحسن نهاية الثلث الأول لأن الرحم يصعد من الحوض فيزول ضغطه على المثانة. لا صحة لبقاء الأعراض حتى المخاض أو سوئها في الثلث الثاني أو ارتباطها بالابتهاك.",
+          "xp": 8
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: حمل داخل الرحم في الثلث الأول بعمر حملي نحو 8 أسابيع، مؤكد باختبار hCG البولي الموجب مع ارتفاع β-hCG في المصل، ومعه أعراض افتراضية نموذجية (انقطاع الطمث وغثيان الصباح وتكرار التبول وثقل الثديين) وعلامات محتملة مبكرة (تشادويك وجودل وهيغار). الدروس المستفادة: صنّف الأدلة دائماً إلى افتراضية ومحتملة ومؤكدة قبل الجزم؛ اعتبر كل امرأة في سن الإنجاب مصابة بانقطاع الطمث حاملاً حتى يُثبت العكس؛ وطمئن المريضة بأن الغثيان وتكرار التبول يتحسنان نهاية الثلث الأول، مع تذكيرها بأن أي نزف مهبلي يستدعي المراجعة لأن علامة هارتمان تشخيص استبعادي لا يُقطع به.",
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "obgyn_L5_diagnosis_of_pregnancy_case2",
+      "lecture_id": "obgyn_L5_diagnosis_of_pregnancy",
+      "title": "Dating and Confirming a Mid-Trimester Pregnancy in a Multip",
+      "scenario": "A 31-year-old G3P2 attends her first antenatal visit; she is unsure of her dates, first felt fetal movements about 2 weeks ago, and wants to know how far along she is and when she will deliver.",
+      "vignette": {
+        "age": 31,
+        "sex": "female",
+        "chief_complaint": "Uncertain gestational dating; first felt fetal movements about 2 weeks ago",
+        "history": "G3P2 with two previous vaginal deliveries; regular cycles but an uncertain last menstrual period — she recalls it began around March 8. She first perceived fetal movement about 2 weeks ago. No bleeding, no abdominal pain, no medical disorders.",
+        "vitals": {
+          "bp": "115/75 mmHg",
+          "hr": "88/min",
+          "rr": "16/min",
+          "temp": "36.7 °C",
+          "spo2": "99%"
+        },
+        "exam": "Abdomen: the fundus is palpated at the level of the umbilicus; fetal outlines are palpable. Auscultation: a soft blowing murmur over the uterus synchronizes with the maternal radial pulse; the fetal heart is heard separately at 148/min. The abdominal skin shows reddish-purple linear striae (striae rubra).",
+        "labs": [
+          {
+            "name": "Urine hCG",
+            "value": "Positive",
+            "flag": "normal"
+          },
+          {
+            "name": "Hemoglobin",
+            "value": "11.9 g/dL",
+            "flag": "normal"
+          }
+        ],
+        "imaging": "Ultrasound at booking: expected to show an enlarged uterus with a single fetus and a positive fetal pulse."
+      },
+      "steps": [
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case2_s1",
+          "prompt": "Using the fundal height landmark, which gestational age is most consistent with a fundus at the umbilicus?",
+          "options": [
+            "20th-22nd weeks",
+            "16th week",
+            "14th week",
+            "12th week"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "يبلغ الرحم مستوى السرة بين الأسبوع 20-22؛ فعند الأسبوع 14 يكون إصبعين فوق الارتفاق العاني، وعند 16 في منتصف المسافة بين الارتفاق والسرة، وعند 12 يبدأ بالظهور فوق الارتفاق مباشرة. فقمة الرحم عند السرة توافق عمراً حملياً 20-22 أسبوعاً.",
+          "xp": 10,
+          "hints": [
+            "Recall the three landmarks: 14 / 16 / 20-22 weeks.",
+            "Which week pair corresponds to the umbilicus?"
+          ]
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case2_s2",
+          "prompt": "She is a multigravida who first felt fetal movements about 2 weeks ago. Is this consistent with a gestational age of ~20 weeks?",
+          "options": [
+            "Yes — multigravidas feel quickening two weeks earlier than primigravidas (18-20 weeks), so movements starting ~2 weeks ago fits ~20 weeks now",
+            "No — multigravidas feel movement only at 22 weeks",
+            "No — quickening always occurs at exactly 16 weeks in every woman",
+            "The timing cannot be interpreted without ultrasound"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "الابتهاك يحدث عند البكر بين الأسبوع 18-20 وعند متعددة الحمل أسبوعين أبكر (نحو 16-18). فإذا بدأت الإحساس بالحركة قبل أسبوعين فيكون عمر الحمل حينها نحو 18 أسبوعاً أي نحو 20 أسبوعاً الآن، وهو ما يتطابق مع قمة الرحم عند السرة (20-22 أسبوعاً).",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case2_s3",
+          "prompt": "What is the soft blowing murmur that synchronizes with her radial pulse of 88/min?",
+          "options": [
+            "Uterine souffle — increased blood flow to the uterus, heard after 20 weeks with the stethoscope pressed firmly against the uterine wall",
+            "Fetal heart at 88 bpm",
+            "Uterine contraction bruit",
+            "Bowel peristalsis"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "نفخة الرحم تنشأ عن زيادة جريان الدم إلى الرحم، وتُسمع كنفخة هابطة تتزامن مع نبض الأم عند ضغط السماعة بإحكام على جدار الرحم، وتظهر بعد الأسبوع 20 — وكل ذلك موجود هنا. نبض الجنين مستقل عن نبض الأم (يُسمع هنا 148/د ضمن الطبيعي 120-160)، فمعدل 88/د لا يمكن أن يكون نبضاً جنينياً، وأصوات الأمعاء ليست نفخة متزامنة مع النبض.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case2_s4",
+          "prompt": "Her LMP began on March 8 (as best she recalls). Using the lecture's EDC rule (+9 or -3 months, +7 days), what is her estimated date of confinement?",
+          "options": [
+            "December 15 of the same year",
+            "December 8 of the same year",
+            "March 15 of the next year",
+            "November 15 of the same year"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "القاعدة: أضف 9 أشهر و7 أيام إلى أول يوم لآخر طمث: 8 مارس + 9 أشهر = 8 ديسمبر، + 7 أيام = 15 ديسمبر (أو اطرح 3 أشهر وأضف 7 أيام وسنة فتحصل على النتيجة ذاتها). الخيار 8 ديسمبر يهمل الأيام السبعة، وبقية الخيارات تخطئ في الحساب.",
+          "xp": 12
+        },
+        {
+          "id": "obgyn_L5_diagnosis_of_pregnancy_case2_s5",
+          "prompt": "Which of today's findings constitutes a POSITIVE (diagnostic) sign of pregnancy?",
+          "options": [
+            "Hearing the fetal heart at 148/min",
+            "The uterine souffle",
+            "The bluish vaginal discoloration",
+            "The fetal movements reported by the mother (quickening)"
+          ],
+          "correct_index": 0,
+          "explanation_ar": "سماع نبض الجنين (يُسمع من الأسبوع 18-20 بمعدل 120-160/د) علامة مؤكدة للحمل. أما نفخة الرحم فتعكس جريان دم الأم وهي علامة محتملة، والتلون الأزرق البنفسجي (تشادويك) علامة محتملة، وإحساس الأم بالحركة (الابتهاك) عرض افتراضي لا يستطيع الفاحص التحقق منه مباشرة.",
+          "xp": 10
+        }
+      ],
+      "debriefing_ar": "الحالة توضح التقدير السريري للحمل في منتصفه: قمة الرحم عند السرة توافق الأسبوع 20-22، وابتهاك متعددة الحمل قبل أسبوعين يوافق بدء الحركة نحو الأسبوع 18، فيتقاطع التقديران عند عمر حملي نحو 20 أسبوعاً، وتُحسب الولادة المتوقعة بقاعدة نيغل (آخر طمث 8 مارس → 15 ديسمبر). الدروس المستفادة: ميّز دائماً بين نفخة الرحم المتزامنة مع نبض الأم (علامة محتملة) ونبض الجنين المستقل بمعدل 120-160/د (علامة مؤكدة) بجس النبض الكعبري أثناء الإصغاء؛ واستخدم معالم قمة الرحم (14 و16 و20-22 أسبوعاً) للتحقق من التاريخ؛ وتذكّر أن الخطوط الحملية الحمراء البنفسجية (striae rubra) تتحول لاحقاً إلى بيضاء فضية دائمة (striae alba).",
+      "difficulty": "core",
+      "order_index": 1
+    }
+  ]
+}

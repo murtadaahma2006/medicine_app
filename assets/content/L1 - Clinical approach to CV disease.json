@@ -1,0 +1,726 @@
+{
+  "schema_version": "2.0.0",
+  "lecture": {
+    "id": "cvs_l1_clinical_approach_cv_disease",
+    "specialty": "internal_medicine",
+    "title": "Clinical Approach to Cardiovascular Disease: Symptoms and History Taking",
+    "module": "cardiology",
+    "system": "cardiovascular",
+    "source": {
+      "file_name": "L1 CLINICAL APPRAOCH TO CV DISEASE.pdf",
+      "page_count": 30
+    },
+    "tags": ["chest pain", "dyspnea", "palpitation", "syncope", "edema", "claudication", "cyanosis", "history taking"],
+    "order_index": 0,
+    "golden_tip": [
+      "The six lethal causes of acute chest pain you must rule out first: ACS, aortic dissection, pulmonary embolism, tension pneumothorax, pericardial tamponade, and mediastinitis (Boerhaave's esophageal rupture).",
+      "Ischemic chest pain lasts MINUTES, not seconds and not hours. Pain described as knifelike, sharp, pleuritic, or positional makes ischemia LESS likely — a classic exam discriminator.",
+      "In elderly and diabetic patients, dyspnea may be the only presentation of myocardial ischemia (angina equivalent) with identical precipitants and GTN relief."
+    ]
+  },
+  "concepts": [
+    {
+      "id": "cvs_l1_c1_cvs_symptoms_overview",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Overview of Cardiovascular Symptoms",
+      "summary_ar": "الأعراض الرئيسية لأمراض القلب التي يجب أخذها بالحسبان عند تقييم أي مريض قلبي: ألم الصدر، ضيق النفس، الخفقان، الإغماء، وذمة الساقين، العرج المتقطع، والزراق.",
+      "sections": [
+        {
+          "heading": "The Cardinal CVS Symptom List",
+          "body_text": "When evaluating a patient with suspected cardiovascular disease, the clinician must systematically screen for the following presenting symptoms:\n\n- **Chest pain** — the most important symptom to characterize fully because it discriminates life-threatening cardiac causes from benign ones.\n- **Dyspnea**, including **PND (paroxysmal nocturnal dyspnea)** and **orthopnea** — symptoms of pulmonary congestion and left heart failure.\n- **Palpitation** — awareness of the heartbeat, suggesting arrhythmia.\n- **Syncope and presyncope** — sudden loss of consciousness due to reduced cerebral perfusion or lightheadedness preceding it.\n- **Leg edema** — a sign of right heart failure or venous disease.\n- **Intermittent claudication** — exertional lower limb muscle pain due to peripheral arterial disease (PAD).\n- **Cyanosis** — bluish discoloration indicating either central oxygen desaturation or peripheral circulatory failure.\n\nEach of these symptoms is analyzed in detail with its own history-taking framework, differential diagnosis, and severity grading. A complete CVS history also screens risk factors and prior cardiac events before focusing on the presenting complaint.",
+          "key_points": [
+            "Seven key CVS symptoms: chest pain, dyspnea/PND/orthopnea, palpitation, syncope/presyncope, leg edema, intermittent claudication, cyanosis.",
+            "Leg edema must be characterized as unilateral or bilateral, and anasarca (generalized edema) noted when present.",
+            "Intermittent claudication is defined as pain of one or more lower extremity muscle groups related to activity due to inadequate blood supply (PAD)."
+          ],
+          "check": {
+            "prompt": "Which of the following symptoms suggests peripheral arterial disease rather than venous disease?",
+            "options": [
+              "Bilateral pitting leg edema",
+              "Pain in calf muscles precipitated by walking and relieved by rest",
+              "Paroxysmal nocturnal dyspnea",
+              "Orthopnea requiring three pillows"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "العرج المتقطع (Intermittent claudication) هو ألم عضلات الطرف السفلي أثناء النشاط بسبب نقص التروية الشريانية (PAD) ويزول بالراحة، بينما الوذمة الانطباقية الثنائية تعود لفشل القلب الاحتقاني أو الدوالي، وضيق النفس الانتيابي الليلي والانتصابي علامات فشل القلب الأيسر."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "PND", "definition_ar": "ضيق نفس ليلي انتيابي مفاجئ يوقظ المريض من النوم بسبب تراكم السوائل في الأسناخ الرئوية"},
+        {"term": "Orthopnea", "definition_ar": "ضيق النفس عند الاستلقاء الذي يتحسن بالجلوس، ويُدرّج بعدد الوسادات المستخدمة"},
+        {"term": "Intermittent claudication", "definition_ar": "ألم عضلي في الطرف السفلي يحدث مع المشي ويخف بالراحة نتيجة مرض الشرايين المحيطية"},
+        {"term": "Anasarca", "definition_ar": "وذمة معمّمة تشمل الجسم كاملاً بما فيه أنسجة الجدار الجسمي"},
+        {"term": "Cyanosis", "definition_ar": "زرقة الجلد والأغشية المخاطية بسبب ارتفاع الهيموغلوبين المختزل أو نقل الأكسجة"}
+      ],
+      "difficulty": "core",
+      "order_index": 0
+    },
+    {
+      "id": "cvs_l1_c2_chest_pain",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Chest Pain: Differential Diagnosis and Structured History",
+      "summary_ar": "المنهج المنهجي لألم الصدر: الأسباب المهددة للحياة، التشخيص التفريقي الكامل، والتاريخ المرضي المنظم (SOCRATES) بأبعاده السبعة.",
+      "sections": [
+        {
+          "heading": "Life-Threatening Causes of Chest Pain",
+          "body_text": "Before detailed characterization, the clinician must identify causes of chest pain that pose an **immediate threat to life**. These are:\n\n- **Acute coronary syndrome (ACS)**\n- **Acute aortic dissection**\n- **Pulmonary embolism (PE)**\n- **Tension pneumothorax**\n- **Pericardial tamponade (cardiac tamponade)**\n- **Mediastinitis (e.g., esophageal rupture — Boerhaave's syndrome)**\n\nAny patient presenting with acute chest pain should be rapidly assessed for these six lethal causes. Missing any of them can be fatal within minutes to hours, so triage precedes the full structured history.",
+          "key_points": [
+            "Six immediately life-threatening causes: ACS, aortic dissection, PE, tension pneumothorax, tamponade, mediastinitis.",
+            "Esophageal rupture (Boerhaave's syndrome) causes mediastinitis and is a surgical emergency."
+          ]
+        },
+        {
+          "heading": "Full Differential Diagnosis of Chest Pain (Central vs Peripheral)",
+          "body_text": "The differential diagnosis of chest pain is organized anatomically into **central** and **peripheral** pain categories:\n\n**Central chest pain — Cardiac:**\n- Myocardial ischaemia (angina)\n- Myocardial infarction\n- Myocarditis\n- Pericarditis\n- Mitral valve prolapse syndrome\n- Connective tissue disorders\n\n**Central — Aortic:**\n- Aortic dissection\n- Aortic aneurysm\n\n**Central — Oesophageal:**\n- Oesophagitis\n- Oesophageal perforation (Boerhaave's syndrome)\n- Oesophageal spasm\n- Mallory–Weiss syndrome\n\n**Central — Lungs/pleura (may also cause peripheral pain):**\n- Pulmonary embolus/infarct\n- Pneumonia\n- Pneumothorax\n- Malignancy\n- Tuberculosis\n\n**Central — Mediastinal:**\n- Malignancy\n\n**Peripheral chest pain — Musculoskeletal** (sometimes central):\n- Osteoarthritis\n- Intercostal muscle injury\n- Rib fracture/injury\n- Epidemic myalgia (Bornholm disease)\n- Acute vertebral fracture\n- Costochondritis (Tietze's syndrome)\n\n**Peripheral — Neurological:**\n- Prolapsed intervertebral disc\n- Thoracic outlet syndrome\n- Herpes zoster\n\n**Peripheral — Anxiety/emotion.**\n\nEpidemiologically, in patients presenting to hospital with non-traumatic acute chest pain, the distribution of final discharge diagnoses is: **gastrointestinal 42%**, **ischemic heart disease 31%**, **chest wall syndrome 28%**, pericarditis 4%, pleuritis 2%, pulmonary embolism 2%, lung cancer 1.5%, aortic aneurysm 1%, aortic stenosis 1%, and herpes zoster 1%.",
+          "key_points": [
+            "Central pain: cardiac, aortic, esophageal, pulmonary/pleural, mediastinal causes.",
+            "Peripheral pain: musculoskeletal (Tietze's costochondritis, rib injury, Bornholm myalgia), neurological (zoster, disc prolapse, thoracic outlet), and anxiety.",
+            "GI causes (42%) and ischemic heart disease (31%) dominate final diagnoses of acute non-traumatic chest pain; 'benign' chest wall syndrome accounts for 28%.",
+            "Bornholm disease = epidemic myalgia (Coxsackie virus); Tietze's syndrome = costochondritis with swollen tender joints."
+          ],
+          "check": {
+            "prompt": "According to discharge data, what is the most common final diagnosis in patients admitted with acute non-traumatic chest pain?",
+            "options": [
+              "Ischemic heart disease",
+              "Gastrointestinal disease",
+              "Pulmonary embolism",
+              "Chest wall syndrome"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "أمراض الجهاز الهضمي هي أكثر التشخيصات النهائية شيوعاً (~42%) تليها أمراض القلب الإقفارية (~31%) ثم متلازمة جدار الصدر (~28%) — معلومة إحصائية مميزة تميّز الإجابة عن بقية الخيارات."
+          }
+        },
+        {
+          "heading": "Detailed History of Chest Pain — the Seven Elements",
+          "body_text": "A detailed history of the patient's chest pain must include:\n\n- **Site of pain:** The classic location of cardiac ischemic pain is **substernal or in the left chest**, and radiation to the **arm, neck, jaw, back, abdomen, or shoulders** may occur. Pain that radiates to the shoulders or occurs with exertion **significantly increases the relative risk for ACS**.\n- **Quality of pain:** Patients often describe ACS symptoms as **discomfort rather than pain** — pressure, heaviness, tightness, fullness, or squeezing. **Ischemia is less likely** if the discomfort is knifelike, sharp, pleuritic, or positional.\n- **Provocation/Palliation:** Which activities provoke the pain (exertion, cold, emotion) and which alleviate it (rest, nitrates).\n- **Onset:** Abrupt or gradual.\n- **Timing:** Constant or episodic, duration of episodes, when the pain began. **Typical anginal duration is minutes, not seconds or hours.**\n- **Radiation:** Shoulder, jaw, back.\n- **Severity:** Graded using the **CCS (Canadian Cardiovascular Society) angina scale I–IV**.\n\nComparing ischemic vs non-cardiac pain: ischemic cardiac pain is **central and diffuse**, radiates to jaw/neck/shoulder/arm (occasionally back), is **tight/squeezing/choking** in character, **precipitated by exertion and/or emotion**, **relieved by rest and quick response to nitrates**, and associated with breathlessness. Non-cardiac pain is peripheral and localized, sharp/stabbing/catching, spontaneous and unrelated to exertion (provoked by posture, respiration or palpation), not relieved by rest, with slow or no response to nitrates, and associated with respiratory, GI, locomotor or psychological features.",
+          "key_points": [
+            "Radiation to shoulders or pain with exertion significantly increases relative risk for ACS.",
+            "ACS discomfort = pressure/heaviness/tightness/fullness/squeezing, NOT knifelike/sharp/pleuritic/positional.",
+            "Typical ischemic pain duration = minutes (seconds and hours argue against angina).",
+            "Ischemic pain: central, diffuse, squeezing, exertional, relieved by rest and rapid nitrate response.",
+            "Non-cardiac pain: peripheral, localized, sharp, positional/pleuritic/palpable, no nitrate response."
+          ],
+          "check": {
+            "prompt": "A patient describes 3 days of constant sharp right-sided chest pain aggravated by deep inspiration and lying flat. Which feature argues MOST against ischemic etiology?",
+            "options": [
+              "Duration of days",
+              "Pleuritic and positional character",
+              "Right-sided location",
+              "All of the above argue against ischemia"
+            ],
+            "correct_index": 3,
+            "explanation_ar": "الألم الإقفاري يكون مركزياً منتشراً، ضاغطاً/عاصراً، يستمر دقائق، ويتفاقم بالجهد ويخف بالراحة والنتروغليسرين. الألم الحاد الجنبي، المتغير مع الوضعية، في جانب واحد، والمستمر لأيام — كلها صفات تنفي الإقفار القلبي."
+          }
+        },
+        {
+          "heading": "Typical Clinical Features of Major Causes of Acute Chest Discomfort",
+          "body_text": "**Cardiopulmonary causes:**\n\n- **Myocardial ischemia (stable angina):** pressure/tightness/squeezing/heaviness/burning; retrosternal, often radiating to neck, jaw, shoulders or arms, sometimes epigastric; precipitated by exertion, cold, or stress; duration 2–10 min. Unstable angina shows an increasing pattern or occurs at rest. Myocardial infarction: usually >30 min. Associated signs: S3 gallop or MR murmur (rare) during pain; S4 or rales if severe ischemia or infarction complication.\n- **Pericarditis:** variable onset over hours to days, may be episodic; **pleuritic, sharp**; retrosternal or toward the cardiac apex, may radiate to the left shoulder/trapezius ridge; **may be relieved by sitting up and leaning forward**; pericardial friction rub.\n- **Acute aortic syndrome (dissection):** sudden onset of unrelenting pain; **tearing or ripping, knifelike**; anterior chest often radiating to the **back between the shoulder blades**; associated with hypertension and/or connective tissue disorder; murmur of aortic insufficiency; **loss of peripheral pulses**.\n- **Pulmonary embolism:** sudden onset; pleuritic; often lateral, on the side of the embolism; may manifest as heaviness with massive PE; dyspnea, tachypnea, tachycardia, hypotension.\n- **Pulmonary hypertension:** variable, often exertional pressure; substernal; dyspnea and signs of increased venous pressure.\n- **Pneumonia/pleuritis:** variable onset; pleuritic; unilateral; dyspnea, cough, fever, rales, occasional rub.\n- **Spontaneous pneumothorax:** sudden onset; pleuritic; lateral to the side of the pneumothorax; dyspnea, decreased breath sounds on that side.\n\n**Non-cardiopulmonary causes:**\n\n- **Esophageal reflux:** 10–60 min; burning; substernal/epigastric; worsened by postprandial recumbency, relieved by antacids.\n- **Esophageal spasm:** 2–30 min; pressure/tightness/burning; retrosternal; can closely mimic angina.\n- **Peptic ulcer:** prolonged 60–90 min; burning; epigastric/substernal; relieved with food or antacids.\n- **Gallbladder disease:** prolonged; aching or colicky; epigastric/RUQ, sometimes to the back; may follow meals.\n- **Costochondritis:** variable; aching; sternal; sometimes swollen, tender, warm over the joint; reproduced by localized pressure.\n- **Cervical disc disease:** variable, may be sudden; aching, may include numbness; arms and shoulders; exacerbated by neck movement.\n- **Trauma/strain:** usually constant; aching; localized to area of strain; reproduced by movement or palpation.\n- **Herpes zoster:** usually prolonged; sharp or burning; dermatomal distribution; vesicular rash in the area of discomfort.\n- **Emotional/psychiatric conditions:** variable, fleeting or prolonged; often tightness and dyspnea with panic or feeling of doom; situational precipitants; history of panic attacks or depression.",
+          "key_points": [
+            "Aortic dissection: tearing/ripping pain radiating to the back between shoulder blades + hypertension + loss of peripheral pulses.",
+            "Pericarditis: pleuritic, positional pain relieved by sitting up and leaning forward, with friction rub.",
+            "Esophageal spasm closely mimics angina (retrosternal pressure 2–30 min); reflux is burning and relieved by antacids.",
+            "Zoster: unilateral dermatomal burning pain, vesicular rash; cervical disc: arm/shoulder ache worsened by neck movement.",
+            "MI pain typically exceeds 30 minutes, unlike stable angina (2–10 min)."
+          ]
+        },
+        {
+          "heading": "Variants of Typical Ischemic Chest Pain",
+          "body_text": "Several characteristic patterns of angina must be recognized:\n\n- **Crescendo angina:** anginal episodes of increasing frequency, duration, or severity — a warning pattern of instability.\n- **Decubitus angina:** angina occurring when lying flat (recumbency increases venous return and myocardial oxygen demand).\n- **Angina equivalent:** symptoms other than chest pain produced by myocardial ischemia (e.g., dyspnea, fatigue, indigestion, belching).\n- **Prinzmetal (variant) angina:** angina caused by coronary artery spasm, typically at rest, often with transient ST elevation.\n\n**Less classic symptoms (anginal equivalents)** such as **indigestion, belching, and dyspnea** should command the clinician's attention when other features of the presentation suggest ACS — even in the **absence of chest discomfort**.",
+          "key_points": [
+            "Crescendo angina = progressive worsening pattern (unstable angina warning).",
+            "Decubitus angina occurs on lying flat due to increased venous return.",
+            "Angina equivalents: dyspnea, indigestion, belching — especially in elderly and diabetics.",
+            "Prinzmetal angina = rest angina from coronary spasm with transient ST elevation."
+          ],
+          "check": {
+            "prompt": "A 58-year-old diabetic reports episodic belching and breathlessness on exertion relieved by rest, without chest discomfort. What is this presentation called?",
+            "options": [
+              "Prinzmetal angina",
+              "Crescendo angina",
+              "Angina equivalent",
+              "Decubitus angina"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "المكافئ الإقفاري (Angina equivalent) هو أعراض إقفارية غير ألم الصدر كعسر الهضم والتجشؤ وضيق النفس، وتشيع عند المسنين والسكريين بسبب اعتلال الأعصاب الحسية. أما برنزميتال فهو تشنج شرياني بيتي مع ارتفاع ST عابر، والتصاعدي هو زيادة وتيرة النوبات، والاضطجاعي يحدث بالاستلقاء."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "ACS", "definition_ar": "المتلازمة الإكليلية الحادة: تشمل الذبحة غير المستقرة واحتشاء العضلة القلبية"},
+        {"term": "Boerhaave syndrome", "definition_ar": "تمزق المريء التلقائي المسبب التهاب المنصف والصدر الجراحي الطارئ"},
+        {"term": "Tietze syndrome", "definition_ar": "التهاب الغضروف الضلعي مع تورم وألم موضعي قابل للإثارة بالضغط"},
+        {"term": "Bornholm disease", "definition_ar": "ألم عضلي وبائي (فيروس كوكساكي) يصيب عضلات الصدر والبطن"},
+        {"term": "CCS scale", "definition_ar": "التصنيف الكندي لوظيفة الذبحة الصدرية من I إلى IV بحسب قيد الجهد"},
+        {"term": "Prinzmetal angina", "definition_ar": "ذبحة تشنجية تحدث بالراحة مع ارتفاع مقطع ST عابر"}
+      ],
+      "difficulty": "core",
+      "order_index": 1
+    },
+    {
+      "id": "cvs_l1_c3_dyspnea",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Dyspnea: Orthopnea, PND, and Angina Equivalent",
+      "summary_ar": "ضيق النفس: تعريفه، خصائصه التاريخية، الأسباب المحددة للبداية الحادة، ودرجاته الوظيفية (NYHA)، مع شرح الانتصابي والانتيابي الليلي والمكافئ الإقفاري.",
+      "sections": [
+        {
+          "heading": "Definition and History Framework of Dyspnea",
+          "body_text": "**Dyspnea** is the awareness of increased drive to breathe; it is **normal on exercise** but becomes **pathological if it occurs at a significantly lower threshold than expected**. Breathlessness is a **non-specific symptom** that may be caused by:\n\n- **Cardiac** conditions (heart failure, ischemia, valve disease)\n- **Respiratory** conditions (asthma, COPD, pneumonia, PE)\n- **Neuromuscular** conditions\n- **Metabolic** conditions (acidosis, e.g., DKA)\n- **Toxins**\n- **Anxiety**\n\nThe history of dyspnea must establish:\n\n- **Onset:** acute (minutes to hours), subacute (days to weeks), or chronic (months). Breathing discomfort arising over the course of **minutes to hours** is due to a relatively limited number of conditions: pulmonary edema, pneumothorax, pulmonary embolism, anaphylaxis, foreign body, and acute arrhythmia.\n- **Severity:** quantified with the **NYHA functional classification** — Class I: no limitation during ordinary activity; Class II: slight limitation during ordinary activity; Class III: marked limitation of normal activities without symptoms at rest; Class IV: unable to undertake physical activity without symptoms; symptoms may be present at rest.\n- **Aggravating and relieving factors:** exertion, lying flat, allergen exposure; response to bronchodilators, nitrates, rest.\n- **Associated symptoms:** chest pain, palpitation, syncope, fever, cough, sputum, wheeze, orthopnea, ankle swelling.",
+          "key_points": [
+            "Dyspnea = pathological only when it occurs at a lower threshold than expected; non-specific with cardiac, respiratory, neuromuscular, metabolic, toxic, or anxiety causes.",
+            "Acute dyspnea (minutes–hours) has a limited differential: pulmonary edema, pneumothorax, PE, anaphylaxis, foreign body, acute arrhythmia.",
+            "NYHA classes I–IV grade the severity of functional limitation from none to symptoms at rest."
+          ],
+          "check": {
+            "prompt": "Dyspnea that awakens a patient 2 hours after falling asleep, relieved by sitting upright, with frothy sputum and crackles, is due to which mechanism?",
+            "options": [
+              "Bronchospasm from asthma",
+              "Reabsorption of peripheral edema into plasma raising left atrial pressure during sleep",
+              "Pulmonary embolism",
+              "Metabolic acidosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ضيق النفس الانتيابي الليلي ينجم عن إعادة امتصاص السوائل المحيطية إلى البلازما أثناء الاستلقاء مما يرفع الضغط في الأذين الأيسر ويسبب وذمة أسناخية — لذلك يتحسن بالجلوس وفتح النافذة."
+          }
+        },
+        {
+          "heading": "Angina Equivalent, Orthopnea and Paroxysmal Nocturnal Dyspnea",
+          "body_text": "**Angina equivalent:** dyspnea may be caused by myocardial ischaemia and is then known as an **'angina equivalent'**. It may occur **instead of, or with, chest discomfort**, especially in **elderly and diabetic patients**. It has **identical precipitants to angina** (exertion, emotion) and **may be relieved by GTN (glyceryl trinitrate)**.\n\n**Orthopnea:** dyspnea on lying flat. Lying flat **increases venous return**, and in patients with **left ventricular impairment** this may precipitate **pulmonary edema**. It is a sign of **advanced heart failure**. Severity is graded by the **number of pillows used at night** — e.g., 'three-pillow orthopnoea'.\n\n**Paroxysmal nocturnal dyspnea (PND):** sudden breathlessness that **wakes the patient from sleep**, caused by **accumulation of alveolar fluid**. Mechanistically, during sleep fluid from peripheral tissues is reabsorbed into plasma, redistributing into the lungs, which raises left atrial pressure; the fall in PaO2 during sleep further stresses the patient. Patients may **choke or gasp for air, sit on the edge of the bed, and open windows** in an attempt to relieve their distress. Features include cough with **frothy sputum**, pallor, sweating, tachycardia, and **crackles** on auscultation. Common causes of PND include: ischaemic heart disease, atrial fibrillation, aortic valve disease, mitral valve disease, hypertension, atrial tumours (e.g., myxoma), and cardiomyopathy.",
+          "key_points": [
+            "Angina equivalent dyspnea shares angina precipitants and is relieved by GTN — seen especially in elderly and diabetics.",
+            "Orthopnea = dyspnea on lying flat due to increased venous return precipitating pulmonary edema; graded by pillow count.",
+            "PND = sudden awakening with breathlessness from alveolar fluid accumulation; patients sit at bed edge, open windows, gasp; frothy sputum and crackles.",
+            "Causes of PND: IHD, AF, aortic and mitral valve disease, hypertension, atrial tumors (myxoma), cardiomyopathy."
+          ],
+          "check": {
+            "prompt": "Which statement best describes 'three-pillow orthopnea'?",
+            "options": [
+              "Dyspnea on exertion graded by the Canadian scale",
+              "Dyspnea on lying flat requiring three pillows to sleep, indicating advanced heart failure",
+              "Sudden nocturnal breathlessness waking the patient from sleep",
+              "Dyspnea relieved by sublingual nitrates"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الانتصابي هو ضيق نفس عند الاستلقاء يُدرّج بعدد الوسادات؛ ثلاث وسائد تعني مرضاً متقدماً لفشل القلب. أما النوب الليلي الانتيابي فهو استيقاظ مفاجئ بضيق نفس، والمكافئ الإقفاري يخف بالنترات."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "NYHA classification", "definition_ar": "التصنيف الوظيفي لجمعية نيويورك لفشل القلب من الصف I إلى IV"},
+        {"term": "GTN", "definition_ar": "النيتروغليسرين تحت اللسان، مرخٍ للأوعية يخفف الذبحة خلال دقائق"},
+        {"term": "Angina equivalent", "definition_ar": "عَرَض بديل عن ألم الذبحة (كضيق النفس) ناجم عن الإقفار ويستجيب للنترات"}
+      ],
+      "difficulty": "core",
+      "order_index": 2
+    },
+    {
+      "id": "cvs_l1_c4_palpitation",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Palpitation: Diagnosis, Red Flags, and Arrhythmia Descriptions",
+      "summary_ar": "الخفقان: وعي المريض بضربات القلب، أسئلة التاريخ الحاسمة، العلامات الخطرة المستوجبة التحقيق العاجل، وجدول وصف اللانظميات الشائعة.",
+      "sections": [
+        {
+          "heading": "Definition and Structured History of Palpitation",
+          "body_text": "**Palpitation** is an **unexpected awareness of the heart beating in the chest**. It may be rapid, forceful or irregular, and described as **thumping, pounding, fluttering, jumping, racing or skipping**.\n\nThe history must determine:\n\n- Is the **onset abrupt**? How do attacks **terminate** (sudden vs gradual)?\n- Is the palpitation **continuous or intermittent**?\n- Is the heartbeat **regular or irregular**?\n- What is the **approximate heart rate** (tapping the rhythm out helps)?\n- Do symptoms occur in **discrete attacks**?\n- Are there **associated symptoms**: chest pain, syncope, **polyuria** (a classic post-tachycardia feature due to atrial stretch and ANP release)?\n- Are there **precipitating factors** such as exercise or alcohol excess?\n- Is there a history of **structural heart disease**: coronary artery disease, valvular disease, **WPW (Wolff–Parkinson–White syndrome)**?\n- Any **family history of SCD (sudden cardiac death), inherited channelopathies, cardiomyopathy, or HOCM** (hypertrophic obstructive cardiomyopathy)?\n\n**Descriptions of common arrhythmias:**\n- **Extrasystoles:** sudden onset, brief; 'jump', missed beat or flutter; no radiation; no associated features; triggered by fatigue, caffeine, alcohol; relieved by walking (increases sinus rate); mild.\n- **Sinus tachycardia:** gradual onset; regular fast; anxiety association; exercise/anxiety triggers; mild to moderate; a few minutes.\n- **Supraventricular tachycardia:** sudden onset with 'jump'; regular fast; polyuria, breathlessness, chest tightness; minutes to hours; may be relieved by vagal manoeuvres; moderate to severe.\n- **Atrial fibrillation:** sudden onset; irregular, usually fast (slower in the elderly); polyuria, presyncope; very variable timing and severity, may be asymptomatic; exercise or alcohol may trigger.\n- **Ventricular tachycardia:** sudden onset; regular fast; presyncope, syncope, chest tightness; exercise may trigger, often spontaneous; often severe.",
+          "key_points": [
+            "Palpitation = unexpected awareness of heartbeat: thumping, pounding, fluttering, jumping, racing or skipping.",
+            "Post-tachycardia polyuria suggests SVT/AF (atrial stretch releasing ANP).",
+            "Ask about structural disease (CAD, VHD, WPW) and family history of SCD, channelopathies, cardiomyopathy, HOCM.",
+            "Regular narrow-complex tachycardia with abrupt onset/termination and polyuria = SVT; irregular = AF; regular fast with syncope = VT until proven otherwise.",
+            "Extrasystoles relieved by walking (sinus rate rises); SVT relieved by vagal maneuvers."
+          ],
+          "check": {
+            "prompt": "A 30-year-old reports abrupt-onset regular racing palpitations terminating suddenly, followed by polyuria. What is the most likely rhythm?",
+            "options": [
+              "Sinus tachycardia",
+              "Ventricular ectopics",
+              "Supraventricular tachycardia",
+              "Atrial fibrillation"
+            ],
+            "correct_index": 2,
+            "explanation_ar": "البدء والإنهاء المفاجئان مع انتظام وسرعة وتعدد البول بعدها صفات نموذجية لعدم انتظام دقات القلب فوق البطيني (SVT). التسرع الجيبي يبدأ تدريجياً، والرجفان الأذيني غير منتظم، والانقباضات البطينية وقفات قصيرة عابرة."
+          }
+        },
+        {
+          "heading": "High-Risk Features Requiring Urgent Investigation",
+          "body_text": "**Urgently investigate palpitation** associated with ANY of these high-risk features:\n\n- **Recent (<3 months) myocardial infarction, percutaneous coronary intervention or cardiac surgery**\n- **Associated syncope or severe chest pain**\n- **Family history of syncope or sudden death**\n- **Wolff–Parkinson–White syndrome, or inherited channelopathy** (e.g., long QT syndrome)\n- **Significant structural heart disease**, e.g. **hypertrophic cardiomyopathy, aortic stenosis**\n\nPalpitations with these features carry a risk of malignant ventricular arrhythmia and sudden cardiac death, and require prompt cardiology assessment with ECG, ambulatory monitoring, echocardiography and, when indicated, electrophysiological study.",
+          "key_points": [
+            "Red flags: recent MI/PCI/surgery (<3 months), syncope or severe chest pain with palpitations, family history of SCD, WPW/channelopathy, structural disease (HOCM, severe AS).",
+            "These patients need urgent investigation — ECG, Holter/event monitor, echo, ± EPS — because of sudden death risk."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "WPW syndrome", "definition_ar": "متلازمة وولف-باركنسون-وايت: مسار ملحق سريع يسبب تسرعاً فوق بطيني وخطر وفيات مفاجئة"},
+        {"term": "Channelopathy", "definition_ar": "اعتلال قنوات الأيونات الوراثي (كمتلازمة QT الطويلة) المهيئ لاضطرابات النظم"},
+        {"term": "HOCM", "definition_ar": "اعتلال عضلة القلب الضخامي الانسدادي، سبب هيكلي مهم لخفقان وإغماء وموت مفاجئ"},
+        {"term": "SCD", "definition_ar": "الموت القلبي المفاجئ نتيجة لانظميات خبيثة كالرجفان البطيني"},
+        {"term": "ANP polyuria", "definition_ar": "تعدد البول بعد نوبات التسرع بسبب إفراز الببتيد الأذيني المدر للصوديوم"}
+      ],
+      "difficulty": "core",
+      "order_index": 3
+    },
+    {
+      "id": "cvs_l1_c5_syncope",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Syncope and Presyncope: Mechanisms and Differentiation from Seizures",
+      "summary_ar": "الإغماء: تعريفه، آلياته الثلاث الرئيسية (قلبي، عصبي قلبي، انخفاض وضعي)، والتفريق بين الإغماء والاختلاج بجدول العلامات.",
+      "sections": [
+        {
+          "heading": "Definitions and Three Principal Mechanisms",
+          "body_text": "**Syncope** refers to **sudden loss of consciousness due to reduced cerebral perfusion**. **Presyncope** refers to **lightheadedness in which the individual thinks he or she may 'black out'**.\n\nThere are **three principal mechanisms** underlying recurrent presyncope or syncope:\n\n1. **Cardiac syncope** — due to either:\n   - **mechanical cardiac dysfunction**: e.g., **LVOT obstruction (as in HOCM), mitral stenosis (MS), pulmonary hypertension, LV dysfunction**; or\n   - **arrhythmia**: ventricular tachycardia (VT), atrial fibrillation (AF), supraventricular tachycardia (SVT).\n2. **Neurocardiogenic syncope** (also known as **vasovagal** or **reflex** syncope) — an **abnormal autonomic reflex** causes **bradycardia and/or hypotension**; typically precipitated by pain, emotion, prolonged standing, or situational triggers (micturition, cough).\n3. **Postural hypotension** — physiological **peripheral vasoconstriction on standing is impaired**, leading to hypotension; causes include autonomic neuropathy, dehydration, and vasodilator/diuretic drugs.\n\nCardiac syncope carries the worst prognosis because it may herald malignant arrhythmia; a careful history (exertional triggering, palpitations preceding, absence of prodrome) points toward a cardiac origin.",
+          "key_points": [
+            "Syncope = sudden LOC from reduced cerebral perfusion; presyncope = lightheadedness of impending black-out.",
+            "Cardiac mechanisms: mechanical (LVOT obstruction/HOCM, MS, pulmonary HTN, LV dysfunction) or arrhythmic (VT, AF, SVT).",
+            "Neurocardiogenic (vasovagal/reflex) syncope: autonomic reflex → bradycardia and/or hypotension.",
+            "Postural hypotension: impaired peripheral vasoconstriction on standing (autonomic failure, drugs, hypovolemia)."
+          ],
+          "check": {
+            "prompt": "A 25-year-old faints during venipuncture with nausea and sweating beforehand, recovering rapidly. Which mechanism is most likely?",
+            "options": [
+              "Cardiac syncope from arrhythmia",
+              "Neurocardiogenic (vasovagal) syncope",
+              "Postural hypotension",
+              "Cardiac syncope from LVOT obstruction"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "المحفز الوعائي المبدئي (بزل الوريد) مع الغثيان والتعرق والتعافي السريع هي علامات الإغماء العصبي القلبي (الوعائي المبهمي). الإغماء القلبي غالباً بلا نذير أو مع خفقان، وانخفاض الضغط الوضعي يرتبط بالوقوف."
+          }
+        },
+        {
+          "heading": "Differentiating Cardiac Syncope, Neurocardiogenic Syncope, and Seizures",
+          "body_text": "**Typical features:**\n\n- **Cardiac syncope:** premonitory symptoms often **none** — sometimes lightheadedness, palpitation, chest pain, breathlessness; during the unconscious period there is **extreme 'death-like' pallor**; recovery is **rapid (<1 min)**; flushing, nausea, headache and lightheadedness may follow recovery.\n- **Neurocardiogenic syncope:** premonitory **nausea, lightheadedness, sweating**; unconscious period shows **pallor**; recovery is **slow** with flushing, nausea, headache, lightheadedness.\n- **Seizures:** premonitory **delirium, hyperexcitability, olfactory hallucinations, 'aura'**; unconscious period is **prolonged (>1 min)** with **motor seizure activity, tongue-biting, urinary incontinence**; recovery shows **prolonged delirium (>5 mins)**, headache, and **focal neurological signs**.\n\n**N.B. Cardiac syncope can also cause convulsions by inducing cerebral anoxia** — anoxic seizures.\n\n**How to differentiate seizures from syncope:**\n- **Aura (e.g., olfactory):** seizure ✓; syncope ✗\n- **Cyanosis:** seizure ✓; syncope ✗\n- **Lateral tongue-biting:** seizure ✓; syncope −/+ (possible)\n- **Post-ictal delirium:** seizure ✓; syncope ✗\n- **Post-ictal amnesia:** seizure ✓; syncope ✗\n- **Post-ictal headache:** seizure ✓; syncope ✗\n- **Rapid recovery:** syncope ✓; seizure ✗",
+          "key_points": [
+            "Cardiac syncope: no prodrome, extreme 'death-like' pallor, rapid recovery (<1 min).",
+            "Vasovagal: nausea/sweating/lightheadedness prodrome, slow recovery with flushing.",
+            "Seizure: aura, prolonged unconsciousness (>1 min), motor activity, lateral tongue-biting, incontinence, postictal delirium/amnesia/headache >5 min.",
+            "Cardiac syncope can itself cause anoxic convulsions — do not assume every convulsion is epilepsy."
+          ]
+        }
+      ],
+      "key_terms": [
+        {"term": "Vasovagal syncope", "definition_ar": "إغماء عصبي قلبي انعكاسي ببطء قلب وانخفاض ضغط عابرين"},
+        {"term": "Postural hypotension", "definition_ar": "انخفاض الضغط عند الوقوف بسبب فشل التقبض المحيطي الفيزيولوجي"},
+        {"term": "LVOT obstruction", "definition_ar": "انسداد مخرج البطين الأيسر (كما في HOCM) مسبب إغماء جهد"},
+        {"term": "Anoxic seizure", "definition_ar": "اختلاج ناجم عن نقص أكسجة الدماغ في الإغماء القلبي وليس صرعاً"}
+      ],
+      "difficulty": "core",
+      "order_index": 4
+    },
+    {
+      "id": "cvs_l1_c6_edema_claudication_cyanosis",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "Leg Edema, Intermittent Claudication, and Cyanosis",
+      "summary_ar": "وذمة الساقين (أحادية مقابل ثنائية والأنزرقا)، العرج المتقطع كعَرَض لمرض الشرايين المحيطية، وجدول أسباب الزراق المركزي والمحيطي.",
+      "sections": [
+        {
+          "heading": "Leg Edema and Intermittent Claudication",
+          "body_text": "**Leg edema** must be characterized as:\n\n- **Unilateral** — suggesting local venous or lymphatic pathology (deep vein thrombosis, cellulitis, chronic venous insufficiency of one limb, lymphatic obstruction) — or\n- **Bilateral** — suggesting a systemic cause: congestive cardiac failure (right heart failure), nephrotic syndrome, cirrhosis with hypoalbuminemia, or bilateral chronic venous disease.\n- **Anasarca** — generalized severe edema involving the whole body indicates advanced systemic fluid retention.\n\n**Intermittent claudication** is defined as **pain of one or more lower extremity muscle groups related to activity due to inadequate blood supply (peripheral arterial disease, PAD)**. It is typically described as a cramping muscle pain that begins after a predictable walking distance and resolves within minutes of rest. On examination, look for absent or weakened peripheral pulses, arterial bruits, trophic skin changes, and use the ankle–brachial pressure index (ABPI) for objective assessment.",
+          "key_points": [
+            "Unilateral edema → local venous/lymphatic cause (DVT, cellulitis); bilateral → systemic (heart failure, nephrotic, cirrhosis) or venous disease.",
+            "Anasarca = generalized edema of the whole body.",
+            "Intermittent claudication = exertional muscle pain of one or more lower-limb muscle groups due to PAD, relieved by rest."
+          ],
+          "check": {
+            "prompt": "A 60-year-old smoker has cramping calf pain after walking 200 meters that resolves after 5 minutes of rest. His dorsalis pedis pulse is absent. What is the diagnosis?",
+            "options": [
+              "Bilateral leg edema from heart failure",
+              "Intermittent claudication from peripheral arterial disease",
+              "Neurogenic claudication from lumbar spinal stenosis",
+              "Deep vein thrombosis"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "ألم عضلة السمانة الإقفاري المتوقع بعد مسافة مشي ثابتة مع زواله بالتوقف وغياب النبض الظهري = عرج متقطع شرياني (PAD). العرج العصبي لا يزول بالوقوف بل بالجلوب/الانثناء، والخثار الوريدي ألم مستمر مع تورم لا علاقة له بالمشي."
+          }
+        },
+        {
+          "heading": "Cyanosis: Central and Peripheral Causes",
+          "body_text": "**Cyanosis** is a bluish discoloration of skin and mucous membranes. The **causes are divided into central and peripheral** categories.\n\n**Central cyanosis** (generalized, including warm mucous membranes — indicates decreased arterial oxygen saturation):\n\n- **Decreased atmospheric pressure** — high altitude.\n- **Impaired pulmonary function:**\n  - Alveolar hypoventilation (e.g., neuromuscular disease, central respiratory depression)\n  - **Inhomogeneity in pulmonary ventilation and perfusion (perfusion of hypoventilated alveoli — V/Q mismatch)**\n  - **Impaired oxygen diffusion** (interstitial lung disease)\n- **Anatomic shunts:**\n  - **Certain types of congenital heart disease** (right-to-left shunts, e.g., Eisenmenger syndromes, tetralogy of Fallot)\n  - **Pulmonary arteriovenous fistulas**\n  - **Multiple small intrapulmonary shunts**\n- **Hemoglobin with low affinity for oxygen / hemoglobin abnormalities:**\n  - **Methemoglobinemia** — hereditary or acquired\n  - **Sulfhemoglobinemia** — acquired\n  - **Carboxyhemoglobinemia (not true cyanosis — cherry-red discoloration)**\n\n**Peripheral cyanosis** (localized to cold, poorly perfused extremities — oxygen extraction exceeds delivery):\n\n- **Reduced cardiac output** (cardiogenic shock, severe heart failure)\n- **Cold exposure**\n- **Redistribution of blood flow from extremities** (shock states)\n- **Arterial obstruction** (peripheral embolism, atheroma)\n- **Venous obstruction** (massive DVT, vena cava obstruction)",
+          "key_points": [
+            "Central cyanosis = decreased arterial O2 saturation: high altitude, alveolar hypoventilation, V/Q mismatch, diffusion impairment, right-to-left shunts, abnormal hemoglobins.",
+            "Peripheral cyanosis = reduced local output/perfusion: low cardiac output, cold, arterial/venous obstruction.",
+            "Carboxyhemoglobinemia is not true cyanosis (cherry-red appearance).",
+            "Methemoglobinemia and sulfhemoglobinemia are hemoglobin-cause cyanosis categories."
+          ],
+          "check": {
+            "prompt": "A cyanotic patient has warm mucous membranes and an SpO2 that does not improve with supplemental oxygen. What type of cause should be considered?",
+            "options": [
+              "Peripheral cyanosis from cold exposure",
+              "Anatomic right-to-left shunt or abnormal hemoglobin",
+              "Venous obstruction of the arm",
+              "Arterial embolism of the leg"
+            ],
+            "correct_index": 1,
+            "explanation_ar": "الزراق المركزي (الذي يشمل الأغشية المخاطية الدافئة) والذي لا يتحسن بإعطاء الأكسجين يقود للتفكير بالتحويلة اليمين-يسار الخلقية أو اختلال الهيموغلوبين (مثميل الهيموغلوبين/كبريت الهيموغلوبين). الزراق المحيطي يقتصر على الأطراف الباردة ناقصة التروية."
+          }
+        }
+      ],
+      "key_terms": [
+        {"term": "ABPI", "definition_ar": "مؤشر الكاحل-العضد لقياس شدة مرض الشرايين المحيطية موضوعياً"},
+        {"term": "Methemoglobinemia", "definition_ar": "ارتفاع ميثيموغلوبين الدم مسبباً زراقاً مركزياً بنقص ألفة الهيموغلوبين للأكسجين"},
+        {"term": "V/Q mismatch", "definition_ar": "عدم تجانس التهوية والتروية الرئوية مسبباً زراقاً مركزياً"},
+        {"term": "Eisenmenger syndrome", "definition_ar": "تحويلة يسر-يمين معكوسة إلى يمين-يسار بعد ارتفاع ضغط الرئة الخلقي"}
+      ],
+      "difficulty": "core",
+      "order_index": 5
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "cvs_l1_fc1",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "card_type": "basic",
+      "front_text": "List the six immediately life-threatening causes of acute chest pain.",
+      "back_text": "1. Acute coronary syndrome (ACS)\n2. Acute aortic dissection\n3. Pulmonary embolism (PE)\n4. Tension pneumothorax\n5. Pericardial tamponade\n6. Mediastinitis (e.g., esophageal rupture — Boerhaave's syndrome).\nThese 'the great six' must be excluded first in every acute chest pain presentation.",
+      "mnemonic_ar": "احفظها: قلبي (ACS)، أبهرية (تسلخ)، رئوية (صمة)، صدر (استرواح ضاغط)، تامponade، مريء (بويرهاف).",
+      "explanation_ar": "هذه الأسباب الستة تهدد الحياة خلال دقائق إلى ساعات، لذا يجب استبعادها قبل التشخيصات السطحية كألم الجدار الصدري أو الحمض المعدي.",
+      "is_vivid": false,
+      "tags": ["chest pain", "emergency"]
+    },
+    {
+      "id": "cvs_l1_fc2",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "card_type": "basic",
+      "front_text": "Which descriptors of chest pain make ischemia LESS likely?",
+      "back_text": "Knifelike, sharp, pleuritic, or positional discomfort makes ischemia less likely. Ischemic pain is described as pressure, heaviness, tightness, fullness, or squeezing, lasts minutes (not seconds or hours), is precipitated by exertion/emotion, and is relieved by rest and GTN.",
+      "explanation_ar": "الألم الحاد كالطعن، الجنبي المتفاقم بالتنفس، والمتغير بالوضعية كلها تشير لأسباب غير إقفارية (تأمور، رئوي، عضلي هيكلي)، بينما الإقفار ضغط/عصر يزداد بالجهد ويخف بالنترات.",
+      "is_vivid": false,
+      "tags": ["chest pain", "ischemia"]
+    },
+    {
+      "id": "cvs_l1_fc3",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "card_type": "basic",
+      "front_text": "What is the classic pain of aortic dissection?",
+      "back_text": "Sudden onset of unrelenting pain, tearing or ripping and knifelike in quality, in the anterior chest often radiating to the back between the shoulder blades. It is associated with hypertension and/or connective tissue disorders (e.g., Marfan), a murmur of aortic insufficiency, and loss of peripheral pulses.",
+      "explanation_ar": "ألم التسلخ الأبهري: مفاجئ، مستمر، قارس/ممزّق، أمامي يشع للظهر بين لوحي الكتف، مع ارتفاع الضغط وفقدان النبض المحيطي — لا تخلطه بألم الإقفار الضاغط.",
+      "is_vivid": true,
+      "tags": ["aortic dissection", "chest pain"]
+    },
+    {
+      "id": "cvs_l1_fc4",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "card_type": "basic",
+      "front_text": "Which chest pain is characteristically relieved by sitting up and leaning forward?",
+      "back_text": "Pericarditis — pleuritic, sharp, retrosternal or toward the cardiac apex, may radiate to the left shoulder/trapezius ridge, variable onset (hours to days), often episodic, with a pericardial friction rub on examination.",
+      "explanation_ar": "التهاب التأمور يتوضع ألمه خلف القص أو نحو قمة القلب ويتفاقم بالاستلقاء ويخف بالجلوس والانحناء للأمام، وقد يسمع احتكاك تأموري.",
+      "is_vivid": false,
+      "tags": ["pericarditis", "chest pain"]
+    },
+    {
+      "id": "cvs_l1_fc5",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c3_dyspnea",
+      "card_type": "basic",
+      "front_text": "Define orthopnea and how is its severity graded?",
+      "back_text": "Orthopnea is dyspnea on lying flat. Lying flat increases venous return and in patients with left ventricular impairment may precipitate pulmonary edema; it is a sign of advanced heart failure. Severity is graded by the number of pillows used at night, e.g., 'three-pillow orthopnea'.",
+      "explanation_ar": "الانتصابي: ضيق نفس عند الاستلقاء بسبب زيادة العود الوريدي وهبوط السائل نحو الرئتين؛ تدرجه بعدد الوسادات: وسادتان، ثلاث وسائد...",
+      "is_vivid": false,
+      "tags": ["orthopnea", "heart failure"]
+    },
+    {
+      "id": "cvs_l1_fc6",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c3_dyspnea",
+      "card_type": "basic",
+      "front_text": "Define paroxysmal nocturnal dyspnea (PND) and its mechanism.",
+      "back_text": "PND is sudden breathlessness waking the patient from sleep, caused by accumulation of alveolar fluid: during sleep fluid from peripheral tissues is reabsorbed into plasma and redistributed into the lungs, raising left atrial pressure while PaO2 falls. Patients may choke or gasp for air, sit on the edge of the bed and open windows. Features: cough with frothy sputum, pallor, sweating, tachycardia, crackles.",
+      "explanation_ar": "النوب الليلي الانتيابي: استيقاظ مفاجئ بضيق نفس نتيجة انتقال السوائل من الأنسجة للبلازما ثم للأسناخ أثناء النوم وارتفاع ضغط الأذين الأيسر؛ المريض يجلس على حافة السرير ويفتح النافذة، مع بلغم رغوي وخراخر.",
+      "is_vivid": false,
+      "tags": ["PND", "heart failure"]
+    },
+    {
+      "id": "cvs_l1_fc7",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c3_dyspnea",
+      "card_type": "basic",
+      "front_text": "What is the 'angina equivalent' and in whom is it typical?",
+      "back_text": "Dyspnea (or other symptoms like indigestion/belching) caused by myocardial ischemia occurring instead of, or with, chest discomfort. It has identical precipitants to angina and may be relieved by GTN. It is typical in elderly and diabetic patients, who may present with ischemia without any chest pain.",
+      "explanation_ar": "المكافئ الإقفاري: عرض بديل لألم الذبحة (ضيق نفس، عسر هضم، تجشؤ) له نفس محفزات الذبحة ويستجيب للنترات؛ شائع عند كبار السن والسكريين.",
+      "is_vivid": false,
+      "tags": ["angina equivalent", "diabetes"]
+    },
+    {
+      "id": "cvs_l1_fc8",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c4_palpitation",
+      "card_type": "basic",
+      "front_text": "List the five high-risk features that make palpitations require URGENT investigation.",
+      "back_text": "1. Recent (<3 months) myocardial infarction, PCI, or cardiac surgery\n2. Associated syncope or severe chest pain\n3. Family history of syncope or sudden death\n4. Wolff–Parkinson–White syndrome or inherited channelopathy (e.g., long QT)\n5. Significant structural heart disease (hypertrophic cardiomyopathy, aortic stenosis).",
+      "mnemonic_ar": "خمسة حمراء: حدث قلبي حديث، إغماء/ألم شديد، قصة عائلية للموت المفاجئ، WPW أو اعتلال قنوات، مرض قلبي هيكلي.",
+      "explanation_ar": "أي من هذه السمات يرفع خطر اللانظمية الخبيثة والموت المفاجئ فيستوجب تحقيقاً عاجلاً وليس مجرد متابعة.",
+      "is_vivid": false,
+      "tags": ["palpitation", "red flags"]
+    },
+    {
+      "id": "cvs_l1_fc9",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c5_syncope",
+      "card_type": "basic",
+      "front_text": "What are the three principal mechanisms of syncope?",
+      "back_text": "1. Cardiac syncope — mechanical cardiac dysfunction (LVOT obstruction/HOCM, MS, pulmonary hypertension, LV dysfunction) or arrhythmia (VT, AF, SVT)\n2. Neurocardiogenic (vasovagal/reflex) syncope — abnormal autonomic reflex causing bradycardia and/or hypotension\n3. Postural hypotension — impaired physiological peripheral vasoconstriction on standing leading to hypotension.",
+      "explanation_ar": "الآليات الثلاث: قلبية (ميكانيكية أو لانظمية)، عصبية قلبية وعائية مبهمية، وانخفاض الضغط الوضعي بفشل التقبض المحيطي عند الوقوف.",
+      "is_vivid": false,
+      "tags": ["syncope", "mechanisms"]
+    },
+    {
+      "id": "cvs_l1_fc10",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c5_syncope",
+      "card_type": "basic",
+      "front_text": "Which features distinguish a seizure from syncope at the bedside?",
+      "back_text": "Seizure: aura (e.g., olfactory), cyanosis, lateral tongue-biting, post-ictal delirium, post-ictal amnesia, post-ictal headache, prolonged unconsciousness (>1 min), slow recovery.\nSyncope: extreme 'death-like' pallor, rapid recovery (<1 min), no aura, no postictal features. Note: cardiac syncope can cause anoxic convulsions.",
+      "explanation_ar": "الاختلاج: هالة، زراق، عض اللسان الجانبي، هذيان وفقدان ذاكرة وصداع بعد النوبة. الإغماء: شحوب قاتم وتعافٍ سريع أقل من دقيقة. لكن إغماء القلب قد يسبب اختلاجات نقص الأكسجة.",
+      "is_vivid": false,
+      "tags": ["syncope", "seizure"]
+    },
+    {
+      "id": "cvs_l1_fc11",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c6_edema_claudication_cyanosis",
+      "card_type": "basic",
+      "front_text": "Define intermittent claudication.",
+      "back_text": "Pain of one or more lower extremity muscle groups related to activity (walking a predictable distance) due to inadequate blood supply in peripheral arterial disease (PAD), resolving within minutes of rest. Check peripheral pulses, bruits, and ABPI.",
+      "explanation_ar": "عرج متقطع: ألم عضلات الطرف السفلي أثناء المشي لنقص التروية الشريانية يزول بالراحة خلال دقائق، مع نقص نبض وربما لغط شرياني و ABPI منخفض.",
+      "is_vivid": false,
+      "tags": ["claudication", "PAD"]
+    },
+    {
+      "id": "cvs_l1_fc12",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c6_edema_claudication_cyanosis",
+      "card_type": "basic",
+      "front_text": "Differentiate central from peripheral cyanosis with key causes.",
+      "back_text": "Central cyanosis (decreased arterial O2 saturation; mucous membranes involved): high altitude, alveolar hypoventilation, V/Q mismatch, impaired diffusion, anatomic right-to-left shunts (CHD, pulmonary AVM fistulas, intrapulmonary shunts), and abnormal hemoglobins (methemoglobinemia, sulfhemoglobinemia; carboxyhemoglobinemia is not true cyanosis).\nPeripheral cyanosis (local reduced perfusion): reduced cardiac output, cold exposure, redistribution of flow, arterial obstruction, venous obstruction.",
+      "explanation_ar": "المركزي: نقص تشبع الشرياني بأسباب رئوية (فرق تهوية/تروية، نقص انتشار)، تحويلات يمين-يسار، وهيموغلوبين شاذ. المحيطي: نقص النتاج القلبي أو البرد أو انسداد شرياني/وريدي موضعي.",
+      "is_vivid": false,
+      "tags": ["cyanosis"]
+    },
+    {
+      "id": "cvs_l1_fc13",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "card_type": "basic",
+      "front_text": "Name four variants of typical ischemic chest pain.",
+      "back_text": "1. Crescendo angina — episodes of increasing frequency/duration/severity\n2. Decubitus angina — angina on lying flat (increased venous return)\n3. Angina equivalent — ischemic symptom other than chest pain (dyspnea, indigestion, belching)\n4. Prinzmetal (variant) angina — rest angina from coronary spasm, often with transient ST elevation.",
+      "explanation_ar": "التصاعدي يزداد سوءاً؛ الاضطجاعي عند الاستلقاء؛ المكافئ عرض إقفاري بلا ألم صدري؛ والبرنزميتالي تشنج شرياني بالراحة مع ارتفاع ST عابر.",
+      "is_vivid": false,
+      "tags": ["angina variants"]
+    },
+    {
+      "id": "cvs_l1_fc14",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c1_cvs_symptoms_overview",
+      "card_type": "basic",
+      "front_text": "Enumerate the seven cardinal cardiovascular symptoms to screen in every cardiac history.",
+      "back_text": "1. Chest pain\n2. Dyspnea (with PND and orthopnea)\n3. Palpitation\n4. Syncope / presyncope\n5. Leg edema (unilateral or bilateral; note anasarca)\n6. Intermittent claudication (activity-related lower-limb muscle pain from PAD)\n7. Cyanosis (central vs peripheral).",
+      "mnemonic_ar": "ألم صدر، ضيق نفس (ليلي/انتصابي)، خفقان، إغماء، وذمة ساقين، عرج متقطع، زراق.",
+      "explanation_ar": "هذه القائمة هي شبكة الأمان لأخذ تاريخ قلبي وعائي كامل — أي عرض منها يستوجب تدقيقاً منهجياً.",
+      "is_vivid": false,
+      "tags": ["history taking"]
+    }
+  ],
+  "mcqs": [
+    {
+      "id": "cvs_l1_mcq1",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c2_chest_pain",
+      "question_stem": "A 55-year-old hypertensive man presents with sudden severe chest pain described as 'tearing', radiating to the back between the shoulder blades. Blood pressure is 190/110 mmHg in the right arm and 100/70 mmHg in the left, and the left radial pulse is weaker than the right. Which of the following is the most likely diagnosis?",
+      "options": [
+        "Acute aortic dissection",
+        "Acute pericarditis",
+        "Esophageal spasm",
+        "Tietze's costochondritis"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "الألم القارس الممزّق المفاجئ المشع للظهر بين الكتفين مع فرط ضغط وعدم تساوي الضغط والنبض بين الذراعين = تسلخ الأبهر — علامات خطيرة معاً. التهاب التأمور ألم جنبي يخف بالانحناء الأمامي مع احتكاك؛ التشنج المريئي يقلد الذبحة لكن بلا علامات وعائية؛ والتهاب الغضروف الضلعي ألم موضعي قابل للإثارة بالضغط.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Quality of the pain: tearing, radiating to the back",
+        "Blood pressure asymmetry between arms",
+        "Connect with hypertension and connective tissue risk"
+      ],
+      "focus_sections": [1, 3]
+    },
+    {
+      "id": "cvs_l1_mcq2",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c3_dyspnea",
+      "question_stem": "A 68-year-old man with a history of two myocardial infarctions reports waking at night gasping for air, coughing frothy sputum. He must sit on the edge of the bed and open the window for 20 minutes to recover. He sleeps on three pillows. Which mechanism best explains his nocturnal symptoms?",
+      "options": [
+        "Nocturnal bronchospasm from asthma",
+        "Reabsorption of interstitial fluid into plasma during sleep, raising left atrial pressure",
+        "Obstructive sleep apnea causing nocturnal desaturation",
+        "Nocturnal gastroesophageal reflux causing laryngospasm"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "هذه قصة ضيق النفس الانتيابي الليلي الكلاسيكية: إعادة امتصاص سوائل الأنسجة المحيطية إلى البلازما أثناء النوم ترفع الضغط الأذيني الأيسر وتسبب وذمة أسناخية (بلغم رغوي وخراخر) وتتحسن بالجلوس. الربو الليلي يصاحبه صفير وذروة تدفق متغيرة، والانقطاع النومي شخير ونعاس نهاري، والارتجاع حرقة وارتجاع حامض.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Frothy sputum and crackles point to alveolar fluid",
+        "Symptoms relieved by upright posture",
+        "Think about what happens to peripheral edema during sleep"
+      ],
+      "focus_sections": [1]
+    },
+    {
+      "id": "cvs_l1_mcq3",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c4_palpitation",
+      "question_stem": "A 24-year-old woman describes abrupt-onset palpitations, regular and racing, that stop suddenly; she notices polyuria after each episode lasting up to an hour. She has no structural heart disease and no family history of sudden death. Which arrhythmia is most likely?",
+      "options": [
+        "Supraventricular tachycardia (SVT)",
+        "Atrial fibrillation",
+        "Sinus tachycardia",
+        "Ventricular tachycardia"
+      ],
+      "correct_index": 0,
+      "explanation_ar": "بدء وانتهاء مفاجئان، انتظام، وسرعة مع تعدد البول بعد النوبة = SVT. الرجفان الأذيني غير منتظم، التسرع الجيبي يبدأ وينتهي تدريجياً، والتسرع البطيني أخطر ويترافق مع إغماء/ألم وليس تعدد بول فقط.",
+      "difficulty": "core",
+      "clinical_vignette": true,
+      "hints": [
+        "Regular vs irregular rhythm",
+        "Sudden onset and termination pattern",
+        "Polyuria after termination"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l1_mcq4",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c5_syncope",
+      "question_stem": "An 80-year-old man with a systolic murmur consistent with severe aortic stenosis collapses during a walk without prodrome. He is extremely pale and regains consciousness within 40 seconds, with no tongue biting or incontinence. What is the most likely mechanism of his syncope?",
+      "options": [
+        "Neurocardiogenic (vasovagal) syncope",
+        "Cardiac syncope — exertional with fixed outflow obstruction",
+        "Postural hypotension",
+        "Epileptic seizure"
+      ],
+      "correct_index": 1,
+      "explanation_ar": "إغماء جهد بلا نذير في مريض تضيق أبهري شديد = إغماء قلبي ميكانيكي: لا يستطيع القلب زيادة النتاج أمام الانسداد الثابت فهبط الضغط ونقص تروية الدماغ؛ شحوبه القاتم وتعافيه السريع يفيدان الإغماء، وغياب الهالة والعض اللساني ينفيان الاختلاج.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Exertional trigger with a systolic murmur",
+        "No prodrome favors cardiac origin",
+        "Rapid recovery with extreme pallor"
+      ],
+      "focus_sections": [0]
+    },
+    {
+      "id": "cvs_l1_mcq5",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "concept_id": "cvs_l1_c6_edema_claudication_cyanosis",
+      "question_stem": "A 62-year-old woman presents with central cyanosis that does not improve with supplemental oxygen. She has clubbing and a loud P2. Which category of causes of cyanosis is most likely?",
+      "options": [
+        "Peripheral cyanosis from cold exposure",
+        "Peripheral cyanosis from reduced cardiac output",
+        "Central cyanosis due to anatomic right-to-left shunt",
+        "Central cyanosis due to carboxyhemoglobinemia"
+      ],
+      "correct_index": 2,
+      "explanation_ar": "الزراق المركزي غير المستجيب للأكسجين مع أصابع ضربية و P2 عالٍ يقود لتحويلة يمين-يسار مع ارتفاع ضغط رئوي (متلازمة أيزنمنغر مثلاً). الزراق المحيطي يقتصر على الأطراف ويحسّنه التدفئة، وكربوكسي هيموغلوبين الدم لون أحمق كرزي وليس زراقاً حقيقياً.",
+      "difficulty": "advanced",
+      "clinical_vignette": true,
+      "hints": [
+        "Oxygen-refractory cyanosis",
+        "Clubbing and loud P2 suggest pulmonary hypertension",
+        "Central mechanism: shunting of deoxygenated blood"
+      ],
+      "focus_sections": [1]
+    }
+  ],
+  "clinical_cases": [
+    {
+      "id": "cvs_l1_case1",
+      "lecture_id": "cvs_l1_clinical_approach_cv_disease",
+      "title": "The Midnight Gasping: Acute Pulmonary Edema Mistaken for Asthma",
+      "scenario": "A 70-year-old woman is brought to the emergency department by her husband at 2 a.m. She woke suddenly gasping for air, coughed pink frothy sputum, and had to sit upright on the edge of the bed with the window open. She is terrified. Her husband reports that for months she has needed three pillows to sleep and her ankles have been swelling.",
+      "vignette": {
+        "age": 70,
+        "sex": "female",
+        "chief_complaint": "Sudden severe breathlessness waking her from sleep with coughing of frothy sputum",
+        "history": "Hypertension for 15 years, poorly controlled; two previous hospital admissions for 'breathlessness' labeled as asthma; no chest pain tonight; ankle swelling for 3 months; three-pillow orthopnea for 6 months.",
+        "vitals": {
+          "bp": "175/95 mmHg",
+          "hr": "118 bpm regular",
+          "rr": "32/min",
+          "temp": "36.8 C",
+          "spo2": "88% on room air"
+        },
+        "exam": "Sitting upright, distressed, sweating, pale. Bilateral widespread inspiratory crackles to the mid-zones, S3 gallop, displaced apex beat, elevated JVP, bilateral pitting ankle edema. No wheeze on forced expiration.",
+        "labs": [
+          {"name": "NT-proBNP", "value": "6,500 pg/mL (ref < 300 pg/mL)", "flag": "critical"},
+          {"name": "High-sensitivity troponin T", "value": "28 ng/L (ref < 14 ng/L)", "flag": "high"},
+          {"name": "Serum creatinine", "value": "1.4 mg/dL (ref 0.6–1.1)", "flag": "high"},
+          {"name": "Hemoglobin", "value": "12.1 g/dL (ref 12–16)", "flag": "normal"},
+          {"name": "Serum potassium", "value": "4.0 mmol/L (ref 3.5–5.0)", "flag": "normal"}
+        ],
+        "imaging": "Chest X-ray: cardiomegaly, bilateral perihilar 'bat-wing' consolidation, Kerley B lines, small bilateral pleural effusions."
+      },
+      "steps": [
+        {
+          "id": "cvs_l1_case1_s1",
+          "prompt": "What is the most likely cause of this patient's sudden nocturnal breathlessness?",
+          "options": [
+            "Acute asthma exacerbation",
+            "Paroxysmal nocturnal dyspnea with acute pulmonary edema from left heart failure",
+            "Pulmonary embolism",
+            "Obstructive sleep apnea"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الاستيقاظ المفاجئ بضيق نفس مع بلغم رغوي ورددي وخراخر ثنائية و S3 و NT-proBNP مرتفع جداً وكلاء الخفاش على الصورة = وذمة رئوية حادة بفشل قلب أيسر (نوب ليلي انتيابي). لا صفير متغير يفيد الربو، ولا عوامل خطر صمة وإنما ارتفاع ضغط طويل مع علامات احتقان.",
+          "xp": 8,
+          "hints": [
+            "Frothy sputum and crackles, not wheeze",
+            "Three-pillow orthopnea and ankle edema predate tonight",
+            "NT-proBNP is markedly elevated"
+          ]
+        },
+        {
+          "id": "cvs_l1_case1_s2",
+          "prompt": "Which pathophysiological mechanism triggered tonight's episode during sleep?",
+          "options": [
+            "Nocturnal bronchial hyperresponsiveness",
+            "Reabsorption of peripheral interstitial fluid into plasma, increasing venous return and left atrial pressure",
+            "Acute coronary plaque rupture",
+            "Sleep-related hypoventilation from obesity"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "آلية النوب الليلي الانتيابي: أثناء النوم يعاد امتصاص سائل الوذمة المحيطية إلى البلازما، فيزيد العود الوريدي وضغط الأذين الأيسر فتتسرب السوائل للأسناخ. هذا يفسر تحسن المريضة بالجلوس (نزول السائل) وخفقان فتح النافذة.",
+          "xp": 8,
+          "hints": [
+            "What happens to leg edema when the patient lies flat for hours?",
+            "Symptoms relieved by sitting upright"
+          ]
+        },
+        {
+          "id": "cvs_l1_case1_s3",
+          "prompt": "What is the most appropriate immediate management?",
+          "options": [
+            "Nebulized salbutamol and ipratropium only",
+            "Sit upright, high-flow oxygen, IV loop diuretic (furosemide), sublingual/IV nitrate if BP adequate",
+            "Immediate synchronized cardioversion",
+            "Empirical antibiotics for pneumonia"
+          ],
+          "correct_index": 1,
+          "explanation_ar": "الوذمة الرئوية القلبية الحادة: وضعية الجلوس، أكسجة عالية، موروث وريدي (فوروسيميد) لنزع السوائل والنترات الوريدية لخفض الضغط والعبء القبلي (الضغط كافٍ 175/95). الكارديوفرجن غير مطلوب لأن نظمها جيبي، والمضادات الحيوية لا دور لها، والسالبوتامول وحده لا يعالج السبب وقد يزيد التسرع.",
+          "xp": 10,
+          "hints": [
+            "BP is high — afterload and preload reduction both possible",
+            "First drug class: loop diuretic"
+          ]
+        }
+      ],
+      "debriefing_ar": "التشخيص النهائي: فشل قلب أيسر مزمن مع اشتداد حاد — نوب ضيق نفس ليلي انتيابي مع وذمة رئوية حادة على خلفية فرط ضغط غير مسيطر عليه (واحتشاء غير صامت محتمل بدلالة تروبونين مرتفع قليلاً). الدروس: (١) ضيق النفس الليلي الانتيابي مع الانتصابي علامتان لفشل متقدم لا ينبغي وسمهما 'ربو' — البلوغم الرغوي والخراخر الثنائية و S3 تدعم الوذمة. (٢) الآلية الليلية هي إعادة توزيع السوائل من الأطراف إلى الرئتين أثناء الاستلقاء وارتفاع ضغط الأذين الأيسر وهبوط PaO2. (٣) العلاج الفوري: جلوس، أكسجين، مدر وريدي، ونترات خافضة للضغط إذا كان الضغط كافياً، ثم تقصٍّ عن السبب (إيكو، ECG، تروبونين) وضبط الضغط المزمن.",
+      "difficulty": "core",
+      "order_index": 0
+    }
+  ]
+}

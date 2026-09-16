@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:sqflite/sqflite.dart';
 
 import '../database/database_helper.dart';
+import 'specialty_domains.dart';
 
 /// نتيجة التحقق من ملف محاضرة (بدون زرع).
 class LectureValidationResult {
@@ -62,17 +63,10 @@ class LectureImportResult {
 /// - INSERT OR IGNORE — آمن عند إعادة الاستيراد (idempotent).
 /// - لا يمس بيانات المستخدم (تقدم/إجابات/XP) إطلاقاً.
 abstract final class LectureImportService {
-  // ── القوائم المسموحة (من الـ Schema) ──
-  static const Set<String> _modules = <String>{
-    'cardiology', 'pulmonology', 'nephrology', 'gastroenterology',
-    'endocrinology', 'hematology', 'infectious', 'rheumatology',
-    'neurology', 'oncology',
-  };
-  static const Set<String> _systems = <String>{
-    'cardiovascular', 'respiratory', 'renal', 'gastrointestinal',
-    'endocrine', 'immune', 'nervous', 'musculoskeletal',
-    'hematologic', 'integumentary',
-  };
+  // ── القوائم المسموحة (v21: عبر كل التخصصات — مصدر الحقيقة
+  //    SpecialtyDomains؛ القوائم هنا مجموع مسموح للتحقق البنيوي) ──
+  static final Set<String> _modules = SpecialtyDomains.allModules;
+  static final Set<String> _systems = SpecialtyDomains.allSystems;
 
   // ───────────────────────────── التحقق ─────────────────────────────
 
@@ -146,11 +140,22 @@ abstract final class LectureImportService {
         (lecture['title']! as String).trim().length < 3) {
       return 'عنوان المحاضرة مفقود أو أقصر من 3 أحرف.';
     }
+    // — v2.3 (اختياري): التخصص السريري الأب specialty —
+    if (lecture['specialty'] != null &&
+        !DatabaseHelper.specialties.contains(lecture['specialty'])) {
+      return 'التخصص السريري (specialty) غير معروف: '
+          '${lecture['specialty']} — المسموح: '
+          '${DatabaseHelper.specialties.join(', ')}.';
+    }
+    // v21: مجموع مسموح عبر التخصصات (SpecialtyDomains) — رسالة
+    // الخطأ تعرض القائمة الكاملة المسموحة لتوجيه المؤلف.
     if (!_modules.contains(lecture['module'])) {
-      return 'التخصص (module) غير معروف: ${lecture['module']}.';
+      return 'التخصص (module) غير معروف: ${lecture['module']} — '
+          'المسموح: ${SpecialtyDomains.allModules.join(', ')}.';
     }
     if (!_systems.contains(lecture['system'])) {
-      return 'الجهاز (system) غير معروف: ${lecture['system']}.';
+      return 'الجهاز (system) غير معروف: ${lecture['system']} — '
+          'المسموح: ${SpecialtyDomains.allSystems.join(', ')}.';
     }
     final Map<String, Object?>? source = _asMap(lecture['source']);
     if (source == null ||
@@ -163,6 +168,31 @@ abstract final class LectureImportService {
     if (lecture['order_index'] is! int ||
         (lecture['order_index']! as int) < 0) {
       return 'ترتيب المحاضرة (order_index) مفقود أو غير صالح.';
+    }
+
+    // — v2.2 (اختياري): لؤلؤة اليوم golden_tip — نص أو مصفوفة نصوص —
+    final Object? goldenTip = lecture['golden_tip'];
+    if (goldenTip != null) {
+      final List<String> tips = goldenTip is List
+          ? <String>[
+              for (final dynamic t in goldenTip)
+                if (t is String) t.trim(),
+            ]
+          : goldenTip is String
+              ? <String>[goldenTip.trim()]
+              : const <String>[];
+      if (goldenTip is! String && goldenTip is! List) {
+        return 'golden_tip يجب أن يكون نصاً أو مصفوفة نصوص.';
+      }
+      if (tips.any((String t) => t.length < 10 || t.length > 280)) {
+        return 'كل لؤلؤة في golden_tip يجب أن تكون 10–280 حرفاً.';
+      }
+      if (goldenTip is List && (goldenTip.isEmpty || goldenTip.length > 10)) {
+        return 'golden_tip يجب أن تحوي 1–10 لآلئ.';
+      }
+      if (tips.isEmpty) {
+        return 'golden_tip لا يقبل قيمة فارغة — احذف الحقل أو املأه.';
+      }
     }
 
     // — الحصص الإلزامية (Data Contract) —
@@ -567,11 +597,15 @@ abstract final class LectureImportService {
       // ── 1) الوحدة ──
       count += await _insertIgnore(txn, 'units', <String, Object?>{
         'id': lecture['id'],
+        // v2.3: التخصص السريري — الباطنية افتراضاً (عقد متوافق رجعياً).
+        'specialty': lecture['specialty'] ?? DatabaseHelper.defaultSpecialty,
         'module': lecture['module'],
         'system': lecture['system'],
         'title': lecture['title'],
         'description_ar': lecture['summary_ar'],
         'order_index': lecture['order_index'],
+        // v2.2: لؤلؤة اليوم — نفس تطبيع الـ seeder.
+        'golden_tip': _goldenTipOf(lecture['golden_tip']),
       });
 
       // ── 2) الشروحات ──
@@ -705,6 +739,23 @@ abstract final class LectureImportService {
 
   static bool _validId(Object? raw) =>
       raw is String && RegExp(r'^[a-zA-Z0-9_-]+$').hasMatch(raw);
+
+  /// تطبيع golden_tip (عقد v2.2): نص يمر كما هو، مصفوفة تُدمج بفواصل
+  /// أسطر — مطابق لمنطق ContentSeeder كي لا يتباعد المساران أبداً.
+  static String? _goldenTipOf(Object? raw) {
+    if (raw is String) {
+      final String trimmed = raw.trim();
+      return trimmed.isEmpty ? null : trimmed;
+    }
+    if (raw is List) {
+      final List<String> tips = <String>[
+        for (final dynamic t in raw)
+          if (t is String && t.trim().isNotEmpty) t.trim(),
+      ];
+      return tips.isEmpty ? null : tips.join('\n');
+    }
+    return null;
+  }
 
   static List<dynamic> _asList(Object? raw) =>
       raw is List ? raw : const <dynamic>[];

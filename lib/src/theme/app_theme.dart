@@ -7,17 +7,46 @@ import 'tokens.dart';
 ///
 /// مبدأ الهوية: «حدود لا ظلال» — كل سطح بحد 1px وظل ناعم جداً.
 /// ColorScheme يُبنى يدوياً (لا fromSeed) لتطابق قيم الهوية حرفياً
-/// في الوضعين وتثبيت ألوان derived (containers) على قيم الأزرق الكحلي.
+/// في الوضعين وتثبيت ألوان derived (containers) على قيم الأساسي.
+///
+/// **v20 — الثيم الديناميكي بالتخصص**: [specialty] يبدّل الأساسي
+/// (primary/container) بكل لون التخصص — كحلي الباطنية، أخضر
+/// الجراحة، أرجواني النسائية. الباقي (أسطح/نصوص/حدود/حالة) ثابت
+/// من الـ tokens — التخصص يمس الهوية اللونية فقط لا قابلية
+/// القراءة. الافتراضي باطنية = الثيم التاريخي حرفياً.
 abstract final class AppTheme {
-  static ThemeData get light => _build(Brightness.light);
+  /// الثيم التاريخي (باطنية) — توافق رجعي كامل مع كل المستدعين.
+  static ThemeData get light => forSpecialty(
+        'internal_medicine',
+        Brightness.light,
+      );
 
-  static ThemeData get dark => _build(Brightness.dark);
+  static ThemeData get dark => forSpecialty(
+        'internal_medicine',
+        Brightness.dark,
+      );
 
-  static ThemeData _build(Brightness brightness) {
+  /// ثيم تخصص سريري — قلب نظام الألوان الديناميكي (v20).
+  static ThemeData forSpecialty(
+    String specialty,
+    Brightness brightness,
+  ) =>
+      _build(brightness, specialty);
+
+  static ThemeData _build(
+    Brightness brightness, [
+    String specialty = 'internal_medicine',
+  ]) {
     final bool dark = brightness == Brightness.dark;
 
     // ── الألوان الأساسية من الـtokens ──
-    final Color primary = AppColors.primary(brightness);
+    // v20: الأساسي/حاوياته من لوحة التخصص؛ الباقي ثابت هوية.
+    final Color primary =
+        AppColors.specialtyPrimary(specialty, brightness);
+    final Color primaryContainer =
+        AppColors.specialtyContainer(specialty, brightness);
+    final Color onPrimaryContainer =
+        AppColors.specialtyOnContainer(specialty, brightness);
     final Color background = AppColors.background(brightness);
     final Color surface = AppColors.surface(brightness);
     final Color surfaceAlt = AppColors.surfaceAlt(brightness);
@@ -30,8 +59,8 @@ abstract final class AppTheme {
       brightness: brightness,
       primary: primary,
       onPrimary: Colors.white,
-      primaryContainer: AppColors.primaryTint(brightness),
-      onPrimaryContainer: dark ? const Color(0xFFD7E5FA) : const Color(0xFF0A2A55),
+      primaryContainer: primaryContainer,
+      onPrimaryContainer: onPrimaryContainer,
       secondary: AppColors.success(brightness),
       onSecondary: Colors.white,
       secondaryContainer: AppColors.successContainer(brightness),
@@ -68,6 +97,11 @@ abstract final class AppTheme {
       textTheme: AppTypography.buildTextTheme(brightness),
       scaffoldBackgroundColor: background,
       fontFamily: AppType.arabicFamily,
+      
+      // إزالة التأثيرات الدائرية (Ripple/Splash) المزعجة خصوصاً من أشرطة التنقل
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      splashFactory: NoSplash.splashFactory,
 
       appBarTheme: AppBarTheme(
         centerTitle: true,
@@ -145,7 +179,7 @@ abstract final class AppTheme {
         elevation: 0,
         backgroundColor: surface,
         surfaceTintColor: Colors.transparent,
-        indicatorColor: AppColors.primaryTint(brightness),
+        indicatorColor: primaryContainer,
       ),
 
       switchTheme: SwitchThemeData(
@@ -168,11 +202,18 @@ abstract final class AppTheme {
         activeTrackColor: primary,
         inactiveTrackColor: surfaceAlt,
         thumbColor: primary,
-        overlayColor: AppColors.primaryTint(brightness),
+        overlayColor: primaryContainer,
       ),
 
       progressIndicatorTheme:
           ProgressIndicatorThemeData(color: primary),
+
+      // الدفء المحافظ: خلفية الـNavigationBar (الأسفل) كريمي خفيف
+      // منسجم مع السطح البديل الدافئ — دون المساس بالخلفية الأساسية.
+      bottomAppBarTheme: BottomAppBarTheme(
+        color: surfaceAlt,
+        surfaceTintColor: Colors.transparent,
+      ),
 
       dividerTheme: DividerThemeData(color: outline),
 

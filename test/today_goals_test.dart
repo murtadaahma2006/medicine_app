@@ -6,13 +6,13 @@ import 'package:medicine_app/src/features/curriculum/data/unit_repository.dart';
 import 'package:medicine_app/src/features/curriculum/domain/unit.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-/// اختبارات أهداف اليوم (v17) — checkTodayStatus الموحد:
-/// الحلقة والرسالة في شاشة اليوم تُشتقان من محاضرات مثبتة **غير مكتملة**
-/// مع البطاقات المستحقة — لا من البطاقات وحدها.
+/// اختبارات أهداف اليوم (v18) — checkTodayStatus الموحد + التثبيت
+/// الذكي: المحاضرات المثبتة غير المكتملة مع البطاقات المستحقة، مع
+/// التنظيف التلقائي (المكتملة فوراً + المهملة بعد 48 ساعة).
 ///
 /// يغطي: getPinnedUnitsWithCompletion (اشتقاق الإكمال) · unpinUnit /
-/// unpinUnitIfCompleted (الإلغاء التلقائي) · TodayGoalsSnapshot (المراحل
-/// والحلقة) · todayGoals (اللقطة الكاملة).
+/// unpinUnitIfCompleted (الإلغاء التلقائي) · cleanUpStalePins (v18) ·
+/// TodayGoalsSnapshot (المراحل والحلقة) · todayGoals (اللقطة الكاملة).
 void main() {
   setUpAll(() {
     sqfliteFfiInit();
@@ -39,7 +39,7 @@ void main() {
         'system': 'cardiovascular',
         'title': 'Lecture $id',
         'order_index': id == 'u1' ? 0 : 1,
-        'is_pinned_today': 1,
+        'pinned_at': DateTime.now().toUtc().toIso8601String(),
       });
     }
     await helper.insertConcept(<String, Object?>{
@@ -164,7 +164,7 @@ void main() {
       await helper.unpinUnitIfCompleted('u1');
 
       final Map<String, Object?>? unit = await helper.getUnitById('u1');
-      expect(unit?['is_pinned_today'], 1, reason: 'c2 لم يُقرأ بعد');
+      expect(unit?['pinned_at'], isNotNull, reason: 'c2 لم يُقرأ بعد');
     });
 
     test('يكتمل الهدف لحظة اكتمال الشروح → يُفك التثبيت', () async {
@@ -176,9 +176,9 @@ void main() {
       await helper.unpinUnitIfCompleted('u1');
 
       final Map<String, Object?>? unit = await helper.getUnitById('u1');
-      expect(unit?['is_pinned_today'], 0);
+      expect(unit?['pinned_at'], isNull);
       // u2 ما زالت مثبتة (لم تكتمل).
-      expect((await helper.getUnitById('u2'))?['is_pinned_today'], 1);
+      expect((await helper.getUnitById('u2'))?['pinned_at'], isNotNull);
     });
 
     test('unpinUnit يفك التثبيت دائماً (يدوي)', () async {
@@ -186,8 +186,98 @@ void main() {
       await seedPinnedLectures(helper);
 
       await helper.unpinUnit('u2');
-      expect((await helper.getUnitById('u2'))?['is_pinned_today'], 0);
-      expect((await helper.getUnitById('u1'))?['is_pinned_today'], 1);
+      expect((await helper.getUnitById('u2'))?['pinned_at'], isNull);
+      expect((await helper.getUnitById('u1'))?['pinned_at'], isNotNull);
+    });
+  });
+
+  group('cleanUpStalePins — التنظيف التلقائي (v18)', () {
+    test('المحاضرة المكتملة تُفكّ فوراً', () async {
+      final DatabaseHelper helper = await fresh();
+      await seedPinnedLectures(helper);
+
+      // u2 تكتمل بتقييمها → فك فوري رغم حداثة التثبيت.
+      await markAssessmentPassed(helper, 'u2');
+      final List<String> unpinned = await helper.cleanUpStalePins();
+
+      expect(unpinned, contains('u2'));
+      expect((await helper.getUnitById('u2'))?['pinned_at'], isNull);
+      // u1 الناقصة لم تُمسّ.
+      expect((await helper.getUnitById('u1'))?['pinned_at'], isNotNull);
+    });
+
+    test('المهملة (>48 ساعة) تُفكّ تلقائياً', () async {
+      final DatabaseHelper helper = await fresh();
+      await seedPinnedLectures(helper);
+
+      // تثبيت عمره 3 أيام — تجاوز عتبة الإهمال بوضوح.
+      final Database db = await helper.database;
+      await db.rawUpdate(
+        'UPDATE ${DatabaseHelper.tableUnits} SET pinned_at = ? WHERE id = ?',
+        <Object?>[
+          DateTime.now()
+              .toUtc()
+              .subtract(const Duration(hours: 72))
+              .toIso8601String(),
+          'u2',
+        ],
+      );
+
+      final List<String> unpinned = await helper.cleanUpStalePins();
+      expect(unpinned, contains('u2'));
+      expect((await helper.getUnitById('u2'))?['pinned_at'], isNull);
+      // u1 حديثة التثبيت → باقية.
+      expect((await helper.getUnitById('u1'))?['pinned_at'], isNotNull);
+    });
+
+    test('الحديثة (<48 ساعة) وغير المكتملة تبقى مثبتة', () async {
+      final DatabaseHelper helper = await fresh();
+      await seedPinnedLectures(helper);
+
+      // تثبيت عمره 47 ساعة — ساعة واحدة قبل العتبة.
+      final Database db = await helper.database;
+      await db.rawUpdate(
+        'UPDATE ${DatabaseHelper.tableUnits} SET pinned_at = ? WHERE id = ?',
+        <Object?>[
+          DateTime.now()
+              .toUtc()
+              .subtract(const Duration(hours: 47))
+              .toIso8601String(),
+          'u2',
+        ],
+      );
+
+      final List<String> unpinned = await helper.cleanUpStalePins();
+      expect(unpinned, isEmpty);
+      expect((await helper.getUnitById('u2'))?['pinned_at'], isNotNull);
+    });
+
+    test('المكتملة المهملة تُفكّ مرة واحدة (لا تكرار في القائمة)', () async {
+      final DatabaseHelper helper = await fresh();
+      await seedPinnedLectures(helper);
+
+      await markAssessmentPassed(helper, 'u2');
+      final Database db = await helper.database;
+      await db.rawUpdate(
+        'UPDATE ${DatabaseHelper.tableUnits} SET pinned_at = ? WHERE id = ?',
+        <Object?>[
+          DateTime.now()
+              .toUtc()
+              .subtract(const Duration(hours: 72))
+              .toIso8601String(),
+          'u2',
+        ],
+      );
+
+      final List<String> unpinned = await helper.cleanUpStalePins();
+      // شرطا الإكمال والإهمال يصيبان نفس المحاضرة — فك واحد لا اثنان.
+      expect(unpinned.length, 1);
+      expect(unpinned.first, 'u2');
+    });
+
+    test('لا مثبتات → قائمة فارغة بلا أخطاء', () async {
+      final DatabaseHelper helper = await fresh();
+      expect(await helper.cleanUpStalePins(), isEmpty);
     });
   });
 
@@ -207,62 +297,75 @@ void main() {
       orderIndex: 1,
     );
 
-    test('لا محاضرات + لا بطاقات → done (مهام اليوم مكتملة)', () {
+    test('لا مثبتات + لا بطاقات → none (حلقة فارغة برسالة تثبيت)', () {
       const TodayGoalsSnapshot s = TodayGoalsSnapshot(
         pinned: <Unit>[],
         completedPinned: <Unit>[],
         dueCards: 0,
       );
-      expect(s.phase, TodayPhase.done);
+      expect(s.phase, TodayPhase.none);
       expect(s.hasWork, isFalse);
-      expect(s.progress, 1);
-    });
-
-    test('محاضرات مثبتة غير مكتملة → lectures (الأولوية الأولى)', () {
-      const TodayGoalsSnapshot s = TodayGoalsSnapshot(
-        pinned: <Unit>[u1, u2],
-        completedPinned: <Unit>[],
-        dueCards: 7,
-      );
-      expect(s.phase, TodayPhase.lectures);
-      expect(s.hasWork, isTrue);
-      expect(s.pendingPinned.length, 2);
-      // صفر أسهم مكتملة من ثلاثة (محاضرتان + حزمة البطاقات).
       expect(s.progress, 0);
     });
 
-    test('محاضرات مكتملة + بطاقات مستحقة → reviews', () {
+    test('لا مثبتات مع بطاقات مستحقة → none رغم البطاقات (فصل تام)', () {
       const TodayGoalsSnapshot s = TodayGoalsSnapshot(
-        pinned: <Unit>[u1],
-        completedPinned: <Unit>[u1],
-        dueCards: 5,
+        pinned: <Unit>[],
+        completedPinned: <Unit>[],
+        dueCards: 12,
       );
-      expect(s.phase, TodayPhase.reviews);
-      expect(s.pendingPinned, isEmpty);
-      expect(s.progress, closeTo(1 / 2, 0.001));
+      // الحلقة والرسالة الرئيسية لا تتحرك للبطاقات — شريطها فقط.
+      expect(s.phase, TodayPhase.none);
+      expect(s.progress, 0);
+      expect(s.hasWork, isTrue, reason: 'لكن يبقى عمل (المراجعة)');
     });
 
-    test('المحاضرات المكتملة تُستبقى في القائمة بشارة إتمام', () {
+    test('محاضرة واحدة ناقصة → الحلقة 0% مهما بلغت البطاقات', () {
+      // الحالة الرياضية المشكلة سابقاً: بطاقات صفر + محاضرة ناقصة
+      // كانت تعطي 50% — الآن المحاضرات وحدها تقود النسبة.
+      const TodayGoalsSnapshot s = TodayGoalsSnapshot(
+        pinned: <Unit>[u1],
+        completedPinned: <Unit>[],
+        dueCards: 0,
+      );
+      expect(s.phase, TodayPhase.lectures);
+      expect(s.hasWork, isTrue);
+      expect(s.pendingPinned.length, 1);
+      expect(s.progress, 0);
+
+      // نفس المحاضرة مع 7 بطاقات مستحقة → النسبة نفسها تماماً.
+      const TodayGoalsSnapshot withCards = TodayGoalsSnapshot(
+        pinned: <Unit>[u1],
+        completedPinned: <Unit>[],
+        dueCards: 7,
+      );
+      expect(withCards.progress, 0);
+      expect(withCards.phase, TodayPhase.lectures);
+    });
+
+    test('محاضرة من محاضرتين مكتملة → 50% (البطاقات لا تشارك)', () {
       const TodayGoalsSnapshot s = TodayGoalsSnapshot(
         pinned: <Unit>[u1, u2],
         completedPinned: <Unit>[u1],
-        dueCards: 0,
+        dueCards: 5,
       );
-      // u2 ناقصة → مرحلة المحاضرات رغم اكتمال u1 والبطاقات.
       expect(s.phase, TodayPhase.lectures);
       expect(s.pendingPinned.length, 1);
-      // سهم u1 المكتمل + سهم البطاقات المكتمل = 2 من 3.
-      expect(s.progress, closeTo(2 / 3, 0.001));
+      // سابقاً كانت (1+0)/(2+1) — الآن محاضرات فقط: 1/2.
+      expect(s.progress, closeTo(1 / 2, 0.001));
+    });
 
-      const TodayGoalsSnapshot s2 = TodayGoalsSnapshot(
+    test('كل المثبتات مكتملة → done وإن بقيت بطاقات مستحقة', () {
+      const TodayGoalsSnapshot s = TodayGoalsSnapshot(
         pinned: <Unit>[u1, u2],
         completedPinned: <Unit>[u1, u2],
         dueCards: 3,
       );
-      expect(s2.phase, TodayPhase.reviews);
-      expect(s2.pendingPinned, isEmpty);
-      // سهمان مكتملان من ثلاثة.
-      expect(s2.progress, closeTo(2 / 3, 0.001));
+      // الرسالة الرئيسية «أنجزت أهدافك» — البطاقات شريطها المنفصل.
+      expect(s.phase, TodayPhase.done);
+      expect(s.pendingPinned, isEmpty);
+      expect(s.progress, 1);
+      expect(s.hasWork, isTrue, reason: 'المراجعات بعمل لكن خارج الحلقة');
     });
   });
 
@@ -311,6 +414,29 @@ void main() {
       expect(s.pinned.length, 1, reason: 'u1 اختفت — بقي u2');
       expect(s.pinned.first.id, 'u2');
       expect(s.phase, TodayPhase.lectures);
+    });
+
+    test('لقطة اليوم تدخل عبر التنظيف أولاً — المهملة لا تظهر', () async {
+      final DatabaseHelper helper = await fresh();
+      await seedPinnedLectures(helper);
+
+      // u2 مهملة (>48h) وغير مكتملة — تنظيف اليوم يجب أن يمسحها قبل
+      // بناء اللقطة كي لا يرى المستخدم هدفاً ميتاً في جدوله.
+      final Database db = await helper.database;
+      await db.rawUpdate(
+        'UPDATE ${DatabaseHelper.tableUnits} SET pinned_at = ? WHERE id = ?',
+        <Object?>[
+          DateTime.now()
+              .toUtc()
+              .subtract(const Duration(hours: 72))
+              .toIso8601String(),
+          'u2',
+        ],
+      );
+
+      final TodayGoalsSnapshot s = await UnitRepository().todayGoals();
+      expect(s.pinned.length, 1, reason: 'u2 المهملة فُكّت قبل اللقطة');
+      expect(s.pinned.first.id, 'u1');
     });
   });
 }

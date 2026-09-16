@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://medicine-app.local/schemas/medical_lecture.schema.json",
-  "title": "Medical Lecture Content (Internal Medicine)",
-  "description": "العقد النهائي بين خط استخراج PDF والتطبيق — v2.0.0. لغة المحتوى الأساسية: الإنجليزية. الحقول المحايدة (front_text, question_stem...) إنجليزية دائماً؛ فقط الحقول المساعدة المسماة *_ar عربية.",
+  "title": "Medical Lecture Content (All Specialties)",
+  "description": "العقد النهائي بين خط استخراج PDF والتطبيق — v2.0.0 (v21: قوائم module/system موحدة عبر التخصصات). لغة المحتوى الأساسية: الإنجليزية. الحقول المحايدة (front_text, question_stem...) إنجليزية دائماً؛ فقط الحقول المساعدة المسماة *_ar عربية. المخططات المتخصصة: surgery_lecture.schema.json و obgyn_lecture.schema.json.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "lecture", "concepts", "flashcards", "mcqs", "clinical_cases"],
@@ -39,6 +39,10 @@
           "pattern": "^[a-zA-Z0-9_-]+$",
           "description": "معرف المحاضرة — فريد عالمياً وثابت"
         },
+        "specialty": {
+          "enum": ["internal_medicine", "surgery", "obgyn"],
+          "description": "v2.3 اختياري — التخصص السريري الأب. الافتراضي internal_medicine (كل الملفات القديمة صالحة بلا تغيير)."
+        },
         "title": {
           "type": "string",
           "minLength": 3,
@@ -48,15 +52,23 @@
           "enum": [
             "cardiology", "pulmonology", "nephrology", "gastroenterology",
             "endocrinology", "hematology", "infectious", "rheumatology",
-            "neurology", "oncology"
-          ]
+            "neurology", "oncology",
+            "general_surgery", "orthopedics", "neurosurgery", "urology",
+            "plastic_surgery", "pediatric_surgery", "surgical_oncology",
+            "trauma",
+            "obstetrics", "gynecology", "gynecologic_oncology",
+            "reproductive_endocrinology", "maternal_fetal_medicine"
+          ],
+          "description": "v21 — المواد عبر كل التخصصات (مصدر الحقيقة: SpecialtyDomains في التطبيق). الجراحة: general_surgery...trauma · النسائية: obstetrics...maternal_fetal_medicine."
         },
         "system": {
           "enum": [
             "cardiovascular", "respiratory", "renal", "gastrointestinal",
             "endocrine", "immune", "nervous", "musculoskeletal",
-            "hematologic", "integumentary"
-          ]
+            "hematologic", "integumentary",
+            "reproductive", "urinary"
+          ],
+          "description": "v21 — الأجهزة عبر كل التخصصات. الجديد: reproductive (النسائية) و urinary (الجراحة/النسائية)."
         },
         "source": {
           "type": "object",
@@ -71,7 +83,28 @@
           "type": "array",
           "items": { "type": "string" }
         },
-        "order_index": { "type": "integer", "minimum": 0 }
+        "order_index": { "type": "integer", "minimum": 0 },
+        "golden_tip": {
+          "description": "v2.2 اختياري — أهم معلومة أو فخ امتحاني في المحاضرة (لؤلؤة اليوم في ويدجت الشاشة الرئيسية). نص واحد أو عدة نصوص.",
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 280,
+              "description": "لؤلؤة واحدة — إنجليزية أو عربية"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 10,
+              "items": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 280
+              }
+            }
+          ]
+        }
       }
     },
     "concept": {
