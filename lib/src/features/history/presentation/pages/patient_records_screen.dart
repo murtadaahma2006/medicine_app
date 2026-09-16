@@ -75,7 +75,7 @@ class _PatientRecordsScreenState extends State<PatientRecordsScreen> {
                   onPressed: () async {
                     Navigator.pop(context);
                     await context.push(RoutePaths.activeHistory, extra: 'assets/data/history_template.json');
-                    _loadRecords();
+                    await _loadRecords();
                   },
                   icon: const Icon(Icons.edit_document, size: 28),
                   label: const Padding(
@@ -93,7 +93,7 @@ class _PatientRecordsScreenState extends State<PatientRecordsScreen> {
                   onPressed: () async {
                     Navigator.pop(context);
                     await context.push(RoutePaths.activeHistory, extra: 'assets/data/basic_history_template.json');
-                    _loadRecords();
+                    await _loadRecords();
                   },
                   icon: const Icon(Icons.flash_on, size: 28),
                   label: const Padding(
@@ -246,7 +246,7 @@ class _PatientRecordsScreenState extends State<PatientRecordsScreen> {
 
     if (confirm == true) {
       await DatabaseHelper.instance.deletePatientRecord(id);
-      _loadRecords();
+      await _loadRecords();
     }
   }
 }

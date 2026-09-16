@@ -120,9 +120,6 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
   final Map<String, List<InlineNote>> _inlineNotes =
       <String, List<InlineNote>>{};
 
-  // (v22) النص المحدَّد حالياً داخل SelectionArea — يُلتقط عبر
-  // onSelectionChanged ليعرضه زر «إضافة ملاحظة» في القائمة المخصصة.
-  String _lastSelectedText = '';
 
   // كاشف التصفح (أسبوع 3).
   double _baselineDwellSeconds = 0;
@@ -416,16 +413,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
   /// يلتقط النص المحدَّد داخل اللقطة (v22) — يُخزَّن لحين الضغط على
   /// «إضافة ملاحظة» في القائمة المخصصة، إذ لا يملك SelectionArea في
   /// هذه النسخة طريقاً عمومياً لقراءة النص المحدَّد حالياً.
-  void _onSelectionChanged(Object? content) {
-    String text = '';
-    try {
-      final Object? plain = (content as dynamic).plainText;
-      if (plain is String) text = plain;
-    } catch (_) {
-      text = '';
-    }
-    _lastSelectedText = text;
-  }
+  void _onSelectionChanged(Object? content) {}
 
   /// النقر على نص مميَّز — شيت صغير يعرض الملاحظة الشخصية مع أزرار
   /// «تعديل» و«حذف».

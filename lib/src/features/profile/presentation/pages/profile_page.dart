@@ -31,7 +31,7 @@ class _ProfilePageState extends State<ProfilePage> {
   int _vocabCount = 0;
   int _xp = 0;
   int _completedLessons = 0;
-  int _completedVocabSets = 0;
+
   int _streak = 0;
   int _longestStreak = 0;
   int _focusMinutesToday = 0;
@@ -57,10 +57,7 @@ class _ProfilePageState extends State<ProfilePage> {
       final int completed = await helper.countCompletedByType(
         ProgressItemType.lesson,
       );
-      // مجموعات البطاقات المكتملة — أساس شريط «تقدّمك».
-      final int completedVocabSets = await helper.countCompletedByType(
-        ProgressItemType.flashcardSet,
-      );
+
       // دقائق التركيز اليوم (مقياس الشمال — من flow_sessions).
       final String today =
           DateTime.now().toUtc().toIso8601String().substring(0, 10);
@@ -71,7 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
         _vocabCount = vocab;
         _xp = xp;
         _completedLessons = completed;
-        _completedVocabSets = completedVocabSets;
+
         _streak = motivation.currentStreak;
         _longestStreak = motivation.longestStreak;
         _focusMinutesToday = (focusSeconds / 60).floor();
