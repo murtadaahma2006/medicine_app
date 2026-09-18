@@ -2,6 +2,7 @@ import 'dart:async' show unawaited;
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:confetti/confetti.dart';
 
 import '../../../../core/database/correction.dart';
 import '../../../../core/database/database_helper.dart';
@@ -68,9 +69,10 @@ class _McqSessionPageState extends State<McqSessionPage> {
   /// شارة الضربة الحمراء الومضية — تعرض مرة ثم تتلاشى.
   bool _luckyStrike = false;
 
-  /// وميض حدود «منطقة الاندفاع» عند 70% — مرة واحدة فقط.
   bool _sprintFlash = false;
   bool _sprintFired = false;
+
+  late ConfettiController _confettiController;
 
   String get _drillKey =>
       widget.isAssessment ? 'assess-${widget.unitId}' : 'mcq-${widget.unitId}';
@@ -78,7 +80,14 @@ class _McqSessionPageState extends State<McqSessionPage> {
   @override
   void initState() {
     super.initState();
+    _confettiController = ConfettiController(duration: const Duration(milliseconds: 800));
     _load();
+  }
+
+  @override
+  void dispose() {
+    _confettiController.dispose();
+    super.dispose();
   }
 
   Future<void> _load() async {
@@ -140,6 +149,7 @@ class _McqSessionPageState extends State<McqSessionPage> {
       if (isCorrect) {
         _correctCount++;
         _streak++;
+        _confettiController.play();
       } else {
         _streak = 0;
       }
@@ -316,22 +326,35 @@ class _McqSessionPageState extends State<McqSessionPage> {
         ),
         centerTitle: true,
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator())
-          : _error != null
-              ? EmptyState(
-                  icon: Icons.cloud_off_rounded,
-                  title: _error!,
-                  actionLabel: 'إعادة المحاولة',
-                  onAction: _load,
-                )
-              : _questions.isEmpty
-                  ? const EmptyState(
-                      icon: Icons.quiz_rounded,
-                      title: 'لا أسئلة في هذه المحاضرة',
-                      subtitle: 'ستظهر هنا متى توفر المحتوى',
+      body: Stack(
+        children: [
+          _loading
+              ? const Center(child: CircularProgressIndicator())
+              : _error != null
+                  ? EmptyState(
+                      icon: Icons.cloud_off_rounded,
+                      title: _error!,
+                      actionLabel: 'إعادة المحاولة',
+                      onAction: _load,
                     )
-                  : _buildQuestion(b),
+                  : _questions.isEmpty
+                      ? const EmptyState(
+                          icon: Icons.quiz_rounded,
+                          title: 'لا أسئلة في هذه المحاضرة',
+                          subtitle: 'ستظهر هنا متى توفر المحتوى',
+                        )
+                      : _buildQuestion(b),
+          Align(
+            alignment: Alignment.topCenter,
+            child: ConfettiWidget(
+              confettiController: _confettiController,
+              blastDirectionality: BlastDirectionality.explosive,
+              emissionFrequency: 0.05,
+              numberOfParticles: 20,
+            ),
+          ),
+        ],
+      ),
     );
   }
 

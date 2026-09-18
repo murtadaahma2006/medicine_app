@@ -1,53 +1,30 @@
-# Codemagic CI — بناء IPA لمنصة الطب الباطني (توقيع لاحق عبر AltStore/Sideloadly)
-#
-# سير العمل: رفع المشروع إلى GitHub → ربطه في codemagic.io → Start build
-# → تحميل medicine_app.ipa غير الموقّع → توقيعه محلياً بـ Apple ID عبر
-# AltStore (AltServer) أو Sideloadly وتثبيته على الـ iPad.
-#
-# ملاحظة: البناء بلا توقيع (CODE_SIGNING_ALLOWED=NO) — التوقيع المجاني
-# يتم على جهازك، لأن Apple ID المجاني لا يمكن استخدامه على CI.
-definitions:
-  scripts:
-    # 1) تثبيت توابع Dart.
-    - &setup
-      name: Flutter pub get
-      script: flutter pub get
-    # 2) تحليل ثابت — تم إضافة أوامر لتجاهل التحذيرات غير القاتلة حتى لا يتوقف البناء
-    - &analyze
-      name: Flutter analyze
-      script: flutter analyze --no-fatal-infos --no-fatal-warnings
-    # 3) الاختبارات الكاملة (تم تعطيلها مؤقتاً لتخطي الفشل وتأمين البناء)
-    # - &test
-    #   name: Flutter test
-    #   script: flutter test
-
 workflows:
-  ios-ipa:
-    name: iOS IPA (unsigned — for AltStore/Sideloadly)
+  ios-unsigned-build:
+    name: iOS Unsigned Build for Sideloading (iPad)
+    instance_type: mac_mini_m2
     max_build_duration: 60
     environment:
-      # مطابق لبيئة التطوير المحلية (pubspec.lock يطلب Flutter >= 3.29).
-      flutter: 3.29.0
+      flutter: stable
       xcode: latest
+      cocoapods: default
     scripts:
-      - *setup
-      - *analyze
-      # تم إيقاف سطر الاختبار هنا 
-      # - *test
-      - name: Build unsigned IPA
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Build unsigned iOS app
+        script: flutter build ios --release --no-codesign
+      - name: Package to IPA
         script: |
-          # بناء iOS بلا توقيع
-          flutter build ios --release --no-codesign
+          # Go to the directory where Runner.app is generated
+          cd build/ios/iphoneos
           
-          # إنشاء مجلد Payload المطلوب لتحويل التطبيق إلى صيغة ipa
-          mkdir -p build/ios/ipa/Payload
+          # Create the required Payload folder structure for an IPA
+          mkdir -p Payload
+          mv Runner.app Payload/
           
-          # نقل التطبيق إلى مجلد Payload
-          mv build/ios/iphoneos/Runner.app build/ios/ipa/Payload/
+          # Compress the Payload directory into an .ipa file and place it in the root build dir
+          zip -qr ../../../medicine_app.ipa Payload
           
-          # الدخول للمجلد وضغطه بصيغة ipa
-          cd build/ios/ipa
-          zip -r medicine_app.ipa Payload
+          # Clean up the Payload folder
+          rm -rf Payload
     artifacts:
-      # الحزم الجاهزة للتحميل من لوحة Codemagic.
-      - build/ios/ipa/*.ipa
+      - medicine_app.ipa

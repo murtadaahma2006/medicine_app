@@ -15,6 +15,7 @@ import 'backup_page.dart';
 import 'fixation_settings.dart';
 import 'lecture_import_page.dart';
 import 'reminder_page.dart';
+import 'ai_settings_page.dart';
 
 /// شاشة الإعدادات — مبنية بالكامل من مكتبة المكونات المشتركة
 /// (SectionHeader · AppCard · AppButton · EmptyState) وtokens التصميم.
@@ -239,6 +240,15 @@ class _SettingsPageState extends State<SettingsPage> {
 
         // ── قسم صناعة المحتوى الذكي ──
         const SectionHeader('صناعة المحتوى الذكي (AI)'),
+        _NavTile(
+          icon: Icons.api_rounded,
+          title: 'إعدادات مزود الذكاء الاصطناعي',
+          subtitle: 'استخدم الذكاء الاصطناعي المدمج أو أضف مفتاحك الخاص',
+          onTap: () => Navigator.of(context).push(MaterialPageRoute<Widget>(
+            builder: (_) => const AiSettingsPage(),
+          )),
+        ),
+        const SizedBox(height: AppSpacing.md),
         _NavTile(
           icon: Icons.copy_all_rounded,
           title: 'انسخ برومبت الباطنية',

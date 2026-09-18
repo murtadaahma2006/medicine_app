@@ -85,9 +85,11 @@ class ExerciseResultScreen extends StatelessWidget {
       });
     }
 
-    return SafeArea(
-      child: Center(
-        child: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: AppColors.background(b),
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
           padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -178,7 +180,7 @@ class ExerciseResultScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
 
@@ -274,9 +276,11 @@ class ExamResultScreen extends StatelessWidget {
       });
     }
 
-    return SafeArea(
-      child: Center(
-        child: SingleChildScrollView(
+    return Scaffold(
+      backgroundColor: AppColors.background(b),
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
           padding: const EdgeInsets.all(AppSpacing.xl),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -355,7 +359,7 @@ class ExamResultScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
 

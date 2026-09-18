@@ -53,8 +53,12 @@ List<TextSpan> buildInlineNoteSpans(
   Brightness? brightness,
   bool useAnchors = false,
   FixationStrength anchorStrength = FixationStrength.standard,
+  String? spokenWord,
+  int? spokenWordOccurrence,
 }) {
   if (text.isEmpty) return <TextSpan>[TextSpan(text: text, style: base)];
+
+  final List<int> spokenWordMatchCount = <int>[0];
 
   final Color highlight = brightness == null || brightness == Brightness.light
       ? kInlineNoteHighlight
@@ -107,13 +111,16 @@ List<TextSpan> buildInlineNoteSpans(
         base,
         useAnchors: useAnchors,
         anchorStrength: anchorStrength,
+        spokenWord: spokenWord,
+        spokenWordOccurrence: spokenWordOccurrence,
+        spokenWordMatchCount: spokenWordMatchCount,
       ));
     }
 
     // 4. Add the Highlight EXACTLY at the saved indices
     // Slicing the actual text guarantees a UI match even if selectedText had whitespace differences
     final String exactHighlightText = text.substring(note.startIndex, note.endIndex);
-    out.add(_highlightedSpan(note, base, exactHighlightText, highlight: highlight, onTap: onTap));
+    out.add(_highlightedSpan(note, base, exactHighlightText, highlight: highlight, onTap: onTap, spokenWord: spokenWord, spokenWordOccurrence: spokenWordOccurrence, spokenWordMatchCount: spokenWordMatchCount));
 
     // 5. Advance the cursor past the highlight
     currentIndex = note.endIndex;
@@ -126,6 +133,9 @@ List<TextSpan> buildInlineNoteSpans(
       base,
       useAnchors: useAnchors,
       anchorStrength: anchorStrength,
+      spokenWord: spokenWord,
+      spokenWordOccurrence: spokenWordOccurrence,
+      spokenWordMatchCount: spokenWordMatchCount,
     ));
   }
 
@@ -139,16 +149,29 @@ TextSpan _highlightedSpan(
   String displayText, {
   required Color highlight,
   InlineNoteTapCallback? onTap,
+  String? spokenWord,
+  int? spokenWordOccurrence,
+  List<int>? spokenWordMatchCount,
 }) {
   final TextStyle style = base.copyWith(
     backgroundColor: highlight,
   );
+  
+  final List<TextSpan> children = _parseMarkdownBold(
+    displayText, 
+    style, 
+    useAnchors: false, 
+    anchorStrength: FixationStrength.standard,
+    spokenWord: spokenWord,
+    spokenWordOccurrence: spokenWordOccurrence,
+    spokenWordMatchCount: spokenWordMatchCount,
+  );
+  
   if (onTap == null) {
-    return TextSpan(text: displayText, style: style);
+    return TextSpan(children: children);
   }
   return TextSpan(
-    text: displayText,
-    style: style,
+    children: children,
     recognizer: TapGestureRecognizer()..onTap = () => onTap(note),
   );
 }
@@ -160,9 +183,120 @@ List<TextSpan> _plainSegment(
   TextStyle base, {
   required bool useAnchors,
   required FixationStrength anchorStrength,
+  String? spokenWord,
+  int? spokenWordOccurrence,
+  List<int>? spokenWordMatchCount,
 }) {
-  if (!useAnchors) {
-    return <TextSpan>[TextSpan(text: segment)];
+  return _parseMarkdownBold(segment, base, useAnchors: useAnchors, anchorStrength: anchorStrength, spokenWord: spokenWord, spokenWordOccurrence: spokenWordOccurrence, spokenWordMatchCount: spokenWordMatchCount);
+}
+
+/// يحلل علامات الخط العريض `**` مع الحفاظ على طول النص الأصلي لتطابق فهارس التحديد.
+/// يُخفي العلامات بتصغير حجمها لئلا تظهر في الواجهة.
+List<TextSpan> _parseMarkdownBold(
+  String text,
+  TextStyle base, {
+  required bool useAnchors,
+  required FixationStrength anchorStrength,
+  String? spokenWord,
+  int? spokenWordOccurrence,
+  List<int>? spokenWordMatchCount,
+}) {
+  if (spokenWord != null && spokenWord.isNotEmpty && spokenWordOccurrence != null && spokenWordMatchCount != null) {
+    return _applySpokenWord(text, base, spokenWord, spokenWordOccurrence, spokenWordMatchCount, useAnchors, anchorStrength);
   }
-  return buildAnchoredSpans(segment, base, strength: anchorStrength);
+
+  if (!text.contains('**')) {
+    if (!useAnchors) {
+      return <TextSpan>[TextSpan(text: text, style: base)];
+    }
+    return buildAnchoredSpans(text, base, strength: anchorStrength);
+  }
+
+  final List<TextSpan> spans = <TextSpan>[];
+  final RegExp exp = RegExp(r'\*\*(.*?)\*\*');
+  int lastMatchEnd = 0;
+
+  for (final RegExpMatch match in exp.allMatches(text)) {
+    if (match.start > lastMatchEnd) {
+      final String preText = text.substring(lastMatchEnd, match.start);
+      if (useAnchors) {
+        spans.addAll(buildAnchoredSpans(preText, base, strength: anchorStrength));
+      } else {
+        spans.add(TextSpan(text: preText, style: base));
+      }
+    }
+    
+    // العلامة المخفية الأولى
+    spans.add(const TextSpan(
+      text: '**',
+      style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
+    ));
+    
+    // النص العريض
+    final String boldText = match.group(1) ?? '';
+    final TextStyle boldStyle = base.copyWith(fontWeight: FontWeight.bold);
+    if (useAnchors) {
+       spans.addAll(buildAnchoredSpans(boldText, boldStyle, strength: anchorStrength));
+    } else {
+       spans.add(TextSpan(text: boldText, style: boldStyle));
+    }
+    
+    // العلامة المخفية الثانية
+    spans.add(const TextSpan(
+      text: '**',
+      style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
+    ));
+    
+    lastMatchEnd = match.end;
+  }
+
+  if (lastMatchEnd < text.length) {
+    final String postText = text.substring(lastMatchEnd);
+    if (useAnchors) {
+      spans.addAll(buildAnchoredSpans(postText, base, strength: anchorStrength));
+    } else {
+      spans.add(TextSpan(text: postText, style: base));
+    }
+  }
+
+  return spans;
+}
+
+List<TextSpan> _applySpokenWord(String text, TextStyle base, String spokenWord, int spokenWordOccurrence, List<int> matchCount, bool useAnchors, FixationStrength strength) {
+  final List<TextSpan> spans = <TextSpan>[];
+  int lastMatchEnd = 0;
+  final String escapedWord = RegExp.escape(spokenWord);
+  final RegExp exp = RegExp('\\b$escapedWord\\b', caseSensitive: false); 
+  
+  for (final RegExpMatch match in exp.allMatches(text)) {
+    if (match.start > lastMatchEnd) {
+      final String pre = text.substring(lastMatchEnd, match.start);
+      spans.addAll(_parseMarkdownBold(pre, base, useAnchors: useAnchors, anchorStrength: strength)); 
+    }
+    
+    final String word = match.group(0)!;
+    if (matchCount[0] == spokenWordOccurrence) {
+      final TextStyle highlightStyle = base.copyWith(
+        backgroundColor: Colors.yellow.withOpacity(0.4),
+        decoration: TextDecoration.underline,
+      );
+      spans.add(TextSpan(text: word, style: highlightStyle));
+    } else {
+      spans.add(TextSpan(text: word, style: base));
+    }
+    matchCount[0]++;
+    
+    lastMatchEnd = match.end;
+  }
+  
+  if (lastMatchEnd < text.length) {
+    final String post = text.substring(lastMatchEnd);
+    spans.addAll(_parseMarkdownBold(post, base, useAnchors: useAnchors, anchorStrength: strength));
+  }
+  
+  if (spans.isEmpty) {
+     return _parseMarkdownBold(text, base, useAnchors: useAnchors, anchorStrength: strength);
+  }
+  
+  return spans;
 }

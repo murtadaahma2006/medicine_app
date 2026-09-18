@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../core/utils/responsive_layout.dart';
+import '../features/ai_chat/presentation/pages/ai_chat_page.dart';
 import '../features/curriculum/presentation/pages/curriculum_page.dart';
 import '../features/curriculum/presentation/pages/today_page.dart';
-import '../features/history/presentation/pages/patient_records_screen.dart';
 import '../features/library/presentation/pages/library_page.dart';
 import '../features/profile/presentation/pages/profile_page.dart';
 import '../shared/widgets/widgets.dart';
@@ -73,18 +73,18 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = const <Widget>[
     TodayPage(),
     CurriculumPage(),
+    AiChatPage(),
     LibraryPage(),
     ProfilePage(),
-    PatientRecordsScreen(),
   ];
 
   /// عناوين الألسنة العربية (للـAppBar أعلى كل شاشة).
   static const List<String> _titles = <String>[
     'اليوم',
     'المسار',
+    'المساعد الذكي',
     'المكتبة',
     'ملفّي',
-    'الردهات',
   ];
 
   static const List<_NavItem> _navItems = <_NavItem>[
@@ -99,6 +99,11 @@ class _MainScreenState extends State<MainScreen> {
       label: 'المسار',
     ),
     _NavItem(
+      svg: 'nav/nav_aichat',
+      fallbackIcon: Icons.smart_toy_rounded,
+      label: 'المساعد',
+    ),
+    _NavItem(
       svg: 'nav/nav_library',
       fallbackIcon: Icons.local_library_rounded,
       label: 'المكتبة',
@@ -107,11 +112,6 @@ class _MainScreenState extends State<MainScreen> {
       svg: 'nav/nav_profile',
       fallbackIcon: Icons.person_rounded,
       label: 'ملفّي',
-    ),
-    _NavItem(
-      svg: 'nav/nav_history', // using a generic name, fallback will be used if svg doesn't exist
-      fallbackIcon: Icons.assignment_rounded,
-      label: 'الردهات',
     ),
   ];
 

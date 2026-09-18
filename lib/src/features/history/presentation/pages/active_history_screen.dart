@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
 import '../../../../core/database/database_helper.dart';
+import '../../../../core/services/ai_service.dart';
 import '../../data/models/history_field.dart';
 import '../../data/models/history_section.dart';
 import '../../data/models/history_template.dart';
@@ -27,6 +29,10 @@ class _ActiveHistoryScreenState extends State<ActiveHistoryScreen> {
 
   final Map<String, dynamic> _currentAnswers = <String, dynamic>{};
   final HistoryTemplateService _service = HistoryTemplateService();
+
+  Timer? _debounce;
+  bool _isChecklistLoading = false;
+  List<String> _suggestedChecklist = [];
 
   @override
   void initState() {
@@ -304,7 +310,7 @@ class _ActiveHistoryScreenState extends State<ActiveHistoryScreen> {
 
       case 'text':
       default:
-        return TextFormField(
+        final Widget textField = TextFormField(
           decoration: InputDecoration(
             labelText: field.label,
             border: const UnderlineInputBorder(),
@@ -317,9 +323,99 @@ class _ActiveHistoryScreenState extends State<ActiveHistoryScreen> {
           keyboardType: TextInputType.multiline,
           onChanged: (String value) {
             _currentAnswers[field.name] = value;
-            // No need to setState for every keystroke unless we are displaying it elsewhere immediately.
+            
+            if (field.name == 'cc_own_words') {
+              if (_debounce?.isActive ?? false) _debounce!.cancel();
+              
+              if (value.trim().isEmpty) {
+                setState(() {
+                  _isChecklistLoading = false;
+                  _suggestedChecklist = [];
+                });
+                return;
+              }
+
+              _debounce = Timer(const Duration(milliseconds: 1500), () async {
+                setState(() {
+                  _isChecklistLoading = true;
+                  _suggestedChecklist = [];
+                });
+
+                final List<String> checklist = await AIService.generateHistoryChecklist(value);
+
+                if (mounted) {
+                  setState(() {
+                    _suggestedChecklist = checklist;
+                    _isChecklistLoading = false;
+                  });
+                }
+              });
+            }
           },
         );
+
+        if (field.name == 'cc_own_words') {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              textField,
+              if (_isChecklistLoading)
+                const Padding(
+                  padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('يتم توليد الأسئلة الحرجة...', style: TextStyle(color: Colors.grey, fontSize: 12)),
+                      SizedBox(height: 4),
+                      LinearProgressIndicator(),
+                    ],
+                  ),
+                ),
+              if (_suggestedChecklist.isNotEmpty)
+                Card(
+                  margin: const EdgeInsets.only(top: 16.0),
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          'أسئلة لا تنساها (Red Flags):',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 16,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        ListView.builder(
+                          shrinkWrap: true,
+                          physics: const NeverScrollableScrollPhysics(),
+                          itemCount: _suggestedChecklist.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 4.0),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  const Text('• ', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+                                  Expanded(child: Text(_suggestedChecklist[index])),
+                                ],
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+            ],
+          );
+        }
+
+        return textField;
     }
   }
 }

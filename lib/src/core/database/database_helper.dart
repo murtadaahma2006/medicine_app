@@ -50,8 +50,11 @@ class DatabaseHelper {
   ///   لحظة الترقية (سلوك ADD COLUMN مع NOT NULL DEFAULT) فلا يضيع
   ///   محتوى الباطنية ولا يتعطل استعلام.
   /// v24: إضافة start_index و end_index إلى الملاحظات المضمنة.
-  static const int databaseVersion = 24;
-
+  // ── v26: إضافة جدول AI Chat History ──
+  // ── v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي ──
+  //         ai_explanations_cache: تخزين شروحات النصوص المحددة
+  //         لتجنب استدعاءات API متكررة لنفس النص.
+  static const int databaseVersion = 27;
   // ── جداول المحتوى الطبي ──
   static const String tableUnits = 'units';
   static const String tableConcepts = 'concepts';
@@ -93,6 +96,12 @@ class DatabaseHelper {
 
   // ── v23: سجلات المرضى لنموذج أخذ القصة السريرية ──
   static const String tablePatientRecords = 'patient_records';
+
+  // ── v25: سجل محادثات المساعد الذكي ──
+  static const String tableAiChatHistory = 'ai_chat_history';
+
+  // ── v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي ──
+  static const String tableAiExplanationsCache = 'ai_explanations_cache';
 
   /// أنواع أحداث XP المسموحة في قيد CHECK — مصدر الحقيقة الوحيد.
   static const List<String> xpEventKinds = <String>[
@@ -486,6 +495,36 @@ class DatabaseHelper {
       'ON $tablePatientRecords(created_at)',
     );
 
+    // v25: سجل محادثات الذكاء الاصطناعي
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableAiChatHistory (
+        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+        role        TEXT NOT NULL CHECK (role IN ('user','assistant')),
+        message     TEXT NOT NULL,
+        timestamp   TEXT NOT NULL
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_ai_chat_history_time '
+      'ON $tableAiChatHistory(timestamp)',
+    );
+
+    // v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي.
+    // UNIQUE على original_text: INSERT OR REPLACE يُحدِّث الشرح إن
+    // تغيّر النموذج لاحقاً دون تكرار الصفوف.
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableAiExplanationsCache (
+        id            INTEGER PRIMARY KEY AUTOINCREMENT,
+        original_text TEXT NOT NULL UNIQUE,
+        explanation   TEXT NOT NULL,
+        cached_at     TEXT NOT NULL
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_ai_cache_text '
+      'ON $tableAiExplanationsCache(original_text)',
+    );
+
     await batch.commit(noResult: true);
   }
 
@@ -789,6 +828,52 @@ class DatabaseHelper {
         await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN start_index INTEGER DEFAULT 0');
         await db.execute('ALTER TABLE $tableInlineNotes ADD COLUMN end_index INTEGER DEFAULT 0');
       } catch (_) {}
+    }
+    if (oldV < 25) {
+      // v25: سجل محادثات المساعد الذكي
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableAiChatHistory (
+          id          INTEGER PRIMARY KEY AUTOINCREMENT,
+          role        TEXT NOT NULL CHECK (role IN ('user','assistant')),
+          message     TEXT NOT NULL,
+          timestamp   TEXT NOT NULL
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_ai_chat_history_time '
+        'ON $tableAiChatHistory(timestamp)',
+      );
+    }
+    if (oldV < 26) {
+      // v26: تأكيد إنشاء جدول محادثات المساعد الذكي
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableAiChatHistory (
+          id          INTEGER PRIMARY KEY AUTOINCREMENT,
+          role        TEXT NOT NULL CHECK (role IN ('user','assistant')),
+          message     TEXT NOT NULL,
+          timestamp   TEXT NOT NULL
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_ai_chat_history_time '
+        'ON $tableAiChatHistory(timestamp)',
+      );
+    }
+    if (oldV < 27) {
+      // v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي.
+      // إنشاء صرف — لا فقد بيانات، لا لمس لأي جدول قائم.
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableAiExplanationsCache (
+          id            INTEGER PRIMARY KEY AUTOINCREMENT,
+          original_text TEXT NOT NULL UNIQUE,
+          explanation   TEXT NOT NULL,
+          cached_at     TEXT NOT NULL
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_ai_cache_text '
+        'ON $tableAiExplanationsCache(original_text)',
+      );
     }
   }
 
@@ -1094,6 +1179,35 @@ class DatabaseHelper {
     );
     if (rows.isEmpty) return null;
     return rows.first['golden_tip']! as String;
+  }
+
+  /// بحث شامل في قاعدة البيانات عن المفاهيم (للبحث الشامل).
+  Future<List<Map<String, dynamic>>> searchConcepts(String query) async {
+    if (query.trim().isEmpty) return <Map<String, dynamic>>[];
+    final Database db = await database;
+    final String likeQuery = '%${query.trim()}%';
+    
+    final List<Map<String, Object?>> results = await db.rawQuery('''
+      SELECT 
+        c.id AS concept_id,
+        c.unit_id,
+        c.title AS concept_title,
+        c.sections_json,
+        u.title AS unit_title,
+        u.specialty,
+        CASE 
+          WHEN c.title LIKE ? THEN 1
+          WHEN u.title LIKE ? THEN 2
+          ELSE 3
+        END as priority
+      FROM $tableConcepts c
+      JOIN $tableUnits u ON c.unit_id = u.id
+      WHERE c.title LIKE ? OR u.title LIKE ? OR c.sections_json LIKE ?
+      ORDER BY priority ASC
+      LIMIT 30
+    ''', <Object?>[likeQuery, likeQuery, likeQuery, likeQuery, likeQuery]);
+    
+    return List<Map<String, dynamic>>.from(results);
   }
 
   /// إدراج وحدة (idempotent).
@@ -2574,6 +2688,69 @@ class DatabaseHelper {
       tablePatientRecords,
       where: 'id = ?',
       whereArgs: <Object?>[id],
+    );
+  }
+
+  // ─────────────────── سجل محادثات الذكاء الاصطناعي (AI Chat History) ───────────────────
+
+  Future<int> insertAiChatMessage(String role, String message) async {
+    final Database db = await database;
+    final String now = DateTime.now().toUtc().toIso8601String();
+    return db.insert(tableAiChatHistory, <String, Object?>{
+      'role': role,
+      'message': message,
+      'timestamp': now,
+    });
+  }
+
+  Future<List<Map<String, dynamic>>> getAiChatHistory() async {
+    final Database db = await database;
+    return db.query(
+      tableAiChatHistory,
+      orderBy: 'timestamp ASC',
+    );
+  }
+
+  Future<int> clearAiChatHistory() async {
+    final Database db = await database;
+    return db.delete(tableAiChatHistory);
+  }
+
+  // ────────── ذاكرة شروحات الذكاء الاصطناعي (AI Explanations Cache) ──────────
+
+  /// يبحث عن شرح مخزن مسبقاً للنص المحدد، ويعيده فوراً إن وجد.
+  ///
+  /// يستخدم التطابق الحرفي (EXACT match) على عمود [original_text]
+  /// (فريد ومصندق — البحث خطي بالفهرس بدل مسح كامل).
+  ///
+  /// يعيد [String] إن وجد، و[null] إن لم يوجد.
+  Future<String?> getCachedExplanation(String text) async {
+    final Database db = await database;
+    final List<Map<String, Object?>> rows = await db.query(
+      tableAiExplanationsCache,
+      columns: <String>['explanation'],
+      where: 'original_text = ?',
+      whereArgs: <Object?>[text],
+      limit: 1,
+    );
+    if (rows.isEmpty) return null;
+    return rows.first['explanation'] as String?;
+  }
+
+  /// يخزن شرحاً جديداً للنص المدخل، أو يحدّث شرحاً سابقاً إن كان النص موجوداً.
+  ///
+  /// يستخدم [ConflictAlgorithm.replace] لضمان تحديث الشرح تلقائياً
+  /// إن أجاب النموذج بشكل مختلف في تحديث مستقبلي.
+  Future<void> cacheExplanation(String text, String explanation) async {
+    final Database db = await database;
+    await db.insert(
+      tableAiExplanationsCache,
+      <String, Object?>{
+        'original_text': text,
+        'explanation': explanation,
+        'cached_at': DateTime.now().toUtc().toIso8601String(),
+      },
+      conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
 

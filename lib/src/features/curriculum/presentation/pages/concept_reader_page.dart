@@ -1,7 +1,12 @@
 import 'dart:async' show unawaited;
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:translator/translator.dart';
+import 'package:flutter_tts/flutter_tts.dart';
+import 'package:confetti/confetti.dart';
 
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/inline_note.dart';
@@ -9,6 +14,7 @@ import '../../../../core/database/xp_event.dart';
 import '../../../../core/motivation/celebration_queue.dart';
 import '../../../../core/notifications/pin_expiry_service.dart';
 import '../../../../core/profile/learner_profile.dart';
+import '../../../../core/services/ai_service.dart';
 import '../../../../core/utils/error_logger.dart';
 import '../../../../core/utils/responsive_layout.dart';
 import '../../../../core/widget/home_widget_service.dart';
@@ -42,10 +48,20 @@ import '../widgets/session_guard.dart';
 ///   18sp/1.7/460px/#E6E6E6 داكن · مراسي التثبيت (قراءة أولى فقط)
 ///   · أزمنة البقاء · جلسة تدفق · XP concept.
 /// ─────────────────────────────────────────────────────────────────────
+
+enum TtsState { playing, paused, stopped }
+
 class ConceptReaderPage extends StatefulWidget {
-  const ConceptReaderPage({required this.unitId, super.key});
+  const ConceptReaderPage({
+    required this.unitId,
+    this.unitTitle,
+    this.initialConceptId,
+    super.key,
+  });
 
   final String unitId;
+  final String? unitTitle;
+  final String? initialConceptId;
 
   @override
   State<ConceptReaderPage> createState() => _ConceptReaderPageState();
@@ -88,7 +104,8 @@ class _Shot {
   final Map<String, Object?>? check;
 }
 
-class _ConceptReaderPageState extends State<ConceptReaderPage> {
+class _ConceptReaderPageState extends State<ConceptReaderPage>
+    with WidgetsBindingObserver {
   bool _loading = true;
   String? _error;
   String _unitTitle = '';
@@ -132,11 +149,130 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
 
   // التثبيت الختامي (Recite) — آخر شرح.
   bool _finalReciteShown = false;
+  
+  bool _didResumeSession = false;
+  bool _didJumpFromSearch = false;
+
+  final FlutterTts flutterTts = FlutterTts();
+  TtsState _ttsState = TtsState.stopped;
+  String _currentSpokenWord = '';
+  int _currentWordOccurrence = 0;
+  double _ttsRate = 0.45;
+  
+  late ConfettiController _confettiController;
 
   @override
   void initState() {
     super.initState();
+    _confettiController = ConfettiController(duration: const Duration(seconds: 2));
+    WidgetsBinding.instance.addObserver(this);
+    _initTts();
     _load();
+  }
+
+  Future<void> _initTts() async {
+    await flutterTts.setLanguage("en-US");
+    await flutterTts.setSpeechRate(_ttsRate);
+    await flutterTts.setPitch(1.0);
+    await flutterTts.setVolume(1.0);
+    await flutterTts.awaitSpeakCompletion(true);
+    flutterTts.setProgressHandler((String text, int startOffset, int endOffset, String word) {
+      if (mounted) {
+        final String preText = text.substring(0, startOffset);
+        final String escapedWord = RegExp.escape(word);
+        final RegExp exp = RegExp('\\b$escapedWord\\b', caseSensitive: false);
+        final int occurrenceIndex = exp.allMatches(preText).length;
+        
+        setState(() {
+          _currentSpokenWord = word;
+          _currentWordOccurrence = occurrenceIndex;
+        });
+      }
+    });
+    flutterTts.setCompletionHandler(() {
+      if (mounted) {
+          setState(() {
+            _ttsState = TtsState.stopped;
+            _currentSpokenWord = '';
+            _currentWordOccurrence = 0;
+          });
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _confettiController.dispose();
+    flutterTts.stop();
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  Future<void> _speak() async {
+    if (_shots.isEmpty) return;
+    
+    if (_ttsState == TtsState.paused) {
+      if (mounted) {
+        setState(() {
+          _ttsState = TtsState.playing;
+        });
+      }
+      final _Shot currentShot = _shots[_index];
+      String textToRead = currentShot.body.replaceAll(RegExp(r'[\u0600-\u06FF]'), '');
+      textToRead = textToRead.replaceAll(RegExp(r'[*#_`]'), '');
+      try {
+        await flutterTts.speak(textToRead);
+      } catch (e) {
+        print('TTS Error: $e');
+      }
+      return;
+    }
+
+    final _Shot currentShot = _shots[_index];
+    String textToRead = currentShot.body.replaceAll(RegExp(r'[\u0600-\u06FF]'), '');
+    textToRead = textToRead.replaceAll(RegExp(r'[*#_`]'), '');
+    
+    try {
+      if (mounted) {
+        setState(() {
+          _ttsState = TtsState.playing;
+          _currentSpokenWord = '';
+        });
+      }
+      await flutterTts.speak(textToRead);
+    } catch (e) {
+      print('TTS Error: $e');
+      if (mounted) {
+        setState(() {
+          _ttsState = TtsState.stopped;
+        });
+      }
+    }
+  }
+
+  Future<void> _pauseTts() async {
+    await flutterTts.pause();
+    if (mounted) {
+      setState(() {
+        _ttsState = TtsState.paused;
+      });
+    }
+  }
+
+  Future<void> _stop() async {
+    await flutterTts.stop();
+    if (mounted) {
+      setState(() {
+        _ttsState = TtsState.stopped;
+        _currentSpokenWord = '';
+      });
+    }
+  }
+
+  Future<void> _stopTtsOnNavigation() async {
+    if (_ttsState != TtsState.stopped) {
+      await _stop();
+    }
   }
 
   Future<void> _load() async {
@@ -221,16 +357,34 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
         firstRead = reads == 0;
       }
 
+      // استعادة مكان التوقف السابق أو القفز لمصطلح محدد (من البحث)
+      int initialIndex = 0;
+      if (widget.initialConceptId != null) {
+        initialIndex = shots.indexWhere((_Shot s) => s.conceptId == widget.initialConceptId);
+        if (initialIndex == -1) initialIndex = 0;
+      } else {
+        final SharedPreferences prefs = await SharedPreferences.getInstance();
+        final int savedIndex = prefs.getInt('last_index_${widget.unitId}') ?? 0;
+        initialIndex = savedIndex.clamp(0, shots.isEmpty ? 0 : shots.length - 1);
+      }
+
       if (!mounted) return;
       setState(() {
-        _unitTitle = (unit?['title'] as String?) ?? '';
+        _unitTitle = widget.unitTitle ?? (unit?['title'] as String?) ?? '';
         _shots = shots;
+        _index = initialIndex;
         _anchorsEnabled = anchors;
         _anchorStrength = FixationStrength.fromCode(strengthCode);
         _isFirstRead = firstRead;
         _baselineDwellSeconds = baseline;
         _loading = false;
       });
+
+      if (widget.initialConceptId != null) {
+        _didJumpFromSearch = true;
+      } else if (initialIndex > 0) {
+        _didResumeSession = true;
+      }
 
       // بوابة التنفس (أسبوع 3) ثم بوابة الشرح (أسبوع 2).
       if (shots.isNotEmpty) {
@@ -253,7 +407,39 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
       onReady: () {
         // فتح جلسة التدفق عند البدء الفعلي.
         _startFlowSession();
-        _runConceptGate();
+        _runConceptGate().then((_) {
+          if (_didResumeSession && mounted) {
+            _didResumeSession = false;
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'عدنا بك إلى حيث توقفت في جلستك السابقة 📍',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
+                ),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                duration: const Duration(seconds: 3),
+              ),
+            );
+          } else if (_didJumpFromSearch && mounted) {
+            _didJumpFromSearch = false;
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text(
+                  'تم الانتقال إلى نتيجة البحث 📍',
+                  style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
+                ),
+                behavior: SnackBarBehavior.floating,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                duration: const Duration(seconds: 3),
+              ),
+            );
+          }
+        });
       },
     );
   }
@@ -274,15 +460,15 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
   /// بوابة الشرح الأول (أسبوع 2) — قبل أول لقطة.
   Future<void> _runConceptGate() async {
     if (_shots.isEmpty) return;
-    final _Shot first = _shots.first;
+    final _Shot currentShot = _shots[_index];
     final DatabaseHelper db = DatabaseHelper.instance;
 
     // مجتازة من قبل؟ → افتح مباشرة.
-    if (await db.conceptGatePassed(first.conceptId)) return;
+    if (await db.conceptGatePassed(currentShot.conceptId)) return;
     if (!mounted) return;
 
     final Map<String, Object?>? gateMcq =
-        await db.getGateMcqForConcept(first.conceptId);
+        await db.getGateMcqForConcept(currentShot.conceptId);
 
     if (gateMcq != null) {
       // بوابة MCQ + ثقة.
@@ -290,7 +476,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
       final Map<String, Object?>? result =
           await ConceptGateSheet.show(
         context,
-        conceptTitle: first.conceptTitle,
+        conceptTitle: currentShot.conceptTitle,
         mcq: gateMcq,
       );
       if (result == null) return; // أُغلقت (isDismissible=false — نادر).
@@ -304,19 +490,19 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
       setState(() {
         if (!wasCorrect && focus.isNotEmpty) {
           _gateWrongSections = focus;
-          _gateWrongConceptId = first.conceptId;
+          _gateWrongConceptId = currentShot.conceptId;
         }
       });
       // إجابة صحيحة من أول مرة → وسم البوابة (لا تظهر مجدداً).
       if (wasCorrect) {
-        await db.markGatePassed(first.conceptId);
+        await db.markGatePassed(currentShot.conceptId);
       }
       return;
     }
 
     // fallback: بطاقة مسح مسبق بمصطلحات key_terms (Advance Organizer).
     if (!mounted) return;
-    await _showAdvanceOrganizer(first);
+    await _showAdvanceOrganizer(currentShot);
   }
 
   /// بطاقة المسح المسبق — مصطلحات الشرح لمدة لحظة قبل القراءة.
@@ -677,8 +863,34 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
       _gateWrongConceptId == shot.conceptId &&
       _gateWrongSections.contains(shot.sectionIndex);
 
+  Future<void> _saveIndex() async {
+    try {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.setInt('last_index_${widget.unitId}', _index);
+    } catch (_) {}
+  }
+
+  Future<void> _clearIndex() async {
+    try {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      await prefs.remove('last_index_${widget.unitId}');
+    } catch (_) {}
+  }
+
+  /// العودة للقطة السابقة.
+  Future<void> _previous() async {
+    await _stopTtsOnNavigation();
+    if (_index <= 0) return;
+    final DateTime now = DateTime.now();
+    _dwellMs[_index] = now.difference(_shotStart).inMilliseconds;
+    setState(() => _index--);
+    _shotStart = DateTime.now();
+    unawaited(_saveIndex());
+  }
+
   /// التقدم للقطة التالية — مع الاعتراضية كل لقطتين.
   Future<void> _next() async {
+    await _stopTtsOnNavigation();
     final DateTime now = DateTime.now();
     final int dwell = now.difference(_shotStart).inMilliseconds;
     _dwellMs[_index] = dwell;
@@ -717,6 +929,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
 
     if (!mounted) return;
     setState(() => _index++);
+    unawaited(_saveIndex());
   }
 
   /// نقطة الاعتراض (أسبوع 2): MCQ غير مستهلك > check مدمج > استرجاع حر.
@@ -815,6 +1028,8 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
 
   /// إتمام القراءة: تسجيل concept_reads + إغلاق الجلسة + XP.
   Future<void> _finish() async {
+    // مسح موضع التوقف لأن المحاضرة اكتملت.
+    await _clearIndex();
     // لقطة XP قبل الكتابات — ل كشف رفع المستوى (Motivator).
     final int beforeXp = await Motivator.currentXp();
 
@@ -902,7 +1117,9 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
         ),
       );
     }
-    Navigator.of(context).pop();
+    _confettiController.play();
+    await Future.delayed(const Duration(seconds: 2));
+    if (mounted) Navigator.of(context).pop();
   }
 
   /// خروج مبكر — حارس الجلسة أولاً (أسبوع 3) ثم تسجيل جزئي.
@@ -967,23 +1184,93 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
             tooltip: 'إنهاء القراءة',
             onPressed: _exitEarly,
           ),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(_ttsState != TtsState.stopped ? Icons.stop : Icons.volume_up),
+              tooltip: _ttsState != TtsState.stopped ? 'إيقاف الاستماع' : 'استمع للشرح',
+              onPressed: () {
+                if (_ttsState != TtsState.stopped) {
+                  _stop();
+                } else {
+                  _speak();
+                }
+              },
+            ),
+          ],
         ),
-        body: _loading
-            ? const Center(child: CircularProgressIndicator())
-            : _error != null
-                ? EmptyState(
-                    icon: Icons.cloud_off_rounded,
-                    title: _error!,
-                    actionLabel: 'إعادة المحاولة',
-                    onAction: _load,
-                  )
-                : _shots.isEmpty
-                    ? const EmptyState(
-                        icon: Icons.menu_book_rounded,
-                        title: 'لا شروحات في هذه المحاضرة',
-                        subtitle: 'ستظهر هنا متى توفر المحتوى',
+        body: Stack(
+          children: [
+            _loading
+                ? const Center(child: CircularProgressIndicator())
+                : _error != null
+                    ? EmptyState(
+                        icon: Icons.cloud_off_rounded,
+                        title: _error!,
+                        actionLabel: 'إعادة المحاولة',
+                        onAction: _load,
                       )
-                    : _buildShotView(context),
+                    : _shots.isEmpty
+                        ? const EmptyState(
+                            icon: Icons.menu_book_rounded,
+                            title: 'لا شروحات في هذه المحاضرة',
+                            subtitle: 'ستظهر هنا متى توفر المحتوى',
+                          )
+                        : Column(
+                            children: [
+                              _buildTtsSettingsBar(b),
+                              Expanded(child: _buildShotView(context)),
+                            ],
+                          ),
+            Align(
+              alignment: Alignment.topCenter,
+              child: ConfettiWidget(
+                confettiController: _confettiController,
+                blastDirectionality: BlastDirectionality.explosive,
+                emissionFrequency: 0.05,
+                numberOfParticles: 50,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTtsSettingsBar(Brightness b) {
+    if (_ttsState == TtsState.stopped) return const SizedBox.shrink();
+    return Container(
+      color: AppColors.surface(b),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: Row(
+        children: [
+          IconButton(
+            icon: Icon(_ttsState == TtsState.playing ? Icons.pause : Icons.play_arrow),
+            onPressed: () {
+              if (_ttsState == TtsState.playing) {
+                _pauseTts();
+              } else {
+                _speak();
+              }
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.stop),
+            onPressed: _stop,
+          ),
+          const SizedBox(width: 16),
+          const Text('السرعة:', style: TextStyle(fontSize: 14)),
+          Expanded(
+            child: Slider(
+              value: _ttsRate,
+              min: 0.2,
+              max: 1.0,
+              onChanged: (val) {
+                setState(() => _ttsRate = val);
+                flutterTts.setSpeechRate(val);
+              },
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -1062,6 +1349,8 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
                         anchorStrength: _anchorStrength,
                         gateWrong: isGateWrong,
                         inlineNotes: notes,
+                        spokenWord: _currentSpokenWord,
+                        spokenWordOccurrence: _currentWordOccurrence,
                         onAddNote: (int start, int end) {
                           final String selectedString = shot.body.substring(start, end);
                           _onAddInlineNote(selectedString, start, end, shot.conceptId);
@@ -1075,24 +1364,45 @@ class _ConceptReaderPageState extends State<ConceptReaderPage> {
               ),
             ),
 
-            // ── زر التالي الكبير الوحيد ──
+            // ── أزرار التنقل ──
             SafeArea(
               top: false,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(
                     AppSpacing.xl, AppSpacing.sm, AppSpacing.xl, AppSpacing.lg),
                 child: SizedBox(
-                  width: double.infinity,
                   height: 56,
-                  child: FilledButton(
-                    onPressed: _next,
-                    child: Text(
-                      shot.isLastShot ? 'إنهاء الشرح' : 'التالي',
-                      style: AppType.body.copyWith(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w800,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      Expanded(
+                        flex: 2,
+                        child: OutlinedButton(
+                          onPressed: _index > 0 ? _previous : null,
+                          child: Text(
+                            'السابق',
+                            style: AppType.body.copyWith(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
+                      const SizedBox(width: AppSpacing.md),
+                      Expanded(
+                        flex: 3,
+                        child: FilledButton(
+                          onPressed: _next,
+                          child: Text(
+                            shot.isLastShot ? 'إنهاء الشرح' : 'التالي',
+                            style: AppType.body.copyWith(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -1121,6 +1431,8 @@ class _ShotContent extends StatelessWidget {
     this.onAddNote,
     this.onTapNote,
     this.onSelectionChanged,
+    this.spokenWord,
+    this.spokenWordOccurrence,
   });
 
   final _Shot shot;
@@ -1145,6 +1457,9 @@ class _ShotContent extends StatelessWidget {
   /// ليستخدمه زر «إضافة ملاحظة» في القائمة المخصصة. (النوع Object?
   /// لأن SelectedContent غير مصدَّر علناً في هذه النسخة من Flutter.)
   final ValueChanged<Object?>? onSelectionChanged;
+  
+  final String? spokenWord;
+  final int? spokenWordOccurrence;
 
   @override
   Widget build(BuildContext context) {
@@ -1199,9 +1514,9 @@ class _ShotContent extends StatelessWidget {
             // ── ترويسة المفهوم عند بدايته ──
             if (shot.isConceptStart) ...<Widget>[
               Text(
-                shot.conceptTitle,
-                textDirection: TextDirection.ltr,
-                textAlign: TextAlign.start,
+                _sanitizeBidi(shot.conceptTitle),
+                textDirection: _isArabic(shot.conceptTitle) ? TextDirection.rtl : TextDirection.ltr,
+                textAlign: _isArabic(shot.conceptTitle) ? TextAlign.start : TextAlign.left,
                 style: AppType.body.copyWith(
                   fontSize: 13,
                   fontWeight: FontWeight.w800,
@@ -1222,7 +1537,9 @@ class _ShotContent extends StatelessWidget {
               if ((shot.summaryAr ?? '').trim().isNotEmpty) ...<Widget>[
                 const SizedBox(height: AppSpacing.sm),
                 Text(
-                  shot.summaryAr!,
+                  _sanitizeBidi(shot.summaryAr!),
+                  textDirection: _isArabic(shot.summaryAr!) ? TextDirection.rtl : TextDirection.ltr,
+                  textAlign: _isArabic(shot.summaryAr!) ? TextAlign.start : TextAlign.left,
                   style: AppType.body.copyWith(
                     fontSize: 13.5,
                     height: 1.6,
@@ -1245,8 +1562,8 @@ class _ShotContent extends StatelessWidget {
                     strength: anchorStrength,
                   ),
                 ),
-                textDirection: TextDirection.rtl,
-                textAlign: TextAlign.start,
+                textDirection: _isArabic(shot.heading) ? TextDirection.rtl : TextDirection.ltr,
+                textAlign: _isArabic(shot.heading) ? TextAlign.start : TextAlign.left,
               ),
               const SizedBox(height: AppSpacing.md),
             ],
@@ -1260,14 +1577,89 @@ class _ShotContent extends StatelessWidget {
                   style: focusBodyStyle(b),
                   children: _buildBodySpans(shot, b),
                 ),
-                textDirection: TextDirection.rtl,
-                textAlign: TextAlign.start, // لا Justify أبداً
+                textDirection: _isArabic(shot.body) ? TextDirection.rtl : TextDirection.ltr,
+                textAlign: _isArabic(shot.body) ? TextAlign.start : TextAlign.left, // لا Justify أبداً
                 contextMenuBuilder: (BuildContext ctx, EditableTextState state) {
                   final List<ContextMenuButtonItem> items =
                       List<ContextMenuButtonItem>.of(state.contextMenuButtonItems);
                   
                   items.insert(
                     0,
+                    ContextMenuButtonItem(
+                      label: 'ترجمة',
+                      onPressed: () {
+                        // 1. التقاط النص قبل إخفاء القائمة لتفادي فقدان الحالة
+                        final TextSelection selection = state.textEditingValue.selection;
+                        final int start = selection.baseOffset < selection.extentOffset 
+                                          ? selection.baseOffset 
+                                          : selection.extentOffset;
+                        final int end = selection.baseOffset > selection.extentOffset 
+                                          ? selection.baseOffset 
+                                          : selection.extentOffset;
+                        final String selectedString = state.textEditingValue.text
+                            .substring(start, end)
+                            .replaceAll('**', '');
+                        
+                        print('Translate tapped for: $selectedString');
+                        
+                        // 2. إخفاء القائمة وإزالة التحديد والتركيز لمنع تكرار الأحداث (UI Event Loop)
+                        state.hideToolbar();
+                        FocusManager.instance.primaryFocus?.unfocus();
+                        state.userUpdateTextEditingValue(
+                          state.textEditingValue.copyWith(
+                            selection: const TextSelection.collapsed(offset: 0),
+                          ),
+                          null,
+                        );
+                        
+                        // 3. عرض النافذة باستخدام (context) الخاص بالصفحة وليس (ctx) الخاص بالقائمة
+                        if (selectedString.trim().isNotEmpty) {
+                          try {
+                            _showTranslationSheet(context, selectedString);
+                          } catch (e) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('حدث خطأ أثناء فتح الترجمة: $e')),
+                            );
+                          }
+                        }
+                      },
+                    ),
+                  );
+
+                  items.insert(
+                    1,
+                    ContextMenuButtonItem(
+                      label: '🤖 شرح ذكي',
+                      onPressed: () {
+                        final TextSelection selection = state.textEditingValue.selection;
+                        final int start = selection.baseOffset < selection.extentOffset 
+                                          ? selection.baseOffset 
+                                          : selection.extentOffset;
+                        final int end = selection.baseOffset > selection.extentOffset 
+                                          ? selection.baseOffset 
+                                          : selection.extentOffset;
+                        final String selectedString = state.textEditingValue.text
+                            .substring(start, end)
+                            .replaceAll('**', '');
+                        
+                        state.hideToolbar();
+                        FocusManager.instance.primaryFocus?.unfocus();
+                        state.userUpdateTextEditingValue(
+                          state.textEditingValue.copyWith(
+                            selection: const TextSelection.collapsed(offset: 0),
+                          ),
+                          null,
+                        );
+                        
+                        if (selectedString.trim().isNotEmpty) {
+                          _showAIExplainSheet(context, selectedString);
+                        }
+                      },
+                    ),
+                  );
+
+                  items.insert(
+                    2,
                     ContextMenuButtonItem(
                       label: 'إضافة ملاحظة',
                       onPressed: () {
@@ -1330,8 +1722,8 @@ class _ShotContent extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 _sanitizeBidi(point),
-                                textDirection: TextDirection.rtl,
-                                textAlign: TextAlign.start,
+                                textDirection: _isArabic(point) ? TextDirection.rtl : TextDirection.ltr,
+                                textAlign: _isArabic(point) ? TextAlign.start : TextAlign.left,
                                 style: AppType.body.copyWith(
                                   fontSize: 13,
                                   height: 1.55,
@@ -1368,9 +1760,9 @@ class _ShotContent extends StatelessWidget {
                       Expanded(
                         flex: 2,
                         child: Text(
-                          (term['term'] as String?) ?? '',
-                          textDirection: TextDirection.ltr,
-                          textAlign: TextAlign.start,
+                          _sanitizeBidi((term['term'] as String?) ?? ''),
+                          textDirection: _isArabic((term['term'] as String?) ?? '') ? TextDirection.rtl : TextDirection.ltr,
+                          textAlign: _isArabic((term['term'] as String?) ?? '') ? TextAlign.start : TextAlign.left,
                           style: AppType.body.copyWith(
                             fontFamily: AppType.focusFamily,
                             fontWeight: FontWeight.w700,
@@ -1382,7 +1774,9 @@ class _ShotContent extends StatelessWidget {
                       Expanded(
                         flex: 3,
                         child: Text(
-                          (term['definition_ar'] as String?) ?? '',
+                          _sanitizeBidi((term['definition_ar'] as String?) ?? ''),
+                          textDirection: _isArabic((term['definition_ar'] as String?) ?? '') ? TextDirection.rtl : TextDirection.ltr,
+                          textAlign: _isArabic((term['definition_ar'] as String?) ?? '') ? TextAlign.start : TextAlign.left,
                           style: AppType.body.copyWith(
                             fontSize: 13,
                             color: AppColors.textSecondary(b),
@@ -1399,11 +1793,20 @@ class _ShotContent extends StatelessWidget {
     );
   }
 
-  /// حقن علامة (RLM) لنهاية النصوص لضمان تنسيق علامات الترقيم والأقواس لليمين.
+  bool _isArabic(String text) {
+    return RegExp(r'^[\s\W]*[\u0600-\u06FF]').hasMatch(text);
+  }
+
+  /// حقن علامة التوجيه المناسبة لنهاية النصوص لضمان تنسيق علامات الترقيم والأقواس.
   String _sanitizeBidi(String text) {
     if (text.isEmpty) return text;
-    if (text.endsWith('\u200F')) return text;
-    return '$text\u200F';
+    if (_isArabic(text)) {
+      if (text.endsWith('\u200F')) return text;
+      return '$text\u200F';
+    } else {
+      if (text.endsWith('\u200E')) return text;
+      return '$text\u200E';
+    }
   }
 
   /// يبني أجزاء جسم النص — يدمج مراسي التثبيت (قراءة أولى) مع تمييز
@@ -1415,11 +1818,8 @@ class _ShotContent extends StatelessWidget {
   List<TextSpan> _buildBodySpans(_Shot shot, Brightness b) {
     final TextStyle base = focusBodyStyle(b);
     final String sanitizedBody = _sanitizeBidi(shot.body);
-    if (inlineNotes.isEmpty) {
-      return useAnchors
-          ? buildAnchoredSpans(sanitizedBody, base, strength: anchorStrength)
-          : <TextSpan>[TextSpan(text: sanitizedBody, style: base)];
-    }
+    // نعتمد دائماً على buildInlineNoteSpans لأنه يتولى الآن معالجة الخط العريض `**` 
+    // والمراسي والتحديد معاً.
     return buildInlineNoteSpans(
       sanitizedBody,
       inlineNotes,
@@ -1428,6 +1828,275 @@ class _ShotContent extends StatelessWidget {
       brightness: b,
       useAnchors: useAnchors,
       anchorStrength: anchorStrength,
+      spokenWord: spokenWord,
+      spokenWordOccurrence: spokenWordOccurrence,
     );
   }
+}
+
+/// ── أداة الترجمة ──
+Future<void> _showTranslationSheet(BuildContext context, String textToTranslate) async {
+  final Brightness b = Theme.of(context).colorScheme.brightness;
+  
+  showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: AppColors.surface(b),
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.card)),
+    ),
+    builder: (BuildContext ctx) {
+      return Padding(
+        padding: EdgeInsets.only(
+          left: AppSpacing.xl,
+          right: AppSpacing.xl,
+          top: AppSpacing.lg,
+          bottom: MediaQuery.paddingOf(ctx).bottom + AppSpacing.xl,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Center(
+              child: Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: AppColors.border(b),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            const SizedBox(height: AppSpacing.lg),
+            Text(
+              'الترجمة',
+              textAlign: TextAlign.center,
+              style: AppType.cardTitle.copyWith(color: AppColors.text(b)),
+            ),
+            const SizedBox(height: AppSpacing.xl),
+            
+            // النص الأصلي
+            Container(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              decoration: BoxDecoration(
+                color: AppColors.surfaceAlt(b),
+                borderRadius: BorderRadius.circular(AppRadius.field),
+                border: Border.all(color: AppColors.border(b)),
+              ),
+              child: Text(
+                textToTranslate,
+                textDirection: TextDirection.ltr,
+                textAlign: TextAlign.left,
+                style: AppType.body.copyWith(
+                  fontSize: 13,
+                  color: AppColors.textSecondary(b),
+                ),
+              ),
+            ),
+            const SizedBox(height: AppSpacing.lg),
+            
+            // الترجمة
+            FutureBuilder<Translation>(
+              future: GoogleTranslator().translate(textToTranslate, to: 'ar'),
+              builder: (BuildContext context, AsyncSnapshot<Translation> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Padding(
+                    padding: EdgeInsets.all(AppSpacing.xl),
+                    child: Center(child: CircularProgressIndicator()),
+                  );
+                }
+                if (snapshot.hasError) {
+                  return Padding(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    child: Center(
+                      child: Text(
+                        'تعذّر الاتصال بخدمة الترجمة. تأكد من اتصالك بالإنترنت.',
+                        textAlign: TextAlign.center,
+                        style: AppType.body.copyWith(color: AppColors.error(b)),
+                      ),
+                    ),
+                  );
+                }
+                
+                final String translated = snapshot.data?.text ?? '';
+                return Container(
+                  padding: const EdgeInsets.all(AppSpacing.md),
+                  decoration: BoxDecoration(
+                    color: AppColors.primaryTint(b),
+                    borderRadius: BorderRadius.circular(AppRadius.field),
+                    border: Border.all(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
+                  ),
+                  child: Text(
+                    translated,
+                    textDirection: TextDirection.rtl,
+                    textAlign: TextAlign.start,
+                    style: AppType.body.copyWith(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      color: Theme.of(context).colorScheme.primary,
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      );
+    },
+  );
+}
+
+/// ── الشرح الذكي (AI) ──
+Future<void> _showAIExplainSheet(BuildContext context, String textToExplain) async {
+  final Brightness b = Theme.of(context).colorScheme.brightness;
+  
+  showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: AppColors.surface(b),
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.card)),
+    ),
+    builder: (BuildContext ctx) {
+      bool isRequested = false;
+      bool isLoading = true;
+      String? explanationResult;
+      String? errorMessage;
+
+      return StatefulBuilder(
+        builder: (BuildContext context, StateSetter setState) {
+          if (!isRequested) {
+            isRequested = true;
+            AIService.explainMedicalText(textToExplain).then((result) {
+              setState(() {
+                if (result != null && result.isNotEmpty) {
+                  explanationResult = result;
+                } else {
+                  errorMessage = 'فشل الحصول على الشرح. يرجى التحقق من إعدادات الذكاء الاصطناعي.';
+                }
+                isLoading = false;
+              });
+            }).catchError((e) {
+              setState(() {
+                errorMessage = 'حدث خطأ غير متوقع: $e';
+                isLoading = false;
+              });
+            });
+          }
+
+          return Padding(
+            padding: EdgeInsets.only(
+              left: AppSpacing.xl,
+              right: AppSpacing.xl,
+              top: AppSpacing.lg,
+              bottom: MediaQuery.paddingOf(ctx).bottom + AppSpacing.xl,
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Center(
+                  child: Container(
+                    width: 40,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: AppColors.border(b),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.lg),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.auto_awesome_rounded, color: AppColors.gold(b)),
+                    const SizedBox(width: AppSpacing.sm),
+                    Text(
+                      'شرح ذكي',
+                      textAlign: TextAlign.center,
+                      style: AppType.cardTitle.copyWith(color: AppColors.text(b)),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpacing.xl),
+                
+                // النص الأصلي
+                Container(
+                  padding: const EdgeInsets.all(AppSpacing.md),
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceAlt(b),
+                    borderRadius: BorderRadius.circular(AppRadius.field),
+                    border: Border.all(color: AppColors.border(b)),
+                  ),
+                  child: Text(
+                    textToExplain,
+                    textDirection: TextDirection.ltr,
+                    textAlign: TextAlign.left,
+                    style: AppType.body.copyWith(
+                      fontSize: 13,
+                      color: AppColors.textSecondary(b),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.lg),
+                
+                // حالة التحميل
+                if (isLoading)
+                  Padding(
+                    padding: const EdgeInsets.all(AppSpacing.xl),
+                    child: Column(
+                      children: [
+                        const CircularProgressIndicator(),
+                        const SizedBox(height: AppSpacing.md),
+                        Text(
+                          'يجري تحليل النص السريري...',
+                          style: AppType.body.copyWith(color: AppColors.textSecondary(b)),
+                        ),
+                      ],
+                    ),
+                  ),
+                
+                // حالة الخطأ
+                if (errorMessage != null)
+                  Padding(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    child: Center(
+                      child: Text(
+                        errorMessage!,
+                        textAlign: TextAlign.center,
+                        style: AppType.body.copyWith(color: AppColors.error(b)),
+                      ),
+                    ),
+                  ),
+                
+                // حالة النتيجة
+                if (explanationResult != null)
+                  Flexible(
+                    child: SingleChildScrollView(
+                      child: Container(
+                        padding: const EdgeInsets.all(AppSpacing.md),
+                        decoration: BoxDecoration(
+                          color: AppColors.primaryTint(b),
+                          borderRadius: BorderRadius.circular(AppRadius.field),
+                          border: Border.all(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
+                        ),
+                        child: Text(
+                          explanationResult!,
+                          textDirection: TextDirection.rtl,
+                          textAlign: TextAlign.start,
+                          style: AppType.body.copyWith(
+                            fontSize: 15,
+                            color: AppColors.text(b),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          );
+        },
+      );
+    },
+  );
 }

@@ -1,0 +1,473 @@
+[
+  {
+    "category": "Complete Blood Count (CBC)",
+    "tests": [
+      {
+        "name": "Hemoglobin (Hb)",
+        "normal_range_male": "13.5 - 17.5 g/dL",
+        "normal_range_female": "12.0 - 15.5 g/dL",
+        "high_indication": "Polycythemia vera, chronic hypoxia (COPD, high altitude), dehydration, smoking",
+        "low_indication": "Anemia (iron, B12, folate deficiency), acute or chronic blood loss, hemolysis, chronic kidney disease"
+      },
+      {
+        "name": "Hematocrit (Hct)",
+        "normal_range_male": "41 - 50 %",
+        "normal_range_female": "36 - 44 %",
+        "high_indication": "Polycythemia vera, dehydration, chronic hypoxia",
+        "low_indication": "Anemia, hemorrhage, hemodilution (fluid overload, pregnancy)"
+      },
+      {
+        "name": "Red Blood Cell (RBC) Count",
+        "normal_range_male": "4.5 - 5.9 ×10⁶/µL",
+        "normal_range_female": "4.1 - 5.1 ×10⁶/µL",
+        "high_indication": "Erythrocytosis (polycythemia vera, chronic hypoxia, erythropoietin-secreting tumors)",
+        "low_indication": "Anemia, acute blood loss, hemolysis, marrow failure"
+      },
+      {
+        "name": "Total Leukocyte Count (WBC)",
+        "normal_range_male": "4.5 - 11.0 ×10³/µL",
+        "normal_range_female": "4.5 - 11.0 ×10³/µL",
+        "high_indication": "Bacterial infections, inflammation, leukemia, corticosteroids, stress response, burns",
+        "low_indication": "Viral infections, sepsis, aplastic anemia, chemotherapy or radiation, hypersplenism, B12/folate deficiency"
+      },
+      {
+        "name": "Platelet Count",
+        "normal_range_male": "150 - 450 ×10³/µL",
+        "normal_range_female": "150 - 450 ×10³/µL",
+        "high_indication": "Reactive thrombocytosis (iron deficiency, infection, inflammation), essential thrombocythemia, post-splenectomy",
+        "low_indication": "ITP, TTP, DIC, hypersplenism, marrow infiltration or failure, heparin-induced thrombocytopenia (HIT)"
+      },
+      {
+        "name": "Mean Corpuscular Volume (MCV)",
+        "normal_range_male": "80 - 100 fL",
+        "normal_range_female": "80 - 100 fL",
+        "high_indication": "Macrocytic anemia (B12/folate deficiency), liver disease, hypothyroidism, MDS",
+        "low_indication": "Iron deficiency anemia, thalassemia, anemia of chronic disease, sideroblastic anemia"
+      },
+      {
+        "name": "Mean Corpuscular Hemoglobin (MCH)",
+        "normal_range_male": "27 - 33 pg",
+        "normal_range_female": "27 - 33 pg",
+        "high_indication": "Macrocytic anemia (B12/folate deficiency)",
+        "low_indication": "Iron deficiency anemia, thalassemia, microcytic anemia"
+      },
+      {
+        "name": "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+        "normal_range_male": "32 - 36 g/dL",
+        "normal_range_female": "32 - 36 g/dL",
+        "high_indication": "Hereditary spherocytosis, severe dehydration (artifact)",
+        "low_indication": "Iron deficiency anemia, thalassemia, anemia of chronic disease"
+      },
+      {
+        "name": "Red Cell Distribution Width (RDW)",
+        "normal_range_male": "11.5 - 14.5 %",
+        "normal_range_female": "11.5 - 14.5 %",
+        "high_indication": "Anisocytosis: mixed deficiency anemia, early iron deficiency, post-transfusion, MDS",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Neutrophils (Absolute Count)",
+        "normal_range_male": "1.8 - 7.0 ×10³/µL (40 - 70 %)",
+        "normal_range_female": "1.8 - 7.0 ×10³/µL (40 - 70 %)",
+        "high_indication": "Bacterial infections, tissue necrosis, inflammation, corticosteroids, myeloproliferative disorders",
+        "low_indication": "Viral infections, drug-induced agranulocytosis (chemotherapy, antithyroid drugs), aplastic anemia, severe sepsis"
+      },
+      {
+        "name": "Lymphocytes (Absolute Count)",
+        "normal_range_male": "1.0 - 4.0 ×10³/µL (20 - 40 %)",
+        "normal_range_female": "1.0 - 4.0 ×10³/µL (20 - 40 %)",
+        "high_indication": "Viral infections (EBV, CMV, viral hepatitis), chronic lymphocytic leukemia, lymphoma, pertussis",
+        "low_indication": "HIV, corticosteroids, chemotherapy or radiation, malnutrition, severe acute stress"
+      },
+      {
+        "name": "Monocytes (Absolute Count)",
+        "normal_range_male": "0.2 - 1.0 ×10³/µL (2 - 8 %)",
+        "normal_range_female": "0.2 - 1.0 ×10³/µL (2 - 8 %)",
+        "high_indication": "Chronic infections (tuberculosis, subacute bacterial endocarditis), CMML, collagen vascular disease",
+        "low_indication": "Usually not clinically significant; aplastic states, corticosteroids"
+      },
+      {
+        "name": "Eosinophils (Absolute Count)",
+        "normal_range_male": "0.05 - 0.50 ×10³/µL (1 - 6 %)",
+        "normal_range_female": "0.05 - 0.50 ×10³/µL (1 - 6 %)",
+        "high_indication": "Allergic diseases (asthma, atopic dermatitis), parasitic infections, drug reactions, eosinophilic syndromes, adrenal insufficiency",
+        "low_indication": "Corticosteroid use, Cushing syndrome, acute bacterial infection (stress response)"
+      },
+      {
+        "name": "Basophils (Absolute Count)",
+        "normal_range_male": "0.02 - 0.10 ×10³/µL (0 - 1 %)",
+        "normal_range_female": "0.02 - 0.10 ×10³/µL (0 - 1 %)",
+        "high_indication": "Myeloproliferative disorders (CML, polycythemia vera), hypersensitivity reactions, hypothyroidism",
+        "low_indication": "Hyperthyroidism, acute stress, corticosteroids (generally not significant)"
+      },
+      {
+        "name": "Reticulocyte Count",
+        "normal_range_male": "0.5 - 2.5 % of RBCs (absolute: 25 - 100 ×10³/µL)",
+        "normal_range_female": "0.5 - 2.5 % of RBCs (absolute: 25 - 100 ×10³/µL)",
+        "high_indication": "Hemolytic anemia, acute blood loss, response to iron, B12 or folate therapy",
+        "low_indication": "Aplastic anemia, marrow infiltration, untreated iron/B12/folate deficiency, renal failure (low erythropoietin)"
+      },
+      {
+        "name": "Mean Platelet Volume (MPV)",
+        "normal_range_male": "7.5 - 11.5 fL",
+        "normal_range_female": "7.5 - 11.5 fL",
+        "high_indication": "ITP (release of young platelets), myeloproliferative disorders, pre-eclampsia",
+        "low_indication": "Aplastic anemia, chemotherapy, Wiskott-Aldrich syndrome"
+      },
+      {
+        "name": "Erythrocyte Sedimentation Rate (ESR)",
+        "normal_range_male": "0 - 15 mm/hr",
+        "normal_range_female": "0 - 20 mm/hr",
+        "high_indication": "Infection, chronic inflammation (rheumatoid arthritis, temporal arteritis, PMR), malignancy, pregnancy, anemia",
+        "low_indication": "Polycythemia vera, sickle cell disease, congestive heart failure, hypofibrinogenemia"
+      },
+      {
+        "name": "C-Reactive Protein (CRP)",
+        "normal_range_male": "< 5 mg/L",
+        "normal_range_female": "< 5 mg/L",
+        "high_indication": "Acute bacterial infection, inflammation, autoimmune flares, tissue necrosis, myocardial infarction",
+        "low_indication": "Not clinically significant (helps rule out active inflammation/infection)"
+      }
+    ]
+  },
+  {
+    "category": "Renal Function Tests (KFT)",
+    "tests": [
+      {
+        "name": "Blood Urea Nitrogen (BUN)",
+        "normal_range_male": "7 - 20 mg/dL",
+        "normal_range_female": "7 - 20 mg/dL",
+        "high_indication": "Renal failure (prerenal, intrinsic, postrenal), dehydration, GI bleeding, high protein intake, catabolic state",
+        "low_indication": "Advanced liver disease, malnutrition, low protein intake, overhydration (SIADH)"
+      },
+      {
+        "name": "Serum Creatinine",
+        "normal_range_male": "0.7 - 1.3 mg/dL",
+        "normal_range_female": "0.6 - 1.1 mg/dL",
+        "high_indication": "Acute kidney injury, chronic kidney disease, dehydration, rhabdomyolysis, urinary tract obstruction",
+        "low_indication": "Decreased muscle mass, pregnancy, severe liver disease"
+      },
+      {
+        "name": "BUN/Creatinine Ratio",
+        "normal_range_male": "10 - 20 (ratio)",
+        "normal_range_female": "10 - 20 (ratio)",
+        "high_indication": "Prerenal azotemia (dehydration, heart failure), GI bleeding, hypercatabolic states",
+        "low_indication": "Intrinsic renal disease, acute tubular necrosis, low protein intake, severe liver disease, rhabdomyolysis"
+      },
+      {
+        "name": "Estimated Glomerular Filtration Rate (eGFR)",
+        "normal_range_male": "≥ 90 mL/min/1.73 m²",
+        "normal_range_female": "≥ 90 mL/min/1.73 m²",
+        "high_indication": "Hyperfiltration (early diabetic nephropathy, pregnancy, high-protein diet)",
+        "low_indication": "Chronic kidney disease (60 - 89 mild, 30 - 59 moderate, 15 - 29 severe, < 15 kidney failure), acute kidney injury"
+      },
+      {
+        "name": "Serum Uric Acid",
+        "normal_range_male": "3.4 - 7.2 mg/dL",
+        "normal_range_female": "2.4 - 6.0 mg/dL",
+        "high_indication": "Gout, renal failure, tumor lysis syndrome, diuretics, metabolic syndrome, psoriasis, cytotoxic therapy",
+        "low_indication": "SIADH, allopurinol/febuxostat therapy, Fanconi syndrome, severe liver disease"
+      },
+      {
+        "name": "Creatinine Clearance (24-hour urine)",
+        "normal_range_male": "97 - 137 mL/min",
+        "normal_range_female": "88 - 128 mL/min",
+        "high_indication": "Early diabetic nephropathy (hyperfiltration), pregnancy",
+        "low_indication": "Declining GFR, chronic kidney disease, acute kidney injury"
+      }
+    ]
+  },
+  {
+    "category": "Liver Function Tests (LFT)",
+    "tests": [
+      {
+        "name": "Alanine Aminotransferase (ALT / SGPT)",
+        "normal_range_male": "7 - 56 U/L",
+        "normal_range_female": "7 - 56 U/L",
+        "high_indication": "Hepatocellular injury (viral hepatitis, drug-induced, NAFLD, ischemic hepatitis, alcohol below AST)",
+        "low_indication": "Not clinically significant (rarely vitamin B6 deficiency)"
+      },
+      {
+        "name": "Aspartate Aminotransferase (AST / SGOT)",
+        "normal_range_male": "10 - 40 U/L",
+        "normal_range_female": "10 - 40 U/L",
+        "high_indication": "Hepatocellular injury, myocardial infarction, skeletal muscle injury, rhabdomyolysis, hemolysis",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "AST/ALT Ratio (De Ritis Ratio)",
+        "normal_range_male": "< 1.0 (typically)",
+        "normal_range_female": "< 1.0 (typically)",
+        "high_indication": "Alcoholic liver disease, cirrhosis (ratio > 2.0), NASH with advanced fibrosis",
+        "low_indication": "Viral hepatitis, early NAFLD, toxic hepatitis"
+      },
+      {
+        "name": "Alkaline Phosphatase (ALP)",
+        "normal_range_male": "44 - 147 IU/L",
+        "normal_range_female": "44 - 147 IU/L",
+        "high_indication": "Cholestasis/biliary obstruction, infiltrative liver disease (metastases, granulomas), Paget disease, bone metastases, hyperparathyroidism, pregnancy",
+        "low_indication": "Hypophosphatasia, zinc deficiency, hypothyroidism, malnutrition"
+      },
+      {
+        "name": "Gamma-Glutamyl Transferase (GGT)",
+        "normal_range_male": "8 - 61 U/L",
+        "normal_range_female": "5 - 36 U/L",
+        "high_indication": "Alcohol use/abuse, cholestasis/biliary disease, enzyme inducers (phenytoin, barbiturates), pancreatic disease",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Total Bilirubin",
+        "normal_range_male": "0.3 - 1.2 mg/dL",
+        "normal_range_female": "0.3 - 1.2 mg/dL",
+        "high_indication": "Hemolysis, Gilbert syndrome, hepatocellular disease (hepatitis, cirrhosis), biliary obstruction (choledocholithiasis, pancreatic head cancer)",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Direct (Conjugated) Bilirubin",
+        "normal_range_male": "0.1 - 0.4 mg/dL",
+        "normal_range_female": "0.1 - 0.4 mg/dL",
+        "high_indication": "Cholestasis, biliary obstruction, Dubin-Johnson and Rotor syndromes, sepsis",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Indirect (Unconjugated) Bilirubin",
+        "normal_range_male": "0.2 - 0.8 mg/dL",
+        "normal_range_female": "0.2 - 0.8 mg/dL",
+        "high_indication": "Hemolysis, Gilbert syndrome, Crigler-Najjar syndrome, ineffective erythropoiesis (megaloblastic anemia)",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Total Protein",
+        "normal_range_male": "6.0 - 8.3 g/dL",
+        "normal_range_female": "6.0 - 8.3 g/dL",
+        "high_indication": "Dehydration, multiple myeloma, Waldenström macroglobulinemia, chronic inflammation/infection (hypergammaglobulinemia)",
+        "low_indication": "Malnutrition, liver failure, nephrotic syndrome, protein-losing enteropathy, burns, overhydration"
+      },
+      {
+        "name": "Serum Albumin",
+        "normal_range_male": "3.5 - 5.2 g/dL",
+        "normal_range_female": "3.5 - 5.2 g/dL",
+        "high_indication": "Dehydration, anabolic steroid use",
+        "low_indication": "Cirrhosis/chronic liver disease, nephrotic syndrome, malnutrition, protein-losing enteropathy, burns, chronic inflammation"
+      },
+      {
+        "name": "Serum Globulin",
+        "normal_range_male": "2.0 - 3.5 g/dL",
+        "normal_range_female": "2.0 - 3.5 g/dL",
+        "high_indication": "Chronic infections (tuberculosis, hepatitis), autoimmune disease, multiple myeloma, lymphoma, sarcoidosis",
+        "low_indication": "Immunodeficiency states, nephrotic syndrome, malnutrition, immunosuppressive therapy"
+      },
+      {
+        "name": "Albumin/Globulin (A/G) Ratio",
+        "normal_range_male": "1.1 - 2.2 (ratio)",
+        "normal_range_female": "1.1 - 2.2 (ratio)",
+        "high_indication": "Hypogammaglobulinemia (immunodeficiency)",
+        "low_indication": "Hypergammaglobulinemia (chronic infection, myeloma, autoimmune disease), hypoalbuminemia (cirrhosis, nephrotic syndrome)"
+      },
+      {
+        "name": "Lactate Dehydrogenase (LDH)",
+        "normal_range_male": "120 - 246 U/L",
+        "normal_range_female": "120 - 246 U/L",
+        "high_indication": "Hemolysis, megaloblastic anemia, myocardial infarction, malignancy/lymphoma, hepatocellular injury, pulmonary embolism, rhabdomyolysis",
+        "low_indication": "Not clinically significant"
+      }
+    ]
+  },
+  {
+    "category": "Arterial Blood Gas (ABG)",
+    "tests": [
+      {
+        "name": "pH",
+        "normal_range_male": "7.35 - 7.45",
+        "normal_range_female": "7.35 - 7.45",
+        "high_indication": "Alkalosis (respiratory: hyperventilation, anxiety, pain, sepsis; metabolic: vomiting, diuretics, hyperaldosteronism)",
+        "low_indication": "Acidosis (respiratory: hypoventilation, COPD, CNS depression; metabolic: DKA, lactic acidosis, renal failure, diarrhea)"
+      },
+      {
+        "name": "Partial Pressure of CO2 (PaCO2)",
+        "normal_range_male": "35 - 45 mmHg",
+        "normal_range_female": "35 - 45 mmHg",
+        "high_indication": "Respiratory acidosis (COPD, hypoventilation, CNS depression, neuromuscular disease), compensation for metabolic alkalosis",
+        "low_indication": "Respiratory alkalosis (anxiety, pain, sepsis, pulmonary embolism, salicylate toxicity), compensation for metabolic acidosis"
+      },
+      {
+        "name": "Partial Pressure of O2 (PaO2)",
+        "normal_range_male": "80 - 100 mmHg (room air)",
+        "normal_range_female": "80 - 100 mmHg (room air)",
+        "high_indication": "Hyperoxia (excessive supplemental oxygen)",
+        "low_indication": "Hypoxemia: V/Q mismatch, shunt, hypoventilation, diffusion impairment (pneumonia, ARDS, pulmonary embolism, pulmonary edema)"
+      },
+      {
+        "name": "Bicarbonate (HCO3-)",
+        "normal_range_male": "22 - 26 mEq/L",
+        "normal_range_female": "22 - 26 mEq/L",
+        "high_indication": "Metabolic alkalosis (vomiting, NG suction, diuretics), compensation for chronic respiratory acidosis (COPD)",
+        "low_indication": "Metabolic acidosis (DKA, lactic acidosis, renal failure, diarrhea), compensation for chronic respiratory alkalosis"
+      },
+      {
+        "name": "Oxygen Saturation (SaO2)",
+        "normal_range_male": "95 - 100 %",
+        "normal_range_female": "95 - 100 %",
+        "high_indication": "Supplemental oxygen administration (not pathological)",
+        "low_indication": "Hypoxemia (pneumonia, ARDS, pulmonary embolism, COPD exacerbation, shunt, high altitude)"
+      },
+      {
+        "name": "Base Excess/Deficit",
+        "normal_range_male": "-2 to +2 mEq/L",
+        "normal_range_female": "-2 to +2 mEq/L",
+        "high_indication": "Metabolic alkalosis, compensation for chronic respiratory acidosis",
+        "low_indication": "Metabolic acidosis (shock, sepsis, DKA, tissue hypoxia, renal failure)"
+      },
+      {
+        "name": "Arterial Lactate",
+        "normal_range_male": "0.5 - 2.2 mmol/L",
+        "normal_range_female": "0.5 - 2.2 mmol/L",
+        "high_indication": "Type A: tissue hypoxia (septic, cardiogenic or hemorrhagic shock, severe hypoxemia); Type B: metformin, alcohol, liver failure, seizures, malignancy",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Alveolar-Arterial (A-a) Gradient",
+        "normal_range_male": "5 - 15 mmHg (approx. (age/4) + 4)",
+        "normal_range_female": "5 - 15 mmHg (approx. (age/4) + 4)",
+        "high_indication": "V/Q mismatch, shunt, diffusion impairment (pulmonary embolism, ARDS, pneumonia, pulmonary edema, fibrosis)",
+        "low_indication": "Not clinically significant (with hypoxemia suggests hypoventilation or low inspired FiO2)"
+      }
+    ]
+  },
+  {
+    "category": "Coagulation Profile",
+    "tests": [
+      {
+        "name": "Prothrombin Time (PT)",
+        "normal_range_male": "9.5 - 13.5 seconds",
+        "normal_range_female": "9.5 - 13.5 seconds",
+        "high_indication": "Warfarin use, vitamin K deficiency, liver disease, DIC, congenital factor VII/II/V/X deficiency, biliary obstruction, malabsorption",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "International Normalized Ratio (INR)",
+        "normal_range_male": "0.8 - 1.2 (unanticoagulated)",
+        "normal_range_female": "0.8 - 1.2 (unanticoagulated)",
+        "high_indication": "Warfarin therapy (target 2.0 - 3.0 for most indications), liver failure, DIC, vitamin K deficiency, warfarin overdose",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Activated Partial Thromboplastin Time (aPTT)",
+        "normal_range_male": "25 - 35 seconds",
+        "normal_range_female": "25 - 35 seconds",
+        "high_indication": "Heparin therapy, hemophilia A/B, von Willebrand disease, lupus anticoagulant, DIC, congenital factor VIII/IX/XI/XII deficiency",
+        "low_indication": "Acute-phase reaction, early or compensated DIC (hypercoagulable state)"
+      },
+      {
+        "name": "Fibrinogen",
+        "normal_range_male": "200 - 400 mg/dL",
+        "normal_range_female": "200 - 400 mg/dL",
+        "high_indication": "Acute-phase reactant: infection, inflammation, pregnancy, tissue injury, malignancy",
+        "low_indication": "DIC, severe liver failure, congenital hypofibrinogenemia/afibrinogenemia, thrombolytic therapy, placental abruption, HELLP syndrome"
+      },
+      {
+        "name": "D-Dimer",
+        "normal_range_male": "< 0.5 µg/mL FEU (< 500 ng/mL FEU)",
+        "normal_range_female": "< 0.5 µg/mL FEU (< 500 ng/mL FEU)",
+        "high_indication": "Deep vein thrombosis, pulmonary embolism, DIC, recent surgery/trauma, pregnancy, malignancy, inflammation (high sensitivity, low specificity)",
+        "low_indication": "Not clinically significant (rules out VTE when clinical probability is low)"
+      },
+      {
+        "name": "Fibrin/Fibrinogen Degradation Products (FDP)",
+        "normal_range_male": "< 10 µg/mL",
+        "normal_range_female": "< 10 µg/mL",
+        "high_indication": "DIC, thrombolytic therapy, primary fibrinolysis, recent surgery or trauma",
+        "low_indication": "Not clinically significant"
+      },
+      {
+        "name": "Thrombin Time (TT)",
+        "normal_range_male": "14 - 16 seconds",
+        "normal_range_female": "14 - 16 seconds",
+        "high_indication": "Heparin/direct thrombin inhibitor therapy, DIC, dysfibrinogenemia, hypofibrinogenemia",
+        "low_indication": "Not clinically significant"
+      }
+    ]
+  },
+  {
+    "category": "Basic Electrolytes (BMP)",
+    "tests": [
+      {
+        "name": "Sodium (Na+)",
+        "normal_range_male": "135 - 145 mEq/L",
+        "normal_range_female": "135 - 145 mEq/L",
+        "high_indication": "Dehydration/hypovolemia, diabetes insipidus, osmotic diuresis, hyperaldosteronism, Cushing syndrome",
+        "low_indication": "SIADH, diuretics, heart failure, cirrhosis, adrenal insufficiency, psychogenic polydipsia, pseudohyponatremia"
+      },
+      {
+        "name": "Potassium (K+)",
+        "normal_range_male": "3.5 - 5.1 mEq/L",
+        "normal_range_female": "3.5 - 5.1 mEq/L",
+        "high_indication": "Renal failure, acidosis, K+-sparing diuretics (spironolactone), Addison disease, tissue breakdown (tumor lysis, rhabdomyolysis), pseudohyperkalemia (hemolyzed sample)",
+        "low_indication": "Vomiting/diarrhea, loop and thiazide diuretics, insulin/glucose shift, alkalosis, hyperaldosteronism, refeeding syndrome"
+      },
+      {
+        "name": "Chloride (Cl-)",
+        "normal_range_male": "98 - 107 mEq/L",
+        "normal_range_female": "98 - 107 mEq/L",
+        "high_indication": "Dehydration, renal tubular acidosis, normal saline overuse, hyperparathyroidism, compensation for respiratory alkalosis",
+        "low_indication": "Vomiting/NG suction, diuretics, SIADH, metabolic alkalosis, compensation for chronic respiratory acidosis"
+      },
+      {
+        "name": "Bicarbonate (Total CO2 Content)",
+        "normal_range_male": "22 - 28 mEq/L",
+        "normal_range_female": "22 - 28 mEq/L",
+        "high_indication": "Metabolic alkalosis (vomiting, diuretics, hyperaldosteronism), compensation for chronic respiratory acidosis (COPD)",
+        "low_indication": "Metabolic acidosis (DKA, lactic acidosis, renal failure, diarrhea), compensation for respiratory alkalosis"
+      },
+      {
+        "name": "Anion Gap",
+        "normal_range_male": "8 - 16 mEq/L (without K+)",
+        "normal_range_female": "8 - 16 mEq/L (without K+)",
+        "high_indication": "High anion gap metabolic acidosis - MUDPILES: methanol, uremia, DKA, propylene glycol, isoniazid/iron, lactic acidosis, ethylene glycol, salicylates",
+        "low_indication": "Hypoalbuminemia, multiple myeloma, paraproteinemia, bromide or lithium intoxication"
+      },
+      {
+        "name": "Calcium (Total)",
+        "normal_range_male": "8.5 - 10.5 mg/dL",
+        "normal_range_female": "8.5 - 10.5 mg/dL",
+        "high_indication": "Primary/tertiary hyperparathyroidism, malignancy (PTHrP, bone metastases, myeloma), vitamin D toxicity, sarcoidosis, thiazide diuretics",
+        "low_indication": "Hypoparathyroidism/post-thyroidectomy, vitamin D deficiency, chronic kidney disease, pancreatitis, magnesium deficiency, massive transfusion (citrate)"
+      },
+      {
+        "name": "Calcium (Ionized)",
+        "normal_range_male": "4.65 - 5.28 mg/dL (1.16 - 1.32 mmol/L)",
+        "normal_range_female": "4.65 - 5.28 mg/dL (1.16 - 1.32 mmol/L)",
+        "high_indication": "Hyperparathyroidism, malignancy, acidosis (increases ionized fraction)",
+        "low_indication": "Alkalosis/hyperventilation (decreases ionized fraction), massive transfusion (citrate), hypoparathyroidism, chronic kidney disease"
+      },
+      {
+        "name": "Magnesium (Mg2+)",
+        "normal_range_male": "1.7 - 2.2 mg/dL (1.4 - 1.8 mEq/L)",
+        "normal_range_female": "1.7 - 2.2 mg/dL (1.4 - 1.8 mEq/L)",
+        "high_indication": "Renal failure, magnesium-containing antacids/laxatives, adrenal insufficiency, lithium therapy",
+        "low_indication": "Alcoholism, loop/thiazide diuretics, proton pump inhibitors, diarrhea/malabsorption, DKA treatment, refeeding syndrome"
+      },
+      {
+        "name": "Phosphorus (Phosphate)",
+        "normal_range_male": "2.5 - 4.5 mg/dL",
+        "normal_range_female": "2.5 - 4.5 mg/dL",
+        "high_indication": "Chronic kidney disease, tumor lysis syndrome, hypoparathyroidism, vitamin D toxicity, rhabdomyolysis",
+        "low_indication": "Refeeding syndrome, hyperparathyroidism, vitamin D deficiency, respiratory alkalosis, malabsorption, alcoholism"
+      },
+      {
+        "name": "Glucose (Fasting)",
+        "normal_range_male": "70 - 100 mg/dL",
+        "normal_range_female": "70 - 100 mg/dL",
+        "high_indication": "Diabetes mellitus, stress hyperglycemia, corticosteroids, pancreatitis, Cushing syndrome, acromegaly",
+        "low_indication": "Insulin/sulfonylurea excess, alcohol ingestion, insulinoma, adrenal insufficiency, liver failure, late sepsis"
+      },
+      {
+        "name": "Serum Osmolality",
+        "normal_range_male": "275 - 295 mOsm/kg",
+        "normal_range_female": "275 - 295 mOsm/kg",
+        "high_indication": "Hypernatremia, hyperglycemia, mannitol, diabetes insipidus, toxic alcohol ingestion (elevated osmolar gap)",
+        "low_indication": "Hypotonic hyponatremia, SIADH, primary polydipsia, overhydration"
+      }
+    ]
+  }
+]

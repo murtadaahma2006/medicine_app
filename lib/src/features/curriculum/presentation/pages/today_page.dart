@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -10,8 +11,11 @@ import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../../data/unit_repository.dart';
 import '../../domain/unit.dart';
+import 'concept_reader_page.dart';
 import 'reading_blocks_page.dart';
 import 'unit_screen.dart';
+import '../widgets/global_search_delegate.dart';
+import '../../../ai_chat/presentation/widgets/drug_reference_bottom_sheet.dart';
 
 /// شاشة «اليوم» — اللسان الأول: مركز الجلسة اليومية.
 ///
@@ -46,6 +50,9 @@ class _TodayPageState extends State<TodayPage> {
   int _xp = 0;
   int _completedLessons = 0;
   int _flashcardCount = 0;
+  
+  // سجلات المرضى
+  List<Map<String, dynamic>> _records = [];
 
   @override
   void initState() {
@@ -80,6 +87,7 @@ class _TodayPageState extends State<TodayPage> {
         db.rawCount(
           'SELECT COUNT(*) FROM ${DatabaseHelper.tableFlashcards}',
         ),
+        db.getPatientRecords(),
       ]);
 
       final List<Unit> units = results[0] as List<Unit>;
@@ -104,6 +112,7 @@ class _TodayPageState extends State<TodayPage> {
         _xp = motivation.totalXp;
         _completedLessons = motivation.completedLessons;
         _flashcardCount = results[4] as int;
+        _records = results[5] as List<Map<String, dynamic>>;
         _loading = false;
       });
     } catch (error) {
@@ -126,8 +135,10 @@ class _TodayPageState extends State<TodayPage> {
 
   @override
   Widget build(BuildContext context) {
-    final Brightness b = Theme.of(context).colorScheme.brightness;
+    final ColorScheme scheme = Theme.of(context).colorScheme;
+    final Brightness b = scheme.brightness;
 
+    // ── Loading / Error / Empty guards ────────────────────────────────────
     if (_loading) {
       return const Center(child: CircularProgressIndicator());
     }
@@ -139,146 +150,381 @@ class _TodayPageState extends State<TodayPage> {
         onAction: _load,
       );
     }
-    if (_goals == null) {
-      return const SizedBox.shrink();
-    }
+    if (_goals == null) return const SizedBox.shrink();
 
+    // ── Root: CustomScrollView — single scroll physics, zero nesting ──────
     return RefreshIndicator(
       onRefresh: _load,
-      child: ListView(
+      child: CustomScrollView(
         physics: const AlwaysScrollableScrollPhysics(),
-        padding: const EdgeInsets.symmetric(
-          horizontal: AppSpacing.xl,
-          vertical: AppSpacing.lg,
-        ),
-        children: <Widget>[
-          // ── ترحيب + السلسلة ──
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      _greeting,
-                      style: AppType.screenTitle.copyWith(
-                        color: AppColors.text(b),
+        slivers: <Widget>[
+
+          // ── Greeting header & search bar ──────────────────────────────
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: AppSpacing.xl,
+                right: AppSpacing.xl,
+                top: AppSpacing.lg,
+                bottom: AppSpacing.md,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              _greeting,
+                              style: AppType.screenTitle
+                                  .copyWith(color: AppColors.text(b)),
+                            ),
+                            const SizedBox(height: AppSpacing.xs),
+                            Text(
+                              'جاهز لجلستك اليومية؟',
+                              style: AppType.body.copyWith(
+                                  color: AppColors.textSecondary(b)),
+                            ),
+                          ],
+                        ),
+                      ),
+                      StreakChip(streak: _streak),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.xl),
+                  // Global search bar (fake TextField — opens delegate).
+                  GestureDetector(
+                    onTap: () => showSearch<void>(
+                      context: context,
+                      delegate: GlobalSearchDelegate(),
+                    ),
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+                      decoration: BoxDecoration(
+                        color: AppColors.surfaceAlt(b),
+                        borderRadius: BorderRadius.circular(AppRadius.field),
+                        border: Border.all(color: AppColors.border(b)),
+                      ),
+                      child: Row(
+                        children: <Widget>[
+                          Icon(Icons.search_rounded,
+                              color: AppColors.primary(b), size: 24),
+                          const SizedBox(width: AppSpacing.md),
+                          Text(
+                            'ابحث عن أي مصطلح طبي...',
+                            style: AppType.body.copyWith(
+                                color: AppColors.textSecondary(b),
+                                fontSize: 16),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: AppSpacing.xs),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          // ── Today Goal Card ───────────────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+            sliver: SliverToBoxAdapter(
+              child: _TodayGoalCard(
+                snapshot: _goals!,
+                onOpenLecture: _openUnit,
+                onOpenReviews: () => context.push(RoutePaths.dailyReview),
+              ),
+            ),
+          ),
+
+
+
+          // ── Continue-where-you-left-off card ─────────────────────────
+          if (_nextUnit != null)
+            SliverPadding(
+              padding: const EdgeInsets.only(
+                  left: AppSpacing.xl,
+                  right: AppSpacing.xl,
+                  top: AppSpacing.betweenCards),
+              sliver: SliverToBoxAdapter(
+                child: _ContinueCard(
+                  unit: _nextUnit!,
+                  onTap: () => _openReader(_nextUnit!),
+                ),
+              ),
+            ),
+
+          // ── Deep Reading Blocks ───────────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+                left: AppSpacing.xl,
+                right: AppSpacing.xl,
+                top: AppSpacing.betweenCards),
+            sliver: SliverToBoxAdapter(
+              child: _ReadingBlocksEntryCard(
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute<Widget>(
+                      builder: (_) => const ReadingBlocksPage()),
+                ),
+              ),
+            ),
+          ),
+
+          // ── Quick Clinical Tools ──────────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+                left: AppSpacing.xl,
+                right: AppSpacing.xl,
+                top: AppSpacing.betweenCards),
+            sliver: const SliverToBoxAdapter(
+              child: _QuickClinicalToolsSection(),
+            ),
+          ),
+
+          // ── Clinical Physiology Blocks ────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+                left: AppSpacing.xl,
+                right: AppSpacing.xl,
+                top: AppSpacing.betweenCards),
+            sliver: SliverToBoxAdapter(
+              child: _PhysiologyBlocksEntryCard(
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute<Widget>(
+                    builder: (_) =>
+                        const UnitScreen(unitId: 'l_physiology_clinical'),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // ── Patient Records header & "New Record" button ──────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+              left: AppSpacing.xl,
+              right: AppSpacing.xl,
+              top: AppSpacing.xxl,
+              bottom: AppSpacing.md,
+            ),
+            sliver: SliverToBoxAdapter(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'الردهات (سجلات المرضى)',
+                    style:
+                        AppType.cardTitle.copyWith(color: AppColors.text(b)),
+                  ),
+                  FilledButton.icon(
+                    onPressed: _showHistoryTypeSelector,
+                    icon: const Icon(Icons.add_rounded, size: 18),
+                    label: const Text('سجل جديد'),
+                    style: FilledButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.md),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          // ── Patient Records — empty state ─────────────────────────────
+          if (_records.isEmpty)
+            SliverPadding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+              sliver: SliverToBoxAdapter(
+                child: Container(
+                  padding: const EdgeInsets.all(AppSpacing.xl),
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceAlt(b),
+                    borderRadius: BorderRadius.circular(AppRadius.card),
+                    border: Border.all(color: AppColors.border(b)),
+                  ),
+                  child: Center(
+                    child: Column(
+                      children: <Widget>[
+                        Icon(Icons.folder_open_rounded,
+                            size: 48,
+                            color: AppColors.primary(b)
+                                .withValues(alpha: 0.5)),
+                        const SizedBox(height: AppSpacing.md),
+                        Text(
+                          'لا توجد سجلات حالياً',
+                          style: AppType.body.copyWith(
+                              color: AppColors.textSecondary(b)),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            )
+          // ── Patient Records — lazy list (no shrinkWrap, no NeverScroll) ─
+          else
+            SliverPadding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpacing.xl),
+              sliver: SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  (BuildContext context, int index) =>
+                      _buildRecordItem(context, _records[index], b, scheme),
+                  childCount: _records.length,
+                ),
+              ),
+            ),
+
+          // ── Stats strip ───────────────────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+              left: AppSpacing.xl,
+              right: AppSpacing.xl,
+              top: AppSpacing.xxxl,
+            ),
+            sliver: SliverToBoxAdapter(
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: StatTile(
+                          icon: Icons.bolt_rounded,
+                          value: '$_xp',
+                          label: 'نقطة خبرة',
+                          tint: AppColors.gold(b),
+                        ),
+                      ),
+                      const SizedBox(width: AppSpacing.md),
+                      Expanded(
+                        child: StatTile(
+                          icon: Icons.local_fire_department_rounded,
+                          value: '$_streak',
+                          label: 'أيام سلسلة',
+                          tint: AppColors.error(b),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpacing.md),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: StatTile(
+                          icon: Icons.check_circle_rounded,
+                          value: '$_completedLessons',
+                          label: 'شرحاً مكتمل',
+                          tint: AppColors.success(b),
+                        ),
+                      ),
+                      const SizedBox(width: AppSpacing.md),
+                      Expanded(
+                        child: StatTile(
+                          icon: Icons.style_rounded,
+                          value: '$_flashcardCount',
+                          label: 'بطاقة',
+                          tint: AppColors.primary(b),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          // ── Bottom breathing room ─────────────────────────────────────
+          const SliverToBoxAdapter(child: SizedBox(height: AppSpacing.xxxl)),
+        ],
+      ),
+    );
+  }
+
+  /// Builds a single patient-record card for the [SliverList].
+  Widget _buildRecordItem(
+    BuildContext context,
+    Map<String, dynamic> record,
+    Brightness b,
+    ColorScheme scheme,
+  ) {
+    final String alias = record['patient_alias'] as String;
+    final DateTime createdAt =
+        DateTime.parse(record['created_at'] as String).toLocal();
+
+    int answersCount = 0;
+    try {
+      final Map<String, dynamic> decoded =
+          jsonDecode(record['responses_json'] as String)
+              as Map<String, dynamic>;
+      answersCount = decoded.length;
+    } catch (_) {}
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpacing.sm),
+      child: AppCard(
+        padding: EdgeInsets.zero,
+        onTap: () => context.push(RoutePaths.recordDetails, extra: record),
+        child: ListTile(
+          contentPadding: const EdgeInsets.all(AppSpacing.md),
+          leading: CircleAvatar(
+            backgroundColor: scheme.primaryContainer,
+            child: Text(
+              alias.isNotEmpty ? alias[0].toUpperCase() : '؟',
+              style: TextStyle(
+                color: scheme.onPrimaryContainer,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          title: Text(
+            alias,
+            style:
+                const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+          ),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 8),
+            child: Wrap(
+              spacing: 12,
+              runSpacing: 4,
+              children: <Widget>[
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Icon(Icons.calendar_today,
+                        size: 14, color: AppColors.textSecondary(b)),
+                    const SizedBox(width: 4),
                     Text(
-                      'جاهز لجلستك اليومية؟',
-                      style: AppType.body
-                          .copyWith(color: AppColors.textSecondary(b)),
+                      '${createdAt.year}/${createdAt.month}/${createdAt.day} '
+                      '${createdAt.hour}:${createdAt.minute.toString().padLeft(2, '0')}',
+                      style:
+                          TextStyle(color: AppColors.textSecondary(b)),
                     ),
                   ],
                 ),
-              ),
-              StreakChip(streak: _streak),
-            ],
-          ),
-
-          const SizedBox(height: AppSpacing.xxl),
-
-          // ── بطاقة أهداف اليوم (المحاضرات المثبتة حصرياً) ──
-          _TodayGoalCard(
-            snapshot: _goals!,
-            onOpenLecture: _openUnit,
-            onOpenReviews: () => context.push(RoutePaths.dailyReview),
-          ),
-
-          const SizedBox(height: AppSpacing.betweenCards),
-
-          // ── شريط المراجعات الثانوي (SRS) — رقم بسيط منفصل عن الحلقة ──
-          _ReviewStrip(
-            dueCards: _goals!.dueCards,
-            onOpenReviews: () => context.push(RoutePaths.dailyReview),
-          ),
-
-          const SizedBox(height: AppSpacing.betweenCards),
-
-          // ── كتل القراءة العميقة (المقترح D) ──
-          _ReadingBlocksEntryCard(
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute<Widget>(
-                  builder: (_) => const ReadingBlocksPage(),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Icon(Icons.assignment,
+                        size: 14, color: AppColors.textSecondary(b)),
+                    const SizedBox(width: 4),
+                    Text(
+                      '$answersCount حقول',
+                      style:
+                          TextStyle(color: AppColors.textSecondary(b)),
+                    ),
+                  ],
                 ),
-              );
-            },
-          ),
-
-          const SizedBox(height: AppSpacing.betweenCards),
-
-          // ── كتل الفسيولوجيا السريرية ──
-          _PhysiologyBlocksEntryCard(
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute<Widget>(
-                  builder: (_) => const UnitScreen(unitId: 'l_physiology_clinical'),
-                ),
-              );
-            },
-          ),
-
-          const SizedBox(height: AppSpacing.betweenCards),
-
-          // ── تابع من حيث توقفت ──
-          if (_nextUnit != null)
-            _ContinueCard(
-              unit: _nextUnit!,
-              onTap: () => _openUnit(_nextUnit!),
+              ],
             ),
-
-          const SizedBox(height: AppSpacing.xxl),
-
-          // ── صف إحصاءات مصغر ──
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: StatTile(
-                  icon: Icons.bolt_rounded,
-                  value: '$_xp',
-                  label: 'نقطة خبرة',
-                  tint: AppColors.gold(b),
-                ),
-              ),
-              const SizedBox(width: AppSpacing.md),
-              Expanded(
-                child: StatTile(
-                  icon: Icons.local_fire_department_rounded,
-                  value: '$_streak',
-                  label: 'أيام سلسلة',
-                  tint: AppColors.error(b),
-                ),
-              ),
-            ],
           ),
-          const SizedBox(height: AppSpacing.md),
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: StatTile(
-                  icon: Icons.check_circle_rounded,
-                  value: '$_completedLessons',
-                  label: 'شرحاً مكتمل',
-                  tint: AppColors.success(b),
-                ),
-              ),
-              const SizedBox(width: AppSpacing.md),
-              Expanded(
-                child: StatTile(
-                  icon: Icons.style_rounded,
-                  value: '$_flashcardCount',
-                  label: 'بطاقة',
-                  tint: AppColors.primary(b),
-                ),
-              ),
-            ],
+          trailing: IconButton(
+            icon: const Icon(Icons.delete_outline, color: Colors.redAccent),
+            onPressed: () => _confirmDelete(record['id'] as int),
           ),
-
-          const SizedBox(height: AppSpacing.xxxl),
-        ],
+        ),
       ),
     );
   }
@@ -290,6 +536,120 @@ class _TodayPageState extends State<TodayPage> {
       builder: (_) => UnitScreen(unitId: unit.id),
     ));
     if (mounted) await _load();
+  }
+
+  /// يفتح قارئ الشروحات مباشرة (لمتابعة القراءة من حيث توقفت).
+  Future<void> _openReader(Unit unit) async {
+    await Navigator.of(context).push(MaterialPageRoute<Widget>(
+      builder: (_) => ConceptReaderPage(unitId: unit.id),
+    ));
+    if (mounted) await _load();
+  }
+
+  void _showHistoryTypeSelector() {
+    showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (BuildContext context) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24.0, horizontal: 16.0),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text(
+                  'اختر نوع السجل',
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 24),
+                ElevatedButton.icon(
+                  onPressed: () async {
+                    Navigator.pop(context);
+                    await context.push(RoutePaths.activeHistory, extra: 'assets/data/history_template.json');
+                    if (mounted) await _load();
+                  },
+                  icon: const Icon(Icons.edit_document, size: 28),
+                  label: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    child: Text('سجل شامل (ردهات)', style: TextStyle(fontSize: 16)),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    alignment: Alignment.centerRight,
+                    backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+                    foregroundColor: Theme.of(context).colorScheme.onPrimaryContainer,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton.icon(
+                  onPressed: () async {
+                    Navigator.pop(context);
+                    await context.push(RoutePaths.activeHistory, extra: 'assets/data/basic_history_template.json');
+                    if (mounted) await _load();
+                  },
+                  icon: const Icon(Icons.flash_on, size: 28),
+                  label: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    child: Text('سجل موجز (عيادة)', style: TextStyle(fontSize: 16)),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    alignment: Alignment.centerRight,
+                    backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
+                    foregroundColor: Theme.of(context).colorScheme.onSecondaryContainer,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton.icon(
+                  onPressed: () async {
+                    Navigator.pop(context);
+                    await context.push(RoutePaths.smartGuide);
+                  },
+                  icon: const Icon(Icons.lightbulb, size: 28),
+                  label: const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16.0),
+                    child: Text('الموجه الذكي (AI Guide)', style: TextStyle(fontSize: 16)),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    alignment: Alignment.centerRight,
+                    backgroundColor: Theme.of(context).colorScheme.tertiaryContainer,
+                    foregroundColor: Theme.of(context).colorScheme.onTertiaryContainer,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> _confirmDelete(int id) async {
+    final bool? confirm = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext context) => AlertDialog(
+        title: const Text('حذف السجل'),
+        content: const Text('هل أنت متأكد من حذف هذا السجل؟'),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('إلغاء'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            style: TextButton.styleFrom(foregroundColor: Colors.red),
+            child: const Text('حذف'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm == true) {
+      await DatabaseHelper.instance.deletePatientRecord(id);
+      if (mounted) await _load();
+    }
   }
 }
 
@@ -486,61 +846,7 @@ class _TodayGoalCardState extends State<_TodayGoalCard>
   }
 }
 
-/// شريط المراجعات الثانوي (Decoupling) — البطاقات المستحقة عرض
-/// منفصل أسفل بطاقة الأهداف: رقم بسيط بلا نسبة ولا تأثير على الحلقة.
-/// صفر → «لا توجد مراجعات حالياً» بلا نقرة. أكثر → نقرة تفتح
-/// جلسة المراجعة اليومية.
-class _ReviewStrip extends StatelessWidget {
-  const _ReviewStrip({
-    required this.dueCards,
-    required this.onOpenReviews,
-  });
 
-  final int dueCards;
-
-  final VoidCallback onOpenReviews;
-
-  @override
-  Widget build(BuildContext context) {
-    final Brightness b = Theme.of(context).colorScheme.brightness;
-    final bool hasDue = dueCards > 0;
-    final Color accent = hasDue ? AppColors.gold(b) : AppColors.success(b);
-
-    return AppCard(
-      onTap: hasDue ? onOpenReviews : null,
-      child: Row(
-        children: <Widget>[
-          Icon(
-            hasDue
-                ? Icons.style_rounded
-                : Icons.check_circle_outline_rounded,
-            size: 22,
-            color: accent,
-          ),
-          const SizedBox(width: AppSpacing.md),
-          Expanded(
-            child: Text(
-              hasDue
-                  ? 'بطاقات مستحقة للمراجعة: $dueCards'
-                  : 'لا توجد مراجعات حالياً',
-              style: AppType.body.copyWith(
-                fontSize: 13.5,
-                fontWeight: FontWeight.w600,
-                color: hasDue ? AppColors.text(b) : AppColors.textSecondary(b),
-              ),
-            ),
-          ),
-          if (hasDue)
-            Icon(
-              Icons.chevron_left_rounded,
-              size: 18,
-              color: AppColors.textSecondary(b),
-            ),
-        ],
-      ),
-    );
-  }
-}
 
 /// صف هدف واحد في بطاقة أهداف اليوم — محاضرة مثبتة باسمها وحالة
 /// إتمامها. (البطاقات المستحقة انتقلت لشريط _ReviewStrip المنفصل.)
@@ -764,6 +1070,104 @@ class _ContinueCard extends StatelessWidget {
           ),
           Icon(Icons.chevron_left_rounded, color: AppColors.textSecondary(b)),
         ],
+      ),
+    );
+  }
+}
+
+/// قسم الأدوات السريرية السريعة (Quick Clinical Tools)
+class _QuickClinicalToolsSection extends StatelessWidget {
+  const _QuickClinicalToolsSection();
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+          child: Text(
+            'أدوات سريرية سريعة',
+            style: AppType.cardTitle.copyWith(color: AppColors.text(b)),
+          ),
+        ),
+        Row(
+          children: <Widget>[
+            Expanded(
+              child: _ClinicalToolCard(
+                title: 'حاسبات طبية',
+                icon: Icons.calculate_rounded,
+                color: Theme.of(context).colorScheme.primary,
+                onTap: () => context.push('/clinical-tools/calculators'),
+              ),
+            ),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+              child: _ClinicalToolCard(
+                title: 'القيم المخبرية',
+                icon: Icons.science_rounded,
+                color: Theme.of(context).colorScheme.secondary,
+                onTap: () => context.push('/clinical-tools/lab-values'),
+              ),
+            ),
+            const SizedBox(width: AppSpacing.sm),
+            Expanded(
+              child: _ClinicalToolCard(
+                title: 'دليل الأدوية',
+                icon: Icons.medical_information_rounded,
+                color: const Color(0xFF009688), // Teal medical accent
+                onTap: () => DrugReferenceBottomSheet.show(context),
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _ClinicalToolCard extends StatelessWidget {
+  const _ClinicalToolCard({
+    required this.title,
+    required this.icon,
+    required this.color,
+    required this.onTap,
+  });
+
+  final String title;
+  final IconData icon;
+  final Color color;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(AppRadius.card),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: AppSpacing.lg, horizontal: AppSpacing.md),
+        decoration: BoxDecoration(
+          color: color.withValues(alpha: 0.1),
+          borderRadius: BorderRadius.circular(AppRadius.card),
+          border: Border.all(color: color.withValues(alpha: 0.2)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Icon(icon, size: 28, color: color),
+            const SizedBox(height: AppSpacing.sm),
+            Text(
+              title,
+              style: AppType.body.copyWith(
+                fontWeight: FontWeight.w700,
+                color: AppColors.text(b),
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }

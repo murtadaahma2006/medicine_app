@@ -8,13 +8,17 @@ import '../features/dev/brand_preview_page.dart';
 import '../features/dev/error_log_page.dart';
 import '../features/dev/style_preview_page.dart';
 import '../features/history/presentation/pages/active_history_screen.dart';
-import '../features/history/presentation/pages/patient_records_screen.dart';
 import '../features/history/presentation/pages/record_details_screen.dart';
+import '../features/history/presentation/pages/smart_guide_screen.dart';
 import '../features/progress/presentation/pages/progress_page.dart';
 import '../features/settings/presentation/pages/reminder_page.dart';
 import '../features/settings/presentation/pages/settings_page.dart';
 import '../features/splash/presentation/pages/splash_page.dart';
 import '../features/welcome/presentation/pages/welcome_page.dart';
+
+// Clinical Tools
+import '../features/clinical_tools/presentation/pages/lab_values_screen.dart';
+import '../features/clinical_tools/presentation/pages/medical_calculators_screen.dart';
 
 /// مسارات التطبيق — مصدر الحقيقة الوحيد لأسماء المسارات.
 abstract final class RoutePaths {
@@ -29,6 +33,10 @@ abstract final class RoutePaths {
   static const String historyDashboard = '/history';
   static const String activeHistory = '/history/active';
   static const String recordDetails = '/history/record';
+  static const String smartGuide = '/history/smart-guide';
+  // Clinical Tools
+  static const String labValues = '/clinical-tools/lab-values';
+  static const String calculators = '/clinical-tools/calculators';
   // debug فقط — سجل الأخطاء ومعاينة الهوية ودليل التصميم
   static const String devErrorLog = '/dev/error-log';
   static const String devBrandPreview = '/dev/brand_preview';
@@ -120,11 +128,6 @@ final GoRouter appRouter = GoRouter(
     ),
     // ─── History Module ───
     GoRoute(
-      path: RoutePaths.historyDashboard,
-      pageBuilder: (BuildContext context, GoRouterState state) =>
-          fadeThroughPage(child: const PatientRecordsScreen()),
-    ),
-    GoRoute(
       path: RoutePaths.activeHistory,
       pageBuilder: (BuildContext context, GoRouterState state) {
         final String templatePath = state.extra as String? ?? 'assets/data/history_template.json';
@@ -137,6 +140,22 @@ final GoRouter appRouter = GoRouter(
         final Map<String, dynamic> record = state.extra! as Map<String, dynamic>;
         return fadeThroughPage(child: RecordDetailsScreen(record: record));
       },
+    ),
+    GoRoute(
+      path: RoutePaths.smartGuide,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          fadeThroughPage(child: const SmartGuideScreen()),
+    ),
+    // ─── Clinical Tools ───
+    GoRoute(
+      path: RoutePaths.labValues,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          fadeThroughPage(child: const LabValuesScreen()),
+    ),
+    GoRoute(
+      path: RoutePaths.calculators,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          fadeThroughPage(child: const MedicalCalculatorsScreen()),
     ),
     // ─── debug فقط: سجل الأخطاء والمعاينة البصرية ───
     GoRoute(

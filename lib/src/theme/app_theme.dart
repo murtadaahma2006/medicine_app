@@ -1,3 +1,4 @@
+import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 
 import 'app_colors.dart' show AppTypography;
@@ -97,6 +98,20 @@ abstract final class AppTheme {
       textTheme: AppTypography.buildTextTheme(brightness),
       scaffoldBackgroundColor: background,
       fontFamily: AppType.arabicFamily,
+      
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: <TargetPlatform, PageTransitionsBuilder>{
+          TargetPlatform.android: SharedAxisPageTransitionsBuilder(
+            transitionType: SharedAxisTransitionType.scaled,
+          ),
+          TargetPlatform.iOS: SharedAxisPageTransitionsBuilder(
+            transitionType: SharedAxisTransitionType.scaled,
+          ),
+          TargetPlatform.macOS: SharedAxisPageTransitionsBuilder(
+            transitionType: SharedAxisTransitionType.scaled,
+          ),
+        },
+      ),
       
       // إزالة التأثيرات الدائرية (Ripple/Splash) المزعجة خصوصاً من أشرطة التنقل
       splashColor: Colors.transparent,
