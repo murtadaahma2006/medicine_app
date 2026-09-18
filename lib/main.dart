@@ -22,9 +22,12 @@ Future<void> main() async {
   await AppIllustration.initManifest();
 
   // تجربة استخدام عمودية فقط — نمط مناسب لتطبيق تعليمي على الهاتف.
+  // السماح بالوضع الأفقي والعمودي ليتناسب مع شاشة الآيباد في المستشفى
   await SystemChrome.setPreferredOrientations(<DeviceOrientation>[
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
   ]);
 
   // شاشة خطأ ذكية: في debug تبقى الشاشة الحمراء الافتراضية (ليراها المطور)،
