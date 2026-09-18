@@ -10,21 +10,31 @@ workflows:
     scripts:
       - name: Get Flutter packages
         script: flutter packages pub get
+        
       - name: Build unsigned iOS app
-        script: flutter build ios --release --no-codesign
+        script: |
+          # إجبار بيئة Xcode على تخطي التوقيع بالكامل
+          export CODE_SIGNING_ALLOWED=NO
+          export CODE_SIGNING_REQUIRED=NO
+          export CODE_SIGN_IDENTITY=""
+          
+          # البناء بنسخة الريليز بدون توقيع
+          flutter build ios --release --no-codesign
+          
       - name: Package to IPA
         script: |
-          # Go to the directory where Runner.app is generated
+          # الانتقال لمسار بناء التطبيق
           cd build/ios/iphoneos
           
-          # Create the required Payload folder structure for an IPA
+          # إنشاء مجلد Payload المطلوب لصيغة IPA
           mkdir -p Payload
           mv Runner.app Payload/
           
-          # Compress the Payload directory into an .ipa file and place it in the root build dir
+          # ضغط الملف ونقله للمسار الرئيسي للمشروع
           zip -qr ../../../medicine_app.ipa Payload
           
-          # Clean up the Payload folder
+          # تنظيف الملفات المؤقتة
           rm -rf Payload
+          
     artifacts:
       - medicine_app.ipa
