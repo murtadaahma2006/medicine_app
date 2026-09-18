@@ -11,29 +11,27 @@ workflows:
       - name: Get Flutter packages
         script: flutter packages pub get
         
-      - name: Build unsigned iOS app
+      - name: Force Disable iOS Code Signing (Patching Xcode)
         script: |
-          # إجبار بيئة Xcode على تخطي التوقيع بالكامل
-          export CODE_SIGNING_ALLOWED=NO
-          export CODE_SIGNING_REQUIRED=NO
-          export CODE_SIGN_IDENTITY=""
+          # 1. حقن أوامر إيقاف التوقيع مباشرة في ملفات إعدادات فلاتر
+          echo "CODE_SIGNING_REQUIRED = NO" >> ios/Flutter/Release.xcconfig
+          echo "CODE_SIGNING_ALLOWED = NO" >> ios/Flutter/Release.xcconfig
+          echo "CODE_SIGN_IDENTITY = \"\"" >> ios/Flutter/Release.xcconfig
+          echo "EXPANDED_CODE_SIGN_IDENTITY = \"\"" >> ios/Flutter/Release.xcconfig
           
-          # البناء بنسخة الريليز بدون توقيع
-          flutter build ios --release --no-codesign
+          # 2. تعديل ملف مشروع Xcode برمجياً لتحويل التوقيع من تلقائي إلى يدوي وتفريغه
+          sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' ios/Runner.xcodeproj/project.pbxproj
+          sed -i '' 's/CODE_SIGNING_REQUIRED = YES;/CODE_SIGNING_REQUIRED = NO;/g' ios/Runner.xcodeproj/project.pbxproj
           
+      - name: Build unsigned iOS app
+        script: flutter build ios --release --no-codesign
+        
       - name: Package to IPA
         script: |
-          # الانتقال لمسار بناء التطبيق
           cd build/ios/iphoneos
-          
-          # إنشاء مجلد Payload المطلوب لصيغة IPA
           mkdir -p Payload
           mv Runner.app Payload/
-          
-          # ضغط الملف ونقله للمسار الرئيسي للمشروع
           zip -qr ../../../medicine_app.ipa Payload
-          
-          # تنظيف الملفات المؤقتة
           rm -rf Payload
           
     artifacts:
