@@ -1,0 +1,5 @@
+158:   final GlobalKey<SidekickChatPanelState> _chatKey =
+1271:                                               key: _chatKey,
+1423:                         onExplainText: _explainSelectedText,
+1483:   void _explainSelectedText(String text) {
+1490:         _chatKey.currentState?.addUserMessage(text);

@@ -1,0 +1,7 @@
+158:   final GlobalKey<SidekickChatPanelState> _chatKey =
+159:       GlobalKey<SidekickChatPanelState>();
+517:     await showModalBottomSheet<void>(
+1270:                                           ? SidekickChatPanel(
+1500:     showModalBottomSheet<void>(
+1521:             child: SidekickChatPanel(
+1963:   showModalBottomSheet<void>(

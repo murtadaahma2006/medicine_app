@@ -14,7 +14,6 @@ import '../../../../core/database/xp_event.dart';
 import '../../../../core/motivation/celebration_queue.dart';
 import '../../../../core/notifications/pin_expiry_service.dart';
 import '../../../../core/profile/learner_profile.dart';
-import '../../../../core/services/ai_service.dart';
 import '../../../../core/utils/error_logger.dart';
 import '../../../../core/utils/responsive_layout.dart';
 import '../../../../core/widget/home_widget_service.dart';
@@ -26,6 +25,7 @@ import '../widgets/fixation_spans.dart';
 import '../widgets/inline_note_spans.dart';
 import '../widgets/interception_sheet.dart';
 import '../widgets/session_guard.dart';
+import '../widgets/sidekick_chat_panel.dart';
 
 /// ─────────────────────────────────────────────────────────────────────
 /// قارئ الشروحات — نسخة «اللقطات» (Chunked Reading) — محرّك القراءة
@@ -152,6 +152,13 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
   
   bool _didResumeSession = false;
   bool _didJumpFromSearch = false;
+
+  // ── Sidekick AI Chat (v28) ──
+  bool _isChatOpen = false;
+  double _chatWidth = 350.0;
+  bool _isDraggingChat = false;
+  final GlobalKey<SidekickChatPanelState> _chatKey =
+      GlobalKey<SidekickChatPanelState>();
 
   final FlutterTts flutterTts = FlutterTts();
   TtsState _ttsState = TtsState.stopped;
@@ -1118,7 +1125,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
       );
     }
     _confettiController.play();
-    await Future.delayed(const Duration(seconds: 2));
+    await Future<void>.delayed(const Duration(seconds: 2));
     if (mounted) Navigator.of(context).pop();
   }
 
@@ -1196,6 +1203,34 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                 }
               },
             ),
+            // ── زر Sidekick AI ──
+            IconButton(
+              icon: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                transitionBuilder: (Widget child, Animation<double> anim) =>
+                    ScaleTransition(scale: anim, child: child),
+                child: Icon(
+                  _isChatOpen
+                      ? Icons.auto_awesome
+                      : Icons.auto_awesome_outlined,
+                  key: ValueKey<bool>(_isChatOpen),
+                  color: _isChatOpen
+                      ? Theme.of(context).colorScheme.primary
+                      : null,
+                ),
+              ),
+              tooltip: 'المساعد الذكي',
+              onPressed: () {
+                final bool isLandscape =
+                    MediaQuery.orientationOf(context) ==
+                        Orientation.landscape;
+                if (isLandscape) {
+                  setState(() => _isChatOpen = !_isChatOpen);
+                } else {
+                  _showChatBottomSheet();
+                }
+              },
+            ),
           ],
         ),
         body: Stack(
@@ -1215,11 +1250,74 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                             title: 'لا شروحات في هذه المحاضرة',
                             subtitle: 'ستظهر هنا متى توفر المحتوى',
                           )
-                        : Column(
-                            children: [
-                              _buildTtsSettingsBar(b),
-                              Expanded(child: _buildShotView(context)),
-                            ],
+                        : OrientationBuilder(
+                            builder: (BuildContext ctx, Orientation orientation) {
+                              final Widget lectureColumn = Column(
+                                children: [
+                                  _buildTtsSettingsBar(b),
+                                  Expanded(child: _buildShotView(context)),
+                                ],
+                              );
+
+                              if (orientation == Orientation.landscape) {
+                                final double maxChatWidth = MediaQuery.of(context).size.width * 0.5;
+                                final double minChatWidth = 300.0;
+                                
+                                // ── Landscape: Row مع لوحة Sidekick جانبية ──
+                                return Row(
+                                  children: <Widget>[
+                                    Expanded(child: lectureColumn),
+                                    if (_isChatOpen)
+                                      GestureDetector(
+                                        onPanStart: (_) => setState(() => _isDraggingChat = true),
+                                        onPanEnd: (_) => setState(() => _isDraggingChat = false),
+                                        onPanCancel: () => setState(() => _isDraggingChat = false),
+                                        onPanUpdate: (DragUpdateDetails details) {
+                                          setState(() {
+                                            _chatWidth = (_chatWidth - details.delta.dx)
+                                                .clamp(minChatWidth, maxChatWidth);
+                                          });
+                                        },
+                                        child: MouseRegion(
+                                          cursor: SystemMouseCursors.resizeLeftRight,
+                                          child: Container(
+                                            width: 12,
+                                            color: Colors.transparent,
+                                            alignment: Alignment.center,
+                                            child: Container(
+                                              width: 4,
+                                              height: 40,
+                                              decoration: BoxDecoration(
+                                                color: Theme.of(context).colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
+                                                borderRadius: BorderRadius.circular(2),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    AnimatedContainer(
+                                      duration: _isDraggingChat 
+                                          ? Duration.zero 
+                                          : const Duration(milliseconds: 300),
+                                      curve: Curves.easeOutCubic,
+                                      width: _isChatOpen ? _chatWidth : 0,
+                                      child: _isChatOpen
+                                          ? SidekickChatPanel(
+                                              key: _chatKey,
+                                              unitId: widget.unitId,
+                                              unitTitle: _unitTitle,
+                                              onClose: () =>
+                                                  setState(() => _isChatOpen = false),
+                                            )
+                                          : const SizedBox.shrink(),
+                                    ),
+                                  ],
+                                );
+                              }
+
+                              // ── Portrait: المحتوى كاملاً — الشات عبر BottomSheet ──
+                              return lectureColumn;
+                            },
                           ),
             Align(
               alignment: Alignment.topCenter,
@@ -1357,6 +1455,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                         },
                         onTapNote: _onTapInlineNote,
                         onSelectionChanged: _onSelectionChanged,
+                        onExplainText: _explainSelectedText,
                       ),
                     ),
                   ),
@@ -1411,6 +1510,68 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
         ),
       );
   }
+
+  // ── Sidekick AI Chat — التفاعل (v28) ───────────────────────────
+
+  /// يُفعَّل من قائمة تحديد النص «🤖 شرح ذكي» — يفتح اللوحة
+  /// ويحقن النص المحدَّد كرسالة مستخدم تلقائياً.
+  void _explainSelectedText(String text) {
+    final bool isLandscape =
+        MediaQuery.orientationOf(context) == Orientation.landscape;
+    if (isLandscape) {
+      if (!_isChatOpen) setState(() => _isChatOpen = true);
+    } else {
+      _showChatBottomSheet();
+    }
+    
+    Future.delayed(const Duration(milliseconds: 100), () {
+      _chatKey.currentState?.injectAndExplain(text);
+    });
+  }
+
+  /// يفتح لوحة Sidekick كقائمة سفلية قابلة للسحب (portrait).
+  void _showChatBottomSheet() {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (BuildContext ctx) => Padding(
+        padding: EdgeInsets.only(
+          bottom: MediaQuery.of(ctx).viewInsets.bottom,
+        ),
+        child: DraggableScrollableSheet(
+          initialChildSize: 0.6,
+          minChildSize: 0.3,
+          maxChildSize: 0.85,
+          builder: (BuildContext sheetCtx, ScrollController scrollController) =>
+              Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface(b),
+            borderRadius: const BorderRadius.vertical(
+              top: Radius.circular(AppRadius.sheet),
+            ),
+          ),
+          child: ClipRRect(
+            borderRadius: const BorderRadius.vertical(
+              top: Radius.circular(AppRadius.sheet),
+            ),
+            child: SafeArea(
+              bottom: true,
+              top: false,
+              child: SidekickChatPanel(
+                key: _chatKey,
+                unitId: widget.unitId,
+                unitTitle: _unitTitle,
+                onClose: () => Navigator.pop(ctx),
+              ),
+            ),
+          ),
+        ),
+      ),
+      ),
+    );
+  }
 }
 
 /// محتوى لقطة واحدة — مع التمييز الكهرماني عند «هنا كان خطؤك».
@@ -1431,6 +1592,7 @@ class _ShotContent extends StatelessWidget {
     this.onAddNote,
     this.onTapNote,
     this.onSelectionChanged,
+    this.onExplainText,
     this.spokenWord,
     this.spokenWordOccurrence,
   });
@@ -1460,6 +1622,9 @@ class _ShotContent extends StatelessWidget {
   
   final String? spokenWord;
   final int? spokenWordOccurrence;
+
+  /// Sidekick AI: تحديد نص → شرح ذكي — مرفوع من الصفحة (v28).
+  final ValueChanged<String>? onExplainText;
 
   @override
   Widget build(BuildContext context) {
@@ -1652,7 +1817,7 @@ class _ShotContent extends StatelessWidget {
                         );
                         
                         if (selectedString.trim().isNotEmpty) {
-                          _showAIExplainSheet(context, selectedString);
+                          onExplainText?.call(selectedString);
                         }
                       },
                     ),
@@ -1838,7 +2003,7 @@ class _ShotContent extends StatelessWidget {
 Future<void> _showTranslationSheet(BuildContext context, String textToTranslate) async {
   final Brightness b = Theme.of(context).colorScheme.brightness;
   
-  showModalBottomSheet<void>(
+  await showModalBottomSheet<void>(
     context: context,
     isScrollControlled: true,
     backgroundColor: AppColors.surface(b),
@@ -1907,7 +2072,7 @@ Future<void> _showTranslationSheet(BuildContext context, String textToTranslate)
                 }
                 if (snapshot.hasError) {
                   return Padding(
-                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    padding: EdgeInsets.all(AppSpacing.lg),
                     child: Center(
                       child: Text(
                         'تعذّر الاتصال بخدمة الترجمة. تأكد من اتصالك بالإنترنت.',
@@ -1941,161 +2106,6 @@ Future<void> _showTranslationSheet(BuildContext context, String textToTranslate)
             ),
           ],
         ),
-      );
-    },
-  );
-}
-
-/// ── الشرح الذكي (AI) ──
-Future<void> _showAIExplainSheet(BuildContext context, String textToExplain) async {
-  final Brightness b = Theme.of(context).colorScheme.brightness;
-  
-  showModalBottomSheet<void>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: AppColors.surface(b),
-    shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadius.card)),
-    ),
-    builder: (BuildContext ctx) {
-      bool isRequested = false;
-      bool isLoading = true;
-      String? explanationResult;
-      String? errorMessage;
-
-      return StatefulBuilder(
-        builder: (BuildContext context, StateSetter setState) {
-          if (!isRequested) {
-            isRequested = true;
-            AIService.explainMedicalText(textToExplain).then((result) {
-              setState(() {
-                if (result != null && result.isNotEmpty) {
-                  explanationResult = result;
-                } else {
-                  errorMessage = 'فشل الحصول على الشرح. يرجى التحقق من إعدادات الذكاء الاصطناعي.';
-                }
-                isLoading = false;
-              });
-            }).catchError((e) {
-              setState(() {
-                errorMessage = 'حدث خطأ غير متوقع: $e';
-                isLoading = false;
-              });
-            });
-          }
-
-          return Padding(
-            padding: EdgeInsets.only(
-              left: AppSpacing.xl,
-              right: AppSpacing.xl,
-              top: AppSpacing.lg,
-              bottom: MediaQuery.paddingOf(ctx).bottom + AppSpacing.xl,
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: AppColors.border(b),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: AppSpacing.lg),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.auto_awesome_rounded, color: AppColors.gold(b)),
-                    const SizedBox(width: AppSpacing.sm),
-                    Text(
-                      'شرح ذكي',
-                      textAlign: TextAlign.center,
-                      style: AppType.cardTitle.copyWith(color: AppColors.text(b)),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: AppSpacing.xl),
-                
-                // النص الأصلي
-                Container(
-                  padding: const EdgeInsets.all(AppSpacing.md),
-                  decoration: BoxDecoration(
-                    color: AppColors.surfaceAlt(b),
-                    borderRadius: BorderRadius.circular(AppRadius.field),
-                    border: Border.all(color: AppColors.border(b)),
-                  ),
-                  child: Text(
-                    textToExplain,
-                    textDirection: TextDirection.ltr,
-                    textAlign: TextAlign.left,
-                    style: AppType.body.copyWith(
-                      fontSize: 13,
-                      color: AppColors.textSecondary(b),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: AppSpacing.lg),
-                
-                // حالة التحميل
-                if (isLoading)
-                  Padding(
-                    padding: const EdgeInsets.all(AppSpacing.xl),
-                    child: Column(
-                      children: [
-                        const CircularProgressIndicator(),
-                        const SizedBox(height: AppSpacing.md),
-                        Text(
-                          'يجري تحليل النص السريري...',
-                          style: AppType.body.copyWith(color: AppColors.textSecondary(b)),
-                        ),
-                      ],
-                    ),
-                  ),
-                
-                // حالة الخطأ
-                if (errorMessage != null)
-                  Padding(
-                    padding: const EdgeInsets.all(AppSpacing.lg),
-                    child: Center(
-                      child: Text(
-                        errorMessage!,
-                        textAlign: TextAlign.center,
-                        style: AppType.body.copyWith(color: AppColors.error(b)),
-                      ),
-                    ),
-                  ),
-                
-                // حالة النتيجة
-                if (explanationResult != null)
-                  Flexible(
-                    child: SingleChildScrollView(
-                      child: Container(
-                        padding: const EdgeInsets.all(AppSpacing.md),
-                        decoration: BoxDecoration(
-                          color: AppColors.primaryTint(b),
-                          borderRadius: BorderRadius.circular(AppRadius.field),
-                          border: Border.all(color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.3)),
-                        ),
-                        child: Text(
-                          explanationResult!,
-                          textDirection: TextDirection.rtl,
-                          textAlign: TextAlign.start,
-                          style: AppType.body.copyWith(
-                            fontSize: 15,
-                            color: AppColors.text(b),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
-          );
-        },
       );
     },
   );

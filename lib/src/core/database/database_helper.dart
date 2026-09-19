@@ -54,7 +54,9 @@ class DatabaseHelper {
   // ── v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي ──
   //         ai_explanations_cache: تخزين شروحات النصوص المحددة
   //         لتجنب استدعاءات API متكررة لنفس النص.
-  static const int databaseVersion = 27;
+  // ── v28: محادثات Sidekick الذكية لكل محاضرة ──
+  // ── v29: إضافة quoted_text لدعم الاقتباسات في Sidekick ──
+  static const int databaseVersion = 29;
   // ── جداول المحتوى الطبي ──
   static const String tableUnits = 'units';
   static const String tableConcepts = 'concepts';
@@ -102,6 +104,9 @@ class DatabaseHelper {
 
   // ── v27: ذاكرة التخزين المؤقت لشروحات الذكاء الاصطناعي ──
   static const String tableAiExplanationsCache = 'ai_explanations_cache';
+
+  // ── v28: محادثات Sidekick الذكية لكل محاضرة ──
+  static const String tableLectureChats = 'lecture_chats';
 
   /// أنواع أحداث XP المسموحة في قيد CHECK — مصدر الحقيقة الوحيد.
   static const List<String> xpEventKinds = <String>[
@@ -525,6 +530,26 @@ class DatabaseHelper {
       'ON $tableAiExplanationsCache(original_text)',
     );
 
+    // v28: محادثات Sidekick الذكية لكل محاضرة
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableLectureChats (
+        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+        lecture_id  TEXT NOT NULL,
+        role        TEXT NOT NULL CHECK (role IN ('user','assistant')),
+        content     TEXT NOT NULL,
+        quoted_text TEXT,
+        timestamp   INTEGER NOT NULL
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_lecture_chats_time '
+      'ON $tableLectureChats(timestamp)',
+    );
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_lecture_chats_lecture '
+      'ON $tableLectureChats(lecture_id)',
+    );
+
     await batch.commit(noResult: true);
   }
 
@@ -874,6 +899,32 @@ class DatabaseHelper {
         'CREATE INDEX IF NOT EXISTS idx_ai_cache_text '
         'ON $tableAiExplanationsCache(original_text)',
       );
+    }
+    if (oldV < 28) {
+      // v28: محادثات Sidekick الذكية لكل محاضرة
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableLectureChats (
+          id          INTEGER PRIMARY KEY AUTOINCREMENT,
+          lecture_id  TEXT NOT NULL,
+          role        TEXT NOT NULL CHECK (role IN ('user','assistant')),
+          content     TEXT NOT NULL,
+          timestamp   INTEGER NOT NULL
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_lecture_chats_time '
+        'ON $tableLectureChats(timestamp)',
+      );
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_lecture_chats_lecture '
+        'ON $tableLectureChats(lecture_id)',
+      );
+    }
+    if (oldV < 29) {
+      // v29: إضافة عمود النص المقتبس إلى جدول محادثات المحاضرات.
+      try {
+        await db.execute('ALTER TABLE $tableLectureChats ADD COLUMN quoted_text TEXT');
+      } catch (_) {}
     }
   }
 
@@ -2751,6 +2802,44 @@ class DatabaseHelper {
         'cached_at': DateTime.now().toUtc().toIso8601String(),
       },
       conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  // ── v28: دوال محادثات Sidekick لكل محاضرة ──
+
+  /// استرجاع تاريخ المحادثة مع Sidekick لمحاضرة محددة.
+  Future<List<Map<String, dynamic>>> getLectureChatHistory(String lectureId) async {
+    final Database db = await database;
+    return db.query(
+      tableLectureChats,
+      where: 'lecture_id = ?',
+      whereArgs: <Object?>[lectureId],
+      orderBy: 'timestamp ASC',
+    );
+  }
+
+  /// إضافة رسالة جديدة إلى محادثة Sidekick في محاضرة محددة.
+  Future<void> insertLectureChatMessage(String lectureId, String role, String content, {String? quotedText}) async {
+    final Database db = await database;
+    await db.insert(
+      tableLectureChats,
+      <String, Object?>{
+        'lecture_id': lectureId,
+        'role': role,
+        'content': content,
+        'quoted_text': quotedText,
+        'timestamp': DateTime.now().millisecondsSinceEpoch,
+      },
+    );
+  }
+
+  /// مسح محادثة Sidekick لمحاضرة محددة.
+  Future<void> clearLectureChatHistory(String lectureId) async {
+    final Database db = await database;
+    await db.delete(
+      tableLectureChats,
+      where: 'lecture_id = ?',
+      whereArgs: <Object?>[lectureId],
     );
   }
 
