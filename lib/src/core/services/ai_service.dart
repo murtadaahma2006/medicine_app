@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import '../database/database_helper.dart';
+import '../models/ai_provider.dart';
 import '../utils/ai_constants.dart';
 
 class AIService {
@@ -141,13 +142,22 @@ class AIService {
   }
 
   /// Sends a streaming request to the AI provider.
-  static Stream<String> generateChatStream(List<Map<String, dynamic>> messages) async* {
+  static Stream<String> generateChatStream(List<Map<String, dynamic>> messages, {AiProvider? provider}) async* {
     try {
-      final Map<String, String> credentials = await _getAICredentials();
-      
-      final String baseUrl = credentials['baseUrl']!;
-      final String apiKey = credentials['apiKey']!;
-      final String model = credentials['model']!;
+      final String baseUrl;
+      final String apiKey;
+      final String model;
+
+      if (provider != null) {
+        baseUrl = provider.baseUrl;
+        apiKey = provider.apiKey;
+        model = provider.modelName;
+      } else {
+        final Map<String, String> credentials = await _getAICredentials();
+        baseUrl = credentials['baseUrl']!;
+        apiKey = credentials['apiKey']!;
+        model = credentials['model']!;
+      }
 
       final String formattedBaseUrl = baseUrl.endsWith('/') 
           ? baseUrl.substring(0, baseUrl.length - 1) 

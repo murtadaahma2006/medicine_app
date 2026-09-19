@@ -1266,7 +1266,22 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                 // ── Landscape: Row مع لوحة Sidekick جانبية ──
                                 return Row(
                                   children: <Widget>[
-                                    Expanded(child: lectureColumn),
+                                    AnimatedContainer(
+                                      duration: _isDraggingChat 
+                                          ? Duration.zero 
+                                          : const Duration(milliseconds: 300),
+                                      curve: Curves.easeOutCubic,
+                                      width: _isChatOpen ? _chatWidth : 0,
+                                      child: _isChatOpen
+                                          ? SidekickChatPanel(
+                                              key: _chatKey,
+                                              unitId: widget.unitId,
+                                              unitTitle: _unitTitle,
+                                              onClose: () =>
+                                                  setState(() => _isChatOpen = false),
+                                            )
+                                          : const SizedBox.shrink(),
+                                    ),
                                     if (_isChatOpen)
                                       GestureDetector(
                                         onPanStart: (_) => setState(() => _isDraggingChat = true),
@@ -1295,22 +1310,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                           ),
                                         ),
                                       ),
-                                    AnimatedContainer(
-                                      duration: _isDraggingChat 
-                                          ? Duration.zero 
-                                          : const Duration(milliseconds: 300),
-                                      curve: Curves.easeOutCubic,
-                                      width: _isChatOpen ? _chatWidth : 0,
-                                      child: _isChatOpen
-                                          ? SidekickChatPanel(
-                                              key: _chatKey,
-                                              unitId: widget.unitId,
-                                              unitTitle: _unitTitle,
-                                              onClose: () =>
-                                                  setState(() => _isChatOpen = false),
-                                            )
-                                          : const SizedBox.shrink(),
-                                    ),
+                                    Expanded(child: lectureColumn),
                                   ],
                                 );
                               }

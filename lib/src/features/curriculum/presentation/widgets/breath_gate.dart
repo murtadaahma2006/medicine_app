@@ -96,8 +96,10 @@ class _BreathGatePageState extends State<BreathGatePage>
           final bool done = _c.isCompleted;
 
           return SafeArea(
-            child: Center(
-              child: Column(
+            child: Stack(
+              children: [
+                Center(
+                  child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Padding(
@@ -173,7 +175,24 @@ class _BreathGatePageState extends State<BreathGatePage>
                 ],
               ),
             ),
-          );
+            Positioned(
+              top: 16,
+              left: 16,
+              child: TextButton(
+                onPressed: _start,
+                child: Text(
+                  'تخطي',
+                  style: AppType.body.copyWith(
+                    color: AppColors.textSecondary(b),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
         },
       ),
     );

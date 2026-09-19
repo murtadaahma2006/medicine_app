@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../core/database/database_helper.dart';
+import '../../../../core/models/ai_provider.dart';
 import '../../../../core/services/ai_service.dart';
 import '../../../../theme/tokens.dart';
 import '../widgets/drug_reference_bottom_sheet.dart';
@@ -45,12 +47,27 @@ class _AiChatPageState extends State<AiChatPage> {
   List<Map<String, dynamic>> _messages = [];
   File? _selectedImage;
 
+  final List<AiProvider> _providers = <AiProvider>[
+    AiProvider(
+      id: 'default',
+      name: 'Default Provider',
+      baseUrl: '',
+      apiKey: '',
+      modelName: '',
+      isDefault: true,
+    ),
+  ];
+  late AiProvider _selectedProvider;
+  static const String _providersKey = 'custom_ai_providers';
+
   // ── Lifecycle ──────────────────────────────────────────────
 
   @override
   void initState() {
     super.initState();
+    _selectedProvider = _providers.first;
     _loadHistory();
+    _loadProviders();
   }
 
   @override
@@ -70,6 +87,36 @@ class _AiChatPageState extends State<AiChatPage> {
       _messages = List<Map<String, dynamic>>.from(history);
     });
     _scrollToBottom();
+  }
+
+  Future<void> _loadProviders() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final String? providersJson = prefs.getString(_providersKey);
+    if (providersJson != null) {
+      try {
+        final List<dynamic> decoded = jsonDecode(providersJson) as List<dynamic>;
+        final List<AiProvider> loaded = decoded.map((dynamic e) => AiProvider.fromJson(e as Map<String, dynamic>)).toList();
+        if (mounted) {
+          setState(() {
+            _providers.addAll(loaded);
+          });
+        }
+      } catch (e) {
+        debugPrint('Error loading providers: $e');
+      }
+    }
+  }
+
+  Future<void> _saveProvider(AiProvider provider) async {
+    setState(() {
+      _providers.add(provider);
+      _selectedProvider = provider;
+    });
+    
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final List<AiProvider> customProviders = _providers.where((AiProvider p) => !p.isDefault).toList();
+    final String encoded = jsonEncode(customProviders.map((AiProvider p) => p.toJson()).toList());
+    await prefs.setString(_providersKey, encoded);
   }
 
   void _scrollToBottom() {
@@ -158,7 +205,10 @@ class _AiChatPageState extends State<AiChatPage> {
 
     String fullResponse = '';
     try {
-      final Stream<String> stream = AIService.generateChatStream(apiMessages);
+      final Stream<String> stream = AIService.generateChatStream(
+        apiMessages,
+        provider: _selectedProvider.isDefault ? null : _selectedProvider,
+      );
 
       await for (final String chunk in stream) {
         if (!mounted) return;
@@ -655,48 +705,104 @@ class _AiChatPageState extends State<AiChatPage> {
                             ),
                             suffixIcon: Padding(
                               padding: const EdgeInsets.all(6.0),
-                              // AnimatedSwitcher: smooth cross-fade between send & loading.
-                              child: AnimatedSwitcher(
-                                duration: const Duration(milliseconds: 250),
-                                transitionBuilder: (child, animation) => ScaleTransition(
-                                  scale: animation,
-                                  child: FadeTransition(opacity: animation, child: child),
-                                ),
-                                child: isLoading
-                                    ? Container(
-                                      key: const ValueKey('loading'),
-                                      width: 40,
-                                      height: 40,
-                                      padding: const EdgeInsets.all(10),
-                                      child: CircularProgressIndicator(
-                                        strokeWidth: 2.5,
-                                        color: scheme.primary,
-                                      ),
-                                    )
-                                  : AnimatedContainer(
-                                      key: const ValueKey('send'),
-                                      duration: const Duration(milliseconds: 200),
-                                      decoration: BoxDecoration(
-                                        color: isTyping
-                                            ? scheme.primary
-                                            : Colors.transparent,
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.arrow_upward_rounded,
-                                          color: isTyping
-                                              ? Colors.white
-                                              : scheme.onSurfaceVariant
-                                                  .withValues(alpha: 0.4),
-                                          size: 20,
-                                        ),
-                                        onPressed: isTyping ? _sendMessage : null,
-                                      ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  PopupMenuButton<String>(
+                                    icon: Icon(Icons.memory_rounded, color: scheme.onSurfaceVariant, size: 20),
+                                    tooltip: 'تبديل المزود',
+                                    color: scheme.surface,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(AppRadius.card),
                                     ),
-                            ),
-                          ),
-                        ),
+                                    onSelected: (String value) {
+                                      if (value == 'ADD_NEW') {
+                                        _showAddProviderDialog(scheme);
+                                      } else {
+                                        final provider = _providers.firstWhere((p) => p.id == value);
+                                        setState(() {
+                                          _selectedProvider = provider;
+                                        });
+                                      }
+                                    },
+                                    itemBuilder: (BuildContext context) {
+                                      final List<PopupMenuEntry<String>> items = [];
+                                      for (final AiProvider provider in _providers) {
+                                        items.add(
+                                          PopupMenuItem<String>(
+                                            value: provider.id,
+                                            child: Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: <Widget>[
+                                                Text(provider.name, style: AppType.body.copyWith(fontSize: 14)),
+                                                if (_selectedProvider.id == provider.id)
+                                                  Icon(Icons.check_circle_rounded, color: scheme.primary, size: 20),
+                                              ],
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                      items.add(const PopupMenuDivider());
+                                      items.add(
+                                        PopupMenuItem<String>(
+                                          value: 'ADD_NEW',
+                                          child: Row(
+                                            children: <Widget>[
+                                              Icon(Icons.add_rounded, color: scheme.primary, size: 20),
+                                              const SizedBox(width: 8),
+                                              Text('إضافة مزود جديد', style: AppType.body.copyWith(fontSize: 14, color: scheme.primary)),
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                      return items;
+                                    },
+                                  ),
+                                  const SizedBox(width: 4),
+                                  // AnimatedSwitcher: smooth cross-fade between send & loading.
+                                  AnimatedSwitcher(
+                                    duration: const Duration(milliseconds: 250),
+                                    transitionBuilder: (child, animation) => ScaleTransition(
+                                      scale: animation,
+                                      child: FadeTransition(opacity: animation, child: child),
+                                    ),
+                                    child: isLoading
+                                        ? Container(
+                                          key: const ValueKey('loading'),
+                                          width: 40,
+                                          height: 40,
+                                          padding: const EdgeInsets.all(10),
+                                          child: CircularProgressIndicator(
+                                            strokeWidth: 2.5,
+                                            color: scheme.primary,
+                                          ),
+                                        )
+                                      : AnimatedContainer(
+                                          key: const ValueKey('send'),
+                                          duration: const Duration(milliseconds: 200),
+                                          decoration: BoxDecoration(
+                                            color: isTyping
+                                                ? scheme.primary
+                                                : Colors.transparent,
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: IconButton(
+                                            icon: Icon(
+                                              Icons.arrow_upward_rounded,
+                                              color: isTyping
+                                                  ? Colors.white
+                                                  : scheme.onSurfaceVariant
+                                                      .withValues(alpha: 0.4),
+                                              size: 20,
+                                            ),
+                                            onPressed: isTyping ? _sendMessage : null,
+                                          ),
+                                        ),
+                                  ),
+                                ],
+                              ),
+                            ), // End of suffixIcon Padding
+                          ), // End of InputDecoration
                           onSubmitted: (_) {
                             if (!isLoading) _sendMessage();
                           },
@@ -713,6 +819,158 @@ class _AiChatPageState extends State<AiChatPage> {
     ),
   );
 }
+
+  void _showAddProviderDialog(ColorScheme scheme) {
+    final TextEditingController nameCtrl = TextEditingController();
+    final TextEditingController urlCtrl = TextEditingController();
+    final TextEditingController keyCtrl = TextEditingController();
+    final TextEditingController modelCtrl = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Dialog(
+          backgroundColor: const Color(0xFF1E1E1E), // Dark theme
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                textDirection: TextDirection.rtl,
+                children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    const Text(
+                      'إضافة مزود مخصص',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.close_rounded, color: Colors.white70),
+                      onPressed: () => Navigator.pop(context),
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
+                TextField(
+                  controller: nameCtrl,
+                  style: const TextStyle(color: Colors.white),
+                  textDirection: TextDirection.ltr,
+                  decoration: InputDecoration(
+                    labelText: 'Provider Name (e.g. LM Studio)',
+                    labelStyle: const TextStyle(color: Colors.white54),
+                    filled: true,
+                    fillColor: Colors.black26,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: urlCtrl,
+                  style: const TextStyle(color: Colors.white),
+                  textDirection: TextDirection.ltr,
+                  decoration: InputDecoration(
+                    labelText: 'API URL',
+                    labelStyle: const TextStyle(color: Colors.white54),
+                    filled: true,
+                    fillColor: Colors.black26,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: keyCtrl,
+                  style: const TextStyle(color: Colors.white),
+                  textDirection: TextDirection.ltr,
+                  decoration: InputDecoration(
+                    labelText: 'API Key',
+                    labelStyle: const TextStyle(color: Colors.white54),
+                    filled: true,
+                    fillColor: Colors.black26,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+                TextField(
+                  controller: modelCtrl,
+                  style: const TextStyle(color: Colors.white),
+                  textDirection: TextDirection.ltr,
+                  decoration: InputDecoration(
+                    labelText: 'Model Name',
+                    labelStyle: const TextStyle(color: Colors.white54),
+                    filled: true,
+                    fillColor: Colors.black26,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8),
+                      borderSide: BorderSide.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 24),
+                ElevatedButton(
+                  onPressed: () {
+                    final String name = nameCtrl.text.trim();
+                    final String url = urlCtrl.text.trim();
+                    final String key = keyCtrl.text.trim();
+                    final String model = modelCtrl.text.trim();
+
+                    if (name.isEmpty || url.isEmpty || model.isEmpty) {
+                      _showErrorSnackBar('يرجى تعبئة الحقول الأساسية (الاسم، الرابط، الموديل)');
+                      return;
+                    }
+
+                    final AiProvider newProvider = AiProvider(
+                      id: DateTime.now().millisecondsSinceEpoch.toString(),
+                      name: name,
+                      baseUrl: url,
+                      apiKey: key,
+                      modelName: model,
+                      isDefault: false,
+                    );
+
+                    _saveProvider(newProvider);
+                    Navigator.pop(context);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: scheme.primary,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                  ),
+                  child: const Text(
+                    'حفظ',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
+            ),
+          ),
+        );
+      },
+    );
+  }
 
   // ── Main Build ─────────────────────────────────────────────
 

@@ -225,7 +225,7 @@ abstract final class AppTheme {
 
       // الدفء المحافظ: خلفية الـNavigationBar (الأسفل) كريمي خفيف
       // منسجم مع السطح البديل الدافئ — دون المساس بالخلفية الأساسية.
-      bottomAppBarTheme: BottomAppBarThemeData(
+      bottomAppBarTheme: BottomAppBarTheme(
         color: surfaceAlt,
         surfaceTintColor: Colors.transparent,
       ),
