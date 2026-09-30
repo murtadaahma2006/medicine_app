@@ -277,18 +277,54 @@ class GoogleDriveService {
     }
   }
 
-  // ── سرد ملفات PDF ─────────────────────────────────────────────────────────
+  // ── ثابتات أنواع الملفات (MIME types) ───────────────────────────────────
+  static const String driveFolderMimeType =
+      'application/vnd.google-apps.folder';
+  static const String pdfMimeType = 'application/pdf';
 
-  /// يُعيد قائمة ملفات PDF من Drive الخاص بالمستخدم.
+  // ── استعلام عن عناصر Drive الهيكلية (مجلدات وملفات PDF) ────────────────────
+
+  /// يُعيد قائمة العناصر (مجلدات فرعية وملفات PDF) داخل مجلد محدد [folderId].
   ///
-  /// الاستعلام: mimeType='application/pdf' AND trashed=false
-  /// الترتيب: الأحدث تعديلاً أولاً.
-  /// الحد الأقصى: 200 ملف للسرد الأول (قابل للتوسيع بـ nextPageToken).
+  /// المجلد الافتراضي: `'root'` (مجلد ملفاتي الرئيسي).
+  /// الاستعلام: `'folderId' in parents AND (mimeType = folder OR pdf) AND trashed = false`
+  /// الترتيب: المجلدات تتصدر القائمة أولاً، ثم ملفات PDF، مرتبة أبجدياً.
+  Future<List<drive.File>> listDriveItems({String folderId = 'root'}) async {
+    final drive.DriveApi api = await _buildDriveApi();
+
+    final String query =
+        "'$folderId' in parents and (mimeType = '$driveFolderMimeType' or mimeType = '$pdfMimeType') and trashed = false";
+
+    final drive.FileList result = await api.files.list(
+      q: query,
+      orderBy: 'name asc',
+      pageSize: 500,
+      $fields: 'files(id,name,size,modifiedTime,mimeType)',
+    );
+
+    final List<drive.File> items = result.files ?? <drive.File>[];
+
+    // ترتيب: المجلدات أولاً (أبجدياً)، ثم الملفات (أبجدياً)
+    items.sort((drive.File a, drive.File b) {
+      final bool aIsFolder = a.mimeType == driveFolderMimeType;
+      final bool bIsFolder = b.mimeType == driveFolderMimeType;
+
+      if (aIsFolder && !bIsFolder) return -1;
+      if (!aIsFolder && bIsFolder) return 1;
+      return (a.name ?? '').compareTo(b.name ?? '');
+    });
+
+    debugPrint(
+        'GoogleDriveService: وُجد ${items.length} عنصر داخل المجلد ($folderId).');
+    return items;
+  }
+
+  /// يُعيد قائمة جميع ملفات PDF (استعلام سطحي شامل) — احتياطي للتوافق.
   Future<List<drive.File>> listPdfFiles() async {
     final drive.DriveApi api = await _buildDriveApi();
 
     final drive.FileList result = await api.files.list(
-      q: "mimeType='application/pdf' and trashed=false",
+      q: "mimeType='$pdfMimeType' and trashed=false",
       orderBy: 'modifiedTime desc',
       pageSize: 200,
       $fields: 'files(id,name,size,modifiedTime,mimeType)',

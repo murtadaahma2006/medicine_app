@@ -52,6 +52,10 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
   // ── الحالة العامة ──────────────────────────────────────────────────────────
   _PanelState _state = _PanelState.login;
 
+  // ── stacks التنقل بين المجلدات ──────────────────────────────────────────
+  final List<String> _folderIdStack = <String>['root'];
+  final List<String> _folderNameStack = <String>['ملفاتي'];
+
   // ── بيانات القائمة ─────────────────────────────────────────────────────────
   List<drive.File> _files = <drive.File>[];
   bool _isListLoading = false;
@@ -95,13 +99,17 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
     setState(() {
       _state = _PanelState.login;
       _files = <drive.File>[];
+      _folderIdStack.clear();
+      _folderIdStack.add('root');
+      _folderNameStack.clear();
+      _folderNameStack.add('ملفاتي');
       _localFile = null;
       _downloadingFile = null;
     });
   }
 
   // ─────────────────────────────────────────────────────────────────────────
-  // List
+  // List & Folder Navigation
   // ─────────────────────────────────────────────────────────────────────────
 
   Future<void> _loadList() async {
@@ -113,10 +121,12 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
       _state = _PanelState.list;
     });
     try {
-      final List<drive.File> files = await _drive.listPdfFiles();
+      final String currentFolderId = _folderIdStack.last;
+      final List<drive.File> items =
+          await _drive.listDriveItems(folderId: currentFolderId);
       if (!mounted) return;
       setState(() {
-        _files = files;
+        _files = items;
         _isListLoading = false;
       });
     } catch (e) {
@@ -125,6 +135,25 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
         _listError = _friendly(e);
         _isListLoading = false;
       });
+    }
+  }
+
+  void _openFolder(drive.File folder) {
+    if (folder.id == null) return;
+    setState(() {
+      _folderIdStack.add(folder.id!);
+      _folderNameStack.add(folder.name ?? 'مجلد');
+    });
+    _loadList();
+  }
+
+  void _popFolder() {
+    if (_folderIdStack.length > 1) {
+      setState(() {
+        _folderIdStack.removeLast();
+        _folderNameStack.removeLast();
+      });
+      _loadList();
     }
   }
 
@@ -318,11 +347,22 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
 
   Widget _buildListState() {
     final Brightness b = Theme.of(context).colorScheme.brightness;
+    final bool canGoBack = _folderIdStack.length > 1;
+    final String currentFolderName = _folderNameStack.last;
 
     return _PanelShell(
       onClose: widget.onClose,
-      title: 'ملفات PDF',
-      titleIcon: Icons.picture_as_pdf_rounded,
+      title: currentFolderName,
+      titleIcon: canGoBack ? Icons.folder_open_rounded : Icons.cloud_rounded,
+      leading: canGoBack
+          ? IconButton(
+              tooltip: 'المجلد السابق',
+              icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 16),
+              onPressed: _isListLoading ? null : _popFolder,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+            )
+          : null,
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -382,6 +422,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
     }
 
     if (_files.isEmpty) {
+      final bool isSubFolder = _folderIdStack.length > 1;
       return Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -390,7 +431,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
                 size: 48, color: AppColors.textSecondary(b)),
             const SizedBox(height: AppSpacing.md),
             Text(
-              'لا توجد ملفات PDF',
+              isSubFolder ? 'هذا المجلد فارغ' : 'لا توجد مجلدات أو ملفات PDF',
               style: AppType.body
                   .copyWith(color: AppColors.textSecondary(b), fontSize: 13),
             ),
@@ -410,14 +451,23 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
         separatorBuilder: (_, __) =>
             Divider(height: 1, color: AppColors.border(b)),
         itemBuilder: (BuildContext ctx, int i) {
-          final drive.File f = _files[i];
-          final int? sizeKb = f.size != null
-              ? (int.tryParse(f.size!) ?? 0) ~/ 1024
+          final drive.File item = _files[i];
+          final bool isFolder =
+              item.mimeType == GoogleDriveService.driveFolderMimeType;
+          final int? sizeKb = (!isFolder && item.size != null)
+              ? (int.tryParse(item.size!) ?? 0) ~/ 1024
               : null;
           return _FileListTile(
-            file: f,
+            file: item,
+            isFolder: isFolder,
             sizeKb: sizeKb,
-            onTap: () => _startDownload(f),
+            onTap: () {
+              if (isFolder) {
+                _openFolder(item);
+              } else {
+                _startDownload(item);
+              }
+            },
           );
         },
       ),
@@ -569,6 +619,7 @@ class _PanelShell extends StatelessWidget {
     required this.title,
     required this.titleIcon,
     required this.child,
+    this.leading,
     this.trailing,
     this.onClose,
   });
@@ -576,6 +627,7 @@ class _PanelShell extends StatelessWidget {
   final String title;
   final IconData titleIcon;
   final Widget child;
+  final Widget? leading;
   final Widget? trailing;
   final VoidCallback? onClose;
 
@@ -598,6 +650,10 @@ class _PanelShell extends StatelessWidget {
           ),
           child: Row(
             children: <Widget>[
+              if (leading != null) ...<Widget>[
+                leading!,
+                const SizedBox(width: AppSpacing.xs),
+              ],
               Icon(titleIcon, size: 16, color: primary),
               const SizedBox(width: AppSpacing.xs),
               Expanded(
@@ -641,16 +697,34 @@ class _FileListTile extends StatelessWidget {
   const _FileListTile({
     required this.file,
     required this.onTap,
+    this.isFolder = false,
     this.sizeKb,
   });
 
   final drive.File file;
+  final bool isFolder;
   final int? sizeKb;
   final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
+
+    final IconData iconData = isFolder
+        ? Icons.folder_rounded
+        : Icons.picture_as_pdf_rounded;
+
+    final Color iconColor = isFolder
+        ? Colors.amber.shade700
+        : AppColors.error(b);
+
+    final Color bgColor = isFolder
+        ? Colors.amber.withValues(alpha: 0.12)
+        : AppColors.errorContainer(b);
+
+    final String subtitleText = isFolder
+        ? 'مجلد'
+        : (sizeKb != null ? _formatSize(sizeKb!) : 'ملف PDF');
 
     return ListTile(
       contentPadding:
@@ -660,13 +734,13 @@ class _FileListTile extends StatelessWidget {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          color: AppColors.errorContainer(b),
+          color: bgColor,
           borderRadius: BorderRadius.circular(AppRadius.chip),
         ),
         child: Icon(
-          Icons.picture_as_pdf_rounded,
-          color: AppColors.error(b),
-          size: 20,
+          iconData,
+          color: iconColor,
+          size: 22,
         ),
       ),
       title: Text(
@@ -679,15 +753,15 @@ class _FileListTile extends StatelessWidget {
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
       ),
-      subtitle: sizeKb != null
-          ? Text(
-              _formatSize(sizeKb!),
-              style:
-                  AppType.caption.copyWith(color: AppColors.textSecondary(b)),
-            )
-          : null,
-      trailing: Icon(Icons.chevron_left_rounded,
-          size: 18, color: AppColors.textSecondary(b)),
+      subtitle: Text(
+        subtitleText,
+        style: AppType.caption.copyWith(color: AppColors.textSecondary(b)),
+      ),
+      trailing: Icon(
+        isFolder ? Icons.chevron_left_rounded : Icons.download_rounded,
+        size: 18,
+        color: AppColors.textSecondary(b),
+      ),
     );
   }
 
