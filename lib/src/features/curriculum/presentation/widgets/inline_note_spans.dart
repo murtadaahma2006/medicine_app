@@ -60,9 +60,10 @@ List<TextSpan> buildInlineNoteSpans(
 
   final List<int> spokenWordMatchCount = <int>[0];
 
-  final Color highlight = brightness == null || brightness == Brightness.light
-      ? kInlineNoteHighlight
-      : AppColors.inlineNoteHighlight(Brightness.dark);
+  final Color highlight =
+      brightness == null || brightness == Brightness.light
+          ? kInlineNoteHighlight
+          : AppColors.inlineNoteHighlight(Brightness.dark);
 
   // 1. Filter valid notes and migrate legacy notes dynamically
   final List<InlineNote> applicable = <InlineNote>[];
@@ -81,16 +82,18 @@ List<TextSpan> buildInlineNoteSpans(
 
     if (start >= 0 && end <= text.length && start < end) {
       // Create a temporary note with the resolved coordinates for rendering
-      applicable.add(InlineNote(
-        remarkId: n.remarkId,
-        conceptId: n.conceptId,
-        selectedText: n.selectedText,
-        startIndex: start,
-        endIndex: end,
-        personalNote: n.personalNote,
-        colorCode: n.colorCode,
-        createdAt: n.createdAt,
-      ));
+      applicable.add(
+        InlineNote(
+          remarkId: n.remarkId,
+          conceptId: n.conceptId,
+          selectedText: n.selectedText,
+          startIndex: start,
+          endIndex: end,
+          personalNote: n.personalNote,
+          colorCode: n.colorCode,
+          createdAt: n.createdAt,
+        ),
+      );
     }
   }
 
@@ -106,21 +109,37 @@ List<TextSpan> buildInlineNoteSpans(
 
     // 3. Add plain text BEFORE the highlight
     if (note.startIndex > currentIndex) {
-      out.addAll(_plainSegment(
-        text.substring(currentIndex, note.startIndex),
-        base,
-        useAnchors: useAnchors,
-        anchorStrength: anchorStrength,
-        spokenWord: spokenWord,
-        spokenWordOccurrence: spokenWordOccurrence,
-        spokenWordMatchCount: spokenWordMatchCount,
-      ));
+      out.addAll(
+        _plainSegment(
+          text.substring(currentIndex, note.startIndex),
+          base,
+          useAnchors: useAnchors,
+          anchorStrength: anchorStrength,
+          spokenWord: spokenWord,
+          spokenWordOccurrence: spokenWordOccurrence,
+          spokenWordMatchCount: spokenWordMatchCount,
+        ),
+      );
     }
 
     // 4. Add the Highlight EXACTLY at the saved indices
     // Slicing the actual text guarantees a UI match even if selectedText had whitespace differences
-    final String exactHighlightText = text.substring(note.startIndex, note.endIndex);
-    out.add(_highlightedSpan(note, base, exactHighlightText, highlight: highlight, onTap: onTap, spokenWord: spokenWord, spokenWordOccurrence: spokenWordOccurrence, spokenWordMatchCount: spokenWordMatchCount));
+    final String exactHighlightText = text.substring(
+      note.startIndex,
+      note.endIndex,
+    );
+    out.add(
+      _highlightedSpan(
+        note,
+        base,
+        exactHighlightText,
+        highlight: highlight,
+        onTap: onTap,
+        spokenWord: spokenWord,
+        spokenWordOccurrence: spokenWordOccurrence,
+        spokenWordMatchCount: spokenWordMatchCount,
+      ),
+    );
 
     // 5. Advance the cursor past the highlight
     currentIndex = note.endIndex;
@@ -128,15 +147,17 @@ List<TextSpan> buildInlineNoteSpans(
 
   // 6. Add any remaining plain text AFTER the final highlight
   if (currentIndex < text.length) {
-    out.addAll(_plainSegment(
-      text.substring(currentIndex),
-      base,
-      useAnchors: useAnchors,
-      anchorStrength: anchorStrength,
-      spokenWord: spokenWord,
-      spokenWordOccurrence: spokenWordOccurrence,
-      spokenWordMatchCount: spokenWordMatchCount,
-    ));
+    out.addAll(
+      _plainSegment(
+        text.substring(currentIndex),
+        base,
+        useAnchors: useAnchors,
+        anchorStrength: anchorStrength,
+        spokenWord: spokenWord,
+        spokenWordOccurrence: spokenWordOccurrence,
+        spokenWordMatchCount: spokenWordMatchCount,
+      ),
+    );
   }
 
   return out;
@@ -153,20 +174,18 @@ TextSpan _highlightedSpan(
   int? spokenWordOccurrence,
   List<int>? spokenWordMatchCount,
 }) {
-  final TextStyle style = base.copyWith(
-    backgroundColor: highlight,
-  );
-  
+  final TextStyle style = base.copyWith(backgroundColor: highlight);
+
   final List<TextSpan> children = _parseMarkdownBold(
-    displayText, 
-    style, 
-    useAnchors: false, 
+    displayText,
+    style,
+    useAnchors: false,
     anchorStrength: FixationStrength.standard,
     spokenWord: spokenWord,
     spokenWordOccurrence: spokenWordOccurrence,
     spokenWordMatchCount: spokenWordMatchCount,
   );
-  
+
   if (onTap == null) {
     return TextSpan(children: children);
   }
@@ -175,7 +194,6 @@ TextSpan _highlightedSpan(
     recognizer: TapGestureRecognizer()..onTap = () => onTap(note),
   );
 }
-
 
 /// مقطع عادي (غير مميَّز) — يطبّق مراسي التثبيت عند الطلب.
 List<TextSpan> _plainSegment(
@@ -187,7 +205,15 @@ List<TextSpan> _plainSegment(
   int? spokenWordOccurrence,
   List<int>? spokenWordMatchCount,
 }) {
-  return _parseMarkdownBold(segment, base, useAnchors: useAnchors, anchorStrength: anchorStrength, spokenWord: spokenWord, spokenWordOccurrence: spokenWordOccurrence, spokenWordMatchCount: spokenWordMatchCount);
+  return _parseMarkdownBold(
+    segment,
+    base,
+    useAnchors: useAnchors,
+    anchorStrength: anchorStrength,
+    spokenWord: spokenWord,
+    spokenWordOccurrence: spokenWordOccurrence,
+    spokenWordMatchCount: spokenWordMatchCount,
+  );
 }
 
 /// يحلل علامات الخط العريض `**` مع الحفاظ على طول النص الأصلي لتطابق فهارس التحديد.
@@ -201,8 +227,19 @@ List<TextSpan> _parseMarkdownBold(
   int? spokenWordOccurrence,
   List<int>? spokenWordMatchCount,
 }) {
-  if (spokenWord != null && spokenWord.isNotEmpty && spokenWordOccurrence != null && spokenWordMatchCount != null) {
-    return _applySpokenWord(text, base, spokenWord, spokenWordOccurrence, spokenWordMatchCount, useAnchors, anchorStrength);
+  if (spokenWord != null &&
+      spokenWord.isNotEmpty &&
+      spokenWordOccurrence != null &&
+      spokenWordMatchCount != null) {
+    return _applySpokenWord(
+      text,
+      base,
+      spokenWord,
+      spokenWordOccurrence,
+      spokenWordMatchCount,
+      useAnchors,
+      anchorStrength,
+    );
   }
 
   if (!text.contains('**')) {
@@ -220,40 +257,50 @@ List<TextSpan> _parseMarkdownBold(
     if (match.start > lastMatchEnd) {
       final String preText = text.substring(lastMatchEnd, match.start);
       if (useAnchors) {
-        spans.addAll(buildAnchoredSpans(preText, base, strength: anchorStrength));
+        spans.addAll(
+          buildAnchoredSpans(preText, base, strength: anchorStrength),
+        );
       } else {
         spans.add(TextSpan(text: preText, style: base));
       }
     }
-    
+
     // العلامة المخفية الأولى
-    spans.add(const TextSpan(
-      text: '**',
-      style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
-    ));
-    
+    spans.add(
+      const TextSpan(
+        text: '**',
+        style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
+      ),
+    );
+
     // النص العريض
     final String boldText = match.group(1) ?? '';
     final TextStyle boldStyle = base.copyWith(fontWeight: FontWeight.bold);
     if (useAnchors) {
-       spans.addAll(buildAnchoredSpans(boldText, boldStyle, strength: anchorStrength));
+      spans.addAll(
+        buildAnchoredSpans(boldText, boldStyle, strength: anchorStrength),
+      );
     } else {
-       spans.add(TextSpan(text: boldText, style: boldStyle));
+      spans.add(TextSpan(text: boldText, style: boldStyle));
     }
-    
+
     // العلامة المخفية الثانية
-    spans.add(const TextSpan(
-      text: '**',
-      style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
-    ));
-    
+    spans.add(
+      const TextSpan(
+        text: '**',
+        style: TextStyle(fontSize: 0, height: 0, color: Colors.transparent),
+      ),
+    );
+
     lastMatchEnd = match.end;
   }
 
   if (lastMatchEnd < text.length) {
     final String postText = text.substring(lastMatchEnd);
     if (useAnchors) {
-      spans.addAll(buildAnchoredSpans(postText, base, strength: anchorStrength));
+      spans.addAll(
+        buildAnchoredSpans(postText, base, strength: anchorStrength),
+      );
     } else {
       spans.add(TextSpan(text: postText, style: base));
     }
@@ -262,18 +309,33 @@ List<TextSpan> _parseMarkdownBold(
   return spans;
 }
 
-List<TextSpan> _applySpokenWord(String text, TextStyle base, String spokenWord, int spokenWordOccurrence, List<int> matchCount, bool useAnchors, FixationStrength strength) {
+List<TextSpan> _applySpokenWord(
+  String text,
+  TextStyle base,
+  String spokenWord,
+  int spokenWordOccurrence,
+  List<int> matchCount,
+  bool useAnchors,
+  FixationStrength strength,
+) {
   final List<TextSpan> spans = <TextSpan>[];
   int lastMatchEnd = 0;
   final String escapedWord = RegExp.escape(spokenWord);
-  final RegExp exp = RegExp('\\b$escapedWord\\b', caseSensitive: false); 
-  
+  final RegExp exp = RegExp('\\b$escapedWord\\b', caseSensitive: false);
+
   for (final RegExpMatch match in exp.allMatches(text)) {
     if (match.start > lastMatchEnd) {
       final String pre = text.substring(lastMatchEnd, match.start);
-      spans.addAll(_parseMarkdownBold(pre, base, useAnchors: useAnchors, anchorStrength: strength)); 
+      spans.addAll(
+        _parseMarkdownBold(
+          pre,
+          base,
+          useAnchors: useAnchors,
+          anchorStrength: strength,
+        ),
+      );
     }
-    
+
     final String word = match.group(0)!;
     if (matchCount[0] == spokenWordOccurrence) {
       final TextStyle highlightStyle = base.copyWith(
@@ -285,18 +347,30 @@ List<TextSpan> _applySpokenWord(String text, TextStyle base, String spokenWord, 
       spans.add(TextSpan(text: word, style: base));
     }
     matchCount[0]++;
-    
+
     lastMatchEnd = match.end;
   }
-  
+
   if (lastMatchEnd < text.length) {
     final String post = text.substring(lastMatchEnd);
-    spans.addAll(_parseMarkdownBold(post, base, useAnchors: useAnchors, anchorStrength: strength));
+    spans.addAll(
+      _parseMarkdownBold(
+        post,
+        base,
+        useAnchors: useAnchors,
+        anchorStrength: strength,
+      ),
+    );
   }
-  
+
   if (spans.isEmpty) {
-     return _parseMarkdownBold(text, base, useAnchors: useAnchors, anchorStrength: strength);
+    return _parseMarkdownBold(
+      text,
+      base,
+      useAnchors: useAnchors,
+      anchorStrength: strength,
+    );
   }
-  
+
   return spans;
 }

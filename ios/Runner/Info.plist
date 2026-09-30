@@ -29,12 +29,22 @@
 	     في HomeWidgetService). بدونه لا يستجيب iOS لفتح الرابط. -->
 	<key>CFBundleURLTypes</key>
 	<array>
+		<!-- مخطط URL لويدجت الشاشة الرئيسية — medicineapp://daily-review -->
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>com.medicineapp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>medicineapp</string>
+			</array>
+		</dict>
+		<!-- مخطط URL لـ Google Sign-In — إعادة التوجيه بعد OAuth -->
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.488954400037-noj5aj0ch4v9cc8o284s8kd5lfipqfov</string>
 			</array>
 		</dict>
 	</array>

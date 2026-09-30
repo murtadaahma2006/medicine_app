@@ -21,6 +21,7 @@ import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../widgets/breath_gate.dart';
 import '../widgets/concept_gate_sheet.dart';
+import '../widgets/drive_pdf_viewer_panel.dart';
 import '../widgets/fixation_spans.dart';
 import '../widgets/inline_note_spans.dart';
 import '../widgets/interception_sheet.dart';
@@ -159,6 +160,11 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
   bool _isDraggingChat = false;
   final GlobalKey<SidekickChatPanelState> _chatKey =
       GlobalKey<SidekickChatPanelState>();
+
+  // ── PDF Viewer Panel (v29) ──
+  bool _isPdfOpen = false;
+  double _pdfWidth = 350.0;
+  bool _isDraggingPdf = false;
 
   final FlutterTts flutterTts = FlutterTts();
   TtsState _ttsState = TtsState.stopped;
@@ -1231,6 +1237,32 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                 }
               },
             ),
+            // ── زر مكتبة Drive PDF (v29) ──
+            IconButton(
+              icon: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                transitionBuilder: (Widget child, Animation<double> anim) =>
+                    ScaleTransition(scale: anim, child: child),
+                child: Icon(
+                  _isPdfOpen
+                      ? Icons.menu_book_rounded
+                      : Icons.menu_book_outlined,
+                  key: ValueKey<bool>(_isPdfOpen),
+                  color: _isPdfOpen
+                      ? Theme.of(context).colorScheme.primary
+                      : null,
+                ),
+              ),
+              tooltip: _isPdfOpen ? 'إغلاق مكتبة PDF' : 'فتح مكتبة PDF',
+              onPressed: () {
+                // PDF panel: landscape only (portrait needs a different UX)
+                final bool isLandscape =
+                    MediaQuery.orientationOf(context) == Orientation.landscape;
+                if (isLandscape) {
+                  setState(() => _isPdfOpen = !_isPdfOpen);
+                }
+              },
+            ),
           ],
         ),
         body: Stack(
@@ -1260,15 +1292,30 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                               );
 
                               if (orientation == Orientation.landscape) {
-                                final double maxChatWidth = MediaQuery.of(context).size.width * 0.5;
-                                final double minChatWidth = 300.0;
-                                
-                                // ── Landscape: Row مع لوحة Sidekick جانبية ──
+                                final double screenWidth =
+                                    MediaQuery.of(context).size.width;
+                                // ── حدود عرض لوحة الشات ──
+                                final double maxChatWidth = screenWidth * 0.5;
+                                const double minChatWidth = 300.0;
+                                // ── حدود عرض لوحة PDF ──
+                                final double maxPdfWidth = screenWidth * 0.45;
+                                const double minPdfWidth = 300.0;
+
+                                // ────────────────────────────────────────────
+                                // RTL Row — 5 أبناء:
+                                //  [0] يمين  → Sidekick Chat (AnimatedContainer)
+                                //  [1]       → مقبض سحب الشات (GestureDetector)
+                                //  [2] وسط   → المحاضرة (Expanded)
+                                //  [3]       → مقبض سحب PDF (GestureDetector)
+                                //  [4] يسار  → Drive PDF Panel (AnimatedContainer)
+                                // ────────────────────────────────────────────
                                 return Row(
                                   children: <Widget>[
+
+                                    // ── [0] لوحة Sidekick — يمين الشاشة ──
                                     AnimatedContainer(
-                                      duration: _isDraggingChat 
-                                          ? Duration.zero 
+                                      duration: _isDraggingChat
+                                          ? Duration.zero
                                           : const Duration(milliseconds: 300),
                                       curve: Curves.easeOutCubic,
                                       width: _isChatOpen ? _chatWidth : 0,
@@ -1282,13 +1329,21 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                             )
                                           : const SizedBox.shrink(),
                                     ),
+
+                                    // ── [1] مقبض سحب الشات ──
                                     if (_isChatOpen)
                                       GestureDetector(
-                                        onPanStart: (_) => setState(() => _isDraggingChat = true),
-                                        onPanEnd: (_) => setState(() => _isDraggingChat = false),
-                                        onPanCancel: () => setState(() => _isDraggingChat = false),
+                                        onPanStart: (_) =>
+                                            setState(() => _isDraggingChat = true),
+                                        onPanEnd: (_) =>
+                                            setState(() => _isDraggingChat = false),
+                                        onPanCancel: () =>
+                                            setState(() => _isDraggingChat = false),
                                         onPanUpdate: (DragUpdateDetails details) {
                                           setState(() {
+                                            // الشات على اليمين في RTL:
+                                            // سحب نحو اليسار (dx سالب) يُصغّره
+                                            // سحب نحو اليمين (dx موجب) يُكبّره
                                             _chatWidth = (_chatWidth - details.delta.dx)
                                                 .clamp(minChatWidth, maxChatWidth);
                                           });
@@ -1303,14 +1358,75 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                               width: 4,
                                               height: 40,
                                               decoration: BoxDecoration(
-                                                color: Theme.of(context).colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
-                                                borderRadius: BorderRadius.circular(2),
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSurfaceVariant
+                                                    .withValues(alpha: 0.3),
+                                                borderRadius:
+                                                    BorderRadius.circular(2),
                                               ),
                                             ),
                                           ),
                                         ),
                                       ),
+
+                                    // ── [2] المحاضرة — الوسط ──
                                     Expanded(child: lectureColumn),
+
+                                    // ── [3] مقبض سحب PDF ──
+                                    if (_isPdfOpen)
+                                      GestureDetector(
+                                        onPanStart: (_) =>
+                                            setState(() => _isDraggingPdf = true),
+                                        onPanEnd: (_) =>
+                                            setState(() => _isDraggingPdf = false),
+                                        onPanCancel: () =>
+                                            setState(() => _isDraggingPdf = false),
+                                        onPanUpdate: (DragUpdateDetails details) {
+                                          setState(() {
+                                            // اللوحة على اليسار في RTL:
+                                            // سحب نحو اليمين (dx موجب) يُصغّرها
+                                            // سحب نحو اليسار (dx سالب) يُكبّرها
+                                            _pdfWidth = (_pdfWidth - details.delta.dx)
+                                                .clamp(minPdfWidth, maxPdfWidth);
+                                          });
+                                        },
+                                        child: MouseRegion(
+                                          cursor: SystemMouseCursors.resizeLeftRight,
+                                          child: Container(
+                                            width: 12,
+                                            color: Colors.transparent,
+                                            alignment: Alignment.center,
+                                            child: Container(
+                                              width: 4,
+                                              height: 40,
+                                              decoration: BoxDecoration(
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .onSurfaceVariant
+                                                    .withValues(alpha: 0.3),
+                                                borderRadius:
+                                                    BorderRadius.circular(2),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+
+                                    // ── [4] لوحة PDF — يسار الشاشة ──
+                                    AnimatedContainer(
+                                      duration: _isDraggingPdf
+                                          ? Duration.zero
+                                          : const Duration(milliseconds: 300),
+                                      curve: Curves.easeOutCubic,
+                                      width: _isPdfOpen ? _pdfWidth : 0,
+                                      child: _isPdfOpen
+                                          ? DrivePdfViewerPanel(
+                                              onClose: () =>
+                                                  setState(() => _isPdfOpen = false),
+                                            )
+                                          : const SizedBox.shrink(),
+                                    ),
                                   ],
                                 );
                               }
