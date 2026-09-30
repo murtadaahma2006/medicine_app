@@ -113,6 +113,7 @@ class GoogleDriveService {
   // ── إعداد google_sign_in ──────────────────────────────────────────────────
 
   final GoogleSignIn _googleSignIn = GoogleSignIn(
+    clientId: '488954400037-noj5aj0ch4v9cc8o284s8kd5lfipqfov.apps.googleusercontent.com',
     scopes: <String>[drive.DriveApi.driveReadonlyScope],
   );
 
