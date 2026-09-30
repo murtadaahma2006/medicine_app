@@ -2,14 +2,48 @@ import 'dart:async';
 import 'dart:io' as io;
 
 import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/services.dart' show PlatformException;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// GoogleDriveService
+// GoogleSignInException — خطأ مكتوب يُعيد سبباً قابلاً للعرض للمستخدم.
 // ─────────────────────────────────────────────────────────────────────────────
+
+enum GoogleSignInFailure {
+  cancelled,      // المستخدم أغلق نافذة OAuth
+  network,        // لا إنترنت
+  configuration,  // خطأ في الإعداد (clientId، Info.plist، ...)
+  unknown,        // أي خطأ آخر
+}
+
+class GoogleSignInException implements Exception {
+  const GoogleSignInException(this.failure, {this.message, this.original});
+
+  final GoogleSignInFailure failure;
+  final String? message;
+  final Object? original;
+
+  /// رسالة جاهزة للعرض للمستخدم بالعربية.
+  String get arabicMessage {
+    switch (failure) {
+      case GoogleSignInFailure.cancelled:
+        return 'تم إلغاء تسجيل الدخول.';
+      case GoogleSignInFailure.network:
+        return 'تعذَّر الاتصال بالشبكة. تحقق من الإنترنت وأعد المحاولة.';
+      case GoogleSignInFailure.configuration:
+        return 'خطأ في إعداد Google Sign-In. تواصل مع المطوِّر.';
+      case GoogleSignInFailure.unknown:
+        return 'حدث خطأ غير متوقع. يرجى إعادة المحاولة.';
+    }
+  }
+
+  @override
+  String toString() => 'GoogleSignInException(${failure.name}): $message';
+}
+
 //
 // مسؤوليات:
 //  • تسجيل الدخول بـ Google Sign-In (نطاق القراءة فقط).
@@ -93,50 +127,153 @@ class GoogleDriveService {
 
   /// يحاول استعادة الجلسة بصمت أولاً، وإلا يفتح نافذة OAuth.
   ///
-  /// يُعيد الحساب المُوثَّق، أو يرمي [Exception] عند الفشل.
+  /// عند الفشل يرمي [GoogleSignInException] بدلاً من الـ crash:
+  ///  • [GoogleSignInFailure.cancelled]     ← إغلاق نافذة OAuth
+  ///  • [GoogleSignInFailure.network]       ← لا إنترنت
+  ///  • [GoogleSignInFailure.configuration] ← خطأ إعداد iOS (Info.plist / clientId)
+  ///  • [GoogleSignInFailure.unknown]       ← أي خطأ آخر
   Future<GoogleSignInAccount> signIn() async {
-    // 1. محاولة صامتة أولاً (إعادة استخدام Token مُخزَّن).
+    // ── 1. محاولة صامتة (إعادة استخدام Token مُخزَّن) ──────────────────────
     try {
-      final GoogleSignInAccount? silent = await _googleSignIn.signInSilently();
+      final GoogleSignInAccount? silent =
+          await _googleSignIn.signInSilently();
       if (silent != null) {
         _currentUser = silent;
-        debugPrint('GoogleDriveService: تسجيل دخول صامت بنجاح — ${silent.email}');
+        debugPrint(
+            'GoogleDriveService ✓ صامت — ${silent.email}');
         return silent;
       }
-    } catch (_) {
-      // الصامت غير مُعطِّل — نتابع للتفاعلي.
+    } on PlatformException catch (e) {
+      // فشل صامت غير مُعطِّل — نتابع للتفاعلي.
+      debugPrint('GoogleDriveService: signInSilently PlatformException: '
+          '${e.code} — ${e.message}');
+    } catch (e) {
+      debugPrint('GoogleDriveService: signInSilently error: $e');
     }
 
-    // 2. تسجيل دخول تفاعلي عبر نافذة Google OAuth.
-    final GoogleSignInAccount? account = await _googleSignIn.signIn();
-    if (account == null) {
-      throw Exception('تسجيل الدخول إلى Google ملغى من المستخدم.');
+    // ── 2. تسجيل دخول تفاعلي عبر نافذة Google OAuth ──────────────────────
+    try {
+      final GoogleSignInAccount? account = await _googleSignIn.signIn();
+
+      if (account == null) {
+        // المستخدم أغلق النافذة بدون اختيار حساب.
+        debugPrint('GoogleDriveService: ألغى المستخدم تسجيل الدخول.');
+        throw const GoogleSignInException(
+          GoogleSignInFailure.cancelled,
+          message: 'User dismissed the sign-in dialog.',
+        );
+      }
+
+      _currentUser = account;
+      debugPrint(
+          'GoogleDriveService ✓ تفاعلي — ${account.email}');
+      return account;
+    } on GoogleSignInException {
+      // أعِد رمي الاستثناء المكتوب دون تعديل.
+      rethrow;
+    } on PlatformException catch (e, st) {
+      debugPrint(
+          'GoogleDriveService ✗ PlatformException: ${e.code} — ${e.message}\n$st');
+      // رموز خطأ شائعة على iOS:
+      //  sign_in_failed         ← خطأ عام في الإعداد
+      //  sign_in_canceled       ← إلغاء المستخدم
+      //  network_error          ← لا إنترنت
+      //  developer_error        ← clientId خاطئ أو مفقود من Info.plist
+      final String code = e.code.toLowerCase();
+      if (code.contains('cancel')) {
+        throw GoogleSignInException(
+          GoogleSignInFailure.cancelled,
+          message: e.message,
+          original: e,
+        );
+      } else if (code.contains('network')) {
+        throw GoogleSignInException(
+          GoogleSignInFailure.network,
+          message: e.message,
+          original: e,
+        );
+      } else if (code.contains('developer') ||
+          code.contains('configuration') ||
+          code.contains('failed')) {
+        throw GoogleSignInException(
+          GoogleSignInFailure.configuration,
+          message: '${e.code}: ${e.message}',
+          original: e,
+        );
+      }
+      throw GoogleSignInException(
+        GoogleSignInFailure.unknown,
+        message: '${e.code}: ${e.message}',
+        original: e,
+      );
+    } catch (e, st) {
+      debugPrint('GoogleDriveService ✗ unexpected: $e\n$st');
+      throw GoogleSignInException(
+        GoogleSignInFailure.unknown,
+        message: e.toString(),
+        original: e,
+      );
     }
-    _currentUser = account;
-    debugPrint('GoogleDriveService: تسجيل دخول تفاعلي بنجاح — ${account.email}');
-    return account;
   }
 
-  /// تسجيل الخروج وتنظيف الجلسة.
+  /// تسجيل الخروج وتنظيف الجلسة — محمي بالكامل.
   Future<void> signOut() async {
-    await _googleSignIn.signOut();
-    _currentUser = null;
-    debugPrint('GoogleDriveService: تم تسجيل الخروج.');
+    try {
+      await _googleSignIn.signOut();
+      debugPrint('GoogleDriveService: تم تسجيل الخروج.');
+    } catch (e) {
+      debugPrint('GoogleDriveService: signOut error (متجاهَل): $e');
+    } finally {
+      _currentUser = null;
+    }
   }
 
   // ── بناء عميل Drive مُوثَّق ──────────────────────────────────────────────
 
   /// يُنشئ [DriveApi] مُرتبطاً بالحساب المُوثَّق الحالي.
   ///
-  /// يجدد الـ Token تلقائياً عبر [GoogleSignInAccount.authHeaders].
+  /// إذا انتهت صلاحية Token يُجدِّدها تلقائياً عبر [authHeaders].
+  /// إذا فشل التجديد يُحاول signInSilently مرة واحدة كاحتياطي.
   Future<drive.DriveApi> _buildDriveApi() async {
-    final GoogleSignInAccount? user = _currentUser;
+    GoogleSignInAccount? user = _currentUser;
     if (user == null) {
-      throw StateError('يجب تسجيل الدخول أولاً.');
+      throw const GoogleSignInException(
+        GoogleSignInFailure.unknown,
+        message: 'يجب تسجيل الدخول أولاً.',
+      );
     }
-    final Map<String, String> headers = await user.authHeaders;
-    final _GoogleAuthClient authClient = _GoogleAuthClient(headers);
-    return drive.DriveApi(authClient);
+
+    try {
+      final Map<String, String> headers = await user.authHeaders;
+      return drive.DriveApi(_GoogleAuthClient(headers));
+    } on PlatformException catch (e) {
+      debugPrint('GoogleDriveService: authHeaders PlatformException: '
+          '${e.code} — ${e.message}. محاولة تجديد الجلسة...');
+      // احتياطي: تجديد صامت
+      try {
+        final GoogleSignInAccount? refreshed =
+            await _googleSignIn.signInSilently();
+        if (refreshed != null) {
+          _currentUser = refreshed;
+          user = refreshed;
+          final Map<String, String> headers = await user.authHeaders;
+          return drive.DriveApi(_GoogleAuthClient(headers));
+        }
+      } catch (_) {}
+      // لم ينجح التجديد — يجب إعادة تسجيل الدخول.
+      _currentUser = null;
+      throw const GoogleSignInException(
+        GoogleSignInFailure.unknown,
+        message: 'انتهت الجلسة — يرجى تسجيل الدخول مجدداً.',
+      );
+    } catch (e) {
+      debugPrint('GoogleDriveService: _buildDriveApi error: $e');
+      throw GoogleSignInException(
+        GoogleSignInFailure.unknown,
+        message: e.toString(),
+        original: e,
+      );
+    }
   }
 
   // ── سرد ملفات PDF ─────────────────────────────────────────────────────────

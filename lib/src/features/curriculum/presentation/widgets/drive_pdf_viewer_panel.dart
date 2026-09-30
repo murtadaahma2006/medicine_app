@@ -191,6 +191,9 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
   // ─────────────────────────────────────────────────────────────────────────
 
   String _friendly(Object e) {
+    // أولاً: الاستثناء المكتوب من الخدمة — أدق رسالة ممكنة.
+    if (e is GoogleSignInException) return e.arabicMessage;
+
     final String s = e.toString().toLowerCase();
     if (s.contains('network') || s.contains('socket') || s.contains('host')) {
       return 'تعذَّر الاتصال بالشبكة. تحقق من الإنترنت.';
