@@ -184,7 +184,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
   }
 
   Future<void> _initTts() async {
-    await flutterTts.setLanguage("en-US");
+    await flutterTts.setLanguage('en-US');
     await flutterTts.setSpeechRate(_ttsRate);
     await flutterTts.setPitch(1.0);
     await flutterTts.setVolume(1.0);
@@ -1177,9 +1177,10 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
 
     return PopScope(
       canPop: false,
-      onPopInvokedWithResult: (bool didPop, Object? result) async {
-        if (didPop) return;
-        await _exitEarly();
+      onPopInvokedWithResult: (bool didPop, Object? result) {
+        // نمنع إيماءة التمرير السريعة في iOS من التسبب بطلب إغلاق غير مقصود
+        // أو تعارض أثناء التصفح وسحب اللوحات الثلاث. الخروج يكون حصراً 
+        // عند ضغط المستخدم المباشر على زر (X) في AppBar.
       },
       child: Scaffold(
         backgroundColor: AppColors.background(b),
@@ -1284,22 +1285,34 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                           )
                         : OrientationBuilder(
                             builder: (BuildContext ctx, Orientation orientation) {
-                              final Widget lectureColumn = Column(
-                                children: [
-                                  _buildTtsSettingsBar(b),
-                                  Expanded(child: _buildShotView(context)),
-                                ],
+                              final Widget lectureColumn = GestureDetector(
+                                behavior: HitTestBehavior.translucent,
+                                onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+                                onPanDown: (_) => FocusManager.instance.primaryFocus?.unfocus(),
+                                child: Column(
+                                  children: [
+                                    _buildTtsSettingsBar(b),
+                                    Expanded(child: _buildShotView(context)),
+                                  ],
+                                ),
                               );
 
                               if (orientation == Orientation.landscape) {
                                 final double screenWidth =
                                     MediaQuery.of(context).size.width;
                                 // ── حدود عرض لوحة الشات ──
-                                final double maxChatWidth = screenWidth * 0.5;
                                 const double minChatWidth = 300.0;
+                                final double maxChatWidth =
+                                    (screenWidth * 0.45).clamp(minChatWidth, screenWidth);
                                 // ── حدود عرض لوحة PDF ──
-                                final double maxPdfWidth = screenWidth * 0.45;
                                 const double minPdfWidth = 300.0;
+                                final double maxPdfWidth =
+                                    (screenWidth * 0.45).clamp(minPdfWidth, screenWidth);
+
+                                final double clampedChatWidth =
+                                    _chatWidth.clamp(minChatWidth, maxChatWidth);
+                                final double clampedPdfWidth =
+                                    _pdfWidth.clamp(minPdfWidth, maxPdfWidth);
 
                                 // ────────────────────────────────────────────
                                 // RTL Row — 5 أبناء:
@@ -1318,7 +1331,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                           ? Duration.zero
                                           : const Duration(milliseconds: 300),
                                       curve: Curves.easeOutCubic,
-                                      width: _isChatOpen ? _chatWidth : 0,
+                                      width: _isChatOpen ? clampedChatWidth : 0,
                                       child: _isChatOpen
                                           ? SidekickChatPanel(
                                               key: _chatKey,
@@ -1333,6 +1346,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                     // ── [1] مقبض سحب الشات ──
                                     if (_isChatOpen)
                                       GestureDetector(
+                                        behavior: HitTestBehavior.opaque,
                                         onPanStart: (_) =>
                                             setState(() => _isDraggingChat = true),
                                         onPanEnd: (_) =>
@@ -1376,6 +1390,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                     // ── [3] مقبض سحب PDF ──
                                     if (_isPdfOpen)
                                       GestureDetector(
+                                        behavior: HitTestBehavior.opaque,
                                         onPanStart: (_) =>
                                             setState(() => _isDraggingPdf = true),
                                         onPanEnd: (_) =>
@@ -1419,7 +1434,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                           ? Duration.zero
                                           : const Duration(milliseconds: 300),
                                       curve: Curves.easeOutCubic,
-                                      width: _isPdfOpen ? _pdfWidth : 0,
+                                      width: _isPdfOpen ? clampedPdfWidth : 0,
                                       child: _isPdfOpen
                                           ? DrivePdfViewerPanel(
                                               onClose: () =>
