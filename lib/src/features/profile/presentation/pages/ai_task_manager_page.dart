@@ -5,7 +5,8 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdf/pdf.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:skeletonizer/skeletonizer.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/agent/agent_log_service.dart';
 import '../../../../core/agent/agent_runtime.dart';
 import '../../../../core/agent/models/models.dart';
@@ -17,6 +18,7 @@ import '../../../../core/services/ai_model_manager.dart';
 import '../../../../core/services/ai_service.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
+import '../../../../core/utils/app_toast.dart';
 import 'ai_task_history_page.dart';
 
 /// لوحة التحكم ومتابعة خط الوكلاء لتحويل ملفات PDF إلى محتوى طبي معتمد (MedOS Content Factory).
@@ -153,26 +155,14 @@ class _AiTaskManagerPageState extends State<AiTaskManagerPage> {
       );
 
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('تمت إضافة المهمة "$title" إلى خط المعالجة'),
-            backgroundColor: Theme.of(context).brightness == Brightness.dark
-                ? AppColors.primaryDark
-                : AppColors.primaryLight,
-          ),
-        );
+        AppToast.showSuccess(context, 'تمت إضافة المهمة "$title" إلى خط المعالجة');
       }
 
       // بدء المعالجة فوراً في الخلفية
       unawaited(_runtime.runTask(task));
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('تعذر اختيار الملف: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
+        AppToast.showError(context, 'تعذر اختيار الملف: $e');
       }
     }
   }
@@ -437,7 +427,46 @@ class _AiTaskManagerPageState extends State<AiTaskManagerPage> {
         initialData: const <AgentTask>[],
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting && !snapshot.hasData) {
-            return const Center(child: CircularProgressIndicator());
+            return Skeletonizer(
+              enabled: true,
+              child: Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 800),
+                  child: ListView.separated(
+                    padding: const EdgeInsets.all(AppSpacing.lg),
+                    itemCount: 4,
+                    separatorBuilder: (context, index) => const SizedBox(height: AppSpacing.md),
+                    itemBuilder: (context, index) {
+                      return Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(AppRadius.card),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(AppSpacing.md),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  const Icon(Icons.picture_as_pdf, size: 24),
+                                  const SizedBox(width: AppSpacing.sm),
+                                  Expanded(child: Text('جاري معالجة المستند الطبي...' * 2, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
+                                  const Icon(Icons.more_vert),
+                                ],
+                              ),
+                              const SizedBox(height: AppSpacing.md),
+                              const LinearProgressIndicator(value: 0.5),
+                              const SizedBox(height: AppSpacing.sm),
+                              const Text('جارٍ الاستخراج والتحليل... يرجى الانتظار'),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            );
           }
 
           final List<AgentTask> allTasks = snapshot.data ?? <AgentTask>[];
@@ -471,7 +500,7 @@ class _AiTaskManagerPageState extends State<AiTaskManagerPage> {
                     task: task,
                     repository: _repository,
                     runtime: _runtime,
-                  );
+                  ).animate().fadeIn(duration: 400.ms, delay: (index * 100).ms).slideX(begin: 0.1, end: 0, curve: Curves.easeOutQuad);
                 },
               ),
             ),
@@ -659,24 +688,14 @@ class _TaskCardState extends State<TaskCard> {
         );
 
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(result.messageAr),
-              backgroundColor: AppColors.success(Theme.of(context).colorScheme.brightness),
-            ),
-          );
+          AppToast.showSuccess(context, result.messageAr);
         }
       } else {
         throw Exception(result.messageAr);
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('فشل اعتماد واستيراد المحاضرة: $e'),
-            backgroundColor: AppColors.error(Theme.of(context).colorScheme.brightness),
-          ),
-        );
+        AppToast.showError(context, 'فشل اعتماد واستيراد المحاضرة: $e');
       }
     } finally {
       if (mounted) {

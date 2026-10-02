@@ -1,7 +1,9 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:toastification/toastification.dart';
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/models/ai_provider.dart';
 import '../../../../core/services/ai_model_manager.dart';
@@ -371,41 +373,46 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
     final Brightness b = Theme.of(context).colorScheme.brightness;
     final ColorScheme scheme = Theme.of(context).colorScheme;
 
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.surface(b),
-        border: Border(
-          left: BorderSide(color: AppColors.border(b), width: 1),
-        ),
-      ),
-      child: Column(
-        children: <Widget>[
-          // ── الرأس ──
-          _buildHeader(b, scheme),
-
-          // ── قائمة الرسائل ──
-          Expanded(
-            child: _messages.isEmpty
-                ? _buildEmptyState(b, scheme)
-                : _buildMessageList(b, scheme),
+    return ClipRect(
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 16.0, sigmaY: 16.0),
+        child: Container(
+          decoration: BoxDecoration(
+            color: AppColors.surface(b).withValues(alpha: 0.7), // Glassmorphism translucent color
+            border: Border(
+              left: BorderSide(color: AppColors.border(b).withValues(alpha: 0.3), width: 1),
+            ),
           ),
+          child: Column(
+            children: <Widget>[
+              // ── الرأس ──
+              _buildHeader(b, scheme),
 
-          // ── مؤشر الكتابة ──
-          ValueListenableBuilder<bool>(
-            valueListenable: _isLoading,
-            builder: (BuildContext context, bool loading, _) {
-              return AnimatedSwitcher(
-                duration: const Duration(milliseconds: 200),
-                child: loading
-                    ? _buildTypingIndicator(b, scheme)
-                    : const SizedBox.shrink(),
-              );
-            },
+              // ── قائمة الرسائل ──
+              Expanded(
+                child: _messages.isEmpty
+                    ? _buildEmptyState(b, scheme)
+                    : _buildMessageList(b, scheme),
+              ),
+
+              // ── مؤشر الكتابة ──
+              ValueListenableBuilder<bool>(
+                valueListenable: _isLoading,
+                builder: (BuildContext context, bool loading, _) {
+                  return AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 200),
+                    child: loading
+                        ? _buildTypingIndicator(b, scheme)
+                        : const SizedBox.shrink(),
+                  );
+                },
+              ),
+
+              // ── حقل الإدخال ──
+              _buildInputArea(b, scheme),
+            ],
           ),
-
-          // ── حقل الإدخال ──
-          _buildInputArea(b, scheme),
-        ],
+        ).animate().fadeIn(duration: 400.ms).slideX(begin: 0.1, end: 0, curve: Curves.easeOutQuad),
       ),
     );
   }

@@ -10,8 +10,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:translator/translator.dart';
 
 import '../../../../theme/tokens.dart';
+import '../../../../core/utils/app_toast.dart';
 import '../widgets/sidekick_chat_panel.dart';
 import '../widgets/browser_side_panel.dart';
+import '../widgets/drive_pdf_picker_sheet.dart';
 import 'concept_reader_page.dart' show PanelMode;
 import '../../../../core/services/google_drive_service.dart';
 
@@ -135,9 +137,7 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
       });
       _ensureBrowserController().loadRequest(Uri.parse(url));
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('المتصفح الجانبي متاح في الوضع العرضي (أو الأيباد) فقط.')),
-      );
+      AppToast.showInfo(context, 'المتصفح الجانبي متاح في الوضع العرضي (أو الأيباد) فقط.');
     }
   }
 
@@ -307,7 +307,7 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
     } catch (e) {
       if (!mounted) return null;
       Navigator.pop(context); // Close loading dialog
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('فشل تحليل المستند: $e')));
+      AppToast.showError(context, 'فشل تحليل المستند: $e');
       return null;
     }
   }
@@ -427,6 +427,33 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
       setState(() {
         _pdfFile = io.File(result.files.single.path!);
         _pdfName = result.files.single.name;
+        _driveFileId = null;
+      });
+    }
+  }
+
+  void _showDriveFilePicker() async {
+    final result = await showModalBottomSheet<Map<String, dynamic>>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) {
+        return DraggableScrollableSheet(
+          initialChildSize: 0.9,
+          builder: (_, sc) => const DriveFilePickerSheet(),
+        );
+      },
+    );
+
+    if (result != null && result['file'] is io.File && result['id'] is String) {
+      final io.File file = result['file'] as io.File;
+      final String id = result['id'] as String;
+      final String name = result['name'] as String? ?? 'ملف من Google Drive';
+      
+      setState(() {
+        _pdfFile = file;
+        _pdfName = name;
+        _driveFileId = id;
       });
     }
   }
@@ -471,22 +498,16 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
       if (_driveFileId != null && _driveFileId!.isNotEmpty) {
         await GoogleDriveService.instance.updatePdfInDrive(_driveFileId!, _pdfFile!);
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('تم الحفظ والمزامنة مع Google Drive بنجاح! ☁️✓')),
-          );
+          AppToast.showSuccess(context, 'تم الحفظ والمزامنة مع Google Drive بنجاح! ☁️✓');
         }
       } else {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('تم حفظ التعديلات محلياً بنجاح! (للمزامنة، افتح الملف من درايف)')),
-          );
+          AppToast.showSuccess(context, 'تم حفظ التعديلات محلياً بنجاح! (للمزامنة، افتح الملف من درايف)');
         }
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('حدث خطأ أثناء الحفظ: $e')),
-        );
+        AppToast.showError(context, 'حدث خطأ أثناء الحفظ: $e');
       }
     } finally {
       if (mounted) {
@@ -618,9 +639,7 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
                     });
                   }
                 } else {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('المتصفح الجانبي متاح في الوضع العرضي فقط.')),
-                  );
+                  AppToast.showInfo(context, 'المتصفح الجانبي متاح في الوضع العرضي فقط.');
                 }
               },
             ),
@@ -646,6 +665,12 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
                           onPressed: _pickLocalPdf,
                           icon: const Icon(Icons.folder_open_rounded),
                           label: const Text('تصفح ملفات الجهاز'),
+                        ),
+                        const SizedBox(height: AppSpacing.md),
+                        FilledButton.tonalIcon(
+                          onPressed: _showDriveFilePicker,
+                          icon: const Icon(Icons.cloud_rounded),
+                          label: const Text('استيراد من Google Drive'),
                         ),
                       ],
                     ),

@@ -70,6 +70,32 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
   io.File? _localFile;
   String? _viewingName;
 
+  @override
+  void initState() {
+    super.initState();
+    _checkInitialAuth();
+  }
+
+  Future<void> _checkInitialAuth() async {
+    setState(() => _isAuthLoading = true);
+    bool signedIn = false;
+    
+    if (_drive.isSignedIn) {
+      signedIn = true;
+    } else {
+      signedIn = await _drive.signInSilently();
+    }
+    
+    if (signedIn) {
+      await _loadFolderState();
+      await _loadList();
+    } else {
+      if (mounted) {
+        setState(() => _isAuthLoading = false);
+      }
+    }
+  }
+
   // ─────────────────────────────────────────────────────────────────────────
   // Auth
   // ─────────────────────────────────────────────────────────────────────────

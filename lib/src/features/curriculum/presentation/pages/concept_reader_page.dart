@@ -8,7 +8,8 @@ import 'package:translator/translator.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:confetti/confetti.dart';
-
+import 'package:skeletonizer/skeletonizer.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/database/inline_note.dart';
 import '../../../../core/database/xp_event.dart';
@@ -1329,7 +1330,41 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
         body: Stack(
           children: [
             _loading
-                ? const Center(child: CircularProgressIndicator())
+                ? Skeletonizer(
+                    enabled: true,
+                    child: ListView.separated(
+                      padding: const EdgeInsets.all(AppSpacing.lg),
+                      itemCount: 3,
+                      separatorBuilder: (context, index) => const SizedBox(height: AppSpacing.lg),
+                      itemBuilder: (context, index) {
+                        return Card(
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadius.card)),
+                          child: Padding(
+                            padding: const EdgeInsets.all(AppSpacing.xl),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    const Icon(Icons.bookmark, size: 24),
+                                    const SizedBox(width: AppSpacing.md),
+                                    Expanded(child: const Text('عنوان المفهوم الطبي أو الحالة...', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
+                                  ],
+                                ),
+                                const SizedBox(height: AppSpacing.lg),
+                                Text('هنا تفاصيل الشرح الطويل والمفصل للمفهوم أو الحالة السريرية... ' * 4, style: const TextStyle(fontSize: 16, height: 1.6)),
+                                const SizedBox(height: AppSpacing.md),
+                                Wrap(
+                                  spacing: 8,
+                                  children: List.generate(3, (i) => Chip(label: const Text('كلمة مفتاحية'))),
+                                )
+                              ],
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  )
                 : _error != null
                     ? EmptyState(
                         icon: Icons.cloud_off_rounded,
@@ -2537,9 +2572,19 @@ Future<void> _showTranslationSheet(BuildContext context, String textToTranslate)
               future: GoogleTranslator().translate(textToTranslate, to: 'ar'),
               builder: (BuildContext context, AsyncSnapshot<Translation> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Padding(
-                    padding: EdgeInsets.all(AppSpacing.xl),
-                    child: Center(child: CircularProgressIndicator()),
+                  return Padding(
+                    padding: const EdgeInsets.all(AppSpacing.xl),
+                    child: Skeletonizer(
+                      enabled: true,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('جاري الترجمة...' * 2, style: const TextStyle(fontSize: 16)),
+                          const SizedBox(height: 8),
+                          Text('يرجى الانتظار...' * 3, style: const TextStyle(fontSize: 16)),
+                        ],
+                      ),
+                    ),
                   );
                 }
                 if (snapshot.hasError) {

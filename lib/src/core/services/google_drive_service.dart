@@ -124,6 +124,19 @@ class GoogleDriveService {
 
   bool get isSignedIn => _currentUser != null;
 
+  /// يحاول تسجيل الدخول بصمت دون إظهار أي نافذة
+  Future<bool> signInSilently() async {
+    try {
+      final GoogleSignInAccount? silent = await _googleSignIn.signInSilently();
+      if (silent != null) {
+        _currentUser = silent;
+        debugPrint('GoogleDriveService ✓ صامت مستعاد — ${silent.email}');
+        return true;
+      }
+    } catch (_) {}
+    return false;
+  }
+
   // ── تسجيل الدخول ─────────────────────────────────────────────────────────
 
   /// يحاول استعادة الجلسة بصمت أولاً، وإلا يفتح نافذة OAuth.
