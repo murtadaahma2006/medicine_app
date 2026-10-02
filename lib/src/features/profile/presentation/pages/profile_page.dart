@@ -406,6 +406,27 @@ class _QuickLinksCard extends StatelessWidget {
             color: AppColors.border(b),
           ),
           ListTile(
+            leading: Icon(Icons.precision_manufacturing_rounded,
+                color: AppColors.primary(b)),
+            title: Text('مصنع المحتوى (MedOS Factory)',
+                style: AppType.body.copyWith(
+                    fontWeight: FontWeight.w700, color: AppColors.text(b))),
+            subtitle: Text(
+              'معالجة ملفات PDF وتحويلها تلقائياً إلى مفاهيم وأسئلة وبطاقات',
+              style: AppType.body.copyWith(
+                  fontSize: 12.5, color: AppColors.textSecondary(b)),
+            ),
+            trailing: Icon(Icons.chevron_left_rounded,
+                color: AppColors.textSecondary(b)),
+            onTap: () => context.push(RoutePaths.aiTaskManager),
+          ),
+          Divider(
+            height: 1,
+            indent: AppSpacing.lg,
+            endIndent: AppSpacing.lg,
+            color: AppColors.border(b),
+          ),
+          ListTile(
             leading: Icon(Icons.settings_rounded,
                 color: AppColors.primary(b)),
             title: Text('الإعدادات',

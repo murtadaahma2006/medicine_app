@@ -12,6 +12,7 @@ import '../../../../theme/tokens.dart';
 import '../../data/unit_repository.dart';
 import '../../domain/unit.dart';
 import 'concept_reader_page.dart';
+import 'pdf_reader_page.dart';
 import 'reading_blocks_page.dart';
 import 'unit_screen.dart';
 import '../widgets/global_search_delegate.dart';
@@ -269,6 +270,22 @@ class _TodayPageState extends State<TodayPage> {
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute<Widget>(
                       builder: (_) => const ReadingBlocksPage()),
+                ),
+              ),
+            ),
+          ),
+
+          // ── PDF Reader ────────────────────────────────────────────────
+          SliverPadding(
+            padding: const EdgeInsets.only(
+                left: AppSpacing.xl,
+                right: AppSpacing.xl,
+                top: AppSpacing.betweenCards),
+            sliver: SliverToBoxAdapter(
+              child: _PdfReaderEntryCard(
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute<Widget>(
+                      builder: (_) => const PdfReaderPage()),
                 ),
               ),
             ),
@@ -1168,6 +1185,54 @@ class _ClinicalToolCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _PdfReaderEntryCard extends StatelessWidget {
+  const _PdfReaderEntryCard({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    return AppCard(
+      onTap: onTap,
+      padding: const EdgeInsets.all(AppSpacing.lg),
+      child: Row(
+        children: <Widget>[
+          Container(
+            padding: const EdgeInsets.all(AppSpacing.md),
+            decoration: BoxDecoration(
+              color: AppColors.errorContainer(b),
+              shape: BoxShape.circle,
+            ),
+            child: Icon(Icons.picture_as_pdf_rounded, color: AppColors.error(b)),
+          ),
+          const SizedBox(width: AppSpacing.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'قارئ الـ PDF الذكي',
+                  style: AppType.cardTitle.copyWith(color: AppColors.text(b)),
+                ),
+                const SizedBox(height: AppSpacing.xs),
+                Text(
+                  'تصفح ملفاتك واقرأ مع المساعد الذكي',
+                  style: AppType.body.copyWith(
+                    color: AppColors.textSecondary(b),
+                    fontSize: 13,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Icon(Icons.chevron_left_rounded, color: AppColors.textSecondary(b)),
+        ],
       ),
     );
   }

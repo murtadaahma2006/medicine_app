@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:translator/translator.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:confetti/confetti.dart';
 
@@ -20,6 +21,7 @@ import '../../../../core/widget/home_widget_service.dart';
 import '../../../../shared/widgets/widgets.dart';
 import '../../../../theme/tokens.dart';
 import '../widgets/breath_gate.dart';
+import '../widgets/browser_side_panel.dart';
 import '../widgets/concept_gate_sheet.dart';
 import '../widgets/drive_pdf_viewer_panel.dart';
 import '../widgets/fixation_spans.dart';
@@ -51,6 +53,9 @@ import '../widgets/sidekick_chat_panel.dart';
 /// ─────────────────────────────────────────────────────────────────────
 
 enum TtsState { playing, paused, stopped }
+
+/// وضع اللوحة الجانبية الديناميكية — مساحة واحدة تقبل وضعين (v30).
+enum PanelMode { ai, browser }
 
 class ConceptReaderPage extends StatefulWidget {
   const ConceptReaderPage({
@@ -154,12 +159,21 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
   bool _didResumeSession = false;
   bool _didJumpFromSearch = false;
 
-  // ── Sidekick AI Chat (v28) ──
-  bool _isChatOpen = false;
-  double _chatWidth = 350.0;
-  bool _isDraggingChat = false;
+  // ── اللوحة الجانبية الديناميكية (v30): مساعد AI + متصفح مدمج ──
+  bool _isSidePanelOpen = false;
+  double _sidePanelWidth = 350.0;
+  bool _isDraggingSidePanel = false;
+  PanelMode _panelMode = PanelMode.ai;
   final GlobalKey<SidekickChatPanelState> _chatKey =
       GlobalKey<SidekickChatPanelState>();
+
+  // متحكم المتصفح يُملَك هنا (وليس داخل اللوحة) كي يبقى تاريخ
+  // التنقل حياً عبر تبديل الوضعين AI ↔ متصفح.
+  WebViewController? _browserController;
+  final ValueNotifier<double> _browserProgress = ValueNotifier<double>(0);
+  final ValueNotifier<String> _browserUrl = ValueNotifier<String>('');
+  final GlobalKey<BrowserSidePanelState> _browserKey =
+      GlobalKey<BrowserSidePanelState>();
 
   // ── PDF Viewer Panel (v29) ──
   bool _isPdfOpen = false;
@@ -217,6 +231,8 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
   void dispose() {
     _confettiController.dispose();
     flutterTts.stop();
+    _browserProgress.dispose();
+    _browserUrl.dispose();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
@@ -1217,11 +1233,11 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                 transitionBuilder: (Widget child, Animation<double> anim) =>
                     ScaleTransition(scale: anim, child: child),
                 child: Icon(
-                  _isChatOpen
+                  _isSidePanelOpen
                       ? Icons.auto_awesome
                       : Icons.auto_awesome_outlined,
-                  key: ValueKey<bool>(_isChatOpen),
-                  color: _isChatOpen
+                  key: ValueKey<bool>(_isSidePanelOpen),
+                  color: _isSidePanelOpen
                       ? Theme.of(context).colorScheme.primary
                       : null,
                 ),
@@ -1232,9 +1248,53 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                     MediaQuery.orientationOf(context) ==
                         Orientation.landscape;
                 if (isLandscape) {
-                  setState(() => _isChatOpen = !_isChatOpen);
+                  // مفتوح بوضع المساعد → إغلاق؛ غير ذلك → فتح/تبديل للمساعد.
+                  if (_isSidePanelOpen && _panelMode == PanelMode.ai) {
+                    setState(() => _isSidePanelOpen = false);
+                  } else {
+                    setState(() {
+                      _isSidePanelOpen = true;
+                      _panelMode = PanelMode.ai;
+                    });
+                  }
                 } else {
                   _showChatBottomSheet();
+                }
+              },
+            ),
+            // ── زر المتصفح المدمج ──
+            IconButton(
+              icon: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                transitionBuilder: (Widget child, Animation<double> anim) =>
+                    ScaleTransition(scale: anim, child: child),
+                child: Icon(
+                  _isSidePanelOpen && _panelMode == PanelMode.browser
+                      ? Icons.public_rounded
+                      : Icons.public_outlined,
+                  key: ValueKey<bool>(_isSidePanelOpen && _panelMode == PanelMode.browser),
+                  color: _isSidePanelOpen && _panelMode == PanelMode.browser
+                      ? Theme.of(context).colorScheme.primary
+                      : null,
+                ),
+              ),
+              tooltip: 'المتصفح الجانبي',
+              onPressed: () {
+                final bool isLandscape =
+                    MediaQuery.orientationOf(context) == Orientation.landscape;
+                if (isLandscape) {
+                  if (_isSidePanelOpen && _panelMode == PanelMode.browser) {
+                    setState(() => _isSidePanelOpen = false);
+                  } else {
+                    setState(() {
+                      _isSidePanelOpen = true;
+                      _panelMode = PanelMode.browser;
+                    });
+                  }
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('المتصفح الجانبي متاح في الوضع العرضي (Landscape) أو الشاشات الكبيرة فقط.')),
+                  );
                 }
               },
             ),
@@ -1301,16 +1361,16 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                 final double screenWidth =
                                     MediaQuery.of(context).size.width;
                                 // ── حدود عرض لوحة الشات ──
-                                const double minChatWidth = 300.0;
-                                final double maxChatWidth =
-                                    (screenWidth * 0.45).clamp(minChatWidth, screenWidth);
+                                const double minPanelWidth = 300.0;
+                                final double maxPanelWidth =
+                                    (screenWidth * 0.45).clamp(minPanelWidth, screenWidth);
                                 // ── حدود عرض لوحة PDF ──
                                 const double minPdfWidth = 300.0;
                                 final double maxPdfWidth =
                                     (screenWidth * 0.45).clamp(minPdfWidth, screenWidth);
 
                                 final double clampedChatWidth =
-                                    _chatWidth.clamp(minChatWidth, maxChatWidth);
+                                    _sidePanelWidth.clamp(minPanelWidth, maxPanelWidth);
                                 final double clampedPdfWidth =
                                     _pdfWidth.clamp(minPdfWidth, maxPdfWidth);
 
@@ -1325,41 +1385,94 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                                 return Row(
                                   children: <Widget>[
 
-                                    // ── [0] لوحة Sidekick — يمين الشاشة ──
+                                    // ── [0] اللوحة الجانبية الديناميكية — يمين الشاشة ──
+                                    // مساحة واحدة تقبل وضعين: مساعد AI ↔ متصفح مدمج (v30).
                                     AnimatedContainer(
-                                      duration: _isDraggingChat
+                                      duration: _isDraggingSidePanel
                                           ? Duration.zero
                                           : const Duration(milliseconds: 300),
                                       curve: Curves.easeOutCubic,
-                                      width: _isChatOpen ? clampedChatWidth : 0,
-                                      child: _isChatOpen
-                                          ? SidekickChatPanel(
-                                              key: _chatKey,
-                                              unitId: widget.unitId,
-                                              unitTitle: _unitTitle,
-                                              onClose: () =>
-                                                  setState(() => _isChatOpen = false),
+                                      width: _isSidePanelOpen ? clampedChatWidth : 0,
+                                      child: _isSidePanelOpen
+                                          ? Row(
+                                              children: <Widget>[
+                                                Expanded(
+                                                  child: AnimatedSwitcher(
+                                                    duration: const Duration(
+                                                        milliseconds: 280),
+                                                    switchInCurve: Curves.easeOut,
+                                                    switchOutCurve: Curves.easeIn,
+                                                    transitionBuilder: (Widget child,
+                                                            Animation<double>
+                                                                animation) =>
+                                                        FadeTransition(
+                                                      opacity: animation,
+                                                      child: SlideTransition(
+                                                        position: Tween<Offset>(
+                                                          begin: const Offset(
+                                                              0.05, 0),
+                                                          end: Offset.zero,
+                                                        ).animate(animation),
+                                                        child: child,
+                                                      ),
+                                                    ),
+                                                    child: _panelMode == PanelMode.ai
+                                                        ? SidekickChatPanel(
+                                                            key: const ValueKey<
+                                                                    PanelMode>(
+                                                                PanelMode.ai),
+                                                            unitId: widget.unitId,
+                                                            unitTitle: _unitTitle,
+                                                            onClose: () => setState(
+                                                                () =>
+                                                                    _isSidePanelOpen =
+                                                                        false),
+                                                            autoExplainText:
+                                                                _pendingExplainText,
+                                                            onAutoPromptConsumed:
+                                                                () =>
+                                                                    _pendingExplainText =
+                                                                        null,
+                                                          )
+                                                        : BrowserSidePanel(
+                                                            key: const ValueKey<
+                                                                    PanelMode>(
+                                                                PanelMode.browser),
+                                                            controller:
+                                                                _ensureBrowserController(),
+                                                            progress:
+                                                                _browserProgress,
+                                                            currentUrl: _browserUrl,
+                                                            onClose: () => setState(
+                                                                () =>
+                                                                    _isSidePanelOpen =
+                                                                        false),
+                                                          ),
+                                                  ),
+                                                ),
+                                                _buildPanelModeRail(b),
+                                              ],
                                             )
                                           : const SizedBox.shrink(),
                                     ),
 
                                     // ── [1] مقبض سحب الشات ──
-                                    if (_isChatOpen)
+                                    if (_isSidePanelOpen)
                                       GestureDetector(
                                         behavior: HitTestBehavior.opaque,
                                         onPanStart: (_) =>
-                                            setState(() => _isDraggingChat = true),
+                                            setState(() => _isDraggingSidePanel = true),
                                         onPanEnd: (_) =>
-                                            setState(() => _isDraggingChat = false),
+                                            setState(() => _isDraggingSidePanel = false),
                                         onPanCancel: () =>
-                                            setState(() => _isDraggingChat = false),
+                                            setState(() => _isDraggingSidePanel = false),
                                         onPanUpdate: (DragUpdateDetails details) {
                                           setState(() {
                                             // الشات على اليمين في RTL:
                                             // سحب نحو اليسار (dx سالب) يُصغّره
                                             // سحب نحو اليمين (dx موجب) يُكبّره
-                                            _chatWidth = (_chatWidth - details.delta.dx)
-                                                .clamp(minChatWidth, maxChatWidth);
+                                            _sidePanelWidth = (_sidePanelWidth - details.delta.dx)
+                                                .clamp(minPanelWidth, maxPanelWidth);
                                           });
                                         },
                                         child: MouseRegion(
@@ -1587,6 +1700,7 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
                         onTapNote: _onTapInlineNote,
                         onSelectionChanged: _onSelectionChanged,
                         onExplainText: _explainSelectedText,
+                        onSearchOnWeb: _searchSelectedTextOnWeb,
                       ),
                     ),
                   ),
@@ -1644,20 +1758,210 @@ class _ConceptReaderPageState extends State<ConceptReaderPage>
 
   // ── Sidekick AI Chat — التفاعل (v28) ───────────────────────────
 
+  // ── اللوحة الجانبية الديناميكية (v30) ──────────────────────────
+
+  /// ينشئ متحكم المتصفح مرة واحدة ويعيد استخدامه — التاريخ والجلسة
+  /// يبقيان حيّين عبر تبديل الوضعين وإغلاق/فتح اللوحة.
+  WebViewController _ensureBrowserController() {
+    if (_browserController != null) return _browserController!;
+    final WebViewController controller = WebViewController()
+      ..setJavaScriptMode(JavaScriptMode.unrestricted)
+      ..setNavigationDelegate(
+        NavigationDelegate(
+          onProgress: (int progress) {
+            _browserProgress.value = progress / 100.0;
+          },
+          onPageStarted: (_) {
+            _browserProgress.value = 0.01;
+          },
+          onPageFinished: (String url) {
+            _browserProgress.value = 1.0;
+            _browserUrl.value = url;
+          },
+          onUrlChange: (UrlChange change) {
+            if (change.url != null) _browserUrl.value = change.url!;
+          },
+          onNavigationRequest: (NavigationRequest request) =>
+              NavigationDecision.navigate,
+        ),
+      );
+    _browserController = controller;
+    return controller;
+  }
+
+  /// تبديل سريع بين المساعد والمتصفح — النقر على الوضع النشط يغلق
+  /// اللوحة، والنقر على الآخر يبدّل مع انتقال AnimatedSwitcher.
+  void _switchPanelMode(PanelMode mode) {
+    if (!_isSidePanelOpen) {
+      setState(() {
+        _isSidePanelOpen = true;
+        _panelMode = mode;
+      });
+      return;
+    }
+    if (_panelMode == mode) {
+      setState(() => _isSidePanelOpen = false);
+    } else {
+      setState(() => _panelMode = mode);
+    }
+  }
+
+  /// شريط أيقونات التبديل السريع (🤖 / 🌐) — حافة اللوحة الجانبية
+  /// الداخلية. الوضع النشط مميّز بلون primary.
+  Widget _buildPanelModeRail(Brightness b) {
+    final ColorScheme scheme = Theme.of(context).colorScheme;
+    Widget railButton({
+      required IconData icon,
+      required String tooltip,
+      required PanelMode mode,
+    }) {
+      final bool active = _isSidePanelOpen && _panelMode == mode;
+      return Tooltip(
+        message: tooltip,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadius.chip),
+          onTap: () => _switchPanelMode(mode),
+          child: Container(
+            width: 34,
+            height: 34,
+            margin: const EdgeInsets.symmetric(vertical: 2),
+            decoration: BoxDecoration(
+              color: active
+                  ? scheme.primary.withValues(alpha: 0.15)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(AppRadius.chip),
+              border: active
+                  ? Border.all(color: scheme.primary.withValues(alpha: 0.4))
+                  : null,
+            ),
+            child: Icon(
+              icon,
+              size: 18,
+              color: active ? scheme.primary : AppColors.textSecondary(b),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Container(
+      width: 40,
+      decoration: BoxDecoration(
+        color: AppColors.surface(b),
+        border: Border(
+          left: BorderSide(color: AppColors.border(b), width: 1),
+        ),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          const SizedBox(height: AppSpacing.sm),
+          railButton(
+            icon: Icons.smart_toy_rounded,
+            tooltip: 'المساعد الذكي',
+            mode: PanelMode.ai,
+          ),
+          railButton(
+            icon: Icons.public_rounded,
+            tooltip: 'المتصفح',
+            mode: PanelMode.browser,
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// يفتح رابطاً في المتصفح الجانبي: أفقي → لوحة جانبية، عمودي →
+  /// قائمة سفلية. يُستدعى من «🌐 بحث في Google» عند تحديد النص.
+  void _openInBrowser(String url) {
+    final bool isLandscape =
+        MediaQuery.orientationOf(context) == Orientation.landscape;
+    if (isLandscape) {
+      setState(() {
+        _isSidePanelOpen = true;
+        _panelMode = PanelMode.browser;
+      });
+      // اللوحة تُبنى في هذا الإطار — التحميل بعد اكتمال البناء.
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _browserKey.currentState?.loadUrl(url);
+      });
+    } else {
+      _showBrowserBottomSheet(url);
+    }
+  }
+
+  /// «🌐 بحث في Google» من قائمة تحديد النص.
+  void _searchSelectedTextOnWeb(String text) {
+    final String query = text.trim();
+    if (query.isEmpty) return;
+    _openInBrowser(
+      'https://www.google.com/search?q=${Uri.encodeQueryComponent(query)}',
+    );
+  }
+
+  /// يفتح المتصفح كقائمة سفلية (portrait) — عمودي لا يملك فتحة
+  /// لوحة جانبية.
+  void _showBrowserBottomSheet(String url) {
+    final Brightness b = Theme.of(context).colorScheme.brightness;
+    _browserUrl.value = '';
+    _browserProgress.value = 0;
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (BuildContext sheetCtx) => Container(
+        height: MediaQuery.of(sheetCtx).size.height * 0.85,
+        decoration: BoxDecoration(
+          color: AppColors.surface(b),
+          borderRadius: const BorderRadius.vertical(
+            top: Radius.circular(AppRadius.sheet),
+          ),
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(
+            top: Radius.circular(AppRadius.sheet),
+          ),
+          child: BrowserSidePanel(
+            controller: _ensureBrowserController(),
+            progress: _browserProgress,
+            currentUrl: _browserUrl,
+          ),
+        ),
+      ),
+    ).whenComplete(() {
+      // تفريغ حالة العرض بعد الإغلاق — المتحكم يبقى للاستخدام لاحقاً.
+      _browserUrl.value = '';
+      _browserProgress.value = 0;
+    });
+
+    // التحميل بعد بناء الشيت.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _browserController?.loadRequest(Uri.parse(url));
+    });
+  }
+
+
+  /// النص المعلَّق لحقنه تلقائياً في لوحة المساعد الأفقية — يُمرَّر
+  /// عبر autoExplainText بدل GlobalKey (آمن مع AnimatedSwitcher).
+  String? _pendingExplainText;
+
   /// يُفعَّل من قائمة تحديد النص «🤖 شرح ذكي» — يفتح اللوحة
   /// ويحقن النص المحدَّد كرسالة مستخدم تلقائياً.
   void _explainSelectedText(String text) {
     final bool isLandscape =
         MediaQuery.orientationOf(context) == Orientation.landscape;
     if (isLandscape) {
-      if (!_isChatOpen) setState(() => _isChatOpen = true);
+      setState(() {
+        _pendingExplainText = text;
+        _isSidePanelOpen = true;
+        _panelMode = PanelMode.ai;
+      });
     } else {
       _showChatBottomSheet();
+      Future.delayed(const Duration(milliseconds: 100), () {
+        _chatKey.currentState?.injectAndExplain(text);
+      });
     }
-    
-    Future.delayed(const Duration(milliseconds: 100), () {
-      _chatKey.currentState?.injectAndExplain(text);
-    });
   }
 
   /// يفتح لوحة Sidekick كقائمة سفلية قابلة للسحب (portrait).
@@ -1724,6 +2028,7 @@ class _ShotContent extends StatelessWidget {
     this.onTapNote,
     this.onSelectionChanged,
     this.onExplainText,
+    this.onSearchOnWeb,
     this.spokenWord,
     this.spokenWordOccurrence,
   });
@@ -1756,6 +2061,10 @@ class _ShotContent extends StatelessWidget {
 
   /// Sidekick AI: تحديد نص → شرح ذكي — مرفوع من الصفحة (v28).
   final ValueChanged<String>? onExplainText;
+
+  /// المتصفح الجانبي (v30): تحديد نص → بحث في Google — يفتح الرابط
+  /// في اللوحة الجانبية (أفقي) أو قائمة سفلية (عمودي).
+  final ValueChanged<String>? onSearchOnWeb;
 
   @override
   Widget build(BuildContext context) {
@@ -1956,6 +2265,38 @@ class _ShotContent extends StatelessWidget {
 
                   items.insert(
                     2,
+                    ContextMenuButtonItem(
+                      label: '🌐 بحث في Google',
+                      onPressed: () {
+                        final TextSelection selection = state.textEditingValue.selection;
+                        final int start = selection.baseOffset < selection.extentOffset
+                                          ? selection.baseOffset
+                                          : selection.extentOffset;
+                        final int end = selection.baseOffset > selection.extentOffset
+                                          ? selection.baseOffset
+                                          : selection.extentOffset;
+                        final String selectedString = state.textEditingValue.text
+                            .substring(start, end)
+                            .replaceAll('**', '');
+
+                        state.hideToolbar();
+                        FocusManager.instance.primaryFocus?.unfocus();
+                        state.userUpdateTextEditingValue(
+                          state.textEditingValue.copyWith(
+                            selection: const TextSelection.collapsed(offset: 0),
+                          ),
+                          null,
+                        );
+
+                        if (selectedString.trim().isNotEmpty) {
+                          onSearchOnWeb?.call(selectedString);
+                        }
+                      },
+                    ),
+                  );
+
+                  items.insert(
+                    3,
                     ContextMenuButtonItem(
                       label: 'إضافة ملاحظة',
                       onPressed: () {

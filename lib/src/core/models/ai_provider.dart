@@ -36,4 +36,26 @@ class AiProvider {
       isDefault: json['isDefault'] as bool? ?? false,
     );
   }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+    return other is AiProvider &&
+        other.id == id &&
+        other.name == name &&
+        other.baseUrl == baseUrl &&
+        other.apiKey == apiKey &&
+        other.modelName == modelName &&
+        other.isDefault == isDefault;
+  }
+
+  @override
+  int get hashCode {
+    return id.hashCode ^
+        name.hashCode ^
+        baseUrl.hashCode ^
+        apiKey.hashCode ^
+        modelName.hashCode ^
+        isDefault.hashCode;
+  }
 }

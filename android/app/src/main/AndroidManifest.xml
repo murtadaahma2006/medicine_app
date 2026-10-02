@@ -3,10 +3,13 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <!-- إذن الجدولة الدقيقة — يضمن ظهور التذكير في ساعته على Android 12+ -->
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <!-- إذن الإنترنت — مطلوب للمتصفح الجانبي المدمج (WebView) وخدمة AI في بناء الإصدار -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="MedOS"
         android:name=".MedicineApp"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:enableOnBackInvokedCallback="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"

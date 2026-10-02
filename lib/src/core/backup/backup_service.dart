@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart' show compute, debugPrint;
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
@@ -213,7 +213,8 @@ abstract final class BackupService {
     final File file = File(path);
     Map<String, Object?> data;
     try {
-      final dynamic decoded = jsonDecode(await file.readAsString());
+      final String content = await file.readAsString();
+      final dynamic decoded = await compute(jsonDecode, content);
       if (decoded is! Map) {
         return const BackupImportResult(
           ok: false,

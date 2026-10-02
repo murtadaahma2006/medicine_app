@@ -56,7 +56,10 @@ class DatabaseHelper {
   //         لتجنب استدعاءات API متكررة لنفس النص.
   // ── v28: محادثات Sidekick الذكية لكل محاضرة ──
   // ── v29: إضافة quoted_text لدعم الاقتباسات في Sidekick ──
-  static const int databaseVersion = 29;
+  // ── v30: خط معالجة المنهج الـ Agentic (MedOS Content Factory) ──
+  //         agent_tasks & agent_steps: تتبع حالة وأشواط تحويل ملفات PDF إلى JSON.
+  // ── v31: إضافة عمود elapsed_seconds للعداد الزمني لمهام الوكلاء ──
+  static const int databaseVersion = 31;
   // ── جداول المحتوى الطبي ──
   static const String tableUnits = 'units';
   static const String tableConcepts = 'concepts';
@@ -108,6 +111,10 @@ class DatabaseHelper {
   // ── v28: محادثات Sidekick الذكية لكل محاضرة ──
   static const String tableLectureChats = 'lecture_chats';
 
+  // ── v30: خط معالجة المنهج الموزع (MedOS Content Factory) ──
+  static const String tableAgentTasks = 'agent_tasks';
+  static const String tableAgentSteps = 'agent_steps';
+
   /// أنواع أحداث XP المسموحة في قيد CHECK — مصدر الحقيقة الوحيد.
   static const List<String> xpEventKinds = <String>[
     'concept',
@@ -148,6 +155,7 @@ class DatabaseHelper {
         onUpgrade: _onUpgrade,
       ),
     );
+    await _ensureAgentTasksColumns(opened);
     _db = opened;
     return opened;
   }
@@ -155,13 +163,37 @@ class DatabaseHelper {
   Future<Database> _open() async {
     final String dirPath = await getDatabasesPath();
     final String path = p.join(dirPath, databaseName);
-    return openDatabase(
+    final Database opened = await openDatabase(
       path,
       version: databaseVersion,
       onConfigure: _onConfigure,
       onCreate: _onCreate,
       onUpgrade: _onUpgrade,
     );
+    await _ensureAgentTasksColumns(opened);
+    return opened;
+  }
+
+  /// التأكد من وجود أعمدة agent_tasks اللازمة حمايةً للنسخ القائمة.
+  static Future<void> _ensureAgentTasksColumns(Database db) async {
+    // elapsed_seconds (v31)
+    try {
+      await db.execute(
+        'ALTER TABLE $tableAgentTasks ADD COLUMN elapsed_seconds INTEGER NOT NULL DEFAULT 0',
+      );
+    } catch (_) {}
+    // supervisor_config (v32 — Dual-Agent Architecture)
+    try {
+      await db.execute(
+        'ALTER TABLE $tableAgentTasks ADD COLUMN supervisor_config TEXT',
+      );
+    } catch (_) {}
+    // worker_config (v32 — Dual-Agent Architecture)
+    try {
+      await db.execute(
+        'ALTER TABLE $tableAgentTasks ADD COLUMN worker_config TEXT',
+      );
+    } catch (_) {}
   }
 
   /// ضروري جداً: في sqflite قيود المفاتيح الأجنبية معطّلة افتراضياً على
@@ -550,6 +582,46 @@ class DatabaseHelper {
       'ON $tableLectureChats(lecture_id)',
     );
 
+    // v30: جداول خط معالجة الوكلاء (Agent Tasks & Steps)
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableAgentTasks (
+        id                  TEXT PRIMARY KEY,
+        file_path           TEXT NOT NULL,
+        title               TEXT NOT NULL,
+        status              TEXT NOT NULL DEFAULT 'queued'
+                            CHECK (status IN ('queued','running','paused','pending_approval','done','failed')),
+        payload             TEXT,
+        progress            REAL NOT NULL DEFAULT 0.0
+                            CHECK (progress BETWEEN 0.0 AND 1.0),
+        current_status_text TEXT,
+        created_at          TEXT NOT NULL,
+        elapsed_seconds     INTEGER NOT NULL DEFAULT 0
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_agent_tasks_status '
+      'ON $tableAgentTasks(status)',
+    );
+
+    batch.execute('''
+      CREATE TABLE IF NOT EXISTS $tableAgentSteps (
+        id             TEXT PRIMARY KEY,
+        task_id        TEXT NOT NULL REFERENCES $tableAgentTasks(id) ON DELETE CASCADE,
+        sequence_index INTEGER NOT NULL DEFAULT 0,
+        type           TEXT NOT NULL,
+        status         TEXT NOT NULL DEFAULT 'pending'
+                       CHECK (status IN ('pending','done','failed')),
+        input_payload  TEXT,
+        output_payload TEXT,
+        attempts       INTEGER NOT NULL DEFAULT 0,
+        last_error     TEXT
+      )
+    ''');
+    batch.execute(
+      'CREATE INDEX IF NOT EXISTS idx_agent_steps_task '
+      'ON $tableAgentSteps(task_id)',
+    );
+
     await batch.commit(noResult: true);
   }
 
@@ -924,6 +996,54 @@ class DatabaseHelper {
       // v29: إضافة عمود النص المقتبس إلى جدول محادثات المحاضرات.
       try {
         await db.execute('ALTER TABLE $tableLectureChats ADD COLUMN quoted_text TEXT');
+      } catch (_) {}
+    }
+    if (oldV < 30) {
+      // v30: خط معالجة المنهج الموزع (Hermes Agentic Pipeline)
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableAgentTasks (
+          id                  TEXT PRIMARY KEY,
+          file_path           TEXT NOT NULL,
+          title               TEXT NOT NULL,
+          status              TEXT NOT NULL DEFAULT 'queued'
+                              CHECK (status IN ('queued','running','paused','pending_approval','done','failed')),
+          payload             TEXT,
+          progress            REAL NOT NULL DEFAULT 0.0
+                              CHECK (progress BETWEEN 0.0 AND 1.0),
+          current_status_text TEXT,
+          created_at          TEXT NOT NULL,
+          elapsed_seconds     INTEGER NOT NULL DEFAULT 0
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_agent_tasks_status '
+        'ON $tableAgentTasks(status)',
+      );
+      await db.execute('''
+        CREATE TABLE IF NOT EXISTS $tableAgentSteps (
+          id             TEXT PRIMARY KEY,
+          task_id        TEXT NOT NULL REFERENCES $tableAgentTasks(id) ON DELETE CASCADE,
+          sequence_index INTEGER NOT NULL DEFAULT 0,
+          type           TEXT NOT NULL,
+          status         TEXT NOT NULL DEFAULT 'pending'
+                         CHECK (status IN ('pending','done','failed')),
+          input_payload  TEXT,
+          output_payload TEXT,
+          attempts       INTEGER NOT NULL DEFAULT 0,
+          last_error     TEXT
+        )
+      ''');
+      await db.execute(
+        'CREATE INDEX IF NOT EXISTS idx_agent_steps_task '
+        'ON $tableAgentSteps(task_id)',
+      );
+    }
+    if (oldV < 31) {
+      // v31: إضافة عمود elapsed_seconds للعداد الزمني لمهام الوكلاء
+      try {
+        await db.execute(
+          'ALTER TABLE $tableAgentTasks ADD COLUMN elapsed_seconds INTEGER NOT NULL DEFAULT 0',
+        );
       } catch (_) {}
     }
   }

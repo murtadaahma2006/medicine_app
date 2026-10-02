@@ -1,6 +1,8 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import '../core/agent/agent_runtime.dart';
 import '../core/database/database_helper.dart';
 import '../core/profile/learner_profile.dart';
 import '../routing/app_router.dart';
@@ -77,6 +79,9 @@ class _MedicalLearningAppState extends State<MedicalLearningApp>
     // المؤقّت حتى لا يُحسب زمن الخلفية أبداً.
     if (state == AppLifecycleState.resumed) {
       _foregroundSince = DateTime.now();
+      
+      // استئناف مهام الذكاء الاصطناعي التي تجمدت عند الخروج
+      unawaited(AgentRuntime.resumeOrphanTasks());
       return;
     }
     _pendingStudyMs +=

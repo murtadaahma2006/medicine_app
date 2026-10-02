@@ -2,52 +2,35 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 import '../database/database_helper.dart';
 import '../models/ai_provider.dart';
-import '../utils/ai_constants.dart';
+import 'ai_model_manager.dart';
 
 class AIService {
   static final http.Client _client = http.Client();
 
-  /// Fetches the current active API Key, Base URL, and Model from SharedPreferences.
-  ///
-  /// The [use_custom_ai_provider] boolean is the single source of truth.
-  /// Custom credentials are always stored in prefs but only used when the
-  /// flag is [true] — toggling it off never loses the saved values.
-  static Future<Map<String, String>> _getAICredentials() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    final bool useCustom = prefs.getBool('use_custom_ai_provider') ?? false;
-
-    final String apiKey = useCustom
-        ? (prefs.getString('custom_api_key')  ?? AIConstants.defaultApiKey)
-        : AIConstants.defaultApiKey;
-
-    final String baseUrl = useCustom
-        ? (prefs.getString('custom_base_url') ?? AIConstants.defaultBaseUrl)
-        : AIConstants.defaultBaseUrl;
-
-    final String model = useCustom
-        ? (prefs.getString('custom_model')    ?? AIConstants.defaultModel)
-        : AIConstants.defaultModel;
-
-    return {
-      'apiKey': apiKey,
-      'baseUrl': baseUrl,
-      'model': model,
-    };
+  /// Tests the connection to an AI provider.
+  static Future<bool> testConnection(AiProvider provider) async {
+    try {
+      final String? result = await generateContent(
+        'You are a network testing bot.',
+        'Reply EXACTLY with this valid JSON: {"status": "ok"}',
+        provider: provider,
+      );
+      return result != null && result.contains('"ok"');
+    } catch (_) {
+      return false;
+    }
   }
 
   /// Sends a request to the AI provider using the standard OpenAI-compatible
   /// `/chat/completions` endpoint format.
-  static Future<String?> generateContent(String systemPrompt, String userMessage) async {
+  static Future<String?> generateContent(String systemPrompt, String userMessage, {AiProvider? provider}) async {
     try {
-      final Map<String, String> credentials = await _getAICredentials();
-      
-      final String baseUrl = credentials['baseUrl']!;
-      final String apiKey = credentials['apiKey']!;
-      final String model = credentials['model']!;
+      final AiProvider targetProvider = provider ?? await AiModelManager.getActiveProvider();
+      final String baseUrl = targetProvider.baseUrl;
+      final String apiKey = targetProvider.apiKey;
+      final String model = targetProvider.modelName;
 
       // Ensure baseUrl does not have a trailing slash before appending endpoint
       final String formattedBaseUrl = baseUrl.endsWith('/') 
@@ -59,9 +42,10 @@ class AIService {
       final Map<String, dynamic> body = {
         'model': model,
         'messages': [
-          {'role': 'system', 'content': systemPrompt},
+          {'role': 'system', 'content': '$systemPrompt\n\nCRITICAL: Return ONLY valid, raw JSON. Do not include markdown codeblocks (```json ... ```).'},
           {'role': 'user', 'content': userMessage},
         ],
+        'response_format': {'type': 'json_object'},
       };
 
       final http.Response response = await _client.post(
@@ -71,13 +55,22 @@ class AIService {
           'Authorization': 'Bearer $apiKey',
         },
         body: jsonEncode(body),
-      ).timeout(const Duration(seconds: 25));
+      ).timeout(const Duration(seconds: 120));
 
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = jsonDecode(response.body) as Map<String, dynamic>;
         if (data.containsKey('choices') && (data['choices'] as List).isNotEmpty) {
-          final String content = (data['choices'][0]['message']['content'] ?? '') as String;
-          return content;
+          String content = (data['choices'][0]['message']['content'] ?? '') as String;
+          content = content.trim();
+          if (content.startsWith('```json')) {
+            content = content.substring(7);
+          } else if (content.startsWith('```')) {
+            content = content.substring(3);
+          }
+          if (content.endsWith('```')) {
+            content = content.substring(0, content.length - 3);
+          }
+          return content.trim();
         }
       } else {
         print('API Error: ${response.statusCode} - ${response.body}');
@@ -85,23 +78,81 @@ class AIService {
       }
       return null;
     } on TimeoutException {
-      throw Exception('انتهى وقت الاتصال. يبدو أن مزود الذكاء الاصطناعي يواجه ضغطاً عالياً، يرجى المحاولة لاحقاً.');
+      throw Exception('انتهى وقت الاتصال (120 ثانية). يبدو أن مزود الذكاء الاصطناعي يواجه ضغطاً عالياً، يرجى المحاولة لاحقاً.');
     } catch (e) {
-      // Return null or rethrow based on app error handling requirements.
-      // For now we log it and return null.
       print('AIService Error: $e');
-      return null;
+      rethrow;
+    }
+  }
+
+  /// Sends a streaming request to the AI provider using SSE (Server-Sent Events).
+  /// Yields text chunks as they arrive.
+  static Stream<String> generateContentStream(String systemPrompt, String userMessage, {AiProvider? provider}) async* {
+    final AiProvider targetProvider = provider ?? await AiModelManager.getActiveProvider();
+    final String baseUrl = targetProvider.baseUrl;
+    final String apiKey = targetProvider.apiKey;
+    final String model = targetProvider.modelName;
+
+    final String formattedBaseUrl = baseUrl.endsWith('/') 
+        ? baseUrl.substring(0, baseUrl.length - 1) 
+        : baseUrl;
+        
+    final Uri uri = Uri.parse('$formattedBaseUrl/chat/completions');
+
+    final http.Request request = http.Request('POST', uri);
+    request.headers.addAll({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer $apiKey',
+    });
+    
+    request.body = jsonEncode({
+      'model': model,
+      'messages': [
+        {'role': 'system', 'content': '$systemPrompt\n\nCRITICAL: Return ONLY valid, raw JSON. Do not include markdown codeblocks (```json ... ```).'},
+        {'role': 'user', 'content': userMessage},
+      ],
+      'stream': true,
+    });
+
+    final http.StreamedResponse response = await _client.send(request);
+    
+    if (response.statusCode != 200) {
+      final errorStr = await response.stream.bytesToString();
+      throw Exception('AI Stream Request Failed: ${response.statusCode} - $errorStr');
+    }
+
+    await for (final line in response.stream
+        .transform(utf8.decoder)
+        .transform(const LineSplitter())) {
+      if (line.trim().isEmpty) continue;
+      
+      // OpenAI/OpenRouter SSE format: "data: {...}"
+      if (line.startsWith('data: ')) {
+        final dataStr = line.substring(6).trim();
+        if (dataStr == '[DONE]') break;
+        
+        try {
+          final data = jsonDecode(dataStr);
+          if (data['choices'] != null && (data['choices'] as List).isNotEmpty) {
+            final delta = data['choices'][0]['delta'];
+            if (delta != null && delta['content'] != null) {
+              yield delta['content'] as String;
+            }
+          }
+        } catch (_) {
+          // Ignore JSON parsing errors for partial/malformed chunks
+        }
+      }
     }
   }
 
   /// Sends a request to the AI provider with full conversation history.
-  static Future<String?> generateChatCompletion(List<Map<String, String>> messages) async {
+  static Future<String?> generateChatCompletion(List<Map<String, String>> messages, {AiProvider? provider}) async {
     try {
-      final Map<String, String> credentials = await _getAICredentials();
-      
-      final String baseUrl = credentials['baseUrl']!;
-      final String apiKey = credentials['apiKey']!;
-      final String model = credentials['model']!;
+      final AiProvider targetProvider = provider ?? await AiModelManager.getActiveProvider();
+      final String baseUrl = targetProvider.baseUrl;
+      final String apiKey = targetProvider.apiKey;
+      final String model = targetProvider.modelName;
 
       final String formattedBaseUrl = baseUrl.endsWith('/') 
           ? baseUrl.substring(0, baseUrl.length - 1) 
@@ -123,7 +174,7 @@ class AIService {
         uri,
         headers: headers,
         body: body,
-      ).timeout(const Duration(seconds: 25));
+      ).timeout(const Duration(seconds: 120));
 
       if (response.statusCode == 200) {
         final Map<String, dynamic> data = jsonDecode(response.body) as Map<String, dynamic>;
@@ -144,20 +195,10 @@ class AIService {
   /// Sends a streaming request to the AI provider.
   static Stream<String> generateChatStream(List<Map<String, dynamic>> messages, {AiProvider? provider}) async* {
     try {
-      final String baseUrl;
-      final String apiKey;
-      final String model;
-
-      if (provider != null) {
-        baseUrl = provider.baseUrl;
-        apiKey = provider.apiKey;
-        model = provider.modelName;
-      } else {
-        final Map<String, String> credentials = await _getAICredentials();
-        baseUrl = credentials['baseUrl']!;
-        apiKey = credentials['apiKey']!;
-        model = credentials['model']!;
-      }
+      final AiProvider targetProvider = provider ?? await AiModelManager.getActiveProvider();
+      final String baseUrl = targetProvider.baseUrl;
+      final String apiKey = targetProvider.apiKey;
+      final String model = targetProvider.modelName;
 
       final String formattedBaseUrl = baseUrl.endsWith('/') 
           ? baseUrl.substring(0, baseUrl.length - 1) 

@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 
 import 'src/app/app.dart';
+import 'src/core/agent/agent_runtime.dart';
 import 'src/core/utils/error_logger.dart';
 import 'src/core/widget/home_widget_service.dart';
 import 'src/routing/app_router.dart';
@@ -58,6 +59,9 @@ Future<void> main() async {
     } catch (_) {
       // الويدجت تحسين غير حركي — فشلها لا يعيق الإقلاع.
     }
+
+    // استئناف أي مهام ذكاء اصطناعي معلقة (قُتل التطبيق أثناء عملها)
+    unawaited(AgentRuntime.resumeOrphanTasks());
   }());
 
   runApp(const MedicalLearningApp());

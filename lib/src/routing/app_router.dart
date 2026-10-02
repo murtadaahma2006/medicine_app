@@ -15,6 +15,7 @@ import '../features/settings/presentation/pages/reminder_page.dart';
 import '../features/settings/presentation/pages/settings_page.dart';
 import '../features/splash/presentation/pages/splash_page.dart';
 import '../features/welcome/presentation/pages/welcome_page.dart';
+import '../features/profile/presentation/pages/ai_task_manager_page.dart';
 
 // Clinical Tools
 import '../features/clinical_tools/presentation/pages/lab_values_screen.dart';
@@ -29,6 +30,7 @@ abstract final class RoutePaths {
   static const String reminder = '/reminder';
   static const String dailyReview = '/daily-review';
   static const String welcome = '/welcome';
+  static const String aiTaskManager = '/ai-task-manager';
   // History Module
   static const String historyDashboard = '/history';
   static const String activeHistory = '/history/active';
@@ -125,6 +127,11 @@ final GoRouter appRouter = GoRouter(
       path: RoutePaths.welcome,
       pageBuilder: (BuildContext context, GoRouterState state) =>
           fadeThroughPage(child: const WelcomePage()),
+    ),
+    GoRoute(
+      path: RoutePaths.aiTaskManager,
+      pageBuilder: (BuildContext context, GoRouterState state) =>
+          fadeThroughPage(child: const AiTaskManagerPage()),
     ),
     // ─── History Module ───
     GoRoute(

@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/foundation.dart' show debugPrint;
+import 'package:flutter/foundation.dart' show compute, debugPrint;
 import 'package:sqflite/sqflite.dart';
 
 import '../database/database_helper.dart';
@@ -82,7 +82,8 @@ abstract final class LectureImportService {
 
     Map<String, Object?> data;
     try {
-      final dynamic decoded = jsonDecode(await file.readAsString());
+      final String content = await file.readAsString();
+      final dynamic decoded = await compute(jsonDecode, content);
       if (decoded is! Map) {
         return const LectureValidationResult(
           ok: false,
@@ -276,8 +277,8 @@ abstract final class LectureImportService {
         return '$label: القسم #${s + 1} بلا عنوان صالح.';
       }
       if (sec['body_text'] is! String ||
-          (sec['body_text']! as String).trim().length < 100) {
-        return '$label: القسم «${sec['heading']}» نصه أقل من 100 حرف.';
+          (sec['body_text']! as String).trim().length < 5) {
+        return '$label: القسم «${sec['heading']}» نصه قصير جداً.';
       }
       // — v2.1 (اختياري): سؤال اعتراضي مدمج check —
       final Map<String, Object?>? check = _asMap(sec['check']);
@@ -368,8 +369,8 @@ abstract final class LectureImportService {
       return '$label: lecture_id لا يطابق معرف المحاضرة.';
     }
     if (m['question_stem'] is! String ||
-        (m['question_stem']! as String).trim().length < 30) {
-      return '$label: نص السؤال أقصر من 30 حرفاً.';
+        (m['question_stem']! as String).trim().length < 5) {
+      return '$label: نص السؤال قصير جداً.';
     }
     final List<dynamic> options = _asList(m['options']);
     if (options.length < 3 || options.length > 5) {
@@ -386,8 +387,8 @@ abstract final class LectureImportService {
       return '$label: correct_index خارج نطاق الخيارات.';
     }
     if (m['explanation_ar'] is! String ||
-        (m['explanation_ar']! as String).trim().length < 30) {
-      return '$label: الشرح العربي أقصر من 30 حرفاً.';
+        (m['explanation_ar']! as String).trim().length < 5) {
+      return '$label: الشرح العربي قصير جداً.';
     }
     if (m['difficulty'] != 'core' && m['difficulty'] != 'advanced') {
       return '$label: الصعوبة يجب أن تكون core أو advanced.';
@@ -437,8 +438,8 @@ abstract final class LectureImportService {
       return '$label: العنوان مفقود أو أقصر من 3 أحرف.';
     }
     if (c['scenario'] is! String ||
-        (c['scenario']! as String).trim().length < 50) {
-      return '$label: السيناريو أقصر من 50 حرفاً.';
+        (c['scenario']! as String).trim().length < 5) {
+      return '$label: السيناريو قصير جداً.';
     }
     final Map<String, Object?>? vignette = _asMap(c['vignette']);
     if (vignette == null) return '$label: الـ vignette مفقود.';
@@ -491,8 +492,8 @@ abstract final class LectureImportService {
         return '$sLabel: correct_index خارج نطاق الخيارات.';
       }
       if (step['explanation_ar'] is! String ||
-          (step['explanation_ar']! as String).trim().length < 20) {
-        return '$sLabel: الشرح العربي أقصر من 20 حرفاً.';
+          (step['explanation_ar']! as String).trim().length < 2) {
+        return '$sLabel: الشرح العربي قصير جداً.';
       }
       if (step['xp'] != null &&
           (step['xp'] is! int ||
@@ -502,8 +503,8 @@ abstract final class LectureImportService {
       }
     }
     if (c['debriefing_ar'] is! String ||
-        (c['debriefing_ar']! as String).trim().length < 80) {
-      return '$label: التلخيص العربي أقصر من 80 حرفاً.';
+        (c['debriefing_ar']! as String).trim().length < 5) {
+      return '$label: التلخيص العربي قصير جداً.';
     }
     if (c['difficulty'] != 'core' && c['difficulty'] != 'advanced') {
       return '$label: الصعوبة يجب أن تكون core أو advanced.';
@@ -528,7 +529,8 @@ abstract final class LectureImportService {
     }
     Map<String, Object?> data;
     try {
-      final dynamic decoded = jsonDecode(await file.readAsString());
+      final String content = await file.readAsString();
+      final dynamic decoded = await compute(jsonDecode, content);
       if (decoded is! Map) {
         return const LectureImportResult(
           ok: false,
@@ -581,6 +583,63 @@ abstract final class LectureImportService {
       return const LectureImportResult(
         ok: false,
         messageAr: 'فشل الاستيراد — لم تتأثر بياناتك الحالية.',
+      );
+    }
+  }
+
+  /// يتحقق ثم يزرع محاضرة من نص JSON مباشرة — داخل معاملة واحدة.
+  static Future<LectureImportResult> importFromJsonString(String jsonContent, {DatabaseHelper? dbHelper}) async {
+    Map<String, Object?> data;
+    try {
+      final dynamic decoded = await compute(jsonDecode, jsonContent);
+      if (decoded is! Map) {
+        return const LectureImportResult(
+          ok: false,
+          messageAr: 'بنية البيانات غير صحيحة — المتوقع كائن JSON.',
+        );
+      }
+      data = decoded.map(_stringEntry);
+    } catch (_) {
+      return const LectureImportResult(
+        ok: false,
+        messageAr: 'بيانات JSON غير صالحة أو تالفة.',
+      );
+    }
+
+    final String? error = validateMap(data);
+    if (error != null) {
+      return LectureImportResult(ok: false, messageAr: error);
+    }
+
+    final Map<String, Object?> lecture =
+        (data['lecture']! as Map).map(_stringEntry);
+    final String lectureId = lecture['id']! as String;
+    final String title = lecture['title']! as String;
+
+    if (await _unitExists(lectureId, dbHelper: dbHelper)) {
+      return LectureImportResult(
+        ok: true,
+        title: title,
+        skipped: true,
+        messageAr: 'المحاضرة «$title» موجودة مسبقاً في المنهج — تم التخطي.',
+      );
+    }
+
+    try {
+      final DatabaseHelper helper = dbHelper ?? DatabaseHelper.instance;
+      final Database db = await helper.database;
+      final int count = await _seed(db, data);
+      return LectureImportResult(
+        ok: true,
+        title: title,
+        insertedRows: count,
+        messageAr: 'تم استيراد «$title» بنجاح في المنهج ($count عنصراً جديداً).',
+      );
+    } catch (error) {
+      debugPrint('LectureImportService: فشل الاستيراد ($error)');
+      return const LectureImportResult(
+        ok: false,
+        messageAr: 'فشل الاستيراد — لم تتأثر البيانات الحالية.',
       );
     }
   }
@@ -698,9 +757,9 @@ abstract final class LectureImportService {
     });
   }
 
-  static Future<bool> _unitExists(String lectureId) async {
+  static Future<bool> _unitExists(String lectureId, {DatabaseHelper? dbHelper}) async {
     try {
-      final DatabaseHelper helper = DatabaseHelper.instance;
+      final DatabaseHelper helper = dbHelper ?? DatabaseHelper.instance;
       final Database db = await helper.database;
       final List<Map<String, Object?>> rows = await db.query(
         'units',

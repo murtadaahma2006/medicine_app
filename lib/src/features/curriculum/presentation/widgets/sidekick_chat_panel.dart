@@ -1,11 +1,10 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/database/database_helper.dart';
 import '../../../../core/models/ai_provider.dart';
+import '../../../../core/services/ai_model_manager.dart';
 import '../../../../core/services/ai_service.dart';
 import '../../../../theme/tokens.dart';
 
@@ -65,6 +64,9 @@ class SidekickChatPanel extends StatefulWidget {
     required this.unitTitle,
     this.onClose,
     this.scrollController,
+    this.autoExplainText,
+    this.onAutoPromptConsumed,
+    this.onUploadDocumentRequested,
     super.key,
   });
 
@@ -79,6 +81,16 @@ class SidekickChatPanel extends StatefulWidget {
 
   /// تحكم بالتمرير من الخارج (DraggableScrollableSheet في portrait).
   final ScrollController? scrollController;
+
+  /// نص يُحقن تلقائياً كـ «شرح ذكي» بعد تحميل السجل — يستخدمه
+  /// ConceptReaderPage لتمرير النص المحدَّد بدون GlobalKey (v30).
+  final String? autoExplainText;
+
+  /// يُستدعى بعد استهلاك [autoExplainText] لتفريغه في الصفحة.
+  final VoidCallback? onAutoPromptConsumed;
+
+  /// يُستدعى عند الضغط على زر رفع مستند الـ PDF بالكامل للمساعد الذكي
+  final Future<String?> Function()? onUploadDocumentRequested;
 
   @override
   State<SidekickChatPanel> createState() => SidekickChatPanelState();
@@ -102,8 +114,6 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
   ];
   late AiProvider _selectedProvider;
 
-  static const String _providersKey = 'custom_ai_providers';
-
   @override
   void initState() {
     super.initState();
@@ -113,43 +123,50 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
     _loadProviders();
   }
 
-  Future<void> _loadProviders() async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    final String? providersJson = prefs.getString(_providersKey);
-    if (providersJson != null) {
-      try {
-        final List<dynamic> decoded = jsonDecode(providersJson) as List<dynamic>;
-        final List<AiProvider> loaded = decoded.map((dynamic e) => AiProvider.fromJson(e as Map<String, dynamic>)).toList();
-        if (mounted) {
-          setState(() {
-            _providers.addAll(loaded);
-          });
-        }
-      } catch (e) {
-        debugPrint('Error loading providers: $e');
-      }
-    }
-  }
-
-  Future<void> _saveProvider(AiProvider provider) async {
-    setState(() {
-      _providers.add(provider);
-      _selectedProvider = provider;
-    });
-    
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    final List<AiProvider> customProviders = _providers.where((AiProvider p) => !p.isDefault).toList();
-    final String encoded = jsonEncode(customProviders.map((AiProvider p) => p.toJson()).toList());
-    await prefs.setString(_providersKey, encoded);
-  }
+  bool _historyLoaded = false;
+  String? _pendingAutoExplain;
 
   @override
   void didUpdateWidget(covariant SidekickChatPanel oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.unitId != widget.unitId) {
       _messages.clear();
+      _historyLoaded = false;
       _loadHistory();
     }
+    // حقن «شرح ذكي» من الصفحة الحاضنة — يعمل حتى مع إعادة تركيب
+    // اللوحة داخل AnimatedSwitcher (بدون GlobalKey).
+    if (!identical(widget.autoExplainText, oldWidget.autoExplainText) &&
+        widget.autoExplainText != null) {
+      _pendingAutoExplain = widget.autoExplainText;
+      _maybeInjectPendingAutoExplain();
+    }
+  }
+
+  void _maybeInjectPendingAutoExplain() {
+    if (!_historyLoaded) return;
+    final String? pending = _pendingAutoExplain ?? widget.autoExplainText;
+    if (pending == null || pending.trim().isEmpty) return;
+    _pendingAutoExplain = null;
+    injectAndExplain(pending);
+    widget.onAutoPromptConsumed?.call();
+  }
+
+  Future<void> _loadProviders() async {
+    final List<AiProvider> saved = await AiModelManager.getSavedProviders();
+    final AiProvider active = await AiModelManager.getActiveProvider();
+    if (mounted) {
+      setState(() {
+        _providers.clear();
+        _providers.addAll(saved);
+        _selectedProvider = active;
+      });
+    }
+  }
+
+  Future<void> _saveProvider(AiProvider provider) async {
+    await AiModelManager.addOrUpdateProvider(provider);
+    await _loadProviders();
   }
 
   Future<void> _loadHistory() async {
@@ -173,7 +190,11 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
     } catch (e) {
       debugPrint('Failed to load Sidekick history: $e');
     } finally {
-      if (mounted) _isLoading.value = false;
+      if (mounted) {
+        _isLoading.value = false;
+        _historyLoaded = true;
+        _maybeInjectPendingAutoExplain();
+      }
     }
   }
 
@@ -428,7 +449,28 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
               ),
             ),
           ),
-          // مسح المحادثة
+          // زر رفع مستند للـ AI
+          if (widget.onUploadDocumentRequested != null)
+            IconButton(
+              icon: Icon(Icons.upload_file_rounded,
+                  size: 18, color: AppColors.textSecondary(b)),
+              tooltip: 'رفع المستند للذكاء الاصطناعي',
+              onPressed: () async {
+                final String? extractedText = await widget.onUploadDocumentRequested!();
+                if (extractedText != null && extractedText.trim().isNotEmpty) {
+                  addUserMessage(
+                    'تم إرفاق المستند بالكامل للذكاء الاصطناعي. يرجى قراءته والاعتماد عليه في الإجابة على أسئلتي.\n\n---ATTACHMENT_START---\nمستند PDF\n$extractedText\n---ATTACHMENT_END---',
+                  );
+                }
+              },
+              visualDensity: VisualDensity.compact,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(
+                minWidth: 32,
+                minHeight: 32,
+              ),
+            ),
+          // زر مسح المحادثة
           if (_messages.isNotEmpty)
             IconButton(
               icon: Icon(Icons.delete_outline_rounded,
@@ -555,6 +597,18 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
         );
       }
 
+      String displayString = msg.text;
+      String? attachmentName;
+      if (displayString.contains('---ATTACHMENT_START---')) {
+        final parts = displayString.split('---ATTACHMENT_START---');
+        displayString = parts[0].trim();
+        final attachmentPart = parts[1].split('---ATTACHMENT_END---')[0].trim();
+        final lines = attachmentPart.split('\n');
+        if (lines.isNotEmpty) {
+           attachmentName = lines.first;
+        }
+      }
+
       return Align(
         alignment: Alignment.centerRight,
         child: Container(
@@ -570,15 +624,45 @@ class SidekickChatPanelState extends State<SidekickChatPanel> {
               bottomRight: Radius.circular(4),
             ),
           ),
-          child: Text(
-            msg.text,
-            style: AppType.body.copyWith(
-              color: Colors.white,
-              fontSize: 13,
-              height: 1.5,
-            ),
-            textDirection: TextDirection.ltr,
-            textAlign: TextAlign.left,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                displayString,
+                style: AppType.body.copyWith(
+                  color: Colors.white,
+                  fontSize: 13,
+                  height: 1.5,
+                ),
+                textDirection: TextDirection.rtl,
+                textAlign: TextAlign.left,
+              ),
+              if (attachmentName != null) ...[
+                const SizedBox(height: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.2),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(Icons.picture_as_pdf_rounded, color: Colors.white, size: 16),
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          attachmentName,
+                          style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ],
           ),
         ),
       );

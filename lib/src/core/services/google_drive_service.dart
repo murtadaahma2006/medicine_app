@@ -425,4 +425,31 @@ class GoogleDriveService {
       debugPrint('GoogleDriveService: حُذفت النسخة المحلية لـ "$fileName".');
     }
   }
+
+  // ── مزامنة التعديلات مع درايف (In-place update) ─────────────────────────
+
+  /// يحدّث ملف PDF في Google Drive بالبيانات الجديدة (Bytes).
+  /// هذا التحديث يحافظ على الـ ID الخاص بالملف ورابط المشاركة الخاص به.
+  Future<void> updatePdfInDrive(String fileId, io.File localFile) async {
+    if (fileId.isEmpty) throw ArgumentError('معرّف الملف فارغ.');
+    if (!await localFile.exists()) throw ArgumentError('الملف المحلي غير موجود.');
+
+    debugPrint('GoogleDriveService: بدء مزامنة التعديلات إلى Drive...');
+
+    final drive.DriveApi api = await _buildDriveApi();
+
+    final int length = await localFile.length();
+    final drive.Media media = drive.Media(localFile.openRead(), length);
+
+    // نحدث الملف ببيانات جديدة فارغة لتحديث المحتوى فقط دون تغيير اسمه
+    final drive.File updateFile = drive.File(); 
+    
+    await api.files.update(
+      updateFile,
+      fileId,
+      uploadMedia: media,
+    );
+
+    debugPrint('GoogleDriveService: تمت مزامنة التعديلات بنجاح إلى Drive!');
+  }
 }

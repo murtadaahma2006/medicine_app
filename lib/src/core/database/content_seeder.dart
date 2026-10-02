@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart' show compute;
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:sqflite/sqflite.dart';
 
@@ -28,7 +29,7 @@ abstract final class ContentSeeder {
     for (final String assetPath in files) {
       try {
         final String raw = await rootBundle.loadString(assetPath);
-        final dynamic decoded = jsonDecode(raw);
+        final dynamic decoded = await compute(jsonDecode, raw);
         if (decoded is! Map) continue;
         final Map<String, Object?> file =
             decoded.map((k, v) => MapEntry(k.toString(), v));
@@ -44,7 +45,7 @@ abstract final class ContentSeeder {
   static Future<List<String>> _manifestFiles() async {
     try {
       final String raw = await rootBundle.loadString(manifestAsset);
-      final dynamic decoded = jsonDecode(raw);
+      final dynamic decoded = await compute(jsonDecode, raw);
       if (decoded is Map && decoded['files'] is List) {
         return (decoded['files']! as List)
             .map((dynamic f) => f.toString())

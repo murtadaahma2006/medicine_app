@@ -3,6 +3,7 @@ import 'dart:io' as io;
 import 'package:flutter/material.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/services/google_drive_service.dart';
 import '../../../../theme/tokens.dart';
@@ -34,10 +35,7 @@ enum _PanelState { login, list, downloading, viewer }
 // ─────────────────────────────────────────────────────────────────────────────
 
 class DrivePdfViewerPanel extends StatefulWidget {
-  const DrivePdfViewerPanel({
-    super.key,
-    this.onClose,
-  });
+  const DrivePdfViewerPanel({super.key, this.onClose});
 
   /// اختياري — يُستدعى عند الضغط على × لإغلاق اللوحة من الخارج.
   final VoidCallback? onClose;
@@ -53,8 +51,8 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
   _PanelState _state = _PanelState.login;
 
   // ── stacks التنقل بين المجلدات ──────────────────────────────────────────
-  final List<String> _folderIdStack = <String>['root'];
-  final List<String> _folderNameStack = <String>['ملفاتي'];
+  List<String> _folderIdStack = <String>['root'];
+  List<String> _folderNameStack = <String>['ملفاتي'];
 
   // ── بيانات القائمة ─────────────────────────────────────────────────────────
   List<drive.File> _files = <drive.File>[];
@@ -83,6 +81,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
     });
     try {
       await _drive.signIn();
+      await _loadFolderState();
       await _loadList();
     } catch (e) {
       if (!mounted) return;
@@ -106,11 +105,36 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
       _localFile = null;
       _downloadingFile = null;
     });
+    _saveFolderState();
   }
 
   // ─────────────────────────────────────────────────────────────────────────
   // List & Folder Navigation
   // ─────────────────────────────────────────────────────────────────────────
+
+  Future<void> _loadFolderState() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final ids = prefs.getStringList('drive_folder_ids');
+      final names = prefs.getStringList('drive_folder_names');
+      if (ids != null &&
+          names != null &&
+          ids.isNotEmpty &&
+          names.isNotEmpty &&
+          ids.length == names.length) {
+        _folderIdStack = ids;
+        _folderNameStack = names;
+      }
+    } catch (_) {}
+  }
+
+  Future<void> _saveFolderState() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList('drive_folder_ids', _folderIdStack);
+      await prefs.setStringList('drive_folder_names', _folderNameStack);
+    } catch (_) {}
+  }
 
   Future<void> _loadList() async {
     if (!mounted) return;
@@ -122,8 +146,9 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
     });
     try {
       final String currentFolderId = _folderIdStack.last;
-      final List<drive.File> items =
-          await _drive.listDriveItems(folderId: currentFolderId);
+      final List<drive.File> items = await _drive.listDriveItems(
+        folderId: currentFolderId,
+      );
       if (!mounted) return;
       setState(() {
         _files = items;
@@ -144,6 +169,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
       _folderIdStack.add(folder.id!);
       _folderNameStack.add(folder.name ?? 'مجلد');
     });
+    _saveFolderState();
     _loadList();
   }
 
@@ -153,6 +179,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
         _folderIdStack.removeLast();
         _folderNameStack.removeLast();
       });
+      _saveFolderState();
       _loadList();
     }
   }
@@ -210,10 +237,10 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
   // ─────────────────────────────────────────────────────────────────────────
 
   void _closeViewer() => setState(() {
-        _state = _PanelState.list;
-        _localFile = null;
-        _viewingName = null;
-      });
+    _state = _PanelState.list;
+    _localFile = null;
+    _viewingName = null;
+  });
 
   // ─────────────────────────────────────────────────────────────────────────
   // Helpers
@@ -354,30 +381,37 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
       onClose: widget.onClose,
       title: currentFolderName,
       titleIcon: canGoBack ? Icons.folder_open_rounded : Icons.cloud_rounded,
-      leading: canGoBack
-          ? IconButton(
-              tooltip: 'المجلد السابق',
-              icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 16),
-              onPressed: _isListLoading ? null : _popFolder,
-              padding: EdgeInsets.zero,
-              constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
-            )
-          : null,
+      leading:
+          canGoBack
+              ? IconButton(
+                tooltip: 'المجلد السابق',
+                icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 16),
+                onPressed: _isListLoading ? null : _popFolder,
+                padding: EdgeInsets.zero,
+                constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
+              )
+              : null,
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           IconButton(
             tooltip: 'تحديث',
-            icon: Icon(Icons.refresh_rounded,
-                size: 18, color: AppColors.textSecondary(b)),
+            icon: Icon(
+              Icons.refresh_rounded,
+              size: 18,
+              color: AppColors.textSecondary(b),
+            ),
             onPressed: _isListLoading ? null : _loadList,
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
           ),
           IconButton(
             tooltip: 'تسجيل الخروج',
-            icon: Icon(Icons.logout_rounded,
-                size: 18, color: AppColors.textSecondary(b)),
+            icon: Icon(
+              Icons.logout_rounded,
+              size: 18,
+              color: AppColors.textSecondary(b),
+            ),
             onPressed: _signOut,
             padding: EdgeInsets.zero,
             constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
@@ -400,13 +434,18 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Icon(Icons.cloud_off_rounded,
-                  size: 44, color: AppColors.textSecondary(b)),
+              Icon(
+                Icons.cloud_off_rounded,
+                size: 44,
+                color: AppColors.textSecondary(b),
+              ),
               const SizedBox(height: AppSpacing.md),
               Text(
                 _listError!,
-                style: AppType.body
-                    .copyWith(color: AppColors.textSecondary(b), fontSize: 13),
+                style: AppType.body.copyWith(
+                  color: AppColors.textSecondary(b),
+                  fontSize: 13,
+                ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: AppSpacing.lg),
@@ -427,13 +466,18 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Icon(Icons.folder_open_rounded,
-                size: 48, color: AppColors.textSecondary(b)),
+            Icon(
+              Icons.folder_open_rounded,
+              size: 48,
+              color: AppColors.textSecondary(b),
+            ),
             const SizedBox(height: AppSpacing.md),
             Text(
               isSubFolder ? 'هذا المجلد فارغ' : 'لا توجد مجلدات أو ملفات PDF',
-              style: AppType.body
-                  .copyWith(color: AppColors.textSecondary(b), fontSize: 13),
+              style: AppType.body.copyWith(
+                color: AppColors.textSecondary(b),
+                fontSize: 13,
+              ),
             ),
           ],
         ),
@@ -448,15 +492,16 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
           vertical: AppSpacing.sm,
         ),
         itemCount: _files.length,
-        separatorBuilder: (_, __) =>
-            Divider(height: 1, color: AppColors.border(b)),
+        separatorBuilder:
+            (_, __) => Divider(height: 1, color: AppColors.border(b)),
         itemBuilder: (BuildContext ctx, int i) {
           final drive.File item = _files[i];
           final bool isFolder =
               item.mimeType == GoogleDriveService.driveFolderMimeType;
-          final int? sizeKb = (!isFolder && item.size != null)
-              ? (int.tryParse(item.size!) ?? 0) ~/ 1024
-              : null;
+          final int? sizeKb =
+              (!isFolder && item.size != null)
+                  ? (int.tryParse(item.size!) ?? 0) ~/ 1024
+                  : null;
           return _FileListTile(
             file: item,
             isFolder: isFolder,
@@ -503,9 +548,10 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
                   children: <Widget>[
                     SizedBox.expand(
                       child: CircularProgressIndicator(
-                        value: (!hasError && _downloadPercent >= 0)
-                            ? _downloadPercent / 100
-                            : null,
+                        value:
+                            (!hasError && _downloadPercent >= 0)
+                                ? _downloadPercent / 100
+                                : null,
                         strokeWidth: 5,
                         color: primary,
                         backgroundColor: AppColors.border(b),
@@ -521,8 +567,7 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
                         ),
                       )
                     else if (!hasError)
-                      Icon(Icons.downloading_rounded,
-                          color: primary, size: 28),
+                      Icon(Icons.downloading_rounded, color: primary, size: 28),
                   ],
                 ),
               ),
@@ -565,9 +610,10 @@ class _DrivePdfViewerPanelState extends State<DrivePdfViewerPanel> {
                     ),
                     const SizedBox(width: AppSpacing.md),
                     FilledButton(
-                      onPressed: _downloadingFile != null
-                          ? () => _startDownload(_downloadingFile!)
-                          : null,
+                      onPressed:
+                          _downloadingFile != null
+                              ? () => _startDownload(_downloadingFile!)
+                              : null,
                       child: const Text('إعادة المحاولة'),
                     ),
                   ],
@@ -671,12 +717,17 @@ class _PanelShell extends StatelessWidget {
               if (onClose != null)
                 IconButton(
                   tooltip: 'إغلاق',
-                  icon: Icon(Icons.close_rounded,
-                      size: 16, color: AppColors.textSecondary(b)),
+                  icon: Icon(
+                    Icons.close_rounded,
+                    size: 16,
+                    color: AppColors.textSecondary(b),
+                  ),
                   onPressed: onClose,
                   padding: EdgeInsets.zero,
-                  constraints:
-                      const BoxConstraints(minWidth: 32, minHeight: 32),
+                  constraints: const BoxConstraints(
+                    minWidth: 32,
+                    minHeight: 32,
+                  ),
                 ),
             ],
           ),
@@ -710,25 +761,25 @@ class _FileListTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final Brightness b = Theme.of(context).colorScheme.brightness;
 
-    final IconData iconData = isFolder
-        ? Icons.folder_rounded
-        : Icons.picture_as_pdf_rounded;
+    final IconData iconData =
+        isFolder ? Icons.folder_rounded : Icons.picture_as_pdf_rounded;
 
-    final Color iconColor = isFolder
-        ? Colors.amber.shade700
-        : AppColors.error(b);
+    final Color iconColor =
+        isFolder ? Colors.amber.shade700 : AppColors.error(b);
 
-    final Color bgColor = isFolder
-        ? Colors.amber.withValues(alpha: 0.12)
-        : AppColors.errorContainer(b);
+    final Color bgColor =
+        isFolder
+            ? Colors.amber.withValues(alpha: 0.12)
+            : AppColors.errorContainer(b);
 
-    final String subtitleText = isFolder
-        ? 'مجلد'
-        : (sizeKb != null ? _formatSize(sizeKb!) : 'ملف PDF');
+    final String subtitleText =
+        isFolder ? 'مجلد' : (sizeKb != null ? _formatSize(sizeKb!) : 'ملف PDF');
 
     return ListTile(
-      contentPadding:
-          const EdgeInsets.symmetric(horizontal: 0, vertical: AppSpacing.xs),
+      contentPadding: const EdgeInsets.symmetric(
+        horizontal: 0,
+        vertical: AppSpacing.xs,
+      ),
       onTap: onTap,
       leading: Container(
         width: 40,
@@ -737,11 +788,7 @@ class _FileListTile extends StatelessWidget {
           color: bgColor,
           borderRadius: BorderRadius.circular(AppRadius.chip),
         ),
-        child: Icon(
-          iconData,
-          color: iconColor,
-          size: 22,
-        ),
+        child: Icon(iconData, color: iconColor, size: 22),
       ),
       title: Text(
         file.name ?? '—',
@@ -829,8 +876,7 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
                 color: AppColors.text(b),
                 onPressed: widget.onBack,
                 padding: EdgeInsets.zero,
-                constraints:
-                    const BoxConstraints(minWidth: 32, minHeight: 32),
+                constraints: const BoxConstraints(minWidth: 32, minHeight: 32),
               ),
 
               // عنوان + رقم الصفحة
@@ -868,8 +914,7 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
                 color: AppColors.textSecondary(b),
                 onPressed: () => _ctrl.firstPage(),
                 padding: EdgeInsets.zero,
-                constraints:
-                    const BoxConstraints(minWidth: 28, minHeight: 28),
+                constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
               ),
               IconButton(
                 tooltip: 'سابقة',
@@ -877,8 +922,7 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
                 color: AppColors.textSecondary(b),
                 onPressed: () => _ctrl.previousPage(),
                 padding: EdgeInsets.zero,
-                constraints:
-                    const BoxConstraints(minWidth: 28, minHeight: 28),
+                constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
               ),
               IconButton(
                 tooltip: 'تالية',
@@ -886,8 +930,7 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
                 color: AppColors.textSecondary(b),
                 onPressed: () => _ctrl.nextPage(),
                 padding: EdgeInsets.zero,
-                constraints:
-                    const BoxConstraints(minWidth: 28, minHeight: 28),
+                constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
               ),
               IconButton(
                 tooltip: 'آخر صفحة',
@@ -895,20 +938,24 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
                 color: AppColors.textSecondary(b),
                 onPressed: () => _ctrl.lastPage(),
                 padding: EdgeInsets.zero,
-                constraints:
-                    const BoxConstraints(minWidth: 28, minHeight: 28),
+                constraints: const BoxConstraints(minWidth: 28, minHeight: 28),
               ),
 
               // × إغلاق اللوحة بالكامل
               if (widget.onClose != null)
                 IconButton(
                   tooltip: 'إغلاق',
-                  icon: Icon(Icons.close_rounded,
-                      size: 16, color: AppColors.textSecondary(b)),
+                  icon: Icon(
+                    Icons.close_rounded,
+                    size: 16,
+                    color: AppColors.textSecondary(b),
+                  ),
                   onPressed: widget.onClose,
                   padding: EdgeInsets.zero,
-                  constraints:
-                      const BoxConstraints(minWidth: 28, minHeight: 28),
+                  constraints: const BoxConstraints(
+                    minWidth: 28,
+                    minHeight: 28,
+                  ),
                 ),
             ],
           ),
@@ -931,10 +978,12 @@ class _PdfViewerBodyState extends State<_PdfViewerBody> {
               setState(() => _page = d.newPageNumber);
             },
             onDocumentLoadFailed: (PdfDocumentLoadFailedDetails d) {
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text('تعذَّر فتح الملف: ${d.error}'),
-                duration: const Duration(seconds: 5),
-              ));
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('تعذَّر فتح الملف: ${d.error}'),
+                  duration: const Duration(seconds: 5),
+                ),
+              );
               widget.onBack();
             },
             currentSearchTextHighlightColor: primary.withValues(alpha: 0.4),
@@ -961,7 +1010,9 @@ class _ErrorBanner extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(
-          horizontal: AppSpacing.md, vertical: AppSpacing.sm),
+        horizontal: AppSpacing.md,
+        vertical: AppSpacing.sm,
+      ),
       decoration: BoxDecoration(
         color: AppColors.errorContainer(b),
         borderRadius: BorderRadius.circular(AppRadius.chip),
@@ -969,14 +1020,19 @@ class _ErrorBanner extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
-          Icon(Icons.error_outline_rounded,
-              size: 15, color: AppColors.error(b)),
+          Icon(
+            Icons.error_outline_rounded,
+            size: 15,
+            color: AppColors.error(b),
+          ),
           const SizedBox(width: AppSpacing.xs),
           Expanded(
             child: Text(
               message,
               style: AppType.caption.copyWith(
-                  color: AppColors.error(b), fontSize: 11),
+                color: AppColors.error(b),
+                fontSize: 11,
+              ),
             ),
           ),
         ],
