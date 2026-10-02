@@ -52,6 +52,8 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
   // ── حالة اللوحة الجانبية ──
   bool _isSidePanelOpen = false;
   PanelMode _panelMode = PanelMode.ai;
+  double _sidePanelWidth = 380.0;
+  bool _isDraggingSidePanel = false;
 
   // ── أدوات التظليل والملاحظات ──
   PdfAnnotationMode _annotationMode = PdfAnnotationMode.none;
@@ -648,6 +650,58 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
       ),
       body: Row(
         children: [
+          if (isLandscape && _isSidePanelOpen && _pdfFile != null) ...[
+            AnimatedContainer(
+              duration: _isDraggingSidePanel ? Duration.zero : const Duration(milliseconds: 300),
+              curve: Curves.easeOutCubic,
+              width: _sidePanelWidth,
+              child: _panelMode == PanelMode.ai
+                  ? SidekickChatPanel(
+                      unitId: _driveFileId ?? _pdfFile?.path ?? 'pdf_reader',
+                      unitTitle: _pdfName,
+                      autoExplainText: _pendingExplainText,
+                      onUploadDocumentRequested: _pdfFile != null ? _handleUploadPdfToAI : null,
+                      onClose: () => setState(() => _isSidePanelOpen = false),
+                    )
+                  : BrowserSidePanel(
+                      controller: _ensureBrowserController(),
+                      progress: _browserProgress,
+                      currentUrl: _browserUrl,
+                      onClose: () => setState(() => _isSidePanelOpen = false),
+                    ),
+            ),
+            // مقبض سحب اللوحة الجانبية
+            GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onPanStart: (_) => setState(() => _isDraggingSidePanel = true),
+              onPanEnd: (_) => setState(() => _isDraggingSidePanel = false),
+              onPanCancel: () => setState(() => _isDraggingSidePanel = false),
+              onPanUpdate: (DragUpdateDetails details) {
+                setState(() {
+                  final double screenWidth = MediaQuery.of(context).size.width;
+                  final double maxPanelWidth = (screenWidth * 0.45).clamp(300.0, screenWidth);
+                  _sidePanelWidth = (_sidePanelWidth - details.delta.dx).clamp(300.0, maxPanelWidth);
+                });
+              },
+              child: MouseRegion(
+                cursor: SystemMouseCursors.resizeLeftRight,
+                child: Container(
+                  width: 12,
+                  color: Colors.transparent,
+                  alignment: Alignment.center,
+                  child: Container(
+                    width: 4,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.onSurfaceVariant.withValues(alpha: 0.3),
+                      borderRadius: BorderRadius.circular(2),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(width: 1, color: AppColors.border(b)),
+          ],
           Expanded(
             child: _pdfFile == null
                 ? Center(
@@ -703,27 +757,6 @@ class _PdfReaderPageState extends State<PdfReaderPage> {
                     },
                   ),
           ),
-          if (isLandscape && _isSidePanelOpen && _pdfFile != null)
-            Container(
-              width: 380,
-              decoration: BoxDecoration(
-                border: Border(right: BorderSide(color: AppColors.border(b))),
-              ),
-              child: _panelMode == PanelMode.ai
-                  ? SidekickChatPanel(
-                      unitId: _driveFileId ?? _pdfFile?.path ?? 'pdf_reader',
-                      unitTitle: _pdfName,
-                      autoExplainText: _pendingExplainText,
-                      onUploadDocumentRequested: _pdfFile != null ? _handleUploadPdfToAI : null,
-                      onClose: () => setState(() => _isSidePanelOpen = false),
-                    )
-                  : BrowserSidePanel(
-                      controller: _ensureBrowserController(),
-                      progress: _browserProgress,
-                      currentUrl: _browserUrl,
-                      onClose: () => setState(() => _isSidePanelOpen = false),
-                    ),
-            ),
         ],
       ),
       floatingActionButton: _pdfFile == null
